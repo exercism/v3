@@ -1,0 +1,64 @@
+{
+  "language": "C#",
+  "active": true,
+  "blurb": "C# is a modern, object-oriented language with lots of great features, such as type-inference and async/await. The tooling is excellent, and there is extensive, well-written documentation.",
+  "version": 3,
+  "exercises": {
+    "concept": [
+      {
+        "slug": "strings",
+        "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
+        "concepts": ["basic-string-methods", "basic-string-formatting"],
+        "prerequisites": []
+      },
+      {
+        "slug": "floating-point-numbers",
+        "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
+        "concepts": ["advanced-floating-point-numbers", "loops"],
+        "prerequisites": [
+          "basic-signed-integers",
+          "basic-floating-point-numbers",
+          "conditionals",
+          "type-conversion"
+        ]
+      },
+      {
+        "slug": "numbers",
+        "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
+        "concepts": [
+          "basic-signed-integers",
+          "basic-floating-point-numbers",
+          "conditionals",
+          "type-conversion"
+        ],
+        "prerequisites": []
+      },
+      {
+        "slug": "enums",
+        "uuid": "047b895b-7039-4af6-ad3a-17fd818d0b88",
+        "concepts": ["basic-enums"],
+        "prerequisites": ["basic-string-methods", "basic-string-formatting"]
+      },
+      {
+        "slug": "dates",
+        "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
+        "concepts": ["basic-dates", "basic-time", "advanced-string-formatting"],
+        "prerequisites": ["basic-signed-integers", "basic-string-formatting"]
+      },
+      {
+        "slug": "bitwise-operations",
+        "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
+        "concepts": ["bitwise-operations", "advanced-enums"],
+        "prerequisites": ["basic-enums"]
+      }
+    ],
+    "practice": []
+  },
+  "foregone": [
+    "lens-person",
+    "nucleotide-codons",
+    "paasio",
+    "point-mutations",
+    "counter"
+  ]
+}

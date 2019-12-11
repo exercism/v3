@@ -1,0 +1,21 @@
+{
+    "language": "Julia",
+    "active": true,
+    "blurb": "Julia is an open-source high-level, dynamic programming language whose sweet spot is technical and scientific computing. It is convenient for day-to-day work and fast enough for high performance computing.",
+    "exercises": {
+        "concept": [
+            {
+                "uuid": "68001762-8a35-4494-9de4-624ca9efb5cd",
+                "slug": "encounters",
+                "concepts": [
+                    "multiple-dispatch"
+                ],
+                "prerequisites": [
+                    "structs",
+                    "abstract types",
+                    "methods"
+                ]
+            }
+        ]
+    }
+}
