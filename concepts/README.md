@@ -10,4 +10,4 @@ For example, we might have one or many exercises on "enumeration" in Ruby. The e
 
 We should not presume a programmer knows these topics, and should ensure that tracks explain them clearly both in the general term and how they are used in a language.
 
-For example the concept of `null` (or `nil` or `None`) does not exist in some languages, and is extremely esotoric the first time it is encountered. We should therefore ensure that we explain its purpose in the language, and provide good documentation for learning more, as well as providing an exercise that demonstrates its language-implmentation.
+For example the concept of `null` (or `nil` or `None`) does not exist in some languages, and is extremely esoteric the first time it is encountered. We should therefore ensure that we explain its purpose in the language, and provide good documentation for learning more, as well as providing an exercise that demonstrates its language-implementation.

@@ -4,8 +4,8 @@
 In this case they should be considered bugs and be fixed by the developer.
 
 Panics can also be invoked by the developer with the `panic` function. Since Go handles errors differently, `panic` should
-be used only in exceptional cases to crash the programm. It should **not** be used to signal an error to the caller.
-One valid example is to crash a server _on starup_ if the database is not reachable.
+be used only in exceptional cases to crash the program. It should **not** be used to signal an error to the caller.
+One valid example is to crash a server _on startup_ if the database is not reachable.
 
 > Panic is a built-in function that stops the ordinary flow of control and begins _panicking_.
 > When the function `F` calls `panic`, execution of `F` stops, any deferred functions in `F` are executed normally, and then `F` returns to its caller.

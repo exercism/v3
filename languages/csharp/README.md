@@ -1,4 +1,4 @@
-_Note: All subconcepts should be split out into seperate files under the concepts directory and hyperlinked._
+_Note: All subconcepts should be split out into separate files under the concepts directory and hyperlinked._
 
 # C&#35;
 

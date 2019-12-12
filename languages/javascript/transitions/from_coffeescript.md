@@ -1,6 +1,6 @@
 # Learning JavaScript with a [CoffeeScript][language-coffeescript] background
 
-[CoffeeScript][language-coffeescript] is a programming language that compiles to JavaScript. It adds syntactic sugar inspired by [Ruby][language-ruby], [Python][language-python] and [Haskell][language-haskell] in an effort to enhance JavaScript's brevity and readability. Specific additional features include [list comprehension][concept-list-comprehension] and [destructuring assignment][concept-destructuring-assigment].
+[CoffeeScript][language-coffeescript] is a programming language that compiles to JavaScript. It adds syntactic sugar inspired by [Ruby][language-ruby], [Python][language-python] and [Haskell][language-haskell] in an effort to enhance JavaScript's brevity and readability. Specific additional features include [list comprehension][concept-list-comprehension] and [destructuring assignment][concept-destructuring-assignment].
 
 In order to transition from [CoffeeScript][language-coffeescript] to JavaScript, the syntactic sugar needs to be _understood_ and its equivalents need to be studied.
 
@@ -53,7 +53,7 @@ JavaScript does not have to be compiled, whereas [CoffeeScript][language-coffees
 [coffeescript-keyword-until]: ../../coffeescript/keywords/until.md
 [coffeescript-keyword-when]: ../../coffeescript/keywords/when.md
 [concept-destructuring]: ../../../concepts/destructuring.md
-[concept-destructuring-assigment]: ../../../concepts/destructuring_assignment.md
+[concept-destructuring-assignment]: ../../../concepts/destructuring_assignment.md
 [concept-list-comprehension]: ../../../concepts/list_comprehension.md
 [concept-rest-parameters]: ../../../concepts/rest_parameters.md
 [concept-variable-shadowing]: ../../../concepts/variable_shadowing.md

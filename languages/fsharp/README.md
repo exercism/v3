@@ -1,4 +1,4 @@
-_Note: All subconcepts should be split out into seperate files under the concepts directory and hyperlinked._
+_Note: All subconcepts should be split out into separate files under the concepts directory and hyperlinked._
 
 # F&#35;
 
@@ -42,7 +42,7 @@ Thinking as an F# developer means knowing about how to use the following functio
 
 ## Object-oriented concepts
 
-While F# is “functional first” language, it does have (very nice) object-orientation features. It is important to know how and when to apply the OO features, and which OO features (see https://youtu.be/yL7xBhWrdKw?t=2248) to use. The core OO features an F# developer should know about are:
+While F# is "functional first" language, it does have (very nice) object-orientation features. It is important to know how and when to apply the OO features, and which OO features (see https://youtu.be/yL7xBhWrdKw?t=2248) to use. The core OO features an F# developer should know about are:
 
 - [Classes](../../concepts/classes.md)
 - [Interfaces](../../concepts/interfaces.md)
@@ -87,7 +87,7 @@ Note that some of these features are specific to object-orientation in the world
 - Discriminated union (sum type, linked to (exhaustive) pattern matching)
 - Option type (no null by default)
 - Result type (encode errors in type system)
-- Tuple (product type, it’s not a type common to all languages, so I did not list it as such)
+- Tuple (product type, it's not a type common to all languages, so I did not list it as such)
 - Unit type
 - Array
 - List

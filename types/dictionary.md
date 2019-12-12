@@ -1,4 +1,4 @@
-# Dictionairy
+# Dictionary
 
 See [map][type-map].
 

@@ -37,7 +37,7 @@ Exercises are unlocked based on concepts taught and learnt. Each Concept Exercis
 
 Concept Exercises do not share a common base like Practice Exercises do in the `problem-specifications` repository. Instead they "share" concepts that they are teaching with other languages. This repository aims to list all of those concepts and provide information about the concept that maintainers can use as the basis for their own languages. Each concept should also link to the implementations in different languages. Maintainers are free to copy and paste from each others repositories, and then edit to make things specific to their tracks, but such copy-and-pastes should be considered hard-forks.
 
-For example, we might define a concept of "Classes" and provide a short introduction that explains what a class is, how it fits with objects, state, etc. We might include a link to a good article introducing OOP and classes. Individual tracks implementing an exercise on Classes can then include this introductory text, making any additions that explain their language-specific semenatics and syntax.
+For example, we might define a concept of "Classes" and provide a short introduction that explains what a class is, how it fits with objects, state, etc. We might include a link to a good article introducing OOP and classes. Individual tracks implementing an exercise on Classes can then include this introductory text, making any additions that explain their language-specific semantics and syntax.
 
 ### Exercise Structure
 
@@ -76,7 +76,7 @@ Things are grouped into several subdirectories:
 - **concepts:** This directory contains files discussing **programming** concepts. These documents should provide guidance, limitations, and links for maintainers who need to expound those ideas on their tracks.
 - **languages:** A directory for each language containing a README.md that outlines the concepts that are necessary to learn to become fluent in those languages. Each language has a config.json and the following subdirectories:
 
-  - **transitions:** Contains a file for each pair of languages, where someone with a background in X learns new language Y. These should explain the concepts that needed to be remapped/learnt. The files in this directory intially aim to help inform us about both the langauge-agnostic and language-specific files, but will hopefully also in the long-run provide custom pathways for people learning languages.
+  - **transitions:** Contains a file for each pair of languages, where someone with a background in X learns new language Y. These should explain the concepts that needed to be remapped/learnt. The files in this directory initially aim to help inform us about both the language-agnostic and language-specific files, but will hopefully also in the long-run provide custom pathways for people learning languages.
   - **info:** Files containing information that the implementer might find useful. These may be files on language-specific elements of programming concepts or notes on the idiomatic way to use tooling. For now, maintainers are encouraged to organise this directory however they feel best, and we may formalise a structure later.
   - **concept-exercises:** The WIP concept exercises for that language.
   - **config.json** The WIP config.json for a track, with the practice exercises removed to avoid noise.

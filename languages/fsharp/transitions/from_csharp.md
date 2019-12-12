@@ -21,16 +21,16 @@
 
 - Doing something with F# types is usually done by passing the instance to a function. In C#, a method is called on the instance itself. That said, you can do some things through instance properties/methods, so it can be confusing when to use what.
 - The record type is used where in C# class and struct types were used. Most C# programmers will probably consider it to be equivalent to a class, which is partly true, but the main difference is that an F# record has structural equality, whereas a C# class has reference equality.
-- The record type is immutable, which is usually not the case with C# classes or structs. This means that “mutating” a record means returning another instance of the record (using special syntax). That said, it is not totally unusual for C# classes to be (partly) immutable, so it is not a completely foreign concept.
+- The record type is immutable, which is usually not the case with C# classes or structs. This means that "mutating" a record means returning another instance of the record (using special syntax). That said, it is not totally unusual for C# classes to be (partly) immutable, so it is not a completely foreign concept.
 - Discriminated unions superficially look very similar to enums, so a C# developer might initially be tempted to just use enums. However, discriminated unions are significantly more powerful.
 - Option types are superficially similar to nullable types, so a C# developer might initially be tempted to just use nullable types. However, option types are significantly more powerful, although with C# 8, there is less difference due to nullability of reference types being introduced.
 - Maps, lists and sets all look like they are the same as their C# equivalent, but in fact they are not. This can trip up a C# programmer as the performance characteristics are different.
 - Maps, lists and sets are immutable. Adding data to it means creating a new instance of that type. This goes against how the C# collections work, where you mutate an instance to add/update/remove data to it. C# programmers might also be concerned about the performance aspects of creating a new instance for each mutation (turns out to be not that much of an issue).
 - Lists are the primary collection type, but data is usually prepended to the list (for performance reasons). In C#, lists usually add data to the end of the list, which is not very performant with F# lists.
 - What is known as an Enumerable in C#, is known as a Sequence in F#. Thus, it is the same concept but with two different names.
-- All built-in .NET framework types’ methods are called with tuples. This is usually not apparent to C# programmers, as F# tuples use a comma to separate their parts, whereas in C# a comma is used to separate parameters. This means that it looks like passing arguments to a built-in .NET framework type uses the same syntax in F# as it does in C#, but in fact it doesn’t. This can then trip somebody up when trying to use the same syntax to pass arguments to F# functions.
-- The Option and Result types are both implemented as Discriminated unions, so it’s important to understand the latter first probably.
-- The two core types (Records and Discriminated Unions) are quite expressive and concise; they have a very minimal syntax. Combining this minimal syntax and their expressiveness, F# developers introduce types far more often than C# developers. An example of this are “wrapper types,” that provide a small wrapper around primitive types.
+- All built-in .NET framework types' methods are called with tuples. This is usually not apparent to C# programmers, as F# tuples use a comma to separate their parts, whereas in C# a comma is used to separate parameters. This means that it looks like passing arguments to a built-in .NET framework type uses the same syntax in F# as it does in C#, but in fact it doesn't. This can then trip somebody up when trying to use the same syntax to pass arguments to F# functions.
+- The Option and Result types are both implemented as Discriminated unions, so it's important to understand the latter first probably.
+- The two core types (Records and Discriminated Unions) are quite expressive and concise; they have a very minimal syntax. Combining this minimal syntax and their expressiveness, F# developers introduce types far more often than C# developers. An example of this are "wrapper types," that provide a small wrapper around primitive types.
 
 ## Teaching F# types
 
@@ -39,7 +39,7 @@ So how would one go about teaching F# types to a C# programmer? I think the core
 - Records
 - Discriminated unions
 - Lists
-- Tuples (perhaps skip this if the student is familiar with ValueTuple<T> in C#; don’t skip this if the student is only familiar with the “old” Tuple<T> type)
+- Tuples (perhaps skip this if the student is familiar with ValueTuple<T> in C#; don't skip this if the student is only familiar with the "old" Tuple<T> type)
 
 Once the student knows these basic types, learning the other types is probably relatively easy, as they build on the same foundations:
 
@@ -111,12 +111,12 @@ Some FP concepts may already be known, but have a slightly different or less ext
 - Defining namespaces
 - Chaining functions (pipeline operator)
 - Equality, inequality and logical not operators (a C# programmer will get these wrong initially)
-- Anonymous methods (lambda’s)
+- Anonymous methods (lambda's)
 
 ## General notes
 
-- As seen, for some F# concepts there is a similar/equivalent C# counterpart. However, sometimes these C# counterparts were only introduced in later versions (e.g. pattern matching was introduced in C# 7). This means that it is very important to know which C# version a programmer is already familiar with, as some C# concepts might not be known to all C# programmers. This is why I’ve separated the concepts to learn in two categories: “New concepts” and “Possibly new concepts.”
-- Many of the entries in the new concepts/unlearn concepts are their direct counterparts. For example, the new “Significant whitespace” concept is directly tied to unlearning the “Braces define scope” concept.
+- As seen, for some F# concepts there is a similar/equivalent C# counterpart. However, sometimes these C# counterparts were only introduced in later versions (e.g. pattern matching was introduced in C# 7). This means that it is very important to know which C# version a programmer is already familiar with, as some C# concepts might not be known to all C# programmers. This is why I've separated the concepts to learn in two categories: "New concepts" and "Possibly new concepts."
+- Many of the entries in the new concepts/unlearn concepts are their direct counterparts. For example, the new "Significant whitespace" concept is directly tied to unlearning the "Braces define scope" concept.
 
 ## Resources
 
