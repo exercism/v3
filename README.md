@@ -69,7 +69,7 @@ Once the user completes the exercise they will be shown this file, which gives t
 
 See the C# floating-point-numbers exercise's [after.md file](./languages/csharp/concept-exercises/floating-point-numbers/.docs/after.md) for an example.
 
-## Repository Structure
+## Rules around Unblocking
 
 We will also be changing some of the rules around unlocking. Multiple Concept Exercises will be able to be unlocked at the same time, and Concept Exercises can unlock more complex, related Concept Exercises (e.g. Ruby might have a blocks Concept Exercise, which when completed unlocks exercises on Procs, Lambdas, block_given?, etc).
 
