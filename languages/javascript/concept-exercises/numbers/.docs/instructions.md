@@ -13,7 +13,7 @@ The freelancer is offering to apply a discount if the project manager chooses
 to let the freelancer bill per month, which can come in handy if there is a
 certain budget the project manager has to work with.
 
-Discounts are modelled as fractional numbers followed by a `%` (percentage)
+Discounts are modeled as fractional numbers followed by a `%` (percentage)
 between `0.0%` (no discount) and `90.0%` (maximum discount).
 
 ## Tasks

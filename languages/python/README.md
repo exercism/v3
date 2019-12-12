@@ -7,7 +7,7 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 - [The Zen of Python](./info/zen_of_python.md)
 - [Pythonic](./info/pythonic.md) code
 - [Python Enhancement Proposals](./info/python_enhancement_proposals.md)
-- [PEP 8](./info/pep_8_style_guide.md) styie conventions
+- [PEP 8](./info/pep_8_style_guide.md) style conventions
 
 ## Object-oriented concepts
 

@@ -9,7 +9,7 @@ nothing in common with the typical catching of exceptions. The difference become
 
 ## Simple Example
 
-Errors in Go are explicitely returned by every function that can fail. The error should always be the last return argument.
+Errors in Go are explicitly returned by every function that can fail. The error should always be the last return argument.
 Here for example the function `os.Open` to open a file:
 
 ```go
@@ -43,7 +43,7 @@ the caller. This is often done in lower level functions.
 Additionally we created a function ourselves that returns an error. If the given `file` string is empty we want to catch
 that before trying to open the file and return a newly created error.
 
-At some point up the chain we would then devide to log the error or deal with it for example by creating a new empty file instead.
+At some point up the chain we would then decide to log the error or deal with it for example by creating a new empty file instead.
 An error should however not be dealt with and returned up the chain at the same time.
 
 Don't do:

@@ -7,6 +7,6 @@ This transition is very unlikely, as many if not all will learn JavaScript befor
 - Dropping type annotations
 - Dropping tooling such as `tsc` (TypeScript Compiler)
 
-And focussing on JavaScript-only features, which are either discouraged in TypeScript or not even supported, such as:
+And focusing on JavaScript-only features, which are either discouraged in TypeScript or not even supported, such as:
 
 - Prototype-based inheritance using `Object.create`

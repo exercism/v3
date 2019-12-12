@@ -8,7 +8,7 @@ The various conventions within it might at times seem arbitrary, but they've bee
 
 ## Tools
 
-Various tools exist in the Python ecoystem for ensuring that your code doesn't grossly violate PEP 8 conventions. Currently the two most recommended (if opinionated) ones would be [Pylint](https://www.pylint.org/), which will analyze your code for style as well as logical errors, and [Black](https://black.readthedocs.io/en/stable/), which will autoformat your code to take the guesswork out of readability.
+Various tools exist in the Python ecosystem for ensuring that your code doesn't grossly violate PEP 8 conventions. Currently the two most recommended (if opinionated) ones would be [Pylint](https://www.pylint.org/), which will analyze your code for style as well as logical errors, and [Black](https://black.readthedocs.io/en/stable/), which will autoformat your code to take the guesswork out of readability.
 
 ## Resources
 

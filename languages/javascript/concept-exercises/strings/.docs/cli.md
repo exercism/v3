@@ -40,7 +40,7 @@ Once you get a test passing, you can enable the next one by changing `xtest` to
 Once none of the tests are skipped and they are all passing, you can submit
 your solution using `exercism submit strings.js`.
 
-## Witing custom tests
+## Writing custom tests
 
 If you wish to write additional, custom, tests, create a new file
 `custom.spec.js`, and submit it with your solution together with the new file:

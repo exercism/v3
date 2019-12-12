@@ -37,7 +37,7 @@ using the `reflect` package might be necessary. Reflection is expensive.
 - Calling this function needs type casting afterwards `double(5).(int)` as the returned empty interface is of unknown type.
 Not casting the type afterwards will litter the entire code base with variables of unknown type.
 A variable of type `interface{}` cannot be used, unless casted to its underlying type first.
-- Using `interface{}` disables type ckecks at compile time and introduces failures at runtime.
+- Using `interface{}` disables type checks at compile time and introduces failures at runtime.
 When using the function above with a non-supported type it will return the special "not a number" (`float64`) value.
 Not checking for that after every call to the function is a big risk. Especially if the variable passed to the function
 is already of type `interface{}` and with that its type unknown to the compiler and to the developer.

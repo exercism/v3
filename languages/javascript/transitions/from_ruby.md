@@ -1,6 +1,6 @@
 # Learning JavaScript with a Ruby background
 
-Talk about argument requirements, difference of object is everything (ruby) and existance of meta singleton/eigenclass (ruby) vs object is everything (js) -> but not really and inheritance chnage.
+Talk about argument requirements, difference of object is everything (ruby) and existence of meta singleton/eigenclass (ruby) vs object is everything (js) -> but not really and inheritance change.
 
 Other concepts to mention:
 

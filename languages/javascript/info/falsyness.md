@@ -1,4 +1,4 @@
-# Faslyness
+# Falsyness
 
 See [falsy][concept-javascript-falsy].
 
