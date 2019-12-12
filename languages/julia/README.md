@@ -52,7 +52,10 @@
 - Abstract type
 - Struct
 - Tuple
-- Array
+- [Array](../../types/array.md)
+  - 1-based indexing
+  - Arbitrary indexing
+  - Multidimensional arrays
 - Dict
 - Symbol
 - `Expr`ession
