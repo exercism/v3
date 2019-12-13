@@ -2,6 +2,6 @@
 
 > This is a stub
 
-See the general [`array` type][type-array].
+See the general [`array` type][general-type-array].
 
-[type-array]: ../../../types/array.md
+[general-type-array]: ../../../types/array.md

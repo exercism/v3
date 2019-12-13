@@ -2,6 +2,6 @@
 
 > This is a stub
 
-See the general [`boolean` type][type-boolean].
+See the general [`boolean` type][general-type-boolean].
 
-[type-boolean]: ../../../types/boolean.md
+[general-type-boolean]: ../../../types/boolean.md

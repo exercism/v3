@@ -2,6 +2,6 @@
 
 > This is a stub
 
-See the general [`class` type][type-class].
+See the general [`class` type][general-type-class].
 
-[type-class]: ../../../types/class.md
+[general-type-class]: ../../../types/class.md
