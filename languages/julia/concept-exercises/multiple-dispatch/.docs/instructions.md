@@ -31,7 +31,7 @@ First, add an abstract type `Pet` to your implementation, of which `Cat` and `Do
 
 - If a pet meets another pet that it doesn't recognize, it **is cautious**.
 
-There are many other things that pets may encounter that aren't pets: cars, humans, plants, natural disasters, asteroids... What happens then?
+There are many other things that pets may encounter that aren't pets: cars, humans, plants, natural disasters, asteroids… What happens then?
 
 ## 4. Define a fallback if a pet encounters something it doesn't know
 
