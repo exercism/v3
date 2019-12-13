@@ -69,14 +69,6 @@ Once the user completes the exercise they will be shown this file, which gives t
 
 See the C# floating-point-numbers exercise's [after.md file](./languages/csharp/concept-exercises/floating-point-numbers/.docs/after.md) for an example.
 
-## Repository Structure
-
-We will also be changing some of the rules around unlocking. Multiple Concept Exercises will be able to be unlocked at the same time, and Concept Exercises can unlock more complex, related Concept Exercises (e.g. Ruby might have a blocks Concept Exercise, which when completed unlocks exercises on Procs, Lambdas, block_given?, etc).
-
-We have also changed the way unlocking works. Rather than being explicitly stated in track configurations, unlocking is implicitly worked out by the tagging of "concepts learnt" on Concept Exercises, and "prerequisite concepts" on Practice Exercises. Once enough Concept Exercises are completed so that all the prerequisite concepts for a Practice Exercise are fulfilled, that Practice Exercise is unlocked.
-
-Concept Exercises don't share a generic base such as `problem-specifications`. However, we write language-agnostic introductions to programming concepts, with links to language-generic resources on that topic, which we ask tracks to use. For example, we have defined a concept of "Enumeration" and provided a short introduction that explains how enumeration differs from loops with a link out to a good article (either internal to Exercism or elsewhere on the web). Tracks implementing an exercise on enumeration can then include this common paragraph, before explaining their own language-specific semantics and syntax.
-
 ## Repository structure
 
 Things are grouped into several subdirectories:
