@@ -90,13 +90,13 @@ if it's not available, and only return it if it meets a certain threshold.
 service.premium("jIyajbe'", 100)
 // => Promise<...> resolves "I don't understand."
 
-service.premium("‘arlogh Qoylu'pu'?", 100)
+service.premium("'arlogh Qoylu'pu'?", 100)
 // => Promise<...> rejects QualityThresholdNotMet()
 
-service.premium("‘arlogh Qoylu'pu'?", 40)
+service.premium("'arlogh Qoylu'pu'?", 40)
 // => Promise<...> resolves "What time is it?"
 ```
 
 ## N.B.
 
-The correct translation of `‘arlogh Qoylu'pu'?` is **How many times has it been heard?**.
+The correct translation of `'arlogh Qoylu'pu'?` is **How many times has it been heard?**.
