@@ -4,9 +4,10 @@ A `struct` type is a [value type][csharp-info-value_types] that is typically use
 
 All simple types are structs:
 
-- Integral types: integer numeric types and the `char` type
+- Integral types: integer numeric types and the [`char` type][csharp-type-char]
 - Floating-point types
 - [`bool`][csharp-type-bool]
 
 [csharp-info-value_types]: ../info/value_types.md
 [csharp-type-bool]: ./bool.md
+[csharp-type-char]: ./char.md
