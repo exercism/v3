@@ -1,0 +1,41 @@
+{
+  "language": "Dart",
+  "active": true,
+  "blurb": "Dart is a general purpose language, primarily used for creating dynamic mobile apps (with Flutter) as well as websites and programming web servers. It's a very solidlanguage, and supports a variety of programming paradigms.",
+  "test_pattern": ".*[_]test[.]dart$",
+  "version": 1,
+  "exercises": {
+    "concept": [
+      {
+        "slug": "numbers",
+        "uuid": "714711a6-1be7-4540-9d44-87b1e58417fc",
+        "concepts": [
+          "basic-numbers",
+          "type-conversion"
+        ],
+        "prerequisites": []
+      },
+      {
+        "slug": "strings",
+        "uuid": "1b7e3737-0333-4eee-b425-2e84b2e09fe2",
+        "concepts": [
+          "basic-strings"
+        ]
+      },
+      {
+        "slug": "futures",
+        "uuid": "cf1093f0-3a6b-4ad1-83a9-a8d9b2a57991",
+        "concepts": [
+          "futures"
+        ],
+        "prerequisites": [
+          "basic-iterables",
+          "basic-errors",
+          "callbacks",
+          "recursion"
+        ]
+      }
+    ],
+    "practice": []
+  }
+}
