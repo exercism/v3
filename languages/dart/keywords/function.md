@@ -8,7 +8,7 @@ const greet = function(name) {
 };
 ```
 
-You can also define functions using the `Function` constructor and a function declaration.
+You can also define functions using a function declaration.
 
 ## Function declaration
 
@@ -18,14 +18,6 @@ The function declaration (function statement) defines a function with the specif
 function greet(name) {
   return `Hello $name`;
 }
-```
-
-## `Function` constructor
-
-The `Function` constructor creates a new Function **object**. Calling the constructor directly can create functions dynamically, but suffers from security and similar (but far less significant) performance issues to eval. However, unlike `eval`, the Function constructor creates functions which execute in the [global scope][concept-scope] only.
-
-```dart
-const greet = new Function("name", "return `Hello $name`");
 ```
 
 [concept-scope]: ../../../concepts/scope.md
