@@ -4,7 +4,7 @@ public static class AssemblyLine
     {
         // TODO: implement this method
     }
-    
+
     public static int WorkingItemsPerMinute(int speed)
     {
         // TODO: implement this method
