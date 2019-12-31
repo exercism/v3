@@ -91,7 +91,7 @@
 
 - [Anonymous functions][concept-anonymous-functions]
 - [Higher-order functions][concept-higher-order-functions]
-- [Immutability][concept-immutable] (of primitives, and using `Object.freeze`)
+- [Immutability][concept-immutable]
 - [Nested functions][concept-nested-functions]
 - [Partial application][concept-partial-application]
 - [Pure functions][concept-pure-functions]
