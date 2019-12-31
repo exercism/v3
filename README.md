@@ -47,13 +47,13 @@ An exercise has the following files. In the browser they will show at the releva
 
 This file provides an introduction to the concept. It should be explicit about what the exercise teaches and maybe provide a brief introduction to the concepts, but not give away so much that the user doesn't have to do any work to solve the exercise.
 
-See the C# floating-point-numbers exercise's [introduction.md file](./languages/csharp/concept-exercises/floating-point-numbers/.docs/introduction.md) for an example.
+See the C# floating-point-numbers exercise's [introduction.md file](./languages/csharp/concept-exercises/numbers-floating-point/.docs/introduction.md) for an example.
 
 #### `.docs/instructions.md`
 
 This file provides instructions for the exercise. It should explicitly explain what the user needs to do (define a function with the signature `X.y(...)` that takes an A and returns a Z), and provide at least one example usage of that function. If there are multiple tasks within the exercise, it should provide an example of each.
 
-See the C# floating-point-numbers exercise's [instructions.md file](./languages/csharp/concept-exercises/floating-point-numbers/.docs/instructions.md) for an example.
+See the C# floating-point-numbers exercise's [instructions.md file](./languages/csharp/concept-exercises/numbers-floating-point/.docs/instructions.md) for an example.
 
 #### `.docs/hints.md`
 
@@ -61,13 +61,13 @@ If the user gets stuck, we will allow them to click a button requesting a hint, 
 
 The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any user. They might link to the docs of the functions that need to be used.
 
-See the C# floating-point-numbers exercise's [hints.md file](./languages/csharp/concept-exercises/floating-point-numbers/.docs/hints.md) for an example.
+See the C# floating-point-numbers exercise's [hints.md file](./languages/csharp/concept-exercises/numbers-floating-point/.docs/hints.md) for an example.
 
 #### `.docs/after.md`
 
 Once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught.
 
-See the C# floating-point-numbers exercise's [after.md file](./languages/csharp/concept-exercises/floating-point-numbers/.docs/after.md) for an example.
+See the C# floating-point-numbers exercise's [after.md file](./languages/csharp/concept-exercises/numbers-floating-point/.docs/after.md) for an example.
 
 ## Repository structure
 
