@@ -7,11 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: "10"
-      - name: Install markdown-link-check
-        run: npm install -g markdown-link-check
-      - name: Verify links
-        run: find . -name \*.md ! -iname _sidebar.md ! -ipath \*/ISSUE_TEMPLATE/\*.md -print0 | xargs -0 -n1 markdown-link-check -q
+      - name: Download link-verifier
+        run: |
+          wget https://github.com/bmuschko/link-verifier/releases/download/v0.7/link-verifier-0.7-linux-amd64.tar.gz -O /tmp/link-verifier.tar.gz
+          tar -xvf /tmp/link-verifier.tar.gz
+          export PATH=$PATH:$PWD/link-verifier/
+      - name: Run link-verifier
+        run: ./link-verifier
