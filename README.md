@@ -69,6 +69,12 @@ Once the user completes the exercise they will be shown this file, which gives t
 
 See the C# floating-point-numbers exercise's [after.md file](./languages/csharp/concept-exercises/numbers-floating-point/.docs/after.md) for an example.
 
+#### `.docs/debug.md`
+
+This file explains how a user that is coding in the browser can still do "debugging."
+
+See the C# floating-point-numbers exercise's [debug.md file](./languages/csharp/concept-exercises/numbers-floating-point/.docs/debug.md) for an example.
+
 ## Repository structure
 
 Things are grouped into several subdirectories:
