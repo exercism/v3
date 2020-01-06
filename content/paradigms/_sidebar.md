@@ -1,5 +1,5 @@
 - Docs
-  - [Introduction](/)
+  - [Introduction to V3](/)
 
 - Content
   - [Concepts](/content/concepts/README.md)
