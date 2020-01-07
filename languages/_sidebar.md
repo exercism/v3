@@ -1,9 +1,7 @@
-- Docs
-  - [Introduction to V3](/)
-
-- Content
+- [Introduction](/)
+- [Docs](README.md)- Content
   - [Concepts](/reference/concepts/README.md)
-  - [Paradigms](reference/paradigms/README.md)
+  - [Paradigms](/reference/paradigms/README.md)
   - [Tooling](/reference/tooling/README.md)
   - [Types](/reference/types/README.md)
 
