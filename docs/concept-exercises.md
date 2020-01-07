@@ -2,7 +2,7 @@
 
 Concept Exercises replace V2's Core Exercises. They are exercises designed to teach specific programming concepts.
 
-## What do we mean by programming concepts?
+## What do we mean by concepts?
 
 By concepts we mean things that a programmer would need to understand to be fluent in a language. We care specifically about how languages are **different**. What do I need to learn differently about numbers in Haskell to numbers in Ruby to be able to work with numbers in those languages. Two questions that we have felt useful to ask to establish this are:
 
@@ -70,4 +70,3 @@ See the C# floating-point-numbers exercise's [after.md file](./languages/csharp/
 This file explains how a user that is coding in the browser can still do "debugging."
 
 See the C# floating-point-numbers exercise's [debug.md file](./languages/csharp/concept-exercises/numbers-floating-point/.docs/debug.md) for an example.
-
