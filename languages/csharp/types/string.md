@@ -4,4 +4,4 @@ A `string` in C# is a sequence of Unicode characters (letters, digits, punctuati
 
 See the general [`string` type][general-type-string].
 
-[general-type-string]: ../../../types/string.md
+[general-type-string]: ../../../../reference/types/string.md

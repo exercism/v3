@@ -10,29 +10,29 @@ C# is an object-oriented language.
 
 The core OO features a C# developer should know about are:
 
-- [Encapsulation](../../concepts/encapsulation.md)
-- [Classes](../../concepts/classes.md)
-- [Objects](../../concepts/objects.md)
-- [State](../../concepts/state.md)
-- [Mutation](../../concepts/mutation.md)
-- [Composition](../../concepts/composition.md)
-- [Inheritance](../../concepts/inheritance.md)
-- [Interfaces](../../concepts/interfaces.md)
-- [Polymorphism](../../concepts/polymorphism.md)
-- [Methods](../../concepts/methods.md)
+- [Encapsulation](../../../reference/concepts/encapsulation.md)
+- [Classes](../../../reference/concepts/classes.md)
+- [Objects](../../../reference/concepts/objects.md)
+- [State](../../../reference/concepts/state.md)
+- [Mutation](../../../reference/concepts/mutation.md)
+- [Composition](../../../reference/concepts/composition.md)
+- [Inheritance](../../../reference/concepts/inheritance.md)
+- [Interfaces](../../../reference/concepts/interfaces.md)
+- [Polymorphism](../../../reference/concepts/polymorphism.md)
+- [Methods](../../../reference/concepts/methods.md)
 
 ### Functional
 
 While C# is primarily an OO language, lots of functional concepts have been added to the language:
 
-- [Immutability](../../concepts/immutability.md)
-- [Pattern matching](../../concepts/pattern_matching.md)
-- [Higher-order functions](../../concepts/higher_order_functions.md)
-- [Type inference](../../concepts/type_inference.md)
-- [Anonymous methods](../../concepts/anonymous_functions.md)
-- [Recursion](../../concepts/recursion.md)
-- [Local functions](../../concepts/nested_functions.md)
-- [Pipelines (LINQ)](../../concepts/pipelines.md)
+- [Immutability](../../../reference/concepts/immutability.md)
+- [Pattern matching](../../../reference/concepts/pattern_matching.md)
+- [Higher-order functions](../../../reference/concepts/higher_order_functions.md)
+- [Type inference](../../../reference/concepts/type_inference.md)
+- [Anonymous methods](../../../reference/concepts/anonymous_functions.md)
+- [Recursion](../../../reference/concepts/recursion.md)
+- [Local functions](../../../reference/concepts/nested_functions.md)
+- [Pipelines (LINQ)](../../../reference/concepts/pipelines.md)
 
 ### Platform-specific
 
@@ -61,12 +61,12 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 
 ### General
 
-- [Sameness](../../concepts/sameness.md)
-- [Conditionals](../../concepts/conditionals.md)
-- [Enumeration](../../concepts/enumeration.md)
+- [Sameness](../../../reference/concepts/sameness.md)
+- [Conditionals](../../../reference/concepts/conditionals.md)
+- [Enumeration](../../../reference/concepts/enumeration.md)
 - Iterators (yield)
 - Namespaces
-- [Generics](../../concepts/generics.md)
+- [Generics](../../../reference/concepts/generics.md)
 - Exception handling
 - Type casting (includes boxing/unboxing)
 - Anonymous types
@@ -95,44 +95,44 @@ This also means that some concepts will be listed more than once.
 
 ### Object-oriented
 
-- [Encapsulation](../../concepts/encapsulation.md)
-  - [Classes](../../concepts/classes.md)
-- [Classes](../../concepts/classes.md)
-- [Objects](../../concepts/objects.md)
-  - [Classes](../../concepts/classes.md)
-- [State](../../concepts/state.md)
-  - [Classes](../../concepts/classes.md)
-- [Mutation](../../concepts/mutation.md)
-- [Composition](../../concepts/composition.md)
-  - [Classes](../../concepts/classes.md)
-  - [Objects](../../concepts/objects.md)
-- [Inheritance](../../concepts/inheritance.md)
-  - [Classes](../../concepts/classes.md)
-- [Interfaces](../../concepts/interfaces.md)
-  - [Classes](../../concepts/classes.md)
-- [Polymorphism](../../concepts/polymorphism.md)
-  - [Inheritance](../../concepts/inheritance.md)
-- [Methods](../../concepts/methods.md)
-  - [Classes](../../concepts/classes.md)
+- [Encapsulation](../../../reference/concepts/encapsulation.md)
+  - [Classes](../../../reference/concepts/classes.md)
+- [Classes](../../../reference/concepts/classes.md)
+- [Objects](../../../reference/concepts/objects.md)
+  - [Classes](../../../reference/concepts/classes.md)
+- [State](../../../reference/concepts/state.md)
+  - [Classes](../../../reference/concepts/classes.md)
+- [Mutation](../../../reference/concepts/mutation.md)
+- [Composition](../../../reference/concepts/composition.md)
+  - [Classes](../../../reference/concepts/classes.md)
+  - [Objects](../../../reference/concepts/objects.md)
+- [Inheritance](../../../reference/concepts/inheritance.md)
+  - [Classes](../../../reference/concepts/classes.md)
+- [Interfaces](../../../reference/concepts/interfaces.md)
+  - [Classes](../../../reference/concepts/classes.md)
+- [Polymorphism](../../../reference/concepts/polymorphism.md)
+  - [Inheritance](../../../reference/concepts/inheritance.md)
+- [Methods](../../../reference/concepts/methods.md)
+  - [Classes](../../../reference/concepts/classes.md)
 
 ### Functional
 
-- [Immutability](../../concepts/immutability.md)
-  - [Mutation](../../concepts/mutation.md)
-- [Pattern matching](../../concepts/pattern_matching.md)
-  - [Conditionals](../../concepts/conditionals.md)
-- [Recursion](../../concepts/recursion.md)
-- [Local functions](../../concepts/nested_functions.md)
-  - [Classes](../../concepts/classes.md)
-- [Pipelines (LINQ)](../../concepts/pipelines.md)
-  - [Higher-order functions](../../concepts/higher_order_functions.md)
-  - [Type inference](../../concepts/type_inference.md)
-  - [Anonymous methods](../../concepts/anonymous_functions.md)
+- [Immutability](../../../reference/concepts/immutability.md)
+  - [Mutation](../../../reference/concepts/mutation.md)
+- [Pattern matching](../../../reference/concepts/pattern_matching.md)
+  - [Conditionals](../../../reference/concepts/conditionals.md)
+- [Recursion](../../../reference/concepts/recursion.md)
+- [Local functions](../../../reference/concepts/nested_functions.md)
+  - [Classes](../../../reference/concepts/classes.md)
+- [Pipelines (LINQ)](../../../reference/concepts/pipelines.md)
+  - [Higher-order functions](../../../reference/concepts/higher_order_functions.md)
+  - [Type inference](../../../reference/concepts/type_inference.md)
+  - [Anonymous methods](../../../reference/concepts/anonymous_functions.md)
   - Anonymous types
-- [Higher-order functions](../../concepts/higher_order_functions.md)
-- [Type inference](../../concepts/type_inference.md)
-- [Anonymous methods](../../concepts/anonymous_functions.md)
-  - [Higher-order functions](../../concepts/higher_order_functions.md)
+- [Higher-order functions](../../../reference/concepts/higher_order_functions.md)
+- [Type inference](../../../reference/concepts/type_inference.md)
+- [Anonymous methods](../../../reference/concepts/anonymous_functions.md)
+  - [Higher-order functions](../../../reference/concepts/higher_order_functions.md)
 
 ### Platform-specific
 
@@ -141,17 +141,17 @@ This also means that some concepts will be listed more than once.
 ### Memory management
 
 - Resource passing
-  - [Objects](../../concepts/objects.md)
+  - [Objects](../../../reference/concepts/objects.md)
 - Resource allocation
-  - [Classes](../../concepts/classes.md)
-  - [Objects](../../concepts/objects.md)
+  - [Classes](../../../reference/concepts/classes.md)
+  - [Objects](../../../reference/concepts/objects.md)
   - Resource lifetime (static/non-static)
 - Resource cleanup
-  - [Objects](../../concepts/objects.md)
+  - [Objects](../../../reference/concepts/objects.md)
   - Resource lifetime (static/non-static)
 - Resource lifetime (static/non-static)
-  - [Classes](../../concepts/classes.md)
-  - [Objects](../../concepts/objects.md)
+  - [Classes](../../../reference/concepts/classes.md)
+  - [Objects](../../../reference/concepts/objects.md)
 
 ### Arithmetic
 
@@ -165,7 +165,7 @@ This also means that some concepts will be listed more than once.
 ### Methods
 
 - Method overloading
-  - [Classes](../../concepts/classes.md)
+  - [Classes](../../../reference/concepts/classes.md)
 - Named arguments
 - Optional arguments
 - Extension methods (mixin)
@@ -173,19 +173,19 @@ This also means that some concepts will be listed more than once.
 
 ### General
 
-- [Sameness](../../concepts/sameness.md)
-- [Conditionals](../../concepts/conditionals.md)
-  - [Sameness](../../concepts/sameness.md)
-- [Enumeration](../../concepts/enumeration.md)
+- [Sameness](../../../reference/concepts/sameness.md)
+- [Conditionals](../../../reference/concepts/conditionals.md)
+  - [Sameness](../../../reference/concepts/sameness.md)
+- [Enumeration](../../../reference/concepts/enumeration.md)
 - Iterators (yield)
-  - [Enumeration](../../concepts/enumeration.md)
+  - [Enumeration](../../../reference/concepts/enumeration.md)
 - Namespaces
-- [Generics](../../concepts/generics.md)
+- [Generics](../../../reference/concepts/generics.md)
 - Exception handling
 - Type casting (includes boxing/unboxing)
 - Anonymous types
-  - [Classes](../../concepts/classes.md)
-  - [Anonymous methods](../../concepts/anonymous_functions.md)
+  - [Classes](../../../reference/concepts/classes.md)
+  - [Anonymous methods](../../../reference/concepts/anonymous_functions.md)
 - Concurrency (includes locking and concurrent collections)
 - Asynchronous programming
 - Expressions vs statements
@@ -198,44 +198,44 @@ This also means that some concepts will be listed more than once.
 
 ## Types
 
-- [bool](../../types/boolean.md)
-- [string](../../types/string.md)
-- [char](../../types/char.md)
+- [bool](../../../reference/types/boolean.md)
+- [string](../../../reference/types/string.md)
+- [char](../../../reference/types/char.md)
 - object
 - Enum
-- [Null](../../types/null.md)
-- [Nullable type](../../types/nullable.md)
+- [Null](../../../reference/types/null.md)
+- [Nullable type](../../../reference/types/nullable.md)
 - `Span<T>`
 - `Memory<T>`
-- [Range](../../types/range.md)
+- [Range](../../../reference/types/range.md)
 - Event
 - Delegate
 
 ### Numeric
 
-- [int](../../types/integer.md)
-- [uint](../../types/integer.md)
-- [byte](../../types/byte.md)
-- [sbyte](../../types/byte.md)
-- [short](../../types/short.md)
-- [ushort](../../types/short.md)
-- [long](../../types/long.md)
-- [ulong](../../types/long.md)
-- [double](../../types/double.md)
-- [float](../../types/single.md)
-- [decimal](../../types/decimal_number.md)
-- [BigInteger](../../types/big_integer.md)
+- [int](../../../reference/types/integer.md)
+- [uint](../../../reference/types/integer.md)
+- [byte](../../../reference/types/byte.md)
+- [sbyte](../../../reference/types/byte.md)
+- [short](../../../reference/types/short.md)
+- [ushort](../../../reference/types/short.md)
+- [long](../../../reference/types/long.md)
+- [ulong](../../../reference/types/long.md)
+- [double](../../../reference/types/double.md)
+- [float](../../../reference/types/single.md)
+- [decimal](../../../reference/types/decimal_number.md)
+- [BigInteger](../../../reference/types/big_integer.md)
 
 Note: as can be seen, there are many signed/unsigned data type combinations (e.g. `int`/`uint` and `long`/`ulong`). In practice, the unsigned data types are used far less often then the signed ones, so we should probably start with teaching the signed versions. The unsigned versions can then be taught later on.
 
 ### Collections
 
-- [Array](../../types/array.md)
-- [List](../../types/list.md)
-- [Dictionary](../../types/map.md)
-- [HashSet](../../types/set.md)
-- [Stack](../../types/stack.md)
-- [Queue](../../types/deque.md)
+- [Array](../../../reference/types/array.md)
+- [List](../../../reference/types/list.md)
+- [Dictionary](../../../reference/types/map.md)
+- [HashSet](../../../reference/types/set.md)
+- [Stack](../../../reference/types/stack.md)
+- [Queue](../../../reference/types/deque.md)
 - Enumerable
 - ConcurrentDictionary (and other concurrent )
 - Non-generic collections
@@ -244,10 +244,10 @@ Note: The non-generic collections (such as `ArrayList`) are a remnant of the C# 
 
 ### Composite
 
-- [Class](../../types/class.md)
-- [Struct](../../types/struct.md)
-- [ValueTuple](../../types/tuple.md)
-- [Tuple](../../types/tuple.md)
+- [Class](../../../reference/types/class.md)
+- [Struct](../../../reference/types/struct.md)
+- [ValueTuple](../../../reference/types/tuple.md)
+- [Tuple](../../../reference/types/tuple.md)
 
 Note: these types are essentially a grouping of one or more other types. As such, it is important to have taught the student several of these other, basic types before teaching these composite types.
 

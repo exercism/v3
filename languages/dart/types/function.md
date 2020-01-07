@@ -2,4 +2,4 @@
 
 > This is a stub
 
-[type-function]: ../../../types/function.md
+[type-function]: ../../../../reference/types/function.md

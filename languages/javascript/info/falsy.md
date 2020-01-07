@@ -18,11 +18,11 @@ A falsy value is a value that is considered `false` when encountered in a [Boole
 | `undefined` | `undefined` - the primitive value                                                                                                                                              |
 | `NaN`       | `NaN` - not a number                                                                                                                                                           |
 
-[concept-conditionals]: ../../../concepts/conditionals.md
-[concept-loops]: ../../../concepts/loops.md
-[concept-type-coercion]: ../../../concepts/type_casting.md
+[concept-conditionals]: ../../../../reference/concepts/conditionals.md
+[concept-loops]: ../../../../reference/concepts/loops.md
+[concept-type-coercion]: ../../../../reference/concepts/type_casting.md
 [language-javascript]: ../../../languages/javascript/README.md
-[type-bigint]: ../../../types/big_integer.md
-[type-boolean]: ../../../types/boolean.md
-[type-null]: ../../../types/null.md
-[type-string]: ../../../types/string.md
+[type-bigint]: ../../../../reference/types/big_integer.md
+[type-boolean]: ../../../../reference/types/boolean.md
+[type-null]: ../../../../reference/types/null.md
+[type-string]: ../../../../reference/types/string.md

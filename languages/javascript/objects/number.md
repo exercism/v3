@@ -6,5 +6,5 @@ See [prototype-based inheritance][concept-prototype-inheritance] and the general
 
 [concept-prototype-inheritance]: ../../../languages/javascript/info/prototype_inheritance.md
 [concept-global-objects]: ../../../languages/javascript/info/global_objects.md
-[type-number]: ../../../types/number.md
-[type-object]: ../../../types/object.md
+[type-number]: ../../../../reference/types/number.md
+[type-object]: ../../../../reference/types/object.md

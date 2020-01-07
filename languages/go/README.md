@@ -22,30 +22,30 @@
 
 ## General concepts
 
-- [Arithmetic](../../concepts/arithmetic.md)
-- [Bitwise manipulation](../../concepts/bitwise_manipulation.md)
-- [Boolean logic](../../concepts/boolean_logic.md)
+- [Arithmetic](../../../reference/concepts/arithmetic.md)
+- [Bitwise manipulation](../../../reference/concepts/bitwise_manipulation.md)
+- [Boolean logic](../../../reference/concepts/boolean_logic.md)
 - Channels
 - Code Formatting
-- [Comments](../../concepts/comments.md)
+- [Comments](../../../reference/concepts/comments.md)
 - Concurrency
-- [Conditionals](../../concepts/conditionals.md)
+- [Conditionals](../../../reference/concepts/conditionals.md)
 - Defer
 - Errors and Error Handling
-- [Functions](../../concepts/functions.md)
-- [Loops](../../concepts/loops.md)
-- [Methods](../../concepts/methods.md)
+- [Functions](../../../reference/concepts/functions.md)
+- [Loops](../../../reference/concepts/loops.md)
+- [Methods](../../../reference/concepts/methods.md)
 - Modules
-- [Mutexes](../../concepts/locking.md)
+- [Mutexes](../../../reference/concepts/locking.md)
 - Packages
 - Panics
 - Pointers
 - Nil
 - Reflection
-- [Scope](../../concepts/scope.md)
+- [Scope](../../../reference/concepts/scope.md)
 - Type Switch
 - Unsafe
-- [Variables](../../concepts/variables.md)
+- [Variables](../../../reference/concepts/variables.md)
 - Zero Values
 
 ## Object-oriented Concepts

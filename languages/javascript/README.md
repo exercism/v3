@@ -32,16 +32,16 @@ The wrapper's `valueOf()` method returns the primitive value.
 
 Note: Wrapped primitives (using the `new Constructor()` syntax are of [`typeof`][keyword-typeof] [`object`][type-object], and not their primitive type). See [prototype-based inheritance][concept-prototype-inheritance].
 
-[type-array]: ../../types/array.md
-[type-bigint]: ../../types/big_integer.md
-[type-boolean]: ../../types/boolean.md
-[type-function]: ../../types/function.md
-[type-null]: ../../types/null.md
-[type-number]: ../../types/number.md
-[type-object]: ../../types/object.md
-[type-string]: ../../types/string.md
-[type-symbol]: ../../types/symbol.md
-[type-undefined]: ../../concepts/undefined.md
+[type-array]: ../../../reference/types/array.md
+[type-bigint]: ../../../reference/types/big_integer.md
+[type-boolean]: ../../../reference/types/boolean.md
+[type-function]: ../../../reference/types/function.md
+[type-null]: ../../../reference/types/null.md
+[type-number]: ../../../reference/types/number.md
+[type-object]: ../../../reference/types/object.md
+[type-string]: ../../../reference/types/string.md
+[type-symbol]: ../../../reference/types/symbol.md
+[type-undefined]: ../../../reference/concepts/undefined.md
 
 ## Global Objects (not "types")
 
@@ -100,14 +100,14 @@ Note: Wrapped primitives (using the `new Constructor()` syntax are of [`typeof`]
 - [Polymorphism][concept-polymorphism] (see also [duck-typing][concept-duck-typing])
 - [State][concept-state]
 
-[concept-classes]: ../../concepts/classes.md
-[concept-composition]: ../../concepts/composition.md
-[concept-encapsulation]: ../../concepts/encapsulation.md
-[concept-inheritance]: ../../concepts/inheritance.md
-[concept-mutation]: ../../concepts/mutation.md
-[concept-objects]: ../../concepts/objects.md
-[concept-polymorphism]: ../../concepts/polymorphism.md
-[concept-state]: ../../concepts/state.md
+[concept-classes]: ../../../reference/concepts/classes.md
+[concept-composition]: ../../../reference/concepts/composition.md
+[concept-encapsulation]: ../../../reference/concepts/encapsulation.md
+[concept-inheritance]: ../../../reference/concepts/inheritance.md
+[concept-mutation]: ../../../reference/concepts/mutation.md
+[concept-objects]: ../../../reference/concepts/objects.md
+[concept-polymorphism]: ../../../reference/concepts/polymorphism.md
+[concept-state]: ../../../reference/concepts/state.md
 
 ## Functional concepts
 
@@ -120,14 +120,14 @@ Note: Wrapped primitives (using the `new Constructor()` syntax are of [`typeof`]
 - [Recursion][concept-recursion]
 - [Type inference][concept-type-inference]
 
-[concept-anonymous-functions]: ../../concepts/anonymous_functions.md
-[concept-higher-order-functions]: ../../concepts/higher_order_functions.md
-[concept-immutable]: ../../concepts/immutability.md
-[concept-nested-functions]: ../../concepts/nested_functions.md
-[concept-partial-application]: ../../concepts/partial_application.md
-[concept-pure-functions]: ../../concepts/pure_functions.md
-[concept-recursion]: ../../concepts/recursion.md
-[concept-type-inference]: ../../concepts/type_inference.md
+[concept-anonymous-functions]: ../../../reference/concepts/anonymous_functions.md
+[concept-higher-order-functions]: ../../../reference/concepts/higher_order_functions.md
+[concept-immutable]: ../../../reference/concepts/immutability.md
+[concept-nested-functions]: ../../../reference/concepts/nested_functions.md
+[concept-partial-application]: ../../../reference/concepts/partial_application.md
+[concept-pure-functions]: ../../../reference/concepts/pure_functions.md
+[concept-recursion]: ../../../reference/concepts/recursion.md
+[concept-type-inference]: ../../../reference/concepts/type_inference.md
 
 ## General concepts
 
@@ -147,22 +147,22 @@ Note: Wrapped primitives (using the `new Constructor()` syntax are of [`typeof`]
 - [Type casting][concept-type-casting] (see also [type inference][concept-type-inference])
 - [Variables][concept-variables]
 
-[concept-arithmetic]: ../../concepts/arithmetic.md
-[concept-bitwise-manipulation]: ../../concepts/bitwise_manipulation.md
-[concept-boolean-logic]: ../../concepts/boolean_logic.md
-[concept-comments]: ../../concepts/comments.md
-[concept-conditionals]: ../../concepts/conditionals.md
-[concept-destructuring]: ../../concepts/destructuring.md
-[concept-destructuring-assignment]: ../../concepts/destructuring_assignment.md
-[concept-duck-typing]: ../../concepts/duck_typing.md
-[concept-enumeration]: ../../concepts/enumeration.md
-[concept-functions]: ../../concepts/functions.md
-[concept-loops]: ../../concepts/loops.md
-[concept-methods]: ../../concepts/methods.md
-[concept-rest-parameters]: ../../concepts/rest_parameters.md
-[concept-scope]: ../../concepts/scope.md
-[concept-type-casting]: ../../concepts/type_casting.md
-[concept-variables]: ../../concepts/variables.md
+[concept-arithmetic]: ../../../reference/concepts/arithmetic.md
+[concept-bitwise-manipulation]: ../../../reference/concepts/bitwise_manipulation.md
+[concept-boolean-logic]: ../../../reference/concepts/boolean_logic.md
+[concept-comments]: ../../../reference/concepts/comments.md
+[concept-conditionals]: ../../../reference/concepts/conditionals.md
+[concept-destructuring]: ../../../reference/concepts/destructuring.md
+[concept-destructuring-assignment]: ../../../reference/concepts/destructuring_assignment.md
+[concept-duck-typing]: ../../../reference/concepts/duck_typing.md
+[concept-enumeration]: ../../../reference/concepts/enumeration.md
+[concept-functions]: ../../../reference/concepts/functions.md
+[concept-loops]: ../../../reference/concepts/loops.md
+[concept-methods]: ../../../reference/concepts/methods.md
+[concept-rest-parameters]: ../../../reference/concepts/rest_parameters.md
+[concept-scope]: ../../../reference/concepts/scope.md
+[concept-type-casting]: ../../../reference/concepts/type_casting.md
+[concept-variables]: ../../../reference/concepts/variables.md
 
 ## Language specific concepts
 
@@ -185,7 +185,7 @@ Note: Wrapped primitives (using the `new Constructor()` syntax are of [`typeof`]
   - [Arrays are objects, with indexer][global-object-array]
   - [Functions are callable objects][global-object-function]
 
-[concept-concurrency]: ../../concepts/concurrency.md
+[concept-concurrency]: ../../../reference/concepts/concurrency.md
 [concept-events]: ../../languages/javascript/info/events.md
 [concept-event-loop]: ../../languages/javascript/info/event_loop.md
 [concept-generators]: ../../languages/javascript/info/generators.md

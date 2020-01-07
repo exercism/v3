@@ -38,17 +38,17 @@ platforms). Consequently, `null` had 0 as type tag, hence the `"object"`
 [language-csharp]: ../../csharp/README.md
 [language-ruby]: ../../csharp/README.md
 
-[type-array]: ../../../types/array.md
-[type-bigint]: ../../../types/big_integer.md
-[type-boolean]: ../../../types/boolean.md
-[type-function]: ../../../types/function.md
-[type-null]: ../../../types/null.md
-[type-number]: ../../../types/number.md
-[type-object]: ../../../types/object.md
-[type-pointer]: ../../../types/pointer.md
-[type-string]: ../../../types/string.md
-[type-symbol]: ../../../types/symbol.md
-[type-undefined]: ../../../concepts/undefined.md
+[type-array]: ../../../../reference/types/array.md
+[type-bigint]: ../../../../reference/types/big_integer.md
+[type-boolean]: ../../../../reference/types/boolean.md
+[type-function]: ../../../../reference/types/function.md
+[type-null]: ../../../../reference/types/null.md
+[type-number]: ../../../../reference/types/number.md
+[type-object]: ../../../../reference/types/object.md
+[type-pointer]: ../../../../reference/types/pointer.md
+[type-string]: ../../../../reference/types/string.md
+[type-symbol]: ../../../../reference/types/symbol.md
+[type-undefined]: ../../../../reference/concepts/undefined.md
 
 [ref-null-pointer-typeof]: https://2ality.com/2013/10/typeof-null.html
 [csharp-operator-is]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/is

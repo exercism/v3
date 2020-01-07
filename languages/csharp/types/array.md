@@ -4,4 +4,4 @@
 
 See the general [`array` type][general-type-array].
 
-[general-type-array]: ../../../types/array.md
+[general-type-array]: ../../../../reference/types/array.md

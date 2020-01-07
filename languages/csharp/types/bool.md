@@ -4,4 +4,4 @@
 
 See the general [`boolean` type][general-type-boolean].
 
-[general-type-boolean]: ../../../types/boolean.md
+[general-type-boolean]: ../../../../reference/types/boolean.md

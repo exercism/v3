@@ -4,4 +4,4 @@
 
 See the general [`bigint` type][general-type-bigint].
 
-[general-type-bigint]: ../../../types/big_integer.md
+[general-type-bigint]: ../../../../reference/types/big_integer.md

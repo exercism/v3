@@ -5,4 +5,4 @@ The `char` type represents a single unicode character (letters, digits, punctuat
 See the general [`char` type][general-type-char].
 
 [csharp-type-struct]: ./struct.md
-[general-type-char]: ../../../types/char.md
+[general-type-char]: ../../../../reference/types/char.md

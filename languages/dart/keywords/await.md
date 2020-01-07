@@ -5,5 +5,5 @@ The `await` operator is used to wait for a `Future`. It can only be used inside 
 See [concurrency][concept-concurrency].
 
 [concept-concurrency]: ../info/concurrency.md
-[concept-functions]: ../../../concepts/functions.md
+[concept-functions]: ../../../../reference/concepts/functions.md
 [keyword-async]: ./async.md

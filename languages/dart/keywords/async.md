@@ -5,4 +5,4 @@ Marks a [function][concept-functions] to be asynchronous function; an asynchrono
 See [concurrency][concept-concurrency].
 
 [concept-concurrency]: ../info/concurrency.md
-[concept-functions]: ../../../concepts/functions.md
+[concept-functions]: ../../../../reference/concepts/functions.md

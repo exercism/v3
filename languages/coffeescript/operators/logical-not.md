@@ -15,5 +15,5 @@ It is possible to use a couple of NOT operators in series to explicitly force th
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Logical_NOT
 
-[concept-truthy_and_falsy]: ../../../concepts/truthy_and_falsy.md
-[type-boolean]: ../../../types/boolean.md
+[concept-truthy_and_falsy]: ../../../../reference/concepts/truthy_and_falsy.md
+[type-boolean]: ../../../../reference/types/boolean.md
