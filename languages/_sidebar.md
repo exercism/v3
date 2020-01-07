@@ -1,0 +1,25 @@
+- Docs
+  - [Introduction to V3](/)
+
+- Content
+  - [Concepts](/reference/concepts/README.md)
+  - [Paradigms](reference/paradigms/README.md)
+  - [Tooling](/reference/tooling/README.md)
+  - [Types](/reference/types/README.md)
+
+- [Languages](/languages/README.md)
+  - [C](/languages/c/README.md)
+  - [CoffeeScript](/languages/coffeescript/README.md)
+  - [C++](/languages/cplusplus/README.md)
+  - [C#](/languages/csharp/README.md)
+  - [Dart](/languages/dart/README.md)
+  - [F#](/languages/fsharp/README.md)
+  - [Go](/languages/go/README.md)
+  - [Haskell](/languages/haskell/README.md)
+  - [Java](/languages/java/README.md)
+  - [JavaScript](/languages/javascript/README.md)
+  - [Julia](/languages/julia/README.md)
+  - [Kotlin](/languages/kotlin/README.md)
+  - [Python](/languages/python/README.md)
+  - [Ruby](/languages/ruby/README.md)
+  - [Typescript](/languages/typescript/README.md)
