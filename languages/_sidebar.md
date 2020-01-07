@@ -1,9 +1,5 @@
 - [Introduction](/)
-- [Docs](README.md)- Content
-  - [Concepts](/reference/concepts/README.md)
-  - [Paradigms](/reference/paradigms/README.md)
-  - [Tooling](/reference/tooling/README.md)
-  - [Types](/reference/types/README.md)
+- [Docs](README.md)
 - [Languages](/languages/README.md)
   - [C](/languages/c/README.md)
   - [CoffeeScript](/languages/coffeescript/README.md)
@@ -20,3 +16,8 @@
   - [Python](/languages/python/README.md)
   - [Ruby](/languages/ruby/README.md)
   - [Typescript](/languages/typescript/README.md)
+- Reference
+  - [Concepts](/reference/concepts/README.md)
+  - [Paradigms](/reference/paradigms/README.md)
+  - [Tooling](/reference/tooling/README.md)
+  - [Types](/reference/types/README.md)

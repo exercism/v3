@@ -1,6 +1,7 @@
 - [Introduction](/)
 - [Docs]((/docs/README.md)
-- Content
+- [Languages](/languages/README.md)
+- Reference
   - [Concepts](/reference/concepts/README.md)
   - [Paradigms](/reference/paradigms/README.md)
   - [Tooling](/reference/tooling/README.md)
@@ -8,5 +9,4 @@
     - [.net Assemblies](dotnet-assemblies.md)
     - [JS Doc](jsdoc.md)
   - [Types](/reference/types/README.md)
-- [Languages](/languages/README.md)
 

@@ -8,7 +8,7 @@ This repository is the work-in-progress space as we migrate from v2. After launc
 
 This repository is large and complex, containing lots of information and content. We have put various docs together to get you started.
 
-If you know which language you want to contribute to, and just want to get stuck in, then we recommend viewing [that language's README](./languages/README.md).
+If you know which language you want to contribute to, and just want to get stuck in, then we recommend viewing [that language's README](../languages/README.md).
 
 ## About Exercism V3
 - [What is Exercism V3?](./docs/what-is-v3.md)
