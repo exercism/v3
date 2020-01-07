@@ -4,7 +4,7 @@ It is worth reading the start of the [Concept Exercises](concept-exercises.md) f
 
 To know which Concept Exercises should exist, a list of the language's concepts should first be compiled. There are various resources to use when compiling this list: books, (official) documentation, your own experiences and the concepts listed in this repository.
 
-As many languages have the same concepts (but possibly implemented differently), it can greatly help to look at what other languages have already done in this regard. See the [C# reference.md](./languages/csharp/reference.md) for an example.
+As many languages have the same concepts (but possibly implemented differently), it can greatly help to look at what other languages have already done in this regard. See the [C# reference.md](../languages/csharp/reference.md) for an example.
 
 It can also be helpful to group related concepts. For example, the Classes, Polymorphism and Inheritance concepts are all object-oriented concepts, which can then be grouped as "Object-oriented concepts".
 

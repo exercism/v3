@@ -203,7 +203,7 @@ Note: Wrapped primitives (using the `new Constructor()` syntax are of [`typeof`]
 [keyword-instanceof]: ./keywords/instanceof.md
 [keyword-require]: ./keywords/require.md
 [keyword-typeof]: ./keywords/typeof.md
-[platforms-jsdoc]: ../../tooling/jsdoc.md
+[platforms-jsdoc]: ../../reference/tooling/jsdoc.md
 
 ## Other important/interesting things
 
