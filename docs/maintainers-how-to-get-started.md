@@ -20,6 +20,10 @@ To help, we've written a [guide to choosing and defining concepts](maintainers-c
 
 ## 3. Write your first concept exercise
 
-Once a list of concepts has been compiled, these then need to be translated into [Concept Exercises](./concept-exercises.md). Writing your first concept exercise begins with choosing a concept to write an exercise for. Good first concept candidates are concepts that involve working with basic types, like strings and numbers.
+Once a list of concepts has been compiled, these then need to be translated into [Concept Exercises](./concept-exercises.md). 
+
+Most of the work here will be done by the community under your supervision. But writing a sample Concept Exercise is a crucial step in both you understanding the process, and having a template in your language that others can base their exercises on.
+
+Writing your first concept exercise begins with choosing a concept to write an exercise for. Good first concept candidates are concepts that involve working with basic types, like strings and numbers.
 
 Having chosen a concept, look for the concept's description in this repository. This file should have references to all tracks that have implemented the exercise. You can use these existing implementations as a starting point for your first concept exercise, which you can then tailor to your specific language.
