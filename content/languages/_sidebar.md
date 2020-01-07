@@ -8,7 +8,7 @@
   - [Types](/content/languages//content/types/README.md)
 
 - [Languages](/content/languages//content/languages/README.md)
-  - [C](/content/languages/c)
+  - [C](/content/languages/c/README.md)
   - [CoffeeScript](/content/languages/coffeescript/README.md)
   - [C++](/content/languages/cplusplus/README.md)
   - [C#](/content/languages/csharp/README.md)
