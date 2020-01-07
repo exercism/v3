@@ -28,6 +28,6 @@ The `Function` constructor creates a new Function **object**. Calling the constr
 const greet = new Function("name", "return `Hello ${name}`");
 ```
 
-[concept-scope]: ../../../../reference/concepts/scope.md
-[concept-expressions]: ../../../../reference/concepts/expressions.md
-[concept-functions]: ../../../../reference/concepts/functions.md
+[concept-scope]: ../../../reference/concepts/scope.md
+[concept-expressions]: ../../../reference/concepts/expressions.md
+[concept-functions]: ../../../reference/concepts/functions.md

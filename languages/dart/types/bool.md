@@ -2,4 +2,4 @@
 
 > This is a stub
 
-[type-boolean]: ../../../../reference/types/boolean.md
+[type-boolean]: ../../../reference/types/boolean.md

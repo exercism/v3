@@ -2,4 +2,4 @@
 
 > This is a stub
 
-[type-symbol]: ../../../../reference/types/symbol.md
+[type-symbol]: ../../../reference/types/symbol.md

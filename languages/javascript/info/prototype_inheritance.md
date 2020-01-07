@@ -15,14 +15,14 @@ JavaScript objects are dynamic "bags" of properties (referred to as "own propert
 JavaScript does **not** have "methods" in the form that [class][concept-class]-based languages define them. In JavaScript, any [function][type-function] can be added to an object in the form of a property. An inherited function acts just as any other property, including _property shadowing_.
 
 
-[concept-class]: ../../../../reference/concepts/classes.md
-[concept-inheritance]: ../../../../reference/concepts/inheritance.md
-[concept-property]: ../../../../reference/concepts/state.md
+[concept-class]: ../../../reference/concepts/classes.md
+[concept-inheritance]: ../../../reference/concepts/inheritance.md
+[concept-property]: ../../../reference/concepts/state.md
 [keyword-instanceof]: ../keywords/instanceof.md
 [language-cplusplus]: ../../../languages/cplusplus/README.md
 [language-java]: ../../../languages/java/README.md
 [language-javascript]: ../../../languages/javascript/README.md
 [global-objects-object]: ../../../languages/javascript/objects/object.md
-[type-object]: ../../../../reference/types/object.md
-[type-null]: ../../../../reference/types/null.md
-[type-function]: ../../../../reference/types/function.md
+[type-object]: ../../../reference/types/object.md
+[type-null]: ../../../reference/types/null.md
+[type-function]: ../../../reference/types/function.md

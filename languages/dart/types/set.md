@@ -2,4 +2,4 @@
 
 > This is a stub
 
-[type-set]: ../../../../reference/types/set.md
+[type-set]: ../../../reference/types/set.md
