@@ -1,6 +1,6 @@
 # Concept Exercises
 
-Concept Exercises replace V2's Core Exercises. They are exercises designed to teach specific programming concepts.
+Concept Exercises replace V2's Core Exercises. They are exercises designed to teach specific (programming) concepts.
 
 ## What do we mean by concepts?
 
