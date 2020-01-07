@@ -60,7 +60,7 @@ Note that some of these features are specific to object-orientation in the world
 ## Platform-specific concepts
 
 - .NET interop (how to integrate with other .NET libraries, which are mostly written in C#. good interop was key in the F# design!)
-- [Assemblies](../../tooling/dotnet-assemblies.md)
+- [Assemblies](../../reference/tooling/dotnet-assemblies.md)
 
 ## General concepts
 

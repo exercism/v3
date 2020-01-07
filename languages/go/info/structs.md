@@ -1,6 +1,6 @@
 # Structs
 
-See also [records](../../../../reference/types/record.md)
+See also [records](../../../reference/types/record.md)
 
 # Classes
 

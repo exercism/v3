@@ -4,4 +4,4 @@
 
 See the general [`error` type][type-error].
 
-[type-error]: ../../../../reference/types/error.md
+[type-error]: ../../../reference/types/error.md
