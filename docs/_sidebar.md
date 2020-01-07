@@ -5,7 +5,10 @@
   - [What needs doing to make it a reality?](what-needs-doing.md)
   - [What are concept exercise are and how they are structured?](concept-exercises.md)
   - [How is this repository structured?](repository-structure.md)
-  - [How to get started?](maintainers-how-to-get-started.md)
+  - Maintainers
+    - [How to get started?](maintainers-how-to-get-started.md)
+    - [How to write a track readme](maintainers-track-readme.md)
+    - [How to choose and define concepts](maintainers-concepts.md)
 - Content
   - [Concepts](/reference/concepts/README.md)
   - [Paradigms](/reference/paradigms/README.md)

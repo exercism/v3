@@ -12,3 +12,5 @@ These are documents we've written to help you understand and contribute to Exerc
 
 ## Info for Maintainers
 - [How to get started?](./docs/maintainers-how-to-get-started.md)
+- [How to write a track readme](./docs/maintainers-track-readme.md)
+- [How to choose and define concepts](./docs/maintainers-concepts.md)

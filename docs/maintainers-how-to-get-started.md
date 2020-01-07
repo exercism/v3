@@ -8,19 +8,15 @@ Here are some steps to get you started:
 
 ## 1. Fill our your track's README.
 
-Your track's README is the key starting point for people. It should be welcoming and encouraging, and make it clear how they can start contributing.
+Your track's README is the key starting point for people. It acts both as an introduction to the track, and the start of your tracks project management. 
 
-We recommend using [C#'s README](../languages/csharp/README.md) as a starting point.
+Start with our [guide to writing your track readme](maintainers-track-readme.md).
 
 ## 2. Fill out concepts for your language
 
-To know which Concept Exercises should exist, a list of the language's concepts should first be compiled. There are various resources to use when compiling this list: books, (official) documentation, your own experiences and the concepts listed in this repository.
+One of the key responsibilites for v3 Maintainers is deciding what Concept Exercises are needed. 
 
-As many languages have the same concepts (but possibly implemented differently), it can greatly help to look at what other languages have already done in this regard. See the [C# reference.md](./languages/csharp/reference.md) for an example.
-
-It can also be helpful to group related concepts. For example, the Classes, Polymorphism and Inheritance concepts are all object-oriented concepts, which can then be grouped as "Object-oriented concepts".
-
-Filling out the concepts will be iterative, it is hard to get this right immediately. While creating concepts exercises, you'll probably find missing concepts or perhaps want to split out concepts.
+To help, we've written a [guide to choosing and defining concepts](maintainers-concepts.md).
 
 ## 3. Write your first concept exercise
 
