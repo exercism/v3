@@ -2,23 +2,23 @@
 
 ## Object-oriented concepts
 
-- [Mutability](../../../reference/concepts/mutation.md)
-- [Multiple Dispatch](../../../reference/concepts/multiple-dispatch.md)
+- [Mutability](../../reference/concepts/mutation.md)
+- [Multiple Dispatch](../../reference/concepts/multiple-dispatch.md)
 - Constructors (external & internal)
 
 ## Functional concepts
 
-- [Immutability](../../../reference/concepts/immutability.md)
-- [Higher-order functions](../../../reference/concepts/higher_order_functions.md)
-- [Nested functions](../../../reference/concepts/nested_functions.md)
-- [Anonymous functions](../../../reference/concepts/anonymous_functions.md)
-- [Type inference](../../../reference/concepts/type_inference.md)
-- [REPL](../../../reference/concepts/repl.md)
+- [Immutability](../../reference/concepts/immutability.md)
+- [Higher-order functions](../../reference/concepts/higher_order_functions.md)
+- [Nested functions](../../reference/concepts/nested_functions.md)
+- [Anonymous functions](../../reference/concepts/anonymous_functions.md)
+- [Type inference](../../reference/concepts/type_inference.md)
+- [REPL](../../reference/concepts/repl.md)
 
 ## General concepts
 
-- [Metaprogramming](../../../reference/concepts/metaprogramming.md)
-  - [Macros](../../../reference/concepts/macros.md) (using/calling)
+- [Metaprogramming](../../reference/concepts/metaprogramming.md)
+  - [Macros](../../reference/concepts/macros.md) (using/calling)
 - Package Management
 - Unicode identifiers
 - Iterators
@@ -52,7 +52,7 @@
 - Abstract type
 - Struct
 - Tuple
-- [Array](../../../reference/types/array.md)
+- [Array](../../reference/types/array.md)
   - 1-based indexing
   - Arbitrary indexing
   - Multidimensional arrays
@@ -62,7 +62,7 @@
 - Nothing
 - Missing
 - Union
-- [String](../../../reference/types/string.md)
+- [String](../../reference/types/string.md)
 
 ## Resources used
 

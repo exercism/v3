@@ -22,19 +22,19 @@ These are concepts that, as far as I know, are either unique to F# or shared wit
 
 Thinking as an F# developer means knowing about how to use the following functional programming concepts in F# (as F# is, after all, a functional-first language):
 
-- [Immutability](../../../reference/concepts/immutability.md)
-- [Pattern matching](../../../reference/concepts/pattern_matching.md)
-- [Function composition](../../../reference/concepts/function_composition.md)
-- [Pure functions](../../../reference/concepts/pure_functions.md)
-- [Higher-order functions](../../../reference/concepts/higher_order_functions.md)
-- [Nested functions](../../../reference/concepts/nested_functions.md)
-- [Anonymous functions](../../../reference/concepts/anonymous_functions.md)
-- [Partial application](../../../reference/concepts/partial_application.md)
-- [Type inference](../../../reference/concepts/type_inference.md)
-- [Expression-oriented (not statement oriented)](../../../reference/concepts/expression_oriented.md)
-- [Recursion (and tail-recursion)](../../../reference/concepts/recursion.md)
-- [Pipelines (for, while, map, filter, reduce)](../../../reference/concepts/pipelines.md)
-- [REPL](../../../reference/concepts/repl.md)
+- [Immutability](../../reference/concepts/immutability.md)
+- [Pattern matching](../../reference/concepts/pattern_matching.md)
+- [Function composition](../../reference/concepts/function_composition.md)
+- [Pure functions](../../reference/concepts/pure_functions.md)
+- [Higher-order functions](../../reference/concepts/higher_order_functions.md)
+- [Nested functions](../../reference/concepts/nested_functions.md)
+- [Anonymous functions](../../reference/concepts/anonymous_functions.md)
+- [Partial application](../../reference/concepts/partial_application.md)
+- [Type inference](../../reference/concepts/type_inference.md)
+- [Expression-oriented (not statement oriented)](../../reference/concepts/expression_oriented.md)
+- [Recursion (and tail-recursion)](../../reference/concepts/recursion.md)
+- [Pipelines (for, while, map, filter, reduce)](../../reference/concepts/pipelines.md)
+- [REPL](../../reference/concepts/repl.md)
 - Railway-oriented programming (not a language feature, but a common way of dealing with chaining error states)
 - Monads
 - Currying
@@ -44,10 +44,10 @@ Thinking as an F# developer means knowing about how to use the following functio
 
 While F# is "functional first" language, it does have (very nice) object-orientation features. It is important to know how and when to apply the OO features, and which OO features (see https://youtu.be/yL7xBhWrdKw?t=2248) to use. The core OO features an F# developer should know about are:
 
-- [Classes](../../../reference/concepts/classes.md)
-- [Interfaces](../../../reference/concepts/interfaces.md)
-- [State](../../../reference/concepts/state.md)
-- [Mutation](../../../reference/concepts/mutation.md)
+- [Classes](../../reference/concepts/classes.md)
+- [Interfaces](../../reference/concepts/interfaces.md)
+- [State](../../reference/concepts/state.md)
+- [Mutation](../../reference/concepts/mutation.md)
 - Dot notation (instead of using functions to access data)
 - Static/non-static members
 - Named arguments
@@ -68,7 +68,7 @@ Note that some of these features are specific to object-orientation in the world
 - Scoping through indentation (whitespace significant)
 - Ranges
 - Slicing (linked to ranges)
-- [Generics](../../../reference/concepts/generics.md)
+- [Generics](../../reference/concepts/generics.md)
 - Modules
 - Namespaces
 - Attributes
@@ -92,7 +92,7 @@ Note that some of these features are specific to object-orientation in the world
 - Array
 - List
 - Map
-- [Set](../../../reference/types/set.md)
+- [Set](../../reference/types/set.md)
 - Sequence
 - Anonymous records
 - Events
