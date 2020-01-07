@@ -4,14 +4,8 @@
 - Content
   - [Concepts](/content/languages//content/concepts/README.md)
   - [Paradigms](/content/languages//content/paradigms/README.md)
-    - [Declarative](/content/languages/./declarative.md)
-    - [Functional](/content/languages/functional.md)
-    - [Imperative](/content/languages/imperative.md)
-    - [Logic](/content/languages/logic.md)
-    - [Object Oriented](/content/languages/object-oriented.md)
-    - [Procedural](/content/languages/procedural.md)
-    - [Tooling](/content/languages//content/tooling/README.md)
-    - [Types](/content/languages//content/types/README.md)
+  - [Tooling](/content/languages//content/tooling/README.md)
+  - [Types](/content/languages//content/types/README.md)
 
 - [Languages](/content/languages//content/languages/README.md)
   - [C](/content/languages/c)

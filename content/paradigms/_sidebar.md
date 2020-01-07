@@ -10,8 +10,8 @@
     - [Logic](logic.md)
     - [Object Oriented](object-oriented.md)
     - [Procedural](procedural.md)
-    - [Tooling](/content/tooling/README.md)
-    - [Types](/content/types/README.md)
+  - [Tooling](/content/tooling/README.md)
+  - [Types](/content/types/README.md)
 
 - [Languages](/content/languages/README.md)
 
