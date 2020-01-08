@@ -1,12 +1,6 @@
-_Note: All subconcepts should be split out into separate files under the concepts directory and hyperlinked._
+# C&#35; concepts
 
-# C&#35; reference
-
-C# is an object-oriented language.
-
-## Concepts
-
-### Object-oriented
+## Object-oriented
 
 The core OO features a C# developer should know about are:
 
@@ -21,7 +15,7 @@ The core OO features a C# developer should know about are:
 - [Polymorphism](../../concepts/polymorphism.md)
 - [Methods](../../concepts/methods.md)
 
-### Functional
+## Functional
 
 While C# is primarily an OO language, lots of functional concepts have been added to the language:
 
@@ -34,32 +28,32 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - [Local functions](../../concepts/nested_functions.md)
 - [Pipelines (LINQ)](../../concepts/pipelines.md)
 
-### Platform-specific
+## Platform-specific
 
 - [Assemblies](../../tooling/dotnet-assemblies.md)
 
-### Memory management
+## Memory management
 
 - Resource passing
 - Resource allocation
 - Resource cleanup
 - Resource lifetime
 
-### Arithmetic
+## Arithmetic
 
 - Arithmetic overflow
 - Signed integers
 - Unsigned integers
 - Floating point numbers
 
-### Methods
+## Methods
 
 - Method overloading
 - Named arguments
 - Optional arguments
 - Extension methods (mixin)
 
-### General
+## General
 
 - [Sameness](../../concepts/sameness.md)
 - [Conditionals](../../concepts/conditionals.md)
@@ -93,7 +87,7 @@ The list itself should be read as follows:
 
 This also means that some concepts will be listed more than once.
 
-### Object-oriented
+## Object-oriented
 
 - [Encapsulation](../../concepts/encapsulation.md)
   - [Classes](../../concepts/classes.md)
@@ -115,7 +109,7 @@ This also means that some concepts will be listed more than once.
 - [Methods](../../concepts/methods.md)
   - [Classes](../../concepts/classes.md)
 
-### Functional
+## Functional
 
 - [Immutability](../../concepts/immutability.md)
   - [Mutation](../../concepts/mutation.md)
@@ -134,11 +128,11 @@ This also means that some concepts will be listed more than once.
 - [Anonymous methods](../../concepts/anonymous_functions.md)
   - [Higher-order functions](../../concepts/higher_order_functions.md)
 
-### Platform-specific
+## Platform-specific
 
 - [Assemblies](../../tooling/dotnet-assemblies.md)
 
-### Memory management
+## Memory management
 
 - Resource passing
   - [Objects](../../concepts/objects.md)
@@ -153,7 +147,7 @@ This also means that some concepts will be listed more than once.
   - [Classes](../../concepts/classes.md)
   - [Objects](../../concepts/objects.md)
 
-### Arithmetic
+## Arithmetic
 
 - Arithmetic overflow
   - Unsigned integers
@@ -162,7 +156,7 @@ This also means that some concepts will be listed more than once.
   - Signed integers
 - Floating point numbers
 
-### Methods
+## Methods
 
 - Method overloading
   - [Classes](../../concepts/classes.md)
@@ -171,7 +165,7 @@ This also means that some concepts will be listed more than once.
 - Extension methods (mixin)
   - Resource lifetime (static/non-static)
 
-### General
+## General
 
 - [Sameness](../../concepts/sameness.md)
 - [Conditionals](../../concepts/conditionals.md)
