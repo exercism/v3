@@ -14,3 +14,33 @@ Things are grouped into several subdirectories:
   - **reference:** Files containing information that the implementer might find useful. These may be files on language-specific elements of programming concepts or notes on the idiomatic way to use tooling. For now, maintainers are encouraged to organise this directory however they feel best, and we may formalise a structure later.
   - **exercises/concept:** The WIP concept exercises for that language.
   - **config.json** The WIP config.json for a track, with the practice exercises removed to avoid noise.
+
+## GitHub
+
+The following labels are used to categorize [issues in the V3 repository][github-issues]:
+
+- [type/new-exercise][github-issues-type-new-exercise]: new exercises.
+- [type/improve-exercise][github-issues-type-improve-exercise]: improving exercises.
+- [type/new-reference][github-issues-type-new-reference]: new reference documents.
+- [type/improve-reference][github-issues-type-improve-reference]: improving reference documents.
+- [status/help-wanted][github-issues-status-help-wanted]: help wanted.
+- [status/in-progress][github-issues-status-in-progress]: being worked on.
+
+Each language also has its own label:
+
+- [track/go][github-issues-track-go]: the Go track.
+- [track/ruby][github-issues-track-ruby]: the Ruby track.
+- Etc.
+
+You can combine labels to find the issues you'd like, e.g. to [list all the issues for the C# for which help is wanted][github-issues-csharp-status-help-wanted].
+
+[github-issues]: https://github.com/exercism/v3/issues
+[github-issues-type-new-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-exercise
+[github-issues-type-improve-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-exercise
+[github-issues-type-new-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-reference
+[github-issues-type-improve-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-reference
+[github-issues-status-help-wanted]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%status%2Fhelp-wanted
+[github-issues-status-in-progress]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%status%2Fin-progress
+[github-issues-track-go]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fgo
+[github-issues-track-ruby]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fruby
+[github-issues-csharp-status-help-wanted]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcsharp+
