@@ -1,0 +1,10 @@
+{
+  "solution_files": ["NumbersFloatingPoint.cs"],
+  "test_file": "NumbersFloatingPointTest.cs",
+  "tests": [
+    {
+      "name": "TODO: add test names after converting to Fact-based tests",
+      "cmd": "TODO: add test command after converting to Fact-based tests"
+    }
+  ]
+}
