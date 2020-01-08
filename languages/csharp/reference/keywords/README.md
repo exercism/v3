@@ -1,5 +1,7 @@
 # C&#35; keywords
 
+This document lists the C# keywords.
+
 - `abstract`
 - `as`
 - `base`
@@ -110,6 +112,12 @@
 - `when`
 - `where`
 - `yield`
+
+## Contributing
+
+Thanks for wanting to contribute to the C# track! Contributions are very welcome!
+
+To contribute, please find a keyword for which no reference document has yet been written and submit a PR to add the missing document.
 
 [using]: ./using.md
 [stackalloc]: ./stackalloc.md

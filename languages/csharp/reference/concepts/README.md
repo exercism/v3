@@ -190,8 +190,8 @@ This also means that some concepts will be listed more than once.
 - Implicit/explicit conversion
 - Reflection
 
-## Resources
+## Contributing
 
-- Official language reference: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/
-- https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/index
-- https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/built-in-types-table
+Thanks for wanting to contribute to the C# track! Contributions are very welcome!
+
+To contribute, please find a concept for which no reference document has yet been written and submit a PR to add the missing document.
