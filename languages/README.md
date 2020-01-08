@@ -2,7 +2,7 @@
 
 ## Contributing
 
-Thanks for wanting to contribute to one of the available languages! Contributions are very welcome!
+Thanks for wanting to contribute to one of Exercism's language tracks! Contributions are very welcome!
 
 To contribute, please select the language you'd like to contribute to:
 
