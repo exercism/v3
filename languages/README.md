@@ -37,3 +37,5 @@ To contribute, please select the language you'd like to contribute to:
 [python]: ./python/README.md
 [ruby]: ./ruby/README.md
 [typescript]: ./typescript/README.md
+
+If you would like to create a new language track for V3, please [open an issue here](https://github.com/exercism/request-new-language-track).
