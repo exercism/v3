@@ -32,7 +32,7 @@ The C# track is structured as follows:
 
 - **docs**: C# track-specific [documentation][docs].
 - **exercises**: the [exercises][exercises].
-  - **.docs**: documentation shared across all exercises.
+  - **.docs**: [documentation shared][exercises-docs] across all exercises.
   - **concept**: [concept exercises][exercises-concept] (WIP).
   - **practice**: [practice exercises][exercises-practice] (WIP).
 - **reference**: C# track-specific [reference documentation][reference].
@@ -45,6 +45,7 @@ The C# track is structured as follows:
 [docs-representer]: ./docs/representer.md
 [docs-test-runner]: ./docs/test-runner.md
 [exercises]: ./exercises/README.md
+[exercises-docs]: ./exercises/.docs/README.md
 [exercises-concept]: ./exercises/concept/README.md
 [exercises-practice]: ./exercises/practice/README.md
 [reference]: ./reference/README.md
