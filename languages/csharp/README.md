@@ -12,4 +12,4 @@ Thanks for wanting to contribute to the C# track! There are several ways in whic
 [docs-concept-exercises]: ./docs/concept-exercises.md
 [docs-analyzer]: ./docs/analyzer.md
 [docs-representer]: ./docs/representer.md
-[docs-test-runner]: ./docs/test-runnner.md
+[docs-test-runner]: ./docs/test-runner.md
