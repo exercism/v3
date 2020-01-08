@@ -12,7 +12,7 @@ There are several areas we need help with to get C# ready for V3:
 - [Work on the analyzer][docs-analyzer]
 - [Work on the test runner][docs-test-runner]
 
-[docs-concept-exercises]: ./docs/concept-exercises.md
+[docs-concept-exercises]: ./exercises/concept/README.md
 [docs-reference]: ./reference/README.md
 [docs-analyzer]: ./docs/analyzer.md
 [docs-representer]: ./docs/representer.md

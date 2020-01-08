@@ -3,6 +3,7 @@
 - [Languages](/languages/README.md)
   - [C#](/languages/csharp/README.md)
     - [Docs](/languages/csharp/docs/README.md)
+    - [Exercises](/languages/csharp/exercises/README.md)
     - [Reference](/languages/csharp/reference/README.md)
       - [Concepts](/languages/csharp/reference/concepts/README.md)
       - [Keywords](/languages/csharp/reference/keywords/README.md)
