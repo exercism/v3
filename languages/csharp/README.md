@@ -2,7 +2,9 @@
 
 ## Contributing
 
-Thanks for wanting to contribute to the C# track! There are several ways in which you can contribute to Exercism's C# V3 track:
+Thanks for wanting to contribute to the C# track!
+
+There are several areas we need help with to get C# ready for V3:
 
 - [Implement a concept exercise][docs-concept-exercises]
 - [Work on the representer][docs-representer]
@@ -13,3 +15,7 @@ Thanks for wanting to contribute to the C# track! There are several ways in whic
 [docs-analyzer]: ./docs/analyzer.md
 [docs-representer]: ./docs/representer.md
 [docs-test-runner]: ./docs/test-runner.md
+
+## Reference
+
+We have put together a [reference guide](./docs/reference.md) to C# to help us understand what concepts we need to teach. Contributions are very Welcome!
