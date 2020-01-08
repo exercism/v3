@@ -10,6 +10,6 @@ There are three types of reference documents:
 
 If you'd like to contribute, please go to one of the reference type documents and find an entry for which no document yet exists.
 
-[concepts]: ../reference/concepts.md
-[keywords]: ../reference/keywords.md
-[types]: ../reference/types.md
+[concepts]: ./concepts/README.md
+[keywords]: ./keywords/README.md
+[types]: ./types/README.md

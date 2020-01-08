@@ -13,11 +13,11 @@ There are several areas we need help with to get C# ready for V3:
 - [Work on the test runner][docs-test-runner]
 
 [docs-concept-exercises]: ./docs/concept-exercises.md
-[docs-reference]: ./docs/reference.md
+[docs-reference]: ./reference/README.md
 [docs-analyzer]: ./docs/analyzer.md
 [docs-representer]: ./docs/representer.md
 [docs-test-runner]: ./docs/test-runner.md
 
 ## Reference
 
-We have put together a [reference guide](./docs/reference.md) to C# to help us understand what concepts we need to teach. Contributions are very Welcome!
+We have put together a [reference guide][docs-reference] to C# to help us understand what concepts we need to teach. Contributions are very welcome!

@@ -111,5 +111,5 @@
 - `where`
 - `yield`
 
-[using]: ./keywords/using.md
-[stackalloc]: ./keywords/stackalloc.md
+[using]: ./using.md
+[stackalloc]: ./stackalloc.md
