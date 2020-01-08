@@ -69,24 +69,22 @@ See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.m
 
 See the C# floating-point-numbers exercise's [config.json file][csharp-meta-config.json] for an example.
 
-## Exercises Structure
+## Track Structure
 
-The following files are shared by all exercises. These will automatically be combined with the exercise-specific files. The shared files are located in the `exercises/.docs` directory.
-
-### `cli.md`
+### `exercises/.docs/cli.md`
 
 This file contains information on how to work with the exercise when using the CLI to download and submit the exercise.
 
-See the C# floating-point-numbers exercise's [cli.md file][csharp-docs-cli.md] for an example.
+See the C# track's [cli.md file][csharp-docs-cli.md] for an example.
 
-### `debug.md`
+### `exercises/.docs/debug.md`
 
 This file explains how a user that is coding in the browser can still do "debugging."
 
-See the C# floating-point-numbers exercise's [debug.md file][csharp-docs-debug.md] for an example.
+See the C# track's [debug.md file][csharp-docs-debug.md] for an example.
 
-[csharp-docs-cli.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/cli.md
-[csharp-docs-debug.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/debug.md
+[csharp-docs-cli.md]: ../languages/csharp/exercises/.docs/cli.md
+[csharp-docs-debug.md]: ../languages/csharp/exercises/.docs/debug.md
 [csharp-docs-after.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/after.md
 [csharp-docs-hints.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/hints.md
 [csharp-docs-introduction.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/introduction.md

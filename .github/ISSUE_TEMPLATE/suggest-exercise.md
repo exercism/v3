@@ -102,3 +102,5 @@ To help the implementer get started, add a link to the language's analyzer docum
 ## Implementing
 
 Please check the [how to implement a concept exercise guide][docs-how-to-implement-a-concept-exercise] for details on how to implement this exercise.
+
+[docs-how-to-implement-a-concept-exercise]: ./docs/how-to-implement-a-concept-exercise.md

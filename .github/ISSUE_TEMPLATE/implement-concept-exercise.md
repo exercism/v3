@@ -100,3 +100,5 @@ Please check the [how to implement a concept exercise guide][docs-how-to-impleme
 ## Help
 
 If you have any questions while implementing the exercise, please post the questions as comments in this issue.
+
+[docs-how-to-implement-a-concept-exercise]: ./docs/how-to-implement-a-concept-exercise.md
