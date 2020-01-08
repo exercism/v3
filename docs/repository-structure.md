@@ -12,7 +12,10 @@ Things are grouped into several subdirectories:
 - **languages:** A directory for each language containing a README.md that outlines the concepts that are necessary to learn to become fluent in those languages. Each language has a config.json and the following subdirectories:
   - **transitions:** Contains a file for each pair of languages, where someone with a background in X learns new language Y. These should explain the concepts that needed to be remapped/learnt. The files in this directory initially aim to help inform us about both the language-agnostic and language-specific files, but will hopefully also in the long-run provide custom pathways for people learning languages.
   - **reference:** Files containing information that the implementer might find useful. These may be files on language-specific elements of programming concepts or notes on the idiomatic way to use tooling. For now, maintainers are encouraged to organise this directory however they feel best, and we may formalise a structure later.
-  - **exercises/concept:** The WIP concept exercises for that language.
+  - **exercises:** The WIP exercises for that language.
+    - **.docs:** documentation shared across all exercises for that language.
+    - **concept:** The WIP concept exercises for that language.
+    - **practice:** The WIP practice exercises for that language.
   - **config.json** The WIP config.json for a track, with the practice exercises removed to avoid noise.
 
 ## GitHub
