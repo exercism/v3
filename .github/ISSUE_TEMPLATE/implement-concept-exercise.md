@@ -1,6 +1,6 @@
 ---
 name: "[MAINTAINERS] Implement new concept exercise"
-about: FOR MAINTAINERS ONLY: Use this template to create an issue to implement a concept exercise
+about: FOR MAINTAINERS ONLY - Use this template to create an issue to implement a concept exercise
 title: "[<LANG>] Implement new concept exercise: <SLUG>"
 labels: type/new-exercise, status/help-wanted
 assignees: ""
