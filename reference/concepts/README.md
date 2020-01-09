@@ -12,6 +12,14 @@ We should not presume a programmer knows these topics, and should ensure that tr
 
 For example the concept of `null` (or `nil` or `None`) does not exist in some languages, and is extremely esoteric the first time it is encountered. We should therefore ensure that we explain its purpose in the language, and provide good documentation for learning more, as well as providing an exercise that demonstrates its language-implementation.
 
+## Contributing
+
+Thanks for wanting to contribute to Exercism's concept reference documents! Contributions are very welcome!
+
+To contribute, check the list below to see which documents have already been written. You can then contribute by submitting a PR to update an existing document, or to add a missing document.
+
+## References
+
 - [Anonymous functions](./anonymous_functions.md)
 - [Arithmetic](./arithmetic.md)
 - [ASCII](./ascii.md)

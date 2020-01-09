@@ -2,6 +2,14 @@
 
 These are types common to many different languages. Track-specific sub-types could be covered by specific track exercises.
 
+## Contributing
+
+Thanks for wanting to contribute to Exercism's type reference documents! Contributions are very welcome!
+
+To contribute, check the list below to see which documents have already been written. You can then contribute by submitting a PR to update an existing document, or to add a missing document.
+
+## References
+
 - [Array](./array.md)
 - [Big integer](./big_integer.md)
 - [Bit](./bit.md)
