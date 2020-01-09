@@ -6,42 +6,47 @@ using Xunit;
 // the .meta/config.json file
 public class LogLineTest
 {
-    [Theory]
-    [InlineData("[ERROR]: Stack overflow", "Stack overflow")]
-    [InlineData("[ERROR]: Disk full", "Disk full")]
-    [InlineData("[ERROR]: Segmentation fault", "Segmentation fault")]
-    [InlineData("[ERROR]:  File not found ", "File not found")]
-    [InlineData("[WARNING]: Disk almost full", "Disk almost full")]
-    [InlineData("[WARNING]: \tTimezone not set\r\n", "Timezone not set")]
-    [InlineData("[WARNING]: Unsafe password", "Unsafe password")]
-    [InlineData("[INFO]: File moved", "File moved")]
-    [InlineData("[INFO]: Timezone changed ", "Timezone changed")]
-    public void Message(string logLine, string expected) =>
-        Assert.Equal(expected, LogLine.Message(logLine));
+    [Fact]
+    public void ErrorMessage() =>
+        Assert.Equal("Stack overflow", LogLine.Message("[ERROR]: Stack overflow"));
 
-    [Theory]
-    [InlineData("[ERROR]: Stack overflow", "error")]
-    [InlineData("[ERROR]: Disk full", "error")]
-    [InlineData("[ERROR]: Segmentation fault", "error")]
-    [InlineData("[ERROR]:  File not found ", "error")]
-    [InlineData("[WARNING]: Disk almost full", "warning")]
-    [InlineData("[WARNING]: \tTimezone not set\r\n", "warning")]
-    [InlineData("[WARNING]: Unsafe password", "warning")]
-    [InlineData("[INFO]: File moved", "info")]
-    [InlineData("[INFO]: Timezone changed ", "info")]
-    public void LogLevel(string logLine, string expected) =>
-        Assert.Equal(expected, LogLine.LogLevel(logLine));
+    [Fact]
+    public void WarningMessage() =>
+        Assert.Equal("Disk almost full", LogLine.Message("[WARNING]: Disk almost full"));
 
-    [Theory]
-    [InlineData("[ERROR]: Stack overflow", "Stack overflow (error)")]
-    [InlineData("[ERROR]: Disk full", "Disk full (error)")]
-    [InlineData("[ERROR]: Segmentation fault", "Segmentation fault (error)")]
-    [InlineData("[ERROR]:  File not found ", "File not found (error)")]
-    [InlineData("[WARNING]: Disk almost full", "Disk almost full (warning)")]
-    [InlineData("[WARNING]: \tTimezone not set\r\n", "Timezone not set (warning")]
-    [InlineData("[WARNING]: Unsafe password", "Unsafe password (warning)")]
-    [InlineData("[INFO]: File moved", "File moved (info)")]
-    [InlineData("[INFO]: Timezone changed ", "Timezone changed (info)")]
-    public void Reformat(string logLine, string expected) =>
-        Assert.Equal(expected, LogLine.Reformat(logLine));
+    [Fact]
+    public void InfoMessage() =>
+        Assert.Equal("File moved", LogLine.Message("[INFO]: File moved"));
+
+    [Fact]
+    public void MessageWithLeadingAndTrailingWhiteSpace() =>
+        Assert.Equal("Timezone not set", LogLine.Message("[WARNING]:   \tTimezone not set  \r\n"));
+
+    [Fact]
+    public void ErrorLogLevel() =>
+        Assert.Equal("error", LogLine.LogLevel("[ERROR]: Disk full"));
+
+    [Fact]
+    public void WarningLogLevel() =>
+        Assert.Equal("warning", LogLine.LogLevel("[WARNING]: Unsafe password"));
+
+    [Fact]
+    public void InfoLogLevel() =>
+        Assert.Equal("info", LogLine.LogLevel("[INFO]: Timezone changed"));
+
+    [Fact]
+    public void ErrorReformat() =>
+        Assert.Equal("Segmentation fault (error)", LogLine.Reformat("[ERROR]: Segmentation fault"));
+
+    [Fact]
+    public void WarningReformat() =>
+        Assert.Equal("Decreased performance (warning)", LogLine.Reformat("[WARNING]: Decreased performance"));
+
+    [Fact]
+    public void InfoReformat() =>
+        Assert.Equal("Disk defragmented (info)", LogLine.Reformat("[INFO]: Disk defragmented"));
+
+    [Fact]
+    public void ReformatWithLeadingAndTrailingWhiteSpace() =>
+        Assert.Equal("Corrupt disk (error)", LogLine.Reformat("[ERROR]: \t Corrupt disk\t \t \r\n"));
 }
