@@ -5,7 +5,7 @@ This document describes how to implement a concept exercise for the C# track. As
 - `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
 - `<NAME>`: the name of the exercise in PascalCase (e.g. `AnonymousMethods`).
 
-Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue.
+Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue. Having done this, please read the [C# concept exercises introduction][docs-exercises-concept].
 
 To implement a concept exercise, the following files must be created:
 
@@ -60,6 +60,7 @@ If you have any questions regarding implementing this exercise, please post them
 [docs-analyzer]: ./analyzer.md
 [docs-representer]: ./representer.md
 [docs-reference]: ./reference.md
+[docs-exercises-concept]: ../exercises/concept/README.md
 [docs-general-concept-exercises]: ../../../docs/concept-exercises.md
 [docs-general-how-to-implement-a-concept-exercise]: ../../../docs/how-to-implement-a-concept-exercise.md
 [concept-exercise-strings]: ../exercises/concept/strings
