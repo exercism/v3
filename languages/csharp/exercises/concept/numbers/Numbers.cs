@@ -1,12 +1,14 @@
+using System;
+
 public static class AssemblyLine
 {
     public static double ProductionRatePerHour(int speed)
     {
-        // TODO: implement this method
+        throw new NotImplementedException("Please implement the AssemblyLine.ProductionRatePerHour method");
     }
 
     public static int WorkingItemsPerMinute(int speed)
     {
-        // TODO: implement this method
+        throw new NotImplementedException("Please implement the AssemblyLine.WorkingItemsPerMinute method");
     }
 }
