@@ -7,13 +7,16 @@ This repository is the work-in-progress space as we migrate from v2. After launc
 **If you know which language you want to contribute to and just want to get stuck in, then start with its README, which you can find [in this list](languages/README.md).**
 
 ## About Exercism V3
+
 - [What is Exercism V3?](./docs/what-is-v3.md)
 - [Why make Exercism V3?](./docs/why-make-v3.md)
 - [What needs doing to make it a reality?](./docs/what-needs-doing.md)
 
 ## FAQs
+
 - [What are concept exercise are and how they are structured?](./docs/concept-exercises.md)
 - [How is this repository structured?](./docs/repository-structure.md)
 
 ## Info for Maintainers
+
 - [How to get started?](./docs/maintainers-how-to-get-started.md)
