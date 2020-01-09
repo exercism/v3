@@ -1,13 +1,13 @@
 # How to implement a concept exercise
 
-This document describes the steps required to implement a concept exercise in any V3 track. As this document is generic, the following placeholders are used:
+This document describes the steps required to implement a concept exercise in any v3 track. As this document is generic, the following placeholders are used:
 
 - `<LANG>`: the name of the track in kebab-case (e.g. `ruby`).
 - `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue.
 
-Any concept exercise in any V3 track requires the following files to be created:
+Any concept exercise in any v3 track requires the following files to be created:
 
 <pre>
 languages

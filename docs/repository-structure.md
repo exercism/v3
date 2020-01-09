@@ -20,7 +20,7 @@ Things are grouped into several subdirectories:
 
 ## GitHub
 
-The following labels are used to categorize [issues in the V3 repository][github-issues]:
+The following labels are used to categorize [issues in the v3 repository][github-issues]:
 
 - [type/new-exercise][github-issues-type-new-exercise]: new exercises.
 - [type/improve-exercise][github-issues-type-improve-exercise]: improving exercises.

@@ -2,10 +2,10 @@
 
 These are documents we've written to help you understand and contribute to Exercism v3.
 
-## About Exercism V3
+## About Exercism v3
 
-- [What is Exercism V3?](what-is-v3.md)
-- [Why make Exercism V3?](why-make-v3.md)
+- [What is Exercism v3?](what-is-v3.md)
+- [Why make Exercism v3?](why-make-v3.md)
 - [What needs doing to make it a reality?](what-needs-doing.md)
 
 ## Contributing Information

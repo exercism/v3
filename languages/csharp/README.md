@@ -1,10 +1,10 @@
 # C&#35;
 
-The C# Exercism V3 track.
+The C# Exercism v3 track.
 
 ## Contributing
 
-Thanks for wanting to contribute to the C# track! There are several areas we could use help with to get the C# track ready for V3. Contributions are very welcome!
+Thanks for wanting to contribute to the C# track! There are several areas we could use help with to get the C# track ready for v3. Contributions are very welcome!
 
 ### Concept exercises
 

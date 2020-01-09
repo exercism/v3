@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for wanting to contribute Exercism V3! Contributions are very welcome!
+Thanks for wanting to contribute Exercism v3! Contributions are very welcome!
 
 There are two ways in which to contribute:
 

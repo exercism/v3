@@ -1,6 +1,6 @@
 # C&#35; concept exercises
 
-For C#'s V3 track, we'll be implementing [concept exercises][general-docs-concept-exercises].
+For C#'s v3 track, we'll be implementing [concept exercises][general-docs-concept-exercises].
 
 ## Already implemented exercises
 

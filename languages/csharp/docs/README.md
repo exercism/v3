@@ -1,6 +1,6 @@
 # C&#35; docs
 
-These are documents we've written to help you understand the C# V3 track:
+These are documents we've written to help you understand the C# v3 track:
 
 - [Analyzer][analyzer]
 - [Representer][representer]

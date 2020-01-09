@@ -39,7 +39,7 @@ As can be seen, there are many signed/unsigned data type combinations (e.g. `int
 - `IEnumerable<T>`
 - Concurrent collections
 
-The non-generic collections (such as `ArrayList`] are a remnant of the C# 1.0 days, and have mostly been superseded by generic variants when generics were introduced in C# 2.0. As a consequence, these non-generic collection types won't be a part of the V3 track.
+The non-generic collections (such as `ArrayList`] are a remnant of the C# 1.0 days, and have mostly been superseded by generic variants when generics were introduced in C# 2.0. As a consequence, these non-generic collection types won't be a part of the v3 track.
 
 ## Composite
 
