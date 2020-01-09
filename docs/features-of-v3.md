@@ -1,6 +1,6 @@
 # V3 Features
 
-## Structure tracks
+## Restructured tracks
 
 _Talk about changes to Concept/Practice exercises, pathways, and unlocking_
 We are restructuring tracks to build new pathways containing "Concept Exercises".
