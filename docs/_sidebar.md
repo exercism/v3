@@ -1,8 +1,7 @@
 - [Introduction](/)
 - [Docs](README.md)
-  - [What is Exercism v3?](what-is-v3.md)
-  - [Why make Exercism v3?](why-make-v3.md)
-  - [What needs doing to make it a reality?](what-needs-doing.md)
+  - [The features of v3](features-of-v3.md): A in-depth look at the changes coming to Exercism in v3
+  - [Rationale for v3](rationale-for-v3.md): An article exploring the rational behind our design decisions with v3.
   - [What are concept exercise are and how they are structured?](concept-exercises.md)
   - [How is this repository structured?](repository-structure.md)
   - Maintainers
