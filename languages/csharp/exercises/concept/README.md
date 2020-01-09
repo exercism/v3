@@ -48,12 +48,12 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 
 [general-docs-concept-exercises]: ../../../../docs/concept-exercises.md
 [reference]: ./reference.md
-[concept-exercises]: ../exercises/concept
-[concept-exercise-bitwise-operations]: ../exercises/concept/bitwise-operations
-[concept-exercise-dates]: ../exercises/concept/dates
-[concept-exercise-enums]: ../exercises/concept/enums
-[concept-exercise-numbers-floating-point]: ../exercises/concept/numbers-floating-point
-[concept-exercise-numbers]: ../exercises/concept/numbers
-[concept-exercise-strings]: ../exercises/concept/strings
+[concept-exercises]: ./concept
+[concept-exercise-bitwise-operations]: ./concept/bitwise-operations
+[concept-exercise-dates]: ./concept/dates
+[concept-exercise-enums]: ./concept/enums
+[concept-exercise-numbers-floating-point]: ./concept/numbers-floating-point
+[concept-exercise-numbers]: ./concept/numbers
+[concept-exercise-strings]: ./concept/strings
 [issues-new-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fnew-exercise+label%3Astatus%2Fhelp-wanted
 [issues-improve-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fimprove-exercise+label%3Astatus%2Fhelp-wanted

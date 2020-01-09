@@ -5,8 +5,7 @@
   - [Concepts](/reference/concepts/README.md)
   - [Paradigms](/reference/paradigms/README.md)
   - [Tooling](/reference/tooling/README.md)
-    - [Babel](babel.md)
-    - [.net Assemblies](dotnet-assemblies.md)
-    - [JS Doc](jsdoc.md)
+    - [Babel](/reference/tooling/babel.md)
+    - [.NET assemblies](/reference/tooling/dotnet-assemblies.md)
+    - [JSDoc](/reference/tooling/jsdoc.md)
   - [Types](/reference/types/README.md)
-
