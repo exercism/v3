@@ -8,12 +8,12 @@ Track-specific sub-concepts of these could be covered by specific track exercise
 
 ## Concepts
 
-- [classes](../concepts/classes.md)
-- [composition](../concepts/composition.md)
-- [encapsulation](../concepts/encapsulation.md)
-- [inheritance](../concepts/inheritance.md)
-- [interfaces](../concepts/interfaces.md)
-- [mutation](../concepts/mutation.md)
-- [objects](../concepts/objects.md)
-- [polymorphism](../concepts/polymorphism.md)
-- [state](../concepts/state.md)
+- [Classes](../concepts/classes.md)
+- [Composition](../concepts/composition.md)
+- [Encapsulation](../concepts/encapsulation.md)
+- [Inheritance](../concepts/inheritance.md)
+- [Interfaces](../concepts/interfaces.md)
+- [Mutation](../concepts/mutation.md)
+- [Objects](../concepts/objects.md)
+- [Polymorphism](../concepts/polymorphism.md)
+- [State](../concepts/state.md)
