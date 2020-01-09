@@ -79,7 +79,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 
 Thanks for wanting to contribute to the C# track! Contributions are very welcome!
 
-To contribute, please find a concept for which no reference document has yet been written and submit a PR to add the missing document.
+To contribute, please find a concept for which no reference document has yet been written and submit a PR to add the missing document. Some concepts currently link to the general concept description, but could benefit from having a C#-specific reference document. PR's to add these are also greatly appreciated.
 
 [exercises-concept]: ../../exercises/concept/README.md
 [docs-concept]: ../../../../docs/concept-exercises.md
