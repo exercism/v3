@@ -12,8 +12,8 @@ We are busy working away on the product and development work to add all this fun
 
 **To get started, please go to the language in which you want to contribute and read its README. You can find the [list of languages here](languages/README.md).**
 
-- If you would like to know more about the changes happening in v3, read [The features of v3](features-of-v3.md).
-- If you would like to understand more about the rational behind our design decisions for v3, read [Rationale for v3](rationale-for-v3.md).
+- If you would like to know more about the changes happening in v3, read [The features of v3](./docs/features-of-v3.md).
+- If you would like to understand more about the rational behind our design decisions for v3, read [Rationale for v3](./docs/rationale-for-v3.md).
 - If you are a maintainer, please [start here](./docs/maintainers-how-to-get-started.md).
 
 ## FAQs
