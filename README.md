@@ -10,7 +10,7 @@ Exercism v3 is the third major iteration of Exercism, which we are aiming to lau
 
 We are busy working away on the product and development work to add all this functionality, but we need contributors to help get our language tracks into the necessary state for v3. Our biggest need right now is for the implementation of Concept Exercises but there are also lots of other tasks that we will need help with too.
 
-**To get started, please go to the language in which you want to contribute and read its README. Yo can find the [list of languages here](languages/README.md).**
+**To get started, please visit the README of the language you want to contribute to. You can find the [list of languages here](languages/README.md).**
 
 If you would like to understand more about the road to Exercism v3, you will find lots of information in the links below.
 
