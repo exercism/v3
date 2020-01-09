@@ -1,6 +1,6 @@
 # Maintainers - How to write a track readme
 
-Your track's README is the key starting point for people, and the start of your tracks project management.
+Your track's README is the key starting point for people, and the start of your track's project management.
 
 It should be welcoming and encouraging, and make it clear how they can start contributing.
 

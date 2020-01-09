@@ -35,7 +35,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 ## Memory management
 
 - Resource passing
-- Resource allocation
+- [Resource allocation](./memory_allocation.md)
 - Resource cleanup
 - Resource lifetime
 
@@ -44,7 +44,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Arithmetic overflow
 - Signed integers
 - Unsigned integers
-- Floating point numbers
+- [Floating point numbers](./floating_point_numbers.md)
 
 ## Methods
 

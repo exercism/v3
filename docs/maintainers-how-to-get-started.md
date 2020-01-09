@@ -8,19 +8,19 @@ Here are some steps to get you started:
 
 ## 1. Fill our your track's README.
 
-Your track's README is the key starting point for people. It acts both as an introduction to the track, and the start of your tracks project management. 
+Your track's README is the key starting point for people. It acts both as an introduction to the track, and the start of your tracks project management.
 
-Start with our [guide to writing your track readme](maintainers-track-readme.md).
+Start with our [guide to writing your track's readme](maintainers-track-readme.md).
 
 ## 2. Fill out concepts for your language
 
-One of the key responsibilites for v3 Maintainers is deciding what Concept Exercises are needed. 
+One of the key responsibilites for v3 Maintainers is deciding what Concept Exercises are needed.
 
 To help, we've written a [guide to choosing and defining concepts](maintainers-concepts.md).
 
 ## 3. Write your first concept exercise
 
-Once a list of concepts has been compiled, these then need to be translated into [Concept Exercises](./concept-exercises.md). 
+Once a list of concepts has been compiled, these then need to be translated into [Concept Exercises](./concept-exercises.md).
 
 Most of the work here will be done by the community under your supervision. But writing a sample Concept Exercise is a crucial step in both you understanding the process, and having a template in your language that others can base their exercises on.
 

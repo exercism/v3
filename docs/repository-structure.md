@@ -4,12 +4,12 @@ This repository can be view both via GitHub and via the v3 website. This page de
 
 Things are grouped into several subdirectories:
 
-- **docs:** This directory contains files explaining v3 and how to contribute.
+- **docs:** This directory contains [files explaining v3 and how to contribute][docs].
 - **reference:** A list of reference documents for the various CS concepts, types, paradigms, etc.
   - **concepts:** This directory contains files discussing **programming** concepts. These documents should provide guidance, limitations, and links for maintainers who need to expound those ideas on their tracks.
   - **tooling** This directory contains documents on tooling that is common across languages (either due to a shared ecosystem - such as JS/TS/Clojurescript - or a shared platform - such as .net or JVM).
   - **types:** This directory contains files discussing programming types. These documents should provide guidance, limitations, and links for maintainers who need to expound those ideas on their tracks.
-- **languages:** A directory for each language containing a README.md that outlines the concepts that are necessary to learn to become fluent in those languages. Each language has a config.json and the following subdirectories:
+- **languages:** A [directory for each language][languages] containing a README.md that outlines the concepts that are necessary to learn to become fluent in those languages. Each language has a config.json and the following subdirectories:
   - **transitions:** Contains a file for each pair of languages, where someone with a background in X learns new language Y. These should explain the concepts that needed to be remapped/learnt. The files in this directory initially aim to help inform us about both the language-agnostic and language-specific files, but will hopefully also in the long-run provide custom pathways for people learning languages.
   - **reference:** Files containing information that the implementer might find useful. These may be files on language-specific elements of programming concepts or notes on the idiomatic way to use tooling. For now, maintainers are encouraged to organise this directory however they feel best, and we may formalise a structure later.
   - **exercises:** The WIP exercises for that language.
@@ -37,6 +37,8 @@ Each language also has its own label:
 
 You can combine labels to find the issues you'd like, e.g. to [list all the issues for the C# for which help is wanted][github-issues-csharp-status-help-wanted].
 
+[docs]: ./README.md
+[languages]: ../languages/README.md
 [github-issues]: https://github.com/exercism/v3/issues
 [github-issues-type-new-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-exercise
 [github-issues-type-improve-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-exercise
