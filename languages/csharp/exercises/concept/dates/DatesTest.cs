@@ -5,79 +5,104 @@ using System.Reflection;
 using System.Threading;
 using Xunit.Sdk;
 
-// TODO: convert Theory-based tests to Fact-based tests.
-// This is necessary in order to be able to display the 
-// input for which the test failed, which is defined in
-// the .meta/config.json file
 [UseCulture("en-US")]
 public class AppointmentTest
 {
-    public static TheoryData<string, DateTime> ScheduleData = new TheoryData<string, DateTime>
-    {
-        { "7/25/2019 13:45:00", new DateTime(2019, 07, 25, 13, 45, 0) },
-        { "June 3, 2019 11:30:00", new DateTime(2019, 6, 3, 11, 30, 0) },
-        { "Thursday, December 5, 2019 09:00:00", new DateTime(2019, 12, 5, 9, 0, 0) },
-        { "December 5, 2019 09:00:00", new DateTime(2019, 12, 5, 9, 0, 0) },
-    };
+    [Fact]
+    public void ScheduleDateUsingOnlyNumbers() =>
+        Assert.Equal(new DateTime(2019, 07, 25, 13, 45, 0), Appointment.Schedule("7/25/2019 13:45:00"));
 
-    [Theory]
-    [MemberData(nameof(ScheduleData))]
-    public void Schedule(string appointmentDateDescription, DateTime expected) =>
-        Assert.Equal(expected, Appointment.Schedule(appointmentDateDescription));
+    [Fact]
+    public void ScheduleDateWithTextualMonth() =>
+        Assert.Equal(new DateTime(2019, 6, 3, 11, 30, 0), Appointment.Schedule("June 3, 2019 11:30:00"));
 
-    public static TheoryData<DateTime, bool> HasPassedData = new TheoryData<DateTime, bool>
-    {
-        { DateTime.Now.AddYears(-1).AddHours(2), true },
-        { DateTime.Now.AddMonths(-8), true },
-        { DateTime.Now.AddMonths(-1), true },
-        { DateTime.Now.AddDays(-5), true },
-        { DateTime.Now.AddDays(-1), true },
-        { DateTime.Now.AddHours(-2), true },
-        { DateTime.Now.AddMinutes(-1), true },
-        { DateTime.Now.AddMinutes(1), false },
-        { DateTime.Now.AddDays(1), false },
-        { DateTime.Now.AddDays(7), false },
-        { DateTime.Now.AddMonths(3), false },
-        { DateTime.Now.AddYears(3).AddDays(-5), false },
-    };
+    [Fact]
+    public void ScheduleDateWithTextualMonthAndWeekday() =>
+        Assert.Equal(new DateTime(2019, 12, 5, 9, 0, 0), Appointment.Schedule("Thursday, December 5, 2019 09:00:00"));
 
-    [Theory]
-    [MemberData(nameof(HasPassedData))]
-    public void HasPassed(DateTime appointmentDate, bool expected) =>
-        Assert.Equal(expected, Appointment.HasPassed(appointmentDate));
+    [Fact]
+    public void HasPassedWithAppointmentOneYearAgo() =>
+        Assert.True(Appointment.HasPassed(DateTime.Now.AddYears(-1).AddHours(2)));
 
-    public static TheoryData<DateTime, bool> IsAfternoonAppointmentData = new TheoryData<DateTime, bool>
-    {
-        { new DateTime(2019, 6, 17, 8, 15, 0), false },
-        { new DateTime(2019, 1, 11, 9, 0, 0), false },
-        { new DateTime(2019, 2, 23, 11, 59, 59), false },
-        { new DateTime(2019, 8, 9, 12, 0, 0), true },
-        { new DateTime(2019, 8, 9, 12, 0, 1), true },
-        { new DateTime(2019, 9, 7, 15, 45, 0), true },
-        { new DateTime(2019, 9, 1, 17, 59, 59), true },
-        { new DateTime(2019, 9, 1, 18, 0, 0), false },
-        { new DateTime(2019, 9, 1, 23, 59, 59), false },
-    };
+    [Fact]
+    public void HasPassedWithAppointmentMonthsAgo() =>
+        Assert.True(Appointment.HasPassed(DateTime.Now.AddMonths(-8)));
 
-    [Theory]
-    [MemberData(nameof(IsAfternoonAppointmentData))]
-    public void IsAfternoonAppointment(DateTime appointmentDate, bool expected) =>
-        Assert.Equal(expected, Appointment.IsAfternoonAppointment(appointmentDate));
+    [Fact]
+    public void HasPassedWithAppointmentDaysAgo() =>
+        Assert.True(Appointment.HasPassed(DateTime.Now.AddDays(-23)));
 
-    public static TheoryData<DateTime, string> DescriptionData = new TheoryData<DateTime, string>
-    {
-        { new DateTime(2019, 03, 29, 15, 0, 0), "You have an appointment on Friday 29 March 2019 at 15:00." },
-        { new DateTime(2019, 07, 25, 13, 45, 0), "You have an appointment on Thursday 25 July 2019 at 13:45." },
-        { new DateTime(2019, 6, 3, 11, 30, 0), "You have an appointment on Monday 3 June 2019 at 11:30." },
-        { new DateTime(2019, 12, 5, 9, 0, 1), "You have an appointment on Thursday 5 December 2019 at 09:00." },
-        { new DateTime(2020, 2, 29, 15, 15, 20), "You have an appointment on Saturday 29 February 2020 at 15:15." },
-        { new DateTime(2020, 9, 9, 9, 9, 9), "You have an appointment on Wednesday 9 September 2020 at 09:09." },
-    };
+    [Fact]
+    public void HasPassedWithAppointmentHoursAgo() =>
+        Assert.True(Appointment.HasPassed(DateTime.Now.AddHours(-12)));
 
-    [Theory]
-    [MemberData(nameof(DescriptionData))]
-    public void Description(DateTime appointmentDate, string expected) =>
-        Assert.Equal(expected, Appointment.Description(appointmentDate));
+    [Fact]
+    public void HasPassedWithAppointmentMinutesAgo() =>
+        Assert.True(Appointment.HasPassed(DateTime.Now.AddMinutes(-55)));
+
+    [Fact]
+    public void HasPassedWithAppointmentOneMinuteAgo() =>
+        Assert.True(Appointment.HasPassed(DateTime.Now.AddMinutes(-1)));
+
+    [Fact]
+    public void HasPassedWithAppointmentInOneMinute() =>
+        Assert.False(Appointment.HasPassed(DateTime.Now.AddMinutes(1)));
+
+    [Fact]
+    public void HasPassedWithAppointmentInMinutes() =>
+        Assert.False(Appointment.HasPassed(DateTime.Now.AddMinutes(5)));
+
+    [Fact]
+    public void HasPassedWithAppointmentInDays() =>
+        Assert.False(Appointment.HasPassed(DateTime.Now.AddDays(19)));
+
+    [Fact]
+    public void HasPassedWithAppointmentInMonths() =>
+        Assert.False(Appointment.HasPassed(DateTime.Now.AddMonths(10)));
+
+    [Fact]
+    public void HasPassedWithAppointmentInYears() =>
+        Assert.False(Appointment.HasPassed(DateTime.Now.AddYears(2).AddMonths(3).AddDays(6)));
+
+    [Fact]
+    public void IsAfternoonAppointmentForEarlyMorningAppointment() =>
+        Assert.False(Appointment.IsAfternoonAppointment(new DateTime(2019, 6, 17, 8, 15, 0)));
+
+    [Fact]
+    public void IsAfternoonAppointmentForLateMorningAppointment() =>
+        Assert.False(Appointment.IsAfternoonAppointment(new DateTime(2019, 2, 23, 11, 59, 59)));
+
+    [Fact]
+    public void IsAfternoonAppointmentForNoonAppointment() =>
+        Assert.True(Appointment.IsAfternoonAppointment(new DateTime(2019, 8, 9, 12, 0, 0)));
+
+    [Fact]
+    public void IsAfternoonAppointmentForEarlyAfternoonAppointment() =>
+        Assert.True(Appointment.IsAfternoonAppointment(new DateTime(2019, 8, 9, 12, 0, 1)));
+
+    [Fact]
+    public void IsAfternoonAppointmentForLateAfternoonAppointment() =>
+        Assert.True(Appointment.IsAfternoonAppointment(new DateTime(2019, 9, 1, 17, 59, 59)));
+
+    [Fact]
+    public void IsAfternoonAppointmentForEarlyEveningAppointment() =>
+        Assert.False(Appointment.IsAfternoonAppointment(new DateTime(2019, 9, 1, 18, 0, 0)));
+
+    [Fact]
+    public void IsAfternoonAppointmentForLateEveningAppointment() =>
+        Assert.False(Appointment.IsAfternoonAppointment(new DateTime(2019, 9, 1, 23, 59, 59)));
+
+    [Fact]
+    public void DescriptionOnFridayAfternoon() =>
+        Assert.Equal("You have an appointment on Friday 29 March 2019 at 15:00.", Appointment.Description(new DateTime(2019, 03, 29, 15, 0, 0)));
+
+    [Fact]
+    public void DescriptionOnThursdayAfternoon() =>
+        Assert.Equal("You have an appointment on Thursday 25 July 2019 at 13:45.", Appointment.Description(new DateTime(2019, 07, 25, 13, 45, 0)));
+
+    [Fact]
+    public void DescriptionOnWednesdayMorning() =>
+        Assert.Equal("You have an appointment on Wednesday 9 September 2020 at 09:09.", Appointment.Description(new DateTime(2020, 9, 9, 9, 9, 9)));
 
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     private class UseCultureAttribute : BeforeAfterTestAttribute

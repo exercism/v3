@@ -3,8 +3,36 @@
   "test_file": "EnumsTest.cs",
   "tests": [
     {
-      "name": "TODO: add test names after converting to Fact-based tests",
-      "cmd": "TODO: add test command after converting to Fact-based tests"
+      "name": "ParseError",
+      "cmd": "LogLine.ParseLogLevel(\"[ERROR]: Disk full\")"
+    },
+    {
+      "name": "ParseWarning",
+      "cmd": "LogLine.ParseLogLevel(\"[WARNING]: Timezone not set\")"
+    },
+    {
+      "name": "ParseInfo",
+      "cmd": "LogLine.ParseLogLevel(\"[INFO]: Timezone changed\")"
+    },
+    {
+      "name": "ParseUnknown",
+      "cmd": "LogLine.ParseLogLevel(\"[FATAL]: Crash!\")"
+    },
+    {
+      "name": "OutputForShortLogForError",
+      "cmd": "LogLine.OutputForShortLog(LogLevel.Error, \"Stack overflow\")"
+    },
+    {
+      "name": "OutputForShortLogForWarning",
+      "cmd": "LogLine.OutputForShortLog(LogLevel.Warning, \"Unsafe password\")"
+    },
+    {
+      "name": "OutputForShortLogForInfo",
+      "cmd": "LogLine.OutputForShortLog(LogLevel.Info, \"File moved\")"
+    },
+    {
+      "name": "OutputForShortLogForUnknown",
+      "cmd": "LogLine.OutputForShortLog(LogLevel.Unknown, \"Something unknown happened\")"
     }
   ]
 }

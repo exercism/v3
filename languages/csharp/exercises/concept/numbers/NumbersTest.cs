@@ -1,38 +1,44 @@
 using Xunit;
 
-// TODO: convert Theory-based tests to Fact-based tests.
-// This is necessary in order to be able to display the 
-// input for which the test failed, which is defined in
-// the .meta/config.json file
 public class AssemblyLineTest
 {
-    [Theory]
-    [InlineData(0, 0.0)]
-    [InlineData(1, 221.0)]
-    [InlineData(2, 442.0)]
-    [InlineData(3, 663.0)]
-    [InlineData(4, 884.0)]
-    [InlineData(5, 994.5)]
-    [InlineData(6, 1193.4)]
-    [InlineData(7, 1392.3)]
-    [InlineData(8, 1591.2)]
-    [InlineData(9, 1531.53)]
-    [InlineData(10, 1701.7)]
-    public void ProductionRatePerHour(int speed, double expected) =>
-        Assert.Equal(expected, AssemblyLine.ProductionRatePerHour(speed));
+    [Fact]
+    public void ProductionRatePerHourForSpeedZero() =>
+        Assert.Equal(0.0, AssemblyLine.ProductionRatePerHour(0));
 
-    [Theory]
-    [InlineData(0, 0)]
-    [InlineData(1, 3)]
-    [InlineData(2, 7)]
-    [InlineData(3, 11)]
-    [InlineData(4, 14)]
-    [InlineData(5, 16)]
-    [InlineData(6, 19)]
-    [InlineData(7, 23)]
-    [InlineData(8, 26)]
-    [InlineData(9, 25)]
-    [InlineData(10, 28)]
-    public void WorkingItemsPerMinute(int speed, int expected) =>
-        Assert.Equal(expected, AssemblyLine.WorkingItemsPerMinute(speed));
+    [Fact]
+    public void ProductionRatePerHourForSpeedOne() =>
+        Assert.Equal(221.0, AssemblyLine.ProductionRatePerHour(1));
+
+    [Fact]
+    public void ProductionRatePerHourForSpeedFour() =>
+        Assert.Equal(884.0, AssemblyLine.ProductionRatePerHour(4));
+
+    [Fact]
+    public void ProductionRatePerHourForSpeedSeven() =>
+        Assert.Equal(1392.3, AssemblyLine.ProductionRatePerHour(7));
+
+    [Fact]
+    public void ProductionRatePerHourForSpeedNine() =>
+        Assert.Equal(1531.53, AssemblyLine.ProductionRatePerHour(9));
+
+    [Fact]
+    public void WorkingItemsPerMinuteForSpeedZero() =>
+        Assert.Equal(0, AssemblyLine.WorkingItemsPerMinute(0));
+
+    [Fact]
+    public void WorkingItemsPerMinuteForSpeedOne() =>
+        Assert.Equal(3, AssemblyLine.WorkingItemsPerMinute(1));
+
+    [Fact]
+    public void WorkingItemsPerMinuteForSpeedFive() =>
+        Assert.Equal(16, AssemblyLine.WorkingItemsPerMinute(5));
+
+    [Fact]
+    public void WorkingItemsPerMinuteForSpeedFour() =>
+        Assert.Equal(26, AssemblyLine.WorkingItemsPerMinute(8));
+
+    [Fact]
+    public void WorkingItemsPerMinuteForSpeedTen() =>
+        Assert.Equal(28, AssemblyLine.WorkingItemsPerMinute(10));
 }

@@ -12,7 +12,8 @@
     },
     { 
       "name": "InfoMessage",
-      "cmd": "LogLine.Message(\"[INFO]: File moved\")" },
+      "cmd": "LogLine.Message(\"[INFO]: File moved\")"
+    },
     {
       "name": "MessageWithLeadingAndTrailingWhiteSpace",
       "cmd": "LogLine.Message(\"[WARNING]:   \tTimezone not set  \r\n\")"
