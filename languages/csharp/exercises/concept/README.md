@@ -2,10 +2,6 @@
 
 For C#'s V3 track, we'll be implementing [concept exercises][general-docs-concept-exercises].
 
-## Choose exercise to implement
-
-TODO: link to issue with filter for C# concept exercises
-
 ## Already implemented exercises
 
 These are the concept exercises that have currently been implemented, as well as the concepts they teach and their prerequisite concepts:
@@ -44,6 +40,12 @@ Here is how the C# track has interpreted the following concept keywords. This sh
 
 This also indicates that for example `basic-strings` does **not** teach using custom formatting strings and that `basic-numbers` does **not** teach about checked/unchecked arithmetic.
 
+## Contributing
+
+Thanks for wanting to contribute to the C# track's concept exercises! Contributions are very welcome!
+
+To contribute, please find and work on one of the [new exercise issues][issues-new-exercise] or [improve exercise issues][issues-improve-exercise].
+
 [general-docs-concept-exercises]: ../../../../docs/concept-exercises.md
 [reference]: ./reference.md
 [concept-exercises]: ../exercises/concept
@@ -53,3 +55,5 @@ This also indicates that for example `basic-strings` does **not** teach using cu
 [concept-exercise-numbers-floating-point]: ../exercises/concept/numbers-floating-point
 [concept-exercise-numbers]: ../exercises/concept/numbers
 [concept-exercise-strings]: ../exercises/concept/strings
+[issues-new-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fnew-exercise+label%3Astatus%2Fhelp-wanted
+[issues-improve-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fimprove-exercise+label%3Astatus%2Fhelp-wanted
