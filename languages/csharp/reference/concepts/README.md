@@ -1,5 +1,7 @@
 # C&#35; concepts
 
+The [C# concept exercises][exercises-concept] are all based on [concepts][docs-concept]. The list below contains the concepts that have been identified for the C# language. These concepts will be [converted to concepted exercises][docs-how-to-implement-a-concept-exercise].
+
 ## Object-oriented
 
 The core OO features a C# developer should know about are:
@@ -62,7 +64,8 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Namespaces
 - [Generics](../../concepts/generics.md)
 - Exception handling
-- Type casting (includes boxing/unboxing)
+- Implicit/explicit conversion
+- Boxing/unboxing
 - Anonymous types
 - Concurrency
 - Asynchronous programming
@@ -70,124 +73,6 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Attributes
 - Slicing
 - Unsafe code
-- Implicit/explicit conversion
-  - Type casting (includes boxing/unboxing)
-- Reflection
-
-## Concept dependencies
-
-Some of these dependencies will be dependent on how the actual exercise is implemented. For example, if the "Classes" concept is implemented with methods that use strings, than the "Strings" concept will be a dependency. The current list does not include those implementation details, as the concept exercises have not yet been designed. This means that this list is a work in progress.
-
-The list itself should be read as follows:
-
-- [concept]
-  - [concept-prerequisite1]
-  - [concept-prerequisite2]
-  - ...
-
-This also means that some concepts will be listed more than once.
-
-## Object-oriented
-
-- [Encapsulation](../../concepts/encapsulation.md)
-  - [Classes](../../concepts/classes.md)
-- [Classes](../../concepts/classes.md)
-- [Objects](../../concepts/objects.md)
-  - [Classes](../../concepts/classes.md)
-- [State](../../concepts/state.md)
-  - [Classes](../../concepts/classes.md)
-- [Mutation](../../concepts/mutation.md)
-- [Composition](../../concepts/composition.md)
-  - [Classes](../../concepts/classes.md)
-  - [Objects](../../concepts/objects.md)
-- [Inheritance](../../concepts/inheritance.md)
-  - [Classes](../../concepts/classes.md)
-- [Interfaces](../../concepts/interfaces.md)
-  - [Classes](../../concepts/classes.md)
-- [Polymorphism](../../concepts/polymorphism.md)
-  - [Inheritance](../../concepts/inheritance.md)
-- [Methods](../../concepts/methods.md)
-  - [Classes](../../concepts/classes.md)
-
-## Functional
-
-- [Immutability](../../concepts/immutability.md)
-  - [Mutation](../../concepts/mutation.md)
-- [Pattern matching](../../concepts/pattern_matching.md)
-  - [Conditionals](../../concepts/conditionals.md)
-- [Recursion](../../concepts/recursion.md)
-- [Local functions](../../concepts/nested_functions.md)
-  - [Classes](../../concepts/classes.md)
-- [Pipelines (LINQ)](../../concepts/pipelines.md)
-  - [Higher-order functions](../../concepts/higher_order_functions.md)
-  - [Type inference](../../concepts/type_inference.md)
-  - [Anonymous methods](../../concepts/anonymous_functions.md)
-  - Anonymous types
-- [Higher-order functions](../../concepts/higher_order_functions.md)
-- [Type inference](../../concepts/type_inference.md)
-- [Anonymous methods](../../concepts/anonymous_functions.md)
-  - [Higher-order functions](../../concepts/higher_order_functions.md)
-
-## Platform-specific
-
-- [Assemblies](../../tooling/dotnet-assemblies.md)
-
-## Memory management
-
-- Resource passing
-  - [Objects](../../concepts/objects.md)
-- Resource allocation
-  - [Classes](../../concepts/classes.md)
-  - [Objects](../../concepts/objects.md)
-  - Resource lifetime (static/non-static)
-- Resource cleanup
-  - [Objects](../../concepts/objects.md)
-  - Resource lifetime (static/non-static)
-- Resource lifetime (static/non-static)
-  - [Classes](../../concepts/classes.md)
-  - [Objects](../../concepts/objects.md)
-
-## Arithmetic
-
-- Arithmetic overflow
-  - Unsigned integers
-- Signed integers
-- Unsigned integers
-  - Signed integers
-- Floating point numbers
-
-## Methods
-
-- Method overloading
-  - [Classes](../../concepts/classes.md)
-- Named arguments
-- Optional arguments
-- Extension methods (mixin)
-  - Resource lifetime (static/non-static)
-
-## General
-
-- [Sameness](../../concepts/sameness.md)
-- [Conditionals](../../concepts/conditionals.md)
-  - [Sameness](../../concepts/sameness.md)
-- [Enumeration](../../concepts/enumeration.md)
-- Iterators (yield)
-  - [Enumeration](../../concepts/enumeration.md)
-- Namespaces
-- [Generics](../../concepts/generics.md)
-- Exception handling
-- Type casting (includes boxing/unboxing)
-- Anonymous types
-  - [Classes](../../concepts/classes.md)
-  - [Anonymous methods](../../concepts/anonymous_functions.md)
-- Concurrency (includes locking and concurrent collections)
-- Asynchronous programming
-- Expressions vs statements
-- Attributes
-- Slicing
-- Locks
-- Unsafe code
-- Implicit/explicit conversion
 - Reflection
 
 ## Contributing
@@ -195,3 +80,7 @@ This also means that some concepts will be listed more than once.
 Thanks for wanting to contribute to the C# track! Contributions are very welcome!
 
 To contribute, please find a concept for which no reference document has yet been written and submit a PR to add the missing document.
+
+[exercises-concept]: ../../exercises/concept/README.md
+[docs-concept]: ../../../../docs/concept-exercises.md
+[docs-how-to-implement-a-concept-exercise]: ../../docs/how-to-implement-a-concept-exercise.md
