@@ -1,9 +1,8 @@
 # Contributing
 
-Know an amazing reference that explains a concept in a straight-forward way and that isn't language-heavy? Please PR it! :)
+Thanks for wanting to contribute Exercism V3! Contributions are very welcome!
 
-Seen something that we've missed or got wrong. PR a suggestion! :)
+To contribute, please first read the general [README.md][readme] and then [select the language you'd like to contribute to][languages-readme].
 
-Have we missed an extra general programming concept or paradigm? Open an issue and tell us more about where it's used.
-
-Want to write a concept exercise. Please PR one!
+[readme]: ./README.md
+[languages-readme]: ./languages/README.md
