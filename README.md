@@ -9,15 +9,22 @@ Exercism v3 is the third major iteration of Exercism, which we are aiming to lau
 - **In-browser coding:** We will be adding the ability to solve exercises within the browser. The CLI will remain as a first-class citizen, but v3 will allow people to work their way through a track without having to install anything.
 - **Improved profiles:** Profiles will be getting an upgrade - with contributions throughout the site reflected in them. Mentoring, writing exercises, contributing to tracks, and maintaining parts of Exercism will all feature on profiles. Over time, contributing more will also have tangible improvements to your experience, with bumps up mentor queues and access to early testing features.
 
-We are busy working away on the product and development work to add all this functionality, but we need contributors to help get our language tracks into the necessary state for v3. Our biggest need right now is for the implementation of Concept Exercises, but there are also lots of other tasks that we will need help with too.
+We are busy working away on the product and development work to add all this functionality, but we need contributors to help get our language tracks into the necessary state for v3. Our biggest need right now is for the implementation of Concept Exercises, but there are also lots of other tasks that we will need help with too. Throughout the development of v3, track maintainers will be creating issues tagged with `status/help-wanted`.
 
-**To get started, please go to the language in which you want to contribute and read its README. You can find the [list of languages here](languages/README.md).**
+**To get started, please filter the Issues by the track you wish to contribute to. Here are some links to help you:**
+
+- [C#](https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcsharp)
+- [Go](https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fgo)
+- [F#](https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Ffsharp)
+...
+
+## More information
 
 - If you would like to know more about the changes happening in v3, read [The features of v3](./docs/features-of-v3.md).
 - If you would like to understand more about the rational behind our design decisions for v3, read [Rationale for v3](./docs/rationale-for-v3.md).
 - If you are a maintainer, please [start here](./docs/maintainers-how-to-get-started.md).
 
-## FAQs
+### FAQs
 
 - [What are concept exercise are and how they are structured?](./docs/concept-exercises.md)
 - [How is this repository structured?](./docs/repository-structure.md)
