@@ -25,7 +25,7 @@ _Talk about what representers are, how they work, and how they will help_
 
 _Talk about what test runners_
 
-We will be adding the ability to solve exericses within the browser. The CLI will remain as a first-class citizen, but v3 will allow people to work their way through a track without having to install anything.
+We will be adding the ability to solve exercises within the browser. The CLI will remain as a first-class citizen, but v3 will allow people to work their way through a track without having to install anything.
 
 ## Improved profiles
 

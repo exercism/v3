@@ -15,6 +15,16 @@ Broadly speaking, the C# naming conventions are as follows:
 
 These conventions are described in the [.NET capitalization conventions][docs.microsoft.com_capitalization-conventions] and the [.NET general naming conventions][docs.microsoft.com_general-naming-conventions].
 
+## Other conventions
+
+### Prefer type alias
+
+The general consensus is to prefer the C# type over the .NET type. Here are some examples where this prefererence shows:
+
+- The default [C# editorconfig settings][docs.microsoft.com_editorconfig-language-keywords].
+- The [ReSharper built-in type naming rule][jetbrains.com_built-in-type-naming].
+- The [CoreFX coding style document][github.com_corefx-coding-style].
+
 ## Enforcing code style
 
 It is possible to encode C# coding style conventions using [`.editorconfig files`][docs.microsoft.com_editorconfig]. This includes being able to specify [formatting conventions][docs.microsoft.com_editorconfig-formatting-conventions] and [naming conventions][docs.microsoft.com_editorconfig-naming-conventions].
@@ -34,3 +44,6 @@ The [dotnet format global tool][github.com_dotnet-format-editorconfig-options] c
 [github.com_dotnet-format]: https://github.com/dotnet/format/blob/master/README.md
 [github.com_dotnet-format-editorconfig-options]: https://github.com/dotnet/format/wiki/Supported-.editorconfig-options
 [github.com_dotnet-format-how-to]: https://github.com/dotnet/format/blob/master/README.md#how-to-install
+[docs.microsoft.com_editorconfig-language-keywords]: https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-language-conventions?view=vs-2019#language-keywords
+[github.com_corefx-coding-style]: https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md
+[jetbrains.com_built-in-type-naming]: https://www.jetbrains.com/help/resharper/Built_In_Type_Naming.html

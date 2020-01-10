@@ -1,44 +1,19 @@
 # C&#35;
 
-The C# Exercism v3 track.
+Welcome to the workspace for Exercism v3's C# track!
+
+The Exercism v3 C# track helps students learn C#. It does this through a series of carefully designed Concept Exercises and Practice Exercises.
 
 ## Contributing
 
-Thanks for wanting to contribute to the C# track! There are several areas we could use help with to get the C# track ready for v3. Contributions are very welcome!
+The C# maintainers have written out specs for lots of exercises that need writing. The biggest way you can help would be to choose an exercise and implement it. You can find the list of exercises [here][github-issues-new-exercise] - each one has detailed instructions on what to do.
 
-### Concept exercises
+If you have less time/energy/whatever, contributing to reference docs would also be helpful. You can find out how to help with reference docs [here][reference].
 
-Exercises designed to teach specific (programming) concepts, replacing V2's Core Exercises. [Learn more about how you can help add new concept exercises][exercises-concept].
+## FAQs
 
-### Reference documents
-
-A list of reference documents for the various [concepts][reference-concepts], [types][reference-types], and [keywords][reference-keywords] found in C#. [Learn more about how you can help improve the reference documents][reference].
-
-### Test runner
-
-The test runner automatically verifies if a submission passes all the tests. [Learn more about how you can help with the test runner][docs-test-runner].
-
-### Representer
-
-The representer creates a general representation of a submission, in order to automatically give feedback on similar code. [Learn more about how you can help with the representer][docs-representer].
-
-### Analyzer
-
-The analyzer uses syntax analysis to automatically give feedback on a submission. [Learn more about how you can help with the analyzer][docs-analyzer].
-
-## Track structure
-
-The C# track is structured as follows:
-
-- **docs**: C# track-specific [documentation][docs].
-- **exercises**: the [exercises][exercises].
-  - **.docs**: [documentation shared][exercises-docs] across all exercises.
-  - **concept**: [concept exercises][exercises-concept] (WIP).
-  - **practice**: [practice exercises][exercises-practice] (WIP).
-- **reference**: C# track-specific [reference documentation][reference].
-  - **concepts**: [C# concepts][reference-concepts].
-  - **keywords**: [C# keywords][reference-keywords].
-  - **types**: [C# types][reference-types].
+- [What is Exercism v3?][exercism-v3]
+- [How is this repository structured?][repository-structure]
 
 [docs]: ./docs/README.md
 [docs-analyzer]: ./docs/analyzer.md
@@ -52,3 +27,6 @@ The C# track is structured as follows:
 [reference-concepts]: ./reference/concepts/README.md
 [reference-keywords]: ./reference/keywords/README.md
 [reference-types]: ./reference/types/README.md
+[exercism-v3]: ../../README.md
+[repository-structure]: ./docs/repository-structure.md
+[github-issues-new-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fnew-exercise+label%3Astatus%2Fhelp-wanted+

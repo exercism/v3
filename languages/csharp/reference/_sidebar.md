@@ -5,9 +5,8 @@
     - [Docs](/languages/csharp/docs/README.md)
     - [Exercises](/languages/csharp/exercises/README.md)
     - [Reference](/languages/csharp/reference/README.md)
-      - [Concepts](/languages/csharp/reference/concepts/README.md)
-      - [Keywords](/languages/csharp/reference/keywords/README.md)
-      - [Types](/languages/csharp/reference/types/README.md)
+      - [Code style](/languages/csharp/reference/code_style.md)
+      - [Memory allocation](/languages/csharp/reference/memory_allocation.md)
 - Reference
   - [Concepts](/reference/concepts/README.md)
   - [Paradigms](/reference/paradigms/README.md)

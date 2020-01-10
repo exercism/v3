@@ -37,16 +37,9 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 ## Memory management
 
 - Resource passing
-- [Resource allocation](./memory_allocation.md)
+- [Resource allocation](./memory_allocation.md) (can include `Span<T>`/`Memory<T>` types)
 - Resource cleanup
 - Resource lifetime
-
-## Arithmetic
-
-- Arithmetic overflow
-- Signed integers
-- Unsigned integers
-- [Floating point numbers](./floating_point_numbers.md)
 
 ## Methods
 
@@ -57,6 +50,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 
 ## General
 
+- Arithmetic overflow
 - [Sameness](../../concepts/sameness.md)
 - [Conditionals](../../concepts/conditionals.md)
 - [Enumeration](../../concepts/enumeration.md)
@@ -67,13 +61,34 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Implicit/explicit conversion
 - Boxing/unboxing
 - Anonymous types
-- Concurrency
+- Concurrency (can include concurrent collections)
 - Asynchronous programming
 - Expressions vs statements
 - Attributes
 - Slicing
 - Unsafe code
 - Reflection
+- Nullability
+
+## Types
+
+- Signed integers
+- Unsigned integers
+- [Floating point numbers](./floating_point_numbers.md)
+- Strings
+- Enums
+- Characters
+- [Booleans][bool]
+- [Arrays][array]
+- [Lists][list]
+- [Dictionaries][map]
+- [Sets][set]
+- Queues
+- Stacks
+- Tuples
+- Ranges
+- Indexes
+- Events
 
 ## Contributing
 
@@ -84,3 +99,31 @@ To contribute, please find a concept for which no reference document has yet bee
 [exercises-concept]: ../../exercises/concept/README.md
 [docs-concept]: ../../../../docs/concept-exercises.md
 [docs-how-to-implement-a-concept-exercise]: ../../docs/how-to-implement-a-concept-exercise.md
+[bool]: ../../types/boolean.md
+[string]: ../../types/string.md
+[char]: ../../types/char.md
+[null]: ../../types/null.md
+[int]: ../../types/integer.md
+[uint]: ../../types/integer.md
+[byte]: ../../types/byte.md
+[sbyte]: ../../types/byte.md
+[short]: ../../types/short.md
+[ushort]: ../../types/short.md
+[long]: ../../types/long.md
+[ulong]: ../../types/long.md
+[double]: ../../types/double.md
+[float]: ../../types/single.md
+[decimal]: ../../types/decimal_number.md
+[big-integer]: ../../types/big_integer.md
+[array]: ../../types/array.md
+[list]: ../../types/list.md
+[dictionary]: ../../types/map.md
+[hashset]: ../../types/set.md
+[stack]: ../../types/stack.md
+[queue]: ../../types/deque.md
+[class]: ../../types/class.md
+[struct]: ../../types/struct.md
+[value-tuple]: ../../types/tuple.md
+[tuple]: ../../types/tuple.md
+[range]: ../../types/range.md
+[nullable]: ../../types/nullable.md
