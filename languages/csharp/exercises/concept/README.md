@@ -40,7 +40,7 @@ Here is how the C# track has interpreted the following concept keywords. This sh
 
 This also indicates that for example `basic-strings` does **not** teach using custom formatting strings and that `basic-numbers` does **not** teach about checked/unchecked arithmetic.
 
-## Contributing
+## TODO
 
 Thanks for wanting to contribute to the C# track's concept exercises! Contributions are very welcome!
 
