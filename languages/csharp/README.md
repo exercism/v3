@@ -15,18 +15,7 @@ If you have less time/energy/whatever, contributing to reference docs would also
 - [What is Exercism v3?][exercism-v3]
 - [How is this repository structured?][repository-structure]
 
-[docs]: ./docs/README.md
-[docs-analyzer]: ./docs/analyzer.md
-[docs-representer]: ./docs/representer.md
-[docs-test-runner]: ./docs/test-runner.md
-[exercises]: ./exercises/README.md
-[exercises-docs]: ./exercises/.docs/README.md
-[exercises-concept]: ./exercises/concept/README.md
-[exercises-practice]: ./exercises/practice/README.md
-[reference]: ./reference/README.md
-[reference-concepts]: ./reference/concepts/README.md
-[reference-keywords]: ./reference/keywords/README.md
-[reference-types]: ./reference/types/README.md
 [exercism-v3]: ../../README.md
+[reference]: ./reference/README.md
 [repository-structure]: ./docs/repository-structure.md
 [github-issues-new-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fnew-exercise+label%3Astatus%2Fhelp-wanted+

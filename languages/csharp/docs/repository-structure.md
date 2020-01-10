@@ -10,11 +10,8 @@ Things are grouped into several subdirectories:
 - **exercises**: the [exercises][exercises].
   - **.docs**: [documentation shared][exercises-docs] across all exercises.
   - **concept**: [concept exercises][exercises-concept] (WIP).
-  - **practice**: [practice exercises][exercises-practice] (WIP).
+  - **practice**: [practice exercises][exercises-practice] (on hold).
 - **reference**: C# track-specific [reference documentation][reference].
-  - **concepts**: [C# concepts][reference-concepts].
-  - **keywords**: [C# keywords][reference-keywords].
-  - **types**: [C# types][reference-types].
 
 [docs]: ./docs/README.md
 [exercises]: ./exercises/README.md
@@ -22,6 +19,3 @@ Things are grouped into several subdirectories:
 [exercises-concept]: ./exercises/concept/README.md
 [exercises-practice]: ./exercises/practice/README.md
 [reference]: ./reference/README.md
-[reference-concepts]: ./reference/concepts/README.md
-[reference-keywords]: ./reference/keywords/README.md
-[reference-types]: ./reference/types/README.md
