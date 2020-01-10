@@ -12,15 +12,16 @@ Firstly, we believe the key reason is that we have encouraged maintainers to reo
 
 ## Problems with v2
 
-We've been taking stock of this situation recently and spending time trying to work out what the content of an Exercism track should look like in order to fulfil the design goals of v2. 
+We've been taking stock of this situation recently and spending time trying to work out what the content of an Exercism track should look like in order to fulfil the design goals of v2.
 
 At the moment the journey for a student is:
+
 - Be given an exercise.
 - Try something - normally via an incorrect approach grounded from previous language experience.
 - Be told what you should have been doing.
 - Work out how to redo it that way.
 
-That sometimes works really well. The mentor gives feedback that neither gives away the answer, nor is frustratingly vague, the student realises a new approach, gets a dopamine hit, and memorizes the new technique. This is similar to how many learning natural-language courses (such as Rosetta Stone) work, where you are given a set of images, and some text, and you have to work out which is which. At the start you have no idea, but as you are corrected you start to work out what the words mean, and the resulting dopamine hit locks the knowledge into your mind. 
+That sometimes works really well. The mentor gives feedback that neither gives away the answer, nor is frustratingly vague, the student realises a new approach, gets a dopamine hit, and memorizes the new technique. This is similar to how many learning natural-language courses (such as Rosetta Stone) work, where you are given a set of images, and some text, and you have to work out which is which. At the start you have no idea, but as you are corrected you start to work out what the words mean, and the resulting dopamine hit locks the knowledge into your mind.
 
 However, in reality on Exercism, this is often a frustrating process for students. For more complex exercises (I'm looking at you, Bob), the student will often have no idea of the idiomatic way to approach it, and so writes a very different and unidiomatic implementation, giving a mentor a huge amount of work to take them on a journey to an idiomatic solution. This can be hugely frustrating for the student, who can't see the end goal enough to be able to understand why they're being taken on the journey, and is a huge piece of work for the mentors (indeed, tracks pretty reliably fail as soon as a complex exercise like Bob is introduced). There are also huge waits between submitting an exercise and receiving feedback, and that break of flow reduces a lot of the positive excitement from learning something. Everything also relies on the mentor knowing exactly what the exercise is aiming for and not taking the student down random roads that are not appropriate to the point in the track. We have tried to solve some of these issues with the automatic analyzers, but the large potential amount of solutions submitted to an exercise, makes this a slow and unwieldy development endeavour (analyzers are hard to write!).
 
@@ -35,6 +36,7 @@ I believe the key area where we are failing our students is in not having a clea
 ### Concept Exercises
 
 Concepts Exercises should have the following characteristics:
+
 - Each one has a clear learning goal.
 - They are language-specific, not generic.
 - We use stubs/boilerplate to avoid the student having to learn/handle unnecessary code on exercises.
@@ -51,7 +53,7 @@ Concept Exercises will not share a generic base such as problem-specifications. 
 
 Practice Exercises should be story-based than concept-based. They should provide an interesting challenge, which a student can try and solve using the concepts they have been taught. The existing set of Exercism exercises are generally great Practice Exercise candidates.
 
-There will be no "approval" for Practice Exercises. A student solves the exercise against the tests and submits it. They can then choose to publish, or submit further iterations. 
+There will be no "approval" for Practice Exercises. A student solves the exercise against the tests and submits it. They can then choose to publish, or submit further iterations.
 
 We will provide automated analysis of Practice Exercises, but only as tips for how things could be made more idiomatic, referring back to the Concepts previously taught. We expect this analysis to take lower priority than on Concept Exercises (as students are not blocked) so it should be seen as a nice bonus feature, not something that the exercise or student should rely on.
 

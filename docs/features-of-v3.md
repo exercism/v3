@@ -30,5 +30,3 @@ We will be adding the ability to solve exericses within the browser. The CLI wil
 ## Improved profiles
 
 Profiles will be getting an upgrade - with contributions throughout the site reflected in them. Mentoring, writing exercises, contributing to tracks, and maintaining parts of Exercism will all feature on profiles. Over time, contributing more will also have tangible improvements to your experience, with bumps up mentor queues and access to early testing features.
-
-
