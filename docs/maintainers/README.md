@@ -39,7 +39,7 @@ Representers are pieces of software that take a solution and provide a normalise
 
 ## Getting help
 
-Each track has a #maintaining-x) channel on [Slack](https://exercism-team.slack.com. We recommend using that to chat amongst yourselves.
+Each track has a #maintaining-x channel on [Slack](https://exercism-team.slack.com). We recommend using that to chat amongst yourselves.
 
 If you need help, the best place to use is the [#maintainers](https://exercism-team.slack.com/archives/GC3K95MRR) channel on Slack. This is a private space where maintainers from all tracks can help each other.
 
