@@ -33,8 +33,8 @@ For example:
 
 For example:
 
-- Create the document using https://github.com/exercism/v3/new/master?filename=languages/&lt;lang&gt;/reference/&lt;doc&gt;.md.
-- Add a link to the reference document in the reference README at https://github.com/exercism/v3/tree/master/languages/&lt;lang&gt;/reference/readme.md.
+- Create the document using ../new/master?filename=languages/&lt;lang&gt;/reference/&lt;doc&gt;.md.
+- Add a link to the reference document in the reference README at ../tree/master/languages/&lt;lang&gt;/reference/readme.md.
 
 ## Help
 

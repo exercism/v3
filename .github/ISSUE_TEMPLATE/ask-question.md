@@ -15,5 +15,5 @@ assignees: ""
 - If this relates to another issue, please link to that issue.
 - Etc.]
 
-[issues-open]: https://github.com/exercism/v3/issues
-[issues-closed]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aclosed
+[issues-open]: ./
+[issues-closed]: ./?q=is%3Aissue+is%3Aclosed
