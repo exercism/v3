@@ -20,7 +20,7 @@ We recommend choosing a Concept that involves working with basic types, like str
 
 - [More about Concepts and Concept Exercises](../concept-exercises.md)
 - [How to determine Concepts for your track](./determining-concepts.md)
-- [How to write Concept Exercise GitHub issues](./writing-a-concept-exercise.md)
+- [How to write Concept Exercise GitHub issues](./writing-a-concept-exercise-github-issue.md)
 - [How the repository is structured](./repository-structure.md)
 
 ## Migrating your config.json files
