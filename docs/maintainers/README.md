@@ -29,18 +29,18 @@ For v3, the existing config.json files will need to have additions keys added.
 
 ...
 
-## Tooling
+## Tooling
 
 As well as building out the Concept Exercises, your track will also need a Test Runner and a Representer.
 
-The Test Runner is a piece of software that runs the tests. This enables us to have in-browser coding. Test Runners are surprisingly tricky to get right, with lots of weird edge cases and oddities, so we recommend starting on them quite early. You can find more in the [Test Runner repository](https://github.com/exercism/automated-tests).
+The Test Runner is a piece of software that runs the tests. This enables us to have in-browser coding. Test Runners are surprisingly tricky to get right, with lots of weird edge cases and oddities, so we recommend starting on them quite early. You can find more in the [automated testing repository](https://github.com/exercism/automated-tests).
 
 Representers are pieces of software that take a solution and provide a normalised representation of it. We can then attach feedback to those representations, and automatically provide the same feedback for future solutions that normalise to the same representation. You may also like to create an Analyzer, which automatically provides feedback based on heursitics provided by AST matching. You can learn more about Representers and Analysers in our [automated analysis repository](https://github.com/exercism/automated-analysis).
 
 ## Getting help
 
-Each track has a #maintaining-x channel on Slack. We recommend using that to chat amongst yourselves.
+Each track has a #maintaining-x) channel on [Slack](https://exercism-team.slack.com. We recommend using that to chat amongst yourselves.
 
-If you need help, the best place to use is the #maintainers channel on Slack. This is a private space where maintainers from all tracks can help each other.
+If you need help, the best place to use is the [#maintainers](https://exercism-team.slack.com/archives/GC3K95MRR) channel on Slack. This is a private space where maintainers from all tracks can help each other.
 
 If you need to work through something more complex, please message @ErikSchierboom on Slack and schedule a time to pair with him.
