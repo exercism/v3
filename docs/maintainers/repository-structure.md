@@ -2,8 +2,6 @@
 
 This repository can be viewed both via GitHub and via the v3 website. This page describes the repository as found on GitHub. It is roughly equivalent to the website, with filenames being titelized.
 
-This repository is the work-in-progress space as we migrate from v2. After launch, it will become a permanent home for information about languages on Exercism, and a space for maintainers to discuss changes that need to occur across tracks.
-
 Things are grouped into several subdirectories:
 
 - **docs:** This directory contains [files explaining v3 and how to contribute][docs].
