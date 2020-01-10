@@ -2,7 +2,7 @@
 
 Welcome to the workspace for Exercism v3's C# track!
 
-The Exercism v3 C# track helps students learn C#. It does this through a series of carefully designed Concept Exercises and Practice Exercises.
+The Exercism v3 C# track helps students learn C#. It does this through a series of carefully designed Concept Exercises and Practice Exercises. This repository contains all those exercises, as well as reference documentation that help explain C# concepts for which no appropriate online document could be found.
 
 ## Contributing
 
