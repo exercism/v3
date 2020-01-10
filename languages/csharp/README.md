@@ -8,7 +8,7 @@ The Exercism v3 C# track helps students learn C#. It does this through a series 
 
 The C# maintainers have written out specs for lots of exercises that need writing. The biggest way you can help would be to choose an exercise and implement it. You can find the list of exercises [here][github-issues-new-exercise] - each one has detailed instructions on what to do.
 
-If you have less time/energy/whatever, contributing to reference docs would also be helpful. You can find out how to help with reference docs [here][reference].
+If you'd like to work on something else, contributing to reference docs would also be helpful. You can find out how to help with reference docs [here][reference].
 
 ## FAQs
 
