@@ -11,20 +11,25 @@ This directory contains files for both the public, and maintainers, explaining w
 ## [Reference][reference]
 
 A list of reference documents for the various CS concepts, types, paradigms, etc.
+
 - **concepts:** This directory contains files discussing **programming** concepts. These documents should provide guidance, limitations, and links for maintainers who need to expound those ideas on their tracks.
+- **paradigms** This directory contains files discussing programming paradigms. These documents should link to the concepts typically associated with the paradigms.
 - **tooling** This directory contains documents on tooling that is common across languages (either due to a shared ecosystem - such as JS/TS/Clojurescript - or a shared platform - such as .net or JVM).
 - **types:** This directory contains files discussing programming types. These documents should provide guidance, limitations, and links for maintainers who need to expound those ideas on their tracks.
 
 ## [Languages][languages]
 
-Each track has it's own directory containing a README.md that outlines the concepts that are necessary to learn to become fluent in those languages. Each language has a config.json and the following subdirectories:
-- **transitions:** Contains a file for each pair of languages, where someone with a background in X learns new language Y. These should explain the concepts that needed to be remapped/learnt. The files in this directory initially aim to help inform us about both the language-agnostic and language-specific files, but will hopefully also in the long-run provide custom pathways for people learning languages.
-- **reference:** Files containing information that the implementer might find useful. These may be files on language-specific elements of programming concepts or notes on the idiomatic way to use tooling. For now, maintainers are encouraged to organise this directory however they feel best, and we may formalise a structure later.
+Each track has it's own directory containing a README.md that outlines the concepts that are necessary to learn to become fluent in those languages. Each language has a `config.json` file and the following subdirectories:
+
+- **config.json** The WIP config.json for a track, with the practice exercises removed to avoid noise.
+- **docs:** This directory contains files for both the public, and maintainers, describing the C# v3 track and how to contribute.
 - **exercises:** The WIP exercises for that language.
   - **.docs:** documentation shared across all exercises for that language.
   - **concept:** The WIP concept exercises for that language.
   - **practice:** The WIP practice exercises for that language.
-- **config.json** The WIP config.json for a track, with the practice exercises removed to avoid noise.
+- **README.md:** The track's README, which should contain a short description of the goal of the repository as well as the status of the track's v3 transition.
+- **reference:** Files that help maintainers develop the track. These could be reference documents that help explain track-specific concepts for which no appropriate online document could be found, files on language-specific elements of programming concepts, or something else. Maintainers are free to organise this directory in the way they feel it best contributes to developing their track.
+- **transitions:** Contains a file for each pair of languages, where someone with a background in X learns new language Y. These should explain the concepts that needed to be remapped/learnt. The files in this directory initially aim to help inform us about both the language-agnostic and language-specific files, but will hopefully also in the long-run provide custom pathways for people learning languages.
 
 ## GitHub
 
@@ -46,7 +51,8 @@ Each language also has its own label:
 You can combine labels to find the issues you'd like, e.g. to [list all the issues for the C# for which help is wanted][github-issues-csharp-status-help-wanted].
 
 [docs]: ./README.md
-[languages]: ../languages/README.md
+[languages]: ../../languages/README.md
+[reference]: ../../reference/README.md
 [github-issues]: https://github.com/exercism/v3/issues
 [github-issues-type-new-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-exercise
 [github-issues-type-improve-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-exercise
