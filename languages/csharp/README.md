@@ -16,7 +16,9 @@ This is the current state of the C# track:
 - [ ] 20 Concept Exercises specified
 - [ ] 20 Concept Exercises implemented
 - [ ] Updated config.json
-- [ ] Representer built
+- [x] Representer built
 - [ ] Representer deployed
-- [ ] Test Runner built
-- [ ] Test Runner deployed
+- [x] Test Runner built
+- [x] Test Runner deployed
+- [x] Analyzer built
+- [x] Analyzer deployed
