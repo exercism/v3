@@ -18,11 +18,12 @@ We are busy working away on the product and development work to add all this fun
 - [F#](https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Ffsharp)
 - ...
 
+**If you are a Track Maintainer, please [start here](./docs/maintainers/README.md).**
+
 ## More information
 
-- If you would like to know more about the changes happening in v3, read [The features of v3](./docs/features-of-v3.md).
-- If you would like to understand more about the rational behind our design decisions for v3, read [Rationale for v3](./docs/rationale-for-v3.md).
-- If you are a maintainer, please [start here](./docs/maintainers/README.md).
+- [The features of v3](./docs/features-of-v3.md): A deeper dive into the changes we're making to v3.
+- [Rationale for v3](./docs/rationale-for-v3.md). An explanation about the rational behind some of our our design decisions for v3.
 
 ### FAQs
 
