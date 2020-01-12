@@ -21,13 +21,13 @@ A list of reference documents for the various CS concepts, types, paradigms, etc
 
 Each track has it's own directory containing a README.md that outlines the concepts that are necessary to learn to become fluent in those languages. Each language has a `config.json` file and the following subdirectories:
 
-- **config.json** The WIP config.json for a track, with the practice exercises removed to avoid noise.
-- **docs:** This directory contains files for both the public, and maintainers, describing the C# v3 track and how to contribute.
-- **exercises:** The WIP exercises for that language.
-  - **.docs:** documentation shared across all exercises for that language.
-  - **concept:** The WIP concept exercises for that language.
-  - **practice:** The WIP practice exercises for that language.
-- **README.md:** The track's README, which should contain a short description of the goal of the repository as well as the status of the track's v3 transition.
+- **config.json** The updated config.json for a track, with the practice exercises removed to avoid noise.
+- **docs:** This directory contains files for both the public, and maintainers, describing the C# v3 track and how to contribute. It is envisioned that these documents will be linked to from issues and discussions to provide canonical answers or guidance.
+- **exercises:** The exercises for that language.
+  - **.docs:** Exercise documentation shared across all exercises for that language.
+  - **concept:** The Concept Exercises for that language.
+  - **practice:** The Practice Exercises for that language.
+- **README.md:** The track's README, which should contain a short description of the goal of the repository as well as the status of the track's v3 transition. A template is provided during the bootstrapping process.
 - **reference:** Files that help maintainers develop the track. These could be reference documents that help explain track-specific concepts for which no appropriate online document could be found, files on language-specific elements of programming concepts, or something else. Maintainers are free to organise this directory in the way they feel it best contributes to developing their track.
 - **transitions:** Contains a file for each pair of languages, where someone with a background in X learns new language Y. These should explain the concepts that needed to be remapped/learnt. The files in this directory initially aim to help inform us about both the language-agnostic and language-specific files, but will hopefully also in the long-run provide custom pathways for people learning languages.
 
