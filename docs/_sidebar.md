@@ -1,0 +1,16 @@
+- [Introduction](/)
+- [Docs](README.md)
+  - [The features of v3](features-of-v3.md): A in-depth look at the changes coming to Exercism in v3
+  - [Rationale for v3](rationale-for-v3.md): An article exploring the rational behind our design decisions with v3.
+  - [What are concept exercise are and how they are structured?](concept-exercises.md)
+  - [How is this repository structured?](repository-structure.md)
+  - Maintainers
+    - [How to get started?](maintainers-how-to-get-started.md)
+    - [How to write a track readme](maintainers-track-readme.md)
+    - [How to choose and define concepts](maintainers-concepts.md)
+- [Languages](/languages/README.md)
+- Reference
+  - [Concepts](/reference/concepts/README.md)
+  - [Paradigms](/reference/paradigms/README.md)
+  - [Tooling](/reference/tooling/README.md)
+  - [Types](/reference/types/README.md)
