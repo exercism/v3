@@ -27,8 +27,10 @@ Before launch, we need all of the following parts build:
 - [ ] [Updated `config.json`](https://github.com/iHiD/v3/blob/master/docs/maintainers/README.md#migrating-your-configjson-files)
   - [ ] Added version key
   - [ ] Added online editor settings
+    - [ ] Added `indent_style`
+    - [ ] Added `indent_size`
   - [ ] Added Concept Exercises
-  - [ ] Added concepts for all Practice Exercises
+  - [ ] Added Concepts for all Practice Exercises
 
 ### Representer
 
