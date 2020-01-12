@@ -25,7 +25,7 @@ We recommend choosing a Concept that involves working with basic types, like str
 
 ## Migrating your config.json files
 
-For v3, the existing `config.json` files will need to be updated using the following steps:
+For v3, the existing `config.json` files will need to be updated. You can use the [C# config.json](../../languages/csharp/config.json) for reference.
 
 1. Add a version property:
 
@@ -33,18 +33,25 @@ For v3, the existing `config.json` files will need to be updated using the follo
 "version": 3
 ```
 
-2. Convert the `"exercises"` array to an object with two properties:
+2. Add online editor settings:
+
+TODO: Write up something about https://github.com/exercism/ruby/blob/master/config.json#L7
+
+3. Convert the `"exercises"` array to an object with two properties:
 
 ```json
 "exercises": {
-    "concept": [],
-    "practice": []
+  "concept": [],
+  "practice": []
 }
 ```
 
+4. Added concepts for all Practice Exercises
+
 The existing exercises are temporarily removed from the `config.json` file. They will return as practice exercises once the concept exercises have been added.
 
-You can use the [C# config.json](../../languages/csharp/config.json) for reference.
+TODO: Discuss more about what needs to be done
+
 
 ## Tooling
 
@@ -61,7 +68,3 @@ Each track has a #maintaining-x channel on [Slack](https://exercism-team.slack.c
 If you need help, the best place to use is the [#maintainers](https://exercism-team.slack.com/archives/GC3K95MRR) channel on Slack. This is a private space where maintainers from all tracks can help each other.
 
 If you need to work through something more complex, please message @ErikSchierboom on Slack and schedule a time to pair with him.
-
-```
-
-```
