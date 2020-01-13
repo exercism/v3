@@ -19,13 +19,13 @@ Before we publicise requesting contribution for this language, the following ste
 
 ## Readiness for Launch
 
-Before launch, we need all of the following parts build:
+Before launch, we need all of the following parts built:
 
 ### Track Structure
 
 - [ ] Implemented 20+ Concept Exercises
 - [ ] [Updated `config.json`](https://github.com/iHiD/v3/blob/master/docs/maintainers/README.md#migrating-your-configjson-files)
-  - [ ] Added version key
+  - [x] Added version key
   - [ ] Added online editor settings
     - [ ] Added `indent_style`
     - [ ] Added `indent_size`
@@ -38,6 +38,7 @@ Before launch, we need all of the following parts build:
 - [ ] Representer deployed
 
 ### Test Runner
+
 - [x] Test Runner built
 - [x] Test Runner deployed
 
@@ -46,6 +47,6 @@ Before launch, we need all of the following parts build:
 These extra steps will make your track better, but are optional.
 
 ### Analyzer
+
 - [x] Analyzer built
 - [x] Analyzer deployed
-
