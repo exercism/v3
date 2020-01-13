@@ -73,11 +73,11 @@ As this is an introductory exercise, we should take care not to link to very adv
 
 ## Representer
 
-This exercise does not require any specific representation logic to be added to the [representer][docs-representer].
+This exercise does not require any specific representation logic to be added to the [representer][representer].
 
 ## Analyzer
 
-This exercise could benefit from having an [analyzer][docs-analyzer] that can comment on:
+This exercise could benefit from having an [analyzer][analyzer] that can comment on:
 
 - Difference between `for` vs `foreach` loops.
 
@@ -92,8 +92,6 @@ If you have any questions while implementing the exercise, please post the quest
 [exercises-concept-strings]: ./languages/csharp/concept-exercices/strings
 [exercises-concept-dates]: ./languages/csharp/concept-exercices/dates
 [docs-concept-exercises]: ./languages/csharp/docs/concept-exercises.md
-[docs-analyzer]: ./languages/csharp/docs/analyzer.md
-[docs-representer]: ./languages/csharp/docs/representer.md
 [docs-how-to-implement-a-concept-exercise]: ./languages/csharp/docs/how-to-implement-a-concept-exercise.md
 [docs.microsoft.com-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/
 [docs.microsoft.com-collections]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections
@@ -102,3 +100,5 @@ If you have any questions while implementing the exercise, please post the quest
 [docs.microsoft.com-implicitly-typed-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/implicitly-typed-arrays
 [general-docs-types-array]: ./types/array.md
 [general-docs-types-collection]: ./types/collection.md
+[analyzer]: https://github.com/exercism/csharp-analyzer
+[representer]: https://github.com/exercism/csharp-representer
