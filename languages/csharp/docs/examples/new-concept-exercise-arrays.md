@@ -111,8 +111,6 @@ Check out the [`floating-point-numbers exercise`][csharp-docs-concept-exercises-
 - `.docs/hints.md`: if the user gets stuck, we will allow them to click a button requesting a hint, which shows this file. We will softly discourage them using it. The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any student. An example file can be found [here][csharp-docs-hints.md].
 - `.docs/after.md`: once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught. An example file can be found [here][csharp-docs-after.md].
 
-These files are also all described in the [V3 readme][docs-v3].
-
 ### Step 3: adding other files
 
 - `.meta/config.json`: metadata for the exercise. This includes defining the test file and the solution files, as well as a list of all the tests and the method they are calling.
