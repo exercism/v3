@@ -62,7 +62,7 @@ If you have any questions regarding implementing this exercise, please post them
 [docs-reference]: ./reference.md
 [docs-exercises-concept]: ../exercises/concept/README.md
 [docs-general-concept-exercises]: ../../../docs/concept-exercises.md
-[docs-general-how-to-implement-a-concept-exercise]: ../../../docs/how-to-implement-a-concept-exercise.md
+[docs-general-how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
 [concept-exercise-strings]: ../exercises/concept/strings
 [concept-exercise-dates]: ../exercises/concept/dates
 [concept-exercise-floating-point-numbers]: ../exercises/concept/numbers-floating-point
