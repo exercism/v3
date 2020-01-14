@@ -1,6 +1,6 @@
 # Maintainers - How to get started
 
-Firstly, thank you for your willingness to help with Exercism. We believe that v3 will be a huge step forward in our aim to offer a comprehesive free learning website to anyone wanting to develop their programming skills, and we're really excited to see it play out.
+Firstly, thank you for your willingness to help with Exercism. We believe that v3 will be a huge step forward in our aim to offer a comprehensive, free learning website to anyone wanting to develop their programming skills, and we're really excited to see it play out.
 
 **Before doing anything else, please create an issue in this repository asking for your track to be bootstrapped. You can then spend some time learning about the v3 process while we set things up for you.**
 
