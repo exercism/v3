@@ -9,23 +9,23 @@ This area will contain everything needed to launch the C# track, including:
 - Reference documentation that help explain C# concepts for which no appropriate online document could be found.
 - C#-specific documentation for contributors.
 
-## Prepartion Status
+## Preparation Status
 
-Before we publicise requesting contribution for this language, the following steps should be done.
+Before we publicize requesting contribution for this language, the following steps should be done.
 
-- [ ] [Listed out concepts](../../docs/determining-concepts.md)
+- [ ] [Listed out concepts](../../docs/maintainers/determining-concepts.md)
 - [ ] [Added GitHub issues for 20 Concept Exercises](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
 - [ ] Added documentation for contributors
 
 ## Readiness for Launch
 
-Before launch, we need all of the following parts built:
+Before launch, we need all of the following parts to be completed:
 
 ### Track Structure
 
 - [ ] Implemented 20+ Concept Exercises
-- [ ] [Updated `config.json`](https://github.com/iHiD/v3/blob/master/docs/maintainers/README.md#migrating-your-configjson-files)
-  - [x] Added version key
+- [ ] [Updated `config.json`](../docs/maintainers/README.md#migrating-your-configjson-files)
+  - [ ] Added `version` key
   - [ ] Added online editor settings
     - [ ] Added `indent_style`
     - [ ] Added `indent_size`
