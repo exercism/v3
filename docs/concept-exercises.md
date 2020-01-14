@@ -33,7 +33,7 @@ Exercises are unlocked based on concepts taught and learnt. Each Concept Exercis
 
 Concept Exercises do not share a common base like Practice Exercises do in the `problem-specifications` repository. Instead they "share" concepts that they are teaching with other languages. This repository aims to list all of those concepts and provide information about the concept that maintainers can use as the basis for their own languages. Each concept should also link to the implementations in different languages. Maintainers are free to copy and paste from each others repositories, and then edit to make things specific to their tracks, but such copy-and-pastes should be considered hard-forks.
 
-For example, we might define a concept of "Classes" and provide a short introduction that explains what a class is, how it fits with objects, state, etc. We might include a link to a good article introducing OOP and classes. Individual tracks implementing an exercise on Classes can then include this introductory text, making any additions that explain their language-specific semantics and syntax.
+For example, we might define a concept of "Classes" and provide a short introduction that explains what a class is, how it fits with objects, state, etc. We might include a link to a good article introducing OOP and classes. Individual tracks implementing an exercise on Classes can then include this introductory text, making any changes or additions that explain their language-specific semantics and syntax.
 
 ## Exercise Structure
 
