@@ -61,7 +61,7 @@ As this is an introductory exercise, we should take care not to link to very adv
 
 ## Concepts
 
-This concepts exercise's concepts are:
+This Concepts Exercise's Concepts are:
 
 - `basic-collections`
 - `basic-arrays`
