@@ -1,4 +1,4 @@
-# New C# Concept Exercise - arrays
+# [C#] Add new Concept Exercise - arrays
 
 This issue describes a new `arrays` exercise that should be added to the [v3 C# track][csharp-docs].
 
