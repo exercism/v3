@@ -60,9 +60,11 @@ This concepts exercise's concepts are:
 
 ## Prequisites
 
-As an array is a collection type, it holds zero or more instances of another type. That means it _has_ to depend on one or more other types. The most likely candidates are the `string` and `int` data types, as these are both interesting enough and easy to work with.
+As an array is a collection type, it holds zero or more instances of another type. That means it _has_ to depend on one or more other types. In this exercise, we'll use the `int` data type for that, which is both interesting enough and easy to work with. The `int` data type is introduced in the `basic-numbers` concept.
 
-The `string` and `int` data types are introduced through the `basic-strings` and `basic-numbers` concepts, which means that one of these concepts would become a prerequisite.
+This concept exercise's prerequisites concepts are:
+
+- # `basic-numbers`
 
 ## Implementing
 
@@ -100,13 +102,14 @@ These files are specific to the C# track:
 - `Arrays.cs`. the stub implementation file, which is the starting point for students to work on the exercise.
 - `.meta/Example.cs`: an example implementation that passes all the tests.
 
+Check out the [`floating-point-numbers exercise`][csharp-docs-concept-exercises-floating-point-numbers] for an example on what these files should look like.
+
 ### Step 2: adding documentation files
 
-- `.docs/introduction.md`: an introduction to the concept. It should be explicit about what the exercise teaches and maybe provide a brief introduction to the concepts, but not give away so much that the user doesn't have to do any work to solve the exercise.
-- `.docs/instructions.md`: instructions for the exercise. It should explicitly explain what the user needs to do (define a method with the signature `X(...)` that takes an A and returns a Z), and provide at least one example usage of that function. If there are multiple tasks within the exercise, it should provide an example of each.
-- `.docs/hints.md`: if the user gets stuck, we will allow them to click a button requesting a hint, which shows this file. We will softly discourage them using it. The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any
-- `.docs/after.md`: once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught.
-- `.docs/debug.md`: explains how a user that is coding in the browser can still do "debugging."
+- `.docs/introduction.md`: an introduction to the concept. It should be explicit about what the exercise teaches and maybe provide a brief introduction to the concepts, but not give away so much that the user doesn't have to do any work to solve the exercise. An example file can be found [here][csharp-docs-introduction.md]
+- `.docs/instructions.md`: instructions for the exercise. It should explicitly explain what the user needs to do (define a method with the signature `X(...)` that takes an A and returns a Z), and provide at least one example usage of that function. If there are multiple tasks within the exercise, it should provide an example of each. An example file can be found [here][csharp-docs-introduction.md].
+- `.docs/hints.md`: if the user gets stuck, we will allow them to click a button requesting a hint, which shows this file. We will softly discourage them using it. The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any student. An example file can be found [here][csharp-docs-hints.md].
+- `.docs/after.md`: once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught. An example file can be found [here][csharp-docs-after.md].
 
 These files are also all described in the [V3 readme][docs-v3].
 
@@ -114,9 +117,20 @@ These files are also all described in the [V3 readme][docs-v3].
 
 - `.meta/config.json`: metadata for the exercise. This includes defining the test file and the solution files, as well as a list of all the tests and the method they are calling.
 
+See the floating-point-numbers exercise's [config.json file][csharp-meta-config.json] for an example.
+
 ### Step 4: updating files
 
-- `languages/csharp/config.json`: a new entry should be added to the `"concept"` array, which is part of the `"exercises"` property.
+- `languages/csharp/config.json`: a new entry should be added to the `"concept"` array, which is part of the `"exercises"` property:
+
+```json
+{
+  "slug": "arrays",
+  "uuid": "b6c532c9-1e89-4fbf-8f08-27f5befb5bb8",
+  "concepts": ["basic-collections", "basic-arrays"],
+  "prerequisites": ["basic-numbers"]
+}
+```
 
 ### Step 5: updating issues
 
@@ -144,6 +158,20 @@ This exercise could benefit from having an [analyzer][csharp-analyzer] that can 
 [docs-v3]: ./README.md
 [docs-v3-types-array]: ./types/array.md
 [docs-v3-types-collection]: ./types/collection.md
+[csharp-docs]: ./languages/csharp/README.md
+[csharp-docs-types-array]: ./languages/csharp/types/array.md
+[csharp-docs-concept-exercises-strings]: ./languages/csharp/concept-exercices/strings
+[csharp-docs-concept-exercises-dates]: ./languages/csharp/concept-exercices/dates
+[csharp-docs-concept-exercises-floating-point-numbers]: ./languages/csharp/concept-exercices/numbers-floating-point
+[csharp-analyzer]: https://github.com/exercism/csharp-analyzer
+[csharp-representer]: https://github.com/exercism/csharp-representer
+[csharp-docs-cli.md]: ../languages/csharp/exercises/.docs/cli.md
+[csharp-docs-debug.md]: ../languages/csharp/exercises/.docs/debug.md
+[csharp-docs-after.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/after.md
+[csharp-docs-hints.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/hints.md
+[csharp-docs-introduction.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/introduction.md
+[csharp-docs-instructions.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/instructions.md
+[csharp-meta-config.json]: ../languages/csharp/concept-exercises/numbers-floating-point/.meta/config.json
 [docs-v3-csharp]: ./languages/csharp/README.md
 [docs-v3-csharp-types-array]: ./languages/csharp/types/array.md
 [docs-v3-csharp-concept-exercises-strings]: ./languages/csharp/concept-exercices/strings
