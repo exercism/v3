@@ -27,5 +27,5 @@ We are busy working away on the product and development work to add all this fun
 
 ### FAQs
 
-- [What are concept exercise are and how they are structured?](./docs/concept-exercises.md)
+- [What are concept exercise and how they are structured?](./docs/concept-exercises.md)
 - [How is this repository structured?](./docs/repository-structure.md)
