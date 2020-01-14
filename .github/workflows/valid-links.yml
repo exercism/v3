@@ -10,8 +10,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: '10'
+          node-version: "10"
       - name: Install markdown-link-check
         run: npm install -g markdown-link-check
       - name: Verify links
-        run: find . -name \*.md ! -iname \*_sidebar.md -print0 | xargs -0 -n1 markdown-link-check -q
+        run: find . -name \*.md ! -iname _sidebar.md ! -ipath \*/ISSUE_TEMPLATE/\*.md -print0 | xargs -0 -n1 markdown-link-check -q
