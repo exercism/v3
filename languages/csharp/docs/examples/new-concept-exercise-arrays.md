@@ -175,8 +175,8 @@ This exercise could benefit from having an [analyzer][csharp-analyzer] that can 
 [csharp-representer]: https://github.com/exercism/csharp-representer
 [csharp-docs-cli.md]: ../languages/csharp/exercises/.docs/cli.md
 [csharp-docs-debug.md]: ../languages/csharp/exercises/.docs/debug.md
-[csharp-docs-after.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/after.md
-[csharp-docs-hints.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/hints.md
-[csharp-docs-introduction.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/introduction.md
-[csharp-docs-instructions.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/instructions.md
-[csharp-meta-config.json]: ../languages/csharp/concept-exercises/numbers-floating-point/.meta/config.json
+[csharp-docs-after.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/after.md
+[csharp-docs-hints.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/hints.md
+[csharp-docs-introduction.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
+[csharp-docs-instructions.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/instructions.md
+[csharp-meta-config.json]: ../languages/csharp/exercises/concept/numbers-floating-point/.meta/config.json

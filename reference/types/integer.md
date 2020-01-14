@@ -16,9 +16,14 @@ Various programming languages _limit_ the range of values a single integer can h
 - [Long][type-long]
 - [Word][type-word]
 
+# Implementations
+
+- [C#][implementation-csharp]
+
 [type-bit]: ./bit.md
 [type-byte]: ./byte.md
 [type-char]: ./char.md
 [type-long]: ./long.md
 [type-short]: ./short.md
 [type-word]: ./word.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md

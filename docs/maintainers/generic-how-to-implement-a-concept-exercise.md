@@ -98,4 +98,4 @@ When implementing an exericse, it can be very useful to look at the exercises th
 If you have any questions regarding implementing this exercise, please post them as comments in the exercise's GitHub issue.
 
 [docs-concept-exercises]: ./concept-exercises.md
-[reference]: ./reference.md
+[reference]: ../reference/concepts/README.md

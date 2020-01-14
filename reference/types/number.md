@@ -7,8 +7,12 @@ An number is a generic numeric type that often encompasses multiple more specifi
 - [JavaScript][language-javascript]'s `number` is a [double-precision 64 bit floating point format (IEEE 754)][wiki-number].
 - [Kotlin][language-kotlin] has the following types to represent numbers: [`Byte`][type-byte], [`Short`][type-short], [`Int`][type-integer] and [`Long`][type-long], both [signed][type-signed] and [unsigned][type-unsigned]. These types can be inferred dynamically, or declared explicitly. Additionally it supports [`Float`][type-single] and [`Double`][type-double] for floating point numbers.
 
-[language-javascript]: ../languages/javascript/README.md
-[language-kotlin]: ../languages/kotlin/README.md
+# Implementations
+
+- [C#][implementation-csharp]
+
+[language-javascript]: ../../languages/javascript/README.md
+[language-kotlin]: ../../languages/kotlin/README.md
 [type-byte]: ./byte.md
 [type-double]: ./double.md
 [type-integer]: ./integer.md
@@ -18,3 +22,4 @@ An number is a generic numeric type that often encompasses multiple more specifi
 [type-single]: ./single.md
 [type-unsigned]: ./unsigned.md
 [wiki-number]: https://en.wikipedia.org/wiki/Double-precision_floating-point_format
+[implementation-csharp]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md

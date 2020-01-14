@@ -10,8 +10,15 @@ Programming languages may name their floating point type to the amount of _preci
 - Quadruple (occupying 128 [bits][type-bit])
 - Octuple (occupying 256 [bits][type-bit])
 
+# Implementations
+
+- [C# (basic)][implementation-csharp-basic]
+- [C# (advanced)][implementation-csharp-advanced]
+
 [type-bit]: ./bit.md
 [type-double]: ./double.md
 [type-half]: ./half.md
 [type-single]: ./single.md
 [wiki-ieee754]: https://en.wikipedia.org/wiki/IEEE_754
+[implementation-csharp-basic]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md
+[implementation-csharp-advanced]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/introduction.md
