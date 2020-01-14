@@ -70,7 +70,7 @@ This Concepts Exercise's Concepts are:
 
 As an array is a collection type, it holds zero or more instances of another type. That means it _has_ to depend on one or more other types. In this exercise, we'll use the `int` data type for that, which is both interesting enough and easy to work with. The `int` data type is introduced in the `basic-numbers` concept.
 
-This concept exercise's prerequisites concepts are:
+This Concept Exercise's prerequisites Concepts are:
 
 - `basic-numbers`
 
