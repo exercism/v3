@@ -1,4 +1,29 @@
+<<<<<<< HEAD
 _Note: All subconcepts should be split out into separate files under the concepts directory and hyperlinked._
+=======
+# F&#35;
+
+Welcome to the workspace for Exercism v3's F# track!
+
+This area will contain everything needed to launch the F# track, including:
+
+- The new exercises and `config.json` file.
+- Reference documentation that help explain F# concepts for which no appropriate online document could be found.
+- F#-specific documentation for contributors.
+
+## Preparation Status
+
+Before we publicize requesting contribution for this language, the following steps should be done.
+
+- [ ] Have a kick-off discussion between track maintainers
+- [ ] [Write a Concept Exercise implementation guide](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
+- [ ] [List out key Concepts for your language](../../docs/maintainers/determining-concepts.md)
+- [ ] [Add GitHub issues for 20 Concept Exercises](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
+
+## Readiness for Launch
+
+Before launch, we need all of the following parts to be completed:
+>>>>>>> c14020e... Normalize ending of sentence
 
 # F&#35;
 

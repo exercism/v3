@@ -12,7 +12,7 @@ This area will contain everything needed to launch the Elixir track, including:
 
 Before we publicize requesting contribution for this language, the following steps should be done.
 
-- [ ] Have a kick-off discussion between track maintainers.
+- [ ] Have a kick-off discussion between track maintainers
 - [ ] [Write a Concept Exercise implementation guide](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
 - [ ] [List out key Concepts for your language](../../docs/maintainers/determining-concepts.md)
 - [ ] [Add GitHub issues for 20 Concept Exercises](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
