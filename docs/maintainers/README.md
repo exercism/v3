@@ -4,7 +4,18 @@ Firstly, thank you for your willingness to help with Exercism. We believe that v
 
 **Before doing anything else, please create an issue in this repository asking for your track to be bootstrapped. You can then spend some time learning about the v3 process while we set things up for you.**
 
-## Concept Exercises
+## Getting your track into shape
+
+There are three stages to getting your track ready:
+1) Understanding what needs doing
+2) Preparing your track to accept contributions
+3) Managing incoming contributions
+
+We have tried to provide comprehensive documentation on what needs doing, starting with this file, and linking out. If anything can be made clearer, we would really appreciate PRs to these docs, so that we can help each other have the most seamless experience.
+
+Once your track has been "boostrapped" you'll find a `languages/$LANG/README.md` file with a checklist of things to do. We recommend working through each one in turn. If your track has multiple maintainers we recommend scheduling a Slack conversation as a kick-off meeting and dividing up work and responsibilities. All maintainers will have been invited to Slack. If anyone isn't responding on Slack, please reach out to @ErikSchierboom on Slack, who can email them.
+
+## New track structures
 
 The key thing to understand about v3 is that we are making a strong distinction between Concept Exercises and Practice Exercises. All existing exercises will become Practice Exericses - exercises where students can practice the ideas they are learning, and discuss them with a mentor. The new Concept Exercises will be written from scratch, each with the aim of teaching one or more programming concepts that are necessary to become fluent in a given language.
 
