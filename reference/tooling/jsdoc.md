@@ -10,8 +10,8 @@ JSDoc is a markup language used to annotate [JavaScript][language-javascript] so
 - [Visual Studio][web-vs-studio], [WebStorm][web-webstorm] and many other Integrated development environments or Text Editors offer Code Completion and other assistance based on JSDoc comments.
 - Open source [Atom editor][web-atom] supports JSDoc via the [atom-easy-jsdoc][web-atom-plugin] plugin.
 
-[language-javascript]: ../languages/javascript/README.md
-[language-typescript]: ../languages/typescript/README.md
+[language-javascript]: ../../languages/javascript/README.md
+[language-typescript]: ../../languages/typescript/README.md
 [web-atom]: https://atom.io/
 [web-atom-plugin]: https://atom.io/packages/atom-easy-jsdoc
 [web-closure-compiler]: https://developers.google.com/closure/

@@ -58,8 +58,8 @@ You can combine labels to find the issues you'd like, e.g. to [list all the issu
 [github-issues-type-improve-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-exercise
 [github-issues-type-new-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-reference
 [github-issues-type-improve-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-reference
-[github-issues-status-help-wanted]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%status%2Fhelp-wanted
-[github-issues-status-in-progress]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%status%2Fin-progress
+[github-issues-status-help-wanted]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted
+[github-issues-status-in-progress]: https://github.com/exercism/v3/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fin-progress
 [github-issues-track-go]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fgo
 [github-issues-track-ruby]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fruby
 [github-issues-csharp-status-help-wanted]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcsharp+

@@ -34,7 +34,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 
 ### Platform-specific
 
-- [Assemblies](../../../referencetooling/dotnet-assemblies.md)
+- [Assemblies](../../../reference/tooling/dotnet-assemblies.md)
 
 ### Memory management
 

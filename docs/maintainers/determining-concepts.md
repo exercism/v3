@@ -1,6 +1,6 @@
 # Choosing and defining Concepts
 
-It is worth reading the start of the [Concept Exercises](concept-exercises.md) file to familiarise yourself with Concept Exercises and why writing out concepts is important.
+It is worth reading the start of the [Concept Exercises](../concept-exercises.md) file to familiarise yourself with Concept Exercises and why writing out concepts is important.
 
 To know which Concept Exercises should exist, a list of the language's concepts should first be compiled. There are various resources to use when compiling this list: books, (official) documentation, your own experiences and the [concepts listed in this repository](../../reference/concepts/README.md).
 
