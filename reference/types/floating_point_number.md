@@ -21,4 +21,4 @@ Programming languages may name their floating point type to the amount of _preci
 [type-single]: ./single.md
 [wiki-ieee754]: https://en.wikipedia.org/wiki/IEEE_754
 [implementation-csharp-basic]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md
-[implementation-csharp-advanced]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/introduction.md
+[implementation-csharp-advanced]: ../../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md

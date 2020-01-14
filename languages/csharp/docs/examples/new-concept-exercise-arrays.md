@@ -164,10 +164,9 @@ This exercise could benefit from having an [analyzer][csharp-analyzer] that can 
 [docs.microsoft.com-single-dimensional-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/single-dimensional-arrays
 [docs.microsoft.com-implicitly-typed-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/implicitly-typed-arrays
 [docs-v3]: ../../README.md
-[docs-v3-types-array]: ../../../../refererence/types/array.md
-[docs-v3-types-collection]: ../../../../refererence/types/collection.md
+[docs-v3-types-array]: ../../../../reference/types/array.md
+[docs-v3-types-collection]: ../../../../reference/types/collection.md
 [csharp-docs]: ../../reference/README.md
-[csharp-docs-types-array]: ../../../../reference/types/array.md
 [csharp-docs-concept-exercises-strings]: ../../exercises/concept/strings
 [csharp-docs-concept-exercises-dates]: ../../exercises/concept/dates
 [csharp-docs-concept-exercises-floating-point-numbers]: ../../exercises/concept/numbers-floating-point
