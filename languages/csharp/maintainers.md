@@ -4,7 +4,7 @@ These awesome people help maintain the C# track.
 
 ## Senior Maintainers
 
-- ErikSchierboom (Slack: `@ErikSchierboom`, GitHub: `@ErikSchierboom`)
+- Erik Schierboom (Slack: `@ErikSchierboom`, GitHub: `@ErikSchierboom`)
 - Rob Keim (Slack: `@Rob Keim`, GitHub: `@robkeim`)
 
 ## Contributing Maintainers
