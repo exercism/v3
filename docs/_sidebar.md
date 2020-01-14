@@ -8,6 +8,7 @@
     - [How to get started?](maintainers-how-to-get-started.md)
     - [How to write a track readme](maintainers-track-readme.md)
     - [How to choose and define concepts](maintainers-concepts.md)
+    - [Migrating your config.json files](migrating-your-config-json-files.md)
 - [Languages](/languages/README.md)
 - Reference
   - [Concepts](/reference/concepts/README.md)

@@ -24,7 +24,7 @@ Before launch, we need all of the following parts to be completed:
 ### Track Structure
 
 - [ ] Implemented 20+ Concept Exercises
-- [ ] [Updated `config.json`](../docs/maintainers/README.md#migrating-your-configjson-files)
+- [ ] [Updated `config.json`](../docs/maintainers/migrating-your-config-json-files)
   - [ ] Added `version` key
   - [ ] Added online editor settings
     - [ ] Added `indent_style`
