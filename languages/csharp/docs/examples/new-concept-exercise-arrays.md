@@ -113,9 +113,7 @@ Check out the [`floating-point-numbers exercise`][csharp-docs-concept-exercises-
 
 ### Step 3: adding other files
 
-- `.meta/config.json`: metadata for the exercise. This includes defining the test file and the solution files, as well as a list of all the tests and the method they are calling.
-
-See the floating-point-numbers exercise's [config.json file][csharp-meta-config.json] for an example.
+- `.meta/config.json`: metadata for the exercise. This includes defining the test file and the solution files, as well as a list of all the tests and the method they are calling. An example file can be found [here][csharp-meta-config.json].
 
 ### Step 4: updating files
 
