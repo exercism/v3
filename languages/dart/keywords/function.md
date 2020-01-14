@@ -20,6 +20,5 @@ function greet(name) {
 }
 ```
 
-[concept-scope]: ../../../concepts/scope.md
-[concept-expressions]: ../../../concepts/expressions.md
-[concept-functions]: ../../../concepts/functions.md
+[concept-expressions]: ../../../reference/concepts/expressions.md
+[concept-functions]: ../../../reference/concepts/functions.md

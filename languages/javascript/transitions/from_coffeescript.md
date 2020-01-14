@@ -52,11 +52,11 @@ JavaScript does not have to be compiled, whereas [CoffeeScript][language-coffees
 [coffeescript-keyword-by]: ../../coffeescript/keywords/by.md
 [coffeescript-keyword-until]: ../../coffeescript/keywords/until.md
 [coffeescript-keyword-when]: ../../coffeescript/keywords/when.md
-[concept-destructuring]: ../../../concepts/destructuring.md
-[concept-destructuring-assignment]: ../../../concepts/destructuring_assignment.md
-[concept-list-comprehension]: ../../../concepts/list_comprehension.md
-[concept-rest-parameters]: ../../../concepts/rest_parameters.md
-[concept-variable-shadowing]: ../../../concepts/variable_shadowing.md
+[concept-destructuring]: ../../../reference/concepts/destructuring.md
+[concept-destructuring-assignment]: ../../../reference/concepts/destructuring_assignment.md
+[concept-list-comprehension]: ../../../reference/concepts/list_comprehension.md
+[concept-rest-parameters]: ../../../reference/concepts/rest_parameters.md
+[concept-variable-shadowing]: ../../../reference/concepts/variable_shadowing.md
 [javascript-concept-arrow-function-expression]: ../../../languages/javascript/info/arrow_function_expression.md
 [javascript-concept-strict-mode]: ../../../languages/javascript/info/strict_mode.md
 [javascript-keyword-const]: ../keywords/const.md
@@ -68,4 +68,4 @@ JavaScript does not have to be compiled, whereas [CoffeeScript][language-coffees
 [language-haskell]: ../../haskell/README.md
 [language-python]: ../../python/README.md
 [language-ruby]: ../../ruby/README.md
-[tool-babel]: ../../../tooling/babel.md
+[tool-babel]: ../../../reference/tooling/babel.md

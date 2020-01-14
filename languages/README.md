@@ -1,7 +1,41 @@
 # Languages
 
-A directory for each programming language.
+## Contributing
 
-Each containing a README.md listing the concepts used in the programming language, and a `transitions` folder listing transitions from one language to another.
+Thanks for wanting to contribute to one of Exercism's language tracks! Contributions are very welcome!
 
-Tracks may include subdirectories for topics that are not covered elsewhere (e.g. keywords)
+To contribute, please select the language you'd like to contribute to:
+
+- [C][c]
+- [CoffeeScript][coffeescript]
+- [C++][cplusplus]
+- [C#][csharp]
+- [Dart][dart]
+- [F#][fsharp]
+- [Go][go]
+- [Haskell][haskell]
+- [Java][java]
+- [JavaScript][javascript]
+- [Julia][julia]
+- [Kotlin][kotlin]
+- [Python][python]
+- [Ruby][ruby]
+- [Typescript][typescript]
+
+[c]: ./c/README.md
+[coffeescript]: ./coffeescript/README.md
+[cplusplus]: ./cplusplus/README.md
+[csharp]: ./csharp/README.md
+[dart]: ./dart/README.md
+[fsharp]: ./fsharp/README.md
+[go]: ./go/README.md
+[haskell]: ./haskell/README.md
+[java]: ./java/README.md
+[javascript]: ./javascript/README.md
+[julia]: ./julia/README.md
+[kotlin]: ./kotlin/README.md
+[python]: ./python/README.md
+[ruby]: ./ruby/README.md
+[typescript]: ./typescript/README.md
+
+If you would like to create a new language track for v3, please [open an issue here](https://github.com/exercism/request-new-language-track).
