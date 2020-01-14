@@ -27,7 +27,7 @@ Concept Exercises must have the following characteristics:
 - They are language-specific, not generic.
 - Stubs/boilerplate are used to avoid the student having to learn/write unnecessary code on exercises.
 
-Concept Exercises are **not** mentored. When a user submits a submission that gets the tests passing for a Concept Exercise, we check for an Analyzer or Representer to give feedback. If none is found, then the solution is approved. This shifts the burden of teaching to the exercise, which must provide a clear pathway to learning the concept that needs learning.
+Concept Exercises are **not** mentored. When a user submits a submission that gets the tests passing for a Concept Exercise, we check for an Analyzer or Representer to give feedback. If none is found, then the solution is approved. This shifts the burden of teaching to the exercise, which must provide a clear pathway to learning the concept that is being taught.
 
 Exercises are unlocked based on concepts taught and learnt. Each Concept Exercise must teach one or more concepts. It may also have prerequisites on Concepts, which means it will not be unlocked until Concept Exercises teaching those prerequisite concepts have been completed.
 
