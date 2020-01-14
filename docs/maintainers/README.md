@@ -35,7 +35,15 @@ For v3, the existing `config.json` files will need to be updated. You can use th
 
 2. Add online editor settings:
 
-TODO: Write up something about https://github.com/exercism/ruby/blob/master/config.json#L7
+```json
+"online_editor": {
+  "indent_style": "space",
+  "indent_size": 2
+}
+```
+
+- `indent_style`: set to `"tab"` or `"space"` to use hard tabs or soft tabs respectively.
+- `indent_size`: a whole number defining the number of columns used for each indentation level and the width of soft tabs (when supported).
 
 3. Convert the `"exercises"` array to an object with two properties:
 
@@ -51,7 +59,6 @@ TODO: Write up something about https://github.com/exercism/ruby/blob/master/conf
 The existing exercises are temporarily removed from the `config.json` file. They will return as practice exercises once the concept exercises have been added.
 
 TODO: Discuss more about what needs to be done
-
 
 ## Tooling
 
