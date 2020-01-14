@@ -1,11 +1,3 @@
----
-name: "[C#] Add new reference document"
-about: Use this template to create an issue to add a new reference document
-title: "[C#] Add new reference document: readonly vs const"
-labels: type/new-reference, status/help-wanted
-assignees: ""
----
-
 # [C#] Add new reference document: readonly vs const
 
 This issue describes how to add a new [C# reference document][reference]: readonly vs const.
@@ -37,5 +29,5 @@ To create the reference, please:
 - Add a link to the reference document in the [reference README][reference].
 
 [stackoverflow.com]: https://stackoverflow.com/questions/755685/static-readonly-vs-const#755693
-[reference]: ../../reference/README.md
+[reference]: https://github.com/exercism/v3/blob/master/languages/csharp/reference/README.md#reference-docs
 [new-document]: https://github.com/exercism/v3/new/master?filename=languages/csharp/reference/readonly-vs-const.md
