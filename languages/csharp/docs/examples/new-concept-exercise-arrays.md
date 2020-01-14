@@ -153,7 +153,7 @@ This exercise could benefit from having an [analyzer][csharp-analyzer] that can 
 [docs.microsoft.com-implicitly-typed-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/implicitly-typed-arrays
 [docs-v3]: https://github.com/exercism/v3/blob/master/docs/concept-exercises.md#exercise-structure
 [docs-v3-types-array]: https://github.com/exercism/v3/blob/master/reference/types/array.md
-[docs-v3-types-collection]: https://github.com/exercism/v3/blob/master/reference/types/collection.md
+[docs-v3-types-collection]: https://github.com/exercism/v3/blob/master/../../reference/types/collection.md
 [csharp-docs]: https://github.com/exercism/v3/blob/master/languages/csharp/README.md
 [csharp-docs-concept-exercises-strings]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/strings
 [csharp-docs-concept-exercises-dates]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/dates
