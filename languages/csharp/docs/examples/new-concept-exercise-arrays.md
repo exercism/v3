@@ -1,11 +1,3 @@
----
-name: "[C#] Add new Concept Exercise: arrays"
-about: Add the arrays Concept Exercise to the C# track
-title: "[C#] Add new Concept Exercise: arrays"
-labels: track/csharp, exercise/concept
-assignees: ""
----
-
 # New C# Concept Exercise - arrays
 
 This issue describes a new `arrays` exercise that should be added to the [v3 C# track][csharp-docs].
@@ -163,20 +155,20 @@ This exercise could benefit from having an [analyzer][csharp-analyzer] that can 
 [docs.microsoft.com-foreach-with-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays
 [docs.microsoft.com-single-dimensional-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/single-dimensional-arrays
 [docs.microsoft.com-implicitly-typed-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/implicitly-typed-arrays
-[docs-v3]: ../blob/master/docs/concept-exercises.md#exercise-structure
-[docs-v3-types-array]: ../blob/master/reference/types/array.md
-[docs-v3-types-collection]: ../blob/master/../../reference/types/collection.md
-[csharp-docs]: ../blob/master/languages/csharp/README.md
-[csharp-docs-concept-exercises-strings]: ../tree/master/languages/csharp/exercises/concept/strings
-[csharp-docs-concept-exercises-dates]: ../tree/master/languages/csharp/exercises/concept/dates
-[csharp-docs-concept-exercises-floating-point-numbers]: ../tree/master/languages/csharp/exercises/concept/numbers-floating-point
+[docs-v3]: https://github.com/exercism/v3/blob/master/docs/concept-exercises.md#exercise-structure
+[docs-v3-types-array]: https://github.com/exercism/v3/blob/master/reference/types/array.md
+[docs-v3-types-collection]: https://github.com/exercism/v3/blob/master/../../reference/types/collection.md
+[csharp-docs]: https://github.com/exercism/v3/blob/master/languages/csharp/README.md
+[csharp-docs-concept-exercises-strings]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/strings
+[csharp-docs-concept-exercises-dates]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/dates
+[csharp-docs-concept-exercises-floating-point-numbers]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/numbers-floating-point
 [csharp-analyzer]: https://github.com/exercism/csharp-analyzer
 [csharp-representer]: https://github.com/exercism/csharp-representer
-[csharp-docs-cli.md]: ../blob/master/languages/csharp/exercises/.docs/cli.md
-[csharp-docs-debug.md]: ../blob/master/languages/csharp/exercises/.docs/debug.md
-[csharp-docs-after.md]: ../blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/after.md
-[csharp-docs-hints.md]: ../blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/hints.md
-[csharp-docs-introduction.md]: ../blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
-[csharp-docs-instructions.md]: ../blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/instructions.md
-[csharp-meta-config.json]: ../blob/master/languages/csharp/exercises/concept/numbers-floating-point/.meta/config.json
-[csharp-docs-concept-exercises]: ../tree/master/languages/csharp/exercises/concept/README.md
+[csharp-docs-cli.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/.docs/cli.md
+[csharp-docs-debug.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/.docs/debug.md
+[csharp-docs-after.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/after.md
+[csharp-docs-hints.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/hints.md
+[csharp-docs-introduction.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
+[csharp-docs-instructions.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/instructions.md
+[csharp-meta-config.json]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.meta/config.json
+[csharp-docs-concept-exercises]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/README.md
