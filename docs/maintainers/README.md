@@ -1,12 +1,12 @@
 # Maintainers - How to get started
 
-Firstly, thank you for your willingness to help with Exercism. We believe that v3 will be a huge step forward in our aim to offer a comprehesive free learning website to anyone wanting to develop their programming skills, and we're really excited to see it play out.
+Firstly, thank you for your willingness to help with Exercism. We believe that v3 will be a huge step forward in our aim to offer a comprehensive, free learning website to anyone wanting to develop their programming skills, and we're really excited to see it play out.
 
 **Before doing anything else, please create an issue in this repository asking for your track to be bootstrapped. You can then spend some time learning about the v3 process while we set things up for you.**
 
 ## Concept Exercises
 
-The key things to understand about v3 is that we are making a strong distinction between Concept Exercises and Practice Exercises. All existing exercises will become Practice Exericses - exercises where students can practice the ideas they are learning, and discuss them with a mentor. The new Concept Exercises will be written from scratch, each with the aim of teaching one or more programming concepts that are necessary to become fluent in a given language.
+The key thing to understand about v3 is that we are making a strong distinction between Concept Exercises and Practice Exercises. All existing exercises will become Practice Exericses - exercises where students can practice the ideas they are learning, and discuss them with a mentor. The new Concept Exercises will be written from scratch, each with the aim of teaching one or more programming concepts that are necessary to become fluent in a given language.
 
 We want to crowd-source the creation of these Concept Exercises, providing clear guidelines and instructions for contributors. We are doing this by asking maintainers to create a GitHub Issue for each Concept Exercise.
 
@@ -64,7 +64,7 @@ TODO: Discuss more about what needs to be done
 
 As well as building out the Concept Exercises, your track will also need a Test Runner and a Representer.
 
-The Test Runner is a piece of software that runs the tests. This enables us to have in-browser coding. Test Runners are surprisingly tricky to get right, with lots of weird edge cases and oddities, so we recommend starting on them quite early. You can find more in the [automated testing repository](https://github.com/exercism/automated-tests).
+The Test Runner is a piece of software that runs the tests. This enables us to have in-browser coding. Test Runners are surprisingly tricky to get right, with lots of weird edge cases and oddities, so we recommend starting on them quite early. You can learn more about Test Runners in the [automated testing repository](https://github.com/exercism/automated-tests).
 
 Representers are pieces of software that take a solution and provide a normalised representation of it. We can then attach feedback to those representations, and automatically provide the same feedback for future solutions that normalise to the same representation. You may also like to create an Analyzer, which automatically provides feedback based on heursitics provided by AST matching. You can learn more about Representers and Analysers in our [automated analysis repository](https://github.com/exercism/automated-analysis).
 

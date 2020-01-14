@@ -23,9 +23,9 @@ We are busy working away on the product and development work to add all this fun
 ## More information
 
 - [The features of v3](./docs/features-of-v3.md): A deeper dive into the changes we're making to v3.
-- [Rationale for v3](./docs/rationale-for-v3.md). An explanation about the rational behind some of our our design decisions for v3.
+- [Rationale for v3](./docs/rationale-for-v3.md). An explanation about the rationale behind some of our our design decisions for v3.
 
 ### FAQs
 
-- [What are concept exercise are and how they are structured?](./docs/concept-exercises.md)
+- [What are concept exercise and how they are structured?](./docs/concept-exercises.md)
 - [How is this repository structured?](./docs/repository-structure.md)

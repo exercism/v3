@@ -1,12 +1,12 @@
 # C#: new exercise - arrays
 
-This issue describes a new `arrays` exercise that should be added to the [v3][docs-v3] [C# track][csharp-docs].
+This issue describes a new `arrays` exercise that should be added to the [v3][docs-v3] [C# track][docs-v3-csharp].
 
 ## Goal
 
 The goal of this exercise is to teach the student how the concept of [collections][docs-v3-types-collection] is implemented in [C#][docs.microsoft.com-collections]. We'll teach the student about collections by having the student work with one specific type of collection, namely the [array][docs-v3-types-array]. The students will learn to define arrays, iterate over array items, access items by index, and more.
 
-Of the many available C# collection types, we chose to use the [array][csharp-docs-types-array] collection type as the first collection type students will be taught for the following reasons:
+Of the many available C# collection types, we chose to use the [array][docs-v3-csharp-types-array] collection type as the first collection type students will be taught for the following reasons:
 
 - Arrays don't require the student to know about generics.
 - Arrays are a common data type in many language.
@@ -64,7 +64,7 @@ As an array is a collection type, it holds zero or more instances of another typ
 
 This concept exercise's prerequisites concepts are:
 
-- `basic-numbers`
+- # `basic-numbers`
 
 ## Implementing
 
@@ -106,8 +106,8 @@ Check out the [`floating-point-numbers exercise`][csharp-docs-concept-exercises-
 
 ### Step 2: adding documentation files
 
-- `.docs/introduction.md`: an introduction to the concept. It should be explicit about what the exercise teaches and maybe provide a brief introduction to the concepts, but not give away so much that the user doesn't have to do any work to solve the exercise. An example file can be found [here][csharp-docs-introduction.md].
-- `.docs/instructions.md`: instructions for the exercise. It should explicitly explain what the user needs to do (define a method with the signature `X(...)` that takes an A and returns a Z), and provide at least one example usage of that function. If there are multiple tasks within the exercise, it should provide an example of each. An example file can be found [here][csharp-docs-instructions.md].
+- `.docs/introduction.md`: an introduction to the concept. It should be explicit about what the exercise teaches and maybe provide a brief introduction to the concepts, but not give away so much that the user doesn't have to do any work to solve the exercise. An example file can be found [here][csharp-docs-introduction.md]
+- `.docs/instructions.md`: instructions for the exercise. It should explicitly explain what the user needs to do (define a method with the signature `X(...)` that takes an A and returns a Z), and provide at least one example usage of that function. If there are multiple tasks within the exercise, it should provide an example of each. An example file can be found [here][csharp-docs-introduction.md].
 - `.docs/hints.md`: if the user gets stuck, we will allow them to click a button requesting a hint, which shows this file. We will softly discourage them using it. The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any student. An example file can be found [here][csharp-docs-hints.md].
 - `.docs/after.md`: once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught. An example file can be found [here][csharp-docs-after.md].
 
@@ -138,7 +138,7 @@ See the floating-point-numbers exercise's [config.json file][csharp-meta-config.
 
 ### Inspiration
 
-When implementing this exericse, it can be very useful to look at already implemented C# exercises like the [strings][csharp-docs-concept-exercises-strings], [dates][csharp-docs-concept-exercises-dates] or [floating-point numbers][csharp-docs-concept-exercises-floating-point-numbers] exercises. You can also check the [general array concept documentation][docs-v3-types-array] to see if any other languages have already implemented an arrays exercise.
+When implementing this exericse, it can be very useful to look at already implemented C# exercises like the [strings][docs-v3-csharp-concept-exercises-strings], [dates][docs-v3-csharp-concept-exercises-dates] or [floating-point numbers][docs-v3-csharp-concept-exercises-floating-point-numbers] exercises. You can also check the [general array concept documentation][docs-v3-types-array] to see if any other languages have already implemented an arrays exercise.
 
 ## Representer
 
@@ -172,3 +172,10 @@ This exercise could benefit from having an [analyzer][csharp-analyzer] that can 
 [csharp-docs-introduction.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/introduction.md
 [csharp-docs-instructions.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/instructions.md
 [csharp-meta-config.json]: ../languages/csharp/concept-exercises/numbers-floating-point/.meta/config.json
+[docs-v3-csharp]: ./languages/csharp/README.md
+[docs-v3-csharp-types-array]: ./languages/csharp/types/array.md
+[docs-v3-csharp-concept-exercises-strings]: ./languages/csharp/concept-exercices/strings
+[docs-v3-csharp-concept-exercises-dates]: ./languages/csharp/concept-exercices/dates
+[docs-v3-csharp-concept-exercises-floating-point-numbers]: ./languages/csharp/concept-exercices/numbers-floating-point
+[csharp-analyzer]: https://github.com/exercism/csharp-analyzer
+[csharp-representer]: https://github.com/exercism/csharp-representer
