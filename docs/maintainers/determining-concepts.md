@@ -1,4 +1,4 @@
-# Maintainers - Choosing and defining Concepts
+# Choosing and defining Concepts
 
 It is worth reading the start of the [Concept Exercises](concept-exercises.md) file to familiarise yourself with Concept Exercises and why writing out concepts is important.
 

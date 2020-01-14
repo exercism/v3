@@ -1,7 +1,7 @@
-- [Introduction](/)
-- [Docs](/docs/README.md)
+- [Start here](/)
+- Docs
 - [Languages](/languages/README.md)
-- Reference
+- [Reference](/reference/README.md)
   - [Concepts](/reference/concepts/README.md)
   - [Paradigms](/reference/paradigms/README.md)
   - [Tooling](/reference/tooling/README.md)

@@ -1,7 +1,7 @@
-- [Introduction](/)
-- [Docs](/docs/README.md)
+- [Start here](/)
+- Docs
 - [Languages](/languages/README.md)
-- Reference
+- [Reference](/reference/README.md)
   - [Concepts](/reference/concepts/README.md)
     - [Anonymous functions](/reference/concepts/anonymous_functions.md)
     - [Arithmetic](/reference/concepts/arithmetic.md)

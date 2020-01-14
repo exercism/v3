@@ -1,5 +1,5 @@
-- [Introduction](/)
-- [Docs](/docs/README.md)
+- [Start here](/)
+- Docs
 - [Languages](/languages/README.md)
   - [C](/languages/c/README.md)
   - [CoffeeScript](/languages/coffeescript/README.md)
