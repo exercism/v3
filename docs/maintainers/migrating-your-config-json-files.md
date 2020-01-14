@@ -33,4 +33,4 @@ For v3, the existing `config.json` files will need to be updated. You can use th
 
 The existing exercises are temporarily removed from the `config.json` file. They will return as practice exercises once the concept exercises have been added.
 
-TODO: Discuss more about what needs to be done
+More details will be added at a later stage.
