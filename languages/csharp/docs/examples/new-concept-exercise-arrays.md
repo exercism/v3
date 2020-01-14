@@ -1,7 +1,7 @@
 ---
-name: "[C#] Add new concept exercise: arrays"
-about: Add the arrays concept exercise to the C# track
-title: "[C#] Add new concept exercise: arrays"
+name: "[C#] Add new Concept Exercise: arrays"
+about: Add the arrays Concept Exercise to the C# track
+title: "[C#] Add new Concept Exercise: arrays"
 labels: track/csharp, exercise/concept
 assignees: ""
 ---
