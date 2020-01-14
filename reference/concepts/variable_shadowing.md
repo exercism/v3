@@ -10,6 +10,6 @@ Some languages, such as [CoffeeScript][language-coffeescript], disallow variable
 [concept-functions]: ./functions.md
 [concept-scope]: ./scope.md
 [concept-variables]: ./variables.md
-[language-coffeescript]: ../languages/coffeescript/README.md
-[language-kotlin]: ../languages/kotlin/README.md
-[language-java]: ../languages/java/README.md
+[language-coffeescript]: ../../languages/coffeescript/README.md
+[language-kotlin]: ../../languages/kotlin/README.md
+[language-java]: ../../languages/java/README.md

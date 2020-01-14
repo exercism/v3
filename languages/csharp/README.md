@@ -23,14 +23,14 @@ Before launch, we need all of the following parts to be completed:
 
 ### Track Structure
 
-- [ ] Implement 20+ Concept Exercises
-- [ ] [Update `config.json`](../docs/maintainers/migrating-your-config-json-files)
-  - [ ] Add `version` key
-  - [ ] Addeonline editor settings
-    - [ ] Add `indent_style`
-    - [ ] Add `indent_size`
-  - [ ] Add Concept Exercises
-  - [ ] Add Concepts for all Practice Exercises
+- [ ] Implemented 20+ Concept Exercises
+- [ ] [Updated `config.json`](../../docs/maintainers/migrating-your-config-json-files.md)
+  - [ ] Added `version` key
+  - [ ] Added online editor settings
+    - [ ] Added `indent_style`
+    - [ ] Added `indent_size`
+  - [ ] Added Concept Exercises
+  - [ ] Added Concepts for all Practice Exercises
 
 ### Representer
 

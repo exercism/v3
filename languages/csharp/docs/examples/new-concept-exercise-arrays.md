@@ -14,7 +14,7 @@ This issue describes a new `arrays` exercise that should be added to the [v3][do
 
 The goal of this exercise is to teach the student how the concept of [collections][docs-v3-types-collection] is implemented in [C#][docs.microsoft.com-collections]. We'll teach the student about collections by having the student work with one specific type of collection, namely the [array][docs-v3-types-array]. The students will learn to define arrays, iterate over array items, access items by index, and more.
 
-Of the many available C# collection types, we chose to use the [array][csharp-docs-types-array] collection type as the first collection type students will be taught for the following reasons:
+Of the many available C# collection types, we chose to use the `array` collection type as the first collection type students will be taught for the following reasons:
 
 - Arrays don't require the student to know about generics.
 - Arrays are a common data type in many language.
@@ -163,20 +163,19 @@ This exercise could benefit from having an [analyzer][csharp-analyzer] that can 
 [docs.microsoft.com-foreach-with-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays
 [docs.microsoft.com-single-dimensional-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/single-dimensional-arrays
 [docs.microsoft.com-implicitly-typed-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/implicitly-typed-arrays
-[docs-v3]: ./README.md
-[docs-v3-types-array]: ./types/array.md
-[docs-v3-types-collection]: ./types/collection.md
-[csharp-docs]: ./languages/csharp/README.md
-[csharp-docs-types-array]: ./languages/csharp/types/array.md
-[csharp-docs-concept-exercises-strings]: ./languages/csharp/concept-exercices/strings
-[csharp-docs-concept-exercises-dates]: ./languages/csharp/concept-exercices/dates
-[csharp-docs-concept-exercises-floating-point-numbers]: ./languages/csharp/concept-exercices/numbers-floating-point
+[docs-v3]: ../../README.md
+[docs-v3-types-array]: ../../../../reference/types/array.md
+[docs-v3-types-collection]: ../../../../reference/types/collection.md
+[csharp-docs]: ../../reference/README.md
+[csharp-docs-concept-exercises-strings]: ../../exercises/concept/strings
+[csharp-docs-concept-exercises-dates]: ../../exercises/concept/dates
+[csharp-docs-concept-exercises-floating-point-numbers]: ../../exercises/concept/numbers-floating-point
 [csharp-analyzer]: https://github.com/exercism/csharp-analyzer
 [csharp-representer]: https://github.com/exercism/csharp-representer
-[csharp-docs-cli.md]: ../languages/csharp/exercises/.docs/cli.md
-[csharp-docs-debug.md]: ../languages/csharp/exercises/.docs/debug.md
-[csharp-docs-after.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/after.md
-[csharp-docs-hints.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/hints.md
-[csharp-docs-introduction.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/introduction.md
-[csharp-docs-instructions.md]: ../languages/csharp/concept-exercises/numbers-floating-point/.docs/instructions.md
-[csharp-meta-config.json]: ../languages/csharp/concept-exercises/numbers-floating-point/.meta/config.json
+[csharp-docs-cli.md]: ../../exercises/.docs/cli.md
+[csharp-docs-debug.md]: ../../exercises/.docs/debug.md
+[csharp-docs-after.md]: ../../exercises/concept/numbers-floating-point/.docs/after.md
+[csharp-docs-hints.md]: ../../exercises/concept/numbers-floating-point/.docs/hints.md
+[csharp-docs-introduction.md]: ../../exercises/concept/numbers-floating-point/.docs/introduction.md
+[csharp-docs-instructions.md]: ../../exercises/concept/numbers-floating-point/.docs/instructions.md
+[csharp-meta-config.json]: ../../exercises/concept/numbers-floating-point/.meta/config.json

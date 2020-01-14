@@ -7,4 +7,4 @@
 
 See also [Event loop][javascript-event-loop].
 
-[javascript-event-loop]: ../languages/javascript/info/event_loop.md
+[javascript-event-loop]: ../../languages/javascript/info/event_loop.md

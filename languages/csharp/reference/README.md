@@ -8,33 +8,33 @@ The C# concept exercises are based on concepts. The list below contains the conc
 
 The core OO features a C# developer should know about are:
 
-- [Encapsulation](../../concepts/encapsulation.md)
-- [Classes](../../concepts/classes.md)
-- [Objects](../../concepts/objects.md)
-- [State](../../concepts/state.md)
-- [Mutation](../../concepts/mutation.md)
-- [Composition](../../concepts/composition.md)
-- [Inheritance](../../concepts/inheritance.md)
-- [Interfaces](../../concepts/interfaces.md)
-- [Polymorphism](../../concepts/polymorphism.md)
-- [Methods](../../concepts/methods.md)
+- [Encapsulation](../../../reference/concepts/encapsulation.md)
+- [Classes](../../../reference/concepts/classes.md)
+- [Objects](../../../reference/concepts/objects.md)
+- [State](../../../reference/concepts/state.md)
+- [Mutation](../../../reference/concepts/mutation.md)
+- [Composition](../../../reference/concepts/composition.md)
+- [Inheritance](../../../reference/concepts/inheritance.md)
+- [Interfaces](../../../reference/concepts/interfaces.md)
+- [Polymorphism](../../../reference/concepts/polymorphism.md)
+- [Methods](../../../reference/concepts/methods.md)
 
 ### Functional
 
 While C# is primarily an OO language, lots of functional concepts have been added to the language:
 
-- [Immutability](../../concepts/immutability.md)
-- [Pattern matching](../../concepts/pattern_matching.md)
-- [Higher-order functions](../../concepts/higher_order_functions.md)
-- [Type inference](../../concepts/type_inference.md)
-- [Anonymous methods](../../concepts/anonymous_functions.md)
-- [Recursion](../../concepts/recursion.md)
-- [Local functions](../../concepts/nested_functions.md)
-- [Pipelines (LINQ)](../../concepts/pipelines.md)
+- [Immutability](../../../reference/concepts/immutability.md)
+- [Pattern matching](../../../reference/concepts/pattern_matching.md)
+- [Higher-order functions](../../../reference/concepts/higher_order_functions.md)
+- [Type inference](../../../reference/concepts/type_inference.md)
+- [Anonymous methods](../../../reference/concepts/anonymous_functions.md)
+- [Recursion](../../../reference/concepts/recursion.md)
+- [Local functions](../../../reference/concepts/nested_functions.md)
+- [Pipelines (LINQ)](../../../reference/concepts/pipelines.md)
 
 ### Platform-specific
 
-- [Assemblies](../../tooling/dotnet-assemblies.md)
+- [Assemblies](../../../reference/tooling/dotnet-assemblies.md)
 
 ### Memory management
 
@@ -53,12 +53,12 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 ### General
 
 - Arithmetic overflow
-- [Sameness](../../concepts/sameness.md)
-- [Conditionals](../../concepts/conditionals.md)
-- [Enumeration](../../concepts/enumeration.md)
+- [Sameness](../../../reference/concepts/sameness.md)
+- [Conditionals](../../../reference/concepts/conditionals.md)
+- [Enumeration](../../../reference/concepts/enumeration.md)
 - Iterators (yield)
 - Namespaces
-- [Generics](../../concepts/generics.md)
+- [Generics](../../../reference/concepts/generics.md)
 - Exception handling
 - Implicit/explicit conversion
 - Boxing/unboxing
@@ -76,19 +76,19 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 
 - Signed integers
 - Unsigned integers
-- [Floating point numbers](./floating_point_numbers.md)
-- Strings
+- Floating point numbers
+- [Strings][string]
 - Enums
-- Characters
+- [Characters][char]
 - [Booleans][bool]
 - [Arrays][array]
 - [Lists][list]
 - [Dictionaries][map]
 - [Sets][set]
-- Queues
-- Stacks
-- Tuples
-- Ranges
+- [Queues][queue]
+- [Stacks][stack]
+- [Tuples][tuple]
+- [Ranges][range]
 - Indexes
 - Events
 
@@ -129,31 +129,31 @@ The following reference docs have been written:
 [issues-new-reference]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fnew-reference+label%3Astatus%2Fhelp-wanted+
 [code_style]: ./code_style.md
 [memory_allocation]: ./memory_allocation.md
-[bool]: ../../types/boolean.md
-[string]: ../../types/string.md
-[char]: ../../types/char.md
-[null]: ../../types/null.md
-[int]: ../../types/integer.md
-[uint]: ../../types/integer.md
-[byte]: ../../types/byte.md
-[sbyte]: ../../types/byte.md
-[short]: ../../types/short.md
-[ushort]: ../../types/short.md
-[long]: ../../types/long.md
-[ulong]: ../../types/long.md
-[double]: ../../types/double.md
-[float]: ../../types/single.md
-[decimal]: ../../types/decimal_number.md
-[big-integer]: ../../types/big_integer.md
-[array]: ../../types/array.md
-[list]: ../../types/list.md
-[map]: ../../types/map.md
-[set]: ../../types/set.md
-[stack]: ../../types/stack.md
-[queue]: ../../types/deque.md
-[class]: ../../types/class.md
-[struct]: ../../types/struct.md
-[value-tuple]: ../../types/tuple.md
-[tuple]: ../../types/tuple.md
-[range]: ../../types/range.md
-[nullable]: ../../types/nullable.md
+[bool]: ../../../reference/types/boolean.md
+[string]: ../../../reference/types/string.md
+[char]: ../../../reference/types/char.md
+[null]: ../../../reference/types/null.md
+[int]: ../../../reference/types/integer.md
+[uint]: ../../../reference/types/integer.md
+[byte]: ../../../reference/types/byte.md
+[sbyte]: ../../../reference/types/byte.md
+[short]: ../../../reference/types/short.md
+[ushort]: ../../../reference/types/short.md
+[long]: ../../../reference/types/long.md
+[ulong]: ../../../reference/types/long.md
+[double]: ../../../reference/types/double.md
+[float]: ../../../reference/types/single.md
+[decimal]: ../../../reference/types/decimal_number.md
+[big-integer]: ../../../reference/types/big_integer.md
+[array]: ../../../reference/types/array.md
+[list]: ../../../reference/types/list.md
+[map]: ../../../reference/types/map.md
+[set]: ../../../reference/types/set.md
+[stack]: ../../../reference/types/stack.md
+[queue]: ../../../reference/types/deque.md
+[class]: ../../../reference/types/class.md
+[struct]: ../../../reference/types/struct.md
+[value-tuple]: ../../../reference/types/tuple.md
+[tuple]: ../../../reference/types/tuple.md
+[range]: ../../../reference/types/range.md
+[nullable]: ../../../reference/types/nullable.md

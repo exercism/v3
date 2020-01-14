@@ -28,11 +28,11 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [docs-concept-exercises]: ../../reference/README.md
 [reference]: ./reference.md
 [concept-exercises]: ./concept
-[concept-exercise-bitwise-operations]: ./concept/bitwise-operations
-[concept-exercise-dates]: ./concept/dates
-[concept-exercise-enums]: ./concept/enums
-[concept-exercise-numbers-floating-point]: ./concept/numbers-floating-point
-[concept-exercise-numbers]: ./concept/numbers
-[concept-exercise-strings]: ./concept/strings
+[concept-exercise-bitwise-operations]: ./bitwise-operations
+[concept-exercise-dates]: ./dates
+[concept-exercise-enums]: ./enums
+[concept-exercise-numbers-floating-point]: ./numbers-floating-point
+[concept-exercise-numbers]: ./numbers
+[concept-exercise-strings]: ./strings
 [issues-new-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fnew-exercise+label%3Astatus%2Fhelp-wanted
 [issues-improve-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fimprove-exercise+label%3Astatus%2Fhelp-wanted

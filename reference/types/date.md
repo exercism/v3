@@ -6,6 +6,11 @@ The difference between two dates may be representable by a [Duration][type-durat
 
 See also [DateTime][type-datetime] and [Time][type-time].
 
+# Implementations
+
+- [C#][implementation-csharp]
+
 [type-datetime]: ./datetime.md
 [type-duration]: ./duration.md
 [type-time]: ./time.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/dates/.docs/introduction.md

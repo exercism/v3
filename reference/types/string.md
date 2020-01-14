@@ -11,4 +11,4 @@ A string is a sequence of [characters][type-char] (letters, digits, punctuation,
 - [C#][implementation-csharp]
 
 [type-char]: ./char.md
-[implementation-csharp]: ../languages/csharp/concept-exercises/strings/.docs/introduction.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/strings/.docs/introduction.md

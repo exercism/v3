@@ -13,7 +13,7 @@ The heap is long-lived and has lots of memory available. When an object is alloc
 
 ## What goes where?
 
-In principle, [value types][csharp-value_types] are allocated on the stack and [reference types][csharp-reference_types] on the heap. There are some exceptions to this, for example when a value type is part of a reference type (e.g. a class with an `int` field).
+In principle, value types are allocated on the stack and reference types on the heap. There are some exceptions to this, for example when a value type is part of a reference type (e.g. a class with an `int` field).
 
 ## Resources
 
@@ -22,8 +22,6 @@ In principle, [value types][csharp-value_types] are allocated on the stack and [
 - [Jon skeet on C# memory allocation][jonskeet.uk_memory]
 - [Pro .NET memory management (book)][pro-dotnet-memory]
 
-[csharp-value_types]: ./value_types.md
-[csharp-reference_types]: ./reference_types.md
 [docs.microsoft.com_garbage-collection-fundamentals]: https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals
 [jonskeet.uk_memory]: https://jonskeet.uk/csharp/memory.html
 [jetbrains.com_memory-management-concepts]: https://www.jetbrains.com/help/dotmemory/NET_Memory_Management_Concepts.html

@@ -68,4 +68,4 @@ JavaScript does not have to be compiled, whereas [CoffeeScript][language-coffees
 [language-haskell]: ../../haskell/README.md
 [language-python]: ../../python/README.md
 [language-ruby]: ../../ruby/README.md
-[tool-babel]: ../../../tooling/babel.md
+[tool-babel]: ../../../reference/tooling/babel.md

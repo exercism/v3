@@ -37,5 +37,5 @@ To create the reference, please:
 - Add a link to the reference document in the [reference README][reference].
 
 [stackoverflow.com]: https://stackoverflow.com/questions/755685/static-readonly-vs-const#755693
-[reference]: https://github.com/exercism/v3/blob/master/languages/csharp/reference/README.md
+[reference]: ../../reference/README.md
 [new-document]: https://github.com/exercism/v3/new/master?filename=languages/csharp/reference/readonly-vs-const.md
