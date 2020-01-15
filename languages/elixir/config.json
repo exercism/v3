@@ -11,5 +11,5 @@
     "concept": [],
     "practice": []
   },
-  "foregone": []
+  "foregone": ["robot-name"]
 }
