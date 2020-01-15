@@ -4,12 +4,11 @@ Variable shadowing occurs when a [variable][concept-variables] declared within a
 
 Some languages allow variable shadowing in more cases than others. For example [Kotlin][language-kotlin] allow an inner variable in a [function][concept-functions] to shadow a passed argument and a variable in inner block to shadow another in outer block, while [Java][language-java] does not allow these. Both languages allow a passed argument to a function/Method to shadow a [Class Field][concept-class-field].
 
-Some languages, such as [CoffeeScript][language-coffeescript], disallow variable shadowing completely.
+Some languages, such as CoffeeScript, disallow variable shadowing completely.
 
 [concept-class-field]: ./classes.md
 [concept-functions]: ./functions.md
 [concept-scope]: ./scope.md
 [concept-variables]: ./variables.md
-[language-coffeescript]: ../../languages/coffeescript/README.md
 [language-kotlin]: ../../languages/kotlin/README.md
 [language-java]: ../../languages/java/README.md

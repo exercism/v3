@@ -7,7 +7,6 @@ Thanks for wanting to contribute to one of Exercism's language tracks! Contribut
 To contribute, please select the language you'd like to contribute to:
 
 - [C][c]
-- [CoffeeScript][coffeescript]
 - [C++][cplusplus]
 - [C#][csharp]
 - [Dart][dart]
@@ -23,7 +22,6 @@ To contribute, please select the language you'd like to contribute to:
 - [Typescript][typescript]
 
 [c]: ./c/README.md
-[coffeescript]: ./coffeescript/README.md
 [cplusplus]: ./cplusplus/README.md
 [csharp]: ./csharp/README.md
 [dart]: ./dart/README.md

@@ -2,7 +2,6 @@
 - Docs
 - [Languages](/languages/README.md)
   - [C](/languages/c/README.md)
-  - [CoffeeScript](/languages/coffeescript/README.md)
   - [C++](/languages/cplusplus/README.md)
   - [C#](/languages/csharp/README.md)
   - [Dart](/languages/dart/README.md)
