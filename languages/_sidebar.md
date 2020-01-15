@@ -3,7 +3,6 @@
 - [Languages](/languages/README.md)
   - [Bash](/languages/bash/README.md)
   - [C](/languages/c/README.md)
-  - [CoffeeScript](/languages/coffeescript/README.md)
   - [C#](/languages/csharp/README.md)
   - [Dart](/languages/dart/README.md)
   - [F#](/languages/fsharp/README.md)
