@@ -9,3 +9,4 @@ TODO: add senior maintainers
 ## Contributing Maintainers
 
 - Sebastian Borza (Slack: `@sebito91`, Github: [sebito91](https://github.com/sebito91))
+- Johan Berg (Slack: `@Johan Berg`, GitHub: [bergjohan](https://github.com/bergjohan))
