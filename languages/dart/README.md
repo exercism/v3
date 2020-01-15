@@ -1,137 +1,55 @@
 # Dart
 
-## Types
+Welcome to the workspace for Exercism v3's Dart track!
 
-### Primitives
+This area will contain everything needed to launch the Dart track, including:
 
-- [int][type-number]
-- double
-- [string][type-string]
-- [boolean][type-boolean]
-- list
-- set
-- map
-- rune
-- [symbol][type-symbol]
+- The new exercises and `config.json` file.
+- Reference documentation that help explain Dart concepts for which no appropriate online document could be found.
+- Dart-specific documentation for contributors.
 
-### Non-primitives
+## Preparation Status
 
-- [`object`][type-object].
+Before we publicize requesting contribution for this language, the following steps should be done.
 
-[type-boolean]: ../../reference/types/boolean.md
-[type-function]: ../../reference/types/function.md
-[type-number]: ../../reference/types/number.md
-[type-object]: ../../reference/types/object.md
-[type-string]: ../../reference/types/string.md
-[type-symbol]: ../../reference/types/symbol.md
+- [ ] [Convert existing files to new repository structure](../../docs/maintainers/repository-structure.md)
+- [ ] Have a kick-off discussion between track maintainers
+- [ ] Fill out the [maintainers.md](./maintainers.md) file (e.g. [C#](../csharp/maintainers.md))
+- [ ] Ensure there is a link to your track's GitHub issues on the [main README.md](../../README.md))
+- [ ] [Write a Concept Exercise implementation guide](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
+- [ ] [List out key Concepts for your language](../../docs/maintainers/determining-concepts.md)
+- [ ] [Add GitHub issues for 20 Concept Exercises](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
 
-## Expressions
+## Readiness for Launch
 
-- [`new`][keyword-new]
-- `this`
+Before launch, we need all of the following parts to be completed:
 
-## Concepts
+### Track Structure
 
-### General
+- [ ] Implemented 20+ Concept Exercises
+- [ ] [Updated `config.json`](../../docs/maintainers/migrating-your-config-json-files.md)
+  - [ ] Added `version` key
+  - [ ] Added online editor settings
+    - [ ] Added `indent_style`
+    - [ ] Added `indent_size`
+  - [ ] Added Concept Exercises
+  - [ ] Added Concepts for all Practice Exercises
 
-- [Arithmetic][concept-arithmetic]
-- [Bitwise manipulation][concept-bitwise-manipulation]
-- [Boolean logic][concept-boolean-logic]
-- [Comments][concept-comments]
-- [Conditionals][concept-conditionals]
-- [Destructuring][concept-destructuring] (see also [destructuring assignment][concept-destructuring-assignment])
-- [Duck typing][concept-duck-typing]
-- [Enumeration][concept-enumeration]
-- [Functions][concept-functions]
-- [Loops][concept-loops]
-- [Methods][concept-methods]
-- [Rest parameters][concept-rest-parameters]
-- [Scope][concept-scope]
-- [Type casting][concept-type-casting] (see also [type inference][concept-type-inference])
-- [Variables][concept-variables]
+### Representer
 
-[concept-arithmetic]: ../../reference/concepts/arithmetic.md
-[concept-bitwise-manipulation]: ../../reference/concepts/bitwise_manipulation.md
-[concept-boolean-logic]: ../../reference/concepts/boolean_logic.md
-[concept-comments]: ../../reference/concepts/comments.md
-[concept-conditionals]: ../../reference/concepts/conditionals.md
-[concept-destructuring]: ../../reference/concepts/destructuring.md
-[concept-destructuring-assignment]: ../../reference/concepts/destructuring_assignment.md
-[concept-duck-typing]: ../../reference/concepts/duck_typing.md
-[concept-enumeration]: ../../reference/concepts/enumeration.md
-[concept-functions]: ../../reference/concepts/functions.md
-[concept-loops]: ../../reference/concepts/loops.md
-[concept-methods]: ../../reference/concepts/methods.md
-[concept-rest-parameters]: ../../reference/concepts/rest_parameters.md
-[concept-scope]: ../../reference/concepts/scope.md
-[concept-type-casting]: ../../reference/concepts/type_casting.md
-[concept-variables]: ../../reference/concepts/variables.md
+- [ ] Build Representer
+- [ ] Deploy Representer
 
-### Object-oriented
+### Test Runner
 
-- [Classes][concept-classes]
-- [Composition][concept-composition]
-- [Encapsulation][concept-encapsulation] (see also [anonymous functions][concept-anonymous-functions] and [scope][concept-scope])
-- Inheritance
-- [Mutation][concept-mutation]
-- [Objects][concept-objects]
-- [Polymorphism][concept-polymorphism] (see also [duck-typing][concept-duck-typing])
-- [State][concept-state]
+- [ ] Build Test Runner
+- [ ] Deploy Test Runner
 
-[concept-classes]: ../../reference/concepts/classes.md
-[concept-composition]: ../../reference/concepts/composition.md
-[concept-encapsulation]: ../../reference/concepts/encapsulation.md
-[concept-inheritance]: ../../reference/concepts/inheritance.md
-[concept-mutation]: ../../reference/concepts/mutation.md
-[concept-objects]: ../../reference/concepts/objects.md
-[concept-polymorphism]: ../../reference/concepts/polymorphism.md
-[concept-state]: ../../reference/concepts/state.md
+## Extra magic
 
-### Functional
+These extra steps will make your track better, but are optional.
 
-- [Anonymous functions][concept-anonymous-functions]
-- [Higher-order functions][concept-higher-order-functions]
-- [Immutability][concept-immutable]
-- [Nested functions][concept-nested-functions]
-- [Partial application][concept-partial-application]
-- [Pure functions][concept-pure-functions]
-- [Recursion][concept-recursion]
-- [Type inference][concept-type-inference]
+### Analyzer
 
-[concept-anonymous-functions]: ../../reference/concepts/anonymous_functions.md
-[concept-higher-order-functions]: ../../reference/concepts/higher_order_functions.md
-[concept-immutable]: ../../reference/concepts/immutability.md
-[concept-nested-functions]: ../../reference/concepts/nested_functions.md
-[concept-partial-application]: ../../reference/concepts/partial_application.md
-[concept-pure-functions]: ../../reference/concepts/pure_functions.md
-[concept-recursion]: ../../reference/concepts/recursion.md
-[concept-type-inference]: ../../reference/concepts/type_inference.md
-
-### Language specific concepts
-
-- [`async`][keyword-async]/[`await`][keyword-await] [concurrency][concept-concurrency] model
-- Arguments
-  - All arguments are optional
-  - Named arguments via [destructuring][concept-destructuring]
-- [Generators][concept-generators]
-- Package Management
-
-[concept-concurrency]: ../../reference/concepts/concurrency.md
-[concept-generators]: ../../languages/dart/info/generators.md
-[keyword-async]: ./keywords/async.md
-[keyword-await]: ./keywords/await.md
-[keyword-new]: ./keywords/new.md
-[keyword-import]: ./keywords/import.md
-
-### User-land concepts
-
-- Stream based programming (subscriptions)
-- Compilers (AOT, JIT)
-- Package manager (Pub)
-
-## Other important/interesting things
-
-- ECMAScript standard
-- Engines
-- Web APIs
-- Web workers are not the same as multi-thread programming
+- [ ] Build Analyzer
+- [ ] Deploy Analyzer
