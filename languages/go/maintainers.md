@@ -8,4 +8,4 @@ These awesome people help maintain the Go track.
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+- Hans Donner (Slack `@hans-d`, Github: [hans-d](https://github.com/hans-d/))
