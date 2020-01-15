@@ -2,7 +2,7 @@ _Note: This file, and the other docs in this repository, can be viewed on [GitHu
 
 # Exercism - v3
 
-Welcome to the workspace for Exercism v3! 
+Welcome to the workspace for Exercism v3!
 
 Exercism v3 is the third major iteration of Exercism, which we are aiming to launch around June 2020. It aims to both add exciting new features and to fix some of the issues present in v2, especially those around being blocked while waiting for a mentor. Its main features include:
 
@@ -16,8 +16,8 @@ We are busy working away on the product and development work to add all this fun
 **To get started please explore the issues in the language you wish to contribute to:**
 
 - [C#](https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcsharp)
-- [Go](https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fgo)
 - [F#](https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Ffsharp)
+- [Go](https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fgo)
 - ...
 
 **If you are a Track Maintainer, please [start here](./docs/maintainers/README.md).**
