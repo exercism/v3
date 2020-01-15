@@ -1,4 +1,4 @@
-# C&#35; exercise documents
+# C&#35; shared exercise documents
 
 There are two documents that are shared between all exercises:
 
