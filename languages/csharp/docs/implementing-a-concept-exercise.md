@@ -51,7 +51,7 @@ Some exercises could benefit from having an custom representation as generated b
 
 ## Inspiration
 
-When implementing an exericse, it can be very useful to look at already implemented C# exercises like the [strings][concept-exercise-strings], [dates][concept-exercise-dates] or [floating-point numbers][concept-exercise-floating-point-numbers] exercises. You can also check the exercise's [general concepts documents][reference] to see if other languages that have already an exercise for that concept.
+When implementing an exercise, it can be very useful to look at already implemented C# exercises like the [strings][concept-exercise-strings], [dates][concept-exercise-dates] or [floating-point numbers][concept-exercise-floating-point-numbers] exercises. You can also check the exercise's [general concepts documents][reference] to see if other languages that have already implemented an exercise for that concept.
 
 ## Help
 
