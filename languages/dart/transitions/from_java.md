@@ -1,8 +1,6 @@
-# Learning Dart with a [Java][language-java] background
+# Learning Dart with a Java background
 
 ## Same
 
 Syntax similarity
 
-[language-cplusplus]: ../../cplusplus/README.md
-[language-java]: ../../java/README.md
