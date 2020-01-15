@@ -8,4 +8,4 @@ TODO: add senior maintainers
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+- Sebastian Borza (Slack: `@sebito91`, Github: [sebito91](https://github.com/sebito91))
