@@ -4,7 +4,7 @@ These awesome people help maintain the Ruby track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Victor Goff (Slack: `@KOTP`, Github: [KOTP](https://github.com/kotp))
 
 ## Contributing Maintainers
 
