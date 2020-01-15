@@ -1,9 +1,7 @@
 # F&#35; shared exercise documents
 
-There are two documents that are shared between all exercises:
+There is one document that is shared between all exercises:
 
 - [cli.md][cli]: contains information on how to work with the exercise when using the CLI to download and submit the exercise.
-- [debug.md][debug]: explains how a user that is coding in the browser can still do "debugging."
 
 [cli]: ./cli.md
-[debug]: ./debug.md
