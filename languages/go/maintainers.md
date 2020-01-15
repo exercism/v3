@@ -4,7 +4,7 @@ These awesome people help maintain the Go track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Gabriel Nelle (Slack: `@tehsphinx`, Github: [tehsphinx](https://github.com/tehsphinx))
 
 ## Contributing Maintainers
 
