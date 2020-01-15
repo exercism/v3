@@ -8,4 +8,4 @@ TODO: add senior maintainers
 
 ## Contributing Maintainers
 
-- Georg Tavonius (Slack: @Georg Tavonius, GitHub: Calamari)
+- Georg Tavonius (Slack: @Georg Tavonius, GitHub: [Calamari](https://github.com/Calamari))
