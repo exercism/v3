@@ -1,6 +1,7 @@
 - [Start here](/)
 - Docs
 - [Languages](/languages/README.md)
+  - [Bash](/languages/bash/README.md)
   - [C](/languages/c/README.md)
   - [CoffeeScript](/languages/coffeescript/README.md)
   - [C++](/languages/cplusplus/README.md)
