@@ -8,4 +8,5 @@ TODO: add senior maintainers
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+- Adam Morris (Slack: @Adam Morris, GitHub: [aimorris](https://github.com/aimorris))
+- Georg Tavonius (Slack: @Georg Tavonius, GitHub: [Calamari](https://github.com/Calamari))
