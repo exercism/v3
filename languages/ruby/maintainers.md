@@ -8,4 +8,4 @@ TODO: add senior maintainers
 
 ## Contributing Maintainers
 
-- Pablo Vicente (Slack: `@pvcarrera`, GitHub: `@pvcarrera`)
+- Pablo Vicente (Slack: `@pvcarrera`, GitHub: `[@pvcarrera](https://github.com/pvcarrera)`)
