@@ -1,0 +1,16 @@
+{
+  "language": "Elixir",
+  "version": 3,
+  "active": true,
+  "blurb": "Haskell is a functional programming language which is pure and statically-typed. It's known for lazy evaluation, where evaluation is deferred until necessary, and its purity, where monads are used for working with side-effects.",
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 2
+  },
+  "ignore_pattern": "example",
+  "solution_pattern": "example.*[.]hs",
+  "exercises": {
+    "concept": [],
+    "practice": []
+  }
+}
