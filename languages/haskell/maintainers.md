@@ -4,9 +4,8 @@ These awesome people help maintain the Haskell track.
 
 ## Senior Maintainers
 
-[@petertseng](https://github.com/petertseng)
-
-[@sshine](https://github.com/sshine)
+- Peter Tseng (GitHub: [petertseng](https://github.com/petertseng))
+- Simon Shine (GitHub: [sshine](https://github.com/sshine))
 
 ## Contributing Maintainers
 
