@@ -4,7 +4,7 @@ These awesome people help maintain the Python track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Corey McCandless (Slack: `@cmccandless`, GitHub: [cmccandless](https://github.com/cmccandless))
 
 ## Contributing Maintainers
 
