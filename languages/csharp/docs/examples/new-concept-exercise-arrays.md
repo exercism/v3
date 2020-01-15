@@ -134,7 +134,7 @@ Check out the [`floating-point-numbers exercise`][csharp-docs-concept-exercises-
 
 ### Inspiration
 
-When implementing this exericse, it can be very useful to look at already implemented C# exercises like the [strings][csharp-docs-concept-exercises-strings], [dates][csharp-docs-concept-exercises-dates] or [floating-point numbers][csharp-docs-concept-exercises-floating-point-numbers] exercises. You can also check the [general array concept documentation][docs-v3-types-array] to see if any other languages have already implemented an arrays exercise.
+When implementing this exercise, it can be very useful to look at already implemented C# exercises like the [strings][csharp-docs-concept-exercises-strings], [dates][csharp-docs-concept-exercises-dates] or [floating-point numbers][csharp-docs-concept-exercises-floating-point-numbers] exercises. You can also check the [general array concept documentation][docs-v3-types-array] to see if any other languages have already implemented an arrays exercise.
 
 ## Representer
 
