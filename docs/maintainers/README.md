@@ -18,7 +18,7 @@ Once your track has been "boostrapped" you'll find a `languages/$LANG/README.md`
 
 ## New track structures
 
-The key thing to understand about v3 is that we are making a strong distinction between Concept Exercises and Practice Exercises. All existing exercises will become Practice exercises - exercises where students can practice the ideas they are learning, and discuss them with a mentor. The new Concept Exercises will be written from scratch, each with the aim of teaching one or more programming concepts that are necessary to become fluent in a given language.
+The key thing to understand about v3 is that we are making a strong distinction between Concept Exercises and Practice Exercises. All existing exercises will become Practice Exercises - exercises where students can practice the ideas they are learning, and discuss them with a mentor. The new Concept Exercises will be written from scratch, each with the aim of teaching one or more programming concepts that are necessary to become fluent in a given language.
 
 We want to crowd-source the creation of these Concept Exercises, providing clear guidelines and instructions for contributors. We are doing this by asking maintainers to create a GitHub Issue for each Concept Exercise.
 
