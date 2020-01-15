@@ -4,7 +4,9 @@ These awesome people help maintain the Haskell track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+[@petertseng](https://github.com/petertseng)
+
+[@sshine](https://github.com/sshine)
 
 ## Contributing Maintainers
 
