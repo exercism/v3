@@ -9,3 +9,11 @@ As many languages use the same concepts (but possibly implemented differently), 
 It can also be helpful to group related concepts. For example, the Classes, Polymorphism and Inheritance concepts are all object-oriented concepts, which can then be grouped as "Object-oriented concepts".
 
 Filling out the concepts will be iterative, it is hard to get this right immediately. While creating concepts exercises, you'll probably find missing concepts or perhaps want to split out concepts.
+
+## Concept Exercises
+
+Generally there should be only one new concept introduced per concept exercise. There might be exceptions for _trivial_ concepts (like e.g. `int` in C#) that could be introduced in other concept exercises (e.g. `conditionals`).
+It should then get some attention in the introduction to that exercise with links on the topic -- even if its basically just teaching operators `+.*/`.
+The focus in the introduction on _trivial_ concepts should be the same as on other concept introductions: How is it done in this language? If there is nothing special about it, a language-agnostic link is helpful.
+
+Apart from trivial concepts: If a concept exercise requires another concept to solve it, that should be a prerequisite. For example a concept exercise on floating point numbers that requires a `loop` should have a concept exercise on `loops` as prerequisite.
