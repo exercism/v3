@@ -91,7 +91,7 @@ Skip this step if your track does not have a representer.
 
 ## Inspiration
 
-When implementing an exericse, it can be very useful to look at the exercises the track has already implemented. You can also check the exercise's [general concepts documents][reference] to see if other languages that have already an exercise for that concept.
+When implementing an exercise, it can be very useful to look at the exercises the track has already implemented. You can also check the exercise's [general concepts documents][reference] to see if other languages that have already an exercise for that concept.
 
 ## Help
 
