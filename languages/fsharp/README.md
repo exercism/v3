@@ -12,9 +12,9 @@ This area will contain everything needed to launch the F# track, including:
 
 Before we publicize requesting contribution for this language, the following steps should be done.
 
-- [ ] [Convert existing files to new repository structure](../../docs/maintainers/repository-structure.md)
+- [x] [Convert existing files to new repository structure](../../docs/maintainers/repository-structure.md)
 - [ ] Have a kick-off discussion between track maintainers
-- [ ] Fill out the [maintainers.md](./maintainers.md) file (e.g. [C#](../csharp/maintainers.md))
+- [x] Fill out the [maintainers.md](./maintainers.md) file
 - [ ] Ensure there is a link to your track's GitHub issues on the [main README.md](../../README.md))
 - [ ] [Write a Concept Exercise implementation guide](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
 - [ ] [List out key Concepts for your language](../../docs/maintainers/determining-concepts.md)
@@ -27,11 +27,11 @@ Before launch, we need all of the following parts to be completed:
 ### Track Structure
 
 - [ ] Implemented 20+ Concept Exercises
-- [ ] [Updated `config.json`](../../docs/maintainers/migrating-your-config-json-files.md)
-  - [ ] Added `version` key
-  - [ ] Added online editor settings
-    - [ ] Added `indent_style`
-    - [ ] Added `indent_size`
+- [x] [Updated `config.json`](../../docs/maintainers/migrating-your-config-json-files.md)
+  - [x] Added `version` key
+  - [x] Added online editor settings
+    - [x] Added `indent_style`
+    - [x] Added `indent_size`
   - [ ] Added Concept Exercises
   - [ ] Added Concepts for all Practice Exercises
 
