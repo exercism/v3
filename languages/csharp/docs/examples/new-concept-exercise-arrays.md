@@ -80,8 +80,6 @@ languages
             └── arrays
                 ├── .docs
                 |   ├── after.md
-                |   ├── cli.md
-                |   ├── debug.md
                 |   ├── hints.md
                 |   ├── instructions.md
                 |   └── introduction.md
