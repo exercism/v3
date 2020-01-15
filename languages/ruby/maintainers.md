@@ -8,4 +8,4 @@ These awesome people help maintain the Ruby track.
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+- Pablo Vicente (Slack: `@pvcarrera`, GitHub: `[@pvcarrera](https://github.com/pvcarrera)`)
