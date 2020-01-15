@@ -65,4 +65,4 @@ We intend for Practice Exercises to be shared across tracks, as they currently a
 
 ### Practice Mode
 
-We also intend to maintain Practice Mode ([formally Independent Mode](https://exercism.io/blog/independent-mode-becomes-practice-mode)), but encourage it as a space for practicing a language that a student knows, rather than learning a new language. It will contain only Practice Exercises and we will make the prerequisite topics on each exercise clearer for those who want to practice certain concepts. Students will be able to ask questions to the community about their exercises, but not directly to mentors.
+We also intend to maintain Practice Mode ([formerly Independent Mode](https://exercism.io/blog/independent-mode-becomes-practice-mode)), but encourage it as a space for practicing a language that a student knows, rather than learning a new language. It will contain only Practice Exercises and we will make the prerequisite topics on each exercise clearer for those who want to practice certain concepts. Students will be able to ask questions to the community about their exercises, but not directly to mentors.
