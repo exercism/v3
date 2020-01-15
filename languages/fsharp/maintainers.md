@@ -4,8 +4,10 @@ These awesome people help maintain the F# track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Erik Schierboom (Slack: `@ErikSchierboom`, GitHub: `@ErikSchierboom`)
+- Rob Keim (Slack: `@Rob Keim`, GitHub: `@robkeim`)
+- Davide Lettieri (Slack: `@Davide Lettieri`, GitHub: `@davidelettieri`)
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+None yet.
