@@ -9,4 +9,4 @@ These awesome people help maintain the C# track.
 
 ## Contributing Maintainers
 
-None yet.
+- Brandon Everett (Slack: `@Brandon Everett`, GitHub: [bmeverett](https://github.com/bmeverett))
