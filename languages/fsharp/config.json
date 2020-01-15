@@ -1,0 +1,21 @@
+{
+  "language": "F#",
+  "active": true,
+  "blurb": "F# is a strongly-typed, functional language that is part of Microsoft's .NET language stack. Although F# is great for data science problems, it can elegantly handle almost every problem you throw at it.",
+  "version": 3,
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 4
+  },
+  "exercises": {
+    "concept": [],
+    "practice": []
+  },
+  "foregone": [
+    "flatten-array",
+    "nucleotide-codons",
+    "paasio",
+    "point-mutations",
+    "counter"
+  ]
+}
