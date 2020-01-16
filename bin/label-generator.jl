@@ -7,7 +7,7 @@ function main(outfile)
     for slug in readdir("languages")
         isdir(joinpath("languages", slug)) || continue
         out *= """track/$slug:
-            - languages/$slug/**/*
+          - languages/$slug/**/*
 
         """
     end
