@@ -14,8 +14,9 @@
 
 ### 3. Calculate the years before reaching the desired balance
 
-- To calculate the years, one has to keep looping until the desired balance is reached.
+- To calculate the years, one has to keep looping until the desired balance is reached. C# has several [looping constructs][docs.microsoft.com-loops].
 
 [docs-microsoft.com-system.math]: https://docs.microsoft.com/en-us/dotnet/api/system.math?view=netcore-3.0
 [docs.microsoft.com-floating_point_numeric_types]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types
 [docs.microsoft.com-real_literals]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types#real-literals
+[docs.microsoft.com-loops]: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/branches-and-loops-local#use-loops-to-repeat-operations
