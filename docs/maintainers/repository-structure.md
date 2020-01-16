@@ -41,8 +41,8 @@ The following labels are used to categorize [issues in the v3 repository][github
 - [type/improve-exercise][github-issues-type-improve-exercise]: improving exercises.
 - [type/new-reference][github-issues-type-new-reference]: new reference documents.
 - [type/improve-reference][github-issues-type-improve-reference]: improving reference documents.
-- [status/help-wanted][github-issues-status-help-wanted]: help wanted.
-- [status/in-progress][github-issues-status-in-progress]: being worked on.
+- [status/help-wanted][github-issues-status-help-wanted]: anyone wanting to help can do so.
+- [status/in-progress][github-issues-status-in-progress]: the issue is being worked on by someone.
 
 Each language also has its own label:
 
