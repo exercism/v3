@@ -8,5 +8,5 @@ The value it holds is still [mutable](https://developer.mozilla.org/en-US/docs/G
 ```javascript
 const NAME = "Bob";
 
-const NAME = "Steve"; // This will fail
+NAME = "Steve"; // TypeError: Assignment to constant variable
 ```
