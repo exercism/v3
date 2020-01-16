@@ -1,6 +1,6 @@
 # `var`
 
-The `var` keyword declares and initializes a new variable. It can be optionally defined to a value.
+The `var` keyword declares and initializes a new variable. It can be optionally assigned to a value.
 ```javascript
 var arrow;
 arrow = "->";
