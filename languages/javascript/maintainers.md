@@ -11,3 +11,4 @@ TODO: add senior maintainers
 - Adam Morris (Slack: `@Adam Morris`, GitHub: [aimorris](https://github.com/aimorris))
 - Georg Tavonius (Slack: `@Georg Tavonius`, GitHub: [Calamari](https://github.com/Calamari))
 - Pedro Romano (Slack: `@paparomeo`, GitHub: [paparomeo](https://github.com/paparomeo))
+- Ayato Hayashi (Slack: `@hayashi-ay`, GitHub: [hayashi-ay](https://github.com/hayashi-ay))
