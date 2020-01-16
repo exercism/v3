@@ -19,4 +19,4 @@ A _trivial_ Concept is one where we can reasonably assume that most programmers 
 
 Every new concept introducted, regardless of how _trivial_ it seems, must have some attention give to it in the exercise's introductions. Each should focus on how that Concept is applied in the given language, with links to learn more on the topic. If there is nothing special about it, a language-agnostic link is helpful.
 
-All Concepts covered in a Concept Exericse must either by taught by it, or must be marked as a prerequisite in the `config.json`.
+All Concepts covered in a Concept Exercise must either be taught by it, or must be marked as a prerequisite in the `config.json`.
