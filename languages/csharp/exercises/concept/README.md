@@ -1,6 +1,6 @@
 # C&#35; concept exercises
 
-The concept exercises are based on this [list of concepts][docs-concept-exercises].
+The concept exercises are based on this [list of concepts][reference-shared].
 
 ## Implemented exercises
 
@@ -25,7 +25,7 @@ Thanks for wanting to contribute to the C# track's concept exercises! Contributi
 
 To contribute, please find and work on one of the [new exercise issues][issues-new-exercise] or [improve exercise issues][issues-improve-exercise].
 
-[docs-concept-exercises]: ../../reference/README.md
+[reference-shared]: ../../reference/README.md
 [reference]: ./reference.md
 [concept-exercises]: ./concept
 [concept-exercise-bitwise-operations]: ./bitwise-operations
