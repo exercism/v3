@@ -16,4 +16,4 @@ Generally there should be only one new concept introduced per concept exercise. 
 It should then get some attention in the introduction to that exercise with links on the topic -- even if it is basically just teaching operators `+.*/`.
 The focus in the introduction on _trivial_ concepts should be the same as on other concept introductions: how is it done in this language? If there is nothing special about it, a language-agnostic link is helpful.
 
-Apart from trivial concepts: If a concept exercise requires another concept to solve it, that should be a prerequisite. For example a concept exercise on floating point numbers that requires a `loop` should have a concept exercise on `loops` as prerequisite.
+Apart from trivial concepts, if a Concept Exercise requires another concept to solve it, that should be a prerequisite. For example, a Concept Exercise on floating point numbers that requires using loops should have the `loops` concept as a prerequisite.
