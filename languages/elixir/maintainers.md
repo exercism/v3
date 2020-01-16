@@ -4,8 +4,11 @@ These awesome people help maintain the Elixir track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Devon Estes (Slack: `@devon`, GitHub: [devonestes](https://github.com/devonestes))
+- Cohen Carlisle (Slack: `@Cohen Carlisle`, GitHub: [cohen-carlisle](https://github.com/cohen-carlisle))
+- Tim Austin (Slack: `@neenjaw`, GitHub: [neenjaw](https://github.com/neenjaw))
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+- Nathan Chere (Slack: @nathanchere, GitHub: [nathanchere](https://github.com/nathanchere), GitLab: [nathanchere](https://gitlab.com/nathanchere))
+
