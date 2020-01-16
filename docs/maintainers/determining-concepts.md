@@ -14,7 +14,7 @@ Filling out the concepts will be iterative, it is hard to get this right immedia
 
 Generally only **one new Concept** should be introduced per Concept Exercise. 
 
-In order to keep the exercises interesting, maintainers may choose to multiple _trivial_ Concepts in one exercise.
+In order to keep the exercises interesting, maintainers may choose to introduce multiple _trivial_ Concepts in one exercise.
 A _trivial_ Concept is one where we can reasonably assume that a programmer will quickly grasp it, because they will generally be learning a remapping of syntax for existing knowledge. Examples might be basic number usage (`+-/*`), or conditionals (`if/else`).
 
 Every new concept introducted, regardless of how _trivial_ it seems, must have some attention give to it in the exercise's introductions. Each should focus on how that Concept is applied in the given language, with links to learn more on the topic. If there is nothing special about it, a language-agnostic link is helpful.
