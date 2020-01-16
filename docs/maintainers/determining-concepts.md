@@ -2,7 +2,7 @@
 
 It is worth reading the start of the [Concept Exercises](../concept-exercises.md) file to familiarise yourself with Concept Exercises and why writing out Concepts is important.
 
-To determine which Concept Exercises should be written for your language, should should first compile a list of your language's Concepts. There are various resources to use when compiling this list: books, (official) documentation, your own experiences and the [concepts listed in this repository](../../reference/concepts/README.md).
+To determine which Concept Exercises should be written for your language, you should first compile a list of your language's Concepts. There are various resources to use when compiling this list: books, (official) documentation, your own experiences and the [concepts listed in this repository](../../reference/concepts/README.md).
 
 As many languages use the same Concepts (but possibly implemented differently), it can greatly help to look at what other languages have already done in this regard. See the [C# concepts](../../languages/csharp/reference/README.md) for an example.
 
