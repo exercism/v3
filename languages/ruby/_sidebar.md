@@ -1,0 +1,12 @@
+- [Start here](/)
+- Docs
+- [Languages](/languages/README.md)
+  - [Ruby](/languages/ruby/README.md)
+    - [Docs](/languages/ruby/docs/README.md)
+    - [Exercises](/languages/ruby/exercises/README.md)
+    - [Reference](/languages/ruby/reference/README.md)
+- Reference
+  - [Concepts](/reference/concepts/README.md)
+  - [Paradigms](/reference/paradigms/README.md)
+  - [Tooling](/reference/tooling/README.md)
+  - [Types](/reference/types/README.md)

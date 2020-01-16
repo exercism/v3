@@ -7,6 +7,7 @@ Thanks for wanting to contribute to one of Exercism's language tracks! Contribut
 To contribute, please select the language you'd like to contribute to:
 
 - [C][c]
+- [C++][cpp]
 - [C#][csharp]
 - [Dart][dart]
 - [F#][fsharp]
@@ -20,6 +21,7 @@ To contribute, please select the language you'd like to contribute to:
 - [Typescript][typescript]
 
 [c]: ./c/README.md
+[cpp]: ./cpp/README.md
 [csharp]: ./csharp/README.md
 [dart]: ./dart/README.md
 [fsharp]: ./fsharp/README.md

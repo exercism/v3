@@ -1,12 +1,12 @@
-# Elixir
+# PureScript
 
-Welcome to the workspace for Exercism v3's Elixir track!
+Welcome to the workspace for Exercism v3's PureScript track!
 
-This area will contain everything needed to launch the Elixir track, including:
+This area will contain everything needed to launch the PureScript track, including:
 
 - The new exercises and `config.json` file.
-- Reference documentation that help explain Elixir concepts for which no appropriate online document could be found.
-- Elixir-specific documentation for contributors.
+- Reference documentation that help explain PureScript concepts for which no appropriate online document could be found.
+- PureScript-specific documentation for contributors.
 
 ## Preparation Status
 
@@ -27,10 +27,10 @@ Before launch, we need all of the following parts to be completed:
 
 - [ ] Implemented 20+ Concept Exercises
 - [ ] [Updated `config.json`](../../docs/maintainers/migrating-your-config-json-files.md)
-  - [x] Added `version` key
-  - [x] Added online editor settings
-    - [x] Added `indent_style`
-    - [x] Added `indent_size`
+  - [ ] Added `version` key
+  - [ ] Added online editor settings
+    - [ ] Added `indent_style`
+    - [ ] Added `indent_size`
   - [ ] Added Concept Exercises
   - [ ] Added Concepts for all Practice Exercises
 

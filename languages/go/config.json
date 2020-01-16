@@ -1,0 +1,15 @@
+{
+  "language": "Go",
+  "active": true,
+  "blurb": "Go is a compiled, open source programming language with a small, consistent syntax, a powerful standard library, and fantastic tooling. It's a great fit for web backends and command-line tools and has meanwhile established itself as `the language of the cloud`.",
+  "version": 3,
+  "online_editor": {
+    "indent_style": "tab",
+    "indent_size": 4
+  },
+  "ignore_pattern": "example(?!.*test)",
+  "exercises": {
+    "concept": [],
+    "practice": []
+  }
+}
