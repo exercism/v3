@@ -7,7 +7,7 @@
     - [Determining concepts](/docs/maintainers/determining-concepts.md)
     - [Migrating your config.json](/docs/maintainers/migrating-your-config-json-files.md)
     - [Repository structure](/docs/maintainers/repository-structure.md)
+    - [Website](/docs/maintainers/website.md)
     - [Writing a Concept Exercise](/docs/maintainers/writing-a-concept-exercise-github-issue.md)
 - [Languages](/languages/README.md)
 - [Reference](/reference/README.md)
-
