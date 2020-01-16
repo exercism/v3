@@ -1,0 +1,75 @@
+documentation:
+  - docs/**/*
+
+track/bash:
+    - languages/bash/**/*
+
+track/c:
+    - languages/c/**/*
+
+track/common-lisp:
+    - languages/common-lisp/**/*
+
+track/cpp:
+    - languages/cpp/**/*
+
+track/csharp:
+    - languages/csharp/**/*
+
+track/dart:
+    - languages/dart/**/*
+
+track/elixir:
+    - languages/elixir/**/*
+
+track/emacs-lisp:
+    - languages/emacs-lisp/**/*
+
+track/erlang:
+    - languages/erlang/**/*
+
+track/fsharp:
+    - languages/fsharp/**/*
+
+track/go:
+    - languages/go/**/*
+
+track/haskell:
+    - languages/haskell/**/*
+
+track/javascript:
+    - languages/javascript/**/*
+
+track/julia:
+    - languages/julia/**/*
+
+track/kotlin:
+    - languages/kotlin/**/*
+
+track/ocaml:
+    - languages/ocaml/**/*
+
+track/purescript:
+    - languages/purescript/**/*
+
+track/python:
+    - languages/python/**/*
+
+track/reasonml:
+    - languages/reasonml/**/*
+
+track/ruby:
+    - languages/ruby/**/*
+
+track/scala:
+    - languages/scala/**/*
+
+track/scheme:
+    - languages/scheme/**/*
+
+track/typescript:
+    - languages/typescript/**/*
+
+track/x86-64-assembly:
+    - languages/x86-64-assembly/**/*
+
