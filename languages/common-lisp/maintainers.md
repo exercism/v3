@@ -4,7 +4,7 @@ These awesome people help maintain the Common Lisp track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Mark Simpson (Slack: `@mjs`, GitHub: [verdammelt](https://github.com/verdammelt))
 
 ## Contributing Maintainers
 

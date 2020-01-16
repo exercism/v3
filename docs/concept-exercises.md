@@ -71,20 +71,20 @@ See the C# floating-point-numbers exercise's [config.json file][csharp-meta-conf
 
 ## Track Structure
 
-### `exercises/.docs/cli.md`
+### `exercises/shared/.docs/cli.md`
 
 This file contains information on how to work with the exercise when using the CLI to download and submit the exercise.
 
 See the C# track's [cli.md file][csharp-docs-cli.md] for an example.
 
-### `exercises/.docs/debug.md`
+### `exercises/shared/.docs/debug.md`
 
 This file explains how a user that is coding in the browser can still do "debugging."
 
 See the C# track's [debug.md file][csharp-docs-debug.md] for an example.
 
-[csharp-docs-cli.md]: ../languages/csharp/exercises/.docs/cli.md
-[csharp-docs-debug.md]: ../languages/csharp/exercises/.docs/debug.md
+[csharp-docs-cli.md]: ../languages/csharp/exercises/shared/.docs/cli.md
+[csharp-docs-debug.md]: ../languages/csharp/exercises/shared/.docs/debug.md
 [csharp-docs-after.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/after.md
 [csharp-docs-hints.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/hints.md
 [csharp-docs-introduction.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
