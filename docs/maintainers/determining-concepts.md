@@ -12,8 +12,11 @@ Filling out the concepts will be iterative, it is hard to get this right immedia
 
 ## Concept Exercises
 
-Generally there should be only one new concept introduced per concept exercise. There might be exceptions for _trivial_ concepts (like e.g. `int` in C#) that could be introduced in other concept exercises (e.g. `conditionals`).
-It should then get some attention in the introduction to that exercise with links on the topic -- even if it is basically just teaching operators `+.*/`.
-The focus in the introduction on _trivial_ concepts should be the same as on other concept introductions: how is it done in this language? If there is nothing special about it, a language-agnostic link is helpful.
+Generally only **one new concept** should be introduced per concept exercise. 
 
-Apart from trivial concepts, if a Concept Exercise requires another concept to solve it, that should be a prerequisite. For example, a Concept Exercise on floating point numbers that requires using loops should have the `loops` concept as a prerequisite.
+In order to keep the exercises interesting, maintainers may choose to multiple _trivial_ Concepts in one exercise.
+A _trivial_ Concept is one where we can reasonably assume that a programmer will quickly grasp it, because they will generally be learning a remapping of syntax for existing knowledge. Examples might be basic number usage (`+-/*`), or conditionals (`if/else`).
+
+Every new concept introducted, regardless of how _trivial_ it seems, must have some attention give to it in the exercise's introductions. Each should focus on how that Concept is applied in the given language, with links to learn more on the topic. If there is nothing special about it, a language-agnostic link is helpful.
+
+All Concepts covered in a Concept Exericse must either by taught by it, or must be marked as a prerequisite in the `config.json`.
