@@ -24,7 +24,8 @@ Each track has its own directory containing the following files and directories:
 - **config.json** The updated config.json for a track, with the practice exercises removed to avoid noise.
 - **docs:** This directory contains files for both the public, and maintainers, describing the C# v3 track and how to contribute. It is envisioned that these documents will be linked to from issues and discussions to provide canonical answers or guidance.
 - **exercises:** The exercises for that language.
-  - **.docs:** Exercise documentation shared across all exercises for that language.
+  - **shared:** Exercise files shared across all exercises for that language.
+    - **.docs:** Exercise documentation shared across all exercises for that language.
   - **concept:** The Concept Exercises for that language.
   - **practice:** The Practice Exercises for that language.
 - **README.md:** The track's README, which should contain a short description of the goal of the repository as well as the status of the track's v3 transition. A template is provided during the bootstrapping process.
