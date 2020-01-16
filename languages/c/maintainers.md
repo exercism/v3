@@ -4,10 +4,10 @@ These awesome people help maintain the C track.
 
 ## Senior Maintainers
 
-- ryanplusplus (Slack: `@ryanplusplus`, Github: [patricksjackson](https://github.com/ryanplusplus))
+- ryanplusplus (Slack: `@ryanplusplus`, Github: [ryanplusplus](https://github.com/ryanplusplus))
 - patricksjackson (Slack: `@Patrick`, Github: [patricksjackson](https://github.com/patricksjackson))
 - wolf99 (Slack: `@wolf99`, Github: [wolf99](https://github.com/wolf99))
-- RealBarrettBrown (Github: [patricksjackson](https://github.com/RealBarrettBrown))
+- RealBarrettBrown (Github: [RealBarrettBrown](https://github.com/RealBarrettBrown))
 
 ## Contributing Maintainers
 

@@ -9,4 +9,5 @@ These awesome people help maintain the C# track.
 
 ## Contributing Maintainers
 
-None yet.
+- Brandon Everett (Slack: `@Brandon Everett`, GitHub: [bmeverett](https://github.com/bmeverett))
+- Nathan Chere (Slack: @nathanchere, GitHub: [nathanchere](https://github.com/nathanchere), GitLab: [nathanchere](https://gitlab.com/nathanchere))
