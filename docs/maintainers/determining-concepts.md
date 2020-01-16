@@ -1,14 +1,14 @@
 # Choosing and defining Concepts
 
-It is worth reading the start of the [Concept Exercises](../concept-exercises.md) file to familiarise yourself with Concept Exercises and why writing out concepts is important.
+It is worth reading the start of the [Concept Exercises](../concept-exercises.md) file to familiarise yourself with Concept Exercises and why writing out Concepts is important.
 
 To determine which Concept Exercises should be written for your language, should should first compile a list of your language's Concepts. There are various resources to use when compiling this list: books, (official) documentation, your own experiences and the [concepts listed in this repository](../../reference/concepts/README.md).
 
-As many languages use the same concepts (but possibly implemented differently), it can greatly help to look at what other languages have already done in this regard. See the [C# concepts](../../languages/csharp/reference/README.md) for an example.
+As many languages use the same Concepts (but possibly implemented differently), it can greatly help to look at what other languages have already done in this regard. See the [C# concepts](../../languages/csharp/reference/README.md) for an example.
 
-It can also be helpful to group related concepts. For example, the Classes, Polymorphism and Inheritance concepts are all object-oriented concepts, which can then be grouped as "Object-oriented concepts".
+It can also be helpful to group related Concepts. For example, the Classes, Polymorphism and Inheritance Concepts are all object-oriented Concepts, which can then be grouped as "Object-oriented concepts".
 
-Filling out the concepts will be iterative, it is hard to get this right immediately. While creating concepts exercises, you'll probably find missing concepts or perhaps want to split out concepts.
+Filling out the Concepts will be iterative, it is hard to get this right immediately. While creating concepts exercises, you'll probably find missing concepts or perhaps want to split out concepts.
 
 When starting this process, we **strongly** recommend you seek help from others who have defined Concepts, by asking questions on the [#v3 channel on Slack](https://exercism-team.slack.com/archives/CR91YFNG3).
 
