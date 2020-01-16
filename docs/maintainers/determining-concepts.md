@@ -12,7 +12,7 @@ Filling out the concepts will be iterative, it is hard to get this right immedia
 
 ## Concept Exercises
 
-Generally only **one new concept** should be introduced per concept exercise. 
+Generally only **one new concept** should be introduced per Concept Exercise. 
 
 In order to keep the exercises interesting, maintainers may choose to multiple _trivial_ Concepts in one exercise.
 A _trivial_ Concept is one where we can reasonably assume that a programmer will quickly grasp it, because they will generally be learning a remapping of syntax for existing knowledge. Examples might be basic number usage (`+-/*`), or conditionals (`if/else`).
