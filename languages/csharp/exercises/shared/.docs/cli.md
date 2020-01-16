@@ -4,8 +4,7 @@ You can run the tests by opening a command prompt in the exercise's directory, a
 
 Initially, only the first test will be enabled. This is to encourage you to solve the exercise one step at a time. Once you get the first test passing, remove the `Skip` property from the next test and work on getting that test passing.
 
-Once none of the tests are skipped and they are all passing, you can submit your solution by opening a command prompt in the exercise's directory and running the
-using [`exercism submit` command][docs-exercism-cli].
+Once none of the tests are skipped and they are all passing, you can submit your solution by opening a command prompt in the exercise's directory and running the [`exercism submit` command][docs-exercism-cli].
 
 [docs-dotnet-test]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test?tabs=netcore21
 [docs-exercism-cli]: https://exercism.io/cli
