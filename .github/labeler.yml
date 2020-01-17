@@ -19,6 +19,9 @@ track/csharp:
 track/dart:
   - languages/dart/**/*
 
+track/delphi:
+  - languages/delphi/**/*
+
 track/elixir:
   - languages/elixir/**/*
 
@@ -72,4 +75,3 @@ track/typescript:
 
 track/x86-64-assembly:
   - languages/x86-64-assembly/**/*
-
