@@ -8,4 +8,4 @@ TODO: add senior maintainers
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+- Oleksii Filonenko (Slack: `@Oleksii Filonenko`, GitHub: [filalex77](https://github.com/filalex77))
