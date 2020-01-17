@@ -1,5 +1,5 @@
 # `let`
-The `let` keyword declares and initializes a new variable. It can be optionally defined to a value.
+The `let` keyword declares and initializes a new [variable](https://developer.mozilla.org/en-US/docs/Glossary/Variable). It can be optionally defined to a value.
 ```javascript
 let arrow;
 arrow = "->";
@@ -9,7 +9,7 @@ arrow = "->";
 let arrow = "->";
 ```
 
-Variables declared using the `let` keyword have scope in the block in which they are defined, and any contained sub-blocks. The main difference between `let` and [`var`](https://github.com/exercism/v3/blob/master/languages/javascript/keywords/var.md) is that the scope of `var` is the entire function.
+Variables declared using the `let` keyword have [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope) in the block in which they are defined, and any contained sub-blocks. The main difference between `let` and [`var`](var.md) is that the scope of `var` is the entire function in which it was declared.
 ```javascript
 function bob() {
   console.log(name); // Variable name is undefined
