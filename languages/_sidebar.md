@@ -8,7 +8,7 @@
   - [Common Lisp](/languages/common-list/README.md)
   - [Dart](/languages/dart/README.md)
   - [Elixir](/languages/elixir/README.md)
-  - [Emacs LISP](/languages/emacs-lisp/README.md)
+  - [Emacs Lisp](/languages/elisp/README.md)
   - [Erlang](/languages/erlang/README.md)
   - [F#](/languages/fsharp/README.md)
   - [Go](/languages/go/README.md)
