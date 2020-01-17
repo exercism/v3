@@ -12,7 +12,7 @@ This area will contain everything needed to launch the Go track, including:
 
 Before we publicize requesting contribution for this language, the following steps should be done.
 
-- [ ] [Convert existing files to new repository structure](../../docs/maintainers/repository-structure.md)
+- [x] [Convert existing files to new repository structure](../../docs/maintainers/repository-structure.md)
 - [ ] Have a kick-off discussion between track maintainers
 - [ ] Fill out the [maintainers.md](./maintainers.md) file (e.g. [C#](../csharp/maintainers.md))
 - [x] Ensure there is a link to your track's GitHub issues on the [main README.md](../../README.md)
@@ -42,8 +42,8 @@ Before launch, we need all of the following parts to be completed:
 
 ### Test Runner
 
-- [ ] Build Test Runner
-- [ ] Deploy Test Runner
+- [x] Build Test Runner
+- [x] Deploy Test Runner
 
 ## Extra magic
 
@@ -51,5 +51,5 @@ These extra steps will make your track better, but are optional.
 
 ### Analyzer
 
-- [ ] Build Analyzer
-- [ ] Deploy Analyzer
+- [x] Build Analyzer
+- [x] Deploy Analyzer
