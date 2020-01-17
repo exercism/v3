@@ -10,5 +10,6 @@ These awesome people help maintain the Elixir track.
 
 ## Contributing Maintainers
 
-- Nathan Chere (Slack: @nathanchere, GitHub: [nathanchere](https://github.com/nathanchere), GitLab: [nathanchere](https://gitlab.com/nathanchere))
+- Christopher Eyre (Slack: `@chriseyre2000`, GitHub: [chriseyre2000](https://github.com/chriseyre2000))
+- Nathan Chere (Slack: `@nathanchere`, GitHub: [nathanchere](https://github.com/nathanchere), GitLab: [nathanchere](https://gitlab.com/nathanchere))
 - Oleksii Filonenko (Slack: `@Oleksii Filonenko`, GitHub: [filalex77](https://github.com/filalex77))
