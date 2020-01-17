@@ -22,8 +22,8 @@ track/dart:
 track/elixir:
   - languages/elixir/**/*
 
-track/emacs-lisp:
-  - languages/emacs-lisp/**/*
+track/elisp:
+  - languages/elisp/**/*
 
 track/erlang:
   - languages/erlang/**/*
