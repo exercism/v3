@@ -13,4 +13,4 @@ For further reading there is an introduction to [testing in Go][testing-in-go] i
 [docs-exercism-cli]: https://exercism.io/cli
 [docs-run-unit-tests-visual-studio-code]: https://code.visualstudio.com/docs/languages/go#_test
 [docs-run-unit-tests-goland]: https://www.jetbrains.com/help/go/performing-tests.html
-[testing-in-go]: ../../reference/testing.md
+[testing-in-go]: ../../../reference/testing.md
