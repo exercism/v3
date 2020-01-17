@@ -27,10 +27,10 @@ Before launch, we need all of the following parts to be completed:
 
 - [ ] Implemented 20+ Concept Exercises
 - [ ] [Updated `config.json`](../../docs/maintainers/migrating-your-config-json-files.md)
-  - [ ] Added `version` key
-  - [ ] Added online editor settings
-    - [ ] Added `indent_style`
-    - [ ] Added `indent_size`
+  - [X] Added `version` key
+  - [X] Added online editor settings
+    - [X] Added `indent_style`
+    - [X] Added `indent_size`
   - [ ] Added Concept Exercises
   - [ ] Added Concepts for all Practice Exercises
 
