@@ -12,18 +12,18 @@ let arrow = "->";
 Variables declared using the `let` keyword have [scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope) in the block in which they are defined, and any contained sub-blocks. The main difference between `let` and [`var`](var.md) is that the scope of `var` is the entire function in which it was declared.
 ```javascript
 function bob() {
-  console.log(name); // Variable name is undefined
   {
     let name = "Bob";
   }
+  console.log(name); // Variable name is undefined
 }
 ```
 
 ```javascript
 function steve() {
-  console.log(name); // Variable name is defined, as "Steve"
   {
     var name = "Steve";
   }
+  console.log(name); // Variable name is defined, as "Steve"
 }
 ```
