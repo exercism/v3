@@ -1,6 +1,10 @@
 # Go
 
+This is a list of concepts of Go. They are categorized into `OOP`, `Functional` and `General`. The `Specialties` category tries to mention concepts that are somewhat special to Go. A concept can belong to multiple categories.
+
 ## Specialties
+
+Concepts that are special to Go or are used differently to a vast majority of other languages.
 
 - Channels
 - Code Formatting
@@ -79,6 +83,8 @@
 - Type Inference
 
 ## Types
+
+Types are not really concepts but it might be helpful to have as list of types Go has as some might need an extra introduction. Some are already added as a concept above, e.g. `channels`, `interfaces`, etc. as there are special concepts around some of Go's types.
 
 - array (rarely used)
 - bool
