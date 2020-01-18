@@ -2,8 +2,6 @@
 
 These awesome people help maintain the Java track.
 
-<!-- sorted alphabetically, lexographically -->
-
 ## Senior Maintainers
 
 None yet.
