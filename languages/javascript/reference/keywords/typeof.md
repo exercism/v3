@@ -35,20 +35,20 @@ platforms). Consequently, `null` had 0 as type tag, hence the `"object"`
 
 [info-prototype-inheritance]: ../info/prototype_inheritance.md
 [keyword-instanceof]: ./instanceof.md
-[language-csharp]: /languages/csharp/README.md
-[language-ruby]: /languages/csharp/README.md
+[language-csharp]: ../../../csharp/README.md
+[language-ruby]: ../../../languages/csharp/README.md
 
-[type-array]: /reference/types/array.md
-[type-bigint]: /reference/types/big_integer.md
-[type-boolean]: /reference/types/boolean.md
-[type-function]: /reference/types/function.md
-[type-null]: /reference/types/null.md
-[type-number]: /reference/types/number.md
-[type-object]: /reference/types/object.md
-[type-pointer]: /reference/types/pointer.md
-[type-string]: /reference/types/string.md
-[type-symbol]: /reference/types/symbol.md
-[type-undefined]: /reference/concepts/undefined.md
+[type-array]: ../../../../reference/types/array.md
+[type-bigint]: ../../../../reference/types/big_integer.md
+[type-boolean]: ../../../../reference/types/boolean.md
+[type-function]: ../../../../reference/types/function.md
+[type-null]: ../../../../reference/types/null.md
+[type-number]: ../../../../reference/types/number.md
+[type-object]: ../../../../reference/types/object.md
+[type-pointer]: ../../../../reference/types/pointer.md
+[type-string]: ../../../../reference/types/string.md
+[type-symbol]: ../../../../reference/types/symbol.md
+[type-undefined]: ../../../../reference/concepts/undefined.md
 
 [ref-null-pointer-typeof]: https://2ality.com/2013/10/typeof-null.html
 [csharp-operator-is]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/is

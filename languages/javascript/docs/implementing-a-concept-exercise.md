@@ -1,18 +1,18 @@
-# How to implement a JavaScript concept exercise
+# How to implement a JavaScript Concept Exercise
 
-This document describes how to implement a concept exercise for the JavaSCript track. As this document is generic, the following placeholders are used:
+This document describes how to implement a Concept Exercise for the JavaSCript track. As this document is generic, the following placeholders are used:
 
 - `<slug>`: the name of the exercise in snake_case (e.g. `anonymous-methods`).
-- `<concepts>`: the concepts the exercise is about (e.g. `loops`),
-- `<concept-1>`: a single concept slug,
-- `<prerequisite-n>`: a single concept slug,
+- `<concepts>`: the Concepts the exercise is about (e.g. `loops`),
+- `<concept-1>`: a single Concept slug,
+- `<prerequisite-n>`: a single Concept slug,
 - `<uuid>`: a _new_ v4 UUID (random!)
 - `<first-and-last-name>`: your first and last name (e.g. `Derk-Jan Karrenbeld`)
 - `<git-email>`: the email address you use for git (e.g. `derk-jan+github@karrenbeld.info`)
 
-Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue. Having done this, please read the [JavaScript concept exercises introduction][concept-exercises]. If you have come up with something completely new, create a new issue _first_ so we can discuss the concept exercise.
+Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue. Having done this, please read the [JavaScript Concept exercises introduction][concept-exercises]. If you have come up with something completely new, create a new issue _first_ so we can discuss the Concept Exercise.
 
-To implement a concept exercise, the following files must be created:
+To implement a Concept Exercise, the following files must be created:
 
 <pre>
 languages
@@ -37,7 +37,7 @@ languages
 
 ## Step 1: add .docs/introduction.md
 
-This file contains an introduction to the concept. It should be explicit about what the exercise teaches and maybe provide a brief introduction to the concepts, but not give away so much that the user doesn't have to do any work to solve the exercise.
+This file contains an introduction to the Concept. It should be explicit about what the exercise teaches and maybe provide a brief introduction to the concepts, but not give away so much that the user doesn't have to do any work to solve the exercise.
 
 ## Step 2: add .docs/instructions.md
 
@@ -49,7 +49,7 @@ If the user gets stuck, we will allow them to click a button requesting a hint, 
 
 ## Step 4: add .docs/after.md (optional):
 
-Once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught.
+Once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the Concept taught.
 
 ## Step 5: add .meta/config.json
 
@@ -57,7 +57,7 @@ This file contains metadata for the exercise. The metadata includes paths to the
 
 ## Step 6: update languages/javascript/config.json
 
-An entry should be added to the track's `config.json` file for the new concept exercise:
+An entry should be added to the track's `config.json` file for the new Concept Exercise:
 
 ```json
 {
@@ -91,7 +91,7 @@ The `package.json` file must be edited:
 ```diff
 -  "name": "@exercism/javascript-numbers",
 +  "name": "@exercism/javascript-<slug>",
--  "description": "Exercism concept exercise on <concepts>",
+-  "description": "Exercism Concept Exercise on <concepts>",
 -  "author": "Derk-Jan Karrenbeld <derk-jan+github@karrenbeld.info>",
 +  "author": "<first-and-last-name> <<git-email>>"
    "version": "1.0.0",
@@ -121,11 +121,11 @@ Some exercises could benefit from having an custom representation as generated b
 
 ## Inspiration
 
-When implementing an exercise, it can be very useful to look at the exercises the track has already implemented. You can also check the exercise's [general concepts documents][reference] to see if other languages that have already an exercise for that concept.
+When implementing an exercise, it can be very useful to look at the exercises the track has already implemented. You can also check the exercise's [general concepts documents][reference] to see if other languages that have already an exercise for that Concept.
 
 ## Inspiration
 
-When implementing an exercise, it can be very useful to look at already implemented JavaScript exercises like the [strings][concept-exercise-strings], [numbers][concept-exercise-numbers] or [promises][concept-exercise-promises] exercises. You can also check the exercise's [general concepts documents][reference] to see if other languages have already implemented an exercise for that concept.
+When implementing an exercise, it can be very useful to look at already implemented JavaScript exercises like the [strings][concept-exercise-strings], [numbers][concept-exercise-numbers] or [promises][concept-exercise-promises] exercises. You can also check the exercise's [general concepts documents][reference] to see if other languages have already implemented an exercise for that Concept.
 
 ## Help
 

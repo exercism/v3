@@ -40,7 +40,7 @@ Before launch, we need all of the following parts to be completed:
 ### Representer
 
 - [X] Build Representer
-- [ ] Deploy Representer
+- [X] Deploy Representer
 
 ### Test Runner
 
@@ -54,4 +54,4 @@ These extra steps will make your track better, but are optional.
 ### Analyzer
 
 - [X] Build Analyzer
-- [ ] Deploy Analyzer
+- [X] Deploy Analyzer

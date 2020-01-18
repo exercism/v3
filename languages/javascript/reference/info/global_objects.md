@@ -110,7 +110,7 @@ These objects represent and interact with structured data buffers and data coded
 - `Proxy`
 
 [concept-prototype-inheritance]: ./prototype_inheritance.md
-[concept-scope]: /reference/concepts/scope.md
+[concept-scope]: ../../../../reference/concepts/scope.md
 [concept-strict-mode]: ./strict_mode.md
 [global-object-array]: ../objects/array.md
 [global-object-boolean]: ../objects/boolean.md
@@ -131,5 +131,5 @@ These objects represent and interact with structured data buffers and data coded
 [global-object-typed-array]: ../objects/typed-array.md
 [global-object-weakmap]: ../objects/weakmap.md
 [global-object-weakset]: ../objects/weakset.md
-[type-null]: /reference/types/null.md
+[type-null]: ../../../../reference/types/null.md
 [type-undefined]: ./undefined.md
