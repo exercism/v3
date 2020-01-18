@@ -8,4 +8,4 @@ TODO: add senior maintainers
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+- bemself (Slack: @bemself, GitHub: [bemself](https://github.com/bemself))
