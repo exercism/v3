@@ -1,6 +1,6 @@
 # How to implement a JavaScript Concept Exercise
 
-This document describes how to implement a Concept Exercise for the JavaSCript track. As this document is generic, the following placeholders are used:
+This document describes how to implement a Concept Exercise for the JavaScript track. As this document is generic, the following placeholders are used:
 
 - `<slug>`: the name of the exercise in snake_case (e.g. `anonymous-methods`).
 - `<concepts>`: the Concepts the exercise is about (e.g. `loops`),
