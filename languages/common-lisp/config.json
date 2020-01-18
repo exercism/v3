@@ -1,0 +1,14 @@
+{
+  "language": "Common Lisp",
+  "active": true,
+  "blurb": "A programmable programming language.",
+  "version": 3,
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 2
+  }
+  "exercises": {
+    "concept": [],
+    "practice": []
+  }
+}
