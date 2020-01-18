@@ -42,4 +42,4 @@ Note: Things like `Array` and `Date` are not types, but rather constructors that
 [type-undefined]: ../../../../reference/concepts/undefined.md
 
 [concept-immutable]: ../../../../reference/concepts/immutability.md
-[concept-prototype-inheritance]: ./info/prototype_inheritance.md
+[concept-prototype-inheritance]: ../info/prototype_inheritance.md

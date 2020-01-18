@@ -36,7 +36,7 @@ platforms). Consequently, `null` had 0 as type tag, hence the `"object"`
 [info-prototype-inheritance]: ../info/prototype_inheritance.md
 [keyword-instanceof]: ./instanceof.md
 [language-csharp]: ../../../csharp/README.md
-[language-ruby]: ../../../languages/csharp/README.md
+[language-ruby]: ../../../ruby/README.md
 
 [type-array]: ../../../../reference/types/array.md
 [type-bigint]: ../../../../reference/types/big_integer.md
