@@ -1,0 +1,14 @@
+{
+  "language": "Factor",
+  "active": true,
+  "blurb": "Factor is a modern, dynamically-typed concatenative stack-oriented language, with a simple extensible syntax and Common Lisp-style object system",
+  "version": 3,
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 4
+  },
+  "exercises": {
+    "concept": [],
+    "practice": []
+  }
+}
