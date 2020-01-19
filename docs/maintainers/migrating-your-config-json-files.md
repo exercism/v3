@@ -35,7 +35,7 @@ As can be seen, the existing exercises are temporarily removed from the `config.
 
 ## Conversion script
 
-All of the above changes, except for adding the online editor settings, can be applied automatically using the following [jq command][jq]:
+All of the above changes can be applied automatically using the following [jq command][jq]:
 
 ```
 jq 'del(.foregone)
