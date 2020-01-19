@@ -4,7 +4,7 @@ Welcome to the workspace for Exercism v3's C# track!
 
 This area will contain everything needed to launch the C# track, including:
 
-- The new exercises and `config.json` file.
+- The new Exercises and `config.json` file.
 - Reference documentation that help explain C# concepts for which no appropriate online document could be found.
 - C#-specific documentation for contributors.
 
