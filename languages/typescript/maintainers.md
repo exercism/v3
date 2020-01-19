@@ -8,4 +8,6 @@ TODO: add senior maintainers
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+<!-- sorted alphabetically, lexographically -->
+
+- Maisam Somji (Slack: `@msomji`, GitHub: [msomji](https://github.com/msomji))

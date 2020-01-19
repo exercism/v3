@@ -10,12 +10,5 @@
   "exercises": {
     "concept": [],
     "practice": []
-  },
-  "foregone": [
-    "flatten-array",
-    "nucleotide-codons",
-    "paasio",
-    "point-mutations",
-    "counter"
-  ]
+  }
 }
