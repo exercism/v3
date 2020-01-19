@@ -11,3 +11,4 @@ These awesome people help maintain the C# track.
 
 - Brandon Everett (Slack: `@Brandon Everett`, GitHub: [bmeverett](https://github.com/bmeverett))
 - Nathan Chere (Slack: @nathanchere, GitHub: [nathanchere](https://github.com/nathanchere), GitLab: [nathanchere](https://gitlab.com/nathanchere))
+- Shayna Conner (Slack: `@Shayna Conner`, GitHub: [shaynuhcon](https://github.com/shaynuhcon))
