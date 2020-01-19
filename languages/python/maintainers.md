@@ -5,6 +5,7 @@ These awesome people help maintain the Python track.
 ## Senior Maintainers
 
 - Corey McCandless (Slack: `@cmccandless`, GitHub: [cmccandless](https://github.com/cmccandless))
+- Michael Morehouse (Slack: `@yawpitch`, GitHub: [yawpitch](https://github.com/yawpitch))
 
 ## Contributing Maintainers
 

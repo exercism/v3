@@ -31,6 +31,9 @@ track/emacs-lisp:
 track/erlang:
   - languages/erlang/**/*
 
+track/factor:
+  - languages/factor/**/*
+
 track/fsharp:
   - languages/fsharp/**/*
 
