@@ -20,4 +20,4 @@ const NAME = "Sally"
 ```
 Variables declared using the `const` keyword are [block-scoped](../info/scope.md), meaning they are only accessible within the current block, and any contained sub-blocks.
 
-The value that a variable declared using `const` holds can only be referenced *after* it has been defined. This is known as the [Temporal Dead Zone](https://wesbos.com/temporal-dead-zone/).
+The value that a variable declared using `const` holds can only be referenced *after* it has been defined. This is known as the [Temporal Dead Zone](../info/scope#temporal-dead-zone).
