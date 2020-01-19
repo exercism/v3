@@ -8,6 +8,15 @@ This area will contain everything needed to launch the Go track, including:
 - Reference documentation that help explain Go concepts for which no appropriate online document could be found.
 - Go-specific documentation for contributors.
 
+## Links
+
+[:books: Open Issues](https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fgo) |
+[:gift: Open Pull Requests](https://github.com/exercism/v3/pulls?q=is%3Apr+is%3Aopen+label%3Atrack%2Fgo)
+
+[:house_with_garden:  v3 Docs Website](https://exercism.github.io/v3/#/)
+
+[:gear: Go Concept Reference](https://exercism.github.io/v3/#/languages/go/reference/README)
+
 ## Preparation Status
 
 Before we publicize requesting contribution for this language, the following steps should be done.
@@ -35,12 +44,12 @@ Before launch, we need all of the following parts to be completed:
   - [ ] Added Concept Exercises
   - [ ] Added Concepts for all Practice Exercises
 
-### Representer
+### [Representer](https://github.com/exercism/automated-analysis/blob/master/docs/representers/introduction.md)
 
 - [ ] Build Representer
 - [ ] Deploy Representer
 
-### Test Runner
+### [Test Runner](https://github.com/exercism/automated-tests)
 
 - [x] Build Test Runner
 - [x] Deploy Test Runner
@@ -49,7 +58,15 @@ Before launch, we need all of the following parts to be completed:
 
 These extra steps will make your track better, but are optional.
 
-### Analyzer
+### [Analyzer](https://github.com/exercism/automated-analysis/blob/master/docs/about.md)
 
 - [x] Build Analyzer
 - [x] Deploy Analyzer
+
+## Contributing
+
+[Getting Started for Maintainers](https://exercism.github.io/v3/#/docs/maintainers/README)
+
+[How to implement a Go Concept Exercise](https://exercism.github.io/v3/#/languages/go/docs/implementing-a-concept-exercise)
+
+[Example C# Concept Exercise](https://exercism.github.io/v3/#/languages/csharp/docs/examples/new-concept-exercise-arrays)
