@@ -8,4 +8,3 @@ These awesome people help maintain the Common Lisp track.
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
