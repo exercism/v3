@@ -1,18 +1,17 @@
-# Python
+# Factor
 
-Welcome to the workspace for Exercism v3's Python track!
+Welcome to the workspace for Exercism v3's Factor track!
 
-This area will contain everything needed to launch the Python track, including:
+This area will contain everything needed to launch the Factor track, including:
 
 - The new exercises and `config.json` file.
-- Reference documentation that help explain Python concepts for which no appropriate online document could be found.
-- Python-specific documentation for contributors.
+- Reference documentation that help explain Factor concepts for which no appropriate online document could be found.
+- Factor-specific documentation for contributors.
 
 ## Preparation Status
 
 Before we publicize requesting contribution for this language, the following steps should be done.
 
-- [ ] [Convert existing files to new repository structure](../../docs/maintainers/repository-structure.md)
 - [ ] Have a kick-off discussion between track maintainers
 - [ ] Fill out the [maintainers.md](./maintainers.md) file (e.g. [C#](../csharp/maintainers.md))
 - [x] Ensure there is a link to your track's GitHub issues on the [main README.md](../../README.md)
@@ -37,13 +36,13 @@ Before launch, we need all of the following parts to be completed:
 
 ### Representer
 
-- [x] Build [Representer](https://github.com/exercism/python-representer)
+- [ ] Build Representer
 - [ ] Deploy Representer
 
 ### Test Runner
 
-- [x] Build [Test Runner](https://github.com/exercism/python-test-runner)
-- [x] Deploy Test Runner
+- [ ] Build Test Runner
+- [ ] Deploy Test Runner
 
 ## Extra magic
 
@@ -51,5 +50,5 @@ These extra steps will make your track better, but are optional.
 
 ### Analyzer
 
-- [x] Build [Analyzer](https://github.com/exercism/python-analyzer)
-- [x] Deploy Analyzer
+- [ ] Build Analyzer
+- [ ] Deploy Analyzer
