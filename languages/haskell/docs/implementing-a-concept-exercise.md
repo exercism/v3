@@ -1,4 +1,4 @@
-# How to implement a PureScript concept exercise
+# How to implement a Haskell concept exercise
 
 This document describes the steps required to implement a concept exercise for the Haskell track. As this document is generic, the following placeholders are used:
 
