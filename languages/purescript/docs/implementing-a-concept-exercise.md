@@ -11,10 +11,10 @@ To implement a concept exercise,  the following files need to be created:
 
 <pre>
 languages
-└── PureScript;
+└── PureScript
     └── exercises
         └── concept
-            └── <SLUG>;
+            └── <SLUG>
                 ├── .docs
                 |   ├── instructions.md
                 |   ├── introduction.md
