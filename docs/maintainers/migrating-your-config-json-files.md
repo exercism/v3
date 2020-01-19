@@ -39,7 +39,8 @@ All of the above changes, except for adding the online editor settings, can be a
 
 ```
 jq 'del(.foregone)
-    | .exercises = {"concept": [], "practice": []}
+    | .exercises = {concept: [], practice: []}
+    | .online_editor = {indent_style: "...", indent_size: N}
     | to_entries
     | .[0:1] + [{"key":"version","value":3}] + .[1:]
     | from_entries
