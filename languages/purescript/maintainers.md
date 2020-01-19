@@ -4,7 +4,7 @@ These awesome people help maintain the PureScript track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+None yet.
 
 ## Contributing Maintainers
 
