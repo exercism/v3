@@ -1,0 +1,15 @@
+- [Start here](/)
+- Docs
+- [Languages](/languages/README.md)
+  - [JavaScript](/languages/javascript/README.md)
+    - [Docs](/languages/javascript/docs/README.md)
+    - [Exercises](/languages/javascript/exercises/README.md)
+      - [Concept](/languages/javascript/exercises/concept/README.md)
+      - [Practice](/languages/javascript/exercises/practice/README.md)
+    - [Reference](/languages/javascript/reference/README.md)
+    - [Transitions](/languages/javascript/transitions/README.md)
+- Reference
+  - [Concepts](/reference/concepts/README.md)
+  - [Paradigms](/reference/paradigms/README.md)
+  - [Tooling](/reference/tooling/README.md)
+  - [Types](/reference/types/README.md)
