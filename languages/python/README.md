@@ -43,7 +43,7 @@ Before launch, we need all of the following parts to be completed:
 ### Test Runner
 
 - [x] Build [Test Runner](https://github.com/exercism/python-test-runner)
-- [ ] Deploy Test Runner
+- [x] Deploy Test Runner
 
 ## Extra magic
 
@@ -52,4 +52,4 @@ These extra steps will make your track better, but are optional.
 ### Analyzer
 
 - [x] Build [Analyzer](https://github.com/exercism/python-analyzer)
-- [ ] Deploy Analyzer
+- [x] Deploy Analyzer
