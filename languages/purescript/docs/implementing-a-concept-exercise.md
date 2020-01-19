@@ -1,6 +1,6 @@
 # How to implement a PureScript concept exercise
 
-This document describes the steps required to implement a concept exercise for the PureScript. As this document is generic, the following placeholders are used:
+This document describes the steps required to implement a concept exercise for the PureScript track. As this document is generic, the following placeholders are used:
 
 - `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
 - `<NAME>`: the name of the exercise in PascalCase (e.g. `AnonymousMethods`).
