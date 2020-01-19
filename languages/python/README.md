@@ -37,12 +37,12 @@ Before launch, we need all of the following parts to be completed:
 
 ### Representer
 
-- [ ] Build Representer
+- [x] Build [Representer](https://github.com/exercism/python-representer)
 - [ ] Deploy Representer
 
 ### Test Runner
 
-- [ ] Build Test Runner
+- [x] Build [Test Runner](https://github.com/exercism/python-test-runner)
 - [ ] Deploy Test Runner
 
 ## Extra magic
@@ -51,5 +51,5 @@ These extra steps will make your track better, but are optional.
 
 ### Analyzer
 
-- [ ] Build Analyzer
+- [x] Build [Analyzer](https://github.com/exercism/python-analyzer)
 - [ ] Deploy Analyzer
