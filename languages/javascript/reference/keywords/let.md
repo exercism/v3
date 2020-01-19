@@ -28,3 +28,5 @@ function steve() {
   console.log(name); // Variable name is defined, as "Steve"
 }
 ```
+
+The value held by a variable declared using `let` can only be referenced *after* it has been defined. This is known as the [Temporal Dead Zone](../info/scope#temporal-dead-zone).
