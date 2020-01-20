@@ -4,8 +4,7 @@ These awesome people help maintain the Elm track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
 
 ## Contributing Maintainers
 
-Cedd Burge
+- Cedd Burge (Slack: `@Cedd burge`, GitHub: [ceddlyburge](https://github.com/ceddlyburge), GitLab: [ceddlylburge](https://gitlab.com/ceddlyburge))
