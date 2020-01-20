@@ -22,12 +22,12 @@ languages
                 |   └── after.md (optional)
                 ├── .meta
                 |   ├── config.json
-                |   ├── bower.json
                 |   └── Example.purs
                 ├── src
                 |   └── <NAME>.purs
-                └── test
-                    └── Main.purs
+                ├── test
+                |   └── Main.purs
+                └── bower.json
 </pre>
 
 ## Step 1: add track-specific files
