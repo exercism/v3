@@ -1,0 +1,12 @@
+- [Start here](/)
+- Docs
+- [Languages](/languages/README.md)
+  - [Go](/languages/go/README.md)
+    - [Docs](/languages/go/docs/README.md)
+    - [Exercises](/languages/go/exercises/README.md)
+    - [Reference](/languages/go/reference/README.md)
+- Reference
+  - [Concepts](/reference/concepts/README.md)
+  - [Paradigms](/reference/paradigms/README.md)
+  - [Tooling](/reference/tooling/README.md)
+  - [Types](/reference/types/README.md)
