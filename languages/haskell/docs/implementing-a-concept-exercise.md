@@ -27,8 +27,7 @@ languages
                 |   └── <NAME>.hs
                 ├── test
                 |   └── Main.hs
-                ├── stack.yaml
-                └── <SLUG>.cabal
+                └── stack.yaml
 </pre>
 
 ## Step 1: add track-specific files
@@ -36,9 +35,9 @@ languages
 These are files specific to the PureScript track:
 - `src/<NAME>.hs`: the stub implementation file, which is the starting point for students to work on the exercise.
 - `test/Main.hs`: the test suite.
-- `stack.yaml`: the stack project file.
 - `.meta/Example.hs`: an example implementation that passes all the tests.
-- `<SLUG>.cabal`
+- `stack.yaml`: the stack project file.
+- `package.yaml`: the cabal package file.
 
 ## Step 2: add common files
 
