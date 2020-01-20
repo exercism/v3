@@ -9,4 +9,8 @@ These awesome people help maintain the Go track.
 
 ## Contributing Maintainers
 
-- Hans Donner (Slack `@hans-d`, Github: [hans-d](https://github.com/hans-d/))
+- Hans Donner (Slack: `@hans-d`, Github: [hans-d](https://github.com/hans-d/))
+- Zoltán Onódy (Slack: `@Zoli`, Github: [ZoltanOnody](https://github.com/zoltanonody/))
+- Andrés Zarta (Slack: `@Andrezb`, Github: [andres-zartab](https://github.com/andres-zartab))
+- Sergei Eremeev (Slack: `@Prounckk`, Github: [Prounckk](https://github.com/prounckk/))
+- Michele Caci (Slack: `@MicheleC`, Github: [mcaci](https://github.com/mcaci/))

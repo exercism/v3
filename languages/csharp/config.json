@@ -18,7 +18,7 @@
       {
         "slug": "numbers-floating-point",
         "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
-        "concepts": ["floating-point-numbers", "loops"],
+        "concepts": ["floating-point-numbers", "basic-loops"],
         "prerequisites": [
           "basic-numbers",
           "basic-type-conversion",
@@ -27,7 +27,7 @@
       },
       {
         "slug": "numbers",
-        "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
+        "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
         "concepts": ["basic-numbers", "basic-type-conversion", "conditionals"],
         "prerequisites": []
       },
@@ -51,12 +51,5 @@
       }
     ],
     "practice": []
-  },
-  "foregone": [
-    "lens-person",
-    "nucleotide-codons",
-    "paasio",
-    "point-mutations",
-    "counter"
-  ]
+  }
 }

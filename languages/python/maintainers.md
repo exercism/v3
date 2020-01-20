@@ -5,6 +5,7 @@ These awesome people help maintain the Python track.
 ## Senior Maintainers
 
 - Corey McCandless (Slack: `@cmccandless`, GitHub: [cmccandless](https://github.com/cmccandless))
+- Michael Morehouse (Slack: `@yawpitch`, GitHub: [yawpitch](https://github.com/yawpitch))
 
 ## Contributing Maintainers
 
@@ -12,3 +13,4 @@ These awesome people help maintain the Python track.
 - Bethany Garcia (Slack: `@bethanyg`, Github: [bethanyg](https://github.com/BethanyG))
 - Pedro Romano (Slack: `@paparomeo`, GitHub: [paparomeo](https://github.com/paparomeo))
 - David Gervasoni (Slack: `@david`, GitHub: [davidgerva](https://github.com/davidgerva))
+- Ashley Drake (Slack: `@ash`, Github: [aldraco](https://github.com/aldraco))
