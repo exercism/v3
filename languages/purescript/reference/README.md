@@ -3,10 +3,10 @@
 # Types
 ## Primitive Types
 - [String][type-string]
-- Char
-- Int
-- Number
-- Boolean
+- [Char][type-char]
+- [Int][type-int]
+- [Number][type-number]
+- [Boolean][type-boolean]
 
 ## Non-Primitive Types
 - Array
@@ -21,3 +21,6 @@
 
 [type-string]: ../../../reference/types/string.md
 [type-char]: ../../../reference/types/char.md
+[type-int]: ../../../reference/types/integer.md
+[type-number]: ../../../reference/types/number.md
+[type-boolean]: ../../../reference/types/boolean.md
