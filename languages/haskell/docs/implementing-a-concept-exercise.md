@@ -22,13 +22,13 @@ languages
                 |   └── after.md (optional)
                 ├── .meta
                 |   ├── config.json
-                |   ├── <SLUG>.cabal
                 |   ├── stack.yaml
                 |   └── Example.hs
                 ├── src
                 |   └── <NAME>.hs
-                └── test
-                    └── Main.hs
+                ├── test
+                |   └── Main.hs
+                └── <SLUG>.cabal
 </pre>
 
 ## Step 1: add track-specific files
