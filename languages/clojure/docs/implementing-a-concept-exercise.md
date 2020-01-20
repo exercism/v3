@@ -24,8 +24,7 @@ languages
                 |   ├── config.json
                 |   └── Example.clj
                 ├── &lt;NAME&gt;.clj
-                ├── &lt;NAME&gt;.csproj
-                └── &lt;NAME&gt;Test.cs
+                └── &lt;NAME&gt;_test.clj
 </pre>
 
 ## Step 1: adding track-specific files
