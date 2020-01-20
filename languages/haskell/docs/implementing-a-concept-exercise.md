@@ -22,12 +22,12 @@ languages
                 |   └── after.md (optional)
                 ├── .meta
                 |   ├── config.json
-                |   ├── stack.yaml
                 |   └── Example.hs
                 ├── src
                 |   └── <NAME>.hs
                 ├── test
                 |   └── Main.hs
+                ├── stack.yaml
                 └── <SLUG>.cabal
 </pre>
 
@@ -38,6 +38,7 @@ These are files specific to the PureScript track:
 - `test/Main.hs`: the test suite.
 - `stack.yaml`: the stack project file.
 - `.meta/Example.hs`: an example implementation that passes all the tests.
+- `<SLUG>.cabal`
 
 ## Step 2: add common files
 
