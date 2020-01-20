@@ -7,4 +7,4 @@ These awesome people help maintain the Elm track.
 
 ## Contributing Maintainers
 
-- Cedd Burge (Slack: `@Cedd burge`, GitHub: [ceddlyburge](https://github.com/ceddlyburge), GitLab: [ceddlylburge](https://gitlab.com/ceddlyburge))
+- Cedd Burge (Slack: `@Cedd Burge`, GitHub: [ceddlyburge](https://github.com/ceddlyburge), GitLab: [ceddlylburge](https://gitlab.com/ceddlyburge))
