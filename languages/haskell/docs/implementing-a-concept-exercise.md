@@ -27,6 +27,7 @@ languages
                 |   └── <NAME>.hs
                 ├── test
                 |   └── Main.hs
+                ├── package.yaml
                 └── stack.yaml
 </pre>
 
