@@ -7,9 +7,9 @@ This document describes the steps required to implement a concept exercise for t
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue. Concept exercises should be modelled after the CIS 194 Haskell course at Penn University, either the [Spring 2013][spring-2013] or [Fall 2016][fall-2016] version.
 
-To implement a concept exercise,  the following files need to be created:
+To implement a concept exercise, the following files need to be created:
 
-<pre>
+```
 languages
 └── Haskell
     └── exercises
@@ -22,14 +22,14 @@ languages
                 |   └── after.md (optional)
                 ├── .meta
                 |   ├── config.json
-                |   └── Example.hs
+                |   └── <SLUG>.hs
                 ├── src
                 |   └── <NAME>.hs
                 ├── test
                 |   └── Main.hs
                 ├── package.yaml
                 └── stack.yaml
-</pre>
+```
 
 ## Step 1: add track-specific files
 
