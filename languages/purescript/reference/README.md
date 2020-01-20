@@ -1,6 +1,8 @@
 # PureScript
 
 # Types
+The following types are the types listed on the [PureScript Types Documentation](https://github.com/purescript/documentation/blob/master/language/Types.md).
+
 ## Primitive Types
 - [String][type-string]
 - [Char][type-char]
