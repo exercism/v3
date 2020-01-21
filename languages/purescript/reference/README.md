@@ -4,22 +4,22 @@
 The following types are the types listed on the [PureScript Types Documentation](https://github.com/purescript/documentation/blob/master/language/Types.md).
 
 ## Primitive Types
-- [String][type-string]
+- [Boolean][type-boolean]
 - [Char][type-char]
 - [Int][type-int]
 - [Number][type-number]
-- [Boolean][type-boolean]
+- [String][type-string]
 
 ## Non-Primitive Types
 - [Array][type-array]
-- [Record][type-record]
-- [Tagged Union][type-tagged-union]
-- [Newtype][type-newtype]
-- [Function][type-function]
-- [Polymorphic Type][type-polymorphic]
 - [Constrained Type][type-constrained]
-- [Type Synonym][type-synonym]
+- [Function][type-function]
+- [Newtype][type-newtype]
+- [Polymorphic Type][type-polymorphic]
+- [Record][type-record]
 - [Row][type-row]
+- [Tagged Union][type-tagged-union]
+- [Type Synonym][type-synonym]
 
 [type-string]: ../../../reference/types/string.md
 [type-char]: ../../../reference/types/char.md
@@ -39,12 +39,12 @@ The following types are the types listed on the [PureScript Types Documentation]
 # Concepts
 
 ## Functional Concepts
-- [Recursion][concept-recursion]
+- [Anonymous functions][concept-anonymous-functions]
 - [Higher-order functions][concept-higher-order-functions]
 - [Immutability][concept-immutability]
 - [Partial application][concept-partial-application]
 - [Pure functions][concept-pure-functions]
-- [Anonymous functions][concept-anonymous-functions]
+- [Recursion][concept-recursion]
 
 [concept-recursion]: ../../../reference/concepts/recursion.md
 [concept-higher-order-functions]: ../../../reference/concepts/higher_order_functions.md
