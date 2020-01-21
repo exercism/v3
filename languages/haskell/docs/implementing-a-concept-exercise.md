@@ -26,7 +26,7 @@ languages
                 ├── src
                 |   └── <NAME>.hs
                 ├── test
-                |   └── Main.hs
+                |   └── Tests.hs
                 ├── package.yaml
                 └── stack.yaml
 ```
