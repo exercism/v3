@@ -10,7 +10,7 @@ test = do
 
 ## Cause
 
-Skolem constants are types which only unify with themselves, and a limited range of unification variables. They are used to check polymorphic types, usually when using Rank N Types.
+Skolem constants are types which only unify with themselves, and a limited range of unification variables. They are used to check polymorphic types, usually when using Rank N Types. Unification is the process of verifying that two type variables are compatible. Within do notation, the compiler must unify the type of each line.
 
 We say that a skolem _escapes its scope_ when an attempt is made to unify it with a unification variable which was generated outside the scope in which the skolem was generated.
 
