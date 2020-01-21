@@ -26,7 +26,7 @@ _(This list is sorted alphabetically.)_
 - [Dart][track-dart]
 - [Delphi][track-delphi]
 - [Elixir][track-elixir]
-- [Emacs LISP][track-elisp]
+- [Emacs Lisp][track-emacs-lisp]
 - [Erlang][track-erlang]
 - [F#][track-fsharp]
 - [Factor][track-factor]
