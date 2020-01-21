@@ -22,7 +22,7 @@ languages
                 |   └── after.md (optional)
                 ├── .meta
                 |   ├── config.json (omit for now)
-                |   └── <SLUG>.hs
+                |   └── <SLUG>.hs (example solution)
                 ├── src
                 |   └── <NAME>.hs
                 ├── test
