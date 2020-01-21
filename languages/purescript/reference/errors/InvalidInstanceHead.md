@@ -62,7 +62,7 @@ instance isHomogenousImpl
 ```
 
 Here, we say that, "if you can find me a `RowList` representation for my record
-that satisfies `IsHomogenousRow`, then this record is good to go". Notice how
+that satisfies `IsHomogenousRowList`, then this record is good to go". Notice how
 we're "pattern matching" on the left side of `RowToList` - we don't know what
 `la` is, but we trust the compiler to iron out that little detail for us.
 
