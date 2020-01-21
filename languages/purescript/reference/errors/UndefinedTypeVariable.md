@@ -13,7 +13,7 @@ This error occurs when an undefined type variable appears in a type signature.
 
 In the example, the type variable `a` is undefined.
 
-Note that PureScript requires all type variables to be defined in type signatures, unlike in Haskell. See also [Differences from Haskell](../language/Differences-from-Haskell.md).
+Note that PureScript requires all type variables to be defined in type signatures, unlike in Haskell. See also [Differences from Haskell](../guides/Differences-from-Haskell.md).
 
 ## Fix
 
