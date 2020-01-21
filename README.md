@@ -22,6 +22,7 @@ _(This list is sorted alphabetically.)_
 - [C#][track-csharp]
 - [C++][track-cpp]
 - [Clojure][track-closure]
+- [CoffeeScript][track-coffeescript]
 - [Common Lisp][track-common-lisp]
 - [Dart][track-dart]
 - [Delphi][track-delphi]
@@ -63,6 +64,7 @@ _(This list is sorted alphabetically.)_
 [track-c]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fc
 [track-csharp]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcsharp
 [track-cpp]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcpp
+[track-coffeescript]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcoffeescript
 [track-clojure]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fclojure
 [track-common-lisp]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcommon-lisp
 [track-dart]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fdart
