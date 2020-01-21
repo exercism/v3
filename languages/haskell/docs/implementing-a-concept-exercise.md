@@ -21,7 +21,7 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 ├── .meta
-                |   ├── config.json
+                |   ├── config.json (omit for now)
                 |   └── <SLUG>.hs
                 ├── src
                 |   └── <NAME>.hs
