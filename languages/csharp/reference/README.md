@@ -116,7 +116,7 @@ This also indicates that for example `basic-strings` does **not** teach using cu
 
 ## Reference docs
 
-Reference docs are written to help explain a particular C# concept to a student when no appropriate online document can be found. They will be used when creating exercises and as references in exercise documentation.
+Reference docs are written to help explain a particular C# concept to a student when no appropriate online document can be found. They will be used when creating exercises and as references in exercise documentation and some additional stuff.
 
 The following reference docs have been written:
 
