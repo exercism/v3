@@ -3,7 +3,7 @@
 ## Draft Status!
 
 ```diff
-+ WARNING! This document should be treated as a draft and will be actively changing.
+- WARNING! This document should be treated as a draft and will be actively changing. Sections that marked as WIP requires attention/rework from contributors.
 ```
 
 ## Concepts
@@ -38,10 +38,18 @@ Kotlin concept exercises are based on concepts. They are (mostly) connected with
 
 ## Program Structure
 
+```diff
+! WIP
+```
+
 - Entry point
 - Packages
 
 ## Classes and Objects
+
+```diff
+! WIP
+```
 
 - Classes
 - Properties / Fields
@@ -63,6 +71,10 @@ Kotlin concept exercises are based on concepts. They are (mostly) connected with
 
 ## Types
 
+```diff
+! WIP
+```
+
 - Integer Numbers
 - Decimal Numbers
 - BigNumber / BigDecimal
@@ -80,6 +92,10 @@ Kotlin concept exercises are based on concepts. They are (mostly) connected with
 
 ## Control Flow
 
+```diff
+! WIP
+```
+
 - if
 - when
 - for
@@ -88,11 +104,19 @@ Kotlin concept exercises are based on concepts. They are (mostly) connected with
 
 ## Functions and Lamdas
 
+```diff
+! WIP
+```
+
 - Functions
 - Lambdas
 - Inline functions
 
 ## Other
+
+```diff
+! WIP
+```
 
 - Destructuring Declarations
 - Type Checks and Casts
@@ -111,7 +135,7 @@ Kotlin concept exercises are based on concepts. They are (mostly) connected with
 ## Coroutines
 
 ```diff
-! TODO
+! WIP
 ```
 
 - Basics
@@ -126,10 +150,14 @@ Kotlin concept exercises are based on concepts. They are (mostly) connected with
 ## Kotlin Multiplatform
 
 ```diff
-! TODO
+! WIP
 ```
 
 ## Concept interpretation
+
+```diff
+! WIP
+```
 
 The concept exercises use the following concepts:
 
@@ -139,11 +167,11 @@ The concept exercises use the following concepts:
 
 ## Reference docs
 
-Reference docs are written to help explain a particular Kotlin concept to a student as an addition to other docs available onlin. They will be used when creating exercises and as references in exercise documentation.
-
 ```diff
-! TODO
+! WIP
 ```
+
+Reference docs are written to help explain a particular Kotlin concept to a student as an addition to other docs available onlin. They will be used when creating exercises and as references in exercise documentation.
 
 See:
   - 
