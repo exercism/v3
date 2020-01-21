@@ -1,0 +1,50 @@
+{
+  "solution_files": ["strings.go"],
+  "test_file": "strings_test.go",
+  "tests": [
+    {
+      "name": "ErrorMessage",
+      "cmd": "Message(\"[ERROR]: Stack overflow\")"
+    },
+    {
+      "name": "WarningMessage",
+      "cmd": "Message(\"[WARNING]: Disk almost full\")"
+    },
+    { 
+      "name": "InfoMessage",
+      "cmd": "Message(\"[INFO]: File moved\")"
+    },
+    {
+      "name": "MessageWithLeadingAndTrailingWhiteSpace",
+      "cmd": "Message(\"[WARNING]:   \tTimezone not set  \r\n\")"
+    },
+    {
+      "name": "ErrorLogLevel",
+      "cmd": "LogLevel(\"[ERROR]: Disk full\")"
+    },
+    {
+      "name": "WarningLogLevel",
+      "cmd": "LogLevel(\"[WARNING]: Unsafe password\")"
+    },
+    {
+      "name": "InfoLogLevel",
+      "cmd": "LogLevel(\"[INFO]: Timezone changed\")"
+    },
+    {
+      "name": "ErrorReformat",
+      "cmd": "Reformat(\"[ERROR]: Segmentation fault\")"
+    },
+    {
+      "name": "WarningReformat",
+      "cmd": "Reformat(\"[WARNING]: Decreased performance\")"
+    },
+    {
+      "name": "InfoReformat",
+      "cmd": "Reformat(\"[INFO]: Disk defragmented\")"
+    },
+    {
+      "name": "ReformatWithLeadingAndTrailingWhiteSpace",
+      "cmd": "Reformat(\"[ERROR]: \t Corrupt disk\t \t \r\n\")"
+    }
+  ]
+}
