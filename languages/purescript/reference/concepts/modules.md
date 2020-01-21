@@ -4,7 +4,7 @@ All code in PureScript is contained in a module. Modules are introduced using th
 
 ```purescript
 module A where
-  
+
 id x = x
 ```
 
@@ -14,7 +14,7 @@ A module can be imported using the `import` keyword. This is called an "open imp
 
 ```purescript
 module B where
-  
+
 import A
 ```
 
@@ -22,7 +22,7 @@ Alternatively, a list of names to import can be provided in parentheses:
 
 ```purescript
 module B where
-  
+
 import A (runFoo)
 ```
 
@@ -31,7 +31,7 @@ Values, operators (wrapped in parentheses), type constructors, data constructors
 ```purescript
 module B where
 
-import A (runFoo, (.~), Foo(..), Bar(Bar))
+import A (runFoo, (+), (==), Foo(..), Bar(Bar))
 ```
 
 Type classes are imported using the `class` keyword, kinds with `kind`:
@@ -48,13 +48,13 @@ It is also possible to exclude some names from an open import with the `hiding` 
 
 ```purescript
 module C where
-  
+
 import A hiding (runFoo)
 import B (runFoo)
 ```
 
 ## Qualified Imports
-  
+
 Modules can also be imported qualified, which means that their names will not be brought directly into scope, but rather, aliased as a different module name.
 
 Following are some situations in which qualified imports are quite useful.
