@@ -47,7 +47,12 @@ These files are specific to the Erlang track:
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 
+## Step 3: add analyzer (optional)
+
+Some exercises could benefit from having an exercise-specific [analyzer][analyzer]. If so, specify what analysis rules should be applied to this exercise and why.
+
 <!-- Lexicographically ordered list of link targets -->
 
+[analyzer]: https://github.com/exercism/erlang-analyzer
 [concept-exercises]: ../exercises/concept/README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
