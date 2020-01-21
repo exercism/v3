@@ -18,4 +18,4 @@ jobs:
       - name: Install markdown-link-check
         run: npm install -g markdown-link-check
       - name: Verify links
-        run: find . -name \*.md ! -iname _sidebar.md ! -ipath \*/ISSUE_TEMPLATE/\*.md -print0 | xargs -0 -n1 markdown-link-check -q -c .github/markdown-link-check-config.json
+        run: find . -name \*.md ! -iname _sidebar.md ! -ipath \*/ISSUE_TEMPLATE/\*.md -print0 | xargs -0 -n1 markdown-link-check -q -c .github/markdown-link-check-config.json | grep "[✖]"
