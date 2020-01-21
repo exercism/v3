@@ -54,4 +54,6 @@ How to create the files common to all tracks is described in the [how to impleme
 
 If you have any questions regarding implementing the exercise, please post them as comments in the exercise's GitHub issue.
 
-//TODO
+//To-Add-More
+
+[how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
