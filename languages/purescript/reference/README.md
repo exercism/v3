@@ -12,11 +12,14 @@ The following types are the types listed on the [PureScript Types Documentation]
 
 ## Non-Primitive Types
 - [Array][type-array]
-- [Constrained Type][type-constrained]
 - [Function][type-function]
-- [Newtype][type-newtype]
-- [Polymorphic Type][type-polymorphic]
+- [List][type-list]
 - [Record][type-record]
+
+# Language-Specific Types
+- [Newtype][type-newtype]
+- [Constrained Type][type-constrained]
+- [Polymorphic Type][type-polymorphic]
 - [Row][type-row]
 - [Tagged Union][type-tagged-union]
 - [Type Synonym][type-synonym]
@@ -27,6 +30,7 @@ The following types are the types listed on the [PureScript Types Documentation]
 [type-number]: ../../../reference/types/number.md
 [type-boolean]: ../../../reference/types/boolean.md
 [type-array]: ../../../reference/types/array.md
+[type-list]: ../../../reference/types/list.md
 [type-record]: ../../../reference/types/record.md
 [type-function]: ../../../reference/types/function.md
 [type-tagged-union]: types/tagged_union.md
@@ -45,10 +49,22 @@ The following types are the types listed on the [PureScript Types Documentation]
 - [Partial application][concept-partial-application]
 - [Pure functions][concept-pure-functions]
 - [Recursion][concept-recursion]
+- [Type inference][concept-type-inference]
 
+## General Concepts
+- [Arithmetic][concept-arithmetic]
+- [Boolean logic][concept-boolean-logic]
+- [Comments][concept-comments]
+- [Conditionals][concept-conditionals]
+
+[concept-conditionals]: ../../../reference/concepts/conditionals.md
+[concept-comments]: ../../../reference/concepts/comments.md
+[concept-boolean-logic]: ../../../reference/concepts/boolean_logic.md
+[concept-arithmetic]: ../../../reference/concepts/arithmetic.md
 [concept-recursion]: ../../../reference/concepts/recursion.md
 [concept-higher-order-functions]: ../../../reference/concepts/higher_order_functions.md
 [concept-immutability]: ../../../reference/concepts/immutability.md
 [concept-partial-application]: ../../../reference/concepts/partial_application.md
 [concept-pure-functions]: ../../../reference/concepts/pure_functions.md
 [concept-anonymous-functions]: ../../../reference/concepts/anonymous_functions.md
+[concept-type-inference]: ../../../reference/concepts/type_inference.md
