@@ -1,0 +1,34 @@
+# Concepts of Scrabble
+
+There are different approaches to scrabble which are in the different categories below. Common concepts for all approaches are in general.
+
+## General
+- zero value variable declaration: The `score` variable for the total score needs initialization to `0`.
+- strings: lower and upper case letters should be treated equally (`ToUpper`/`ToLower`).
+- range loop over string: using a `range` loop on a string is a bit special. Its index counts bytes, its value is a rune.
+- for loop: This exercise can also be solved with a `for loop` -- although `range` is preferable here.
+- runes: using a range loop over a string will return a rune.
+- bytes: using a for loop comes with indexing into a string which returns a `byte`.
+- unicode: instead of the entire string (`strings`) a single `rune` can be transformed `ToUpper`/`ToLower`.
+- numbers: adding a value to an existing sum.
+- comments: comment on exported function should be present. Best also on package itself, but that is more optional.
+- ignore values: In the `range` loop the index is not needed and has to be ignored with a `_` (underscore).
+
+## Approach: Switch
+
+- switch: uses switch to get the score per letter
+- functions: makes the code nicer to extract the big switch
+
+## Aproach: map
+
+- map: is used to store the score per letter. Map lookup. Map definition with content.
+- globals: The `map` containing the scores is effectively static and should not be defined on each call to the function. Making it a global is one approach to solve this.
+- init function: some use an `init` function to initialize the map from something faster to type.
+
+## Approach: Slice
+
+Some take the `slice` approach as it is fastest.
+
+- slice: a slice is used to store the scores in alphabetical order.
+- rune maths: a rune is just a number. This is used to convert a rune into a slice index: `r - 'A'`
+- if condition: if using a slice, an out of bounds index would `panic`. So best to check for unknown indexes.
