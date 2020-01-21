@@ -62,9 +62,11 @@ The following types are the types listed on the [PureScript Types Documentation]
 - [Scope][concept-scope]
 - [Variables][concept-variables]
 - [Operators][concept-operators]
+- [Sameness][concept-sameness]
 
 ## Language-specific concepts
 - [Modules][concept-modules]
+- [Variable Shadowing][concept-variable-shadowing]
 
 [concept-operators]: ../../../reference/concepts/operators.md
 [concept-comparison]: ../../../reference/concepts/comparisons.md
@@ -84,3 +86,5 @@ The following types are the types listed on the [PureScript Types Documentation]
 [concept-pure-functions]: ../../../reference/concepts/pure_functions.md
 [concept-anonymous-functions]: ../../../reference/concepts/anonymous_functions.md
 [concept-type-inference]: ../../../reference/concepts/type_inference.md
+[concept-sameness]: ../../../reference/concepts/sameness.md
+[concept-variable-shadowing]: ../../../reference/concepts/variable_shadowing.md
