@@ -1,6 +1,6 @@
 # `let`
 
-The `let` keyword declares a block scoped local [variable](https://developer.mozilla.org/en-US/docs/Glossary/Variable), optionally initializing it to a value.
+The `let` keyword declares a block scoped local [variable](../../../../reference/concepts/variables.md), optionally initializing it to a value.
 ```javascript
 let arrow;
 arrow = "->";
