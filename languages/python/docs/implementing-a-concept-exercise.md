@@ -2,8 +2,8 @@
 
 This document describes the steps required to implement a concept exercise for the Python track. As this document is generic, the following placeholders are used:
 
-- `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
-- `<NAME>`: the name of the exercise in PascalCase (e.g. `AnonymousMethods`).
+- `<SLUG>`: the name of the exercise in snake_case (e.g. `anonymous_methods`).
+- `<NAME>`: the name of the exercise in snake_case (e.g. `anonymous_methods`).
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue.
 
@@ -11,7 +11,7 @@ To implement a concept exercise, the following files need to be created:
 
 ```
 languages
-└── Python
+└── python
     └── exercises
         └── concept
             └── <SLUG>
@@ -26,7 +26,7 @@ languages
                 ├── src
                 |   └── <NAME>.py
                 └── test
-                    └── Main.py
+                    └── <NAME>_test.py
 
 ```
 
@@ -34,8 +34,8 @@ languages
 
 These are files specific to the Python track:
 - `src/<NAME>.py`: the stub implementation file, which is the starting point for students to work on the exercise.
-- `test/Main.py`: the test suite.
-- `.meta/Example.py`: an example implementation that passes all the tests.
+- `test/<NAME>_test.py`: the test suite.
+- `.meta/example.py`: an example implementation that passes all the tests.
 
 ## Step 2: add common files
 
