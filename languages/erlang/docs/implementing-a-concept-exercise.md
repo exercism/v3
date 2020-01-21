@@ -43,4 +43,11 @@ These files are specific to the Erlang track:
   It is important that it does not contain any dependencies.
 - `.meta/<NAME>.erl`: an example implementation that passes all the tests.
 
+## Step 2: adding common files
+
+How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
+
+<!-- Lexicographically ordered list of link targets -->
+
 [concept-exercises]: ../exercises/concept/README.md
+[how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
