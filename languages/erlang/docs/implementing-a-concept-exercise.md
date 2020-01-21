@@ -60,8 +60,12 @@ Some exercises could benefit from having an custom representation as generated b
 If you have any questions regarding implementing the exercise, please post them as comments in the exercise's GitHub issue.
 
 <!-- Lexicographically ordered list of link targets -->
+<!-- TODO: replace stub links below with actual content links -->
 
-[analyzer]: https://github.com/exercism/erlang-analyzer
-[representer]: https://github.com/exercism/erlang-representer
-[concept-exercises]: ../exercises/concept/README.md
+<!-- [analyzer]: https://github.com/exercism/erlang-analyzer -->
+[analyzer]: ../../../README.md
+<!-- [representer]: https://github.com/exercism/erlang-representer -->
+[representer]: ../../../README.md
+<!-- [concept-exercises]: ../exercises/concept/README.md -->
+[concept-exercises]: ../../../README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
