@@ -68,6 +68,13 @@ The following types are the types listed on the [PureScript Types Documentation]
 - [Modules][concept-modules]
 - [Variable Shadowing][concept-variable-shadowing]
 
+# Errors
+The following errors are redistributed from the [PureScript documentation](https://github.com/purescript/documentation) without adaptation, as allowed under the Creative Commons Share Alike license.
+- [`AdditionalProperty`][error-additional-property]
+- ...
+
+[error-additional-property]: errors/AdditionalProperty.md
+
 # Other interesting things
 - PureScript's syntax is highly based off of Haskell's. As such, it is somewhat easier to transition between the two languages.
 - PureScript compiles to JavaScript.
