@@ -1,7 +1,7 @@
 # PureScript
+Some of the following information is redistributed (without any adaptation) from the [PureScript Documentation](https://github.com/purescript/documentation) as allowed under the Creative Commons Share Alike license.
 
 # Types
-The following types are the types listed on the [PureScript Types Documentation](https://github.com/purescript/documentation/blob/master/language/Types.md).
 
 ## Primitive types
 - [Boolean][type-boolean]
@@ -69,7 +69,6 @@ The following types are the types listed on the [PureScript Types Documentation]
 - [Variable Shadowing][concept-variable-shadowing]
 
 # Errors
-The following errors are redistributed from the [PureScript documentation](https://github.com/purescript/documentation) without adaptation, as allowed under the Creative Commons Share Alike license.
 - [`AdditionalProperty`][error-additional-property]
 - ...
 
