@@ -57,7 +57,7 @@ Each language also has its own label:
 - [track/dart][track-dart]
 - [track/delphi][track-delphi]
 - [track/elixir][track-elixir]
-- [track/elisp][track-elisp]
+- [track/emacs-lisp][track-emacs-lisp]
 - [track/erlang][track-erlang]
 - [track/fsharp][track-fsharp]
 - [track/factor][track-factor]
