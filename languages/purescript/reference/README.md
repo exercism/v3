@@ -68,7 +68,7 @@ The following types are the types listed on the [PureScript Types Documentation]
 - [Modules][concept-modules]
 - [Variable Shadowing][concept-variable-shadowing]
 
-# Other Interesting Things
+# Other interesting things
 - PureScript's syntax is highly based off of Haskell's. As such, it is somewhat easier to transition between the two languages.
 - PureScript compiles to JavaScript.
 - PureScript is [open source](https://github.com/purescript)!
