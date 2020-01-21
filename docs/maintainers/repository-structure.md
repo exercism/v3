@@ -1,6 +1,6 @@
 # How is this repository structured?
 
-This repository can be viewed both via GitHub and via the v3 website. This page describes the repository as found on GitHub. It is roughly equivalent to the website, with filenames being titelized.
+This repository can be viewed both via GitHub and via the v3 website. This page describes the repository as found on GitHub. It is roughly equivalent to the website, with filenames being title-ized.
 
 Things are grouped into several sub-directories:
 
