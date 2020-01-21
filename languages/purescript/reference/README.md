@@ -3,20 +3,20 @@
 # Types
 The following types are the types listed on the [PureScript Types Documentation](https://github.com/purescript/documentation/blob/master/language/Types.md).
 
-## Primitive Types
+## Primitive types
 - [Boolean][type-boolean]
 - [Char][type-char]
 - [Int][type-int]
 - [Number][type-number]
 - [String][type-string]
 
-## Non-Primitive Types
+## Non-primitive types
 - [Array][type-array]
 - [Function][type-function]
 - [List][type-list]
 - [Record][type-record]
 
-# Language-Specific Types
+# Language-specific types
 - [Newtype][type-newtype]
 - [Constrained Type][type-constrained]
 - [Polymorphic Type][type-polymorphic]
@@ -42,7 +42,7 @@ The following types are the types listed on the [PureScript Types Documentation]
 
 # Concepts
 
-## Functional Concepts
+## Functional concepts
 - [Anonymous functions][concept-anonymous-functions]
 - [Higher-order functions][concept-higher-order-functions]
 - [Immutability][concept-immutability]
@@ -51,14 +51,16 @@ The following types are the types listed on the [PureScript Types Documentation]
 - [Recursion][concept-recursion]
 - [Type inference][concept-type-inference]
 
-## General Concepts
+## General concepts
 - [Arithmetic][concept-arithmetic]
 - [Boolean logic][concept-boolean-logic]
 - [Comments][concept-comments]
 - [Conditionals][concept-conditionals]
 - [Functions][concept-functions]
 - [Scope][concept-scope]
+- [Variables][concept-variables]
 
+[concept-variables]: ../../../reference/concepts/variables.md
 [concept-scope]: ../../../reference/concepts/scope.md
 [concept-functions]: ../../../reference/concepts/functions.md
 [concept-conditionals]: ../../../reference/concepts/conditionals.md
