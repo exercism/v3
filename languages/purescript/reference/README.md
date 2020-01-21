@@ -56,7 +56,11 @@ The following types are the types listed on the [PureScript Types Documentation]
 - [Boolean logic][concept-boolean-logic]
 - [Comments][concept-comments]
 - [Conditionals][concept-conditionals]
+- [Functions][concept-functions]
+- [Scope][concept-scope]
 
+[concept-scope]: ../../../reference/concepts/scope.md
+[concept-functions]: ../../../reference/concepts/functions.md
 [concept-conditionals]: ../../../reference/concepts/conditionals.md
 [concept-comments]: ../../../reference/concepts/comments.md
 [concept-boolean-logic]: ../../../reference/concepts/boolean_logic.md
