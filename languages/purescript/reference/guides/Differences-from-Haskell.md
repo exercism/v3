@@ -24,7 +24,7 @@ import A (class Fab)
 
 There is no `qualified` keyword in PureScript. Writing `import Data.List as List` has the same effect as writing `import qualified Data.List as List` in Haskell.
 
-Module imports and exports are fully documented on the [Modules](Modules.md) page.
+Module imports and exports are fully documented on the [Modules](../concepts/modules.md) page.
 
 ## Types
 
@@ -87,7 +87,7 @@ type PointRec = { x :: Number, y :: Number }
 Objects are constructed with syntax similar to that of JavaScript (and the type definition):
 
 ``` purescript
-origin :: PointRec 
+origin :: PointRec
 origin = { x: 0, y: 0 }
 ```
 
@@ -101,7 +101,7 @@ originX  = origin.x
 PureScript also provides a record update syntax similar to Haskell's:
 
 ``` purescript
-setX :: Number -> PointRec -> PointRec 
+setX :: Number -> PointRec -> PointRec
 setX val point = point { x = val }
 ```
 
@@ -234,7 +234,7 @@ runST $ do
   ...
 ```
 
-PureScript does not provide this rule, so it is necessary to either 
+PureScript does not provide this rule, so it is necessary to either
 
 - omit the operator: `runST do ...`
 - or use parentheses instead: `runST (do ...)`
@@ -299,7 +299,7 @@ Although note that these might have different behaviour to the Haskell versions 
 
 ## Documentation comments
 
-When writing documentation, the pipe character `|` must appear at the start of every comment line, not just the first. See [the documentation for doc-comments](Syntax.md#comments) for more details.
+When writing documentation, the pipe character `|` must appear at the start of every comment line, not just the first.
 
 ## Where is ... from Haskell?
 
