@@ -1,5 +1,11 @@
 # Kotlin reference
 
+## Draft Status!
+
+```diff
++ WARNING! This document should be treated as a draft and will be actively changing.
+```
+
 ## Concepts
 
 Kotlin concept exercises are based on concepts. They are (mostly) connected with the corresponding parts of [official Kotlin reference](https://kotlinlang.org/docs/reference/basic-syntax.html#defining-packages).
@@ -28,6 +34,99 @@ Kotlin concept exercises are based on concepts. They are (mostly) connected with
 
 ```diff
 ! TODO check documentation and crystalize core concepts
+```
+
+## Program Structure
+
+- Entry point
+- Packages
+
+## Classes and Objects
+
+- Classes
+- Properties / Fields
+- Interfaces
+- Objects
+- Companion object
+- Visibility modifiers
+- Extensions
+- Data Classes
+- Sealed Classes
+- Genertics
+- Nested Classes
+- Nested Classes
+- Enum Classes
+- Type aliases
+- Inline Classes
+- Delegation
+- Delegated Properties
+
+## Types
+
+- Integer Numbers
+- Decimal Numbers
+- BigNumber / BigDecimal
+- Characters
+- Strings / String templates
+- Booleans
+- Arrays / varargs
+- Unsigned integers (optional ?)
+- Collections
+- Lists
+- Sets
+- Maps
+- Iterators
+- Operations on collection (which?)
+
+## Control Flow
+
+- if
+- when
+- for
+- while
+- break/continue  
+
+## Functions and Lamdas
+
+- Functions
+- Lambdas
+- Inline functions
+
+## Other
+
+- Destructuring Declarations
+- Type Checks and Casts
+- This
+- Equality
+- Operator overloading
+- Null Safety
+- Exceptions
+- Annotations
+- Reflection
+- Scope Functions
+- Type-Safe Builders
+- Java interop
+- Testing
+
+## Coroutines
+
+```diff
+! TODO
+```
+
+- Basics
+- Cancellation and Timeout
+- Composing Suspending Functions
+- Coroutine Context and Dispatchers
+- Async Flow
+- Channels
+- Exception Handling and Supervision
+- Shared Mutable State and Concurrency
+
+## Kotlin Multiplatform
+
+```diff
+! TODO
 ```
 
 ## Concept interpretation
