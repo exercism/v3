@@ -10,7 +10,7 @@ There are different approaches to scrabble which are in the different categories
 - runes: using a range loop over a string will return a rune.
 - bytes: using a for loop comes with indexing into a string which returns a `byte`.
 - unicode: instead of the entire string (`strings`) a single `rune` can be transformed `ToUpper`/`ToLower`.
-- numbers: adding a value to an existing sum.
+- numbers: adding a value to an existing sum. (`++`, `+=`)
 - comments: comment on exported function should be present. Best also on package itself, but that is more optional.
 - ignore values: In the `range` loop the index is not needed and has to be ignored with a `_` (underscore).
 
@@ -24,6 +24,7 @@ There are different approaches to scrabble which are in the different categories
 - map: is used to store the score per letter. Map lookup. Map definition with content.
 - globals: The `map` containing the scores is effectively static and should not be defined on each call to the function. Making it a global is one approach to solve this.
 - init function: some use an `init` function to initialize the map from something faster to type.
+- type conversion: some might use a `map[string]int` and need to convert from `rune` to `string`.
 
 ## Approach: Slice
 
@@ -32,3 +33,5 @@ Some take the `slice` approach as it is fastest.
 - slice: a slice is used to store the scores in alphabetical order.
 - rune maths: a rune is just a number. This is used to convert a rune into a slice index: `r - 'A'`
 - if condition: if using a slice, an out of bounds index would `panic`. So best to check for unknown indexes.
+- panic: what is a `panic`, how it can be `recover`ed. Fixing is the right approach for `panic`s, handling only for unknown bugs.
+- errors: errors vs panics.
