@@ -14,13 +14,13 @@ instance showMass :: Show Mass where
 
 ## Cause
 
-[Type synonyms](../language/Types.md#type-synonyms) are merely aliases (usually created to avoid verbose type annotations) and do not declare a new unique type. It is still possible to use the synonym and its equivalent type interchangeably.
+[Type synonyms](../types/type_synonym.md) are merely aliases (usually created to avoid verbose type annotations) and do not declare a new unique type. It is still possible to use the synonym and its equivalent type interchangeably.
 
-Since every value that structually matches the type synonym could be considered of the same type, it is not allowed to implement [type classes](../language/Type-Classes.md) based on type synonyms.
+Since every value that structually matches the type synonym could be considered of the same type, it is not allowed to implement type classes based on type synonyms.
 
 ## Fix
 
-A [newtype](../language/Types.md#newtypes) declaration generates a brand new type instead of introducing a synonym for an existing type. Newtypes can have type class instances declared for them:
+A [newtype](../types/newtype.md) declaration generates a brand new type instead of introducing a synonym for an existing type. Newtypes can have type class instances declared for them:
 
 ```purescript
 newtype Mass = Mass Number
