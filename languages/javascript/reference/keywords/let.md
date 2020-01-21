@@ -31,7 +31,7 @@ function steve() {
 
 The value held by a variable declared using `let` can only be referenced *after* it has been defined. This is known as the [Temporal Dead Zone][concept-temporal-dead-zone].
 
-[keyword-var][./var.md]
-[concept-scope][../info/scope.md]
-[concept-temporal-dead-zone][../info/scope.md#temporal-dead-zone]
-[concept-variable][../../../../reference/concepts/variables.md]
+[keyword-var]: ./var.md
+[concept-scope]: ../info/scope.md
+[concept-temporal-dead-zone]: ../info/scope.md#temporal-dead-zone
+[concept-variable]: ../../../../reference/concepts/variables.md
