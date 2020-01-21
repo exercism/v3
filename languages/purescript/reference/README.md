@@ -47,6 +47,7 @@ The following types are the types listed on the [PureScript Types Documentation]
 - [Higher-order functions][concept-higher-order-functions]
 - [Immutability][concept-immutability]
 - [Partial application][concept-partial-application]
+- [Pattern Matching][concept-pattern-matching]
 - [Pure functions][concept-pure-functions]
 - [Recursion][concept-recursion]
 - [Type inference][concept-type-inference]
@@ -55,11 +56,20 @@ The following types are the types listed on the [PureScript Types Documentation]
 - [Arithmetic][concept-arithmetic]
 - [Boolean logic][concept-boolean-logic]
 - [Comments][concept-comments]
+- [Comparison][concept-comparison]
 - [Conditionals][concept-conditionals]
 - [Functions][concept-functions]
 - [Scope][concept-scope]
 - [Variables][concept-variables]
+- [Operators][concept-operators]
 
+## Language-specific concepts
+- [Modules][concept-modules]
+
+[concept-operators]: ../../../reference/concepts/operators.md
+[concept-comparison]: ../../../reference/concepts/comparisons.md
+[concept-modules]: concepts/modules.md
+[concept-pattern-matching]: ../../../reference/concepts/pattern_matching.md
 [concept-variables]: ../../../reference/concepts/variables.md
 [concept-scope]: ../../../reference/concepts/scope.md
 [concept-functions]: ../../../reference/concepts/functions.md
