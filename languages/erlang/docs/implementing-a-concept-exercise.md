@@ -37,7 +37,7 @@ languages
 These files are specific to the Erlang track:
 
 - `src/<NAME>.erl`: the stub implementation file, which is the starting point for students to work on the exercise.
-- `src/<NAME>.app.src`: the applicatioin definition which is pretty much the same across all exercises except for the application name.
+- `src/<NAME>.app.src`: the applicatoin definition which is pretty much the same across all exercises except for the application name.
 - `test/<NAME>_tests.erl`: the test suite, written using `eunit`.
 - `rebar.config`: the `rebar3` project configuration which is usually the same across all exercises.
   It is important that it does not contain any dependencies.
