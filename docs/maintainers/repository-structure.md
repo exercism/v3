@@ -37,12 +37,14 @@ Each track has its own directory containing the following files and directories:
 
 The following labels are used to categorize [issues in the v3 repository][github-issues]:
 
-- [type/new-exercise][github-issues-type-new-exercise]: new exercises.
-- [type/improve-exercise][github-issues-type-improve-exercise]: improving exercises.
-- [type/new-reference][github-issues-type-new-reference]: new reference documents.
-- [type/improve-reference][github-issues-type-improve-reference]: improving reference documents.
-- [status/help-wanted][github-issues-status-help-wanted]: anyone wanting to help can do so.
-- [status/in-progress][github-issues-status-in-progress]: the issue is being worked on by someone.
+- [type/new-exercise][github-issues-type-new-exercise]: Add a new exercise
+- [type/improve-exercise][github-issues-type-improve-exercise]: Improve an existing exercise
+- [type/suggested-exercise][github-issues-type-suggested-exercise]: Suggest a new (Concept) exercise
+- [type/new-reference][github-issues-type-new-reference]: Add a new reference
+- [type/improve-reference][github-issues-type-improve-reference]: Improve an existing reference
+- [status/help-wanted][github-issues-status-help-wanted]: Extra attention is needed
+- [status/in-progress][github-issues-status-in-progress]: This issue is being worked on
+- [status/draft][github-issues-status-draft]: This issue or pull request is a draft, and not ready for review/merge.
 
 Each language also has its own label:
 
@@ -84,10 +86,12 @@ You can combine labels to find the issues you'd like, e.g. to [list all the issu
 [github-issues]: https://github.com/exercism/v3/issues
 [github-issues-type-new-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-exercise
 [github-issues-type-improve-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-exercise
+[github-issues-type-suggested-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fsuggested-exercise
 [github-issues-type-new-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-reference
 [github-issues-type-improve-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-reference
 [github-issues-status-help-wanted]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted
 [github-issues-status-in-progress]: https://github.com/exercism/v3/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fin-progress
+[github-issues-status-draft]: https://github.com/exercism/v3/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fdraft
 [github-issues-track-go]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fgo
 [github-issues-track-ruby]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fruby
 [github-issues-csharp-status-help-wanted]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcsharp+
