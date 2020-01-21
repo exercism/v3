@@ -23,7 +23,7 @@ languages
                 |   └── after.md (optional)
                 ├── .meta
                 |   ├── config.json
-                |   └── example.erl
+                |   └── <NAME>.erl
                 ├── src
                 |   ├── <NAME>.app.src
                 |   └── <NAME>.erl
@@ -41,6 +41,6 @@ These files are specific to the Erlang track:
 - `test/<NAME>_tests.erl`: the test suite, written using `eunit`.
 - `rebar.config`: the `rebar3` project configuration which is usually the same across all exercises.
   It is important that it does not contain any dependencies.
-- `.meta/example.erl`: an example implementation that passes all the tests.
+- `.meta/<NAME>.erl`: an example implementation that passes all the tests.
 
 [concept-exercises]: ../exercises/concept/README.md
