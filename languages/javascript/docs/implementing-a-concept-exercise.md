@@ -16,7 +16,7 @@ To implement a Concept Exercise, the following files must be created:
 
 <pre>
 languages
-└── csharp
+└── javascript
     └── exercises
         └── concept
             └── &lt;slug&gt;
@@ -45,7 +45,7 @@ This file contains instructions for the exercise. It should explicitly explain w
 
 ## Step 3: add .docs/hints.md
 
-If the user gets stuck, we will allow them to click a button requesting a hint, which shows this file. We will softly discourage them using it. The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any
+If the user gets stuck, we will allow them to click a button requesting a hint, which shows this file. We will softly discourage them using it. The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any problem the user would face.
 
 ## Step 4: add .docs/after.md (optional):
 
