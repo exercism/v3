@@ -2,8 +2,8 @@
 
 This document describes the steps required to implement a concept exercise for the Python track. As this document is generic, the following placeholders are used:
 
-- `<SLUG>`: the name of the exercise in snake_case (e.g. `anonymous_methods`).
-- `<NAME>`: the name of the exercise in snake_case (e.g. `anonymous_methods`).
+- `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`) for use in the directory name
+- `<NAME>`: the name of the exercise in snake_case (e.g. `anonymous_methods`) for use in the implementation files
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue.
 
