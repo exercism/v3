@@ -21,7 +21,7 @@ _(This list is sorted alphabetically.)_
 - [C][track-c]
 - [C#][track-csharp]
 - [C++][track-cpp]
-- [Clojure][track-closure]
+- [Clojure][track-clojure]
 - [CoffeeScript][track-coffeescript]
 - [Common Lisp][track-common-lisp]
 - [Dart][track-dart]
