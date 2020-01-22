@@ -4,8 +4,13 @@ These awesome people help maintain the Rust track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- [@coriolinus](https://github.com/coriolinus)
+- [@EduardoBautista](https://github.com/EduardoBautista)
+- [@IanWhitney](https://github.com/IanWhitney)
+- [@petertseng](https://github.com/petertseng)
+- [@thedarkula](https://github.com/thedarkula)
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+- [@filalex77](https://github.com/filalex77)
+- [@lewisclement](https://github.com/lewisclement)

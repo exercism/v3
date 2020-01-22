@@ -12,7 +12,7 @@ This area will contain everything needed to launch the Julia track, including:
 
 Before we publicize requesting contribution for this language, the following steps should be done.
 
-- [ ] [Convert existing files to new repository structure](../../docs/maintainers/repository-structure.md)
+- [x] [Convert existing files to new repository structure](../../docs/maintainers/repository-structure.md)
 - [ ] Have a kick-off discussion between track maintainers
 - [x] Fill out the [maintainers.md](./maintainers.md) file (e.g. [C#](../csharp/maintainers.md))
 - [x] Ensure there is a link to your track's GitHub issues on the [main README.md](../../README.md)
