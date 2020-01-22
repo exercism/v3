@@ -4,7 +4,7 @@ These awesome people help maintain the Delphi track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Ryan Potts (Slack: `@rpottsoh`, GitHub: [rpottsoh](https://githib.com/rpottsoh))
 
 ## Contributing Maintainers
 

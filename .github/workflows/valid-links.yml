@@ -10,7 +10,10 @@ jobs:
   verify-links:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+      - run: |
+          git fetch --prune origin master
+          git checkout $GITHUB_SHA
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
@@ -18,4 +21,16 @@ jobs:
       - name: Install markdown-link-check
         run: npm install -g markdown-link-check
       - name: Verify links
-        run: find . -name \*.md ! -iname _sidebar.md ! -ipath \*/ISSUE_TEMPLATE/\*.md -print0 | xargs -0 -n1 markdown-link-check -q -c .github/markdown-link-check-config.json
+        run: |
+          deleted_or_renamed=$(git diff --no-commit-id --name-only --diff-filter DR origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | wc -l || true)
+
+          if [ $deleted_or_renamed -eq 0 ]
+          then
+              files=$(git diff --no-commit-id --name-only --diff-filter AM origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE || true)
+          else
+              files=$(find . -name \*.md ! -iname _sidebar.md ! -ipath \*/ISSUE_TEMPLATE/\*.md || true)
+          fi
+
+          for file in $files; do
+              markdown-link-check -q -c .github/markdown-link-check-config.json $file
+          done

@@ -6,3 +6,4 @@ Operators are constructs which behave generally like [functions][concept-functio
 [concept-assignment]: ./assignment.md
 [concept-comparisons]: ./comparisons.md
 [concept-conditionals]: ./conditionals.md
+[concept-functions]: ./functions.md

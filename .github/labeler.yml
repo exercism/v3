@@ -1,3 +1,6 @@
+CI:
+  - .github/**/*
+
 documentation:
   - docs/**/*
 
