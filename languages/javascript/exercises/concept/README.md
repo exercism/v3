@@ -12,11 +12,11 @@ It is important to understand we _never_ explain a specific type or syntax as a 
 
 A list of exercises that we _must_ have is compiled below, and is not at all a complete list:
 
-- [x] [`/numbers`][concept-numbers]: `"basic-numbers"`, `"type-conversion"`
-- [x] [`/strings`][concept-strings]: `"basic-strings"`
+- [x] [`/numbers`][concept-numbers]: `"numbers-basic"`, `"type-conversion"`
+- [x] [`/strings`][concept-strings]: `"strings-basic"`
 - [x] [`/promises`][concept-promises]: `"promises"`
-- [ ] `"basic-arrays"`
-- [ ] `"basic-errors"`
+- [ ] `"arrays-basic"`
+- [ ] `"errors-basic"`
 - [ ] `"callbacks"`
 - [ ] `"recursion"`
 
@@ -33,18 +33,18 @@ It's only important that it's reasonably easy to _find_ the exercise. It's okay 
 
 Here is how we have interpreted the following concept-keywords. This should be synced across tracks.
 
-| concept | interpretation |
-|----------|----------------|
-| `basic-numbers` | Know of the existence of the `number` type and (for this language) see that it's whole numbers, and floating points. Know of basic operators such as multiplication. Know where it's documented, or at least how to search for it. |
-| `basic-strings` | Know of the existence of the `string` type. Know of some basic functions (like looking up a character at a position, or slicing the string). Know where it's documented, or at least how to search for it.  |
-| `promises` | Know of the `Promise` construct (`future` type in some other languages), chain-ability, and `.then`. Know where it's documented/how to search. |
-| `basic-arrays` | Know of the `Array` construct (`array` type in some other languages). Know of some basic functions.  |
-| `basic-errors` | Know how to create an error, how throw it and how to catch it |
-| `callbacks` | Know how to use a function as a first-class citizen, that is, pass it into a function as a value, and call it somewhere inside that function. Know that you can pass in values and retrieve out return values. |
-| `recursion` | Know how to call a function from itself |
-| `type-conversion` | Know that there exist functions that can convert between "types" (objects of a prototype) and types (primitives). |
+| concept           | interpretation                                                                                                                                                                                                                     |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `numbers-basic`   | Know of the existence of the `number` type and (for this language) see that it's whole numbers, and floating points. Know of basic operators such as multiplication. Know where it's documented, or at least how to search for it. |
+| `strings-basic`   | Know of the existence of the `string` type. Know of some basic functions (like looking up a character at a position, or slicing the string). Know where it's documented, or at least how to search for it.                         |
+| `promises`        | Know of the `Promise` construct (`future` type in some other languages), chain-ability, and `.then`. Know where it's documented/how to search.                                                                                     |
+| `arrays-basic`    | Know of the `Array` construct (`array` type in some other languages). Know of some basic functions.                                                                                                                                |
+| `errors-basic`    | Know how to create an error, how throw it and how to catch it                                                                                                                                                                      |
+| `callbacks`       | Know how to use a function as a first-class citizen, that is, pass it into a function as a value, and call it somewhere inside that function. Know that you can pass in values and retrieve out return values.                     |
+| `recursion`       | Know how to call a function from itself                                                                                                                                                                                            |
+| `type-conversion` | Know that there exist functions that can convert between "types" (objects of a prototype) and types (primitives).                                                                                                                  |
 
-This also indicates that for example `basic-strings` does **not** include knowing that JavaScript strings aren't strings in the compsci sense as in, they are made up of UTF-16 codepoints, and therefore there are a lot of catches with this. `basic-numbers` does **not** talk about the `%` operator and how it's _remainder_ and not _modulo_, or the fact that binary operations on negative numbers are ... weird.
+This also indicates that for example `strings-basic` does **not** include knowing that JavaScript strings aren't strings in the compsci sense as in, they are made up of UTF-16 codepoints, and therefore there are a lot of catches with this. `numbers-basic` does **not** talk about the `%` operator and how it's _remainder_ and not _modulo_, or the fact that binary operations on negative numbers are ... weird.
 
 ## TODO
 
