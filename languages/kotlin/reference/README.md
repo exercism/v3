@@ -6,6 +6,8 @@
 - WARNING! This document should be treated as a draft and will be actively changing. Sections that marked as WIP requires attention/rework from contributors.
 ```
 
+_Proposal to contributors: let's include useful links to official documentation for each concept reference._
+
 ## Concepts
 
 Kotlin concept exercises are based on concepts. They are (mostly) connected with the corresponding parts of [official Kotlin reference](https://kotlinlang.org/docs/reference/basic-syntax.html#defining-packages).
@@ -99,54 +101,62 @@ Also see [constructing](https://kotlinlang.org/docs/reference/constructing-colle
 
 ## Control Flow
 
-```diff
-! WIP
-```
-
-- if
-- when
-- for
-- while
-- break/continue  
+- [`if`, `if-else`, `if-else-if`](https://kotlinlang.org/docs/reference/control-flow.html#if-expression)
+- [`when`](https://kotlinlang.org/docs/reference/control-flow.html#when-expression)
+- [`for`](https://kotlinlang.org/docs/reference/control-flow.html#for-loops)
+- [`while`](https://kotlinlang.org/docs/reference/control-flow.html#while-loops)
+- [`break` and `continue`](https://kotlinlang.org/docs/reference/control-flow.html#break-and-continue-in-loops) and [labels](https://kotlinlang.org/docs/reference/returns.html#break-and-continue-labels)
+- `return` from function and [label](https://kotlinlang.org/docs/reference/returns.html#return-at-labels)
 
 ## Functions and Lamdas
 
-```diff
-! WIP
-```
-
-- Functions
-- Lambdas
-- Inline functions
-- vararg
+- [Functions](https://kotlinlang.org/docs/reference/functions.html) and [explicit return types](https://kotlinlang.org/docs/reference/functions.html#explicit-return-types)
+- [Local Functions](https://kotlinlang.org/docs/reference/functions.html#local-functions)
+- [Member Functions](https://kotlinlang.org/docs/reference/functions.html#member-functions)
+- Top-Level (package) functions
+- [Function default arguments](https://kotlinlang.org/docs/reference/functions.html#default-arguments)
+- [Function named arguments](https://kotlinlang.org/docs/reference/functions.html#named-arguments)
+- [Unit Functions](https://kotlinlang.org/docs/reference/functions.html#unit-returning-functions)
+- [Single-expression Functions](https://kotlinlang.org/docs/reference/functions.html#single-expression-functions)
+- [Infix Functions](https://kotlinlang.org/docs/reference/functions.html#infix-notation)
+- [Generic Functions](https://kotlinlang.org/docs/reference/functions.html#generic-functions)
+- [Inline functions](https://kotlinlang.org/docs/reference/inline-functions.html) (contains few complex inner concepts, should be expanded, probably)
+- [Higher-Order Functions](https://kotlinlang.org/docs/reference/lambdas.html#higher-order-functions) and [Function Types](https://kotlinlang.org/docs/reference/lambdas.html#function-types)
+- [Lambdas](https://kotlinlang.org/docs/reference/lambdas.html#lambda-expressions-and-anonymous-functions)
+- [Closures](https://kotlinlang.org/docs/reference/lambdas.html#closures)
+- [Anonymous Functions](https://kotlinlang.org/docs/reference/lambdas.html#anonymous-functions)
+- [varargs](https://kotlinlang.org/docs/reference/functions.html#variable-number-of-arguments-varargs)
 
 ## Other
 
-```diff
-! WIP
-```
-
-- Destructuring Declarations
-- Type Checks and Casts
-- This
-- Equality
-- Operator overloading
-- Null Safety
-- Exceptions
-- Annotations
-- Reflection
-- Scope Functions
-- Type-Safe Builders
-- Java interop
+- [Destructuring Declarations](https://kotlinlang.org/docs/reference/multi-declarations.html)
+- [Type Checks and Casts](https://kotlinlang.org/docs/reference/typecasts.html) and [Smart Cast](https://kotlinlang.org/docs/reference/typecasts.html#smart-casts)
+- [Erased types](https://kotlinlang.org/docs/reference/typecasts.html#type-erasure-and-generic-type-checks)
+- [This](https://kotlinlang.org/docs/reference/this-expressions.html)
+- [Equality](https://kotlinlang.org/docs/reference/equality.html)
+- [Operator overloading](https://kotlinlang.org/docs/reference/operator-overloading.html)
+- [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html)
+- Exceptions (add exceptions hierarchy description), [`try`-	`catch`-`finally`](https://kotlinlang.org/docs/reference/exceptions.html#exception-classes)
+- [Nothing](https://kotlinlang.org/docs/reference/exceptions.html#the-nothing-type)
+- [Annotations](https://kotlinlang.org/docs/reference/annotations.html)
+- [Reflection](https://kotlinlang.org/docs/reference/reflection.html) (huge concept)
+- [Scope Functions](https://kotlinlang.org/docs/reference/scope-functions.html)
+- [Type-Safe Builders](https://kotlinlang.org/docs/reference/type-safe-builders.html)
+- [Experimental API](https://kotlinlang.org/docs/reference/experimental.html)
+- Java interop: [Calling Java Code](https://kotlinlang.org/docs/reference/java-interop.html) and [Calling Kotlin Code](https://kotlinlang.org/docs/reference/java-to-kotlin-interop.html)
 - Testing
 
 ## Coroutines
 
 ```diff
-! WIP
+! DRAFT
+! huge, very complex but very important concept
 ```
 
+[Official documentation](https://kotlinlang.org/docs/reference/coroutines/coroutines-guide.html)
+
 - Basics
+- Launching coroutine
 - Cancellation and Timeout
 - Composing Suspending Functions
 - Coroutine Context and Dispatchers
@@ -158,7 +168,7 @@ Also see [constructing](https://kotlinlang.org/docs/reference/constructing-colle
 ## Kotlin Multiplatform
 
 ```diff
-! WIP
+! DRAFT
 ```
 
 ## Concept interpretation
