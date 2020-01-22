@@ -8,7 +8,7 @@ assignees: ""
 
 Extract the list of concepts required to solve the v2 &lt;LANG&gt; exercise: &lt;SLUG&gt;. For each concept, describe why it is required to solve the exercise. Keep in mind that an exercise can have multiple approaches.
 
-The list of concepts should be stored in the following document: `languages/&lt;LANG&gt;/reference/exercise-concepts/&lt;SLUG&gt;.md. [Use this link to create a PR to add this document][pr-link].
+The list of concepts should be stored in the following document: `languages/&lt;LANG&gt;/reference/exercise-concepts/&lt;SLUG&gt;.md`. [Use this link to create a PR to add this document][pr-link].
 
 It can be helpful to also include a sample solution in the document.
 
