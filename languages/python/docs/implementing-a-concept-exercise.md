@@ -19,14 +19,24 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   └── after.md (optional)
+                |   └── after.md
                 ├── .meta
                 |   ├── config.json
-                |   └── <SLUG>.py
-                ├── src
-                |   └── <NAME>.py
-                └── test
-                    └── <NAME>_test.py
+                |   └── example.py
+                ├── <NAME>.py
+                └── <NAME>_test.py
+        └── practice
+            └── <SLUG>
+                ├── .docs
+                |   ├── instructions.md
+                |   ├── introduction.md
+                |   ├── hints.md
+                |   └── after.md
+                ├── .meta
+                |   ├── config.json
+                |   └── example.py
+                ├── <NAME>.py
+                └── <NAME>_test.py
 
 ```
 
