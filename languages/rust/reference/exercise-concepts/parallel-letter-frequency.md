@@ -28,10 +28,6 @@ This exercise boasts a wide variety of possible solutions in combination with th
   - Consuming/non-consuming
   - As per the second example: `FromIterator` trait
 - **For loop**
-- **Parallelism**
-  - Spawning and joining
-  - Channels
-  - *`Mutex` and `RwLock`**
 - **References**
   - Reference counters (`Arc` in this situation)
   - Dereferencing
@@ -40,6 +36,13 @@ This exercise boasts a wide variety of possible solutions in combination with th
   - `move`
   - Dropping
 - **Crates**
+- **Parallelism**
+  - Spawning and joining
+#### Concepts related to parallelism
+- **Channels**
+- **`Mutex` and `RwLock`***
+- **Futures**
+- **Reference counting**
 
 *<sub>*Related but here not applicable for reasonable solutions</sub>*
 
