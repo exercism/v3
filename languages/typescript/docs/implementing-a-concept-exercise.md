@@ -25,12 +25,12 @@ languages
                 |   ├── introduction.md
                 |   ├── hints.md
                 |   └── after.md (optional)
+                ├── .eslintignore
                 ├── .eslintrc
-                ├── .gitignore
-                ├── babel.config.js
-                ├── example.js
-                ├── &lt;slug&gt;.js
-                ├── &lt;slug&gt;.spec.js
+                ├── jest.config.js
+                ├── example.ts
+                ├── &lt;slug&gt;.ts
+                ├── &lt;slug&gt;.spec.ts
                 ├── package.json
                 └── yarn.lock
 </pre>
@@ -85,6 +85,7 @@ The configuration files may be copied from another exercise. We aim to keep thes
 - `jest.config.js`
 - `package.json`
 - `tsconfig.json`
+- `yarn.lock`
 
 The `package.json` file must be edited:
 
