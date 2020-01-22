@@ -164,7 +164,7 @@ Note: Wrapped primitives (using the `new Constructor()` syntax are of [`typeof`]
 [concept-type-casting]: ../../../reference/concepts/type_casting.md
 [concept-variables]: ../../../reference/concepts/variables.md
 
-## Language specific concepts
+## Language-specific concepts
 
 - [`async`][keyword-async]/[`await`][keyword-await] [concurrency][concept-concurrency] model
 - Arguments

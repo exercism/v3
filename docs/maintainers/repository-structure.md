@@ -1,8 +1,8 @@
 # How is this repository structured?
 
-This repository can be viewed both via GitHub and via the v3 website. This page describes the repository as found on GitHub. It is roughly equivalent to the website, with filenames being titelized.
+This repository can be viewed both via GitHub and via the v3 website. This page describes the repository as found on GitHub. It is roughly equivalent to the website, with filenames being title-ized.
 
-Things are grouped into several subdirectories:
+Things are grouped into several sub-directories:
 
 ## [Docs][docs]
 
@@ -37,18 +37,47 @@ Each track has its own directory containing the following files and directories:
 
 The following labels are used to categorize [issues in the v3 repository][github-issues]:
 
-- [type/new-exercise][github-issues-type-new-exercise]: new exercises.
-- [type/improve-exercise][github-issues-type-improve-exercise]: improving exercises.
-- [type/new-reference][github-issues-type-new-reference]: new reference documents.
-- [type/improve-reference][github-issues-type-improve-reference]: improving reference documents.
-- [status/help-wanted][github-issues-status-help-wanted]: anyone wanting to help can do so.
-- [status/in-progress][github-issues-status-in-progress]: the issue is being worked on by someone.
+- [type/new-exercise][github-issues-type-new-exercise]: Add a new exercise
+- [type/improve-exercise][github-issues-type-improve-exercise]: Improve an existing exercise
+- [type/suggested-exercise][github-issues-type-suggested-exercise]: Suggest a new (Concept) exercise
+- [type/new-reference][github-issues-type-new-reference]: Add a new reference
+- [type/improve-reference][github-issues-type-improve-reference]: Improve an existing reference
+- [status/help-wanted][github-issues-status-help-wanted]: Extra attention is needed
+- [status/in-progress][github-issues-status-in-progress]: This issue is being worked on
+- [status/draft][github-issues-status-draft]: This issue or pull request is a draft, and not ready for review/merge.
 
 Each language also has its own label:
 
-- [track/go][github-issues-track-go]: the Go track.
-- [track/ruby][github-issues-track-ruby]: the Ruby track.
-- Etc.
+- [track/bash][track-bash]
+- [track/c][track-c]
+- [track/csharp][track-csharp]
+- [track/cpp][track-cpp]
+- [track/clojure][track-clojure]
+- [track/coffeescript][track-coffeescript]
+- [track/common-lisp][track-common-lisp]
+- [track/dart][track-dart]
+- [track/delphi][track-delphi]
+- [track/elixir][track-elixir]
+- [track/emacs-lisp][track-emacs-lisp]
+- [track/erlang][track-erlang]
+- [track/fsharp][track-fsharp]
+- [track/factor][track-factor]
+- [track/go][track-go]
+- [track/haskell][track-haskell]
+- [track/java][track-java]
+- [track/javascript][track-javascript]
+- [track/julia][track-julia]
+- [track/kotlin][track-kotlin]
+- [track/ocaml][track-ocaml]
+- [track/purescript][track-purescript]
+- [track/python][track-python]
+- [track/reasonml][track-reasonml]
+- [track/ruby][track-ruby]
+- [track/rust][track-rust]
+- [track/scala][track-scala]
+- [track/scheme][track-scheme]
+- [track/typescript][track-typescript]
+- [track/x86-64-assembly][track-x86-64-assembly]
 
 You can combine labels to find the issues you'd like, e.g. to [list all the issues for the C# for which help is wanted][github-issues-csharp-status-help-wanted].
 
@@ -58,10 +87,42 @@ You can combine labels to find the issues you'd like, e.g. to [list all the issu
 [github-issues]: https://github.com/exercism/v3/issues
 [github-issues-type-new-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-exercise
 [github-issues-type-improve-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-exercise
+[github-issues-type-suggested-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fsuggested-exercise
 [github-issues-type-new-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-reference
 [github-issues-type-improve-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-reference
 [github-issues-status-help-wanted]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted
 [github-issues-status-in-progress]: https://github.com/exercism/v3/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fin-progress
+[github-issues-status-draft]: https://github.com/exercism/v3/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fdraft
 [github-issues-track-go]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fgo
 [github-issues-track-ruby]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fruby
 [github-issues-csharp-status-help-wanted]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcsharp+
+[track-bash]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fbash
+[track-c]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fc
+[track-csharp]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcsharp
+[track-cpp]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcpp
+[track-clojure]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fclojure
+[track-coffeescript]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcoffeescript
+[track-common-lisp]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcommon-lisp
+[track-dart]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fdart
+[track-delphi]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fdelphi
+[track-elixir]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Felixir
+[track-emacs-lisp]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Femac-lisp
+[track-erlang]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Ferland
+[track-fsharp]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Ffsharp
+[track-factor]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Ffactor
+[track-go]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fgo
+[track-haskell]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fhaskell
+[track-java]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fjava
+[track-javascript]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fjavascript
+[track-julia]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fjulia
+[track-kotlin]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fkotlin
+[track-ocaml]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Focaml
+[track-purescript]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fpurescript
+[track-python]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fpython
+[track-reasonml]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Freasonml
+[track-ruby]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fruby
+[track-rust]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Frust
+[track-scala]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fscala
+[track-scheme]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fscheme
+[track-typescript]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Ftypescript
+[track-x86-64-assembly]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fx86-64-assembly

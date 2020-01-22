@@ -1,12 +1,13 @@
 using Test
 
-for exercise in readdir("concept-exercises")
+# TODO Change this to test practice exercises when adding the first practice exercise
+for exercise in readdir(joinpath("exercises", "concept"))
     # Allow only testing specified execises
     if !isempty(ARGS) && !(exercise in ARGS)
         continue
     end
 
-    exercise_path = joinpath("concept-exercises", exercise)
+    exercise_path = joinpath(joinpath("exercises", "concept"), exercise)
     isdir(exercise_path) || continue
 
     # Create an anonymous module so that exercises are tested in separate scopes
@@ -24,7 +25,7 @@ for exercise in readdir("concept-exercises")
     # so we define our own. We manually include the example solution in our
     # anonymous module, so we can define `m.include(s::String)` to do nothing.
     Core.eval(m, :(include(s) = nothing))
-    Base.include(m, joinpath(exercise_path, "example.jl"))
+    Base.include(m, joinpath(exercise_path, joinpath(".meta", "example.jl")))
     @info "Testing $exercise"
     Base.include(m, joinpath(exercise_path, "runtests.jl"))
     
