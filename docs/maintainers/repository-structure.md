@@ -52,7 +52,7 @@ Each language also has its own label:
 - [track/c][track-c]
 - [track/csharp][track-csharp]
 - [track/cpp][track-cpp]
-- [track/clojure][track-closure]
+- [track/clojure][track-clojure]
 - [track/coffeescript][track-coffeescript]
 - [track/common-lisp][track-common-lisp]
 - [track/dart][track-dart]
