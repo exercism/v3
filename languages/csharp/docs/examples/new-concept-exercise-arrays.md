@@ -55,16 +55,16 @@ As this is an introductory exercise, we should take care not to link to very adv
 
 This Concepts Exercise's Concepts are:
 
-- `basic-collections`
-- `basic-arrays`
+- `collections-basic`
+- `arrays-basic`
 
 ## Prequisites
 
-As an array is a collection type, it holds zero or more instances of another type. That means it _has_ to depend on one or more other types. In this exercise, we'll use the `int` data type for that, which is both interesting enough and easy to work with. The `int` data type is introduced in the `basic-numbers` concept.
+As an array is a collection type, it holds zero or more instances of another type. That means it _has_ to depend on one or more other types. In this exercise, we'll use the `int` data type for that, which is both interesting enough and easy to work with. The `int` data type is introduced in the `numbers-basic` concept.
 
 This Concept Exercise's prerequisites Concepts are:
 
-- `basic-numbers`
+- `numbers-basic`
 
 ## Implementing
 
@@ -100,7 +100,7 @@ These files are specific to the C# track:
 - `Arrays.cs`. the stub implementation file, which is the starting point for students to work on the exercise.
 - `.meta/Example.cs`: an example implementation that passes all the tests.
 
-Check out the [`floating-point-numbers exercise`][concept-exercises-floating-point-numbers] for an example on what these files should look like.
+Check out the [`numbers-floating-point exercise`][concept-exercises-numbers-floating-point] for an example on what these files should look like.
 
 ### Step 2: adding documentation files
 
@@ -121,8 +121,8 @@ Check out the [`floating-point-numbers exercise`][concept-exercises-floating-poi
 {
   "slug": "arrays",
   "uuid": "b6c532c9-1e89-4fbf-8f08-27f5befb5bb8",
-  "concepts": ["basic-collections", "basic-arrays"],
-  "prerequisites": ["basic-numbers"]
+  "concepts": ["collections-basic", "arrays-basic"],
+  "prerequisites": ["numbers-basic"]
 }
 ```
 
@@ -132,7 +132,7 @@ Check out the [`floating-point-numbers exercise`][concept-exercises-floating-poi
 
 ### Inspiration
 
-When implementing this exercise, it can be very useful to look at already implemented C# exercises like the [strings][concept-exercises-strings], [dates][concept-exercises-dates] or [floating-point numbers][concept-exercises-floating-point-numbers] exercises. You can also check the [general array concept documentation][array] to see if any other languages have already implemented an arrays exercise.
+When implementing this exercise, it can be very useful to look at already implemented C# exercises like the [strings][concept-exercises-strings], [dates][concept-exercises-dates] or [floating-point numbers][concept-exercises-numbers-floating-point] exercises. You can also check the [general array concept documentation][array] to see if any other languages have already implemented an arrays exercise.
 
 ## Representer
 
@@ -154,7 +154,7 @@ This exercise could benefit from having an [analyzer][analyzer] that can comment
 [csharp]: https://github.com/exercism/v3/blob/master/languages/csharp/README.md
 [concept-exercises-strings]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/strings
 [concept-exercises-dates]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/dates
-[concept-exercises-floating-point-numbers]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/numbers-floating-point
+[concept-exercises-numbers-floating-point]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/numbers-floating-point
 [analyzer]: https://github.com/exercism/csharp-analyzer
 [representer]: https://github.com/exercism/csharp-representer
 [after.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/after.md
