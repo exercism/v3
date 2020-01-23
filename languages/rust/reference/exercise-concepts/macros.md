@@ -4,20 +4,22 @@ There are many ways to potentially solve an exercise, but I'll be looking at the
 
 When referring to the list of concepts, we mean [this list](https://github.com/exercism/v3/blob/4f164e3751202087ff40c8321238d4c283a90fd0/languages/rust/reference/README.md)
 
-Note that for both concept and practice exercises, the list of prerequisite concepts should be as small as possible. The goal here is not to enumerate all concepts which may be used in all possible approaches to the problem; it is to enumerate the minimal set of knowledge with which a determined student could conceivably solve the problem. 
+Note that for both concept and practice exercises, the list of prerequisite concepts should be as small as possible. The goal here is not to enumerate all concepts which may be used in all possible approaches to the problem; it is to enumerate the minimal set of knowledge with which a determined student could conceivably solve the problem.
 
 Note that this exercise is very likely to become a concept exercise for the concept "Writing declarative macros".
 
 ## Required concepts
 ### Existing
 
-- fundamentals
+- structs
 - (im)mutability
 - `Hashmap<K, V>`
 
 ### Should be added
 
-_none_
+- variable assignment (part of `fundamentals`)
+- variable scope / namespacing (part of `fundamentals`)
+- methods and associated functions (depends on `structs`)
 
 ## Optional Concepts
 ### Existing
