@@ -5,6 +5,7 @@
   - [Rationale for v3](/docs/rationale-for-v3.md)
   - [Docs for Maintainers](/docs/maintainers/README.md)
     - [Determining concepts](/docs/maintainers/determining-concepts.md)
+    - [Frequently Asked Questions](/docs/maintainers/faq.md)
     - [Migrating your config.json](/docs/maintainers/migrating-your-config-json-files.md)
     - [Repository structure](/docs/maintainers/repository-structure.md)
     - [Website](/docs/maintainers/website.md)
