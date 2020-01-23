@@ -12,7 +12,8 @@ Note that this exercise is very likely to become a concept exercise for the conc
 ### Existing
 
 - fundamentals
-- `Hashmap<K, V>`: the `counter` library fundamentally just provides a newtype adding some utility methods to a hashmap
+- (im)mutability
+- `Hashmap<K, V>`
 
 ### Should be added
 
