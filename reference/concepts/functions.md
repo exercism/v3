@@ -2,6 +2,8 @@
 
 By "functions" we mean functions, procedures and sub-routines.
 
+A function is a named section of a program, consisting of one or more statements, that can be reused to perform the same action(s) at different points of a larger program.
+
 We do not aim to teach:
 
 - "functions" as the concept of self-contained pieces of functionality
