@@ -1,5 +1,8 @@
 CI:
-  - .github/**/*
+  - .github/workflows/**/*
+  - .github/actions/**/*
+  - .github/**/*.yml
+  - .github/**/*.json
 
 documentation:
   - docs/**/*
