@@ -28,7 +28,7 @@ There are different approaches to Scrabble which are in the different categories
 
 ## Approach: Slice
 
-Some take the `slice` approach as it is fastest.
+Some take the `slice` approach as it is fastest. However, a map or switch is more natural, and at this stage of learning, we should prefer naturalness and simplicity.
 
 - slice: a slice is used to store the scores in alphabetical order.
 - rune maths: a rune is just a number. This is used to convert a rune into a slice index: `r - 'A'`
