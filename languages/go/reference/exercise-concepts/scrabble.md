@@ -1,6 +1,6 @@
 # Concepts of Scrabble
 
-There are different approaches to scrabble which are in the different categories below. Common concepts for all approaches are in general.
+There are different approaches to Scrabble which are in the different categories below. Common concepts for all approaches are in 'General'.
 
 ## General
 - zero value variable declaration: The `score` variable for the total score needs initialization to `0` (idiomatically with `var score int`).
