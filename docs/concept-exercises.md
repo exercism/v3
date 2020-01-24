@@ -68,10 +68,6 @@ Once the user completes the exercise they will be shown this file, which gives t
 
 See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.md] for an example.
 
-### `.meta/config.json`
-
-See the C# floating-point-numbers exercise's [config.json file][csharp-meta-config.json] for an example.
-
 ## Track Structure
 
 ### `exercises/shared/.docs/cli.md`
