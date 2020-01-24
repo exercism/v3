@@ -32,6 +32,8 @@ For more information, see the [concept exercises document][concept-exercises].
 
 A Concept describes a feature of a programming language. Examples are "Encapsulation", "Conditionals", and "Functions." In other words, Concepts are what one would need to learn if one was to learn a new (programming) language.
 
+Although there will obviously be cross-over between languages, Concepts are indented to be language-specific. What is it about **your** language that a junior programmer would need to learn, unlearn and remap to be able to successfully transition to it.
+
 Each track will compile a list of Concepts for their track's language, for which Concept Exercises will be created.
 
 ## How to determine a language's Concepts?
