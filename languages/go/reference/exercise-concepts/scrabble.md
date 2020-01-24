@@ -17,7 +17,7 @@ There are different approaches to Scrabble which are in the different categories
 ## Approach: Switch
 
 - switch: uses switch to get the score per letter
-- functions: makes the code nicer to extract the big switch
+- functions: makes the code nicer to extract the big switch, but the function call overhead adds about 30% to the benchmark time
 
 ## Aproach: map
 
