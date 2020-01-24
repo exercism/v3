@@ -25,7 +25,8 @@ function steve() {
   {
     var name = "Steve";
   }
-  console.log(name); // Variable name is defined, as "Steve"
+  console.log(name);
+  // => "Steve"
 }
 ```
 
