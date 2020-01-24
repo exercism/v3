@@ -11,7 +11,7 @@
 - new keyword: used to instantiate a class
 - List<T>: temporarily hold the results before converting them to an array (Add and ToArray methods)
 - for loop: iterate through the strands
-- int type: used as a counter in the loop
+- integers: `int` type used as a counter in the loop 
 - math operations: <, *, and ++
 - strings: substring and comparison
 - switch cases: to convert the string to a protein name (including default case)
