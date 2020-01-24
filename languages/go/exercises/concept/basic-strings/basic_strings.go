@@ -1,4 +1,4 @@
-package strings_concept
+package basic_strings
 
 // Message extracts the message from the provided log line.
 func Message(line string) string {
