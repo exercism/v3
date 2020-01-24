@@ -2,6 +2,7 @@
 
 ### General
 
+- Strings in Go are based on `[]byte`. For example getting a substring works the same as getting a subslice.
 - The `Go by Example` tutorial has two topics that are helpful here: [String Functions][string-functions] and [String Formatting][string-formatting]
 - The `strings` package of the standard library has many useful [built-in functions][strings-package].
 - The `fmt` package of the standard library has some [formatting functionality for strings][fmt-package].
@@ -11,11 +12,15 @@
 - Splitting a string at a certain substring is available in the [`strings` package][split-function].
 - Removing white space is [built-in][trimspace-function].
 
-### 2. Get log level from a log line
+### 2. Get the message length in characters
+
+- A string can be converted into a slice of characters (`[]rune`).
+
+### 3. Get log level from a log line
 
 - Changing a `string`'s casing to lower can be done with [this function][lowercase-function].
 
-### 3. Reformat a log line
+### 4. Reformat a log line
 
 - You can just add strings to one another with the plus (`+`) operator. The preferred way is to use the [`fmt` packages][sprintf-function] functionality.
 

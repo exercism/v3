@@ -49,6 +49,60 @@ func TestMessage(t *testing.T) {
 	}
 }
 
+func TestMessageLen(t *testing.T) {
+	type args struct {
+		line string
+	}
+	tests := []struct {
+		name string
+		args args
+		want int
+	}{
+		{
+			name: "Message length from error message",
+			args: args{
+				line: "[ERROR]: Stack overflow",
+			},
+			want: 14,
+		},
+		{
+			name: "Message length from warning message",
+			args: args{
+				line: "[WARNING]: Disk almost full",
+			},
+			want: 16,
+		},
+		{
+			name: "Message length from info message",
+			args: args{
+				line: "[INFO]: File moved",
+			},
+			want: 10,
+		},
+		{
+			name: "Message length without extra whitespace",
+			args: args{
+				line: "[WARNING]:   \tTimezone not set  \r\n",
+			},
+			want: 16,
+		},
+		{
+			name: "Message length with special characters",
+			args: args{
+				line: "[INFO]: Hello, 世界!",
+			},
+			want: 10,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := MessageLen(tt.args.line); got != tt.want {
+				t.Errorf("Message() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
 func TestLogLevel(t *testing.T) {
 	type args struct {
 		line string

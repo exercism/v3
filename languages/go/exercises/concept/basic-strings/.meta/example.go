@@ -15,6 +15,11 @@ func Message(line string) string {
 	return strings.TrimSpace(parts[1])
 }
 
+// MessageLen counts the amount of characters (runes) in the message of the log line.
+func MessageLen(line string) int {
+	return len([]rune(Message(line)))
+}
+
 // LogLevel extracts the log level string from the provided log line.
 func LogLevel(line string) string {
 	part1 := strings.Split(line, ":")[0]
