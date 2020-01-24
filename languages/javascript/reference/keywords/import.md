@@ -7,14 +7,15 @@ It comes in multiple versions that can load the default [`export`][concept-expor
 ```js
 import defaultExport from "module-name"; // Load one default export
 import * as name from "module-name"; // Load all named exports for access via `name.namedExport`
-import { myExport } from "module-name"; // Only imports the myExport named export. 
+import { myExport } from "module-name"; // Only imports the myExport named export.
 import { myExport as expert } from "module-name"; // Only imports the myExport but aliases it to expert
 ```
+
+The `module-name` in the example can be either a [NPM][npm]-installed package – those typically reside in the `node_modules/` directory – or a relative link, such as `./myFile.js`.
 
 ## Further reading
 
 > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
-
 
 [concept-function]: ../../../../reference/concepts/functions.md
 [concept-variable]: ../../../../reference/concepts/variables.md
