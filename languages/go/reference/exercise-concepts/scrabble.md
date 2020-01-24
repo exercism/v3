@@ -3,7 +3,7 @@
 There are different approaches to scrabble which are in the different categories below. Common concepts for all approaches are in general.
 
 ## General
-- zero value variable declaration: The `score` variable for the total score needs initialization to `0`.
+- zero value variable declaration: The `score` variable for the total score needs initialization to `0` (idiomatically with `var score int`).
 - strings: lower and upper case letters should be treated equally (`ToUpper`/`ToLower`).
 - range loop over string: using a `range` loop on a string is a bit special. Its index counts bytes, its value is a rune.
 - for loop: This exercise can also be solved with a `for loop` -- although `range` is preferable here.
