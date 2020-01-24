@@ -13,7 +13,7 @@ Tell a student what a string is in your language, how strings can be manipulated
 - **How are strings split apart?** How do I extract a bit of a string?
 - **Where do helper methods for strings live?** If I want to trim a string, or check it's length, how do I do that in your language? Are these string methods or functions that act on strings?
 
-## Example Exercises
+## Exercises
 
 ### Log Lines
 

@@ -10,15 +10,42 @@ Programming languages may name their floating point type to the amount of _preci
 - Quadruple (occupying 128 [bits][type-bit])
 - Octuple (occupying 256 [bits][type-bit])
 
-# Implementations
+## What to cover
 
-- [C# (basic)][implementation-csharp-basic]
-- [C# (advanced)][implementation-csharp-advanced]
+A student may have no understanding of floating point numbers as more than numbers with decimal points.
+
+- Explain that a floating point number is not *just* a number with a decimal place.
+- Explain what floating point types are used in your langauge, and when to use them.
+- Ensure that type conversations are understood if appropriate (e.g. rounding, precision-changing)
+- Ensure that students know how to compare numbers to each other.
+
+## Exercises
+
+### Production Line Analysis
+
+This exercise asks students to write code to analyse the production of an assembly line. It covers:
+- arithmetic
+- numeric comparison / conditionals
+- parsing between integers and floating point numbers.
+
+- [C#][implementation-csharp-production-line]
+
+### Savings Accounts
+
+This exercise calculates interest on savings accounts. It covers:
+- numeric comparison / conditionals
+- rounding
+- the importance of different precisions, using integers, 4 byte floating point numbers and 16 byte floating point numbers
+- basic loops.
+
+#### Implementations
+
+- [C#][implementation-csharp-savings-accounts]
 
 [type-bit]: ./bit.md
 [type-double]: ./double.md
 [type-half]: ./half.md
 [type-single]: ./single.md
 [wiki-ieee754]: https://en.wikipedia.org/wiki/IEEE_754
-[implementation-csharp-basic]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md
-[implementation-csharp-advanced]: ../../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
+[implementation-csharp-production-line]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md
+[implementation-csharp-savings-accounts]: ../../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
