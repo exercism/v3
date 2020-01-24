@@ -9,7 +9,7 @@
 - var keyword: in order to prevent verbose declarations `List<string> results = new List<string>()`
 - assignment: setting a variable to a specific value
 - new keyword: used to instantiate a class
-- List<T>: temporarily hold the results before converting them to an array (Add and ToArray methods)
+- lists: a `List<T>` temporarily holds the results before converting them to an array (Add and ToArray methods)
 - for loop: iterate through the strands
 - integers: `int` type used as a counter in the loop 
 - math operations: <, *, and ++
