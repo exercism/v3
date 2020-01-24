@@ -23,7 +23,7 @@ There are different approaches to Scrabble which are in the different categories
 
 - map: is used to store the score per letter. Map lookup. Map definition with content.
 - globals: The `map` containing the scores is effectively static and should not be defined on each call to the function. Making it a global is one approach to solve this.
-- init function: some use an `init` function to initialize the map from something faster to type.
+- init function: some use an `init` function to initialize the map from something faster to type, but this is lazy; code should be optimised for the reader, not the writer.
 - type conversion: some might use a `map[string]int` and need to convert from `rune` to `string`.
 
 ## Approach: Slice
