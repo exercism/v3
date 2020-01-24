@@ -16,7 +16,8 @@ function bob() {
   {
     let name = "Bob";
   }
-  console.log(name); // Variable name is undefined
+  console.log(name);
+  // => undefined
 }
 ```
 
