@@ -35,6 +35,7 @@ We recommend choosing a Concept that involves working with basic types, like str
 - [How to write Concept Exercise GitHub issues](./writing-a-concept-exercise-github-issue.md)
 - [How the repository is structured](./repository-structure.md)
 - [Migrating your config.json files](./migrating-your-config-json-files.md)
+- [Frequently Asked Questions](./faq.md)
 
 ## Tooling
 
