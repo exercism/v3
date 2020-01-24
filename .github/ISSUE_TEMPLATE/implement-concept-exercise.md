@@ -45,7 +45,7 @@ For example:
 
 For example:
 
-- `basic-strings`
+- `strings-basic`
 - ...]
 
 ## Prequisites
@@ -54,7 +54,7 @@ For example:
 
 For example:
 
-- `basic-numbers`
+- `numbers-basic`
 - ...]
 
 ## Resources to refer to

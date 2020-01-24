@@ -4,16 +4,20 @@ on:
   push:
   pull_request:
   schedule:
-    - cron: '0 3 * * *'
+    - cron: "0 3 * * *"
 
 jobs:
   verify-links:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - run: |
-          git fetch --prune origin master
-          git checkout $GITHUB_SHA
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git fetch origin master
+          git rebase origin/master
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
@@ -22,13 +26,13 @@ jobs:
         run: npm install -g markdown-link-check
       - name: Verify links
         run: |
-          deleted_or_renamed=$(git diff --no-commit-id --name-only --diff-filter DR origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | wc -l || true)
+          deleted_or_renamed=$(git diff --no-commit-id --name-only --diff-filter DR origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | wc -l)
 
-          if [ $deleted_or_renamed -eq 0 ]
+          if [ $GITHUB_REF = "master" ] || [ $deleted_or_renamed -ne 0 ]
           then
-              files=$(git diff --no-commit-id --name-only --diff-filter AM origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE || true)
+              files=$(find . -name \*.md ! -iname _sidebar.md ! -ipath \*/ISSUE_TEMPLATE/\*.md)
           else
-              files=$(find . -name \*.md ! -iname _sidebar.md ! -ipath \*/ISSUE_TEMPLATE/\*.md || true)
+              files=$(git diff --no-commit-id --name-only --diff-filter AM origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | cat)
           fi
 
           for file in $files; do
