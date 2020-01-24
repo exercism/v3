@@ -19,7 +19,7 @@ There are different approaches to Scrabble which are in the different categories
 - switch: uses switch to get the score per letter
 - functions: makes the code nicer to extract the big switch, but the function call overhead adds about 30% to the benchmark time
 
-## Aproach: map
+## Approach: map
 
 - map: is used to store the score per letter. Map lookup. Map definition with content.
 - globals: The `map` containing the scores is effectively static and should not be defined on each call to the function. Making it a global is one approach to solve this.
