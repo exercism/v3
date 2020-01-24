@@ -1,6 +1,6 @@
 ## Functions
 
-By "functions" we mean functions, methods and procedures.
+By "functions" we mean functions, procedures and sub-routines.
 
 We do not aim to teach:
 
