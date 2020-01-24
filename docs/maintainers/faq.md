@@ -2,7 +2,11 @@
 
 ## What is v3?
 
-v3's main goal is to improve the learning experience for students. We'll do this by explicitly designing exercises to teach Concepts. We call these Concept Exercises. Their goal is to teach one Concept, and that is all they should aim to teach. Concept Exercises are thus designed with a specific purpose in mind, whereas in v2 the learning experience was more incidental.
+v3's main goal is to improve the learning experience for students, so that when they complete a track they will be able to program in that language in an idiomatic way.
+
+Exercism v2 currently focuses heavily on discovering lots of various information from a relatively complex exercise - something which can be challenging and confusing both for students and those trying to mentor them. In contrast, in v3, we are explicitly designing exercises to teach these Concepts. These new exercises are called Concept Exercises. Their goal is to teach one just Concept, providing enough challenge to familiarse the student with the idea of the Concept and enough mental scaffolding for them to know where to discover more information. Concept Exercises are therefore designed with a specific purpose in mind, whereas in v2 the learning experience was more incidental.
+
+v3 also adds new features and changes to the user experience, such as In-browser coding, Approaches, better automated-feedback, and an improved mentoring system.
 
 For a more in-depth explanation on v3, please check the following links:
 
