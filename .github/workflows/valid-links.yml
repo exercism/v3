@@ -28,7 +28,7 @@ jobs:
         run: |
           deleted_or_renamed=$(git diff --no-commit-id --name-only --diff-filter DR origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | wc -l)
 
-          if [ $GITHUB_REF = "master" ] || [ $deleted_or_renamed -ne 0 ]
+          if [ "$GITHUB_REF" = "master" ] || [ $deleted_or_renamed -ne 0 ]
           then
               files=$(find . -name \*.md ! -iname _sidebar.md ! -ipath \*/ISSUE_TEMPLATE/\*.md)
           else
@@ -36,5 +36,8 @@ jobs:
           fi
 
           for file in $files; do
-              markdown-link-check -q -c .github/markdown-link-check-config.json $file
+            if [ -f "$file" ]
+            then
+                markdown-link-check -q -c .github/markdown-link-check-config.json $file
+            fi
           done
