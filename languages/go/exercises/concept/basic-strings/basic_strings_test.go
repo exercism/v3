@@ -1,6 +1,9 @@
 package basic_strings
 
-import "testing"
+import (
+	"strings"
+	"testing"
+)
 
 func TestMessage(t *testing.T) {
 	type args struct {
@@ -43,7 +46,7 @@ func TestMessage(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := Message(tt.args.line); got != tt.want {
-				t.Errorf("Message(%v) = %v, want %v", tt.args.line, got, tt.want)
+				t.Errorf("Message(\"%v\") = \"%v\", want \"%v\"", escapeWhiteSpace(tt.args.line), got, tt.want)
 			}
 		})
 	}
@@ -97,7 +100,7 @@ func TestMessageLen(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := MessageLen(tt.args.line); got != tt.want {
-				t.Errorf("Message(%v) = %v, want %v", tt.args.line, got, tt.want)
+				t.Errorf("MessageLen(\"%v\") = \"%v\", want \"%v\"", escapeWhiteSpace(tt.args.line), got, tt.want)
 			}
 		})
 	}
@@ -137,7 +140,7 @@ func TestLogLevel(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := LogLevel(tt.args.line); got != tt.want {
-				t.Errorf("LogLevel(%v) = %v, want %v", tt.args.line, got, tt.want)
+				t.Errorf("LogLevel(\"%v\") = \"%v\", want \"%v\"", escapeWhiteSpace(tt.args.line), got, tt.want)
 			}
 		})
 	}
@@ -184,8 +187,15 @@ func TestReformat(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := Reformat(tt.args.line); got != tt.want {
-				t.Errorf("Reformat(%v) = %v, want %v", tt.args.line, got, tt.want)
+				t.Errorf("Reformat(\"%v\") = \"%v\", want \"%v\"", escapeWhiteSpace(tt.args.line), got, tt.want)
 			}
 		})
 	}
+}
+
+func escapeWhiteSpace(s string) string {
+	s = strings.ReplaceAll(s, "\\", "\\\\")
+	s = strings.ReplaceAll(s, "\n", "\\n")
+	s = strings.ReplaceAll(s, "\r", "\\r")
+	return strings.ReplaceAll(s, "\t", "\\t")
 }
