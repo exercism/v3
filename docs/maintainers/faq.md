@@ -16,7 +16,7 @@ For a more in-depth explanation on v3, please check the following links:
 
 ## What is the role of maintainers in the v3 transition?
 
-The key role for maintainers is in maintaining their tracks. We don't expect maintainers to do all the work of creating everything. We want to crowd-source work as much as possible. Maintainers are there to help guide, design and review, and do some of the actual exercise creation (but not all).
+The key role for maintainers is in designing and managing their tracks. We don't expect maintainers to do all the work of creating everything. We want to crowd-source work as much as possible. Maintainers' key role is in working out how their track can best teach a student, and designing and reviewing exercises exercises. We hope that maintainers will also enjoy creating some of the actual exercise themselves, but the load of this should be spread amongst the wider community.
 
 For more information, see the [maintainers README][maintainers].
 
