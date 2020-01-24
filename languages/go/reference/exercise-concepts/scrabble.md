@@ -8,7 +8,7 @@ There are different approaches to Scrabble which are in the different categories
 - range loop over string: using `range` on a string is a bit special. It returns the byte index of each rune, and the rune value itself.
 - for loop: This exercise can also be solved with a `for i := 0...` loop -- although `for range` is preferable here.
 - runes: using a range loop over a string will return a rune.
-- bytes: using a for loop comes with indexing into a string which returns a `byte`.
+- bytes: using a for loop comes with indexing into a string which returns a `byte`. In general, this is unsafe, unless you can guarantee that the string contains only ASCII runes. Prefer `range` on strings, or conversion to a `[]rune`.
 - unicode: instead of the entire string (`strings`) a single `rune` can be transformed `ToUpper`/`ToLower`.
 - numbers: adding a value to an existing sum. (`++`, `+=`)
 - comments: comment on exported function should be present. Best also on package itself, but that is more optional.
