@@ -5,7 +5,7 @@ There are different approaches to Scrabble which are in the different categories
 ## General
 - zero value variable declaration: The `score` variable for the total score needs initialization to `0` (idiomatically with `var score int`).
 - strings: lower and upper case letters should be treated equally (`ToUpper`/`ToLower`).
-- range loop over string: using a `range` loop on a string is a bit special. Its index counts bytes, its value is a rune.
+- range loop over string: using `range` on a string is a bit special. It returns the byte index of each rune, and the rune value itself.
 - for loop: This exercise can also be solved with a `for loop` -- although `range` is preferable here.
 - runes: using a range loop over a string will return a rune.
 - bytes: using a for loop comes with indexing into a string which returns a `byte`.
