@@ -1,6 +1,6 @@
 # `var`
 
-The `var` keyword declares a [variable](https://developer.mozilla.org/en-US/docs/Glossary/Variable), optionally initializing it to a value.
+The `var` keyword declares a [variable][concept-variable], optionally initializing it to a value.
 ```javascript
 var arrow;
 arrow = "->";
@@ -10,7 +10,7 @@ arrow = "->";
 var arrow = "->";
 ```
 
-The [scope](../info/scope.md) of variables declared using the `var` keyword is either [global](../info/scope.md#global-scope) (if it was not declared in a [function](function.md)) or local to the entire function it was declared in. The main difference between `var` and [`let`](let.md) is that the scope of `var` is the entire function, whereas the scope of `let` is the block it was declared in as well as any contained sub-blocks.
+The [scope][concept-scope] of variables declared using the `var` keyword is either [global][concept-scope#global-scope] (if it was not declared in a [function][keyword-function]) or local to the entire function it was declared in. The main difference between `var` and [`let`][keyword-let] is that the scope of `var` is the entire function, whereas the scope of `let` is the block it was declared in as well as any contained sub-blocks.
 ```javascript
 function bob() {
   {
@@ -28,3 +28,8 @@ function steve() {
   console.log(name); // Variable name is defined, as "Steve"
 }
 ```
+
+[keyword-function]: ./function.md
+[keyword-let]: ./let.md
+[concept-scope]: ../info/scope.md
+[concept-variable]: ../../../../reference/concepts/variables.md
