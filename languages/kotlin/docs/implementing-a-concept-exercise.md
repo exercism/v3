@@ -130,4 +130,4 @@ When implementing an exercise, it can be very useful to look at the exercises th
 
 If you have any questions regarding implementing this exercise, please post them as comments in the exercise's GitHub issue.
 
-[reference]: ../../reference/README.md
+[reference]: ../reference/README.md
