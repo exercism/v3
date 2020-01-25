@@ -18,7 +18,7 @@ documentation on exported function (or in the wrong format).
 
 ### Comments
 
-It's the first time most students work with go, and many have not yet been using proper documentation of the package and
+It's the first time most students work with Go, and many have not yet been using proper documentation of the package and
 the exported function. Most of the time they leave the stub comments in the file.
 
 ### Functions
