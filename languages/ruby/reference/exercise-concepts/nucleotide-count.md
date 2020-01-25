@@ -6,12 +6,12 @@
 - module methods: depending on the approach, they can be used instead of the class methods.
 - factory pattern and object creation: the method `from_dna` can be used to create instances of the main class.
 - instance variables: @variables are needed to store the common value/state for all object methods.
-- accessors: `att_reader` can be used to access instance variables.
+- accessors: `att_reader` may be used to access instance variables.
 - access modifiers: `private` can be used to restrict access to the readers.
 - method definition: the `histogram` method needs to be defined.
 - method arguments: the method `from_dna` needs an argument.
 - string: one string is passed as the input.
-- chars: it's necessary to convert the string into an array of chars.
+- chars: can be used to convert the string into an array of characters.
 - strings mutation: `freeze` can be used to prevent string constants from mutating.
 - Enumerable module: including `Enumerable` and implement `each` is one of the possible approaches to this exercise.
 - Enumerable#count: one of the possible ways of counting nucleotides.
@@ -21,7 +21,7 @@
 - guard clauses: a guard clause can be used to raise an exception.
 - constants: constants can be used to store static information like DNA values.
 - namespaces: namespaces can be used along with constants.
-- if conditions: an if condition can be used to check if the input is valid.
+- conditionals: a condition may be used to check if the input is valid.
 - yield: in case `Enumerable` is included the `each` method has to use `yield`.
 - blocks: they are used in any of the Enumerable methods.
 - Ruby magic comments: `frozen_string_literal` can be used.
