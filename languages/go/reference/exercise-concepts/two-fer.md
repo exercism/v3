@@ -33,7 +33,7 @@ Everything is done via functions. In this case:
 The parameter passed is a string. For the default value, a check needs to be made if the string is empty.
 
 - how to do an idiomatic check for empty string
-- how to concatenate strings, either via simple `+` or via the fmt package
+- how to concatenate strings, either using a simple `+`, or the `fmt` package
 
 
 ### Variables / Assignment / Scope
