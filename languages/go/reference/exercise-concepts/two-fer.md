@@ -44,7 +44,7 @@ The parameters are passed by value, so in the scope of the function they can be 
 
 ### Comparison / Conditionals
 
-The parameter needs to be checked if it's empty.
+The code needs to check whether the parameter is empty.
 
 No else branch is needed. Keeps the code simpler.
 
