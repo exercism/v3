@@ -48,7 +48,7 @@ For example:
 - `strings-basic`
 - ...]
 
-## Prequisites
+## Prerequisites
 
 [List the prerequisite concepts that this exercise expects the student to already be familiar with.
 
