@@ -8,7 +8,7 @@ Given a name, return a string with the message: "One for X, one for me.", where 
 
 ### Code formatting
 
-It's the first time most students work with go, and many have not yet used `gofmt`.
+It's the first time most students work with Go, and many have not yet used `gofmt`.
 
 ### Linting
 
