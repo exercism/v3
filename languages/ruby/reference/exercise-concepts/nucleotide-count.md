@@ -27,10 +27,10 @@
 - Ruby magic comments: `frozen_string_literal` can be used.
 - require: use to import test library and `nucleotide_count` file
 
-## Approach: include Enumerable
+## Approach: use Enumerable mixing
 
 - Make the class that represents the nucleotides strand to include Enumerable so that all `Enumerable` methods are available.
-- Requires implementation of `each` method.
+- Requires implementation of `each` method. See [Enumerable mixing documentation](https://ruby-doc.org/core-2.7.0/Enumerable.html)
 
 ## Approach: Use collections + Enumerable methods.
 
