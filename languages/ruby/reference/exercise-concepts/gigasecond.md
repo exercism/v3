@@ -1,4 +1,4 @@
-== Gigasecond
+## Gigasecond
 
 Concepts that are present for this exercise:
 
