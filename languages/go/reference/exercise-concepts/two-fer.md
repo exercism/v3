@@ -23,7 +23,7 @@ the exported function. Most of the time they leave the stub comments in the file
 
 ### Functions
 
-Everything is done via functions. In this case, it's also:
+Everything is done via functions. In this case:
 
 - there is no concept of default values for paramaters, it's done in the body of the function
 - parameters are passed by value, so in the scope of the function they can be altered
