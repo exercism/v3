@@ -13,7 +13,7 @@ It's the first time most students work with go, and many have not yet used `gofm
 ### Linting
 
 It's the first time most students work with go, and many have not yet used `golint`. Linting already provides some hints
-on what (not) to do, eg use of variable names, not using else if the the regular condition ends with return, and missing
+on what (not) to do, e.g. use of variable names, not using else if the the regular condition ends with return, and missing
 documentation on exported function (or in the wrong format). 
 
 ### Comments
