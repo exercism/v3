@@ -27,9 +27,12 @@ Concept Exercises must have the following characteristics:
 - They are language-specific, not generic.
 - Stubs/boilerplate are used to avoid the student having to learn/write unnecessary code on exercises.
 
+Exercises are unlocked based on concepts taught and learnt. Each Concept Exercise must teach one or more concepts. It may also have prerequisites on Concepts, which means it will not be unlocked until Concept Exercises teaching those prerequisite concepts have been completed.
+
+Concept Exercises should not inherently become more difficult as the track progresses. **A seasoned developer in Language X should be able to work through all the Concept Exercises on that track spending no more than 5-10 minutes solving each one.** As each exercise should be focussed on getting someone to use a concept for the first time, and because the seasoned developer already understands that concept in Language X, the exercise should feel relatively trivial for them. Later exercises may feel more difficult to a developer unfamiliar with Language X, but only because the later exercise is teaching a concept which in itself is more complicated (for example, most people would agree Recursion is a more complex topic to learn for the first time, than a Loop is to remap from one language to another).
+
 Concept Exercises are **not** mentored. When a user submits a submission that gets the tests passing for a Concept Exercise, we check for an Analyzer or Representer to give feedback. If none is found, then the solution is approved. This shifts the burden of teaching to the exercise, which must provide a clear pathway to learning the concept that is being taught.
 
-Exercises are unlocked based on concepts taught and learnt. Each Concept Exercise must teach one or more concepts. It may also have prerequisites on Concepts, which means it will not be unlocked until Concept Exercises teaching those prerequisite concepts have been completed.
 
 Concept Exercises do not share a common base like Practice Exercises do in the `problem-specifications` repository. Instead they "share" Concepts that they are teaching with other languages. This repository aims to list all of those Concepts and provide information about the Concept that maintainers can use as the basis for their own languages. Each Concept should also link to the implementations in different languages. Maintainers are free to copy and paste from each others repositories, and then edit to make things specific to their tracks, but such copy-and-pastes should be considered hard-forks.
 
@@ -64,10 +67,6 @@ See the C# floating-point-numbers exercise's [hints.md file][csharp-docs-hints.m
 Once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught.
 
 See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.md] for an example.
-
-### `.meta/config.json`
-
-See the C# floating-point-numbers exercise's [config.json file][csharp-meta-config.json] for an example.
 
 ## Track Structure
 
