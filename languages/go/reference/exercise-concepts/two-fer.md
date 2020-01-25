@@ -38,7 +38,7 @@ The parameter passed is a string. For the default value, a check needs to be mad
 
 ### Variables / Assignment / Scope
 
-The parameters are passed by-value, so in the scope of the function they can be altered.
+The parameters are passed by value, so in the scope of the function they can be altered.
 
 - scoping
 
