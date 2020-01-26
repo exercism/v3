@@ -5,7 +5,7 @@
   - [C](/languages/c/README.md)
   - [C#](/languages/csharp/README.md)
   - [Clojure](/languages/clojure/README.md)
-  - [Common Lisp](/languages/common-list/README.md)
+  - [Common Lisp](/languages/common-lisp/README.md)
   - [Dart](/languages/dart/README.md)
   - [Elixir](/languages/elixir/README.md)
   - [Emacs LISP](/languages/emacs-lisp/README.md)
