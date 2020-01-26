@@ -26,7 +26,6 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 ├── .meta
-                |   ├── config.json
                 |   └── example.lisp
                 ├── &lt;SLUG&gt;.asd
                 ├── &lt;SLUG&gt;.lisp
