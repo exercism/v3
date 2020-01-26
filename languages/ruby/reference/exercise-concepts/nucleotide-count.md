@@ -2,7 +2,7 @@
 
 ## General
 
-- class methods: used as the starting point of the exercise. They can be named with `self.[method_name]` notation or with a `self` block.
+- class level methods: used as the starting point of the exercise. They can be named with `self.[method_name]` notation or with a `self` block. Another way of creating class methods is extending a module.
 - module methods: depending on the approach, they can be used instead of the class methods.
 - factory pattern and object creation: the method `from_dna` can be used to create instances of the main class.
 - instance variables: @variables are needed to store the common value/state for all object methods.
@@ -42,7 +42,7 @@
 
 ## Approach: Use collections + String#count and Regex.
 
-- Use `String#count` to count nucleotide ocurrences.
+- Use `String#count` to count nucleotide occurrences.
 - Initialize a hash for the histogram then use `Enumerable#each` and `String#count` to fill it.
-- Use Regex to valida the input.
+- Use Regex to validate the input.
 
