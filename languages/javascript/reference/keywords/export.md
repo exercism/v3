@@ -22,7 +22,7 @@ export const foo = "bar";
 export { foo, bar }; // this exports a list of multiple features
 ```
 
-## `Export-from`Syntax / Re-exporting modules
+## Export-from-syntax / Re-exporting modules
 
 There is also a syntax that allows for `import`ing modules and directly `export`ing all or parts of it:
 
@@ -62,6 +62,8 @@ module.exports = {
 ## Further reading
 
 > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
+
+> https://exploringjs.com/es6/ch_modules.html#sec_basics-of-es6-modules
 
 [keyword-import]: ./import.md
 [concept-module]: ../info/modules.md
