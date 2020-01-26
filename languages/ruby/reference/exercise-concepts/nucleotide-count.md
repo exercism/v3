@@ -36,8 +36,13 @@
 - Use `Enumerable#count` to count nucleotide occurrences.
 - Use `String#chars` and `Enumerable#each_with_object` to create the histogram
 
-
 ## Approach: Use indexes to loop over the chars.
 
 - Similar to the previous approach but using indexes and loops to iterate over the chars array
+
+## Approach: Use collections + String#count and Regex.
+
+- Use `String#count` to count nucleotide ocurrences.
+- Initialize a hash for the histogram then use `Enumerable#each` and `String#count` to fill it.
+- Use Regex to valida the input.
 
