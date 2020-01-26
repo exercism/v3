@@ -16,7 +16,7 @@ To implement a concept exercise, the following files must be created:
 
 <pre>
 languages
-└── csharp
+└── common-lisp
     └── exercises
         └── concept
             └── &lt;SLUG&gt;
