@@ -17,7 +17,7 @@ By "Fluency", we mean: Do you **get** that language? Can you reason in that lang
 
 "Fluency" is different to "Proficiency", where we use proficiency to mean: Can you write programs in the language (e.g. can you nav stdlib, docs, compose complex code structures).
 
-Exercism focuses on teaching Fluency not Proficiency. We aim to teach people to understand what a makes a language unique and how experienced programmers in that language would reason about - and solve - problems.
+Exercism focuses on teaching Fluency not Proficiency. We aim to teach people to understand what makes a language unique and how experienced programmers in that language would reason about - and solve - problems.
 
 ## How are Concept Exercises designed and structured?
 
