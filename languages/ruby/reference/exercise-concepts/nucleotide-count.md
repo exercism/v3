@@ -25,7 +25,6 @@
 - yield: in case `Enumerable` is included the `each` method has to use `yield`.
 - blocks: they are used in any of the Enumerable methods.
 - Ruby magic comments: `frozen_string_literal` can be used.
-- require: use to import test library and `nucleotide_count` file
 
 ## Approach: use Enumerable mixing
 
