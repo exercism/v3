@@ -144,6 +144,7 @@ Note: Wrapped primitives (using the `new Constructor()` syntax are of [`typeof`]
 - [Methods][concept-methods]
 - [Rest parameters][concept-rest-parameters]
 - [Scope][concept-scope]
+- [String concatenation][concept-string-concatenation]
 - [Type casting][concept-type-casting] (see also [type inference][concept-type-inference])
 - [Variables][concept-variables]
 
@@ -161,6 +162,7 @@ Note: Wrapped primitives (using the `new Constructor()` syntax are of [`typeof`]
 [concept-methods]: ../../../reference/concepts/methods.md
 [concept-rest-parameters]: ../../../reference/concepts/rest_parameters.md
 [concept-scope]: ../../../reference/concepts/scope.md
+[concept-string-concatenation]: ../../../reference/concepts/string-concatenation.md
 [concept-type-casting]: ../../../reference/concepts/type_casting.md
 [concept-variables]: ../../../reference/concepts/variables.md
 

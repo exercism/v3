@@ -13,7 +13,7 @@ It is important to understand we _never_ explain a specific type or syntax as a 
 A list of exercises that we _must_ have is compiled below, and is not at all a complete list:
 
 - [x] [`/numbers`][concept-numbers]: `"numbers-basic"`, `"type-conversion"`
-- [x] [`/strings`][concept-strings]: `"strings-basic"`
+- [x] [`/strings`][concept-strings]: `"strings-basic"`, `"strings-concatenation"`
 - [x] [`/promises`][concept-promises]: `"promises"`
 - [ ] `"arrays-basic"`
 - [ ] `"errors-basic"`
