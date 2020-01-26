@@ -5,7 +5,7 @@
 - class level methods: used as the starting point of the exercise. They can be named with `self.[method_name]` notation or with a `self` block. Another way of creating class methods is extending a module.
 - module methods: depending on the approach, they can be used instead of the class methods.
 - factory pattern and object creation: the method `from_dna` can be used to create instances of the main class.
-- instance variables: @variables are needed to store the common value/state for all object methods.
+- instance variables: store the common value/state for the instance.
 - accessors: `att_reader` may be used to access instance variables.
 - access modifiers: `private` can be used to restrict access to the readers.
 - method definition: the `histogram` method needs to be defined.
