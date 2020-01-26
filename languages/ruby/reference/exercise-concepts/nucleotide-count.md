@@ -38,11 +38,10 @@
 
 ## Approach: Use indexes to loop over the chars.
 
-- Similar to the previous approach but using indexes and loops to iterate over the chars array
+- Similar to the previous approach but using indexes and loops to iterate over an `Array` of characters.
 
 ## Approach: Use collections + String#count and Regex.
 
 - Use `String#count` to count nucleotide occurrences.
 - Initialize a hash for the histogram then use `Enumerable#each` and `String#count` to fill it.
 - Use Regex to validate the input.
-
