@@ -20,7 +20,8 @@ const NAME = "Sally"
 ```
 Variables declared using the `const` keyword are [block-scoped][concept-scope], meaning they are only accessible within the current block, and any contained sub-blocks.
 
-The value that a variable declared using `const` holds can only be referenced *after* it has been defined. This is known as the [Temporal Dead Zone][concept-scope#temporal-dead-zone].
+The value that a variable declared using `const` holds can only be referenced *after* it has been defined. This is known as the [Temporal Dead Zone][concept-temporal-dead-zone].
 
+[concept-temporal-dead-zone][../info/scope.md#temporal-dead-zone]
 [concept-immutability]: ../info/immutability.md
 [concept-scope]: ../info/scope.md
