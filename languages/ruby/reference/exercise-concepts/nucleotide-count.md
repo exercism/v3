@@ -11,7 +11,7 @@
 - method definition: the `histogram` method needs to be defined.
 - method arguments: the method `from_dna` needs an argument.
 - string: one string is passed as the input.
-- chars: can be used to convert the string into an array of characters.
+- `chars`: can be used to convert the string into an array of characters.
 - strings mutation: `freeze` may be used to prevent string constants from mutating. The directive `frozen_string_literal: true` may also be used for the same purpose.
 - Enumerable module: including `Enumerable` and implement `each` is one of the possible approaches to this exercise.
 - `Enumerable#count`: one of the possible ways of counting nucleotides.
