@@ -9,6 +9,8 @@ When dealing with `UTF-8` characters it is important to know, that not all chara
 `ASCII` characters have the length of one `byte`. Other characters can have up to 4 bytes.
 Runes, bytes and their connection to strings will be handled more in-depth in a later exercise.
 
+Since `strings` are based on `[]byte` there are some commonalities. For example you can get a `byte` at position `i` from a `string` with `s[i]`. Other things are different than with a `slice`. For example can a string **not** be changed with `s[i] = 'a'`.
+
 [Strings, bytes, runes and characters in Go](https://blog.golang.org/strings) provides a deep dive into this topic.
 
 ### Conditionals
