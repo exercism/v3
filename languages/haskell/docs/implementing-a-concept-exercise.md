@@ -21,7 +21,6 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 ├── .meta
-                |   ├── config.json (omit for now)
                 |   └── <SLUG>.hs (example solution)
                 ├── src
                 |   └── <NAME>.hs
@@ -34,6 +33,7 @@ languages
 ## Step 1: add track-specific files
 
 These are files specific to the PureScript track:
+
 - `src/<NAME>.hs`: the stub implementation file, which is the starting point for students to work on the exercise.
 - `test/Main.hs`: the test suite.
 - `.meta/Example.hs`: an example implementation that passes all the tests.

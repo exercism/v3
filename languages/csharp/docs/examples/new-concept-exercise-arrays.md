@@ -84,7 +84,6 @@ languages
                 |   ├── instructions.md
                 |   └── introduction.md
                 ├── .meta
-                |   ├── config.json
                 |   └── Example.cs
                 ├── Arrays.csproj
                 ├── Arrays.cs
@@ -109,11 +108,7 @@ Check out the [`numbers-floating-point exercise`][concept-exercises-numbers-floa
 - `.docs/hints.md`: if the user gets stuck, we will allow them to click a button requesting a hint, which shows this file. We will softly discourage them using it. The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any student. An example file can be found [here][hints.md].
 - `.docs/after.md`: once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught. An example file can be found [here][after.md].
 
-### Step 3: adding other files
-
-- `.meta/config.json`: metadata for the exercise. This includes defining the test file and the solution files, as well as a list of all the tests and the method they are calling. An example file can be found [here][meta-config.json].
-
-### Step 4: updating files
+### Step 3: updating files
 
 - `languages/csharp/config.json`: a new entry should be added to the `"concept"` array, which is part of the `"exercises"` property:
 
@@ -126,7 +121,7 @@ Check out the [`numbers-floating-point exercise`][concept-exercises-numbers-floa
 }
 ```
 
-### Step 5: updating list of implemented exercises
+### Step 4: updating list of implemented exercises
 
 - Add the exercise to the [list of implemented exercises][concept-exercises].
 
@@ -161,5 +156,4 @@ This exercise could benefit from having an [analyzer][analyzer] that can comment
 [hints.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/hints.md
 [introduction.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
 [instructions.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/instructions.md
-[meta-config.json]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.meta/config.json
 [concept-exercises]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/README.md

@@ -25,7 +25,6 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 ├── .meta
-                |   ├── config.json
                 |   └── Example.kt
                 ├── src
                 |   ├── main
@@ -59,13 +58,9 @@ If the user gets stuck, we will allow them to click a button requesting a hint, 
 
 Once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught.
 
-~~These files are also all described in the [concept exercises document] [docs-concept-exercises].~~
+~~These files are also all described in the [concept exercises document][docs-concept-exercises].~~
 
-## Step 5: add .meta/config.json
-
-This file contains metadata for the exercise. The metadata includes paths to the test file and the solution files, as well as a list of all the tests and the method they are calling.
-
-## Step 6: update languages/kotlin/config.json
+## Step 5: update languages/kotlin/config.json
 
 An entry should be added to the track's `config.json` file for the new concept exercise:
 
@@ -92,7 +87,7 @@ Where:
 - `<CONCEPT-1`/`<CONCEPT-2>` - concepts that are explained in the exercise (at least one concept is required, more concepts are optional);
 - `<PREREQUISITE-1>`/`<PREREQUISITE-2>` - this exercises will be blocked for user unless all concepts from from `prerequisites` are already familiar for user (e.g. he finished exercises covering this concepts).
 
-## Step 7: adding track-specific files
+## Step 6: adding track-specific files
 
 Having added the files that are not specific to the track, now is the time to create the track-specific files. These file will include:
 
@@ -102,7 +97,7 @@ Having added the files that are not specific to the track, now is the time to cr
 
 What these files look like depends on your track. Note that some tracks might require more files in addition to the three files just mentioned.
 
-## Step 8: add analyzer (optional)
+## Step 7: add analyzer (optional)
 
 ```diff
 ! WIP ignore this for now as we don't have proper analyzer yet
@@ -112,7 +107,7 @@ Some exercises could benefit from having an exercise-specific analyzer. If so, p
 
 Skip this step if your track does not have an analyzer.
 
-## Step 9: custom representation (optional)
+## Step 8: custom representation (optional)
 
 ```diff
 ! WIP ignore this for now as we don't have proper analyzer yet
