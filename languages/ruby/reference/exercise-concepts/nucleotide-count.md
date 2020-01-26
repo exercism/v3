@@ -14,7 +14,7 @@
 - chars: can be used to convert the string into an array of characters.
 - strings mutation: `freeze` may be used to prevent string constants from mutating. The directive `frozen_string_literal: true` may also be used for the same purpose.
 - Enumerable module: including `Enumerable` and implement `each` is one of the possible approaches to this exercise.
-- Enumerable#count: one of the possible ways of counting nucleotides.
+- `Enumerable#count`: one of the possible ways of counting nucleotides.
 - `Enumerable#inject` vs `Enumerable#each_with_object`.
 - exceptions: necessary to raise an exception if the input is not valid.
 - return values: methods need to return values either implicitly or explicitly.
