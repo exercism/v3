@@ -42,10 +42,12 @@ These files are specific to the Common Lisp track:
   point for students to work on the exercise.
 - `<SLUG>-test.lisp`: the test suite.
 - `<SLUG>.asd`: the Common Lisp system file defining `<SLUG>` and
-  `<SLUG>/test` systems. The `test-op` of `<SLUG>` should run the test
+  `<SLUG>/test` systems. The `test-op` of `<SLUG>` should run the tests
   in `<SLUG>/test`.
-- `package.lisp`: the package definition for both `<SLUG>` and `<SLUG>-test` pacakges.
-- `.meta/example.lisp`: an example implementation that passes all the tests.
+- `package.lisp`: the package definition for both `<SLUG>` and
+  `<SLUG>-test` packages.
+- `.meta/example.lisp`: an example implementation that passes all the
+    tests.
 
 ## Step 2: adding common files
 
