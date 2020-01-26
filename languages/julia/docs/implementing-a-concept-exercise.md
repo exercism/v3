@@ -20,7 +20,6 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 ├── .meta
-                |   ├── config.json
                 |   └── example.jl
                 ├── $slug.jl
                 ├── $runtests.jl
