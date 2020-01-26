@@ -24,7 +24,7 @@
 - conditionals: a condition may be used to check if the input is valid.
 - yield: in case `Enumerable` is included the `each` method has to use `yield`.
 - blocks: they are used in any of the Enumerable methods.
-- Ruby magic comments: `frozen_string_literal` can be used.
+- Ruby magic comments: `frozen_string_literal: true` can be used.
 
 ## Approach: use Enumerable mixing
 
