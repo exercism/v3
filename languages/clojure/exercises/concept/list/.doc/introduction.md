@@ -1,10 +1,10 @@
 # Introduction
 
-A [collection][type-collection] data structure in which a sequence of items that are associated together in order, but are not physically associated together in a contiguous block of memory as they would be in an [array][type-array]. In a singly-linked list, for example, each item is a node that contains the value for that item and a reference to the next node in the array.
+`List` in Clojure is, like [that][type-list]other languages, a [collection][type-collection] of values. It looks like quite differntly however.
 
-In many languages lists are _homogenous_ like arrays, and can contain only one type of item internally. In some languages, however, lists are _heterogenous_ and can contain multiple types of item.
+A list is created with a `'` at the beginning and followed by grouping items with parentheses. Think about why a `'` is needed?
 
-In Clojure, lists are _heterogenous_, 
+In Clojure, lists are _heterogenous_ and can contain only mutliple types of item internally.
 
-[type-array]: ./array.md
-[type-collection]: ./collection.md
+[type-list]: ../../../../../../reference/types/list.md
+[type-collection]: ../../../../../../reference/types/collection.md

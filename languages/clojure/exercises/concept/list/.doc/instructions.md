@@ -1,55 +1,37 @@
 # Instructions
 
-In this exercise you'll be creating and operate on a list.
+In this exercise you'll be writing code to process a list of programming languages you are planning to practice from Exercism platform.
 
-- Read
-- Write
-- Delete
+- Create
+- Add
+- Remove
+- Query
+- Count
 
-There are three types of accounts, each with different default permissions:
+You have five tasks.
 
-- Guests: can read posts.
-- Users: can read and write posts.
-- Moderators: can read, write and delete posts.
+### 1. Create an empty list of programming languages
 
-Sometimes individual permissions are modified, for example giving a guest account the permission to also write posts.
+First, define an empty list.
 
-You have four tasks.
+### 2. Add 4 new programming languages to the list
 
-### 1. Get default permissions for an account type
+Add 4 new programming languages you'd plan to practice:
 
-First, define an `AccountType` enum to represent the three account types. Next, define a `Permission` enum to represent the three permission types and two extra ones: one for having no permissions at all, and for having all permissions.
+- "Clojure"
+- "Lisp"
+- "Java"
+- "JavaScript"
 
-Then implement a method to return the default permissions for a specific account type:
+### 3. Remove 1 language from the list
 
-```csharp
-Permissions.Default(AccountType.Guest)
-// Returns: Permission.Read
-```
+After some thought, you want to remove "Lisp" from the list, as you might not have enough time for the year, and it's quite similar to Clojure.
 
-### 2. Grant a permission
 
-Implement a method that grants (adds) a permission:
+### 4. Check that the removed language is not in the list anymore
 
-```csharp
-Permissions.Grant(current: Permission.None, grant: Permission.Read)
-// Returns: Permission.Read
-```
+You do a query and make sure that language "Lisp" is removed from the list
 
-### 3. Revoke a permission
+### 5. Count the total number of languages
 
-Implement a method that revokes (removes) a permission:
-
-```csharp
-Permissions.Revoke(current: Permission.Read, grant: Permission.Read)
-// Returns: Permission.None
-```
-
-### 4. Check for a permission
-
-Implement a method that takes the current account's permissions and checks if the account is authorized for a given permission:
-
-```csharp
-Permissions.Check(current: Permission.Write, check: Permission.Read)
-// Returns: false
-```
+Count the list and find the total number of languages.

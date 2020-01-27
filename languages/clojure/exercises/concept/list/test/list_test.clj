@@ -1,6 +1,18 @@
-(ns concept-list-test
+(ns list-test
   (:require [clojure.test :refer [deftest is]]
-            concept-list))
+            list))
 
-(deftest concept-list-test
-  (is (= "Hello, World!" (hello-world/hello))))
+(deftest list-new-test
+  (is (= '() (list/new))))
+
+(deftest list-add-test
+  (is (= '() (list/add))))
+
+(deftest list-remove-test
+  (is (= '() (list/remove))))
+
+(deftest list-query-test
+  (is (= '() (list/query))))
+
+(deftest list-count-test
+  (is (= '() (list/count))))
