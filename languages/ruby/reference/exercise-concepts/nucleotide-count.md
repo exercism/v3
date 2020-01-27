@@ -2,29 +2,29 @@
 
 ## General
 
-- class level methods: used as the starting point of the exercise. They can be named with `self.[method_name]` notation or with a `self` block. Another way of creating class methods is extending a module.
-- module methods: depending on the approach, they can be used instead of the class methods.
-- factory pattern and object creation: the method `from_dna` can be used to create instances of the main class.
+- class level methods: used as the starting point of the exercise. They may be named with `self.[method_name]` notation or with a `self` block. Another way of creating class methods is extending a module.
+- module methods: depending on the approach, they may be used instead of the class methods.
+- factory pattern and object creation: the method `from_dna` may be used to create instances of the main class.
 - instance variables: store the common value/state for the instance.
 - accessors: `att_reader` may be used to access instance variables.
-- access modifiers: `private` can be used to restrict access to the readers.
+- access modifiers: `private` may be used to restrict access to the readers.
 - method definition: the `histogram` method needs to be defined.
 - method arguments: the method `from_dna` needs an argument.
 - string: one string is passed as the input.
-- `chars`: can be used to convert the string into an array of characters.
+- `chars`: may be used to convert the string into an array of characters.
 - strings mutation: `freeze` may be used to prevent string constants from mutating. The directive `frozen_string_literal: true` may also be used for the same purpose.
 - Enumerable module: including `Enumerable` and implement `each` is one of the possible approaches to this exercise.
 - `Enumerable#count`: one of the possible ways of counting nucleotides.
 - `Enumerable#inject` vs `Enumerable#each_with_object`.
 - exceptions: necessary to raise an exception if the input is not valid.
 - return values: methods need to return values either implicitly or explicitly.
-- guard clauses: a guard clause can be used to raise an exception.
-- constants: constants can be used to store static information like DNA values.
-- namespaces: namespaces can be used along with constants.
+- guard clauses: a guard clause may be used to raise an exception.
+- constants: constants may be used to store static information like DNA values.
+- namespaces: namespaces may be used along with constants.
 - conditionals: a condition may be used to check if the input is valid.
 - yield: in case `Enumerable` is included the `each` method has to use `yield`.
 - blocks: they are used in any of the Enumerable methods.
-- Ruby magic comments: `frozen_string_literal: true` can be used.
+- Ruby magic comments: `frozen_string_literal: true` may be used.
 
 ## Approach: use Enumerable mixing
 
