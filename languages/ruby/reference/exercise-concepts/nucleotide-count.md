@@ -45,3 +45,6 @@
 - Use `String#count` to count nucleotide occurrences.
 - Initialize a hash for the histogram then use `Enumerable#each` and `String#count` to fill it.
 - Use Regex to validate the input.
+
+## Approach: Use collections + String#count.
+- Similar to the previous approach but using `String#count` + `String#size` to validate the input.
