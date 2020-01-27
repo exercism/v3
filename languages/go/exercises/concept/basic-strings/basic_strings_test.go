@@ -46,7 +46,7 @@ func TestMessage(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := Message(tt.args.line); got != tt.want {
-				t.Errorf("Message(\"%v\") = \"%v\", want \"%v\"", escapeWhiteSpace(tt.args.line), got, tt.want)
+				t.Errorf("Message(\"%s\") = \"%s\", want \"%s\"", escapeWhiteSpace(tt.args.line), got, tt.want)
 			}
 		})
 	}
@@ -140,7 +140,7 @@ func TestLogLevel(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := LogLevel(tt.args.line); got != tt.want {
-				t.Errorf("LogLevel(\"%v\") = \"%v\", want \"%v\"", escapeWhiteSpace(tt.args.line), got, tt.want)
+				t.Errorf("LogLevel(\"%s\") = \"%s\", want \"%s\"", escapeWhiteSpace(tt.args.line), got, tt.want)
 			}
 		})
 	}
@@ -187,7 +187,7 @@ func TestReformat(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := Reformat(tt.args.line); got != tt.want {
-				t.Errorf("Reformat(\"%v\") = \"%v\", want \"%v\"", escapeWhiteSpace(tt.args.line), got, tt.want)
+				t.Errorf("Reformat(\"%s\") = \"%s\", want \"%s\"", escapeWhiteSpace(tt.args.line), got, tt.want)
 			}
 		})
 	}
