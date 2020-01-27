@@ -47,7 +47,7 @@ Before launch, we need all of the following parts to be completed:
 ## Extra magic
 
 These extra steps will make your track better, but are optional.
-
+ 
 ### Analyzer
 
 - [x] Build Analyzer
