@@ -25,6 +25,7 @@
 - yield: in case `Enumerable` is included the `each` method has to use `yield`.
 - blocks: they are used in any of the Enumerable methods.
 - Ruby magic comments: `frozen_string_literal: true` may be used.
+- array difference: may be use to validate the input
 
 ## Approach: use Enumerable mixing
 
@@ -47,4 +48,6 @@
 - Use Regex to validate the input.
 
 ## Approach: Use collections + String#count.
-- Similar to the previous approach but using `String#count` + `String#size` to validate the input.
+- Similar to the previous approach but using `String#count` and `String#size` to validate the input.
+- For the input validation part it's also possible to use array difference to remove nucleotides from the input resulting in an empty collection for the valid inputs.
+
