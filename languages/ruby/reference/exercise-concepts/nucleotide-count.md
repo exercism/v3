@@ -25,7 +25,8 @@
 - yield: in case `Enumerable` is included the `each` method has to use `yield`.
 - blocks: they are used in any of the Enumerable methods.
 - Ruby magic comments: `frozen_string_literal: true` may be used.
-- array difference: may be use to validate the input
+- array difference: may be use to validate the input.
+- regular expressions: may be used to validate the input.
 
 ## Approach: use Enumerable mixing
 
