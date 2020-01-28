@@ -5,9 +5,6 @@
     - [Docs](/languages/julia/docs/README.md)
     - [Exercises](/languages/julia/exercises/README.md)
     - [Reference](/languages/julia/reference/README.md)
-      - [Progression](/languages/julia/reference/progression.md)
-      - [Why do people use Julia?](/languages/julia/reference/why-do-people-use-julia.md)
-      - [Transitions](/languages/julia/reference/transitions/README.md)
 - Reference
   - [Concepts](/reference/concepts/README.md)
   - [Paradigms](/reference/paradigms/README.md)

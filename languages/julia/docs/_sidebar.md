@@ -3,11 +3,9 @@
 - [Languages](/languages/README.md)
   - [Julia](/languages/julia/README.md)
     - [Docs](/languages/julia/docs/README.md)
+      - [Implementing a Concept Exercise](/languages/julia/docs/implementing-a-concept-exercise.md)
     - [Exercises](/languages/julia/exercises/README.md)
     - [Reference](/languages/julia/reference/README.md)
-      - [Progression](/languages/julia/reference/progression.md)
-      - [Why do people use Julia?](/languages/julia/reference/why-do-people-use-julia.md)
-      - [Transitions](/languages/julia/reference/transitions/README.md)
 - Reference
   - [Concepts](/reference/concepts/README.md)
   - [Paradigms](/reference/paradigms/README.md)

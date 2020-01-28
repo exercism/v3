@@ -8,6 +8,11 @@
       - [Progression](/languages/julia/reference/progression.md)
       - [Why do people use Julia?](/languages/julia/reference/why-do-people-use-julia.md)
       - [Transitions](/languages/julia/reference/transitions/README.md)
+        - [C & C++](/languages/julia/reference/transitions/from_c&cpp.md)
+        - [Common Lisp](/languages/julia/reference/transitions/from_commonlisp.md)
+        - [MATLAB](/languages/julia/reference/transitions/from_matlab.md)
+        - [Python](/languages/julia/reference/transitions/from_python.md)
+        - [R](/languages/julia/reference/transitions/from_r.md)
 - Reference
   - [Concepts](/reference/concepts/README.md)
   - [Paradigms](/reference/paradigms/README.md)
