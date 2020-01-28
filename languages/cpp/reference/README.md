@@ -131,7 +131,7 @@ The following reference docs have been written:
 
 ## TODO
 
-Add more concepts for exercices
+Add more concepts for exercises
 
 [issues-improve-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fcpp+label%3Atype%2Fimprove-reference+label%3Astatus%2Fhelp-wanted
 [issues-new-reference]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Atrack%2Fcpp+label%3Atype%2Fnew-reference+label%3Astatus%2Fhelp-wanted+
@@ -147,7 +147,7 @@ Add more concepts for exercices
 [ulong]: ../../../reference/types/long.md
 [double]: ../../../reference/types/double.md
 [float]: ../../../reference/types/single.md
-[array⎄]: ../../../reference/types/array.md
+[array]: ../../../reference/types/array.md
 [list]: ../../../reference/types/list.md
 [map]: ../../../reference/types/map.md
 [set]: ../../../reference/types/set.md
