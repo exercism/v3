@@ -1,5 +1,7 @@
 # Concepts of meetup
 
+[Example implementation](https://github.com/exercism/fsharp/blob/master/exercises/meetup/Example.fs)
+
 ## General
 
 - functions: used as the main entry point for the exercise
