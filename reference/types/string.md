@@ -17,7 +17,7 @@ Tell a student what a string is in your language, how strings can be manipulated
 
 ### Log Lines
 
-This exercise covers joining, triming, case-changing, and substring extraction. It is a great exercise for covering the most basic elements of Strings, and ensuring a student finds the docs for strings.
+This exercise covers joining, triming, case-changing, and substring extraction. It is a great exercise for covering the most basic elements of strings, and ensuring a student finds the docs for strings.
 
 #### Implementations
 - [C#][implementation-csharp]
