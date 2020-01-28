@@ -1,18 +1,18 @@
-(ns list-test
+(ns language-list-test
   (:require [clojure.test :refer [deftest is]]
             list))
 
 (deftest list-new-test
-  (is (= '() (list/new))))
+  (is (= '() (list/new-item))))
 
 (deftest list-add-test
-  (is (= '() (list/add))))
+  (is (= '() (list/add-item))))
 
 (deftest list-remove-test
-  (is (= '() (list/remove))))
+  (is (= '() (list/remove-item))))
 
 (deftest list-query-test
-  (is (= '() (list/query))))
+  (is (= '() (list/query-item))))
 
 (deftest list-count-test
-  (is (= '() (list/count))))
+  (is (= '() (list/count-list))))
