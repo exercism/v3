@@ -43,4 +43,4 @@
 ## Approach: regular expressions
 
 - conditionals using if-elif-else: conditionally execute logic using an `if/elif/else` statement
-- regular expressions: checking the string types using regular expressions
+- regular expressions: checking the phrase types using regular expressions
