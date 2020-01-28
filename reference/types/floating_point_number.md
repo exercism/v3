@@ -16,7 +16,7 @@ A student may have no understanding of floating point numbers as more than numbe
 
 - Explain that a floating point number is not *just* a number with a decimal place.
 - Explain what floating point types are used in your langauge, and when to use them.
-- Ensure that type conversations are understood if appropriate (e.g. rounding, precision-changing)
+- Ensure that type conversions are understood if appropriate (e.g. rounding, precision-changing)
 - Ensure that students know how to compare numbers to each other.
 
 ## Exercises
