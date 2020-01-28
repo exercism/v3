@@ -37,6 +37,7 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - Object lifetime
 - RAII
 - Move-semantics
+- Free-store (heap)
 
 ### Functions
 
