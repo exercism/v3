@@ -63,6 +63,7 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - [Destructuring (structured-bindings)](../../../reference/concepts/destructuring_assignment.md)
 - Concurrency (thread-safety)
 - Expressions vs statements
+- Value categories
 - Attributes
 - Slicing
 - Reflection (`<type_traits>`)
