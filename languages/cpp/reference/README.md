@@ -43,11 +43,11 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - Function overloading
 - Default parameters
 - Special member-functions
-- Operators
+- [Operators](../../../reference/concepts/operators.md)
 
 ### General
 
-- Arithmetic
+- [Arithmetic](../../../reference/concepts/arithmetic.md)
 - [Sameness](../../../reference/concepts/sameness.md) (Equality)
 - Ordering
 - [Conditionals](../../../reference/concepts/conditionals.md)
