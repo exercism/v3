@@ -22,7 +22,7 @@ languages
                 ├── .meta
                 |   └── example.jl
                 ├── $slug.jl
-                ├── $runtests.jl
+                ├── runtests.jl
                 ├── Project.toml (optional)
                 └── Manifest.toml (optional)
 ```
