@@ -19,7 +19,7 @@
 - pipeline: using the `|>` operator to construct a pipeline
 - collection filtering: using `List.filter`, `List.find`, `List.last` and `List.item` to filter the list of dates
 - collection mapping: using `List.map` to map integers to `DateTime` instances
-- collection iteration: using `List` module functions to iterate over collection
+- collection iteration: using `List` module functions to iterate over collections
 - ranges: using a range to iterate over the days
 - discriminated unions: the `Week` type is defined as a discriminated union
 - equality operators: `=` used to compare day of week
