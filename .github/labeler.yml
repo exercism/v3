@@ -71,6 +71,9 @@ track/purescript:
 track/python:
   - languages/python/**/*
 
+track/racket:
+  - languages/racket/**/*
+
 track/reasonml:
   - languages/reasonml/**/*
 
