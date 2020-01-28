@@ -3,7 +3,7 @@
 ## General
 
 - functions: used as the main entry point for the exercise
-- function arguments: input strand is passed as an arguments
+- function arguments: input strand is passed as an argument
 - methods: calling the `Char.IsLetter`, `String.IsNullOrEmpty` method and several `string` methods
 - return values: returning a value from a function
 - implicit returns: the last expression is automatically returned from a function
