@@ -1,5 +1,7 @@
 # Concepts of nucleotide-count
 
+[Example implementation](https://github.com/exercism/csharp/blob/master/exercises/nucleotide-count/Example.cs)
+
 ## General
 
 - functions: used as the main entry point for the exercise
