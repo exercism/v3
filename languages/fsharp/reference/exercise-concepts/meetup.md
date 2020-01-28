@@ -14,7 +14,7 @@
 - namespaces: knowing where to find the `DateTime` class
 - pattern matching: matching on the `Week` discriminated union
 - assignment: assigning values
-- anonymous functions: a lambda is use to filter and map
+- anonymous functions: a lambda is used to filter and map
 - partial application: partially applying arguments to functions to return a new function
 - pipeline: using the `|>` operator to construct a pipeline
 - collection filtering: using `List.filter`, `List.find`, `List.last` and `List.item` to filter the list of dates
