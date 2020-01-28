@@ -36,7 +36,7 @@ One caveat about re-exporting is that `default` exports are ignored by this synt
 
 ## Transpilation
 
-To make `export`s work, we use transpilers like [babel][babel] that take those modules and convert them into own file (or even multiple). Babel also has the benefit of another form of `export`s, the so-called `synthetic default export`:
+To make `export`s work, we use transpilers like [babel][babel] or [tsc][tsc] that take those modules and convert them into own file (or even multiple). Babel also has the benefit of another form of `export`s, the so-called `synthetic default export`:
 
 ```js
 exports = class XYZ {};
@@ -59,6 +59,10 @@ module.exports = {
 };
 ```
 
+## Where to use
+
+The `export` keyword, just like `import`, can only be used in a module, which means it has to be run in [Node.js][node-js], transpiled by [babel][babel] or therelike or be used in a [file included in the browser directly][es-modules-in-browser] using `<script type="module" src="…">`.
+
 ## Further reading
 
 > https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
@@ -69,6 +73,8 @@ module.exports = {
 [concept-module]: ../info/modules.md
 [es6-modules]: https://exploringjs.com/es6/ch_modules.html#sec_basics-of-es6-modules
 [babel]: https://babeljs.io/
+[tsc]: https://www.typescriptlang.org/docs/handbook/compiler-options.html
 [node-js]: https://nodejs.org/
 [cjs-modules]: https://en.wikipedia.org/wiki/CommonJS
 [no-default-in-reexport]: https://github.com/babel/babel/issues/826
+[es-modules-in-browser]: https://jakearchibald.com/2017/es-modules-in-browsers/
