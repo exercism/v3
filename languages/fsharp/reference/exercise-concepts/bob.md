@@ -1,5 +1,7 @@
 # Concepts of bob
 
+[Example implementation](https://github.com/exercism/fsharp/blob/master/exercises/bob/Example.fs)
+
 ## General
 
 - functions: used as the main entry point for the exercise
