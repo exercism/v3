@@ -22,7 +22,6 @@
 - constants: constants may be used to store static information like DNA values.
 - namespaces: namespaces may be used along with constants.
 - conditionals: a condition may be used to check if the input is valid.
-- yield: in case `Enumerable` is included the `each` method has to use `yield`.
 - blocks: they are used in any of the Enumerable methods.
 - Ruby magic comments: `frozen_string_literal: true` may be used.
 - array difference: may be use to validate the input.
