@@ -11,6 +11,7 @@ To implement a concept exercise, the following files must be created:
 ```
 languages
 └── julia
+    ├── runtests.jl
     └── exercises
         └── concept
             └── $slug
@@ -36,6 +37,8 @@ These files are specific to the Julia track:
 - `.meta/example.jl`: an example implementation that passes all the tests.
 - Project.toml (optional): if dependencies are required, provide this file for a reproducible environment.
 - Manifest.toml (optional): if dependencies are required, provide this file for a reproducible environment.
+
+Run `julia color=yes runtests.jl $slug` in the `/languages/julia/` directory to test the example solution.
 
 ## Step 2: adding common files
 
