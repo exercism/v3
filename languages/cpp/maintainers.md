@@ -4,7 +4,7 @@ These awesome people help maintain the C++ track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Kevin Matthews (Slack: `@Kevin Matthews`, Github: [KevinWMatthews](https://github.com/KevinWMatthews))
 
 ## Contributing Maintainers
 
