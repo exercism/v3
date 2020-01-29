@@ -56,6 +56,7 @@ This exercise does not require any specific representation logic to be added to 
 This exercise could benefit from having an [analyzer][analyzer] that can comment on:
 
 - Verify that the `Permission` enum is marked with the `[Flags]` attribute.
+- Suggest using `byte` as the enum's backing type if no backing type was explicitly specified.
 
 [analyzer]: https://github.com/exercism/csharp-analyzer
 [representer]: https://github.com/exercism/csharp-representer
