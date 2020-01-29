@@ -103,4 +103,4 @@ If you have any questions regarding implementing this exercise, please post them
 
 [docs-concept-exercises]: ../concept-exercises.md
 [reference]: ../../reference/concepts/README.md
-[meta-design]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/enums-advanced/.meta/design.md
+[meta-design]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/design.md
