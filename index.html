@@ -31,7 +31,8 @@
           code: function(code, lang) {
             if (lang === "mermaid") {
               return (
-                '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+                // Random ID generator based on https://stackoverflow.com/a/13403498
+                '<div class="mermaid">' + mermaid.render('mermaid-svg-' + Math.random().toString(36).substring(2, 15), code) + "</div>"
               );
             }
             return this.origin.code.apply(this, arguments);
@@ -39,7 +40,6 @@
         }
       }
     }
-    var num = 0;
     mermaid.initialize({ logLevel:0, startOnLoad: false, flowchart: { useMaxWidth:false, htmlLabels:true }, themeCSS: '.label { font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif; }' })
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
