@@ -9,28 +9,21 @@
       {
         "slug": "numbers",
         "uuid": "714711a6-1be7-4540-9d44-87b1e58417fc",
-        "concepts": [
-          "basic-numbers",
-          "type-conversion"
-        ],
+        "concepts": ["numbers-basic", "type-conversion"],
         "prerequisites": []
       },
       {
         "slug": "strings",
         "uuid": "1b7e3737-0333-4eee-b425-2e84b2e09fe2",
-        "concepts": [
-          "basic-strings"
-        ]
+        "concepts": ["strings-basic"]
       },
       {
         "slug": "futures",
         "uuid": "cf1093f0-3a6b-4ad1-83a9-a8d9b2a57991",
-        "concepts": [
-          "futures"
-        ],
+        "concepts": ["futures"],
         "prerequisites": [
-          "basic-iterables",
-          "basic-errors",
+          "iterables-basic",
+          "errors-basic",
           "callbacks",
           "recursion"
         ]

@@ -12,51 +12,44 @@
       {
         "slug": "strings",
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
-        "concepts": ["basic-strings"],
+        "concepts": ["strings-basic"],
         "prerequisites": []
       },
       {
         "slug": "numbers-floating-point",
         "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
-        "concepts": ["floating-point-numbers", "loops"],
+        "concepts": ["numbers-floating-point", "loops-basic"],
         "prerequisites": [
-          "basic-numbers",
-          "basic-type-conversion",
+          "numbers-basic",
+          "type-conversion-basic",
           "conditionals"
         ]
       },
       {
         "slug": "numbers",
-        "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
-        "concepts": ["basic-numbers", "basic-type-conversion", "conditionals"],
+        "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
+        "concepts": ["numbers-basic", "type-conversion-basic", "conditionals"],
         "prerequisites": []
       },
       {
         "slug": "enums",
         "uuid": "047b895b-7039-4af6-ad3a-17fd818d0b88",
-        "concepts": ["basic-enums"],
-        "prerequisites": ["basic-strings"]
+        "concepts": ["enums-basic"],
+        "prerequisites": ["strings-basic"]
       },
       {
         "slug": "dates",
         "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
-        "concepts": ["basic-dates", "basic-time", "string-formatting"],
-        "prerequisites": ["basic-numbers", "basic-strings"]
+        "concepts": ["dates-basic", "time-basic", "strings-formatting"],
+        "prerequisites": ["numbers-basic", "strings-basic"]
       },
       {
         "slug": "bitwise-operations",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
-        "concepts": ["bitwise-operations", "advanced-enums"],
-        "prerequisites": ["basic-enums"]
+        "concepts": ["bitwise-operations", "enums-advanced"],
+        "prerequisites": ["enums-basic"]
       }
     ],
     "practice": []
-  },
-  "foregone": [
-    "lens-person",
-    "nucleotide-codons",
-    "paasio",
-    "point-mutations",
-    "counter"
-  ]
+  }
 }

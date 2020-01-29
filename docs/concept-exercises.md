@@ -17,7 +17,7 @@ By "Fluency", we mean: Do you **get** that language? Can you reason in that lang
 
 "Fluency" is different to "Proficiency", where we use proficiency to mean: Can you write programs in the language (e.g. can you nav stdlib, docs, compose complex code structures).
 
-Exercism focuses on teaching Fluency not Proficiency. We aim to teach people to understand what a makes a language unique and how experienced programmers in that language would reason about - and solve - problems.
+Exercism focuses on teaching Fluency not Proficiency. We aim to teach people to understand what makes a language unique and how experienced programmers in that language would reason about - and solve - problems.
 
 ## How are Concept Exercises designed and structured?
 
@@ -27,9 +27,11 @@ Concept Exercises must have the following characteristics:
 - They are language-specific, not generic.
 - Stubs/boilerplate are used to avoid the student having to learn/write unnecessary code on exercises.
 
-Concept Exercises are **not** mentored. When a user submits a submission that gets the tests passing for a Concept Exercise, we check for an Analyzer or Representer to give feedback. If none is found, then the solution is approved. This shifts the burden of teaching to the exercise, which must provide a clear pathway to learning the concept that is being taught.
-
 Exercises are unlocked based on concepts taught and learnt. Each Concept Exercise must teach one or more concepts. It may also have prerequisites on Concepts, which means it will not be unlocked until Concept Exercises teaching those prerequisite concepts have been completed.
+
+Concept Exercises should not inherently become more difficult as the track progresses. **A seasoned developer in Language X should be able to work through all the Concept Exercises on that track spending no more than 5-10 minutes solving each one.** As each exercise should be focussed on getting someone to use a concept for the first time, and because the seasoned developer already understands that concept in Language X, the exercise should feel relatively trivial for them. Later exercises may feel more difficult to a developer unfamiliar with Language X, but only because the later exercise is teaching a concept which in itself is more complicated (for example, most people would agree Recursion is a more complex topic to learn for the first time, than a Loop is to remap from one language to another).
+
+Concept Exercises are **not** mentored. When a user submits a submission that gets the tests passing for a Concept Exercise, we check for an Analyzer or Representer to give feedback. If none is found, then the solution is approved. This shifts the burden of teaching to the exercise, which must provide a clear pathway to learning the concept that is being taught.
 
 Concept Exercises do not share a common base like Practice Exercises do in the `problem-specifications` repository. Instead they "share" Concepts that they are teaching with other languages. This repository aims to list all of those Concepts and provide information about the Concept that maintainers can use as the basis for their own languages. Each Concept should also link to the implementations in different languages. Maintainers are free to copy and paste from each others repositories, and then edit to make things specific to their tracks, but such copy-and-pastes should be considered hard-forks.
 
@@ -65,28 +67,23 @@ Once the user completes the exercise they will be shown this file, which gives t
 
 See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.md] for an example.
 
-### `.meta/config.json`
-
-See the C# floating-point-numbers exercise's [config.json file][csharp-meta-config.json] for an example.
-
 ## Track Structure
 
-### `exercises/.docs/cli.md`
+### `exercises/shared/.docs/cli.md`
 
 This file contains information on how to work with the exercise when using the CLI to download and submit the exercise.
 
 See the C# track's [cli.md file][csharp-docs-cli.md] for an example.
 
-### `exercises/.docs/debug.md`
+### `exercises/shared/.docs/debug.md`
 
 This file explains how a user that is coding in the browser can still do "debugging."
 
 See the C# track's [debug.md file][csharp-docs-debug.md] for an example.
 
-[csharp-docs-cli.md]: ../languages/csharp/exercises/.docs/cli.md
-[csharp-docs-debug.md]: ../languages/csharp/exercises/.docs/debug.md
+[csharp-docs-cli.md]: ../languages/csharp/exercises/shared/.docs/cli.md
+[csharp-docs-debug.md]: ../languages/csharp/exercises/shared/.docs/debug.md
 [csharp-docs-after.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/after.md
 [csharp-docs-hints.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/hints.md
 [csharp-docs-introduction.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
 [csharp-docs-instructions.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/instructions.md
-[csharp-meta-config.json]: ../languages/csharp/exercises/concept/numbers-floating-point/.meta/config.json

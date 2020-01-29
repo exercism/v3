@@ -4,33 +4,30 @@
   "blurb": "JavaScript is a scripting language, primarily used for creating dynamic websites and programming web servers. It's a very popular language, and supports a variety of programming paradigms.",
   "test_pattern": ".*[.]spec[.]js$",
   "version": 3,
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 2
+  },
   "exercises": {
     "concept": [
       {
         "slug": "numbers",
         "uuid": "0aff2fa7-55ea-47e9-af4a-78927d916baf",
-        "concepts": [
-          "basic-numbers",
-          "type-conversion"
-        ],
+        "concepts": ["numbers-basic", "type-conversion"],
         "prerequisites": []
       },
       {
         "slug": "strings",
         "uuid": "39549583-1889-490a-bf98-ffb2e0aefe44",
-        "concepts": [
-          "basic-strings"
-        ]
+        "concepts": ["strings-basic"]
       },
       {
         "slug": "promises",
         "uuid": "4a967656-8615-474e-a009-5c0b09f4386f",
-        "concepts": [
-          "promises"
-        ],
+        "concepts": ["promises"],
         "prerequisites": [
-          "basic-arrays",
-          "basic-errors",
+          "arrays-basic",
+          "errors-basic",
           "callbacks",
           "recursion"
         ]

@@ -45,16 +45,16 @@ For example:
 
 For example:
 
-- `basic-strings`
+- `strings-basic`
 - ...]
 
-## Prequisites
+## Prerequisites
 
 [List the prerequisite concepts that this exercise expects the student to already be familiar with.
 
 For example:
 
-- `basic-numbers`
+- `numbers-basic`
 - ...]
 
 ## Resources to refer to

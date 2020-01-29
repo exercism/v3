@@ -4,7 +4,7 @@ These awesome people help maintain the Dart track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Dinesh Ahuja (Slack: @devkabiir, Github: [devkabiir](https://github.com/devkabiir))
 
 ## Contributing Maintainers
 

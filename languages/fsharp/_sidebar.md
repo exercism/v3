@@ -1,0 +1,12 @@
+- [Start here](/)
+- Docs
+- [Languages](/languages/README.md)
+  - [F#](/languages/fsharp/README.md)
+    - [Docs](/languages/fsharp/docs/README.md)
+    - [Exercises](/languages/fsharp/exercises/README.md)
+    - [Reference](/languages/fsharp/reference/README.md)
+- Reference
+  - [Concepts](/reference/concepts/README.md)
+  - [Paradigms](/reference/paradigms/README.md)
+  - [Tooling](/reference/tooling/README.md)
+  - [Types](/reference/types/README.md)
