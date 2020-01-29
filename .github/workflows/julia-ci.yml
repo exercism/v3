@@ -4,11 +4,13 @@ on:
   push:
     paths:
     - '**.jl'
-    - 'languages/julia/**'
+    - 'languages/julia/exercises/concept/**'
+    - 'languages/julia/exercises/practice/**'
   pull_request:
     paths:
     - '**.jl'
-    - 'languages/julia/**'
+    - 'languages/julia/exercises/concept/**'
+    - 'languages/julia/exercises/practice/**'
 
 jobs:
   test:
