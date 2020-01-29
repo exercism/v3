@@ -1,5 +1,7 @@
 # Concepts of bowling
 
+[Example implementation](https://github.com/exercism/csharp/blob/master/exercises/bowling/Example.cs)
+
 ## General
 
 - functions: used as the main entry point for the exercise
