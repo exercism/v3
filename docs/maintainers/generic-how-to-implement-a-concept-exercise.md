@@ -73,7 +73,7 @@ What these files look like depends on your track. Note that some tracks might re
 
 ## Step 7: update the general concept document
 
-Add the exercise to the [concept's shared document's][reference] `## Implementations` section.
+Add the exercise to the [concept's shared document's][reference] `## Implementations` section ([example](https://github.com/exercism/v3/blob/master/reference/types/string.md#implementations)).
 
 ## Step 8: add analyzer (optional)
 
