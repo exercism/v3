@@ -43,3 +43,7 @@ While Clojure is a functional language, it includes variations of concepts often
 - [Lists][list]
 - [Hashmaps][map]
 - [Sets][set]
+
+### Concepts graph
+
+![Clojure concepts graph](clojure-concepts.png)
