@@ -21,6 +21,7 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 ├── .meta
+                |   |── design.md
                 |   └── Example.clj
                 ├── &lt;NAME&gt;.clj
                 └── &lt;NAME&gt;_test.clj

@@ -15,11 +15,13 @@ languages
     └── exercises
         └── concept
             └── &lt;SLUG&gt;
-                └── .docs
-                    ├── instructions.md
-                    ├── introduction.md
-                    ├── hints.md
-                    └── after.md (optional)
+                ├── .docs
+                |   ├── instructions.md
+                |   ├── introduction.md
+                |   ├── hints.md
+                |   └── after.md (optional)
+                └── .meta
+                    └── design.md
 </pre>
 
 ## Step 1: add .docs/introduction.md
@@ -32,7 +34,7 @@ This file contains instructions for the exercise. It should explicitly explain w
 
 ## Step 3: add .docs/hints.md
 
-If the user gets stuck, we will allow them to click a button requesting a hint, which shows this file. We will softly discourage them using it. The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any
+If the user gets stuck, we will allow them to click a button requesting a hint, which shows this file. We will softly discourage them using it. The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any student.
 
 ## Step 4: add .docs/after.md (optional):
 
@@ -40,7 +42,7 @@ Once the user completes the exercise they will be shown this file, which gives t
 
 These files are also all described in the [concept exercises document][docs-concept-exercises].
 
-## Step 5: update languages/<TRACK>/config.json
+## Step 5: update languages/&lt;TRACK&gt;/config.json
 
 An entry should be added to the track's `config.json` file for the new concept exercise:
 
@@ -87,6 +89,10 @@ Some exercises could benefit from having an custom representation as generated b
 
 Skip this step if your track does not have a representer.
 
+## Step 10: add .meta/design.md:
+
+This file contains information on the exercise's design, which includes things like its goal, its teaching goals, what not to teach, and more ([example][meta-design]). This information can be extracted from the exercise's corresponding GitHub issue.
+
 ## Inspiration
 
 When implementing an exercise, it can be very useful to look at the exercises the track has already implemented. You can also check the exercise's [general concepts documents][reference] to see if other languages that have already an exercise for that concept.
@@ -97,3 +103,4 @@ If you have any questions regarding implementing this exercise, please post them
 
 [docs-concept-exercises]: ../concept-exercises.md
 [reference]: ../../reference/concepts/README.md
+[meta-design]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/design.md
