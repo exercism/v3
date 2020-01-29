@@ -9,3 +9,4 @@ These awesome people help maintain the Common Lisp track.
 ## Contributing Maintainers
 
 - Tim Hawes (Slack: `@Tim Hawes`, GitHub: [timotheosh](https://github.com/timotheosh))
+- Brooks J Rady (Slack: `@thelostlambda`, GitHub: [thelostlambda](https://github.com/TheLostLambda))
