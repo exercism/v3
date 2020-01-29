@@ -7,6 +7,7 @@ CI:
 documentation:
   - docs/**/*
   - .github/ISSUE_TEMPLATE/**/*
+  - languages/**/docs/**/*
 
 track/bash:
   - languages/bash/**/*
