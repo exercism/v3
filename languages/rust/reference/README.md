@@ -4,65 +4,138 @@
 
 The Rust concept exercises teach concepts from fundamentals through language mastery. They are classified and listed below.
 
+The groupings are not themselves concepts, and there has been strong pushback against the notion of forming any grouped metaconcepts as yet. 
+
 ### Fundamentals of Rust
 
-These concepts are irreducable and must be mastered for further progress in the language.
+These concepts are irreducable.
 
 - [Functions](../../../reference/concepts/functions.md)
 - Test Suites
-- Primitives 
+- Variable Assignment / `let`
 - [Conditionals](../../../reference/concepts/conditionals.md)
+- Slices
 - [Loops](../../../reference/concepts/loops.md)
 - Iterator usage 
-- Slices
 
-### Intermediate Features
+### Primitives
+
+Basic primitive types:
+
+- Integers
+    - Signedness
+- Floats
+- Casting / `as`
+- Booleans
+    - Logical Operators (`&&`, `||`, and `!`)
+- `char`
+- `byte`
+- `&str`
+
+### Variables
+
+Slightly more advanced things to do with variables.
+
+- `const` and `static`
+- [Immutability](../../../reference/concepts/immutability.md) / Explicit Mutability
+- `if let` / `while let`
+
+### Advanced Datatypes
+
+These concepts help organize data in more complicated ways than primitives allow.
+
+- [Structs](../../../reference/types/struct.md)
+- implementing generic structs
+- Tuples (anonymous structs)
+- Tuple Structs
+- Enums
+- `Vec<T>`
+- `Hashmap<K, V>`
+    - Entry API
+- `HashSet<K>`
+- `BTreeMap`
+- `FromIterator`, `IntoIterator`
+- `Rc<T>`
+- `Cell<T>` / `RefCell<T>`
+
+### Intermediate Concepts
 
 These concepts are more advanced than the fundamentals, but may be familiar from other languages.
 
-- [Structs](../../../reference/types/struct.md)
-- [Methods](../../../reference/concepts/methods.md)
+- Scopes and Expressions (implicit return) 
+- Explicit `return`
+- [Methods](../../../reference/concepts/methods.md) / `impl` blocks
 - [Composition](../../../reference/concepts/composition.md)
-- Enums
-- [Generics](../../../reference/concepts/generics.md)
-- `Vec<T>`
-- `Hashmap<K, V>`
+- Basics of [Generics](../../../reference/concepts/generics.md)
 - Using External Crates / Libraries
-- `match` and [Pattern matching](../../../reference/concepts/pattern_matching.md)
+    - `use` statement for importing
+- `match` basics: ints and enums
+- Destructuring (in `match`, in `let`)
+- `match` with [Pattern matching](../../../reference/concepts/pattern_matching.md)
 - [Anonymous functions](../../../reference/concepts/anonymous_functions.md)
 - [Recursion](../../../reference/concepts/recursion.md)
+- Ranges
+- Closures
+- Visibility / `pub`
+- Typedefs / `type` keyword
+- Newtype pattern
+
+### Iterator Features
+
+- `collect`
+- `count`, `sum`, turbofish
+- `map`, `filter`
+- `fold`
+- lazy evaluation
 
 ### Unusual Language Features
 
 These concepts are distinctive or unique to Rust.
 
-- Ownership / Borrowing
+- `String`
+    - `format!` macro
 - `String` vs `&str`
 - `Option<T>`
 - `Result<T, E>`
 - Implementing an external (stdlib) trait, i.e. `Iterator`
-- [Immutability](../../../reference/concepts/immutability.md)
+
+### Ownership
+
+- basics / move semantics
+- references
+- many immutable or one mutable reference
+- `AsRef` trait / deref coercion
+- `Borrow` trait
+- `'static` lifetime
+- generic lifetimes (`'a`)
+- anonymous lifetime
+
+### Traits
+
+- Deriving (`PartialEq`, `PartialOrd`, `Debug`, `Display`, `Default`)
+    - Total Ordering: `Eq` and `Ord`
+- Manually implementing a trait
+- Numeric Traits (`Add`, `Sub`, `Mul`, `Div`)
+    - overflow/underflow functions / traits
+- Designing a Custom Trait
 
 ### Advanced Concepts
 
-- Writing your own trait
 - Writing declarative macros
 - Writing procedural macros
 - `Box<T>`
-- `Rc<T>` and `Arc<T>`
-- `Cell<T>` and `RefCell<T>`
-- `Fn`, `FnMut`, and `FnOnce`
 - `unsafe`
-- Parallelism
-- [Higher-order functions](../../../reference/concepts/higher_order_functions.md)
+- [Higher-order functions](../../../reference/concepts/higher_order_functions.md) / `Fn`, `FnMut`, and `FnOnce`
 - async
 
-### Miscellaneous
+### Parallelism
 
-- `Debug` and `Display`
-- `Eq` and `Ord`
-- `Add`, `Sub`, `Mul`, `Div`, etc.
-- overflow/underflow functions
+- `std::thread`
+- Channels (crossbeam)
+- `Arc<T>`
+- `Mutex<T>`
+- `RwLock<T>`
+- Futures (async-std)
 
 
 ## Concept exercise mapping
