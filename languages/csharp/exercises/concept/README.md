@@ -27,12 +27,12 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 
 [reference-shared]: ../../reference/README.md
 [reference]: ./reference.md
-[concept-exercises]: ./concept
-[concept-exercise-enums-advanced]: ./enums-advanced
-[concept-exercise-dates]: ./dates
-[concept-exercise-enums]: ./enums
-[concept-exercise-numbers-floating-point]: ./numbers-floating-point
-[concept-exercise-numbers]: ./numbers
-[concept-exercise-strings]: ./strings
+[concept-exercises]: ./concept/README.md
+[concept-exercise-enums-advanced]: ./enums-advanced/.meta/design.md
+[concept-exercise-dates]: ./dates/.meta/design.md
+[concept-exercise-enums]: ./enums/.meta/design.md
+[concept-exercise-numbers-floating-point]: ./numbers-floating-point/.meta/design.md
+[concept-exercise-numbers]: ./numbers/.meta/design.md
+[concept-exercise-strings]: ./strings/.meta/design.md
 [issues-new-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fnew-exercise+label%3Astatus%2Fhelp-wanted
 [issues-improve-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fimprove-exercise+label%3Astatus%2Fhelp-wanted
