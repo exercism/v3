@@ -21,6 +21,7 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 ├── .meta
+                |   |── design.md
                 |   └── Example.cs
                 ├── &lt;NAME&gt;.cs
                 ├── &lt;NAME&gt;.csproj
