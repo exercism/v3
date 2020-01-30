@@ -28,7 +28,7 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 
 ### Types
 
-- [Atoms](../../../reference/concepts/symbols.md)
+- [Atoms](../../../reference/types/symbol.md)
 - TODO: more
 
 ## Concept interpretation
