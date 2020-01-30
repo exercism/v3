@@ -67,32 +67,32 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 
 ### Basic Types
 
-- [Atoms / Symbols](../../../reference/types/symbol.md)
+- [Atom](../../../reference/types/symbol.md)
 - [Numbers]()
   - [Integer]()
-    - [Boolean, Octal, Hex forms]()
+    - [Binary, Octal, Hex forms]()
     - [Codepoints]()
       - [`?` operator]()
   - [Float]()
     - [Scientific Notation]()
 - [Binary]()
-  - [Strings]()
+  - [String]()
     - [String Interpolation]()
   - [Special Forms]()
-- [Lists]()
+- [List]()
   - [Notation]() `[head | tail]` syntax
-  - [Charlists]()
+  - [Charlist]()
   - [iodata]()
   - [chardata]()
   - [List Comprehensions]()
     - [Generators]()
     - [Filters]()
     - [Into]()
-- [Tuples]()
-- [Functions]()
-- [Ports]()
-- [References]()
-- [PIDs]()
+- [Tuple]()
+- [Function]()
+- [Port]()
+- [Reference]()
+- [PID]()
 
 ### Complex Types
 
