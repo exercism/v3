@@ -12,6 +12,6 @@
 - generics: use a type parameter to specialize a type : `F[A]`
 - recursion: function calling the function to process the list items
 - list: contains several items of the same type (arrays)
-- conditionals using match: conditionally execute logic using a `match` statement
+- pattern matching: conditionally execute logic using a `match` statement
 - Nil: short cut for empty list
 - list - pattern matching: deconstruct list into head and tail
