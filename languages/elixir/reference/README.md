@@ -51,7 +51,6 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
   - [Multi-line syntax]()
   - [One-line syntax]()
 - [Default arguments](../../../reference/concepts/default_arguments.md)
-- [Pattern Matching]()
 - [Guards]()
 - [Capture Syntax]()
 
