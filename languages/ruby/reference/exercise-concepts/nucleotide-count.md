@@ -11,7 +11,7 @@
 - method definition: the `histogram` method needs to be defined.
 - method arguments: the method `from_dna` needs an argument.
 - strings: one string is passed as the input so it may be necessary to know about strings and string manipulation.
-- mixings: one way of solving this exercise is including the `Enumerable` module so it may be necessary to know about Ruby mixings like `Enumerable` or `Comparable`.
+- mixins: one way of solving this exercise is including the `Enumerable` module so it may be necessary to know about Ruby mixins like `Enumerable` or `Comparable`.
 - loops: it may be necessary to iterate over the input data using loops and indexes.
 - collections: may be used to iterate or transform the input data. Some collections' methods that may be used: `inject, each, each_with_object, count`
 - exceptions: necessary to raise an exception if the input is not valid.
@@ -23,10 +23,10 @@
 - blocks: they are used in any of the `Enumerable` methods.
 - regular expressions: may be used to validate the input.
 
-## Approach: use `Enumerable` mixing
+## Approach: use `Enumerable` mixin
 
 - Make the class that represents the nucleotides strand to include `Enumerable` so that all `Enumerable` methods are available.
-- Requires implementation of `each` method. See [Enumerable mixing documentation](https://ruby-doc.org/core-2.7.0/Enumerable.html)
+- Requires implementation of `each` method. See [Enumerable mixin documentation](https://ruby-doc.org/core-2.7.0/Enumerable.html)
 
 ## Approach: Use collections + `Enumerable` methods.
 
