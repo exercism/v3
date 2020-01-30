@@ -12,7 +12,7 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 - [Pattern matching](../../../reference/concepts/pattern_matching.md)
 - [Pipelines](../../../reference/concepts/pipelines.md)
 - [Recursion](../../../reference/concepts/recursion.md)
-  - [Tail Call Optimization]()
+- [Tail Call Optimization]()
 
 ### Platform-specific
 
