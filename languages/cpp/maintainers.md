@@ -12,4 +12,5 @@ These awesome people help maintain the C++ track.
 - Rohit Goswami (Slack: `@HaoZeke`, Github: [HaoZeke](https://github.com/HaoZeke))
 - AeroStun (Slack: `@Aerostun`, Github: [AeroStun](https://github.com/AeroStun))
 - Silvano Cerza (Slack: `@Silvano Cerza`, Github: [silvanocerza](https://github.com/silvanocerza))
+- Matthias (Slack: `@siebenschlaefer`, Github: [siebenschlaefer](https://github.com/siebenschlaefer))
 
