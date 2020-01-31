@@ -16,10 +16,9 @@
 - collections: may be used to iterate or transform the input data. Some collections' methods that may be used: `inject, each, each_with_object, count`
 - exceptions: necessary to raise an exception if the input is not valid.
 - return values: methods need to return values either implicitly or explicitly.
-- guard clauses: a guard clause may be used to raise an exception.
 - constants: constants may be used to store static information like DNA values.
 - namespaces: namespaces may be used along with constants.
-- conditionals: a condition may be used to check if the input is valid.
+- conditional statements: conditional statements may be used to check if the input is valid.
 - blocks: they are used in any of the `Enumerable` methods.
 - regular expressions: may be used to validate the input.
 
