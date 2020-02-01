@@ -42,6 +42,13 @@ func TestMessage(t *testing.T) {
 			},
 			want: "Timezone not set",
 		},
+		{
+			name: "Message with wrong format returns empty string",
+			args: args{
+				line: "exit status 1",
+			},
+			want: "",
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
