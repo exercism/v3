@@ -17,6 +17,7 @@ A list of exercises that we _must_ have is compiled below, and is not at all a c
 - [x] [`/promises`][concept-promises]: `"promises"`
 - [ ] `"arrays-basic"`
 - [ ] `"errors-basic"`
+- [ ] `"functions"`: `"functions-basics"`, `"functions-defaults"`
 - [ ] `"callbacks"`
 - [ ] `"recursion"`
 
@@ -40,6 +41,7 @@ Here is how we have interpreted the following concept-keywords. This should be s
 | `promises`        | Know of the `Promise` construct (`future` type in some other languages), chain-ability, and `.then`. Know where it's documented/how to search.                                                                                     |
 | `arrays-basic`    | Know of the `Array` construct (`array` type in some other languages). Know of some basic functions.                                                                                                                                |
 | `errors-basic`    | Know how to create an error, how throw it and how to catch it                                                                                                                                                                      |
+| `functions`       | Know the different ways how to create a function, how to set default values and how to return a value and how to not.                                                                                                              |
 | `callbacks`       | Know how to use a function as a first-class citizen, that is, pass it into a function as a value, and call it somewhere inside that function. Know that you can pass in values and retrieve out return values.                     |
 | `recursion`       | Know how to call a function from itself                                                                                                                                                                                            |
 | `type-conversion` | Know that there exist functions that can convert between "types" (objects of a prototype) and types (primitives).                                                                                                                  |
