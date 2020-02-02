@@ -4,7 +4,7 @@ These awesome people help maintain the Clojure track.
 
 ## Senior Maintainers
 
-- Matthaus Owens
+- Matthaus Owens (Slack: @haus, GitHub: [haus](https://github.com/haus))
 
 ## Contributing Maintainers
 
