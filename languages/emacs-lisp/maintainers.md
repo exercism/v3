@@ -8,4 +8,4 @@ These awesome people help maintain the Emacs Lisp track.
 
 ## Contributing Maintainers
 
-None yet.
+- Marcos Almeida (Slack: `@marcos`, GitHub: [maurelio1234](https://github.com/maurelio1234))
