@@ -89,5 +89,5 @@ The big concept here is the `[head | tail]` traversal pattern (just like a parse
     - in/2
 - types
   - binaries 
+      - special forms `<< >>` syntax
   - string
-
