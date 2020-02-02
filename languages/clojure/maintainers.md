@@ -4,7 +4,7 @@ These awesome people help maintain the Clojure track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Matthaus Owens
 
 ## Contributing Maintainers
 
