@@ -30,14 +30,14 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 - Naming conventions
 - Eager Computation
 - Lazy Computation
-- Naming Conventions
+- Guards
+- Compiling
+- Scripts (*.exs) vs Code (*.ex)
 - TODO: more
 
 ### Modules
 
 - Naming
-- Compiling
-- Scripts (*.exs) vs Code (*.ex)
 - Attributes
 - Alias
 - Require
@@ -50,8 +50,12 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 - Named functions
   - Multi-line syntax
   - One-line syntax
+- Naming conventions
+  - functions prefixed with `is_`
+  - functions ending in `?`
+  - functions ending in `!'
+- Arugment positioning conventions
 - [Default arguments](../../../reference/concepts/default_arguments.md)
-- Guards
 - Capture Syntax
 
 ### General
@@ -90,7 +94,6 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
     - Into
 - Tuple
 - Function
-- Port
 - Reference
 - PID
 
@@ -101,6 +104,8 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 - Maps
 - Structs
 - Ranges
+- Streams
+- Ports
 
 ### Protocols
 
@@ -131,7 +136,8 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 
 ### Metaprogramming
 
-- Elixir and Erlang as an extensible language
+- Abstract Syntax Tree
+- Macro
 - TODO: more
 
 ## Concept interpretation
