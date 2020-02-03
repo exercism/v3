@@ -57,6 +57,9 @@ def distance(s1, s2):
  - a generator will pick up where it leaves off, and generate one item at a time, on demand
  - this expression is an iterable, meaning it can be passed directly to the `sum()` function without storing it in a list first
 
- 
+**tuple unpacking**
+ - iterating through a list of tuples, i.e. [(1, 2), (2,3)], each piece of each tuple can be unpacked into a separate variable
+ - syntax: `a, b = (1, 2)`
+ - this works for any sort of iterable (lists, for example, and even strings!) but is commonly used with tuples because they are typically of a known size/length, and so can be safely unpacked into N variables, with names. 
  
  
