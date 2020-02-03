@@ -45,7 +45,7 @@ Before launch, we need all of the following parts to be completed:
 ### Test Runner
 
 - [X] Build Test Runner
-- [ ] Deploy Test Runner
+- [X] Deploy Test Runner
 
 ## Extra magic
 
