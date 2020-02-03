@@ -10,6 +10,8 @@ This area will contain everything needed to launch the Go track, including:
 
 ## Links
 
+[:bar_chart: Project Board](https://github.com/exercism/v3/projects/4?fullscreen=true)
+
 [:books: Open Issues](https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fgo) |
 [:gift: Open Pull Requests](https://github.com/exercism/v3/pulls?q=is%3Apr+is%3Aopen+label%3Atrack%2Fgo)
 
