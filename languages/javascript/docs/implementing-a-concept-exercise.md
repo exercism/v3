@@ -25,6 +25,8 @@ languages
                 |   ├── introduction.md
                 |   ├── hints.md
                 |   └── after.md (optional)
+                ├── .meta
+                |   └── design.md
                 ├── .eslintrc
                 ├── .gitignore
                 ├── babel.config.js

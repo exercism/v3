@@ -26,6 +26,7 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 ├── .meta
+                |   |── design.md
                 |   └── example.lisp
                 ├── &lt;SLUG&gt;.asd
                 ├── &lt;SLUG&gt;.lisp
@@ -47,7 +48,7 @@ These files are specific to the Common Lisp track:
 - `package.lisp`: the package definition for both `<SLUG>` and
   `<SLUG>-test` packages.
 - `.meta/example.lisp`: an example implementation that passes all the
-    tests.
+  tests.
 
 ## Step 2: adding common files
 
@@ -70,7 +71,7 @@ specify what changes to the representation should be applied and why.
 ## Inspiration
 
 When implementing an exercise, it can be very useful to look at
-already implemented Common Lisp exercises like *TBD*. 
+already implemented Common Lisp exercises like _TBD_.
 
 You can also check the exercise's [general concepts
 documents][reference] to see if other languages have already
@@ -86,5 +87,3 @@ post them as comments in the exercise's GitHub issue.
 [concept-exercises]: ../exercises/concept/README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
 [reference]: ../../../reference
-
-

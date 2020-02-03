@@ -1,6 +1,6 @@
 # Migrating your config.json files
 
-For v3, the existing `config.json` files will need to be updated. You can use the [C# config.json](../../languages/csharp/config.json) for reference.
+For v3, the existing `config.json` files will need to be updated. You can use the [C# config.json](../../languages/csharp/config.json) for reference. You can re-use the existing `config.json`, but with the following modifications:
 
 1. Add a version property:
 
@@ -29,8 +29,22 @@ For v3, the existing `config.json` files will need to be updated. You can use th
 }
 ```
 
-4. Added concepts for all Practice Exercises
+As can be seen, the existing exercises are temporarily removed from the `config.json` file. They will return as Practice Exercises once the Concept Exercises have been added. More details will be added at a later stage.
 
-The existing exercises are temporarily removed from the `config.json` file. They will return as practice exercises once the concept exercises have been added.
+4. Remove the `"foregone"` property. The property will return once the Practice Exercises have been added.
 
-More details will be added at a later stage.
+## Conversion script
+
+All of the above changes can be applied automatically using the following [jq command][jq]:
+
+```
+jq 'del(.foregone)
+    | .exercises = {concept: [], practice: []}
+    | .online_editor = {indent_style: "...", indent_size: N}
+    | to_entries
+    | .[0:1] + [{"key":"version","value":3}] + .[1:]
+    | from_entries
+    ' config.json
+```
+
+[jq]: https://stedolan.github.io/jq/

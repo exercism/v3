@@ -14,3 +14,4 @@ These awesome people help maintain the C track.
 - Sebastian Borza (Slack: `@sebito91`, GitHub: [sebito91](https://github.com/sebito91))
 - Johan Berg (Slack: `@Johan Berg`, GitHub: [bergjohan](https://github.com/bergjohan))
 - Xavi Ondoño (Slack: `@Xavi`, GitHub: [ondono](https://github.com/ondono))
+- l0nax (Slack: `@Emanuel Bennici`, GitHub: [l0nax](https://github.com/l0nax))

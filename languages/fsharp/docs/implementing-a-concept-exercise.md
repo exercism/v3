@@ -21,6 +21,7 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 ├── .meta
+                |   |── design.md
                 |   └── Example.fs
                 ├── &lt;NAME&gt;.fs
                 ├── &lt;NAME&gt;.fsproj

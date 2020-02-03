@@ -4,7 +4,7 @@ These awesome people help maintain the C++ track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Kevin Matthews (Slack: `@Kevin Matthews`, Github: [KevinWMatthews](https://github.com/KevinWMatthews))
 
 ## Contributing Maintainers
 
@@ -12,4 +12,5 @@ TODO: add senior maintainers
 - Rohit Goswami (Slack: `@HaoZeke`, Github: [HaoZeke](https://github.com/HaoZeke))
 - AeroStun (Slack: `@Aerostun`, Github: [AeroStun](https://github.com/AeroStun))
 - Silvano Cerza (Slack: `@Silvano Cerza`, Github: [silvanocerza](https://github.com/silvanocerza))
+- Matthias (Slack: `@siebenschlaefer`, Github: [siebenschlaefer](https://github.com/siebenschlaefer))
 

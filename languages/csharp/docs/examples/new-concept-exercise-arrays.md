@@ -84,6 +84,7 @@ languages
                 |   ├── instructions.md
                 |   └── introduction.md
                 ├── .meta
+                |   |── design.md
                 |   └── Example.cs
                 ├── Arrays.csproj
                 ├── Arrays.cs

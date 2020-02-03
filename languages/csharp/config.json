@@ -44,10 +44,14 @@
         "prerequisites": ["numbers-basic", "strings-basic"]
       },
       {
-        "slug": "bitwise-operations",
+        "slug": "enums-advanced",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
-        "concepts": ["bitwise-operations", "enums-advanced"],
-        "prerequisites": ["enums-basic"]
+        "concepts": ["enums-advanced"],
+        "prerequisites": [
+          "enums-basic",
+          "attributes-basic",
+          "bitwise-operations"
+        ]
       }
     ],
     "practice": []

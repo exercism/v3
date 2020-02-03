@@ -7,6 +7,7 @@ CI:
 documentation:
   - docs/**/*
   - .github/ISSUE_TEMPLATE/**/*
+  - languages/**/docs/**/*
 
 track/bash:
   - languages/bash/**/*
@@ -70,6 +71,9 @@ track/purescript:
 
 track/python:
   - languages/python/**/*
+
+track/racket:
+  - languages/racket/**/*
 
 track/reasonml:
   - languages/reasonml/**/*

@@ -25,6 +25,7 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 ├── .meta
+                |   |── design.md
                 |   └── Example.kt
                 ├── src
                 |   ├── main

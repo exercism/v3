@@ -21,6 +21,7 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 ├── .meta
+                |   |── design.md
                 |   └── example.jl
                 ├── $slug.jl
                 ├── runtests.jl
