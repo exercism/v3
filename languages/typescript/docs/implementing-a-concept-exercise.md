@@ -26,6 +26,7 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 ├── .eslintignore
+                ├── .gitignore
                 ├── .eslintrc
                 ├── jest.config.js
                 ├── example.ts
