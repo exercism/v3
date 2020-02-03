@@ -137,7 +137,7 @@ If you have any questions regarding implementing the exercise, please post them 
 [representer]: https://github.com/exercism/typescript-representer
 [concept-exercises]: ../exercises/concept/README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
-[concept-exercise-strings]: ../exercises/concept/strings
-[concept-exercise-numbers]: ../exercises/concept/numbers
-[concept-exercise-promises]: ../exercises/concept/promises
+[concept-exercise-strings]: ../exercises/concept/strings.md
+[concept-exercise-numbers]: ../exercises/concept/numbers.md
+[concept-exercise-promises]: ../exercises/concept/promises.md
 [reference]: ../../../reference/README.md
