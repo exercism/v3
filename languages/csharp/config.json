@@ -40,7 +40,7 @@
       {
         "slug": "dates",
         "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
-        "concepts": ["dates-basic", "time-basic", "strings-formatting"],
+        "concepts": ["dates-basic", "time-basic"],
         "prerequisites": ["numbers-basic", "strings-basic"]
       },
       {
