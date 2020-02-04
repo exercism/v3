@@ -66,6 +66,9 @@ track/kotlin:
 track/ocaml:
   - languages/ocaml/**/*
 
+track/perl5:
+  - languages/perl5/**/*
+
 track/purescript:
   - languages/purescript/**/*
 
