@@ -4,12 +4,14 @@ This is a working document to keep track of ideas and thoughts on how the progre
 
 ```mermaid
 graph TD
-A((A)) --> robots
-subgraph Multiple Dispatch
+
+A((A)) --> modules
+
+modules --> robots
+subgraph Type System
 	robots --> encounters
 	robots -.-> abstract-types
-	abstract-types[abstract types] -.-> modules
-	modules -.-> encounters
+	abstract-types[abstract types] -.-> encounters
 	encounters -.-> extension[extending/glueing together modules]
 end
 extension --> B
