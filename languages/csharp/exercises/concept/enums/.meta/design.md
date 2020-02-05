@@ -2,7 +2,7 @@
 
 ## Goal
 
-The goal of this exercise is to teach the student the basics of the Concept of Enums through [C#][docs.microsoft.com-enum].
+The goal of this exercise is to teach the student the basics of the Concept of enums through [C#][docs.microsoft.com-enum].
 
 ## Things to teach
 
@@ -25,7 +25,7 @@ After completing this exercise, the student should:
 The Concepts this exercise unlocks are:
 
 - `enums-basic`: know of the existence of the `enum` keyword; know how to define enum members; know how to assign values to enum members; know how to get an enum's numeric value; know how to convert a `string` to an `enum` and vice versa.
-- `conditionals-ternary`: know of the existence of the ternary operator; know when to use the ternary operator
+- `conditionals-ternary`: know how to conditionally execute code using the ternary operator; know when to use the ternary operator.
 
 ## Prequisites
 
