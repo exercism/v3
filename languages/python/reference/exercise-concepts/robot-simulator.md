@@ -1,6 +1,6 @@
 # Concepts for robot-simulator
 
-[Example Implementation]():
+[Example Implementation](https://github.com/exercism/python/blob/master/exercises/robot-simulator/example.py)
 
 
 ## General
@@ -12,6 +12,7 @@
 - `range()` built-in type:  Represents an immutable sequence of numbers (or any object that implements the `__index__` magic method).  Used in the example to represnet the values from zero to 3 as assigned to NORTH, EAST, SOUTH, WEST. 
 
 - classes: The exercise objective is to define a `robot` type.  Tested methods are linked to a `robot` class.
+
 - objects: Creating different instances of the `robot` class with different data representing different starting positions and bearing are tested.
 
 - constructor: Customizing object initalization with actions and persisting data. The example uses a constructor (via `__init__` + `__new__`) to persist a `compass` object and x, y coordinates assigned to instance properties.
@@ -30,19 +31,28 @@
 
 - getters:
 
+- assignment:  the example uses assignment for all the instance properties and `instructions` dictionary.
+
 - instance properties: This exercise rquires one or more instance properties to persist passed in data.
+
 - mutability: In the example, knowing there are no protected or private properties in python and so conciously mutating `self.x`, `self.y` and `self.compass` through the called instance methods.
 
-- method arguments:
-- default arguments:
-- dictionaries:
-- indexing:
-- bracket notation in context of dictionaries:
-- iterators:
-- composition:  adding functionality from a class by incorporating and instance of that class in a class you are creating
-- dictionaries/mapping typ
-- modulous operator:
-- for loop:
+- method arguments: the example `__init__` method needs to take `self`, direction, x, and y (coordinates) as arguments.  It also uses `self` and `commands` (a string) for arguments to the `move()` method.
+- default arguments:  Pre-setting a function argument value to protect against it not being passed..  The example uses `direction = NORTH` and `x=0, y=0` to ensure those values for a robot even if they are not passed in initally.
+
+- dictionaries/mapping type: the example uses a dictionary to map paassed in move arguemtns to methods that perform the moves.  The example also uses a dictionary/mapping created by calling `str.maketrans()`.
+
+- bracket notation in context of dictionaries: the example uses passed in move arguments as keys via bracket notation to look up corresponding methods for moving the robot in the _insructions_ dictionary. 
+
+- iteration/iterators/iterating: the example uses a `for loop` to iterate through the passed in command string.
+
+- composition:  adding functionality from a class by incorporating and instance of that class in a class you are creating.  The example cureates a `robot` by instatiating a `compass`, and assiging it to the `self`.compass property of `robot`.
+
+- modulous operator: the example uses the modulus operator to calculate the appropriate _compass_ setting when calling the `right` compass method.
+
+- lists:  the example stores compass direction constants in a `list`
+
+- for loop: the example uses a `for loop` to iterate through the letters of the passed-in `commands` string and looks up the corresponding values in a dictionary, so that the appropriate methods can be called to move the `robot`.
 
 - callable objects:  knowing that appending `()` to the name of an instance method _calls_ it, since instances of classes are _callable_, and implement `__call__()`.
 
