@@ -5,7 +5,7 @@ This is a working document to keep track of ideas and thoughts on how the progre
 ```mermaid
 graph TD
 
-A((A)) --> numbers
+Start((Start)) --> numbers
 
 numbers --> modules
 
@@ -18,9 +18,8 @@ subgraph Type System
 	abstract-types --> multiple-dispatch
 	multiple-dispatch["multiple-dispatch (encounters)"] --> extension[extending/glueing together modules]
 end
-extension --> B
-B --> performance
-performance --> Z((Z))
+extension --> performance
+performance --> Finish((Finish))
 
 subgraph Numbers
 	numbers --> complex-numbers
