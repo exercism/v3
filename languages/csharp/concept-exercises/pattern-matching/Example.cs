@@ -1,6 +1,6 @@
 ﻿using System;
 
-public static class PatternMatchEx
+public static class Example
 {
     public static double Perimeter(object shape = null)
     {
