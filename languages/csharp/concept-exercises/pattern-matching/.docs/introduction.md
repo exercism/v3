@@ -8,7 +8,7 @@ Here are examples of what pattern matching looks like in those langauges:
 - [FSharp](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching)  
 Not only can you test for equality you can also check
 for what type the pattern is using.  
-The use cases for pattern matching are innumerable
+The use cases for pattern matching are innumerable,  
 but the use-case that comes to mind first is for
 building compilers and parsers.
 You can use pattern matching with a traditional
