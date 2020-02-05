@@ -1,7 +1,7 @@
 ﻿# Instructions
 
 In this exercise you'll use pattern matching to check types input into
-your method as well as determine the perimeter of the shapes input.
+your method as well as determine the perimeter of the shape's input.
 
 ### 1. Check the type 
 
