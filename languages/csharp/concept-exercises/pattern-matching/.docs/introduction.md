@@ -15,7 +15,7 @@ You can use pattern matching with a traditional
 if-then statement, a switch statement, or with
 the more modern ML/Haskell guard style.
 It looks like this:
-```c#
+```csharp
 var item = input switch 
 {
     3 => item += 3,
