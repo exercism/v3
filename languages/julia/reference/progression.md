@@ -22,10 +22,12 @@ A((A)) --> numbers
 subgraph Numbers
 	numbers --> complex-numbers
 	numbers --> rational-numbers
-	
-	complex-numbers --> v2-complex-numbers(v2-complex-numbers)
-	rational-numbers --> v2-rational-numbers(v2-rational-numbers)
 end
+
+complex-numbers --> v2-complex-numbers(v2-complex-numbers)
+rational-numbers --> v2-rational-numbers(v2-rational-numbers)
+extension --> v2-complex-numbers
+extension --> v2-rational-numbers
 ```
 
 ## Legend
