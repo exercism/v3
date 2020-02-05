@@ -8,8 +8,8 @@ public static class Example
         {
             Square s => s.Side * 4,
             Circle c => (2 * Math.PI) * c.Radius,
-            Rectangle r => 2 * (r.Height + r.Length),
-            Triangle t => t.Base + t.SideOne + t.SideTwo,
+            Rectangle r => 2 * (r.Width + r.Length),
+            Triangle t => t.SideOne + t.SideTwo + t.SideThree,
             _ => 0
         };
         return perimeter;
