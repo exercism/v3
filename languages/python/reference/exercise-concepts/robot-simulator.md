@@ -25,11 +25,11 @@
   
 - instance methods: Tests for this exercises require one or more instance methods that will take in a set of starting coordinates and a bearing and then accept a seiries of instructions that "move" the instance to a new set of coordinates and bearing.
 
-- function decorators:
+- function decorator: a higer-order function that takes another function as an argument. The "decorating" function extends the behavior of the "decorated" function without explicitly modifying it (i.e. it _wraps_ or _decorates_ it). Called in python by using the `@` symbol and the function name ahead of the function being decorated.  The example uses pythons built-in `property()` as a decorator (`@property`) to return a "compound" read-only instance property made up of two seperate instance properties.
 
-- `@property` decorator:
+- higher-order functions:  a function that takes one or more other functions as arguments, _returning_ a function as its retrun value.  The example uses the built-in `property()` as a higher-order function through `@property`.
 
-- getters:
+- `property()` built-in:  a function that returns a property attribute.  When used as a decorator, this transforms the passed-in method into a _getter_ method for read-only attribute with the same name and docstring.
 
 - assignment:  the example uses assignment for all the instance properties and `instructions` dictionary.
 
