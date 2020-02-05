@@ -21,25 +21,25 @@ public class Circle
 public struct Rectangle
 {
     public double Length { get; }
-    public double Height { get; }
+    public double Width { get; }
 
-    public Rectangle(double length, double height)
+    public Rectangle(double length, double width)
     {
         Length = length;
-        Height = height;
+        Width = width;
     }
 }
 
 public class Triangle
 {
-    public double Base { get; }
     public double SideOne { get; }
     public double SideTwo { get; }
+    public double SideThree { get; }
 
-    public Triangle(double @base, double sideOne, double sideTwo)
+    public Triangle(double sideOne, double sideTwo, double sideThree)
     {
-        Base = @base;
         SideOne = sideOne;
         SideTwo = sideTwo;
+        SideThree = sideThree;
     }
 }
