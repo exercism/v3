@@ -28,6 +28,106 @@ The final step to preparing your language to accept contributions is to provide 
 
 We recommend choosing a Concept that involves working with basic types, like strings and numbers. Having chosen a Concept, look for the Concept's description in this reference part of this repository. This file should have references to all tracks that have implemented the exercise. You can use these existing implementations as a starting point for your first concept exercise, which you can then tailor to your specific language.
 
+### Planning the track structure
+
+You may find it helpful to create a graph that shows the unlock progression of the exercises for planning which exercises you need, which prerequisites they have and which exercises are closely related to each other.
+
+The website supports flowcharts rendered by [mermaid](https://mermaid-js.github.io/mermaid/#/flowchart). Every code block with the language set to `mermaid` will be rendered as a graph:
+
+    ```mermaid
+        graph LR
+            basic-numbers --> advanced-numbers
+    ```
+
+```mermaid
+    graph LR
+        basic-numbers --> advanced-numbers
+```
+
+Please refer to the [mermaid documentation](https://mermaid-js.github.io/mermaid/#/flowchart) for detailed instructions. Below you can find a few examples of basic mermaid syntax to get you started. The Julia track's [progression.md](./../../languages/julia/reference/progression.md) can also be used as a reference.
+
+*Note: to keep the page short, the example use left-to-right graphs (`LR`). For a track progression path you want to replace `graph LR` with `graph TD` for a top-to-bottom graph.*
+
+These will only be rendered on the website or in a markdown editor that supports mermaid rendering, e.g. [Typora](https://www.typora.io/). See [website.md](./website.md) for instructions to run the website locally. 
+
+#### Nodes and links
+
+    ```mermaid
+        graph LR
+            basic-numbers --> advanced-numbers
+    ```
+
+```mermaid
+    graph LR
+        basic-numbers --> advanced-numbers
+```
+
+#### Custom labels
+
+    ```mermaid
+        graph LR
+            basic-functions["basic-functions (hello-world)"] --> basic-numbers
+    ```
+
+```mermaid
+    graph LR
+        basic-functions["basic-functions (hello-world)"] --> advanced-numbers
+```
+
+#### Groups
+
+    ```mermaid
+    graph LR
+        functions --> composite-types
+        subgraph Type System
+            composite-types --> abstract-types
+        end
+        abstract-types --> finish((finish))
+    ```
+
+```mermaid
+graph LR
+    functions --> composite-types
+    subgraph Type System
+        composite-types --> abstract-types
+    end
+    abstract-types --> finish((finish))
+```
+
+#### Styling
+
+    ```mermaid
+        graph LR
+            basic-numbers -.-> advanced-numbers
+    ```
+
+```mermaid
+    graph LR
+        basic-numbers -.-> advanced-numbers
+```
+
+Different styles can, for example, be used for different exercises. E.g. the Julia track uses dotted lines and rounded corners for practice exercises:
+
+    ```mermaid
+    graph LR
+        subgraph Numbers
+            numbers --> complex-numbers
+            numbers --> rational-numbers
+        end
+        complex-numbers -.-> practice-complex-numbers(practice-complex-numbers)
+        rational-numbers -.-> practice-rational-numbers(practice-rational-numbers)
+    ```
+
+```mermaid
+graph LR
+    subgraph Numbers
+        numbers --> complex-numbers
+        numbers --> rational-numbers
+    end
+    complex-numbers -.-> practice-complex-numbers(practice-complex-numbers)
+    rational-numbers -.-> practice-rational-numbers(practice-rational-numbers)
+```
+
 ### Read more
 
 - [More about Concepts and Concept Exercises](../concept-exercises.md)
