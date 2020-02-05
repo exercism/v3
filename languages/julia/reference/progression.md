@@ -5,34 +5,37 @@ This is a working document to keep track of ideas and thoughts on how the progre
 ```mermaid
 graph TD
 
-A((A)) --> modules
+A((A)) --> numbers
 
-modules --> robots
+numbers --> modules
+
+modules --> structs
 subgraph Type System
-	robots --> encounters
-	robots -.-> abstract-types
-	abstract-types[abstract types] -.-> encounters
-	encounters -.-> extension[extending/glueing together modules]
+	subgraph robots
+		structs --> mutable-structs
+		mutable-structs --> abstract-types
+	end
+	abstract-types --> multiple-dispatch
+	multiple-dispatch["multiple-dispatch (encounters)"] --> extension[extending/glueing together modules]
 end
 extension --> B
 B --> performance
 performance --> Z((Z))
 
-A((A)) --> numbers
 subgraph Numbers
 	numbers --> complex-numbers
 	numbers --> rational-numbers
 end
 
-complex-numbers --> v2-complex-numbers(v2-complex-numbers)
-rational-numbers --> v2-rational-numbers(v2-rational-numbers)
-extension --> v2-complex-numbers
-extension --> v2-rational-numbers
+complex-numbers -.-> v2-complex-numbers(v2-complex-numbers)
+rational-numbers -.-> v2-rational-numbers(v2-rational-numbers)
+extension -.-> v2-complex-numbers
+extension -.-> v2-rational-numbers
 ```
 
 ## Legend
 
-- **Round edges** in the graph above are practice exercises that focus on a particular concept.
+- **Round edges & dotted lines** in the graph above are practice exercises that focus on a particular concept.
 - **Q** refers to questions the student should be able to answer after solving it that aren’t directly taught by the exercise. Think of them like questions in the style of the Cornell Note Taking system.
 - **PREV** means that the following point heavily depends on how the previous progression goes and thus is subject to change and/or to be decided
 - **NEXT** means that this could either be part of this exercise or be the concept taught in the next exercise. In the diagram these are represented with dotted lines.
