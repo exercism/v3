@@ -9,11 +9,11 @@ A((A)) --> numbers
 
 numbers --> modules
 
-modules --> structs
+modules --> composite-types
 subgraph Type System
 	subgraph robots
-		structs --> mutable-structs
-		mutable-structs --> abstract-types
+		composite-types --> mutable-composite-types
+		mutable-composite-types --> abstract-types
 	end
 	abstract-types --> multiple-dispatch
 	multiple-dispatch["multiple-dispatch (encounters)"] --> extension[extending/glueing together modules]
