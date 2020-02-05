@@ -1,7 +1,11 @@
 ﻿# Introduction
 
 Pattern matching in C# is very useful and recently
-has taken a turn to look more like other languages.
+has taken a turn to look more like other languages, such as
+Rust and F# (i.e. a more functional style).
+Here are examples of what pattern matching looks like in those langauges:  
+- [Rust](https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html)
+- [FSharp](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching)  
 Not only can you test for equality you can also check
 for what type the pattern is using.  
 The use cases for pattern matching are innumerable
