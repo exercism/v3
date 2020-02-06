@@ -1,0 +1,119 @@
+{-# START_FILE stack.yaml #-}
+resolver: lts-14.23
+
+{-# START_FILE package.yaml #-}
+name: {{name}}
+version: 1.0.0.0
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: {{camel-name}}
+  source-dirs: src
+  ghc-options: -Wall
+  # dependencies:
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - {{name}}
+      - hspec
+
+{-# START_FILE src/{{camel-name}}.hs #-}
+module {{camel-name}} (fact) where
+
+fact :: Int -> Int
+fact _n = error "You need to implement this function."
+
+{-# START_FILE test/Tests.hs #-}
+import Test.Hspec        (Spec, describe, it, shouldBe)
+import Test.Hspec.Runner (configFastFail, defaultConfig, hspecWith)
+
+import {{camel-name}} (fact)
+
+main :: IO ()
+main = hspecWith defaultConfig {configFastFail = True} specs
+
+specs :: Spec
+specs =
+  describe "fact" $ do
+    it "works for 0" $
+      fact 0 `shouldBe` 1
+
+    it "works for 5" $
+      fact 5 `shouldBe` 120
+
+{-# START_FILE examples/success-standard/package.yaml #-}
+name: {{name}}
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: {{camel-name}}
+  source-dirs: src
+  ghc-options: -Wall
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - {{name}}
+      - hspec
+
+{-# START_FILE examples/success-standard/src/{{camel-name}}.hs #-}
+module {{camel-name}} (fact) where
+
+fact :: Int -> Int
+fact n = product [1..n]
+
+{-# START_FILE .meta/design.md #-}
+# Design
+
+## Goal
+
+The goal of this exercise is ...
+
+## Things to teach
+
+After completing this exercise, the student should:
+
+ - ...
+
+## Things not to teach
+
+ - ...
+
+{-# START_FILE .docs/introduction.md #-}
+
+This file contains an introduction to the concept. It should be explicit about
+what the exercise teaches and maybe provide a brief introduction to the
+concepts, but not give away so much that the user doesn't have to do any work
+to solve the exercise.
+
+{-# START_FILE .docs/instructions.md #-}
+
+This file contains instructions for the exercise. It should explicitly explain
+what the user needs to do (define a function `foo :: a -> b` that does this and
+that, and provide at least one example usage of that function.  If there are
+multiple tasks within the exercise, it should provide an example of each.
+
+{-# START_FILE .docs/hints.md #-}
+
+If the user gets stuck, we will allow them to click a button requesting a hint,
+which shows this file. We will softly discourage them using it. The file should
+contain both general and task-specific "hints". These hints should be enough to
+unblock almost any student.
+
+{-# START_FILE .docs/after.md #-}
+(This file is optional, so you may delete it.)
+
+Once the user completes the exercise they will be shown this file, which gives
+them any bonus information or further reading about the concept taught.
+
