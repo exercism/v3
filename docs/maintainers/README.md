@@ -28,7 +28,7 @@ The final step to preparing your language to accept contributions is to provide 
 
 We recommend choosing a Concept that involves working with basic types, like strings and numbers. Having chosen a Concept, look for the Concept's description in this reference part of this repository. This file should have references to all tracks that have implemented the exercise. You can use these existing implementations as a starting point for your first concept exercise, which you can then tailor to your specific language.
 
-### Planning the track structure
+### Visualizing the planned track structure
 
 You may find it helpful to create a graph that shows the unlock progression of the exercises for planning which exercises you need, which prerequisites they have and which exercises are closely related to each other.
 
