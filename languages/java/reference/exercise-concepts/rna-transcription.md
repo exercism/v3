@@ -13,5 +13,5 @@
 - Loops: iterate on every character of the input string
 - Objects: create a object of class `StringBuilder` to store the transcription
 - Return values: method should return the final transcription
-- Pattern matching: match the right operation to execute depending on the 
+- Pattern matching: match the right operation to execute depending on the input value
 - Error handling: manage the scenario when an invalid value is found
