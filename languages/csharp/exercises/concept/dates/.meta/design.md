@@ -34,7 +34,7 @@ The Concepts this exercise unlocks are:
 This exercise's prerequisites Concepts are:
 
 - `numbers-basic`: comparing the hour against specific number values.
-- `strings-basic`: dates a parsed from and converted to strings.
+- `strings-basic`: dates are parsed from and converted to strings.
 
 ## Representer
 
