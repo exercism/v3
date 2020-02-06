@@ -49,6 +49,6 @@ Representers are pieces of software that take a solution and provide a normalise
 
 Each track has a #maintaining-x channel on [Slack](https://exercism-team.slack.com). We recommend using that to chat amongst yourselves.
 
-If you need help, the best place to use is the [#maintainers](https://exercism-team.slack.com/archives/GC3K95MRR) channel on Slack. This is a private space where maintainers from all tracks can help each other.
+If you need help, the best place to use is the [#v3](https://exercism-team.slack.com/archives/CR91YFNG3) channel on Slack. This is a private space where maintainers from all tracks can help each other.
 
 If you need to work through something more complex, please message @ErikSchierboom on Slack and schedule a time to pair with him.
