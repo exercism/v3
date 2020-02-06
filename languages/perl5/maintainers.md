@@ -4,8 +4,8 @@ These awesome people help maintain the Perl 5 track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Ricardo Filipo (Slack: `@Monsenhor`, GitHub: [Monsenhor](https://github.com/rfilipo))
 
 ## Contributing Maintainers
 
-- Simon Shine (GitHub: [sshine](https://github.com/sshine))
+- Simon Shine (Slack: `@Simon Shine`, GitHub: [sshine](https://github.com/sshine))
