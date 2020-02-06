@@ -8,4 +8,4 @@ TODO: add senior maintainers
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+- Simon Shine (GitHub: [sshine](https://github.com/sshine))
