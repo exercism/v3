@@ -15,3 +15,9 @@
 - Return values: method should return the final transcription
 - Pattern matching: match the right operation to execute depending on the input value
 - Error handling: manage the scenario when an invalid value is found
+
+## Approach: Use conditional
+- use conditional instead of pattern matching to choose the right operation to execute for the input value
+
+## Approach: functional style
+- use stream instead of loops to iterate on input values and map operation with a method reference to transform the data
