@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://raw.githubusercontent.com/exercism/v3/master/languages/haskell/config-schema.json",
+  "$ref": "#/definitions/config",
+  "description": "A schema that validates Haskell track's v3 config.json",
+  "definitions": {
+    "config": {
+      "language": { "type": "string" },
+      "version": { "const": 3 },
+      "active": { "type": "boolean" },
+      "blurb": { "type": "string" },
+      "online_editor": {
+        "type": "object",
+        "properties": {
+          "indent_style": {
+            "type": "string",
+            "enum": ["tab", "space"]
+          },
+          "indent_size": {
+            "type": "integer",
+            "min": 0
+          }
+        }
+      },
+      "ignore_pattern": { "type": "string" },
+      "solution_pattern": { "type": "string" },
+      "exercises": {
+        "type": "object",
+        "properties": {
+          "concept": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/conceptExercise"
+            }
+          },
+          "practice": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/practiceExercise"
+            }
+          }
+        }
+      }
+    },
+    "exercise": {
+      "oneOf": [
+        { "$ref": "#/definitions/conceptExercise" },
+        { "$ref": "#/definitions/practiceExercise" }
+      ]
+    },
+    "conceptExercise": {
+      TODO
+    },
+    "practiceExercise": {
+      TODO
+    }
+  }
+}
