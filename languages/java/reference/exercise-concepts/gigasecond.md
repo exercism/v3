@@ -20,8 +20,6 @@
 
 - Scoping: `{` and `}` used to identify scope of method 
 
-- Assiginment: assigining values to private properties 
-
 - Objects: creating an instance of the LocalDateTime
 
 - Dates: object containing information about date
