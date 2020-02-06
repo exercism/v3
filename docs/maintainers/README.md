@@ -48,7 +48,7 @@ Please refer to the [mermaid documentation](https://mermaid-js.github.io/mermaid
 
 *Note: to keep the page short, the example use left-to-right graphs (`LR`). For a track progression path you want to replace `graph LR` with `graph TD` for a top-to-bottom graph.*
 
-These will only be rendered on the website or in a markdown editor that supports mermaid rendering, e.g. [Typora](https://www.typora.io/). See [website.md](./website.md) for instructions to run the website locally. 
+These will only be rendered on the [repo website](https://exercism.github.io/v3) or in a markdown editor that supports mermaid rendering, e.g. [Typora](https://www.typora.io/). See [website.md](./website.md) for instructions to run the website locally. 
 
 #### Nodes and links
 
