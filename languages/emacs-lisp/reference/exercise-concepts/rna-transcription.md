@@ -18,16 +18,19 @@
 
 - if: to detect if the code is invalid
 - error: raising errors when invalid
-- condition-case
-- cond
+- condition-case: to handle each case
+- cond: to handle each case
 - let(*): defining local variables
 
-# Data structures
+# Data structures: String
 
 - char: to be able to process letters individually
-- hash-table: to represent the char mapping
-- assq/cdr
 - alist
 - add-to-list/split-string/concat
 - =/char-equal/string-equal: comparing chars/strings
 - upcase/downcase
+
+# Data structures: Hash
+
+- hash-table: to represent the char mapping
+- assq/cdr
