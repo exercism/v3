@@ -25,8 +25,7 @@
 # Control structures
 
 - if: to detect if the code is invalid
-- error: raising errors when invalid
-- condition-case: to handle each case
+- error/condition-case: raising and catching errors when invalid
 - cond: to handle each case
 - let(*): defining local variables
 
