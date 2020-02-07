@@ -18,7 +18,7 @@
 - imports: import types through `using` statements
 - namespaces: knowing where to find the `List<T>` and `Dictionary<TKey, TValue>` classes
 - type inference: using `var` to define the score
-- assignment: assigning values, such as the score
+- assignment: assigning values, such as the minimalCoinsMap
 - mutation: mutating the dictionary after it has been created
 - mapping, selecting, ordering enumerables: using multiple LINQ methods to manipulate enumerables (`Min`, `Where`, `OrderBy`, `Select`, `Aggregate`, `FirstOrDefault`, `ToList`, `ToArray`)
 - ranges: a range is created for iterating over all values up to the target
