@@ -12,7 +12,6 @@
 - classes: the tested method is defined in a class
 - objects: creating an instance of the `SortedList<string, int>` class
 - state: keeping track of the grades
-- static: the tested method is a static method
 - visibility: making tested method and tested class `public`
 - imports: import types through `using` statements
 - namespaces: knowing where to find the `SortedList<string, int>` class
