@@ -42,7 +42,7 @@ For example, we might define a concept of "Classes" and provide a short introduc
 When designing Concept Exercises, please consider the following guidelines:
 
 1. The exercise should be able to be solved in 5-10 minutes by someone proficient in the language.
-1. The exercise should not be about implementing an algorithm.
+1. The exercise should not involve having to learn or engineer a non-trivial algorithm.
 1. The exercise should not be math-based, unless that makes particular sense for your track.
 
 ## Exercise Structure
