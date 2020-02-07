@@ -5,7 +5,7 @@
 ## General
 
 - functions: used as the main entry point for the exercise
-- function arguments: input strand is passed as an argument
+- function arguments: student name and grade is passed as an input argument
 - return values: returning a value from a method
 - scoping: use `{` and `}` to denote scoping
 - interfaces: the type returned is an `IEnumerable<string>`
