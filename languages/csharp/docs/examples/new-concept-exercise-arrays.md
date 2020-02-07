@@ -55,8 +55,8 @@ As this is an introductory exercise, we should take care not to link to very adv
 
 This Concepts Exercise's Concepts are:
 
-- `collections-basic`
-- `arrays-basic`
+- `collections-basic`: know how to iterate over a collection.
+- `arrays-basic`: know of the existence of the Array type; know how to define an array; know how to access elements in an array by index; know how to iterate over elements in an array; know of some basic functions (like finding the index of an element in an array).
 
 ## Prequisites
 
@@ -64,7 +64,7 @@ As an array is a collection type, it holds zero or more instances of another typ
 
 This Concept Exercise's prerequisites Concepts are:
 
-- `numbers-basic`
+- `numbers-basic`: `int` values will be stored in the array and returned as output.
 
 ## Implementing
 
@@ -108,6 +108,7 @@ Check out the [`numbers-floating-point exercise`][concept-exercises-numbers-floa
 - `.docs/instructions.md`: instructions for the exercise. It should explicitly explain what the user needs to do (define a method with the signature `X(...)` that takes an A and returns a Z), and provide at least one example usage of that function. If there are multiple tasks within the exercise, it should provide an example of each. An example file can be found [here][instructions.md].
 - `.docs/hints.md`: if the user gets stuck, we will allow them to click a button requesting a hint, which shows this file. We will softly discourage them using it. The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any student. An example file can be found [here][hints.md].
 - `.docs/after.md`: once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught. An example file can be found [here][after.md].
+- `.meta/design.md`: documents the exercise's design decisions. This includes exercise's goal, what it teaches, what it doesn't teach, its concepts, its prerequisites and analyzer and representer instructions. The contents of this file can be extracted from this issue. An example file can be found [here][design.md].
 
 ### Step 3: updating files
 
@@ -155,6 +156,7 @@ This exercise could benefit from having an [analyzer][analyzer] that can comment
 [representer]: https://github.com/exercism/csharp-representer
 [after.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/after.md
 [hints.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/hints.md
+[design.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.meta/design.md
 [introduction.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
 [instructions.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.docs/instructions.md
 [concept-exercises]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/README.md
