@@ -5,7 +5,7 @@
 ## General
 
 - functions: used as the main entry point for the exercise
-- function arguments: input strand is passed as an arguments
+- function arguments: input coins and target are passed as arguments
 - out parameters: used when retrieving a value from the dictionary
 - return values: returning a value from a method
 - conditionals using if: conditionally execute logic using an `if` statement and the ternary operator
