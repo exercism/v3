@@ -108,7 +108,7 @@ Check out the [`numbers-floating-point exercise`][concept-exercises-numbers-floa
 - `.docs/instructions.md`: instructions for the exercise. It should explicitly explain what the user needs to do (define a method with the signature `X(...)` that takes an A and returns a Z), and provide at least one example usage of that function. If there are multiple tasks within the exercise, it should provide an example of each. An example file can be found [here][instructions.md].
 - `.docs/hints.md`: if the user gets stuck, we will allow them to click a button requesting a hint, which shows this file. We will softly discourage them using it. The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any student. An example file can be found [here][hints.md].
 - `.docs/after.md`: once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught. An example file can be found [here][after.md].
-- `.meta/design.md`: documents the exercise's design decisions. This includes exercise's goal, what it teaches, what it doesn't teach, its concepts, its prerequisites and analyzer and representer instructions. The contents of this file can be extracted from this issue. An example file can be found [here][design.md].
+- `.meta/design.md`: This file contains information on the exercise's design, which includes things like its goal, its teaching goals, what not to teach, and more. This information can be extracted from this GitHub issue. An example file can be found [here][design.md].
 
 ### Step 3: updating files
 

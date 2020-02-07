@@ -67,6 +67,12 @@ Once the user completes the exercise they will be shown this file, which gives t
 
 See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.md] for an example.
 
+### `.meta/design.md`
+
+This file contains information on the exercise's design, which includes things like its goal, its teaching goals, what not to teach, and more. This information can be extracted from the exercise's corresponding GitHub issue.
+
+See the C# floating-point-numbers exercise's [design.md file][csharp-docs-design.md] for an example.
+
 ## Track Structure
 
 ### `exercises/shared/.docs/cli.md`
