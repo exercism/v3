@@ -17,7 +17,7 @@
 # Style
 
 - cl-labels: defining functions inline
-- namespaces: or the lack of namespaces... how to name your functions properly
+- naming conventions: how to name your functions properly (commonly used pefixes and suffixes)
 - docstring: not required, but part of the discussion with students
 - comments: not required, but part of the discussion when they are off
 - naming standards in elisp
