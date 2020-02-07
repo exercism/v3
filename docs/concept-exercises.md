@@ -43,7 +43,7 @@ When designing Concept Exercises, please consider the following guidelines:
 
 1. The exercise should be able to be solved in 5-10 minutes by someone proficient in the language.
 1. The exercise should not involve having to learn or engineer a non-trivial algorithm.
-1. The exercise should not be math-based, unless it is teaching a mathematical concept.
+1. The exercise should be background-knowledge-agnostic, unless the exercise calls for it (e.g. no maths unless it's a scientific/maths-based Concept).
 
 ## Exercise Structure
 
