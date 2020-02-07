@@ -25,7 +25,7 @@
 - object initializers: initializing dictionary through object initializer
 - integers: an `int` is used for a coin and the target
 - array: a `int []` is used for the available coinage
-- lists: a `List<int>` is used as to store the rolls in
+- lists: a `List<int>` is used as to store the coins for a given value in
 - nulls: a `null` value is used as a default
 - ordering operators:`<`, `>`, `<=`
 - equality operator: `!=`
