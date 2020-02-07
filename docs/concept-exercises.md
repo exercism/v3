@@ -71,6 +71,8 @@ See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.m
 
 This file contains information on the exercise's design, which includes things like its goal, its teaching goals, what not to teach, and more. This information can be extracted from the exercise's corresponding GitHub issue.
 
+It exists in order to inform future maintainers or contributors about the scope and limitations of an exercise, to avoid the natural trend towards making exercises more complex over time.
+
 See the C# floating-point-numbers exercise's [design.md file][csharp-docs-design.md] for an example.
 
 ## Track Structure
