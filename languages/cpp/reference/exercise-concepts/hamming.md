@@ -1,4 +1,4 @@
-# Leap
+# Hamming
 
 ## Task
 
