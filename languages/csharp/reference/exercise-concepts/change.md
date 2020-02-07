@@ -17,7 +17,7 @@
 - visibility: making tested method and tested class `public`
 - imports: import types through `using` statements
 - namespaces: knowing where to find the `List<T>` and `Dictionary<TKey, TValue>` classes
-- type inference: using `var` to define the score
+- type inference: using `var` to define the complex types (dictionaries)
 - assignment: assigning values, such as the minimalCoinsMap
 - mutation: mutating the dictionary after it has been created
 - mapping, selecting, ordering enumerables: using multiple LINQ methods to manipulate enumerables (`Min`, `Where`, `OrderBy`, `Select`, `Aggregate`, `FirstOrDefault`, `ToList`, `ToArray`)
