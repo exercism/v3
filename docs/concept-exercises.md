@@ -37,6 +37,14 @@ Concept Exercises do not share a common base like Practice Exercises do in the `
 
 For example, we might define a concept of "Classes" and provide a short introduction that explains what a class is, how it fits with objects, state, etc. We might include a link to a good article introducing OOP and classes. Individual tracks implementing an exercise on Classes can then include this introductory text, making any changes or additions that explain their language-specific semantics and syntax.
 
+## Design Guidelines
+
+When designing Concept Exercises, please consider the following guidelines:
+
+1. The exercise should be able to be solved in 5-10 minutes by someone proficient in the language.
+1. The exercise should not be about implementing an algorithm.
+1. The exercise should not be math-based, unless that makes particular sense for your track.
+
 ## Exercise Structure
 
 An exercise has the following files. In the browser they will show at the relevant times. When used via the CLI, the introduction and instructions will be concatenated along with the track's CLI instructions into a README.md, which will sit alongside a HINTS.md.
