@@ -8,7 +8,7 @@ Example:
 ```go
 // Message extracts the message from the provided log line.
 func Message(line string) string {
-	panic("Please implement the Message function")
+	panic("please implement the Message function")
 }
 ```
 
