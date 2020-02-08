@@ -1,4 +1,4 @@
-# How to implement an Go concept exercise
+# How to implement a Go concept exercise
 
 This document describes how to implement a concept exercise for the Go track. As this document is exercise generic, the following placeholders are used:
 
