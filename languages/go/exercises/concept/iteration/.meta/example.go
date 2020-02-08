@@ -8,7 +8,7 @@ func Fibonacci(n int) int {
 	if n < 2 {
 		return n
 	}
-	var x1, x2 = 1, 1
+	x1, x2 := 1, 1
 	for i := 2; i < n; i++ {
 		x1, x2 = x2, x1+x2
 	}
@@ -20,7 +20,7 @@ func FibonacciGreater(n int) int {
 	if n == 0 {
 		return 1
 	}
-	var x1, x2 = 1, 1
+	x1, x2 := 1, 1
 	for x2 <= n {
 		x1, x2 = x2, x1+x2
 	}
