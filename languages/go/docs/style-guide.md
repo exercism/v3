@@ -2,7 +2,7 @@
 
 ## Stub functions
 
-Stub functions best contain a `panic` containing the phrase: `Please implement the XY function`.
+Stub functions should implement a `panic` call, containing the phrase: `please implement the XY function`.
 
 Example:
 ```go
