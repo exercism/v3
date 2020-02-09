@@ -11,5 +11,5 @@
 - imports: import types through `using` statements
 
 ## Optional, optimizing the code
-- string interpolation: while string could be formatted in different ways, [string interpolation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated) provides a more effective and simpler way in this exercise
-- expression body method: it makes the code cleaner for a short (one-line) method - [link]([https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members#methods]) 
+- string interpolation: while `string` could be formatted in different ways, string interpolation provides a more effective and simpler way 
+- expression body method: it makes the code cleaner for a short (one-line) method 
