@@ -5,10 +5,10 @@
 ## General
 
 - Class: define a class to resolve the problem
-- Constructors: initalizing values when object is created
+- Constructors: initializing values when object is created
 - Methods: define methods to expose functionalities 
-- Argument: the method should take the input as argument
-- Strings: input of the class method is a `String`
+- Argument: constructor and methods takes values as arguments
+- Strings: input of problem is a `String`
 - Integer: work with integer values
 - Assignment: assign some objects to local variables
 - Variables: define references to structures
