@@ -5,7 +5,8 @@
 ## General
 - function: used as the entry point to this exercise
 - static function: the `static` keyword is the modifier that makes the method static, and enables it to be called without instantiation. The static method can access the variables passed in as arguments, global, and only other static members of the class.  
-- optional argument: adding an optional argument, avoids method overloading, and keep the code simpler    
+- strings: used to format and return the result
+- function arguments: need to add one optional argument - it would be avoided an unnecessary method overloading, keep the code simpler    
 - class: the tested method is defined in a class
 - visibility: making tested method and tested class `public`
 - imports: import types through `using` statements
