@@ -37,11 +37,14 @@
         }
       }
     }
-    mermaid.initialize({ logLevel:0, startOnLoad: false, flowchart: { useMaxWidth:false, htmlLabels:true }, themeCSS: '.label { font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif; }' })
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+
   <!-- Render triple backtick mermaid blocks as a mermaid graph -->
   <script src="//unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ logLevel:0, startOnLoad: false, flowchart: { useMaxWidth:false, htmlLabels:true }, themeCSS: '.label { font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif; }' })
+  </script>
 
 </body>
 </html>
