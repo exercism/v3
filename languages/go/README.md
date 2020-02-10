@@ -17,7 +17,7 @@ This area will contain everything needed to launch the Go track, including:
 
 [:house_with_garden:  v3 Docs Website](https://exercism.github.io/v3/#/)
 
-[:gear: Go Concept Reference](https://exercism.github.io/v3/#/languages/go/reference/README)
+[:gear: Go Concept Reference](https://exercism.github.io/v3/#/languages/go/reference/README) | [:speech_balloon: Go Concept Discussion](https://github.com/exercism/v3/issues/167) | [:hammer: Go Exercise Discussion](https://github.com/exercism/v3/issues/212)
 
 ## Preparation Status
 
