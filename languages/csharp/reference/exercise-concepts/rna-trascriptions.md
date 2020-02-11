@@ -3,7 +3,7 @@
 ## Object-oriented
 
 - Classes: used on the template. Some people define a static dictionary to pre compute RNA pairs.
-- Encapsulation: used on the template. There are public elements, some people create private elements 
+- Encapsulation: used on the template. There are public elements, some people create private elements.
 - Methods: used on the template. One needs to implement a method.
 
 ## Functional
