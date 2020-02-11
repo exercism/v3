@@ -12,6 +12,7 @@
 - Integer: work with integer values
 - Assignment: assign some objects to local variables
 - Variables: define references to structures
+- Static Variables: define static references
 - Loops: iterate on input and structures
 - Return values: methods should return requested values
 - Regular Expression: use expressions to split the input
