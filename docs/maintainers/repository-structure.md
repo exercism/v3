@@ -6,7 +6,7 @@ Things are grouped into several sub-directories:
 
 ## [Docs][docs]
 
-This directory contains files for both the public, and maintainers, explaining what v3 is and how to contribute.
+This directory contains files, for both the public and maintainers, explaining what v3 is and how to contribute.
 
 ## [Reference][reference]
 
