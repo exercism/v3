@@ -35,7 +35,7 @@ I believe the key area where we are failing our students is in not having a clea
 
 ### Concept Exercises
 
-Concepts Exercises should have the following characteristics:
+Concept Exercises should have the following characteristics:
 
 - Each one has a clear learning goal.
 - They are language-specific, not generic.
