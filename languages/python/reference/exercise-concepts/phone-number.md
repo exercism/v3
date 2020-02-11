@@ -39,13 +39,13 @@ class PhoneNumber:
  - classes can have instance *methods* which are called from an instance of the class (as opposed to class methods, called from the Class itself)
  - classes can define a `property` by using the `@property` decorator (not shown here)
  - a `property` can be "lazily evaluated" to avoid uneeded computation
- - Methods prefixed with an underscore, `_`, are conventionally treated as private methods, although Python does not actually support privacy.
+ - "privacy" in Python: Methods prefixed with an underscore, `_`, are conventionally treated as private methods, although Python does not actually support privacy.
  - within the class definition, methods and properties can be accessed via the `self.` notation
- 
+
 **Python stdlib**
  - the `re` module is an example of the Python stdlib (standard library), or included code libraries and tools that are frequently used in Python
  - to use the module, the `import` syntax can be used
-  
+
 **strings**
  - Characters in a string can be accessed with *bracket notation* since they are iterable
  - strings are immutable, and so cannot have values assigned
@@ -56,18 +56,20 @@ class PhoneNumber:
 **string methods**
  - strings (and other types) have built in instance methods - in this case, `"string".startswith("s")` which are called from
    the instance of the string itself
-   
-**bracket notation**
+
+**bracket notation - index access**
  - for iterables, individual items can be accessed with `stringname[x]` notation
- - ranges of iterables can be accessed via `stringname[x:y]` notation
  - negative numbers start to count backwards
-  
+
+**bracket notation - slice access**
+- ranges of iterables can be accessed via `stringname[x:y]` notation
+- a third parameter allows "skipping" by `z`, i.e. `stringname[x:y:z]`
+
 **regex**
  - regular expressions is a language of sorts that can detect substrings and extract groups from a string, as well as replace them with something else
- 
+
 **conditionality**
  - `if ... else` and `elif` allow a programmer to switch code branches depending on some condition
- 
+
 **or / and**
 **Exceptions**
-  
