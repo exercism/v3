@@ -9,7 +9,7 @@ We are restructuring tracks to build new pathways containing "Concept Exercises"
 
 _Talk about what makes a good concept exercise and why_
 
-These exercises teach the key concepts that someone needs to know when learning a langauge, unlocking other Concept and Pracice Exercises as students progress. Concept Exerisies will have automated feedback and approval, with no delays for mentors.
+These exercises teach the key concepts that someone needs to know when learning a langauge, unlocking other Concept and Practice Exercises as students progress. Concept Exercises will have automated feedback and approval, with no delays for mentors.
 
 ## Approaches
 
