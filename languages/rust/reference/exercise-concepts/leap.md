@@ -1,6 +1,6 @@
 # Concepts of Leap
 
-I prefer the first example solution because its terseness follows what I've seen of idiosyncratic Rust. It also avoids the closure concept addition in the canonical solution.
+I prefer the first example solution because its terseness follows what I've seen of idiomatic Rust. It also avoids the closure concept addition in the canonical solution.
 
 ## Extracted concepts
 
