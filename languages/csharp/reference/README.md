@@ -170,6 +170,7 @@ The following reference docs have been written:
 
 - [Code style][code_style]
 - [Memory allocation][memory_allocation]
+- [Assemblies][assemblies]
 
 The following reference docs should be written:
 
