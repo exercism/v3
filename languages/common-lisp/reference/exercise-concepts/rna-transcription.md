@@ -34,6 +34,10 @@
 - Enumeration: Common Lisp's `loop` macro makes it possible to loop through the
   chars in a string with `across`
 
+## Approach: Recursion
+- Recursion: Questionably efficient (tail calls aren't in the standard), but
+  always an option
+
 ## Approach: Higher Order Functions
 - Higher Order Function / Enumeration: The use of `(map 'string ...)` allows you
   to convert whole strings a character at a time
