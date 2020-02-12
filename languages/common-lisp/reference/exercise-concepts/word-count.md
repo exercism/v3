@@ -17,11 +17,14 @@
 
 # String -> Words
 ## Approach: Library Import
-- Regular Expressions: Needed if the student is using the `cl-ppcre`
+- Regular Expressions: Needed if the student is using the `cl-ppcre`. Maybe this
+  can be isolated to a "library concepts" section. It shouldn't pollute the main
+  track.
 
 ## Approach: Home Rolled
 - Enumeration: Common Lisp's `loop` macro makes it possible to loop through the
-  chars in a string with `across`
+  chars in a string with `across`. `do` or `do*` can also be used for
+  enumeration
 - Conditions: Many of CL's conditionals can be used to detect separators in the
   string
 - Recursion: A popular approach for eating a word at a time
