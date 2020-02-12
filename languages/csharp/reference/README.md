@@ -171,7 +171,7 @@ The following reference docs have been written:
 - [Code style][code_style]
 - [Memory allocation][memory_allocation]
 
-## TODO
+The following reference docs should be written:
 
 - Reference doc on difference between `static readonly` and `const`
 - Naming conventions
