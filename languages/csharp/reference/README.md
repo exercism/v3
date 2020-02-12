@@ -8,89 +8,131 @@ The C# concept exercises are based on concepts. The list below contains the conc
 
 The core OO features a C# developer should know about are:
 
-- [Encapsulation](../../../reference/concepts/encapsulation.md)
-- [Classes](../../../reference/concepts/classes.md)
-- [Objects](../../../reference/concepts/objects.md)
-- [State](../../../reference/concepts/state.md)
-- [Mutation](../../../reference/concepts/mutation.md)
-- [Composition](../../../reference/concepts/composition.md)
-- [Inheritance](../../../reference/concepts/inheritance.md)
-- [Interfaces](../../../reference/concepts/interfaces.md)
-- [Polymorphism](../../../reference/concepts/polymorphism.md)
-- [Methods](../../../reference/concepts/methods.md)
+- [Classes][classes]
+- Structs
+- [State][state]
+- [Mutation][mutation]
+- [Objects][objects]
+  - Object initializers
+- [Encapsulation][encapsulation]
+- [Composition][composition]
+- [Inheritance][inheritance]
+- [Interfaces][interfaces]
+- [Polymorphism][polymorphism]
+- Statics
+- [Methods][methods]
+  - Constructors
+  - Destructors
+  - Method overloading
+  - Extension methods
+  - Return values
+  - Method arguments
+    - Named arguments
+    - [Optional arguments][optional_arguments]
+    - Out parameters
+- Fields
+- Properties
+- Indexers
 
 ### Functional
 
 While C# is primarily an OO language, lots of functional concepts have been added to the language:
 
-- [Immutability](../../../reference/concepts/immutability.md)
-- [Pattern matching](../../../reference/concepts/pattern_matching.md)
-- [Higher-order functions](../../../reference/concepts/higher_order_functions.md)
-- [Type inference](../../../reference/concepts/type_inference.md)
-- [Anonymous methods](../../../reference/concepts/anonymous_functions.md)
-- [Recursion](../../../reference/concepts/recursion.md)
-- [Local functions](../../../reference/concepts/nested_functions.md)
-- [Pipelines (LINQ)](../../../reference/concepts/pipelines.md)
-
-### Platform-specific
-
-- [Assemblies](../../../reference/tooling/dotnet-assemblies.md)
-
-### Memory management
-
-- Resource passing
-- [Resource allocation](./memory_allocation.md) (can include `Span<T>`/`Memory<T>` types)
-- Resource cleanup
-- Resource lifetime
-
-### Methods
-
-- Method overloading
-- Named arguments
-- Optional arguments
-- Extension methods (mixin)
+- [Functions][functions]
+  - [Higher-order functions][higher_order_functions]
+  - [Anonymous functions][anonymous_functions]
+  - [Local functions][local_functions]
+- [Immutability][immutability]
+- [Pattern matching][pattern_matching]
+- [Type inference][type_inference]
+- [Recursion][recursion]
+- [LINQ][linq]
+- Expressions vs statements
 
 ### General
 
-- Arithmetic overflow
-- [Sameness](../../../reference/concepts/sameness.md)
-- [Conditionals](../../../reference/concepts/conditionals.md)
-- [Enumeration](../../../reference/concepts/enumeration.md)
-- Iterators (yield)
-- Namespaces
-- [Generics](../../../reference/concepts/generics.md)
-- Exception handling
-- Implicit/explicit conversion
-- Boxing/unboxing
-- Anonymous types
-- Concurrency (can include concurrent collections)
+- [Variables]
+  - Assignment
+  - Default values (a `bool` being `false` by default, etc.)
+- Scoping
+  - Namespaces
+  - Imports (usings)
+  - Visibility (`public`, `private`, etc.)
+- Numbers
+  - Math operators
+  - Bitwise manipulation
+  - Arithmetic overflow
+- Comparison
+  - [Equality][equality] (`Equals`, `GetHashCode`)
+  - Ordering
+- Conditionals
+  - Boolean logic
+  - [Conditionals: if][conditionals]
+  - [Conditionals: ternary][conditionals]
+  - Conditionals: while
+  - Conditionals: do-while
+  - Conditionals: switch
+- Enumeration
+  - [Enumeration: for loop][enumeration]
+  - [Enumeration: foreach loop][enumeration]
+- Collections
+  - [Generics][generics]
+  - Iterators (yield)
+  - Collections: mapping
+  - Collections: filtering
+  - Collections: reducing
+  - Collections: ordering
+  - Collections: combining
+- Resources
+  - Resource passing (by reference/by value)
+  - [Resource allocation][memory_allocation]
+  - Resource cleanup (`IDisposable`)
+  - Resource lifetime
+- Conversions
+  - Implicit
+  - Explicit (casts)
+  - Boxing/unboxing
+- Null
+  - Nullable values
+- Concurrency
+  - Concurrent collections
+  - Locks
+- Exceptions
 - Asynchronous programming
-- Expressions vs statements
 - Attributes
 - Slicing
 - Unsafe code
-- Reflection
-- Nullability
+- Comments
+- Randomness
+- Regular expressions
+- Anonymous types
+- Nested types
 
 ### Types
 
-- Signed integers
-- Unsigned integers
-- Floating point numbers
 - [Strings][string]
-- Enums
 - [Characters][char]
 - [Booleans][bool]
-- [Arrays][array]
-- [Lists][list]
-- [Dictionaries][map]
-- [Sets][set]
-- [Queues][queue]
-- [Stacks][stack]
+- Enums
 - [Tuples][tuple]
-- [Ranges][range]
+- Numbers
+  - Signed integers
+  - Unsigned integers
+  - Floating point numbers
+- Collections
+  - [Arrays][array]
+  - [Lists][list]
+  - [Dictionaries][map]
+  - [Sets][set]
+  - [Queues][queue]
+  - [Stacks][stack]
+  - [Ranges][range]
+  - Enumerables
+  - Immutable collections
 - Indexes
 - Events
+- Delegates
+- Tasks
 
 ## Concept interpretation
 
@@ -129,27 +171,39 @@ The following reference docs have been written:
 ## TODO
 
 - Reference doc on difference between `static readonly` and `const`
+- Naming conventions
 
 [issues-improve-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fimprove-reference+label%3Astatus%2Fhelp-wanted
 [issues-new-reference]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fnew-reference+label%3Astatus%2Fhelp-wanted+
 [code_style]: ./code_style.md
 [memory_allocation]: ./memory_allocation.md
+[encapsulation]: ../../../reference/concepts/encapsulation.md
+[classes]: ../../../reference/concepts/classes.md
+[objects]: ../../../reference/concepts/objects.md
+[state]: ../../../reference/concepts/state.md
+[mutation]: ../../../reference/concepts/mutation.md
+[composition]: ../../../reference/concepts/composition.md
+[inheritance]: ../../../reference/concepts/inheritance.md
+[interfaces]: ../../../reference/concepts/interfaces.md
+[polymorphism]: ../../../reference/concepts/polymorphism.md
+[methods]: ../../../reference/concepts/methods.md
+[immutability]: ../../../reference/concepts/immutability.md
+[pattern_matching]: ../../../reference/concepts/pattern_matching.md
+[higher_order_functions]: ../../../reference/concepts/higher_order_functions.md
+[type_inference]: ../../../reference/concepts/type_inference.md
+[anonymous_functions]: ../../../reference/concepts/anonymous_functions.md
+[recursion]: ../../../reference/concepts/recursion.md
+[local_functions]: ../../../reference/concepts/nested_functions.md
+[linq]: ../../../reference/concepts/pipelines.md
+[equality]: ../../../reference/concepts/sameness.md
+[conditionals]: ../../../reference/concepts/conditionals.md
+[enumeration]: ../../../reference/concepts/enumeration.md
+[generics]: ../../../reference/concepts/generics.md
+[assemblies]: ../../../reference/tooling/dotnet-assemblies.md
 [bool]: ../../../reference/types/boolean.md
 [string]: ../../../reference/types/string.md
 [char]: ../../../reference/types/char.md
 [null]: ../../../reference/types/null.md
-[int]: ../../../reference/types/integer.md
-[uint]: ../../../reference/types/integer.md
-[byte]: ../../../reference/types/byte.md
-[sbyte]: ../../../reference/types/byte.md
-[short]: ../../../reference/types/short.md
-[ushort]: ../../../reference/types/short.md
-[long]: ../../../reference/types/long.md
-[ulong]: ../../../reference/types/long.md
-[double]: ../../../reference/types/double.md
-[float]: ../../../reference/types/single.md
-[decimal]: ../../../reference/types/decimal_number.md
-[big-integer]: ../../../reference/types/big_integer.md
 [array]: ../../../reference/types/array.md
 [list]: ../../../reference/types/list.md
 [map]: ../../../reference/types/map.md
@@ -158,7 +212,9 @@ The following reference docs have been written:
 [queue]: ../../../reference/types/deque.md
 [class]: ../../../reference/types/class.md
 [struct]: ../../../reference/types/struct.md
-[value-tuple]: ../../../reference/types/tuple.md
 [tuple]: ../../../reference/types/tuple.md
 [range]: ../../../reference/types/range.md
 [nullable]: ../../../reference/types/nullable.md
+[optional_arguments]: ../../../reference/concepts/default_arguments.md
+[functions]: ../../../reference/types/function.md
+[variables]: ../../../reference/concepts/variables.md
