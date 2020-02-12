@@ -2,7 +2,7 @@
 
 This document describes the steps required to implement a concept exercise for the Python track. As this document is generic, the following placeholders are used:
 
-- `<SLUG>`: the name of the exercise in snake_case (e.g. `anonymous_methods`).
+- `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
 - `<NAME>`: the name of the exercise in snake_case (e.g. `anonymous_methods`).
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue.
@@ -19,14 +19,24 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   └── after.md (optional)
+                |   └── after.md
                 ├── .meta
                 |   ├── config.json
-                |   └── <SLUG>.py
-                ├── src
-                |   └── <NAME>.py
-                └── test
-                    └── <NAME>_test.py
+                |   └── example.py
+                ├── <NAME>.py
+                └── <NAME>_test.py
+        └── practice
+            └── <SLUG>
+                ├── .docs
+                |   ├── instructions.md
+                |   ├── introduction.md
+                |   ├── hints.md
+                |   └── after.md
+                ├── .meta
+                |   ├── config.json
+                |   └── example.py
+                ├── <NAME>.py
+                └── <NAME>_test.py
 
 ```
 
