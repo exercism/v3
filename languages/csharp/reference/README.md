@@ -109,6 +109,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Regular expressions
 - Anonymous types
 - Nested types
+- String interpolation
 
 ### Types
 
