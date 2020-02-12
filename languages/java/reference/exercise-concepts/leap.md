@@ -15,7 +15,7 @@
 
 - Return values: Returning values from a method, denoted by a `return` statement in the method and return type in the method signature. Once a method executes a `return` statement, no other statement in the method will be executed and control is returned the caller of the method
 
-- boolean: A primitive type that can only have the values `true` or `false`
+- `boolean`: A primitive type that can only have the values `true` or `false`
 
 - Boolean Expression: Java code that can be evaluated to return either `true` or `false`. Simple boolean expressions can be combined to represent more complex logic
 
