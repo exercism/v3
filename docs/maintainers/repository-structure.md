@@ -22,7 +22,7 @@ A list of reference documents for the various CS concepts, types, paradigms, etc
 Each track has its own directory containing the following files and directories:
 
 - **config.json** The updated config.json for a track, with the practice exercises removed to avoid noise.
-- **docs:** This directory contains files, for both the public and maintainers, describing the C# v3 track and how to contribute. It is envisioned that these documents will be linked to from issues and discussions to provide canonical answers or guidance.
+- **docs:** This directory contains files, for both the public and maintainers, describing the track and how to contribute. It is envisioned that these documents will be linked to from issues and discussions to provide canonical answers or guidance.
 - **exercises:** The exercises for that language.
   - **shared:** Exercise files shared across all exercises for that language.
     - **.docs:** Exercise documentation shared across all exercises for that language.
