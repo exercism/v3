@@ -72,8 +72,6 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - Conditionals: while
   - Conditionals: do-while
   - Conditionals: switch
-  - Conditionals: null-coalescing
-  - Conditionals: null-conditional
 - Enumeration
   - [Enumeration: for loop][enumeration]
   - [Enumeration: foreach loop][enumeration]
@@ -96,6 +94,8 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - Boxing/unboxing
 - Null
   - Nullable values
+  - Null-coalescing operator
+  - Null-conditional operator
 - Concurrency
   - Concurrent collections
   - Locks
