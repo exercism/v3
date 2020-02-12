@@ -36,7 +36,7 @@ This file contains instructions for the exercise. It should explicitly explain w
 
 If the user gets stuck, we will allow them to click a button requesting a hint, which shows this file. We will softly discourage them using it. The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any student.
 
-## Step 4: add .docs/after.md (optional):
+## Step 4: add .docs/after.md (optional)
 
 Once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught.
 
