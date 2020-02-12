@@ -107,8 +107,6 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Comments
 - Randomness
 - Regular expressions
-- Anonymous types
-- Nested types
 - String interpolation
 
 ### Types
@@ -136,6 +134,8 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Events
 - Delegates
 - Tasks
+- Anonymous types
+- Nested types
 
 ## Concept interpretation
 
