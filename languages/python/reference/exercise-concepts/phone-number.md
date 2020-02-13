@@ -50,7 +50,7 @@ class PhoneNumber:
  - to use the module, the `import` syntax can be used
 
 **strings**
- - Characters in a string can be accessed with *bracket notation* since they are iterable
+ - Characters in a string are *iterables* and are subject to index and slice access as described below
  - strings are immutable, and so cannot have values assigned
  - new strings can be created, however
  - `<string>.format()` can be used to replace values in a string
