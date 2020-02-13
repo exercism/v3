@@ -14,14 +14,14 @@ jobs:
           script: |
             const isWip = /\bwip\b/i.test(context.payload.pull_request.title)
 
-            // https://developer.github.com/v3/repos/statuses/#create-a-status
-            request('POST /repos/:owner/:repo/statuses/:sha', context.repo({
+            github.repos.createStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
               sha: context.payload.pull_request.head.sha,
               state: isWip ? 'pending' : 'success',
-              target_url: context.github.event.pull_request.issue_url,
               description: isWip ? 'work in progress' : 'ready for review',
-              context: 'WIP (action)'
-            }))
+              context: 'WIP'
+            })
 
 # This script has been derived from https://github.com/wip/action/blob/70e28aac17990c91b3c911d6b32a4cbfc845c1c7/index.js,
 # released under the following licence: https://github.com/wip/action/blob/70e28aac17990c91b3c911d6b32a4cbfc845c1c7/LICENSE
