@@ -117,6 +117,7 @@ While F# has OO features, it is a "functional first" language. It is important t
 - Attributes
 - Nullability
 - String formatting
+  - Formatting types
 
 ### Types
 
