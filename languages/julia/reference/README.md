@@ -109,7 +109,7 @@ This list is neither complete nor final.
 - DataFrames (non-stdlib)
 - Plotting (non-stdlib)
 - StaticArrays (non-stdlib)
-- Traits
+- (Holy) Traits
 - Language interoperability
 - Units
 
