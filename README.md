@@ -13,6 +13,8 @@ Exercism v3 is the third major iteration of Exercism, which we are aiming to lau
 
 We are busy working away on the product and development work to add all this functionality, but **we need contributors to help get our language tracks into the necessary state for v3**. Our biggest need right now is for the implementation of Concept Exercises, but there are also lots of other tasks that we will need help with too. Throughout the development of v3, track maintainers will be creating issues tagged with `status/help-wanted`. You can choose any issue and comment saying you want to work on it, and it will then be "assigned" to you.
 
+Some random test crap.
+
 **To get started please explore the issues in the language you wish to contribute to:**
 
 _(This list is sorted alphabetically.)_
