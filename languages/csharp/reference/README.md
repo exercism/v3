@@ -107,7 +107,9 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Comments
 - Randomness
 - Regular expressions
-- String interpolation
+- String formatting
+  - Interpolation
+  - Formatting types
 
 ### Types
 
