@@ -48,6 +48,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - [Recursion][recursion]
 - [LINQ][linq]
 - Expressions vs statements
+- Expression-bodied members
 
 ### General
 
