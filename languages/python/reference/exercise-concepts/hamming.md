@@ -61,5 +61,23 @@ def distance(s1, s2):
  - iterating through a list of tuples, i.e. [(1, 2), (2,3)], each piece of each tuple can be unpacked into a separate variable
  - syntax: `a, b = (1, 2)`
  - this works for any sort of iterable (lists, for example, and even strings!) but is commonly used with tuples because they are typically of a known size/length, and so can be safely unpacked into N variables, with names. 
+
+**dunder methods**
+ - "dunder" -> "double under", referring to the names of these methods being prefixed with two underscores, e.g. `__init__`.
+ - There is no formal privacy in Python, but conventionally a single underscore indicates a private method, or one that the programmer should assume may change at any time; methods without an underscore are considered part of an object's public API.
+ - Double underscores are even more special - they are used by Python's builtin functions like `len()`, for example, to allow objects to implement various interfaces and functionality.
+ - They can also be used for operator overloading. If you have a custom class that you would like to be able to compare to other instances of the same class, implementing `__lt__`, `__gt__`, `__eq__` etc. allow programmers to use the `>`, `<`, `=` operators.
+ - Dunder methods allow programmers to build useful objects with simple interfaces, i.e. you can add two instances together using `+` instead of writing something like `instance1.add(instance2)`.
+
  
- 
+**builtin functions**
+ - Python has several handy builtin functions in the stdlib that can operate on many types of data, e.g. `len()`, `max()`, `min()`.
+ - Under the hood these are implemented via dunder methods - if an object (and everything in Python is an object) implements the correct dunder methods (see that topic for more information), it can support use in these functions. (For example, if an object implements `__len__`, the len(<object>) will return that value.)
+ - Because these functions are not strictly tied to any data type, they can be used almost anywhere, and will crop up again and again as we learn Python.
+ - Docs: https://docs.python.org/3/library/functions.html
+
+**polymorphism**
+ - Python is "dynamically typed," meaning that variable names are bound to objects only, not to a particular type. You can assign `foo` to a string, and then reassign it to an `int` with no issues.
+ - Python is also a good example of "Duck typing," to wit, "if it walks like a duck, talks like a duck, it's a duck.". This is accomplished partly with "magic" or "dunder" methods (double-under) that provide various interfaces to an object. If an object implements `__iter__` and `__next__`, it can be iterated through; it doesn't matter what type the object actually is.
+ - "Polymorphism" formally means that different types respond to the same function - so the ability to add custom class instances together using `+`, for example, shows how Python can define the same function against different types.
+
