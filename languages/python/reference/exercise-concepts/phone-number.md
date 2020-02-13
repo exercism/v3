@@ -35,12 +35,15 @@ class PhoneNumber:
 
 **Classes**
  - classes are defined with the `class <ClassName>:` syntax
- - classes require an `__init__` method, whose first argument is `self`, because the result of `__init__` is a class *instance*
- - classes can have instance *methods* which are called from an instance of the class (as opposed to class methods, called from the Class itself)
+ - User defined classes can (and generally do) overload the `__init__` method, whose first argument is `self`, because the result of `__init__` is a class *instance*. This is inherited from `Object`, which every class in Python inherits from. (See: inheritance)
+ - classes can have instance *methods* which are called from an instance of the class (as opposed to class methods, called from the Class itself). The first parameter of an instance method is always `self`, which is provided when calling from the instance (i.e. the programmer does not need to pass it as an argument explicitly).
+ - Static methods are methods called from the class itself, and are not connected to an instance of the class. They have access to class attributes (those defined on the class, not connected to the `self`), and do not require an instance of the class to exist.
  - classes can define a `property` by using the `@property` decorator (not shown here)
  - a `property` can be "lazily evaluated" to avoid uneeded computation
- - "privacy" in Python: Methods prefixed with an underscore, `_`, are conventionally treated as private methods, although Python does not actually support privacy.
+ - Public and Private methods/attributes in Python: Methods or attributes (including those of an imported module) prefixed with an underscore, `_`, are conventionally treated as private methods, although Python does not actually support privacy in the way a language like Java does. Convention indicates that methods and attributes that are not prefixed can be expected to remain stable along with semver, i.e. a public method will be backwards compatible with minor version updates, and can change with major version updates. Generally, importing non-public functions or using non-public methods is discouraged, though Python will not explicitly stop the programmer from doing so.
  - within the class definition, methods and properties can be accessed via the `self.` notation
+ - Inheritance: a "subclass" will inherit all methods, attributes from it's parent class, and can then override methods as needed. Overriding means the logic in the parent class is not used.
+ - `super()` : a subclass can call `super()`, a builtin method, which will allow the programmer to defer logic up the inheritance chain to the parent class when needed.
 
 **Python stdlib**
  - the `re` module is an example of the Python stdlib (standard library), or included code libraries and tools that are frequently used in Python
@@ -54,16 +57,15 @@ class PhoneNumber:
  - `"s" in "string"` syntax allows the user to check membership in the longer string
 
 **string methods**
- - strings (and other types) have built in instance methods - in this case, `"string".startswith("s")` which are called from
-   the instance of the string itself
+ - strings (and other types) have built in instance methods - in this case, `"string".startswith("s")` which are called from the instance of the string itself
 
-**bracket notation - index access**
+**iterables - index access**
  - for iterables, individual items can be accessed with `stringname[x]` notation
  - negative numbers start to count backwards
 
-**bracket notation - slice access**
-- ranges of iterables can be accessed via `stringname[x:y]` notation
-- a third parameter allows "skipping" by `z`, i.e. `stringname[x:y:z]`
+**iterables - slice access**
+- A slice within an iterable, i.e. the slice of items from `<iterable>[x]` to `<iterable>[y]`, can be accessed via `<iterable>[x:y]` notation
+- A third parameter allows "skipping" by `z`, i.e. `stringname[x:y:z]`
 
 **regex**
  - regular expressions is a language of sorts that can detect substrings and extract groups from a string, as well as replace them with something else
