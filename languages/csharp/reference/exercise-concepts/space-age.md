@@ -9,7 +9,7 @@
 - visibility: making tested method and tested class `public` while making class members which contain data `private`
 - imports: import types through `using` statements
 - expression-bodied members: it makes the code cleaner for On{Planet} methods 
-- type double: the return value of the On{Planet} methods and the argument of the class constructor is of type double, meaning the user must be exposed to working with floating point numbers
+- double: the return value of the On{Planet} methods and the argument of the class constructor is of type double, meaning the user must be exposed to working with floating point numbers
 - division operator: user must know how to use binary arithmetic operators
 
 ## Approach using constants
@@ -18,7 +18,7 @@
 ## Approach using Dictionary class
 - using: import proper namespace for access to the Dictionary<TKey,TValue> Class (System.Collections.Generic)
 - dictionaries : use the Dictionary class to store factors on each planet
-- initialization: create a dictionary with proper type for keys and values, assign proper combinations of key-value pairs
+- object initializers: create a dictionary with proper type for keys and values, assign proper combinations of key-value pairs
 - indexers: used to retrieve values by their specified keys
 
 ## Approach using Enums
