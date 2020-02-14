@@ -26,13 +26,13 @@ A student may have no understanding of floating point numbers as more than numbe
 This exercise asks students to write code to analyse the production of an assembly line. It covers:
 
 - Arithmetic
-- Numeric comparison
+- Comparing numbers
 - Converting between integers and floating point numbers.
 - Conditionals
 
 #### Implementations
 
-- [C#][implementation-csharp-production-line]
+- [C#][implementation-csharp-production-line] (no significant changes made)
 
 ### Savings Accounts
 
@@ -46,7 +46,7 @@ This exercise calculates interest on savings accounts. It covers:
 
 #### Implementations
 
-- [C#][implementation-csharp-savings-accounts]
+- [C#][implementation-csharp-savings-accounts] (no significant changes made)
 
 [type-bit]: ./bit.md
 [type-double]: ./double.md
