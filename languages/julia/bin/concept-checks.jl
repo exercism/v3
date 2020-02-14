@@ -3,6 +3,7 @@ using ArgParse
 using CSV
 using JSON
 
+# define the command line interface
 function parse_commandline()
     s = ArgParseSettings()
     @add_arg_table s begin
@@ -35,20 +36,27 @@ Returns a dictionary of exercises containing undefined concepts: exercise slug �
 function check_config_json(concepts, config)
     undefined_concepts = Dict{String,Vector{String}}() # exercise slug ↦ undefined concepts
 
+    # union of concept and practice exercises
     exercises = config["exercises"]["concept"] ∪ config["exercises"]["practice"]
-    for exercise in exercises
 
+    for exercise in exercises
+        # union of concepts and prerequisites
         ex_concepts = exercise["concepts"] ∪ exercise["prerequisites"]
+
+        # vector to store all undefined concepts
         undefined = String[]
         for c in ex_concepts
             # ignore annotations
             c = split(c, ".")[1]
-            
+
+            # if the concept is not in concepts.csv, push it to undefined
             if c ∉ concepts[!, :concept]
                 push!(undefined, c)
             end
         end
 
+        # if undefined is empty, all concepts are defined
+        # if not, add it to the returned dictionary
         if !isempty(undefined)
             undefined_concepts[exercise["slug"]] = undefined
         end
@@ -63,6 +71,7 @@ Check if all exercise directory names are valid concepts.
 Returns an array of exercises named after undefined concepts.
 """
 function check_exercise_directories(concepts, rootpath, track)
+    # vector to store all undefined exercise directory names
     undefined = String[]
 
     base_path = joinpath(rootpath, "languages", track, "exercises", "concept")
@@ -71,7 +80,10 @@ function check_exercise_directories(concepts, rootpath, track)
         # ignore annotations
         ex = split(ex, ".")[1]
 
+        # ignore README.md, _sidebar.md and other files
         isdir(joinpath(base_path, ex)) || continue
+
+        # if the concept is not in concepts.csv, push it to undefined
         if ex ∉ concepts[!, :concept]
             push!(undefined, ex)
         end
