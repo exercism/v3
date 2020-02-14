@@ -14,3 +14,4 @@ These awesome people help maintain the C# track.
 - Shayna Conner (Slack: `@Shayna Conner`, GitHub: [shaynuhcon](https://github.com/shaynuhcon))
 - Marcos Almeida (Slack: `@marcos`, GitHub: [maurelio1234](https://github.com/maurelio1234))
 - Mike May (Slack: `@mike`, GitHub: [mikedamay](https://github.com/mikedamay))
+- Edinei Cavalcanti (Slack: `@neiesc`, GitHub: [neiesc](https://github.com/neiesc))
