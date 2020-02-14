@@ -19,7 +19,7 @@
 - using: import proper namespace for access to the Dictionary<TKey,TValue> Class (System.Collections.Generic)
 - Dictionary<TKey,TValue> Class : use the Dictionary class to store factors on each planet
 - initialization: create a dictionary with proper type for keys and values, assign proper combinations of key-value pairs
-- Item[TKey] property: used to retrieve values by their specified keys
+- indexers: used to retrieve values by their specified keys
 
 ## Approach using Enums
 - enum: can be used as a Key for the Dictionary class instead of a string
