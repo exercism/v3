@@ -23,7 +23,7 @@ A student may have no understanding of floating point numbers as more than numbe
 
 ### Production Line Analysis
 
-This exercise asks students to write code to analyse the production of an assembly line. The original (C#) implementation teaches:
+This exercise asks students to write code to analyse the production of an assembly line. The reference implementation (C#) teaches:
 
 - Arithmetic
 - Comparing numbers
@@ -38,7 +38,7 @@ This exercise asks students to write code to analyse the production of an assemb
 
 ### Savings Accounts
 
-This exercise calculates interest on savings accounts. The original (C#) implementation teaches:
+This exercise calculates interest on savings accounts. The reference implementation (C#) teaches:
 
 - Rounding
 - The importance of different precisions, using integers, 4 byte floating point numbers and 16 byte floating point numbers
