@@ -14,6 +14,14 @@ function parse_commandline()
             help = "path to the config.json file"
             arg_type = String
             default = "config.json"
+        "--root"
+            help = "root of the v3 repository"
+            arg_type = String
+            default = joinpath("..", "..")
+        "--track", "-t"
+            help = "track slug"
+            arg_type = String
+            default = "julia"
     end
 
     return parse_args(ARGS, s)
@@ -46,6 +54,29 @@ function check_config_json(concepts, config)
     return undefined_concepts
 end
 
+"""
+Check if all exercise directory names are valid concepts.
+
+Returns an array of exercises named after undefined concepts.
+"""
+function check_exercise_directories(concepts, rootpath, track)
+    undefined = String[]
+
+    base_path = joinpath(rootpath, "languages", track, "exercises", "concept")
+
+    for ex in readdir(base_path)
+        # ignore annotations
+        ex = split(ex, ".")[1]
+
+        isdir(joinpath(base_path, ex)) || continue
+        if ex ∉ concepts[!, :concept]
+            push!(undefined, ex)
+        end
+    end
+
+    undefined
+end
+
 function main()
     anyerror = false
 
@@ -66,7 +97,16 @@ function main()
         anyerror = true
     end
 
-    anyerror ? exit(1) : exit(0)
+    @info "Checking exercise directory names..."
+    wrong_dirs = check_exercise_directories(concepts, args["root"], args["track"])
+    if !isempty(wrong_dirs)
+        @error "Found exercises named after undefined concepts: $(join(wrong_dirs, ", "))"
+        anyerror = true
+    end
+
+    anyerror
 end
 
-main()
+if abspath(PROGRAM_FILE) == @__FILE__
+    main() ? exit(1) : exit(0)
+end
