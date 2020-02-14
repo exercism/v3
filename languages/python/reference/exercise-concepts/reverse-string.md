@@ -3,18 +3,7 @@
 Example implementation:
 ```python
 def reverse(text: str) -> str:
-    """Reverse a given string
-    Parameters
-    ----------
-    text : str
-        CAS# for chemical of interest
-    
-    Returns
-    -------
-    [str]
-        the given string in reverse
-    """
-
+    """Reverse a given string"""
     return text[::-1]
 ```
 
@@ -33,9 +22,10 @@ because `str` in python is a `sequence` object, slicing can be used here. Specif
      >>> print(string)
      'ACE'
      ```
-     In this exercise, `stride = -1` means start from the end
+   - In this exercise, `stride = -1` means start from the end
   Together effectively, slicing of `[::-1]` gives the reversed string
   [Extra material for string slicing.](https://www.digitalocean.com/community/tutorials/how-to-index-and-slice-strings-in-python-3)
+  
 - **Docstring**: used to document the function, normally situated right below `def func():`
 - **[Type hinting](https://docs.python.org/3/library/typing.html#module-typing)**: 
 (**Python 3.5+**) not neccessary in Python but can help for easy reading the python file as well as type checking if.
