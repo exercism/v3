@@ -17,7 +17,7 @@ public static class AssemblyLine
             return 0.77;
 
         if (speed >= 5)
-            return 0.8;
+            return 0.9;
 
         return 1;
     }
