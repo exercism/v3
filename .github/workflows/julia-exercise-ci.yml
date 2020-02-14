@@ -1,14 +1,12 @@
-name: Julia CI
+name: Julia exercise CI
 
 on:
   push:
     paths:
-    - '**.jl'
     - 'languages/julia/exercises/concept/**'
     - 'languages/julia/exercises/practice/**'
   pull_request:
     paths:
-    - '**.jl'
     - 'languages/julia/exercises/concept/**'
     - 'languages/julia/exercises/practice/**'
 
@@ -22,7 +20,7 @@ jobs:
         os: [ubuntu-latest, windows-latest, macOS-latest]
     
     steps:
-      - uses: actions/checkout@v1.0.0
+      - uses: actions/checkout@v2
 
       - name: "Set up Julia ${{ matrix.julia-version }}"
         uses: julia-actions/setup-julia@v1
