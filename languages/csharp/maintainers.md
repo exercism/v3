@@ -15,3 +15,4 @@ These awesome people help maintain the C# track.
 - Marcos Almeida (Slack: `@marcos`, GitHub: [maurelio1234](https://github.com/maurelio1234))
 - Mike May (Slack: `@mike`, GitHub: [mikedamay](https://github.com/mikedamay))
 - Hani Ho (Slack: `@Hani Ho`, GitHub: [batibot323](https://github.com/batibot323))
+- Christian Torbica (Slack: `@Christian Torbica`, GitHub: [archrisV](https://github.com/archrisV))
