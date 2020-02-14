@@ -41,6 +41,9 @@ function check_config_json(concepts, config)
         ex_concepts = exercise["concepts"] ∪ exercise["prerequisites"]
         undefined = String[]
         for c in ex_concepts
+            # ignore annotations
+            c = split(c, ".")[1]
+            
             if c ∉ concepts[!, :concept]
                 push!(undefined, c)
             end
