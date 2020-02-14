@@ -2,7 +2,11 @@ name: Check for dead links
 
 on:
   push:
+    paths:
+    - '**.md'
   pull_request:
+    paths:
+    - '**.md'
   schedule:
     - cron: "0 3 * * *"
 
