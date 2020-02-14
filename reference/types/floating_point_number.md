@@ -34,7 +34,7 @@ This exercise asks students to write code to analyse the production of an assemb
 
 | Track | Exercise                                         | Changes |
 | ----- | ------------------------------------------------ | ------- |
-| C#    | [Numbers][implementation-csharp-production-line] | None    |
+| C#    | [numbers][implementation-csharp-production-line] | None    |
 
 ### Savings Accounts
 
@@ -46,7 +46,9 @@ This exercise calculates interest on savings accounts. It teaches:
 
 #### Implementations
 
-- [C#][implementation-csharp-savings-accounts] (no significant changes made)
+| Track | Exercise                                                         | Changes |
+| ----- | ---------------------------------------------------------------- | ------- |
+| C#    | [numbers-floating-point][implementation-csharp-savings-accounts] | None    |
 
 [type-bit]: ./bit.md
 [type-double]: ./double.md
