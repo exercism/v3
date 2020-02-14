@@ -6,47 +6,44 @@ The F# concept exercises are based on concepts. The list below contains the conc
 
 ### Language-unique
 
-- Dependency order
-- Computation expressions
-- Type providers
 - Active patterns
+- Computation expressions
+- Dependency order
+- Type providers
 - Units of measure
 
 ### Functional
 
+- [Expression-oriented (not statement oriented)][expression_oriented]
 - [Functions][functions]
-  - [Pure functions][pure_functions]
-  - [Higher-order functions][higher_order_functions]
   - [Anonymous functions][anonymous_functions]
-  - [Nested functions][nested_functions]
+  - Currying
   - [Function composition][function_composition]
+  - [Higher-order functions][higher_order_functions]
+  - Implicit returns
+  - [Nested functions][nested_functions]
   - [Partial application][partial_application]
+  - [Pure functions][pure_functions]
   - [Recursion][recursion]
     - Tail recursion
-  - Currying
-  - Implicit returns
   - Type annotations
 - [Immutability][immutability]
 - [Pattern matching][pattern_matching]
   - Discards
   - Guard clauses
+- [Pipelines][pipelines]
 - [Type inference][type_inference]
   - Automatic generalisation
-- [Pipelines][pipelines]
-- [Expression-oriented (not statement oriented)][expression_oriented]
 
 ### Object-oriented
 
 The core OO features an F# developer should know about are:
 
 - [Classes][classes]
-- Structs
-- [State][state]
-- [Encapsulation][encapsulation]
-- [Objects][objects]
-- [Mutation][mutation]
-  - Reference cells
 - [Composition][composition]
+- [Encapsulation][encapsulation]
+- Fields
+- Indexers
 - [Interfaces][interfaces]
   - Object expressions
 - [Methods][methods]
@@ -55,97 +52,101 @@ The core OO features an F# developer should know about are:
     - Named arguments
     - [Optional arguments][optional_arguments]
     - Out parameters
-- Fields
+- [Mutation][mutation]
+  - Reference cells
+- [Objects][objects]
 - Properties
-- Indexers
+- [State][state]
+- Structs
 - Type extensions
 
 While F# has OO features, it is a "functional first" language. It is important to know how and when to apply the OO features, and which OO features (see https://youtu.be/yL7xBhWrdKw?t=2248) to use.
 
 ### General
 
-- Values
-  - Assignment
-- Scoping
-  - Whitespace significant
-  - Namespaces
-  - Modules
-    - Extending modules
-  - Imports (`open`)
-  - Visibility (`public`, `private`, etc.)
-  - Shadowing
-- Numbers
-  - Math operators
-  - Bitwise manipulation
-  - Arithmetic overflow
+- Asynchronous programming
+- Attributes
+- Code quotations
+- Collections
+  - Collections: combining
+  - Collections: filtering
+  - Collections: mapping
+  - Collections: ordering
+  - Collections: reducing
+  - [Generics][generics]
+  - Iterators (yield)
+  - Ranges
+    - Slicing
+  - Sequence/for expressions
 - Comparison
   - [Equality][equality] (`Equals`, `GetHashCode`)
   - Ordering
+- Concurrency
+  - Concurrent collections
+  - Locks
+  - Messaging and agents
 - Conditionals
   - Boolean logic
   - [Conditionals: if][conditionals]
   - Conditionals: while
+- Conversions
+  - Explicit
+  - Implicit
+- Double backtick-quoted identifiers (many more characters allowed in names)
 - Enumeration
   - [Enumeration: for loop][enumeration]
-- Collections
-  - [Generics][generics]
-  - Sequence/for expressions
-  - Iterators (yield)
-  - Collections: mapping
-  - Collections: filtering
-  - Collections: reducing
-  - Collections: ordering
-  - Collections: combining
-  - Ranges
-    - Slicing
+- Exceptions
+- Nullability
+- Numbers
+  - Arithmetic overflow
+  - Bitwise manipulation
+  - Math operators
 - Resources
-  - Resource passing (by reference/by value)
   - Resource allocation
   - Resource cleanup
   - Resource lifetime
-- Conversions
-  - Implicit
-  - Explicit
-- Concurrency
-  - Messaging and agents
-  - Concurrent collections
-  - Locks
-- Exceptions
-- Asynchronous programming
-- Double backtick-quoted identifiers (many more characters allowed in names)
-- Code quotations
-- Attributes
-- Nullability
+  - Resource passing (by reference/by value)
+- Scoping
+  - Imports (`open`)
+  - Modules
+    - Extending modules
+  - Namespaces
+  - Shadowing
+  - Visibility (`public`, `private`, etc.)
+  - Whitespace significant
 - String formatting
   - Formatting types
+- Values
+  - Assignment
+- Concurrency
 
 ### Types
 
-- [Strings][string]
-- [Characters][char]
+- Anonymous records
+- Anonymous types
 - [Booleans][bool]
-- [Records][record]
-- Discriminated unions
-- Enums
-- Options
-- Results
-- [Tuples][tuple]
-- Unit
-- Numbers
-  - Signed integers
-  - Unsigned integers
-  - [Floating point numbers][floating-point-number]
+- [Characters][char]
 - Collections
   - [Arrays][array]
   - [Lists][list]
   - [Maps][map]
-  - [Sets][set]
   - [Queues][queue]
-  - [Stacks][stack]
   - [Ranges][range]
   - ResizeArray
-- Anonymous types
-- Anonymous records
+  - [Sets][set]
+  - [Stacks][stack]
+- Discriminated unions
+- Enums
+- Numbers
+  - [Floating point numbers][floating-point-number]
+  - Signed integers
+  - Unsigned integers
+- Options
+- [Records][record]
+- Results
+- [Strings][string]
+- [Tuples][tuple]
+- Unit
 
 ## Concept interpretation
 
