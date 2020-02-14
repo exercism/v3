@@ -26,6 +26,7 @@ languages
                 |   └── after.md (optional)
                 ├── .meta
                 |   |── design.md
+                |   |── config.json
                 |   └── Example.kt
                 ├── src
                 |   ├── main
