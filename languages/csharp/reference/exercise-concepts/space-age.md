@@ -17,7 +17,7 @@
 
 ## Approach using Dictionary class
 - using: import proper namespace for access to the Dictionary<TKey,TValue> Class (System.Collections.Generic)
-- Dictionary<TKey,TValue> Class : use the Dictionary class to store factors on each planet
+- dictionaries : use the Dictionary class to store factors on each planet
 - initialization: create a dictionary with proper type for keys and values, assign proper combinations of key-value pairs
 - indexers: used to retrieve values by their specified keys
 
