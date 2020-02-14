@@ -32,9 +32,9 @@ This exercise asks students to write code to analyse the production of an assemb
 
 #### Implementations
 
-| Track | Link                                              | Changes |
-| ----- | ------------------------------------------------- | ------- |
-| C#    | [Exercise][implementation-csharp-production-line] | None    |
+| Track | Exercise                                         | Changes |
+| ----- | ------------------------------------------------ | ------- |
+| C#    | [Numbers][implementation-csharp-production-line] | None    |
 
 ### Savings Accounts
 
