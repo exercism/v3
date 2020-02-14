@@ -14,7 +14,7 @@ Programming languages may name their floating point type to the amount of _preci
 
 A student may have no understanding of floating point numbers as more than numbers with decimal points.
 
-- Explain that a floating point number is not *just* a number with a decimal place.
+- Explain that a floating point number is not _just_ a number with a decimal place.
 - Explain what floating point types are used in your langauge, and when to use them.
 - Ensure that type conversions are understood if appropriate (e.g. rounding, precision-changing)
 - Ensure that students know how to compare numbers to each other.
@@ -24,19 +24,25 @@ A student may have no understanding of floating point numbers as more than numbe
 ### Production Line Analysis
 
 This exercise asks students to write code to analyse the production of an assembly line. It covers:
-- arithmetic
-- numeric comparison / conditionals
-- parsing between integers and floating point numbers.
+
+- Arithmetic
+- Numeric comparison
+- Converting between integers and floating point numbers.
+- Conditionals
+
+#### Implementations
 
 - [C#][implementation-csharp-production-line]
 
 ### Savings Accounts
 
 This exercise calculates interest on savings accounts. It covers:
-- numeric comparison / conditionals
-- rounding
-- the importance of different precisions, using integers, 4 byte floating point numbers and 16 byte floating point numbers
-- basic loops.
+
+- Numeric comparison
+- Conditionals
+- Rounding
+- The importance of different precisions, using integers, 4 byte floating point numbers and 16 byte floating point numbers
+- Basic loops
 
 #### Implementations
 
