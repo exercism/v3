@@ -23,4 +23,4 @@
 
 ## Approach using Enums
 - enum: can be used as a Key for the Dictionary class instead of a string
-- initialization: must know how to specify names of the enum members
+
