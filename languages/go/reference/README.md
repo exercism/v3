@@ -1,13 +1,22 @@
+This list is a work in progress and is being discussed and expanded in [this issue](https://github.com/exercism/v3/issues/167).
+
 # Go
 
+This is a list of concepts of Go. They are categorized into `OOP`, `Functional` and `General`. The `Specialties` category tries to mention concepts that are somewhat special to Go. A concept can belong to multiple categories.
+
 ## Specialties
+
+Concepts that are special to Go or have key differences to a vast majority of other languages.
 
 - Channels
 - Code Formatting
 - Concurrency
+- Constants
+- context.Context
 - Defer
 - Empty Interface
 - Errors and Error Handling
+- Goroutines
 - Modules
 - Multiple Return Values
 - Named Returns
@@ -15,9 +24,13 @@
 - Packages
 - Panics
 - Pointers
+- Readers, Writers, Buffers, Pipes
+- Recover
 - Reflection
+- Select
 - Type Switch
 - Unsafe
+- WaitGroups
 - Zero Values
 
 ## General concepts
@@ -27,12 +40,19 @@
 - [Boolean logic](../../../reference/concepts/boolean_logic.md)
 - Channels
 - Code Formatting
+- context.Context
 - [Comments](../../../reference/concepts/comments.md)
 - Concurrency
 - [Conditionals](../../../reference/concepts/conditionals.md)
+- CSV Handling
+- Debugging
 - Defer
 - Errors and Error Handling
 - [Functions](../../../reference/concepts/functions.md)
+- Globals
+- Ignoring (return) values
+- Init function
+- JSON Handling
 - [Loops](../../../reference/concepts/loops.md)
 - [Methods](../../../reference/concepts/methods.md)
 - Modules
@@ -41,11 +61,17 @@
 - Panics
 - Pointers
 - Nil
+- Random (math/rand vs crypt/rand)
+- Readers, Writers, Buffers, Pipes
+- Recover
 - Reflection
+- Regular Expressions
 - [Scope](../../../reference/concepts/scope.md)
+- Switch
 - Type Switch
 - Unsafe
 - [Variables](../../../reference/concepts/variables.md)
+- WaitGroups
 - Zero Values
 
 ## Object-oriented Concepts
@@ -73,12 +99,30 @@
 - Nested Functions
 - Partial Application
 - Pipelines (?)
-- Pure Functions (?)
+- Pure Functions
 - Recursion
 - REPL (some community projects)
 - Type Inference
 
+## Advanced
+- Code generation (`go generate`)
+- [plugins](https://golang.org/pkg/plugin/)
+- [cgo](https://golang.org/cmd/cgo/)
+- [Assembly in Go](https://goroutines.com/asm)
+- [conditional compilation](https://dave.cheney.net/2013/10/12/how-to-use-conditional-compilation-with-the-go-build-tool)
+
+## Patterns
+
+### Concurrency
+- synchronization for sharing memory (mutex, atomics)
+- synchronization via communication (channels)
+- data protected by `confinement` (`guard` pattern ?) 
+- for-select loop
+- `fan-in`, `fan-out`
+
 ## Types
+
+Types are not really concepts but it might be helpful to have as list of types Go has as some might need an extra introduction. Some are already added as a concept above, e.g. `channels`, `interfaces`, etc. as there are special concepts around some of Go's types.
 
 - array (rarely used)
 - bool
@@ -93,9 +137,22 @@
 - slice
 - string
 - struct
+- time.Duration
+- time.Time
+
+## Tooling
+
+- go doc / documentation, eg export & package documentation. Machine/human. Inline "why"
+- golint
+- go vet
+- go test / writing tests
+- benchmarking / profiling
+- gofmt
+- golangci-lint
 
 ## Resources used
 
 - [The Go Programming Language Specification](https://golang.org/ref/spec)
 - [Effective Go](https://golang.org/doc/effective_go.html)
 - [Frequently Asked Questions (FAQ)](https://golang.org/doc/faq)
+- [Concurrency Patterns](https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/ch04.html)
