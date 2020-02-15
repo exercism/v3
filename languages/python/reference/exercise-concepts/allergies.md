@@ -1,6 +1,6 @@
 # Concepts of `allergies`
 
-## Example Implementation
+## Example implementation
 
 After Python 3.4 an `enum.Flag` is the "one obvious" approach:
 
@@ -65,17 +65,17 @@ There are also various solutions involving lists, but these all come with O(N) l
 
 ## Concepts
 
-- Classes: the exercise relies on the `class` statement to create a custom class
-- Methods: the exercise relies on the `def` statement to create an instance method
-- Implied Argument: the exercise relies on the implied passing of `self` as the first parameter of bound methods
-- Dunder Methods: the exercise relies on the `__init__` dunder method to control class instantiation
-- Enumerated Values: the exercise relies on a fixed enumeration of possible values in a data structure
-- Data Structures: the exercise requires the use of a collection like enum.Flag or collections.OrderedDict
-- Imports: a reasonably readable solution will require importing from the standard library
-- Powers of Two: the exercise relies on the use of powers of two in fundamental binary (bitwise) operations
-- Bitflags: a general understanding of bitflags is required to solve this exercise
-- Bitwise Operators: this exercise relies on bitwise AND (`&`) and potentially bitwise LSHIFT (`<<`) to inspect the Boolean value of individual bits in a bitflag
-- Property Decorator: this exercise relies on the `@property` decorator to provide read-only dynamic access to the current list of allergens
-- Membership Testing: this exercise relies on testing membership of a value in a collection of values
-- Lookup Efficiency: an efficient solution requires knowing that membership testing is O(1) in **dict** and the **enum.Enum** variants, but is O(N) in **list** and other sequential types
+- [Classes][classes]: the exercise relies on the `class` statement to create a custom class
+- [Methods][methods]: the exercise relies on the `def` statement to create an instance method
+- [Implied Argument][implied-argument]: the exercise relies on the implied passing of `self` as the first parameter of bound methods
+- [Dunder Methods][dunder-methods]: the exercise relies on the `__init__` dunder method to control class instantiation
+- [Enumerated Values][enumerated-values]: the exercise relies on a fixed enumeration of possible values in a data structure
+- [Data Structures][data-structures]: the exercise requires the use of a collection like enum.Flag or collections.OrderedDict
+- [Imports][imports]: a reasonably readable solution will require importing from the standard library
+- [Powers of Two][powers-of-two]: the exercise relies on the use of powers of two in fundamental binary (bitwise) operations
+- [Bitflags][bitflags]: a general understanding of bitflags is required to solve this exercise
+- [Bitwise Operators][bitwise-operators]: this exercise relies on bitwise AND (`&`) and potentially bitwise LSHIFT (`<<`) to inspect the Boolean value of individual bits in a bitflag
+- [Property Decorator][property-decorator]: this exercise relies on the `@property` decorator to provide read-only dynamic access to the current list of allergens
+- [Membership Testing][membership-testing]: this exercise relies on testing membership of a value in a collection of values
+- [Lookup Efficiency][lookup-efficiency]: an efficient solution requires knowing that membership testing is O(1) in **dict** and the **enum.Enum** variants, but is O(N) in **list** and other sequential types
 
