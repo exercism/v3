@@ -28,3 +28,9 @@ public class EnumConversionExample
 ```
 
 This is mostly used to help us read and write our code. It gets rid of _magic numbers_, wherein you assign a number to a status (much like error 404). It helps in removing the cognitive load of having to translate the number to something that's meaningful. Aside from that, your tool would also offer you auto-complete to the possible values, very useful if you've got values that's too long to type.
+
+## Sources
+
+[Enums Conversion](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum#conversions)
+
+[W3Schools](https://www.w3schools.com/cs/cs_enums.asp)
