@@ -12,6 +12,8 @@ This is either used with `break`/`return` to stop from inside the loop or to act
 5. Last but not least a `for` loop can be used to iterate over a `channel`: `for item := range chItems {...}`.
 This will also be covered in a later exercise.
 
+This exercise will cover the first 3 cases. The `range` loop will be covered in later exercises.
+
 ### Conditionals
 
 This exercise also introduces _conditionals_. Here is a little intro:

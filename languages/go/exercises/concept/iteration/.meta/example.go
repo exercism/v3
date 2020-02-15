@@ -17,9 +17,6 @@ func Fibonacci(n int) int {
 
 // FibonacciGreater finds the first fibonacci number greater than the given `n`.
 func FibonacciGreater(n int) int {
-	if n == 0 {
-		return 1
-	}
 	x1, x2 := 1, 1
 	for x2 <= n {
 		x1, x2 = x2, x1+x2
