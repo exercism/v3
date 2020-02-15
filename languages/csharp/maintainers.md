@@ -18,3 +18,4 @@ These awesome people help maintain the C# track.
 - Hani Ho (Slack: `@Hani Ho`, GitHub: [batibot323](https://github.com/batibot323))
 - Christian Torbica (Slack: `@Christian Torbica`, GitHub: [archrisV](https://github.com/archrisV))
 - Richard Leurs (Slack: `@EarthlingRich`, GitHub: [EarthlingRich](https://github.com/EarthlingRich))
+- Petru Faurescu (Slack: `@fpetru`, GitHub: [fpetru](https://github.com/fpetru))
