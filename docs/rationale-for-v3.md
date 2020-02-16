@@ -35,7 +35,7 @@ I believe the key area where we are failing our students is in not having a clea
 
 ### Concept Exercises
 
-Concepts Exercises should have the following characteristics:
+Concept Exercises should have the following characteristics:
 
 - Each one has a clear learning goal.
 - They are language-specific, not generic.
@@ -51,7 +51,7 @@ Concept Exercises will not share a generic base such as problem-specifications. 
 
 ### Practice Exercises
 
-Practice Exercises should be story-based than concept-based. They should provide an interesting challenge, which a student can try and solve using the concepts they have been taught. The existing set of Exercism exercises are generally great Practice Exercise candidates.
+Practice Exercises should be story-based rather than concept-based. They should provide an interesting challenge, which a student can try and solve using the concepts they have been taught. The existing set of Exercism exercises are generally great Practice Exercise candidates.
 
 There will be no "approval" for Practice Exercises. A student solves the exercise against the tests and submits it. They can then choose to publish, or submit further iterations.
 

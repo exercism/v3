@@ -1,9 +1,11 @@
 ---
 name: "[MAINTAINERS] Add new reference document"
-about: FOR MAINTAINERS ONLY - Use this template to create an issue to add a new reference document
+about: FOR MAINTAINERS ONLY - Use this template to create an issue to add a new reference
+  document
 title: "[<LANG>] Add new reference document: <DOC>"
-labels: type/new-reference, status/help-wanted
-assignees: ""
+labels: status/help-wanted, type/new-reference
+assignees: ''
+
 ---
 
 [Use this issue template to describe how to add a new reference doc. Only suggest adding a new reference doc when no appropriate online resource can be found. Please fill in the issue template, and remove any sections wrapped in square brackets (such as this section!).]

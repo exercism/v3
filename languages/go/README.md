@@ -17,17 +17,17 @@ This area will contain everything needed to launch the Go track, including:
 
 [:house_with_garden:  v3 Docs Website](https://exercism.github.io/v3/#/)
 
-[:gear: Go Concept Reference](https://exercism.github.io/v3/#/languages/go/reference/README)
+[:gear: Go Concept Reference](https://exercism.github.io/v3/#/languages/go/reference/README) | [:speech_balloon: Go Concept Discussion](https://github.com/exercism/v3/issues/167) | [:hammer: Go Exercise Discussion](https://github.com/exercism/v3/issues/212)
 
 ## Preparation Status
 
 Before we publicize requesting contribution for this language, the following steps should be done.
 
 - [x] [Convert existing files to new repository structure](../../docs/maintainers/repository-structure.md)
-- [ ] Have a kick-off discussion between track maintainers
-- [ ] Fill out the [maintainers.md](./maintainers.md) file (e.g. [C#](../csharp/maintainers.md))
+- [x] Have a kick-off discussion between track maintainers
+- [x] Fill out the [maintainers.md](./maintainers.md) file
 - [x] Ensure there is a link to your track's GitHub issues on the [main README.md](../../README.md)
-- [ ] [Write a Concept Exercise implementation guide](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
+- [x] [Write a Concept Exercise implementation guide](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
 - [ ] [List out key Concepts for your language](../../docs/maintainers/determining-concepts.md)
 - [ ] [Add GitHub issues for 20 Concept Exercises](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
 

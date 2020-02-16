@@ -37,6 +37,14 @@ Concept Exercises do not share a common base like Practice Exercises do in the `
 
 For example, we might define a concept of "Classes" and provide a short introduction that explains what a class is, how it fits with objects, state, etc. We might include a link to a good article introducing OOP and classes. Individual tracks implementing an exercise on Classes can then include this introductory text, making any changes or additions that explain their language-specific semantics and syntax.
 
+## Design Guidelines
+
+When designing Concept Exercises, please consider the following guidelines:
+
+1. The exercise should be able to be solved in 5-10 minutes by someone proficient in the language.
+1. The exercise should not involve having to learn or engineer a non-trivial algorithm.
+1. The exercise should be background-knowledge-agnostic, unless the exercise calls for it (e.g. no maths unless it's a scientific/maths-based Concept).
+
 ## Exercise Structure
 
 An exercise has the following files. In the browser they will show at the relevant times. When used via the CLI, the introduction and instructions will be concatenated along with the track's CLI instructions into a README.md, which will sit alongside a HINTS.md.
@@ -66,6 +74,14 @@ See the C# floating-point-numbers exercise's [hints.md file][csharp-docs-hints.m
 Once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught.
 
 See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.md] for an example.
+
+### `.meta/design.md`
+
+This file contains information on the exercise's design, which includes things like its goal, its teaching goals, what not to teach, and more. This information can be extracted from the exercise's corresponding GitHub issue.
+
+It exists in order to inform future maintainers or contributors about the scope and limitations of an exercise, to avoid the natural trend towards making exercises more complex over time.
+
+See the C# floating-point-numbers exercise's [design.md file][csharp-docs-design.md] for an example.
 
 ## Track Structure
 
