@@ -18,13 +18,36 @@ class Matrix:
         return self.columns[index - 1]
 ```
 
-An alternate implementation [TODO: PROVIDE REASON WHY?](https://exercism.io/tracks/python/exercises/matrix/solutions/e5004e990ddc4582a50ecc1f660c31df):
+An alternate implementation [processing columns in a method rather than an instance property](https://exercism.io/tracks/python/exercises/matrix/solutions/e5004e990ddc4582a50ecc1f660c31df):
 
-TODO: COPY BODY OF EXAMPLE HERE
+```python
+class Matrix(object):
 
-An extended implementation [TODO: PROVIDE REASON WHY](https://exercism.io/tracks/python/exercises/matrix/solutions/b6a3486a35c14372b64fdc35e7c6f98f):
+    def __init__(self, matrix_string):
+        self.matrix = [[int(ele) for ele in row.split(' ') ] for row in matrix_string.split('\n')]
 
-TODO: COPY BODY OF EXAMPLE HERE
+    def row(self, index):
+        return self.matrix[index - 1]
+
+    def column(self, index):
+        return [row[index - 1] for row in self.matrix]
+```
+
+An extended implementation [using `.copy()` to protect against accidental data mutation](https://exercism.io/tracks/python/exercises/matrix/solutions/b6a3486a35c14372b64fdc35e7c6f98f):
+
+```python
+class Matrix(object):
+    def __init__(self, matrix_string):
+        # have to use "List Comprehension" to make lists in a list
+        self.matrix = [[int(num) for num in tmp.split()] for tmp in matrix_string.splitlines()]
+
+    def row(self, index): # grab which ever row requested
+        return self.matrix[index - 1].copy() # use .copy() to protect accidental data issues
+
+    def column(self, index): # grab the first number in each array
+        return [row[index - 1] for row in self.matrix]
+
+```
 
 ## Concepts
 
