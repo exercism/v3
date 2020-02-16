@@ -91,11 +91,67 @@ def parse_line(line, in_list, in_list_append):
 
 An alternate example using [regular expressions](https://exercism.io/tracks/python/exercises/markdown/solutions/daf30e5227414a61a00bac391ee2bd79):
 
-TODO: COPY BODY OF EXAMPLE HERE
+```python
+import re
+
+
+def parse(markdown):
+    s = markdown
+    s = re.sub(r'__([^\n]+?)__', r'<strong>\1</strong>', s)
+    s = re.sub(r'_([^\n]+?)_', r'<em>\1</em>', s)
+    s = re.sub(r'^\* (.*?$)', r'<li>\1</li>', s, flags=re.M)
+    s = re.sub(r'(<li>.*</li>)', r'<ul>\1</ul>', s, flags=re.S)
+    for i in range(6, 0, -1):
+        s = re.sub(r'^{} (.*?$)'.format('#' * i), r'<h{0}>\1</h{0}>'.format(i), s, flags=re.M)
+    s = re.sub(r'^(?!<[hlu])(.*?$)', r'<p>\1</p>', s, flags=re.M)
+    s = re.sub(r'\n', '', s)
+    return s
+```
 
 Another alternate example using [Python with Regex](https://exercism.io/tracks/python/exercises/markdown/solutions/a1f1d7b60bfc42818b2c2225fe0f8d7a)
 
-TODO: COPY BODY OF EXAMPLE HERE
+```python
+import re
+
+BOLD_RE = re.compile(r"__(.*?)__")
+ITALICS_RE = re.compile(r"_(.*?)_")
+HEADER_RE = re.compile(r"(#+) (.*)")
+LIST_RE = re.compile(r"\* (.*)")
+
+
+def parse(markdown: str) -> str:
+    """
+    Parse a simple markdown-formatted string to HTML.
+    """
+    result = []
+    for line in markdown.splitlines():
+        # expand inline bold tags
+        line = BOLD_RE.sub(r"<strong>\1</strong>", line)
+        # expand inline italics tags
+        line = ITALICS_RE.sub(r"<em>\1</em>", line)
+
+        # line may be a header item or a list item
+        is_header = HEADER_RE.match(line)
+        is_list = LIST_RE.match(line)
+
+        # a header is not itself a paragraph
+        if is_header:
+            result.append("<h{0}>{1}</h{0}>".format(len(is_header.group(1)),
+                                                    is_header.group(2)))
+        # neither is any part of a list
+        elif is_list:
+            # we may be appending to an existing list
+            if result and result[-1] == "</ul>":
+                result.pop()
+            # or starting a new one
+            else:
+                result.append("<ul>")
+            result.extend(["<li>" + is_list.group(1) + "</li>", "</ul>"])
+        # everything else is a paragraph
+        else:
+            result.append("<p>" + line + "</p>")
+    return "".join(result)
+```
 
 ## Concepts
 
