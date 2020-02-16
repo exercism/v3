@@ -1,0 +1,14 @@
+{
+  "language": "Elm",
+  "active": true,
+  "blurb": "Elm is a friendly functional language for the Web",
+  "version": 3,
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 4
+  },
+  "exercises": {
+    "concept": [],
+    "practice": []
+  }
+}
