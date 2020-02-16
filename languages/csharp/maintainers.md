@@ -19,3 +19,4 @@ These awesome people help maintain the C# track.
 - Christian Torbica (Slack: `@Christian Torbica`, GitHub: [archrisV](https://github.com/archrisV))
 - Richard Leurs (Slack: `@EarthlingRich`, GitHub: [EarthlingRich](https://github.com/EarthlingRich))
 - Petru Faurescu (Slack: `@fpetru`, GitHub: [fpetru](https://github.com/fpetru))
+- Ranga Senal Fernando (Slack: `@senal`, GitHub: [senal](https://github.com/senal))
