@@ -139,6 +139,7 @@ double space_age::on_neptune() const
 - signed and unsigned integer types: number of seconds is a large integer
 - member declaration qualification: number of seconds does not change after the initialization, member that holds it can be declared `const`
 - member initializer lists: for initialization of member holding number of seconds
+- `noexcept` function specifier: none of the functions in this exercise are throwing
 
 ## Alternative approaches
 
@@ -165,3 +166,4 @@ double space_age::on_neptune() const
 - use `constexpr` whenever the result of computation does not depend on run-time data
 - use using member initializer lists
 - use anonymous namespace for storing constants
+- add `noexcept` to mark all functions that are not expected to throw exceptions
