@@ -4,6 +4,12 @@
 
 The C# concept exercises are based on concepts. The list below contains the concepts that have been identified for the C# language.
 
+### Programming Paradigm
+Different styles of programing that can be used in C#
+- [Imperative programming](../../../reference/concepts/imperative_programming.md)
+- [Declarative programming](../../../reference/concepts/declarative_programming.md)
+
+
 ### Object-oriented
 
 The core OO features a C# developer should know about are:
