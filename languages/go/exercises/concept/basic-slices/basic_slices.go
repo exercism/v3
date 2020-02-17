@@ -17,20 +17,20 @@ func PrefilledSlice(value, length int) []int {
 	panic("Please implement the PrefilledSlice function")
 }
 
-// NumberRow fills a slice with the numbers 1, 2, 3, etc. It returns as many numbers as are necessary for the sum
+// NumberSequence fills a slice with the numbers 1, 2, 3, etc. It returns as many numbers as are necessary for the sum
 // of the slice to be equal or larger than `sumMin`.
-func NumberRow(sumMin int) []int {
-	panic("Please implement the NumberRow function")
-}
-
-// RemoveItemPure removes an item without changing the input values or other side effects.
-// In functional programming this is called a `pure` function.
-func RemoveItemPure(slice []int, index int) []int {
-	panic("Please implement the RemoveItemPure function")
+func NumberSequence(sumMin int) []int {
+	panic("Please implement the NumberSequence function")
 }
 
 // RemoveItem removes an item from a slice by modifying the existing slice (without allocating new memory).
 // The order of items in the slice might not be the same as before.
 func RemoveItem(slice []int, index int) []int {
 	panic("Please implement the RemoveItem function")
+}
+
+// RemoveItemPure removes an item without changing the input values or other side effects.
+// In functional programming this is called a `pure` function.
+func RemoveItemPure(slice []int, index int) []int {
+	panic("Please implement the RemoveItemPure function")
 }

@@ -263,90 +263,12 @@ func TestNumberRow(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := NumberRow(tt.args.sumMin); !reflect.DeepEqual(got, tt.want) {
+			if got := NumberSequence(tt.args.sumMin); !reflect.DeepEqual(got, tt.want) {
 				if tt.want == nil {
-					t.Errorf("NumberRow(sumMin:%v) = %v, want nil", tt.args.sumMin, got)
+					t.Errorf("NumberSequence(sumMin:%v) = %v, want nil", tt.args.sumMin, got)
 					return
 				}
-				t.Errorf("NumberRow(sumMin:%v) = %v, want %v", tt.args.sumMin, got, tt.want)
-			}
-		})
-	}
-}
-
-func TestRemoveItemPure(t *testing.T) {
-	type args struct {
-		slice []int
-		index int
-	}
-	tests := []struct {
-		name     string
-		args     args
-		want     []int
-		wantOrig []int
-	}{
-		{
-			name: "Remove an item without changing the input slice",
-			args: args{
-				slice: []int{3, 4, 5, 6},
-				index: 1,
-			},
-			want:     []int{3, 5, 6},
-			wantOrig: []int{3, 4, 5, 6},
-		},
-		{
-			name: "Remove the first item",
-			args: args{
-				slice: []int{3, 4, 5, 6},
-				index: 0,
-			},
-			want:     []int{4, 5, 6},
-			wantOrig: []int{3, 4, 5, 6},
-		},
-		{
-			name: "Remove the last item",
-			args: args{
-				slice: []int{3, 4, 5, 6},
-				index: 3,
-			},
-			want:     []int{3, 4, 5},
-			wantOrig: []int{3, 4, 5, 6},
-		},
-		{
-			name: "Remove an item from a nil slice",
-			args: args{
-				slice: nil,
-				index: 1,
-			},
-			want:     nil,
-			wantOrig: nil,
-		},
-		{
-			name: "Remove out of bounds index",
-			args: args{
-				slice: []int{3, 4, 5, 6},
-				index: 7,
-			},
-			want:     []int{3, 4, 5, 6},
-			wantOrig: []int{3, 4, 5, 6},
-		},
-		{
-			name: "Remove negative index",
-			args: args{
-				slice: []int{3, 4, 5, 6},
-				index: -7,
-			},
-			want:     []int{3, 4, 5, 6},
-			wantOrig: []int{3, 4, 5, 6},
-		},
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := RemoveItemPure(tt.args.slice, tt.args.index); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("RemoveItemPure() = %v, want %v", got, tt.want)
-			}
-			if !reflect.DeepEqual(tt.args.slice, tt.wantOrig) {
-				t.Errorf("RemoveItemPure changed the input slice to %v, want %v", tt.args.slice, tt.wantOrig)
+				t.Errorf("NumberSequence(sumMin:%v) = %v, want %v", tt.args.sumMin, got, tt.want)
 			}
 		})
 	}
@@ -431,6 +353,84 @@ func TestRemoveItem(t *testing.T) {
 				if reflect.DeepEqual(tt.args.slice, tt.orig) {
 					t.Error("RemoveItemPure did not change the input slice")
 				}
+			}
+		})
+	}
+}
+
+func TestRemoveItemPure(t *testing.T) {
+	type args struct {
+		slice []int
+		index int
+	}
+	tests := []struct {
+		name     string
+		args     args
+		want     []int
+		wantOrig []int
+	}{
+		{
+			name: "Remove an item without changing the input slice",
+			args: args{
+				slice: []int{3, 4, 5, 6},
+				index: 1,
+			},
+			want:     []int{3, 5, 6},
+			wantOrig: []int{3, 4, 5, 6},
+		},
+		{
+			name: "Remove the first item",
+			args: args{
+				slice: []int{3, 4, 5, 6},
+				index: 0,
+			},
+			want:     []int{4, 5, 6},
+			wantOrig: []int{3, 4, 5, 6},
+		},
+		{
+			name: "Remove the last item",
+			args: args{
+				slice: []int{3, 4, 5, 6},
+				index: 3,
+			},
+			want:     []int{3, 4, 5},
+			wantOrig: []int{3, 4, 5, 6},
+		},
+		{
+			name: "Remove an item from a nil slice",
+			args: args{
+				slice: nil,
+				index: 1,
+			},
+			want:     nil,
+			wantOrig: nil,
+		},
+		{
+			name: "Remove out of bounds index",
+			args: args{
+				slice: []int{3, 4, 5, 6},
+				index: 7,
+			},
+			want:     []int{3, 4, 5, 6},
+			wantOrig: []int{3, 4, 5, 6},
+		},
+		{
+			name: "Remove negative index",
+			args: args{
+				slice: []int{3, 4, 5, 6},
+				index: -7,
+			},
+			want:     []int{3, 4, 5, 6},
+			wantOrig: []int{3, 4, 5, 6},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := RemoveItemPure(tt.args.slice, tt.args.index); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("RemoveItemPure() = %v, want %v", got, tt.want)
+			}
+			if !reflect.DeepEqual(tt.args.slice, tt.wantOrig) {
+				t.Errorf("RemoveItemPure changed the input slice to %v, want %v", tt.args.slice, tt.wantOrig)
 			}
 		})
 	}
