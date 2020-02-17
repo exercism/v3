@@ -14,7 +14,11 @@
 - scoping
     - use `{` and `}` to denote scoping
     - visibility: making tested method and tested class `public`
+    - visibility: making the list that contains the scores `private` and potentially `readonly`
     - imports: import types through `using` statements (collections, LINQ)
+
+- deep copy
+    - creating an object using deep copy to prevent modification of the list of High Scores using the Scores method
 
 ### Types
 - numbers: 
