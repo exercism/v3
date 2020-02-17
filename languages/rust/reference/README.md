@@ -37,6 +37,7 @@ Basic primitive types:
 
 Slightly more advanced things to do with variables.
 
+- [ ] [Variable shadowing](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html?#shadowing)
 - [ ] `const` and `static`
 - [x] [Immutability](../../../reference/concepts/immutability.md) / Explicit Mutability
 - [x] `if let` / `while let`
