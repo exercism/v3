@@ -27,7 +27,7 @@ However, your users don't really care these technical descriptions of responses.
 
 ### 3. Use a switch-case statement to output response messages with spaces
 
-Now that your users are good with your design, it's time to provide more detailed feedback for your support team. Instead of just returning whether the request is successful or not, your team wants to know the exact response message, complete with spaces.
+Now that your users have validated your design, it's time to provide more detailed feedback for your support team. Instead of just returning whether the request is successful or not, your team wants to know the exact response message, complete with spaces.
 
 We can do this with a series of `if` statements but this is a great time to learn about the `switch` [statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/switch). `switch` statements are great when you're just looking at the value of one variable and checking it against multiple possible values. You put that variable inside the `switch` statement, followed by the `case` statements with values you want to check it against. After your code for each statement, don't forget the `break` keyword! Here's a basic example:
 
