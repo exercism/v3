@@ -23,7 +23,7 @@ You're given more codes to implement (You can't have space when defining possibl
 - 500 means `Internal Server Error`
 - 501 means `Not Implemented`
 
-However, your users don't really care these technical descriptions of responses. They just want to know whether it's a successful request or not. For this, **implement a method that will return either of the strings, "Successful Request" or "Not Successful"**
+However, your users don't really care these technical descriptions of responses. They just want to know whether it's a successful request or not. For this, **implement a method that will return either the string "Successful Request" or "Not Successful"**
 
 ### 3. Use a switch-case statement to output response messages with spaces
 
