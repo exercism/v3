@@ -2,7 +2,7 @@
 
 The C# `enum` type represents a fixed set of named constants (an enumeration). Its chief purpose is to provide a type-safe way of interacting with numeric constants, limiting the available values to a pre-defined set.
 
-Using `enums` is a great way to limit the possible values of a variable. It allows you to create your own variable type, e.g. `int`, `char`, and `bool`, and **define its set of allowable values**. You'd have to define the `enum` first with its possible values then, you can use the defined `enum` to give your variables that type. That variable can now only have possible values as defined by that `enum`
+Using `enums` is a great way to limit the possible values of a variable. It allows you to create your own variable type, e.g. `int`, `char`, and `bool`, and **define its set of allowable values**. You'd have to define the `enum` first with its possible values then, you can use the defined `enum` to give your variables that type. That variable can now only have possible values as defined by that `enum`.
 
 For example, you're working with months, you would want to create an ```enum``` called _Month_, and set its allowable values to the 12 possible months. Then you can create a variable of type ```Month``` and name it _firstMonth_. The compiler, or your tool will only allow you to set ```firstMonth``` to one of the possible values. Here's an example:
 
