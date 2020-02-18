@@ -1,6 +1,6 @@
 # Instructions
 
-You are tasked with creating a program that will accept HTML Response Codes and output a value that's meaningful to us, humans.
+You are tasked with creating a program that will accept HTML Response Codes and output a value that's easily human readable.
 
 ### 1. Given a code, display it in human language.
 
