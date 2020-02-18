@@ -11,12 +11,16 @@
     - return values: returning a value from a method
 
 ### General
+- assignment
+    - assign the list of scores through a passed argument in the constructor
 - scoping
     - use `{` and `}` to denote scoping
-    - visibility: making tested method and tested class `public`
-    - visibility: making the list that contains the scores `private` and potentially `readonly`
+    - visibility: making tested method and tested class `public` and the list that contains the scores `private`
     - imports: import types through `using` statements (collections, LINQ)
-
+- immutability
+    - use of `readonly` modifier to restrict reassignment of the scores outside of the constructor
+- enumerables
+    - collections in the System.Collections.Generic namespace implement the IEnumerable<T> interface, which enables iteration through the collection using LINQ
 - deep copy
     - creating an object using deep copy to prevent modification of the list of High Scores using the Scores method
 
