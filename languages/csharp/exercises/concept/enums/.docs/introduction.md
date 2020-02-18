@@ -22,7 +22,7 @@ public class EnumConversionExample
         Month firstMonth = Month.January; // First month of the year is January
         Console.WriteLine(firstMonth); // Prints out `January`
 
-        firstMonth = "Hello World!"; // Errors out!
+        firstMonth = "Hello World!"; // Results in a compilation error!
     }
 }
 ```
