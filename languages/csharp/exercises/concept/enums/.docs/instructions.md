@@ -2,7 +2,7 @@
 
 You are tasked with creating a program that will accept HTML Response Codes and output a value that's easily human readable.
 
-### 1. Given a code, display it in human language.
+### 1. Given a response code, display it in human language.
 
 You are given a list of three basic codes that you should implement:
 - 200 means `Success`
