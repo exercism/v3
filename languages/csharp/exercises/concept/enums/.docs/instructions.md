@@ -13,7 +13,7 @@ Define an `ErrrorCode` enum that will represent these three response codes, take
 
 ### 2. Differentiate between successful and unsuccessful given more codes
 
-You're given more codes to implement (You can't have space when defining possible values for an `enum`):
+You're given more codes to implement (You can't have spaces when defining possible values for an `enum`):
 - 200 means `OK`
 - 204 means `No Content`
 - 301 means `Moved Permanently`
