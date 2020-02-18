@@ -11,7 +11,7 @@ public enum Month
 {
     January,
     February,
-    ...,
+    // The rest of the months here
     December
 }
 
