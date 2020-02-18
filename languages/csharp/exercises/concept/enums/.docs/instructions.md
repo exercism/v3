@@ -48,7 +48,7 @@ switch (number) {
 
 For your task, **implement a method to return the response message with spaces, given the response code**.
 
-### Bonus. Combine these three methods to have a better output
+### Bonus. Combine these three methods to have a more detailed output
 
 Implement a method that will output a string containing whether the request is successful or not, response code, and the response message. Example:
 
