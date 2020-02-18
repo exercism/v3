@@ -9,7 +9,7 @@ You are given a list of three basic codes that you should implement:
 - 400 means `ClientError`
 - 500 means `ServerError`
 
-Define an `ErrrorCodes` enum that will represent these three response codes, take note that no spaces are allowed. Codes are inscrutable, your users would favor something they can easily understand. Help your users by **implementing a method that will return the response in string instead of just a number.**
+Define an `ErrrorCode` enum that will represent these three response codes, take note that no spaces are allowed. Codes are inscrutable, your users would favor something they can easily understand. Help your users by **implementing a method that will return the response as a string instead of just a number.**
 
 ### 2. Differentiate between successful and unsuccessful given more codes
 
