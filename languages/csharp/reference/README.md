@@ -47,7 +47,6 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - [Immutability][immutability]
 - [LINQ][linq]
   - Advanced (GroupBy, Join, Zip, Cast, GroupJoin, AsEnumerable)
-  - Basic
   - Method Classification (deferred, non-streaming etc.)
   - Query Syntax
   - SelectMany
@@ -67,7 +66,6 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - Collections: reducing
   - Iterators (yield)
   - [Generics][generics]
-    - Basic
     - Constraints
     - Covariance/Contravariance
 - Comments
