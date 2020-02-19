@@ -46,6 +46,11 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - [Local functions][local_functions]
 - [Immutability][immutability]
 - [LINQ][linq]
+  - Advanced (GroupBy, Join, Zip, Cast, GroupJoin, AsEnumerable)
+  - Basic
+  - Method Classification (deferred, non-streaming etc.)
+  - Query Syntax
+  - SelectMany
 - [Pattern matching][pattern_matching]
 - [Recursion][recursion]
 - [Type inference][type_inference]
@@ -62,6 +67,9 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - Collections: reducing
   - Iterators (yield)
   - [Generics][generics]
+    - Basic
+    - Constraints
+    - Covariance/Contravariance
 - Comments
 - Comparison
   - [Equality][equality] (`Equals`, `GetHashCode`)
@@ -94,6 +102,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - Bitwise manipulation
   - Math operators
 - Randomness
+- Reflection
 - Regular expressions
 - Resources
   - Resource cleanup (`IDisposable`)
@@ -108,6 +117,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - String formatting
   - Formatting types
   - Interpolation
+  - StringBuilder
 - Unsafe code
 - [Variables][variables]
   - Assignment
@@ -132,6 +142,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Enums
 - Events
 - Indexes
+- Lazy&lt;T&gt;
 - Nested types
 - Numbers
   - Floating point numbers
