@@ -17,14 +17,14 @@ You have three tasks, each of which will take a log line and ask you to do somet
 Implement a method to return a log line's message:
 
 ```ruby
-LogLine.message("[ERROR]: Invalid operation")
+LogLineParser.message('[ERROR]: Invalid operation')
 // Returns: "Invalid operation"
 ```
 
 Any leading or trailing white space should be removed:
 
 ```ruby
-LogLine.message("[WARNING]:  Disk almost full\r\n")
+LogLineParser.message("[WARNING]:  Disk almost full\r\n")
 // Returns: "Disk almost full"
 ```
 
@@ -33,7 +33,7 @@ LogLine.message("[WARNING]:  Disk almost full\r\n")
 Implement a method to return a log line's log level, which should be returned in lowercase:
 
 ```ruby
-LogLine.log_level("[ERROR]: Invalid operation")
+LogLineParser.log_level('[ERROR]: Invalid operation')
 // Returns: "error"
 ```
 
@@ -42,6 +42,6 @@ LogLine.log_level("[ERROR]: Invalid operation")
 Implement a method that reformats the log line, putting the message first and the log level after it in parentheses:
 
 ```ruby
-LogLine.reformat("[INFO]: Operation completed")
+LogLineParser.reformat('[INFO]: Operation completed')
 // Returns: "Operation completed (info)"
 ```

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class LogLine
+module LogLineParser
   def self.message(line)
     line.slice(line.index(':') + 1, line.size).strip
   end
