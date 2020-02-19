@@ -2,7 +2,7 @@
 
 [Example implementation](https://github.com/exercism/csharp/blob/master/exercises/gigasecond/Example.cs)
 
-## General concepts
+## General
 
 - classes: 
     - static classes: a static class cannot be instantiated. the exercise defines from the beginning the class `Gigasecond`
