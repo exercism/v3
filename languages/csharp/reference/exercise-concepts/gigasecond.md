@@ -22,7 +22,6 @@
 - numbers: 
     - floating point numbers: AddSeconds method has a double, as an input parameter 
 
-### .NET API
 
 ## Optional concepts
 
