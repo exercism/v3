@@ -13,7 +13,6 @@
     - return values: returning a value from a method
     - static class members: the method is defined as static, and it is always accessed by the class name, not the instance name.
 
-### General
 - scoping
     - use `{` and `}` to denote scoping
     - visibility: making tested method and tested class `public`
