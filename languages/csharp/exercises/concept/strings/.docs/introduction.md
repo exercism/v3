@@ -1,3 +1,4 @@
 # Introduction
 
-A `string` in C# is a sequence of Unicode characters (letters, digits, punctuation, etc.).
+A `string` in C# is an object that holds and manipulates an arbitrary sequence of bytes, typically representing characters. Strings are manipulated by calling the string's methods.
+
