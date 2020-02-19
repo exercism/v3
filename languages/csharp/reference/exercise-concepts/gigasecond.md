@@ -4,7 +4,6 @@
 
 ## General concepts
 
-### Object-oriented
 - classes: 
     - static classes: a static class cannot be instantiated. the exercise defines from the beginning the class `Gigasecond`
     - the tested method is defined in a class
