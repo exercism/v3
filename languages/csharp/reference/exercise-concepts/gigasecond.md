@@ -19,7 +19,6 @@
     - visibility: making tested method and tested class `public`
     - imports: import types through `using` statements
 
-### Types
 - numbers: 
     - floating point numbers: AddSeconds method has a double, as an input parameter 
 
