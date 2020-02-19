@@ -22,7 +22,6 @@
     - floating point numbers: AddSeconds method has a double, as an input parameter 
 
 
-## Optional concepts
 
 ### Functional
 - expression-bodied members: using DateTime.AddSeconds is possible to write the method as a single line. Writing the method as an expression-bodied member, would makes the code cleaner 
