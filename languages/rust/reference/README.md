@@ -37,6 +37,7 @@ Basic primitive types:
 
 Slightly more advanced things to do with variables.
 
+- [ ] [Variable shadowing](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html?#shadowing)
 - [ ] `const` and `static`
 - [x] [Immutability](../../../reference/concepts/immutability.md) / Explicit Mutability
 - [x] `if let` / `while let`
@@ -68,12 +69,12 @@ These concepts are more advanced than the fundamentals, but may be familiar from
 - [x] Explicit `return`
 - [x] [Methods](../../../reference/concepts/methods.md) / `impl` blocks
 - [ ] [Composition](../../../reference/concepts/composition.md)
-- [x] Basics of [Generics](../../../reference/concepts/generics.md)
+- [x] Basics of [Generics](https://doc.rust-lang.org/book/ch10-00-generics.html)
 - [ ] Using External Crates / Libraries
   [ ]   - `use` statement for importing
 - [x] `match` basics: ints and enums
 - [ ] Destructuring (in `match`, in `let`)
-- [ ] `match` with [Pattern matching](../../../reference/concepts/pattern_matching.md)
+- [ ] [`match` with Pattern matching](https://doc.rust-lang.org/book/ch06-02-match.html)
 - [ ] [Anonymous functions](../../../reference/concepts/anonymous_functions.md)
 - [ ] [Recursion](../../../reference/concepts/recursion.md)
 - [ ] Ranges

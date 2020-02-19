@@ -4,7 +4,7 @@ These awesome people help maintain the Elm track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Matthieu Pizenberg (Slack: `@Matthieu Pizenberg`, GitHub: [mpizenberg](https://github.com/mpizenberg))
 
 ## Contributing Maintainers
 
