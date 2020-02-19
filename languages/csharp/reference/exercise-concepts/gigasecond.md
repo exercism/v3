@@ -25,7 +25,6 @@
     - floating point numbers: AddSeconds method has a double, as an input parameter 
 
 ### .NET API
-- DateTime.AddSeconds method: this specific method helps to simplify and achieve an easier implementation
 
 ## Optional concepts
 
