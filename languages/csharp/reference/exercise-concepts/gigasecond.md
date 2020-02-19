@@ -2,32 +2,24 @@
 
 [Example implementation](https://github.com/exercism/csharp/blob/master/exercises/gigasecond/Example.cs)
 
+## Object-oriented
+- Classes: used on the template. 
+- Encapsulation: used on the template and test class
+- Methods: used on the template
+- Methods arguments: the time is passed as an argument
+- Immutability: some people define a `const` variable representing the gigasecond value
+- Static classes: used on the template, the class is defined as `static` 
+- Static class members: the method `Add` is `static`, and it is always accessed by the class name
+
 ## General
+- Namespaces: used on the template.
+- Exception handling: some people use that to detect errors. Even though it is not required by the tests.
+- Nullability: some people need to check for nulls.
+- Scoping: use `{` and `}` to denote scoping
+- Visibility: making tested method and tested class `public`
+- Numbers: AddSeconds method has a `double`, as the input parameter 
+- Dates: using DateTime
+- Numbers - Digit separator (`_`): Using this separator, it is easier to read the big value of gigasecond
 
-- classes: 
-    - static classes: a static class cannot be instantiated. the exercise defines from the beginning the class `Gigasecond`
-    - the tested method is defined in a class
-- methods: 
-    - used as the main entry point for the exercise
-    - methods arguments: the time is passed as an argument
-    - return values: returning a value from a method
-    - static class members: the method is defined as static, and it is always accessed by the class name, not the instance name.
-
-- scoping
-    - use `{` and `}` to denote scoping
-    - visibility: making tested method and tested class `public`
-    - imports: import types through `using` statements
-
-- numbers: 
-    - floating point numbers: AddSeconds method has a double, as an input parameter 
-
-
-
-## Approach: functional
-- expression-bodied members: using DateTime.AddSeconds is possible to write the method as a single line. Writing the method as an expression-bodied member, would makes the code cleaner 
-
-### Types
-- numbers: 
-    - digit separator (`_`): Using this separator, it is easier to read the big value of gigasecond
-
-- immutability: defining the gigasecond value with `const` keyword; gigasecond value is an immutable value which is known at compile time and do not change for the life of the program
+## Functional
+- Expression-bodied members: some solutions include method written as expression-bodied member
