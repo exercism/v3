@@ -30,5 +30,4 @@
 - numbers: 
     - digit separator (`_`): Using this separator, it is easier to read the big value of gigasecond
 
-### Object-oriented
 - immutability: defining the gigasecond value with `const` keyword; gigasecond value is an immutable value which is known at compile time and do not change for the life of the program
