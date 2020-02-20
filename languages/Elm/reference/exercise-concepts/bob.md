@@ -12,8 +12,9 @@
 ## Computation
 
 - `let` expressions: define local variables and functions
-- `case` statements
-- Operators `==`, `&&`
+- Pattern matching (`case` expression)
+- Comparisons (`==`)
+- Boolean operators (`&&`)
 - Function composition with `<<` and `>>`
 - Chaining computation: using piping (`|>`)
 - Partial application: combined with chaining of computation
