@@ -22,3 +22,4 @@
 - static method: to access metods at the type level.
 - dates: using DateTime
 - numbers: `AddSeconds` method has a `double`, as the input parameter.
+ 
