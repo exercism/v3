@@ -9,7 +9,14 @@
     "indent_size": 2
   },
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+        "slug": "strings",
+        "uuid": "e5476046-5289-11ea-8d77-2e728ce88125",
+        "concepts": ["strings-basic"],
+        "prerequisites": []
+      }
+    ],
     "practice": []
   }
 }
