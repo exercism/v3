@@ -13,7 +13,7 @@
         "slug": "strings",
         "uuid": "",
         "concepts": ["strings-methods"],
-        "prerequisites": []
+        "prerequisites": ["functions"]
       }
     ],
     "practice": []
