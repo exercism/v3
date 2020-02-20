@@ -17,14 +17,14 @@ You have three tasks, each of which will take a log line and ask you to do somet
 Implement a method to return a log line's message:
 
 ```python
-loglines.message("[ERROR]: Invalid operation")
+loglines.extract_message("[ERROR]: Invalid operation")
 // Returns: "Invalid operation"
 ```
 
 The message should be trimmed of any whitespace.
 
 ```python
-loglines.message("[ERROR]: Invalid operation.\t\n")
+loglines.extract_message("[ERROR]: Invalid operation.\t\n")
 // Returns: "Invalid operation."
 
 ### 2. Change a message's loglevel.
