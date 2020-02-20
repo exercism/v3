@@ -7,7 +7,7 @@
 
 ### 1. Get message from a log line
 
-- Different options to search for text in a string can be found on the [Ruby language official documentation][docs-string-methods].
+- There are different ways to search for text in a string, which can be found on the [Ruby language official documentation][docs-string-methods].
 - Removing white space is [built-in][strip-white-space].
 
 ### 2. Get log level from a log line
