@@ -2,24 +2,28 @@
 
 [Example implementation](https://github.com/exercism/csharp/blob/master/exercises/gigasecond/Example.cs)
 
-## General
+## Object-oriented
+- Classes: used on the template. 
+- Encapsulation: used on the template and test class
+- Methods: used on the template
+- Methods arguments: the time is passed as an input argument
+- Immutability: some people define a `const` variable representing the gigasecond value
+- Static classes: used on the template, the class is defined as `static` 
+- Static methods: the method `Add` is `static`, and it is always accessed by the class name
 
-- functions: used as the main entry point for the exercise
-- methods: used on the template
-- methods arguments: the time is passed as an argument
-- static function: the static keyword is the modifier that makes the method static, and enables it to be called without instantiation. The static method can access the variables 		passed in as arguments, global, and only other static members of the class.
-- static classes: used on the template, the class is defined as `static` 
-- return values: returning a value from a method
-- scoping: use `{` and `}` to denote scoping
-- type inference: using `var` to define the seconds
-- classes: the tested method is defined in a class
-- visibility: making tested method and tested class `public`
-- imports: import types through `using` statements
-- immutability: some people define a `const` variable representing the gigasecond value
-- namespaces: knowing where to find the `DateTime` class
-- expression body method: it makes the code cleaner for a short (one-line) method
-- exponential notation (scientific): use to represent numbers e.g 1e9 to represent 1000000000
-- static method: to access metods at the type level.
-- dates: using DateTime
-- numbers: `AddSeconds` method has a `double`, as the input parameter.
- 
+## General
+- Imports: import types through `using` statements
+- Namespaces: knowing where to find the `DateTime` class
+- Exception handling: some people use that to detect errors. Even though it is not required by the tests.
+- Type inference: using `var` to define the seconds
+- Nullability: some people need to check for nulls.
+- Scoping: use `{` and `}` to denote scoping
+- Visibility: making tested method and tested class `public`
+- Numbers: AddSeconds method has a `double`, as the input parameter 
+- Dates: using DateTime
+- Numbers - Digit separator (`_`): Using this separator, it is easier to read the big value of gigasecond
+- Dates: using DateTime
+- Exponential notation (scientific): use to represent numbers e.g 1e9 to represent 1000000000
+
+## Functional
+- Expression-bodied metods: some solutions include method written as expression-bodied member
