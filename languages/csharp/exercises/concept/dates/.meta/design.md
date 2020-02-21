@@ -9,6 +9,7 @@ The goal of this exercise is to teach the student the basics of the Concept of D
 After completing this exercise, the student should:
 
 - Know of the existence of the `DateTime` type.
+- Know how to get the current date.
 - Know of the individual, date-related properties.
 - Know how to access the current date.
 - Know how to compare dates.
