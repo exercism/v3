@@ -71,7 +71,7 @@ See the C# floating-point-numbers exercise's [hints.md file][csharp-docs-hints.m
 
 ### `.docs/after.md`
 
-Once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught.
+Once the user completes the exercise they will be shown this file, which should provide the user with a summary of what the exercise aimed to teach. This document can also link to any additional resources that might be interesting to the user in the context of the exercise.
 
 See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.md] for an example.
 
