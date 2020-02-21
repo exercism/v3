@@ -7,6 +7,10 @@ def _extract_pieces(message):
     pieces = re.search(LOGLINE_RE, message)
     return pieces.group(1), pieces.group(2)
 
+def _extract_pieces_no_regex_groups(message):
+    words = [word for word in re.split("[\s\[\]]", message) if word]
+    return words[0], " ".join(words[1:])
+
 
 def change_log_level(message, new_loglevel):
     """Change loglevel of message to new_loglevel."""
@@ -14,10 +18,8 @@ def change_log_level(message, new_loglevel):
 
 
 def extract_message(message):
-    _, msg = _extract_pieces(message)
-    return msg
-
+    return _extract_pieces_no_regex_groups(message)[1]
 
 def reformat(message):
-    loglevel, msg = _extract_pieces(message)
+    loglevel, msg = _extract_pieces_no_regex_groups(message)
     return f"{msg} ({loglevel.lower()})"
