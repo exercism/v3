@@ -13,15 +13,15 @@ Of the many available C# collection types, we chose to use the `array` collectio
 - Arrays have a fixed length. No complexity in adding or removing elements.
 - Arrays have a simple shorthand syntax. No need to understand how constructors work to define an array.
 
-## Things to teach
+## Learning objectives
 
-- The existence of the `Array` type.
-- Defining an array.
-- Accessing elements in an array by index.
-- Iterating over elements in an array.
-- Basic array functions (like finding the index of an element in an array).
+- Know of the existence of the `Array` type.
+- Know how to define an array.
+- Know how to access elements in an array by index.
+- Know how to iterate over elements in an array.
+- Know some basic array functions (like finding the index of an element in an array).
 
-## Things not to teach
+## Out of scope
 
 - Multi-dimensional/jagged arrays.
 - Memory and performance characteristics of arrays.
