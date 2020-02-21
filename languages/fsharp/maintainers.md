@@ -10,4 +10,4 @@ These awesome people help maintain the F# track.
 
 ## Contributing Maintainers
 
-None yet.
+- John Ruble (Slack: `@John Ruble`, GitHub: [jrr](https://github.com/jrr/))
