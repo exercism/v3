@@ -26,9 +26,9 @@ The goal of this exercise is to teach the student how concept X is implemented i
 
 For example:
 
-- The existence of type `Y`.
-- Basic functions that work on `Y`.
-- Using `Y` in context `Z`.
+- Know of the existence of type `Y`.
+- Know of basic functions that work on `Y`.
+- Know how to use `Y` in context `Z`.
 - ...]
 
 ## Out of scope
