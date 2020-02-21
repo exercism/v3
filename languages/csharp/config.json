@@ -36,9 +36,9 @@
         ]
       },
       {
-        "slug": "numbers-unsigned",
+        "slug": "numbers-signedness",
         "uuid": "82e5ca6e-00a0-4b78-9322-fd07e9327baf",
-        "concepts": ["numbers-unsigned"],
+        "concepts": ["numbers-signedness"],
         "prerequisites": [
           "numbers-basic",
           "numbers-floating-point",

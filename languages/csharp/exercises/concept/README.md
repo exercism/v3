@@ -10,7 +10,7 @@ These are the concept exercises that have currently been implemented, as well as
 | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | [`numbers`][concept-exercise-numbers]                               | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if` | -                                                                                           |
 | [`numbers-floating-point`][concept-exercise-numbers-floating-point] | `numbers-floating-point`<br/>`loops-while`                          | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if`                         |
-| [`numbers-unsigned`][concept-exercise-numbers-unsigned]             | `numbers-unsigned`                                                  | `numbers-basic`<br/>`numbers-floating-point`<br/>`type-conversion-numbers`<br/>`exceptions` |
+| [`numbers-signedness`][concept-exercise-numbers-signedness]         | `numbers-signedness`                                                | `numbers-basic`<br/>`numbers-floating-point`<br/>`type-conversion-numbers`<br/>`exceptions` |
 | [`strings`][concept-exercise-strings]                               | `strings-basic`                                                     | -                                                                                           |
 | [`enums`][concept-exercise-enums]                                   | `enums-basic`<br/>`conditionals-ternary`                            | `strings-basic`                                                                             |
 | [`dates`][concept-exercise-dates]                                   | `dates-basic`<br/>`time-basic`                                      | `numbers-basic`<br/>`strings-basic`                                                         |
@@ -34,7 +34,7 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-exercise-enums]: ./enums/.meta/design.md
 [concept-exercise-numbers]: ./numbers/.meta/design.md
 [concept-exercise-numbers-floating-point]: ./numbers-floating-point/.meta/design.md
-[concept-exercise-numbers-unsigned]: ./numbers-unsigned/.meta/design.md
+[concept-exercise-numbers-signedness]: ./numbers-signedness/.meta/design.md
 [concept-exercise-strings]: ./strings/.meta/design.md
 [issues-new-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fnew-exercise+label%3Astatus%2Fhelp-wanted
 [issues-improve-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fimprove-exercise+label%3Astatus%2Fhelp-wanted

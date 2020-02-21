@@ -19,7 +19,7 @@ The goal of this exercise is to teach the student how the Concept of `signed` an
 
 The Concepts this exercise unlocks are:
 
-- `numbers-unsigned`: know of the existence of `signed` and `unsigned` integral numeric types; understand that `signed` types can represent both negative and positive numbers and `unsigned` only positive numbers and double the range of it's signed counter part; understand arithmetic overflow.
+- `numbers-signedness`: know of the existence of `signed` and `unsigned` integral numeric types; understand that `signed` types can represent both negative and positive numbers and `unsigned` only positive numbers and double the range of it's signed counter part; understand arithmetic overflow.
 
 ## Prerequisites
 
