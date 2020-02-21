@@ -16,6 +16,16 @@
         "prerequisites": []
       },
       {
+        "slug": "numbers",
+        "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
+        "concepts": [
+          "numbers-basic",
+          "type-conversion-numbers",
+          "conditionals-if"
+        ],
+        "prerequisites": []
+      },
+      {
         "slug": "numbers-floating-point",
         "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
         "concepts": ["numbers-floating-point", "loops-while"],
@@ -26,14 +36,14 @@
         ]
       },
       {
-        "slug": "numbers",
-        "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
-        "concepts": [
+        "slug": "numbers-unsigned",
+        "uuid": "82e5ca6e-00a0-4b78-9322-fd07e9327baf",
+        "concepts": ["numbers-unsigned"],
+        "prerequisites": [
           "numbers-basic",
-          "type-conversion-numbers",
-          "conditionals-if"
-        ],
-        "prerequisites": []
+          "numbers-floating-point",
+          "type-conversion-numbers"
+        ]
       },
       {
         "slug": "enums",
