@@ -30,32 +30,11 @@ PrefilledSlice(8, 3)
 // Returns: []int{8, 8, 8}
 ```
 
-### 4. Number Sequence
+### 4. Remove item
 
-Create a slice with the numbers 1, 2, 3, etc. The sum of the numbers has to be equal to or greater than `sumMin`.
-The function shouldn't add more numbers than needed to reach `sumMin`.
-
-```go
-NumberSequence(11)
-// Returns: []int{1, 2, 3, 4, 5}
-```
-
-### 5. Remove item
-
-Remove the item `index` from the slice and return it.
+Remove the item `index` from the slice and return it the slice.
 
 ```go
 RemoveItem([]int{3, 2, 6, 4, 8}, 2)
-// Returns: []int{3, 2, 4, 8}
-```
-
-### 6. Remove item in a pure way
-
-Solve the same problem as in the previous task (`RemoveItem`) but without changing the input slice.
-
-Note: A function is called `pure` if it has no side effects. That includes not changing the input values.
-
-```go
-RemoveItemPure([]int{3, 2, 6, 4, 8}, 2)
 // Returns: []int{3, 2, 4, 8}
 ```

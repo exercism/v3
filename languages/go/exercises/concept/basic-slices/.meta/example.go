@@ -32,37 +32,10 @@ func PrefilledSlice(value, length int) []int {
 	return s
 }
 
-// NumberSequence fills a slice with the numbers 1, 2, 3, etc. It returns as many numbers as are necessary for the sum
-// of the slice to be equal to or larger than `sumMin`.
-func NumberSequence(sumMin int) []int {
-	var (
-		sum int
-		s   []int
-	)
-	for i := 1; true; i++ {
-		if sumMin <= sum {
-			break
-		}
-		s = append(s, i)
-		sum += i
-	}
-	return s
-}
-
 // RemoveItem removes an item from a slice by modifying the existing slice.
 func RemoveItem(slice []int, index int) []int {
 	if len(slice) <= index || index < 0 {
 		return slice
 	}
-	slice[index] = slice[len(slice)-1]
-	return slice[:len(slice)-1]
-}
-
-// RemoveItemPure removes an item without changing the input values or other side effects.
-// In functional programming this is called a `pure` function.
-func RemoveItemPure(slice []int, index int) []int {
-	if len(slice) <= index || index < 0 {
-		return slice
-	}
-	return append(append([]int{}, slice[:index]...), slice[index+1:]...)
+	return append(slice[:index], slice[index+1:]...)
 }

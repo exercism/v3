@@ -216,64 +216,6 @@ func TestPrefilledSlice(t *testing.T) {
 	}
 }
 
-func TestNumberRow(t *testing.T) {
-	type args struct {
-		sumMin int
-	}
-	tests := []struct {
-		name string
-		args args
-		want []int
-	}{
-		{
-			name: "Create row of numbers",
-			args: args{
-				sumMin: 33,
-			},
-			want: []int{1, 2, 3, 4, 5, 6, 7, 8},
-		},
-		{
-			name: "Zero sum",
-			args: args{
-				sumMin: 0,
-			},
-			want: nil,
-		},
-		{
-			name: "Sum is 1",
-			args: args{
-				sumMin: 1,
-			},
-			want: []int{1},
-		},
-		{
-			name: "Sum is 6",
-			args: args{
-				sumMin: 6,
-			},
-			want: []int{1, 2, 3},
-		},
-		{
-			name: "Sum is 7",
-			args: args{
-				sumMin: 7,
-			},
-			want: []int{1, 2, 3, 4},
-		},
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := NumberSequence(tt.args.sumMin); !reflect.DeepEqual(got, tt.want) {
-				if tt.want == nil {
-					t.Errorf("NumberSequence(sumMin:%v) = %v, want nil", tt.args.sumMin, got)
-					return
-				}
-				t.Errorf("NumberSequence(sumMin:%v) = %v, want %v", tt.args.sumMin, got, tt.want)
-			}
-		})
-	}
-}
-
 func TestRemoveItem(t *testing.T) {
 	type args struct {
 		slice []int
@@ -283,16 +225,14 @@ func TestRemoveItem(t *testing.T) {
 		name string
 		args args
 		want []int
-		orig []int
 	}{
 		{
-			name: "Remove an item without changing the input slice",
+			name: "Remove an item",
 			args: args{
 				slice: []int{3, 4, 5, 6},
 				index: 1,
 			},
 			want: []int{3, 5, 6},
-			orig: []int{3, 4, 5, 6},
 		},
 		{
 			name: "Remove the first item",
@@ -301,7 +241,6 @@ func TestRemoveItem(t *testing.T) {
 				index: 0,
 			},
 			want: []int{4, 5, 6},
-			orig: []int{3, 4, 5, 6},
 		},
 		{
 			name: "Remove the last item",
@@ -310,7 +249,6 @@ func TestRemoveItem(t *testing.T) {
 				index: 3,
 			},
 			want: []int{3, 4, 5},
-			orig: []int{3, 4, 5, 6},
 		},
 		{
 			name: "Remove an item from a nil slice",
@@ -327,7 +265,6 @@ func TestRemoveItem(t *testing.T) {
 				index: 7,
 			},
 			want: []int{3, 4, 5, 6},
-			orig: []int{3, 4, 5, 6},
 		},
 		{
 			name: "Remove negative index",
@@ -336,112 +273,26 @@ func TestRemoveItem(t *testing.T) {
 				index: -7,
 			},
 			want: []int{3, 4, 5, 6},
-			orig: []int{3, 4, 5, 6},
 		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got := RemoveItem(tt.args.slice, tt.args.index)
-			for _, item := range got {
-				if count(got, item) != count(tt.want, item) {
-					t.Errorf("RemoveItem(slice:%v, index:%v) = %v, want %v", tt.args.slice, tt.args.index, got, tt.want)
+			if got := RemoveItem(copySlice(tt.args.slice), tt.args.index); !reflect.DeepEqual(got, tt.want) {
+				if tt.want == nil {
+					t.Errorf("RemoveItem(slice:%v, index:%v) = %v, want nil", tt.args.slice, tt.args.index, got)
+					return
 				}
-			}
-			// We definitely expect a change in the input slice if
-			// the slice was changed at all if it wasn't the first or last element that was remove.
-			if 0 < tt.args.index && tt.args.index < len(tt.orig)-1 {
-				if reflect.DeepEqual(tt.args.slice, tt.orig) {
-					t.Error("RemoveItemPure did not change the input slice")
-				}
+				t.Errorf("RemoveItem(slice:%v, index:%v) = %v, want %v", tt.args.slice, tt.args.index, got, tt.want)
 			}
 		})
 	}
 }
 
-func TestRemoveItemPure(t *testing.T) {
-	type args struct {
-		slice []int
-		index int
+func copySlice(s []int) []int {
+	if s == nil {
+		return s
 	}
-	tests := []struct {
-		name     string
-		args     args
-		want     []int
-		wantOrig []int
-	}{
-		{
-			name: "Remove an item without changing the input slice",
-			args: args{
-				slice: []int{3, 4, 5, 6},
-				index: 1,
-			},
-			want:     []int{3, 5, 6},
-			wantOrig: []int{3, 4, 5, 6},
-		},
-		{
-			name: "Remove the first item",
-			args: args{
-				slice: []int{3, 4, 5, 6},
-				index: 0,
-			},
-			want:     []int{4, 5, 6},
-			wantOrig: []int{3, 4, 5, 6},
-		},
-		{
-			name: "Remove the last item",
-			args: args{
-				slice: []int{3, 4, 5, 6},
-				index: 3,
-			},
-			want:     []int{3, 4, 5},
-			wantOrig: []int{3, 4, 5, 6},
-		},
-		{
-			name: "Remove an item from a nil slice",
-			args: args{
-				slice: nil,
-				index: 1,
-			},
-			want:     nil,
-			wantOrig: nil,
-		},
-		{
-			name: "Remove out of bounds index",
-			args: args{
-				slice: []int{3, 4, 5, 6},
-				index: 7,
-			},
-			want:     []int{3, 4, 5, 6},
-			wantOrig: []int{3, 4, 5, 6},
-		},
-		{
-			name: "Remove negative index",
-			args: args{
-				slice: []int{3, 4, 5, 6},
-				index: -7,
-			},
-			want:     []int{3, 4, 5, 6},
-			wantOrig: []int{3, 4, 5, 6},
-		},
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := RemoveItemPure(tt.args.slice, tt.args.index); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("RemoveItemPure() = %v, want %v", got, tt.want)
-			}
-			if !reflect.DeepEqual(tt.args.slice, tt.wantOrig) {
-				t.Errorf("RemoveItemPure changed the input slice to %v, want %v", tt.args.slice, tt.wantOrig)
-			}
-		})
-	}
-}
-
-func count(slice []int, value int) int {
-	var sum int
-	for _, item := range slice {
-		if item == value {
-			sum++
-		}
-	}
-	return sum
+	var slice = make([]int, len(s))
+	copy(slice, s)
+	return slice
 }
