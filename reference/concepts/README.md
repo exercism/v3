@@ -82,5 +82,7 @@ To contribute, check the list below to see which documents have already been wri
 - [Unicode](./unicode.md)
 - [UTF7](./utf7.md)
 - [UTF8](./utf8.md)
+- [UTF16](./utf16.md)
+- [UTF32](./utf32.md)
 - [Variable shadowing](./variable_shadowing.md)
 - [Variables](./variables.md)
