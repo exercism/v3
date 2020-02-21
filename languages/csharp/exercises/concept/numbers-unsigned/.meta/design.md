@@ -9,7 +9,7 @@ The goal of this exercise is to teach the student how the Concept of `signed` an
 - Know of the existence of `signed` and `unsigned` integral numeric types.
 - Understand that an integral numeric type can represent a range of numbers.
 - Understand that an arithmetic overflow can happen.
-- Know how to catch an `OverflowException`.
+- Know how to deal with an `OverflowException`.
 
 ## Out of scope
 
