@@ -123,6 +123,10 @@ Skip this step if your track does not have a representer.
 
 This file contains information on the exercise's design, which includes things like its goal, its teaching goals, what not to teach, and more. This information can be extracted from the exercise's corresponding GitHub issue.
 
+## Step 10: add .meta/config.json:
+
+This file contains meta information on the exercise, which currently only includes the exercise's contributors.
+
 ## Inspiration
 
 When implementing an exercise, it can be very useful to look at the exercises the track has already implemented. You can also check the exercise's [general concepts documents][reference] to see if other languages that have already an exercise for that concept.

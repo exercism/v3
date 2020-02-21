@@ -21,6 +21,7 @@ languages
             │   ├── instructions.md
             │   └── introduction.md
             ├── .meta
+            |   |── config.json
             │   ├── design.md
             │   ├── example.cpp
             │   └── example.h
