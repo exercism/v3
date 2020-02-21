@@ -1,5 +1,5 @@
 import unittest
-import example as loglines
+import loglines
 
 
 class TestLogLines(unittest.TestCase):
@@ -33,3 +33,6 @@ class TestLogLines(unittest.TestCase):
             loglines.change_log_level("[WARN] Warning: file does not exist.", "INFO")
             == "[INFO] Warning: file does not exist."
         ), "Should not replace loglevel names that are part of the message."
+
+    def test_reformat(self):
+        assert loglines.reformat("[WARN] Warning: file not found.") == "Warning: file not found. (warn)", "Should reformat with lowercase loglevel. "
