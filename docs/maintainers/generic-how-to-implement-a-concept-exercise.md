@@ -21,6 +21,7 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 └── .meta
+                    ├── config.json
                     └── design.md
 </pre>
 
@@ -93,6 +94,10 @@ Skip this step if your track does not have a representer.
 
 This file contains information on the exercise's design, which includes things like its goal, its teaching goals, what not to teach, and more ([example][meta-design]). This information can be extracted from the exercise's corresponding GitHub issue.
 
+## Step 11: add .meta/config.json:
+
+This file contains meta information on the exercise, which currently only includes the exercise's contributors ([example][meta-config-json]).
+
 ## Inspiration
 
 When implementing an exercise, it can be very useful to look at the exercises the track has already implemented. You can also check the exercise's [general concepts documents][reference] to see if other languages that have already an exercise for that concept.
@@ -104,3 +109,4 @@ If you have any questions regarding implementing this exercise, please post them
 [docs-concept-exercises]: ../concept-exercises.md
 [reference]: ../../reference/concepts/README.md
 [meta-design]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/design.md
+[meta-config-json]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/config.json
