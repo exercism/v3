@@ -6,14 +6,15 @@ The concept exercises are based on this [list of concepts][reference-shared].
 
 These are the concept exercises that have currently been implemented, as well as the concepts they teach and their prerequisite concepts:
 
-| exercise                                                            | concepts                                                            | prerequisites                                                       |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [`numbers`][concept-exercise-numbers]                               | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if` | -                                                                   |
-| [`numbers-floating-point`][concept-exercise-numbers-floating-point] | `numbers-floating-point`<br/>`loops-while`                          | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if` |
-| [`strings`][concept-exercise-strings]                               | `strings-basic`                                                     | -                                                                   |
-| [`enums`][concept-exercise-enums]                                   | `enums-basic`<br/>`conditionals-ternary`                            | `strings-basic`                                                     |
-| [`dates`][concept-exercise-dates]                                   | `dates-basic`<br/>`time-basic`                                      | `numbers-basic`<br/>`strings-basic`                                 |
-| [`enums-advanced`][concept-exercise-enums-advanced]                 | `enums-advanced`                                                    | `enums-basic`<br/>`attributes-basic`</br>`bitwise-operations`       |
+| exercise                                                            | concepts                                                            | prerequisites                                                                               |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| [`numbers`][concept-exercise-numbers]                               | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if` | -                                                                                           |
+| [`numbers-floating-point`][concept-exercise-numbers-floating-point] | `numbers-floating-point`<br/>`loops-while`                          | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if`                         |
+| [`numbers-unsigned`][concept-exercise-numbers-unsigned]             | `numbers-unsigned`                                                  | `numbers-basic`<br/>`numbers-floating-point`<br/>`type-conversion-numbers`<br/>`exceptions` |
+| [`strings`][concept-exercise-strings]                               | `strings-basic`                                                     | -                                                                                           |
+| [`enums`][concept-exercise-enums]                                   | `enums-basic`<br/>`conditionals-ternary`                            | `strings-basic`                                                                             |
+| [`dates`][concept-exercise-dates]                                   | `dates-basic`<br/>`time-basic`                                      | `numbers-basic`<br/>`strings-basic`                                                         |
+| [`enums-advanced`][concept-exercise-enums-advanced]                 | `enums-advanced`                                                    | `enums-basic`<br/>`attributes-basic`</br>`bitwise-operations`                               |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse. In this example, the `numbers` exercise only teaches basic number usage, and the `numbers-floating-point` exercise builds on that and digs deeper into floating-point numbers.
 
@@ -31,8 +32,9 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-exercise-enums-advanced]: ./enums-advanced/.meta/design.md
 [concept-exercise-dates]: ./dates/.meta/design.md
 [concept-exercise-enums]: ./enums/.meta/design.md
-[concept-exercise-numbers-floating-point]: ./numbers-floating-point/.meta/design.md
 [concept-exercise-numbers]: ./numbers/.meta/design.md
+[concept-exercise-numbers-floating-point]: ./numbers-floating-point/.meta/design.md
+[concept-exercise-numbers-unsigned]: ./numbers-unsigned/.meta/design.md
 [concept-exercise-strings]: ./strings/.meta/design.md
 [issues-new-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fnew-exercise+label%3Astatus%2Fhelp-wanted
 [issues-improve-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fimprove-exercise+label%3Astatus%2Fhelp-wanted
