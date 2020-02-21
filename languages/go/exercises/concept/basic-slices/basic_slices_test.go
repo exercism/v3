@@ -19,16 +19,16 @@ func TestGetItem(t *testing.T) {
 		{
 			name: "Retrieve item from slice by index",
 			args: args{
-				slice: []uint8{5, 2, 255, 32, 182, 7, 0, 33},
+				slice: []uint8{5, 2, 10, 6, 8, 7, 0, 9},
 				index: 4,
 			},
-			want:   182,
+			want:   8,
 			wantOk: true,
 		},
 		{
 			name: "Get first item from slice",
 			args: args{
-				slice: []uint8{5, 2, 255, 32, 182, 7, 0, 33},
+				slice: []uint8{5, 2, 10, 6, 8, 7, 0, 9},
 				index: 0,
 			},
 			want:   5,
@@ -37,16 +37,16 @@ func TestGetItem(t *testing.T) {
 		{
 			name: "Get last item from slice",
 			args: args{
-				slice: []uint8{5, 2, 255, 32, 182, 7, 0, 33},
+				slice: []uint8{5, 2, 10, 6, 8, 7, 0, 9},
 				index: 7,
 			},
-			want:   33,
+			want:   9,
 			wantOk: true,
 		},
 		{
 			name: "Index out of bounds",
 			args: args{
-				slice: []uint8{5, 2, 255, 32, 182, 7, 0, 33},
+				slice: []uint8{5, 2, 10, 6, 8, 7, 0, 9},
 				index: 8,
 			},
 			want:   0,
@@ -55,7 +55,7 @@ func TestGetItem(t *testing.T) {
 		{
 			name: "Negative index",
 			args: args{
-				slice: []uint8{5, 2, 255, 32, 182, 7, 0, 33},
+				slice: []uint8{5, 2, 10, 6, 8, 7, 0, 9},
 				index: -1,
 			},
 			want:   0,
@@ -98,47 +98,47 @@ func TestSetItem(t *testing.T) {
 		{
 			name: "Overwrite an existing item",
 			args: args{
-				slice: []uint8{5, 2, 255, 32, 182, 7, 0, 33},
+				slice: []uint8{5, 2, 10, 6, 8, 7, 0, 9},
 				index: 4,
-				value: 8,
+				value: 1,
 			},
-			want: []uint8{5, 2, 255, 32, 8, 7, 0, 33},
+			want: []uint8{5, 2, 10, 6, 1, 7, 0, 9},
 		},
 		{
 			name: "Overwrite first item",
 			args: args{
-				slice: []uint8{5, 2, 255, 32, 182, 7, 0, 33},
+				slice: []uint8{5, 2, 10, 6, 8, 7, 0, 9},
 				index: 0,
 				value: 8,
 			},
-			want: []uint8{8, 2, 255, 32, 182, 7, 0, 33},
+			want: []uint8{8, 2, 10, 6, 8, 7, 0, 9},
 		},
 		{
 			name: "Overwrite last item",
 			args: args{
-				slice: []uint8{5, 2, 255, 32, 182, 7, 0, 33},
+				slice: []uint8{5, 2, 10, 6, 8, 7, 0, 9},
 				index: 7,
 				value: 8,
 			},
-			want: []uint8{5, 2, 255, 32, 182, 7, 0, 8},
+			want: []uint8{5, 2, 10, 6, 8, 7, 0, 8},
 		},
 		{
 			name: "Index out of bounds",
 			args: args{
-				slice: []uint8{5, 2, 255, 32, 182, 7, 0, 33},
+				slice: []uint8{5, 2, 10, 6, 8, 7, 0, 9},
 				index: 8,
 				value: 8,
 			},
-			want: []uint8{5, 2, 255, 32, 182, 7, 0, 33, 8},
+			want: []uint8{5, 2, 10, 6, 8, 7, 0, 9, 8},
 		},
 		{
 			name: "Negative index",
 			args: args{
-				slice: []uint8{5, 2, 255, 32, 182, 7, 0, 33},
+				slice: []uint8{5, 2, 10, 6, 8, 7, 0, 9},
 				index: -1,
 				value: 8,
 			},
-			want: []uint8{5, 2, 255, 32, 182, 7, 0, 33, 8},
+			want: []uint8{5, 2, 10, 6, 8, 7, 0, 9, 8},
 		},
 		{
 			name: "Slice is nill",
@@ -179,12 +179,12 @@ func TestPrefilledSlice(t *testing.T) {
 			want: []int{3, 3, 3, 3, 3, 3, 3},
 		},
 		{
-			name: "Create a prefilled slice with value 77",
+			name: "Create a prefilled slice with value 10",
 			args: args{
-				value:  77,
+				value:  10,
 				length: 2,
 			},
-			want: []int{77, 77},
+			want: []int{10, 10},
 		},
 		{
 			name: "Length zero",
