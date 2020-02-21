@@ -26,6 +26,7 @@ languages
                 |   ├── hints.md
                 |   └── after.md (optional)
                 ├── .meta
+                |   |── config.json
                 |   └── design.md
                 ├── .eslintrc
                 ├── .gitignore
@@ -124,6 +125,10 @@ Some exercises could benefit from having an custom representation as generated b
 ## Step 10: add `.meta/design.md`
 
 This file contains information on the exercise's design, which includes things like its goal, its teaching goals, what not to teach, and more. This information can be extracted from the exercise's corresponding GitHub issue.
+
+## Step 11: add .meta/config.json:
+
+This file contains meta information on the exercise, which currently only includes the exercise's contributors.
 
 ## Inspiration
 

@@ -83,6 +83,12 @@ It exists in order to inform future maintainers or contributors about the scope 
 
 See the C# floating-point-numbers exercise's [design.md file][csharp-docs-design.md] for an example.
 
+### `.meta/config.json`
+
+This file contains meta information on the exercise, which currently only includes the exercise's contributors.
+
+See the C# floating-point-numbers exercise's [config.json file][csharp-docs-config.json] for an example.
+
 ## Track Structure
 
 ### `exercises/shared/.docs/cli.md`
@@ -103,3 +109,5 @@ See the C# track's [debug.md file][csharp-docs-debug.md] for an example.
 [csharp-docs-hints.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/hints.md
 [csharp-docs-introduction.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
 [csharp-docs-instructions.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/instructions.md
+[csharp-docs-design.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.meta/design.md
+[csharp-docs-config.json]: ../languages/csharp/exercises/concept/numbers-floating-point/.meta/config.json
