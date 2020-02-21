@@ -51,7 +51,7 @@ An exercise has the following files. In the browser they will show at the releva
 
 ### `.docs/introduction.md`
 
-This file provides an introduction to the concept. It should be explicit about what the exercise teaches and maybe provide a brief introduction to the concepts, but not give away so much that the user doesn't have to do any work to solve the exercise.
+This file provides an introduction to the concept. It should be explicit about what the exercise teaches and provide a short, concise introduction to the concept(s). The aim is to give the user the just enough context to figure things out themselves and solve the exercise. We've found that this is the optimal learning experience. As an example, only providing the user with a keyword is preferred over including any code samples or an extensive description.
 
 See the C# floating-point-numbers exercise's [introduction.md file][csharp-docs-introduction.md] for an example.
 
