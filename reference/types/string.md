@@ -30,6 +30,7 @@ This exercise extracts information from log lines. The reference implementation 
 | ----- | -------------------------------- | ------- |
 | C#    | [strings][implementation-csharp] | None    |
 | Ruby  | [strings][implementation-ruby]   | None    |
+| Python| [strings][implementation-python] | None    |
 
 [type-char]: ./char.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/strings/.docs/introduction.md
