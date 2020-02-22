@@ -1,3 +1,19 @@
 # After
 
-- [list - clojure.core | ClojureDocs - Community-Powered Clojure Documentation and Examples](https://clojuredocs.org/clojure.core/list)
+## Key Learnings
+
+- Lists are collections
+- Lists can be created using `quote` or `list`
+- Clojure wil try to evaluate lists, treating the first item as a function
+- Core Functions
+  - `cons` returns a list with the new item added to beginning
+  - `first` returns the first item from a list
+  - `rest` returns the list without the first item
+  - `empty?` returns true when the list is empty
+  - `count` returns the number of items in the list
+
+## Additional Resources
+
+- [list - clojure.core | ClojureDocs](https://clojuredocs.org/clojure.core/list)
+- [Data Structures](https://clojure.org/reference/data_structures)
+- [Lists in Clojurescript](https://cljs.github.io/api/syntax/list)
