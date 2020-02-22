@@ -20,6 +20,7 @@ To contribute, check the list below to see which documents have already been wri
 
 ## References
 
+- [Actor model](./actor_model.md)
 - [Anonymous functions](./anonymous_functions.md)
 - [Arithmetic](./arithmetic.md)
 - [ASCII](./ascii.md)
@@ -37,6 +38,7 @@ To contribute, check the list below to see which documents have already been wri
 - [Destructuring](./destructuring.md)
 - [Destructuring assignment](./destructuring_assignment.md)
 - [Duck typing](./duck_typing.md)
+- [Eager evaluation](./eager_evaluation.md)
 - [Encapsulation](./encapsulation.md)
 - [Enumeration](./enumeration.md)
 - [Evaluation](./evaluation.md)
@@ -50,6 +52,7 @@ To contribute, check the list below to see which documents have already been wri
 - [Immutability](./immutability.md)
 - [Inheritance](./inheritance.md)
 - [Interfaces](./interfaces.md)
+- [Lazy Evaluation](./lazy_evaluation.md)
 - [List comprehension](./list_comprehension.md)
 - [Locking](./locking.md)
 - [Loops](./loops.md)
