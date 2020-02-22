@@ -2,52 +2,39 @@
 
 In this exercise you'll be writing code to process a list of programming languages you are planning to practice from Exercism platform.
 
-- Create
-- Add
-- Remove
-- Query
-- Count
-- Sort
-
-You have 7 tasks.
+You have five tasks.
 
 ### 1. Create an empty list
 
-Define function to return an empty list.
+Before you can add lanuguages, you'll need to start by creating an empty list. Define a function that returns an empty list.
 
-### 2. Add a new item to the list
+### 2. Add a new lanuguage to the list
+ 
+ As you explore Exercism and find lanuages you want to learn, you'll need to be able to add them to your list. Define a function to add new language the the beginning of your list.
 
-Define function to add new item to the list.
+### 3. Remove the first language from the list
 
-### 3. Remove an item from the list
+Sometimes you'll change your mind about a language you just added. Define a function to remove the first language from your list.
 
-Define function to remove an item from the list
+### 4. Count the languages in the list
 
-### 4. Query an item from the list
+Counting the lanugages one-by-one is inconvenient. Define function to count the number of languages on your list.
 
-Define function to query an item from the list
+### 5. Put it all together
 
-### 5. Count the list
-
-Define function to count the list
-
-### 6. Sort a list
-
-Define function to sort a list
-
-### 7. Use the above functions (Optional)
-
-Define a `learning-list` function, within which you will use the functions you've defined above:
+Define a `learning-list` function, within which you will use the functions you've defined above.
 
 - Create an empty list
-- Add 4 new programming languages to the list
+- Add 2 new programming languages to the list.
 
   - "Clojure"
   - "Lisp"
+
+- Remove "Lisp" from the list, as you might not have enough time for the year, and it's quite similar to Clojure.
+- Add 3 more programming languages to the list.
+
   - "Java"
   - "JavaScript"
-  
-- Remove "Lisp" from the list, as you might not have enough time for the year, and it's quite similar to Clojure.
-- Check that "Lisp" is removed from the list
-- Count the total number of languages
-- Sort the languages list in ascending order
+  - "Python"
+
+- Return the total number of languages. Hint: it should be 4.
