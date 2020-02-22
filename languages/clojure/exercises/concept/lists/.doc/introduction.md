@@ -1,8 +1,8 @@
 # Introduction
 
-In Clojure, Lists are [collections][type-collection], just as like [lists in other languages][type-list]. Like other languages in the Lisp family, Clojure uses parentheses to express lists.
+In Clojure, Lists are [collections][type-collection], just as like [lists in other languages][type-list]. Similar to other languages in the Lisp family, Clojure uses parentheses to express lists.
 
-Clojure lists can be created in one of two ways. The `list` function can create a list when supplied aruments, or you can `quote` a literal list. 
+Clojure lists can be created in one of two ways. The `list` function can create a list, or you can `quote` a literal list. 
 
 ``` clojure
 (list 1 3 5 8)

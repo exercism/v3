@@ -10,11 +10,11 @@ Before you can add lanuguages, you'll need to start by creating an empty list. D
 
 ### 2. Add a new lanuguage to the list
  
- As you explore Exercism and find lanuages you want to learn, you'll need to be able to add them to your list. Define a function to add new language the the beginning of your list.
+ As you explore Exercism and find lanuages you want to learn, you'll need to be able to add them to your list. Define a function to add a new language the the beginning of your list.
  
 ### 3. Check the lanugage last added
 
-You'll want to quickly check which language you just added since that'll be the first one you practice. Define a function that returns the first language from your list.
+You'll want to quickly check which language you just added. Define a function that returns the first language from your list.
 
 ### 4. Remove the first language from the list
 
@@ -26,7 +26,7 @@ Counting the lanugages one-by-one is inconvenient. Define function to count the 
 
 ### 6. Put it all together
 
-Define a `learning-list` function, within which you will use the functions you've defined above.
+Define a `learning-list` function, within which you will use the some of the functions you've defined above.
 
 - Create an empty list
 - Add 2 new programming languages to the list.
@@ -35,7 +35,7 @@ Define a `learning-list` function, within which you will use the functions you'v
   - "Lisp"
 
 - Remove "Lisp" from the list, as you might not have enough time for the year, and it's quite similar to Clojure.
-- Add 3 more programming languages to the list.
+- Add 2 more programming languages to the list.
 
   - "Java"
   - "JavaScript"
