@@ -12,7 +12,6 @@ The goal of this exercise is to teach the student the idea of the Concept of Lis
   - `cons`
   - `first`
   - `rest`
-  - `empty?`
   - `count`
 
 ## Out of scope

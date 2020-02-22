@@ -1,25 +1,34 @@
 (ns lists)
 
-(defn empty-list [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn new-list
+  "Creates an empty list of languages to practice."
+  []
+  )
 
-(defn add-item [item coll];; <- arglist goes here
-  ;; your code goes here
-)
+(defn add-language
+  "Adds a language to the list."
+  [lang lang-list]
+  )
 
-(defn remove-item [];; <- arglist goes here
-  ;; your code goes here
-)
+(defn first-lanugage
+  "Returns the first language on the list."
+  [lang-list]
+  )
 
-(defn query-item [];; <- arglist goes here
-  ;; your code goes here
-)
+(defn remove-language
+  "Removes the the last lanugage added to the list."
+  [lang-list]
+  )
 
-(defn count-list [];; <- arglist goes here
-  ;; your code goes here
-)
+(defn count-languages
+  "Returns the total number of lanugages on the list."
+  [lang-list]
+  )
 
-(defn sort-list [];; <- arglist goes here
-  ;; your code goes here
-)
+(defn learning-list
+  "Creates and empty list, adds Clojure and Lisp, removes Lisp, adds
+  Java and Javascript, then finally return a count of the total number
+  of languages."
+  [lang-list]
+  )
+

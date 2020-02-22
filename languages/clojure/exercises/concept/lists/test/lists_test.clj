@@ -3,30 +3,25 @@
             lists))
 
 (deftest list-empty-test
-  (is (= '() (lists/empty-list)))
-)
+  (is (= '() (lists/new-list))))
 
 (deftest list-add-test
-    (is (= '("JavaScript" "Java" "Lisp" "Clojure") 
-            (lists/add-item "JavaScript" 
-              (lists/add-item "Java"
-                (lists/add-item "Lisp" 
-                  (lists/add-item "Clojure" '())
-                )
-              )
-            )
-        )
-    )
-)
+  (is (= '("JavaScript" "Java" "Lisp" "Clojure")
+         (->> (lists/new-list)
+              (lists/add-language "Clojure")
+              (lists/add-language "Lisp")
+              (lists/add-language "Java")
+              (lists/add-language "JavaScript")))))
+
+(deftest first-test
+  (is (= "Lisp" (lists/first-language '("Lisp" "Clojure")))))
 
 (deftest list-remove-test
-  (is (= '("JavaScript" "Java" "Clojure") (lists/remove-item "Lisp" '("JavaScript" "Java" "Lisp" "Clojure")))))
-
-(deftest list-query-test
-  (is (= nil (lists/query-item "Lisp" '("JavaScript" "Java" "Clojure")))))
+  (is (= '("Clojure") (lists/remove-language '("Lisp" "Clojure")))))
 
 (deftest list-count-test
-  (is (= 3 (lists/count-list '("JavaScript" "Java" "Clojure")))))
+  (is (= 3 (lists/count-languages '("JavaScript" "Java" "Clojure")))))
 
-(deftest list-sort-test
-  (is (= '("Clojure" "Java" "JavaScript") (lists/sort-list '("JavaScript" "Java" "Clojure")))))
+(deftest list-count-test
+  (is (= 3 (lists/learning-list))))
+

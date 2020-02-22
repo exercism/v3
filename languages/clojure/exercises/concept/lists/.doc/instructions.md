@@ -2,7 +2,7 @@
 
 In this exercise you'll be writing code to process a list of programming languages you are planning to practice from Exercism platform.
 
-You have five tasks.
+You have six tasks.
 
 ### 1. Create an empty list
 
@@ -11,16 +11,20 @@ Before you can add lanuguages, you'll need to start by creating an empty list. D
 ### 2. Add a new lanuguage to the list
  
  As you explore Exercism and find lanuages you want to learn, you'll need to be able to add them to your list. Define a function to add new language the the beginning of your list.
+ 
+### 3. Check the lanugage last added
 
-### 3. Remove the first language from the list
+You'll want to quickly check which language you just added since that'll be the first one you practice. Define a function that returns the first language from your list.
+
+### 4. Remove the first language from the list
 
 Sometimes you'll change your mind about a language you just added. Define a function to remove the first language from your list.
 
-### 4. Count the languages in the list
+### 5. Count the languages in the list
 
 Counting the lanugages one-by-one is inconvenient. Define function to count the number of languages on your list.
 
-### 5. Put it all together
+### 6. Put it all together
 
 Define a `learning-list` function, within which you will use the functions you've defined above.
 
@@ -35,6 +39,5 @@ Define a `learning-list` function, within which you will use the functions you'v
 
   - "Java"
   - "JavaScript"
-  - "Python"
 
-- Return the total number of languages. Hint: it should be 4.
+- Return the total number of languages. Hint: it should be 3.

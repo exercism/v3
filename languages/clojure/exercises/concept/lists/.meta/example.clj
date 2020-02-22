@@ -1,52 +1,29 @@
 (ns lists)
 
-(defn empty-list []
-  '()
-)
+(defn new-list []
+  '())
 
-(defn add-item [item coll]
-  (cons item coll)
-)
+(defn add-language
+  [lang lang-list]
+  (cons lang lang-list))
 
-(defn remove-item [item coll]
-  (remove #(= item %) coll)
-)
+(defn first-lanugage
+  [lang-list]
+  (first lang-list))
 
-(defn query-item [item coll]
-  (some #(= item %) coll)
-)
+(defn remove-language
+  [lang-list]
+  (rest lang-list))
 
-(defn count-list [coll]
-  (count coll)
-)
-
-(defn sort-list [coll]
-  (sort coll)
-)
+(defn count-languages
+  [lang-list]
+  (count lang-list))
 
 (defn learning-list []
-  (let [langs (lists/add-item "JavaScript" 
-                  (lists/add-item "Java"
-                    (lists/add-item "Lisp" 
-                      (lists/add-item "Clojure" (empty-list))
-                    )
-                  )
-            )
-        ]
-      (println langs)
-    (let [langs-new (remove-item "Lisp" langs)]
-      (println langs-new)
-      (let [langs-queried (query-item "Lisp" langs-new)]
-        (println langs-queried)
-      )
-      (let [total (count-list langs-new)]
-        (println total)
-      )
-      (let [langs-sorted (sort-list langs-new)]
-        (println langs-sorted)
-      )
-    )
-  )
-)
-
-(learning-list)
+  (->> (empty-list)
+       (add-language "Clojure")
+       (add-language "Lisp")
+       remove-language
+       (add-language "Java")
+       (add-language "Javascript")
+       count-languages))
