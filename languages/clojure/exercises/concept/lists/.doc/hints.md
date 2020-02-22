@@ -1,22 +1,28 @@
 # Hints
 
-### 4. Query an item from the list
+### 1. Create an empty list
+Creating an empty list is just like creating a list with items. It can be done using `list` or using `quote`on an empty list.
 
-At first sight, you might think of using `contains` as you do in other languages. 
+### 2. Add a new lanuguage to the list
+ 
+Check out [`cons`](https://clojuredocs.org/clojure.core/cons).
+ 
+### 3. Check the lanugage last added
 
-However if you do that, you will get `IllegalArgumentException` errors in Clojure:
+Check out [`first`](https://clojuredocs.org/clojure.core/first).
 
-```
-=> (contains? '(1 2 3) 1)   
-;; IllegalArgumentException (Clojure >=1.5)
-```
+### 4. Remove the first language from the list
 
-This is because, although lists in Clojure are sequences, they are not **keyed** sequences, while `[contains?](https://clojuredocs.org/clojure.core/contains_q) requires keyed sequences to work on.
+Check out [`rest`](https://clojuredocs.org/clojure.core/rest).
 
-> `contains?` Returns true if key is present in the given collection, otherwise returns false.`
+### 5. Count the languages in the list
 
-Instead, you can use [some](https://clojuredocs.org/clojure.core/some)
+Check out [`count`](https://clojuredocs.org/clojure.core/count).
 
-```
-> (some  #(=  5  %)  \[1  2  3  4  5\])  ;;=\> true
+### 6. Put it all together
+
+Remember that function calls can be nested.
+
+``` clojure
+(add-language "Clojure" (new-list))
 ```
