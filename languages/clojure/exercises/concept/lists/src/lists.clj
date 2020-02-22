@@ -1,4 +1,4 @@
-(ns list)
+(ns lists)
 
 (defn empty-list [] ;; <- arglist goes here
   ;; your code goes here

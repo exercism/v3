@@ -1,4 +1,4 @@
-(ns list)
+(ns lists)
 
 (defn empty-list []
   '()
@@ -25,10 +25,10 @@
 )
 
 (defn learning-list []
-  (let [langs (list/add-item "JavaScript" 
-                  (list/add-item "Java"
-                    (list/add-item "Lisp" 
-                      (list/add-item "Clojure" (empty-list))
+  (let [langs (lists/add-item "JavaScript" 
+                  (lists/add-item "Java"
+                    (lists/add-item "Lisp" 
+                      (lists/add-item "Clojure" (empty-list))
                     )
                   )
             )
