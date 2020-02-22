@@ -2,17 +2,22 @@
 
 ## Goal
 
-The goal of this exercise is to teach the student the idea of the Concept of `list` in [Clojure](https://clojure.org/reference/data_structures#Lists).
+The goal of this exercise is to teach the student the idea of the Concept of Lists in [Clojure](https://clojure.org/reference/data_structures#Lists).
 
 ## Learning objectives
 
 - Know of the existence of the `list` type.
-- Know the difference between quoting and evaluation.
-- basic functions of `list` like creating a list or adding or counting items to a list.
+- Understand the difference between quoting and evaluation.
+- Use basic functions related to Lists.
+  - `cons`
+  - `first`
+  - `rest`
+  - `empty?`
+  - `count`
 
 ## Out of scope
 
-- More basic functions like querying/removing items or /sorting list etc.
+- Other basic functions like querying/removing items or /sorting list etc.
 - Operate between lists like adding another list to a list.
 - Iterate a list of items.
 - Memory and performance characteristics.
@@ -26,7 +31,7 @@ The Concepts this exercise unlocks are:
   - know of the idea of `list` design; 
   - know some basic functions (like creating list, adding items, or count a list);
 
-## Prequisites
+## Prerequisites
 
 There are no prerequisites.
 
@@ -38,5 +43,5 @@ This exercise does not require any specific representation logic to be added to 
 
 This exercise does not require any specific logic to be added to the [analyzer][analyzer].
 
-[analyzer]: https://github.com/exercism/csharp-analyzer
-[representer]: https://github.com/exercism/csharp-representer
+[analyzer]: https://github.com/exercism/clojure-analyzer
+[representer]: https://github.com/exercism/clojure-representer
