@@ -42,7 +42,8 @@
         "prerequisites": [
           "numbers-basic",
           "numbers-floating-point",
-          "type-conversion-numbers"
+          "type-conversion-numbers",
+          "exceptions"
         ]
       },
       {

@@ -27,6 +27,7 @@ This exercise's prerequisites Concepts are:
 
 - `numbers-basic`: define numbers and apply arithmetic and logic to them.
 - `type-conversion-numbers`: convert from a floating-point type to an integral number.
+- `exceptions`: catch a specific exception and handle it.
 
 ## Representer
 
