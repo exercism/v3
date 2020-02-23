@@ -2,7 +2,7 @@
 
 ## Goal
 
-The goal of this exercise is to teach the student the idea of the Concept of Lists in [Clojure](https://clojure.org/reference/data_structures#Lists).
+The goal of this exercise is to introduce the student to [Lists in Clojure](https://clojure.org/reference/data_structures#Lists).
 
 ## Learning objectives
 
