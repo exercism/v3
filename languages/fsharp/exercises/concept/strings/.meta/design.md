@@ -19,7 +19,7 @@ The goal of this exercise is to teach the student the basics of the Concept of S
 - String slicing.
 - Triple-quoted strings.
 - Double-backtick strings.
-- Advanced string formatting (combining types e.g.).
+- Advanced string formatting (combining types or using `StringBuilder`).
 - Using standard or custom format strings.
 - Type inference.
 - Memory and performance characteristics.
