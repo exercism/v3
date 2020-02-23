@@ -1,7 +1,7 @@
 # Hints
 
 ### 1. Create an empty list
-Creating an empty list is just like creating a list with items. It can be done using `list` or using `quote`on an empty list.
+Creating an empty list is just like creating a list with items. It can be done using `list` or using `quote` on an empty list.
 
 ### 2. Add a new lanuguage to the list
  
