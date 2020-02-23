@@ -1,6 +1,6 @@
 using Xunit;
 
-public class AssemblyLineTest
+public class LightDistanceTest
 {
     [Fact]
     public void LightSecondsFromEarthToSun() =>
