@@ -81,4 +81,4 @@ concept. Also give the concepts nice names. I think we are using `.` for
 sub-concepts. So things like `format.numbers` or maybe
 `string-formatting.numbers`.
 
-[csharp-example]: ../../languages/csharp/reference/README.md
+[csharp-example]: ../../csharp/reference/README.md
