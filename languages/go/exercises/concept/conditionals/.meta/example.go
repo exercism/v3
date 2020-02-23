@@ -30,52 +30,31 @@ func ParseCard(card string) int {
 
 // Blackjack returns true if the player has a blackjack, false otherwise.
 func Blackjack(card1, card2 string) bool {
-	if ParseCard(card1)+ParseCard(card2) == 21 {
-		return true
-	}
-	return false
-}
-
-// Pair returns true if the player has a pair of cards, false otherwise.
-func Pair(card1, card2 string) bool {
-	if card1 == card2 {
-		return true
-	}
-	return false
+	return ParseCard(card1)+ParseCard(card2) == 21
 }
 
 // FirstTurn returns the "optimal" decision for the first turn, given the cards of the player and the dealer.
 func FirstTurn(card1, card2, dealerCard string) string {
 	handScore := ParseCard(card1) + ParseCard(card2)
-	if Pair(card1, card2) && handScore != 20 {
+	// Single if statement
+	if handScore == 22 {
 		return "P"
 	}
 	dealerScore := ParseCard(dealerCard)
+	// Nested if statement (no else)
 	if Blackjack(card1, card2) {
 		if dealerScore < 10 {
 			return "W"
 		}
 		return "S"
 	}
-
+	// Switch statement
 	switch {
-	case handScore >= 17:
+	case (handScore >= 17) || (handScore >= 12 && dealerScore <= 6):
 		return "S"
-	case handScore >= 13 && dealerScore <= 6:
-		return "S"
-	case handScore >= 13 && dealerScore > 6:
+	case (handScore <= 11) || (handScore >= 12 && dealerScore > 6):
 		return "H"
-	case handScore == 12 && (dealerScore <= 3 || dealerScore > 6):
-		return "H"
-	case handScore == 12 && dealerScore > 3 && dealerScore <= 6:
-		return "S"
-	case handScore >= 10:
-		return "D"
-	case handScore == 9 && (dealerScore <= 2 || dealerScore > 6):
-		return "H"
-	case handScore == 9 && dealerScore > 2 && dealerScore <= 6:
-		return "D"
 	default:
-		return "H"
+		return ""
 	}
 }
