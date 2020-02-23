@@ -16,12 +16,12 @@
   )
 
 (defn remove-language
-  "Removes the the last lanugage added to the list."
+  "Removes the the last language added to the list."
   [lang-list]
   )
 
 (defn count-languages
-  "Returns the total number of lanugages on the list."
+  "Returns the total number of languages on the list."
   [lang-list]
   )
 
@@ -31,4 +31,3 @@
   of languages."
   [lang-list]
   )
-

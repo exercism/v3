@@ -12,7 +12,7 @@ Before you can add lanuguages, you'll need to start by creating an empty list. D
  
  As you explore Exercism and find lanuages you want to learn, you'll need to be able to add them to your list. Define a function to add a new language the the beginning of your list.
  
-### 3. Check the lanugage last added
+### 3. Check the language last added
 
 You'll want to quickly check which language you just added. Define a function that returns the first language from your list.
 
