@@ -153,9 +153,9 @@ While F# has OO features, it is a "functional first" language. It is important t
 
 The concept exercises use the following concepts:
 
-| concept | interpretation |
-| ------- | -------------- |
-
+| concept         | interpretation                                                                                                                                                                                                                                                                                 |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `strings-basic` | Know of the existence of the `string` type. Know how to create a string. Know of some basic methods (like finding the index of a character in a string, or returning a part the string). Know how to do basic string formatting. Know where it's documented, or at least how to search for it. |
 
 ## Reference docs
 
