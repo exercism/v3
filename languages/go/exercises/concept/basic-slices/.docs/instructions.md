@@ -2,7 +2,7 @@
 
 As a magician-to-be, Elyse needs to practice some basics. She has a stack of cards that she wants to do some operations on.
 
-To make things a bit easier she uses only the cards 1 to 10.
+To make things a bit easier she only uses the cards 1 to 10.
 
 ### 1. Retrieve a card from a stack
 
