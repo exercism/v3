@@ -28,9 +28,10 @@ For example:
 
 ## Prerequisites
 
-- iteration (which in turn depends on `numbers`, `functions`, `conditionals`)
-
-Not yet available: `range iteration`
+- iteration: fill a slice (Not yet available: `range iteration`)
+- numbers: integers (uint8 and int) to represent cards
+- functions: multiple return values, early return, parameters
+- conditionals: mostly to check for existing indexes
 
 ## Implementing
 
