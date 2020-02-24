@@ -21,8 +21,8 @@ document][csharp-example] as an example to base my work off of.
   - Recursion
   - Higher Order Functions
   - Anonymous Functions
-  - String Formatting
   - Boolean Logic
+  - Packages
 
 ### Format
   - Basic
