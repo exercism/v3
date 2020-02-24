@@ -4,8 +4,6 @@ The goal of this exercise is to teach the student the basics on how to work with
 
 ## Things to teach
 
-For example:
-
 - instantiate (len, cap)
 - append
 - set value
@@ -16,8 +14,6 @@ For example:
 - expanding slices (e.g. in `append(slice1, slice2...)`)
 
 ## Things not to teach
-
-For example:
 
 - inner workings of slices
 - arrays
