@@ -19,7 +19,9 @@ Exchange the card at position `index` with the new card provided and return the 
 Note that this will also change the input slice which is ok.
 
 ```go
-SetItem([]uint8{1, 2, 4, 1}, 2, 6)
+index := 2
+new_card := 6
+SetItem([]uint8{1, 2, 4, 1}, index, new_card)
 // Returns: []uint8{1, 2, 6, 1}
 ```
 
