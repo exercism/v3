@@ -44,7 +44,6 @@ Concepts that are special to Go or have key differences to a vast majority of ot
 - [Comments](../../../reference/concepts/comments.md)
 - Concurrency
 - [Conditionals](../../../reference/concepts/conditionals.md)
-- CSV Handling
 - Debugging
 - Defer
 - Errors and Error Handling
