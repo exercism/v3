@@ -15,7 +15,7 @@ The goal of this exercise is to teach the student the basics on how to work with
 
 ## Things not to teach
 
-- inner workings of slices
+- deep dive into the inner workings of slices
 - arrays
 
 ## Concepts
