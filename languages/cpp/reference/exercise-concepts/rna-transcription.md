@@ -103,7 +103,7 @@ string to_rna(string const& sequence)
 ## Alternative approaches
 
 - using `switch-case` to translate from DNA to RNA
-- using `std::map` or `std::unordered_map` for DNA to RNA mapping
+- using `std::map` for DNA to RNA mapping
 - throwing an exception in case of an invalid input
 - using `std::string_view` for input
 - using `std::string` or `std::array` to store keys (DNA) and values (RNA)
@@ -112,7 +112,6 @@ string to_rna(string const& sequence)
 ## Common mistakes
 
 - making copy of the input instead of passing as `const` reference
-- using `std::map` instead of `std::unordered_map`to translations
 - not making DNA and RNA nucleotides `const` or `constexpr`
 - submitting the `.cpp` file without the `.h` file.
 - forgetting to submit the `.h` file
@@ -128,7 +127,7 @@ string to_rna(string const& sequence)
 
 - Adding `const` for input arguments
 - Use `std::array` instead of `std::string` for the case of separate DNA and RNA sequences
-- Use `std::unordered_map` for dictionary approach to DNA -> RNA translation
+- Use `std::map` for dictionary approach to DNA -> RNA translation
 - Use `constexpr` for data known at compile time
 - Add `noexcept` to mark all functions that are not expected to throw exceptions
 - Using `std::range`' from `<ranges>`
