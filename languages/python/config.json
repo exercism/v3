@@ -12,7 +12,7 @@
       {
         "slug": "strings",
         "uuid": "",
-        "concepts": ["strings-methods"],
+        "concepts": ["strings-basic"],
         "prerequisites": ["functions"]
       }
     ],
