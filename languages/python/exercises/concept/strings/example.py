@@ -1,6 +1,6 @@
 import re
 
-LOGLINE_RE = r"\[(\w*)\] (.*)"
+LOGLINE_RE = r"\[(INFO|ERROR|WARN)\] (.*)"
 
 
 def _extract_pieces(message):
