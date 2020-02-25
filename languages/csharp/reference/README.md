@@ -65,6 +65,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - Collections: ordering
   - Collections: reducing
   - Iterators (yield)
+    - Async iterators
   - [Generics][generics]
     - Constraints
     - Covariance/Contravariance
@@ -136,6 +137,8 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - [Ranges][range]
   - [Sets][set]
   - [Stacks][stack]
+- Dates
+  - Time zones
 - Delegates
 - Enums
 - Events
@@ -149,6 +152,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Streams
 - [Strings][string]
 - Tasks
+- Time
 - [Tuples][tuple]
 
 ## Concept interpretation
