@@ -6,7 +6,7 @@
 
 ### 1. Retrieve a card from a stack
 
-- To get the `n`th item from a slice use `slice[n]`.
+- To get the `n`th item of a slice [use an index](https://blog.golang.org/go-slices-usage-and-internals).
 - To check if an item exists in a slice use a conditional and compare with `len(slice)`.
 
 Note: a slice always starts with index `0`, `1`, `2`, etc.
