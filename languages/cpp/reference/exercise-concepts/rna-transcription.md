@@ -103,7 +103,7 @@ string to_rna(string const& sequence)
 ## Alternative approaches
 
 - using `switch-case` to translate from DNA to RNA
-- using `std::map` or `std::unordered_map` for DNA to RNA mapping, possibly `boost::flat_map`
+- using `std::map` or `std::unordered_map` for DNA to RNA mapping
 - throwing an exception in case of an invalid input
 - using `std::string_view` for input
 - using `std::string` or `std::array` to store keys (DNA) and values (RNA)
@@ -128,10 +128,10 @@ string to_rna(string const& sequence)
 
 - Adding `const` for input arguments
 - Use `std::array` instead of `std::string` for the case of separate DNA and RNA sequences
-- Use `std::unordered_map` or `boost::flat_map` for explicit dictionary approach to DNA -> RNA mapping
+- Use `std::unordered_map` for dictionary approach to DNA -> RNA translation
 - Use `constexpr` for data known at compile time
 - Add `noexcept` to mark all functions that are not expected to throw exceptions
-- Using `boost::range`'s adapters or similar library
+- Using `std::range`' from `<ranges>`
 - Use range-for loop instead of for loop with an index
 - Use `std::transform` and lambda function
 - Use `std::back_inserter` for filling in the RNA sequence
