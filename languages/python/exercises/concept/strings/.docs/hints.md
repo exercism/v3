@@ -15,7 +15,7 @@
 
 ### 3. Reformat a log line
 
-Strings are immutable, but can be combined together to make new strings, or have elements replaced.
+Strings are immutable, but can be combined together to make new strings, or have elements replaced. This goal can be accomplished by using string methods, or operators like `+` or `+=` (which are overloaded to work with strings).
 Python also has a concept of string formatting, like many other languages.
 
  - https://docs.python.org/3/library/stdtypes.html#str.join
