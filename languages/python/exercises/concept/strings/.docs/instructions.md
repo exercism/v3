@@ -17,14 +17,14 @@ You have three tasks, each of which will take a log line and ask you to do somet
 Implement a method to return a log line's message:
 
 ```python
-loglines.extract_message("[ERROR]: Invalid operation")
+extract_message("[ERROR]: Invalid operation")
 // Returns: "Invalid operation"
 ```
 
 The message should be trimmed of any whitespace.
 
 ```python
-loglines.extract_message("[ERROR]: Invalid operation.\t\n")
+extract_message("[ERROR]: Invalid operation.\t\n")
 // Returns: "Invalid operation."
 
 ### 2. Change a message's loglevel.
@@ -32,7 +32,7 @@ loglines.extract_message("[ERROR]: Invalid operation.\t\n")
 Implement a method that replaces a log line's current log level with a new one:
 
 ```python
-loglines.change_log_level("[INFO]: Fatal Error.", "ERROR")
+change_log_level("[INFO]: Fatal Error.", "ERROR")
 /// Returns: "[ERROR]: Fatal Error."
 ```
 
@@ -41,6 +41,6 @@ loglines.change_log_level("[INFO]: Fatal Error.", "ERROR")
 Implement a method that reformats the log line, putting the message first and the log level after it in parentheses:
 
 ```python
-loglines.reformat("[INFO]: Operation completed")
+reformat("[INFO]: Operation completed")
 // Returns: "Operation completed (info)"
 ```
