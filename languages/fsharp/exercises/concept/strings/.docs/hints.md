@@ -1,5 +1,3 @@
-# Hints
-
 ### General
 
 - The `string` class has many useful [built-in methods][methods].
