@@ -76,11 +76,16 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 ### [Dictionary][dictionary]
 
+- Mapping type. The example solution employes a dictionary to return values from the `parse_line()` function.
 - mapping type that has key-value pairs. Returned by `str.maketrans` in the example code. Also one of the argument types accepted by `str.maketrans()`.
 - the example uses a dictionary to map passed in move arguments to methods that perform the moves. The example also uses a dictionary/mapping created by calling `str.maketrans()`.
 
 ### [Method Arguments][method-arguments]
 
+- Parameters passed into a function. In python, these are noted in the `()` following a function name. The example code uses a function named `to_rna()` with an argument of `dna_strand`.
+- The example solutions use functions that take function arguments to operate on passed in markdown strings.
+- the exercise requires a single positional parameter in the function signature
+- concept over arguments of a function and how to use them is required
 - the methods returning "row" and "column" need to take both `self` and an integer as arguments
 
 ### [Booleans][booleans]
@@ -91,10 +96,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 ### [Bracket Notation][bracket-notation]
 
 - knowing that `[]` should be used to refer to a value at a specific index in a list
-
-### [Function Arguments][function-arguments]
-
-- Parameters passed into a function. In python, these are noted in the `()` following a function name. The example code uses a function named `to_rna()` with an argument of `dna_strand`.
 
 ### [String formatting][string-formatting]
 
@@ -108,6 +109,7 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 ### [For Loop][for-loop]
 
+- the `for ... in` concept is useful to loop over the lists
 - The example solution uses `for` loops to iterate over various function inputs.
 - iterating over the passed in `matrix` string using a `for` loop to extract "rows" and "columns" that are appended to a list
 
@@ -189,6 +191,7 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 ### [Comprehension Syntax][comprehension-syntax]
 
 - knowing that this is equivalent to a `for loop` - putting the row or column creation code _inside_ the list literal instead of using loop + append.
+- the use of list comprehension concept can be useful in this exercise
 
 ### [Instance Properties][instance-properties]
 
@@ -199,16 +202,21 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 - this exercise relies on bitwise AND (`&`) and potentially bitwise LSHIFT (`<<`) to inspect the Boolean value of individual bits in a bitflag
 - bitwise operators such as `<<`, `>>`, `&`, `|`, `~`, `^` are central to this exercise
 
-### [List Comprehensions][list-comprehensions]
+### [Conditionals structures][conditionals]
 
-- the use of list comprehension can be useful in this exercise
-
-### [Conditional structures][conditional-structures]
-
-- knowledge of conditional conceptis and `if...else` statements are required
+- The example solution uses `if` to check for pattern matching and membership conditions in different functions for processing different markdown patterns.
+- `if ... else` and `elif` allow a programmer to switch code branches depending on some condition
 
 ### [Return Values][return-value]
 
+- the knowledge of `return` statement could be a useful concept in this exercise
+- the function must return a number (int)
+- Most of the functions in the example solution specify a _return_ value using the `return` keyword.
+- the exercise must use a `return` statement to return a value to the caller
+- this function return a string by this line: `return text[::-1]`
+- the `return` keyword is used in a _return statement_ at the end of a function. Exits a function and may or may not pass data or an expression back to calling code. Functions in python without an expicit `return` keyword and statment will return (pass back) the singleton object `none`. The example code _returns_ a copy of the passed-in argument (assumed to be a string) that has been mapped through `str.translate()`, using the table made from `str.maketrans()`
+- knowing that functions need not have _explicit_ return statements or values but will return `None` if `return` is not specified. Except for the two `@property`-decorated functions, all of the functions in the example omit an explicit `return` statment and all return `None`.
+- the knowledge of `return` statement could be a useful concept in this exercise
 - "row" and "column" list values are expected from defined instance method(s)
 
 ### [Bitflags][bitflags]
@@ -286,10 +294,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 - the use of methods of list could be useful in this exercise. Methods like `append`, `pop`...
 
-### [Comparision][comparision]
-
-- the exercise relies on the `==` and `!=` operators to make binary comparisons between values
-
 ### [Short-Circuiting][short-circuiting]
 
 - the exercise relies on short-circuiting to avoid unnecessary calculations
@@ -305,12 +309,7 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 ### [Comparison][comparison]
 
 - concept required to solve the exercise, `==`, `>`, `<`
-
-### [Conditionals][conditionals]
-
-- The example solution uses `if` to check for pattern matching and membership conditions in different functions for processing different markdown patterns.
-- `if ... else` and `elif` allow a programmer to switch code branches depending on some condition
-- knowledge of `if...else` statements is required
+- the exercise relies on the `==` and `!=` operators to make binary comparisons between values
 
 ### [Integer comparison][integer-comparison]
 
@@ -349,23 +348,23 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 - the example converts the parsed `str` elements into `int`
 
-### [Regular Expressions][regular-expression]
-
-- the `re.sub()` function of the `re` module that replaces a `regular expression` match with a new value. The example solutions use this function in various places to substitute _markdown_ syntax for _HTML_ syntax in the passed in markdown text.
-
 ### [Regular Expressions][regular-expressions]
 
+- the `re.sub()` function of the `re` module that replaces a `regular expression` match with a new value. The example solutions use this function in various places to substitute _markdown_ syntax for _HTML_ syntax in the passed in markdown text.
 - Both the original code to be refactored for this exercise and the example solution import and use the `re` module for Regular Expressions in python.
 - the `re.match()` function from the `re` module returns a `match` object with any matched values from a specified Regular Expression or pre-compliled Regular Expression. The example uses `re.match()` in multiple places to search for text patterns that need re-formatting or subsitituting.
 - Various functions in the re module return a `re.Match` _instance_ which in turn has a `Match.group` method. `Match.group` exists even if there are no groups specified in the pattern. See the [Match.group docs](https://docs.python.org/3/library/re.html#re.Match.group) for more detail.
 - regular expressions is a language of sorts that can detect substrings and extract groups from a string, as well as replace them with something else
+- A Domain Specific Language (DSL) for text processing. Like many other programming languages in use, python supports a quasi-dialect of PCRE (_Perl compatible regular expressions_). `Regular expressions` can be used via the core python `re` module, or the third-party `regex` module. Both the original code to be refactored for this exercise and the example solutions use the core `re` module to access `regular expressions` functionality.
 
 ### [Generator comprehension][generator-comprehension]
 
 - a generator comprehension is passed to `sum()` to drive summation without storing all the values in a list first
 
-### [Imports][imports]
+### [Importing][importing]
 
+- to use the module, the `import` syntax can be used
+- Both the original code to be refactored for the exercise and the example solution use the `import` keyword to import the `re` module in support of Regular Expressions in python.
 - a reasonably readable solution will require importing from the standard library
 
 ### [Function signature][function-signature]
@@ -390,10 +389,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 - How to overload the `+` and `-` operators using the `__add__` and `__sub__` special methods.
 
-### [Regular expressions][regular-expressions]
-
-- A Domain Specific Language (DSL) for text processing. Like many other programming languages in use, python supports a quasi-dialect of PCRE (_Perl compatible regular expressions_). `Regular expressions` can be used via the core python `re` module, or the third-party `regex` module. Both the original code to be refactored for this exercise and the example solutions use the core `re` module to access `regular expressions` functionality.
-
 ### [Multiple Assignment][multiple-assignment]
 
 - Python allows multiple assignment, assigning the items on the left of `=` _in order_ to the values on the right of `=` by forming tuples and then "unpacking" them. This exercise solution uses multiple assignment for the constant values NORTH, EAST, SOUTH, WEST.
@@ -411,15 +406,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 - The `__eq__` method is overloaded
 
-### [Importing][importing]
-
-- Both the original code to be refactored for the exercise and the example solution use the `import` keyword to import the `re` module in support of Regular Expressions in python.
-
-### [Iterables][iterables]
-
-- understanding that strings, lists, and other data structures can be iterated over in the same fashion
-- characters in a string are *iterables* and are subject to index and slice access as described below
-
 ### [Inequality][inequality]
 
 - this solution checks if `a` is not equal to `b`.
@@ -428,10 +414,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 - strings (and other types) have built in instance methods - in this case, `"string".startswith("s")` which are called from the instance of the string itself
 - this exercise uses `str.maketrans()` (a static method of `str` that returns a dictionary to create a _translation table_ as required by the `str.translate()` instance method. This method is unusual in that it takes either a single dictionary or two strings of equal length. The example solution for this exercise uses `str.maketrans()` with a two-string argument.
-
-### [return value][return-value]
-
-- the knowledge of `return` statement could be a useful concept in this exercise
 
 ### [Loops][loops]
 
@@ -460,12 +442,10 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 ### [Iteration][iterable]
 
+- strings are iterable, which provides a lot of opportunity to leverage Python functions against them
+- understanding that strings, lists, and other data structures can be iterated over in the same fashion
+- characters in a string are *iterables* and are subject to index and slice access as described below
 - The example solution uses the `for _ in _` syntax to iterate over a list of lines. This is possible because a list is an `iterable`.
-
-### [Parameters][parameters]
-
-- the exercise requires a single positional parameter in the function signature
-- concept over arguments of a function and how to use them is required
 
 ### [Raise][raise]
 
@@ -513,18 +493,9 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 - The example solution uses `str.split()` to break the passed in markdown string into a list of lines broken up by the `\n` character. The alternate Python example solution uses `str.splitlines()` for the same effect across all line end characters.
 - the example uses `str.split` with and without seperators to break the passed in string into "rows" and then "elements"
 
-### [Return value][return-value]
-
-- the function must return a number (int)
-- Most of the functions in the example solution specify a _return_ value using the `return` keyword.
-
 ### [Default Arguments][default-arguments]
 
 - pre-setting function arguments to protect against them not being passed by a caller. The example uses `direction = NORTH` and `x=0, y=0` to ensure those values for a `robot` even if they are not initally passed.
-
-### [Iterable][iterable]
-
-- strings are iterable, which provides a lot of opportunity to leverage Python functions against them
 
 ### [Method Parameters][method-parameters]
 
@@ -537,10 +508,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 ### [Initialization][initialization]
 
 - customizing object instatiation with actions and persisting data. The example uses `__init__` to persist a `compass` object and x, y coordinates assigned to instance attributes.
-
-### [Import][import]
-
-- to use the module, the `import` syntax can be used
 
 ### [Range][range]
 
@@ -559,17 +526,9 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 - a function that takes one or more other functions as arguments, _returning_ a function as its return value. The example uses the built-in `property()` as a higher-order function through `@property`.
 
-### [Dictionaries][dictionaries]
-
-- Mapping type. The example solution employes a dictionary to return values from the `parse_line()` function.
-
 ### [Generics][generics]
 
 - the exercise is polymorphic across numerical types (ie int, float, Decimal)
-
-### [Function arguments][function-arguments]
-
-- The example solutions use functions that take function arguments to operate on passed in markdown strings.
 
 ### [Slicing][slicing]
 
@@ -599,17 +558,9 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 - the user can use a custom error message inside the mentioned `ValueError`
 
-### [arguments][arguments]
-
-- concept over arguments of a function and how to use them is required
-
 ### [Operator Precedence][operator-precedence]
 
 - the exercise is most simply stated when the student understands the operator precedence binding rules of Python
-
-### [for][for]
-
-- the `for ... in` concept is useful to loop over the lists
 
 ### [Instance Attributes][instance-attributes]
 
@@ -637,14 +588,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 ### [Call Semantics][call-semantics]
 
 - knowing that appending `()` to the name of an instance method _calls_ it, since instance methods are _callable_.
-
-### [Return Value][return-value]
-
-- the exercise must use a `return` statement to return a value to the caller
-- this function return a string by this line: `return text[::-1]`
-- the `return` keyword is used in a _return statement_ at the end of a function. Exits a function and may or may not pass data or an expression back to calling code. Functions in python without an expicit `return` keyword and statment will return (pass back) the singleton object `none`. The example code _returns_ a copy of the passed-in argument (assumed to be a string) that has been mapped through `str.translate()`, using the table made from `str.maketrans()`
-- knowing that functions need not have _explicit_ return statements or values but will return `None` if `return` is not specified. Except for the two `@property`-decorated functions, all of the functions in the example omit an explicit `return` statment and all return `None`.
-- the knowledge of `return` statement could be a useful concept in this exercise
 
 ### [Exception catching][exception-catching]
 
