@@ -8,7 +8,7 @@ The following student-facing docs have been written:
 
 - [Assemblies][assemblies]
 
-The following student-facing docs should be written:
+The following student-facing documents should be written:
 
 - Naming conventions
 - Code style
