@@ -65,6 +65,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - Collections: ordering
   - Collections: reducing
   - Iterators (yield)
+    - Async iterators
   - [Generics][generics]
     - Constraints
     - Covariance/Contravariance
@@ -136,6 +137,8 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - [Ranges][range]
   - [Sets][set]
   - [Stacks][stack]
+- Dates
+  - Time zones
 - Delegates
 - Enums
 - Events
@@ -149,56 +152,40 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Streams
 - [Strings][string]
 - Tasks
+- Time
 - [Tuples][tuple]
 
 ## Concept interpretation
 
 The concept exercises use the following concepts:
 
-| concept                   | interpretation                                                                                                                                                                                                                                                                                 |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `arrays-basic`            | Know of the existence of the `Array` type. Know how to define an array. Know how to access elements in an array by index. Know how to iterate over elements in an array. Know of some basic functions (like finding the index of an element in an array).                                      |
-| `attributes-advanced`     | Know of the existence of the `Attribute` type. Know what attributes are for. Know how to define custom attributes. Know how to read attribute values at runtime. Know how to limit attribute usage.                                                                                            |
-| `attributes-basic`        | Know what attributes are. Know how to annotate code with attributes. Know how to pass properties to attributes.                                                                                                                                                                                |
-| `bitwise-operations`      | Know how to apply bitwise operations to numbers. Know where it's documented, or at least how to search for it.                                                                                                                                                                                 |
-| `collections-basic`       | Know how to iterate over a collection.                                                                                                                                                                                                                                                         |
-| `conditionals-if`         | Know of the existence of the `if` conditional execution statement.                                                                                                                                                                                                                             |
-| `conditionals-ternary`    | Know of the existence of the ternary operator. Know when to use the ternary operator.                                                                                                                                                                                                          |
-| `dates-basic`             | Know of the existence of the `DateTime` type. Know of the individual, date-related properties. Know how to access the current date. Know how to compare dates. Know how to convert a `string` to a `DateTime` and vice versa.                                                                  |
-| `enums-advanced`          | Know how to define a "flags" enum. Know how to add, remove or check for flags. Know how to change the underlying type of an enum.                                                                                                                                                              |
-| `enums-basic`             | Know of the existence of the `enum` keyword. Know how to define enum members. Know how to assign values to enum members. Know how to get an enum's numeric value. Know how to convert a `string` to an `enum` and vice versa.                                                                  |
-| `loops-while`             | Know how to write a `while` loop.                                                                                                                                                                                                                                                              |
-| `numbers-basic`           | Know of the existence of the two most commonly used number types, `int` and `double`, and understand that the former represents whole numbers, and the latter floating-point numbers. Know of basic operators such as multiplication and comparison.                                           |
-| `numbers-floating-point`  | Know of the existing of the three floating point types: `double`, `float` and `decimal`. Know when to use which type.                                                                                                                                                                          |
-| `strings-basic`           | Know of the existence of the `string` type. Know how to create a string. Know of some basic methods (like finding the index of a character in a string, or returning a part the string). Know how to do basic string formatting. Know where it's documented, or at least how to search for it. |
-| `time-basic`              | Know of the existence of the `DateTime` type. Know of the individual, time-related properties.                                                                                                                                                                                                 |
-| `type-conversion-numbers` | Know how to convert from one numeric type to another. Know what implicit and explicit conversions are.                                                                                                                                                                                         |
+| concept                   | interpretation                                                                                                                                                                                                                                            |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `arrays-basic`            | Know of the existence of the `Array` type. Know how to define an array. Know how to access elements in an array by index. Know how to iterate over elements in an array. Know of some basic functions (like finding the index of an element in an array). |
+| `attributes-advanced`     | Know of the existence of the `Attribute` type. Know what attributes are for. Know how to define custom attributes. Know how to read attribute values at runtime. Know how to limit attribute usage.                                                       |
+| `attributes-basic`        | Know what attributes are. Know how to annotate code with attributes. Know how to pass properties to attributes.                                                                                                                                           |
+| `bitwise-operations`      | Know how to apply bitwise operations to numbers.                                                                                                                                                                                                          |
+| `collections-basic`       | Know how to iterate over a collection.                                                                                                                                                                                                                    |
+| `conditionals-if`         | Know of the existence of the `if` conditional execution statement.                                                                                                                                                                                        |
+| `conditionals-ternary`    | Know of the existence of the ternary operator. Know when to use the ternary operator.                                                                                                                                                                     |
+| `dates-basic`             | Know of the existence of the `DateTime` type. Know of the individual, date-related properties. Know how to access the current date. Know how to compare dates. Know how to convert a `string` to a `DateTime` and vice versa.                             |
+| `enums-advanced`          | Know how to define a "flags" enum. Know how to add, remove or check for flags. Know how to change the underlying type of an enum.                                                                                                                         |
+| `enums-basic`             | Know of the existence of the `enum` keyword. Know how to define enum members. Know how to assign values to enum members. Know how to get an enum's numeric value. Know how to convert a `string` to an `enum` and vice versa.                             |
+| `loops-while`             | Know how to write a `while` loop.                                                                                                                                                                                                                         |
+| `numbers-basic`           | Know of the existence of the two most commonly used number types, `int` and `double`, and understand that the former represents whole numbers, and the latter floating-point numbers. Know of basic operators such as multiplication and comparison.      |
+| `numbers-floating-point`  | Know of the existing of the three floating point types: `double`, `float` and `decimal`. Know when to use which type.                                                                                                                                     |
+| `strings-basic`           | Know of the existence of the `string` type. Know how to create a string. Know of some basic methods (like finding the index of a character in a string, or returning a part the string). Know how to do basic string formatting.                          |
+| `time-basic`              | Know of the existence of the `DateTime` type. Know of the individual, time-related properties.                                                                                                                                                            |
+| `type-conversion-numbers` | Know how to convert from one numeric type to another. Know what implicit and explicit conversions are.                                                                                                                                                    |
 
 This also indicates that for example `strings-basic` does **not** teach using custom formatting strings and that `numbers-basic` does **not** teach about checked/unchecked arithmetic.
 
-## Reference docs
-
-Reference docs are written to help explain a particular C# concept to a student when no appropriate online document can be found. They will be used when creating exercises and as references in exercise documentation.
-
-The following reference docs have been written:
-
-- [Assemblies][assemblies]
-- [Code style][code_style]
-- [Memory allocation][memory_allocation]
-
-The following reference docs should be written:
-
-- Reference doc on difference between `static readonly` and `const`
-- Naming conventions
-
 [anonymous_functions]: ../../../reference/concepts/anonymous_functions.md
 [array]: ../../../reference/types/array.md
-[assemblies]: ../../../reference/tooling/dotnet-assemblies.md
 [bool]: ../../../reference/types/boolean.md
 [char]: ../../../reference/types/char.md
 [class]: ../../../reference/types/class.md
 [classes]: ../../../reference/concepts/classes.md
-[code_style]: ./code_style.md
 [composition]: ../../../reference/concepts/composition.md
 [conditionals]: ../../../reference/concepts/conditionals.md
 [encapsulation]: ../../../reference/concepts/encapsulation.md
@@ -216,7 +203,6 @@ The following reference docs should be written:
 [list]: ../../../reference/types/list.md
 [local_functions]: ../../../reference/concepts/nested_functions.md
 [map]: ../../../reference/types/map.md
-[memory_allocation]: ./memory_allocation.md
 [methods]: ../../../reference/concepts/methods.md
 [mutation]: ../../../reference/concepts/mutation.md
 [null]: ../../../reference/types/null.md

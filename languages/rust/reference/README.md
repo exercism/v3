@@ -4,13 +4,14 @@
 
 The Rust concept exercises teach concepts from fundamentals through language mastery. They are classified and listed below.
 
-The groupings are not themselves concepts, and there has been strong pushback against the notion of forming any grouped metaconcepts as yet. 
+Exercism concepts exist to serve learners in practical ways so they differ from abstract ideas. This document defines what these concepts mean in Rust. We added visual grouping below to help track maintainers create an effective reference document. Such groupings *do not* constitute pedagogical divisions. So please do not reference them while teaching.
+
 
 Checkboxes indicate whether concepts are yet taught in the exercise mapping list.
 
 ### Fundamentals of Rust
 
-These concepts are irreducable.
+These concepts are irreducible.
 
 - [x] [Functions](../../../reference/concepts/functions.md)
 - [x] Test Suites
@@ -194,17 +195,9 @@ exercise | prerequisites | teaches | narrative
 
 _etc..._
 
-## Reference docs
-
-Reference docs are written to help explain a particular concept to a student when no appropriate online document can be found. They will be used when creating exercises and as references in exercise documentation.
-
-The following reference docs have been written:
-
-_None_
-
 ## TODO
 
 - Finish specifying concept exercises with specific dependencies and topics
-- Find references in The Rust Book to as many of the concepts above as possible; link them, replacing exercism references
-- Find references in the [general exercism reference section](../../../reference/README.md) for as many of the remaining concepts as possible; link them
+- Find references in The Rust Book to as many of the concepts above as possible; link them, replacing Exercism references
+- Find references in the [general Exercism reference section](../../../reference/README.md) for as many of the remaining concepts as possible; link them
 - Write appropriate references for all remaining concepts; link them
