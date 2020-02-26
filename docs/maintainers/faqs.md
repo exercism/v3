@@ -142,7 +142,7 @@ Do you have more questions or feel that something is missing? Please let us know
 [concept-exercises]: ../concept-exercises.md
 [determining-concepts]: ./determining-concepts.md
 [how-to-implement-a-concept-exercise]: ./generic-how-to-implement-a-concept-exercise.md
-[how-to-implement-a-concept-exercise-csharp]: ../../languages/csharp/docs/implementing-a-concept-exercise.md
+[how-to-implement-a-concept-exercise-csharp]: ../../languages/csharp/reference/implementing-a-concept-exercise.md
 [writing-a-concept-exercise-github-issue]: ./writing-a-concept-exercise-github-issue.md
 [concept-to-exercise-mapping]: https://exercism-team.slack.com/archives/CC5DGSAG6/p1579722161067300
 [practice-exercises]: ../rationale-for-v3.md#practice-exercises

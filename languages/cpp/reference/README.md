@@ -124,16 +124,6 @@ The concept exercises use the following concepts:
 
 This also indicates that for example `strings-basic` does **not** teach using custom formatting strings and that `numbers-basic` does **not** teach about integer undefined-behavior.
 
-## Reference docs
-
-Reference docs are written to help explain a particular C++ concept to a student when no appropriate online document can be found. They will be used when creating exercises and as references in exercise documentation.
-
-The following reference docs have been written:
-
-## TODO
-
-Add more concepts for exercises
-
 [issues-improve-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fcpp+label%3Atype%2Fimprove-reference+label%3Astatus%2Fhelp-wanted
 [issues-new-reference]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Atrack%2Fcpp+label%3Atype%2Fnew-reference+label%3Astatus%2Fhelp-wanted+
 [bool]: ../../../reference/types/boolean.md
