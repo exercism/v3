@@ -7,6 +7,7 @@ Student-facing documents are written to help explain a particular F# concept to 
 The following student-facing documents have been written:
 
 - [Assemblies][assemblies]
+- [String concatenation][string_concatenation]
 
 The following student-facing documents should be written:
 
@@ -15,3 +16,4 @@ The following student-facing documents should be written:
 - Memory allocation
 
 [assemblies]: ../../../reference/tooling/dotnet-assemblies.md
+[string_concatenation]: ./string_concatenation.md
