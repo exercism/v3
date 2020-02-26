@@ -2,6 +2,7 @@
 using ArgParse
 using CSV
 using JSON
+using Markdown
 
 # define the command line interface
 function parse_commandline()
@@ -66,6 +67,62 @@ function check_config_json(concepts, config)
 end
 
 """
+Check if a concept extraction doc only contains valid concepts.
+
+**Assumptions**:
+- The first list is ignored, as it is assumed to contain the example implementations
+- In the rest of the doc, all lists are assumed to have the following format: `- <concept>: <explanation>`. Entries that aren't lists are ignored
+
+Returns a dictionary of concepts that don't exist in concepts mapping to the reason for why it's used.
+"""
+function check_concept_extraction_doc(file, concepts, rootpath, track)
+    # ignore meta information and the first two blocks
+    md_content = Markdown.parse_file(file, flavor = :github).content
+
+    undefined = Dict{String,String}()
+
+    skippedfirst = false
+
+    for md_block in md_content
+        # if it's not a list, ignore it
+        typeof(md_block) == Markdown.List || continue
+
+        # if it's the very first list, it's the list of example implementations
+        skippedfirst || (skippedfirst = true; continue)
+        
+        for entry in md_block.items
+            entry_str = strip(Markdown.plain(entry))
+            concept, explanation = split(entry_str, ": ")
+
+            # if the concept is not in concepts.csv, push it to undefined
+            if concept ∉ concepts[!, :concept]
+                undefined[concept] = explanation
+            end
+        end
+    end
+
+    undefined
+end
+
+function check_concept_extraction_docs(concepts, rootpath, track)
+    base_path = joinpath(rootpath, "languages", track, "reference", "exercise-concepts")
+
+    undefined = Dict{String,Dict{String,String}}()
+
+    for ex in readdir(base_path)
+        # ignore README.md and _sidebar.md
+        ex ∉ ("README.md", "_sidebar.md") || continue
+
+        d = check_concept_extraction_doc(joinpath(base_path, ex), concepts, rootpath, track)
+        if !isempty(d)
+            undefined[ex] = d
+        end
+    end
+
+    undefined
+end
+
+"""
 Check if all exercise directory names are valid concepts.
 
 Returns an array of exercises named after undefined concepts.
@@ -119,6 +176,15 @@ function main()
         anyerror = true
     end
 
+    @info "Checking extracted concepts from v2..."
+    undefined_concepts = check_concept_extraction_docs(concepts, args["root"], args["track"])
+    if !isempty(undefined_concepts)
+        for (ex, errors) in undefined_concepts
+            pretty_errors = join(collect("- $(rpad("$k:", 20)) $v" for (k, v) in errors), '\n')
+            @error "Found undefined concepts in $ex:\n$pretty_errors"
+        end
+        anyerror = true
+    end
     anyerror
 end
 
