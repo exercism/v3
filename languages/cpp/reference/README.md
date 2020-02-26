@@ -55,7 +55,8 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - [Enumeration](../../../reference/concepts/enumeration.md) (Container iteration)
 - Iterators
 - Namespaces
-- IO
+- C-style Input/Output
+- Input/Output stream-based library
 - Templates
 - [Metaprogramming (TMP)](../../../reference/concepts/metaprogramming.md)
 - Exception handling
@@ -76,6 +77,7 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 
 - Signed integers
 - Unsigned integers
+- Fixed width integer types
 - Floating point numbers
 - [Characters][char]
 - [Booleans][bool]
