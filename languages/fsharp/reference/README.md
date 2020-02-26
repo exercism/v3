@@ -157,20 +157,6 @@ The concept exercises use the following concepts:
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `strings-basic` | Know of the existence of the `string` type. Know how to create a string. Know of some basic methods (like finding the index of a character in a string, or returning a part the string). Know how to do basic string formatting. Know where it's documented, or at least how to search for it. |
 
-## Reference docs
-
-Reference docs are written to help explain a particular F# concept to a student when no appropriate online document can be found. They will be used when creating exercises and as references in exercise documentation.
-
-The following reference docs have been written:
-
-- [Assemblies][assemblies]
-
-The following reference docs should be written:
-
-- Naming conventions
-- Code style
-- Memory allocation
-
 [encapsulation]: ../../../reference/concepts/encapsulation.md
 [classes]: ../../../reference/concepts/classes.md
 [objects]: ../../../reference/concepts/objects.md
@@ -193,7 +179,6 @@ The following reference docs should be written:
 [conditionals]: ../../../reference/concepts/conditionals.md
 [enumeration]: ../../../reference/concepts/enumeration.md
 [generics]: ../../../reference/concepts/generics.md
-[assemblies]: ../../../reference/tooling/dotnet-assemblies.md
 [bool]: ../../../reference/types/boolean.md
 [string]: ../../../reference/types/string.md
 [char]: ../../../reference/types/char.md

@@ -180,29 +180,12 @@ The concept exercises use the following concepts:
 
 This also indicates that for example `strings-basic` does **not** teach using custom formatting strings and that `numbers-basic` does **not** teach about checked/unchecked arithmetic.
 
-## Reference docs
-
-Reference docs are written to help explain a particular C# concept to a student when no appropriate online document can be found. They will be used when creating exercises and as references in exercise documentation.
-
-The following reference docs have been written:
-
-- [Assemblies][assemblies]
-- [Code style][code_style]
-- [Memory allocation][memory_allocation]
-
-The following reference docs should be written:
-
-- Reference doc on difference between `static readonly` and `const`
-- Naming conventions
-
 [anonymous_functions]: ../../../reference/concepts/anonymous_functions.md
 [array]: ../../../reference/types/array.md
-[assemblies]: ../../../reference/tooling/dotnet-assemblies.md
 [bool]: ../../../reference/types/boolean.md
 [char]: ../../../reference/types/char.md
 [class]: ../../../reference/types/class.md
 [classes]: ../../../reference/concepts/classes.md
-[code_style]: ./code_style.md
 [composition]: ../../../reference/concepts/composition.md
 [conditionals]: ../../../reference/concepts/conditionals.md
 [encapsulation]: ../../../reference/concepts/encapsulation.md
@@ -220,7 +203,6 @@ The following reference docs should be written:
 [list]: ../../../reference/types/list.md
 [local_functions]: ../../../reference/concepts/nested_functions.md
 [map]: ../../../reference/types/map.md
-[memory_allocation]: ./memory_allocation.md
 [methods]: ../../../reference/concepts/methods.md
 [mutation]: ../../../reference/concepts/mutation.md
 [null]: ../../../reference/types/null.md
