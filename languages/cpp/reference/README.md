@@ -77,6 +77,7 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 
 - Signed integers
 - Unsigned integers
+- Fixed width integer types
 - Floating point numbers
 - [Characters][char]
 - [Booleans][bool]
