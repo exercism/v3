@@ -13,7 +13,7 @@ This issue describes how to add a new reference document: <DOC>.
 
 ## Description
 
-[A clear description of what information the reference document should contain. It should be clear how this document can help a student.
+[A clear description of what information the reference document should contain. This document should help other maintainers developing and building context exercises
 
 For example:
 
