@@ -195,14 +195,6 @@ exercise | prerequisites | teaches | narrative
 
 _etc..._
 
-## Reference docs
-
-Reference docs are written to help explain a particular concept to a student when no appropriate online document can be found. They will be used when creating exercises and as references in exercise documentation.
-
-The following reference docs have been written:
-
-_None_
-
 ## TODO
 
 - Finish specifying concept exercises with specific dependencies and topics
