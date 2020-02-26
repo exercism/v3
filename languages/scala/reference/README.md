@@ -156,19 +156,6 @@ The concept exercises use the following concepts:
 | concept | interpretation |
 | ------- | -------------- |
 
-
-## Reference docs
-
-Reference docs are written to help explain a particular Scala concept to a student when no appropriate online document can be found. They will be used when creating exercises and as references in exercise documentation.
-
-The following reference docs have been written:
-
-- [TODO]
-
-The following reference docs should be written:
-
-- [TODO]
-
 [encapsulation]: ../../../reference/concepts/encapsulation.md
 [classes]: ../../../reference/concepts/classes.md
 [objects]: ../../../reference/concepts/objects.md
