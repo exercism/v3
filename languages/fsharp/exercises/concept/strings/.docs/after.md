@@ -6,7 +6,7 @@ A string is delimited by double quote (`"`) characters. Some special characters 
 
 Alternatively, strings can be defined using triple quotes (`"""`), which allows using a double quote in the string without escaping it. [Triple-quoted strings][triple-quoted] can also span multiple lines.
 
-Finally, concatenating strings can be done through the [`+` operator][plus-operator]. For any string formatting more complex than simple concatenation, the `sprintf` function is preferred.
+Finally, concatenating strings can be done through the [`+` operator][string_concatenation]. For any string formatting more complex than simple concatenation, the [`sprintf` function][string_concatenation] is preferred.
 
 [verbatim]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/strings#verbatim-strings
 [triple-quoted]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/strings#triple-quoted-strings
@@ -14,4 +14,4 @@ Finally, concatenating strings can be done through the [`+` operator][plus-opera
 [properties]: https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netcore-3.1#properties
 [string-module]: https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.string-module-%5bfsharp%5d
 [escaping]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/strings#remarks
-[plus-operator]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/strings#string-operators
+[string_concatenation]: https://exercism.github.io/v3/#/languages/fsharp/docs/string_concatenation
