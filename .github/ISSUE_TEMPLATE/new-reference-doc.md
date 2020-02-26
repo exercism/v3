@@ -7,7 +7,9 @@ document
 title: "[Docs] Add new reference document: <DOC>"
 labels: status/help-wanted, type/new-reference-doc
 assignees: ""
----[Use this issue template to describe how to add a new reference doc. Only suggest adding a new reference doc when no existing reference document has been written. Please fill in the issue template, and remove any sections wrapped in square brackets (such as this section!).]
+---
+
+[Use this issue template to describe how to add a new reference doc. Only suggest adding a new reference doc when no existing reference document has been written. Please fill in the issue template, and remove any sections wrapped in square brackets (such as this section!).]
 
 This issue describes how to add a new reference document: <DOC>.
 
