@@ -37,7 +37,7 @@ This file contains instructions for the exercise. It should explicitly explain w
 
 If the student gets stuck, we will allow them to click a button requesting a hint, which shows this file. This will not be a "recommended" path and we will (softly) discourage them using it unless they can't progress without it. As such, it's worth considering that the student reading it will be a little confused/overwhelmed and maybe frustrated.
 
-The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any user. They might link to the docs of the functions that need to be used.
+The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any student. They might link to the docs of the functions that need to be used.
 
 ## Step 4: add .docs/after.md (optional)
 
