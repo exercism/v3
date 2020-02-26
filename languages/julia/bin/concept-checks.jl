@@ -152,6 +152,7 @@ end
 function main()
     anyerror = false
 
+    @info "Parsing commandline arguments..."
     args = parse_commandline()
 
     @info "Reading concepts from $(args["concepts"])..."
