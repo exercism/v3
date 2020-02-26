@@ -40,8 +40,10 @@ The following labels are used to categorize [issues in the v3 repository][github
 - [type/new-exercise][github-issues-type-new-exercise]: Add a new exercise
 - [type/improve-exercise][github-issues-type-improve-exercise]: Improve an existing exercise
 - [type/suggested-exercise][github-issues-type-suggested-exercise]: Suggest a new (Concept) exercise
-- [type/new-reference][github-issues-type-new-reference]: Add a new reference
-- [type/improve-reference][github-issues-type-improve-reference]: Improve an existing reference
+- [type/new-reference-doc][github-issues-type-new-reference-doc]: Add a new reference document
+- [type/improve-reference-doc][github-issues-type-improve-reference-doc]: Improve an existing reference document
+- [type/new-student-facing-doc][github-issues-type-new-student-facing-doc]: Add a new student-facing document
+- [type/improve-student-facing-doc][github-issues-type-improve-student-facing-doc]: Improve an existing student-facing document
 - [status/help-wanted][github-issues-status-help-wanted]: Extra attention is needed
 - [status/in-progress][github-issues-status-in-progress]: This issue is being worked on
 - [status/draft][github-issues-status-draft]: This issue or pull request is a draft, and not ready for review/merge.
@@ -88,8 +90,10 @@ You can combine labels to find the issues you'd like, e.g. to [list all the issu
 [github-issues-type-new-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-exercise
 [github-issues-type-improve-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-exercise
 [github-issues-type-suggested-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fsuggested-exercise
-[github-issues-type-new-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-reference
-[github-issues-type-improve-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-reference
+[github-issues-type-new-reference-doc]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-reference-doc
+[github-issues-type-improve-reference-doc]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-reference-doc
+[github-issues-type-new-student-facing-doc]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-student-facing-doc
+[github-issues-type-improve-student-facing-doc]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-student-facing-doc
 [github-issues-status-help-wanted]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted
 [github-issues-status-in-progress]: https://github.com/exercism/v3/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fin-progress
 [github-issues-status-draft]: https://github.com/exercism/v3/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fdraft
