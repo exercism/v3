@@ -4,7 +4,9 @@ _Note: This file, and the other docs in this repository, can be viewed on [GitHu
 
 Welcome to the workspace for Exercism v3!
 
-Exercism v3 is the third major iteration of Exercism, which we are aiming to launch around June 2020. It aims to both add exciting new features and to fix some of the issues present in v2, especially those around being blocked while waiting for a mentor. Its main features include:
+Exercism v3 is the third major iteration of Exercism, which we are aiming to launch around June 2020. It aims to both add exciting new features and to fix some of the issues present in v2, especially those around being blocked while waiting for a mentor. You can read the WIP plan [here](https://github.com/exercism/v3/issues/690). 
+
+A summary of the main features:
 
 - **Restructured tracks:** We are restructuring tracks to build new pathways containing Concept Exercises. These exercises will teach the key concepts that someone needs to know when learning a language. Completing a Concept Exercise will unlock other Concept and Practice Exercises. Concept Exercises will have automated feedback and approval, with no delays waiting for a mentor.
 - **Approaches:** We will be automatically grouping similar solutions to Practice Exercises into Approaches. These will be supported with community-sourced articles expounding each approach, discussing its pros, cons, and potential usages.
