@@ -115,7 +115,7 @@ If you have any questions regarding implementing this exercise, please post them
 
 [docs-concept-exercises]: ../concept-exercises.md
 [reference]: ../../reference/concepts/README.md
-### TODO once the first concept is done and available to reference
-[meta-design]: ../../languages/elm/exercises/concept/enums-advanced/.meta/design.md
-### TODO once the first concept is done and available to reference
-[meta-config-json]: ../../languages/elm/exercises/concept/enums-advanced/.meta/config.json
+### TODO: link to an elm concept, after the first one is done and available to reference
+[meta-design]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/design.md
+### TODO: link to an elm concept, after the first one is done and available to reference
+[meta-config-json]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/config.json
