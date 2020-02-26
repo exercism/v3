@@ -31,7 +31,7 @@ Exercises are unlocked based on concepts taught and learnt. Each Concept Exercis
 
 Concept Exercises should not inherently become more difficult as the track progresses. **A seasoned developer in Language X should be able to work through all the Concept Exercises on that track spending no more than 5-10 minutes solving each one.** As each exercise should be focussed on getting someone to use a concept for the first time, and because the seasoned developer already understands that concept in Language X, the exercise should feel relatively trivial for them. Later exercises may feel more difficult to a developer unfamiliar with Language X, but only because the later exercise is teaching a concept which in itself is more complicated (for example, most people would agree Recursion is a more complex topic to learn for the first time, than a Loop is to remap from one language to another).
 
-Concept Exercises are **not** mentored. When a user submits a submission that gets the tests passing for a Concept Exercise, we check for an Analyzer or Representer to give feedback. If none is found, then the solution is approved. This shifts the burden of teaching to the exercise, which must provide a clear pathway to learning the concept that is being taught.
+Concept Exercises are **not** mentored. When a student submits a submission that gets the tests passing for a Concept Exercise, we check for an Analyzer or Representer to give feedback. If none is found, then the solution is approved. This shifts the burden of teaching to the exercise, which must provide a clear pathway to learning the concept that is being taught.
 
 Concept Exercises do not share a common base like Practice Exercises do in the `problem-specifications` repository. Instead they "share" Concepts that they are teaching with other languages. This repository aims to list all of those Concepts and provide information about the Concept that maintainers can use as the basis for their own languages. Each Concept should also link to the implementations in different languages. Maintainers are free to copy and paste from each others repositories, and then edit to make things specific to their tracks, but such copy-and-pastes should be considered hard-forks.
 
@@ -65,7 +65,7 @@ See the C# floating-point-numbers exercise's [instructions.md file][csharp-docs-
 
 If the student gets stuck, we will allow them to click a button requesting a hint, which shows this file. This will not be a "recommended" path and we will (softly) discourage them using it unless they can't progress without it. As such, it's worth considering that the student reading it will be a little confused/overwhelmed and maybe frustrated.
 
-The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any user. They might link to the docs of the functions that need to be used.
+The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any student. They might link to the docs of the functions that need to be used.
 
 See the C# floating-point-numbers exercise's [hints.md file][csharp-docs-hints.md] for an example.
 
@@ -99,7 +99,7 @@ See the C# track's [cli.md file][csharp-docs-cli.md] for an example.
 
 ### `exercises/shared/.docs/debug.md`
 
-This file explains how a user that is coding in the browser can still do "debugging."
+This file explains how a student that is coding in the browser can still do "debugging."
 
 See the C# track's [debug.md file][csharp-docs-debug.md] for an example.
 

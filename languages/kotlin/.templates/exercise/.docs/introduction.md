@@ -5,5 +5,5 @@
 
 ! This file contains an introduction to the concept.
 ! It should be explicit about what the exercise teaches and maybe provide a brief introduction to the concepts,
-! but not give away so much that the user doesn't have to do any work to solve the exercise.
+! but not give away so much that the student doesn't have to do any work to solve the exercise.
 ```
