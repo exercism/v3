@@ -109,7 +109,6 @@ string convert(int drops)
 - No include guards
 - Bad variable and constants names
 - Writing to `std::cout` or `std::cerr`
-- Not declaring argument as `const`
 - Not marking all constants known at compile time as `constexpr`
 - Creating a class `raindrops` instead of a namespace of the same name
 
