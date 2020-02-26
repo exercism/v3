@@ -26,7 +26,7 @@ Concept `X` is used to do `Y`]
 For example:
 
 - Create the document in the appropriate location in the `reference` folder.
-- Check to see if there are other document that can refer to the new document.
+- Check to see if there are other documents that can refer to the new document.
 
 ## Help
 
