@@ -134,9 +134,6 @@ function check_exercise_directories(concepts, rootpath, track)
     base_path = joinpath(rootpath, "languages", track, "exercises", "concept")
 
     for ex in readdir(base_path)
-        # ignore annotations
-        ex = split(ex, ".")[1]
-
         # ignore README.md, _sidebar.md and other files
         isdir(joinpath(base_path, ex)) || continue
 
