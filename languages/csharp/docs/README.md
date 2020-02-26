@@ -10,7 +10,7 @@ The following student-facing documents have been written:
 - [Code style][code_style]
 - [Memory allocation][memory_allocation]
 
-The following student-facing docs should be written:
+The following student-facing documents should be written:
 
 - Difference between `static readonly` and `const`
 - Naming conventions
