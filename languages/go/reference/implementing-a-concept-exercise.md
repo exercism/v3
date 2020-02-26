@@ -67,4 +67,4 @@ If you have any questions regarding implementing the exercise, please post them 
 [concept-exercise-basic-strings]: ../exercises/concept/basic-strings
 [concept-exercise-numbers]: ../exercises/concept/numbers
 [reference]: ../../../reference
-[style guide]: ./style-guide.md
+[style guide]: ../docs/style-guide.md
