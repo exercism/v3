@@ -47,9 +47,6 @@ function check_config_json(concepts, config)
         # vector to store all undefined concepts
         undefined = String[]
         for c in ex_concepts
-            # ignore annotations
-            c = split(c, ".")[1]
-
             # if the concept is not in concepts.csv, push it to undefined
             if c ∉ concepts[!, :concept]
                 push!(undefined, c)
