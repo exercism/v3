@@ -31,7 +31,7 @@ This file contains an introduction to the concept. It should be explicit about w
 
 ## Step 2: add .docs/instructions.md
 
-This file contains instructions for the exercise. It should explicitly explain what the user needs to do (define a method with the signature `X(...)` that takes an A and returns a Z), and provide at least one example usage of that function. If there are multiple tasks within the exercise, it should provide an example of each.
+This file contains instructions for the exercise. It should explicitly explain what the student needs to do (define a method with the signature `X(...)` that takes an A and returns a Z), and provide at least one example usage of that function. If there are multiple tasks within the exercise, it should provide an example of each.
 
 ## Step 3: add .docs/hints.md
 
