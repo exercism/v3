@@ -77,15 +77,11 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 ### [Dictionary][dictionary]
 
 - mapping type that has key-value pairs. Returned by `str.maketrans` in the example code. Also one of the argument types accepted by `str.maketrans()`.
-- the example uses a dictionary to map paassed in move arguments to methods that perform the moves. The example also uses a dictionary/mapping created by calling `str.maketrans()`.
+- the example uses a dictionary to map passed in move arguments to methods that perform the moves. The example also uses a dictionary/mapping created by calling `str.maketrans()`.
 
 ### [Method Arguments][method-arguments]
 
 - the methods returning "row" and "column" need to take both `self` and an integer as arguments
-
-### [Boolean Operators][boolean-operators]
-
-- the exercise relies on `and`, `or`, and (optionally) `not` to form Boolean predicates
 
 ### [Booleans][booleans]
 
@@ -95,10 +91,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 ### [Bracket Notation][bracket-notation]
 
 - knowing that `[]` should be used to refer to a value at a specific index in a list
-
-### [Builtin functions][builtin-functions]
-
-- strings have a length, accessible by calling `len()`, a builtin python function
 
 ### [Function Arguments][function-arguments]
 
@@ -116,10 +108,15 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 ### [For Loop][for-loop]
 
+- The example solution uses `for` loops to iterate over various function inputs.
 - iterating over the passed in `matrix` string using a `for` loop to extract "rows" and "columns" that are appended to a list
 
-### [Class][class]
+### [Classes][classes]
 
+- the exercise relies on the `class` statement to create a custom class
+- use of `class` to create a custom data structure
+- the exercise objective is to define a `matrix` type. Tested methods are linked to a `matrix` class
+- a general comprehension of class concept and and how it works is required, `class` statement
 - classes are defined with the `class <ClassName>:` syntax
 - the exercise objective is to define a `robot` type. Tested methods are linked to a `robot` class.
 
@@ -133,6 +130,7 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 ### [Immutability][immutability]
 
+- strings are immutable, and so cannot have values assigned; new strings can be created, however
 - `text` str in Python is [immutable](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str).
 
 ### [Instance Methods][instance-methods]
@@ -143,10 +141,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 ### [Non-Public Methods][non-public-methods]
 
 - Methods or attributes (including those of an imported module) prefixed with an underscore, `_`, are conventionally treated as "non-public" methods. Python does not support data privacy in the way a language like Java does. Instead convention dictates that methods and attributes that are not prefixed with a single underscore can be expected to remain stable along with semver, i.e. a public method will be backwards compatible with minor version updates, and can change with major version updates. Generally, importing non-public functions or using non-public methods is discouraged, though Python will not explicitly stop the programmer from doing so.
-
-### [Sum][sum]
-
-- another builtin that operates on iterables
 
 ### [Booleans are integers][booleans-are-integers]
 
@@ -172,10 +166,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 - use of the `in` statement is useful to look for an object into a list
 
-### [String Formatting][string-formatting]
-
-- `str.format` can be used to format a string
-
 ### [Implicit Argument][implicit-argument]
 
 - the example uses the `self` implicit argument for methods and properties linked to a specific instance of the class
@@ -187,7 +177,8 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 ### [Functions][functions]
 
-- the exercise relies on a `def` statement to create a named function
+- functions are defined and named using the `def` keyword
+- A named (_and often reusable_) section of code that performs a specific task. It may or may not have _arguments_ passed in, and may or may not _return_ data. Created using the `def` keyword.
 - Tests for this exercise expect a function named `parse` that can be called to transform the _markdown_ formatted text and return HTML formatted text.
 
 ### [Modular Division][modular-division]
@@ -197,7 +188,7 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 ### [Comprehension Syntax][comprehension-syntax]
 
-- knowing that this is equivelent to a `for loop` - putting the row or column creation code _inside_ the list literal instead of using loop + append.
+- knowing that this is equivalent to a `for loop` - putting the row or column creation code _inside_ the list literal instead of using loop + append.
 
 ### [Instance Properties][instance-properties]
 
@@ -264,10 +255,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 ### [Strings][strings]
 
 - strings are used generally
-
-### [For loops][for-loops]
-
-- The example solution uses `for` loops to iterate over various function inputs.
 
 ### [Enumeration][enumeration]
 
@@ -411,11 +398,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 - Python allows multiple assignment, assigning the items on the left of `=` _in order_ to the values on the right of `=` by forming tuples and then "unpacking" them. This exercise solution uses multiple assignment for the constant values NORTH, EAST, SOUTH, WEST.
 
-### [Immutable][immutable]
-
-- strings are immutable (*immutability*)
-- strings are immutable, and so cannot have values assigned; new strings can be created, however
-
 ### [Methods of list][methods-of-list]
 
 - the use of methods of list could be useful in this exercise. Methods like `append`, `pop`...
@@ -459,12 +441,11 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 ### [Builtin Function][builtin-functions]
 
+- strings have a length, accessible by calling `len()`, a builtin python function
 - Python has several handy builtin functions in the stdlib that can operate on many types of data, e.g. `len()`, `max()`, `min()`. Under the hood these are implemented via dunder methods - if an object (and everything in Python is an object) implements the correct dunder methods (see that topic for more information), it can support use in these functions. (For example, if an object implements `__len__`, the len(<object>) will return that value.) Because these functions are not strictly tied to any data type, they can be used almost anywhere, and will crop up again and again as we learn Python. Docs: https://docs.python.org/3/library/functions.html
-
-### [Function][function]
-
-- `def` to create a function in Python
-- A named (_and often reusable_) section of code that performs a specific task. It may or may not have _arguments_ passed in, and may or may not _return_ data. Created using the `def` keyword.
+- the `sum()` built-in function is a useful concept to solve the exercise
+- the `len()` built-in function is a useful concept in this exercise
+- the `enumerate` built-in function is a useful concept in this exercise
 
 ### [Tuple unpacking][tuple-unpacking]
 
@@ -494,6 +475,7 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 ### [Boolean Logic][boolean-logic]
 
+- the exercise relies on `and`, `or`, and (optionally) `not` to form Boolean predicates
 - the exercise relies on `and` and `or` to combine Boolean predicates into a single logical answer
 - the `or` and `and` keywords are used
 
@@ -552,10 +534,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 - recursion is a core concept in this exercise
 
-### [Function definition][function-definition]
-
-- functions are defined and named using the `def` keyword
-
 ### [Initialization][initialization]
 
 - customizing object instatiation with actions and persisting data. The example uses `__init__` to persist a `compass` object and x, y coordinates assigned to instance attributes.
@@ -607,12 +585,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 - creating different instances with different data representing different `matrices` is tested
 
-### [Builtin Functions][builtin-functions]
-
-- the `sum()` built-in function is a useful concept to solve the exercise
-- the `len()` built-in function is a useful concept in this exercise
-- the `enumerate` built-in function is a useful concept in this exercise
-
 ### [Order of Evaluation][order-of-evaluation]
 
 - the exercise relies on parentheses to explicitly modify the normal order of evaluation of an expression
@@ -649,10 +621,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 - student needs to know how to use statement `self` in a class
 - within the class definition, methods and properties can be accessed via the `self.` notation
 
-### [Boolean][boolean]
-
-- concept required to solve the exercise
-
 ### [Docstrings][docstrings]
 
 - used to document the function, normally situated right below `def func():`
@@ -665,16 +633,6 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 - in the extended example, knowing there are no protected or private properties in python and adjusting coding patterns
 - in the example, knowing there are no protected or private properties in python and so consciously mutating `self.x`, `self.y` and `self.compass` through the called instance methods.
-
-### [Classes][classes]
-
-- the exercise relies on the `class` statement to create a custom class
-- use of `class` to create a custom data structure
-- the exercise objective is to define a `matrix` type. Tested methods are linked to a `matrix` class
-
-### [class][class]
-
-- a general comprehension of class concept and and how it works is required, `class` statement
 
 ### [Call Semantics][call-semantics]
 
