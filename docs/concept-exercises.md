@@ -67,6 +67,8 @@ If the student gets stuck, we will allow them to click a button requesting a hin
 
 The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any student. They might link to the docs of the functions that need to be used.
 
+The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
+
 See the C# floating-point-numbers exercise's [hints.md file][csharp-docs-hints.md] for an example.
 
 ### `.docs/after.md`
