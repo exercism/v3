@@ -125,9 +125,9 @@ An entry should be added to the track's `config.json` file for the new concept e
 
 These files are specific to the F# track:
 
-- `<NAME>.fs`. the stub implementation file, which is the starting point for students to work on the exercise.
-- `<NAME>.fsproj`: the F# project file.
-- `<NAME>Tests.fs`: the test suite.
+- `Strings.fs`. the stub implementation file, which is the starting point for students to work on the exercise.
+- `Strings.fsproj`: the F# project file.
+- `StringsTests.fs`: the test suite.
 - `.meta/Example.fs`: an example implementation that passes all the tests. The project file should _not_ include this file.
 
 ## Step 7: update the general concept document
