@@ -1,4 +1,4 @@
-module StringsTest
+module StringsTests
 
 open FsUnit.Xunit
 open Xunit
