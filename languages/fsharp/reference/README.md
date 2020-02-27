@@ -155,7 +155,9 @@ The concept exercises use the following concepts:
 
 | concept         | interpretation                                                                                                                                                                                                                                                                                 |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `dates-basic`   | Know of the existence of the `DateTime` type. Know of the individual, date-related properties. Know how to access the current date. Know how to compare dates. Know how to convert a `string` to a `DateTime` and vice versa.                                                                  |
 | `strings-basic` | Know of the existence of the `string` type. Know how to create a string. Know of some basic methods (like finding the index of a character in a string, or returning a part the string). Know how to do basic string formatting. Know where it's documented, or at least how to search for it. |
+| `time-basic`    | Know of the existence of the `DateTime` type. Know of the individual, time-related properties.                                                                                                                                                                                                 |
 
 [encapsulation]: ../../../reference/concepts/encapsulation.md
 [classes]: ../../../reference/concepts/classes.md
