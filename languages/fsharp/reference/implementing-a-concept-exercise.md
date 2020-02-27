@@ -26,7 +26,7 @@ languages
                 |   └── Example.fs
                 ├── &lt;NAME&gt;.fs
                 ├── &lt;NAME&gt;.fsproj
-                └── &lt;NAME&gt;Test.fs
+                └── &lt;NAME&gt;Tests.fs
 </pre>
 
 ## Step 1: adding track-specific files
@@ -35,7 +35,7 @@ These files are specific to the F# track:
 
 - `<NAME>.fs`. the stub implementation file, which is the starting point for students to work on the exercise.
 - `<NAME>.fsproj`: the F# project file.
-- `<NAME>Test.fs`: the test suite.
+- `<NAME>Tests.fs`: the test suite.
 - `.meta/Example.fs`: an example implementation that passes all the tests. The project file should _not_ include this file.
 
 ## Step 2: adding common files

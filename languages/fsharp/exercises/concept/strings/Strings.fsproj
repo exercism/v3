@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Compile Include="Strings.fs" />
-    <Compile Include="StringsTest.fs" />
+    <Compile Include="StringsTests.fs" />
   </ItemGroup>
 
   <ItemGroup>
