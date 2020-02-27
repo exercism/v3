@@ -47,8 +47,6 @@ If the user gets stuck, we will allow them to click a button requesting a hint, 
 
 Once the user completes the exercise they will be shown this file, which recaps the learning goals of the exercise, and secondarily gives them any bonus information or further reading about the concept taught.
 
-These files are also all described in the [concept exercises document][docs-concept-exercises].
-
 ## Step 5: update languages/&lt;TRACK&gt;/config.json
 
 An entry should be added to the track's `config.json` file for the new concept exercise:
@@ -113,9 +111,9 @@ When implementing an exercise, it can be very useful to look at the exercises th
 
 If you have any questions regarding implementing this exercise, please post them as comments in the exercise's GitHub issue.
 
-[docs-concept-exercises]: ../concept-exercises.md
-[reference]: ../../reference/concepts/README.md
+### TODO: link to elm document, once it is done and available to reference.
+[reference]: ../../csharp/reference/README.md
 ### TODO: link to an elm concept, after the first one is done and available to reference.
-[meta-design]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/design.md
+[meta-design]: ../../csharp/exercises/concept/enums-advanced/.meta/design.md
 ### TODO: link to an elm concept, after the first one is done and available to reference.
-[meta-config-json]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/config.json
+[meta-config-json]: ../../csharp/exercises/concept/enums-advanced/.meta/config.json
