@@ -8,7 +8,7 @@ Before you can add languages, you'll need to start by creating an empty list. De
 
 ### 2. Add a new language to the list
 
-As you explore Exercism and find lanuages you want to learn, you'll need to be able to add them to your list. Define a function to add a new language the the beginning of your list.
+As you explore Exercism and find languages you want to learn, you'll need to be able to add them to your list. Define a function to add a new language the the beginning of your list.
 
 ### 3. Check the language last added
 
