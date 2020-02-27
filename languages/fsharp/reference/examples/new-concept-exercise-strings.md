@@ -75,7 +75,7 @@ languages
                 |   └── Example.fs
                 ├── Strings.fs
                 ├── Strings.fsproj
-                └── StringsTest.fs
+                └── StringsTests.fs
 </pre>
 
 ## Step 1: add .docs/introduction.md
@@ -127,7 +127,7 @@ These files are specific to the F# track:
 
 - `<NAME>.fs`. the stub implementation file, which is the starting point for students to work on the exercise.
 - `<NAME>.fsproj`: the F# project file.
-- `<NAME>Test.fs`: the test suite.
+- `<NAME>Tests.fs`: the test suite.
 - `.meta/Example.fs`: an example implementation that passes all the tests. The project file should _not_ include this file.
 
 ## Step 7: update the general concept document
