@@ -81,7 +81,6 @@ Having added the files that are not specific to the track, now is the time to cr
 - A file containing the test suite (`tests/<NAME>.elm`).
 - An example implementation file that passes all the tests (`.meta/Example.elm`).
 
-What these files look like depends on your track. Note that some tracks might require more files in addition to the three files just mentioned.
 
 ## Step 7: update the general concept document
 
