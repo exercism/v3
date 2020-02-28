@@ -1,4 +1,3 @@
-# Instructions
 
 In this exercise you'll be processing log-lines.
 

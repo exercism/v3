@@ -11,7 +11,7 @@ It's useful to become familiar with Python's string instance methods, formatting
 
 ### More about Python logging
 
-Python has a useful built-in logging library, aptly-named `logging`. It handles cases similar
+Python has a useful [built-in logging library](https://docs.python.org/3.8/library/logging.html), aptly-named `logging`. It handles cases similar
 to the ones you're working on, and more. It's very often used in projects, and is worthwhile to know.
 
 https://docs.python.org/3.8/library/logging.html
