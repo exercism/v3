@@ -102,6 +102,8 @@ The second line will install required dependencies and recreate the exact enviro
 
 If you don't want to change the working directory, you have to specify the `--root`/`-r` argument pointing to the root of the v3 repository.
 
+*Note that the script takes a fairly long time before actually running the checks due to compiliation times of the dependencies. This is unfortunately normal when running it as a script. If you're familiar with Julia, you can also `include` it from the REPL to avoid this.*
+
 
 [julia-concepts-csv]: ../../languages/julia/reference/concepts.csv
 [install-julia]: https://julialang.org/downloads/
