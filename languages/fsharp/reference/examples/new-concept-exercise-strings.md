@@ -4,7 +4,7 @@ This issue describes how to implement the `strings` concept exercise for the F# 
 
 The goal of this exercise is to teach the student the basics of the Concept of Strings in [F#][docs.microsoft.com-string].
 
-## Things to teach
+## Learning objectives
 
 - The existence of the `string` type.
 - How to create a string.
@@ -13,7 +13,7 @@ The goal of this exercise is to teach the student the basics of the Concept of S
 - Basic string formatting (using `+` and `sprintf`).
 - Strings are immutable.
 
-## Things not to teach
+## Out of scope
 
 - Strings can be enumerated.
 - String slicing.
