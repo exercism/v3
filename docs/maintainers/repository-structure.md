@@ -31,6 +31,7 @@ Each track has its own directory containing the following files and directories:
 - **README.md:** The track's README, which should contain a short description of the goal of the repository as well as the status of the track's v3 transition. A template is provided during the bootstrapping process.
 - **reference:** Files that help maintainers develop the track. These could be reference documents that help explain track-specific concepts for which no appropriate online document could be found, files on language-specific elements of programming concepts, or something else. Maintainers are free to organise this directory in the way they feel it best contributes to developing their track.
   - **README.md:** The README outlines the concepts that are necessary to learn to become fluent in that language. It could also list any reference documents that have been written.
+  - **concepts.csv:** A machine readable file defining all concept slugs used in the track. See [Concept CI][concept-ci] for more information.
 - **transitions:** Contains a file for each pair of languages, where someone with a background in X learns new language Y. These should explain the concepts that needed to be remapped/learnt. The files in this directory initially aim to help inform us about both the language-agnostic and language-specific files, but will hopefully also in the long-run provide custom pathways for people learning languages.
 
 ## GitHub
@@ -86,6 +87,7 @@ You can combine labels to find the issues you'd like, e.g. to [list all the issu
 [docs]: ./README.md
 [languages]: ../../languages/README.md
 [reference]: ../../reference/README.md
+[concept-ci]: ./concept-ci.md
 [github-issues]: https://github.com/exercism/v3/issues
 [github-issues-type-new-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-exercise
 [github-issues-type-improve-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-exercise

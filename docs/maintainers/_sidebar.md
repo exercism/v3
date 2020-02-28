@@ -10,5 +10,6 @@
     - [Repository structure](/docs/maintainers/repository-structure.md)
     - [Website](/docs/maintainers/website.md)
     - [Writing a Concept Exercise](/docs/maintainers/writing-a-concept-exercise-github-issue.md)
+    - [Concept CI](/docs/maintainers/concept-ci.md)
 - [Languages](/languages/README.md)
 - [Reference](/reference/README.md)
