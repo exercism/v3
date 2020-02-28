@@ -78,12 +78,12 @@ jobs:
       - name: Install dependencies
         run: |
           cd languages/<language>/
-          julia --color=yes --project=bin -e "using Pkg; Pkg.instantiate()"
+          julia --color=yes --project=../../.github/bin/concept-checks -e "using Pkg; Pkg.instantiate()"
 
       - name: Run concept checks
         run: |
           cd languages/<language>/
-          julia --color=yes --project=bin bin/concept-checks.jl -t <language>
+          julia --color=yes --project=../../.github/bin/concept-checks ../../.github/bin/concept-checks/concept-checks.jl -t <language>
 ```
 
 where `<language>` needs to be replaced with the track's language slug.
@@ -94,13 +94,13 @@ If you want to run the checks locally, you need to [install Julia v1.3][install-
 
 ```
 $ cd languages/<language>/
-$ julia --color=yes --project=bin -e "using Pkg; Pkg.instantiate()"
-$ julia --color=yes --project=bin bin/concept-checks.jl -t <language>
+$ julia --color=yes --project=../../.github/bin/concept-checks -e "using Pkg; Pkg.instantiate()"
+$ julia --color=yes --project=../../.github/bin/concept-checks ../../.github/bin/concept-checks/concept-checks.jl -t <language>
 ```
 
 The second line will install required dependencies and recreate the exact environment the script was developed and tested in, the third will run the checks.
 
-If you don't want to change the working directory, you have to specify the `--root`/`-r` argument pointing to the root of the v3 repository.
+If you don't want to change the working directory, you have to specify the `--root`/`-r` argument pointing to the root of the v3 repository and update the paths to `.github/bin/concept-checks` accordingly.
 
 *Note that the script takes a fairly long time before actually running the checks due to compiliation times of the dependencies. This is unfortunately normal when running it as a script. If you're familiar with Julia, you can also `include` it from the REPL to avoid this.*
 

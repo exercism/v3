@@ -27,9 +27,9 @@ jobs:
       - name: Install dependencies
         run: |
           cd languages/julia/
-          julia --color=yes --project=bin -e "using Pkg; Pkg.instantiate()"
+          julia --color=yes --project=../../.github/bin/concept-checks -e "using Pkg; Pkg.instantiate()"
 
       - name: Run concept checks
         run: |
           cd languages/julia/
-          julia --color=yes --project=bin bin/concept-checks.jl
+          julia --color=yes --project=../../.github/bin/concept-checks ../../.github/bin/concept-checks/concept-checks.jl
