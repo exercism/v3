@@ -1,4 +1,3 @@
-# After
 
 In this lesson, we learned:
  - Python has a `str` type.
