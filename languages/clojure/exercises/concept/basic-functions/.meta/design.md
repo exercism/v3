@@ -21,7 +21,7 @@ The goal of this exercise is to introduce the student to [basic-functions in Clo
 
 The Concepts this exercise unlocks are:
 
-- `basic-functions-basic`: 
+- `functions-basic`: 
   - know of the existence of the `defn` macro; 
   - know how to define a function; 
   - know how to invoke a function;
