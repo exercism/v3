@@ -2,7 +2,7 @@
 
 You can use the `defn` macro to define a function!
 
-The defn macro accepts the name of the function you are defining, and optional docstring, a vector of input arguments, and the expressions to be evaluated when the function is called!
+The defn macro accepts the name of the function you are defining, an optional docstring, a vector of input arguments, and the expressions to be evaluated when the function is called.
 
 
 ### 2. Create a function that accepts an input and adds 42 to it 
