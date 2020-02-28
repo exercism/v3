@@ -46,7 +46,7 @@ The following checks are currently available:
 
 ### Workflow file
 
-You can install the Concept CI checks for your track by creating a workflow in `.github/workflows/concept-checks/<language>.yml` with the following contents:
+You can install the Concept CI checks for your track by creating a workflow in `.github/workflows/<language>-concept-ci.yml` with the following contents:
 
 ```yaml
 name: <language> concept CI
