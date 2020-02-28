@@ -98,6 +98,9 @@ function check_concept_extraction_docs(concepts, rootpath, track)
 
     undefined = Dict{String,Dict{String,String}}()
 
+    # If the directory doesn't exist, we can't check anything, so everything is correct
+    isdir(base_path) || return undefined
+
     for ex in readdir(base_path)
         # ignore README.md and _sidebar.md
         ex ∉ ("README.md", "_sidebar.md") || continue
