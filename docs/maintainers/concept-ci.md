@@ -76,14 +76,11 @@ jobs:
         uses: julia-actions/setup-julia@v1
       
       - name: Install dependencies
-        run: |
-          cd languages/<language>/
-          julia --color=yes --project=../../.github/bin/concept-checks -e "using Pkg; Pkg.instantiate()"
+        run: julia --color=yes --project=.github/bin/concept-checks -e "using Pkg; Pkg.instantiate()"
 
       - name: Run concept checks
-        run: |
-          cd languages/<language>/
-          julia --color=yes --project=../../.github/bin/concept-checks ../../.github/bin/concept-checks/concept-checks.jl -t <language>
+        run: 
+        run: julia --color=yes --project=.github/bin/concept-checks .github/bin/concept-checks/concept-checks.jl -r . -t <language>
 ```
 
 where `<language>` needs to be replaced with the track's language slug.
