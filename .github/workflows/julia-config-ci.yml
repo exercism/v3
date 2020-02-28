@@ -4,12 +4,12 @@ on:
   push:
     paths:
     - 'languages/julia/config.json'
-    - 'languages/julia/concepts.csv'
+    - 'languages/julia/reference/concepts.csv'
     - 'languages/julia/exercises/concept/**'
   pull_request:
     paths:
     - 'languages/julia/config.json'
-    - 'languages/julia/concepts.csv'
+    - 'languages/julia/reference/concepts.csv'
     - 'languages/julia/exercises/concept/**'
 
 jobs:

@@ -11,7 +11,7 @@ function parse_commandline()
         "--concepts"
             help = "path to the concepts.csv file"
             arg_type = String
-            default = "concepts.csv"
+            default = joinpath("reference", "concepts.csv")
         "--config"
             help = "path to the config.json file"
             arg_type = String
