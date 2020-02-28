@@ -102,18 +102,18 @@ If you don't want to change the working directory, you have to specify the `--ro
 For convenience, you may want to create symlinks to the script in your track directory:
 
 ```
-cd languages/<language>/
-mkdir bin
-cd bin/
-ln -s ../../../.github/bin/concept-checks/concept-checks.jl ./concept-checks.jl
-ln -s ../../../.github/bin/concept-checks/Project.toml ./Project.toml
-ln -s ../../../.github/bin/concept-checks/Manifest.toml ./Manifest.toml
+$ cd languages/<language>/
+$ mkdir bin
+$ cd bin/
+$ ln -s ../../../.github/bin/concept-checks/concept-checks.jl ./concept-checks.jl
+$ ln -s ../../../.github/bin/concept-checks/Project.toml ./Project.toml
+$ ln -s ../../../.github/bin/concept-checks/Manifest.toml ./Manifest.toml
 ```
 
 The checks can then be run with
 
 ```
-julia --project=bin bin/concept-checks.jl -t <language>
+$ julia --project=bin bin/concept-checks.jl -t <language>
 ```
 
 from your track directory.
