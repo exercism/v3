@@ -1,6 +1,6 @@
 ### 1. Create a function that returns 42
 
-You can use the `defn` macro to define a function!
+You can use the `defn` macro to define a function.
 
 The defn macro accepts the name of the function you are defining, an optional docstring, a vector of input arguments, and the expressions to be evaluated when the function is called.
 
