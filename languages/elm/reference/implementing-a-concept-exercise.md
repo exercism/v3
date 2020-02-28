@@ -91,7 +91,6 @@ Add the exercise to the [concept's shared document's][reference] `## Implementat
 
 Some exercises could benefit from having an exercise-specific analyzer. If so, please check the track's analyzer document for details on how to do this.
 
-Skip this step if your track does not have an analyzer.
 
 ## Step 9: custom representation (optional)
 
