@@ -9,11 +9,7 @@ The defn macro accepts the name of the function you are defining, an optional do
 
 You can name the argument passed into the function by writing its name within the argument vector when the function is defined. The argument can then be referenced by that name anywhere within the function.
 
-Remember to use prefix notation with the '+' function. For example, in Clojure "one plus two" would be written as:
-
-```clojure
-(+ 1 2)
-```
+Remember to use prefix notation with the '+' function.
 
 ### 3. Create a function that takes and argument and calls function defined in (2) with it
 
