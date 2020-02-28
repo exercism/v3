@@ -28,7 +28,7 @@ languages
                 ├── src
                 |   └── &lt;NAME&gt;.elm
                 └── tests
-                |   └── &lt;NAME&gt;.elm
+                    └── &lt;NAME&gt;.elm
 </pre>
 
 ## Step 1: add .docs/introduction.md
