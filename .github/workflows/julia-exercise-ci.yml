@@ -1,4 +1,4 @@
-name: Julia exercise CI
+name: Julia Exercise CI
 
 on:
   push:

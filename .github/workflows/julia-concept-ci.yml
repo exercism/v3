@@ -1,4 +1,4 @@
-name: Julia concept CI
+name: Julia Concept CI
 
 on:
   push:
