@@ -76,10 +76,10 @@ An entry should be added to the track's `config.json` file for the new concept e
 
 Having added the files that are not specific to the track, now is the time to create the track-specific files. These file will include:
 
-- An elm.json file.
-- A stub implementation file (src/&lt;NAME&gt;.elm).
-- A file containing the test suite (tests/&lt;NAME&gt;.elm).
-- An example implementation file that passes all the tests (.meta/Example.elm).
+- An `elm.json` file.
+- A stub implementation file (`src/<NAME>.elm`).
+- A file containing the test suite (`tests/<NAME>.elm`).
+- An example implementation file that passes all the tests (`.meta/Example.elm`).
 
 What these files look like depends on your track. Note that some tracks might require more files in addition to the three files just mentioned.
 
