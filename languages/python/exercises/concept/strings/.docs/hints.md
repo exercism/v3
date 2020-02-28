@@ -6,12 +6,11 @@
 
 ### 1. Get message from a log line
 
- - Strings in Python have lots of convenient instance methods, like [`split()`][https://docs.python.org/3/library/stdtypes.html#str.split]
- - There are also [methods to assist handling extra whitespace][https://docs.python.org/3.7/library/stdtypes.html#str.strip] on the ends of a string.
+ - Strings in Python have [lots of convenient instance methods][https://docs.python.org/3/library/stdtypes.html#str] for cleaning, splitting, manipulating, and creating new strings. Extracting values from a string could be done by splitting it based on a substring, for example.
 
 ### 2. Get log level from a log line
 
- - Strings have methods that help [convert letters from lower to uppercase][https://docs.python.org/3/library/stdtypes.html#str.lower] and vice-versa.
+ - Strings also have methods that help convert letters from lower to uppercase and vice-versa.
 
 ### 3. Reformat a log line
 
