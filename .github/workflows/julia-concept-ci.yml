@@ -5,11 +5,13 @@ on:
     paths:
     - 'languages/julia/config.json'
     - 'languages/julia/reference/concepts.csv'
+    - 'languages/julia/reference/exercise-concepts/**'
     - 'languages/julia/exercises/concept/**'
   pull_request:
     paths:
     - 'languages/julia/config.json'
     - 'languages/julia/reference/concepts.csv'
+    - 'languages/julia/reference/exercise-concepts/**'
     - 'languages/julia/exercises/concept/**'
 
 jobs:

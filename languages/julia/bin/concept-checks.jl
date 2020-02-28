@@ -8,15 +8,7 @@ using Markdown
 function parse_commandline()
     s = ArgParseSettings()
     @add_arg_table s begin
-        "--concepts"
-            help = "path to the concepts.csv file"
-            arg_type = String
-            default = joinpath("reference", "concepts.csv")
-        "--config"
-            help = "path to the config.json file"
-            arg_type = String
-            default = "config.json"
-        "--root"
+        "--root", "-r"
             help = "root of the v3 repository"
             arg_type = String
             default = joinpath("..", "..")
@@ -72,7 +64,7 @@ Check if a concept extraction doc only contains valid concepts.
 
 Returns a dictionary of concepts that don't exist in concepts mapping to the reason for why it's used.
 """
-function check_concept_extraction_doc(file, concepts, rootpath, track)
+function check_concept_extraction_doc(file, concepts)
     # ignore meta information and the first two blocks
     md_content = Markdown.parse_file(file, flavor = :github).content
 
@@ -110,7 +102,7 @@ function check_concept_extraction_docs(concepts, rootpath, track)
         # ignore README.md and _sidebar.md
         ex ∉ ("README.md", "_sidebar.md") || continue
 
-        d = check_concept_extraction_doc(joinpath(base_path, ex), concepts, rootpath, track)
+        d = check_concept_extraction_doc(joinpath(base_path, ex), concepts)
         if !isempty(d)
             undefined[ex] = d
         end
@@ -148,14 +140,16 @@ function main()
 
     @info "Parsing commandline arguments..."
     args = parse_commandline()
+    conceptspath = joinpath(args["root"], "languages", args["track"], "reference", "concepts.csv")
+    configpath = joinpath(args["root"], "languages", args["track"], "config.json")
 
-    @info "Reading concepts from $(args["concepts"])..."
-    concepts = CSV.read(args["concepts"])
+    @info "Reading concepts from $conceptspath..."
+    concepts = CSV.read(conceptspath)
 
-    @info "Reading config from $(args["config"])..."
-    config = JSON.parsefile(args["config"])
+    @info "Reading config from $configpath..."
+    config = JSON.parsefile(configpath)
 
-    @info "Checking $(args["config"])..."
+    @info "Checking $configpath..."
     undefined_concepts = check_config_json(concepts, config)
     if !isempty(undefined_concepts)
         for (exercise, concepts) in undefined_concepts

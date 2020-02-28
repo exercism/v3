@@ -31,6 +31,8 @@ For a longer example, see the Julia track's [`concepts.csv`][julia-concepts-csv]
 
 ## CI checks
 
+*If any issues with the CI script come up, please ping @SaschaMann in the PR/issue.*
+
 The following checks are currently available:
 
 - Check if all concepts used by exercises in `config.json` are defined in `concepts.csv`
@@ -46,7 +48,60 @@ The following checks are currently available:
 
 You can install the Concept CI checks for your track by creating a workflow in `.github/workflows/<language>-concept-ci.yml` with the following contents:
 
-**COMING SOON (see #718)**
+```yaml
+name: <language> concept CI
+
+on:
+  push:
+    paths:
+    - 'languages/<language>/config.json'
+    - 'languages/<language>/reference/concepts.csv'
+    - 'languages/<language>/reference/exercise-concepts/**'
+    - 'languages/<language>/exercises/concept/**'
+  pull_request:
+    paths:
+    - 'languages/<language>/config.json'
+    - 'languages/<language>/reference/concepts.csv'
+    - 'languages/<language>/reference/exercise-concepts/**'
+    - 'languages/<language>/exercises/concept/**'
+
+jobs:
+  concept-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: "Set up Julia"
+        uses: julia-actions/setup-julia@v1
+      
+      - name: Install dependencies
+        run: |
+          cd languages/<language>/
+          julia --color=yes --project=bin -e "using Pkg; Pkg.instantiate()"
+
+      - name: Run concept checks
+        run: |
+          cd languages/<language>/
+          julia --color=yes --project=bin bin/concept-checks.jl -t <language>
+```
+
+where `<language>` needs to be replaced with the track's language slug.
+
+### Testing locally
+
+If you want to run the checks locally, you need to [install Julia v1.3][install-julia] and run the following commands:
+
+```
+$ cd languages/<language>/
+$ julia --color=yes --project=bin -e "using Pkg; Pkg.instantiate()"
+$ julia --color=yes --project=bin bin/concept-checks.jl -t <language>
+```
+
+The second line will install required dependencies and recreate the exact environment the script was developed and tested in, the third will run the checks.
+
+If you don't want to change the working directory, you have to specify the `--root`/`-r` argument pointing to the root of the v3 repository.
+
 
 [julia-concepts-csv]: ../../languages/julia/reference/concepts.csv
 [install-julia]: https://julialang.org/downloads/
