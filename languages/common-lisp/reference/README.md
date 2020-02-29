@@ -5,75 +5,87 @@ document][csharp-example] as an example to base my work off of.
 
 ## Concepts
 ### General
-  - Constants
-  - Variables
-  - Strings
-  - Characters
+  - [Anonymous Functions][anon]
+  - [Arithmetic][arit]
+    - Prefix Notation
+  - [Assignment][assi]
+    - Generic Setters
+  - [Comments][comm]
+    - Line
+    - Block
+    - Conventions
+  - [Conditionals][cond]
+    - One Branch (`and`, `or`, `when`, `unless`)
+    - Two Branch (`if`)
+    - More Branches (`cond`, `case`)
+  - [Constants][cons]
+  - [Enumeration][enum]
+    - Loop Macro
+    - Do (`do`, `do*`, `dotimes`, `dolist`)
+  - [Expressions][expr]
+    - S-Expressions
   - Functions
-  - Sameness
-  - Comments
-  - Nested Functions
-  - Conditionals
-  - Expressions
-  - Map
-  - Generic Setters
-  - Enumeration
-  - Recursion
   - Higher Order Functions
-  - Anonymous Functions
-  - Boolean Logic
+  - Nested Functions
   - Packages
+  - Recursion
+  - Sameness
+  - Variables
+    - Global (`defparameter`, `defvar`)
+    - Local (`let`, `let*`)
 
 ### Format
   - Basic
-  - Numbers
-  - Language
-  - Tables
-  - Iteration
   - Conditionals
+  - Iteration
+  - Language
   - Miscellaneous
+  - Numbers
+  - Tables
 
 ### Loop (Needs Lots of Work)
+  - Collecting
+  - Hash Tables
+  - Miscellaneous
   - Ranges
   - Sequences
-  - Hash Tables
-  - Collecting
-  - Miscellaneous
 
 ### CLOS (Needs Some Work)
   - Classes
+  - Generic Functions
+  - Methods
+  - Multiple Dispatch
+  - Multiple Inheritance
   - Objects
   - Slots
-  - Multiple Inheritance
-  - Methods
-  - Generic Functions
-  - Multiple Dispatch
   
 ### Conditions & Restarts (Needs Some Work)
-  - Handlers
-  - Signalling
   - Conditions
+  - Handlers
   - Restarts
+  - Signalling
 
 ### Types
+  - Booleans
+  - Characters
   - Hash Tables
-  - Strings
+  - Numbers
+    - Complex
+    - Floats
+    - Integers
+    - Rationals
   - Sequences
+    - Arrays
     - Conses
+      - Association Lists
       - Lists
       - Property Lists
-      - Association Lists
-      - Trees
       - Sets
-    - Arrays
+      - Trees
     - Vectors
-  - Numbers
-    - Integers
-    - Floats
-    - Rationals
-    - Complex
-  - Structures
   - Streams
+  - Strings
+  - Structures
 
 ## Exercise Concepts
 We should put a table here that go into the specifics to teach for each
@@ -82,3 +94,12 @@ sub-concepts. So things like `format.numbers` or maybe
 `string-formatting.numbers`.
 
 [csharp-example]: ../../csharp/reference/README.md
+[anon]: ../../../reference/concepts/anonymous_functions.md
+[arit]: ../../../reference/concepts/arithmetic.md
+[assi]: ../../../reference/concepts/assignment.md
+[comm]: ../../../reference/concepts/comments.md
+[cond]: ../../../reference/concepts/conditionals.md
+[cons]: ../../../reference/concepts/constants.md
+[enum]: ../../../reference/concepts/enumeration.md
+[expr]: ../../../reference/concepts/expressions.md
+
