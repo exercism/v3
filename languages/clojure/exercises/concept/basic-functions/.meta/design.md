@@ -24,6 +24,7 @@ The Concepts this exercise unlocks are:
 - `functions-basic`: 
   - know of the existence of the `defn` macro; 
   - know how to define a function; 
+  - naming conventions;
   - know how to invoke a function;
 
 ## Prerequisites
