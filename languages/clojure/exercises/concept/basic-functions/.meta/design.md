@@ -8,7 +8,7 @@ The goal of this exercise is to introduce the student to [basic-functions in Clo
 
 - Know how to define a function that takes zero or more arguments.
 - Know how to invoke a function.
-- Know how to write a docstringa for a function.
+- Know how to write a docstring for a function.
 
 ## Out of scope
 
