@@ -23,6 +23,6 @@ The following combinations are possible:
 ## Converting between number types
 
 Rust doesn't do any implicit type conversion. 
-This means that if you need to turn one numeric type into another, you have to explicitly write so.
+This means that if you need to turn one numeric type into another, you have to do so explicitly.
 When converting from a larger type to a smaller one (for instance `u64` to `u32`) you could lose data.
 Converting from a floating point to an integer **will** lose everything behind the decimal point, effectively rounding down.
