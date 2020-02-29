@@ -10,6 +10,6 @@ First, create a function named `new-function` that takes no arguments and return
 
 Now create a function named `plus-42` that takes one input, `x`, and returns the sum of that argument and the number 42.
 
-### 3. Create a function that takes and argument and calls function defined in (2) with it
+### 3. Create a function that takes an argument and calls the function defined in (2) with it
 
 Finally, create a function named `invoke-plus-42` that accepts an input,`y`, uses it as the argument with which to call the `plus-42` function, and then returns the result of that function invocation.
