@@ -17,6 +17,8 @@ subgraph Type System
 	end
 	abstract-types --> multiple-dispatch
 	multiple-dispatch["multiple-dispatch (encounters)"] --> extension[extending/glueing together modules]
+	
+	abstract-types --> primitive-types
 end
 extension --> performance
 performance --> Finish((Finish))
