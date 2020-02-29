@@ -11,6 +11,6 @@ You can name the argument passed into the function by writing its name within th
 
 Remember to use prefix notation with the '+' function.
 
-### 3. Create a function that takes and argument and calls function defined in (2) with it
+### 3. Create a function that takes an argument and calls the function defined in (2) with it
 
 Remember, you can invoke a function you defined the same way you invoke other functions- by putting its name as the first argument of a Clojure form and letting the Clojure compile evalute it!
