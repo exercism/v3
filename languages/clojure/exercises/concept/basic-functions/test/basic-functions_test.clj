@@ -9,5 +9,4 @@
   (is (= 0 (plus-42 42)
 
 (deftest invoke-plus-42-adds-42
-  (is (= 0 (invoke-plus-42 42)
-
+  (is (= 84 (basic-functions/invoke-plus-42 42))))
