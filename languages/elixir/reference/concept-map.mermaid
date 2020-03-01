@@ -1,0 +1,158 @@
+graph LR;
+    subgraph concepts
+      encoding-->codepoint
+      encoding-->UTF-8
+      UTF-8-->codepoint
+
+      lazy-evaluation
+    end
+
+    subgraph code-syntax
+      module
+      module-->naming-conventions
+
+      named-function
+      function-->named-function
+      named-function-->function-capture
+      named-function-->naming-conventions
+      named-function-->def-arguments
+
+      variables
+      variables-->naming-conventions
+      variables-->type
+
+      naming-conventions
+    end
+
+    subgraph types
+      type-->atom
+      type-->number
+      type-->binary
+      type-->list
+      type-->tuple
+      type-->function
+      type-->pid
+    end
+
+    subgraph complex-types
+      keyword-list
+      list-->keyword-list
+      tuple-->keyword-list
+      atom-->keyword-list
+
+      map
+
+      struct
+      map-->struct
+
+      date
+      struct-->date
+
+      time
+      struct-->time
+
+      native_time
+      struct-->native_time
+
+      range
+      lazy-evaluation-->range
+      list-->range
+
+      stream
+      lazy-evaluation-->stream
+      list-->stream
+
+      ports
+
+      reference
+    end
+
+    subgraph numbers
+      number-->integer
+      integer-->integer-binary-form
+      integer-->integer-octal-form
+      integer-->integer-hexadecimal-form
+      integer-->codepoint
+
+      number-->float
+      float-->scientific-notation-form
+    end
+
+    subgraph lists
+      list-->head-tail-notation
+      list-->comprehension
+      list-->iodata
+
+      list-->charlist
+      codepoint-->charlist
+    end
+
+    subgraph binaries
+      binary-->binary-special-forms
+
+      subgraph strings
+        binary-->string
+
+        string-->string-interpolation
+        string-->heredocs
+      end
+    end
+
+    subgraph maps
+      map-->update-syntax
+    end
+
+    subgraph regular-expressions
+      regex
+      string-->regex
+    end
+
+    subgraph protocols
+      protocol
+      struct-->protocol
+    end
+
+    subgraph behaviours
+      behaviour
+    end
+
+    subgraph typespecs
+      typespec
+    end
+
+    subgraph metaprogramming
+      AST[Abstract Syntax Tree]
+      Macro
+    end
+
+    subgraph sigils
+      sigil_r["#126;r{...}"]
+      regex-->sigil_r
+
+      sigil_s["#126;s{...}"]
+      string-->sigil_s
+
+      sigil_c["#126;c{...}"]
+      charlist-->sigil_c
+
+      sigil_w["#126;w{...}"]
+      list-->sigil_w
+      string-->sigil_w
+
+      sigil_wa["#126;w{...}a"]
+      list-->sigil_wa
+      atom-->sigil_wa
+
+      sigil_wc["#126;w{...}c"]
+      list-->sigil_wc
+      charlist-->sigil_wc
+
+      sigil_D["#126;D{...}"]
+      date-->sigil_D
+
+      sigil_T["#126;T{...}"]
+      time-->sigil_T
+
+      sigil_N["#126;N{...}"]
+      native_time-->sigil_N
+    end
