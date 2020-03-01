@@ -10,5 +10,6 @@
     - [Logic](logic.md)
     - [Object Oriented](object-oriented.md)
     - [Procedural](procedural.md)
+  - [Stories](/reference/stories/README.md)
   - [Tooling](/reference/tooling/README.md)
   - [Types](/reference/types/README.md)
