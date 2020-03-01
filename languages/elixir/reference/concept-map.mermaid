@@ -1,4 +1,6 @@
 graph LR;
+    Start --> variables
+
     subgraph concepts
       encoding-->codepoint
       encoding-->UTF-8
@@ -12,25 +14,27 @@ graph LR;
       module-->naming-conventions
 
       named-function
-      function-->named-function
       named-function-->function-capture
       named-function-->naming-conventions
       named-function-->def-arguments
 
       variables
       variables-->naming-conventions
-      variables-->type
 
       naming-conventions
     end
 
     subgraph types
+      type
+      variables-->type
+
       type-->atom
       type-->number
       type-->binary
       type-->list
       type-->tuple
       type-->function
+      function-->named-function
       type-->pid
     end
 
@@ -109,15 +113,18 @@ graph LR;
 
     subgraph protocols
       protocol
+      module-->protocol
       struct-->protocol
     end
 
     subgraph behaviours
       behaviour
+      module-->behaviour
     end
 
     subgraph typespecs
       typespec
+      named-function-->typespec
     end
 
     subgraph metaprogramming
