@@ -24,13 +24,22 @@ document][csharp-example] as an example to base my work off of.
     - Do (`do`, `do*`, `dotimes`, `dolist`)
   - [Expressions][expr]
     - S-Expressions
-  - Functions
-  - Higher Order Functions
-  - Nested Functions
+  - [Functions][func]
+    - Default Arguments
+    - Keyword Arguments
+    - Optional Arguments
+    - Rest Arguments
+  - [Higher Order Functions][high]
+  - [Nested Functions][nest]
   - Packages
-  - Recursion
-  - Sameness
-  - Variables
+  - [Recursion][recu]
+  - [Sameness][same]
+    - Same Memory (`eq`)
+    - Same Value Primitives (`eql`)
+    - Same Value Objects (`equal`)
+    - Lenient Sameness (`equalp`)
+    - Type Specific (`=`, `char=`, `string-equal`, etc)
+  - [Variables][vari]
     - Global (`defparameter`, `defvar`)
     - Local (`let`, `let*`)
 
@@ -51,12 +60,12 @@ document][csharp-example] as an example to base my work off of.
   - Sequences
 
 ### CLOS (Needs Some Work)
-  - Classes
+  - [Classes][clas]
   - Generic Functions
-  - Methods
-  - Multiple Dispatch
-  - Multiple Inheritance
-  - Objects
+  - [Methods][meth]
+  - [Multiple Dispatch][mult]
+  - [Multiple Inheritance][inhe]
+  - [Objects][obje]
   - Slots
   
 ### Conditions & Restarts (Needs Some Work)
@@ -66,26 +75,26 @@ document][csharp-example] as an example to base my work off of.
   - Signalling
 
 ### Types
-  - Booleans
-  - Characters
-  - Hash Tables
-  - Numbers
+  - [Booleans][bool]
+  - [Characters][char]
+  - [Hash Tables][hash]
+  - [Numbers][numb]
     - Complex
-    - Floats
-    - Integers
+    - [Floats][floa]
+    - [Integers][inte]
     - Rationals
   - Sequences
-    - Arrays
+    - [Arrays][arra]
     - Conses
-      - Association Lists
-      - Lists
+      - [Association Lists][maps]
+      - [Lists][list]
       - Property Lists
-      - Sets
+      - [Sets][sets]
       - Trees
     - Vectors
   - Streams
-  - Strings
-  - Structures
+  - [Strings][stri]
+  - [Structures][stru]
 
 ## Exercise Concepts
 We should put a table here that go into the specifics to teach for each
@@ -102,4 +111,26 @@ sub-concepts. So things like `format.numbers` or maybe
 [cons]: ../../../reference/concepts/constants.md
 [enum]: ../../../reference/concepts/enumeration.md
 [expr]: ../../../reference/concepts/expressions.md
-
+[func]: ../../../reference/concepts/functions.md
+[high]: ../../../reference/concepts/higher_order_functions.md
+[nest]: ../../../reference/concepts/nested_functions.md
+[recu]: ../../../reference/concepts/recursion.md
+[same]: ../../../reference/concepts/sameness.md
+[vari]: ../../../reference/concepts/variables.md
+[clas]: ../../../reference/concepts/classes.md
+[meth]: ../../../reference/concepts/methods.md
+[mult]: ../../../reference/concepts/multiple-dispatch.md
+[inhe]: ../../../reference/concepts/inheritance.md
+[obje]: ../../../reference/concepts/objects.md
+[bool]: ../../../reference/types/boolean.md
+[char]: ../../../reference/types/char.md
+[hash]: ../../../reference/types/hash_map.md
+[numb]: ../../../reference/types/number.md
+[floa]: ../../../reference/types/floating_point_number.md
+[inte]: ../../../reference/types/integer.md
+[arra]: ../../../reference/types/array.md
+[maps]: ../../../reference/types/map.md
+[list]: ../../../reference/types/list.md
+[sets]: ../../../reference/types/set.md
+[stri]: ../../../reference/types/string.md
+[stru]: ../../../reference/types/struct.md
