@@ -1,4 +1,4 @@
-graph LR;
+graph TD;
     Start --> variables
 
     subgraph concepts
@@ -7,10 +7,13 @@ graph LR;
       UTF-8-->codepoint
 
       lazy-evaluation
+
+      actor-model-concurrency
     end
 
     subgraph code-syntax
       module
+      named-function-->module
       module-->naming-conventions
 
       named-function
@@ -19,7 +22,20 @@ graph LR;
       named-function-->def-arguments
 
       variables
+      variables-->assignment
+      variables-->pattern-matching
       variables-->naming-conventions
+
+      operators
+      variables-->operators
+      operators-->control-flow
+
+      control-flow
+      pattern-matching-->case
+      control-flow-->case
+      control-flow-->cond
+      control-flow-->if-unless-else
+      control-flow-->with
 
       naming-conventions
     end
@@ -29,13 +45,18 @@ graph LR;
       variables-->type
 
       type-->atom
+      type-->boolean
+      atom-->boolean
+      boolean-->operators
       type-->number
       type-->binary
       type-->list
       type-->tuple
       type-->function
+      operators-->function
       function-->named-function
       type-->pid
+      actor-model-concurrency-->pid
     end
 
     subgraph complex-types
@@ -45,6 +66,7 @@ graph LR;
       atom-->keyword-list
 
       map
+      type-->map
 
       struct
       map-->struct
@@ -107,8 +129,8 @@ graph LR;
     end
 
     subgraph regular-expressions
-      regex
-      string-->regex
+      Regex
+      string-->Regex
     end
 
     subgraph protocols
@@ -132,9 +154,26 @@ graph LR;
       Macro
     end
 
+    subgraph concurrency
+      spawn-->send-receive
+      pid-->spawn
+
+      send-receive
+      pid-->send-receive
+
+      GenServer
+      pid-->GenServer
+
+      Agent
+      pid-->Agent
+
+      Task
+      pid-->Task
+    end
+
     subgraph sigils
       sigil_r["#126;r{...}"]
-      regex-->sigil_r
+      Regex-->sigil_r
 
       sigil_s["#126;s{...}"]
       string-->sigil_s
