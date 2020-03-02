@@ -5,7 +5,9 @@ about: FOR MAINTAINERS ONLY - Use this template to create an issue to add a new 
 title: "[<LANG>] Add new student-facing document: <DOC>"
 labels: status/help-wanted, type/new-student-facing-doc
 assignees: ""
----[Use this issue template to describe how to add a new student-facing document. Only suggest adding a new student-facing document when no appropriate online resource can be found. Please fill in the issue template, and remove any sections wrapped in square brackets (such as this section!).]
+---
+  
+[Use this issue template to describe how to add a new student-facing document. Only suggest adding a new student-facing document when no appropriate online resource can be found. Please fill in the issue template, and remove any sections wrapped in square brackets (such as this section!).]
 
 This issue describes how to add a new <LANG> student-facing document: <DOC>.
 
