@@ -5,41 +5,41 @@ document][csharp-example] as an example to base my work off of.
 
 ## Concepts
 ### General
-  - [Anonymous Functions][anon]
-  - [Arithmetic][arit]
+  - [Anonymous Functions][anonymous-functions]
+  - [Arithmetic][arithmetic]
     - Prefix Notation
-  - [Assignment][assi]
+  - [Assignment][assignment]
     - Generic Setters
-  - [Comments][comm]
+  - [Comments][comments]
     - Line
     - Block
     - Conventions
-  - [Conditionals][cond]
+  - [Conditionals][conditionals]
     - One Branch (`and`, `or`, `when`, `unless`)
     - Two Branch (`if`)
     - More Branches (`cond`, `case`)
-  - [Constants][cons]
-  - [Enumeration][enum]
+  - [Constants][constants]
+  - [Enumeration][enumeration]
     - Loop Macro
     - Do (`do`, `do*`, `dotimes`, `dolist`)
-  - [Expressions][expr]
+  - [Expressions][expressions]
     - S-Expressions
-  - [Functions][func]
+  - [Functions][functions]
     - Default Arguments
     - Keyword Arguments
     - Optional Arguments
     - Rest Arguments
-  - [Higher Order Functions][high]
-  - [Nested Functions][nest]
+  - [Higher Order Functions][higher-order-functions]
+  - [Nested Functions][nested-functions]
   - Packages
-  - [Recursion][recu]
-  - [Sameness][same]
+  - [Recursion][recursion]
+  - [Sameness][sameness]
     - Same Memory (`eq`)
     - Same Value Primitives (`eql`)
     - Same Value Objects (`equal`)
     - Lenient Sameness (`equalp`)
     - Type Specific (`=`, `char=`, `string-equal`, etc)
-  - [Variables][vari]
+  - [Variables][variables]
     - Global (`defparameter`, `defvar`)
     - Local (`let`, `let*`)
 
@@ -60,12 +60,12 @@ document][csharp-example] as an example to base my work off of.
   - Sequences
 
 ### CLOS (Needs Some Work)
-  - [Classes][clas]
+  - [Classes][classes]
   - Generic Functions
-  - [Methods][meth]
-  - [Multiple Dispatch][mult]
-  - [Multiple Inheritance][inhe]
-  - [Objects][obje]
+  - [Methods][methods]
+  - [Multiple Dispatch][multiple-dispatch]
+  - [Multiple Inheritance][inheritance]
+  - [Objects][objects]
   - Slots
   
 ### Conditions & Restarts (Needs Some Work)
@@ -77,24 +77,24 @@ document][csharp-example] as an example to base my work off of.
 ### Types
   - [Booleans][bool]
   - [Characters][char]
-  - [Hash Tables][hash]
-  - [Numbers][numb]
+  - [Hash Tables][hash-map]
+  - [Numbers][number]
     - Complex
-    - [Floats][floa]
-    - [Integers][inte]
+    - [Floats][floating-point-number]
+    - [Integers][integer]
     - Rationals
   - Sequences
     - [Arrays][arra]
     - Conses
-      - [Association Lists][maps]
+      - [Association Lists][map]
       - [Lists][list]
       - Property Lists
-      - [Sets][sets]
+      - [set][set]
       - Trees
     - Vectors
   - Streams
-  - [Strings][stri]
-  - [Structures][stru]
+  - [Strings][string]
+  - [Structures][struct]
 
 ## Exercise Concepts
 We should put a table here that go into the specifics to teach for each
@@ -103,34 +103,34 @@ sub-concepts. So things like `format.numbers` or maybe
 `string-formatting.numbers`.
 
 [csharp-example]: ../../csharp/reference/README.md
-[anon]: ../../../reference/concepts/anonymous_functions.md
-[arit]: ../../../reference/concepts/arithmetic.md
-[assi]: ../../../reference/concepts/assignment.md
-[comm]: ../../../reference/concepts/comments.md
-[cond]: ../../../reference/concepts/conditionals.md
-[cons]: ../../../reference/concepts/constants.md
-[enum]: ../../../reference/concepts/enumeration.md
-[expr]: ../../../reference/concepts/expressions.md
-[func]: ../../../reference/concepts/functions.md
-[high]: ../../../reference/concepts/higher_order_functions.md
-[nest]: ../../../reference/concepts/nested_functions.md
-[recu]: ../../../reference/concepts/recursion.md
-[same]: ../../../reference/concepts/sameness.md
-[vari]: ../../../reference/concepts/variables.md
-[clas]: ../../../reference/concepts/classes.md
-[meth]: ../../../reference/concepts/methods.md
-[mult]: ../../../reference/concepts/multiple-dispatch.md
-[inhe]: ../../../reference/concepts/inheritance.md
-[obje]: ../../../reference/concepts/objects.md
+[anonymous-functions]: ../../../reference/concepts/anonymous_functions.md
+[arithmetic]: ../../../reference/concepts/arithmetic.md
+[assignment]: ../../../reference/concepts/assignment.md
+[comments]: ../../../reference/concepts/comments.md
+[conditionals]: ../../../reference/concepts/conditionals.md
+[constants]: ../../../reference/concepts/constants.md
+[enumeration]: ../../../reference/concepts/enumeration.md
+[expressions]: ../../../reference/concepts/expressions.md
+[functions]: ../../../reference/concepts/functions.md
+[higher-order-functions]: ../../../reference/concepts/higher_order_functions.md
+[nested-functions]: ../../../reference/concepts/nested_functions.md
+[recursion]: ../../../reference/concepts/recursion.md
+[sameness]: ../../../reference/concepts/sameness.md
+[variables]: ../../../reference/concepts/variables.md
+[classes]: ../../../reference/concepts/classes.md
+[methods]: ../../../reference/concepts/methods.md
+[multiple-dispatch]: ../../../reference/concepts/multiple-dispatch.md
+[inheritance]: ../../../reference/concepts/inheritance.md
+[objects]: ../../../reference/concepts/objects.md
 [bool]: ../../../reference/types/boolean.md
 [char]: ../../../reference/types/char.md
-[hash]: ../../../reference/types/hash_map.md
-[numb]: ../../../reference/types/number.md
-[floa]: ../../../reference/types/floating_point_number.md
-[inte]: ../../../reference/types/integer.md
-[arra]: ../../../reference/types/array.md
-[maps]: ../../../reference/types/map.md
+[hash-map]: ../../../reference/types/hash_map.md
+[number]: ../../../reference/types/number.md
+[floating-point-number]: ../../../reference/types/floating_point_number.md
+[integer]: ../../../reference/types/integer.md
+[array]: ../../../reference/types/array.md
+[map]: ../../../reference/types/map.md
 [list]: ../../../reference/types/list.md
-[sets]: ../../../reference/types/set.md
-[stri]: ../../../reference/types/string.md
-[stru]: ../../../reference/types/struct.md
+[set]: ../../../reference/types/set.md
+[string]: ../../../reference/types/string.md
+[struct]: ../../../reference/types/struct.md
