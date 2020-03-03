@@ -17,7 +17,7 @@
 Strings are immutable, but can be combined together to make new strings, or have elements replaced. This goal can be accomplished by using string methods, or operators like `+` or `+=` (which are overloaded to work with strings).
 Python also has a concept of string formatting, like many other languages.
 
- - The [`str.join()`][str-join-doc] method is useful to concatenate an iterable of strings into one string.
+ - The [`str.join()`][str-join] method is useful to join an iterable of strings into one string by interspersing them with a common value, e.g. `":".join("abcde")` would create `"a:b:c:d:e"`.
  - [`str.format()`][str-format] is an idiomatic way to do string interpolation in Python (inserting one or more string value(s) into another).
  - [Format strings][format-str] are another convenient way to interpolate values into a string. This strategy is particularly useful when more than one named variable needs to be inserted into a final output.
 
