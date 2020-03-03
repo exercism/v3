@@ -1,0 +1,328 @@
+digraph G {
+  graph [fontsize=10 fontname="Verdana" compound=true];
+  node [shape=record fontsize=10 fontname="Verdana"];
+
+  "Start" [shape=box,style=filled,color=green];
+
+  subgraph cluster_0 {
+    node [style=filled];
+    label = "Concepts";
+    color = blue;
+
+    "encoding";
+    "codepoint";
+    "UTF-8";
+    "lazy-evaluation";
+    "actor-model-concurrency";
+  }
+
+  subgraph cluster_1 {
+    node [style=filled];
+    label = "Code Syntax";
+    color = blue;
+
+    "module";
+    "named-function";
+    "variables";
+    "operators";
+    "control-flow";
+    "naming-conventions";
+    "function-capture";
+    "default-arguments";
+    "assignment";
+    "pattern-matching";
+    "case";
+    "cond";
+    "if-unless-else";
+    "with";
+  }
+
+  subgraph cluster_2 {
+    node [style=filled];
+    label = "Types";
+    color = blue;
+
+    "type";
+    "atom";
+    "boolean";
+    "number";
+    "binary";
+    "list";
+    "tuple";
+    "function";
+    "pid";
+  }
+
+  subgraph cluster_3 {
+    node [style=filled];
+    label = "Complex Types";
+    color = blue;
+
+    "keyword-list";
+    "map";
+    "struct";
+    "date";
+    "time";
+    "native_time";
+    "range";
+    "stream";
+    "ports";
+    "reference";
+  }
+
+  subgraph cluster_4 {
+    node [style=filled];
+    label = "Numbers";
+    color = blue;
+
+    "number";
+    "integer";
+    "float";
+    "integer-binary-form";
+    "integer-octal-form";
+    "integer-hexadecimal-form";
+    "codepoint";
+    "scientific-notation-form";
+  }
+
+  subgraph cluster_5 {
+    node [style=filled];
+    label = "Lists";
+    color = blue;
+
+    "head-tail-notation";
+    "comprehension";
+    "iodata";
+    "charlist";
+  }
+
+  subgraph cluster_6 {
+    node [style=filled];
+    label = "Binaries";
+    color = blue;
+
+    "binary-special-forms";
+
+
+    subgraph cluster_6_1 {
+      node [style=filled];
+      label = "Strings";
+      color = blue;
+
+      "string"
+      "string-interpolation";
+      "heredocs";
+    }
+  }
+
+  subgraph cluster_7 {
+    node [style=filled];
+    label = "Maps";
+    color = blue;
+
+    "update-syntax";
+  }
+
+  subgraph cluster_8 {
+    node [style=filled];
+    label = "Regular Expressions";
+    color = blue;
+
+    "Regex";
+  }
+
+  subgraph cluster_9 {
+    node [style=filled];
+    label = "Protocols";
+    color = blue;
+
+    "protocol";
+  }
+
+  subgraph cluster_10 {
+    node [style=filled];
+    label = "Behaviours";
+    color = blue;
+
+    "behaviour";
+  }
+
+  subgraph cluster_11 {
+    node [style=filled];
+    label = "Typespecs";
+    color = blue;
+
+    "typespec";
+  }
+
+  subgraph cluster_12 {
+    node [style=filled];
+    label = "Metaprogramming";
+    color = blue;
+
+    "Abstact Syntax Tree";
+    "Macro";
+  }
+
+  subgraph cluster_13 {
+    node [style=filled];
+    label = "Concurrency";
+    color = blue;
+
+    "spawn";
+    "send-receive";
+    "GenServer";
+    "Agent";
+    "Task";
+  }
+
+  subgraph cluster_14 {
+    node [style=filled];
+    label = "Sigils";
+    color = blue;
+
+    "~r";
+    "~s";
+    "~c";
+    "~w";
+    "~w/.../a";
+    "~w/.../c";
+    "~D\[...\]";
+    "~T\[...\]";
+    "~N\[...\]";
+  }
+
+  // Concept Edges
+
+  "encoding" -> "codepoint";
+  "encoding" -> "UTF-8";
+  "UTF-8" -> "codepoint";
+
+  // Syntax Edges
+
+  "named-function" -> "module";
+  "module" -> "naming-conventions";
+
+  "named-function" -> "function-capture";
+  "named-function" -> "naming-conventions";
+  "named-function" -> "default-arguments";
+
+  "Start" -> "variables";
+  "variables" -> "assignment";
+  "variables" -> "pattern-matching";
+  "variables" -> "naming-conventions";
+
+  "variables" -> "operators";
+  "operators" -> "control-flow";
+
+  "pattern-matching" -> "case";
+  "control-flow" -> "case";
+  "control-flow" -> "cond";
+  "control-flow" -> "if-unless-else";
+  "control-flow" -> "with";
+
+  // Type edges
+
+  "variables" -> "type";
+  "type" -> "atom";
+  "type" -> "boolean";
+  "atom" -> "boolean";
+  "boolean" -> "operators";
+  "type" -> "number";
+  "type" -> "binary";
+  "type" -> "list";
+  "type" -> "tuple";
+  "type" -> "function";
+  "operators" -> "function";
+  "function" -> "named-function";
+  "type" -> "pid";
+  "actor-model-concurrency" -> "pid";
+
+  // Complex Type edges
+
+  "list" -> "keyword-list";
+  "tuple" -> "keyword-list";
+  "atom" -> "keyword-list";
+  "type" -> "map";
+  "map" -> "struct";
+  "struct" -> "date";
+  "struct" -> "time";
+  "struct" -> "native_time";
+  "lazy-evaluation" -> "range";
+  "list" -> "range";
+  "lazy-evaluation" -> "stream";
+  "list" -> "stream";
+
+  // Number edges
+
+  "number" -> "integer";
+  "integer" -> "integer-binary-form";
+  "integer" -> "integer-octal-form";
+  "integer" -> "integer-hexadecimal-form";
+  "integer" -> "codepoint";
+
+  "number" -> "float";
+  "float" -> "scientific-notation-form";
+
+  // List edges
+
+  "list" -> "head-tail-notation";
+  "list" -> "comprehension";
+  "list" -> "iodata";
+
+  "list" -> "charlist";
+  "codepoint" -> "charlist";
+
+  // Binary edges
+
+  "binary" -> "string";
+
+  "string" -> "string-interpolation";
+  "string" -> "heredocs";
+  "binary" -> "binary-special-forms";
+
+  // Map edges
+
+  "map" -> "update-syntax";
+
+  // Regular Expression edges
+
+  "string" -> "Regex";
+
+  // Protocol edges
+
+  "module" -> "protocol";
+  "struct" -> "protocol";
+
+  // Behavior edges
+
+  "module" -> "behaviour";
+
+  // Typespec edges
+
+  "named-function" -> "typespec";
+
+  // Concurrency edges
+
+  "spawn" -> "send-receive";
+  "pid" -> "spawn";
+  "pid" -> "send-receive";
+  "pid" -> "GenServer";
+  "pid" -> "Agent";
+  "pid" -> "Task";
+
+  // Sigil edges
+
+  "Regex" -> "~r";
+  "string" -> "~s";
+  "charlist" -> "~c";
+  "list" -> "~w";
+  "string" -> "~w";
+  "list" -> "~w/.../a";
+  "atom" -> "~w/.../a";
+  "charlist" -> "~w/.../c";
+  "list" -> "~w/.../c";
+  "date" -> "~D\[...\]";
+  "time" -> "~T\[...\]";
+  "native_time" -> "~N\[...\]";
+}
