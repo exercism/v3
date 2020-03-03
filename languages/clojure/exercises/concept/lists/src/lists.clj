@@ -29,5 +29,5 @@
   "Creates and empty list, adds Clojure and Lisp, removes Lisp, adds
   Java and Javascript, then finally return a count of the total number
   of languages."
-  [lang-list]
+  []
   )

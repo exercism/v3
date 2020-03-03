@@ -20,7 +20,7 @@
   (count lang-list))
 
 (defn learning-list []
-  (->> (empty-list)
+  (->> (new-list)
        (add-language "Clojure")
        (add-language "Lisp")
        remove-language
