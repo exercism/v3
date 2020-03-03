@@ -170,16 +170,19 @@ end
 - naming
 - functions
   - arity
-  - one-line and multi-line syntaxes
+  - higher-order functions
+  - one-line syntax
+  - multi-line syntax
   - multi-headed functions
-  - default values for arguments
-  - pipe operator
-  - capturing (`&`)
+  - default arguments
+  - pipelines
+  - capture syntax (`&`)
 - modules
   - module attributes
   - visibility (`def`/`defp`)
+- immutability
 - pattern matching
-  - `:ok`/`:error ` tuples
+  - `:ok`/`:error` tuples
 - types
   - integer
   - atom
