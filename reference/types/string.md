@@ -37,3 +37,4 @@ This exercise extracts information from log lines. The reference implementation 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/strings/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/strings/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/strings/.docs/introduction.md
+[implementation-python]: ../../languages/python/exercises/concept/strings/.docs/introduction.md
