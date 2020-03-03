@@ -4,7 +4,7 @@ This issue describes how to implement the `strings` concept exercise for the F# 
 
 The goal of this exercise is to teach the student the basics of the Concept of Strings in [F#][docs.microsoft.com-string].
 
-## Things to teach
+## Learning objectives
 
 - The existence of the `string` type.
 - How to create a string.
@@ -13,7 +13,7 @@ The goal of this exercise is to teach the student the basics of the Concept of S
 - Basic string formatting (using `+` and `sprintf`).
 - Strings are immutable.
 
-## Things not to teach
+## Out of scope
 
 - Strings can be enumerated.
 - String slicing.
@@ -125,9 +125,9 @@ An entry should be added to the track's `config.json` file for the new concept e
 
 These files are specific to the F# track:
 
-- `<NAME>.fs`. the stub implementation file, which is the starting point for students to work on the exercise.
-- `<NAME>.fsproj`: the F# project file.
-- `<NAME>Tests.fs`: the test suite.
+- `Strings.fs`. the stub implementation file, which is the starting point for students to work on the exercise.
+- `Strings.fsproj`: the F# project file.
+- `StringsTests.fs`: the test suite.
 - `.meta/Example.fs`: an example implementation that passes all the tests. The project file should _not_ include this file.
 
 ## Step 7: update the general concept document
