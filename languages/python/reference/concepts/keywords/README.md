@@ -106,8 +106,8 @@ Python has -- as of version 3.8 -- 35 distinct keywords that are reserved by the
 - [`async`][keyword-async]
 - [`await`][keyword-await]
 
-[objects-general]: ../../../../reference/concepts/objects.md
-[operators-general]: ../../../../reference/concepts/operators.md
+[objects-general]: ../../../../../reference/concepts/objects.md
+[operators-general]: ../../../../../reference/concepts/operators.md
 [keyword-and]: ./and.md
 [keyword-as]: ./as.md
 [keyword-assert]: ./assert.md
