@@ -10,28 +10,33 @@ There are three different log levels:
 
 You have three tasks.
 
-### 1. Parse log level
+### 1. Output log line
 
-Define a `LogLevel` enum that has three elements:
+Define a `LogLevel` enum that has three elements, these are the numbers assigned to each of them:
 
-- `Info`
-- `Warning`
-- `Error`
+- `Info` - 1
+- `Warning` - 2
+- `Error` - 3
 
-Next, implement a method to parse the log level of a log line:
+Next, implement a method that will output a log line, given the `LogLevel` and the message:
 
 ```csharp
-LogLine.ParseLogLevel("[INFO]: File deleted")
-// Returns: LogLevel.Info
+LogLine.OutputLogLine(1, "File deleted")
+// Returns: "[Info]: File deleted"
 ```
 
-### 2. Support unknown log level
+### 2. Create a more verbose log line
 
-Unfortunately, occasionally some log lines have an unknown log level. To gracefully handle these log lines, add an `Unknown` element to the `LogLevel` enum which should be returned when parsing an unknown log level:
+The system needs to improve by being a bit more verbose. This time, the displayed log levels are more than one word. Aside from that a new level is added to differentiate between errors. Here's the updated list:
+
+- "Information Message" - 1
+- "Warning" - 2
+- "Minor Error" - 3
+- "Critical Error" - 4
 
 ```csharp
-LogLine.ParseLogLevel("[FATAL]: Invalid operation")
-// Returns: LogLevel.Unknown
+LogLine.OutputVerboseLogLine(4, "Invalid operation")
+// Returns: "[CRITICAL ERROR]: Invalid operation"
 ```
 
 ### 3. Convert log line to short format
@@ -40,10 +45,10 @@ The log level of a log line is quite verbose. To reduce the disk space needed to
 
 The encoded log level is simple mapping of a log level to a number:
 
-- `Unknown` -> `0`
 - `Info` -> `1`
 - `Warning` -> `2`
-- `Error` -> `4`
+- `MinorError` -> `3`
+- `CriticalError` -> `4`
 
 Implement a method that can output the shortened log line format:
 
