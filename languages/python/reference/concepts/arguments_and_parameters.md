@@ -1,4 +1,4 @@
-# Method arguments
+# Arguments & parameters
 
 TODO: ADD MORE
 
@@ -7,3 +7,4 @@ TODO: ADD MORE
 - the exercise requires a single positional parameter in the function signature [origin](./exercise-concepts/leap.md)
 - concept over arguments of a function and how to use them is required [origin](./exercise-concepts/variable-length-quantity.md)
 - the methods returning "row" and "column" need to take both `self` and an integer as arguments [origin](./exercise-concepts/matrix.md)
+- the example `__init__` method has `self`, direction, x, and y (coordinates) as parameters. It also uses `self` and `commands` (a string) for parameters of the `move()` method. [origin](./exercise-concepts/robot-simulator.md)

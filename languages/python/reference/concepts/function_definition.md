@@ -1,4 +1,4 @@
-# Functions
+# Function definition
 
 TODO: ADD MORE
 

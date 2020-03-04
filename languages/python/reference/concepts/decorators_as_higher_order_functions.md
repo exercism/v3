@@ -1,4 +1,4 @@
-# Higher order function
+# Decorators as higher-order functions
 
 TODO: ADD MORE
 
