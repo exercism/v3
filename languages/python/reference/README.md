@@ -515,7 +515,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 [pythonic]: ./concepts/pythonic.md
 [raise]: ./concepts/raise.md
 [recursion]: ../../../reference/concepts/recursion.md
-[recursive-data-structures]: ./concepts/recursive-data-structures.md
+[recursive-data-structures]: ./concepts/recursive_data_structures.md
 [regular-expressions]: ./concepts/regular_expressions.md
 [repl]: ../../../reference/concepts/repl.md
 [return-value]: ./concepts/return_value.md
