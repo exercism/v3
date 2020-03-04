@@ -19,11 +19,12 @@
   [lang-list]
   (count lang-list))
 
+;; Learners are not expected to use thereading macros.
 (defn learning-list []
-  (->> (new-list)
-       (add-language "Clojure")
-       (add-language "Lisp")
-       remove-language
-       (add-language "Java")
-       (add-language "Javascript")
-       count-languages))
+  (count-languages
+   (add-language "Javascript"
+                 (add-language "Java"
+                               (remove-language
+                                (add-language "Lisp"
+                                              (add-language "Clojure"
+                                                            (new-list))))))))

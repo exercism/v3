@@ -20,4 +20,4 @@ The [number of items](https://clojuredocs.org/clojure.core/count) in a list can 
 
 ### 6. Put it all together
 
-Remember that function calls can be nested and that you can optionally use [convenient macros](https://clojure.org/guides/threading_macros) for deep nesting.
+Remember that function calls can be nested.
