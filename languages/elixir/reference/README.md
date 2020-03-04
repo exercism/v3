@@ -32,7 +32,7 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 - Lazy Computation
 - Guards
 - Compiling
-- Scripts (*.exs) vs Code (*.ex)
+- Scripts (\*.exs) vs Code (\*.ex)
 - TODO: more
 
 ### Modules
@@ -53,7 +53,7 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 - Naming conventions
   - functions prefixed with `is_`
   - functions ending in `?`
-  - functions ending in `!'
+  - functions ending in `!`
 - Arugment positioning conventions
 - [Default arguments](../../../reference/concepts/default_arguments.md)
 - Capture Syntax
