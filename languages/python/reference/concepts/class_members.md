@@ -2,4 +2,4 @@
 
 TODO: ADD MORE
 
-- student must know how members of a class work [origin](./exercise-concepts/binary-search-tree.md)
+- student must know how members of a class work [binary-search-tree](../exercise-concepts/binary-search-tree.md)

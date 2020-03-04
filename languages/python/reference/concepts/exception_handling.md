@@ -2,4 +2,4 @@
 
 TODO: ADD MORE
 
-- the exercise requires Exception handling [origin](./exercise-concepts/hamming.md)
+- the exercise requires Exception handling [hamming](../exercise-concepts/hamming.md)

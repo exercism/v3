@@ -2,4 +2,4 @@
 
 TODO: ADD MORE
 
-- a general understanding of bitflags is required to solve this exercise [origin](./exercise-concepts/allergies.md)
+- a general understanding of bitflags is required to solve this exercise [allergies](../exercise-concepts/allergies.md)

@@ -2,4 +2,4 @@
 
 TODO: ADD MORE
 
-- the exercise relies on the use of powers of two in fundamental binary (bitwise) operations [origin](./exercise-concepts/allergies.md)
+- the exercise relies on the use of powers of two in fundamental binary (bitwise) operations [allergies](../exercise-concepts/allergies.md)

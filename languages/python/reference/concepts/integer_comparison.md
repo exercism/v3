@@ -2,4 +2,4 @@
 
 TODO: ADD MORE
 
-- concept required to solve the exercise [origin](./exercise-concepts/binary-search-tree.md)
+- concept required to solve the exercise [binary-search-tree](../exercise-concepts/binary-search-tree.md)
