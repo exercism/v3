@@ -4,7 +4,7 @@
 
 ## Sources
 
-1. ‘UTF-16’. _Wikipedia_, 13 Feb. 2020. _Wikipedia_, <https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=940679308>.
+1. UTF-16, Wikipedia. (2020). <https://en.wikipedia.org/w/index.php?title=UTF-16&oldid=940679308> (accessed February 29, 2020).
 
 [concept-encoding]: ./character_encoding.md
 [type-bit]: ../types/bit.md

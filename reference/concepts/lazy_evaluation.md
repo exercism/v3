@@ -4,4 +4,4 @@
 
 ## Sources
 
-1. ‘Lazy Evaluation’. _Wikipedia_, 29 Feb. 2020. _Wikipedia_, <https://en.wikipedia.org/w/index.php?title=Lazy_evaluation&oldid=943229419>.
+1. Lazy evaluation, Wikipedia. (2020). <https://en.wikipedia.org/w/index.php?title=Lazy_evaluation&oldid=943229419> (accessed February 29, 2020).

@@ -4,4 +4,4 @@
 
 ## Sources
 
-1. ‘Eager Evaluation’. _Wikipedia_, 15 Apr. 2018. _Wikipedia_, <https://en.wikipedia.org/w/index.php?title=Eager_evaluation&oldid=836564227>.
+1. Eager evaluation, Wikipedia. (2018). <https://en.wikipedia.org/w/index.php?title=Eager_evaluation&oldid=836564227> (accessed February 29, 2020).

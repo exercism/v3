@@ -4,7 +4,7 @@
 
 ## Sources
 
-1. ‘UTF-8’. _Wikipedia_, 29 Feb. 2020. _Wikipedia_, <https://en.wikipedia.org/w/index.php?title=UTF-8&oldid=943133122>.
+1. UTF-8, Wikipedia. (2020). <https://en.wikipedia.org/w/index.php?title=UTF-8&oldid=943133122> (accessed February 29, 2020).
 
 [concept-encoding]: ./character_encoding.md
 [type-bit]: ../types/bit.md

@@ -4,4 +4,4 @@
 
 ## Sources
 
-1. ‘Actor Model’. _Wikipedia_, 4 Feb. 2020. _Wikipedia_, <https://en.wikipedia.org/w/index.php?title=Actor_model&oldid=939106706>.
+1. Actor model, Wikipedia. (2020). <https://en.wikipedia.org/w/index.php?title=Actor_model&oldid=939106706> (accessed February 29, 2020).

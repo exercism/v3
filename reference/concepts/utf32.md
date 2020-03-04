@@ -4,7 +4,7 @@
 
 ## Sources
 
-1. ‘UTF-32’. _Wikipedia_, 15 Nov. 2019. _Wikipedia_, <https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=926352418>.
+1. UTF-32, Wikipedia. (2019). <https://en.wikipedia.org/w/index.php?title=UTF-32&oldid=926352418> (accessed February 29, 2020).
 
 [concept-encoding]: ./character_encoding.md
 [type-bit]: ../types/bit.md
