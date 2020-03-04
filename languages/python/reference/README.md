@@ -1,4 +1,4 @@
-[ ]# Python reference
+# Python reference
 
 Python is an interpreted, dynamically (but strongly) typed, and garbage-collected general programming language that has become extremely popular due to its readability, low barrier for entry, and exceptionally deep ecosystem of libraries and tools. Python is object-based, but is inherently multi-paradigm and has drawn together influences from a wide range of programming languages, including ABC, Haskell, Lisp, and Modula-3.
 
@@ -130,7 +130,7 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
   - [ ] [Set comprehension][set-comprehension]
   - [ ] [Generator comprehension][generator-comprehension]
 
-- Context managers
+- [ ] Context managers
   - [ ] [`with`][keyword-with]
 
 - [ ] [Decorators][decorators]
@@ -170,7 +170,7 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
     - [ ] [Custom classes][custom-classes]
       - [ ] [`class`][keyword-class]
     - [ ] [Class members][class-members]
-      - Behavior
+      - [ ] Behavior
         - [ ] [Methods][methods-general]
           - [ ] [Instance Methods][instance-methods]
             - [ ] [Implicit self][implicit-self]
