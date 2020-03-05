@@ -16,8 +16,8 @@ Before you can add languages, you'll need to start by creating an new list. Defi
 As you explore Exercism and find languages you want to learn, you'll need to be able to add them to your list. Define a function to add a new language the the beginning of your list.
 
 ``` clojure
-(add-language "Javascript" '("Clojurescript"))
-;; => '("Javascript" "Clojurescript")
+(add-language "JavaScript" '("Clojurescript"))
+;; => '("JavaScript" "Clojurescript")
 ```
 
 ### 3. Check the language last added
