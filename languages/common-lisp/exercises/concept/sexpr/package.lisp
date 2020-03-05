@@ -1,3 +1,6 @@
+(push (uiop:getcwd) asdf:*central-registry*)
+(ql:quickload :fiveam)
+
 (defpackage #:sexpr
   (:use :cl)
   (:export :is-an-atom-p :is-a-cons-p))
