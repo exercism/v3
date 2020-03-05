@@ -131,6 +131,16 @@ Short answer: no. For the moment, we have all the v3 tracks in this single monor
 
 The basic communication channel for maintainers is Slack, and in particular the maintainer-only `#maintaining-<track>` channel. For communication with everyone else, GitHub issues should be used, for obvious reasons (discoverability, familiarity, etc.). We've also enabled the GitHub Projects feature on the v3 repo, so you can organize your track's v3 transition there too.
 
+## Should I use citations
+
+Yes! Please use citations in any reference documentation (files under `**/reference/**`). We are using the [Science of Computer Programming citation style][socp-citation-style]. This means that when citing website, please use this format:
+
+> $TITLE, $SOURCE. ($PUBLISHED_DATE). <$URL> (accessed $ACCESSED_DATE).
+
+For example:
+> Actor model, Wikipedia. (2020). <https://en.wikipedia.org/w/index.php?title=Actor_model&oldid=939106706> (accessed February 29, 2020).
+
+
 ## More questions?
 
 Do you have more questions or feel that something is missing? Please let us know by [opening a GitHub issue][open-github-issue].
@@ -152,3 +162,4 @@ Do you have more questions or feel that something is missing? Please let us know
 [concepts]: ../../reference/README.md
 [concept-exercise-issue-example]: https://github.com/exercism/v3/issues/33
 [open-github-issue]: https://github.com/exercism/v3/issues/new/choose
+[socp-citation-style] https://paperpile.com/s/science-of-computer-programming-citation-style/#examples-website-citations
