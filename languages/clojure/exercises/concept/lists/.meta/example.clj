@@ -19,7 +19,7 @@
   [lang-list]
   (count lang-list))
 
-;; Learners are not expected to use thereading macros.
+;; Learners are not expected to use threading macros.
 (defn learning-list []
   (count-languages
    (add-language "Javascript"
