@@ -22,7 +22,7 @@
 ;; Learners are not expected to use threading macros.
 (defn learning-list []
   (count-languages
-   (add-language "Javascript"
+   (add-language "JavaScript"
                  (add-language "Java"
                                (remove-language
                                 (add-language "Lisp"
