@@ -95,6 +95,8 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - [Tuples][tuple]
 - Unions (`std::variant`)
 - [Ranges][range] (Defer to C++2a)
+- Bitset
+- Dynamic bitset
 
 Let pointers aside as long as we can avoid them, using references instead.
 
