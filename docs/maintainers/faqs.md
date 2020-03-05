@@ -162,4 +162,4 @@ Do you have more questions or feel that something is missing? Please let us know
 [concepts]: ../../reference/README.md
 [concept-exercise-issue-example]: https://github.com/exercism/v3/issues/33
 [open-github-issue]: https://github.com/exercism/v3/issues/new/choose
-[socp-citation-style] https://paperpile.com/s/science-of-computer-programming-citation-style/#examples-website-citations
+[socp-citation-style]: https://paperpile.com/s/science-of-computer-programming-citation-style/#examples-website-citations
