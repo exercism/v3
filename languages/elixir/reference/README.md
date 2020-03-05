@@ -67,6 +67,7 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
   - Type Comparison Hierarchy
 - Control Structures
 - Literal Forms of data structures (lists, keyword lists, maps)
+- Bitwise functions and operators
 - TODO: more
 
 ### Basic Types
