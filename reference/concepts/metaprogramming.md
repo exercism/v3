@@ -6,6 +6,6 @@ Metaprogramming allows one to read, modify, analyze and generate programs within
 
 ## Sources
 
-1. Wikipedia contributors. (2019, September 13). Metaprogramming. In Wikipedia, The Free Encyclopedia. Retrieved 19:32, November 14, 2019, from https://en.wikipedia.org/w/index.php?title=Metaprogramming&oldid=915430210
+1. Metaprogramming, Wikipedia. (2019). <https://en.wikipedia.org/w/index.php?title=Metaprogramming&oldid=915430210> (accessed March 5, 2020).
 
 [concept-macros]: ./macros.md

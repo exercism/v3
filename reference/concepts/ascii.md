@@ -6,4 +6,4 @@
 
 ## Sources
 
-1. ‘ASCII’. Wikipedia, 12 Jan. 2020. Wikipedia, https://en.wikipedia.org/w/index.php?title=ASCII&oldid=935468511.
+1. ASCII, Wikipedia. (2020). <https://en.wikipedia.org/w/index.php?title=ASCII&oldid=935468511> (accessed March 5, 2020).
