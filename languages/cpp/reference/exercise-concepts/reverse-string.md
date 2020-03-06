@@ -50,10 +50,13 @@ std::string reverse_string(const std::string& text)
 - .cpp file:  the most common approach is to use a `.cpp` for the definitions
 - namespaces: the function is member of a namespace
 - functions: used as the main entry point for the exercise
-- function arguments: the function has two arguments
+- function arguments: `text` is passed as argument
 - strings: input is a string (or maybe string_view)
 - return values: the result is returned by the function
+- reference: input is passed by reference to prevent unnecesary copy
 - pass by reference to const: avoid making copy of input
+- constructor: initialize reversed string
+- constructor overload: select iterator overload of the constructor
 - iterators: view input as a range
 
 
