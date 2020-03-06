@@ -64,6 +64,7 @@ std::string reverse_string(const std::string& text)
 
 - implement solution as `inline` functions in the `.h` file
 - using `std::string_view` to pass input by argument
+- using `std::reverse()` to reverse copy of the input
 
 
 ## Common mistakes
