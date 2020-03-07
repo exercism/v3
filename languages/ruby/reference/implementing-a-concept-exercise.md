@@ -11,7 +11,7 @@ languages
 └── ruby
     └── exercises
         └── concept
-            └── &lt;NAME&gt;
+            └── <NAME>
                 ├── .docs
                 |   ├── instructions.md
                 |   ├── introduction.md
@@ -21,8 +21,8 @@ languages
                 |   |── config.json
                 |   |── design.md
                 |   └── example.rb
-                ├── &lt;NAME&gt;.rb
-                └── &lt;NAME&gt;_test.rb
+                ├── <NAME>.rb
+                └── <NAME>_test.rb
 </pre>
 
 ## Step 1: adding track-specific files
