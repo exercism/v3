@@ -1,3 +1,8 @@
+(load "sexpr.lisp")
+(ql:quickload :fiveam)
+(defpackage #:sexpr-test
+  (:use :cl :fiveam :sexpr)
+  (:export :run-test-suite))
 (in-package :sexpr-test)
 
 (def-suite sexpr-suite)
@@ -33,3 +38,8 @@
   (is-false (sexpr:is-a-cons-p #'atom))
   (is-false (sexpr:is-a-cons-p #'consp))
   (is-false (sexpr:is-a-cons-p nil)))
+
+(defun run-test-suite ()
+  (progn
+    (load "sexpr.lisp")
+    (run! 'sexpr-suite)))
