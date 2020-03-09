@@ -1,4 +1,3 @@
 .DS_Store
 **/target
-**/exercises/**/*/Cargo.lock
-
+**/exercises/**/Cargo.lock
