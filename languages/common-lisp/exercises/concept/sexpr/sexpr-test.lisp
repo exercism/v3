@@ -40,6 +40,5 @@
   (is-false (sexpr:is-a-cons-p nil)))
 
 (defun run-test-suite ()
-  (progn
-    (load "sexpr.lisp")
-    (run! 'sexpr-suite)))
+  (load "sexpr.lisp")
+  (run! 'sexpr-suite))
