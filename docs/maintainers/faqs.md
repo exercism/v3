@@ -135,13 +135,13 @@ The basic communication channel for maintainers is Slack, and in particular the 
 
 Yes! Please use citations in any reference documentation (files under `**/reference/**`). We are using the [Science of Computer Programming citation style][socp-citation-style]. This means that when citing website, please use this format:
 
-> $TITLE, $SOURCE. ($PUBLISHED_DATE). $URL (accessed $ACCESSED_DATE).
+> $TITLE, $SOURCE. ($PUBLISHED_DATE). $URL (accessed \$ACCESSED_DATE).
 
 For example:
 
 > [1] Actor model, Wikipedia. (2020). https://en.wikipedia.org/w/index.php?title=Actor_model&oldid=939106706 (accessed February 29, 2020).
 
-The [actor model reference documentation][actor_model-reference-documentation] shows how to add a citation to reference documentation.
+To include a citation in reference documentation, add the citation reference to the bottom of the page. Then add with a line with the `---` separator above the citation. Finally, put the cited text in [blockquotes][blockquotes] and append a superscript referring to the citation number (usually `<sup>1</sup>`). See the [actor model reference documentation][actor_model-reference-documentation] for an example.
 
 ### Generating citations
 
@@ -171,3 +171,4 @@ Do you have more questions or feel that something is missing? Please let us know
 [open-github-issue]: https://github.com/exercism/v3/issues/new/choose
 [socp-citation-style]: https://paperpile.com/s/science-of-computer-programming-citation-style/#examples-website-citations
 [zoterobib]: https://zbib.org/
+[blockquotes]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#blockquotes
