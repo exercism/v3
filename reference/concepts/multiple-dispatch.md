@@ -1,7 +1,7 @@
 # Multiple Dispatch
 
-> Multiple Dispatch is a form of [polymorphism][concept-polymorphism].
-> [Methods][concept-methods] are dynamically dispatched based on the type of _all_ their arguments.<sup>1</sup>
+Multiple Dispatch is a form of [polymorphism][concept-polymorphism].
+[Methods][concept-methods] are dynamically dispatched based on the type of _all_ their arguments.<sup>1</sup>
 
 [concept-polymorphism]: ./polymorphism.md
 [concept-methods]: methods.md
