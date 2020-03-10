@@ -4,4 +4,4 @@
 
 ---
 
-[1] Actor model, Wikipedia. (2020). <https://en.wikipedia.org/w/index.php?title=Actor_model&oldid=939106706> (accessed February 29, 2020).
+[1] Actor model, Wikipedia. (2020). https://en.wikipedia.org/w/index.php?title=Actor_model&oldid=939106706 (accessed February 29, 2020).
