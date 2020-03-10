@@ -1,6 +1,6 @@
 # Metaprogramming
 
-> Metaprogramming allows one to read, modify, analyze and generate programs within a program itself.<sup>1</sup>
+Metaprogramming allows one to read, modify, analyze and generate programs within a program itself.<sup>1</sup>
 
 **See also:** [Macros][concept-macros]
 

@@ -141,7 +141,9 @@ For example:
 
 > [1] Actor model, Wikipedia. (2020). https://en.wikipedia.org/w/index.php?title=Actor_model&oldid=939106706 (accessed February 29, 2020).
 
-To include a citation in reference documentation, add the citation reference to the bottom of the page. Then add with a line with the `---` separator above the citation. Finally, put the cited text in [blockquotes][blockquotes] and append a superscript referring to the citation number (usually `<sup>1</sup>`). See the [actor model reference documentation][actor_model-reference-documentation] for an example.
+To include a citation in reference documentation, add the citation reference to the bottom of the page. Then add a line with the `---` separator above the citation. The final step is to append a superscript to the cited text. This superscript should refer to the citation reference's number (usually `<sup>1</sup>`). See the [actor model reference documentation][actor_model-reference-documentation] for an example.
+
+Note that if the cited text is copied literally, please put it in [blockquotes][blockquotes].
 
 ### Generating citations
 
