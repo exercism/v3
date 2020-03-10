@@ -139,11 +139,13 @@ Yes! Please use citations in any reference documentation (files under `**/refere
 
 For example:
 
-> Actor model, Wikipedia. (2020). https://en.wikipedia.org/w/index.php?title=Actor_model&oldid=939106706 (accessed February 29, 2020).
+> [1] Actor model, Wikipedia. (2020). https://en.wikipedia.org/w/index.php?title=Actor_model&oldid=939106706 (accessed February 29, 2020).
+
+The [actor model reference documentation][actor_model-reference-documentation] shows how to add a citation to reference documentation.
 
 ### Generating citations
 
-To help generate these citations, [ZoteroBib][zoterobib] can be used. On that website, first set the citation style to "Science of Computer Programming" in the "Bibliography" section. Then, paste the URL you want to cite in the input field at the top of the page and click on the "Cite" button. The citation will for your URL will now appear. The final step is to convert the citation's numbering to markdown-style numbering (`"[1]"` becomes `"1."`), after which the citation can be added to the reference documentation.
+To help generate these citations, [ZoteroBib][zoterobib] can be used. On that website, first set the citation style to "Science of Computer Programming" in the "Bibliography" section. Then, paste the URL you want to cite in the input field at the top of the page, click on the "Cite" button and the citation will be generated for you.
 
 ## More questions?
 
@@ -164,6 +166,7 @@ Do you have more questions or feel that something is missing? Please let us know
 [representer]: https://github.com/exercism/automated-analysis/blob/master/docs/representers/introduction.md
 [analyzer]: https://github.com/exercism/automated-analysis/blob/master/docs/analyzers/interface.md
 [concepts]: ../../reference/README.md
+[actor_model-reference-documentation]: ../../reference/concepts/actor_model.md
 [concept-exercise-issue-example]: https://github.com/exercism/v3/issues/33
 [open-github-issue]: https://github.com/exercism/v3/issues/new/choose
 [socp-citation-style]: https://paperpile.com/s/science-of-computer-programming-citation-style/#examples-website-citations
