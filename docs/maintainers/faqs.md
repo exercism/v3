@@ -135,11 +135,11 @@ The basic communication channel for maintainers is Slack, and in particular the 
 
 Yes! Please use citations in any reference documentation (files under `**/reference/**`). We are using the [Science of Computer Programming citation style][socp-citation-style]. This means that when citing website, please use this format:
 
-> $TITLE, $SOURCE. ($PUBLISHED_DATE). <$URL> (accessed $ACCESSED_DATE).
+> $TITLE, $SOURCE. ($PUBLISHED_DATE). $URL (accessed $ACCESSED_DATE).
 
 For example:
-> Actor model, Wikipedia. (2020). <https://en.wikipedia.org/w/index.php?title=Actor_model&oldid=939106706> (accessed February 29, 2020).
 
+> Actor model, Wikipedia. (2020). https://en.wikipedia.org/w/index.php?title=Actor_model&oldid=939106706 (accessed February 29, 2020).
 
 ## More questions?
 
