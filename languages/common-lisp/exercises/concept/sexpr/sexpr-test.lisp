@@ -2,10 +2,8 @@
 (ql:quickload :fiveam)
 (defpackage #:sexpr-test
   (:use :cl :fiveam :sexpr)
-  (:export :run-test-suite :sexpr-suite))
+  (:export :run-tests))
 (in-package :sexpr-test)
-
-(load "./sexpr")
 
 (def-suite sexpr-suite)
 (in-suite sexpr-suite)
