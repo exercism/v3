@@ -70,6 +70,7 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 - Implicit return
 - Expression results
 - Recursion
+- Multi-clause functions
 
 ### General
 
