@@ -51,5 +51,5 @@
       (is (equal (sexpr:rest-of-it (cons 'a nil)) nil))
       (is (equal (sexpr:rest-of-it (list 'a)) nil)))
 
-(defun run-test-suite ()
+(defun run-tests ()
   (run! 'sexpr-suite))
