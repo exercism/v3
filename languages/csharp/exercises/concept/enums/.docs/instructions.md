@@ -47,7 +47,11 @@ The encoded log level is simple mapping of a log level to a number:
 
 - `Info` -> `1`
 - `Warning` -> `2`
+<<<<<<< HEAD
 - `MinorError` -> `3`
+=======
+- `MinorError` -> `4`
+>>>>>>> 056f5f96038ff08feeedfe855bc27495e3758462
 - `CriticalError` -> `4`
 
 Implement a method that can output the shortened log line format:
