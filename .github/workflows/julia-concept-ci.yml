@@ -3,12 +3,14 @@ name: Julia Concept CI
 on:
   push:
     paths:
+    - '.github/bin/concept-checks/**'
     - 'languages/julia/config.json'
     - 'languages/julia/reference/concepts.csv'
     - 'languages/julia/reference/exercise-concepts/**'
     - 'languages/julia/exercises/concept/**'
   pull_request:
     paths:
+    - '.github/bin/concept-checks/**'
     - 'languages/julia/config.json'
     - 'languages/julia/reference/concepts.csv'
     - 'languages/julia/reference/exercise-concepts/**'
@@ -21,11 +23,28 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: "Set up Julia"
+      - name: Set up Julia
         uses: julia-actions/setup-julia@v1
       
       - name: Install dependencies
         run: julia --color=yes --project=.github/bin/concept-checks -e "using Pkg; Pkg.instantiate()"
 
+      - name: Load sysimage from cache
+        id: sysimage-cache
+        uses: actions/cache@v1
+        with:
+          path: julia-sysimages
+          key: ${{ runner.os }}-concept-checks-sysimage-${{ hashFiles('.github/bin/concept-checks/Manifest.toml') }}
+
+      - name: Build sysimage (this might take a while)
+        if: steps.sysimage-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir("julia-sysimages")
+          using PackageCompiler
+          cd(joinpath("languages", "julia"))
+          # explanation for cpu_target: https://github.com/JuliaLang/PackageCompilerX.jl/issues/106
+          create_sysimage([:ArgParse, :CSV, :JSON], sysimage_path=joinpath("${{ github.workspace }}", "julia-sysimages", "sysimage-concept-checks.so"), precompile_execution_file="${{ github.workspace }}/.github/bin/concept-checks/concept-checks.jl"; cpu_target="generic")
+        shell: bash -c "julia --color=yes --project=.github/bin/concept-checks {0}"
+
       - name: Run concept checks
-        run: julia --color=yes --project=.github/bin/concept-checks .github/bin/concept-checks/concept-checks.jl -r .
+        run: julia --sysimage=julia-sysimages/sysimage-concept-checks.so --color=yes --project=.github/bin/concept-checks .github/bin/concept-checks/concept-checks.jl -r .
