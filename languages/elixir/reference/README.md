@@ -9,6 +9,7 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 - [Anonymous functions](../../../reference/concepts/anonymous_functions.md)
 - [Higher-order functions](../../../reference/concepts/higher_order_functions.md)
 - [Immutability](../../../reference/concepts/immutability.md)
+  - Variable Scoping
 - [Pattern matching](../../../reference/concepts/pattern_matching.md)
 - [Pipelines](../../../reference/concepts/pipelines.md)
 - [Recursion](../../../reference/concepts/recursion.md)
