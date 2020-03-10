@@ -1,8 +1,17 @@
-# Concept CI
+# Continuous Integration
+
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Concept CI](#concept-ci)
+  - [`concepts.csv`](#conceptscsv)
+  - [CI checks](#ci-checks)
+
+## Concept CI
 
 The following tooling can be used to keep concept names consistent within a track.
 
-## `concepts.csv`
+### `concepts.csv`
 
 This machine-readable file defines all concept slugs used in the track.
 The first column contains the concept.
@@ -13,7 +22,7 @@ Concepts may contain annotations separated with a dot, `.`, from the concept nam
 These annotations can be used when a single concept has multiple exercises.
 As a rule of thumb, annotations should only be used when multiple exercises refer to the same concept document, e.g. `string-formatting` might have its own document, while `strings.basic` and `strings.advanced` both refer to `strings.md`.
 
-### Example
+#### Example
 
 ```csv
 concept,category
@@ -29,7 +38,7 @@ numbers.advanced,
 
 For a longer example, see the Julia track's [`concepts.csv`][julia-concepts-csv].
 
-## CI checks
+### CI checks
 
 *If any issues with the CI script come up, please ping @SaschaMann in the PR/issue.*
 
@@ -44,7 +53,7 @@ The following checks are currently available:
 - Check if all exercise directory names are valid concepts.
   - **sensitive to annotations**
 
-### Workflow file
+#### Workflow file
 
 You can install the Concept CI checks for your track by creating a workflow in `.github/workflows/<language>-concept-ci.yml` with the following contents:
 
@@ -85,7 +94,7 @@ jobs:
 
 where `<language>` needs to be replaced with the track's language slug.
 
-### Testing locally
+#### Testing locally
 
 If you want to run the checks locally, you need to [install Julia v1.3][install-julia] and run the following commands:
 
