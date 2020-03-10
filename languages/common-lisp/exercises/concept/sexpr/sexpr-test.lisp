@@ -2,8 +2,10 @@
 (ql:quickload :fiveam)
 (defpackage #:sexpr-test
   (:use :cl :fiveam :sexpr)
-  (:export :run-test-suite))
+  (:export :run-test-suite :sexpr-suite))
 (in-package :sexpr-test)
+
+(load "./sexpr")
 
 (def-suite sexpr-suite)
 (in-suite sexpr-suite)
@@ -40,8 +42,14 @@
       (is-false (sexpr:is-a-cons-p nil)))
 
 (test car-and-cdr
-      ())
+      (is (equal (sexpr:first-thing (cons 'a 'b)) 'a))
+      (is (equal (sexpr:first-thing (list 'a 'b)) 'a))
+
+      (is (equal (sexpr:rest-of-it (cons 'a 'b)) 'b))
+      (is (equal (sexpr:rest-of-it (cons 'a (cons 'b nil))) '(b)))
+      (is (equal (sexpr:rest-of-it (list 'a 'b)) '(b)))
+      (is (equal (sexpr:rest-of-it (cons 'a nil)) nil))
+      (is (equal (sexpr:rest-of-it (list 'a)) nil)))
 
 (defun run-test-suite ()
-  (load "sexpr.lisp")
   (run! 'sexpr-suite))
