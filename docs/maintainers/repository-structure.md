@@ -87,7 +87,7 @@ You can combine labels to find the issues you'd like, e.g. to [list all the issu
 [docs]: ./README.md
 [languages]: ../../languages/README.md
 [reference]: ../../reference/README.md
-[concept-ci]: ./concept-ci.md
+[concept-ci]: ./ci.md#concept-ci
 [github-issues]: https://github.com/exercism/v3/issues
 [github-issues-type-new-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-exercise
 [github-issues-type-improve-exercise]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-exercise
