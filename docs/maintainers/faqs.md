@@ -141,6 +141,10 @@ For example:
 
 > Actor model, Wikipedia. (2020). https://en.wikipedia.org/w/index.php?title=Actor_model&oldid=939106706 (accessed February 29, 2020).
 
+### Generating citations
+
+To help generate these citations, [ZoteroBib][zoterobib] can be used. On that website, first set the citation style to "Science of Computer Programming" in the "Bibliography" section. Then, paste the URL you want to cite in the input field at the top of the page and click on the "Cite" button. The citation will for your URL will now appear. The final step is to convert the citation's numbering to markdown-style numbering (`"[1]"` becomes `"1."`), after which the citation can be added to the reference documentation.
+
 ## More questions?
 
 Do you have more questions or feel that something is missing? Please let us know by [opening a GitHub issue][open-github-issue].
@@ -163,3 +167,4 @@ Do you have more questions or feel that something is missing? Please let us know
 [concept-exercise-issue-example]: https://github.com/exercism/v3/issues/33
 [open-github-issue]: https://github.com/exercism/v3/issues/new/choose
 [socp-citation-style]: https://paperpile.com/s/science-of-computer-programming-citation-style/#examples-website-citations
+[zoterobib]: https://zbib.org/
