@@ -2,7 +2,7 @@
 
 ## Goal
 
-The goal of this exercise is to teach the student the basics of the Concept of Dates through [C#][docs.microsoft.com-datetime].
+The goal of this exercise is to teach the student the basics of the Concept of Dates through [F#][docs.microsoft.com-datetime].
 
 ## Learning objectives
 
