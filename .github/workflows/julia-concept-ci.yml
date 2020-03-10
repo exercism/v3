@@ -25,16 +25,23 @@ jobs:
 
       - name: Set up Julia
         uses: julia-actions/setup-julia@v1
+
+      - name: Cache dependencies
+        id: dependencies-cache
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.HOME }}/.julia/packages
+          key: ${{ runner.os }}-concept-checks-dependencies-${{ hashFiles('.github/bin/concept-checks/Project.toml') }}-${{ hashFiles('.github/bin/concept-checks/Manifest.toml') }}
       
       - name: Install dependencies
         run: julia --color=yes --project=.github/bin/concept-checks -e "using Pkg; Pkg.instantiate()"
 
-      - name: Load sysimage from cache
+      - name: Cache sysimage
         id: sysimage-cache
         uses: actions/cache@v1
         with:
           path: julia-sysimages
-          key: ${{ runner.os }}-concept-checks-sysimage-${{ hashFiles('.github/bin/concept-checks/Manifest.toml') }}
+          key: ${{ runner.os }}-concept-checks-sysimage-${{ hashFiles('.github/bin/concept-checks/Manifest.toml') }}-${{ hashFiles('.github/bin/concept-checks/concept-checks.jl') }}
 
       - name: Build sysimage (this might take a while)
         if: steps.sysimage-cache.outputs.cache-hit != 'true'

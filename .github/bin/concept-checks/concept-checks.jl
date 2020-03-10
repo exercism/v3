@@ -7,7 +7,7 @@ using Markdown
 # define the command line interface
 function parse_commandline()
     s = ArgParseSettings()
-    @add_arg_table s begin
+    @add_arg_table! s begin
         "--root", "-r"
             help = "root of the v3 repository"
             arg_type = String
