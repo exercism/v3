@@ -17,11 +17,13 @@ In this exercise, the student processes a list of laguages to learn on Exercism.
 
 #### Implementations
 
-| Track | Exercise                         | Changes |
-| ----- | -------------------------------- | ------- |
-| Clojure    | [lists][implementation-clojure] | None    |
+| Track   | Exercise                        | Changes                                                             |
+| ------- | ------------------------------- | ------------------------------------------------------------------- |
+| Clojure | [lists][implementation-clojure] | None                                                                |
+| F#      | [lists][implementation-fsharp]  | Define non-empty list. Replace tail function with reverse function. |
 
 [type-char]: ./char.md
 [implementation-clojure]: ../../languages/clojure/exercises/concept/lists/.docs/introduction.md
+[implementation-clojure]: ../../languages/fsharp/exercises/concept/lists/.docs/introduction.md
 [type-array]: ./array.md
 [type-collection]: ./collection.md

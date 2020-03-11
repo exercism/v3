@@ -9,6 +9,7 @@ These are the Concept Exercises that have currently been implemented, as well as
 | exercise                                | concepts                                                            | prerequisites                       |
 | --------------------------------------- | ------------------------------------------------------------------- | ----------------------------------- |
 | [`booleans`][concept-exercise-booleans] | `booleans-basic`                                                    |                                     |
+| [`lists`][concept-exercise-lists]       | `lists-basic`                                                       | `strings-basic`                     |
 | [`dates`][concept-exercise-dates]       | `dates-basic`<br/>`time-basic`                                      | `numbers-basic`<br/>`strings-basic` |
 | [`strings`][concept-exercise-strings]   | `strings-basic`                                                     | -                                   |
 | [`numbers`][concept-exercise-numbers]   | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if` | -                                   |
@@ -28,6 +29,7 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-exercises]: ./concept/README.md
 [concept-exercise-booleans]: ./booleans/.meta/design.md
 [concept-exercise-dates]: ./dates/.meta/design.md
+[concept-exercise-lists]: ./lists/.meta/design.md
 [concept-exercise-strings]: ./strings/.meta/design.md
 [concept-exercise-numbers]: ./numbers/.meta/design.md
 [issues-new-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Ffsharp+label%3Atype%2Fnew-exercise+label%3Astatus%2Fhelp-wanted

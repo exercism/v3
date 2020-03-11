@@ -36,6 +36,12 @@
         "uuid": "82470e36-6447-11ea-bc55-0242ac130003",
         "concepts": ["booleans-basic"],
         "prerequisites": []
+      },
+      {
+        "slug": "lists",
+        "uuid": "ef2df8b0-63a8-11ea-bc55-0242ac130003",
+        "concepts": ["lists-basic"],
+        "prerequisites": ["strings-basic"]
       }
     ],
     "practice": []
