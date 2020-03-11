@@ -29,7 +29,7 @@ languages
                 │   ├── config.json
                 │   └── design.md
                 ├── lib
-                │   ├── example.js
+                │   ├── example.ex
                 │   └── $slug.ex
                 ├── mix.exs
                 ├── mix.lock
