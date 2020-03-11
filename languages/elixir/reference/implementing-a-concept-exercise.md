@@ -35,7 +35,7 @@ languages
                 ├── mix.lock
                 └── test
                     ├── $slug_test.exs
-                    └── test_test.exs
+                    └── test_helper.exs
 ```
 
 ## Step 1: add .docs/introduction.md
