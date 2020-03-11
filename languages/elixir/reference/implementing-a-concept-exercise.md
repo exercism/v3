@@ -91,7 +91,7 @@ Now create the following three files:
 
 - `lib/$slug.ex`. the stub implementation file, which is the starting point for students to work on the exercise.
 - `test/$slug_test.ex`: the test suite.
-- `example.ex`: an example implementation that passes all the tests.
+- `lib/example.ex`: an example implementation that passes all the tests.
 
 ## Step 8: add analyzer (optional)
 
