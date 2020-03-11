@@ -22,9 +22,14 @@ digraph G {
     color = blue;
 
     "module";
+    "comments";
+    "scoping";
     "named-function";
+    "multi-clause-function";
+    "multi-clause-named-function";
     "variables";
     "operators";
+    "arithmetic";
     "control-flow";
     "naming-conventions";
     "function-capture";
@@ -35,6 +40,7 @@ digraph G {
     "cond";
     "if-unless-else";
     "with";
+    "pipelines";
   }
 
   subgraph cluster_2 {
@@ -192,6 +198,26 @@ digraph G {
     "~N\[...\]";
   }
 
+  subgraph cluster_15 {
+    node [style=filled];
+    label = "Error Handling";
+    color = blue;
+
+    "raise";
+    "custom-errors";
+    "try-do-rescue-after";
+    "function-after";
+    "throw-catch";
+  }
+
+  // Error handling edges
+
+  "function" -> "raise";
+  "raise" -> "custom-errors";
+  "raise" -> "try-do-rescue-after";
+  "try-do-rescue-after" -> "function-after";
+  "function" -> "throw-catch";
+
   // Concept Edges
 
   "encoding" -> "codepoint";
@@ -203,9 +229,17 @@ digraph G {
   "named-function" -> "module";
   "module" -> "naming-conventions";
 
+  "module" -> "comments";
+
+  "variables" -> "scoping";
+
   "named-function" -> "function-capture";
   "named-function" -> "naming-conventions";
   "named-function" -> "default-arguments";
+
+  "named-function" -> "multi-clause-named-function";
+
+  "function" -> "multi-clause-function";
 
   "Start" -> "variables";
   "variables" -> "assignment";
@@ -214,6 +248,9 @@ digraph G {
 
   "variables" -> "operators";
   "operators" -> "control-flow";
+
+  "operators" -> "arithmetic";
+  "numbers" -> "arithmetic";
 
   "pattern-matching" -> "case";
   "control-flow" -> "case";
@@ -235,6 +272,7 @@ digraph G {
   "type" -> "function";
   "operators" -> "function";
   "function" -> "named-function";
+  "function" -> "pipelines";
   "type" -> "pid";
   "actor-model-concurrency" -> "pid";
 
