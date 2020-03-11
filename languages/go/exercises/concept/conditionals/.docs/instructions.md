@@ -25,7 +25,7 @@ Depending on your two cards and the card of the dealer, there is an optimal stra
 
 Although not optimal yet, you will follow the strategy your friend Alex has been developing, which is as follows:
 
-- If you have a Blackjack (an ace and any card worth 10 points) and the dealer does not have an ace, a figure or a ten then you automatically win. If the dealer does have any of those cards then you'll have to stand and wait for the reveal of the other card.
+- If you have a Blackjack (two cards that sum up to a value of 21) and the dealer does not have an ace, a figure or a ten then you automatically win. If the dealer does have any of those cards then you'll have to stand and wait for the reveal of the other card.
 - If you have a pair of aces you must always split them.
 - If your cards sum up to 17 or higher you should always stand.
 - If your cards sum up to 11 or lower you should always hit.
@@ -45,7 +45,7 @@ fmt.Println(value)
 
 ### 2. Determine if two cards make up a Blackjack.
 
-Implement a function that returns true if two cards are form a Blackjack, false otherwise.
+Implement a function that returns true if two cards form a Blackjack, false otherwise.
 
 ```go
 isBlackjack := Blackjack("queen", "ace")
@@ -58,7 +58,10 @@ fmt.Println(isBlackjack)
 Implement a function that returns the string representation of a decision given your cards, the dealer's card and Alex's strategy.
 
 ```go
-choice := FirstTurn("ace", "ace", "two")
+playerCard1 := "ace"
+playerCard2 := "ace"
+dealerCard := "two"
+choice := FirstTurn(playerCard1, playerCard2, dealerCard)
 fmt.Println(choice)
 // Output: "P"
 ```
