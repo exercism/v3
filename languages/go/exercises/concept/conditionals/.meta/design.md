@@ -19,9 +19,9 @@ The goal of this exercise is to teach the student the basics of the Concept of C
 
 ## Concepts
 
-- `boolean type`
-- `if`
-- `switch`
+- `booleans`
+- `conditionals-if`
+- `conditionals-switch`
 
 
 ## Prequisites
