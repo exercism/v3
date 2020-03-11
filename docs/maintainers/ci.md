@@ -1,8 +1,5 @@
 # Continuous Integration
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
 - [Concept CI](#concept-ci)
   - [`concepts.csv`](#conceptscsv)
   - [CI checks](#ci-checks)
@@ -55,41 +52,14 @@ The following checks are currently available:
 
 #### Workflow file
 
-You can install the Concept CI checks for your track by creating a workflow in `.github/workflows/<language>-concept-ci.yml` with the following contents:
+You can install the Concept CI checks for your track by adding your track to the workflow triggers in [`.github/workflows/concept-ci.yml`][concept-ci-yml].
+Add the following below the existing paths in the `on: push: paths:` and `on: pull_request: paths` keys:
 
 ```yaml
-name: <language> concept CI
-
-on:
-  push:
-    paths:
     - 'languages/<language>/config.json'
     - 'languages/<language>/reference/concepts.csv'
     - 'languages/<language>/reference/exercise-concepts/**'
     - 'languages/<language>/exercises/concept/**'
-  pull_request:
-    paths:
-    - 'languages/<language>/config.json'
-    - 'languages/<language>/reference/concepts.csv'
-    - 'languages/<language>/reference/exercise-concepts/**'
-    - 'languages/<language>/exercises/concept/**'
-
-jobs:
-  concept-test:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: "Set up Julia"
-        uses: julia-actions/setup-julia@v1
-      
-      - name: Install dependencies
-        run: julia --color=yes --project=.github/bin/concept-checks -e "using Pkg; Pkg.instantiate()"
-
-      - name: Run concept checks
-        run: 
-        run: julia --color=yes --project=.github/bin/concept-checks .github/bin/concept-checks/concept-checks.jl -r . -t <language>
 ```
 
 where `<language>` needs to be replaced with the track's language slug.
@@ -127,8 +97,10 @@ $ julia --project=bin bin/concept-checks.jl -t <language>
 
 from your track directory.
 
-*Note that the script takes a fairly long time before actually running the checks due to compiliation times of the dependencies. This is unfortunately normal when running it as a script. If you're familiar with Julia, you can also `include` it from the REPL to avoid this.*
+*Note that the script takes a fairly long time before actually running the checks due to compiliation times of the dependencies. This is unfortunately normal when running it as a script. If you're familiar with Julia, you can also `include` it from the REPL to avoid this. Alternatively, you can use [PackageCompiler.jl][package-compiler] to compile a custom sysimage. The necessary commands can be found in [`.github/workflows/concept-ci.yml`][concept-ci-yml].*
 
 
+[concept-ci-yml]: ../../.github/workflows/concept-ci.yml
 [julia-concepts-csv]: ../../languages/julia/reference/concepts.csv
 [install-julia]: https://julialang.org/downloads/
+[package-compiler]: https://github.com/JuliaLang/PackageCompiler.jl
