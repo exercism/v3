@@ -85,7 +85,7 @@ An entry should be added to the track's `config.json` file for the new Concept E
 
 ## Step 7: adding track-specific files
 
-The configuration files may be copied from another exercise. But the structure of an exercise is a generic elixir mix-project.
+The configuration files may be copied from another exercise. But it would be recommended to use `mix new $elixir_slug` (where `$elixir_slug` exchanges underscores `_` in the place of `$slug`'s dashes `-`) for file generation, the move the generated structure to the `$slug` directory to match the structure in this guide.
 
 Now create the following three files:
 
