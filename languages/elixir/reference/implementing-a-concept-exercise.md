@@ -90,7 +90,7 @@ The configuration files may be copied from another exercise. But the structure o
 Now create the following three files:
 
 - `$slug.ex`. the stub implementation file, which is the starting point for students to work on the exercise.
-- `$slug_test.ex`: the test suite.
+- `test/$slug_test.ex`: the test suite.
 - `example.ex`: an example implementation that passes all the tests.
 
 ## Step 8: add analyzer (optional)
