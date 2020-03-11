@@ -3,14 +3,12 @@ name: Julia Concept CI
 on:
   push:
     paths:
-    - '.github/bin/concept-checks/**'
     - 'languages/julia/config.json'
     - 'languages/julia/reference/concepts.csv'
     - 'languages/julia/reference/exercise-concepts/**'
     - 'languages/julia/exercises/concept/**'
   pull_request:
     paths:
-    - '.github/bin/concept-checks/**'
     - 'languages/julia/config.json'
     - 'languages/julia/reference/concepts.csv'
     - 'languages/julia/reference/exercise-concepts/**'
@@ -22,6 +20,17 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Fetch everything
+        run: git fetch --prune --unshallow
+
+      - name: Detect track
+        id: track-detection
+        run: |
+          TRACK=$(git diff --name-only origin/master... | grep -oP 'languages\/\K([a-z0-9-]+)' | head -1)
+          echo "::set-output name=track::$TRACK"
+        shell: bash
 
       - name: Set up Julia
         uses: julia-actions/setup-julia@v1
@@ -54,4 +63,4 @@ jobs:
         shell: bash -c "julia --color=yes --project=.github/bin/concept-checks {0}"
 
       - name: Run concept checks
-        run: julia --sysimage=julia-sysimages/sysimage-concept-checks.so --color=yes --project=.github/bin/concept-checks .github/bin/concept-checks/concept-checks.jl -r .
+        run: julia --sysimage=julia-sysimages/sysimage-concept-checks.so --color=yes --project=.github/bin/concept-checks .github/bin/concept-checks/concept-checks.jl -r . -t ${{ steps.track-detection.outputs.track }}
