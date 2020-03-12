@@ -3,6 +3,7 @@
 This document describes how to implement a Concept Exercise for the Elixir track. As this document is generic, the following placeholders are used:
 
 - `$slug`: the name of the exercise in snake_case (e.g. `anonymous-methods`).
+- `$elixir_slug`: `$slug` converted to snake-case from kebab-case,
 - `$concepts`: the Concepts the exercise is about (e.g. `loops`),
 - `$concept-1`: a single Concept slug,
 - `$prerequisite-n`: a single Concept slug,
