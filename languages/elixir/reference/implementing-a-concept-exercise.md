@@ -29,13 +29,13 @@ languages
                 │   ├── config.json
                 │   └── design.md
                 ├── lib
-                │   ├── example.js
+                │   ├── example.ex
                 │   └── $slug.ex
                 ├── mix.exs
                 ├── mix.lock
                 └── test
                     ├── $slug_test.exs
-                    └── test_test.exs
+                    └── test_helper.exs
 ```
 
 ## Step 1: add .docs/introduction.md
@@ -85,13 +85,13 @@ An entry should be added to the track's `config.json` file for the new Concept E
 
 ## Step 7: adding track-specific files
 
-The configuration files may be copied from another exercise. But the structure of an exercise is a generic elixir mix-project.
+The configuration files may be copied from another exercise. But it would be recommended to use `mix new $elixir_slug` (where `$elixir_slug` exchanges underscores `_` in the place of `$slug`'s dashes `-`) for file generation, the move the generated structure to the `$slug` directory to match the structure in this guide.
 
 Now create the following three files:
 
-- `$slug.ex`. the stub implementation file, which is the starting point for students to work on the exercise.
-- `$slug_test.ex`: the test suite.
-- `example.ex`: an example implementation that passes all the tests.
+- `lib/$slug.ex`. the stub implementation file, which is the starting point for students to work on the exercise.
+- `test/$slug_test.ex`: the test suite.
+- `lib/example.ex`: an example implementation that passes all the tests.
 
 ## Step 8: add analyzer (optional)
 
