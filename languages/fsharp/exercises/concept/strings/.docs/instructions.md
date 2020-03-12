@@ -16,14 +16,14 @@ Implement a function to return a log line's message:
 
 ```fsharp
 message "[ERROR]: Invalid operation"
-// Returns: "Invalid operation"
+// => "Invalid operation"
 ```
 
 Any leading or trailing white space should be removed:
 
 ```fsharp
 message "[WARNING]:  Disk almost full\r\n"
-// Returns: "Disk almost full"
+// => "Disk almost full"
 ```
 
 ### 2. Get log level from a log line
@@ -32,7 +32,7 @@ Implement a function to return a log line's log level, which should be returned 
 
 ```fsharp
 logLevel "[ERROR]: Invalid operation"
-// Returns: "error"
+// => "error"
 ```
 
 ### 3. Reformat a log line
@@ -41,5 +41,5 @@ Implement a function that reformats the log line, putting the message first and 
 
 ```fsharp
 reformat "[INFO]: Operation completed"
-// Returns: "Operation completed (info)"
+// => "Operation completed (info)"
 ```

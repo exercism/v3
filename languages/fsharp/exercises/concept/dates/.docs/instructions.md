@@ -15,7 +15,7 @@ Implement a function that can parse a textual representation of an appointment d
 
 ```fsharp
 schedule "7/25/2019 13:45:00"
-// Returns: DateTime(2019, 7, 25, 13, 45, 0)
+// => DateTime(2019, 7, 25, 13, 45, 0)
 ```
 
 ### 2. Check if an appointment has already passed
@@ -24,7 +24,7 @@ Implement a function that takes an appointment date and checks if the appointmen
 
 ```fsharp
 hasPassed (DateTime(1999, 12, 31, 9, 0, 0))
-// Returns: true
+// => true
 ```
 
 ### 3. Check if appointment is in the afternoon
@@ -33,7 +33,7 @@ Implement a function that takes an appointment date and checks if the appointmen
 
 ```fsharp
 isAfternoonAppointment (DateTime(2019, 03, 29, 15, 0, 0))
-// Returns: true
+// => true
 ```
 
 ### 4. Describe the time and date of the appointment
@@ -42,5 +42,5 @@ Implement a function that takes an appointment date and returns a description of
 
 ```fsharp
 description (DateTime(2019, 03, 29, 15, 0, 0))
-// Returns: "You have an appointment on Friday 29 March 2019 at 15:00."
+// => "You have an appointment on Friday 29 March 2019 at 15:00."
 ```
