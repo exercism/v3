@@ -2,6 +2,8 @@ name: Concept CI
 
 on:
   push:
+    branches-ignore:
+    - master
     paths:
     - 'languages/julia/config.json'
     - 'languages/julia/reference/concepts.csv'
