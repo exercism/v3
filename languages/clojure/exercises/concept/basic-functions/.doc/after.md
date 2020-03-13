@@ -1,6 +1,6 @@
 ## Key Learnings
 
-- Functions are defined with the `defn` keyword.
+- Functions are defined with the `defn` macro.
 - Functions can receive one or more arguments.
 - Functions have docstrings which allow you to describe the function in words. 
 - Once a function is defined, it can be invoked or imported elsewhere in the code.
