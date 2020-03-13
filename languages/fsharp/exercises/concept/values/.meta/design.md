@@ -8,31 +8,41 @@ The goal of this exercise is to teach the student the basics of the Concept of V
 
 - Know what a value is.
 - Know how to define a binding.
-- Know how to define a variable.
-- Know what immutability is.
-- Know that bindings are immutable and variables are mutable.
-- Know what type inference is.
-- Know how type inference works for bindings and variables.
+- Know how to define a function.
+- Know how to return a value from a function.
+- Know how to call a function.
+- Know that bindings are immutable.
+- Know how type inference works for bindings.
+- Know how to define scope using significant whitespace.
 
 ## Out of scope
 
 - Functions.
-- Type inference for functions.
 - Generic values.
+- Mutable values.
 - Reference cells.
 - Naming rules for identifiers.
 - Double-quoted identifiers.
 - Shadowing.
 - Memory and performance characteristics.
+- Returning functions.
+- Recursive functions.
+- Higher-order functions.
+- Anonymous functions
+- Inline functions.
+- Pure functions.
+- Partial application.
+- Currying.
+- Organizing functions in modules and namespaces.
+- Visibility.
 
 ## Concepts
 
 The Concepts this exercise unlocks are:
 
-- `values-basic`: know what a value is; know how to bind a value to a name by defining a binding; know how to define a variable.
-- `immutability-basic`: know what immutability is; know that bindings are immutable and variables are mutable.
-- `integers-basic`: know how to define an integer; know how to use mathematical operators on integers.
-- `type-inference-basic`: know what type inference is; know how type inference works for bindings and variables.
+- `bindings-basic`: know what a value is; know how to define a binding; know that bindings are immutable; know how to define scope using significant whitespace.
+- `functions-basic`: know how to define a function; know how to return a value from a function; know how to call a function.
+- `type-inference-basic`: know what type inference is; know how type inference works for bindings.
 
 ## Prequisites
 
