@@ -58,7 +58,7 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - C-style Input/Output
 - Input/Output stream-based library
 - Templates
-- [Metaprogramming (TMP)](../../../reference/concepts/metaprogramming.md)
+- [Metaprogramming](../../../reference/concepts/metaprogramming.md)
 - Exception handling
 - Implicit/explicit/contextual conversion
 - [Destructuring (structured-bindings)](../../../reference/concepts/destructuring_assignment.md)
@@ -67,6 +67,7 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - Value categories
 - Attributes
 - Slicing
+- String literals
 - Reflection (`<type_traits>`)
 - Undefined Behavior
 - Preprocessor
@@ -93,10 +94,16 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - [Queues][queue]
 - [Stacks][stack]
 - [Tuples][tuple]
-- Unions (`std::variant`)
+- Sum types (`std::variant`)
+- Product types (`std::pair`, `std::tuple`)
 - [Ranges][range] (Defer to C++2a)
+- Bitset
+- Dynamic bitset
 
-Let pointers aside as long as we can avoid them, using references instead.
+### Advanced topics
+
+- Pointers
+- Unions (`union`)
 
 ## Concept interpretation
 

@@ -14,6 +14,22 @@
         "uuid": "9c2aad8a-53ee-11ea-8d77-2e728ce88125",
         "concepts": ["strings-basic"],
         "prerequisites": []
+      },
+      {
+        "slug": "dates",
+        "uuid": "160d7d56-5a0e-11ea-8e2d-0242ac130003",
+        "concepts": ["dates-basic", "time-basic"],
+        "prerequisites": ["numbers-basic", "strings-basic"]
+      },
+      {
+        "slug": "numbers",
+        "uuid": "6ea2765e-5885-11ea-82b4-0242ac130003",
+        "concepts": [
+          "numbers-basic",
+          "type-conversion-numbers",
+          "conditionals-if"
+        ],
+        "prerequisites": []
       }
     ],
     "practice": []

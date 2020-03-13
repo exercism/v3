@@ -18,36 +18,36 @@ You have four tasks.
 
 First, define an `AccountType` enum to represent the three account types. Next, define a `Permission` enum to represent the three permission types and two extra ones: one for having no permissions at all, and for having all permissions.
 
-Then implement a method to return the default permissions for a specific account type:
+Then implement the `Permissions.Default` method to return the default permissions for a specific account type:
 
 ```csharp
 Permissions.Default(AccountType.Guest)
-// Returns: Permission.Read
+// => Permission.Read
 ```
 
 ### 2. Grant a permission
 
-Implement a method that grants (adds) a permission:
+Implement the `Permissions.Grant` method that grants (adds) a permission:
 
 ```csharp
 Permissions.Grant(current: Permission.None, grant: Permission.Read)
-// Returns: Permission.Read
+// => Permission.Read
 ```
 
 ### 3. Revoke a permission
 
-Implement a method that revokes (removes) a permission:
+Implement the `Permissions.Revoke` method that revokes (removes) a permission:
 
 ```csharp
 Permissions.Revoke(current: Permission.Read, grant: Permission.Read)
-// Returns: Permission.None
+// => Permission.None
 ```
 
 ### 4. Check for a permission
 
-Implement a method that takes the current account's permissions and checks if the account is authorized for a given permission:
+Implement the `Permissions.Check` method that takes the current account's permissions and checks if the account is authorized for a given permission:
 
 ```csharp
 Permissions.Check(current: Permission.Write, check: Permission.Read)
-// Returns: false
+// => false
 ```
