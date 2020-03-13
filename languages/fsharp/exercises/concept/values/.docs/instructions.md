@@ -11,7 +11,7 @@ expectedMinutesInOven
 // 40
 ```
 
-### 2. Keep track of how many minutes the lasasgne has been be in the oven
+### 2. Keep track of how many minutes the lasagne has been be in the oven
 
 Define the `actualMinutesInOven` variable to keep track of the number of minutes the lasagna has been in the oven. At this moment, the lasagne has already been in the oven for 15 minutes:
 
