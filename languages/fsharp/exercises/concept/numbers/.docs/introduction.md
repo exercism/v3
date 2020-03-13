@@ -5,6 +5,6 @@ There are two different types of numbers in F#:
 
 The two most common numeric types in F# are `int` and `double`. An `int` is a 32-bit integer and a `double` is a 64-bit floating-point number.
 
-## Converting between number types
-
 Converting between number types is done through built-in conversion operators. These conversion operators are named after the type they will be converting to. F# does _not_ support automatic conversion between number types.
+
+In this exercise you must conditionally execute logic. The most common way to do this in F# is by using an `if/elif/else` statement.
