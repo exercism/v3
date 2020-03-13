@@ -6,7 +6,7 @@
   )
 
 (defn plus-42
-  "Creates a function that adds 42 to the argument its given."
+  "Creates a function that adds 42 to the argument it's given."
   [x]
   )
 
@@ -14,4 +14,3 @@
   "Calls the plus-42 function with the supplied argument"
   [y]
   )
-
