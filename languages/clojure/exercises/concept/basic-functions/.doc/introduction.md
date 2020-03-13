@@ -5,7 +5,7 @@ Functions can be defined by using the `def` and `fn` functions together, but in 
 A Clojure function consists of 4 required parts:
 
 - The `defn` macro (or `def fn`).
-- The name of the functions being defined.
+- The name of the function being defined.
 - A vector of arguments that the function accepts.
 - The expressions which make up the function body.
 
