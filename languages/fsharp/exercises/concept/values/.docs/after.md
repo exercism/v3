@@ -4,7 +4,7 @@ A [_binding_][bindings] is used to associate a name with a value. To define a bi
 
 The key aspect of bindings is that they are immutable. This means that once a binding has been defined, its value can never change. As a consequence, if you want a new value, you need a new binding.
 
-F# also support mutable bindings, known as [_variables_][variables]. To define a variable, add the `mutable` modifier to the binding. Updating a variable is done using the `<-` operator, as opposed to the `=` operator to define a binding. The separate update operator, combined with the `mutable` modifier, makes it very explicit when F# code deals with mutation.
+F# also support mutable bindings, known as [_variables_][variables]. To define a variable, add the `mutable` modifier to the binding. Updating a variable is done using the `<-` operator, as opposed to the `=` operator used to define a binding. The separate update operator, combined with the `mutable` modifier, makes it very explicit when F# code deals with mutation.
 
 As immutability is the default in F#, variables are used sparingly; the default is regular, immutable bindings. There are several [benefits to using immutability][immutability], such as the code being easier to reason about and enabling the compiler to better reason about the code.
 
