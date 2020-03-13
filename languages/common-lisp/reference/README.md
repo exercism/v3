@@ -90,7 +90,7 @@ as template.
       - [Association Lists][map]
       - [Lists][list]
       - Property Lists
-      - [set][set]
+      - [Set][set]
       - Trees
     - Vectors
   - Streams
