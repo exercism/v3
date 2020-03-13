@@ -1,6 +1,6 @@
 import {
   canExecuteFastAttack,
-  canApproachAndSpy,
+  canSpy,
   canSignalPrisoner,
   canReleasePrisoner
 } from "./booleans";
@@ -20,7 +20,7 @@ describe("booleans", () => {
     });
   });
 
-  describe("canApproachAndSpy", () => {
+  describe("canSpy", () => {
     const CHARACTERS_STATE_COMBINATIONS = [
       [false, false, false, false],
       [false, false, true, true],
@@ -33,9 +33,9 @@ describe("booleans", () => {
 
     CHARACTERS_STATE_COMBINATIONS.forEach(
       ([knightIsAwake, archerIsAwake, prisonerIsAwake, expected]) => {
-        test(`canApproachAndSpy(${knightIsAwake}, ${archerIsAwake}, ${prisonerIsAwake})`, () => {
+        test(`canSpy(${knightIsAwake}, ${archerIsAwake}, ${prisonerIsAwake})`, () => {
           expect(
-            canApproachAndSpy(knightIsAwake, archerIsAwake, prisonerIsAwake)
+            canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake)
           ).toBe(expected);
         });
       }

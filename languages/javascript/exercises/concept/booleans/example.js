@@ -2,7 +2,7 @@ export function canExecuteFastAttack(knightIsAwake) {
   return !knightIsAwake;
 }
 
-export function canApproachAndSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
+export function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
   return knightIsAwake || archerIsAwake || prisonerIsAwake;
 }
 

@@ -2,8 +2,8 @@ export function canExecuteFastAttack(knightIsAwake) {
   throw new Error('Implement the canExecuteFastAttack function')
 }
 
-export function canApproachAndSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
-  throw new Error('Implement the canApproachAndSpy function')
+export function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
+  throw new Error('Implement the canSpy function')
 }
 
 export function canSignalPrisoner(archerIsAwake, prisonerIsAwake) {
