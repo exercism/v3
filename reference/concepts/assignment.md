@@ -23,6 +23,8 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 | Track | Exercise                        | Changes |
 | ----- | ------------------------------- | ------- |
 | C#    | [basics][implementation-csharp] | None    |
+| F#    | [values][implementation-fsharp] | None    |
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/values/.docs/introduction.md
 [concept-variables]: ./variables.md

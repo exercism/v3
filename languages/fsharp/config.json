@@ -68,6 +68,17 @@
           "type-conversion-numbers",
           "conditionals-if"
         ]
+      },
+      {
+        "slug": "values",
+        "uuid": "1fc8216e-6519-11ea-bc55-0242ac130003",
+        "concepts": [
+          "values-basic",
+          "immutability-basic",
+          "type-inference-basic",
+          "integers-basic"
+        ],
+        "prerequisites": []
       }
     ],
     "practice": []
