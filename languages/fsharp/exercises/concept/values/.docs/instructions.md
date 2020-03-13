@@ -1,4 +1,4 @@
-In this exercise you're cooking a brilliant lasagna from your favorite cooking book.
+In this exercise you're going to write some code to help you cook a brilliant lasagna from your favorite cooking book.
 
 You have two tasks, both related to keeping track of the time the lasasgna has to spend in the oven.
 
