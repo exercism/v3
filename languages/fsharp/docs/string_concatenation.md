@@ -4,7 +4,7 @@ The simplest way to concatenate two strings is to use the `+` operator:
 
 ```fsharp
 "abso" + "lutely"
-// Returns: "absolutely"
+// => "absolutely"
 ```
 
 This works just as well with string values assigned to identifiers:
@@ -13,7 +13,7 @@ This works just as well with string values assigned to identifiers:
 let vehicle = "bike"
 let adjective = "shiny"
 adjective + " " + vehicle
-// Returns: "shiny bike"
+// => "shiny bike"
 ```
 
 While the `+` operator is easy to use, for anything but trivial string concatenation, the `sprintf` function is preferred.
@@ -26,5 +26,5 @@ The placeholder to use for strings is `%s`:
 let book = "Dune"
 let author = "Frank Herbert"
 sprintf "My favorite book is %s by %s." book author
-// Returns: "My favorite book is Dune by Frank Herbert."
+// => "My favorite book is Dune by Frank Herbert."
 ```

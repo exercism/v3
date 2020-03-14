@@ -14,7 +14,7 @@ Implement a function to calculate the assembly line's production rate per hour, 
 
 ```fsharp
 productionRatePerHour 6
-// Returns: 1193.4
+// => 1193.4
 ```
 
 Note that the value returned is a `double`.
@@ -25,7 +25,7 @@ Implement a function to calculate how many working cars are produced per minute:
 
 ```fsharp
 workingItemsPerMinute 6
-// Returns: 19
+// => 19
 ```
 
 Note that the value returned is an `int`.
