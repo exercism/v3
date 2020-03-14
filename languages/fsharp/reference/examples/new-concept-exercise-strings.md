@@ -2,7 +2,7 @@ This issue describes how to implement the `strings` concept exercise for the F# 
 
 ## Goal
 
-The goal of this exercise is to teach the student the basics of the Concept of Strings in [F#][docs.microsoft.com-string].
+The goal of this exercise is to teach the student the basics of the Concept of Strings in [F#][strings].
 
 ## Learning objectives
 
@@ -38,9 +38,9 @@ There should be no prerequisites.
 
 ### Hints
 
-- [String class][docs.microsoft.com-string]
-- [String module][docs.microsoft.com-string-module]
-- [String concatenation][docs.microsoft.com-string-concatenation]
+- [String class][strings]
+- [String module][string-module]
+- [String concatenation][string-concat]
 
 ### After
 
@@ -154,15 +154,15 @@ This exercise could benefit from having a reference document written to introduc
 
 If you have any questions while implementing the exercise, please post the questions as comments in this issue.
 
+[how-to-implement-a-concept-exercise]: https://github.com/exercism/v3/blob/master/docs/maintainers/generic-how-to-implement-a-concept-exercise.md
+[implemented-exercises]: https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/README.md#implemented-exercises
 [reference]: https://github.com/exercism/v3/blob/master/languages/fsharp/reference/README.md#reference-docs
 [analyzer]: https://github.com/exercism/fsharp-analyzer
 [representer]: https://github.com/exercism/fsharp-representer
-[docs.microsoft.com-string]: https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netcore-3.1
-[how-to-implement-a-concept-exercise]: https://github.com/exercism/v3/blob/master/docs/maintainers/generic-how-to-implement-a-concept-exercise.md
-[meta-design]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/enums-advanced/.meta/design.md
-[meta-config.json]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/enums-advanced/.meta/config.json
+[meta-design]: https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/numbers/.meta/design.md
+[meta-config.json]: https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/numbers/.meta/config.json
 [docs-concept-exercises]: https://github.com/exercism/v3/blob/master/docs/concept-exercises.md
-[docs.microsoft.com-string-module]: https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.string-module-%5bfsharp%5d
-[docs.microsoft.com-string-concatenation]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/strings#string-operators
 [string-concat-issue]: https://github.com/exercism/v3/issues/757
-[implemented-exercises]: https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/README.md#implemented-exercises
+[strings]: https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netcore-3.1
+[string-module]: https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.string-module-%5bfsharp%5d
+[string-concat]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/strings#string-operators

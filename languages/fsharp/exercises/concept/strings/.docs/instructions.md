@@ -12,34 +12,34 @@ You have three tasks, each of which will take a log line and ask you to do somet
 
 ### 1. Get message from a log line
 
-Implement a function to return a log line's message:
+Implement the `message` function to return a log line's message:
 
 ```fsharp
 message "[ERROR]: Invalid operation"
-// Returns: "Invalid operation"
+// => "Invalid operation"
 ```
 
 Any leading or trailing white space should be removed:
 
 ```fsharp
 message "[WARNING]:  Disk almost full\r\n"
-// Returns: "Disk almost full"
+// => "Disk almost full"
 ```
 
 ### 2. Get log level from a log line
 
-Implement a function to return a log line's log level, which should be returned in lowercase:
+Implement the `logLevel` function to return a log line's log level, which should be returned in lowercase:
 
 ```fsharp
 logLevel "[ERROR]: Invalid operation"
-// Returns: "error"
+// => "error"
 ```
 
 ### 3. Reformat a log line
 
-Implement a function that reformats the log line, putting the message first and the log level after it in parentheses:
+Implement the `reformat` function that reformats the log line, putting the message first and the log level after it in parentheses:
 
 ```fsharp
 reformat "[INFO]: Operation completed"
-// Returns: "Operation completed (info)"
+// => "Operation completed (info)"
 ```
