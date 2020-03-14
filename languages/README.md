@@ -11,6 +11,7 @@ To contribute, please select the language you'd like to contribute to:
 - [C#][csharp]
 - [Clojure][clojure]
 - [Dart][dart]
+- [Emacs Lisp][emacs-lisp]
 - [F#][fsharp]
 - [Go][go]
 - [Haskell][haskell]
@@ -19,7 +20,6 @@ To contribute, please select the language you'd like to contribute to:
 - [Kotlin][kotlin]
 - [Python][python]
 - [Ruby][ruby]
-- [Rust][rust]
 - [Typescript][typescript]
 
 [c]: ./c/README.md
@@ -27,6 +27,7 @@ To contribute, please select the language you'd like to contribute to:
 [cpp]: ./cpp/README.md
 [csharp]: ./csharp/README.md
 [dart]: ./dart/README.md
+[emacs-lisp]: ./emacs-lisp/README.md
 [fsharp]: ./fsharp/README.md
 [go]: ./go/README.md
 [haskell]: ./haskell/README.md
@@ -35,7 +36,6 @@ To contribute, please select the language you'd like to contribute to:
 [kotlin]: ./kotlin/README.md
 [python]: ./python/README.md
 [ruby]: ./ruby/README.md
-[rust]: ./rust/README.md
 [typescript]: ./typescript/README.md
 
 If you would like to create a new language track for v3, please [open an issue here](https://github.com/exercism/request-new-language-track).

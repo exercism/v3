@@ -8,7 +8,7 @@
   - [Common Lisp](/languages/common-lisp/README.md)
   - [Dart](/languages/dart/README.md)
   - [Elixir](/languages/elixir/README.md)
-  - [Emacs LISP](/languages/emacs-lisp/README.md)
+  - [Emacs Lisp](/languages/emacs-lisp/README.md)
   - [Erlang](/languages/erlang/README.md)
   - [F#](/languages/fsharp/README.md)
   - [Go](/languages/go/README.md)
@@ -31,3 +31,4 @@
   - [Paradigms](/reference/paradigms/README.md)
   - [Tooling](/reference/tooling/README.md)
   - [Types](/reference/types/README.md)
+  
