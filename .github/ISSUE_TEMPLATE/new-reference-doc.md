@@ -1,9 +1,7 @@
 ---
 
 name: "[MAINTAINERS] Add new reference document"
-about:
-FOR MAINTAINERS ONLY - Use this template to create an issue to add a new reference
-document
+about: FOR MAINTAINERS ONLY - Use this template to create an issue to add a new reference document
 title: "[Docs] Add new reference document: <DOC>"
 labels: status/help-wanted, type/new-reference-doc
 assignees: ""
