@@ -1,7 +1,8 @@
 # Common Lisp Reference
 
-Please note that this is a *very* WIP document. I'm currently using [this
-document][csharp-example] as an example to base my work off of.
+This is a work-in-progress document listing the concepts comprising the Common
+Lisp programming language. I'm currently using [this document][csharp-example]
+as template.
 
 ## Concepts
 ### General
@@ -84,12 +85,12 @@ document][csharp-example] as an example to base my work off of.
     - [Integers][integer]
     - Rationals
   - Sequences
-    - [Arrays][arra]
+    - [Arrays][array]
     - Conses
       - [Association Lists][map]
       - [Lists][list]
       - Property Lists
-      - [set][set]
+      - [Set][set]
       - Trees
     - Vectors
   - Streams
@@ -97,10 +98,9 @@ document][csharp-example] as an example to base my work off of.
   - [Structures][struct]
 
 ## Exercise Concepts
-We should put a table here that go into the specifics to teach for each
-concept. Also give the concepts nice names. I think we are using `.` for
-sub-concepts. So things like `format.numbers` or maybe
-`string-formatting.numbers`.
+| Concept | Learning Objectives |
+| ------- | ------------------- |
+| [`sexpr`][sexpr] | Teach the student about S-expressions, the base unit of all Lisp code. The student should be able to distinguish an `atom` from a `cons` and know how to access the `car` and `cdr` of a cons pair. |
 
 [csharp-example]: ../../csharp/reference/README.md
 [anonymous-functions]: ../../../reference/concepts/anonymous_functions.md
@@ -134,3 +134,5 @@ sub-concepts. So things like `format.numbers` or maybe
 [set]: ../../../reference/types/set.md
 [string]: ../../../reference/types/string.md
 [struct]: ../../../reference/types/struct.md
+
+[sexpr]: ../exercises/concept/sexpr
