@@ -1,6 +1,6 @@
 One of the key aspects of working with numbers in Elixir is the distinction between integers (numbers without a decimal separator) and floating-point numbers (numbers with one or more digits after a decimal separator).
 
-The two most commonly used numeric types in Elixir are `integer` (a 32-bit integer) and `float` (a 64-bit floating-point number).
+The two most commonly used numeric types in Elixir are `integer` (an infinite precision number) and `float` (a 64-bit floating-point number).
 
 Numbers can be compared using the default comparison operators (`<`, `>`, `==`, etc.). These operators can be used in [`cond` control flow statements][cond-control-flow] to conditionally execute code.
 
