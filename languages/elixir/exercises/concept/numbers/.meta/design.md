@@ -9,7 +9,7 @@ The goal of this exercise is to teach the student how the Concept of Numbers is 
 - Know of the existence of the two most commonly used number types, `integer` and `float`.
 - Understand that an `integer` represents whole numbers, and a `float` represents floating-point numbers.
 - Know of basic operators such as multiplication and comparison.
-- Know how to convert from one numeric type to another; know that one operations can cause implicit conversion.
+- Know how to convert from one numeric type to another; know that some operations can cause implicit conversion.
 - Know how to conditionally execute code
 
 ## Out of scope
