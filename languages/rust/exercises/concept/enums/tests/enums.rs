@@ -23,7 +23,7 @@ fn parse_info() {
 #[test]
 #[ignore]
 fn parse_unknown() {
-    assert_eq!(LogLevel::Unknown, parse_log_level("[FATAL]: Crash!"));
+    assert_eq!(LogLevel::Unknown("FATAL".into()), parse_log_level("[FATAL]: Crash!"));
 }
 
 #[test]
