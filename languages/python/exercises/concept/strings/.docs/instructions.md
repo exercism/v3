@@ -1,4 +1,3 @@
-
 In this exercise you'll be processing log-lines.
 
 Each log line is a string formatted as follows: `"[<LEVEL>]: <MESSAGE>"`.
