@@ -11,7 +11,7 @@ The tests will automatically set the culture to `en-US` - you don't have to set 
 
 ### 1. Parse appointment date
 
-Implement a function that can parse a textual representation of an appointment date into the corresponding `DateTime` format:
+Implement the `schedule` function that can parse a textual representation of an appointment date into the corresponding `DateTime` format:
 
 ```fsharp
 schedule "7/25/2019 13:45:00"
@@ -20,7 +20,7 @@ schedule "7/25/2019 13:45:00"
 
 ### 2. Check if an appointment has already passed
 
-Implement a function that takes an appointment date and checks if the appointment was somewhere in the past:
+Implement the `hasPassed` function that takes an appointment date and checks if the appointment was somewhere in the past:
 
 ```fsharp
 hasPassed (DateTime(1999, 12, 31, 9, 0, 0))
@@ -29,7 +29,7 @@ hasPassed (DateTime(1999, 12, 31, 9, 0, 0))
 
 ### 3. Check if appointment is in the afternoon
 
-Implement a function that takes an appointment date and checks if the appointment is in the afternoon (>= 12:00 and < 18:00):
+Implement the `isAfternoonAppointment` function that takes an appointment date and checks if the appointment is in the afternoon (>= 12:00 and < 18:00):
 
 ```fsharp
 isAfternoonAppointment (DateTime(2019, 03, 29, 15, 0, 0))
@@ -38,7 +38,7 @@ isAfternoonAppointment (DateTime(2019, 03, 29, 15, 0, 0))
 
 ### 4. Describe the time and date of the appointment
 
-Implement a function that takes an appointment date and returns a description of that date and time:
+Implement the `description` function that takes an appointment date and returns a description of that date and time:
 
 ```fsharp
 description (DateTime(2019, 03, 29, 15, 0, 0))
