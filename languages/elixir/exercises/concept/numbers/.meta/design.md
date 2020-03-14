@@ -10,13 +10,16 @@ The goal of this exercise is to teach the student how the Concept of Numbers is 
 - Understand that an `integer` represents whole numbers, and a `float` represents floating-point numbers.
 - Know of basic operators such as multiplication and comparison.
 - Know how to convert from one numeric type to another; know that some operations can cause implicit conversion.
-- Know how to conditionally execute code
+- Know how to conditionally execute code using `cond` control flow statements.
 
 ## Out of scope
 
 - Any other numeric types besides `integer` and `float` (so no `binary`, `boolean`, etc.).
 - Parsing a `string` to an `integer` or `float`.
 - Converting an `integer` or `float` to a `string`.
+- Alternatives to `cond` control flow statements
+  - This could also be implemented with `case` constrol flow statements with guards, function overloading with guards, or nested `if-else` control flow statements
+  - Since these concepts also involve other concepts which have not yet been introduced (like pattern matching), goal was to implement some control logic with the minimal amount of spill over to another concept.
 
 ## Concepts
 
