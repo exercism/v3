@@ -9,11 +9,10 @@ See [progression.md](progression.md) for planning the progression order of the E
 
 The core features a Emacs Lisp developer should know about are:
 
-- special forms
+- S-expressions
+- Special forms
 - atoms
 - quote
-- s-exprs
-- whitespace
 - [evaluation][evaluation]
 - [functions][functions]
 - [variables][variables]
