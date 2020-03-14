@@ -8,7 +8,14 @@
     "indent_size": 2
   },
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+        "slug": "numbers",
+        "uuid": "7020224b-742a-4166-a028-700e7415c936",
+        "concepts": ["variables", "type", "number", "implicit-return", "cond-control-flow"],
+        "prerequisites": []
+      }
+    ],
     "practice": []
   }
 }
