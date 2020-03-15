@@ -142,7 +142,8 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 
 - Let it crash
 - Try, Catch, Rescue
-- {:ok, result}, {:error, reason}
+- Ok/Error tuples
+  - {:ok, result}, {:error, reason}
 
 ### IO and the Filesystem
 
