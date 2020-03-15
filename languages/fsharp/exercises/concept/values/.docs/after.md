@@ -8,7 +8,7 @@ F# also supports mutable bindings, known as [_variables_][variables]. To define 
 
 As immutability is the default in F#, variables are used sparingly; the default is regular, immutable bindings. There are several [benefits to using immutability][immutability], such as the code being easier to reason about and enabling the compiler to better reason about the code.
 
-Lastly, the F# compiler supports _type inference_. Therefore, specifying a binding's type is optional, as the compiler can infer its type from the value it is associated with.
+Lastly, the F# compiler supports _type inference_. Therefore, specifying a binding's type is optional in most cases, as the compiler can infer its type from the value it is associated with.
 
 [bindings]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/values/#binding-a-value
 [variables]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/values/#mutable-variables
