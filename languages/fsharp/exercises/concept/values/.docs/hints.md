@@ -1,4 +1,4 @@
-### 1. Check how many minutes the lasasgne should be in the oven
+### 1. Check how many minutes the lasagne should be in the oven
 
 - You need to define a [binding][bindings].
 
