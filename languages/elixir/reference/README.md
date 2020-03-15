@@ -9,6 +9,7 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 - [Anonymous functions](../../../reference/concepts/anonymous_functions.md)
 - [Higher-order functions](../../../reference/concepts/higher_order_functions.md)
 - [Immutability](../../../reference/concepts/immutability.md)
+  - Variable Scoping
 - [Pattern matching](../../../reference/concepts/pattern_matching.md)
 - [Pipelines](../../../reference/concepts/pipelines.md)
 - [Recursion](../../../reference/concepts/recursion.md)
@@ -27,26 +28,32 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 - elixir mix
   - directory structure
   - mix tasks
+    - format
+    - clean
+    - test
 - Naming conventions
 - Eager Computation
 - Lazy Computation
 - Guards
 - Compiling
 - Scripts (\*.exs) vs Code (\*.ex)
+- Regex
 - TODO: more
 
 ### Modules
 
 - Naming
 - Attributes
+  - Redefining
 - Alias
 - Require
 - Import
 - Use
+- Dynamic
 - TODO: more
 
 ### Functions
-
+- Private functions
 - Named functions
   - Multi-line syntax
   - One-line syntax
@@ -54,9 +61,17 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
   - functions prefixed with `is_`
   - functions ending in `?`
   - functions ending in `!`
-- Arugment positioning conventions
+  - functions prefixed with `do_`
+- Argument positioning conventions
 - [Default arguments](../../../reference/concepts/default_arguments.md)
 - Capture Syntax
+- Guards and defguard
+- Parameters prefixed with `_`
+- Local variables
+- Implicit return
+- Expression results
+- Recursion
+- Multi-clause functions
 
 ### General
 
@@ -68,6 +83,7 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 - Control Structures
 - Literal Forms of data structures (lists, keyword lists, maps)
 - Bitwise functions and operators
+- Case vs Cond vs Multiple function clauses
 - TODO: more
 
 ### Basic Types
@@ -126,6 +142,8 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 
 - Let it crash
 - Try, Catch, Rescue
+- Ok/Error tuples
+  - {:ok, result}, {:error, reason}
 
 ### IO and the Filesystem
 
