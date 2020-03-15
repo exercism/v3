@@ -1,6 +1,6 @@
 A `list` in F# is an immutable collection of zero or more values. The values in a list must all have the same type. Lists are implemented as singly linked lists.
 
-To define a list, list the elements separated by semicolons (`;`) and enclose it in square brackets (`[]`). The most common way to add an item to a list it through the `::` operator, which adds an element to the beginning of the list and is very fast.
+To define a list, list the elements separated by semicolons (`;`) and enclose it in square brackets (`[]`). The most common way to add an item to a list it through the cons operator (`::`), which adds an element to the beginning of the list and is very fast.
 
 The first item of a list is referred to as the _head_, with the items after the first item being referred to as the _tail_.
 
