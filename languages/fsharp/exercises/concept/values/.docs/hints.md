@@ -2,7 +2,7 @@
 
 - You need to define a [binding][bindings].
 
-### 2. Keep track of how many minutes the lasasgne has been be in the oven
+### 2. Keep track of how many minutes the lasagne has been be in the oven
 
 - You need to define a [variable][variables], which is a mutable binding.
 
