@@ -2,7 +2,7 @@ In this exercise you're going to write some code to help you cook a brilliant la
 
 You have two tasks, both related to keeping track of the time the lasasgna has to spend in the oven.
 
-### 1. Check how many minutes the lasasgne should be in the oven
+### 1. Check how many minutes the lasagne should be in the oven
 
 Define the `expectedMinutesInOven` binding to check how many minutes the lasagne should be in the oven. According to the cooking book, the expected oven time in minutes is 40:
 
