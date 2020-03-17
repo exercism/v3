@@ -1,6 +1,6 @@
 In this exercise you're going to write some code to help you cook a brilliant lasagna from your favorite cooking book.
 
-You have two tasks, both related to keeping track of the time the lasasgna has to spend in the oven.
+You have four tasks, all related to the time spent cooking the lasasgna.
 
 ### 1. Define the expected oven time in minutes
 
