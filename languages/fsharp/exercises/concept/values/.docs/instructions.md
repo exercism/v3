@@ -22,11 +22,11 @@ remainingMinutesInOven 30
 
 ### 3. Calculate the preparation time in minutes
 
-Define the `preparationTimeInMinutes` function that takes the number of layers you added to the lasagna as a parameter and returns how many minutes you spent preparing the lasagna, assuming each layer takes you 3 minutes to prepare.
+Define the `preparationTimeInMinutes` function that takes the number of layers you added to the lasagna as a parameter and returns how many minutes you spent preparing the lasagna, assuming each layer takes you 2 minutes to prepare.
 
 ```fsharp
 preparationTimeInMinutes 2
-// => 6
+// => 4
 ```
 
 ### 4. Calculate the total working time in minutes
