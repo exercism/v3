@@ -41,7 +41,7 @@ Before launch, we need all of the following parts to be completed:
 
 ### Test Runner
 
-- [ ] Build Test Runner
+- [x] [Build Test Runner] (https://github.com/exercism/c-test-runner)
 - [ ] Deploy Test Runner
 
 ## Extra magic
