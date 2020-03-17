@@ -10,7 +10,7 @@ Invoking a function is done by specifying its name and passing arguments for eac
 
 If a binding's type cannot be inferred, the compiler will report an error. To fix this, make the binding's type explicit.
 
-F# uses significant whitespace to define scope. This means that scope is defined by indenting the code with spaces, relative to the line declaring the binding. The default convention is to use four spaces for indentation.
+Significant whitespace is used to define scope, by indenting code with spaces relative to the line declaring the binding. The default convention is to use four spaces for indentation.
 
 [bindings]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/values/#binding-a-value
 [functions]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/functions/#remarks
