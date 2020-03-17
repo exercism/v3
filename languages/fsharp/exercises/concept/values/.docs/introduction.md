@@ -1,4 +1,4 @@
-In F#, a _value_ is everything that has a type and can be defined. That includes booleans, integers and lists, but also functions. As F# is a _functional-first_ programming language, functions are at the heart of the language.
+In F#, a _value_ is everything that has a type and can be defined. That includes booleans, integers and lists, but also functions. An integer value is defined as one or more (consecutive) digits and it supports the default mathetical operators.
 
 Associating a name with a value is referred to as a _binding_. A binding is defined using the `let` keyword. Function bindings are regular bindings, but with one or more parameters, which are separated by spaces. Invoking a function is done by specifying its name and passing arguments for each of the function's parameters, again separated by spaces.
 
