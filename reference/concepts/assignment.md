@@ -20,11 +20,11 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 
 #### Implementations
 
-| Track | Exercise                        | Changes |
-| ----- | ------------------------------- | ------- |
-| C#    | [basics][implementation-csharp] | None    |
-| F#    | [values][implementation-fsharp] | None    |
+| Track | Exercise                        | Changes                            |
+| ----- | ------------------------------- | ---------------------------------- |
+| C#    | [basics][implementation-csharp] | None                               |
+| F#    | [basics][implementation-fsharp] | Does not update a variable's value |
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/introduction.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/values/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/introduction.md
 [concept-variables]: ./variables.md

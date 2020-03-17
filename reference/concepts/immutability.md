@@ -18,8 +18,7 @@ The values are sometimes also referred to as _constant_ or _read-only_ values.
 This exercise deals with cooking a lasagna dish in the oven. The reference implementation (F#) teaches:
 
 - What immutability is and some of its benefits
-- How to define a mutable an immutable variable/binding
-- What the default is regarding immutability
+- How to define an immutable value
 
 #### Implementations
 
