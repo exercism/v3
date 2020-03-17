@@ -10,6 +10,7 @@ Functions are also regular bindings, but with one or more parameters, which are 
 
 ```fsharp
 let add (x: int) (y: int): int = x + y
+let five = add 2 3
 ```
 
 Specifying the type of a binding is optional in most cases. If no type is specified for a binding, the F# compiler will use _type inference_ to try to automatically infer the type of the binding based on its value. Type inference also works for most functions, by analyzing what values the function is called with and what value the function returns.
