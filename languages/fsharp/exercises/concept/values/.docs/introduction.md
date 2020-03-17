@@ -6,11 +6,16 @@ Assigning a value to a name is referred to as a _binding_. As bindings are immut
 let fingers: int = 10
 ```
 
-Functions are also regular bindings, but with one or more parameters, which are separated by spaces. Invoking a function is done by specifying its name and passing arguments for each of the function's parameters, again separated by spaces. A function will automatically return its last expression.
+Functions are also regular bindings, but with one or more parameters, which are separated by spaces. A function will automatically return its last expression.
 
 ```fsharp
 let add (x: int) (y: int): int = x + y
-let five = add 2 3
+```
+
+Invoking a function is done by specifying its name and passing arguments for each of the function's parameters, again separated by spaces.
+
+```fsharp
+let five: int = add 2 3
 ```
 
 Specifying the type of a binding is optional in most cases. If no type is specified for a binding, the F# compiler will use _type inference_ to try to automatically infer the type of the binding based on its value. Type inference also works for most functions, by analyzing what values the function is called with and what value the function returns.
