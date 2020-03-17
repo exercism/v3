@@ -4,6 +4,6 @@ Associating a name with a value is referred to as a _binding_. A binding is defi
 
 A key aspect of bindings is that they're immutable. This means that once a binding has been defined, its value can never change. As a consequence, a new binding has to be defined for changing values.
 
-Specifing the type of a binding is optional. If no type is specified for a binding, the F# compiler will use _type inference_ to try to automatically infer the type of the binding. It will do this based on the value of the binding. For functions, the type is inferred by analyzing what values the function is called with and what value the function returns.
+Specifying the type of a binding is optional. If no type is specified for a binding, the F# compiler will use _type inference_ to try to automatically infer the type of the binding. It will do this based on the value of the binding. For functions, the type is inferred by analyzing what values the function is called with and what value the function returns.
 
 F# uses significant whitespace to define scope. This means that scope is defined by indenting the code with spaces, relative to the line declaring the binding. The default convention is to use four spaces for indentation.
