@@ -2,20 +2,38 @@ In this exercise you're going to write some code to help you cook a brilliant la
 
 You have two tasks, both related to keeping track of the time the lasasgna has to spend in the oven.
 
-### 1. Check how many minutes the lasagne should be in the oven
+### 1. Define the expected oven time in minutes
 
-Define the `expectedMinutesInOven` binding to check how many minutes the lasagne should be in the oven. According to the cooking book, the expected oven time in minutes is 40:
+Define the `expectedMinutesInOven` binding to check how many minutes the lasagna should be in the oven. According to the cooking book, the expected oven time in minutes is 40:
 
 ```fsharp
 expectedMinutesInOven
 // 40
 ```
 
-### 2. Keep track of how many minutes the lasagne has been be in the oven
+### 2. Calculate the remaining oven time in minutes
 
-Define the `actualMinutesInOven` variable to keep track of the number of minutes the lasagna has been in the oven. At this moment, the lasagne has already been in the oven for 15 minutes:
+Define the `remainingMinutesInOven` function that takes the actual minutes the lasagna has been in the oven as a parameter and returns how many minutes the lasagna still has to remain in the oven, based on the expected time oven time in minutes from the previous task.
 
 ```fsharp
-actualMinutesInOven
-// => 15
+remainingMinutesInOven 30
+// => 10
+```
+
+### 3. Calculate the preparation time in minutes
+
+Define the `preparationTimeInMinutes` function that takes the number of layers you added to the lasagna as a parameter and returns how many minutes you spent preparing the lasagna, assuming each layer takes you 3 minutes to prepare.
+
+```fsharp
+preparationTimeInMinutes 2
+// => 6
+```
+
+### 4. Calculate the total working time in minutes
+
+Define the `totalTimeInMinutes` function that takes two parameters: the first parameters is the number of layers you added to the lasagna, and the second parameter is the number of minutes the lasagna has been in the oven. The function should return how many minutes in total you've worked on cooking the lasagna, which is the sum of the preparation time in minutes plus the time in minutes the lasagna has spent in the oven at the moment.
+
+```fsharp
+totalTimeInMinutes 3 20
+// => 26
 ```

@@ -2,4 +2,11 @@ module Values
 
 let expectedMinutesInOven = 40
 
-let mutable actualMinutesInOven = 15
+let remainingMinutesInOven actualMinutesInOven =
+    expectedMinutesInOven - actualMinutesInOven
+
+let preparationTimeInMinutes numberOfLayers =
+    numberOfLayers * 2
+
+let totalTimeInMinutes numberOfLayers actualMinutesInOven =
+    preparationTimeInMinutes numberOfLayers + actualMinutesInOven

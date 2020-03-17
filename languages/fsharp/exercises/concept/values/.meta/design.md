@@ -14,6 +14,8 @@ The goal of this exercise is to teach the student the basics of the Concept of V
 - Know that bindings are immutable.
 - Know how type inference works for bindings.
 - Know how to define scope using significant whitespace.
+- Know how to define an integer.
+- Know how to use mathematical operators on integers.
 
 ## Out of scope
 
@@ -43,6 +45,7 @@ The Concepts this exercise unlocks are:
 - `bindings-basic`: know what a value is; know how to define a binding; know that bindings are immutable; know how to define scope using significant whitespace.
 - `functions-basic`: know how to define a function; know how to return a value from a function; know how to call a function.
 - `type-inference-basic`: know what type inference is; know how type inference works for bindings.
+- `integers-basic`: know how to define an integer; know how to use mathematical operators on integers.
 
 ## Prequisites
 
@@ -54,7 +57,10 @@ This exercise does not require any specific representation logic to be added to 
 
 ## Analyzer
 
-This exercise does not require any specific logic to be added to the [analyzer][analyzer].
+This exercise could benefit from the following rules added to the the [analyzer][analyzer]:
+
+- Check if the whitespace adheres to community defaults.
+- Check if the `totalTimeInMinutes` function actually calls the `preparationTimeInMinutes` function.
 
 [analyzer]: https://github.com/exercism/fsharp-analyzer
 [representer]: https://github.com/exercism/fsharp-representer

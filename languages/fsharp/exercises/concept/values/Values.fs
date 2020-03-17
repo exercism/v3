@@ -1,5 +1,9 @@
 module Values
 
-// TODO: define a binding named 'expectedMinutesInOven'
+// TODO: define the 'expectedMinutesInOven' binding
 
-// TODO: define a variable named 'actualMinutesInOven'
+// TODO: define the 'remainingMinutesInOven' function
+
+// TODO: define the 'preparationTimeInMinutes' function
+
+// TODO: define the 'totalTimeInMinutes' function
