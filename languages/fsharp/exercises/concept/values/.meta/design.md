@@ -19,7 +19,6 @@ The goal of this exercise is to teach the student the basics of the Concept of V
 
 ## Out of scope
 
-- Functions.
 - Generic values.
 - Mutable values.
 - Reference cells.
