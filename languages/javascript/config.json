@@ -22,6 +22,12 @@
         "concepts": ["strings-basic"]
       },
       {
+        "slug": "booleans",
+        "uuid": "5acafcbb-20a0-45b9-b276-3d167e0de313",
+        "concepts": ["booleans-basic"],
+        "prerequisites": []
+      },
+      {
         "slug": "promises",
         "uuid": "4a967656-8615-474e-a009-5c0b09f4386f",
         "concepts": ["promises"],

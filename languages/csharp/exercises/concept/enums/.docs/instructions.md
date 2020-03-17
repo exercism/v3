@@ -1,5 +1,3 @@
-# Instructions
-
 In this exercise you'll be processing log-lines.
 
 Each log line is a string formatted as follows: `"[<LEVEL>]: <MESSAGE>"`.
@@ -20,11 +18,11 @@ Define a `LogLevel` enum that has three elements:
 - `Warning`
 - `Error`
 
-Next, implement a method to parse the log level of a log line:
+Next, implement the `LogLine.ParseLogLevel` method to parse the log level of a log line:
 
 ```csharp
 LogLine.ParseLogLevel("[INFO]: File deleted")
-// Returns: LogLevel.Info
+// => LogLevel.Info
 ```
 
 ### 2. Support unknown log level
@@ -33,7 +31,7 @@ Unfortunately, occasionally some log lines have an unknown log level. To gracefu
 
 ```csharp
 LogLine.ParseLogLevel("[FATAL]: Invalid operation")
-// Returns: LogLevel.Unknown
+// => LogLevel.Unknown
 ```
 
 ### 3. Convert log line to short format
@@ -47,9 +45,9 @@ The encoded log level is simple mapping of a log level to a number:
 - `Warning` -> `2`
 - `Error` -> `4`
 
-Implement a method that can output the shortened log line format:
+Implement the `LogLine.OutputForShortLog` method that can output the shortened log line format:
 
 ```csharp
 LogLine.OutputForShortLog(LogLevel.Error, "Stack overflow")
-// Returns: "4:Stack overflow"
+// => "4:Stack overflow"
 ```

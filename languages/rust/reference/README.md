@@ -4,13 +4,14 @@
 
 The Rust concept exercises teach concepts from fundamentals through language mastery. They are classified and listed below.
 
-The groupings are not themselves concepts, and there has been strong pushback against the notion of forming any grouped metaconcepts as yet. 
+Exercism concepts exist to serve learners in practical ways so they differ from abstract ideas. This document defines what these concepts mean in Rust. We added visual grouping below to help track maintainers create an effective reference document. Such groupings *do not* constitute pedagogical divisions. So please do not reference them while teaching.
+
 
 Checkboxes indicate whether concepts are yet taught in the exercise mapping list.
 
 ### Fundamentals of Rust
 
-These concepts are irreducable.
+These concepts are irreducible.
 
 - [x] [Functions](../../../reference/concepts/functions.md)
 - [x] Test Suites
@@ -18,7 +19,7 @@ These concepts are irreducable.
 - [x] [Conditionals](../../../reference/concepts/conditionals.md)
 - [x] Slices
 - [x] [Loops](../../../reference/concepts/loops.md)
-- [x] Iterator usage 
+- [x] Iterator usage
 
 ### Primitives
 
@@ -54,7 +55,7 @@ These concepts help organize data in more complicated ways than primitives allow
 - [x] Enums
 - [x] `Vec<T>`
 - [x] `Hashmap<K, V>`
-  [x]   - Entry API
+  - [x] Entry API
 - [x] `HashSet<K>`
 - [x] `BTreeMap`
 - [ ] `FromIterator`, `IntoIterator`
@@ -65,13 +66,13 @@ These concepts help organize data in more complicated ways than primitives allow
 
 These concepts are more advanced than the fundamentals, but may be familiar from other languages.
 
-- [x] Scopes and Expressions (implicit return) 
+- [x] Scopes and Expressions (implicit return)
 - [x] Explicit `return`
 - [x] [Methods](../../../reference/concepts/methods.md) / `impl` blocks
 - [ ] [Composition](../../../reference/concepts/composition.md)
 - [x] Basics of [Generics](https://doc.rust-lang.org/book/ch10-00-generics.html)
 - [ ] Using External Crates / Libraries
-  [ ]   - `use` statement for importing
+  - [ ] `use` statement for importing
 - [x] `match` basics: ints and enums
 - [ ] Destructuring (in `match`, in `let`)
 - [ ] [`match` with Pattern matching](https://doc.rust-lang.org/book/ch06-02-match.html)
@@ -144,8 +145,8 @@ These concepts are distinctive or unique to Rust.
 
 ## Concept exercise mapping
 
-While the ideal is to have a single concept exercise for each of the concepts listed above, which 
-teaches exactly one concept and requires only its prerequisites, 
+While the ideal is to have a single concept exercise for each of the concepts listed above, which
+teaches exactly one concept and requires only its prerequisites,
 doing so is not entirely practical. For example, it would be difficult to design an exercise
 which taught what functions are without requiring any knowledge of primitives; likewise,
 it would be difficult to teach primitives, with a test suite, without any knowledge of functions.
@@ -159,9 +160,9 @@ exercise | prerequisites | teaches | narrative
 `conditionals` | `hello-world` | conditionals | should structure as 3-branch `if` / `else if` / `else`; implicit return
 `slices` | `hello-world`, `compiled-calculator` | slices | extract a slice from a parameter which is a slice of ints
 `loops` | `slices` | basic looping over a slice | ideally with early return so it's cumbersome to express as an iterator
-`iterator-use` | `slices` | iterator usage, `collect` | 
+`iterator-use` | `slices` | iterator usage, `collect` |
 `integer-sizes` | `compiled-calculator` | non-`i32` integers, casting | still all signed
-`unsigned-ints` | `integer-sizes` | unsigned ints | 
+`unsigned-ints` | `integer-sizes` | unsigned ints |
 `indexing` | `integer-sizes`, `slices` | indexing, `usize` |
 `floats` | `compiled-calculator` | floats | probably the same compiled calculator exercise, with non-int results
 `bools` | `compiled-calculator` | bools, boolean operators |
@@ -177,34 +178,26 @@ exercise | prerequisites | teaches | narrative
 `methods` | `structs`, `explicit-return` | `impl` blocks, methods |
 `tuples` | `structs` | tuples | teach as anonymous structs; teach `.0` syntax
 `tuple-structs` | `tuples`, `structs` | tuple structs (named tuples) |
-`basic-enums` | `unsigned-ints` | basic enums (no fields), `match` | 
+`basic-enums` | `unsigned-ints` | basic enums (no fields), `match` |
 `enums` | `basic-enums`, `tuple-structs` | tuple syntax for enum variants |
-`option` | `enums` | `Option<T>` | 
+`option` | `enums` | `Option<T>` |
 `result` | `enums` | `Result<T, E>` |
 `mutability` | `compiled-calculator` | immutability by default; explicit mutability |
 `let-expressions` | `loops`, `option`, `result` | `if let`, `while let` | probably will only depend on one of `option` or `result` based on implementation
 `vectors` | `slices` | `Vec<T>` |
-`hashmaps` | `vectors` | `Hashmap<K, V>` | 
-`entry-api` | `hashmaps` | Entry API | 
+`hashmaps` | `vectors` | `Hashmap<K, V>` |
+`entry-api` | `hashmaps` | Entry API |
 `hashsets` | `hashmaps` | `HashSet<K>` |
-`btreemaps` | `hashmaps` | `BTreeMap<K, V>` | 
-`deriving-traits` | `structs` | `PartialEq`, `PartialOrd`, `Debug`, `Display`, `Default` | 
+`btreemaps` | `hashmaps` | `BTreeMap<K, V>` |
+`deriving-traits` | `structs` | `PartialEq`, `PartialOrd`, `Debug`, `Display`, `Default` |
 `implementing-traits` | `deriving-traits` | manually implementing a trait | probably implement `Iterator`
 `collection-conversions` | `vectors`, `hashsets`, `implementing-traits` | `FromIterator`, `IntoIterator` |
 
 _etc..._
 
-## Reference docs
-
-Reference docs are written to help explain a particular concept to a student when no appropriate online document can be found. They will be used when creating exercises and as references in exercise documentation.
-
-The following reference docs have been written:
-
-_None_
-
 ## TODO
 
 - Finish specifying concept exercises with specific dependencies and topics
-- Find references in The Rust Book to as many of the concepts above as possible; link them, replacing exercism references
-- Find references in the [general exercism reference section](../../../reference/README.md) for as many of the remaining concepts as possible; link them
+- Find references in The Rust Book to as many of the concepts above as possible; link them, replacing Exercism references
+- Find references in the [general Exercism reference section](../../../reference/README.md) for as many of the remaining concepts as possible; link them
 - Write appropriate references for all remaining concepts; link them

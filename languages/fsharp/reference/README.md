@@ -153,23 +153,16 @@ While F# has OO features, it is a "functional first" language. It is important t
 
 The concept exercises use the following concepts:
 
-| concept | interpretation |
-| ------- | -------------- |
-
-
-## Reference docs
-
-Reference docs are written to help explain a particular F# concept to a student when no appropriate online document can be found. They will be used when creating exercises and as references in exercise documentation.
-
-The following reference docs have been written:
-
-- [Assemblies][assemblies]
-
-The following reference docs should be written:
-
-- Naming conventions
-- Code style
-- Memory allocation
+| concept                   | interpretation                                                                                                                                                                                                                                                                                 |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `booleans-basics`         | Know of the existence of the `bool` type and its two values. Know about boolean operators and how to build logical expressions with them. Know of the boolean operator precedence rules.                                                                                                       |
+| `conditionals-if`         | Know of the existence of the `if` conditional execution expression.                                                                                                                                                                                                                            |
+| `dates-basic`             | Know of the existence of the `DateTime` type. Know of the individual, date-related properties. Know how to access the current date. Know how to compare dates. Know how to convert a `string` to a `DateTime` and vice versa.                                                                  |
+| `lists-basic`             | Know of the existence of the `list` type. Know how to define an empty and non-empty list. Know how to add an element to a list. Know some common list functions.                                                                                                                               |
+| `numbers-basic`           | Know of the existence of the two most commonly used number types, `int` and `double`, and understand that the former represents whole numbers, and the latter floating-point numbers. Know of basic operators such as multiplication and comparison.                                           |
+| `strings-basic`           | Know of the existence of the `string` type. Know how to create a string. Know of some basic methods (like finding the index of a character in a string, or returning a part the string). Know how to do basic string formatting. Know where it's documented, or at least how to search for it. |
+| `time-basic`              | Know of the existence of the `DateTime` type. Know of the individual, time-related properties.                                                                                                                                                                                                 |
+| `type-conversion-numbers` | know how to convert from one numeric type to another using conversion operators.                                                                                                                                                                                                               |
 
 [encapsulation]: ../../../reference/concepts/encapsulation.md
 [classes]: ../../../reference/concepts/classes.md
@@ -193,7 +186,6 @@ The following reference docs should be written:
 [conditionals]: ../../../reference/concepts/conditionals.md
 [enumeration]: ../../../reference/concepts/enumeration.md
 [generics]: ../../../reference/concepts/generics.md
-[assemblies]: ../../../reference/tooling/dotnet-assemblies.md
 [bool]: ../../../reference/types/boolean.md
 [string]: ../../../reference/types/string.md
 [char]: ../../../reference/types/char.md
