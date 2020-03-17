@@ -6,7 +6,7 @@ Bindings are defined using the `let` keyword. Specifying a binding's type is opt
 let fingers = 10
 ```
 
-Functions are also regular bindings, but with one or more parameters, which are separated by spaces. A function will automatically return its last expression. Type inference also works for most functions, by analyzing what values the function is called with and what value the function returns.
+Functions are also regular bindings, but with one or more parameters, which are separated by spaces. A function automatically returns its last expression. Type inference also works for most functions, by analyzing what values the function is called with and what value the function returns.
 
 ```fsharp
 let add x y = x + y
