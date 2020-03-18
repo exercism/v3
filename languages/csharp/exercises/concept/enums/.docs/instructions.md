@@ -2,28 +2,36 @@
 
 In this exercise you'll be processing log-lines.
 
-Each log line is a string formatted as follows: `"[<LEVEL>]: <MESSAGE>"`.
+Each log line is a string formatted as follows: `"[<LVL>]: <MESSAGE>"`.
 
-There are three different log levels:
+These are the different log levels:
 
-- `INFO`
-- `WARNING`
-- `ERROR`
+- `Unknown`
+- `Trace`
+- `Debug`
+- `Info`
+- `Warning`
+- `Error`
+- `Fatal`
 
 You have three tasks.
 
 ### 1. Parse log level
 
-Define a `LogLevel` enum that has three elements:
+Define a `LogLevel` enum that has seven elements. Here are the log levels and their corresponding messages from the system.
 
-- `Info`
-- `Warning`
-- `Error`
+- `Unknown` - "[UNK] Message..."
+- `Trace` - "[TRC] Here is the stack trace: ..."
+- `Debug` - "[DBG] Solve this problem by ..."
+- `Info` - "[INF] Processing..."
+- `Warning` - "[WRN] Unsuspicious activity detected"
+- `Error` - "[ERR] Missing semicolon;"
+- `Fatal` - "[FTL] Stack Overflow"
 
 Next, implement a method to parse the log level of a log line:
 
 ```csharp
-LogLine.ParseLogLevel("[INFO]: File deleted")
+LogLine.ParseLogLevel("[INF]: File deleted")
 // Returns: LogLevel.Info
 ```
 
