@@ -1,6 +1,6 @@
 ### General
 
-- The [Python documentation for `str`][python-str-doc] is an overview of the Python `str` type.
+- The [Python documentation for `str`][python-str-doc] has an overview of the Python `str` type.
 
 ### 1. Get message from a log line
 
