@@ -33,18 +33,13 @@ languages
 
 ## Step 1: adding track-specific files
 
-These files are specific to the Rust track:
+A shell script is provided for boilerplating a concept exercise, use with `sh boil-exercise.sh <SLUG>`. It will provide unfinished files for step 1 and 2 to review in your text editor of choice. You can also use `cargo init --lib <SLUG> --vcs none` to boilerplate the directory and create all the files manually if that doesn't work.
 
-- `/src/lib.rs`: the Rust library file, which is the starting point for students to work on the exercise.
-- `Cargo.toml`: the Cargo file. Be aware the online editor does not support editing the `Cargo.toml`.
-```toml
-[package]
-name = "<SLUG>"
-version = "0.1.0"
-edition = "2018"
-```
-- `/tests/<NAME>.rs`: the test suite.
-- `.meta/example.rs`: an example implementation that passes all the tests.
+Of special note are
+- `src/lib.rs`: the Rust library file, which is the starting point for students to work on the exercise.
+- `Cargo.toml`: the Cargo file. Be aware the online editor does not support editing the `Cargo.toml` so all dependencies must be specified up-front, and the author field should be removed.
+- `tests/<NAME>.rs`: this will become the test suite for this exercise.
+- `.meta/example.rs`: this should be a working example that passes all tests. Students cannot see this.
 
 ## Step 2: adding common files
 
@@ -67,7 +62,7 @@ When implementing an exercise, it can be very useful to look at already-implemen
 If you have any questions regarding implementing the exercise, please post them as comments in the exercise's GitHub issue.
 
 [analyzer]: https://github.com/exercism/rust-analyzer
-[representer]: https://github.com/exercism/v3/issues
+[representer]: https://github.com/exercism/v3/issues/new/choose
 [concept-exercises]: ../exercises/concept/README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
 [concept-exercise-numbers]: ../exercises/concept/numbers
