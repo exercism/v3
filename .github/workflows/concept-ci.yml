@@ -34,9 +34,6 @@ jobs:
           echo "::set-output name=track::$TRACK"
         shell: bash
 
-      - name: Set up Julia
-        uses: julia-actions/setup-julia@v1
-
       - name: Install dependencies
         run: julia --color=yes --project=.github/bin/concept-checks -e "using Pkg; Pkg.instantiate()"
 
