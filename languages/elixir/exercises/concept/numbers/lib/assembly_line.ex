@@ -1,11 +1,27 @@
 defmodule AssemblyLine do
-  @spec production_rate_per_hour(integer()) :: float()
-  def production_rate_per_hour(speed) do
+
+  @spec availability(integer()) :: float()
+  def availability(minutes_worked) do
     raise "Not Yet Implemented"
   end
 
-  @spec working_items_per_minute(integer()) :: integer()
-  def working_items_per_minute(speed) do
+  @spec performance(integer()) :: float()
+  def performance(cars_produced) do
+    raise "Not Yet Implemented"
+  end
+
+  @spec yield(integer()) :: float()
+  def yield(cars_per_hour) do
+    raise "Not Yet Implemented"
+  end
+
+  @spec working_cars_per_hour(integer()) :: integer()
+  def working_cars_per_hour(cars_per_hour) do
+    raise "Not Yet Implemented"
+  end
+
+  @spec oee_measurement(float(), float(), float()) :: float()
+  def oee_measurement(availability, performance, quality) do
     raise "Not Yet Implemented"
   end
 end

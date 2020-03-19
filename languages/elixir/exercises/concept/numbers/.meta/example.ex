@@ -1,21 +1,36 @@
 defmodule AssemblyLine do
 
-  @spec success_rate(integer()) :: float()
-  defp success_rate(speed) do
+  @spec availability(integer()) :: float()
+  def availability(minutes_worked) do
+    days = 5
+    hours = 8
+    minutes_per_hour = 60
+    max_uptime = days * hours * minutes_per_hour
+    minutes_worked / max_uptime
+  end
+
+  @spec performance(integer()) :: float()
+  def performance(cars_produced) do
+    maximum_cars_per_hour = 15
+    cars_produced / maximum_cars_per_hour
+  end
+
+  @spec yield(integer()) :: float()
+  def yield(cars_per_hour) do
     cond do
-      speed >= 9 -> 0.77
-      speed >= 5 -> 0.9
+      cars_per_hour >= 9 -> 0.77
+      cars_per_hour >= 5 -> 0.9
       true       -> 1.0
     end
   end
 
-  @spec production_rate_per_hour(integer()) :: float()
-  def production_rate_per_hour(speed) do
-    221 * speed * success_rate(speed)
+  @spec working_cars_per_hour(integer()) :: integer()
+  def working_cars_per_hour(cars_per_hour) do
+    cars_per_hour |> yield() |> trunc()
   end
 
-  @spec working_items_per_minute(integer()) :: integer()
-  def working_items_per_minute(speed) do
-    (production_rate_per_hour(speed) / 60) |> trunc()
+  @spec oee_measurement(float(), float(), float()) :: float()
+  def oee_measurement(availability, performance, quality) do
+    availability * performance * quality
   end
 end
