@@ -1,11 +1,11 @@
 import re
 
-LOGLINE_RE = r"\[(INFO|ERROR|WARN)\] (.*)"
+LOGLINE_RE = r"\[(?P<level>INFO|ERROR|WARN)\] (?P<msg>.*)"
 
 
 def _extract_pieces(message):
     pieces = re.search(LOGLINE_RE, message)
-    return pieces.group(1), pieces.group(2)
+    return pieces.group("level"), pieces.group("msg")
 
 def _extract_pieces_no_regex_groups(message):
     words = [word for word in re.split("[\s\[\]]", message) if word]
