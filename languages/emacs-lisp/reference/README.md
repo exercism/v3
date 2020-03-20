@@ -13,26 +13,14 @@ The core features a Emacs Lisp developer should know about are:
 - Atoms
 - Quote
 - S-expressions
-- [Evaluation][evaluation]
-- [Interactive and non interactive functions][functions]
-- [Variables][variables]
-- [Macros][macros]
-- [Side-effects][sideeffects]
-- [Loops][loops]
-- [Functions][functions]
-- [Constants][constants]
 - Arguments
-- [Comment Docstrings][comments]
 - Defcustom
-- [Scoping][scope] (Dynamic and Lexical)
 - Autoloading 
 - Byte compilation
 - Hooks
 - Minor modes
 - Major modes
 - Advices
-- [Conditionals][conditionals]
-- [Lambdas][anonymous_functions]
 
 ### Types
 
@@ -52,22 +40,38 @@ The core features a Emacs Lisp developer should know about are:
 - [Text][text]
 - [Booleans][boolean_logic]
 
-[evaluation]: ../../../reference/concepts/evaluation.md
-[functions]: ../../../reference/concepts/functions.md
-[variables]: ../../../reference/concepts/variables.md
-[macros]: ../../../reference/concepts/macros.md
 [list]: ../../../reference/types/list.md
 [string]: ../../../reference/types/string.md
 [number]: ../../../reference/types/number.md
 [symbol]: ../../../reference/types/symbol.md
 [error]: ../../../reference/types/error.md
-[scope]: ../../../reference/types/scope.md
-[sideeffects]: ../../../reference/types/pure_functions.md
-[objects]: ../../../reference/types/objects.md
-[loops]: ../../../reference/types/loops.md
-[functions]: ../../../reference/types/functions.md
-[constants]: ../../../reference/types/constants.md
-[conditionals]: ../../../reference/types/conditionals.md
-[comments]: ../../../reference/types/comments.md
-[boolean_logic]: ../../../reference/types/boolean_logic.md
-[anonymous_functions]: ../../../reference/types/anonymous_functions.md
+
+### Concepts
+
+- [Evaluation][evaluation]
+- [Interactive and non interactive functions][functions]
+- [Variables][variables]
+- [Macros][macros]
+- [Loops][loops]
+- [Functions][functions]
+- [Constants][constants]
+- [Comment Docstrings][comments]
+- [Scoping][scope] (Dynamic and Lexical)
+- [Conditionals][conditionals]
+- [Lambdas][anonymous_functions]
+- [Side-effects][sideeffects]
+
+[evaluation]: ../../../reference/concepts/evaluation.md
+[functions]: ../../../reference/concepts/functions.md
+[variables]: ../../../reference/concepts/variables.md
+[macros]: ../../../reference/concepts/macros.md
+[scope]: ../../../reference/concepts/scope.md
+[sideeffects]: ../../../reference/concepts/pure_functions.md
+[objects]: ../../../reference/concepts/objects.md
+[loops]: ../../../reference/concepts/loops.md
+[functions]: ../../../reference/concepts/functions.md
+[constants]: ../../../reference/concepts/constants.md
+[conditionals]: ../../../reference/concepts/conditionals.md
+[comments]: ../../../reference/concepts/comments.md
+[boolean_logic]: ../../../reference/concepts/boolean_logic.md
+[anonymous_functions]: ../../../reference/concepts/anonymous_functions.md
