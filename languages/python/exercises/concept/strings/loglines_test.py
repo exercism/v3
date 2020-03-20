@@ -45,9 +45,9 @@ class TestLogLines(unittest.TestCase):
             msg="Should reformat with lowercase loglevel. ",
         )
 
-    def test_capture_correct_loglevel(self):
+    def test_capture_message_when_contains_loglevel_string(self):
         self.assertEqual(
             extract_message("[WARN] Warning: file not found. Will WARN once."),
             "Warning: file not found. Will WARN once.",
-            msg="Should extract loglevel inside brackets, not from messsage.",
+            msg="Should extract loglevel inside brackets, not from messsage, even if message contains something that looks like a loglevel.",
         )
