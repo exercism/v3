@@ -33,15 +33,13 @@ The core features a Emacs Lisp developer should know about are:
 - [Booleans][boolean_logic]
 - [Array][array]
 - [Char][char]
-- [Map][map]
-- [Alist][alist]
+- [Maps and Alists][map]
 - [Set][set]
-- [Undefined][undefined]
+- [nil][undefined]
 
 [array]: ../../../reference/types/array.md
 [char]: ../../../reference/types/char.md
 [map]: ../../../reference/types/map.md
-[alist]: ../../../reference/types/alist.md
 [set]: ../../../reference/types/set.md
 [undefined]: ../../../reference/types/undefined.md
 
