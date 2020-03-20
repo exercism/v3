@@ -9,20 +9,19 @@ See [progression.md](progression.md) for planning the progression order of the E
 
 The core features a Emacs Lisp developer should know about are:
 
-- Special forms
-- Atoms
-- Quote
-- S-expressions
-- Arguments
-- Defcustom
-- Autoloading 
-- Byte compilation
-- Hooks
-- Minor modes
-- Major modes
-- Advices
+### Paradigms
+
+- [Imperative programming][imperative]
+- [Functional programming][functional]
+- [Object oriented programming][oop]
+
+[imperative]: ../../../reference/paradigms/imperative.md
+[oop]: ../../../reference/paradigms/object-oriented.md
+[functional]: ../../../reference/paradigms/functional.md
 
 ### Types
+
+#### Generic
 
 - [List][list]
 - [String][string]
@@ -31,6 +30,23 @@ The core features a Emacs Lisp developer should know about are:
 - [Error][error]
 - [Function][functions]
 - EIEIO [Objects][objects] and [Classes][classes]
+- [Booleans][boolean_logic]
+- [Array][array]
+- [Char][char]
+- [Map][map]
+- [Alist][alist]
+- [Set][set]
+- [Undefined][undefined]
+
+[array]: ../../../reference/types/array.md
+[char]: ../../../reference/types/char.md
+[map]: ../../../reference/types/map.md
+[alist]: ../../../reference/types/alist.md
+[set]: ../../../reference/types/set.md
+[undefined]: ../../../reference/types/undefined.md
+
+#### Emacs specific
+
 - Buffer
 - Rings
 - Syntax tables
@@ -38,7 +54,6 @@ The core features a Emacs Lisp developer should know about are:
 - Face
 - Process
 - Text
-- Booleans
 
 [list]: ../../../reference/types/list.md
 [string]: ../../../reference/types/string.md
@@ -47,6 +62,9 @@ The core features a Emacs Lisp developer should know about are:
 [error]: ../../../reference/types/error.md
 
 ### Concepts
+
+#### General
+
 
 - [Evaluation][evaluation]
 - [Interactive and non interactive functions][functions]
@@ -60,6 +78,21 @@ The core features a Emacs Lisp developer should know about are:
 - [Conditionals][conditionals]
 - [Lambdas][anonymous_functions]
 - [Side-effects][sideeffects]
+
+#### Emacs specific
+
+- Special forms
+- Atoms
+- Quote
+- S-expressions
+- Arguments
+- Defcustom
+- Autoloading 
+- Byte compilation
+- Hooks
+- Minor modes
+- Major modes
+- Advices
 
 [evaluation]: ../../../reference/concepts/evaluation.md
 [functions]: ../../../reference/concepts/functions.md
