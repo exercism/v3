@@ -68,6 +68,7 @@ The core features a Emacs Lisp developer should know about are:
 [scope]: ../../../reference/concepts/scope.md
 [sideeffects]: ../../../reference/concepts/pure_functions.md
 [objects]: ../../../reference/concepts/objects.md
+[classes]: ../../../reference/concepts/classes.md
 [loops]: ../../../reference/concepts/loops.md
 [functions]: ../../../reference/concepts/functions.md
 [constants]: ../../../reference/concepts/constants.md
