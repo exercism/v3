@@ -8,4 +8,16 @@ graph LR
    Lists --> Functions & Quote
    Functions --> Evaluation & Arguments & g3[Side Effects]
    Atoms --> Numbers & Strings
+   Macros --> Functions
+   Side-effects --> Variables
+   Arguments --> Functions
+   Docstrings --> Functions
+   Defcustom --> Functions & S-Expressions & Variables
+   Scoping --> Variables
+   Autoloading --> Functions
+   Byte compilation --> Functions
+   Hooks -> Functions
+   Minor modes -> Functions & Hooks & g2[Key bindings]
+   Major modes -> Minor modes
+   Advices -> Functions
 ```
