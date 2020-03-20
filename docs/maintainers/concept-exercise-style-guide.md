@@ -37,7 +37,7 @@ Then, another sentence with the [link repeated][indirect-reference].
 
 Where possible and relevant, format code first as if it was being typed into a terminal, or if not applicable to your language, as if in a code file itself. Please reference the docs for your language, as they may have more information.
 
-For example, Python has the REPL, so we prefer formatting example code as if it was being typed into the REPL, with a leading `>>>`:
+For example, Python has the REPL (read-eval-print loop), which allows a programmer to type code directly into a terminal, so we prefer formatting example code as if it was being typed into the REPL, with a leading `>>>`:
 
 ```
 >>> extract_message("[INFO] Logline message")
