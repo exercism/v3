@@ -47,7 +47,7 @@ When designing Concept Exercises, please consider the following guidelines:
 
 ## Style Guidelines
 
-When writing documentation and errata for Concept Exercises, please consult the [Concept Exercise style guide][concept-exercise-style-guide.md] (and any language-specific style guides if applicable).
+When writing documentation and supporting Markdown files for Concept Exercises, please consult the [Concept Exercise style guide][concept-exercise-style-guide.md] (and any language-specific style guides if applicable).
 
 ## Exercise Structure
 
