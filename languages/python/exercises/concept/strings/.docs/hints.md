@@ -19,7 +19,7 @@ Python also has a concept of string formatting, like many other languages.
  - [`str.format()`][str-format] is an idiomatic way to do string interpolation in Python (inserting one or more string value(s) into another).
  - [Format strings][format-str] are another convenient way to interpolate values into a string. This strategy is particularly useful when more than one named variable needs to be inserted into a final output.
 
- [python-str-doc]: https://docs.python.org/3.7/library/stdtypes.html#text-sequence-type-str
+ [python-str-doc]: https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
  [str-type-methods]: https://docs.python.org/3/library/stdtypes.html#str
  [str-join]: https://docs.python.org/3/library/stdtypes.html#str.join
  [str-format]: https://docs.python.org/3/library/stdtypes.html#str.format
