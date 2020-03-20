@@ -32,6 +32,8 @@ Then, another sentence with the [link repeated][indirect-reference].
 [indirect-reference]: https://example.com/link-to-page
 ```
 
+Links should be inline where possible, i.e. as `<a href="">text</a>` tags instead of bare URLs. This is accomplished using the Markdown bracketed notation, as exemplified above.
+
 
 ## Code
 
