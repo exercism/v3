@@ -30,15 +30,15 @@ The core features a Emacs Lisp developer should know about are:
 - [Symbol][symbol]
 - [Error][error]
 - [Function][functions]
-- [Buffer][buffer]
-- [Rings][rings]
-- [Syntax tables][syntaxTable]
-- [EIEIO Objects and Classes][eieio][objects][classes]
-- [Key bingding][keybinding]
-- [Face][face]
-- [Process][process]
-- [Text][text]
-- [Booleans][boolean_logic]
+- EIEIO [Objects][objects] and [Classes][classes]
+- Buffer
+- Rings
+- Syntax tables
+- Key bingding
+- Face
+- Process
+- Text
+- Booleans
 
 [list]: ../../../reference/types/list.md
 [string]: ../../../reference/types/string.md
@@ -56,7 +56,7 @@ The core features a Emacs Lisp developer should know about are:
 - [Functions][functions]
 - [Constants][constants]
 - [Comment Docstrings][comments]
-- [Scoping][scope] (Dynamic and Lexical)
+- [Scoping][scope]: Dynamic and Lexical scoping
 - [Conditionals][conditionals]
 - [Lambdas][anonymous_functions]
 - [Side-effects][sideeffects]
