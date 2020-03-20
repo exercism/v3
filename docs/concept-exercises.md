@@ -45,6 +45,10 @@ When designing Concept Exercises, please consider the following guidelines:
 1. The exercise should not involve having to learn or engineer a non-trivial algorithm.
 1. The exercise should be background-knowledge-agnostic, unless the exercise calls for it (e.g. no maths unless it's a scientific/maths-based Concept).
 
+## Style Guidelines
+
+When writing documentation and errata for Concept Exercises, please consult the [Concept Exercise style guide][concept-exercise-style-guide.md] (and any language-specific style guides if applicable).
+
 ## Exercise Structure
 
 An exercise has the following files. In the browser they will show at the relevant times. When used via the CLI, the introduction and instructions will be concatenated along with the track's CLI instructions into a README.md, which will sit alongside a HINTS.md.
@@ -113,3 +117,4 @@ See the C# track's [debug.md file][csharp-docs-debug.md] for an example.
 [csharp-docs-instructions.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/instructions.md
 [csharp-docs-design.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.meta/design.md
 [csharp-docs-config.json]: ../languages/csharp/exercises/concept/numbers-floating-point/.meta/config.json
+[concept-exercise-style-guide.md]: maintainers/concept-exercise-style-guide.md
