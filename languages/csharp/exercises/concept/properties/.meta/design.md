@@ -11,18 +11,26 @@ Properties are covered early in the C# track as their purpose and power can be s
 
 - public properties
 - properties with backing fields
+- auto-implemented properties 
 - input verification
 - calculated properties
-- auto-implemented properties
 - get-only properties vs. properties with private set accessors
 - set-only properties vs. properties with private get accessors
 - properties exposing reference types
+
+There is no way to enforce the use of backing fields in preference to auto-implemented properties
+or vice versa either through tests or by giving a steer in the scenario.  The best we can hope for
+is that mentors' comments offer some opinion and the alternative.
+
+Similarly there is no way to distinguish between set/get-only properties and those with
+private accessors. 
+
 
 ## Things not to teach
 
 - expression bodied properties, get accessors and set accessors (covered by expression-bodied members)
 - properties on interfaces (covered by Interfaces)
-- properties on abstract classes (covered by Inheritance)
+- properties/absract properties on abstract classes (covered by Inheritance)
 - use of the `readonly` keyword with properties (covered by Immutability)
 - static properties (covered by Statics)
 - indexers (covered by Indexers)
@@ -35,7 +43,12 @@ Construction of an expressive API with fine-grained control over access.
 
 ## Prequisites
 
-Value types such as int and string.  Definition of classes.
+* Value types such as int and float
+* Definition of classes
+* structs
+* Multiple classes per file
+* number casting, rounding and truncation
+
 Prerequisite Exercises - TBA
 
 ## Resources to refer to
