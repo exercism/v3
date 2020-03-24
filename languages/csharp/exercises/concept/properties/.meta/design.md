@@ -33,8 +33,7 @@ private accessors.
 - static properties (covered by Statics)
 - indexers (covered by Indexers)
 
-Note that students may choose to implement expression-bodied members and, possibly, properties with the
-`readonly` modifier.
+Note that students may choose to implement expression-bodied members.
 
 ## Concepts
 
