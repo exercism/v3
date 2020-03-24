@@ -4,7 +4,7 @@ _Note: This file, and the other docs in this repository, can be viewed on [GitHu
 
 Welcome to the workspace for Exercism v3!
 
-Exercism v3 is the third major iteration of Exercism, which we are aiming to launch around June 2020. It aims to both add exciting new features and to fix some of the issues present in v2, especially those around being blocked while waiting for a mentor. You can read the WIP plan [here](https://github.com/exercism/v3/issues/690). 
+Exercism v3 is the third major iteration of Exercism, which we are aiming to launch around June 2020. It aims to both add exciting new features and to fix some of the issues present in v2, especially those around being blocked while waiting for a mentor. You can read the WIP plan [here](https://github.com/exercism/v3/issues/690).
 
 A summary of the main features:
 
@@ -44,6 +44,7 @@ _(This list is sorted alphabetically.)_
 - [Perl 5][track-perl5]
 - [PureScript][track-purescript]
 - [Python][track-python]
+- [R][track-r]
 - [Racket][track-racket]
 - [Raku][track-raku]
 - [ReasonML][track-reasonml]
@@ -91,6 +92,7 @@ _(This list is sorted alphabetically.)_
 [track-perl5]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fperl5
 [track-purescript]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fpurescript
 [track-python]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fpython
+[track-r]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fr
 [track-raku]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fraku
 [track-racket]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fracket
 [track-reasonml]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Freasonml

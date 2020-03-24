@@ -78,6 +78,9 @@ track/purescript:
 track/python:
   - languages/python/**/*
 
+track/r:
+  - languages/r/**/*
+
 track/raku:
   - languages/raku/**/*
 
