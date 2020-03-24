@@ -79,6 +79,10 @@ Once the student completes the exercise they will be shown this file, which shou
 
 See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.md] for an example.
 
+### `.docs/source.md`
+
+This file contains references and sources of the exercise.
+
 ### `.meta/design.md`
 
 This file contains information on the exercise's design, which includes things like its goal, its teaching goals, what not to teach, and more. This information can be extracted from the exercise's corresponding GitHub issue.
@@ -89,7 +93,7 @@ See the C# floating-point-numbers exercise's [design.md file][csharp-docs-design
 
 ### `.meta/config.json`
 
-This file contains meta information on the exercise, which currently only includes the exercise's contributors.
+This file contains meta information on the exercise, which currently includes the exercise's contributors, and (optionally) language version requirements.
 
 See the C# floating-point-numbers exercise's [config.json file][csharp-docs-config.json] for an example.
 
