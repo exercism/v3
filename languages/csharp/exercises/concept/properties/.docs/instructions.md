@@ -17,17 +17,3 @@ Conversion ratios are as follows:
 - 16 ounces to a pound
 - 2.20462 kg to a pound
 
-
-Running the tests
-To run the tests, run the command `dotnet test` from within the exercise directory.
-
-Further information
-For more detailed information about the C# track, including how to get help if you're having trouble, please visit 
-the exercism.io [C# language page](https://exercism.io/tracks/csharp/resources).
-
-Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-
-Get started
-We've created a step-by-step set of instructions to help you quickly install Exercism and get started, so you can start learning.
-
