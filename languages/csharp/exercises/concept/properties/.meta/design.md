@@ -43,7 +43,7 @@ Construction of an expressive API with fine-grained control over access.
 
 ## Prequisites
 
-* Value types such as int and float
+- `numbers-basic`: value types such as int and float
 * Definition of classes
 * structs
 * Multiple classes per file
@@ -190,4 +190,3 @@ When implementing this exericse, it can be very useful to look at already implem
 [csharp-meta-config.json]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.meta/config.json
 [csharp-docs-concept-exercises]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/README.md
 [referrence-array]: https://github.com/exercism/v3/blob/master/reference/types/array.md
-
