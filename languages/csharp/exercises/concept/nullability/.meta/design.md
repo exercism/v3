@@ -1,0 +1,1 @@
+This file contains information on the exercise's design, which includes things like its goal, its teaching goals, what not to teach, and more ([example][design-example]). This information can be extracted from this GitHub issue.

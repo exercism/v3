@@ -62,6 +62,17 @@
           "attributes-basic",
           "bitwise-operations"
         ]
+      },
+      {
+        "slug": "nullability",
+        "uuid": "370e7e54-6a96-11ea-bc55-0242ac130003",
+        "concepts": ["nullability-basic"],
+        "prerequisites": [
+          "strings-basic",
+          "integers-basic",
+          "variables-basic",
+          "exceptions-basic"
+        ]
       }
     ],
     "practice": []
