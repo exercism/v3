@@ -7,6 +7,7 @@ The goal of this exercise is to teach the student the basics of the Concept of D
 ## Learning objectives
 
 - Know of the existence of the `DateTime` type.
+- Know how to create a date.
 - Know how to get the current date.
 - Know of the individual, date-related properties.
 - Know how to access the current date.
@@ -34,6 +35,7 @@ This exercise's prerequisites Concepts are:
 
 - `numbers-basic`: comparing the hour against specific number values.
 - `strings-basic`: dates are parsed from and converted to strings.
+- `classes-basic`: know how to call a constructor.
 
 ## Representer
 
