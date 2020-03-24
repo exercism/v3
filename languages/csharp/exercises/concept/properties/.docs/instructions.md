@@ -17,3 +17,6 @@ Conversion ratios are as follows:
 - 16 ounces to a pound
 - 2.20462 kg to a pound
 
+50 kilograms == nn ponds
+nn pounds == nn stones nn pounds nn ounces
+

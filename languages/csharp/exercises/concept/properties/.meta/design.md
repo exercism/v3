@@ -9,7 +9,7 @@ Properties are covered early in the C# track as their purpose and power can be s
 
 ## Learning objectives
 
-- Know what properties are and how they related to fields and methods.
+- Know what properties are and how they relate to fields and methods.
 - Know what backing-field properties are.
 - Know what auto-implemented properties are.
 - Know what calculated properties are.
@@ -32,6 +32,9 @@ private accessors.
 - use of the `readonly` keyword with properties (covered by Immutability)
 - static properties (covered by Statics)
 - indexers (covered by Indexers)
+
+Note that students may choose to implement expression-bodied members and, possibly, properties with the
+`readonly` modifier.
 
 ## Concepts
 
