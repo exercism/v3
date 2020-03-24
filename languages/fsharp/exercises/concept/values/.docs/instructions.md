@@ -31,7 +31,7 @@ preparationTimeInMinutes 2
 
 ### 4. Calculate the total working time in minutes
 
-Define the `totalTimeInMinutes` function that takes two parameters: the first parameters is the number of layers you added to the lasagna, and the second parameter is the number of minutes the lasagna has been in the oven. The function should return how many minutes in total you've worked on cooking the lasagna, which is the sum of the preparation time in minutes plus the time in minutes the lasagna has spent in the oven at the moment.
+Define the `totalTimeInMinutes` function that takes two parameters: the first parameter is the number of layers you added to the lasagna, and the second parameter is the number of minutes the lasagna has been in the oven. The function should return how many minutes in total you've worked on cooking the lasagna, which is the sum of the preparation time in minutes, and the time in minutes the lasagna has spent in the oven at the moment.
 
 ```fsharp
 totalTimeInMinutes 3 20
