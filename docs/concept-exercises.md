@@ -89,7 +89,7 @@ See the C# floating-point-numbers exercise's [design.md file][csharp-docs-design
 
 ### `.meta/config.json`
 
-This file contains meta information on the exercise, which currently only includes the exercise's contributors.
+This file contains meta information on the exercise, which currently includes the exercise's contributors, source, and language version requirements.
 
 See the C# floating-point-numbers exercise's [config.json file][csharp-docs-config.json] for an example.
 
