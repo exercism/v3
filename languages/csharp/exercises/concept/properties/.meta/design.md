@@ -7,7 +7,7 @@ The goal of this exercise is to introduce the student to C# properties and to te
 Properties are covered early in the C# track as their purpose and power can be shown with few dependencies (classes, access modifiers and fields of simple types).
 
 
-## Things to teach
+## Learning objectives
 
 - public properties
 - properties with backing fields
