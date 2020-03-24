@@ -8,7 +8,7 @@ retrieve (although not record) the value using his county's idiosyncratic system
 weights and measures - stones, pounds and ounces
 
 If you don't like your weight you can reduce it by applying a reduction.  In the interests
-of privacy obody should be able to retrieve that amount.  The reduction is a percentage of the weight.
+of privacy nobody should be able to retrieve that amount.  The reduction is a percentage of the weight.
 
 Weights must never be negative.
 
