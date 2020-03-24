@@ -7,16 +7,14 @@ The goal of this exercise is to introduce the student to C# properties and to te
 Properties are covered early in the C# track as their purpose and power can be shown with few dependencies (classes, access modifiers and fields of simple types).
 
 
-## Things to teach
+## Learning objectives
 
-- public properties
-- properties with backing fields
-- auto-implemented properties 
-- input verification
-- calculated properties
-- get-only properties vs. properties with private set accessors
-- set-only properties vs. properties with private get accessors
-- properties exposing reference types
+- Know what properties are and how they related to fields and methods.
+- Know what backing-field properties are.
+- Know what auto-implemented properties are.
+- Know what calculated properties are.
+- Know how to use property accessors to customize visibility.
+- Know how to define the different types of properties.
 
 There is no way to enforce the use of backing fields in preference to auto-implemented properties
 or vice versa either through tests or by giving a steer in the scenario.  The best we can hope for
@@ -26,7 +24,7 @@ Similarly there is no way to distinguish between set/get-only properties and tho
 private accessors. 
 
 
-## Things not to teach
+## Out of scope
 
 - expression bodied properties, get accessors and set accessors (covered by expression-bodied members)
 - properties on interfaces (covered by Interfaces)
@@ -43,8 +41,8 @@ Construction of an expressive API with fine-grained control over access.
 
 ## Prequisites
 
-* Value types such as int and float
-* Definition of classes
+- `numbers-basic`: value types such as int and float
+- `classes-basic`: defining classes and working with members.
 * structs
 * Multiple classes per file
 * number casting, rounding and truncation
@@ -190,4 +188,3 @@ When implementing this exericse, it can be very useful to look at already implem
 [csharp-meta-config.json]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers-floating-point/.meta/config.json
 [csharp-docs-concept-exercises]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/README.md
 [referrence-array]: https://github.com/exercism/v3/blob/master/reference/types/array.md
-
