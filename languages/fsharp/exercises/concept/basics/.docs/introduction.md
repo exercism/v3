@@ -26,7 +26,7 @@ let fingers: int = 10
 let add (x: int) (y: int): int = x + y
 ```
 
-Bindings in F# must be defined in _dependency order_, which means bindings (including functions) can only be used _after_ they have been defined. The order in which bindings are defined is thus very important in F#.
+Bindings in F# can only be used _after_ they have been defined. Using a binding before it has been defined results in a compile error.
 
 F# uses significant whitespace to define scope. This means that scope is defined by indenting the code with spaces, relative to the line declaring the binding. The default convention is to use four spaces for indentation:
 

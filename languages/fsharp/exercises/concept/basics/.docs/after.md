@@ -10,6 +10,8 @@ Invoking a function is done by specifying its name and passing arguments for eac
 
 If a binding's type cannot be inferred, the compiler will report an error. To fix this, make the binding's type explicit.
 
+Bindings in F# can only be used _after_ they have been defined. Using a binding before it has been defined results in a compile error.
+
 Significant whitespace is used to define scope, by indenting code with spaces relative to the line declaring the binding. The default convention is to use four spaces for indentation.
 
 [bindings]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/values/#binding-a-value
