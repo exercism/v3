@@ -9,14 +9,12 @@ Properties are covered early in the C# track as their purpose and power can be s
 
 ## Learning objectives
 
-- public properties
-- properties with backing fields
-- auto-implemented properties 
-- input verification
-- calculated properties
-- get-only properties vs. properties with private set accessors
-- set-only properties vs. properties with private get accessors
-- properties exposing reference types
+- Know what properties are and how they related to fields and methods.
+- Know what backing-field properties are.
+- Know what auto-implemented properties are.
+- Know what calculated properties are.
+- Know how to use property accessors to customize visibility.
+- Know how to define the different types of properties.
 
 There is no way to enforce the use of backing fields in preference to auto-implemented properties
 or vice versa either through tests or by giving a steer in the scenario.  The best we can hope for
