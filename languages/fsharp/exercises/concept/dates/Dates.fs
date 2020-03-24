@@ -14,3 +14,6 @@ let isAfternoonAppointment (appointmentDate: DateTime): bool =
 
 let description (appointmentDate: DateTime): string =
     failwith "Please implement the 'description' function"
+
+let anniversaryDate(): DateTime = 
+    failwith "Please implement the 'anniversaryDate' function"
