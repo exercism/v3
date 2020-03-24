@@ -1,1 +1,14 @@
-This file contains an introduction to the concept. It should be explicit about what the student should learn from the exercise, and provide a short, concise introduction to the concept(s). The aim is to give the student just enough context to figure things out themselves and solve the exercise, as research has shown that self-discovery is the most effective learning experience. Mentioning technical terms that the student can Google if they so want, is preferable over including any code samples or an extensive description. For example we might describe a string as a "Sequence of Unicode characters" or a "series of bytes" or "an object". Unless the student needs to understand the details of what those mean to be able to solve the exercise we should not give more info in this introduction - instead allowing the student to Google, ignore, or map their existing knowledge.
+In C# and in many other languages, the `null` literal denotes the abscence of a value.
+
+A *nullable* type is a type that allow `null` values.
+
+There are two main families of types in C#: *reference* and *value*
+types. A variable of a *value* type, contains a direct value in
+memory, while a *reference* typed variable contains a *pointer* to a
+value.
+
+A variable has a *nullable* type if it can contain no value. *Reference* types are nullable by default. 
+*Value* types can be made nullable by means of the operator *?*.
+
+In this exercise, we'll learn how to declare and detect `null` variables. 
+We will also see how the C# can help us dealing with null values and variables.

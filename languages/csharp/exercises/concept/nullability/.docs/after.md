@@ -1,6 +1,14 @@
-Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
+# Key Learnings
 
-The above four files are also all described in the [concept exercises document][concept-exercises].
+- Know of the existence of the `null` literal.
+- Know what a `NullReferenceException` is and when it is thrown.
+- Know how to compare a value to `null`.
+- Know the difference between value and reference types regarding nullability.
+- Know how to define nullable reference and value types.
+- Know about the null-related operators (`!`, `?`, `??`).
+- Know about basic null checking by the compiler.
+
+# Additional Resources
 
 - [Null keyword][null-keyword]: reference documentation for `null` keyword.
 - [Nullable types tutorial][nullable-types-tutorial]: basic tutorial on how to work with nullable types.
