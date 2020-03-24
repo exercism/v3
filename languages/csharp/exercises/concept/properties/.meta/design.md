@@ -24,7 +24,7 @@ Similarly there is no way to distinguish between set/get-only properties and tho
 private accessors. 
 
 
-## Things not to teach
+## Out of scope
 
 - expression bodied properties, get accessors and set accessors (covered by expression-bodied members)
 - properties on interfaces (covered by Interfaces)
