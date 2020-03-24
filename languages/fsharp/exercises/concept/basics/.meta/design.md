@@ -2,7 +2,7 @@
 
 ## Goal
 
-The goal of this exercise is to teach the student the basics of the Concept of Values in [F#][values].
+The goal of this exercise is to teach the student the basics of programming in [F#][values].
 
 ## Learning objectives
 
@@ -14,6 +14,7 @@ The goal of this exercise is to teach the student the basics of the Concept of V
 - Know that bindings are immutable.
 - Know how type inference works for bindings.
 - Know how to define scope using significant whitespace.
+- Know that bindings require dependency order.
 - Know how to define an integer.
 - Know how to use mathematical operators on integers.
 
@@ -41,7 +42,7 @@ The goal of this exercise is to teach the student the basics of the Concept of V
 
 The Concepts this exercise unlocks are:
 
-- `bindings-basic`: know what a value is; know how to define a binding; know that bindings are immutable; know how to define scope using significant whitespace.
+- `bindings-basic`: know what a value is; know how to define a binding; know that bindings are immutable; know how to define scope using significant whitespace; know that bindings require dependency order.
 - `functions-basic`: know how to define a function; know how to return a value from a function; know how to call a function.
 - `type-inference-basic`: know what type inference is; know how type inference works for bindings.
 - `integers-basic`: know how to define an integer; know how to use mathematical operators on integers.
