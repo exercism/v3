@@ -44,7 +44,7 @@ Construction of an expressive API with fine-grained control over access.
 ## Prequisites
 
 - `numbers-basic`: value types such as int and float
-* Definition of classes
+- `classes-basic`: defining classes and working with members.
 * structs
 * Multiple classes per file
 * number casting, rounding and truncation
