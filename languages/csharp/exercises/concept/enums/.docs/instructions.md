@@ -20,7 +20,6 @@ You have three tasks.
 
 Define a `LogLevel` enum that has seven elements. Here are the log levels and their corresponding messages from the system.
 
-- `Unknown` - "[UNK] Message..."
 - `Trace` - "[TRC] Here is the stack trace: ..."
 - `Debug` - "[DBG] Solve this problem by ..."
 - `Info` - "[INF] Processing..."
@@ -40,7 +39,7 @@ LogLine.ParseLogLevel("[INF]: File deleted")
 Unfortunately, occasionally some log lines have an unknown log level. To gracefully handle these log lines, add an `Unknown` element to the `LogLevel` enum which should be returned when parsing an unknown log level:
 
 ```csharp
-LogLine.ParseLogLevel("[FATAL]: Invalid operation")
+LogLine.ParseLogLevel("[XYZ]: Overly specific, out of context message")
 // Returns: LogLevel.Unknown
 ```
 
@@ -50,14 +49,17 @@ The log level of a log line is quite verbose. To reduce the disk space needed to
 
 The encoded log level is simple mapping of a log level to a number:
 
-- `Unknown` -> `0`
-- `Info` -> `1`
-- `Warning` -> `2`
-- `Error` -> `4`
+- `Trace` - `0`
+- `Debug` - `1`
+- `Info` - `4`
+- `Warning` - `5`
+- `Error` - `6`
+- `Fatal` - `7`
+- `Unknown` - `42`
 
 Implement a method that can output the shortened log line format:
 
 ```csharp
 LogLine.OutputForShortLog(LogLevel.Error, "Stack overflow")
-// Returns: "4:Stack overflow"
+// Returns: "6:Stack overflow"
 ```
