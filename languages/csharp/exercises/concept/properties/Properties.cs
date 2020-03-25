@@ -1,8 +1,29 @@
 using System;
 
+
+public enum Units
+{
+    Kilograms
+    ,Pounds
+}
+
 public class WeighingMachine
 {
-    public float Weight
+    public float InputWeight
+    {
+        get
+        {
+            throw new NotImplementedException(
+                "Please implement accessors where appropriate for this property and remove unused stubs");
+        }
+        set
+        {
+            throw new NotImplementedException(
+                "Please implement accessors where appropriate for this property and remove unused stubs");
+        }
+    }
+
+    public float DisplayWeight
     {
         get
         {
@@ -29,7 +50,21 @@ public class WeighingMachine
                 "Please implement accessors where appropriate for this property and remove unused stubs");
         }
     }
-    public float Reduction
+    public float VanityFactor
+    {
+        get
+        {
+            throw new NotImplementedException(
+                "Please implement accessors where appropriate for this property and remove unused stubs");
+        }
+        set
+        {
+            throw new NotImplementedException(
+                "Please implement accessors where appropriate for this property and remove unused stubs");
+        }
+    }
+
+    public Units Units
     {
         get
         {
@@ -46,11 +81,11 @@ public class WeighingMachine
 
 public struct BritishWeight
 {
-    public BritishWeight(int stones, int bounds, int ounces)
-    {
-        
-    }
 
+    public BritishWeight(float weightInPounds)
+    {
+        throw new NotImplementedException("Please implement the constructor");
+    }
     public int Stones
     {
         get
@@ -91,3 +126,4 @@ public struct BritishWeight
         }
     }
 }
+
