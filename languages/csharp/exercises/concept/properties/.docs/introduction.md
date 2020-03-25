@@ -9,7 +9,7 @@ class can be executed.
 Similarly when retrieving a property data can be calculated or formatted and again
 any programmatic operation available to the class can be executed.
 
-Properties have access modifiers (`public`, `protected` etc.) in the same way as other
+Properties have access modifiers (`public`, `private` etc.) in the same way as other
 class members but the set accessor may have an access level independent of the retrieve (get)
 accessor and vice versa or either accessor may be dispensed with completely.
 
