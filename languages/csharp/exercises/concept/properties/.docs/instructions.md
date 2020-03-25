@@ -45,7 +45,7 @@ To summarise the following properties must be implemented:
 - `WeighingMachine.VanityFactor`
 - `WeighingMachine.BritishWeight`
 - `BritishWeight.Stones`
-- `BritishWeigh.Pounds`
+- `BritishWeight.Pounds`
 - `BritishWeight.Ounces`
 
 You have 5 tasks each of which requires you to implement one or
