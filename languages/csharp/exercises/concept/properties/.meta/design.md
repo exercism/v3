@@ -49,6 +49,11 @@ Construction of an expressive API with fine-grained control over access.
 * Multiple classes per file
 * number casting, rounding and truncation
 
+Note that the values in the instructions' examples and tests
+are selected to avoid any question of rounding when converting
+between float and int.  Rounding and truncation will produce the 
+same result.
+
 Prerequisite Exercises - TBA
 
 ## Resources to refer to
