@@ -7,4 +7,13 @@ The two most common numeric types in F# are `int` and `double`. An `int` is a 32
 
 Converting between number types is done through built-in conversion operators. These conversion operators are named after the type they will be converting to. F# does _not_ support automatic conversion between number types.
 
-In this exercise you must conditionally execute logic. The most common way to do this in F# is by using an `if/elif/else` statement.
+In this exercise you must conditionally execute logic. The most common way to do this in F# is by using an `if/elif/else` statement:
+
+```fsharp
+if x <= 5 then
+    // Expression to evaluate when x <= 5
+elif x > 7 then
+    // Expression to evaluate when x > 7
+else
+    // Expression to evaluate in all other cases
+```
