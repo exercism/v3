@@ -26,8 +26,8 @@ which means you can set the weight as a number and then subsequently
 select the units.
 
 Unfortunately the British author of this exercise has insisted on being able to
-retrieve (although not record) the value using his county's idiosyncratic system of
-weights and measures - stones, pounds and ounces
+retrieve (although not record) the display weight using his county's idiosyncratic system of
+weights and measures - stones, pounds and ounces.
 
 Conversion ratios are as follows:
 - 14 pounds to a stone

@@ -45,12 +45,11 @@ Construction of an expressive API with fine-grained control over access.
 
 - `numbers-basic`: value types such as int and float
 - `classes-basic`: defining classes and working with members.
-* structs
 * Multiple classes per file
 * number casting, rounding and truncation
 
 Note that the values in the instructions' examples and tests
-are selected to avoid any question of rounding when converting
+are selected specifically to avoid any question of rounding when converting
 between float and int.  Rounding and truncation will produce the 
 same result.
 
