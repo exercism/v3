@@ -1,6 +1,5 @@
 using System;
 using Xunit;
-using Example;
 
 public class WeighingMachineTests
 {
