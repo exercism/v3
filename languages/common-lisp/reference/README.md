@@ -30,6 +30,7 @@ as template.
     - Keyword Arguments
     - Optional Arguments
     - Rest Arguments
+    - Multiple Value Returns
   - [Higher Order Functions][higher-order-functions]
   - [Nested Functions][nested-functions]
   - Packages
