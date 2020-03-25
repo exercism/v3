@@ -1,14 +1,14 @@
 # Abstract
 
-The keyword `abstract` is used to define an *abstract class* - a [class][reference-class] that can not be instantiated 
-directly, which means you can not create an [object][reference-object] from it. Conversely, a class that can be 
-instantiated directly is called a *concrete class*.
+The keyword `abstract` is used to define an _abstract class_ - a [class][reference-class] that can not be instantiated
+directly, which means you can not create an [object][reference-object] from it. Conversely, a class that can be
+instantiated directly is called a _concrete class_.
 
-An [interface][reference-interface] is a type that hides implementation details and show only functionality to the user. 
+An [interface][reference-interface] is a type that hides implementation details and show only functionality to the user.
 It lets you focus on **what** the object does instead of **how** it does it. In Dart, all classes are implicit interfaces.
 
-Instead Dart has abstract types which can be used as interfaces, but do allow any and all methods to be implemented. So 
-it's up to the user how much implementation, if any, is in the abstract class.
+Instead Dart has abstract types which can be used as interfaces, but do allow any and all methods to be implemented. So
+it's up to the student how much implementation, if any, is in the abstract class.
 
 ```dart
 // This class is declared abstract and thus can't be instantiated.
@@ -20,25 +20,25 @@ abstract class CoffeeMachine {
 CoffeeMachine coffeeMachine = CoffeeMachine();
 ```
 
-An abstract class can have constructors (including [factories][reference-factory]), [fields][reference-member], 
+An abstract class can have constructors (including [factories][reference-factory]), [fields][reference-member],
 [methods][reference-method] as well as [static][reference-static] [members][reference-member].
-Among these only fields and methods can be abstract everything else, if defined, must have a concrete implementation. 
-Abstract methods define the `class` behaviour. They can only exist within an `abstract class` and are delimiting by a 
+Among these only fields and methods can be abstract everything else, if defined, must have a concrete implementation.
+Abstract methods define the `class` behaviour. They can only exist within an `abstract class` and are delimiting by a
 semicolon (`;`).
 
 ```dart
 abstract class CoffeeMachine {
   // Abstract method
-  void makeEspresso(); 
-  
+  void makeEspresso();
+
   // Normal method
-  void makeCoffee() { 
+  void makeCoffee() {
     print("Making coffee");
   }
 }
 ```
 
-Since abstract classes can have constructors and constructors in Dart can omit their body, a constructor without a body 
+Since abstract classes can have constructors and constructors in Dart can omit their body, a constructor without a body
 does not denote that it is abstract.
 
 Constructors in Dart are always concrete.
@@ -68,9 +68,9 @@ every abstract method but it is not mandatory to override normal method.
 abstract class CoffeeMachine {
   // Abstract method
   void makeEspresso();
-  
+
   // Normal method
-  void makeCoffee() { 
+  void makeCoffee() {
     print("Making coffee");
   }
 }
@@ -88,7 +88,7 @@ SpecialCoffeeMachine specialCoffeeMachine = SpecialCoffeeMachine();
 specialCoffeeMachine.makeCoffee();
 ```
 
-It is also possible to create more specific interfaces, i.e. an abstract class can choose to extend another abstract 
+It is also possible to create more specific interfaces, i.e. an abstract class can choose to extend another abstract
 class.
 
 ```dart

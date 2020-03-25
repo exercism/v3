@@ -4,6 +4,7 @@
 - [Reference](/reference/README.md)
   - [Concepts](/reference/concepts/README.md)
   - [Paradigms](/reference/paradigms/README.md)
+  - [Stories](/reference/stories/README.md)
   - [Tooling](/reference/tooling/README.md)
     - [Babel](/reference/tooling/babel.md)
     - [.NET assemblies](/reference/tooling/dotnet-assemblies.md)

@@ -3,7 +3,7 @@
 - [Languages](/languages/README.md)
   - [Julia](/languages/julia/README.md)
     - [Docs](/languages/julia/docs/README.md)
-      - [Implementing a Concept Exercise](/languages/julia/docs/implementing-a-concept-exercise.md)
+      - [Implementing a Concept Exercise](/languages/julia/reference/implementing-a-concept-exercise.md)
     - [Exercises](/languages/julia/exercises/README.md)
     - [Reference](/languages/julia/reference/README.md)
 - Reference

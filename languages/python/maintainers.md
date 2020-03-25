@@ -14,3 +14,4 @@ These awesome people help maintain the Python track.
 - Pedro Romano (Slack: `@paparomeo`, GitHub: [paparomeo](https://github.com/paparomeo))
 - David Gervasoni (Slack: `@david`, GitHub: [davidgerva](https://github.com/davidgerva))
 - Ashley Drake (Slack: `@ash`, Github: [aldraco](https://github.com/aldraco))
+- Khoi Van (Slack: `@Khoi`, Github: [khoivan88](https://github.com/khoivan88))

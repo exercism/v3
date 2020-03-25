@@ -4,7 +4,7 @@
 
 The goal of this exercise is to teach the student the basics of the Concept of enums through [C#][docs.microsoft.com-enum].
 
-## Things to teach
+## Learning objectives
 
 After completing this exercise, the student should:
 
@@ -12,20 +12,29 @@ After completing this exercise, the student should:
 - Know how to define enum members.
 - Know how to assign values to enum members.
 - Know how to get an enum's numeric value.
+<<<<<<< HEAD
+=======
+- Know how to convert an `enum` to a `string`
+>>>>>>> e896313f7865f42d9048c468542385427747ef88
 
-## Things not to teach
+## Out of scope
 
 - Flag enums.
 - That an enum's underlying type can be changed.
 - Memory and performance characteristics.
+- Parse `string` into an `enum`
 
 ## Concepts
 
 The Concepts this exercise unlocks are:
 
 - `enums-basic`: know of the existence of the `enum` keyword; know how to define enum members; know how to assign values to enum members; know how to get an enum's numeric value; know how to convert a `string` to an `enum` and vice versa.
+<<<<<<< HEAD
 - `switch-basic`: know how to use a simple switch-case statement.
 - `strings-conversion`: know how to convert from an enum to string. [not if this is already a Concept or should just belong to strings-basic]
+=======
+- `switch`: know how to use a switch-case statement
+>>>>>>> e896313f7865f42d9048c468542385427747ef88
 
 ## Prequisites
 
