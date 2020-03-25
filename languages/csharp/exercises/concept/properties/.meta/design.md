@@ -16,13 +16,6 @@ Properties are covered early in the C# track as their purpose and power can be s
 - Know how to use property accessors to customize visibility.
 - Know how to define the different types of properties.
 
-There is no way to enforce the use of backing fields in preference to auto-implemented properties
-or vice versa either through tests or by giving a steer in the scenario.  The best we can hope for
-is that mentors' comments offer some opinion and the alternative.
-
-Similarly there is no way to distinguish between set/get-only properties and those with
-private accessors. 
-
 
 ## Out of scope
 
