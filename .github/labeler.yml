@@ -1,8 +1,13 @@
 CI:
-  - .github/**/*
+  - .github/workflows/**/*
+  - .github/actions/**/*
+  - .github/**/*.yml
+  - .github/**/*.json
 
 documentation:
   - docs/**/*
+  - .github/ISSUE_TEMPLATE/**/*
+  - languages/**/docs/**/*
 
 track/bash:
   - languages/bash/**/*
@@ -27,6 +32,9 @@ track/delphi:
 
 track/elixir:
   - languages/elixir/**/*
+
+track/elm:
+  - languages/elm/**/*
 
 track/emacs-lisp:
   - languages/emacs-lisp/**/*
@@ -61,11 +69,20 @@ track/kotlin:
 track/ocaml:
   - languages/ocaml/**/*
 
+track/perl5:
+  - languages/perl5/**/*
+
 track/purescript:
   - languages/purescript/**/*
 
 track/python:
   - languages/python/**/*
+
+track/raku:
+  - languages/raku/**/*
+
+track/racket:
+  - languages/racket/**/*
 
 track/reasonml:
   - languages/reasonml/**/*

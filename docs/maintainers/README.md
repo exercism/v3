@@ -28,6 +28,26 @@ The final step to preparing your language to accept contributions is to provide 
 
 We recommend choosing a Concept that involves working with basic types, like strings and numbers. Having chosen a Concept, look for the Concept's description in this reference part of this repository. This file should have references to all tracks that have implemented the exercise. You can use these existing implementations as a starting point for your first concept exercise, which you can then tailor to your specific language.
 
+### Visualizing the planned track structure
+
+You may find it helpful to create a graph that shows the unlock progression of the exercises for planning which exercises you need, which prerequisites they have and which exercises are closely related to each other.
+
+The website supports flowcharts rendered by [mermaid](https://mermaid-js.github.io/mermaid/#/flowchart). Every code block with the language set to `mermaid` will be rendered as a graph:
+
+    ```mermaid
+        graph LR
+            basic-numbers --> advanced-numbers
+    ```
+
+```mermaid
+    graph LR
+        basic-numbers --> advanced-numbers
+```
+
+Please refer to the [mermaid documentation](https://mermaid-js.github.io/mermaid/#/flowchart) for detailed instructions. The Julia track's [progression planning document](./../../languages/julia/reference/progression.md) can also be used as a reference.
+
+These will only be rendered on the [repo website](https://exercism.github.io/v3) or in a markdown editor that supports mermaid rendering, e.g. [Typora](https://www.typora.io/). See [website.md](./website.md) for instructions to run the website locally. 
+
 ### Read more
 
 - [More about Concepts and Concept Exercises](../concept-exercises.md)
@@ -35,6 +55,7 @@ We recommend choosing a Concept that involves working with basic types, like str
 - [How to write Concept Exercise GitHub issues](./writing-a-concept-exercise-github-issue.md)
 - [How the repository is structured](./repository-structure.md)
 - [Migrating your config.json files](./migrating-your-config-json-files.md)
+- [Frequently Asked Questions](./faqs.md)
 
 ## Tooling
 
@@ -48,6 +69,6 @@ Representers are pieces of software that take a solution and provide a normalise
 
 Each track has a #maintaining-x channel on [Slack](https://exercism-team.slack.com). We recommend using that to chat amongst yourselves.
 
-If you need help, the best place to use is the [#maintainers](https://exercism-team.slack.com/archives/GC3K95MRR) channel on Slack. This is a private space where maintainers from all tracks can help each other.
+If you need help, the best place to use is the [#v3](https://exercism-team.slack.com/archives/CR91YFNG3) channel on Slack. This is a private space where maintainers from all tracks can help each other.
 
 If you need to work through something more complex, please message @ErikSchierboom on Slack and schedule a time to pair with him.

@@ -9,7 +9,7 @@ We are restructuring tracks to build new pathways containing "Concept Exercises"
 
 _Talk about what makes a good concept exercise and why_
 
-These exercises teach the key concepts that someone needs to know when learning a langauge, unlocking other Concept and Pracice Exercises as students proress. Concept Exerisies will have automated feedback and approval, with no delays for mentors.
+These exercises teach the key concepts that someone needs to know when learning a langauge, unlocking other Concept and Practice Exercises as students progress. Concept Exercises will have automated feedback and approval, with no delays for mentors.
 
 ## Approaches
 
@@ -29,13 +29,12 @@ The simplest representer is one that merely returns the solution's source code. 
 
 Once we have a normalized representation for a solution, a team of vetted mentors will look at the solution and comment on it (if needed). These comments will then automatically be submitted to each new solution with the same representation. A notification will be sent for old solutions with a matching representation.
 
-
-## In-browser coding
+## In-browser coding
 
 _Talk about what test runners_
 
 We will be adding the ability to solve exercises within the browser. The CLI will remain as a first-class citizen, but v3 will allow people to work their way through a track without having to install anything.
 
-## Improved profiles
+## Improved profiles
 
 Profiles will be getting an upgrade - with contributions throughout the site reflected in them. Mentoring, writing exercises, contributing to tracks, and maintaining parts of Exercism will all feature on profiles. Over time, contributing more will also have tangible improvements to your experience, with bumps up mentor queues and access to early testing features.

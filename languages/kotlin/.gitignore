@@ -1,0 +1,8 @@
+.gradle
+build/
+
+# Ignore gradle files for root directory
+/.idea/
+/gradle/
+/gradlew
+/gradlew.bat

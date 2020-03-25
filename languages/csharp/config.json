@@ -12,42 +12,56 @@
       {
         "slug": "strings",
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
-        "concepts": ["basic-strings"],
+        "concepts": ["strings-basic"],
         "prerequisites": []
       },
       {
         "slug": "numbers-floating-point",
         "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
-        "concepts": ["floating-point-numbers", "basic-loops"],
+        "concepts": ["numbers-floating-point", "loops-while"],
         "prerequisites": [
-          "basic-numbers",
-          "basic-type-conversion",
-          "conditionals"
+          "numbers-basic",
+          "type-conversion-numbers",
+          "conditionals-if"
         ]
       },
       {
         "slug": "numbers",
         "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
-        "concepts": ["basic-numbers", "basic-type-conversion", "conditionals"],
+        "concepts": [
+          "numbers-basic",
+          "type-conversion-numbers",
+          "conditionals-if"
+        ],
         "prerequisites": []
       },
       {
         "slug": "enums",
         "uuid": "047b895b-7039-4af6-ad3a-17fd818d0b88",
-        "concepts": ["basic-enums"],
-        "prerequisites": ["basic-strings"]
+        "concepts": ["enums-basic", "conditionals-ternary"],
+        "prerequisites": [
+          "strings-basic",
+          "numbers-basic",
+          "generics",
+          "conditionals-if",
+          "type-conversion-numbers"
+        ]
       },
       {
         "slug": "dates",
         "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
-        "concepts": ["basic-dates", "basic-time", "string-formatting"],
-        "prerequisites": ["basic-numbers", "basic-strings"]
+        "concepts": ["dates-basic", "time-basic"],
+        "prerequisites": ["numbers-basic", "strings-basic"]
       },
       {
-        "slug": "bitwise-operations",
+        "slug": "enums-advanced",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
-        "concepts": ["bitwise-operations", "advanced-enums"],
-        "prerequisites": ["basic-enums"]
+        "concepts": ["enums-advanced"],
+        "prerequisites": [
+          "enums-basic",
+          "attributes-basic",
+          "bitwise-operations"
+        ]
       }
     ],
     "practice": []

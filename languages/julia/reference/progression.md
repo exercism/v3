@@ -3,7 +3,7 @@
 This is a working document to keep track of ideas and thoughts on how the progression through the Concept Exercises on the Julia track could work.
 
 ```mermaid
-graph LR
+graph TD
 A((A)) --> robots
 subgraph Multiple Dispatch
 	robots --> encounters

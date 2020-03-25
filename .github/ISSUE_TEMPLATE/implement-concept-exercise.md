@@ -1,9 +1,11 @@
 ---
 name: "[MAINTAINERS] Implement new Concept Exercise"
-about: FOR MAINTAINERS ONLY - Use this template to create an issue to implement a Concept Exercise
+about: FOR MAINTAINERS ONLY - Use this template to create an issue to implement a
+  Concept Exercise
 title: "[<LANG>] Implement new Concept Exercise: <SLUG>"
-labels: type/new-exercise, status/help-wanted
-assignees: ""
+labels: status/help-wanted, type/new-exercise
+assignees: ''
+
 ---
 
 [Use this issue template to describe how to implement a new concept exercises. Please fill in the issue template, and remove any sections wrapped in square brackets (such as this section!).]
@@ -18,20 +20,20 @@ For example:
 
 The goal of this exercise is to teach the student how concept X is implemented in <LANG>. We will teach X through <LANG>'s Y type.]
 
-## Things to teach
+## Learning objectives
 
-[A list of things the exercise aims to teach the student.
+[A list of the exercise's learning objectives.
 
 For example:
 
 - Know of the existence of type `Y`.
-- Know of some basic functions that work on `Y`.
-- Know where `Y` is documented, or at least how to search for it.
+- Know of basic functions that work on `Y`.
+- Know how to use `Y` in context `Z`.
 - ...]
 
-## Things not to teach
+## Out of scope
 
-[A list of things that are outside the scope of this exercise and that the exercise should thus not teach.
+[A list of things out of scope for this exercise.
 
 For example:
 
@@ -45,16 +47,16 @@ For example:
 
 For example:
 
-- `basic-strings`
+- `strings-basic`
 - ...]
 
-## Prequisites
+## Prerequisites
 
 [List the prerequisite concepts that this exercise expects the student to already be familiar with.
 
 For example:
 
-- `basic-numbers`
+- `numbers-basic`
 - ...]
 
 ## Resources to refer to

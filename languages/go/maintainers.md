@@ -14,3 +14,4 @@ These awesome people help maintain the Go track.
 - Andrés Zarta (Slack: `@Andrezb`, Github: [andres-zartab](https://github.com/andres-zartab))
 - Sergei Eremeev (Slack: `@Prounckk`, Github: [Prounckk](https://github.com/prounckk/))
 - Michele Caci (Slack: `@MicheleC`, Github: [mcaci](https://github.com/mcaci/))
+- Davy Jones (Slack: `@DavyJ0nes`, Github: [DavyJ0nes](https://github.com/DavyJ0nes))

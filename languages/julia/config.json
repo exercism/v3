@@ -16,8 +16,8 @@
                     "multiple-dispatch"
                 ],
                 "prerequisites": [
-                    "structs",
-                    "abstract types",
+                    "composite-types",
+                    "abstract-types",
                     "methods"
                 ]
             }
