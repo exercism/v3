@@ -2,8 +2,9 @@
 name: "[ALL] Suggest new exercise"
 about: Suggest a new exercise
 title: "[<LANG>] Suggest new exercise: <SLUG>"
-labels: type/suggested-exercise, status/help-wanted
-assignees: ""
+labels: status/help-wanted, type/suggested-exercise
+assignees: ''
+
 ---
 
 [Use this issue template to suggest new concept exercises. Please note that we are not accepting currently suggestions for practice exercises. Please fill in the issue template, and remove any sections wrapped in square brackets (such as this section!).]

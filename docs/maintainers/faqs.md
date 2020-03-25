@@ -92,7 +92,7 @@ We highly recommend reading [this thread][concept-to-exercise-mapping] for a nic
 There will be no mentoring on Concept Exercises in v3. The process will be fully automated, and will work as follows:
 
 1. The student submits a solution for a Concept Exercise which prequisites have been met (i.e. the student has completed Concept Exercises teaching the prerequisite Concepts).
-1. The solution is tested automatically to verify it passes all tests. This is done by the [test runner][test-runner]. If a test fails, details of the failing test are shown to the user. The student must submit again (step 1) in order to continue.
+1. The solution is tested automatically to verify it passes all tests. This is done by the [test runner][test-runner]. If a test fails, details of the failing test are shown to the student. The student must submit again (step 1) in order to continue.
 1. The [representer][representer] creates a representation of the solution. If there are any comments linked to that representation, those comments are presented to the student. The student must submit submit again (step 1) in order to continue.
 1. The [analyzer][analyzer] analyzes the solution. If there are comments, those comments are presented to the student. If one of the comments indicates that the student should not be allowed to proceed, the student must submit submit again (step 1) in order to continue.
 1. The student's solution is approved and the student can work on another Concept Exercise which prerequisites have been met.
@@ -142,7 +142,7 @@ Do you have more questions or feel that something is missing? Please let us know
 [concept-exercises]: ../concept-exercises.md
 [determining-concepts]: ./determining-concepts.md
 [how-to-implement-a-concept-exercise]: ./generic-how-to-implement-a-concept-exercise.md
-[how-to-implement-a-concept-exercise-csharp]: ../../languages/csharp/docs/implementing-a-concept-exercise.md
+[how-to-implement-a-concept-exercise-csharp]: ../../languages/csharp/reference/implementing-a-concept-exercise.md
 [writing-a-concept-exercise-github-issue]: ./writing-a-concept-exercise-github-issue.md
 [concept-to-exercise-mapping]: https://exercism-team.slack.com/archives/CC5DGSAG6/p1579722161067300
 [practice-exercises]: ../rationale-for-v3.md#practice-exercises

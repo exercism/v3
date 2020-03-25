@@ -8,7 +8,14 @@
     "indent_size": 4
   },
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+        "slug": "strings",
+        "uuid": "9c2aad8a-53ee-11ea-8d77-2e728ce88125",
+        "concepts": ["strings-basic"],
+        "prerequisites": []
+      }
+    ],
     "practice": []
   }
 }
