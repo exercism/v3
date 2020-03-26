@@ -9,6 +9,3 @@ value.
 
 A variable has a *nullable* type if it can contain no value. *Reference* types are nullable by default. 
 *Value* types can be made nullable by means of the operator *?*.
-
-In this exercise, we'll learn how to declare and detect `null` variables. 
-We will also see how the C# can help us dealing with null values and variables.

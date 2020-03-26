@@ -1,4 +1,5 @@
-In this exercise you'll be working on a simple helper class that manipulates nullable values.
+In this exercise, we'll learn how to declare and detect `null` variables. 
+We will also see how the C# can help us dealing with `null` values and variables.
 
 ### 1. Detect null values
 
