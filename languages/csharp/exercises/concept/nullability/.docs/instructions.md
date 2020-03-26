@@ -43,5 +43,3 @@ Fix it.
 
 `Cannot convert null literal to non-nullable reference type.`
 
-### 5. TODO: null forgiving operator
-
