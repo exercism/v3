@@ -1,7 +1,7 @@
 ### General
 
-- [Properties][docs.microsoft.com-properties]
-- [Using Properties][docs.microsoft.com-using-properties]
+- [Properties](docs.microsoft.com-properties)
+- [Using Properties](docs.microsoft.com-using-properties)
 
 ### 1 Allow the weight to be set on the weighing machine 
 
