@@ -19,7 +19,7 @@ After completing this exercise, the student should:
 - Flag enums.
 - That an enum's underlying type can be changed.
 - Memory and performance characteristics.
-- Parse `string` into an `enum`
+- Parse `string` into an `enum`.
 
 ## Concepts
 
