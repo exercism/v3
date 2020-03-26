@@ -16,7 +16,7 @@ You have three tasks.
 
 ### 1. Parse log level
 
-Define a `LogLevel` enum that has seven elements. Here are the log levels and their corresponding messages from the system.
+Define a `LogLevel` enum that has six elements corresponding to the above log levels.
 
 - `Trace` - "[TRC] Here is the stack trace: ..."
 - `Debug` - "[DBG] Solve this problem by ..."
