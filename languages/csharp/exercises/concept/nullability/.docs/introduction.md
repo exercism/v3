@@ -66,3 +66,28 @@ operator `!`:
 ```csharp
 Console.WriteLine(userName!.Length);
 ```
+
+Finally, sometimes, we are want to provide a default value to a
+variable, it case it is `null`. A simple way to that, would be with a
+`if` or a `?:` operator:
+
+```csharp
+if (userName == null)
+{
+    userName = "";
+}
+
+Console.WriteLine(userName.Length);
+```
+
+```csharp
+Console.WriteLine((userName == null ? "" : userName).Length);
+```
+
+
+As you can imagine, this can become cumbersome the more nullable variables you have on your code.
+The `??` operator is a simple shortcut to that:
+
+```csharp
+Console.WriteLine((userName ?? "").Length);
+```
