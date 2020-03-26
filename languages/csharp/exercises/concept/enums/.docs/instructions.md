@@ -25,7 +25,7 @@ Define a `LogLevel` enum that has six elements corresponding to the above log le
 - `Error` - "[ERR] Missing semicolon;"
 - `Fatal` - "[FTL] Stack Overflow"
 
-Next, implement a method to parse the log level of a log line:
+Next, implement the `LogLine.ParseLogLevel` method to parse the log level of a log line:
 
 ```csharp
 LogLine.ParseLogLevel("[INF]: File deleted")
