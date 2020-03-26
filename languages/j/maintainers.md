@@ -4,8 +4,8 @@ These awesome people help maintain the J track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- jitwit (Slack: `@jitwit`, GitHub: [jitwit](https://github.com/jitwit))
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+TODO
