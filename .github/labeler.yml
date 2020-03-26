@@ -54,6 +54,9 @@ track/go:
 track/haskell:
   - languages/haskell/**/*
 
+track/j:
+  - languages/j/**/*
+
 track/java:
   - languages/java/**/*
 
