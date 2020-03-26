@@ -27,7 +27,6 @@ The Concepts this exercise unlocks are:
 
 - `enums-basic`: know of the existence of the `enum` keyword; know how to define enum members; know how to assign values to enum members; know how to get an enum's numeric value; know how to convert a `string` to an `enum` and vice versa.
 - `switch-basic`: know how to use a simple switch-case statement.
-- `strings-conversion`: know how to convert from an enum to string. [not if this is already a Concept or should just belong to strings-basic]
 
 ## Prequisites
 
