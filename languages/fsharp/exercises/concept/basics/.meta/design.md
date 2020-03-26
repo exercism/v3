@@ -17,6 +17,7 @@ The goal of this exercise is to teach the student the basics of programming in [
 - Know that bindings require dependency order.
 - Know how to define an integer.
 - Know how to use mathematical operators on integers.
+- Know how to define single- and multiline comments.
 
 ## Out of scope
 
@@ -46,6 +47,7 @@ The Concepts this exercise unlocks are:
 - `functions-basic`: know how to define a function; know how to return a value from a function; know how to call a function.
 - `type-inference-basic`: know what type inference is; know how type inference works for bindings.
 - `integers-basic`: know how to define an integer; know how to use mathematical operators on integers.
+- `comments-basic`: Know how to define single- and multiline comments.
 
 ## Prequisites
 

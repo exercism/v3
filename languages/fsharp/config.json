@@ -76,7 +76,8 @@
           "bindings-basic",
           "functions-basic",
           "type-inference-basic",
-          "integers-basic"
+          "integers-basic",
+          "comments-basic"
         ],
         "prerequisites": []
       }

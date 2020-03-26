@@ -14,6 +14,8 @@ Bindings in F# can only be used _after_ they have been defined. Using a binding 
 
 Significant whitespace is used to define scope, by indenting code with spaces relative to the line declaring the binding. The default convention is to use four spaces for indentation.
 
+F# supports two types of comments. Single line comments are preceded by `//` and multiline comments are inserted between `(*` and `*)`.
+
 [bindings]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/values/#binding-a-value
 [functions]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/functions/#remarks
 [operators]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/symbol-and-operator-reference/arithmetic-operators

@@ -40,3 +40,12 @@ let multiplyPlusTwo x y =
     let product = x * y
     product + 2
 ```
+
+F# supports two types of comments. Single line comments are preceded by `//` and multiline comments are inserted between `(*` and `*)`.
+
+```fsharp
+// Single line comment
+
+(* This is a
+   multiline comment *)
+```
