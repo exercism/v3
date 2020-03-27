@@ -15,3 +15,16 @@ The following reference documentation may help you finishing this exercice:
 [null-conditional-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator
 [nullable-reference-types]: https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references
 [nullable-reference-types-tutorial]: https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/february/essential-net-csharp-8-0-and-nullable-reference-types
+
+# 1. Compute the width of each word separately
+
+For each word:
+
+* Determine if it as an actual string or `null`;
+* Determine if there is an actual font size, or `null`;
+* Multiply the length of the string by the font size or `0`.
+
+
+# 2. Compute the number of spaces to be displayed between words
+
+Add the number of words multiplied by the font size to the final width.
