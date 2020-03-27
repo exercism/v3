@@ -50,13 +50,8 @@ wm.InputWeight = 60m;
 
 Implement validation for the `WeighingMachine.InputWeight` to reject negative numbers
 ``` csharp
-    try {
-        var wm = new WeighingMachine();
-        wm.InputWeight = -10m;
-        }
-  
-   // => an ArgumentExcption is thrown
-
+var wm = new WeighingMachine();
+wm.InputWeight = -10m; // Throws an ArgumentException
 ```
 
 ### 3 Allow the US weight to be retrieved
