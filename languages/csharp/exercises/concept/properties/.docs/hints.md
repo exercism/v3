@@ -25,7 +25,7 @@ public Random Randomizer
 
 `Units` is a good candidate for an [auto-implemented property](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).
 
-### 5 Allow a tare adjustment to be applied to the weighing machine
+### 5. Allow a tare adjustment to be applied to the weighing machine
 
 Accessors can have [different access levels](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility) to each other.
 
