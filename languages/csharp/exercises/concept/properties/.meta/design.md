@@ -165,9 +165,16 @@ An entry should be added to the track's `config.json` file for the new concept e
       ...
       {
         "slug": "properties",
-        "uuid": "xxx+xxxx….",
-        "concepts": [“properties”],
-        "prerequisites": ["TBC"]
+        "uuid": "978bcc16-0c49-4328-92e9-79f6204ce350,
+        "concepts": [“properties-basic”],
+        "prerequisites": [
+          "numbers-basic",
+          "numbers-floating-point",
+          "classes-basic",
+          "enums-basic",
+          "exceptions-basic",
+          "type-conversion-numbers"
+        ]
       }
     ]
   }

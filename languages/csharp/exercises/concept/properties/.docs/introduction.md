@@ -1,5 +1,5 @@
 A property in C# is a member of a class that provides access to data within that class.
-Callers can set or retrieve the data.  Properties can be either auto-implemented or
+Callers can set or retrieve (get) the data.  Properties can be either auto-implemented or
 have a backing field.  
 
 When setting a property the input value can be validated, formatted
@@ -26,6 +26,6 @@ public int MyProperty
 ```
 ###### Auto-implemented Properties
 ```
-public int MyProperty {private set; get; } = 42;
+public int MyProperty { get; private set; } = 42;
 ```
 Initialisation is optional.

@@ -3,10 +3,10 @@ In this exercise you'll be modelling a weighing machine.
 The weight (`InputWeigh`) can be set and retrieved in pounds or kilograms.  A negative
 value cannot be input.
 
-The weight can be displayed in SI units (`DisplayWeight`) or US units (`USDisplayWeight`)
+The weight can be displayed in SI units or US units
 , pounds and ounces.
 
-A tare adjustment (`TareAdjustment`) can be applied to the weight (for instance to deduct the
+A tare adjustment can be applied to the weight (for instance to deduct the
 weight of a container).  This can be any value (even negative or a value that makes the display weight negative) 
 as there are doubts about the accuracy
  of the weighing machine.  For security reasons this value cannot be retrieved.
@@ -38,7 +38,8 @@ more properties:
 
 ### 1 Allow the weight to be set on the weighing machine 
 
-Implement the `WeigingMachine.InputWeight` property to allow the weight to be get and set
+Implement the `WeigingMachine.InputWeight` property to allow the weight to be get and set:
+
 ``` csharp
 var wm = new WeighingMachine();
 wm.InputWeight = 60m;
@@ -48,7 +49,8 @@ wm.InputWeight = 60m;
 
 ### 2 Ensure that a negative input weight is rejected.
 
-Implement validation for the `WeighingMachine.InputWeight` to reject negative numbers
+Add validation to the `WeighingMachine.InputWeight` property to throw an `ArgumentOutOfRangeException` when trying to set it to a negative weight:
+
 ``` csharp
 var wm = new WeighingMachine();
 wm.InputWeight = -10m; // Throws an ArgumentException
