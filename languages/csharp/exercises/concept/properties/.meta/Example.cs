@@ -2,8 +2,8 @@ using System;
 
 public enum Units
 {
-    Kilograms
-    ,Pounds
+    Pounds
+    ,Kilograms
 }
 public class WeighingMachine
 {
