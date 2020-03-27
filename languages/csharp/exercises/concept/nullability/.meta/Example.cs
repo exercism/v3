@@ -1,19 +1,21 @@
+using System;
+
 public static class Nullability
 {
 
-    public static bool IsNull(string s)
+    public static int ComputeWidthPx(string? FirstName,
+                                     string? MiddleName,
+                                     string? LastName,
+                                     int? fontSizePx)
     {
-        return s == null;
-    }
+        var words = (FirstName==null?0:1)
+            + (MiddleName==null?0:1)
+            + (LastName==null?0:1);
 
-    public static int TotalLength(string a, string b)
-    {
-        return a.Length + b.Length;
-    }
-
-    public static int TotalLengthSmart(string a, string b)
-    {
-        return (a??"").Length + (b??"").Length;
+        return (FirstName??"").Length*(fontSizePx??0)
+            + (MiddleName??"").Length*(fontSizePx??0)
+            + (LastName??"").Length*(fontSizePx??0)
+            + (Math.Max(words-1, 0))*(fontSizePx??0);
     }
 
 }

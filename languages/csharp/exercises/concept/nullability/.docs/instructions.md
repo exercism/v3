@@ -1,45 +1,30 @@
-In this exercise, we'll learn how to declare and detect `null` variables. 
-We will also see how the C# can help us dealing with `null` values and variables.
+In this exercise you'll be writing code to helping printing name
+badges for the employees on a factory.
 
-### 1. Detect null values
+On our system, people may have a first name, a middle name and a
+family name. They are all printed on a single line on a plastic badge.
 
-Write a static method called `IsNull` to detect if a string is `null` or not.
+For examle, if my name is `Ernest Johnny Payne`, it should appear as
+follows in my badge:
 
-``` csharp
-Nullable.IsNull("hello") // should return `false`
-Nullable.IsNull(null)    // should return `true`
+```
+ERNEST JOHNNY PAYNE
 ```
 
-### 2. Letting the runtime detect null values
+Your task will be writing a static method called `ComputeWidthPx`. It
+will take as input parameters the first, middle and last names of the
+employee and the font size that is going to be used to print the name.
 
-The C# runtime is able to detect when code calls a method from a `null` value. 
-It throws a `NullReferenceException`.
+For a font size of 12px, the total width of the name on the badge will
+be:
 
-Write a static method called `TotalLength` to sum the lengths of two strings passed as parameters.
-It should throw `NullReferenceException` when one of the strings is `null`.
-
-``` csharp
-Nullable.TotalLength("abc", "def"); // returns `6`
-Nullable.TotalLength(null, "def");  // throws a `NullReferenceException`
+```
+6*12 + 1*12 + 6*12 + 1*12 + 5*12 = 228
 ```
 
-### 3. Dealing with null values
+PS 1: Notice that the spaces between words take space on the badge.
 
-Write a static method called `TotalLengthSmart` to sum the lengths of two strings passed as parameters.
-If one of the passed strings is `null`, use `0` as its length.
-
-``` csharp
-Nullable.TotalLengthSmart("abc", "def"); // returns `6`
-Nullable.TotalLengthSmart(null, "def");  // returns `3`
-```
-
-**BONUS:** Try to write this method without using `if`s.
-
-### 4. Nullable reference types
-
-You may have noticed this warning when you compile your code or run your tests.
-
-Fix it.
-
-`Cannot convert null literal to non-nullable reference type.`
+PS 2: Let us assume that the three parametres are optional, i.e. an
+employee may have no first name, no middle name or no family name on
+the system.
 

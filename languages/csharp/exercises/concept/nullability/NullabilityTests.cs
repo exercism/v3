@@ -1,37 +1,33 @@
-using System;
 using Xunit;
 
 public class NullabilityTests
 {
     [Fact]
-    public void FalseWhenStringNotNull() =>
-        Assert.False(Nullability.IsNull("hello"));
+    public void ComputeWidthPx() =>
+        Assert.Equal(7*12+5*12+3*12+2*12, Nullability.ComputeWidthPx("Matilda", "Leana", "Cox", 12));
 
     [Fact]
-    public void TrueWhenStringNull() =>
-        Assert.True(Nullability.IsNull(null));
+    public void MissingMiddleName() =>
+        Assert.Equal(7*12+3*12+12, Nullability.ComputeWidthPx("Matilda", null, "Cox", 12));
 
     [Fact]
-    public void SumLengthsWhenStringNotNull() =>
-        Assert.Equal(10, Nullability.TotalLength("hello", "world"));
+    public void OnlyFirstName() =>
+        Assert.Equal(7*12, Nullability.ComputeWidthPx("Matilda", null, null, 12));
 
     [Fact]
-    public void ExceptionWhenFirstStringNull() =>
-        Assert.Throws<NullReferenceException>(() => Nullability.TotalLength("hello", null!));
+    public void OnlyLastName() =>
+        Assert.Equal(3*12, Nullability.ComputeWidthPx(null, null, "Cox", 12));
 
     [Fact]
-    public void ExceptionWhenSecondStringNull() =>
-        Assert.Throws<NullReferenceException>(() => Nullability.TotalLength(null!, "world"));
+    public void DifferentFontSize() =>
+        Assert.Equal(3*17, Nullability.ComputeWidthPx(null, null, "Cox", 17));
 
     [Fact]
-    public void SmartSumLengthsWhenStringNotNull() =>
-        Assert.Equal(10, Nullability.TotalLength("hello", "world"));
+    public void NothingToDisplay() =>
+        Assert.Equal(0, Nullability.ComputeWidthPx(null, null, null, 17));
 
     [Fact]
-    public void SmartSumLengthsWhenFirstStringNull() =>
-        Assert.Equal(5, Nullability.TotalLengthSmart("hello", null));
+    public void NoFontSize() =>
+        Assert.Equal(0, Nullability.ComputeWidthPx("Matilda", null, null, null));
 
-    [Fact]
-    public void SmartSumLengthsWhenSecondStringNull() =>
-        Assert.Equal(5, Nullability.TotalLengthSmart(null, "world"));
 }
