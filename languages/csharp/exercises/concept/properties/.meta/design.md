@@ -59,7 +59,6 @@ Prerequisite Exercises - TBA
 
 ### After
 
-Examples:
 - [Properties][docs.microsoft.com-properties]
 - [Using Properties][docs.microsoft.com-using-properties]
 
