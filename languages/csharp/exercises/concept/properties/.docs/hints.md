@@ -14,12 +14,6 @@ Add [validation](https://stackoverflow.com/questions/4946227/validating-properti
 ### 3. Allow the US weight to be retrieved
 
 A property can return a reference to an object for example:
-``` csharp
-public Random Randomizer
-{
-    get { return new Random(); }
-}
-```
 
 ### 4. Allow the machine's units to be set to pounds
 
