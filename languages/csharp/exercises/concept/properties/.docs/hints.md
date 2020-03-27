@@ -9,7 +9,7 @@ A property with a private [backing field](https://docs.microsoft.com/en-us/dotne
 
 ### 2. Ensure that a negative input weight is rejected.
 
-Add [validation](https://stackoverflow.com/questions/4946227/validating-properties-in-c-sharp) to the `inputWeight`'s `set` accessor to throw an exception.
+Add [validation](https://stackoverflow.com/questions/4946227/validating-properties-in-c-sharp) to the `InputWeight`'s `set` accessor to throw an exception.
 
 ### 3 Allow the US weight to be retrieved
 
