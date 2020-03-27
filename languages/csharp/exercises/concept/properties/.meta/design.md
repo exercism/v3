@@ -102,7 +102,7 @@ to have a set accessor.  That should be removed.".  - Approved with comment.
 6. If `WeighingMachine.TareAdjustement` is not an auto-implemented property
 then the following commen should be made: "A succinct way of implementing
 `WeighingMachine.TareAdjustment` is as an auto-implemented property with a
-`private` get accessor. - Approved with comment.
+`private` get accessor". - Approved with comment.
 
 7. If `WeighingMachine.TareAdjustment` is an auto-implemented property
 but the get accessor is non-private then the following comment should be made:
