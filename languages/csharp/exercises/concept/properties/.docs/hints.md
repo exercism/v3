@@ -3,15 +3,15 @@
 - [Properties][docs.microsoft.com-properties]
 - [Using Properties][docs.microsoft.com-using-properties]
 
-### 1 Allow the weight to be set on the weighing machine 
+### 1. Allow the weight to be set on the weighing machine 
 
 A property with a private [backing field](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties#properties-with-backing-fields) is appropriate here.
 
-### 2 Ensure that a negative input weight is rejected.
+### 2. Ensure that a negative input weight is rejected.
 
-Add [validation](https://stackoverflow.com/questions/4946227/validating-properties-in-c-sharp) to the `inputWeight`'s `set` accessor to throw an exception.
+Add [validation](https://stackoverflow.com/questions/4946227/validating-properties-in-c-sharp) to the `InputWeight`'s `set` accessor to throw an exception.
 
-### 3 Allow the US weight to be retrieved
+### 3. Allow the US weight to be retrieved
 
 A property can return a reference to an object for example:
 ``` csharp

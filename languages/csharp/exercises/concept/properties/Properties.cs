@@ -83,7 +83,7 @@ public struct USWeight
 
     public USWeight(decimal weightInPounds)
     {
-        throw new NotImplementedException("Please implement the constructor");
+        throw new NotImplementedException("Please implement the USWeight classes' constructor");
     }
      public int Pounds
     {
