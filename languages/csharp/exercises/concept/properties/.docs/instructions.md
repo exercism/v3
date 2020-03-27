@@ -56,7 +56,8 @@ wm.InputWeight = -10m; // Throws an ArgumentException
 
 ### 3 Allow the US weight to be retrieved
 
-Implement the USDisplayWeight property and the USWeight class
+Implement the `WeighingMachine.USDisplayWeight` property and the `USWeight` class:
+
 ``` csharp
 var wm = new WeighingMachine();
 wm.InputWeight = 60m;
