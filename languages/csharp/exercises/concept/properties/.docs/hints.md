@@ -11,7 +11,7 @@ A property with a private [backing field](https://docs.microsoft.com/en-us/dotne
 
 Add [validation](https://stackoverflow.com/questions/4946227/validating-properties-in-c-sharp) to the `InputWeight`'s `set` accessor to throw an exception.
 
-### 3 Allow the US weight to be retrieved
+### 3. Allow the US weight to be retrieved
 
 A property can return a reference to an object for example:
 ``` csharp
