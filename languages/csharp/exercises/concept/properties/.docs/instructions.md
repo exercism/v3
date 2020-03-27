@@ -83,9 +83,9 @@ var usw = wm.USDisplayWeight;
 Implement the `WeighingMachine.TareAdjustment` and `WeighingMachine.DisplayWeight` properties:
 
 ``` csharp
-    var wm = new WeighingMachine();
-    wm.InputWeight = 100m;
-    wm.TareAdjustment = 10m;
+var wm = new WeighingMachine();
+wm.InputWeight = 100m;
+wm.TareAdjustment = 10m;
 
-    // => wm.DisplayWeight == 90m
+// => wm.DisplayWeight == 90m
 ```
