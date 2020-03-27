@@ -63,11 +63,11 @@ Implement validation for the `WeighingMachine.InputWeight` to reject negative nu
 
 Implement the USDisplayWeight property and the USWeight class
 ``` csharp
-    var wm = new WeighingMachine();
-    wm.InputWeight = 60m;
-    bw = wm.USDisplayhWeight;
+var wm = new WeighingMachine();
+wm.InputWeight = 60m;
 
-    // => bw.Pounds == 132 && bw.Ounces == 4
+var usw = wm.USDisplayWeight;
+// => usw.Pounds == 132 && usw.Ounces == 4
 ```
 
 ### 4 Allow the machine's units to be set to pounds
