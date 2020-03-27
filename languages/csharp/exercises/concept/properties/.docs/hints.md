@@ -21,7 +21,7 @@ public Random Randomizer
 }
 ```
 
-### 4 Allow the machine's units to be set to pounds
+### 4. Allow the machine's units to be set to pounds
 
 `Units` is a good candidate for an [auto-implemented property](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).
 
