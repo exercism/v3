@@ -1,6 +1,5 @@
 using System;
 
-
 public enum Units
 {
     Kilograms
@@ -9,7 +8,7 @@ public enum Units
 
 public class WeighingMachine
 {
-    public float InputWeight
+    public decimal InputWeight
     {
         get
         {
@@ -23,7 +22,7 @@ public class WeighingMachine
         }
     }
 
-    public float DisplayWeight
+    public decimal DisplayWeight
     {
         get
         {
@@ -37,7 +36,7 @@ public class WeighingMachine
         }
     }
 
-    public BritishWeight BritishWeight
+    public USWeight USDisplayWeight
     {
         get
         {
@@ -50,7 +49,7 @@ public class WeighingMachine
                 "Please implement accessors where appropriate for this property and remove unused stubs");
         }
     }
-    public float VanityFactor
+    public decimal TareAdjustment
     {
         get
         {
@@ -79,27 +78,14 @@ public class WeighingMachine
     }
 }
 
-public struct BritishWeight
+public struct USWeight
 {
 
-    public BritishWeight(float weightInPounds)
+    public USWeight(decimal weightInPounds)
     {
         throw new NotImplementedException("Please implement the constructor");
     }
-    public int Stones
-    {
-        get
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-        set
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-    }
-    public int Pounds
+     public int Pounds
     {
         get
         {
@@ -126,4 +112,3 @@ public struct BritishWeight
         }
     }
 }
-

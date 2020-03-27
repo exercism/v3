@@ -1,4 +1,4 @@
-In this exercise you'll be modelling a weighting machine.
+In this exercise you'll be modelling a weighing machine.
 
 The weight (`InputWeigh`) can be set and retrieved in pounds or kilograms.  A negative
 value cannot be input.
