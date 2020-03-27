@@ -72,7 +72,8 @@ Implement the USDisplayWeight property and the USWeight class
 
 ### 4 Allow the machine's units to be set to pounds
 
-Implement the `WeighingMachine.Units` property
+Implement the `WeighingMachine.Units` property:
+
 ``` csharp
 var wm = new WeighingMachine();
 wm.InputWeight = 175.5m;
