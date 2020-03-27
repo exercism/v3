@@ -36,10 +36,12 @@ This Concepts Exercise's concepts are:
 
 ## Prequisites
 
-- `numbers-basic`: value types such as int and float
+- `integers-basic`: using the `int` type and using mathematical operators.
+- `numbers-floating-point`: using the `decimal` type.
 - `classes-basic`: defining classes and working with members.
-* Multiple classes per file
-* number casting, rounding and truncation
+- `enums-basic`: working with enums.
+- `exceptions-basic`: throwing an exception.
+- `type-conversion-numbers`: converting to an `int`
 
 Note that the values in the instructions' examples and tests
 are selected specifically to avoid any question of rounding when converting
