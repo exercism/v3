@@ -28,3 +28,7 @@ public Random Randomizer
 ### 5 Allow a tare adjustment to be applied to the weighing machine
 
 Accessors can have [different access levels](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility) to each other.
+
+
+[docs.microsoft.com-properties]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties
+[docs.microsoft.com-using-properties]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-properties
