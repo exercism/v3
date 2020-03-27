@@ -80,7 +80,8 @@ var usw = wm.USDisplayWeight;
 
 ### 5 Allow a tare adjustment to be applied to the weighing machine
 
-Implement the `WeighingMachine.TareAdjustment` and `WeighingMachine.DisplayWeight` properties
+Implement the `WeighingMachine.TareAdjustment` and `WeighingMachine.DisplayWeight` properties:
+
 ``` csharp
     var wm = new WeighingMachine();
     wm.InputWeight = 100m;
