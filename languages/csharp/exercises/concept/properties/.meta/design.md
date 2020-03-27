@@ -79,22 +79,22 @@ then the following comment should be made: "The appropriate form
 for a property such as `WeighingMachine.Units` which has no validation or other processing required is
 that for an auto-implemented property".  - Approved with comment.
 
-2. If `WeighingMachine.DisplayWeight` has a public set accessor
+2. If `WeighingMachine.DisplayWeight` has a non-private set accessor
 then the following comment should be made: "It is not approprirate
 for a property such as `WeighingMachine.DisplayWeight` which simply returns a value
 to have a set accessor.  That should be removed.".  - Approved with comment.
 
-3. If `WeighingMachine.USDisplayWeight` has a public set accessor
+3. If `WeighingMachine.USDisplayWeight` has a non-private set accessor
 then the following comment should be made: "It is not approprirate
 for a property such as `USWeighingMachine.DisplayWeight` which simply returns a value
 to have a set accessor.  That should be removed.".  - Approved with comment.
 
-4. If `USDisplayWeight.Pounds` has a set accessor
+4. If `USDisplayWeight.Pounds` has a non-private set accessor
 then the following comment should be made: "It is not approprirate
 for a property such as `USDisplayWeight.Pounds` which simply returns a value
 to have a set accessor.  That should be removed.".  - Approved with comment.
 
-5. If `USDisplayWeight.Ounces` has a public set accessor
+5. If `USDisplayWeight.Ounces` has a non-private set accessor
 then the following comment should be made:  "It is not approprirate
 for a property such as `USDisplayWeight.Ounces` which simply returns a value
 to have a set accessor.  That should be removed.".  - Approved with comment.
@@ -105,7 +105,7 @@ then the following commen should be made: "A succinct way of implementing
 `private` get accessor. - Approved with comment.
 
 7. If `WeighingMachine.TareAdjustment` is an auto-implemented property
-but the get accessor is `public` then the following comment should be made:
+but the get accessor is non-private then the following comment should be made:
 "A non-private set accessor is not appropriate for `WeighingMachine.TareAdjustment`
 as the instructions stipulate that the value must not be available outside the
 class". - Disapproved.
