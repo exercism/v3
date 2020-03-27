@@ -40,10 +40,10 @@ more properties:
 
 Implement the `WeigingMachine.InputWeight` property to allow the weight to be get and set
 ``` csharp
-    var wm = new WeighingMachine();
-    wm.InputWeight = 60m;
+var wm = new WeighingMachine();
+wm.InputWeight = 60m;
 
-    //  => wm.InputWeight == 60m
+//  => wm.InputWeight == 60m
 ```
 
 ### 2 Ensure that a negative input weight is rejected.
