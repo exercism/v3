@@ -74,13 +74,12 @@ Implement the USDisplayWeight property and the USWeight class
 
 Implement the `WeighingMachine.Units` property
 ``` csharp
-    var wm = new WeighingMachine();
-    wm.InputWeight = 175.5m;
-    wm.Units = Units.Pounds;
-    bw = wm.USDisplayWeight;
+var wm = new WeighingMachine();
+wm.InputWeight = 175.5m;
+wm.Units = Units.Pounds;
 
-    // => bw.Pounds == 175 && bw.Ounces == 8
-
+var usw = wm.USDisplayWeight;
+// => usw.Pounds == 175 && usw.Ounces == 8
 ```
 
 ### 5 Allow a tare adjustment to be applied to the weighing machine
