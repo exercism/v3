@@ -1,6 +1,6 @@
 The two main types of property are 
 
-1. auto-implemented where the `get` and `set` accessors have no body.
+1. auto-implemented properties where the `get` and `set` accessors have no body.
 They may or may not be explicitly initialized.  For example:
 ``` csharp
 public int MyProperty {get; set;} = 42;
