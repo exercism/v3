@@ -44,11 +44,14 @@ Most often properties will have a non-private access level in line with
 their essential purpose.  Sometimes one of the accessors will have
 a different access level to the property.  In the case of `TareWeight`
 under the rather artificial "security" constraint there was an opportunity
-to have a public property with a private getter.
+to have a public property with a private getter.  This means that code external
+to the class can set the value of the property but it can only be read (get) by code within
+the class.
 ``` csharp
-public int ConfidentialValueUsedInternally {get; private set; }
+public int ConfidentialValueUsedInternally {private get; set; }
 ```
-Very often the set accessor may be ommitted completely.  This is maybe because
+Non-public set accessors are also supported but a more common case is where
+the set accessor may be ommitted completely.  This is maybe because
 the value of the property is set in the class's constructor.
 ``` csharp
 public class MyClass
