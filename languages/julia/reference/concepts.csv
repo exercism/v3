@@ -2,7 +2,7 @@ concept,category
 multiple-dispatch,
 mutability,
 immutability,
-type-inference,
+type-inference,type-system
 repl,
 package-management,
 unicode-identifiers,
