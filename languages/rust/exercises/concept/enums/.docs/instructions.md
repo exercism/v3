@@ -1,54 +1,30 @@
 # Instructions
 
-In this exercise you'll be processing log lines.
+In this exercise you'll be generating semi-structured log messages. 
 
-Each log line is a string formatted as follows: `"[<LEVEL>]: <MESSAGE>"`.
-
-There are three different log levels:
-
-- `INFO`
-- `WARNING`
-- `ERROR`
-
-You have three tasks.
-
-### 1. Parse log level
-
-Define a `LogLevel` enum that has three elements:
-
-- `Info`
-- `Warning`
-- `Error`
-
-Next, write a function to parse the log level of a log line:
+You'll start with some stubbed functions and the following enum:
 
 ```rust
-parse_log_level("[INFO]: File deleted");
-// Returns: LogLevel::Info
+#[derive(Clone, PartialEq, Debug)]
+pub enum LogLevel {
+    Info,
+    Warning,
+    Error,
+}
 ```
 
-### 2. Support unknown log level
+Your goal is to emit a log message as follows: `"[<LEVEL>]: <MESSAGE>"`.
+You'll need to implement functions that correspond with log levels.
 
-Unfortunately, occasionally some log lines have an unknown log level. To gracefully handle these log lines, add an `Unknown` member to the `LogLevel` enum which should be returned when parsing an unknown log level:
+For example, the below snippet demonstrates an expected output for the `log` function. 
 
 ```rust
-parse_log_level("[FATAL]: Invalid operation")
-// Returns: LogLevel::Unknown
+log(LogLevel::Error, "Stack overflow")
+// Returns: "[ERROR]: Stack overflow"
 ```
-### 3. Convert log line to short format
-
-The log level of a log line is quite verbose. To reduce the disk space needed to store the log lines, a short format is developed: `"[<ENCODED_LEVEL>]:<MESSAGE>"`.
-
-The encoded log level is simple mapping of a log level to a number:
-
-- `Unknown` -> `0`
-- `Info` -> `1`
-- `Warning` -> `2`
-- `Error` -> `4`
-
-Write a function that can output the shortened log line format:
+And for `info`:
 
 ```rust
-output_for_short_log(LogLevel::Error, "Stack overflow")
-// Returns: "4:Stack overflow"
+info("Timezone changed")
+// Returns: "[INFO]: Timezone changed"
 ```

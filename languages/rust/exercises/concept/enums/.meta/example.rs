@@ -3,26 +3,20 @@ pub enum LogLevel {
     Info,
     Warning,
     Error,
-    Unknown,
 }
-
-pub fn parse_log_level(log: &str) -> LogLevel {
-    if log.starts_with("[ERROR]") {
-        LogLevel::Error
-    } else if log.starts_with("[WARNING]") {
-        LogLevel::Warning
-    } else if log.starts_with("[INFO]") {
-        LogLevel::Info
-    } else {
-        LogLevel::Unknown
+pub fn log(level: LogLevel, message: &str) -> String {
+    match level {
+        LogLevel::Info => info(message),
+        LogLevel::Warning => warn(message),
+        LogLevel::Error => error(message),
     }
 }
-pub fn output_for_short_log(kind: LogLevel, log: &str) -> String {
-    let code = match kind {
-        LogLevel::Error => 4,
-        LogLevel::Warning => 2,
-        LogLevel::Info => 1,
-        LogLevel::Unknown => 0,
-    };
-    format!("{}:{}", code, log)
+pub fn info(message: &str) -> String {
+    format!("[INFO]: {}", message)
+}
+pub fn warn(message: &str) -> String {
+    format!("[WARNING]: {}", message)
+}
+pub fn error(message: &str) -> String {
+    format!("[ERROR]: {}", message)
 }

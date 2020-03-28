@@ -30,7 +30,6 @@ This exercise's prerequisites Concepts are:
 
 - `strings-basic`: log lines are `string` values.
 - `numbers-basic`: enum values are assigned a numeric value.
-- `generics`: generics are used to specify the enum type being parsed.
 - `conditionals-if`: used to handle the case when the enum could not be parsed.
 
 ## Representer

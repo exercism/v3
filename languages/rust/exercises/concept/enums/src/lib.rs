@@ -1,9 +1,12 @@
-// TODO define enum variants
-pub enum LogLevel {}
-
-pub fn parse_log_level(log: &str) -> Option<LogLevel> {
-    unimplemented!("parse a log and return the level")
+/// various log levels
+#[derive(Clone, PartialEq, Debug)]
+pub enum LogLevel {
+    Info,
+    Warning,
+    Error,
 }
-pub fn output_for_short_log(kind: LogLevel, log: &str) -> String {
-    unimplemented!("print a shortened log line")
-}
+/// primary function for emitting logs
+pub fn log(level: LogLevel, message: &str) -> String { unimplemented!() }
+pub fn info(message: &str) -> String { unimplemented!() }
+pub fn warn(message: &str) -> String { unimplemented!() }
+pub fn error(message: &str) -> String { unimplemented!() }
