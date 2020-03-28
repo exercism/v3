@@ -48,11 +48,17 @@ to have a public property with a private getter.
 ``` csharp
 public int ConfidentialValueUsedInternally {get; private set; }
 ```
-Very often the set accessor may be ommitted completely.  This maybe because
+Very often the set accessor may be ommitted completely.  This is maybe because
 the value of the property is set in the class's constructor.
 ``` csharp
-
-public int ConstructedValue {get;} 
+public class MyClass
+{
+  public MyClass( int importantValue)
+  {
+    ConstructedValue = importantValue;
+  }
+  public int ConstructedValue {get;} 
+}
 ```
 This exercise has dealt with basic use of properties.  You will find more advanced
 topics in other exercises:
