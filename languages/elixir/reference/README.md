@@ -5,11 +5,11 @@
 Below are the concepts that have been identified in Elixir for use in Exercism.
 The initial breakdown of these concepts, including the ordering, is based on the elixir-lang.org [Getting Started Guide](https://elixir-lang.org/getting-started/introduction.html).
 
-### Out of scope
+### Useful information not tested by exercises
 - `iex`
   - `h/0`, plus `h/1`, `i`, `v`, etc.
 - `elixir script.exs` to execute a script
-- `IO.puts/1`
+- `IO.puts/1` and `IO.inspect/2`
 
 ### elixir-lang.org Getting Started Guide concept extraction
 
@@ -47,9 +47,26 @@ The initial breakdown of these concepts, including the ordering, is based on the
   - `elem/2`, `tuple_size/1`, `put_elem/3`
   - `:ok` and `:error` tuples
 - [Operators](../../../reference/concepts/operators.md)
-  - TODO details from https://elixir-lang.org/getting-started/basic-operators.html
+  - `++` and `--` for lists
+  - `<>` for strings
+  - `or`, `and`, `not` for booleans
+    - short circuit behavior
+  - `||`, `&&`, `!` for any types
+    - short circuit behavior
+  - `==`, `!=`, `===,` `!==,` `<=,` `>=,` `<`, and `>` for comparison
+    - `===` differentiates floats from ints
+    - type ordering for comparison: number < atom < reference < function < port < pid < tuple < map < list < bitstring
 - [Pattern matching](../../../reference/concepts/pattern_matching.md)
-  - TODO details from https://elixir-lang.org/getting-started/pattern-matching.html
+  - `=` as match operator
+    - variable binding on left hand side
+    - `MatchError`
+    - `lists` with cons operator and special case of empty list
+      - cons can also be used to prepend to list
+    - variables may be rebound
+    -  use pin operator `^` to pattern match against previously bound value instead of rebinding
+    - if the same variable is used multiple times in a pattern, it must match the same value
+      - e.g., `{x, x} = {1, 2}` results in a `MatchError`
+    - use `_` to ignore values in a pattern match. its value can never be read.
 - TODO resume at https://elixir-lang.org/getting-started/case-cond-and-if.html
 
 ### Other concepts
@@ -116,10 +133,6 @@ The initial breakdown of these concepts, including the ordering, is based on the
 
 #### General
 
-- Basic Operators
-- Logical Operators
-- Comparison Operators
-  - Type Comparison Hierarchy
 - Control Structures
 - Literal Forms of data structures (lists, keyword lists, maps)
 - Bitwise functions and operators
@@ -129,7 +142,6 @@ The initial breakdown of these concepts, including the ordering, is based on the
 #### Basic Types
 
 - List
-  - Notation `[head | tail]` syntax
   - Charlist
     - Codepoints
       - `?` operator
