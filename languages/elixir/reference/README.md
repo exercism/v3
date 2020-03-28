@@ -37,6 +37,10 @@ The initial breakdown of these concepts, including the ordering, is based on the
   - As closures
   - Variable [scope](../../../reference/concepts/scope.md)
   - Implicit [return values](../../../reference/concepts/return_values.md)
+  - Guards
+    - more than 1 clause and guard may be used
+      - clauses must have same number of arguments
+    - do not leak errors, the error just makes the guard fail
 - [Lists](../../../reference/types/list.md)
   - `is_list/1`
   - `length/1`
@@ -67,7 +71,18 @@ The initial breakdown of these concepts, including the ordering, is based on the
     - if the same variable is used multiple times in a pattern, it must match the same value
       - e.g., `{x, x} = {1, 2}` results in a `MatchError`
     - use `_` to ignore values in a pattern match. its value can never be read.
-- TODO resume at https://elixir-lang.org/getting-started/case-cond-and-if.html
+- [Conditionals](../../../reference/concepts/conditionals.md)
+  - `case`
+    - compare a value against patterns
+    - guards can be used
+    - `CaseClauseError`, or catch all (`_` or `value`, `other`, etc.)
+  - `cond`
+    - evaluate multiple conditionals for truthiness (like "else if"s)
+    - `CondClauseError` or catch all (`true`)
+  - `if` and `unless`
+    - evaluate a single conditional for truthiness
+    - optionally supports `else`
+  - TODO resume at https://elixir-lang.org/getting-started/case-cond-and-if.html#doend-blocks
 
 ### Other concepts
 
