@@ -46,6 +46,7 @@ reader-macros.using, macros
 reader-macros.defining, macros
 arrays, sequences
 cons.basic, sequences
+cons.intermediate, sequences
 cons.advanced, sequences
 strings, sequences
 vectors, sequences
