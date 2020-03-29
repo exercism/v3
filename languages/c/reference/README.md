@@ -4,7 +4,6 @@
 
 The C concept exercises are based on concepts. The list below contains the concepts that have been identified for the C language. The list is initially based on list of concepts the [v3 reference concepts][v3-reference-concepts], and using the references at the bottom.
 
-
 ## Specialities (Concepts)
 
 - [Incomplete Types](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Incomplete-Types)
@@ -28,6 +27,9 @@ The C concept exercises are based on concepts. The list below contains the conce
 - [Strings library](https://en.cppreference.com/w/c/string)
 - [Algorithms](https://en.cppreference.com/w/c/algorithm)
 - [File input/output](https://en.cppreference.com/w/c/io)
+- [Undefined behaviour](https://en.wikipedia.org/wiki/Undefined_behavior)
+- [Macros](https://gcc.gnu.org/onlinedocs/cpp/Macros.html#Macros)
+- [The definition of `main()`](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-main-Function)
 
 ## Specialties (types)
 
@@ -81,6 +83,11 @@ The C concept exercises are based on concepts. The list below contains the conce
 ## Resources used
 
 - [The GNU C Reference Manual](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
+<<<<<<< HEAD
+=======
+- [The GNU C Preprocessor Manual](https://gcc.gnu.org/onlinedocs/cpp/index.html)
+- [Wikipedia](https://en.wikipedia.org)
+>>>>>>> 5002d5b... correct macros link
 - [cppreference](https://en.cppreference.com/w/)
 
 
