@@ -83,12 +83,12 @@ The initial breakdown of these concepts, including the ordering, is based on the
     - evaluate a single conditional for truthiness
     - optionally supports `else`
     - `do`/`end` blocks are a syntactic convenience over the keyword syntax
-- [Character encoding](../../../reference/concepts/character-encoding.md)
+- [Character encoding](../../../reference/concepts/character_encoding.md)
   - Codepoints
     - `?` operator to return a character's codepoint. E.g., `?a == 97`
     - `\u` notation to represent a unicode codepoint in a string (as hex).
       - e.g, `"\u0061" == "\u{61} == "a"`
-  - [UTF8](../../../reference/types/utf8.md) encoding used to represent unicode codepoints in binaries
+  - [UTF8](../../../reference/concepts/utf8.md) encoding used to represent unicode codepoints in binaries
 - [Bitstrings](../../../reference/types/bit.md)
   - `<<>>` syntax
   - contiguous sequence of bits in memory
