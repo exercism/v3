@@ -28,6 +28,12 @@
         "prerequisites": []
       },
       {
+        "slug": "arrays",
+        "uuid": "25cb0707-44f8-4800-b993-3fcb2b6d9f61",
+        "concepts": ["arrays-basic"],
+        "prerequisites": ["numbers-basic"]
+      },
+      {
         "slug": "promises",
         "uuid": "4a967656-8615-474e-a009-5c0b09f4386f",
         "concepts": ["promises"],
