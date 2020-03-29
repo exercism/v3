@@ -48,7 +48,7 @@ How to create the files common to all tracks is described in the [how to impleme
 
 ## Inspiration
 
-When implementing an exercise, it can be very useful to look at already implemented [C exercises][exercises]. You can also check the exercise's [general concepts documents][reference] to see if other languages have already implemented an exercise for that concept.
+When implementing an exercise, it can be very useful to look at already implemented C exercises. You can also check the exercise's [general concepts documents][reference] to see if other languages have already implemented an exercise for that concept.
 
 ## Help
 
@@ -56,5 +56,4 @@ If you have any questions regarding implementing the exercise, please post them 
 
 [unity]: http://www.throwtheswitch.org/unity
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
-[exercises]: ../exercises
 [reference]: ../../../reference
