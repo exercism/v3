@@ -38,6 +38,11 @@ The C concept exercises are based on concepts. The list below contains the conce
 - [Enumerations](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Enumerations)
 - [Unions](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Unions)
 
+## Specialities (patterns)
+
+- [Opaque pointers](https://en.wikipedia.org/wiki/Opaque_pointer)
+- [Callback](https://en.wikipedia.org/wiki/Callback_(computer_programming))
+
 ## Concepts
 
 - [Arithmetic](https://github.com/exercism/v3/blob/master/reference/concepts/arithmetic.md)
@@ -84,12 +89,10 @@ The C concept exercises are based on concepts. The list below contains the conce
 ## Resources used
 
 - [The GNU C Reference Manual](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
-<<<<<<< HEAD
-=======
 - [The GNU C Preprocessor Manual](https://gcc.gnu.org/onlinedocs/cpp/index.html)
 - [Wikipedia](https://en.wikipedia.org)
->>>>>>> 5002d5b... correct macros link
 - [cppreference](https://en.cppreference.com/w/)
+- [progbook](https://progbook.org/)
 
 
 [v3-reference-concepts]: https://github.com/exercism/v3/tree/master/reference
