@@ -31,6 +31,7 @@ The C concept exercises are based on concepts. The list below contains the conce
 - [Macros](https://gcc.gnu.org/onlinedocs/cpp/Macros.html#Macros)
 - [The definition of `main()`](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-main-Function)
 - [C toolchain](https://progbook.org/prog2.html)
+- [Includes](https://gcc.gnu.org/onlinedocs/cpp/Include-Syntax.html)
 
 ## Specialties (types)
 
@@ -61,6 +62,7 @@ The C concept exercises are based on concepts. The list below contains the conce
 - [Operators](https://github.com/exercism/v3/blob/master/reference/concepts/operators.md)
 - [Recursion](https://github.com/exercism/v3/blob/master/reference/concepts/recursion.md)
 - [Return value(s)](https://github.com/exercism/v3/blob/master/reference/concepts/return_values.md)
+- [Scope](https://github.com/exercism/v3/blob/master/reference/concepts/scope.md)
 - [Signedness](https://github.com/exercism/v3/blob/master/reference/concepts/signedness.md)
 - [Type casting (type conversion, type coercion)](https://github.com/exercism/v3/blob/master/reference/concepts/type_casting.md)
 - [Variable Shadowing](https://github.com/exercism/v3/blob/master/reference/concepts/variable_shadowing.md)
