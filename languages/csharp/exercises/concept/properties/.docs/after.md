@@ -25,6 +25,7 @@ Although much of the time it is obvious whether to code behaviour as a property 
 often a judgement call for the coder and in particular how much code should be
 executed within the accessors.  Validation in a set accessor and simple calculation or formatting in a
 get accessor are commonly found:
+
 ``` csharp
 private float fraction;
 public float Percentage
@@ -40,6 +41,7 @@ public float Percentage
   }
 }
 ```
+
 In a similar way to other class members properties can have access levels.
 Most often properties will have a non-private access level in line with
 their essential purpose.  Sometimes one of the accessors will have
@@ -48,12 +50,15 @@ under the rather artificial "security" constraint there was an opportunity
 to have a public property with a private getter.  This means that code external
 to the class can set the value of the property but it can only be read (get) by code within
 the class.
+
 ``` csharp
 public int ConfidentialValueUsedInternally {private get; set; }
 ```
+
 Non-public set accessors are also supported but a more common case is where
 the set accessor may be ommitted completely.  This is maybe because
 the value of the property is set in the class's constructor.
+
 ``` csharp
 public class MyClass
 {
