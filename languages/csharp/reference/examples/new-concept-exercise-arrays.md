@@ -2,7 +2,7 @@ This issue describes how to implement the `array` concept exercise for the C# tr
 
 ## Goal
 
-The goal of this exercise is to teach the student the basics of the Concept of Arrays in [F#][arrays]. We'll use the array type to teach the student about some collection basics. The `array` collection type was chosen as the first collection type for the following reasons:
+The goal of this exercise is to teach the student the basics of the Concept of Arrays in [C#][arrays]. We'll use the array type to teach the student about some collection basics. The `array` collection type was chosen as the first collection type for the following reasons:
 
 - Arrays don't require the student to know about generics.
 - Arrays are a common data type in many language.
