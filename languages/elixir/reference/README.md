@@ -10,6 +10,7 @@ The initial breakdown of these concepts, including the ordering, is based on the
   - `h/0`, plus `h/1`, `i`, `v`, etc.
 - `elixir script.exs` to execute a script
 - `IO.puts/1` and `IO.inspect/2`
+- Inspect a string's codepoints with `str <> <<0>>` or `IO.inspect(str, binaries: :as_binaries)`
 
 ### elixir-lang.org Getting Started Guide concept extraction
 
@@ -27,7 +28,6 @@ The initial breakdown of these concepts, including the ordering, is based on the
   - `true`, `false`, and `nil` as special atoms
   - `is_atom/1`
 - [Strings](../../../reference/types/string.md)
-  - [UTF8](../../../reference/types/utf8.md)
   - Interpolation
   - Binaries and `is_binary/1`
   - `String.length/1` vs `byte_size/1`
@@ -82,7 +82,34 @@ The initial breakdown of these concepts, including the ordering, is based on the
   - `if` and `unless`
     - evaluate a single conditional for truthiness
     - optionally supports `else`
-  - TODO resume at https://elixir-lang.org/getting-started/case-cond-and-if.html#doend-blocks
+    - `do`/`end` blocks are a syntactic convenience over the keyword syntax
+- [Character encoding](../../../reference/concepts/character-encoding.md)
+  - Codepoints
+    - `?` operator to return a character's codepoint. E.g., `?a == 97`
+    - `\u` notation to represent a unicode codepoint in a string (as hex).
+      - e.g, `"\u0061" == "\u{61} == "a"`
+  - [UTF8](../../../reference/types/utf8.md) encoding used to represent unicode codepoints in binaries
+- [Bitstrings](../../../reference/types/bit.md)
+  - `<<>>` syntax
+  - contiguous sequence of bits in memory
+  - number of bits specified with `::n` or `::size(n)` syntax.
+    - E.g., `<<2::3>> == <<2::size(3)>>` and `<<2::3>> == <<0::1, 1::1, 0::1>>`
+    - Defaults to 8. E.g, `<<42::8>> == <<42>>`
+  - truncates extra bits from left. E.g., one byte stores 0..255 so `<<257>> == <<1>>`
+  - `is_bitstring/1`
+- [Binaries](../../../reference/types/bytes.md)
+  - bitstrings where the number of bits is divisible by 8 (contains all full bytes)
+  - `is_binary/1` vs `is_bitstring/1`
+  - strings are binaries are bitstrings, but not all bitstrings are binaries and not all binaries are (valid) strings
+  - `<>` concatenation for binaries (including strings)
+  - pattern matching:
+    - `<<x, y, z>> = <<0, 1, 2>>` defaults to matching one byte, use `::n` to specify bits
+    - `<<x, y::binary>> = <<0, 1, 2>>` uses `binary` to match the rest of a binary
+      - `x` is a codepoint (integer), `y` is a binary. e.g., `x == 0 and y == <<1, 2>>`
+    - `<<x::binary-size(2), y::binary>> = <<0, 1, 2>>` uses `binary-size(2)` to match 2 bytes
+    - `<<x, y::binary>> = "hello"` matches on strings since strings are binaries
+    - `<<x::utf8, y::binary>> = "über"` uses `::utf8` match utf8 codepoints instead of a single byte
+- TODO resume at https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#charlists
 
 ### Other concepts
 
@@ -99,7 +126,6 @@ The initial breakdown of these concepts, including the ordering, is based on the
 - Processes
 - Agent Concurrency Model
 - Erlang Interoperation
-- String vs Charlist
 - elixir mix
   - directory structure
   - mix tasks
@@ -109,7 +135,6 @@ The initial breakdown of these concepts, including the ordering, is based on the
 - Naming conventions
 - Eager Computation
 - Lazy Computation
-- Guards
 - Compiling
 - Scripts (\*.exs) vs Code (\*.ex)
 - TODO: more
@@ -148,7 +173,6 @@ The initial breakdown of these concepts, including the ordering, is based on the
 
 #### General
 
-- Control Structures
 - Literal Forms of data structures (lists, keyword lists, maps)
 - Bitwise functions and operators
 - Case vs Cond vs Multiple function clauses
@@ -157,9 +181,6 @@ The initial breakdown of these concepts, including the ordering, is based on the
 #### Basic Types
 
 - List
-  - Charlist
-    - Codepoints
-      - `?` operator
   - iodata
   - chardata
   - List Comprehensions
