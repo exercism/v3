@@ -2,19 +2,20 @@ The two main types of property are
 
 1. auto-implemented properties where the `get` and `set` accessors have no body.
 They may or may not be explicitly initialized.  For example:
-``` csharp
-public int MyProperty {get; set;} = 42;
-```
+   ``` csharp
+   public int MyProperty {get; set;} = 42;
+   ```
 2. those where the accessors evaluate expressions and execute statements.  The code can
 be as simple as returning or assigning a backing field.  For example:
-``` csharp
-private int myField;
-public int MyProperty
-{
-  get { return myField; }
-  set { myField = value; }
-}
-```
+   ``` csharp
+   private int myField;
+   public int MyProperty
+   {
+     get { return myField; }
+     set { myField = value; }
+   }
+   ```
+
 
 There is considerable overlap of behaviour and power between properties and methods. 
 When they are not auto-implemented properties can contain any statement or expression
