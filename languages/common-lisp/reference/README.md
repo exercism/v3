@@ -4,6 +4,9 @@ This is a work-in-progress document listing the concepts comprising the Common
 Lisp programming language. I'm currently using [this document][csharp-example]
 as template.
 
+A more formal, machine-readable version of this concept list exists as
+[concepts.csv][concepts]
+
 ## Concepts
 ### General
   - [Arithmetic][arithmetic]
@@ -111,10 +114,10 @@ as template.
   - [Structures][struct]
   - Symbols
 
-## Exercise Concepts
-| Concept | Learning Objectives |
-| ------- | ------------------- |
-| [`sexpr`][sexpr] | Teach the student about S-expressions, the base unit of all Lisp code. The student should be able to distinguish an `atom` from a `cons` and know how to access the `car` and `cdr` of a cons pair. |
+## Implemented Concept Exercises
+| Exercise           | Concepts                                                               |
+| ------------------ | ---------------------------------------------------------------------- |
+| [`basics`][basics] | `comments`, `expressions`, `cons.basic`, `symbols`, `truthy-and-falsy` |
 
 [anonymous-functions]: ../../../reference/concepts/anonymous_functions.md
 [arithmetic]: ../../../reference/concepts/arithmetic.md
@@ -150,4 +153,5 @@ as template.
 [truthy-and-falsy]: ../../../reference/concepts/truthy_and_falsy.md
 [variables]: ../../../reference/concepts/variables.md
 
-[sexpr]: ../exercises/concept/sexpr
+[concepts]: concepts.csv
+[basics]: ../exercises/concept/basics
