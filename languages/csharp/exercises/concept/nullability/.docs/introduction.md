@@ -27,7 +27,7 @@ b = null; // Valid
 b = 6;    // Valid
 ```
 
-Null values are a convenience, but it comes with a price. A common
+Null values are a convenience, but come with a price. A common
 error is trying to call a member on variable that has been set to `null`.   For
 example, what if someone tries to print the length of a variable
 containing an empty user name like that:
