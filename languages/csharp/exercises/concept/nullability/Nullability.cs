@@ -1,6 +1,6 @@
 using System;
 
-public static class Nullability
+public static class Badge
 {
     public static int ComputeWidthPx(string? FirstName,
                                      string? MiddleName,
