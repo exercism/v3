@@ -49,7 +49,7 @@ code, you will see the following warning message:
 Dereference of a possibly null reference. (CS8602)
 ```
 
-A good practice, is testing if a variable is empty before trying to do
+A good practice is testing if a nullable value is not `null` before trying to do
 something with it. In order to do that, we compare its value with
 `null`:
 
