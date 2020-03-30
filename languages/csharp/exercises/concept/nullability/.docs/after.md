@@ -1,4 +1,3 @@
-
 Sometimes we need to make it so that variables have no particular
 value, i.e. they are empty.  In C#, this corresponds to the literal
 `null`.
