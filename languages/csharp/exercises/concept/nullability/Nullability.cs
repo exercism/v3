@@ -9,5 +9,4 @@ public static class Nullability
     {
         throw new NotImplementedException("Please implement the Badge.ComputeWidthPx method");
     }
-
 }
