@@ -22,8 +22,8 @@ be:
 6*12 + 1*12 + 6*12 + 1*12 + 5*12 = 228
 ```
 
-PS 1: Notice that the spaces between words take space on the badge.
+**PS 1**: Notice that the spaces between words take space on the badge.
 
-PS 2: Let us assume that the three parametres are optional, i.e. an
+**PS 2**: Let us assume that the three parametres are optional, i.e. an
 employee may have no first name, no middle name or no family name on
 the system.
