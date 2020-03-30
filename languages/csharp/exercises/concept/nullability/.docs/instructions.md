@@ -1,7 +1,7 @@
 In this exercise you'll be writing code to helping printing name
 badges factory employees.
 
-On our system, people may have a first name, a middle name and a
+Employees have a first and family name, and optionally a middle name
 family name. They are all printed on a single line on a plastic badge.
 
 For examle, if my name is `Ernest Johnny Payne`, it should appear as
