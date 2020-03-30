@@ -69,7 +69,6 @@ These concepts are more advanced than the fundamentals, but may be familiar from
 - [x] Scopes and Expressions (implicit return)
 - [x] Explicit `return`
 - [x] [Methods](../../../reference/concepts/methods.md) / `impl` blocks
-- [ ] [Composition](../../../reference/concepts/composition.md)
 - [x] Basics of [Generics](https://doc.rust-lang.org/book/ch10-00-generics.html)
 - [ ] Using External Crates / Libraries
   - [ ] `use` statement for importing
@@ -77,7 +76,6 @@ These concepts are more advanced than the fundamentals, but may be familiar from
 - [ ] Destructuring (in `match`, in `let`)
 - [ ] [`match` with Pattern matching](https://doc.rust-lang.org/book/ch06-02-match.html)
 - [ ] [Anonymous functions](../../../reference/concepts/anonymous_functions.md)
-- [ ] [Recursion](../../../reference/concepts/recursion.md)
 - [ ] Ranges
 - [ ] Closures
 - [ ] Visibility / `pub`
