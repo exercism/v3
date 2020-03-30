@@ -11,7 +11,7 @@ In C#, we can use the `null` literal to denote the abscence of a
 value.  A *nullable* type is a type that allows `null` values.  The
 operator `?` can be added as a suffix to a type to make it nullable.
 
-In the following example, we declare a variable `b` of type `int?`
+In the following example, we declare a regular, non-nullable variable `a` of type `int` and a nullable variable `b` of type `int?`
 whose value is `5`:
 
 ```csharp
