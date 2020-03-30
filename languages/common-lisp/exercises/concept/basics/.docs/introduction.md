@@ -113,6 +113,10 @@ unlike keywords (which can only be symbols), all S-Expressions can be quoted:
 '(gimme-foo) ; => '(gimme-foo)
 ```
 
+For now, you can consider this just as a way to return symbols from a function,
+but we will revisit quoting and further explore its implications in future
+concept exercises.
+
 ## Truthy and Falsy Values
 
 The last important thing to know for this exercise is that Common Lisp doesn't
