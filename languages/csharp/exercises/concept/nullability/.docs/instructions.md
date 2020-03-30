@@ -2,7 +2,7 @@ In this exercise you'll be writing code to helping printing name
 badges factory employees.
 
 Employees have a first and family name, and optionally a middle name
-family name. They are all printed on a single line on a plastic badge.
+family name. An employee's badge consists of a single line with the employee's first, middle and family name on it (in that order), with the name parts separated by a single space.
 
 For examle, if my name is `Ernest Johnny Payne`, it should appear as
 follows in my badge:
