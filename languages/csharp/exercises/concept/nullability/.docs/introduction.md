@@ -6,7 +6,7 @@ values.  For example, the following code snippet declares a variable
 int a = 5;
 ```
 
-Sometimes, we need to indicate that a variable has no specific value.s
+Sometimes, we need to indicate that a variable has no value.
 In C#, we can use the `null` literal to denote the abscence of a
 value.  A *nullable* type is a type that allow `null` values.  The
 operator `?` can be used to indicate that a type is nullable.
