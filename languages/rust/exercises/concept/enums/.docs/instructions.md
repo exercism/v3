@@ -28,3 +28,13 @@ And for `info`:
 info("Timezone changed")
 // Returns: "[INFO]: Timezone changed"
 ```
+
+Have fun!
+
+## further practice 
+
+There is a feature-gated test in this suite. Feature gates disable compilation entirely for certain sections of your program. They will be covered later. For now just know that there is a test which is only built and run when you use a special testing invocation:
+
+    cargo test --features add-a-variant
+
+This test is meant to show you how to add a variant to your enum.

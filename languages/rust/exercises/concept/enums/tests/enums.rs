@@ -40,3 +40,13 @@ fn log_emits_warning() {
 fn log_emits_error() {
     assert_eq!(log(LogLevel::Error, "Disk full"), "[ERROR]: Disk full");
 }
+
+#[test]
+#[cfg(feature = "add-a-variant")]
+fn add_a_variant() {
+    // this test won't even compile until the enum is complete, which is why it is feature-gated.
+    assert_eq!(
+        log(LogLevel::Debug, "reached line 123"),
+        "[DEBUG]: reached line 123",
+    );
+}
