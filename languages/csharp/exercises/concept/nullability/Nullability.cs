@@ -8,7 +8,7 @@ public static class Nullability
                                      string? LastName,
                                      int? fontSizePx)
     {
-        throw new NotImplementedException();
+        throw new NotImplementedException("Please implement the Badge.ComputeWidthPx method");
     }
 
 }
