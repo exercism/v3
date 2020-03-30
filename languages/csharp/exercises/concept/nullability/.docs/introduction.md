@@ -8,7 +8,7 @@ int a = 5;
 
 Sometimes, we need to indicate that a variable has no value.
 In C#, we can use the `null` literal to denote the abscence of a
-value.  A *nullable* type is a type that allow `null` values.  The
+value.  A *nullable* type is a type that allows `null` values.  The
 operator `?` can be used to indicate that a type is nullable.
 
 In the following example, we declare a variable `b` of type `int?`
