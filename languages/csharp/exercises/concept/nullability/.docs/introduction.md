@@ -7,6 +7,7 @@ In the following example, we declare a regular, non-nullable variable `a` of typ
 whose value is `5`:
 
 ```csharp
+int a = 4;
 int? b = 5;
 ```
 
