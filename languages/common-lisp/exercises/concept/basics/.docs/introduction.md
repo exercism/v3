@@ -30,7 +30,7 @@ Where the comment is being used to indicate what value is returned by Common Lis
 
 ## S-Expressions
 
-All Common Lisp code is made from S-Expressions (or sexpr for short). An S-Expression is either an atom or a list (also termed a "cons"). A cons is made up of two parts: the first element and the rest of the elements. For historical reasons these two parts are called the `car` and the `cdr`. When S-Expressions are evaluated as code, the first element (`car`) represents the function being called while the rest of the elements (`cdr`) represent the arguments to that function. In other words:
+All Common Lisp code is made from S-Expressions (or sexpr for short). An S-Expression is either an "atom" (a single, indivisible value) or a list (also termed a "cons"). A cons is made up of two parts: the first element and the rest of the elements. For historical reasons these two parts are called the `car` and the `cdr`. When S-Expressions are evaluated as code, the first element (`car`) represents the function being called while the rest of the elements (`cdr`) represent the arguments to that function. In other words:
 
 ```lisp
 (<function> <arg1> <arg2> ... <argN>)
@@ -71,7 +71,19 @@ Note that keywords are denoted by a leading colon (`:`).
 
 Given that all code in Common Lisp is composed of S-Expressions, what stops Lisp from trying to evaluate _everything_ in your program? Why didn't Lisp try to evaluate `'foo` from the `defun` example above? The answer comes in the form of "quoting".
 
-Quoting – the addition of `'` before an S-expression – tells Lisp to not evaluate that expression. By quoting `'foo`, we avoided Lisp attempting to look up (and failing to find) whatever `foo` was supposed to point to, instead, returning the value `'foo` itself.
+Quoting – the addition of `'` before an S-expression – tells Lisp to not evaluate that expression. By quoting `'foo`, we avoided Lisp attempting to look up (and failing to find) whatever `foo` was supposed to point to, instead, returning the value `'foo` itself. For example, if `foo` has not been defined anywhere in our program:
+
+```lisp
+foo  ; => <ERROR! Lisp doesn't know what foo points to!>
+'foo ; => 'foo
+```
+
+In the above example, quoting `foo` makes it look a lot like a keyword, but unlike keywords (which can only be symbols), all S-Expressions can be quoted:
+
+```lisp
+(gimme-foo)  ; => 'foo
+'(gimme-foo) ; => '(gimme-foo)
+```
 
 ## Truthy and Falsy Values
 
