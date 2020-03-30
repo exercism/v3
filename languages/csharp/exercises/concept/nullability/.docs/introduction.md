@@ -1,11 +1,3 @@
-Up to now, we saw how to declare variables and how to assign them to
-values.  For example, the following code snippet declares a variable
-`a` of type `int` whose value is `5`:
-
-```
-int a = 5;
-```
-
 Sometimes, we need to indicate that a variable has no value.
 In C#, we can use the `null` literal to denote the abscence of a
 value.  A *nullable* type is a type that allows `null` values.  The
