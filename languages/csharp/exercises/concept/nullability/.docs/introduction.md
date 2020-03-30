@@ -22,7 +22,7 @@ int? b = 5;
 contain an integer value, while `b` can be emptied:
 
 ```charp
-a = null; // invalid
+a = null; // Compile error as a is not nullable
 b = null; // Valid
 b = 6;    // Valid
 ```
