@@ -19,7 +19,7 @@ The initial breakdown of these concepts, including the ordering, is based on the
   - `/` always returns a [`Float`](../../../reference/types/floating_point_number.md)
   - `div` and `rem` for integer division and modulo
   - Binary, Octal, and Hex literal syntax
-  - Float literal syntax: 1.0 and 1.0e3
+  - Float literal syntax: `1.0` and `1.0e3`
   - `round/1` and `trunc/1`
   - `is_integer/1`, `is_float/1`, and `is_number/1`
 - [Booleans](../../../reference/types/boolean.md)
@@ -109,7 +109,24 @@ The initial breakdown of these concepts, including the ordering, is based on the
     - `<<x::binary-size(2), y::binary>> = <<0, 1, 2>>` uses `binary-size(2)` to match 2 bytes
     - `<<x, y::binary>> = "hello"` matches on strings since strings are binaries
     - `<<x::utf8, y::binary>> = "über"` uses `::utf8` match utf8 codepoints instead of a single byte
-- TODO resume at https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#charlists
+- Charlists
+  - list of integers where all the integers are valid code points
+  - common when interfacing with erlang; otherwise they are not idiomatic
+  - `to_charlist/1` and `to_string/1`
+- [Associative Data Structures](../../../reference/types/dictionary.md)
+  - Keyword lists
+    - list of tuples where the first item of the tuple (the key) is an atom
+    - special syntax: `[{:a, 1}, {:b, 2}] == [a: 1, b: 2]`
+    - keys may be duplicated; the first key's value is used
+    - elements are ordered, unlike maps
+    - when a keyword list is the last argument to a function, the brackets may be omitted
+    - primarily used to pass options to functions
+    - generally impractical to pattern match keyword lists as it depends on the order of the list
+    - has linear performance characteristics of lists
+    - `Keyword` module
+  - TODO resume from https://elixir-lang.org/getting-started/keywords-and-maps.html#maps
+  - Maps
+  - Nested data structures
 
 ### Other concepts
 
@@ -193,8 +210,6 @@ The initial breakdown of these concepts, including the ordering, is based on the
 
 #### Complex Types
 
-- Keyword Lists
-  - Role in function option gathering
 - Maps
 - Structs
 - Ranges
