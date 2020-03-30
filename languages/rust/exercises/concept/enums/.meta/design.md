@@ -29,7 +29,6 @@ The Concepts this exercise unlocks are:
 This exercise's prerequisites Concepts are:
 
 - `strings-basic`: log lines are `string` values.
-- `numbers-basic`: enum values are assigned a numeric value.
 - `conditionals-if`: used to handle the case when the enum could not be parsed.
 
 ## Representer
