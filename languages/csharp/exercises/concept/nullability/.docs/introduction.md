@@ -19,7 +19,7 @@ int? b = 5;
 ```
 
 `b` is nullable while `a` is not. That means that `a` must
-contain an integer value, while `b` can be emptied:
+contain an integer value, while `b` can also be set to `null`:
 
 ```charp
 a = null; // Compile error as a is not nullable
