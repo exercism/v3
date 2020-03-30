@@ -1,5 +1,5 @@
 In this exercise you'll be writing code to helping printing name
-badges for the employees on a factory.
+badges factory employees.
 
 On our system, people may have a first name, a middle name and a
 family name. They are all printed on a single line on a plastic badge.
@@ -27,4 +27,3 @@ PS 1: Notice that the spaces between words take space on the badge.
 PS 2: Let us assume that the three parametres are optional, i.e. an
 employee may have no first name, no middle name or no family name on
 the system.
-
