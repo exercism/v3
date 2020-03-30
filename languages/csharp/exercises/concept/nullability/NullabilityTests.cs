@@ -3,31 +3,31 @@ using Xunit;
 public class NullabilityTests
 {
     [Fact]
-    public void ComputeWidthPx() =>
-        Assert.Equal(7*12+5*12+3*12+2*12, Badge.ComputeWidthPx("Matilda", "Leana", "Cox", 12));
+    public void FullName() =>
+        Assert.Equal("Matilda Leana Cox", Badge.ComputeNameText("Matilda", "Leana", "Cox"));
 
     [Fact]
     public void MissingMiddleName() =>
-        Assert.Equal(7*12+3*12+12, Badge.ComputeWidthPx("Matilda", null, "Cox", 12));
+        Assert.Equal("Matilda Cox", Badge.ComputeNameText("Matilda", null, "Cox"));
 
     [Fact]
     public void OnlyFirstName() =>
-        Assert.Equal(7*12, Badge.ComputeWidthPx("Matilda", null, null, 12));
+        Assert.Equal("Matilda", Badge.ComputeNameText("Matilda", null, null));
 
     [Fact]
     public void OnlyLastName() =>
-        Assert.Equal(3*12, Badge.ComputeWidthPx(null, null, "Cox", 12));
+        Assert.Equal("Cox", Badge.ComputeNameText(null, null, "Cox"));
 
     [Fact]
-    public void DifferentFontSize() =>
-        Assert.Equal(3*17, Badge.ComputeWidthPx(null, null, "Cox", 17));
+    public void FontSize() =>
+        Assert.Equal(3*17, Badge.ComputeWidthPx("Cox", 17));
 
     [Fact]
     public void NothingToDisplay() =>
-        Assert.Equal(0, Badge.ComputeWidthPx(null, null, null, 17));
+        Assert.Equal(0, Badge.ComputeWidthPx(null, 17));
 
     [Fact]
     public void NoFontSize() =>
-        Assert.Equal(0, Badge.ComputeWidthPx("Matilda", null, null, null));
+        Assert.Equal(0, Badge.ComputeWidthPx("Matilda", null));
 
 }

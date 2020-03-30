@@ -16,15 +16,15 @@ The following reference documentation may help you finishing this exercice:
 [nullable-reference-types]: https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references
 [nullable-reference-types-tutorial]: https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/february/essential-net-csharp-8-0-and-nullable-reference-types
 
-# 1. Compute the width of each word separately
+# 1. ComputeNameText
 
-For each word:
+* Concatenate all parts of the name on a single string;
+* For each new concatenated part, decide if there is something to add the the output string;
+* For each new concatenated part, decide if you need to prepend a state or not.
 
-* Determine if it as an actual string or `null`;
+# 2. ComputeWidthPx
+
+* Determine if the text as an actual string or `null`;
 * Determine if there is an actual font size, or `null`;
-* Multiply the length of the string by the font size or `0`.
+* Multiply the length of the string (or 0) by the font size or `0`.
 
-
-# 2. Compute the number of spaces to be displayed between words
-
-Add the number of words multiplied by the font size to the final width.

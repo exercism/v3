@@ -2,20 +2,23 @@ using System;
 
 public static class Badge
 {
-
-    public static int ComputeWidthPx(string? FirstName,
-                                     string? MiddleName,
-                                     string? LastName,
+    public static int ComputeWidthPx(string? text,
                                      int? fontSizePx)
     {
-        var words = (FirstName==null?0:1)
-            + (MiddleName==null?0:1)
-            + (LastName==null?0:1);
 
-        return (FirstName??"").Length*(fontSizePx??0)
-            + (MiddleName??"").Length*(fontSizePx??0)
-            + (LastName??"").Length*(fontSizePx??0)
-            + (Math.Max(words-1, 0))*(fontSizePx??0);
+        return (text??"").Length*(fontSizePx??0);
     }
 
+    public static string ComputeNameText(string? firstName,
+                                         string? middleName,
+                                         string? familyName)
+    {
+        var output = "";
+
+        output += firstName ?? "";
+        output += middleName == null ? "" : (string.IsNullOrEmpty(output)?"":" ") + middleName;
+        output += familyName == null ? "" : (string.IsNullOrEmpty(output)?"":" ") + familyName;
+
+        return output;
+    }
 }
