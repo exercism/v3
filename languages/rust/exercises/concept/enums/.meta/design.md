@@ -14,7 +14,7 @@ After completing the exercise, the user should:
 
 ## Out of scope
 
-- Tuple enums.
+- Tuple and struct enums.
 - Generic enums.
 - Memory and performance characteristics.
 
