@@ -65,7 +65,7 @@ specify what changes to the representation should be applied and why.
 ## Inspiration
 
 When implementing an exercise, it can be very useful to look at
-already implemented Common Lisp exercises like [`sexpr`][sexpr].
+already implemented Common Lisp exercises like [`basics`][basics].
 
 You can also check the exercise's [general concepts
 documents][reference] to see if other languages have already
@@ -81,4 +81,4 @@ post them as comments in the exercise's GitHub issue.
 [concept-exercises]: ../exercises/concept/README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
 [reference]: ../../../reference
-[sexpr]: ../exercises/concept/sexpr
+[basics]: ../exercises/concept/basics
