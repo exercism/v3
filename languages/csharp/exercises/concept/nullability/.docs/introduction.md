@@ -23,7 +23,8 @@ contain an integer value, while `b` can be emptied:
 
 ```charp
 a = null; // invalid
-b = null; // valid!
+b = null; // Valid
+b = 6;    // Valid
 ```
 
 Null values are a convenience, but it comes with a price. A common
