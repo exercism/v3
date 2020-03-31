@@ -23,15 +23,6 @@ For Example:
 - 60 kilograms == 132.2772 ponds
 - 132.2772 pounds == 132 pounds 4 ounces
 
-To summarise the following properties must be implemented:
-- `WeighingMachine.InputWeight`
-- `WeighingMachine.DisplayWeight`
-- `WeighingMachine.Units`
-- `WeighingMachine.TareAdjustment`
-- `WeighingMachine.USDisplayWeight`
-- `USWeight.Pounds`
-- `USWeight.Ounces`
-
 You have 5 tasks each of which requires you to implement one or
 more properties:
 
