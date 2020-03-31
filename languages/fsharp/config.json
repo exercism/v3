@@ -42,6 +42,16 @@
         "uuid": "ef2df8b0-63a8-11ea-bc55-0242ac130003",
         "concepts": ["lists-basic"],
         "prerequisites": ["strings-basic"]
+      },
+      {
+        "slug": "recursion",
+        "uuid": "fad55806-69e9-11ea-bc55-0242ac130003",
+        "concepts": ["recursion-basic", "pattern-matching-lists"],
+        "prerequisites": [
+          "pattern-matching-basic",
+          "discriminated-unions-basic",
+          "integers-basic"
+        ]
       }
     ],
     "practice": []
