@@ -58,7 +58,7 @@ The hints should not spell out the solution, but instead point to a resource des
 
 Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
 
-## Step 5: update languages/javascript/config.json
+## Step 5: update languages/typescript/config.json
 
 An entry should be added to the track's `config.json` file for the new Concept Exercise:
 
