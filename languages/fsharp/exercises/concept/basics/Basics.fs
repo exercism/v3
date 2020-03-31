@@ -1,6 +1,5 @@
 module Basics
 
-
 // TODO: define the 'expectedMinutesInOven' binding
 
 // TODO: define the 'remainingMinutesInOven' function
