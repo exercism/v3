@@ -17,3 +17,17 @@ Users.WithStatus(Status.Active)
 For someone reading the code, the second (enum) version will be easier to comprehend.
 
 You should always consider using an enum whenever you want to model something as a boolean. Besides the aforementioned readability benefits, enums have another advantage over booleans: new values can always be added to an enum, whereas a boolean value will only ever be `true` or `false`. Using an enum is thus more future proof.
+
+Note that while one _can_ cast integer values to an enum, it is also possible to cast from an integer value that doesn't map to any enum value:
+
+```csharp
+public enum Status
+{
+    Inactive = 0,
+    Active = 1
+}
+
+Status status = (Status) 2;
+status == Status.Inactive; // False
+status == Status.Active;   // False
+```
