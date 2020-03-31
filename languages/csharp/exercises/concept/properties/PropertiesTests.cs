@@ -10,7 +10,8 @@ public class WeighingMachineTests
         wm.InputWeight = 60m;
         Assert.Equal(60m, wm.InputWeight, 3 );
     }
-    [Fact( Skip = "Remove to run test")]
+
+    [Fact(Skip = "Remove to run test")]
     public void Negative_weight_is_invalid()
     {
         var wm = new WeighingMachine();
