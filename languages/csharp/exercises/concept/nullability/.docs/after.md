@@ -2,20 +2,20 @@ Sometimes we need to make it so that variables have no particular
 value, i.e. they are empty.  In C#, this corresponds to the literal
 `null`. 
 
-In this exercice, we saw the definition of nullable types, and how the
+In this exercise, we saw the definition of nullable types, and how the
 compiler and runtime of C# help us dealing with `null` values.
 
 At compilation time, the operator `?` will declare a variable as being
-*nulable*. The compiler will then try to help us avoiding callig
+*nullable*. The compiler will then try to help us avoiding calling
 methods on possibly `null` variables, by raising warnings. You can use
 the operator `!` to avoid warnings in places we are sure a nullable
 variable is not null, but the compiler cannot detect it. Finally, we
 can use the operator `??` to provide a default value for a nullable
 variable.
 
-At execution time, we saw that if we try to call any method on a
-`null` value, the runtime raises a `NullReferenceException`
-exception. That is why it is important to always check if a variable
+At run time, calling any method or property on a
+`null` value throws a `NullReferenceException` exception.
+That is why it is important to always check if a nullable variable
 is `null` before calling methods on its value.
 
 # Important changes in C# 8.0
