@@ -1,6 +1,6 @@
 In this exercise you're going to write some code to help you cook a brilliant lasagna from your favorite cooking book.
 
-You have four tasks, all related to the time spent cooking the lasasgna.
+You have four tasks, all related to the time spent cooking the lasagna.
 
 ### 1. Define the expected oven time in minutes
 
@@ -23,11 +23,11 @@ lasagna.remaining_minutes_in_oven(30)
 
 ### 3. Calculate the preparation time in minutes
 
-Define the `Lasagna#preperation_time_in_minutes` method that takes the number of layers you added to the lasagna as a parameter and returns how many minutes you spent preparing the lasagna, assuming each layer takes you 2 minutes to prepare.
+Define the `Lasagna#preparation_time_in_minutes` method that takes the number of layers you added to the lasagna as a parameter and returns how many minutes you spent preparing the lasagna, assuming each layer takes you 2 minutes to prepare.
 
 ```ruby
 lasagna = Lasagna.new
-lasagna.preperation_time_in_minutes(2)
+lasagna.preparation_time_in_minutes(2)
 # => 4
 ```
 
