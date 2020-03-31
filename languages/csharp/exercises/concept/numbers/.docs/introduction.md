@@ -17,6 +17,8 @@ As an `int` has less precision than a `double`, converting from an `int` to a `d
 In this exercise you must conditionally execute logic. The most common way to do this in C# is by using an `if/else` statement:
 
 ```csharp
+int x = 6;
+
 if (x <= 5)
 {
     // Execute logic if x <= 5
