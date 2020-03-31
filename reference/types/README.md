@@ -26,6 +26,7 @@ To contribute, check the list below to see which documents have already been wri
 - [Dictionary](./dictionary.md)
 - [Double](./double.md)
 - [Duration](./duration.md)
+- [Enum](./enum.md)
 - [Error](./error.md)
 - [Floating-point number](./floating_point_number.md)
 - [Function](./function.md)
