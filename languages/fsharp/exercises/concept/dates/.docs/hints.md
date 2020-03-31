@@ -23,7 +23,7 @@
 ### 5. Return the anniversary date
 
 - Use one of the various `DateTime` [constructors][constructors] to create a new `DateTime` instance.
-- You can use one of the current date time`s [properties][properties] to get the current year.
+- You can use one of the current date time's [properties][properties] to get the current year.
 
 [parse]: https://docs.microsoft.com/en-us/dotnet/api/system.datetime.parse?view=netcore-3.1#System_DateTime_Parse_System_String_
 [operators]: https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=netcore-3.1#operators
