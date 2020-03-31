@@ -1,7 +1,6 @@
 In this exercise you'll be modelling a weighing machine.
 
-The weight (`InputWeigh`) can be set and retrieved in pounds or kilograms.  A negative
-value cannot be input.
+The weight can be set and retrieved in pounds or kilograms and cannot be negative.
 
 The weight can be displayed in SI units or US units
 , pounds and ounces.
