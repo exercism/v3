@@ -1,4 +1,4 @@
-In this exercise you'll be working on an appointment scheduler for a beauty salon in New York.
+In this exercise you'll be working on an appointment scheduler for a beauty salon in New York that opened on September 15th in 2012.
 
 You have four tasks, which will all involve appointment dates. The dates and times will use one of the following four formats:
 
@@ -43,4 +43,13 @@ Implement the `description` function that takes an appointment date and returns 
 ```fsharp
 description (DateTime(2019, 03, 29, 15, 0, 0))
 // => "You have an appointment on Friday 29 March 2019 at 15:00."
+```
+
+### 5. Return the anniversary date
+
+Implement the `anniversaryDate` function that returns this year's anniversary date, which is September 15th:
+
+```csharp
+anniversaryDate()
+// => DateTime(2019, 9, 15, 0, 0, 0)
 ```

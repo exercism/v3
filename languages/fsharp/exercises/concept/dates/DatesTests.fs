@@ -132,3 +132,7 @@ type AppointmentTests() =
     [<Fact(Skip = "Remove to run test")>]
     let ``Description on Wednesday morning``() =
         description (DateTime(2020, 9, 9, 9, 9, 9)) |> should equal "You have an appointment on 9/9/2020 9:09:09 AM."
+
+    [<Fact>]
+    let ``Anniversary date this year``() =
+        anniversaryDate () |> should equal (DateTime(DateTime.Now.Year, 9, 15))

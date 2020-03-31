@@ -19,7 +19,7 @@
         "slug": "dates",
         "uuid": "160d7d56-5a0e-11ea-8e2d-0242ac130003",
         "concepts": ["dates-basic", "time-basic"],
-        "prerequisites": ["numbers-basic", "strings-basic"]
+        "prerequisites": ["numbers-basic", "strings-basic", "classes-basic"]
       },
       {
         "slug": "numbers",
