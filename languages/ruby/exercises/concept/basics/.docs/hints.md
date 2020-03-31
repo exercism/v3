@@ -4,7 +4,7 @@
 
 ### 2. Calculate the remaining oven time in minutes
 
-- You need to define a [method][methods] with a single parameter for the acutal time so far.
+- You need to define a [method][methods] with a single parameter for the actual time so far.
 - You can [implicitly return an integer][return] from the method.
 - You can use the [mathematical operator for subtraction][operators] to subtract values.
 
