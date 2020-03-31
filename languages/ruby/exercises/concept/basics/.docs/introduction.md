@@ -8,7 +8,7 @@ my_first_variable = "Some string"
 my_first_variable = SomeComplexObject.new
 ```
 
-Constants, however, can only be assigned once. The must start with captial letters and are normally written in block capitals with words seperated by underscores. For example:
+Constants, however, can only be assigned once. The must start with capital letters and are normally written in block capitals with words separated by underscores. For example:
 
 ```ruby
 MY_FIRST_CONSTANT = 10
