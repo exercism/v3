@@ -22,7 +22,6 @@ languages
                 ├── .meta
                 │   ├── config.json
                 │   ├── design.md
-                │   ├── example.c
                 │   └── example.c
                 ├── src
                 │   ├── &lt;NAME&gt;.c
