@@ -16,13 +16,13 @@ The following reference documentation may help you finishing this exercice:
 [nullable-reference-types]: https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references
 [nullable-reference-types-tutorial]: https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/february/essential-net-csharp-8-0-and-nullable-reference-types
 
-# 1. ComputeNameText
+# 1. Badge.Label
 
 * Concatenate all parts of the name on a single string;
 * For each new concatenated part, decide if there is something to add the the output string;
 * For each new concatenated part, decide if you need to prepend a state or not.
 
-# 2. ComputeWidthPx
+# 2. Badge.WithInPixels
 
 * Determine if the text as an actual string or `null`;
 * Determine if there is an actual font size, or `null`;

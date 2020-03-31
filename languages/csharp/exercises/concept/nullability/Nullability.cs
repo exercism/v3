@@ -9,8 +9,8 @@ public static class Badge
     }
 
     public static string Label(string? firstName,
-                                         string? middleName,
-                                         string? familyName)
+                               string? middleName,
+                               string? familyName)
     {
         throw new NotImplementedException("Please implement the Badge.ComputeNameText method");
     }
