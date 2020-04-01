@@ -47,9 +47,10 @@ This exercise calculates interest on savings accounts. The reference implementat
 
 #### Implementations
 
-| Track | Exercise                                                         | Changes |
-| ----- | ---------------------------------------------------------------- | ------- |
-| C#    | [numbers-floating-point][implementation-csharp-savings-accounts] | None    |
+| Track | Exercise                                                         | Changes                                                                                               |
+| ----- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| C#    | [numbers-floating-point][implementation-csharp-savings-accounts] | None                                                                                                  |
+| F#    | [numbers-floating-point][implementation-fsharp-savings-accounts] | Replaced third task that used while loop with task that uses an `int`/`double`/`decimal` combination. |
 
 [type-bit]: ./bit.md
 [type-double]: ./double.md
@@ -59,3 +60,4 @@ This exercise calculates interest on savings accounts. The reference implementat
 [implementation-csharp-production-line]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md
 [implementation-fsharp-production-line]: ../../languages/fsharp/exercises/concept/numbers/.docs/introduction.md
 [implementation-csharp-savings-accounts]: ../../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
+[implementation-fsharp-savings-accounts]: ../../languages/fsharp/exercises/concept/numbers-floating-point/.docs/introduction.md
