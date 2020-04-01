@@ -19,7 +19,12 @@
       {
         "slug": "basics",
         "uuid": "71ae39c4-7364-11ea-bc55-0242ac130003",
-        "concepts": ["basics"],
+        "concepts": [
+          "variables-basic",
+          "methods-basic",
+          "integers-basic",
+          "constants-basic"
+        ],
         "prerequisites": []
       }
     ],
