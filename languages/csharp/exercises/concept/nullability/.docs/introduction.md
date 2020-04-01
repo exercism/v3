@@ -17,6 +17,8 @@ int? b = 5;
 
 ```csharp
 a = null; // Compile error as a is not nullable
+a = 5;    // Valid
+
 b = null; // Valid
 b = 6;    // Valid
 ```
