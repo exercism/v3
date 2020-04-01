@@ -22,7 +22,7 @@ The goal of this exercise is to teach the student the basics of programming in R
 
 - Memory and performance characteristics.
 - Method overloads.
-- Lambda's.
+- Lambdas.
 - Optional parameters.
 - Organizing methods in namespaces.
 - Visibility.
@@ -50,4 +50,3 @@ This exercise does not require any specific logic to be added to the [analyzer][
 
 [analyzer]: https://github.com/exercism/ruby-analyzer
 [representer]: https://github.com/exercism/ruby-representer
-
