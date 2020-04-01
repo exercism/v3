@@ -11,7 +11,7 @@ any programmatic operation available to the class can be executed.
 
 Properties have access modifiers (`public`, `private` etc.) in the same way as other
 class members but the set accessor may have an access level independent of the retrieve (get)
-accessor and vice versa or either accessor may be dispensed with completely.
+accessor and vice versa. A property doesn't have to have both accessors, it can have just one (either get or set).
 
 The basic syntax to express properties can take two forms:
 
