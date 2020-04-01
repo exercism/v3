@@ -10,10 +10,21 @@
   "exercises": {
     "concept": [
       {
+        "slug": "basics",
+        "uuid": "7d358894-4fbd-4c91-b49f-d68f1c5aa6bc",
+        "concepts": [
+          "variables-basic",
+          "methods-basic",
+          "integers-basic",
+          "comments-basic"
+        ],
+        "prerequisites": []
+      },
+      {
         "slug": "strings",
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
         "concepts": ["strings-basic"],
-        "prerequisites": []
+        "prerequisites": ["methods-basic"]
       },
       {
         "slug": "numbers-floating-point",
@@ -31,7 +42,8 @@
         "concepts": [
           "numbers-basic",
           "type-conversion-numbers",
-          "conditionals-if"
+          "conditionals-if",
+          "methods-basic"
         ],
         "prerequisites": []
       },
