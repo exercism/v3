@@ -538,3 +538,181 @@ These will very rarely be encountered in the wild, the first because it's more o
 [variables]: ../../../reference/concepts/variables.md
 [while-loops]: ./concepts/while_loops.md
 [zen-of-python]: ./concepts/zen_of_python.md
+
+## Implementations  
+
+
+| Concept Name | Issue Link | PR Link |
+|--------------|:----------:|--------:|
+| [and][keyword-and] | [ ]() | [ ]() |
+| [Anonymous functions][anonymous-functions-general] `functional`| [ ]() | [ ]() |
+| [Arithmetic][arithmetic-general]| [ ]() | [ ]() |
+| [`*args`][star-args] | [ ]() | [ ]() |
+| [Arguments & Parameters][arguments-and-parameters]| [ ]() | [ ]() |
+| [Argument unpacking][argument-unpacking]| [ ]() | [ ]() |
+|[as][keyword-as]|[ ]() | [ ]() |
+|[assert][keyword-assert]|[ ]() | [ ]() |
+| [Assignment][assignment] | [ ]() | [ ]() |
+| [Binary numbers][binary-numbers]| [ ]() | [ ]() |
+| [bitflags][bitflags]| [ ]() | [ ]() |
+| [Bitwise manipulation][bitwise-manipulation-general]| [ ]() | [ ]() |
+| [Bitwise operators][bitwise-operators]| [ ]() | [ ]() |
+| [bool][builtin-types-bool] `basic`|  [#1030](https://github.com/exercism/v3/issues/1030)         |         |
+| [Boolean logic][boolean-logic-general]| [ ]() | [ ]() |
+| [Boolean operators][boolean-operators]| [ ]() | [ ]() |
+| [Boolean values][boolean-values]| [ ]() | [ ]() |
+| [Booleans are integers][booleans-are-integers]| [ ]() | [ ]() |
+| [Bracket notation][bracket-notation] | [ ]() | [ ]() |
+| [break][keyword-break] | [ ]() | [ ]() |
+| [bytearray][builtin-types-bytearray] `intermediate`| [ ]() | [ ]() |
+| [bytes][builtin-types-bytes] `intermediate`| [ ]() | [ ]() |
+| [Call semantics][call-semantics]| [ ]() | [ ]() |
+| [Class][keyword-class] | [ ]() | [ ]() |
+| [Classes][classes-general] | [ ]() | [ ]() |
+| [Class Composition][class-composition] | [ ]() | [ ]() |
+| [Class Inheritance][class-inheritance] | [ ]() | [ ]() | 
+| [Class members][class-members]| [ ]() | [ ]() |
+| [Class methods][class-methods]| [ ]() | [ ]() |
+| [Comments][comments-general]| [ ]() | [ ]() |
+| [Comparison operators][comparison-operators]| [ ]() | [ ]() |
+| [complex][builtin-types-complex] `intermediate` | [ ]() | [ ]() |
+| [Composition][composition-general] | [ ]() | [ ]() |
+| [Comprehension Syntax][comprehension-syntax]| [ ]() | [ ]() |
+| [Conditionals][conditionals-general] | [ ]() | [ ]() |
+| [Constructor][constructor] | [ ]() | [ ]() |
+| [Conditional structures][conditional-structures] | [ ]() | [ ]() |
+| [Constants][constants] | [ ]() | [ ]() |
+|[continue][keyword-continue]| [ ]() | [ ]() |
+| [Custom Classes][custom-classes] | [ ]() | [ ]() |
+| [decorators][decorators] `functional` | [ ]() | [ ]() |
+| [def][keyword-def] | [ ]() | [ ]() |
+| [Default arguments][default-arguments] | [ ]() | [ ]() |
+|[del][keyword-del] |  [ ]() | [ ]() |
+| [dict][builtin-types-dict] `basic`|   [#877](https://github.com/exercism/v3/issues/877)  |         |
+| [Dict comprehension][dict-comprehension] |  [ ]() | [ ]() |
+| [Docstrings][docstrings] |  [ ]() | [ ]() |
+| [Duck Typing][duck-typing] |  [ ]() | [ ]() |
+| [Dynamic Typing][dynamic-typing] |  [ ]() | [ ]() |
+|[elif][keyword-elif]| [ ]() | [ ]() |
+|[else][keyword-else]| [ ]() | [ ]() |
+|[Encapsulation][encapsulation-general]| [ ]() | [ ]() |
+|[Enumeration][enumeration]| [ ]() | [ ]() |
+|[Enumerated values][enumerated-values]| [ ]() | [ ]() |
+| [Equality operator][equality-operator] | [ ]() | [ ]() |
+| [Equivalence][equivalence] | [ ]() | [ ]() | 
+| [Everything-is-an-object][everything-is-an-object] |  [ ]() | [ ]() | 
+| [except][keyword-except] | [ ]() | [ ]() | 
+| [Exceptions][exceptions-general]| [ ]() | [ ]() | 
+| [Exception catching][exception-catching] | [ ]() | [ ]() | 
+| [Exception handling][exception-handling]| [ ]() | [ ]() | 
+| [Exception hierarchy][exception-hierarchy]| [ ]() | [ ]() | 
+| [Exception message][exception-message]| [ ]() | [ ]() | 
+|[Exiting loops][]| [ ]() | [ ]() | 
+| [Expressions][expressions] | [ ]() | [ ]() | 
+| [False][keyword-false] | [ ]() | [ ]() | 
+| [filter][builtin-functions-filter] `functional` |  []() | []() | 
+| [finally][keyword-false] | [ ]() | [ ]() | 
+| [float][builtin-types-float]`basic`|   [#1026](https://github.com/exercism/v3/issues/1026)         |         |
+| [for][keyword-for] | [ ]() | [ ]() | 
+| [for loops][for-loops] | [ ]() | [ ]() | 
+| [frozenset][builtin-types-frozenset] `intermediate`| [ ]() | [ ]() |
+| [from][keyword-from] | [ ]() | [ ]() | 
+| [Functions][functions-general] | [ ]() | [ ]() | 
+| [Function Definition][function-definition] | [ ]() | [ ]() | 
+|[Function Signature][function-signature] | [ ]() | [ ]() | 
+|[Generators comprehension][generator-comprehension]| [ ]() | [ ]() |
+|[Generators][generators]| [ ]() | [ ]() |
+| [global][keyword-global] | [ ]() | [ ]() |
+| [Higher-order functions][higher-order-functions] `functional` | [ ]() | [ ]() |
+| [Identity testing][identity-testing]| [ ]() | [ ]() |
+| [if][keyword-if] | [ ]() | [ ]() |
+| [Immutability][immutability] `functional` | [ ]() | [ ]() |
+| [Immutability in Python][immutability] | [ ]() | [ ]() |
+| [implicit self][implicit-self] | [ ]() | [ ]() |
+| [importing][importing] | [ ]() | [ ]() |
+| [in][keyword-in] | [ ]() | [ ]() |
+| [Indexing][indexing] | [ ]() | [ ]() |
+| [Inequality][inequality] | [ ]() | [ ]() | 
+| [Inheritance][inheritance-general] | [ ]() | [ ]() | 
+| [Instance Attributes][instance-attributes] | [ ]() | [ ]() | 
+| [Instance Methods][instance-methods] | [ ]() | [ ]() | 
+| [Instance Properties][instance-properties] | [ ]() | [ ]() | 
+| [Instantiation][instantiation] | [ ]() | [ ]() | 
+| [Initialization][initialization] | [ ]() | [ ]() | 
+| [int][builtin-types-int] `basic`|   [#1025](https://github.com/exercism/v3/issues/1025)         |         |
+| [Integer comparison][integer-comparison]| [ ]() | [ ]() |
+| [Interfaces][integer-comparison] | [ ]() | [ ]() |
+| [Iterators][iterators] | [ ]() | [ ]() |
+| [Iterables][iterables] | [ ]() | [ ]() |
+| [Iteration][iteration] | [ ]() | [ ]() |
+| [is][keyword-is] | [ ]() | [ ]() |
+| [Keyword parameters][keyword-parameters]| [ ]() | [ ]() |
+| [Keyword-only parameters][keyword-only-parameters]| [ ]() | [ ]() |
+|[`**kwargs`][star-star-kwargs] | [ ]() | [ ]() |
+| [lambda][keyword-lambda] `intermediate`|   [ ]()         |         |
+| [list][builtin-types-list] `basic`|   [#859] (https://github.com/exercism/v3/issues/859)        |         |
+| [list comprehension][list-comprehension] | [ ]() | [ ]() |
+| [list methods][list-methods] `basic`| [ ]() | [ ]() |
+| [Lookup efficiency][lookup-efficiency] | [ ]() | [ ]() |
+| [Loops][loops-general] | [ ]() | [ ]() |
+| [map][builtin-functions-map] `functional`| [ ]() | [ ]() |
+| [Membership testing][membership-testing] | [ ]() | [ ]() |
+| [memoryview][builtin-types-memoryview] `advanced`| [ ]() | [ ]() |
+| [Methods][class-methods] | [ ]() | [ ]() |
+| [Modular Division][modular-division]| [ ]() | [ ]() |
+|  [Multiple assignment][multiple-assignment] | [ ]() | [ ]() |
+|  [Mutation][mutation-general] | [ ]() | [ ]() |
+|  [Mutability in Python][mutability]| [ ]() | [ ]() |
+| [Namespaces][namespaces]| [ ]() | [ ]() |
+| [Nested functions][nested-functions]`functional`| [ ]() | [ ]() |
+| [nonlocal][keyword-nonlocal] | [ ]() | [ ]() |
+| [Non-Public Methods][non-public-methods]| [ ]() | [ ]() |
+|  [None][keyword-none]|   [#1031](https://github.com/exercism/v3/issues/1031)         |         |
+| [not][keyword-not]| [ ]() | [ ]() | 
+| [object][builtin-types-object] `OOP`| [ ]() | [ ]() |
+| [Operators][operators] | [ ]() | [ ]() | 
+| [Operator overloading][operator-overloading] | [ ]() | [ ]() | 
+| [Operator precedence][operator-precedence] | [ ]() | [ ]() | 
+| [or][keyword-or] | [ ]() | [ ]() |
+| [Order of Evaluation][order-of-evaluation]| [ ]() | [ ]() |
+| [Partial application][partial-application] `functional`| [ ]() | [ ]() |
+| [pass][keyword-pass]| [ ]() | [ ]() |
+| [Polymorphism][polymorphism-general]| [ ]() | [ ]() |
+| [Positional parameters][positional-parameters] | [ ]() | [ ]() |
+| [Positional-only parameters][positional-only-parameters] | [ ]() | [ ]() |
+| [Powers of Two][powers-of-two]| [ ]() | [ ]() |
+| [property][builtin-types-property] `OOP`| [ ]() | [ ]() |
+| [Property Decorator][property-decorator]| [ ]() | [ ]() |
+| [raise][raise]| [ ]() | [ ]() |
+|[range][builtin-types-range] `bsic`| [ ]() | [ ]() |
+|[recursion][recursion] `functional`| [ ]() | [ ]() |
+|[Recursive data structures][recursive-data-structures] | [ ]() | [ ]() |
+|[Regular Expressions][regular-expressions] | [ ]() | [ ]() |
+|[return][keyword-return]| [ ]() | [ ]() |
+|[Return Values][return-value]| [ ]() | [ ]() |
+| [Rich comparison methods][rich-comparison-methods] | [ ]() | [ ]() | 
+|[Scope][scope]| [ ]() | [ ]() |
+| [set][builtin-types-set] `basic` | [ ]() | [ ]() | 
+|  [Set comprehension][set-comprehension] |  [ ]()  |  [ ]()  | 
+| [slice][builtin-types-slice] `advanced`| [ ]() | [ ]() |
+| [Slicing][slicing]| [ ]() | [ ]() |
+| [Short circuiting][short-circuiting]| [ ]() | [ ]() |
+|[State][state] | [ ]() | [ ]() |
+| [Static Methods][static-methods] | [ ]() | [ ]() |
+|[str][builtin-types-str] `basic` | []() | [#824](https://github.com/exercism/v3/pull/824)|
+| [String formatting][string-formatting] `basic`| [ ]() | [ ]() |
+| [String methods][string-methods] `basic`| [ ]() | [ ]() |
+| [String splitting][string-splitting] `basic`| [ ]() | [ ]() |
+| [String translation][string-translation] `basic`| [ ]() | [ ]() |
+| [True][keyword-true]| [ ]() | [ ]() |
+| [try][keyword-try]| [ ]() | [ ]() |
+|[tuple][builtin-types-tuple] `basic`| [ ]() | [ ]() |
+|[Tuple unpacking][tuple-unpacking]| [ ]() | [ ]() |
+| [type][builtin-types-type] `OOP`| [ ]() | [ ]() |
+| [type conversion][type-conversion] `basic`| [ ]() | [ ]() |
+| [Type hinting][type-hinting] | [ ]() | [ ]() |
+| [ [Variables]] [variables] | [ ]() | [ ]() |
+| [while loops][while-loops] | [ ]() | [ ]() |
+| [while][keyword-while] | [ ]() | [ ]() |
+| [with][keyword-with] | [ ]() | [ ]() |
+| [yield][keyword-yield] | [ ]() | [ ]() |
