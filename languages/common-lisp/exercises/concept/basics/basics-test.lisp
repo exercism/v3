@@ -1,20 +1,16 @@
 (load "basics.lisp")
 (ql:quickload :fiveam)
-(defpackage #:basics-test
+(defpackage basics-test
   (:use :cl :fiveam :basics)
   (:export :run-tests))
-(in-package :basics-test)
+(in-package basics-test)
 
 (def-suite basics-suite)
 (in-suite basics-suite)
 
 (test symbols
-  (is (eq (basics:gimme-bar-symbol) 'basics::bar))
-  (is (eq (basics:gimme-baz-keyword) :baz)))
-
-(test true-and-false
-  (is-true (basics:speak-the-truth))
-  (is-false (basics:lie-to-me)))
+  (is (eq (basics:lennys-favorite-food) 'BASICS::LASAGNA))
+  (is (eq (basics:lennys-secret-keyword) :ALIENS-ARE-REAL)))
 
 (test atoms
   (is-true (basics:is-an-atom-p 5))
