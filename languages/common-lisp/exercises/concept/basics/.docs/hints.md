@@ -4,11 +4,6 @@ If you are having trouble returning a symbol from a function, you might need to
 add a quote (`'`)! Recall that keywords are slightly different from regular
 symbols, and must be preceded by a colon (`:`).
 
-## Truthy and Falsy Values
-
-Recall that there is no single "true" and "false" in Common Lisp; rather, the
-values: `nil` and `'()` are false and _all_ other values are true.
-
 ## S-Expressions
 
 Common Lisp contains predicate functions for determining many things. In

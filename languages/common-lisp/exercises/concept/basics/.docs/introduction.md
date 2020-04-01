@@ -66,7 +66,7 @@ arguments):
 Lisp evaluates this to:
 
 ```lisp
-'foo
+FOO
 ```
 
 Functions and the use of `defun` will be discussed in much greater detail in
@@ -75,15 +75,16 @@ later concept exercises.
 ## Symbols and Quoting
 
 There are a couple of things to explain regarding the example above; for
-example, what is `foo`? The _symbol_ `foo` is an example of an atom, as it only
-has one "part" (unlike a cons which has two). Symbols in Lisp are special names
-that can point to other values or, in the case of _keywords_, themselves. When
-symbols are evaluated by Lisp, they are replaced with the values they point
-to. For example:
+example, what is `FOO`? The _symbol_ `FOO` is an example of an atom, as it only
+has one "part" (unlike a cons which has two). As you may have noticed, most of
+Common Lisp is **case-insensitive**, so most symbols are returned as all
+uppercase. Symbols in Lisp are special names that can point to other values or,
+in the case of _keywords_, themselves. When symbols are evaluated by Lisp, they
+are replaced with the values they point to. For example:
 
 ```lisp
 foo  ; => <whatever-foo-points-to>
-:foo ; => :foo
+:foo ; => :FOO
 
 ```
 
@@ -96,31 +97,26 @@ evaluate `'foo` from the `defun` example above? The answer comes in the form of
 
 Quoting – the addition of `'` before an S-expression – tells Lisp to not
 evaluate that expression. By quoting `'foo`, we avoided Lisp attempting to look
-up (and failing to find) whatever `foo` was supposed to point to, instead,
-returning the value `'foo` itself. For example, if `foo` has not been defined
+up (and failing to find) whatever `FOO` was supposed to point to, instead,
+returning the value `FOO` itself. For example, if `FOO` has not been defined
 anywhere in our program:
 
 ```lisp
 foo  ; => <ERROR! Lisp doesn't know what foo points to!>
-'foo ; => 'foo
+'foo ; => FOO
 ```
 
-In the above example, quoting `foo` makes it look a lot like a keyword, but
+In the above example, quoting `FOO` makes it look a lot like a keyword, but
 unlike keywords (which can only be symbols), all S-Expressions can be quoted:
 
 ```lisp
-(gimme-foo)  ; => 'foo
-'(gimme-foo) ; => '(gimme-foo)
+;; This line is evaluated as code
+(gimme-foo)  ; => FOO
+
+;; This line is treated as data
+'(gimme-foo) ; => (GIMME-FOO)
 ```
 
 For now, you can consider this just as a way to return symbols from a function,
 but we will revisit quoting and further explore its implications in future
 concept exercises.
-
-## Truthy and Falsy Values
-
-The last important thing to know for this exercise is that Common Lisp doesn't
-have a special boolean type for expressing "true" and "false"; rather, the
-special symbol `nil` and the empty list / cons `'()` are regarded as "false"
-values and all other values are "true". Conventionally, however, functions in
-Common Lisp will return the symbols `nil` for false and `t` for true.

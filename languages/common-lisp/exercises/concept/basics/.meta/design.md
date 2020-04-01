@@ -1,17 +1,16 @@
-This issue describes how to implement the `basics` concept exercise for the
+This document describes how to implement the `basics` concept exercise for the
 Common Lisp track.
 
 ## Goal
 
 The goal for this exercise is to get the student familiar with the basics of
-comments, s-expressions, cons, symbols, and "truth" in Common Lisp.
+comments, s-expressions, cons, and symbols in Common Lisp.
 
 That is to say:
 
 - That all s-expressions are either atoms or cons pairs
-- Comments begin with a variable number of `;`
-- Symbols are simple values that can refer to other values or themselves
-- In Common Lisp, `nil` and `'()` are "false", while all other values are "true"
+- Comments begin with a variable number of `;` (or between `#|` and `|#`)
+- Symbols are simple values that can refer to either other values or themselves
 
 We will teach the basics of s-expressions via the use of `atom` and `consp`
 along with `car` and `cdr` (with additional tests showing that `first` and
@@ -27,7 +26,6 @@ along with `car` and `cdr` (with additional tests showing that `first` and
   returned
 - Know how to write comments and some of the conventions regarding their usage
 - Understand the basics of symbols, keywords, and quoting
-- Understand which values are "false" and which are "true"
 
 ## Out of scope
 
@@ -45,7 +43,6 @@ along with `car` and `cdr` (with additional tests showing that `first` and
 - `expressions`
 - `cons.basic`
 - `symbols`
-- `truthy-and-falsy`
 
 ## Prerequisites
 
