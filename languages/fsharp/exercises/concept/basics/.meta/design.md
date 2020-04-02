@@ -43,11 +43,7 @@ The goal of this exercise is to teach the student the basics of programming in [
 
 The Concepts this exercise unlocks are:
 
-- `bindings-basic`: know what a value is; know how to define a binding; know that bindings are immutable; know how to define scope using significant whitespace; know that bindings require dependency order.
-- `functions-basic`: know how to define a function; know how to return a value from a function; know how to call a function.
-- `type-inference-basic`: know what type inference is; know how type inference works for bindings.
-- `integers-basic`: know how to define an integer; know how to use mathematical operators on integers.
-- `comments-basic`: Know how to define single- and multiline comments.
+- `basics`: know what a value is; know how to define a binding; know that bindings are immutable; know how to define scope using significant whitespace; know that bindings require dependency order; know how to define a function; know how to return a value from a function; know how to call a function; know what type inference is; know how type inference works for bindings; know how to define an integer; know how to use mathematical operators on integers; Know how to define single- and multiline comments.
 
 ## Prequisites
 
