@@ -59,5 +59,5 @@ This exercise calculates interest on savings accounts. The reference implementat
 [wiki-ieee754]: https://en.wikipedia.org/wiki/IEEE_754
 [implementation-csharp-production-line]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md
 [implementation-fsharp-production-line]: ../../languages/fsharp/exercises/concept/numbers/.docs/introduction.md
-[implementation-csharp-savings-accounts]: ../../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
+[implementation-csharp-savings-accounts]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/introduction.md
 [implementation-fsharp-savings-accounts]: ../../languages/fsharp/exercises/concept/floating-point-numbers/.docs/introduction.md
