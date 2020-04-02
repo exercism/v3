@@ -9,8 +9,10 @@
 (in-suite basics-suite)
 
 (test symbols
-  (is (eq (basics:lennys-favorite-food) 'BASICS::LASAGNA))
-  (is (eq (basics:lennys-secret-keyword) :ALIENS-ARE-REAL)))
+  (is-true (symbolp (basics:lennys-favorite-food)))
+  (is-false (keywordp (basics:lennys-favorite-food)))
+
+  (is-true (keywordp (basics:lennys-secret-keyword))))
 
 (test atoms
   (is-true (basics:is-an-atom-p 5))
