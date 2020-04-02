@@ -6,21 +6,17 @@ The Concept Exercises are based on this [list of concepts][reference-shared].
 
 These are the Concept Exercises that have currently been implemented, as well as the Concepts they teach and their prerequisite concepts:
 
-| exercise                                                            | concepts                                                            | prerequisites                                                                  |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| [`basics`][concept-exercise-basics]                                 | `basics`                                                            |
-| [`booleans`][concept-exercise-booleans]                             | `booleans-basic`                                                    |                                                                                |
-| [`dates`][concept-exercise-dates]                                   | `dates-basic`<br/>`time-basic`                                      | `numbers-basic`<br/>`strings-basic`                                            |
-| [`discriminated-unions`][concept-exercise-discriminated-unions]     | `discriminated-unions-basic`<br/>`pattern-matching-basic`           | `functions-basic`<br/>`integers-basic`                                         |
-| [`lists`][concept-exercise-lists]                                   | `lists-basic`                                                       | `strings-basic`                                                                |
-| [`numbers`][concept-exercise-numbers]                               | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if` | -                                                                              |
-| [`numbers-floating-point`][concept-exercise-numbers-floating-point] | `numbers-floating-point`                                            | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if`            | - |
-| [`recursion`][concept-exercise-recursion]                           | `recursion-basic`<br/>`pattern-matching-lists`                      | `pattern-matching-basic`<br/>`discriminated-unions-basic`<br/>`integers-basic` |
-| [`strings`][concept-exercise-strings]                               | `strings-basic`                                                     | -                                                                              |
-
-**⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse. For example, the `numbers` exercise only teaches basic number usage, and the `numbers-floating-point` exercise builds on that and digs deeper into floating-point numbers.
-
-It's only important that it's reasonably easy to _find_ the exercise. It's okay if the name isn't perfect. We **will** iterate on this.
+| exercise                                                            | concepts                                            | prerequisites                                 |
+| ------------------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------- |
+| [`basics`][concept-exercise-basics]                                 | `basics`                                            |
+| [`booleans`][concept-exercise-booleans]                             | `booleans`                                          | `basics`                                      |
+| [`dates`][concept-exercise-dates]                                   | `datetimes`                                         | `numbers`<br/>`strings`<br/>`classes`         |
+| [`discriminated-unions`][concept-exercise-discriminated-unions]     | `discriminated-unions`<br/>`pattern-matching-basic` | `basics`                                      |
+| [`lists`][concept-exercise-lists]                                   | `lists`                                             | `strings`                                     |
+| [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`                        | `basics`                                      |
+| [`numbers-floating-point`][concept-exercise-numbers-floating-point] | `floating-point-numbers`                            | `numbers`<br/>`conditionals`                  |
+| [`recursion`][concept-exercise-recursion]                           | `recursion`<br/>`pattern-matching-lists`            | `pattern-matching`<br/>`discriminated-unions` |
+| [`strings`][concept-exercise-strings]                               | `strings`                                           | `basics`                                      |
 
 ## TODO
 
