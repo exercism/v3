@@ -1,4 +1,4 @@
-# How to implement a TypeScript Concept Exercise
+# How to implement a Java Concept Exercise
 
 This document describes how to implement a Concept Exercise for the Java track. As this document is generic, the following placeholders are used:
 
@@ -35,15 +35,15 @@ languages
                             └── main
                                 └── java
                                     └── &lt;slug&gt;.java
-                    ├── &lt;slug&gt;
-                        |── build.gradle
-                        └── src
-                            └── main
-                                └── java
-                                    └── &lt;slug&gt;.java
-                            └── test
-                                └── java
-                                    └── &lt;slug&gt;Test.java
+                ├── &lt;slug&gt;
+                    |── build.gradle
+                    └── src
+                        └── main
+                            └── java
+                                └── &lt;slug&gt;.java
+                        └── test
+                            └── java
+                                └── &lt;slug&gt;Test.java
 </pre>
 
 ## Step 1: add .docs/introduction.md
@@ -68,7 +68,7 @@ The hints should not spell out the solution, but instead point to a resource des
 
 Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
 
-## Step 5: update languages/javascript/config.json
+## Step 5: update languages/java/config.json
 
 An entry should be added to the track's `config.json` file for the new Concept Exercise:
 
@@ -97,9 +97,9 @@ The configuration files may be copied from another exercise. We aim to keep thes
 
 Now create the following three files:
 
-- `<slug>.java`. the stub implementation file, which is the starting point for students to work on the exercise.
-- `<slug>Test.java`: the test suite.
-- `example.java`: an example implementation that passes all the tests.
+- `src/main/java/<slug>.java`. the stub implementation file, which is the starting point for students to work on the exercise.
+- `/src/test/java/<slug>Test.java`: the test suite.
+- `.meta/example/src/main/java/<slug>.java`: an example implementation that passes all the tests.
 
 ## Step 7: add analyzer (optional)
 
@@ -123,7 +123,7 @@ When implementing an exercise, it can be very useful to look at the exercises th
 
 ## Inspiration
 
-When implementing an exercise, it can be very useful to look at already implemented Java exercises like the [strings][concept-exercise-strings] or [numbers][concept-exercise-numbers] exercises. You can also check the exercise's [general concepts documents][reference] to see if other languages have already implemented an exercise for that Concept.
+When implementing an exercise, it can be very useful to look at already implemented Java exercises like the strings or numbers exercises. You can also check the exercise's [general concepts documents][reference] to see if other languages have already implemented an exercise for that Concept.
 
 ## Help
 
@@ -133,6 +133,4 @@ If you have any questions regarding implementing the exercise, please post them 
 [representer]: https://github.com/exercism/java-representer
 [concept-exercises]: ../exercises/concept/README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
-[concept-exercise-strings]: ../exercises/concept/strings/
-[concept-exercise-numbers]: ../exercises/concept/numbers/
 [reference]: ../../../reference/README.md
