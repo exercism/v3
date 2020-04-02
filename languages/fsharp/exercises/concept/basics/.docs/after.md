@@ -57,6 +57,16 @@ let multiplyPlusTwo x y =
 // here would result in a compile error
 ```
 
+F# bindings (which include functions) are usually organized in modules. A module groups related functionality and is defined using the `module` keyword. The module definition must precede its bindings:
+
+```fsharp
+module Calculator
+
+let pi = 3.14
+
+let add x y = x + y
+```
+
 F# supports two types of [comments][comments]. Single line comments are preceded by `//` and multiline comments are inserted between `(*` and `*)`.
 
 [bindings]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/values/#binding-a-value
