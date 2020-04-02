@@ -8,15 +8,16 @@ public enum Units
 
 public class WeighingMachine
 {
-// TODO: define the 'InputWeight' property
+    // TODO: define the 'InputWeight' property
 
-// TODO: define the 'DisplayWeight' property
+    // TODO: define the 'DisplayWeight' property
 
-// TODO: define the 'USDisplayWeight' property
-// TODO: define the 'TareAdjustment' property
+    // TODO: define the 'USDisplayWeight' property
+    
+    // TODO: define the 'TareAdjustment' property
 
-// TODO: define the 'Units' property
-
+    // TODO: define the 'Units' property
+}
 public struct USWeight
 {
 
@@ -24,6 +25,8 @@ public struct USWeight
     {
         throw new NotImplementedException("Please implement the USWeight classes' constructor");
     }
-// TODO: define the 'Pounds' property
-// TODO: define the 'Ounces' property
+    
+    // TODO: define the 'Pounds' property
+
+    // TODO: define the 'Ounces' property
 }
