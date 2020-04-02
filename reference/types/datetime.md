@@ -40,4 +40,4 @@ This exercise handles scheduled appointments. The reference implementation (C#) 
 [type-time]: ./time.md
 [type-string]: ./string.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/dates/.docs/introduction.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/dates/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/datetimes/.docs/introduction.md
