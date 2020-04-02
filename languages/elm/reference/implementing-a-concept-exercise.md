@@ -117,8 +117,8 @@ If you have any questions regarding implementing this exercise, please post them
 
 ### TODO: link to an elm concept, after the first one is done and available to reference.
 
-[meta-design]: ../../csharp/exercises/concept/enums-advanced/.meta/design.md
+[meta-design]: ../../csharp/exercises/concept/flag-enums/.meta/design.md
 
 ### TODO: link to an elm concept, after the first one is done and available to reference.
 
-[meta-config-json]: ../../csharp/exercises/concept/enums-advanced/.meta/config.json
+[meta-config-json]: ../../csharp/exercises/concept/flag-enums/.meta/config.json

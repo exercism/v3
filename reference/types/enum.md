@@ -48,4 +48,4 @@ This exercise works with user account permissions. The reference implementation 
 [type-integer]: ./integer.md
 [type-string]: ./string.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/enums/.docs/introduction.md
-[implementation-csharp-advanced]: ../../languages/csharp/exercises/concept/enums-advanced/.docs/introduction.md
+[implementation-csharp-advanced]: ../../languages/csharp/exercises/concept/flag-enums/.docs/introduction.md
