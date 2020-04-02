@@ -6,4 +6,4 @@ While manipulating individual [bits](../types/bit.md) may not be a concept that 
 
 - [C#][implementation-csharp]
 
-[implementation-csharp]: ../../languages/csharp/exercises/concept/enums-advanced/.docs/introduction.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/flag-enums/.docs/introduction.md

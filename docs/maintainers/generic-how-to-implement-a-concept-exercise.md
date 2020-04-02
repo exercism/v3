@@ -114,5 +114,5 @@ If you have any questions regarding implementing this exercise, please post them
 
 [docs-concept-exercises]: ../concept-exercises.md
 [reference]: ../../reference/concepts/README.md
-[meta-design]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/design.md
-[meta-config-json]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/config.json
+[meta-design]: ../../languages/csharp/exercises/concept/flag-enums/.meta/design.md
+[meta-config-json]: ../../languages/csharp/exercises/concept/flag-enums/.meta/config.json
