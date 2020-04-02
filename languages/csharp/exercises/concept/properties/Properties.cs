@@ -8,75 +8,14 @@ public enum Units
 
 public class WeighingMachine
 {
-    public decimal InputWeight
-    {
-        get
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-        set
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-    }
+// TODO: define the 'InputWeight' property
 
-    public decimal DisplayWeight
-    {
-        get
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-        set
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-    }
+// TODO: define the 'DisplayWeight' property
 
-    public USWeight USDisplayWeight
-    {
-        get
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-        set
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-    }
-    public decimal TareAdjustment
-    {
-        get
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-        set
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-    }
+// TODO: define the 'USDisplayWeight' property
+// TODO: define the 'TareAdjustment' property
 
-    public Units Units
-    {
-        get
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-        set
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-    }
-}
+// TODO: define the 'Units' property
 
 public struct USWeight
 {
@@ -85,30 +24,6 @@ public struct USWeight
     {
         throw new NotImplementedException("Please implement the USWeight classes' constructor");
     }
-     public int Pounds
-    {
-        get
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-        set
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-    }
-    public int Ounces
-    {
-        get
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-        set
-        {
-            throw new NotImplementedException(
-                "Please implement accessors where appropriate for this property and remove unused stubs");
-        }
-    }
+// TODO: define the 'Pounds' property
+// TODO: define the 'Ounces' property
 }
