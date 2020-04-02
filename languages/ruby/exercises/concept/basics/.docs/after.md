@@ -1,4 +1,4 @@
-Ruby is a dynamic and strong typed language. On dynamic languages the type of a variable/object is resolved at runtime, which means that its value/type can be changed until the very last minute (when it gets parsed by the interpreter).
+Ruby is a dynamic and strongly typed language. In dynamic languages the type of a variable or object is resolved at runtime, which means that its value or type can be changed up to the very last minute (when it gets parsed by the interpreter).
 And what do we mean with strong typed? Once we know the type of variable/object, Ruby is strict about what you can do with it, for example:
 
 ```ruby
