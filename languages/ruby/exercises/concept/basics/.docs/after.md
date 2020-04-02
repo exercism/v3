@@ -37,6 +37,6 @@ Car.new.run
 => 'running'
 ```
 
-Finally, bear in mind that the `Integer` object holds values that may be defined as one or more (consecutive) digits and its methods support most of the [default mathematical operators][integers-docs].
+Finally, bear in mind that the `Integer` object holds values that may be defined as one or more (consecutive) digits and its methods support many of the [mathematical operators][integers-docs].
 
 [integers-docs]: https://ruby-doc.org/core-2.7.0/Integer.html
