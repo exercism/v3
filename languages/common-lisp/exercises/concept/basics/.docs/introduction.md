@@ -3,27 +3,8 @@
 As a quick side-note before jumping into things, Common Lisp, like most
 programming languages, allows the programmer to write "comments" that are
 ignored when your program is being run. In Common Lisp, single-line comments
-begin with one or more semi-colons (`;`) and follow a couple of conventions:
-
-```lisp
-;;;; A short title for a block of code
-;;; A longer description of a block of code
-;; Describe the code below this line
-; Describe the code before the semi-colon (;) on this line
-```
-
-Multi-line comments are possible using `#|` and `|#`:
-
-```lisp
-#|
-This entire block of text is a comment
-and can span several lines!
-
-How cool is that?!
-|#
-```
-
-Occasionally, you may see the following:
+begin with one or more semi-colons (`;`) and, occasionally, you may see the
+following:
 
 ```lisp
 (code...) ; => value
@@ -104,17 +85,6 @@ anywhere in our program:
 ```lisp
 foo  ; => <ERROR! Lisp doesn't know what foo points to!>
 'foo ; => FOO
-```
-
-In the above example, quoting `FOO` makes it look a lot like a keyword, but
-unlike keywords (which can only be symbols), all S-Expressions can be quoted:
-
-```lisp
-;; This line is evaluated as code
-(gimme-foo)  ; => FOO
-
-;; This line is treated as data
-'(gimme-foo) ; => (GIMME-FOO)
 ```
 
 For now, you can consider this just as a way to return symbols from a function,
