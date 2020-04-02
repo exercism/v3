@@ -5,10 +5,10 @@
 
 (in-package basics)
 
-;; Evaluates to the symbol LASAGNA
+;; Evaluates to some symbol (not a keyword)
 (defun lennys-favorite-food ())
 
-;; Evaluates to the keyword :ALIENS-ARE-REAL
+;; Evaluates to some keyword
 (defun lennys-secret-keyword ())
 
 ;; Evaluates to T if THING is an atom, NIL otherwise

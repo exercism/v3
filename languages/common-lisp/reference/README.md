@@ -115,9 +115,9 @@ A more formal, machine-readable version of this concept list exists as
   - Symbols
 
 ## Implemented Concept Exercises
-| Exercise           | Concepts                                                               |
-| ------------------ | ---------------------------------------------------------------------- |
-| [`basics`][basics] | `comments`, `expressions`, `cons.basic`, `symbols`, `truthy-and-falsy` |
+| Exercise           | Concepts                                           |
+| ------------------ | -------------------------------------------------- |
+| [`basics`][basics] | `comments`, `expressions`, `cons.basic`, `symbols` |
 
 [anonymous-functions]: ../../../reference/concepts/anonymous_functions.md
 [arithmetic]: ../../../reference/concepts/arithmetic.md
