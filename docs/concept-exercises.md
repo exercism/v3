@@ -109,9 +109,9 @@ See the C# track's [debug.md file][csharp-docs-debug.md] for an example.
 
 [csharp-docs-cli.md]: ../languages/csharp/exercises/shared/.docs/cli.md
 [csharp-docs-debug.md]: ../languages/csharp/exercises/shared/.docs/debug.md
-[csharp-docs-after.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/after.md
-[csharp-docs-hints.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/hints.md
-[csharp-docs-introduction.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
-[csharp-docs-instructions.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/instructions.md
-[csharp-docs-design.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.meta/design.md
-[csharp-docs-config.json]: ../languages/csharp/exercises/concept/numbers-floating-point/.meta/config.json
+[csharp-docs-after.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md
+[csharp-docs-hints.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/hints.md
+[csharp-docs-introduction.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/introduction.md
+[csharp-docs-instructions.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
+[csharp-docs-design.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.meta/design.md
+[csharp-docs-config.json]: ../languages/csharp/exercises/concept/floating-point-numbers/.meta/config.json
