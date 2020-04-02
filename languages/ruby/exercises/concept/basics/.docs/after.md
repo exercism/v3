@@ -14,7 +14,7 @@ x = '2'
 y = x + 2
 => TypeError (no implicit conversion of Integer into String)
 
-And remember, in Ruby everything is an object even classes are instances of the class `Class`, for example:
+Remember, in Ruby everything is an object. Even classes are instances of the class `Class`. For example:
 
 ```Ruby
 1.class
