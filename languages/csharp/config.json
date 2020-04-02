@@ -75,6 +75,19 @@
           "bitwise-operations",
           "numbers-integers"
         ]
+      },
+      {
+        "slug": "properties",
+        "uuid": "978bcc16-0c49-4328-92e9-79f6204ce350",
+        "concepts": ["properties-basic"],
+        "prerequisites": [
+          "numbers-basic",
+          "numbers-floating-point",
+          "classes-basic",
+          "enums-basic",
+          "exceptions-basic",
+          "type-conversion-numbers"
+        ]
       }
     ],
     "practice": []
