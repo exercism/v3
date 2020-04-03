@@ -36,7 +36,7 @@ These files are specific to the C track:
 
 - `makefile`: the makefile for the stub files and tests
 - `<NAME>{.c|.h}`: the stub source and header implementation files, which are the starting point for students to work on the exercise.
-- `test/test_<NAME>.c`: the unit test source file.
+- `test_<NAME>.c`: the unit test source file.
 - `vendor`: this directory contains the unit test framework, [Unity][unity]
 - `.meta/example{.c|.h}`:  an example implementation that passes all the unit tests.
 
