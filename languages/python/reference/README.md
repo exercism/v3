@@ -581,7 +581,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [Comparison operators][comparison-operators]| `basic` | [ ]() | [ ]() |
 | [complex][builtin-types-complex] | `intermediate`, `types`, `builtin` | [ ]() | [ ]() |
 | [Composition][composition-general] | `general`, `OOP`| [ ]() | [ ]() |
-| [Comprehension Syntax][comprehension-syntax]| `intermediate`| [ ]() | [ ]() |
+| [Comprehension Syntax][comprehension-syntax]| `intermediate`| BethanyG [ ]() | [ ]() |
 | [Conditionals][conditionals-general] |`general` | [ ]() | [ ]() |
 | [Constructor][constructor] | `OOP`| [ ]() | [ ]() |
 | [Conditional structures][conditional-structures] |`general` | [ ]() | [ ]() |
@@ -595,7 +595,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [Default arguments][default-arguments] |`general` | [ ]() | [ ]() |
 |[del][keyword-del] | `general`, `keyword` | [ ]() | [ ]() |
 | [dict][builtin-types-dict] |`basic`, `types`, `containers`|   [#877](https://github.com/exercism/v3/issues/877)  |         |
-| [Dict comprehension][dict-comprehension] | `intermediate` | [ ]() | [ ]() |
+| [Dict comprehension][dict-comprehension] | `intermediate` | BethanyG [ ]() | [ ]() |
 | [Docstrings][docstrings] |`intermediate` | [ ]() | [ ]() |
 | [Duck Typing][duck-typing] | `general`, `OOP` | [ ]() | [ ]() |
 | [Dynamic Typing][dynamic-typing] |`general`, `types`, `OOP` | [ ]() | [ ]() |
@@ -627,7 +627,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [Functions][functions-general] | `general`| [ ]() | [ ]() | 
 | [Function Definition][function-definition] | `general` | [ ]() | [ ]() | 
 |[Function Signature][function-signature] |`general` | [ ]() | [ ]() | 
-|[Generator comprehension][generator-comprehension]| `intermediate`| [ ]() | [ ]() |
+|[Generator comprehension][generator-comprehension]| `intermediate`| BethanyG[ ]() | [ ]() |
 |[Generators][generators]|`general`, `intermediate` | [ ]() | [ ]() |
 |[global][keyword-global] |`general`, `keyword` | [ ]() | [ ]() |
 |[Higher-order functions][higher-order-functions] | `functional` | [ ]() | [ ]() |
@@ -659,7 +659,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 |[`**kwargs`][star-star-kwargs] | `general` |[ ]() | [ ]() |
 | [lambda][keyword-lambda] |`intermediate`, `keyword`, `functional`|   [ ]()  |    [ ]()  |
 | [list][builtin-types-list] |`basic`, `types`, `builtin`, `containers`|   [#859](https://github.com/exercism/v3/issues/859)        |         |
-| [list comprehension][list-comprehension] |`intermediate` |[ ]() | [ ]() |
+| [list comprehension][list-comprehension] |`intermediate` | BethanyG[ ]() | [ ]() |
 | [list methods][list-methods] |`basic`| [ ]() | [ ]() |
 | [Lookup efficiency][lookup-efficiency] |`intermediate`, `data-structures` |[ ]() | [ ]() |
 | [Loops][loops-general] |`general` |[ ]() | [ ]() |
@@ -701,8 +701,8 @@ These will very rarely be encountered in the wild, the first because it's more o
 |[Return Values][return-value]| `general`| [ ]() | [ ]() |
 | [Rich comparison methods][rich-comparison-methods] |`general` | [ ]() | [ ]() | 
 |[Scope][scope]| `general` | [ ]() | [ ]() |
-| [set][builtin-types-set] | `basic` , `types`, `builtins`, `containers`| [ ]() | [ ]() | 
-|  [Set comprehension][set-comprehension] |`intermediate` | [ ]()  |  [ ]()  | 
+| [set][builtin-types-set] | `basic` , `types`, `builtins`, `containers`| [ #1086](https://github.com/exercism/v3/issues/1086) | [ ]() | 
+|  [Set comprehension][set-comprehension] |`intermediate` | BethanyG [ ]()  |  [ ]()  | 
 | [slice][builtin-types-slice]| `advanced`, `types`, `builtins`, `containers`| [ ]() | [ ]() |
 | [Slicing][slicing]|`general`| [ ]() | [ ]() |
 | [Short circuiting][short-circuiting]| `general`| [ ]() | [ ]() |
@@ -716,7 +716,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [String translation][string-translation] |`basic`| [ ]() | [ ]() |
 | [True][keyword-true]|`basic`, `builtin`, `keyword` | [ ]() | [ ]() |
 | [try][keyword-try]|`intermediate`, `exceptions`, `keyword` | [ ]() | [ ]() |
-|[tuple][builtin-types-tuple] | `basic`, `types`, `builtin`, `containers` | [ ]() | [ ]() |
+|[tuple][builtin-types-tuple] | `basic`, `types`, `builtin`, `containers` | BethanyG [ ]() | [ ]() |
 |[Tuple unpacking][tuple-unpacking]| `general`| [ ]() | [ ]() |
 | [type][builtin-types-type] |`advanced`, `OOP`| [ ]() | [ ]() |
 | [type conversion][type-conversion] | `basic`, `builtin`| [ ]() | [ ]() |
