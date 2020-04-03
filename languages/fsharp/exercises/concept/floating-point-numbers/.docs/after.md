@@ -2,6 +2,12 @@ There are three floating-point types in F#: `double`, `single` and `decimal`. Th
 
 Each floating-point type has its own [precision, approximate range and size][floating-point-types].
 
+Converting between different floating-point types is done using the [conversion operators][conversion-operators]:
+
+```fsharp
+let doubleFromSingle = double 2.45f
+```
+
 Always be careful when checking the values of floating-point types for equality, as values that can appear to represent the same value could actually be different. See [this article][precision-in-comparisons] for more information (the code examples are in C#).
 
 You can find a short introduction to floating-point numbers at [0.30000000000000004.com][0.30000000000000004.com]. The [Float Toy page][evanw.github.io-float-toy] has a nice, graphical explanation how a floating-point numbers' bits are converted to an actual floating-point value.
@@ -10,3 +16,4 @@ You can find a short introduction to floating-point numbers at [0.30000000000000
 [precision-in-comparisons]: https://docs.microsoft.com/en-us/dotnet/api/system.double.equals#precision-in-comparisons
 [0.30000000000000004.com]: https://0.30000000000000004.com/
 [evanw.github.io-float-toy]: https://evanw.github.io/float-toy/
+[conversion-operators]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/
