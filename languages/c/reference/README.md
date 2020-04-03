@@ -8,32 +8,32 @@ The C concept exercises are based on language concepts. The list below contains 
 
 #### Concepts
 
-- [Incomplete Types](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Incomplete-Types)
-- [Volatile](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Type-Qualifiers)
-- [Storage Class Specifiers](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Storage-Class-Specifiers)
-- [Renaming Types](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Renaming-Types)
-- [Bit Fields](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Bit-Fields)
-- [Labels](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Labels)
-- [The switch Statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-switch-Statement)
-- [Blocks](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Blocks)
-- [The Null Statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-Null-Statement)
-- [The goto Statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-goto-Statement)
-- [The typedef Statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-typedef-Statement)
-- [Variable Length Parameter Lists](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Variable-Length-Parameter-Lists)
-- [Calling Functions Through Function Pointers](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Calling-Functions-Through-Function-Pointers)
-- [Static Functions](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Static-Functions)
-- [Program Structure](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Program-Structure)
-- [Scope](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Scope)
-- [Dynamic memory management](https://en.cppreference.com/w/c/memory)
-- [Date and time utilities](https://en.cppreference.com/w/c/chrono)
-- [Strings library](https://en.cppreference.com/w/c/string)
 - [Algorithms](https://en.cppreference.com/w/c/algorithm)
-- [File input/output](https://en.cppreference.com/w/c/io)
-- [Undefined behaviour](https://en.wikipedia.org/wiki/Undefined_behavior)
-- [Preprocessor directives](https://en.wikipedia.org/wiki/C_preprocessor#Special_macros_and_directives)
-- [Macros](https://gcc.gnu.org/onlinedocs/cpp/Macros.html#Macros)
-- [The definition of `main()`](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-main-Function)
+- [Bit Fields](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Bit-Fields)
+- [Blocks](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Blocks)
+- [Calling Functions Through Function Pointers](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Calling-Functions-Through-Function-Pointers)
+- [Date and Time Utilities](https://en.cppreference.com/w/c/chrono)
+- [Definition of `main()`](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-main-Function)
+- [Dynamic Memory Management](https://en.cppreference.com/w/c/memory)
+- [File Input/Output](https://en.cppreference.com/w/c/io)
+- [Goto Statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-goto-Statement)
 - [Includes](https://gcc.gnu.org/onlinedocs/cpp/Include-Syntax.html)
+- [Incomplete Types](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Incomplete-Types)
+- [Labels](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Labels)
+- [Macros](https://gcc.gnu.org/onlinedocs/cpp/Macros.html#Macros)
+- [Null Statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-Null-Statement)
+- [Program Structure](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Program-Structure)
+- [Preprocessor Directives](https://en.wikipedia.org/wiki/C_preprocessor#Special_macros_and_directives)
+- [Renaming Types](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Renaming-Types)
+- [Scope](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Scope)
+- [Static Functions](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Static-Functions)
+- [Storage Class Specifiers](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Storage-Class-Specifiers)
+- [Switch Statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-switch-Statement)
+- [Strings library](https://en.cppreference.com/w/c/string)
+- [Typedef Statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-typedef-Statement)
+- [Undefined behaviour](https://en.wikipedia.org/wiki/Undefined_behavior)
+- [Variable Length Parameter Lists](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Variable-Length-Parameter-Lists)
+- [Volatile](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Type-Qualifiers)
 
 #### Types
 
@@ -43,8 +43,8 @@ The C concept exercises are based on language concepts. The list below contains 
 
 #### Patterns
 
-- [Opaque pointers](https://en.wikipedia.org/wiki/Opaque_pointer)
 - [Callback](https://en.wikipedia.org/wiki/Callback_(computer_programming))
+- [Opaque pointers](https://en.wikipedia.org/wiki/Opaque_pointer)
 
 ### General
 
@@ -94,10 +94,10 @@ The C concept exercises are based on language concepts. The list below contains 
 
 ## Resources used
 
-- [The GNU C Reference Manual](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
-- [The GNU C Preprocessor Manual](https://gcc.gnu.org/onlinedocs/cpp/index.html)
-- [Wikipedia](https://en.wikipedia.org)
 - [cppreference](https://en.cppreference.com/w/)
+- [The GNU C Preprocessor Manual](https://gcc.gnu.org/onlinedocs/cpp/index.html)
+- [The GNU C Reference Manual](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
+- [Wikipedia](https://en.wikipedia.org)
 
 
 [v3-reference-concepts]: https://github.com/exercism/v3/tree/master/reference
