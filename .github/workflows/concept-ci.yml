@@ -37,6 +37,9 @@ jobs:
           TRACK=$(git diff --name-only origin/master... | grep -oP 'languages\/\K([a-z0-9-]+)' | head -1)
           # default fallback for scheduled builds
           [ -z "$TRACK" ] && TRACK="julia"
+          case "$TRACK" in
+            common-lisp) OPTS="--no-extraction-check --no-directory-check" ;;
+          esac
           echo "::set-output name=track::$TRACK"
         shell: bash
 
@@ -61,4 +64,4 @@ jobs:
         shell: bash -c "julia --color=yes --project=.github/bin/concept-checks {0}"
 
       - name: Run concept checks
-        run: julia --sysimage=julia-sysimages/sysimage-concept-checks.so --color=yes --project=.github/bin/concept-checks .github/bin/concept-checks/concept-checks.jl -r . -t ${{ steps.track-detection.outputs.track }}
+        run: julia --sysimage=julia-sysimages/sysimage-concept-checks.so --color=yes --project=.github/bin/concept-checks .github/bin/concept-checks/concept-checks.jl -r . -t ${{ steps.track-detection.outputs.track }} ${{ steps.track-detection.outputs.opts }}
