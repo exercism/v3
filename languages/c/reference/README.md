@@ -1,10 +1,12 @@
-# C reference
+# C Reference
 
 ## Concepts
 
-The C concept exercises are based on concepts. The list below contains the concepts that have been identified for the C language. The list is initially based on list of concepts the [v3 reference concepts][v3-reference-concepts], and using the references at the bottom.
+The C concept exercises are based on language concepts. The list below contains the concepts that have been identified for the C language. The list is initially based on the [v3 reference concepts][v3-reference-concepts], and using the references at the bottom of this page.
 
-## Specialities (Concepts)
+### Specialities
+
+#### Concepts
 
 - [Incomplete Types](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Incomplete-Types)
 - [Volatile](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Type-Qualifiers)
@@ -33,18 +35,20 @@ The C concept exercises are based on concepts. The list below contains the conce
 - [The definition of `main()`](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-main-Function)
 - [Includes](https://gcc.gnu.org/onlinedocs/cpp/Include-Syntax.html)
 
-## Specialties (types)
+#### Types
 
 - [Complex Number Types](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Complex-Number-Types)
 - [Enumerations](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Enumerations)
 - [Unions](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Unions)
 
-## Specialities (patterns)
+#### Patterns
 
 - [Opaque pointers](https://en.wikipedia.org/wiki/Opaque_pointer)
 - [Callback](https://en.wikipedia.org/wiki/Callback_(computer_programming))
 
-## Concepts
+### General
+
+#### Concepts
 
 - [Arithmetic](https://github.com/exercism/v3/blob/master/reference/concepts/arithmetic.md)
 - [ASCII](https://github.com/exercism/v3/blob/master/reference/concepts/ascii.md)
@@ -68,7 +72,7 @@ The C concept exercises are based on concepts. The list below contains the conce
 - [Variable Shadowing](https://github.com/exercism/v3/blob/master/reference/concepts/variable_shadowing.md)
 - [Variables](https://github.com/exercism/v3/blob/master/reference/concepts/variables.md)
 
-## Types
+#### Types
 
 - [Array](https://github.com/exercism/v3/blob/master/reference/types/array.md)
 - [Bit](https://github.com/exercism/v3/blob/master/reference/types/bit.md)
