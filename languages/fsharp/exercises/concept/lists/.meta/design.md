@@ -12,6 +12,7 @@ The goal of this exercise is to teach the student the basics of the Concept of L
 - Know how to define an empty and non-empty list.
 - Know how to add an element to a list.
 - Know some common list functions (counting, reversing).
+- Know how to pattern match on lists.
 
 ## Out of scope
 
@@ -26,13 +27,15 @@ The goal of this exercise is to teach the student the basics of the Concept of L
 
 The Concepts this exercise unlocks are:
 
-- `lists`: know of the existence of the `list` type; know how to define an empty and non-empty list; know how to add an element to a list; know some common list functions.
+- `lists`: know of the existence of the `list` type; know how to define an empty and non-empty list; know how to add an element to a list; know some common list functions; know how to pattern match on lists.
 
 ## Prequisites
 
 This exercise's prerequisites Concepts are:
 
 - `strings`: the lists are lists of strings.
+- `booleans`: return a `bool`.
+- `pattern-matching`: know how to do pattern matching.
 
 ## Representer
 
