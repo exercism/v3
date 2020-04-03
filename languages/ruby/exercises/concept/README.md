@@ -9,7 +9,7 @@ These are the concept exercises that have currently been implemented, as well as
 | exercise                                                            | concepts                                                                         | prerequisites                                                       |
 | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------| ------------------------------------------------------------------- |
 | [`strings`][concept-exercise-strings]                               | `strings-basic`                                                                  | -                                                                   |
-| [`basics`][concept-exercise-basics]                                 | `variables-basic`<br/>`methods-basic`<br/>`integers-basic`<br/>`constants-basic` | -                                                                   |
+| [`basics`][concept-exercise-basics]                                 | `basics` | -                                                                   |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse.
 
