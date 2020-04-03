@@ -23,6 +23,12 @@ Every new Concept introduced, regardless of how _trivial_ it may seem, must be e
 
 All Concepts covered in a Concept Exercise must either be taught by it, or must be marked as a prerequisite in the `config.json`.
 
+### Basics
+
+When designing Concept Exercises, you'll find that the same basic Concepts will pop-up as prerequisites. As such, each track's first exercise should be a `basics` exercise, which aims to have the student become familiar with the basics of working in that language. The basics will differ between languages, but you can think of things like knowing how to define and call a function/method or how to define variables. For an example, see the [C# basics exercise][csharp-basics].
+
+To make the `basics` exercise the very first exercise, it must be the only exercise with no prerequisites. If an exercise has a prerequisite other than `basics`, you can omit the `basics` prerequisite.
+
 ### Naming Concepts
 
 Concept Exercise concepts (as used in the `config.json` file) should be named according to the following rules:
@@ -46,3 +52,4 @@ Bad examples:
 - `numbers/floating-point`: should not use a hierarchical notation (`floating-point-numbers`)
 
 [kebab-case]: https://en.wiktionary.org/wiki/kebab_case
+[csharp-basics]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/basics/.docs/introduction.md
