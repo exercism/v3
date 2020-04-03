@@ -27,23 +27,22 @@ languages
                 |   └── after.md (optional)
                 ├── .gitignore
                 ├── .meta
-                    |── design.md
-                    |── config.json
-                    ├── example
-                        |── build.gradle
-                        └── src
-                            └── main
-                                └── java
-                                    └── &lt;slug&gt;.java
-                ├── &lt;slug&gt;
-                    |── build.gradle
-                    └── src
-                        └── main
-                            └── java
-                                └── &lt;slug&gt;.java
-                        └── test
-                            └── java
-                                └── &lt;slug&gt;Test.java
+                |   |── design.md
+                |   |── config.json
+                |   └── example
+                |       |── build.gradle
+                |       └── src
+                |           └── main
+                |               └── java
+                |                   └── &lt;slug&gt;.java
+                |── build.gradle
+                └── src
+                    └── main
+                        └── java
+                            └── &lt;slug&gt;.java
+                    └── test
+                        └── java
+                            └── &lt;slug&gt;Test.java
 </pre>
 
 ## Step 1: add .docs/introduction.md
