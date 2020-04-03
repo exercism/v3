@@ -9,11 +9,7 @@ The goal of this exercise is to teach the student the basics of the Concept of D
 - Know what discriminated unions are.
 - Know how discriminated unions are different from enums.
 - Know how to define a discriminated union, with and without data.
-- Know how to use `match` to pattern match on discriminated unions.
-- Know what pattern matching is.
-- Know about constant, identifier and wildcard patterns.
-- Know how to apply guards to patterns.
-- Know about exhaustiveness checking in pattern matching.
+- Know how to pattern match on discriminated unions.
 
 ## Out of scope
 
@@ -27,14 +23,14 @@ The goal of this exercise is to teach the student the basics of the Concept of D
 
 The Concepts this exercise unlocks are:
 
-- `discriminated-unions`: know what discriminated unions are; know how discriminated unions are different from enums; know how to define a discriminated union, with and without data; know how to use `match` to pattern match on discriminated unions.
-- `pattern-matching`: know what pattern matching is; know about constant, identifier and wildcard patterns; know how to apply guards to patterns; know about exhaustiveness checking in pattern matching.
+- `discriminated-unions`: know what discriminated unions are; know how discriminated unions are different from enums; know how to define a discriminated union, with and without data; know how to pattern match on discriminated unions.
 
 ## Prequisites
 
 This exercise's prerequisites Concepts are:
 
 - `basics`: defining functions and scoping and using integers.
+- `pattern-matching`: know how to do pattern matching.
 
 ## Representer
 
