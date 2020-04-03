@@ -21,16 +21,15 @@ The goal of this exercise is to teach the student the basics of the Concept of R
 
 The Concepts this exercise unlocks are:
 
-- `recursion-basic`: know what recursion is; know how to define a recursive function; know how to define a recursive type; know how to write a tail-recursive function.
+- `recursion`: know what recursion is; know how to define a recursive function; know how to define a recursive type; know how to write a tail-recursive function.
 - `pattern-matching-lists`: know how to pattern match on lists.
 
 ## Prequisites
 
 This exercise's prerequisites Concepts are:
 
-- `pattern-matching-basic`: know how to do basic pattern matching.
-- `discriminated-unions-basic`: know how to do define functions and work with parameters.
-- `integers-basic`: know how to define integers.
+- `pattern-matching`: know how to do basic pattern matching.
+- `discriminated-unions`: know how to do define functions and work with parameters.
 
 ## Representer
 

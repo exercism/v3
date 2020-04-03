@@ -60,4 +60,4 @@ This exercise calculates interest on savings accounts. The reference implementat
 [implementation-csharp-production-line]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md
 [implementation-fsharp-production-line]: ../../languages/fsharp/exercises/concept/numbers/.docs/introduction.md
 [implementation-csharp-savings-accounts]: ../../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
-[implementation-fsharp-savings-accounts]: ../../languages/fsharp/exercises/concept/numbers-floating-point/.docs/introduction.md
+[implementation-fsharp-savings-accounts]: ../../languages/fsharp/exercises/concept/floating-point-numbers/.docs/introduction.md
