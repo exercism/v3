@@ -28,15 +28,7 @@ let byFullName = Number.Invalid
 
 Discriminated unions have _structural equality_, which means that two values for the same case and with the same (optional) data are equivalent.
 
-```fsharp
-Spring = Spring // => true
-Spring = Summer // => false
-
-Integer 2 = Integer 2 // => true
-Integer 3 = Integer 4 // => false
-```
-
-The preferred way to work with discriminated unions is to use pattern matching, which also allows deconstructing the data associated with the discriminated union:
+The preferred way to work with discriminated unions is through [pattern matching][pattern-matching] using the [identifier pattern][identifier-patterns]:
 
 ```fsharp
 let describe number =
@@ -44,15 +36,6 @@ let describe number =
     | Integer i -> sprintf "Integer: %d" i
     | Double d  -> sprintf "Double: %d" i
     | Invalid   -> "Invalid"
-```
-
-While one can use deconstruction in a `let` binding, doing so is potentially unsafe and not recommended:
-
-```fsharp
-let number = Integer 2
-
-// Compiles but throws an exception at runtime
-let (Double d) = number
 ```
 
 [define]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/discriminated-unions#remarks
