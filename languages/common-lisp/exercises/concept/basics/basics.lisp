@@ -3,7 +3,7 @@
   (:export :lennys-favorite-food :lennys-secret-keyword
            :is-an-atom-p :is-a-cons-p :first-thing :rest-of-it))
 
-(in-package basics)
+(in-package :basics)
 
 ;; Evaluates to some symbol (not a keyword)
 (defun lennys-favorite-food ())

@@ -3,7 +3,7 @@
 (defpackage basics-test
   (:use :cl :fiveam :basics)
   (:export :run-tests))
-(in-package basics-test)
+(in-package :basics-test)
 
 (def-suite basics-suite)
 (in-suite basics-suite)
