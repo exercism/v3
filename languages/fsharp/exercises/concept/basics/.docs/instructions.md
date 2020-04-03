@@ -8,7 +8,7 @@ Define the `expectedMinutesInOven` binding to check how many minutes the lasagna
 
 ```fsharp
 expectedMinutesInOven
-// 40
+// => 40
 ```
 
 ### 2. Calculate the remaining oven time in minutes

@@ -54,5 +54,5 @@ Implement a function named `rateActivity` that takes an `Activity` value and ret
 
 ```fsharp
 rateActivity (Restaurant Turkish)
-// Maybe
+// => Maybe
 ```
