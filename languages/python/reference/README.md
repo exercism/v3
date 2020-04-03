@@ -716,7 +716,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [String translation][string-translation] |`basic`| [ ]() | [ ]() |
 | [True][keyword-true]|`basic`, `builtin`, `keyword` | [ ]() | [ ]() |
 | [try][keyword-try]|`intermediate`, `exceptions`, `keyword` | [ ]() | [ ]() |
-|[tuple][builtin-types-tuple] | `basic`, `types`, `builtin`, `containers` | BethanyG [ ]() | [ ]() |
+|[tuple][builtin-types-tuple] | `basic`, `types`, `builtin`, `containers` | [#1097](https://github.com/exercism/v3/issues/1097) | [ ]() |
 |[Tuple unpacking][tuple-unpacking]| `general`| [ ]() | [ ]() |
 | [type][builtin-types-type] |`advanced`, `OOP`| [ ]() | [ ]() |
 | [type conversion][type-conversion] | `basic`, `builtin`| [ ]() | [ ]() |
