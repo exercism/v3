@@ -14,7 +14,7 @@ Automatically inferring the type of an expression.
 
 ### Lasagna cooking
 
-This exercise deals with cooking a lasagna dish in the oven. The reference implementation (C#) teaches:
+This exercise deals with cooking a lasagna dish in the oven. The reference implementation (F#) teaches:
 
 - What type inference is.
 - The limitations of type inference.
@@ -25,6 +25,7 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 | Track | Exercise                        | Changes |
 | ----- | ------------------------------- | ------- |
 | C#    | [basics][implementation-csharp] | None    |
+| F#    | [basics][implementation-fsharp] | None    |
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/introduction.md
-[concept-variables]: ./variables.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/introduction.md
