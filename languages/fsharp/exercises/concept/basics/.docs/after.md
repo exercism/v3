@@ -1,4 +1,4 @@
-In F#, a _value_ is everything that has a type and can be defined. That includes booleans, integers and lists, but also functions. Integer values are defined as one or more (consecutive) digits and support the [default mathematical operators][operators].
+In F#, everything that has a type and can be defined is known as a _value_. That includes booleans, integers and lists, but also functions. Integer values are defined as one or more (consecutive) digits and support the [default mathematical operators][operators].
 
 Assigning a value to a name is referred to as a _binding_. [Bindings][bindings] are immutable, which makes them similar to constants in other languages. Bindings are defined using the `let` keyword.
 
