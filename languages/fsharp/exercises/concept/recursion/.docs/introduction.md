@@ -17,12 +17,3 @@ type RussianDoll
 ```
 
 Note that the `rec` keyword is not used to define recursive types.
-
-Lists in F# can be considered as a recursive type, with a list being either an empty list or having a head element followed by a list. Pattern matching can be used to process a list recursively:
-
-```fsharp
-let rec length list =
-    match list with
-    | [] -> 0
-    | head::tail -> 1 + length tail
-```
