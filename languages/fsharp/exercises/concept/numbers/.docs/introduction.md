@@ -19,3 +19,5 @@ elif x > 7 then
 else
     // Expression to evaluate in all other cases
 ```
+
+The condition(s) used in an `if/elif/else` expression must be of type `bool`. F# has no concept of _truthy_ values.
