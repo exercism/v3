@@ -45,11 +45,11 @@ Good examples:
 
 Bad examples:
 
-- `CLASSES`: should use lowercase (`classes`)
-- `BitManipulation`: should use use kebab-case (`anonymous-functions`)
-- `numbers-floating-point`: should not use a hierarchical notation (`floating-point-numbers`)
-- `numbers.floating-point`: should not use a hierarchical notation (`floating-point-numbers`)
-- `numbers/floating-point`: should not use a hierarchical notation (`floating-point-numbers`)
+- `CLASSES`: should use lowercase (i.e. `classes`)
+- `BitManipulation`: should use use kebab-case (i.e. `anonymous-functions`)
+- `numbers-floating-point`: should not use a hierarchical notation (use `floating-point-numbers` instead)
+- `numbers.floating-point`: should not use a hierarchical notation (use `floating-point-numbers` instead)
+- `numbers/floating-point`: should not use a hierarchical notation (use `floating-point-numbers` instead)
 
 [kebab-case]: https://en.wiktionary.org/wiki/kebab_case
 [csharp-basics]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/basics/.docs/introduction.md
