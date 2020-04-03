@@ -14,7 +14,7 @@ When starting this process, we **strongly** recommend you seek help from others 
 
 ## Concept Exercises
 
-Generally, only **one new Concept** should be introduced per Concept Exercise. 
+Generally, only **one new Concept** should be introduced per Concept Exercise.
 
 In order to keep the exercises interesting, maintainers may choose to introduce multiple _trivial_ Concepts in one exercise.
 A _trivial_ Concept is one where we can reasonably assume that most programmers will quickly grasp it, due to prior familiarity, albeit with differing syntax. Examples might be basic number usage (`+`, `-`, `*`, etc.), or conditionals (`if/else`).
@@ -22,3 +22,34 @@ A _trivial_ Concept is one where we can reasonably assume that most programmers 
 Every new Concept introduced, regardless of how _trivial_ it may seem, must be explicitly mentioned in the exercise's introduction. Each mention should focus on how that Concept is applied in the given language, with links to learn more on the topic. If there is nothing special about it, a language-agnostic link is helpful.
 
 All Concepts covered in a Concept Exercise must either be taught by it, or must be marked as a prerequisite in the `config.json`.
+
+### Basics
+
+When designing Concept Exercises, you'll find that the same basic Concepts will pop-up as prerequisites. As such, each track's first exercise should be a `basics` exercise, which aims to have the student become familiar with the basics of working in that language. The basics will differ between languages, but you can think of things like knowing how to define and call a function/method or how to define variables. For an example, see the [C# basics exercise][csharp-basics].
+
+To make the `basics` exercise the very first exercise, it must be the only exercise with no prerequisites. If an exercise has a prerequisite other than `basics`, you can omit the `basics` prerequisite.
+
+### Naming Concepts
+
+Concept Exercise concepts (as used in the `config.json` file) should be named according to the following rules:
+
+1. Use lowercase.
+1. Use [kebab-case][kebab-case].
+1. Don't use a hierarchy.
+
+Good examples:
+
+- `classes`
+- `bit-manipulation`
+- `floating-point-numbers`
+
+Bad examples:
+
+- `CLASSES`: should use lowercase (i.e. `classes`)
+- `BitManipulation`: should use use kebab-case (i.e. `anonymous-functions`)
+- `numbers-floating-point`: should not use a hierarchical notation (use `floating-point-numbers` instead)
+- `numbers.floating-point`: should not use a hierarchical notation (use `floating-point-numbers` instead)
+- `numbers/floating-point`: should not use a hierarchical notation (use `floating-point-numbers` instead)
+
+[kebab-case]: https://en.wiktionary.org/wiki/kebab_case
+[csharp-basics]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/basics/.docs/introduction.md
