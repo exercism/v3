@@ -12,8 +12,6 @@ One possible issue with recursive functions is that each (recursive) function ca
 
 The best way to prevent recursive functions from overflowing the stack is to write them as _tail-recursive_ functions. When a function is [tail-recursive][tail-recursion], the compiler can optimize its output such that there are no additional allocations on the stack for each recursive function call. The one rule for tail-recursive functions is that the result of a recursive function call should be directly returned from the function, there must not be any additional code that processes the result of the recursive call. The most common way to do this is by creating a helper function that takes an additional accumulator argument, which is updated for each recursive call and returned when the recursion finishes. [This page][tail-recursion-in-depth] goes into great detail on how the compiler processed tail-recursive functions.
 
-F# lists are usually processed recursively using pattern matching and the [list pattern][list-pattern]. The basic pattern to process a list recursively is to match it with either an empty list or a non-empty list. In the empty list case, the recursion should end and the end result value is returned. If the list is not empty, one usually matches the first (head) element and the remainder of the list. The head element is then processed and the remainder is processed recursively, until the remainder is empty and the empty list pattern matches.
-
 Here is an example of a function that sums the values in a list in a tail-recursive way:
 
 ```fsharp
@@ -41,6 +39,5 @@ Note that the `rec` keyword is not used to define recursive types.
 
 [recursive-functions]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/functions/recursive-functions-the-rec-keyword
 [recursive-types]: https://fsharpforfunandprofit.com/posts/recursive-types-and-folds/#a-basic-recursive-type
-[list-pattern]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#list-pattern
 [tail-recursion]: https://cyanbyfuchsia.wordpress.com/2014/02/12/recursion-and-tail-recursion-in-f/
 [tail-recursion-in-depth]: https://devblogs.microsoft.com/fsharpteam/tail-calls-in-f/
