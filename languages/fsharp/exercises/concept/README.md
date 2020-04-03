@@ -6,17 +6,18 @@ The Concept Exercises are based on this [list of concepts][reference-shared].
 
 These are the Concept Exercises that have currently been implemented, as well as the Concepts they teach and their prerequisite concepts:
 
-| exercise                                                            | concepts                                            | prerequisites                                 |
-| ------------------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------- |
-| [`basics`][concept-exercise-basics]                                 | `basics`                                            |
-| [`booleans`][concept-exercise-booleans]                             | `booleans`                                          | `basics`                                      |
-| [`datetimes`][concept-exercise-datetimes]                           | `datetimes`                                         | `numbers`<br/>`strings`<br/>`classes`         |
-| [`discriminated-unions`][concept-exercise-discriminated-unions]     | `discriminated-unions`<br/>`pattern-matching-basic` | `basics`                                      |
-| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`                            | `numbers`<br/>`conditionals`                  |
-| [`lists`][concept-exercise-lists]                                   | `lists`                                             | `strings`                                     |
-| [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`                        | `basics`                                      |
-| [`recursion`][concept-exercise-recursion]                           | `recursion`<br/>`pattern-matching-lists`            | `pattern-matching`<br/>`discriminated-unions` |
-| [`strings`][concept-exercise-strings]                               | `strings`                                           | `basics`                                      |
+| exercise                                                            | concepts                     | prerequisites                                             |
+| ------------------------------------------------------------------- | ---------------------------- | --------------------------------------------------------- |
+| [`basics`][concept-exercise-basics]                                 | `basics`                     |
+| [`booleans`][concept-exercise-booleans]                             | `booleans`                   | `basics`                                                  |
+| [`datetimes`][concept-exercise-datetimes]                           | `datetimes`                  | `numbers`<br/>`strings`<br/>`classes`                     |
+| [`discriminated-unions`][concept-exercise-discriminated-unions]     | `discriminated-unions`       | `pattern-matching`                                        |
+| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`     | `numbers`<br/>`conditionals`                              |
+| [`lists`][concept-exercise-lists]                                   | `lists`                      | `strings`<br/>`booleans`<br/>`pattern-matching`           |
+| [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals` | `basics`                                                  |
+| [`pattern-matching`][concept-exercise-pattern-matching]             | `pattern-matching`           | `strings`<br/>`conditionals`                              |
+| [`recursion`][concept-exercise-recursion]                           | `recursion`                  | `pattern-matching`<br/>`discriminated-unions`<br/>`lists` |
+| [`strings`][concept-exercise-strings]                               | `strings`                    | `basics`                                                  |
 
 ## TODO
 
@@ -33,6 +34,7 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-exercise-lists]: ./lists/.meta/design.md
 [concept-exercise-strings]: ./strings/.meta/design.md
 [concept-exercise-numbers]: ./numbers/.meta/design.md
+[concept-exercise-pattern-matching]: ./pattern-matching/.meta/design.md
 [concept-exercise-recursion]: ./recursion/.meta/design.md
 [concept-exercise-discriminated-unions]: ./discriminated-unions/.meta/design.md
 [concept-exercise-floating-point-numbers]: ./floating-point-numbers/.meta/design.md

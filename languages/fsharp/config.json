@@ -43,7 +43,7 @@
         "slug": "lists",
         "uuid": "ef2df8b0-63a8-11ea-bc55-0242ac130003",
         "concepts": ["lists"],
-        "prerequisites": ["strings"]
+        "prerequisites": ["strings", "booleans"]
       },
       {
         "slug": "numbers",
@@ -52,10 +52,16 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "pattern-matching",
+        "uuid": "d605385d-fd8a-45fa-a320-4d7c40213769",
+        "concepts": ["pattern-matching"],
+        "prerequisites": ["strings", "conditionals"]
+      }
+      {
         "slug": "recursion",
         "uuid": "fad55806-69e9-11ea-bc55-0242ac130003",
-        "concepts": ["recursion", "pattern-matching-lists"],
-        "prerequisites": ["pattern-matching", "discriminated-unions"]
+        "concepts": ["recursion"],
+        "prerequisites": ["pattern-matching", "discriminated-unions", "lists"]
       },
       {
         "slug": "strings",
