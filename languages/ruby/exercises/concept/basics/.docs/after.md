@@ -16,7 +16,7 @@ y = x + 2
 
 Remember, in Ruby everything is an object. Even classes are instances of the class `Class`. For example:
 
-```Ruby
+```ruby
 1.class
 => Integer
 
