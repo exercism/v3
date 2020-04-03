@@ -26,13 +26,13 @@ The goal of this exercise is to teach the student the basics of the Concept of L
 
 The Concepts this exercise unlocks are:
 
-- `lists-basic`: know of the existence of the `list` type; know how to define an empty and non-empty list; know how to add an element to a list; know some common list functions.
+- `lists`: know of the existence of the `list` type; know how to define an empty and non-empty list; know how to add an element to a list; know some common list functions.
 
 ## Prequisites
 
 This exercise's prerequisites Concepts are:
 
-- `strings-basic`: the lists are lists of strings.
+- `strings`: the lists are lists of strings.
 
 ## Representer
 
