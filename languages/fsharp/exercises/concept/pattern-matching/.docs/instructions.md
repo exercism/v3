@@ -9,7 +9,7 @@ You have four tasks to encode the replies to the guesses.
 
 ### 1. Reply to a correct guess
 
-Implement the `reply` function to return `"Correct"` when the guess equals `42`:
+Implement the `reply` function to reply to a correct guess:
 
 ```fsharp
 reply 42
@@ -18,7 +18,7 @@ reply 42
 
 ### 2. Reply to a close guess
 
-Modify the `reply` function to return `"So close"` when the guess equals `41` or `43`:
+Modify the `reply` function to reply to close guesses:
 
 ```fsharp
 reply 41
@@ -27,7 +27,7 @@ reply 41
 
 ### 3. Reply to too low guesses
 
-Modify the `reply` function to return `"Too low"` when the guess is less than `41`:
+Modify the `reply` function to reply to too low guesses:
 
 ```fsharp
 reply 25
@@ -36,7 +36,7 @@ reply 25
 
 ### 4. Reply to too high guesses
 
-Modify the `reply` function to return `"Too high"` when the guess is greater than `43`:
+Modify the `reply` function to reply to too high guesses:
 
 ```fsharp
 reply 88
