@@ -28,9 +28,9 @@ The C concept exercises are based on concepts. The list below contains the conce
 - [Algorithms](https://en.cppreference.com/w/c/algorithm)
 - [File input/output](https://en.cppreference.com/w/c/io)
 - [Undefined behaviour](https://en.wikipedia.org/wiki/Undefined_behavior)
+- [Preprocessor directives](https://en.wikipedia.org/wiki/C_preprocessor#Special_macros_and_directives)
 - [Macros](https://gcc.gnu.org/onlinedocs/cpp/Macros.html#Macros)
 - [The definition of `main()`](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-main-Function)
-- [C toolchain](https://progbook.org/prog2.html)
 - [Includes](https://gcc.gnu.org/onlinedocs/cpp/Include-Syntax.html)
 
 ## Specialties (types)
@@ -94,7 +94,6 @@ The C concept exercises are based on concepts. The list below contains the conce
 - [The GNU C Preprocessor Manual](https://gcc.gnu.org/onlinedocs/cpp/index.html)
 - [Wikipedia](https://en.wikipedia.org)
 - [cppreference](https://en.cppreference.com/w/)
-- [progbook](https://progbook.org/)
 
 
 [v3-reference-concepts]: https://github.com/exercism/v3/tree/master/reference
