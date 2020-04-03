@@ -8,7 +8,7 @@ Along the way you saw examples of how to write functions as well as learned how
 to load code and run it in your Common Lisp implementation.
 
 Future exercises will dive much deeper into function definition and how quoting
-can be used to manipulate code was if it were data (among many other topics).
+can be used to manipulate code was if it were data.
 
 ## Diving Deeper
 

@@ -1,10 +1,8 @@
 ## Comments
 
-As a quick side-note before jumping into things, Common Lisp, like most
-programming languages, allows the programmer to write "comments" that are
-ignored when your program is being run. In Common Lisp, single-line comments
-begin with one or more semi-colons (`;`) and, occasionally, you may see the
-following:
+As a brief aside, Common Lisp allows the programmer to write "comments" that are
+ignored by the computer. Single-line comments begin with one or more semi-colons
+(`;`) and, occasionally, you may see the following:
 
 ```lisp
 (code...) ; => value
@@ -21,66 +19,48 @@ termed a "cons"). A cons is made up of two parts: the first element and the rest
 of the elements. For historical reasons these two parts are called the `car` and
 the `cdr`. When S-Expressions are evaluated as code, the first element (`car`)
 represents the function being called while the rest of the elements (`cdr`)
-represent the arguments to that function. In other words:
+represent the arguments to that function:
 
 ```lisp
 (<function> <arg1> <arg2> ... <argN>)
 ; ^ car ^  |        ^ cdr ^
 ```
 
-When S-Expressions like this are evaluated, they automatically return some value
-which takes the place of this expression. When writing your own functions (using
+When S-Expressions are evaluated, they automatically return some value which
+takes the place of the expression. When writing your own functions (using
 `defun`), the last value within the body of the `defun` is automatically
-returned. For example, if you define the following function:
+returned:
 
 ```lisp
+;; Defining a new function
 (defun gimme-foo () 'foo)
+;; Calling the function as an S-Expression
+(gimme-foo) ; => FOO
 ```
-
-Then call the function as an S-Expression (note that `gimme-foo` has no
-arguments):
-
-```lisp
-(gimme-foo)
-```
-
-Lisp evaluates this to:
-
-```lisp
-FOO
-```
-
-Functions and the use of `defun` will be discussed in much greater detail in
-later concept exercises.
 
 ## Symbols and Quoting
 
-There are a couple of things to explain regarding the example above; for
-example, what is `FOO`? The _symbol_ `FOO` is an example of an atom, as it only
-has one "part" (unlike a cons which has two). As you may have noticed, most of
-Common Lisp is **case-insensitive**, so most symbols are returned as all
-uppercase. Symbols in Lisp are special names that can point to other values or,
-in the case of _keywords_, themselves. When symbols are evaluated by Lisp, they
-are replaced with the values they point to. For example:
+There are a couple of things to note regarding the example above. Firstly, the
+_symbol_ `FOO` is an atom, as it only has one "part" (unlike a cons which has
+two). Additionally, Common Lisp is **case-insensitive**, so symbols are often
+returned as all uppercase, but `foo`, `Foo` and `FOO` are equivalent.
+
+Symbols in Lisp are special values that can point to other values or, in the
+case of _keywords_, themselves. When symbols are evaluated by Lisp, they are
+replaced with the values they point to:
 
 ```lisp
 foo  ; => <whatever-foo-points-to>
 :foo ; => :FOO
-
 ```
 
 Note that keywords are denoted by a leading colon (`:`).
 
-Given that all code in Common Lisp is composed of S-Expressions, what stops Lisp
-from trying to evaluate _everything_ in your program? Why didn't Lisp try to
-evaluate `'foo` from the `defun` example above? The answer comes in the form of
-"quoting".
-
 Quoting – the addition of `'` before an S-expression – tells Lisp to not
-evaluate that expression. By quoting `'foo`, we avoided Lisp attempting to look
-up (and failing to find) whatever `FOO` was supposed to point to, instead,
-returning the value `FOO` itself. For example, if `FOO` has not been defined
-anywhere in our program:
+evaluate that expression. By quoting `'foo` in our `defun` example, we avoided
+Lisp attempting to look up (and failing to find) whatever `FOO` was supposed to
+point to, instead, returning the value `FOO` itself. If `FOO` has not been
+defined anywhere in our program:
 
 ```lisp
 foo  ; => <ERROR! Lisp doesn't know what foo points to!>
