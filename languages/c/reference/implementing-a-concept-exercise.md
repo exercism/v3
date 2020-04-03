@@ -23,17 +23,18 @@ languages
                 │   ├── config.json
                 │   ├── design.md
                 │   └── example.c
+                ├── makefile
                 ├── &lt;NAME&gt;.c
                 ├── &lt;NAME&gt;.h
                 ├── test_&lt;NAME&gt;.c
-                ├── vendor
-                └── makefile
+                └── vendor
 </pre>
 
 ## Step 1: Adding Track-Specific Files
 
 These files are specific to the C track:
 
+- `makefile`: the makefile for the stub files and tests
 - `<NAME>{.c|.h}`: the stub source and header implementation files, which are the starting point for students to work on the exercise.
 - `test/test_<NAME>.c`: the unit test source file.
 - `vendor`: this directory contains the unit test framework, [Unity][unity]
