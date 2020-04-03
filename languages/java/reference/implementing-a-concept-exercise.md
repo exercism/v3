@@ -37,9 +37,9 @@ languages
                 |                   └── &lt;slug&gt;.java
                 |── build.gradle
                 └── src
-                    └── main
-                        └── java
-                            └── &lt;slug&gt;.java
+                    |── main
+                    |   └── java
+                    |       └── &lt;slug&gt;.java
                     └── test
                         └── java
                             └── &lt;slug&gt;Test.java
@@ -63,7 +63,7 @@ The file should contain both general and task-specific "hints". These hints shou
 
 The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
 
-## Step 4: add .docs/after.md (optional)
+## Step 4: add .docs/after.md
 
 Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
 
@@ -97,7 +97,7 @@ The configuration files may be copied from another exercise. We aim to keep thes
 Now create the following three files:
 
 - `src/main/java/<slug>.java`. the stub implementation file, which is the starting point for students to work on the exercise.
-- `/src/test/java/<slug>Test.java`: the test suite.
+- `src/test/java/<slug>Test.java`: the test suite.
 - `.meta/example/src/main/java/<slug>.java`: an example implementation that passes all the tests.
 
 ## Step 7: add analyzer (optional)
