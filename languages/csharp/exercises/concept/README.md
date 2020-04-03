@@ -9,12 +9,12 @@ These are the concept exercises that have currently been implemented, as well as
 | exercise                                                            | concepts                                                                        | prerequisites                                                       |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | [`basics`][concept-exercise-basics]                                 | `variables-basic`<br/>`methods-basic`<br/>`integers-basic`<br/>`comments-basic` | -                                                                   |
+| [`dates`][concept-exercise-dates]                                   | `dates-basic`<br/>`time-basic`                                                  | `numbers-basic`<br/>`strings-basic`                                 |
+| [`enums`][concept-exercise-enums]                                   | `enums-basic`<br/>`conditionals-ternary`                                        | `strings-basic`                                                     |
+| [`enums-advanced`][concept-exercise-enums-advanced]                 | `enums-advanced`                                                                | `enums-basic`<br/>`attributes-basic`</br>`bitwise-operations`       |
 | [`numbers`][concept-exercise-numbers]                               | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if`             | `methods-basic`                                                     |
 | [`numbers-floating-point`][concept-exercise-numbers-floating-point] | `numbers-floating-point`<br/>`loops-while`                                      | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if` |
 | [`strings`][concept-exercise-strings]                               | `strings-basic`                                                                 | `methods-basic`                                                     |
-| [`enums`][concept-exercise-enums]                                   | `enums-basic`<br/>`conditionals-ternary`                                        | `strings-basic`                                                     |
-| [`dates`][concept-exercise-dates]                                   | `dates-basic`<br/>`time-basic`                                                  | `numbers-basic`<br/>`strings-basic`                                 |
-| [`enums-advanced`][concept-exercise-enums-advanced]                 | `enums-advanced`                                                                | `enums-basic`<br/>`attributes-basic`</br>`bitwise-operations`       |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse. In this example, the `numbers` exercise only teaches basic number usage, and the `numbers-floating-point` exercise builds on that and digs deeper into floating-point numbers.
 
