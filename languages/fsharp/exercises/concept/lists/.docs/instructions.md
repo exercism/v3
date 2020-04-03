@@ -29,16 +29,7 @@ addLanguage "TypeScript" ["JavaScript"; "CoffeeScript"]
 // ["TypeScript"; "JavaScript"; "CoffeeScript"]
 ```
 
-### 4. Check which language was added last
-
-You'll want to quickly check which language you added last. Define a function that returns the last added language on your list.
-
-```fsharp
-lastAddedLanguage ["Haskell"; "Python"]
-// "Haskell"
-```
-
-### 5. Count the languages in the list
+### 4. Count the languages in the list
 
 Counting the languages one-by-one is inconvenient. Define a function to count the number of languages on your list.
 
@@ -47,11 +38,23 @@ countLanguages ["C#"; "Racket"; "Rust"; "Ruby"]
 // 4
 ```
 
-### 6. Reverse the list
+### 5. Reverse the list
 
 At some point, you realize that your list is actually ordered backwards! Define a function to reverse your list.
 
 ```fsharp
 reverseList ["Prolog"; "C"; "Idris"; "Assembly"]
 // ["Assembly"; "Idris"; "C"; "Prolog"]
+```
+
+### 6. Check if list is exciting
+
+While you love all languages, F# has a special place in your heart. As such, you're really excited about a list of languages if:
+
+- The first on the list is F#.
+- The second item on the list is F# and the list contain either two or three languages.
+
+```fsharp
+excitingList ["Nim"; "F#"]
+// true
 ```
