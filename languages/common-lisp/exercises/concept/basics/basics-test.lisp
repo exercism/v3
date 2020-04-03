@@ -55,5 +55,6 @@
   (is (equal (rest-of-it (cons 'a nil)) nil))
   (is (equal (rest-of-it (list 'a)) nil)))
 
-(defun run-tests ()
-  (run! 'basics-suite))
+(defun run-tests (&optional (explain t))
+  (let ((tests (run 'basics-suite)))
+    (if explain (explain! tests) tests)))
