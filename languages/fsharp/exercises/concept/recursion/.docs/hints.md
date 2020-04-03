@@ -9,7 +9,9 @@
 ### 3. Calculate the prize of an order
 
 - The [list pattern][list-pattern] can be used to pattern match the list of pizzas.
+- If the test fails with a Stack overflow, please use [tail-recursion][tail-recursion] to recursively process the list.
 
 [recursive-functions]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/functions/recursive-functions-the-rec-keyword
 [recursive-types]: https://fsharpforfunandprofit.com/posts/recursive-types-and-folds/#a-basic-recursive-type
 [list-pattern]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#list-pattern
+[tail-recursion]: https://cyanbyfuchsia.wordpress.com/2014/02/12/recursion-and-tail-recursion-in-f/

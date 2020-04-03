@@ -57,3 +57,6 @@ let ``Order price for very large order``() =
           ExtraToppings(ExtraSauce Formaggio)
           ExtraToppings(ExtraSauce Formaggio) ]
     |> should equal 82
+
+[<Fact(Skip = "Remove to run test")>]
+let ``Order price for gigantic order``() = orderPrice (List.replicate 100_000 Margherita) |> should equal 700_000
