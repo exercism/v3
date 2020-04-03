@@ -17,7 +17,7 @@ atom predicate is an unfortunate inconsistency.
 ## 3. Help Lenny split up his conses
 
 When it comes to getting the first element and the rest of an sexpr, there are a
-couple of options [here][clhs-conses]. Look specifically for _Accessor_s as
+couple of options [here][clhs-conses]. Look specifically for _Accessors_ as
 opposed to functions. A couple options might have more intuitive names than you
 might expect!
 
