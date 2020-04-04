@@ -112,7 +112,7 @@ The hints should not spell out the solution, but instead point to a resource des
 
 ## Step 4: add .docs/after.md
 
-Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
+Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
 
 The above four files are also all described in the [concept exercises document][concept-exercises].
 
@@ -175,7 +175,7 @@ When implementing this exericse, it can be very useful to look at [already imple
 [reference-example]: https://github.com/exercism/v3/blob/master/reference/types/string.md#implementations
 [analyzer]: https://github.com/exercism/csharp-analyzer
 [representer]: https://github.com/exercism/csharp-representer
-[exercise-example]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/numbers-floating-point
+[exercise-example]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/floating-point-numbers
 [design-example]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers/.meta/design.md
 [config.json-example]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers/.meta/config.json
 [concept-exercises]: https://github.com/exercism/v3/blob/master/docs/concept-exercises.md

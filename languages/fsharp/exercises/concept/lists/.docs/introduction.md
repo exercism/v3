@@ -1,23 +1,32 @@
-A `list` in F# is an immutable collection of zero or more values. The values in a list must all have the same type.
+A `list` in F# is an immutable collection of zero or more values. The values in a list must all have the same type. As lists are immutable, once a list has been constructed, its value can never change. Any functions/operators that appear to modify a list (such as adding an element), will actually return a new list.
 
-The first item in a list is referred to as the _head_, while everything after the first item is referred to as the _tail_.
-
-Lists are manipulated by functions and operators defined in the `List` module. Once a list has been constructed, its value can never change. Any functions that appear to modify a list (such as adding an element), will actually return a new list.
-
-As lists are implemented as singly linked lists, adding a new item to a list means adding it to the beginning of the list (before the existing elements in the list). Consequently, accessing the first item of the list is very fast, but accessing an element by index is relatively slow.
-
-Here are some examples on how to define a list:
+Lists can be defined as follows:
 
 ```fsharp
 let empty = []
-// => []
+let singleValue = [5]
+let threeValues = ["a"; "b"; "c"]
+```
 
-let singleElement = [1]
-// => [1]
+The most common way to add an element to a list is through the `::` (cons) operator:
 
-let multipleElements = [2; 3; 4]
-// => [2; 3; 4]
+```fsharp
+let twoToFour = [2; 3; 4]
+let oneToFour = 1 :: twoToFour
+// => [1; 2; 3; 4]
+```
 
-let prependElement = 5 :: [6; 7; 8]
-// => [5; 6; 7; 8]
+F# list is have a _head_ (the first element) and a _tail_ (everything after the first element). The tail of a list is itself a list.
+
+Lists are either manipulated by functions and operators defined in the `List` module, or manually using pattern matching using the _list_ and _cons_ patterns:
+
+```fsharp
+let rec describe list =
+    match list with
+    | [] -> "Empty list"
+    | head::tail -> sprintf "Non-empty list with head: %d" head
+
+describe []        // => "Empty list"
+describe [1]       // => "Non-empty with head: 1"
+describe [5; 7; 9] // => "Non-empty with head: 5"
 ```

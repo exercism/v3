@@ -15,7 +15,7 @@ You have four tasks: to implement the logic for determining if the above actions
 
 ### 1. Check if a fast attack can be made
 
-Implement a function named `canFastAttack` that takes a boolean value that indicates if the knight is awake. This function returns `true` if a fast attack can be made based on the state of the knight. Otherwise, returns `false`:
+Implement the `canFastAttack` function that takes a boolean value that indicates if the knight is awake. This function returns `true` if a fast attack can be made based on the state of the knight. Otherwise, returns `false`:
 
 ```fsharp
 let knightIsAwake = true
@@ -25,7 +25,7 @@ canFastAttack(knightIsAwake)
 
 ### 2. Check if the group can be spied upon
 
-Implement a function named `canSpy` that takes three boolean values, indicating if the knight, archer and the prisoner, respectively, are awake. The function returns `true` if the group can be spied upon, based on the state of the three characters. Otherwise, returns `false`:
+Implement the `canSpy` function that takes three boolean values, indicating if the knight, archer and the prisoner, respectively, are awake. The function returns `true` if the group can be spied upon, based on the state of the three characters. Otherwise, returns `false`:
 
 ```fsharp
 let knightIsAwake = false
@@ -37,7 +37,7 @@ canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake)
 
 ### 3. Check if the prisoner can be signalled
 
-Implement a function named `canSignalPrisoner` that takes two boolean values, indicating if the archer and the prisoner, respectively, are awake. The function returns `true` if the prisoner can be signalled, based on the state of the two characters. Otherwise, returns `false`:
+Implement the `canSignalPrisoner` function that takes two boolean values, indicating if the archer and the prisoner, respectively, are awake. The function returns `true` if the prisoner can be signalled, based on the state of the two characters. Otherwise, returns `false`:
 
 ```fsharp
 let archerIsAwake = false

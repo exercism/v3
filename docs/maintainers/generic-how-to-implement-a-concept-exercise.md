@@ -19,7 +19,7 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   └── after.md (optional)
+                |   └── after.md
                 └── .meta
                     ├── config.json
                     └── design.md
@@ -43,9 +43,9 @@ The file should contain both general and task-specific "hints". These hints shou
 
 The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
 
-## Step 4: add .docs/after.md (optional)
+## Step 4: add .docs/after.md
 
-Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
+Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
 
 _The aforementioned files are also described in the [concept exercises document][docs-concept-exercises]._
 
@@ -114,5 +114,5 @@ If you have any questions regarding implementing this exercise, please post them
 
 [docs-concept-exercises]: ../concept-exercises.md
 [reference]: ../../reference/concepts/README.md
-[meta-design]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/design.md
-[meta-config-json]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/config.json
+[meta-design]: ../../languages/csharp/exercises/concept/flag-enums/.meta/design.md
+[meta-config-json]: ../../languages/csharp/exercises/concept/flag-enums/.meta/config.json
