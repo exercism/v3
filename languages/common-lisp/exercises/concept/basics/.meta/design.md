@@ -41,7 +41,7 @@ along with `car` and `cdr` (with additional tests showing that `first` and
 
 - `comments`
 - `expressions`
-- `cons.basic`
+- `cons`
 - `symbols`
 
 ## Prerequisites

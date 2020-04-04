@@ -91,33 +91,34 @@ A more formal, machine-readable version of this concept list exists as
 
 ### Sequences
   - [Arrays][array]
-  - Conses
-    - [Association Lists][map]
-    - Circular Lists
-    - [Lists][list]
-    - Property Lists
-    - [Set][set]
-    - Trees
+  - [Association Lists][map]
+  - Circular Lists
+  - [Lists][list]
+  - Property Lists
   - [Strings][string]
   - Vectors
+
+### Numbers
+  - Complex
+  - [Floats][floating-point-number]
+  - [Integers][integer]
+  - Rationals
 
 ### Types
   - [Booleans][bool]
   - [Characters][char]
+  - Cons
   - [Hash Tables][hash-map]
-  - [Numbers][number]
-    - Complex
-    - [Floats][floating-point-number]
-    - [Integers][integer]
-    - Rationals
+  - [Sets][set]
   - Streams
   - [Structures][struct]
   - Symbols
+  - Trees
 
 ## Implemented Concept Exercises
-| Exercise           | Concepts                                           |
-| ------------------ | -------------------------------------------------- |
-| [`basics`][basics] | `comments`, `expressions`, `cons.basic`, `symbols` |
+| Exercise           | Concepts                                     |
+| ------------------ | -------------------------------------------- |
+| [`basics`][basics] | `comments`, `expressions`, `cons`, `symbols` |
 
 [anonymous-functions]: ../../../reference/concepts/anonymous_functions.md
 [arithmetic]: ../../../reference/concepts/arithmetic.md
