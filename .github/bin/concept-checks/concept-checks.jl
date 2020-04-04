@@ -16,6 +16,15 @@ function parse_commandline()
             help = "track slug"
             arg_type = String
             default = "julia"
+        "--no-config-check"
+            help = "disable config.json checks"
+            action = :store_true
+        "--no-directory-check"
+            help = "disable exercise directory checks"
+            action = :store_true
+        "--no-extraction-check"
+            help = "disable concept extraction checks"
+            action = :store_true
     end
 
     return parse_args(ARGS, s)
@@ -152,30 +161,42 @@ function main()
     @info "Reading config from $configpath..."
     config = JSON.parsefile(configpath)
 
-    @info "Checking $configpath..."
-    undefined_concepts = check_config_json(concepts, config)
-    if !isempty(undefined_concepts)
-        for (exercise, concepts) in undefined_concepts
-            @error "Found undefined concepts in $exercise: $(join(concepts, ", "))"
+    if !args["no-config-check"]
+        @info "Checking $configpath..."
+        undefined_concepts = check_config_json(concepts, config)
+        if !isempty(undefined_concepts)
+            for (exercise, concepts) in undefined_concepts
+                @error "Found undefined concepts in $exercise: $(join(concepts, ", "))"
+            end
+            anyerror = true
         end
-        anyerror = true
+    else
+        @info "Skipping $configpath check..."
     end
 
-    @info "Checking exercise directory names..."
-    wrong_dirs = check_exercise_directories(concepts, args["root"], args["track"])
-    if !isempty(wrong_dirs)
-        @error "Found exercises named after undefined concepts: $(join(wrong_dirs, ", "))"
-        anyerror = true
+    if !args["no-directory-check"]
+        @info "Checking exercise directory names..."
+        wrong_dirs = check_exercise_directories(concepts, args["root"], args["track"])
+        if !isempty(wrong_dirs)
+            @error "Found exercises named after undefined concepts: $(join(wrong_dirs, ", "))"
+            anyerror = true
+        end
+    else
+        @info "Skipping directory names check..."
     end
 
-    @info "Checking extracted concepts from v2..."
-    undefined_concepts = check_concept_extraction_docs(concepts, args["root"], args["track"])
-    if !isempty(undefined_concepts)
-        for (ex, errors) in undefined_concepts
-            pretty_errors = join(collect("- $(rpad("$k:", 20)) $v" for (k, v) in errors), '\n')
-            @error "Found undefined concepts in $ex:\n$pretty_errors"
+    if !args["no-extraction-check"]
+        @info "Checking extracted concepts from v2..."
+        undefined_concepts = check_concept_extraction_docs(concepts, args["root"], args["track"])
+        if !isempty(undefined_concepts)
+            for (ex, errors) in undefined_concepts
+                pretty_errors = join(collect("- $(rpad("$k:", 20)) $v" for (k, v) in errors), '\n')
+                @error "Found undefined concepts in $ex:\n$pretty_errors"
+            end
+            anyerror = true
         end
-        anyerror = true
+    else
+        @info "Skipping extracted concepts check..."
     end
     anyerror
 end
