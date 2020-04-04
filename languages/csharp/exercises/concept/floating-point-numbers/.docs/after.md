@@ -12,7 +12,7 @@ Always be careful when checking the values of floating-point types for equality,
 
 You can find a short introduction to floating-point numbers at [0.30000000000000004.com][0.30000000000000004.com]. The [Float Toy page][evanw.github.io-float-toy] has a nice, graphical explanation how a floating-point numbers' bits are converted to an actual floating-point value.
 
-To repeatedly execute logic, one can use loops. One of the most common loop types in C# is the `while` loop, which keeps on looping until a boolean condition evaluates to `true`.
+To repeatedly execute logic, one can use loops. One of the most common loop types in C# is the `while` loop, which keeps on looping until a boolean condition evaluates to `false`.
 
 ```csharp
 int x = 23;
