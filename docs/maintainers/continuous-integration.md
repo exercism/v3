@@ -64,6 +64,24 @@ Add the following below the existing paths in the `on: push: paths:` and `on: pu
 
 where `<language>` needs to be replaced with the track's language slug.
 
+##### Selectively disabling checks
+
+If you would only like to use some of the checks provided by this workflow, then you can selectively disable checks by adding your language slug and options to the `case` statement in the `Detect Track` step of `jobs: steps:`:
+
+```bash
+case "$TRACK" in
+  common-lisp) OPTS="--no-extraction-check --no-directory-check" ;;
+   <language>) OPTS="<options>"
+esac
+```
+
+where `<language>` needs to be replaced with the track's language slug and `<options>` can be one or more of the following (separated by spaces):
+
+| Flag                    | Result                            |
+| `--no-config-check`     | Disable config.json checks        |
+| `--no-directory-check`  | Disable exercise directory checks |
+| `--no-extraction-check` | Disable concept extraction checks |
+
 #### Testing locally
 
 If you want to run the checks locally, you need to [install Julia v1.3][install-julia] and run the following commands:
