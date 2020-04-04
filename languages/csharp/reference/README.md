@@ -15,6 +15,7 @@ The core OO features a C# developer should know about are:
 - Indexers
 - [Inheritance][inheritance]
 - [Interfaces][interfaces]
+  - Explicit Interface Implementation
 - [Methods][methods]
   - Constructors
   - Destructors
