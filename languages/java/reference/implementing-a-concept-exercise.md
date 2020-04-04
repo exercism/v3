@@ -20,13 +20,13 @@ languages
     └── exercises
         └── concept
             └── &lt;slug&gt;
-                ├── .docs
-                |   ├── instructions.md
-                |   ├── introduction.md
-                |   ├── hints.md
+                |── .docs
+                |   |── instructions.md
+                |   |── introduction.md
+                |   |── hints.md
                 |   └── after.md (optional)
-                ├── .gitignore
-                ├── .meta
+                |── .gitignore
+                |── .meta
                 |   |── design.md
                 |   |── config.json
                 |   └── example
