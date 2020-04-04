@@ -32,9 +32,11 @@ This exercise extracts information from log lines. The reference implementation 
 | F#    | [strings][implementation-fsharp] | None    |
 | Ruby  | [strings][implementation-ruby]   | None    |
 | Python| [strings][implementation-python] | None    |
+| Go    | [strings][implementation-go]     | None    |
 
 [type-char]: ./char.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/strings/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/strings/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/strings/.docs/introduction.md
 [implementation-python]: ../../languages/python/exercises/concept/strings/.docs/introduction.md
+[implementation-go]: ../../languages/go/exercises/concept/basic-strings/.docs/introduction.md

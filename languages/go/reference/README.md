@@ -79,10 +79,10 @@ Concepts that are special to Go or have key differences to a vast majority of ot
 
 - Structs (Classes)
 - Method Sets
-- Encapsulation
-- State
-- Mutation
-- Composition
+- [Encapsulation](../../../reference/concepts/encapsulation.md)
+- [State](../../../reference/concepts/state.md)
+- [Mutation](../../../reference/concepts/mutation.md)
+- [Composition](../../../reference/concepts/composition.md)
 - Polymorphism (?)
 - Interfaces
 
@@ -90,18 +90,18 @@ Concepts that are special to Go or have key differences to a vast majority of ot
 
 > Go is not a functional language but has a lot of features that enable us to apply functional principles. [Functional Go](https://medium.com/@geisonfgfg/functional-go-bc116f4c96a4)
 
-- Anonymous Functions
-- Function Composition
+- [Anonymous Functions](../../../reference/concepts/anonymous_functions.md)
+- [Function Composition](../../../reference/concepts/function_composition.md)
 - Higher Order Functions
 - Multiple Return Values
 - Named Returns
-- Nested Functions
-- Partial Application
+- [Nested Functions](../../../reference/concepts/nested_functions.md)
+- [Partial Application](../../../reference/concepts/partial_application.md)
 - Pipelines (?)
-- Pure Functions
-- Recursion
+- [Pure Functions](../../../reference/concepts/pure_functions.md)
+- [Recursion](../../../reference/concepts/recursion.md)
 - REPL (some community projects)
-- Type Inference
+- [Type Inference](../../../reference/concepts/type_inference.md)
 
 ## Advanced
 - Code generation (`go generate`)
@@ -134,7 +134,7 @@ Types are not really concepts but it might be helpful to have as list of types G
 - Numeric Types (`uint` types, `int` types, `float` types, `complex` types, `byte` and `rune`)
 - pointer
 - slice
-- string
+- [string](../../../reference/types/string.md)
 - struct
 - time.Duration
 - time.Time
