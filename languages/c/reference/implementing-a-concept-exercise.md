@@ -27,7 +27,7 @@ languages
                 ├── &lt;NAME&gt;.c
                 ├── &lt;NAME&gt;.h
                 ├── test_&lt;NAME&gt;.c
-                └── vendor
+                └── test-framework
 </pre>
 
 ## Step 1: Adding Track-Specific Files
@@ -37,7 +37,7 @@ These files are specific to the C track:
 - `makefile`: the makefile for the stub files and tests
 - `<NAME>{.c|.h}`: the stub source and header implementation files, which are the starting point for students to work on the exercise.
 - `test_<NAME>.c`: the unit test source file.
-- `vendor`: this directory contains the unit test framework, [Unity][unity]
+- `test-framework`: this directory contains the unit test framework, [Unity][unity]
 - `.meta/example{.c|.h}`:  an example implementation that passes all the unit tests.
 
 ## Step 2: Adding Common Files
