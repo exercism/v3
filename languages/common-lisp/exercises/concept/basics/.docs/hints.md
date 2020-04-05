@@ -18,8 +18,8 @@ atom predicate is an unfortunate inconsistency.
 
 When it comes to getting the first element and the rest of an sexpr, there are a
 couple of options [here][clhs-conses]. Look specifically for _Accessors_ as
-opposed to functions. A couple options might have more intuitive names than you
-might expect!
+opposed to functions. A couple options might have more intuitive names than
+you'd expect!
 
 [so-quoting]: https://stackoverflow.com/questions/134887/when-to-use-or-quote-in-lisp
 [clhs-keywordp]: http://clhs.lisp.se/Body/f_kwdp.htm#keywordp
