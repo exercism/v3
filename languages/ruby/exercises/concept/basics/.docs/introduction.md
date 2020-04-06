@@ -1,6 +1,6 @@
 Ruby is a dynamic [object-oriented language]. Everything in Ruby is an [object][object].
 
-There are two ways to assign objects to names in Ruby - assigning variables or constants. Variables always start with lower-case letters and use [snake case][snake-case] for their formatting. A variable can be redefined to different objects over its lifetime. For example, `my_first_variable` can be defined and redefined many times using the `=` operator:
+There are two primary ways to assign objects to names in Ruby - using variables or constants. Variables are always written in [snake case][snake-case]. A variable can reference different objects over its lifetime. For example, `my_first_variable` can be defined and redefined many times using the `=` operator:
 
 ```ruby
 my_first_variable = 1
