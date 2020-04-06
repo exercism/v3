@@ -29,7 +29,7 @@ end
 my_first_calc = Calculator.new
 ```
 
-A function within a class is referred to as a _method_. Each method can have zero or more parameters. Objects are returned from methods using the `return` keyword. If no return value is specified, the final object in the method is returned instead. Methods can also have named parameters which are defined and called using the `:` syntax.  Methods are invoked using `.` syntax.
+Units of functionality are encapsulated in methods - similar to _functions_ in other languages. A method can optionally be defined with positional arguments, and/or keyword arguments that are defined and called using the `:` syntax.  Methods either implicitly return the result of the last evaluated statement, or can explicitly return an object via the `return` keyword.  Methods are invoked using `.` syntax.
 
 ```ruby
 class Calculator
