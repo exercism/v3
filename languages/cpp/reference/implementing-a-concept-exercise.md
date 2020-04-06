@@ -46,7 +46,7 @@ This file contains instructions for the exercise. It should explicitly explain w
 
 ## Step 3: add .docs/hints.md
 
-If the student gets stuck, we will allow them to click a button requesting a hint, which shows this file. This will not be a "recommended" path and we will (softly) discourage them using it unless they can't progress without it. As such, it's worth considering that the student reading it will be a little confus fileed/overwhelmed and mybe frustrated.
+If the student gets stuck, we will allow them to click a button requesting a hint, which shows this file. This will not be a "recommended" path and we will (softly) discourage them using it unless they can't progress without it. As such, it's worth considering that the student reading it will be a little confused/overwhelmed and maybe frustrated.
 
 The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any student. They might link to the docs of the functions that need to be used.
 
@@ -104,7 +104,7 @@ This file contains meta information on the exercise, which currently only includ
 
 ## Inspiration
 
-When implementing this exericse, it can be very useful to look at [already implemented C++ exercises][implemented-exercises].
+When implementing this exercise, it can be very useful to look at [already implemented C++ exercises][implemented-exercises].
 
 ## Help
 
@@ -112,6 +112,5 @@ If you have any questions regarding implementing the exercise, please post them 
 
 [example-after-md]: https://github.com/exercism/v3/blob/master/languages/cpp/exercises/concept/strings/.docs/after.md
 [implemented-exercises]: https://github.com/exercism/v3/blob/master/languages/cpp/exercises/concept/README.md
-[reference]: https://github.com/exercism/v3/tree/master/languages/cpp/reference
 [meta-design]: https://github.com/exercism/v3/blob/master/languages/cpp/exercises/concept/strings/.meta/design.md
 [meta-config-json]: https://github.com/exercism/v3/blob/master/languages/cpp/exercises/concept/strings/.meta/config.json
