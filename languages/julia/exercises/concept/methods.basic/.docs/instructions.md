@@ -30,14 +30,3 @@ The function should return how many minutes in total you've worked on cooking th
 julia> total_working_time(3, 20)
 26
 ```
-
-## Version compatibility
-
-This exercise has been tested on Julia versions ≥1.0.
-
-## Source
-
-This exercise is based on the ["Values" exercise][source-pr] of the F# track, designed by [Erik Schierboom][source-erik].
-
-[source-pr]: https://github.com/exercism/v3/pull/901
-[source-erik]: https://github.com/ErikSchierboom
