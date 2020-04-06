@@ -13,7 +13,8 @@ julia> preptime(4)
 
 ### 2. Calculate the remaining oven time in minutes
 
-According to the cooking book, lasagna needs to be in the oven for a total of 60 minutes. Define the `remaining_time` function that takes the actual minutes the lasagna has been in the oven as a parameter and returns how many minutes the lasagna still has to remain in the oven. 
+According to the cooking book, lasagna needs to be in the oven for a total of 60 minutes.
+Define the `remaining_time` function that takes the actual minutes the lasagna has been in the oven as a parameter and returns how many minutes the lasagna still has to remain in the oven. 
 
 ```julia
 julia> remaining_time(50)
@@ -22,7 +23,8 @@ julia> remaining_time(50)
 
 ### 3. Calculate the total working time in minutes
 
-Define the `total_working_time` function that takes two arguments: the first argument is the number of layers you added to the lasagna, and the second parameter is the number of minutes the lasagna has been in the oven. The function should return how many minutes in total you've worked on cooking the lasagna, which is the sum of the preparation time in minutes, and the time in minutes the lasagna has spent in the oven at the moment.
+Define the `total_working_time` function that takes two arguments: the first argument is the number of layers you added to the lasagna, and the second parameter is the number of minutes the lasagna has been in the oven.
+The function should return how many minutes in total you've worked on cooking the lasagna, which is the sum of the preparation time in minutes, and the time in minutes the lasagna has spent in the oven at the moment.
 
 ```julia
 julia> total_working_time(3, 20)

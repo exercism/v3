@@ -19,24 +19,6 @@ end
 
 are equivalent.
 
-### Defining functions
-
-There are two common ways to define a named function in Julia:
-
-```julia
-function preptime(layers)
-    2 * layers
-end
-```
-
-and
-
-```julia
-preptime(layers) = 2 * layers
-```
-
-The latter is most commonly used for one-line function definitions or mathematical functions.
-
 ### Naming
 
 Julia code often uses "germaniccase" for short function and variable names, e.g. `preptime`, `isbits`, or `eigvals`, while longer names use "snake_case", e.g. `total_working_time`.
