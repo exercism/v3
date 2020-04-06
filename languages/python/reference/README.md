@@ -582,7 +582,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [complex][builtin-types-complex] | `intermediate`, `types`, `builtin` | [ ]() | [ ]() |
 | [Composition][composition-general] | `general`, `OOP`| [ ]() | [ ]() |
 | [Comprehension Syntax][comprehension-syntax]| `intermediate`| BethanyG [ ]() | [ ]() |
-| [Conditionals][conditionals-general] |`general` | [ ]() | [ ]() |
+| [Conditionals][conditionals-general] |`general` | [#1103](https://github.com/exercism/v3/issues/1103) | [ ]() |
 | [Constructor][constructor] | `OOP`| [ ]() | [ ]() |
 | [Conditional structures][conditional-structures] |`general` | [ ]() | [ ]() |
 | [Constants][constants] |`general` | [ ]() | [ ]() |
