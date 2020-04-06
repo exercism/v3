@@ -17,7 +17,7 @@ MY_FIRST_CONSTANT = 10
 # MY_FIRST_CONSTANT = "Some String"
 ```
 
-Ruby is organised into classes. Classes are defined using the `class` keyword followed by the name of the class. Classes are initialized using the `.new` method.
+Ruby is organised into classes. Classes are defined using the `class` keyword followed by the name of the class. Objects are generally created by instantiating classes using the `.new` method. For example:
 
 ```ruby
 # Define the class
