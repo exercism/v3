@@ -9,7 +9,7 @@ PAYNE`.
 
 Your task will be writing a static method called `Badge.Label`. It
 will take as input parameters the first, middle and last names of the
-employee. You will then compute the string to be print on the name
+employee. You will then compute the string to be printed on the name
 line of the badge. Notice that you'll need to include spaces between
 words when applicable.
 
@@ -24,7 +24,7 @@ For a font size of `12px`, the total width of the name of the string
 6*12 + 1*12 + 6*12 + 1*12 + 5*12 = 228
 ```
 
-**PS**: Let us assume that the all parametres are optional, i.e. an
+**PS**: Let us assume that the all parameters are optional, i.e. an
 employee may have no first name, no middle name or no family name on
-the system. Besides, if someone forgets to configure a proper font
+the system. Additionally, if someone forgets to configure a proper font
 size, your code should react accordingly.

@@ -23,9 +23,9 @@ b = null; // Valid
 b = 6;    // Valid
 ```
 
-A common mistake is trying to call a method on variable that has been
-set to `null`.  What happens is that the C# runtime raises an
-exception called `NullReferenceException` in this situation.
+A common mistake is trying to call a method on a variable that has been
+set to `null`.  This will cause the C# runtime to raise an
+exception called `NullReferenceException`.
 
 If you try to compile the following code:
 
@@ -58,7 +58,7 @@ variable, in case it is `null`. You can use a `if` or a `?:` operator
 to do that. However, as you can imagine, this can become cumbersome
 the more nullable variables you have on your code.  
 
-The `??` operator is a simple shortcut to that:
+The `??` operator is a simple shortcut for that:
 
 ```csharp
 Console.WriteLine((userName ?? "").Length);
