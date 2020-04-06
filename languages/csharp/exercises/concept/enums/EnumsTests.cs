@@ -24,7 +24,7 @@ public class LogLineTests
 
     [Fact]
     public void ParseFatal() =>
-        Assert.Equal(LogLevel.Unknown, LogLine.ParseLogLevel("[FTL]: Not enough memory"));
+        Assert.Equal(LogLevel.Fatal, LogLine.ParseLogLevel("[FTL]: Not enough memory"));
 
     [Fact]
     public void ParseUnknown() =>
@@ -36,7 +36,7 @@ public class LogLineTests
 
     [Fact]
     public void OutputForShortLogForDebug() =>
-        Assert.Equal("1:The name 'LogLevel' does not exist in the current context", LogLine.OutputForShortLog(LogLevel.Error, "The name 'LogLevel' does not exist in the current context"));
+        Assert.Equal("1:The name 'LogLevel' does not exist in the current context", LogLine.OutputForShortLog(LogLevel.Debug, "The name 'LogLevel' does not exist in the current context"));
 
     [Fact]
     public void OutputForShortLogForInfo() =>
@@ -52,7 +52,7 @@ public class LogLineTests
 
     [Fact]
     public void OutputForShortLogForFatal() =>
-        Assert.Equal("7:Dumping all files", LogLine.OutputForShortLog(LogLevel.Error, "Dumping all files"));
+        Assert.Equal("7:Dumping all files", LogLine.OutputForShortLog(LogLevel.Fatal, "Dumping all files"));
 
     [Fact]
     public void OutputForShortLogForUnknown() =>
