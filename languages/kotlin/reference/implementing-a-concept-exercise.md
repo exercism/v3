@@ -132,7 +132,7 @@ This file contains information on the exercise's design, which includes things l
 
 ## Step 10: add .meta/config.json:
 
-This file contains meta information on the exercise, which currently includes the exercise's contributors, and language version requirements.
+This file contains meta information on the exercise, which currently includes the exercise's contributors.
 
 ## Inspiration
 
