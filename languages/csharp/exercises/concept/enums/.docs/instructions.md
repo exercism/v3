@@ -18,12 +18,12 @@ You have three tasks.
 
 Define a `LogLevel` enum that has six elements corresponding to the above log levels.
 
-- `Trace` - "[TRC] Here is the stack trace: ..."
-- `Debug` - "[DBG] Solve this problem by ..."
-- `Info` - "[INF] Processing..."
-- `Warning` - "[WRN] Unsuspicious activity detected"
-- `Error` - "[ERR] Missing semicolon;"
-- `Fatal` - "[FTL] Stack Overflow"
+- `Trace`
+- `Debug`
+- `Info`
+- `Warning`
+- `Error`
+- `Fatal`
 
 Next, implement the `LogLine.ParseLogLevel` method to parse the log level of a log line:
 
