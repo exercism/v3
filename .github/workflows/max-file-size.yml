@@ -22,7 +22,8 @@ jobs:
 
           for FILE in $FILES; do
             if [ "$(stat --printf="%s" "$FILE")" -gt 100000 ]; then
-              echo "$FILE is larger than 1 MB\nPlease ping @ihid if you are sure that this file is required."
+              echo "$FILE is larger than 10 KB"
+              echo "Please ping @ihid if you are sure that this file is required."
               exit 1
             fi
           done
