@@ -37,17 +37,6 @@ preptime(layers) = 2 * layers
 
 The latter is most commonly used for one-line function definitions or mathematical functions.
 
-### Implicit multiplication
-
-Julia supports implicit multiplication to allow code that looks similar to maths notation:
-
-```julia
-julia> f(x) = 3x
-
-julia> f(3)
-9
-```
-
 ### Naming
 
 Julia code often uses "germaniccase" for short function and variable names, e.g. `preptime`, `isbits`, or `eigvals`, while longer names use "snake_case", e.g. `total_working_time`.
