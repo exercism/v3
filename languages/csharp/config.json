@@ -42,7 +42,6 @@
         "prerequisites": [
           "strings-basic",
           "numbers-basic",
-          "generics",
           "conditionals-if",
           "type-conversion-numbers"
         ]
