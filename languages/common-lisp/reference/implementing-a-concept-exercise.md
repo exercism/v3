@@ -24,30 +24,23 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   └── after.md (optional)
+                |   └── after.md
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
                 |   └── example.lisp
-                ├── &lt;SLUG&gt;.asd
                 ├── &lt;SLUG&gt;.lisp
                 └── &lt;SLUG&gt;-test.lisp
-                └── package.lisp
-                
 </pre>
 
 ## Step 1: adding track-specific files
 
 These files are specific to the Common Lisp track:
 
-- `<SLUG>.list`. the stub implementation file, which is the starting
+- `<SLUG>.lisp`: the stub implementation file, which is the starting
   point for students to work on the exercise.
-- `<SLUG>-test.lisp`: the test suite.
-- `<SLUG>.asd`: the Common Lisp system file defining `<SLUG>` and
-  `<SLUG>/test` systems. The `test-op` of `<SLUG>` should run the tests
-  in `<SLUG>/test`.
-- `package.lisp`: the package definition for both `<SLUG>` and
-  `<SLUG>-test` packages.
+- `<SLUG>-test.lisp`: the test suite which loads the implementation file and
+  FiveAM via quicklisp. Loading this file should _not_ auto-run the tests.
 - `.meta/example.lisp`: an example implementation that passes all the
   tests.
 
@@ -72,7 +65,7 @@ specify what changes to the representation should be applied and why.
 ## Inspiration
 
 When implementing an exercise, it can be very useful to look at
-already implemented Common Lisp exercises like _TBD_.
+already implemented Common Lisp exercises like [`basics`][basics].
 
 You can also check the exercise's [general concepts
 documents][reference] to see if other languages have already
@@ -88,3 +81,4 @@ post them as comments in the exercise's GitHub issue.
 [concept-exercises]: ../exercises/concept/README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
 [reference]: ../../../reference
+[basics]: ../exercises/concept/basics

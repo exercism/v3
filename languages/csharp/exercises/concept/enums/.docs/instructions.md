@@ -54,7 +54,7 @@ The encoded log level is simple mapping of a log level to a number:
 - `Fatal` - `7`
 - `Unknown` - `42`
 
-Implement a method that can output the shortened log line format:
+Implement the `LogLine.OutputForShortLog()` method that can output the shortened log line format:
 
 ```csharp
 LogLine.OutputForShortLog(LogLevel.Error, "Stack overflow")

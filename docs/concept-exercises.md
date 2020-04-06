@@ -51,7 +51,9 @@ An exercise has the following files. In the browser they will show at the releva
 
 ### `.docs/introduction.md`
 
-This file contains an introduction to the concept. It should be explicit about what the student should learn from the exercise, and provide a short, concise introduction to the concept(s). The aim is to give the student just enough context to figure things out themselves and solve the exercise, as research has shown that self-discovery is the most effective learning experience. Mentioning technical terms that the student can Google if they so want, is preferable over including any code samples or an extensive description. For example we might describe a string as a "Sequence of Unicode characters" or a "series of bytes" or "an object". Unless the student needs to understand the details of what those mean to be able to solve the exercise we should not give more info in this introduction - instead allowing the student to Google, ignore, or map their existing knowledge.
+This file contains an introduction to the concept. It should make the exercise's learning goals explicit and provide a short introduction with enough detail for the student to complete the exercise. The aim is to give the student just enough context to figure out the solution themselves, as research has shown that self-discovery is the most effective learning experience. Using the proper technical terms in the descriptions will be helpful if the student wants to search for more information. If the exercise introduces new syntax, an example of the syntax should always be included; students should not need to search the web for examples of syntax.
+
+As an example, the introduction to a "strings" exercise might describe a string as just a "Sequence of Unicode characters" or a "series of bytes". Unless the student needs to understand more nuanced details in order to solve the exercise, this type of brief explanation (along with an example of its syntax) should be sufficient information for the student to solve the exercise.
 
 See the C# floating-point-numbers exercise's [introduction.md file][csharp-docs-introduction.md] for an example.
 
@@ -73,7 +75,7 @@ See the C# floating-point-numbers exercise's [hints.md file][csharp-docs-hints.m
 
 ### `.docs/after.md`
 
-Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
+Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
 
 See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.md] for an example.
 
@@ -107,9 +109,9 @@ See the C# track's [debug.md file][csharp-docs-debug.md] for an example.
 
 [csharp-docs-cli.md]: ../languages/csharp/exercises/shared/.docs/cli.md
 [csharp-docs-debug.md]: ../languages/csharp/exercises/shared/.docs/debug.md
-[csharp-docs-after.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/after.md
-[csharp-docs-hints.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/hints.md
-[csharp-docs-introduction.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
-[csharp-docs-instructions.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/instructions.md
-[csharp-docs-design.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.meta/design.md
-[csharp-docs-config.json]: ../languages/csharp/exercises/concept/numbers-floating-point/.meta/config.json
+[csharp-docs-after.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md
+[csharp-docs-hints.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/hints.md
+[csharp-docs-introduction.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/introduction.md
+[csharp-docs-instructions.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
+[csharp-docs-design.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.meta/design.md
+[csharp-docs-config.json]: ../languages/csharp/exercises/concept/floating-point-numbers/.meta/config.json

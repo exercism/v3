@@ -4,595 +4,725 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 
 ## Language-unique concepts
 
-- [The Zen of Python](./concepts/zen_of_python.md)
-- [Pythonic](./concepts/pythonic.md) code
-- [Python Enhancement Proposals](./concepts/python_enhancement_proposals.md)
-- [PEP 8](./concepts/pep_8_style_guide.md) style conventions
+- [ ] [The Zen of Python][zen-of-python]
+- [ ] [Pythonic][pythonic]
+- [ ] [Python Enhancement Proposals][python-enhancement-proposals]
+- [ ] [PEP 8][pep-8-style-guide]
+- [ ] [Dunder Methods][dunder-methods]
 
-## Object-oriented concepts
+## Basic syntax
 
-- [Classes](../../../reference/concepts/classes.md)
-- [Composition](../../../reference/concepts/composition.md)
-- [Encapsulation](../../../reference/concepts/encapsulation.md)
-- [Inheritance](../../../reference/concepts/inheritance.md)
-- [Interfaces](../../../reference/concepts/interfaces.md)
-- [Mutation](../../../reference/concepts/mutation.md)
-- [Objects](../../../reference/concepts/objects.md)
-- [Polymorphism](../../../reference/concepts/polymorphism.md)
-- [State](../../../reference/concepts/state.md)
+- [ ] [Argument unpacking][argument-unpacking]
 
-## Functional concepts
+- [ ] [Comments][comments-general]
+  - [ ] TODO: Explain # syntax in Python
 
-- [Anonymous functions](../../../reference/concepts/anonymous_functions.md) (Python's `lambda`s)
-- [Higher-order functions](../../../reference/concepts/higher_order_functions.md)
-- [Immutability](../../../reference/concepts/immutability.md) (of certain builtin primitives)
-- [Nested functions](../../../reference/concepts/nested_functions.md)
-- [Partial application](../../../reference/concepts/partial_application.md)
-- [Pipelines](../../../reference/concepts/pipelines.md)
-- [Pure functions](../../../reference/concepts/pure_functions.md)
-- [Recursion](../../../reference/concepts/recursion.md)
-- [REPL](../../../reference/concepts/repl.md)
-- [Type inference](../../../reference/concepts/type_inference.md)
+- [ ] [Expressions][expressions]
+  - [ ] [Order of Evaluation][order-of-evaluation]
+
+- [ ] Statements
+  - [ ] TODO: Explain the importance of statements in Python
+  - [ ] [`pass`][keyword-pass]
 
 ## General concepts
 
-- [Arithmetic](../../../reference/concepts/arithmetic.md)
-- [Bitwise manipulation](../../../reference/concepts/bitwise_manipulation.md)
-- [Boolean logic](../../../reference/concepts/boolean_logic.md)
-- [Comments](../../../reference/concepts/comments.md)
-- [Conditionals](../../../reference/concepts/conditionals.md)
-- [Enumeration](../../../reference/concepts/enumeration.md)
-- [Functions](../../../reference/concepts/functions.md)
-- [Generics](../../../reference/concepts/generics.md)
-- [Locking](../../../reference/concepts/locking.md)
-- [Loops](../../../reference/concepts/loops.md)
-- [Methods](../../../reference/concepts/methods.md)
-- [Scope](../../../reference/concepts/scope.md)
-- [Variables](../../../reference/concepts/variables.md)
+- [ ] [Arithmetic][arithmetic-general]
+    - [ ] [Modular Division][modular-division]
 
-## Types
+- [ ] [Bitwise manipulation][bitwise-manipulation-general]
+    - [ ] [Binary numbers][binary-numbers]
+    - [ ] [Bitflags][bitflags]
+    - [ ] [Bitwise operators][bitwise-operators]
+    - [ ] [Powers of Two][powers-of-two]
 
-- [array](../../../reference/types/array.md)
-- [bool](../../../reference/types/boolean.md)
-- [bytes](../../../reference/types/bytes.md)
-- [class](../../../reference/types/class.md)
-- [float](../../../reference/types/floating_point_number.md)
-- [decimal](../../../reference/types/decimal_number.md)
-- [deque](../../../reference/types/deque.md)
-- [dict](../../../reference/types/hash_map.md)
-- [int](../../../reference/types/integer.md)
-- [list](../../../reference/types/list.md)
-- [None](../../../reference/types/null.md)
-- [set](../../../reference/types/set.md)
-- [str](../../../reference/types/string.md)
-- [struct](../../../reference/types/struct.md)
-- [tuple](../../../reference/types/tuple.md)
+- [ ] [Boolean logic][boolean-logic-general]
+    - [ ] [Boolean values][boolean-values]
+      - [ ] [Booleans are integers][booleans-are-integers]
+      - [ ] [`True`][keyword-true]
+      - [ ] [`False`][keyword-false]
+
+    - [ ] [Boolean operators][boolean-operators]
+      - [ ] [`not`][keyword-not]
+      - [ ] [Short-circuiting][short-circuiting]
+        - [ ] [`and`][keyword-and]
+        - [ ] [`or`][keyword-or]
+
+- [ ] [Bracket Notation][bracket-notation]
+  - [ ] [Indexing][indexing]
+  - [ ] [Slicing][slicing]
+
+- [ ] [Comparisons][comparisons-general]
+    - [ ] [Comparison operators][comparison-operators]
+    - [ ] [Integer comparison][integer-comparison]
+    - [ ] [Rich comparison methods][rich-comparison-methods]
+    - [ ] [Equality operator][equality-operator]
+    - [ ] [Equivalence][equivalence]
+    - [ ] [Inequality][inequality]
+
+- [ ] [Conditionals][conditionals-general]
+  - [ ] [Conditionals structures][conditional-structures]
+    - [ ] [`if`][keyword-if]
+    - [ ] [`elif`][keyword-elif]
+    - [ ] [`else`][keyword-else]
+
+- [ ] [Enumeration][enumeration]
+  - [ ] [Enumerated values][enumerated-values]
+
+- [ ] [Functions][functions-general]
+  - [ ] [Function Definition][function_definition]  
+    - [ ] [`def`][keyword-def]
+    - [ ] [`lambda`][keyword-lambda]
+    - [ ] [Function signature][function-signature]
+      - [ ] [Arguments & parameters][arguments-and-parameters]
+      - [ ] [Positional parameters][positional-parameters]
+      - [ ] [Positional-only parameters][positional-only-parameters]
+      - [ ] [Keyword parameters][keyword-parameters]
+      - [ ] [Keyword-only parameters][keyword-only-parameters]
+      - [ ] [Default arguments][default-arguments]
+      - [ ] [`*args``][star-args]
+      - [ ] [`**kwargs``][star-star-kwargs]
+  - [ ] [Return Values][return-value]
+    - [ ] [`return`][keyword-return]
+  - [ ] [Generators][generators]
+    - [ ] [`yield`][keyword-yield]      
+  - [ ] [Type hinting][type-hinting]
+  - [ ] [Call semantics][call-semantics]
+
+- [ ] [Identity testing][identity-testing]
+  - [ ] [`is`][keyword-is]
+
+- [ ] [Loops][loops-general]
+  - [ ] [`while` loops][while-loops]
+    - [ ] [`while`][keyword-while]
+  - [ ] [`for` loops][for-loops]
+    - [ ] [`for`][keyword-for]
+  - Exiting loops
+    - [ ] [`break`][keyword-break]
+    - [ ] [`continue`][keyword-continue]
+  - [ ] [Iteration][iteration]
+    - [ ] [Iterables][iterables]
+    - [ ] [Iterators][iterators]
+
+  - [ ] [Membership testing][membership-testing]
+    - [ ] [`in`][keyword-in]
+
+- [ ] [Operators][operators]
+  - [ ] [Operator overloading][operator-overloading]
+  - [ ] [Operator precedence][operator-precedence]
+
+- [ ] [Scope][scope]
+    - [ ] [Namespaces][namespaces]
+      - [ ] [`global`][keyword-global]
+      - [ ] [`nonlocal`][keyword-nonlocal]
+    - [ ] [`del`][keyword-del]
+
+- [ ] [Variables][variables]
+  - [ ] [Assignment][assignment]
+    - [ ] [Multiple assignment][multiple-assignment]
+    - [ ] [Tuple unpacking][tuple-unpacking]
+    - [ ] [Constants][constants]
+
+## Intermediate Concepts
+
+- [ ] [Comprehension Syntax][comprehension-syntax]
+  - [ ] [List comprehension][list-comprehension]
+  - [ ] [Dict comprehension][dict-comprehension]
+  - [ ] [Set comprehension][set-comprehension]
+  - [ ] [Generator comprehension][generator-comprehension]
+
+- [ ] Context managers
+  - [ ] [`with`][keyword-with]
+
+- [ ] [Decorators][decorators]
+
+- [ ] [Docstrings][docstrings]
+
+- [ ] [Exceptions][exceptions-general]
+  - [ ] [Exception handling][exception-handling]
+  - [ ] [Exception catching][exception-catching]
+    - [ ] [`try`][keyword-try]
+    - [ ] [`except`][keyword-except]
+    - [ ] [`else`][keyword-else]
+    - [ ] [`finally`][keyword-finally]
+  - [ ] [Exception hierarchy][exception-hierarchy]
+  - [ ] [Raise][raise]
+    - [ ] [Exception message][exception-message]
+    - [ ] [`raise`][keyword-raise]
+    - [ ] [`assert`][keyword-assert]
+
+- [ ] [Importing][importing]  
+  - [ ] [`import`][keyword-import]
+  - [ ] [`from`][keyword-from]
+  - [ ] [`as`][keyword-as]
+
+- [ ] [Standard Library][standard-library]
+  - [ ] [Data structures][data-structures]
+    - [ ] [Lookup efficiency][lookup-efficiency]
+    - [ ] [Recursive data structures][recursive-data-structures]
+  - [ ] [Regular Expressions][regular-expressions]
+
+### Object-oriented concepts
+
+- [ ] [Objects][objects-general]
+  - [ ] [Everything is an object][everything-is-an-object]
+
+- [ ] [Classes][classes-general]
+    - [ ] [Custom classes][custom-classes]
+      - [ ] [`class`][keyword-class]
+    - [ ] [Class members][class-members]
+      - [ ] Behavior
+        - [ ] [Methods][methods-general]
+          - [ ] [Instance Methods][instance-methods]
+            - [ ] [Implicit self][implicit-self]
+            - [ ] [Initialization][initialization]
+            - [ ] [Instantiation][instantiation]
+          - [ ] [Class methods][class-methods]
+            - [ ] [Constructor][constructor]
+          - [ ] [Static Methods][static-methods]
+      - [ ] [State][state]
+        - [ ] [Instance Attributes][instance-attributes]
+        - [ ] [Instance Properties][instance-properties]
+          - [ ] [Property Decorator][property-decorator]
+
+- [ ] [Inheritance][inheritance-general]
+  - [ ] [Class inheritance][class-inheritance]          
+
+- [ ] [Composition][composition-general]
+  - [ ] [Class composition][class-composition]
+
+- [ ] [Encapsulation][encapsulation-general]
+    - [ ] [Non-Public Methods][non-public-methods]
+
+- [ ] [Interfaces][interfaces-general]
+    - [ ] [Duck Typing][duck-typing]
+
+- [ ] [Mutation][mutation-general]
+  - [ ] [Immutability in Python][immutability]
+  - [ ] [Mutability in Python][mutability]
+
+- [ ] [Polymorphism][polymorphism-general]
+    - [ ] [Dynamic typing][dynamic-typing]
+
+### Functional concepts
+
+- [ ] [Anonymous functions][anonymous-functions-general]
+    - [ ] [`lambda`][keyword-lambda]
+
+- [ ] [Higher-order functions][higher-order-functions]
+  - [ ] [Decorators as higher-order functions][decorators-as-higher-order-functions]
+  - [ ] [`map`][builtin-functions-map]
+  - [ ] [`filter`][builtin-functions-filter]
+
+- [ ] [Immutability][immutability]
+
+- [ ] [Nested functions][nested-functions]
+
+- [ ] [Partial application][partial-application]
+  - [ ] TODO: `functools.partial`
+
+- [ ] [Recursion][recursion]
+  - [ ] TODO: explain limitations of recursion in Python, ie `RecursionLimit`
+
+- [ ] [REPL][repl]
+  - [ ] TODO: Discuss the interactive Python interpreter
+
+## Advanced concepts (probably outside scope of Exercism)
+- [ ] Asynchronous operatons
+  - [ ] [`async`][keyword-async]
+  - [ ] [`await`][keyword-await]
+
+## [Builtin types][builtin-types]
+
+TODO: Casting between types in Python can be a bit unclear; this will need expansion
+- [ ] [Type conversion][type-conversion]
+
+### Primitives
+
+These are types that represent discreet values in memory that do not contain other values; all have a dedicated literal syntax.
+
+#### Basics
+
+These are truly non-negotiable, everyone-must-know types; someone must know all of these to be considered fluent in Python.
+
+- [ ] [`None`][keyword-none]
+- [ ] [`bool`][builtin-types-bool]
+  - [ ] [`True`][keyword-true]
+  - [ ] [`False`][keyword-false]
+- [ ] [`int`][builtin-types-int]
+- [ ] [`float`][builtin-types-float]
+- [ ] [`str`][builtin-types-str]
+  - [ ] [String methods][string-methods]
+  - [ ] [String formatting][string-formatting]
+  - [ ] [String splitting][string-splitting]
+  - [ ] [String translation][string-translation]
+
+#### Intermediate
+
+These are less commonly used primitives, but still important to know.
+
+- [ ] [`complex`][builtin-types-complex]
+- [ ] [`bytes`][builtin-types-bytes]
+
+### Containers
+
+These are types that hold one or more of some other primitive type; they're the building blocks of more complex data structures.
+
+#### Basics
+
+Again, these are non-negotiable: every Python user must be comfortable with their use and abuse to be considered fluent, as they appear in _most_ workaday code. These are also common enough that they each have their own dedicated literal syntax.
+
+- [ ] [`tuple`][builtin-types-tuple]
+- [ ] [`range`][builtin-types-range]
+- [ ] [`list`][builtin-types-list]
+  - [ ] [List Methods][list-methods]
+- [ ] [`dict`][builtin-types-dict]
+- [ ] [`set`][builtin-types-set]
+
+#### Intermediate
+
+Much more rarely used containers that you might want to know and recognize.
+
+- [ ] [`bytearray`][builtin-types-bytearray]
+- [ ] [`frozenset`][builtin-types-frozenset]
+
+#### Advanced
+
+These will very rarely be encountered in the wild, the first because it's more of an internal implementation detail and the second because it's hyper-specific.
+
+- [ ] [`slice`][builtin-types-slice]
+- [ ] [`memoryview`][builtin-types-memoryview]
+
+### Object-orientation specific
+
+- [ ] [`type`][builtin-types-type]
+- [ ] [`object`][builtin-types-object]
+- [ ] [`property`][builtin-types-property]
 
 ## Resources used
 
 - https://www.python.org
 
-## Extracted Concepts
-
-### [Dictionary][dictionary]
-
-- Mapping type. The example solution employes a dictionary to return values from the `parse_line()` function. [origin](./exercise-concepts/markdown.md)
-- mapping type that has key-value pairs. Returned by `str.maketrans` in the example code. Also one of the argument types accepted by `str.maketrans()`. [origin](./exercise-concepts/rna-transcription.md)
-- the example uses a dictionary to map passed in move arguments to methods that perform the moves. The example also uses a dictionary/mapping created by calling `str.maketrans()`. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Method Arguments][method-arguments]
-
-- Parameters passed into a function. In python, these are noted in the `()` following a function name. The example code uses a function named `to_rna()` with an argument of `dna_strand`. [origin](./exercise-concepts/rna-transcription.md)
-- The example solutions use functions that take function arguments to operate on passed in markdown strings. [origin](./exercise-concepts/markdown.md)
-- the exercise requires a single positional parameter in the function signature [origin](./exercise-concepts/leap.md)
-- concept over arguments of a function and how to use them is required [origin](./exercise-concepts/variable-length-quantity.md)
-- the methods returning "row" and "column" need to take both `self` and an integer as arguments [origin](./exercise-concepts/matrix.md)
-
-### [Booleans][booleans]
-
-- this solution uses Boolean values (`True` / `False`) [origin](./exercise-concepts/hamming.md)
-- True and False of type `bopl`. The example solution uses `True` and `False` as return values from functions that test membership in a list of values. [origin](./exercise-concepts/markdown.md)
-
-### [Bracket Notation][bracket-notation]
-
-- knowing that `[]` should be used to refer to a value at a specific index in a list [origin](./exercise-concepts/matrix.md)
-
-### [String formatting][string-formatting]
-
-- How to format strings, ie `%` operator, `str.format`, f-strings [origin](./exercise-concepts/clock.md)
-
-### [Inheritance][inheritance]
-
-- The default `__str___` method is inherited from `Object`, which every class in Python inherits from. (See: inheritance) [origin](./exercise-concepts/phone-number.md)
-- a "subclass" will inherit all methods, attributes from it's parent class, and can then override methods as needed. Overriding means the logic in the parent class is not used. The `super` builtin function (not shown here) exists to allow the programmer to defer logic up the inheritance chain to the parent class when needed. [origin](./exercise-concepts/phone-number.md)
-- the knowledge of inheritance can be useful in this exercises because all `Exceptions` types inherit from the base class [origin](./exercise-concepts/variable-length-quantity.md)
-
-### [For Loop][for-loop]
-
-- the `for ... in` concept is useful to loop over the lists [origin](./exercise-concepts/variable-length-quantity.md)
-- The example solution uses `for` loops to iterate over various function inputs. [origin](./exercise-concepts/markdown.md)
-- iterating over the passed in `matrix` string using a `for` loop to extract "rows" and "columns" that are appended to a list [origin](./exercise-concepts/matrix.md)
-
-### [Classes][classes]
-
-- the exercise relies on the `class` statement to create a custom class [origin](./exercise-concepts/allergies.md)
-- use of `class` to create a custom data structure [origin](./exercise-concepts/clock.md)
-- the exercise objective is to define a `matrix` type. Tested methods are linked to a `matrix` class [origin](./exercise-concepts/matrix.md)
-- a general comprehension of class concept and and how it works is required, `class` statement [origin](./exercise-concepts/binary-search-tree.md)
-- classes are defined with the `class <ClassName>:` syntax [origin](./exercise-concepts/phone-number.md)
-- the exercise objective is to define a `robot` type. Tested methods are linked to a `robot` class. [origin](./exercise-concepts/robot-simulator.md)
-
-### [String Translation][string-translation]
-
-- the `str.translate()` _instance method_ is called on an object from the `str` class (e.g. `<my string>`.translate()). Returns a copy of the inital string with each character re-mapped through the given _translation table_. The _translation table_ is typically a mapping or sequence type that implements indexing via the magic method `__getitem__()`. [origin](./exercise-concepts/rna-transcription.md)
-
-### [Argument Unpacking][Argument Unpacking]
-
-- the example solution for this exercise uses `splat` (`*`) to unpack rows for the `zip()` function. [origin](./exercise-concepts/matrix.md)
-
-### [Immutability][immutability]
-
-- strings are immutable, and so cannot have values assigned; new strings can be created, however [origin](./exercise-concepts/phone-number.md)
-- `text` str in Python is [immutable](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str). [origin](./exercise-concepts/reverse-string.md)
-
-### [Instance Methods][instance-methods]
-
-- tests for this exercises require one or more instance methods that will return a specified row or column list of the `matrix`. [origin](./exercise-concepts/matrix.md)
-- tests for this exercises require one or more instance methods that will take in a set of starting coordinates and a bearing and then accept a series of instructions that "move" the instance to a new set of coordinates and bearing. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Non-Public Methods][non-public-methods]
-
-- Methods or attributes (including those of an imported module) prefixed with an underscore, `_`, are conventionally treated as "non-public" methods. Python does not support data privacy in the way a language like Java does. Instead convention dictates that methods and attributes that are not prefixed with a single underscore can be expected to remain stable along with semver, i.e. a public method will be backwards compatible with minor version updates, and can change with major version updates. Generally, importing non-public functions or using non-public methods is discouraged, though Python will not explicitly stop the programmer from doing so. [origin](./exercise-concepts/phone-number.md)
-
-### [Booleans are integers][booleans-are-integers]
-
-- Booleans values are just named aliases for the integers 1 (`True`) and 0 (`False`) [origin](./exercise-concepts/hamming.md)
-
-### [Static Methods][static-methods]
-
-- Distinct from built-in functions, instance methods, and class methods, these are methods that are bound to a class, rather than an instance, and called _without_ explicitly or implicitly passing in an object of the class. The example solution for this exercise uses the `static` `str` method `maketrans`. [origin](./exercise-concepts/rna-transcription.md)
-
-### [Property Decorator][property-decorator]
-
-- this exercise relies on the `@property` decorator to provide read-only dynamic access to the current list of allergens [origin](./exercise-concepts/allergies.md)
-
-### [overload][overload]
-
-- students need to overload methods and specifically dunder methods in this exercise [origin](./exercise-concepts/binary-search-tree.md)
-
-### [Data Structures][data-structures]
-
-- the exercise requires the use of a collection like enum.Flag or collections.OrderedDict [origin](./exercise-concepts/allergies.md)
-
-### [in][in]
-
-- use of the `in` statement is useful to look for an object into a list [origin](./exercise-concepts/binary-search-tree.md)
-
-### [Implicit Argument][implicit-argument]
-
-- the example uses the `self` implicit argument for methods and properties linked to a specific instance of the class [origin](./exercise-concepts/matrix.md)
-- the example uses `self` for methods and properties linked to a specific instance of the class. [origin](./exercise-concepts/robot-simulator.md)
-
-### [class methods][class-methods]
-
-- student must know how methods of a class work inside and outside the class, the use and meaning of `def` statement [origin](./exercise-concepts/binary-search-tree.md)
-
-### [Functions][functions]
-
-- functions are defined and named using the `def` keyword [origin](./exercise-concepts/hamming.md)
-- A named (_and often reusable_) section of code that performs a specific task. It may or may not have _arguments_ passed in, and may or may not _return_ data. Created using the `def` keyword. [origin](./exercise-concepts/rna-transcription.md)
-- Tests for this exercise expect a function named `parse` that can be called to transform the _markdown_ formatted text and return HTML formatted text. [origin](./exercise-concepts/markdown.md)
-
-### [Modular Division][modular-division]
-
-- the exercise relies on the `%` operator to check if one number is evenly divisible by another [origin](./exercise-concepts/leap.md)
-- the example uses the modulus operator to calculate the appropriate _compass_ setting when calling the `right` compass method [origin](./exercise-concepts/robot-simulator.md)
-
-### [Comprehension Syntax][comprehension-syntax]
-
-- knowing that this is equivalent to a `for loop` - putting the row or column creation code _inside_ the list literal instead of using loop + append. [origin](./exercise-concepts/matrix.md)
-- the use of list comprehension concept can be useful in this exercise [origin](./exercise-concepts/variable-length-quantity.md)
-
-### [Instance Properties][instance-properties]
-
-- this exercise rquires one or more instance properties to persist passed in data. [origin](./exercise-concepts/matrix.md)
-
-### [Bitwise Operators][bitwise-operators]
-
-- this exercise relies on bitwise AND (`&`) and potentially bitwise LSHIFT (`<<`) to inspect the Boolean value of individual bits in a bitflag [origin](./exercise-concepts/allergies.md)
-- bitwise operators such as `<<`, `>>`, `&`, `|`, `~`, `^` are central to this exercise [origin](./exercise-concepts/variable-length-quantity.md)
-
-### [Conditionals structures][conditionals]
-
-- The example solution uses `if` to check for pattern matching and membership conditions in different functions for processing different markdown patterns. [origin](./exercise-concepts/markdown.md)
-- `if ... else` and `elif` allow a programmer to switch code branches depending on some condition [origin](./exercise-concepts/phone-number.md)
-
-### [Return Values][return-value]
-
-- the knowledge of `return` statement could be a useful concept in this exercise [origin](./exercise-concepts/variable-length-quantity.md)
-- the function must return a number (int) [origin](./exercise-concepts/hamming.md)
-- Most of the functions in the example solution specify a _return_ value using the `return` keyword. [origin](./exercise-concepts/markdown.md)
-- the exercise must use a `return` statement to return a value to the caller [origin](./exercise-concepts/leap.md)
-- this function return a string by this line: `return text[::-1]` [origin](./exercise-concepts/reverse-string.md)
-- the `return` keyword is used in a _return statement_ at the end of a function. Exits a function and may or may not pass data or an expression back to calling code. Functions in python without an expicit `return` keyword and statment will return (pass back) the singleton object `none`. The example code _returns_ a copy of the passed-in argument (assumed to be a string) that has been mapped through `str.translate()`, using the table made from `str.maketrans()` [origin](./exercise-concepts/rna-transcription.md)
-- knowing that functions need not have _explicit_ return statements or values but will return `None` if `return` is not specified. Except for the two `@property`-decorated functions, all of the functions in the example omit an explicit `return` statment and all return `None`. [origin](./exercise-concepts/robot-simulator.md)
-- the knowledge of `return` statement could be a useful concept in this exercise [origin](./exercise-concepts/variable-length-quantity.md)
-- "row" and "column" list values are expected from defined instance method(s) [origin](./exercise-concepts/matrix.md)
-
-### [Bitflags][bitflags]
-
-- a general understanding of bitflags is required to solve this exercise [origin](./exercise-concepts/allergies.md)
-
-### [Constants][constants]
-
-- Avoid "magic numbers", defining instead meaningfully named constants. PEP 8 convention for constants: `UPPER_SNAKE_CASE` [origin](./exercise-concepts/clock.md)
-- are not enforced by the runtime, but are used via the convention of `UPPER_CASE` to signal that these values are expected to remain unchanged. Preferably, constants are defined at a module level. The example solution uses the `UPPER_CASE` convention to define NORTH, SOUTH, EAST, and WEST constants. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Dunder Methods][dunder-methods]
-
-- the exercise relies on the `__init__` dunder method to control class instantiation [origin](./exercise-concepts/allergies.md)
-- student needs to know when to use dunder methods `__init__` and `__str__` [origin](./exercise-concepts/binary-search-tree.md)
-- "dunder" -> "double under", referring to the names of these methods being prefixed with two underscores, e.g. `__init__`. There is no formal privacy in Python, but conventionally a single underscore indicates a private method, or one that the programmer should assume may change at any time; methods without an underscore are considered part of an object's public API. Double underscores are even more special - they are used by Python's builtin functions like `len()`, for example, to allow objects to implement various interfaces and functionality. They can also be used for operator overloading. If you have a custom class that you would like to be able to compare to other instances of the same class, implementing `__lt__`, `__gt__`, `__eq__` etc. allow programmers to use the `>`, `<`, `=` operators. Dunder methods allow programmers to build useful objects with simple interfaces, i.e. you can add two instances together using `+` instead of writing something like `instance1.add(instance2)`. [origin](./exercise-concepts/hamming.md)
-- the example uses the `__init__` magic method as its constructor for the class [origin](./exercise-concepts/matrix.md)
-- User defined classes can (and generally do) overload the `__init__` method, whose first argument is `self`, because the result of `__init__` is a class *instance*. [origin](./exercise-concepts/phone-number.md)
-- The example uses `__init__` as a constructor for the class, which also calls `__new__`. In addition, the example uses `__call__()` via the appending of `()` to instance method names, and `__eq__()` (_rich compairison_) via the use of `==` [origin](./exercise-concepts/robot-simulator.md)
-
-### [Standard Library][standard-library]
-
-- the `re` module is an example of the Python stdlib (standard library), or included code libraries and tools that are frequently used in Python [origin](./exercise-concepts/phone-number.md)
-
-### [Lookup Efficiency][lookup-efficiency]
-
-- an efficient solution requires knowing that membership testing is O(1) in **dict** and the **enum.Enum** variants, but is O(N) in **list** and other sequential types [origin](./exercise-concepts/allergies.md)
-
-### [None][none]
-
-- student needs to know the meaning of `None` and how and when assign it to a variable [origin](./exercise-concepts/binary-search-tree.md)
-- Pythons null type, referred to when a null or "placeholder" is needed. It is in and of itself a singleton in any given python program. [origin](./exercise-concepts/markdown.md)
-
-### [Constructor][constructor]
-
-- student needs to know how to build an object using its constructor [origin](./exercise-concepts/binary-search-tree.md)
-- customizing object initalization with actions and persisting data. The example uses a constructor to process the passed in data into a list of lists assigned to an instance property [origin](./exercise-concepts/matrix.md)
-
-### [Membership Testing][membership-testing]
-
-- this exercise relies on testing membership of a value in a collection of values [origin](./exercise-concepts/allergies.md)
-- the `in` keyword, as in `"s" in "string`, allows the user to check membership in the longer string [origin](./exercise-concepts/phone-number.md)
-
-### [Strings][strings]
-
-- strings are used generally [origin](./exercise-concepts/hamming.md)
-
-### [Enumeration][enumeration]
-
-- `zip()` in this solution creates an iterable, which is iterated over by using the `for ... in ` syntax [origin](./exercise-concepts/hamming.md)
-
-### [Indexing][indexing]
-
-- the "rows" and "columns" of this exercise need to be retrieved from a list of lists via index [origin](./exercise-concepts/matrix.md)
-- for iterables, individual items can be accessed with `stringname[x]` notation. Negative numbers start to count backwards [origin](./exercise-concepts/phone-number.md)
-- finding a value by key in a dictionary using `<dictionary name>[<key name>]` The example uses passed in move arguments as `keys` to look up corresponding `values` (_method names_) for moving the robot in the _instructions_ dictionary. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Polymorphism][polymorphism]
-
-- Python is "dynamically typed," meaning that variable names are bound to objects only, not to a particular type. You can assign `foo` to a string, and then reassign it to an `int` with no issues. "Polymorphism" formally means that different types respond to the same function - so the ability to add custom class instances together using `+`, for example, shows how Python can define the same function against different types. [origin](./exercise-concepts/hamming.md)
-
-### [Equality Operator][equality-operator]
-
-- the `==` operator calls the dunder method `__eq__()`. By default, objects of different types are never considered equal to each other unless they are numerical types (ie int, float) or have otherwise overloaded the default implementation of the `__eq__` dunder method. `==` is always defined, but for some object types (_like class objects_) it is equivalent to calling `is`. See [`__eq__`](https: //docs.python.org/3/reference/datamodel.html#object.__eq__) for additional details. This exercise uses the equality operator to test that the `self.direction` attribute is equal to one of the constant values defined. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Refactor][refactor]
-
-- Reviewing and rewriting (or re-organizing) code for clarity and efficiency. This exercise requires a re-write of pre-existing code that uses functions to parse passed-in text in markdown. [origin](./exercise-concepts/markdown.md)
-
-### [PEP 8 Style][pep-8-style]
-
-- PEP 8 is the Python official style guide. Black is emerging as the defacto "pyfmt" tool: should we recommend it? (since the advent of `gofmt` and then `rustfmt`, I'm totally sold on opinionated auto-format tools: saves time and no more bikeshedding) [origin](./exercise-concepts/clock.md)
-
-### [List Methods][list-methods]
-
-- the use of methods of list could be useful in this exercise. Methods like `append`, `pop`... [origin](./exercise-concepts/variable-length-quantity.md)
-
-### [Short-Circuiting][short-circuiting]
-
-- the exercise relies on short-circuiting to avoid unnecessary calculations [origin](./exercise-concepts/leap.md)
-
-### [Exception message][exception-message]
-
-- Custom error messages can (and should) be supplied to an Exception when raised [origin](./exercise-concepts/hamming.md)
-
-### [Instantiation][instantiation]
-
-- creating different instances of the `robot` class with different data representing different starting positions and bearing are tested. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Comparison][comparison]
-
-- concept required to solve the exercise, `==`, `>`, `<` [origin](./exercise-concepts/variable-length-quantity.md)
-- the exercise relies on the `==` and `!=` operators to make binary comparisons between values [origin](./exercise-concepts/leap.md)
-
-### [Integer comparison][integer-comparison]
-
-- concept required to solve the exercise [origin](./exercise-concepts/binary-search-tree.md)
-
-### [Lists][lists]
-
-- knowledge of lists and iteration on lists is required for this exercise [origin](./exercise-concepts/variable-length-quantity.md)
-- The example uses lists in several places to hold text to be processed or searched - or for tracking the state of pieces of the passed-in text. [origin](./exercise-concepts/markdown.md)
-- this exercise requires "row" or "column" be returnd as a `list`. A `list` of `lists` is also the reccommended way to process and store the passed-in data. [origin](./exercise-concepts/matrix.md)
-- the example stores compass direction constants in a `list` [origin](./exercise-concepts/robot-simulator.md)
-- knowledge of lists and iteration on lists is required for this exercise [origin](./exercise-concepts/variable-length-quantity.md)
-
-### [Operators][operators]
-
-- `!=` is "not equal", which is not the same thing as `is`, or an identity check, but is the inverse of `==`, which is equality [origin](./exercise-concepts/hamming.md)
-
-### [Duck Typing][duck-typing]
-
-- Python is also a good example of "Duck typing," to wit, "if it walks like a duck, talks like a duck, it's a duck.". This is accomplished partly with "magic" or "dunder" methods (double-under) that provide various interfaces to an object. If an object implements `__iter__` and `__next__`, it can be iterated through; it doesn't matter what type the object actually is. [origin](./exercise-concepts/hamming.md)
-- the exercise supports any argument that supports modular division and comparison to integers (ie int, float, Decimal) [origin](./exercise-concepts/leap.md)
-
-### [Iterators][iterators]
-
-- the example solution for this exercise uses `zip()`, which returns an _iterator_. [origin](./exercise-concepts/matrix.md)
-
-### [Type hinting][type-hinting]
-
-- In modern Python it's possibly to type hint annotations to parameters and variables, see [typing](https://docs.python.org/3/library/typing.html#module-typing). While not neccessary in Python such annotations can help your code be easier to read, understand, and check automatically using tools like `mypy`. [origin](./exercise-concepts/reverse-string.md)
-
-### [Expressions][expressions]
-
-- the exercise relies on writing an expression that will be evaluated to a return value [origin](./exercise-concepts/leap.md)
-
-### [Int][int]
-
-- the example converts the parsed `str` elements into `int` [origin](./exercise-concepts/matrix.md)
-
-### [Regular Expressions][regular-expressions]
-
-- the `re.sub()` function of the `re` module that replaces a `regular expression` match with a new value. The example solutions use this function in various places to substitute _markdown_ syntax for _HTML_ syntax in the passed in markdown text. [origin](./exercise-concepts/markdown.md)
-- Both the original code to be refactored for this exercise and the example solution import and use the `re` module for Regular Expressions in python. [origin](./exercise-concepts/markdown.md)
-- the `re.match()` function from the `re` module returns a `match` object with any matched values from a specified Regular Expression or pre-compliled Regular Expression. The example uses `re.match()` in multiple places to search for text patterns that need re-formatting or subsitituting. [origin](./exercise-concepts/markdown.md)
-- Various functions in the re module return a `re.Match` _instance_ which in turn has a `Match.group` method. `Match.group` exists even if there are no groups specified in the pattern. See the [Match.group docs](https://docs.python.org/3/library/re.html#re.Match.group) for more detail. [origin](./exercise-concepts/markdown.md)
-- regular expressions is a language of sorts that can detect substrings and extract groups from a string, as well as replace them with something else [origin](./exercise-concepts/phone-number.md)
-- A Domain Specific Language (DSL) for text processing. Like many other programming languages in use, python supports a quasi-dialect of PCRE (_Perl compatible regular expressions_). `Regular expressions` can be used via the core python `re` module, or the third-party `regex` module. Both the original code to be refactored for this exercise and the example solutions use the core `re` module to access `regular expressions` functionality. [origin](./exercise-concepts/markdown.md)
-
-### [Generator comprehension][generator-comprehension]
-
-- a generator comprehension is passed to `sum()` to drive summation without storing all the values in a list first [origin](./exercise-concepts/hamming.md)
-
-### [Importing][importing]
-
-- to use the module, the `import` syntax can be used [origin](./exercise-concepts/phone-number.md)
-- Both the original code to be refactored for the exercise and the example solution use the `import` keyword to import the `re` module in support of Regular Expressions in python. [origin](./exercise-concepts/markdown.md)
-- a reasonably readable solution will require importing from the standard library [origin](./exercise-concepts/allergies.md)
-
-### [Function signature][function-signature]
-
-- functions take named arguments which are accessible within the body of the function; this one requires the student to make a function that accepts 2 [origin](./exercise-concepts/hamming.md)
-
-### [Assignment][assignment]
-
-- The example solution uses assignment for variables and other values. [origin](./exercise-concepts/markdown.md)
-- instance properties need to be assigned passed in data [origin](./exercise-concepts/matrix.md)
-- the example uses assignment for all the instance properties and `instructions` dictionary. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Generators][generators]
-
-- generators calculate then `yield` a value one at a time, as opposed to lists which calculate and return all values in memory at once. A generator will pick up where it leaves off, and generate one item at a time, on demand [origin](./exercise-concepts/hamming.md)
-
-### [Exception handling][exception-handling]
-
-- the exercise requires Exception handling [origin](./exercise-concepts/hamming.md)
-
-### [Operator overloading][operator-overloading]
-
-- How to overload the `+` and `-` operators using the `__add__` and `__sub__` special methods. [origin](./exercise-concepts/clock.md)
-
-### [Multiple Assignment][multiple-assignment]
-
-- Python allows multiple assignment, assigning the items on the left of `=` _in order_ to the values on the right of `=` by forming tuples and then "unpacking" them. This exercise solution uses multiple assignment for the constant values NORTH, EAST, SOUTH, WEST. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Methods of list][methods-of-list]
-
-- the use of methods of list could be useful in this exercise. Methods like `append`, `pop`... [origin](./exercise-concepts/variable-length-quantity.md)
-
-### [Zip][zip]
-
-- builtin that joins multiple iterables into a single one [origin](./exercise-concepts/hamming.md)
-- the example solution for this exercise uses this function to aggregage the column-wise elements of each rown list to form the matrix "columns". [origin](./exercise-concepts/matrix.md)
-
-### [Rich comparison methods][rich-comparison-methods]
-
-- The `__eq__` method is overloaded [origin](./exercise-concepts/clock.md)
-
-### [Inequality][inequality]
-
-- this solution checks if `a` is not equal to `b`. [origin](./exercise-concepts/hamming.md)
-
-### [String Methods][string-methods]
-
-- strings (and other types) have built in instance methods - in this case, `"string".startswith("s")` which are called from the instance of the string itself [origin](./exercise-concepts/phone-number.md)
-- this exercise uses `str.maketrans()` (a static method of `str` that returns a dictionary to create a _translation table_ as required by the `str.translate()` instance method. This method is unusual in that it takes either a single dictionary or two strings of equal length. The example solution for this exercise uses `str.maketrans()` with a two-string argument. [origin](./exercise-concepts/rna-transcription.md)
-
-### [Loops][loops]
-
-- concept required to solve the exercise [origin](./exercise-concepts/binary-search-tree.md)
-- the `for ... in` syntax is useful for looping through a list or other iterable object [origin](./exercise-concepts/hamming.md)
-- the knowledge of `while` and `for` loops are useful to solve this exercise [origin](./exercise-concepts/variable-length-quantity.md)
-
-### [Builtin Function][builtin-functions]
-
-- strings have a length, accessible by calling `len()`, a builtin python function [origin](./exercise-concepts/hamming.md)
-- Python has several handy builtin functions in the stdlib that can operate on many types of data, e.g. `len()`, `max()`, `min()`. Under the hood these are implemented via dunder methods - if an object (and everything in Python is an object) implements the correct dunder methods (see that topic for more information), it can support use in these functions. (For example, if an object implements `__len__`, the len(<object>) will return that value.) Because these functions are not strictly tied to any data type, they can be used almost anywhere, and will crop up again and again as we learn Python. Docs: https://docs.python.org/3/library/functions.html [origin](./exercise-concepts/hamming.md)
-- the `sum()` built-in function is a useful concept to solve the exercise [origin](./exercise-concepts/variable-length-quantity.md)
-- the `len()` built-in function is a useful concept in this exercise [origin](./exercise-concepts/variable-length-quantity.md)
-- the `enumerate` built-in function is a useful concept in this exercise [origin](./exercise-concepts/variable-length-quantity.md)
-
-### [Tuple unpacking][tuple-unpacking]
-
-- the values in an iterable can be unpacked into variables and used, i.e. `for a, b in zip(s1, s2)` [origin](./exercise-concepts/hamming.md)
-- iterating through a list of tuples, i.e. [(1, 2), (2,3)], each piece of each tuple can be unpacked into a separate variable (syntax: `a, b = (1, 2)`); this works for any sort of iterable (lists, for example, and even strings!) but is commonly used with tuples because they are typically of a known size/length, and so can be safely unpacked into N variables, with names. [origin](./exercise-concepts/hamming.md)
-
-### [Iteration][iteration]
-
-- the passed-in string is iterated over, and split into rows. The row lists are iterated over and split into elements [origin](./exercise-concepts/matrix.md)
-- the example uses a `for loop` to iterate through the letters of the passed-in `commands` string and looks up the corresponding values in a dictionary, so that the appropriate methods can be called to move the `robot`. [origin](./exercise-concepts/robot-simulator.md)
-- the `for ... in` concept is useful to loop over the lists [origin](./exercise-concepts/variable-length-quantity.md)
-
-### [Iteration][iterable]
-
-- strings are iterable, which provides a lot of opportunity to leverage Python functions against them [origin](./exercise-concepts/hamming.md)
-- understanding that strings, lists, and other data structures can be iterated over in the same fashion [origin](./exercise-concepts/matrix.md)
-- characters in a string are *iterables* and are subject to index and slice access as described below [origin](./exercise-concepts/phone-number.md)
-- The example solution uses the `for _ in _` syntax to iterate over a list of lines. This is possible because a list is an `iterable`. [origin](./exercise-concepts/markdown.md)
-
-### [Raise][raise]
-
-- the student is required to raise an `Exception` for incorrect input [origin](./exercise-concepts/hamming.md)
-- an appropriate Exceptions must be raised with the `raise` keyword [origin](./exercise-concepts/phone-number.md)
-- the user could find useful the `Exception` concept to `raise` a `ValueError` for incorrect input [origin](./exercise-concepts/variable-length-quantity.md)
-
-### [Boolean Logic][boolean-logic]
-
-- the exercise relies on `and`, `or`, and (optionally) `not` to form Boolean predicates [origin](./exercise-concepts/leap.md)
-- the exercise relies on `and` and `or` to combine Boolean predicates into a single logical answer [origin](./exercise-concepts/leap.md)
-- the `or` and `and` keywords are used [origin](./exercise-concepts/phone-number.md)
-
-### [Binary Numbers][binary-numbers]
-
-- binary numbers are a core important concept for this exercise [origin](./exercise-concepts/variable-length-quantity.md)
-
-### [Composition][composition]
-
-- adding functionality from a class by incorporating an instance of that class in a class you are creating. The example creates a `robot` by instantiating a `compass` and assigning it to the `self`.compass attribute of `robot`. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Enumerated Values][enumerated-values]
-
-- the exercise relies on a fixed enumeration of possible values in a data structure [origin](./exercise-concepts/allergies.md)
-
-### [Identity][identity]
-
-- the best way to check if an element is `None` is via the _identity_ operator, `is` [origin](./exercise-concepts/binary-search-tree.md)
-
-### [Equivalence][equivalence]
-
-- the exercise relies on the `==` and `!=` operators to check that two values are equivalent (or not) [origin](./exercise-concepts/leap.md)
-
-### [Namespaces][namespaces]
-
-- knowing to use `self`.`<propertyname>` for instance properties and `self` as first argument to instance methods in a class [origin](./exercise-concepts/matrix.md)
-- knowing to use `self.<propertyname>` for instance attributes and `self` as first argument to instance methods in a class. Additionally, the example uses `self.<methodname>()` to call a previously stored method name. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Exception hierarchy][exception-hierarchy]
-
-- the idiomatic `Exception` type is a `ValueError`, meaning the input is incorrect [origin](./exercise-concepts/hamming.md)
-
-### [String Splitting][string-splitting]
-
-- The example solution uses `str.split()` to break the passed in markdown string into a list of lines broken up by the `\n` character. The alternate Python example solution uses `str.splitlines()` for the same effect across all line end characters. [origin](./exercise-concepts/markdown.md)
-- the example uses `str.split` with and without seperators to break the passed in string into "rows" and then "elements" [origin](./exercise-concepts/matrix.md)
-
-### [Default Arguments][default-arguments]
-
-- pre-setting function arguments to protect against them not being passed by a caller. The example uses `direction = NORTH` and `x=0, y=0` to ensure those values for a `robot` even if they are not initally passed. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Method Parameters][method-parameters]
-
-- the example `__init__` method has `self`, direction, x, and y (coordinates) as parameters. It also uses `self` and `commands` (a string) for parameters of the `move()` method. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Recursion][recursion]
-
-- recursion is a core concept in this exercise [origin](./exercise-concepts/binary-search-tree.md)
-
-### [Initialization][initialization]
-
-- customizing object instatiation with actions and persisting data. The example uses `__init__` to persist a `compass` object and x, y coordinates assigned to instance attributes. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Range][range]
-
-- the `range()` built-in represents an immutable sequence of numbers (or any object that implements the __index__ magic method). Used in the example to control the number of loops while iterating through a passed-in line or list. [origin](./exercise-concepts/markdown.md)
-- the `range()` built-in type represents an immutable sequence of numbers (or any object that implements the `__index__` dunder method). Used in the example to represent the values from zero to 3 as assigned to NORTH, EAST, SOUTH, WEST. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Powers of Two][powers-of-two]
-
-- the exercise relies on the use of powers of two in fundamental binary (bitwise) operations [origin](./exercise-concepts/allergies.md)
-
-### [class members][class-members]
-
-- student must know how members of a class work [origin](./exercise-concepts/binary-search-tree.md)
-
-### [Higher-Order Function][higher-order-function]
-
-- a function that takes one or more other functions as arguments, _returning_ a function as its return value. The example uses the built-in `property()` as a higher-order function through `@property`. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Generics][generics]
-
-- the exercise is polymorphic across numerical types (ie int, float, Decimal) [origin](./exercise-concepts/leap.md)
-
-### [Slicing][slicing]
-
-- the extended solution to this exercise can employ a slice (returns a copy) instead of calling `.copy()`. [origin](./exercise-concepts/matrix.md)
-- a slice within an iterable, i.e. the slice of items from `<iterable>[x]` to `<iterable>[y]`, can be accessed via `<iterable>[x:y]` notation; a third parameter allows "skipping" by `z`, i.e. `stringname[x:y:z]` [origin](./exercise-concepts/phone-number.md)
-- becase `str` in Python is a sequence type, [slicing](https://docs.python.org/3/reference/expressions.html#slicings) syntax can be used here. Specifically: for syntax `string[start:stop:stride]`: [origin](./exercise-concepts/reverse-string.md)
-
-### [Function Decorator][function-decorator]
-
-- a higher-order function that takes another function as an argument. The "decorating" function extends the behavior of the "decorated" function without explicitly modifying it (i.e. it _wraps_ or _decorates_ it). Called in python by using the `@` symbol and the function name ahead of the function being decorated. The example uses pythons built-in `property()` as a decorator (`@property`) to return a "compound" read-only instance property made up of two separate instance attributes. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Objects][objects]
-
-- creating different instances with different data representing different `matrices` is tested [origin](./exercise-concepts/matrix.md)
-
-### [Order of Evaluation][order-of-evaluation]
-
-- the exercise relies on parentheses to explicitly modify the normal order of evaluation of an expression [origin](./exercise-concepts/leap.md)
-
-### [Methods][methods]
-
-- the exercise relies on the `def` statement to create an instance method [origin](./exercise-concepts/allergies.md)
-- use of `def` to define a class's methods [origin](./exercise-concepts/clock.md)
-- classes can have instance *methods* which are called from an instance of the class (as opposed to class methods, called from the Class itself). The first parameter of an instance method is always `self`, which is provided when calling from the instance (i.e. the programmer does not need to pass it as an argument explicitly). Static methods are methods called from the class itself, and are not connected to an instance of the class. They have access to class attributes (those defined on the class, not connected to the `self`), and do not require an instance of the class to exist. Classes can also define a `property` by using the `@property` decorator (not shown here); a `property` can be "lazily evaluated" to avoid uneeded computation [origin](./exercise-concepts/phone-number.md)
-
-### [Exception Message][exception-message]
-
-- the user can use a custom error message inside the mentioned `ValueError` [origin](./exercise-concepts/variable-length-quantity.md)
-
-### [Operator Precedence][operator-precedence]
-
-- the exercise is most simply stated when the student understands the operator precedence binding rules of Python [origin](./exercise-concepts/leap.md)
-
-### [Instance Attributes][instance-attributes]
-
-- this exercise rquires one or more instance attributes to persist passed in data. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Implied Argument][implied-argument]
-
-- the exercise relies on the implied passing of `self` as the first parameter of bound methods [origin](./exercise-concepts/allergies.md)
-- student needs to know how to use statement `self` in a class [origin](./exercise-concepts/binary-search-tree.md)
-- within the class definition, methods and properties can be accessed via the `self.` notation [origin](./exercise-concepts/phone-number.md)
-
-### [Docstrings][docstrings]
-
-- used to document the function, normally situated right below `def func():` [origin](./exercise-concepts/reverse-string.md)
-
-### [Type Conversion][type-conversion]
-
-- the passed in data is in `str` format but the output is expected as a list of type `int`. [origin](./exercise-concepts/matrix.md)
-
-### [Mutability][mutability]
-
-- in the extended example, knowing there are no protected or private properties in python and adjusting coding patterns [origin](./exercise-concepts/matrix.md)
-- in the example, knowing there are no protected or private properties in python and so consciously mutating `self.x`, `self.y` and `self.compass` through the called instance methods. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Call Semantics][call-semantics]
-
-- knowing that appending `()` to the name of an instance method _calls_ it, since instance methods are _callable_. [origin](./exercise-concepts/robot-simulator.md)
-
-### [Exception catching][exception-catching]
-
-- `Exceptions` can be caught from outside the scope where they are raised, using the `try/except` syntax. All `Exceptions` types inherit from the base class, `Exception` and thus can be caught by either checking specifically for the type of Exception, or for any Exception [origin](./exercise-concepts/hamming.md)
-
-### [Property][property]
-
-- the `property()` built-in is a function that returns a property attribute. When used as a decorator, this transforms the passed-in method into a _getter_ method for read-only attribute with the same name and docstring. [origin](./exercise-concepts/robot-simulator.md)
+[anonymous-functions-general]: ../../../reference/concepts/anonymous_functions.md
+[argument-unpacking]: ./concepts/argument_unpacking.md
+[arguments-and-parameters]: ./concepts/arguments_and_parameters.md
+[arithmetic-general]: ../../../reference/concepts/arithmetic.md
+[assignment]: ./concepts/assignment.md
+[binary-numbers]: ./concepts/binary_numbers.md
+[bitflags]: ./concepts/bitflags.md
+[bitwise-manipulation-general]: ../../../reference/concepts/bitwise_manipulation.md
+[bitwise-operators]: ./concepts/bitwise_operators.md
+[boolean-logic-general]: ../../../reference/concepts/boolean_logic.md
+[boolean-operators]: ./concepts/boolean_operators.md
+[boolean-values]: ./concepts/boolean_values.md
+[booleans-are-integers]: ./concepts/booleans_are_integers.md
+[bracket-notation]: ./concepts/bracket_notation.md
+[builtin-functions-__import__]: ./concepts/builtin_functions/__import__.md
+[builtin-functions-abs]: ./concepts/builtin_functions/abs.md
+[builtin-functions-all]: ./concepts/builtin_functions/all.md
+[builtin-functions-any]: ./concepts/builtin_functions/any.md
+[builtin-functions-ascii]: ./concepts/builtin_functions/ascii.md
+[builtin-functions-bin]: ./concepts/builtin_functions/bin.md
+[builtin-functions-breakpoint]: ./concepts/builtin_functions/breakpoint.md
+[builtin-functions-callable]: ./concepts/builtin_functions/callable.md
+[builtin-functions-chr]: ./concepts/builtin_functions/chr.md
+[builtin-functions-classmethod]: ./concepts/builtin_functions/classmethod.md
+[builtin-functions-compile]: ./concepts/builtin_functions/compile.md
+[builtin-functions-delattr]: ./concepts/builtin_functions/delattr.md
+[builtin-functions-dir]: ./concepts/builtin_functions/dir.md
+[builtin-functions-divmod]: ./concepts/builtin_functions/divmod.md
+[builtin-functions-enumerate]: ./concepts/builtin_functions/enumerate.md
+[builtin-functions-eval]: ./concepts/builtin_functions/eval.md
+[builtin-functions-exec]: ./concepts/builtin_functions/exec.md
+[builtin-functions-filter]: ./concepts/builtin_functions/filter.md
+[builtin-functions-format]: ./concepts/builtin_functions/format.md
+[builtin-functions-getattr]: ./concepts/builtin_functions/getattr.md
+[builtin-functions-globals]: ./concepts/builtin_functions/globals.md
+[builtin-functions-hasattr]: ./concepts/builtin_functions/hasattr.md
+[builtin-functions-hash]: ./concepts/builtin_functions/hash.md
+[builtin-functions-help]: ./concepts/builtin_functions/help.md
+[builtin-functions-hex]: ./concepts/builtin_functions/hex.md
+[builtin-functions-id]: ./concepts/builtin_functions/id.md
+[builtin-functions-input]: ./concepts/builtin_functions/input.md
+[builtin-functions-isinstance]: ./concepts/builtin_functions/isinstance.md
+[builtin-functions-issubclass]: ./concepts/builtin_functions/issubclass.md
+[builtin-functions-iter]: ./concepts/builtin_functions/iter.md
+[builtin-functions-len]: ./concepts/builtin_functions/len.md
+[builtin-functions-locals]: ./concepts/builtin_functions/locals.md
+[builtin-functions-map]: ./concepts/builtin_functions/map.md
+[builtin-functions-max]: ./concepts/builtin_functions/max.md
+[builtin-functions-min]: ./concepts/builtin_functions/min.md
+[builtin-functions-next]: ./concepts/builtin_functions/next.md
+[builtin-functions-oct]: ./concepts/builtin_functions/oct.md
+[builtin-functions-open]: ./concepts/builtin_functions/open.md
+[builtin-functions-ord]: ./concepts/builtin_functions/ord.md
+[builtin-functions-pow]: ./concepts/builtin_functions/pow.md
+[builtin-functions-print]: ./concepts/builtin_functions/print.md
+[builtin-functions-repr]: ./concepts/builtin_functions/repr.md
+[builtin-functions-reversed]: ./concepts/builtin_functions/reversed.md
+[builtin-functions-round]: ./concepts/builtin_functions/round.md
+[builtin-functions-setattr]: ./concepts/builtin_functions/setattr.md
+[builtin-functions-sorted]: ./concepts/builtin_functions/sorted.md
+[builtin-functions-staticmethod]: ./concepts/builtin_functions/staticmethod.md
+[builtin-functions-sum]: ./concepts/builtin_functions/sum.md
+[builtin-functions-super]: ./concepts/builtin_functions/super.md
+[builtin-functions-vars]: ./concepts/builtin_functions/vars.md
+[builtin-functions-zip]: ./concepts/builtin_functions/zip.md
+[builtin-functions]: ./concepts/builtin_functions/README.md
+[builtin-types-bool]: ./concepts/builtin_types/bool.md
+[builtin-types-bytearray]: ./concepts/builtin_types/bytearray.md
+[builtin-types-bytes]: ./concepts/builtin_types/bytes.md
+[builtin-types-complex]: ./concepts/builtin_types/complex.md
+[builtin-types-dict]: ./concepts/builtin_types/dict.md
+[builtin-types-float]: ./concepts/builtin_types/float.md
+[builtin-types-frozenset]: ./concepts/builtin_types/frozenset.md
+[builtin-types-int]: ./concepts/builtin_types/int.md
+[builtin-types-list]: ./concepts/builtin_types/list.md
+[builtin-types-memoryview]: ./concepts/builtin_types/memoryview.md
+[builtin-types-object]: ./concepts/builtin_types/object.md
+[builtin-types-property]: ./concepts/builtin_types/property.md
+[builtin-types-range]: ./concepts/builtin_types/range.md
+[builtin-types-set]: ./concepts/builtin_types/set.md
+[builtin-types-slice]: ./concepts/builtin_types/slice.md
+[builtin-types-str]: ./concepts/builtin_types/str.md
+[builtin-types-tuple]: ./concepts/builtin_types/tuple.md
+[builtin-types-type]: ./concepts/builtin_types/type.md
+[builtin-types]: ./concepts/builtin_types/README.md
+[call-semantics]: ./concepts/call_semantics.md
+[class-composition]: ./concepts/class_composition.md
+[class-inheritance]: ./concepts/class_inheritance.md
+[class-members]: ./concepts/class_members.md
+[class-methods]: ./concepts/class_methods.md
+[classes-general]: ../../../reference/concepts/classes.md
+[comments-general]: ../../../reference/concepts/comments.md
+[comparison-operators]: ./concepts/comparison_operators.md
+[comparisons-general]: ../../../reference/concepts/comparisons.md
+[composition-general]: ../../../reference/concepts/composition.md
+[comprehension-syntax]: ./concepts/comprehension_syntax.md
+[conditional-structures]: ./concepts/conditional_structures.md
+[conditionals-general]: ../../../reference/concepts/conditionals.md
+[constants]: ./concepts/constants.md
+[constructor]: ./concepts/constructor.md
+[custom-classes]: ./concepts/custom_classes.md
+[data-structures]: ./concepts/data_structures.md
+[decorators-as-higher-order-functions]: ./concepts/decorators_as_higher_order_functions.md
+[decorators]: ./concepts/decorators.md
+[default-arguments]: ./concepts/default_arguments.md
+[dict-comprehension]: ./concepts/dict_comprehension.md
+[docstrings]: ./concepts/docstrings.md
+[duck-typing]: ./concepts/duck_typing.md
+[dunder-methods]: ./concepts/dunder_methods.md
+[dynamic-typing]: ./concepts/dynamic_typing.md
+[encapsulation-general]: ../../../reference/concepts/encapsulation.md
+[enumerated-values]: ./concepts/enumerated_values.md
+[enumeration]: ../../../reference/concepts/enumeration.md
+[equality-operator]: ./concepts/equality_operator.md
+[equivalence]: ./concepts/equivalence.md
+[everything-is-an-object]: ./concepts/everything_is_an_object.md
+[exception-catching]: ./concepts/exception_catching.md
+[exception-handling]: ./concepts/exception_handling.md
+[exception-hierarchy]: ./concepts/exception_hierarchy.md
+[exception-message]: ./concepts/exception_message.md
+[exceptions-general]: ./concepts/exceptions.md
+[expressions]: ./concepts/expressions.md
+[for-loops]: ./concepts/for_loops.md
+[function-definition]: ./concepts/function_definition.md
+[function-signature]: ./concepts/function_signature.md
+[functions-general]: ../../../reference/concepts/functions.md
+[generator-comprehension]: ./concepts/generator_comprehension.md
+[generators]: ./concepts/generators.md
+[higher-order-functions]: ../../../reference/concepts/higher_order_functions.md
+[identity-testing]: ./concepts/identity_testing.md
+[immutability]: ../../../reference/concepts/immutability.md
+[immutability]: ./concepts/immutability.md
+[implicit-self]: ./concepts/implicit_self.md
+[importing]: ./concepts/importing.md
+[indexing]: ./concepts/indexing.md
+[inequality]: ./concepts/inequality.md
+[inheritance-general]: ../../../reference/concepts/inheritance.md
+[initialization]: ./concepts/initialization.md
+[instance-attributes]: ./concepts/instance_attributes.md
+[instance-methods]: ./concepts/instance_methods.md
+[instance-properties]: ./concepts/instance_properties.md
+[instantiation]: ./concepts/instantiation.md
+[integer-comparison]: ./concepts/integer_comparison.md
+[interfaces-general]: ../../../reference/concepts/interfaces.md
+[iterables]: ./concepts/iterables.md
+[iteration]: ./concepts/iteration.md
+[iterators]: ./concepts/iterators.md
+[keyword-and]: ./concepts/keywords/and.md
+[keyword-as]: ./concepts/keywords/as.md
+[keyword-assert]: ./concepts/keywords/assert.md
+[keyword-async]: ./concepts/keywords/async.md
+[keyword-await]: ./concepts/keywords/await.md
+[keyword-break]: ./concepts/keywords/break.md
+[keyword-class]: ./concepts/keywords/class.md
+[keyword-continue]: ./concepts/keywords/continue.md
+[keyword-def]: ./concepts/keywords/def.md
+[keyword-del]: ./concepts/keywords/del.md
+[keyword-elif]: ./concepts/keywords/elif.md
+[keyword-else]: ./concepts/keywords/else.md
+[keyword-except]: ./concepts/keywords/except.md
+[keyword-false]: ./concepts/keywords/false.md
+[keyword-finally]: ./concepts/keywords/finally.md
+[keyword-for]: ./concepts/keywords/for.md
+[keyword-from]: ./concepts/keywords/from.md
+[keyword-global]: ./concepts/keywords/global.md
+[keyword-if]: ./concepts/keywords/if.md
+[keyword-import]: ./concepts/keywords/import.md
+[keyword-in]: ./concepts/keywords/in.md
+[keyword-is]: ./concepts/keywords/is.md
+[keyword-lambda]: ./concepts/keywords/lambda.md
+[keyword-none]: ./concepts/keywords/none.md
+[keyword-nonlocal]: ./concepts/keywords/nonlocal.md
+[keyword-not]: ./concepts/keywords/not.md
+[keyword-only-parameters]: ./concepts/keyword_only_parameters.md
+[keyword-or]: ./concepts/keywords/or.md
+[keyword-parameters]: ./concepts/keyword_parameters.md
+[keyword-pass]: ./concepts/keywords/pass.md
+[keyword-raise]: ./concepts/keywords/raise.md
+[keyword-return]: ./concepts/keywords/return.md
+[keyword-true]: ./concepts/keywords/true.md
+[keyword-try]: ./concepts/keywords/try.md
+[keyword-while]: ./concepts/keywords/while.md
+[keyword-with]: ./concepts/keywords/with.md
+[keyword-yield]: ./concepts/keywords/yield.md
+[keywords]: ./concepts/keywords/README.md
+[list-comprehension]: ./concepts/list_comprehension.md
+[list-methods]: ./concepts/list_methods.md
+[lookup-efficiency]: ./concepts/lookup_efficiency.md
+[loops-general]: ../../../reference/concepts/loops.md
+[membership-testing]: ./concepts/membership_testing.md
+[method-overloading]: ./concepts/method_overloading.md
+[methods-general]: ../../../reference/concepts/methods.md
+[modular-division]: ./concepts/modular_division.md
+[multiple-assignment]: ./concepts/multiple_assignment.md
+[mutability]: ./concepts/mutability.md
+[mutation-general]: ../../../reference/concepts/mutation.md
+[namespaces]: ./concepts/namespaces.md
+[nested-functions]: ../../../reference/concepts/nested_functions.md
+[non-public-methods]: ./concepts/non_public_methods.md
+[objects-general]: ../../../reference/concepts/objects.md
+[operator-overloading]: ./concepts/operator_overloading.md
+[operator-precedence]: ./concepts/operator_precedence.md
+[operators]: ./concepts/operators.md
+[order-of-evaluation]: ./concepts/order_of_evaluation.md
+[partial-application]: ../../../reference/concepts/partial_application.md
+[pep-8-style-guide]: ./concepts/pep_8_style_guide.md
+[polymorphism-general]: ../../../reference/concepts/polymorphism.md
+[positional-only-parameters]: ./concepts/positional_only_parameters.md
+[positional-parameters]: ./concepts/positional_parameters.md
+[powers-of-two]: ./concepts/powers_of_two.md
+[property-decorator]: ./concepts/property_decorator.md
+[python-enhancement-proposals]: ./concepts/python_enhancement_proposals.md
+[pythonic]: ./concepts/pythonic.md
+[raise]: ./concepts/raise.md
+[recursion]: ../../../reference/concepts/recursion.md
+[recursive-data-structures]: ./concepts/recursive_data_structures.md
+[regular-expressions]: ./concepts/regular_expressions.md
+[repl]: ../../../reference/concepts/repl.md
+[return-value]: ./concepts/return_value.md
+[rich-comparison-methods]: ./concepts/rich_comparison_methods.md
+[scope]: ../../../reference/concepts/scope.md
+[set-comprehension]: ./concepts/set_comprehension.md
+[short-circuiting]: ./concepts/short_circuiting.md
+[slicing]: ./concepts/slicing.md
+[standard-library]: ./concepts/standard_library.md
+[star-args]: ./concepts/star_args.md
+[star-star-kwargs]: ./concepts/star_star_kwargs.md
+[state]: ../../../reference/concepts/state.md
+[static-methods]: ./concepts/static_methods.md
+[string-formatting]: ./concepts/string_formatting.md
+[string-methods]: ./concepts/string_methods.md
+[string-splitting]: ./concepts/string_splitting.md
+[string-translation]: ./concepts/string_translation.md
+[tuple-unpacking]: ./concepts/tuple_unpacking.md
+[type-conversion]: ./concepts/type_conversion.md
+[type-hinting]: ./concepts/type_hinting.md
+[variables]: ../../../reference/concepts/variables.md
+[while-loops]: ./concepts/while_loops.md
+[zen-of-python]: ./concepts/zen_of_python.md
+
+## Implementations  
+
+
+| Concept Name | Section | Issue Link | PR Link |
+|--------------|:----------|:--------:|:--------:|
+| [and][keyword-and] |`general` | [ ]() | [ ]() |
+| [Anonymous functions][anonymous-functions-general] | `functional`| [ ]() | [ ]() |
+| [Arithmetic][arithmetic-general]| `general` |[ ]() | [ ]() |
+| [`*args`][star-args] |`general` |[ ]() | [ ]() |
+| [Arguments & Parameters][arguments-and-parameters]|`general` |[ ]() | [ ]() |
+| [Argument unpacking][argument-unpacking]| `basic` |[ ]() | [ ]() |
+|[as][keyword-as] |`intermediate`,`keyword` |[ ]() | [ ]() |
+|[assert][keyword-assert] |`exceptions`, `intermediate`, `keyword` |[ ]() | [ ]() |
+| [Assignment][assignment] |`general` | [ ]() | [ ]() |
+| [Binary numbers][binary-numbers]|`general` | [ ]() | [ ]() |
+| [bitflags][bitflags]| `general`| [ ]() | [ ]() |
+| [Bitwise manipulation][bitwise-manipulation-general]|`general` | [ ]() | [ ]() |
+| [Bitwise operators][bitwise-operators]|`general` | [ ]() | [ ]() |
+| [bool][builtin-types-bool] |`basic`, `types`, `builtin`|  [#1030](https://github.com/exercism/v3/issues/1030)         |         |
+| [Boolean logic][boolean-logic-general]|`general` | [ ]() | [ ]() |
+| [Boolean operators][boolean-operators]|`general` | [ ]() | [ ]() |
+| [Boolean values][boolean-values]|`general` | [ ]() | [ ]() |
+| [Booleans are integers][booleans-are-integers]| `general`| [ ]() | [ ]() |
+| [Bracket notation][bracket-notation] |`general` | [ ]() | [ ]() |
+| [break][keyword-break] | `general`, `keyword`| [ ]() | [ ]() |
+| [bytearray][builtin-types-bytearray] | `intermediate`, `types`, `builtins`| [ ]() | [ ]() |
+| [bytes][builtin-types-bytes] |`intermediate`|  [ ]() | [ ]() |
+| [Call semantics][call-semantics]| `general` | [ ]() | [ ]() |
+| [class][keyword-class] |`OOP`, `keyword` | [ ]() | [ ]() |
+| [Classes][classes-general] | `general`, `OOP`| [ ]() | [ ]() |
+| [Class Composition][class-composition] |`OOP` | [ ]() | [ ]() |
+| [Class Inheritance][class-inheritance] |`OOP` | [ ]() | [ ]() | 
+| [Class members][class-members]| `OOP`| [ ]() | [ ]() |
+| [Class methods][class-methods]| `OOP`| [ ]() | [ ]() |
+| [Comments][comments-general]| `basic` | [ ]() | [ ]() |
+| [Comparisons][comparisons-general] |`general` |  [ ]() | [ ]()  |
+| [Comparison operators][comparison-operators]| `basic` | [ ]() | [ ]() |
+| [complex][builtin-types-complex] | `intermediate`, `types`, `builtin` | [ ]() | [ ]() |
+| [Composition][composition-general] | `general`, `OOP`| [ ]() | [ ]() |
+| [Comprehension Syntax][comprehension-syntax]| `intermediate`| BethanyG [ ]() | [ ]() |
+| [Conditionals][conditionals-general] |`general` | [#1103](https://github.com/exercism/v3/issues/1103) | [ ]() |
+| [Constructor][constructor] | `OOP`| [ ]() | [ ]() |
+| [Conditional structures][conditional-structures] |`general` | [ ]() | [ ]() |
+| [Constants][constants] |`general` | [ ]() | [ ]() |
+|[continue][keyword-continue]| `general`, `keyword`| [ ]() | [ ]() |
+| [Custom Classes][custom-classes] | `OOP` | [ ]() | [ ]() |
+|[Data Structures][data-structures]| `intermediate`, `data-structures`| [ ]() | [ ]() |
+| [decorators][decorators] |`functional`, `intermediate` | [ ]() | [ ]() |
+| [Decorators as higher-order functions][decorators-as-higher-order-functions] |`functional`, `intermediate` | [ ]() | [ ]() |
+| [def][keyword-def] |`general`, `keyword` | [ ]() | [ ]() |
+| [Default arguments][default-arguments] |`general` | [ ]() | [ ]() |
+|[del][keyword-del] | `general`, `keyword` | [ ]() | [ ]() |
+| [dict][builtin-types-dict] |`basic`, `types`, `containers`|   [#877](https://github.com/exercism/v3/issues/877)  |         |
+| [Dict comprehension][dict-comprehension] | `intermediate` | BethanyG [ ]() | [ ]() |
+| [Docstrings][docstrings] |`intermediate` | [ ]() | [ ]() |
+| [Duck Typing][duck-typing] | `general`, `OOP` | [ ]() | [ ]() |
+| [Dynamic Typing][dynamic-typing] |`general`, `types`, `OOP` | [ ]() | [ ]() |
+|[elif][keyword-elif]|`general` |[ ]() | [ ]() |
+|[else][keyword-else] | `general`, `conditionals`, `keyword` | [ ]() | [ ]() |
+|[else][keyword-else]| `exceptions`, `keyword`, `intermediate` | [ ]() | [ ]() |
+|[Encapsulation][encapsulation-general]|`general`, `OOP` | [ ]() | [ ]() |
+|[Enumeration][enumeration]| `general`| [ ]() | [ ]() |
+|[Enumerated values][enumerated-values]|`general` | [ ]() | [ ]() |
+| [Equality operator][equality-operator] | `general` | [ ]() | [ ]() |
+| [Equivalence][equivalence] |`general` | [ ]() | [ ]() | 
+| [Everything-is-an-object][everything-is-an-object] | `OOP`  | [ ]() | [ ]() | 
+| [except][keyword-except] |`exceptions`, `intermediate`, `keyword` | [ ]() | [ ]() | 
+| [Exceptions][exceptions-general]| `general`, `intermediate`| [ ]() | [ ]() | 
+| [Exception catching][exception-catching] | `intermediate`| [ ]() | [ ]() | 
+| [Exception handling][exception-handling]| `intermediate`| [ ]() | [ ]() | 
+| [Exception hierarchy][exception-hierarchy]| `intermediate` | [ ]() | [ ]() | 
+| [Exception message][exception-message]| `intermediate`| [ ]() | [ ]() | 
+| [Exiting loops][]| `general` | [ ]() | [ ]() | 
+| [Expressions][expressions] |`basic` | [ ]() | [ ]() | 
+| [False][keyword-false] |`basic`, `builtin`, `keyword` | [ ]() | [ ]() | 
+| [filter][builtin-functions-filter] | `functional`, `builtin` |  []() | []() | 
+| [finally][keyword-false] |`intermediate`,, `keyword` | [ ]() | [ ]() | 
+| [float][builtin-types-float] |`basic`, `types`, `builtin`|   [#1026](https://github.com/exercism/v3/issues/1026)         |         |
+| [for][keyword-for] |`general`, `keyword` | [ ]() | [ ]() | 
+| [for loops][for-loops] | `general` | [ ]() | [ ]() | 
+| [frozenset][builtin-types-frozenset] |`intermediate`, `types`, `builtins`, `containers`| [ ]() | [ ]() |
+| [from][keyword-from] | `intermediate`, `keyword`| [ ]() | [ ]() | 
+| [Functions][functions-general] | `general`| [ ]() | [ ]() | 
+| [Function Definition][function-definition] | `general` | [ ]() | [ ]() | 
+|[Function Signature][function-signature] |`general` | [ ]() | [ ]() | 
+|[Generator comprehension][generator-comprehension]| `intermediate`| BethanyG[ ]() | [ ]() |
+|[Generators][generators]|`general`, `intermediate` | [ ]() | [ ]() |
+|[global][keyword-global] |`general`, `keyword` | [ ]() | [ ]() |
+|[Higher-order functions][higher-order-functions] | `functional` | [ ]() | [ ]() |
+|[Identity testing][identity-testing]|`general` | [ ]() | [ ]() |
+|[if][keyword-if] | `general`, `keyword` | [ ]() | [ ]() |
+|[Immutability][immutability] |`functional` | [ ]() | [ ]() |
+|[Immutability in Python][immutability] | `general`, `OOP` | [ ]() | [ ]() |
+|[implicit self][implicit-self] | `OOP`| [ ]() | [ ]() |
+|[import][keyword-import] |`intermediate`, `keyword` |  [ ]() |  [ ]()  |
+|[importing][importing] |`intermediate` | [ ]() | [ ]() |
+|[in][keyword-in] | `basic`, `keyword` | [ ]() | [ ]() |
+| [Indexing][indexing] |`general` | [ ]() | [ ]() |
+| [Inequality][inequality] | `general`| [ ]() | [ ]() | 
+| [Inheritance][inheritance-general] | `general`, `OOP`| [ ]() | [ ]() | 
+| [Instance Attributes][instance-attributes] | `OOP`| [ ]() | [ ]() | 
+| [Instance Methods][instance-methods] | `OOP`| [ ]() | [ ]() | 
+| [Instance Properties][instance-properties] |`OOP` | [ ]() | [ ]() | 
+| [Instantiation][instantiation] | `OOP`| [ ]() | [ ]() | 
+| [Initialization][initialization] | `OOP` | [ ]() | [ ]() | 
+| [int][builtin-types-int] |`basic`, `types`, `builtin`|   [#1025](https://github.com/exercism/v3/issues/1025)         |         |
+| [Integer comparison][integer-comparison]| `general` |[ ]() | [ ]() |
+| [Interfaces][interfaces-general] |`general`, `OOP` |[ ]() | [ ]() |
+| [Iterators][iterators] | `general`|[ ]() | [ ]() |
+| [Iterables][iterables] | `general`|[ ]() | [ ]() |
+| [Iteration][iteration] |`general` |[ ]() | [ ]() |
+| [is][keyword-is] |`general`, `keyword` |[ ]() | [ ]() |
+| [Keyword parameters][keyword-parameters]|`general` |[ ]() | [ ]() |
+| [Keyword-only parameters][keyword-only-parameters]|`general` |[ ]() | [ ]() |
+|[`**kwargs`][star-star-kwargs] | `general` |[ ]() | [ ]() |
+| [lambda][keyword-lambda] |`intermediate`, `keyword`, `functional`|   [ ]()  |    [ ]()  |
+| [list][builtin-types-list] |`basic`, `types`, `builtin`, `containers`|   [#859](https://github.com/exercism/v3/issues/859)        |         |
+| [list comprehension][list-comprehension] |`intermediate` | BethanyG[ ]() | [ ]() |
+| [list methods][list-methods] |`basic`| [ ]() | [ ]() |
+| [Lookup efficiency][lookup-efficiency] |`intermediate`, `data-structures` |[ ]() | [ ]() |
+| [Loops][loops-general] |`general` |[ ]() | [ ]() |
+| [map][builtin-functions-map] |`functional`, `builtin`| [ ]() | [ ]() |
+| [Membership testing][membership-testing] |`general`| [ ]() | [ ]() |
+| [memoryview][builtin-types-memoryview] | `advanced`, `types`, `builtins`| [ ]() | [ ]() |
+| [Methods][class-methods] | `OOP`| [ ]() | [ ]() |
+| [Modular Division][modular-division]|`general` | [ ]() | [ ]() |
+|  [Multiple assignment][multiple-assignment] |`general` | [ ]() | [ ]() |
+|  [Mutation][mutation-general] | `OOP` | [ ]() | [ ]() |
+|  [Mutability in Python][mutability]|`general` | [ ]() | [ ]() |
+| [Namespaces][namespaces]| `general`| [ ]() | [ ]() |
+| [Nested functions][nested-functions] |`functional`| [ ]() | [ ]() |
+| [nonlocal][keyword-nonlocal] |`general`, `keyword` | [ ]() | [ ]() |
+| [Non-Public Methods][non-public-methods]| `OOP`| [ ]() | [ ]() |
+|  [None][keyword-none]|`basic`, `builtin`, `keyword` |  [#1031](https://github.com/exercism/v3/issues/1031)         |         |
+| [not][keyword-not]|`general` | [ ]() | [ ]() | 
+|[Objects][objects-general]| `general`, `OOP` | [ ]()   | [ ]() |
+| [object][builtin-types-object] | `advanced`, `OOP`| [ ]() | [ ]() |
+| [Operators][operators] | `general`| [ ]() | [ ]() | 
+| [Operator overloading][operator-overloading] | `general`| [ ]() | [ ]() | 
+| [Operator precedence][operator-precedence] | `general`| [ ]() | [ ]() | 
+| [or][keyword-or] |`general` | [ ]() | [ ]() |
+| [Order of Evaluation][order-of-evaluation]| `basic` | [ ]() | [ ]() |
+| [Partial application][partial-application] | `functional`, `intermediate` | [ ]() | [ ]() |
+| [pass][keyword-pass]| `basic` | [ ]() | [ ]() |
+| [Polymorphism][polymorphism-general] | `general`, `OOP`| [ ]() | [ ]() |
+| [Positional parameters][positional-parameters] |`general` | [ ]() | [ ]() |
+| [Positional-only parameters][positional-only-parameters] | `general` | [ ]() | [ ]() |
+| [Powers of Two][powers-of-two]| `general`| [ ]() | [ ]() |
+| [property][builtin-types-property] |`advanced`, `OOP`| [ ]() | [ ]() |
+| [Property Decorator][property-decorator]| `OOP`, `intermediate` | [ ]() | [ ]() |
+| [raise][raise]| `exceptions`, `intermediate`, `keyword` | [ ]() | [ ]() |
+|[range][builtin-types-range] |`basic`, `types`, `builtins`| [ ]() | [ ]() |
+|[recursion][recursion] |`functional`| [ ]() | [ ]() |
+|[Recursive data structures][recursive-data-structures] |`intermediate`, `data-structures` | [ ]() | [ ]() |
+|[Regular Expressions][regular-expressions] |`intermediate` | [ ]() | [ ]() |
+|[return][keyword-return]| `general` | [ ]() | [ ]() |
+|[Return Values][return-value]| `general`| [ ]() | [ ]() |
+| [Rich comparison methods][rich-comparison-methods] |`general` | [ ]() | [ ]() | 
+|[Scope][scope]| `general` | [ ]() | [ ]() |
+| [set][builtin-types-set] | `basic` , `types`, `builtins`, `containers`| [ #1086](https://github.com/exercism/v3/issues/1086) | [ ]() | 
+|  [Set comprehension][set-comprehension] |`intermediate` | BethanyG [ ]()  |  [ ]()  | 
+| [slice][builtin-types-slice]| `advanced`, `types`, `builtins`, `containers`| [ ]() | [ ]() |
+| [Slicing][slicing]|`general`| [ ]() | [ ]() |
+| [Short circuiting][short-circuiting]| `general`| [ ]() | [ ]() |
+|[Standard Library][standard-library] | `general`, `intermediate`| [ ]() | [ ]() |
+|[State][state] | `OOP` | [ ]() | [ ]() |
+| [Static Methods][static-methods] | `OOP` | [ ]() | [ ]() |
+|[str][builtin-types-str] |`basic`, `types`, `builtin` | []() | [#824](https://github.com/exercism/v3/pull/824)|
+| [String formatting][string-formatting] |`basic`| [ ]() | [ ]() |
+| [String methods][string-methods] |`basic`| [ ]() | [ ]() |
+| [String splitting][string-splitting]| `basic`| [ ]() | [ ]() |
+| [String translation][string-translation] |`basic`| [ ]() | [ ]() |
+| [True][keyword-true]|`basic`, `builtin`, `keyword` | [ ]() | [ ]() |
+| [try][keyword-try]|`intermediate`, `exceptions`, `keyword` | [ ]() | [ ]() |
+|[tuple][builtin-types-tuple] | `basic`, `types`, `builtin`, `containers` | [#1097](https://github.com/exercism/v3/issues/1097) | [ ]() |
+|[Tuple unpacking][tuple-unpacking]| `general`| [ ]() | [ ]() |
+| [type][builtin-types-type] |`advanced`, `OOP`| [ ]() | [ ]() |
+| [type conversion][type-conversion] | `basic`, `builtin`| [ ]() | [ ]() |
+| [Type hinting][type-hinting] | `general`| [ ]() | [ ]() |
+| [Variables][variables] |`general` | [ ]() | [ ]() |
+| [while loops][while-loops] | `general` | [ ]() | [ ]() |
+| [while][keyword-while] |`keyword`, `general` | [ ]() | [ ]() |
+| [with][keyword-with] |`intermediate`, `keyword` | [ ]() | [ ]() |
+| [yield][keyword-yield] | `general`, `keyword`, `intermediate` |[ ]() | [ ]() |

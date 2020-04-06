@@ -5,7 +5,7 @@ There are two different types of numbers in C#:
 
 The two most common numeric types in C# are `int` and `double`. An `int` is a 32-bit integer and a `double` is a 64-bit floating-point number.
 
-## Converting between number types
+Arithmetic is done using the standard arithmetic operators. Numbers can be compared using the standard numeric comparison operators.
 
 C# has two types of numeric conversions:
 
@@ -13,3 +13,24 @@ C# has two types of numeric conversions:
 2. Explicit conversions: data could be lost and additional syntax in the form of a _cast_ is required.
 
 As an `int` has less precision than a `double`, converting from an `int` to a `double` is safe and is thus an implicit conversion. However, converting from a `double` to an `int` could mean losing data, so that requires an explicit conversion.
+
+In this exercise you must conditionally execute logic. The most common way to do this in C# is by using an `if/else` statement:
+
+```csharp
+int x = 6;
+
+if (x <= 5)
+{
+    // Execute logic if x <= 5
+}
+else if (x > 7)
+{
+    // Execute logic if x > 7
+}
+else
+{
+    // Execute logic in all other cases
+}
+```
+
+The condition of an `if` statement must be of type `bool`. C# has no concept of _truthy_ values.
