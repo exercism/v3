@@ -4,13 +4,12 @@ Each log line is a string formatted as follows: `"[<LVL>]: <MESSAGE>"`.
 
 These are the different log levels:
 
-- `Unknown`
-- `Trace`
-- `Debug`
-- `Info`
-- `Warning`
-- `Error`
-- `Fatal`
+- `TRC` (trace)
+- `DBG` (debug)
+- `INF` (info)
+- `WRN` (warning)
+- `ERR` (error)
+- `FTL` (fatal)
 
 You have three tasks.
 
