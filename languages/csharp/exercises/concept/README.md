@@ -11,7 +11,7 @@ These are the concept exercises that have currently been implemented, as well as
 | [`numbers`][concept-exercise-numbers]                               | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if` | -                                                                   |
 | [`numbers-floating-point`][concept-exercise-numbers-floating-point] | `numbers-floating-point`<br/>`loops-while`                          | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if` |
 | [`strings`][concept-exercise-strings]                               | `strings-basic`                                                     | -                                                                   |
-| [`enums`][concept-exercise-enums]                                   | `enums-basic`<br/>`conditionals-ternary`                            | `strings-basic`                                                     |
+| [`enums`][concept-exercise-enums]                                   | `enums-basic`<br/>`conditionals-switch-basic`                            | `strings-basic`<br/>`numbers-basic`<br/>`conditionals-if`<br/>`type-conversion-numbers`                                                     |
 | [`dates`][concept-exercise-dates]                                   | `dates-basic`<br/>`time-basic`                                      | `numbers-basic`<br/>`strings-basic`                                 |
 | [`enums-advanced`][concept-exercise-enums-advanced]                 | `enums-advanced`                                                    | `enums-basic`<br/>`attributes-basic`</br>`bitwise-operations`       |
 
