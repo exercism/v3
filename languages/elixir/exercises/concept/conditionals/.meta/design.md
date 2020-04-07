@@ -32,6 +32,7 @@ The Concepts this exercise unlocks are:
 This exercise's prerequisites Concepts are:
 
 - `basics`: be able to define a named function, return a value.
+- `booleans`: be able to work with boolean values, boolean expressions
 
 ## Representer
 
