@@ -1,4 +1,4 @@
-Elixir is a dynamically-typed language, meaning that the type of a variable is only checked at run-time.  In Elixir, we refer to variable assignement as being _bound_ to a value.  Using the [match `=` operator][match], we can bind a value to a variable name:
+Elixir is a dynamically-typed language, meaning that the type of a variable is only checked at run-time.  In Elixir, we refer to variable assignment as being _bound_ to a value.  Using the [match `=` operator][match], we can bind a value to a variable name:
 
 ```elixir
 variable = 10 # Bind the integer value 10
