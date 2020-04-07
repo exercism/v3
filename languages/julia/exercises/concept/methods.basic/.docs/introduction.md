@@ -21,7 +21,7 @@ The latter is most commonly used for one-line function definitions or mathematic
 
 ### Invoking functions
 
-Invoking a method is done by specifying its name and passing arguments for each of the method's parameters:
+Invoking a function is done by specifying its name and passing arguments for each of the function's parameters:
 
 ```julia
 add(x, y) = x + y
