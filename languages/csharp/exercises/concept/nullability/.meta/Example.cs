@@ -2,23 +2,25 @@ using System;
 
 public static class Badge
 {
-    public static int WidthInPixels(string? text,
-                                    int? fontSizePx)
+    public static string PrintLabel(string label, int? maximumWidth)
     {
-
-        return (text??"").Length*(fontSizePx??0);
+        if (maximumWidth == null)
+        {
+            return label;
+        }
+        else
+        {
+            var output = "";
+            for(int i=0;i<label.Length;i+=maximumWidth.Value)
+            {
+                output += label.Substring(i, Math.Min(maximumWidth.Value, label.Length - i)) + "\n";
+            }
+            return output.Trim();
+        }
     }
 
-    public static string Label(string? firstName,
-                               string? middleName,
-                               string? familyName)
+    public static string Label(int id, string name, string? department)
     {
-        var output = "";
-
-        output += firstName ?? "";
-        output += middleName == null ? "" : (string.IsNullOrEmpty(output)?"":" ") + middleName;
-        output += familyName == null ? "" : (string.IsNullOrEmpty(output)?"":" ") + familyName;
-
-        return output;
+        return $"[{id}] - {name}{department?.ToUpper()?.Insert(0, " - ")}";
     }
 }

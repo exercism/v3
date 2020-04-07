@@ -2,16 +2,13 @@ using System;
 
 public static class Badge
 {
-    public static int WidthInPixels(string? text,
-                                     int? fontSizePx)
+    public static string PrintLabel(string label, int? maximumWidth)
     {
-        throw new NotImplementedException("Please implement the Badge.ComputeWidthPx method");
+        throw new NotImplementedException("Please implement the Badge.PrintLabel method");
     }
 
-    public static string Label(string? firstName,
-                               string? middleName,
-                               string? familyName)
+    public static string Label(int id, string name, string? department)
     {
-        throw new NotImplementedException("Please implement the Badge.ComputeNameText method");
+        throw new NotImplementedException("Please implement the Badge.Label method");
     }
 }

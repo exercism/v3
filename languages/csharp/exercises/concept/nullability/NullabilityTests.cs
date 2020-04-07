@@ -4,30 +4,26 @@ public class NullabilityTests
 {
     [Fact]
     public void FullName() =>
-        Assert.Equal("Matilda Leana Cox", Badge.Label("Matilda", "Leana", "Cox"));
+        Assert.Equal("[17] - Matilda Cox - MARKETING", Badge.Label(17, "Matilda Cox", "Marketing"));
 
     [Fact]
-    public void MissingMiddleName() =>
-        Assert.Equal("Matilda Cox", Badge.Label("Matilda", null, "Cox"));
+    public void MissingDepartment() =>
+        Assert.Equal("[17] - Matilda Cox", Badge.Label(17, "Matilda Cox", null));
 
     [Fact]
-    public void OnlyFirstName() =>
-        Assert.Equal("Matilda", Badge.Label("Matilda", null, null));
+    public void PrintSingleLine() =>
+        Assert.Equal("[17] - Matilda Cox - MARKETING", Badge.PrintLabel("[17] - Matilda Cox - MARKETING", 150));
 
     [Fact]
-    public void OnlyLastName() =>
-        Assert.Equal("Cox", Badge.Label(null, null, "Cox"));
+    public void PrintTwoLines() =>
+        Assert.Equal("[17] - Matilda \nCox - MARKETING", Badge.PrintLabel("[17] - Matilda Cox - MARKETING", 15));
 
     [Fact]
-    public void FontSize() =>
-        Assert.Equal(3*17, Badge.WidthInPixels("Cox", 17));
+    public void PrintThreeLines() =>
+        Assert.Equal("[17] - Matilda \nLeanna Cox - EU\n MARKETING", Badge.PrintLabel("[17] - Matilda Leanna Cox - EU MARKETING", 15));
 
     [Fact]
-    public void NothingToDisplay() =>
-        Assert.Equal(0, Badge.WidthInPixels(null, 17));
-
-    [Fact]
-    public void NoFontSize() =>
-        Assert.Equal(0, Badge.WidthInPixels("Matilda", null));
+    public void PrintNoMaxWidth() =>
+        Assert.Equal("[17] - Matilda Cox - MARKETING", Badge.PrintLabel("[17] - Matilda Cox - MARKETING", null));
 
 }
