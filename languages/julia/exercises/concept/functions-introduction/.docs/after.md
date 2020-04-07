@@ -1,4 +1,14 @@
-### Implicit returns
+### Summary
+
+After solving this exercise, you should be familiar with:
+
+- Defining functions that take one or more arguments and return a value.
+- Doing arithmetic calculations with integers.
+- Invoking functions.
+
+### Further details
+
+#### Implicit returns
 
 The `return` statement is optional in Julia.
 The last value in the function body will be returned implicitely:
@@ -19,7 +29,7 @@ end
 
 are equivalent.
 
-### Naming
+#### Naming
 
 Julia code often uses "germaniccase" for short function and variable names, e.g. `preptime`, `isbits`, or `eigvals`, while longer names use "snake_case", e.g. `total_working_time`.
 The line when to use which is a bit blurry.
