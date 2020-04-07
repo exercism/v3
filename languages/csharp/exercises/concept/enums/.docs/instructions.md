@@ -28,7 +28,7 @@ Next, implement the `LogLine.ParseLogLevel()` method to parse the log level of a
 
 ```csharp
 LogLine.ParseLogLevel("[INF]: File deleted")
-// Returns: LogLevel.Info
+// => LogLevel.Info
 ```
 
 ### 2. Support unknown log level
