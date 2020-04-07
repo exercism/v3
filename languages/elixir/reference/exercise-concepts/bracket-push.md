@@ -1,10 +1,10 @@
 # Concepts for bracket-push
 
-## Approach:
+## Approach
 
 Note: there were a lot of different approaches to this one...
 
-### Recursive (?)
+### Recursive approach
 
 ```elixir
 defmodule BracketPush do
@@ -66,9 +66,42 @@ defmodule BracketPush do
 end
 ```
 
-## Concepts:
+### Stack-based approach
 
-The big concept here is the `[head | tail]` traversal pattern (just like a parser): i.e. how do we traverse the string once and avoid having to use regular expressions? 
+```elixir
+defmodule MatchingBrackets do
+  @doc """
+  Checks that all the brackets and braces in the string are matched correctly, and nested correctly
+  """
+  @spec check_brackets(String.t()) :: boolean
+  def check_brackets(str), do: do_check_brackets(str, [])
+
+  defp do_check_brackets(<<char, rest::binary>>, brackets_list) when char in [?(, ?[, ?{] do
+    do_check_brackets(rest, [char | brackets_list])
+  end
+
+  defp do_check_brackets(<<char, rest::binary>>, brackets_list) when char in [?), ?], ?}] do
+    {head, tail} = List.pop_at(brackets_list, 0)
+    brackets_match?(head, char) && do_check_brackets(rest, tail)
+  end
+
+  defp do_check_brackets(<<_char, rest::binary>>, brackets_list) do
+    do_check_brackets(rest, brackets_list)
+  end
+
+  defp do_check_brackets("", []), do: true
+  defp do_check_brackets("", [_head | _tail]), do: false
+
+  defp brackets_match?(?(, ?)), do: true
+  defp brackets_match?(?[, ?]), do: true
+  defp brackets_match?(?{, ?}), do: true
+  defp brackets_match?(_left, _right), do: false
+end
+```
+
+## Concepts
+
+The big concept here is the `[head | tail]` traversal pattern (just like a parser): i.e. how do we traverse the string once and avoid having to use regular expressions?
 
 - recursion `[head | tail]`
 - naming
@@ -88,6 +121,8 @@ The big concept here is the `[head | tail]` traversal pattern (just like a parse
   - Kernel
     - in/2
 - types
-  - binaries 
-      - special forms `<< >>` syntax
+  - binaries
+    - special forms `<< >>` syntax
   - string
+  - lists
+    - head and tail notation forms
