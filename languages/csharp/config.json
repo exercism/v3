@@ -24,7 +24,7 @@
       {
         "slug": "enums",
         "uuid": "047b895b-7039-4af6-ad3a-17fd818d0b88",
-        "concepts": ["enums"],
+        "concepts": ["enums", "constant-switch"],
         "prerequisites": ["strings", "conditionals"]
       },
       {
