@@ -21,6 +21,7 @@ public static class Badge
 
     public static string Label(int id, string name, string? department)
     {
-        return $"[{id}] - {name}{department?.ToUpper()?.Insert(0, " - ")}";
+        var separator = " - ";
+        return $"[{id}]{separator}{name}{department?.ToUpper()?.Insert(0, separator) ?? separator + "GUEST"}";
     }
 }

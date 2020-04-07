@@ -8,7 +8,7 @@ public class NullabilityTests
 
     [Fact]
     public void MissingDepartment() =>
-        Assert.Equal("[17] - Matilda Cox", Badge.Label(17, "Matilda Cox", null));
+        Assert.Equal("[17] - Matilda Cox - GUEST", Badge.Label(17, "Matilda Cox", null));
 
     [Fact]
     public void PrintSingleLine() =>
