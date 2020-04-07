@@ -26,7 +26,7 @@ After completing this exercise, the student should:
 The Concepts this exercise unlocks are:
 
 - `enums`: know of the existence of the `enum` keyword; know how to define enum members; know how to assign values to enum members; know how to get an enum's numeric value; know how to convert an `enum` to a `string`.
-- `conditionals-switch-basic`: know how to use a `switch` statement using constant values.
+- `constant-switch`: know how to use a `switch` statement using constant values.
 
 ## Prequisites
 
