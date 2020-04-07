@@ -1,6 +1,6 @@
 Sometimes we need to make it so that variables have no particular
 value, i.e. they are empty.  In C#, this corresponds to the [literal
-`null`][null-keyword]. 
+`null`][null-keyword].
 
 In this exercise, we saw the definition of [nullable
 types][nullable-types-tutorial], and how the compiler and runtime of
@@ -12,8 +12,14 @@ help us avoiding calling methods on possibly `null` variables, by
 raising warnings. You can use [the operator
 `!`][null-forgiving-operator] to avoid warnings in places we are sure
 a nullable variable is not null, but the compiler cannot detect
-it. Finally, we can use [the operator `??`][null-coalescing-operator]
-to provide a default value for a nullable variable.
+it.
+
+Finally, we can use [the operators `??` and
+`??=`][null-coalescing-operator] to provide a default value for a
+nullable variable and [the operator `?.`][null-conditional-operator]
+to chain accesses to methods, properties or attributes of potentially
+`null` objects on an expression that evaluates to `null` instead of
+throwing a `NullReferenceException`.
 
 At run time, calling any method or property on a
 `null` value throws a `NullReferenceException` exception.
@@ -40,4 +46,5 @@ For more information, refer to [this
 [nullable-csharp-8]: https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references
 [null-forgiving-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-forgiving
 [null-coalescing-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-coalescing-operator
+[null-conditional-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-
 [nullable-reference-types-tutorial]: https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/february/essential-net-csharp-8-0-and-nullable-reference-types
