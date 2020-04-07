@@ -4,7 +4,7 @@ badges for factory employees.
 Employees have a first and family name, and optionally a middle name. An employee's badge consists of a single line with the employee's first, middle and family name on it (in that order), with the name parts separated by a single space.
 
 For example, if my first name is `Ernest`, my middle name is `Johnny`
-and by family name is `Payne`, my badge name is: `ERNEST JOHNNY
+and my family name is `Payne`, then my badge name is: `ERNEST JOHNNY
 PAYNE`.
 
 Your task will be writing a static method called `Badge.Label`. It
