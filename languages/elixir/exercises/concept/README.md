@@ -9,6 +9,8 @@ These are the concept exercises that have currently been implemented, as well as
 | exercise | concepts | prerequisites |
 | -------- | -------- | ------------- |
 | `basics` | `basics` | none          |
+| `booleans` | `booleans` | `basics` |
+| `conditionals` | `conditionals`, `atoms` | `booleans` |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse.
 
