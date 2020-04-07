@@ -50,10 +50,11 @@
         "uuid": "978bcc16-0c49-4328-92e9-79f6204ce350",
         "concepts": ["properties"],
         "prerequisites": [
-          "strings-basic",
-          "numbers-basic",
-          "conditionals-if",
-          "type-conversion-numbers"
+          "numbers",
+          "floating-point-numbers",
+          "classes",
+          "enums",
+          "exceptions"
         ]
       },
       {
