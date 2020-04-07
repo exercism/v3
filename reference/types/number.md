@@ -10,6 +10,7 @@ An number is a generic numeric type that often encompasses multiple more specifi
 # Implementations
 
 - [C#][implementation-csharp]
+- [Go][implementation-go]
 
 [language-javascript]: ../../languages/javascript/README.md
 [language-kotlin]: ../../languages/kotlin/README.md
@@ -23,3 +24,4 @@ An number is a generic numeric type that often encompasses multiple more specifi
 [type-unsigned]: ./unsigned.md
 [wiki-number]: https://en.wikipedia.org/wiki/Double-precision_floating-point_format
 [implementation-csharp]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md
+[implementation-go]: ../../languages/go/exercises/concept/numbers/.docs/instructions.md
