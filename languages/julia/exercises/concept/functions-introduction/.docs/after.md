@@ -8,6 +8,8 @@ After solving this exercise, you should be familiar with:
 
 ### Further details
 
+For more information about functions, consider taking a look at the [Julia Manual][functions]. Note that the concepts after the "The `return` Keyword" section will be introduced in future exercises.
+
 #### Implicit returns
 
 The `return` statement is optional in Julia.
@@ -37,3 +39,4 @@ Some Julia style guides suggest using snake_case everywhere, e.g. the [Blue Styl
 Note that you should not use "UpperCamelCase" or "camelCase" for variables or functions, as that is reserved for type names, which we will get to later.
 
 [blue-style]: https://github.com/invenia/BlueStyle
+[functions]: https://docs.julialang.org/en/v1/manual/functions/
