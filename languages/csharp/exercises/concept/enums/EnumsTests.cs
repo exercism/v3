@@ -2,7 +2,7 @@ using Xunit;
 
 public class LogLineTests
 {
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void ParseTrace() =>
         Assert.Equal(LogLevel.Trace, LogLine.ParseLogLevel("[TRC]: Line 84 - Console.WriteLine('Hello World');"));
         
