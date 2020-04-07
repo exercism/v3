@@ -2,6 +2,12 @@ using System;
 
 public static class Badge
 {
+    public static string Label(int id, string name, string? department)
+    {
+        var separator = " - ";
+        return $"[{id}]{separator}{name}{separator}{department?.ToUpper() ?? "GUEST"}";
+    }
+
     public static string PrintLabel(string label, int? maximumWidth)
     {
         if (maximumWidth == null)
@@ -17,11 +23,5 @@ public static class Badge
             }
             return output.Trim();
         }
-    }
-
-    public static string Label(int id, string name, string? department)
-    {
-        var separator = " - ";
-        return $"[{id}]{separator}{name}{separator}{department?.ToUpper() ?? "GUEST"}";
     }
 }
