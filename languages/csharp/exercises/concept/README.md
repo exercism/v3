@@ -10,7 +10,7 @@ These are the concept exercises that have currently been implemented, as well as
 | ------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------------------------------- |
 | [`basics`][concept-exercise-basics]                                 | `basics`                                   | -                                                                                 |
 | [`dates`][concept-exercise-datetimes]                               | `datetimes`                                | `numbers`<br/>`strings`<br/>`classes`                                             |
-| [`enums`][concept-exercise-enums]                                   | `enums-basic`<br/>`constant-switch`        | `strings`<br/>`conditionals`<br/>                                                 |
+| [`enums`][concept-exercise-enums]                                   | `enums-basic`<br/>`constant-switch`        | `strings`<br/>`conditionals`                                                      |
 | [`flag-enums`][concept-exercise-flag-enums]                         | `flag-enums`<br/>`bit-manipulation`        | `enums`<br/>`attributes`</br>`integers`                                           |
 | [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`while-loops` | `numbers`<br/>`conditionals`                                                      |
 | [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`               | `basics`                                                                          |
