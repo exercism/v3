@@ -12,7 +12,7 @@ After completing this exercise, the student should:
 - Know how to define enum members.
 - Know how to assign values to enum members.
 - Know how to get an enum's numeric value.
-- Know how to convert an `enum` to a `string`
+- Know how to use a `switch` statement to handle multiple conditions.
 
 ## Out of scope
 
@@ -32,10 +32,8 @@ The Concepts this exercise unlocks are:
 
 This exercise's prerequisites Concepts are:
 
-- `strings-basic`: log lines are `string` values.
-- `numbers-basic`: enum values are assigned a numeric value.
-- `conditionals-if`: used to handle the case when the enum could not be parsed.
-- `type-conversion-numbers`: casting the enum to an `int`.
+- `strings`: log lines are `string` values.
+- `conditionals`: know how to execute conditional logic.
 
 ## Representer
 

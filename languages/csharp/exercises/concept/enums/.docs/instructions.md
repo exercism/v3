@@ -37,7 +37,7 @@ Unfortunately, occasionally some log lines have an unknown log level. To gracefu
 
 ```csharp
 LogLine.ParseLogLevel("[XYZ]: Overly specific, out of context message")
-// Returns: LogLevel.Unknown
+// => LogLevel.Unknown
 ```
 
 ### 3. Convert log line to short format
@@ -58,5 +58,5 @@ Implement the `LogLine.OutputForShortLog()` method that can output the shortened
 
 ```csharp
 LogLine.OutputForShortLog(LogLevel.Error, "Stack overflow")
-// Returns: "6:Stack overflow"
+// => "6:Stack overflow"
 ```
