@@ -56,10 +56,19 @@ Console.WriteLine(userName!.Length);
 Finally, sometimes, we are want to provide a default value to a
 variable, in case it is `null`. You can use a `if` or a `?:` operator
 to do that. However, as you can imagine, this can become cumbersome
-the more nullable variables you have on your code.  
+the more nullable variables you have on your code.
 
-The `??` operator is a simple shortcut for that:
+The `??` and `?.` operators are a simple shortcuts for that:
 
 ```csharp
-Console.WriteLine((userName ?? "").Length);
+// prints: "default" if `userName` is `null`
+Console.WriteLine(userName ?? "default");
+
+// prints: `null` if `userName` is `null`
+Console.WriteLine(userName?.Length);
 ```
+
+With `??` you can replace an expression with another value if the
+expression evaluates to `null`. `?.` allows one to chain method calls
+on potentially `null` objects. The whole expression will evaluate to
+`null` without throwing a `NullReferenceException`.
