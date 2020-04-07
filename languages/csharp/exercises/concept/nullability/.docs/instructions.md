@@ -1,30 +1,39 @@
 In this exercise you'll be writing code to helping printing name
 badges for factory employees.
 
-Employees have a first and family name, and optionally a middle name. An employee's badge consists of a single line with the employee's first, middle and family name on it (in that order), with the name parts separated by a single space.
-
-For example, if my first name is `Ernest`, my middle name is `Johnny`
-and my family name is `Payne`, then my badge name is: `ERNEST JOHNNY
-PAYNE`.
+Employees have an id, a name and a department name.  For example, if
+my id is `734`, my name is `Ernest Johnny Payne`, and my department is
+`Strategic Communication` my badge name is: `[734] - Ernest Johnny
+Payne - STRATEGIC COMMUNICATION`.
 
 Your task will be writing a static method called `Badge.Label`. It
-will take as input parameters the first, middle and last names of the
-employee. You will then compute the string to be printed on the name
-line of the badge. Notice that you'll need to include spaces between
-words when applicable.
+will take as input parameters the id, name and department of an
+employee. You will then compute the string to be printed on the
+badge. 
+
+Notice that you'll need to include dashes between words when
+applicable and write the department in UPPER CASE.
+
+You will also need to deal with people who have no department. Just
+print `GUEST` as their department name.
+
+Since badges have physical size, you need to wrap the text if it gets
+too long.
 
 Your second task will be writing a static method called
-`Badge.WidthInPixels`. It will take a string and an int (a font size) as
-input and it will compute the width in pixels of the print text.
+`Badge.PrintLabel`. It will take a string generated with the first
+method and the width of the badge and add a new line character on the
+right points on the string so that it fits on the provided width.
 
-For a font size of `12px`, the total width of the name of the string
-`Ernest Johnny Payne` will be:
+So for example, if the label to print is `[734] - Ernest Johnny
+Payne - STRATEGIC COMMUNICATION` and the width of the badge has a
+maximun width of 30 characters, your method should return the
+following string:
 
 ```
-6*12 + 1*12 + 6*12 + 1*12 + 5*12 = 228
+[734] - Ernest Johnny Payne - 
+STRATEGIC COMMUNICATION
 ```
 
-**PS**: Let us assume that the all parameters are optional, i.e. an
-employee may have no first name, no middle name or no family name on
-the system. Additionally, if someone forgets to configure a proper font
-size, your code should react accordingly.
+The width is optional, so if it is not provided, just return the
+string as is.
