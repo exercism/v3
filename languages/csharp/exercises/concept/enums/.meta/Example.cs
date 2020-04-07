@@ -6,9 +6,9 @@ public enum LogLevel
     Debug = 1,
     Info = 4,
     Warning = 5,
-	Error = 6,
-	Fatal = 7,
-	Unknown = 42
+    Error = 6,
+    Fatal = 7,
+    Unknown = 42
 }
 
 public static class LogLine
