@@ -4,6 +4,7 @@
 
 # JavaScript
 yarn.lock
+package-lock.json
 
 # Ruby
 Gemfile
