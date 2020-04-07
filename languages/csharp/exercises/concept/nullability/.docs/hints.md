@@ -9,22 +9,25 @@ The following reference documentation may help you finishing this exercice:
 - [Null-conditional operator][null-conditional-operator]: explains how the null-conditional operator works.
 - [Nullable reference types tutorial][nullable-reference-types-tutorial]: tutorial on nullable reference types.
 
+# 1. Badge.Label
+
+* Do not forget to convert the department to upper case if it is not `nulll`;
+* Do not forget to add `GUEST` as the department name if there's no
+   provided department name.
+
+# 2. Badge.PrintLabel
+
+* If theres no `maximumWidth`, just return the `label` string;
+* Which method from the `string` class may help you to extract a
+   [substring][https://docs.microsoft.com/en-us/dotnet/api/system.string.substring?view=netframework-4.8]
+   of a string?
+* Do all slices always have the same length? If not, how to handle
+   this case?
+
 [null-keyword]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null
 [nullable-types-tutorial]: https://csharp.net-tutorials.com/data-types/nullable-types/
 [null-coalescing-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-coalescing-operator
 [null-conditional-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator
 [nullable-reference-types]: https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references
 [nullable-reference-types-tutorial]: https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/february/essential-net-csharp-8-0-and-nullable-reference-types
-
-# 1. Badge.Label
-
-* Concatenate all parts of the name on a single string;
-* For each new concatenated part, decide if there is something to add the the output string;
-* For each new concatenated part, decide if you need to prepend a state or not.
-
-# 2. Badge.WithInPixels
-
-* Determine if the text as an actual string or `null`;
-* Determine if there is an actual font size, or `null`;
-* Multiply the length of the string (or 0) by the font size or `0`.
-
+[substring]: https://docs.microsoft.com/en-us/dotnet/api/system.string.substring?view=netframework-4.8
