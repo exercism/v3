@@ -1,5 +1,5 @@
 The entire Julia track will require you to treat your solution like a mini-libraries, i.e. you need to define functions, types etc. which will then be run against a test suite.
-For that reason, we will introduce basic, named functions as the very first concept.
+For that reason, we will introduce named functions as the very first concept.
 
 ### Defining functions
 
@@ -38,3 +38,12 @@ For now, assume that that Julia will figure out the types automagically and don'
 
 Julia supports two kinds of comments.
 Single line comments are preceded by `#` and multiline comments are inserted between `#=` and `=#`.
+
+```julia
+add(1, 3) # returns 4
+
+#= Some random code that's no longer needed but not deleted
+sub(x, y) = x - y
+mulsub(x, y, z) = sub(mul(x, y), z)
+=#
+```
