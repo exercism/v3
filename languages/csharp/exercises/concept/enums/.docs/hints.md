@@ -9,7 +9,7 @@
 
 ### 2. Support unknown log level
 
-- There's a [default](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/switch#the-default-case) statement to catch all unspecified cases.
+- There is a [special switch case](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/switch#the-default-case) that can be used to catch unspecified cases.
 
 ### 3. Convert log line to short format
 
