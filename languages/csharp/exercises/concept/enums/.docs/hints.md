@@ -5,7 +5,7 @@
 ### 1. Parse log level
 
 - There is a method to get a substring within a string, [Substring()](https://docs.microsoft.com/en-us/dotnet/api/system.string.substring?view=netframework-4.8)
-- You can use a [switch-case statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/switch) to map each log level code to an enum.
+- You can use a [`switch` statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/switch) to elegantly handle the various log levels.
 
 ### 2. Support unknown log level
 
