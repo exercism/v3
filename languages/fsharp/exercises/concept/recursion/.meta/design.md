@@ -29,6 +29,7 @@ This exercise's prerequisites Concepts are:
 - `pattern-matching`: know how to do basic pattern matching.
 - `discriminated-unions`: know how to do define functions and work with parameters.
 - `lists`: know how to work with lists.
+- `higher-order-functions`: know how to define inner functions.
 
 ## Representer
 
