@@ -4,7 +4,7 @@
 
 ### 1. Parse log level
 
-- There is a method to get a substring within a string, [Substring()](https://docs.microsoft.com/en-us/dotnet/api/system.string.substring?view=netframework-4.8)
+- There is a [method to get a part of a string](https://docs.microsoft.com/en-us/dotnet/api/system.string.substring?view=netcore-3.1).
 - You can use a [`switch` statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/switch) to elegantly handle the various log levels.
 
 ### 2. Support unknown log level
