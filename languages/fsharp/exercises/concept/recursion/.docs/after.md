@@ -15,6 +15,20 @@ The best way to prevent recursive functions from overflowing the stack is to wri
 Here is an example of a function that sums the values in a list in a tail-recursive way:
 
 ```fsharp
+let rec sumRecursive acc remainder =
+    match remainder with
+    | [] -> acc
+    | x::xs -> sumRecursive (acc + x) xs
+
+let sum list = sumRecursive 0 list
+
+sum [1; 2; 3]
+// => 6
+```
+
+It is quite common to define the recursive helper as a nested function, which hides the recursive nature of the function from the caller:
+
+```fsharp
 let sum list =
     let rec sumRecursive acc remainder =
         match remainder with
@@ -22,9 +36,6 @@ let sum list =
         | x::xs -> sumRecursive (acc + x) xs
 
     sumRecursive 0 list
-
-sum [1; 2; 3]
-// => 6
 ```
 
 F# supports [recursive types through discriminated union types][recursive-types]. A recursive discriminated union type has one or more of its cases refer to the discriminated union type itself in their data.
