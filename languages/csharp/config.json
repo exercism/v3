@@ -65,7 +65,8 @@
           "strings-basic",
           "integers-basic",
           "variables-basic",
-          "exceptions-basic"
+          "exceptions-basic",
+          "loops-basic"
         ]
       },
       {
