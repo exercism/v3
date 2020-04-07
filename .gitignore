@@ -9,3 +9,6 @@ package-lock.json
 # Ruby
 Gemfile
 Gemfile.lock
+
+# Rust
+Cargo.lock
