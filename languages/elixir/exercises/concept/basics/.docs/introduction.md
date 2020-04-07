@@ -1,4 +1,4 @@
-Elixir is a dynamically-typed language, meaning that the type of a variable is only checked at run-time. Using the match `=` operator, we can bind a value to a variable name:
+Elixir is a dynamically-typed language, meaning that the type of a variable is only checked at runtime. Using the match `=` operator, we can bind a value to a variable name:
 
 ```elixir
 variable = 10 # Bind the integer value 10
@@ -14,7 +14,7 @@ count = 2 # Re-bind to the new value of 2
 count = false
 ```
 
-Elixir is an [functional-programming language][functional-programming] and requires all named functions to be defined in a _module_. The `defmodule` keyword is used to define a module. All modules are available to all other modules at run-time and do not require an _access modifier_ to make them visible to other parts of the program.  A _module_ is analogous to a _class_ in other programming languages.
+Elixir is an [functional-programming language][functional-programming] and requires all named functions to be defined in a _module_. The `defmodule` keyword is used to define a module. All modules are available to all other modules at runtime and do not require an _access modifier_ to make them visible to other parts of the program.  A _module_ is analogous to a _class_ in other programming languages.
 
 ```elixir
 defmodule Calculator do
