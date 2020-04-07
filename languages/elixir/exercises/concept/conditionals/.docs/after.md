@@ -7,7 +7,7 @@ variable = :atom
 
 _Atoms_ are internally represented by an integer in a lookup table, which are set automatically.  It is not possible to change this internal value.  It is generally considered to be an [anti-pattern][anti-pattern] to dynamically create atoms from user supplied input.
 
-_Atoms_ are also often used to represent finite states. As many functions in Elixir's standard library return a _tuple_ of an atom and the result:
+_Atoms_ are also often used to represent finite states. As many functions in Elixir's standard library return an atom to annotate the result:
 
 ```elixir
 Enum.fetch([1], 0)
