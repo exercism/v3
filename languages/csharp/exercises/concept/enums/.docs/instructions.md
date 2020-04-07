@@ -24,7 +24,7 @@ Define a `LogLevel` enum that has six elements corresponding to the above log le
 - `Error`
 - `Fatal`
 
-Next, implement the `LogLine.ParseLogLevel` method to parse the log level of a log line:
+Next, implement the `LogLine.ParseLogLevel()` method to parse the log level of a log line:
 
 ```csharp
 LogLine.ParseLogLevel("[INF]: File deleted")
