@@ -1,5 +1,5 @@
 Sometimes, we need to indicate that a variable has no value.  In C#,
-we can use the `null` literal to denote the absence of a value.  A
+we use the `null` literal to denote the absence of a value.  A
 *nullable* type is a type that allows `null` values.  The operator `?`
 can be added as a suffix to a type to make it nullable.
 
@@ -23,11 +23,12 @@ b = null; // Valid
 b = 6;    // Valid
 ```
 
-A common mistake is trying to call a method on a variable that has been
-set to `null`.  This will cause the C# runtime to raise an
-exception called `NullReferenceException`.
+A common mistake is trying to call a method or set/get a property on a
+variable whose value is `null`.  This will cause the C# runtime
+to raise an exception called `NullReferenceException`.
 
-If you try to compile the following code:
+The C# compiler can help us avoiding such errors. If we try to
+compile the following code:
 
 ```csharp
 string? userName = ...;
@@ -53,10 +54,10 @@ In order to dismiss the warning, we can use the operator `!`:
 Console.WriteLine(userName!.Length);
 ```
 
-Finally, sometimes, we are want to provide a default value to a
-variable, in case it is `null`. You can use a `if` or a `?:` operator
-to do that. However, as you can imagine, this can become cumbersome
-the more nullable variables you have on your code.
+Finally, sometimes, we want to provide a default value to a variable,
+in case it is `null`. We know how to use an `if` block to check
+that. However, the more nullable variables we need to check, the more
+cumbersome it gets.
 
 The `??` and `?.` operators are a simple shortcuts for that:
 
@@ -64,11 +65,38 @@ The `??` and `?.` operators are a simple shortcuts for that:
 // prints: "default" if `userName` is `null`
 Console.WriteLine(userName ?? "default");
 
+// This code is equivalent to:
+string userNameValue;
+if (userName == null) 
+{
+    userNameValue = "default";
+}
+else
+{
+    userNameValue = userName;
+}
+Console.WriteLine(userNameValue);
+
+
+
 // prints: `null` if `userName` is `null`
 Console.WriteLine(userName?.Length);
+
+// This code is equivalent to 
+int userNameLength;
+if (userName == null) 
+{
+    userNameLength = 0;
+}
+else
+{
+    userNameLength = userName.Length;
+}
+Console.WriteLine(userNameLength);
 ```
 
-With `??` you can replace an expression with another value if the
-expression evaluates to `null`. `?.` allows one to chain method calls
-on potentially `null` objects. The whole expression will evaluate to
-`null` without throwing a `NullReferenceException`.
+With `A ?? B`, the C# runtime replaces the expression `A` with `B` if
+`A` evaluates to `null`. The operator `?.` behaves similarly, the C#
+runtime evaluates the expression `A?.B` by `null` if `A` is null,
+without throwing a `NullReferenceException`. It executes `A.B`
+otherwise.
