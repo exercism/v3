@@ -1,0 +1,7 @@
+# editorconfig.org
+root = true
+
+[*.md]
+# trailing whitespaces are converted to <br>
+trim_trailing_whitespace = false
+insert_final_newline = false
