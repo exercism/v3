@@ -26,13 +26,29 @@ This exercise extracts information from log lines. The reference implementation 
 
 #### Implementations
 
-| Track | Exercise                         | Changes |
-| ----- | -------------------------------- | ------- |
-| C#    | [strings][implementation-csharp] | None    |
-| F#    | [strings][implementation-fsharp] | None    |
-| Ruby  | [strings][implementation-ruby]   | None    |
-| Python| [strings][implementation-python] | None    |
-| Go    | [strings][implementation-go]     | None    |
+| Track  | Exercise                         | Changes |
+| ------ | -------------------------------- | ------- |
+| C#     | [strings][implementation-csharp] | None    |
+| F#     | [strings][implementation-fsharp] | None    |
+| Ruby   | [strings][implementation-ruby]   | None    |
+| Python | [strings][implementation-python] | None    |
+| Go     | [strings][implementation-go]     | None    |
+
+### Poetry Club
+
+This exercise is a conversation between you and the security guard. The reference implementation (JavaScript) teaches:
+
+- String substrings (first, last letter)
+- String casing (Word capitalization, normalisation).
+- String reversing
+- String concatenation
+
+#### Implementations
+
+| Track        | Exercise                             | Changes |
+| ------------ | ------------------------------------ | ------- |
+| JavaScript   | [strings][implementation-javascript] | None    |
+
 
 [type-char]: ./char.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/strings/.docs/introduction.md
@@ -40,3 +56,4 @@ This exercise extracts information from log lines. The reference implementation 
 [implementation-ruby]: ../../languages/ruby/exercises/concept/strings/.docs/introduction.md
 [implementation-python]: ../../languages/python/exercises/concept/strings/.docs/introduction.md
 [implementation-go]: ../../languages/go/exercises/concept/basic-strings/.docs/introduction.md
+[implementation-javascript]: ../../languages/go/exercises/concept/strings/.docs/
