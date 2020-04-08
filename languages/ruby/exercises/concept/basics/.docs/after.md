@@ -20,8 +20,11 @@ Remember, in Ruby everything is an object. Even classes are instances of the cla
 1.class
 => Integer
 
-Integer.instance_of?(Class)
-=> true
+Integer.is_a?(Object)
+# => true
+
+Class.is_a?(Object)
+# => true
 ```
 
 This means that we can also define classes like this:
