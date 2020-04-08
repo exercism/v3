@@ -2,6 +2,18 @@
 
 Null is a concept that denotes the absence of a value.
 
+## Exercises
+
+### Nullability
+
+This exercise prints employee information on a badge and wraps the
+text to fit on a given maximum width. The reference implementation
+(Csharp) teaches:
+
+- the `null` literal
+- basic `null` checking at compile time and runtime
+- nullable types
+
 #### Implementations
 
 | Track | Exercise                         | Changes |
