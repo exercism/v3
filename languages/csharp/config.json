@@ -60,13 +60,12 @@
       {
         "slug": "nullability",
         "uuid": "370e7e54-6a96-11ea-bc55-0242ac130003",
-        "concepts": ["nullability-basic"],
+        "concepts": ["nullability"],
         "prerequisites": [
-          "strings-basic",
-          "integers-basic",
-          "variables-basic",
-          "exceptions-basic",
-          "loops-basic"
+          "strings",
+          "basics",
+          "exceptions",
+          "for-loops"
         ]
       },
       {
