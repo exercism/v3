@@ -44,6 +44,8 @@ code-as-data, macros
 unique-symbols, macros
 reader-macros.using, macros
 reader-macros.defining, macros
+printing, io
+reading, io
 arrays, sequences
 association-lists, sequences
 circular-lists, sequences
