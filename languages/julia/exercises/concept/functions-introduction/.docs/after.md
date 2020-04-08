@@ -2,9 +2,9 @@
 
 This exercise showed how to:
 
-- Defining functions that take one or more arguments and return a value.
-- Doing arithmetic calculations with integers.
-- Invoking functions.
+- Define functions that take one or more arguments and return a value.
+- Do arithmetic calculations with integers.
+- Invoke functions.
 
 #### Defining functions
 
