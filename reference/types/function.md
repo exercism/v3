@@ -27,7 +27,9 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 | Track | Exercise                        | Changes |
 | ----- | ------------------------------- | ------- |
 | F#    | [basics][implementation-fsharp] | None    |
+| Julia | [functions-introduction][implementation-julia] | None |
 
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/introduction.md
+[implementation-julia]: ../../languages/julia/exercises/concept/functions-introduction/.docs/introduction.md
 [concept-functions]: ../concepts/functions.md
 [concept-generics]: ../concepts/generics.md
