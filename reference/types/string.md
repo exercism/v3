@@ -56,4 +56,4 @@ This exercise is a conversation between you and the security guard. The referenc
 [implementation-ruby]: ../../languages/ruby/exercises/concept/strings/.docs/introduction.md
 [implementation-python]: ../../languages/python/exercises/concept/strings/.docs/introduction.md
 [implementation-go]: ../../languages/go/exercises/concept/basic-strings/.docs/introduction.md
-[implementation-javascript]: ../../languages/go/exercises/concept/strings/.docs/
+[implementation-javascript]: ../../languages/javascript/exercises/concept/strings/.docs/
