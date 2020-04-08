@@ -4,26 +4,26 @@ public class NullabilityTests
 {
     [Fact]
     public void FullName() =>
-        Assert.Equal("[17] - Matilda Cox - MARKETING", Badge.Label(17, "Matilda Cox", "Marketing"));
+        Assert.Equal("[17] - Ryder Herbert - MARKETING", Badge.Label(17, "Ryder Herbert", "Marketing"));
 
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void MissingDepartment() =>
-        Assert.Equal("[17] - Matilda Cox - GUEST", Badge.Label(17, "Matilda Cox", null));
+        Assert.Equal("[59] - Bogdan Rosario - GUEST", Badge.Label(59, "Bogdan Rosario", null));
 
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void PrintSingleLine() =>
-        Assert.Equal("[17] - Matilda Cox - MARKETING", Badge.PrintLabel("[17] - Matilda Cox - MARKETING", 150));
+        Assert.Equal("[23337] - Tilly Swift - SALES", Badge.PrintLabel("[23337] - Tilly Swift - SALES", 150));
 
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void PrintTwoLines() =>
-        Assert.Equal("[17] - Matilda \nCox - MARKETING", Badge.PrintLabel("[17] - Matilda Cox - MARKETING", 15));
+        Assert.Equal("[27] - Matilda \nCox - MARKETING", Badge.PrintLabel("[27] - Matilda Cox - MARKETING", 15));
 
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void PrintThreeLines() =>
-        Assert.Equal("[17] - Matilda \nLeanna Cox - EU\n MARKETING", Badge.PrintLabel("[17] - Matilda Leanna Cox - EU MARKETING", 15));
+        Assert.Equal("[12] - Matilda \nLeanna Cox - EU\n MARKETING", Badge.PrintLabel("[12] - Matilda Leanna Cox - EU MARKETING", 15));
 
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void PrintNoMaxWidth() =>
-        Assert.Equal("[17] - Matilda Cox - MARKETING", Badge.PrintLabel("[17] - Matilda Cox - MARKETING", null));
+        Assert.Equal("[99] - Matilda Cox - MARKETING", Badge.PrintLabel("[99] - Matilda Cox - MARKETING", null));
 
 }
