@@ -1,6 +1,6 @@
 ### Summary
 
-After solving this exercise, you should be familiar with:
+This exercise showed how to:
 
 - Defining functions that take one or more arguments and return a value.
 - Doing arithmetic calculations with integers.
