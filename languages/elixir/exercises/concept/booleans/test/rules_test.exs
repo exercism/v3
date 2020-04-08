@@ -31,11 +31,6 @@ defmodule RulesTest do
   end
 
   @tag :pending # remove line to run test
-  test "win if all dots eaten" do
-    assert Rules.win?(true)
-  end
-
-  @tag :pending # remove line to run test
   test "loss if touched a ghost without a pill" do
     assert Rules.lose?(false, true)
   end
@@ -43,5 +38,20 @@ defmodule RulesTest do
   @tag :pending # remove line to run test
   test "no loss if touched a ghost with a pill" do
     refute Rules.lose?(true, true)
+  end
+
+  @tag :pending # remove line to run test
+  test "win if all dots eaten" do
+    assert Rules.win?(true, false, false)
+  end
+
+  @tag :pending # remove line to run test
+  test "no win if all dots eaten, but touching a ghose" do
+    refute Rules.win?(true, false, true)
+  end
+
+  @tag :pending # remove line to run test
+  test "win if all dots eaten and touching a ghost if ate a pill" do
+    assert Rules.win?(true, true, true)
   end
 end

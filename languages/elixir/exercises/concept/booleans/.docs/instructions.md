@@ -22,20 +22,20 @@ Rules.score?(true, true)
 # => true
 ```
 
-### 3. Define if pac-man wins
-
-Define the `Rules.wins?/1` function that takes one parameters (_if pac-man ate all of the dots pill_) and returns a boolean value if pac-man wins.  The function should return true if pac-man has eaten all of the dots.
-
-```elixir
-Rules.wins?(false)
-# => false
-```
-
-### 4. Define if pac-man loses
+### 3. Define if pac-man loses
 
 Define the `Rules.lose?/2` function that takes two parameters (_if pac-man ate a pill_ and _if pac-man touched a ghost_) and returns a boolean value if pac-man loses.  The function should return true if pac-man has touched a ghost and not eaten a pill.
 
 ```elixir
 Rules.lose?(false, true)
 # => true
+```
+
+### 4. Define if pac-man wins
+
+Define the `Rules.wins?/1` function that takes three parameters (_if pac-man ate all of the dots pill_, _if pac-man ate a pill_, and _if pac-man touched a ghost_) and returns a boolean value if pac-man wins.  The function should return true if pac-man has eaten all of the dots and has not lost based on the function defined in part 3.
+
+```elixir
+Rules.wins?(false, true, false)
+# => false
 ```
