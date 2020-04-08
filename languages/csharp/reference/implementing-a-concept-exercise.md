@@ -64,6 +64,6 @@ If you have any questions regarding implementing the exercise, please post them 
 [concept-exercises]: ../exercises/concept/README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
 [concept-exercise-strings]: ../exercises/concept/strings
-[concept-exercise-dates]: ../exercises/concept/datetimes
+[concept-exercise-datetimes]: ../exercises/concept/datetimes
 [concept-exercise-numbers-floating-point]: ../exercises/concept/floating-point-numbers
 [reference]: ../../../reference

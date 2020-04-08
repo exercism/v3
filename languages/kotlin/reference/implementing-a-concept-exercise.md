@@ -65,7 +65,7 @@ The hints should not spell out the solution, but instead point to a resource des
 
 ## Step 4: add .docs/after.md
 
-Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
+Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
 
 ~~These files are also all described in the [concept exercises document][docs-concept-exercises].~~
 
@@ -132,7 +132,7 @@ This file contains information on the exercise's design, which includes things l
 
 ## Step 10: add .meta/config.json:
 
-This file contains meta information on the exercise, which currently includes the exercise's contributors.
+This file contains meta information on the exercise, which currently only includes the exercise's contributors.
 
 ## Inspiration
 

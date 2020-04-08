@@ -52,7 +52,7 @@ The hints should not spell out the solution, but instead point to a resource des
 
 ## Step 4: add .docs/after.md
 
-Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
+Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
 
 ## Step 5: update languages/&lt;TRACK&gt;/config.json
 
@@ -102,7 +102,7 @@ This file contains information on the exercise's design, which includes things l
 
 ## Step 11: add .meta/config.json:
 
-This file contains meta information on the exercise, which currently includes the exercise's contributors, and language version requirements ([example][meta-config-json]).
+This file contains meta information on the exercise, which currently only includes the exercise's contributors ([example][meta-config-json]).
 
 ## Inspiration
 
