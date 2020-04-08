@@ -6,6 +6,48 @@ This exercise showed how to:
 - Doing arithmetic calculations with integers.
 - Invoking functions.
 
+#### Defining functions
+
+There are two common ways to define a named function in Julia:
+
+```julia
+function muladd(x, y, z)
+    return x * y + z
+end
+```
+
+and
+
+```julia
+muladd(x, y, z) = x * y + z
+```
+
+The latter is most commonly used for one-line function definitions or mathematical functions.
+
+#### Invoking functions
+
+Invoking a function is done by specifying its name and passing arguments for each of the function's parameters:
+
+```julia
+add(x, y) = x + y
+mul(x, y) = x * y
+muladd(x, y, z) = add(mul(x, y), z)
+```
+
+#### Comments
+
+Julia supports two kinds of comments.
+Single line comments are preceded by `#` and multiline comments are inserted between `#=` and `=#`.
+
+```julia
+add(1, 3) # returns 4
+
+#= Some random code that's no longer needed but not deleted
+sub(x, y) = x - y
+mulsub(x, y, z) = sub(mul(x, y), z)
+=#
+```
+
 ### Further details
 
 For more information about functions, consider taking a look at the [Julia Manual][functions]. Note that the concepts after the "The `return` Keyword" section will be introduced in future exercises.
