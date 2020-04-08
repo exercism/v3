@@ -2,7 +2,7 @@
 
 ## Goal
 
-The goal of this exercise is to teach the student the basics of booleans and logicical expressions in Elixir
+The goal of this exercise is to teach the student the basics of booleans and logicical expressions in Elixir through the expression of game rule logic(1).
 
 ## Learning objectives
 
@@ -40,3 +40,7 @@ This exercise could benefit from the following rules added to the the [analyzer]
 
 [analyzer]: https://github.com/exercism/elixir-analyzer
 [representer]: https://github.com/exercism/elixir-representer
+
+## References
+
+1. Jui-Feng Weng, Shian-Shyong Tseng, Tsung-Ju Lee, Teaching Boolean Logic through Game Rule Tuning, IEEE Trans. Learning Technol. 3 (2010) 319–328. <https://doi.org/10.1109/TLT.2010.33>.
