@@ -79,7 +79,7 @@ Once the student completes the exercise they will be shown this file, which shou
 
 See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.md] for an example.
 
-### `.docs/source.md`
+### `.docs/source.md` (required if there are third-party sources)
 
 This file contains third-party references and sources of the exercise. Only required if there are any such sources, but not if the exercise was completely designed from scratch for Exercism.
 
