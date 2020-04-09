@@ -1,13 +1,12 @@
 In this exercise you'll be writing code to helping printing name
 badges for factory employees.
 
-Employees have an id, a name and a department name. Badge labels are
+Employees have an id, name and department name. Badge labels are
 formatted as follows: `"[id] - [name] - [DEPARTMENT]"`
 
-### 1. Generate the badge label from employee properties
+### 1. Generate an employee's badge label
 
-Writing a static method called `Badge.Label()` to compute the string
-to be printed on the badge:
+Implement the `Badge.Label()` method to return an employee's badge label:
 
 ```csharp
 Badge.Label(734, "Ernest Johnny Payne", "Strategic Communication");
@@ -17,9 +16,9 @@ Badge.Label(734, "Ernest Johnny Payne", "Strategic Communication");
 The department name is optional. If someone has no department, just
 print `GUEST` as their department name.
 
-### 2. Word wrap the label text so it fits on a badge
+### 2. Convert the label text to fit on a badge with a given width
 
-Writing a static method called `Badge.PrintLabel()`:
+Implement the `Badge.PrintLabel()` method to return an employee's badge label that can fit on a badge with a given width:
 
 ```csharp
 Badge.PrintLabel("[734] - Ernest Johnny Payne - STRATEGIC COMMUNICATION", 30);

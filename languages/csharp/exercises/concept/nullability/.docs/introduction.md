@@ -1,31 +1,19 @@
-Sometimes, we need to indicate that a variable has no value.  In C#,
-we use the `null` literal to denote the absence of a value.  A
-*nullable* type is a type that allows `null` values.  The operator `?`
-can be added as a suffix to a type to make it nullable.
-
-In the following example, we declare a regular, non-nullable variable
-`a` of type `int` and a nullable variable `b` of type `int?` whose
-value is `5`:
+In C#, the `null` literal is used to denote the absense of a value. 
+A *nullable* type is a type that allows `null` values.  Adding the 
+`?` suffix to a variable's type makes it nullable.
 
 ```csharp
-int a = 4;
-int? b = 5;
-```
+int? nullable = 5;
+nullable = null;
 
-`a` must contain an integer value, while `b` can also be set to
-`null`:
+int nonNullable = 5;
 
-```csharp
-a = null; // Compile error as a is not nullable
-a = 5;    // Valid
+// Would result in compile error as type is not nullable
+// nonNullable = null;
 
-b = null; // Valid
-b = 6;    // Valid
-```
-
-A common mistake is trying to call a method or set/get a property on a
+A common mistake is to access a member (e.g. a method or property) on a nullable
 variable whose value is `null`.  This will cause the C# runtime
-to raise an exception called `NullReferenceException`.
+to raise a `NullReferenceException`.
 
 The C# compiler can help us avoiding such errors. If we try to
 compile the following code:
