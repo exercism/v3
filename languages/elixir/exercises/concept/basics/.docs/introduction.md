@@ -38,6 +38,15 @@ Invoking a function is done by specifying its module- and function name and pass
 sum = Calculator.add(1, 2)
 ```
 
-Elixir supports one type of comment for inline documentation. Single line comments are preceded by `#`.
+When referring to functions, it is very common to refer to them with their _arity_. The _arity_ of a function is the number or parameters it takes.
+
+```elixir
+# add/3 because this function has an arity of 3
+def add(x, y, z) do
+  x + y + z
+end
+```
+
+Comments can be used for inline documentation. Single line comments in Elixir are preceded by `#`.
 
 [functional-programming]: https://en.wikipedia.org/wiki/Functional_programming
