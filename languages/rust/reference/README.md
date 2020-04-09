@@ -149,7 +149,6 @@ doing so is not entirely practical. For example, it would be difficult to design
 which taught what functions are without requiring any knowledge of primitives; likewise,
 it would be difficult to teach primitives, with a test suite, without any knowledge of functions.
 
-The exercises in this table should form a DAG which will eventually cover all concepts listed above.
 
 exercise | prerequisites | teaches | narrative
 --- | --- | --- | ---
