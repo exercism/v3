@@ -81,7 +81,7 @@ See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.m
 
 ### `.docs/source.md`
 
-This file contains references and sources of the exercise.
+This file contains third-party references and sources of the exercise. Only required if there are any such sources, but not if the exercise was completely designed from scratch for Exercism.
 
 ### `.meta/design.md`
 
