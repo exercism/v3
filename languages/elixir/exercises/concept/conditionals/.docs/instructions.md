@@ -13,7 +13,7 @@ You have two tasks:
 
 ### 1. Return the logging code label
 
-Implement the `LogLevel.to_label/1` function to return the label of a log's line from an integer code:
+Implement the `LogLevel.to_label/1` function to return the label of a log line from an integer code:
 
 ```elixir
 LogLevel.to_label(1)
@@ -27,4 +27,13 @@ Unfortunately, some log lines occasionally have an unknown log code.  To gracefu
 ```elixir
 LogLevel.to_label(10)
 # => :unknown
+```
+
+### 3. Send an alert
+
+Implement the `LogLevel.send_alert?/1` function to determine if an alert should be send based on the log line's label.
+
+```elixir
+LogLevel.send_alert?(1)
+# => false
 ```

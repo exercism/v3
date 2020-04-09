@@ -10,4 +10,15 @@ defmodule LogLevel do
       true -> :unknown
     end
   end
+
+  def send_alert?(level) do
+    label = to_label(level)
+
+    cond do
+      label == :fatal -> true
+      label == :error -> true
+      label == :unknown -> true
+      true -> false
+    end
+  end
 end

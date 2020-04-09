@@ -1,4 +1,4 @@
-The Elixir `atom` type represent a fixed constant. An atom's value is simply its own name.  This gives us a type-safe way to interact with data.  Atoms can be defined as follows:
+The Elixir `atom` type represents a fixed constant. An atom's value is simply its own name.  This gives us a type-safe way to interact with data.  Atoms can be defined as follows:
 
 ```elixir
 # All atoms are preceeded with a ':' then follow with alphanumeric snake-cased characters
