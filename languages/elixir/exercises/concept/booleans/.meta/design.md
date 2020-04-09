@@ -28,6 +28,12 @@ This exercise's prerequisites are:
 
 - `basics`: needs to be able to define named functions, return values
 
+## Concepts
+
+The concepts this exercise unlocks are:
+
+- `booleans` know of the existence of the `boolean` type and its two values, boolean operators, and how to build logical expressions, and know boolean operator precedence rules.
+
 ## Representer
 
 This exercise does not require any specific representation logic to be added to the [representer][representer].
