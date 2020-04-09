@@ -19,6 +19,7 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
+                |   ├── source.md (required if there are third-party sources)
                 |   └── after.md
                 └── .meta
                     ├── config.json
@@ -102,7 +103,7 @@ This file contains information on the exercise's design, which includes things l
 
 ## Step 11: add .meta/config.json:
 
-This file contains meta information on the exercise, which currently only includes the exercise's contributors ([example][meta-config-json]).
+This file contains meta information on the exercise, which currently includes the exercise's contributors, and (optionally) language version requirements ([example][meta-config-json]).
 
 ## Inspiration
 
