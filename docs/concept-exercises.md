@@ -93,9 +93,68 @@ See the C# floating-point-numbers exercise's [design.md file][csharp-docs-design
 
 ### `.meta/config.json`
 
-This file contains meta information on the exercise, which currently includes the exercise's contributors, and (optionally) language version requirements.
+This file contains meta information on the exercise, which may include
 
-See the C# floating-point-numbers exercise's [config.json file][csharp-docs-config.json] for an example.
+- the exercise's contributors
+- the exercise's authors
+- which exercise it was forked from
+- language version requirements
+
+#### Example
+
+Assume that the user FSharpForever has written an exercise called `basics` for the F# track. PythonProfessor adapts the exercise for the Python track. Later on, the user PythonPerfection improves the exercise.
+
+##### `.../python/.../basics/.meta/config.json`
+
+```json
+{
+    "contributors": [
+        {
+            "github_username": "PythonProfessor",
+            "exercism_username": "PythonProfessor"
+        },
+        {
+            "github_username": "PythonPerfection",
+            "exercism_username": "PythonPerfection"
+        }
+    ],
+    "authors": [
+        {
+            "github_username": "FSharpForever",
+            "exercism_username": "FSharpForever"
+        }
+    ],
+    "forked_from": ["fsharp/basics"],
+    "language_versions": ">=3.7"
+}
+```
+
+##### `.../fsharp/.../basics/.meta/config.json`
+
+```json
+{
+    "contributors": [
+        {
+            "github_username": "FSharpForever",
+            "exercism_username": "FSharpForever"
+        }
+    ],
+    "authors": [
+        {
+            "github_username": "FSharpForever",
+            "exercism_username": "FSharpForever"
+        }
+    ],
+    "language_versions": ">=3.7"
+}
+```
+
+Note that
+- the order of authors and contributors is not significant and has no meaning
+- if you are forking a fork, do not add the transitive authors, only the last layer
+- `language_versions` is a free-form string
+
+See the C# floating-point-numbers exercise's [config.json file][csharp-docs-config.json] for another example.
 
 ## Track Structure
 
