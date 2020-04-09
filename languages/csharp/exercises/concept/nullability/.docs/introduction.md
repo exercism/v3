@@ -1,6 +1,9 @@
-In C#, the `null` literal is used to denote the absense of a value. 
-A *nullable* type is a type that allows `null` values.  Adding the 
-`?` suffix to a variable's type makes it nullable.
+In C#, the `null` literal is used to denote the absence of a value.  A
+*nullable* type is a type that allows `null` values. By default
+reference types are nullable and value types are non nullable.  The
+`?` suffix to a variable's type makes it nullable if it is not. From
+C# 8.0 on, one can [make reference types non nullable by
+default][nullable-csharp-8], just like value types.
 
 ```csharp
 int? nullable = 5;
@@ -10,6 +13,7 @@ int nonNullable = 5;
 
 // Would result in compile error as type is not nullable
 // nonNullable = null;
+```
 
 A common mistake is to access a member (e.g. a method or property) on a nullable
 variable whose value is `null`.  This will cause the C# runtime
@@ -88,3 +92,5 @@ With `A ?? B`, the C# runtime replaces the expression `A` with `B` if
 runtime evaluates the expression `A?.B` by `null` if `A` is null,
 without throwing a `NullReferenceException`. It executes `A.B`
 otherwise.
+
+[nullable-csharp-8]: https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references
