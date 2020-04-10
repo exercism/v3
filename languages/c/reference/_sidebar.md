@@ -1,0 +1,11 @@
+- [Start here](/)
+- Docs
+- [Languages](/languages/README.md)
+  - [C](/languages/c/README.md)
+    - Reference
+      - [Implementing a Concept Exercise](/languages/c/reference/implementing-a-concept-exercise.md)
+- Reference
+  - [Concepts](/reference/concepts/README.md)
+  - [Paradigms](/reference/paradigms/README.md)
+  - [Tooling](/reference/tooling/README.md)
+  - [Types](/reference/types/README.md)
