@@ -95,8 +95,8 @@ See the C# floating-point-numbers exercise's [design.md file][csharp-docs-design
 
 This file contains meta information on the exercise:
 
-- The exercise's authors (required)
-- The exercise's contributors (optional)
+- The exercise's author(s) (required)
+- The exercise's contributor(s) (optional)
 - Which exercise it was forked from (required if the exercise is forked)
 - Language version requirements (optional)
 
