@@ -144,7 +144,7 @@ Note that
 - If you are forking an exercise, do not reference original authors or contributors. Just ensure that `forked_from` is correct.
 - `language_versions` is a free-form string that tracks are free to use and interpret as they like.
 
-See the C# booleans exercise's [config.json file][csharp-booleans-docs-config.json] for another example.
+See the F# booleans exercise's [config.json file][fsharp-booleans-docs-config.json] for another example.
 
 ## Track Structure
 
