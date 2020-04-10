@@ -3,7 +3,7 @@
 This document describes how to implement a concept exercise for the
 Common Lisp track.
 
-**Please please please read the docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time. So, before diving into the implementation, please read up on the following documents:
+**Please please please read the docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time. So, before diving into the implementation, please read the following documents:
 
 - [The features of v3][docs-features-of-v3].
 - [Rationale for v3][docs-rationale-for-v3].
