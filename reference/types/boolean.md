@@ -28,4 +28,19 @@ This exercise lists all the available actions of the main character in a given s
 | ----- | ------------------------------------- | ------- |
 | JS    | [booleans][implementation-javascript] | None    |
 
+### Pac-man game logic
+
+This exercise looks at various game events and determine if they have occured by looking at various game states.  The implementation in Elixir teaches:
+
+- boolean values
+- boolean operators
+- boolean operators precedence
+
+#### Implementations
+
+| Track | Exercise                              | Changes |
+| ----- | ------------------------------------- | ------- |
+| Elixir | [booleans][implementation-elixir] | None    |
+
 [implementation-javascript]: ../../languages/javascript/exercises/concept/booleans/.docs/introduction.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/booleans/.docs/introduction.md
