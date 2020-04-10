@@ -25,5 +25,13 @@ Badge.PrintLabel("[734] - Ernest Johnny Payne - STRATEGIC COMMUNICATION", 30);
 // => "[734] - Ernest Johnny Payne - \nSTRATEGIC COMMUNICATION"
 ```
 
-The width is optional, so if it is not provided, just return the
-string as is.
+### 3. Check if maxWidth is null
+
+Extend the `Badge.PrintLabel()` method to handle the case where
+`maxWidth` is `null`. The width is optional, so if it is not provided,
+just return the string as is.
+
+```csharp
+Badge.PrintLabel("[734] - Ernest Johnny Payne - STRATEGIC COMMUNICATION", null);
+// => "[734] - Ernest Johnny Payne - STRATEGIC COMMUNICATION"
+```

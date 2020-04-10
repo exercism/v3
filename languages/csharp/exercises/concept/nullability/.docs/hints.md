@@ -15,14 +15,18 @@ The following reference documentation may help you finishing this exercice:
 * Do not forget to add `GUEST` as the department name if there's no
    provided department name.
 
-# 2. Badge.PrintLabel
+# 2. Badge.PrintLabel with a maxWidth
 
-* If theres no `maximumWidth`, just return the `label` string;
 * Which method from the `string` class may help you to extract a
    [substring][https://docs.microsoft.com/en-us/dotnet/api/system.string.substring?view=netframework-4.8]
    of a string?
 * Do all slices always have the same length? If not, how to handle
    this case?
+
+# 2. Badge.PrintLabel without maxWidth
+
+* You can use an `if` to check if `maxWidth` is null before
+   trying to split the string.
 
 [null-keyword]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null
 [nullable-types-tutorial]: https://csharp.net-tutorials.com/data-types/nullable-types/
