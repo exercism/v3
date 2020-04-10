@@ -65,7 +65,8 @@
           "strings",
           "basics",
           "exceptions",
-          "for-loops"
+          "for-loops",
+          "memory-allocation"
         ]
       },
       {

@@ -35,6 +35,7 @@ This Concept Exercise's prerequisites Concepts are:
 - `basics`: integers will be compared to `null`, arithmetic operations will be performed on integers, variables will be introduced and updated.
 - `exceptions-basic`: explain how a `NullReferenceException` is thrown when accessing a `null` value.
 - `for-loops`: strings will be processed and constructed iteratively.
+- `memory-allocation`: reference and value types will be used in their nullable and non-nullable variants.
 
 ## Representer
 
