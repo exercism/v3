@@ -41,7 +41,7 @@ sum = Calculator.add(1, 2)
 When referring to functions, it is very common to refer to them with their _arity_. The _arity_ of a function is the number or parameters it takes.
 
 ```elixir
-# add/3 because this function has an arity of 3
+# add/3 because this function has three parameters, thus an arity of 3
 def add(x, y, z) do
   x + y + z
 end

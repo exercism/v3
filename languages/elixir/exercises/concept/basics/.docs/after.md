@@ -34,6 +34,15 @@ sum = Calculator.add(1, 2)
 
 If the function to be called is defined in the same module as the function that calls it, the module name can be omitted.
 
+When referring to functions, refer to them with their _arity_. The _arity_ of a function is the number or parameters it takes.
+
+```elixir
+# add_3/1 because this function has one parameter, thus an arity of 1
+def add_3(x) do
+  3 + x
+end
+```
+
 Elixir supports one type of comment for [inline documentation][inline-documentation]. Single line comments are preceded by `#`.
 
 Integer values are defined as one or more (consecutive) digits and support the [default mathematical operators][operators].
