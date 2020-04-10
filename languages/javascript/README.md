@@ -10,6 +10,15 @@ This area will contain everything needed to launch the JavaScript track, includi
 
 To discuss the overall roadmap, go [here](https://github.com/exercism/v3/issues/1). Find a [live overview](https://tracks.exercism.io/javascript/v3/launch) of this launch and prep list [here](https://tracks.exercism.io/javascript/v3/launch).
 
+## Links
+
+- [:bar_chart: Project Board](https://github.com/exercism/v3/projects/14?fullscreen=true)
+- [:books: Open Issues](https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fjavascript)
+- [:gift: Open Pull Requests](https://github.com/exercism/v3/pulls?q=is%3Apr+is%3Aopen+label%3Atrack%2Fjavascript)
+- [:house_with_garden: v3 Docs Website](https://exercism.github.io/v3/#/)
+- [:gear: JavaScript Concept Reference](https://exercism.github.io/v3/#/languages/javascript/reference/README)
+- [:wrench: JavaScript Track Maintenance](https://tracks.exercism.io/javascript)
+
 ## Preparation Status
 
 Before we publicize requesting contribution for this language, the following steps should be done.
