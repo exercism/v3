@@ -71,4 +71,4 @@ These extra steps will make your track better, but are optional.
 
 [How to implement a Go Concept Exercise](https://exercism.github.io/v3/#/languages/go/reference/implementing-a-concept-exercise)
 
-[Example C# Concept Exercise](https://exercism.github.io/v3/#/languages/csharp/reference/examples/new-concept-exercise-arrays)
+[Example Go Concept Exercise](https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/basic-strings)
