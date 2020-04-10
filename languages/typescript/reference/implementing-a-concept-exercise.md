@@ -1,6 +1,14 @@
 # How to implement a TypeScript Concept Exercise
 
-This document describes how to implement a Concept Exercise for the TypeScript track. As this document is generic, the following placeholders are used:
+This document describes how to implement a Concept Exercise for the TypeScript track.
+
+**Please please please read the docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time. So, before diving into the implementation, please read the following documents:
+
+- [The features of v3][docs-features-of-v3].
+- [Rationale for v3][docs-rationale-for-v3].
+- [What are concept exercise and how they are structured?][docs-concept-exercises]
+
+As this document is generic, the following placeholders are used:
 
 - `<slug>`: the name of the exercise in snake_case (e.g. `anonymous-methods`).
 - `<concepts>`: the Concepts the exercise is about (e.g. `loops`),
@@ -148,6 +156,9 @@ If you have any questions regarding implementing the exercise, please post them 
 [representer]: https://github.com/exercism/typescript-representer
 [concept-exercises]: ../exercises/concept/README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
+[docs-concept-exercises]: ../../../docs/concept-exercises.md
+[docs-rationale-for-v3]: ../../../docs/rationale-for-v3.md
+[docs-features-of-v3]: ../../../docs/features-of-v3.md
 [concept-exercise-strings]: ../exercises/concept/strings.md
 [concept-exercise-numbers]: ../exercises/concept/numbers.md
 [concept-exercise-promises]: ../exercises/concept/promises.md
