@@ -1,6 +1,8 @@
 # How to implement a C++ concept exercise
 
-This document describes how to implement a concept exercise for the C++ track. Before diving into the implementation, please read up on the following documents:
+This document describes how to implement a concept exercise for the C++ track.
+
+**Please please please read the following docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time.
 
 - [The features of v3][docs-features-of-v3].
 - [Rationale for v3][docs-rationale-for-v3].
@@ -118,3 +120,6 @@ If you have any questions regarding implementing the exercise, please post them 
 [implemented-exercises]: https://github.com/exercism/v3/blob/master/languages/cpp/exercises/concept/README.md
 [meta-design]: https://github.com/exercism/v3/blob/master/languages/cpp/exercises/concept/strings/.meta/design.md
 [meta-config-json]: https://github.com/exercism/v3/blob/master/languages/cpp/exercises/concept/strings/.meta/config.json
+[docs-concept-exercises]: ../../../docs/concept-exercises.md
+[docs-rationale-for-v3]: ../../../docs/rationale-for-v3.md
+[docs-features-of-v3]: ../../../docs/features-of-v3.md

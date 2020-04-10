@@ -1,6 +1,8 @@
 # How to implement an Elixir Concept Exercise
 
-This document describes how to implement a Concept Exercise for the Elixir track. Before diving into the implementation, please read up on the following documents:
+This document describes how to implement a Concept Exercise for the Elixir track.
+
+**Please please please read the following docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time.
 
 - [The features of v3][docs-features-of-v3].
 - [Rationale for v3][docs-rationale-for-v3].

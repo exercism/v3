@@ -1,6 +1,8 @@
 # How to implement an Elm concept exercise
 
-This document describes the steps required to implement a concept exercise for the Elm track. Before diving into the implementation, please read up on the following documents:
+This document describes the steps required to implement a concept exercise for the Elm track.
+
+**Please please please read the following docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time.
 
 - [The features of v3][docs-features-of-v3].
 - [Rationale for v3][docs-rationale-for-v3].
@@ -129,3 +131,6 @@ If you have any questions regarding implementing this exercise, please post them
 ### TODO: link to an elm concept, after the first one is done and available to reference.
 
 [meta-config-json]: ../../csharp/exercises/concept/flag-enums/.meta/config.json
+[docs-concept-exercises]: ../../../docs/concept-exercises.md
+[docs-rationale-for-v3]: ../../../docs/rationale-for-v3.md
+[docs-features-of-v3]: ../../../docs/features-of-v3.md

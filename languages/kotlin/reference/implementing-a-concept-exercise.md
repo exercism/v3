@@ -4,7 +4,9 @@
 ! WARNING! This document should be treated as a draft and will be actively changing. Sections that marked as WIP requires attention/rework from contributors.
 ```
 
-This document describes the steps required to implement a concept exercise in any v3 track. Before diving into the implementation, please read up on the following documents:
+This document describes the steps required to implement a concept exercise in any v3 track.
+
+**Please please please read the following docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time.
 
 - [The features of v3][docs-features-of-v3].
 - [Rationale for v3][docs-rationale-for-v3].
@@ -149,3 +151,6 @@ When implementing an exercise, it can be very useful to look at the exercises th
 If you have any questions regarding implementing this exercise, please post them as comments in the exercise's GitHub issue.
 
 [reference]: ../reference/README.md
+[docs-concept-exercises]: ../../../docs/concept-exercises.md
+[docs-rationale-for-v3]: ../../../docs/rationale-for-v3.md
+[docs-features-of-v3]: ../../../docs/features-of-v3.md
