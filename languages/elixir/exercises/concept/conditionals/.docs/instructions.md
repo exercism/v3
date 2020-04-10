@@ -9,7 +9,7 @@ These are the different log codes:
 - 6 (error)
 - 7 (fatal)
 
-You have two tasks:
+You have three tasks:
 
 ### 1. Return the logging code label
 
@@ -30,6 +30,8 @@ LogLevel.to_label(10)
 ```
 
 ### 3. Send an alert
+
+An engineer wants to be alerted when some events occur in the log.  They would like to be notified if an `:error`, `:fatal`, or `:unknown` event occurs.
 
 Implement the `LogLevel.send_alert?/1` function to determine if an alert should be send based on the log line's label.
 
