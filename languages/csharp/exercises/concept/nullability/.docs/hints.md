@@ -9,21 +9,21 @@ The following reference documentation may help you finishing this exercice:
 - [Null-conditional operator][null-conditional-operator]: explains how the null-conditional operator works.
 - [Nullable reference types tutorial][nullable-reference-types-tutorial]: tutorial on nullable reference types.
 
-# 1. Badge.Label
+### 1. Badge.Label
 
 * Do not forget to convert the department to upper case if it is not `nulll`;
 * Do not forget to add `GUEST` as the department name if there's no
    provided department name.
 
-# 2. Badge.PrintLabel with a maxWidth
+### 2. Badge.PrintLabel with a maxWidth
 
 * Which method from the `string` class may help you to extract a
-   [substring][https://docs.microsoft.com/en-us/dotnet/api/system.string.substring?view=netframework-4.8]
+   [substring][substring]
    of a string?
 * Do all slices always have the same length? If not, how to handle
    this case?
 
-# 2. Badge.PrintLabel without maxWidth
+### 2. Badge.PrintLabel without maxWidth
 
 * You can use an `if` to check if `maxWidth` is null before
    trying to split the string.
