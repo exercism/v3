@@ -154,7 +154,7 @@ Note that
 - if you are forking a fork, do not add the transitive authors, only the last layer
 - `language_versions` is a free-form string
 
-See the C# floating-point-numbers exercise's [config.json file][csharp-docs-config.json] for another example.
+See the C# booleans exercise's [config.json file][csharp-booleans-docs-config.json] for another example.
 
 ## Track Structure
 
