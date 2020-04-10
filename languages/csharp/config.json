@@ -24,14 +24,14 @@
       {
         "slug": "enums",
         "uuid": "047b895b-7039-4af6-ad3a-17fd818d0b88",
-        "concepts": ["enums", "constant-switch"],
+        "concepts": ["enums", "pattern-matching-constants"],
         "prerequisites": ["strings", "conditionals"]
       },
       {
         "slug": "flag-enums",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
         "concepts": ["flag-enums", "bit-manipulation"],
-        "prerequisites": ["enums", "attributes", "integers"]
+        "prerequisites": ["enums", "attributes", "integral-numbers"]
       },
       {
         "slug": "floating-point-numbers",

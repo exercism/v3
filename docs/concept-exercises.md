@@ -79,6 +79,10 @@ Once the student completes the exercise they will be shown this file, which shou
 
 See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.md] for an example.
 
+### `.docs/source.md` (required if there are third-party sources)
+
+This file contains third-party references and sources of the exercise. Only required if there are any such sources, but not if the exercise was completely designed from scratch for Exercism.
+
 ### `.meta/design.md`
 
 This file contains information on the exercise's design, which includes things like its goal, its teaching goals, what not to teach, and more. This information can be extracted from the exercise's corresponding GitHub issue.
@@ -89,9 +93,58 @@ See the C# floating-point-numbers exercise's [design.md file][csharp-docs-design
 
 ### `.meta/config.json`
 
-This file contains meta information on the exercise, which currently only includes the exercise's contributors.
+This file contains meta information on the exercise:
 
-See the C# floating-point-numbers exercise's [config.json file][csharp-docs-config.json] for an example.
+- The exercise's author(s) (required)
+- The exercise's contributor(s) (optional)
+- Which exercise it was forked from (required if the exercise is forked)
+- Language version requirements (optional)
+
+#### Example
+
+Assume that the user FSharpForever has written an exercise called `basics` for the F# track. PythonProfessor adapts the exercise for the Python track. Later on, the user PythonPerfection improves the exercise.
+
+##### Python `basics` exercise `.meta/config.json` file (fork)
+
+```json
+{
+    "contributors": [
+        {
+            "github_username": "PythonPerfection",
+            "exercism_username": "PythonPerfection"
+        }
+    ],
+    "authors": [
+        {
+            "github_username": "PythonProfessor",
+            "exercism_username": "PythonProfessor"
+        }
+    ],
+    "forked_from": ["fsharp/basics"],
+    "language_versions": ">=3.7"
+}
+```
+
+##### F# `basics` exercise `.meta/config.json` file (source)
+
+```json
+{
+    "authors": [
+        {
+            "github_username": "FSharpForever",
+            "exercism_username": "FSharpForever"
+        }
+    ]
+}
+```
+
+Note that
+
+- The order of authors and contributors is not significant and has no meaning.
+- If you are forking an exercise, do not reference original authors or contributors. Just ensure that `forked_from` is correct.
+- `language_versions` is a free-form string that tracks are free to use and interpret as they like.
+
+See the F# booleans exercise's [config.json file][fsharp-booleans-docs-config.json] for another example.
 
 ## Track Structure
 
@@ -115,3 +168,4 @@ See the C# track's [debug.md file][csharp-docs-debug.md] for an example.
 [csharp-docs-instructions.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
 [csharp-docs-design.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.meta/design.md
 [csharp-docs-config.json]: ../languages/csharp/exercises/concept/floating-point-numbers/.meta/config.json
+[fsharp-booleans-docs-config.json]: ../languages/fsharp/exercises/concept/booleans/.meta/config.json

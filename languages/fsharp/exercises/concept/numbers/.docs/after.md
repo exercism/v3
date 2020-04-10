@@ -7,7 +7,7 @@ let i = 123   // Type is `int`
 let d = 54.29 // Type is `double`
 ```
 
-Arithmetic is done using the standard [arithmetic operators][arithmetic-operators] (`+`, `-`, `*`, etc.). Numbers can be compared using the [standard comparison operators][comparison-operators] (`<`, `>=`, etc.).
+Arithmetic is done using the standard [arithmetic operators][arithmetic-operators] (`+`, `-`, `*`, etc.). Numbers can be compared using the [standard comparison operators][comparison-operators] (`<`, `>=`, etc.) and equality (`=`) and inequality (`<>`) operators.
 
 ```fsharp
 5 * 6
@@ -15,16 +15,19 @@ Arithmetic is done using the standard [arithmetic operators][arithmetic-operator
 
 1.2 > 0.8
 // => true
+
+2 <> 4
+// => true
 ```
 
 Conditionally executing code can be done using [`if/elif/else` expressions][conditional-expression]. As `if/elif/else` is an expression, all branches must return the same type and the expression can be returned from a function. The condition(s) used in an `if/elif/else` expression must be of type `bool`. F# has no concept of _truthy_ values.
 
 ```fsharp
 let test x =
-    if x <= 5 then
-        // Expression to return when x <= 5
+    if x = 5 then
+        // Expression to return when x equals 5
     elif x > 7 then
-        // Expression to return when x > 7
+        // Expression to return when x greater than 7
     else
         // Expression to return in all other cases
 ```

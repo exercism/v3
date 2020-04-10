@@ -1,6 +1,14 @@
 # How to implement a concept exercise
 
-This document describes the steps required to implement a concept exercise in any v3 track. As this document is generic, the following placeholders are used:
+This document describes the steps required to implement a concept exercise in any v3 track.
+
+**Please please please read the docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time. So, before diving into the implementation, please read the following documents:
+
+- [The features of v3][docs-features-of-v3].
+- [Rationale for v3][docs-rationale-for-v3].
+- [What are concept exercise and how they are structured?][docs-concept-exercises]
+
+As this document is generic, the following placeholders are used:
 
 - `<LANG>`: the name of the track in kebab-case (e.g. `ruby`).
 - `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
@@ -19,6 +27,7 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
+                |   ├── source.md (required if there are third-party sources)
                 |   └── after.md
                 └── .meta
                     ├── config.json
@@ -102,7 +111,7 @@ This file contains information on the exercise's design, which includes things l
 
 ## Step 11: add .meta/config.json:
 
-This file contains meta information on the exercise, which currently only includes the exercise's contributors ([example][meta-config-json]).
+This file contains meta information on the exercise, which currently includes the exercise's contributors, and (optionally) language version requirements ([example][meta-config-json]).
 
 ## Inspiration
 
@@ -113,6 +122,8 @@ When implementing an exercise, it can be very useful to look at the exercises th
 If you have any questions regarding implementing this exercise, please post them as comments in the exercise's GitHub issue.
 
 [docs-concept-exercises]: ../concept-exercises.md
+[docs-rationale-for-v3]: ../rationale-for-v3.md
+[docs-features-of-v3]: ../features-of-v3.md
 [reference]: ../../reference/concepts/README.md
 [meta-design]: ../../languages/csharp/exercises/concept/flag-enums/.meta/design.md
 [meta-config-json]: ../../languages/csharp/exercises/concept/flag-enums/.meta/config.json
