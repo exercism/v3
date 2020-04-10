@@ -104,7 +104,7 @@ This file contains meta information on the exercise:
 
 Assume that the user FSharpForever has written an exercise called `basics` for the F# track. PythonProfessor adapts the exercise for the Python track. Later on, the user PythonPerfection improves the exercise.
 
-##### Python `basics` exercise `.meta/config.json` file (source)
+##### Python `basics` exercise `.meta/config.json` file (fork)
 
 ```json
 {
@@ -125,7 +125,7 @@ Assume that the user FSharpForever has written an exercise called `basics` for t
 }
 ```
 
-##### F# `basics` exercise `.meta/config.json` file (fork)
+##### F# `basics` exercise `.meta/config.json` file (source)
 
 ```json
 {
