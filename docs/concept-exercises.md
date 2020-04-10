@@ -134,8 +134,7 @@ Assume that the user FSharpForever has written an exercise called `basics` for t
             "github_username": "FSharpForever",
             "exercism_username": "FSharpForever"
         }
-    ],
-    "language_versions": ">=3.7"
+    ]
 }
 ```
 
@@ -145,7 +144,7 @@ Note that
 - If you are forking an exercise, do not reference original authors or contributors. Just ensure that `forked_from` is correct.
 - `language_versions` is a free-form string that tracks are free to use and interpret as they like.
 
-See the C# booleans exercise's [config.json file][csharp-booleans-docs-config.json] for another example.
+See the F# booleans exercise's [config.json file][fsharp-booleans-docs-config.json] for another example.
 
 ## Track Structure
 
@@ -169,3 +168,4 @@ See the C# track's [debug.md file][csharp-docs-debug.md] for an example.
 [csharp-docs-instructions.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
 [csharp-docs-design.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.meta/design.md
 [csharp-docs-config.json]: ../languages/csharp/exercises/concept/floating-point-numbers/.meta/config.json
+[fsharp-booleans-docs-config.json]: ../languages/fsharp/exercises/concept/booleans/.meta/config.json
