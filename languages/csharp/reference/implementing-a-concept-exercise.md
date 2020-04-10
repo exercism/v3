@@ -1,6 +1,12 @@
 # How to implement a C# concept exercise
 
-This document describes how to implement a concept exercise for the C# track. As this document is generic, the following placeholders are used:
+This document describes how to implement a concept exercise for the C# track. Before diving into the implementation, please read up on the following documents:
+
+- [The features of v3][docs-features-of-v3].
+- [Rationale for v3][docs-rationale-for-v3].
+- [What are concept exercise and how they are structured?][docs-concept-exercises]
+
+As this document is generic, the following placeholders are used:
 
 - `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
 - `<NAME>`: the name of the exercise in PascalCase (e.g. `AnonymousMethods`).
@@ -63,6 +69,9 @@ If you have any questions regarding implementing the exercise, please post them 
 [representer]: https://github.com/exercism/csharp-representer
 [concept-exercises]: ../exercises/concept/README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
+[docs-concept-exercises]: ../../../docs/concept-exercises.md
+[docs-rationale-for-v3]: ../../../docs/rationale-for-v3.md
+[docs-features-of-v3]: ../../../docs/features-of-v3.md
 [concept-exercise-strings]: ../exercises/concept/strings
 [concept-exercise-datetimes]: ../exercises/concept/datetimes
 [concept-exercise-numbers-floating-point]: ../exercises/concept/floating-point-numbers

@@ -4,7 +4,13 @@
 ! WARNING! This document should be treated as a draft and will be actively changing. Sections that marked as WIP requires attention/rework from contributors.
 ```
 
-This document describes the steps required to implement a concept exercise in any v3 track. As this document is generic, the following placeholders are used:
+This document describes the steps required to implement a concept exercise in any v3 track. Before diving into the implementation, please read up on the following documents:
+
+- [The features of v3][docs-features-of-v3].
+- [Rationale for v3][docs-rationale-for-v3].
+- [What are concept exercise and how they are structured?][docs-concept-exercises]
+
+As this document is generic, the following placeholders are used:
 
 - `<exercise-slug>`: the name of the exercise in kebab-case (e.g. `functions-basic`).
 - `<ExerciseSlug>`: the name of the exercise in PascalCase (e.g. `FunctionsBasic`).
