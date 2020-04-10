@@ -134,8 +134,7 @@ Assume that the user FSharpForever has written an exercise called `basics` for t
             "github_username": "FSharpForever",
             "exercism_username": "FSharpForever"
         }
-    ],
-    "language_versions": ">=3.7"
+    ]
 }
 ```
 
@@ -169,3 +168,4 @@ See the C# track's [debug.md file][csharp-docs-debug.md] for an example.
 [csharp-docs-instructions.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
 [csharp-docs-design.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.meta/design.md
 [csharp-docs-config.json]: ../languages/csharp/exercises/concept/floating-point-numbers/.meta/config.json
+[csharp-booleans-docs-config.json]: ../languages/csharp/exercises/concept/booleans/.meta/config.json
