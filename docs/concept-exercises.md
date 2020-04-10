@@ -93,12 +93,12 @@ See the C# floating-point-numbers exercise's [design.md file][csharp-docs-design
 
 ### `.meta/config.json`
 
-This file contains meta information on the exercise, which may include
+This file contains meta information on the exercise:
 
-- the exercise's contributors
-- the exercise's authors
-- which exercise it was forked from
-- language version requirements
+- The exercise's authors (required)
+- The exercise's contributors (optional)
+- Which exercise it was forked from (required if the exercise is forked)
+- Language version requirements (optional)
 
 #### Example
 
@@ -110,18 +110,14 @@ Assume that the user FSharpForever has written an exercise called `basics` for t
 {
     "contributors": [
         {
-            "github_username": "PythonProfessor",
-            "exercism_username": "PythonProfessor"
-        },
-        {
             "github_username": "PythonPerfection",
             "exercism_username": "PythonPerfection"
         }
     ],
     "authors": [
         {
-            "github_username": "FSharpForever",
-            "exercism_username": "FSharpForever"
+            "github_username": "PythonProfessor",
+            "exercism_username": "PythonProfessor"
         }
     ],
     "forked_from": ["fsharp/basics"],
@@ -133,12 +129,6 @@ Assume that the user FSharpForever has written an exercise called `basics` for t
 
 ```json
 {
-    "contributors": [
-        {
-            "github_username": "FSharpForever",
-            "exercism_username": "FSharpForever"
-        }
-    ],
     "authors": [
         {
             "github_username": "FSharpForever",
@@ -150,9 +140,10 @@ Assume that the user FSharpForever has written an exercise called `basics` for t
 ```
 
 Note that
-- the order of authors and contributors is not significant and has no meaning
-- if you are forking a fork, do not add the transitive authors, only the last layer
-- `language_versions` is a free-form string
+
+- The order of authors and contributors is not significant and has no meaning.
+- If you are forking an exercise, do not reference original authors or contributors. Just ensure that `forked_from` is correct.
+- `language_versions` is a free-form string that tracks are free to use and interpret as they like.
 
 See the C# booleans exercise's [config.json file][csharp-booleans-docs-config.json] for another example.
 
