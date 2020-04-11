@@ -86,7 +86,7 @@ See the C# numbers exercise's [instructions.md file][csharp-docs-instructions.md
 - If the student gets stuck, we will allow them to click a button requesting a hint, which will show the relevant part of file. 
 - Hints should be bullet-pointed underneath headings.
 - General hints about the exericse can appear under the`### General` heading.
-- Task-specific hints should appear undernearth headings that match their task in the `instructions.md` (e.g. `### 2.`).
+- Task-specific hints should appear underneath headings that match their task in the `instructions.md` (e.g. `### 2.`).
 
 Viewing hints will not be a "recommended" path and we will (softly) discourage them using it unless they can't progress without it. As such, it's worth considering that the student reading it will be a little confused/overwhelmed and maybe frustrated. These hints should be enough to unblock almost any student. They might link to the docs of the functions that need to be used. The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
 
