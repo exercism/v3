@@ -67,7 +67,7 @@ See the C# floating-point-numbers exercise's [introduction.md file][csharp-docs-
 **Purpose:** Provide instructions for the exercise.
 
 This file is split into two halves. 
-1. The first half explains the "story" or "theme" of the exericise. It should generally contain no code samples.
+1. The first half explains the "story" or "theme" of the exercise. It should generally contain no code samples.
 2. The second half provides clear instructions of what a student needs to do, providing tasks.
 
 Each tasks must conform to the following standard:
