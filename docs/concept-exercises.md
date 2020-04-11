@@ -81,7 +81,7 @@ See the C# numbers exercise's [instructions.md file][csharp-docs-instructions.md
 
 ### `.docs/hints.md`
 
-**Purpose:** Provide hints to a student to help them get themselves unstuck n an exercise.
+**Purpose:** Provide hints to a student to help them get themselves unstuck in an exercise.
 
 - If the student gets stuck, we will allow them to click a button requesting a hint, which will show the relevant part of file. 
 - Hints should be bullet-pointed underneath headings.
