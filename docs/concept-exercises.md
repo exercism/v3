@@ -73,7 +73,7 @@ This file is split into two halves.
 Each tasks must conform to the following standard:
 - Start with a third-level heading starting with a number (.e.g `### 1.`, `### 2.`)
 - Provide a method that a student needs to define with its signature(e.g. `X(...)` that takes an A and returns a Z),
-- Provide at example usage of that function. These examples should be different examples to those given in the tests.
+- Provide an example usage of that function. These examples should be different examples to those given in the tests.
 
 Avoid any controversial topics in the stories - be empathetic to triggers that people might have - there's normally a less controversial or risque variant of a story that can be used.
 
