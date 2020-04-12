@@ -13,25 +13,18 @@ Badge.Label(734, "Ernest Johnny Payne", "Strategic Communication");
 // => "[734] - Ernest Johnny Payne - STRATEGIC COMMUNICATION"
 ```
 
-The department name is optional. If someone has no department, just
-print `GUEST` as their department name.
+### 2. Deal with the optional parameters on the badge labels
+
+The id and department name are optional. If someone does not have an
+id, do not print this part of the label.  If someone has no
+department, just print `GUEST` as their department name.
 
 ### 2. Convert the label text to fit on a badge with a given width
 
-Implement the `Badge.PrintLabel()` method to return an employee's badge label that can fit on a badge with a given width:
+Implement the `Badge.PrintLabel()` method to return an employee's
+badge label that can fit on a badge with a given width:
 
 ```csharp
 Badge.PrintLabel("[734] - Ernest Johnny Payne - STRATEGIC COMMUNICATION", 30);
 // => "[734] - Ernest Johnny Payne - \nSTRATEGIC COMMUNICATION"
-```
-
-### 3. Check if maxWidth is null
-
-Extend the `Badge.PrintLabel()` method to handle the case where
-`maxWidth` is `null`. The width is optional, so if it is not provided,
-just return the string as is.
-
-```csharp
-Badge.PrintLabel("[734] - Ernest Johnny Payne - STRATEGIC COMMUNICATION", null);
-// => "[734] - Ernest Johnny Payne - STRATEGIC COMMUNICATION"
 ```

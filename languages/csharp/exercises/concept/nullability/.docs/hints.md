@@ -11,22 +11,21 @@ The following reference documentation may help you finishing this exercice:
 
 ### 1. Badge.Label
 
-* Do not forget to convert the department to upper case if it is not `nulll`;
+* Which method from the `string` class may help you making the
+   department name [uppercase][toupper]?
+
+### 2. Badge.Label optional parameters
+
 * Do not forget to add `GUEST` as the department name if there's no
    provided department name.
 
-### 2. Badge.PrintLabel with a maxWidth
+### 2. Badge.PrintLabel
 
 * Which method from the `string` class may help you to extract a
    [substring][substring]
    of a string?
 * Do all slices always have the same length? If not, how to handle
    this case?
-
-### 2. Badge.PrintLabel without maxWidth
-
-* You can use an `if` to check if `maxWidth` is null before
-   trying to split the string.
 
 [null-keyword]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null
 [nullable-types-tutorial]: https://csharp.net-tutorials.com/data-types/nullable-types/
@@ -35,3 +34,4 @@ The following reference documentation may help you finishing this exercice:
 [nullable-reference-types]: https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references
 [nullable-reference-types-tutorial]: https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/february/essential-net-csharp-8-0-and-nullable-reference-types
 [substring]: https://docs.microsoft.com/en-us/dotnet/api/system.string.substring?view=netframework-4.8
+[toupper]: https://docs.microsoft.com/en-us/dotnet/api/system.string.toupper?view=netframework-4.8xv
