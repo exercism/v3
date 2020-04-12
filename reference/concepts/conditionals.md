@@ -8,9 +8,7 @@ Tracks should teach non-standard ways that conditionals are used in their langua
 
 ### LogLevel
 
-This exercise takes log message codes and return a symbol (atom) to characterize it. The reference implementation (Elixir) teaches:
-
-- conditional blocks using the `cond/1` function
+This exercise takes a code derived from a log message and returns a unique symbol to characterize it.
 
 #### Implementations
 
