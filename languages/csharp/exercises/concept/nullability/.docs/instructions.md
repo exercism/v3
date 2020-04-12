@@ -1,7 +1,7 @@
 In this exercise you'll be writing code to helping printing name
 badges for factory employees.
 
-Employees have an id, name and department name. Badge labels are
+Employees have an ID, name and department name. Badge labels are
 formatted as follows: `"[id] - [name] - [DEPARTMENT]"`
 
 ### 1. Generate an employee's badge label
@@ -15,8 +15,8 @@ Badge.Label(734, "Ernest Johnny Payne", "Strategic Communication");
 
 ### 2. Deal with the optional parameters on the badge labels
 
-The id and department name are optional. If someone does not have an
-id, do not print this part of the label.  If someone has no
+The ID and department name are optional. If someone does not have an
+ID, do not print this part of the label.  If someone has no
 department, just print `GUEST` as their department name.
 
 ### 2. Convert the label text to fit on a badge with a given width
