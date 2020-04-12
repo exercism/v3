@@ -14,6 +14,12 @@
         "uuid": "5e743355-1ef3-4b5d-b59d-03bbc9697e6c",
         "concepts": ["booleans"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "lists",
+        "uuid": "3c53b340-680e-45c1-8979-3d79b441a65e",
+        "concepts": ["lists", "string-literals"],
+        "prerequisites": ["booleans"]
       }
     ],
     "practice": []

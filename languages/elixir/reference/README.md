@@ -258,3 +258,4 @@ The concept exercises use the following concepts:
 | concept | interpretation |
 | --- | --- |
 | `booleans` | Introduction to the boolean type and strict boolean operators -- and/2, or/2, not/1 |
+| `lists` | Introduction to the lists type basic list functions -- hd/1, tl/1, length/1, in/2 |
