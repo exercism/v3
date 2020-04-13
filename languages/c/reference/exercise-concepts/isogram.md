@@ -15,5 +15,5 @@
 - [Function Parameters](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Function-Parameters): The definition of the function under test uses parameters
 - [Header Files](https://www.gnu.org/software/libc/manual/html_mono/libc.html#Header-Files): Used to access the standard library
 - [Loops](https://github.com/exercism/v3/blob/master/reference/concepts/loops.md): A for loop is used to iterate across the string's characters
-- [String](https://github.com/exercism/v3/blob/master/reference/types/string.md): A string parameter is part of the funtion under test's definition
+- [String](https://github.com/exercism/v3/blob/master/reference/types/string.md): A string parameter is part of the function under test's definition
 - [The if Statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-if-Statement): Used to determine the value to return
