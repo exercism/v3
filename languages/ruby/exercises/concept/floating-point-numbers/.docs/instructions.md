@@ -27,7 +27,7 @@ SavingsAccount.annual_balance_update(200.75)
 #=> 201.75375
 ```
 
-Note that the value returned is an istance of `Float`.
+Note that the value returned is an instance of `Float`.
 
 ### 3. Calculate the years before reaching the desired balance
 
