@@ -33,6 +33,9 @@ track/delphi:
 track/elixir:
   - languages/elixir/**/*
 
+track/elm:
+  - languages/elm/**/*
+
 track/emacs-lisp:
   - languages/emacs-lisp/**/*
 
@@ -50,6 +53,9 @@ track/go:
 
 track/haskell:
   - languages/haskell/**/*
+
+track/j:
+  - languages/j/**/*
 
 track/java:
   - languages/java/**/*
@@ -74,6 +80,12 @@ track/purescript:
 
 track/python:
   - languages/python/**/*
+
+track/r:
+  - languages/r/**/*
+
+track/raku:
+  - languages/raku/**/*
 
 track/racket:
   - languages/racket/**/*

@@ -1,0 +1,14 @@
+###
+# Lock files. Arrange alphabetically by language
+###
+
+# JavaScript
+yarn.lock
+package-lock.json
+
+# Ruby
+Gemfile
+Gemfile.lock
+
+# Rust
+Cargo.lock

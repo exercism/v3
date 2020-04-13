@@ -68,5 +68,6 @@
     - [Variable shadowing](/reference/concepts/variable_shadowing.md)
     - [Variables](/reference/concepts/variables.md)
   - [Paradigms](/reference/paradigms/README.md)
+  - [Stories](/reference/stories/README.md)
   - [Tooling](/reference/tooling/README.md)
   - [Types](/reference/types/README.md)

@@ -39,6 +39,7 @@ Here is how we have interpreted the following concept-keywords. This should be s
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `numbers-basic`   | Know of the existence of the `number` type and (for this language) see that it's whole numbers, and floating points. Know of basic operators such as multiplication. Know where it's documented, or at least how to search for it. |
 | `strings-basic`   | Know of the existence of the `string` type. Know of some basic functions (like looking up a character at a position, or slicing the string). Know where it's documented, or at least how to search for it. |
+| `booleans-basic`  | Know of the existence of the `boolean` type. Know about boolean operators and how to build logical expressions with them. Know of the boolean operator precedence rules. Know where it's documented, or at least how to search for it. |
 | `promises`        | Know of the `Promise` construct (`future` type in some other languages), chain-ability, and `.then`. Know where it's documented/how to search. |
 | `arrays-basic`    | Know of the `Array` construct (`array` type in some other languages). Know of some basic functions. |
 | `errors-basic`    | Know how to create an error, how throw it and how to catch it. |

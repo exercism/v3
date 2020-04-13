@@ -1,3 +1,5 @@
+# Docs
+docs/**/*                              @iHiD @ErikSchierboom
 
 # Track-specific reviewers
 languages/ada/**/*                     @exercism/ada

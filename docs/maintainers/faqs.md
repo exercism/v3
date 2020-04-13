@@ -16,7 +16,7 @@ For a more in-depth explanation on v3, please check the following links:
 
 ## What is the role of maintainers in the v3 transition?
 
-The key role for maintainers is in designing and managing their tracks. We don't expect maintainers to do all the work of creating everything. We want to crowd-source work as much as possible. Maintainers' key role is in working out how their track can best teach a student, and designing and reviewing exercises exercises. We hope that maintainers will also enjoy creating some of the actual exercise themselves, but the load of this should be spread amongst the wider community.
+The key role for maintainers is in designing and managing their tracks. We don't expect maintainers to do all the work of creating everything. We want to crowd-source work as much as possible. Maintainers' key role is in working out how their track can best teach a student, and designing and reviewing exercises. We hope that maintainers will also enjoy creating some of the actual exercise themselves, but the load of this should be spread amongst the wider community.
 
 For more information, see the [maintainers README][maintainers].
 
@@ -92,7 +92,7 @@ We highly recommend reading [this thread][concept-to-exercise-mapping] for a nic
 There will be no mentoring on Concept Exercises in v3. The process will be fully automated, and will work as follows:
 
 1. The student submits a solution for a Concept Exercise which prequisites have been met (i.e. the student has completed Concept Exercises teaching the prerequisite Concepts).
-1. The solution is tested automatically to verify it passes all tests. This is done by the [test runner][test-runner]. If a test fails, details of the failing test are shown to the user. The student must submit again (step 1) in order to continue.
+1. The solution is tested automatically to verify it passes all tests. This is done by the [test runner][test-runner]. If a test fails, details of the failing test are shown to the student. The student must submit again (step 1) in order to continue.
 1. The [representer][representer] creates a representation of the solution. If there are any comments linked to that representation, those comments are presented to the student. The student must submit submit again (step 1) in order to continue.
 1. The [analyzer][analyzer] analyzes the solution. If there are comments, those comments are presented to the student. If one of the comments indicates that the student should not be allowed to proceed, the student must submit submit again (step 1) in order to continue.
 1. The student's solution is approved and the student can work on another Concept Exercise which prerequisites have been met.
@@ -131,6 +131,24 @@ Short answer: no. For the moment, we have all the v3 tracks in this single monor
 
 The basic communication channel for maintainers is Slack, and in particular the maintainer-only `#maintaining-<track>` channel. For communication with everyone else, GitHub issues should be used, for obvious reasons (discoverability, familiarity, etc.). We've also enabled the GitHub Projects feature on the v3 repo, so you can organize your track's v3 transition there too.
 
+## Should I use citations
+
+Yes! Please use citations in any reference documentation (files under `**/reference/**`). We are using the [Science of Computer Programming citation style][socp-citation-style]. This means that when citing website, please use this format:
+
+> $TITLE, $SOURCE. ($PUBLISHED_DATE). $URL (accessed \$ACCESSED_DATE).
+
+For example:
+
+> [1] Actor model, Wikipedia. (2020). https://en.wikipedia.org/w/index.php?title=Actor_model&oldid=939106706 (accessed February 29, 2020).
+
+To include a citation in reference documentation, add the citation reference to the bottom of the page. Then add a line with the `---` separator above the citation. The final step is to append a superscript to the cited text. This superscript should refer to the citation reference's number (usually `<sup>1</sup>`). See the [actor model reference documentation][actor_model-reference-documentation] for an example.
+
+Note that if the cited text is copied literally, please put it in [blockquotes][blockquotes].
+
+### Generating citations
+
+To help generate these citations, [ZoteroBib][zoterobib] can be used. On that website, first set the citation style to "Science of Computer Programming" in the "Bibliography" section. Then, paste the URL you want to cite in the input field at the top of the page, click on the "Cite" button and the citation will be generated for you.
+
 ## More questions?
 
 Do you have more questions or feel that something is missing? Please let us know by [opening a GitHub issue][open-github-issue].
@@ -142,7 +160,7 @@ Do you have more questions or feel that something is missing? Please let us know
 [concept-exercises]: ../concept-exercises.md
 [determining-concepts]: ./determining-concepts.md
 [how-to-implement-a-concept-exercise]: ./generic-how-to-implement-a-concept-exercise.md
-[how-to-implement-a-concept-exercise-csharp]: ../../languages/csharp/docs/implementing-a-concept-exercise.md
+[how-to-implement-a-concept-exercise-csharp]: ../../languages/csharp/reference/implementing-a-concept-exercise.md
 [writing-a-concept-exercise-github-issue]: ./writing-a-concept-exercise-github-issue.md
 [concept-to-exercise-mapping]: https://exercism-team.slack.com/archives/CC5DGSAG6/p1579722161067300
 [practice-exercises]: ../rationale-for-v3.md#practice-exercises
@@ -150,5 +168,9 @@ Do you have more questions or feel that something is missing? Please let us know
 [representer]: https://github.com/exercism/automated-analysis/blob/master/docs/representers/introduction.md
 [analyzer]: https://github.com/exercism/automated-analysis/blob/master/docs/analyzers/interface.md
 [concepts]: ../../reference/README.md
+[actor_model-reference-documentation]: ../../reference/concepts/actor_model.md
 [concept-exercise-issue-example]: https://github.com/exercism/v3/issues/33
 [open-github-issue]: https://github.com/exercism/v3/issues/new/choose
+[socp-citation-style]: https://paperpile.com/s/science-of-computer-programming-citation-style/#examples-website-citations
+[zoterobib]: https://zbib.org/
+[blockquotes]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#blockquotes

@@ -2,9 +2,9 @@
 
 ## Background
 
-Exercism v1 (the original site) had no concept of progression or structure within a language. A track was a bucket of exercises, which users were free to choose from.
+Exercism v1 (the original site) had no concept of progression or structure within a language. A track was a bucket of exercises, which students were free to choose from.
 
-In designing v2, we added a structured pathway (core exercises) which aimed to take a user through the basis of what they needed to know for that language, then additional (side) exercises that allowed them to explore other related concepts. This worked great in theory, but a year later, despite a lot of work by maintainers, no tracks have core pathways that do a great job of comprehensively teaching the key concepts.
+In designing v2, we added a structured pathway (core exercises) which aimed to take a student through the basis of what they needed to know for that language, then additional (side) exercises that allowed them to explore other related concepts. This worked great in theory, but a year later, despite a lot of work by maintainers, no tracks have core pathways that do a great job of comprehensively teaching the key concepts.
 
 Why is this?
 
@@ -35,7 +35,7 @@ I believe the key area where we are failing our students is in not having a clea
 
 ### Concept Exercises
 
-Concepts Exercises should have the following characteristics:
+Concept Exercises should have the following characteristics:
 
 - Each one has a clear learning goal.
 - They are language-specific, not generic.
@@ -51,13 +51,13 @@ Concept Exercises will not share a generic base such as problem-specifications. 
 
 ### Practice Exercises
 
-Practice Exercises should be story-based than concept-based. They should provide an interesting challenge, which a student can try and solve using the concepts they have been taught. The existing set of Exercism exercises are generally great Practice Exercise candidates.
+Practice Exercises should be story-based rather than concept-based. They should provide an interesting challenge, which a student can try and solve using the concepts they have been taught. The existing set of Exercism exercises are generally great Practice Exercise candidates.
 
 There will be no "approval" for Practice Exercises. A student solves the exercise against the tests and submits it. They can then choose to publish, or submit further iterations.
 
 We will provide automated analysis of Practice Exercises, but only as tips for how things could be made more idiomatic, referring back to the Concepts previously taught. We expect this analysis to take lower priority than on Concept Exercises (as students are not blocked) so it should be seen as a nice bonus feature, not something that the exercise or student should rely on.
 
-Once submitted, the student will have the option to browse different "Approaches". These will be articles written by our community explaining the various common (or possible) approaches to this exercises, outlining the pros/cons and tradeoffs of the approach. We will link to curated examples of user-submitted solutions that adhere to the various approaches for students to explore further. We will crowd-source these approaches, giving the community the option to become Exercism Authors, but will have a review process to ensure a solid quality-barrier. For exercises that do not yet have "Approaches" written, we will automatically group solutions by AST analysis, for students to browse.
+Once submitted, the student will have the option to browse different "Approaches". These will be articles written by our community explaining the various common (or possible) approaches to this exercises, outlining the pros/cons and tradeoffs of the approach. We will link to curated examples of student-submitted solutions that adhere to the various approaches for students to explore further. We will crowd-source these approaches, giving the community the option to become Exercism Authors, but will have a review process to ensure a solid quality-barrier. For exercises that do not yet have "Approaches" written, we will automatically group solutions by AST analysis, for students to browse.
 
 Finally, students can ask the community a question about their exercise. e.g. "I've read this approach but I don't understand how XYZ works and how I can apply it to my code". Community members can then reply to the student with their thoughts - a little like the community interactions on v1. We will make it explicit to students that when they ask a question they are not getting "mentor-quality" feedback, but tapping into the hive-mind of the community. This will also help us add a fair gatekeeping level for mentors. Community-mentors who answer questions helpfully, and have therefore proven their ability to communicate empathetically and helpfully, will have the option to become mentors.
 

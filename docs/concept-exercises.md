@@ -31,7 +31,7 @@ Exercises are unlocked based on concepts taught and learnt. Each Concept Exercis
 
 Concept Exercises should not inherently become more difficult as the track progresses. **A seasoned developer in Language X should be able to work through all the Concept Exercises on that track spending no more than 5-10 minutes solving each one.** As each exercise should be focussed on getting someone to use a concept for the first time, and because the seasoned developer already understands that concept in Language X, the exercise should feel relatively trivial for them. Later exercises may feel more difficult to a developer unfamiliar with Language X, but only because the later exercise is teaching a concept which in itself is more complicated (for example, most people would agree Recursion is a more complex topic to learn for the first time, than a Loop is to remap from one language to another).
 
-Concept Exercises are **not** mentored. When a user submits a submission that gets the tests passing for a Concept Exercise, we check for an Analyzer or Representer to give feedback. If none is found, then the solution is approved. This shifts the burden of teaching to the exercise, which must provide a clear pathway to learning the concept that is being taught.
+Concept Exercises are **not** mentored. When a student submits a submission that gets the tests passing for a Concept Exercise, we check for an Analyzer or Representer to give feedback. If none is found, then the solution is approved. This shifts the burden of teaching to the exercise, which must provide a clear pathway to learning the concept that is being taught.
 
 Concept Exercises do not share a common base like Practice Exercises do in the `problem-specifications` repository. Instead they "share" Concepts that they are teaching with other languages. This repository aims to list all of those Concepts and provide information about the Concept that maintainers can use as the basis for their own languages. Each Concept should also link to the implementations in different languages. Maintainers are free to copy and paste from each others repositories, and then edit to make things specific to their tracks, but such copy-and-pastes should be considered hard-forks.
 
@@ -43,7 +43,7 @@ When designing Concept Exercises, please consider the following guidelines:
 
 1. The exercise should be able to be solved in 5-10 minutes by someone proficient in the language.
 1. The exercise should not involve having to learn or engineer a non-trivial algorithm.
-1. The exercise should not be math-based, unless it is teaching a mathematical concept.
+1. The exercise should be background-knowledge-agnostic, unless the exercise calls for it (e.g. no maths unless it's a scientific/maths-based Concept).
 
 ## Exercise Structure
 
@@ -51,29 +51,37 @@ An exercise has the following files. In the browser they will show at the releva
 
 ### `.docs/introduction.md`
 
-This file provides an introduction to the concept. It should be explicit about what the exercise teaches and maybe provide a brief introduction to the concepts, but not give away so much that the user doesn't have to do any work to solve the exercise.
+This file contains an introduction to the concept. It should make the exercise's learning goals explicit and provide a short introduction with enough detail for the student to complete the exercise. The aim is to give the student just enough context to figure out the solution themselves, as research has shown that self-discovery is the most effective learning experience. Using the proper technical terms in the descriptions will be helpful if the student wants to search for more information. If the exercise introduces new syntax, an example of the syntax should always be included; students should not need to search the web for examples of syntax.
+
+As an example, the introduction to a "strings" exercise might describe a string as just a "Sequence of Unicode characters" or a "series of bytes". Unless the student needs to understand more nuanced details in order to solve the exercise, this type of brief explanation (along with an example of its syntax) should be sufficient information for the student to solve the exercise.
 
 See the C# floating-point-numbers exercise's [introduction.md file][csharp-docs-introduction.md] for an example.
 
 ### `.docs/instructions.md`
 
-This file provides instructions for the exercise. It should explicitly explain what the user needs to do (define a function with the signature `X.y(...)` that takes an A and returns a Z), and provide at least one example usage of that function. If there are multiple tasks within the exercise, it should provide an example of each.
+This file contains instructions for the exercise. It should explicitly explain what the student needs to do (define a method with the signature `X(...)` that takes an A and returns a Z), and provide at least one example usage of that function. If there are multiple tasks within the exercise, it should provide an example of each.
 
 See the C# floating-point-numbers exercise's [instructions.md file][csharp-docs-instructions.md] for an example.
 
 ### `.docs/hints.md`
 
-If the user gets stuck, we will allow them to click a button requesting a hint, which shows this file. We will softly discourage them using it.
+If the student gets stuck, we will allow them to click a button requesting a hint, which shows this file. This will not be a "recommended" path and we will (softly) discourage them using it unless they can't progress without it. As such, it's worth considering that the student reading it will be a little confused/overwhelmed and maybe frustrated.
 
-The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any user. They might link to the docs of the functions that need to be used.
+The file should contain both general and task-specific "hints". These hints should be enough to unblock almost any student. They might link to the docs of the functions that need to be used.
+
+The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
 
 See the C# floating-point-numbers exercise's [hints.md file][csharp-docs-hints.md] for an example.
 
 ### `.docs/after.md`
 
-Once the user completes the exercise they will be shown this file, which gives them any bonus information or further reading about the concept taught.
+Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
 
 See the C# floating-point-numbers exercise's [after.md file][csharp-docs-after.md] for an example.
+
+### `.docs/source.md` (required if there are third-party sources)
+
+This file contains third-party references and sources of the exercise. Only required if there are any such sources, but not if the exercise was completely designed from scratch for Exercism.
 
 ### `.meta/design.md`
 
@@ -82,6 +90,61 @@ This file contains information on the exercise's design, which includes things l
 It exists in order to inform future maintainers or contributors about the scope and limitations of an exercise, to avoid the natural trend towards making exercises more complex over time.
 
 See the C# floating-point-numbers exercise's [design.md file][csharp-docs-design.md] for an example.
+
+### `.meta/config.json`
+
+This file contains meta information on the exercise:
+
+- The exercise's author(s) (required)
+- The exercise's contributor(s) (optional)
+- Which exercise it was forked from (required if the exercise is forked)
+- Language version requirements (optional)
+
+#### Example
+
+Assume that the user FSharpForever has written an exercise called `basics` for the F# track. PythonProfessor adapts the exercise for the Python track. Later on, the user PythonPerfection improves the exercise.
+
+##### Python `basics` exercise `.meta/config.json` file (fork)
+
+```json
+{
+    "contributors": [
+        {
+            "github_username": "PythonPerfection",
+            "exercism_username": "PythonPerfection"
+        }
+    ],
+    "authors": [
+        {
+            "github_username": "PythonProfessor",
+            "exercism_username": "PythonProfessor"
+        }
+    ],
+    "forked_from": ["fsharp/basics"],
+    "language_versions": ">=3.7"
+}
+```
+
+##### F# `basics` exercise `.meta/config.json` file (source)
+
+```json
+{
+    "authors": [
+        {
+            "github_username": "FSharpForever",
+            "exercism_username": "FSharpForever"
+        }
+    ]
+}
+```
+
+Note that
+
+- The order of authors and contributors is not significant and has no meaning.
+- If you are forking an exercise, do not reference original authors or contributors. Just ensure that `forked_from` is correct.
+- `language_versions` is a free-form string that tracks are free to use and interpret as they like.
+
+See the F# booleans exercise's [config.json file][fsharp-booleans-docs-config.json] for another example.
 
 ## Track Structure
 
@@ -93,13 +156,16 @@ See the C# track's [cli.md file][csharp-docs-cli.md] for an example.
 
 ### `exercises/shared/.docs/debug.md`
 
-This file explains how a user that is coding in the browser can still do "debugging."
+This file explains how a student that is coding in the browser can still do "debugging."
 
 See the C# track's [debug.md file][csharp-docs-debug.md] for an example.
 
 [csharp-docs-cli.md]: ../languages/csharp/exercises/shared/.docs/cli.md
 [csharp-docs-debug.md]: ../languages/csharp/exercises/shared/.docs/debug.md
-[csharp-docs-after.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/after.md
-[csharp-docs-hints.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/hints.md
-[csharp-docs-introduction.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
-[csharp-docs-instructions.md]: ../languages/csharp/exercises/concept/numbers-floating-point/.docs/instructions.md
+[csharp-docs-after.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md
+[csharp-docs-hints.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/hints.md
+[csharp-docs-introduction.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/introduction.md
+[csharp-docs-instructions.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
+[csharp-docs-design.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.meta/design.md
+[csharp-docs-config.json]: ../languages/csharp/exercises/concept/floating-point-numbers/.meta/config.json
+[fsharp-booleans-docs-config.json]: ../languages/fsharp/exercises/concept/booleans/.meta/config.json

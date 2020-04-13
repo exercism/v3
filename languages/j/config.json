@@ -1,0 +1,16 @@
+{
+  "track_id": "j",
+  "language": "J",
+  "version": 3,
+  "active": false,
+  "blurb": "J is a terse interpreted array language originally designed by Ken Iverson and Roger Hui. It's great for wholemeal functional programming, supports object orientation, and blazes through numerical vector computations.",
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 0
+  },
+  "solution_pattern": "example.*[.]ijs",
+  "exercises": {
+    "concept": [],
+    "practice": []
+  }
+}

@@ -4,7 +4,9 @@ _Note: This file, and the other docs in this repository, can be viewed on [GitHu
 
 Welcome to the workspace for Exercism v3!
 
-Exercism v3 is the third major iteration of Exercism, which we are aiming to launch around June 2020. It aims to both add exciting new features and to fix some of the issues present in v2, especially those around being blocked while waiting for a mentor. Its main features include:
+Exercism v3 is the third major iteration of Exercism, which we are aiming to launch around June 2020. It aims to both add exciting new features and to fix some of the issues present in v2, especially those around being blocked while waiting for a mentor. You can read the WIP plan [here](https://github.com/exercism/v3/issues/690).
+
+A summary of the main features:
 
 - **Restructured tracks:** We are restructuring tracks to build new pathways containing Concept Exercises. These exercises will teach the key concepts that someone needs to know when learning a language. Completing a Concept Exercise will unlock other Concept and Practice Exercises. Concept Exercises will have automated feedback and approval, with no delays waiting for a mentor.
 - **Approaches:** We will be automatically grouping similar solutions to Practice Exercises into Approaches. These will be supported with community-sourced articles expounding each approach, discussing its pros, cons, and potential usages.
@@ -27,12 +29,14 @@ _(This list is sorted alphabetically.)_
 - [Dart][track-dart]
 - [Delphi][track-delphi]
 - [Elixir][track-elixir]
+- [Elm][track-elm]
 - [Emacs Lisp][track-emacs-lisp]
 - [Erlang][track-erlang]
 - [F#][track-fsharp]
 - [Factor][track-factor]
 - [Go][track-go]
 - [Haskell][track-haskell]
+- [J][track-j]
 - [Java][track-java]
 - [JavaScript][track-javascript]
 - [Julia][track-julia]
@@ -41,7 +45,9 @@ _(This list is sorted alphabetically.)_
 - [Perl 5][track-perl5]
 - [PureScript][track-purescript]
 - [Python][track-python]
+- [R][track-r]
 - [Racket][track-racket]
+- [Raku][track-raku]
 - [ReasonML][track-reasonml]
 - [Ruby][track-ruby]
 - [Rust][track-rust]
@@ -72,12 +78,14 @@ _(This list is sorted alphabetically.)_
 [track-dart]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fdart
 [track-delphi]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fdelphi
 [track-elixir]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Felixir
+[track-elm]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Felm
 [track-emacs-lisp]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Femacs-lisp
 [track-erlang]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Ferlang
 [track-fsharp]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Ffsharp
 [track-factor]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Ffactor
 [track-go]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fgo
 [track-haskell]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fhaskell
+[track-j]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fj
 [track-java]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fjava
 [track-javascript]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fjavascript
 [track-julia]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fjulia
@@ -86,6 +94,8 @@ _(This list is sorted alphabetically.)_
 [track-perl5]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fperl5
 [track-purescript]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fpurescript
 [track-python]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fpython
+[track-r]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fr
+[track-raku]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fraku
 [track-racket]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fracket
 [track-reasonml]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Freasonml
 [track-ruby]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fruby

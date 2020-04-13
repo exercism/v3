@@ -1,5 +1,7 @@
 # Julia
 
+![Julia Exercise CI](https://github.com/exercism/v3/workflows/Julia%20Exercise%20CI/badge.svg)
+
 Welcome to the workspace for Exercism v3's Julia track!
 
 This area will contain everything needed to launch the Julia track, including:

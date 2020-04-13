@@ -15,7 +15,7 @@ This area will contain everything needed to launch the Go track, including:
 [:books: Open Issues](https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fgo) |
 [:gift: Open Pull Requests](https://github.com/exercism/v3/pulls?q=is%3Apr+is%3Aopen+label%3Atrack%2Fgo)
 
-[:house_with_garden:  v3 Docs Website](https://exercism.github.io/v3/#/)
+[:house_with_garden: v3 Docs Website](https://exercism.github.io/v3/#/)
 
 [:gear: Go Concept Reference](https://exercism.github.io/v3/#/languages/go/reference/README) | [:speech_balloon: Go Concept Discussion](https://github.com/exercism/v3/issues/167) | [:hammer: Go Exercise Discussion](https://github.com/exercism/v3/issues/212)
 
@@ -69,6 +69,6 @@ These extra steps will make your track better, but are optional.
 
 [Getting Started for Maintainers](https://exercism.github.io/v3/#/docs/maintainers/README)
 
-[How to implement a Go Concept Exercise](https://exercism.github.io/v3/#/languages/go/docs/implementing-a-concept-exercise)
+[How to implement a Go Concept Exercise](https://exercism.github.io/v3/#/languages/go/reference/implementing-a-concept-exercise)
 
-[Example C# Concept Exercise](https://exercism.github.io/v3/#/languages/csharp/docs/examples/new-concept-exercise-arrays)
+[Example Go Concept Exercise](https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/basic-strings)
