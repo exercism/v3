@@ -24,7 +24,7 @@ The Concepts this exercise unlocks are:
 
 ## Prerequisites
 
-This exercise's prerequisites Concepts are:
+This exercise's prerequisite concepts are:
 
 - `numbers`: define numbers and apply arithmetic and boolean logic to them.
 - `conditionals`: conditionally execute code based on value of floating-point numbers.
