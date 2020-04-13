@@ -8,7 +8,7 @@ These are the concept exercises that have currently been implemented, as well as
 
 | exercise | concepts | prerequisites |
 | -------- | -------- | ------------- |
-| `basics` | `basics` | none          |
+| `basics` | `basics` | none |
 | `booleans` | `booleans` | `basics` |
 | `conditionals` | `conditionals`, `atoms` | `booleans` |
 
@@ -18,7 +18,7 @@ It's only important that it's reasonably easy to _find_ the exercise. It's okay 
 
 ## Contributing
 
-Thanks for wanting to contribute to the Go track's concept exercises! Contributions are very welcome!
+Thanks for wanting to contribute to the Elixir track's concept exercises! Contributions are very welcome!
 
 To contribute, please find and work on one of the [new exercise issues][issues-new-exercise] or [improve exercise issues][issues-improve-exercise].
 

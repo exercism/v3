@@ -1,9 +1,9 @@
 defmodule LogLevel do
   def to_label(level) do
-    raise "Function not yet implemented."
+    raise "to_label/1 not yet implemented"
   end
 
   def send_alert?(level) do
-    raise "Function not yet implemented."
+    raise "send_alert?/1 not yet implemented"
   end
 end

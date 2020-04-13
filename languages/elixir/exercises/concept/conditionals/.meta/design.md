@@ -8,7 +8,7 @@ The goal of this exercise to teach students how to use conditional control flow 
 
 After completing this exercise, the student should:
 
-- Know of the existence of the `cond` control flow structure and how to use it.
+- Know of the existence of the `cond/1` control flow structure and how to use it.
 - Know how to perform boolean logic using the `===/2` operator function.
 - Know how to return values from a function with conditional logic.
 - Know of the existence of the [atom][atom] type
@@ -17,7 +17,7 @@ After completing this exercise, the student should:
 
 - Pattern matching.
 - Function overloading.
-- `case` control flow structures.
+- `case` flow control structures.
 - Converstion of string to atoms.
 
 ## Concepts

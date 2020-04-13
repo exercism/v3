@@ -25,7 +25,7 @@ cond do
 end
 ```
 
-At least one clause should evaluate to `true` or an error will be raised..
+At least one clause should evaluate to `true` or an error will be raised.
 
 [atom]: https://elixir-lang.org/getting-started/basic-types.html#atoms
 [anti-pattern]: https://en.wikipedia.org/wiki/Anti-pattern
