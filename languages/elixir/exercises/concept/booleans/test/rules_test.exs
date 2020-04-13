@@ -16,12 +16,12 @@ defmodule RulesTest do
   end
 
   @tag :pending # remove line to run test
-  test "if point scored when ate just pill" do
+  test "if point scored when ate just power pellet" do
     assert Rules.score?(true, false)
   end
 
   @tag :pending # remove line to run test
-  test "if point scored when ate pill and dot" do
+  test "if point scored when ate power pellet and dot" do
     assert Rules.score?(true, true)
   end
 
@@ -31,12 +31,12 @@ defmodule RulesTest do
   end
 
   @tag :pending # remove line to run test
-  test "loss if touched a ghost without a pill" do
+  test "loss if touched a ghost without a power pellet active" do
     assert Rules.lose?(false, true)
   end
 
   @tag :pending # remove line to run test
-  test "no loss if touched a ghost with a pill" do
+  test "no loss if touched a ghost with a power pellet active" do
     refute Rules.lose?(true, true)
   end
 
@@ -46,12 +46,12 @@ defmodule RulesTest do
   end
 
   @tag :pending # remove line to run test
-  test "no win if all dots eaten, but touching a ghose" do
+  test "no win if all dots eaten, but touching a ghost" do
     refute Rules.win?(true, false, true)
   end
 
   @tag :pending # remove line to run test
-  test "win if all dots eaten and touching a ghost if ate a pill" do
+  test "win if all dots eaten and touching a ghost if a power pellet is active" do
     assert Rules.win?(true, true, true)
   end
 end

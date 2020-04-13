@@ -21,6 +21,7 @@ The goal of this exercise is to teach the student the basics of booleans and log
 - Truthy logical comparisons using `&&/2`, `||/2`, `!/1`
 - Single-line functions
 - Booleans as special atoms
+- `is_` prefix naming for boolean guard functions
 
 ## Prerequisites
 

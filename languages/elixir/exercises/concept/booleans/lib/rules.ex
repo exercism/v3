@@ -1,10 +1,17 @@
 defmodule Rules do
-  # TODO: implement the eat_ghost?/2 function
+  def eat_ghost?(power_pellet_active, touching_ghost) do
+    raise "eat_ghost?/2 not yet implemented"
+  end
 
-  # TODO: implement the score?/2 function
+  def score?(ate_power_pellet, ate_dot) do
+    raise "score?/2 not yet implemented"
+  end
 
-  # TODO: implement the lose?/2 function
+  def lose?(power_pellet_active, touching_ghost) do
+    raise "lose?/2 not yet implemented"
+  end
 
-  # TODO: implement the win?/3 function
-
+  def win?(ate_all_dots, power_pellet_active, touching_ghost) do
+    raise "win?/3 not yet implemented"
+  end
 end
