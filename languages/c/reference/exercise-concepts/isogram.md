@@ -4,7 +4,6 @@
 
 - [Array](https://github.com/exercism/v3/blob/master/reference/types/array.md): The `phrase` string is iterated over using array semantics
 - [ASCII](https://github.com/exercism/v3/blob/master/reference/concepts/ascii.md): ASCII arithmetic is used
-- [Bit Fields](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Bit-Fields): A bit mask is constructed and applied
 - [Bitwise manipulation](https://github.com/exercism/v3/blob/master/reference/concepts/bitwise_manipulation.md): A bit mask is constructed and applied
 - [Boolean](https://github.com/exercism/v3/blob/master/reference/types/boolean.md): The returned value is of type `bool`
 - [Boolean logic](https://github.com/exercism/v3/blob/master/reference/concepts/boolean_logic.md): A bit mask is applied
