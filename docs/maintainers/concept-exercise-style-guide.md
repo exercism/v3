@@ -11,11 +11,12 @@ This document records the current style guide applicable to Concept exercise Mar
 ## Empty Documents
 
 If a document is empty, i.e. there is no `after.md` content, then do not check one in.
+
 ## Links
 
-Exercism prefers [reference links](https://spec.commonmark.org/0.29/#reference-link), which are defined at the bottom of the Markdown file, mapped to a reference slug, and referenced by that slug in the text.
+Please use [reference links](https://spec.commonmark.org/0.29/#reference-link), which are defined at the bottom of the Markdown file, mapped to a reference slug, and referenced by that slug in the text.
 
-This makes maintenance easier, since the link must only be updated once.
+This method makes maintenance easier, since the link must only be updated once.
 
 Example:
 
@@ -43,17 +44,16 @@ If you want some more information, [Google][google-search-link] is a useful reso
 [google-link]: https://google.com
 ```
 
+Which renders as, "If you want some more information, [Google][google-search-link]".
 
 ## Code
 
-Where possible and relevant, format code in a way that is relevant to the environment it is being presented in. Please reference the docs for your language, as they may have more information.
-
-Code should be formatted with the Markdown language attribute, i.e. ` \`\`\`csharp`. 
+Whenever possible, format code in a way that is most relevant to the environment it is being presented in. If available, please reference the docs for your language.
 
 For example, Python has the REPL (read-eval-print loop), which allows a programmer to type code directly into a terminal. If a user was debugging some code, or running a function locally to test/observe how it works, they are more likely to use a REPL to do so, since it is more convenient to type interactively there. In this situation, we prefer formatting example code as if it was being typed into the REPL, with a leading `>>>`:
 
 ```python
-# This is what a user would see, so it makes sense to format it similarly in the description
+# This is the expected output a student would see while testing a function they wrote.
 >>> print(extract_message("[INFO] Logline message"))
 'Logline message'
 ```
@@ -66,7 +66,7 @@ def sample_func(argument1):
     pass
 ```
 
-A quick way to distinguish between the two cases when it's unclear - if this is code the student can run in a terminal, format it that way. If it's code that Exercism might run (in tests, library code the student will write, etc), format it as runnable code.
+A quick way to distinguish between the two cases when it's unclear - if this is code the student can run in a terminal, format it that way. If it's code that Exercism might run (in tests, library code the student will write, etc), default to formatting it as runnable code.
 
 ## Language Code Style
 
@@ -78,3 +78,4 @@ Please consult each language's docs folder for more information on the preferred
 
 
 [uuid-gen]: https://www.uuidgenerator.net/version4
+[google-search-link]: https://google.com
