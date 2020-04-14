@@ -77,4 +77,7 @@ Please consult each language's docs folder for more information on the preferred
 
 ## Miscellaneous
 
- - Use dashed-style UUIDs in `config.json` files. e.g. `1234-5678-8901`
+ - Use the [UUID Generator][uuid-gen] to generate consistently formatted UUIDs for `config.json` files.
+
+
+[uuid-gen]: https://www.uuidgenerator.net/version4
