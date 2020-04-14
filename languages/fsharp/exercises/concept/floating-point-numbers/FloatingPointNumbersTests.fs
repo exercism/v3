@@ -1,9 +1,9 @@
-module NumbersFloatingPointTests
+module FloatingPointNumbersTests
 
 open FsUnit.Xunit
 open Xunit
 
-open NumbersFloatingPoint
+open FloatingPointNumbers
 
 [<Fact>]
 let ``Minimal first interest rate``() = interestRate 0m |> should equal 0.5f
