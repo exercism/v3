@@ -24,7 +24,7 @@ import A (class Fab)
 
 There is no `qualified` keyword in PureScript. Writing `import Data.List as List` has the same effect as writing `import qualified Data.List as List` in Haskell.
 
-Module imports and exports are fully documented on the [Modules](../concepts/modules.md) page.
+Module imports and exports are fully documented on the [Modules](../other/modules.md) page.
 
 ## Types
 
