@@ -72,7 +72,7 @@ Some of the following information is redistributed (without any adaptation) from
 - [`AdditionalProperty`][error-additional-property]
 - ...
 
-[error-additional-property]: errors/AdditionalProperty.md
+[error-additional-property]: purescript-concepts/errors/AdditionalProperty.md
 
 # Other interesting things
 - PureScript's syntax is highly based off of Haskell's. As such, it is somewhat easier to transition between the two languages.
