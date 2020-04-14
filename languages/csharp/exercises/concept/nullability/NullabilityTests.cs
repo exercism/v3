@@ -15,6 +15,10 @@ public class NullabilityTests
         Assert.Equal("Bogdan Rosario - MARKETING", Badge.Label(null, "Bogdan Rosario", "Marketing"));
 
     [Fact(Skip = "Remove this Skip property to run this test")]
+    public void MissingDepartmentAndId() =>
+        Assert.Equal("Bogdan Rosario - GUEST", Badge.Label(null, "Bogdan Rosario", null));
+
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void PrintSingleLine() =>
         Assert.Equal("[23337] - Tilly Swift - SALES", Badge.PrintLabel("[23337] - Tilly Swift - SALES", 150));
 
