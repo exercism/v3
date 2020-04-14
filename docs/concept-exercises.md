@@ -66,13 +66,13 @@ See the C# floating-point-numbers exercise's [introduction.md file][csharp-docs-
 
 **Purpose:** Provide instructions for the exercise.
 
-This file is split into two halves. 
-1. The first half explains the "story" or "theme" of the exercise. It should generally contain no code samples.
-2. The second half provides clear instructions of what a student needs to do, providing tasks.
+This file is split into two parts. 
+1. The first part explains the "story" or "theme" of the exercise. It should generally contain no code samples.
+2. The second part provides clear instructions of what a student needs to do, providing tasks.
 
-Each tasks must conform to the following standard:
+Each task must conform to the following standard:
 - Start with a third-level heading starting with a number (.e.g `### 1.`, `### 2.`)
-- Provide a method that a student needs to define with its signature(e.g. `X(...)` that takes an A and returns a Z),
+- Describe which function/method the student needs to define/implement (e.g. `Implement method X(...)` that takes an A and returns a Z),
 - Provide an example usage of that function. These examples should be different examples to those given in the tests.
 
 Avoid any controversial topics in the stories - be empathetic to triggers that people might have - there's normally a less controversial or risque variant of a story that can be used.
@@ -85,10 +85,10 @@ See the C# numbers exercise's [instructions.md file][csharp-docs-instructions.md
 
 - If the student gets stuck, we will allow them to click a button requesting a hint, which will show the relevant part of file. 
 - Hints should be bullet-pointed underneath headings.
-- General hints about the exericse can appear under the `### General` heading.
-- Task-specific hints should appear underneath headings that match their task in the `instructions.md` (e.g. `### 2.`).
+- General hints about the exercise can appear under the `### General` heading.
+- Task-specific hints should appear underneath headings that match their task heading in the `instructions.md` (e.g. `### 2.`).
 
-Viewing hints will not be a "recommended" path and we will (softly) discourage them using it unless they can't progress without it. As such, it's worth considering that the student reading it will be a little confused/overwhelmed and maybe frustrated. These hints should be enough to unblock almost any student. They might link to the docs of the functions that need to be used. The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
+Viewing hints will not be a "recommended" path and we will (softly) discourage using it unless the student can't progress without it. As such, it's worth considering that the student reading it will be a little confused/overwhelmed and maybe frustrated. These hints should be enough to unblock almost any student. They might link to the docs of the functions that need to be used. The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
 
 See the C# floating-point-numbers exercise's [hints.md file][csharp-docs-hints.md] for an example.
 
