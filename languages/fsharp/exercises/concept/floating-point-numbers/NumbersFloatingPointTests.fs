@@ -33,16 +33,16 @@ let ``Tiny third interest rate``() = interestRate 5_000.0001m |> should equal 2.
 let ``Large third interest rate``() = interestRate 5_639_998.742909m |> should equal 2.475f
 
 [<Fact(Skip = "Remove this Skip property to run this test")>]
-let ``Minimal negative interest rate``() = interestRate -0.000001M |> should equal -3.21300006f
+let ``Minimal negative interest rate``() = interestRate -0.000001M |> should equal -3.213f
 
 [<Fact(Skip = "Remove this Skip property to run this test")>]
-let ``Small negative interest rate``() = interestRate -0.123M |> should equal -3.21300006f
+let ``Small negative interest rate``() = interestRate -0.123M |> should equal -3.213f
 
 [<Fact(Skip = "Remove this Skip property to run this test")>]
-let ``Regular negative interest rate``() = interestRate -300.0M |> should equal -3.21300006f
+let ``Regular negative interest rate``() = interestRate -300.0M |> should equal -3.213f
 
 [<Fact(Skip = "Remove this Skip property to run this test")>]
-let ``Large negative interest rate``() = interestRate -152964.231M |> should equal -3.21300006f
+let ``Large negative interest rate``() = interestRate -152964.231M |> should equal -3.213f
 
 [<Fact(Skip = "Remove this Skip property to run this test")>]
 let ``Annual balance update for empty start balance``() = annualBalanceUpdate 0.0m |> should equal 0.0000m

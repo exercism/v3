@@ -1,2 +1,1 @@
-let reply (guess: int): string =
-    failwith "Please implement the 'reply' function"
+let reply (guess: int): string = failwith "Please implement the 'reply' function"
