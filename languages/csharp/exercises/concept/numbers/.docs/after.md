@@ -7,7 +7,7 @@ int i = 123;
 double d = 54.29;
 ```
 
-Arithmetic is done using the standard [arithmetic operators][arithmetic-operators] (`+`, `-`, `*`, etc.). Numbers can be compared using the standard [comparison operators][comparison-operators] (`<`, `>=`, etc.) and the [equality-][equality-operators] (`==`) and [inequality][equality-operators] (`!=`) operators.
+Arithmetic is done using the standard [arithmetic operators][arithmetic-operators] (`+`, `-`, `*`, etc.). Numbers can be compared using the standard [comparison operators][comparison-operators] (`<`, `>=`, etc.) and the [equality-][equality-operators] operator (`==`) and [inequality][equality-operators] operator (`!=`).
 
 ```csharp
 5 * 6;
