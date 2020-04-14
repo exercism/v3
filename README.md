@@ -68,6 +68,13 @@ _(This list is sorted alphabetically.)_
 - [What are concept exercise and how they are structured?](./docs/concept-exercises.md)
 - [How is this repository structured?](./docs/maintainers/repository-structure.md)
 
+### Contributors
+<a href="https://github.com/exercism/v3/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=exercism/v3" />
+</a>
+
+Made with [contributors-img](https://contributors-img.web.app).
+
 [track-bash]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fbash
 [track-c]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fc
 [track-csharp]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcsharp
