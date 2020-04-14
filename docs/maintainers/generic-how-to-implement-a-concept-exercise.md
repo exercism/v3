@@ -1,6 +1,14 @@
 # How to implement a concept exercise
 
-This document describes the steps required to implement a concept exercise in any v3 track. As this document is generic, the following placeholders are used:
+This document describes the steps required to implement a concept exercise in any v3 track.
+
+**Please please please read the docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time. So, before diving into the implementation, please read the following documents:
+
+- [The features of v3][docs-features-of-v3].
+- [Rationale for v3][docs-rationale-for-v3].
+- [What are concept exercise and how they are structured?][docs-concept-exercises]
+
+As this document is generic, the following placeholders are used:
 
 - `<LANG>`: the name of the track in kebab-case (e.g. `ruby`).
 - `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
@@ -19,7 +27,8 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   └── after.md (optional)
+                |   ├── source.md (required if there are third-party sources)
+                |   └── after.md
                 └── .meta
                     ├── config.json
                     └── design.md
@@ -27,7 +36,9 @@ languages
 
 ## Step 1: add .docs/introduction.md
 
-This file contains an introduction to the concept. It should be explicit about what the student should learn from the exercise, and provide a short, concise introduction to the concept(s). The aim is to give the student just enough context to figure things out themselves and solve the exercise, as research has shown that self-discovery is the most effective learning experience. Mentioning technical terms that the student can Google if they so want, is preferable over including any code samples or an extensive description. For example we might describe a string as a "Sequence of Unicode characters" or a "series of bytes" or "an object". Unless the student needs to understand the details of what those mean to be able to solve the exercise we should not give more info in this introduction - instead allowing the student to Google, ignore, or map their existing knowledge.
+This file contains an introduction to the concept. It should make the exercise's learning goals explicit and provide a short introduction with enough detail for the student to complete the exercise. The aim is to give the student just enough context to figure out the solution themselves, as research has shown that self-discovery is the most effective learning experience. Using the proper technical terms in the descriptions will be helpful if the student wants to search for more information. If the exercise introduces new syntax, an example of the syntax should always be included; students should not need to search the web for examples of syntax.
+
+As an example, the introduction to a "strings" exercise might describe a string as just a "Sequence of Unicode characters" or a "series of bytes". Unless the student needs to understand more nuanced details in order to solve the exercise, this type of brief explanation (along with an example of its syntax) should be sufficient information for the student to solve the exercise.
 
 ## Step 2: add .docs/instructions.md
 
@@ -41,9 +52,9 @@ The file should contain both general and task-specific "hints". These hints shou
 
 The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
 
-## Step 4: add .docs/after.md (optional)
+## Step 4: add .docs/after.md
 
-Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
+Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
 
 _The aforementioned files are also described in the [concept exercises document][docs-concept-exercises]._
 
@@ -100,7 +111,7 @@ This file contains information on the exercise's design, which includes things l
 
 ## Step 11: add .meta/config.json:
 
-This file contains meta information on the exercise, which currently only includes the exercise's contributors ([example][meta-config-json]).
+This file contains meta information on the exercise, which currently includes the exercise's contributors, and (optionally) language version requirements ([example][meta-config-json]).
 
 ## Inspiration
 
@@ -111,6 +122,8 @@ When implementing an exercise, it can be very useful to look at the exercises th
 If you have any questions regarding implementing this exercise, please post them as comments in the exercise's GitHub issue.
 
 [docs-concept-exercises]: ../concept-exercises.md
+[docs-rationale-for-v3]: ../rationale-for-v3.md
+[docs-features-of-v3]: ../features-of-v3.md
 [reference]: ../../reference/concepts/README.md
-[meta-design]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/design.md
-[meta-config-json]: ../../languages/csharp/exercises/concept/enums-advanced/.meta/config.json
+[meta-design]: ../../languages/csharp/exercises/concept/flag-enums/.meta/design.md
+[meta-config-json]: ../../languages/csharp/exercises/concept/flag-enums/.meta/config.json

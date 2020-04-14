@@ -1,6 +1,14 @@
 # How to implement a C# concept exercise
 
-This document describes how to implement a concept exercise for the C# track. As this document is generic, the following placeholders are used:
+This document describes how to implement a concept exercise for the C# track.
+
+**Please please please read the docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time. So, before diving into the implementation, please read the following documents:
+
+- [The features of v3][docs-features-of-v3].
+- [Rationale for v3][docs-rationale-for-v3].
+- [What are concept exercise and how they are structured?][docs-concept-exercises]
+
+As this document is generic, the following placeholders are used:
 
 - `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
 - `<NAME>`: the name of the exercise in PascalCase (e.g. `AnonymousMethods`).
@@ -19,7 +27,8 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   └── after.md (optional)
+                |   ├── source.md (required if there are third-party sources)
+                |   └── after.md
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
@@ -52,7 +61,7 @@ Some exercises could benefit from having an custom representation as generated b
 
 ## Inspiration
 
-When implementing an exercise, it can be very useful to look at already implemented C# exercises like the [strings][concept-exercise-strings], [dates][concept-exercise-dates] or [floating-point numbers][concept-exercise-numbers-floating-point] exercises. You can also check the exercise's [general concepts documents][reference] to see if other languages have already implemented an exercise for that concept.
+When implementing an exercise, it can be very useful to look at already implemented C# exercises like the [strings][concept-exercise-strings], [datetimes][concept-exercise-datetimes] or [floating-point numbers][concept-exercise-numbers-floating-point] exercises. You can also check the exercise's [general concepts documents][reference] to see if other languages have already implemented an exercise for that concept.
 
 ## Help
 
@@ -62,7 +71,10 @@ If you have any questions regarding implementing the exercise, please post them 
 [representer]: https://github.com/exercism/csharp-representer
 [concept-exercises]: ../exercises/concept/README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
+[docs-concept-exercises]: ../../../docs/concept-exercises.md
+[docs-rationale-for-v3]: ../../../docs/rationale-for-v3.md
+[docs-features-of-v3]: ../../../docs/features-of-v3.md
 [concept-exercise-strings]: ../exercises/concept/strings
-[concept-exercise-dates]: ../exercises/concept/dates
-[concept-exercise-numbers-floating-point]: ../exercises/concept/numbers-floating-point
+[concept-exercise-datetimes]: ../exercises/concept/datetimes
+[concept-exercise-numbers-floating-point]: ../exercises/concept/floating-point-numbers
 [reference]: ../../../reference

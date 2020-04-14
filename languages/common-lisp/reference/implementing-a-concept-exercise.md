@@ -1,7 +1,15 @@
 # How to implement a Common Lisp concept exercise
 
 This document describes how to implement a concept exercise for the
-Common Lisp track. As this document is generic, the following
+Common Lisp track.
+
+**Please please please read the docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time. So, before diving into the implementation, please read the following documents:
+
+- [The features of v3][docs-features-of-v3].
+- [Rationale for v3][docs-rationale-for-v3].
+- [What are concept exercise and how they are structured?][docs-concept-exercises]
+
+As this document is generic, the following
 placeholders are used:
 
 - `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
@@ -24,7 +32,8 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   └── after.md (optional)
+                |   ├── source.md (required if there are third-party sources)
+                |   └── after.md
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
@@ -65,7 +74,7 @@ specify what changes to the representation should be applied and why.
 ## Inspiration
 
 When implementing an exercise, it can be very useful to look at
-already implemented Common Lisp exercises like [`sexpr`][sexpr].
+already implemented Common Lisp exercises like [`basics`][basics].
 
 You can also check the exercise's [general concepts
 documents][reference] to see if other languages have already
@@ -80,5 +89,8 @@ post them as comments in the exercise's GitHub issue.
 [representer]: https://github.com/exercism/common-lisp-representer
 [concept-exercises]: ../exercises/concept/README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
+[docs-concept-exercises]: ../../../docs/concept-exercises.md
+[docs-rationale-for-v3]: ../../../docs/rationale-for-v3.md
+[docs-features-of-v3]: ../../../docs/features-of-v3.md
 [reference]: ../../../reference
-[sexpr]: ../exercises/concept/sexpr
+[basics]: ../exercises/concept/basics

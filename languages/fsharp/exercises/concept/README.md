@@ -6,17 +6,18 @@ The Concept Exercises are based on this [list of concepts][reference-shared].
 
 These are the Concept Exercises that have currently been implemented, as well as the Concepts they teach and their prerequisite concepts:
 
-| exercise                                | concepts                                                            | prerequisites                       |
-| --------------------------------------- | ------------------------------------------------------------------- | ----------------------------------- |
-| [`booleans`][concept-exercise-booleans] | `booleans-basic`                                                    |                                     |
-| [`lists`][concept-exercise-lists]       | `lists-basic`                                                       | `strings-basic`                     |
-| [`dates`][concept-exercise-dates]       | `dates-basic`<br/>`time-basic`                                      | `numbers-basic`<br/>`strings-basic` |
-| [`strings`][concept-exercise-strings]   | `strings-basic`                                                     | -                                   |
-| [`numbers`][concept-exercise-numbers]   | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if` | -                                   |
-
-**⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse. For example, the `numbers` exercise only teaches basic number usage, and the `numbers-floating-point` exercise builds on that and digs deeper into floating-point numbers.
-
-It's only important that it's reasonably easy to _find_ the exercise. It's okay if the name isn't perfect. We **will** iterate on this.
+| exercise                                                            | concepts                     | prerequisites                                                                          |
+| ------------------------------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------- |
+| [`basics`][concept-exercise-basics]                                 | `basics`                     |
+| [`booleans`][concept-exercise-booleans]                             | `booleans`                   | `basics`                                                                               |
+| [`datetimes`][concept-exercise-datetimes]                           | `datetimes`                  | `numbers`<br/>`strings`<br/>`classes`                                                  |
+| [`discriminated-unions`][concept-exercise-discriminated-unions]     | `discriminated-unions`       | `pattern-matching`                                                                     |
+| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`     | `numbers`<br/>`conditionals`                                                           |
+| [`lists`][concept-exercise-lists]                                   | `lists`                      | `strings`<br/>`booleans`<br/>`pattern-matching`                                        |
+| [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals` | `basics`                                                                               |
+| [`pattern-matching`][concept-exercise-pattern-matching]             | `pattern-matching`           | `strings`<br/>`conditionals`                                                           |
+| [`recursion`][concept-exercise-recursion]                           | `recursion`                  | `pattern-matching`<br/>`discriminated-unions`<br/>`lists`<br/>`higher-order-functions` |
+| [`strings`][concept-exercise-strings]                               | `strings`                    | `basics`                                                                               |
 
 ## TODO
 
@@ -27,10 +28,15 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [reference-shared]: ../../reference/README.md
 [reference]: ./reference.md
 [concept-exercises]: ./concept/README.md
+[concept-exercise-basics]: ./basics/.meta/design.md
 [concept-exercise-booleans]: ./booleans/.meta/design.md
-[concept-exercise-dates]: ./dates/.meta/design.md
+[concept-exercise-datetimes]: ./datetimes/.meta/design.md
 [concept-exercise-lists]: ./lists/.meta/design.md
 [concept-exercise-strings]: ./strings/.meta/design.md
 [concept-exercise-numbers]: ./numbers/.meta/design.md
+[concept-exercise-pattern-matching]: ./pattern-matching/.meta/design.md
+[concept-exercise-recursion]: ./recursion/.meta/design.md
+[concept-exercise-discriminated-unions]: ./discriminated-unions/.meta/design.md
+[concept-exercise-floating-point-numbers]: ./floating-point-numbers/.meta/design.md
 [issues-new-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Ffsharp+label%3Atype%2Fnew-exercise+label%3Astatus%2Fhelp-wanted
 [issues-improve-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Ffsharp+label%3Atype%2Fimprove-exercise+label%3Astatus%2Fhelp-wanted
