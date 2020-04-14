@@ -1,6 +1,6 @@
 # Formatting and Style Guide for Concept Exercise Files
 
-This document records the current styleguide applicable to Concept exercise Markdown files, which refer to the files contained in `.docs` and `.meta`. Please follow them when implementing a Concept Exercise; maintainers should also reference the Style Guide when reviewing pull requests. When the relevant language also includes a style guide, those preferences will take precedence over the ones here.
+This document records the current style guide applicable to Concept exercise Markdown files, which refer to the files contained in an exercise's `.docs` and `.meta` directories. Please follow them when implementing a Concept Exercise; maintainers should also reference the Style Guide when reviewing pull requests. When the relevant language also includes a style guide, those preferences will take precedence over the ones here.
 
 ## Headers
 
@@ -8,15 +8,12 @@ This document records the current styleguide applicable to Concept exercise Mark
  - Do not use top-level headers, e.g. `#`
  - Do not use leading whitespace in the file.
 
-
 ## Empty Documents
 
 If a document is empty, i.e. there is no `after.md` content, then do not check one in.
-
-
 ## Links
 
-Exercism prefers "indirect reference" links. They are defined at the bottom of the Markdown file and mapped to a reference slug, and referenced by that slug in the text.
+Exercism prefers [reference links](https://spec.commonmark.org/0.29/#reference-link), which are defined at the bottom of the Markdown file, mapped to a reference slug, and referenced by that slug in the text.
 
 This makes maintenance easier, since the link must only be updated once.
 
@@ -53,7 +50,7 @@ Where possible and relevant, format code in a way that is relevant to the enviro
 
 For example, Python has the REPL (read-eval-print loop), which allows a programmer to type code directly into a terminal. If a user was debugging some code, or running a function locally to test/observe how it works, they are more likely to use a REPL to do so, since it is more convenient to type interactively there. In this situation, we prefer formatting example code as if it was being typed into the REPL, with a leading `>>>`:
 
-```
+```python
 # This is what a user would see, so it makes sense to format it similarly in the description
 >>> print(extract_message("[INFO] Logline message"))
 'Logline message'
@@ -69,11 +66,9 @@ def sample_func(argument1):
 
 A quick way to distinguish between the two cases when it's unclear - if this is code the student can run in a terminal, format it that way. If it's code that Exercism might run (in tests, library code the student will write, etc), format it as runnable code.
 
-
 ## Language Code Style
 
 Please consult each language's docs folder for more information on the preferred style conventions for that language.
-
 
 ## Miscellaneous
 
