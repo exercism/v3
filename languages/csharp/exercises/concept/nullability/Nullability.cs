@@ -11,5 +11,4 @@ public static class Badge
     {
         throw new NotImplementedException("Please implement the Badge.PrintLabel method");
     }
-
 }

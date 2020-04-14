@@ -24,7 +24,7 @@ The following reference documentation may help you finishing this exercice:
 * Which method from the `string` class may help you to extract a
    [substring][substring]
    of a string?
-* Do all slices always have the same length? If not, how to handle
+* Do all slices always have the same length? If not, how can you handle
    this case?
 
 [null-keyword]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null
