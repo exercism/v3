@@ -48,6 +48,8 @@ If you want some more information, [Google][google-search-link] is a useful reso
 
 Where possible and relevant, format code in a way that is relevant to the environment it is being presented in. Please reference the docs for your language, as they may have more information.
 
+Code should be formatted with the Markdown language attribute, i.e. ` \`\`\`csharp`. 
+
 For example, Python has the REPL (read-eval-print loop), which allows a programmer to type code directly into a terminal. If a user was debugging some code, or running a function locally to test/observe how it works, they are more likely to use a REPL to do so, since it is more convenient to type interactively there. In this situation, we prefer formatting example code as if it was being typed into the REPL, with a leading `>>>`:
 
 ```python
