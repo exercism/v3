@@ -9,6 +9,10 @@ Common Lisp track.
 - [Rationale for v3][docs-rationale-for-v3].
 - [What are concept exercise and how they are structured?][docs-concept-exercises]
 
+Please also watch the following video:
+
+- [The Anatomy of a Concept Exercise][anatomy-of-a-concept-exercise].
+
 As this document is generic, the following
 placeholders are used:
 
@@ -92,5 +96,6 @@ post them as comments in the exercise's GitHub issue.
 [docs-concept-exercises]: ../../../docs/concept-exercises.md
 [docs-rationale-for-v3]: ../../../docs/rationale-for-v3.md
 [docs-features-of-v3]: ../../../docs/features-of-v3.md
+[anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
 [reference]: ../../../reference
 [basics]: ../exercises/concept/basics

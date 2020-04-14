@@ -8,6 +8,10 @@ This document describes the steps required to implement a concept exercise in an
 - [Rationale for v3][docs-rationale-for-v3].
 - [What are concept exercise and how they are structured?][docs-concept-exercises]
 
+Please also watch the following video:
+
+- [The Anatomy of a Concept Exercise][anatomy-of-a-concept-exercise].
+
 As this document is generic, the following placeholders are used:
 
 - `<LANG>`: the name of the track in kebab-case (e.g. `ruby`).
@@ -124,6 +128,7 @@ If you have any questions regarding implementing this exercise, please post them
 [docs-concept-exercises]: ../concept-exercises.md
 [docs-rationale-for-v3]: ../rationale-for-v3.md
 [docs-features-of-v3]: ../features-of-v3.md
+[anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
 [reference]: ../../reference/concepts/README.md
 [meta-design]: ../../languages/csharp/exercises/concept/flag-enums/.meta/design.md
 [meta-config-json]: ../../languages/csharp/exercises/concept/flag-enums/.meta/config.json
