@@ -11,4 +11,3 @@
 ### 3. Calculate the years before reaching the desired balance
 
 - To calculate the years, one can keep looping until the desired balance is reached.
-- Ruby has no increment operator (`i++`) like some other languages do. Instead, constructs like `i += 1` (which is equal to `i = i + 1`) can be used.
