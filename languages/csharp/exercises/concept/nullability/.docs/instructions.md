@@ -13,13 +13,13 @@ Badge.Label(734, "Ernest Johnny Payne", "Strategic Communication");
 // => "[734] - Ernest Johnny Payne - STRATEGIC COMMUNICATION"
 ```
 
-### 2. Deal with the optional parameters on the badge labels
+### 2. Handle the optional parts of a badge label
 
 The ID and department name are optional. If someone does not have an
 ID, do not print this part of the label.  If someone has no
 department, just print `GUEST` as their department name.
 
-### 2. Convert the label text to fit on a badge with a given width
+### 3. Convert the label text to fit on a badge with a given width
 
 Implement the `Badge.PrintLabel()` method to return an employee's
 badge label that can fit on a badge with a given width:
