@@ -10,7 +10,7 @@ This document records the current style guide applicable to Concept exercise Mar
 
 ## Empty Documents
 
-If a document is empty, i.e. there is no `after.md` content, then do not check one in.
+If a document is empty, i.e. there is no `source.md` content, then do not check one in.
 
 ## Links
 
@@ -60,7 +60,7 @@ For example, Python has the REPL (read-eval-print loop), which allows a programm
 
 In other cases, it makes more sense to leave code formatted as if it was in a `.py` file. Here, the student benefits by being presented with something that mimics how they would write the code themselves.
 
-```
+```python
 # presenting how functions are defined in Python:
 def sample_func(argument1):
     pass
