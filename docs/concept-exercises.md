@@ -76,7 +76,6 @@ Each task must conform to the following standard:
 - Describe which function/method the student needs to define/implement (e.g. `Implement method X(...)` that takes an A and returns a Z),
 - Provide an example usage of that function. These examples should be different examples to those given in the tests.
 
-Avoid any topics in the stories that could be misconstrued or cause offence - be empathetic to triggers that people might have - there's normally a less controversial or risque variant of a story that can be used.
 
 See the C# numbers exercise's [instructions.md file][csharp-docs-instructions.md] for an example. Notice the clear distinction between the story at the top and the tasks with code samples below.
 
