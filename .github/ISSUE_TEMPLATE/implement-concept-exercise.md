@@ -84,7 +84,9 @@ For example:
 - Normalize ternary expressions to if statements, as we are not interested in the type of conditional that is used.
 - ...
 
-To help the implementer get started, add a link to the language's representer document.]
+To help the implementer get started, add a link to the language's representer document.
+
+If you don't know what representers are, feel free to leave this section empty.]
 
 ## Analyzer
 
@@ -95,7 +97,9 @@ For example:
 - If feature `K` is used, suggest using feature `L`.
 - ...
 
-To help the implementer get started, add a link to the language's analyzer document]
+To help the implementer get started, add a link to the language's analyzer document.
+
+If you don't know what analyzers are, feel free to leave this section empty.]
 
 ## Implementing
 
