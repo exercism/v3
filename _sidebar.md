@@ -4,6 +4,5 @@
   - [The features of v3](/docs/features-of-v3.md)
   - [Rationale for v3](/docs/rationale-for-v3.md)
   - [Docs for Maintainers](/docs/maintainers/README.md)
-  - [Concept Exercise Style Guide](/docs/maintainers/concept-exercise-style-guide.md)
 - [Languages](/languages/README.md)
 - [Reference](/reference/README.md)
