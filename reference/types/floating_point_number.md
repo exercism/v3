@@ -1,5 +1,7 @@
 # Floating-point number
 
+## The Concept
+
 A floating point number is a real number, which differ from whole numbers in that a real number also allows for exponent digits.
 
 Programming languages may name their floating point type to the amount of _precision_ they can hold, whereas the following is based on [the IEEE 754 standard][wiki-ieee754]:
@@ -36,6 +38,7 @@ This exercise asks students to write code to analyse the production of an assemb
 | ----- | ------------------------------------------------ | ------- |
 | C#    | [numbers][implementation-csharp-production-line] | None    |
 | F#    | [numbers][implementation-fsharp-production-line] | None    |
+| Go    | [numbers][implementation-go-production-line]     | None    |
 
 ### Savings Accounts
 
@@ -59,5 +62,6 @@ This exercise calculates interest on savings accounts. The reference implementat
 [wiki-ieee754]: https://en.wikipedia.org/wiki/IEEE_754
 [implementation-csharp-production-line]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md
 [implementation-fsharp-production-line]: ../../languages/fsharp/exercises/concept/numbers/.docs/introduction.md
+[implementation-go-production-line]: ../../languages/go/exercises/concept/numbers/.docs/introduction.md
 [implementation-csharp-savings-accounts]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/introduction.md
 [implementation-fsharp-savings-accounts]: ../../languages/fsharp/exercises/concept/floating-point-numbers/.docs/introduction.md

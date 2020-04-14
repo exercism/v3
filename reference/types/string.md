@@ -28,6 +28,7 @@ This exercise extracts information from log lines. The reference implementation 
 
 | Track  | Exercise                         | Changes |
 | ------ | -------------------------------- | ------- |
+| C++    | [strings][implementation-cpp]    | None    |
 | C#     | [strings][implementation-csharp] | None    |
 | F#     | [strings][implementation-fsharp] | None    |
 | Ruby   | [strings][implementation-ruby]   | None    |
@@ -45,12 +46,12 @@ This exercise is a conversation between you and the security guard. The referenc
 
 #### Implementations
 
-| Track        | Exercise                             | Changes |
-| ------------ | ------------------------------------ | ------- |
-| JavaScript   | [strings][implementation-javascript] | None    |
-
+| Track      | Exercise                             | Changes |
+| ---------- | ------------------------------------ | ------- |
+| JavaScript | [strings][implementation-javascript] | None    |
 
 [type-char]: ./char.md
+[implementation-cpp]: ../../languages/cpp/exercises/concept/strings/.docs/introduction.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/strings/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/strings/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/strings/.docs/introduction.md
