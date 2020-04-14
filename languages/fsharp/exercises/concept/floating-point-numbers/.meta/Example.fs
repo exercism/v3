@@ -1,4 +1,4 @@
-module NumbersFloatingPoint
+module FloatingPointNumbers
 
 let interestRate (balance: decimal): single =
     if balance < 0.0m then -3.213f

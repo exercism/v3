@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="NumbersFloatingPoint.fs" />
-    <Compile Include="NumbersFloatingPointTests.fs" />
+    <Compile Include="FloatingPointNumbers.fs" />
+    <Compile Include="FloatingPointNumbersTests.fs" />
   </ItemGroup>
 
   <ItemGroup>
