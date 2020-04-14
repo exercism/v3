@@ -23,16 +23,28 @@ This makes maintenance easier, since the link must only be updated once.
 Example:
 
 ```
-I have a paragraph of text that links to the same page twice. 
+I have a paragraph of text that links to the same page twice.
 
-The [first link][indirect-reference] in one sentence. 
+The [first link][indirect-reference] in one sentence.
 
 Then, another sentence with the [link repeated][indirect-reference].
 
 [indirect-reference]: https://example.com/link-to-page
 ```
 
-Links should be inline where possible, i.e. as `<a href="">text</a>` tags instead of bare URLs. This is accomplished using the Markdown bracketed notation, as exemplified above.
+Links should always have anchor text, instead of putting the URL itself into the text. For example, the following does not use anchor text, and is harder to read.
+
+```
+If you want some more information, please visit https://google.com.
+```
+
+Using anchor text and linking it is easier to understand and contextualize.
+
+```
+If you want some more information, [Google][google-search-link] is a useful resource.
+
+[google-link]: https://google.com
+```
 
 
 ## Code
