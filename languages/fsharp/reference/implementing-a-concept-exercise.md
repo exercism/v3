@@ -55,6 +55,13 @@ These files are specific to the F# track:
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 
+## Step 3: format code
+
+To format the exercise's code, follow these steps:
+
+- Open a command prompt in the `language/fsharp` directory.
+- Run `./format.ps1 <SLUG>`. This script will format the code using the [`fantomas` tool][fantomas].
+
 ## Inspiration
 
 When implementing an exericse, it can be very useful to check the exercise's [general concepts documents][reference] to see if other languages that have already implemented an exercise for that concept.
@@ -70,3 +77,4 @@ If you have any questions regarding implementing this exercise, please post them
 [docs-features-of-v3]: ../../../docs/features-of-v3.md
 [anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
 [reference]: ../../../reference
+[fantomas]: https://github.com/fsprojects/fantomas
