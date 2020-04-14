@@ -54,6 +54,7 @@ An exercise has the following files. In the browser they will show at the releva
 **Purpose:** Introduce the concept(s) that the exercise teaches to the student.
 
 - The information provided should give the student just enough context to figure out the solution themselves. 
+- Links should be used sparingly if at all. While a link explaining a complex topic like recursion might be useful, for most concepts the links will provide more information than needed so explaining things concisely inline should be the aim.
 - The file should not give the student any extra information about a concept not needed to understand the fundamentals of the concept or solve the exercise.
 - Use the proper technical terms so that the student can easily search for more information. 
 - If the exercise introduces new syntax, an example of the syntax should always be included; students should not need to search the web for examples of syntax.
