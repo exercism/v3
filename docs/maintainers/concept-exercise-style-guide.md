@@ -2,11 +2,15 @@
 
 This document records the current style guide applicable to Concept exercise Markdown files, which refer to the files contained in an exercise's `.docs` and `.meta` directories. Please follow them when implementing a Concept Exercise; maintainers should also reference the Style Guide when reviewing pull requests. When the relevant language also includes a style guide, those preferences will take precedence over the ones here.
 
+## Language
+
+Content should be written using American English, which differs from British English in a [variety of ways][comparison-of-american-british-english].
+
 ## Headers
 
- - Use level 2 headers, e.g. `##`
- - Do not use top-level headers, e.g. `#`
- - Do not use leading whitespace in the file.
+- Use level 2 headers, e.g. `##`
+- Do not use top-level headers, e.g. `#`
+- Do not use leading whitespace in the file.
 
 ## Empty Documents
 
@@ -74,8 +78,8 @@ Please consult each language's docs folder for more information on the preferred
 
 ## Miscellaneous
 
- - Use the [UUID Generator][uuid-gen] to generate consistently formatted UUIDs for `config.json` files.
-
+- Use the [UUID Generator][uuid-gen] to generate consistently formatted UUIDs for `config.json` files.
 
 [uuid-gen]: https://www.uuidgenerator.net/version4
 [google-search-link]: https://google.com
+[comparison-of-american-british-english]: https://en.wikipedia.org/wiki/Comparison_of_American_and_British_English
