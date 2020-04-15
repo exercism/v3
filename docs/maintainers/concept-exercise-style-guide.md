@@ -93,7 +93,7 @@ A quick way to distinguish between the two cases when it's unclear - if this is 
 
 ## Language Code Style
 
-Please consult each language's docs folder for more information on the preferred style conventions for that language.
+Please consult each language's docs folder for more information on the preferred style conventions for that language. All exercises of a language should use a consistent coding style.
 
 ## Miscellaneous
 
