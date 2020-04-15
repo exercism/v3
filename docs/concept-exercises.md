@@ -75,7 +75,8 @@ Each task must conform to the following standard:
 - Start with a third-level heading starting with a number (.e.g `### 1.`, `### 2.`)
 - Describe which function/method the student needs to define/implement (e.g. `Implement method X(...)` that takes an A and returns a Z),
 - Provide an example usage of that function. These examples should be different examples to those given in the tests.
-- We place high value on making Exercism’s content safe for everyone and so often err on the side of caution in deciding whether stories are appropriate or not. If you are unsure if something might work or not, please mention @exercism/leadership and we can clarify.
+
+We place high value on making Exercism’s content safe for everyone and so often err on the side of caution in deciding whether stories are appropriate or not. While we are careful about what we merge, we appreciate that it's hard to be aware of what may be seen as offensive, so we'll always assume you're acting in good faith and do our best to catch any issues in review in a non-confrontational way. If you'd like to check a story with us, please mention @exercism/leadership and we'll look at it together. 
 
 See the C# numbers exercise's [instructions.md file][csharp-docs-instructions.md] for an example. Notice the clear distinction between the story at the top and the tasks with code samples below.
 
