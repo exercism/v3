@@ -1,6 +1,6 @@
-# Formatting and Style Guide for Concept Exercise Files
+# Formatting and Style Guide
 
-This document records the current style guide applicable to Concept exercise Markdown files, which refer to the files contained in an exercise's `.docs` and `.meta` directories. Please follow them when implementing a Concept Exercise; maintainers should also reference the Style Guide when reviewing pull requests. When the relevant language also includes a style guide, those preferences will take precedence over the ones here.
+This document records the style guide that should be followed for all documents in this repository. Maintainers should reference the Style Guide when reviewing pull requests. When a language also includes a style guide, those preferences will take precedence over the rules listed here.
 
 ## Language
 
@@ -14,7 +14,7 @@ Content should be written using American English, which differs from British Eng
 
 ## Empty Documents
 
-If a document is empty, i.e. there is no `source.md` content, then do not check one in.
+If a document is empty, i.e. there is no `source.md` content, then do not check it in.
 
 ## Links
 
