@@ -6,13 +6,14 @@ The source for all information in this paragraph is the [Julia User & Developer 
 
 ### Most popular technical features
 
+<!-- prettier-ignore -->
 1. Speed, performance
 2. Ease of use
 3. Open source code is available and can be modified
 4. Multiple dispatch
 5. Solves the two language problem<sup>1</sup>
-6. Integrates well with other language(s)
-7. 1-based indexing
+7. Integrates well with other language(s)
+9. 1-based indexing
 
 ### Biggest technical problems
 
