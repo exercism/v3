@@ -10,7 +10,7 @@ The goal of this exercise is to teach the student the basics of booleans and boo
 - Know how to define a named function.
 - Know how to define a function with parameters.
 - Know how to return a value from a function.
-- Know how to define a boolean.
+- Know what a boolean is.
 - Know how to use logical operators on booleans.
   - `and/2`, `or/2`, `not/1`
 - Know how to name functions that return boolean values.
