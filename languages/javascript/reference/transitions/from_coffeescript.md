@@ -49,19 +49,19 @@ JavaScript does not have to be compiled, whereas CoffeeScript has a compiler. Th
 
 <!-- links to languages and concepts -->
 
-[concept-destructuring]: ../../../reference/concepts/destructuring.md
-[concept-destructuring-assignment]: ../../../reference/concepts/destructuring_assignment.md
-[concept-list-comprehension]: ../../../reference/concepts/list_comprehension.md
-[concept-rest-parameters]: ../../../reference/concepts/rest_parameters.md
-[concept-variable-shadowing]: ../../../reference/concepts/variable_shadowing.md
-[javascript-concept-arrow-function-expression]: ../reference/info/arrow_function_expression.md
-[javascript-concept-strict-mode]: ../reference/info/strict_mode.md
-[javascript-keyword-const]: ../reference/keywords/const.md
-[javascript-keyword-function]: ../reference/keywords/function.md
-[javascript-keyword-let]: ../reference/keywords/let.md
-[javascript-keyword-var]: ../reference/keywords/var.md
-[javascript-keyword-while]: ../reference/keywords/while.md
-[language-haskell]: ../../haskell/README.md
-[language-python]: ../../python/README.md
-[language-ruby]: ../../ruby/README.md
-[tool-babel]: ../../../reference/tooling/babel.md
+[concept-destructuring]: ../../../../reference/concepts/destructuring.md
+[concept-destructuring-assignment]: ../../../../reference/concepts/destructuring_assignment.md
+[concept-list-comprehension]: ../../../../reference/concepts/list_comprehension.md
+[concept-rest-parameters]: ../../../../reference/concepts/rest_parameters.md
+[concept-variable-shadowing]: ../../../../reference/concepts/variable_shadowing.md
+[javascript-concept-arrow-function-expression]: ../info/arrow_function_expression.md
+[javascript-concept-strict-mode]: ../info/strict_mode.md
+[javascript-keyword-const]: ../keywords/const.md
+[javascript-keyword-function]: ../keywords/function.md
+[javascript-keyword-let]: ../keywords/let.md
+[javascript-keyword-var]: ../keywords/var.md
+[javascript-keyword-while]: ../keywords/while.md
+[language-haskell]: ../../../haskell/README.md
+[language-python]: ../../../python/README.md
+[language-ruby]: ../../../ruby/README.md
+[tool-babel]: ../../../../reference/tooling/babel.md
