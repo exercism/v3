@@ -78,7 +78,7 @@ Each task must conform to the following standard:
 
 We place high value on making Exercism's content safe for everyone and so often err on the side of caution in deciding whether stories are appropriate or not. While we are careful about what we merge, we appreciate that it's hard to be aware of what may be seen as problematic, so we'll always assume you're acting in good faith and do our best to catch any issues in review in a non-confrontational way. If you'd like to check a story with us, please mention @exercism/leadership and we'll look at it together. Here are some guiding points:
 
-- Try to make sure the story can be understood and welcoming by everyone. If the story contains in-jokes or regional slang, try to think of alternative phrases.
+- Try to make sure the story is welcoming and can be understood by everyone. If the story contains in-jokes or regional slang, try to think of alternative phrases.
 - Try to write examples that are inclusive to everyone. For example, consider using names from other cultures and mixed genders.
 - Ask yourself whether you know anyone personally who would take offense by the story. If that's the case, consider changing it to avoid it.
 
