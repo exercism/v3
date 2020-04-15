@@ -55,11 +55,12 @@ The following checks are currently available:
 You can install the Concept CI checks for your track by adding your track to the workflow triggers in [`.github/workflows/concept-ci.yml`][concept-ci-yml].
 Add the following below the existing paths in the `on: push: paths:` and `on: pull_request: paths` keys:
 
+<!-- prettier-ignore -->
 ```yaml
-- "languages/<language>/config.json"
-- "languages/<language>/reference/concepts.csv"
-- "languages/<language>/reference/exercise-concepts/**"
-- "languages/<language>/exercises/concept/**"
+    - 'languages/<language>/config.json'
+    - 'languages/<language>/reference/concepts.csv'
+    - 'languages/<language>/reference/exercise-concepts/**'
+    - 'languages/<language>/exercises/concept/**'
 ```
 
 where `<language>` needs to be replaced with the track's language slug.
