@@ -36,9 +36,7 @@ And to total:
 - = `5 + 9`
 - = 14
 
-## Example
-
-`scrabble_score.h`
+## Example `scrabble_score.h`
 
 ```cpp
 #if !defined(SCRABBLE_SCORE_H)
