@@ -11,16 +11,16 @@ true_variable = not false
 false_variable = not true
 ```
 
-Boolean operators use _short-circuit evaluation_, which means that right-hand side of the operator is only evaluated when needed.
+Boolean operators use _short-circuit evaluation_, which means that expression on the right-hand side of the operator is only evaluated if needed.
 
-Each of the operators has a different precendence, where `not/1` is evaluated before `and/2`, `or/2`.
+Each of the operators has a different precedence, where `not/1` is evaluated before `and/2` and `or/2`.
 
 ```elixir
 not true and false # => false
 not (true and false) # => true
 ```
 
-In Elixir, when a function returns a boolean value, it often has a [`?` for a suffix][naming]:
+When writing a function that returns a boolean value, it is [idiomatic to end the function name][naming] with a `?`.
 
 ```elixir
 def either_true?(a, b) do
@@ -28,4 +28,4 @@ def either_true?(a, b) do
 end
 ```
 
-[naming]: https://hexdocs.pm/elixir/master/naming-conventions.html#trailing-question-mark-foo
+[naming]: https://hexdocs.pm/elixir/naming-conventions.html#trailing-question-mark-foo

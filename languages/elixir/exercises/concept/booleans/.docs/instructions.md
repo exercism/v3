@@ -15,7 +15,7 @@ Rules.eat_ghost?(false, true)
 
 ### 2. Define if pac-man scores
 
-Define the `Rules.score?/2` function that takes two parameters (_if pac-man has a power pellet active_ and _if pac-man has eaten a dot_) and returns a boolean value if pac-man scored.  The function should return true if pac-man has a power pellet active and/or a dot.
+Define the `Rules.score?/2` function that takes two parameters (_if pac-man is touching a power pellet_ and _if pac-man is touching a dot_) and returns a boolean value if pac-man scored.  The function should return true if pac-man is touching a power pellet or a dot.
 
 ```elixir
 Rules.score?(true, true)
@@ -24,7 +24,7 @@ Rules.score?(true, true)
 
 ### 3. Define if pac-man loses
 
-Define the `Rules.lose?/2` function that takes two parameters (_if pac-man has a power pellet active_ and _if pac-man is touching a ghost_) and returns a boolean value if pac-man loses.  The function should return true if pac-man is touching a ghost and has not a power pellet active.
+Define the `Rules.lose?/2` function that takes two parameters (_if pac-man has a power pellet active_ and _if pac-man is touching a ghost_) and returns a boolean value if pac-man loses.  The function should return true if pac-man is touching a ghost and does not have a power pellet active.
 
 ```elixir
 Rules.lose?(false, true)
@@ -33,7 +33,7 @@ Rules.lose?(false, true)
 
 ### 4. Define if pac-man wins
 
-Define the `Rules.win?/1` function that takes three parameters (_if pac-man ate all of the dots_, _if pac-man has a power pellet active_, and _if pac-man is touching a ghost_) and returns a boolean value if pac-man wins.  The function should return true if pac-man has eaten all of the dots and has not lost based on the parameters defined in part 3.
+Define the `Rules.win?/3` function that takes three parameters (_if pac-man has eaten all of the dots_, _if pac-man has a power pellet active_, and _if pac-man is touching a ghost_) and returns a boolean value if pac-man wins.  The function should return true if pac-man has eaten all of the dots and has not lost based on the parameters defined in part 3.
 
 ```elixir
 Rules.win?(false, true, false)

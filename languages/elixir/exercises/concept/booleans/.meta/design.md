@@ -2,13 +2,13 @@
 
 ## Goal
 
-The goal of this exercise is to teach the student the basics of booleans and logicical expressions in Elixir through the expression of game rule logic(1).
+The goal of this exercise is to teach the student the basics of booleans and boolean logical expressions in Elixir through the expression of game rule logic(1).
 
 ## Learning objectives
 
 - Know what a variable is.
 - Know how to define a named function.
-- Know how to define a function with parameter variables.
+- Know how to define a function with parameters.
 - Know how to return a value from a function.
 - Know how to define a boolean.
 - Know how to use logical operators on booleans.
@@ -33,7 +33,7 @@ This exercise's prerequisites are:
 
 The concepts this exercise unlocks are:
 
-- `booleans` know of the existence of the `boolean` type and its two values, boolean operators, and how to build logical expressions, and know boolean operator precedence rules.
+- `booleans` know of the existence of the `boolean` type and its two values, boolean operators, and how to build boolean logical expressions, and know boolean operator precedence rules.
 
 ## Representer
 

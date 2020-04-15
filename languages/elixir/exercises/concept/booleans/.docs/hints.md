@@ -13,8 +13,8 @@ Don't worry about how the paramaters are derived, just focus on combining the pa
 ### 2. Define if pac-man scores
 
 - You need to define a [named function][named-function] with 2 arguments.
-  - The first argument is a [boolean][boolean] value, whether pac-man has a power pellet active.
-  - The second argument is a [boolean][boolean] value, whether pac-man has eaten a dot.
+  - The first argument is a [boolean][boolean] value, whether pac-man is touching a power pellet.
+  - The second argument is a [boolean][boolean] value, whether pac-man is touching a dot.
 - The function must return a [boolean][boolean] value.
 - You can use the [boolean][boolean] operator [`or/2`][boolean-function] to combine the arguments for a result.
 

@@ -3,7 +3,7 @@ defmodule Rules do
     raise "eat_ghost?/2 not yet implemented"
   end
 
-  def score?(ate_power_pellet, ate_dot) do
+  def score?(touching_power_pellet, touching_power_pellet) do
     raise "score?/2 not yet implemented"
   end
 
@@ -11,7 +11,7 @@ defmodule Rules do
     raise "lose?/2 not yet implemented"
   end
 
-  def win?(ate_all_dots, power_pellet_active, touching_ghost) do
+  def win?(has_eaten_all_dots, power_pellet_active, touching_ghost) do
     raise "win?/3 not yet implemented"
   end
 end

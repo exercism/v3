@@ -18,7 +18,7 @@ true_variable = not false
 false_variable = not true
 ```
 
-In Elixir, when a function returns a boolean value, it often has a `?` for a suffix:
+When writing a function that returns a boolean value, it is idiomatic to end the function name with a `?`.
 
 ```elixir
 def either_true?(a, b) do
