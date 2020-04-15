@@ -76,7 +76,7 @@ Each task must conform to the following standard:
 - Describe which function/method the student needs to define/implement (e.g. `Implement method X(...)` that takes an A and returns a Z),
 - Provide an example usage of that function. These examples should be different examples to those given in the tests.
 
-We place high value on making Exercism’s content safe for everyone and so often err on the side of caution in deciding whether stories are appropriate or not. While we are careful about what we merge, we appreciate that it's hard to be aware of what may be seen as problematic, so we'll always assume you're acting in good faith and do our best to catch any issues in review in a non-confrontational way. If you'd like to check a story with us, please mention @exercism/leadership and we'll look at it together. Here are some guiding points:
+We place high value on making Exercism's content safe for everyone and so often err on the side of caution in deciding whether stories are appropriate or not. While we are careful about what we merge, we appreciate that it's hard to be aware of what may be seen as problematic, so we'll always assume you're acting in good faith and do our best to catch any issues in review in a non-confrontational way. If you'd like to check a story with us, please mention @exercism/leadership and we'll look at it together. Here are some guiding points:
 
 - Try to make sure the story can be understood and welcoming by everyone. If the story contains in-jokes or regional slang, try to think of alternative phrases.
 - Try to write examples that are inclusive to everyone. For example, consider using names from other cultures and mixed genders.
