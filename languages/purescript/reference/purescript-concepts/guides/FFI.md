@@ -16,7 +16,7 @@ Calling a PureScript function from Javascript is very simple, at least for funct
 
 Let's take the following simple module as an example:
 
-``` haskell
+```haskell
 module Test where
 
 import Prelude
@@ -32,8 +32,8 @@ This function finds the greatest common divisor of two numbers by repeated subtr
 
 To understand how this function can be called from Javascript, it is important to realize that PureScript functions always get turned into Javascript functions _of a single argument_, so we need to apply its arguments one-by-one:
 
-``` javascript
-var Test = require('Test');
+```javascript
+var Test = require("Test");
 Test.gcd(15)(20);
 ```
 
@@ -41,7 +41,7 @@ Here, I am assuming that the code was compiled with `psc`, which compiles PureSc
 
 You might also like to bundle JavaScript code for the browser, using `purs bundle`. In that case, you would access the `Test` module on the global namespace, which defaults to `PS`:
 
-``` javascript
+```javascript
 var Test = PS.Test;
 Test.gcd(15)(20);
 ```
@@ -52,25 +52,25 @@ PureScript aims to preserve names during code generation as much as possible. In
 
 If you decide to use a Javascript keyword as an identifier, the name will be escaped with a double dollar symbol. For example,
 
-``` haskell
+```haskell
 null = []
 ```
 
 generates the following Javascript:
 
-``` javascript
+```javascript
 var $$null = [];
 ```
 
 In addition, if you would like to use special characters in your identifier names, they will be escaped using a single dollar symbol. For example,
 
-``` haskell
+```haskell
 example' = 100
 ```
 
 generates the following Javascript:
 
-``` javascript
+```javascript
 var example$prime = 100;
 ```
 
@@ -92,7 +92,7 @@ Here is an example, where we export a function which computes interest amounts f
 ```javascript
 "use strict";
 
-exports.calculateInterest = function(amount) {
+exports.calculateInterest = function (amount) {
   return amount * 0.1;
 };
 ```
@@ -116,7 +116,7 @@ Suppose we wanted to modify our `calculateInterest` function to take a second ar
 ```javascript
 "use strict";
 
-exports.calculateInterest = function(amount, months) {
+exports.calculateInterest = function (amount, months) {
   return amount * Math.exp(0.1, months);
 };
 ```
@@ -143,8 +143,8 @@ An alternative is to use curried functions in the native module, using multiple 
 ```javascript
 "use strict";
 
-exports.calculateInterest = function(amount) {
-  return function(months) {
+exports.calculateInterest = function (amount) {
+  return function (months) {
     return amount * Math.exp(0.1, months);
   };
 };
@@ -162,7 +162,7 @@ Another special case that you should be aware of when calling PureScript functio
 
 For example, let's write a simple PureScript function with a constrained type, and look at the generated Javascript.
 
-``` haskell
+```haskell
 module Test where
 
 import Prelude
@@ -175,13 +175,13 @@ inOrder a1 a2 = Tuple a2 a1
 
 The generated Javascript looks like this:
 
-``` javascript
+```javascript
 var inOrder = function (__dict_Ord_32) {
   return function (_1) {
     return function (_2) {
       if (Prelude["<"](__dict_Ord_32)(_1)(_2)) {
         return Data_Tuple.Tuple(_1)(_2);
-      };
+      }
       return Data_Tuple.Tuple(_2)(_1);
     };
   };
@@ -192,7 +192,7 @@ Notice that `inOrder` is a (curried) function of three arguments, not two. The f
 
 We can call this function from Javascript by passing an explicit type class dictionary from the Prelude as the first parameter:
 
-``` javascript
+```javascript
 var test = Test.inOrder(Prelude.ordNumber())(20)(10);
 ```
 
@@ -216,13 +216,13 @@ It is often useful when wrapping Javascript APIs to create new types at a specif
 
 For example, suppose we have a Javascript library `frob` which defines the `Frob` data structure and associated functions. To give meaningful types to those functions, it might be useful to define a type `Frob` at kind `Type`. We can do this as follows:
 
-``` haskell
+```haskell
 foreign import data Frob :: Type
 ```
 
 The type `Frob` can now be used in other types, or in foreign import declarations:
 
-``` haskell
+```haskell
 foreign import makeFrob :: String -> Frob
 ```
 

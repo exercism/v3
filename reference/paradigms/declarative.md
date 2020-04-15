@@ -8,4 +8,3 @@ Common declarative languages include those of database query languages (e.g., SQ
 
 - [Functional Programming](./functional.md)
 - [Logic Programming](./logic.md)
-

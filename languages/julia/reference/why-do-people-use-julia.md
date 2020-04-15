@@ -11,14 +11,14 @@ The source for all information in this paragraph is the [Julia User & Developer 
 3. Open source code is available and can be modified
 4. Multiple dispatch
 5. Solves the two language problem<sup>1</sup>
-7. Integrates well with other language(s)
-9. 1-based indexing
+6. Integrates well with other language(s)
+7. 1-based indexing
 
 ### Biggest technical problems
 
 2. It takes too long to generate the first plot<sup>2</sup>
-4. Slow compile times
-12. 1-based indexing
+3. Slow compile times
+4. 1-based indexing
 
 ### If not for Julia, what language would users be using?
 

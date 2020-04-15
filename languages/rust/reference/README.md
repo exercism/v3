@@ -4,8 +4,7 @@
 
 The Rust concept exercises teach concepts from fundamentals through language mastery. They are classified and listed below.
 
-Exercism concepts exist to serve learners in practical ways so they differ from abstract ideas. This document defines what these concepts mean in Rust. We added visual grouping below to help track maintainers create an effective reference document. Such groupings *do not* constitute pedagogical divisions. So please do not reference them while teaching.
-
+Exercism concepts exist to serve learners in practical ways so they differ from abstract ideas. This document defines what these concepts mean in Rust. We added visual grouping below to help track maintainers create an effective reference document. Such groupings _do not_ constitute pedagogical divisions. So please do not reference them while teaching.
 
 Checkboxes indicate whether concepts are yet taught in the exercise mapping list.
 
@@ -26,11 +25,11 @@ These concepts are irreducible.
 Basic primitive types:
 
 - [x] Integers
-    - [x] Signedness
+  - [x] Signedness
 - [x] Floats
 - [x] Casting / `as`
 - [x] Booleans
-    - [x] Logical Operators (`&&`, `||`, and `!`)
+  - [x] Logical Operators (`&&`, `||`, and `!`)
 - [x] `char`
 - [x] `&str`
 
@@ -95,7 +94,7 @@ These concepts are more advanced than the fundamentals, but may be familiar from
 These concepts are distinctive or unique to Rust.
 
 - [x] `String`
-    - [x] `format!` macro
+  - [x] `format!` macro
 - [x] `String` vs `&str`
 - [x] `Option<T>`
 - [x] `Result<T, E>`
@@ -116,10 +115,10 @@ These concepts are distinctive or unique to Rust.
 
 - [x] Using external traits as bounds
 - [x] Deriving (`PartialEq`, `PartialOrd`, `Debug`, `Display`, `Default`)
-    - [ ] Total Ordering: `Eq` and `Ord`
+  - [ ] Total Ordering: `Eq` and `Ord`
 - [x] Manually implementing a trait
 - [ ] Numeric Traits (`Add`, `Sub`, `Mul`, `Div`)
-    - [ ] overflow/underflow functions / traits
+  - [ ] overflow/underflow functions / traits
 - [ ] Designing a Custom Trait
 
 ### Advanced Concepts
@@ -140,7 +139,6 @@ These concepts are distinctive or unique to Rust.
 - [ ] `RwLock<T>`
 - [ ] Futures (async-std)
 
-
 ## Concept exercise mapping
 
 While the ideal is to have a single concept exercise for each of the concepts listed above, which
@@ -151,45 +149,45 @@ it would be difficult to teach primitives, with a test suite, without any knowle
 
 The exercises in this table should form a DAG which will eventually cover all concepts listed above.
 
-exercise | prerequisites | teaches | narrative
---- | --- | --- | ---
-`hello-world` | - | functions, test suites | return the `&str` literal `"hello world"`
-`compiled-calculator` | `hello-world` | integers, variable assignment | perform a set of math operations and implicitly return the result
-`conditionals` | `hello-world` | conditionals | should structure as 3-branch `if` / `else if` / `else`; implicit return
-`slices` | `hello-world`, `compiled-calculator` | slices | extract a slice from a parameter which is a slice of ints
-`loops` | `slices` | basic looping over a slice | ideally with early return so it's cumbersome to express as an iterator
-`iterator-use` | `slices` | iterator usage, `collect` |
-`integer-sizes` | `compiled-calculator` | non-`i32` integers, casting | still all signed
-`unsigned-ints` | `integer-sizes` | unsigned ints |
-`indexing` | `integer-sizes`, `slices` | indexing, `usize` |
-`floats` | `compiled-calculator` | floats | probably the same compiled calculator exercise, with non-int results
-`bools` | `compiled-calculator` | bools, boolean operators |
-`char` | `compiled-calculator` | `char` datatype | should include some wide char examples
-`str-use` | `char`, `slices` | `&str` | note: immutable!
-`string-use` | `str-use` | `String` | note: owned, mutable
-`format-macro` | `string-use` | `format!` macro |
-`str-vs-string` | `str-use`, `string-use` | combining, converting, costs, etc |
-`generics-basics` | `integer-sizes`, `floats` | using external traits as bounds, basic generics | probably still compiled-calculator, just generic
-`structs` | `string-use`, `unsigned-ints`, `floats` | creating and using a struct to manage data | `Person` has name, height, and qty shoes owned
-`implicit-return` | `compiled-calculator` | scopes, expressions, implicit return |
-`explicit-return` | `implicit-return`, `conditionals` | explicit `return` statement |
-`methods` | `structs`, `explicit-return` | `impl` blocks, methods |
-`tuples` | `structs` | tuples | teach as anonymous structs; teach `.0` syntax
-`tuple-structs` | `tuples`, `structs` | tuple structs (named tuples) |
-`basic-enums` | `unsigned-ints` | basic enums (no fields), `match` |
-`enums` | `basic-enums`, `tuple-structs` | tuple syntax for enum variants |
-`option` | `enums` | `Option<T>` |
-`result` | `enums` | `Result<T, E>` |
-`mutability` | `compiled-calculator` | immutability by default; explicit mutability |
-`let-expressions` | `loops`, `option`, `result` | `if let`, `while let` | probably will only depend on one of `option` or `result` based on implementation
-`vectors` | `slices` | `Vec<T>` |
-`hashmaps` | `vectors` | `Hashmap<K, V>` |
-`entry-api` | `hashmaps` | Entry API |
-`hashsets` | `hashmaps` | `HashSet<K>` |
-`btreemaps` | `hashmaps` | `BTreeMap<K, V>` |
-`deriving-traits` | `structs` | `PartialEq`, `PartialOrd`, `Debug`, `Display`, `Default` |
-`implementing-traits` | `deriving-traits` | manually implementing a trait | probably implement `Iterator`
-`collection-conversions` | `vectors`, `hashsets`, `implementing-traits` | `FromIterator`, `IntoIterator` |
+| exercise                 | prerequisites                                | teaches                                                  | narrative                                                                        |
+| ------------------------ | -------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `hello-world`            | -                                            | functions, test suites                                   | return the `&str` literal `"hello world"`                                        |
+| `compiled-calculator`    | `hello-world`                                | integers, variable assignment                            | perform a set of math operations and implicitly return the result                |
+| `conditionals`           | `hello-world`                                | conditionals                                             | should structure as 3-branch `if` / `else if` / `else`; implicit return          |
+| `slices`                 | `hello-world`, `compiled-calculator`         | slices                                                   | extract a slice from a parameter which is a slice of ints                        |
+| `loops`                  | `slices`                                     | basic looping over a slice                               | ideally with early return so it's cumbersome to express as an iterator           |
+| `iterator-use`           | `slices`                                     | iterator usage, `collect`                                |
+| `integer-sizes`          | `compiled-calculator`                        | non-`i32` integers, casting                              | still all signed                                                                 |
+| `unsigned-ints`          | `integer-sizes`                              | unsigned ints                                            |
+| `indexing`               | `integer-sizes`, `slices`                    | indexing, `usize`                                        |
+| `floats`                 | `compiled-calculator`                        | floats                                                   | probably the same compiled calculator exercise, with non-int results             |
+| `bools`                  | `compiled-calculator`                        | bools, boolean operators                                 |
+| `char`                   | `compiled-calculator`                        | `char` datatype                                          | should include some wide char examples                                           |
+| `str-use`                | `char`, `slices`                             | `&str`                                                   | note: immutable!                                                                 |
+| `string-use`             | `str-use`                                    | `String`                                                 | note: owned, mutable                                                             |
+| `format-macro`           | `string-use`                                 | `format!` macro                                          |
+| `str-vs-string`          | `str-use`, `string-use`                      | combining, converting, costs, etc                        |
+| `generics-basics`        | `integer-sizes`, `floats`                    | using external traits as bounds, basic generics          | probably still compiled-calculator, just generic                                 |
+| `structs`                | `string-use`, `unsigned-ints`, `floats`      | creating and using a struct to manage data               | `Person` has name, height, and qty shoes owned                                   |
+| `implicit-return`        | `compiled-calculator`                        | scopes, expressions, implicit return                     |
+| `explicit-return`        | `implicit-return`, `conditionals`            | explicit `return` statement                              |
+| `methods`                | `structs`, `explicit-return`                 | `impl` blocks, methods                                   |
+| `tuples`                 | `structs`                                    | tuples                                                   | teach as anonymous structs; teach `.0` syntax                                    |
+| `tuple-structs`          | `tuples`, `structs`                          | tuple structs (named tuples)                             |
+| `basic-enums`            | `unsigned-ints`                              | basic enums (no fields), `match`                         |
+| `enums`                  | `basic-enums`, `tuple-structs`               | tuple syntax for enum variants                           |
+| `option`                 | `enums`                                      | `Option<T>`                                              |
+| `result`                 | `enums`                                      | `Result<T, E>`                                           |
+| `mutability`             | `compiled-calculator`                        | immutability by default; explicit mutability             |
+| `let-expressions`        | `loops`, `option`, `result`                  | `if let`, `while let`                                    | probably will only depend on one of `option` or `result` based on implementation |
+| `vectors`                | `slices`                                     | `Vec<T>`                                                 |
+| `hashmaps`               | `vectors`                                    | `Hashmap<K, V>`                                          |
+| `entry-api`              | `hashmaps`                                   | Entry API                                                |
+| `hashsets`               | `hashmaps`                                   | `HashSet<K>`                                             |
+| `btreemaps`              | `hashmaps`                                   | `BTreeMap<K, V>`                                         |
+| `deriving-traits`        | `structs`                                    | `PartialEq`, `PartialOrd`, `Debug`, `Display`, `Default` |
+| `implementing-traits`    | `deriving-traits`                            | manually implementing a trait                            | probably implement `Iterator`                                                    |
+| `collection-conversions` | `vectors`, `hashsets`, `implementing-traits` | `FromIterator`, `IntoIterator`                           |
 
 _etc..._
 

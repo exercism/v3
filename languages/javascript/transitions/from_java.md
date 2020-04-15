@@ -10,4 +10,3 @@ Syntax similarity
 
 - Compile-time vs run-time
 - Generics vs dynamic typing
-

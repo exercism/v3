@@ -5,6 +5,7 @@
 Stub functions should implement a `panic` call, containing the phrase: `please implement the XY function`.
 
 Example:
+
 ```go
 // Message extracts the message from the provided log line.
 func Message(line string) string {
@@ -19,6 +20,7 @@ func Message(line string) string {
 - Don't import any 3rd party test or assert package. The test runners would fail.
 
 Example:
+
 ```go
 func TestCalculateProductionRatePerHour(t *testing.T) {
 	tests := []struct {
@@ -63,6 +65,7 @@ FunctionName(%VAL1, %VAL2, %VAL3) = %GOT, want %EXPECTED
 ```
 
 Examples:
+
 ```go
 t.Errorf("CalculateProductionRatePerHour(%d) = %f, want %f", tt.speed, got, tt.want)
 ```

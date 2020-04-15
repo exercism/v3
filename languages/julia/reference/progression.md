@@ -17,7 +17,7 @@ subgraph Type System
 	end
 	abstract-types --> multiple-dispatch
 	multiple-dispatch["multiple-dispatch (encounters)"] --> extension[extending/glueing together modules]
-	
+
 	abstract-types --> primitive-types
 end
 extension --> performance
@@ -53,25 +53,25 @@ I think of closely coupled concepts/exercises as a “block” in the progressio
 - Based on the existing exercises _robot-name_ and _robot-simulator_
 - Might be split up in multiple exercises
 - What is the student supposed to know after solving this exercise?
-    1. How to define an immutable struct `NamedRobot` with field `name::String`
-        - Provide Random-Name-Generator in hints but allow the student to implement their own
-        - **Q:** Why should fields have a concrete type?
-            - Add `@inferred` tests
-    1. How to define a method that acts on the struct `name(r::NamedRobot)`
-    1. How to define a mutable struct `MovingRobot` (?) with fields that describe the position
-        - **PREV:** the position could be a `Complex{Int}`, a `(Named)Tuple{Int,Int}`, two fields `x`, `y` of type `Int`, a struct `Point{Int}`
-        - **NEXT/PREV:** `Point{T<:Number}` could be used to introduce parametric types
-    1. How to define methods that mutate the given argument `move!(r::MovingRobot)`
-        - **Q:** Why does the function have a trailing `!`?
-    1. **NEXT:** Define an abstract type `AbstractRobot` and `NamedRobot <: AbstractRobot`, `MovingRobot <: AbstractRobot`
-    1. **PREV/NEXT:** Wrap it all in a module
+  1. How to define an immutable struct `NamedRobot` with field `name::String`
+     - Provide Random-Name-Generator in hints but allow the student to implement their own
+     - **Q:** Why should fields have a concrete type?
+       - Add `@inferred` tests
+  1. How to define a method that acts on the struct `name(r::NamedRobot)`
+  1. How to define a mutable struct `MovingRobot` (?) with fields that describe the position
+     - **PREV:** the position could be a `Complex{Int}`, a `(Named)Tuple{Int,Int}`, two fields `x`, `y` of type `Int`, a struct `Point{Int}`
+     - **NEXT/PREV:** `Point{T<:Number}` could be used to introduce parametric types
+  1. How to define methods that mutate the given argument `move!(r::MovingRobot)`
+     - **Q:** Why does the function have a trailing `!`?
+  1. **NEXT:** Define an abstract type `AbstractRobot` and `NamedRobot <: AbstractRobot`, `MovingRobot <: AbstractRobot`
+  1. **PREV/NEXT:** Wrap it all in a module
 
 #### “Encounters”
 
 - Central exercise that teaches **multiple dispatch**
 - Implementation is ‘fixed’ for now to avoid modifying to many variables at once
-    - **NEXT:** Exception: Add `meets(::Pet, ::AbstractRobot)`
-        - **Q:** What is **type piracy?**
+  - **NEXT:** Exception: Add `meets(::Pet, ::AbstractRobot)`
+    - **Q:** What is **type piracy?**
 
 ### “Performance”
 

@@ -8,6 +8,6 @@ Other concepts to mention:
 - Lack of "typecheck" in rescue (JS)
 - explicit export (vs implicit export in Ruby)
 - explicit import (vs "global" import in Ruby)
-- globals on window/process vs $
+- globals on window/process vs \$
 - .with_index vs second argument on comprehensions
 - gems vs packages
