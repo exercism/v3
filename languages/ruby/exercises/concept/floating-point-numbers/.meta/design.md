@@ -2,12 +2,12 @@
 
 ## Goal
 
-The goal of this exercise is to teach the student the concept of floating-point numbers and introduce them to the `while` loop.
+The goal of this exercise is to teach the student the concept of floating-point numbers and introduce them to loops.
 
 ## Learning objectives
 
 - Know about the [Float][float-class] class and some of its methods.
-- Know how to write a `while` loop.
+- Know how to write a `while`, `until` and `loop` loop.
 
 ## Out of scope
 
@@ -20,7 +20,7 @@ The goal of this exercise is to teach the student the concept of floating-point 
 The Concepts this exercise unlocks are:
 
 - `floating-point-numbers`
-- `while-loops`: know how to write a `while` loop.
+- `loops`: know how to write a `while`, `until` and `loop` loop.
 
 ## Prerequisites
 

@@ -1,19 +1,20 @@
 module SavingsAccount
-
-  NEGATIVE_RATE = -3.213
-  SMALL_POSITIVE_RATE = 0.5
-  MEDIUM_POSITIVE_RATE = 1.621
-  LARGE_POSITIVE_RATE = 2.475
+  RATE = {
+    NEGATIVE: -3.213,
+    SMALL_POSITIVE: 0.5,
+    MEDIUM_POSITIVE: 1.621,
+    LARGE_POSITIVE: 2.475
+  }
 
   def self.interest_rate(balance)
     if balance.negative?
-      NEGATIVE_RATE
+      RATE[:NEGATIVE]
     elsif balance < 1000
-      SMALL_POSITIVE_RATE
+      RATE[:SMALL_POSITIVE]
     elsif balance < 5000
-      MEDIUM_POSITIVE_RATE
+      RATE[:MEDIUM_POSITIVE]
     else
-      LARGE_POSITIVE_RATE
+      RATE[:LARGE_POSITIVE]
     end
   end
 

@@ -4,7 +4,7 @@ You can find a short introduction to floating-point numbers at [0.30000000000000
 
 The [Float Toy page][evanw.github.io-float-toy] has a nice, graphical explanation how a floating-point numbers' bits are converted to an actual floating-point value.
 
-To repeatedly execute logic, one can use loops. In this example the `while` loop is useful because it keeps on looping _while_ a boolean condition evaluates to `true`. Ruby implements a loop similar to the `while` loop. It's called the `until` loop, and you've probably guessed what it does. It keeps looping _until_ a boolean condition evaluates to `true`.
+To repeatedly execute logic, one can use loops. In this example the `while` loop is useful because it keeps on looping _while_ a boolean condition evaluates to `true`. Ruby implements a loop similar to the `while` loop. It's called the `until` loop, and you've probably guessed what it does. It keeps looping _until_ a boolean condition evaluates to `true`. In some languages, to make a piece of code execute an unlimited number of times, constructs like `while true` are used. In Ruby, the `loop` loop exists for that purpose. Even though the `loop` loop does not depend on a single condition, it can be canceled by using a `return` or `break` keyword.
 
 Ruby has no increment operator (`i++`) like some other languages do. Instead, constructs like `i += 1` (which is equal to `i = i + 1`) can be used.
 
