@@ -17,9 +17,10 @@ The source for all information in this paragraph is the [Julia User & Developer 
 
 ### Biggest technical problems
 
+<!-- prettier-ignore -->
 2. It takes too long to generate the first plot<sup>2</sup>
-3. Slow compile times
-4. 1-based indexing
+4. Slow compile times
+12. 1-based indexing
 
 ### If not for Julia, what language would users be using?
 
