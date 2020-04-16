@@ -1,52 +1,57 @@
-Elixir is a dynamically-typed language, meaning that the type of a variable is only checked at runtime. Using the match `=` operator, we can bind a value to a variable name:
+PureScript is a statically-typed language, meaning that the type of a variable is checked when the program is compiled. Using the `=` operator, we can bind a value to a variable name:
 
-```elixir
-variable = 10 # Bind the integer value 10
+```purescript
+variable = 10 -- Bind the integer value 10
 ```
 
-Re-binding a variable's value is also done performed with the `=` operator. Once defined, a variable's type can change when re-bound.
+The value of a variable zcan not change once defined. Instead, a new variable can be created:
 
-```elixir
-count = 1 # Bind an integer value of 1
-count = 2 # Re-bind to the new value of 2
+```purescript
+variableOne = 1 -- Bind an integer value of 1 to variableOne
+variableTwo = 2 -- Bind an integer value of 2 to variableTwo
 
-# Compiler does not error when binding a new type to the variable
-count = false
+-- The compiler will output an error when trying to re-bind the value of a variable:
+variableTwo = 3
+-- => Multiple value declarations exist for variableTwo.
 ```
 
-Elixir is an [functional-programming language][functional-programming] and requires all named functions to be defined in a _module_. The `defmodule` keyword is used to define a module. All modules are available to all other modules at runtime and do not require an _access modifier_ to make them visible to other parts of the program. A _module_ is analogous to a _class_ in other programming languages.
+The type of `variableOne` can be said to be an integer (known as an `Int` in PureScript). You can declare the type of a variable before declaring the variable, for example:
 
-```elixir
-defmodule Calculator do
-  # ...
-end
+```purescript
+variableOne :: Int -- variableOne is now of type Int. This syntax is known as the type signature declaration.
+variableOne = 1 -- Binds the value of 1 to the Int variableOne
 ```
 
-_Named Functions_ must be defined in a module. Each function can have zero or more parameters. All parameters are dynamically typed, and the return type is not explicitly declared, it is the type of the value returned. An _access modifier_ can be specified for functions, making only desired functions available for use external to the module. In a function, the value of the last line is _implicitly returned_ to the calling function.
+However, type can often be inferred by the compiler. **Note**: The `::` can be read "has type".
 
-```elixir
-defmodule Calculator do
-  def add(x, y) do
-    x + y
-  end
-end
+PureScript is an [functional-programming language][functional-programming] and requires all named functions to be defined in a _module_. The `module` keyword is used to define a module. All modules are available to all other modules at runtime. A _module_ is analogous to a _class_ in other programming languages.
+
+```purescript
+module Calculator where
+-- ...
 ```
 
-Invoking a function is done by specifying its module- and function name and passing arguments for each of the functions's parameters. The module name may be omitted if the function is invoked inside of the module.
+Functions must be defined in a module. Each function has one or more arguments (however, technically all functions have only one argument; this is called [function currying][function-currying]). All arguments are statically-typed, and the return type can be explicitly declared, or often inferred by the compiler. Often you will need to import other modules to use their functions. This is done using the `import` keyword followed by the module you'd like to import. A common module to import is `Prelude` which supplies basic functions and operators such as addition (`+`) and subtraction (`-`).
 
-```elixir
-sum = Calculator.add(1, 2)
+```purescript
+module Calculator where
+
+import Prelude
+
+sum :: Int -> Int -> Int
+sum x y = x + y
 ```
 
-When referring to functions, it is very common to refer to them with their _arity_. The _arity_ of a function is the number or parameters it takes.
+**Note**: `Int -> Int -> Int` can be read "takes an Int and an Int, and returns an Int".
 
-```elixir
-# add/3 because this function has three parameters, thus an arity of 3
-def add(x, y, z) do
-  x + y + z
-end
+Using a function is achieved by specifying the function name and passing arguments for each of the functions parameters.
+
+```purescript
+sum = sum 1 2
+-- => 3
 ```
 
-Comments can be used for inline documentation. Single line comments in Elixir are preceded by `#`.
+Comments can be used for inline documentation. Single line comments in Elixir are preceded by `--`.
 
 [functional-programming]: https://en.wikipedia.org/wiki/Functional_programming
+[function-currying]: https://www.youtube.com/watch?v=rcNts6CynO8
