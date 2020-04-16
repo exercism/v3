@@ -20,7 +20,7 @@
 
 - The second last element has a fixed index (remember to start counting from zero).
 
-### 4. Check for a specific count
+### 4. Check the count for a specific day
 
 - The `Array` class has a [built-in method][array-indexof] to check at which index an element can be found. A special value is returned if a matching element could not be found.
 
