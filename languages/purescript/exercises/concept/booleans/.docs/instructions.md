@@ -21,7 +21,8 @@ Implement a function named `canExecuteFastAttack` that takes a boolean value whi
 knightIsAwake :: Boolean
 knightIsAwake = true
 
-canExecuteFastAttack knightIsAwake -- => false
+canExecuteFastAttack knightIsAwake
+-- => false
 ```
 
 ### 2. Check if the 'Spy' action is possible
@@ -38,7 +39,8 @@ archerIsAwake = true
 prisonerIsAwake :: Boolean
 prisonerIsAwake = true
 
-canSpy knightIsAwake archerIsAwake prisonerIsAwake -- => true
+canSpy knightIsAwake archerIsAwake prisonerIsAwake
+-- => true
 ```
 
 ### 3. Check if the 'Signal Prisoner' action is possible
@@ -72,5 +74,6 @@ prisonerIsAwake = true
 petDogIsPresent :: Boolean
 petDogIsPresent = true
 
-canFreePrisoner knightIsAwake archerIsAwake prisonerIsAwake petDogIsPresent -- => false
+canFreePrisoner knightIsAwake archerIsAwake prisonerIsAwake petDogIsPresent
+-- => false
 ```
