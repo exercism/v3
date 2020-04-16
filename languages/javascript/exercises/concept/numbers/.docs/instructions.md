@@ -4,7 +4,7 @@ month rates, optionally with a given discount.
 
 We first establish a few rules between the freelancer and the project manager:
 
-- The daily rate is 8 times the hourly rate;
+- A day has 8 billable hours.
 - A month has 22 billable days.
 
 The freelancer is offering to apply a discount if the project manager chooses
