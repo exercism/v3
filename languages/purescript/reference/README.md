@@ -1,9 +1,11 @@
 # PureScript
+
 Some of the following information is redistributed (without any adaptation) from the [PureScript Documentation](https://github.com/purescript/documentation) as allowed under the Creative Commons Share Alike license.
 
 # Types
 
 ## Primitive types
+
 - [Boolean][type-boolean]
 - [Char][type-char]
 - [Int][type-int]
@@ -11,12 +13,14 @@ Some of the following information is redistributed (without any adaptation) from
 - [String][type-string]
 
 ## Non-primitive types
+
 - [Array][type-array]
 - [Function][type-function]
 - [List][type-list]
 - [Record][type-record]
 
 # Language-specific types
+
 - [Newtype][type-newtype]
 - [Constrained Type][type-constrained]
 - [Polymorphic Type][type-polymorphic]
@@ -43,6 +47,7 @@ Some of the following information is redistributed (without any adaptation) from
 # Concepts
 
 ## Functional concepts
+
 - [Anonymous functions][concept-anonymous-functions]
 - [Higher-order functions][concept-higher-order-functions]
 - [Immutability][concept-immutability]
@@ -53,6 +58,7 @@ Some of the following information is redistributed (without any adaptation) from
 - [Type inference][concept-type-inference]
 
 ## General concepts
+
 - [Arithmetic][concept-arithmetic]
 - [Boolean logic][concept-boolean-logic]
 - [Comments][concept-comments]
@@ -65,16 +71,19 @@ Some of the following information is redistributed (without any adaptation) from
 - [Sameness][concept-sameness]
 
 ## Language-specific concepts
+
 - [Modules][concept-modules]
 - [Variable Shadowing][concept-variable-shadowing]
 
 # Errors
+
 - [`AdditionalProperty`][error-additional-property]
 - ...
 
 [error-additional-property]: purescript-concepts/errors/AdditionalProperty.md
 
 # Other interesting things
+
 - PureScript's syntax is highly based off of Haskell's. As such, it is somewhat easier to transition between the two languages.
 - PureScript compiles to JavaScript.
 - PureScript is [open source](https://github.com/purescript)!

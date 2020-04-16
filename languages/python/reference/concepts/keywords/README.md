@@ -42,6 +42,7 @@ Python has -- as of version 3.8 -- 35 distinct keywords that are reserved by the
 ## Looping
 
 ### Continuous loop on predicate
+
 - [`while`][keyword-while]
 
 ### Enumeration of items
@@ -62,9 +63,11 @@ Python has -- as of version 3.8 -- 35 distinct keywords that are reserved by the
 ## Exception & errors
 
 ### Raise an arbitrary exception
+
 - [`raise`][keyword-raise]
 
 ### Inline testing of invariants
+
 - [`assert`][keyword-assert]
 
 ### Catching and reacting to exceptions
@@ -77,6 +80,7 @@ Python has -- as of version 3.8 -- 35 distinct keywords that are reserved by the
 ### Function / method creation
 
 ### Defining a named function
+
 - [`def`][keyword-def]
 
 ### Defining an anonymous function
@@ -103,6 +107,7 @@ Python has -- as of version 3.8 -- 35 distinct keywords that are reserved by the
 - [`with`][keyword-with]
 
 ## Asynchronous operations
+
 - [`async`][keyword-async]
 - [`await`][keyword-await]
 

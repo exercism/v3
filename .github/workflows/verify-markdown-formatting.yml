@@ -1,0 +1,19 @@
+name: "Verify Markdown formatting"
+
+on:
+  push:
+    paths:
+      - "**.md"
+  pull_request:
+    paths:
+      - "**.md"
+
+jobs:
+  stylecheck:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: "Checkout code"
+        uses: actions/checkout@v2
+
+      - name: "Verify Markdown formatting"
+        run: npx prettier@2.0.4 --check "**/*.md"

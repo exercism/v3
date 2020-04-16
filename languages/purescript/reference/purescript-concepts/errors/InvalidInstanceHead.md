@@ -123,7 +123,7 @@ validateHomogeneity = id
 ```
 
 Now, if we call `validateHomogeneity` on our record, it will be checked at
-*compile time*. With `RowToList`, we recover all the ability to pattern match
+_compile time_. With `RowToList`, we recover all the ability to pattern match
 on row types that we would otherwise have lost.
 
 If you'd like to play around with the examples above, you can use TryPureScript

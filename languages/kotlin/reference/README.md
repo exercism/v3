@@ -136,7 +136,7 @@ Also see [constructing](https://kotlinlang.org/docs/reference/constructing-colle
 - [Equality](https://kotlinlang.org/docs/reference/equality.html)
 - [Operator overloading](https://kotlinlang.org/docs/reference/operator-overloading.html)
 - [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html)
-- Exceptions (add exceptions hierarchy description), [`try`-	`catch`-`finally`](https://kotlinlang.org/docs/reference/exceptions.html#exception-classes)
+- Exceptions (add exceptions hierarchy description), [`try`- `catch`-`finally`](https://kotlinlang.org/docs/reference/exceptions.html#exception-classes)
 - [Nothing](https://kotlinlang.org/docs/reference/exceptions.html#the-nothing-type)
 - [Annotations](https://kotlinlang.org/docs/reference/annotations.html)
 - [Reflection](https://kotlinlang.org/docs/reference/reflection.html) (huge concept)

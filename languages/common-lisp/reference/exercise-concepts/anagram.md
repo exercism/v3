@@ -25,7 +25,7 @@ etc. which operate on all types of sequences. Perhaps this track will
 have a type concept of `sequence` which is a super-concept of types
 such as `list`, `array` etc..
 
-[v2-exercise]: https://github.com/exercism/common-lisp/blob/master/exercises/anagram/example.lisp 
+[v2-exercise]: https://github.com/exercism/common-lisp/blob/master/exercises/anagram/example.lisp
 [concepts]: ../../../../reference/concepts
 [types]: ../../../../reference/types
 [strings]: ../../../../reference/types/string.md

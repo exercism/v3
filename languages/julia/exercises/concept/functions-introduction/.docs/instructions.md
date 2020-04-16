@@ -14,7 +14,7 @@ julia> preptime(4)
 ### 2. Calculate the remaining oven time in minutes
 
 According to the cooking book, lasagna needs to be in the oven for a total of 60 minutes.
-Define the `remaining_time` function that takes the actual minutes the lasagna has been in the oven as a parameter and returns how many minutes the lasagna still has to remain in the oven. 
+Define the `remaining_time` function that takes the actual minutes the lasagna has been in the oven as a parameter and returns how many minutes the lasagna still has to remain in the oven.
 
 ```julia
 julia> remaining_time(50)
