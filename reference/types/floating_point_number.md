@@ -21,6 +21,11 @@ A student may have no understanding of floating point numbers as more than numbe
 - Ensure that type conversions are understood if appropriate (e.g. rounding, precision-changing)
 - Ensure that students know how to compare numbers to each other.
 
+## Useful links
+
+- [Floating Point Math in different languages][float-in-languages]
+- [Floating Point visualisation][float-toy]
+
 ## Exercises
 
 ### Production Line Analysis
@@ -65,3 +70,5 @@ This exercise calculates interest on savings accounts. The reference implementat
 [implementation-go-production-line]: ../../languages/go/exercises/concept/numbers/.docs/introduction.md
 [implementation-csharp-savings-accounts]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/introduction.md
 [implementation-fsharp-savings-accounts]: ../../languages/fsharp/exercises/concept/floating-point-numbers/.docs/introduction.md
+[float-toy]: https://evanw.github.io/float-toy/
+[float-in-languages]: https://0.30000000000000004.com/
