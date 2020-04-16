@@ -1,6 +1,18 @@
 # How to implement a Haskell concept exercise
 
-This document describes the steps required to implement a concept exercise for the Haskell track. As this document is generic, the following placeholders are used:
+This document describes the steps required to implement a concept exercise for the Haskell track.
+
+**Please please please read the docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time. So, before diving into the implementation, please read the following documents:
+
+- [The features of v3][docs-features-of-v3].
+- [Rationale for v3][docs-rationale-for-v3].
+- [What are concept exercise and how they are structured?][docs-concept-exercises]
+
+Please also watch the following video:
+
+- [The Anatomy of a Concept Exercise][anatomy-of-a-concept-exercise].
+
+As this document is generic, the following placeholders are used:
 
 - `<SLUG>`: the name of the exercise in kebab-case (e.g. `monad-transformers`).
 - `<NAME>`: the name of the exercise in PascalCase (e.g. `MonadTransformers`).
@@ -65,5 +77,9 @@ When implementing an exercise, it can be very useful to look at already implemen
 
 [reference]: ../../../reference
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
+[docs-concept-exercises]: ../../../docs/concept-exercises.md
+[docs-rationale-for-v3]: ../../../docs/rationale-for-v3.md
+[docs-features-of-v3]: ../../../docs/features-of-v3.md
+[anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
 [spring-2013]: https://www.seas.upenn.edu/~cis194/spring13/
 [fall-2016]: https://www.seas.upenn.edu/~cis194/fall16/

@@ -26,7 +26,7 @@ The Concepts this exercise unlocks are:
 This exercise's prerequisites Concepts are:
 
 - `numbers`: define numbers and apply arithmetic and boolean logic to them and convert from one floating-point type to another.
-- `conditionalsf`: conditionally execute code based on value of floating-point numbers.
+- `conditionals`: conditionally execute code based on value of floating-point numbers.
 
 ## Representer
 

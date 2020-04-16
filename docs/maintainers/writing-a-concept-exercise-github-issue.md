@@ -8,6 +8,5 @@ To help with that, each track should create a standard "Implementation Guide", w
 
 To make this as straightforward as possible for you, we have provided:
 
-- [A sample C# issue](../../languages/csharp/reference/examples/new-concept-exercise-arrays.md) to give you an idea of how a finished issue should look.
-- [The C# implementation file](../../languages/csharp/reference/implementing-a-concept-exercise.md) to be clear on how this specific section should look
+- [The C# implementation file](../../languages/csharp/reference/implementing-a-concept-exercise.md) to be clear on how this specific section should look.
 - [A base file](./generic-how-to-implement-a-concept-exercise.md) for you to work from.
