@@ -13,7 +13,6 @@ public static class LogLine
 {
     public static LogLevel ParseLogLevel(string logLine)
     {
-
         switch (logLine.Substring(1, 3))
         {
             case "TRC":
