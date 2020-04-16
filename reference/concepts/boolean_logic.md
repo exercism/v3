@@ -20,4 +20,17 @@ This exercise looks at various game events and determine if they have occured by
 | ----- | ------------------------------- | ---------------------------------- |
 | Elixir | [booleans][implementation-elixir] | None |
 
+### RPG game logic
+
+This exercise determines whether specific characters are awake (true or false) and checks whether a certain plan will work or not dependent on which characters are sleeping. The implementation teaches:
+
+- boolean values
+- boolean operators
+- boolean operators precedence
+
+| Track | Exercise                        | Changes                            |
+| ----- | ------------------------------- | ---------------------------------- |
+| PureScript | [booleans][implementation-purescript] | None |
+
 [implementation-elixir]: ../../languages/elixir/exercises/concept/booleans/.docs/introduction.md
+[implementation-purescript]: ../../languages/purescript/exercises/concept/booleans/.docs/introduction.md
