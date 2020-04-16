@@ -1,8 +1,9 @@
 {
   "authors": [
     {
-      "github_username": "ovidiu141",
-      "exercism_username": "ovidiu141"
+      "github_username": "aimorris",
+      "exercism_username": "Adam-Morris"
     }
-  ]
+  ],
+  "forked_from": ["javascript/booleans"]
 }
