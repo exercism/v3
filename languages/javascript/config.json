@@ -30,8 +30,8 @@
       {
         "slug": "arrays",
         "uuid": "25cb0707-44f8-4800-b993-3fcb2b6d9f61",
-        "concepts": ["arrays-basic"],
-        "prerequisites": ["numbers-basic"]
+        "concepts": ["arrays"],
+        "prerequisites": ["numbers"]
       },
       {
         "slug": "promises",

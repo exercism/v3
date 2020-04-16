@@ -14,7 +14,7 @@
  
 ### 4. Remove a card from the stack
 
-- `splice` is a [built-in][splice_method_docs] versatile method, which among other use cases, can be used to remove elements starting at a certain position.
+- There is a [built-in][splice_method_docs] method that, among other use cases, can be used to remove elements starting at a certain position.
 
 ### 5. Remove the top card from the stack
 

@@ -1,14 +1,14 @@
 {
-  "name": "@exercism/javascript-arrays-basic",
-  "description": "Exercism concept exercise on arrays-basic",
+  "name": "@exercism/javascript-arrays",
+  "description": "Exercism concept exercise on arrays",
   "author": "Ovidiu Miu",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/exercism/language-concepts.git",
-    "directory": "languages/javascript/exercises/concept/arrays-basic"
+    "url": "https://github.com/exercism/v3.git",
+    "directory": "languages/javascript/exercises/concept/arrays"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
