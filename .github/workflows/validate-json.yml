@@ -6,7 +6,7 @@ on:
       - '**.json'
   pull_request:
     paths:
-      - '**/*.json'
+      - '**.json'
 
 jobs:
   validate-json:
