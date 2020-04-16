@@ -61,7 +61,7 @@ Following are some situations in which qualified imports are quite useful.
 
 ### Using generically-named functions
 
-``` purescript
+```purescript
 import Data.Map as Map
 
 a :: Map Int String
@@ -72,7 +72,7 @@ Several data structure modules have a `fromFoldable` function which can be used 
 
 Another example, using a fictitious module this time:
 
-``` purescript
+```purescript
 import MyWebFramework as MyWebFramework
 
 main :: Effect Unit
@@ -97,9 +97,10 @@ null = ...
 test = Array.null [1, 2, 3]
 ```
 
-Here, the name ``null`` would ordinarily conflict with ``null`` from ``Data.Array``, but the qualified import solves this problem. ``Data.Array.null`` can be referenced using ``Array.null`` instead.
+Here, the name `null` would ordinarily conflict with `null` from `Data.Array`, but the qualified import solves this problem. `Data.Array.null` can be referenced using `Array.null` instead.
 
 Operators can also be referenced this way:
+
 ```purescript
 test' = Array.null ([1, 2, 3] Array.\\ [1, 2, 3])
 ```

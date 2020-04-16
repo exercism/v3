@@ -37,7 +37,7 @@ For a longer example, see the Julia track's [`concepts.csv`][julia-concepts-csv]
 
 ### CI checks
 
-*If any issues with the CI script come up, please ping @SaschaMann in the PR/issue.*
+_If any issues with the CI script come up, please ping @SaschaMann in the PR/issue._
 
 The following checks are currently available:
 
@@ -55,6 +55,7 @@ The following checks are currently available:
 You can install the Concept CI checks for your track by adding your track to the workflow triggers in [`.github/workflows/concept-ci.yml`][concept-ci-yml].
 Add the following below the existing paths in the `on: push: paths:` and `on: pull_request: paths` keys:
 
+<!-- prettier-ignore -->
 ```yaml
     - 'languages/<language>/config.json'
     - 'languages/<language>/reference/concepts.csv'
@@ -78,6 +79,7 @@ esac
 where `<language>` needs to be replaced with the track's language slug and `<options>` can be one or more of the following (separated by spaces):
 
 | Flag                    | Result                            |
+| ----------------------- | --------------------------------- |
 | `--no-config-check`     | Disable config.json checks        |
 | `--no-directory-check`  | Disable exercise directory checks |
 | `--no-extraction-check` | Disable concept extraction checks |
@@ -115,8 +117,7 @@ $ julia --project=bin bin/concept-checks.jl -t <language>
 
 from your track directory.
 
-*Note that the script takes a fairly long time before actually running the checks due to compiliation times of the dependencies. This is unfortunately normal when running it as a script. If you're familiar with Julia, you can also `include` it from the REPL to avoid this. Alternatively, you can use [PackageCompiler.jl][package-compiler] to compile a custom sysimage. The necessary commands can be found in [`.github/workflows/concept-ci.yml`][concept-ci-yml].*
-
+_Note that the script takes a fairly long time before actually running the checks due to compiliation times of the dependencies. This is unfortunately normal when running it as a script. If you're familiar with Julia, you can also `include` it from the REPL to avoid this. Alternatively, you can use [PackageCompiler.jl][package-compiler] to compile a custom sysimage. The necessary commands can be found in [`.github/workflows/concept-ci.yml`][concept-ci-yml]._
 
 [concept-ci-yml]: ../../.github/workflows/concept-ci.yml
 [julia-concepts-csv]: ../../languages/julia/reference/concepts.csv

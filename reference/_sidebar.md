@@ -10,5 +10,3 @@
   - [Paradigms](/reference/paradigms/README.md)
   - [Tooling](/reference/tooling/README.md)
   - [Types](/reference/types/README.md)
-
-

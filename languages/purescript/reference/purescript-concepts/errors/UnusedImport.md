@@ -20,6 +20,6 @@ Remove the import statement.
 
 ## Notes
 
-Often occurs during development when the code using the import has not yet been written, in which case can be ignored. 
+Often occurs during development when the code using the import has not yet been written, in which case can be ignored.
 
 [This error is auto-fixable](../guides/Error-Suggestions.md).

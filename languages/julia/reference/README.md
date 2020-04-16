@@ -122,4 +122,3 @@ The Julia Manual's ToC can also serve a list of concepts. Not all of the concept
 - https://julialang.org/
 - https://docs.julialang.org/en/v1/index.html
 - Lauwens, B., & Downey, A. B. (2018). Think Julia: How to Think Like a Computer Scientist. Retrieved from https://benlauwens.github.io/ThinkJulia.jl/latest/book.html
-
