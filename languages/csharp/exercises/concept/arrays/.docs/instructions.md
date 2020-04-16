@@ -36,7 +36,7 @@ birdCount.Yesterday();
 // => 7
 ```
 
-### 4. Check for a specific count
+### 4. Check the count for a specific day
 
 Your neighbor is also a bird enthusiast. Occasionally, your neighbor wants to know if your garden was also visited by a specific number of birds. Implement the `BirdCount.Exact()` method that the number of birds to check as a parameter and returns a boolean that indicates if that exact number of birds has visited your garden:
 
