@@ -28,9 +28,9 @@ This exercise deals with manipulatating a stack of playing cards. The reference 
 
 #### Implementations
 
-| Track | Exercise                          | Changes |
-| ----- | --------------------------------- | ------- |
-| JS    | [arrays-basic][implementation-js] | None    |
+| Track | Exercise                    | Changes |
+| ----- | --------------------------- | ------- |
+| JS    | [arrays][implementation-js] | None    |
 
 [type-collection]: ./collection.md
-[implementation-js]: ../../languages/javascript/exercises/concept/arrays-basic/.docs/introduction.md
+[implementation-js]: ../../languages/javascript/exercises/concept/arrays/.docs/introduction.md
