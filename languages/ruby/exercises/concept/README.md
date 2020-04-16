@@ -6,11 +6,11 @@ The concept exercises are based on this [list of concepts][reference-shared].
 
 These are the concept exercises that have currently been implemented, as well as the concepts they teach and their prerequisite concepts:
 
-| exercise                                                            | concepts                                                                         | prerequisites                                                       |
-| ------------------------------------------------------------------- | ---------------------------------------------------------------------------------| ------------------------------------------------------------------- |
-| [`strings`][concept-exercise-strings]                               | `strings-basic`                                                                  | -                                                                   |
-| [`basics`][concept-exercise-basics]                                 | `basics` | -                                                                     |                                                                     |
-| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`loops`                                             | `numbers`<br/>`conditionals`                                        |
+| exercise                                                            | concepts                             | prerequisites                |
+| ------------------------------------------------------------------- | ------------------------------------ | ---------------------------- |
+| [`strings`][concept-exercise-strings]                               | `strings-basic`                      | -                            |
+| [`basics`][concept-exercise-basics]                                 | `basics`                             | -                            |  |
+| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`loops` | `numbers`<br/>`conditionals` |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse.
 
