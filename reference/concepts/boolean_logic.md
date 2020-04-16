@@ -28,9 +28,9 @@ This exercise determines whether specific characters are awake (true or false) a
 - boolean operators
 - boolean operators precedence
 
-| Track | Exercise                        | Changes                            |
-| ----- | ------------------------------- | ---------------------------------- |
-| PureScript | [booleans][implementation-purescript] | None |
+| Track      | Exercise                              | Changes |
+| ---------- | ------------------------------------- | ------- |
+| PureScript | [booleans][implementation-purescript] | None    |
 
 [implementation-elixir]: ../../languages/elixir/exercises/concept/booleans/.docs/introduction.md
 [implementation-purescript]: ../../languages/purescript/exercises/concept/booleans/.docs/introduction.md
