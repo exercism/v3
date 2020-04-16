@@ -1,0 +1,16 @@
+name: 'Validate JSON'
+
+on:
+  push:
+    paths:
+      - '**/*.json'
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - run: |
+        ./bin/validate_json.py
