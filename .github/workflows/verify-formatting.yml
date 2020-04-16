@@ -1,4 +1,4 @@
-name: "Verify code formatting"
+name: "Verify Markdown formatting"
 
 on:
   push:
