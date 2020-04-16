@@ -30,7 +30,7 @@ This exercise determines whether specific characters are awake (true or false) a
 
 | Track      | Exercise                              | Changes |
 | ---------- | ------------------------------------- | ------- |
-| JavaScript | [booleans][implementation-javascript] | None |
+| JavaScript | [booleans][implementation-javascript] | None    |
 | PureScript | [booleans][implementation-purescript] | None    |
 
 [implementation-elixir]: ../../languages/elixir/exercises/concept/booleans/.docs/introduction.md
