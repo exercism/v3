@@ -1,4 +1,4 @@
-In C#, data structures that can hold zero or more elements are known as _collections_. An array is a collection with a fixed size and which elements must all be of the same type. Elements in an array can be assigned to and retrieved by index, with the first element's index being zero:
+In C#, data structures that can hold zero or more elements are known as _collections_. An **array** is a collection that has a fixed size and whose contains must all be of the same type. Elements can be assigned to an array or retrieved from it using an index, with the first element's index being zero:
 
 ```csharp
 // Declare array with explicit size (size is 2)
