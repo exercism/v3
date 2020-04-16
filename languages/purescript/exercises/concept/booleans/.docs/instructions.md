@@ -17,44 +17,60 @@ You have four tasks: to implement the logic for determining if the above actions
 
 Implement a function named `canExecuteFastAttack` that takes a boolean value which indicates if the knight is awake. This function returns `true` if the 'Fast Attack' action is available based on the state of the character. Otherwise, returns `false`:
 
-```javascript
-const knightIsAwake = true;
-canExecuteFastAttack(knightIsAwake)
-// => false
+```purescript
+knightIsAwake :: Boolean
+knightIsAwake = true
+
+canExecuteFastAttack knightIsAwake -- => false
 ```
 
 ### 2. Check if the 'Spy' action is possible
 
 Implement a function named `canSpy` that takes three boolean values, indicating if the knight, archer and the prisoner, respectively, are awake. The function returns `true` if the 'Spy' action is available based on the state of the characters. Otherwise, returns `false`:
 
-```javascript
-const knightIsAwake = false;
-const archerIsAwake = true;
-const prisonerIsAwake = false;
-canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake)
-// => true
+```purescript
+knightIsAwake :: Boolean
+knightIsAwake = true
+
+archerIsAwake :: Boolean
+archerIsAwake = true
+
+prisonerIsAwake :: Boolean
+prisonerIsAwake = true
+
+canSpy knightIsAwake archerIsAwake prisonerIsAwake -- => true
 ```
 
 ### 3. Check if the 'Signal Prisoner' action is possible
 
 Implement a function named `canSignalPrisoner` that takes two boolean values, indicating if the archer and the prisoner, respectively, are awake. The function returns `true` if the 'Signal Prisoner' action is available based on the state of the characters. Otherwise, returns `false`:
 
-```javascript
-const archerIsAwake = false;
-const prisonerIsAwake = true;
-canSignalPrisoner(archerIsAwake, prisonerIsAwake)
-// => true
+```purescript
+archerIsAwake :: Boolean
+archerIsAwake = false
+
+prisonerIsAwake :: Boolean
+prisonerIsAwake = true
+
+canSignalPrisoner archerIsAwake prisonerIsAwake -- => true
 ```
 
 ### 4. Check if the 'Free Prisoner' action is possible
 
 Implement a function named `canFreePrisoner` that takes four boolean values. The first three parameters indicate if the knight, archer and the prisoner, respectively, are awake. The last parameter indicates if Annalyn's pet dog is present. The function returns `true` if the 'Free Prisoner' action is available based on the state of the characters and Annalyn's pet dog presence. Otherwise, it returns `false`:
 
-```javascript
-const knightIsAwake = false;
-const archerIsAwake = true;
-const prisonerIsAwake = false;
-const petDogIsPresent = false;
-canFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent)
-// => false
+```purescript
+knightIsAwake :: Boolean
+knightIsAwake = true
+
+archerIsAwake :: Boolean
+archerIsAwake = false
+
+prisonerIsAwake :: Boolean
+prisonerIsAwake = true
+
+petDogIsPresent :: Boolean
+petDogIsPresent = true
+
+canFreePrisoner knightIsAwake archerIsAwake prisonerIsAwake petDogIsPresent -- => false
 ```
