@@ -4,5 +4,12 @@
         "github_username": "ovidiu141",
         "exercism_username": "ovidiu141"
       }
-    ]
+    ],
+    "authors": [
+      {
+        "github_username": "ovidiu141",
+        "exercism_username": "ovidiu141"
+      }
+    ],
+    "forked_from": ["go/basics-slices"]
   }
