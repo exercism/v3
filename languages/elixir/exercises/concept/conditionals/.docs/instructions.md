@@ -22,7 +22,7 @@ LogLevel.to_label(1)
 
 ### 2. Support unknown logging codes
 
-Unfortunately, some log lines occasionally have an unknown log code.  To gracefully handle these log lines, add an _unknown_ label to the `LogLevel.to_label/1` function.
+Unfortunately, some log lines occasionally have an unknown log code. To gracefully handle these log lines, add an _unknown_ label to the `LogLevel.to_label/1` function.
 
 ```elixir
 LogLevel.to_label(10)
@@ -31,9 +31,9 @@ LogLevel.to_label(10)
 
 ### 3. Send an alert
 
-An engineer wants to be alerted when some events occur in the log.  They would like to be notified if an `:error`, `:fatal`, or `:unknown` event occurs.
+An engineer wants to be alerted when some events occur in the log. They would like to be notified if an `:error`, `:fatal`, or `:unknown` event occurs.
 
-Implement the `LogLevel.send_alert?/1` function to determine if an alert should be send based on the log line's label.
+Implement the `LogLevel.send_alert?/1` function to determine if an alert should be sent based on the log line's label.
 
 ```elixir
 LogLevel.send_alert?(1)

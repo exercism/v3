@@ -5,9 +5,9 @@ You can use [atoms][atom] whenever you have a set of constants you want to expre
 variable = :an_atom
 ```
 
-[_Atoms_][atom] are internally represented by an integer in a lookup table, which are set automatically.  It is not possible to change this internal value.  It is generally considered to be an [anti-pattern][anti-pattern] to dynamically create atoms from user supplied input.
+[_Atoms_][atom] are internally represented by an integer in a lookup table, which are set automatically. It is not possible to change this internal value. It is generally considered to be an [anti-pattern][anti-pattern] to dynamically create atoms from user supplied input.
 
-[_Atoms_][atom] are also often used to represent finite states. As many functions in Elixir's standard library return an atom to annotate the result:
+[_Atoms_][atom] are also often used to represent finite states. Many functions in Elixir's standard library return an atom to annotate the result:
 
 ```elixir
 Enum.fetch([1], 0)
@@ -16,7 +16,7 @@ Enum.fetch([1], 2)
 # => :error
 ```
 
-When we want to have branching code, we can the use of the `cond/1` function:
+When we want to have branching code, we can use the `cond/1` function:
 
 ```elixir
 cond do
@@ -25,7 +25,7 @@ cond do
 end
 ```
 
-At least one clause should evaluate to `true` or an error will be raised.
+At least one clause should evaluate to `true` or a run-time error will be raised.
 
 [atom]: https://elixir-lang.org/getting-started/basic-types.html#atoms
 [anti-pattern]: https://en.wikipedia.org/wiki/Anti-pattern

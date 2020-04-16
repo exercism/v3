@@ -1,11 +1,11 @@
-Elixir's `atom` type represents a fixed constant. An atom's value is simply its own name.  This gives us a type-safe way to interact with data.  Atoms can be defined as follows:
+Elixir's `atom` type represents a fixed constant. An atom's value is simply its own name. This gives us a type-safe way to interact with data. Atoms can be defined as follows:
 
 ```elixir
 # All atoms are preceeded with a ':' then follow with alphanumeric snake-cased characters
 variable = :an_atom
 ```
 
-_Atoms_ are internally represented by an integer in a lookup table, which are set automatically.  It is not possible to change this internal value.
+_Atoms_ are internally represented by an integer in a lookup table, which are set automatically. It is not possible to change this internal value.
 
 Often, we want to write code that can branch based on a condition. While there are many ways to do this in Elixir, one of the simplest ways is using a `cond/1` function as a control flow structure.
 
