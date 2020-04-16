@@ -1,12 +1,20 @@
 # Continuous Integration
 
-- [Concept CI](#concept-ci)
-  - [`concepts.csv`](#conceptscsv)
-  - [CI checks](#ci-checks)
+  - [Concept CI](#concept-ci)
+    - [`concepts.csv`](#conceptscsv)
+    - [CI checks](#ci-checks)
 
-## Concept CI
+
+
+##   Concept CI
+
+
+
 
 The following tooling can be used to keep concept names consistent within a track.
+
+
+
 
 ### `concepts.csv`
 
