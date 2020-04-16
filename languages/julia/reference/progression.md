@@ -69,10 +69,11 @@ I think of closely coupled concepts/exercises as a “block” in the progressio
 
 #### “Encounters”
 
+<!-- prettier-ignore -->
 - Central exercise that teaches **multiple dispatch**
 - Implementation is ‘fixed’ for now to avoid modifying to many variables at once
-  - **NEXT:** Exception: Add `meets(::Pet, ::AbstractRobot)`
-    - **Q:** What is **type piracy?**
+   - **NEXT:** Exception: Add `meets(::Pet, ::AbstractRobot)`
+        - **Q:** What is **type piracy?**
 
 ### “Performance”
 
