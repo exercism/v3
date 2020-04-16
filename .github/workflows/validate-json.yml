@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - '**/*.json'
+  pull_request:
+    paths:
+      - '**/*.json'
 
 jobs:
   validate-json:
