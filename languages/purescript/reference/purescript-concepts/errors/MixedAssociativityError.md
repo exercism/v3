@@ -11,6 +11,7 @@ feq f x y = f <$> x == f <$> y
 ```
 
 Result:
+
 ```
 Cannot parse an expression that uses operators of the same precedence but mixed associativity:
 

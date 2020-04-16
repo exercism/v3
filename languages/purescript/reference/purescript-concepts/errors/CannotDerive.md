@@ -18,8 +18,8 @@ list, however, you'll need to find another way of obtaining an instance.
 ## Fix
 
 - You will need to write an instance yourself.
-- For many classes (including `Show`), you can use [Generics][] to obtain the
+- For many classes (including `Show`), you can use [Generics][generics] to obtain the
   instances you want with less effort.
 
-[Generics]: https://pursuit.purescript.org/packages/purescript-generics-rep
+[generics]: https://pursuit.purescript.org/packages/purescript-generics-rep
 [derivable]: https://github.com/purescript/documentation/blob/master/language/Type-Classes.md#type-class-deriving

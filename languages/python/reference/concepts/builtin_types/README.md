@@ -6,36 +6,36 @@ TODO: SUMMARIZE BUILTIN TYPES IN PYTHON
 
 - Numerical types
 
-    - [`bool`][bool]
-    - [`int`][int]
-    - [`float`][float]
-    - [`complex`][complex]
+  - [`bool`][bool]
+  - [`int`][int]
+  - [`float`][float]
+  - [`complex`][complex]
 
 - Sequential container types
 
-    - Arbitary byte sequences
+  - Arbitary byte sequences
 
-        - [`bytearray`][bytearray]
-        - [`bytes`][bytes]
+    - [`bytearray`][bytearray]
+    - [`bytes`][bytes]
 
-    - Unicode text sequences
+  - Unicode text sequences
 
-        - [`str`][str]
+    - [`str`][str]
 
-    - Homogenous sequences
+  - Homogenous sequences
 
-        - [`list`][list]
-        - [`range`][range]
-        - [`tuple`][tuple]
+    - [`list`][list]
+    - [`range`][range]
+    - [`tuple`][tuple]
 
-    - Mapping unique keys to values
+  - Mapping unique keys to values
 
-        - [`dict`][dict]
+    - [`dict`][dict]
 
-    - Unique, non-ordered values
+  - Unique, non-ordered values
 
-        - [`set`][set]
-        - [`frozenset`][frozenset]
+    - [`set`][set]
+    - [`frozenset`][frozenset]
 
 ## More rarely used internals
 

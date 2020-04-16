@@ -31,14 +31,14 @@ PureScript requires any types appearing inside a type declaration to also be exp
 
 - Follow the instructions in the error, and add the required names to the list of exports:
 
-    ```purescript
-    module Example (foo, Bar) where
+  ```purescript
+  module Example (foo, Bar) where
 
-    data Bar
+  data Bar
 
-    foo :: Bar -> Bar
-    foo x = x
-    ```
+  foo :: Bar -> Bar
+  foo x = x
+  ```
 
 ## Notes
 
