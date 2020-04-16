@@ -1,8 +1,12 @@
 name: "Verify code formatting"
 
 on:
-  - push
-  - pull_request
+  push:
+    paths:
+      - '**.md'
+  pull_request:
+    paths:
+      - '**.md'
 
 jobs:
   stylecheck:
