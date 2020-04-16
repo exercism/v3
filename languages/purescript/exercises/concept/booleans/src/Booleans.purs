@@ -3,13 +3,13 @@ module Booleans where
 import Prelude
 
 canExecuteFastAttack :: Boolean -> Boolean
-canExecuteFastAttack knightIsAwake = not knightIsAwake
+canExecuteFastAttack knightIsAwake = -- You need to implement this function!
 
 canSpy :: Boolean -> Boolean -> Boolean -> Boolean
-canSpy knightIsAwake archerIsAwake prisonerIsAwake = knightIsAwake || archerIsAwake || prisonerIsAwake
+canSpy knightIsAwake archerIsAwake prisonerIsAwake = -- You need to implement this function!
 
 canSignalPrisoner :: Boolean -> Boolean -> Boolean
-canSignalPrisoner archerIsAwake prisonerIsAwake = not archerIsAwake && prisonerIsAwake
+canSignalPrisoner archerIsAwake prisonerIsAwake = -- You need to implement this function!
 
 canFreePrisoner :: Boolean -> Boolean -> Boolean -> Boolean -> Boolean
-canFreePrisoner knightIsAwake archerIsAwake prisonerIsAwake petDogIsPresent = not knightIsAwake && not archerIsAwake && prisonerIsAwake || petDogIsPresent && not archerIsAwake
+canFreePrisoner knightIsAwake archerIsAwake prisonerIsAwake petDogIsPresent = -- You need to implement this function!
