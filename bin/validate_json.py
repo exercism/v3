@@ -2,7 +2,7 @@
 
 import glob
 import json
-import sys, os
+import sys
 
 def get_files():
   return glob.glob('**/*.json', recursive=True)
