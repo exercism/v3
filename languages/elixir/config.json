@@ -20,6 +20,12 @@
         "uuid": "5e743355-1ef3-4b5d-b59d-03bbc9697e6c",
         "concepts": ["booleans"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "conditionals",
+        "uuid": "b26a2f11-d80a-42b9-881a-3575a83ad211",
+        "concepts": ["conditionals", "atoms"],
+        "prerequisites": ["booleans"]
       }
     ],
     "practice": []
