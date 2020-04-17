@@ -7,7 +7,7 @@ The goal of this exercise is to teach the student the basics of the Concept of A
 Of the many available C# collection types, we chose to use the `array` collection type as the first collection type students will be taught for the following reasons:
 
 - Arrays don't require the student to know about generics.
-- Arrays are a common data type in many language.
+- Arrays are a common data type in many languages.
 - Arrays have a fixed length. No complexity in adding or removing elements.
 - Arrays have a simple shorthand syntax. No need to understand how constructors work to define an array.
 
