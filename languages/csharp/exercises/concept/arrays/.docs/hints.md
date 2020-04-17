@@ -18,7 +18,8 @@
 
 ### 3. Check how many birds visited yesterday
 
-- The second last element has a fixed index (remember to start counting from zero).
+- Remember that the counts are ordered by day from oldest to most recent, with the last element representing today.
+- Accessing the second last element can be done either by using its (fixed) index (remember to start counting from zero) or by calculating its index using the [array's size][array-length].
 
 ### 4. Check the count for a specific day
 
@@ -35,3 +36,4 @@
 [static-members]: https://www.oreilly.com/library/view/programming-c/0596001177/ch04s03.html
 [array-indexof]: https://docs.microsoft.com/en-us/dotnet/api/system.array.indexof?view=netcore-3.1#System_Array_IndexOf_System_Array_System_Object_
 [if-statement]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/if-else
+[array-length]: https://docs.microsoft.com/en-us/dotnet/api/system.array.length?view=netcore-3.1
