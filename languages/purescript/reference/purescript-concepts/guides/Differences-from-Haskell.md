@@ -32,19 +32,19 @@ Module imports and exports are fully documented on the [Modules](../other/module
 
 Polymorphic functions in PureScript require an explicit `forall` to declare type variables before using them. For example, Haskell's list `length` function is declared like this:
 
-``` haskell
+```haskell
 length :: [a] -> Int
 ```
 
 In PureScript this will fail with the error `Type variable a is undefined`. The PureScript equivalent is:
 
-``` purescript
+```purescript
 length :: forall a. Array a -> Int
 ```
 
 A `forall` can declare multiple type variables at once, and should appear before typeclass constraints:
 
-``` purescript
+```purescript
 ap :: forall m a b. (Monad m) => m (a -> b) -> m a -> m b
 ```
 
@@ -66,13 +66,13 @@ There is also an `Array` type for native JavaScript arrays, but this does not ha
 
 PureScript can encode JavaScript-style objects directly by using row types, so Haskell-style record definitions actually have quite a different meaning in PureScript:
 
-``` purescript
+```purescript
 data Point = Point { x :: Number, y :: Number }
 ```
 
 In Haskell a definition like this would introduce several things to the current environment:
 
-``` haskell
+```haskell
 Point :: Number -> Number -> Point
 x :: Point -> Number
 y :: Point -> Number
@@ -80,41 +80,41 @@ y :: Point -> Number
 
 However in PureScript this only introduces a `Point` constructor that accepts an object type. In fact, often we might not need a data constructor at all when using object types:
 
-``` purescript
+```purescript
 type PointRec = { x :: Number, y :: Number }
 ```
 
 Objects are constructed with syntax similar to that of JavaScript (and the type definition):
 
-``` purescript
+```purescript
 origin :: PointRec
 origin = { x: 0, y: 0 }
 ```
 
 And instead of introducing `x` and `y` accessor functions, `x` and `y` can be read like JavaScript properties:
 
-``` purescript
+```purescript
 originX :: Number
 originX  = origin.x
 ```
 
 PureScript also provides a record update syntax similar to Haskell's:
 
-``` purescript
+```purescript
 setX :: Number -> PointRec -> PointRec
 setX val point = point { x = val }
 ```
 
 A common mistake to look out for is when writing a function that accepts a data type like the original `Point` above—the object is still wrapped inside `Point`, so something like this will fail:
 
-``` purescript
+```purescript
 showPoint :: Point -> String
 showPoint p = show p.x <> ", " <> show p.y
 ```
 
 Instead, we need to destructure `Point` to get at the object:
 
-``` purescript
+```purescript
 showPoint :: Point -> String
 showPoint (Point obj) = show obj.x <> ", " <> show obj.y
 ```
@@ -146,7 +146,7 @@ Overlapping instances are still disallowed, like in Haskell. The instance names 
 ### Deriving
 
 Unlike Haskell, PureScript doesn't have deriving functionality when declaring
-data types.  For example, the following code does not work in PureScript:
+data types. For example, the following code does not work in PureScript:
 
 ```haskell
 data Foo = Foo Int String deriving (Eq, Ord)
@@ -162,12 +162,12 @@ derive instance ordFoo :: Ord Foo
 ```
 
 Examples of type classes that can be derived this way include `Eq`, `Functor`,
-and `Ord`.  See
+and `Ord`. See
 [here](https://github.com/purescript/documentation/blob/master/language/Type-Classes.md#type-class-deriving)
 for a list of other type classes.
 
 Using generics, it is also possible to use generic implementations for type
-classes like `Bounded`, `Monoid`, and `Show`.  See
+classes like `Bounded`, `Monoid`, and `Show`. See
 [the generics-rep library](https://pursuit.purescript.org/packages/purescript-generics-rep)
 for a list of other type classes that have generic implementations, as well as
 an explanation of how to write generic implementations for your own type
@@ -175,7 +175,7 @@ classes.
 
 ### Orphan Instances
 
-Unlike Haskell, orphan instances are completely disallowed in PureScript.  It is a compiler error to try to declare orphan instances.
+Unlike Haskell, orphan instances are completely disallowed in PureScript. It is a compiler error to try to declare orphan instances.
 
 When instances cannot be declared in the same module, one way to work around it is to use [newtype wrappers](http://stackoverflow.com/questions/22080564/whats-the-practical-value-of-all-those-newtype-wrappers-in-data-monoid).
 
@@ -187,13 +187,13 @@ At the moment, it is not possible to declare default member implementations for 
 
 Many type class hierarchies are more granular than in Haskell. For example:
 
-* `Category` has a superclass `Semigroupoid` which provides `(<<<)`, and does not require an identity.
-* `Monoid` has a superclass `Semigroup`, which provides `(<>)`, and does not require an identity.
-* `Applicative` has a superclass `Apply`, which provides `(<*>)` and does not require an implementation for `pure`.
+- `Category` has a superclass `Semigroupoid` which provides `(<<<)`, and does not require an identity.
+- `Monoid` has a superclass `Semigroup`, which provides `(<>)`, and does not require an identity.
+- `Applicative` has a superclass `Apply`, which provides `(<*>)` and does not require an implementation for `pure`.
 
 ## Tuples
 
-PureScript has no special syntax for tuples as records can fulfill the same role that *n*-tuples do with the advantage of having more meaningful types and accessors.
+PureScript has no special syntax for tuples as records can fulfill the same role that _n_-tuples do with the advantage of having more meaningful types and accessors.
 
 A `Tuple` type for 2-tuples is available via the [purescript-tuples](https://github.com/purescript/purescript-tuples) library. `Tuple` is treated the same as any other type or data constructor.
 
@@ -274,18 +274,18 @@ In PureScript, operator sections look a little bit different.
 
 The PureScript compiler does not support GHC-like language extensions. However, there are some "built-in" language features that are equivalent (or at least similar) to a number of GHC extensions. These currently are:
 
-* DataKinds (see note below)
-* EmptyDataDecls
-* ExplicitForAll
-* FlexibleContexts
-* FlexibleInstances
-* FunctionalDependencies
-* KindSignatures
-* MultiParamTypeClasses
-* PartialTypeSignatures
-* RankNTypes
-* RebindableSyntax
-* ScopedTypeVariables
+- DataKinds (see note below)
+- EmptyDataDecls
+- ExplicitForAll
+- FlexibleContexts
+- FlexibleInstances
+- FunctionalDependencies
+- KindSignatures
+- MultiParamTypeClasses
+- PartialTypeSignatures
+- RankNTypes
+- RebindableSyntax
+- ScopedTypeVariables
 
 Note on `DataKinds`: Unlike in Haskell, user-defined kinds are open, and they are not promoted, which means that their constructors can only be used in types, and not in values. For more information about the kind system, see https://github.com/purescript/documentation/blob/master/language/Types.md#kind-system
 

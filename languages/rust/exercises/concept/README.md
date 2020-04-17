@@ -6,10 +6,10 @@ The concept exercises are based on this [list of concepts][reference].
 
 These are the concept exercises that have currently been implemented, as well as the concepts they teach and their prerequisite concepts:
 
-| exercise                                                            | concepts                                                            | prerequisites                                                       |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [`enums`][concept-exercise-enums]                                   | `basic-enums`<br/>`conditionals`                            | `strings`                                                     |
-| [`numbers`][concept-exercise-numbers]                                   | `basic-numbers`<br/>`conditionals`                            | `strings`                                                     |
+| exercise                              | concepts                           | prerequisites |
+| ------------------------------------- | ---------------------------------- | ------------- |
+| [`enums`][concept-exercise-enums]     | `basic-enums`<br/>`conditionals`   | `strings`     |
+| [`numbers`][concept-exercise-numbers] | `basic-numbers`<br/>`conditionals` | `strings`     |
 
 It's only important that it's reasonably easy to _find_ the exercise. It's okay if the name isn't perfect. We **will** iterate on this.
 

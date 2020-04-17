@@ -14,7 +14,7 @@ Forgotten parenthesis around ADT deconstruction:
 ```purescript
 data Some = Three Int Int Int
           | NoneHere
-           
+
 bar Three x y z = x * y * z -- needs parenthesis around
 bar NoneHere = 0
 

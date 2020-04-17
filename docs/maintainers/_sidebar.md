@@ -10,7 +10,7 @@
     - [Repository structure](/docs/maintainers/repository-structure.md)
     - [Website](/docs/maintainers/website.md)
     - [Writing a Concept Exercise](/docs/maintainers/writing-a-concept-exercise-github-issue.md)
-    - [Concept Exercise Style Guide](/docs/maintainers/concept-exercise-style-guide.md)
+    - [Style Guide](/docs/maintainers/style-guide.md)
     - [Continuous Integration](/docs/maintainers/continuous-integration.md)
 - [Languages](/languages/README.md)
 - [Reference](/reference/README.md)

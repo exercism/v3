@@ -33,7 +33,8 @@ The initial breakdown of these concepts, including the ordering, is based on the
   - Binaries and `is_binary/1`
   - `String.length/1` vs `byte_size/1`
     - `length` vs `size` rule for linear vs constant time respectively
-- [Anonymous functions](../../../reference/concepts/anonymous_functions.md) -`is_function/1` and `is_function/2`
+- [Anonymous functions](../../../reference/concepts/anonymous_functions.md)
+  - `is_function/1` and `is_function/2`
   - As closures
   - Variable [scope](../../../reference/concepts/scope.md)
   - Implicit [return values](../../../reference/concepts/return_values.md)

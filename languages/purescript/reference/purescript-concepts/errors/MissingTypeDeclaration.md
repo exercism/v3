@@ -30,7 +30,7 @@ main = log "A type annotation has been provided!"
 
 Many of the PureScript text editor plugins can save you the effort of writing type annotations by filling in the types for you.
 
-Declarations which are not at the top level, such as those contained within `let` or `where` clauses, are not considered as important to annotate with types, and so the compiler does not issue warnings when these declarations are not annotated.  The following example compiles without warnings, even though `message` has not been given a type annotation:
+Declarations which are not at the top level, such as those contained within `let` or `where` clauses, are not considered as important to annotate with types, and so the compiler does not issue warnings when these declarations are not annotated. The following example compiles without warnings, even though `message` has not been given a type annotation:
 
 ```purescript
 module Main where
