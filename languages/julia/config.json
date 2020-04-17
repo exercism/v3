@@ -18,6 +18,16 @@
                 "prerequisites": []
             },
             {
+                "uuid": "b27c9e50-fe2c-4d7d-9d23-a15485484ddb",
+                "slug": "composite-types",
+                "concepts": [
+                    "composite-types"
+                ],
+                "prerequisites": [
+                    "methods"
+                ]
+            },
+            {
                 "uuid": "68001762-8a35-4494-9de4-624ca9efb5cd",
                 "slug": "multiple-dispatch",
                 "concepts": [
