@@ -21,10 +21,12 @@
                 "uuid": "b27c9e50-fe2c-4d7d-9d23-a15485484ddb",
                 "slug": "composite-types",
                 "concepts": [
-                    "composite-types"
+                    "composite-types",
+                    "abstract-types"
                 ],
                 "prerequisites": [
-                    "methods"
+                    "methods",
+                    "symbols"
                 ]
             },
             {
