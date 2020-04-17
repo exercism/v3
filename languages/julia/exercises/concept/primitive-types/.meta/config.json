@@ -9,6 +9,5 @@
             "exercism_username": "SaschaMann"
         }
     ],
-    "language_versions": "≥1.0",
-    "forked_from": ["problem-specifications/hamming"]
+    "language_versions": "≥1.0"
 }
