@@ -3,6 +3,7 @@
 [Example implementation](https://github.com/exercism/scala/blob/master/exercises/flatten-array/example.scala)
 
 [Other implementation](https://scastie.scala-lang.org/OVTmCIofR5WrWsetxVpDGQ):
+
 ```
   def flatten(list: List[Any]): List[Int] = {
     list.flatMap {

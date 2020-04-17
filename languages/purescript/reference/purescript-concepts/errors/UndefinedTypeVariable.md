@@ -20,9 +20,9 @@ Note that PureScript requires all type variables to be defined in type signature
 - Check the spelling of any type variables.
 - A possible fix is to introduce the variable using a `forall` quantifier:
 
-    ```purescript
-    id :: forall a. a -> a
-    id x = x
-    ```
+  ```purescript
+  id :: forall a. a -> a
+  id x = x
+  ```
 
 ## Notes

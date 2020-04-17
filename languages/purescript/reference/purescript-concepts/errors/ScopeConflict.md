@@ -20,25 +20,25 @@ The `ScopeConflict` error occurs when an attempt is made to define a value or ot
 
 - Hide the problematic imports with a `hiding` list:
 
-    ```purescript
-    module NoScopeConflict where
+  ```purescript
+  module NoScopeConflict where
 
-    import Prelude hiding (id)
+  import Prelude hiding (id)
 
-    id :: Number
-    id = 1
-    ```
+  id :: Number
+  id = 1
+  ```
 
 - Alternatively, import the conflicting module using the `as` keyword:
 
-    ```purescript
-    module NoScopeConflict where
+  ```purescript
+  module NoScopeConflict where
 
-    import Prelude as P
+  import Prelude as P
 
-    id :: Number
-    id = 1
-    ```
+  id :: Number
+  id = 1
+  ```
 
 ## Notes
 

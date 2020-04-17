@@ -7,7 +7,3 @@ http://clapify.com/
 https://knowyourmeme.com/memes/mocking-spongebob
 
 https://twitter.com/datnofact/status/1004809108279750658?lang=en
-
-
-
-
