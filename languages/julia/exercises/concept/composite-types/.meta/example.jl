@@ -11,3 +11,5 @@ struct Pawn <: Chesspiece
         end
     end
 end
+
+colour(p::Pawn) = p.colour
