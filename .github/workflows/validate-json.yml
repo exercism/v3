@@ -16,4 +16,4 @@ jobs:
         with:
           fetch-depth: 0
       - run: |
-          ./bin/validate_json.py
+          ./.github/bin/validate_json.py
