@@ -1,9 +1,5 @@
 using Test
 
-include("robots.jl")
-
-using Test
-
 include("chesspieces.jl")
 
 @testset "subtype" begin
