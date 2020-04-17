@@ -38,7 +38,7 @@ birdCount.Yesterday();
 
 ### 4. Check if there was a day with no visiting birds
 
-Implement the `BirdCount.HasDayWithoutBirds()` method that returns `true` if there was a day at which no birds (count is zero) visited the garden; otherwise, return `false`:
+Implement the `BirdCount.HasDayWithoutBirds()` method that returns `true` if there was a day at which zero birds visited the garden; otherwise, return `false`:
 
 ```csharp
 int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
