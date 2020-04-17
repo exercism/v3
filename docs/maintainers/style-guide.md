@@ -114,9 +114,9 @@ There are a couple of ways in which you can format Markdown documents using pret
 
 Prettier can be integrated with many [editors][prettier-editor], which works especially well if the editor supports automatic formatting on save.
 
-#### 2. Using a GitHub comment (in development)
+#### 2. Using a GitHub comment
 
-If you add a comment to a GitHub PR that contains the text `/format` or `/prettify`, a GitHub workflow will start that formats all documents in the PR. If there are any changes made to files, it will add a new commit that applies the formatting changes.
+If you add a comment to a GitHub PR that contains the text `/format`, a GitHub workflow will format all Markdown documents in the PR using prettier. Any formatting changes made by prettier will automatically be committed to the PR's branch. This also works for forks that have [enabled maintainers to edit the fork's PR][allowing-fork-pr-changes].
 
 #### 3. Using a script
 
@@ -139,3 +139,4 @@ Note: this requires [Node.js][nodejs] to be installed on your machine.
 [prettier-cli]: https://prettier.io/docs/en/cli.html
 [prettier-editor]: https://prettier.io/docs/en/editors.html
 [nodejs]: https://nodejs.org/en/
+[allowing-fork-pr-changes]: https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork
