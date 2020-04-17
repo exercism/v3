@@ -33,8 +33,8 @@ This function finds the greatest common divisor of two numbers by repeated subtr
 To understand how this function can be called from Javascript, it is important to realize that PureScript functions always get turned into Javascript functions _of a single argument_, so we need to apply its arguments one-by-one:
 
 ```javascript
-var Test = require("Test");
-Test.gcd(15)(20);
+var Test = require('Test')
+Test.gcd(15)(20)
 ```
 
 Here, I am assuming that the code was compiled with `psc`, which compiles PureScript modules to CommonJS modules. For that reason, I was able to reference the `gcd` function on the `Test` object, after importing the `Test` module using `require`.
@@ -42,8 +42,8 @@ Here, I am assuming that the code was compiled with `psc`, which compiles PureSc
 You might also like to bundle JavaScript code for the browser, using `purs bundle`. In that case, you would access the `Test` module on the global namespace, which defaults to `PS`:
 
 ```javascript
-var Test = PS.Test;
-Test.gcd(15)(20);
+var Test = PS.Test
+Test.gcd(15)(20)
 ```
 
 #### Understanding Name Generation
@@ -59,7 +59,7 @@ null = []
 generates the following Javascript:
 
 ```javascript
-var $$null = [];
+var $$null = []
 ```
 
 In addition, if you would like to use special characters in your identifier names, they will be escaped using a single dollar symbol. For example,
@@ -71,7 +71,7 @@ example' = 100
 generates the following Javascript:
 
 ```javascript
-var example$prime = 100;
+var example$prime = 100
 ```
 
 #### Calling Javascript from PureScript
@@ -90,11 +90,11 @@ In PureScript, JavaScript code is wrapped using a _foreign module_. A foreign mo
 Here is an example, where we export a function which computes interest amounts from a foreign module:
 
 ```javascript
-"use strict";
+'use strict'
 
 exports.calculateInterest = function (amount) {
-  return amount * 0.1;
-};
+  return amount * 0.1
+}
 ```
 
 This file should be saved as `src/Interest.js`. The corresponding PureScript module `Interest` will be saved in `src/Interest.purs`, and will look like this:
@@ -114,11 +114,11 @@ PureScript functions are curried by default, so Javascript functions of multiple
 Suppose we wanted to modify our `calculateInterest` function to take a second argument:
 
 ```javascript
-"use strict";
+'use strict'
 
 exports.calculateInterest = function (amount, months) {
-  return amount * Math.exp(0.1, months);
-};
+  return amount * Math.exp(0.1, months)
+}
 ```
 
 A correct `foreign import` declaration now should use a foreign type whose runtime representation correctly handles functions of multiple arguments. The `purescript-functions` package provides a collection of such types for function arities from 0 to 10:
@@ -141,13 +141,13 @@ calculateInterestCurried = runFn2 calculateInterest
 An alternative is to use curried functions in the native module, using multiple nested functions, each with a single argument, as the runtime representation of the function type constructor `(->)` dictates:
 
 ```javascript
-"use strict";
+'use strict'
 
 exports.calculateInterest = function (amount) {
   return function (months) {
-    return amount * Math.exp(0.1, months);
-  };
-};
+    return amount * Math.exp(0.1, months)
+  }
+}
 ```
 
 This time, we can assign the curried function type directly:
@@ -179,13 +179,13 @@ The generated Javascript looks like this:
 var inOrder = function (__dict_Ord_32) {
   return function (_1) {
     return function (_2) {
-      if (Prelude["<"](__dict_Ord_32)(_1)(_2)) {
-        return Data_Tuple.Tuple(_1)(_2);
+      if (Prelude['<'](__dict_Ord_32)(_1)(_2)) {
+        return Data_Tuple.Tuple(_1)(_2)
       }
-      return Data_Tuple.Tuple(_2)(_1);
-    };
-  };
-};
+      return Data_Tuple.Tuple(_2)(_1)
+    }
+  }
+}
 ```
 
 Notice that `inOrder` is a (curried) function of three arguments, not two. The first argument is the type class dictionary for the `Ord` constraint.
@@ -193,7 +193,7 @@ Notice that `inOrder` is a (curried) function of three arguments, not two. The f
 We can call this function from Javascript by passing an explicit type class dictionary from the Prelude as the first parameter:
 
 ```javascript
-var test = Test.inOrder(Prelude.ordNumber())(20)(10);
+var test = Test.inOrder(Prelude.ordNumber())(20)(10)
 ```
 
 #### Handling Side Effects
