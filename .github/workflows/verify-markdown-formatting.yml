@@ -9,7 +9,18 @@ on:
       - "**.md"
 
 jobs:
-  stylecheck:
+  verify-markdown-for-repository:
+    if: github.ref == 'refs/heads/master'
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: "Checkout code"
+        uses: actions/checkout@v2
+
+      - name: "Verify Markdown formatting"
+        run: npx prettier@2.0.4 --check "**/*.md"
+
+  verify-markdown-for-pr:
+    if: github.ref != 'refs/heads/master' && github.event.pull_request.url
     runs-on: [ubuntu-latest]
     steps:
       - name: "Checkout code"
@@ -17,13 +28,15 @@ jobs:
 
       - name: "Verify Markdown formatting"
         run: |
-          if [ "$GITHUB_REF" == "refs/heads/master" ]; then
-            echo "Checking the formatting of all Markdown files in this repository"
-            npx prettier@2.0.4 --check "**/*.md"
-          else
-            echo "Checking the formatting of all added or modified Markdown files in this PR"
-            PULL_REQUEST_URL=$(jq -r ".pull_request.url" "$GITHUB_EVENT_PATH")
-            curl --url $"${PULL_REQUEST_URL}/files" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' | \
-              jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match(".md$")) | .filename' | \
-              xargs npx prettier@2.0.4 --write
-          fi
+          PULL_REQUEST_URL=$(jq -r ".pull_request.url" "$GITHUB_EVENT_PATH")
+          curl --url $"${PULL_REQUEST_URL}/files" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' | \
+            jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match(".md$")) | .filename' | \
+            xargs npx prettier@2.0.4 --write
+
+  # https://github.community/t5/GitHub-Actions/Workflow-is-failing-if-no-job-can-be-ran-due-to-condition/m-p/38186#M3250
+  always_job:
+    name: Always run job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Always run
+        run: echo "This job is used to prevent the workflow to fail when all other jobs are skipped."
