@@ -29,7 +29,6 @@ Note: Things like `Array` and `Date` are not types, but rather constructors that
 [see-also-keywords]: ../keywords/README.md
 [see-also-objects]: ../objects/README.md
 [see-also-root]: ../README.md
-
 [type-array]: ../../../../reference/types/array.md
 [type-bigint]: ../../../../reference/types/big_integer.md
 [type-boolean]: ../../../../reference/types/boolean.md
@@ -40,6 +39,5 @@ Note: Things like `Array` and `Date` are not types, but rather constructors that
 [type-string]: ../../../../reference/types/string.md
 [type-symbol]: ../../../../reference/types/symbol.md
 [type-undefined]: ../../../../reference/concepts/undefined.md
-
 [concept-immutable]: ../../../../reference/concepts/immutability.md
 [concept-prototype-inheritance]: ../info/prototype_inheritance.md

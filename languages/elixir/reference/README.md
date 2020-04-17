@@ -33,7 +33,8 @@ The initial breakdown of these concepts, including the ordering, is based on the
   - Binaries and `is_binary/1`
   - `String.length/1` vs `byte_size/1`
     - `length` vs `size` rule for linear vs constant time respectively
-- [Anonymous functions](../../../reference/concepts/anonymous_functions.md) -`is_function/1` and `is_function/2`
+- [Anonymous functions](../../../reference/concepts/anonymous_functions.md)
+  - `is_function/1` and `is_function/2`
   - As closures
   - Variable [scope](../../../reference/concepts/scope.md)
   - Implicit [return values](../../../reference/concepts/return_values.md)
@@ -67,7 +68,7 @@ The initial breakdown of these concepts, including the ordering, is based on the
     - `lists` with cons operator and special case of empty list
       - cons can also be used to prepend to list
     - variables may be rebound
-    - use pin operator `^` to pattern match against previously bound value instead of rebinding
+      - use pin operator `^` to pattern match against previously bound value instead of rebinding
     - if the same variable is used multiple times in a pattern, it must match the same value
       - e.g., `{x, x} = {1, 2}` results in a `MatchError`
     - use `_` to ignore values in a pattern match. its value can never be read.
@@ -124,7 +125,7 @@ The initial breakdown of these concepts, including the ordering, is based on the
     - generally impractical to pattern match keyword lists as it depends on the order of the list
     - has linear performance characteristics of lists
     - `Keyword` module
-  - TODO resume from https://elixir-lang.org/getting-started/keywords-and-maps.html#maps
+  - TODO resume from <https://elixir-lang.org/getting-started/keywords-and-maps.html#maps>
   - Maps
   - Nested data structures
 
@@ -256,8 +257,11 @@ TODO: Flesh out how the above general concepts apply to concept exercises in the
 
 The concept exercises use the following concepts:
 
-| concept           | interpretation                                                                      |
-| ----------------- | ----------------------------------------------------------------------------------- |
-| `booleans`        | Introduction to the boolean type and strict boolean operators -- and/2, or/2, not/1 |
+| concept        | interpretation                                                                                 |
+| -------------- | ---------------------------------------------------------------------------------------------- |
+| `basics`       | Introduction to functions, modules, variables, returning values, integers, invoking functions. |
+| `booleans`     | Introduction to the boolean type and strict boolean operators -- and/2, or/2, not/1            |
+| `conditionals` | Intro to elixir `cond/1` function.                                                             |
+| `atoms`        | Intro to elixir atom type.                                                                     |
 | `lists`           | Introduction to the lists type basic list functions -- hd/1, tl/1, length/1, in/2   |
 | `string-literals` | Introduction to strings in code enclosed by double quotes.                          |

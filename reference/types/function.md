@@ -24,12 +24,16 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 
 #### Implementations
 
-| Track | Exercise                        | Changes |
-| ----- | ------------------------------- | ------- |
-| F#    | [basics][implementation-fsharp] | None    |
-| Julia | [functions-introduction][implementation-julia] | None |
+| Track | Exercise                                       | Changes |
+| ----- | ---------------------------------------------- | ------- |
+| C#    | [basics][implementation-csharp]                | None    |
+| F#    | [basics][implementation-fsharp]                | None    |
+| Julia | [functions-introduction][implementation-julia] | None    |
+| Ruby  | [basics][implementation-ruby]                  | None    |
 
+[implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/introduction.md
 [implementation-julia]: ../../languages/julia/exercises/concept/functions-introduction/.docs/introduction.md
+[implementation-ruby]: ../../languages/ruby/exercises/concept/basics/.docs/introduction.md
 [concept-functions]: ../concepts/functions.md
 [concept-generics]: ../concepts/generics.md
