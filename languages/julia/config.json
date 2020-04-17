@@ -22,7 +22,8 @@
                 "slug": "composite-types",
                 "concepts": [
                     "composite-types",
-                    "abstract-types"
+                    "abstract-types",
+                    "inner-constructors"
                 ],
                 "prerequisites": [
                     "methods",
