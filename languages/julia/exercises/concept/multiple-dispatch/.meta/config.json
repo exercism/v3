@@ -5,6 +5,5 @@
             "exercism_username": "SaschaMann"
         }
     ],
-    "language_versions": "≥1.0",
-    "forked_from": ["fsharp/basics"]
+    "language_versions": "≥1.0"
 }
