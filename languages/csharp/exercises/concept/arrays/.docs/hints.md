@@ -26,7 +26,7 @@
 
 ### 5. Check what the counts were last week
 
-- As this method does _not_ depends on the current week's count, it is defined as a [`static` method][static-members].
+- As this method does _not_ depend on the current week's count, it is defined as a [`static` method][static-members].
 - There are [several ways to define an array][single-dimensional-arrays].
 
 [array-foreach]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays
