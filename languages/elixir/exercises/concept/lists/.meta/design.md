@@ -30,8 +30,8 @@ The concepts this exercise unlocks are:
 - `lists`
   - know of the existence of the `list` type;
   - know of the idea of `list` design;
-  - know some basic functions
-    - like creating, `hd/1`, `tl/1`, `length/1`, `in/2`
+  - know some basic patterns / functions
+    - like `[]`, `[_|_]`, `hd/1`, `tl/1`, `length/1`, `in/2`
 - `string-literals`
   - know how to write out a string with double quotes
 
@@ -58,6 +58,5 @@ It may benefit from additions which ensure the use of the `hd/1`, `tl/1`, `lengt
 
 [analyzer]: https://github.com/exercism/csharp-analyzer
 [representer]: https://github.com/exercism/csharp-representer
-
 [hexdocs-lists]: https://hexdocs.pm/elixir/List.html
 [getting-started-lists]: https://elixir-lang.org/getting-started/basic-types.html#linked-lists

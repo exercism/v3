@@ -6,6 +6,7 @@ defmodule LanguageListTest do
   @languages ~w/Clojure Haskell Erlang F# Elixir/
   @languages_reversed Enum.reverse(@languages)
 
+  # @tag :pending
   test "new list" do
     assert LL.new() == []
   end
