@@ -27,7 +27,7 @@ int[] threeIntsV3 = { 4, 9, 7 };
 
 Arrays can be manipulated by either calling an array's methods or properties, or by using the methods defined in the `Array` class.
 
-Besides access values by index, the fact that an array is also a _collection_ means that you can iterate over all its values using a `foreach` loop:
+The fact that an array is also a _collection_ means that, besides accessing values by index, you can iterate over all its values using a `foreach` loop:
 
 ```csharp
 char[] vowels = new [] { 'a', 'e', 'i', 'o', 'u' }; // Size is 5
