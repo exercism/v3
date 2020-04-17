@@ -21,7 +21,7 @@
 - Remember that the counts are ordered by day from oldest to most recent, with the last element representing today.
 - Accessing the second last element can be done either by using its (fixed) index (remember to start counting from zero) or by calculating its index using the [array's size][array-length].
 
-### 4. Check the count for a specific day
+### 4. Check if there was a day with no visiting birds
 
 - The `Array` class has a [built-in method][array-indexof] to check at which index an element can be found. A special value is returned if a matching element could not be found.
 

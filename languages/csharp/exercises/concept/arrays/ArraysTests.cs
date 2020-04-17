@@ -51,27 +51,19 @@ public class BirdCountTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void ExactWithOneMatchingDay()
+    public void HasDayWithoutBirdsWithDayWithoutBirds()
     {
-        var counts = new int[] { 8, 7, 9, 6, 2, 4, 5 };
+        var counts = new int[] { 5, 5, 4, 0, 7, 6, 7 };
         var birdCount = new BirdCount(counts);
-        Assert.True(birdCount.Exact(6));
+        Assert.True(birdCount.HasDayWithoutBirds());
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void ExactWithMultipleMatchingDays()
-    {
-        var counts = new int[] { 5, 5, 4, 4, 7, 6, 7 };
-        var birdCount = new BirdCount(counts);
-        Assert.True(birdCount.Exact(7));
-    }
-
-    [Fact(Skip = "Remove this Skip property to run this test")]
-    public void ExactWithNoMatchingDays()
+    public void HasDayWithoutBirdsWithNoDayWithoutBirds()
     {
         var counts = new int[] { 4, 5, 9, 10, 9, 4, 3 };
         var birdCount = new BirdCount(counts);
-        Assert.False(birdCount.Exact(8));
+        Assert.False(birdCount.HasDayWithoutBirds());
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]

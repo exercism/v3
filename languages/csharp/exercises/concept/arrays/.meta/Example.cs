@@ -41,9 +41,9 @@ public class BirdCount
         return birdsPerDay[5];
     }
 
-    public bool Exact(int count)
+    public bool HasDayWithoutBirds()
     {
-        return Array.IndexOf(birdsPerDay, count) != -1;
+        return Array.IndexOf(birdsPerDay, 0) != -1;
     }
 
     public static int[] LastWeek()

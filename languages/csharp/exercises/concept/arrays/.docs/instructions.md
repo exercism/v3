@@ -7,7 +7,7 @@ You have five tasks, all dealing with the numbers of birds that visited your gar
 Implement the `BirdCount.Total()` method to return the total number of birds that have visited your garden:
 
 ```csharp
-int[] birdsPerDay = { 2, 5, 1, 4, 7, 0 };
+int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
 var birdCount = new BirdCount(birdsPerDay);
 birdCount.Total();
 // => 19
@@ -19,7 +19,7 @@ Some days are busier that others. A busy day is one where five or more birds hav
 Implement the `BirdCount.BusyDays()` method to return the number of busy days:
 
 ```csharp
-int[] birdsPerDay = { 2, 5, 1, 4, 7, 0 };
+int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
 var birdCount = new BirdCount(birdsPerDay);
 birdCount.BusyDays();
 // => 2
@@ -30,20 +30,20 @@ birdCount.BusyDays();
 Implement the `BirdCount.Yesterday()` method to return how many birds visited your garden yesterday. The bird counts are ordered by day, with the first element being the count of six days ago, and the last element being today's count.
 
 ```csharp
-int[] birdsPerDay = { 2, 4, 1, 6, 7, 0 };
+int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
 var birdCount = new BirdCount(birdsPerDay);
 birdCount.Yesterday();
-// => 7
+// => 4
 ```
 
-### 4. Check the count for a specific day
+### 4. Check if there was a day with no visiting birds
 
-Your neighbor is also a bird enthusiast. Occasionally, your neighbor wants to know if your garden was also visited by a specific number of birds. Implement the `BirdCount.Exact()` method that the number of birds to check as a parameter and returns a boolean that indicates if that exact number of birds has visited your garden:
+Implement the `BirdCount.HasDayWithoutBirds()` method that returns `true` if there was a day at which no birds (count is zero) visited the garden; otherwise, return `false`:
 
 ```csharp
-int[] birdsPerDay = { 2, 4, 1, 6, 7, 0 };
+int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
 var birdCount = new BirdCount(birdsPerDay);
-birdCount.Exact(1);
+birdCount.HasDayWithoutBirds();
 // => true
 ```
 

@@ -24,9 +24,9 @@ public class BirdCount
         throw new NotImplementedException("Please implement the BirdCount.Yesterday method");
     }
 
-    public bool Exact(int count)
+    public bool HasDayWithoutBirds()
     {
-        throw new NotImplementedException("Please implement the BirdCount.Exact method");
+        throw new NotImplementedException("Please implement the BirdCount.HasDayWithoutBirds method");
     }
 
     public static int[] LastWeek()
