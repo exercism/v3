@@ -5,7 +5,7 @@ true_variable = true
 false_variable = false
 ```
 
-We can combine boolean values into expressions using boolean logical operators. `and/2`, `or/2`, and `not/1` are commonly used in expressions to evaluate multiple boolean values to a single result.
+We can evaluate strict boolean expresstions using the `and/2`, `or/2`, and `not/1` operator functions.
 
 ```elixir
 true_variable = true and true
