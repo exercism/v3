@@ -27,7 +27,8 @@
                 ],
                 "prerequisites": [
                     "methods",
-                    "symbols"
+                    "symbols",
+                    "error-handling"
                 ]
             },
             {
