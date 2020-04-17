@@ -27,7 +27,7 @@ birdCount.BusyDays();
 
 ### 3. Check how many birds visited yesterday
 
-Implement the `BirdCount.Yesterday()` method to return how many birds visited your garden yesterday, which is the second last element:
+Implement the `BirdCount.Yesterday()` method to return how many birds visited your garden yesterday. The bird counts are ordered by day, with the first element being the count of six days ago, and the last element being today's count.
 
 ```csharp
 int[] birdsPerDay = { 2, 4, 1, 6, 7, 0 };
