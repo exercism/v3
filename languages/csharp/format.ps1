@@ -18,13 +18,15 @@ param (
 dotnet tool restore
 
 $conceptExerciseDir = Join-Path "exercises" "concept" $slug
-$practiceExerciseDIr = Join-Path "exercises" "practice" $slug
+$practiceExerciseDir = Join-Path "exercises" "practice" $slug
 
 if (Test-Path $conceptExerciseDir -PathType Container) {
     dotnet format -f $conceptExerciseDir
-} elseif (Test-Path $practiceExerciseDIr -PathType Container) {
-    dotnet format -f $practiceExerciseDIr
-} else {
+}
+elseif (Test-Path $practiceExerciseDir -PathType Container) {
+    dotnet format -f $practiceExerciseDir 
+}
+else {
     Write-Error "Unknown slug"
 }
 
