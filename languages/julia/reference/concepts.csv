@@ -51,7 +51,8 @@ internal-constructors,type-system
 type-parameters,type-system
 type-stability,type-system
 type-piracy,type-system
-peformance-analysics,
+primitive-types,type-system
+performance-analysis,
 benchmarking,
 profiling,
 code-inspection,

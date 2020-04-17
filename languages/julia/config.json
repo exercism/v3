@@ -18,6 +18,16 @@
                 "prerequisites": []
             },
             {
+                "uuid": "f2c8b5ed-b2f3-4923-a9f0-f9bb3b7e36fd",
+                "slug": "primitive-types",
+                "concepts": [
+                    "primitive-types"
+                ],
+                "prerequisites": [
+                    "functions-introduction"
+                ]
+            },
+            {
                 "uuid": "68001762-8a35-4494-9de4-624ca9efb5cd",
                 "slug": "multiple-dispatch",
                 "concepts": [
