@@ -16,4 +16,14 @@ jobs:
         uses: actions/checkout@v2
 
       - name: "Verify Markdown formatting"
-        run: npx prettier@2.0.4 --check "**/*.md"
+        run: |
+          if [ "$GITHUB_REF" == "refs/heads/master" ]; then
+            echo "Checking the formatting of all Markdown files in this repository"
+            npx prettier@2.0.4 --check "**/*.md"
+          else
+            echo "Checking the formatting of all added or modified Markdown files in this PR"
+            PULL_REQUEST_URL=$(jq -r ".pull_request.url" "$GITHUB_EVENT_PATH")
+            curl --url $"${PULL_REQUEST_URL}/files" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' | \
+              jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match(".md$")) | .filename' | \
+              xargs npx prettier@2.0.4 --write
+          fi
