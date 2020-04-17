@@ -10,6 +10,9 @@ twoInts[1] = 8;
 
 // Retrieve the second element by index
 twoInts[1] == 8; // => true
+
+// Check the length of the array
+twoInts.Length == 2; // => true
 ```
 
 Arrays can also be defined using a shortcut notation that allows you to both create the array and set its value. As the compiler can now tell how many elements the array will have, the length can be omitted:

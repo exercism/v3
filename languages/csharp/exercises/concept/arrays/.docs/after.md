@@ -10,6 +10,9 @@ twoInts[1] = 8;
 
 // Retrieve the second element by index
 twoInts[1] == 8; // => true
+
+// Check the length of the array
+twoInts.Length == 2; // => true
 ```
 
 Arrays can also be defined using a shortcut notation that allows you to both create the array and set its value. As the compiler can now tell how many elements the array will have, the length can be omitted:
@@ -27,7 +30,7 @@ int[] threeIntsV3 = { 4, 9, 7 };
 
 Arrays can be manipulated by either calling an array's [methods][array-methods] or [properties][array-properties], or by using the methods defined in the [`Array` class][array-class].
 
-An array is also a _collection_, which means that you can iterate over all its values using a `foreach` loop:
+An array is also a _collection_, which means that you can iterate over all its values using a [`foreach` loop][foreach-statement]:
 
 ```csharp
 char[] vowels = new [] { 'a', 'e', 'i', 'o', 'u' }; // Size is 5
@@ -41,7 +44,7 @@ foreach (char vowel in vowels)
 // => aeiou
 ```
 
-One could use a `for` loop to iterate over an array:
+One could use a [`for` loop][for-statement] to iterate over an array:
 
 ```csharp
 char[] vowels = new [] { 'a', 'e', 'i', 'o', 'u' };
@@ -73,9 +76,29 @@ foreach (char vowel in vowels)
 }
 ```
 
+If you want to stop iterating when using a `foreach` loop, the [`break` keyword][break-keyword] can be used:
+
+```csharp
+char[] vowels = new [] { 'a', 'e', 'i', 'o', 'u' }; // Size is 5
+
+foreach (char vowel in vowels)
+{
+    // Output the vowel
+    System.Console.Write(vowel);
+
+    if (vowel == 'i')
+        break;
+}
+
+// => aei
+```
+
 [implicitly-typed-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/implicitly-typed-arrays
 [array-foreach]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays
 [single-dimensional-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/single-dimensional-arrays
 [array-class]: https://docs.microsoft.com/en-us/dotnet/api/system.array?view=netcore-3.1
 [array-properties]: https://docs.microsoft.com/en-us/dotnet/api/system.array?view=netcore-3.1#properties
 [array-methods]: https://docs.microsoft.com/en-us/dotnet/api/system.array?view=netcore-3.1#methods
+[foreach-statement]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/foreach-in
+[for-statement]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/for
+[break-keyword]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/break
