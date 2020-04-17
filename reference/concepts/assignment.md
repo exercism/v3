@@ -20,13 +20,13 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 
 #### Implementations
 
-| Track       | Exercise                             | Changes                            |
-| ----------- | ------------------------------------ | ---------------------------------- |
-| C#          | [basics][implementation-csharp]      | None                               |
-| Common Lisp | [basics][implementation-common-lisp] | There is no updating of a variable |
-| Elixir | [basics][implementation-elixir] | Introduces binding values rather than assignment |
-| F#          | [basics][implementation-fsharp]      | There is no updating of a variable |
-| Ruby        | [basics][implementation-ruby]        |                                    |
+| Track       | Exercise                             | Changes                                          |
+| ----------- | ------------------------------------ | ------------------------------------------------ |
+| C#          | [basics][implementation-csharp]      | None                                             |
+| Common Lisp | [basics][implementation-common-lisp] | There is no updating of a variable               |
+| Elixir      | [basics][implementation-elixir]      | Introduces binding values rather than assignment |
+| F#          | [basics][implementation-fsharp]      | There is no updating of a variable               |
+| Ruby        | [basics][implementation-ruby]        |                                                  |
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/introduction.md
 [implementation-common-lisp]: ../../languages/common-lisp/exercises/concept/basics/.docs/introduction.md

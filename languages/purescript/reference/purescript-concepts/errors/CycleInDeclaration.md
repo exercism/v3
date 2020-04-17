@@ -23,7 +23,7 @@ This error occurs when a value refers to itself, or another value in the same bi
 In the example above, it would be incorrect to generate the JavaScript
 
 ```javascript
-var x = x;
+var x = x
 ```
 
 since then `x` would be `undefined`.

@@ -43,7 +43,7 @@ A type synonym has been partially applied. To properly use a type synonym having
 
 To understand the problem, it may be helpful to review the relevant difference between a "type synonym" and a "data type". A type synonym is effectively a macro, a substitution which is performed after parsing into an AST and before type-checking and compilation, while a data type is a proper entity through the compilation process. Because of this, a type synonym has much more restricted use, while a data type enjoys additional flexibility, such as the ability to be partially applied.
 
-Interestingly, a type synonym *can* be partially applied in the context of a type synonym, however. For example:
+Interestingly, a type synonym _can_ be partially applied in the context of a type synonym, however. For example:
 
 ```purescript
 type UserT' f = { firstName :: f String }
@@ -78,9 +78,9 @@ An example, from transformers, if State was defined as follows, it would be impo
 ```
 -- note the `a`, in the library this is omitted on both sides
 type State s a = StateT s Identity a
-````
+```
 
-For example, the following situation is one in which we would want to use `State`. When stacking monad transformers, only the "top" of the stack has its `a`, its second type parameter, provided, and the "lower" layers are used to specify its `m`, its monad. 
+For example, the following situation is one in which we would want to use `State`. When stacking monad transformers, only the "top" of the stack has its `a`, its second type parameter, provided, and the "lower" layers are used to specify its `m`, its monad.
 
 ```
 -- If `State` is defined as above, the following would fail,
@@ -89,6 +89,6 @@ newtype App1 a = App1 (ExceptT MyError (State MyState) a)
 newtype App2 a = App2 (WriterT MyLog (ExceptT MyError (State MyState)) a)
 ```
 
-By defining it as `type State s a`, we are saying it requires two type arguments, but in both of the above cases, we apply `MyState` to `State`, which is just one type argument. Because the example didn't include a type for `a` when using the `State`  synonym, it is left partially applied,
+By defining it as `type State s a`, we are saying it requires two type arguments, but in both of the above cases, we apply `MyState` to `State`, which is just one type argument. Because the example didn't include a type for `a` when using the `State` synonym, it is left partially applied,
 
 Related to this, purescript/purescript#2691 is an issue which requests adding a warning for type synonyms which can be eta-reduced.

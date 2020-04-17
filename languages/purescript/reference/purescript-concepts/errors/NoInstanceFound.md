@@ -40,7 +40,7 @@ This can be fixed by adding an instance for the relevant type. To fix the earlie
 ```
 
 ### Ambiguous types
- 
+
 This error can arise in situations where the compiler is not able to solve a constraint due to ambiguous types. This is demonstrated in the following example in which no concrete type appears in the function's definition; it only uses type class methods. The compiler must be given a concrete type, or be able to infer it, to choose a type class instance.
 
 ```purescript
@@ -63,7 +63,7 @@ As an example of this situation, consider the following function definition:
 > f 0 = 0
 ```
 
-This function does not handle all possible inputs: it is undefined for all inputs other than zero. Such functions are called *partial* and the compiler will infer a `Partial` constraint:
+This function does not handle all possible inputs: it is undefined for all inputs other than zero. Such functions are called _partial_ and the compiler will infer a `Partial` constraint:
 
 ```
 > :type f

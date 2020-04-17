@@ -11,6 +11,7 @@ example = true == false /= true
 ```
 
 Result:
+
 ```
 Cannot parse an expression that uses multiple non-associative operators of the same precedence:
 

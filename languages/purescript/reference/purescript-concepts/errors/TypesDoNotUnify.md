@@ -14,7 +14,7 @@ at line 1, column 6 - line 1, column 6
 
   with type
 
-    Int   
+    Int
 
 while checking that type String
   is at least as general as type Int
@@ -33,9 +33,10 @@ In the example above, the types `String` and `Int` can never be made equal, henc
 - Look carefully at the error, especially the information at the end. Usually, it will help to narrow down the offending expression. For example, in the error message above, we are told that the error occurred "while checking that expression `"test"` has type `Int`".
 
 ## Notes
+
 ### Arrays
 
-Unlike in JavaScript, all elements of a PureScript array must be the same type. Otherwise the types will fail unification when being matched by [type inference](https://en.wikipedia.org/wiki/Unification_(computer_science)#Application:_Type_inference). For example, ```[true, false]``` or ```[1, 2, 3]``` work fine but ```[1, false]``` does not.
+Unlike in JavaScript, all elements of a PureScript array must be the same type. Otherwise the types will fail unification when being matched by [type inference](<https://en.wikipedia.org/wiki/Unification_(computer_science)#Application:_Type_inference>). For example, `[true, false]` or `[1, 2, 3]` work fine but `[1, false]` does not.
 
 ### Another Example
 

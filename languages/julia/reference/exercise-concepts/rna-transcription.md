@@ -8,7 +8,6 @@
 - [Using a loop to apply the transcription dictionary to the input](https://exercism.io/tracks/julia/exercises/rna-transcription/solutions/abe6edd3fd67402f901043eddda5fed3)
 - [Using the pipe operator to process everything in one line](https://exercism.io/tracks/julia/exercises/rna-transcription/solutions/f56c87e20f1d4765a73f34ab9df6be45)
 
-
 ## Required Concepts
 
 - strings: the input that needs to be processed is a string

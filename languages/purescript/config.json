@@ -8,7 +8,14 @@
     "indent_size": 2
   },
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+        "slug": "booleans",
+        "uuid": "f1eb2cab-d6bc-447a-bce3-6780c44e4b22",
+        "concepts": ["booleans"],
+        "prerequisites": []
+      }
+    ],
     "practice": []
   }
 }
