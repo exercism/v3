@@ -21,7 +21,7 @@ In this exercise, the student processes a list of laguages to learn on Exercism.
 | ------- | ------------------------------- | ------------------------------------------------------------------- |
 | Clojure | [lists][implementation-clojure] | None                                                                |
 | F#      | [lists][implementation-fsharp]  | Define non-empty list. Replace tail function with reverse function. |
-| Elixir | [lists][implementation-elixir]  | Use of in/2 to test if a string is a member of a list. |
+| Elixir  | [lists][implementation-elixir]  | Use of in/2 to test if a string is a member of a list.              |
 
 [type-char]: ./char.md
 [implementation-clojure]: ../../languages/clojure/exercises/concept/lists/.docs/introduction.md
