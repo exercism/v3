@@ -2,11 +2,11 @@ using System;
 
 public class BirdCount
 {
-    private int[] counts;
+    private int[] birdsPerDay;
 
-    public BirdCount(int[] countsForLastSevenDays)
+    public BirdCount(int[] birdsPerDay)
     {
-        this.counts = countsForLastSevenDays;
+        this.birdsPerDay = birdsPerDay;
     }
 
     public int Total()

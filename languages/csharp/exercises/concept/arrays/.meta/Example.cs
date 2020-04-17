@@ -2,18 +2,18 @@ using System;
 
 public class BirdCount
 {
-    private int[] counts;
+    private int[] birdsPerDay;
 
-    public BirdCount(int[] countsForLastSevenDays)
+    public BirdCount(int[] birdsPerDay)
     {
-        this.counts = countsForLastSevenDays;
+        this.birdsPerDay = birdsPerDay;
     }
 
     public int Total()
     {
         var total = 0;
 
-        foreach (var count in counts)
+        foreach (var count in birdsPerDay)
         {
             total += count;
         }
@@ -25,7 +25,7 @@ public class BirdCount
     {
         var days = 0;
 
-        foreach (var count in counts)
+        foreach (var count in birdsPerDay)
         {
             if (count >= 5)
             {
@@ -38,12 +38,12 @@ public class BirdCount
 
     public int Yesterday()
     {
-        return counts[5];
+        return birdsPerDay[5];
     }
 
     public bool Exact(int count)
     {
-        return Array.IndexOf(counts, count) != -1;
+        return Array.IndexOf(birdsPerDay, count) != -1;
     }
 
     public static int[] LastWeek()
