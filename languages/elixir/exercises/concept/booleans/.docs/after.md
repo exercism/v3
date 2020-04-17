@@ -13,7 +13,7 @@ false_variable = not true
 
 Boolean operators use _short-circuit evaluation_, which means that expression on the right-hand side of the operator is only evaluated if needed.
 
-Each of the operators has a different precedence, where `not/1` is evaluated before `and/2` and `or/2`.  Brackets can be used to evaluate one part of the expression before the others:
+Each of the operators has a different precedence, where `not/1` is evaluated before `and/2` and `or/2`. Brackets can be used to evaluate one part of the expression before the others:
 
 ```elixir
 not true and false # => false
