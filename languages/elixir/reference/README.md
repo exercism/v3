@@ -33,8 +33,7 @@ The initial breakdown of these concepts, including the ordering, is based on the
   - Binaries and `is_binary/1`
   - `String.length/1` vs `byte_size/1`
     - `length` vs `size` rule for linear vs constant time respectively
-- [Anonymous functions](../../../reference/concepts/anonymous_functions.md)
-  -`is_function/1` and `is_function/2`
+- [Anonymous functions](../../../reference/concepts/anonymous_functions.md) -`is_function/1` and `is_function/2`
   - As closures
   - Variable [scope](../../../reference/concepts/scope.md)
   - Implicit [return values](../../../reference/concepts/return_values.md)
@@ -257,9 +256,9 @@ TODO: Flesh out how the above general concepts apply to concept exercises in the
 
 The concept exercises use the following concepts:
 
-| concept | interpretation |
-| --- | --- |
-| `basics` | Introduction to functions, modules, variables, returning values, integers, invoking functions. |
-| `booleans` | Introduction to the boolean type and strict boolean operators -- and/2, or/2, not/1 |
-| `conditionals` | Intro to elixir `cond/1` function. |
-| `atoms` | Intro to elixir atom type. |
+| concept        | interpretation                                                                                 |
+| -------------- | ---------------------------------------------------------------------------------------------- |
+| `basics`       | Introduction to functions, modules, variables, returning values, integers, invoking functions. |
+| `booleans`     | Introduction to the boolean type and strict boolean operators -- and/2, or/2, not/1            |
+| `conditionals` | Intro to elixir `cond/1` function.                                                             |
+| `atoms`        | Intro to elixir atom type.                                                                     |
