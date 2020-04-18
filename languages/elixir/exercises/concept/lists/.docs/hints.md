@@ -35,7 +35,7 @@ Use the built-in [(linked) list type][list].
 
 - You need to define a [named function][named-function] with 1 argument.
   - The first argument is a [list][list], a [list][list] of language [string-literals][string].
-- Your function should return a boolean value whether "Elixir" is a member of the list.
+- Your function should return a boolean value indicating whether "Elixir" is a member of the list.
 
 [list]: https://elixir-lang.org/getting-started/basic-types.html#linked-lists
 [named-function]: https://elixir-lang.org/getting-started/modules-and-functions.html#named-functions
