@@ -5,7 +5,7 @@ import json
 import sys
 
 def get_files():
-  return glob.glob('**/*.json', recursive=True)
+  return glob.glob('**/**/*.json', recursive=True)
 
 def validate_files(files):
   return [report for report in (validate_json_file(file) for file in files) if report != None]
