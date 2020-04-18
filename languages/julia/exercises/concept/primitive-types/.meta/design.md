@@ -6,8 +6,6 @@ The goal of this exercise is to teach the student advanced aspects of the Concep
 
 ## Learning objectives
 
-
-
 ## Out of scope
 
 As this is an advanced exercise, there are no primitive types-related things that we should explicitly _not_ teach.
@@ -16,13 +14,13 @@ As this is an advanced exercise, there are no primitive types-related things tha
 
 The Concepts this exercise unlocks are:
 
-- `primitive-types`: 
+- `primitive-types`:
 
 ## Prequisites
 
 This exercise's prerequisites Concepts are:
 
-- ``: 
+- ``:
 
 ## Representer
 
