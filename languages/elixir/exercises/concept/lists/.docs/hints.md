@@ -15,7 +15,7 @@ Use the built-in [(linked) list type][list].
 
 ### 3. Define a function to remove a language from the list
 
-- You need to define a [named function][named-function] with 1 arguments.
+- You need to define a [named function][named-function] with 1 argument.
   - The first argument is a [list][list], a [list][list] of language [string-literals][string].
 - Elixir provides a function to return a list with the first item removed.
 
