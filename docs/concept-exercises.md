@@ -61,7 +61,7 @@ An exercise has the following files. In the browser they will show at the releva
 - Don't give any extra information about a concept not needed to understand the fundamentals of the concept or solve the exercise.
 - Links should be used sparingly, if at all. While a link explaining a complex topic like recursion might be useful, for most concepts the links will provide more information than needed so explaining things concisely inline should be the aim.
 - Use the proper technical terms (e.g. a keyword) so that the student can easily search for more information.
-- Don't use code examples unless the exercise introduces new syntax, in which case an example of the syntax must be included; students should not need to search the web for examples of syntax.
+- Code examples should only be used to introduces new syntax (students should not need to search the web for examples of syntax). In other cases provide descriptions or links instead of code.
 
 As an example, the introduction to a "strings" exercise might describe a string as just a "Sequence of Unicode characters" or a "series of bytes", tell the users how to create a string, and explain that a string has methods that can be used to manipulate it. Unless the student needs to understand more nuanced details in order to solve the exercise, this type of brief explanation (along with an example of its syntax) should be sufficient information for the student to solve the exercise.
 
