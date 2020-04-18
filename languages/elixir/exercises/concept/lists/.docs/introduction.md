@@ -1,4 +1,4 @@
-Lists are built-in to the Elixir language. They are considered a basic type, denoted by square brackets. Lists may be empty or hold any number of items. A list's contents are not required to have the same type:
+Lists are built-in to the Elixir language. They are considered a basic type, denoted by square brackets. Lists may be empty or hold any number of items of any type. For example:
 
 ```elixir
 empty_list = []
