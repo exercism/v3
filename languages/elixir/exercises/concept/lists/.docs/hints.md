@@ -21,7 +21,7 @@ Use the built-in [(linked) list type][list].
 
 ### 4. Define a function to return the first item in the list
 
-- You need to define a [named function][named-function] with 1 arguments.
+- You need to define a [named function][named-function] with 1 argument.
   - The first argument is a [list][list], a [list][list] of language [string-literals][string].
 - Elixir provides a function to the first item from a list.
 
