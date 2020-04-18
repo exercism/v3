@@ -65,7 +65,7 @@ An exercise has the following files. In the browser they will show at the releva
 
 As an example, the introduction to a "strings" exercise might describe a string as just a "Sequence of Unicode characters" or a "series of bytes", tell the users how to create a string, and explain that a string has methods that can be used to manipulate it. Unless the student needs to understand more nuanced details in order to solve the exercise, this type of brief explanation (along with an example of its syntax) should be sufficient information for the student to solve the exercise.
 
-See [this example introduction.md file][introduction.md]. Notice how the introduction is very minimal, but that the language-specific keywords are enquoted and an example of the newly introduced syntax is included.
+See [this example introduction.md file][introduction.md]. Notice how the introduction is very minimal, but that the language-specific keywords are enclosed in quotes and an example of the newly introduced syntax is included.
 
 ### `.docs/instructions.md`
 
