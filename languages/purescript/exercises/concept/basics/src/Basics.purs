@@ -1,10 +1,15 @@
-module Main where
+module Basics where
 
 import Prelude
 
-import Effect (Effect)
-import Effect.Console (log)
+expectedMinutesInOven :: Int
+expectedMinutesInOven = -- You need to implement this function!
 
-main :: Effect Unit
-main = do
-  log "🍝"
+remainingMinutesInOven :: Int -> Int
+remainingMinutesInOven minutesInOven = -- You need to implement this function!
+
+preparationTimeInMinutes :: Int -> Int
+preparationTimeInMinutes numberOfLayers = -- You need to implement this function!
+
+totalTimeInMinutes :: Int -> Int -> Int
+totalTimeInMinutes numberOfLayers minutesInOven = -- You need to implement this function!
