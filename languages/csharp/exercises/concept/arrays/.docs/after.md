@@ -62,7 +62,7 @@ However, generally a `foreach` loop is preferrable over a `for` loop for the fol
 
 - A `foreach` loop is guaranteed to iterate over _all_ values. With a `for` loop, it is easy to miss elements, for example due to an off-by-one error.
 - A `foreach` loop is more _declarative_, your code is communicating _what_ you want it to do, instead of a `for` loop that communicates _how_ you want to do it.
-- A `foreach` loop works on all collection types, includding those that don't support using an indexer to access elements.
+- A `foreach` loop works on all collection types, including those that don't support using an indexer to access elements.
 
 To guarantee that a `foreach` loop will iterate over _all_ values, the compiler will not allow updating of a collection within a `foreach` loop:
 
