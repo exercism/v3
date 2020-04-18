@@ -27,7 +27,7 @@ list = [2, 1]
 # => true
 ```
 
-There are also several Elixir Kernel functions for working with lists such as `hd/1`, `tl/1`, and `length/1`. One interesting macro function available is the `in/2` operator where we can see if an item is a member of a list.
+There are several Elixir Kernel functions for working with lists, including `hd/1`, `tl/1`, and `length/1`.  The `in/2` macro indicates whether an item is a member of a list, e.g.
 
 ```elixir
 # Check if the string literal "c" is a member of the list
