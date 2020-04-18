@@ -6,7 +6,7 @@ Define the `new/1` function that takes no parameters and returns an empty list.
 
 ### 2. Define a function to add a language to the list
 
-Define the `add/2` function that takes 2 parameters (a _language list_ and a string literal of a _language_). It should return the resulting list with the new language prepended to the list passed in.
+Define the `add/2` function that takes 2 parameters (a _language list_ and a string literal of a _language_). It should return the resulting list with the new language prepended to the given list.
 
 ### 3. Define a function to remove a language from the list
 
