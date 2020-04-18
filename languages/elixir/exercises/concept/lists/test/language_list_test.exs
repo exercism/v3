@@ -93,7 +93,7 @@ defmodule LanguageListTest do
   end
 
   @tag :pending
-  test "the count of a multiple item list is equal to its length" do
+  test "the count of a multiple-item list is equal to its length" do
     count =
       @languages
       |> Enum.reduce(LL.new(), &LL.add(&2, &1))
