@@ -33,7 +33,7 @@ Use the built-in [(linked) list type][list].
 
 ### 6. Define a function to determine if the list is exciting
 
-- You need to define a [named function][named-function] with 1 arguments.
+- You need to define a [named function][named-function] with 1 argument.
   - The first argument is a [list][list], a [list][list] of language [string-literals][string].
 - Your function should return a boolean value whether "Elixir" is a member of the list.
 
