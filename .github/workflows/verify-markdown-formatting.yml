@@ -9,34 +9,20 @@ on:
       - "**.md"
 
 jobs:
-  verify-markdown-for-repository:
-    if: github.ref == 'refs/heads/master'
+  verify-markdown-formatting:
     runs-on: [ubuntu-latest]
     steps:
       - name: "Checkout code"
         uses: actions/checkout@v2
 
-      - name: "Verify Markdown formatting"
+      - name: "Verify Markdown formatting of all files"
+        if: github.ref == 'refs/heads/master'
         run: npx prettier@2.0.4 --check "**/*.md"
 
-  verify-markdown-for-pr:
-    if: github.ref != 'refs/heads/master' && github.event.pull_request.url
-    runs-on: [ubuntu-latest]
-    steps:
-      - name: "Checkout code"
-        uses: actions/checkout@v2
-
-      - name: "Verify Markdown formatting"
+      - name: "Verify Markdown formatting of the PR files"
+        if: github.ref != 'refs/heads/master' && github.event.pull_request.url
         run: |
           PULL_REQUEST_URL=$(jq -r ".pull_request.url" "$GITHUB_EVENT_PATH")
           curl --url $"${PULL_REQUEST_URL}/files" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' | \
             jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match(".md$")) | .filename' | \
             xargs npx prettier@2.0.4 --write
-
-  # https://github.community/t5/GitHub-Actions/Workflow-is-failing-if-no-job-can-be-ran-due-to-condition/m-p/38186#M3250
-  always_job:
-    name: Always run job
-    runs-on: ubuntu-latest
-    steps:
-      - name: Always run
-        run: echo "This job is used to prevent the workflow to fail when all other jobs are skipped."
