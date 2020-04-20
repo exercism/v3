@@ -15,11 +15,11 @@ jobs:
       - name: "Checkout code"
         uses: actions/checkout@v2
 
-      - name: "Verify Markdown formatting of all files"
+      - name: "Verify formatting of all Markdown files"
         if: github.ref == 'refs/heads/master'
         run: npx prettier@2.0.4 --check "**/*.md"
 
-      - name: "Verify Markdown formatting of the PR files"
+      - name: "Verify formatting of the PR's Markdown files"
         if: github.ref != 'refs/heads/master' && github.event.pull_request.url
         run: |
           PULL_REQUEST_URL=$(jq -r ".pull_request.url" "$GITHUB_EVENT_PATH")
