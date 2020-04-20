@@ -24,7 +24,11 @@ The latter is most commonly used for one-line function definitions or mathematic
 Invoking a function is done by specifying its name and passing arguments for each of the function's parameters:
 
 ```julia
+# invoking a function
 muladd(10, 5, 1)
+
+# and of course you can invoke a function within the body of another function:
+square_plus_one(x) = muladd(x, x, 1)
 ```
 
 ### Types
