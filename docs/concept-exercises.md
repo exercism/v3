@@ -60,7 +60,7 @@ An exercise has the following files. In the browser they will show at the releva
 - The information provided should give the student just enough context to figure out the solution themselves.
 - Only information that is needed to understand the fundamentals of the concept and solve the exercise should be provided. Extra information should be left for the `after.md`.
 - Links should be used sparingly, if at all. While a link explaining a complex topic like recursion might be useful, for most concepts the links will provide more information than needed so explaining things concisely inline should be the aim.
-- Use the proper technical terms (e.g. a keyword) so that the student can easily search for more information.
+- Proper technical terms should be used so that the student can easily search for more information.
 - Code examples should only be used to introduces new syntax (students should not need to search the web for examples of syntax). In other cases provide descriptions or links instead of code.
 
 As an example, the introduction to a "strings" exercise might describe a string as just a "Sequence of Unicode characters" or a "series of bytes", tell the users how to create a string, and explain that a string has methods that can be used to manipulate it. Unless the student needs to understand more nuanced details in order to solve the exercise, this type of brief explanation (along with an example of its syntax) should be sufficient information for the student to solve the exercise.
