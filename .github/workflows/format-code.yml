@@ -1,4 +1,4 @@
-name: "Format code"
+name: 'Format code'
 
 on:
   issue_comment:
@@ -6,40 +6,35 @@ on:
 
 jobs:
   format:
-    name: "Format code"
+    name: 'Format code'
     runs-on: ubuntu-latest
     if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/format')
     steps:
-      - name: "Checkout code"
-        uses: actions/checkout@v2
-      - name: "Format Markdown code"
+      - name: 'Checkout code'
         run: |
-          # Download the pull request's data
-          PULL_REQUEST="/tmp/pr.json"
-          PULL_REQUEST_URL=$(jq -r ".issue.pull_request.url" "$GITHUB_EVENT_PATH")
-          curl --url $PULL_REQUEST_URL --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' -o "$PULL_REQUEST"
+          PR_DATA="/tmp/pr.json"
 
-          BASE_REPO_FULL_NAME=$(jq -r ".base.repo.full_name" "$PULL_REQUEST")
-          HEAD_REPO_FULL_NAME=$(jq -r ".head.repo.full_name" "$PULL_REQUEST")
-          HEAD_REF=$(jq -r ".head.ref" "$PULL_REQUEST")
+          jq -r ".issue.pull_request.url" "$GITHUB_EVENT_PATH" | \
+            xargs curl --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' -o "$PR_DATA" --url
 
-          # We cannot push commits to forks
-          if [ "$BASE_REPO_FULL_NAME" != "$HEAD_REPO_FULL_NAME" ]; then
-            echo "Cannot format code on a fork"
-            exit 1
-          fi
+          HEAD_REF=$(jq -r ".head.ref" "$PR_DATA")
+          HEAD_REPO=$(jq -r '.head.repo.clone_url | sub("https://"; "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@")' "$PR_DATA")
 
-          # Checkout the PR branch, as issue will have the repo default branch checked out
-          git fetch origin "$HEAD_REF"
+          git clone $HEAD_REPO .
           git checkout -b "$HEAD_REF" "origin/$HEAD_REF"
 
+      - name: 'Format Markdown code'
+        run: |
           # Use prettier to format the added or modified Markdown files in the PR (if any)
-          curl --url "${PULL_REQUEST_URL}/files" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' | \
-            jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match(".md$")) | .filename' | \
+          jq -r '.issue.pull_request.url | . += "/files"' "$GITHUB_EVENT_PATH" | \
+            xargs curl --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' --url | \
+            jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match("\\.md$")) | .filename' | \
             xargs npx prettier@2.0.4 --write
 
+      - name: 'Commit formatted Markdown code'
+        run: |
           # Check if there is nothing to commit (i.e. no formatting changes made)
-          if [ -z "$(git status --porcelain)" ]; then 
+          if [ -z "$(git status --porcelain)" ]; then
             echo "Code is already formatted correctly"
             exit 0
           fi
@@ -48,14 +43,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
-          # Commit the changes made by prettier
+          # Commit the changes made by dotnet format
           git add .
           git commit -m "[CI] Format Markdown code"
           git push
-  # https://github.community/t5/GitHub-Actions/Workflow-is-failing-if-no-job-can-be-ran-due-to-condition/m-p/38186#M3250
-  always_job:
-    name: Always run job
-    runs-on: ubuntu-latest
-    steps:
-      - name: Always run
-        run: echo "This job is used to prevent the workflow to fail when all other jobs are skipped."
