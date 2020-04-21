@@ -97,7 +97,7 @@ Please consult each language's docs folder for more information on the preferred
 
 ## Auto formatting
 
-We're using [prettier][prettier] to ensure that Markdown documents are consistently formatted. Using prettier to ensure consistency gives us the following benefits:
+We're using [prettier][prettier] to ensure that Markdown documents are consistently formatted. This gives us the following benefits:
 
 - No formatting discussions.
 - Great editor/IDE integration so files can be formatted on save.
