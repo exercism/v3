@@ -112,7 +112,7 @@ There are a couple of ways in which you can format Markdown documents using pret
 
 #### 1. Using editor integration
 
-Prettier can be integrated with many [editors][prettier-editor], which works especially well if the editor supports automatic formatting on save.
+Prettier can be integrated with many [editors][prettier-editor]. This works especially well if the editor supports automatic formatting on save.
 
 #### 2. Using a GitHub comment
 
