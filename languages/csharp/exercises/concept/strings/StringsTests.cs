@@ -3,46 +3,68 @@ using Xunit;
 public class LogLineTests
 {
     [Fact]
-    public void ErrorMessage() =>
+    public void ErrorMessage()
+    {
         Assert.Equal("Stack overflow", LogLine.Message("[ERROR]: Stack overflow"));
+    }
 
-    [Fact]
-    public void WarningMessage() =>
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void WarningMessage()
+    {
         Assert.Equal("Disk almost full", LogLine.Message("[WARNING]: Disk almost full"));
+    }
 
-    [Fact]
-    public void InfoMessage() =>
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void InfoMessage()
+    {
         Assert.Equal("File moved", LogLine.Message("[INFO]: File moved"));
+    }
 
-    [Fact]
-    public void MessageWithLeadingAndTrailingWhiteSpace() =>
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void MessageWithLeadingAndTrailingWhiteSpace()
+    {
         Assert.Equal("Timezone not set", LogLine.Message("[WARNING]:   \tTimezone not set  \r\n"));
+    }
 
-    [Fact]
-    public void ErrorLogLevel() =>
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void ErrorLogLevel()
+    {
         Assert.Equal("error", LogLine.LogLevel("[ERROR]: Disk full"));
+    }
 
-    [Fact]
-    public void WarningLogLevel() =>
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void WarningLogLevel()
+    {
         Assert.Equal("warning", LogLine.LogLevel("[WARNING]: Unsafe password"));
+    }
 
-    [Fact]
-    public void InfoLogLevel() =>
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void InfoLogLevel()
+    {
         Assert.Equal("info", LogLine.LogLevel("[INFO]: Timezone changed"));
+    }
 
-    [Fact]
-    public void ErrorReformat() =>
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void ErrorReformat()
+    {
         Assert.Equal("Segmentation fault (error)", LogLine.Reformat("[ERROR]: Segmentation fault"));
+    }
 
-    [Fact]
-    public void WarningReformat() =>
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void WarningReformat()
+    {
         Assert.Equal("Decreased performance (warning)", LogLine.Reformat("[WARNING]: Decreased performance"));
+    }
 
-    [Fact]
-    public void InfoReformat() =>
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void InfoReformat()
+    {
         Assert.Equal("Disk defragmented (info)", LogLine.Reformat("[INFO]: Disk defragmented"));
+    }
 
-    [Fact]
-    public void ReformatWithLeadingAndTrailingWhiteSpace() =>
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void ReformatWithLeadingAndTrailingWhiteSpace()
+    {
         Assert.Equal("Corrupt disk (error)", LogLine.Reformat("[ERROR]: \t Corrupt disk\t \t \r\n"));
+    }
 }

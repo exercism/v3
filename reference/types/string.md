@@ -26,13 +26,35 @@ This exercise extracts information from log lines. The reference implementation 
 
 #### Implementations
 
-| Track | Exercise                         | Changes |
-| ----- | -------------------------------- | ------- |
-| C#    | [strings][implementation-csharp] | None    |
-| F#    | [strings][implementation-fsharp] | None    |
-| Ruby  | [strings][implementation-ruby]   | None    |
+| Track  | Exercise                         | Changes |
+| ------ | -------------------------------- | ------- |
+| C++    | [strings][implementation-cpp]    | None    |
+| C#     | [strings][implementation-csharp] | None    |
+| F#     | [strings][implementation-fsharp] | None    |
+| Ruby   | [strings][implementation-ruby]   | None    |
+| Python | [strings][implementation-python] | None    |
+| Go     | [strings][implementation-go]     | None    |
+
+### Poetry Club
+
+This exercise is a conversation between you and the security guard. The reference implementation (JavaScript) teaches:
+
+- String substrings (first, last letter)
+- String casing (Word capitalization, normalisation).
+- String reversing
+- String concatenation
+
+#### Implementations
+
+| Track      | Exercise                             | Changes |
+| ---------- | ------------------------------------ | ------- |
+| JavaScript | [strings][implementation-javascript] | None    |
 
 [type-char]: ./char.md
+[implementation-cpp]: ../../languages/cpp/exercises/concept/strings/.docs/introduction.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/strings/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/strings/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/strings/.docs/introduction.md
+[implementation-python]: ../../languages/python/exercises/concept/strings/.docs/introduction.md
+[implementation-go]: ../../languages/go/exercises/concept/basic-strings/.docs/introduction.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/strings/.docs/

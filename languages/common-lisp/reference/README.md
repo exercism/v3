@@ -1,49 +1,62 @@
 # Common Lisp Reference
 
-Please note that this is a *very* WIP document. I'm currently using [this
-document][csharp-example] as an example to base my work off of.
+This is a work-in-progress document listing the concepts comprising the Common
+Lisp programming language. I'm currently using [this document][csharp-example]
+as template.
+
+A more formal, machine-readable version of this concept list exists as
+[concepts.csv][concepts]
 
 ## Concepts
-### General
-  - [Anonymous Functions][anonymous-functions]
-  - [Arithmetic][arithmetic]
-    - Prefix Notation
-  - [Assignment][assignment]
-    - Generic Setters
-  - [Comments][comments]
-    - Line
-    - Block
-    - Conventions
-  - [Conditionals][conditionals]
-    - One Branch (`and`, `or`, `when`, `unless`)
-    - Two Branch (`if`)
-    - More Branches (`cond`, `case`)
-  - [Constants][constants]
-  - [Enumeration][enumeration]
-    - Loop Macro
-    - Do (`do`, `do*`, `dotimes`, `dolist`)
-  - [Expressions][expressions]
-    - S-Expressions
-  - [Functions][functions]
-    - Default Arguments
-    - Keyword Arguments
-    - Optional Arguments
-    - Rest Arguments
-  - [Higher Order Functions][higher-order-functions]
-  - [Nested Functions][nested-functions]
-  - Packages
-  - [Recursion][recursion]
-  - [Sameness][sameness]
-    - Same Memory (`eq`)
-    - Same Value Primitives (`eql`)
-    - Same Value Objects (`equal`)
-    - Lenient Sameness (`equalp`)
-    - Type Specific (`=`, `char=`, `string-equal`, etc)
-  - [Variables][variables]
-    - Global (`defparameter`, `defvar`)
-    - Local (`let`, `let*`)
 
-### Format
+### General
+
+- [Arithmetic][arithmetic]
+  - Prefix Notation
+- [Assignment][assignment]
+  - Generic Setters
+- [Comments][comments]
+  - Line
+  - Block
+  - Conventions
+- [Conditionals][conditionals]
+  - One Branch (`and`, `or`, `when`, `unless`)
+  - Two Branch (`if`)
+  - More Branches (`cond`, `case`)
+- [Constants][constants]
+- [Enumeration][enumeration]
+  - Loop Macro
+  - Do (`do`, `do*`, `dotimes`, `dolist`)
+- [Expressions][expressions]
+  - S-Expressions
+- Packages
+- [Sameness][sameness]
+  - Same Memory (`eq`)
+  - Same Value Primitives (`eql`)
+  - Same Value Objects (`equal`)
+  - Lenient Sameness (`equalp`)
+  - Type Specific (`=`, `char=`, `string-equal`, etc)
+- [Truthy and Falsy][truthy-and-falsy]
+- [Variables][variables]
+  - Global (`defparameter`, `defvar`)
+  - Local (`let`, `let*`)
+
+### Functions
+
+- [Anonymous Functions][anonymous-functions]
+- [Function Definition][functions]
+  - Default Arguments
+  - Keyword Arguments
+  - Optional Arguments
+  - Rest Arguments
+- [Higher Order Functions][higher-order-functions]
+- Multiple Values
+- [Nested Functions][nested-functions]
+- [Recursion][recursion]
+
+### DSLs
+
+- Format
   - Basic
   - Conditionals
   - Iteration
@@ -51,86 +64,110 @@ document][csharp-example] as an example to base my work off of.
   - Miscellaneous
   - Numbers
   - Tables
-
-### Loop (Needs Lots of Work)
+- Loop
+  - Basic
   - Collecting
-  - Hash Tables
   - Miscellaneous
   - Ranges
-  - Sequences
+  - Tests
+  - Traversal
 
 ### CLOS (Needs Some Work)
-  - [Classes][classes]
-  - Generic Functions
-  - [Methods][methods]
-  - [Multiple Dispatch][multiple-dispatch]
-  - [Multiple Inheritance][inheritance]
-  - [Objects][objects]
-  - Slots
-  
+
+- [Classes][classes]
+- Generic Functions
+- [Methods][methods]
+- Metaobject Protocol (MOP)
+- [Multiple Dispatch][multiple-dispatch]
+- [Multiple Inheritance][inheritance]
+- [Objects][objects]
+- Slots
+
 ### Conditions & Restarts (Needs Some Work)
-  - Conditions
-  - Handlers
-  - Restarts
-  - Signalling
+
+- Conditions
+- Handlers
+- Restarts
+- Signalling
+
+### Macros (Needs Lots of Work)
+
+- Code as Data (`defmacro`, `` ` ``, `,`, `,@`)
+- Unique Symbols (`gensym`)
+- Reader Macros (`set-macro-character`, `#.` `#n=`, etc)
+
+### I/O
+
+- Printing
+- Reading
+
+### Sequences
+
+- [Arrays][array]
+- [Association Lists][map]
+- Circular Lists
+- [Lists][list]
+- Property Lists
+- [Strings][string]
+- Vectors
+
+### Numbers
+
+- Complex
+- [Floats][floating-point-number]
+- [Integers][integer]
+- Rationals
 
 ### Types
-  - [Booleans][bool]
-  - [Characters][char]
-  - [Hash Tables][hash-map]
-  - [Numbers][number]
-    - Complex
-    - [Floats][floating-point-number]
-    - [Integers][integer]
-    - Rationals
-  - Sequences
-    - [Arrays][arra]
-    - Conses
-      - [Association Lists][map]
-      - [Lists][list]
-      - Property Lists
-      - [set][set]
-      - Trees
-    - Vectors
-  - Streams
-  - [Strings][string]
-  - [Structures][struct]
 
-## Exercise Concepts
-We should put a table here that go into the specifics to teach for each
-concept. Also give the concepts nice names. I think we are using `.` for
-sub-concepts. So things like `format.numbers` or maybe
-`string-formatting.numbers`.
+- [Booleans][bool]
+- [Characters][char]
+- Cons
+- [Hash Tables][hash-map]
+- [Sets][set]
+- Streams
+- [Structures][struct]
+- Symbols
+- Trees
 
-[csharp-example]: ../../csharp/reference/README.md
+## Implemented Concept Exercises
+
+| Exercise           | Concepts                                     |
+| ------------------ | -------------------------------------------- |
+| [`basics`][basics] | `comments`, `expressions`, `cons`, `symbols` |
+
 [anonymous-functions]: ../../../reference/concepts/anonymous_functions.md
 [arithmetic]: ../../../reference/concepts/arithmetic.md
+[array]: ../../../reference/types/array.md
 [assignment]: ../../../reference/concepts/assignment.md
+[bool]: ../../../reference/types/boolean.md
+[char]: ../../../reference/types/char.md
+[classes]: ../../../reference/concepts/classes.md
 [comments]: ../../../reference/concepts/comments.md
 [conditionals]: ../../../reference/concepts/conditionals.md
 [constants]: ../../../reference/concepts/constants.md
+[csharp-example]: ../../csharp/reference/README.md
 [enumeration]: ../../../reference/concepts/enumeration.md
 [expressions]: ../../../reference/concepts/expressions.md
+[floating-point-number]: ../../../reference/types/floating_point_number.md
 [functions]: ../../../reference/concepts/functions.md
+[hash-map]: ../../../reference/types/hash_map.md
 [higher-order-functions]: ../../../reference/concepts/higher_order_functions.md
-[nested-functions]: ../../../reference/concepts/nested_functions.md
-[recursion]: ../../../reference/concepts/recursion.md
-[sameness]: ../../../reference/concepts/sameness.md
-[variables]: ../../../reference/concepts/variables.md
-[classes]: ../../../reference/concepts/classes.md
+[inheritance]: ../../../reference/concepts/inheritance.md
+[integer]: ../../../reference/types/integer.md
+[list]: ../../../reference/types/list.md
+[map]: ../../../reference/types/map.md
 [methods]: ../../../reference/concepts/methods.md
 [multiple-dispatch]: ../../../reference/concepts/multiple-dispatch.md
-[inheritance]: ../../../reference/concepts/inheritance.md
-[objects]: ../../../reference/concepts/objects.md
-[bool]: ../../../reference/types/boolean.md
-[char]: ../../../reference/types/char.md
-[hash-map]: ../../../reference/types/hash_map.md
+[nested-functions]: ../../../reference/concepts/nested_functions.md
 [number]: ../../../reference/types/number.md
-[floating-point-number]: ../../../reference/types/floating_point_number.md
-[integer]: ../../../reference/types/integer.md
-[array]: ../../../reference/types/array.md
-[map]: ../../../reference/types/map.md
-[list]: ../../../reference/types/list.md
+[objects]: ../../../reference/concepts/objects.md
+[recursion]: ../../../reference/concepts/recursion.md
+[sameness]: ../../../reference/concepts/sameness.md
 [set]: ../../../reference/types/set.md
 [string]: ../../../reference/types/string.md
 [struct]: ../../../reference/types/struct.md
+[truthy-and-falsy]: ../../../reference/concepts/truthy_and_falsy.md
+[variables]: ../../../reference/concepts/variables.md
+[concepts]: concepts.csv
+[basics]: ../exercises/concept/basics

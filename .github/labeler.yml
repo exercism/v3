@@ -1,10 +1,10 @@
-CI:
+type/ci:
   - .github/workflows/**/*
   - .github/actions/**/*
   - .github/**/*.yml
   - .github/**/*.json
 
-documentation:
+type/documentation:
   - docs/**/*
   - .github/ISSUE_TEMPLATE/**/*
   - languages/**/docs/**/*
@@ -54,6 +54,9 @@ track/go:
 track/haskell:
   - languages/haskell/**/*
 
+track/j:
+  - languages/j/**/*
+
 track/java:
   - languages/java/**/*
 
@@ -77,6 +80,9 @@ track/purescript:
 
 track/python:
   - languages/python/**/*
+
+track/r:
+  - languages/r/**/*
 
 track/raku:
   - languages/raku/**/*

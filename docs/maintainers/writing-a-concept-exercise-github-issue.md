@@ -2,12 +2,11 @@
 
 The GitHub issues we create for Concept Exercises need to contain quite a lot of information for an implementer to be able to work from.
 
-We have provided an [Issue Template](https://github.com/iHiD/v3/issues/new?assignees=&labels=type%2Fnew-exercise%2C+status%2Fhelp-wanted&template=implement-concept-exercise.md&title=%5B%3CLANG%3E%5D+Implement+new+concept+exercise%3A+%3CSLUG%3E) that needs to be filled in for each exercise. Part of that template requires an guide on how to implement the Concept Exercise for the specific track.
+We have provided an [Issue Template](https://github.com/iHiD/v3/issues/new?assignees=&labels=type%2Fnew-exercise%2C+status%2Fhelp-wanted&template=implement-concept-exercise.md&title=%5B%3CLANG%3E%5D+Implement+new+concept+exercise%3A+%3CSLUG%3E) that needs to be filled in for each exercise. Part of that template requires a guide on how to implement the Concept Exercise for the specific track.
 
 To help with that, each track should create a standard "Implementation Guide", which can be copy+pasted into the new issue. That file should be stored in `languages/$SLUG/reference/implementing-a-concept-exercise.md`
 
 To make this as straightforward as possible for you, we have provided:
 
-- [A sample C# issue](../../languages/csharp/reference/examples/new-concept-exercise-arrays.md) to give you an idea of how a finished issue should look.
-- [The C# implementation file](../../languages/csharp/reference/implementing-a-concept-exercise.md) to be clear on how this specific section should look
+- [The C# implementation file](../../languages/csharp/reference/implementing-a-concept-exercise.md) to be clear on how this specific section should look.
 - [A base file](./generic-how-to-implement-a-concept-exercise.md) for you to work from.

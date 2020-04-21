@@ -1,6 +1,18 @@
 # How to implement an F# concept exercise
 
-This document describes how to implement a concept exercise for the F# track. As this document is generic, the following placeholders are used:
+This document describes how to implement a concept exercise for the F# track.
+
+**Please please please read the docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time. So, before diving into the implementation, please read the following documents:
+
+- [The features of v3][docs-features-of-v3].
+- [Rationale for v3][docs-rationale-for-v3].
+- [What are concept exercise and how they are structured?][docs-concept-exercises]
+
+Please also watch the following video:
+
+- [The Anatomy of a Concept Exercise][anatomy-of-a-concept-exercise].
+
+As this document is generic, the following placeholders are used:
 
 - `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
 - `<NAME>`: the name of the exercise in PascalCase (e.g. `AnonymousMethods`).
@@ -19,7 +31,8 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   └── after.md (optional)
+                |   ├── source.md (required if there are third-party sources)
+                |   └── after.md
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
@@ -42,6 +55,13 @@ These files are specific to the F# track:
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 
+## Step 3: format code
+
+To format the exercise's code, follow these steps:
+
+- Open a command prompt in the `language/fsharp` directory.
+- Run `./format.ps1 <SLUG>`. This script will format the code using the [`fantomas` tool][fantomas].
+
 ## Inspiration
 
 When implementing an exericse, it can be very useful to check the exercise's [general concepts documents][reference] to see if other languages that have already implemented an exercise for that concept.
@@ -52,4 +72,9 @@ If you have any questions regarding implementing this exercise, please post them
 
 [concept-exercises]: ../exercises/concept/README.md
 [how-to-implement-a-concept-exercise]: ../../../docs/maintainers/generic-how-to-implement-a-concept-exercise.md
+[docs-concept-exercises]: ../../../docs/concept-exercises.md
+[docs-rationale-for-v3]: ../../../docs/rationale-for-v3.md
+[docs-features-of-v3]: ../../../docs/features-of-v3.md
+[anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
 [reference]: ../../../reference
+[fantomas]: https://github.com/fsprojects/fantomas

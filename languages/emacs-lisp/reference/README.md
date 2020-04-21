@@ -23,6 +23,20 @@ The core features a Emacs Lisp developer should know about are:
 
 #### Generic
 
+=======
+- Special forms
+- Atoms
+- Quote
+- S-expressions
+- [Evaluation][evaluation]
+- [Functions][functions]
+- [Variables][variables]
+- [Macros][macros]
+- Side-effects
+- Arguments
+
+### Types
+
 - [List][list]
 - [String][string]
 - [Number][number]
@@ -53,6 +67,11 @@ The core features a Emacs Lisp developer should know about are:
 - Process
 - Text
 
+
+[evaluation]: ../../../reference/concepts/evaluation.md
+[functions]: ../../../reference/concepts/functions.md
+[variables]: ../../../reference/concepts/variables.md
+[macros]: ../../../reference/concepts/macros.md
 [list]: ../../../reference/types/list.md
 [string]: ../../../reference/types/string.md
 [number]: ../../../reference/types/number.md
@@ -107,3 +126,4 @@ The core features a Emacs Lisp developer should know about are:
 [comments]: ../../../reference/concepts/comments.md
 [boolean_logic]: ../../../reference/concepts/boolean_logic.md
 [anonymous_functions]: ../../../reference/concepts/anonymous_functions.md
+=======

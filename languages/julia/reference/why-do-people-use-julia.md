@@ -6,6 +6,7 @@ The source for all information in this paragraph is the [Julia User & Developer 
 
 ### Most popular technical features
 
+<!-- prettier-ignore -->
 1. Speed, performance
 2. Ease of use
 3. Open source code is available and can be modified
@@ -16,6 +17,7 @@ The source for all information in this paragraph is the [Julia User & Developer 
 
 ### Biggest technical problems
 
+<!-- prettier-ignore -->
 2. It takes too long to generate the first plot<sup>2</sup>
 4. Slow compile times
 12. 1-based indexing
