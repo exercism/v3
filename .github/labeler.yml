@@ -1,10 +1,10 @@
-CI:
+type/ci:
   - .github/workflows/**/*
   - .github/actions/**/*
   - .github/**/*.yml
   - .github/**/*.json
 
-documentation:
+type/documentation:
   - docs/**/*
   - .github/ISSUE_TEMPLATE/**/*
   - languages/**/docs/**/*
