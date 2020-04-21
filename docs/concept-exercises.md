@@ -47,7 +47,7 @@ When designing Concept Exercises, please consider the following guidelines:
 
 ## Style Guidelines
 
-When writing documentation and supporting Markdown files for Concept Exercises, please consult the [style guide][style-guide] noting the [automatic formatting section][style-guide-auto-formatting]. Also check any language-specific style guides, where applicable.
+When writing documentation and supporting Markdown files for Concept Exercises, please consult the [style guide][style-guide] noting the [automatic formatting section][style-guide.md-auto-formatting]. Also check any language-specific style guides, where applicable.
 
 ## Exercise Structure
 
