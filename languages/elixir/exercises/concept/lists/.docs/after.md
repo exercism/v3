@@ -1,7 +1,7 @@
 ## Key Points
 
 - Lists are a basic data type.
-- Lists are implmented as a linked list.
+- Lists are implemented as a linked list.
 - List can be written in literal form or head-tail notation.
 
   ```elixir
