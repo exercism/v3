@@ -9,7 +9,7 @@ Use the built-in [(linked) list type][list].
 ### 2. Define a function to add a language to the list
 
 - You need to define a [named function][named-function] with 2 arguments.
-  - The first argument is a [list][list], a [list][list] of language [string-literals][string].
+  - The first argument is a [list][list] of language [string-literals][string].
   - The second argument is a language [string-literal][string].
 - You can use list literal notation forms.
 
