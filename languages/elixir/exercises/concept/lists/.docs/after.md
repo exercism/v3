@@ -30,4 +30,4 @@ list = [2, 1]
   - `tl/1` returns the _tail_ of the list -- the list _minus_ the _first_ item.
   - `length/1` returns the number items in the list.
   - `in/2` returns a boolean value whether the item is an element in the list.
-- They may contain any data-type and a mix of data-types
+- They may contain any data-type and a mix of data-types.
