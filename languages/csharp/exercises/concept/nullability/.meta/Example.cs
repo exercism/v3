@@ -8,17 +8,20 @@ public static class Badge
         return $"{idLabel}{name} - {department?.ToUpper() ?? "GUEST"}";
     }
 
-    public static string PrintLabel(string label, int maximumWidth)
+    public static string PrintLabel(string? prefix,
+                                    string label,
+                                    int maximumWidth)
     {
+        maximumWidth -= prefix?.Length ?? 0;
+
         var output = "";
         for (int i = 0; i < label.Length; i += maximumWidth)
         {
-            output += label.Substring(i,
-                                      Math.Min(
-                                               maximumWidth,
-                                               label.Length - i)) + "\n";
+            output += (prefix ?? "") +
+                label.Substring(i, Math.Min(maximumWidth,
+                                            label.Length - i)) + "\n";
         }
-        return output.Trim();
+        return output.TrimEnd();
     }
 
 }

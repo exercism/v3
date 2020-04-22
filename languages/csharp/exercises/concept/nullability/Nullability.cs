@@ -7,7 +7,9 @@ public static class Badge
         throw new NotImplementedException("Please implement the Badge.Label method");
     }
 
-    public static string PrintLabel(string label, int maximumWidth)
+    public static string PrintLabel(string? prefix,
+                                    string label,
+                                    int maximumWidth)
     {
         throw new NotImplementedException("Please implement the Badge.PrintLabel method");
     }

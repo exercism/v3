@@ -26,6 +26,7 @@ The following reference documentation may help you finishing this exercice:
    of a string?
 * Do all slices always have the same length? If not, how can you handle
    this case?
+* Do not forget the `prefix` should fit on the `maximumWidth`
 
 [null-keyword]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null
 [nullable-types-tutorial]: https://csharp.net-tutorials.com/data-types/nullable-types/

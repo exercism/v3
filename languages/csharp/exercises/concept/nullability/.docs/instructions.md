@@ -19,12 +19,19 @@ The ID and department name are optional. If someone does not have an
 ID, do not print this part of the label.  If someone has no
 department, just print `GUEST` as their department name.
 
-### 3. Convert the label text to fit on a badge with a given width
+### 3. Generate the actual text to be print on the badge
 
 Implement the `Badge.PrintLabel()` method to return an employee's
-badge label that can fit on a badge with a given width:
+badge label that can fit on a badge with a given width. An optional
+prefix may be added on the beginning of each line:
 
 ```csharp
-Badge.PrintLabel("[734] - Ernest Johnny Payne - STRATEGIC COMMUNICATION", 30);
-// => "[734] - Ernest Johnny Payne - \nSTRATEGIC COMMUNICATION"
+Badge.PrintLabel(" > ", "[734] - Ernest Johnny Payne - STRATEGIC COMMUNICATION", 30);
+// => " > [734] - Ernest Johnny Payne - \n> STRATEGIC COMMUNICATION"
+// 
+// => Printed label:
+//
+// > [734] - Ernest Johnny Payne - 
+// > STRATEGIC COMMUNICATION
+
 ```
