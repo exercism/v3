@@ -22,6 +22,12 @@
         "prerequisites": []
       },
       {
+        "slug": "classes",
+        "uuid": "e01dc85b-0731-4701-9eea-c78fb69ce543",
+        "concepts": ["classes"],
+        "prerequisites": ["accessibility"]
+      },
+      {
         "slug": "dates",
         "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
         "concepts": ["datetimes"],
