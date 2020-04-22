@@ -73,7 +73,7 @@ All C# code should be formatted using the [`dotnet format` tool][dotnet-format].
 
 #### 1. Using a GitHub comment
 
-If you add a comment to a GitHub PR that contains the text `/dotnet-format`, a GitHub workflow will format all C# documents in the PR using `dotnet format`. Any formatting changes made by `dotnet format` will automatically be committed to the PR's branch. This also works for forks that have [enabled maintainers to edit the fork's PR][allowing-fork-pr-changes].
+If you add a comment to a GitHub PR that contains the text `/dotnet-format`, a GitHub workflow will format all C# documents in the PR using `dotnet format`. Any formatting changes made by `dotnet format` will automatically be committed to the PR's branch. This also works for forks that have [enabled maintainers to edit the fork's PR][allowing-fork-pr-changes] (which is the default).
 
 #### 2. Using a script
 
