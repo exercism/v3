@@ -24,7 +24,7 @@ int[] threeIntsV2 = new[] { 4, 9, 7 };
 int[] threeIntsV3 = { 4, 9, 7 };
 ```
 
-Arrays can be manipulated by either calling an array's [methods][array-methods] or [properties][array-properties], or by using the methods defined in the [`Array` class][array-class].
+Arrays can be manipulated by either calling an array instance's [methods][array-methods] or [properties][array-properties], or by using the static methods defined in the [`Array` class][array-class].
 
 An array is also a _collection_, which means that you can iterate over all its values using a [`foreach` loop][foreach-statement]:
 
