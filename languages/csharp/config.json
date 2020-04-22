@@ -69,7 +69,6 @@
         "concepts": ["nullability"],
         "prerequisites": [
           "strings",
-          "basics",
           "exceptions",
           "for-loops",
           "memory-allocation"
