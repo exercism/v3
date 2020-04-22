@@ -11,7 +11,7 @@ public static class Badge
     public static string PrintLabel(string label, int maximumWidth)
     {
         var output = "";
-        for(int i=0;i<label.Length;i+=maximumWidth)
+        for (int i = 0; i < label.Length; i += maximumWidth)
         {
             output += label.Substring(i,
                                       Math.Min(
