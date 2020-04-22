@@ -76,23 +76,6 @@ foreach (char vowel in vowels)
 }
 ```
 
-If you want to stop iterating when using a `foreach` loop, the [`break` keyword][break-keyword] can be used:
-
-```csharp
-char[] vowels = new [] { 'a', 'e', 'i', 'o', 'u' }; // Size is 5
-
-foreach (char vowel in vowels)
-{
-    // Output the vowel
-    System.Console.Write(vowel);
-
-    if (vowel == 'i')
-        break;
-}
-
-// => aei
-```
-
 [implicitly-typed-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/implicitly-typed-arrays
 [array-foreach]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays
 [single-dimensional-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/single-dimensional-arrays
