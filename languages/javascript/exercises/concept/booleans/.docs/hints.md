@@ -1,7 +1,7 @@
 ### 1. Check if the 'Fast Attack' action is possible
 
 - The logical NOT operator (`!`) can be placed before an expression to negate its value.
-- If you'd like to dig deeper, you can check out [this article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) by the awesome folks over at [MDN](https://developer.mozilla.org/en-US/)
+- Check out [this MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Logical_NOT_!) on Logical Operators
 
 ### 2. Check if the 'Approach and Spy' action is possible
 
