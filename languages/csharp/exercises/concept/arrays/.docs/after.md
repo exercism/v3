@@ -18,13 +18,9 @@ twoInts.Length == 2; // => true
 Arrays can also be defined using a shortcut notation that allows you to both create the array and set its value. As the compiler can now tell how many elements the array will have, the length can be omitted:
 
 ```csharp
-// Assign and initialize (size is 3)
+// Three equivalent ways to declare and initialize an array (size is 3)
 int[] threeIntsV1 = new int[] { 4, 9, 7 };
-
-// Shorter notation (size is 3)
 int[] threeIntsV2 = new[] { 4, 9, 7 };
-
-// Shortest notation (size is 3)
 int[] threeIntsV3 = { 4, 9, 7 };
 ```
 
@@ -33,7 +29,7 @@ Arrays can be manipulated by either calling an array's [methods][array-methods] 
 An array is also a _collection_, which means that you can iterate over all its values using a [`foreach` loop][foreach-statement]:
 
 ```csharp
-char[] vowels = new [] { 'a', 'e', 'i', 'o', 'u' }; // Size is 5
+char[] vowels = new [] { 'a', 'e', 'i', 'o', 'u' };
 
 foreach (char vowel in vowels)
 {
