@@ -41,6 +41,8 @@ export function canSignalPrisoner(archerIsAwake, prisonerIsAwake) {
  * @param {boolean} archerIsAwake
  * @param {boolean} prisonerIsAwake
  * @param {boolean} petDogIsPresent
+ * 
+ * @returns {boolean} Whether or not you can free Annalyn's buddy.
  */
 export function canFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent) {
   throw new Error('Implement the canFreePrisoner function')
