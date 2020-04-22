@@ -8,5 +8,4 @@ module DiscriminatedUnions
 
 // TODO: please define the 'Activity' discriminated union type
 
-let rateActivity (activity: Activity): Approval =
-    failwith "Please implement the 'rateActivity' function"
+let rateActivity (activity: Activity): Approval = failwith "Please implement the 'rateActivity' function"

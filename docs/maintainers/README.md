@@ -46,7 +46,7 @@ The website supports flowcharts rendered by [mermaid](https://mermaid-js.github.
 
 Please refer to the [mermaid documentation](https://mermaid-js.github.io/mermaid/#/flowchart) for detailed instructions. The Julia track's [progression planning document](./../../languages/julia/reference/progression.md) can also be used as a reference.
 
-These will only be rendered on the [repo website](https://exercism.github.io/v3) or in a markdown editor that supports mermaid rendering, e.g. [Typora](https://www.typora.io/). See [website.md](./website.md) for instructions to run the website locally. 
+These will only be rendered on the [repo website](https://exercism.github.io/v3) or in a markdown editor that supports mermaid rendering, e.g. [Typora](https://www.typora.io/). See [website.md](./website.md) for instructions to run the website locally.
 
 ### Read more
 

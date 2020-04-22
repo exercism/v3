@@ -1,0 +1,58 @@
+name: 'Format C# code'
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  format:
+    name: 'Format C# code'
+    runs-on: ubuntu-latest
+    if: github.event.issue.pull_request != '' && (contains(github.event.comment.body, '/format-csharp') || contains(github.event.comment.body, '/dotnet-format'))
+    steps:
+      - name: 'Checkout code'
+        run: |
+          PR_DATA="/tmp/pr.json"
+
+          jq -r ".issue.pull_request.url" "$GITHUB_EVENT_PATH" | \
+            xargs curl --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' -o "$PR_DATA" --url
+
+          HEAD_REF=$(jq -r ".head.ref" "$PR_DATA")
+          HEAD_REPO=$(jq -r '.head.repo.clone_url | sub("https://"; "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@")' "$PR_DATA")
+
+          git clone $HEAD_REPO .
+          git checkout -b "$HEAD_REF" "origin/$HEAD_REF"
+
+      - name: 'Install .NET core'
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1.201'
+
+      - name: 'Install dotnet format tool'
+        run: dotnet tool install -g dotnet-format
+
+      - name: 'Format C# code'
+        run: |
+          # Use dotnet format to format the added or modified C# files in the PR (if any)
+          jq -r '.issue.pull_request.url | . += "/files"' "$GITHUB_EVENT_PATH" | \
+            xargs curl --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' --url | \
+            jq -r -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match("\\.cs$")) | .filename' | \
+            paste -s -d, - | \
+            xargs dotnet format -f . --files
+
+      - name: 'Commit formatted C# code'
+        run: |
+          # Check if there is nothing to commit (i.e. no formatting changes made)
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Code is already formatted correctly"
+            exit 0
+          fi
+
+          # Setup the git user (required to commit anything)
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+          # Commit the changes made by dotnet format
+          git add .
+          git commit -m "[CI] Format C# code"
+          git push
