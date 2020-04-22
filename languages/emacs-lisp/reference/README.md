@@ -23,8 +23,6 @@ The core features a Emacs Lisp developer should know about are:
 
 #### Generic
 
-=======
-
 - Special forms
 - Atoms
 - Quote
@@ -124,5 +122,4 @@ The core features a Emacs Lisp developer should know about are:
 [conditionals]: ../../../reference/concepts/conditionals.md
 [comments]: ../../../reference/concepts/comments.md
 [boolean_logic]: ../../../reference/concepts/boolean_logic.md
-
-# [anonymous_functions]: ../../../reference/concepts/anonymous_functions.md
+[anonymous_functions]: ../../../reference/concepts/anonymous_functions.md
