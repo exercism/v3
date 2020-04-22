@@ -14,17 +14,27 @@ raising warnings. You can use [the operator
 a nullable variable is not null, but the compiler cannot detect
 it.
 
-At run time, calling any method or property on a
-`null` value throws a `NullReferenceException` exception.
-That is why it is important to always check if a nullable variable
-is `null` before calling methods on its value.
-
-We can use [the operators `??` and
+We can also use [the operators `??` and
 `??=`][null-coalescing-operator] to provide a default value for a
 nullable variable and [the operator `?.`][null-conditional-operator]
 to chain accesses to methods, properties or attributes of potentially
 `null` objects on an expression that evaluates to `null` instead of
 throwing a `NullReferenceException`.
+
+```csharp
+string? userName = null;                  // declares `userName` as a nullable string
+Console.WriteLine(userName?.Length);      // prints: "null", since `userName` is `null`
+Console.WriteLine(userName ?? "default"); // prints: "default", since `userName` is `null`
+    
+userName ??= "unknownUser";               // sets `userName` to "unknownUser" since its
+                                          // value was null
+Console.WriteLine(userName!.Length);      // prints "11" and avoids a compiler warning
+```
+
+At run time, calling any method or property on a
+`null` value throws a `NullReferenceException` exception.
+That is why it is important to always check if a nullable variable
+is `null` before calling methods on its value.
 
 # Important changes in C# 8.0
 
