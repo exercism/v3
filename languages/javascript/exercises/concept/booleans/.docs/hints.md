@@ -11,4 +11,4 @@
 ### 3. Check if the 'Signal Prisoner' action is possible
 
 - Logical operators in the order of their precedence (from highest to lowest): `!`, `&&`, `||`.
-- If you'd like to dig deeper, you can check out [this article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) by the awesome folks over at [MDN](https://developer.mozilla.org/en-US/)
+-Check out [this MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Precedence_And_Associativity) on Operator Precedence
