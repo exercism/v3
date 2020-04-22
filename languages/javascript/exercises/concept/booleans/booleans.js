@@ -1,3 +1,10 @@
+/**
+ * If the knight is sleeping, then the fast attack is not available.
+ *
+ * @param {boolean} knightIsAwake
+ * 
+ * @return {boolean} Whether or not you can execute a fast attack.
+ */
 export function canExecuteFastAttack(knightIsAwake) {
   throw new Error('Implement the canExecuteFastAttack function')
 }
