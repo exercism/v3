@@ -10,7 +10,7 @@ export function canExecuteFastAttack(knightIsAwake) {
 }
 
 /**
- * You can only spy if someone is awake; you wouldn't want to go through all the trouble just to find out nothing's going to happen, would you?
+ * A useful spy captures information, which they can't do if everyone's asleep.
  *
  * @param {boolean} knightIsAwake
  * @param {boolean} archerIsAwake
@@ -23,7 +23,7 @@ export function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
 }
 
 /**
- * If you signal to the prisoner while the archer is awake, the archer will catch you! However, the prisoner also has to be awake for them to receive your signal!
+ * You'll get caught by the archer if you signal while they're awake.
  *
  * @param {boolean} archerIsAwake
  * @param {boolean} prisonerIsAwake
@@ -35,6 +35,8 @@ export function canSignalPrisoner(archerIsAwake, prisonerIsAwake) {
 }
 
 /**
+ * The final stage in the plan: freeing Annalyn's best friend.
+ * 
  * @param {boolean} knightIsAwake
  * @param {boolean} archerIsAwake
  * @param {boolean} prisonerIsAwake
