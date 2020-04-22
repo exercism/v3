@@ -51,7 +51,9 @@ When writing documentation and supporting Markdown files for Concept Exercises, 
 
 ## Exercise-specific files
 
-An exercise has the following files. In the browser they will show at the relevant times. When used via the CLI, the `introduction.md` and `instructions.md` will be concatenated along with the track's `cli.md` document into a `README.md` file, which will sit alongside a `HINTS.md` file.
+The purpose of the exercise-specific files is explained both in this document and in the [Anatomy of a Concept Exercise video][anatomy-of-a-concept-exercise-video].
+
+In the browser, these files will show at the relevant times. When used via the CLI, the `introduction.md` and `instructions.md` will be concatenated along with the track's `cli.md` document into a `README.md` file, which will sit alongside a `HINTS.md` file.
 
 ### `.docs/introduction.md`
 
@@ -220,3 +222,4 @@ See [this example config.json file][config.json].
 [config.json]: ../languages/csharp/config.json
 [style-guide]: ./maintainers/style-guide.md
 [style-guide-auto-formatting]: maintainers/style-guide.md#auto-formatting
+[anatomy-of-a-concept-exercise-video]: https://www.youtube.com/watch?v=gkbBqd7hPrA
