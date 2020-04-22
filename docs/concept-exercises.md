@@ -49,9 +49,9 @@ When designing Concept Exercises, please consider the following guidelines:
 
 When writing documentation and supporting Markdown files for Concept Exercises, please consult the [style guide][style-guide] noting the [automatic formatting section][style-guide-auto-formatting]. Also check any language-specific style guides, where applicable.
 
-## Exercise Structure
+## Exercise-specific files
 
-An exercise has the following files. In the browser they will show at the relevant times. When used via the CLI, the introduction and instructions will be concatenated along with the track's CLI instructions into a README.md, which will sit alongside a HINTS.md.
+An exercise has the following files. In the browser they will show at the relevant times. When used via the CLI, the `introduction.md` and `instructions.md` will be concatenated along with the track's `cli.md` document into a `README.md` file, which will sit alongside a `HINTS.md` file.
 
 ### `.docs/introduction.md`
 
@@ -65,7 +65,7 @@ An exercise has the following files. In the browser they will show at the releva
 
 As an example, the introduction to a "strings" exercise might describe a string as just a "Sequence of Unicode characters" or a "series of bytes", tell the users how to create a string, and explain that a string has methods that can be used to manipulate it. Unless the student needs to understand more nuanced details in order to solve the exercise, this type of brief explanation (along with an example of its syntax) should be sufficient information for the student to solve the exercise.
 
-See [this example introduction.md file][introduction.md]. Notice how the introduction is very minimal, but that the language-specific keywords are enclosed in quotes and an example of the newly introduced syntax is included.
+See [this example introduction.md file][docs-introduction.md]. Notice how the introduction is very minimal, but that the language-specific keywords are enclosed in quotes and an example of the newly introduced syntax is included.
 
 ### `.docs/instructions.md`
 
@@ -82,7 +82,7 @@ Each task must conform to the following standard:
 - Describe which function/method the student needs to define/implement (e.g. `Implement method X(...) that takes an A and returns a Z`),
 - Provide an example usage of that function in code. These examples should be different to those given in the tests.
 
-See [this example instructions.md file][instructions.md]. Notice the clear distinction between the story at the top and the tasks with code samples below.
+See [this example instructions.md file][docs-instructions.md]. Notice the clear distinction between the story at the top and the tasks with code samples below.
 
 ### `.docs/hints.md`
 
@@ -97,7 +97,7 @@ See [this example instructions.md file][instructions.md]. Notice the clear disti
 
 Viewing hints will not be a "recommended" path and we will (softly) discourage using it unless the student can't progress without it. As such, it's worth considering that the student reading it will be a little confused/overwhelmed and maybe frustrated.
 
-See [this example hints.md file][hints.md]. Notice how there are general and task-specific hints and how the hints don't give away the answer but instead link to (external) resources.
+See [this example hints.md file][docs-hints.md]. Notice how there are general and task-specific hints and how the hints don't give away the answer but instead link to (external) resources.
 
 ### `.docs/after.md`
 
@@ -105,7 +105,7 @@ See [this example hints.md file][hints.md]. Notice how there are general and tas
 
 Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
 
-See [this example after.md file][after.md].
+See [this example after.md file][docs-after.md].
 
 ### `.docs/source.md` (required if there are third-party sources)
 
@@ -113,7 +113,7 @@ See [this example after.md file][after.md].
 
 This file contains third-party references and sources of the exercise. Only required if there are any such sources, but not if the exercise was completely designed from scratch for Exercism.
 
-See [this example source.md file][source.md].
+See [this example source.md file][meta-source.md].
 
 ### `.meta/design.md`
 
@@ -123,7 +123,7 @@ This file contains information on the exercise's design, which includes things l
 
 It exists in order to inform future maintainers or contributors about the scope and limitations of an exercise, to avoid the natural trend towards making exercises more complex over time.
 
-See [this example design.md file][design.md].
+See [this example design.md file][meta-design.md].
 
 ### `.meta/config.json`
 
@@ -136,7 +136,7 @@ This file contains meta information on the exercise:
 - Which exercise it was forked from (required if the exercise is forked)
 - Language version requirements (optional)
 
-See [this example config.json file][config.json].
+See [this example config.json file][meta-config.json].
 
 #### Example
 
@@ -182,27 +182,41 @@ Note that:
 - If you are forking an exercise, do not reference original authors or contributors. Just ensure that `forked_from` is correct.
 - `language_versions` is a free-form string that tracks are free to use and interpret as they like.
 
-## Track Structure
+## Track-specific files
 
 ### `exercises/shared/.docs/cli.md`
 
+**Purpose:** Explain how to use the Exercism CLI to work with an exercise.
+
 This file contains information on how to work with the exercise when using the CLI to download and submit the exercise.
 
-See [this example cli.md file][cli.md].
+See [this example cli.md file][shared-docs-cli.md].
 
 ### `exercises/shared/.docs/debug.md`
 
+**Purpose:** Describe the track's in-browser debug options.
+
 This file explains how a student that is coding in the browser can still do "debugging."
 
-See [this example debug.md file][debug.md].
+See [this example debug.md file][shared-docs-debug.md].
 
-[cli.md]: ../languages/csharp/exercises/shared/.docs/cli.md
-[debug.md]: ../languages/csharp/exercises/shared/.docs/debug.md
-[after.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md
-[hints.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/hints.md
-[introduction.md]: ../languages/csharp/exercises/concept/strings/.docs/introduction.md
-[instructions.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
-[config.json]: ../languages/fsharp/exercises/concept/booleans/.meta/config.json
-[source.md]: ../languages/julia/exercises/concept/multiple-dispatch/.docs/source.md
+### `config.json`
+
+**Purpose:** Contains meta information on the track.
+
+This file contains track-specific metadata, such as its editor settings but most importantly its exercises.
+
+See [this example config.json file][config.json].
+
+[docs-after.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md
+[docs-hints.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/hints.md
+[docs-introduction.md]: ../languages/csharp/exercises/concept/strings/.docs/introduction.md
+[docs-instructions.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
+[meta-config.json]: ../languages/fsharp/exercises/concept/booleans/.meta/config.json
+[meta-source.md]: ../languages/julia/exercises/concept/multiple-dispatch/.docs/source.md
+[meta-design.md]: ../languages/fsharp/exercises/concept/booleans/.meta/design.md
+[shared-docs-cli.md]: ../languages/csharp/exercises/shared/.docs/cli.md
+[shared-docs-debug.md]: ../languages/csharp/exercises/shared/.docs/debug.md
+[config.json]: ../languages/csharp/config.json
 [style-guide]: ./maintainers/style-guide.md
 [style-guide-auto-formatting]: maintainers/style-guide.md#auto-formatting
