@@ -47,7 +47,7 @@ When designing Concept Exercises, please consider the following guidelines:
 
 ## Style Guidelines
 
-When writing documentation and supporting Markdown files for Concept Exercises, please consult the [style guide][style-guide] (and any language-specific style guides if applicable).
+When writing documentation and supporting Markdown files for Concept Exercises, please consult the [style guide][style-guide] noting the [automatic formatting section][style-guide-auto-formatting]. Also check any language-specific style guides, where applicable.
 
 ## Exercise Structure
 
@@ -205,3 +205,4 @@ See [this example debug.md file][debug.md].
 [config.json]: ../languages/fsharp/exercises/concept/booleans/.meta/config.json
 [source.md]: ../languages/julia/exercises/concept/multiple-dispatch/.docs/source.md
 [style-guide]: ./maintainers/style-guide.md
+[style-guide-auto-formatting]: maintainers/style-guide.md#auto-formatting

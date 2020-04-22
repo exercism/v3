@@ -95,6 +95,38 @@ A quick way to distinguish between the two cases when it's unclear - if this is 
 
 Please consult each language's docs folder for more information on the preferred style conventions for that language. All exercises of a language should use a consistent coding style.
 
+## Auto formatting
+
+We're using [prettier][prettier] to ensure that Markdown documents are consistently formatted. This gives us the following benefits:
+
+- No formatting discussions.
+- Great editor/IDE integration so files can be formatted on save.
+- Easy to add CI checks for formatting.
+- Easy to automatically format files using a script.
+
+All the above will greatly help reduce churn in reviews, whch is frustrating for both the reviewer and the reviewee.
+
+### Using prettier to format Markdown documents
+
+There are a couple of ways in which you can format Markdown documents using prettier:
+
+#### 1. Using editor integration
+
+Prettier can be integrated with many [editors][prettier-editor]. This works especially well if the editor supports automatic formatting on save.
+
+#### 2. Using a GitHub comment
+
+If you add a comment to a GitHub PR that contains the text `/format`, a GitHub workflow will format all Markdown documents in the PR using prettier. Any formatting changes made by prettier will automatically be committed to the PR's branch. This also works for forks that have [enabled maintainers to edit the fork's PR][allowing-fork-pr-changes].
+
+#### 3. Using a script
+
+Open a command prompt at the root of the repository and then run:
+
+- On \*NIX and MacOS: `./bin/format.sh <path-to-file-to-format>`
+- On Windows: `.\bin\format.cmd <path-to-file-to-format>`
+
+Note: this requires [Node.js][nodejs] to be installed on your machine.
+
 ## Miscellaneous
 
 - Use the [UUID Generator][uuid-gen] to generate consistently formatted UUIDs for `config.json` files.
@@ -103,3 +135,8 @@ Please consult each language's docs folder for more information on the preferred
 [google-search-link]: https://google.com
 [comparison-of-american-british-english]: https://en.wikipedia.org/wiki/Comparison_of_American_and_British_English
 [language-identifiers]: https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
+[prettier]: https://prettier.io/
+[prettier-cli]: https://prettier.io/docs/en/cli.html
+[prettier-editor]: https://prettier.io/docs/en/editors.html
+[nodejs]: https://nodejs.org/en/
+[allowing-fork-pr-changes]: https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork
