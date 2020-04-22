@@ -69,7 +69,7 @@ Skip this step if you're not sure what to do.
 
 ## Step 5: format code
 
-All C# code should be formatted using the [`dotnet format` tool][dotnet-format]. There are three ways to format your C# code:
+All C# code should be formatted using the [`dotnet format` tool][dotnet-format]. There are two ways to format your C# code:
 
 #### 1. Using a GitHub comment
 
