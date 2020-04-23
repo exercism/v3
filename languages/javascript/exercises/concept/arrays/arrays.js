@@ -21,6 +21,16 @@ export function setItem(array, index, newCard) {
 
 /**
  * @param {number[]} array
+ * @param {number} newCard
+ * 
+ * @returns {number[]}
+ */
+export function insertItemFromTop(array, newCard) {
+  throw new Error('Implement the insertItemFromTop function');
+}
+
+/**
+ * @param {number[]} array
  * @param {number} index
  * 
  * @returns {number[]}
@@ -37,6 +47,26 @@ export function removeItem(array, index) {
 export function removeItemFromTop(array) {
   throw new Error('Implement the removeItemFromTop function');
 }
+
+/**
+ * @param {number[]} array
+ * @param {number} newCard
+ * 
+ * @returns {number[]}
+ */
+export function insertItemFromBottom(array, newCard) {
+  throw new Error('Implement the insertItemFromBottom function');
+}
+
+/**
+ * @param {number[]} array
+ * 
+ * @returns {number[]}
+ */
+export function removeItemFromBottom(array) {
+  throw new Error('Implement the removeItemFromBottom function');
+}
+
 
 /**
  * @param {number[]} array

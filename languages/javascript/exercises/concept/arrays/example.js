@@ -7,17 +7,9 @@ export function setItem(array, index, newValue) {
   return array;
 }
 
-export function prefilledArray(value, length) {
-  if (length < 1) {
-    return [];
-  }
-
-  const prefilledArray = [];
-  for (let i = 0; i < length; i++) {
-    prefilledArray.push(value);
-  }
-
-  return prefilledArray;
+export function insertItemFromTop(array, newCard) {
+  array.push(newCard)
+  return array
 }
 
 export function removeItem(array, index) {
@@ -27,6 +19,15 @@ export function removeItem(array, index) {
 
 export function removeItemFromTop(array) {
   array.pop();
+  return array;
+}
+
+export function insertItemFromBottom(array, newCard) {
+  return [newCard, ...array];
+}
+
+export function removeItemFromBottom(array) {
+  array.shift();
   return array;
 }
 
