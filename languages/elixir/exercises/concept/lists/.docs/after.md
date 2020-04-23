@@ -19,7 +19,7 @@
   [1 | [2, 3]]
   ```
 
-- Head-tail notation can be used to append items to a list
+- Head-tail notation can be used to append items to a list.
 
   ```elixir
   list = [2, 1]
@@ -39,7 +39,7 @@
   list = [1, :a, 2.0, "string"]
   ```
 
-- [string][string] literals are a sequence of characters surrounded by double quotes
+- [String][string] literals are a sequence of characters surrounded by double quotes.
 
   ```elixir
   string = "this is a string! 1, 2, 3!"
