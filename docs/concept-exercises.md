@@ -186,6 +186,45 @@ Note that:
 
 ## Track-specific files
 
+**Purpose:** Implement the exercise.
+
+What these files look like depends on your track. At a minimum, the following track-specific files must be created:
+
+### Stub implementation file
+
+**Purpose:** Provide a starting point for students.
+
+- Design the stub such that a student will know where to add code.
+- Define stubs for any syntax that is not introduced in the exercise. For most exercises, this means defining stub function/methods.
+- For compiled languages, consider having compilable code, as compiler messages can sometimes be hard to grasp for students new to the language.
+- The code should be as simple as possible.
+- Only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
+
+For more information, watch [this video][video-stub-file] and check [this example stub file][stub-file].
+
+### Tests file
+
+**Purpose:** Verify a solution's correctness.
+
+- The tests should not use the examples from the `instructions.md` file.
+- The code should be as simple as possible.
+- Only use language features introduced by the exercise's prerequisites (and their prerequisites, and so on).
+- All but the first test should be skipped by default. How this is done differs between languages.
+
+For more information, watch [this video][video-tests-file] and check [this example tests file][tests-file].
+
+### Example implementation file
+
+**Purpose:** Provide an idiomatic implementation that passes all the tests.
+
+- The implementation must be _idiomatic_.
+- The code should be as simple as possible.
+- Only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
+
+For more information, watch [this video][video-example-file] and check [this example file][example-file].
+
+## Shared files
+
 ### `exercises/shared/.docs/cli.md`
 
 **Purpose:** Explain how to use the Exercism CLI to work with an exercise.
@@ -229,3 +268,9 @@ See [this example config.json file][config.json].
 [video-docs-after.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=596
 [video-meta-design.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=870
 [video-meta-config.json]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1037
+[video-stub-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1171
+[video-tests-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1255
+[video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
+[stub-file]: ../languages/csharp/exercises/concept/strings/Strings.cs
+[tests-file]: ../languages/csharp/exercises/concept/strings/StringsTests.cs
+[example-file]: ../languages/csharp/exercises/concept/strings/.meta/Example.cs

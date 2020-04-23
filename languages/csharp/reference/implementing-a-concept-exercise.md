@@ -44,18 +44,18 @@ languages
 
 ## Step 1: adding track-specific files
 
-The track-specific files should be designed to help the student learn the exercise's concepts. The following C#-specific files must be created (not necessarily in this order):
+The track-specific files should be designed to help the student learn the exercise's concepts. For all
+
+The following C#-specific files must be created (not necessarily in this order):
 
 ### Create `<NAME>.cs` file
 
 **Purpose:** Provide a stub implementation.
 
-- The stub code implementation should compile. The only exception is for syntax that we want a student to define themselves, like class, enum or property syntax. In this case, insert a descriptive TODO comment instead of providing stub code (see [this example][todo]).
+- The stub implementation's code should compile. The only exception is for exercises that introduce syntax we _want_ a student to define themselves, like how to define a class or property. In this case, insert a descriptive TODO comment instead of providing stub code (see [this example][todo]).
 - Stub methods should throw a `NotImplementedException` which message contains the method to implement (see [this example][not-implemented]).
-- The code should be as simple as possible.
-- Only use language features introduced by the exercise's prerequisites (and their prerequisites, and so on).
 
-For more information, [watch this video][video-stub-file] and check [this example stub file][stub-file].
+For more information, please read [this in-depth description][stub-file], [watch this video][video-stub-file] and check [this example stub file][example-stub-file].
 
 ### Create `<NAME>Tests.cs` file
 
@@ -64,27 +64,20 @@ For more information, [watch this video][video-stub-file] and check [this exampl
 - [xUnit][xunit] is used as the test framework.
 - Only use `Fact` tests; don't use `Theory` tests.
 - All but the first test should be skipped by default (check [this example][skip-fact]).
-- The tests should not use the examples from the `instructions.md` file.
-- The code should be as simple as possible.
-- Only use language features introduced by the exercise's prerequisites (and their prerequisites, and so on).
 
-For more information, [watch this video][video-tests-file] and check [this example tests file][tests-file].
+For more information, please read [this in-depth description][tests-file], [watch this video][video-tests-file] and check [this example tests file][example-tests-file].
 
 ### Create `<NAME>.csproj` file
 
 **Purpose:** The project file required to build the project and run the tests.
 
-For more information, check [this example project file][project-file].
+For more information, check [this example project file][example-project-file].
 
 ### Create `.meta/Example.cs` file
 
 **Purpose:** The idiomatic example implementation that passes all the tests.
 
-- The implementation must be _idiomatic_.
-- The code should be as simple as possible.
-- Only use language features introduced by the exercise's prerequisites (and their prerequisites, and so on).
-
-For more information, [watch this video][video-example-file] and check [this example file][example-file].
+For more information, please read [this in-depth description][example-file], [watch this video][video-example-file] and check [this example file][example-example-file].
 
 ## Step 2: adding common files
 
@@ -146,11 +139,21 @@ If you have any questions regarding implementing the exercise, please post them 
 [video-stub-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1171
 [video-tests-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1255
 [video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
-[stub-file]: ../exercises/concept/strings/Strings.cs
-[tests-file]: ../exercises/concept/strings/StringsTests.cs
-[example-file]: ../exercises/concept/strings/.meta/Example.cs
-[project-file]: ../exercises/concept/strings/Strings.csproj
+[example-stub-file]: ../exercises/concept/strings/Strings.cs
+[example-tests-file]: ../exercises/concept/strings/StringsTests.cs
+[example-example-file]: ../exercises/concept/strings/.meta/Example.cs
+[example-project-file]: ../exercises/concept/strings/Strings.csproj
 [skip-fact]: ../exercises/concept/strings/StringsTests.cs#L11
 [xunit]: https://xunit.net/
 [not-implemented]: ../exercises/concept/strings/Strings.cs#L5
 [todo]: ../exercises/concept/basics/Basics.cs
+[stub-file]: ../../../docs/concept-exercises.md#stub-implementation-file
+[tests-file]: ../../../docs/concept-exercises.md#tests-file
+[example-file]: ../../../docs/concept-exercises.md#example-implementation-file
+[video-stub-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1171
+[video-tests-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1255
+[video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
+[example-stub-file]: ../languages/csharp/exercises/concept/strings/Strings.cs
+[example-tests-file]: ../languages/csharp/exercises/concept/strings/StringsTests.cs
+[example-example-file]: ../languages/csharp/exercises/concept/strings/.meta/Example.cs
+[example-project-file]: ../exercises/concept/strings/Strings.csproj

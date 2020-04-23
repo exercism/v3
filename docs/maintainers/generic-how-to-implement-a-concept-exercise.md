@@ -86,18 +86,6 @@ For more information, please read [this in-depth description][meta-design.md], w
 
 For more information, please read [this in-depth description][meta-design.md], watch [this video][video-meta-config.json] and check [this example file][example-meta-design.md].
 
-## Create track-specific files
-
-**Purpose:** Implement the exercise.
-
-At a minimum, the following track-specific files must be created:
-
-- A stub implementation file.
-- A file containing the test suite.
-- An example implementation file that passes all the tests.
-
-What these files look like depends on your track. Some tracks might also require additional files.
-
 ## Update `languages/<TRACK>/config.json`
 
 **Purpose:** Contains meta information on the track. Please read [this section][config.json] for more information.
