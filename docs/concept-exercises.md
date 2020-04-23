@@ -188,7 +188,7 @@ Note that:
 
 **Purpose:** Implement the exercise.
 
-What these files look like depends on your track. At a minimum, the following track-specific files must be created:
+What these files look like depends on your track. At a minimum, the following track-specific files must be added:
 
 ### Stub implementation file
 

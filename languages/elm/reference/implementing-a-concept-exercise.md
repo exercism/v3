@@ -46,7 +46,7 @@ languages
 
 ## Step 1: Add code files
 
-The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following Elm code files must be created (not necessarily in this order):
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following Elm code files must be added (not necessarily in this order):
 
 - An `elm.json` file.
 - A stub implementation file (`src/<NAME>.elm`).

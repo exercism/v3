@@ -16,7 +16,7 @@ As this document is generic, `<NAME>` will be use as the placeholder for the nam
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue. Having done this, please read the [Ruby concept exercises introduction][concept-exercises].
 
-To implement a concept exercise, the following files must be created:
+To implement a concept exercise, the following files must be added:
 
 <pre>
 languages
@@ -40,7 +40,7 @@ languages
 
 ## Step 1: Add code files
 
-The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following Ruby code files must be created (not necessarily in this order):
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following Ruby code files must be added (not necessarily in this order):
 
 - `<NAME>.rb`. the stub implementation file, which is the starting point for students to work on the exercise.
 - `<NAME>_test.rb`: the test suite.

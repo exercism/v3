@@ -19,7 +19,7 @@ As this document is generic, the following placeholders are used:
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue.
 
-To implement a concept exercise, the following files must be created:
+To implement a concept exercise, the following files must be added:
 
 <pre>
 languages
@@ -46,7 +46,7 @@ languages
 
 ## Step 1: Add code files
 
-The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following C code files must be created (not necessarily in this order):
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following C code files must be added (not necessarily in this order):
 
 - `makefile`: the makefile for the stub files and tests
 - `<NAME>{.c|.h}`: the stub source and header implementation files, which are the starting point for students to work on the exercise.

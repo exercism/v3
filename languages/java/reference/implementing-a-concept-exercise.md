@@ -24,7 +24,7 @@ As this document is generic, the following placeholders are used:
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue. Having done this, please read the [Java Concept exercises introduction][concept-exercises]. If you have come up with something completely new, create a new issue _first_ so we can discuss the Concept Exercise.
 
-To implement a Concept Exercise, the following files must be created:
+To implement a Concept Exercise, the following files must be added:
 
 <pre>
 languages
