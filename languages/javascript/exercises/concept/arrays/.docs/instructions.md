@@ -24,17 +24,6 @@ setItem([1, 2, 4, 1], index, newCard)
 // => [1, 2, 6, 1]
 ```
 
-### 3. Create a stack of cards
-
-Create a stack of given `length` and fill it with cards of the given `value`.
-
-```javascript
-const value = 8
-const length = 3
-prefilledSlice(value, length)
-// => [8, 8, 8]
-```
-
 ### 4. Remove a card from the stack
 
 Remove the card at position `index` from the stack and return the stack.
