@@ -44,31 +44,31 @@ The following files need to be created and updated:
 
 **Purpose:** Introduce the concept(s) that the exercise teaches to the student.
 
-For more information, please read [this in-depth description][docs-introduction.md], watch [this video][anatomy-of-a-concept-exercise-video] and check [this example file][example-docs-introduction.md].
+For more information, please read [this in-depth description][docs-introduction.md], watch [this video][video-docs-introduction.md] and check [this example file][example-docs-introduction.md].
 
 ## Create `.docs/instructions.md` file
 
 **Purpose:** Provide instructions for the exercise.
 
-For more information, please read [this in-depth description][docs-instructions.md], watch [this video][anatomy-of-a-concept-exercise-video] and check [this example file][example-docs-instructions.md].
+For more information, please read [this in-depth description][docs-instructions.md], watch [this video][video-docs-instructions.md] and check [this example file][example-docs-instructions.md].
 
 ## Create `.docs/hints.md` file
 
 **Purpose:** Provide hints to a student to help them get themselves unstuck in an exercise.
 
-For more information, please read [this in-depth description][docs-hints.md], watch [this video][anatomy-of-a-concept-exercise-video] and check [this example file][example-docs-hints.md].
+For more information, please read [this in-depth description][docs-hints.md], watch [this video][video-docs-hints.md] and check [this example file][example-docs-hints.md].
 
 ## Create `.docs/after.md` file
 
 **Purpose:** Provide more information about the concept(s) for a student to learn from.
 
-For more information, please read [this in-depth description][docs-after.md], watch [this video][anatomy-of-a-concept-exercise-video] and check [this example file][example-docs-after.md].
+For more information, please read [this in-depth description][docs-after.md], watch [this video][video-docs-after.md] and check [this example file][example-docs-after.md].
 
 ## Create `.docs/source.md` file (required if there are third-party sources)
 
 **Purpose:** Describe the third-party source(s) of the exercise.
 
-For more information, please read [this in-depth description][docs-source.md], watch [this video][anatomy-of-a-concept-exercise-video] and check [this example file][example-docs-source.md].
+For more information, please read [this in-depth description][docs-source.md] and check [this example file][example-docs-source.md].
 
 _Skip this step if there aren't any third-party sources._
 
@@ -76,13 +76,13 @@ _Skip this step if there aren't any third-party sources._
 
 **Purpose:** Contains meta information on the exercise.
 
-For more information, please read [this in-depth description][meta-design.md], watch [this video][anatomy-of-a-concept-exercise-video] and check [this example file][example-meta-design.md].
+For more information, please read [this in-depth description][meta-design.md], watch [this video][video-meta-config.json] and check [this example file][example-meta-design.md].
 
 ## Create `.meta/design.md` file
 
 **Purpose:** Describe the design of the exercise.
 
-For more information, please read [this in-depth description][meta-design.md], watch [this video][anatomy-of-a-concept-exercise-video] and check [this example file][example-meta-design.md].
+For more information, please read [this in-depth description][meta-design.md], watch [this video][video-meta-design.md] and check [this example file][example-meta-design.md].
 
 ## Create track-specific files
 
@@ -171,4 +171,9 @@ If you have any questions regarding implementing this exercise, please post them
 [example-meta-config.json]: ../../languages/csharp/exercises/concept/flag-enums/.meta/config.json
 [example-config.json]: ../../languages/csharp/config.json
 [example-reference-document-implementations]: ../..//reference/types/string.md#exercises
-[anatomy-of-a-concept-exercise-video]: https://www.youtube.com/watch?v=gkbBqd7hPrA
+[video-docs-introduction.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=77
+[video-docs-instructions.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=309
+[video-docs-hints.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=482
+[video-docs-after.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=596
+[video-meta-design.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=870
+[video-meta-config.json]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1037

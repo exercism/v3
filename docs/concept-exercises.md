@@ -67,7 +67,7 @@ In the browser, these files will show at the relevant times. When used via the C
 
 As an example, the introduction to a "strings" exercise might describe a string as just a "Sequence of Unicode characters" or a "series of bytes", tell the users how to create a string, and explain that a string has methods that can be used to manipulate it. Unless the student needs to understand more nuanced details in order to solve the exercise, this type of brief explanation (along with an example of its syntax) should be sufficient information for the student to solve the exercise.
 
-See [this example introduction.md file][docs-introduction.md]. Notice how the introduction is very minimal, but that the language-specific keywords are enclosed in quotes and an example of the newly introduced syntax is included.
+For more information, watch [this video][video-docs-introduction.md] and check [this example introduction.md file][docs-introduction.md]. Notice how the example file's introduction is very minimal, but that the language-specific keywords are enclosed in quotes and an example of the newly introduced syntax is included.
 
 ### `.docs/instructions.md`
 
@@ -84,7 +84,7 @@ Each task must conform to the following standard:
 - Describe which function/method the student needs to define/implement (e.g. `Implement method X(...) that takes an A and returns a Z`),
 - Provide an example usage of that function in code. These examples should be different to those given in the tests.
 
-See [this example instructions.md file][docs-instructions.md]. Notice the clear distinction between the story at the top and the tasks with code samples below.
+For more information, watch [this video][video-docs-instructions.md] and check [this example instructions.md file][docs-instructions.md]. Notice how the example file has a clear distinction between the story at the top and the tasks with code samples below.
 
 ### `.docs/hints.md`
 
@@ -99,7 +99,7 @@ See [this example instructions.md file][docs-instructions.md]. Notice the clear 
 
 Viewing hints will not be a "recommended" path and we will (softly) discourage using it unless the student can't progress without it. As such, it's worth considering that the student reading it will be a little confused/overwhelmed and maybe frustrated.
 
-See [this example hints.md file][docs-hints.md]. Notice how there are general and task-specific hints and how the hints don't give away the answer but instead link to (external) resources.
+For more information, watch [this video][video-docs-hints.md] and check [this example hints.md file][docs-hints.md]. Notice how the example file has general and task-specific hints and how the hints don't give away the answer but instead link to (external) resources.
 
 ### `.docs/after.md`
 
@@ -107,7 +107,7 @@ See [this example hints.md file][docs-hints.md]. Notice how there are general an
 
 Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
 
-See [this example after.md file][docs-after.md].
+For more information, watch [this video][video-docs-after.md] and check [this example after.md file][docs-after.md].
 
 ### `.docs/source.md` (required if there are third-party sources)
 
@@ -115,7 +115,7 @@ See [this example after.md file][docs-after.md].
 
 This file contains third-party references and sources of the exercise. Only required if there are any such sources, but not if the exercise was completely designed from scratch for Exercism.
 
-See [this example source.md file][meta-source.md].
+For more information, check [this example source.md file][meta-source.md].
 
 ### `.meta/design.md`
 
@@ -125,7 +125,7 @@ This file contains information on the exercise's design, which includes things l
 
 It exists in order to inform future maintainers or contributors about the scope and limitations of an exercise, to avoid the natural trend towards making exercises more complex over time.
 
-See [this example design.md file][meta-design.md].
+For more information, watch [this video][video-meta-design.md] and check [this example design.md file][meta-design.md].
 
 ### `.meta/config.json`
 
@@ -138,7 +138,7 @@ This file contains meta information on the exercise:
 - Which exercise it was forked from (required if the exercise is forked)
 - Language version requirements (optional)
 
-See [this example config.json file][meta-config.json].
+For more information, watch [this video][video-meta-config.json] and check [this example config.json file][meta-config.json].
 
 #### Example
 
@@ -223,3 +223,9 @@ See [this example config.json file][config.json].
 [style-guide]: ./maintainers/style-guide.md
 [style-guide-auto-formatting]: maintainers/style-guide.md#auto-formatting
 [anatomy-of-a-concept-exercise-video]: https://www.youtube.com/watch?v=gkbBqd7hPrA
+[video-docs-introduction.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=77
+[video-docs-instructions.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=309
+[video-docs-hints.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=482
+[video-docs-after.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=596
+[video-meta-design.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=870
+[video-meta-config.json]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1037
