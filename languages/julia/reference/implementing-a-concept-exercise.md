@@ -59,10 +59,6 @@ Run `julia color=yes runtests.jl $slug` in the `/languages/julia/` directory to 
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 
-## Step 3: adding the exercise to the general concept document
-
-Add the exercise to the [concept's shared document's][reference] `## Implementations` section.
-
 ## Inspiration
 
 When implementing an exercise, it can be very useful to look at already implemented Julia exercises like the [multiple-dispatch][concept-exercise-multiple-dispatch] exercise. You can also check the exercise's [general concepts documents][reference] to see if other languages have already implemented an exercise for that concept.
@@ -78,4 +74,3 @@ If you have any questions regarding implementing the exercise, please post them 
 [docs-features-of-v3]: ../../../docs/features-of-v3.md
 [anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
 [concept-exercise-strings]: ../exercises/concept/multiple-dispatch
-[reference]: ../../../reference

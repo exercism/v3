@@ -48,7 +48,7 @@ The following labels are used to categorize [issues in the v3 repository][github
 - [type/ci][github-issues-type-ci]: Everything related to Continuous Integration.
 - [type/discussion][github-issues-type-discussion]: Discussion regarding v3.
 - [type/documentation][github-issues-type-documentation]: Improvements or additions to documentation.
-- [type/analyzer-extension][github-issues-type-analyzer-extension]: Add analyzer support for a new (Concept) exercise.
+- [type/analyzer-extension][github-issues-type-analyzer-extension]: update analyzer support for a new (Concept) exercise.
 - [status/help-wanted][github-issues-status-help-wanted]: Extra attention is needed
 - [status/in-progress][github-issues-status-in-progress]: This issue is being worked on
 - [status/draft][github-issues-status-draft]: This issue or pull request is a draft, and not ready for review/merge.

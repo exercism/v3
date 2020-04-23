@@ -55,7 +55,11 @@ These files are specific to the F# track:
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 
-## Step 3: format code
+## Step 3: update list of implemented exercises
+
+- Add the exercise to the [list of implemented exercises][implemented-exercises].
+
+## Step 4: format code
 
 To format the exercise's code, follow these steps:
 
@@ -64,7 +68,7 @@ To format the exercise's code, follow these steps:
 
 ## Inspiration
 
-When implementing an exericse, it can be very useful to check the exercise's [general concepts documents][reference] to see if other languages that have already implemented an exercise for that concept.
+When implementing an exericse, it can be very useful to look at already-implemented F# exercises like the [numbers][concept-exercise-numbers] or [strings][concept-exercise-strings] exercise. You can also check the exercise's [general concepts documents][reference] to see if other languages that have already implemented an exercise for that concept.
 
 ## Help
 
@@ -78,3 +82,6 @@ If you have any questions regarding implementing this exercise, please post them
 [anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
 [reference]: ../../../reference
 [fantomas]: https://github.com/fsprojects/fantomas
+[implemented-exercises]: ../exercises/concept/README.md#implemented-exercises
+[concept-exercise-numbers]: ../exercises/concept/numbers
+[concept-exercise-strings]: ../exercises/concept/strings

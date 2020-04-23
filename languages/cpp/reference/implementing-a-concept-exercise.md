@@ -73,7 +73,7 @@ When implementing this exercise, it can be very useful to look at [already imple
 If you have any questions regarding implementing the exercise, please post them as comments in the exercise's GitHub issue.
 
 [example-after-md]: https://github.com/exercism/v3/blob/master/languages/cpp/exercises/concept/strings/.docs/after.md
-[implemented-exercises]: https://github.com/exercism/v3/blob/master/languages/cpp/exercises/concept/README.md
+[implemented-exercises]: https://github.com/exercism/v3/blob/master/languages/cpp/exercises/concept/README.md#implemented-exercises
 [meta-design]: https://github.com/exercism/v3/blob/master/languages/cpp/exercises/concept/strings/.meta/design.md
 [meta-config-json]: https://github.com/exercism/v3/blob/master/languages/cpp/exercises/concept/strings/.meta/config.json
 [docs-concept-exercises]: ../../../docs/concept-exercises.md
