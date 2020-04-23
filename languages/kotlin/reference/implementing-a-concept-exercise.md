@@ -57,7 +57,7 @@ languages
                 └── gradlew.bat
 </pre>
 
-## Step 1: adding code files
+## Step 1: Add code files
 
 The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following Kotlin code files must be created (not necessarily in this order):
 
@@ -67,11 +67,11 @@ The code files are track-specific and should be designed to help the student lea
 
 What these files look like depends on your track. Note that some tracks might require more files in addition to the three files just mentioned.
 
-## Step 2: adding documentation files
+## Step 2: Add documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 
-## Step 3: add analyzer (optional)
+## Step 3: Add analyzer (optional)
 
 ```diff
 ! WIP ignore this for now as we don't have proper analyzer yet
@@ -81,7 +81,7 @@ Some exercises could benefit from having an exercise-specific analyzer. If so, p
 
 _Skip this step if you're not sure what to do._
 
-## Step 4: add representation (optional)
+## Step 4: Add representation (optional)
 
 ```diff
 ! WIP ignore this for now as we don't have proper analyzer yet

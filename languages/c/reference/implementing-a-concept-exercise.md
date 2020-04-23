@@ -44,7 +44,7 @@ languages
                 └── test-framework
 </pre>
 
-## Step 1: adding code files
+## Step 1: Add code files
 
 The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following C code files must be created (not necessarily in this order):
 
@@ -54,7 +54,7 @@ The code files are track-specific and should be designed to help the student lea
 - `test-framework`: this directory contains the unit test framework, [Unity][unity]
 - `.meta/example{.c|.h}`: an example implementation that passes all the unit tests.
 
-## Step 2: adding documentation files
+## Step 2: Add documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 
