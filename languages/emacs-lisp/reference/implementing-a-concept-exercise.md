@@ -12,7 +12,7 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   └── after.md (optional)
+                |   └── after.md
                 ├── .meta
                 |   |── design.md
                 |   └── Example.el

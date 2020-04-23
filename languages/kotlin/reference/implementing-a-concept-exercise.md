@@ -128,7 +128,7 @@ Some exercises could benefit from having an exercise-specific analyzer. If so, p
 
 Skip this step if you're not sure what to do.
 
-## Step 8: custom representation (optional)
+## Step 8: update representer (optional)
 
 ```diff
 ! WIP ignore this for now as we don't have proper analyzer yet

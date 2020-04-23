@@ -40,7 +40,7 @@ languages
 
 The following files need to be created and updated:
 
-### Create `.docs/introduction.md` file
+## Create `.docs/introduction.md` file
 
 **Purpose:** Introduce the concept(s) that the exercise teaches to the student.
 
@@ -69,6 +69,8 @@ For more information, please read [this in-depth description][docs-after.md], wa
 **Purpose:** Describe the third-party source(s) of the exercise.
 
 For more information, please read [this in-depth description][docs-source.md], watch [this video][anatomy-of-a-concept-exercise-video] and check [this example file][example-docs-source.md].
+
+_Skip this step if there aren't any third-party sources._
 
 ## Create `.meta/config.json` file
 

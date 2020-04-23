@@ -56,7 +56,7 @@ How to create the files common to all tracks is described in the [how to impleme
 
 //TODO
 
-## Step 4: custom representation (optional)
+## Step 4: update representer (optional)
 
 //TODO
 

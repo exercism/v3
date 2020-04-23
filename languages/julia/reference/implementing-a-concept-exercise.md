@@ -31,8 +31,8 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   ├── source.md (required if there are third-party sources)
-                |   └── after.md
+                |   ├── after.md
+                |   └── source.md (required if there are third-party sources)
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
