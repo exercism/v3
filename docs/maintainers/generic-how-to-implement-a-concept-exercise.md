@@ -19,7 +19,7 @@ As this document is generic, the following placeholders are used:
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue.
 
-Any concept exercise in any v3 track requires the following files to be created:
+Any concept exercise in any v3 track requires at least the following files to be created:
 
 <pre>
 languages
@@ -28,7 +28,7 @@ languages
         └── concept
             └── &lt;SLUG&gt;
                 ├── .docs
-                |   ├── after
+                |   ├── after.md
                 |   ├── hints.md
                 |   ├── instructions.md
                 |   ├── introduction.md
@@ -37,6 +37,8 @@ languages
                     ├── config.json
                     └── design.md
 </pre>
+
+All Markdown files should adhere to the [style guide][style-guide], noting the [automatic formatting section][style-guide-auto-formatting]. Also check any language-specific style guides, where applicable.
 
 The following files need to be created and updated:
 
@@ -72,17 +74,17 @@ For more information, please read [this in-depth description][docs-source.md] an
 
 _Skip this step if there aren't any third-party sources._
 
-## Create `.meta/config.json` file
-
-**Purpose:** Contains meta information on the exercise.
-
-For more information, please read [this in-depth description][meta-design.md], watch [this video][video-meta-config.json] and check [this example file][example-meta-design.md].
-
 ## Create `.meta/design.md` file
 
 **Purpose:** Describe the design of the exercise.
 
 For more information, please read [this in-depth description][meta-design.md], watch [this video][video-meta-design.md] and check [this example file][example-meta-design.md].
+
+## Create `.meta/config.json` file
+
+**Purpose:** Contains meta information on the exercise.
+
+For more information, please read [this in-depth description][meta-design.md], watch [this video][video-meta-config.json] and check [this example file][example-meta-design.md].
 
 ## Create track-specific files
 
@@ -119,7 +121,7 @@ An entry should be added to the track's `config.json` file for the new concept e
 }
 ```
 
-For more information, please read [this in-depth description][config.json], watch [this video][anatomy-of-a-concept-exercise-video] and check [this example file][example-config.json].
+For more information, please read [this in-depth description][config.json] and check [this example file][example-config.json].
 
 ## Update reference document(s) (if the reference document(s) exists)
 
@@ -177,3 +179,5 @@ If you have any questions regarding implementing this exercise, please post them
 [video-docs-after.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=596
 [video-meta-design.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=870
 [video-meta-config.json]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1037
+[style-guide]: ./maintainers/style-guide.md
+[style-guide-auto-formatting]: maintainers/style-guide.md#auto-formatting
