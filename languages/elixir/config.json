@@ -26,6 +26,12 @@
         "uuid": "b26a2f11-d80a-42b9-881a-3575a83ad211",
         "concepts": ["conditionals", "atoms"],
         "prerequisites": ["booleans"]
+      },
+      {
+        "slug": "lists",
+        "uuid": "3c53b340-680e-45c1-8979-3d79b441a65e",
+        "concepts": ["lists", "string-literals"],
+        "prerequisites": ["booleans"]
       }
     ],
     "practice": []
