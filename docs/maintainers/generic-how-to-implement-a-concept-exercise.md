@@ -169,6 +169,6 @@ If you have any questions regarding implementing this exercise, please post them
 [video-docs-after.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=596
 [video-meta-design.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=870
 [video-meta-config.json]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1037
-[style-guide]: ./maintainers/style-guide.md
+[style-guide]: ./style-guide.md
 [style-guide-auto-formatting]: ./style-guide.md#auto-formatting
 [determining-concepts-naming]: ./determining-concepts.md#naming-concepts

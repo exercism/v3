@@ -260,7 +260,7 @@ See [this example config.json file][config.json].
 [shared-docs-debug.md]: ../languages/csharp/exercises/shared/.docs/debug.md
 [config.json]: ../languages/csharp/config.json
 [style-guide]: ./maintainers/style-guide.md
-[style-guide-auto-formatting]: maintainers/style-guide.md#auto-formatting
+[style-guide-auto-formatting]: ./maintainers/style-guide.md#auto-formatting
 [anatomy-of-a-concept-exercise-video]: https://www.youtube.com/watch?v=gkbBqd7hPrA
 [video-docs-introduction.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=77
 [video-docs-instructions.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=309
