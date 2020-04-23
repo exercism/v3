@@ -245,7 +245,7 @@ See [this example debug.md file][shared-docs-debug.md].
 
 **Purpose:** Contains meta information on the track.
 
-This file contains track-specific metadata, such as its editor settings but most importantly its exercises.
+This file contains track-specific metadata, such as its editor settings but most importantly its exercises. It is an evolution of the v2's `config.json` format, and we have a [guide on how to migrate to the v3 format][migrating-your-config-json-files].
 
 For each exercise:
 
@@ -281,3 +281,4 @@ See [this example config.json file][config.json].
 [tests-file]: ../languages/csharp/exercises/concept/strings/StringsTests.cs
 [example-file]: ../languages/csharp/exercises/concept/strings/.meta/Example.cs
 [determining-concepts-naming]: ./determining-concepts.md#naming-concepts
+[migrating-your-config-json-files]: ./maintainers/migrating-your-config-json-files.md
