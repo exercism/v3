@@ -28,11 +28,11 @@ languages
         └── concept
             └── &lt;SLUG&gt;
                 ├── .docs
+                |   ├── after.md
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   ├── source.md (required if there are third-party sources)
-                |   └── after.md
+                |   └── source.md (required if there are third-party sources)
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
