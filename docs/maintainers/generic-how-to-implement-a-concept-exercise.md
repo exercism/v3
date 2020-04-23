@@ -41,33 +41,33 @@ languages
 
 All Markdown files should adhere to the [style guide][style-guide], noting the [automatic formatting section][style-guide-auto-formatting]. Also check any language-specific style guides, where applicable.
 
-The following files need to be created and updated:
+The following files need to be added and updated:
 
-## Create `.docs/introduction.md` file
+## Add`.docs/introduction.md` file
 
 **Purpose:** Introduce the concept(s) that the exercise teaches to the student.
 
 For more information, please read [this in-depth description][docs-introduction.md], watch [this video][video-docs-introduction.md] and check [this example file][example-docs-introduction.md].
 
-## Create `.docs/instructions.md` file
+## Add`.docs/instructions.md` file
 
 **Purpose:** Provide instructions for the exercise.
 
 For more information, please read [this in-depth description][docs-instructions.md], watch [this video][video-docs-instructions.md] and check [this example file][example-docs-instructions.md].
 
-## Create `.docs/hints.md` file
+## Add`.docs/hints.md` file
 
 **Purpose:** Provide hints to a student to help them get themselves unstuck in an exercise.
 
 For more information, please read [this in-depth description][docs-hints.md], watch [this video][video-docs-hints.md] and check [this example file][example-docs-hints.md].
 
-## Create `.docs/after.md` file
+## Add`.docs/after.md` file
 
 **Purpose:** Provide more information about the concept(s) for a student to learn from.
 
 For more information, please read [this in-depth description][docs-after.md], watch [this video][video-docs-after.md] and check [this example file][example-docs-after.md].
 
-## Create `.docs/source.md` file (required if there are third-party sources)
+## Add`.docs/source.md` file (required if there are third-party sources)
 
 **Purpose:** Describe the third-party source(s) of the exercise.
 
@@ -75,13 +75,13 @@ For more information, please read [this in-depth description][docs-source.md] an
 
 _Skip this step if there aren't any third-party sources._
 
-## Create `.meta/design.md` file
+## Add`.meta/design.md` file
 
 **Purpose:** Describe the design of the exercise.
 
 For more information, please read [this in-depth description][meta-design.md], watch [this video][video-meta-design.md] and check [this example file][example-meta-design.md].
 
-## Create `.meta/config.json` file
+## Add`.meta/config.json` file
 
 **Purpose:** Contains meta information on the exercise.
 
