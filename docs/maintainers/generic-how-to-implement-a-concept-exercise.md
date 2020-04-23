@@ -16,6 +16,7 @@ As this document is generic, the following placeholders are used:
 
 - `<LANG>`: the name of the track in kebab-case (e.g. `ruby`).
 - `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
+- `<UUID>`: the exercise's unique UUID.
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue.
 
@@ -109,7 +110,8 @@ An entry should be added to the track's `config.json` file for the new concept e
 }
 ```
 
-Concepts (and prerequisites) must adhere to [these naming rules][determining-concepts-naming].
+- Concepts (and prerequisites) must adhere to [these naming rules][determining-concepts-naming].
+- The UUID can be randomly generated using the [UUID Generator][uuid-gen].
 
 For more information, please read [this in-depth description][config.json] and check [this example file][example-config.json].
 
@@ -172,3 +174,4 @@ If you have any questions regarding implementing this exercise, please post them
 [style-guide]: ./style-guide.md
 [style-guide-auto-formatting]: ./style-guide.md#auto-formatting
 [determining-concepts-naming]: ./determining-concepts.md#naming-concepts
+[uuid-gen]: https://www.uuidgenerator.net/version4

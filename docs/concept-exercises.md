@@ -247,6 +247,12 @@ See [this example debug.md file][shared-docs-debug.md].
 
 This file contains track-specific metadata, such as its editor settings but most importantly its exercises.
 
+For each exercise:
+
+- The UUID must be unique.
+- The slug is a kebab-case version of the exercise name (e.g. `anonymous-methods`).
+- The concepts (and prerequisites) must adhere to [these naming rules][determining-concepts-naming].
+
 See [this example config.json file][config.json].
 
 [docs-after.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md
@@ -274,3 +280,4 @@ See [this example config.json file][config.json].
 [stub-file]: ../languages/csharp/exercises/concept/strings/Strings.cs
 [tests-file]: ../languages/csharp/exercises/concept/strings/StringsTests.cs
 [example-file]: ../languages/csharp/exercises/concept/strings/.meta/Example.cs
+[determining-concepts-naming]: ./determining-concepts.md#naming-concepts
