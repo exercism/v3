@@ -170,5 +170,5 @@ If you have any questions regarding implementing this exercise, please post them
 [video-meta-design.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=870
 [video-meta-config.json]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1037
 [style-guide]: ./maintainers/style-guide.md
-[style-guide-auto-formatting]: ./maintainers/style-guide.md#auto-formatting
-[determining-concepts-naming]: ./maintainers/determining-concepts.md#naming-concepts
+[style-guide-auto-formatting]: ./style-guide.md#auto-formatting
+[determining-concepts-naming]: ./determining-concepts.md#naming-concepts
