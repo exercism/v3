@@ -52,7 +52,7 @@ The following labels are used to categorize [issues in the v3 repository][github
 - [status/help-wanted][github-issues-status-help-wanted]: Extra attention is needed
 - [status/in-progress][github-issues-status-in-progress]: This issue is being worked on
 - [status/draft][github-issues-status-draft]: This issue or pull request is a draft, and not ready for review/merge.
-- [status/wontfix][github-issues-status-wontfix]: This issue or pull request is out of scope and will not be fixed. 
+- [status/wontfix][github-issues-status-wontfix]: This issue or pull request is out of scope and will not be fixed.
 - [about/v3-roadmap][github-issues-type-v3-roadmap]: Everything related to the v3 roadmap.
 - [good-first-issue][github-issues-type-good-first-issue]: Marks an issue as good for newcomers.
 
