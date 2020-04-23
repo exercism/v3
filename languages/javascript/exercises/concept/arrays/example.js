@@ -23,7 +23,8 @@ export function removeItemFromTop(array) {
 }
 
 export function insertItemFromBottom(array, newCard) {
-  return [newCard, ...array];
+  array.unshift(newCard);
+  return array;
 }
 
 export function removeItemFromBottom(array) {

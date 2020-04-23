@@ -124,9 +124,9 @@ describe('arrays', () => {
       [[9, 8, 7, 1, 4], 6, false],
     ];
 
-    checkLengthOfStackTestCases.forEach(([array, stackLength, expected]) => {
-      test(`checkLengthOfStack([${array}], ${stackLength})`, () => {
-        expect(checkLengthOfStack(array, stackLength)).toBe(expected);
+    checkLengthOfStackTestCases.forEach(([array, stackSize, expected]) => {
+      test(`checkLengthOfStack([${array}], ${stackSize})`, () => {
+        expect(checkLengthOfStack(array, stackSize)).toBe(expected);
       });
     });
   });
