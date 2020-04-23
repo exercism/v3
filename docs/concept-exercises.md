@@ -51,7 +51,7 @@ When writing documentation and supporting Markdown files for Concept Exercises, 
 
 ## Documentation files
 
-The purpose of the exercise-specific files is explained both in this document and in the [Anatomy of a Concept Exercise video][anatomy-of-a-concept-exercise-video].
+The purpose of the documentation files is explained both in this document and in the [Anatomy of a Concept Exercise video][anatomy-of-a-concept-exercise-video].
 
 In the browser, these files will show at the relevant times. When used via the CLI, the `introduction.md` and `instructions.md` will be concatenated along with the track's `cli.md` document into a `README.md` file, which will sit alongside a `HINTS.md` file.
 
