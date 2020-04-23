@@ -121,6 +121,8 @@ An entry should be added to the track's `config.json` file for the new concept e
 }
 ```
 
+Concepts (and prerequisites) must adhere to [these naming rules][determining-concepts-naming].
+
 For more information, please read [this in-depth description][config.json] and check [this example file][example-config.json].
 
 ## Update reference document(s) (if the reference document(s) exists)
@@ -180,4 +182,5 @@ If you have any questions regarding implementing this exercise, please post them
 [video-meta-design.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=870
 [video-meta-config.json]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1037
 [style-guide]: ./maintainers/style-guide.md
-[style-guide-auto-formatting]: maintainers/style-guide.md#auto-formatting
+[style-guide-auto-formatting]: ./maintainers/style-guide.md#auto-formatting
+[determining-concepts-naming]: ./maintainers/determining-concepts.md#naming-concepts
