@@ -44,12 +44,47 @@ languages
 
 ## Step 1: adding track-specific files
 
-These files are specific to the C# track:
+The track-specific files should be designed to help the student learn the exercise's concepts. The following C#-specific files must be created (not necessarily in this order):
 
-- `<NAME>.cs`. the stub implementation file, which is the starting point for students to work on the exercise.
-- `<NAME>.csproj`: the C# project file.
-- `<NAME>Tests.cs`: the test suite.
-- `.meta/Example.cs`: an example implementation that passes all the tests.
+### Create `<NAME>.cs` file
+
+**Purpose:** Provide a stub implementation.
+
+- The stub code implementation should compile. The only exception is for syntax that we want a student to define themselves, like class, enum or property syntax. In this case, insert a descriptive TODO comment instead of providing stub code (see [this example][todo]).
+- Stub methods should throw a `NotImplementedException` which message contains the method to implement (see [this example][not-implemented]).
+- The code should be as simple as possible.
+- Only use language features introduced by the exercise's prerequisites (and their prerequisites, and so on).
+
+For more information, [watch this video][video-stub-file] and check [this example stub file][stub-file].
+
+### Create `<NAME>Tests.cs` file
+
+**Purpose:** The test suite to verify a solution's correctness.
+
+- [xUnit][xunit] is used as the test framework.
+- Only use `Fact` tests; don't use `Theory` tests.
+- All but the first test should be skipped by default (check [this example][skip-fact]).
+- The tests should not use the examples from the `instructions.md` file.
+- The code should be as simple as possible.
+- Only use language features introduced by the exercise's prerequisites (and their prerequisites, and so on).
+
+For more information, [watch this video][video-tests-file] and check [this example tests file][tests-file].
+
+### Create `<NAME>.csproj` file
+
+**Purpose:** The project file required to build the project and run the tests.
+
+For more information, check [this example project file][project-file].
+
+### Create `.meta/Example.cs` file
+
+**Purpose:** The idiomatic example implementation that passes all the tests.
+
+- The implementation must be _idiomatic_.
+- The code should be as simple as possible.
+- Only use language features introduced by the exercise's prerequisites (and their prerequisites, and so on).
+
+For more information, [watch this video][video-example-file] and check [this example file][example-file].
 
 ## Step 2: adding common files
 
@@ -108,3 +143,14 @@ If you have any questions regarding implementing the exercise, please post them 
 [dotnet-format]: https://github.com/dotnet/format
 [allowing-fork-pr-changes]: https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork
 [implemented-exercises]: ../exercises/concept/README.md#implemented-exercises
+[video-stub-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1171
+[video-tests-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1255
+[video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
+[stub-file]: ../exercises/concept/strings/Strings.cs
+[tests-file]: ../exercises/concept/strings/StringsTests.cs
+[example-file]: ../exercises/concept/strings/.meta/Example.cs
+[project-file]: ../exercises/concept/strings/Strings.csproj
+[skip-fact]: ../exercises/concept/strings/StringsTests.cs#L11
+[xunit]: https://xunit.net/
+[not-implemented]: ../exercises/concept/strings/Strings.cs#L5
+[todo]: ../exercises/concept/basics/Basics.cs
