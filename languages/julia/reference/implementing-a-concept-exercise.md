@@ -18,7 +18,7 @@ As this document is generic, the following placeholders are used:
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue. Having done this, please read the [Julia concept exercises introduction][concept-exercises].
 
-To implement a concept exercise, the following files must be created:
+To implement a concept exercise, the following files must be added:
 
 ```
 languages
@@ -31,8 +31,8 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   ├── source.md (required if there are third-party sources)
-                |   └── after.md
+                |   ├── after.md
+                |   └── source.md (required if there are third-party sources)
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
@@ -43,9 +43,9 @@ languages
                 └── Manifest.toml (optional)
 ```
 
-## Step 1: adding track-specific files
+## Step 1: Add code files
 
-These files are specific to the Julia track:
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following Julia code files must be added (not necessarily in this order):
 
 - `$slug.jl`: the stub implementation file, which is the starting point for students to work on the exercise.
 - `runtests.jl`: the test suite.
@@ -55,13 +55,9 @@ These files are specific to the Julia track:
 
 Run `julia color=yes runtests.jl $slug` in the `/languages/julia/` directory to test the example solution.
 
-## Step 2: adding common files
+## Step 2: Add documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
-
-## Step 3: adding the exercise to the general concept document
-
-Add the exercise to the [concept's shared document's][reference] `## Implementations` section.
 
 ## Inspiration
 
@@ -78,4 +74,3 @@ If you have any questions regarding implementing the exercise, please post them 
 [docs-features-of-v3]: ../../../docs/features-of-v3.md
 [anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
 [concept-exercise-strings]: ../exercises/concept/multiple-dispatch
-[reference]: ../../../reference

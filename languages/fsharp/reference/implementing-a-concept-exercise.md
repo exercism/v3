@@ -19,7 +19,7 @@ As this document is generic, the following placeholders are used:
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue. Having done this, please read the [F# concept exercises introduction][concept-exercises].
 
-To implement a concept exercise, the following files must be created:
+To implement a concept exercise, the following files must be added:
 
 <pre>
 languages
@@ -42,20 +42,24 @@ languages
                 └── &lt;NAME&gt;Tests.fs
 </pre>
 
-## Step 1: adding track-specific files
+## Step 1: Add code files
 
-These files are specific to the F# track:
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following F# code files must be added (not necessarily in this order):
 
 - `<NAME>.fs`. the stub implementation file, which is the starting point for students to work on the exercise.
 - `<NAME>.fsproj`: the F# project file.
 - `<NAME>Tests.fs`: the test suite.
 - `.meta/Example.fs`: an example implementation that passes all the tests. The project file should _not_ include this file.
 
-## Step 2: adding common files
+## Step 2: Add documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 
-## Step 3: format code
+## Step 3: Update list of implemented exercises
+
+- Add the exercise to the [list of implemented exercises][implemented-exercises].
+
+## Step 4: format code
 
 To format the exercise's code, follow these steps:
 
@@ -64,7 +68,7 @@ To format the exercise's code, follow these steps:
 
 ## Inspiration
 
-When implementing an exericse, it can be very useful to check the exercise's [general concepts documents][reference] to see if other languages that have already implemented an exercise for that concept.
+When implementing an exericse, it can be very useful to look at already-implemented F# exercises like the [numbers][concept-exercise-numbers] or [strings][concept-exercise-strings] exercise. You can also check the exercise's [general concepts documents][reference] to see if other languages that have already implemented an exercise for that concept.
 
 ## Help
 
@@ -78,3 +82,6 @@ If you have any questions regarding implementing this exercise, please post them
 [anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
 [reference]: ../../../reference
 [fantomas]: https://github.com/fsprojects/fantomas
+[implemented-exercises]: ../exercises/concept/README.md#implemented-exercises
+[concept-exercise-numbers]: ../exercises/concept/numbers
+[concept-exercise-strings]: ../exercises/concept/strings
