@@ -43,31 +43,31 @@ All Markdown files should adhere to the [style guide][style-guide], noting the [
 
 The following files need to be added and updated:
 
-## Add`.docs/introduction.md` file
+## Add `.docs/introduction.md` file
 
 **Purpose:** Introduce the concept(s) that the exercise teaches to the student.
 
 For more information, please read [this in-depth description][docs-introduction.md], watch [this video][video-docs-introduction.md] and check [this example file][example-docs-introduction.md].
 
-## Add`.docs/instructions.md` file
+## Add `.docs/instructions.md` file
 
 **Purpose:** Provide instructions for the exercise.
 
 For more information, please read [this in-depth description][docs-instructions.md], watch [this video][video-docs-instructions.md] and check [this example file][example-docs-instructions.md].
 
-## Add`.docs/hints.md` file
+## Add `.docs/hints.md` file
 
 **Purpose:** Provide hints to a student to help them get themselves unstuck in an exercise.
 
 For more information, please read [this in-depth description][docs-hints.md], watch [this video][video-docs-hints.md] and check [this example file][example-docs-hints.md].
 
-## Add`.docs/after.md` file
+## Add `.docs/after.md` file
 
 **Purpose:** Provide more information about the concept(s) for a student to learn from.
 
 For more information, please read [this in-depth description][docs-after.md], watch [this video][video-docs-after.md] and check [this example file][example-docs-after.md].
 
-## Add`.docs/source.md` file (required if there are third-party sources)
+## Add `.docs/source.md` file (required if there are third-party sources)
 
 **Purpose:** Describe the third-party source(s) of the exercise.
 
