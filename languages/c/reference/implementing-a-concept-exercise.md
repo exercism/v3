@@ -31,8 +31,8 @@ languages
                 │   ├── instructions.md
                 │   ├── introduction.md
                 │   ├── hints.md
-                |   ├── after.md
-                |   └── source.md (required if there are third-party sources)
+                │   ├── source.md (required if there are third-party sources)
+                │   └── after.md
                 ├── .meta
                 │   ├── config.json
                 │   ├── design.md
@@ -44,7 +44,7 @@ languages
                 └── test-framework
 </pre>
 
-## Step 1: adding Track-Specific Files
+## Step 1: Adding Track-Specific Files
 
 These files are specific to the C track:
 
@@ -54,7 +54,7 @@ These files are specific to the C track:
 - `test-framework`: this directory contains the unit test framework, [Unity][unity]
 - `.meta/example{.c|.h}`: an example implementation that passes all the unit tests.
 
-## Step 2: adding Common Files
+## Step 2: Adding Common Files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 
