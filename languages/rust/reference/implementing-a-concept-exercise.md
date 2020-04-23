@@ -44,7 +44,7 @@ languages
                     └── <NAME>.rs
 ```
 
-## Step 1: adding track-specific files
+## Step 1: adding code files
 
 A shell script is provided for boilerplating a concept exercise, use with `sh boil_exercise.sh <SLUG>`. It will provide unfinished files for step 1 and 2 to review in your text editor of choice. You can also use `cargo init --lib <SLUG> --vcs none` to boilerplate the directory and create all the files manually if that doesn't work.
 
@@ -55,7 +55,7 @@ Of special note are
 - `tests/<NAME>.rs`: this will become the test suite for this exercise.
 - `.meta/example.rs`: this should be a working example that passes all tests. Students cannot see this.
 
-## Step 2: adding common files
+## Step 2: adding documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 

@@ -43,9 +43,9 @@ languages
                 └── Manifest.toml (optional)
 ```
 
-## Step 1: adding track-specific files
+## Step 1: adding code files
 
-These files are specific to the Julia track:
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following Julia code files must be created (not necessarily in this order):
 
 - `$slug.jl`: the stub implementation file, which is the starting point for students to work on the exercise.
 - `runtests.jl`: the test suite.
@@ -55,7 +55,7 @@ These files are specific to the Julia track:
 
 Run `julia color=yes runtests.jl $slug` in the `/languages/julia/` directory to test the example solution.
 
-## Step 2: adding common files
+## Step 2: adding documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 

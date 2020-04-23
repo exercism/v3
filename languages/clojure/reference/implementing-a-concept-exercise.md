@@ -41,14 +41,15 @@ languages
                 └── &lt;NAME&gt;_test.clj
 </pre>
 
-## Step 1: adding track-specific files
+## Step 1: adding code files
 
-These files are specific to the Clojure track:
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following Clojure code files must be created (not necessarily in this order):
 
 - `<NAME>.clj`: the Clojure file.
 - `<NAME>_test.clj`: the test suite.
+- `.meta/Example.clj`: the example implementation file.
 
-## Step 2: adding common files
+## Step 2: adding documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 

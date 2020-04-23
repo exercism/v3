@@ -41,15 +41,15 @@ languages
                 └── &lt;NAME&gt;_test.go
 </pre>
 
-## Step 1: adding track-specific files
+## Step 1: adding code files
 
-These files are specific to the Go track:
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following Go code files must be created (not necessarily in this order):
 
 - `<NAME>.go`. the stub implementation file, which is the starting point for students to work on the exercise.
 - `<NAME>_test.go`: the test suite.
 - `.meta/example.go`: an example implementation that passes all the tests.
 
-## Step 2: adding common files
+## Step 2: adding documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 

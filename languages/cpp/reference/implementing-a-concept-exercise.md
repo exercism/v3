@@ -46,9 +46,9 @@ languages
                   └── tests_main.cpp
 </pre>
 
-## Step 1: adding track-specific files
+## Step 1: adding code files
 
-These files are specific to the C++ track:
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following C++ code files must be created (not necessarily in this order):
 
 - `<NAME>.h` and `<NAME>.cpp`. the stub implementation files, which is the starting point for students to work on the exercise.
 - `CMakeLists.txt`: the C++ project file.
@@ -56,7 +56,7 @@ These files are specific to the C++ track:
 - `.meta/example.h` and `.meta/example.cpp`: an example implementation that passes all the tests.
 - `test/tests_main.cpp`: generates test main from test library
 
-## Step 2: adding common files
+## Step 2: adding documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 

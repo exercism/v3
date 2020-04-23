@@ -42,11 +42,9 @@ languages
                 └── &lt;NAME&gt;Tests.cs
 </pre>
 
-## Step 1: adding track-specific files
+## Step 1: adding code files
 
-The track-specific files should be designed to help the student learn the exercise's concepts. For all
-
-The following C#-specific files must be created (not necessarily in this order):
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following C# code files must be created (not necessarily in this order):
 
 ### Create `<NAME>.cs` file
 
@@ -79,7 +77,7 @@ For more information, check [this example project file][example-project-file].
 
 For more information, please read [this in-depth description][example-file], [watch this video][video-example-file] and check [this example file][example-example-file].
 
-## Step 2: adding common files
+## Step 2: adding documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 

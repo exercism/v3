@@ -44,9 +44,9 @@ languages
                 └── test-framework
 </pre>
 
-## Step 1: Adding Track-Specific Files
+## Step 1: adding code files
 
-These files are specific to the C track:
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following C code files must be created (not necessarily in this order):
 
 - `makefile`: the makefile for the stub files and tests
 - `<NAME>{.c|.h}`: the stub source and header implementation files, which are the starting point for students to work on the exercise.
@@ -54,7 +54,7 @@ These files are specific to the C track:
 - `test-framework`: this directory contains the unit test framework, [Unity][unity]
 - `.meta/example{.c|.h}`: an example implementation that passes all the unit tests.
 
-## Step 2: Adding Common Files
+## Step 2: adding documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 

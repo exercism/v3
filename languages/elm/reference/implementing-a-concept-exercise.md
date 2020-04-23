@@ -44,16 +44,16 @@ languages
                     └── &lt;NAME&gt;.elm
 </pre>
 
-## Step 1: adding track-specific files
+## Step 1: adding code files
 
-Having added the files that are not specific to the track, now is the time to create the track-specific files. These file will include:
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following Elm code files must be created (not necessarily in this order):
 
 - An `elm.json` file.
 - A stub implementation file (`src/<NAME>.elm`).
 - A file containing the test suite (`tests/<NAME>.elm`).
 - An example implementation file that passes all the tests (`.meta/Example.elm`).
 
-## Step 2: adding common files
+## Step 2: adding documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 

@@ -51,7 +51,7 @@ languages
                     └── test_helper.exs
 ```
 
-## Step 1: adding track-specific files
+## Step 1: adding code files
 
 The configuration files may be copied from another exercise. But it would be recommended to use `mix new $elixir_slug` (where `$elixir_slug` exchanges underscores `_` in the place of `$slug`'s dashes `-`) for file generation, the move the generated structure to the `$slug` directory to match the structure in this guide.
 
@@ -61,7 +61,7 @@ Now create the following three files:
 - `test/$slug_test.ex`: the test suite.
 - `lib/example.ex`: an example implementation that passes all the tests.
 
-## Step 2: adding common files
+## Step 2: adding documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 

@@ -46,9 +46,9 @@ languages
                 └── &lt;SLUG&gt;-test.lisp
 </pre>
 
-## Step 1: adding track-specific files
+## Step 1: adding code files
 
-These files are specific to the Common Lisp track:
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following Common Lisp code files must be created (not necessarily in this order):
 
 - `<SLUG>.lisp`: the stub implementation file, which is the starting
   point for students to work on the exercise.
@@ -57,7 +57,7 @@ These files are specific to the Common Lisp track:
 - `.meta/example.lisp`: an example implementation that passes all the
   tests.
 
-## Step 2: adding common files
+## Step 2: adding documentation files
 
 How to create the files common to all tracks is described in the [how
 to implement a concept exercise

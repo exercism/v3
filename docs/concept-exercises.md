@@ -49,7 +49,7 @@ When designing Concept Exercises, please consider the following guidelines:
 
 When writing documentation and supporting Markdown files for Concept Exercises, please consult the [style guide][style-guide] noting the [automatic formatting section][style-guide-auto-formatting]. Also check any language-specific style guides, where applicable.
 
-## Exercise-specific files
+## Documentation files
 
 The purpose of the exercise-specific files is explained both in this document and in the [Anatomy of a Concept Exercise video][anatomy-of-a-concept-exercise-video].
 
@@ -184,7 +184,7 @@ Note that:
 - If you are forking an exercise, do not reference original authors or contributors. Just ensure that `forked_from` is correct.
 - `language_versions` is a free-form string that tracks are free to use and interpret as they like.
 
-## Track-specific files
+## Code files
 
 **Purpose:** Implement the exercise.
 

@@ -58,7 +58,7 @@ languages
                             └── &lt;slug&gt;Test.java
 </pre>
 
-## Step 1: adding track-specific files
+## Step 1: adding code files
 
 The configuration files may be copied from another exercise. We aim to keep these in sync:
 
@@ -70,7 +70,7 @@ Now create the following three files:
 - `src/test/java/<slug>Test.java`: the test suite.
 - `.meta/example/src/main/java/<slug>.java`: an example implementation that passes all the tests.
 
-## Step 2: adding common files
+## Step 2: adding documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 

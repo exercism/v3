@@ -42,16 +42,16 @@ languages
                 └── &lt;NAME&gt;Tests.fs
 </pre>
 
-## Step 1: adding track-specific files
+## Step 1: adding code files
 
-These files are specific to the F# track:
+The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following F# code files must be created (not necessarily in this order):
 
 - `<NAME>.fs`. the stub implementation file, which is the starting point for students to work on the exercise.
 - `<NAME>.fsproj`: the F# project file.
 - `<NAME>Tests.fs`: the test suite.
 - `.meta/Example.fs`: an example implementation that passes all the tests. The project file should _not_ include this file.
 
-## Step 2: adding common files
+## Step 2: adding documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 
