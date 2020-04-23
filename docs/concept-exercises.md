@@ -280,5 +280,5 @@ See [this example config.json file][config.json].
 [stub-file]: ../languages/csharp/exercises/concept/strings/Strings.cs
 [tests-file]: ../languages/csharp/exercises/concept/strings/StringsTests.cs
 [example-file]: ../languages/csharp/exercises/concept/strings/.meta/Example.cs
-[determining-concepts-naming]: ./determining-concepts.md#naming-concepts
+[determining-concepts-naming]: ./maintainers/determining-concepts.md#naming-concepts
 [migrating-your-config-json-files]: ./maintainers/migrating-your-config-json-files.md
