@@ -67,7 +67,7 @@ In the browser, these files will show at the relevant times. When used via the C
 
 As an example, the introduction to a "strings" exercise might describe a string as just a "Sequence of Unicode characters" or a "series of bytes", tell the users how to create a string, and explain that a string has methods that can be used to manipulate it. Unless the student needs to understand more nuanced details in order to solve the exercise, this type of brief explanation (along with an example of its syntax) should be sufficient information for the student to solve the exercise.
 
-For more information, watch [this video][video-docs-introduction.md] and check [this example introduction.md file][docs-introduction.md]. Notice how the example file's introduction is very minimal, but that the language-specific keywords are enclosed in quotes and an example of the newly introduced syntax is included.
+For more information, watch [this video][video-docs-introduction.md] and check [this example introduction.md file][docs-introduction.md]. Notice how the example file's introduction is very minimal, but that the language-specific keywords are enclosed in backticks and an example of the newly introduced syntax is included.
 
 ### `.docs/instructions.md`
 
