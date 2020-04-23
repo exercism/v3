@@ -29,14 +29,14 @@ languages
         └── concept
             └── &lt;SLUG&gt;
                 ├── .docs
-                |   ├── after.md
-                |   ├── hints.md
-                |   ├── instructions.md
                 |   ├── introduction.md
+                |   ├── instructions.md
+                |   ├── hints.md
+                |   ├── after.md
                 |   └── source.md (required if there are third-party sources)
                 └── .meta
-                    ├── config.json
-                    └── design.md
+                    ├── design.md
+                    └── config.json
 </pre>
 
 All Markdown files should adhere to the [style guide][style-guide], noting the [automatic formatting section][style-guide-auto-formatting]. Also check any language-specific style guides, where applicable.
