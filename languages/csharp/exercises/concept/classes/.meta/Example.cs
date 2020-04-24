@@ -1,17 +1,45 @@
-public static class LogLine
+public class RemoteControlCar
 {
-    public static string Message(string logLine)
+    private int _battery;
+    private int _distance;
+
+    public RemoteControlCar()
     {
-        return logLine.Substring(logLine.IndexOf(":") + 1).Trim();
+        _battery = 100;
+        _distance = 0;
     }
 
-    public static string LogLevel(string logLine)
+    public void Drive()
     {
-        return logLine.Substring(1, logLine.IndexOf("]")).ToLower();
+        if (_battery > 0)
+        {
+            _battery--;
+            _distance += 20;
+        }
     }
 
-    public static string Reformat(string logLine)
+    public string DistanceDisplay()
     {
-        return $"{Message(logLine)} ({LogLevel(logLine)})";
+        return $"Driven {_distance} meters";
+    }
+
+    public string BatteryDisplay()
+    {
+        if (_battery == 0)
+        {
+            return "Battery empty";
+        }
+
+        return $"Battery at {_battery}%";
+    }
+
+    public static RemoteControlCar FromFriend()
+    {
+        var remoteControlCar = new RemoteControlCar();
+        remoteControlCar.Drive();
+        remoteControlCar.Drive();
+        remoteControlCar.Drive();
+
+        return remoteControlCar;
     }
 }
