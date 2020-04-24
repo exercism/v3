@@ -75,13 +75,13 @@ For more information, please read [this in-depth description][docs-source.md] an
 
 _Skip this step if there aren't any third-party sources._
 
-## Add`.meta/design.md` file
+## Add `.meta/design.md` file
 
 **Purpose:** Describe the design of the exercise.
 
 For more information, please read [this in-depth description][meta-design.md], watch [this video][video-meta-design.md] and check [this example file][example-meta-design.md].
 
-## Add`.meta/config.json` file
+## Add `.meta/config.json` file
 
 **Purpose:** Contains meta information on the exercise.
 
