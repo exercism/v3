@@ -19,13 +19,13 @@ defmodule HighScore do
     Map.put(scores, name, @initial_score)
   end
 
-  def ordered_players(scores) do
+  def order_by_players(scores) do
     scores
     |> Map.keys()
     |> Enum.sort_by(&String.downcase/1)
   end
 
-  def ordered_scores(scores) do
+  def order_by_scores(scores) do
     scores
     |> Map.to_list()
     |> Enum.sort_by(&Kernel.elem(&1, 1))
