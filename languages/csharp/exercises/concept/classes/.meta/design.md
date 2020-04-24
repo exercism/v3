@@ -2,32 +2,44 @@
 
 ## Goal
 
-The goal of this exercise is to teach the student the basics of the Concept of Strings in [C#][docs.microsoft.com-string].
+The goal of this exercise is to teach the student the Concept of Classes in C#.
 
 ## Learning objectives
 
-- Know of the existence of the `string` type.
-- Know how to create a string.
-- Know of some basic string methods (like finding the index of a character at a position, or returning a part the string).
-- Know how to do basic string formatting.
+- Know what classes are.
+- Know what encapsulation is.
+- Know what fields are.
+- Know how to create an object.
+- Know how to update state through methods.
+- Know about the `void` type.
 
 ## Out of scope
 
-- Using standard or custom format strings.
-- Memory and performance characteristics.
-- Strings can be enumerated.
+- Reference equality.
+- Reference parameter passing.
+- Constructors.
+- Interfaces.
+- Inheritance.
+- Properties.
+- Indexers.
+- Structs.
+- Destructors.
+- Method overloading.
+- Pattern matching.
 
 ## Concepts
 
-The Concepts this exercise unlocks are:
+This Concepts Exercise's Concepts are:
 
-- `strings`: know of the existence of the `string` type; know of some basic functions (like looking up a character at a position, or slicing the string); know how to do basic string formatting.
+- `classes`: know what classes are; know what encapsulation is; know what fields are; know how to define a parameterless constructor; know how to create an object; know how to update state through methods; know about the `void` type.
 
 ## Prequisites
 
-This exercise's prerequisites Concepts are:
+This Concept Exercise's prerequisites Concepts are:
 
-- `basics`: know how to define methods.
+- `basics`: know how to define a basic class with basic methods.
+- `accessibility`: know what `private` and `public` visibility is.
+- `strings`: know how to do basic string interpolation.
 
 ## Representer
 
@@ -39,4 +51,3 @@ This exercise does not require any specific logic to be added to the [analyzer][
 
 [analyzer]: https://github.com/exercism/csharp-analyzer
 [representer]: https://github.com/exercism/csharp-representer
-[docs.microsoft.com-string]: https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netcore-3.1
