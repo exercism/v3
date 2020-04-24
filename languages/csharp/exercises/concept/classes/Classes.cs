@@ -1,62 +1,45 @@
-namespace csharp
+public class RemoteControlCar
 {
-    public class RacingCircuitCar
+    private int _battery;
+    private int _distance;
+
+    public RemoteControlCar()
     {
-        private int _battery;
-        private int _distance;
-        private bool _turbo;
+        _battery = 100;
+        _distance = 0;
+    }
 
-        public RacingCircuitCar()
+    public void Drive()
+    {
+        if (_battery > 0)
         {
-            _battery = 100;
-            _distance = 0;
+            _battery--;
+            _distance += 20;
         }
+    }
 
-        public void UseTurbo()
+    public string DistanceDisplay()
+    {
+        return $"Driven {_distance} meters";
+    }
+    
+    public string BatteryDisplay()
+    {
+        if (_battery == 0)
         {
-            _turbo = true;
+            return "Battery empty";
         }
+        
+        return $"Battery at {_battery}%";
+    }
 
-        public void Drive()
-        {
-            if (Stopped())
-            {
-                return;
-            }
-
-            if (_turbo)
-            {
-                _battery -= 10;
-                _distance += 7;
-            }
-            else
-            {
-                _battery -= 4;
-                _distance += 3;
-            }
-        }
-
-        public bool Stopped()
-        {
-            return _battery <= 0;
-        }
-
-        public bool Finished()
-        {
-            return _distance >= 50;
-        }
-
-        public static RacingCircuitCar Regular()
-        {
-            return new RacingCircuitCar();
-        }
-
-        public static RacingCircuitCar Turbo()
-        {
-            var car = new RacingCircuitCar();
-            car.UseTurbo();
-
-            return car;
-        }
+    public static RemoteControlCar FromFriend()
+    {
+        var remoteControlCar = new RemoteControlCar();
+        remoteControlCar.Drive();
+        remoteControlCar.Drive();
+        remoteControlCar.Drive();
+        
+        return remoteControlCar;
     }
 }

@@ -1,97 +1,100 @@
 using Xunit;
 
-public class RaceTests
+public class RacingCircuitCarTests
 {
-    // [Fact]
-    // public void DistanceCoveredWithoutRunning()
-    // {
-    //     var runner = new Runner(10, 20);
-    //     Assert.Equal(0, runner.DistanceCovered());
-    // }
-    //
-    // [Fact]
-    // public void DistanceCoveredAfterSingleRunEqualsSpeed()
-    // {
-    //     var runner = new Runner(10, 7);
-    //     runner.Run();
-    //     Assert.Equal(7, runner.DistanceCovered());
-    // }
-    //
-    // [Fact]
-    // public void DistanceCoveredAfterMultipleRunsWithStaminaRemaining()
-    // {
-    //     var runner = new Runner(20, 6);
-    //     runner.Run();
-    //     runner.Run();
-    //     runner.Run();
-    //     Assert.Equal(18, runner.DistanceCovered());
-    // }
-    //
-    // [Fact]
-    // public void DistanceCoveredAfterMultipleRunsWithNoStaminaRemaining()
-    // {
-    //     var runner = new Runner(10, 8);
-    //     runner.Run();
-    //     runner.Run();
-    //     runner.Run();
-    //     Assert.Equal(16, runner.DistanceCovered());
-    // }
-    //
-    // [Fact]
-    // public void RecordHolderStartsWithNoDistanceCovered()
-    // {
-    //     var recordHolder = Race.RecordHolder();
-    //     Assert.Equal(0, recordHolder.DistanceCovered());
-    // }
-    //
-    // [Fact]
-    // public void RecordHolderHasCorrectSpeed()
-    // {
-    //     var recordHolder = Race.RecordHolder();
-    //     recordHolder.Run();
-    //     Assert.Equal(15, recordHolder.DistanceCovered());
-    // }
-    //
-    // [Fact]
-    // public void RecordHolderHasCorrectStamina()
-    // {
-    //     var recordHolder = Race.RecordHolder();
-    //     recordHolder.Run();
-    //     recordHolder.Run();
-    //     recordHolder.Run();
-    //     recordHolder.Run();
-    //     recordHolder.Run();
-    //     recordHolder.Run();
-    //     Assert.Equal(75, recordHolder.DistanceCovered());
-    // }
-    //
-    // [Fact]
-    // public void ChallengerDoesNotBreakRecordWhenNoLapsHaveBeenRun()
-    // {
-    //     var challenger = new Runner(15, 20);
-    //     var race = new Race(challenger);
-    //     Assert.False(race.RecordBroken());
-    // }
-    //
-    // [Fact]
-    // public void ChallengerOutpacesRecordHolderAfterOneLapBreaksRecords()
-    // {
-    //     var challenger = new Runner(15, 20);
-    //     var race = new Race(challenger);
-    //     race.Run();
-    //     Assert.True(race.RecordBroken());
-    // }
-    //
-    // [Fact]
-    // public void ChallengerStaminaDoesNotHoldOutAndDoesNotBreakRecord()
-    // {
-    //     var challenger = new Runner(15, 20);
-    //     var race = new Race(challenger);
-    //     race.Run();
-    //     race.Run();
-    //     race.Run();
-    //     race.Run();
-    //     race.Run();
-    //     Assert.False(race.RecordBroken());
-    // }
+    [Fact]
+    public void CarFromFriendBatteryDisplay()
+    {
+        var car = RemoteControlCar.FromFriend();
+        Assert.Equal("Battery at 97%", car.BatteryDisplay());
+    }
+    
+    [Fact]
+    public void CarFromFriendDistanceDisplay()
+    {
+        var car = RemoteControlCar.FromFriend();
+        Assert.Equal("Driven 60 meters", car.DistanceDisplay());
+    }
+    
+    [Fact]
+    public void NewCarBatteryDisplay()
+    {
+        var car = new RemoteControlCar();
+        Assert.Equal("Battery at 100%", car.BatteryDisplay());
+    }
+    
+    [Fact]
+    public void NewCarDistanceDisplay()
+    {
+        var car = new RemoteControlCar();
+        Assert.Equal("Driven 0 meters", car.DistanceDisplay());
+    }
+    
+    [Fact]
+    public void BatteryDisplayAfterDrivingOnce()
+    {
+        var car = new RemoteControlCar();
+        car.Drive();
+        Assert.Equal("Battery at 99%", car.BatteryDisplay());
+    }
+    
+    [Fact]
+    public void DistanceDisplayAfterDrivingOnce()
+    {
+        var car = new RemoteControlCar();
+        car.Drive();
+        Assert.Equal("Driven 20 meters", car.DistanceDisplay());
+    }
+    
+    [Fact]
+    public void BatteryDisplayAfterDrivingMultipleTimes()
+    {
+        var car = new RemoteControlCar();
+
+        for (var i = 0; i < 23; i++)
+        {
+            car.Drive();
+        }
+        
+        Assert.Equal("Battery at 77%", car.BatteryDisplay());
+    }
+    
+    [Fact]
+    public void DistanceDisplayAfterDrivingMultipleTimes()
+    {
+        var car = new RemoteControlCar();
+
+        for (var i = 0; i < 17; i++)
+        {
+            car.Drive();
+        }
+
+        Assert.Equal("Driven 340 meters", car.DistanceDisplay());
+    }
+    
+    [Fact]
+    public void BatteryDisplayWhenBatteryEmpty()
+    {
+        var car = new RemoteControlCar();
+
+        for (var i = 0; i < 100; i++)
+        {
+            car.Drive();
+        }
+        
+        Assert.Equal("Battery empty", car.BatteryDisplay());
+    }
+    
+    [Fact]
+    public void DistanceDisplayWhenBatteryEmpty()
+    {
+        var car = new RemoteControlCar();
+
+        for (var i = 0; i < 100; i++)
+        {
+            car.Drive();
+        }
+        
+        Assert.Equal("Driven 2000 meters", car.DistanceDisplay());
+    }
 }
