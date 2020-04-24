@@ -1,45 +1,27 @@
+using System;
+
 public class RemoteControlCar
 {
-    private int _battery;
-    private int _distance;
-
-    public RemoteControlCar()
-    {
-        _battery = 100;
-        _distance = 0;
-    }
+    // TODO: define a field to keep track of the battery percentage
+    // TODO: define a field to keep track of the distance driven
 
     public void Drive()
     {
-        if (_battery > 0)
-        {
-            _battery--;
-            _distance += 20;
-        }
+        throw new NotImplementedException("Please implement the 'RemoteControlCar.Drive()' method");
     }
 
     public string DistanceDisplay()
     {
-        return $"Driven {_distance} meters";
+        throw new NotImplementedException("Please implement the 'RemoteControlCar.DistanceDisplay()' method");
     }
     
     public string BatteryDisplay()
     {
-        if (_battery == 0)
-        {
-            return "Battery empty";
-        }
-        
-        return $"Battery at {_battery}%";
+        throw new NotImplementedException("Please implement the 'RemoteControlCar.BatteryDisplay()' method");
     }
 
     public static RemoteControlCar FromFriend()
     {
-        var remoteControlCar = new RemoteControlCar();
-        remoteControlCar.Drive();
-        remoteControlCar.Drive();
-        remoteControlCar.Drive();
-        
-        return remoteControlCar;
+        throw new NotImplementedException("Please implement the 'RemoteControlCar.FromFriend()' method");
     }
 }
