@@ -7,14 +7,14 @@ public class RemoteControlCar
 
     public void Drive()
     {
-        throw new NotImplementedException("Please implement the 'RemoteControlCar.Drive()' method");
+        throw new NotImplementedException("Please implement the RemoteControlCar.Drive() method");
     }
 
     public string DistanceDisplay()
     {
-        throw new NotImplementedException("Please implement the 'RemoteControlCar.DistanceDisplay()' method");
+        throw new NotImplementedException("Please implement the RemoteControlCar.DistanceDisplay() method");
     }
-    
+
     public string BatteryDisplay()
     {
         throw new NotImplementedException("Please implement the 'RemoteControlCar.BatteryDisplay()' method");
@@ -22,6 +22,6 @@ public class RemoteControlCar
 
     public static RemoteControlCar FromFriend()
     {
-        throw new NotImplementedException("Please implement the 'RemoteControlCar.FromFriend()' method");
+        throw new NotImplementedException("Please implement the RemoteControlCar.FromFriend() method");
     }
 }
