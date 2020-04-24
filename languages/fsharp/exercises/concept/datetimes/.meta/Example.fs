@@ -1,4 +1,4 @@
-module DateTimes
+module Datetimes
 
 open System
 
