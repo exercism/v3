@@ -1,55 +1,62 @@
-public class Runner
+namespace csharp
 {
-    private int _stamina;
-    private int _speed;
-    private int _distanceCovered = 0;
-
-    public Runner(int stamina, int speed)
+    public class RacingCircuitCar
     {
-        _stamina = stamina;
-        _speed = speed;
-    }
+        private int _battery;
+        private int _distance;
+        private bool _turbo;
 
-    public void Run()
-    {
-        if (_stamina <= 0)
+        public RacingCircuitCar()
         {
-            return;
+            _battery = 100;
+            _distance = 0;
         }
 
-        _stamina -= 5;
-        _distanceCovered += _speed;
-    }
+        public void UseTurbo()
+        {
+            _turbo = true;
+        }
 
-    public int DistanceCovered()
-    {
-        return _distanceCovered;
-    }
-}
+        public void Drive()
+        {
+            if (Stopped())
+            {
+                return;
+            }
 
-public class Race
-{
-    private Runner _challenger;
-    private Runner _recordHolder = RecordHolder();
+            if (_turbo)
+            {
+                _battery -= 10;
+                _distance += 7;
+            }
+            else
+            {
+                _battery -= 4;
+                _distance += 3;
+            }
+        }
 
-    public Race(Runner challenger)
-    {
-        _challenger = challenger;
-    }
+        public bool Stopped()
+        {
+            return _battery <= 0;
+        }
 
-    public void Run()
-    {
-        _challenger.Run();
-        _recordHolder.Run();
-    }
+        public bool Finished()
+        {
+            return _distance >= 50;
+        }
 
-    public bool RecordBroken()
-    {
-        return _challenger.DistanceCovered() > _recordHolder.DistanceCovered();
-    }
+        public static RacingCircuitCar Regular()
+        {
+            return new RacingCircuitCar();
+        }
 
-    public static Runner RecordHolder()
-    {
-        return new Runner(25, 15);
+        public static RacingCircuitCar Turbo()
+        {
+            var car = new RacingCircuitCar();
+            car.UseTurbo();
+
+            return car;
+        }
     }
 }
