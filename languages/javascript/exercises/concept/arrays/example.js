@@ -32,6 +32,6 @@ export function removeItemFromBottom(array) {
   return array;
 }
 
-export function checkLengthOfStack(array, stackLength) {
+export function checkSizeOfStack(array, stackSize) {
   return array.length === stackLength;
 }

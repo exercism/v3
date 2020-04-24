@@ -6,7 +6,7 @@ import {
   removeItemFromTop,
   insertItemAtBottom,
   removeItemFromBottom,
-  checkLengthOfStack
+  checkSizeOfStack
 } from './arrays';
 
 describe('arrays', () => {
@@ -112,8 +112,8 @@ describe('arrays', () => {
     });
   });
 
-  describe('checkLengthOfStack', () => {
-    const checkLengthOfStackTestCases = [
+  describe('checkSizeOfStack', () => {
+    const ccheckSizeOfStackTestCases = [
       [[], 0, true],
       [[], 1, false],
       [[9], 0, false],
@@ -124,9 +124,9 @@ describe('arrays', () => {
       [[9, 8, 7, 1, 4], 6, false],
     ];
 
-    checkLengthOfStackTestCases.forEach(([array, stackSize, expected]) => {
-      test(`checkLengthOfStack([${array}], ${stackSize})`, () => {
-        expect(checkLengthOfStack(array, stackSize)).toBe(expected);
+    checkSizeOfStackTestCases.forEach(([array, stackSize, expected]) => {
+      test(`checkSizeOfStack([${array}], ${stackSize})`, () => {
+        expect(checkSizeOfStack(array, stackSize)).toBe(expected);
       });
     });
   });
