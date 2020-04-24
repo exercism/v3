@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Dates.fs" />
-    <Compile Include="DatesTests.fs" />
+    <Compile Include="DateTimes.fs" />
+    <Compile Include="DateTimesTests.fs" />
   </ItemGroup>
 
   <ItemGroup>

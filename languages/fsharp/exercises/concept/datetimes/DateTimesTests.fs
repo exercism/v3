@@ -1,4 +1,4 @@
-module DatesTests
+module DateTimesTests
 
 open FsUnit.Xunit
 open Xunit
@@ -8,7 +8,7 @@ open System.Globalization
 open System.Reflection
 open System.Threading
 
-open Dates
+open DateTimes
 
 [<AttributeUsage(AttributeTargets.Class ||| AttributeTargets.Method)>]
 type UseCultureAttribute(cultureName: string, uiCultureName: string) =
