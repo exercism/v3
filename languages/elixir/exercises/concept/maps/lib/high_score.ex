@@ -1,33 +1,27 @@
 defmodule HighScore do
-  @initial_score 0
-
-  def new(), do: %{}
+  def new(), do: raise "Please implement the new/0 function."
 
   def add_player(scores, name) do
-    Map.put(scores, name, @initial_score)
+    raise "Please implement the add_player/2 function."
   end
 
   def remove_player(scores, name) do
-    Map.delete(scores, name)
+    raise "Please implement the remove_player/2 function."
   end
 
   def update(scores, name, score) do
-    Map.update(scores, name, @initial_score, &(&1 + score))
+    raise "Please implement the update/3 function."
   end
 
   def reset(scores, name) do
-    Map.put(scores, name, @initial_score)
+    raise "Please implement the reset/2 function."
   end
 
-  def ordered_players(scores) do
-    scores
-    |> Map.keys()
-    |> Enum.sort_by(&String.downcase/1)
+  def order_by_players(scores) do
+    raise "Please implement the order_by_players/1 function."
   end
 
-  def ordered_scores(scores) do
-    scores
-    |> Map.to_list()
-    |> Enum.sort_by(&Kernel.elem(&1, 1))
+  def order_by_scores(scores) do
+    raise "Please implement the order_by_scores/1 function."
   end
 end
