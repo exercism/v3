@@ -1,13 +1,13 @@
 import {
   getItem,
   setItem,
-  insertItemFromTop,
+  insertItemAtTop,
   removeItem,
   removeItemFromTop,
-  insertItemFromBottom,
+  insertItemAtBottom,
   removeItemFromBottom,
   checkLengthOfStack
-} from './example';
+} from './arrays';
 
 describe('arrays', () => {
   describe('getItem', () => {
@@ -38,17 +38,17 @@ describe('arrays', () => {
     });
   });
 
-  describe('insertItemFromTop', () => {
-    const insertItemFromTopCases = [
+  describe('insertItemAtTop', () => {
+    const iinsertItemAtTopTopCases = [
       [[1], 2, [1, 2]],
       [[2, 5], 3, [2, 5, 3]],
       [[3, 4, 9, 7], 8, [3, 4, 9, 7, 8]],
       [[5, 9, 7, 1], 8, [5, 9, 7, 1, 8]]
     ];
 
-    insertItemFromTopCases.forEach(([array, newCard, expected]) => {
-      test(`prefilledArray([${array}], ${newCard})`, () => {
-        expect(insertItemFromTop(array, newCard)).toStrictEqual(expected);
+    insertItemAtTopCases.forEach(([array, newCard, expected]) => {
+      test(`insertItemAtTop([${array}], ${newCard})`, () => {
+        expect(insertItemAtTop(array, newCard)).toStrictEqual(expected);
       });
     });
   });
@@ -82,17 +82,17 @@ describe('arrays', () => {
     });
   });
 
-  describe('insertItemFromBottom', () => {
-    const insertItemFromBottomCases = [
+  describe('insertItemAtBottom', () => {
+    const insertItemAtBottomCases = [
       [[1], 2, [2, 1]],
       [[3, 1, 2], 1, [1, 3, 1, 2]],
       [[9, 9, 9, 9], 9, [9, 9, 9, 9, 9]],
       [[5, 9, 7, 1], 8, [8, 5, 9, 7, 1]]
     ];
 
-    insertItemFromBottomCases.forEach(([array, newCard, expected]) => {
-      test(`insertItemFromBottom([${array}], ${newCard})`, () => {
-        expect(insertItemFromBottom(array, newCard)).toStrictEqual(expected);
+    insertItemAtBottomCases.forEach(([array, newCard, expected]) => {
+      test(`insertItemAtBottom([${array}], ${newCard})`, () => {
+        expect(insertItemAtBottom(array, newCard)).toStrictEqual(expected);
       });
     });
   });

@@ -24,13 +24,13 @@ setItem([1, 2, 4, 1], index, newCard)
 // => [1, 2, 6, 1]
 ```
 
-### 3. Insert a card in the of top stack
+### 3. Insert a card at the of top stack
 
 Insert new card at the top of the stack and return the stack.
 
 ```javascript
 const newCard = 8
-insertItemFromTop([5, 9, 7, 1], newCard)
+insertItemAtTop([5, 9, 7, 1], newCard)
 // => [5, 9, 7, 1, 8]
 ```
 
@@ -53,17 +53,17 @@ removeItemFromTop([3, 2, 6, 4, 8])
 // => [3, 2, 6, 4]
 ```
 
-### 6. Insert a card in the bottom of the stack
+### 6. Insert a card at the bottom of the stack
 
 Insert new card at the bottom of the stack and return the stack.
 
 ```javascript
 const newCard = 8
-insertItemFromBottom([5, 9, 7, 1], newCard)
+insertItemAtBottom([5, 9, 7, 1], newCard)
 // => [8, 5, 9, 7, 1]
 ```
 
-### 7. Remove a card in the bottom of the stack
+### 7. Remove a card from the bottom of the stack
 
 Remove the card at the bottom of the stack and return the stack.
 

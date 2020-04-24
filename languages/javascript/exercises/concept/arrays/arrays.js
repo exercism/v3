@@ -2,7 +2,7 @@
  * @param {number[]} array
  * @param {number} index
  * 
- * @returns {number[]}
+ * @returns {number}
  */
 export function getItem(array, index) {
   throw new Error('Implement the getItem function');
@@ -25,8 +25,8 @@ export function setItem(array, index, newCard) {
  * 
  * @returns {number[]}
  */
-export function insertItemFromTop(array, newCard) {
-  throw new Error('Implement the insertItemFromTop function');
+export function insertItemAtTop(array, newCard) {
+  throw new Error('Implement the insertItemAtTop function');
 }
 
 /**
@@ -54,8 +54,8 @@ export function removeItemFromTop(array) {
  * 
  * @returns {number[]}
  */
-export function insertItemFromBottom(array, newCard) {
-  throw new Error('Implement the insertItemFromBottom function');
+export function insertItemAtBottom(array, newCard) {
+  throw new Error('Implement the insertItemAtBottom function');
 }
 
 /**
@@ -72,7 +72,7 @@ export function removeItemFromBottom(array) {
  * @param {number[]} array
  * @param {number} stackSize
  * 
- * @returns {number[]}
+ * @returns {boolean}
  */
 export function checkLengthOfStack(array, stackSize) {
   throw new Error('Implement the checkLengthOfStack function');

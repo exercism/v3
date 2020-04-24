@@ -7,7 +7,7 @@ export function setItem(array, index, newValue) {
   return array;
 }
 
-export function insertItemFromTop(array, newCard) {
+export function insertItemAtTop(array, newCard) {
   array.push(newCard)
   return array
 }
@@ -22,7 +22,7 @@ export function removeItemFromTop(array) {
   return array;
 }
 
-export function insertItemFromBottom(array, newCard) {
+export function insertItemAtBottom(array, newCard) {
   array.unshift(newCard);
   return array;
 }
