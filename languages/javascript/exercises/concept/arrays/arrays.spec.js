@@ -5,7 +5,7 @@ import {
   removeItem,
   removeItemFromTop,
   insertItemAtBottom,
-  removeItemFromBottom,
+  removeItemAtBottom,
   checkSizeOfStack
 } from './arrays';
 
@@ -97,17 +97,17 @@ describe('arrays', () => {
     });
   });
 
-  describe('removeItemFromBottom', () => {
-    const removeItemFromBottomCases = [
+  describe('removeItemAtBottom', () => {
+    const removeItemAtBottomCases = [
       [[], []],
       [[3, 1, 2], [1, 2]],
       [[8, 8, 8, 8], [8, 8, 8]],
       [[8, 5, 9, 7, 1], [5, 9, 7, 1]]
     ];
 
-    removeItemFromBottomCases.forEach(([array, expected]) => {
-      test(`removeItemFromBottom([${array}]])`, () => {
-        expect(removeItemFromBottom(array)).toStrictEqual(expected);
+    removeItemAtBottomCases.forEach(([array, expected]) => {
+      test(`removeItemAtBottom([${array}]])`, () => {
+        expect(removeItemAtBottom(array)).toStrictEqual(expected);
       });
     });
   });

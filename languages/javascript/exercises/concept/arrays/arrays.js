@@ -77,8 +77,8 @@ export function insertItemAtBottom(array, newCard) {
  * 
  * @returns {number[]} Array after card removed
  */
-export function removeItemFromBottom(array) {
-  throw new Error('Implement the removeItemFromBottom function');
+export function removeItemAtBottom(array) {
+  throw new Error('Implement the removeItemAtBottom function');
 }
 
 /**

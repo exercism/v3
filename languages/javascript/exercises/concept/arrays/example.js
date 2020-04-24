@@ -27,7 +27,7 @@ export function insertItemAtBottom(array, newCard) {
   return array;
 }
 
-export function removeItemFromBottom(array) {
+export function removeItemAtBottom(array) {
   array.shift();
   return array;
 }
