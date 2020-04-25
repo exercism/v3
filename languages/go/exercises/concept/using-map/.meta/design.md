@@ -11,10 +11,10 @@ The goal is to introduce the student to maps.
 - settings key/value pairs
 - reading a key, non-existent key returns zero value of value type
 - using ok to check if the key existed
-- iterate over map
 
 ## Out of scope
 
+- iterate over map
 - `map` data race
 
 ## Concepts
