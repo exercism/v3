@@ -35,4 +35,8 @@ class LogLineTest < MiniTest::Test
   def test_short_output_unknown
     assert_equal "#{LogLevel::UNKNOWN}:Something happened", LogLine.new('[FATAL]: Something happened').short
   end
+
+  def test_display_available_levels
+    assert_equal [0, 1, 2, 4], LogLine.available_levels
+  end
 end

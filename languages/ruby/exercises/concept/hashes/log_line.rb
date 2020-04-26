@@ -8,19 +8,23 @@ module LogLevel
 end
 
 class LogLine
-  LEVEL = {
-    unknown: LogLevel::ERROR,
+  LEVELS = {
+    unknown: LogLevel::UNKNOWN,
     info: LogLevel::INFO,
     warning: LogLevel::WARNING,
     error: LogLevel::ERROR
   }.freeze
+
+  def self.available_levels
+    LEVELS.map { |key, value| value }
+  end
 
   def initialize(line)
     @line = line
   end
 
   def level
-    LEVEL.fetch(level_string.downcase.to_sym, LogLevel::UNKNOWN)
+    LEVELS.fetch(level_string.downcase.to_sym, LogLevel::UNKNOWN)
   end
 
   def short
