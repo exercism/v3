@@ -96,8 +96,8 @@ backDoorResponse('Stands so high')
 Implement a function that trim a sentence:
 
 ```javascript
-trim('Stands so high   ')
-// => "Stands so high"
+backDoorResponse('Stands so high   ')
+// => "h"
 ```
 
 ### 5. Be polite
