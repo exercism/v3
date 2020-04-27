@@ -1,4 +1,3 @@
-# Pattern Matching
 
 Pattern matching in Elixir is not an add-on feature: it is a fundamental part of the language, so it's hard to isolate the concept into a single exercise. Don't be lulled into thinking that `=` just means "variable assignment" like it does in other languages: in Elixir, `=` is the **match operator**, and it does some amazing things.
 
