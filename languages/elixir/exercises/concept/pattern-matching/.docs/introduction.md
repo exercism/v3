@@ -6,6 +6,8 @@ Pattern matching in Elixir is not an add-on feature: it is a fundamental part of
 
 Although pattern matching is more common in functional languages, many object-oriented languages offer varying degrees of similar functionality if you know where to look...
 
+### Python
+
 In Python, you get a taste of this when you [unpack](https://www.python.org/dev/peps/pep-0448/) arguments using the `*` "splat" or "double-splat" operators:
 
 ```python
