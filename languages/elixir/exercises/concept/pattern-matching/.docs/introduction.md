@@ -14,7 +14,6 @@ In Python, you get a taste of this when you [unpack](https://www.python.org/dev/
 def my_fun(a, b, c, d):
     print(a, b, c, d)
 
-
 my_list = [1, 2, 3, 4]
 
 # Unpack the list into four arguments
