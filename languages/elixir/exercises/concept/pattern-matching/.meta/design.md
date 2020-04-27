@@ -35,7 +35,7 @@ Todo
 
 ## Analyzer
 
-Todo
+The analyzer should ensure pattern matching is used rather than `Map.get/2` or `elem/2`, etc
 
 [analyzer]: https://github.com/exercism/elixir-analyzer
 [representer]: https://github.com/exercism/elixir-representer

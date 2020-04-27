@@ -4,6 +4,10 @@ defmodule DateStringTest do
   @tag :pending # remove line to run test
   test "converts date tuple to string" do
     assert "2020-12-31 23:59:58" = DateString.from_tuple({{2020, 12, 31}, {23, 59, 58}})
+  end
+
+  @tag :pending # remove line to run test
+  test "tuple conversion handles zero padding in dates and times" do
     assert "2020-04-24 01:09:17" = DateString.from_tuple({{2020, 4, 24}, {1, 9, 17}})
   end
 
@@ -23,6 +27,9 @@ defmodule DateStringTest do
              year: 2020,
              zone_abbr: "UTC"
            })
+    end
+
+  test "map conversion handles zero padding in dates and times" do
     assert "2020-04-24 01:09:17" = DateString.from_map(%{
              calendar: Calendar.ISO,
              day: 24,

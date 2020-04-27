@@ -1,5 +1,5 @@
 
-Pattern matching in Elixir is not an add-on feature: it is a fundamental part of the language, so it's hard to isolate the concept into a single exercise. Don't be lulled into thinking that `=` just means "variable assignment" like it does in other languages: in Elixir, `=` is the **match operator**, and it does some amazing things.
+Pattern matching in Elixir is not an add-on feature: it is a fundamental part of the language.  It's hard to isolate the concept into a single exercise. Don't be lulled into thinking that `=` means "variable assignment" like in other languages. In Elixir, `=` is the **match operator**, and it does amazing things.
 
 ## Similarity in Other Languages
 
@@ -30,6 +30,8 @@ list($a, $b, $c) = $my_array;
 print($a); // apple
 ```
 
+### Ruby
+
 [Ruby 2.7](https://www.ruby-lang.org/en/news/2019/12/25/ruby-2-7-0-released/) includes pattern matching as an experimental feature, but perhaps an easier point of comparison is how Ruby can do multiple variable assignment (like PHP's `list` construct), e.g. from a function's output:
 
 ```ruby
@@ -49,6 +51,8 @@ def divide(numerator, denominator)
 end
 divide(*[4,2]) # => 2
 ```
+
+### Javascript
 
 Javascript offers more thorough deconstructing functionality:
 
