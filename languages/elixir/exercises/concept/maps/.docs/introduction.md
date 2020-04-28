@@ -1,6 +1,6 @@
 Maps in Elixir are the goto data structure for storing information in key-value pairs. In other languages, these might also be known as associative arrays (PHP), hashes (Perl 5, Raku), or dictionaries (Python).
 
-Keys and values can be of any data type, but if the key is an atom we can make use of special access protocols. Maps do not guarantee the order of their entries when access or returned.
+Keys and values can be of any data type, but if the key is an atom we can make use of special access protocols. Maps do not guarantee the order of their entries when accessed or returned.
 
 > Elixir gotcha! When an instance of a map has a small number of entries they appear to be ordered because of their internal implementation as an ordered keyword list, when their size exceeds 32 items, it is then stored as a [hash array mapped tree][hamt].
 
