@@ -42,7 +42,7 @@
 
 - You need to define a [named function][named-function] with 1 parameters.
   - The first argument is a [map][map] of scores.
-- Maps make use of the [Enumerable][enum] protocol.
+- The [`Enum` module][enum]'s function can be used on maps.
 
 ### 7. Get a list of players ordered by player score in decreasing order
 
