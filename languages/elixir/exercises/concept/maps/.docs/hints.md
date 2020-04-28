@@ -21,7 +21,7 @@
 - You need to define a [named function][named-function] with 2 parameters.
   - The first argument is a [map][map] of scores.
   - The second argument is a name [string][strings].
-- The resulting map should be returned
+- The resulting map should be returned.
 
 ### 4. Reset a player's score
 
