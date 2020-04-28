@@ -14,7 +14,7 @@ Enum.map([1, 2, 3], &(&1 + 1))
 - [Anonymous functions][anon-fns] are created with the `fn` keyword:
 
   ```elixir
-  varaible = fn param ->
+  function_variable = fn param ->
     param + 1
   end
   ```
