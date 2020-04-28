@@ -35,7 +35,7 @@ Great work, knowing how to effectivly use [maps][maps] is an import skill to use
   ```
 
 - [Maps][maps] implement the Enumerable protocol, allowing use of [Enum module][enum] functions
-- [Anonymous functions][anon-fn] or [captured function references][captured-fn] are often required as arguements for [Map][map-module] and [Enum module][enum] functions
+- [Anonymous functions][anon-fn] or [captured function references][captured-fn] are often required as arguments for [Map][map-module] and [Enum module][enum] functions
 
   ```elixir
   # Increment the value by one, if it is not found, update it with 0
