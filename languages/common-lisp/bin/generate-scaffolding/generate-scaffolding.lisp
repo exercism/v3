@@ -1,7 +1,7 @@
 ;;;; A small tool for generating concept-exercise scaffolding
 (defpackage scaffolder
   (:use :cl)
-  (:export :make-scaffold :main))
+  (:export :make-scaffold))
 (in-package :scaffolder)
 
 ;;; Load required libraries

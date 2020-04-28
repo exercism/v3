@@ -43,5 +43,5 @@ NIL
 ## Binary Creation
 
 ```lisp
-(sb-ext:save-lisp-and-die "generate-scaffolding" :toplevel #'scaffolder:main :executable t :compression 9)
+(sb-ext:save-lisp-and-die "generate-scaffolding" :toplevel #'scaffolder::main :executable t :compression 9)
 ```
