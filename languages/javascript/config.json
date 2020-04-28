@@ -37,12 +37,7 @@
         "slug": "promises",
         "uuid": "4a967656-8615-474e-a009-5c0b09f4386f",
         "concepts": ["promises"],
-        "prerequisites": [
-          "arrays",
-          "errors",
-          "callbacks",
-          "recursion"
-        ]
+        "prerequisites": ["arrays", "errors", "callbacks", "recursion"]
       }
     ],
     "practice": []
