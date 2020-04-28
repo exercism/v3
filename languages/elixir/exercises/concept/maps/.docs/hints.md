@@ -14,7 +14,7 @@
   - The first argument is a [map][map] of scores.
   - The second argument is a name [string][strings].
   - The third argument is the score [integer value][integers]. It is optional, so a [default value][default-arg] should be specified.
-- The resulting map should be returned
+- The resulting map should be returned.
 
 ### 3. Remove players from the score map
 
