@@ -22,7 +22,7 @@ While there is no canonical format, choose a consistent way to represent the key
 
 ## Map module functions
 
-Elixir provides many functions for working with maps to access/get/put/remove/drop values and keys.
+Elixir provides many functions for working with maps in the _Map module_.
 
 ```shell
 iex> map = %{}
