@@ -18,7 +18,7 @@ An empty map is simply declared with `%{}`. If we want to add items to a map lit
 %{"first_form" => :a, atom_form: :b}
 ```
 
-It would be convention to choose a consistent form which first all of the data in the literal.
+While there is no canonical format, choose a consistent way to represent the key-value literal pairs.
 
 ## Map module functions
 
