@@ -1,4 +1,4 @@
-In this exercise you're going to write a module to create and manipulate a map or high scores.
+In this exercise you're going to write a module to create and manipulate a map of high scores.
 
 You have 7 functions to implement, all related to returning and manipulating a map of high score data.
 
