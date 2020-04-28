@@ -11,7 +11,7 @@ Enum.map([1, 2, 3], &(&1 + 1))
   - Can be assigned to variables.
   - Can be passed around like data as arguments and return values.
   - Can be created dynamically.
-- [Anonymous functions][anon-fns] be created with the `fn` keyword:
+- [Anonymous functions][anon-fns] are created with the `fn` keyword:
 
   ```elixir
   varaible = fn param ->
