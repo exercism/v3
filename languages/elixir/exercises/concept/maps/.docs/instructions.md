@@ -4,7 +4,7 @@ You have 7 functions to implement, all related to returning and manipulating a m
 
 ### 1. Define a new high score map
 
-Define the `HighScore.new/0` function which doesn't take any parameters and returns new empty map of highscores.
+Define the `HighScore.new/0` function which doesn't take any parameters and returns a new, empty map of high scores.
 
 ```elixir
 HighScore.new()
