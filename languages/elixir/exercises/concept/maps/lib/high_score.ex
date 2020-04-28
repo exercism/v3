@@ -1,20 +1,20 @@
 defmodule HighScore do
   def new(), do: raise "Please implement the new/0 function."
 
-  def add_player(scores, name) do
-    raise "Please implement the add_player/2 function."
+  def add_player(scores, name, score) do
+    raise "Please implement the add_player/3 function."
   end
 
   def remove_player(scores, name) do
     raise "Please implement the remove_player/2 function."
   end
 
-  def update(scores, name, score) do
-    raise "Please implement the update/3 function."
+  def update_score(scores, name, score) do
+    raise "Please implement the update_score/3 function."
   end
 
-  def reset(scores, name) do
-    raise "Please implement the reset/2 function."
+  def reset_score(scores, name) do
+    raise "Please implement the reset_score/2 function."
   end
 
   def order_by_players(scores) do

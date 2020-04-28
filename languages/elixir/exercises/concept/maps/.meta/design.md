@@ -43,8 +43,8 @@ This exercise does not require any specific representation logic to be added to 
 
 This exercise could benefit from the following rules added to the the [analyzer][analyzer]:
 
-- Verify that the `ordered_by_name/2` function converts the map keys to an enum, uses `Enum.sort_by/2` function.
-- Verify that the `ordered_by_name/2` function converts the map keys to an enum, uses `Enum.sort_by/2` function.
+- Verify that the `order_by_players/2` function uses the enumerable protocol and uses `Enum.sort_by/2` function.
+- Verify that the `order_by_scores/2` function uses the enumerable protocol and uses `Enum.sort_by/2` function.
 
 [analyzer]: https://github.com/exercism/elixir-analyzer
 [representer]: https://github.com/exercism/elixir-representer
