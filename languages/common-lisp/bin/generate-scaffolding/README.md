@@ -2,7 +2,7 @@
 
 Generates the needed scaffolding for a concept exercise
 
-## Usage 
+## Usage
 
 When possible, this script should be run from this directory. Otherwise you will
 need to manually specify the output and template paths.
