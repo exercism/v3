@@ -10,11 +10,11 @@ Anonymous function start with the reserved word `fn`, the parameters are separat
 To invoke a function reference, you must use a `.` between the reference variable and the list of parameters:
 
 ```elixir
-varaible = fn param ->
+function_variable = fn param ->
   param + 1
 end
 
-variable.(1)
+function_variable.(1)
 # => 2
 ```
 
