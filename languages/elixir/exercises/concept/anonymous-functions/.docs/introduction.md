@@ -4,6 +4,13 @@ Functions are treated as first class citizens in Elixir. This means functions:
 - Can be passed around like data as arguments and return values.
 - Can be created dynamically.
 
+Anonymous functions, in contrast to named functions, don't have a static reference available to them, they are only available if they are assigned to a variable or immediately invoked.
+
+We might use anonymous functions to:
+
+- Partially apply a function (also known as [currying a function][currying]).
+- Hide data using lexical scope (also known as a closure).
+- dynamically create functions at run-time.
 
 Anonymous function start with the reserved word `fn`, the parameters are separated from the body of the function with the `->` token, and they are finished with an `end`. As with named functions, the last expression in the function is _implicitly returned_ to the calling function.
 
@@ -27,34 +34,4 @@ variable.(1)
 # => 2
 ```
 
-Which can be useful when are using other functions:
-
-```elixir
-# Instead of:
-fn tuple -> elem(tuple, 0) end
-
-# We can write:
-&elem(&1, 0)
-```
-
-```elixir
-# Instead of:
-fn a, b -> a <= b end
-
-# We can write using the function and the function's arity:
-&<=/2
-```
-
-Closures in elixir are often used in this context. Variable scoping rules in elixir allow outer variables to be available to the inner scope if the variable hasn't been rebound in the inner scope:
-
-```elixir
-# Raises a compiler warning becuase x in the outer scope is unused.
-def function(x) do
-  fn x -> x end
-end
-
-# No warning is raised, x in the anonymous function refers to x from the outer scope.
-def function(x) do
-  fn a -> x.(a) end
-end
-```
+[currying]: https://en.wikipedia.org/wiki/Currying

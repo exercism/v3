@@ -1,67 +1,60 @@
-In this exercuse, you'll be creating some auxillary functions in order to simplify to creation of closure functions.
+In this exercise, you've been tasked with writing a module to encode secret functions to apply to integers.
 
 For each task, make use of a closure and return a function that can be invoked from the calling scope.
 
-You have six tasks:
+You have five tasks:
 
 ### 1. Create an adder
 
-Implement `ClosureMaker.make_adder/1`, have it return a function which takes one parameter and adds it to the parameter passed in to `make_adder`.
+Implement `Secrets.secret_add/1`, have it return a function which takes one parameter and adds it to the parameter passed in to `secret_add`.
 
 ```elixir
-adder = ClosureMacker.make_adder(2)
+adder = Secrets.secret_add(2)
 adder.(2)
 # => 4
 ```
 
 ### 2. Create a subtractor
 
-Implement `ClosureMaker.make_subtractor/1`, have it return a function which takes one parameter and subtracts the parameter passed in to `make_subtractor`.
+Implement `Secrets.secret_subtract/1`, have it return a function which takes one parameter and subtracts the parameter passed in to `secret_subtract`.
 
 ```elixir
-subtractor = ClosureMacker.make_subtractor(2)
+subtractor = Secrets.secret_subtract(2)
 subtractor.(3)
 # => 1
 ```
 
 ### 3. Create a multiplier
 
-Implement `ClosureMaker.make_multiplier/1`, have it return a function which takes one parameter and multiplies it by the parameter passed in to `make_multiplier`.
+Implement `Secrets.secret_multiply/1`, have it return a function which takes one parameter and multiplies it by the parameter passed in to `secret_multiply`.
 
 ```elixir
-multiplier = ClosureMacker.make_multiplier(7)
+multiplier = Secrets.secret_multiply(7)
 multiplier.(3)
 # => 21
 ```
 
 ### 4. Create a divider
 
-Implement `ClosureMaker.make_divider/1`, have it return a function which takes one parameter and divides it by the parameter passed in to `make_divider`.
+Implement `Secrets.secret_divider1`, have it return a function which takes one parameter and divides it by the parameter passed in to `secret_divide`.
 
 ```elixir
-divider = ClosureMacker.make_divider(81)
-divider.(9)
-# => 9
+divider = Secrets.secret_divide(3)
+divider.(32)
+# => 10
 ```
 
 Make use of integer division.
 
-### 5. Create a list appender
+### 5. Create a function combiner
 
-Implement `ClosureMaker.make_list_appender/1`, have it return a function which takes one list parameter and appends the list parameter passed in to `make_list_appender`.
-
-```elixir
-list_appender = ClosureMacker.make_list_appender([7, 8, 9])
-list_appender.([1, 2, 3])
-# => [1, 2, 3, 7, 8, 9]
-```
-
-### 6. Create a string appender
-
-Implement `ClosureMaker.make_string_appender/1`, have it return a function which takes one string parameter and appends the string parameter passed in to `make_string_appender`.
+Implement `Secrets.secret_combine/2`, have it return a function which applies the functions parameter passed in to `secret_combine` in sequence.
 
 ```elixir
-string_appender = ClosureMacker.make_string_appender("James Bond")
-string_appender.("Bond...")
-# => "Bond...James Bond"
+multiply = Secrets.secret_multiply(7)
+divide = Secrets.secret_divide(3)
+combined = Secrets.secret_combine(multiply, divide)
+
+combined.(6)
+# => 14
 ```
