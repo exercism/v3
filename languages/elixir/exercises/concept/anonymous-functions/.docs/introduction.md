@@ -4,11 +4,6 @@ Functions are treated as first class citizens in Elixir. This means functions:
 - Can be passed around like data as arguments and return values.
 - Can be created dynamically.
 
-```elxir
-varaible = fn param ->
-  param + 1
-end
-```
 
 Anonymous function start with the reserved word `fn`, the parameters are separated from the body of the function with the `->` token, and they are finished with an `end`. As with named functions, the last expression in the function is _implicitly returned_ to the calling function.
 
