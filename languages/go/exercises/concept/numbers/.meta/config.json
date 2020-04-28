@@ -1,14 +1,14 @@
 {
-    "authors": [
-        {
-            "github_username": "DavyJ0nes",
-            "exercism_username": "DavyJ0nes"
-        }
-    ],
-    "contributors": [
-        {
-            "github_username": "tehsphinx",
-            "exercism_username": "tehsphinx"
-        }
-    ]
+  "authors": [
+    {
+      "github_username": "DavyJ0nes",
+      "exercism_username": "DavyJ0nes"
+    }
+  ],
+  "contributors": [
+    {
+      "github_username": "tehsphinx",
+      "exercism_username": "tehsphinx"
+    }
+  ]
 }
