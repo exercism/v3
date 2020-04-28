@@ -25,6 +25,16 @@ Great work, knowing how to effectivly use [maps][maps] is an import skill to use
   %{%{}, [1,2,3]}
   ```
 
+- Maps can also be instantiated using [`Map.new`][map-new] in the [Map module][map-module].
+
+  - This might be used if you already have an enumerable collection to turn into a list:
+
+    ```elixir
+    kw_list = [a: 1, b: 2]
+    Map.new(kw_list)
+    # => %{a: 1, b: 2}
+    ```
+
 - The [Map module][map-module], included with the standard library, has many useful functions for using [maps][maps].
 
   ```elixir
@@ -52,22 +62,34 @@ Great work, knowing how to effectivly use [maps][maps] is an import skill to use
 
   ```elixir
   defmodule Example do
+    @number 2
+
+    def number(), do: @number
+  end
+  ```
+
+- [Module attributes][attr-as-const] can be overwritten by redefining them in the module:
+
+  ```elixir
+  defmodule Example do
     @standard_message "Hello, World!"
+    @standard_message "Overwritten!"
 
     def message(), do: @standard_message
   end
   ```
 
-[hamt]: https://en.wikipedia.org/wiki/Hash_array_mapped_trie
-[keyword-list]: https://elixir-lang.org/getting-started/keywords-and-maps.html#keyword-lists
-[maps]: https://elixir-lang.org/getting-started/keywords-and-maps.html#maps
-[integers]: https://elixir-lang.org/getting-started/basic-types.html
-[strings]: https://elixir-lang.org/getting-started/basic-types.html#strings
-[named-function]: https://elixir-lang.org/getting-started/modules-and-functions.html#named-functions
-[default-arg]: https://elixir-lang.org/getting-started/modules-and-functions.html#default-arguments
-[map-module]: https://hexdocs.pm/elixir/Map.html
-[enum]: https://hexdocs.pm/elixir/Enumerable.html#content
-[attr-as-const]: https://elixir-lang.org/getting-started/module-attributes.html#as-constants
-[stackoverflow]: https://stackoverflow.com/a/40408469
-[captured-fn]: https://elixir-lang.org/getting-started/modules-and-functions.html#function-capturing
 [anon-fn]: https://elixir-lang.org/getting-started/basic-types.html#anonymous-functions
+[attr-as-const]: https://elixir-lang.org/getting-started/module-attributes.html#as-constants
+[captured-fn]: https://elixir-lang.org/getting-started/modules-and-functions.html#function-capturing
+[keyword-list]: https://elixir-lang.org/getting-started/keywords-and-maps.html#keyword-lists
+[integers]: https://elixir-lang.org/getting-started/basic-types.html
+[default-arg]: https://elixir-lang.org/getting-started/modules-and-functions.html#default-arguments
+[enum]: https://hexdocs.pm/elixir/Enumerable.html#content
+[hamt]: https://en.wikipedia.org/wiki/Hash_array_mapped_trie
+[maps]: https://elixir-lang.org/getting-started/keywords-and-maps.html#maps
+[map-module]: https://hexdocs.pm/elixir/Map.html
+[map-new]: https://hexdocs.pm/elixir/Map.html#new/0
+[named-function]: https://elixir-lang.org/getting-started/modules-and-functions.html#named-functions
+[stackoverflow]: https://stackoverflow.com/a/40408469
+[strings]: https://elixir-lang.org/getting-started/basic-types.html#strings

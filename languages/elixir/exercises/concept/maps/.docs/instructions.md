@@ -4,7 +4,7 @@ You have 7 functions to implement, all related to returning and manipulating a m
 
 ### 1. Define a new high score map
 
-Define the `HighScore.new/0` function which doesn't take any parameters and returns a new, empty map of high scores.
+To make a new high score map, define the `HighScore.new/0` function which doesn't take any parameters and returns a new, empty map of high scores.
 
 ```elixir
 HighScore.new()
@@ -13,7 +13,7 @@ HighScore.new()
 
 ### 2. Add players to the high score map
 
-Define `HighScore.add_player/3`, which is a function which takes 3 parameters:
+To add a player to the high score map, define `HighScore.add_player/3`, which is a function which takes 3 parameters:
 
 - The first parameter is the map of scores.
 - The second parameter is the name of a player as a string.
@@ -30,7 +30,7 @@ score_map = HighScore.add_player(score_map, "José Valim", 486_373)
 
 ### 3. Remove players from the score map
 
-Define `HighScore.remove_player/2`, which takes 2 parameters:
+To remove a player from the high score map, define `HighScore.remove_player/2`, which takes 2 parameters:
 
 - The first parameter is the map of scores.
 - The second parameter is the name of the player as a string.
@@ -46,7 +46,7 @@ score_map = HighScore.remove_player(score_map, "Dave Thomas")
 
 ### 4. Reset a player's score
 
-Define `HighScore.remove_player/2`, which takes 2 parameters:
+To reset a player's score, define `HighScore.remove_player/2`, which takes 2 parameters:
 
 - The first parameter is the map of scores.
 - The second parameter is the name of the player as a string, whose score you wish to reset.
@@ -62,7 +62,7 @@ score_map = HighScore.reset_score(score_map, "José Valim")
 
 ### 5. Update a player's score
 
-Define `HighScore.update_player/2`, which takes 3 parameters:
+To update a players score by adding to the previous score, define `HighScore.update_player/2`, which takes 3 parameters:
 
 - The first parameter is the map of scores.
 - The second parameter is the name of the player as a string, whose score you wish to update.
@@ -79,7 +79,7 @@ score_map = HighScore.update_score(score_map, "José Valim", 5)
 
 ### 6. Get a list of players with scores ordered by player name
 
-Define `HighScore.order_by_players/1`, which takes 1 parameter:
+To get a list of players ordered by name, define `HighScore.order_by_players/1`, which takes 1 parameter:
 
 - The first parameter is the map of scores.
 
@@ -96,7 +96,7 @@ HighScore.order_by_players(score_map)
 
 ### 7. Get a list of players ordered by player score in decreasing order
 
-Define `HighScore.order_by_scores/1`, which takes 1 parameter:
+To get a list of players ordered by scores in decreasing order, define `HighScore.order_by_scores/1`, which takes 1 parameter:
 
 - The first parameter is the map of scores.
 
