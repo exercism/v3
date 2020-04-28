@@ -46,6 +46,10 @@ languages
                 └── &lt;SLUG&gt;-test.lisp
 </pre>
 
+**IMPORTANT NOTE:** To create these files, you should use the
+`generate-scaffolding` tool in the `bin/` directory. See [this
+document][scaffolder] to get started.
+
 ## Step 1: Add code files
 
 The code files are track-specific and should be designed to help the student learn the exercise's concepts. The following Common Lisp code files must be added (not necessarily in this order):
@@ -103,3 +107,4 @@ post them as comments in the exercise's GitHub issue.
 [anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
 [reference]: ../../../reference
 [basics]: ../exercises/concept/basics
+[scaffolder]: ../bin/generate-scaffolding/README.md

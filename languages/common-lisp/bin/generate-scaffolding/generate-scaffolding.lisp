@@ -1,8 +1,13 @@
 ;;;; A small tool for generating concept-exercise scaffolding
+(defpackage scaffolder
+  (:use :cl)
+  (:export :make-scaffold :main))
+(in-package :scaffolder)
 
 ;;; Load required libraries
-(ql:quickload :alexandria) ; Loading files to a string
-(ql:quickload :cl-ppcre) ; Regex for search-and-replace
+(eval-when (:compile-toplevel :load-toplevel :execute)
+  (ql:quickload :alexandria) ; Loading files to a string
+  (ql:quickload :cl-ppcre)) ; Regex for search-and-replace
 
 ;;; Declare *SLUG* as a dynamic variable
 (defvar *slug*)
