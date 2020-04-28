@@ -1,4 +1,4 @@
-Great work! [Anonymous functions][anon-fns] are commonly used in Elixir on their own, as return values, and as arguements in higher order functions such as `Enum.map/2`
+Great work! [Anonymous functions][anon-fns] are commonly used in Elixir on their own, as return values, and as arguments in higher order functions such as `Enum.map/2`
 
 ```elixir
 Enum.map([1, 2, 3], &(&1 + 1))
