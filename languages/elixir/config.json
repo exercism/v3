@@ -32,6 +32,12 @@
         "uuid": "3c53b340-680e-45c1-8979-3d79b441a65e",
         "concepts": ["lists", "string-literals"],
         "prerequisites": ["booleans"]
+      },
+      {
+        "slug": "anonymous-functions",
+        "uuid": "1e3ceb20-715c-4157-9192-13284217affc",
+        "concepts": ["anonymous-functions", "closures"],
+        "prerequisites": ["lists"]
       }
     ],
     "practice": []

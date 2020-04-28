@@ -25,18 +25,6 @@ defmodule ClosureMakerTest do
     end
   end
 
-  describe "make_divider" do
-    test "divide by 3" do
-      divider = ClosureMaker.make_divider(3)
-      assert divider.(6) === 2
-    end
-
-    test "divide by 6" do
-      divider = ClosureMaker.make_divider(6)
-      assert divider.(7) === 1
-    end
-  end
-
   describe "make_multiplier" do
     test "multiply by 3" do
       multiplier = ClosureMaker.make_multiplier(3)
@@ -46,6 +34,18 @@ defmodule ClosureMakerTest do
     test "multiply by 6" do
       multiplier = ClosureMaker.make_multiplier(6)
       assert multiplier.(7) === 42
+    end
+  end
+
+  describe "make_divider" do
+    test "divide by 3" do
+      divider = ClosureMaker.make_divider(3)
+      assert divider.(6) === 2
+    end
+
+    test "divide by 6" do
+      divider = ClosureMaker.make_divider(6)
+      assert divider.(7) === 1
     end
   end
 
