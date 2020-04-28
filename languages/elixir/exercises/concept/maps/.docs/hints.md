@@ -1,6 +1,6 @@
 ### General
 
-- A [map][maps] are a associative data structure of key-value pairs.
+- A [map][maps] is an associative data structure of key-value pairs.
 - Elixir offers [many useful Map module functions in the standard library][map-module].
 
 ### 1. Define a new high score map
