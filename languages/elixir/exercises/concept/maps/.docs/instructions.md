@@ -17,7 +17,7 @@ Define `HighScore.add_player/3`, which is a function which takes 3 parameters:
 
 - The first parameter is the map of scores.
 - The second parameter is the name of a player as a string.
-- The third parameter is the score as an integer. The parameter is optional, implement the third parameter with a default value.
+- The third parameter is the score as an integer. The parameter is optional, implement the third parameter with a default value of 0.
 
 ```elixir
 score_map = HighScore.new()
