@@ -5,7 +5,7 @@ Great work, knowing how to effectivly use [maps][maps] is an import skill to use
 - [Maps][maps] are a data structure that holds key-value pairs.
 - Keys can be of any type, but must be unique.
 - Values can be of any type, they do not have to be unique.
-- [Maps][maps] do not guarantee the order of their contents despite appearing so.
+- [Maps][maps] do not guarantee the order of their contents despite appearing to do so.
   - Their underlying implementation gives this misperception:
     - At small sized (<=32 entries), they are implemented as an ordered [Keyword list][keyword-list]
     - At larger sizes (>32 entries), they are implemented as a [hash array mapped trie][hamt] &#91;[1][stackoverflow]&#93;
