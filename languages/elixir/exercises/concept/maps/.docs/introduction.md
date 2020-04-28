@@ -69,7 +69,7 @@ In elixir, we can define module attributes which can be used as constants in our
 defmodule Example do
 
   # Defines the attribute as the value 1
-  @constant_value 1
+  @constant_number 1
   # Overwrites the attribute with the value 2
   @constant_value 2
 
