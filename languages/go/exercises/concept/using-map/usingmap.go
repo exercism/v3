@@ -9,7 +9,8 @@ type TransactionLog struct {
 	qty      int
 }
 
-func calculateTotalIncome(monthlyIncome map[string]int) int {
+// CalculateTotal calculates the total sum of all income.
+func CalculateTotal(income map[string]int) int {
 	panic("Please implement the calculateTotalIncome() function")
 }
 
