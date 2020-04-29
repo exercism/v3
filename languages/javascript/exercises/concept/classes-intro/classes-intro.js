@@ -28,7 +28,7 @@ export class Wizard {
 
     /**
      * This function returns a string saying, 
-     *  "Hi, I'm <name>,"
+     *  "Hi, I'm <name>",
      * where <name> is the wizard's name.
      *
      * @memberof Wizard
