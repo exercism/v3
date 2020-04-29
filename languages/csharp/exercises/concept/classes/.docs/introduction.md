@@ -5,10 +5,6 @@ Access to members can be restricted through access modifiers, the two most commo
 - `public`: the member can be accessed by any code (no restrictions).
 - `private`: the member can only be accessed by code in the same class.
 
-It is customary to specify an access modifier for all members. If no access modifier is specified, it will default to `private`.
-
-The above-mentioned grouping of related data and behavior plus restricting access to members is known as _encapsulation_, which is one of the core object-oriented concepts.
-
 You can think of a class as a template for creating instances of that class. To create an instance of a class (also known as an _object_), the `new` keyword is used:
 
 ```csharp
