@@ -1,4 +1,4 @@
-public class RemoteControlCar
+class RemoteControlCar
 {
     private int battery = 100;
     private int distance = 0;

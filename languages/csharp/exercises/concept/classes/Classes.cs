@@ -1,6 +1,6 @@
 using System;
 
-public class RemoteControlCar
+class RemoteControlCar
 {
     public static RemoteControlCar Buy()
     {
