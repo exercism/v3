@@ -8,6 +8,8 @@ module LogLevel
 end
 
 class LogLine
+  attr_reader :line
+
   LEVELS = {
     unknown: LogLevel::UNKNOWN,
     info: LogLevel::INFO,
@@ -30,10 +32,6 @@ class LogLine
   def short
     "#{level}:#{message}"
   end
-
-  private
-
-  attr_reader :line
 
   def level_string
     line.slice(1, line.index(']') - 1)
