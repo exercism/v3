@@ -14,5 +14,5 @@ func calculateTotalIncome(monthlyIncome map[string]int) int {
 }
 
 func calculateMonthlyIncome(transactionLogs []TransactionLog) (map[string]int, error) {
-	panic("Not Implemented")
+	panic("Please implement the calculateMonthlyIncome() function")
 }
