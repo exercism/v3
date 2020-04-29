@@ -9,7 +9,7 @@ It is customary to specify an access modifier for all members. If no access modi
 
 The above-mentioned grouping of related data and behavior plus restricting access to members is known as _encapsulation_, which is one of the core object-oriented concepts.
 
-You can think of a class as a template for creating instances of that class. To [create an instance of a class][creating-objects], the [`new` keyword][new] is used:
+You can think of a class as a template for creating instances of that class. To [create an instance of a class][creating-objects] (also known as an _object_), the [`new` keyword][new] is used:
 
 ```csharp
 class Car
