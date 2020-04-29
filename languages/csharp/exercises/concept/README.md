@@ -10,7 +10,7 @@ These are the concept exercises that have currently been implemented, as well as
 | ------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------------------------------- |
 | [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`foreach-loops`               | `classes`<br/>`chars`<br/>`booleans`<br/>`conditionals`<br/>`for-loops`           |
 | [`basics`][concept-exercise-basics]                                 | `basics`                                   | -                                                                                 |
-| [`classes`][concept-exercise-classes]                               | `classes`                                  | `basics`<br/>`accessibility`<br/>`classes`                                        |
+| [`classes`][concept-exercise-classes]                               | `classes`                                  | `basics`<br/>`strings`<br/>`conditionals`                                         |
 | [`dates`][concept-exercise-datetimes]                               | `datetimes`                                | `numbers`<br/>`strings`<br/>`classes`                                             |
 | [`enums`][concept-exercise-enums]                                   | `enums`<br/>`pattern-matching-constants`   | `strings`<br/>`conditionals`                                                      |
 | [`flag-enums`][concept-exercise-flag-enums]                         | `flag-enums`<br/>`bit-manipulation`        | `enums`<br/>`attributes`</br>`integers`                                           |
