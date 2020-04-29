@@ -1,13 +1,7 @@
 public class RemoteControlCar
 {
-    private int _battery;
-    private int _distance;
-
-    public RemoteControlCar()
-    {
-        _battery = 100;
-        _distance = 0;
-    }
+    private int _battery = 100;
+    private int _distance = 0;
 
     public void Drive()
     {
