@@ -21,7 +21,7 @@ var myCar = new Car();
 var yourCar = new Car();
 ```
 
-[Fields][fields] have a name and a type and can be defined anywhere in a class:
+[Fields][fields] have a type and a name (defined in camelCase) and can be defined anywhere in a class:
 
 ```csharp
 class Car

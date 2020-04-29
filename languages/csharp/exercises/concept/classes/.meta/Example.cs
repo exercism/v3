@@ -1,30 +1,30 @@
 public class RemoteControlCar
 {
-    private int _battery = 100;
-    private int _distance = 0;
+    private int battery = 100;
+    private int distance = 0;
 
     public void Drive()
     {
-        if (_battery > 0)
+        if (battery > 0)
         {
-            _battery--;
-            _distance += 20;
+            battery--;
+            distance += 20;
         }
     }
 
     public string DistanceDisplay()
     {
-        return $"Driven {_distance} meters";
+        return $"Driven {distance} meters";
     }
 
     public string BatteryDisplay()
     {
-        if (_battery == 0)
+        if (battery == 0)
         {
             return "Battery empty";
         }
 
-        return $"Battery at {_battery}%";
+        return $"Battery at {battery}%";
     }
 
     public static RemoteControlCar Buy()
