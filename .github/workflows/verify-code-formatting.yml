@@ -15,7 +15,7 @@ on:
       - '.prettierrc'
 
 jobs:
-  verify-markdown-formatting:
+  verify-code-formatting:
     runs-on: [ubuntu-latest]
     steps:
       - name: 'Checkout code'
