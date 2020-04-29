@@ -44,8 +44,8 @@ class Car
 }
 
 var newCar = Car();
-car.weight;  // => 2500
-car.year;    // => 0 (default value for int)
+car.weight; // => 2500
+car.year;   // => 0 (default value for int)
 ```
 
 Provided the field is accessible, its value can be updated:
