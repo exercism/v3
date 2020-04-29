@@ -1,4 +1,4 @@
-name: 'Format Markdown code'
+name: 'Format code'
 
 on:
   issue_comment:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   format:
-    name: 'Format Markdown code'
+    name: 'Format code'
     runs-on: ubuntu-latest
     if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/format')
     steps:
@@ -23,15 +23,15 @@ jobs:
           git clone $HEAD_REPO .
           git checkout -b "$HEAD_REF" "origin/$HEAD_REF"
 
-      - name: 'Format Markdown code'
+      - name: 'Format code'
         run: |
           # Use prettier to format the added or modified Markdown files in the PR (if any)
           jq -r '.issue.pull_request.url | . += "/files"' "$GITHUB_EVENT_PATH" | \
             xargs curl --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' --url | \
-            jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match("\\.md$")) | .filename' | \
+            jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match("\\.(md|json)$")) | .filename' | \
             xargs npx prettier@2.0.4 --write
 
-      - name: 'Commit formatted Markdown code'
+      - name: 'Commit formatted code'
         run: |
           # Check if there is nothing to commit (i.e. no formatting changes made)
           if [ -z "$(git status --porcelain)" ]; then
@@ -45,5 +45,5 @@ jobs:
 
           # Commit the changes made by prettier
           git add .
-          git commit -m "[CI] Format Markdown code"
+          git commit -m "[CI] Format code"
           git push

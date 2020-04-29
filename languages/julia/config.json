@@ -1,35 +1,27 @@
 {
-    "language": "Julia",
-    "version": 3,
-    "active": true,
-    "blurb": "Julia is an open-source high-level, dynamic programming language whose sweet spot is technical and scientific computing. It is convenient for day-to-day work and fast enough for high performance computing.",
-    "online_editor": {
-        "indent_style": "space",
-        "indent_size": 4
-    },
-    "exercises": {
-        "concept": [
-            {
-                "uuid": "39ebdd04-4f84-4817-bf9d-f1f9e066c283",
-                "slug": "functions-introduction",
-                "concepts": [
-                    "functions-introduction"
-                ],
-                "prerequisites": []
-            },
-            {
-                "uuid": "68001762-8a35-4494-9de4-624ca9efb5cd",
-                "slug": "multiple-dispatch",
-                "concepts": [
-                    "multiple-dispatch"
-                ],
-                "prerequisites": [
-                    "composite-types",
-                    "abstract-types",
-                    "methods"
-                ]
-            }
-        ],
-        "practice": []
-    }
+  "language": "Julia",
+  "version": 3,
+  "active": true,
+  "blurb": "Julia is an open-source high-level, dynamic programming language whose sweet spot is technical and scientific computing. It is convenient for day-to-day work and fast enough for high performance computing.",
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 4
+  },
+  "exercises": {
+    "concept": [
+      {
+        "uuid": "39ebdd04-4f84-4817-bf9d-f1f9e066c283",
+        "slug": "functions-introduction",
+        "concepts": ["functions-introduction"],
+        "prerequisites": []
+      },
+      {
+        "uuid": "68001762-8a35-4494-9de4-624ca9efb5cd",
+        "slug": "multiple-dispatch",
+        "concepts": ["multiple-dispatch"],
+        "prerequisites": ["composite-types", "abstract-types", "methods"]
+      }
+    ],
+    "practice": []
+  }
 }
