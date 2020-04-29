@@ -1,6 +1,6 @@
 using Xunit;
 
-public class RacingCircuitCarTests
+public class RemoteControlCarTests
 {
     [Fact]
     public void BuyNewCarReturnsInstance()
