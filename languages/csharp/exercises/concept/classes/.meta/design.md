@@ -39,6 +39,7 @@ This Concept Exercise's prerequisites Concepts are:
 
 - `basics`: know how to define a basic class with basic methods.
 - `strings`: know how to do basic string interpolation.
+- `conditionals`: know how to do conditional logic.
 
 ## Representer
 
