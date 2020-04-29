@@ -13,7 +13,7 @@
 - Check whether an item is in the price table with, [see this link][gobyexample-map] and return the error it not ok [see this link][gobyexample-errors]
 - Otherwise, store the monthly income in map, by multiplying the price and the quantity
 - You must convert the quantity to the appropriate type
-- Return  `foo`
+- Return `foo`
 
 ## 3. Count the total income
 
