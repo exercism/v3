@@ -1,12 +1,12 @@
 using System;
 
-public enum Units
+enum Units
 {
     Pounds,
     Kilograms
 }
 
-public class WeighingMachine
+class WeighingMachine
 {
     // TODO: define the 'InputWeight' property
 
