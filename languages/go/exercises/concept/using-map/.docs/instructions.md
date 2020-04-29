@@ -1,6 +1,6 @@
 In this excersie, you'll help uncle Donald to count monthly and total income of his thrift shop, he recorded of all of the transaction in his journal book, but he forgot to put the price it it, here's the price list
 
-| item name        | price |
+| Item name        | Price |
 | ---------------- | ----- |
 | men_tops         | 2     |
 | men_underwares   | 1     |
