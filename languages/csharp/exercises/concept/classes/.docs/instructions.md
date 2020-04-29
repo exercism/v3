@@ -1,45 +1,81 @@
-In this exercise you'll be processing log-lines.
+In this exercise you'll be playing around with a remote controlled car, that you've finally saved enough money for to buy.
 
-Each log line is a string formatted as follows: `"[<LEVEL>]: <MESSAGE>"`.
+Each time you drive the car using the remote control, it covers 20 meters and drains one percent of the battery (which starts at 100%).
 
-There are three different log levels:
+The remote controlled car has a fancy LED display that shows two bits of information:
 
-- `INFO`
-- `WARNING`
-- `ERROR`
+- The total distance it has driven, displayed as: `"Driven <METERS> meters"`.
+- The remaining battery charge, displayed as: `"Battery at <PERCENTAGE>%"`.
 
-You have three tasks, each of which will take a log line and ask you to do something with it.
+If the battery is at 0%, you can't drive the car anymore and the battery display will show `"Battery empty"`.
 
-### 1. Get message from a log line
+You have six tasks, each of which will work with remote controller car instances.
 
-Implement the `LogLine.Message()` method to return a log line's message:
+### 1. Buy a brand-new remote controller car
+
+Implement the `RemoteControlCar.Buy()` method to return a brand-new remote controlled car instance:
 
 ```csharp
-LogLine.Message("[ERROR]: Invalid operation")
-// => "Invalid operation"
+RemoteControlCar car = RemoteControlCar.Buy();
 ```
 
-Any leading or trailing white space should be removed:
+### 2. Display the distance driven
+
+Implement the `RemoteControlCar.DistanceDisplay()` method to return the distance as displayed on the LED display:
 
 ```csharp
-LogLine.Message("[WARNING]:  Disk almost full\r\n")
-// => "Disk almost full"
+var car = RemoteControlCar.Buy();
+car.DistanceDisplay();
+// => "Driven 0 meters"
 ```
 
-### 2. Get log level from a log line
+### 3. Display the battery percentage
 
-Implement the `LogLine.LogLevel()` method to return a log line's log level, which should be returned in lowercase:
+Implement the `RemoteControlCar.BatteryDisplay()` method to return the distance as displayed on the LED display:
 
 ```csharp
-LogLine.LogLevel("[ERROR]: Invalid operation")
-// => "error"
+var car = RemoteControlCar.Buy();
+car.BatteryDisplay();
+// => "Battery at 100%"
 ```
 
-### 3. Reformat a log line
+### 4. Update the number of meters driven when driving
 
-Implement the `LogLine.Reformat()` method that reformats the log line, putting the message first and the log level after it in parentheses:
+Implement the `RemoteControlCar.Drive()` method that updates the number of meters driven:
 
 ```csharp
-LogLine.Reformat("[INFO]: Operation completed")
-// => "Operation completed (info)"
+var car = RemoteControlCar.Buy();
+car.Drive();
+car.Drive();
+car.DistanceDisplay();
+// => "Driven 40 meters"
+```
+
+### 5. Update the battery percentage when driving
+
+Update the `RemoteControlCar.Drive()` method to update the battery percentage:
+
+```csharp
+var car = RemoteControlCar.Buy();
+car.Drive();
+car.Drive();
+car.BatteryDisplay();
+// => "Battery at 98%"
+```
+
+### 6. Don't allowing driving the car when the battery is drained
+
+Update the `RemoteControlCar.Drive()` method to not increase the distance driven nor decrease the battery percentage when the battery is drained (at 0%):
+
+```csharp
+var car = RemoteControlCar.Buy();
+
+// Drain the battery
+// ...
+
+car.DistanceDisplay();
+// => "Driven 2000 meters"
+
+car.BatteryDisplay();
+// => "Battery empty"
 ```

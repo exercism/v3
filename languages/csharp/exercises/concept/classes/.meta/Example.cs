@@ -27,13 +27,8 @@ public class RemoteControlCar
         return $"Battery at {_battery}%";
     }
 
-    public static RemoteControlCar FromFriend()
+    public static RemoteControlCar Buy()
     {
-        var remoteControlCar = new RemoteControlCar();
-        remoteControlCar.Drive();
-        remoteControlCar.Drive();
-        remoteControlCar.Drive();
-
-        return remoteControlCar;
+        return new RemoteControlCar();
     }
 }

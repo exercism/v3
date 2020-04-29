@@ -2,12 +2,9 @@ using System;
 
 public class RemoteControlCar
 {
-    // TODO: define a field to keep track of the battery percentage
-    // TODO: define a field to keep track of the distance driven
-
-    public void Drive()
+    public static RemoteControlCar Buy()
     {
-        throw new NotImplementedException("Please implement the RemoteControlCar.Drive() method");
+        throw new NotImplementedException("Please implement the RemoteControlCar.Buy() method");
     }
 
     public string DistanceDisplay()
@@ -20,8 +17,8 @@ public class RemoteControlCar
         throw new NotImplementedException("Please implement the 'RemoteControlCar.BatteryDisplay()' method");
     }
 
-    public static RemoteControlCar FromFriend()
+    public void Drive()
     {
-        throw new NotImplementedException("Please implement the RemoteControlCar.FromFriend() method");
+        throw new NotImplementedException("Please implement the RemoteControlCar.Drive() method");
     }
 }

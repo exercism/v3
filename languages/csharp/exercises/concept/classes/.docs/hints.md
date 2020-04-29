@@ -1,25 +1,35 @@
 ### General
 
-- The [csharp.net strings tutorial][tutorial-csharp.net-strings] has a nice introduction to C# `string`s.
-- The `string` class has many useful [built-in methods][docs-string-methods].
+### 1. Buy a brand-new remote controller car
 
-### 1. Get message from a log line
+- [This page shows how to create a new instance of a class][creating-objects].
 
-- Different options to search for text in a string are explored in [this tutorial][tutorial-docs.microsoft.com-search-text-in-string].
-- Removing white space is [built-in][tutorial-docs.microsoft.com-trim-white-space].
+### 2. Display the distance driven
 
-### 2. Get log level from a log line
+- Keep track of the distance driven in a [field][fields].
+- Consider what visibility to use for the field (does it need to be used outside the class?).
+- Consider using [string interpolation][string-interpolation] to format the string to return.
 
-- Changing a `string`'s casing is explored in [this tutorial][tutorial-docs.microsoft.com-changing-case].
+### 3. Display the battery percentage
 
-### 3. Reformat a log line
+- Keep track of the distance driven in a [field][fields].
+- Initialize the field to a specific value to correspond to the initial battery charge.
+- Consider what visibility to use for the field (does it need to be used outside the class?).
+- Consider using [string interpolation][string-interpolation] to format the string to return.
 
-- There are several ways to [concatenate strings][tutorial-docs.microsoft.com-concatenate-strings], but the preferred one is usually [string interpolation][tutorial-csharp.net-string-interpolation].
+### 4. Update the number of meters driven when driving
 
-[docs-string-methods]: https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netcore-3.0#methods
-[tutorial-docs.microsoft.com-search-text-in-string]: https://docs.microsoft.com/en-us/dotnet/csharp/how-to/search-strings#where-does-the-sought-text-occur-in-a-string
-[tutorial-docs.microsoft.com-trim-white-space]: https://docs.microsoft.com/en-us/dotnet/csharp/how-to/modify-string-contents#trim-white-space
-[tutorial-docs.microsoft.com-changing-case]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/changing-case
-[tutorial-docs.microsoft.com-concatenate-strings]: https://docs.microsoft.com/en-us/dotnet/csharp/how-to/concatenate-multiple-strings
-[tutorial-csharp.net-strings]: https://csharp.net-tutorials.com/data-types/strings/
-[tutorial-csharp.net-string-interpolation]: https://csharp.net-tutorials.com/operators/the-string-interpolation-operator/
+- Update the field representing the distance driven.
+
+### 5. Update the battery percentage when driving
+
+- Update the field representing the battery percentage driven.
+
+### 6. Don't allowing driving the car when the battery is drained
+
+- Add a conditional to only update the distance and battery if the battery is not already drained.
+- Add a conditional to display the empty battery message if the battery is drained.
+
+[creating-objects]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/classes#creating-objects
+[fields]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/fields
+[string-interpolation]: https://christianfindlay.com/2019/10/04/c-string-interpolation/

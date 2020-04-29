@@ -3,7 +3,9 @@ The primary object-oriented construct in C# is the _class_, which is a grouping 
 Access to members can be restricted through access modifiers, the two most common ones being:
 
 - `public`: the member can be accessed by any code (no restrictions).
-- `private` (default): the member can only be accessed by code in the same class.
+- `private`: the member can only be accessed by code in the same class.
+
+It is customary to specify an access modifier for all members. If no access modifier is specified, it will default to `private`.
 
 The above-mentioned grouping of related data and behavior plus restricting access to members is known as _encapsulation_, which is one of the core object-oriented concepts.
 
@@ -32,7 +34,7 @@ class Car
 }
 ```
 
-One can assign an initial value to a field. If a field does not have an initial value, its default value will be used (this is different per type)
+One can optionally assign an initial value to a field. If a field does _not_ have an initial value, its default value will be used (this is different per type):
 
 ```csharp
 class Car
@@ -42,11 +44,11 @@ class Car
 }
 
 var newCar = Car();
-car.weight; // => 2500
-car.year;   // => 0 (default value for int)
+car.weight;  // => 2500
+car.year;    // => 0 (default value for int)
 ```
 
-The values of the fields of a class instance are often referred to as its _state_. If a field is `public`, a new value can be assigned to it by using the dot-syntax:
+Provided the field is accessible, its value can be updated:
 
 ```csharp
 var lightCar = new Car();
@@ -54,8 +56,17 @@ lightCar.weight = 1200;
 lightCar.weight; // => 1200
 ```
 
-An instance's fields can be updated either by assigning a new value to them or by using a method to update a field.
+Private fields are usually updated as a side-effect of calling a method. Such methods usually don't return any value, in which case the return type should be `void`:
 
-```
+```csharp
+class CarImporter
+{
+    private int carsImported;
 
+    public void ImportCars(int numberOfCars)
+    {
+        // Update private field from public method
+        carsImported = carsImported + numberOfCars;
+    }
+}
 ```
