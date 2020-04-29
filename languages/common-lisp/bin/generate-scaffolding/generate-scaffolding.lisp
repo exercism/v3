@@ -15,7 +15,7 @@
 ;;; Helper functions
 (defun fill-template (template)
   "Searches for placeholders within a template string and replaces them with the appropriate value"
-  (let ((mapping `(("<SLUG>" . ,*slug*) ("<LANG>" . "Common Lisp")))) ; More could be added
+  (let ((mapping `(("SLUG" . ,*slug*)))) ; More could be added
     (reduce (lambda (str map) (cl-ppcre:regex-replace-all (car map) str (cdr map)))
             mapping :initial-value template)))
 
