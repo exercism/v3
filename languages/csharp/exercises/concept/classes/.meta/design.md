@@ -38,7 +38,6 @@ This Concepts Exercise's Concepts are:
 This Concept Exercise's prerequisites Concepts are:
 
 - `basics`: know how to define a basic class with basic methods.
-- `accessibility`: know what `private` and `public` visibility is.
 - `strings`: know how to do basic string interpolation.
 
 ## Representer
