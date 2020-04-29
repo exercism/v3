@@ -8,7 +8,7 @@
 
 ## 2. Complete the monthly income function
 
-- Loop though the yearlyLog
+- Loop through the yearlyLog
 - create a map to hold the monthly income and the total, [see this link][gobyexample-map]
 - Check whether an item is in the price table with, [see this link][gobyexample-map] and return the error it not ok [see this link][gobyexample-errors]
 - Otherwise, store the monthly income in map, by multiplying the price and the quantity
