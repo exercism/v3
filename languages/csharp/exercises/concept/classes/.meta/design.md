@@ -31,7 +31,7 @@ The goal of this exercise is to teach the student the Concept of Classes in C#.
 
 This Concepts Exercise's Concepts are:
 
-- `classes`: know what classes are; know what encapsulation is; know what fields are; know how to define a parameterless constructor; know how to create an object; know how to update state through methods; know about the `void` type.
+- `classes`: know what classes are; know what encapsulation is; know what fields are; know how to create an object; know how to update state through methods; know about the `void` type.
 
 ## Prequisites
 
