@@ -10,7 +10,7 @@ type TransactionLog struct {
 }
 
 func calculateTotalIncome(monthlyIncome map[string]int) int {
-	panic("Not Implemented")
+	panic("Please implement the calculateTotalIncome() function")
 }
 
 func calculateMonthlyIncome(transactionLogs []TransactionLog) (map[string]int, error) {
