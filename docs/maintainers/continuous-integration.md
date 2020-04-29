@@ -6,9 +6,9 @@
   - [`concepts.csv`](#conceptscsv)
   - [CI checks](#ci-checks)
 
-## Markdown formatting
+## Markdown and JSON formatting
 
-The formatting of all Markdown files is automatically checked against the Markdown formatting used by [prettier][prettier].
+The formatting of all Markdown and JSON files is automatically checked against the Markdown and JSON formatting used by [prettier][prettier].
 
 ## Concept CI
 
