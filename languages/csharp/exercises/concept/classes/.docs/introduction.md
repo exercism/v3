@@ -30,7 +30,7 @@ class Car
 }
 ```
 
-One can optionally assign an initial value to a field. If a field does _not_ have an initial value, its default value will be used (this is different per type):
+One can optionally assign an initial value to a field. If a field does _not_ have an initial value, its default value will be used:
 
 ```csharp
 class Car
