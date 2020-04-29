@@ -23,7 +23,7 @@ The goal is to introduce the student to maps.
 
 ## Prequisites
 
-- `numbers`
+- `types`
 - `conditionals`
 - `functions`
 
