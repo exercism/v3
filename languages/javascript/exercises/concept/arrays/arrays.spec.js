@@ -113,7 +113,7 @@ describe('arrays', () => {
   });
 
   describe('checkSizeOfStack', () => {
-    const ccheckSizeOfStackTestCases = [
+    const checkSizeOfStackTestCases = [
       [[], 0, true],
       [[], 1, false],
       [[9], 0, false],
