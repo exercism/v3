@@ -13,7 +13,7 @@ You have six tasks, each of which will work with remote controller car instances
 
 ### 1. Buy a brand-new remote controller car
 
-Implement the (_static_) `Buy()` method to return a brand-new remote controlled car instance:
+Implement the (_static_) `RemoteControlCar.Buy()` method to return a brand-new remote controlled car instance:
 
 ```csharp
 RemoteControlCar car = RemoteControlCar.Buy();
@@ -21,7 +21,7 @@ RemoteControlCar car = RemoteControlCar.Buy();
 
 ### 2. Display the distance driven
 
-Implement the `DistanceDisplay()` method to return the distance as displayed on the LED display:
+Implement the `RemoteControlCar.DistanceDisplay()` method to return the distance as displayed on the LED display:
 
 ```csharp
 var car = RemoteControlCar.Buy();
@@ -31,7 +31,7 @@ car.DistanceDisplay();
 
 ### 3. Display the battery percentage
 
-Implement the `BatteryDisplay()` method to return the distance as displayed on the LED display:
+Implement the `RemoteControlCar.BatteryDisplay()` method to return the distance as displayed on the LED display:
 
 ```csharp
 var car = RemoteControlCar.Buy();
@@ -41,7 +41,7 @@ car.BatteryDisplay();
 
 ### 4. Update the number of meters driven when driving
 
-Implement the `Drive()` method that updates the number of meters driven:
+Implement the `RemoteControlCar.Drive()` method that updates the number of meters driven:
 
 ```csharp
 var car = RemoteControlCar.Buy();
@@ -53,7 +53,7 @@ car.DistanceDisplay();
 
 ### 5. Update the battery percentage when driving
 
-Update the `Drive()` method to update the battery percentage:
+Update the `RemoteControlCar.Drive()` method to update the battery percentage:
 
 ```csharp
 var car = RemoteControlCar.Buy();
@@ -65,7 +65,7 @@ car.BatteryDisplay();
 
 ### 6. Don't allowing driving the car when the battery is drained
 
-Update the `Drive()` method to not increase the distance driven nor decrease the battery percentage when the battery is drained (at 0%):
+Update the `RemoteControlCar.Drive()` method to not increase the distance driven nor decrease the battery percentage when the battery is drained (at 0%):
 
 ```csharp
 var car = RemoteControlCar.Buy();
