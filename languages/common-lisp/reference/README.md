@@ -64,13 +64,6 @@ A more formal, machine-readable version of this concept list exists as
   - Miscellaneous
   - Numbers
   - Tables
-- Loop
-  - Basic
-  - Collecting
-  - Miscellaneous
-  - Ranges
-  - Tests
-  - Traversal
 
 ### CLOS (Needs Some Work)
 

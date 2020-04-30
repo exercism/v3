@@ -97,7 +97,7 @@ Please consult each language's docs folder for more information on the preferred
 
 ## Auto formatting
 
-We're using [prettier][prettier] to ensure that Markdown documents are consistently formatted. This gives us the following benefits:
+We're using [prettier][prettier] to ensure that Markdown and JSON documents are consistently formatted. This gives us the following benefits:
 
 - No formatting discussions.
 - Great editor/IDE integration so files can be formatted on save.
@@ -106,7 +106,7 @@ We're using [prettier][prettier] to ensure that Markdown documents are consisten
 
 All the above will greatly help reduce churn in reviews, whch is frustrating for both the reviewer and the reviewee.
 
-### Using prettier to format Markdown documents
+### Using prettier to format Markdown and JSON documents
 
 There are a couple of ways in which you can format Markdown documents using prettier:
 
@@ -116,7 +116,7 @@ Prettier can be integrated with many [editors][prettier-editor]. This works espe
 
 #### 2. Using a GitHub comment
 
-If you add a comment to a GitHub PR that contains the text `/format`, a GitHub workflow will format all Markdown documents in the PR using prettier. Any formatting changes made by prettier will automatically be committed to the PR's branch. This also works for forks that have [enabled maintainers to edit the fork's PR][allowing-fork-pr-changes].
+If you add a comment to a GitHub PR that contains the text `/format`, a GitHub workflow will format all Markdown and JSON documents in the PR using prettier. Any formatting changes made by prettier will automatically be committed to the PR's branch. This also works for forks that have [enabled maintainers to edit the fork's PR][allowing-fork-pr-changes].
 
 #### 3. Using a script
 
