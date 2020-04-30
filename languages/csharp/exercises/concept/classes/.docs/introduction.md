@@ -17,39 +17,27 @@ var myCar = new Car();
 var yourCar = new Car();
 ```
 
-Fields have a type and a name (defined in camelCase) and can be defined anywhere in a class:
+Fields have a type and a name (defined in camelCase) and can be defined anywhere in a class. One can optionally assign an initial value to a field. If a field does _not_ have an initial value, its default value will be used. An instance's field values can be accessed and updated using dot-notation.
 
 ```csharp
 class Car
 {
-    // Public field, accessible by anyone
-    public int weight;
+    // Accessible by anyone, with default value
+    public int weight = 2500;
 
-    // Private field, only accessible by code in this class
+    // Accessible by anyone
+    public int year;
+
+    // Only accessible by code in this class
     private string color;
 }
-```
 
-One can optionally assign an initial value to a field. If a field does _not_ have an initial value, its default value will be used:
+var newCar = new Car();
+newCar.weight; // => 2500
+newCar.year;   // => 0 (default value for int)
 
-```csharp
-class Car
-{
-    public int weight = 2500;
-    public int year;
-}
-
-var newCar = Car();
-car.weight; // => 2500
-car.year;   // => 0 (default value for int)
-```
-
-Provided the field is accessible, its value can be updated:
-
-```csharp
-var lightCar = new Car();
-lightCar.weight = 1200;
-lightCar.weight; // => 1200
+// Update value of the field
+newCar.year = 2018;
 ```
 
 Private fields are usually updated as a side-effect of calling a method. Such methods usually don't return any value, in which case the return type should be `void`:
