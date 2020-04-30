@@ -28,6 +28,12 @@
         "prerequisites": ["strings", "numbers", "conditionals"]
       },
       {
+        "slug": "constructors",
+        "uuid": "655b5c37-c2eb-4da2-ab0a-3845de898835",
+        "concepts": ["constructors"],
+        "prerequisites": ["classes", "numbers", "conditionals", "while-loops"]
+      },
+      {
         "slug": "dates",
         "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
         "concepts": ["datetimes"],
