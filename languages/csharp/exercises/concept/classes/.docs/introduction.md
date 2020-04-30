@@ -30,21 +30,21 @@ class Car
 }
 ```
 
-One can optionally assign an initial value to a field. If a field does _not_ have an initial value, its default value will be used. An instance's field values can be accessed and updated using dot-notation.
+One can optionally assign an initial value to a field. If a field does _not_ specify an initial value, it wll be set to its type's default value. An instance's field values can be accessed and updated using dot-notation.
 
 ```csharp
 class Car
 {
-    // With initial value
+    // Will be set to specified value
     public int weight = 2500;
 
-    // Will be set to default value
+    // Will be set to default value (0)
     public int year;
 }
 
 var newCar = new Car();
 newCar.weight; // => 2500
-newCar.year;   // => 0 (default value for int)
+newCar.year;   // => 0
 
 // Update value of the field
 newCar.year = 2018;
