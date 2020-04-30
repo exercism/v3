@@ -21,19 +21,29 @@ var myCar = new Car();
 var yourCar = new Car();
 ```
 
-[Fields][fields] have a type and a name (defined in camelCase) and can be defined anywhere in a class. One can optionally assign an initial value to a field. If a field does _not_ have an initial value, its default value will be used. An instance's field values can be accessed and updated using dot-notation.
+[Fields][fields] have a type and a name (defined in camelCase) and can be defined anywhere in a class.
 
 ```csharp
 class Car
 {
-    // Accessible by anyone, with default value
-    public int weight = 2500;
-
     // Accessible by anyone
-    public int year;
+    public int weight;
 
     // Only accessible by code in this class
     private string color;
+}
+```
+
+One can optionally assign an initial value to a field. If a field does _not_ have an initial value, its default value will be used. An instance's field values can be accessed and updated using dot-notation.
+
+```csharp
+class Car
+{
+    // With initial value
+    public int weight = 2500;
+
+    // Will be set to default value
+    public int year;
 }
 
 var newCar = new Car();
