@@ -13,7 +13,7 @@ You have six tasks, each of which will work with remote controller car instances
 
 ### 1. Buy a brand-new remote controller car
 
-Implement the _static_ `Buy()` method to return a brand-new remote controlled car instance:
+Implement the (_static_) `Buy()` method to return a brand-new remote controlled car instance:
 
 ```csharp
 RemoteControlCar car = RemoteControlCar.Buy();
