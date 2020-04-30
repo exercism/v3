@@ -1,5 +1,13 @@
 {
     "semi": false,
     "singleQuote": true,
-    "tabWidth": 4
+    "tabWidth": 4,
+    "overrides": [
+        {
+            "files": "**/*.md",
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
 }
