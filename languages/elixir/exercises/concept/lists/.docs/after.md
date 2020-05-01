@@ -2,7 +2,7 @@
 
 - [Lists][list] are a basic data type.
 - [Lists][list] are implemented as a linked list.
-- [Lists][list] implement the [Enumerable protocol][enum-protocol], which allows the use of [Enum][enum] and [Stream][stream] module functions
+- [Lists][list] implement the [Enumerable protocol][enum-protocol], which allows the use of [Enum][enum] and [Stream][stream] module functions.
 - [Lists][list] can be written in literal form or head-tail notation or mixed.
 
   ```elixir
