@@ -8,9 +8,8 @@ Anonymous functions, in contrast to named functions, don't have a static referen
 
 We might use anonymous functions to:
 
-- Partially apply a function (also known as [currying a function][currying]).
 - Hide data using lexical scope (also known as a closure).
-- dynamically create functions at run-time.
+- Dynamically create functions at run-time.
 
 Anonymous function start with the reserved word `fn`, the parameters are separated from the body of the function with the `->` token, and they are finished with an `end`. As with named functions, the last expression in the function is _implicitly returned_ to the calling function.
 
@@ -33,5 +32,3 @@ variable = &(&1 + 1)
 variable.(1)
 # => 2
 ```
-
-[currying]: https://en.wikipedia.org/wiki/Currying
