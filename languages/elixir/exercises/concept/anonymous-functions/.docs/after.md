@@ -1,4 +1,6 @@
-Great work! [Anonymous functions][anon-fns] are commonly used in Elixir on their own, as return values, and as arguments in higher order functions such as `Enum.map/2`
+Great work! Now we have a system that we can combine functions into a complex encryption. You have now also worked with anonymous functions!
+
+[Anonymous functions][anon-fns] are commonly used throughout Elixir on their own, as return values, and as arguments in higher order functions such as `Enum.map/2`:
 
 ```elixir
 Enum.map([1, 2, 3], &(&1 + 1))
@@ -24,7 +26,7 @@ Enum.map([1, 2, 3], &(&1 + 1))
   # => 2
   ```
 
-  - they may be immediatly invoked on creation:
+  - they may be immediately invoked on creation:
 
   ```elixir
   (fn x, y -> x + y end).(2, 3)
@@ -62,7 +64,7 @@ Enum.map([1, 2, 3], &(&1 + 1))
   &<=/2
   ```
 
-- Bound varables from an outer scope can be used in an inner scope using the bound variable name to [create closures].
+- Bound varables from an outer scope can be used in an inner scope using the bound variable name to [create closures][closure].
 
   ```elixir
   def return_closure(x) do
@@ -70,6 +72,10 @@ Enum.map([1, 2, 3], &(&1 + 1))
   end
   ```
 
+- [Bitwise binary functions][bitwise-wiki] can be performed on an integers' binary representation using functions from the [Bitwise module][bitwise-hexdocs]
+
 [anon-fns]: https://elixir-lang.org/getting-started/basic-types.html#anonymous-functions
+[bitwise-hexdocs]: https://hexdocs.pm/elixir/Bitwise.html
+[bitwise-wiki]: https://en.wikipedia.org/wiki/Bitwise_operation
 [capture]: https://dockyard.com/blog/2016/08/05/understand-capture-operator-in-elixir
-[closures]: https://inquisitivedeveloper.com/lwm-elixir-45/
+[closure]: https://en.wikipedia.org/wiki/Closure_(computer_programming)

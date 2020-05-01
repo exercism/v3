@@ -16,6 +16,14 @@ defmodule Secrets do
     raise "Please implement the secret_divide/1 function."
   end
 
+  def secret_and(secret) do
+    raise "Please implement the secret_and/1 function."
+  end
+
+  def secret_xor(secret) do
+    raise "Please implement the secret_xor/1 function."
+  end
+
   def secret_combine(secret_f, secret_g) do
     raise "Please implement the secret_combine/2 function."
   end
