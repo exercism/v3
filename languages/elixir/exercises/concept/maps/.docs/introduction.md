@@ -43,5 +43,3 @@ end
 ```
 
 When used to define module constants, attributes can be any expression which can be evaluated at compilation time. After compilation, module attributes are not accessible since they are expanded during compilation, similar to defined macros in languages like C.
-
-[hamt]: https://en.wikipedia.org/wiki/Hash_array_mapped_trie
