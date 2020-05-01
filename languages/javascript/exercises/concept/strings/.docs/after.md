@@ -1,4 +1,4 @@
-The key thing to remember about JavaScript strings is that they can call methods like `toUpperCase`, `trim`, etc.
+The key thing to remember about JavaScript strings is that we can call methods on them like `toUpperCase`, `trim`, etc.
 
 You can find all the methods in the [MDN docs].
 
