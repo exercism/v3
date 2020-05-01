@@ -8,7 +8,7 @@ The first is the `charAt()` method:
 // => "a"
 ```
 
-The other way is to treat a string as an array-like object, where individual characters correspond to a numerical index(starts at zero):
+The other way is to treat a `string` as a list of characters, where individual characters correspond to a numerical index (starts at zero):
 
 ```javascript
 'cat'[1]
