@@ -1,6 +1,6 @@
 ### General
 
-### 1. Buy a brand-new remote controller car
+### 1. Buy a brand-new remote controlled car
 
 - [This page shows how to create a new instance of a class][creating-objects].
 
