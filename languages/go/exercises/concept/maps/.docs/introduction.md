@@ -1,6 +1,8 @@
 `map` in go is a key-value type. In other programming language, you might know map as `dict` or associative array. The value of an uninitialized map is `nil`, and you can define map as follows
 
-`make(map[string]int)`
+```go
+  make(map[string]int)
+```
 
 or
 

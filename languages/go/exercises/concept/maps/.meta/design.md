@@ -9,22 +9,22 @@ The goal is to introduce the student to maps.
 - initializing maps, empty and with values.
 - nil map will panic
 - setting key/value pairs
+- iterate over map
 - reading a key, non-existent key returns zero value of value type
 - using ok to check if the key existed
 
 ## Out of scope
 
-- iterate over map
 - `map` data race
 
 ## Concepts
 
-- `maps`:
+- `maps`
 
 ## Prequisites
 
-- `types`
 - `conditionals`
+- `errors`
 - `functions`
 
 ## Representer
