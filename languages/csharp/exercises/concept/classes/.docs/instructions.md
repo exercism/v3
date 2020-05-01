@@ -9,9 +9,9 @@ The remote controlled car has a fancy LED display that shows two bits of informa
 
 If the battery is at 0%, you can't drive the car anymore and the battery display will show `"Battery empty"`.
 
-You have six tasks, each of which will work with remote controller car instances.
+You have six tasks, each of which will work with remote controlled car instances.
 
-### 1. Buy a brand-new remote controller car
+### 1. Buy a brand-new remote controlled car
 
 Implement the (_static_) `RemoteControlCar.Buy()` method to return a brand-new remote controlled car instance:
 
@@ -63,7 +63,7 @@ car.BatteryDisplay();
 // => "Battery at 98%"
 ```
 
-### 6. Don't allowing driving the car when the battery is drained
+### 6. Prevent driving when the battery is drained
 
 Update the `RemoteControlCar.Drive()` method to not increase the distance driven nor decrease the battery percentage when the battery is drained (at 0%):
 
