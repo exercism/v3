@@ -21,7 +21,7 @@ var myCar = new Car();
 var yourCar = new Car();
 ```
 
-[Fields][fields] have a type and a name (defined in camelCase) and can be defined anywhere in a class.
+[Fields][fields] have a type and a name (defined in [camelCase][camel-case]) and can be defined anywhere in a class (defined in [PascalCase][pascal-case]).
 
 ```csharp
 class Car
@@ -96,3 +96,5 @@ class CarImporter
 [public]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public
 [private]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private
 [default-values]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/default-values
+[camel-case]: https://techterms.com/definition/camelcase
+[pascal-case]: https://techterms.com/definition/pascalcase

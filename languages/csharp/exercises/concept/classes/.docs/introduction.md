@@ -17,7 +17,7 @@ var myCar = new Car();
 var yourCar = new Car();
 ```
 
-Fields have a type and a name (defined in camelCase) and can be defined anywhere in a class:
+Fields have a type and a name (defined in camelCase) and can be defined anywhere in a class (defined in PascalCase):
 
 ```csharp
 class Car
