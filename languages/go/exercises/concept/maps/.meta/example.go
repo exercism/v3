@@ -1,14 +1,9 @@
 package maps
 
-import (
-	"errors"
-)
-
-const (
-	lose = iota
-	draw
-	win
-)
+var result = map[string]int{
+	"draw": 1,
+	"win":  1,
+}
 
 // pointsTable hold points for each team
 var pointsTable map[string]int
@@ -20,41 +15,22 @@ func CalculatePoints(homeTeam string, awayTeam string, homeScore int, awayScore 
 	}
 
 	if homeScore > awayScore {
-		pointsTable[homeTeam] += win
+		pointsTable[homeTeam] += result["win"]
 	} else if homeScore < awayScore {
-		pointsTable[awayTeam] += win
+		pointsTable[awayTeam] += result["win"]
 	} else if homeScore == awayScore {
-		pointsTable[homeTeam] += draw
-		pointsTable[awayTeam] += draw
+		pointsTable[homeTeam] += result["draw"]
+		pointsTable[awayTeam] += result["draw"]
 	}
 
 	return true
 }
 
 // GetPoints return score for a team based on `team` parameter
-func GetPoints(team string) (int, error) {
+func GetPoints(team string) (int, bool) {
 	if _, ok := pointsTable[team]; !ok {
-		return 0, errors.New("Team not found")
+		return 0, false
 	}
 
-	return pointsTable[team], nil
-}
-
-// LeagueWinner return the team which win the league
-func LeagueWinner() (string, int, error) {
-	if len(pointsTable) == 0 {
-		return "", 0, errors.New("No data")
-	}
-
-	var winner string
-	var winnerScore int
-
-	for team, score := range pointsTable {
-		if score > winnerScore {
-			winner = team
-			winnerScore = score
-		}
-	}
-
-	return winner, winnerScore, nil
+	return pointsTable[team], false
 }
