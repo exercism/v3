@@ -1,7 +1,7 @@
 Strings are useful for holding data that can be represented in text form.
 There are two ways to access an individual character in a string.
 
-The first is the charAt() method:
+The first is the `charAt()` method:
 
 ```javascript
 'cat'.charAt(1)
