@@ -1,4 +1,4 @@
-In this exercise you're going to write a module to create and manipulate a map of high scores.
+In this exercise, you're implementing a way to keep track of the high scores for the most popular game in your local arcade hall.
 
 You have 7 functions to implement, all related to returning and manipulating a map of high score data.
 
