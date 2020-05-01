@@ -37,7 +37,12 @@
         "slug": "maps",
         "uuid": "e7f3ba2b-a380-45d3-a48d-7ef3dc318a31",
         "concepts": ["module-attributes-as-constants", "maps"],
-        "prerequisites": ["lists", "tuples", "anonymous-functions", "default-arguments"]
+        "prerequisites": [
+          "lists",
+          "tuples",
+          "anonymous-functions",
+          "default-arguments"
+        ]
       }
     ],
     "practice": []
