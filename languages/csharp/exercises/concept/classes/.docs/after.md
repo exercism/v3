@@ -34,7 +34,7 @@ class Car
 }
 ```
 
-One can optionally assign an initial value to a field. If a field does _not_ specify an initial value, it wll be set to its type's default value. An instance's field values can be accessed and updated using dot-notation.
+One can optionally assign an initial value to a field. If a field does _not_ specify an initial value, it wll be set to its type's [default value][default-values]. An instance's field values can be accessed and updated using dot-notation.
 
 ```csharp
 class Car
@@ -95,3 +95,4 @@ class CarImporter
 [fields]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/fields
 [public]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public
 [private]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private
+[default-values]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/default-values
