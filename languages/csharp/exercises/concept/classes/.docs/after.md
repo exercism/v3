@@ -1,4 +1,4 @@
-The primary object-oriented construct in C# is the _class_, which is a grouping of related data ([_fields_][fields]) and behavior ([_methods_][methods]). The fields and methods of a class are known as its _members_.
+The primary object-oriented construct in C# is the _class_, which is a combination of data ([_fields_][fields]) and behavior ([_methods_][methods]). The fields and methods of a class are known as its _members_.
 
 Access to members can be restricted through access modifiers, the two most common ones being:
 
