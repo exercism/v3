@@ -25,7 +25,7 @@
 
 - Update the field representing the battery percentage driven.
 
-### 6. Don't allowing driving the car when the battery is drained
+### 6. Prevent driving when the battery is drained
 
 - Add a conditional to only update the distance and battery if the battery is not already drained.
 - Add a conditional to display the empty battery message if the battery is drained.
