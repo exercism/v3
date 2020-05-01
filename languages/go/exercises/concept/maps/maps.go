@@ -5,6 +5,11 @@ func CalculatePoints(homeTeam string, awayTeam string, homeScore int, awayScore 
 	panic("Please implement the CalculatePoints() function")
 }
 
+// GetPoints return score for a team based on `team` parameter
+func GetPoints(team string) (int, error) {
+	panic("Please implement the GetPoints() function")
+}
+
 // LeagueWinner return the team which win the league
 func LeagueWinner() (string, int, error) {
 	panic("Please implement the LeagueWinner() function")
