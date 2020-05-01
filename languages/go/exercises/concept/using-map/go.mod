@@ -1,3 +1,3 @@
-module numbers
+module usingmap
 
 go 1.13

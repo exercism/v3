@@ -9,10 +9,12 @@ type TransactionLog struct {
 	qty      int
 }
 
-func calculateTotalIncome(monthlyIncome map[string]int) int {
-	panic("Not Implemented")
+// CalculateTotal calculates the total sum of all income.
+func CalculateTotal(income map[string]int) int {
+	panic("Please implement the calculateTotalIncome() function")
 }
 
-func calculateMonthlyIncome(transactionLogs []TransactionLog) (map[string]int, error) {
-	panic("Not Implemented")
+// CalculateMonthly generates an overview of the income per month.
+func CalculateMonthly(transactions []Transaction) (map[string]int, error) {
+	panic("Please implement the calculateMonthlyIncome() function")
 }

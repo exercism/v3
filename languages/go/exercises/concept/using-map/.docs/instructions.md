@@ -1,6 +1,6 @@
 In this excersie, you'll help uncle Donald to count monthly and total income of his thrift shop, he recorded of all of the transaction in his journal book, but he forgot to put the price it it, here's the price list
 
-| item name        | price |
+| Item name        | Price |
 | ---------------- | ----- |
 | men_tops         | 2     |
 | men_underwares   | 1     |
@@ -11,7 +11,7 @@ In this excersie, you'll help uncle Donald to count monthly and total income of 
 | women_underwares | 2     |
 | women_jeans      | 3     |
 
-## 1. Store the price table in your code, using map literal
+## 1. Define the price table
 
 ## 2. Count the monthly income
 

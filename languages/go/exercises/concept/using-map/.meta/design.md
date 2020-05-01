@@ -8,7 +8,7 @@ The goal is to introduce the student to maps.
 
 - initializing maps, empty and with values.
 - nil map will panic
-- settings key/value pairs
+- setting key/value pairs
 - reading a key, non-existent key returns zero value of value type
 - using ok to check if the key existed
 
@@ -23,7 +23,7 @@ The goal is to introduce the student to maps.
 
 ## Prequisites
 
-- `numbers`
+- `types`
 - `conditionals`
 - `functions`
 
