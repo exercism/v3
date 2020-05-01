@@ -19,7 +19,7 @@ class WeighingMachine
     // TODO: define the 'Units' property
 }
 
-public struct USWeight
+struct USWeight
 {
     public USWeight(decimal weightInPounds)
     {

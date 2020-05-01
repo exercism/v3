@@ -9,7 +9,7 @@ enum LogLevel
     Unknown = 42
 }
 
-public static class LogLine
+static class LogLine
 {
     public static LogLevel ParseLogLevel(string logLine)
     {

@@ -17,7 +17,7 @@ enum Permission
     All = Read | Write | Delete
 }
 
-public static class Permissions
+static class Permissions
 {
     public static Permission Default(AccountType accountType)
     {
