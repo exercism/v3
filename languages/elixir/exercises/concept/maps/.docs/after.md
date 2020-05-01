@@ -1,4 +1,4 @@
-Great work, knowing how to effectivly use [maps][maps] is an import skill to use Elixir fluently.
+Great work, knowing how to effectivly use [maps][maps] is an important skill to use Elixir fluently.
 
 ## Key points
 
