@@ -27,6 +27,12 @@
         "uuid": "d7108eb2-326c-446d-9140-228e0f220975",
         "concepts": ["numbers", "conditionals"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "floating-point-numbers",
+        "uuid": "970d3f26-1891-40c7-9550-42d529f5780f",
+        "concepts": ["floating-point-numbers", "loops"],
+        "prerequisites": ["numbers", "conditionals"]
       }
     ],
     "practice": []
