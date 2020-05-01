@@ -51,7 +51,7 @@ The code files are track-specific and should be designed to help the student lea
 **Purpose:** Provide a stub implementation.
 
 - The stub implementation's code should compile. The only exception is for exercises that introduce syntax we _want_ a student to define themselves, like how to define a class or property. In this case, insert a descriptive TODO comment instead of providing stub code (see [this example][todo]).
-- Stub methods should throw a `NotImplementedException` which message contains the method to implement. See [this instance method example][not-implemented]. The message is subtly different for static stub methods. See [this static method example][not-implemented-static].
+- Stub methods should throw a `NotImplementedException` which message contains the method to implement, see [this instance method example][not-implemented]. The message is subtly different for static stub methods, see [this static method example][not-implemented-static].
 
 For more information, please read [this in-depth description][stub-file], [watch this video][video-stub-file] and check [this example stub file][example-stub-file].
 
