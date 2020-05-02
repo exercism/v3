@@ -20,7 +20,7 @@
 - Don't update the distance driven if the battery is drained.
 - Remember that if the battery charge is less than the battery drain percentage, it is considered drained.
 
-### 5. Create the top of the line remote control car
+### 5. Create the Nitro remote control car
 
 - [Instantiate][instance-constructors] an instance of the `RemoteControlCar` with the correct arguments.
 
