@@ -10,8 +10,15 @@ export class Wand {
 
 
     /**
-     * A wand needs
+     * A wand needs to be able to 
      */
+    useSpell(spell) {
+
+    }
+
+    info() {
+        
+    }
 }
 
 export class Wizard {
