@@ -2,7 +2,7 @@ using System;
 
 class RemoteControlCar
 {
-    // TODO: define the 'RemoteControlCar' classes' constructor
+    // TODO: define the 'RemoteControlCar' class' constructor
 
     public bool BatteryDrained()
     {
