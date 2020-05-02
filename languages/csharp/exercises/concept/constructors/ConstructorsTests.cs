@@ -128,7 +128,7 @@ public class RemoteControlCarTests
 public class RaceTrackTests
 {
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void CarCanFinishWithCarThanCanEasilyFinish()
+    public void CarCanFinishWithCarThatCanEasilyFinish()
     {
         int speed = 10;
         int batteryDrain = 2;
@@ -141,7 +141,7 @@ public class RaceTrackTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void CarCanFinishWithCarThanCanJustFinish()
+    public void CarCanFinishWithCarThatCanJustFinish()
     {
         int speed = 2;
         int batteryDrain = 10;
@@ -154,7 +154,7 @@ public class RaceTrackTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void CarCanFinishWithCarThanJustCannotFinish()
+    public void CarCanFinishWithCarThatJustCannotFinish()
     {
         int speed = 3;
         int batteryDrain = 20;
@@ -167,7 +167,7 @@ public class RaceTrackTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void CarCanFinishWithCarThanCannotFinish()
+    public void CarCanFinishWithCarThatCannotFinish()
     {
         int speed = 1;
         int batteryDrain = 20;
