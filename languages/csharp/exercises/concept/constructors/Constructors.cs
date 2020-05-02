@@ -27,7 +27,7 @@ class RemoteControlCar
 
 class RaceTrack
 {
-    // TODO: define the 'RaceTrack' classes' constructor
+    // TODO: define the 'RaceTrack' class' constructor
 
     public bool CarCanFinish(RemoteControlCar car)
     {
