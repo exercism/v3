@@ -46,5 +46,13 @@ describe("class-intro", () => {
                 expect(wizard.nemesis).toBe(nemesis)
             })
         })
+
+        it("can say hi", () => {
+            wizard_initialize_arr.forEach(([name, colour, nemesis]) => {
+                const wizard = new Wizard(name, colour, nemesis);
+
+                expect(wizard.sayHi()).toBe(`Hi there, I'm ${name}. My favourite colour is ${colour} and I hate ${nemesis}.`)
+            })
+        })
     })
 })
