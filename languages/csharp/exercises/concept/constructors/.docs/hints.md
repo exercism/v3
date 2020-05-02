@@ -6,7 +6,7 @@
 ### 2. Creating a race track
 
 - [Define a constructor][constructor-syntax] that has one `int` parameter.
-- Store the parameter as a [fields][fields] to access it from the class' method.
+- Store the parameter as a [field][fields] to access it from the class' method.
 
 ### 3. Drive the car
 
