@@ -32,3 +32,31 @@ variable = &(&1 + 1)
 variable.(1)
 # => 2
 ```
+
+#### Bitwise operations
+
+Bitwise operations are performed on the binary representation of data. Performing a _bitwise-and_ on the binary numbers, `1` and `0`, results in `0` because the bits differ. In contrast _bitwise-or_ on the binary numbers, `1` and `0`, results in `1`.
+
+It may seem that these operations resemble boolean logic. The difference is bitwise operations are performed on a binary number of any length, not limited to 1-bit.
+
+```text
+              1010100
+(bitwise-and) 1101010
+              -------
+              1000000
+
+
+              1010100
+ (bitwise-or) 1101010
+              -------
+              1111110
+
+              1010100
+(bitwise-xor) 1101010
+              -------
+              0111110
+```
+
+In these examples, we can see the operation being performed on the pair of binary numbers, where the each digit in the top row is applied one-by-one to the digit in the bottom row to obtain the result.
+
+Elixir supports these operations with functions found in the _Bitwise module_.
