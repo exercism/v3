@@ -16,7 +16,7 @@ class Library
 var library = new Library();
 ```
 
-Like regular methods, constructors can have parameters. Constructor parameters are usually stored as (private) fields to be accessed later, or else used in some off-time calculation. Arguments can be passed to constructors just like passing arguments to regular methods.
+Like regular methods, constructors can have parameters. Constructor parameters are usually stored as (private) fields to be accessed later, or else used in some one-off calculation. Arguments can be passed to constructors just like passing arguments to regular methods.
 
 ```csharp
 class Building
