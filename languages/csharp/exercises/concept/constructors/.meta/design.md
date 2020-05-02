@@ -6,16 +6,16 @@ The goal of this exercise is to teach the student the Concept of Constructors in
 
 ## Learning objectives
 
-- Know what constructors are.
-- Know how to define parameterless constructors.
-- Know how to define parameterized constructors.
+- Know what constructors are
+- Know how to define parameterless constructors
+- Know how to define parameterized constructors
 
 ## Out of scope
 
-- Constructor overloading.
-- Private constructors.
-- Static constructors.
-- Destructors.
+- Constructor overloading
+- Private constructors
+- Static constructors
+- Destructors
 
 ## Concepts
 
