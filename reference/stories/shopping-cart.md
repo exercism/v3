@@ -1,6 +1,6 @@
 # Shopping cart exercise
 
-There are multiple ways of solving this exercise. It's probably necessary to master some basic concepts like: strings, hashes or collections before this exercise can be tackle.
+There are multiple ways of solving this exercise. It's probably necessary to master some basic concepts like: strings, hashes or collections before this exercise can be tackled.
 It's probably a good candidate to introduce the concept of state.
 
 ## Instructions
