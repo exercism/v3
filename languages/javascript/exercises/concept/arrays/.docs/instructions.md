@@ -34,7 +34,6 @@ insertItemAtTop([5, 9, 7, 1], newCard)
 // => [5, 9, 7, 1, 8]
 ```
 
-
 ### 4. Remove a card from the stack
 
 Remove the card at position `index` from the stack and return the stack.
