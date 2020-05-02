@@ -267,3 +267,7 @@ The concept exercises use the following concepts:
 | `string-literals`     | Introduction to strings in code enclosed by double quotes.                                     |
 | `anonymous-functions` | Intro to anonymous functions, functions as data                                                |
 | `closures`            | How to implement closures in elixir                                                            |
+| `tuples`                         | Introduction to the tuple data type                                                            |
+| `maps`                           | Introduction to the map data type                                                              |
+| `default-arguments`              | Introduction to default arguments in named functions                                           |
+| `module-attributes-as-constants` | Introduction to using module attributes as constants                                           |
