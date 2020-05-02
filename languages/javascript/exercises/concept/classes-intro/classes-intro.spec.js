@@ -1,14 +1,18 @@
 import { Wizard, Wand } from "./classes-intro";
 
-const initialize_arr = [
+const wand_initialize_arr = [
     ["Dragon Heartstring", "Oak"]
+]
+
+const wizard_initialize_arr = [
+    ["Dumbledore", "Purple", "Voldemort"]
 ]
 
 describe("class-intro", () => {
     describe("wandTests", () => {
         it("can construct with a variety of options", () => {
 
-            initialize_arr.forEach(initializer => {
+            wand_initialize_arr.forEach(initializer => {
                 const wand = new Wand(initializer[0], initializer[1]);
 
                 expect(wand.core).toBe(initializer[0]);
@@ -16,7 +20,7 @@ describe("class-intro", () => {
             })
         })
         it("can do spells", () => {
-            const wand = new Wand(...initialize_arr[0]);
+            const wand = new Wand(...wand_initialize_arr[0]);
 
             const spell = "expelliarmus";
 
@@ -25,10 +29,22 @@ describe("class-intro", () => {
 
         it("can display information based off of its properties", () => {
 
-            initialize_arr.forEach(([core, material]) => {
+            wand_initialize_arr.forEach(([core, material]) => {
                 const wand = new Wand(core, material);
                 expect(wand.info()).toBe(`This wand is made of ${material}, and has a core of ${core}.`)
             })
         })
     })  
+
+    describe("wizardTests", () => {
+        it("can construct with a variety of options", () => {
+            wizard_initialize_arr.forEach(([name, colour, nemesis]) => {
+                const wizard = new Wizard(name, colour, nemesis);
+
+                expect(wizard.name).toBe(name)
+                expect(wizard.colour).toBe(colour)
+                expect(wizard.nemesis).toBe(nemesis)
+            })
+        })
+    })
 })
