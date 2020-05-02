@@ -1,4 +1,4 @@
-module Dates
+module Datetimes
 
 // The following line is needed to use the DateTime type
 open System

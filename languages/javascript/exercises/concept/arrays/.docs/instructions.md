@@ -24,6 +24,17 @@ setItem([1, 2, 4, 1], index, newCard)
 // => [1, 2, 6, 1]
 ```
 
+### 3. Insert a card at the of top the stack
+
+Insert new card at the top of the stack and return the stack.
+
+```javascript
+const newCard = 8
+insertItemAtTop([5, 9, 7, 1], newCard)
+// => [5, 9, 7, 1, 8]
+```
+
+
 ### 4. Remove a card from the stack
 
 Remove the card at position `index` from the stack and return the stack.
@@ -43,7 +54,26 @@ removeItemFromTop([3, 2, 6, 4, 8])
 // => [3, 2, 6, 4]
 ```
 
-### 6. Check size of the stack
+### 6. Insert a card at the bottom of the stack
+
+Insert new card at the bottom of the stack and return the stack.
+
+```javascript
+const newCard = 8
+insertItemAtBottom([5, 9, 7, 1], newCard)
+// => [8, 5, 9, 7, 1]
+```
+
+### 7. Remove a card from the bottom of the stack
+
+Remove the card at the bottom of the stack and return the stack.
+
+```javascript
+removeItemAtBottom([8, 5, 9, 7, 1])
+// => [5, 9, 7, 1]
+```
+
+### 8. Check size of the stack
 
 Check whether the size of the stack is equal a given `stackSize` or not.
 

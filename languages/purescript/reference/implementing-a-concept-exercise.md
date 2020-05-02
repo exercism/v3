@@ -19,7 +19,7 @@ As this document is generic, the following placeholders are used:
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue.
 
-To implement a concept exercise, the following files need to be created:
+To implement a concept exercise, the following files need to be added:
 
 <pre>
 languages
@@ -44,7 +44,7 @@ languages
                 └── bower.json
 </pre>
 
-## Step 1: add track-specific files
+## Step 1: Add code files
 
 These are files specific to the PureScript track:
 
@@ -53,7 +53,7 @@ These are files specific to the PureScript track:
 - `bower.json`: the bower project file.
 - `.meta/Example.purs`: an example implementation that passes all the tests.
 
-## Step 2: add common files
+## Step 2: Add documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise].
 

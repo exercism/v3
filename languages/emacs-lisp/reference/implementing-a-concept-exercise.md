@@ -1,6 +1,6 @@
 # How to implement an Emacs Lisp concept exercise
 
-To implement an Emacs Lisp concept exercise, the following files must be created:
+To implement an Emacs Lisp concept exercise, the following files must be added:
 
 ```
 languages
@@ -12,7 +12,7 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   └── after.md (optional)
+                |   └── after.md
                 ├── .meta
                 |   |── design.md
                 |   └── Example.el
