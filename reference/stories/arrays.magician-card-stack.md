@@ -58,6 +58,12 @@ Example usage: [`research/javascript-1-a`][javascript-research-1-a]
 
 # Related
 
-[arrays]: ../types/arrays.md
+- [`type/arrays`][type-arrays]
+- [`javascript/concept/arrays`][javascript-concept-arrays]
+- [`research/javascript-1-a`][javascript-research-1-a]
+- [`research/javascript-2-a`][javascript-research-2-a]
+
+[type-arrays]: ../types/arrays.md
 [javascript-concept-arrays]: ../../languages/javascript/exercises/concept/arrays
 [javascript-research-1-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-1-a
+[javascript-research-2-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-2-a
