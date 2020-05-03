@@ -1,15 +1,46 @@
-Story - WIP
+A friend of you has an old wholesale store called **Gross Store**, the name came from the quantity of the item that the store sell, it's all in [gross unit](gross-unit). Your friend asked you to implement a point of sale (POS) system for his store, **but  first, you want to build a prototype for it, in your prototype, your system will only record the quantity**. Your friend gave you a list of measurements to help you:
 
-## 1. Calculate points for each match
+| Unit               | Score |
+| ------------------ | ----- |
+| quarter_of_a_dozen | 3     |
+| half_of_a_dozen    | 6     |
+| dozen              | 12    |
+| small_gross        | 120   |
+| gross              | 144   |
+| great_gross        | 1728  |
 
-Implement the `CalculatePoints` function, this function will calculate each match point based on this rules
+## 1. Store the unit of measurement in your program
 
-| Result | Score |
-| ------ | ----- |
-| Lose   | 0     |
-| Draw   | 1     |
-| Win    | 2     |
+In order to use the measurement, you need to store the measurement in your program.
 
-## 2. Implement GetPoints function
+## 2. Implement `AddItem`
 
-Implement `GetPoints` function, this function will return points for a team
+This function will add item to the customer bill, to implement this, you'll need to:
+
+- Check whether the given unit of measurement is correct
+- Add the item to the customer bill
+
+## 3. Implement `RemoveItem`
+
+This function will remove item from the customer bill, to implement this, you'll need to:
+
+- Check whether the given item is in the bill
+- Check whether the given unit of measurement is correct
+- Check whether the new quantity is less than 0, is so return `false`
+- Check whether the new quantity is 0, is so return remove the item from the customer bill
+- Otherwise reduce the quantity of the item
+
+## 4. Implement `GetItem`
+
+This function will return the number of specific item that the customer has in his/her bill, to implement this, you'll need to:
+
+- Check whether the given item is in the bill
+- Otherwise, return the quantity of the item
+
+## 5. Implement `Checkout`
+
+This function supposed to do a payment to the customer bank, since you're developing a prototype, you'll just need to:
+
+- Reset the customer bill
+
+[gross-unit]: https://en.wikipedia.org/wiki/Gross_(unit)

@@ -21,7 +21,7 @@ The goal is to introduce the student to maps.
 
 - `maps`
 
-## Prequisites
+## Prerequisites
 
 - `numbers`
 - `conditionals`

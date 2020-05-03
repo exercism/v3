@@ -1,16 +1,29 @@
 ## General
 
-- [Golang map][gobyexample-map]
+- [Go by example map][gobyexample-map]
+- [Go maps in action][goblog-map]
 
-## 1. Calculate points for each match
+## 1. Store the unit of measurement in your program
 
-- Create a global map to store the points and game result for each team
-- Calculate points based on the match score, see instruction to determine the point for each result
+- To store the measurement in your program, you can use map literal,  see [go blog about map][goblog-map]
 
-## 2. Implement GetPoints function
+## 2. Implement `AddItem`
 
-- You need to check whether the team is in the your point table or not
-- If the asked team is not in point table, return an error
-- Otherwise, return the score
+- To check whether the given unit of measurement is correct, you can test your measurement map for a key without retrieving a value, see [go blog about map][goblog-map]
+
+## 3. Implement `RemoveItem`
+
+- To check whether the given item is in customer bill, you can test your measurement map for a key without retrieving a value, see [go blog about map][goblog-map]
+
+- To check whether the given unit of measurement is correct, you can test your measurement map for a key without retrieving a value, see [go blog about map][goblog-map]
+
+## 4. Implement `GetItem`
+
+- To check whether the given item is in customer bill, you can test your measurement map for a key without retrieving a value, see [go blog about map][goblog-map]
+
+## 5. Implement `Checkout`
+
+- To reset the customer bill, you all you need to do is reinitialize the customer, see [go blog about map][goblog-map]
 
 [gobyexample-map]: https://gobyexample.com/maps
+[goblog-map]: https://blog.golang.org/maps
