@@ -5,7 +5,7 @@
 
 ## 1. Store the unit of measurement in your program
 
-- To store the measurement in your program, you can use map literal,  see [go blog about map][goblog-map]
+- To store the measurement in your program, you can use map literal, see [go blog about map][goblog-map]
 
 ## 2. Implement `AddItem`
 
