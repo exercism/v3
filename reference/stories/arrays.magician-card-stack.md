@@ -37,8 +37,6 @@ These are recommendations, not rules, for recurring terminology in the instructi
 - The **top card** is the _first element_
 - The **bottom card** is the _last element_
 
----
-
 ## Alternative version
 
 An alternative version of the story uses **you** (the student) as actor, and focusses on re-arranging the deck only.
@@ -56,14 +54,14 @@ These are examples of tasks that fit the story of you wanting to re-arrange card
 
 Example usage: [`research/javascript-1-a`][javascript-research-1-a]
 
-# Related
+## Related
 
-- [`type/arrays`][type-arrays]
+- [`type/array`][type-array]
 - [`javascript/concept/arrays`][javascript-concept-arrays]
 - [`research/javascript-1-a`][javascript-research-1-a]
 - [`research/javascript-2-a`][javascript-research-2-a]
 
-[type-arrays]: ../types/arrays.md
+[type-array]: ../types/array.md
 [javascript-concept-arrays]: ../../languages/javascript/exercises/concept/arrays
 [javascript-research-1-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-1-a
 [javascript-research-2-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-2-a

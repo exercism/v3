@@ -18,7 +18,7 @@ The story can be continued, for example:
 
 - The content team is very excited about this new functionality, and has already requested a new feature to be added. They'd like to be able to display data of specific elements in an array.
 
-# Related
+## Related
 
 - [`type/dictionary`][type-dictionary]
 - [`research/javascript-1-b`][javascript-research-1-b]
