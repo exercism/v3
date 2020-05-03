@@ -32,6 +32,17 @@
         "uuid": "3c53b340-680e-45c1-8979-3d79b441a65e",
         "concepts": ["lists", "string-literals"],
         "prerequisites": ["booleans"]
+      },
+      {
+        "slug": "maps",
+        "uuid": "e7f3ba2b-a380-45d3-a48d-7ef3dc318a31",
+        "concepts": ["module-attributes-as-constants", "maps"],
+        "prerequisites": [
+          "lists",
+          "tuples",
+          "anonymous-functions",
+          "default-arguments"
+        ]
       }
     ],
     "practice": []

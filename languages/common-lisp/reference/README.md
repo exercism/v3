@@ -64,13 +64,6 @@ A more formal, machine-readable version of this concept list exists as
   - Miscellaneous
   - Numbers
   - Tables
-- Loop
-  - Basic
-  - Collecting
-  - Miscellaneous
-  - Ranges
-  - Tests
-  - Traversal
 
 ### CLOS (Needs Some Work)
 
@@ -122,7 +115,7 @@ A more formal, machine-readable version of this concept list exists as
 
 - [Booleans][bool]
 - [Characters][char]
-- Cons
+- [Cons][cons]
 - [Hash Tables][hash-map]
 - [Sets][set]
 - Streams
@@ -145,6 +138,7 @@ A more formal, machine-readable version of this concept list exists as
 [classes]: ../../../reference/concepts/classes.md
 [comments]: ../../../reference/concepts/comments.md
 [conditionals]: ../../../reference/concepts/conditionals.md
+[cons]: ../reference/types/cons.md
 [constants]: ../../../reference/concepts/constants.md
 [csharp-example]: ../../csharp/reference/README.md
 [enumeration]: ../../../reference/concepts/enumeration.md
