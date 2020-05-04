@@ -25,5 +25,5 @@ Terms used in the story:
 [1][1]. Jui-Feng Weng, Shian-Shyong Tseng, Tsung-Ju Lee, Teaching Boolean Logic through Game Rule Tuning, IEEE Trans. Learning Technol. 3 (2010) 319–328. <https://doi.org/10.1109/TLT.2010.33>.
 
 [1]: https://doi.org/10.1109/TLT.2010.33
-[boolean-type]: ../types/booleans.md
+[boolean-type]: ../types/boolean.md
 [boolean-logic]: ../concepts/boolean_logic.md
