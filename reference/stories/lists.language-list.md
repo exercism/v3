@@ -2,7 +2,7 @@
 
 This story facilitates the exploration of [lists][lists-type] in a language.
 
-The basic premise is that a person wants to maintain a list of languages that they want to learn on Exercism's website.
+The basic premise is that a person wants to maintain a [list][lists-type] of languages that they want to learn on Exercism's website.
 
 The exercise generally guides students how to:
 
@@ -20,3 +20,4 @@ The exercise generally guides students how to:
 
 [implementation-clojure]: ../../languages/clojure/exercises/concept/lists/.docs/introduction.md
 [implementation-elixir]: ../../languages/elixir/exercises/concept/lists/.docs/introduction.md
+[lists-type]: ../types/list.md
