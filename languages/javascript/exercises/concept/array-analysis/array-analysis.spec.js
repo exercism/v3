@@ -5,7 +5,7 @@ import {
   isStackContainsOdd,
   getFirstOddCard,
   getFirstEvenCardIndex
-} from './arrays-analysis'
+} from './array-analysis'
 
 describe('arrays-analysis', () => {
   describe('getCardIndex', () => {
