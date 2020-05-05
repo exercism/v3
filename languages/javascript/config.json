@@ -13,7 +13,7 @@
       {
         "slug": "numbers",
         "uuid": "0aff2fa7-55ea-47e9-af4a-78927d916baf",
-        "concepts": ["numbers", "type-conversion"],
+        "concepts": ["numbers"],
         "prerequisites": []
       },
       {
