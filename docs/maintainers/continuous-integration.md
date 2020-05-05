@@ -1,8 +1,14 @@
 # Continuous Integration
 
+- [Markdown formatting](#markdown-formatting)
 - [Concept CI](#concept-ci)
+
   - [`concepts.csv`](#conceptscsv)
   - [CI checks](#ci-checks)
+
+## Markdown and JSON formatting
+
+The formatting of all Markdown and JSON files is automatically checked against the Markdown and JSON formatting used by [prettier][prettier].
 
 ## Concept CI
 
@@ -123,3 +129,4 @@ _Note that the script takes a fairly long time before actually running the check
 [julia-concepts-csv]: ../../languages/julia/reference/concepts.csv
 [install-julia]: https://julialang.org/downloads/
 [package-compiler]: https://github.com/JuliaLang/PackageCompiler.jl
+[prettier]: https://prettier.io/

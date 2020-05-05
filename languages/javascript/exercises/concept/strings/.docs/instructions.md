@@ -38,7 +38,7 @@ convoluted.
 1. The guard will recite a poem, one line at the time;
    - You will have to respond with the appropriate letter.
 2. The guard will tell you all the letters you've responded with at once, _but
-   in reverse_:
+   there are sometimes spaces after each sentence_:
    - You need to format the letters as a capitalised word
    - and ask nicely, by appending `, please`
 
@@ -66,7 +66,7 @@ with the renowned poets.
 Implement a function that returns first letter of a sentence:
 
 ```javascript
-frontDoorResponse("Stands so high");
+frontDoorResponse('Stands so high')
 // => "S"
 ```
 
@@ -75,10 +75,10 @@ frontDoorResponse("Stands so high");
 Implement a function that correctly capitalizes a word:
 
 ```javascript
-capitalize("SHIRE");
+capitalize('SHIRE')
 // => "Shire"
 
-capitalize("horse");
+capitalize('horse')
 // => "Horse"
 ```
 
@@ -87,17 +87,17 @@ capitalize("horse");
 Implement a function that returns the last letter of a sentence:
 
 ```javascript
-backDoorResponse("Stands so high");
+backDoorResponse('Stands so high')
 // => "h"
 ```
 
-### 4. Reverse a word
+### 4. Trim a sentence
 
-Implement a function that reverses a word:
+Improve the previous function so that it removes whitespace from the end of a sentence and returns the last character:
 
 ```javascript
-reverse("esroh");
-// => "horse"
+backDoorResponse('Stands so high   ')
+// => "h"
 ```
 
 ### 5. Be polite
@@ -105,6 +105,6 @@ reverse("esroh");
 Change the implementation of the `backDoorPassword` function so that it's polite:
 
 ```javascript
-backDoorPassword("esroh");
+backDoorPassword('esroh')
 // => "Horse, please"
 ```

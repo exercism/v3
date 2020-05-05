@@ -20,6 +20,35 @@
         "uuid": "5e743355-1ef3-4b5d-b59d-03bbc9697e6c",
         "concepts": ["booleans"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "conditionals",
+        "uuid": "b26a2f11-d80a-42b9-881a-3575a83ad211",
+        "concepts": ["conditionals", "atoms"],
+        "prerequisites": ["booleans"]
+      },
+      {
+        "slug": "lists",
+        "uuid": "3c53b340-680e-45c1-8979-3d79b441a65e",
+        "concepts": ["lists", "string-literals"],
+        "prerequisites": ["booleans"]
+      },
+      {
+        "slug": "anonymous-functions",
+        "uuid": "1e3ceb20-715c-4157-9192-13284217affc",
+        "concepts": ["anonymous-functions", "closures", "bit-manipulation"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "maps",
+        "uuid": "e7f3ba2b-a380-45d3-a48d-7ef3dc318a31",
+        "concepts": ["module-attributes-as-constants", "maps"],
+        "prerequisites": [
+          "lists",
+          "tuples",
+          "anonymous-functions",
+          "default-arguments"
+        ]
       }
     ],
     "practice": []

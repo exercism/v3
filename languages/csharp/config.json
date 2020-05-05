@@ -10,10 +10,22 @@
   "exercises": {
     "concept": [
       {
+        "slug": "arrays",
+        "uuid": "b6c532c9-1e89-4fbf-8f08-27f5befb5bb8",
+        "concepts": ["arrays", "foreach-loops"],
+        "prerequisites": ["classes", "booleans", "conditionals", "for-loops"]
+      },
+      {
         "slug": "basics",
         "uuid": "7d358894-4fbd-4c91-b49f-d68f1c5aa6bc",
         "concepts": ["basics"],
         "prerequisites": []
+      },
+      {
+        "slug": "classes",
+        "uuid": "e01dc85b-0731-4701-9eea-c78fb69ce543",
+        "concepts": ["classes"],
+        "prerequisites": ["strings", "numbers", "conditionals"]
       },
       {
         "slug": "dates",
@@ -55,6 +67,17 @@
           "classes",
           "enums",
           "exceptions"
+        ]
+      },
+      {
+        "slug": "nullability",
+        "uuid": "370e7e54-6a96-11ea-bc55-0242ac130003",
+        "concepts": ["nullability"],
+        "prerequisites": [
+          "strings",
+          "exceptions",
+          "for-loops",
+          "memory-allocation"
         ]
       },
       {

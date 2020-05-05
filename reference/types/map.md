@@ -6,5 +6,24 @@ There are various implementations of this abstract data structure, such as, but 
 
 - [Hash map][type-hash-map]
 
+## Exercises
+
+### HighScores
+
+This exercise asks student to create and maintain a map of highscores using strings as keys and integers as values
+
+- Map
+- Add key-values to maps
+- Put values to a map
+- Remove key-value pairs from a map
+- Return formatted data from a map structure
+
+#### Implementations
+
+| Track  | Exercise                      | Changes |
+| ------ | ----------------------------- | ------- |
+| Elixir | [maps][implementation-elixir] | None    |
+
 [type-hash-map]: ./hash_map.md
 [type-pair]: ./pair.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/booleans/.docs/introduction.md

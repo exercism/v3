@@ -1,0 +1,38 @@
+name: 'Verify formatting'
+
+on:
+  push:
+    paths:
+      - '**/*.md'
+      - '**/*.json'
+      - '.prettierignore'
+      - '.prettierrc'
+      - '**/.prettierignore'
+      - '**/.prettierrc'
+  pull_request:
+    paths:
+      - '**/*.md'
+      - '**/*.json'
+      - '.prettierignore'
+      - '.prettierrc'
+      - '**/.prettierignore'
+      - '**/.prettierrc'
+
+jobs:
+  verify-code-formatting:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: 'Checkout code'
+        uses: actions/checkout@v2
+
+      - name: 'Verify formatting of all files'
+        if: github.ref == 'refs/heads/master'
+        run: npx prettier@2.0.4 --check "**/*.{md,json}"
+
+      - name: "Verify formatting of the PR's files"
+        if: github.ref != 'refs/heads/master' && github.event.pull_request.url
+        run: |
+          PULL_REQUEST_URL=$(jq -r ".pull_request.url" "$GITHUB_EVENT_PATH")
+          curl --url $"${PULL_REQUEST_URL}/files" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' | \
+            jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match("\\.(md|json)$")) | .filename' | \
+            xargs npx prettier@2.0.4 --check

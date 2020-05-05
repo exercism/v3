@@ -45,9 +45,16 @@ The following labels are used to categorize [issues in the v3 repository][github
 - [type/improve-reference-doc][github-issues-type-improve-reference-doc]: Improve an existing reference document
 - [type/new-student-facing-doc][github-issues-type-new-student-facing-doc]: Add a new student-facing document
 - [type/improve-student-facing-doc][github-issues-type-improve-student-facing-doc]: Improve an existing student-facing document
+- [type/ci][github-issues-type-ci]: Everything related to Continuous Integration.
+- [type/discussion][github-issues-type-discussion]: Discussion regarding v3.
+- [type/documentation][github-issues-type-documentation]: Improvements or additions to documentation.
+- [type/analyzer-extension][github-issues-type-analyzer-extension]: Add analyzer support for a new (Concept) exercise.
 - [status/help-wanted][github-issues-status-help-wanted]: Extra attention is needed
 - [status/in-progress][github-issues-status-in-progress]: This issue is being worked on
 - [status/draft][github-issues-status-draft]: This issue or pull request is a draft, and not ready for review/merge.
+- [status/wontfix][github-issues-status-wontfix]: This issue or pull request is out of scope and will not be fixed.
+- [about/v3-roadmap][github-issues-type-v3-roadmap]: Everything related to the v3 roadmap.
+- [good-first-issue][github-issues-type-good-first-issue]: Marks an issue as good for newcomers.
 
 Each language also has its own label:
 
@@ -96,9 +103,16 @@ You can combine labels to find the issues you'd like, e.g. to [list all the issu
 [github-issues-type-improve-reference-doc]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-reference-doc
 [github-issues-type-new-student-facing-doc]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-student-facing-doc
 [github-issues-type-improve-student-facing-doc]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-student-facing-doc
+[github-issues-type-ci]: https://github.com/exercism/v3/labels/type%2Fci
+[github-issues-type-discussion]: https://github.com/exercism/v3/labels/type%2Fdiscussion
+[github-issues-type-documentation]: https://github.com/exercism/v3/labels/type%2Fdocumentation
+[github-issues-type-analyzer-extension]: https://github.com/exercism/v3/labels/type%2Fanalyzer-extension
 [github-issues-status-help-wanted]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted
 [github-issues-status-in-progress]: https://github.com/exercism/v3/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fin-progress
 [github-issues-status-draft]: https://github.com/exercism/v3/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fdraft
+[status/wontfix]: https://github.com/exercism/v3/issues?q=is%3Aclosed+is%3Aissue+label%3Astatus%2Fwontfix
+[github-issues-type-v3-roadmap]: https://github.com/exercism/v3/labels/about%2Fv3-roadmap
+[github-issues-type-good-first-issue]: https://github.com/exercism/v3/labels/good%20first%20issue
 [github-issues-track-go]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fgo
 [github-issues-track-ruby]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fruby
 [github-issues-csharp-status-help-wanted]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fcsharp+
