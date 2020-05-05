@@ -23,7 +23,6 @@
 
 - There is a [built-in][findindex_method_docs] method to get the first index in array that the value
 
-
 [indexof_method_docs]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
 [includes_method_docs]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
 [every_method_docs]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
