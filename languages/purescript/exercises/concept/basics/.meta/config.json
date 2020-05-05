@@ -1,10 +1,9 @@
 {
   "authors": [
     {
-      "github_username": "neenjaw",
-      "exercism_username": "neenjaw"
+      "github_username": "aimorris",
+      "exercism_username": "aimorris"
     }
   ],
-  "forked_from": ["csharp/basics"],
-  "language_versions": ">=1.10"
+  "forked_from": ["elixir/basics"]
 }
