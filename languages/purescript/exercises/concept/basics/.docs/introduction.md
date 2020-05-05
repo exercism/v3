@@ -4,7 +4,7 @@ PureScript is a statically-typed language, meaning that the type of a variable i
 variable = 10 -- Bind the integer value 10
 ```
 
-The value of a variable zcan not change once defined. Instead, a new variable can be created:
+The value of a variable can not change once defined. Instead, a new variable can be created:
 
 ```purescript
 variableOne = 1 -- Bind an integer value of 1 to variableOne
@@ -24,7 +24,7 @@ variableOne = 1 -- Binds the value of 1 to the Int variableOne
 
 However, type can often be inferred by the compiler. **Note**: The `::` can be read "has type".
 
-PureScript is an [functional-programming language][functional-programming] and requires all named functions to be defined in a _module_. The `module` keyword is used to define a module. All modules are available to all other modules at runtime. A _module_ is analogous to a _class_ in other programming languages.
+PureScript is an [functional-programming language][functional-programming] and requires all named functions to be defined in a [module][modules]. The `module` keyword is used to define a module. All modules are available to all other modules at runtime. A [module][modules] is analogous to a _class_ in other programming languages.
 
 ```purescript
 module Calculator where
@@ -55,3 +55,4 @@ Comments can be used for inline documentation. Single line comments in Elixir ar
 
 [functional-programming]: https://en.wikipedia.org/wiki/Functional_programming
 [function-currying]: https://www.youtube.com/watch?v=rcNts6CynO8
+[modules]: https://github.com/purescript/documentation/blob/master/language/Modules.md

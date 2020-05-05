@@ -1,55 +1,58 @@
-Elixir is a dynamically-typed language, meaning that the type of a variable is only checked at runtime. In Elixir, we refer to variable assignment as being _bound_ to a value. Using the [match `=` operator][match], we can bind a value to a variable name:
+PureScript is a statically-typed language, meaning that the type of a variable is checked when the program is compiled. Using the `=` operator, we can bind a value to a variable name:
 
-```elixir
-variable = 10 # Bind the integer value 10
+```purescript
+variable = 10 -- Bind the integer value 10
 ```
 
-Re-binding a variable's value is also done performed with the [match `=` operator][match]. Once defined, a variable's type can change when re-bound.
+The value of a variable can not change once defined. Instead, a new variable can be created:
 
-```elixir
-count = 1 # Bind an integer literal value of 1
-count = 2 # Re-bind to the new value of 2
+```purescript
+variableOne = 1 -- Bind an integer value of 1 to variableOne
+variableTwo = 2 -- Bind an integer value of 2 to variableTwo
 
-# Compiler does not error when binding a new type to the variable
-count = false
+-- The compiler will output an error when trying to re-bind the value of a variable:
+variableTwo = 3
+-- => Multiple value declarations exist for variableTwo.
 ```
 
-Elixir is an [functional-programming language][functional-programming] and requires all named [functions][functions] to be defined in a [module][modules]. The `defmodule` keyword is used to define a module. All modules are available to all other modules at runtime and do not require an _access modifier_ to make them visible to other parts of the program. A [module][modules] is analogous to a _class_ in other programming languages.
+The type of `variableOne` can be said to be an integer (known as an `Int` in PureScript). You can declare the type of a variable before declaring the variable, for example:
 
-_Named Functions_ must be defined in a module. Each [function][functions] can have zero or more parameters. All parameters are dynamically typed, and the return type is not explicitly declared, it is the type of the value returned. An _access modifier_ can be specified for functions, making only desired functions available for use external to the module. In a function, the value of the last line is _implicitly returned_ to the calling function.
-
-```elixir
-defmodule Calculator do
-  def add(x, y) do
-    x + y
-  end
-end
+```purescript
+variableOne :: Int -- variableOne is now of type Int. This syntax is known as the type signature declaration.
+variableOne = 1 -- Binds the value of 1 to the Int variableOne
 ```
 
-Invoking a function is done by specifying its module- and function name and passing arguments for each of the functions's parameters. The module name may be omitted if the function is invoked inside of the module.
+However, type can often be inferred by the compiler. **Note**: The `::` can be read "has type".
 
-```elixir
-sum = Calculator.add(1, 2)
+PureScript is an [functional-programming language][functional-programming] and requires all named functions to be defined in a [module][modules]. The `module` keyword is used to define a module. All modules are available to all other modules at runtime. A [module][modules] is analogous to a _class_ in other programming languages.
+
+```purescript
+module Calculator where
+-- ...
 ```
 
-If the function to be called is defined in the same module as the function that calls it, the module name can be omitted.
+Functions must be defined in a module. Each function has one or more arguments (however, technically all functions have only one argument; this is called [function currying][function-currying]). All arguments are statically-typed, and the return type can be explicitly declared, or often inferred by the compiler. Often you will need to import other modules to use their functions. This is done using the `import` keyword followed by the module you'd like to import. A common module to import is `Prelude` which supplies basic functions and operators such as addition (`+`) and subtraction (`-`).
 
-When referring to functions, refer to them with their _arity_. The _arity_ of a function is the number or parameters it takes.
+```purescript
+module Calculator where
 
-```elixir
-# add_3/1 because this function has one parameter, thus an arity of 1
-def add_3(x) do
-  3 + x
-end
+import Prelude
+
+sum :: Int -> Int -> Int
+sum x y = x + y
 ```
 
-Elixir supports one type of comment for [inline documentation][inline-documentation]. Single line comments are preceded by `#`.
+**Note**: `Int -> Int -> Int` can be read "takes an Int and an Int, and returns an Int".
 
-Integer values are defined as one or more (consecutive) digits and support the [default mathematical operators][operators].
+Using a function is achieved by specifying the function name and passing arguments for each of the functions parameters.
+
+```purescript
+sum = sum 1 2
+-- => 3
+```
+
+Comments can be used for inline documentation. Single line comments in Elixir are preceded by `--`.
 
 [functional-programming]: https://en.wikipedia.org/wiki/Functional_programming
-[match]: https://elixirschool.com/en/lessons/basics/pattern-matching/
-[inline-documentation]: https://elixirschool.com/en/lessons/basics/documentation/#inline-documentation
-[operators]: https://elixir-lang.org/getting-started/basic-types.html#basic-arithmetic
-[modules]: https://elixirschool.com/en/lessons/basics/modules/#modules
-[functions]: https://elixirschool.com/en/lessons/basics/functions/#named-functions
+[function-currying]: https://www.youtube.com/watch?v=rcNts6CynO8
+[modules]: https://github.com/purescript/documentation/blob/master/language/Modules.md
