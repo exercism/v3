@@ -2,7 +2,7 @@
 
 - The logical NOT operator (`not`) can be placed before an expression to negate its value.
 
-### 2. Check if the 'Spy' action is possible
+### 2. Check if the 'Approach and Spy' action is possible
 
 - Logical expressions are evaluated from left to right and are tested for possible 'short-circuits'.
 
