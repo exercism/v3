@@ -1,6 +1,8 @@
-In Javascript, an array is a list-like structure with no fixed length which can hold any type of primitives or ojects, even mixed types. The array elements can be accesed by their index, array also provide a bunch of built-in methods. in this exercise we will tackle the build-in method to analyse the array
+In JavaScript, an array is a list-like structure with no fixed length which can hold any type of primitives or objects, or even mixed types. The array elements can be accessed by their index. Arrays are also given a bunch of built-in methods. 
 
-Example of analysis with `looping` :
+In this exercise we will use built-in methods to analyse the contents of an array, instead of using a `for` loop, or `.forEach`.
+
+Example of analysis using a for loop :
 
 ```javascript
 const numbers = [1, 'two', 3, 'four']
@@ -12,7 +14,7 @@ for (var i = 0; i < numbers.length; i++) {
 // => 1
 ```
 
-Example of analysis without `looping` through it:
+Example of analysis using a build-in method:
 
 ```javascript
 const numbers = [1, 'two', 3, 'four']

@@ -1,67 +1,67 @@
 /**
- * Get array index with the value of card
+ * Get the position (index) of the card in the given stack
  *
- * @param {number[]} array
+ * @param {number[]} stack
  * @param {number} card
  *
- * @returns {number} Array index with the value of card
+ * @returns {number} position of the card in the stack
  */
-export function getCardIndex(array, card) {
-  throw new Error('Implement the getCardIndex function')
+export function getCardPosition(stack, card) {
+  throw new Error('Implement the getCardPosition function')
 }
 
 /**
- * Check if the array contains cardGiven
+ * Determine if the stack contains the card
  *
- * @param {number[]} array
- * @param {number} cardGiven
+ * @param {number[]} stack
+ * @param {number} card
  *
- * @returns {boolean} Whether contains a cardGiven
+ * @returns {boolean} true if card is in the stack, false otherwise
  */
-export function isStackIncludes(array, cardGiven) {
-  throw new Error('Implement the isStackIncludes function')
+export function doesStackIncludesCard(stack, card) {
+  throw new Error('Implement the doesStackIncludesCard function')
 }
 
 /**
  * Check if every value in array was even
  *
- * @param {number[]} array
+ * @param {number[]} stack
  *
- * @returns {boolean} Whether every value in array was even
+ * @returns {boolean} position of the first card that is even
  */
-export function isEvenStack(array) {
-  throw new Error('Implement the isEvenStack function')
+export function isEachCardEven(stack) {
+  throw new Error('Implement the isEachCardEven function')
 }
 
 /**
- * Check if at least one odd value card
+ * Check if stack conatains odd-value card
  *
- * @param {number[]} array
+ * @param {number[]} stack
  *
  * @returns {boolean} Whether array contains odd card
  */
-export function isStackContainsOdd(array) {
-  throw new Error('Implement the isStackContainsOdd function')
+export function doesStackIncludesOddCard(stack) {
+  throw new Error('Implement the doesStackIncludesOddCard function')
 }
 
 /**
- * Get the first odd value card from array
+ * Get the first odd card from the stack
  *
- * @param {number[]} array
+ * @param {number[]} stack
  *
- * @returns {number} First odd value card
+ * @returns {number} the first odd value
  */
-export function getFirstOddCard(array) {
+export function getFirstOddCard(stack) {
   throw new Error('Implement the getFirstOddCard function')
 }
 
 /**
- * Get the index of first even value card from array
+ * Determine the position of the first card that is even
  *
- * @param {number[]} array
+ * @param {number[]} stack
  *
- * @returns {number} First even value card index
+ * @returns {number} position of the first card that is even
  */
-export function getFirstEvenCardIndex(array) {
-  throw new Error('Implement the getFirstEvenCardIndex function')
+export function getFirstEvenCardPosition(stack) {
+  throw new Error('Implement the getFirstEvenCardPosition function')
 }

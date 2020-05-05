@@ -1,61 +1,59 @@
-As a magician-to-be, Elyse now need to practice more tricks. She will be given several stack of cards that she need check without looking through one by one.
+Elyse, magician-to-be, continues her training. She will be given several stacks of cards that she need to perform her tricks on, without looking at each card one by one.
 
-To make things a bit easier she only uses the cards 1 to 10 and no redundant number in the stack.
+To make things a bit easier she only uses the cards 1 to 10.
 
-### 1. Check card position
+### 1. Find the position of a card
 
-Elyse need the given card `index` within stack.
+Elyse needs the position (index) of a card in the stack
 
 ```javascript
 const card = 2
-getCardIndex([9, 7, 3, 2], card)
+getCardPosition([9, 7, 3, 2], card)
 // => 3
 ```
 
-### 2. Check whether the given card is in the stack
+### 2. Check for presence of a card
 
-Elyse was given a card and she need to check if the card given is in the stack
+Elyse needs to determine if a card is present in the stack
 
 ```javascript
-const cardGiven = 3
-isStackIncludes([2, 3, 4, 5], cardGiven)
+const card = 3
+doesStackIncludesCard([2, 3, 4, 5], card)
 // => true
 ```
 
-### 3. Check whether every card in stack is even number
+### 3. Check if a stack only contains even numbers
 
-Elyse must check if every card in the stack was even. looking through one by one.
+Elyse wants to know if every card is even
 
 ```javascript
-isEvenStack([2, 4, 6, 7])
+isEachCardEven([2, 4, 6, 7])
 // => false
 ```
 
-### 4. Check whether stack contains odd number
+### 4. Check if a stack contains an odd number
 
-Elyse need to check if the stack contains odd number
+Elyse needs to know if there is an odd number in the stack
 
 ```javascript
-isStackContainsOdd([3, 2, 6, 4, 8])
+doesStackIncludesOddCard([3, 2, 6, 4, 8])
 // => true
 ```
 
-### 5. Retrive the first odd value card from the stack
+### 5. Find the first odd value
 
-Elyse need to get a first odd value card from bottom of the stack.
-Note that she will we given at least 1 odd value card
+Elyse wants to know the value of the first card that is odd
 
 ```javascript
 getFirstOddCard([4, 2, 8, 7, 9])
 // => 7
 ```
 
-### 6. Check the position of the first even card from stack
+### 6. Get the position of the first event card
 
-Elyse need to check the `index` of a first even value card, from bottom of the stack
-Note that she will we given at least 1 even value card
+Elyse wants to know the position of the first card that is even
 
 ```javascript
-getFirstEvenCardIndex([5, 2, 3, 1])
+getFirstEvenCardPosition([5, 2, 3, 1])
 // => 1
 ```
