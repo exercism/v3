@@ -1,6 +1,6 @@
 # RPG Quest Logic
 
-## Story introduction
+## Story
 
 In this exercise, you'll be implementing the quest logic for a new RPG game a friend is developing. The game's main character is Annalyn, a brave girl with a fierce and loyal pet dog. Unfortunately, disaster strikes, as her best friend was kidnapped while searching for berries in the forest. Annalyn will try to find and free her best friend, optionally taking her dog with her on this quest.
 
@@ -22,8 +22,6 @@ These are example tasks that fit the story of Annalyn rescuing her best friend:
 - Implement check for _Signal prisoner_: the prisoner can be signalled using bird sounds if the prisoner is awake and the archer is sleeping, as archers are trained in bird signaling so they could intercept the message.
 - Implement check for _Free prisoner_: Annalyn can try sneaking into the camp to free the prisoner, but this tactic will only work if the prisoner is awake and the other two characters are sleeping. If the prisoner is sleeping, they'll be startled by Annalyn's sudden appearance and will awaken the other two characters. The prisoner can also be freed if the archer is sleeping and Annalyn has her pet dog with her, as the knight will be scared by the dog and will withdraw, and the archer can't equip his bow fast enough to prevent the prisoner from being freed.
 
-Example usage: [`javascript/concept/booleans`][javascript-concept-booleans]
-
 ## Terminology
 
 These are recommendations, not rules, for recurring terminology in the instructions (including stub commentary)
@@ -33,10 +31,16 @@ These are recommendations, not rules, for recurring terminology in the instructi
 - The prisoner is her best friend, and their pronouns are **they/their**.
 - Do _not_ refer to **Annalyn**, the **prisoner**, the **archer**, the **knight** or Annalyn's **pet dog** by pronoun, as the meaning will most likely be ambiguous; instead use the indicators as emphasized.
 
+## Implementations
+
+- [F#][implementation-fsharp]
+- [JavaScript][implementation-javascript] (reference implementation)
+
 ## Related
 
-- [`type/boolean`][type-boolean]
-- [`javascript/concept/booleans`][javascript-concept-booleans]
+- [`types/boolean`][types-boolean]
 
-[type-boolean]: ../types/boolean.md
+[types-boolean]: ../types/boolean.md
 [javascript-concept-booleans]: ../../languages/javascript/exercises/concept/booleans
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/booleans/.docs/instructions.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/booleans/.docs/instructions.md

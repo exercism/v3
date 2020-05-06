@@ -1,6 +1,10 @@
 # High Score Board
 
-This exercise uses the setting of maintaining a high-score board for an arcade hall to teach the concept of key-value [collections][collection] ([maps][map], [hashes][hash], associative arrays, [dictionaries][dict], etc.). A player's name serves as the key, and the score serves as the value.
+## Story
+
+This exercise uses the setting of maintaining a high-score board for an arcade hall to teach the concept of key-value [collections][collection] ([maps][types-map], [hashes][types-hash_map], associative arrays, [dictionaries][dict], etc.). A player's name serves as the key, and the score serves as the value.
+
+## Tasks
 
 The student is then guided through some operations:
 
@@ -13,10 +17,16 @@ The student is then guided through some operations:
 
 ## Implementations
 
-- [Elixir][implementation-elixir]
+- [Elixir][implementation-elixir] (reference implementation)
+
+## Reference
+
+- [`types/dictionary`][types-dictionary]
+- [`types/hash_map`][types-hash_map]
+- [`types/map`][types-map]
 
 [collection]: ../types/collection.md
-[map]: ../types/map.md
-[hash]: ../types/hash_map.md
-[dicts]: ../types/dictionary.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/maps/.docs/introduction.md
+[types-map]: ../types/map.md
+[types-hash_map]: ../types/hash_map.md
+[types-dictionary]: ../types/dictionary.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/maps/.docs/instructions.md

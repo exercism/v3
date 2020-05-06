@@ -1,8 +1,12 @@
 # Language List
 
-This story facilitates the exploration of [lists][lists-type] in a language.
+## Story
 
-The basic premise is that a person wants to maintain a [list][lists-type] of languages that they want to learn on Exercism's website.
+This story facilitates the exploration of [lists][types-list] in a language.
+
+The basic premise is that a person wants to maintain a [list][types-list] of languages that they want to learn on Exercism's website.
+
+## Tasks
 
 The exercise generally guides students how to:
 
@@ -15,9 +19,15 @@ The exercise generally guides students how to:
 
 ## Implementations
 
-- [Clojure][implementation-clojure]
+- [Clojure][implementation-clojure] (reference implementation)
 - [Elixir][implementation-elixir]
+- [F#][implementation-fsharp]
 
-[implementation-clojure]: ../../languages/clojure/exercises/concept/lists/.docs/introduction.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/lists/.docs/introduction.md
-[lists-type]: ../types/list.md
+## Reference
+
+- [`types/list`][types-list]
+
+[implementation-clojure]: ../../languages/clojure/exercises/concept/lists/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/lists/.docs/instructions.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/lists/.docs/instructions.md
+[types-list]: ../types/list.md
