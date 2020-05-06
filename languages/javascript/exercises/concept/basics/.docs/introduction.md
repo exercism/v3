@@ -38,7 +38,7 @@ To make a `function`, constant, or variable available in _other files_, they nee
 export const MY_VALUE = 10
 
 export function add(num1, num2) {
-  return num1 + num 2
+  return num1 + num2
 }
 
 // file.spec.js
