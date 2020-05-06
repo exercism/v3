@@ -32,7 +32,7 @@
         "slug": "numbers",
         "uuid": "0aff2fa7-55ea-47e9-af4a-78927d916baf",
         "concepts": ["numbers"],
-        "prerequisites": []
+        "prerequisites": ["basics"]
       },
       {
         "slug": "promises",
