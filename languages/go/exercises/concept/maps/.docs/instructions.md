@@ -13,12 +13,12 @@ A friend of you has an old wholesale store called **Gross Store**, the name came
 
 In order to use the measurement, you need to store the measurement in your program.
 
-## 2. Implement `AddItem`
+## 2. Add item to the customer bill
 
-This function will add item to the customer bill, to implement this, you'll need to:
+To implement this, you'll need to:
 
 - Check whether the given unit of measurement is correct
-- Add the item to the customer bill
+- Add the item to the customer bill, indexed by the item name. You probably also need a variable to represent the customer bill, you are expected to use `map`
 
 ```go
 ok := AddItem("carrot", "dozen")
@@ -26,9 +26,11 @@ fmt.Println(ok)
 // Output: true or false
 ```
 
-## 3. Implement `RemoveItem`
+> Note that the returned value is type of `bool`
 
-This function will remove item from the customer bill, to implement this, you'll need to:
+## 3. Remove item from the customer bill
+
+To implement this, you'll need to:
 
 - Check whether the given item is in the bill
 - Check whether the given unit of measurement is correct
@@ -42,9 +44,11 @@ fmt.Println(ok)
 // Output: true or false
 ```
 
-## 4. Implement `GetItem`
+> Note that the returned value is type of `bool`
 
-This function will return the number of specific item that the customer has in his/her bill, to implement this, you'll need to:
+## 4. Return the number of specific item that is in the customer bill
+
+To implement this, you'll need to:
 
 - Check whether the given item is in the bill
 - Otherwise, return the quantity of the item
@@ -57,9 +61,11 @@ fmt.Println(ok)
 // Output: true or false
 ```
 
-## 5. Implement `Checkout`
+> Note that the returned value are types of `int` and `bool`
 
-This function supposed to do a payment to the customer bank, since you're developing a prototype, you'll just need to:
+## 5. Simulate checkout operation
+
+This function supposed to do a payment to the customer bank, since you're developing a prototype, what you need to do is:
 
 - Reset the customer bill
 
@@ -67,5 +73,7 @@ This function supposed to do a payment to the customer bank, since you're develo
 Checkout()
 // Output:
 ```
+
+> Note that there's no value returned by this function
 
 [gross-unit]: https://en.wikipedia.org/wiki/Gross_(unit)
