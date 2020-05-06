@@ -1,10 +1,14 @@
 Further Reading:
 
-- [godoc-race-detector]
-- [goblog-race-detector]
-- [goblog-iteration-order]
+- [Go Blog - map][goblog-map]
+- [Go Spec - map][gospec-map]
 
-A `map` in Go is an associative data type that contains a collection of key/value pairs, which other languages might refer to as as dictionary or an associative array.
+Additional Materials:
+
+- [Go Doc - Race Detector][godoc-race-detector]
+- [Go Blog - Race Detector][goblog-race-detector]
+
+A `map` in Go is an associative data type that contains a collection of key/value pairs, which other languages might refer to as as dictionary or an associative array, [here's the actual go specification about map][gospec-map].
 
 The value of an uninitialized map is `nil`, and you can define a map as follows:
 
@@ -19,7 +23,7 @@ or
   foo = make(map[string]int)
 ```
 
-> Here `string` represent the key type of map, and `int` represent the element type of map. You can change them to whatever valid golang type.
+> Here `string` represent the key type of map, and `int` represent the element type of map. You can change them to whatever valid go type.
 
 To store a value in a map, you can use the `=` operator:
 
@@ -49,10 +53,11 @@ To delete an item from a map, you can use
 
 Here are something you need to be aware before using map:
 
-- When you iterate over a map using range loop, go doesn't guarantee the order of the map [goblog-iteration-order]
+- When you iterate over a map using range loop, go doesn't guarantee the order of the map [goblog-map]
 
 - If you try to write to a `map` from multiple go routine, that trigger the race detector, [see this link][godoc-race-detector] and [here][goblog-race-detector]. Alternatively, you can use `sync.Map` or `atomic` or `mutex` to work around this issue.
 
 [godoc-race-detector]: https://golang.org/doc/articles/race_detector.html
-[goblog-race-detector]: https://golang.org/doc/articles/race_detector.html
-[goblog-iteration-order]: https://blog.golang.org/maps
+[goblog-race-detector]: https://blog.golang.org/race-detector
+[goblog-map]: https://blog.golang.org/maps
+[gospec-map]: https://golang.org/ref/spec#Map_types
