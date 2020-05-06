@@ -43,7 +43,8 @@
       {
         "slug": "strings",
         "uuid": "39549583-1889-490a-bf98-ffb2e0aefe44",
-        "concepts": ["strings"]
+        "concepts": ["strings"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []
