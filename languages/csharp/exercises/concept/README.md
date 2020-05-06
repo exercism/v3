@@ -10,6 +10,7 @@ These are the concept exercises that have currently been implemented, as well as
 | ------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------------------------------- |
 | [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`foreach-loops`               | `classes`<br/>`chars`<br/>`booleans`<br/>`conditionals`<br/>`for-loops`           |
 | [`basics`][concept-exercise-basics]                                 | `basics`                                   | -                                                                                 |
+| [`booleans`][concept-exercise-booleans]                             | `booleans`                                 | `basics`                                                                          |
 | [`classes`][concept-exercise-classes]                               | `classes`                                  | `basics`<br/>`strings`<br/>`numbers`<br/>`conditionals`                           |
 | [`dates`][concept-exercise-datetimes]                               | `datetimes`                                | `numbers`<br/>`strings`<br/>`classes`                                             |
 | [`enums`][concept-exercise-enums]                                   | `enums`<br/>`pattern-matching-constants`   | `strings`<br/>`conditionals`                                                      |
@@ -32,6 +33,7 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-exercises]: ./concept/README.md
 [concept-exercise-arrays]: ./arrays/.meta/design.md
 [concept-exercise-basics]: ./basics/.meta/design.md
+[concept-exercise-booleans]: ./booleans/.meta/design.md
 [concept-exercise-classes]: ./classes/.meta/design.md
 [concept-exercise-flag-enums]: ./flag-enums/.meta/design.md
 [concept-exercise-datetimes]: ./datetimes/.meta/design.md
