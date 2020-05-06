@@ -21,7 +21,7 @@ or
 
 > Here `string` represent the key type of map, and `int` represent the element type of map. You can change them to whatever valid golang type.
 
-To store a value in a map, you can use `=` operator like
+To store a value in a map, you can use the `=` operator:
 
 ```go
   foo["bar"] = 42
