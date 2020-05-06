@@ -1,13 +1,3 @@
-Further Reading:
-
-- [Go Blog - map][goblog-map]
-- [Go Spec - map][gospec-map]
-
-Additional Materials:
-
-- [Go Doc - Race Detector][godoc-race-detector]
-- [Go Blog - Race Detector][goblog-race-detector]
-
 A `map` in Go is an associative data type that contains a collection of key/value pairs, which other languages might refer to as as dictionary or an associative array, [here's the actual go specification about map][gospec-map].
 
 The value of an uninitialized map is `nil`, and you can define a map as follows:
