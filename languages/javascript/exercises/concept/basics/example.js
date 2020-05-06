@@ -1,13 +1,13 @@
 export const EXPECTED_MINUTES_IN_OVEN = 40
 
 /**
- * The amount of minutes it takes to prepare a single layer
+ * The amount of minutes it takes to prepare a single layer.
  */
 const PREPARATION_MINUTES_PER_LAYER = 2
 
 /**
  * Determine the amount of minutes the lasagna still needs to remain in the
- * over to be properly prepared.
+ * oven to be properly prepared.
  *
  * @param {number} actualMinutesInOven
  * @returns {number} the number of minutes remaining
