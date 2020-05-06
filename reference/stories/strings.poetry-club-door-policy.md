@@ -1,6 +1,6 @@
 # Poetry club door policy
 
-## Story introduction
+## Story
 
 A new poetry club has opened in town, and you're thinking of attending. Because
 there have been incidents in the past, the club has a very specific door policy
@@ -63,10 +63,13 @@ recites **Huge hooves too**, you'll respond **o**.
 Finally the password you write down is `Horse, please`, and you can party
 with the renowned poets.
 
-## Related
+## Implementations
 
-- [`type/string`][type-string]
-- [`javascript/concept/strings`][javascript-concept-strings]
+- [JavaScript][implementation-javascript] (reference implementation)
 
-[type-string]: ../types/string.md
-[javascript-concept-strings]: ../../languages/javascript/exercises/concept/strings
+## Reference
+
+- [`types/string`][types-string]
+
+[types-string]: ../types/string.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/strings/.docs/instructions.md

@@ -8,12 +8,12 @@ In many languages lists are _homogenous_ like arrays, and can contain only one t
 
 ### Language List
 
-In this exercise, the student processes a list of laguages to learn on Exercism. The exercise aims to teach:
+In this exercise, the student processes a list of languages to learn on Exercism. The reference implementation (Clojure) teaches:
 
-- adding an item to a list
-- returning the first item from a list
-- returning a list of all items but the first
-- returning the number of items in a list.
+- Adding an item to a list
+- Returning the first item from a list
+- Returning a list of all items but the first
+- Returning the number of items in a list.
 
 #### Implementations
 

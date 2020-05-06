@@ -1,6 +1,6 @@
 # Klingon Translation Service
 
-## Story introduction
+## Story
 
 In this exercise you'll be providing a `TranslationService` where paid members
 have some quality assurance.
@@ -45,8 +45,6 @@ These These are examples of tasks that fit the story of the translation service:
 - Request a translation, retrying at most 2 times
 - Fetch a translation, inspect the quality, or request it
 
-Example usage: [`javascript/concept/promises`][javascript-concept-promises]
-
 ## Terminology
 
 These are recommendations, not rules, for recurring terminology in the instructions (including stub commentary)
@@ -58,21 +56,22 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 All the translation texts are Klingon to English.
 
-Example usage: [`javascript/concept/promises`][javascript-concept-promises]
+## Implementations
 
-## Related
+- [JavaScript][implementation-javascript] (reference implementation)
 
-- [`type/promise`][type-promise]
-- [`type/future`][type-future]
-- [`type/string`][type-string]
-- [`type/number`][type-number]
-- [`javascript/concept/promises`][javascript-concept-promises]
+## Reference
 
-[type-promise]: ../types/promise.md
-[type-future]: ../types/future.md
-[type-string]: ../types/string.md
-[type-number]: ../types/number.md
-[javascript-concept-promises]: ../../languages/javascript/exercises/concept/promises
+- [`types/promise`][types-promise]
+- [`types/future`][types-future]
+- [`types/string`][types-string]
+- [`types/number`][types-number]
+
+[types-promise]: ../types/promise.md
+[types-future]: ../types/future.md
+[types-string]: ../types/string.md
+[types-number]: ../types/number.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/promises/.docs/instructions.md
 
 ## N.B.
 

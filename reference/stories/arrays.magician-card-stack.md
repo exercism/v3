@@ -1,6 +1,6 @@
 # Magician card stack
 
-## Story introduction
+## Story
 
 As a magician-to-be, Elyse needs to practice some basics. She has a stack of cards that she wants to manipulate.
 
@@ -24,8 +24,6 @@ These are examples of tasks that fit the story of Elyse being a beginner:
 - Remove a card from the bottom of the stack
 - Check size of the stack
 
-Example usage: [`javascript/concept/arrays`][javascript-concept-arrays]
-
 ## Terminology
 
 These are recommendations, not rules, for recurring terminology in the instructions (including stub commentary)
@@ -37,11 +35,15 @@ These are recommendations, not rules, for recurring terminology in the instructi
 - The **top card** is the _first element_
 - The **bottom card** is the _last element_
 
+## Implementations
+
+- [JavaScript][implementation-javascript] (reference implementation)
+
 ## Alternative version
 
 An alternative version of the story uses **you** (the student) as actor, and focusses on re-arranging the deck only.
 
-### Story introduction
+### Story
 
 You're a magician and you handle a deck of cards. In order to correctly execute your magic trick, you need to be able to move a card from one position to another position. That is, you need to be able to rearrange the deck. Naturally, you want to be able to move cards in both directions, and be able to say "from the top of the deck" or "from the bottom of the deck".
 
@@ -52,16 +54,16 @@ These are examples of tasks that fit the story of you wanting to re-arrange card
 - Implement a function arrange that moves a card in a stack from one given position to another, returning a new stack
 - Implement a function rearrange that does the same, mutating the original stack
 
-Example usage: [`research/javascript-1-a`][javascript-research-1-a]
+### Implementations
 
-## Related
+- [JavaScript 1-a (research)][implementation-javascript-research-1-a]
+- [JavaScript 2-a (research)][implementation-javascript-research-2-a]
 
-- [`type/array`][type-array]
-- [`javascript/concept/arrays`][javascript-concept-arrays]
-- [`research/javascript-1-a`][javascript-research-1-a]
-- [`research/javascript-2-a`][javascript-research-2-a]
+## Reference
 
-[type-array]: ../types/array.md
-[javascript-concept-arrays]: ../../languages/javascript/exercises/concept/arrays
-[javascript-research-1-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-1-a
-[javascript-research-2-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-2-a
+- [`types/array`][types-array]
+
+[types-array]: ../types/array.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/arrays/.docs/instructions.md
+[implementation-javascript-research-1-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-1-a
+[implementation-javascript-research-2-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-2-a

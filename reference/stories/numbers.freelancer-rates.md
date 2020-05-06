@@ -1,6 +1,6 @@
 # Freelancer Rates
 
-## Story introduction
+## Story
 
 In this exercise you'll be writing code to help a freelancer communicate with a
 project manager by providing a few utilities to quickly calculate day- and
@@ -26,8 +26,6 @@ These are example tasks that fit the story of the freelancer communicating with 
 - Calculate the month rate, given an hourly rate and a discount
 - Calculate the number of workdays given a budget, rate and discount
 
-Example usage: [`javascript/concept/numbers`][javascript-concept-numbers]
-
 ## Terminology
 
 These are recommendations, not rules, for recurring terminology in the instructions (including stub commentary)
@@ -36,16 +34,19 @@ These are recommendations, not rules, for recurring terminology in the instructi
 - Monthly rate is 22 times the daily rate; it should be mentioned
 - If discount is supplied as a _different_ type than the numeric types, use the terminology **discounts are modeled as**
 
-## Related
+## Implementations
 
-- [`type/number`][type-number]
-- [`type/decimal_number`][type-decimal-number]
-- [`type/floating_point_number`][type-floating-point-number]
-- [`type/string`][type-string]
-- [`javascript/concept/numbers`][javascript-concept-numbers]
+- [JavaScript][implementation-javascript] (reference implementation)
 
-[type-number]: ../types/number.md
-[type-decimal-number]: ../types/decimal_number.md
-[type-floating-point-number]: ../types/floating_point_number.md
-[type-string]: ../types/string.md
-[javascript-concept-numbers]: ../../languages/javascript/exercises/concept/numbers
+## Reference
+
+- [`types/number`][types-number]
+- [`types/decimal_number`][types-decimal-number]
+- [`types/floating_point_number`][types-floating-point-number]
+- [`types/string`][types-string]
+
+[types-number]: ../types/number.md
+[types-decimal-number]: ../types/decimal_number.md
+[types-floating-point-number]: ../types/floating_point_number.md
+[types-string]: ../types/string.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/numbers/.docs/instructions.md
