@@ -5,7 +5,7 @@ var bill map[string]int
 
 // AddItem add item to customer bill
 func AddItem(item string, unit string) bool {
-	panic("Please implement the RemoveItem() function")
+	panic("Please implement the AddItem() function")
 }
 
 // RemoveItem remove item from customer bill
