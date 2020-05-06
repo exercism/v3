@@ -139,6 +139,8 @@ This file contains meta information on the exercise:
 - Which exercise it was forked from (required if the exercise is forked)
 - Language version requirements (optional)
 
+If someone is both an author _and_ a contributor, only list that person as an author.
+
 For more information, watch [this video][video-meta-config.json] and check [this example config.json file][meta-config.json].
 
 #### Example
