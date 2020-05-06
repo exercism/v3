@@ -2,7 +2,7 @@ using System;
 
 class RemoteControlCar
 {
-    // TODO: define the 'RemoteControlCar' class' constructor
+    // TODO: define the constructor for the 'RemoteControlCar' class
 
     public bool BatteryDrained()
     {
@@ -27,7 +27,7 @@ class RemoteControlCar
 
 class RaceTrack
 {
-    // TODO: define the 'RaceTrack' class' constructor
+    // TODO: define the constructor for the 'RaceTrack' class
 
     public bool CarCanFinish(RemoteControlCar car)
     {
