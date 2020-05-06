@@ -71,7 +71,6 @@ This function supposed to do a payment to the customer bank, since you're develo
 
 ```go
 Checkout()
-// Output:
 ```
 
 > Note that there's no value returned by this function
