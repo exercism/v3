@@ -26,7 +26,7 @@
         "slug": "booleans",
         "uuid": "5acafcbb-20a0-45b9-b276-3d167e0de313",
         "concepts": ["booleans"],
-        "prerequisites": []
+        "prerequisites": ["basics"]
       },
       {
         "slug": "numbers",
