@@ -20,5 +20,5 @@ func Checkout() {
 
 // GetItem return the quantity of item that the customer has in his/her bill
 func GetItem(item string) (int, bool) {
-	panic("Please implement the GetIte() function")
+	panic("Please implement the GetItem() function")
 }
