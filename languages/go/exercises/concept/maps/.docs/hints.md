@@ -7,21 +7,21 @@
 
 - To store the measurement in your program, you can use map literal, see [go blog about map][goblog-map]
 
-## 2. Implement `AddItem`
+## 2. Add item to the customer bill
 
 - To check whether the given unit of measurement is correct, you can test your measurement map for a key without retrieving a value, see [go blog about map][goblog-map]
 
-## 3. Implement `RemoveItem`
+## 3. Remove item from the customer bill
 
 - To check whether the given item is in customer bill, you can test your measurement map for a key without retrieving a value, see [go blog about map][goblog-map]
 
 - To check whether the given unit of measurement is correct, you can test your measurement map for a key without retrieving a value, see [go blog about map][goblog-map]
 
-## 4. Implement `GetItem`
+## 4. Return the number of specific item that is in the customer bill
 
 - To check whether the given item is in customer bill, you can test your measurement map for a key without retrieving a value, see [go blog about map][goblog-map]
 
-## 5. Implement `Checkout`
+## 5. Simulate checkout operation
 
 - To reset the customer bill, you all you need to do is reinitialize the customer, see [go blog about map][goblog-map]
 
