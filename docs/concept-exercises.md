@@ -81,6 +81,7 @@ This file is split into two parts.
 Each task must conform to the following standard:
 
 - Start with a third-level heading starting with a number (e.g. `### 1. Do X`, `### 2. Do Y`).
+- The heading should describe _what_ to implement, not _how_ to implement it (e.g. `### 1. Check if an appointment has already passed`).
 - Describe which function/method the student needs to define/implement (e.g. `Implement method X(...) that takes an A and returns a Z`),
 - Provide an example usage of that function in code. These examples should be different to those given in the tests.
 
