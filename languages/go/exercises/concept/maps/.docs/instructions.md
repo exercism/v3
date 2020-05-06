@@ -20,6 +20,12 @@ This function will add item to the customer bill, to implement this, you'll need
 - Check whether the given unit of measurement is correct
 - Add the item to the customer bill
 
+```go
+ok := AddItem("carrot", "dozen")
+fmt.Println(ok)
+// Output: true or false
+```
+
 ## 3. Implement `RemoveItem`
 
 This function will remove item from the customer bill, to implement this, you'll need to:
@@ -30,6 +36,12 @@ This function will remove item from the customer bill, to implement this, you'll
 - Check whether the new quantity is 0, is so return remove the item from the customer bill
 - Otherwise reduce the quantity of the item
 
+```go
+ok := RemoveItem("carrot", "dozen")
+fmt.Println(ok)
+// Output: true or false
+```
+
 ## 4. Implement `GetItem`
 
 This function will return the number of specific item that the customer has in his/her bill, to implement this, you'll need to:
@@ -37,10 +49,23 @@ This function will return the number of specific item that the customer has in h
 - Check whether the given item is in the bill
 - Otherwise, return the quantity of the item
 
+```go
+qty, ok := GetItem("carrot")
+fmt.Println(qty)
+// Output: 12
+fmt.Println(ok)
+// Output: true or false
+```
+
 ## 5. Implement `Checkout`
 
 This function supposed to do a payment to the customer bank, since you're developing a prototype, you'll just need to:
 
 - Reset the customer bill
+
+```go
+Checkout()
+// Output:
+```
 
 [gross-unit]: https://en.wikipedia.org/wiki/Gross_(unit)
