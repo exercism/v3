@@ -1,57 +1,83 @@
-class RemoteControlCar
+using System;
+
+abstract class Player
 {
-    private int speed;
-    private int battery = 100;
-    private int batteryDrain;
-    private int distance;
+    private int _hitPoints;
 
-    public RemoteControlCar(int speed, int batteryDrain)
+    protected Player(int hitPoints)
     {
-        this.speed = speed;
-        this.batteryDrain = batteryDrain;
+        _hitPoints = hitPoints;
     }
 
-    public bool BatteryDrained()
+    protected abstract int Damage();
+    
+    public void Attack(Player target)
     {
-        return battery < batteryDrain;
-    }
-
-    public int DistanceDriven()
-    {
-        return distance;
-    }
-
-    public void Drive()
-    {
-        if (!BatteryDrained())
+        if (Stunned())
         {
-            battery -= batteryDrain;
-            distance += speed;
+            return;
         }
+        
+        target._hitPoints -= Damage();
     }
 
-    public static RemoteControlCar TopOfTheLine()
+    public bool Stunned()
     {
-        return new RemoteControlCar(50, 4);
+        return _hitPoints <= 0;
+    }
+
+    public override string ToString()
+    {
+        return $"HP: {_hitPoints}";
     }
 }
 
-class RaceTrack
+class Wizard : Player
 {
-    private int distance;
+    private bool spellPrepared;
 
-    public RaceTrack(int distance)
+    public Wizard() : base(20)
     {
-        this.distance = distance;
     }
 
-    public bool CarCanFinish(RemoteControlCar car)
+    public void PrepareSpell()
     {
-        while (!car.BatteryDrained())
-        {
-            car.Drive();
-        }
+        spellPrepared = true;
+    }
 
-        return car.DistanceDriven() >= distance;
+    protected override int Damage()
+    {
+        if (spellPrepared)
+        {
+            spellPrepared = false;
+            return 12;
+        }
+        
+        return 3;
+    }
+}
+
+class Warrior : Player
+{
+    private bool potionDrunk;
+
+    public Warrior() : base(30)
+    {
+    }
+
+    public void DrinkPotion()
+    {
+        potionDrunk = true;
+    }
+
+    protected override int Damage()
+    {
+        if (potionDrunk)
+        {
+            potionDrunk = false;
+            return 10;
+        }
+        
+        return 6;
     }
 }
