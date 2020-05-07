@@ -127,7 +127,7 @@ See [this example file][example-reference-document-implementations].
 
 **Purpose:** Allow maintainers to find out which tracks have implemented an exercise for a story.
 
-Each exercise has a story. These stories are documented in the `reference/stories` directory. If such a document exists for the exercise's story, add the exercise to the corresponding exercise's `Implementations` section. When no story document exists, consider adding one.
+Each exercise has a story or theme. The stories people have created so far are documented in the `reference/stories` directory. If such a document exists for the exercise's story, add the exercise to the corresponding exercise's `Implementations` section. When no story document exists, consider adding one.
 
 See [this example file][example-story-document-implementations].
 
