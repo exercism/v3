@@ -1,16 +1,26 @@
-In this exercise you'll be organizing races between various types of remote controlled cars. Each car has its own speed and battery drain characteristics.
+In this exercise you're playing a role-playing game named "Wizard and Warriors," which allows you to play (unsurprisingly) as a wizard or a warrior.
 
-Cars start with full (100%) batteries. Each time you drive the car using the remote control, it covers the car's speed in meters and decreases the remaining battery percentage by its battery drain.
+The wizard and warrior have some common data and behavior:
 
-If a car's battery is below its battery drain percentage, you can't drive the car anymore.
+- They have a number of hit points.
+- They can attack, which reduces the number of hit points of the other character.
+- If the number of hit points is less than or equal to zero, they are stunned and cannot do any more damage.
 
-Each race track has its own distance. Cars are tested by checking if they can finish the track without running out of battery.
+There are also some differences between the two character types.
+
+|                    | Warriors          | Wizards             |
+| ------------------ | ----------------- | ------------------- |
+| Initial hit points | 30                | 20                  |
+| Default attack     | 6                 | 3                   |
+| Special attack     | 10 (potion drunk) | 12 (spell prepared) |
+
+Drinking a potion (warrior) or preparing a spell (wizard) only makes the next attack a special attack. Subsequent attacks will be default attacks, unless a new potion is drunk or a new spell is prepared.
 
 You have six tasks, each of which will work with remote controller car instances.
 
-### 1. Creating a remote controlled car
+### 1. Display
 
-Allow creating a remote controller car by defining a constructor for the `RemoteControlCar` class that takes the speed of the car in meters and the battery drain percentage as its two parameters (both of type `int`):
+To make it easy to check a character's remaining hit points:
 
 ```csharp
 int speed = 5;
