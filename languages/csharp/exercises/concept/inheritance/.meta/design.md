@@ -2,35 +2,36 @@
 
 ## Goal
 
-The goal of this exercise is to teach the student the Concept of Constructors in C#.
+The goal of this exercise is to teach the student the Concept of Inheritance in C#.
 
 ## Learning objectives
 
-- Know what constructors are.
-- Know how to define parameterless constructors.
-- Know how to define parameterized constructors.
+- Know what inheritance is.
+- Know how to inherit from a class.
+- Know that all types inherit from `object`.
+- Know what abstract and sealed classes are.
+- Know what abstract and virtual methods are.
+- Know how to override methods.
+- Know about the `protected` visibility modifier.
 
 ## Out of scope
 
-- Constructor overloading.
-- Private constructors.
-- Static constructors.
-- Destructors.
+- Extending types through extension methods.
 
 ## Concepts
 
 This Concepts Exercise's Concepts are:
 
-- `constructors`: know what constructors are; know how to define parameterless constructors; know how to define parameterized constructors; know how to use constructor overloading; know how to define private constructors.
+- `inheritance`: know what inheritance is; know how to inherit from a class; know that all types inherit from `object`; know what abstract and sealed classes are; know what abstract and virtual methods re; know how to override methods; know about the `protected` visibility modifier.
 
 ## Prequisites
 
 This Concept Exercise's prerequisites Concepts are:
 
-- `classes`: know how to work with classes.
-- `numbers`: know how compare numbers.
+- `constructors`: know how to work with constructors.
+- `strings`: know how to do basic string interpolation.
+- `numbers`: know how to compare numbers.
 - `conditionals`: know how to do conditional logic.
-- `while-loops`: know how to use `while` loops.
 
 ## Representer
 
@@ -38,7 +39,10 @@ This exercise does not require any specific representation logic to be added to 
 
 ## Analyzer
 
-This exercise does not require any specific logic to be added to the [analyzer][analyzer].
+This exercise could benefit from the following rules added to the the [analyzer][analyzer]:
+
+- Verify that the constructor of the `Character` class uses the `protected` modifier.
+- Verify that the various fields used (hit points, spell prepared and potion drunk) use the `private` modifier.
 
 [analyzer]: https://github.com/exercism/csharp-analyzer
 [representer]: https://github.com/exercism/csharp-representer
