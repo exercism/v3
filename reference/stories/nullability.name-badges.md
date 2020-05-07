@@ -19,6 +19,7 @@ These are example tasks that fit the employee badges exercise:
 ## Implementations
 
 - [C#][implementation-csharp] (reference implementation)
+- [JavaScript][implementation-javascript]
 
 ## Related
 
@@ -28,3 +29,4 @@ These are example tasks that fit the employee badges exercise:
 [types-null]: ../types/null.md
 [types-nullable]: ../types/nullable.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/nullability/.docs/instructions.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/nullability/.docs/instructions.md
