@@ -26,12 +26,13 @@ This exercise lists all the available actions of the main character in a given s
 
 | Track | Exercise                              | Changes |
 | ----- | ------------------------------------- | ------- |
+| C#    | [booleans][implementation-csharp]     | None    |
 | F#    | [booleans][implementation-fsharp]     | None    |
 | JS    | [booleans][implementation-javascript] | None    |
 
 ### Pac-man game logic
 
-This exercise looks at various game events and determine if they have occured by looking at various game states. The implementation in Elixir teaches:
+This exercise looks at various game events and determine if they have occured by looking at various game states. The reference implementation (Elixir) teaches:
 
 - Boolean values.
 - Boolean operators.
@@ -43,6 +44,7 @@ This exercise looks at various game events and determine if they have occured by
 | ------ | --------------------------------- | ------- |
 | Elixir | [booleans][implementation-elixir] | None    |
 
+[implementation-csharp]: ../../languages/csharp/exercises/concept/booleans/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/booleans/.docs/introduction.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/booleans/.docs/introduction.md
 [implementation-elixir]: ../../languages/elixir/exercises/concept/booleans/.docs/introduction.md
