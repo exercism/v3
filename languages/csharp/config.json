@@ -85,12 +85,7 @@
         "slug": "nullability",
         "uuid": "370e7e54-6a96-11ea-bc55-0242ac130003",
         "concepts": ["nullability"],
-        "prerequisites": [
-          "strings",
-          "exceptions",
-          "for-loops",
-          "memory-allocation"
-        ]
+        "prerequisites": ["strings", "conditionals", "memory-allocation"]
       },
       {
         "slug": "strings",
