@@ -14,10 +14,14 @@ for (var i = 0; i < numbers.length; i++) {
 // => 1
 ```
 
-Example of analysis using a build-in method:
+Example of analysis using a built-in method:
 
 ```javascript
 const numbers = [1, 'two', 3, 'four']
 numbers.indexOf('two')
 // => 1
 ```
+
+before starting this exercise we must be familiar with the terms `predicate` read more about it in this [reference][predicate_in_programming]
+
+[predicate_in_programming]: https://derk-jan.com/2020/05/predicate/

@@ -1,6 +1,6 @@
 import {
   getCardPosition,
-  doesStackIncludesCard,
+  doesStackIncludeCard,
   isEachCardEven,
   doesStackIncludesOddCard,
   getFirstOddCard,
@@ -22,15 +22,15 @@ describe('arrays-analysis', () => {
     })
   })
 
-  describe('doesStackIncludesCard', () => {
-    const doesStackIncludesCardTestCases = [
+  describe('doesStackIncludeCard', () => {
+    const doesStackIncludeCardTestCases = [
       [[1, 2, 3], 1, true],
       [[1, 2, 3], 4, false],
     ]
 
-    doesStackIncludesCardTestCases.forEach(([array, item, expected]) => {
-      test(`doesStackIncludesCard([${array}],${item})`, () => {
-        expect(doesStackIncludesCard(array, item)).toBe(expected)
+    doesStackIncludeCardTestCases.forEach(([array, item, expected]) => {
+      test(`doesStackIncludeCard([${array}],${item})`, () => {
+        expect(doesStackIncludeCard(array, item)).toBe(expected)
       })
     })
   })

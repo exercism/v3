@@ -1,10 +1,10 @@
-Elyse, magician-to-be, continues her training. She will be given several stacks of cards that she need to perform her tricks on, without looking at each card one by one.
+Elyse, magician-to-be, continues her training. She will be given several stacks of cards that she needs to perform her tricks.
 
-To make things a bit easier she only uses the cards 1 to 10.
+To make things a bit easier, she only uses the cards 1 to 10.
 
 ### 1. Find the position of a card
 
-Elyse needs the position (index) of a card in the stack
+Elyse wants to know the position (index) of a card in the stack
 
 ```javascript
 const card = 2
@@ -14,7 +14,7 @@ getCardPosition([9, 7, 3, 2], card)
 
 ### 2. Check for presence of a card
 
-Elyse needs to determine if a card is present in the stack
+Elyse wants to determine if a card is present in the stack
 
 ```javascript
 const card = 3
@@ -33,7 +33,7 @@ isEachCardEven([2, 4, 6, 7])
 
 ### 4. Check if a stack contains an odd number
 
-Elyse needs to know if there is an odd number in the stack
+Elyse wants to know if there is an odd number in the stack
 
 ```javascript
 doesStackIncludesOddCard([3, 2, 6, 4, 8])
