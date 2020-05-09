@@ -8,13 +8,13 @@ Syntactically, `map` looks like this:
 map[KeyType]ElementType
 ```
 
-_If you're confused what `KeyType` and `ElementType` is, it is all valid type in go, which means you can store anything from primitive variable to a slice._
+_`KeyType` must be any [comparable type][gospec-comparable], while `ElementType` can be any valid type in go, which means you can store anything from primitive variable to a slice._
 
-It's important to remember that `map` in go is **unordered**, if you tried to loop trough a `map`, you might surprize yourself seeing that your key/elements printed in random order (give it a try if you like). So instead relying on the order of the elements, you access `map` elements through its key that you should now in advance.
+It's important to remember that `map` in go is **unordered**, if you try to loop trough a `map` and print the element, you might surprize yourself seeing that your elements printed in random order (give it a try if you like).
 
-It is also important to know that each key is unique, meaning assigning the same key twice will overwrite the value of the corresponding key.
+It is also important to know that each key is unique, meaning that assigning the same key twice will overwrite the value of the corresponding key.
 
-`map` is reference type, which means if you pass it around, go won't copy the whole map. Instead what go will do is go copy the pointer to a map, this make it cheap to pass it around. The value of an uninitialized map is `nil`.
+`map` is reference type, which means if you pass it around, go won't copy the whole map. Instead what go will do is go copy the pointer of the map, this makes passing map to a function or variable cheap. The value of an uninitialized map is `nil`.
 
 You can define map as follows (we also called this a **nil map**);
 
@@ -38,7 +38,7 @@ or
 
 > A nil map is different from initialized map, writing to an nil map will cause a runtime error
 >
-> ```
+> ```txt
 > panic: assignment to entry in nil map
 > ```
 >
@@ -57,7 +57,7 @@ Here are some operations that you can use with map
   delete(foo, "bar")
 ```
 
-If you're trying to retrieve a non existed key, will return the zero value of your value type, it can confuse you especially if your element is the same as the ElementType default value (for example, 0 for an int), to check whether the key exists in your map, you can use
+If you're trying to retrieve a non existed key, will return the zero value of your value type, it can confuse you, especially if your element is the same as the `ElementType` default value (for example, 0 for an int), to check whether the key exists in your map, you can use
 
 ```go
   value, exists := foo["baz"]
@@ -65,9 +65,24 @@ If you're trying to retrieve a non existed key, will return the zero value of yo
   // value: 0; exists: false
 ```
 
-If you try to write to a `map` from multiple go routine, that will trigger the race detector, [see this link][godoc-race-detector] and [here][goblog-race-detector]. Alternatively, you can use `sync.Map` or `atomic` or `mutex` to work around this issue.
+As we've seen before, detecting whether a map `map` is initialized or not is easy, we can simply compare them to `nil` but what about other maps? Well, since `maps` isn't a comparable, we can't use `==` operator, but `reflect` package has something to rescue us, it's called `DeepEqual`, we can use it like
+
+```go
+import "reflect"
+
+// ....
+
+equal := reflect.DeepEqual(map[string]int{}, map[string]int{})
+fmt.Println(equal)
+// Output: true
+```
+
+_But wait, if map isn't a comparable why are we able to compare them with `nil`? Well, the spec has made an exception for this, see the [comparable spec][gospec-comparable]_
+
+The last one, if you're trying to write to a `map` from multiple go routine, that will trigger the race detector, [see this link][godoc-race-detector] and [here][goblog-race-detector]. Alternatively, you can use `sync.Map` or `atomic` or `mutex` to work around this issue.
 
 [godoc-race-detector]: https://golang.org/doc/articles/race_detector.html
 [goblog-race-detector]: https://blog.golang.org/race-detector
 [goblog-map]: https://blog.golang.org/maps
 [gospec-map]: https://golang.org/ref/spec#Map_types
+[gospec-comparable]: https://golang.org/ref/spec#Comparison_operators
