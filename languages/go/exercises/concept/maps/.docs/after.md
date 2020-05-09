@@ -19,7 +19,7 @@ It is also important to know that each key is unique, meaning that assigning the
 You can define map as follows (we also called this a **nil map**);
 
 ```go
-  var foo map[string]int{}
+  var foo map[string]int
 ```
 
 To initialize a map, you can do:
