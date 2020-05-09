@@ -5,7 +5,7 @@ Two common types of numbers in Ruby are:
 
 They are implemented through the `Integer` and `Float` classes.
 
-The `Float` and `Integer` classes have methods that will coerce values from one to the other. `Integer` numbers are precise to a whole unit, while `Float` has precision that is fractional to an whole number. This means that coercing a float to an integer may result in loss of precision.
+The `Float` and `Integer` classes have methods that will coerce values from one to the other. `Integer` numbers are precise to a whole unit, while `Float` has precision that is fractional to an whole number.
 
 In this exercise you must conditionally execute logic. A common way to do this in Ruby is by using an `if/else` statement:
 
