@@ -7,8 +7,11 @@ variable = 10 -- Bind the integer value 10
 The value of a variable can not change once defined. Instead, a new variable can be created:
 
 ```purescript
-variableOne = 1 -- Bind an integer value of 1 to variableOne
-variableTwo = 2 -- Bind an integer value of 2 to variableTwo
+-- Binding an integer value of 1 to variableOne
+variableOne = 1
+
+-- Bind an integer value of 2 to variableTwo
+variableTwo = 2
 
 -- The compiler will output an error when trying to re-bind the value of a variable:
 variableTwo = 3
