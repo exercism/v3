@@ -1,5 +1,11 @@
-PureScript uses `true` and `false` to represent the two truth values of logic.
+Using pattern guards is not the only method of pattern matching. Two other methods of pattern matching will be mentioned:
 
-In PureScript, for each of the three logical operations (AND, OR and NOT) there is a corresponding operator: `&&`, `||` and `not`. In general, there are rules regarding the order of the operations, and in this case `not` (negation) is applied first, and then `&&` (conjunction) and then `||` (disjunction).
+### Case/of expressions
+The `case`/`of` expressions are very similar to `switch` statements in other languages. `case`/`of` expressions have the following general form:
 
-You can always 'escape' these rules by using an operator with an even higher precedence, namely, `( )` named the 'Grouping operator' or simply called 'parentheses'.
+```purescript
+case value of
+  pattern -> result
+  ...
+  pattern -> result
+```
