@@ -36,6 +36,7 @@ Once you get a test passing, you can enable the next one by changing `xit` to `i
 ## Submitting the solution
 
 Once none of the tests are skipped and they are all passing, you can submit your solution with:
+
 ```shell
 exercism submit src/<NAME>.purs
 ```
