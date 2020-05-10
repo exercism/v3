@@ -1,6 +1,7 @@
 Using pattern guards is not the only method of pattern matching. Two other methods of pattern matching will be mentioned:
 
 ### Case/of expressions
+
 The `case`/`of` expressions are very similar to `switch` statements in other languages. `case`/`of` expressions have the following general form:
 
 ```purescript
@@ -32,6 +33,7 @@ reply guess = case guess of
 ```
 
 ### Function pattern matching
+
 We can also pattern match the arguments of functions, and it has the following general form:
 
 ```purescript
@@ -61,6 +63,7 @@ reply _ = "Not close"
 ```
 
 ### Limitations
+
 In both of these other methods of pattern matching, I have left out the "less than 41" and "greater than 43" cases of this exercise. This is because these other methods have limitations.
 
 You can not (nicely) pattern match for "greater than a value" or "less than a value" using these methods. For example, this will throw an error:
