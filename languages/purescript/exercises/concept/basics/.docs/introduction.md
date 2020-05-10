@@ -7,8 +7,11 @@ variable = 10 -- Bind the integer value 10
 The value of a variable can not change once defined. Instead, a new variable can be created:
 
 ```purescript
-variableOne = 1 -- Bind an integer value of 1 to variableOne
-variableTwo = 2 -- Bind an integer value of 2 to variableTwo
+-- Binding an integer value of 1 to variableOne
+variableOne = 1
+
+-- Bind an integer value of 2 to variableTwo
+variableTwo = 2
 
 -- The compiler will output an error when trying to re-bind the value of a variable:
 variableTwo = 3
@@ -31,7 +34,7 @@ module Calculator where
 -- ...
 ```
 
-Functions must be defined in a module. Each function has one or more arguments (however, technically all functions have only one argument; this is called [function currying][function-currying]). All arguments are statically-typed, and the return type can be explicitly declared, or often inferred by the compiler. Often you will need to import other modules to use their functions. This is done using the `import` keyword followed by the module you'd like to import. A common module to import is `Prelude` which supplies basic functions and operators such as addition (`+`) and subtraction (`-`).
+Functions must be defined in a module. Each function has one or more arguments. All arguments are statically-typed, and the return type can be explicitly declared, or often inferred by the compiler. Often you will need to import other modules to use their functions. This is done using the `import` keyword followed by the module you'd like to import. A common module to import is `Prelude` which supplies basic functions and operators such as addition (`+`) and subtraction (`-`).
 
 ```purescript
 module Calculator where
