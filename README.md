@@ -2,8 +2,6 @@ _Note: This file, and the other docs in this repository, can be viewed on [GitHu
 
 # Exercism - v3
 
-
-
 Welcome to the workspace for Exercism v3!
 
 Exercism v3 is the third major iteration of Exercism, which we are aiming to launch around June 2020. It aims to both add exciting new features and to fix some of the issues present in v2, especially those around being blocked while waiting for a mentor. You can read the WIP plan [here](https://github.com/exercism/v3/issues/690).
