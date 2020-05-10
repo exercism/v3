@@ -14,7 +14,13 @@
         "uuid": "f1eb2cab-d6bc-447a-bce3-6780c44e4b22",
         "concepts": ["booleans"],
         "prerequisites": []
-      }
+      },
+      {
+        "slug": "pattern-matching",
+        "uuid": "74cc435c-403a-428b-82e6-9038599b7633",
+        "concepts": ["pattern-matching"],
+        "prerequisites": ["strings", "conditionals"]
+      },
     ],
     "practice": []
   }
