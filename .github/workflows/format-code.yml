@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/format')
     steps:
+      - name: 'Setup SSH deploy key'
+        run: |
+          eval $(ssh-agent -s)
+          ssh-add - <<< "${{ secrets.DEPLOY_KEY }}"
+
       - name: 'Checkout code'
         run: |
           PR_DATA="/tmp/pr.json"
@@ -18,7 +23,7 @@ jobs:
             xargs curl --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' -o "$PR_DATA" --url
 
           HEAD_REF=$(jq -r ".head.ref" "$PR_DATA")
-          HEAD_REPO=$(jq -r '.head.repo.clone_url | sub("https://"; "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@")' "$PR_DATA")
+          HEAD_REPO=$(jq -r '.head.repo.ssh_url' "$PR_DATA")
 
           git clone $HEAD_REPO .
           git checkout -b "$HEAD_REF" "origin/$HEAD_REF"
