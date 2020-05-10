@@ -37,6 +37,7 @@ module Calculator where
 Functions must be defined in a module.
 
 A function is similar to methods/functions in other languages. Every function has one or more arguments. All arguments are statically-typed, and the return type can be explicitly declared using a type signature:
+
 ```purescript
 foo :: Int -> Int -- foo takes an Int and returns an Int
 foo x = x+1 -- foo takes an argument, x, and adds 1 to x
