@@ -1,11 +1,23 @@
-### 1. Check if the 'Fast Attack' action is possible
+### General
 
-- The logical NOT operator (`not`) can be placed before an expression to negate its value.
+- [This page][pattern-matching] has a nice introduction to pattern matching in PureScript.
 
-### 2. Check if the 'Approach and Spy' action is possible
+### 1. Reply to a correct guess
 
-- Logical expressions are evaluated from left to right and are tested for possible 'short-circuits'.
+- You can pattern match the guess to a specific number using [guards][guards].
 
-### 3. Check if the 'Signal Prisoner' action is possible
+### 2. Reply to a close guess
 
-- Logical operators in the order of their precedence (from highest to lowest): `not`, `&&`, `||`.
+- You can pattern match the guess to a specific number using [guards][guards].
+
+### 3. Reply to too low guesses
+
+- You can pattern match to a range of numbers using an [operator][common-operators] (namely "less than") and [guards][guards].
+
+### 4. Reply to too high guesses
+
+- You can pattern match to a range of numbers using an [operator][common-operators] (namely "greater than") and [guards][guards].
+
+[pattern-matching]: https://github.com/purescript/documentation/blob/master/language/Pattern-Matching.md
+[guards]: https://github.com/purescript/documentation/blob/master/language/Pattern-Matching.md#guards
+[common-operators]: https://github.com/purescript/documentation/blob/master/guides/Common-Operators.md
