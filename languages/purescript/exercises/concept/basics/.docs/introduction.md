@@ -57,5 +57,4 @@ sum = sum 1 2
 Comments can be used for inline documentation. Single line comments in Elixir are preceded by `--`.
 
 [functional-programming]: https://en.wikipedia.org/wiki/Functional_programming
-[function-currying]: https://www.youtube.com/watch?v=rcNts6CynO8
 [modules]: https://github.com/purescript/documentation/blob/master/language/Modules.md
