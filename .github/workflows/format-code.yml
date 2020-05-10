@@ -12,8 +12,9 @@ jobs:
     steps:
       - name: 'Setup SSH deploy key'
         run: |
-          eval $(ssh-agent -s)
-          ssh-add - <<< "${{ secrets.DEPLOY_KEY }}"
+          mkdir ~/.ssh
+          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
 
       - name: 'Checkout code'
         run: |
