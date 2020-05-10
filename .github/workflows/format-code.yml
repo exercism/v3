@@ -13,7 +13,9 @@ jobs:
       - name: 'Setup SSH deploy key'
         run: |
           eval $(ssh-agent -s)
-          ssh-add - <<< "${{ secrets.DEPLOY_KEY }}"
+          ssh-add - <<< "${{ DEPLOY_KEY }}"
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
 
       - name: 'Checkout code'
         run: |
