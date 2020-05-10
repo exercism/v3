@@ -20,7 +20,7 @@
         "uuid": "74cc435c-403a-428b-82e6-9038599b7633",
         "concepts": ["pattern-matching"],
         "prerequisites": ["strings", "conditionals", "basics"]
-      },
+      }
     ],
     "practice": []
   }
