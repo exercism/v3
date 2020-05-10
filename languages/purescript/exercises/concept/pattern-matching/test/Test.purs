@@ -2,7 +2,7 @@ module Test.Main where
 
 import Prelude
 
-import Booleans (canExecuteFastAttack, canSpy, canSignalPrisoner, canFreePrisoner)
+import PatternMatching (reply)
 import Effect (Effect)
 import Effect.Aff (launchAff_)
 import Test.Spec (describe, it)
@@ -21,5 +21,5 @@ main = launchAff_ $ runSpec [consoleReporter] do
     it "Give hint for 40" $ reply 40 `shouldEqual` "Too low"
     it "Give hint for 1" $ reply 1 `shouldEqual` "Too low"
   describe "Too high" do
-    it "Give hint for 44" $ reply 1 `shouldEqual` "Too high"
-    it "Give hint for 100" $ reply 1 `shouldEqual` "Too high"
+    it "Give hint for 44" $ reply 44 `shouldEqual` "Too high"
+    it "Give hint for 100" $ reply 100 `shouldEqual` "Too high"
