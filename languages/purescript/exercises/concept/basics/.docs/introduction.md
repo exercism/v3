@@ -34,7 +34,7 @@ module Calculator where
 -- ...
 ```
 
-Functions must be defined in a module. Each function has one or more arguments. All arguments are statically-typed, and the return type can be explicitly declared, or often inferred by the compiler. Often you will need to import other modules to use their functions. This is done using the `import` keyword followed by the module you'd like to import. A common module to import is `Prelude` which supplies basic functions and operators such as addition (`+`) and subtraction (`-`).
+Functions must be defined in a module. Every function has one or more arguments. All arguments are statically-typed, and the return type can be explicitly declared, or often inferred by the compiler. Often you will need to import other modules to use their functions. This is done using the `import` keyword followed by the module you'd like to import. A common module to import is `Prelude` which supplies basic functions and operators such as addition (`+`) and subtraction (`-`).
 
 ```purescript
 module Calculator where
