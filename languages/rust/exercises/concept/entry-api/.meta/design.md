@@ -2,7 +2,7 @@
 
 ## Goal
 
-The goal of this exercise is to introduce the student to the [Entry API](https://doc.rust-lang.org/std/collections/hash_map/enum.Entry.html) on `HashMap`s/`BTreeMap`s in Rust, how to use it to fetch an `Entry` from a `HashMap`, as well as use the methods on `Entry` to manipulate it. 
+The goal of this exercise is to introduce the student to the [Entry API](https://doc.rust-lang.org/std/collections/hash_map/enum.Entry.html) on `HashMap`s/`BTreeMap`s in Rust, how to use it to fetch an `Entry` from a `HashMap`, as well as use the methods on `Entry` to manipulate it.
 
 ## Learning objectives
 
@@ -13,7 +13,7 @@ Students who complete this exercise should be able to...
 - use the entry API method `or_insert` to ensure an `Entry` is not `Vacant` when fetching it
 - use multiple entry API methods in conjunction with each other to update `Entry`s, such as `entry().and_modify().or_insert()`
 
-This exercise may review, but is not expected to include, other usages of `HashMap`s. 
+This exercise may review, but is not expected to include, other usages of `HashMap`s.
 
 ## Out of scope
 
