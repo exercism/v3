@@ -1,9 +1,9 @@
 package basics
 
-// TODO: define the 'ExpectedMinutesInOven()' function
+// TODO: define the 'OvenTime()' function
 
-// TODO: define the 'RemainingMinutesInOven()' function
+// TODO: define the 'RemainingOvenTime()' function
 
-// TODO: define the 'PreparationTimeInMinutes()' function
+// TODO: define the 'PreparationTime()' function
 
-// TODO: define the 'TotalTimeInMinutes()' function
+// TODO: define the 'TotalTime()' function
