@@ -3,7 +3,7 @@ using System;
 abstract class Player
 {
     // TODO: define the constructor for the 'Player' class
-    
+
     public void Attack(Player target)
     {
         throw new NotImplementedException("Please implement the Player.Attack() method");
@@ -25,7 +25,7 @@ class Wizard : Player
     {
         throw new NotImplementedException("Please implement the Wizard.Damage() method");
     }
-    
+
     public void PrepareSpell()
     {
         throw new NotImplementedException("Please implement the Wizard.PrepareSpell() method");

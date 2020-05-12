@@ -53,7 +53,7 @@ public class RolePlayingGameTests
     {
         var warrior = new Warrior();
         warrior.DrinkPotion();
-        
+
         var targetWarrior = new Warrior();
         warrior.Attack(targetWarrior);
 
@@ -65,7 +65,7 @@ public class RolePlayingGameTests
     {
         var wizard = new Wizard();
         wizard.PrepareSpell();
-        
+
         var warrior = new Warrior();
         wizard.Attack(warrior);
 
@@ -77,7 +77,7 @@ public class RolePlayingGameTests
     {
         var warrior = new Warrior();
         warrior.DrinkPotion();
-        
+
         var wizard = new Wizard();
         warrior.Attack(wizard);
 
@@ -89,7 +89,7 @@ public class RolePlayingGameTests
     {
         var wizard = new Wizard();
         wizard.PrepareSpell();
-        
+
         var warrior = new Warrior();
         wizard.Attack(warrior);
         wizard.Attack(warrior);
@@ -102,7 +102,7 @@ public class RolePlayingGameTests
     {
         var warrior = new Warrior();
         warrior.DrinkPotion();
-        
+
         var wizard = new Wizard();
         warrior.Attack(wizard);
         warrior.Attack(wizard);
@@ -115,27 +115,27 @@ public class RolePlayingGameTests
     {
         var warrior = new Warrior();
         var wizard = new Wizard();
-        
+
         warrior.DrinkPotion();
         warrior.Attack(wizard);
-        
+
         wizard.Attack(warrior);
         warrior.Attack(wizard);
-        
+
         wizard.PrepareSpell();
         wizard.Attack(warrior);
 
         Assert.Equal("HP: 15", warrior.ToString());
         Assert.Equal("HP: 4", wizard.ToString());
     }
-    
+
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void NewWarriorHasNotBeenStunned()
     {
         var warrior = new Warrior();
         Assert.False(warrior.Stunned());
     }
-    
+
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void NewWizardHasNotBeenStunned()
     {
@@ -147,7 +147,7 @@ public class RolePlayingGameTests
     public void WarriorThatHasBeenStunned()
     {
         var warrior = new Warrior();
-        
+
         var otherWarrior = new Warrior();
         otherWarrior.Attack(warrior);
         otherWarrior.Attack(warrior);
@@ -162,7 +162,7 @@ public class RolePlayingGameTests
     public void WizardThatHasBeenStunned()
     {
         var wizard = new Wizard();
-        
+
         var warrior = new Warrior();
         warrior.Attack(wizard);
         warrior.Attack(wizard);
@@ -176,14 +176,14 @@ public class RolePlayingGameTests
     public void WarriorThatHasBeenStunnedDoesNotDoDamage()
     {
         var warrior = new Warrior();
-        
+
         var otherWarrior = new Warrior();
         otherWarrior.Attack(warrior);
         otherWarrior.Attack(warrior);
         otherWarrior.Attack(warrior);
         otherWarrior.Attack(warrior);
         otherWarrior.Attack(warrior);
-        
+
         warrior.Attack(otherWarrior);
 
         Assert.Equal("HP: 30", otherWarrior.ToString());
@@ -193,13 +193,13 @@ public class RolePlayingGameTests
     public void WizardThatHasBeenStunnedDoesNotDoDamage()
     {
         var wizard = new Wizard();
-        
+
         var otherWizard = new Wizard();
         otherWizard.PrepareSpell();
         otherWizard.Attack(wizard);
         otherWizard.PrepareSpell();
         otherWizard.Attack(wizard);
-        
+
         wizard.Attack(otherWizard);
 
         Assert.Equal("HP: 20", otherWizard.ToString());
