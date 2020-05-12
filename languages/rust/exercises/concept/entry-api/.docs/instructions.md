@@ -2,7 +2,7 @@
 
 In this exercise you'll be using a `HashMap`, along with entry API methods, to solve a simple algorithm problem. 
 
-The problem states: given a slice of `str`s representing a magazine and another slice of `str`s representing a note you're looking to construct, implement a function that returns a boolean indicating whether the note can be constructed from the magazine. In other words, does the magazine contain at least as many instances of each word required by the note?
+The problem states: given a slice of `&str`s representing a magazine and another slice of `&str`s representing a note you're looking to construct, implement a function that returns a `bool` indicating whether the note can be constructed from the magazine. In other words, does the magazine contain at least as many instances of each word required by the note?
 
 You'll start with the following stubbed function signature:
 ```rust
