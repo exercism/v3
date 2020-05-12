@@ -24,7 +24,12 @@ Drinking a potion (warrior) or preparing a spell (wizard) only makes the next at
 
 The story facilitates defining functions:
 
-TODO
+- Display the hit points
+- Allow attacking a character using a basic attack
+- Allow wizards to use their special attack
+- Allow warriors to use their special attack
+- Check for stunned characters
+- Stunned characters cannot do damage
 
 ## Implementations
 
