@@ -1,9 +1,6 @@
 _Note: This file, and the other docs in this repository, can be viewed on [GitHub](https://github.com/exercism/v3) or as [a website with easier navigation](https://exercism.github.io/v3)._
 
-# Exercism - v3   
-
-
-
+# Exercism - v3
 
 Welcome to the workspace for Exercism v3!
 
