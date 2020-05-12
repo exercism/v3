@@ -1,23 +1,21 @@
-using System;
-
-abstract class Player
+abstract class Character
 {
     private int _hitPoints;
 
-    protected Player(int hitPoints)
+    protected Character(int hitPoints)
     {
         _hitPoints = hitPoints;
     }
 
     protected abstract int Damage();
-    
-    public void Attack(Player target)
+
+    public void Attack(Character target)
     {
         if (Stunned())
         {
             return;
         }
-        
+
         target._hitPoints -= Damage();
     }
 
@@ -32,7 +30,7 @@ abstract class Player
     }
 }
 
-class Wizard : Player
+class Wizard : Character
 {
     private bool spellPrepared;
 
@@ -52,12 +50,12 @@ class Wizard : Player
             spellPrepared = false;
             return 12;
         }
-        
+
         return 3;
     }
 }
 
-class Warrior : Player
+class Warrior : Character
 {
     private bool potionDrunk;
 
@@ -77,7 +75,7 @@ class Warrior : Player
             potionDrunk = false;
             return 10;
         }
-        
+
         return 6;
     }
 }

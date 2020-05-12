@@ -16,78 +16,86 @@ There are also some differences between the two character types.
 
 Drinking a potion (warrior) or preparing a spell (wizard) only makes the next attack a special attack. Subsequent attacks will be default attacks, unless a new potion is drunk or a new spell is prepared.
 
-You have six tasks, each of which will work with remote controller car instances.
+You have six tasks that work with warriors and wizard characters.
 
-### 1. Display
+### 1. Display the hit points
 
-To make it easy to check a character's remaining hit points:
+Override the `ToString()` method on the `Character` class to display the number of hit points of a character:
 
 ```csharp
-int speed = 5;
-int batteryDrain = 2;
-var car = new RemoteControlCar(speed, batteryDrain);
+var warrior = new Warrior();
+warrior.ToString();
+// => "HP: 30"
 ```
 
-### 2. Creating a race track
+### 2. Allow attacking a character using a basic attack
 
-Allow creating a race track by defining a constructor for the `RaceTrack` class that takes the track's distance in meters as its sole parameter (which is of type `int`):
+Implement the `Warrior.Damage()` and `Wizard.Damage()` methods to return the damage done by their character type's basic attack. Next, implement the `Character.Attack()` method that takes the character to attack as its paramete and decrease the attacked character's hit points with the attacking character's damage.
 
 ```csharp
-int distance = 800;
-var raceTrack = new RaceTrack(distance);
+var warrior = new Warrior();
+var wizard = new Wizard();
+wizard.Attack(warrior);
+warrior.ToString();
+// => "HP: 27"
 ```
 
-### 3. Drive the car
+### 3. Allow wizards to use their special attack
 
-Implement the `RemoteControlCar.Drive()` method that updates the number of meters driven based on the car's speed. Also implement the `RemoteControlCar.DistanceDriven()` method to return the number of meters driven by the car:
+Implement the `Wizard.PrepareSpell()` method to allow a wizard to prepare their spell in advance, making their next attack a special attack. Update the `Wizard.Damage()` method to return the special attack damage if a spell has been prepared.
 
 ```csharp
-int speed = 5;
-int batteryDrain = 2;
-var car = new RemoteControlCar(speed, batteryDrain);
-car.Drive();
+var warrior = new Warrior();
+var wizard = new Wizard();
 
-car.DistanceDriven();
-// => 5
+wizard.PrepareSpell();
+wizard.Attack(warrior);
+warrior.ToString();
+// => "HP: 18"
 ```
 
-### 4. Check for a drained battery
+### 4. Allow warriors to use their special attack
 
-Update the `RemoteControlCar.Drive()` method to drain the battery based on the car's battery drain. Also implement the `RemoteControlCar.BatteryDrained()` method that indicates if the battery is drained:
+Implement the `Warrior.DrinkPotion()` method to allow a warrior to drink their potion, making their next attack a special attack. Update the `Warrior.Damage()` method to return the special attack damage if a potion has been drunk.
 
 ```csharp
-int speed = 5;
-int batteryDrain = 2;
-var car = new RemoteControlCar(speed, batteryDrain);
-car.Drive();
+var warrior = new Warrior();
+var wizard = new Wizard();
 
-car.BatteryDrained();
-// => false
+warrior.DrinkPotion();
+warrior.Attack(wizard);
+wizard.ToString();
+// => "HP: 10"
 ```
 
-### 5. Create the top of the line remote control car
+### 5. Check for stunned characters
 
-The current top of the line car is the Nitro, which speed is a stunning 50 meters with a battery drain of 4%. Implement the (static) `RemoteControlCar.TopOfTheLine()` method to return this top of the line car:
-
-```csharp
-var car = RemoteControlCar.TopOfTheLine();
-car.Drive();
-car.DistanceDriven();
-// => 50
-```
-
-### 6. Check if a remote control car can finish a race
-
-To finish a race, a car has to be able to drive the race's distance. This means not draining its battery before having crossed the finish line. Implement the `Race.CarCanFinish()` method that takes a `RemoteControlCar` instance as its parameter and returns `true` if the car can finish the race; otherwise, return `false`:
+Implement the `Character.Stunned()` method to return `true` if the character's hit points are less than or equal to zero:
 
 ```csharp
-int speed = 5;
-int batteryDrain = 2;
-var car = new RemoteControlCar(speed, batteryDrain);
-
-int distance = 100;
-var race = new Race(distance);
-
-race.CarCanFinish(car);
+var warrior = new Warrior();
+var wizard = new Wizard();
+warrior.Attack(wizard);
+warrior.Attack(wizard);
+warrior.Attack(wizard);
+warrior.Attack(wizard);
+wizard.Stunned();
 // => true
+```
+
+### 6. Stunned characters cannot do damage
+
+Update the `Character.Attack()` method to not do any damage to another character if this character is stunned:
+
+```csharp
+var warrior = new Warrior();
+var wizard = new Wizard();
+warrior.Attack(wizard);
+warrior.Attack(wizard);
+warrior.Attack(wizard);
+warrior.Attack(wizard);
+
+wizard.Attack(warrior);
+warrior.ToString();
+// => "HP: 30"
 ```

@@ -1,36 +1,37 @@
-### 1. Creating a remote controlled car
+### 1. Display the hit points
 
-- [Define a constructor][constructor-syntax] that has two `int` parameters.
-- Store the two parameters as [fields][fields] to access them from the classes' methods.
+- Store the hit points as a [field][fields] on the `Character` class.
+- [Define a constructor][constructor-syntax] on the `Character` class that takes the number of hit points. Also define constructors for the `Wizard` and `Warrior` classes that pass their character type's hit point to their base class' constructor.
+- The `Character` class implicitly inherits from the `object` class, which [`ToString()` method you can override][override-tostring].
 
-### 2. Creating a race track
+### 2. Allow attacking a character using a basic attack
 
-- [Define a constructor][constructor-syntax] that has one `int` parameter.
-- Store the parameter as a [fields][fields] to access it from the classes' method.
+- Implement the `Damage()` method on the `Wizard` and `Warrior` classes to return their base attack's damage.
+- Abstract methods can be used in regular methods. At runtime, they will execute the derived class' logic.
+- Update the hit points field of the target character parameter.
 
-### 3. Drive the car
+### 3. Allow wizards to use their special attack
 
-- Add a [field][fields] to keep track of the distance driven.
-- Add the car's speed to the [field][fields] that keeps track of the distance driven.
+- Add a field to the `Wizard` class to store if a spell was prepared and update this in the `PrepareSpell()` method.
+- Add a conditional to the `Damage()` method to check if a spell was prepared and update the damage done accordingly.
+- Remember that the spell effect only lasts for one attack.
 
-### 4. Check for a drained battery
+### 4. Allow warriors to use their special attack
 
-- Add a [field][fields] to keep track of the remaining battery charge percentage (starts at 100%).
-- Remove the car's battery drain from the [field][fields] to keep track of the battery charge.
-- Don't update the distance driven if the battery is drained.
-- Remember that if the battery charge is less than the battery drain percentage, it is considered drained.
+- Add a field to the `Warrior` class to store if a potion was drunk and update this in the `DrinkPotion()` method.
+- Add a conditional to the `Damage()` method to check if a potion was drunk and update the damage done accordingly.
+- Remember that the potion effect only lasts for one attack.
 
-### 5. Create the top of the line remote control car
+### 5. Check for stunned characters
 
-- [Instantiate][instance-constructors] an instance of the `RemoteControlCar` with the correct arguments.
+- Check if the number of hit points is less than or equal to zero.
 
-### 6. Check if a remote control car can finish a race
+### 6. Stunned characters cannot do damage
 
-- Solving this is probably best done by [repeatedly driving the car][while].
-- Remember that the car has a method to retrieve the distance it has driven.
-- Consider what to do when the battery has been drained before reaching the finish line.
+- Add a conditional to the `Attack()` method that uses the `Stunned()` method to prevent any damage from being done.
 
 [constructor-syntax]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors#constructor-syntax
 [instance-constructors]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/instance-constructors
 [while]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/while
 [fields]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/fields
+[override-tostring]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-override-the-tostring-method
