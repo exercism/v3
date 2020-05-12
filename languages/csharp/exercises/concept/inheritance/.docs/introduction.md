@@ -45,7 +45,7 @@ abstract class Vehicle
 {
     protected Vehicle(int wheels)
     {
-        Console.WriteLine("Vehicle constructor");
+        Console.WriteLine("Called first");
     }
 }
 
@@ -53,11 +53,7 @@ class Car : Vehicle
 {
     public Car() : base(4)
     {
-        Console.WriteLine("Car constructor");
+        Console.WriteLine("Called second");
     }
 }
-
-var car = new Car();
-// => Vehicle constructor
-// => Car constructor
 ```
