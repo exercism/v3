@@ -1,4 +1,4 @@
-# Packages
+## Packages
 
 In Go an application is organized in packages. A package is a collection of source files located in the same folder. All source files in a folder must have the same package name at the top of the file. The package is preferred to be the same as the folder it is located in.
 
@@ -28,7 +28,7 @@ errors.New("Connection not established")
 errs.New("Connection not established")
 ```
 
-# Integers
+## Integers
 
 Go is a statically-typed language, which means that everything has a type at compile-time. Assigning a value to a name is referred to as defining a variable. A variable can be defined either by explicitly specifying its type, or by assigning a value to have the Go compiler infer its type based on the assigned value.
 
@@ -49,7 +49,7 @@ count = 2  // Update to new value
 
 Integer values are defined as one or more (consecutive) digits and support the [default mathematical operators][operators].
 
-# Functions
+## Functions
 
 Functions in Go are considered [first class citizens][first-class-functions] making them very powerful. They can be used as:
 - [public and private][public-vs-private] functions of a package
@@ -63,8 +63,6 @@ Functions in Go are considered [first class citizens][first-class-functions] mak
 TODO: is above OK or too much? Details will be in later exercises...
 
 A function can have zero or more parameters. All parameters must be explicitly typed, there is no type inference for parameters. A function can also have multiple return values which must also be explicitly typed. Values are returned from functions using the [`return` keyword][return]. To allow a function, or a method to be [called by code in other packages][public-vs-private], the name of the function must start with a capital letter.
-
-This exercise will only use functions defined on package level. Other use cases are introduced later.
 
 ```go
 package greeting
@@ -88,7 +86,7 @@ Invoking a function from another package is done by specifying the package name 
 phrase := greeting.Hello("John")
 ```
 
-# Comments
+## Comments
 
 Go supports two types of [comments][comments]. Single line comments are preceded by `//` and multiline comments are inserted between `/*` and `*/`.
 
