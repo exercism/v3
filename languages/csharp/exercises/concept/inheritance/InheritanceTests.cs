@@ -3,35 +3,35 @@ using Xunit;
 public class RolePlayingGameTests
 {
     [Fact]
-    public void CreateNewWizard()
+    public void Create_new_wizard()
     {
         var wizard = new Wizard();
         Assert.NotNull(wizard);
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void CreateNewWarrior()
+    public void Create_new_warrior()
     {
         var warrior = new Warrior();
         Assert.NotNull(warrior);
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void DisplayHitPointsOfNewWizard()
+    public void Display_hit_points_of_new_wizard()
     {
         var wizard = new Wizard();
         Assert.Equal("HP: 20", wizard.ToString());
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void DisplayHitPointsOfNewWarrior()
+    public void Display_hit_points_of_new_warrior()
     {
         var warrior = new Warrior();
         Assert.Equal("HP: 30", warrior.ToString());
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void NewWarriorAttacksNewWizard()
+    public void New_warrior_attacks_new_wizard()
     {
         var warrior = new Warrior();
         var wizard = new Wizard();
@@ -40,7 +40,7 @@ public class RolePlayingGameTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void NewWizardAttacksNewWarrior()
+    public void New_wizard_attacks_new_warrior()
     {
         var wizard = new Wizard();
         var warrior = new Warrior();
@@ -49,7 +49,7 @@ public class RolePlayingGameTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void NewWarriorAttacksWithCharge()
+    public void New_warrior_attacks_with_charge()
     {
         var warrior = new Warrior();
         warrior.DrinkPotion();
@@ -61,7 +61,7 @@ public class RolePlayingGameTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void NewWizardAttacksWithPreparedSpell()
+    public void New_wizard_attacks_with_prepared_spell()
     {
         var wizard = new Wizard();
         wizard.PrepareSpell();
@@ -73,7 +73,7 @@ public class RolePlayingGameTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void NewWarriorAttacksWithPotionDrunk()
+    public void New_warrior_attacks_with_potion_drunk()
     {
         var warrior = new Warrior();
         warrior.DrinkPotion();
@@ -85,7 +85,7 @@ public class RolePlayingGameTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void WizardPreparedSpellOnlyAffectsOneAttack()
+    public void Wizard_prepared_spell_only_affects_one_attack()
     {
         var wizard = new Wizard();
         wizard.PrepareSpell();
@@ -98,7 +98,7 @@ public class RolePlayingGameTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void WarriorPotionDrunkOnlyAffectsOneAttack()
+    public void Warrior_potion_drunk_only_affects_one_attack()
     {
         var warrior = new Warrior();
         warrior.DrinkPotion();
@@ -111,7 +111,7 @@ public class RolePlayingGameTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void MassiveBattle()
+    public void Massive_battle()
     {
         var warrior = new Warrior();
         var wizard = new Wizard();
@@ -130,21 +130,21 @@ public class RolePlayingGameTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void NewWarriorHasNotBeenStunned()
+    public void New_warrior_has_not_been_stunned()
     {
         var warrior = new Warrior();
         Assert.False(warrior.Stunned());
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void NewWizardHasNotBeenStunned()
+    public void New_wizard_has_not_been_stunned()
     {
         var wizard = new Wizard();
         Assert.False(wizard.Stunned());
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void WarriorThatHasBeenStunned()
+    public void Warrior_that_has_been_stunned()
     {
         var warrior = new Warrior();
 
@@ -159,7 +159,7 @@ public class RolePlayingGameTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void WizardThatHasBeenStunned()
+    public void Wizard_that_has_been_stunned()
     {
         var wizard = new Wizard();
 
@@ -173,7 +173,7 @@ public class RolePlayingGameTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void WarriorThatHasBeenStunnedDoesNotDoDamage()
+    public void Warrior_that_has_been_stunned_does_not_do_damage()
     {
         var warrior = new Warrior();
 
@@ -190,7 +190,7 @@ public class RolePlayingGameTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void WizardThatHasBeenStunnedDoesNotDoDamage()
+    public void Wizard_that_has_been_stunned_does_not_do_damage()
     {
         var wizard = new Wizard();
 
