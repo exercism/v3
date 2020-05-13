@@ -2,7 +2,12 @@
 
 In this exercise you'll be using a `HashMap`, along with entry API methods, to solve a simple algorithm problem.
 
-The problem states: given a slice of `&str`s representing a magazine and another slice of `&str`s representing a note you're looking to construct, implement a function that returns a `bool` indicating whether the note can be constructed from the magazine. In other words, does the magazine contain at least as many instances of each word required by the note?
+Given `&[&str]` representing the words of a magazine article, and `&[&str]` representing the words of a note you would like to send, can you compose your note by cutting words out of the magazine and pasting them into a letter? 
+
+Notes: 
+
+- This implies physical cutting and pasting; the magazine needs to contain at least as many copies of each word as the note requires.
+- Capitalization matters; just because you're pasting together a note composed from words of a magazine doesn't mean you're willing to be ungrammatical.
 
 You'll start with the following stubbed function signature:
 
