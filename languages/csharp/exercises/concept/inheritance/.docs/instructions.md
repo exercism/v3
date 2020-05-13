@@ -85,7 +85,7 @@ wizard.Stunned();
 
 ### 6. Stunned characters cannot do damage
 
-Update the `Character.Attack()` method to not do any damage to another character if this character is stunned:
+Update the `Character.Attack()` method so that a stunned character cannot cause damage:
 
 ```csharp
 var warrior = new Warrior();
