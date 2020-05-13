@@ -20,6 +20,7 @@ Students who complete this exercise should not necessarily be able to...
 - use the entry API `insert` method, as it's currently only in nightly
 
 ## Concepts
+
 - Using `HashMap::entry` to fetch and mutate HashMap entries
 - Using `Entry::or_default` to handle vacant entries
 - Using the above methods in conjunction with one another
