@@ -1,6 +1,5 @@
 In go, `map` is a built-in data type that represent a key/value store or hash table. In other programming language, you might know `map` as `dict` or associative array. If you're not familiar with such concept, map you can think `map` like a dictionary, which every word is the `key` and the definition is the `element` of `map`.
 
-
 Syntactically, `map` looks like this:
 
 ```go
@@ -50,8 +49,4 @@ If you're trying to retrieve a non existed key, will return the zero value of yo
   // value: 0; exists: false
 ```
 
-[godoc-race-detector]: https://golang.org/doc/articles/race_detector.html
-[goblog-race-detector]: https://blog.golang.org/race-detector
-[goblog-map]: https://blog.golang.org/maps
-[gospec-map]: https://golang.org/ref/spec#Map_types
 [gospec-comparable]: https://golang.org/ref/spec#Comparison_operators
