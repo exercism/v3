@@ -1,12 +1,14 @@
 In C#, a _class_ hierarchy can be defined using _inheritance_, which allows a derived class (`Car`) to inherit the behavior and data of its parent class (`Vehicle`). If no parent is specified, the class inherits from the `object` class. To prevent a class being inherited, add the [`sealed` modifier][sealed-classes].
 
-The [`protected` access modifier][protected-keyword] restricts access to code in the same (parent) class or in any derived class. The [`base` keyword][base-keyword] can be used to reference parent class members.
-
 Parent classes can provide functionality to derived classes in three ways:
 
 - Define a regular method.
 - Define a [`virtual` method][virtual-keyword], which is like a regular method but one that derived classes _can_ change.
 - Define an [`abstract` method][abstract-keyword], which is a method without an implementation that derived classes _must_ implement. A class with `abstract` methods must be marked as [`abstract`][abstract-classes] too. Abstract classes cannot be instantiated.
+
+The [`protected` access modifier][protected-keyword] allows a parent class member to be accessed in a derived class, but blocks access from other classes. Derived classes thus can access `public` and `protected` parent class members, but not `private` parent class members.
+
+Derived classes can access parent class members through the [`base` keyword][base-keyword].
 
 ```csharp
 // Inherits from the 'object' class
