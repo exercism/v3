@@ -17,14 +17,14 @@ public class RolePlayingGameTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void DisplayHitpointsOfNewWizard()
+    public void DisplayHitPointsOfNewWizard()
     {
         var wizard = new Wizard();
         Assert.Equal("HP: 20", wizard.ToString());
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void DisplayHitpointsOfNewWarrior()
+    public void DisplayHitPointsOfNewWarrior()
     {
         var warrior = new Warrior();
         Assert.Equal("HP: 30", warrior.ToString());

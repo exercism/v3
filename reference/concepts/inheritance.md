@@ -16,12 +16,12 @@ Defining [classes][concept-classes] as a hierarchy, with a specific class (Dog) 
 
 This exercise models a role-playing game with wizards and warriors that can attack each other. The reference implementation (C#) teaches:
 
-- Defining an abstract class.
-- Defining classes that inherit from an abstract class.
-- Overriding abstract methods.
-- Overriding virtual methods.
-- Calling the base class' constructor from a derived class.
-- Restrict access to inheriting classes using access modifiers.
+- Defining an abstract class
+- Defining classes that inherit from an abstract class
+- Overriding abstract methods
+- Overriding virtual methods
+- Calling the base class' constructor from a derived class
+- Restrict access to inheriting classes using access modifiers
 
 #### Implementations
 
