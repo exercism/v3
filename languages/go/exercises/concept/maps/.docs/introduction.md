@@ -1,6 +1,5 @@
 In go, `map` is a built-in data type that represent a key/value store or hash table. In other programming language, you might know `map` as `dict` or associative array. If you're not familiar with such concept, map you can think `map` like a dictionary, which every word is the `key` and the definition is the `element` of `map`.
 
-> Before we begin, I'd like to point you to [go spec for map][gospec-map] and [go blog for map][goblog-map] to dig further into `map`.
 
 Syntactically, `map` looks like this:
 
