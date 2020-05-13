@@ -13,7 +13,17 @@ A friend of you has an old wholesale store called **Gross Store**, the name came
 
 In order to use the measurement, you need to store the measurement in your program.
 
-## 2. Add item to the customer bill
+## 2. Create a new customer bill
+
+You need to implement a function that create a new bill for the customer.
+
+```go
+bill := NewBill()
+fmt.Println(bill)
+// Output: map[]
+```
+
+## 3. Add item to the customer bill
 
 To implement this, you'll need to:
 
@@ -21,14 +31,15 @@ To implement this, you'll need to:
 - Add the item to the customer bill, indexed by the item name. You probably also need a variable to represent the customer bill, you are expected to use `map`
 
 ```go
-ok := AddItem("carrot", "dozen")
+bill := NewBill()
+ok := AddItem(bill, "carrot", "dozen")
 fmt.Println(ok)
 // Output: true or false
 ```
 
 > Note that the returned value is type of `bool`
 
-## 3. Remove item from the customer bill
+## 4. Remove item from the customer bill
 
 To implement this, you'll need to:
 
@@ -39,14 +50,15 @@ To implement this, you'll need to:
 - Otherwise reduce the quantity of the item
 
 ```go
-ok := RemoveItem("carrot", "dozen")
+bill := NewBill()
+ok := RemoveItem(bill, "carrot", "dozen")
 fmt.Println(ok)
 // Output: true or false
 ```
 
 > Note that the returned value is type of `bool`
 
-## 4. Return the number of specific item that is in the customer bill
+## 5. Return the number of specific item that is in the customer bill
 
 To implement this, you'll need to:
 
@@ -54,7 +66,8 @@ To implement this, you'll need to:
 - Otherwise, return the quantity of the item
 
 ```go
-qty, ok := GetItem("carrot")
+bill := NewBill()
+qty, ok := GetItem(bill, "carrot")
 fmt.Println(qty)
 // Output: 12
 fmt.Println(ok)
@@ -62,17 +75,6 @@ fmt.Println(ok)
 ```
 
 > Note that the returned value are types of `int` and `bool`
-
-## 5. Simulate checkout operation
-
-This function supposed to do a payment to the customer bank, since you're developing a prototype, what you need to do is:
-
-- Reset the customer bill
-
-```go
-Checkout()
-```
-
 > Note that there's no value returned by this function
 
 [gross-unit]: https://en.wikipedia.org/wiki/Gross_(unit)

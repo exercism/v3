@@ -41,8 +41,9 @@ func TestAddItem(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
+			bill := NewBill()
 			for _, item := range tt.entry {
-				ok := AddItem(item.name, item.unit)
+				ok := AddItem(bill, item.name, item.unit)
 				if ok != tt.expected {
 					t.Errorf("Expected %t from AddItem, found %t at %v", tt.expected, ok, item.name)
 				}
@@ -120,9 +121,9 @@ func TestRemoveItem(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			setupInitialBillData()
+			bill := setupInitialBillData()
 			for _, item := range tt.remove {
-				ok := RemoveItem(item.name, item.unit)
+				ok := RemoveItem(bill, item.name, item.unit)
 				if ok != tt.expected {
 					t.Errorf("Expected %t from RemoveItem, found %t at %v", tt.expected, ok, item.name)
 				}
@@ -139,14 +140,13 @@ func TestRemoveItem(t *testing.T) {
 	}
 }
 
-func TestCheckout(t *testing.T) {
+func TestNewBill(t *testing.T) {
 	// Success, zero out the  bill
-	t.Run("Should reset customerbill after checkout", func(t *testing.T) {
-		setupInitialBillData()
-		Checkout()
+	t.Run("Should reset customerbill", func(t *testing.T) {
+		bill := NewBill()
 
 		if len(bill) != 0 {
-			t.Error("Customer bill must be empty after checkout")
+			t.Error("Customer bill must be empty")
 		}
 	})
 }
@@ -165,7 +165,7 @@ func TestGetItem(t *testing.T) {
 		{
 			"Item Not found in bill",
 			[]expectedItem{
-				{"zuccini", false, 0},
+				{"grape", false, 0},
 			},
 		},
 		{
@@ -183,12 +183,17 @@ func TestGetItem(t *testing.T) {
 
 	for _, tt := range test {
 		t.Run(tt.name, func(t *testing.T) {
+			bill := setupInitialBillData()
 			for _, item := range tt.getItem {
-				setupInitialBillData()
-				itemQty, ok := GetItem(item.name)
+				itemQty, ok := GetItem(bill, item.name)
 
 				if ok != item.expected {
-					t.Errorf("Could not find item %s in customer bill", item.name)
+					msg := "Could not find item %s in customer bill, expected %t"
+					if item.expected == false {
+						msg = "Found item %s in customer bill, expected %t"
+					}
+
+					t.Errorf(msg, item.name, item.expected)
 				}
 
 				if itemQty != item.qty {
@@ -199,12 +204,13 @@ func TestGetItem(t *testing.T) {
 	}
 }
 
-func setupInitialBillData() {
-	bill = map[string]int{}
+func setupInitialBillData() map[string]int {
+	bill := NewBill()
 	bill["peas"] = 3
 	bill["tomato"] = 6
 	bill["chili"] = 12
 	bill["cucumber"] = 120
 	bill["potato"] = 144
 	bill["zucchini"] = 1728
+	return bill
 }

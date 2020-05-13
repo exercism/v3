@@ -10,11 +10,13 @@ var units = map[string]int{
 	"great_gross":        1728,
 }
 
-// bill to store the item that customer wants to buy
-var bill = map[string]int{}
+// NewBill create a new bill
+func NewBill() map[string]int {
+	return make(map[string]int)
+}
 
 // AddItem add item to customer bill
-func AddItem(item string, unit string) bool {
+func AddItem(bill map[string]int, item string, unit string) bool {
 	if _, ok := units[unit]; !ok {
 		return false
 	}
@@ -25,7 +27,7 @@ func AddItem(item string, unit string) bool {
 }
 
 // RemoveItem remove item from customer bill
-func RemoveItem(item string, unit string) bool {
+func RemoveItem(bill map[string]int, item string, unit string) bool {
 	if _, ok := bill[item]; !ok {
 		return false
 	}
@@ -46,13 +48,8 @@ func RemoveItem(item string, unit string) bool {
 	return true
 }
 
-// Checkout finish the transaction, reset the bill to zero
-func Checkout() {
-	bill = make(map[string]int)
-}
-
 // GetItem return the quantity of item that the customer has in his/her bill
-func GetItem(item string) (int, bool) {
+func GetItem(bill map[string]int, item string) (int, bool) {
 	if _, ok := bill[item]; !ok {
 		return 0, false
 	}
