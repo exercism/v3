@@ -11,10 +11,10 @@ There are also some differences between the two character types.
 |                    | Warriors          | Wizards             |
 | ------------------ | ----------------- | ------------------- |
 | Initial hit points | 30                | 20                  |
-| Default attack     | 6                 | 3                   |
+| Basic attack       | 6                 | 3                   |
 | Special attack     | 10 (potion drunk) | 12 (spell prepared) |
 
-Drinking a potion (warrior) or preparing a spell (wizard) only makes the next attack a special attack. Subsequent attacks will be default attacks, unless a new potion is drunk or a new spell is prepared.
+Drinking a potion (warrior) or preparing a spell (wizard) only makes the next attack a special attack. Subsequent attacks will be basic attacks, unless a new potion is drunk or a new spell is prepared.
 
 You have six tasks that work with warriors and wizard characters.
 
