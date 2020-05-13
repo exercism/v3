@@ -12,7 +12,7 @@ Notes:
 You'll start with the following stubbed function signature:
 
 ```rust
-pub fn construct_note(magazine: &[&str], note: &[&str]) -> bool {
+pub fn can_construct_note(magazine: &[&str], note: &[&str]) -> bool {
 
 }
 ```
