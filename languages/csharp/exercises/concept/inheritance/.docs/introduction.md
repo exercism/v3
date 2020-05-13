@@ -1,4 +1,4 @@
-In C#, a _class_ hierarchy can be defined using _inheritance_, which allows a derived class (`Car`) to inherit the behavior and data of its parent (general) class (`Vehicle`). If no parent is specified, the class inherits from the `object` class.
+In C#, a _class_ hierarchy can be defined using _inheritance_, which allows a derived class (`Car`) to inherit the behavior and data of its parent class (`Vehicle`). If no parent is specified, the class inherits from the `object` class.
 
 The `protected` access modifier restricts access to code in the same (parent) class or in any derived class. The `base` keyword can be used to reference parent class members.
 

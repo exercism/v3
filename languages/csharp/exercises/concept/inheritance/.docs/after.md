@@ -1,4 +1,4 @@
-In C#, a _class_ hierarchy can be defined using _inheritance_, which allows a derived class (`Car`) to inherit the behavior and data of its parent (general) class (`Vehicle`). If no parent is specified, the class inherits from the `object` class. To prevent a class being inherited, add the [`sealed` modifier][sealed-classes].
+In C#, a _class_ hierarchy can be defined using _inheritance_, which allows a derived class (`Car`) to inherit the behavior and data of its parent class (`Vehicle`). If no parent is specified, the class inherits from the `object` class. To prevent a class being inherited, add the [`sealed` modifier][sealed-classes].
 
 The [`protected` access modifier][protected-keyword] restricts access to code in the same (parent) class or in any derived class. The [`base` keyword][base-keyword] can be used to reference parent class members.
 
