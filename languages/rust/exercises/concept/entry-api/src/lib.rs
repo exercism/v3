@@ -1,3 +1,5 @@
 use std::collections::HashMap;
 
-pub fn construct_note(magazine: &[&str], note: &[&str]) -> bool {}
+pub fn can_construct_note(magazine: &[&str], note: &[&str]) -> bool {
+    unimplemented!()
+}

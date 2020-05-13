@@ -9,9 +9,7 @@ The goal of this exercise is to introduce the student to the [Entry API](https:/
 Students who complete this exercise should be able to...
 
 - spot appropriate use-cases/contexts in which usage of the entry API is appropriate
-- use the entry API method `and_modify` to update a fetched `Entry`
-- use the entry API method `or_insert` to ensure an `Entry` is not `Vacant` when fetching it
-- use multiple entry API methods in conjunction with each other to update `Entry`s, such as `entry().and_modify().or_insert()`
+- use the entry API methods `or_default` or `or_insert` to ensure an `Entry` is not `Vacant` when fetching it
 
 This exercise may review, but is not expected to include, other usages of `HashMap`s.
 
@@ -20,13 +18,10 @@ This exercise may review, but is not expected to include, other usages of `HashM
 Students who complete this exercise should not necessarily be able to...
 
 - use the entry API `insert` method, as it's currently only in nightly
-- use the entry API `or_default` method, as this is less commonly used than `or_insert`
-- use the entry API `or_insert_with` method, as this is less commonly used than `or_insert`
 
 ## Concepts
-
-- `Entry::and_modify`
-- `Entry::or_insert`
+- Using `HashMap::entry` to fetch and mutate HashMap entries
+- Using `Entry::or_default` to handle vacant entries
 - Using the above methods in conjunction with one another
 
 ## Prerequisites
@@ -37,15 +32,15 @@ Students who complete this exercise should not necessarily be able to...
 
 ## Resources to refer to
 
-The [HashMap::Entry](https://doc.rust-lang.org/std/collections/hash_map/enum.Entry.html) docs are a great resource to refer to for more information on the entry API.
+- The [HashMap::Entry](https://doc.rust-lang.org/std/collections/hash_map/enum.Entry.html) docs are a great resource to refer to for more information on the entry API.
 
 ### Hints
 
-- The [HashMap::Entry](https://doc.rust-lang.org/std/collections/hash_map/enum.Entry.html) docs
+- The [HashMap::Entry](https://doc.rust-lang.org/std/collections/hash_map/enum.Entry.html) docs.
 
 ### After
 
-- The [HashMap::Entry](https://doc.rust-lang.org/std/collections/hash_map/enum.Entry.html) docs detail additional `Entry` methods such as `or_default` and `or_insert_with` that students can dig into further.
+- The [HashMap::Entry](https://doc.rust-lang.org/std/collections/hash_map/enum.Entry.html) docs detail additional `Entry` methods such as `insert` and `and_modify` that students can dig into further.
 
 ### Representer
 

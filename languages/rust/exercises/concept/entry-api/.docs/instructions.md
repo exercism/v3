@@ -13,17 +13,16 @@ You'll start with the following stubbed function signature:
 
 ```rust
 pub fn can_construct_note(magazine: &[&str], note: &[&str]) -> bool {
-
+    unimplemented!()
 }
 ```
 
 Given the following input
 
 ```rust
-let magazine = &["two", "times", "three", "is", "not", "four"];
-let note = &["two", "times", "two", "is", "four"];
+let magazine = "two times three is not four".split_whitespace().collect::<Vec<&str>>();
+let note = "two times two is four".split_whitespace().collect::<Vec<&str>>();
+assert_eq!(can_construct_note(&magazine, &note), false);
 ```
 
-the function should return `false` since the magazine only contains one instance of `"two"` when the note requires two of them.
-
-Note that case sensitivity matters.
+The function returns `false` since the magazine only contains one instance of `"two"` when the note requires two of them.
