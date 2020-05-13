@@ -76,6 +76,22 @@
         ]
       },
       {
+        "slug": "method-overloading",
+        "uuid": "3f728065-98d8-472a-a84c-290f05ab1e58",
+        "concepts": [
+          "method-overloading",
+          "named-arguments",
+          "optional-parameters"
+        ],
+        "prerequisites": [
+          "classes",
+          "constructors",
+          "enums",
+          "properties",
+          "strings"
+        ]
+      },
+      {
         "slug": "nullability",
         "uuid": "370e7e54-6a96-11ea-bc55-0242ac130003",
         "concepts": ["nullability"],

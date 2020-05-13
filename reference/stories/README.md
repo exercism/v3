@@ -19,6 +19,7 @@ A collection of story and narrative ideas that can be used when writing Concept 
 | Lambda functions       | [Secret device][lambda-function.secret-device]                        |
 | Lists                  | [Language list][lists.language-list]                                  |
 | Maps                   | [High score board][maps.high-score-board]                             |
+| Method overloading     | [RPG Game Master][method-overloading.rpg-game-master]                 |
 | Nullability            | [Name badges][nullability.name-badges]                                |
 | Numbers                | [Car production line][numbers.car-production-line]                    |
 | Numbers                | [Freelancer rates][numbers.freelancer-rates]                          |
@@ -46,6 +47,7 @@ A collection of story and narrative ideas that can be used when writing Concept 
 [lambda-function.secret-device]: ./lambda-function.secret-device.md
 [lists.language-list]: ./lists.language-list.md
 [maps.high-score-board]: ./maps.high-score-board.md
+[method-overloading.rpg-game-master]: ./method-overloading.rpg-game-master.md
 [nullability.name-badges]: ./nullability.name-badges.md
 [numbers.car-production-line]: ./numbers.car-production-line.md
 [numbers.freelancer-rates]: ./numbers.freelancer-rates.md
