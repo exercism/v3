@@ -30,7 +30,7 @@ warrior.ToString();
 
 ### 2. Allow attacking a character using a basic attack
 
-Implement the `Warrior.Damage()` and `Wizard.Damage()` methods to return the damage done by their character type's basic attack. Next, implement the `Character.Attack()` method that takes the character to attack as its paramete and decrease the attacked character's hit points with the attacking character's damage.
+Implement the `Warrior.Damage()` and `Wizard.Damage()` methods to return the damage done by their character type's basic attack. Next, implement the `Character.Attack()` method that takes the character to attack as its parameter and decrease the attacked character's hit points with the attacking character's damage.
 
 ```csharp
 var warrior = new Warrior();
