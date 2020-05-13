@@ -39,7 +39,7 @@ sealed class Car : Vehicle
 }
 ```
 
-A derived class' constructor will [automatically call its parent's constructor][constructors] _before_ executing its own constructor's logic. Arguments can be passed to a parent class' constructor using the [`base` keyword][base-keyword-constructor]. As abstract classes cannot be instantiated, their constructors can be made `protected`.
+The constructor of a derived class will [automatically call its parent's constructor][constructors] _before_ executing its own constructor's logic. Arguments can be passed to a parent class' constructor using the [`base` keyword][base-keyword-constructor]. As abstract classes cannot be instantiated, their constructors can be made `protected`.
 
 ```csharp
 abstract class Vehicle

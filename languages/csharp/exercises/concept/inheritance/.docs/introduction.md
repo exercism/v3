@@ -38,7 +38,7 @@ class Car : Vehicle
 }
 ```
 
-A derived class' constructor will automatically call its parent's constructor _before_ executing its own constructor's logic. Arguments can be passed to a parent class' constructor using the `base` keyword:
+The constructor of a derived class will automatically call its parent's constructor _before_ executing its own constructor's logic. Arguments can be passed to a parent class' constructor using the `base` keyword:
 
 ```csharp
 abstract class Vehicle
