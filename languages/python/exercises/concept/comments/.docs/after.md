@@ -10,7 +10,7 @@ Comment is only valid for current line.
 
 e.g.
 
-# this is single line comment 
+# This is single line comment 
 
 
 2.Multi line comment
@@ -21,8 +21,8 @@ There are two ways to do multiline
 I.First way
 e.g.
 
-# this is first line.
-# this is second line
+# This is first line.
+# This is second line
 
 
 II.Second way
