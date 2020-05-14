@@ -23,7 +23,7 @@ export function doesStackIncludeCard(stack, card) {
 }
 
 /**
- * Check if every value in array was even
+ * Determine if each card is even
  *
  * @param {number[]} stack
  *
@@ -40,7 +40,7 @@ export function isEachCardEven(stack) {
  *
  * @returns {boolean} Whether array contains odd card
  */
-export function doesStackIncludesOddCard(stack) {
+export function doesStackIncludeOddCard(stack) {
   throw new Error('Implement the doesStackIncludesOddCard function')
 }
 
