@@ -5,6 +5,7 @@
     - [Docs](/languages/javascript/docs/README.md)
     - [Exercises](/languages/javascript/exercises/README.md)
       - [Concept](/languages/javascript/exercises/concept/README.md)
+        - [`array-analysis`](/languages/javascript/exercises/concept/array-analysis/.docs/instructions.md)
         - [`arrays`](/languages/javascript/exercises/concept/arrays/.docs/instructions.md)
         - [`basics`](/languages/javascript/exercises/concept/basics/.docs/instructions.md)
         - [`booleans`](/languages/javascript/exercises/concept/booleans/.docs/instructions.md)
