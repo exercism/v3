@@ -1,5 +1,8 @@
 package maps
 
+// units store the Dozen Store unit measurement
+// var units
+
 // NewBill create a new bill
 func NewBill() map[string]int {
 	panic("Please implement the NewBill() function")
