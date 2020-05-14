@@ -10,15 +10,13 @@ The goal for this exercise is to teach about comments.
 
 ## Things not to teach
 
-
-
 ## Concepts
 
-It is good programming habit.
+Comment is programmer readable explanation provided by contributer. It makes program more understandable to various stakeholder who involved in that project.
 
 ## Prerequisites
 
-concepts of comment is helpful for this exercise.
+No prerequsites is needed.
 
 ## Representer
 

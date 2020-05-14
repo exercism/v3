@@ -1,1 +1,1 @@
-use '#' or '"""' for comment in python.
+Hint : use '#' or '"""' for comment in python.
