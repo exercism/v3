@@ -35,6 +35,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "array-analysis",
+        "uuid": "45d956db-d4ef-4468-b1d3-47021f172c15",
+        "concepts": ["array-analysis"],
+        "prerequisites": ["arrays", "booleans", "numbers", "callback"]
+      },
+      {
         "slug": "promises",
         "uuid": "4a967656-8615-474e-a009-5c0b09f4386f",
         "concepts": ["promises"],
