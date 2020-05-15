@@ -31,7 +31,7 @@ This Concept Exercise's prerequisites Concepts are:
 - `classes`: know how to work with classes.
 - `constructors`: know how to work with constructors.
 - `strings`: know how to do basic string interpolation.
-- `numbers`: know how to compare numbers.
+- `boolean`: know how to use boolean logic.
 - `conditionals`: know how to do conditional logic.
 
 ## Representer

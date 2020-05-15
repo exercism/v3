@@ -17,7 +17,7 @@ These are the concept exercises that have currently been implemented, as well as
 | [`enums`][concept-exercise-enums]                                   | `enums`<br/>`pattern-matching-constants`   | `strings`<br/>`conditionals`                                                      |
 | [`flag-enums`][concept-exercise-flag-enums]                         | `flag-enums`<br/>`bit-manipulation`        | `enums`<br/>`attributes`</br>`integers`                                           |
 | [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`while-loops` | `numbers`<br/>`conditionals`                                                      |
-| [`inheritance`][concept-exercise-inheritance]                       | `inheritance`                              | `classes`<br/>`constructors`<br/>`strings`<br/>`numbers`<br/>`conditionals`       |
+| [`inheritance`][concept-exercise-inheritance]                       | `inheritance`                              | `classes`<br/>`constructors`<br/>`strings`<br/>`booleans`<br/>`conditionals`      |
 | [`nullability`][concept-exercise-nullability]                       | `nullability`                              | `strings`<br/>`conditionals`<br/>`memory-allocation`                              |
 | [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`               | `basics`                                                                          |
 | [`properties`][concept-exercise-properties]                         | `properties`                               | `numbers`<br/>`floating-point-numbers`<br/>`classes`<br/>`enums`<br/>`exceptions` |

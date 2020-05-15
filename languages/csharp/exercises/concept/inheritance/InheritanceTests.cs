@@ -3,18 +3,6 @@ using Xunit;
 public class RolePlayingGameTests
 {
     [Fact]
-    public void Create_wizard()
-    {
-        Assert.NotNull(new Wizard());
-    }
-
-    [Fact(Skip = "Remove this Skip property to run this test")]
-    public void Create_warrior()
-    {
-        Assert.NotNull(new Warrior());
-    }
-
-    [Fact(Skip = "Remove this Skip property to run this test")]
     public void Describe_wizard()
     {
         var wizard = new Wizard();

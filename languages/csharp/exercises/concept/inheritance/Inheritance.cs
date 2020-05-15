@@ -22,7 +22,9 @@ abstract class Character
 
 class Warrior : Character
 {
-    // TODO: define the constructor for the 'Warrior' class
+    public Warrior() : base("TODO")
+    {
+    }
 
     public override int DamagePoints(Character target)
     {
@@ -32,7 +34,9 @@ class Warrior : Character
 
 class Wizard : Character
 {
-    // TODO: define the constructor for the 'Wizard' class
+    public Wizard() : base("TODO")
+    {
+    }
 
     public override int DamagePoints(Character target)
     {

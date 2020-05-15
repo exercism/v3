@@ -71,7 +71,7 @@
           "classes",
           "constructors",
           "strings",
-          "numbers",
+          "booleans",
           "conditionals"
         ]
       },

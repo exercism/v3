@@ -12,20 +12,11 @@ For a Wizard, these are the rules:
 - Deal 3 points of damage if the Wizard did not prepare a spell in advance
 - Deal 12 points of damage if the Wizard did prepare a spell in advanced
 
-In general, characters are never vulnerable. However, Wizard _are_ vulnerable if they haven't prepared a spell.
+In general, characters are never vulnerable. However, Wizards _are_ vulnerable if they haven't prepared a spell.
 
-You have seven tasks that work with Warriors and Wizard characters.
+You have six tasks that work with Warriors and Wizard characters.
 
-### 1. Creating a Warrior or Wizard
-
-Allow creating a Warrior or Wizard by defining a parameterless constructor for the `Warrior` and `Wizard` classes.
-
-```csharp
-var warrior = new Warrior();
-var wizard = new Wizard();
-```
-
-### 2. Describe a character
+### 1. Describe a character
 
 Override the `ToString()` method on the `Character` class to return a description of the character, formatted as `"Character is a <CHARACTER_TYPE>"`.
 
@@ -35,7 +26,7 @@ warrior.ToString();
 // => "Character is a Warrior"
 ```
 
-### 3. Make characters not vulnerable by default
+### 2. Make characters not vulnerable by default
 
 Ensure that the `Character.Vulnerable()` method always returns `false`.
 
@@ -45,7 +36,7 @@ warrior.Vulnerable();
 // => false
 ```
 
-### 4. Allow Wizards to prepare a spell
+### 3. Allow Wizards to prepare a spell
 
 Implement the `Wizard.PrepareSpell()` method to allow a Wizard to prepare a spell in advance.
 
@@ -54,7 +45,7 @@ var wizard = new Wizard();
 wizard.PrepareSpell();
 ```
 
-### 5. Make Wizards vulnerable when not having prepared a spell
+### 4. Make Wizards vulnerable when not having prepared a spell
 
 Ensure that the `Vulnerable()` method returns `true` if the wizard did not prepare a spell; otherwise, return `false`.
 
@@ -64,7 +55,7 @@ wizard.Vulnerable();
 // => true
 ```
 
-### 6. Calculate the damage points for a Wizard
+### 5. Calculate the damage points for a Wizard
 
 Implement the `Wizard.DamagePoints()` method to return the damage points dealt: 12 damage points when a spell has been prepared, 3 damage points when not.
 
@@ -77,7 +68,7 @@ wizard.DamagePoints(warrior);
 // => 12
 ```
 
-### 7. Calculate the damage points for a Warrior
+### 6. Calculate the damage points for a Warrior
 
 Implement the `Warrior.DamagePoints()` method to return the damage points dealt: 10 damage points when the target is vulnerable, 6 damage points when not.
 

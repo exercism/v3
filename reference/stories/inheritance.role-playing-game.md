@@ -22,7 +22,6 @@ In general, characters are never vulnerable. However, Wizard _are_ vulnerable if
 
 The story facilitates defining functions:
 
-- Creating a Warrior or Wizard
 - Describe a character
 - Make characters not vulnerable by default
 - Allow Wizards to prepare a spell
