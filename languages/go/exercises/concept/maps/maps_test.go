@@ -10,6 +10,34 @@ type entry struct {
 	qty  int
 }
 
+func TestUnits(t *testing.T) {
+	tests := []struct {
+		name string
+		qty  int
+	}{
+		{"quarter_of_a_dozen", 3},
+		{"half_of_a_dozen", 6},
+		{"dozen", 12},
+		{"small_gross", 120},
+		{"gross", 144},
+		{"great_gross", 1728},
+	}
+
+	units := Units()
+	for _, tt := range tests {
+		qty, ok := units[tt.name]
+
+		if !ok {
+			t.Errorf(`Unit "%s" not found!`, tt.name)
+			continue
+		}
+
+		if qty != tt.qty {
+			t.Errorf(`Unit "%s" should have quantity %d, found %d`, tt.name, tt.qty, qty)
+		}
+	}
+
+}
 func TestAddItem(t *testing.T) {
 	tests := []struct {
 		name     string
@@ -38,12 +66,12 @@ func TestAddItem(t *testing.T) {
 			true,
 		},
 	}
-
+	units := Units()
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			bill := NewBill()
 			for _, item := range tt.entry {
-				ok := AddItem(bill, item.name, item.unit)
+				ok := AddItem(bill, units, item.name, item.unit)
 				if ok != tt.expected {
 					t.Errorf("Expected %t from AddItem, found %t at %v", tt.expected, ok, item.name)
 				}
@@ -119,11 +147,12 @@ func TestRemoveItem(t *testing.T) {
 		},
 	}
 
+	units := Units()
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			bill := setupInitialBillData()
 			for _, item := range tt.remove {
-				ok := RemoveItem(bill, item.name, item.unit)
+				ok := RemoveItem(bill, units, item.name, item.unit)
 				if ok != tt.expected {
 					t.Errorf("Expected %t from RemoveItem, found %t at %v", tt.expected, ok, item.name)
 				}

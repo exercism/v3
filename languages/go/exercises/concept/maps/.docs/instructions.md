@@ -13,6 +13,12 @@ A friend of you has an old wholesale store called **Gross Store**, the name came
 
 In order to use the measurement, you need to store the measurement in your program.
 
+```go
+units := Units()
+fmt.Println(units)
+// Output: map[...]
+```
+
 ## 2. Create a new customer bill
 
 You need to implement a function that create a new bill for the customer.
