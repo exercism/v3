@@ -5,7 +5,7 @@ There are different rules for Warriors and Wizards to determine how much damage 
 For a Warrior, these are the rules:
 
 - Deal 6 points of damage if the character they are attacking is not vulnerable
-- Deal 10 points of damage if the attacked character is vulnerable
+- Deal 10 points of damage if the character they are attacking is vulnerable
 
 For a Wizard, these are the rules:
 
