@@ -1,4 +1,4 @@
-In Elixir, a tuple is a data structure which organizes data in contiguous memory. It behaves as a static data structure, holding a fixed number of items, but withoutt explicit names for each element. Tuples are often used in Elixir for memory read-intensive operations, since read-access of an element is a constant-time operation. They are not usually used when elements may need to be added/removed dynamically because rather than modifying the existing tuple, a new tuple is created which requires memory to be allocated upfront.
+In Elixir, a tuple is a data structure which organizes data in contiguous memory. It behaves as a static data structure, holding a fixed number of items, but without explicit names for each element. Tuples are often used in Elixir for memory read-intensive operations, since read-access of an element is a constant-time operation. They are not usually used when elements may need to be added/removed dynamically because rather than modifying the existing tuple, a new tuple is created which requires memory to be allocated upfront.
 
 In practice, tuples are created in Elixir using curly braces, and element can be individually accessed using the `elem/1` function using 0-based indexing:
 
@@ -22,12 +22,12 @@ Float.ratio(0.25)
 
 ## Pattern matching basics with tuples
 
-The use of pattern matching is dominant in clear, assertive, idiomatic Elixir code. You might recall that `=/2` is described as a match operator rather than as an assignment operator. When elixir invokes the `=/2` function, it performs a pattern match from the right side of the operator, to the left side of the operator. If the pattern on the left matches the right, any variables on the left are bound, and the function returns the value of the right side. A `MatchError` is raised if there is no match.
+The use of pattern matching is dominant in assertive, idiomatic Elixir code. You might recall that `=/2` is described as a match operator rather than as an assignment operator. When elixir invokes the `=/2` function, if the pattern on the left matches the right, any variables on the left are bound, and the function returns the value of the right side. A `MatchError` is raised if there is no match.
 
 ```elixir
 2 = 2
 # => 2
-# Literals can be matched
+# Literals can be matched if they are the same
 
 2 = 3
 # => ** (MatchError) no match of right hand side value: 3
@@ -37,7 +37,9 @@ The use of pattern matching is dominant in clear, assertive, idiomatic Elixir co
 # the variable `denominator` is bound to the value 4
 ```
 
-In the last example, in a pattern match, if we don't need a variable, we can discard it by referencing `_`. Any variable starting with an `_` is not tracked by the runtime.
+> Remember, matches occur from the right side to the left side.
+
+In the last example if we don't need a variable in a pattern match, we can discard it by referencing `_`. Any variable starting with an `_` is not tracked by the runtime.
 
 ## Pattern matching in named functions
 
