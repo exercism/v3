@@ -4,7 +4,11 @@ Lists can be defined as follows:
 
 ```fsharp
 let empty = []
+let emptyAlternative = List.empty
+
 let singleValue = [5]
+let singleValueAlternative = List.singleton 5
+
 let threeValues = ["a"; "b"; "c"]
 ```
 
@@ -16,11 +20,11 @@ let oneToFour = 1 :: twoToFour
 // => [1; 2; 3; 4]
 ```
 
-List can be appended using the `@` operator:
+List can be appended using the `@` operator or `List.append`:
 
 ```fsharp
-[6; 7] @ [8; 9]
-// => [6; 7; 8; 9]
+[6; 7] @ [8; 9]           // => [6; 7; 8; 9]
+List.append [6; 7] [8; 9] // => [6; 7; 8; 9]
 ```
 
 Lists are manipulated by functions and operators defined in the [`List` module][list-module]. Some of these functions are also available as [properties][list-properties] of a `list` instance:
@@ -42,10 +46,11 @@ List can also be processed using pattern matching through the [_list_][list-patt
 let rec describe list =
     match list with
     | [] -> "Empty list"
+    | [ 1 ] -> "Singleton list with 1"
     | head::tail -> sprintf "Non-empty list with head: %d" head
 
 describe []        // => "Empty list"
-describe [1]       // => "Non-empty with head: 1"
+describe [1]       // => "Singleton list with 1"
 describe [5; 7; 9] // => "Non-empty with head: 5"
 ```
 
