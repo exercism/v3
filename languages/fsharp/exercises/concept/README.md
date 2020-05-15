@@ -8,7 +8,8 @@ These are the Concept Exercises that have currently been implemented, as well as
 
 | exercise                                                            | concepts                     | prerequisites                                                                          |
 | ------------------------------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------- |
-| [`basics`][concept-exercise-basics]                                 | `basics`                     |
+| [`arrays`][concept-exercise-arrays]                                 | `arrays`                     | `booleans`</br>`pattern-matching`</br>`basics`                                         |
+| [`basics`][concept-exercise-basics]                                 | `basics`                     |                                                                                        |
 | [`booleans`][concept-exercise-booleans]                             | `booleans`                   | `basics`                                                                               |
 | [`datetimes`][concept-exercise-datetimes]                           | `datetimes`                  | `numbers`<br/>`strings`<br/>`classes`                                                  |
 | [`discriminated-unions`][concept-exercise-discriminated-unions]     | `discriminated-unions`       | `pattern-matching`                                                                     |
@@ -28,6 +29,7 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [reference-shared]: ../../reference/README.md
 [reference]: ./reference.md
 [concept-exercises]: ./concept/README.md
+[concept-exercise-arrays]: ./arrays/.meta/design.md
 [concept-exercise-basics]: ./basics/.meta/design.md
 [concept-exercise-booleans]: ./booleans/.meta/design.md
 [concept-exercise-datetimes]: ./datetimes/.meta/design.md
