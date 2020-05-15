@@ -18,7 +18,7 @@ This is done through the implementation of a basic kitchen calculator.
 
 ## Out of scope
 
-- unsure
+- case do pattern matching
 
 ## Prerequisites
 

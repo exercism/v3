@@ -50,9 +50,6 @@ defmodule KitchenCalculator do
 
   # convert from a supported unit to a supported unit
 
-  @doc """
-  Convert the volume_pair to another unit
-  """
   def convert(volume_pair, to) do
     to_millilitre(volume_pair) |> from_millilitre(to)
   end
