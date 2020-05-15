@@ -1,37 +1,36 @@
-### 1. Display the hit points
+### 1. Creating a Warrior or Wizard
 
-- Store the hit points as a [field][fields] on the `Character` class.
-- [Define a constructor][constructor-syntax] on the `Character` class that takes the number of hit points. Also define constructors for the `Wizard` and `Warrior` classes that pass their character type's hit point to their base class' constructor.
+- [Define constructors][constructor-syntax] on the `Wizard` and `Warrior` classes that pass their character type to the [base class' constructor][instance-constructors].
+
+### 2. Describe a character
+
+- Store the character type as a [field][fields] on the `Character` class.
 - The `Character` class implicitly inherits from the `object` class, which [`ToString()` method you can override][override-tostring].
 
-### 2. Allow attacking a character using a basic attack
+### 3. Make characters not vulnerable by default
 
-- Implement the `Damage()` method on the `Wizard` and `Warrior` classes to return their base attack's damage.
-- Abstract methods can be used in regular methods. At runtime, they will execute the derived class' logic.
-- Update the hit points field of the target character parameter.
+- Implement the `Vulnerable()` method in the `Character` class to always return `false`.
 
-### 3. Allow wizards to use their special attack
+### 4. Allow Wizards to prepare a spell
 
 - Add a field to the `Wizard` class to store if a spell was prepared and update this in the `PrepareSpell()` method.
-- Add a conditional to the `Damage()` method to check if a spell was prepared and update the damage done accordingly.
-- Remember that the spell effect only lasts for one attack.
+- The spell should start out as not being prepared.
 
-### 4. Allow warriors to use their special attack
+### 5. Make Wizards vulnerable when not having prepared a spell
 
-- Add a field to the `Warrior` class to store if a potion was drunk and update this in the `DrinkPotion()` method.
-- Add a conditional to the `Damage()` method to check if a potion was drunk and update the damage done accordingly.
-- Remember that the potion effect only lasts for one attack.
+- Override the `Vulnerable()` method in the `Wizard` class to make Wizards vulnerable if they haven't prepared a spell.
 
-### 5. Check for stunned characters
+### 6. Calculate the damage points for a Wizard
 
-- Check if the number of hit points is less than or equal to zero.
+- Use a [conditional statement][if-else] to return the the damage points, taking into account the value of the prepare spell field.
 
-### 6. Stunned characters cannot do damage
+### 7. Calculate the damage points for a Warrior
 
-- Add a conditional to the `Attack()` method that uses the `Stunned()` method to prevent any damage from being done.
+- You can call a method on the passed `Character` instance to determine its vulnerability.
+- Use a [conditional statement][if-else] to return the the damage points, taking into account the vulnerability of the target.
 
 [constructor-syntax]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors#constructor-syntax
 [instance-constructors]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/instance-constructors
-[while]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/while
 [fields]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/fields
 [override-tostring]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-override-the-tostring-method
+[if-else]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/if-else

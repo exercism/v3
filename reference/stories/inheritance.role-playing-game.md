@@ -2,34 +2,33 @@
 
 ## Story
 
-In this exercise you're playing a role-playing game named "Wizard and Warriors," which allows you to play (unsurprisingly) as a wizard or a warrior.
+In this exercise you're playing a role-playing game named "Wizard and Warriors," which allows you to play as either a Wizard or a Warrior.
 
-The wizard and warrior have some common data and behavior:
+There are different rules for Warriors and Wizards to determine how much damage points they deal.
 
-- They have a number of hit points.
-- They can attack, which reduces the number of hit points of the other character.
-- If the number of hit points is less than or equal to zero, they are stunned and cannot do any more damage.
+For a Warrior, these are the rules:
 
-There are also some differences between the two character types.
+- Deal 6 points of damage if the attacked character is not vulnerable
+- Deal 10 points of damage if the attacked character is vulnerable
 
-|                    | Warriors          | Wizards             |
-| ------------------ | ----------------- | ------------------- |
-| Initial hit points | 30                | 20                  |
-| Back attack        | 6                 | 3                   |
-| Special attack     | 10 (potion drunk) | 12 (spell prepared) |
+For a Wizard, these are the rules:
 
-Drinking a potion (warrior) or preparing a spell (wizard) only makes the next attack a special attack. Subsequent attacks will be default attacks, unless a new potion is drunk or a new spell is prepared.
+- Deal 3 points of damage if the Wizard did not prepare a spell in advance
+- Deal 12 points of damage if the Wizard did prepare a spell in advanced
+
+In general, characters are never vulnerable. However, Wizard _are_ vulnerable if they haven't prepared a spell.
 
 ## Tasks
 
 The story facilitates defining functions:
 
-- Display the hit points
-- Allow attacking a character using a basic attack
-- Allow wizards to use their special attack
-- Allow warriors to use their special attack
-- Check for stunned characters
-- Stunned characters cannot do damage
+- Creating a Warrior or Wizard
+- Describe a character
+- Make characters not vulnerable by default
+- Allow Wizards to prepare a spell
+- Make Wizards vulnerable when not having prepared a spell
+- Calculate the damage points for a Wizard
+- Calculate the damage points for a Warrior
 
 ## Implementations
 

@@ -1,101 +1,90 @@
-In this exercise you're playing a role-playing game named "Wizard and Warriors," which allows you to play (unsurprisingly) as a wizard or a warrior.
+In this exercise you're playing a role-playing game named "Wizard and Warriors," which allows you to play as either a Wizard or a Warrior.
 
-The wizard and warrior have some common data and behavior:
+There are different rules for Warriors and Wizards to determine how much damage points they deal.
 
-- They have a number of hit points.
-- They can attack, which reduces the number of hit points of the other character.
-- If the number of hit points is less than or equal to zero, they are stunned and cannot do any more damage.
+For a Warrior, these are the rules:
 
-There are also some differences between the two character types.
+- Deal 6 points of damage if the attacked character is not vulnerable
+- Deal 10 points of damage if the attacked character is vulnerable
 
-|                    | Warriors          | Wizards             |
-| ------------------ | ----------------- | ------------------- |
-| Initial hit points | 30                | 20                  |
-| Basic attack       | 6                 | 3                   |
-| Special attack     | 10 (potion drunk) | 12 (spell prepared) |
+For a Wizard, these are the rules:
 
-Drinking a potion (warrior) or preparing a spell (wizard) only makes the next attack a special attack. Subsequent attacks will be basic attacks, unless a new potion is drunk or a new spell is prepared.
+- Deal 3 points of damage if the Wizard did not prepare a spell in advance
+- Deal 12 points of damage if the Wizard did prepare a spell in advanced
 
-You have six tasks that work with warriors and wizard characters.
+In general, characters are never vulnerable. However, Wizard _are_ vulnerable if they haven't prepared a spell.
 
-### 1. Display the hit points
+You have seven tasks that work with Warriors and Wizard characters.
 
-Override the `ToString()` method on the `Character` class to display the number of hit points of a character:
+### 1. Creating a Warrior or Wizard
 
-```csharp
-var warrior = new Warrior();
-warrior.ToString();
-// => "HP: 30"
-```
-
-### 2. Allow attacking a character using a basic attack
-
-Implement the `Warrior.Damage()` and `Wizard.Damage()` methods to return the damage done by their character type's basic attack. Next, implement the `Character.Attack()` method that takes the character to attack as its parameter and decrease the attacked character's hit points with the attacking character's damage.
+Allow creating a Warrior or Wizard by defining a parameterless constructor for the `Warrior` and `Wizard` classes.
 
 ```csharp
 var warrior = new Warrior();
 var wizard = new Wizard();
-wizard.Attack(warrior);
-warrior.ToString();
-// => "HP: 27"
 ```
 
-### 3. Allow wizards to use their special attack
+### 2. Describe a character
 
-Implement the `Wizard.PrepareSpell()` method to allow a wizard to prepare their spell in advance, making their next attack a special attack. Update the `Wizard.Damage()` method to return the special attack damage if a spell has been prepared.
+Override the `ToString()` method on the `Character` class to return a description of the character, formatted as `"Character is a <CHARACTER_TYPE>"`.
 
 ```csharp
 var warrior = new Warrior();
-var wizard = new Wizard();
+warrior.ToString();
+// => "Character is a Warrior"
+```
 
+### 3. Make characters not vulnerable by default
+
+Ensure that the `Character.Vulnerable()` method always returns `false`.
+
+```csharp
+var warrior = new Warrior();
+warrior.Vulnerable();
+// => false
+```
+
+### 4. Allow Wizards to prepare a spell
+
+Implement the `Wizard.PrepareSpell()` method to allow a Wizard to prepare a spell in advance.
+
+```csharp
+var wizard = new Wizard();
 wizard.PrepareSpell();
-wizard.Attack(warrior);
-warrior.ToString();
-// => "HP: 18"
 ```
 
-### 4. Allow warriors to use their special attack
+### 5. Make Wizards vulnerable when not having prepared a spell
 
-Implement the `Warrior.DrinkPotion()` method to allow a warrior to drink their potion, making their next attack a special attack. Update the `Warrior.Damage()` method to return the special attack damage if a potion has been drunk.
-
-```csharp
-var warrior = new Warrior();
-var wizard = new Wizard();
-
-warrior.DrinkPotion();
-warrior.Attack(wizard);
-wizard.ToString();
-// => "HP: 10"
-```
-
-### 5. Check for stunned characters
-
-Implement the `Character.Stunned()` method to return `true` if the character's hit points are less than or equal to zero:
+Ensure that the `Vulnerable()` method returns `true` if the wizard did not prepare a spell; otherwise, return `false`.
 
 ```csharp
-var warrior = new Warrior();
 var wizard = new Wizard();
-warrior.Attack(wizard);
-warrior.Attack(wizard);
-warrior.Attack(wizard);
-warrior.Attack(wizard);
-wizard.Stunned();
+wizard.Vulnerable();
 // => true
 ```
 
-### 6. Stunned characters cannot do damage
+### 6. Calculate the damage points for a Wizard
 
-Update the `Character.Attack()` method so that a stunned character cannot cause damage:
+Implement the `Wizard.DamagePoints()` method to return the damage points dealt: 12 damage points when a spell has been prepared, 3 damage points when not.
+
+```csharp
+var wizard = new Wizard();
+var warrior = new Warrior();
+
+wizard.PrepareSpell();
+wizard.DamagePoints(warrior);
+// => 12
+```
+
+### 7. Calculate the damage points for a Warrior
+
+Implement the `Warrior.DamagePoints()` method to return the damage points dealt: 10 damage points when the target is vulnerable, 6 damage points when not.
 
 ```csharp
 var warrior = new Warrior();
 var wizard = new Wizard();
-warrior.Attack(wizard);
-warrior.Attack(wizard);
-warrior.Attack(wizard);
-warrior.Attack(wizard);
 
-wizard.Attack(warrior);
-warrior.ToString();
-// => "HP: 30"
+warrior.DamagePoints(wizard);
+// => 10
 ```

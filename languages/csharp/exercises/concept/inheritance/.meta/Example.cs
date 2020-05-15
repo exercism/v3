@@ -1,15 +1,10 @@
 abstract class Character
 {
-    private string className;
+    private string characterType;
 
-    protected Character(string className)
+    protected Character(string characterType)
     {
-        this.className = className;
-    }
-
-    public override string ToString()
-    {
-        return $"Character is a {className}";
+        this.characterType = characterType;
     }
 
     public abstract int DamagePoints(Character target);
@@ -17,6 +12,11 @@ abstract class Character
     public virtual bool Vulnerable()
     {
         return false;
+    }
+
+    public override string ToString()
+    {
+        return $"Character is a {characterType}";
     }
 }
 
@@ -45,14 +45,19 @@ class Wizard : Character
     {
     }
 
+    public override int DamagePoints(Character target)
+    {
+        if (spellPrepared)
+        {
+            return 12;
+        }
+
+        return 3;
+    }
+
     public void PrepareSpell()
     {
         spellPrepared = true;
-    }
-
-    public override int DamagePoints(Character target)
-    {
-        return spellPrepared ? 12 : 3;
     }
 
     public override bool Vulnerable()
