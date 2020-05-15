@@ -1,32 +1,39 @@
 abstract class Character
 {
-    private int _hitPoints;
+    private string className;
 
-    protected Character(int hitPoints)
+    protected Character(string className)
     {
-        _hitPoints = hitPoints;
-    }
-
-    protected abstract int Damage();
-
-    public void Attack(Character target)
-    {
-        if (Stunned())
-        {
-            return;
-        }
-
-        target._hitPoints -= Damage();
-    }
-
-    public bool Stunned()
-    {
-        return _hitPoints <= 0;
+        this.className = className;
     }
 
     public override string ToString()
     {
-        return $"HP: {_hitPoints}";
+        return $"Character is a {className}";
+    }
+
+    public abstract int DamagePoints(Character target);
+
+    public virtual bool Vulnerable()
+    {
+        return false;
+    }
+}
+
+class Warrior : Character
+{
+    public Warrior() : base("Warrior")
+    {
+    }
+
+    public override int DamagePoints(Character target)
+    {
+        if (target.Vulnerable())
+        {
+            return 10;
+        }
+
+        return 6;
     }
 }
 
@@ -34,7 +41,7 @@ class Wizard : Character
 {
     private bool spellPrepared;
 
-    public Wizard() : base(20)
+    public Wizard() : base("Wizard")
     {
     }
 
@@ -43,39 +50,13 @@ class Wizard : Character
         spellPrepared = true;
     }
 
-    protected override int Damage()
+    public override int DamagePoints(Character target)
     {
-        if (spellPrepared)
-        {
-            spellPrepared = false;
-            return 12;
-        }
-
-        return 3;
-    }
-}
-
-class Warrior : Character
-{
-    private bool potionDrunk;
-
-    public Warrior() : base(30)
-    {
+        return spellPrepared ? 12 : 3;
     }
 
-    public void DrinkPotion()
+    public override bool Vulnerable()
     {
-        potionDrunk = true;
-    }
-
-    protected override int Damage()
-    {
-        if (potionDrunk)
-        {
-            potionDrunk = false;
-            return 10;
-        }
-
-        return 6;
+        return !spellPrepared;
     }
 }

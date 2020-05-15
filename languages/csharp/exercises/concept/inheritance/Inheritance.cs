@@ -2,41 +2,31 @@ using System;
 
 abstract class Character
 {
-    public void Attack(Character target)
-    {
-        throw new NotImplementedException("Please implement the Character.Attack() method");
-    }
+    public abstract int DamagePoints(Character target);
 
-    public bool Stunned()
+    public virtual bool Vulnerable()
     {
-        throw new NotImplementedException("Please implement the Character.Stunned() method");
-    }
-
-    protected abstract int Damage();
-}
-
-class Wizard : Character
-{
-    protected override int Damage()
-    {
-        throw new NotImplementedException("Please implement the Wizard.Damage() method");
-    }
-
-    public void PrepareSpell()
-    {
-        throw new NotImplementedException("Please implement the Wizard.PrepareSpell() method");
+        throw new NotImplementedException("Please implement the Character.Vulnerable() method");
     }
 }
 
 class Warrior : Character
 {
-    protected override int Damage()
+    public override int DamagePoints(Character target)
     {
-        throw new NotImplementedException("Please implement the Warrior.Damage() method");
+        throw new NotImplementedException("Please implement the Warrior.DamagePoints() method");
+    }
+}
+
+class Wizard : Character
+{
+    public override int DamagePoints(Character target)
+    {
+        throw new NotImplementedException("Please implement the Wizard.DamagePoints() method");
     }
 
-    public void DrinkPotion()
+    public void PrepareSpell()
     {
-        throw new NotImplementedException("Please implement the Warrior.DrinkPotion() method");
+        throw new NotImplementedException("Please implement the Wizard.PrepareSpell() method");
     }
 }
