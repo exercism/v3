@@ -9,8 +9,8 @@ For a Warrior, these are the rules:
 
 For a Wizard, these are the rules:
 
+- Deal 12 points of damage if the Wizard prepared a spell in advanced
 - Deal 3 points of damage if the Wizard did not prepare a spell in advance
-- Deal 12 points of damage if the Wizard did prepare a spell in advanced
 
 In general, characters are never vulnerable. However, Wizards _are_ vulnerable if they haven't prepared a spell.
 
