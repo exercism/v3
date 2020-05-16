@@ -8,7 +8,14 @@
     "indent_size": 2
   },
   "exercises": {
-    "concept": [],
+    "concept": [
+			{
+				"slug": "entry-api",
+				"uuid": "e7d8603e-97a9-11ea-9753-0242ac110002",
+				"concepts": ["entry-api"],
+        "prerequisites": ["hashmaps", "intro-fn", "intro-types", "intro-option"]
+			}
+		],
     "practice": []
   }
 }
