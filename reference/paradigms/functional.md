@@ -1,6 +1,10 @@
 # Functional programming
 
-TODO: add description of functional programming
+Functional programming is a programming paradigm, a way of writing code, where programs are built through the composition of functions. Functional programmers try to isolate the transformations of data from their definitions as much as possible and treat functions as first class citizens; meaning functions are treated similarly to other datatypes and can be stored in variables, passed as a parameter to, or returned by, other functions.
+
+A pure function is a function which doesn't mutate state, assign variables or produce side-effects. This results in a deterministic function as the same input(s) will always lead to the same output regardless of state or other code in the program.
+
+Proponents of functional programming state that the implementation of this paradigm often leads to more readable, modular and correct code, as it allows for easier testing and debugging by restricting side effects and dependencies.
 
 These are functional programming concepts that are found in the majority of functional languages.
 For each, this document will list a canonical reference that explains the concept in general terms.
