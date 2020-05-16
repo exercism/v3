@@ -12,6 +12,7 @@
 - [Integer](https://github.com/exercism/v3/blob/master/reference/types/integer.md): Integers are used throughout
 - [Operators](https://github.com/exercism/v3/blob/master/reference/concepts/operators.md): Operators are used throughout for the arithmetic
 - [The if statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-if-Statement): Decide if the bit mask approximation is in range
+- [The return statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-return-Statement): The calculated value is returned from the function
 - [The while statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-while-Statement): Loop to create bit mask approximation
 - [Unsigned number representation](https://github.com/exercism/v3/blob/master/reference/types/unsigned.md): Required to correctly bit shift input and output values
 - [Variables](https://github.com/exercism/v3/blob/master/reference/concepts/variables.md): Used to create the bit mask
