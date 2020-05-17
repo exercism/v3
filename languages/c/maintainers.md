@@ -15,3 +15,4 @@ These awesome people help maintain the C track.
 - Johan Berg (Slack: `@Johan Berg`, GitHub: [bergjohan](https://github.com/bergjohan))
 - Xavi Ondoño (Slack: `@Xavi`, GitHub: [ondono](https://github.com/ondono))
 - l0nax (Slack: `@Emanuel Bennici`, GitHub: [l0nax](https://github.com/l0nax))
+- mayurdw (Slack: `@mayurdw`, GitHub: [mayurdw](https://github.com/mayurdw))

@@ -64,6 +64,18 @@
         "prerequisites": ["numbers", "conditionals"]
       },
       {
+        "slug": "inheritance",
+        "uuid": "2eecc903-a3d9-47dd-ac62-1d88505f089c",
+        "concepts": ["inheritance"],
+        "prerequisites": [
+          "classes",
+          "constructors",
+          "strings",
+          "booleans",
+          "conditionals"
+        ]
+      },
+      {
         "slug": "numbers",
         "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
         "concepts": ["numbers", "conditionals"],
