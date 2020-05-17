@@ -4,6 +4,6 @@ Sometimes you need to abort or otherwise modify a loop (both `while` or `for` lo
 
 See [this blog post][exiting-loop-ref] for more details.
 
-[keyword-break]: ./concepts/keywords/break.md
-[keyword-continue]: ./concepts/keywords/continue.md
+[keyword-break]: ./keywords/break.md
+[keyword-continue]: ./keywords/continue.md
 [exiting-loop-ref]: https://www.tutorialspoint.com/python/python_loop_control.htm
