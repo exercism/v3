@@ -1,0 +1,3 @@
+defmodule BasicStrings do
+
+end
