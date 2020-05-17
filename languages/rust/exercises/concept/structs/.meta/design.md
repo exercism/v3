@@ -6,7 +6,7 @@ The goal of this exercise is to teach the student the basics of working with nam
 ## Learning objectives
 - Know what the `struct` keyword means
 - Know how to create `struct`s
-- Know how to define methods on `struct`s
+- Know how to define methods on `struct`s using the `impl` keyword
 - Know the basics of different kinds of `struct`s
 
 ## Out of scope

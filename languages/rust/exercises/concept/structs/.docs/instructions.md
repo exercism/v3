@@ -1,0 +1,32 @@
+# Instructions
+
+In this exercise you'll be implementing methods on a `struct`. 
+
+You'll start with some stubbed functions in an `impl` block as well as the following `struct`:
+
+```rust
+#[derive(Clone, Debug)]
+pub struct User {
+    name: String,
+    age: u32,
+    weight: f32,
+}
+```
+
+Your goal is to implement the stubbed out methods on the `User` `struct` defined in the `impl` block. 
+
+For example, the `new` method should return an instance of the `User` `struct` with the specified name, age, and weight values. 
+
+```rust
+let mut bob = User::new(String::from("Bob"), 32, 155.2);
+// Returns: a User with name "Bob", age 32, and weight 155.2
+```
+
+The `update_age` method should update the age of the `User`. 
+
+```rust
+bob.update_age(33);
+// Updates Bob's age to 33; happy birthday Bob!
+```
+
+Have fun!
