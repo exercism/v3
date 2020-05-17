@@ -1,4 +1,4 @@
-defmodule BasicStrings.MixProject do
+defmodule HighSchoolSweetheart.MixProject do
   use Mix.Project
 
   def project do

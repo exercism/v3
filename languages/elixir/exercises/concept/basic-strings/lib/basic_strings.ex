@@ -1,3 +1,0 @@
-defmodule BasicStrings do
-
-end
