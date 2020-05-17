@@ -1,0 +1,1 @@
+Structs in Rust are one of the main ways of creating a new type by composing other types. Structs come in three flavors: structs with named fields, tuple structs, and unit structs. For this concept exercise, we'll be exploring the first variant: structs with named fields. 
