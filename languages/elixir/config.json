@@ -40,6 +40,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "basic-strings",
+        "uuid": "335df1cf-6aba-4ab6-b5c3-b4305ade09a4",
+        "concepts": ["basic-strings", "string-interpolation", "heredocs"],
+        "prerequisites": ["lists", "basic-pattern-matching"]
+      },
+      {
         "slug": "maps",
         "uuid": "e7f3ba2b-a380-45d3-a48d-7ef3dc318a31",
         "concepts": ["module-attributes-as-constants", "maps"],
