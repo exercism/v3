@@ -109,7 +109,7 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
     - [ ] [`while`][keyword-while]
   - [ ] [`for` loops][for-loops]
     - [ ] [`for`][keyword-for]
-  - Exiting loops
+  - [ ] [Exiting loops][exiting-loops]
     - [ ] [`break`][keyword-break]
     - [ ] [`continue`][keyword-continue]
   - [ ] [Iteration][iteration]
@@ -456,6 +456,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 [exception-hierarchy]: ./concepts/exception_hierarchy.md
 [exception-message]: ./concepts/exception_message.md
 [exceptions-general]: ./concepts/exceptions.md
+[exiting-loops]: ./concepts/exiting_loops.md
 [expressions]: ./concepts/expressions.md
 [for-loops]: ./concepts/for_loops.md
 [function-definition]: ./concepts/function_definition.md
