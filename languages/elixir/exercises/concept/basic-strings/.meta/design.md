@@ -1,0 +1,51 @@
+# Design
+
+## Goal
+
+The goal of this exercise is to teach the student how strings are implemented and used in Elixir.
+
+## Learning objectives
+
+After completing this exercise, the student should:
+
+- Know how to concatenate strings.
+- Know how to manipulate strings.
+- Know how to perform string interpolation.
+- Know how to create multiline strings (heredocs).
+
+## Out of scope
+
+- Strings as binaries for binary pattern matching.
+- Regular expressions.
+- Sigils.
+- Charlists.
+
+## Prerequisites
+
+This exercise's prerequisites are:
+
+- `lists`: needs to be able to work with the return value of `String.split`.
+- `basic-pattern-matching`: needs to be able to work with the return value of `String.split`.
+
+## Concepts
+
+The concepts this exercise unlocks are:
+
+- `basic-strings`: knows how to concatenate strings and modify them using the _String module_.
+- `string-interpolation`: knows how to interpolate expressions inside of strings.
+- `heredocs`: knows how to create multiline strings using the heredoc syntax.
+
+## Representer
+
+This exercise does not require any specific representation logic to be added to the [representer][representer].
+
+## Analyzer
+
+This exercise could benefit from the following rules added to the the [analyzer][analyzer]:
+
+- Verify that the `initial/1` function calls the `first_letter/1` function.
+- Verify that the `initials/1` function calls the `initial/1` function.
+- Verify that the `pair/1` function calls the `initials/1` function and uses `"""` to create the string.
+
+[analyzer]: https://github.com/exercism/elixir-analyzer
+[representer]: https://github.com/exercism/elixir-representer
