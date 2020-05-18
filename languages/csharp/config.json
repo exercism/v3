@@ -10,58 +10,100 @@
   "exercises": {
     "concept": [
       {
-        "slug": "strings",
-        "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
-        "concepts": ["strings-basic"],
+        "slug": "arrays",
+        "uuid": "b6c532c9-1e89-4fbf-8f08-27f5befb5bb8",
+        "concepts": ["arrays", "foreach-loops"],
+        "prerequisites": ["classes", "booleans", "conditionals", "for-loops"]
+      },
+      {
+        "slug": "basics",
+        "uuid": "7d358894-4fbd-4c91-b49f-d68f1c5aa6bc",
+        "concepts": ["basics"],
         "prerequisites": []
       },
       {
-        "slug": "numbers-floating-point",
+        "slug": "booleans",
+        "uuid": "401fe55e-407e-4408-88ca-0a4b342ab95b",
+        "concepts": ["booleans"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "classes",
+        "uuid": "e01dc85b-0731-4701-9eea-c78fb69ce543",
+        "concepts": ["classes"],
+        "prerequisites": ["strings", "numbers", "conditionals"]
+      },
+      {
+        "slug": "constructors",
+        "uuid": "655b5c37-c2eb-4da2-ab0a-3845de898835",
+        "concepts": ["constructors"],
+        "prerequisites": ["classes", "numbers", "conditionals", "while-loops"]
+      },
+      {
+        "slug": "dates",
+        "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
+        "concepts": ["datetimes"],
+        "prerequisites": ["numbers", "strings", "classes"]
+      },
+      {
+        "slug": "enums",
+        "uuid": "047b895b-7039-4af6-ad3a-17fd818d0b88",
+        "concepts": ["enums", "pattern-matching-constants"],
+        "prerequisites": ["strings", "conditionals"]
+      },
+      {
+        "slug": "flag-enums",
+        "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
+        "concepts": ["flag-enums", "bit-manipulation"],
+        "prerequisites": ["enums", "attributes", "integral-numbers"]
+      },
+      {
+        "slug": "floating-point-numbers",
         "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
-        "concepts": ["numbers-floating-point", "loops-while"],
+        "concepts": ["floating-point-numbers", "while-loops"],
+        "prerequisites": ["numbers", "conditionals"]
+      },
+      {
+        "slug": "inheritance",
+        "uuid": "2eecc903-a3d9-47dd-ac62-1d88505f089c",
+        "concepts": ["inheritance"],
         "prerequisites": [
-          "numbers-basic",
-          "type-conversion-numbers",
-          "conditionals-if"
+          "classes",
+          "constructors",
+          "strings",
+          "booleans",
+          "conditionals"
         ]
       },
       {
         "slug": "numbers",
         "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
-        "concepts": [
-          "numbers-basic",
-          "type-conversion-numbers",
-          "conditionals-if"
-        ],
-        "prerequisites": []
+        "concepts": ["numbers", "conditionals"],
+        "prerequisites": ["basics"]
       },
       {
-        "slug": "enums",
-        "uuid": "047b895b-7039-4af6-ad3a-17fd818d0b88",
-        "concepts": ["enums-basic", "conditionals-ternary"],
+        "slug": "properties",
+        "uuid": "978bcc16-0c49-4328-92e9-79f6204ce350",
+        "concepts": ["properties"],
         "prerequisites": [
-          "strings-basic",
-          "numbers-basic",
-          "generics",
-          "conditionals-if",
-          "type-conversion-numbers"
+          "numbers",
+          "floating-point-numbers",
+          "classes",
+          "enums",
+          "exceptions"
         ]
       },
       {
-        "slug": "dates",
-        "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
-        "concepts": ["dates-basic", "time-basic"],
-        "prerequisites": ["numbers-basic", "strings-basic"]
+        "slug": "nullability",
+        "uuid": "370e7e54-6a96-11ea-bc55-0242ac130003",
+        "concepts": ["nullability"],
+        "prerequisites": ["strings", "conditionals", "memory-allocation"]
       },
       {
-        "slug": "enums-advanced",
-        "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
-        "concepts": ["enums-advanced"],
-        "prerequisites": [
-          "enums-basic",
-          "attributes-basic",
-          "bitwise-operations"
-        ]
+        "slug": "strings",
+        "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
+        "concepts": ["strings"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []

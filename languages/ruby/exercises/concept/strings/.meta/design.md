@@ -4,14 +4,14 @@
 
 The goal of this exercise is to teach the student the basics of the Concept of Strings in [Ruby][ruby-doc.org-string].
 
-## Things to teach
+## Learning objectives
 
 - Know of the existence of the `String` object.
 - Know how to create a string.
 - Know of some basic string methods (like finding the index of a character at a position, or returning a part the string).
 - Know how to do basic string interpolation.
 
-## Things not to teach
+## Out of scope
 
 - Using standard or custom format strings.
 - Memory and performance characteristics.
@@ -38,4 +38,3 @@ This exercise does not require any specific logic to be added to the [analyzer][
 [analyzer]: https://github.com/exercism/ruby-analyzer
 [representer]: https://github.com/exercism/ruby-representer
 [ruby-doc.org-string]: https://ruby-doc.org/core-2.7.0/String.html
-

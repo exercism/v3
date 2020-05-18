@@ -5,7 +5,7 @@ This one is a bit of 'cheat' of an exericse - but the concept is real.
 ## Concepts
 
 - `format`
-   - `format-numbers`
+  - `format-numbers`
 
 ## Commentary
 
@@ -27,8 +27,7 @@ according to the types of things you can do with `format` directives.
 - `format-conditional`: Conditional printing options
 - `format-misc`: a collection of any other format directive that did
   not fit into any others.
-  
+
 This exercise's concept of `format-numbers` should depend upon the
 concept of `format-basic` as the `nil` vs. `t` as stream argument will
 need to be addressed (or stubbed for the student).
-

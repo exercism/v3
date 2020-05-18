@@ -1,5 +1,7 @@
 # Floating-point number
 
+## The Concept
+
 A floating point number is a real number, which differ from whole numbers in that a real number also allows for exponent digits.
 
 Programming languages may name their floating point type to the amount of _precision_ they can hold, whereas the following is based on [the IEEE 754 standard][wiki-ieee754]:
@@ -19,6 +21,11 @@ A student may have no understanding of floating point numbers as more than numbe
 - Ensure that type conversions are understood if appropriate (e.g. rounding, precision-changing)
 - Ensure that students know how to compare numbers to each other.
 
+## Useful links
+
+- [Floating Point Math in different languages][float-in-languages]
+- [Floating Point visualisation][float-toy]
+
 ## Exercises
 
 ### Production Line Analysis
@@ -35,6 +42,8 @@ This exercise asks students to write code to analyse the production of an assemb
 | Track | Exercise                                         | Changes |
 | ----- | ------------------------------------------------ | ------- |
 | C#    | [numbers][implementation-csharp-production-line] | None    |
+| F#    | [numbers][implementation-fsharp-production-line] | None    |
+| Go    | [numbers][implementation-go-production-line]     | None    |
 
 ### Savings Accounts
 
@@ -46,9 +55,10 @@ This exercise calculates interest on savings accounts. The reference implementat
 
 #### Implementations
 
-| Track | Exercise                                                         | Changes |
-| ----- | ---------------------------------------------------------------- | ------- |
-| C#    | [numbers-floating-point][implementation-csharp-savings-accounts] | None    |
+| Track | Exercise                                                         | Changes                                                                                               |
+| ----- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| C#    | [numbers-floating-point][implementation-csharp-savings-accounts] | None                                                                                                  |
+| F#    | [numbers-floating-point][implementation-fsharp-savings-accounts] | Replaced third task that used while loop with task that uses an `int`/`double`/`decimal` combination. |
 
 [type-bit]: ./bit.md
 [type-double]: ./double.md
@@ -56,4 +66,9 @@ This exercise calculates interest on savings accounts. The reference implementat
 [type-single]: ./single.md
 [wiki-ieee754]: https://en.wikipedia.org/wiki/IEEE_754
 [implementation-csharp-production-line]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md
-[implementation-csharp-savings-accounts]: ../../languages/csharp/exercises/concept/numbers-floating-point/.docs/introduction.md
+[implementation-fsharp-production-line]: ../../languages/fsharp/exercises/concept/numbers/.docs/introduction.md
+[implementation-go-production-line]: ../../languages/go/exercises/concept/numbers/.docs/introduction.md
+[implementation-csharp-savings-accounts]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/introduction.md
+[implementation-fsharp-savings-accounts]: ../../languages/fsharp/exercises/concept/floating-point-numbers/.docs/introduction.md
+[float-toy]: https://evanw.github.io/float-toy/
+[float-in-languages]: https://0.30000000000000004.com/

@@ -1,0 +1,233 @@
+#! /usr/bin/env python3
+"""
+Basic util for roughing out a new concept exercise.
+"""
+import os
+import re
+from argparse import ArgumentParser
+from configparser import ConfigParser
+from json import dump
+from pathlib import Path
+from tempfile import gettempdir
+from typing import NewType
+
+# path to this file
+HERE = Path(__file__).resolve()
+
+# an exercise slug, ie strings-basic
+Slug = NewType("Slug", str)
+
+# an exercise reference, ie csharp/strings-basic
+Fork = NewType("Fork", str)
+
+DESIGN_SLUG = """
+# Design
+
+## Goal
+
+TODO: INSERT GOAL HERE
+
+## Things to teach
+
+- TODO: INSERT ITEMS TO TEACH
+
+## Things not to teach
+
+- TODO: INSERT ITEMS NOT TO TEACH
+
+## Concepts
+
+The Concepts this exercise unlocks are:
+
+- TODO: INSERT CONCEPTS TO UNLOCK
+
+## Prerequisites
+
+- TODO: INSERT PREREQUISITE CONCEPTS
+
+## Representer
+
+TODO: EXPLAIN ANY LOGIC TO BE ADDED TO THE [representer][representer]
+
+## Analyzer
+
+TODO: EXPLAIN ANY LOGIC TO BE ADDED TO THE [analyzer][analyzer].
+
+[analyzer]: https://github.com/exercism/python-analyzer
+[representer]: https://github.com/exercism/python-representer
+"""
+
+
+def slug(string: str) -> Slug:
+    """
+    Check if the given arg is a valid exercise slug.
+    """
+    pattern = r"^[a-z]+(-[0-9a-z]+)*$"
+    if not re.match(pattern, string):
+        raise ValueError(f"Does not match {pattern!r}: {string!r}")
+    return Slug(string)
+
+
+def fork(string: str) -> Fork:
+    """
+    Check if the given arg is a valid exercise fork.
+    """
+    pattern = r"^[a-z]+(-[0-9a-z]+)*/[a-z]+(-[0-9a-z]+)*$"
+    if not re.match(pattern, string):
+        raise ValueError(f"Does not match {pattern!r}: {string!r}")
+    return Fork(string)
+
+
+def get_config():
+    """
+    Get any existing configuration, or create a new one.
+    """
+    # path to the dotfile
+    dotfile = Path(gettempdir()).joinpath(".{}.ini".format(HERE.stem)).resolve()
+
+    # read the config, if any exists
+    config = ConfigParser()
+    config.read([dotfile])
+    dirty = False
+
+    # handle username configuration
+    if "usernames" not in config:
+        config["usernames"] = {}
+        dirty = True
+
+    usernames = config["usernames"]
+    for site in "github", "exercism":
+        key = "{}_username".format(site)
+        while key not in usernames or not usernames[key]:
+            usernames[key] = input("Enter your {} username: ".format(site.title()))
+            dirty = True
+
+    # write any changes out to disk
+    if dirty:
+        with dotfile.open("w") as dst:
+            config.write(dst)
+
+    return config
+
+
+def main():
+    """
+    Parse arguments and builds the directory structure for an exercise.
+    """
+    # create the cli parser
+    parser = ArgumentParser(
+        description="Creates the initial directory structure of a new concept exercise."
+    )
+    parser.add_argument(
+        "slug",
+        metavar="SLUG",
+        type=slug,
+        help='exercise to create (ie "strings-basic")',
+    )
+    parser.add_argument(
+        "--forked-from",
+        "-f",
+        action="append",
+        type=fork,
+        help=(
+            'exercise(s) you are forking from (ie "csharp/strings-basic"); '
+            / "may be passed multiple times"
+        ),
+    )
+    parser.add_argument(
+        "--dry-run",
+        "-d",
+        action="store_true",
+        help="report, but do not create exercise structure",
+    )
+
+    parser.add_argument(
+        "--quiet",
+        "-q",
+        action="store_true",
+        help="silence all printing (except with --dry-run)",
+    )
+
+    # parse cli arguments
+    args = parser.parse_args()
+
+    # make dry-runs a little more obvious
+    prefix = "[dry-run]: " if args.dry_run else ""
+
+    # get the config
+    config = get_config()
+
+    # get the exercise root directory
+    cwd = Path.cwd()
+    concept_dir = (HERE / "../../../python/exercises/concept").resolve(strict=True)
+
+    def _mkdir(dir_path: Path) -> Path:
+        if not args.dry_run:
+            os.makedirs(dir_path, exist_ok=True)
+        if not args.quiet or args.dry_run:
+            try:
+                short_path = dir_path.relative_to(cwd)
+            except ValueError:
+                short_path = dir_path
+            print(prefix + "create {}".format(short_path))
+        return dir_path
+
+    def _touch(file_path: Path) -> Path:
+        if not args.dry_run:
+            file_path.touch()
+        if not args.quiet or args.dry_run:
+            try:
+                short_path = file_path.relative_to(cwd)
+            except ValueError:
+                short_path = file_path
+            print(prefix + "touch {}".format(short_path))
+        return file_path
+
+    # create the exercise directory structure, as required
+    slug_dir = concept_dir / args.slug
+    docs_dir = _mkdir(slug_dir / ".docs")
+    meta_dir = _mkdir(slug_dir / ".meta")
+
+    # create the file structure, as required
+    py_name = args.slug.replace("-", "_")
+
+    # the SLUG.py file
+    _touch(slug_dir / "{}.py".format(py_name))
+
+    # the SLUG_test.py file
+    _touch(slug_dir / "{}_test.py".format(py_name))
+
+    # the various .docs/*.md files
+    for doc_file in "introduction.md", "instructions.md", "hints.md", "after.md":
+        _touch(docs_dir / doc_file)
+
+    # the various .meta/*.* files
+    design_file = meta_dir / "design.md"
+    if not args.dry_run and not design_file.exists():
+        design_file.write_text(DESIGN_SLUG.strip())
+    _touch(design_file)
+
+    # the example.py file:
+    _touch(meta_dir / "example.py")
+
+    # touch the config.json, populating if necessary
+    config_file = meta_dir / "config.json"
+    if not args.dry_run and not config_file.exists():
+        usernames = config["usernames"]
+        data = {
+            "authors": [
+                {
+                    "github_username": usernames["github_username"],
+                    "exercism_username": usernames["exercism_username"],
+                }
+            ]
+        }
+        if args.forked_from:
+            data["forked_from"] = args.forked_from
+        with config_file.open("w") as dst:
+            dump(data, dst, indent=4)
+    _touch(config_file)
+
+
+if __name__ == "__main__":
+    main()

@@ -4,21 +4,39 @@ This is a working document to keep track of ideas and thoughts on how the progre
 
 ```mermaid
 graph TD
-A((A)) --> robots
-subgraph Multiple Dispatch
-	robots --> encounters
-	robots -.-> abstract-types
-	abstract-types[abstract types] -.-> modules
-	modules -.-> encounters
-	encounters -.-> extension[extending/glueing together modules]
+
+Start((Start)) --> numbers
+
+numbers --> modules
+
+modules --> composite-types
+subgraph Type System
+	subgraph robots
+		composite-types --> mutable-composite-types
+		mutable-composite-types --> abstract-types
+	end
+	abstract-types --> multiple-dispatch
+	multiple-dispatch["multiple-dispatch (encounters)"] --> extension[extending/glueing together modules]
+
+	abstract-types --> primitive-types
 end
-extension --> B
-B --> performance
-performance --> Z((Z))
+extension --> performance
+performance --> Finish((Finish))
+
+subgraph Numbers
+	numbers --> complex-numbers
+	numbers --> rational-numbers
+end
+
+complex-numbers -.-> v2-complex-numbers(v2-complex-numbers)
+rational-numbers -.-> v2-rational-numbers(v2-rational-numbers)
+extension -.-> v2-complex-numbers
+extension -.-> v2-rational-numbers
 ```
 
 ## Legend
 
+- **Round edges & dotted lines** in the graph above are practice exercises that focus on a particular concept.
 - **Q** refers to questions the student should be able to answer after solving it that aren’t directly taught by the exercise. Think of them like questions in the style of the Cornell Note Taking system.
 - **PREV** means that the following point heavily depends on how the previous progression goes and thus is subject to change and/or to be decided
 - **NEXT** means that this could either be part of this exercise or be the concept taught in the next exercise. In the diagram these are represented with dotted lines.
@@ -31,6 +49,7 @@ I think of closely coupled concepts/exercises as a “block” in the progressio
 
 #### “Robots”
 
+<!-- prettier-ignore -->
 - Introduces **structs**
 - Based on the existing exercises _robot-name_ and _robot-simulator_
 - Might be split up in multiple exercises
@@ -50,6 +69,7 @@ I think of closely coupled concepts/exercises as a “block” in the progressio
 
 #### “Encounters”
 
+<!-- prettier-ignore -->
 - Central exercise that teaches **multiple dispatch**
 - Implementation is ‘fixed’ for now to avoid modifying to many variables at once
     - **NEXT:** Exception: Add `meets(::Pet, ::AbstractRobot)`

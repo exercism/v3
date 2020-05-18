@@ -4,14 +4,14 @@
 
 The goal of this exercise is to teach the student the basics of the Concept of Strings in [C#][docs.microsoft.com-string].
 
-## Things to teach
+## Learning objectives
 
 - Know of the existence of the `string` type.
 - Know how to create a string.
 - Know of some basic string methods (like finding the index of a character at a position, or returning a part the string).
 - Know how to do basic string formatting.
 
-## Things not to teach
+## Out of scope
 
 - Using standard or custom format strings.
 - Memory and performance characteristics.
@@ -21,11 +21,13 @@ The goal of this exercise is to teach the student the basics of the Concept of S
 
 The Concepts this exercise unlocks are:
 
-- `strings-basic`: know of the existence of the `string` type; know of some basic functions (like looking up a character at a position, or slicing the string); know how to do basic string formatting.
+- `strings`: know of the existence of the `string` type; know of some basic functions (like looking up a character at a position, or slicing the string); know how to do basic string formatting.
 
 ## Prequisites
 
-There are no prerequisites.
+This exercise's prerequisites Concepts are:
+
+- `basics`: know how to define methods.
 
 ## Representer
 

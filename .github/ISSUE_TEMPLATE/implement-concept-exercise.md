@@ -12,6 +12,18 @@ assignees: ''
 
 This issue describes how to implement the `<SLUG>` concept exercise for the <LANG> track.
 
+## Getting started
+
+**Please please please read the docs before starting.** Posting PRs without reading these docs will be a lot more frustrating for you during the review cycle, and exhaust Exercism's maintainers' time. So, before diving into the implementation, please read up on the following documents:
+
+- [The features of v3](https://github.com/exercism/v3/blob/master/docs/concept-exercises.md).
+- [Rationale for v3](https://github.com/exercism/v3/blob/master/docs/rationale-for-v3.md).
+- [What are concept exercise and how they are structured?](https://github.com/exercism/v3/blob/master/docs/features-of-v3.md)
+
+Please also watch the following video:
+
+- [The Anatomy of a Concept Exercise](https://www.youtube.com/watch?v=gkbBqd7hPrA).
+
 ## Goal
 
 [A clear description of which concepts this exercise aims to teach.
@@ -20,20 +32,20 @@ For example:
 
 The goal of this exercise is to teach the student how concept X is implemented in <LANG>. We will teach X through <LANG>'s Y type.]
 
-## Things to teach
+## Learning objectives
 
-[A list of things the exercise aims to teach the student.
+[A list of the exercise's learning objectives.
 
 For example:
 
 - Know of the existence of type `Y`.
-- Know of some basic functions that work on `Y`.
-- Know where `Y` is documented, or at least how to search for it.
+- Know of basic functions that work on `Y`.
+- Know how to use `Y` in context `Z`.
 - ...]
 
-## Things not to teach
+## Out of scope
 
-[A list of things that are outside the scope of this exercise and that the exercise should thus not teach.
+[A list of things out of scope for this exercise.
 
 For example:
 
@@ -84,7 +96,9 @@ For example:
 - Normalize ternary expressions to if statements, as we are not interested in the type of conditional that is used.
 - ...
 
-To help the implementer get started, add a link to the language's representer document.]
+To help the implementer get started, add a link to the language's representer document.
+
+If you don't know what representers are, feel free to leave this section empty.]
 
 ## Analyzer
 
@@ -95,7 +109,9 @@ For example:
 - If feature `K` is used, suggest using feature `L`.
 - ...
 
-To help the implementer get started, add a link to the language's analyzer document]
+To help the implementer get started, add a link to the language's analyzer document.
+
+If you don't know what analyzers are, feel free to leave this section empty.]
 
 ## Implementing
 

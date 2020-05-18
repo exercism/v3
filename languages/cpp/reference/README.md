@@ -30,7 +30,7 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - [Anonymous functions (lambdas)](../../../reference/concepts/anonymous_functions.md)
 - [Recursion](../../../reference/concepts/recursion.md)
 - [Nested functions](../../../reference/concepts/nested_functions.md)
-- [Pipelines (ranges)](../../../reference/concepts/pipelines.md) (Defer C++2a to release) 
+- [Pipelines (ranges)](../../../reference/concepts/pipelines.md) (Defer C++2a to release)
 
 ### Memory management
 
@@ -55,9 +55,10 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - [Enumeration](../../../reference/concepts/enumeration.md) (Container iteration)
 - Iterators
 - Namespaces
-- IO
+- C-style Input/Output
+- Input/Output stream-based library
 - Templates
-- [Metaprogramming (TMP)](../../../reference/concepts/metaprogramming.md)
+- [Metaprogramming](../../../reference/concepts/metaprogramming.md)
 - Exception handling
 - Implicit/explicit/contextual conversion
 - [Destructuring (structured-bindings)](../../../reference/concepts/destructuring_assignment.md)
@@ -66,6 +67,7 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - Value categories
 - Attributes
 - Slicing
+- String literals
 - Reflection (`<type_traits>`)
 - Undefined Behavior
 - Preprocessor
@@ -76,6 +78,7 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 
 - Signed integers
 - Unsigned integers
+- Fixed width integer types
 - Floating point numbers
 - [Characters][char]
 - [Booleans][bool]
@@ -91,10 +94,16 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - [Queues][queue]
 - [Stacks][stack]
 - [Tuples][tuple]
-- Unions (`std::variant`)
+- Sum types (`std::variant`)
+- Product types (`std::pair`, `std::tuple`)
 - [Ranges][range] (Defer to C++2a)
+- Bitset
+- Dynamic bitset
 
-Let pointers aside as long as we can avoid them, using references instead.
+### Advanced topics
+
+- Pointers
+- Unions (`union`)
 
 ## Concept interpretation
 
@@ -120,19 +129,7 @@ The concept exercises use the following concepts:
 | `maps-basic`             | C++98                    | Know of the existence of the `std::map` and `std::unordered_map` types. Know how to define an map. Know how to access elements in an map by key. Know the unique properties of a map. Know of some basic functions (like adding an element to a map). Know where it's documented, or at least how to search for it.          |
 | `sets-basic`             | C++98                    | Know of the existence of the `std::set` and `std::unordered_set` types. Know how to define an set. Know how to access elements in a set. Know the unique properties of a set. Know of some basic functions (like adding an element to a set). Know where it's documented, or at least how to search for it.                  |
 
-
-
 This also indicates that for example `strings-basic` does **not** teach using custom formatting strings and that `numbers-basic` does **not** teach about integer undefined-behavior.
-
-## Reference docs
-
-Reference docs are written to help explain a particular C++ concept to a student when no appropriate online document can be found. They will be used when creating exercises and as references in exercise documentation.
-
-The following reference docs have been written:
-
-## TODO
-
-Add more concepts for exercises
 
 [issues-improve-reference]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fcpp+label%3Atype%2Fimprove-reference+label%3Astatus%2Fhelp-wanted
 [issues-new-reference]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Atrack%2Fcpp+label%3Atype%2Fnew-reference+label%3Astatus%2Fhelp-wanted+

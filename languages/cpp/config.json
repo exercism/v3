@@ -1,0 +1,21 @@
+{
+  "language": "C++",
+  "active": true,
+  "blurb": "C++ is a high-level, general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language. Modern C++ has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation.",
+  "version": 3,
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 4
+  },
+  "exercises": {
+    "concept": [
+      {
+        "slug": "strings",
+        "uuid": "62f945e7-0791-46b7-8161-855183f736ba",
+        "concepts": ["strings-basic"],
+        "prerequisites": [""]
+      }
+    ],
+    "practice": []
+  }
+}

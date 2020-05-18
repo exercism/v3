@@ -1,5 +1,3 @@
-# Instructions
-
 In this exercise you'll be providing a `TranslationService` where paid members
 have some quality assurance.
 
@@ -42,7 +40,7 @@ Implement a function to fetch a translation, ignoring the quality, and
 forwarding any errors thrown by the API:
 
 ```javascript
-service.free("jIyaj")
+service.free('jIyaj')
 // => Promise<...> resolves "I understand."
 
 service.free("jIyajbe'")
@@ -58,10 +56,10 @@ Implement a function that batch translates the given texts using the free
 service, returning all the translations, or a single error.
 
 ```javascript
-service.batch(["jIyaj", "majQa'"])
+service.batch(['jIyaj', "majQa'"])
 // => Promise<...> resolves ["I understand.", "Well done!"]
 
-service.batch(["jIyaj", "jIyajbe'"])
+service.batch(['jIyaj', "jIyajbe'"])
 // => Promise<...> rejects new Error("Not yet translated")
 
 service.batch([])
