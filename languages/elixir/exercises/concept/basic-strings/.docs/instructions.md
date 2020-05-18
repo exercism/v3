@@ -64,6 +64,4 @@ iex> HighSchoolSweetheart.pair("Barbara Miller", "William Lewis") |> IO.puts()
            **   **
              ***
               *
-
-:ok
 ```

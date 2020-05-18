@@ -32,25 +32,15 @@ iex> String.last("12345")
 To put a newline character in a string, use the `\n` escape code:
 
 ```elixir
-iex> IO.puts("1\n2\n3\n")
-1
-2
-3
-
-:ok
+"1\n2\n3\n"
 ```
 
 To comfortably work with texts with a lot of newlines, use the triple-double-quote heredoc syntax instead:
 
 ```elixir
-iex> IO.puts("""
-...> 1
-...> 2
-...> 3
-...> """)
+"""
 1
 2
 3
-
-:ok
+"""
 ```
