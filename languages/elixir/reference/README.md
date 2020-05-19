@@ -265,6 +265,7 @@ The concept exercises use the following concepts:
 | `atoms`                          | Intro to elixir atom type.                                                                     |
 | `lists`                          | Introduction to the lists type basic list functions -- hd/1, tl/1, length/1, in/2              |
 | `string-literals`                | Introduction to strings in code enclosed by double quotes.                                     |
+| `strings`                        | How to do string processing, concatenation, interpolation, and multiline strings.              |
 | `anonymous-functions`            | Intro to anonymous functions, functions as data                                                |
 | `closures`                       | How to implement closures in elixir                                                            |
 | `tuples`                         | Introduction to the tuple data type                                                            |

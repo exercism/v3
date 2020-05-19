@@ -32,9 +32,7 @@ This exercise's prerequisites are:
 
 The concepts this exercise unlocks are:
 
-- `string-processing`: knows how to concatenate strings and modify them using the _String module_.
-- `string-interpolation`: knows how to interpolate expressions inside of strings.
-- `heredocs`: knows how to create multiline strings using the heredoc syntax.
+- `strings`: knows how to concatenate strings, interpolate expressions inside of strings, create multiline strings, and modify strings using the _String module_.
 
 ## Representer
 
