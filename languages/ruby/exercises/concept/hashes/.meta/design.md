@@ -27,7 +27,7 @@ After completing this exercise, the student should:
 
 This exercise's prerequisites Concepts are:
 
-- `strings`: log lines are `string` values.
+- `strings`: log lines are `String` values.
 
 ## Representer
 
@@ -40,4 +40,3 @@ This exercise does not require any specific logic to be added to the [analyzer][
 [analyzer]: https://github.com/exercism/ruby-analyzer
 [representer]: https://github.com/exercism/ruby-representer
 [ruby-doc-hash]: https://ruby-doc.org/core-2.7.1/Hash.html
-
