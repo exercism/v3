@@ -40,26 +40,26 @@ It is highly likely possible to have the same method name and signatures are in 
 In order provide a distinct implementations of these methods, C# prvodes [explicit implementation of interfaces][explicit-implementation].
 
 ```csharp
-public interface IPdf 
+public interface IFoo 
 {
-	string Export(int width, int );
+	void X();
 }
 
-public interface IWord
+public interface IBar
 {
-	string Export(int width, int );
+	void X();
 }
 
-public class Html : IPdf, IWord 
+public class Census : IFoo, IBar
 {
-	string IPdf.Export() 
+	void IFoo.X() 
 	{
-		return "Export to PDF";
+		Console.Write("This is from Foo");
 	}
 	
-	string IWord.Export() 
+	void IBar.X() 
 	{
-		return "Export to Word";
+		Console.Write("This is from Bar");
 	}
 }
 ```
