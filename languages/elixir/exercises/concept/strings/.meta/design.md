@@ -19,6 +19,7 @@ After completing this exercise, the student should:
 - Regular expressions.
 - Sigils.
 - Charlists.
+- Graphemes and the difference between `byte_size` and `String.length`.
 
 ## Prerequisites
 

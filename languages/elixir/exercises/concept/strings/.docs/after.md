@@ -1,7 +1,7 @@
 [Strings][getting-started-strings] in Elixir are delimited by double quotes, and they are encoded in UTF-8:
 
 ```elixir
-"Hi! ¡Hola! Cześć! Привет!"
+"Hi!"
 ```
 
 Strings can be concatenated using the [`<>/2`][kernel-concat] operator:
@@ -39,8 +39,8 @@ Elixir provides many functions for working with strings in the _String module_. 
 String.downcase("PLEASE NO SHOUTING")
 # => "please no shouting"
 
-String.graphemes("cześć")
-# => ["c", "z", "e", "ś", "ć"]
+String.split("hello", "", trim: true)
+# => ["h", "e", "l", "l", "o"]
 
 String.replace("Do I enjoy Elixir? Maybe...", "Maybe...", "Definitely!")
 # => "Do I enjoy Elixir? Definitely!"
