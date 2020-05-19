@@ -47,13 +47,13 @@ public class GameMasterTests
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Describe_walking_travel_method()
     {
-        Assert.Equal("You're travelling to your destination by walking.", GameMaster.Describe(TravelMethod.Walking));
+        Assert.Equal("You're traveling to your destination by walking.", GameMaster.Describe(TravelMethod.Walking));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Describe_horse_travel_method()
     {
-        Assert.Equal("You're travelling to your destination on horseback.", GameMaster.Describe(TravelMethod.Horseback));
+        Assert.Equal("You're traveling to your destination on horseback.", GameMaster.Describe(TravelMethod.Horseback));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
@@ -68,7 +68,7 @@ public class GameMasterTests
         destination.Name = "Vo Mimbre";
         destination.Inhabitants = 332;
 
-        Assert.Equal("You're a level 1 Warrior with 30 hit points. You're travelling to your destination by walking. You've arrived at Vo Mimbre, which has 332 inhabitants.", GameMaster.Describe(character, destination));
+        Assert.Equal("You're a level 1 Warrior with 30 hit points. You're traveling to your destination by walking. You've arrived at Vo Mimbre, which has 332 inhabitants.", GameMaster.Describe(character, destination));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
@@ -83,6 +83,6 @@ public class GameMasterTests
         destination.Name = "Camaar";
         destination.Inhabitants = 999;
 
-        Assert.Equal("You're a level 20 Wizard with 120 hit points. You're travelling to your destination on horseback. You've arrived at Camaar, which has 999 inhabitants.", GameMaster.Describe(character, destination, TravelMethod.Horseback));
+        Assert.Equal("You're a level 20 Wizard with 120 hit points. You're traveling to your destination on horseback. You've arrived at Camaar, which has 999 inhabitants.", GameMaster.Describe(character, destination, TravelMethod.Horseback));
     }
 }

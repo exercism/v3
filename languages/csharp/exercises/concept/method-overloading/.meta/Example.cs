@@ -14,10 +14,10 @@ static class GameMaster
     {
         if (travelMethod == TravelMethod.Walking)
         {
-            return "You're travelling to your destination by walking.";
+            return "You're traveling to your destination by walking.";
         }
 
-        return "You're travelling to your destination on horseback.";
+        return "You're traveling to your destination on horseback.";
     }
 
     public static string Describe(Character character, Destination destination, TravelMethod travelMethod = TravelMethod.Walking)

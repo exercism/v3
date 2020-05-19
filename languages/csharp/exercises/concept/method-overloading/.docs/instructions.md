@@ -33,19 +33,19 @@ GameMaster.Describe(destination);
 
 Characters can travel to a destination using one of two options:
 
-- Walking, described as: `"You're travelling to your destination by walking."`
-- On horseback, described as: `"You're travelling to your destination on horseback."`
+- Walking, described as: `"You're traveling to your destination by walking."`
+- On horseback, described as: `"You're traveling to your destination on horseback."`
 
 Implement the (static) `GameMaster.Describe` method that takes a `TravelMethod` as its sole parameter and returns its description.
 
 ```csharp
 GameMaster.Describe(TravelMethod.Horseback);
-// => "You're travelling to your destination on horseback."
+// => "You're traveling to your destination on horseback."
 ```
 
-### 4. Describe a character travelling to a destination
+### 4. Describe a character traveling to a destination
 
-When a character is travelling to a destination, this is described as a combination of the individual descriptions: `"<CHARACTER> <TRAVEL_METHOD> <DESTINATION>"`. Implement the (static) `GameMaster.Describe` method that takes a `Character`, a `Destination` and a `TravelMethod` as its parameters and return its description.
+When a character is traveling to a destination, this is described as a combination of the individual descriptions: `"<CHARACTER> <TRAVEL_METHOD> <DESTINATION>"`. Implement the (static) `GameMaster.Describe` method that takes a `Character`, a `Destination` and a `TravelMethod` as its parameters and return its description.
 
 ```csharp
 var character = new Character();
@@ -58,12 +58,12 @@ destination.Name = "Muros";
 destination.Inhabitants = 732;
 
 GameMaster.Describe(character, destination, TravelMethod.Horseback);
-// => "You're a level 4 Wizard with 28 hit points. You're travelling to your destination on horseback. You've arrived at Muros, which has 732 inhabitants."
+// => "You're a level 4 Wizard with 28 hit points. You're traveling to your destination on horseback. You've arrived at Muros, which has 732 inhabitants."
 ```
 
-### 5. Describe a character travelling to a destination without specifying the travel method
+### 5. Describe a character traveling to a destination without specifying the travel method
 
-In the majority of cases, characters are travelling to a destination by walking. For convenience, players are allowed to omit mentioning their travel method, in which case walking will be assumed to be the travel method. Implement the (static) `GameMaster.Describe` method that takes a `Character` and a `Destination` as its parameters and return its description.
+In the majority of cases, characters are traveling to a destination by walking. For convenience, players are allowed to omit mentioning their travel method, in which case walking will be assumed to be the travel method. Implement the (static) `GameMaster.Describe` method that takes a `Character` and a `Destination` as its parameters and return its description.
 
 ```csharp
 var character = new Character();
@@ -76,5 +76,5 @@ destination.Name = "Muros";
 destination.Inhabitants = 732;
 
 GameMaster.Describe(character, destination);
-// => "You're a level 4 Wizard with 28 hit points. You're travelling to your destination by walking. You've arrived at Muros, which has 732 inhabitants."
+// => "You're a level 4 Wizard with 28 hit points. You're traveling to your destination by walking. You've arrived at Muros, which has 732 inhabitants."
 ```
