@@ -49,14 +49,14 @@ HighSchoolSweetheart.initials("Lance Green")
 Implement the `HighSchoolSweetheart.pair/2` function. It should take two full names and return the initials. Make sure to reuse `HighSchoolSweetheart.initials/1` that you defined in the previous step.
 
 ```elixir
-HighSchoolSweetheart.pair("Barbara Miller", "William Lewis")
+HighSchoolSweetheart.pair("Blake Miller", "Riley Lewis")
 # => """
 #      ******       ******
 #    **      **   **      **
 #  **         ** **         **
 # **            *            **
 # **                         **
-# **     B. M.  +  W. L.     **
+# **     B. M.  +  R. L.     **
 #  **                       **
 #    **                   **
 #      **               **

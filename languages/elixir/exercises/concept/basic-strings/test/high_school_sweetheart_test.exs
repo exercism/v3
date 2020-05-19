@@ -33,7 +33,7 @@ defmodule HighSchoolSweetheartTest do
 
   describe "pair/2" do
     test "prints the pair's initials inside a heart" do
-      assert HighSchoolSweetheart.pair("Amy Bryant", "Charlie Dixon") ==
+      assert HighSchoolSweetheart.pair("Avery Bryant", "Charlie Dixon") ==
                """
                     ******       ******
                   **      **   **      **
