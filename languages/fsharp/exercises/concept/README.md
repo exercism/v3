@@ -8,7 +8,7 @@ These are the Concept Exercises that have currently been implemented, as well as
 
 | exercise                                                            | concepts                     | prerequisites                                                                          |
 | ------------------------------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------- |
-| [`arrays`][concept-exercise-arrays]                                 | `arrays`                     | `booleans`</br>`pattern-matching`</br>`basics`                                         |
+| [`arrays`][concept-exercise-arrays]                                 | `arrays`                     | `booleans`</br>`pattern-matching`                                                      |
 | [`basics`][concept-exercise-basics]                                 | `basics`                     |                                                                                        |
 | [`booleans`][concept-exercise-booleans]                             | `booleans`                   | `basics`                                                                               |
 | [`datetimes`][concept-exercise-datetimes]                           | `datetimes`                  | `numbers`<br/>`strings`<br/>`classes`                                                  |
