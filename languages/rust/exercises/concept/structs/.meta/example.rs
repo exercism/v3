@@ -14,6 +14,18 @@ impl User {
         }
     }
 
+    pub fn get_name(&self) -> &str {
+        self.name.as_str()
+    }
+
+    pub fn get_age(&self) -> u32 {
+        self.age
+    }
+
+    pub fn get_weight(&self) -> f32 {
+        self.weight
+    }
+
     pub fn update_name(&mut self, new_name: String) {
         self.name = new_name;
     }

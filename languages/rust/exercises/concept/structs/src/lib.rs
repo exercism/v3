@@ -10,6 +10,18 @@ impl User {
         unimplemented!()
     }
 
+    pub fn get_name(&self) -> &str {
+        unimplemented!()
+    }
+
+    pub fn get_age(&self) -> u32 {
+        unimplemented!()
+    }
+
+    pub fn get_weight(&self) -> f32 {
+        unimplemented!()
+    }
+
     pub fn update_name(&mut self, new_name: String) {
         unimplemented!()
     }

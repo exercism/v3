@@ -22,6 +22,13 @@ let mut bob = User::new(String::from("Bob"), 32, 155.2);
 // Returns: a User with name "Bob", age 32, and weight 155.2
 ```
 
+The `get_weight` method should return the weight of the `User`.
+
+```rust
+bob.get_weight();
+// Returns: 155.2
+```
+
 The `update_age` method should update the age of the `User`. 
 
 ```rust
