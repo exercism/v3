@@ -42,7 +42,7 @@
       {
         "slug": "strings",
         "uuid": "335df1cf-6aba-4ab6-b5c3-b4305ade09a4",
-        "concepts": ["string-processing", "string-interpolation", "heredocs"],
+        "concepts": ["strings"],
         "prerequisites": ["lists", "basic-pattern-matching"]
       },
       {
