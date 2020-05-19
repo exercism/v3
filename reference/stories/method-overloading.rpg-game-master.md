@@ -2,7 +2,7 @@
 
 ## Story
 
-In this exercise you're playing a role-playing game named "Wizard and Warriors" with your best friends. You are the game master, the person tasked with making the game world come alive for the other players. A key aspect of this is describing the game to the players: what is a character's status, what does the town they're visiting looks like, etc.
+In this exercise you're playing a role-playing game named "Wizard and Warriors" with your best friends. You are the game master, the person tasked with making the game world come alive for the other players. A key aspect of this is describing the game to the players: what is a character's status, what the town they're visiting looks like, etc.
 
 ## Tasks
 
