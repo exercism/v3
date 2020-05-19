@@ -40,9 +40,9 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "basic-strings",
+        "slug": "strings",
         "uuid": "335df1cf-6aba-4ab6-b5c3-b4305ade09a4",
-        "concepts": ["basic-strings", "string-interpolation", "heredocs"],
+        "concepts": ["string-processing", "string-interpolation", "heredocs"],
         "prerequisites": ["lists", "basic-pattern-matching"]
       },
       {
