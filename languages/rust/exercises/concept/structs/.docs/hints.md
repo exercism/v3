@@ -1,9 +1,9 @@
 ## General
-- [This](https://learning-rust.github.io/docs/b2.structs.html#C-like-structs) site provides a good overview of the different types of structs and their syntax.
+- [https://learning-rust.github.io/docs/b2.structs.html#C-like-structs](https://learning-rust.github.io/docs/b2.structs.html#C-like-structs) provides a good overview of the different types of structs and their syntax.
 
-- [This](https://doc.rust-lang.org/book/ch05-01-defining-structs.html) section of _The Rust Programming Language_ book talks about how to define structs.
+- [https://doc.rust-lang.org/book/ch05-01-defining-structs.html](https://doc.rust-lang.org/book/ch05-01-defining-structs.html) in _The Rust Programming Language_ book talks about how to define structs.
 
-- [This](https://doc.rust-lang.org/book/ch05-03-method-syntax.html) section of _The Rust Programming Language_ showcases the syntax for defining methods on structs.
+- [https://doc.rust-lang.org/book/ch05-03-method-syntax.html](https://doc.rust-lang.org/book/ch05-03-method-syntax.html) in _The Rust Programming Language_ showcases the syntax for defining methods on structs.
 
 - Notice that the `get_name` method returns a `&str` when the `name` field on the `User` struct is a `String`. How can we get `&str` and `String` to play nice with each other?
 

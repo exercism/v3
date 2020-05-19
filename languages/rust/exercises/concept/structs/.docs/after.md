@@ -2,6 +2,6 @@ Notice the usage of `&self` (an _immutable_ reference to our `User` instance) fo
 
 There are also other struct variants that this exercise didn't touch on, namely _tuple structs_ and _unit structs_.
 
-- [This](https://learning-rust.github.io/docs/b2.structs.html#Tuple-structs) site highlights the use-cases of tuple and unit structs.
+- [https://learning-rust.github.io/docs/b2.structs.html#Tuple-structs](https://learning-rust.github.io/docs/b2.structs.html#Tuple-structs) highlights the use-cases of tuple and unit structs.
 
-- [This](https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html) chapter of _Rust By Example_ showcases some examples of tuple and unit structs.
+- [https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html](https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html) in _Rust By Example_ showcases some examples of tuple and unit structs.
