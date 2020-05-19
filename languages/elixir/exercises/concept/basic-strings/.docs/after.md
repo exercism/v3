@@ -63,7 +63,7 @@ You can print a string to the console using [`IO.puts/2`][io-puts]:
 IO.puts("\"A\" is the \#1st letter of the alphabet.\n")
 ```
 
-To comfortably work with texts with a lot of newlines, use the triple-double-quote heredoc syntax instead:
+To comfortably work with texts with a lot of newlines, use the [triple-double-quote heredoc syntax][heredoc-syntax] instead:
 
 ```elixir
 """
@@ -104,3 +104,4 @@ end
 [string-module-functions]: https://hexdocs.pm/elixir/String.html#functions
 [string-interpolation]: https://hexdocs.pm/elixir/String.html#module-interpolation
 [escape-characters]: https://hexdocs.pm/elixir/String.html#module-escape-characters
+[heredoc-syntax]: https://elixir-examples.github.io/examples/multiline-strings-heredocs
