@@ -63,8 +63,6 @@ Functions in Go are considered [first class citizens][first-class-functions] mak
 - be used anonymously
 - be used as closures
 
-TODO: is above OK or too much? Details will be in later exercises...
-
 A function can have zero or more parameters. All parameters must be explicitly typed, there is no type inference for parameters. A function can also have multiple return values which must also be explicitly typed. Values are returned from functions using the [`return` keyword][return]. To allow a function, or a method to be [called by code in other packages][public-vs-private], the name of the function must start with a capital letter.
 
 ```go
