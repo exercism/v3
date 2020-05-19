@@ -18,16 +18,6 @@ Strings in Elixir support interpolation using the `#{}` syntax:
 # => "6 * 7 = 42"
 ```
 
-Elixir provides many functions for working with strings in the _String module_.
-
-```elixir
-String.downcase("HELLO")
-# => "hello"
-
-String.last("12345")
-# => "5"
-```
-
 To put a newline character in a string, use the `\n` escape code:
 
 ```elixir
@@ -43,3 +33,5 @@ To comfortably work with texts with a lot of newlines, use the triple-double-quo
 3
 """
 ```
+
+Elixir provides many functions for working with strings in the `String` module.
