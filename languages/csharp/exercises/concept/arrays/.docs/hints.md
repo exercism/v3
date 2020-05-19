@@ -21,7 +21,7 @@
 
 - The `Array` class has a [built-in method][array-indexof] to check at which index an element can be found. A special value is returned if a matching element could not be found.
 
-### 4. Calculate the total number of visiting birds
+### 5. Calculate the total number of visiting birds
 
 - A variable can be used to hold the total number of visiting birds.
 - The array can be iterated over using a [`foreach` loop][array-foreach].
