@@ -8,11 +8,11 @@ The goal of this exercise is to teach the student the basics of the Concept of h
 
 After completing this exercise, the student should:
 
-- Know of the existence of the `hash` collection.
-- Know how to create and initialise a `hash`.
-- Know how to assign values to existing hash keys.
-- Know how to add new hash key.
-- Know how to iterate over a hash.
+- Know of the existence of the `Hash` collection.
+- Know how to create and initialise a `Hash`.
+- Know how to assign values to existing `Hash` keys.
+- Know how to add new `Hash` key.
+- Know how to iterate over a `Hash`.
 
 ## Out of scope
 
@@ -21,7 +21,7 @@ After completing this exercise, the student should:
 
 ## Concepts
 
-- `hash`: know of the existence of the `hash` collection; know how to create and initialise a `hash`; know how to assign values to existing hash keys; know how to add new hash key; know how to iterate over a hash.
+- `Hash`: know of the existence of the `Hash` collection; know how to create and initialise a `Hash`; know how to assign values to existing `Hash` keys; know how to add new `Hash` key; know how to iterate over a `Hash`.
 
 ## Prequisites
 
