@@ -2,7 +2,7 @@ In this exercise you'll be writing code to keep track of international dialling 
 
 The dictionary uses an integer for its keys (the dialing code) and a string (country name) for its values.
 
-You have 9 tasks which involve dictionaries.
+You have 11 tasks which involve dictionaries.
 
 ### 1. Create a New Dictionary
 
@@ -41,7 +41,7 @@ Dictionaries.AddCountryToExistingDictionary(Dictionaries.GetExistingDictionary,
 
 ### 5. Get the Country Name Matching a Country Code
 
-Get the country name for dialing code 55
+Check that a country with the country name for dialing code 55
 
 ```csharp
 Dictionaries.GetCountryNameFromDictionary(
@@ -49,7 +49,16 @@ Dictionaries.GetCountryNameFromDictionary(
 // "Brazil"
 ```
 
-### 6. Attempt to Get Country Name for a Non-existent Country Code
+### 6. Check that a Country Exists in the Dictionary
+
+Check that a record for Brazil exists in the dictionary created in task 2
+
+```csharp
+Dictionaries.CheckCodeExists(Dictionaries.GetExistingDictionary(), 55);
+// true
+```
+
+### 7. Attempt to Get Country Name for a Non-existent Country Code
 
 Request the country name for a code that is not in the existing dictionary, e.g. 999.  An empty string should be returned.
 
@@ -59,7 +68,7 @@ Dictionaries.GetCountryNameFromDictionary(
 // string.Empty
 ```
 
-### 7. Update a Country Name
+### 8. Update a Country Name
 
 Change the name of "United States of America" to "Les États-Unis"
 
@@ -69,7 +78,7 @@ Dictionaries.UpdateDictionary(
 // 1 => "Les États-Unis", 55 => "Brazil", 91 => "India"
 ```
 
-### 8. Attempt to Update Name of Country that is not in the Dictionary
+### 9. Attempt to Update Name of Country that is not in the Dictionary
 
 Try to change the name of a country with a code that is not in the dictionary e.g. 999.  This should result in no change to the dictionary.
 
@@ -79,7 +88,7 @@ Dictionaries.UpdateDictionary(
 // 1 => "United States of America", 55 => "Brazil", 91 => "India"
 ```
 
-### 9. Remove a Country from the Dictionary
+### 10. Remove a Country from the Dictionary
 
 Remove India from the dictionary
 
@@ -87,4 +96,14 @@ Remove India from the dictionary
 Dictionaries.RemoveCountryFromDictionary(
   Dictionaries.GetExistingDictionary(), 91);
 // 1 => "United States of America", 55 => "Brazil"
+```
+
+### 11. Find the Country with the Longest Name
+
+Remove India from the dictionary
+
+```csharp
+Dictionaries.FindLongestCountryName(
+  Dictionaries.GetExistingDictionary(), 55);
+// "United States of America"
 ```

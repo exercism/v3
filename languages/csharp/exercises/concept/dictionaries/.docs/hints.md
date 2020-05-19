@@ -24,20 +24,31 @@ See [this article][docs.microsoft.com_dictionary_item].
 
 You need to [detect][docs.microsoft.com_dictionary_contains_key] whether the country is present in the dictionary.
 
-### 7. Update a Country Name
+### 7. Attempt to Get Country Name for a Non-existent Country Code
+
+You can combine what you've learnt in Tasks 5 and 6 to solve this one.
+
+### 8. Update a Country Name
 
 Again [this article][docs.microsoft.com_dictionary_item] applies.
 
-### 8. Attempt to Update Name of Country that is not in the Dictionary
+### 9. Attempt to Update Name of Country that is not in the Dictionary
 
-This is very similar to task 6.
+This is very similar to task 7.
 
-### 9. Remove a Country from the Dictionary
+### 10. Remove a Country from the Dictionary
 
 See [this article][docs.microsoft.com_dictionary_remove].
+
+### 11. Find the Country with the Longest Name
+
+See the [values collection][docs.microsoft.com_dictionary_values], [string length][docs.microsoft.com_string_length] and [foreach][docs.microsoft.com_foreach].
 
 [docs.microsoft.com_dictionary_static_initialization]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer
 [docs.microsoft.com_dictionary_add]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.add?view=netcore-3.1
 [docs.microsoft.com_dictionary_item]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.item?view=netcore-3.1
 [docs.microsoft.com_dictionary_contains_key]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.containskey?view=netcore-3.1
 [docs.microsoft.com_dictionary_remove]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.remove?view=netcore-3.1
+[docs.microsoft.com_dictionary_values]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.values?view=netcore-3.1
+[docs.microsoft.com_foreach]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/foreach-in
+[docs.microsoft.com_string_length]: https://docs.microsoft.com/en-gb/dotnet/api/system.string.length?view=netcore-3.1#System_String_Length

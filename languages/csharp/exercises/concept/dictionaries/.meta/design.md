@@ -34,7 +34,10 @@ This Concept Exercise's prerequisites Concepts are:
 
 - `foreach-loops`: know how to use a `foreach-loop` to iterate over a collection.
 - `generic-types`: know how generic types work.
-- statics
+- statics: familiarity with static methods
+- strings: string length
+- numbers: basic integers
+
 
 Any data types used in this exercise (e.g. `strings`) should also be added as prerequisites.
 
