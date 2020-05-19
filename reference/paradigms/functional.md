@@ -6,14 +6,6 @@ A pure function is a function which doesn't mutate state, assign variables or pr
 
 Proponents of functional programming state that the implementation of this paradigm often leads to more readable, modular and correct code, as it allows for easier testing and debugging by restricting side effects and dependencies.<sup>4</sup>
 
----
-
-[1] Functional programming, Wikipedia. (2020). https://en.wikipedia.org/w/index.php?title=Functional_programming&oldid=956554079 (accessed May 16, 2020).</br>
-[2] What is functional programming | Easy way. YouTube. (2020). https://www.youtube.com/watch?v=dAPL7MQGjyM (accessed May 16, 2020).</br>
-[3] Object Oriented vs Functional Programming with TypeScript. YouTube. (2018). https://www.youtube.com/watch?v=fsVL_xrYO0w (accessed May 16, 2020).</br>
-[4] What is Functional Programming, YouTube. (2020). https://www.youtube.com/watch?v=KHojnWHemO0 (accessed May 16, 2020).</br>
-
-
 These are functional programming concepts that are found in the majority of functional languages.
 For each, this document will list a canonical reference that explains the concept in general terms.
 The tracks should link to these references the first time the topic is referenced.
@@ -39,3 +31,10 @@ This document aims to cover all the core topics that a programmer with any funct
 - [Recursion](../concepts/recursion.md)
 - [Repl](../concepts/repl.md)
 - [Type inference](../concepts/type_inference.md)
+
+---
+
+[1] Functional programming, Wikipedia. (2020). https://en.wikipedia.org/w/index.php?title=Functional_programming&oldid=956554079 (accessed May 16, 2020).</br>
+[2] What is functional programming | Easy way. YouTube. (2020). https://www.youtube.com/watch?v=dAPL7MQGjyM (accessed May 16, 2020).</br>
+[3] Object Oriented vs Functional Programming with TypeScript. YouTube. (2018). https://www.youtube.com/watch?v=fsVL_xrYO0w (accessed May 16, 2020).</br>
+[4] What is Functional Programming, YouTube. (2020). https://www.youtube.com/watch?v=KHojnWHemO0 (accessed May 16, 2020).</br>
