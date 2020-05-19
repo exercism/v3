@@ -27,11 +27,12 @@ The goal of this exercise is to teach the student the basics of working with nam
 
 ## Resources to refer to 
 ### Hints
-- [https://doc.rust-lang.org/book/ch05-00-structs.html](https://doc.rust-lang.org/book/ch05-00-structs.html)
-- [https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html](https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html)
+- [https://learning-rust.github.io/docs/b2.structs.html#C-like-structs](https://learning-rust.github.io/docs/b2.structs.html#C-like-structs)
+- [https://doc.rust-lang.org/book/ch05-01-defining-structs.html](https://doc.rust-lang.org/book/ch05-01-defining-structs.html)
+- [https://doc.rust-lang.org/book/ch05-03-method-syntax.html](https://doc.rust-lang.org/book/ch05-03-method-syntax.html)
 
 ### After
-- [https://doc.rust-lang.org/book/ch05-00-structs.html](https://doc.rust-lang.org/book/ch05-00-structs.html)
+- [https://learning-rust.github.io/docs/b2.structs.html#C-like-structs](https://learning-rust.github.io/docs/b2.structs.html#Tuple-structs)
 - [https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html](https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html)
 
 ## Representer
