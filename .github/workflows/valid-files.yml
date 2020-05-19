@@ -48,7 +48,7 @@ jobs:
               echo "$FILE contains illegal characters."
               echo "Filenames in this repo may only include the characters [a-zA-Z0-9._-] for security reasons."
               echo "See https://github.com/exercism/v3/issues/1465#issuecomment-629873323 for more information."
-            elif [[ "$FILE" =~ ^(AUX|NUL|PRN|CON|LPT[0-9]|COM[0-9]) ]]; then
+            elif [[ "$FILE" =~ ^(AUX|NUL|PRN|CON|LPT[0-9]|COM[0-9])$ ]]; then
               echo "$FILE is not a valid filename on Windows."
               echo "See https://github.com/exercism/v3/issues/1369 for more information."
             fi
