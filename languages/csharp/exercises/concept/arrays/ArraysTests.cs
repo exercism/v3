@@ -24,7 +24,7 @@ public class BirdCountTests
         Assert.Equal(10, birdCount.Today());
     }
 
-    [Fact]
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void HasDayWithoutBirdsWithDayWithoutBirds()
     {
         var counts = new int[] { 5, 5, 4, 0, 7, 6, 7 };
@@ -32,7 +32,7 @@ public class BirdCountTests
         Assert.True(birdCount.HasDayWithoutBirds());
     }
 
-    [Fact]
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void HasDayWithoutBirdsWithNoDayWithoutBirds()
     {
         var counts = new int[] { 4, 5, 9, 10, 9, 4, 3 };
@@ -40,7 +40,7 @@ public class BirdCountTests
         Assert.False(birdCount.HasDayWithoutBirds());
     }
 
-    [Fact]
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void IncrementTodaysCountWithNoPreviousVisits()
     {
         var counts = new int[] { 0, 0, 0, 4, 2, 3, 0 };
@@ -49,7 +49,7 @@ public class BirdCountTests
         Assert.Equal(1, birdCount.Today());
     }
 
-    [Fact]
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void IncrementTodaysCountWithMultiplePreviousVisits()
     {
         var counts = new int[] { 8, 8, 9, 2, 1, 6, 4 };
