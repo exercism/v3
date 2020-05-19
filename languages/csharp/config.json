@@ -76,6 +76,12 @@
         ]
       },
       {
+        "slug": "nullability",
+        "uuid": "370e7e54-6a96-11ea-bc55-0242ac130003",
+        "concepts": ["nullability"],
+        "prerequisites": ["strings", "conditionals", "memory-allocation"]
+      },
+      {
         "slug": "numbers",
         "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
         "concepts": ["numbers", "conditionals"],
@@ -92,12 +98,6 @@
           "enums",
           "exceptions"
         ]
-      },
-      {
-        "slug": "nullability",
-        "uuid": "370e7e54-6a96-11ea-bc55-0242ac130003",
-        "concepts": ["nullability"],
-        "prerequisites": ["strings", "conditionals", "memory-allocation"]
       },
       {
         "slug": "strings",
