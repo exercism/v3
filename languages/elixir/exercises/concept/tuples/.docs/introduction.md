@@ -43,28 +43,25 @@ In the last example if we don't need a variable in a pattern match, we can disca
 
 ## Pattern matching in named functions
 
-Pattern matching is also a useful tool when creating multiple function clauses. Pattern matching can be used on the functions' parameters which then determines which function clause to invoke.
+Pattern matching is also a useful tool when creating multiple function clauses. Pattern matching can be used on the functions' parameters which then determines which function clause to invoke -- starting from the top of the file down until the first match. Variables may be bound to patterns.
 
 ```elixir
 defmodule Example do
-  def named_function(:a) do
-    1
+  def named_function(:a = variable_a) do
+    {variable_a, 1}
   end
 
-  def named_function(:b) do
-    2
+  def named_function(:b = variable_b) do
+    {variable_b, 2}
   end
 end
 
 Example.named_function(:a)
-# => 1
-# The first function clause matches, so it is invoked
+# => {:a, 1}
 
 Example.named_function(:b)
-# => 2
-# The first clause does not match, but the second does, so it is invoked
+# => {:b, 2}
 
 Example.named_function(:c)
 # => ** (FunctionClauseError) no function clause matching in Example.named_function/1
-# None of the function clauses match, so an error is raised
 ```
