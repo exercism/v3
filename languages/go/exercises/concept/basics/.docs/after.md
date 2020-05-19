@@ -6,7 +6,7 @@ In Go an application is organized in packages. A package is a collection of sour
 package greeting
 ```
 
-Standard library packages are imported using their name. Other packages are importet using the url of the package's location. A package can be given an alias when importing. This can be used to avoid package name conflicts:
+Standard library packages are imported using their name. Other packages are imported using the url of the package's location. A package can be given an alias when importing. This can be used to avoid package name conflicts:
 
 ```go
 package greeting
@@ -18,7 +18,7 @@ import (
 )
 ```
 
-An importet package is then addressed with the package name or alias:
+An imported package is then addressed with the package name or alias:
 
 ```go
 // using the internal errors package
@@ -28,7 +28,7 @@ errors.New("Connection not established")
 errs.New("Connection not established")
 ```
 
-## Integers
+## Variables
 
 Go is a statically-typed language, which means that everything has a type at compile-time. Assigning a value to a name is referred to as defining a variable. A variable can be defined either by explicitly specifying its type, or by assigning a value to have the Go compiler infer its type based on the assigned value.
 
@@ -46,6 +46,8 @@ count = 2  // Update to new value
 // Compiler error when assigning different type
 // count = false
 ```
+
+### Integers
 
 Integer values are defined as one or more (consecutive) digits and support the [default mathematical operators][operators].
 
