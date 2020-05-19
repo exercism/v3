@@ -8,7 +8,6 @@ const WEIGHT: f32 = 131.6;
 fn test_get_name() {
     let new_user = User::new(NAME.to_string(), AGE, WEIGHT);
     assert_eq!(new_user.get_name(), NAME);
-    
 }
 
 #[test]

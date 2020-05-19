@@ -1,8 +1,8 @@
 #[derive(Clone, Debug)]
 pub struct User {
-   name: String,
-   age: u32,
-   weight: f32, 
+    name: String,
+    age: u32,
+    weight: f32,
 }
 
 impl User {
