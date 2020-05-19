@@ -11,7 +11,7 @@ defmodule KitchenCalculator do
   end
 
   def to_millilitre({:fluid_ounce, floz}) do
-    {:millilitre, floz * 29.57}
+    {:millilitre, floz * 30}
   end
 
   def to_millilitre({:teaspoon, teaspoons}) do
@@ -33,7 +33,7 @@ defmodule KitchenCalculator do
   end
 
   def from_millilitre({:millilitre, mls}, :fluid_ounce) do
-    {:fluid_ounce, mls / 29.57}
+    {:fluid_ounce, mls / 30}
   end
 
   def from_millilitre({:millilitre, mls}, :teaspoon) do
