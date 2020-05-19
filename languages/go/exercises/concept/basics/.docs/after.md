@@ -54,6 +54,7 @@ Integer values are defined as one or more (consecutive) digits and support the [
 ## Functions
 
 Functions in Go are considered [first class citizens][first-class-functions] making them very powerful. They can be used as:
+
 - [public and private][public-vs-private] functions of a package
 - attached to custom types also called a [method][methods] ([public and private][public-vs-private])
 - assigned to variables
