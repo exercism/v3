@@ -19,7 +19,7 @@
 
 ### 4. Check if there was a day with no visiting birds
 
-- The `Array` class has a [built-in method][array-indexof] to check at which index an element can be found. A special value is returned if a matching element could not be found.
+- The `Array` class has a [built-in method][array-indexof] that returns the first index where the element is found, or -1 if no matching element was found.
 
 ### 5. Calculate the total number of visiting birds
 
