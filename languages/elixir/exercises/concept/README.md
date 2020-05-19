@@ -12,6 +12,7 @@ These are the concept exercises that have currently been implemented, as well as
 | `booleans`     | `booleans`                               | `basics`                                                      |
 | `conditionals` | `conditionals`, `atoms`                  | `booleans`                                                    |
 | `lists`        | `lists`, `string-literals`               | `booleans`                                                    |
+| `strings`      | `strings`                                | `lists`, `basic-pattern-matching`                             |
 | `maps`         | `maps`, `module-attributes-as-constants` | `lists`, `tuples`, `anonymous-functions`, `default-arguments` |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse.
