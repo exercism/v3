@@ -46,11 +46,11 @@ Implement the `createTeam` function that takes the team name, coach and record a
 
 ```fsharp
 let coach = createCoach "Larry Bird" true
-let record = createStats 58 24
+let record = createRecord 58 24
 createTeam "Indiana Pacers" coach record
 // => { Name = "Indiana Pacers"
 //      Coach = { Name = "Larry Bird"; FormerPlayer = true }
-//      Stats = { Wins = 58; Losses = 24 } }
+//      Record = { Wins = 58; Losses = 24 } }
 ```
 
 ### 5. Replace the coach
@@ -59,7 +59,7 @@ NBA owners being impatient, you found that bad team results would often lead to 
 
 ```fsharp
 let coach = createCoach "Larry Bird" true
-let record = createStats 58 24
+let record = createRecord 58 24
 let team = createTeam "Indiana Pacers" coach record
 
 let newCoach = createCoach "Isiah Thomas" true
