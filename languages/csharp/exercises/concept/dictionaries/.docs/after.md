@@ -1,19 +1,21 @@
-Dictionaries like their equivalents in other languages such as maps or associative arrays store key value pairs such that a value can be retrieved or changed directly by passing the key to the indexer property.
+Dictionaries, like their equivalents in other languages such as maps or associative arrays, store key value pairs such that a value can be retrieved or changed directly by passing the key to the dictionary's indexer property.
 
 In addition key value pairs can be added and removed from the dictionary.  Keys, Values and Key-Value pairs can be enumerated.
 
-Values can be of any legal C# type including structs and objects.  delegates, lambdas, events
+Values can be objects of any legal C# type including primitives, structs and objects.
 
-Keys can be of any legal C# type provided that they follow certain rules about hash codes.
+The Dictionary object allows keys to be objects of any type.  However to ensure correct behavior at runtime keys must have an appropriate hashcode as returned by [GetHashCode][gethashcode].
+
+
 
 A dictionary instance cannot be safely accessed by more than one thread (not thread-safe).  [ConcurrentDictionary][concurrent-dictionary] is available for multi-threading situations.
 
 See also [HashSet][hashset]
 
-Whilst there is no non-generic version of Dictionary a number of classes remain in the library to support a non-generic map.  You need to be aware of the non-generic IDictionary and Hashtable mainly so that you know them when you see them.  It is unlikely you wyould have to use them other than in maintaining an old code base.
+Whilst there is no non-generic version of Dictionary a number of classes remain in the library to support a non-generic map.  You need to be aware of the non-generic IDictionary and Hashtable mainly so that you know them when you see them.  It is unlikely you would have to use them other than in maintaining an old code base.
 
 You will often want to expose and access the dictionary by its `IDictionary<TKey, TValue>` interface.
 
 [concurrent-dictionary]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.concurrent.concurrentdictionary-2?view=netcore-3.1
 [hashset]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.hashset-1?view=netcore-3.1
- 
+[gethashcode]: https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode?view=netcore-3.1
