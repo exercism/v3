@@ -5,48 +5,39 @@ const AGE: u32 = 89;
 const WEIGHT: f32 = 131.6;
 
 #[test]
-fn test_get_name() {
-    let new_user = User::new(NAME.to_string(), AGE, WEIGHT);
-    assert_eq!(new_user.get_name(), NAME);
+fn test_name() {
+    let user = User::new(NAME.into(), AGE, WEIGHT);
+    assert_eq!(user.name(), NAME);
 }
 
 #[test]
 #[ignore]
-fn test_get_age() {
-    let new_user = User::new(NAME.to_string(), AGE, WEIGHT);
-    assert_eq!(new_user.get_age(), AGE);
+fn test_age() {
+    let user = User::new(NAME.into(), AGE, WEIGHT);
+    assert_eq!(user.age(), AGE);
 }
 
 #[test]
 #[ignore]
-fn test_get_weight() {
-    let new_user = User::new(NAME.to_string(), AGE, WEIGHT);
-    assert_eq!(new_user.get_weight(), WEIGHT);
+fn test_weight() {
+    let user = User::new(NAME.into(), AGE, WEIGHT);
+    assert_eq!(user.weight(), WEIGHT);
 }
 
 #[test]
 #[ignore]
-fn test_update_name() {
-    let new_name = "Scrooge";
-    let mut new_user = User::new(NAME.to_string(), AGE, WEIGHT);
-    new_user.update_name(String::from(new_name));
-    assert_eq!(new_user.get_name(), new_name);
-}
-
-#[test]
-#[ignore]
-fn test_update_age() {
+fn test_set_age() {
     let new_age: u32 = 90;
-    let mut new_user = User::new(NAME.to_string(), AGE, WEIGHT);
-    new_user.update_age(new_age);
-    assert_eq!(new_user.get_age(), new_age);
+    let mut user = User::new(NAME.into(), AGE, WEIGHT);
+    user.set_age(new_age);
+    assert_eq!(user.age(), new_age);
 }
 
 #[test]
 #[ignore]
-fn test_update_weight() {
+fn test_set_weight() {
     let new_weight: f32 = 129.4;
-    let mut new_user = User::new(NAME.to_string(), AGE, WEIGHT);
-    new_user.update_weight(new_weight);
-    assert_eq!(new_user.get_weight(), new_weight);
+    let mut user = User::new(NAME.into(), AGE, WEIGHT);
+    user.set_weight(new_weight);
+    assert_eq!(user.weight(), new_weight);
 }
