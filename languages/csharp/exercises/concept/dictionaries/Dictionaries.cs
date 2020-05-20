@@ -30,7 +30,7 @@ public class Dictionaries
     {
         throw new NotImplementedException($"Please implement the (static) {MethodBase.GetCurrentMethod().Name} method");
     }
-    public static Dictionary<int, string>  UpdateDictionary(
+    public static Dictionary<int, string> UpdateDictionary(
         Dictionary<int, string> existingDictionary, int countryCode, string countryName)
     {
         throw new NotImplementedException($"Please implement the (static) {MethodBase.GetCurrentMethod().Name} method");
@@ -38,6 +38,15 @@ public class Dictionaries
 
     public static Dictionary<int, string> RemoveCountryFromDictionary(
         Dictionary<int, string> existingDictionary, int countryCode)
+    {
+        throw new NotImplementedException($"Please implement the (static) {MethodBase.GetCurrentMethod().Name} method");
+    }
+    public static bool CheckCodeExists(Dictionary<int, string> existingDictionary, int countryCode)
+    {
+        throw new NotImplementedException($"Please implement the (static) {MethodBase.GetCurrentMethod().Name} method");
+    }
+
+    public static string FindLongestCountryName(Dictionary<int, string> existingDictionary)
     {
         throw new NotImplementedException($"Please implement the (static) {MethodBase.GetCurrentMethod().Name} method");
     }

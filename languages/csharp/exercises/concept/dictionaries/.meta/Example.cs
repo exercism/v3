@@ -42,7 +42,7 @@ public static class Dictionaries
             return string.Empty;
         }
     }
-    public static Dictionary<int, string>  UpdateDictionary(
+    public static Dictionary<int, string> UpdateDictionary(
         Dictionary<int, string> existingDictionary, int countryCode, string countryName)
     {
         if (existingDictionary.ContainsKey(countryCode))
@@ -58,5 +58,24 @@ public static class Dictionaries
     {
         existingDictionary.Remove(countryCode);
         return existingDictionary;
+    }
+
+    public static bool CheckCodeExists(Dictionary<int, string> existingDictionary, int countryCode)
+    {
+        return existingDictionary.ContainsKey(countryCode);
+    }
+
+    public static string FindLongestCountryName(Dictionary<int, string> existingDictionary)
+    {
+        string longestCountryName = string.Empty;
+        foreach (string countryName in existingDictionary.Values)
+        {
+            if (countryName.Length > longestCountryName.Length)
+            {
+                longestCountryName = countryName;
+            }
+        }
+
+        return longestCountryName;
     }
 }
