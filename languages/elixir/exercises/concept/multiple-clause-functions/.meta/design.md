@@ -16,7 +16,7 @@ A student upon completion will:
 - Know how to write basic multiple-clause functions.
 - Know how to use guards to protect execution of a function.
 - Know how to use guards to perform basic control flow.
-- Know how to specify a default arguemnt
+- Know how to specify a default argument
 - Know that by specifying a default argument, it defines multiple arities for the function name
 
 ## Out of scope
@@ -45,8 +45,8 @@ This exercise is a fork from [F#'s Number Guessing Game](https://github.com/exer
 - <https://hexdocs.pm/elixir/master/Kernel.html#guards>
 - <https://elixir-lang.org/getting-started/modules-and-functions.html#default-arguments>
 - [multiple clauses in anon functions](https://til.hashrocket.com/posts/36c6d2684e-defining-multiple-clauses-in-an-anonymous-function)
-- https://elixirschool.com/en/lessons/basics/functions/#guards
-- https://elixirschool.com/en/lessons/basics/functions/#default-arguments
+- <https://elixirschool.com/en/lessons/basics/functions/#guards>
+- <https://elixirschool.com/en/lessons/basics/functions/#default-arguments>
 
 ## Representer
 
