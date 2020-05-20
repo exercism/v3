@@ -42,8 +42,12 @@
       {
         "slug": "tuples",
         "uuid": "f729493d-2249-4c10-9c77-da907d10aae1",
-        "concepts": ["tuples", "pattern-matching", "floating-point-numbers"],
-        "prerequisites": ["multiple-clause-functions"]
+        "concepts": ["tuples", "pattern-matching"],
+        "prerequisites": [
+          "atoms",
+          "floating-point-numbers",
+          "multiple-clause-functions"
+        ]
       },
       {
         "slug": "strings",
