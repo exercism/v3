@@ -10,13 +10,11 @@ For various cases an `else if` and `else` statements can be used like this:
 
 ```go
 if condition {
-    // some code
+    // conditional code
 } else if other_condition {
-    // some code
-} else if another_condition {
-    // some code
+    // conditional code
 } else {
-    // some code
+    // default code
 }
 ```
 
@@ -28,29 +26,44 @@ Another way of checking for different scenarios is by chaining logical operators
 
 ```go
 if conditionA ||conditionB {
-    // some code
+    // conditional code
 } else if conditionC && conditionD {
-    // some code
+    // conditional code
 } else {
-    // some code
+    // default code
 }
 ```
 
-## 3. More than 3 cases (switch)
+## 3. Three or more cases (switch)
 
-When there are 3 or more cases it is often better to use a `switch` statement, which allows to test for multiple conditions. It also has a `default` for managing unmanaged cases. It is used like this:
+When there are 3 or more cases it is recommended to use a `switch` statement, which allows testing for multiple conditions. It also has a `default` for managing unmanaged cases.
 
 ```go
 switch {
 case aCase || bCase:
-    // some code
+    // conditional code
 case otherCase:
-    // some code
+    // conditional code
 case anotherCase:
-    // some code
+    // conditional code
 default:
-    // some code
+    // default code
 }
 ```
 
 Note that within each case different logical operators can be chained together to expand the evaluation.
+
+## 4. Switch on variable content
+
+A switch can also be used on a single variable's content:
+
+```go
+switch someVar {
+case "val1":
+    // conditional code
+case "val2", "val3", "foo":
+    // conditional code
+default:
+    // default code
+}
+```

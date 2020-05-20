@@ -9,6 +9,3 @@ if condition {
 ```
 
 In scenarios involving more than one case many `if` statements can be chained together using the `else if` and `else` statements. Go also provides a `switch` statement for more advanced scenarios.
-
-To learn more about this topic it is recommended to check these sources:
-[Go by Example: If/Else](https://gobyexample.com/if-else) and [Go by Example: Switch](https://gobyexample.com/switch).
