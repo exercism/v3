@@ -6,7 +6,8 @@ Conditionals are used to check for certain conditions and/or criteria. The most 
 
 ### 1. Multiple cases (else if)
 
-For various cases an `else if` and `else` statements can be used like this: 
+For various cases an `else if` and `else` statements can be used like this:
+
 ```go
 if condition {
     // some code
@@ -18,7 +19,8 @@ if condition {
     // some code
 }
 ```
-The `else` statement is any other case not covered by previous conditions. It should be noted that since Go allows early returns it is common to avoid the `else` statement after a return. 
+
+The `else` statement is any other case not covered by previous conditions. It should be noted that since Go allows early returns it is common to avoid the `else` statement after a return.
 
 ### 2. Multiple cases (logical operators)
 
@@ -50,4 +52,5 @@ default:
     // some code
 }
 ```
+
 Note that within each case different logical operators can be chained together to expand the evaluation.
