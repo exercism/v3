@@ -10,7 +10,7 @@ if condition {
 
 In scenarios involving more than one case many `if` statements can be chained together using the `else if` and `else` statements. However, it is a convention to avoid `else` statements as Go promotes early returns.
 
-Go also provides a `switch` statement for more advanced scenarios. It can be used to switch on a variable's content or as a replacement for `if ... else if` statements. There is a third application for `switch` statements which will be introduced later: the `type switch`. A switch statement can have a `default` case which is selected if no other case applies.
+Go also provides a `switch` statement for more advanced scenarios. It can be used to switch on a variable's content or as a replacement for `if ... else if` statements. There is a third application for `switch` statements which will be introduced later: the `type switch`. A switch statement can have a `default` case which is executed if no other case applies.
 
 If there are two or more `else if` statements in a single `if`, it should be replaced by a `switch` statement. A `switch` with a single case should be replaced by an `if` statement.
 
