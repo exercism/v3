@@ -1,0 +1,14 @@
+---
+name: "[ALL] Offer to help"
+about: Can't find anything to do? Offer to help.
+title: "[<LANG>] Offer to help"
+labels: status/help-wanted
+assignees: '@erikschierboom'
+
+---
+
+Hello! Please read https://github.com/exercism/v3/blob/master/docs/getting-started.md before continuing.
+
+If you can't find any open issues to work on, you can use this template to open an issue saying you'd like to help but you don't know what to do.
+
+Please mention which languages you know and we'll connect you with the relevant maintainers. Thanks :)
