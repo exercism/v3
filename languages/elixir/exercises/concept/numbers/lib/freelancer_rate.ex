@@ -1,0 +1,3 @@
+defmodule FreelancerRate do
+
+end
