@@ -38,7 +38,6 @@ This Concept Exercise's prerequisites Concepts are:
 - strings: string length
 - numbers: basic integers
 
-
 Any data types used in this exercise (e.g. `strings`) should also be added as prerequisites.
 
 ## Resources to refer to

@@ -1,18 +1,16 @@
 Dictionaries, like their equivalents in other languages such as maps or associative arrays, store key value pairs such that a value can be retrieved or changed directly by passing the key to the dictionary's indexer property.
 
-In addition key value pairs can be added and removed from the dictionary.  Keys, Values and Key-Value pairs can be enumerated.
+In addition key value pairs can be added and removed from the dictionary. Keys, Values and Key-Value pairs can be enumerated.
 
 Values can be objects of any legal C# type including primitives, structs and objects.
 
-The Dictionary object allows keys to be objects of any type.  However to ensure correct behavior at runtime keys must have an appropriate hashcode as returned by [GetHashCode][gethashcode].
+The Dictionary object allows keys to be objects of any type. However to ensure correct behavior at runtime keys must have an appropriate hashcode as returned by [GetHashCode][gethashcode].
 
-
-
-A dictionary instance cannot be safely accessed by more than one thread (not thread-safe).  [ConcurrentDictionary][concurrent-dictionary] is available for multi-threading situations.
+A dictionary instance cannot be safely accessed by more than one thread (not thread-safe). [ConcurrentDictionary][concurrent-dictionary] is available for multi-threading situations.
 
 See also [HashSet][hashset]
 
-Whilst there is no non-generic version of Dictionary a number of classes remain in the library to support a non-generic map.  You need to be aware of the non-generic IDictionary and Hashtable mainly so that you know them when you see them.  It is unlikely you would have to use them other than in maintaining an old code base.
+Whilst there is no non-generic version of Dictionary a number of classes remain in the library to support a non-generic map. You need to be aware of the non-generic IDictionary and Hashtable mainly so that you know them when you see them. It is unlikely you would have to use them other than in maintaining an old code base.
 
 You will often want to expose and access the dictionary by its `IDictionary<TKey, TValue>` interface.
 

@@ -22,7 +22,7 @@ Dictionaries.GetExistingDictionary();
 
 ### 3. Add a Country to an Empty Dictionary
 
-Add "United Kingdom" with a dialing code of 44 
+Add "United Kingdom" with a dialing code of 44
 
 ```csharp
 Dictionaries.AddCountrryToEmptyDictionary(44, "United Kingdom");
@@ -60,7 +60,7 @@ Dictionaries.CheckCodeExists(Dictionaries.GetExistingDictionary(), 55);
 
 ### 7. Attempt to Get Country Name for a Non-existent Country Code
 
-Request the country name for a code that is not in the existing dictionary, e.g. 999.  An empty string should be returned.
+Request the country name for a code that is not in the existing dictionary, e.g. 999. An empty string should be returned.
 
 ```csharp
 Dictionaries.GetCountryNameFromDictionary(
@@ -80,7 +80,7 @@ Dictionaries.UpdateDictionary(
 
 ### 9. Attempt to Update Name of Country that is not in the Dictionary
 
-Try to change the name of a country with a code that is not in the dictionary e.g. 999.  This should result in no change to the dictionary.
+Try to change the name of a country with a code that is not in the dictionary e.g. 999. This should result in no change to the dictionary.
 
 ```csharp
 Dictionaries.UpdateDictionary(

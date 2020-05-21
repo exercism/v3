@@ -1,6 +1,6 @@
 ### 1. Create a New Dictionary
 
-A dictionary is like any other class.  You simply 'new' it to create an empty instance.
+A dictionary is like any other class. You simply 'new' it to create an empty instance.
 
 ### 2. Create a Pre-populated Dictionary
 
@@ -10,11 +10,11 @@ See [this article][docs.microsoft.com_parsing-date].
 
 ### 3. Add a Country to an Empty Dictionary
 
-See [Add][docs.microsoft.com_dictionary_add].  Pass in the dictionary returned by task 1 as a parameter.
+See [Add][docs.microsoft.com_dictionary_add]. Pass in the dictionary returned by task 1 as a parameter.
 
 ### 4. Add a Country to an Existing Dictionary
 
-There is no substantial difference between adding an item to an empty or initialized dictionary.  Pass in the dictionary returned by task 2 as a parameter.
+There is no substantial difference between adding an item to an empty or initialized dictionary. Pass in the dictionary returned by task 2 as a parameter.
 
 ### 5. Get the Country Name Matching a Country Code
 
