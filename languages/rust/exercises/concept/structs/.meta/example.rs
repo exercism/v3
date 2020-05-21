@@ -1,4 +1,3 @@
-#[derive(Clone, Debug)]
 pub struct User {
    name: String,
    age: u32,
@@ -15,7 +14,7 @@ impl User {
     }
 
     pub fn name(&self) -> &str {
-        self.name.into()
+        self.name.as_str()
     }
 
     pub fn age(&self) -> u32 {

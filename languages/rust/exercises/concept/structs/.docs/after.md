@@ -1,9 +1,12 @@
-Notice the usage of `&self` (an _immutable_ reference to our `User` instance) for the getter methods vs. the usage of `&mut self` (a _mutable_ reference to our `User` instance) for the setter methods. The getter methods don't need a mutable reference since their job is to fetch some data; they aren't looking to update or change any fields on the `User`. In contrast, the setter methods _are_ looking to change some data on the `User`, so they require mutable access to the `User` instance. 
+This concept exercise gave you some practice writing structs and methods in Rust. 
+
+One of the important takeaways from this exercise is being able to tell when we need an _immutable_ reference to our struct instance via `&self` vs. when we need a _mutable_ reference to our struct instance via `&mut self`. 
+
+Notice that the getter methods made use of `&self` since they are only concerned with reading data from our struct instance. The setter methods, in contrast, made use of `&mut self` since they are concerned with updating our struct instance.
 
 It should also be noted that the usage of getter and setter methods in this concept exercise was a bit artificial in order to expose a use-case for `&self` vs. `&mut self` methods. In real projects, the fields would simply be made public, such that we'd have a struct like:
 
 ```rust
-#[derive(Clone, Debug)]
 pub struct User {
     pub name: String,
     pub age: u32, 
