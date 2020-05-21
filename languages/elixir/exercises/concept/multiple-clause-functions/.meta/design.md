@@ -25,15 +25,12 @@ A student upon completion will:
 
 ## Concepts
 
-- `atoms`
 - `multiple-clause-functions`
 - `guards`
-- `default-parameters`
+- `default-arguments`
 
 ## Prerequisites
 
-- `basics`
-- `booleans`
 - `conditionals`
 
 ## Narrative
@@ -54,8 +51,4 @@ No modifications at this time
 
 ## Analyzer
 
-No analyzer features at this time.
-
-## Help
-
-If you have any questions while implementing the exercise, please post the questions as comments in this issue.
+- ensure multiple-clause functions, guards, default arguments are being used.
