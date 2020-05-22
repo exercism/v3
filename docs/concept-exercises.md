@@ -80,8 +80,8 @@ This file is split into two parts.
 
 Each task must conform to the following standard:
 
-- Start with a third-level heading starting with a number (e.g. `### 1. Do X`, `### 2. Do Y`).
-- The heading should describe _what_ to implement, not _how_ to implement it (e.g. `### 1. Check if an appointment has already passed`).
+- Start with a second-level heading starting with a number (e.g. `## 1. Do X`, `## 2. Do Y`).
+- The heading should describe _what_ to implement, not _how_ to implement it (e.g. `## 1. Check if an appointment has already passed`).
 - Describe which function/method the student needs to define/implement (e.g. `Implement method X(...) that takes an A and returns a Z`),
 - Provide an example usage of that function in code. These examples should be different to those given in the tests.
 
@@ -95,8 +95,8 @@ For more information, watch [this video][video-docs-instructions.md] and check [
 - Hints should be bullet-pointed underneath headings.
 - The hints should be enough to unblock almost any student.
 - The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
-- General hints about the exercise can appear under the `### General` heading.
-- Task-specific hints should appear underneath headings that match their task heading in the `instructions.md` (e.g. `### 2. Do Y`).
+- General hints about the exercise can appear under the `## General` heading.
+- Task-specific hints should appear underneath headings that match their task heading in the `instructions.md` (e.g. `## 2. Do Y`).
 
 Viewing hints will not be a "recommended" path and we will (softly) discourage using it unless the student can't progress without it. As such, it's worth considering that the student reading it will be a little confused/overwhelmed and maybe frustrated.
 

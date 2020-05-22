@@ -1,20 +1,20 @@
-### General
+## General
 
 - [This page][pattern-matching] has a nice introduction to pattern matching in F#.
 
-### 1. Reply to a correct guess
+## 1. Reply to a correct guess
 
 - You can use a [constant pattern][constant-pattern] to match on a specific number.
 
-### 2. Reply to a close guess
+## 2. Reply to a close guess
 
 - You can either use a [constant pattern][constant-pattern] or a [variable pattern][variable-patterns] and a [guard][guards].
 
-### 3. Reply to too low guesses
+## 3. Reply to too low guesses
 
 - You can use a combination of a [variable pattern][variable-patterns] and a [guard][guards].
 
-### 4. Reply to too high guesses
+## 4. Reply to too high guesses
 
 - You can use a combination of a [variable pattern][variable-patterns] and a [guard][guards].
 
