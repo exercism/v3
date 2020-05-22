@@ -12,7 +12,7 @@ See also [HashSet][hashset], [ConcurrentDictionary][concurrent-dictionary], [Sor
 
 Whilst there is no non-generic version of Dictionary a number of classes remain in the library to support a non-generic map. You need to be aware of the non-generic IDictionary and Hashtable mainly so that you know them when you see them. It is unlikely you would have to use them other than in maintaining an old code base.
 
-You will often want to expose and access the dictionary by its [idictionary][`idictionary<tkey, tvalue>`] interface.
+You will often want to expose and access the dictionary by its [`IDictionary<TKey, TValue>`][idictionary] interface.
 
 Note that because of the nature of [indexer properties][indexer-properties] primitive values can be modified in place, such as:
 
