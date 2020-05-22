@@ -97,6 +97,8 @@ For more information, watch [this video][video-docs-instructions.md] and check [
 - The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
 - General hints about the exercise can appear under the `## General` heading.
 - Task-specific hints should appear underneath headings that match their task heading in the `instructions.md` (e.g. `## 2. Do Y`).
+- Task headings should describe the _what_ of the task, not the _how_.
+- Task headings should use regular sentence casing (e.g. `## 2. Check if the record could be modified`).
 
 Viewing hints will not be a "recommended" path and we will (softly) discourage using it unless the student can't progress without it. As such, it's worth considering that the student reading it will be a little confused/overwhelmed and maybe frustrated.
 
