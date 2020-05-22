@@ -10,9 +10,7 @@ The freelancer is offering to apply a discount if the project manager chooses to
 
 Discounts are modeled as fractional numbers representing percentage, for example `25.0` (25%).
 
-## Tasks
-
-### 1. Calculate the daily rate given an hourly rate
+## 1. Calculate the daily rate given an hourly rate
 
 Implement a function to calculate the daily rate given an hourly rate:
 
@@ -23,7 +21,7 @@ FreelancerRate.daily_rate(60)
 
 The returned daily rate should be a float.
 
-### 2. Calculate the monthly rate, given an hourly rate and a discount
+## 2. Calculate the monthly rate, given an hourly rate and a discount
 
 Implement a function to calculate the monthly rate, and apply a discount:
 
@@ -34,7 +32,7 @@ FreelancerRate.monthly_rate(77, 10.5)
 
 The returned monthly rate should be rounded up to the nearest integer.
 
-### 3. Calculate the number of workdays given a budget, hourly rate and discount
+## 3. Calculate the number of workdays given a budget, hourly rate and discount
 
 Implement a function that takes a budget, a hourly rate, and a discount, and calculates how many days of work that covers.
 
