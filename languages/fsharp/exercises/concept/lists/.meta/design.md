@@ -18,7 +18,6 @@ The goal of this exercise is to teach the student the basics of the Concept of L
 
 - Iterating over lists.
 - Concatenating lists.
-- Pattern matching on lists.
 - Recursion.
 - Higher-order list functions.
 - Memory and performance characteristics.

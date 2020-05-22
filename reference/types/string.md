@@ -15,6 +15,23 @@ Tell a student what a string is in your language, how strings can be manipulated
 
 ## Exercises
 
+### High School Sweethearts
+
+This exercise customizes an ASCII heart with initials of given two full names. The reference implementation (Elixir) teaches:
+
+- String concatenation
+- String interpolation
+- Trimming
+- Changing casing (uppercase)
+- Extracting substrings (first letter)
+- Multiline strings
+
+#### Implementations
+
+| Track  | Exercise                         | Changes |
+| ------ | -------------------------------- | ------- |
+| Elixir | [strings][implementation-elixir] | None    |
+
 ### Log Lines
 
 This exercise extracts information from log lines. The reference implementation (C#) teaches:
@@ -53,8 +70,9 @@ This exercise is a conversation between you and the security guard. The referenc
 [type-char]: ./char.md
 [implementation-cpp]: ../../languages/cpp/exercises/concept/strings/.docs/introduction.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/strings/.docs/introduction.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/strings/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/strings/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/strings/.docs/introduction.md
 [implementation-python]: ../../languages/python/exercises/concept/strings/.docs/introduction.md
-[implementation-go]: ../../languages/go/exercises/concept/basic-strings/.docs/introduction.md
+[implementation-go]: ../../languages/go/exercises/concept/strings/.docs/introduction.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/strings/.docs/

@@ -23,11 +23,13 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 
 #### Implementations
 
-| Track | Exercise                      | Changes |
-| ----- | ----------------------------- | ------- |
-| Ruby  | [basics][implementation-ruby] | None    |
+| Track      | Exercise                            | Changes |
+| ---------- | ----------------------------------- | ------- |
+| JavaScript | [basics][implementation-javascript] | None    |
+| Ruby       | [basics][implementation-ruby]       | None    |
 
 [concept-assignment]: ./assignment.md
 [concept-mutation]: ./mutation.md
 [concept-variables]: ./variables.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/basics/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/basics/.docs/introduction.md

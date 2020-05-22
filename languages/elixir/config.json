@@ -26,6 +26,45 @@
         "uuid": "b26a2f11-d80a-42b9-881a-3575a83ad211",
         "concepts": ["conditionals", "atoms"],
         "prerequisites": ["booleans"]
+      },
+      {
+        "slug": "lists",
+        "uuid": "3c53b340-680e-45c1-8979-3d79b441a65e",
+        "concepts": ["lists", "string-literals"],
+        "prerequisites": ["booleans"]
+      },
+      {
+        "slug": "anonymous-functions",
+        "uuid": "1e3ceb20-715c-4157-9192-13284217affc",
+        "concepts": ["anonymous-functions", "closures", "bit-manipulation"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "tuples",
+        "uuid": "f729493d-2249-4c10-9c77-da907d10aae1",
+        "concepts": ["tuples", "pattern-matching"],
+        "prerequisites": [
+          "atoms",
+          "floating-point-numbers",
+          "multiple-clause-functions"
+        ]
+      },
+      {
+        "slug": "strings",
+        "uuid": "335df1cf-6aba-4ab6-b5c3-b4305ade09a4",
+        "concepts": ["strings"],
+        "prerequisites": ["lists", "pattern-matching"]
+      },
+      {
+        "slug": "maps",
+        "uuid": "e7f3ba2b-a380-45d3-a48d-7ef3dc318a31",
+        "concepts": ["module-attributes-as-constants", "maps"],
+        "prerequisites": [
+          "lists",
+          "tuples",
+          "anonymous-functions",
+          "default-arguments"
+        ]
       }
     ],
     "practice": []

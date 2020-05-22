@@ -23,12 +23,6 @@ format.language, dsls
 format.miscellaneous, dsls
 format.numbers, dsls
 format.tables, dsls
-loop.basic, dsls
-loop.collecting, dsls
-loop.miscellaneous, dsls
-loop.ranges, dsls
-loop.tests, dsls
-loop.traversal, dsls
 classes, clos
 generic-functions, clos
 methods, clos

@@ -38,7 +38,7 @@ convoluted.
 1. The guard will recite a poem, one line at the time;
    - You will have to respond with the appropriate letter.
 2. The guard will tell you all the letters you've responded with at once, _but
-   in reverse_:
+   there are sometimes spaces after each sentence_:
    - You need to format the letters as a capitalised word
    - and ask nicely, by appending `, please`
 
@@ -91,13 +91,13 @@ backDoorResponse('Stands so high')
 // => "h"
 ```
 
-### 4. Reverse a word
+### 4. Trim a sentence
 
-Implement a function that reverses a word:
+Improve the previous function so that it removes whitespace from the end of a sentence and returns the last character:
 
 ```javascript
-reverse('esroh')
-// => "horse"
+backDoorResponse('Stands so high   ')
+// => "h"
 ```
 
 ### 5. Be polite

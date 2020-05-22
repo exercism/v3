@@ -22,6 +22,24 @@
         "prerequisites": []
       },
       {
+        "slug": "booleans",
+        "uuid": "401fe55e-407e-4408-88ca-0a4b342ab95b",
+        "concepts": ["booleans"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "classes",
+        "uuid": "e01dc85b-0731-4701-9eea-c78fb69ce543",
+        "concepts": ["classes"],
+        "prerequisites": ["strings", "numbers", "conditionals"]
+      },
+      {
+        "slug": "constructors",
+        "uuid": "655b5c37-c2eb-4da2-ab0a-3845de898835",
+        "concepts": ["constructors"],
+        "prerequisites": ["classes", "numbers", "conditionals", "while-loops"]
+      },
+      {
         "slug": "dates",
         "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
         "concepts": ["datetimes"],
@@ -50,6 +68,40 @@
         "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
         "concepts": ["floating-point-numbers", "while-loops"],
         "prerequisites": ["numbers", "conditionals"]
+      },
+      {
+        "slug": "inheritance",
+        "uuid": "2eecc903-a3d9-47dd-ac62-1d88505f089c",
+        "concepts": ["inheritance"],
+        "prerequisites": [
+          "classes",
+          "constructors",
+          "strings",
+          "booleans",
+          "conditionals"
+        ]
+      },
+      {
+        "slug": "method-overloading",
+        "uuid": "3f728065-98d8-472a-a84c-290f05ab1e58",
+        "concepts": [
+          "method-overloading",
+          "named-arguments",
+          "optional-parameters"
+        ],
+        "prerequisites": [
+          "classes",
+          "constructors",
+          "enums",
+          "properties",
+          "strings"
+        ]
+      },
+      {
+        "slug": "nullability",
+        "uuid": "370e7e54-6a96-11ea-bc55-0242ac130003",
+        "concepts": ["nullability"],
+        "prerequisites": ["strings", "conditionals", "memory-allocation"]
       },
       {
         "slug": "numbers",

@@ -1,6 +1,5 @@
 module Numbers
 
-[<Literal>]
 let private ProductionRatePerHourForDefaultSpeed = 221
 
 let private successRate (speed: int): double =

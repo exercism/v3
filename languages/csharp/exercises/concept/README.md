@@ -6,17 +6,23 @@ The concept exercises are based on this [list of concepts][reference-shared].
 
 These are the concept exercises that have currently been implemented, as well as the concepts they teach and their prerequisite concepts:
 
-| exercise                                                            | concepts                                   | prerequisites                                                                     |
-| ------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------------------------------- |
-| [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`foreach-loops`               | `classes`<br/>`chars`<br/>`booleans`<br/>`conditionals`<br/>`for-loops`           |
-| [`basics`][concept-exercise-basics]                                 | `basics`                                   | -                                                                                 |
-| [`dates`][concept-exercise-datetimes]                               | `datetimes`                                | `numbers`<br/>`strings`<br/>`classes`                                             |
-| [`enums`][concept-exercise-enums]                                   | `enums`<br/>`pattern-matching-constants`   | `strings`<br/>`conditionals`                                                      |
-| [`flag-enums`][concept-exercise-flag-enums]                         | `flag-enums`<br/>`bit-manipulation`        | `enums`<br/>`attributes`</br>`integers`                                           |
-| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`while-loops` | `numbers`<br/>`conditionals`                                                      |
-| [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`               | `basics`                                                                          |
-| [`properties`][concept-exercise-properties]                         | `properties`                               | `numbers`<br/>`floating-point-numbers`<br/>`classes`<br/>`enums`<br/>`exceptions` |
-| [`strings`][concept-exercise-strings]                               | `strings`                                  | `basics`                                                                          |
+| exercise                                                            | concepts                                                             | prerequisites                                                                     |
+| ------------------------------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`foreach-loops`                                         | `classes`<br/>`chars`<br/>`booleans`<br/>`conditionals`<br/>`for-loops`           |
+| [`basics`][concept-exercise-basics]                                 | `basics`                                                             | -                                                                                 |
+| [`booleans`][concept-exercise-booleans]                             | `booleans`                                                           | `basics`                                                                          |
+| [`classes`][concept-exercise-classes]                               | `classes`                                                            | `basics`<br/>`strings`<br/>`numbers`<br/>`conditionals`                           |
+| [`constructors`][concept-exercise-constructors]                     | `constructors`                                                       | `classes`<br/>`numbers`<br/>`conditionals`<br/>`while-loops`                      |
+| [`dates`][concept-exercise-datetimes]                               | `datetimes`                                                          | `numbers`<br/>`strings`<br/>`classes`                                             |
+| [`enums`][concept-exercise-enums]                                   | `enums`<br/>`pattern-matching-constants`                             | `strings`<br/>`conditionals`                                                      |
+| [`flag-enums`][concept-exercise-flag-enums]                         | `flag-enums`<br/>`bit-manipulation`                                  | `enums`<br/>`attributes`</br>`integers`                                           |
+| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`while-loops`                           | `numbers`<br/>`conditionals`                                                      |
+| [`inheritance`][concept-exercise-inheritance]                       | `inheritance`                                                        | `classes`<br/>`constructors`<br/>`strings`<br/>`booleans`<br/>`conditionals`      |
+| [`method-overloading`][concept-exercise-method-overloading]         | `method-overloading`<br/>`named-arguments`<br/>`optional-parameters` | `classes`<br/>`constructors`<br/>`enums`<br/>`properties`<br/>`strings`           |
+| [`nullability`][concept-exercise-nullability]                       | `nullability`                                                        | `strings`<br/>`conditionals`<br/>`memory-allocation`                              |
+| [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`                                         | `basics`                                                                          |
+| [`properties`][concept-exercise-properties]                         | `properties`                                                         | `numbers`<br/>`floating-point-numbers`<br/>`classes`<br/>`enums`<br/>`exceptions` |
+| [`strings`][concept-exercise-strings]                               | `strings`                                                            | `basics`                                                                          |
 
 It's only important that it's reasonably easy to _find_ the exercise. It's okay if the name isn't perfect. We **will** iterate on this.
 
@@ -31,10 +37,16 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-exercises]: ./concept/README.md
 [concept-exercise-arrays]: ./arrays/.meta/design.md
 [concept-exercise-basics]: ./basics/.meta/design.md
+[concept-exercise-booleans]: ./booleans/.meta/design.md
+[concept-exercise-classes]: ./classes/.meta/design.md
+[concept-exercise-constructors]: ./constructors/.meta/design.md
 [concept-exercise-flag-enums]: ./flag-enums/.meta/design.md
 [concept-exercise-datetimes]: ./datetimes/.meta/design.md
 [concept-exercise-enums]: ./enums/.meta/design.md
 [concept-exercise-floating-point-numbers]: ./floating-point-numbers/.meta/design.md
+[concept-exercise-inheritance]: ./inheritance/.meta/design.md
+[concept-exercise-method-overloading]: ./method-overloading/.meta/design.md
+[concept-exercise-nullability]: ./nullability/.meta/design.md
 [concept-exercise-numbers]: ./numbers/.meta/design.md
 [concept-exercise-properties]: ./properties/.meta/design.md
 [concept-exercise-strings]: ./strings/.meta/design.md
