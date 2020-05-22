@@ -13,7 +13,7 @@ Dictionaries.GetEmptyDictionary();
 
 ### 2. Create a Pre-populated Dictionary
 
-Create a dictionary which contains the following 3 dialing codes: "United States of America" which has a code of 1, "Brazil" which has a code of 55 and "India" which has a code of 91
+Create a dictionary which contains the following 3 dialing codes: "United States of America" which has a code of 1, "Brazil" which has a code of 55 and "India" which has a code of 91:
 
 ```csharp
 Dictionaries.GetExistingDictionary();
@@ -22,19 +22,19 @@ Dictionaries.GetExistingDictionary();
 
 ### 3. Add a Country to an Empty Dictionary
 
-Add "United Kingdom" with a dialing code of 44
+Add "United Kingdom" with a dialing code of 44:
 
 ```csharp
-Dictionaries.AddCountrryToEmptyDictionary(44, "United Kingdom");
+Dictionaries.AddCountryToEmptyDictionary(44, "United Kingdom");
 // 44 => "United Kingdom"
 ```
 
 ### 4. Add a Country to an Existing Dictionary
 
-Add "United Kindom" with a dialing code of 44 to the dictionary created in task 2.
+Add "United Kindom" with a dialing code of 44 to the dictionary created in task 2:
 
 ```csharp
-Dictionaries.AddCountryToExistingDictionary(Dictionaries.GetExistingDictionary,
+Dictionaries.AddCountryToExistingDictionary(Dictionaries.GetExistingDictionary(),
   44, "United Kingdom");
 // 1 => "United States of America", 44 => "United Kingdom", 55 => "Brazil", 91 => "India"
 ```
@@ -60,7 +60,7 @@ Dictionaries.CheckCodeExists(Dictionaries.GetExistingDictionary(), 55);
 
 ### 7. Attempt to Get Country Name for a Non-existent Country Code
 
-Request the country name for a code that is not in the existing dictionary, e.g. 999. An empty string should be returned.
+Request the country name for a code that is not in the existing dictionary, e.g. 999. An empty string should be returned:
 
 ```csharp
 Dictionaries.GetCountryNameFromDictionary(
@@ -70,7 +70,7 @@ Dictionaries.GetCountryNameFromDictionary(
 
 ### 8. Update a Country Name
 
-Change the name of "United States of America" to "Les États-Unis"
+Change the name of "United States of America" to "Les États-Unis":
 
 ```csharp
 Dictionaries.UpdateDictionary(
@@ -80,7 +80,7 @@ Dictionaries.UpdateDictionary(
 
 ### 9. Attempt to Update Name of Country that is not in the Dictionary
 
-Try to change the name of a country with a code that is not in the dictionary e.g. 999. This should result in no change to the dictionary.
+Try to change the name of a country with a code that is not in the dictionary e.g. 999. This should result in no change to the dictionary:
 
 ```csharp
 Dictionaries.UpdateDictionary(
@@ -90,7 +90,7 @@ Dictionaries.UpdateDictionary(
 
 ### 10. Remove a Country from the Dictionary
 
-Remove India from the dictionary
+Remove India from the dictionary:
 
 ```csharp
 Dictionaries.RemoveCountryFromDictionary(
@@ -100,10 +100,10 @@ Dictionaries.RemoveCountryFromDictionary(
 
 ### 11. Find the Country with the Longest Name
 
-Remove India from the dictionary
+Process the values in the dictionary to find the one with the longest name:
 
 ```csharp
 Dictionaries.FindLongestCountryName(
-  Dictionaries.GetExistingDictionary(), 55);
+  Dictionaries.GetExistingDictionary());
 // "United States of America"
 ```

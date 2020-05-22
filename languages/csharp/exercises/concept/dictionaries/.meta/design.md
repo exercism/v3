@@ -35,20 +35,7 @@ This Concept Exercise's prerequisites Concepts are:
 - `foreach-loops`: know how to use a `foreach-loop` to iterate over a collection.
 - `generic-types`: know how generic types work.
 - `strings`: know how to discover string length
-
-Any data types used in this exercise (e.g. `strings`) should also be added as prerequisites.
-
-## Resources to refer to
-
-### Hints
-
-- [Dictionaries documentation][dictionaries-docs]: reference documentation for `Dictionary<TKey, TElement>`.
-- [Dictionaries tutorial][dictionaries-tutorial]: basic tutorial on how to work with dictionaries.
-
-### After
-
-- [Dictionaries documentation][dictionaries-docs]: reference documentation for `Dictionary<TKey, TElement>`.
-- [Dictionaries tutorial][dictionaries-tutorial]: basic tutorial on how to work with dictionaries.
+- `indexers`: usage and behavior of indexer properties
 
 ## Representer
 
@@ -57,14 +44,6 @@ This exercise does not require any specific representation logic to be added to 
 ## Analyzer
 
 This exercise does not require any specific analyzer logic to be added to the [analyzer][analyzer].
-
-## Implementing
-
-To implement this exercise, please [follow these instructions](https://github.com/exercism/v3/blob/master/languages/csharp/reference/implementing-a-concept-exercise.md).
-
-## Help
-
-If you have any questions while implementing the exercise, please post the questions as comments in this issue.
 
 [how-to-implement-a-concept-exercise]: https://github.com/exercism/v3/blob/master/docs/maintainers/generic-how-to-implement-a-concept-exercise.md
 [implemented-exercises]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/README.md#implemented-exercises

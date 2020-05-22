@@ -6,11 +6,11 @@ A dictionary is like any other class. You simply 'new' it to create an empty ins
 
 Although it's possible to populate a dictionary by repeatedly adding items, dictionaries can be initialized statically.
 
-See [this article][docs.microsoft.com_parsing-date].
+See [this article][dictionary_static_initialization].
 
 ### 3. Add a Country to an Empty Dictionary
 
-See [Add][docs.microsoft.com_dictionary_add]. Pass in the dictionary returned by task 1 as a parameter.
+See [Add][dictionary_add]. Pass in the dictionary returned by task 1 as a parameter.
 
 ### 4. Add a Country to an Existing Dictionary
 
@@ -18,11 +18,11 @@ There is no substantial difference between adding an item to an empty or initial
 
 ### 5. Get the Country Name Matching a Country Code
 
-See [this article][docs.microsoft.com_dictionary_item].
+See [this article][dictionary_item].
 
 ### 6. Attempt to Get Country Name for a Non-existent Country Code
 
-You need to [detect][docs.microsoft.com_dictionary_contains_key] whether the country is present in the dictionary.
+You need to [detect][dictionary_contains_key] whether the country is present in the dictionary.
 
 ### 7. Attempt to Get Country Name for a Non-existent Country Code
 
@@ -30,7 +30,7 @@ You can combine what you've learnt in Tasks 5 and 6 to solve this one.
 
 ### 8. Update a Country Name
 
-Again [this article][docs.microsoft.com_dictionary_item] applies.
+Again [this article][dictionary_item] applies.
 
 ### 9. Attempt to Update Name of Country that is not in the Dictionary
 
@@ -38,17 +38,17 @@ This is very similar to task 7.
 
 ### 10. Remove a Country from the Dictionary
 
-See [this article][docs.microsoft.com_dictionary_remove].
+See [this article][dictionary_remove].
 
 ### 11. Find the Country with the Longest Name
 
-See the [values collection][docs.microsoft.com_dictionary_values], [string length][docs.microsoft.com_string_length] and [foreach][docs.microsoft.com_foreach].
+See the [values collection][dictionary_values], [string length][string_length] and [foreach][foreach].
 
-[docs.microsoft.com_dictionary_static_initialization]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer
-[docs.microsoft.com_dictionary_add]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.add?view=netcore-3.1
-[docs.microsoft.com_dictionary_item]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.item?view=netcore-3.1
-[docs.microsoft.com_dictionary_contains_key]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.containskey?view=netcore-3.1
-[docs.microsoft.com_dictionary_remove]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.remove?view=netcore-3.1
-[docs.microsoft.com_dictionary_values]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.values?view=netcore-3.1
-[docs.microsoft.com_foreach]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/foreach-in
-[docs.microsoft.com_string_length]: https://docs.microsoft.com/en-gb/dotnet/api/system.string.length?view=netcore-3.1#System_String_Length
+[dictionary_static_initialization]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer
+[dictionary_add]: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2.add?view=netcore-3.1
+[dictionary_item]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.item?view=netcore-3.1
+[dictionary_contains_key]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.containskey?view=netcore-3.1
+[dictionary_remove]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.remove?view=netcore-3.1
+[dictionary_values]: https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic.dictionary-2.values?view=netcore-3.1
+[foreach]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/foreach-in
+[string_length]: https://docs.microsoft.com/en-gb/dotnet/api/system.string.length?view=netcore-3.1#System_String_Length

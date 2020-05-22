@@ -28,11 +28,14 @@ numbers[2];
 // "Two"
 ```
 
+This is known as an [indexer][indexer-properties].
+]
+
 A value in the dictionary can be replaced as follows:
 
 ```csharp
 var numbers = new Dictionary<int, string>{{1, "One"}, {2, "Two"}};
-number[2] = "Deux";
+numbers[2] = "Deux";
 // {{1, "One"}, {2, "Deux"}}
 ```
 
@@ -47,7 +50,7 @@ dict.ContainsKey("some key that exists");
 You can enumerate the following from the dictionary, keys, values, key-value pairs:
 
 ```csharp
-var dict = new Dictionary<string, int><string, string>{/*...*/};
+var dict = new Dictionary<string, int>{/*...*/};
 
 Dictionary<string, int>.KeyCollection keys = dict.Keys;
 
@@ -55,3 +58,5 @@ Dictionary<string, int>.ValueCollection values = dict.Values;
 
 IEnumerable<KeyValuePair<string,int>> enumerable = dict;
 ```
+
+[indexer-properties]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/
