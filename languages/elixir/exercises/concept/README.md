@@ -10,6 +10,7 @@ These are the concept exercises that have currently been implemented, as well as
 | -------------- | ---------------------------------------- | -------------------------------------------------------------- |
 | `basics`       | `basics`                                 | none                                                           |
 | `booleans`     | `booleans`                               | `basics`                                                       |
+| `numbers`      | `floating-point-numbers`                 | `basics`                                                       |
 | `conditionals` | `conditionals`, `atoms`                  | `booleans`                                                     |
 | `lists`        | `lists`, `string-literals`               | `booleans`                                                     |
 | `tuples`       | `tuples`, `pattern-matching`             | `multiple-clause-functions`, `floating-point-numbers`, `atoms` |
