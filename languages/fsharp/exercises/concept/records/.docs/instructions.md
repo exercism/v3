@@ -11,7 +11,7 @@ Define the `Coach` record with the following two fields:
 - `Name`: the coach's name, of type `string`.
 - `FormerPlayer`: indicates if the coach was a former player, of type `bool`.
 
-Define the `Record` record with the following two fields:
+Define the `Stats` record with the following two fields:
 
 - `Wins`: the number of wins, of type `int`.
 - `Losses`: the number of losses, of type `int`.
@@ -20,9 +20,9 @@ Define the `Team` record with the following three fields:
 
 - `Name`: the team's name, of type `string`.
 - `Coach`: the team's coach, of type `Coach`.
-- `Record`: the team's record, of type `Record`.
+- `Stats`: the team's record, of type `Stats`.
 
-### 2. Create a coach
+### 2. Create a team's coach
 
 Implement the `createCoach` function that takes the coach name and its former player status as parameters, and returns its `Coach` record:
 
@@ -31,12 +31,12 @@ createCoach "Larry Bird" true
 // => { Name = "Larry Bird"; FormerPlayer = true }
 ```
 
-### 3. Create a record
+### 3. Create a team's stats
 
-Implement the `createRecord` function that takes the number of wins and the number losses as parameters, and returns its `Record` record:
+Implement the `createStats` function that takes the number of wins and the number losses as parameters, and returns its `Stats` record:
 
 ```fsharp
-createRecord 58 24
+createStats 58 24
 // => { Wins = 58; Losses = 24 }
 ```
 
@@ -46,11 +46,11 @@ Implement the `createTeam` function that takes the team name, coach and record a
 
 ```fsharp
 let coach = createCoach "Larry Bird" true
-let record = createRecord 58 24
+let record = createStats 58 24
 createTeam "Indiana Pacers" coach record
 // => { Name = "Indiana Pacers"
 //      Coach = { Name = "Larry Bird"; FormerPlayer = true }
-//      Record = { Wins = 58; Losses = 24 } }
+//      Stats = { Wins = 58; Losses = 24 } }
 ```
 
 ### 5. Replace the coach
@@ -59,30 +59,30 @@ NBA owners being impatient, you found that bad team results would often lead to 
 
 ```fsharp
 let coach = createCoach "Larry Bird" true
-let record = createRecord 58 24
+let record = createStats 58 24
 let team = createTeam "Indiana Pacers" coach record
 
 let newCoach = createCoach "Isiah Thomas" true
 replaceCoach team newCoach
 // => { Name = "Indiana Pacers"
 //      Coach = { Name = "Isiah Thomas"; FormerPlayer = true }
-//      Record = { Wins = 58; Losses = 24 } }
+//      Stats = { Wins = 58; Losses = 24 } }
 ```
 
-### 6. Check team record
+### 6. Check for duplicates
 
-One easy way to compare teams is by comparing their win/loss record. Implement the `hasSameRecord` function that takes two teams and returns `true` if they have the same record; otherwise, return `false`:
+While digging into stats, you're keeping lists of teams and their records. Sometimes, you get things wrong and there are duplicate entries on your list. Implement the `sameTeam` function that takes two teams and returns `true` if they are the same team; otherwise, return `false`:
 
 ```fsharp
 let pacersCoach = createCoach "Larry Bird" true
-let pacersRecord = createRecord 58 24
-let pacersTeam = createTeam "Indiana Pacers" pacersCoach pacersRecord
+let pacersStats = createStats 58 24
+let pacersTeam = createTeam "Indiana Pacers" pacersCoach pacersStats
 
 let lakersCoach = createCoach "Del Harris" false
-let lakersRecord = createRecord 61 21
-let lakersTeam = createTeam "LA Lakers" lakersCoach lakersRecord
+let lakersStats = createStats 61 21
+let lakersTeam = createTeam "LA Lakers" lakersCoach lakersStats
 
-haveSameRecord pacersTeam lakersTeam
+isDuplicate pacersTeam lakersTeam
 // => false
 ```
 
@@ -100,8 +100,8 @@ Implement the `rootForTeam` function that takes a team and returns `true` if you
 
 ```fsharp
 let spursCoach = createCoach "Gregg Popovich" false
-let spursRecord = createRecord 56 26
-let spursTeam = createTeam "San Antonio Spurs" spursCoach spursRecord
+let spursStats = createStats 56 26
+let spursTeam = createTeam "San Antonio Spurs" spursCoach spursStats
 rootForTeam spursTeam
 // => true
 ```
