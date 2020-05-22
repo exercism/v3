@@ -10,13 +10,13 @@ These are the Concept Exercises that have currently been implemented, as well as
 | ------------------------------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------- |
 | [`basics`][concept-exercise-basics]                                 | `basics`                     |
 | [`booleans`][concept-exercise-booleans]                             | `booleans`                   | `basics`                                                                               |
-| [`datetimes`][concept-exercise-datetimes]                           | `datetimes`                  | `numbers`<br/>`strings`<br/>`classes`                                                  |
+| [`datetimes`][concept-exercise-datetimes]                           | `datetimes`                  | `classes`<br/>`numbers`<br/>`strings`                                                  |
 | [`discriminated-unions`][concept-exercise-discriminated-unions]     | `discriminated-unions`       | `pattern-matching`                                                                     |
-| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`     | `numbers`<br/>`conditionals`                                                           |
-| [`lists`][concept-exercise-lists]                                   | `lists`                      | `strings`<br/>`booleans`<br/>`pattern-matching`                                        |
-| [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals` | `basics`                                                                               |
-| [`pattern-matching`][concept-exercise-pattern-matching]             | `pattern-matching`           | `strings`<br/>`conditionals`                                                           |
-| [`recursion`][concept-exercise-recursion]                           | `recursion`                  | `pattern-matching`<br/>`discriminated-unions`<br/>`lists`<br/>`higher-order-functions` |
+| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`     | `conditionals`<br/>`numbers`                                                           |
+| [`lists`][concept-exercise-lists]                                   | `lists`                      | `booleans`<br/>`pattern-matching`<br/>`strings`                                        |
+| [`numbers`][concept-exercise-numbers]                               | `conditionals`<br/>`numbers` | `basics`                                                                               |
+| [`pattern-matching`][concept-exercise-pattern-matching]             | `pattern-matching`           | `conditionals`<br/>`strings`                                                           |
+| [`recursion`][concept-exercise-recursion]                           | `recursion`                  | `discriminated-unions`<br/>`higher-order-functions`<br/>`lists`<br/>`pattern-matching` |
 | [`strings`][concept-exercise-strings]                               | `strings`                    | `basics`                                                                               |
 
 ## TODO
