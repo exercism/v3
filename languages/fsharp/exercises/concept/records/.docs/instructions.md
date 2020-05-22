@@ -46,11 +46,11 @@ Implement the `createTeam` function that takes the team name, coach and record a
 
 ```fsharp
 let coach = createCoach "Larry Bird" true
-let record = createRecord 58 24
+let record = createStats 58 24
 createTeam "Indiana Pacers" coach record
 // => { Name = "Indiana Pacers"
 //      Coach = { Name = "Larry Bird"; FormerPlayer = true }
-//      Record = { Wins = 58; Losses = 24 } }
+//      Stats = { Wins = 58; Losses = 24 } }
 ```
 
 ### 5. Replace the coach
@@ -59,7 +59,7 @@ NBA owners being impatient, you found that bad team results would often lead to 
 
 ```fsharp
 let coach = createCoach "Larry Bird" true
-let record = createRecord 58 24
+let record = createStats 58 24
 let team = createTeam "Indiana Pacers" coach record
 
 let newCoach = createCoach "Isiah Thomas" true
@@ -71,7 +71,7 @@ replaceCoach team newCoach
 
 ### 6. Check for duplicates
 
-While digging into stats, you're keeping lists of teams and their records. Sometimes, you get things wrong and there are duplicate entries on your list. Implement the `isDuplicate` function that takes two teams and returns `true` if they are the same team; otherwise, return `false`:
+While digging into stats, you're keeping lists of teams and their records. Sometimes, you get things wrong and there are duplicate entries on your list. Implement the `sameTeam` function that takes two teams and returns `true` if they are the same team; otherwise, return `false`:
 
 ```fsharp
 let pacersCoach = createCoach "Larry Bird" true
