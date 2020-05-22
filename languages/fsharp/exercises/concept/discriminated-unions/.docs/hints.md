@@ -1,12 +1,12 @@
-### 1. Define the approval
+## 1. Define the approval
 
 - [This page][define] shows how to define a discriminated union.
 
-### 4. Define the activity
+## 4. Define the activity
 
 - [This page][define] shows how to define a discriminated union, both for cases with and without associated data.
 
-### 5. Rate the activity
+## 5. Rate the activity
 
 - The best way to execute logic based on the activity's value is to use [pattern matching][pattern-matching].
 - The pattern to match discriminated union cases (and optionally, their associated data) is through [identifier patterns][identifier-patterns].
