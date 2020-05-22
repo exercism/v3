@@ -49,7 +49,12 @@
         "slug": "dictionaries",
         "uuid": "ea01c7d9-a387-451b-9a69-f1b48f00d7a5",
         "concepts": ["dictionaries"],
-        "prerequisites": ["foreach-loops", "generic-types", "strings"]
+        "prerequisites": [
+          "foreach-loops",
+          "generic-types",
+          "strings",
+          "indexers"
+        ]
       },
       {
         "slug": "enums",
