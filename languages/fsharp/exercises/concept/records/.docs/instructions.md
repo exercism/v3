@@ -71,7 +71,7 @@ replaceCoach team newCoach
 
 ### 6. Check for duplicates
 
-While digging into stats, you're keeping lists of teams and their records. Sometimes, you get things wrong and there are duplicate entries on your list. Implement the `sameTeam` function that takes two teams and returns `true` if they are the same team; otherwise, return `false`:
+While digging into stats, you're keeping lists of teams and their records. Sometimes, you get things wrong and there are duplicate entries on your list. Implement the `isDuplicate` function that takes two teams and returns `true` if they are the same team; otherwise, return `false`:
 
 ```fsharp
 let pacersCoach = createCoach "Larry Bird" true
