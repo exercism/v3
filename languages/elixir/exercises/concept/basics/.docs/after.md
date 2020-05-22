@@ -47,29 +47,31 @@
   - You may use underscores to separate large numbers.
   - Integers support the [basic mathematical operators][operators].
 
-## Comments
+## Documentation
 
-- Elixir supports [inline documentation][inline-documentation]
+- Elixir provides 3 ways to write [inline documentation][inline-documentation].
 
   - Single line comments are preceded by `#`.
-  - Comments to document a named function must precede the named function definition
+  - Functions may be documented with `@doc` preceding the named function definition
 
-  ```elixir
-  @doc """
-  Function Documentation
-  """
-  def function(), do: true
-  ```
-
-  - One comment to document a module may immediately follow the module definition
-
-  ```elixir
-  defmodule Example do
-    @moduledoc """
-    Module documentation
+    ```elixir
+    @doc """
+    Function Documentation
     """
-  end
-  ```
+    def function(), do: true
+    ```
+
+  - Module may be documented with `@moduledoc` immediately following the module definition
+
+    ```elixir
+    defmodule Example do
+      @moduledoc """
+      Module documentation
+      """
+
+      #...
+    end
+    ```
 
 [functional-programming]: https://en.wikipedia.org/wiki/Functional_programming
 [match]: https://elixirschool.com/en/lessons/basics/pattern-matching/
