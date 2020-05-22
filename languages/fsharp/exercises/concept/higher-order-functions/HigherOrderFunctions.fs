@@ -2,8 +2,8 @@ module HigherOrderFunctions
 
 let prefix (prefixWith: string): string -> string = fun str -> prefixWith + str
 
-let cutoff (cutoffStr: string): string -> string =
-    fun str -> str.Substring(0, str.IndexOf(cutoffStr) + 1)
+let cutoff (cutoffAt: string): string -> string =
+    fun str -> str.Substring(0, str.LastIndexOf(cutoffAt) + cutoffAt.Length)
 
 let replace (source: string) (target: string): string -> string = fun str -> str.Replace(source, target)
 
@@ -11,8 +11,8 @@ let combiner (first: string -> string) (second: string -> string): string -> str
 
 let headline str =
     let prefixer = prefix "[BREAKING] "
-    let cutoffer = cutoff "."
     let replacer = replace "." "!"
-    let first = combiner prefixer cutoffer
-    let second = combiner first replacer
+    let cutoffer = cutoff "!"
+    let first = combiner prefixer replacer
+    let second = combiner first cutoffer
     second str
