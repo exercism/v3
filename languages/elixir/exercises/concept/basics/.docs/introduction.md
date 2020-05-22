@@ -51,8 +51,12 @@ def add(x, y, z) do
 end
 ```
 
-## Comments
+## Documentation
 
-Comments can be used for inline documentation. Single line comments in Elixir are preceded by `#`.
+Documentation is a priority in high-quality Elixir code bases, and there are 3 ways to write inline documentation:
+
+- Comments can be used for inline documentation. Single line comments in Elixir are preceded by `#`.
+- Function-level documentation uses the `@doc` annotation preceding named function definitions
+- Module-level documentation uses the `@moduledoc` annotation following the module definition
 
 [functional-programming]: https://en.wikipedia.org/wiki/Functional_programming
