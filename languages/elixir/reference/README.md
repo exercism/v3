@@ -259,16 +259,19 @@ The concept exercises use the following concepts:
 
 | concept                          | interpretation                                                                                 |
 | -------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `anonymous-functions`            | Intro to anonymous functions, functions as data                                                |
+| `atoms`                          | Intro to elixir atom type.                                                                     |
 | `basics`                         | Introduction to functions, modules, variables, returning values, integers, invoking functions. |
 | `booleans`                       | Introduction to the boolean type and strict boolean operators -- and/2, or/2, not/1            |
+| `default-arguments`              | Introduction to default arguments in named functions                                           |
+| `closures`                       | How to implement closures in elixir                                                            |
 | `conditionals`                   | Intro to elixir `cond/1` function.                                                             |
-| `atoms`                          | Intro to elixir atom type.                                                                     |
+| `floating-point-numbers`         | how to use floating point numbers to represent real numbers                                    |
 | `lists`                          | Introduction to the lists type basic list functions -- hd/1, tl/1, length/1, in/2              |
+| `maps`                           | Introduction to the map data type                                                              |
+| `module-attributes-as-constants` | Introduction to using module attributes as constants                                           |
+| `multiple-clause-functions`      | named function can be overloaded and each attempted to invoke until one succeeds               |
+| `pattern-matching`               | basic knowledge of pattern matching using `=/2` and on function parameters                     |
 | `string-literals`                | Introduction to strings in code enclosed by double quotes.                                     |
 | `strings`                        | How to do string processing, concatenation, interpolation, and multiline strings.              |
-| `anonymous-functions`            | Intro to anonymous functions, functions as data                                                |
-| `closures`                       | How to implement closures in elixir                                                            |
 | `tuples`                         | Introduction to the tuple data type                                                            |
-| `maps`                           | Introduction to the map data type                                                              |
-| `default-arguments`              | Introduction to default arguments in named functions                                           |
-| `module-attributes-as-constants` | Introduction to using module attributes as constants                                           |

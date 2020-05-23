@@ -1,4 +1,4 @@
-### General
+## General
 
 You will need to define [functions][functions] and use [arithmetic operators][arithmetics].
 

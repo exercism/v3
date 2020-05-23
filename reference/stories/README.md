@@ -28,6 +28,7 @@ A collection of story and narrative ideas that can be used when writing Concept 
 | Promises               | [Klingon translation service][promises.klingon-translation-service]   |
 | Properties             | [Weighing machine][properties.weighing-machine]                       |
 | Recursion              | [Pizza delivery][recursion.pizza-delivery]                            |
+| Strings                | [High school sweethearts][strings.high-school-sweethearts]            |
 | Strings                | [Log line parser][strings.log-line-parser]                            |
 | Strings                | [Poetry door policy][strings.poetry-club-door-policy]                 |
 | Sum types              | [Valentines day][sum-types.valentines-day]                            |
@@ -56,6 +57,7 @@ A collection of story and narrative ideas that can be used when writing Concept 
 [promises.klingon-translation-service]: ./promises.klingon-translation-service.md
 [properties.weighing-machine]: ./properties.weighing-machine.md
 [recursion.pizza-delivery]: ./recursion.pizza-delivery.md
+[strings.high-school-sweethearts]: ./strings.high-school-sweethearts.md
 [strings.log-line-parser]: ./strings.log-line-parser.md
 [strings.poetry-club-door-policy]: ./strings.poetry-club-door-policy.md
 [sum-types.valentines-day]: ./sum-types.valentines-day.md

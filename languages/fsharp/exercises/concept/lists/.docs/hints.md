@@ -1,24 +1,24 @@
-### 1. Create a new list
+## 1. Create a new list
 
 - How to define an empty list can be found on [this page][create-and-initialize].
 
-### 2. Define an existing list
+## 2. Define an existing list
 
 - How to define and initialize a list with mutliple elements can be found on [this page][create-and-initialize].
 
-### 3. Add a new language to a list
+## 3. Add a new language to a list
 
 - There is a [built-in operator][cons] to add an element to the beginning of a list.
 
-### 4. Count the languages in the list
+## 4. Count the languages in the list
 
 - There is a function in the `List` module to [count the elements in a list][length].
 
-### 5. Reverse the list
+## 5. Reverse the list
 
 - There is a function in the `List` module to [reverse a list][reverse].
 
-### 6. Check if list is exciting
+## 6. Check if list is exciting
 
 - You can use pattern matching using the [cons][cons-pattern]- and [list][list-pattern] patterns to match on specific list structures.
 
