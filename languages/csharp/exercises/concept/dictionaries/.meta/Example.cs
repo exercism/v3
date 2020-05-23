@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-public static class Dictionaries
+public static class DialingCodes_example
 {
     public static Dictionary<int, string> GetEmptyDictionary()
     {
@@ -27,7 +27,7 @@ public static class Dictionaries
         Dictionary<int, string> existingDictionary, int countryCode, string countryName)
     {
         existingDictionary[countryCode] = countryName;
-        return existingDictiopnary;
+        return existingDictionary;
     }
 
     public static string GetCountryNameFromDictionary(
