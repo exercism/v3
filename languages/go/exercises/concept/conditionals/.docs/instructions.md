@@ -33,7 +33,7 @@ Although not optimal yet, you will follow the strategy your friend Alex has been
 
 You have three tasks:
 
-### 1. Calculate the score of any given card
+## 1. Calculate the score of any given card
 
 Implement a function to calculate the numerical value of a card given its name.
 
@@ -43,7 +43,7 @@ fmt.Println(value)
 // Output: 11
 ```
 
-### 2. Determine if two cards make up a Blackjack.
+## 2. Determine if two cards make up a Blackjack.
 
 Implement a function that returns true if two cards form a Blackjack, false otherwise.
 
@@ -53,7 +53,7 @@ fmt.Println(isBlackjack)
 // Output: true
 ```
 
-### 3. Determine the best gameplay choice for your first turn following Alex's strategy.
+## 3. Determine the best gameplay choice for your first turn following Alex's strategy.
 
 Implement a function that returns the string representation of a decision given your cards, the dealer's card and Alex's strategy.
 

@@ -1,10 +1,10 @@
 # Hints
 
-### General
+## General
 
 Conditionals are used to check for certain conditions and/or criteria. The most basic way of performing a conditional operation is using a single `if` statement.
 
-### 1. Multiple cases (else if)
+## 1. Multiple cases (else if)
 
 For various cases an `else if` and `else` statements can be used like this:
 
@@ -22,7 +22,7 @@ if condition {
 
 The `else` statement is any other case not covered by previous conditions. It should be noted that since Go allows early returns it is common to avoid the `else` statement after a return.
 
-### 2. Multiple cases (logical operators)
+## 2. Multiple cases (logical operators)
 
 Another way of checking for different scenarios is by chaining logical operators within the `if` statements like this:
 
@@ -36,7 +36,7 @@ if conditionA ||conditionB {
 }
 ```
 
-### 3. More than 3 cases (switch)
+## 3. More than 3 cases (switch)
 
 When there are 3 or more cases it is often better to use a `switch` statement, which allows to test for multiple conditions. It also has a `default` for managing unmanaged cases. It is used like this:
 

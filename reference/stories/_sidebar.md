@@ -30,6 +30,7 @@
     - [Properties - Weighing machine](/reference/stories/properties.weighing-machine.md)
     - [Recursion - Pizza delivery](/reference/stories/recursion.pizza-delivery.md)
     - [State - Shopping Cart](/reference/stories/shopping-cart.md)
+    - [Strings - High school sweethearts](/reference/stories/strings.high-school-sweethearts.md)
     - [Strings - Log line parser](/reference/stories/strings.log-line-parser.md)
     - [Strings - Poetry door policy](/reference/stories/strings.poetry-club-door-policy.md)
     - [Sum types - Valentines day](/reference/stories/sum-types.valentines-day.md)
