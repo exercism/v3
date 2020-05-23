@@ -3,7 +3,11 @@ A dictionary is a collection of elements where each element comprises a key and 
 A dictionary can be created as follows:
 
 ```csharp
-new Dictionary<int, string>{{1, "One"}, {2, "Two"}};
+new Dictionary<int, string>
+{
+    {1, "One"},
+    {2, "Two"}
+};
 // 1 => "One", 2 => "Two"
 ```
 
