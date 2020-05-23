@@ -2,7 +2,7 @@ Dictionaries, like their equivalents in other languages such as maps or associat
 
 In addition key/value pairs can be added and removed from the dictionary. Keys, values and key/value pairs can be enumerated.
 
-Values can be objects of any legal C# type including primitives and structs.
+Values can be objects of any C# type, which includes primitives, structs _and_ classes.
 
 The Dictionary object allows keys to be objects of any type. However to ensure correct behavior at runtime keys must have an appropriate hashcode as returned by [GetHashCode][gethashcode].
 
