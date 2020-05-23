@@ -1,63 +1,94 @@
 package basics
 
-import (
-	"testing"
-)
+import "testing"
 
 type lasagnaTests struct {
+	name                   string
 	layers, time, expected int
 }
 
 func TestOvenTime(t *testing.T) {
-	got := OvenTime()
-	if got != 40 {
-		t.Errorf("OvenTime(40)  = %d; want 40", got)
+	tests := []lasagnaTests{
+		{
+			name:     "Calculates how many minutes the lasagna should be in the oven",
+			layers:   0,
+			time:     40,
+			expected: 40,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := OvenTime(); got != tt.expected {
+				t.Errorf("OvenTime(%d)  = %d; want %d", tt.expected, got, tt.expected)
+			}
+		})
 	}
 }
 
 func TestRemainingOvenTime(t *testing.T) {
-	got := RemainingOvenTime(25)
-	if got != 15 {
-		t.Errorf("RemainingOvenTime(25) = %d; want 15", got)
+	tests := []lasagnaTests{
+		{
+			name:     "Remaining minutes in oven",
+			layers:   0,
+			time:     15,
+			expected: 15,
+		},
 	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := RemainingOvenTime(25); got != tt.time {
+				t.Errorf("RemainingOvenTime(%d) = %d; want %d", tt.expected, got, tt.expected)
+			}
+		})
+	}
+
 }
 func TestPreparationTime(t *testing.T) {
-	var tests = []lasagnaTests{
+	tests := []lasagnaTests{
 		{ //one layer
+			name:     "Preparation time in minutes for one layer",
 			layers:   1,
+			time:     0,
 			expected: 2,
 		},
-		{ //multiple layers
+		{ //two layers
+			name:     "Preparation time in minutes for multiple layer",
 			layers:   4,
+			time:     0,
 			expected: 8,
 		},
 	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := PreparationTime(tt.layers); got != tt.expected {
+				t.Errorf("PreparationTime(%d) = %d; want %d", tt.layers, got, tt.expected)
+			}
+		})
 
-	for _, tc := range tests {
-		got := PreparationTime(tc.layers)
-		if got != tc.expected {
-			t.Errorf("PreparationTime(%d) = %d; want %d", tc.layers, got, tc.expected)
-		}
 	}
 }
 
-func TestTotalTime(t *testing.T) {
-	var tests = []lasagnaTests{
+func TestTotalTimeInMinutes(t *testing.T) {
+	tests := []lasagnaTests{
 		{ //one layer
+			name:     "Total time in minutes for one layer",
 			layers:   1,
 			time:     30,
 			expected: 32,
 		},
-		{ //multiple layers
+		{ //multiple layer
+			name:     "Total time in minutes for multiple layer",
 			layers:   4,
 			time:     8,
 			expected: 16,
 		},
 	}
-	for _, tc := range tests {
-		got := TotalTime(tc.layers, tc.time)
-		if got != tc.expected {
-			t.Errorf("PreparationTime(%d, %d) = %d; want %d", tc.layers, tc.time, got, tc.expected)
-		}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := TotalTimeInMinutes(tt.layers, tt.time); got != tt.expected {
+				t.Errorf("TotalTimeInMinutes(%d, %d) = %d; want %d", tt.layers, tt.time, got, tt.expected)
+			}
+		})
+
 	}
 }
