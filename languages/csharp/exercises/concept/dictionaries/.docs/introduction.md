@@ -24,24 +24,21 @@ numbers.Add(4, "Four");
 
 To remove a key-value pair simply pass the key to the `Remove` method.
 
-A dictionary lookup takes the following form:
+Retrieving or updating values in a dictionary is done by indexing into the dictionary using a key:
 
 ```csharp
-var numbers = new Dictionary<int, string>{{1, "One"}, {2, "Two"}};
-numbers[2];
-// "Two"
-```
+var numbers = new Dictionary<int, string>
+{
+   {1, "One"},
+   {2, "Two"}
+};
 
-This is known as an [indexer][indexer-properties].
-]
-
-A value in the dictionary can be replaced as follows:
-
-```csharp
-var numbers = new Dictionary<int, string>{{1, "One"}, {2, "Two"}};
+// Set the value of the element with key 2 to "Deux"
 numbers[2] = "Deux";
-// {{1, "One"}, {2, "Deux"}}
-```
+
+// Get the value of the element with key 2
+numbers[2];
+// "Deux"
 
 You can test if a value exists in the dictionary with:
 
