@@ -13,7 +13,7 @@ InternationalDiallingCodes.GetEmptyDictionary();
 
 ### 2. Create a Pre-populated Dictionary
 
-Create a dictionary which contains the following 3 dialing codes: "United States of America" which has a code of 1, "Brazil" which has a code of 55 and "India" which has a code of 91:
+There exists a pre-populated dictionary which contains the following 3 dialing codes: "United States of America" which has a code of 1, "Brazil" which has a code of 55 and "India" which has a code of 91. Implement the (static) `Dictionaries.GetExistingDictionary()` method to return the pre-propulated dictionary:
 
 ```csharp
 Dictionaries.GetExistingDictionary();
