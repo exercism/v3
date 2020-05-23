@@ -4,7 +4,7 @@ The dictionary uses an integer for its keys (the dialing code) and a string (cou
 
 You have 11 tasks which involve dictionaries.
 
-### 1. Create a New Dictionary
+### 1. Create a new dictionary
 
 ```csharp
 Dictionaries.GetEmptyDictionary();
