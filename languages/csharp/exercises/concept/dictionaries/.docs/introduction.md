@@ -48,16 +48,6 @@ dict.ContainsKey("some key that exists");
 // => true
 ```
 
-You can enumerate the following from the dictionary, keys, values, key-value pairs:
-
-```csharp
-var dict = new Dictionary<string, int>{/*...*/};
-
-Dictionary<string, int>.KeyCollection keys = dict.Keys;
-
-Dictionary<string, int>.ValueCollection values = dict.Values;
-
-IEnumerable<KeyValuePair<string,int>> enumerable = dict;
-```
+Enumerating over a dictionary will enumerate over its key/value pairs. Dictionaries also have properties that allow enumerating over its keys or values.
 
 [indexer-properties]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/

@@ -86,7 +86,7 @@ public class DictionariesTest
         Assert.Equal("Brazil", idcd[55]);
     }
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void Longest_name()
+    public void Longest_country_name()
     {
         var idcd = Dictionaries.FindLongestCountryName(
             Dictionaries.GetExistingDictionary());
