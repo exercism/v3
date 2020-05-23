@@ -7,7 +7,7 @@ You have 11 tasks which involve dictionaries.
 ### 1. Create a new dictionary
 
 ```csharp
-Dictionaries.GetEmptyDictionary();
+InternationalDiallingCodes.GetEmptyDictionary();
 // empty dictionary
 ```
 
