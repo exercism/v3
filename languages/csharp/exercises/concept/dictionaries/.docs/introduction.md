@@ -13,16 +13,7 @@ new Dictionary<int, string>
 
 Note that the key and value types are part of the definition of the dictionary.
 
-Entries can be added to the dictionary as follows:
-
-```csharp
-var numbers = new Dictionary<int, string>();
-numbers.Add(3, "Three");
-numbers.Add(4, "Four");
-// 3 => "Three", 4 => "Four"
-```
-
-To remove a key-value pair simply pass the key to the `Remove` method.
+Once constructed, entries can be added or removed from a dictionary using its built-in methods.
 
 Retrieving or updating values in a dictionary is done by indexing into the dictionary using a key:
 
