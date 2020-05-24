@@ -12,14 +12,14 @@ defmodule BirdCountTest do
     end
   end
 
-  describe "increment_todays_count/1" do
+  describe "increment_day_count/1" do
     test "creates entry for today if no bird watching data recorded" do
-      assert BirdCount.increment_todays_count([]) == [1]
+      assert BirdCount.increment_day_count([]) == [1]
     end
 
     test "adds 1 to today's bird count" do
-      assert BirdCount.increment_todays_count([7]) == [8]
-      assert BirdCount.increment_todays_count([4, 2, 1, 0, 10]) == [5, 2, 1, 0, 10]
+      assert BirdCount.increment_day_count([7]) == [8]
+      assert BirdCount.increment_day_count([4, 2, 1, 0, 10]) == [5, 2, 1, 0, 10]
     end
   end
 
