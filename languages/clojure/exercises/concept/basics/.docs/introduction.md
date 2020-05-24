@@ -1,12 +1,12 @@
-In Clojure, assigning a value to a name is referred to as a _binding_. Top-level (global) bindings are called `var`s and should be treated like constants in other languages, but are commonly redefined at a REPL to facilitate dynamic development.
+In Clojure, binding a value to a name is referred to as a _var_. Top-level (global) vars are similar to constants in other languages, but are commonly redefined at a REPL to facilitate dynamic development.
 
-Top-level bindings are defined using `def`:
+Top-level vars are defined using `def`:
 
 ```clojure
 (def fingers 10)
 ```
 
-The `defn` macro can be used to define a function. Functions are also regular bindings, but with one or more parameters. A function automatically returns the result of its last expression.
+The `defn` macro can be used to define a function taking zero or more arguments. A function always returns the result of the last expression in its body.
 
 ```clojure
 (defn add [x y]
