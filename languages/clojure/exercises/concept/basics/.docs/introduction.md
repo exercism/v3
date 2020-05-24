@@ -24,6 +24,9 @@ Functions and values in Clojure can only be used _after_ they have been defined.
 ```clojure
 ;; Compile error as `add` has not yet been defined
 (def seven (add 3 4))
+
+(defn add [x y]
+  (+ x y))
 ```
 
 In Clojure, whitespace has no significance other than formatting.
