@@ -8,14 +8,10 @@ Very often, each case is written in its own function clause.
 
 ```elixir
 # base case
-def count([]) do
-  0
-end
+def count([]), do: 0
 
 # recursive case
-def count([_head | tail]) do
-  1 + count(tail)
-end
+def count([_head | tail]), do: 1 + count(tail)
 ```
 
 Recursive functions, if implemented incorrectly, might never stop executing. If this happens, you need to force stop your program.
