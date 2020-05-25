@@ -16,6 +16,6 @@ defmodule BirdCount do
   end
 
   def busy_days(list) do
-    "Please implement the total/1 function"
+    "Please implement the busy_days/1 function"
   end
 end
