@@ -57,7 +57,7 @@ In practice, iterating over lists and other enumerable data structures is most o
 
 ## Infinite execution
 
-Recursive functions, if implemented incorrectly, might never stop executing. The Erlang VM (on which Elixir programs run) will use as much memory as it has available. Unlike other programming languages, Elixir has no stack overflow error.
+Recursive functions, if implemented incorrectly, might never return their result. This can problematic because each time a function is called, a reference is stored in memory where the VM should return the result (on the [call stack][wiki call stack]). If a recursive function calls itself infinitely, it is possible to run out of memory causing the VM to crash (a [stack overflow error][wiki-stack-overflow]). The Erlang VM, on which Elixir runs, is specially optimized for recursion and reliability, so it may take a long time before infinite recursion errors are apparent or crashes occur.
 
 This problem of infinite execution can be caused by:
 
@@ -68,3 +68,5 @@ This problem of infinite execution can be caused by:
 [fibonacci]: https://en.wikipedia.org/wiki/Fibonacci_number
 [module-enum]: https://hexdocs.pm/elixir/Enum.html
 [enumerable-list-reduce-implementation]: https://github.com/elixir-lang/elixir/blob/291ebf7458bb588be64e0a65afc1b9fd51ebc4dc/lib/elixir/lib/enum.ex#L3767-L3768
+[wiki-call-stack]: https://en.wikipedia.org/wiki/Call_stack
+[wiki-stack-overflow]: https://en.wikipedia.org/wiki/Stack_overflow
