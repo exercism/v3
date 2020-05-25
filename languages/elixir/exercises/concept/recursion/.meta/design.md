@@ -12,6 +12,9 @@ The goal of this exercise to learn how to do simple recursion in Elixir.
 
 ## Out of scope
 
+- Accumulators.
+- Tail calls.
+
 ## Prerequisites
 
 This exercise's prerequisites are:
