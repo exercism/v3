@@ -274,6 +274,7 @@ The concept exercises use the following concepts:
 | `module-attributes-as-constants` | Introduction to using module attributes as constants                                           |
 | `multiple-clause-functions`      | Named function can be overloaded and each attempted to invoke until one succeeds               |
 | `pattern-matching`               | Basic knowledge of pattern matching using `=/2` and on function parameters                     |
+| `recursion`                      | How to write basic recursive functions                                                         |
 | `string-literals`                | Introduction to strings in code enclosed by double quotes.                                     |
 | `strings`                        | How to do string processing, concatenation, interpolation, and multiline strings.              |
 | `tuples`                         | Introduction to the tuple data type                                                            |

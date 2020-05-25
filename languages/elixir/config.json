@@ -75,6 +75,17 @@
           "anonymous-functions",
           "default-arguments"
         ]
+      },
+      {
+        "slug": "recursion",
+        "uuid": "e17088c8-c40f-4d4c-b5dd-d32f62b8087b",
+        "concepts": ["recursion"],
+        "prerequisites": [
+          "lists",
+          "pattern-matching",
+          "multiple-clause-functions",
+          "guards"
+        ]
       }
     ],
     "practice": []
