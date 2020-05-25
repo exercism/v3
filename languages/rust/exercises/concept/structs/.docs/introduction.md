@@ -6,7 +6,7 @@ In this exercise, you'll be implementing two kinds of methods on a struct. The f
 
 You'll also be implementing methods of another type, generally known as setters. These change the value of the field. Setters aren't very common in Rust--if a field can be freely modified, it is more common to just make it public--but they're useful if updating the field should have side effects, or for access control: a setter marked as `pub(crate)` allows other modules within the same crate to update a private field, which can't be affected by the outside world.
 
-Structs come in three flavors: structs with named fields, tuple structs, and unit structs. For this concept exercise, we'll be exploring the first variant: structs with named fields. 
+Structs come in three flavors: structs with named fields, tuple structs, and unit structs. For this concept exercise, we'll be exploring the first variant: structs with named fields.
 
 Structs are defined using the `struct` keyword, followed by the capitalized name of the type the struct is describing:
 

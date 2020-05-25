@@ -1,6 +1,6 @@
-This concept exercise gave you some practice writing structs and methods in Rust. 
+This concept exercise gave you some practice writing structs and methods in Rust.
 
-One of the important takeaways from this exercise is being able to tell when we need an _immutable_ reference to our struct instance via `&self` vs. when we need a _mutable_ reference to our struct instance via `&mut self`. 
+One of the important takeaways from this exercise is being able to tell when we need an _immutable_ reference to our struct instance via `&self` vs. when we need a _mutable_ reference to our struct instance via `&mut self`.
 
 Notice that the getter methods made use of `&self` since they are only concerned with reading data from our struct instance. The setter methods, in contrast, made use of `&mut self` since they are concerned with updating our struct instance.
 
@@ -9,7 +9,7 @@ It should also be noted that the usage of getter and setter methods in this conc
 ```rust
 pub struct User {
     pub name: String,
-    pub age: u32, 
+    pub age: u32,
     pub weight: f32,
 }
 ```
