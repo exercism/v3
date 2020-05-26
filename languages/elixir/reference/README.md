@@ -260,13 +260,13 @@ The concept exercises use the following concepts:
 | concept                          | interpretation                                                                                 |
 | -------------------------------- | ---------------------------------------------------------------------------------------------- |
 | `anonymous-functions`            | Intro to anonymous functions, functions as data                                                |
-| `atoms`                          | Intro to elixir atom type.                                                                     |
+| `atoms`                          | Intro to Elixir atom type.                                                                     |
 | `basics`                         | Introduction to functions, modules, variables, returning values, integers, invoking functions. |
 | `bit manipulation`               | Introduction to bit manipulation using the Bitwise module functions                            |
 | `booleans`                       | Introduction to the boolean type and strict boolean operators -- and/2, or/2, not/1            |
 | `default-arguments`              | Introduction to default arguments in named functions, function headers                         |
-| `closures`                       | How to implement closures in elixir                                                            |
-| `conditionals`                   | Intro to elixir `cond/1` function.                                                             |
+| `closures`                       | How to implement closures in Elixir                                                            |
+| `conditionals`                   | Intro to Elixir `cond/1` function.                                                             |
 | `floating-point-numbers`         | How to use floating point numbers to represent real numbers                                    |
 | `guards`                         | What guards are, how to use guards in function heads                                           |
 | `lists`                          | Introduction to the lists type basic list functions -- hd/1, tl/1, length/1, in/2              |

@@ -28,7 +28,7 @@ Define the `Pizza` discriminated union to represent the pizza types and the two 
 - `ExtraSauce`
 - `ExtraToppings`
 
-## 2. Calculate the prize of pizza
+## 2. Calculate the price of pizza
 
 Implement the `pizzaPrice` function to calculate a pizza's price:
 
@@ -37,7 +37,7 @@ pizzaPrice Caprese
 // => 9
 ```
 
-## 3. Calculate the prize of an order
+## 3. Calculate the price of an order
 
 Implement the `orderPrice` function to calculate a pizza order's price:
 

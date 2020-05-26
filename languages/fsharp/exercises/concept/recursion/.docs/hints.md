@@ -2,11 +2,11 @@
 
 - The `Pizza` type is a [recursive type][recursive-types], with the `ExtraSauce` and `ExtraToppings` cases "wrapping" a pizza.
 
-## 2. Calculate the prize of pizza
+## 2. Calculate the price of pizza
 
 - To handle the `Pizza` type being a [recursive type][recursive-types], define a [recursive function][recursive-functions].
 
-## 3. Calculate the prize of an order
+## 3. Calculate the price of an order
 
 - If the test fails with a Stack overflow, please use [tail-recursion][tail-recursion] to recursively process the list.
 
