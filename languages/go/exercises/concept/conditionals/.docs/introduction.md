@@ -1,5 +1,3 @@
-# Introduction
-
 ## Logical Operators
 
 Go supports the three logical operators `&&` (AND), `||` (OR), and `!` (NOT).
