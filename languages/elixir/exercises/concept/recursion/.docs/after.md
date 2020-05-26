@@ -32,11 +32,11 @@ def count_occurrences([_ | tail], x), do: count_occurrences(tail, x)
 
 ## Loops through recursion
 
-Due to immutability, loops in Elixir are written differently from imperative languages. For example, in C, a loop would look like this:
+Due to immutability, loops in Elixir are written differently from imperative languages. For example, loops commonly look like:
 
-```c
-for(i = 0; i < sizeof(array); i++) {
-  printf("%d\n", array[i]);
+```
+for(i = 0; i < array.size; i++) {
+  # do something with array[i]
 }
 ```
 
@@ -45,10 +45,10 @@ In a functional language, mutating `i` (by calling `i++`) is not possible. Thus,
 The equivalent of a `for` loop in Elixir would look like this:
 
 ```elixir
-def print_all_elements([]), do: nil
+def loop([]), do: nil
 
-def print_all_elements([head | tail]) do
-  IO.puts(head)
+def loop([head | tail]) do
+  # do something with head
   each(tail)
 end
 ```
