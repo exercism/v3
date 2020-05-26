@@ -7,6 +7,16 @@ let i = 123   // Type is `int`
 let d = 54.29 // Type is `double`
 ```
 
+Both integers and floating-point numbers can use the `_` character as a _digit separator_, which can help when defining large numbers:
+
+```fsharp
+let largeInt = 1_000_000
+// => 1000000
+
+let largeDouble = 9_876_543.21
+// => 9876543.21
+```
+
 Arithmetic is done using the standard [arithmetic operators][arithmetic-operators] (`+`, `-`, `*`, etc.). Numbers can be compared using the [standard comparison operators][comparison-operators] (`<`, `>=`, etc.) and equality (`=`) and inequality (`<>`) operators.
 
 ```fsharp
