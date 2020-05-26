@@ -14,6 +14,18 @@
         "uuid": "e7d8603e-97a9-11ea-9753-0242ac110002",
         "concepts": ["entry-api"],
         "prerequisites": ["hashmaps", "intro-fn", "intro-types", "intro-option"]
+      },
+      {
+        "slug": "numbers",
+        "uuid": "b042200f-5bdd-4010-981e-626e40fd2877",
+        "concepts": ["numbers", "integers", "floating-point-numbers"],
+        "prerequisites": ["intro-fn"]
+      },
+      {
+        "slug": "enums",
+        "uuid": "1924b87a-9246-456f-8fc1-111f922a8cf3",
+        "concepts": ["enums-basic"],
+        "prerequisites": ["strings-basic"]
       }
     ],
     "practice": []
