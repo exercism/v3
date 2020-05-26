@@ -24,7 +24,7 @@
       {
         "slug": "numbers",
         "uuid": "fee79e03-1496-476f-964f-e60632cb13dc",
-        "concepts": ["floating-point-numbers"],
+        "concepts": ["integers", "floating-point-numbers"],
         "prerequisites": ["basics"]
       },
       {

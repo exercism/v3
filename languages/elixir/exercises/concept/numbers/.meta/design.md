@@ -19,6 +19,7 @@ The goal of this exercise is to teach how to use floating point numbers in Elixi
 
 ## Concepts
 
+- `integers`
 - `floating-point-numbers`
 
 ## Prerequisites

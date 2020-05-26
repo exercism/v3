@@ -13,7 +13,7 @@ These are the concept exercises that have currently been implemented, as well as
 | `booleans`                  | `booleans`                                                 | `basics`                                                       |
 | `conditionals`              | `conditionals`, `atoms`                                    | `booleans`                                                     |
 | `lists`                     | `lists`, `string-literals`                                 | `booleans`                                                     |
-| `numbers`                   | `floating-point-numbers`                                   | `basics`                                                       |
+| `numbers`                   | `integers`, `floating-point-numbers`                       | `basics`                                                       |
 | `tuples`                    | `tuples`, `pattern-matching`                               | `multiple-clause-functions`, `floating-point-numbers`, `atoms` |
 | `strings`                   | `strings`                                                  | `lists`, `pattern-matching`                                    |
 | `maps`                      | `maps`, `module-attributes-as-constants`                   | `lists`, `tuples`, `anonymous-functions`, `default-arguments`  |
