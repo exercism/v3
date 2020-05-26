@@ -1,0 +1,2 @@
+defmodule NameBadge do
+end
