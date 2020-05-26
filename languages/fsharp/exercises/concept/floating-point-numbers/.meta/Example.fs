@@ -12,7 +12,10 @@ let private annualYield (balance: decimal): decimal =
 
 let annualBalanceUpdate (balance: decimal): decimal = balance + annualYield balance
 
-let amountToDonate (balance: decimal) (taxFreePercentage: double): int =
-    if balance > 0.0m
-    then int (balance * decimal (taxFreePercentage / 100.0 * 2.0))
-    else 0
+let amountToDonate (balance: decimal) (taxFreePercentage: float): int =
+    if balance > 0.0m then
+        int
+            (balance
+             * decimal (taxFreePercentage / 100.0 * 2.0))
+    else
+        0
