@@ -48,6 +48,22 @@ This exercise deals with analysis on a stack of playing cards. The reference imp
 | ---------- | ------------------------------------- | ------- |
 | JavaScript | [arrays][implementation-javascript-2] | None    |
 
+### Garden bird count
+
+This exercise has one working with garden bird counts. The reference implementation (C#) teaches:
+
+- Define an array
+- Access an element in an array
+- Update an element in an array
+- Use functions on an array
+
+#### Implementations
+
+| Track | Exercise                        | Changes                                    |
+| ----- | ------------------------------- | ------------------------------------------ |
+| C#    | [arrays][implementation-csharp] | None                                       |
+| F#    | [arrays][implementation-fsharp] | Replace looping task with pattern matching |
+
 [type-collection]: ./collection.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/arrays/.docs/introduction.md
 [implementation-javascript-2]: ../../languages/javascript/exercises/concept/array-analysis/.docs/introduction.md

@@ -22,6 +22,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "numbers",
+        "uuid": "fee79e03-1496-476f-964f-e60632cb13dc",
+        "concepts": ["integers", "floating-point-numbers"],
+        "prerequisites": ["basics"]
+      },
+      {
         "slug": "conditionals",
         "uuid": "b26a2f11-d80a-42b9-881a-3575a83ad211",
         "concepts": ["conditionals", "atoms"],
@@ -32,6 +38,16 @@
         "uuid": "3c53b340-680e-45c1-8979-3d79b441a65e",
         "concepts": ["lists", "string-literals"],
         "prerequisites": ["booleans"]
+      },
+      {
+        "slug": "multiple-clause-functions",
+        "uuid": "",
+        "concepts": [
+          "multiple-clause-functions",
+          "guards",
+          "default-arguments"
+        ],
+        "prerequisites": ["conditionals", "string-literals"]
       },
       {
         "slug": "anonymous-functions",
