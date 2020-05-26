@@ -57,7 +57,7 @@ In practice, iterating over lists and other enumerable data structures is most o
 
 ## Infinite execution
 
-Recursive functions, if implemented incorrectly, might never return their result. This can problematic because each time a function is called, a reference is stored in memory where the VM should return the result (on the [call stack][wiki call stack]). If a recursive function calls itself infinitely, it is possible to run out of memory causing the VM to crash (a [stack overflow error][wiki-stack-overflow]). The Erlang VM, on which Elixir runs, is specially optimized for recursion and reliability, so it may take a long time before infinite recursion errors are apparent or crashes occur.
+Recursive functions, if implemented incorrectly, might never return their result. This can be problematic because each time a function is called, a reference is stored in memory where the VM should return the result (on the [call stack][wiki call stack]). If a recursive function calls itself infinitely, it is possible to run out of memory causing the VM to crash (a [stack overflow error][wiki-stack-overflow]). The Erlang VM, on which Elixir runs, is specially optimized for recursion and reliability, so it may take a long time before infinite recursion errors are apparent or crashes occur.
 
 This problem of infinite execution can be caused by:
 
