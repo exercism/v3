@@ -13,11 +13,3 @@ def count([]), do: 0
 # recursive case
 def count([_head | tail]), do: 1 + count(tail)
 ```
-
-Recursive functions, if implemented incorrectly, might never stop executing. If this happens, you need to force stop your program.
-
-This problem can be caused by:
-
-- Forgetting to implement a base case.
-- Not defining the base case as the first clause.
-- Not modifying the argument properly when doing the recursive call, and thus never reaching the base case.
