@@ -9,12 +9,12 @@
 ## 1. Check how many birds visited today
 
 - This task doesn't need recursion.
-- Accessing the first element in a list can be done by pattern-matching.
+- Accessing the first element in a list can be done by [pattern-matching][getting-started-pattern-matching].
 
 ## 2. Increment today's count
 
 - This task doesn't need recursion.
-- Accessing the first element in a list can be done by pattern-matching.
+- Accessing the first element in a list can be done by [pattern-matching][getting-started-pattern-matching].
 
 ## 3. Check if there was a day with no visiting birds
 
@@ -33,6 +33,7 @@
 - A function can have more than one recursive case.
 - Use a [guard][kernel-equal-or-greater-than] for one of the function clauses.
 
+[getting-started-pattern-matching]: https://elixir-lang.org/getting-started/pattern-matching.html#pattern-matching-1
 [getting-started-strings]: https://elixir-lang.org/getting-started/recursion.html
 [elixir-school-recursion]: https://elixirschool.com/blog/recursion/
 [kernel-equal-or-greater-than]: https://hexdocs.pm/elixir/Kernel.html#%3E=/2
