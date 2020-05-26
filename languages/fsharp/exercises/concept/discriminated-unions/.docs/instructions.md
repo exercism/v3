@@ -10,25 +10,25 @@ The following ideas are proposed by your partner:
 
 You have six tasks to help choose your Valentine's day activity.
 
-### 1. Define the approval
+## 1. Define the approval
 
 For each idea your partner proposes, you respond with one of three options: yes, no or maybe.
 
 Define the `Approval` discriminated union to represent these options as the following three cases: `Yes`, `No` and `Maybe`.
 
-### 2. Define the cuisines
+## 2. Define the cuisines
 
 Your partner has selected two possible restaurants: one based on the Korean cuisine and the other based on the Turkish cuisine.
 
 Define the `Cuisine` discriminated union to represent these cuisines as the following two cases: `Korean` and `Turkish`.
 
-### 3. Define the movie genres
+## 3. Define the movie genres
 
 There are tons of movies to choose from, so to narrow things down, your partner also lists their genre.
 
 Define the `Genre` discriminated union to represent the following genres as cases: `Crime`, `Horror`, `Romance` and `Thriller`.
 
-### 4. Define the activity
+## 4. Define the activity
 
 As said, your partner has come up with five different activities: playing a board game, chill out, watch a movie, go to a restaurant and taking a walk.
 
@@ -40,7 +40,7 @@ Define the `Activity` discriminated union to represent these activity types:
 - `Restaurant`: has its `Cuisine` as associated data.
 - `Walk`: has an `int` representing the number of kilometers to walk as associated data.
 
-### 5. Rate the activity
+## 5. Rate the activity
 
 Finally, you're ready to rate your partner's ideas. This is how you feel about your partner's idea:
 

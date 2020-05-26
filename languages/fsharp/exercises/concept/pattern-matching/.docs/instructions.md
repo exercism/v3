@@ -7,7 +7,7 @@ In this exercise, you are playing a number guessing game with a friend. The rule
 
 You have four tasks to encode the replies to the guesses.
 
-### 1. Reply to a correct guess
+## 1. Reply to a correct guess
 
 Implement the `reply` function to reply to a correct guess:
 
@@ -16,7 +16,7 @@ reply 42
 // => "Correct"
 ```
 
-### 2. Reply to a close guess
+## 2. Reply to a close guess
 
 Modify the `reply` function to reply to close guesses:
 
@@ -25,7 +25,7 @@ reply 41
 // => "So close"
 ```
 
-### 3. Reply to too low guesses
+## 3. Reply to too low guesses
 
 Modify the `reply` function to reply to too low guesses:
 
@@ -34,7 +34,7 @@ reply 25
 // => "Too low"
 ```
 
-### 4. Reply to too high guesses
+## 4. Reply to too high guesses
 
 Modify the `reply` function to reply to too high guesses:
 

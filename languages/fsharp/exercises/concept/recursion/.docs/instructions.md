@@ -18,7 +18,7 @@ When customers place and order, an additional fee is added if they only order on
 
 You have three tasks, each of which will work with pizzas and their price.
 
-### 1. Define the pizza types and options
+## 1. Define the pizza types and options
 
 Define the `Pizza` discriminated union to represent the pizza types and the two additional options that can be added to a pizza:
 
@@ -28,7 +28,7 @@ Define the `Pizza` discriminated union to represent the pizza types and the two 
 - `ExtraSauce`
 - `ExtraToppings`
 
-### 2. Calculate the prize of pizza
+## 2. Calculate the price of pizza
 
 Implement the `pizzaPrice` function to calculate a pizza's price:
 
@@ -37,7 +37,7 @@ pizzaPrice Caprese
 // => 9
 ```
 
-### 3. Calculate the prize of an order
+## 3. Calculate the price of an order
 
 Implement the `orderPrice` function to calculate a pizza order's price:
 

@@ -7,7 +7,7 @@ Enum.map([1, 2, 3], &(&1 + 1))
 # => [2, 3, 4]
 ```
 
-### Key points
+## Key points
 
 - Functions are treated as first class citizens:
   - Can be assigned to variables.
@@ -64,7 +64,7 @@ Enum.map([1, 2, 3], &(&1 + 1))
   &<=/2
   ```
 
-- Bound varables from an outer scope can be used in an inner scope using the bound variable name to [create closures][closure].
+- Bound variables from an outer scope can be used in an inner scope using the bound variable name to [create closures][closure].
 
   ```elixir
   def return_closure(x) do

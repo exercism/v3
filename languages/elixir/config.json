@@ -40,6 +40,16 @@
         "prerequisites": ["booleans"]
       },
       {
+        "slug": "multiple-clause-functions",
+        "uuid": "",
+        "concepts": [
+          "multiple-clause-functions",
+          "guards",
+          "default-arguments"
+        ],
+        "prerequisites": ["conditionals", "string-literals"]
+      },
+      {
         "slug": "anonymous-functions",
         "uuid": "1e3ceb20-715c-4157-9192-13284217affc",
         "concepts": ["anonymous-functions", "closures", "bit-manipulation"],

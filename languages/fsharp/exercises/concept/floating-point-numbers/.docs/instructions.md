@@ -9,7 +9,7 @@ Each year the government allows you donate a percentage of your money to charity
 
 You have three tasks, each of which will deal your balance and its interest rate.
 
-### 1. Calculate the interest rate
+## 1. Calculate the interest rate
 
 Implement the `interestRate` function to calculate the interest rate based on the specified balance:
 
@@ -20,7 +20,7 @@ interestRate 200.75m
 
 Note that the value returned is a `single`.
 
-### 2. Calculate the annual balance update
+## 2. Calculate the annual balance update
 
 Implement the `annualBalanceUpdate` function to calculate the annual balance update, taking into account the interest rate:
 
@@ -31,7 +31,7 @@ annualBalanceUpdate 200.75m
 
 Note that the value returned is a `decimal`.
 
-### 3. Calculate how much money to donate
+## 3. Calculate how much money to donate
 
 Implement the `amountToDonate` function to calculate how much money to donate to charities based on the balance and the tax-free percentage that the government allows:
 
