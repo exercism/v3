@@ -30,7 +30,7 @@ numbers[2] = "Deux";
 // Get the value of the element with key 2
 numbers[2];
 // "Deux"
-
+```
 You can test if a value exists in the dictionary with:
 
 ```csharp
