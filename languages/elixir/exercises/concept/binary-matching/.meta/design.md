@@ -25,11 +25,11 @@ After completing this exercise, the student should:
 - `bitstrings` (TODO)
 - `pattern-matching`
 - `strings`
+- `if-conditional`
 
 ## Concepts
 
 - `binaries`
-- `if-conditional`
 
 ## Representer
 
