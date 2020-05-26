@@ -1,4 +1,5 @@
 See the following sections of the Erlang documentation for more information:
+
 - [Expression Evaluation](http://erlang.org/doc/reference_manual/expressions.html#expression-evaluation)
 - [Variables](http://erlang.org/doc/reference_manual/expressions.html#variables)
 - [Function Calls](http://erlang.org/doc/reference_manual/expressions.html#function-calls)
