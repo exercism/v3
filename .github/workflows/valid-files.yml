@@ -18,9 +18,9 @@ jobs:
 
       - name: Error if any file is above 1 MB
         run: |
-          FILES="$(git diff --name-only origin/master...)"
-
-          for FILE in $FILES; do
+          # --diff-filter=d excludes deleted (d) files
+          # -z separates the files using NUL
+          git diff --diff-filter=d --name-only -z origin/master... | while read -r -d '' FILE; do
             if [ "$(stat --printf="%s" "$FILE")" -gt 100000 ]; then
               echo "$FILE is larger than 10 KB"
               echo "Please ping @iHiD if you are sure that this file is required."
@@ -41,7 +41,9 @@ jobs:
 
       - name: Error if filenames contain illegal characters or words
         run: |
-          git diff --name-only -z origin/master... | while read -r -d '' LINE; do
+          # --diff-filter=d excludes deleted (d) files
+          # -z separates the files using NUL
+          git diff --diff-filter=d --name-only -z origin/master... | while read -r -d '' LINE; do
             FILE=$(basename "$LINE")
             if ! [[ "$FILE" =~ ^[a-zA-Z0-9._-]+$ ]]; then
                 echo "$FILE contains illegal characters."
