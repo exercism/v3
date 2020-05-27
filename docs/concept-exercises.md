@@ -139,7 +139,7 @@ This file contains meta information on the exercise:
 
 - The exercise's author(s) (required)
 - The exercise's contributor(s) (optional)
-- Which exercise it was forked from (required if the exercise is forked)
+- Which exercise(s) it was forked from (required if the exercise is forked)
 - Language version requirements (optional)
 
 If someone is both an author _and_ a contributor, only list that person as an author.
@@ -188,6 +188,7 @@ Note that:
 
 - The order of authors and contributors is not significant and has no meaning.
 - If you are forking an exercise, do not reference original authors or contributors. Just ensure that `forked_from` is correct.
+- While not common, it _is_ possible to fork from multiple exercises.
 - `language_versions` is a free-form string that tracks are free to use and interpret as they like.
 
 ## Code files
