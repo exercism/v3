@@ -9,8 +9,8 @@
       {
         "slug": "arrays",
         "uuid": "b6c532c9-1e89-4fbf-8f08-27f5befb5bb8",
-        "concepts": ["arrays", "foreach-loops"],
-        "prerequisites": ["booleans", "classes", "conditionals", "for-loops"]
+        "concepts": ["arrays", "for-loops", "foreach-loops"],
+        "prerequisites": ["booleans", "classes", "conditionals"]
       },
       {
         "slug": "basics",
