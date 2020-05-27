@@ -105,6 +105,9 @@ track/scala:
 track/scheme:
   - languages/scheme/**/*
 
+track/swift:
+  - languages/swift/**/*
+
 track/typescript:
   - languages/typescript/**/*
 
