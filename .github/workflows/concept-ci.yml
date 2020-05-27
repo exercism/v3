@@ -73,8 +73,6 @@ jobs:
         shell: bash -c "julia --color=yes --project=.github/bin/concept-checks {0}"
 
       - name: Run concept checks
+        continue-on-error: true
         run: |
           julia --sysimage=julia-sysimages/sysimage-concept-checks.so --color=yes --project=.github/bin/concept-checks .github/bin/concept-checks/concept-checks.jl -r . -t ${{ steps.track-detection.outputs.track }} ${{ steps.track-detection.outputs.opts }}
-
-          # Temporarily return 0 to fix PR's from failing that don't involve the concept CI
-          exit 0
