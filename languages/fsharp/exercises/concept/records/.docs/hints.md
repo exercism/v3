@@ -1,4 +1,18 @@
-### 1. Define the approval
+### 1. Define the model
+
+### 2. Create a team's coach
+
+### 3. Create a team's stats
+
+### 4. Create a team
+
+### 5. Replace the coach
+
+### 6. Check for duplicates
+
+### 7. Implement the "who to root for" algorithm
+
+<!-- ### 1. Define the approval
 
 - [This page][define] shows how to define a discriminated union.
 
@@ -17,4 +31,4 @@
 [pattern-matching]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching
 [identifier-patterns]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#identifier-patterns
 [wildcard-patterns]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#wildcard-pattern
-[guards]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/match-expressions#guards-on-patterns
+[guards]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/match-expressions#guards-on-patterns -->

@@ -1,31 +1,25 @@
 module Records
 
-type Coach =
-    { Name: string
-      FormerPlayer: bool }
+// TODO: please define the 'Coach' record type
 
-type Record =
-    { Wins: int
-      Losses: int }
+// TODO: please define the 'Stats' record type
 
-type Team =
-    { Name: string
-      Coach: Coach
-      Record: Record }
+// TODO: please define the 'Team' record type
 
-let createCoach name formerPlayer = { Name = name; FormerPlayer = formerPlayer }
+let createCoach (name: string) (formerPlayer: bool): Coach =
+    failwith "Please implement the 'createCoach' function"
 
-let createRecord wins losses = { Wins = wins; Losses = losses }
+let createStats (wins: int) (losses: int): Stats =
+    failwith "Please implement the 'createStats' function"
 
-let createTeam name coach record = { Name = name; Coach = coach; Record = record }
+let createTeam (name: string) (coach: Coach) (stats: Stats) =
+    failwith "Please implement the 'createTeam' function"
 
-let replaceCoach team coach = { team with Coach = coach }
+let replaceCoach (team: Team) (coach: Coach): Team =
+    failwith "Please implement the 'replaceCoach' function"
 
-let haveSameRecord homeTeam awayTeam = homeTeam.Record = awayTeam.Record 
+let isDuplicate (homeTeam: Team) (awayTeam: Team): bool =
+    failwith "Please implement the 'isDuplicate' function"
 
-let rootForTeam team =
-    match team with
-    | { Coach = { Name = "Gregg Popovich" } } -> true
-    | { Coach = { FormerPlayer = true } } -> true
-    | { Name = "Chicago Bulls" } -> true
-    | { Record = { Wins = wins; Losses = losses } } -> wins >= 60 || losses >= 60
+let rootForTeam (team: Team): bool =
+    failwith "Please implement the 'rootForTeam' function"
