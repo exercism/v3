@@ -8,7 +8,7 @@ These are the concept exercises that have currently been implemented, as well as
 
 | exercise                                                            | concepts                                                             | prerequisites                                                                     |
 | ------------------------------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`foreach-loops`                                         | `booleans`<br/>`chars`<br/>`classes`<br/>`conditionals`<br/>`for-loops`           |
+| [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`for-loops`<br/>`foreach-loops`                         | `booleans`<br/>`chars`<br/>`classes`<br/>`conditionals`                           |
 | [`basics`][concept-exercise-basics]                                 | `basics`                                                             | -                                                                                 |
 | [`booleans`][concept-exercise-booleans]                             | `booleans`                                                           | `basics`                                                                          |
 | [`classes`][concept-exercise-classes]                               | `classes`                                                            | `basics`<br/>`conditionals`<br/>`numbers`<br/>`strings`                           |
