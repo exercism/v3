@@ -1,4 +1,4 @@
-In this exercise you're a big sports fan and you've just discovered a passion for NBA basketball. Being new to NBA basketball, you're doing a deep dive into NBA history, keeping track of teams, coaches, their win/loss records and comparing them against each other.
+In this exercise you're a big sports fan and you've just discovered a passion for NBA basketball. Being new to NBA basketball, you're doing a deep dive into NBA history, keeping track of teams, coaches, their win/loss stats and comparing them against each other.
 
 As you don't yet have a favorite team, you'll also be developing an algorithm to figure out whether to root for a particular team.
 
@@ -20,7 +20,7 @@ Define the `Team` record with the following three fields:
 
 - `Name`: the team's name, of type `string`.
 - `Coach`: the team's coach, of type `Coach`.
-- `Stats`: the team's record, of type `Stats`.
+- `Stats`: the team's stats, of type `Stats`.
 
 ### 2. Create a team's coach
 
