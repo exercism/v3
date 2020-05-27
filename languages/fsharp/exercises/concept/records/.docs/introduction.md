@@ -1,4 +1,4 @@
-The discriminated union type represents a fixed number of named cases. Each value of a discriminated union corresponds to exactly one of the named cases.
+<!-- The discriminated union type represents a fixed number of named cases. Each value of a discriminated union corresponds to exactly one of the named cases.
 
 A discriminated union is defined using the `type` keyword, with cases separated by pipe (`|`) characters:
 
@@ -36,4 +36,4 @@ let describe number =
     | Integer i -> sprintf "Integer: %d" i
     | Double d  -> sprintf "Double: %d" i
     | Invalid   -> "Invalid"
-```
+``` -->
