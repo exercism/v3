@@ -6,15 +6,19 @@ The concept exercises are based on this [list of concepts][docs-concept-exercise
 
 These are the concept exercises that have currently been implemented, as well as the concepts they teach and their prerequisite concepts:
 
-| exercise       | concepts                                 | prerequisites                                                  |
-| -------------- | ---------------------------------------- | -------------------------------------------------------------- |
-| `basics`       | `basics`                                 | none                                                           |
-| `booleans`     | `booleans`                               | `basics`                                                       |
-| `conditionals` | `conditionals`, `atoms`                  | `booleans`                                                     |
-| `lists`        | `lists`, `string-literals`               | `booleans`                                                     |
-| `tuples`       | `tuples`, `pattern-matching`             | `multiple-clause-functions`, `floating-point-numbers`, `atoms` |
-| `strings`      | `strings`                                | `lists`, `pattern-matching`                                    |
-| `maps`         | `maps`, `module-attributes-as-constants` | `lists`, `tuples`, `anonymous-functions`, `default-arguments`  |
+| exercise                    | concepts                                                   | prerequisites                                                      |
+| --------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------ |
+| `anonymous-functions`       | `anonymous-functions`, `closures`, `bit-manipulation`      | `basics`                                                           |
+| `basics`                    | `basics`                                                   | none                                                               |
+| `booleans`                  | `booleans`                                                 | `basics`                                                           |
+| `conditionals`              | `conditionals`, `atoms`                                    | `booleans`                                                         |
+| `lists`                     | `lists`, `string-literals`                                 | `booleans`                                                         |
+| `numbers`                   | `integers`, `floating-point-numbers`                       | `basics`                                                           |
+| `tuples`                    | `tuples`, `pattern-matching`                               | `multiple-clause-functions`, `floating-point-numbers`, `atoms`     |
+| `strings`                   | `strings`                                                  | `lists`, `pattern-matching`                                        |
+| `maps`                      | `maps`, `module-attributes-as-constants`                   | `lists`, `tuples`, `anonymous-functions`, `default-arguments`      |
+| `multiple-clause-functions` | `multiple-clause-functions`, `guards`, `default-arguments` | `conditionals`, `string-literals`                                  |
+| `recursion`                 | `recursion`                                                | `lists`, `pattern-matching`, `multiple-clause-functions`, `guards` |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse.
 

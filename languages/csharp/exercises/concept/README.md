@@ -8,12 +8,13 @@ These are the concept exercises that have currently been implemented, as well as
 
 | exercise                                                            | concepts                                                             | prerequisites                                                                     |
 | ------------------------------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`foreach-loops`                                         | `booleans`<br/>`chars`<br/>`classes`<br/>`conditionals`<br/>`for-loops`           |
+| [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`for-loops`<br/>`foreach-loops`                         | `booleans`<br/>`chars`<br/>`classes`<br/>`conditionals`                           |
 | [`basics`][concept-exercise-basics]                                 | `basics`                                                             | -                                                                                 |
 | [`booleans`][concept-exercise-booleans]                             | `booleans`                                                           | `basics`                                                                          |
 | [`classes`][concept-exercise-classes]                               | `classes`                                                            | `basics`<br/>`conditionals`<br/>`numbers`<br/>`strings`                           |
 | [`constructors`][concept-exercise-constructors]                     | `constructors`                                                       | `classes`<br/>`conditionals`<br/>`numbers`<br/>`while-loops`                      |
 | [`dates`][concept-exercise-datetimes]                               | `datetimes`                                                          | `classes`<br/>`numbers`<br/>`strings`                                             |
+| [`dictionaries`][concept-exercise-dictionaries]                     | `dictionaries`                                                       | `foreach-loops`<br/>`generic-types`<br/>`indexers` <br/>`strings`                 |
 | [`enums`][concept-exercise-enums]                                   | `enums`<br/>`pattern-matching-constants`                             | `conditionals`<br/>`strings`                                                      |
 | [`flag-enums`][concept-exercise-flag-enums]                         | `bit-manipulation`<br/>`flag-enums`                                  | `attributes`</br>`enums`<br/>`integers`                                           |
 | [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`while-loops`                           | `conditionals`<br/>`numbers`                                                      |
@@ -42,6 +43,7 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-exercise-constructors]: ./constructors/.meta/design.md
 [concept-exercise-flag-enums]: ./flag-enums/.meta/design.md
 [concept-exercise-datetimes]: ./datetimes/.meta/design.md
+[concept-exercise-dictionaries]: ./dictionaries/.meta/design.md
 [concept-exercise-enums]: ./enums/.meta/design.md
 [concept-exercise-floating-point-numbers]: ./floating-point-numbers/.meta/design.md
 [concept-exercise-inheritance]: ./inheritance/.meta/design.md

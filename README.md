@@ -53,6 +53,7 @@ _(This list is sorted alphabetically.)_
 - [Rust][track-rust]
 - [Scala][track-scala]
 - [Scheme][track-scheme]
+- [Swift][track-swift]
 - [TypeScript][track-typescript]
 - [x86-64-assembly][track-x86-64-assembly]
 
@@ -102,5 +103,6 @@ _(This list is sorted alphabetically.)_
 [track-rust]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Frust
 [track-scala]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fscala
 [track-scheme]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fscheme
+[track-swift]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fswift
 [track-typescript]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Ftypescript
 [track-x86-64-assembly]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fx86-64-assembly

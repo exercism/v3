@@ -9,8 +9,8 @@
       {
         "slug": "arrays",
         "uuid": "b6c532c9-1e89-4fbf-8f08-27f5befb5bb8",
-        "concepts": ["arrays", "foreach-loops"],
-        "prerequisites": ["booleans", "classes", "conditionals", "for-loops"]
+        "concepts": ["arrays", "for-loops", "foreach-loops"],
+        "prerequisites": ["booleans", "classes", "conditionals"]
       },
       {
         "slug": "basics",
@@ -41,6 +41,17 @@
         "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
         "concepts": ["datetimes"],
         "prerequisites": ["classes", "numbers", "strings"]
+      },
+      {
+        "slug": "dictionaries",
+        "uuid": "ea01c7d9-a387-451b-9a69-f1b48f00d7a5",
+        "concepts": ["dictionaries"],
+        "prerequisites": [
+          "foreach-loops",
+          "generic-types",
+          "strings",
+          "indexers"
+        ]
       },
       {
         "slug": "enums",
