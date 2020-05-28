@@ -10,7 +10,7 @@ The goal of this exercise is to teach how to use nil values for when nothing exi
 - Know that `nil` is a special atom
 - Know how to pattern match on `nil`
 - Know how to use the `if`/`unless` macros
-- Know about `true` vs truthiness
+- Know about truthiness
 
 ## Out of scope
 
