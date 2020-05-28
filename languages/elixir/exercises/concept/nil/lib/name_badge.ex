@@ -1,12 +1,8 @@
 defmodule NameBadge do
-  def print(id, name, nil) do
-    print(id, name, "owner")
-  end
-
   def print(id, name, department) do
-    badge = "#{name} - #{String.upcase(department)}"
+    department = if department, do: department, else: "owner"
     prefix = if id, do: "[#{id}] - ", else: ""
 
-    prefix <> badge
+    prefix <> "#{name} - #{String.upcase(department)}"
   end
 end
