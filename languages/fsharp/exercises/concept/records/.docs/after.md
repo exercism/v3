@@ -1,3 +1,5 @@
+TODO
+
 The [discriminated union][define] type represents a fixed number of named cases. Each value of a discriminated union corresponds to exactly one of the named cases. This type of data type is known as a _sum type_.
 
 Each case of a discriminated union can optionally have data associated with it, and different cases can have different types of data. If none of the cases have data associated with them, the discriminated union is similar to what other languages usually refer to as an _enumeration_ (or _enum_).
