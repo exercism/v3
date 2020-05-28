@@ -80,13 +80,12 @@ A `for` loop does have some advantages over a `foreach` loop:
 - You can process collections from back to front by counting down.
 - You can use `for` loops in scenarios that don't involve collections.
 
-
 Related Topics:
-* You should be aware that C# supports [multi-dimensional arrays][multi-dimensional-arrays] like `int[,] arr = new int[10, 5]` which can be very useful.
-* You should also be aware that you can instantiate objects of type [`System.Array`][system-array-object] with `Array.CreateInstance`.  Such objects are of little use - mainly for interop with VB.NET code.  They are not interchangeable with standard arrays (`T[]`).  They can have a non-zero lower bound.
+
+- You should be aware that C# supports [multi-dimensional arrays][multi-dimensional-arrays] like `int[,] arr = new int[10, 5]` which can be very useful.
+- You should also be aware that you can instantiate objects of type [`System.Array`][system-array-object] with `Array.CreateInstance`. Such objects are of little use - mainly for interop with VB.NET code. They are not interchangeable with standard arrays (`T[]`). They can have a non-zero lower bound.
 
 Both the above topics are discussed more fully in a later exercise.
-
 
 [implicitly-typed-arrays]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/implicitly-typed-arrays
 [array-foreach]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays
