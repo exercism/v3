@@ -1,5 +1,3 @@
-# Design
-
 ## Goal
 
 The goal of this exercise is to teach how to use nil values for when nothing exists as a value.
