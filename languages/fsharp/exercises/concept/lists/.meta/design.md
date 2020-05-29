@@ -1,7 +1,3 @@
-## Goal
-
-The goal of this exercise is to teach the student the basics of the Concept of Lists in [F#][lists].
-
 ## Learning objectives
 
 - Know of the existence of the `list` type.
