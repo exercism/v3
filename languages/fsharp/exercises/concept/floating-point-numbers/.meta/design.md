@@ -1,5 +1,3 @@
-# Design
-
 ## Goal
 
 The goal of this exercise is to teach the student how the Concept of Floating-point numbers is implemented in [F#][floating-point-numbers]. It will show the available floating-point types and discuss their differences.
