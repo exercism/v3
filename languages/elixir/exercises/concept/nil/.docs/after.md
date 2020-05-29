@@ -105,7 +105,7 @@ truthy?.(nil)
 # => "falsy"
 ```
 
-The logical operators [`and/2`][kernel-boolean-and], [`or/2`][kernel-boolean-or], and [`not/1`][kernel-boolean-not] only work with boolean values, but they do have equivalents that work with any value - [`&&/2`][kernel-and], [`||/2`][kernel-or], and [`!/1`][kernel-not].
+[`&&/2`][kernel-and], [`||/2`][kernel-or], and [`!/1`][kernel-not] are _truthy_ boolean operators which work with any value, which complement the _strict_ boolean operators [`and/2`][kernel-boolean-and], [`or/2`][kernel-boolean-or], and [`not/1`][kernel-boolean-not].
 
 ```elixir
 0 and true
