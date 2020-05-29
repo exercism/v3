@@ -32,14 +32,4 @@ This exercise's prerequisites Concepts are:
 - `basics`: defining functions and scoping and using integers.
 - `pattern-matching`: know how to do pattern matching.
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
-## Analyzer
-
-This exercise does not require any specific logic to be added to the [analyzer][analyzer].
-
-[analyzer]: https://github.com/exercism/fsharp-analyzer
-[representer]: https://github.com/exercism/fsharp-representer
 [discriminated-unions]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/discriminated-unions

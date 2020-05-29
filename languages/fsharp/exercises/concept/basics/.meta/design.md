@@ -49,10 +49,6 @@ The Concepts this exercise unlocks are:
 
 There are no prerequisites.
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
 ## Analyzer
 
 This exercise could benefit from the following rules added to the the [analyzer][analyzer]:
@@ -62,5 +58,4 @@ This exercise could benefit from the following rules added to the the [analyzer]
 - Verify that the `totalTimeInMinutes` function actually calls the `preparationTimeInMinutes` function.
 
 [analyzer]: https://github.com/exercism/fsharp-analyzer
-[representer]: https://github.com/exercism/fsharp-representer
 [values]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/values/

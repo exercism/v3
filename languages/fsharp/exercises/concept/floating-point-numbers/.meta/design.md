@@ -28,14 +28,4 @@ This exercise's prerequisites Concepts are:
 - `numbers`: define numbers and apply arithmetic and boolean logic to them and convert from one floating-point type to another.
 - `conditionals`: conditionally execute code based on value of floating-point numbers.
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
-## Analyzer
-
-This exercise does not require any specific logic to be added to the [analyzer][analyzer].
-
-[analyzer]: https://github.com/exercism/fsharp-analyzer
-[representer]: https://github.com/exercism/fsharp-representer
 [floating-point-numbers]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/basic-types
