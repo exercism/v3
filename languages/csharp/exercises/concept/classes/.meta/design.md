@@ -29,13 +29,9 @@ The goal of this exercise is to teach the student the Concept of Classes in C#.
 
 ## Concepts
 
-This Concepts Exercise's Concepts are:
-
 - `classes`: know what classes are; know what encapsulation is; know what fields are; know how to create an object; know how to update state through methods; know about the `void` type.
 
 ## Prequisites
-
-This Concept Exercise's prerequisites Concepts are:
 
 - `basics`: know how to define a basic class with basic methods.
 - `strings`: know how to do basic string interpolation.

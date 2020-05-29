@@ -23,13 +23,9 @@ The goal of this exercise is to introduce the student to the concept of [Nullabi
 
 ## Concepts
 
-This Concepts Exercise's Concepts are:
-
 - `nullability`: know of the existence of the `null` literal; know what a `NullReferenceException` is and when it is thrown; know how to compare a value to `null`; know the difference between value and reference types regarding nullability; know how to define nullable reference and value types; know about the null-related operators; know about basic null checking by the compiler.
 
 ## Prerequisites
-
-This Concept Exercise's prerequisites Concepts are:
 
 - `strings`: strings will be compared to `null` and basic methods from strings will be called.
 - `basics`: integers will be compared to `null`, arithmetic operations will be performed on integers, variables will be introduced and updated.

@@ -19,8 +19,6 @@ The goal of this exercise is to teach the student the basics of the Concept of S
 
 ## Concepts
 
-The Concepts this exercise unlocks are:
-
 - `strings`: know of the existence of the `string` type; know of some basic functions (like looking up a character at a position, or slicing the string); know how to do basic string formatting.
 
 ## Prequisites

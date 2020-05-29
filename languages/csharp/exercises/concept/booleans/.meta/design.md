@@ -16,8 +16,6 @@ The goal of this exercise is to teach the student the basics of the Concept of B
 
 ## Concepts
 
-The Concepts this exercise unlocks are:
-
 - `booleans`: know of the existence of the `bool` type and its two values; know about boolean operators and how to build logical expressions with them; know of the boolean operator precedence rules.
 
 ## Prequisites

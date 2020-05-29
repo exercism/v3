@@ -20,13 +20,9 @@ The goal of this exercise is to teach the student the Concept of Inheritance in 
 
 ## Concepts
 
-This Concepts Exercise's Concepts are:
-
 - `inheritance`: know what inheritance is; know how to inherit from a class; know that all types inherit from `object`; know what abstract and sealed classes are; know what abstract and virtual methods are; know how to override methods; know about the `protected` visibility modifier.
 
 ## Prequisites
-
-This Concept Exercise's prerequisites Concepts are:
 
 - `classes`: know how to work with classes.
 - `constructors`: know how to work with constructors.

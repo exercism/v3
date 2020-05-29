@@ -18,8 +18,6 @@ The goal of this exercise is to teach the student how the Concept of floating-po
 
 ## Concepts
 
-The Concepts this exercise unlocks are:
-
 - `floating-point-numbers`: know of the existing of the three floating point types: `double`, `float` and `decimal`. know when to use which floating point type.
 - `while-loops`: know how to write a `while` loop.
 

@@ -18,15 +18,11 @@ The goal of this exercise is to teach the student the Concept of Method Overload
 
 ## Concepts
 
-This Concepts Exercise's Concepts are:
-
 - `method-overloading`: know what method overloading is; know how to define overloaded methods; know the limitations of method overloading
 - `optional-parameters`: know how to define optional parameters
 - `named-arguments`: know how to use named arguments
 
 ## Prequisites
-
-This Concept Exercise's prerequisites Concepts are:
 
 - `classes`: know how to define methods on classes
 - `constructors`: know how to define constructors on classes
