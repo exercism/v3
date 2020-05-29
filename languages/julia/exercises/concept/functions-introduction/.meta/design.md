@@ -1,5 +1,3 @@
-# Design
-
 ## Goal
 
 The goal of this exercise is to teach the student the fundamentals of the Concept of functions in Julia, so that they are able to understand the basic structure of Exercism exercises.

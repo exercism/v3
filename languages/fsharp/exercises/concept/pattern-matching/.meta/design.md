@@ -1,5 +1,3 @@
-# Design
-
 ## Goal
 
 The goal of this exercise is to teach the student the basics of the Concept of Pattern Matching in [F#][pattern-matching].
