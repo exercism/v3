@@ -24,13 +24,9 @@ The goal of this exercise is to teach the student the basics of the Concept of D
 
 ## Concepts
 
-The Concepts this exercise unlocks are:
-
 - `datetimes`: know of the existence of the `DateTime` type; know how to create a `DateTime` instance; know how to get the current date; know of the individual, date- and time-related properties; know how to access the current date; know how to compare dates; know how to convert a `string` to a `DateTime` and vice versa.
 
 ## Prequisites
-
-This exercise's prerequisites Concepts are:
 
 - `numbers`: comparing the hour against specific number values.
 - `strings`: dates are parsed from and converted to strings.

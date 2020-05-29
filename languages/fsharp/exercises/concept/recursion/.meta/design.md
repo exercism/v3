@@ -18,13 +18,9 @@ The goal of this exercise is to teach the student the basics of the Concept of R
 
 ## Concepts
 
-The Concepts this exercise unlocks are:
-
 - `recursion`: know what recursion is; know how to define a recursive function; know how to define a recursive type; know how to write a tail-recursive function.
 
 ## Prequisites
-
-This exercise's prerequisites Concepts are:
 
 - `pattern-matching`: know how to do basic pattern matching.
 - `discriminated-unions`: know how to do define functions and work with parameters.

@@ -24,13 +24,9 @@ The goal of this exercise is to teach the student the basics of the Concept of L
 
 ## Concepts
 
-The Concepts this exercise unlocks are:
-
 - `lists`: know of the existence of the `list` type; know how to define an empty and non-empty list; know how to add an element to a list; know some common list functions; know how to pattern match on lists.
 
 ## Prequisites
-
-This exercise's prerequisites Concepts are:
 
 - `strings`: the lists are lists of strings.
 - `booleans`: return a `bool`.
