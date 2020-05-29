@@ -44,10 +44,6 @@ The Concepts this exercise unlocks are:
 
 There are no prerequisites.
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
 ## Analyzer
 
 This exercise could benefit from the following rules added to the the [analyzer][analyzer]:
@@ -56,4 +52,3 @@ This exercise could benefit from the following rules added to the the [analyzer]
 - Verify that the `TotalTimeInMinutes()` method calls the `PreparationTimeInMinutes()` method.
 
 [analyzer]: https://github.com/exercism/csharp-analyzer
-[representer]: https://github.com/exercism/csharp-representer

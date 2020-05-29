@@ -35,14 +35,4 @@ This exercise's prerequisites Concepts are:
 - `strings`: log lines are `string` values.
 - `conditionals`: know how to execute conditional logic.
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
-## Analyzer
-
-This exercise does not require any specific logic to be added to the [analyzer][analyzer].
-
-[analyzer]: https://github.com/exercism/csharp-analyzer
-[representer]: https://github.com/exercism/csharp-representer
 [docs.microsoft.com-enum]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum

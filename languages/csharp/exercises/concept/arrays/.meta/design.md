@@ -44,14 +44,4 @@ This exercise's prerequisites Concepts are:
 - `booleans`: know what a `bool` is.
 - `basics`: know how to work with `integers` and how to assign and update variables.
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
-## Analyzer
-
-This exercise does not require any specific logic to be added to the [analyzer][analyzer].
-
-[analyzer]: https://github.com/exercism/csharp-analyzer
-[representer]: https://github.com/exercism/csharp-representer
 [docs.microsoft.com-string]: https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netcore-3.1

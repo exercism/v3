@@ -35,10 +35,6 @@ This Concept Exercise's prerequisites Concepts are:
 - `strings`: know how to format strings
 - `basics`: know how to work with integers
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
 ## Analyzer
 
 This exercise could benefit from the following rules added to the the [analyzer][analyzer]:
@@ -46,4 +42,3 @@ This exercise could benefit from the following rules added to the the [analyzer]
 - Verify that the `Describe()` methods take take both a `Character` and `Destination` can be replaced with a single method that uses a default value for the `TravelMethod` parameter.
 
 [analyzer]: https://github.com/exercism/csharp-analyzer
-[representer]: https://github.com/exercism/csharp-representer

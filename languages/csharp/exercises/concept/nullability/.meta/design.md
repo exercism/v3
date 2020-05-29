@@ -36,14 +36,4 @@ This Concept Exercise's prerequisites Concepts are:
 - `conditionals`: using a conditional statement.
 - `memory-allocation`: reference and value types will be used in their nullable and non-nullable variants.
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
-## Analyzer
-
-This exercise does not require any specific logic to be added to the [analyzer][analyzer].
-
-[analyzer]: https://github.com/exercism/csharp-analyzer
-[representer]: https://github.com/exercism/csharp-representer
 [null-keyword]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null
