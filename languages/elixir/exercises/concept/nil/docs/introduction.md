@@ -31,11 +31,11 @@ It is also possible to write an `if` expression on a single line. Note the comma
 if age > 16, do: "beer", else: "no beer"
 ```
 
+This syntax is helpful for very short expressions, but should be avoided if the expression won't fit on a single line.
+
 ## _Truthy_ and _falsy_
 
-A _truthy_ value is a value that is considered true when encountered in a boolean context, for example as a condition in `if`. A _falsy_ value is the opposite.
-
-In Elixir, there are only two _falsy_ values, `false` and `nil`.
+In Elixir, all datatypes evaluate to a _truthy_ or _falsy_ value when they are encountered in a boolean context (like an `if` expression). All data is considered _truthy_ **except** for _false_ and _nil_.
 
 [nil-dictionary]: https://www.merriam-webster.com/dictionary/nil
 [kernel-if]: https://hexdocs.pm/elixir/Kernel.html#if/2
