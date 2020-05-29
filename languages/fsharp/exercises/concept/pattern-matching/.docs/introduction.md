@@ -9,7 +9,7 @@ let describe number =
     | 1 -> "One"
 ```
 
-While this may look like switch statements in other languages, pattern matching starts to shine when also using other patterns. One such pattern is the _variable pattern_, which allows one to capture a value:
+While this may look like `switch` statements in other languages, pattern matching starts to shine when also using other patterns. One such pattern is the _variable pattern_, which allows one to capture a value:
 
 ```fsharp
 match number with
