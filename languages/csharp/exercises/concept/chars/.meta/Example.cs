@@ -1,6 +1,5 @@
 using System;
 using System.Text;
-using Microsoft.VisualBasic.CompilerServices;
 
 public static class CharUtils
 {
