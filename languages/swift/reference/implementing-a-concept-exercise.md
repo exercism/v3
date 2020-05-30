@@ -162,14 +162,12 @@ If you have any questions regarding implementing the exercise, please post them 
 [docs-rationale-for-v3]: ../../../docs/rationale-for-v3.md
 [docs-features-of-v3]: ../../../docs/features-of-v3.md
 [anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
-
 [reference]: ../../../reference
 [swift-format]: https://github.com/apple/swift-format
 [allowing-fork-pr-changes]: https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork
 [video-stub-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1171
 [video-tests-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1255
 [video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
-
 [homebrew]: https://brew.sh
 [xctest]: https://developer.apple.com/documentation/xctest
 
