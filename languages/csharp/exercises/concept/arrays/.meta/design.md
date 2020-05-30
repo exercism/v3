@@ -1,5 +1,3 @@
-# Design
-
 ## Goal
 
 The goal of this exercise is to teach the student the basics of the Concept of Arrays in C#.
@@ -33,6 +31,7 @@ Of the many available C# collection types, we chose to use the `array` collectio
 This Concepts Exercise's Concepts are:
 
 - `arrays`: know of the existence of the `Array` type; know how to define an array; know how to access elements in an array by index; know how to update an element in an array by index; know how to iterate over elements in an array; know of some basic functions (like finding the index of an element in an array).
+- `for-loops`: know how to use a `for` loop to do iteration.
 - `foreach-loops`: know how to iterate over a collection.
 
 ## Prequisites
@@ -40,7 +39,6 @@ This Concepts Exercise's Concepts are:
 This exercise's prerequisites Concepts are:
 
 - `classes`: know how to work with fields.
-- `for-loops`: know what a `for` loop is.
 - `booleans`: know what a `bool` is.
 - `basics`: know how to work with `integers` and how to assign and update variables.
 

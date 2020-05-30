@@ -24,6 +24,7 @@
   - [Rust](/languages/rust/README.md)
   - [Scala](/languages/scala/README.md)
   - [Scheme](/languages/scheme/README.md)
+  - [Swift](/languages/swift/README.md)
   - [Typescript](/languages/typescript/README.md)
   - [x86-64 Assembly](/languages/x86-64-assembly/README.md)
 - Reference
