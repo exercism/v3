@@ -21,7 +21,7 @@ The goal of this exercise is to teach the basics of the `dict` (dictionary, mapp
 - Built-in functions as they relate to this data structure (_e.g._ `copy()`, `len()`, or `enumerate()`.
 - Sorting by `keys` or `values`.
 - Swapping `keys` for `values`.
-- Knowing that Dictionaries can be _nested_, _-- e.g._ " a dictionary of dictionaries".
+- Knowing that Dictionaries can be _nested_, _-- e.g._ ' a dictionary of dictionaries'.
 - Mutability
 - `copy()` vs `deepcopy()`
 - Related `collections` module with `Counter()` and `defaultdict()`
