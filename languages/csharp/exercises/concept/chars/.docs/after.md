@@ -12,3 +12,4 @@ ascii relationship
 relationship to integral types - similar to ushort but very different
 cultural considerations and invariants
 `StringBuilder` is almost always the preferred way to concatenate strings in any sort of loop
+Mention StringInfo.GetNextTextElement
