@@ -48,8 +48,8 @@ characters in sort order. If no such pair of friendly characters exists
 then the character should be appended to the string. Comparisons should be case insensitive.
 
 ```csharp
-CharUtils.InsertChar("ĭⱡ", 'ǩ');
-// => "ĭǩⱡ"
+CharUtils.InsertChar("ႥႧ", 'Ⴆ');
+// => "ႥႦႧ"
 ```
 
 ### 5. Insert an ASCII character into a string
