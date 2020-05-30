@@ -11,6 +11,7 @@ After completing this exercise, the student should:
 
 - Changing charlists to strings and strings to charlists.
 - Pin operator.
+- Ranges.
 
 ## Prerequisites
 
