@@ -20,6 +20,7 @@ This exercise's prerequisites are:
 - `lists`
 - `recursion`
 - `pattern-matching`
+- `guards`
 
 ## Concepts
 

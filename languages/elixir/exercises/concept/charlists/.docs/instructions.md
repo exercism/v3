@@ -27,11 +27,11 @@ Username.sanitize('mark_fischer$$$')
 There are 4 non-Latin characters in the German alphabet, and all of them have commonly-recognized latin substitutes.
 
 | German character | Latin substitute |
-| --- | --- |
-| ä | ae |
-| ö | oe |
-| ü | ue |
-| ß | ss |
+| ---------------- | ---------------- |
+| ä                | ae               |
+| ö                | oe               |
+| ü                | ue               |
+| ß                | ss               |
 
 Extend the `sanitize/1` function. It should substitute German characters according to the table. Assume all usernames are already downcase.
 
