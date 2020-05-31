@@ -28,7 +28,7 @@ if value == "val" {
 
 ## Switch statement
 
- Go also provides a `switch` statement for more advanced scenarios.
+Go also provides a `switch` statement for more advanced scenarios.
 
 ```go
 var value string
