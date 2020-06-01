@@ -92,6 +92,12 @@
           "multiple-clause-functions",
           "guards"
         ]
+      },
+      {
+        "slug": "charlists",
+        "uuid": "45f3a08f-fe0f-4e3e-b325-47bad3c74ea4",
+        "concepts": ["charlists", "case"],
+        "prerequisites": ["lists", "recursion", "pattern-matching", "guards"]
       }
     ],
     "practice": []
