@@ -117,7 +117,7 @@ Note how `ü`, code point `252`, is encoded in UTF-8 as `195` and `188`.
 
 **In practice, charlists are rarely used**. Their main use case is interfacing with Erlang, in particular when using older libraries that do not accept binaries as arguments.
 
-When working with Elixir, **always use strings to store text**. The `String` module offers a wide choice of functions to process text, functions not available for charlists.
+When working with Elixir, **use strings to store text**. The `String` module offers a wide choice of functions to process text, functions not available for charlists.
 
 Charlists can be converted to strings with [`to_string`][kernel-to-string].
 
