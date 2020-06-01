@@ -17,7 +17,7 @@ match number with
 | i -> sprintf: "Non zero: %d" i
 ```
 
-In some cases, you may want to add an additional condition to a pattern. This is knows as a _guard_ (clause), which can be added using the `when` keyword:
+In some cases, you may want to add an additional condition to a pattern. This is known as a _guard_ (clause), which can be added using the `when` keyword:
 
 ```fsharp
 match number with
