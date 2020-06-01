@@ -130,19 +130,29 @@ to_string('hello')
 
 `case` is a control flow structure that allows us to compare a given value against many patterns. Clauses in a `case` statement are evaluated from top to bottom, until a match is found.
 
-```elixir
-age = 15
+In many cases, using `case` is interchangeable with defining multiple function clauses.
 
-case age do
-  0 -> 'infant'
-  age when age < 4 -> 'baby'
-  age when age < 13 -> 'child'
-  age when age < 18 -> 'teenager'
-  _ -> 'adult'
+```elixir
+# one function clause, multiple case clauses
+def age_group(age) do
+  case age do
+    0 -> 'infant'
+    age when age < 4 -> 'baby'
+    age when age < 13 -> 'child'
+    age when age < 18 -> 'teenager'
+    _ -> 'adult'
+  end
 end
 
-# => 'teenager'
+# multiple function clauses, no case
+def age_group(0), do: 'infant'
+def age_group(age) when age < 4, do: 'baby'
+def age_group(age) when age < 13, do: 'child'
+def age_group(age) when age < 18, do: 'teenager'
+def age_group(_), do: 'adult'
 ```
+
+There are no strict rules for choosing one over the other. It's a matter of personal preference that usually depends on context.
 
 [list]: https://hexdocs.pm/elixir/List.html
 [list-ascii-printable]: https://hexdocs.pm/elixir/List.html#ascii_printable?/2
