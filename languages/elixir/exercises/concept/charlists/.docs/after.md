@@ -99,8 +99,6 @@ You can prepend a character with `?` to get its code point.
 # => ':)'
 ```
 
-We have been saying how charlists are lists of integers, not chars. While there is no _basic_ char type in Elixir, there is a [built-in `char` type][typespecs-built-in-types] defined as an integer in the range `0..0x10FFFF`.
-
 ## Charlists vs strings
 
 Each value in a charlist is the Unicode code point of a character whereas in a string, the codepoints are encoded as UTF-8.
