@@ -3,6 +3,7 @@
 - [Languages](/languages/README.md)
   - [Bash](/languages/bash/README.md)
   - [C](/languages/c/README.md)
+  - [C++](/languages/cpp/README.md)
   - [C#](/languages/csharp/README.md)
   - [Clojure](/languages/clojure/README.md)
   - [Common Lisp](/languages/common-lisp/README.md)
