@@ -2,12 +2,13 @@ Elixir provides an elegant syntax working with binary data as we have seen with 
 
 ## Binary data
 
-The binary type is a specialization on the bitstring type. Where bitstrings could be of any length (any number of [bits][wiki-bit]), binaries are where the number of [bits][wiki-bit] can be evenly divided by 8. That is, when working with binaries, we often think of things in terms of [bytes][wiki-bytes] (8 [bits][wiki-bit]). A [byte][wiki-bytes] can represent integer numbers from `0 - 255`. It is common to work with [bytes][wiki-byte] values in [hexadecimal][wiki-hexadecimal], `0x00 - 0xFF`.
+The binary type is a specialization on the bitstring type. Where bitstrings could be of any length (any number of [bits][wiki-bit]), binaries are where the number of [bits][wiki-bit] can be evenly divided by 8. That is, when working with binaries, we often think of things in terms of [bytes][wiki-bytes] (8 [bits][wiki-bit]). A [byte][wiki-bytes] can represent integer numbers from `0` to `255`. It is common to work with [byte][wiki-byte] values in [hexadecimal][wiki-hexadecimal], `0x00 - 0xFF`.
 
-Binaries may use the bitstring special form `<<>>` to define a literal. When defining a literal, we can use integer literals (numbers greater than 255 will overflow and only the last 8 bits of the integer will be used) and string literals. By default, the `::binary` modifier is applied to the value. We can concatenate binaries with the `<>/2` operator.
+Binaries literals are defined using the bitstring special form `<<>>` to define a literal. When defining a literal, we can use integer and string literals. Integer values greater than 255 will overflow and only the last 8 bits of the integer will be used. By default, the `::binary` modifier is applied to the value. We can concatenate binaries with the `<>/2` operator.
 
 ```elixir
 <<255>> == <<0xFF>>
+<<256>> == <<0>> # Overflowing bits are truncated
 <<"Hello">> == <<72, 101, 108, 108, 111>>
 ```
 
@@ -19,7 +20,7 @@ Why does the bitstring special form `<<>>` allow string literals? It is because 
 
 ```elixir
 # This string has a string length of 5, but is made up of 7 bytes
-string = "hełło"
+string = "cześć"
 String.length(string) != byte_size(string)
 
 # Even emoji strings are encoded binaries
