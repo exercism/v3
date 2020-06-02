@@ -6,7 +6,7 @@ Telling people to give up their favorite old email client is a lost battle, so y
 
 ## 1. Sanitize existing usernames by removing everything but lowercase letters
 
-Write a `sanitize/1` function. It should accept a username as a charlist and return the username with all characters but lowercase letters removed.
+Implement the `sanitize/1` function. It should accept a username as a charlist and return the username with all characters but lowercase letters removed.
 
 ```elixir
 Username.sanitize('schmidt1985')
