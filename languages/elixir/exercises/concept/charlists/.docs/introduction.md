@@ -4,7 +4,7 @@ Charlists are created using single quotes.
 'hello'
 ```
 
-A charlist is a list of integers where the integers represent the Unicode values of a given character — also known as code points.
+Although they look similar to strings, the two data types are quite different from one another. A charlist is a list of integers. The integers represent the Unicode values of a given character — also known as code points.
 
 ```elixir
 [65, 66, 67]
