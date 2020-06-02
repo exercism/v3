@@ -11,6 +11,7 @@ These are the concept exercises that have currently been implemented, as well as
 | `anonymous-functions`       | `anonymous-functions`, `closures`, `bit-manipulation`      | `basics`                                                           |
 | `basics`                    | `basics`                                                   | none                                                               |
 | `booleans`                  | `booleans`                                                 | `basics`                                                           |
+| `charlists`                 | `charlists`, `case`                                        | `lists`, `recursion`, `pattern-matching`, `guards`                 |
 | `conditionals`              | `conditionals`, `atoms`                                    | `booleans`                                                         |
 | `lists`                     | `lists`, `string-literals`                                 | `booleans`                                                         |
 | `nil`                       | `nil`, `if-conditional`                                    | `booleans`, strings`                                               |
