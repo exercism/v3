@@ -29,7 +29,7 @@ first_letter
 # => 99
 ```
 
-You can concatenate two lists together using `++`.
+You can concatenate two lists using `++`.
 
 ```elixir
 'hi' ++ '!'
