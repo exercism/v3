@@ -3,8 +3,8 @@ defmodule FileSniffer do
     raise "Please implement type_from_extension/1"
   end
 
-  def type_from_header(file_binary) do
-    raise "Please implement type_from_header/1"
+  def type_from_binary(file_binary) do
+    raise "Please implement type_from_binary/1"
   end
 
   def verify(file_binary, extension) do

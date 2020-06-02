@@ -34,30 +34,30 @@ defmodule FileSnifferTest do
     end
   end
 
-  describe "get type from header:" do
+  describe "get type from binary:" do
     @tag :pending
     test "bmp" do
-      assert FileSniffer.type_from_header(@bmp_file) == {:ok, "image/bmp"}
+      assert FileSniffer.type_from_binary(@bmp_file) == {:ok, "image/bmp"}
     end
 
     @tag :pending
     test "gif" do
-      assert FileSniffer.type_from_header(@gif_file) == {:ok, "image/gif"}
+      assert FileSniffer.type_from_binary(@gif_file) == {:ok, "image/gif"}
     end
 
     @tag :pending
     test "jpg" do
-      assert FileSniffer.type_from_header(@jpg_file) == {:ok, "image/jpg"}
+      assert FileSniffer.type_from_binary(@jpg_file) == {:ok, "image/jpg"}
     end
 
     @tag :pending
     test "png" do
-      assert FileSniffer.type_from_header(@png_file) == {:ok, "image/png"}
+      assert FileSniffer.type_from_binary(@png_file) == {:ok, "image/png"}
     end
 
     @tag :pending
     test "exe" do
-      assert FileSniffer.type_from_header(@exe_file) == {:ok, "application/octet-stream"}
+      assert FileSniffer.type_from_binary(@exe_file) == {:ok, "application/octet-stream"}
     end
   end
 
