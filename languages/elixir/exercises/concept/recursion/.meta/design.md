@@ -20,10 +20,6 @@
 
 - `recursion`
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
 ## Analyzer
 
 This exercise could benefit from the following rules added to the the [analyzer][analyzer]:
@@ -35,4 +31,3 @@ This exercise could benefit from the following rules added to the the [analyzer]
   - list comprehensions (`for x <- list`)
 
 [analyzer]: https://github.com/exercism/elixir-analyzer
-[representer]: https://github.com/exercism/elixir-representer

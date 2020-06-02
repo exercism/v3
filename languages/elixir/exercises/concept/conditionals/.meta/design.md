@@ -24,14 +24,9 @@ After completing this exercise, the student should:
 - `basics`: be able to define a named function, return a value.
 - `booleans`: be able to work with boolean values, boolean expressions
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
 ## Analyzer
 
 This exercise does not require any specific logic to be added to the [analyzer][analyzer].
 
 [analyzer]: https://github.com/exercism/elixir-analyzer
-[representer]: https://github.com/exercism/elixir-representer
 [atom]: https://elixir-lang.org/getting-started/basic-types.html#atoms

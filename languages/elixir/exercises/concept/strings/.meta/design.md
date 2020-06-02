@@ -24,10 +24,6 @@ After completing this exercise, the student should:
 
 - `strings`: knows how to concatenate strings, interpolate expressions inside of strings, create multiline strings, and modify strings using the _String module_.
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
 ## Analyzer
 
 This exercise could benefit from the following rules added to the the [analyzer][analyzer]:
@@ -37,4 +33,3 @@ This exercise could benefit from the following rules added to the the [analyzer]
 - Verify that the `pair/1` function calls the `initials/1` function and uses `"""` to create the string.
 
 [analyzer]: https://github.com/exercism/elixir-analyzer
-[representer]: https://github.com/exercism/elixir-representer

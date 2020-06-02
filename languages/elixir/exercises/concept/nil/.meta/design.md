@@ -18,13 +18,8 @@
 - `strings`
 - `booleans` - not strictly necessary for solving the exercise, but necessary for talking about `if`
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
 ## Analyzer
 
 - Check that at least one `if` macro was used to solve the exercise.
 
 [analyzer]: https://github.com/exercism/elixir-analyzer
-[representer]: https://github.com/exercism/elixir-representer

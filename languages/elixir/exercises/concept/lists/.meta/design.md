@@ -33,10 +33,6 @@
   - know how to return booleans values from a function
   - know of the naming convention for functions that return strict boolean values
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
 ## Analyzer
 
 This exercise does not require any specific logic to be added to the [analyzer][analyzer].
@@ -49,6 +45,5 @@ It may benefit from additions which ensure the use of the `hd/1`, `tl/1`, `lengt
 - Getting started tutorial: [Lists][getting-started-lists]
 
 [analyzer]: https://github.com/exercism/csharp-analyzer
-[representer]: https://github.com/exercism/csharp-representer
 [hexdocs-lists]: https://hexdocs.pm/elixir/List.html
 [getting-started-lists]: https://elixir-lang.org/getting-started/basic-types.html#linked-lists
