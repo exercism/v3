@@ -1,5 +1,3 @@
-This is done through the implementation of a basic kitchen calculator.
-
 ## Learning objectives
 
 - Know what a tuple is

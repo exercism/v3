@@ -1,7 +1,3 @@
-## Goal
-
-The goal of this exercise is to teach the student the basics of booleans and boolean logical expressions in Elixir through the expression of game rule logic(1).
-
 ## Learning objectives
 
 - Know what a variable is.

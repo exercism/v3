@@ -1,7 +1,3 @@
-## Goal
-
-The goal of this exercise is to introduce the student to the list type in Elixir.
-
 ## Learning objectives
 
 - Know of the existence of the `list` type.

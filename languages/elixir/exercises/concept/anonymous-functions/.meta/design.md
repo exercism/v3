@@ -1,7 +1,3 @@
-## Goal
-
-The goal of this exercise is to teach students how to use anonymous functions, return functions from functions, use closures in code.
-
 ## Learning objectives
 
 After completing this exercise, the student should:
