@@ -1,9 +1,3 @@
-# Design
-
-## Goal
-
-The goal of this exercise is to teach the student about the binary data type in Elixir
-
 ## Learning objectives
 
 After completing this exercise, the student should:
@@ -30,10 +24,6 @@ After completing this exercise, the student should:
 ## Concepts
 
 - `binaries`
-
-## Representer
-
-- No modifications necessary I believe.
 
 ## Analyzer
 
