@@ -6,4 +6,4 @@ module Basics
 
 // TODO: define the 'preparationTimeInMinutes' function
 
-// TODO: define the 'totalTimeInMinutes' function
+// TODO: define the 'elapsedTimeInMinutes' function

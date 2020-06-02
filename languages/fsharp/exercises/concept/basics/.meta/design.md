@@ -51,7 +51,7 @@ This exercise could benefit from the following rules added to the the [analyzer]
 
 - Verify that the whitespace adheres to community defaults.
 - Verify that the `remainingMinutesInOven` function uses the `expectedMinutesInOven` binding.
-- Verify that the `totalTimeInMinutes` function actually calls the `preparationTimeInMinutes` function.
+- Verify that the `elapsedTimeInMinutes` function actually calls the `preparationTimeInMinutes` function.
 
 [analyzer]: https://github.com/exercism/fsharp-analyzer
 [values]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/values/
