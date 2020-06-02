@@ -16,6 +16,7 @@
   - [JavaScript](/languages/javascript/README.md)
   - [Julia](/languages/julia/README.md)
   - [Kotlin](/languages/kotlin/README.md)
+  - [Nim](/languages/nim/README.md)
   - [OCaml](/languages/ocaml/README.md)
   - [PureScript](/languages/purescript/README.md)
   - [Python](/languages/python/README.md)
