@@ -16,7 +16,7 @@ is_list('hello')
 # => true
 ```
 
-Because charlist are list, you can work with them just like with any other list - using recursion and pattern matching, or using the [`List`][list] module.
+Because charlist are lists, you can work with them just like with any other list - using recursion and pattern matching, or using the [`List`][list] module.
 
 ```elixir
 [first_letter | _] = 'cat'
