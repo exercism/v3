@@ -14,8 +14,6 @@
 
 ## Prerequisites
 
-The exercise's prerequisites are:
-
 - `atoms`: needs to be able to define and use atoms for return values
 - `multiple-clause-functions`: need to know that a named function can be overloaded and Elixir will attempt to use them all until one found
 - `floating-point-numbers`: need to know how to use floating point numbers to convert

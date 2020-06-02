@@ -11,8 +11,6 @@
 
 ## Prerequisites
 
-This exercise's prerequisites are:
-
 - `lists`
 - `pattern-matching`: necessary for working with lists.
 - `multiple-clause-functions`: the preferred way of defining a base case and a recursive step.

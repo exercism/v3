@@ -14,8 +14,6 @@ After completing this exercise, the student should:
 
 ## Prerequisites
 
-This exercise's prerequisites are:
-
 - `basics`: needs to be able to define named functions, return values
 
 ## Concepts
