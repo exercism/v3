@@ -104,6 +104,17 @@
         "uuid": "45f3a08f-fe0f-4e3e-b325-47bad3c74ea4",
         "concepts": ["charlists", "case"],
         "prerequisites": ["lists", "recursion", "pattern-matching", "guards"]
+      },
+      {
+        "slug": "binary-matching",
+        "uuid": "1653d476-5354-4d99-a990-1db418a7281c",
+        "concepts": ["binaries"],
+        "prerequisites": [
+          "strings",
+          "pattern-matching",
+          "if-conditional",
+          "bitstrings"
+        ]
       }
     ],
     "practice": []
