@@ -206,6 +206,7 @@ What these files look like depends on your track. At a minimum, the following tr
 - For compiled languages, consider having compilable code, as compiler messages can sometimes be hard to grasp for students new to the language.
 - The code should be as simple as possible.
 - Only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
+- The stub file is shown to the student when doing in-browser coding and is downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-stub-file] and check [this example stub file][stub-file].
 
@@ -217,6 +218,7 @@ For more information, watch [this video][video-stub-file] and check [this exampl
 - The code should be as simple as possible.
 - Only use language features introduced by the exercise's prerequisites (and their prerequisites, and so on).
 - All but the first test should be skipped by default. How this is done differs between languages.
+- The tests file is _not_ shown to the student when doing in-browser coding, but _is_ downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-tests-file] and check [this example tests file][tests-file].
 
@@ -227,6 +229,7 @@ For more information, watch [this video][video-tests-file] and check [this examp
 - The implementation must be _idiomatic_.
 - The code should be as simple as possible.
 - Only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
+- The example file is _not_ shown to the student when doing in-browser coding and is _not_ downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-example-file] and check [this example file][example-file].
 
