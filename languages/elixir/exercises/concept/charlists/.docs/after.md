@@ -51,7 +51,7 @@ If a list of integers contains only integers that are code points of printable c
 # => 'ABC'
 ```
 
-If a list of integers contains even one code point of an unprintable character (e.g. `0-6`, `14-26`, `28-31), it will be displayed as a list. Even if it was defined using the`''` syntax.
+If a list of integers contains even one code point of an unprintable character (e.g. `0-6`, `14-26`, `28-31`), it will be displayed as a list. Even if it was defined using the`''` syntax.
 
 ```elixir
 'ABC\0'
