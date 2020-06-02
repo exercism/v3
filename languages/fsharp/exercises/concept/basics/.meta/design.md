@@ -1,7 +1,3 @@
-## Goal
-
-The goal of this exercise is to teach the student the basics of programming in [F#][values].
-
 ## Learning objectives
 
 - Know what a value is.

@@ -1,7 +1,3 @@
-## Goal
-
-The goal of this exercise is to teach the student the basics of the Concept of Recursion in [F#][recursion]. It will do this both by teaching about recursive functions as well as recursive types.
-
 ## Learning objectives
 
 - Know what recursion is.

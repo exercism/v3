@@ -1,7 +1,3 @@
-## Goal
-
-The goal of this exercise is to teach the student how the Concept of Numbers is implemented in F#. It will introduce this concept through the two most common numeric types in F#: `int` (whole number) and `float` (floating-point number).
-
 ## Learning objectives
 
 - Know of the existence of the two most commonly used number types, `int` and `float`.
