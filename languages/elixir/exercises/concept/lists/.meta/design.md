@@ -19,8 +19,6 @@
 
 ## Concepts
 
-The concepts this exercise unlocks are:
-
 - `lists`
   - know of the existence of the `list` type;
   - know of the idea of `list` design;

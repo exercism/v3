@@ -22,8 +22,6 @@ After completing this exercise, the student should:
 
 ## Concepts
 
-The concepts this exercise unlocks are:
-
 - `strings`: knows how to concatenate strings, interpolate expressions inside of strings, create multiline strings, and modify strings using the _String module_.
 
 ## Representer

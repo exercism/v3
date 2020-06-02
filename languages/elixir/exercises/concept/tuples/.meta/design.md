@@ -18,7 +18,7 @@
 - `multiple-clause-functions`: need to know that a named function can be overloaded and Elixir will attempt to use them all until one found
 - `floating-point-numbers`: need to know how to use floating point numbers to convert
 
-## Concepts unlocked
+## Concepts
 
 - `tuples` know of the existence of the `tuple` data type, how to define tuple literals, extract values from a tuple using `elem/2`
 - `pattern-matching` basic knowledge of pattern matching using `=/2` and on function parameters

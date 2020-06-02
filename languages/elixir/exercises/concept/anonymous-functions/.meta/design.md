@@ -18,8 +18,6 @@ After completing this exercise, the student should:
 
 ## Concepts
 
-The concepts this exercise unlocks are:
-
 - `anonymous-functions`: know of the existence of anonymous functions and know how to write them.
 - `closures`: know how to use closures in Elixir
 

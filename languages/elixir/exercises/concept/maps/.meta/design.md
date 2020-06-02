@@ -20,8 +20,6 @@
 
 ## Concepts
 
-The Concepts this exercise unlocks are:
-
 - `maps`: See above goals
 
 ## Prerequisites

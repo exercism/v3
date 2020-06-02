@@ -16,8 +16,6 @@ After completing this exercise, the student should:
 
 ## Concepts
 
-The Concepts this exercise unlocks are:
-
 - `conditionals`: know of the existence of the `cond` control flow structure; know how to use boolean expressions to control flow;
 - `atoms`: know how to use `atom` values.
 

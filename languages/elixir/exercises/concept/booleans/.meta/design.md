@@ -23,8 +23,6 @@
 
 ## Concepts
 
-The concepts this exercise unlocks are:
-
 - `booleans` know of the existence of the `boolean` type and its two values, boolean operators, and how to build boolean logical expressions, and know boolean operator precedence rules.
 
 ## Representer
