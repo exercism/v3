@@ -101,7 +101,7 @@ You can prepend a character with `?` to get its code point.
 
 ## Charlists vs strings
 
-Each value in a charlist is the Unicode code point of a character whereas in a string, the codepoints are encoded as UTF-8.
+Each value in a charlist is the [Unicode code point of a character][unicode-table] whereas in a string, the codepoints are encoded as [UTF-8][utf8].
 
 ```elixir
 IO.inspect('tschüss', charlists: :as_lists)
@@ -160,3 +160,5 @@ There are no strict rules for choosing one over the other. It's a matter of pers
 [typespecs-built-in-types]: https://hexdocs.pm/elixir/typespecs.html#built-in-types
 [string]: https://hexdocs.pm/elixir/String.html#functions
 [kernel-to-string]: https://hexdocs.pm/elixir/Kernel.html#to_string/1
+[unicode-table]: https://unicode-table.com/en/
+[utf8]: https://www.fileformat.info/info/unicode/utf8.htm
