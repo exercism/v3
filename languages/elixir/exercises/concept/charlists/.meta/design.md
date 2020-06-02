@@ -15,8 +15,6 @@ After completing this exercise, the student should:
 
 ## Prerequisites
 
-This exercise's prerequisites are:
-
 - `lists`
 - `recursion`
 - `pattern-matching`
@@ -24,14 +22,8 @@ This exercise's prerequisites are:
 
 ## Concepts
 
-The concepts this exercise unlocks are:
-
 - `charlists`
 - `case`
-
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
 
 ## Analyzer
 
