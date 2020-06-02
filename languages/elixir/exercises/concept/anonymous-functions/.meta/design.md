@@ -21,9 +21,4 @@ After completing this exercise, the student should:
 - `anonymous-functions`: know of the existence of anonymous functions and know how to write them.
 - `closures`: know how to use closures in Elixir
 
-## Analyzer
-
-This exercise does not require any specific logic to be added to the [analyzer][analyzer].
-
-[analyzer]: https://github.com/exercism/elixir-analyzer
 [fns]: https://elixir-lang.org/getting-started/basic-types.html#anonymous-functions

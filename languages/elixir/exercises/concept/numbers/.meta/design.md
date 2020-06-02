@@ -19,9 +19,3 @@
 ## Prerequisites
 
 - `basics`
-
-## Analyzer
-
-This exercise does not require any specific logic to be added to the [analyzer][analyzer].
-
-[analyzer]: https://github.com/exercism/elixir-analyzer
