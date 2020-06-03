@@ -1,4 +1,4 @@
-# Lasagna Recipe
+# File Sniffer
 
 ## Story
 
@@ -24,6 +24,6 @@ The story facilitates defining functions:
 
 ## Implementations
 
-- [Elixir][implementation-elixir]
+- [Elixir][implementation-elixir] (reference implementation)
 
 [implementation-elixir]: ../../languages/elixir/exercises/concept/binary-matching/.docs/instructions.md

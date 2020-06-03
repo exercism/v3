@@ -9,7 +9,7 @@
 
 ## 2. Given a binary file, return the expected media type
 
-- Use the [binary special forms][special-forms] available to you for writing a binary literal.
+- Use the [binary special form][special-forms] available to you for writing a binary literal.
 - Use [pattern matching][binary-matching] to match against the first few bytes of the file binary.
 
 ## 3. Given an extension and a binary file, verify that the file matches the expected type
