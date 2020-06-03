@@ -5,8 +5,8 @@ A write-once container which sets its value in the future. Similar to [Future][t
   * Fulfilled or Resolved: the success state after the operation is successfully completed
   * Rejected: the error state signalling that the operation has failed
 
+[type-future]: ./future.md
+
 ---
 
 [1] Promise, MDN Web Docs. (2020). https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise (accessed June 3, 2020).
-
-[type-future]: ./future.md
