@@ -1,9 +1,3 @@
-# Design
-
-## Goal
-
-The goal of this exercise is to teach how to use the access behavior to retrieve data from nested data structures which implement the behavior. Out of the box, maps and keyword lists implement the access behavior.
-
 ## Learning objectives
 
 - Know of the access behavior
@@ -11,7 +5,7 @@ The goal of this exercise is to teach how to use the access behavior to retrieve
 - Know the syntax for the access behavior
 - limitations of the access behavior
   - doesn't work for structs
-  - doesn't raise errors
+  - doesn't raise errors in some circumstances
 
 ## Out of scope
 
@@ -24,8 +18,6 @@ The goal of this exercise is to teach how to use the access behavior to retrieve
 
 ## Prerequisites
 
-- `keyword-lists` TODO
-- `regex` TODO
 - `maps`
 - `strings`
 - `recursion`
@@ -47,3 +39,6 @@ Follows the **Basketball Website Story** (outlined [here](https://github.com/exe
 
 - That `structs` aren't used.
 - That the `static access operator` isn't used.
+- That `Map` module functions aren't used.
+- That for `extract_from_path/2` get_in isn't used, but that access behavior is used
+- That for `get_in_path/2` get_in is used
