@@ -47,6 +47,5 @@ This exercise does not require any specific representation logic to be added to 
 
 This exercise does not require any specific logic to be added to the [analyzer][analyzer]:
 
-
 [analyzer]: https://github.com/exercism/java-analyzer
 [representer]: https://github.com/exercism/java-representer
