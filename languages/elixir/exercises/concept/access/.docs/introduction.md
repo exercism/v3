@@ -14,4 +14,4 @@ my_map[:key] == "my value"
 your_map["key"] == nil
 ```
 
-If the key does not exist in the data structure, then nil is returned. This can be a source of unintended behaviour, because it does not raise an error.
+If the key does not exist in the data structure, then nil is returned. This can be a source of unintended behavior, because it does not raise an error.
