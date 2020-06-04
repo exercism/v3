@@ -9,23 +9,10 @@ Binary literals are defined using the bitstring special form `<<>>` to define a 
 ```elixir
 <<255>> == <<0xFF>>
 <<256>> == <<0>> # Overflowing bits are truncated
-<<"Hello">> == <<72, 101, 108, 108, 111>>
+<<2, 4, 6, 8, 10, 12, 14, 16>> == <<0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0E, 0x10>>
 ```
 
 A _null-byte_ is another name for `<<0>>`
-
-## Strings are encoded binary data
-
-Why does the bitstring special form `<<>>` allow string literals? It is because string are encoded binaries in Elixir! Strings are encoded in [UTF-8][wiki-utf8] format. That is, they are encoded in 8-bit (one-byte) chunks, which allows them to represent more than 255 characters. Therefore, in elixir, the length of a string may not be the same as its byte representation
-
-```elixir
-# This string has a string length of 5, but is made up of 7 bytes
-string = "cześć"
-String.length(string) != byte_size(string)
-
-# Even emoji strings are encoded binaries
-"👍" == <<240, 159, 145, 141>>
-```
 
 ## Pattern Matching on binary data
 
@@ -34,15 +21,6 @@ Pattern matching is even extended to binaries, and we can pattern match on a por
 ```elixir
 # Ignore the first 8 bytes, match and bind the remaining to `body
 <<_::binary-size(8), body::binary>>
-```
-
-We can also do this for strings
-
-```elixir
-# match the first 5 bytes to `name`, match the string literal " the ", match remaining bytes to `species`
-<<name::binary-size(5), " the ", species::binary>> = <<"Frank the Walrus">>
-{name, species}
-# => {"Frank", "Walrus"}
 ```
 
 And like previous examples of pattern matching, we can use this in function signatures to match when selecting from multiple function clauses.
