@@ -21,7 +21,7 @@
 - `maps`
 - `strings`
 - `recursion`
-- `nil-values`
+- `nil`
 
 ## Narrative for exercise
 

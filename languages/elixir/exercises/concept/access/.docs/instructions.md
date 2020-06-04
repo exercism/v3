@@ -37,6 +37,6 @@ Implement `get_in_path/2` to use this `Kernel` module function.
 The arguments expected are the same as part 1.
 
 ```elixir
-BasketballWebsite.extract_from(data, "team_mascot.actor.first_name")
+BasketballWebsite.get_in_path(data, "team_mascot.actor.first_name")
 # => "Noel"
 ```
