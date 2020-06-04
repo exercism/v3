@@ -104,6 +104,12 @@
         "uuid": "45f3a08f-fe0f-4e3e-b325-47bad3c74ea4",
         "concepts": ["charlists", "case"],
         "prerequisites": ["lists", "recursion", "pattern-matching", "guards"]
+      },
+      {
+        "slug": "access-behavior",
+        "uuid": "ba03df1d-20e4-4527-a8a7-afc97a834975",
+        "concepts": ["access-behavior"],
+        "prerequisites": ["maps", "strings", "recursion", "nil"]
       }
     ],
     "practice": []

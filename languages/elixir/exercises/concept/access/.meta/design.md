@@ -10,11 +10,11 @@
 ## Out of scope
 
 - structs
-- static access operator
+- static access operator (e.g. map.key to obtain value)
 
 ## Concepts
 
-- `map-access-behavior`
+- `access-behavior`
 
 ## Prerequisites
 
