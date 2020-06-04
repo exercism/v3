@@ -17,10 +17,8 @@ count = 2;     // Update to new value
 Java is an object-oriented language and requires all functions to be defined in a _class_, which are defined using the [`class` keyword][classes]. A function within a class is referred to as a _method_. Each [method][methods] can have zero or more parameters. All parameters must be explicitly typed, there is no type inference for parameters. Similarly, the return type must also be made explicit. Values are returned from functions using the [`return` keyword][return]. To allow a method to be called by other classes, the `public` access modifier must be added.
 
 ```java
-class Calculator
-{
-    public int add(int x, int y)
-    {
+class Calculator {
+    public int add(int x, int y) {
         return x + y;
     }
 }
@@ -35,10 +33,8 @@ int sum = new Calculator().add(1, 2);
 If a method does not use any class _state_ (which is the case in this exercise), the method can be made _static_ using the `static` modifier. Similarly, if a class only has static methods, it too can be made static using the `static` modifier.
 
 ```java
-static class Calculator
-{
-    public static int multiply(int x, int y)
-    {
+static class Calculator {
+    public static int multiply(int x, int y) {
         return x * y;
     }
 }

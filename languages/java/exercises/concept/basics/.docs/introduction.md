@@ -17,8 +17,7 @@ count = 2;     // Update to new value
 Java is an [object-oriented language][object-oriented-programming] and requires all functions to be defined in a _class_. The `class` keyword is used to define a class.
 
 ```java
-class Calculator
-{
+class Calculator {
     // ...
 }
 ```
@@ -26,10 +25,8 @@ class Calculator
 A function within a class is referred to as a _method_. Each method can have zero or more parameters. All parameters must be explicitly typed, there is no type inference for parameters. Similarly, the return type must also be made explicit. Values are returned from functions using the `return` keyword. To allow a method to be called by other classes, the `public` access modifier must be added.
 
 ```java
-class Calculator
-{
-    public int add(int x, int y)
-    {
+class Calculator {
+    public int add(int x, int y) {
         return x + y;
     }
 }
