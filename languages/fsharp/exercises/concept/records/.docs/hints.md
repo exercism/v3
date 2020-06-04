@@ -1,34 +1,37 @@
 ### 1. Define the model
 
+- [This page][define] shows how to define a discriminated union.
+
 ### 2. Create a team's coach
+
+- [This page][create] shows how to create an instance of a record.
 
 ### 3. Create a team's stats
 
+- [This page][create] shows how to create an instance of a record.
+
 ### 4. Create a team
+
+- [This page][create] shows how to create an instance of a record.
 
 ### 5. Replace the coach
 
+- There is [special syntax][create] to return a copy of a record but with one or more fields having a new value.
+
 ### 6. Check for duplicates
 
-### 7. Implement the "who to root for" algorithm
+- Records have built-in [structural equality][equality], which means that records that have the same values are equal.
 
-<!-- ### 1. Define the approval
+### 7. Check if you should root for a team
 
-- [This page][define] shows how to define a discriminated union.
-
-### 4. Define the activity
-
-- [This page][define] shows how to define a discriminated union, both for cases with and without associated data.
-
-### 5. Rate the activity
-
-- The best way to execute logic based on the activity's value is to use [pattern matching][pattern-matching].
-- The pattern to match discriminated union cases (and optionally, their associated data) is through [identifier patterns][identifier-patterns].
+- The best way to execute logic based on the team's value is to use [pattern matching][pattern-matching].
+- The pattern to match on records is through the [record pattern][record-patterns].
 - If you want to add an additional condition to a pattern, you can add a [guard][guards].
-- If you want to catch more than one value at once, you can use a [wildcard pattern][wildcard-pattern].
+- The [record pattern][record-patterns] can also be applied to nested records.
 
-[define]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/discriminated-unions#remarks
+[define]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/records#remarks
+[create]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/records#creating-records-by-using-record-expressions
+[equality]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/records#differences-between-records-and-classes
 [pattern-matching]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching
-[identifier-patterns]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#identifier-patterns
-[wildcard-patterns]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#wildcard-pattern
-[guards]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/match-expressions#guards-on-patterns -->
+[record-patterns]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#record-pattern
+[guards]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/match-expressions#guards-on-patterns

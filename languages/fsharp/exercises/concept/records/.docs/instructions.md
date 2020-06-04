@@ -86,7 +86,7 @@ isDuplicate pacersTeam lakersTeam
 // => false
 ```
 
-### 7. Implement the "who to root for" algorithm
+### 7. Check if you should root for a team
 
 Having looked at many teams and matches, you've come up with an algorithm. If one of the following is true, you root for that team:
 
@@ -94,7 +94,7 @@ Having looked at many teams and matches, you've come up with an algorithm. If on
 - The coach is a former player
 - The team's name is the "Chicago Bulls"
 - The team has won 60 or more games
-- The team has lost 60 or more games
+- The team has more losses than wins
 
 Implement the `rootForTeam` function that takes a team and returns `true` if you should root for that team; otherwise, `return` false:
 

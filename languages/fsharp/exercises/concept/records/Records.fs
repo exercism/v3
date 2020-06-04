@@ -1,32 +1,25 @@
 module Records
 
-type Coach = { Name: string; FormerPlayer: bool }
+// TODO: please define the 'Coach' discriminated union type
 
-type Stats = { Wins: int; Losses: int }
+// TODO: please define the 'Stats' discriminated union type
 
-type Team =
-    { Name: string
-      Coach: Coach
-      Stats: Stats }
+// TODO: please define the 'Team' discriminated union type
 
-let createCoach name formerPlayer =
-    { Name = name
-      FormerPlayer = formerPlayer }
+let createCoach (name: string) (formerPlayer: bool): Coach =
+    failwith "Please implement the 'createCoach' function"
 
-let createStats wins losses = { Wins = wins; Losses = losses }
+let createStats (wins: int) (losses: int): Stats =
+    failwith "Please implement the 'createStats' function"
 
-let createTeam name coach stats =
-    { Name = name
-      Coach = coach
-      Stats = stats }
+let createTeam (name: string) (coach: Coach) (stats: Stats): Team =
+    failwith "Please implement the 'createTeam' function"
 
-let replaceCoach team coach = { team with Coach = coach }
+let replaceCoach (team: Team) (coach: Coach): Team =
+    failwith "Please implement the 'replaceCoach' function"
 
-let isDuplicate homeTeam awayTeam = homeTeam = awayTeam
+let isDuplicate (homeTeam: Team) (awayTeam: Team): bool =
+    failwith "Please implement the 'isDuplicate' function"
 
-let rootForTeam team =
-    match team with
-    | { Coach = { Name = "Gregg Popovich" } } -> true
-    | { Coach = { FormerPlayer = true } } -> true
-    | { Name = "Chicago Bulls" } -> true
-    | { Stats = { Wins = wins; Losses = losses } } -> wins >= 60 || losses >= 60
+let rootForTeam (team: Team): bool =
+    failwith "Please implement the 'rootForTeam' function"

@@ -29,4 +29,4 @@ let rootForTeam team =
     | { Coach = { Name = "Gregg Popovich" } } -> true
     | { Coach = { FormerPlayer = true } } -> true
     | { Name = "Chicago Bulls" } -> true
-    | { Stats = { Wins = wins; Losses = losses } } -> wins >= 60 || losses >= 60
+    | { Stats = { Wins = wins; Losses = losses } } -> wins >= 60 || losses > wins
