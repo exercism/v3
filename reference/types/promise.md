@@ -10,3 +10,5 @@ A write-once container which sets its value in the future. Similar to [Future][t
 ---
 
 [1] Promise, MDN Web Docs. (2020). https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise (accessed June 3, 2020).
+
+<!-- /format -->
