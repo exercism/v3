@@ -1,46 +1,48 @@
 In this exercise you will implement a partial set of utility routines to help a developer
 clean up identifier names and other text in a code base.
 
-You have 5 tasks in implementing the utilities.
+In the first 4 tasks you will gradually build up the routine `CleanIdentifier` A valid identifier comprises
+zero or more letters and underscores.
 
-In all caseds the input string is guaranteed to be non-null.
+The final task relates to a word game you are thinking of developing.
 
-### 1. Report the presence of "invalid" character sequences
+In all cases the input string is guaranteed to be non-null.
 
-Our CTO has a vehement dislike of the combination "->" ever since his days as an inadequate
-C programmer. Any text found including that string must be reported.
-Note that arrows such as "-->", "------>", etc. are allowed. It's just the C pointer that is objectionable.
+### 1. Ensure that an already valid identifier remains unchnged by the routine
 
-```csharp
-CharUtils.DetectInvalidString("abc->def");
-// => true
-```
-
-### 2. Convert a string to upper case
+Note that utility should treat an empty string as valid
 
 ```csharp
-CharUtils.ToUpper("aBc");
-// => "ABC"
+CharUtils.CleanIdentifier("àḃç");
+// => "àḃç"
 ```
 
-### 3. Ensure that a string is a valid C# identifier name
+### 2. Replace any spaces encountered with underscores
 
-- Remove spaces
-- Replace control characters with the upper case string "CTRL"
-- Replace any digits at the start of the string with underscores
-- Ensure the first character is \_ or a unicode letter. @ is not permitted.
-- Ensure that all other characters are unicode letters, decimal digits or \_.
-  If other characters are found they should be omitted.
-- Although other unicode characters, such as connecting or formatting characters,
-  are permitted by the C# standard this shop does not allow them and
-  they should be omitted.
+This also applies to leading and trailing spaces
 
 ```csharp
-CharUtils.CleanIdentifier("9-abcĐ😀\0");
-// => "_abcĐCTRL"
+CharUtils.CleanIdentifier("my   Id");
+// => "my___Id"
 ```
 
-### 4. Insert character into a string
+### 3. Replace control characters with the upper case string "CTRL"
+
+```csharp
+CharUtils.CleanIdentifier("my\0Id");
+// => "myCTRLId",
+```
+
+### 4. Convert kebab-case to camel-case
+
+An identifier such as my-object becomes myObject
+
+```csharp
+CharUtils.CleanIdentifier("à-ḃç");
+// => "àḂç"
+```
+
+### 5. Insert character into a string
 
 As part of a word game this final task requires you to design a utility method which allows
 a letter to be inserted into a string. It should be inserted between "friendly"
@@ -51,8 +53,3 @@ then the character should be appended to the string. Comparisons should be case 
 CharUtils.InsertChar("ႥႧ", 'Ⴆ');
 // => "ႥႦႧ"
 ```
-
-### 5. Insert an ASCII character into a string
-
-Add a version of the utility with the same behavior as that of Task 4 but
-which takes advantage of ASCII's simpler comparisons.
