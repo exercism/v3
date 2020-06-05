@@ -1,10 +1,10 @@
 One of the key aspects of working with numbers in F# is the distinction between integers (numbers with no digits after the decimal separator) and floating-point numbers (numbers with zero or more digits after the decimal separator).
 
-The two most commonly used numeric types in F# are `int` (a 32-bit integer) and `double` (a 64-bit floating-point number).
+The two most commonly used numeric types in F# are `int` (a 32-bit integer) and `float` (a 64-bit floating-point number).
 
 ```fsharp
 let i = 123   // Type is `int`
-let d = 54.29 // Type is `double`
+let d = 54.29 // Type is `float`
 ```
 
 Both integers and floating-point numbers can use the `_` character as a _digit separator_, which can help when defining large numbers:
@@ -13,7 +13,7 @@ Both integers and floating-point numbers can use the `_` character as a _digit s
 let largeInt = 1_000_000
 // => 1000000
 
-let largeDouble = 9_876_543.21
+let largeFloat = 9_876_543.21
 // => 9876543.21
 ```
 

@@ -72,6 +72,12 @@
         "prerequisites": ["lists", "pattern-matching"]
       },
       {
+        "slug": "nil",
+        "uuid": "b6ae6cb4-f908-436f-916c-fa847e4a82fb",
+        "concepts": ["nil", "if-conditional"],
+        "prerequisites": ["strings", "booleans"]
+      },
+      {
         "slug": "maps",
         "uuid": "e7f3ba2b-a380-45d3-a48d-7ef3dc318a31",
         "concepts": ["module-attributes-as-constants", "maps"],
@@ -91,6 +97,23 @@
           "pattern-matching",
           "multiple-clause-functions",
           "guards"
+        ]
+      },
+      {
+        "slug": "charlists",
+        "uuid": "45f3a08f-fe0f-4e3e-b325-47bad3c74ea4",
+        "concepts": ["charlists", "case"],
+        "prerequisites": ["lists", "recursion", "pattern-matching", "guards"]
+      },
+      {
+        "slug": "binary-matching",
+        "uuid": "1653d476-5354-4d99-a990-1db418a7281c",
+        "concepts": ["binaries"],
+        "prerequisites": [
+          "strings",
+          "pattern-matching",
+          "if-conditional",
+          "bitstrings"
         ]
       }
     ],

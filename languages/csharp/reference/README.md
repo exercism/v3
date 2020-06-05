@@ -136,6 +136,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - [Characters][char] 📖 (issue [#960](https://github.com/exercism/v3/issues/960))
 - Collections
   - [Arrays][array] (exercise [`arrays`][exercise-arrays])
+    - multi-dimension (incl. Array.CreateInstance)
   - [Dictionaries][map] ✅ (exercise [`dictionaries`][exercise-dictionaries])
   - Enumerables
   - Immutable collections

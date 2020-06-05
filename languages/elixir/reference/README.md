@@ -263,12 +263,15 @@ The concept exercises use the following concepts:
 | `atoms`                          | Intro to Elixir atom type.                                                                     |
 | `basics`                         | Introduction to functions, modules, variables, returning values, integers, invoking functions. |
 | `bit manipulation`               | Introduction to bit manipulation using the Bitwise module functions                            |
+| `bitstrings`                     | Introduction to the bitstring type                                                             |
+| `binaries`                       | Introduction to the binary type as a specialization of the bitstring type.                     |
 | `booleans`                       | Introduction to the boolean type and strict boolean operators -- and/2, or/2, not/1            |
-| `default-arguments`              | Introduction to default arguments in named functions, function headers                         |
 | `closures`                       | How to implement closures in Elixir                                                            |
 | `conditionals`                   | Intro to Elixir `cond/1` function.                                                             |
+| `default-arguments`              | Introduction to default arguments in named functions, function headers                         |
 | `floating-point-numbers`         | How to use floating point numbers to represent real numbers                                    |
 | `guards`                         | What guards are, how to use guards in function heads                                           |
+| `if-conditional`                 | How to use the `if-unless` macro                                                               |
 | `lists`                          | Introduction to the lists type basic list functions -- hd/1, tl/1, length/1, in/2              |
 | `maps`                           | Introduction to the map data type                                                              |
 | `module-attributes-as-constants` | Introduction to using module attributes as constants                                           |

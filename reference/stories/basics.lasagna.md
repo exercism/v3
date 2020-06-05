@@ -19,6 +19,7 @@ The story facilitates defining functions:
 - [Common Lisp][implementation-common-lisp]
 - [Elixir][implementation-elixir]
 - [F#][implementation-fsharp]
+- [Java][implementation-java]
 - [JavaScript][implementation-javascript]
 - [Julia][implementation-julia]
 - [Ruby][implementation-ruby]
@@ -38,6 +39,7 @@ The story facilitates defining functions:
 [implementation-common-lisp]: ../../languages/common-lisp/exercises/concept/basics/.docs/instructions.md
 [implementation-elixir]: ../../languages/elixir/exercises/concept/basics/.docs/instructions.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/instructions.md
+[implementation-java]: ../../languages/java/exercises/concept/basics/.docs/instructions.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/basics/.docs/instructions.md
 [implementation-julia]: ../../languages/julia/exercises/concept/functions-introduction/.docs/instructions.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/basics/.docs/instructions.md

@@ -16,3 +16,4 @@ These awesome people help maintain the Rust track.
 - [@lewisclement](https://github.com/lewisclement)
 - [@efx](https://github.com/efx)
 - [@workingjubilee](https://github.com/workingjubilee)
+- [@seanchen1991](https://github.com/seanchen1991)
