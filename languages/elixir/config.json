@@ -110,6 +110,17 @@
         "uuid": "ba03df1d-20e4-4527-a8a7-afc97a834975",
         "concepts": ["access-behaviour"],
         "prerequisites": ["maps", "strings", "recursion", "nil"]
+      },
+      {
+        "slug": "binary-matching",
+        "uuid": "1653d476-5354-4d99-a990-1db418a7281c",
+        "concepts": ["binaries"],
+        "prerequisites": [
+          "strings",
+          "pattern-matching",
+          "if-conditional",
+          "bitstrings"
+        ]
       }
     ],
     "practice": []
