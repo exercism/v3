@@ -36,6 +36,7 @@ jobs:
             # Setup repo using ssh
             HEAD_REPO=$(jq -r '.head.repo.ssh_url' "$PR_DATA")
           else
+            # Setup repo using HTTPS
             HEAD_REPO=$(jq -r '.head.repo.clone_url | sub("https://"; "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@")' "$PR_DATA")
           fi
 
