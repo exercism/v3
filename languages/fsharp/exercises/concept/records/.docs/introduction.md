@@ -14,8 +14,8 @@ let oldAddress: Address =
       HouseNumber = 17 }
 
 // Single-line alternative
-type SingleLineAddress = { Street: string; HouseNumber: int }
-let singleLineAddress: SingleLineAddress = { Street = "Main Street"; HouseNumber = 17 }
+type ConciseAddress = { Street: string; HouseNumber: int }
+let conciseAddress: ConciseAddress = { Street = "Main Street"; HouseNumber = 17 }
 ```
 
 As records are immutable, once a record has been constructed, its field values can never change. If you'd like to change a record's values, the `with` keyword allows you to create a copy of an existing record, but with new values for one or more fields.
