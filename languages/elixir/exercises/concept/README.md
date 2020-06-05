@@ -10,16 +10,17 @@ These are the concept exercises that have currently been implemented, as well as
 | --------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------ |
 | `anonymous-functions`       | `anonymous-functions`, `closures`, `bit-manipulation`      | `basics`                                                           |
 | `basics`                    | `basics`                                                   | none                                                               |
+| `binary-matching`           | `binaries`                                                 | `bitstrings`, `strings`, `pattern-matching`, `if-conditional`      |
 | `booleans`                  | `booleans`                                                 | `basics`                                                           |
 | `charlists`                 | `charlists`, `case`                                        | `lists`, `recursion`, `pattern-matching`, `guards`                 |
 | `conditionals`              | `conditionals`, `atoms`                                    | `booleans`                                                         |
 | `lists`                     | `lists`, `string-literals`                                 | `booleans`                                                         |
-| `nil`                       | `nil`, `if-conditional`                                    | `booleans`, strings`                                               |
-| `numbers`                   | `integers`, `floating-point-numbers`                       | `basics`                                                           |
-| `tuples`                    | `tuples`, `pattern-matching`                               | `multiple-clause-functions`, `floating-point-numbers`, `atoms`     |
-| `strings`                   | `strings`                                                  | `lists`, `pattern-matching`                                        |
 | `maps`                      | `maps`, `module-attributes-as-constants`                   | `lists`, `tuples`, `anonymous-functions`, `default-arguments`      |
 | `multiple-clause-functions` | `multiple-clause-functions`, `guards`, `default-arguments` | `conditionals`, `string-literals`                                  |
+| `nil`                       | `nil`, `if-conditional`                                    | `booleans`, `strings`                                              |
+| `numbers`                   | `integers`, `floating-point-numbers`                       | `basics`                                                           |
+| `strings`                   | `strings`                                                  | `lists`, `pattern-matching`                                        |
+| `tuples`                    | `tuples`, `pattern-matching`                               | `multiple-clause-functions`, `floating-point-numbers`, `atoms`     |
 | `recursion`                 | `recursion`                                                | `lists`, `pattern-matching`, `multiple-clause-functions`, `guards` |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse.
