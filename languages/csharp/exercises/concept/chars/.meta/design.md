@@ -18,7 +18,7 @@ The goal of this exercise is to teach the student the basics of the Concept of C
 
 - Converting an integer to a character and vice versa.
 - `System.Char` as a struct - alias for the simple `char` type
-- Advanced unicode issues such as surrogates, text normalization, combining characters, sort order
+- Advanced unicode issues such as surrogates, text normalization, combining characters
 - cultural considerations and invariants
 
 ## Concepts
@@ -26,14 +26,14 @@ The goal of this exercise is to teach the student the basics of the Concept of C
 This Concepts Exercise's Concepts are:
 
 - `chars`: know of the existence of the `char` type; know that a char represents; know how to define a char; know how to access a char in a string by index; know of some basic char methods (like converting to uppercase).
-- `arrays`: know how to use a `for` loop.
 - `StringBuilder`: know how to use this.
 
 ## Prequisites
 
-This Concept Exercise's prerequisites Concepts are:
+This Exercise's prerequisites Concepts are:
 
 - `strings`: know of the `string` type that will be iterated over and accessed by index.
+- `for-loop` for loops (rather than foreach) are the best means of highlighting the relationship between strings and chars
 
 ## Representer
 
