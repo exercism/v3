@@ -69,9 +69,9 @@ replaceCoach team newCoach
 //      Stats = { Wins = 58; Losses = 24 } }
 ```
 
-### 6. Check for duplicates
+### 6. Check for same team
 
-While digging into stats, you're keeping lists of teams and their records. Sometimes, you get things wrong and there are duplicate entries on your list. Implement the `isDuplicate` function that takes two teams and returns `true` if they are the same team; otherwise, return `false`:
+While digging into stats, you're keeping lists of teams and their records. Sometimes, you get things wrong and there are duplicate entries on your list. Implement the `isSameTeam` function that takes two teams and returns `true` if they are the same team; otherwise, return `false`:
 
 ```fsharp
 let pacersCoach = createCoach "Larry Bird" true
@@ -82,7 +82,7 @@ let lakersCoach = createCoach "Del Harris" false
 let lakersStats = createStats 61 21
 let lakersTeam = createTeam "LA Lakers" lakersCoach lakersStats
 
-isDuplicate pacersTeam lakersTeam
+isSameTeam pacersTeam lakersTeam
 // => false
 ```
 

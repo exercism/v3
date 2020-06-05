@@ -18,7 +18,7 @@
 
 - There is [special syntax][create] to return a copy of a record but with one or more fields having a new value.
 
-### 6. Check for duplicates
+### 6. Check for same team
 
 - Records have built-in [structural equality][equality], which means that records that have the same values are equal.
 

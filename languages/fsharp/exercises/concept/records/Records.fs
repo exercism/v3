@@ -18,8 +18,8 @@ let createTeam (name: string) (coach: Coach) (stats: Stats): Team =
 let replaceCoach (team: Team) (coach: Coach): Team =
     failwith "Please implement the 'replaceCoach' function"
 
-let isDuplicate (homeTeam: Team) (awayTeam: Team): bool =
-    failwith "Please implement the 'isDuplicate' function"
+let isSameTeam (homeTeam: Team) (awayTeam: Team): bool =
+    failwith "Please implement the 'isSameTeam' function"
 
 let rootForTeam (team: Team): bool =
     failwith "Please implement the 'rootForTeam' function"

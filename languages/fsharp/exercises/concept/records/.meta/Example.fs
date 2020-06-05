@@ -22,7 +22,7 @@ let createTeam name coach stats =
 
 let replaceCoach team coach = { team with Coach = coach }
 
-let isDuplicate homeTeam awayTeam = homeTeam = awayTeam
+let isSameTeam homeTeam awayTeam = homeTeam = awayTeam
 
 let rootForTeam team =
     match team with
