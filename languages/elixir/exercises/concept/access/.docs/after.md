@@ -1,24 +1,24 @@
-Elixir uses code [**Behaviors**][behaviors] to provide a common generic interfaces while facilitating specific implementations for each module which implements the behavior. When creating a behavior in Elixir, the behavior-defining module contains general logic for a common pattern and which callback functions must be implemented by modules using the behavior. Modules that implement the behavior can then write callback functions which then operate on its own specific needs. Saša Jurić writes in his book, Elixir in Action, that this is an extension of Erlang behaviors which are commonly seen in modules like [`GenServer`][genserver], [`Supervisor`][supervisor], and [`Application`][application].[1]
+Elixir uses code [_Behaviours_][behaviours] to provide a common generic interfaces while facilitating specific implementations for each module which implements the behavior. When creating a _Behaviour_ in Elixir, the behaviour-defining module contains general logic for a common pattern and which callback functions must be implemented by modules using the behaviour. Modules that implement the _Behaviour_ can then write callback functions which then operate on its own specific needs. Saša Jurić writes in his book, Elixir in Action, that this is an extension of Erlang _Behaviours_ which are commonly seen in modules like [`GenServer`][genserver], [`Supervisor`][supervisor], and [`Application`][application].[1]
 
-In this exercise we looked at the **Access Behavior** where the [`Access`][access] module defines the callbacks required for the common pattern. The [`Map`][map] module then implements the required callbacks [`fetch/2`][map-fetch], [`get_and_update/3`][map-get-and-update], and [`pop/2`][map-pop].
+In this exercise we looked at the _Access Behaviour_ where the [`Access`][access] module defines the callbacks required for the common pattern. The [`Map`][map] module then implements the required callbacks [`fetch/2`][map-fetch], [`get_and_update/3`][map-get-and-update], and [`pop/2`][map-pop]
 
-## Access Behavior
+## Access Behaviour
 
-- Access behavior provides a common interface for retrieving key-based data from a data structure.
-  - Like from a key-value map or keyword list structure.
+- _Access Behaviour_ provides a common interface for retrieving key-based data from a data structure.
+  - Like from a map or keyword list data structure.
   - To use the behavior, you may follow a bound variable with _square brackets_ and then use the key to retrieve the value associated with that key.
-  - If the key does not exist in the data structure, then nil is returned.
+  - If the key does not exist in the data structure, then `nil` is returned.
   - This can be a source of unintended behavior, because it does not raise an error.
 
 ```elixir
-# Suppose we have these two maps defined (note the difference in the key type)
+# Suppose we have these three maps defined (note the difference in the key type)
 my_map = %{key: "my value"}
 your_map = %{"key" => "your value"}
 our_map = %{level_one: %{level_two: 3}}
 
 # Obtain the value using the Access Behavior
 my_map[:key] == "my value"
-your_map["key"] == nil
+your_map[:key] == nil
 our_map[:level_one][:level_two] == 3
 ```
 

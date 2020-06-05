@@ -8,7 +8,7 @@ These are the concept exercises that have currently been implemented, as well as
 
 | exercise                    | concepts                                                   | prerequisites                                                      |
 | --------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------ |
-| `access-behavior`           | `access-behavior`                                          | `maps`, `strings`, `recursion`, `nil`                              |
+| `access-behaviour`          | `access-behaviour`                                         | `maps`, `strings`, `recursion`, `nil`                              |
 | `anonymous-functions`       | `anonymous-functions`, `closures`, `bit-manipulation`      | `basics`                                                           |
 | `basics`                    | `basics`                                                   | none                                                               |
 | `booleans`                  | `booleans`                                                 | `basics`                                                           |

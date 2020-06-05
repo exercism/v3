@@ -106,9 +106,9 @@
         "prerequisites": ["lists", "recursion", "pattern-matching", "guards"]
       },
       {
-        "slug": "access-behavior",
+        "slug": "access-behaviour",
         "uuid": "ba03df1d-20e4-4527-a8a7-afc97a834975",
-        "concepts": ["access-behavior"],
+        "concepts": ["access-behaviour"],
         "prerequisites": ["maps", "strings", "recursion", "nil"]
       }
     ],

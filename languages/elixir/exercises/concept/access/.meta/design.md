@@ -1,10 +1,10 @@
 ## Learning objectives
 
-- Know of the access behavior
-- Know that the access behavior can be used on maps and keyword lists
-- Know the syntax for the access behavior
-- limitations of the access behavior
-  - doesn't work for structs
+- Know of the access _behaviour_ (Note the UK spelling.)
+- Know that the access behaviour can be used on maps and keyword lists
+- Know the syntax for the access behaviour
+- limitations of the access behaviour
+  - doesn't work for structs, unless the behaviour is implemented in the defining module
   - doesn't raise errors in some circumstances
 
 ## Out of scope
@@ -14,7 +14,7 @@
 
 ## Concepts
 
-- `access-behavior`
+- `access-behaviour`
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ Follows the **Basketball Website Story** (outlined [here](https://github.com/exe
 
 ## Resources to refer to
 
-- [access-behavior](https://hexdocs.pm/elixir/Access.html)
+- [access-behaviour](https://hexdocs.pm/elixir/Access.html)
 
 ## Representer
 
