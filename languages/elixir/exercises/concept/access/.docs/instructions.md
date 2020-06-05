@@ -24,7 +24,7 @@ BasketballWebsite.extract_from(data, "team_mascot.colors")
 # => nil
 ```
 
-Use the access behavior when implementing this function.
+Use the _Access Behaviour_ when implementing this function.
 
 Do not use any `Map` or `Kernel` module functions for working with the nested map data structure.
 
