@@ -1,9 +1,9 @@
 using System;
 using System.Text;
 
-public static class CharUtils
+public static class Identifier
 {
-    public static string CleanIdentifier(string str)
+    public static string Clean(string str)
     {
         const char UNDERSCORE = '_';
         const char DASH = '-';
@@ -36,7 +36,7 @@ public static class CharUtils
         return sb.ToString();
     }
 
-    public static string InsertCharacter(string str, char ch)
+    public static string AddFriendlyCharacter(string str, char ch)
     {
         bool charInserted = false;
         var sb = new StringBuilder();
@@ -60,6 +60,7 @@ public static class CharUtils
         {
             sb.Append(ch);
         }
+
         return sb.ToString();
     }
 }
