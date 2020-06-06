@@ -17,7 +17,7 @@ jobs:
           echo "::set-output name=fork::$IS_FORK"
           
       - name: 'Setup SSH deploy key'
-        if: steps.fork_check.outputs.fork == "false"
+        if: steps.fork_check.outputs.fork == 'false'
         run: |
           mkdir ~/.ssh
           echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_ed25519
