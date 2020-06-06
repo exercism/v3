@@ -2,9 +2,9 @@
 
 [This tutorial][chars-tutorial] is useful.
 
-[Reference documentation][chars-docs] for chars is here.
+[Reference documentation][chars-docs] for `char`s is here.
 
-You can retrieve chars from a string in the same way as elements from an array.
+You can retrieve `char`s from a string in the same way as elements from an array.
 
 You should use a [string builder][string-builder] to build the output string.
 
