@@ -35,7 +35,7 @@ Identifier.Clean("à-ḃç");
 
 ### 4. Ensure that an already valid identifier remains unchnged by the routine
 
-Note that utility should treat an empty string as valid
+Note that the `Clean` method should treat an empty string as valid
 
 ```csharp
 Identifier.Clean("àḃç");
