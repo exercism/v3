@@ -9,15 +9,10 @@ jobs:
     name: 'Format code'
     runs-on: ubuntu-latest
     if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/format')
-    steps:
-      - name: 'Check fork status'
-        id: fork_check
-        run: |
-          IS_FORK="$(jq '.pull_request.head.repo.fork' "$GITHUB_EVENT_PATH")"
-          echo "::set-output name=fork::$IS_FORK"
-          
+    steps:          
       - name: 'Setup SSH deploy key'
-        if: steps.fork_check.outputs.fork == 'false'
+        # This will need to be adjusted when PRs are run against forks of the v3 repo
+        if: github.repository_owner == 'exercism'
         run: |
           mkdir ~/.ssh
           echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_ed25519
@@ -32,11 +27,12 @@ jobs:
 
           HEAD_REF=$(jq -r ".head.ref" "$PR_DATA")
           
-          if [ ${{ steps.fork_check.outputs.fork }} == "false" ]; then
-            # Setup repo using ssh
+          # This will need to be adjusted when PRs are run against forks of the v3 repo
+          if [ "${{ github.repository_owner }}" == "exercism" ]; then
+            echo "Setup repo using ssh"
             HEAD_REPO=$(jq -r '.head.repo.ssh_url' "$PR_DATA")
           else
-            # Setup repo using HTTPS
+            echo "Setup repo using HTTPS"
             HEAD_REPO=$(jq -r '.head.repo.clone_url | sub("https://"; "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@")' "$PR_DATA")
           fi
 
