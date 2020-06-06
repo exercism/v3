@@ -4,7 +4,7 @@
 
 The story facilitates the exploration of [tuples][type-tuple] in a language.
 
-Basic premise that that often kitchen ingredients are measured in obsure ways and require different conversion depending on the amounts or the tools available on hand. Tuples are used to provide [duck typing][concept-duck-typing] to the numeric component of the measurement.
+Basic premise that that often kitchen ingredients are measured in obscure ways and require different conversion depending on the amounts or the tools available on hand. Tuples are used to provide [duck typing][concept-duck-typing] to the numeric component of the measurement.
 
 So this explores basic conversion of values using floating point numbers.
 
