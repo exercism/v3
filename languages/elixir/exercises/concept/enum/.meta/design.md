@@ -16,7 +16,6 @@
 ## Concepts
 
 - `enum`
-- `enumerable-protocol`
 
 ## Prerequisites
 
