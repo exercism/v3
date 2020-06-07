@@ -6,8 +6,7 @@ struct Clock
     t::Rational{Int}
 
     function Clock(t::Rational{Int})
-        t %= 12
-        new(t < 0 ? t + 12 : t)
+        new(mod(t, 12))
     end
 end
 
