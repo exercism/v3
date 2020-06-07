@@ -56,3 +56,5 @@ To transform it back to a map, use `Enum.into`.
 Enum.into([{"b", 99}], %{})
 # => %{"b" => 99}
 ```
+
+`Enum.into` is a function that transforms an enumerable into a collectable - any data structure implementing the `Collectable` protocol. It can be thought of as the opposite of `Enum.reduce`.
