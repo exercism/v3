@@ -21,8 +21,9 @@
 
 - `lists`
 - `maps`
-- `nil`
 - `atoms`
+- `tuples`
+- `nil`
 - `anonymous-functions`
 
 ## Analyzer
