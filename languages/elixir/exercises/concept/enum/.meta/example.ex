@@ -1,0 +1,3 @@
+defmodule BoutiqueInventory do
+
+end
