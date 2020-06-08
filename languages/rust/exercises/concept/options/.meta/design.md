@@ -1,0 +1,40 @@
+## Learning Objectives 
+
+After completing the exercise, the user should:
+- Know what the `Option` keyword refers to.
+- Know that the `Some` and `None` keywords refer to the variants of the `Option` enum.
+- Understand that `Option`s in Rust are the closest analog to null pointers in other languages.
+- Understand that `Option`s are commonly paired with pattern matching in order to query for the presence or absence of a value.
+
+## Out of Scope
+
+- Using `if let` or `while let` syntax for matching on an `Option`.
+- Methods on `Option`s.
+
+## Concepts
+
+The concepts this exercise unlocks are:
+- Know what the `Option`, `Some`, and `None` keywords refer to. 
+- Know that `Option`s are often paired with pattern matching.
+- Know that `Option`s are Rust's analog of null pointers in other languages.
+
+## Prerequisites
+
+- basics
+- structs
+- pattern matching with `match`
+
+## Resources to Refer to
+
+### Hints
+
+
+### After
+
+## Representer
+
+No changes required.
+
+## Analyzer
+
+No changes required.
