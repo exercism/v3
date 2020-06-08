@@ -2,14 +2,16 @@ Working with binary data is an important concept in any language, and Elixir pro
 
 ## Bitstrings
 
-In Elixir, binary data is referred to as the bitstring type. The binary datatype is a specific form of a bitstring, which we will discuss in a later exercise.
+In Elixir, binary data is referred to as the bitstring type. The binary data*type* (not to be confused with binary data in general) is a specific form of a bitstring, which we will discuss in a later exercise.
 
 Bitstring literals are defined using the bitstring special form `<<>>`. When defining a bitstring literal, you must also specify how many bits the value will take up using the `::` type declaration operator.
 
 ```elixir
 # This defines a bitstring with three segments of a single bit each
 <<0::1, 1::1, 0::1>> == <<0::size(1), 1::size(1), 0::size(1)>>
+# => true
 <<0::1, 1::1, 0::1>> == <<2::size(3)>>
+# => true
 ```
 
 If the value of the segment overflows the capacity of the segment's type, it will be truncated from the left.
@@ -28,10 +30,10 @@ value = 0b11111011011
 We can combine bitstrings stored in variables using the special form:
 
 ```elixir
-value = 0b0110
-first = <<value::4>>
-second = <<0b1001::4>>
+first = <<0b110::3>>
+second = <<0b001::3>>
 combined = <<first::bitstring, second::bitstring>>
+# => <<49::size(6)>>
 ```
 
 ## Pattern matching
