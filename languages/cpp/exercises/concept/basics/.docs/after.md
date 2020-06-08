@@ -15,7 +15,7 @@ count = 2;     // Update to new value
 // count = false;
 ```
 
-C++ is a multi paradigm language language and functions can be defined in a _class_ or outside. The [`class` keyword][class] is used to define a class. A [function][function] within a class is refered to as a _method_. Each [method][methods] can have zero or more parameters. All parameters must be explicitly typed, there is no type inference for parameters. Similarly the return type must also be made explicit. There are exceptions to the previous two rules but we'll talk about them in the future. Values are returned from functions using the [`return` keyword][return]. To allow a method to be called by code in other files, the `public` access modifier must be added.
+C++ is a multi paradigm language and functions can be defined in a _class_ or outside. The [`class` keyword][class] is used to define a class. A [function][function] within a class is refered to as a [_method_][methods]. Each function can have zero or more parameters. All parameters must be explicitly typed, there is no type inference for parameters. Similarly the return type must also be made explicit. There are exceptions to the previous two rules but we'll talk about them in the future. Values are returned from functions using the [`return` keyword][return]. To allow a method to be called by code in other files, the `public` access modifier must be added.
 
 ```cpp
 class Calculator {
@@ -46,7 +46,7 @@ public:
 };
 ```
 
-A static method _must_ be called directly using the class name without creating an instance:
+A static method _must_ be called directly using the class name without creating an instance, that is done using the scope resolution operator `::`. The below snippets searches for a `multiply` _static_ method that accepts two `int`s as argument inside the `Calculator` _class_ scope. If the method is not declared _static_ the usual syntax with the `.` must be used to call it given an instance of the class that declares it, like we showed previously with the `add()` method.
 
 ```cpp
 auto result = Calculator::multiply(10, 5);
