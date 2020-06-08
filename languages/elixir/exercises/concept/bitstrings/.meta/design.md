@@ -26,4 +26,5 @@
 
 ## Analyzer
 
--
+- Possibly check for use of `Enum.reduce` to build the bitstring.
+- Check for use of list comprehensions rather than recursive functions.
