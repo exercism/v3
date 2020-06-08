@@ -46,7 +46,7 @@ value == 0b0110
 # => true
 ```
 
-## Tail Recursion
+## Tail Call Recursion and Accumulators
 
 When recursing through enumerables [lists, bitstrings, strings], there are often two concerns:
 
