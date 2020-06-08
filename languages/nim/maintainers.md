@@ -8,4 +8,4 @@ TODO: add senior maintainers
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+- Yoni (Slack: `@ynfle`, GitHub: [ynfle](https://github.com/ynfle))
