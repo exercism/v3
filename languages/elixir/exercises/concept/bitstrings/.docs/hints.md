@@ -20,8 +20,7 @@
 - Create a recursive function which takes a codepoint from the charlist and recursively builds the bitstring result.
 
 - Remember, a [charlist][charlist] is a list of [integer codepoints][codepoint].
-- You can get the first item from a list using the [`hd/1`][hd] function.
-- You can get the remaining items from a list using the [`tl/1`][tl] function.
+- You can get the first and remaining items from a list using a build in [`Kernel` module][kernel] function
 - You can also pattern match on a list using the [`[head | tail]`][list] notation.
 - Use multiple clause functions to separate the base case from the recursive cases.
 
@@ -38,6 +37,5 @@
 [bitstring-matching]: https://hexdocs.pm/elixir/Kernel.SpecialForms.html#%3C%3C%3E%3E/1-binary-bitstring-matching
 [type-operator]: https://hexdocs.pm/elixir/Kernel.SpecialForms.html#::/2
 [recursion-tco]: https://en.wikipedia.org/wiki/Tail_call
-[hd]: https://hexdocs.pm/elixir/Kernel.html?#hd/1
-[tl]: https://hexdocs.pm/elixir/Kernel.html?#tl/1
 [list]: https://hexdocs.pm/elixir/List.html#content
+[kernel]: https://hexdocs.pm/elixir/Kernel.html#functions

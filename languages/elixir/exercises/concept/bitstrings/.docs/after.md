@@ -44,7 +44,7 @@
 - If a language has [tail call optimization][recursion-tco], it often mitigates concerns of overflowing the function call stack.
 - In order to achieve [tail call recursion][recursion-tco] in Elixir, an accumulator is often required because of data immutability rules.
 
-  - An accumulator is variable that is passed along the recursive call keeping the current state of the recursive function _so far_ until the final result is returned in the base case.
+  - An accumulator is a variable that is passed along the recursive call keeping the current state of the recursive function _so far_ until the final result is returned in the base case.
 
   ```elixir
   # Count the length of a list without an accumulator
@@ -62,9 +62,8 @@
 
   ```elixir
   # Reverse a list with an accumulator
-  def reverse(list), do: do_reverse(list)
+  def reverse(list), do: do_reverse(list, [])
 
-  defp do_reverse(list, acc \\ [])
   defp do_reverse([], acc), do: acc
   defp do_reverse([head | tail], acc) do
     do_reverse(tail, [head | acc])
