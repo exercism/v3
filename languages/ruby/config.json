@@ -13,7 +13,7 @@
       {
         "slug": "strings",
         "uuid": "e5476046-5289-11ea-8d77-2e728ce88125",
-        "concepts": ["strings-basic"],
+        "concepts": ["strings"],
         "prerequisites": ["basics"]
       },
       {
