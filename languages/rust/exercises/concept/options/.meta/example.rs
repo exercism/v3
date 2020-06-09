@@ -20,16 +20,16 @@ impl Player {
         }
     }
 
-    pub fn cast_spell(&mut self, cost: u32) {
+    pub fn cast_spell(&mut self, mana_cost: u32) {
         match self.mana {
             Some(m) => {
-                if m >= cost {
-                    self.m -= cost;
+                if m >= manacost {
+                    self.m -= manacost;
                 } else {
                     println!("Not enough mana!");
                 }
             }
-            None => println!("Only Wizards can cast spells!"),
+            None => println!("Only wizards can cast spells!"),
         }
     }
 }

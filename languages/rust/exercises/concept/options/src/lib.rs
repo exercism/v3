@@ -1,6 +1,7 @@
 pub struct Player {
     pub health: u32,
     pub mana: Option<u32>,
+    pub level: u32,
 }
 
 impl Player {
@@ -8,7 +9,7 @@ impl Player {
        unimplemented!() 
     }
 
-    pub fn cast_spell(&mut self) {
+    pub fn cast_spell(&mut self, cost: u32) {
         unimplemented!()
     }
 }
