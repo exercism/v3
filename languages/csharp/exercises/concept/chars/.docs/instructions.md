@@ -26,7 +26,9 @@ Identifier.Clean("my\0Id");
 
 ### 3. Convert kebab-case to camelCase
 
-An identifier such as my-object becomes myObject.
+
+Modify the (_static_) `Identifier.Clean()` method to convert kebab-case to camelCase.
+
 
 ```csharp
 Identifier.Clean("à-ḃç");
@@ -35,7 +37,7 @@ Identifier.Clean("à-ḃç");
 
 ### 4. Omit Greek lower case letters
 
-Omit any letters in the range 'α' to 'ω'.
+Modify the (_static_) `Identifier.Clean()` method to omit any Greek letters in the range 'α' to 'ω'.
 
 ```csharp
 Identifier.Clean("MyΟβιεγτFinder");
