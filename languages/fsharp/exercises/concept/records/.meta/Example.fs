@@ -1,4 +1,4 @@
-module Records
+module Stats
 
 type Coach = { Name: string; FormerPlayer: bool }
 
@@ -22,11 +22,11 @@ let createTeam name coach stats =
 
 let replaceCoach team coach = { team with Coach = coach }
 
-let isDuplicate homeTeam awayTeam = homeTeam = awayTeam
+let isSameTeam homeTeam awayTeam = homeTeam = awayTeam
 
 let rootForTeam team =
     match team with
     | { Coach = { Name = "Gregg Popovich" } } -> true
     | { Coach = { FormerPlayer = true } } -> true
     | { Name = "Chicago Bulls" } -> true
-    | { Stats = { Wins = wins; Losses = losses } } -> wins >= 60 || losses >= 60
+    | { Stats = { Wins = wins; Losses = losses } } -> wins >= 60 || losses > wins
