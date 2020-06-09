@@ -7,6 +7,8 @@ public static class Identifier
     {
         const char UNDERSCORE = '_';
         const char DASH = '-';
+        const char ALPHA = 'α';
+        const char OMEGA = 'ω';
         var sb = new StringBuilder();
         for (int i = 0; i < str.Length; i++)
         {
@@ -27,38 +29,10 @@ public static class Identifier
                     i++;
                 }
             }
-            else if (ch == UNDERSCORE || Char.IsLetter(ch))
+            else if (Char.IsLetter(ch) && (ch < ALPHA || ch > OMEGA) || ch == UNDERSCORE)
             {
                 sb.Append(ch);
             }
-        }
-
-        return sb.ToString();
-    }
-
-    public static string AddFriendlyCharacter(string str, char ch)
-    {
-        bool charInserted = false;
-        var sb = new StringBuilder();
-        if (!string.IsNullOrEmpty(str))
-        {
-            sb.Append(str[0]);
-        }
-        for (int i = 1; i < str.Length; i++)
-        {
-            if (!charInserted && Char.ToLower(ch) > Char.ToLower(str[i - 1])
-                              && Char.ToLower(ch) < Char.ToLower(str[i]))
-            {
-                sb.Append(ch);
-                charInserted = true;
-            }
-
-            sb.Append(str[i]);
-        }
-
-        if (!charInserted)
-        {
-            sb.Append(ch);
         }
 
         return sb.ToString();

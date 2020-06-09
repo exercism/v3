@@ -16,6 +16,9 @@ seek these out and use them rather than breaking the string down into characters
 Some textual "characters" consist of more than one `char` because the unicode standard
 has more than 65536 code points. For instance the emojis that show up in some
 of the tests have 2 `char`s as they comprise [surrogate][surrogates] characters.
+Additionally, there are combining sequences for instance where in some cases
+an accented character may consist of one `char` for the plain character
+and another `char` for the accent.
 
 If you have to deal with individual characters you should try to use
 library methods such as `System.Char.IsControl`, `System.Char.IsDigit`
@@ -62,8 +65,8 @@ Obviously there is no equivalence between a `byte` at 8 bits and the 16 bit `cha
 ### Performance
 
 Using `StringBuilder` is seen as hugely preferable to building up strings with multiple repeated concatenations with
-a `+` or `+=` operator. Obviously simple one off concatentations are prefereable
-to deploying a `StringBuilder` for clarity as well as performance.
+a `+` or `+=` operator. Obviously simple one off concatenations are preferable
+to instantiating a `StringBuilder` for clarity as well as performance.
 
 [chars-docs]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char
 [chars-tutorial]: https://csharp.net-tutorials.com/data-types/the-char-type/

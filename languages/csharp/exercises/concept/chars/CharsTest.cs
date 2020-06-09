@@ -45,33 +45,16 @@ public class CharsTest
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
+    public void Omit_lower_case_greek_letters()
+    {
+        Assert.Equal("MyΟFinder", Identifier.Clean("MyΟβιεγτFinder"));
+    }
+
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void Combine_conversions()
     {
-        Assert.Equal("_AbcĐCTRL", Identifier.Clean("9 -abcĐ😀\0"));
+        Assert.Equal("_AbcĐCTRL", Identifier.Clean("9 -abcĐ😀ω\0"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
-    public void Insert_char_into_empty_string()
-    {
-        Assert.Equal("Ǟ", Identifier.AddFriendlyCharacter(string.Empty, 'Ǟ'));
-    }
-
-    [Fact(Skip = "Remove this Skip property to run this test")]
-    public void Insert_char_into_string()
-    {
-        Assert.Equal("αβγ", Identifier.AddFriendlyCharacter("αγ", 'β'));
-    }
-
-    [Fact(Skip = "Remove this Skip property to run this test")]
-    public void Insert_char_into_string_with_outlying_char()
-    {
-        Assert.Equal("ǞÊÆ", Identifier.AddFriendlyCharacter("ǞÊ", 'Æ'));
-    }
-
-    [Fact(Skip = "Remove this Skip property to run this test")]
-    public void Insert_ascii_char_into_string()
-    {
-        Assert.Equal("AmZ", Identifier.AddFriendlyCharacter("AZ", 'm'));
-    }
 
 }

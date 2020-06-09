@@ -20,7 +20,7 @@ See [this][iscontrol].
 
 See [this][toupper].
 
-### 5. Insert character into a string
+### 4. Omit Greek lower case letters
 
 `char`s support equality and comparison operators
 

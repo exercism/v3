@@ -6,9 +6,4 @@ public static class Identifier
     {
         throw new NotImplementedException($"Please implement the Clean() method");
     }
-
-    public static string AddFriendlyCharacter(string str, char ch)
-    {
-        throw new NotImplementedException($"Please implement the AddFriendlyCharacter() method");
-    }
 }
