@@ -121,6 +121,12 @@
           "if-conditional",
           "bitstrings"
         ]
+      },
+      {
+        "slug": "bitstrings",
+        "uuid": "994c8760-8a58-4ef3-8a28-a0f9182f4d9f",
+        "concepts": ["bitstrings", "tail-call-recursion"],
+        "prerequisites": ["charlists", "recursion", "pattern-matching"]
       }
     ],
     "practice": []
