@@ -17,6 +17,8 @@ Identifier.Clean("my   Id");
 
 ### 2. Replace control characters with the upper case string "CTRL"
 
+Modify the (_static_) `Identifier.Clean()` method to replace control characters with the upper case string `"CTRL"`.
+
 ```csharp
 Identifier.Clean("my\0Id");
 // => "myCTRLId",
