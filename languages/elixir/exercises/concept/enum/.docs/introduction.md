@@ -1,4 +1,4 @@
-`Enum` is a very useful module that provides a set of algorithms for working enumerables. It offers sorting, filtering, grouping, counting, searching, finding min/max values, and much more.
+`Enum` is a very useful module that provides a set of algorithms for working with enumerables. It offers sorting, filtering, grouping, counting, searching, finding min/max values, and much more.
 
 In Elixir, an enumerable is any data type that implements the `Enumerable` protocol. The most common of those are lists and maps.
 
@@ -19,7 +19,7 @@ Enum.filter([1, 2, 3, 4, 5], fn x -> x > 3 end)
 # => [4, 5]
 ```
 
-The most common `Enum` functions and `map` and `reduce`.
+The most common `Enum` functions are `map` and `reduce`.
 
 `Enum.map/2` allows you to replace every element in an enumerable with another element. The second argument to `Enum.map/2` is a function that accepts the original element and returns its replacement.
 
