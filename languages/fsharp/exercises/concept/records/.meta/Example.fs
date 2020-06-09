@@ -1,4 +1,4 @@
-module Statss
+module Stats
 
 type Coach = { Name: string; FormerPlayer: bool }
 
