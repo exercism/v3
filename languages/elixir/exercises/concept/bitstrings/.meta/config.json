@@ -7,10 +7,13 @@
   ],
   "contributors": [
     {
-      "github_username": "fireproofsocks",
-      "exercism_username": "fireproofsocks"
+      "github_username": "angelikatyborska",
+      "exercism_username": "angelikatyborska"
+    },
+    {
+      "github_username": "NobbZ",
+      "exercism_username": "NobbZ"
     }
   ],
-  "forked_from": ["clojure/lists"],
   "language_versions": ">=1.10"
 }

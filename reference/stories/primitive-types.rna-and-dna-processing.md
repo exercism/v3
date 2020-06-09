@@ -8,10 +8,15 @@ This can be used as a context for an exercise introducing primitive types, or ot
 The v2 exercises `hamming`, `rna-transcription` and `nucleotide-count` could be reused but with primitive types instead of [`strings`][types-string]/[`chars`][types-char].
 You could consider adding those exercises twice (perhaps as practice exercise) in the progression path, once with [`strings`][types-string]/[`chars`][types-char] and then later on with primitive types.
 
+## Implementations
+
+- [Elixir][implementation-elixir]
+
 ## Reference
 
 - [`types/char`][types-char]
 - [`types/string`][types-string]
 
+[implementation-elixir]: ../../languages/elixir/exercises/concept/bitstrings/.docs/instructions.md
 [types-string]: ../types/string.md
 [types-char]: ../types/char.md

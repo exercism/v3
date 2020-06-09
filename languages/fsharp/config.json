@@ -61,6 +61,12 @@
         "prerequisites": ["conditionals", "strings"]
       },
       {
+        "slug": "records",
+        "uuid": "08ae8519-9dc9-47fe-82ad-8081fe642fe2",
+        "concepts": ["records"],
+        "prerequisites": ["booleans", "numbers", "pattern-matching", "strings"]
+      },
+      {
         "slug": "recursion",
         "uuid": "fad55806-69e9-11ea-bc55-0242ac130003",
         "concepts": ["recursion"],
