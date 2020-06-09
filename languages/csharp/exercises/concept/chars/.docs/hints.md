@@ -9,7 +9,7 @@
 
 ### 2. Replace control characters with the upper case string "CTRL"
 
-See [this][iscontrol].
+- See [this method][iscontrol] to check if a character is a control character.
 
 ### 3. Convert kebab-case to camel-case
 
