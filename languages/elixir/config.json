@@ -121,6 +121,19 @@
           "if-conditional",
           "bitstrings"
         ]
+      },
+      {
+        "slug": "enum",
+        "uuid": "be4ef2d1-2851-425d-9780-0326fbcb9845",
+        "concepts": ["enum"],
+        "prerequisites": [
+          "lists",
+          "maps",
+          "atoms",
+          "tuples",
+          "nil",
+          "anonymous-functions"
+        ]
       }
     ],
     "practice": []

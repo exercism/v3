@@ -71,7 +71,7 @@ BoutiqueInventory.increase_quantity(
 
 ```
 
-## 4. Get the item's total quantity
+## 4. Calculate the item's total quantity
 
 To know how much space you need in your storage, you need to know how many of each item you have in total.
 
