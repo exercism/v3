@@ -9,7 +9,7 @@
 
 ## 2. Get log level from a log line
 
-- Changing a `string`'s casing is explored  [here][tutorial-changing-case-upper] and [here][tutorial-changing-case-lower].
+- Changing a `string`'s casing is explored [here][tutorial-changing-case-upper] and [here][tutorial-changing-case-lower].
 
 ## 3. Reformat a log line
 

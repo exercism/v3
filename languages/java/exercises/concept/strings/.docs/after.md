@@ -8,8 +8,9 @@ Manipulating a string can be done using method of class [`String`][string-class]
 
 A string is delimited by double quote (`"`) characters. Some special characters need escaping using the backslash (`\`) character.
 Characters to be escaped in Java:
-* `"`
-* `\`
+
+- `"`
+- `\`
 
 ```java
 String escaped = "c:\\test.txt";
@@ -18,8 +19,9 @@ String escaped = "c:\\test.txt";
 
 Finally, there are many ways to concatenate a string. The simplest one is by using the `+` operator.
 Other possibilities are:
-* use [`StringBuilder` class][string-builder]
-* use [`String.concat` method][string-concat]
+
+- use [`StringBuilder` class][string-builder]
+- use [`String.concat` method][string-concat]
 
 ```java
 String name = "Jane";
