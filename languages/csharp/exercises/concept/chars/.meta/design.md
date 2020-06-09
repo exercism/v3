@@ -23,8 +23,6 @@ The goal of this exercise is to teach the student the basics of the Concept of C
 
 ## Concepts
 
-This Concepts Exercise's Concepts are:
-
 - `chars`: know of the existence of the `char` type; know that a `char` represents; know how to define a `char`; know how to access a `char` in a string by index; know of some basic `char` methods (like converting to uppercase).
 - `StringBuilder`: know how to use this.
 
