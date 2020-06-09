@@ -10,9 +10,9 @@ public static class Identifier
         var ALPHA = 'α';
         var OMEGA = 'ω';
         var sb = new StringBuilder();
-        for (int i = 0; i < str.Length; i++)
+        for (int i = 0; i < identifier.Length; i++)
         {
-            char ch = str[i];
+            char ch = identifier[i];
             if (Char.IsWhiteSpace(ch))
             {
                 sb.Append(UNDERSCORE);
@@ -23,9 +23,9 @@ public static class Identifier
             }
             else if (ch == DASH)
             {
-                if (i + 1 < str.Length)
+                if (i + 1 < identifier.Length)
                 {
-                    sb.Append(Char.ToUpper(str[i + 1]));
+                    sb.Append(Char.ToUpper(identifier[i + 1]));
                     i++;
                 }
             }
