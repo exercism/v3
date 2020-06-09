@@ -1,7 +1,3 @@
-## Goal
-
-The goal of this exercise is to teach the student the basics of the Concept of Tuples in C#.
-
 ## Learning objectives
 
 - Know what a tuple is.
