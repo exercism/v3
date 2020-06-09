@@ -16,6 +16,7 @@ These are the concept exercises that have currently been implemented, as well as
 | `booleans`                  | `booleans`                                                 | `basics`                                                           |
 | `charlists`                 | `charlists`, `case`                                        | `lists`, `recursion`, `pattern-matching`, `guards`                 |
 | `conditionals`              | `conditionals`, `atoms`                                    | `booleans`                                                         |
+| `enum`                      | `enum`                                                     | `lists`, `maps`, `atoms`, `tuples`, `nil`, `anonymous-functions`   |
 | `lists`                     | `lists`, `string-literals`                                 | `booleans`                                                         |
 | `maps`                      | `maps`, `module-attributes-as-constants`                   | `lists`, `tuples`, `anonymous-functions`, `default-arguments`      |
 | `multiple-clause-functions` | `multiple-clause-functions`, `guards`, `default-arguments` | `conditionals`, `string-literals`                                  |
