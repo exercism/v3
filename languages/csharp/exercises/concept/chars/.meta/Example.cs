@@ -3,7 +3,7 @@ using System.Text;
 
 public static class Identifier
 {
-    public static string Clean(string str)
+    public static string Clean(string identifier)
     {
         const char UNDERSCORE = '_';
         const char DASH = '-';
