@@ -24,7 +24,7 @@ Identifier.Clean("my\0Id");
 // => "myCTRLId",
 ```
 
-### 3. Convert kebab-case to camel-case
+### 3. Convert kebab-case to camelCase
 
 An identifier such as my-object becomes myObject.
 
