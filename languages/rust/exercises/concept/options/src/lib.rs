@@ -9,7 +9,7 @@ impl Player {
        unimplemented!() 
     }
 
-    pub fn cast_spell(&mut self, cost: u32) {
+    pub fn cast_spell(&mut self, mana_cost: u32) {
         unimplemented!()
     }
 }
