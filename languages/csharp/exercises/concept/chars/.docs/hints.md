@@ -1,16 +1,11 @@
 ### 1. Replace any spaces encountered with underscores
 
-[This tutorial][chars-tutorial] is useful.
-
-[Reference documentation][chars-docs] for `char`s is here.
-
-You can retrieve `char`s from a string in the same way as elements from an array.
-
-You should use a [string builder][string-builder] to build the output string.
-
-See [this][iswhitespace] for detecting spaces. Remember it is a static method.
-
-char literals are enclosed in single quotes.
+- [This tutorial][chars-tutorial] is useful.
+- [Reference documentation][chars-docs] for `char`s is here.
+- You can retrieve `char`s from a string in the same way as elements from an array.
+- You should use a [`StringBuilder`][string-builder] to build the output string.
+- See [this method][iswhitespace] for detecting spaces. Remember it is a static method.
+- `char` literals are enclosed in single quotes.
 
 ### 2. Replace control characters with the upper case string "CTRL"
 
