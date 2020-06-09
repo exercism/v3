@@ -1,12 +1,10 @@
 In this exercise you will implement a partial set of utility routines to help a developer
 clean up identifier names.
 
-In the first 4 tasks you will gradually build up the routine `Clean` A valid identifier comprises
+In the 4 tasks you will gradually build up the routine `Clean` A valid identifier comprises
 zero or more letters and underscores.
 
-The final task is a little more esoteric involving inserting a character into an identifier
-
-In all cases the input string is guaranteed to be non-null.
+In all cases the input string is guaranteed to be non-null. Note that the `Clean` method should treat an empty string as valid.
 
 ### 1. Replace any spaces encountered with underscores
 
@@ -40,13 +38,4 @@ Omit any letters in the range 'α' to 'ω'.
 ```csharp
 Identifier.Clean("MyΟβιεγτFinder");
 // => "MyΟFinder"
-```
-
-### 5. Ensure that an already valid identifier remains unchnged by the routine
-
-Note that the `Clean` method should treat an empty string as valid.
-
-```csharp
-Identifier.Clean("àḃç");
-// => "àḃç"
 ```
