@@ -13,8 +13,8 @@
 
 ## 3. Increment the item's quantity
 
-- Maps are enumerables too.
-- Iterating over a map will convert the map to a list of `{key, value}` tuples.
+- Maps implement the enumerable protocol.
+- `Enum` functions convert maps to a list of `{key, value}` tuples.
 - There is a [built-in function][enum-map] for replacing every element in an enumerable with another element.
 - There is a [built-in function][enum-into] that can transform a list of `{key, value}` tuples back into a map.
 
