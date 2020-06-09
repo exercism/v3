@@ -5,10 +5,10 @@ public static class Identifier
 {
     public static string Clean(string identifier)
     {
-        const char UNDERSCORE = '_';
-        const char DASH = '-';
-        const char ALPHA = 'α';
-        const char OMEGA = 'ω';
+        var UNDERSCORE = '_';
+        var DASH = '-';
+        var ALPHA = 'α';
+        var OMEGA = 'ω';
         var sb = new StringBuilder();
         for (int i = 0; i < str.Length; i++)
         {
