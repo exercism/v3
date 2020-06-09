@@ -8,7 +8,7 @@ In all cases the input string is guaranteed to be non-null. Note that the `Clean
 
 ### 1. Replace any spaces encountered with underscores
 
-This also applies to leading and trailing spaces.
+Implement the (_static_) `Identifier.Clean()` method to replace any spaces with underscores. This also applies to leading and trailing spaces.
 
 ```csharp
 Identifier.Clean("my   Id");
