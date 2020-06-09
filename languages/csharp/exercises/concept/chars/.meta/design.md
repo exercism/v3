@@ -28,8 +28,6 @@ The goal of this exercise is to teach the student the basics of the Concept of C
 
 ## Prequisites
 
-This Exercise's prerequisites Concepts are:
-
 - `strings`: know of the `string` type that will be iterated over and accessed by index.
 - `for-loop` for loops (rather than foreach) are the best means of highlighting the relationship between strings and `char`s
 
