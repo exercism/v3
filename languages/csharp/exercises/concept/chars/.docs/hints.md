@@ -13,7 +13,7 @@
 
 ### 3. Convert kebab-case to camel-case
 
-See [this][toupper].
+- See [this method][toupper] to convert a character to upper case.
 
 ### 4. Omit Greek lower case letters
 
