@@ -1,15 +1,10 @@
 `Enum` is a very useful module that provides a set of algorithms for working with enumerables. It offers sorting, filtering, grouping, counting, searching, finding min/max values, and much more.
 
-In Elixir, an enumerable is any data type that implements the `Enumerable` protocol. The most common of those are lists and maps.
+In general, an _enumerable_ is any data that can be iterated over, a collection. In Elixir, an enumerable is any data type that implements the `Enumerable` protocol. The most common of those are lists and maps.
 
 ```elixir
 Enum.sort([4, 2, 3, 1])
 # => [1, 2, 3, 4]
-```
-
-```elixir
-Enum.empty?(%{})
-# => true
 ```
 
 Many `Enum` functions accept a function as a second argument.
