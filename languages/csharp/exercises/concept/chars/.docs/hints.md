@@ -17,7 +17,7 @@
 
 ### 4. Omit Greek lower case letters
 
-`char`s support equality and comparison operators
+- `char`s support the default equality and comparison operators.
 
 [chars-docs]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char
 [chars-tutorial]: https://csharp.net-tutorials.com/data-types/the-char-type/
