@@ -150,6 +150,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Dates ✅ (exercise [`datetimes`][exercise-datetimes])
   - Time zones
 - Delegates
+- dynamic
 - Enums ✅ (exercise [`enums`][exercise-enums])
   - Flag enums ✅ (exercise [`flag-enums`][exercise-flag-enums])
 - Events
