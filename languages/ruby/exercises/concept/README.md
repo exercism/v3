@@ -8,7 +8,7 @@ These are the concept exercises that have currently been implemented, as well as
 
 | exercise                                                            | concepts                             | prerequisites                |
 | ------------------------------------------------------------------- | ------------------------------------ | ---------------------------- |
-| [`strings`][concept-exercise-strings]                               | `strings-basic`                      | -                            |
+| [`strings`][concept-exercise-strings]                               | `strings`                            | -                            |
 | [`basics`][concept-exercise-basics]                                 | `basics`                             | -                            |
 | [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`         | `basics`                     |  |
 | [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`loops` | `numbers`<br/>`conditionals` |
