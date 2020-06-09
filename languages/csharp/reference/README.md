@@ -16,6 +16,7 @@ The core OO features a C# developer should know about are:
 - [Inheritance][inheritance] ✅ (exercise [`inheritance`][exercise-inheritance])
 - [Interfaces][interfaces] 🚧 (issue [#1225](https://github.com/exercism/v3/issues/880))
   - Explicit Interface Implementation 🚧 (issue [#1225](https://github.com/exercism/v3/issues/880))
+  - Marker Interfaces
 - [Methods][methods] ✅ (exercise [`basics`][exercise-basics])
   - Constructors ✅ (exercise [`constructors`][exercise-constructors])
   - Destructors
@@ -119,6 +120,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - Imports (usings)
   - Namespaces 📖 (issue [#1127](https://github.com/exercism/v3/issues/1127))
   - Visibility (`public`, `private`, etc.) ✅ (exercise [`classes`][exercise-classes])
+- Serialization
 - Slicing
 - String formatting 📖 (issue [#962](https://github.com/exercism/v3/issues/962))
   - Formatting types 📖 (issue [#962](https://github.com/exercism/v3/issues/962))
