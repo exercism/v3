@@ -31,14 +31,6 @@ The goal of this exercise is to teach the student the basics of the Concept of C
 - `strings`: know of the `string` type that will be iterated over and accessed by index.
 - `for-loop` for loops (rather than foreach) are the best means of highlighting the relationship between strings and `char`s
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
-## Analyzer
-
-This exercise does not require any specific analyzer logic to be added to the [analyzer][analyzer].
-
 [how-to-implement-a-concept-exercise]: https://github.com/exercism/v3/blob/master/docs/maintainers/generic-how-to-implement-a-concept-exercise.md
 [implemented-exercises]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/README.md#implemented-exercises
 [reference]: https://github.com/exercism/v3/blob/master/languages/csharp/reference/README.md#reference-docs
