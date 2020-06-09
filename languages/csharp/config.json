@@ -27,8 +27,8 @@
       {
         "slug": "chars",
         "uuid": "e74c6cd6-add7-45d1-abcb-513418e9d2d0",
-        "concepts": ["chars", "StringBuilder"],
-        "prerequisites": ["for-loops", "strings"]
+        "concepts": ["chars", "string-builder"],
+        "prerequisites": ["conditionals", "for-loops", "strings"]
       },
       {
         "slug": "classes",
