@@ -26,9 +26,7 @@ Identifier.Clean("my\0Id");
 
 ### 3. Convert kebab-case to camelCase
 
-
 Modify the (_static_) `Identifier.Clean()` method to convert kebab-case to camelCase.
-
 
 ```csharp
 Identifier.Clean("à-ḃç");
