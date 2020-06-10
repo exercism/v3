@@ -13,7 +13,7 @@ Elixir provides a construct for rescuing from errors using `try .. rescue`
 
 ```elixir
 try do                             #1
-  raise "error"                    #2
+  raise RuntimeError, "error"      #2
 rescue
   e in RuntimeError -> :error      #3
 end
@@ -30,11 +30,3 @@ Let's examine this construct:
     - `RuntimeError` is the module to matched, but can match on any error module, or `_` all errors.
   - on the right side:
     - the instructions to be executed if the error matches
-
-## To raise, or not to raise
-
-As it's written in [Elixir's getting started guide][getting-started]:
-
-> It’s up to your application to decide if an error while [performing an action] is exceptional or not. That’s why Elixir doesn’t impose exceptions on ... functions. Instead, it leaves it up to the developer to choose the best way to proceed.
-
-[getting-started]: https://elixir-lang.org/getting-started/try-catch-and-rescue.html
