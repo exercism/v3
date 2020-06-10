@@ -42,7 +42,7 @@ fn test_cast_spell_with_enough_mana() {
         mana: Some(mana),
         level,
     };
-    
+
     assert_eq!(accomplished_wizard.cast_spell(mana_cost), mana_cost * 2);
     assert_eq!(accomplished_wizard.health, health);
     assert_eq!(accomplished_wizard.mana, Some(mana - mana_cost));
