@@ -1,5 +1,6 @@
 defmodule RemoteControlCarTest do
   use ExUnit.Case
+  import CompileTimeAssertions
 
   @fake_car %{
     battery_percentage: 100,
@@ -8,6 +9,14 @@ defmodule RemoteControlCarTest do
   }
 
   # @tag :pending
+  test "required key 'nickname' should not have a default value" do
+    error_message = "the following keys must also be given when building struct RemoteControlCar: [:nickname]"
+    assert_compile_time_raise ArgumentError, error_message, fn ->
+      %RemoteControlCar{}
+    end
+  end
+
+  @tag :pending
   test "new" do
     car = RemoteControlCar.new()
 
