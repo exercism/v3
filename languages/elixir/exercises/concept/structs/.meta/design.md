@@ -26,6 +26,8 @@
 - `multiple-clause-functions`
 - `pattern-matching`
 - `strings`
+- `nil`
+- `default-parameters`
 
 ## Analyzer
 
