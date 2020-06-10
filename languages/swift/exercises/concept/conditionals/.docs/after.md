@@ -81,7 +81,7 @@ if heartRate > 100 {
 
 While the else-if variant of `if` statements cleans things up considerably, there is still a lot of noise in the code from all of the curly braces. This is where the `switch` statement comes into play. In conditional statements with many possible branches, the switch statement shines. Note, however, that `switch` statements do work a bit differently from `if` statements.
 
-Rather than evaluating a Boolean expression and using the value of that expression to choose the code branch that is run, a simple switch statement takes an input value (or expression which it evaluates to obtain the input value) of some type and compares against one or more values of the same type. If a case is found that matches the input value, the corresponding block of code is run. Note that if multiple cases of a switch statement match the input value, only the first matching case is used.
+Rather than evaluating a Boolean expression and using the value of that expression to choose the code branch that is run, a simple switch statement takes an input value (or expression which it evaluates to obtain the input value) of some type and compares against one or more values of the same type. If a case is found that matches the input value, the corresponding block of code is run. Note that if multiple cases of a switch statement match the input value, only the first matching case is used. An underscore (`_`) can be used to match all values.
 
 The structure of a switch looks like this:
 
@@ -98,7 +98,7 @@ default:
     Code block for any other case
 ```
 
-So the “apple”, “lemon”, “peach” example from above con be written:
+So the “apple”, “lemon”, “peach” example from above can be written:
 
 ```swift
 switch str {
@@ -113,7 +113,39 @@ default:
 }
 ```
 
+Note that all possible cases must be covered in a `switch` statement. In cases like the above where all possible strings _cannot_ be enumerated, a `default` case can be used to match all remaining cases.
+
 Unlike in some other languages, `switch` cases in Swift do not fall through to the next case unless that behavior is explicitly called for with the `fallthrough` keyword. this is the opposite behavior from C which requires explicit `break` statements to prevent fallthrough.
+
+### Switches with multiple values
+
+Switches may be performed over multiple values at once by placing the expressions to be matched and the matching cases in tuples.
+
+```swift
+switch(a+b, a==b) {
+case (6, true):
+  return "a and b must both be 3"
+case (6, false):
+  return "neither a nor b can be 3"
+case (_, true):
+  return "a nd b are equal, but they are not 3"
+case (_, false):
+  return "a and b can be pretty much anything"
+}
+```
+
+### Binding and where statements
+
+The values being matched in `switch` statements can also be bound to names which can be used in the body of the case. They can also be used in `where` clauses, which are additional boolean expressions that must evaluate to `true` for the case to match.
+
+```swift
+switch (sumOfDivisors(of: x), x) {
+case (let total, _) where total == x:
+  print(total, "is a perfect number")
+default:
+  print(x, "is not a perfect number")
+}
+```
 
 ## guard statements
 
