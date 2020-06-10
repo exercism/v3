@@ -10,6 +10,8 @@
 ## Out of scope
 
 - defining exceptions `defexception`
+- `throw` / `catch`
+- `exit`
 
 ## Concepts
 
