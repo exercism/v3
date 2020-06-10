@@ -27,7 +27,7 @@
 - `pattern-matching`
 - `strings`
 - `nil`
-- `default-parameters`
+- `default-arguments`
 
 ## Analyzer
 
