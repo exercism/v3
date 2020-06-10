@@ -5,6 +5,10 @@ defmodule RemoteControlCar do
     raise "Implement new/0"
   end
 
+  def new(nickname) do
+    raise "Implement new/1"
+  end
+
   def drive(remote_car) do
     raise "Implement drive/1"
   end
