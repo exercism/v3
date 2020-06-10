@@ -27,11 +27,22 @@ The concepts this exercise unlocks are:
 ## Resources to Refer to
 
 ### Hints
+
 - [https://doc.rust-lang.org/std/option/](https://doc.rust-lang.org/std/option/)
 - [https://doc.rust-lang.org/rust-by-example/std/option.html](https://doc.rust-lang.org/rust-by-example/std/option.html)
 - [https://learning-rust.github.io/docs/e3.option_and_result.html](https://learning-rust.github.io/docs/e3.option_and_result.html)
 
 ### After
+
+Take a look at the list of methods implemented on the `Option` type:
+
+- [https://doc.rust-lang.org/std/option/enum.Option.html](https://doc.rust-lang.org/std/option/enum.Option.html)
+
+Some commonly used methods on `Option`s include:
+- `is_some` to check if an `Option` is of the `Some` variant
+- `is_none` to check if an `Option` is of the `None` variant
+- `map` in order to apply function to a value contained in an `Option`
+- `take` in order to replace an `Option` with a `None`; useful when needing to swap two values
 
 ## Representer
 
