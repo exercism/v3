@@ -39,3 +39,13 @@ func removeBottomCard(_ stack: [Int]) -> [Int] {
 func checkSizeOfStack(_ stack: [Int], _ size: Int) -> Bool {
   return stack.count == size
 }
+
+func evenCardCount(_ stack: [Int]) -> Int {
+  var evens = 0
+  for card in stack {
+    if card.isMultiple(of: 2) {
+      evens += 1
+    }
+  }
+  return evens
+}

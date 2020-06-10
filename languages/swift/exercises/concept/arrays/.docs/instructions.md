@@ -80,3 +80,12 @@ let stackSize = 4
 checkSizeOfStack([3, 2, 6, 4, 8], stackSize)
 // => false
 ```
+
+## 9. Count the number of even cards in the stack
+
+Step through the stack and count the number of even cards in it.
+
+```swift
+evenCardCount([3,8,4,5,1,6,10])
+// => 3
+```

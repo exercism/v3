@@ -26,4 +26,24 @@ evenInts[1] = 0
 // Cannot assign through subscript: 'evenInts' is a 'let' constant
 ```
 
+The elements of an array can be stepped through one at a time using a for-in loop. This type of loop takes each element of the array, in order, and binds the element to a specified name for further processing inside the loop body. For ecample, to print out all of the odd integers in an array one can write:
+
+```swift
+let ints = [1, 3, 6, 14, 17, 8, 23, 5, 18, 11]
+
+for int in ints {
+  if !int.isMultiple(of: 2) {
+    print(int)
+  }
+}
+
+// prints out:
+// 1
+// 3
+// 17
+// 23
+// 5
+// 11
+```
+
 [array]: https://developer.apple.com/documentation/swift/array

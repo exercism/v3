@@ -27,5 +27,9 @@ func removeBottomCard(_ stack: [Int]) -> [Int] {
 }
 
 func checkSizeOfStack(_ stack: [Int], _ size: Int) -> Bool {
-  fatalError("checkSizeOfStack(at:from:) not implemented -- replace this error with an implementation")
+  fatalError("checkSizeOfStack(_:_:) not implemented -- replace this error with an implementation")
+}
+
+func evenCardCount(_ stack: [Int]) -> Int {
+  fatalError("evenCardCount(_) not implemented -- replace this error with an implementation")
 }

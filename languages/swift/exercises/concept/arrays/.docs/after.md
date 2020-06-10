@@ -11,9 +11,10 @@ var myStringArray: [String] = []
 
 Elements of an array can be accessed individually by supplying the index of the element inside square brackets following the array; array indices are `Int`s and start with `0` for the first (leftmost) element. This subscript notation can be used to get the element at that index as well as to set the element at that index, provided the array was defined as a variable (i.e. using `var`).
 
-Trying to access elements at indicies outside the valid range of indices will result in a runtime error that crashes the program.
+Trying to access elements at indicies outside the valid range of indices will result in a runtime error that crashes the program. Since any array index access will crash a program, it is common to test arrays to see if the are empty before working with them by checking the `isEmpty` property.
 
 ```swift
+guard !evenInts.isEmpty, !oddInts.isEmpty else { return }
 evenInts[2]
 // returns 6
 oddInts[0] = 27
@@ -27,5 +28,25 @@ evenInts[1] = 0
 ```
 
 Arrays in Swift are not fixed size (though constant arrays, defined using `let` cannot be modified, including adding and removing elements). Elements can quickly be appended or dropped from the end of an array, and elements can be inserted or removed at any other location, though these operations are slower. The entire contents of another array can also be inserted at a given position in the original array.
+
+The elements of an array can be stepped through one at a time using a for-in loop. This type of loop takes each element of the array, in order, and binds the element to a specified name for further processing inside the loop body. For ecample, to print out all of the odd integers in an array one can write:
+
+```swift
+let ints = [1, 3, 6, 14, 17, 8, 23, 5, 18, 11]
+
+for int in ints {
+  if !int.isMultiple(of: 2) {
+    print(int)
+  }
+}
+
+// prints out:
+// 1
+// 3
+// 17
+// 23
+// 5
+// 11
+```
 
 [array]: https://developer.apple.com/documentation/swift/array
