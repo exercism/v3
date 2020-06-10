@@ -93,7 +93,7 @@ defmodule RemoteControlCarTest do
   end
 
   @tag :pending
-  test "display battery of driven" do
+  test "display battery of dead battery" do
     car = RemoteControlCar.new()
     car = %{car | battery_percentage: 0}
 
