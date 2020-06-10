@@ -74,4 +74,6 @@ and initialize them if appropriate.
 ```csharp
 var goodNumbers = (42, 3.142, 1729);
 (int ultimateQuestion, var π, var ramanujan) = goodNumbers;
+return ultimateQuestion;
+// => 42
 ```
