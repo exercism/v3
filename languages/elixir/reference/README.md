@@ -282,3 +282,5 @@ The concept exercises use the following concepts:
 | `strings`                        | How to do string processing, concatenation, interpolation, and multiline strings.                         |
 | `tail-call-recursion`            | How to efficiently perform recursion in Elixir to manage function call stacks and use accumulators        |
 | `tuples`                         | Introduction to the tuple data type                                                                       |
+| `errors`                         | Introduction to errors in elixir and patterns to communicate function success/failure                     |
+| `try-rescue`                     | Use of the try-rescue construct in Elixir                                                                 |
