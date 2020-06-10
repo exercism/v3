@@ -8,6 +8,12 @@ defmodule RemoteControlCarTest do
     assert Map.equal?(car, %RemoteControlCar{})
   end
 
+  test "drive raises error when not given struct" do
+    assert_raise(FunctionClauseError, fn ->
+      RemoteControlCar.drive(%{battery_percentage: 100, distance_driven_in_meters: 0})
+    end)
+  end
+
   test "drive with battery" do
     car = RemoteControlCar.new()
     assert car
@@ -23,6 +29,13 @@ defmodule RemoteControlCarTest do
       |> Map.equal?(%RemoteControlCar{battery_percentage: 0, distance_driven_in_meters: 0})
   end
 
+
+  test "display distance raises error when not given struct" do
+    assert_raise(FunctionClauseError, fn ->
+      RemoteControlCar.display_distance(%{battery_percentage: 100, distance_driven_in_meters: 0})
+    end)
+  end
+
   test "display distance of new" do
     car = RemoteControlCar.new()
     assert RemoteControlCar.display_distance(car) == "0 meters"
@@ -32,6 +45,12 @@ defmodule RemoteControlCarTest do
     car = RemoteControlCar.new()
     car = %{car | distance_driven_in_meters: 20}
     assert RemoteControlCar.display_distance(car) == "20 meters"
+  end
+
+  test "display battery raises error when not given struct" do
+    assert_raise(FunctionClauseError, fn ->
+      RemoteControlCar.display_battery(%{battery_percentage: 100, distance_driven_in_meters: 0})
+    end)
   end
 
   test "display battery of new" do
