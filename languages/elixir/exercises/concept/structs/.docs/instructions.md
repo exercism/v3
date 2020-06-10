@@ -1,6 +1,6 @@
 In this exercise you'll be playing around with a remote controlled car, which you've finally saved enough money for to buy.
 
-Cars start with full (100%) batteries. Each time you drive the car using the remote control, it covers 20 meters and drains one percent of the battery.
+Cars start with full (100%) batteries. Each time you drive the car using the remote control, it covers 20 meters and drains one percent of the battery. The car's nickname is not known until it is created.
 
 The remote controlled car has a fancy LED display that shows two bits of information:
 
@@ -24,9 +24,11 @@ RemoteControlCar.new()
 #    }
 ```
 
+The nickname is required by the struct, make sure that a value is initialized in the `new` function, but not in the struct.
+
 ## 2. Create a brand-new remote controlled car with a nickname
 
-Implement the `RemoteControlCar.new/0` function to return a brand-new remote controlled car struct with a provided nickname:
+Implement the `RemoteControlCar.new/1` function to return a brand-new remote controlled car struct with a provided nickname:
 
 ```elixir
 RemoteControlCar.new("Blue")
@@ -36,8 +38,6 @@ RemoteControlCar.new("Blue")
 #      nickname: "Blue"
 #    }
 ```
-
-The nickname is required by the struct, make sure that a value is initialized.
 
 ## 3. Display the distance
 
