@@ -61,7 +61,7 @@ This [introduction][tuples] shows how to define and use tuples.
 Field names `Item1` etc. do not make for readable code. There are 3 ways to
 provide names to the fields a) in the type declaration or b) in the expression that
 creates it, c) by means of [tuple projection initializers][tuple-projection-initializers]
-(not illustrated here.
+(not illustrated here).
 
 ```csharp
 // name items in declaration
@@ -93,6 +93,8 @@ be applied to your own objects. See [here][udt-deconstruction]).
 ```csharp
 var goodNumbers = (42, 3.142, 1729);
 (int ultimateQuestion, var π, var ramanujan) = goodNumbers;
+return ultimateQuestion;
+// => 42
 ```
 
 ### Field Assignment
@@ -112,15 +114,15 @@ tpl.Item2 = "even worse";
 
 ### Background
 
-The tuples, we are discussing, should not be confused [`System.Tuple`][system-tuple]
+The tuples we are discussing should not be confused with [`System.Tuple`][system-tuple]
 which will probably be found only in legacy code bases.
 
 The position is slightly more confusing when it comes to `System.ValueTuple`.
 The [docs][system-value-tuple] for the final overload of [`System.ValueTuple`][system-value-tuple]state that
 "The value tuple types provide the runtime implementation that supports tuples in C# ".
 By "value tuple types" here they are referring to the generic overloads of `System.ValueTuple`.
-By "tuples" they are referring to the things that have concerned us in this exercise.
-Effectively they are saying that `System.ValueTuple` is an implementation detail that is
+By "tuples" they mean the things that have concerned us in this exercise.
+Effectively they are saying that `System.ValueTuple` is an implementation detail of tuples. This is
 unlikely to be of much interest most of the time to most people. Unfortunately much of the
 documentation on "tuples" including Microsoft's own is liberally sprinkled with references
 to `System.ValueTuple`. It is probably safe to skate over such references.
@@ -133,7 +135,7 @@ is covered in a later exercise.
 Tuples allow for some other minor stylistic flourishes:
 
 - Multiple assignment (particularly in constructors) .e.g `(this.field1, this.field2) = (arg1, arg2);`
-- Swapping or recycling values e.g. `(a, b) = (b, a);`.
+- Swapping or recycling values e.g. `(a, b) = (b, a);`
 - Use instead of a `struct` in a list
 - Use as a dictionary key or the contents of a set.
 - Use in LINQ. (LINQ is covered by later exercises).
@@ -149,7 +151,7 @@ Relational operations other than equality and inequality are not supported.
 
 Note that tuples were introduced into the language relatively recently (C# 7)
 so if you want to use them you should make sure your code base
-is using a version of the compiler 7 or later.
+is using version 7 or later of the language.
 
 [tuples]: https://docs.microsoft.com/en-us/dotnet/csharp/tuples
 [tuple-projection-initializers]: https://docs.microsoft.com/en-us/dotnet/csharp/tuples#tuple-projection-initializers
