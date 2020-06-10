@@ -5,7 +5,7 @@ You are asked to implement 2 features.
 Phone numbers passed to the routines are guaranteed to be in the form
 NNN-NNN-NNNN e.g. 212-515-9876
 
-### 1. Analuze a phone number
+### 1. Analyze a phone number
 
 Your analysis should return 3 pieces of data
 
@@ -20,7 +20,7 @@ PhoneNumbers.Analyze("631-555-1234");
 // => (false, true, "1234")
 ```
 
-### 2. Detact if a phone number has a New York dialing code (212)
+### 2. Detect if a phone number has a New York dialing code (212)
 
 ```csharp
 PhoneNumbers.IsFake(PhoneNumbers.Analyze("631-555-1234"));
