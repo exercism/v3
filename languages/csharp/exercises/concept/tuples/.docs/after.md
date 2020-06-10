@@ -5,7 +5,7 @@ A tuple is typically created by placing 2 or more expressions separated by comas
 within a set of parentheses.
 
 ```csharp
-string boast = "All you nned to know";
+string boast = "All you need to know";
 bool success = !string.IsNullOrWhiteSpace(boast);
 (bool, int, string) tripple = (success, 42, boast);
 ```
@@ -136,11 +136,11 @@ Tuples allow for some other minor stylistic flourishes:
 - Swapping or recycling values e.g. `(a, b) = (b, a);`.
 - Use instead of a `struct` in a list
 - Use as a dictionary key or the contents of a set.
-- Use in LINQ.  (LINQ is covered by later exercises).
+- Use in LINQ. (LINQ is covered by later exercises).
 
 The documentation describes tuples as a lightweight mechanism and that is the key to
-its successful use.  Using a tuple instead of a class or struct can lead to tedious
-repetition of its field types and possibly names.  This applies particularly to
+its successful use. Using a tuple instead of a class or struct can lead to tedious
+repetition of its field types and possibly names. This applies particularly to
 its use as a method argument or as the generic argument in collections.
 
 It is best to make use of tricks like multiple assignment and swapping judiciously.
