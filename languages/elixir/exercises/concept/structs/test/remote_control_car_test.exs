@@ -29,34 +29,6 @@ defmodule RemoteControlCarTest do
   end
 
   @tag :pending
-  test "drive raises error when not given struct" do
-    assert_raise(FunctionClauseError, fn ->
-      RemoteControlCar.drive(@fake_car)
-    end)
-  end
-
-  @tag :pending
-  test "drive with battery" do
-    car = RemoteControlCar.new() |> RemoteControlCar.drive()
-
-    assert car.__struct__ == RemoteControlCar
-    assert car.battery_percentage == 99
-    assert car.distance_driven_in_meters == 20
-  end
-
-  @tag :pending
-  test "drive with dead battery" do
-    car =
-      RemoteControlCar.new()
-      |> Map.put(:battery_percentage, 0)
-      |> RemoteControlCar.drive()
-
-    assert car.__struct__ == RemoteControlCar
-    assert car.battery_percentage == 0
-    assert car.distance_driven_in_meters == 0
-  end
-
-  @tag :pending
   test "display distance raises error when not given struct" do
     assert_raise(FunctionClauseError, fn ->
       RemoteControlCar.display_distance(@fake_car)
@@ -98,5 +70,33 @@ defmodule RemoteControlCarTest do
     car = %{car | battery_percentage: 0}
 
     assert RemoteControlCar.display_battery(car) == "Battery empty"
+  end
+
+  @tag :pending
+  test "drive raises error when not given struct" do
+    assert_raise(FunctionClauseError, fn ->
+      RemoteControlCar.drive(@fake_car)
+    end)
+  end
+
+  @tag :pending
+  test "drive with battery" do
+    car = RemoteControlCar.new() |> RemoteControlCar.drive()
+
+    assert car.__struct__ == RemoteControlCar
+    assert car.battery_percentage == 99
+    assert car.distance_driven_in_meters == 20
+  end
+
+  @tag :pending
+  test "drive with dead battery" do
+    car =
+      RemoteControlCar.new()
+      |> Map.put(:battery_percentage, 0)
+      |> RemoteControlCar.drive()
+
+    assert car.__struct__ == RemoteControlCar
+    assert car.battery_percentage == 0
+    assert car.distance_driven_in_meters == 0
   end
 end

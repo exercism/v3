@@ -10,12 +10,6 @@ defmodule RemoteControlCar do
     %RemoteControlCar{nickname: nickname}
   end
 
-  def drive(%RemoteControlCar{battery_percentage: b} = r) when b > 0 do
-    d = r.distance_driven_in_meters
-    %{r | battery_percentage: b - 1, distance_driven_in_meters: d + 20}
-  end
-  def drive(%RemoteControlCar{} = r), do: r
-
   def display_distance(%RemoteControlCar{distance_driven_in_meters: d}) do
     "#{d} meters"
   end
@@ -26,4 +20,10 @@ defmodule RemoteControlCar do
   def display_battery(%RemoteControlCar{battery_percentage: b}) do
     "Battery at #{b}%"
   end
+
+  def drive(%RemoteControlCar{battery_percentage: b} = r) when b > 0 do
+    d = r.distance_driven_in_meters
+    %{r | battery_percentage: b - 1, distance_driven_in_meters: d + 20}
+  end
+  def drive(%RemoteControlCar{} = r), do: r
 end
