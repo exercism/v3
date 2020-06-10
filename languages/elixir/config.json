@@ -140,6 +140,19 @@
           "nil",
           "anonymous-functions"
         ]
+      },
+      {
+        "slug": "structs",
+        "uuid": "d8d25b93-d918-421e-bb57-cbdaf428d9e2",
+        "concepts": ["structs", "static-access-operator"],
+        "prerequisites": [
+          "maps",
+          "multiple-clause-functions",
+          "pattern-matching",
+          "strings",
+          "nil",
+          "default-arguments"
+        ]
       }
     ],
     "practice": []
