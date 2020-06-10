@@ -1,5 +1,5 @@
 using System;
-public class Exceptions
+public class SimpleCalculator
 {
         
 }

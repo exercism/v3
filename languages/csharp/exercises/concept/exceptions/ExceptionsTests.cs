@@ -1,6 +1,6 @@
 using Xunit;
 using System;
-public class ExceptionsTests
+public class SimpleCalculatorTests
 {
     [Fact]
     public void Test_throw()
