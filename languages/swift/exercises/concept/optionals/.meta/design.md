@@ -6,11 +6,10 @@ The goal of this exercise is to introduce the student to the concept of [Optiona
 
 - Know of the existence of the `nil` literal.
 - Know how to define optional types.
-- Know about the null-related operators (`!`, `?`, `??`).
+- Know about the optional operators (`!`, `?`, `??`).
 - Know what the consequences of unwrapping a `nil` value are.
 - Know how to compare a value to `nil`.
-- Know the existance and use of the `if let` construct.
-- Know about basic null checking by the compiler.
+- Know the existance and use of optional binding.
 
 ## Out of scope
 
@@ -23,18 +22,20 @@ The goal of this exercise is to introduce the student to the concept of [Optiona
 
 This Concepts Exercise's Concepts are:
 
-- `optionals`: Know of the existence of the `nil` literal; know how to define optional types; know about the null-related operators (`!`, `?`, `??`); know what the consequences of unwrapping a `nil` value are; know how to compare a value to `nil`; know the existance and use of the `if let` construct; know about basic null checking by the compiler.
+- `optionals`: Know of the existence of the `nil` literal; know how to define optional types; know about the nil-related operators (`!`, `?`, `??`); know what the consequences of unwrapping a `nil` value are; know how to compare a value to `nil`; know the existance and use of optional binding.
 
 ## Prerequisites
 
 This Concept Exercise's prerequisites Concepts are:
 
-- `basics`: integers  and strings will be compared to `null`, arithmetic operations will be performed on integers, variables will be introduced and updated.
+- `basics`: functions will be defined variables will be introduced and updated.
+- `numbers`: know of the existence of the two most commonly used number types, `Int` and `Double`; understand that the former represents signed whole numbers, and the latter floating-point numbers; know of basic operators such as multiplication, comparison and equality; know how to convert from one numeric type to another using conversion operators.
 - `conditionals`: using a conditional statement.
 
 ## Representer
 
-This exercise does not require any specific representation logic to be added to the representer. <!--[representer][representer].-->
+TBD
+<!--This exercise does not require any specific representation logic to be added to the [representer][representer].-->
 
 ## Analyzer
 
