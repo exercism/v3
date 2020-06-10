@@ -10,9 +10,11 @@ defmodule RemoteControlCarTest do
 
   # @tag :pending
   test "required key 'nickname' should not have a default value" do
-    error_message = "the following keys must also be given when building struct RemoteControlCar: [:nickname]"
-    assert_compile_time_raise ArgumentError, error_message, fn ->
-      %RemoteControlCar{}
+    assert_raise ArgumentError, fn ->
+      quote do
+        %RemoteControlCar{}
+      end
+      |> Code.eval_quoted()
     end
   end
 
