@@ -109,10 +109,9 @@ For more information, watch [this video][video-docs-hints.md] and check [this ex
 
 **Purpose:** Provide more information about the concept(s) for a student to learn from.
 
-Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
+Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included.
 
-`after.md` provides an opportunity to give advice on how the features covered by a concept are used in practice.
-Among other things, you can comment on:
+ This document can also link to any additional resources that might be interesting to the student in the context of the exercise, such as:
 
 - Popular usages for a feature
 - Performance characteristics and memory usage
