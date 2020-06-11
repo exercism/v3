@@ -13,7 +13,7 @@ These are the Concept Exercises that have currently been implemented, as well as
 | [`conditionals `][concept-exercise-conditionals] | `conditionals`               | `basics`                                     |
 | [`optionals`][concept-exercise-optionals]        | `optionals`                  | `conditionals`                               |
 | [`arrays`][concept-exercise-arrays]              | `arrays`                     | `optionals`                                  |
-| [`strings`][concept-exercise-strings]            | `strings`                    | `optionals`                                  |
+| [`strings`][concept-exercise-strings]            | `strings`                    | `optionals` <br/> `arrays`                   |
 
 
 <!--
