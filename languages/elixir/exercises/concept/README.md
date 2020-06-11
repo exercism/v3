@@ -6,18 +6,18 @@ The concept exercises are based on this [list of concepts][docs-concept-exercise
 
 These are the concept exercises that have currently been implemented, as well as the concepts they teach and their prerequisite concepts:
 
-| exercise                    | concepts                                                   | prerequisites                                                      |
-| --------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------ |
-| `access-behaviour`          | `access-behaviour`                                         | `maps`, `strings`, `recursion`, `nil`                              |
-| `anonymous-functions`       | `anonymous-functions`, `closures`, `bit-manipulation`      | `basics`                                                           |
-| `basics`                    | `basics`                                                   | none                                                               |
-| `binary-matching`           | `binaries`                                                 | `bitstrings`, `strings`, `pattern-matching`, `if-conditional`      |
-| `bitstrings`                | `bitstrings`, `tail-call-recursion`                        | `charlists`, `recursion`, `pattern-matching`                       |
-| `booleans`                  | `booleans`                                                 | `basics`                                                           |
-| `charlists`                 | `charlists`, `case`                                        | `lists`, `recursion`, `pattern-matching`, `guards`                 |
-| `conditionals`              | `conditionals`, `atoms`                                    | `booleans`                                                         |
-| `enum`                      | `enum`                                                     | `lists`, `maps`, `atoms`, `tuples`, `nil`, `anonymous-functions`   |
-| `errors`                    | `errors`, `try-rescue`                                     | `anonymous-functions`, `pattern-matching`, `structs`               |
+| exercise                    | concepts                                                   | prerequisites                                                                                  |
+| --------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `access-behaviour`          | `access-behaviour`                                         | `maps`, `strings`, `recursion`, `nil`                                                          |
+| `anonymous-functions`       | `anonymous-functions`, `closures`, `bit-manipulation`      | `basics`                                                                                       |
+| `basics`                    | `basics`                                                   | none                                                                                           |
+| `binary-matching`           | `binaries`                                                 | `bitstrings`, `strings`, `pattern-matching`, `if-conditional`                                  |
+| `bitstrings`                | `bitstrings`, `tail-call-recursion`                        | `charlists`, `recursion`, `pattern-matching`                                                   |
+| `booleans`                  | `booleans`                                                 | `basics`                                                                                       |
+| `charlists`                 | `charlists`, `case`                                        | `lists`, `recursion`, `pattern-matching`, `guards`                                             |
+| `conditionals`              | `conditionals`, `atoms`                                    | `booleans`                                                                                     |
+| `enum`                      | `enum`                                                     | `lists`, `maps`, `atoms`, `tuples`, `nil`, `anonymous-functions`                               |
+| `errors`                    | `errors`, `try-rescue`                                     | `anonymous-functions`, `pattern-matching`, `structs`                                           |
 | `lists`                     | `lists`, `string-literals`                                 | `booleans`                                                                                     |
 | `maps`                      | `maps`, `module-attributes-as-constants`                   | `lists`, `tuples`, `anonymous-functions`, `default-arguments`                                  |
 | `multiple-clause-functions` | `multiple-clause-functions`, `guards`, `default-arguments` | `conditionals`, `string-literals`                                                              |
