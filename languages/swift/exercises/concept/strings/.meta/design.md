@@ -28,18 +28,19 @@ The Concepts this exercise unlocks are:
 
 ## Prequisites
 
-- `basics`: know what a value is; know how to define a constant; know how to define a variable; know how to define a function
--`optionals`: Know of the existence of optional types; know about the nil-related operators (`!`, `?`, `??`); know what the consequences of unwrapping a `nil` value are; know how to compare a value to `nil`; know the existance and use of optional binding
+- `basics`: know what a value is; know how to define a constant; know how to define a variable; know how to define a function -`optionals`: Know of the existence of optional types; know about the nil-related operators (`!`, `?`, `??`); know what the consequences of unwrapping a `nil` value are; know how to compare a value to `nil`; know the existance and use of optional binding
 - `arrays`: know how to access elements in an array; iterating over the elements of an array.
 
 ## Representer
 
 TBD
+
 <!--This exercise does not require any specific representation logic to be added to the representer][representer].-->
 
 ## Analyzer
 
 TBD
+
 <!--[This exercise could benefit from the following rules added to the the analyzer][analyzer]:
 - Verify that string interpolation is preferred to string concatenation.
 -->

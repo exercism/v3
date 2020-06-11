@@ -35,11 +35,13 @@ This Concept Exercise's prerequisites Concepts are:
 ## Representer
 
 TBD
+
 <!--This exercise does not require any specific representation logic to be added to the [representer][representer].-->
 
 ## Analyzer
 
 TBD
+
  <!--This exercise does not require any specific logic to be added to the [analyzer][analyzer].-->
 
 <!--

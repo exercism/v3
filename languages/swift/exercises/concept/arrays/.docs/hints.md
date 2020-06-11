@@ -37,11 +37,10 @@
 
 - Arrays have a [property][array-count-docs] to retrieve their length.
 
-
 ## 9. Count the number of even cards in the stack
 
 - You can step through the elements of an array using a [for-in loop][for-in-loops].
-- Integer types in swift have the [`isMultiple(of:)`][int-isMultiple-docs] method to test if they are the multiple of another integer.
+- Integer types in swift have the [`isMultiple(of:)`][int-ismultiple-docs] method to test if they are the multiple of another integer.
 
 [array-access]: https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html#ID110
 [array-append-docs]: https://developer.apple.com/documentation/swift/array/3126937-append
@@ -51,4 +50,4 @@
 [array-removefirst-docs]: https://developer.apple.com/documentation/swift/array/2884646-removefirst
 [array-count-docs]: https://developer.apple.com/documentation/swift/array/2943906-count
 [for-in-loops]: https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html#ID121
-[int-isMultiple-docs]: https://developer.apple.com/documentation/swift/int/3127688-ismultiple
+[int-ismultiple-docs]: https://developer.apple.com/documentation/swift/int/3127688-ismultiple
