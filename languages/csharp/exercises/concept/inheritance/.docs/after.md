@@ -62,7 +62,7 @@ class Car : Vehicle
 ```
 
 To prevent a class being inherited, add the [`sealed` modifier][sealed-classes].
-Some practitioners try to avoid inheriting from concrete classes (as discussed in the [SO question][pro-sealed])and the _sealed_ modifier supports this approach. On the other hand many C# developers consider them a hindrance to maintenance as discussed in some of the comments on [this question][anti-sealed]. The advice is to use the sealed modifier sparingly until you have gained confidence in their use for your requirements.
+Some practitioners try to avoid inheriting from concrete classes (as discussed in [this SO question][pro-sealed]) and the _sealed_ modifier supports this approach. On the other hand many C# developers consider them a hindrance to maintenance as discussed in some of the comments on [this question][anti-sealed]. The advice is to use the sealed modifier sparingly until you have gained confidence in their use for your requirements.
 
 [abstract-keyword]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract
 [virtual-keyword]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual
