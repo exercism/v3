@@ -20,7 +20,7 @@ RPNCalculator.calculate!(stack, operation)
 
 ## 2. Wrap the error
 
-When doing more research you notice that many functions are use atoms and tuples to indicate their success/failure. Implement `calculate/2` using this strategy.
+When doing more research you notice that many functions use atoms and tuples to indicate their success/failure. Implement `calculate/2` using this strategy.
 
 ```elixir
 stack = []

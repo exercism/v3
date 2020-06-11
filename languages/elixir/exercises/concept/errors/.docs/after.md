@@ -3,7 +3,7 @@
 While Elixir programmers often say ["let it crash"][let-it-crash] and code for the ["happy path"][happy-path], there are often times we need to rescue the function call to return a specific value, message or release system resources.
 
 - Functions that raise errors under normal circumstances are to have `!` at the end of their name.
-- Functions may also alternative return atoms and tuples to indicate success and failure:
+- Functions may also alternatively return atoms and tuples to indicate success and failure:
 
   ```elixir
   Map.fetch(%{a: 1}, :a)
