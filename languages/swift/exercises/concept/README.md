@@ -6,15 +6,14 @@ The Concept Exercises are based on this [list of concepts][reference-shared].
 
 These are the Concept Exercises that have currently been implemented, as well as the Concepts they teach and their prerequisite concepts:
 
-| exercise                                         | concepts                     | prerequisites                                |
-| ------------------------------------------------ | ---------------------------- | -------------------------------------------- |
-| [`basics`][concept-exercise-basics]              | `basics`                     |                                              |
-| [`numbers`][concept-exercise-numbers]            | `numbers`                    | `basics`                                     |
-| [`conditionals `][concept-exercise-conditionals] | `conditionals`               | `basics`                                     |
-| [`optionals`][concept-exercise-optionals]        | `optionals`                  | `conditionals`                               |
-| [`arrays`][concept-exercise-arrays]              | `arrays`                     | `optionals`                                  |
-| [`strings`][concept-exercise-strings]            | `strings`                    | `optionals` <br/> `arrays`                   |
-
+| exercise                                        | concepts       | prerequisites              |
+| ----------------------------------------------- | -------------- | -------------------------- |
+| [`basics`][concept-exercise-basics]             | `basics`       |                            |
+| [`numbers`][concept-exercise-numbers]           | `numbers`      | `basics`                   |
+| [`conditionals`][concept-exercise-conditionals] | `conditionals` | `basics`                   |
+| [`optionals`][concept-exercise-optionals]       | `optionals`    | `conditionals`             |
+| [`arrays`][concept-exercise-arrays]             | `arrays`       | `optionals`                |
+| [`strings`][concept-exercise-strings]           | `strings`      | `optionals` <br/> `arrays` |
 
 <!--
 | [`higher order functions`][concept-exercise-hof] | `higher-order-functions`     | `arrays`<br/>`strings`                       |
@@ -26,6 +25,7 @@ These are the Concept Exercises that have currently been implemented, as well as
 | [`pattern-matching`][concept-exercise-pattern-matching]             | `pattern-matching`           | `conditionals`<br/>`strings`                                                           |
 | [`recursion`][concept-exercise-recursion]                           | `recursion`                  | `discriminated-unions`<br/>`higher-order-functions`<br/>`lists`<br/>`pattern-matching` |
 -->
+
 ## TODO
 
 Thanks for wanting to contribute to the Swift track's Concept Exercises! Contributions are very welcome!
