@@ -11,6 +11,7 @@ These are the concept exercises that have currently been implemented, as well as
 | [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`for-loops`<br/>`foreach-loops`                         | `booleans`<br/>`chars`<br/>`classes`<br/>`conditionals`                           |
 | [`basics`][concept-exercise-basics]                                 | `basics`                                                             | -                                                                                 |
 | [`booleans`][concept-exercise-booleans]                             | `booleans`                                                           | `basics`                                                                          |
+| [`chars`][concept-exercise-chars]                                   | `chars`<br/>`Stringbuilder`                                          | `for-loops`<br/>`<br/>`strings`                                                   |
 | [`classes`][concept-exercise-classes]                               | `classes`                                                            | `basics`<br/>`conditionals`<br/>`numbers`<br/>`strings`                           |
 | [`constructors`][concept-exercise-constructors]                     | `constructors`                                                       | `classes`<br/>`conditionals`<br/>`numbers`<br/>`while-loops`                      |
 | [`dates`][concept-exercise-datetimes]                               | `datetimes`                                                          | `classes`<br/>`numbers`<br/>`strings`                                             |
@@ -39,6 +40,7 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-exercise-arrays]: ./arrays/.meta/design.md
 [concept-exercise-basics]: ./basics/.meta/design.md
 [concept-exercise-booleans]: ./booleans/.meta/design.md
+[concept-exercise-chars]: ./chars/.meta/design.md
 [concept-exercise-classes]: ./classes/.meta/design.md
 [concept-exercise-constructors]: ./constructors/.meta/design.md
 [concept-exercise-flag-enums]: ./flag-enums/.meta/design.md
