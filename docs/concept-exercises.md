@@ -115,13 +115,11 @@ Once the student completes the exercise they will be shown this file, which shou
 This document can also link to any additional resources that might be interesting to the student in the context of the exercise, such as:
 
 - Popular usages for a feature
-- Performance characteristics and memory usage
-- Alternative approaches addressed in other exercises
-- Common pitfalls in a feature's use (e.g. casual use of multiple threads)
-- Similar features with which the concept may be confused
+- Common pitfalls in a feature's use (e.g. casual use of multiple **threads)**
 - Limitations on use that may catch out the unsuspecting developer
-
-Please provide source references/links and/or justification where appropriate.
+- Alternative approaches addressed in other exercises
+- Similar features with which the concept may be confused
+- Performance characteristics and memory usage
 
 For more information, watch [this video][video-docs-after.md] and check [this example after.md file][docs-after.md].
 
