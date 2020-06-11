@@ -95,7 +95,7 @@ For more information, watch [this video][video-docs-instructions.md] and check [
 - Hints should be bullet-pointed underneath headings.
 - The hints should be enough to unblock almost any student.
 - The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
-- The hints may use code samples to explain concepts, but not to outline the solution. e.g., in a lists exercise they might show a snippet of how a certain list function works, but not in a way that is directly copy/pasteable into the solution.
+- The hints may use code samples to explain concepts, but not to outline the solution. e.g. in a lists exercise they might show a snippet of how a certain list function works, but not in a way that is directly copy/pasteable into the solution.
 - General hints about the exercise can appear under the `## General` heading.
 - Task-specific hints should appear underneath headings that match their task heading in the `instructions.md` (e.g. `## 2. Do Y`).
 - Task headings should describe the _what_ of the task, not the _how_.
