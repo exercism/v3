@@ -2,10 +2,10 @@
 
 These awesome people help maintain the Swift track.
 
-## Senior Maintainers
+<!-- ## Senior Maintainers
 
-TODO: add senior maintainers
+TODO: add senior maintainers -->
 
 ## Contributing Maintainers
 
-TODO: add contributing maintainers
+- William D. Neumann (Slack: `@WDNeumann`, Github: [wneumann](https://github.com/wneumann))
