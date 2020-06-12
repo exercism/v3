@@ -12,7 +12,7 @@ Use the following chart in your program:
 | US teaspoon     | 1      | 5                   |
 | US tablespoon   | 1      | 15                  |
 
-## 1. Extract the numeric component from a tuple describing volume
+## 1. Extract the volume from a unit/volume pair
 
 Implement the `get_volume` function that takes a unit/volume pair tuple as its parameter, and returns the volume part.
 
