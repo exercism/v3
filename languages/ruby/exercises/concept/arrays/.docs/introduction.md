@@ -9,7 +9,6 @@ Ruby arrays mix in the [Enumerable module][enumerable-module], which adds severa
 array = [1, "two", 3.0] #=> [1, "two", 3.0]
 ```
 
-
 ### Element Assignment
 
 Elements can accessed or changed using indexes. Subarrays can be accessed by specifying a start index and a size.
@@ -26,7 +25,7 @@ a[0, 3] = [ 'a', 'b', 'c' ] #=> ["a", "b", "c", nil, "hello"]
 ```ruby
 a = ['a', 'b']
 
-a[-1] = "Z" 
+a[-1] = "Z"
 a #=> ["a", "Z"]
 ```
 
