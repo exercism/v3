@@ -1,6 +1,7 @@
 using System;
 
 public class CalculationException : Exception
+    // TODO: complete the definition of the constructor
 {
     private int operand;
     public CalculationException(int operand, string message, Exception inner) : base(message, inner)

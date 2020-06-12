@@ -5,6 +5,7 @@ public class CalculationException_template : Exception
     private int operand;
 
     public CalculationException_template(int operand, string message, Exception inner)
+    // TODO: complete the definition of the constructor
     {
 
     }

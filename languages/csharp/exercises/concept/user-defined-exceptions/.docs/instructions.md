@@ -7,14 +7,14 @@ modified.
 
 Complete the definition of the constructor of `CalculationException` which will need to store the exception
 that it wraps as well as the operand that is being processed at the
-time the exception is thrown.
+time the exception is thrown. Implment `GetOperand()` to return the stored value.
 
-## 2. Implement the `Calculate` routine
+## 2. Implement the `Calculate()` method
 
-The `Calculate` routine should call the `TestHarnessOperations.HandleInt` routine
-passing in the value that is passed into `Calculate`. `HandleInt` is
+The `Calculate()` routine should call the `TestHarnessOperations.HandleInt()` routine
+passing in the value that is passed into `Calculate()`. `HandleInt()` is
 guaranteed to throw an `Sytem.OverflowException`. This exception
-should be wrapped in a `CalculationException` and the value being
+should be caught wrapped in a `CalculationException` and the value being
 passed around should be stored as the operand. The newly
 created exception should be thrown.
 
@@ -24,10 +24,10 @@ cth.Calulate(123);
 // => throws an instance of CalculationException
 ```
 
-## 3. Implement the Run routine
+## 3. Implement the `Run()` method
 
-Implement a method `Run` tthat can either call
-`Calculate` or `TestHarnessOperations.HandleInt` directly depending on the value
+Implement a method `Run()` that can either call
+`Calculate` or `TestHarnessOperations.HandleInt()` directly depending on the value
 of the first (test name) argument to the method. It catches an instance of either
 `CalculationException` or a `System.OverflowException` and the method
 returns an appropriate message to the caller (see below). If
