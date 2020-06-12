@@ -14,7 +14,7 @@ Use the following chart in your program:
 
 ## 1. Extract the numeric component from a tuple describing volume
 
-- Given the following tuple `(Unit::USCup, 1)`, return the 2nd element.
+Implement the `get_volume` function that takes a unit/volume pair tuple as its parameter, and returns the volume part.
 
 ```rust
 get_volume((Unit::USCup, 1))
