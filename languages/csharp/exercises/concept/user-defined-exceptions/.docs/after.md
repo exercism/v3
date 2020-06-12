@@ -12,8 +12,22 @@ This [article][create-user-defined-exceptons] is a good introduction to user-def
 
 ## Exception Filters
 
-`When` is the key word in filtering exceptions. It is placed after the catch
+`when` is the key word in filtering exceptions. It is placed after the catch
 statement and can take a boolean expression containing any values in scope at the time. They don't just have to be members of the exception itself. If the expression evaluates to true then the block associated with that `catch` statement is executed otherwise the next `catch` statement, if any, is checked.
+
+```csharp
+try {
+    // do stuff
+}
+catch (Exception ex) when (ex.Message != "")
+{
+    // output the message
+}
+catch (Exception ex)
+{
+    // show stack trace or something.
+}
+```
 
 - This [Exception filters][exception-filters] article shows how to filter exceptions.
 
