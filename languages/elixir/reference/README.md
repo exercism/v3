@@ -284,3 +284,5 @@ The concept exercises use the following concepts:
 | `static-access-operator`         | accessing map and struct fields with the `.`                                                              |
 | `tail-call-recursion`            | How to efficiently perform recursion in Elixir to manage function call stacks and use accumulators        |
 | `tuples`                         | Introduction to the tuple data type                                                                       |
+| `errors`                         | Introduction to errors in elixir and patterns to communicate function success/failure                     |
+| `try-rescue`                     | Use of the try-rescue construct in Elixir                                                                 |

@@ -17,6 +17,7 @@ These are the concept exercises that have currently been implemented, as well as
 | `charlists`                 | `charlists`, `case`                                        | `lists`, `recursion`, `pattern-matching`, `guards`                                             |
 | `conditionals`              | `conditionals`, `atoms`                                    | `booleans`                                                                                     |
 | `enum`                      | `enum`                                                     | `lists`, `maps`, `atoms`, `tuples`, `nil`, `anonymous-functions`                               |
+| `errors`                    | `errors`, `try-rescue`                                     | `anonymous-functions`, `pattern-matching`, `structs`                                           |
 | `lists`                     | `lists`, `string-literals`                                 | `booleans`                                                                                     |
 | `maps`                      | `maps`, `module-attributes-as-constants`                   | `lists`, `tuples`, `anonymous-functions`, `default-arguments`                                  |
 | `multiple-clause-functions` | `multiple-clause-functions`, `guards`, `default-arguments` | `conditionals`, `string-literals`                                                              |
