@@ -1,0 +1,11 @@
+{
+  "language": "Swift",
+  "active": true,
+  "blurb": "Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns. Although Swift is great for iOS, iPadOS, and macOS programming, it also offers great programming capabilities for servr-side applications, Linux programming, and will soon be officially supported on Windows as well.",
+  "version": 3,
+  "online_editor": { "indent_style": "space", "indent_size": 2 },
+  "exercises": {
+    "concept": [],
+    "practice": []
+  }
+}
