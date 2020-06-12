@@ -12,7 +12,7 @@ time the exception is thrown. Implment `GetOperand()` to return the stored value
 ## 2. Implement the `Calculate()` method
 
 The `Calculate()` routine should call the `TestHarnessOperations.HandleInt()` routine
-passing in the value that is passed into `Calculate()`. `HandleInt()` is
+passing in the value, `testValue` that is passed into `Calculate()`. `HandleInt()` is
 guaranteed to throw an `Sytem.OverflowException`. This exception
 should be caught wrapped in a `CalculationException` and the value being
 passed around should be stored as the operand. The newly
