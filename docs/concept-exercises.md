@@ -118,6 +118,7 @@ This document can also link to any additional resources that might be interestin
 - Common pitfalls in a feature's use (e.g. casual use of multiple **threads**)
 - Limitations on use that may catch out the unsuspecting developer
 - Alternative approaches addressed in other exercises
+- Compromises made for ease of learning or to accommodate the Exercism environment, e.g. multiple classes in single file
 - Similar features with which the concept may be confused
 - Performance characteristics and memory usage
 
