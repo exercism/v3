@@ -49,11 +49,12 @@ While Elixir programmers often say ["let it crash"][let-it-crash] and code for t
     "All good! #{value}."
   rescue
     e in RuntimeError ->
+      reason = e.message
       "Uh oh! #{reason}."
   end
 
   # Rather, use control-flow structures for control-flow.
-  case MyModule.janky_function do
+  case MyModule.janky_function() do
     {:ok, value} -> "All good! #{value}."
     {:error, reason} -> "Uh oh! #{reason}."
   end

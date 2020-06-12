@@ -2,7 +2,7 @@ While working at _Instruments of Texas_, you are tasked to work on an experiment
 
 ## 1. Warn the team
 
-Implement the function `calculate!/2` to call the operation function with the stack as the only argument. The operation function is defined else where, but you know that it can either complete successfully or raise an error.
+Implement the function `calculate!/2` to call the operation function with the stack as the only argument. The operation function is defined elsewhere, but you know that it can either complete successfully or raise an error.
 
 ```elixir
 stack = []
