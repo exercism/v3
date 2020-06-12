@@ -23,7 +23,7 @@ get_volume((Unit::USCup, 1))
 
 ## 2. Convert the tuple to millilitres
 
-- Given a volume-pair tuple, `(Unit::USCup, 2.5)`, convert the volume to millilitres using the conversion chart
+Implement the `to_millilitres` function that takes a unit/volume pair tuple as its parameter, and returns a new tuple with its volume converted to millilitres using the conversion chart.
 
 ```rust
 to_millilitres((Unit::USCup, 2.5))
