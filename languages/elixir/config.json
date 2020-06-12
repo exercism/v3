@@ -72,6 +72,12 @@
         "prerequisites": ["lists", "pattern-matching"]
       },
       {
+        "slug": "nil",
+        "uuid": "b6ae6cb4-f908-436f-916c-fa847e4a82fb",
+        "concepts": ["nil", "if-conditional"],
+        "prerequisites": ["strings", "booleans"]
+      },
+      {
         "slug": "maps",
         "uuid": "e7f3ba2b-a380-45d3-a48d-7ef3dc318a31",
         "concepts": ["module-attributes-as-constants", "maps"],
@@ -91,6 +97,67 @@
           "pattern-matching",
           "multiple-clause-functions",
           "guards"
+        ]
+      },
+      {
+        "slug": "charlists",
+        "uuid": "45f3a08f-fe0f-4e3e-b325-47bad3c74ea4",
+        "concepts": ["charlists", "case"],
+        "prerequisites": ["lists", "recursion", "pattern-matching", "guards"]
+      },
+      {
+        "slug": "access-behaviour",
+        "uuid": "ba03df1d-20e4-4527-a8a7-afc97a834975",
+        "concepts": ["access-behaviour"],
+        "prerequisites": ["maps", "strings", "recursion", "nil"]
+      },
+      {
+        "slug": "binary-matching",
+        "uuid": "1653d476-5354-4d99-a990-1db418a7281c",
+        "concepts": ["binaries"],
+        "prerequisites": [
+          "strings",
+          "pattern-matching",
+          "if-conditional",
+          "bitstrings"
+        ]
+      },
+      {
+        "slug": "bitstrings",
+        "uuid": "994c8760-8a58-4ef3-8a28-a0f9182f4d9f",
+        "concepts": ["bitstrings", "tail-call-recursion"],
+        "prerequisites": ["charlists", "recursion", "pattern-matching"]
+      },
+      {
+        "slug": "enum",
+        "uuid": "be4ef2d1-2851-425d-9780-0326fbcb9845",
+        "concepts": ["enum"],
+        "prerequisites": [
+          "lists",
+          "maps",
+          "atoms",
+          "tuples",
+          "nil",
+          "anonymous-functions"
+        ]
+      },
+      {
+        "slug": "errors",
+        "uuid": "f660a2e1-bb50-4626-8d3f-6cd7c44fa8db",
+        "concepts": ["errors", "try-rescue"],
+        "prerequisites": ["anonymous-functions", "pattern-matching", "structs"]
+      },
+      {
+        "slug": "structs",
+        "uuid": "d8d25b93-d918-421e-bb57-cbdaf428d9e2",
+        "concepts": ["structs", "static-access-operator"],
+        "prerequisites": [
+          "maps",
+          "multiple-clause-functions",
+          "pattern-matching",
+          "strings",
+          "nil",
+          "default-arguments"
         ]
       }
     ],

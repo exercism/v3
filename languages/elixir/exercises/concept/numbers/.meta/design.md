@@ -1,9 +1,3 @@
-# Design
-
-## Goal
-
-The goal of this exercise is to teach how to use floating point numbers in Elixir.
-
 ## Learning objectives
 
 - Know how to write floating point literals.
@@ -25,14 +19,3 @@ The goal of this exercise is to teach how to use floating point numbers in Elixi
 ## Prerequisites
 
 - `basics`
-
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
-## Analyzer
-
-This exercise does not require any specific logic to be added to the [analyzer][analyzer].
-
-[analyzer]: https://github.com/exercism/elixir-analyzer
-[representer]: https://github.com/exercism/elixir-representer

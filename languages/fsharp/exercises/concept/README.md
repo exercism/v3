@@ -17,6 +17,7 @@ These are the Concept Exercises that have currently been implemented, as well as
 | [`lists`][concept-exercise-lists]                                   | `lists`                      | `booleans`<br/>`pattern-matching`<br/>`strings`                                        |
 | [`numbers`][concept-exercise-numbers]                               | `conditionals`<br/>`numbers` | `basics`                                                                               |
 | [`pattern-matching`][concept-exercise-pattern-matching]             | `pattern-matching`           | `conditionals`<br/>`strings`                                                           |
+| [`records`][concept-exercise-records]                               | `records`                    | `booleans`<br/>`numbers`<br/>`pattern-matching`<br/>`strings`                          |
 | [`recursion`][concept-exercise-recursion]                           | `recursion`                  | `discriminated-unions`<br/>`higher-order-functions`<br/>`lists`<br/>`pattern-matching` |
 | [`strings`][concept-exercise-strings]                               | `strings`                    | `basics`                                                                               |
 
@@ -37,6 +38,7 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-exercise-strings]: ./strings/.meta/design.md
 [concept-exercise-numbers]: ./numbers/.meta/design.md
 [concept-exercise-pattern-matching]: ./pattern-matching/.meta/design.md
+[concept-exercise-records]: ./records/.meta/design.md
 [concept-exercise-recursion]: ./recursion/.meta/design.md
 [concept-exercise-discriminated-unions]: ./discriminated-unions/.meta/design.md
 [concept-exercise-floating-point-numbers]: ./floating-point-numbers/.meta/design.md

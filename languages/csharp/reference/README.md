@@ -16,6 +16,7 @@ The core OO features a C# developer should know about are:
 - [Inheritance][inheritance] ✅ (exercise [`inheritance`][exercise-inheritance])
 - [Interfaces][interfaces] 🚧 (issue [#1225](https://github.com/exercism/v3/issues/880))
   - Explicit Interface Implementation 🚧 (issue [#1225](https://github.com/exercism/v3/issues/880))
+  - Marker Interfaces
 - [Methods][methods] ✅ (exercise [`basics`][exercise-basics])
   - Constructors ✅ (exercise [`constructors`][exercise-constructors])
   - Destructors
@@ -119,6 +120,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - Imports (usings)
   - Namespaces 📖 (issue [#1127](https://github.com/exercism/v3/issues/1127))
   - Visibility (`public`, `private`, etc.) ✅ (exercise [`classes`][exercise-classes])
+- Serialization
 - Slicing
 - String formatting 📖 (issue [#962](https://github.com/exercism/v3/issues/962))
   - Formatting types 📖 (issue [#962](https://github.com/exercism/v3/issues/962))
@@ -136,6 +138,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - [Characters][char] 📖 (issue [#960](https://github.com/exercism/v3/issues/960))
 - Collections
   - [Arrays][array] (exercise [`arrays`][exercise-arrays])
+    - multi-dimension (incl. Array.CreateInstance)
   - [Dictionaries][map] ✅ (exercise [`dictionaries`][exercise-dictionaries])
   - Enumerables
   - Immutable collections
@@ -147,6 +150,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Dates ✅ (exercise [`datetimes`][exercise-datetimes])
   - Time zones
 - Delegates
+- dynamic
 - Enums ✅ (exercise [`enums`][exercise-enums])
   - Flag enums ✅ (exercise [`flag-enums`][exercise-flag-enums])
 - Events
@@ -176,6 +180,7 @@ The concept exercises use the following concepts:
 | `constructors`               | Know what constructors are. Know how to define parameterless constructors. Know how to define parameterized constructors. Know how to use constructor overloading. Know how to define private constructors.                                                                                                                                                                                                                                                                                           |
 | `bit-manipulation`           | Know how to use bitwise operators to manipulate bits.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | `booleans`                   | Know of the existence of the `bool` type and its two values. Know about boolean operators and how to build logical expressions with them. Know of the boolean operator precedence rules.                                                                                                                                                                                                                                                                                                              |
+| `chars`                      | Know how to declare and use a `char`, its relationship to strings and unicode.                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | `classes`                    | Know what classes are. Know what encapsulation is. Know what fields are. Know how to create an object. Know how to update state through methods. Know about the `void` type.                                                                                                                                                                                                                                                                                                                          |
 | `conditionals`               | Know of the existence of the `if` conditional execution statement.                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | `custom-attributes`          | Know of the existence of the `Attribute` type. Know what attributes are for. Know how to define custom attributes. Know how to read attribute values at runtime. Know how to limit attribute usage.                                                                                                                                                                                                                                                                                                   |
@@ -195,6 +200,7 @@ The concept exercises use the following concepts:
 | `numbers`                    | Know of the existence of the two most commonly used number types, `int` and `double`, and understand that the former represents whole numbers, and the latter floating-point numbers. Know of basic operators such as multiplication, comparison and equality. Know how to convert from one numeric type to another. Know what implicit and explicit conversions are.                                                                                                                                 |
 | `optional-parameters`        | Know how to define optional parameters.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `properties`                 | Know what properties are and how they relate to fields and methods. Know what backing-field properties are. Know what auto-implemented properties are. Know what calculated properties are. Know how to use property accessors to customize visibility. Know how to define the different types of properties.                                                                                                                                                                                         |
+| `StringBuilder`              | Know of the existence of the `StringBuilder` type. Know how to create a string using this type. Understand the performance advantages                                                                                                                                                                                                                                                                                                                                                                 |
 | `strings`                    | Know of the existence of the `string` type. Know how to create a string. Know of some basic methods (like finding the index of a character in a string, or returning a part the string). Know how to do basic string formatting.                                                                                                                                                                                                                                                                      |
 | `while-loops`                | Know how to write a `while` loop.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 

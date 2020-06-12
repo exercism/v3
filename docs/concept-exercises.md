@@ -95,6 +95,7 @@ For more information, watch [this video][video-docs-instructions.md] and check [
 - Hints should be bullet-pointed underneath headings.
 - The hints should be enough to unblock almost any student.
 - The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
+- The hints may use code samples to explain concepts, but not to outline the solution. e.g. in a lists exercise they might show a snippet of how a certain list function works, but not in a way that is directly copy/pasteable into the solution.
 - General hints about the exercise can appear under the `## General` heading.
 - Task-specific hints should appear underneath headings that match their task heading in the `instructions.md` (e.g. `## 2. Do Y`).
 - Task headings should describe the _what_ of the task, not the _how_.
@@ -109,7 +110,17 @@ For more information, watch [this video][video-docs-hints.md] and check [this ex
 
 **Purpose:** Provide more information about the concept(s) for a student to learn from.
 
-Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
+Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included.
+
+This document can also link to any additional resources that might be interesting to the student in the context of the exercise, such as:
+
+- Popular usages for a feature
+- Common pitfalls in a feature's use (e.g. casual use of multiple **threads**)
+- Limitations on use that may catch out the unsuspecting developer
+- Alternative approaches addressed in other exercises
+- Compromises made for ease of learning or to accommodate the Exercism environment, e.g. multiple classes in single file
+- Similar features with which the concept may be confused
+- Performance characteristics and memory usage
 
 For more information, watch [this video][video-docs-after.md] and check [this example after.md file][docs-after.md].
 
@@ -206,6 +217,7 @@ What these files look like depends on your track. At a minimum, the following tr
 - For compiled languages, consider having compilable code, as compiler messages can sometimes be hard to grasp for students new to the language.
 - The code should be as simple as possible.
 - Only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
+- The stub file is shown to the student when doing in-browser coding and is downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-stub-file] and check [this example stub file][stub-file].
 
@@ -217,6 +229,7 @@ For more information, watch [this video][video-stub-file] and check [this exampl
 - The code should be as simple as possible.
 - Only use language features introduced by the exercise's prerequisites (and their prerequisites, and so on).
 - All but the first test should be skipped by default. How this is done differs between languages.
+- The tests file is _not_ shown to the student when doing in-browser coding, but _is_ downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-tests-file] and check [this example tests file][tests-file].
 
@@ -227,6 +240,7 @@ For more information, watch [this video][video-tests-file] and check [this examp
 - The implementation must be _idiomatic_.
 - The code should be as simple as possible.
 - Only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
+- The example file is _not_ shown to the student when doing in-browser coding and is _not_ downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-example-file] and check [this example file][example-file].
 
