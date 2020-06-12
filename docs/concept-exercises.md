@@ -115,7 +115,7 @@ Once the student completes the exercise they will be shown this file, which shou
 This document can also link to any additional resources that might be interesting to the student in the context of the exercise, such as:
 
 - Popular usages for a feature
-- Common pitfalls in a feature's use (e.g. casual use of multiple **threads)**
+- Common pitfalls in a feature's use (e.g. casual use of multiple **threads**)
 - Limitations on use that may catch out the unsuspecting developer
 - Alternative approaches addressed in other exercises
 - Similar features with which the concept may be confused
