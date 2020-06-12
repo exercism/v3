@@ -1,77 +1,68 @@
 using System;
 
 public class CalculationException : Exception
-    // TODO: complete the definition of the constructor
 {
-    private int operand;
-    public CalculationException(int operand, string message, Exception inner) : base(message, inner)
+    public CalculationException(int operand1, int operand2, string message, Exception inner) : base(message, inner)
+    // TODO: complete the definition of the constructor
     {
-        this.operand = operand;
+        Operand1 = operand1;
+        Operand2 = operand2;
     }
 
-    public int GetOperand()
-    {
-        return operand;
-    }
+    public int Operand1 { get; }
+    public int Operand2 { get; }
 }
 
 public class CalculatorTestHarness
 {
-    public string Run(string testName, int testValue)
+    private Calculator calculator;
+
+    public CalculatorTestHarness(Calculator calculator)
+    {
+        this.calculator = calculator;
+    }
+
+    public string Multiply(int x, int y)
     {
         try
         {
-            if (testName == "Calculate")
-            {
-                Calculate(testValue);
-            }
-            else if (testName == "HandleInt")
-            {
-                TestHarnessOperations.HandleInt(testValue);
-            }
+            TestMultiplication(x, y);
         }
-        catch (OverflowException ofex)
+        catch (CalculationException cex) when (cex.Operand1 < 0)
         {
-            return "HandleInt failure";
-        }
-        catch (CalculationException cex) when (cex.GetOperand() == 0)
-        {
-            return "Calculate failed for a zero value. " + cex.InnerException.Message;
+            return "Multiply failed for a negative value. " + cex.InnerException.Message;
         }
         catch (CalculationException cex)
         {
-            return "Calculate failed for a non-zero value. " + cex.InnerException.Message;
+            return "Multiply failed for a positive value. " + cex.InnerException.Message;
         }
 
-        return string.Empty;
+        return "Multiply succeeded";
     }
 
-    public void Calculate(int testNum)
+    public void TestMultiplication(int x, int y)
     {
         try
         {
-            TestHarnessOperations.HandleInt(testNum);
+            calculator.Multiply(x, y);
         }
         catch (OverflowException ofex)
         {
-            throw new CalculationException(testNum, "Calculate: operation failed in FakeOp", ofex);
+            throw new CalculationException(x, y, string.Empty, ofex);
         }
     }
 }
 
-
-// Please do not modify the code below.  In a more realistic
-// scenario this would be in a different library and would actually
-// do something meaningful.  This code will always throw
-// a Sysem.OverflowException
-public static class TestHarnessOperations
+// Please do not modify the code below.
+// If there is an overflow in the multiplication operation
+// then a System.OverflowException is thrown.
+public class Calculator
 {
-    public static int HandleInt(int testNum)
+    public int Multiply(int x, int y)
     {
-        int trouble = Int32.MaxValue;
         checked
         {
-            return Int32.MaxValue * trouble;
+            return x * y;
         }
     }
 }

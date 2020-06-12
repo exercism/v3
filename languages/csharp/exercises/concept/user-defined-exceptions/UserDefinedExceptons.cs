@@ -2,44 +2,45 @@ using System;
 
 public class CalculationException_template : Exception
 {
-    private int operand;
-
-    public CalculationException_template(int operand, string message, Exception inner)
+    public CalculationException_template(int operand1, int operand2, string message, Exception inner) : base(message, inner)
     // TODO: complete the definition of the constructor
     {
-
     }
 
-    public int GetOperand()
-    {
-        throw new NotImplementedException($"Please implement the GetOperand() method");
-    }
+    public int Operand1 { get; }
+    public int Operand2 { get; }
 }
 
 public class CalculatorTestHarness_template
 {
-    public string Run(string testName, int testValue)
+    private Calculator_template calculator;
+
+    public CalculatorTestHarness_template(Calculator_template calculator)
     {
-        throw new NotImplementedException($"Please implement the Run() method");
+        this.calculator = calculator;
     }
 
-    public void Calculate(int testNum)
+    public string Multiply(int x, int y)
     {
+        throw new NotImplementedException($"Please implement the Multiply() method");
+    }
+
+    public void TestMultiplication(int x, int y)
+    {
+        throw new NotImplementedException($"Please implement the TestMultiplication() method");
     }
 }
 
-// Please do not modify the code below.  In a more realistic
-// scenario this would be in a different library and would actually
-// do something meaningful.  This code will always throw
-// a Sysem.OverflowException
-public static class TestHarnessOperations_template
+// Please do not modify the code below.
+// If there is an overflow in the multiplication operation
+// then a System.OverflowException is thrown.
+public class Calculator_template
 {
-    public static int HandleInt(int testNum)
+    public int Multiply(int x, int y)
     {
-        int trouble = Int32.MaxValue;
         checked
         {
-            return Int32.MaxValue * trouble;
+            return x * y;
         }
     }
 }

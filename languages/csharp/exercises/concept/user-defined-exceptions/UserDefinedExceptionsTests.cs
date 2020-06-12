@@ -1,40 +1,37 @@
+using System;
 using Xunit;
 
 public class UserDefinedExceptionsTests
 {
     [Fact]
-    public void Call_Calculate()
+    public void Call_TestMultiplication()
     {
-        var cth = new CalculatorTestHarness();
+        var cth = new CalculatorTestHarness(new Calculator());
 
-        Assert.Throws<CalculationException>( () => cth.Calculate(123) );
+        Assert.Throws<CalculationException>(() => cth.TestMultiplication(Int32.MaxValue, Int32.MaxValue));
     }
 
     [Fact /*(Skip = "Remove this Skip property to run this test")*/]
-    public void Call_Run_Calculate_with_0()
+    public void Call_Multiply_with_negative()
     {
-        var cth = new CalculatorTestHarness();
-        Assert.Equal("Calculate failed for a zero value. Arithmetic operation resulted in an overflow.", cth.Run("Calculate", 0));
+        var cth = new CalculatorTestHarness(new Calculator());
+        Assert.Equal("Multiply failed for a negative value. Arithmetic operation resulted in an overflow.",
+            cth.Multiply(-2, Int32.MaxValue));
     }
 
     [Fact /*(Skip = "Remove this Skip property to run this test")*/]
-    public void Call_Run_Calculate_with_non_0()
+    public void Call_Multiply_with_positive()
     {
-        var cth = new CalculatorTestHarness();
-        Assert.Equal("Calculate failed for a non-zero value. Arithmetic operation resulted in an overflow.", cth.Run("Calculate", 123));
+        var cth = new CalculatorTestHarness(new Calculator());
+        Assert.Equal("Multiply failed for a positive value. Arithmetic operation resulted in an overflow.",
+            cth.Multiply(Int32.MaxValue, Int32.MaxValue));
     }
 
     [Fact /*(Skip = "Remove this Skip property to run this test")*/]
-    public void Call_Run_Calculate_with_nonsense()
+    public void Call_Multiply_with_success()
     {
-        var cth = new CalculatorTestHarness();
-        Assert.Equal(string.Empty, cth.Run("Foo", 123));
+        var cth = new CalculatorTestHarness(new Calculator());
+        Assert.Equal("Multiply succeeded", cth.Multiply(6, 7));
     }
 
-    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
-    public void Call_Run_HandleInt()
-    {
-        var cth = new CalculatorTestHarness();
-        Assert.Equal("HandleInt failure", cth.Run("HandleInt", 123));
-    }
 }
