@@ -3,7 +3,6 @@
 - Know how to define a user-defined exception.
 - Know how to use exception filtering.
 - Know that using errors as control logic is an anti-pattern
-- throwing non-exception types (discussion only)
 
 ## Out of scope
 
