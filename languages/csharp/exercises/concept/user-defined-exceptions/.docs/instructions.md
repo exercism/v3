@@ -9,8 +9,8 @@ Complete the definition of the constructor of `CalculationException` which will 
 
 ## 2. Implement the `TestMultiplication()` method
 
-The `TestMultiplication()` routine should call the `Calclator.Multiplication()` routine
-passing in x and y integer values. The y value is always positive, the x value may be negative. If an overflow occurs then an `OverflowException` will be thrown by the `Calculator`. This exception should be caught in `TestMultiplication` and wrapped in a `CalculationException` and the x and y values being passed around should be stored as the exception's operands. The newly created `CalculationException` object should be thrown. Otherwise the product of x and y should be returned by `TestMultiplication`.
+The `TestMultiplication()` routine should call the `Calclator.Multiply()` routine
+passing in x and y integer values. The y value is always positive, the x value may be negative. If an overflow occurs then an `OverflowException` will be thrown by the `Calculator`. This exception should be caught in `TestMultiplication` and wrapped in a `CalculationException` and the x and y values being passed around should be stored as the exception's operands. The newly created `CalculationException` object should be thrown. The test has no interest in the value returned by `Multiply` if it is successful.
 
 ```csharp
 var cth = new CalculatorTestHarness(new Calculator());
@@ -19,7 +19,7 @@ cth.TestMultiplication(Int32.MaxValue, Int32.MaxValue);
 
 var cth2 = new CalculatorTestHarness(new Calculator());
 cth2.TestMultiplication(3, 2);
-// => 6
+// => silently exits
 ```
 
 ## 3. Implement the `Multiply()` method
