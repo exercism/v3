@@ -1,5 +1,5 @@
-In Ruby, **arrays** are ordered, integer-indexed collections of any object. Array indexing starts at 0, as in C or Java. A negative index is assumed to be relative to the end of the array—that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.
-Ruby arrays mixed in the [Enumerable module][enumerable-module] which provides collection classes with several traversal and searching methods, and with the ability to sort.
+In Ruby, **arrays** are ordered, integer-indexed collections of any object. Array indexing starts at `0`. A negative index is assumed to be relative to the end of the array — i.e. an index of `-1` indicates the last element of the array, `-2` is the next to last element in the array, and so on.
+Ruby arrays mix in the [Enumerable module][enumerable-module], which adds several traversal and searching methods, and with the ability to sort.
 
 ### Create array.
 
@@ -9,31 +9,25 @@ Ruby arrays mixed in the [Enumerable module][enumerable-module] which provides c
 array = [1, "two", 3.0] #=> [1, "two", 3.0]
 ```
 
-- An array can also be created by explicitly calling ::new
-
-```ruby
-array = Array.new #=> []
-Array.new(3)      #=> [nil, nil, nil]
-```
 
 ### Element Assignment
 
-- Sets the element at index, or replaces a subarray from the start index for length elements.
+Elements can accessed or changed using indexes. Subarrays can be accessed by specifying a start index and a size.
 
 ```ruby
-a = Array.new
+a = ["", "", "", "", ""]
 
-a[4] = "4"                  #=> [nil, nil, nil, nil, "4"]
-a[0, 3] = [ 'a', 'b', 'c' ] #=> ["a", "b", "c", nil, "4"]
+a[4] = "hello"  #=> [nil, nil, nil, nil, "hello"]
+a[0, 3] = [ 'a', 'b', 'c' ] #=> ["a", "b", "c", nil, "hello"]
 ```
 
 - Negative indices will count backward from the end of the array.
 
 ```ruby
-a = ['a, 'b']
+a = ['a', 'b']
 
-a[-1] = "Z" #=> ["a", "Z"]
-
+a[-1] = "Z" 
+a #=> ["a", "Z"]
 ```
 
 ### Element Reference

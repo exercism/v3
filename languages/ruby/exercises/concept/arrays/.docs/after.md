@@ -1,7 +1,7 @@
-Data structures that can hold zero or more elements are known as _collections_. An **array** in Ruby is a collection that maintains the ordering in which it’s given objects. Ruby arrays can hold any item that is an instance of an object. Elements can be assigned to an array or retrieved from it using an index. Ruby arrays are zero-based, meaning that the first element's index is always zero:
+Data structures that can hold zero or more elements are known as _collections_. An **array** in Ruby is a collection that maintains the ordering in which its objects are added. Arrays can hold any object. Objects can be added to an array or retrieved from it using an index. Ruby array indexing is zero-based, meaning that the first element's index is always zero:
 
 ```ruby
-# Declare array with explicit size (size is 2)
+# Declare an array containing two values
 two_ints = [1,2];
 
 # Assign first and second element by index
@@ -9,19 +9,21 @@ two_ints[0] = 7;
 two_ints[1] = 8;
 
 # Retrieve the second element by index
-two_ints[1] == 8; # => true
+two_ints[1] # => 8
 
 # Check the length of the array
-two_ints.size == 2; # => true
+two_ints.size # => 2
 ```
 
 In Ruby there are multiple ways of creating an Array:
 
-- Using the literal constructor `[]`.
-- Explicitly calling `Array.new`.
-- Calling the Kernel `Array()` method.
+- Using the literal constructor `[]` _(most common)_
+- Explicitly calling `Array.new`
+- Calling the Kernel `Array()` method
 
-The `Array.new` method supports two optional arguments: the initial size of the array and a default object. When sending the second parameter, the same object will be used as the value for all the array elements.
+The `Array.new` method supports two optional arguments: the initial size of the array and a default object.
+
+When a size and default are provided, the array is populated with `size` copies of default object.
 
 ```ruby
 a = Array.new(2, Hash.new)
@@ -46,7 +48,7 @@ a[0]['cat'] = 'feline'
 a # => [{"cat"=>"feline"}, {}]
 ```
 
-Another characteristic of Ruby arrays is that it mixes in the [Enumerable][enumerable-module] module which bring a lot of handy methods to iterate, search, sort, filter, etc. elements of an array.
+Another characteristic of Ruby arrays is that they mix in the [Enumerable][enumerable-module] module, which adds a lot of handy methods to iterate, search, sort, filter, etc. elements of an array.
 
 One could use a [`for` loop][for-loop] to iterate over an array:
 
