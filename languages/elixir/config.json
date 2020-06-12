@@ -142,6 +142,12 @@
         ]
       },
       {
+        "slug": "errors",
+        "uuid": "f660a2e1-bb50-4626-8d3f-6cd7c44fa8db",
+        "concepts": ["errors", "try-rescue"],
+        "prerequisites": ["anonymous-functions", "pattern-matching", "structs"]
+      },
+      {
         "slug": "structs",
         "uuid": "d8d25b93-d918-421e-bb57-cbdaf428d9e2",
         "concepts": ["structs", "static-access-operator"],
