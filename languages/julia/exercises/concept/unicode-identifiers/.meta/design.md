@@ -12,7 +12,8 @@
 
 ## Out of scope
 
-This should not be the first exercise where `@eval`/`eval` is a good solution.
+- This should not be the first exercise where `@eval`/`eval` is a good solution.
+- Defining `show(io::IO, c::Clock)` needlessly increases the size of the solution space.
 
 ## Concepts
 
