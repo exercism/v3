@@ -1,11 +1,11 @@
-There are two way to write a keyword list:
+A keyword list is a list of `{key, value}` tuples. There are two way to write a keyword list:
 
 ```elixir
 # concise
 [month: "April", year: 2018]
 
-# as a list of tuples
-[{:month, "April"}]
+# explicit
+[{:month, "April"}, {:year, 2018}]
 ```
 
 ## Keys must be atoms
