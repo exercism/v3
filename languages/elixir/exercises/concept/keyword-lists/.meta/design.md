@@ -5,8 +5,11 @@
 - Know about the `Keyword` module.
 - Know that keyword lists are often used for options.
 - Know that you can drop the square brackets when the keyword list is the last argument.
+- Know that you can include spaces and other special characters in an atom by quoting it.
 
 ## Out of scope
+
+- Module names being atoms
 
 ## Concepts
 
@@ -19,5 +22,3 @@
 - `atoms`
 - `if-conditional`
 - `default-arguments`
-
-## Analyzer
