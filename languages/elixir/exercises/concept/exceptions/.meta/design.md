@@ -1,6 +1,6 @@
 ## Learning objectives
 
-- Know what the Exception behaviour is
+- Know what the _Exception behaviour_ is
 - Know how to define your own exceptions
   - with just :message
   - with :message and exception/1
