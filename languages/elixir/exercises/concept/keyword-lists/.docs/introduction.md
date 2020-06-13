@@ -13,4 +13,4 @@ Keyword lists are lists of `{key, value}` tuples, and can also be written as suc
 
 Keys in a keyword list must be atoms, but the values can be anything. Each key can be used more than once. The key/value pairs in a keyword list are ordered.
 
-You can work with keyword lists using the same methods as for lists, or you can use the `Keyword` module.
+You can work with keyword lists using the same approaches as for lists, or you can use the `Keyword` module.
