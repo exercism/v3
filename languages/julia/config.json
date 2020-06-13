@@ -31,7 +31,6 @@
                 "concepts": ["unicode-identifiers", "emoji-symbols"],
                 "prerequisites": [
                     "symbols",
-                    "strings",
                     "composite-types",
                     "methods",
                     "constants"
