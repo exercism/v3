@@ -47,7 +47,9 @@ WineCellar.filter([
 
 ## 3. Get all wines of a given color bottled in a given year
 
-Extend the `WineCellar.filter/3` function. When given a `:year` option, the function should return a list of wines of a given color from a given year. Use the already-implemented `WineCellar.filter_by_year/2` function.
+Extend the `WineCellar.filter/3` function. When given a `:year` option, the function should return a list of wines of a given color from a given year.
+
+Use the already-implemented `WineCellar.filter_by_year/2` function. It takes a list of wines and a year as arguments and returns a list of wines from a given year.
 
 ```elixir
 WineCellar.filter([
@@ -67,7 +69,9 @@ WineCellar.filter([
 
 ## 4. Get all wines of a given color bottled in a given country
 
-Extend the `WineCellar.filter/3` function. When given a `:country` option, the function should return a list of wines of a given color from a given country. Use the already-implemented `WineCellar.filter_by_country/2` function.
+Extend the `WineCellar.filter/3` function. When given a `:country` option, the function should return a list of wines of a given color from a given country.
+
+Use the already-implemented `WineCellar.filter_by_country/2` function. It takes a list of wines and a country as arguments and returns a list of wines from a given country.
 
 Make sure that the function works when given both the `:year` and the `:country` option, in any order.
 
