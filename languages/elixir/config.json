@@ -159,6 +159,18 @@
           "nil",
           "default-arguments"
         ]
+      },
+      {
+        "slug": "keyword-lists",
+        "uuid": "921a03be-662a-4aea-b8fc-a87d199b1528",
+        "concepts": ["keyword-lists"],
+        "prerequisites": [
+          "lists",
+          "tuples",
+          "atoms",
+          "if-conditional",
+          "default-arguments"
+        ]
       }
     ],
     "practice": []
