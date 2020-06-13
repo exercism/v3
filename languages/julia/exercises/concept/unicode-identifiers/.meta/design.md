@@ -24,6 +24,7 @@
 
 This exercise's prerequisites Concepts are:
 
+- Number types (TODO: Depends on what the concepts will be called)
 - `composite-types`
 - `methods`
 - `constants`
