@@ -86,11 +86,18 @@ To successfully pattern match on a keyword list using the concise syntax, you wo
 
 ## Keyword lists vs maps
 
-Both keyword lists and maps are key-value data structures, but they have different use cases.
+|                  | Keyword list                  | Map                                 |
+| ---------------- | ----------------------------- | ----------------------------------- |
+| Key type         | Atoms                         | Any, can be mixed in one map        |
+| Duplicate keys   | Yes                           | No                                  |
+| Keys ordered     | Yes                           | No                                  |
+| Access           | `list[:key]`, `Keyword.get/2` | `map.key`, `map[:key]`, `Map.get/2` |
+| Access time      | Linear                        | Logarithmic                         |
+| Pattern matching | Not very useful               | Useful                              |
 
-In contrast to keyword lists, maps are very useful with pattern matching. A map matches as long as the keys in the pattern exist in the given map, in any order.
+Faster access time, flexible key type, and useful pattern matching makes maps the default choice in most cases.
 
-Maps are also more efficient. Keyword lists are lists, and thus finding a key in a keyword list works in linear time. On the other hand, finding a key in a map works in a logarithmic time. For this reason, keyword lists are used in Elixir mainly for passing optional values. If you need to store many items or guarantee unique keys, maps should be your default choice.
+Use keyword lists when you don't have a lot of data, but need duplicate keys or keys in a specific order.
 
 [keyword-duplicate-keys-and-ordering]: https://hexdocs.pm/elixir/Keyword.html#module-duplicate-keys-and-ordering
 [keyword]: https://hexdocs.pm/elixir/Keyword.html
