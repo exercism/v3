@@ -1,11 +1,7 @@
 defmodule RPNCalculator.Exception do
-  defmodule DivisionByZeroError do
-    raise "Please implement the DivisionByZeroError exception"
-  end
+  # Implement DivisonByZeroError here.
 
-  defmodule StackUnderflowError do
-    raise "Please implement the StackUnderflowError exception"
-  end
+  # Implement StackUnderflowError here.
 end
 
 defmodule RPNCalculator.Output do
