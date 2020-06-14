@@ -7,8 +7,8 @@ defmodule RPNCalculator.ExceptionTest do
   # so the test suite is never run, so using the cond to conditionally create test cases based on if the module is defined and loaded
   # allows for meaningful error messages.
   cond do
+    config[:undefined_division_by_zero_error_module] ->
       # @tag :pending
-      config[:undefined_division_by_zero_error_module] ->
       test "DivisionByZeroError defined" do
         flunk("Implement the DivisionByZeroError inside of the `RPNCalculator.Exception` module")
       end
