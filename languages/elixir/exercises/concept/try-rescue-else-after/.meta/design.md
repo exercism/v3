@@ -18,3 +18,11 @@
 ## Prerequisites
 
 - `try-rescue`
+
+## Analyzer
+
+- ensure functions appear in each section:
+  - open before `try`
+  - write in `try`
+  - handle the happy path in `else`
+  - clean up in `after`
