@@ -13,8 +13,8 @@
       {
         "slug": "arrays",
         "uuid": "4d271980-ab4b-11ea-bb37-0242ac130002",
-        "concepts": ["arrays", "each-loops"],
-        "prerequisites": ["classes", "booleans", "conditionals"]
+        "concepts": ["arrays"],
+        "prerequisites": ["classes", "booleans", "conditionals", "blocks"]
       },
       {
         "slug": "strings",

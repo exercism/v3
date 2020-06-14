@@ -81,17 +81,4 @@ arr.pop #=> 6
 arr     #=> [1, 2, 3, 4, 5]
 ```
 
-### Iterating over Arrays
-
-Array has an each method, which defines what elements should be iterated over and how.
-
-```ruby
-arr = [1, 2, 3, 4, 5]
-arr.each { |a| print a -= 10, " " }
-# prints: -9 -8 -7 -6 -5
-#=> [1, 2, 3, 4, 5]
-```
-
-Note that this operation leaves the array unchanged.
-
 [enumerable-module]: https://ruby-doc.org/core-2.7.1/Enumerable.html

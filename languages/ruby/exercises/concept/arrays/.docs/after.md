@@ -50,24 +50,5 @@ a # => [{"cat"=>"feline"}, {}]
 
 Another characteristic of Ruby arrays is that they mix in the [Enumerable][enumerable-module] module, which adds a lot of handy methods to iterate, search, sort, filter, etc. elements of an array.
 
-One could use a [`for` loop][for-loop] to iterate over an array:
-
-```ruby
-vowels = ['a', 'e', 'i', 'o', 'u']
-
-for i in 0..vowels.size
-  print vowels[i]
-end
-
-#=> aeiou
-
-```
-
-However, generally an `each` loop is preferable over a `for` loop for the following reasons:
-
-- An `each` loop is guaranteed to iterate over _all_ values. With a `for` loop, it is easy to miss elements, for example due to an off-by-one error.
-- An `each` loop is more _declarative_, your code is communicating _what_ you want it to do, instead of a `for` loop that communicates _how_ you want to do it.
-- An `each` loop works on all collection types, including those that don't support using an indexer to access elements.
-
 [enumerable-module]: https://ruby-doc.org/core-2.7.1/Enumerable.html
 [for-loop]: https://launchschool.com/books/ruby/read/loops_iterators#forloops
