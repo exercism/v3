@@ -17,21 +17,11 @@ String escaped = "c:\\test.txt";
 // => c:\test.txt
 ```
 
-Finally, there are many ways to concatenate a string. The simplest one is by using the `+` operator.
-Other possibilities are:
-
-- use [`StringBuilder` class][string-builder]
-- use [`String.concat` method][string-concat]
+Finally, there are many ways to concatenate a string. The simplest one is the `+` operator
 
 ```java
 String name = "Jane";
 "Hello " + name + "!";
-// => "Hello Jane!"
-
-new StringBuilder().append("Hello ").append("Jane").append("!").toString();
-// => "Hello Jane!"
-
-"Hello ".concat("Jane".concat("!"))
 // => "Hello Jane!"
 ```
 
@@ -42,6 +32,11 @@ String name = "Jane";
 String.format("Hello %s!",name);
 // => "Hello Jane!"
 ```
+
+Other possibilities are:
+
+- use [`StringBuilder` class][string-builder]
+- use [`String.concat` method][string-concat]
 
 [string-class]: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html
 [string-builder]: https://docs.oracle.com/javase/tutorial/java/data/buffers.html

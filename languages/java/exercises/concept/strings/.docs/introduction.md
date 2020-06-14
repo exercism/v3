@@ -5,3 +5,4 @@ String fruit = "Apple";
 ```
 
 Strings are manipulated by calling the string's methods. Once a string has been constructed, its value can never change. Any methods that appear to modify a string will actually return a new string.
+The `String` class provides some _static_ methods to transform the strings.
