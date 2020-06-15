@@ -263,4 +263,3 @@ The concept exercises use the following concepts:
 [exercise-numbers]: ../exercises/concept/numbers/.meta/design.md
 [exercise-properties]: ../exercises/concept/properties/.meta/design.md
 [exercise-strings]: ../exercises/concept/strings/.meta/design.md
-
