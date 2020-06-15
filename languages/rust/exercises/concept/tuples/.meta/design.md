@@ -24,3 +24,4 @@ The Concepts this exercise unlocks are:
 This exercise's prerequisites Concepts are:
 
 - structs
+- numbers
