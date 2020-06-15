@@ -1,6 +1,6 @@
 ## General
 
-- The `string` class has many useful [built-in methods][string-class].
+- The `String` class has many useful [built-in methods][string-class].
 
 ## 1. Get message from a log line
 
@@ -9,7 +9,7 @@
 
 ## 2. Get log level from a log line
 
-- Changing a `string`'s casing is explored [here][tutorial-changing-case-upper] and [here][tutorial-changing-case-lower].
+- Changing a `String`'s casing is explored [here][tutorial-changing-case-upper] and [here][tutorial-changing-case-lower].
 
 ## 3. Reformat a log line
 
