@@ -4,12 +4,16 @@ defmodule RPNCalculator.Exception do
   end
 
   defmodule StackUnderflowError do
-    defexception [:message]
+    @message "stack underflow occurred"
+    defexception message: @message
 
     @impl true
-    def exception(operation_name) do
-      msg = "encountered stack underflow with the #{operation_name} operation"
-      %StackUnderflowError{message: msg}
+    def exception(value) do
+      error = %StackUnderflowError{}
+      case value do
+        [] -> error
+        _ ->  %{error | message: "#{error.message}, context: #{value}"}
+      end
     end
   end
 end
