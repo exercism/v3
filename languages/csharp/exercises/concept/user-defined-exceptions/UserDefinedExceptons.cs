@@ -1,8 +1,8 @@
 using System;
 
-public class CalculationException_template : Exception
+public class CalculationException : Exception
 {
-    public CalculationException_template(int operand1, int operand2, string message, Exception inner) : base(message, inner)
+    public CalculationException(int operand1, int operand2, string message, Exception inner) : base(message, inner)
     // TODO: complete the definition of the constructor
     {
     }
@@ -11,9 +11,9 @@ public class CalculationException_template : Exception
     public int Operand2 { get; }
 }
 
-public class CalculatorTestHarness_template
+public class CalculatorTestHarness
 {
-    private Calculator_template calculator;
+    private Calculator calculator;
 
     public CalculatorTestHarness_template(Calculator_template calculator)
     {
