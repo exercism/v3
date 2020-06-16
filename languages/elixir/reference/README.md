@@ -268,6 +268,8 @@ The concept exercises use the following concepts:
 | `bit manipulation`               | Introduction to bit manipulation using the Bitwise module functions                                       |
 | `booleans`                       | Introduction to the boolean type and strict boolean operators -- and/2, or/2, not/1                       |
 | `default-arguments`              | Introduction to default arguments in named functions, function headers                                    |
+| `errors`                         | Introduction to error handling in elixir (try, rescue)                                                    |
+| `exceptions`                     | How to define, use exceptions                                                                             |
 | `closures`                       | How to implement closures in Elixir                                                                       |
 | `conditionals`                   | Intro to Elixir `cond/1` function.                                                                        |
 | `floating-point-numbers`         | How to use floating point numbers to represent real numbers                                               |
