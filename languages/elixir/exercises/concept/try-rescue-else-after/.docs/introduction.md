@@ -1,6 +1,6 @@
 ## Errors Expanded
 
-Using `try..rescue` is a powerful construct for catching errors when they occur in programs so that function can return sensible values if it is required. The `try..rescue` construct also offers us two additional features we can make use of:
+Using `try..rescue` is a powerful construct for catching errors when they occur. Rescuing errors allows functions to return defined values when it is necessary. The `try..rescue` construct also offers us two additional features we can make use of:
 
 - the `else` block
   - When the try block succeeds, the result is matched to this block.
@@ -23,7 +23,7 @@ end
 
 ## Dynamic dispatch
 
-When Elixir resolves the function to be invoked, it uses the Module's name to perform a lookup. The lookup can be done dynamically if the have the Module name bound to a variable because a module's name is an atom.
+When Elixir resolves the function to be invoked, it uses the Module's name (atom) to perform a lookup. The lookup can be done dynamically if the Module's name (atom) is bound to a variable.
 
 - You are familiar with the atom type:
 
