@@ -24,7 +24,7 @@ defmodule RPNCalculator.OutputTest do
 
   describe "write/3" do
     # @tag :pending
-    test "returns ok tuple `{:ok, <equation>}` if function succeeds" do
+    test "returns ok tuple if function succeeds" do
       assert {:ok, @equation} == RPNCalculator.Output.write(@resource, @filename, @equation)
     end
 
@@ -59,7 +59,7 @@ defmodule RPNCalculator.OutputTest do
     end
 
     @tag :pending
-    test "rescues and returns error tuple `{:error, \"Unable to write to resource\"}` from raised error" do
+    test "rescues and returns error tuple from raised error" do
       assert {:error, "Unable to write to resource"} == RPNCalculator.Output.write(@resource, @bad_filename, @equation)
     end
 
