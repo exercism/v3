@@ -14,3 +14,4 @@ These awesome people help maintain the Elixir track.
 - Nathan Chere (Slack: `@nathanchere`, GitHub: [nathanchere](https://github.com/nathanchere), GitLab: [nathanchere](https://gitlab.com/nathanchere))
 - Oleksii Filonenko (Slack: `@Oleksii Filonenko`, GitHub: [filalex77](https://github.com/filalex77))
 - Everett Griffiths (Slack: `@fireproofsocks`, GitHub: [fireproofsocks](https://github.com/fireproofsocks/))
+- Angelika Tyborska (Slack: `@Angelika Tyborska`, GitHub: [angelikatyborska](https://github.com/angelikatyborska/))
