@@ -9,9 +9,9 @@ Comments should precede packages as well as exported identifiers, e.g. exported 
 A package variable can look like this:
 
 ```go
-// CurrentTemperature gives the current 
-// temperature in degrees Celsius.
-var CurrentTemperature int
+// temperatureFahrenheit gives a certain 
+// temperature in degrees Fahrenheit.
+var temperatureFahrenheit int
 ```
 
 ## Package comments
