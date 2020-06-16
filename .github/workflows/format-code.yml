@@ -34,9 +34,6 @@ jobs:
         run: |
           PR_DATA="/tmp/pr.json"
 
-          jq -r ".issue.pull_request.url" "$GITHUB_EVENT_PATH" | \
-            xargs curl --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' -o "$PR_DATA" --url
-
           HEAD_REF=$(jq -r ".head.ref" "$PR_DATA")
           
           if [ ${{ steps.fork_status.outputs.fork }} == "false" ]; then
