@@ -32,4 +32,6 @@ end
 
 `receive/1` will take _one message_ from the mailbox that matches any of the given patterns and execute the expression given for that pattern. If there are no messages in the mailbox, or none of messages in the mailbox match any of the patterns, `receive/1` is going to wait for one.
 
+## Receive loop
+
 If you want to receive more than one message, you need to call `receive/1` recursively. It is a common pattern to implement a recursive function, for example named `loop`, that calls `receive/1`, does something with the message, and then calls itself to wait for more messages. If you need to carry some state from one `receive/1` call to another, you can do it by passing an argument to that `loop` function.
