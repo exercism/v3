@@ -9,10 +9,12 @@ Comments should precede packages as well as exported identifiers, e.g. exported 
 A package variable can look like this:
 
 ```go
-// temperatureFahrenheit gives a certain 
+// TemperatureFahrenheit gives a certain 
 // temperature in degrees Fahrenheit.
-var temperatureFahrenheit int
+var TemperatureFahrenheit int
 ```
+
+Note that TemperatureFahrenheit is capitalized, which makes this exported identifier a global variable.
 
 ## Package comments
 
@@ -51,7 +53,7 @@ It's a good idea to configure your editor to run `golint` for you, otherwise you
 golint weather.go
 ```
 
-To use this command globally, make sure that `golint` is in your $PATH.
+To use `golint` command globally, make sure that it is in your $PATH.
 
 
 [godoc]: https://blog.golang.org/godoc

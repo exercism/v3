@@ -1,8 +1,11 @@
-// Package weather [ TODO ]
 package weather
 
-// TODO: define the package variable CurrentCondition
+var (
+	CurrentCondition string
+	CurrentLocation  string
+)
 
-// TODO: define the 'InputCurrentWeather()' function
-
-// TODO: define the 'Log()' function
+func Log(city, condition string) string {
+	CurrentLocation, CurrentCondition = city, condition
+	return CurrentLocation + " - current weather condition: " + CurrentCondition
+}

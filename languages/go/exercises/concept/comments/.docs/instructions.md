@@ -1,19 +1,19 @@
 In this exercise, your task is to help a weather station manage their weather forecasting program.
 
-## 1. Write a package comment 
+## 1. Document the package
 
-Complete the package comment for `package weather` that describes its content. 
+Write a package comment for `package weather` that describes its content. 
 
-## 2. Define a variable for the current weather condition
+## 2. Document the CurrentCondition variable
 
-Write a function comment and define the package variable `CurrentCondition()`. Explicitly specify its type as a string. 
+Write a comment for the package variable `CurrentCondition`.
 
-Remember, comments for package variables should describe _what_ they do, not _why_. 
+Remember, comments for package variables should describe their _content_, not their _purpose_. 
 
-## 3. Define the InputCurrentWeather() function
+## 3. Document the CurrentLocation variable
 
-Write a function comment and define the function `InputCurrentWeather()` that takes a string called `weather`. This function should update `CurrentCondition()` by assigning `weather` to it. This function does not have a return value.
+Just like the previous step, write a comment for `CurrentLocation`.
 
-## 4. Define the Log() function
+## 4. Document the Log() function
 
-Write a function comment a define function `Log()`, which should return a `string`. The weather station would like this function to return a short statement that presents the `CurrentCondition`.
+Write a function comment for `Log()`.

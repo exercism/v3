@@ -1,16 +1,17 @@
 // Package weather provides utilities for a
-// weather station's program.
+// weather station's forecast program.
 package weather
 
-// CurrentCondition describes the current weather condition.
-var CurrentCondition string
+var (
+	// CurrentCondition describes the current weather condition.
+	CurrentCondition string
+	// CurrentLocation describes a specified location.
+	CurrentLocation string
+)
 
-// InputCurrentCondition updates the exported variable CurrentCondition.
-func InputCurrentCondition(condition string) {
-	CurrentCondition = condition
-}
-
-// Log returns a statement about the current weather condition.
-func Log() string {
-	return "The current weather condition is: " + CurrentCondition
+// Log returns a statement about the weather
+// based on a given city and weather condition.
+func Log(city, condition string) string {
+	CurrentLocation, CurrentCondition = city, condition
+	return CurrentLocation + " - current weather condition: " + CurrentCondition
 }
