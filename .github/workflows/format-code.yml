@@ -83,5 +83,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'For security reasons, `/format` does not trigger CI build when the PR has been submitted from a fork. To make the required checks pass, you need to trigger a build through one of the following ways:\n\n- Push an empty commit to this branch: `git commit --allow-empty -m "Trigger builds"`.\n- Close and reopen the PR.\n- Push a regular commit to this branch.'
+              body: 'For security reasons, `/format` does not trigger CI builds when the PR has been submitted from a fork. To make the required checks pass, you need to trigger a build through one of the following ways:\n\n- Push an empty commit to this branch: `git commit --allow-empty -m "Trigger builds"`.\n- Close and reopen the PR.\n- Push a regular commit to this branch.'
             })
