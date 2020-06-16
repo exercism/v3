@@ -17,6 +17,7 @@
 
 ## Prerequisites
 
+- `io`
 - `try-rescue`
 
 ## Analyzer
