@@ -10,14 +10,21 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/format')
     steps:
-      - name: 'Check fork status'
-        id: fork_check
+      - name: 'Download PR data'
         run: |
-          IS_FORK="$(jq '.pull_request.head.repo.fork' "$GITHUB_EVENT_PATH")"
-          echo "::set-output name=fork::$IS_FORK"
+          PR_DATA="/tmp/pr.json"
           
+          jq -r ".issue.pull_request.url" "$GITHUB_EVENT_PATH" | \
+            xargs curl --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' -o "$PR_DATA" --url
+
+      - name: 'Check fork status'
+        id: fork_status
+        run: |
+          IS_FORK="$(jq '.head.repo.fork' "/tmp/pr.json")"
+          echo "::set-output name=fork::$IS_FORK"
+
       - name: 'Setup SSH deploy key'
-        if: steps.fork_check.outputs.fork == "false"
+        if: steps.fork_status.outputs.fork == 'false'
         run: |
           mkdir ~/.ssh
           echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_ed25519
@@ -32,11 +39,11 @@ jobs:
 
           HEAD_REF=$(jq -r ".head.ref" "$PR_DATA")
           
-          if [ ${{ steps.fork_check.outputs.fork }} == "false" ]; then
-            # Setup repo using ssh
+          if [ ${{ steps.fork_status.outputs.fork }} == "false" ]; then
+            echo "::debug::Setting up repo using ssh"
             HEAD_REPO=$(jq -r '.head.repo.ssh_url' "$PR_DATA")
           else
-            # Setup repo using HTTPS
+            echo "::debug::Setting up repo using HTTPS"
             HEAD_REPO=$(jq -r '.head.repo.clone_url | sub("https://"; "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@")' "$PR_DATA")
           fi
 
