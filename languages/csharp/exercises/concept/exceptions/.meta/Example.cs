@@ -23,7 +23,7 @@ static class SimpleCalculator
                     throw new InvalidOperationException($"Operation {operation} does not exist");
             }
         }
-        catch(ArgumentOutOfRangeException e)
+        catch(ArgumentException e)
         {
             ErrorLog = $"Result invalid: {e.Message}";
             return -1;
