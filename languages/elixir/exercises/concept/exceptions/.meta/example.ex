@@ -4,8 +4,7 @@ defmodule RPNCalculator.Exception do
   end
 
   defmodule StackUnderflowError do
-    @message "stack underflow occurred"
-    defexception message: @message
+    defexception message: "stack underflow occurred"
 
     @impl true
     def exception(value) do

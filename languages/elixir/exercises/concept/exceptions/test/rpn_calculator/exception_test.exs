@@ -53,12 +53,19 @@ defmodule RPNCalculator.ExceptionTest do
       test "StackUnderflowError fields defined by `defexception`" do
         assert %RPNCalculator.Exception.StackUnderflowError{}.__exception__ == true
         assert %RPNCalculator.Exception.StackUnderflowError{}.__struct__ == RPNCalculator.Exception.StackUnderflowError
-        assert %RPNCalculator.Exception.StackUnderflowError{}.message == nil
+        assert %RPNCalculator.Exception.StackUnderflowError{}.message == "stack underflow occurred"
+      end
+
+      @tag :pending
+      test "StackUnderflowError message when raised with raise/1" do
+        assert_raise(RPNCalculator.Exception.StackUnderflowError, "stack underflow occurred", fn ->
+          raise RPNCalculator.Exception.StackUnderflowError
+        end)
       end
 
       @tag :pending
       test "StackUnderflowError message when raised with raise/2" do
-        assert_raise(RPNCalculator.Exception.StackUnderflowError, "encountered stack underflow with the test operation", fn ->
+        assert_raise(RPNCalculator.Exception.StackUnderflowError, "stack underflow occurred, context: test", fn ->
           raise RPNCalculator.Exception.StackUnderflowError, "test"
         end)
       end
