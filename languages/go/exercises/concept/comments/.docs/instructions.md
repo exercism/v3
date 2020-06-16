@@ -2,7 +2,7 @@ In this exercise, your task is to help a weather station manage their weather fo
 
 ## 1. Write a package comment 
 
-Complete the package comment for `package weather` that describes the . 
+Complete the package comment for `package weather` that describes its content. 
 
 ## 2. Define a variable for the current weather condition
 
