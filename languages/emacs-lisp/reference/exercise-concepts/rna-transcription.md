@@ -27,7 +27,7 @@
 - if: to detect if the code is invalid
 - error/condition-case: raising and catching errors when invalid
 - cond: to handle each case
-- let(*): defining local variables
+- let(\*): defining local variables
 
 # Data structures: String
 

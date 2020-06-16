@@ -1,0 +1,37 @@
+name: 'Verify C# formatting'
+
+on:
+  push:
+    paths:
+      - 'languages/csharp/exercises/**/*.cs'
+  pull_request:
+    paths:
+      - 'languages/csharp/exercises/**/*.cs'
+
+jobs:
+  verify-csharp-formatting:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: 'Checkout code'
+        uses: actions/checkout@v2
+
+      - name: 'Install .NET core'
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1.201'
+
+      - name: 'Install dotnet-format tool'
+        run: dotnet tool install -g dotnet-format
+
+      - name: 'Verify C# formatting of all C# files'
+        if: github.ref == 'refs/heads/master'
+        run: dotnet format --check -f ./languages/csharp/exercises
+
+      - name: "Verify C# formatting of the PR's C# files"
+        if: github.ref != 'refs/heads/master' && github.event.pull_request.url
+        run: |
+          PULL_REQUEST_URL=$(jq -r ".pull_request.url" "$GITHUB_EVENT_PATH")
+          curl --url $"${PULL_REQUEST_URL}/files" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' | \
+            jq -r -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match("\\.cs$")) | .filename' | \
+            paste -s -d, - | \
+            xargs dotnet format --check -f . --files

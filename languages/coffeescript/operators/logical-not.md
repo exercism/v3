@@ -3,10 +3,10 @@
 The following code shows examples of the ! (logical NOT) operator.
 
 ```javascript
-n1 = !true; // !t returns false
-n2 = !false; // !f returns true
-n3 = !""; // !f returns true
-n4 = !"Cat"; // !t returns false
+n1 = !true // !t returns false
+n2 = !false // !f returns true
+n3 = !'' // !f returns true
+n4 = !'Cat' // !t returns false
 ```
 
 ## Double NOT (`!!`)

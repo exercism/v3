@@ -24,16 +24,33 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 
 #### Implementations
 
-| Track | Exercise                                       | Changes |
-| ----- | ---------------------------------------------- | ------- |
-| C#    | [basics][implementation-csharp]                | None    |
-| F#    | [basics][implementation-fsharp]                | None    |
-| Julia | [functions-introduction][implementation-julia] | None    |
-| Ruby  | [basics][implementation-ruby]                  | None    |
+| Track  | Exercise                                       | Changes |
+| ------ | ---------------------------------------------- | ------- |
+| C#     | [basics][implementation-csharp]                | None    |
+| F#     | [basics][implementation-fsharp]                | None    |
+| Julia  | [functions-introduction][implementation-julia] | None    |
+| Ruby   | [basics][implementation-ruby]                  | None    |
+| Elixir | [basics][implementation-elixir-lasagna]        | None    |
+
+### Closure Maker
+
+This exercise deals with creating set of functions which return functions that make use of closures.
+
+- How to define anonymous (lambda) functions.
+- How to return a function from a function.
+- How to use a variable in a closure.
+
+#### Implementations
+
+| Track  | Exercise                                     | Changes |
+| ------ | -------------------------------------------- | ------- |
+| Elixir | [basics][implementation-elixir-closuremaker] | None    |
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/introduction.md
 [implementation-julia]: ../../languages/julia/exercises/concept/functions-introduction/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/basics/.docs/introduction.md
+[implementation-elixir-lasagna]: ../../languages/elixir/exercises/concept/basics/.docs/introduction.md
+[implementation-elixir-closuremaker]: ../../languages/elixir/exercises/concept/anonymous-functions/.docs/introduction.md
 [concept-functions]: ../concepts/functions.md
 [concept-generics]: ../concepts/generics.md

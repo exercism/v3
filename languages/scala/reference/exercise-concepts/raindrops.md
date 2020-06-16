@@ -2,6 +2,7 @@
 
 [Example implementation](https://github.com/exercism/scala/tree/master/exercises/raindrops)
 [Other implementation](https://scastie.scala-lang.org/JixK2hdPQ4ier47Wj9aM9A):
+
 ```
 object Raindrops {
   private val sounds = Map(

@@ -1,4 +1,4 @@
-# Loops 
+# Loops
 
 See [enumeration][concept-enumeration].
 

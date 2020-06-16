@@ -8,7 +8,6 @@
 - [Reference](/reference/README.md)
   - [Concepts](/reference/concepts/README.md)
   - [Paradigms](/reference/paradigms/README.md)
+  - [Stories](/reference/stories/README.md)
   - [Tooling](/reference/tooling/README.md)
   - [Types](/reference/types/README.md)
-
-

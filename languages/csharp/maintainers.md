@@ -20,3 +20,4 @@ These awesome people help maintain the C# track.
 - Richard Leurs (Slack: `@EarthlingRich`, GitHub: [EarthlingRich](https://github.com/EarthlingRich))
 - Petru Faurescu (Slack: `@fpetru`, GitHub: [fpetru](https://github.com/fpetru))
 - Ranga Senal Fernando (Slack: `@senal`, GitHub: [senal](https://github.com/senal))
+- wolf99 (Slack: `@wolf99`, GitHub: [wolf99](https://github.com/wolf99))

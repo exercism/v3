@@ -1,5 +1,21 @@
 # How to implement an Emacs Lisp concept exercise
 
-TODO: describe how to implement a concept exercise for the Emacs Lisp track. For inspiration, check out the [C# version of this file][csharp-implementing].
+To implement an Emacs Lisp concept exercise, the following files must be added:
 
-[csharp-implementing]: ../../csharp/reference/implementing-a-concept-exercise.md
+```
+languages
+└── emacs-lisp
+    └── exercises
+        └── concept
+            └── <SLUG>
+                ├── .docs
+                |   ├── instructions.md
+                |   ├── introduction.md
+                |   ├── hints.md
+                |   └── after.md
+                ├── .meta
+                |   |── design.md
+                |   └── Example.el
+                ├── <NAME>.el
+                └── <NAME>_test.el
+```

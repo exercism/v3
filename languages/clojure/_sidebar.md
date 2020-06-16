@@ -1,4 +1,5 @@
 [Start here](/)
+
 - Docs
 - [Languages](/languages/README.md)
   - [Clojure](/languages/clojure/README.md)
@@ -10,4 +11,3 @@
   - [Paradigms](/reference/paradigms/README.md)
   - [Tooling](/reference/tooling/README.md)
   - [Types](/reference/types/README.md)
-  

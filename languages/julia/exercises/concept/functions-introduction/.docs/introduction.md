@@ -1,7 +1,7 @@
-The entire Julia track will require you to treat your solution like a mini-libraries, i.e. you need to define functions, types etc. which will then be run against a test suite.
+The entire Julia track will require you to treat your solution like small libraries, i.e. you need to define functions, types etc. which will then be run against a test suite.
 For that reason, we will introduce named functions as the very first concept.
 
-### Defining functions
+## Defining functions
 
 There are two common ways to define a named function in Julia:
 
@@ -19,22 +19,24 @@ muladd(x, y, z) = x * y + z
 
 The latter is most commonly used for one-line function definitions or mathematical functions.
 
-### Invoking functions
+## Invoking functions
 
 Invoking a function is done by specifying its name and passing arguments for each of the function's parameters:
 
 ```julia
-add(x, y) = x + y
-mul(x, y) = x * y
-muladd(x, y, z) = add(mul(x, y), z)
+# invoking a function
+muladd(10, 5, 1)
+
+# and of course you can invoke a function within the body of another function:
+square_plus_one(x) = muladd(x, x, 1)
 ```
 
-### Types
+## Types
 
 Depending on which other programming languages you know, you may expect parameters, variables or return values to have explicit type annotations.
-For now, assume that that Julia will figure out the types automagically and don't worry about them, we will get to the specifics of the type system in later exercises.
+For now, assume that that Julia will infer the types automagically and don't worry about them, we will get to the specifics of the type system in later exercises.
 
-### Comments
+## Comments
 
 Julia supports two kinds of comments.
 Single line comments are preceded by `#` and multiline comments are inserted between `#=` and `=#`.

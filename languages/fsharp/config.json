@@ -3,12 +3,15 @@
   "active": true,
   "blurb": "F# is a strongly-typed, functional language that is part of Microsoft's .NET language stack. Although F# is great for data science problems, it can elegantly handle almost every problem you throw at it.",
   "version": 3,
-  "online_editor": {
-    "indent_style": "space",
-    "indent_size": 4
-  },
+  "online_editor": { "indent_style": "space", "indent_size": 4 },
   "exercises": {
     "concept": [
+      {
+        "slug": "arrays",
+        "uuid": "280e8400-1a46-4ef5-b48d-b24611aaace2",
+        "concepts": ["arrays"],
+        "prerequisites": ["booleans", "pattern-matching"]
+      },
       {
         "slug": "basics",
         "uuid": "1fc8216e-6519-11ea-bc55-0242ac130003",
@@ -25,7 +28,7 @@
         "slug": "datetimes",
         "uuid": "160d7d56-5a0e-11ea-8e2d-0242ac130003",
         "concepts": ["datetimes"],
-        "prerequisites": ["numbers", "strings", "classes"]
+        "prerequisites": ["classes", "numbers", "strings"]
       },
       {
         "slug": "discriminated-unions",
@@ -37,35 +40,41 @@
         "slug": "floating-point-numbers",
         "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
         "concepts": ["floating-point-numbers"],
-        "prerequisites": ["numbers", "conditionals"]
+        "prerequisites": ["conditionals", "numbers"]
       },
       {
         "slug": "lists",
         "uuid": "ef2df8b0-63a8-11ea-bc55-0242ac130003",
         "concepts": ["lists"],
-        "prerequisites": ["strings", "booleans"]
+        "prerequisites": ["booleans", "strings"]
       },
       {
         "slug": "numbers",
         "uuid": "6ea2765e-5885-11ea-82b4-0242ac130003",
-        "concepts": ["numbers", "conditionals"],
+        "concepts": ["conditionals", "numbers"],
         "prerequisites": ["basics"]
       },
       {
         "slug": "pattern-matching",
         "uuid": "d605385d-fd8a-45fa-a320-4d7c40213769",
         "concepts": ["pattern-matching"],
-        "prerequisites": ["strings", "conditionals"]
+        "prerequisites": ["conditionals", "strings"]
+      },
+      {
+        "slug": "records",
+        "uuid": "08ae8519-9dc9-47fe-82ad-8081fe642fe2",
+        "concepts": ["records"],
+        "prerequisites": ["booleans", "numbers", "pattern-matching", "strings"]
       },
       {
         "slug": "recursion",
         "uuid": "fad55806-69e9-11ea-bc55-0242ac130003",
         "concepts": ["recursion"],
         "prerequisites": [
-          "pattern-matching",
           "discriminated-unions",
+          "higher-order-functions",
           "lists",
-          "higher-order-functions"
+          "pattern-matching"
         ]
       },
       {

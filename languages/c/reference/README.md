@@ -43,7 +43,7 @@ The C concept exercises are based on language concepts. The list below contains 
 
 #### Patterns
 
-- [Callback](https://en.wikipedia.org/wiki/Callback_(computer_programming))
+- [Callback](<https://en.wikipedia.org/wiki/Callback_(computer_programming)>)
 - [Opaque pointers](https://en.wikipedia.org/wiki/Opaque_pointer)
 
 ### General
@@ -98,6 +98,5 @@ The C concept exercises are based on language concepts. The list below contains 
 - [The GNU C Preprocessor Manual](https://gcc.gnu.org/onlinedocs/cpp/index.html)
 - [The GNU C Reference Manual](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
 - [Wikipedia](https://en.wikipedia.org)
-
 
 [v3-reference-concepts]: https://github.com/exercism/v3/tree/master/reference

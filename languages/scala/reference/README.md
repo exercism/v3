@@ -59,7 +59,7 @@ The core OO features an Scala developer should know about are:
 - Properties
 - Type extensions
 - Implicit class
-    - enrich my library
+  - enrich my library
 
 While Scala has OO features, it is a "functional first" language. It is important to know how and when to apply the OO features, and which OO features to use.
 
@@ -155,6 +155,7 @@ The concept exercises use the following concepts:
 
 | concept | interpretation |
 | ------- | -------------- |
+
 
 [encapsulation]: ../../../reference/concepts/encapsulation.md
 [classes]: ../../../reference/concepts/classes.md

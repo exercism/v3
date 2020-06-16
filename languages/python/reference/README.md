@@ -15,9 +15,11 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 - [ ] [Argument unpacking][argument-unpacking]
 
 - [ ] [Comments][comments-general]
+
   - [ ] TODO: Explain # syntax in Python
 
 - [ ] [Expressions][expressions]
+
   - [ ] [Order of Evaluation][order-of-evaluation]
 
 - [ ] Statements
@@ -27,49 +29,58 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 ## General concepts
 
 - [ ] [Arithmetic][arithmetic-general]
-    - [ ] [Modular Division][modular-division]
+
+  - [ ] [Modular Division][modular-division]
 
 - [ ] [Bitwise manipulation][bitwise-manipulation-general]
-    - [ ] [Binary numbers][binary-numbers]
-    - [ ] [Bitflags][bitflags]
-    - [ ] [Bitwise operators][bitwise-operators]
-    - [ ] [Powers of Two][powers-of-two]
+
+  - [ ] [Binary numbers][binary-numbers]
+  - [ ] [Bitflags][bitflags]
+  - [ ] [Bitwise operators][bitwise-operators]
+  - [ ] [Powers of Two][powers-of-two]
 
 - [ ] [Boolean logic][boolean-logic-general]
-    - [ ] [Boolean values][boolean-values]
-      - [ ] [Booleans are integers][booleans-are-integers]
-      - [ ] [`True`][keyword-true]
-      - [ ] [`False`][keyword-false]
 
-    - [ ] [Boolean operators][boolean-operators]
-      - [ ] [`not`][keyword-not]
-      - [ ] [Short-circuiting][short-circuiting]
-        - [ ] [`and`][keyword-and]
-        - [ ] [`or`][keyword-or]
+  - [ ] [Boolean values][boolean-values]
+
+    - [ ] [Booleans are integers][booleans-are-integers]
+    - [ ] [`True`][keyword-true]
+    - [ ] [`False`][keyword-false]
+
+  - [ ] [Boolean operators][boolean-operators]
+    - [ ] [`not`][keyword-not]
+    - [ ] [Short-circuiting][short-circuiting]
+      - [ ] [`and`][keyword-and]
+      - [ ] [`or`][keyword-or]
 
 - [ ] [Bracket Notation][bracket-notation]
+
   - [ ] [Indexing][indexing]
   - [ ] [Slicing][slicing]
 
 - [ ] [Comparisons][comparisons-general]
-    - [ ] [Comparison operators][comparison-operators]
-    - [ ] [Integer comparison][integer-comparison]
-    - [ ] [Rich comparison methods][rich-comparison-methods]
-    - [ ] [Equality operator][equality-operator]
-    - [ ] [Equivalence][equivalence]
-    - [ ] [Inequality][inequality]
+
+  - [ ] [Comparison operators][comparison-operators]
+  - [ ] [Integer comparison][integer-comparison]
+  - [ ] [Rich comparison methods][rich-comparison-methods]
+  - [ ] [Equality operator][equality-operator]
+  - [ ] [Equivalence][equivalence]
+  - [ ] [Inequality][inequality]
 
 - [ ] [Conditionals][conditionals-general]
+
   - [ ] [Conditionals structures][conditional-structures]
     - [ ] [`if`][keyword-if]
     - [ ] [`elif`][keyword-elif]
     - [ ] [`else`][keyword-else]
 
 - [ ] [Enumeration][enumeration]
+
   - [ ] [Enumerated values][enumerated-values]
 
 - [ ] [Functions][functions-general]
-  - [ ] [Function Definition][function_definition]  
+
+  - [ ] [Function Definition][function_definition]
     - [ ] [`def`][keyword-def]
     - [ ] [`lambda`][keyword-lambda]
     - [ ] [Function signature][function-signature]
@@ -79,27 +90,30 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
       - [ ] [Keyword parameters][keyword-parameters]
       - [ ] [Keyword-only parameters][keyword-only-parameters]
       - [ ] [Default arguments][default-arguments]
-      - [ ] [`*args``][star-args]
-      - [ ] [`**kwargs``][star-star-kwargs]
+      - [ ] [`\*args``][star-args]
+      - [ ] [`\*\*kwargs``][star-star-kwargs]
   - [ ] [Return Values][return-value]
     - [ ] [`return`][keyword-return]
   - [ ] [Generators][generators]
-    - [ ] [`yield`][keyword-yield]      
+    - [ ] [`yield`][keyword-yield]
   - [ ] [Type hinting][type-hinting]
   - [ ] [Call semantics][call-semantics]
 
 - [ ] [Identity testing][identity-testing]
+
   - [ ] [`is`][keyword-is]
 
 - [ ] [Loops][loops-general]
+
   - [ ] [`while` loops][while-loops]
     - [ ] [`while`][keyword-while]
   - [ ] [`for` loops][for-loops]
     - [ ] [`for`][keyword-for]
-  - Exiting loops
+  - [ ] [Exiting loops][exiting-loops]
     - [ ] [`break`][keyword-break]
     - [ ] [`continue`][keyword-continue]
   - [ ] [Iteration][iteration]
+
     - [ ] [Iterables][iterables]
     - [ ] [Iterators][iterators]
 
@@ -107,14 +121,16 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
     - [ ] [`in`][keyword-in]
 
 - [ ] [Operators][operators]
+
   - [ ] [Operator overloading][operator-overloading]
   - [ ] [Operator precedence][operator-precedence]
 
 - [ ] [Scope][scope]
-    - [ ] [Namespaces][namespaces]
-      - [ ] [`global`][keyword-global]
-      - [ ] [`nonlocal`][keyword-nonlocal]
-    - [ ] [`del`][keyword-del]
+
+  - [ ] [Namespaces][namespaces]
+    - [ ] [`global`][keyword-global]
+    - [ ] [`nonlocal`][keyword-nonlocal]
+  - [ ] [`del`][keyword-del]
 
 - [ ] [Variables][variables]
   - [ ] [Assignment][assignment]
@@ -125,12 +141,14 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 ## Intermediate Concepts
 
 - [ ] [Comprehension Syntax][comprehension-syntax]
+
   - [ ] [List comprehension][list-comprehension]
   - [ ] [Dict comprehension][dict-comprehension]
   - [ ] [Set comprehension][set-comprehension]
   - [ ] [Generator comprehension][generator-comprehension]
 
 - [ ] Context managers
+
   - [ ] [`with`][keyword-with]
 
 - [ ] [Decorators][decorators]
@@ -138,6 +156,7 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 - [ ] [Docstrings][docstrings]
 
 - [ ] [Exceptions][exceptions-general]
+
   - [ ] [Exception handling][exception-handling]
   - [ ] [Exception catching][exception-catching]
     - [ ] [`try`][keyword-try]
@@ -150,7 +169,8 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
     - [ ] [`raise`][keyword-raise]
     - [ ] [`assert`][keyword-assert]
 
-- [ ] [Importing][importing]  
+- [ ] [Importing][importing]
+
   - [ ] [`import`][keyword-import]
   - [ ] [`from`][keyword-from]
   - [ ] [`as`][keyword-as]
@@ -164,51 +184,60 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 ### Object-oriented concepts
 
 - [ ] [Objects][objects-general]
+
   - [ ] [Everything is an object][everything-is-an-object]
 
 - [ ] [Classes][classes-general]
-    - [ ] [Custom classes][custom-classes]
-      - [ ] [`class`][keyword-class]
-    - [ ] [Class members][class-members]
-      - [ ] Behavior
-        - [ ] [Methods][methods-general]
-          - [ ] [Instance Methods][instance-methods]
-            - [ ] [Implicit self][implicit-self]
-            - [ ] [Initialization][initialization]
-            - [ ] [Instantiation][instantiation]
-          - [ ] [Class methods][class-methods]
-            - [ ] [Constructor][constructor]
-          - [ ] [Static Methods][static-methods]
-      - [ ] [State][state]
-        - [ ] [Instance Attributes][instance-attributes]
-        - [ ] [Instance Properties][instance-properties]
-          - [ ] [Property Decorator][property-decorator]
+
+  - [ ] [Custom classes][custom-classes]
+    - [ ] [`class`][keyword-class]
+  - [ ] [Class members][class-members]
+    - [ ] Behavior
+      - [ ] [Methods][methods-general]
+        - [ ] [Instance Methods][instance-methods]
+          - [ ] [Implicit self][implicit-self]
+          - [ ] [Initialization][initialization]
+          - [ ] [Instantiation][instantiation]
+        - [ ] [Class methods][class-methods]
+          - [ ] [Constructor][constructor]
+        - [ ] [Static Methods][static-methods]
+    - [ ] [State][state]
+      - [ ] [Instance Attributes][instance-attributes]
+      - [ ] [Instance Properties][instance-properties]
+        - [ ] [Property Decorator][property-decorator]
 
 - [ ] [Inheritance][inheritance-general]
-  - [ ] [Class inheritance][class-inheritance]          
+
+  - [ ] [Class inheritance][class-inheritance]
 
 - [ ] [Composition][composition-general]
+
   - [ ] [Class composition][class-composition]
 
 - [ ] [Encapsulation][encapsulation-general]
-    - [ ] [Non-Public Methods][non-public-methods]
+
+  - [ ] [Non-Public Methods][non-public-methods]
 
 - [ ] [Interfaces][interfaces-general]
-    - [ ] [Duck Typing][duck-typing]
+
+  - [ ] [Duck Typing][duck-typing]
 
 - [ ] [Mutation][mutation-general]
+
   - [ ] [Immutability in Python][immutability]
   - [ ] [Mutability in Python][mutability]
 
 - [ ] [Polymorphism][polymorphism-general]
-    - [ ] [Dynamic typing][dynamic-typing]
+  - [ ] [Dynamic typing][dynamic-typing]
 
 ### Functional concepts
 
 - [ ] [Anonymous functions][anonymous-functions-general]
-    - [ ] [`lambda`][keyword-lambda]
+
+  - [ ] [`lambda`][keyword-lambda]
 
 - [ ] [Higher-order functions][higher-order-functions]
+
   - [ ] [Decorators as higher-order functions][decorators-as-higher-order-functions]
   - [ ] [`map`][builtin-functions-map]
   - [ ] [`filter`][builtin-functions-filter]
@@ -218,15 +247,18 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 - [ ] [Nested functions][nested-functions]
 
 - [ ] [Partial application][partial-application]
+
   - [ ] TODO: `functools.partial`
 
 - [ ] [Recursion][recursion]
+
   - [ ] TODO: explain limitations of recursion in Python, ie `RecursionLimit`
 
 - [ ] [REPL][repl]
   - [ ] TODO: Discuss the interactive Python interpreter
 
 ## Advanced concepts (probably outside scope of Exercism)
+
 - [ ] Asynchronous operatons
   - [ ] [`async`][keyword-async]
   - [ ] [`await`][keyword-await]
@@ -234,6 +266,7 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
 ## [Builtin types][builtin-types]
 
 TODO: Casting between types in Python can be a bit unclear; this will need expansion
+
 - [ ] [Type conversion][type-conversion]
 
 ### Primitives
@@ -423,6 +456,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 [exception-hierarchy]: ./concepts/exception_hierarchy.md
 [exception-message]: ./concepts/exception_message.md
 [exceptions-general]: ./concepts/exceptions.md
+[exiting-loops]: ./concepts/exiting_loops.md
 [expressions]: ./concepts/expressions.md
 [for-loops]: ./concepts/for_loops.md
 [function-definition]: ./concepts/function_definition.md
@@ -542,187 +576,186 @@ These will very rarely be encountered in the wild, the first because it's more o
 [while-loops]: ./concepts/while_loops.md
 [zen-of-python]: ./concepts/zen_of_python.md
 
-## Implementations  
+## Implementations
 
-
-| Concept Name | Section | Issue Link | PR Link |
-|--------------|:----------|:--------:|:--------:|
-| [and][keyword-and] |`general` | [ ]() | [ ]() |
-| [Anonymous functions][anonymous-functions-general] | `functional`| [ ]() | [ ]() |
-| [Arithmetic][arithmetic-general]| `general` |[ ]() | [ ]() |
-| [`*args`][star-args] |`general` |[ ]() | [ ]() |
-| [Arguments & Parameters][arguments-and-parameters]|`general` |[ ]() | [ ]() |
-| [Argument unpacking][argument-unpacking]| `basic` |[ ]() | [ ]() |
-|[as][keyword-as] |`intermediate`,`keyword` |[ ]() | [ ]() |
-|[assert][keyword-assert] |`exceptions`, `intermediate`, `keyword` |[ ]() | [ ]() |
-| [Assignment][assignment] |`general` | [ ]() | [ ]() |
-| [Binary numbers][binary-numbers]|`general` | [ ]() | [ ]() |
-| [bitflags][bitflags]| `general`| [ ]() | [ ]() |
-| [Bitwise manipulation][bitwise-manipulation-general]|`general` | [ ]() | [ ]() |
-| [Bitwise operators][bitwise-operators]|`general` | [ ]() | [ ]() |
-| [bool][builtin-types-bool] |`basic`, `types`, `builtin`|  [#1030](https://github.com/exercism/v3/issues/1030)         |         |
-| [Boolean logic][boolean-logic-general]|`general` | [ ]() | [ ]() |
-| [Boolean operators][boolean-operators]|`general` | [ ]() | [ ]() |
-| [Boolean values][boolean-values]|`general` | [ ]() | [ ]() |
-| [Booleans are integers][booleans-are-integers]| `general`| [ ]() | [ ]() |
-| [Bracket notation][bracket-notation] |`general` | [ ]() | [ ]() |
-| [break][keyword-break] | `general`, `keyword`| [ ]() | [ ]() |
-| [bytearray][builtin-types-bytearray] | `intermediate`, `types`, `builtins`| [ ]() | [ ]() |
-| [bytes][builtin-types-bytes] |`intermediate`|  [ ]() | [ ]() |
-| [Call semantics][call-semantics]| `general` | [ ]() | [ ]() |
-| [class][keyword-class] |`OOP`, `keyword` | [ ]() | [ ]() |
-| [Classes][classes-general] | `general`, `OOP`| [ ]() | [ ]() |
-| [Class Composition][class-composition] |`OOP` | [ ]() | [ ]() |
-| [Class Inheritance][class-inheritance] |`OOP` | [ ]() | [ ]() | 
-| [Class members][class-members]| `OOP`| [ ]() | [ ]() |
-| [Class methods][class-methods]| `OOP`| [ ]() | [ ]() |
-| [Comments][comments-general]| `basic` | [ ]() | [ ]() |
-| [Comparisons][comparisons-general] |`general` |  [ ]() | [ ]()  |
-| [Comparison operators][comparison-operators]| `basic` | [ ]() | [ ]() |
-| [complex][builtin-types-complex] | `intermediate`, `types`, `builtin` | [ ]() | [ ]() |
-| [Composition][composition-general] | `general`, `OOP`| [ ]() | [ ]() |
-| [Comprehension Syntax][comprehension-syntax]| `intermediate`| BethanyG [ ]() | [ ]() |
-| [Conditionals][conditionals-general] |`general` | [#1103](https://github.com/exercism/v3/issues/1103) | [ ]() |
-| [Constructor][constructor] | `OOP`| [ ]() | [ ]() |
-| [Conditional structures][conditional-structures] |`general` | [ ]() | [ ]() |
-| [Constants][constants] |`general` | [ ]() | [ ]() |
-|[continue][keyword-continue]| `general`, `keyword`| [ ]() | [ ]() |
-| [Custom Classes][custom-classes] | `OOP` | [ ]() | [ ]() |
-|[Data Structures][data-structures]| `intermediate`, `data-structures`| [ ]() | [ ]() |
-| [decorators][decorators] |`functional`, `intermediate` | [ ]() | [ ]() |
-| [Decorators as higher-order functions][decorators-as-higher-order-functions] |`functional`, `intermediate` | [ ]() | [ ]() |
-| [def][keyword-def] |`general`, `keyword` | [ ]() | [ ]() |
-| [Default arguments][default-arguments] |`general` | [ ]() | [ ]() |
-|[del][keyword-del] | `general`, `keyword` | [ ]() | [ ]() |
-| [dict][builtin-types-dict] |`basic`, `types`, `containers`|   [#877](https://github.com/exercism/v3/issues/877)  |         |
-| [Dict comprehension][dict-comprehension] | `intermediate` | BethanyG [ ]() | [ ]() |
-| [Docstrings][docstrings] |`intermediate` | [ ]() | [ ]() |
-| [Duck Typing][duck-typing] | `general`, `OOP` | [ ]() | [ ]() |
-| [Dynamic Typing][dynamic-typing] |`general`, `types`, `OOP` | [ ]() | [ ]() |
-|[elif][keyword-elif]|`general` |[ ]() | [ ]() |
-|[else][keyword-else] | `general`, `conditionals`, `keyword` | [ ]() | [ ]() |
-|[else][keyword-else]| `exceptions`, `keyword`, `intermediate` | [ ]() | [ ]() |
-|[Encapsulation][encapsulation-general]|`general`, `OOP` | [ ]() | [ ]() |
-|[Enumeration][enumeration]| `general`| [ ]() | [ ]() |
-|[Enumerated values][enumerated-values]|`general` | [ ]() | [ ]() |
-| [Equality operator][equality-operator] | `general` | [ ]() | [ ]() |
-| [Equivalence][equivalence] |`general` | [ ]() | [ ]() | 
-| [Everything-is-an-object][everything-is-an-object] | `OOP`  | [ ]() | [ ]() | 
-| [except][keyword-except] |`exceptions`, `intermediate`, `keyword` | [ ]() | [ ]() | 
-| [Exceptions][exceptions-general]| `general`, `intermediate`| [ ]() | [ ]() | 
-| [Exception catching][exception-catching] | `intermediate`| [ ]() | [ ]() | 
-| [Exception handling][exception-handling]| `intermediate`| [ ]() | [ ]() | 
-| [Exception hierarchy][exception-hierarchy]| `intermediate` | [ ]() | [ ]() | 
-| [Exception message][exception-message]| `intermediate`| [ ]() | [ ]() | 
-| [Exiting loops][]| `general` | [ ]() | [ ]() | 
-| [Expressions][expressions] |`basic` | [ ]() | [ ]() | 
-| [False][keyword-false] |`basic`, `builtin`, `keyword` | [ ]() | [ ]() | 
-| [filter][builtin-functions-filter] | `functional`, `builtin` |  []() | []() | 
-| [finally][keyword-false] |`intermediate`,, `keyword` | [ ]() | [ ]() | 
-| [float][builtin-types-float] |`basic`, `types`, `builtin`|   [#1026](https://github.com/exercism/v3/issues/1026)         |         |
-| [for][keyword-for] |`general`, `keyword` | [ ]() | [ ]() | 
-| [for loops][for-loops] | `general` | [ ]() | [ ]() | 
-| [frozenset][builtin-types-frozenset] |`intermediate`, `types`, `builtins`, `containers`| [ ]() | [ ]() |
-| [from][keyword-from] | `intermediate`, `keyword`| [ ]() | [ ]() | 
-| [Functions][functions-general] | `general`| [ ]() | [ ]() | 
-| [Function Definition][function-definition] | `general` | [ ]() | [ ]() | 
-|[Function Signature][function-signature] |`general` | [ ]() | [ ]() | 
-|[Generator comprehension][generator-comprehension]| `intermediate`| BethanyG[ ]() | [ ]() |
-|[Generators][generators]|`general`, `intermediate` | [ ]() | [ ]() |
-|[global][keyword-global] |`general`, `keyword` | [ ]() | [ ]() |
-|[Higher-order functions][higher-order-functions] | `functional` | [ ]() | [ ]() |
-|[Identity testing][identity-testing]|`general` | [ ]() | [ ]() |
-|[if][keyword-if] | `general`, `keyword` | [ ]() | [ ]() |
-|[Immutability][immutability] |`functional` | [ ]() | [ ]() |
-|[Immutability in Python][immutability] | `general`, `OOP` | [ ]() | [ ]() |
-|[implicit self][implicit-self] | `OOP`| [ ]() | [ ]() |
-|[import][keyword-import] |`intermediate`, `keyword` |  [ ]() |  [ ]()  |
-|[importing][importing] |`intermediate` | [ ]() | [ ]() |
-|[in][keyword-in] | `basic`, `keyword` | [ ]() | [ ]() |
-| [Indexing][indexing] |`general` | [ ]() | [ ]() |
-| [Inequality][inequality] | `general`| [ ]() | [ ]() | 
-| [Inheritance][inheritance-general] | `general`, `OOP`| [ ]() | [ ]() | 
-| [Instance Attributes][instance-attributes] | `OOP`| [ ]() | [ ]() | 
-| [Instance Methods][instance-methods] | `OOP`| [ ]() | [ ]() | 
-| [Instance Properties][instance-properties] |`OOP` | [ ]() | [ ]() | 
-| [Instantiation][instantiation] | `OOP`| [ ]() | [ ]() | 
-| [Initialization][initialization] | `OOP` | [ ]() | [ ]() | 
-| [int][builtin-types-int] |`basic`, `types`, `builtin`|   [#1025](https://github.com/exercism/v3/issues/1025)         |         |
-| [Integer comparison][integer-comparison]| `general` |[ ]() | [ ]() |
-| [Interfaces][interfaces-general] |`general`, `OOP` |[ ]() | [ ]() |
-| [Iterators][iterators] | `general`|[ ]() | [ ]() |
-| [Iterables][iterables] | `general`|[ ]() | [ ]() |
-| [Iteration][iteration] |`general` |[ ]() | [ ]() |
-| [is][keyword-is] |`general`, `keyword` |[ ]() | [ ]() |
-| [Keyword parameters][keyword-parameters]|`general` |[ ]() | [ ]() |
-| [Keyword-only parameters][keyword-only-parameters]|`general` |[ ]() | [ ]() |
-|[`**kwargs`][star-star-kwargs] | `general` |[ ]() | [ ]() |
-| [lambda][keyword-lambda] |`intermediate`, `keyword`, `functional`|   [ ]()  |    [ ]()  |
-| [list][builtin-types-list] |`basic`, `types`, `builtin`, `containers`|   [#859](https://github.com/exercism/v3/issues/859)        |         |
-| [list comprehension][list-comprehension] |`intermediate` | BethanyG[ ]() | [ ]() |
-| [list methods][list-methods] |`basic`| [ ]() | [ ]() |
-| [Lookup efficiency][lookup-efficiency] |`intermediate`, `data-structures` |[ ]() | [ ]() |
-| [Loops][loops-general] |`general` |[ ]() | [ ]() |
-| [map][builtin-functions-map] |`functional`, `builtin`| [ ]() | [ ]() |
-| [Membership testing][membership-testing] |`general`| [ ]() | [ ]() |
-| [memoryview][builtin-types-memoryview] | `advanced`, `types`, `builtins`| [ ]() | [ ]() |
-| [Methods][class-methods] | `OOP`| [ ]() | [ ]() |
-| [Modular Division][modular-division]|`general` | [ ]() | [ ]() |
-|  [Multiple assignment][multiple-assignment] |`general` | [ ]() | [ ]() |
-|  [Mutation][mutation-general] | `OOP` | [ ]() | [ ]() |
-|  [Mutability in Python][mutability]|`general` | [ ]() | [ ]() |
-| [Namespaces][namespaces]| `general`| [ ]() | [ ]() |
-| [Nested functions][nested-functions] |`functional`| [ ]() | [ ]() |
-| [nonlocal][keyword-nonlocal] |`general`, `keyword` | [ ]() | [ ]() |
-| [Non-Public Methods][non-public-methods]| `OOP`| [ ]() | [ ]() |
-|  [None][keyword-none]|`basic`, `builtin`, `keyword` |  [#1031](https://github.com/exercism/v3/issues/1031)         |         |
-| [not][keyword-not]|`general` | [ ]() | [ ]() | 
-|[Objects][objects-general]| `general`, `OOP` | [ ]()   | [ ]() |
-| [object][builtin-types-object] | `advanced`, `OOP`| [ ]() | [ ]() |
-| [Operators][operators] | `general`| [ ]() | [ ]() | 
-| [Operator overloading][operator-overloading] | `general`| [ ]() | [ ]() | 
-| [Operator precedence][operator-precedence] | `general`| [ ]() | [ ]() | 
-| [or][keyword-or] |`general` | [ ]() | [ ]() |
-| [Order of Evaluation][order-of-evaluation]| `basic` | [ ]() | [ ]() |
-| [Partial application][partial-application] | `functional`, `intermediate` | [ ]() | [ ]() |
-| [pass][keyword-pass]| `basic` | [ ]() | [ ]() |
-| [Polymorphism][polymorphism-general] | `general`, `OOP`| [ ]() | [ ]() |
-| [Positional parameters][positional-parameters] |`general` | [ ]() | [ ]() |
-| [Positional-only parameters][positional-only-parameters] | `general` | [ ]() | [ ]() |
-| [Powers of Two][powers-of-two]| `general`| [ ]() | [ ]() |
-| [property][builtin-types-property] |`advanced`, `OOP`| [ ]() | [ ]() |
-| [Property Decorator][property-decorator]| `OOP`, `intermediate` | [ ]() | [ ]() |
-| [raise][raise]| `exceptions`, `intermediate`, `keyword` | [ ]() | [ ]() |
-|[range][builtin-types-range] |`basic`, `types`, `builtins`| [ ]() | [ ]() |
-|[recursion][recursion] |`functional`| [ ]() | [ ]() |
-|[Recursive data structures][recursive-data-structures] |`intermediate`, `data-structures` | [ ]() | [ ]() |
-|[Regular Expressions][regular-expressions] |`intermediate` | [ ]() | [ ]() |
-|[return][keyword-return]| `general` | [ ]() | [ ]() |
-|[Return Values][return-value]| `general`| [ ]() | [ ]() |
-| [Rich comparison methods][rich-comparison-methods] |`general` | [ ]() | [ ]() | 
-|[Scope][scope]| `general` | [ ]() | [ ]() |
-| [set][builtin-types-set] | `basic` , `types`, `builtins`, `containers`| [ #1086](https://github.com/exercism/v3/issues/1086) | [ ]() | 
-|  [Set comprehension][set-comprehension] |`intermediate` | BethanyG [ ]()  |  [ ]()  | 
-| [slice][builtin-types-slice]| `advanced`, `types`, `builtins`, `containers`| [ ]() | [ ]() |
-| [Slicing][slicing]|`general`| [ ]() | [ ]() |
-| [Short circuiting][short-circuiting]| `general`| [ ]() | [ ]() |
-|[Standard Library][standard-library] | `general`, `intermediate`| [ ]() | [ ]() |
-|[State][state] | `OOP` | [ ]() | [ ]() |
-| [Static Methods][static-methods] | `OOP` | [ ]() | [ ]() |
-|[str][builtin-types-str] |`basic`, `types`, `builtin` | []() | [#824](https://github.com/exercism/v3/pull/824)|
-| [String formatting][string-formatting] |`basic`| [ ]() | [ ]() |
-| [String methods][string-methods] |`basic`| [ ]() | [ ]() |
-| [String splitting][string-splitting]| `basic`| [ ]() | [ ]() |
-| [String translation][string-translation] |`basic`| [ ]() | [ ]() |
-| [True][keyword-true]|`basic`, `builtin`, `keyword` | [ ]() | [ ]() |
-| [try][keyword-try]|`intermediate`, `exceptions`, `keyword` | [ ]() | [ ]() |
-|[tuple][builtin-types-tuple] | `basic`, `types`, `builtin`, `containers` | [#1097](https://github.com/exercism/v3/issues/1097) | [ ]() |
-|[Tuple unpacking][tuple-unpacking]| `general`| [ ]() | [ ]() |
-| [type][builtin-types-type] |`advanced`, `OOP`| [ ]() | [ ]() |
-| [type conversion][type-conversion] | `basic`, `builtin`| [ ]() | [ ]() |
-| [Type hinting][type-hinting] | `general`| [ ]() | [ ]() |
-| [Variables][variables] |`general` | [ ]() | [ ]() |
-| [while loops][while-loops] | `general` | [ ]() | [ ]() |
-| [while][keyword-while] |`keyword`, `general` | [ ]() | [ ]() |
-| [with][keyword-with] |`intermediate`, `keyword` | [ ]() | [ ]() |
-| [yield][keyword-yield] | `general`, `keyword`, `intermediate` |[ ]() | [ ]() |
+| Concept Name                                                                 | Section                                           |                     Issue Link                      |                     PR Link                     |
+| ---------------------------------------------------------------------------- | :------------------------------------------------ | :-------------------------------------------------: | :---------------------------------------------: |
+| [and][keyword-and]                                                           | `general`                                         | [#1030](https://github.com/exercism/v3/issues/1030) |                      [ ]()                      |
+| [Anonymous functions][anonymous-functions-general]                           | `functional`                                      |                        [ ]()                        |                      [ ]()                      |
+| [Arithmetic][arithmetic-general]                                             | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [`*args`][star-args]                                                         | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Arguments & Parameters][arguments-and-parameters]                           | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Argument unpacking][argument-unpacking]                                     | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
+| [as][keyword-as]                                                             | `intermediate`,`keyword`                          | [#1516](https://github.com/exercism/v3/issues/1516) |                      [ ]()                      |
+| [assert][keyword-assert]                                                     | `exceptions`, `intermediate`, `keyword`           |                        [ ]()                        |                      [ ]()                      |
+| [Assignment][assignment]                                                     | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Binary numbers][binary-numbers]                                             | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [bitflags][bitflags]                                                         | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Bitwise manipulation][bitwise-manipulation-general]                         | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Bitwise operators][bitwise-operators]                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [bool][builtin-types-bool]                                                   | `basic`, `types`, `builtin`                       | [#1030](https://github.com/exercism/v3/issues/1030) |                                                 |
+| [Boolean logic][boolean-logic-general]                                       | `general`                                         | [#1030](https://github.com/exercism/v3/issues/1030) |                      [ ]()                      |
+| [Boolean operators][boolean-operators]                                       | `general`                                         | [#1030](https://github.com/exercism/v3/issues/1030) |                      [ ]()                      |
+| [Boolean values][boolean-values]                                             | `general`                                         | [#1030](https://github.com/exercism/v3/issues/1030) |                      [ ]()                      |
+| [Booleans are integers][booleans-are-integers]                               | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Bracket notation][bracket-notation]                                         | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [break][keyword-break]                                                       | `general`, `keyword`                              | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
+| [bytearray][builtin-types-bytearray]                                         | `intermediate`, `types`, `builtins`               |                        [ ]()                        |                      [ ]()                      |
+| [bytes][builtin-types-bytes]                                                 | `intermediate`                                    |                        [ ]()                        |                      [ ]()                      |
+| [Call semantics][call-semantics]                                             | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [class][keyword-class]                                                       | `OOP`, `keyword`                                  |                        [ ]()                        |                      [ ]()                      |
+| [Classes][classes-general]                                                   | `general`, `OOP`                                  |                        [ ]()                        |                      [ ]()                      |
+| [Class Composition][class-composition]                                       | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [Class Inheritance][class-inheritance]                                       | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [Class members][class-members]                                               | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [Class methods][class-methods]                                               | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [Comments][comments-general]                                                 | `basic`                                           | [#1377](https://github.com/exercism/v3/issues/1377) |                      [ ]()                      |
+| [Comparisons][comparisons-general]                                           | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Comparison operators][comparison-operators]                                 | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
+| [complex][builtin-types-complex]                                             | `intermediate`, `types`, `builtin`                |                        [ ]()                        |                      [ ]()                      |
+| [Composition][composition-general]                                           | `general`, `OOP`                                  |                        [ ]()                        |                      [ ]()                      |
+| [Comprehension Syntax][comprehension-syntax]                                 | `intermediate`                                    |                   BethanyG [ ]()                    |                      [ ]()                      |
+| [Conditionals][conditionals-general]                                         | `general`                                         | [#1103](https://github.com/exercism/v3/issues/1103) |                      [ ]()                      |
+| [Constructor][constructor]                                                   | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [Conditional structures][conditional-structures]                             | `general`                                         | [#1103](https://github.com/exercism/v3/issues/1103) |                      [ ]()                      |
+| [Constants][constants]                                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [continue][keyword-continue]                                                 | `general`, `keyword`                              | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
+| [Custom Classes][custom-classes]                                             | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [Data Structures][data-structures]                                           | `intermediate`, `data-structures`                 |                        [ ]()                        |                      [ ]()                      |
+| [decorators][decorators]                                                     | `functional`, `intermediate`                      |                        [ ]()                        |                      [ ]()                      |
+| [Decorators as higher-order functions][decorators-as-higher-order-functions] | `functional`, `intermediate`                      |                        [ ]()                        |                      [ ]()                      |
+| [def][keyword-def]                                                           | `general`, `keyword`                              |                        [ ]()                        |                      [ ]()                      |
+| [Default arguments][default-arguments]                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [del][keyword-del]                                                           | `general`, `keyword`                              |                        [ ]()                        |                      [ ]()                      |
+| [dict][builtin-types-dict]                                                   | `basic`, `types`, `containers`                    |  [#877](https://github.com/exercism/v3/issues/877)  |                                                 |
+| [Dict comprehension][dict-comprehension]                                     | `intermediate`                                    |                   BethanyG [ ]()                    |                      [ ]()                      |
+| [Docstrings][docstrings]                                                     | `intermediate`                                    | [#1386](https://github.com/exercism/v3/issues/1386) |                      [ ]()                      |
+| [Duck Typing][duck-typing]                                                   | `general`, `OOP`                                  |                        [ ]()                        |                      [ ]()                      |
+| [Dynamic Typing][dynamic-typing]                                             | `general`, `types`, `OOP`                         |                        [ ]()                        |                      [ ]()                      |
+| [elif][keyword-elif]                                                         | `general`                                         | [#1103](https://github.com/exercism/v3/issues/1103) |                      [ ]()                      |
+| [else][keyword-else]                                                         | `general`, `conditionals`, `keyword`              | [#1103](https://github.com/exercism/v3/issues/1103) |                      [ ]()                      |
+| [else][keyword-else]                                                         | `exceptions`, `keyword`, `intermediate`           |                        [ ]()                        |                      [ ]()                      |
+| [Encapsulation][encapsulation-general]                                       | `general`, `OOP`                                  |                        [ ]()                        |                      [ ]()                      |
+| [Enumeration][enumeration]                                                   | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Enumerated values][enumerated-values]                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Equality operator][equality-operator]                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Equivalence][equivalence]                                                   | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Everything-is-an-object][everything-is-an-object]                           | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [except][keyword-except]                                                     | `exceptions`, `intermediate`, `keyword`           |                        [ ]()                        |                      [ ]()                      |
+| [Exceptions][exceptions-general]                                             | `general`, `intermediate`                         |                        [ ]()                        |                      [ ]()                      |
+| [Exception catching][exception-catching]                                     | `intermediate`                                    |                        [ ]()                        |                      [ ]()                      |
+| [Exception handling][exception-handling]                                     | `intermediate`                                    |                        [ ]()                        |                      [ ]()                      |
+| [Exception hierarchy][exception-hierarchy]                                   | `intermediate`                                    |                        [ ]()                        |                      [ ]()                      |
+| [Exception message][exception-message]                                       | `intermediate`                                    |                        [ ]()                        |                      [ ]()                      |
+| [Exiting loops][exiting-loops]                                               | `general`                                         | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
+| [Expressions][expressions]                                                   | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
+| [False][keyword-false]                                                       | `basic`, `builtin`, `keyword`                     | [#1030](https://github.com/exercism/v3/issues/1030) |                      [ ]()                      |
+| [filter][builtin-functions-filter]                                           | `functional`, `builtin`                           |                        []()                         |                      []()                       |
+| [finally][keyword-false]                                                     | `intermediate`,, `keyword`                        |                        [ ]()                        |                      [ ]()                      |
+| [float][builtin-types-float]                                                 | `basic`, `types`, `builtin`                       | [#1026](https://github.com/exercism/v3/issues/1026) |                                                 |
+| [for][keyword-for]                                                           | `general`, `keyword`                              | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
+| [for loops][for-loops]                                                       | `general`                                         | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
+| [frozenset][builtin-types-frozenset]                                         | `intermediate`, `types`, `builtins`, `containers` |                        [ ]()                        |                      [ ]()                      |
+| [from][keyword-from]                                                         | `intermediate`, `keyword`                         | [#1516](https://github.com/exercism/v3/issues/1516) |                      [ ]()                      |
+| [Functions][functions-general]                                               | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Function Definition][function-definition]                                   | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Function Signature][function-signature]                                     | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Generator comprehension][generator-comprehension]                           | `intermediate`                                    | [#1384](https://github.com/exercism/v3/issues/1384) |                      [ ]()                      |
+| [Generators][generators]                                                     | `general`, `intermediate`                         | [#1378](https://github.com/exercism/v3/issues/1378) |                      [ ]()                      |
+| [global][keyword-global]                                                     | `general`, `keyword`                              |                        [ ]()                        |                      [ ]()                      |
+| [Higher-order functions][higher-order-functions]                             | `functional`                                      |                        [ ]()                        |                      [ ]()                      |
+| [Identity testing][identity-testing]                                         | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [if][keyword-if]                                                             | `general`, `keyword`                              | [#1103](https://github.com/exercism/v3/issues/1103) |                      [ ]()                      |
+| [Immutability][immutability]                                                 | `functional`                                      |                        [ ]()                        |                      [ ]()                      |
+| [Immutability in Python][immutability]                                       | `general`, `OOP`                                  |                        [ ]()                        |                      [ ]()                      |
+| [implicit self][implicit-self]                                               | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [import][keyword-import]                                                     | `intermediate`, `keyword`                         | [#1516](https://github.com/exercism/v3/issues/1516) |                      [ ]()                      |
+| [importing][importing]                                                       | `intermediate`                                    | [#1516](https://github.com/exercism/v3/issues/1516) |                      [ ]()                      |
+| [in][keyword-in]                                                             | `basic`, `keyword`                                |                        [ ]()                        |                      [ ]()                      |
+| [Indexing][indexing]                                                         | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Inequality][inequality]                                                     | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Inheritance][inheritance-general]                                           | `general`, `OOP`                                  |                        [ ]()                        |                      [ ]()                      |
+| [Instance Attributes][instance-attributes]                                   | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [Instance Methods][instance-methods]                                         | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [Instance Properties][instance-properties]                                   | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [Instantiation][instantiation]                                               | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [Initialization][initialization]                                             | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [int][builtin-types-int]                                                     | `basic`, `types`, `builtin`                       | [#1025](https://github.com/exercism/v3/issues/1025) |                                                 |
+| [Integer comparison][integer-comparison]                                     | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Interfaces][interfaces-general]                                             | `general`, `OOP`                                  |                        [ ]()                        |                      [ ]()                      |
+| [Iterators][iterators]                                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Iterables][iterables]                                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Iteration][iteration]                                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [is][keyword-is]                                                             | `general`, `keyword`                              |                        [ ]()                        |                      [ ]()                      |
+| [Keyword parameters][keyword-parameters]                                     | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Keyword-only parameters][keyword-only-parameters]                           | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [`**kwargs`][star-star-kwargs]                                               | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [lambda][keyword-lambda]                                                     | `intermediate`, `keyword`, `functional`           |                        [ ]()                        |                      [ ]()                      |
+| [list][builtin-types-list]                                                   | `basic`, `types`, `builtin`, `containers`         |  [#859](https://github.com/exercism/v3/issues/859)  |                                                 |
+| [list comprehension][list-comprehension]                                     | `intermediate`                                    | [#1361](https://github.com/exercism/v3/issues/1361) |                      [ ]()                      |
+| [list methods][list-methods]                                                 | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
+| [Lookup efficiency][lookup-efficiency]                                       | `intermediate`, `data-structures`                 |                        [ ]()                        |                      [ ]()                      |
+| [Loops][loops-general]                                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [map][builtin-functions-map]                                                 | `functional`, `builtin`                           |                        [ ]()                        |                      [ ]()                      |
+| [Membership testing][membership-testing]                                     | `general`                                         | [#1431](https://github.com/exercism/v3/issues/1431) |                      [ ]()                      |
+| [memoryview][builtin-types-memoryview]                                       | `advanced`, `types`, `builtins`                   |                        [ ]()                        |                      [ ]()                      |
+| [Methods][class-methods]                                                     | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [Modular Division][modular-division]                                         | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Multiple assignment][multiple-assignment]                                   | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Mutation][mutation-general]                                                 | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [Mutability in Python][mutability]                                           | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Namespaces][namespaces]                                                     | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Nested functions][nested-functions]                                         | `functional`                                      |                        [ ]()                        |                      [ ]()                      |
+| [nonlocal][keyword-nonlocal]                                                 | `general`, `keyword`                              |                        [ ]()                        |                      [ ]()                      |
+| [Non-Public Methods][non-public-methods]                                     | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [None][keyword-none]                                                         | `basic`, `builtin`, `keyword`                     | [#1031](https://github.com/exercism/v3/issues/1031) |                                                 |
+| [not][keyword-not]                                                           | `general`                                         | [#1030](https://github.com/exercism/v3/issues/1030) |                      [ ]()                      |
+| [Objects][objects-general]                                                   | `general`, `OOP`                                  |                        [ ]()                        |                      [ ]()                      |
+| [object][builtin-types-object]                                               | `advanced`, `OOP`                                 |                        [ ]()                        |                      [ ]()                      |
+| [Operators][operators]                                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Operator overloading][operator-overloading]                                 | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Operator precedence][operator-precedence]                                   | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [or][keyword-or]                                                             | `general`                                         | [#1030](https://github.com/exercism/v3/issues/1030) |                      [ ]()                      |
+| [Order of Evaluation][order-of-evaluation]                                   | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
+| [Partial application][partial-application]                                   | `functional`, `intermediate`                      |                        [ ]()                        |                      [ ]()                      |
+| [pass][keyword-pass]                                                         | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
+| [Polymorphism][polymorphism-general]                                         | `general`, `OOP`                                  |                        [ ]()                        |                      [ ]()                      |
+| [Positional parameters][positional-parameters]                               | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Positional-only parameters][positional-only-parameters]                     | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Powers of Two][powers-of-two]                                               | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [property][builtin-types-property]                                           | `advanced`, `OOP`                                 |                        [ ]()                        |                      [ ]()                      |
+| [Property Decorator][property-decorator]                                     | `OOP`, `intermediate`                             |                        [ ]()                        |                      [ ]()                      |
+| [raise][raise]                                                               | `exceptions`, `intermediate`, `keyword`           |                        [ ]()                        |                      [ ]()                      |
+| [range][builtin-types-range]                                                 | `basic`, `types`, `builtins`                      |                        [ ]()                        |                      [ ]()                      |
+| [recursion][recursion]                                                       | `functional`                                      |                        [ ]()                        |                      [ ]()                      |
+| [Recursive data structures][recursive-data-structures]                       | `intermediate`, `data-structures`                 |                        [ ]()                        |                      [ ]()                      |
+| [Regular Expressions][regular-expressions]                                   | `intermediate`                                    |                        [ ]()                        |                      [ ]()                      |
+| [return][keyword-return]                                                     | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Return Values][return-value]                                                | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Rich comparison methods][rich-comparison-methods]                           | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Scope][scope]                                                               | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [set][builtin-types-set]                                                     | `basic` , `types`, `builtins`, `containers`       | [#1086](https://github.com/exercism/v3/issues/1086) |                      [ ]()                      |
+| [Set comprehension][set-comprehension]                                       | `intermediate`                                    |                   BethanyG [ ]()                    |                      [ ]()                      |
+| [slice][builtin-types-slice]                                                 | `advanced`, `types`, `builtins`, `containers`     |                        [ ]()                        |                      [ ]()                      |
+| [Slicing][slicing]                                                           | `general`                                         | [#1393](https://github.com/exercism/v3/issues/1393) |                      [ ]()                      |
+| [Short circuiting][short-circuiting]                                         | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Standard Library][standard-library]                                         | `general`, `intermediate`                         |                        [ ]()                        |                      [ ]()                      |
+| [State][state]                                                               | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [Static Methods][static-methods]                                             | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
+| [str][builtin-types-str]                                                     | `basic`, `types`, `builtin`                       |                        []()                         | [#824](https://github.com/exercism/v3/pull/824) |
+| [String formatting][string-formatting]                                       | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
+| [String methods][string-methods]                                             | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
+| [String splitting][string-splitting]                                         | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
+| [String translation][string-translation]                                     | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
+| [True][keyword-true]                                                         | `basic`, `builtin`, `keyword`                     | [#1030](https://github.com/exercism/v3/issues/1030) |                      [ ]()                      |
+| [try][keyword-try]                                                           | `intermediate`, `exceptions`, `keyword`           |                        [ ]()                        |                      [ ]()                      |
+| [tuple][builtin-types-tuple]                                                 | `basic`, `types`, `builtin`, `containers`         | [#1097](https://github.com/exercism/v3/issues/1097) |                      [ ]()                      |
+| [Tuple unpacking][tuple-unpacking]                                           | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [type][builtin-types-type]                                                   | `advanced`, `OOP`                                 |                        [ ]()                        |                      [ ]()                      |
+| [type conversion][type-conversion]                                           | `basic`, `builtin`                                |                        [ ]()                        |                      [ ]()                      |
+| [Type hinting][type-hinting]                                                 | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [Variables][variables]                                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
+| [while loops][while-loops]                                                   | `general`                                         | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
+| [while][keyword-while]                                                       | `keyword`, `general`                              | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
+| [with][keyword-with]                                                         | `intermediate`, `keyword`                         |                        [ ]()                        |                      [ ]()                      |
+| [yield][keyword-yield]                                                       | `general`, `keyword`, `intermediate`              |                        [ ]()                        |                      [ ]()                      |

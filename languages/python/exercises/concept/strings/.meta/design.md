@@ -1,16 +1,14 @@
-# Design
-
 ## Goal
 
 The goal of this exercise is to teach the student about Python strings, and familiarize them with string manipulation in Python.
 
 ## Things to teach
 
- - Know that Python has a `str` type.
- - Know how to find items in a string.
- - Know how to manipulate strings to create new strings.
- - Familiarize one's self with string instance methods in Python.
- - Learn about string formatting.
+- Know that Python has a `str` type.
+- Know how to find items in a string.
+- Know how to manipulate strings to create new strings.
+- Familiarize one's self with string instance methods in Python.
+- Learn about string formatting.
 
 ## Things not to teach
 
@@ -21,11 +19,11 @@ The goal of this exercise is to teach the student about Python strings, and fami
 
 The Concepts this exercise unlocks are:
 
- - `strings-basic`: know about `str` type in Python, know some basic methods, know about formatting.
+- `strings-basic`: know about `str` type in Python, know some basic methods, know about formatting.
 
 ## Prerequisites
 
- - `functions`: The student should be familiar with creating functions.
+- `functions`: The student should be familiar with creating functions.
 
 ## Representer
 

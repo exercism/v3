@@ -7,7 +7,6 @@ The contents of this repository can also be viewed using
 
 You need to have docker installed for your platform.
 
-
 1. From the root of this repository, build the docker image:
 
 ```sh

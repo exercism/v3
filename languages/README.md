@@ -11,6 +11,7 @@ To contribute, please select the language you'd like to contribute to:
 - [C#][csharp]
 - [Clojure][clojure]
 - [Dart][dart]
+- [Emacs Lisp][emacs-lisp]
 - [F#][fsharp]
 - [Go][go]
 - [Haskell][haskell]
@@ -27,6 +28,7 @@ To contribute, please select the language you'd like to contribute to:
 [cpp]: ./cpp/README.md
 [csharp]: ./csharp/README.md
 [dart]: ./dart/README.md
+[emacs-lisp]: ./emacs-lisp/README.md
 [fsharp]: ./fsharp/README.md
 [go]: ./go/README.md
 [haskell]: ./haskell/README.md

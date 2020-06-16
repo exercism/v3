@@ -109,4 +109,3 @@ Python has a number of handy [builtin functions][docs], for example [`len`][buil
 [builtin-function-super]: ./super.md
 [builtin-function-vars]: ./vars.md
 [builtin-function-zip]: ./zip.md
-

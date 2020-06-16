@@ -17,7 +17,7 @@ subgraph Type System
 	end
 	abstract-types --> multiple-dispatch
 	multiple-dispatch["multiple-dispatch (encounters)"] --> extension[extending/glueing together modules]
-	
+
 	abstract-types --> primitive-types
 end
 extension --> performance
@@ -49,6 +49,7 @@ I think of closely coupled concepts/exercises as a “block” in the progressio
 
 #### “Robots”
 
+<!-- prettier-ignore -->
 - Introduces **structs**
 - Based on the existing exercises _robot-name_ and _robot-simulator_
 - Might be split up in multiple exercises
@@ -68,6 +69,7 @@ I think of closely coupled concepts/exercises as a “block” in the progressio
 
 #### “Encounters”
 
+<!-- prettier-ignore -->
 - Central exercise that teaches **multiple dispatch**
 - Implementation is ‘fixed’ for now to avoid modifying to many variables at once
     - **NEXT:** Exception: Add `meets(::Pet, ::AbstractRobot)`

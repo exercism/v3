@@ -104,6 +104,7 @@ Concepts that are special to Go or have key differences to a vast majority of ot
 - [Type Inference](../../../reference/concepts/type_inference.md)
 
 ## Advanced
+
 - Code generation (`go generate`)
 - [plugins](https://golang.org/pkg/plugin/)
 - [cgo](https://golang.org/cmd/cgo/)
@@ -113,9 +114,10 @@ Concepts that are special to Go or have key differences to a vast majority of ot
 ## Patterns
 
 ### Concurrency
+
 - synchronization for sharing memory (mutex, atomics)
 - synchronization via communication (channels)
-- data protected by `confinement` (`guard` pattern ?) 
+- data protected by `confinement` (`guard` pattern ?)
 - for-select loop
 - `fan-in`, `fan-out`
 

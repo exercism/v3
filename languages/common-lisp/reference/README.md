@@ -8,118 +8,123 @@ A more formal, machine-readable version of this concept list exists as
 [concepts.csv][concepts]
 
 ## Concepts
+
 ### General
-  - [Arithmetic][arithmetic]
-    - Prefix Notation
-  - [Assignment][assignment]
-    - Generic Setters
-  - [Comments][comments]
-    - Line
-    - Block
-    - Conventions
-  - [Conditionals][conditionals]
-    - One Branch (`and`, `or`, `when`, `unless`)
-    - Two Branch (`if`)
-    - More Branches (`cond`, `case`)
-  - [Constants][constants]
-  - [Enumeration][enumeration]
-    - Loop Macro
-    - Do (`do`, `do*`, `dotimes`, `dolist`)
-  - [Expressions][expressions]
-    - S-Expressions
-  - Packages
-  - [Sameness][sameness]
-    - Same Memory (`eq`)
-    - Same Value Primitives (`eql`)
-    - Same Value Objects (`equal`)
-    - Lenient Sameness (`equalp`)
-    - Type Specific (`=`, `char=`, `string-equal`, etc)
-  - [Truthy and Falsy][truthy-and-falsy]
-  - [Variables][variables]
-    - Global (`defparameter`, `defvar`)
-    - Local (`let`, `let*`)
+
+- [Arithmetic][arithmetic]
+  - Prefix Notation
+- [Assignment][assignment]
+  - Generic Setters
+- [Comments][comments]
+  - Line
+  - Block
+  - Conventions
+- [Conditionals][conditionals]
+  - One Branch (`and`, `or`, `when`, `unless`)
+  - Two Branch (`if`)
+  - More Branches (`cond`, `case`)
+- [Constants][constants]
+- [Enumeration][enumeration]
+  - Loop Macro
+  - Do (`do`, `do*`, `dotimes`, `dolist`)
+- [Expressions][expressions]
+  - S-Expressions
+- Packages
+- [Sameness][sameness]
+  - Same Memory (`eq`)
+  - Same Value Primitives (`eql`)
+  - Same Value Objects (`equal`)
+  - Lenient Sameness (`equalp`)
+  - Type Specific (`=`, `char=`, `string-equal`, etc)
+- [Truthy and Falsy][truthy-and-falsy]
+- [Variables][variables]
+  - Global (`defparameter`, `defvar`)
+  - Local (`let`, `let*`)
 
 ### Functions
-  - [Anonymous Functions][anonymous-functions]
-  - [Function Definition][functions]
-    - Default Arguments
-    - Keyword Arguments
-    - Optional Arguments
-    - Rest Arguments
-  - [Higher Order Functions][higher-order-functions]
-  - Multiple Values
-  - [Nested Functions][nested-functions]
-  - [Recursion][recursion]
+
+- [Anonymous Functions][anonymous-functions]
+- [Function Definition][functions]
+  - Default Arguments
+  - Keyword Arguments
+  - Optional Arguments
+  - Rest Arguments
+- [Higher Order Functions][higher-order-functions]
+- Multiple Values
+- [Nested Functions][nested-functions]
+- [Recursion][recursion]
 
 ### DSLs
-  - Format
-    - Basic
-    - Conditionals
-    - Iteration
-    - Language
-    - Miscellaneous
-    - Numbers
-    - Tables
-  - Loop
-    - Basic
-    - Collecting
-    - Miscellaneous
-    - Ranges
-    - Tests
-    - Traversal
+
+- Format
+  - Basic
+  - Conditionals
+  - Iteration
+  - Language
+  - Miscellaneous
+  - Numbers
+  - Tables
 
 ### CLOS (Needs Some Work)
-  - [Classes][classes]
-  - Generic Functions
-  - [Methods][methods]
-  - Metaobject Protocol (MOP)
-  - [Multiple Dispatch][multiple-dispatch]
-  - [Multiple Inheritance][inheritance]
-  - [Objects][objects]
-  - Slots
-  
+
+- [Classes][classes]
+- Generic Functions
+- [Methods][methods]
+- Metaobject Protocol (MOP)
+- [Multiple Dispatch][multiple-dispatch]
+- [Multiple Inheritance][inheritance]
+- [Objects][objects]
+- Slots
+
 ### Conditions & Restarts (Needs Some Work)
-  - Conditions
-  - Handlers
-  - Restarts
-  - Signalling
+
+- Conditions
+- Handlers
+- Restarts
+- Signalling
 
 ### Macros (Needs Lots of Work)
-  - Code as Data (`defmacro`, `` ` ``, `,`, `,@`)
-  - Unique Symbols (`gensym`)
-  - Reader Macros (`set-macro-character`, `#.` `#n=`, etc)
+
+- Code as Data (`defmacro`, `` ` ``, `,`, `,@`)
+- Unique Symbols (`gensym`)
+- Reader Macros (`set-macro-character`, `#.` `#n=`, etc)
 
 ### I/O
-  - Printing
-  - Reading
+
+- Printing
+- Reading
 
 ### Sequences
-  - [Arrays][array]
-  - [Association Lists][map]
-  - Circular Lists
-  - [Lists][list]
-  - Property Lists
-  - [Strings][string]
-  - Vectors
+
+- [Arrays][array]
+- [Association Lists][map]
+- Circular Lists
+- [Lists][list]
+- Property Lists
+- [Strings][string]
+- Vectors
 
 ### Numbers
-  - Complex
-  - [Floats][floating-point-number]
-  - [Integers][integer]
-  - Rationals
+
+- Complex
+- [Floats][floating-point-number]
+- [Integers][integer]
+- Rationals
 
 ### Types
-  - [Booleans][bool]
-  - [Characters][char]
-  - Cons
-  - [Hash Tables][hash-map]
-  - [Sets][set]
-  - Streams
-  - [Structures][struct]
-  - Symbols
-  - Trees
+
+- [Booleans][bool]
+- [Characters][char]
+- [Cons][cons]
+- [Hash Tables][hash-map]
+- [Sets][set]
+- Streams
+- [Structures][struct]
+- Symbols
+- Trees
 
 ## Implemented Concept Exercises
+
 | Exercise           | Concepts                                     |
 | ------------------ | -------------------------------------------- |
 | [`basics`][basics] | `comments`, `expressions`, `cons`, `symbols` |
@@ -133,6 +138,7 @@ A more formal, machine-readable version of this concept list exists as
 [classes]: ../../../reference/concepts/classes.md
 [comments]: ../../../reference/concepts/comments.md
 [conditionals]: ../../../reference/concepts/conditionals.md
+[cons]: ../reference/types/cons.md
 [constants]: ../../../reference/concepts/constants.md
 [csharp-example]: ../../csharp/reference/README.md
 [enumeration]: ../../../reference/concepts/enumeration.md
@@ -157,6 +163,5 @@ A more formal, machine-readable version of this concept list exists as
 [struct]: ../../../reference/types/struct.md
 [truthy-and-falsy]: ../../../reference/concepts/truthy_and_falsy.md
 [variables]: ../../../reference/concepts/variables.md
-
 [concepts]: concepts.csv
 [basics]: ../exercises/concept/basics

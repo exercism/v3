@@ -34,13 +34,13 @@ completely, forever.
 
 ## Tasks
 
-### 1. Fetch a translation, ignoring the quality
+## 1. Fetch a translation, ignoring the quality
 
 Implement a function to fetch a translation, ignoring the quality, and
 forwarding any errors thrown by the API:
 
 ```javascript
-service.free("jIyaj")
+service.free('jIyaj')
 // => Promise<...> resolves "I understand."
 
 service.free("jIyajbe'")
@@ -50,16 +50,16 @@ service.free("jIyajbe'")
 - Returns the translation if it can be retrieved, regardless its quality
 - Forwards any error from the translation API
 
-### 2. Fetch a batch of translations, all-or-nothing
+## 2. Fetch a batch of translations, all-or-nothing
 
 Implement a function that batch translates the given texts using the free
 service, returning all the translations, or a single error.
 
 ```javascript
-service.batch(["jIyaj", "majQa'"])
+service.batch(['jIyaj', "majQa'"])
 // => Promise<...> resolves ["I understand.", "Well done!"]
 
-service.batch(["jIyaj", "jIyajbe'"])
+service.batch(['jIyaj', "jIyajbe'"])
 // => Promise<...> rejects new Error("Not yet translated")
 
 service.batch([])
@@ -70,7 +70,7 @@ service.batch([])
 - Rejects with the first error that is encountered
 - Rejects with a `BatchIsEmpty` error if no texts are given
 
-### 3. Request a translation, retrying at most 2 times
+## 3. Request a translation, retrying at most 2 times
 
 Implement a function that requests a translation, with automatic retries, up to a total of 3 calls for the same request.
 
@@ -79,7 +79,7 @@ service.request("jIyajbe'")
 // => Promise<...> resolves (with nothing), can now be retrieved using the fetch API
 ```
 
-### 4. Fetch a translation, inspect the quality, or request it
+## 4. Fetch a translation, inspect the quality, or request it
 
 Implement the function for premium users which fetch a translation, request it
 if it's not available, and only return it if it meets a certain threshold.

@@ -9,7 +9,26 @@
   },
   "ignore_pattern": "example(?!.*test)",
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+        "slug": "numbers",
+        "uuid": "88215fa2-eba8-430e-988f-21a924f18f7b",
+        "concepts": ["numbers", "conditionals"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "slices",
+        "uuid": "8bc0c6f6-1891-4688-9ed7-a63e3702f655",
+        "concepts": ["slices"],
+        "prerequisites": ["arrays", "numbers"]
+      },
+      {
+        "slug": "strings",
+        "uuid": "b97a271c-4036-4ea8-8c6a-094715a48627",
+        "concepts": ["strings"],
+        "prerequisites": ["basics"]
+      }
+    ],
     "practice": []
   }
 }

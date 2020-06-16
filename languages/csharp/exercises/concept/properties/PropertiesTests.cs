@@ -17,22 +17,39 @@ public class WeighingMachineTests
         var wm = new WeighingMachine();
         Assert.Throws<ArgumentException>(() => wm.InputWeight = -10);
     }
-    
+
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void Get_US_display_weight()
+    public void Get_us_display_weight_pounds()
     {
         var wm = new WeighingMachine();
         wm.InputWeight = 60m;
-        Assert.Equal((132, 4), (wm.USDisplayWeight.Pounds, wm.USDisplayWeight.Ounces));
+        Assert.Equal(132, wm.USDisplayWeight.Pounds);
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void Input_pounds_and_get_US_display_weight()
+    public void Get_us_display_weight_ounces()
+    {
+        var wm = new WeighingMachine();
+        wm.InputWeight = 60m;
+        Assert.Equal(4, wm.USDisplayWeight.Ounces);
+    }
+
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void Input_pounds_and_get_us_display_weight_pounds()
     {
         var wm = new WeighingMachine();
         wm.Units = Units.Pounds;
         wm.InputWeight = 175.5m;
-        Assert.Equal((175, 8), (wm.USDisplayWeight.Pounds, wm.USDisplayWeight.Ounces));
+        Assert.Equal(175, wm.USDisplayWeight.Pounds);
+    }
+
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void Input_pounds_and_get_is_display_weight_ounces()
+    {
+        var wm = new WeighingMachine();
+        wm.Units = Units.Pounds;
+        wm.InputWeight = 175.5m;
+        Assert.Equal(8, wm.USDisplayWeight.Ounces);
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]

@@ -6,4 +6,3 @@ The programmer instructs the machine how to change its state. This contrasts wit
 
 - [Object Orientated Programming](./object-oriented.md)
 - [Procedural Programming](./procedural.md)
-

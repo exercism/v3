@@ -12,21 +12,28 @@
             {
                 "uuid": "39ebdd04-4f84-4817-bf9d-f1f9e066c283",
                 "slug": "functions-introduction",
-                "concepts": [
-                    "functions-introduction"
-                ],
+                "concepts": ["functions-introduction"],
                 "prerequisites": []
             },
             {
                 "uuid": "68001762-8a35-4494-9de4-624ca9efb5cd",
                 "slug": "multiple-dispatch",
-                "concepts": [
-                    "multiple-dispatch"
-                ],
+                "concepts": ["multiple-dispatch"],
                 "prerequisites": [
                     "composite-types",
                     "abstract-types",
                     "methods"
+                ]
+            },
+            {
+                "uuid": "2b2b8bed-ff39-4e77-a2fe-254125b53a1c",
+                "slug": "unicode-identifiers",
+                "concepts": ["unicode-identifiers", "emoji-symbols"],
+                "prerequisites": [
+                    "symbols",
+                    "composite-types",
+                    "methods",
+                    "constants"
                 ]
             }
         ],

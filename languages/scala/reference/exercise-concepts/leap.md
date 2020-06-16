@@ -10,8 +10,8 @@
 - return values: return a value from a function
 - Int: integer type, manipulate numbers
 - Boolean: boolean type, true/false, manipulate conditions
-- arithmetic operators: divisible: `n % m == 0`  to test if `n` is divisible by `m`
+- arithmetic operators: divisible: `n % m == 0` to test if `n` is divisible by `m`
 - boolean - operators: `&&`: to combine two booleans using `AND`
-- boolean - operators:  `||`: to combine two booleans using `OR`
-- boolean - operators:  `!`: to `NOT` a boolean
+- boolean - operators: `||`: to combine two booleans using `OR`
+- boolean - operators: `!`: to `NOT` a boolean
 - functions: nested: `def` to define function, even function inside a function

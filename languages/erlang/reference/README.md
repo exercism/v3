@@ -23,7 +23,7 @@
   - In `case` clauses
 - [Operators](../../../reference/concepts/operators.md)
   - [Boolean logic](../../../reference/concepts/boolean_logic.md) operators: `and`, `or`, `andalso`, `orelse`, `,`, `;`
-  - [Aritmetic](../../../reference/concepts/arithmetic.md) operators: `+`, `-`, `*`,  `div`, `/`, `rem`, and `mod`
+  - [Aritmetic](../../../reference/concepts/arithmetic.md) operators: `+`, `-`, `*`, `div`, `/`, `rem`, and `mod`
 - Guards
   - `if`
   - In function clauses
@@ -32,7 +32,7 @@
   - Atoms
   - Boolean atoms
   - Integers
-      - Characters
+    - Characters
   - Floats
   - Tuples
   - Lists

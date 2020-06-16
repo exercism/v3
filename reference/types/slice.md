@@ -19,11 +19,9 @@ TBA
 
 #### Implementations
 
-| Track | Exercise                         | Changes |
-| ----- | -------------------------------- | ------- |
+| Track | Exercise                   | Changes |
+| ----- | -------------------------- | ------- |
 | Go    | [slice][implementation-go] | None    |
 
-
 [type-array]: ./array.md
-[implementation-go]: ../../languages/go/exercises/concept/basic-slices/.docs/introduction.md
-
+[implementation-go]: ../../languages/go/exercises/concept/slices/.docs/introduction.md

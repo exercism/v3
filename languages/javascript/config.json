@@ -11,32 +11,46 @@
   "exercises": {
     "concept": [
       {
-        "slug": "numbers",
-        "uuid": "0aff2fa7-55ea-47e9-af4a-78927d916baf",
-        "concepts": ["numbers-basic", "type-conversion"],
-        "prerequisites": []
+        "slug": "array-analysis",
+        "uuid": "45d956db-d4ef-4468-b1d3-47021f172c15",
+        "concepts": ["array-analysis"],
+        "prerequisites": ["arrays", "booleans", "callbacks", "numbers"]
       },
       {
-        "slug": "strings",
-        "uuid": "39549583-1889-490a-bf98-ffb2e0aefe44",
-        "concepts": ["strings-basic"]
+        "slug": "arrays",
+        "uuid": "25cb0707-44f8-4800-b993-3fcb2b6d9f61",
+        "concepts": ["arrays"],
+        "prerequisites": ["numbers"]
+      },
+      {
+        "slug": "basics",
+        "uuid": "97bf898a-36fc-47fc-b870-01fc0c7fe554",
+        "concepts": ["basics"],
+        "prerequisites": []
       },
       {
         "slug": "booleans",
         "uuid": "5acafcbb-20a0-45b9-b276-3d167e0de313",
-        "concepts": ["booleans-basic"],
-        "prerequisites": []
+        "concepts": ["booleans"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "numbers",
+        "uuid": "0aff2fa7-55ea-47e9-af4a-78927d916baf",
+        "concepts": ["numbers"],
+        "prerequisites": ["basics"]
       },
       {
         "slug": "promises",
         "uuid": "4a967656-8615-474e-a009-5c0b09f4386f",
         "concepts": ["promises"],
-        "prerequisites": [
-          "arrays-basic",
-          "errors-basic",
-          "callbacks",
-          "recursion"
-        ]
+        "prerequisites": ["arrays", "callbacks", "errors", "recursion"]
+      },
+      {
+        "slug": "strings",
+        "uuid": "39549583-1889-490a-bf98-ffb2e0aefe44",
+        "concepts": ["strings"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []

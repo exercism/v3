@@ -3,12 +3,15 @@
   "active": true,
   "blurb": "C# is a modern, object-oriented language with lots of great features, such as type-inference and async/await. The tooling is excellent, and there is extensive, well-written documentation.",
   "version": 3,
-  "online_editor": {
-    "indent_style": "space",
-    "indent_size": 4
-  },
+  "online_editor": { "indent_style": "space", "indent_size": 4 },
   "exercises": {
     "concept": [
+      {
+        "slug": "arrays",
+        "uuid": "b6c532c9-1e89-4fbf-8f08-27f5befb5bb8",
+        "concepts": ["arrays", "for-loops", "foreach-loops"],
+        "prerequisites": ["booleans", "classes", "conditionals"]
+      },
       {
         "slug": "basics",
         "uuid": "7d358894-4fbd-4c91-b49f-d68f1c5aa6bc",
@@ -16,33 +19,102 @@
         "prerequisites": []
       },
       {
+        "slug": "booleans",
+        "uuid": "401fe55e-407e-4408-88ca-0a4b342ab95b",
+        "concepts": ["booleans"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "chars",
+        "uuid": "e74c6cd6-add7-45d1-abcb-513418e9d2d0",
+        "concepts": ["chars", "string-builder"],
+        "prerequisites": ["conditionals", "for-loops", "strings"]
+      },
+      {
+        "slug": "classes",
+        "uuid": "e01dc85b-0731-4701-9eea-c78fb69ce543",
+        "concepts": ["classes"],
+        "prerequisites": ["conditionals", "numbers", "strings"]
+      },
+      {
+        "slug": "constructors",
+        "uuid": "655b5c37-c2eb-4da2-ab0a-3845de898835",
+        "concepts": ["constructors"],
+        "prerequisites": ["classes", "conditionals", "numbers", "while-loops"]
+      },
+      {
         "slug": "dates",
         "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
         "concepts": ["datetimes"],
-        "prerequisites": ["numbers", "strings", "classes"]
+        "prerequisites": ["classes", "numbers", "strings"]
+      },
+      {
+        "slug": "dictionaries",
+        "uuid": "ea01c7d9-a387-451b-9a69-f1b48f00d7a5",
+        "concepts": ["dictionaries"],
+        "prerequisites": [
+          "foreach-loops",
+          "generic-types",
+          "strings",
+          "indexers"
+        ]
       },
       {
         "slug": "enums",
         "uuid": "047b895b-7039-4af6-ad3a-17fd818d0b88",
         "concepts": ["enums", "pattern-matching-constants"],
-        "prerequisites": ["strings", "conditionals"]
+        "prerequisites": ["conditionals", "strings"]
       },
       {
         "slug": "flag-enums",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
-        "concepts": ["flag-enums", "bit-manipulation"],
-        "prerequisites": ["enums", "attributes", "integral-numbers"]
+        "concepts": ["bit-manipulation", "compound-assignment", "flag-enums"],
+        "prerequisites": ["attributes", "enums", "integral-numbers"]
       },
       {
         "slug": "floating-point-numbers",
         "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
         "concepts": ["floating-point-numbers", "while-loops"],
-        "prerequisites": ["numbers", "conditionals"]
+        "prerequisites": ["conditionals", "numbers"]
+      },
+      {
+        "slug": "inheritance",
+        "uuid": "2eecc903-a3d9-47dd-ac62-1d88505f089c",
+        "concepts": ["inheritance"],
+        "prerequisites": [
+          "booleans",
+          "classes",
+          "conditionals",
+          "constructors",
+          "strings"
+        ]
+      },
+      {
+        "slug": "method-overloading",
+        "uuid": "3f728065-98d8-472a-a84c-290f05ab1e58",
+        "concepts": [
+          "method-overloading",
+          "named-arguments",
+          "optional-parameters"
+        ],
+        "prerequisites": [
+          "classes",
+          "constructors",
+          "enums",
+          "properties",
+          "strings"
+        ]
+      },
+      {
+        "slug": "nullability",
+        "uuid": "370e7e54-6a96-11ea-bc55-0242ac130003",
+        "concepts": ["nullability"],
+        "prerequisites": ["conditionals", "memory-allocation", "strings"]
       },
       {
         "slug": "numbers",
         "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
-        "concepts": ["numbers", "conditionals"],
+        "concepts": ["conditionals", "numbers"],
         "prerequisites": ["basics"]
       },
       {
@@ -50,11 +122,11 @@
         "uuid": "978bcc16-0c49-4328-92e9-79f6204ce350",
         "concepts": ["properties"],
         "prerequisites": [
-          "numbers",
-          "floating-point-numbers",
           "classes",
           "enums",
-          "exceptions"
+          "exceptions",
+          "floating-point-numbers",
+          "numbers"
         ]
       },
       {

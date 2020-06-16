@@ -3,4 +3,3 @@
 ## Same
 
 Syntax similarity
-

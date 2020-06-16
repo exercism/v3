@@ -8,9 +8,9 @@ entry, you'll need to work out the password of that day:
 ## Front door
 
 1. The guard will recite a poem, one line at the time;
-    - You will have to respond with the appropriate letter.
+   - You will have to respond with the appropriate letter.
 2. The guard will tell you all the letters you've responded with at once;
-    - You need to format the letters as a capitalised word.
+   - You need to format the letters as a capitalised word.
 
 For example, one of their favourite writers is Michael Lockwood, who's written
 the following _acrostic_ poem, which means that the first letter of each
@@ -36,11 +36,11 @@ VIP area. Because this is not for everyone, the back door process is a bit more
 convoluted.
 
 1. The guard will recite a poem, one line at the time;
-    - You will have to respond with the appropriate letter.
+   - You will have to respond with the appropriate letter.
 2. The guard will tell you all the letters you've responded with at once, _but
-   in reverse_:
-    - You need to format the letters as a capitalised word
-    - and ask nicely, by appending `, please`
+   there are sometimes spaces after each sentence_:
+   - You need to format the letters as a capitalised word
+   - and ask nicely, by appending `, please`
 
 For example, the poem mentioned before is also _telestich_, which means that
 the last letter of each sentence form a word:
@@ -61,7 +61,7 @@ with the renowned poets.
 
 ## Tasks
 
-### 1. Get the first letter of a sentence
+## 1. Get the first letter of a sentence
 
 Implement a function that returns first letter of a sentence:
 
@@ -70,7 +70,7 @@ frontDoorResponse('Stands so high')
 // => "S"
 ```
 
-### 2. Capitalize a word
+## 2. Capitalize a word
 
 Implement a function that correctly capitalizes a word:
 
@@ -82,7 +82,7 @@ capitalize('horse')
 // => "Horse"
 ```
 
-### 3. Get the last letter of a sentence
+## 3. Get the last letter of a sentence
 
 Implement a function that returns the last letter of a sentence:
 
@@ -91,19 +91,20 @@ backDoorResponse('Stands so high')
 // => "h"
 ```
 
-### 4. Reverse a word
+## 4. Trim a sentence
 
-Implement a function that reverses a word:
+Improve the previous function so that it removes whitespace from the end of a sentence and returns the last character:
 
 ```javascript
-reverse('esroh')
-// => "horse"
+backDoorResponse('Stands so high   ')
+// => "h"
 ```
 
-### 5. Be polite
+## 5. Be polite
 
 Change the implementation of the `backDoorPassword` function so that it's polite:
 
 ```javascript
 backDoorPassword('esroh')
 // => "Horse, please"
+```

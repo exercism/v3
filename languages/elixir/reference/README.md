@@ -6,6 +6,7 @@ Below are the concepts that have been identified in Elixir for use in Exercism.
 The initial breakdown of these concepts, including the ordering, is based on the elixir-lang.org [Getting Started Guide](https://elixir-lang.org/getting-started/introduction.html).
 
 ### Useful information not tested by exercises
+
 - `iex`
   - `h/0`, plus `h/1`, `i`, `v`, etc.
 - `elixir script.exs` to execute a script
@@ -33,7 +34,7 @@ The initial breakdown of these concepts, including the ordering, is based on the
   - `String.length/1` vs `byte_size/1`
     - `length` vs `size` rule for linear vs constant time respectively
 - [Anonymous functions](../../../reference/concepts/anonymous_functions.md)
-  -`is_function/1` and `is_function/2`
+  - `is_function/1` and `is_function/2`
   - As closures
   - Variable [scope](../../../reference/concepts/scope.md)
   - Implicit [return values](../../../reference/concepts/return_values.md)
@@ -67,7 +68,7 @@ The initial breakdown of these concepts, including the ordering, is based on the
     - `lists` with cons operator and special case of empty list
       - cons can also be used to prepend to list
     - variables may be rebound
-    -  use pin operator `^` to pattern match against previously bound value instead of rebinding
+      - use pin operator `^` to pattern match against previously bound value instead of rebinding
     - if the same variable is used multiple times in a pattern, it must match the same value
       - e.g., `{x, x} = {1, 2}` results in a `MatchError`
     - use `_` to ignore values in a pattern match. its value can never be read.
@@ -124,7 +125,7 @@ The initial breakdown of these concepts, including the ordering, is based on the
     - generally impractical to pattern match keyword lists as it depends on the order of the list
     - has linear performance characteristics of lists
     - `Keyword` module
-  - TODO resume from https://elixir-lang.org/getting-started/keywords-and-maps.html#maps
+  - TODO resume from <https://elixir-lang.org/getting-started/keywords-and-maps.html#maps>
   - Maps
   - Nested data structures
 
@@ -169,6 +170,7 @@ The initial breakdown of these concepts, including the ordering, is based on the
 - TODO: more
 
 #### Functions
+
 - Private functions
 - Named functions
   - Multi-line syntax
@@ -255,6 +257,32 @@ TODO: Flesh out how the above general concepts apply to concept exercises in the
 
 The concept exercises use the following concepts:
 
-| concept | interpretation |
-| --- | --- |
-| `booleans` | Introduction to the boolean type and strict boolean operators -- and/2, or/2, not/1 |
+| concept                          | interpretation                                                                                            |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `access-behaviour`               | Brief overview of behaviours, using access behaviour with maps, knowing it can be used with keyword lists |
+| `anonymous-functions`            | Intro to anonymous functions, functions as data                                                           |
+| `atoms`                          | Intro to Elixir atom type.                                                                                |
+| `basics`                         | Introduction to functions, modules, variables, returning values, integers, invoking functions.            |
+| `binaries`                       | Introduction to binaries as a specialization on the bitstring type, constructing and matching             |
+| `bitstrings`                     | Introduction to bitstrings and constructing and matching on binary data                                   |
+| `bit manipulation`               | Introduction to bit manipulation using the Bitwise module functions                                       |
+| `booleans`                       | Introduction to the boolean type and strict boolean operators -- and/2, or/2, not/1                       |
+| `default-arguments`              | Introduction to default arguments in named functions, function headers                                    |
+| `closures`                       | How to implement closures in Elixir                                                                       |
+| `conditionals`                   | Intro to Elixir `cond/1` function.                                                                        |
+| `floating-point-numbers`         | How to use floating point numbers to represent real numbers                                               |
+| `guards`                         | What guards are, how to use guards in function heads                                                      |
+| `lists`                          | Introduction to the lists type basic list functions -- hd/1, tl/1, length/1, in/2                         |
+| `maps`                           | Introduction to the map data type                                                                         |
+| `module-attributes-as-constants` | Introduction to using module attributes as constants                                                      |
+| `multiple-clause-functions`      | Named function can be overloaded and each attempted to invoke until one succeeds                          |
+| `pattern-matching`               | Basic knowledge of pattern matching using `=/2` and on function parameters                                |
+| `recursion`                      | How to write basic recursive functions                                                                    |
+| `string-literals`                | Introduction to strings in code enclosed by double quotes.                                                |
+| `strings`                        | How to do string processing, concatenation, interpolation, and multiline strings.                         |
+| `structs`                        | Intro to structs: definition, fields, enforcing keys                                                      |
+| `static-access-operator`         | accessing map and struct fields with the `.`                                                              |
+| `tail-call-recursion`            | How to efficiently perform recursion in Elixir to manage function call stacks and use accumulators        |
+| `tuples`                         | Introduction to the tuple data type                                                                       |
+| `errors`                         | Introduction to errors in elixir and patterns to communicate function success/failure                     |
+| `try-rescue`                     | Use of the try-rescue construct in Elixir                                                                 |

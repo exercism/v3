@@ -1,7 +1,7 @@
 module Numbers
 
-let productionRatePerHour (speed: int): double = 
+let productionRatePerHour (speed: int): float =
     failwith "Please implement the 'productionRatePerHour' function"
 
-let workingItemsPerMinute (speed: int): int = 
+let workingItemsPerMinute (speed: int): int =
     failwith "Please implement the 'workingItemsPerMinute' function"

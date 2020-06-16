@@ -30,7 +30,7 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - [Anonymous functions (lambdas)](../../../reference/concepts/anonymous_functions.md)
 - [Recursion](../../../reference/concepts/recursion.md)
 - [Nested functions](../../../reference/concepts/nested_functions.md)
-- [Pipelines (ranges)](../../../reference/concepts/pipelines.md) (Defer C++2a to release) 
+- [Pipelines (ranges)](../../../reference/concepts/pipelines.md) (Defer C++2a to release)
 
 ### Memory management
 
@@ -85,9 +85,9 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - Enums
 - [Strings][string]
 - [Arrays][array]
-- [Vectors][vector]
-- [Views][view] (`std::span` and `std::string_view`)
-- [Reference types][reference]
+- Vectors
+- Views (`std::span` and `std::string_view`)
+- Reference types
 - [Linked-lists][list]
 - [Dictionaries][map]
 - [Sets][set]
@@ -128,8 +128,6 @@ The concept exercises use the following concepts:
 | `vectors-basic`          | C++98                    | Know of the existence of the `std::vector` type. Know how to define an array. Know how to access elements in an vector by index. Know the unique properties of a vector. Know of some basic functions (like adding an element to a vector). Know where it's documented, or at least how to search for it.                    |
 | `maps-basic`             | C++98                    | Know of the existence of the `std::map` and `std::unordered_map` types. Know how to define an map. Know how to access elements in an map by key. Know the unique properties of a map. Know of some basic functions (like adding an element to a map). Know where it's documented, or at least how to search for it.          |
 | `sets-basic`             | C++98                    | Know of the existence of the `std::set` and `std::unordered_set` types. Know how to define an set. Know how to access elements in a set. Know the unique properties of a set. Know of some basic functions (like adding an element to a set). Know where it's documented, or at least how to search for it.                  |
-
-
 
 This also indicates that for example `strings-basic` does **not** teach using custom formatting strings and that `numbers-basic` does **not** teach about integer undefined-behavior.
 

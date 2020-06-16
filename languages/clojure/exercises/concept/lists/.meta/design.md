@@ -1,5 +1,3 @@
-# Design
-
 ## Goal
 
 The goal of this exercise is to introduce the student to [Lists in Clojure](https://clojure.org/reference/data_structures#Lists).
@@ -25,9 +23,9 @@ The goal of this exercise is to introduce the student to [Lists in Clojure](http
 
 The Concepts this exercise unlocks are:
 
-- `lists-basic`: 
-  - know of the existence of the `list` type; 
-  - know of the idea of `list` design; 
+- `lists-basic`:
+  - know of the existence of the `list` type;
+  - know of the idea of `list` design;
   - know some basic functions (like creating list, adding items, or count a list);
 
 ## Prerequisites

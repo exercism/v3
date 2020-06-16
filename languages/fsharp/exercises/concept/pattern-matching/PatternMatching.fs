@@ -1,2 +1,3 @@
-let reply (guess: int): string =
-    failwith "Please implement the 'reply' function"
+module PatternMatching
+
+let reply (guess: int): string = failwith "Please implement the 'reply' function"

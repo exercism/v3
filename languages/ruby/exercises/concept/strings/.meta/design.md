@@ -1,5 +1,3 @@
-# Design
-
 ## Goal
 
 The goal of this exercise is to teach the student the basics of the Concept of Strings in [Ruby][ruby-doc.org-string].
@@ -38,4 +36,3 @@ This exercise does not require any specific logic to be added to the [analyzer][
 [analyzer]: https://github.com/exercism/ruby-analyzer
 [representer]: https://github.com/exercism/ruby-representer
 [ruby-doc.org-string]: https://ruby-doc.org/core-2.7.0/String.html
-

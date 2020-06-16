@@ -3,26 +3,26 @@ name: Concept CI
 on:
   push:
     branches-ignore:
-    - master
+      - master
     paths:
-    - 'languages/julia/config.json'
-    - 'languages/julia/reference/concepts.csv'
-    - 'languages/julia/reference/exercise-concepts/**'
-    - 'languages/julia/exercises/concept/**'
-    - 'languages/common-lisp/config.json'
-    - 'languages/common-lisp/reference/concepts.csv'
-    - 'languages/common-lisp/reference/exercise-concepts/**'
-    - 'languages/common-lisp/exercises/concept/**'
+      - 'languages/julia/config.json'
+      - 'languages/julia/reference/concepts.csv'
+      - 'languages/julia/reference/exercise-concepts/**'
+      - 'languages/julia/exercises/concept/**'
+      - 'languages/common-lisp/config.json'
+      - 'languages/common-lisp/reference/concepts.csv'
+      - 'languages/common-lisp/reference/exercise-concepts/**'
+      - 'languages/common-lisp/exercises/concept/**'
   pull_request:
     paths:
-    - 'languages/julia/config.json'
-    - 'languages/julia/reference/concepts.csv'
-    - 'languages/julia/reference/exercise-concepts/**'
-    - 'languages/julia/exercises/concept/**'
-    - 'languages/common-lisp/config.json'
-    - 'languages/common-lisp/reference/concepts.csv'
-    - 'languages/common-lisp/reference/exercise-concepts/**'
-    - 'languages/common-lisp/exercises/concept/**'
+      - 'languages/julia/config.json'
+      - 'languages/julia/reference/concepts.csv'
+      - 'languages/julia/reference/exercise-concepts/**'
+      - 'languages/julia/exercises/concept/**'
+      - 'languages/common-lisp/config.json'
+      - 'languages/common-lisp/reference/concepts.csv'
+      - 'languages/common-lisp/reference/exercise-concepts/**'
+      - 'languages/common-lisp/exercises/concept/**'
   schedule:
     # To prevent sysimage cache from expiring after not being accessed for 7 days, run the workflow every 6 days.
     # Due to the long time needed to build the sysimage, this should overall save time.
@@ -31,7 +31,7 @@ on:
 jobs:
   concept-test:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v2
         with:
@@ -73,4 +73,6 @@ jobs:
         shell: bash -c "julia --color=yes --project=.github/bin/concept-checks {0}"
 
       - name: Run concept checks
-        run: julia --sysimage=julia-sysimages/sysimage-concept-checks.so --color=yes --project=.github/bin/concept-checks .github/bin/concept-checks/concept-checks.jl -r . -t ${{ steps.track-detection.outputs.track }} ${{ steps.track-detection.outputs.opts }}
+        continue-on-error: true
+        run: |
+          julia --sysimage=julia-sysimages/sysimage-concept-checks.so --color=yes --project=.github/bin/concept-checks .github/bin/concept-checks/concept-checks.jl -r . -t ${{ steps.track-detection.outputs.track }} ${{ steps.track-detection.outputs.opts }}

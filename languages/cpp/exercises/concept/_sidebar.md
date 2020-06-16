@@ -5,6 +5,6 @@
     - [Docs](/languages/cpp/docs/README.md)
     - [Exercises](/languages/cpp/exercises/README.md)
       - [Concept](/languages/cpp/exercises/concept/README.md)
-          - [Strings](/languages/csharp/exercises/concept/strings/.meta/design.md)
+        - [Strings](/languages/cpp/exercises/concept/strings/.meta/design.md)
       - [Practice](/languages/cpp/exercises/practice/README.md)
     - [Reference](/languages/cpp/reference/README.md)

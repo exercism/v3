@@ -15,19 +15,19 @@ count = 2;     // Update to new value
 // count = false;
 ```
 
-C# is an [object-oriented language][object-oriented-programming] and requires all functions to be defined in a _class_. The `class` keyword is used to define a class. It is common to specify an _access modifier_, which influences what other classes can use the class. The most common access modifier is `public`, which means that other classes can use this class.
+C# is an [object-oriented language][object-oriented-programming] and requires all functions to be defined in a _class_. The `class` keyword is used to define a class.
 
 ```csharp
-public class Calculator
+class Calculator
 {
     // ...
 }
 ```
 
-A function within a class is referred to as a _method_. Each method can have zero or more parameters. All parameters must be explicitly typed, there is no type inference for parameters. Similarly, the return type must also be made explicit. Like classes, an access modifier can be specified for methods. Values are returned from functions using the `return` keyword.
+A function within a class is referred to as a _method_. Each method can have zero or more parameters. All parameters must be explicitly typed, there is no type inference for parameters. Similarly, the return type must also be made explicit. Values are returned from functions using the `return` keyword. To allow a method to be called by code in other files, the `public` access modifier must be added.
 
 ```csharp
-public class Calculator
+class Calculator
 {
     public int Add(int x, int y)
     {
@@ -40,6 +40,12 @@ Invoking a method is done by specifying its class- and method name and passing a
 
 ```csharp
 var sum = Calculator.Add(1, 2);
+```
+
+Arguments can optionally specify the corresponding parameter's name:
+
+```csharp
+var sum = Calculator.Add(x: 1, y: 2);
 ```
 
 Scope in C# is defined between the `{` and `}` characters.

@@ -54,7 +54,7 @@ languages/python/**/*                  @exercism/python
 languages/r/**/*                       @exercism/r
 languages/racket/**/*                  @exercism/racket
 languages/reasonml/**/*                @exercism/reasonml
-languages/ruby/**/*                    @exercism/ruby
+languages/ruby/**/*                    @exercism/ruby @iHiD
 languages/rust/**/*                    @exercism/rust
 languages/scala/**/*                   @exercism/scala
 languages/scheme/**/*                  @exercism/scheme

@@ -1,10 +1,10 @@
-CI:
+type/ci:
   - .github/workflows/**/*
   - .github/actions/**/*
   - .github/**/*.yml
   - .github/**/*.json
 
-documentation:
+type/documentation:
   - docs/**/*
   - .github/ISSUE_TEMPLATE/**/*
   - languages/**/docs/**/*
@@ -69,6 +69,9 @@ track/julia:
 track/kotlin:
   - languages/kotlin/**/*
 
+track/nim:
+  - languages/nim/**/*
+
 track/ocaml:
   - languages/ocaml/**/*
 
@@ -104,6 +107,9 @@ track/scala:
 
 track/scheme:
   - languages/scheme/**/*
+
+track/swift:
+  - languages/swift/**/*
 
 track/typescript:
   - languages/typescript/**/*

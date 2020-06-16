@@ -13,10 +13,10 @@ This area will contain everything needed to launch the Common Lisp track, includ
 Before we publicize requesting contribution for this language, the following steps should be done.
 
 - [x] Have a kick-off discussion between track maintainers
-- [X] Fill out the [maintainers.md](./maintainers.md) file (e.g. [C#](../csharp/maintainers.md))
+- [x] Fill out the [maintainers.md](./maintainers.md) file (e.g. [C#](../csharp/maintainers.md))
 - [x] Ensure there is a link to your track's GitHub issues on the [main README.md](../../README.md)
-- [X] [Write a Concept Exercise implementation guide](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
-- [X] [List out key Concepts for your language](../../docs/maintainers/determining-concepts.md)
+- [x] [Write a Concept Exercise implementation guide](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
+- [x] [List out key Concepts for your language](../../docs/maintainers/determining-concepts.md)
 - [ ] [Add GitHub issues for 20 Concept Exercises](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
 
 ## Readiness for Launch
@@ -27,10 +27,10 @@ Before launch, we need all of the following parts to be completed:
 
 - [ ] Implemented 20+ Concept Exercises
 - [ ] [Updated `config.json`](../../docs/maintainers/migrating-your-config-json-files.md)
-  - [X] Added `version` key
-  - [X] Added online editor settings
-    - [X] Added `indent_style`
-    - [X] Added `indent_size`
+  - [x] Added `version` key
+  - [x] Added online editor settings
+    - [x] Added `indent_style`
+    - [x] Added `indent_size`
   - [ ] Added Concept Exercises
   - [ ] Added Concepts for all Practice Exercises
 
@@ -41,7 +41,7 @@ Before launch, we need all of the following parts to be completed:
 
 ### Test Runner
 
-- [X] Build Test Runner
+- [x] Build Test Runner
 - [ ] Deploy Test Runner
 
 ## Extra magic

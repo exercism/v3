@@ -1,9 +1,3 @@
-# Design
-
-## Goal
-
-The goal of this exercise is to introduce the student to C# properties and to teach the student how the concept of properties is implemented in [C#][docs.microsoft.com-properties]. We'll teach the student about properties by having the student work with classes that expose contrasting forms of properties. The students will learn to work with properties with backing fields and auto-implemented properties.
-
 Properties are covered early in the C# track as their purpose and power can be shown with few dependencies (classes, access modifiers and fields of simple types).
 
 ## Learning objectives
@@ -27,8 +21,6 @@ Properties are covered early in the C# track as their purpose and power can be s
 Note that students may choose to implement expression-bodied members.
 
 ## Concepts
-
-This Concepts Exercise's concepts are:
 
 - `properties`: know what properties are and how they relate to fields and methods; know what backing-field properties are; know what auto-implemented properties are; know what calculated properties are; know how to use property accessors to customize visibility; know how to define the different types of properties.
 

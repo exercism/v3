@@ -18,3 +18,4 @@ These awesome people help maintain the JavaScript track.
 - Maisam Somji (Slack: `@msomji`, GitHub: [msomji](https://github.com/msomji))
 - Ovidiu Miu (Slack: `@Ovidiu Miu`, GitHub: [ovidiu141](https://github.com/ovidiu141))
 - Pedro Romano (Slack: `@paparomeo`, GitHub: [paparomeo](https://github.com/paparomeo))
+- Rishi Kothari (Slack: `@Rishi Kothari`, GitHub: [rishiosaur](https://github.com/rishiosaur))
