@@ -13,10 +13,13 @@
 - `Agent`
 - links
 - monitors
+- supervisors
+- tasks
 
 ## Concepts
 
 - `processes`
+- `pid`
 
 ## Prerequisites
 
