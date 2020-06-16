@@ -37,7 +37,7 @@ jobs:
           HEAD_REF=$(jq -r ".head.ref" "$PR_DATA")
           
           if [ ${{ steps.fork_status.outputs.fork }} == "false" ]; then
-            echo "::debug::Setting up repo using ssh"
+            echo "::debug::Setting up repo using SSH"
             HEAD_REPO=$(jq -r '.head.repo.ssh_url' "$PR_DATA")
           else
             echo "::debug::Setting up repo using HTTPS"
