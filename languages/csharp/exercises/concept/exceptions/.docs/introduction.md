@@ -3,6 +3,7 @@ Exceptions in C# provide a structured, uniform, and type-safe way of handling er
 In C#, all exceptions have `System.Exception` class as their base type. It contains important properties such as `Message`, which contains a human-readable description of the reason for the exception being thrown.
 
 To signal that there should be an error in a certain part of the code, a new exception object needs to be created and then thrown,using the `throw` keyword:
+
 ```csharp
 using System;
 static int Square(int number)
@@ -16,6 +17,7 @@ static int Square(int number)
 ```
 
 When an exception gets thrown, the runtime has the task of finding a piece of code that is responsible for handling of that exception. If no appropriate handler is found, the runtime displays the unhandled exception message in addition to stoping the execution of the program. To create a handler for an exception, C# uses the try-catch statement, which consists of a `try` block and one or more `catch` clauses. The `try` block should contain and guard code that may result in the exception getting thrown. The `catch` clauses should contain code that handles the behaviour of the program after the error has occured.
+
 ```csharp
 using System;
 public static int Calculate()
@@ -28,12 +30,13 @@ public static int Calculate()
     {
         Console.WriteLine($"Method failed with the following message: {e.Message}");
     }
-} 
+}
 ```
 
 Some of the more common exceptions include `IndexOutOfRangeException`, `ArgumentOutOfRangeException`, `NullReferenceException`, `StackOverflowException`, `ArgumentException`, `InvalidOperationException` and `DivideByZeroException`.
 
 Some of the cases when exceptions should be thrown include:
+
 - if the method cannot complete its defined functionality
 - an inappropriate call to an object is made, based on the object state
 - when an argument to a method causes an exception

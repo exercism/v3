@@ -1,4 +1,4 @@
-In this exercise you will be building a simple integer calculator. To make matters simple, it is assumed the class can only handle positive numbers. 
+In this exercise you will be building a simple integer calculator. To make matters simple, it is assumed the class can only handle positive numbers.
 
 The goal is to implement 4 different methods.
 
@@ -14,11 +14,11 @@ Any other operation should throw the `InvalidOperationException` exception. This
 
 ## 2. Implement method SimpleCalculator.Addition()
 
-Implement the (_static_) `SimpleCalculator.Addition()`, which takes two integer values as arguments and returns the result of their multiplication. If the result of the operation does not fit into the `int` type (is greater than `2_147_483_647`), then the method should throw an `ArgumentException` exception with the message `"Result of operation does not fit in type of int."`. 
+Implement the (_static_) `SimpleCalculator.Addition()`, which takes two integer values as arguments and returns the result of their multiplication. If the result of the operation does not fit into the `int` type (is greater than `2_147_483_647`), then the method should throw an `ArgumentException` exception with the message `"Result of operation does not fit in type of int."`.
 
 ## 3. Implement method SimpleCalculator.Multiplication()
 
-Implement the (_static_) `SimpleCalculator.Multiplication()`, which takes two integer values as arguments and returns the result of their multiplication. If the result of the operation does not fit into the `int` type (is greater than `2_147_483_647`), then the method should throw an `ArgumentException` exception with the message `"Result of operation does not fit in type of int."`. 
+Implement the (_static_) `SimpleCalculator.Multiplication()`, which takes two integer values as arguments and returns the result of their multiplication. If the result of the operation does not fit into the `int` type (is greater than `2_147_483_647`), then the method should throw an `ArgumentException` exception with the message `"Result of operation does not fit in type of int."`.
 
 ## 4. Implement method SimpleCalculator.Division()
 
@@ -26,4 +26,4 @@ Implement the (_static_) `SimpleCalculator.Division()`, which takes two integer 
 
 ## 5. Handle exceptions in the SimpleCalculator.Calculate() method
 
-The `Exceptions` class contains the `ErrorLog` property, which will act, as the name suggest, as the logger for error messages that occur during the execution of the program. In the  `SimpleCalculator.Calculate()` method, implement the `catch` clause that catches `ArgumentException` exceptions. Inside the `catch` clause, the `ErrorLog` property should be modified to include the string `Result invalid: ` as well the content of the exception message. Finally, it should return `-1` as the result of the operation.
+The `Exceptions` class contains the `ErrorLog` property, which will act, as the name suggest, as the logger for error messages that occur during the execution of the program. In the `SimpleCalculator.Calculate()` method, implement the `catch` clause that catches `ArgumentException` exceptions. Inside the `catch` clause, the `ErrorLog` property should be modified to include the string `Result invalid:` as well the content of the exception message. Finally, it should return `-1` as the result of the operation.
