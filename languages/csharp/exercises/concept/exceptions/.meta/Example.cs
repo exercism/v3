@@ -42,7 +42,7 @@ static class SimpleCalculator
         int result = operand1 * operand2;
         if(operand1 > 0 && operand2 > 0 && result < 0)
         {
-            throw new ArgumentOutOfRangeException("Result of operation does not fit in type of int.");
+            throw new ArgumentException("Result of operation does not fit in type of int.");
         }
         return result;
     }
@@ -51,7 +51,7 @@ static class SimpleCalculator
         int result = operand1 + operand2;
         if(operand1 > 0 && operand2 > 0 && result < 0)
         {
-            throw new ArgumentOutOfRangeException("Result of operation does not fit in type of int.");
+            throw new ArgumentException("Result of operation does not fit in type of int.");
         }
         return result;
     }
