@@ -5,7 +5,7 @@ All errors in Elixir implement the _Exception Behaviour_. Just like the _Access 
 - The module will have a `:message` field.
 - The module can be be used with `raise/1` and `raise/2` to raise the intended error
 
-The _Exception Behaviour_ also specifies two required callbacks: `message/1` and `exception/1`. Despite being required, `message/1` is often left to be implemented by the _behavior_, but it is common to implement `exception/1` instead to get custom error messages.
+The _Exception Behaviour_ also specifies two callbacks: `message/1` and `exception/1`. If unimplemented, default implementations will be used. `message/1` transforms the error-struct to a readable message when called by `raise/_`. `exception/1` allows additional context to be added to the message when it is called with `raise/2`
 
 ## Defining an exception
 
@@ -14,21 +14,20 @@ To define an exception from an error module, we use the `defexception` macro fun
 ```elixir
 # Defines a minimal error, with the name `MyError`
 defmodule MyError do
-  defexception [:message]
+  defexception message: "error"
 end
 
 # Defines an error with a customized exception/1 function
 defmodule MyCustomizedError do
-  defexception [:message]
+  defexception message: "custom error"
 
   @impl true
   def exception(value) do
     case value do
       [] ->
-        msg = "service did not get what was expected"
-        %MyCustomizedError{message: msg}
+        %MyCustomizedError{}
       _ ->
-        %MyCustomizedError{message: value}
+        %MyCustomizedError{message: "Alert: " <> value}
     end
   end
 end
@@ -36,17 +35,18 @@ end
 
 ## Using exceptions
 
-Defined errors may be used like a built in error:
+Defined errors may be used like a built in error using either `raise/1` or `raise/2`:
 
 ```elixir
-raise MyError, "an error occured"
-# => ** (MyError) an error occured
+raise MyError
+# => ** (MyError) error
+
+raise MyError, "an error occurred"
+# => ** (MyError) an error occurred
 
 raise MyCustomizedError
-# => ** (MyCustomizedError) service did not get what was expected
+# => ** (MyCustomizedError) "custom error"
 
-raise MyCustomizedError, "an error occured"
-# => ** (MyCustomizedError) an error occured
+raise MyCustomizedError, "a very bad error occurred"
+# => ** (MyCustomizedError) Alert: a very bad error occurred
 ```
-
-If the defined error does not implement `exception/1` a string must be passed along with the message. If `exception/1` is defined, it is not necessary.
