@@ -11,6 +11,12 @@
   "exercises": {
     "concept": [
       {
+        "slug": "arrays",
+        "uuid": "4d271980-ab4b-11ea-bb37-0242ac130002",
+        "concepts": ["arrays"],
+        "prerequisites": ["classes", "booleans", "conditionals", "blocks"]
+      },
+      {
         "slug": "strings",
         "uuid": "e5476046-5289-11ea-8d77-2e728ce88125",
         "concepts": ["strings"],
