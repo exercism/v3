@@ -4,20 +4,8 @@ Using `try..rescue` is a powerful construct for catching errors when they occur 
 
 - the `else` block
   - When the try block succeeds, the result is matched to this block.
-
-```elixir
-try do
-  :a
-rescue
-  _ -> :error
-else
-  :a -> :success
-end
-# => :success
-```
-
 - the `after` block
-  - Whether the try block succeeds or raises, the code in the `after` block is always executed as long as the process is alive at that point.
+  - Whether the try block succeeds or raises, the code in the `after` block is always executed as long as the program is running at that point.
   - The result of the `after` block is not returned to the calling scope.
 
 ```elixir
@@ -35,19 +23,22 @@ end
 
 ## Dynamic dispatch
 
-Because of the way Elixir resolves function calls, it is possible to use an atom that
+When Elixir resolves the function to be invoked, it uses the Module's name to perform a lookup. The lookup can be done dynamically if the have the Module name bound to a variable because a module's name is an atom.
 
-You are familiar with the form of most atoms:
+- You are familiar with the atom type:
 
 ```elixir
 is_atom(:an_atom)
 # => true
 ```
 
-- A Module's name is also an atom:
+- A Module's name is also an atom.
+  - All elixir module atoms are automatically prefixed with `Elixir.`
 
 ```elixir
-is_atom(ModuleName)
+is_atom(Enum)
+# => true
+Enum == Elixir.Enum
 # => true
 ```
 
