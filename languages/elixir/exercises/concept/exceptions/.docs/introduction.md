@@ -49,4 +49,4 @@ raise MyCustomizedError, "an error occured"
 # => ** (MyCustomizedError) an error occured
 ```
 
-If the defined error does not implment `exception/1` a string must be passed along with the message. If `exception/1` is defined, it is not neccessary.
+If the defined error does not implement `exception/1` a string must be passed along with the message. If `exception/1` is defined, it is not necessary.
