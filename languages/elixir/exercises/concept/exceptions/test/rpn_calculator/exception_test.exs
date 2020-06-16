@@ -71,4 +71,36 @@ defmodule RPNCalculator.ExceptionTest do
       end
   end
 
+  describe "divide/2" do
+    @tag :pending
+    test "when divisor is 0, raise" do
+      assert_raise(DivisionByZeroError, "division by zero occurred", fn ->
+        RPNCalculator.Exception.divide(2, 0)
+      end)
+    end
+
+    @tag :pending
+    test "divisor is not 0, don't raise" do
+      RPNCalculator.Exception.divide(4, 2) == 2
+    end
+  end
+
+  describe "add/2" do
+    @tag :pending
+    test "when stack is less than length 2" do
+      assert_raise(StackUnderflowError, "stack underflow occurred, context: when adding", fn ->
+        RPNCalculator.Exception.add([1])
+      end)
+    end
+
+    @tag :pending
+    test "when stack is length 2" do
+      RPNCalculator.Exception.add([3, 6]) == 9
+    end
+
+    @tag :pending
+    test "when stack is more than length 2" do
+      RPNCalculator.Exception.add([9, 8, 7]) == 17
+    end
+  end
 end
