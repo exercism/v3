@@ -1,12 +1,5 @@
 # Continuous Integration
 
-- [Markdown and JSON formatting](#markdown-and-json-formatting)
-- [Concept CI](#concept-ci)
-  - [`concepts.csv`](#conceptscsv)
-
-  - [`concepts.csv`](#conceptscsv)
-  - [CI checks](#ci-checks)
-
 ## Markdown and JSON formatting
 
 The formatting of all Markdown and JSON files is automatically checked against the Markdown and JSON formatting used by [prettier][prettier].
