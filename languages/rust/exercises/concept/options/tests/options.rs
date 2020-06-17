@@ -8,10 +8,7 @@ fn test_reviving_dead_player() {
         mana: Some(0),
         level,
     };
-    let revived_player = dead_player.revive();
-    assert_eq!(revived_player.is_some(), true);
-
-    let revived_player = revived_player.unwrap();
+    let revived_player = dead_player.revive().expect("reviving a dead player must return Some(player)");
     assert_eq!(revived_player.health, 100);
     assert_eq!(revived_player.mana, Some(100));
     assert_eq!(revived_player.level, level);
