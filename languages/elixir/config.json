@@ -163,7 +163,7 @@
       {
         "slug": "exceptions",
         "uuid": "9f698b46-fe8d-4641-a928-bcebfd9678df",
-        "concepts": "exceptions",
+        "concepts": ["exceptions"],
         "prerequisites": ["access-behaviour", "errors"]
       },
       {

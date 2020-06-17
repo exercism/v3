@@ -8,11 +8,11 @@
 
 ## 1. Error for Division by Zero
 
-- implement the module, specifying the message using `defexception`
+- implement the module, specifying the message using a special [built-in macro for defining exceptions][defexception]
 
 ## 2. Error when encountering stack underflow
 
-- implement the module, specifying the message using `defexception`
+- implement the module, specifying the message using a special [built-in macro for defining exceptions][defexception]
 - also implement `exception/1`
 
 ## 3. Write a dividing function
