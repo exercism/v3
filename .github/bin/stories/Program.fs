@@ -25,25 +25,48 @@ let parseStory (fileInfo: FileInfo): Story option =
         | Heading(size = 2; body = [Literal(text = "Story")])::Paragraph(body = [Literal(text=text)])::xs ->
             parse ((name, Some text, implementations)) xs
         | Heading(size = 2; body = [Literal(text = "Implementations")])::ListBlock(items = items)::xs ->
-            let impls =
-                items
-                |> List.choose (fun item ->
-                    match item with
-                    | [Paragraph(body = body)] ->
-                        match body with
-                        | IndirectLink(body = [Literal(text=body)]; key = key)::Literal(text=text)::_ ->
-                            { Track = body
-                              Link = ""
-                              Reference = text.Contains("reference") } |> Some
-                        | IndirectLink(body = [Literal(text=body)])::_ ->
-                            { Track = body
-                              Link = ""
-                              Reference = false } |> Some
-                        | _ ->
-                            None
-                    | _ -> None)
-            parse ((name, story, Some impls)) xs
-        | _ -> (name, story, implementations)
+            
+            for item in items do
+                match item with
+                | [x] ->
+                    match x with
+                    | Span(body = z) ->
+                        match z with
+                        | [IndirectLink(body = [Literal(text=body)]); Literal(text=text)] ->
+                            printfn "single link %A" body
+                        | IndirectLink(body = [Literal(text=body)])::xs ->
+                            printfn "z %A" body
+                    | _ ->
+                        printfn "n"
+                    
+                    printfn "Match x"
+                | Paragraph(body = y)::xs ->
+                    printfn "para"
+                | Paragraph(body = IndirectLink(body = linkBody)::_)::xs ->
+                    printfn "%A" linkBody
+                | _ -> ()
+            
+            printfn "%A" items
+//            let impls =
+//                items
+//                |> List.choose (fun item ->
+//                    match item with
+//                    | [Paragraph(body = body)] ->
+//                        match body with
+//                        | IndirectLink(body = [Literal(text=body)]; key = key)::Literal(text=text)::_ ->
+//                            { Track = body
+//                              Link = ""
+//                              Reference = text.Contains("reference") } |> Some
+//                        | IndirectLink(body = [Literal(text=body)])::_ ->
+//                            { Track = body
+//                              Link = ""
+//                              Reference = false } |> Some
+//                        | _ ->
+//                            None
+//                    | _ -> None)
+            parse ((name, story, Some [])) xs
+        | _::xs -> parse (name, story, implementations) xs
+        | [] -> (name, story, implementations)
     
     match parse state markdown.Paragraphs with
     | (Some name, Some story, _) ->
@@ -61,6 +84,7 @@ let main argv =
     let storyFiles =
         storiesDirectory.EnumerateFiles("*.md")
         |> Seq.filter isStoryFile
+        |> Seq.filter (fun x -> x.Name.Contains("numbers.car-production-line"))
         |> Seq.toList
 
     let stories = List.choose parseStory storyFiles
