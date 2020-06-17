@@ -2,7 +2,7 @@ In the previous exercise, we saw that there are two ways to write comments in Go
 
 ## Documentation comments
 
-In Go, comments play an important role in documenting code. They are used by the tool [godoc][godoc], which extracts these comments to create documentation about Go packages. A documentation comment should be a complete sentence that starts with the name of the thing being described and ends with a period. 
+In Go, comments play an important role in documenting code. They are used by the tool `godoc`, which extracts these comments to create documentation about Go packages. A documentation comment should be a complete sentence that starts with the name of the thing being described and ends with a period. 
 
 Comments should precede packages as well as exported identifiers, e.g. exported functions, methods, package variables, constants, and structs, which you will learn more about in the next exercises.
 
@@ -13,8 +13,6 @@ A package variable can look like this:
 // temperature in degrees Fahrenheit.
 var TemperatureFahrenheit int
 ```
-
-Note that TemperatureFahrenheit is capitalized, which makes this exported identifier a global variable.
 
 ## Package comments
 
@@ -39,7 +37,7 @@ func CelsiusFreezingTemp() int {
 
 ## Golint
 
-[Golint][golint] is a great tool to check for missing comments and other common stylistic issues, which you can read more about at [Effective Go][effective go].
+`golint` is a great tool to check for missing comments and other common stylistic issues.
 
 You can install `golint` on your machine with the following command:
 
@@ -47,15 +45,11 @@ You can install `golint` on your machine with the following command:
 go get -u golang.org/x/lint/golint
 ````
 
-It's a good idea to configure your editor to run `golint` for you, otherwise you can invoke it like this:
+It's a good idea to configure your editor to run `golint` for you. Otherwise, you can invoke it like this:
 
 ```
 golint weather.go
 ```
 
-To use `golint` command globally, make sure that it is in your $PATH.
+To use `golint` command globally, make sure that it is on your $PATH.
 
-
-[godoc]: https://blog.golang.org/godoc
-[golint]: https://github.com/golang/lint
-[effective go]: https://golang.org/doc/effective_go.html
