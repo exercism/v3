@@ -6,7 +6,7 @@ User-defined exceptions are often used to carry extra information such as a mess
 
 By convention exception class names end with "Exception", e.g. `MyTerribleException`.
 
-Whilst using user-defined exceptionss to wrap and enhance third party exceptions is a frequently seen pattern, the general advice is not to use them outside of this use case too liberally in your own code. It is considered an anti-pattern. There are challenges to this view and you can see both sides of the argument in this [Stack Exchange post][se-exceptions].
+Whilst using user-defined exceptions to wrap and enhance third party exceptions is a frequently seen pattern, the general advice is not to use them outside of this use case too liberally in your own code. It is considered an anti-pattern. There are challenges to this view and you can see both sides of the argument in this [Stack Exchange post][se-exceptions].
 
 This [article][create-user-defined-exceptons] is a good introduction to user-defined exceptions.
 
