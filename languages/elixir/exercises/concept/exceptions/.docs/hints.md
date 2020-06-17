@@ -13,7 +13,7 @@
 ## 2. Error when encountering stack underflow
 
 - implement the module, specifying the message using a special [built-in macro for defining exceptions][defexception]
-- also implement `exception/1`
+- You can use one of the Exception Behaviour callbacks to define an exception whose message changes based on the arguments passed to `raise/2`.
 
 ## 3. Write a dividing function
 
