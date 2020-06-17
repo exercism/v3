@@ -1,4 +1,4 @@
-You're working on implementing an RPG game. The player's character is represented by the following:
+You're working on implementing a role-playing game. The player's character is represented by the following:
 
 ```rust
 pub struct Player {
