@@ -14,7 +14,7 @@ try
 }
 catch (Exception ex) when (ex.Message != "")
 {
-    // output the message
+    // output the message when it is not empty
 }
 catch (Exception ex)
 {

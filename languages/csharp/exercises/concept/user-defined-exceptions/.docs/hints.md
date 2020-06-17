@@ -11,7 +11,7 @@
 
 - `try-catch` blocks are discussed [here][try-catch] as well as in the `exceptions` exercise.
 
-## 3. Implement the `TestMultiplication()` method
+## 4. Implement the `TestMultiplication()` method
 
 - This [article][try-catch-when] has an example of the use of `when`.
 

@@ -6,10 +6,10 @@ The `Calculator` class has been provided for you and should not be modified.
 
 Complete the definition of the constructor of `CalculationException` which will need to store (wrap) any exception thrown by the calculator as well as the operands that are being processed at the time the exception is thrown.
 
-## 2. Implement the `Multiply()` method
+## 2. Handle overflow conditions in the calculator and provide enhanced information to the caller
 
 Implement the `CalculatorTestHarness.Multiply()` method, which should call the `Calculator.Multiply()` method of the `Calculator` instance passed to the constructor.
-passing in x and y integer values. If an overflow occurs in the `Calculator.Multiply()` method, it will throw an `OverflowException`. This exception should be caught in the  `CalculatorTestHarness.Multiply()` method and wrapped in a `CalculationException` and the x and y values being passed around should be stored as the exception's operands. The newly created `CalculationException` object should be thrown. You can ignore the value returned by the `Calculator.Multiply()` method if it is successful.
+passing in x and y integer values. If an overflow occurs in the `Calculator.Multiply()` method, it will throw an `OverflowException`. This exception should be caught in the `CalculatorTestHarness.Multiply()` method and wrapped in a `CalculationException` and the x and y values being passed around should be stored as the exception's operands. The newly created `CalculationException` object should be thrown. You can ignore the value returned by the `Calculator.Multiply()` method if it is successful.
 
 ```csharp
 var cth = new CalculatorTestHarness(new Calculator());
@@ -21,24 +21,38 @@ cth2.Multiply(3, 2);
 // => silently exits
 ```
 
-## 3. Implement the `TestMultiplication()` method
+## 3. Test the multiplication operation for valid inputs
 
-Implement the `CalculatorTestHarness.TestMultiplication()` method which takes two integers and calls the `CalculatorTestHarness.Multiply()` method. There are three possible return values:
+Implement the `CalculatorTestHarness.TestMultiplication()` method which takes two integers and calls the `CalculatorTestHarness.Multiply()` method. `"Multiply succeeded"` is returned.
 
-- `"Multiply succeeded"`: returned if the multiplication was successful (no exception was thrown).
-- `"Multiply failed for negative operands. <INNER_EXCEPTION_MESSAGE>"`: returned if a `CalculationException` was thrown by the `CalculatorTestHarness.Multiply()` method and both integers are negative (less than zero).
-- `"Multiply failed for mixed or positive operands. <INNER_EXCEPTION_MESSAGE>"`: returned if a `CalculationException` was thrown by the `CalculatorTestHarness.Multiply()` method and neither of the integers are negative (less than zero). 
+The `<INNER_EXCEPTION_MESSAGE>` placeholder should be replaced with the `CalculationException`'s inner exception's message.
 
- The `<INNER_EXCEPTION_MESSAGE>` placeholder hould be replaced with the `CalculationException`'s inner exception's message.
+```csharp
+var cth = new CalculatorTestHarness(new Calculator());
+cth.Multiply(6, 7);
+// => "Multiply succeeded"
+```
+
+## 4. Test the multiplication operation for negative inputs
+
+Modify the `CalculatorTestHarness.TestMultiplication()` method so that `"Multiply failed for negative operands. <INNER_EXCEPTION_MESSAGE>"`is returned if both integer arguments are negative (less than zero).
+
+The `<INNER_EXCEPTION_MESSAGE>` placeholder should be replaced with the `CalculationException`'s inner exception's message.
+
+```csharp
+var cth = new CalculatorTestHarness(new Calculator());
+cth.TestMultiplication(-2, -Int32.MaxValue);
+// => "Multiply failed for negative operands. " + innerException.Message
+```
+
+## 5. Test the multiplication operation for positive inputs
+
+Modify the `CalculatorTestHarness.TestMultiplication()` method so that `"Multiply failed for mixed or positive operands. <INNER_EXCEPTION_MESSAGE>"` is returned if at least one of the integer arguments is not negative.
+
+The `<INNER_EXCEPTION_MESSAGE>` placeholder should be replaced with the `CalculationException`'s inner exception's message.
 
 ```csharp
 var cth = new CalculatorTestHarness(new Calculator());
 cth.TestMultiplication(Int32.MaxValue, Int32.MaxValue);
 // => "Multiply failed for mixed or positive operands. " + innerException.Message
-
-cth.TestMultiplication(-2, -Int32.MaxValue);
-// => "Multiply failed for negative operands. " + innerException.Message
-
-cth.Multiply(6, 7);
-// => "Multiply succeeded"
 ```
