@@ -7,35 +7,35 @@ modified.
 
 Complete the definition of the constructor of `CalculationException` which will need to store (wrap) any exception thrown by the calculator as well as the operands that are being processed at the time the exception is thrown.
 
-## 2. Implement the `TestMultiplication()` method
+## 2. Implement the `Multiply()` method
 
-The `TestMultiplication()` routine should call the `Calclator.Multiply()` routine
-passing in x and y integer values. The y value is always positive, the x value may be negative. If an overflow occurs then an `OverflowException` will be thrown by the `Calculator`. This exception should be caught in `TestMultiplication` and wrapped in a `CalculationException` and the x and y values being passed around should be stored as the exception's operands. The newly created `CalculationException` object should be thrown. The test has no interest in the value returned by `Multiply` if it is successful.
-
-```csharp
-var cth = new CalculatorTestHarness(new Calculator());
-cth.TestMultiplication(Int32.MaxValue, Int32.MaxValue);
-// => throws an instance of CalculationException
-
-var cth2 = new CalculatorTestHarness(new Calculator());
-cth2.TestMultiplication(3, 2);
-// => silently exits
-```
-
-## 3. Implement the `Multiply()` method
-
-- `Multiply()` takes two integers and calls `TestMultiplication`.
-- If all goes well it returns "Multiply succeeded".
-- If an exception is thrown by `TestMultipliction` this is caught.
-- An error message is returned depending on whether the first of the two operands was negative. See the examples below for exact text.
+The `Multiply()` routine should call the `Calclator.Multiply()` routine
+passing in x and y integer values. If an overflow occurs then an `OverflowException` will be thrown by the `Calculator`. This exception should be caught in `Multiply` and wrapped in a `CalculationException` and the x and y values being passed around should be stored as the exception's operands. The newly created `CalculationException` object should be thrown. The test has no interest in the value returned by `Calculator.Multiply` if it is successful.
 
 ```csharp
 var cth = new CalculatorTestHarness(new Calculator());
 cth.Multiply(Int32.MaxValue, Int32.MaxValue);
-// => "Multiply failed for a positive value. " + innerException.Message
+// => throws an instance of CalculationException
 
-cth.Multiply(-2, Int32.MaxValue);
-// => "Multiply failed for a negative value. " + innerException.Message
+var cth2 = new CalculatorTestHarness(new Calculator());
+cth2.Multiply(3, 2);
+// => silently exits
+```
+
+## 3. Implement the `TestMultiplication()` method
+
+- `TestMultiplication()` takes two integers and calls `Multiply`.
+- If all goes well it returns "Multiply succeeded".
+- If an exception is thrown by `Nultiply` this is caught.
+- An error message is returned depending on whether the first of the two operands was negative. See the examples below for exact text.
+
+```csharp
+var cth = new CalculatorTestHarness(new Calculator());
+cth.TestMultiplication(Int32.MaxValue, Int32.MaxValue);
+// => "Multiply failed for mixed or positive operands. " + innerException.Message
+
+cth.TestMultiplication(-2, -Int32.MaxValue);
+// => "Multiply failed for negative operands. " + innerException.Message
 
 cth.Multiply(6, 7);
 // => "Multiply succeeded. " + innerException.Message
