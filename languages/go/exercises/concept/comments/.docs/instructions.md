@@ -8,7 +8,7 @@ Write a package comment for `package weather` that describes its contents.
 
 Write a comment for the package variable `CurrentCondition`.
 
-Remember, comments for package variables should describe their _content_, not their _purpose_.
+This should tell any user of the package what information the variable stores, and what they can do with it.
 
 ## 3. Document the CurrentLocation variable
 

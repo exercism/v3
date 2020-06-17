@@ -1,22 +1,21 @@
-In the previous exercise, we saw that there are two ways to write comments in Go: single line comments that are preceded by `//`, and multiline comment blocks that are wrapped with `/*` and `*/`.
+In the previous exercise, we saw that there are two ways to write comments in Go: single-line comments that are preceded by `//`, and multiline comment blocks that are wrapped with `/*` and `*/`.
 
 ## Documentation comments
 
-In Go, comments play an important role in documenting code. They are used by the tool `godoc`, which extracts these comments to create documentation about Go packages. A documentation comment should be a complete sentence that starts with the name of the thing being described and ends with a period.
+In Go, comments play an important role in documenting code. They are used by the `godoc` command, which extracts these comments to create documentation about Go packages. A documentation comment should be a complete sentence that starts with the name of the thing being described and ends with a period.
 
-Comments should precede packages as well as exported identifiers, e.g. exported functions, methods, package variables, constants, and structs, which you will learn more about in the next exercises.
+Comments should precede packages as well as exported identifiers, for example exported functions, methods, package variables, constants, and structs, which you will learn more about in the next exercises.
 
-A package variable can look like this:
+A package-level variable can look like this:
 
 ```go
-// TemperatureFahrenheit gives a certain
-// temperature in degrees Fahrenheit.
-var TemperatureFahrenheit int
+// TemperatureFahrenheit gives a certain temperature in degrees Fahrenheit.
+var TemperatureFahrenheit float64
 ```
 
 ## Package comments
 
-Package comments should be written directly before a package and begin with `Pacakge X ...` like this:
+Package comments should be written directly before a package clause (`package x`) and begin with `Package X ...` like this:
 
 ```go
 // Package kelvin provides tools to convert
@@ -26,11 +25,10 @@ package kelvin
 
 ## Function comments
 
-A function comment can look like this:
+A function comment should be written directly before the function declaration, and takes the form `Function X ...` (a full sentence explaining what arguments the function takes, what it does with them, and what its return values mean, ending in a period):
 
 ```go
-// CelsiusFreezingTemp returns the temp
-// at which water freezes in degrees Celsius.
+// CelsiusFreezingTemp returns an integer value equal to the temperature at which water freezes in degrees Celsius.
 func CelsiusFreezingTemp() int {
 	return 0
 }

@@ -1,44 +1,41 @@
-In the previous exercise, we saw that there are two ways to write comments in Go: single line comments that are preceded by `//`, and multiline comment blocks that are wrapped with `/*` and `*/`.
+In the previous exercise, we saw that there are two ways to write comments in Go: single-line comments that are preceded by `//`, and multiline comment blocks that are wrapped with `/*` and `*/`.
 
 ## Comments for documentation
 
-In Go, comments play an important role in documenting code. They are used by the tool [godoc][godoc], which extracts these comments to create documentation about Go packages. A documentation comment should be a complete sentence that starts with the name of the thing being described and ends with a period.
+In Go, comments play an important role in documenting code. They are used by the [godoc][godoc] command, which extracts these comments to create documentation about Go packages (see [pkg.go.dev](pkg.go.dev) for examples). A documentation comment should be a complete sentence that starts with the name of the thing being described and ends with a period.
 
 For comments other than documentation comments, while they may be helpful for maintainers, a [good rule of thumb][less comments] and more sustainable solution is to write code that is easier to understand so that explanatory comments are hopefully not needed.
 
 ## Comments for exported identifiers
 
-Documentation comments should precede packages as well as [exported identifier][exported identifiers]s, e.g. exported functions, methods, package variables, constants, and structs, which you will learn more about in the next exercises. Comments written for packages and exported identifiers are useful for the users who import and use these packages.
+Documentation comments should precede packages as well as [exported identifier][exported identifiers]s, for example exported functions, methods, package variables, constants, and structs, which you will learn more about in the next exercises. Comments written for packages and exported identifiers are useful for the users who import and use these packages.
 
 Note, however, that identifiers (such as variables) that are declared inside of functions and methods are private and do not necessarily require comments for the users of the packages.
 
-A package variable can look like this:
+A package-level variable can look like this:
 
 ```go
-// TemperatureFahrenheit gives a certain
-// temperature in degrees Fahrenheit.
-var TemperatureFahrenheit int
+// TemperatureFahrenheit gives a certain temperature in degrees Fahrenheit.
+var TemperatureFahrenheit float64
 ```
 
-Note that `TemperatureFahrenheit` is capitalized, which makes this exported identifier a global variable.
+Note that `TemperatureFahrenheit` is capitalized, which makes this identifier exported, and thus usable in any code which imports this package.
 
 ## Package comments
 
-Package comments should be written directly before a package and begin with `Pacakge X ...` like this:
+Package comments should be written directly before a package clause (`package x`) and begin with `Package X ...` like this:
 
 ```go
-// Package kelvin provides tools to convert
-// temperatures to and from Kelvin.
+// Package kelvin provides tools to convert temperatures to and from Kelvin.
 package kelvin
 ```
 
 ## Function comments
 
-A function comment can look like this:
+A function comment should be written directly before the function declaration, and takes the form `Function X ...` (a full sentence explaining what arguments the function takes, what it does with them, and what its return values mean, ending in a period):
 
 ```go
-// CelsiusFreezingTemp returns the temp
-// at which water freezes in degrees Celsius.
+// CelsiusFreezingTemp returns an integer value equal to the temperature at which water freezes in degrees Celsius.
 func CelsiusFreezingTemp() int {
 	return 0
 }
@@ -62,7 +59,7 @@ golint weather.go
 
 To use `golint` command globally, make sure that it is in your `$PATH`.
 
-[godoc]: https://blog.golang.org/godoc
+[godoc]: https://golang.org/cmd/go/#hdr-Show_documentation_for_package_or_symbol
 [less comments]: https://dave.cheney.net/practical-go/presentations/qcon-china.html#_dont_comment_bad_code_rewrite_it
 [exported identifiers]: https://www.ardanlabs.com/blog/2014/03/exportedunexported-identifiers-in-go.html
 [golint]: https://github.com/golang/lint

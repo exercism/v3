@@ -1,6 +1,6 @@
 ## General
 
-- [Documentation comments][comment] should be written directly before the thing that they are describing, start with the name of what they are describing, and end with a period.
+- [Documentation comments][comment] should be written directly before the thing that they are describing, start with the name of what they are describing, take the form of a sentence, and end with a period.
 
 ## 1. Document the package
 
