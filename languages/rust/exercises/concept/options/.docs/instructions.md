@@ -25,7 +25,7 @@ dead_player.revive()
 If the `revive` method is called on a Player whose health is 1 or above, then the method should return `None`.
 
 ```rust
-let alive_player = Player { health: 1, mana: 15, levelv 11 };
+let alive_player = Player { health: 1, mana: Some(15), level: 11 };
 alive_player.revive()
 // Returns None
 ```
