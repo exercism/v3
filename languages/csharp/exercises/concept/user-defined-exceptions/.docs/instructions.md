@@ -1,4 +1,4 @@
-While working at _Instruments of Texas_, you are tasked to work on an experimental calculator written in C#. You are building a test harness to verify a number of calculator functions starting with multiplication.  You will see that there is particular concern when the two operands of the multiplication are negative.
+While working at _Instruments of Texas_, you are tasked to work on an experimental calculator written in C#. You are building a test harness to verify a number of calculator functions starting with multiplication. You will see that there is particular concern when the two operands of the multiplication are negative.
 
 The `Calculator` class has been provided for you and should not be
 modified.
@@ -27,7 +27,7 @@ cth2.Multiply(3, 2);
 - `TestMultiplication()` takes two integers and calls `Multiply`.
 - If all goes well it returns "Multiply succeeded".
 - If an exception is thrown by `Nultiply` this is caught.
-- An error message is returned depending on whether the first of the two operands was negative. See the examples below for exact text.
+- The error message returned depends on whether or not both the operands are negative. See the examples below for exact text.
 
 ```csharp
 var cth = new CalculatorTestHarness(new Calculator());
@@ -38,5 +38,5 @@ cth.TestMultiplication(-2, -Int32.MaxValue);
 // => "Multiply failed for negative operands. " + innerException.Message
 
 cth.Multiply(6, 7);
-// => "Multiply succeeded. " + innerException.Message
+// => "Multiply succeeded"
 ```
