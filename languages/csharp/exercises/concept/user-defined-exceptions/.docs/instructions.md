@@ -25,8 +25,6 @@ cth2.Multiply(3, 2);
 
 Implement the `CalculatorTestHarness.TestMultiplication()` method which takes two integers and calls the `CalculatorTestHarness.Multiply()` method. `"Multiply succeeded"` is returned.
 
-The `<INNER_EXCEPTION_MESSAGE>` placeholder should be replaced with the `CalculationException`'s inner exception's message.
-
 ```csharp
 var cth = new CalculatorTestHarness(new Calculator());
 cth.Multiply(6, 7);
