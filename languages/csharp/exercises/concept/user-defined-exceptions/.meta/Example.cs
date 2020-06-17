@@ -1,6 +1,6 @@
 using System;
 
-public class CalculationException_example : Exception
+public class CalculationException : Exception
 {
     public CalculationException(int operand1, int operand2, string message, Exception inner) : base(message, inner)
     {
@@ -12,11 +12,11 @@ public class CalculationException_example : Exception
     public int Operand2 { get; }
 }
 
-public class CalculatorTestHarness_example
+public class CalculatorTestHarness
 {
     private Calculator calculator;
 
-    public CalculatorTestHarness_example(Calculator calculator)
+    public CalculatorTestHarness(Calculator calculator)
     {
         this.calculator = calculator;
     }
@@ -55,7 +55,7 @@ public class CalculatorTestHarness_example
 // Please do not modify the code below.
 // If there is an overflow in the multiplication operation
 // then a System.OverflowException is thrown.
-public class Calculator_example
+public class Calculator
 {
     public int Multiply(int x, int y)
     {
