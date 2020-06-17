@@ -138,7 +138,7 @@
       {
         "slug": "user-defined-exceptions",
         "uuid": "1be577b0-95db-4c09-aff4-ddc68fb7520d",
-        "concepts": ["user-defined-exceptions, exception-filtering"],
+        "concepts": ["user-defined-exceptions", "exception-filtering"],
         "prerequisites": [
           "exceptions",
           "inheritance",

@@ -5,15 +5,15 @@
 
 ## 1. Complete the definition of the user-defined exception `CalculationException`
 
-The constructors of the `Exception` base class are discussed [here][exception-constructors].
+- The constructors of the `Exception` base class are discussed [here][exception-constructors].
 
 ## 2. Implement the `Multiply()` method
 
-`try-catch` blocks are discussd [here][try-catch] as well as in the `exceptions` exercise.
+- `try-catch` blocks are discussed [here][try-catch] as well as in the `exceptions` exercise.
 
 ## 3. Implement the `TestMultiplication()` method
 
-This [article][try-catch-when] has an example of the use of `when`.
+- This [article][try-catch-when] has an example of the use of `when`.
 
 [create-user-defined-exceptions]: https://docs.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions
 [exception-filters]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/when

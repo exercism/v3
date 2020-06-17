@@ -22,12 +22,12 @@ public class CalculatorTestHarness
 
     public string TestMultiplication(int x, int y)
     {
-        throw new NotImplementedException($"Please implement the Multiply() method");
+        throw new NotImplementedException("Please implement the CalculatorTestHarness.TestMultiplication() method");
     }
 
     public void Multiply(int x, int y)
     {
-        throw new NotImplementedException($"Please implement the TestMultiplication() method");
+        throw new NotImplementedException("Please implement the CalculatorTestHarness.Multiply() method");
     }
 }
 

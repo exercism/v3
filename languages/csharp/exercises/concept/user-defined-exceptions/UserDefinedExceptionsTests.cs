@@ -4,7 +4,7 @@ using Xunit;
 public class UserDefinedExceptionsTests
 {
     [Fact]
-    public void Call_Multiply()
+    public void Multiply_with_overflow_throws_calculationexception()
     {
         var cth = new CalculatorTestHarness(new Calculator());
 
@@ -12,7 +12,7 @@ public class UserDefinedExceptionsTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void Call_TestMultiplication_with_negative()
+    public void TestMultiplication_with_negative_overflow()
     {
         var cth = new CalculatorTestHarness(new Calculator());
         Assert.Equal("Multiply failed for negative operands. Arithmetic operation resulted in an overflow.",
@@ -20,7 +20,7 @@ public class UserDefinedExceptionsTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void Call_TestMultiplication_with_positive()
+    public void TestMultiplication_with_positive_overflow()
     {
         var cth = new CalculatorTestHarness(new Calculator());
         Assert.Equal("Multiply failed for mixed or positive operands. Arithmetic operation resulted in an overflow.",
@@ -33,5 +33,4 @@ public class UserDefinedExceptionsTests
         var cth = new CalculatorTestHarness(new Calculator());
         Assert.Equal("Multiply succeeded", cth.TestMultiplication(6, 7));
     }
-
 }

@@ -8,7 +8,8 @@ User-defined exceptions are often used to carry extra information such as a mess
 statement and can take a boolean expression containing any values in scope at the time. If the expression evaluates to true then the block associated with that `catch` statement is executed otherwise the next `catch` statement, if any, is checked.
 
 ```csharp
-try {
+try
+{
     // do stuff
 }
 catch (Exception ex) when (ex.Message != "")

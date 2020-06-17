@@ -12,11 +12,12 @@ This [article][create-user-defined-exceptons] is a good introduction to user-def
 
 ## Exception Filters
 
-`when` is the key word in filtering exceptions. It is placed after the catch
+`when` is the keyword in filtering exceptions. It is placed after the catch
 statement and can take a boolean expression containing any values in scope at the time. They don't just have to be members of the exception itself. If the expression evaluates to true then the block associated with that `catch` statement is executed otherwise the next `catch` statement, if any, is checked.
 
 ```csharp
-try {
+try
+{
     // do stuff
 }
 catch (Exception ex) when (ex.Message != "")
@@ -33,4 +34,4 @@ catch (Exception ex)
 
 [create-user-defined-exceptions]: https://docs.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions
 [exception-filters]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/when
-[se-udfs]: https://softwareengineering.stackexchange.com/questions/189222/are-exceptions-as-control-flow-considered-a-serious-antipattern-if-so-why
+[se-exceptions]: https://softwareengineering.stackexchange.com/questions/189222/are-exceptions-as-control-flow-considered-a-serious-antipattern-if-so-why
