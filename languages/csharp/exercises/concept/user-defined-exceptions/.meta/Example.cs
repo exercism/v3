@@ -1,6 +1,6 @@
 using System;
 
-public class CalculationException : Exception
+public class CalculationException_example : Exception
 {
     public CalculationException(int operand1, int operand2, string message, Exception inner) : base(message, inner)
     {
@@ -12,34 +12,33 @@ public class CalculationException : Exception
     public int Operand2 { get; }
 }
 
-public class CalculatorTestHarness
+public class CalculatorTestHarness_example
 {
     private Calculator calculator;
 
-    public CalculatorTestHarness(Calculator calculator)
+    public CalculatorTestHarness_example(Calculator calculator)
     {
         this.calculator = calculator;
     }
 
-    public string Multiply(int x, int y)
+    public string TestMultiplication(int x, int y)
     {
         try
         {
-            TestMultiplication(x, y);
+            Multiply(x, y);
+            return "Multiply succeeded";
         }
-        catch (CalculationException cex) when (cex.Operand1 < 0)
+        catch (CalculationException cex) when (cex.Operand1 < 0 && cex.Operand2 < 0)
         {
-            return "Multiply failed for a negative value. " + cex.InnerException.Message;
+            return "Multiply failed for negative operands. " + cex.InnerException.Message;
         }
         catch (CalculationException cex)
         {
-            return "Multiply failed for a positive value. " + cex.InnerException.Message;
+            return "Multiply failed for mixed or positive operands. " + cex.InnerException.Message;
         }
-
-        return "Multiply succeeded";
     }
 
-    public void TestMultiplication(int x, int y)
+    public void Multiply(int x, int y)
     {
         try
         {
@@ -52,10 +51,11 @@ public class CalculatorTestHarness
     }
 }
 
+
 // Please do not modify the code below.
 // If there is an overflow in the multiplication operation
 // then a System.OverflowException is thrown.
-public class Calculator
+public class Calculator_example
 {
     public int Multiply(int x, int y)
     {

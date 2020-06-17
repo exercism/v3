@@ -2,7 +2,7 @@ using System;
 
 public class CalculationException : Exception
 {
-    public CalculationException(int operand1, int operand2, string message, Exception inner) : base(message, inner)
+    public CalculationException(int operand1, int operand2, string message, Exception inner)
     // TODO: complete the definition of the constructor
     {
     }
@@ -15,26 +15,27 @@ public class CalculatorTestHarness
 {
     private Calculator calculator;
 
-    public CalculatorTestHarness_template(Calculator_template calculator)
+    public CalculatorTestHarness(Calculator calculator)
     {
         this.calculator = calculator;
     }
 
-    public string Multiply(int x, int y)
+    public string TestMultiplication(int x, int y)
     {
         throw new NotImplementedException($"Please implement the Multiply() method");
     }
 
-    public void TestMultiplication(int x, int y)
+    public void Multiply(int x, int y)
     {
         throw new NotImplementedException($"Please implement the TestMultiplication() method");
     }
 }
 
+
 // Please do not modify the code below.
 // If there is an overflow in the multiplication operation
 // then a System.OverflowException is thrown.
-public class Calculator_template
+public class Calculator
 {
     public int Multiply(int x, int y)
     {
