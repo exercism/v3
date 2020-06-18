@@ -126,9 +126,33 @@ module Output =
           Concept: string
           Description: string }
         
+    let private conceptFile: string -> FileInfo option =
+        let typesDirectory = DirectoryInfo(Path.Combine("reference", "types"))
+        let conceptsDirectory = DirectoryInfo(Path.Combine("reference", "concepts"))
+        let files = Array.append (typesDirectory.GetFiles()) (conceptsDirectory.GetFiles())
+        
+        fun (concept: string) ->
+            let potentialFileNames =
+                [sprintf "%s.md" concept
+                 sprintf "%ss.md" concept
+                 sprintf "%s.md" (concept.TrimEnd('s'))
+                 sprintf "%s.md" (concept.Replace("-", "_"))
+                 sprintf "%ss.md" (concept.Replace("-", "_"))]
+            
+            files
+            |> Seq.tryFind (fun fileInfo -> List.contains fileInfo.Name potentialFileNames)
+        
     let private storyToMarkdownStory (story: Story): MarkdownStory =
         let name = sprintf "[%s](%s)" story.Name story.FileName
-        let concept = sprintf "`%s`" (story.FileName.Split('.').[0])
+
+        let concept =
+            let normalizedConcept = story.FileName.Split('.').[0]
+            match conceptFile normalizedConcept with
+            | Some link ->
+                let relativePath = Path.GetRelativePath(Path.Combine(Directory.GetCurrentDirectory(), "reference", "stories"), link.FullName)
+                sprintf "[`%s`](%s)" normalizedConcept relativePath
+            | None -> sprintf "`%s`" normalizedConcept
+
         let description = Regex.Replace(story.Description.Replace("\n", " "), "\[(.+?)\]\[.+?\]", "$1")
         
         { Name = name; Concept = concept; Description = description }
