@@ -1,83 +1,106 @@
 ﻿open System.IO
 
+open System.Text.RegularExpressions
 open FSharp.Markdown
 open FSharp.Formatting.Common
 
 type Implementation =
     { Track: string
-      Link: string
-      Reference: bool }
+      Exercise: string }
 
 type Story =
     { Name: string
       Description: string
       Implementations: Implementation list }
 
-let parseStory (fileInfo: FileInfo): Story option =
-    let markdown = Markdown.Parse(File.ReadAllText(fileInfo.FullName))
+let private range (span: MarkdownSpan) =
+    match span with
+    | Literal(_, range) -> range
+    | InlineCode(_, range) -> range
+    | Strong(_, range) -> range
+    | Emphasis(_, range) -> range
+    | AnchorLink(_, range) -> range
+    | DirectLink(_, _, _, range) -> range
+    | IndirectLink(_, _, _, range) -> range
+    | DirectImage(_, _, _, range) -> range
+    | IndirectImage(_, _, _, range) -> range
+    | HardLineBreak(range) -> range
+    | LatexInlineMath(_, range) -> range
+    | LatexDisplayMath(_, range) -> range
+    | EmbedSpans(_, range) -> range
+
+let private originalMarkdownCode (markdownCode: string) (spans: MarkdownSpans): string =
+    let ranges = List.choose range spans 
+    let startLine = ranges |> List.map (fun range -> range.StartLine) |> List.min
+    let endLine = ranges |> List.map (fun range -> range.EndLine) |> List.max
     
-    let state = (Option.None, Option.None, Option.None)
+    let code =  markdownCode.Split("\n").[startLine - 1..endLine] |> String.concat "\n"
+    code.Trim()
     
-    let rec parse (name, story, implementations) paragraphs =
-        match paragraphs with
-        | Heading(size = 1; body = [Literal(text=text)])::xs ->
-            parse ((Some text, story, implementations)) xs
-        | Heading(size = 2; body = [Literal(text = "Story")])::Paragraph(body = [Literal(text=text)])::xs ->
-            parse ((name, Some text, implementations)) xs
-        | Heading(size = 2; body = [Literal(text = "Implementations")])::ListBlock(items = items)::xs ->
-            
-            for item in items do
-                match item with
-                | [x] ->
-                    match x with
-                    | Span(body = z) ->
-                        match z with
-                        | [IndirectLink(body = [Literal(text=body)]); Literal(text=text)] ->
-                            printfn "single link %A" body
-                        | IndirectLink(body = [Literal(text=body)])::xs ->
-                            printfn "z %A" body
-                    | _ ->
-                        printfn "n"
-                    
-                    printfn "Match x"
-                | Paragraph(body = y)::xs ->
-                    printfn "para"
-                | Paragraph(body = IndirectLink(body = linkBody)::_)::xs ->
-                    printfn "%A" linkBody
-                | _ -> ()
-            
-            printfn "%A" items
-//            let impls =
-//                items
-//                |> List.choose (fun item ->
-//                    match item with
-//                    | [Paragraph(body = body)] ->
-//                        match body with
-//                        | IndirectLink(body = [Literal(text=body)]; key = key)::Literal(text=text)::_ ->
-//                            { Track = body
-//                              Link = ""
-//                              Reference = text.Contains("reference") } |> Some
-//                        | IndirectLink(body = [Literal(text=body)])::_ ->
-//                            { Track = body
-//                              Link = ""
-//                              Reference = false } |> Some
-//                        | _ ->
-//                            None
-//                    | _ -> None)
-            parse ((name, story, Some [])) xs
-        | _::xs -> parse (name, story, implementations) xs
-        | [] -> (name, story, implementations)
+let private parseName (markdown: MarkdownDocument): string option =
+    let name paragraph =
+        match paragraph with
+        | Heading(size = 1; body = [Literal(text = name)]) -> Some name
+        | _ -> None
     
-    match parse state markdown.Paragraphs with
-    | (Some name, Some story, _) ->
+    Seq.tryPick name markdown.Paragraphs
+    
+let private parseDescription (markdownCode: string) (markdown: MarkdownDocument): string option =
+    let description pair =
+        match pair with
+        | Heading(size = 2; body = [Literal(text = "Story")]), Paragraph(body = body) -> Some body
+        | _ -> None
+    
+    markdown.Paragraphs
+    |> List.pairwise
+    |> List.tryPick description
+    |> Option.map (originalMarkdownCode markdownCode)
+
+let private parseLink (markdown: MarkdownDocument) (key: string): string option =
+    match markdown.DefinedLinks.TryGetValue(key) with
+    | true, (link, _) -> Some link
+    | _ -> None
+    
+let private parseExercise (link: string): string option =
+    let matched = Regex.Match(link, "exercises/concept/(.+?)/")
+    if matched.Success then Some matched.Groups.[1].Value else None 
+
+let private parseImplementation (markdown: MarkdownDocument) (paragraphs: MarkdownParagraphs): Implementation option =
+    match paragraphs with
+    | [Span(body = IndirectLink(body = [Literal(text=text)]; key = key)::_)] ->
+        parseLink markdown key
+        |> Option.bind parseExercise
+        |> Option.map (fun exercise -> { Track = text; Exercise = exercise })
+    | [Span(body = [DirectLink(body = [Literal(text=text)]; link = link)])] ->
+        parseExercise link
+        |> Option.map (fun exercise -> { Track = text; Exercise = exercise })
+    | _ -> None
+    
+let private parseImplementations (markdown: MarkdownDocument): Implementation list option =
+    let description pair =
+        match pair with
+        | Heading(size = 2; body = [Literal(text = "Implementations")]), ListBlock(items = items) -> Some items
+        | _ -> None
+    
+    markdown.Paragraphs
+    |> List.pairwise
+    |> List.tryPick description
+    |> Option.map (List.choose (parseImplementation markdown))
+
+let private parseStory (fileInfo: FileInfo): Story option =
+    let markdownCode = File.ReadAllText(fileInfo.FullName)
+    let markdown = Markdown.Parse(markdownCode)
+
+    match parseName markdown, parseDescription markdownCode markdown, parseImplementations markdown with
+    | Some name, Some description, Some implementations ->        
         { Name = name
-          Description = story
-          Implementations = [] } |> Some
-    | _ ->
-        None
+          Description = description
+          Implementations = implementations } |> Some
+    | _ -> None
 
 [<EntryPoint>]
-let main argv =
+let main _ =
+    
     let isStoryFile (fileInfo: FileInfo) = fileInfo.Name <> "README.md" && fileInfo.Name <> "_sidebar.md"
     
     let storiesDirectory = DirectoryInfo(Path.Combine("reference", "stories"))
@@ -88,7 +111,6 @@ let main argv =
         |> Seq.toList
 
     let stories = List.choose parseStory storyFiles
-    
-    
-    printfn "Hello World from F#!"
-    0 // return an integer exit code
+        
+    printfn "%A" stories
+    0
