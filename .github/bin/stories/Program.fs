@@ -1,6 +1,7 @@
 ﻿open System.IO
 
 open System.Text
+open System.Text.Json
 open System.Text.RegularExpressions
 open FSharp.Markdown
 open FSharp.Formatting.Common
@@ -9,14 +10,19 @@ type Implementation =
     { Track: string
       Slug: string
       Exercise: string }
+    
+type Concept =
+    { File: FileInfo option
+      Name: string }
 
 type Story =
-    { FileName: string
+    { File: FileInfo
       Name: string
       Description: string
+      Concept: Concept
       Implementations: Implementation list }
     
-module Input =
+module Parser =
     let private range (span: MarkdownSpan) =
         match span with
         | Literal(_, range) -> range
@@ -90,16 +96,39 @@ module Input =
         |> List.pairwise
         |> List.tryPick description
         |> Option.map (List.choose (parseImplementation markdown))
+        
+    let private parseConcept: FileInfo -> Concept =
+        let typesDirectory = DirectoryInfo(Path.Combine("reference", "types"))
+        let conceptsDirectory = DirectoryInfo(Path.Combine("reference", "concepts"))
+        let referenceFiles = Array.append (typesDirectory.GetFiles()) (conceptsDirectory.GetFiles())
+        
+        fun (fileInfo: FileInfo) ->
+            let concept = fileInfo.Name.Split('.').[0]
+        
+            let potentialFileNames =
+                [sprintf "%s.md" concept
+                 sprintf "%ss.md" concept
+                 sprintf "%s.md" (concept.TrimEnd('s'))
+                 sprintf "%s.md" (concept.Replace("-", "_"))
+                 sprintf "%ss.md" (concept.Replace("-", "_"))]
+            
+            let conceptFile =
+                referenceFiles
+                |> Seq.tryFind (fun fileInfo -> List.contains fileInfo.Name potentialFileNames)
+            
+            { File = conceptFile
+              Name = concept }
 
     let private parseStory (fileInfo: FileInfo): Story option =
         let markdownCode = File.ReadAllText(fileInfo.FullName)
         let markdown = Markdown.Parse(markdownCode)
 
         match parseName markdown, parseDescription markdownCode markdown, parseImplementations markdown with
-        | Some name, Some description, Some implementations ->        
-            { FileName = fileInfo.Name
+        | Some name, Some description, Some implementations ->
+            { File = fileInfo
               Name = name
               Description = description
+              Concept = parseConcept fileInfo
               Implementations = implementations } |> Some
         | _ -> None
 
@@ -113,8 +142,8 @@ module Input =
     let parseStories (storiesDirectory: DirectoryInfo): Story list =
         storyFiles storiesDirectory
         |> List.choose parseStory
-
-module Output =
+    
+module Markdown =
     
     type MarkdownStoryImplementation =
         { Name: string
@@ -126,32 +155,15 @@ module Output =
           Concept: string
           Description: string }
         
-    let private conceptFile: string -> FileInfo option =
-        let typesDirectory = DirectoryInfo(Path.Combine("reference", "types"))
-        let conceptsDirectory = DirectoryInfo(Path.Combine("reference", "concepts"))
-        let files = Array.append (typesDirectory.GetFiles()) (conceptsDirectory.GetFiles())
-        
-        fun (concept: string) ->
-            let potentialFileNames =
-                [sprintf "%s.md" concept
-                 sprintf "%ss.md" concept
-                 sprintf "%s.md" (concept.TrimEnd('s'))
-                 sprintf "%s.md" (concept.Replace("-", "_"))
-                 sprintf "%ss.md" (concept.Replace("-", "_"))]
-            
-            files
-            |> Seq.tryFind (fun fileInfo -> List.contains fileInfo.Name potentialFileNames)
-        
     let private storyToMarkdownStory (story: Story): MarkdownStory =
-        let name = sprintf "[%s](%s)" story.Name story.FileName
+        let name = sprintf "[%s](%s)" story.Name story.File.Name
 
         let concept =
-            let normalizedConcept = story.FileName.Split('.').[0]
-            match conceptFile normalizedConcept with
-            | Some link ->
-                let relativePath = Path.GetRelativePath(Path.Combine(Directory.GetCurrentDirectory(), "reference", "stories"), link.FullName)
-                sprintf "[`%s`](%s)" normalizedConcept relativePath
-            | None -> sprintf "`%s`" normalizedConcept
+            match story.Concept.File with
+            | Some conceptFile ->
+                let relativePath = Path.GetRelativePath(Path.Combine("reference", "stories"), conceptFile.FullName)
+                sprintf "[`%s`](%s)" story.Concept.Name relativePath
+            | None -> sprintf "`%s`" story.Concept.Name
 
         let description = Regex.Replace(story.Description.Replace("\n", " "), "\[(.+?)\]\[.+?\]", "$1")
         
@@ -164,7 +176,7 @@ module Output =
 
     let private storyToMarkdownStoryImplementation (story: Story): MarkdownStoryImplementation list =
         let implementationToMarkdownStory (implementation: Implementation) =
-            let name = sprintf "[%s](%s)" story.Name story.FileName
+            let name = sprintf "[%s](%s)" story.Name story.File.Name
             let track = sprintf "[%s](../../languages/%s/README.md)" implementation.Track implementation.Slug
             let exercise = sprintf "[%s](../../languages/%s/exercises/concept/%s/.docs/instructions.md)" implementation.Exercise implementation.Slug implementation.Exercise
             
@@ -235,15 +247,73 @@ module Output =
         |> appendImplementationsToMarkdown stories
         |> string
 
-    let writeAsMarkdown (storiesDirectory: DirectoryInfo) (stories: Story list): unit =
+    let writeStories (storiesDirectory: DirectoryInfo) (stories: Story list): unit =
         let markdown = renderToMarkdown stories
-        File.WriteAllText(Path.Combine(storiesDirectory.FullName, "stories.md"), markdown) 
+        File.WriteAllText(Path.Combine(storiesDirectory.FullName, "stories.md"), markdown)
+
+module Json =
+    
+    [<CLIMutable>]
+    type JsonImplementation =
+        { Track: string
+          Slug: string
+          Exercise: string
+          Url: string }
+    
+    [<CLIMutable>]
+    type JsonConcept =
+        { Url: string
+          Name: string }
+    
+    [<CLIMutable>]
+    type JsonStory =
+        { Url: string
+          Name: string
+          Description: string
+          Concept: JsonConcept
+          Implementations: JsonImplementation list }
+        
+    let private implementationToJsonImplementation (implementation: Implementation) : JsonImplementation =
+        { Track = implementation.Track
+          Slug = implementation.Slug
+          Exercise = implementation.Exercise
+          Url = sprintf "https://github.com/exercism/v3/blob/master/languages/%s/exercises/concept/%s/.docs/instructions.md" implementation.Slug implementation.Exercise }
+
+    let private conceptToJsonConcept (concept: Concept): JsonConcept =
+        { Name = concept.Name
+          Url =
+              concept.File
+              |> Option.map (fun file ->
+                  let relativePath = Path.GetRelativePath("reference", file.FullName)
+                  sprintf "https://github.com/exercism/v3/blob/master/reference/%s" relativePath)
+              |> Option.toObj }
+    
+    let private storyToJsonStory (story: Story): JsonStory =
+        { Url = sprintf "https://github.com/exercism/v3/blob/master/reference/stories/%s" story.File.Name
+          Name = story.Name
+          Description = story.Description
+          Concept = conceptToJsonConcept story.Concept
+          Implementations = List.map implementationToJsonImplementation story.Implementations }
+    
+    let private renderToJson (stories: Story list): string =
+        let jsonStories = List.map storyToJsonStory stories
+        
+        let options = JsonSerializerOptions()
+        options.WriteIndented <- true
+        options.PropertyNamingPolicy <- JsonNamingPolicy.CamelCase
+        
+        JsonSerializer.Serialize(jsonStories, options)
+    
+    let writeStories (storiesDirectory: DirectoryInfo) (stories: Story list): unit =
+        let json = renderToJson stories
+        File.WriteAllText(Path.Combine(storiesDirectory.FullName, "stories.json"), json)
 
 [<EntryPoint>]
 let main _ =
     let storiesDirectory = DirectoryInfo(Path.Combine("reference", "stories"))
+    let stories = Parser.parseStories storiesDirectory
     
-    Input.parseStories storiesDirectory
-    |> Output.writeAsMarkdown storiesDirectory
+    Markdown.writeStories storiesDirectory stories
+    Json.writeStories storiesDirectory stories
 
     0
