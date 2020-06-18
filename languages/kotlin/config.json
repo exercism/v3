@@ -7,10 +7,7 @@
       {
         "slug": "functions-basic",
         "uuid": "71097bc2-1fea-4261-a04a-7c43c41ebe06",
-        "concepts": [
-          "function-declaration",
-          "function-default-arguments"
-        ],
+        "concepts": ["function-declaration", "function-default-arguments"],
         "prerequisites": []
       }
     ],
@@ -23,4 +20,3 @@
   "solution_pattern": "reference",
   "active": true
 }
-
