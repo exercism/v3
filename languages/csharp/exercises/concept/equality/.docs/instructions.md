@@ -4,7 +4,7 @@ In all occurrences the eye color parameter is guaranteed to be non-null.
 
 ## 1. Authenticate the system administrator
 
-Despite your protests the system administrator insists on having a built-in identity during acceptance testing so that can always be authenticated.
+Despite your protests the system administrator insists on having a built-in identity during acceptance testing so that they can always be authenticated.
 
 The admin's email is admin@exerc.ism. They have green eyes and a philtrum with a width of 0.9.
 
@@ -17,6 +17,7 @@ var authenticator = new Authenticator();
 authenticator.IsAdmin(new Identity("admin@exerc.ism", new FacialFeatures("green", 0.9m)));
 // => true
 authenticator.IsAdmin(new Identity("admin@thecompetition.com", new FacialFeatures("green", 0.9m)));
+// => false
 ```
 
 ## 2. Prevent invalid identities being authenticated
@@ -31,17 +32,17 @@ authenticator.IsRegistered(new Identity("alice@thecompetition.com", new FacialFe
 
 ## 3. Register new identities
 
-Implement `Authenticator.Register()` which stores an identity on the authenticator itself such that calls to `IsRegistered()` will return true for this identity.
+Implement `Authenticator.Register()` which stores an identity on the authenticator itself such that calls to `IsRegistered()` will return true for this identity. If the identity has already been registered then `false` is returned otherwise `true`.
 
 ```csharp
 var authenticator = new Authenticator();
-authenticator.Register(new Identity("alice@thecompetition.com", new FacialFeatures("blue", 0.9m)));
-authenticator.IsRegistered(new Identity("alice@thecompetition.com", new FacialFeatures("blue", 0.9m)));
+authenticator.Register(new Identity("tunde@thecompetition.com", new FacialFeatures("blue", 0.9m)));
 // => true
-
-var authenticator = new Authenticator();
-authenticator.IsRegistered(new Identity("alice@thecompetition.com", new FacialFeatures("blue", 0.8m))));
+authenticator.IsRegistered(new Identity("tunde@thecompetition.com", new FacialFeatures("blue", 0.9m)));
+// => true
+authenticator.Register(new Identity("tunde@thecompetition.com", new FacialFeatures("blue", 0.9m)));
 // => false
+
 ```
 
 ## 4. Add diagnostics to detect multiple attempts to authenticate

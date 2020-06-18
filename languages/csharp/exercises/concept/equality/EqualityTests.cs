@@ -34,8 +34,8 @@ public class EqualityTests
     public void Register_existing_identity()
     {
         var authenticator = new Authenticator();
-        authenticator.Register(new Identity("alice@thecompetition.com", new FacialFeatures("blue", 0.9m)));
-        Assert.True(authenticator.Register(new Identity("tunde@thecompetition.com", new FacialFeatures("blue", 0.9m))));
+        authenticator.Register(new Identity("tunde@thecompetition.com", new FacialFeatures("blue", 0.9m)));
+        Assert.False(authenticator.Register(new Identity("tunde@thecompetition.com", new FacialFeatures("blue", 0.9m))));
     }
 
     [Fact/*(Skip = "Remove this Skip property to run this test")*/]
