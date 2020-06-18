@@ -12,7 +12,7 @@
 ## 2. Attempt to write to the file
 
 - Make use of the try-rescue construct
-- Review the IO module's [`write/2`][io-write] function
+- There is [function][io-write] in the `IO` module that allows you to write to an `io handler`
 - You can use the `rescue` block to pattern match on the error and return the error tuple
 - You can use the `else` block to pattern match on the return of a successful write.
 

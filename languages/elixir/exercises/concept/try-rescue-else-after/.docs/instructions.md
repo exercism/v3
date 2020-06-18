@@ -17,7 +17,7 @@ RPNCalculator.Output.write(resource, "file_to_be_written", "1 4 +")
 
 Now that you've opened the file, attempt to write to it using `IO.write/2`.
 
-This write attempt may raise an error, rescue from the error returning an error-tuple:
+Extend the `write/3` function to perform this action.  The write action attempt may raise an error, rescue from the error returning an error-tuple:
 
 ```elixir
 RPNCalculator.Output.write(resource, "bad_file", "1 4 +")
@@ -26,6 +26,6 @@ RPNCalculator.Output.write(resource, "bad_file", "1 4 +")
 
 ## 3. Close the file
 
-It is a good practice to always try to release resources that you have opened, release the file opened by closing it, even if the function raises an error.
+It is a good practice to always try to release resources that you have opened, release the file opened by closing it, even if the function raises an error.  Extend the `write/3` function to call the resource's close function to close the _io handler_.
 
 You can assume `resource` will always be an atom that represents a module which has a `close/1` function which takes a _handler_.
