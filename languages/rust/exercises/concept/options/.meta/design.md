@@ -1,6 +1,7 @@
-## Learning Objectives 
+## Learning Objectives
 
 After completing the exercise, the user should:
+
 - Know what the `Option` keyword refers to.
 - Know that the `Some` and `None` keywords refer to the variants of the `Option` enum.
 - Understand that `Option`s in Rust are the closest analog to null pointers in other languages.
@@ -14,7 +15,8 @@ After completing the exercise, the user should:
 ## Concepts
 
 The concepts this exercise unlocks are:
-- Know what the `Option`, `Some`, and `None` keywords refer to. 
+
+- Know what the `Option`, `Some`, and `None` keywords refer to.
 - Know that `Option`s are often paired with pattern matching.
 - Know that `Option`s are Rust's analog of null pointers in other languages.
 
@@ -39,6 +41,7 @@ Take a look at the list of methods implemented on the `Option` type:
 - [https://doc.rust-lang.org/std/option/enum.Option.html](https://doc.rust-lang.org/std/option/enum.Option.html)
 
 Some commonly used methods on `Option`s include:
+
 - `is_some` to check if an `Option` is of the `Some` variant
 - `is_none` to check if an `Option` is of the `None` variant
 - `map` in order to apply function to a value contained in an `Option`
