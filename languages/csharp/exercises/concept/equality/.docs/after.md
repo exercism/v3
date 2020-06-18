@@ -9,13 +9,12 @@
 - equality and inheritance - [SO](https://stackoverflow.com/questions/22154799/equals-method-inheritance-confusion)
 - Bill Wagner's NDC 2020 talk discusses sn approach to `Equals()` with syntax that is more modern.
 
-
-- [Equality][equality]: how equality comparisons work in C#, including reference- and value type equality.
-- [Equatable][equatable]: describes how to make a reference type use structural equality using `IEquatable<T>`.
-- [Equality comparer][equality-comparer]: describes the `IEqualityComparer<T>` interface.
-- [HashCode][hash-code]: how to create and combine hash codes
-- [GetHashCode][get-hash-code]: API documentation
-- [HashSet][hash-set]: API documentation
+* [Equality][equality]: how equality comparisons work in C#, including reference- and value type equality.
+* [Equatable][equatable]: describes how to make a reference type use structural equality using `IEquatable<T>`.
+* [Equality comparer][equality-comparer]: describes the `IEqualityComparer<T>` interface.
+* [HashCode][hash-code]: how to create and combine hash codes
+* [GetHashCode][get-hash-code]: API documentation
+* [HashSet][hash-set]: API documentation
 
 [equality]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/equality-comparisons
 [equatable]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type
