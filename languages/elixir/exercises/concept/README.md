@@ -27,8 +27,9 @@ These are the concept exercises that have currently been implemented, as well as
 | `numbers`                   | `integers`, `floating-point-numbers`                       | `basics`                                                                                       |
 | `strings`                   | `strings`                                                  | `lists`, `pattern-matching`                                                                    |
 | `structs`                   | `structs`, `static-access-operator`                        | `maps`, `multiple-clause-functions`, `pattern-matching`, `strings`, `nil`, `default-arguments` |
-| `tuples`                    | `tuples`, `pattern-matching`                               | `multiple-clause-functions`, `floating-point-numbers`, `atoms`                                 |
 | `recursion`                 | `recursion`                                                | `lists`, `pattern-matching`, `multiple-clause-functions`, `guards`                             |
+| `try-rescue-else-after`     | `try-rescue-else-after`                                    | `io`, `try-rescue`                                                                             |
+| `tuples`                    | `tuples`, `pattern-matching`                               | `multiple-clause-functions`, `floating-point-numbers`, `atoms`                                 |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse.
 

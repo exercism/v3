@@ -177,6 +177,12 @@
           "if-conditional",
           "default-arguments"
         ]
+      },
+      {
+        "slug": "try-rescue-else-after",
+        "uuid": "68a8f721-5db4-4b31-95c8-fa6c38f64327",
+        "concepts": ["try-rescue-else-after"],
+        "prerequisites": ["io", "try-rescue"]
       }
     ],
     "practice": []
