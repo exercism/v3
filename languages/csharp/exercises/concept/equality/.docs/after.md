@@ -6,6 +6,7 @@
 - mention difficulties with floats and mention floating point after.md [here](https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md).
 - mention primitives
 - equality operators
+- equality and inheritance - [SO](https://stackoverflow.com/questions/22154799/equals-method-inheritance-confusion)
 
 - [Equality][equality]: how equality comparisons work in C#, including reference- and value type equality.
 - [Equatable][equatable]: describes how to make a reference type use structural equality using `IEquatable<T>`.
