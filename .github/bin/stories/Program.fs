@@ -116,12 +116,29 @@ module Input =
 
 module Output =
     
-    type MarkdownStory =
+    type MarkdownStoryImplementation =
         { Name: string
           Track: string
           Exercise: string }
+        
+    type MarkdownStory =
+        { Name: string
+          Concept: string
+          Description: string }
+        
+    let private storyToMarkdownStory (story: Story): MarkdownStory =
+        let name = sprintf "[%s](%s)" story.Name story.FileName
+        let concept = sprintf "`%s`" (story.FileName.Split('.').[0])
+        let description = Regex.Replace(story.Description.Replace("\n", " "), "\[(.+?)\]\[.+?\]", "$1")
+        
+        { Name = name; Concept = concept; Description = description }
+    
+    let private storiesToMarkdownStories (stories: Story list): MarkdownStory list =
+        stories
+        |> List.map storyToMarkdownStory
+        |> List.sort
 
-    let private storyToMarkdownStory (story: Story): MarkdownStory list =
+    let private storyToMarkdownStoryImplementation (story: Story): MarkdownStoryImplementation list =
         let implementationToMarkdownStory (implementation: Implementation) =
             let name = sprintf "[%s](%s)" story.Name story.FileName
             let track = sprintf "[%s](../../languages/%s/README.md)" implementation.Track implementation.Slug
@@ -132,27 +149,22 @@ module Output =
         story.Implementations
         |> List.map implementationToMarkdownStory
     
-    let private storiesToMarkdownStory (stories: Story list): MarkdownStory list =
+    let private storiesToMarkdownStoryImplementation (stories: Story list): MarkdownStoryImplementation list =
         stories
-        |> List.collect storyToMarkdownStory
+        |> List.collect storyToMarkdownStoryImplementation
         |> List.sort
-
-    let private storiesToMarkdown (stories: MarkdownStory list): string =
-        let columnLength column = stories |> List.map column |> List.map String.length |> List.max            
+        
+    let private appendImplementationsToMarkdown (stories: Story list) (markdown: StringBuilder): StringBuilder =
+        let markdownStoryImplementations = storiesToMarkdownStoryImplementation stories
+        
+        let columnLength column = markdownStoryImplementations |> List.map column |> List.map String.length |> List.max            
         let nameColumnLength = columnLength (fun story -> story.Name)
         let trackColumnLength = columnLength (fun story -> story.Track)
         let exerciseColumnLength = columnLength (fun story -> story.Exercise)
-
-        let markdown = StringBuilder()
         
         let renderLine (nameColumn: string) (trackColumn: string) (exerciseColumn: string) =
             markdown.AppendFormat(sprintf "| {0,-%d} | {1,-%d} | {2,-%d} |" nameColumnLength trackColumnLength exerciseColumnLength, nameColumn, trackColumn, exerciseColumn) |> ignore
             markdown.AppendLine() |> ignore
-        
-        markdown.AppendLine("# Stories") |> ignore
-        markdown.AppendLine() |> ignore
-        markdown.AppendLine("These are the stories currently implemented.") |> ignore
-        markdown.AppendLine() |> ignore
         
         markdown.AppendLine("## Implementations") |> ignore
         markdown.AppendLine() |> ignore
@@ -162,16 +174,45 @@ module Output =
         renderLine "Story" "Track" "Exercise"
         renderLine (System.String('-', nameColumnLength)) (System.String('-', trackColumnLength)) (System.String('-', exerciseColumnLength))
 
-        for story in stories do
-            renderLine story.Name story.Track story.Exercise
+        for markdownStoryImplementation in markdownStoryImplementations do
+            renderLine markdownStoryImplementation.Name markdownStoryImplementation.Track markdownStoryImplementation.Exercise
+            
+        markdown
+            
+    let private appendStoriesMarkdown (stories: Story list) (markdown: StringBuilder): StringBuilder =
+        let markdownStories = storiesToMarkdownStories stories
+        
+        let columnLength column = markdownStories |> List.map column |> List.map String.length |> List.max
+        
+        let nameColumnLength = columnLength (fun story -> story.Name)
+        let conceptColumnLength = columnLength (fun story -> story.Concept)
+        let descriptionColumnLength = columnLength (fun story -> story.Description)
+        
+        markdown.AppendLine("# Stories") |> ignore
+        markdown.AppendLine() |> ignore
+        markdown.AppendLine("These are the stories currently implemented.") |> ignore
+        markdown.AppendLine() |> ignore
+        
+        let renderLine (nameColumn: string) (conceptColumn: string) (descriptionColumn: string) =
+            markdown.AppendFormat(sprintf "| {0,-%d} | {1,-%d} | {2,-%d} |" nameColumnLength conceptColumnLength descriptionColumnLength, nameColumn, conceptColumn, descriptionColumn) |> ignore
+            markdown.AppendLine() |> ignore
+        
+        renderLine "Name" "Concept" "Description"
+        renderLine (System.String('-', nameColumnLength)) (System.String('-', conceptColumnLength)) (System.String('-', descriptionColumnLength))
 
-        markdown.ToString()
+        for markdownStory in markdownStories do
+            renderLine markdownStory.Name markdownStory.Concept markdownStory.Description
+            
+        markdown
+
+    let private renderToMarkdown (stories: Story list): string =
+        StringBuilder()
+        |> appendStoriesMarkdown stories
+        |> appendImplementationsToMarkdown stories
+        |> string
 
     let writeAsMarkdown (storiesDirectory: DirectoryInfo) (stories: Story list): unit =
-         
-        let markdown =
-            storiesToMarkdownStory stories
-            |> storiesToMarkdown 
+        let markdown = renderToMarkdown stories
         File.WriteAllText(Path.Combine(storiesDirectory.FullName, "stories.md"), markdown) 
 
 [<EntryPoint>]
