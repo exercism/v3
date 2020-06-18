@@ -97,7 +97,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - [Enumeration: for loop][enumeration]
   - [Enumeration: foreach loop][enumeration]
 - Exceptions 📖 (issue [#966](https://github.com/exercism/v3/issues/966))
-  - User-defined exceptions 📖 (issue [#1141](https://github.com/exercism/v3/issues/1141))
+  - User-defined exceptions ✅ (exercise [`user-defined-exceptions`][exercise-user-defined-exceptions])
 - Null ✅ (exercise [`nullability`][exercise-nullability])
   - Null-coalescing operator ✅ (exercise [`nullability`][exercise-nullability])
   - Null-conditional operator ✅ (exercise [`nullability`][exercise-nullability])
@@ -167,6 +167,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Tasks
 - Time 📖 (issue [#1644](https://github.com/exercism/v3/issues/1644))
 - [Tuples][tuple] 📖 (issue [#963](https://github.com/exercism/v3/issues/963))
+- operator overloads
 
 ## Concept interpretation
 
@@ -263,3 +264,4 @@ The concept exercises use the following concepts:
 [exercise-numbers]: ../exercises/concept/numbers/.meta/design.md
 [exercise-properties]: ../exercises/concept/properties/.meta/design.md
 [exercise-strings]: ../exercises/concept/strings/.meta/design.md
+[exercise-user-defined-exceptions]: ../exercises/concept/user-defined-exceptions/.meta/design.md
