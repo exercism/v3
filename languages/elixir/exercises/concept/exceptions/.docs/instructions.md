@@ -28,7 +28,7 @@ raise StackUnderflowError, "when dividing"
 Implement the `divide/1` function which takes a stack _(list of numbers)_ and:
 
 - raises _stack underflow_ when the stack does not contain enough numbers
-- raises _division by zero_ when the divisor is 0
+- raises _division by zero_ when the divisor is 0 (note the stack of numbers is stored in the reverse order)
 - performs the division when no errors are raised
 
 ```elixir

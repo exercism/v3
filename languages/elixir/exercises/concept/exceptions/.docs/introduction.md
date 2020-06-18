@@ -35,18 +35,6 @@ end
 
 ## Using exceptions
 
-Defined errors may be used like a built in error using either `raise/1` or `raise/2`:
-
-```elixir
-raise MyError
-# => ** (MyError) error
-
-raise MyError, "an error occurred"
-# => ** (MyError) an error occurred
-
-raise MyCustomizedError
-# => ** (MyCustomizedError) "custom error"
-
-raise MyCustomizedError, "a very bad error occurred"
-# => ** (MyCustomizedError) Alert: a very bad error occurred
-```
+Defined errors may be used like a built in error using either `raise/1` or `raise/2`.
+- `raise/1` raises a specific error by its module name, or, if the argument is a string, it will raise a `RuntimeError` with the string as the message.
+- `raise/2` raises a specific error by its module name, and accepts an attributes argument which is used to obtain the error with the appropriate message.
