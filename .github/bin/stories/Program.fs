@@ -98,19 +98,19 @@ let private parseStory (fileInfo: FileInfo): Story option =
           Implementations = implementations } |> Some
     | _ -> None
 
-[<EntryPoint>]
-let main _ =
-    
+let private storyFiles () =
     let isStoryFile (fileInfo: FileInfo) = fileInfo.Name <> "README.md" && fileInfo.Name <> "_sidebar.md"
-    
-    let storiesDirectory = DirectoryInfo(Path.Combine("reference", "stories"))
-    let storyFiles =
-        storiesDirectory.EnumerateFiles("*.md")
-        |> Seq.filter isStoryFile
-        |> Seq.filter (fun x -> x.Name.Contains("numbers.car-production-line"))
-        |> Seq.toList
 
-    let stories = List.choose parseStory storyFiles
+    let storiesDirectory = DirectoryInfo(Path.Combine("reference", "stories"))    
+    storiesDirectory.EnumerateFiles("*.md")
+    |> Seq.filter isStoryFile
+    |> Seq.toList
+
+[<EntryPoint>]
+let main _ =        
+    let stories =
+        storyFiles()
+        |> List.choose parseStory
         
     printfn "%A" stories
     0
