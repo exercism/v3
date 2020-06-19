@@ -1,10 +1,10 @@
 In the previous exercise, we saw that there are two ways to write comments in Go: single-line comments that are preceded by `//`, and multiline comment blocks that are wrapped with `/*` and `*/`.
 
-## Comments for documentation
+## Documentation comments
 
 In Go, comments play an important role in documenting code. They are used by the [godoc][godoc] command, which extracts these comments to create documentation about Go packages (see [pkg.go.dev][go packages] for examples). A documentation comment should be a complete sentence that starts with the name of the thing being described and ends with a period.
 
-For comments other than documentation comments, while they may be helpful for maintainers, a [good rule of thumb][less comments] and more sustainable solution is to write code that is easier to understand so that explanatory comments are hopefully not needed.
+Documentation comments are about `what` the entity does and contains, whereas other types of comments such as code comments are about `why` something is done. The `why` helps others and future you understand what the reason behind a particular piece of code. However, if the `why` feels obvious, the code comment is not necessary. A [good rule of thumb][less comments] and more sustainable solution is to write code that is easier to understand so that explanatory comments are hopefully not needed.
 
 ## Comments for exported identifiers
 
