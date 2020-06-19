@@ -1,6 +1,9 @@
 # Update the stories summary
 dotnet run -p .github/bin/stories
 
+# Format the documents
+npx prettier@2.0.5 --write reference/stories/README.md reference/stories/stories.json
+
 # Add the updated story summary files
 git add reference/stories/README.md
 git add reference/stories/stories.json
