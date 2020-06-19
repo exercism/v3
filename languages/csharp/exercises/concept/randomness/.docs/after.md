@@ -17,10 +17,9 @@ There are 3 patterns for implementing the last point:
 - You can inherit from `System.Random` and override the `Sampple()` method.
 - You can encapsulate an instance of `System.Random` in a class of your own, for example, [to generate booleans][random-use-cases].
 
-It is [recommended[random-thread-safety] that you instantiate `System.Random` as a static member.  But, note that it is not thread safe.
+It is [recommended[random-thread-safety] that you instantiate `System.Random` as a static member. But, note that it is not thread safe.
 
-You are advised not to use `System.Random` for crypto or security.  See [this provider][[crypto-provider]] and [this number generator][crypto-rng].
-
+You are advised not to use `System.Random` for crypto or security. See [this provider][crypto-provider]] and [this number generator][crypto-rng].
 
 [system-random]: https://docs.microsoft.com/en-us/dotnet/api/system.random?view=netcore-3.1
 [random-thread-safety]: https://docs.microsoft.com/en-us/dotnet/api/system.random?view=netcore-3.1#the-systemrandom-class-and-thread-safety

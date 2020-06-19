@@ -16,4 +16,3 @@
 ## Prerequisites
 
 - `numbers`
-
