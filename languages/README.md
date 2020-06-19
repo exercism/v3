@@ -85,4 +85,3 @@ To contribute, please select the language you'd like to contribute to:
 [x86-64-assembly]: ./x86-64-assembly/README.md
 
 If you would like to create a new language track for v3, please [open an issue here](https://github.com/exercism/request-new-language-track).
-
