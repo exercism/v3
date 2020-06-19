@@ -101,6 +101,8 @@ module Markdown =
     let private appendExercises (tracks: Track list) (markdown: StringBuilder): StringBuilder =
         markdown
             .AppendLine("## Implemented Concept Exercises")
+            .AppendLine()
+            .AppendLine("These are the Concept Exercises that have currently been implemented:")
             .AppendLine() |> ignore
         
         let renderLine trackColumn exerciseColumn conceptsColumn prerequisitesColumn =
