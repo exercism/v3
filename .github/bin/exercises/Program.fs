@@ -72,7 +72,7 @@ module Markdown =
             .AppendLine("_This file is auto-generated and should not be modified manually._")
             .AppendLine()
     
-    let private appendContributing (tracks: Track list) (markdown: StringBuilder): StringBuilder =
+    let private appendTracks (tracks: Track list) (markdown: StringBuilder): StringBuilder =
         markdown
             .AppendLine("## Contributing")
             .AppendLine()
@@ -93,8 +93,30 @@ module Markdown =
             let trackLink = sprintf "[%s](./%s/README.md)" track.Name track.Slug
             let exercisesLink = sprintf "[%d](https://github.com/exercism/v3/tree/master/languages/%s/exercises/concept)" track.Exercises.Concept.Length track.Slug
             renderLine trackLink exercisesLink
-            
+
+        markdown.AppendLine()
+    
+    let private appendExercises (tracks: Track list) (markdown: StringBuilder): StringBuilder =
         markdown
+            .AppendLine("## Implemented Concept Exercises")
+            .AppendLine() |> ignore
+        
+        let renderLine (trackColumn: string) (exercisesColumn: string) =
+            markdown
+                .AppendFormat(sprintf "| %s | %s |" trackColumn exercisesColumn)
+                .AppendLine() |> ignore
+        
+        renderLine "Track" "Concept Exercise"
+        renderLine "-" "-"
+
+        for track in tracks do
+            let trackLink = sprintf "[%s](./%s/README.md)" track.Name track.Slug
+            
+            for conceptExercise in track.Exercises.Concept |> Array.sortBy (fun exercise -> exercise.Slug) do
+                let exerciseLink = sprintf "[%s](https://github.com/exercism/v3/tree/master/languages/%s/exercises/concept/%s/.docs/instructions.md)" conceptExercise.Slug track.Slug conceptExercise.Slug
+                renderLine trackLink exerciseLink
+
+        markdown.AppendLine()
         
     let private appendFooter (markdown: StringBuilder): StringBuilder =
         markdown
@@ -104,7 +126,8 @@ module Markdown =
     let private renderToMarkdown (tracks: Track list): string =
         StringBuilder()
         |> appendHeader
-        |> appendContributing tracks
+        |> appendTracks tracks
+        |> appendExercises tracks
         |> appendFooter
         |> string
 
