@@ -194,13 +194,15 @@ module Markdown =
         let markdownStoryImplementations = storiesToMarkdownStoryImplementation stories
         
         let renderLine (nameColumn: string) (trackColumn: string) (exerciseColumn: string) =
-            markdown.AppendFormat(sprintf "| %s | %s | %s |" nameColumn trackColumn exerciseColumn) |> ignore
-            markdown.AppendLine() |> ignore
+            markdown
+                .AppendFormat(sprintf "| %s | %s | %s |" nameColumn trackColumn exerciseColumn)
+                .AppendLine() |> ignore
         
-        markdown.AppendLine("## Implementations") |> ignore
-        markdown.AppendLine() |> ignore
-        markdown.AppendLine("These are the implementations of the stories in the various tracks.") |> ignore
-        markdown.AppendLine() |> ignore
+        markdown
+            .AppendLine("## Implementations")
+            .AppendLine()
+            .AppendLine("These are the implementations of the stories in the various tracks.")
+            .AppendLine() |> ignore
         
         renderLine "Story" "Track" "Exercise"
         renderLine "-" "-" "-"
@@ -213,16 +215,18 @@ module Markdown =
     let private appendStoriesMarkdown (stories: Story list) (markdown: StringBuilder): StringBuilder =
         let markdownStories = storiesToMarkdownStories stories
 
-        markdown.AppendLine("# Stories") |> ignore
-        markdown.AppendLine() |> ignore
-        markdown.AppendLine("_This file is auto-generated and should not be modified manually._") |> ignore
-        markdown.AppendLine() |> ignore
-        markdown.AppendLine("A collection of story and narrative ideas that can be used when writing Concept Exercise specs.") |> ignore
-        markdown.AppendLine() |> ignore
+        markdown
+            .AppendLine("# Stories")
+            .AppendLine()
+            .AppendLine("_This file is auto-generated and should not be modified manually._")
+            .AppendLine()
+            .AppendLine("A collection of story and narrative ideas that can be used when writing Concept Exercise specs.")
+            .AppendLine() |> ignore
         
         let renderLine (conceptColumn: string) (nameColumn: string) (descriptionColumn: string) =
-            markdown.AppendFormat(sprintf "| %s | %s | %s |" conceptColumn nameColumn descriptionColumn) |> ignore
-            markdown.AppendLine() |> ignore
+            markdown
+                .AppendFormat(sprintf "| %s | %s | %s |" conceptColumn nameColumn descriptionColumn)
+                .AppendLine() |> ignore
         
         renderLine "Concept" "Story" "Description"
         renderLine "-" "-" "-"
