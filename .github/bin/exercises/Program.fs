@@ -33,7 +33,7 @@ module Parser =
     type JsonTrack =
         { [<JsonPropertyName("language")>] Language: string
           [<JsonPropertyName("exercises")>] Exercises: JsonExercises }
-        
+    
     let private configJsonPath (languageDirectory: DirectoryInfo) = Path.Combine(languageDirectory.FullName, "config.json")
     
     let private hasConfigJsonFile (languageDirectory: DirectoryInfo) =
@@ -48,9 +48,11 @@ module Parser =
     let private parseTrack (languageDirectory: DirectoryInfo): Track =
         let configJson = parseConfigJson languageDirectory
         let toConceptExercise (jsonConceptExercise: JsonConceptExercise) : ConceptExercise =
+            let emptyIfNull arr = if arr = null then Array.empty else arr
+            
             { Slug = jsonConceptExercise.Slug
-              Concepts = jsonConceptExercise.Concepts
-              Prerequisites = jsonConceptExercise.Prerequisites }
+              Concepts = jsonConceptExercise.Concepts |> emptyIfNull
+              Prerequisites = jsonConceptExercise.Prerequisites |> emptyIfNull }
 
         { Name = configJson.Language
           Slug = languageDirectory.Name
@@ -81,7 +83,7 @@ module Markdown =
             .AppendLine("To contribute, please select the language you'd like to contribute to:")
             .AppendLine() |> ignore
         
-        let renderLine (trackColumn: string) (exercisesColumn: string) =
+        let renderLine trackColumn exercisesColumn =
             markdown
                 .AppendFormat(sprintf "| %s | %s |" trackColumn exercisesColumn)
                 .AppendLine() |> ignore
@@ -101,20 +103,25 @@ module Markdown =
             .AppendLine("## Implemented Concept Exercises")
             .AppendLine() |> ignore
         
-        let renderLine (trackColumn: string) (exercisesColumn: string) =
+        let renderLine trackColumn exerciseColumn conceptsColumn prerequisitesColumn =
             markdown
-                .AppendFormat(sprintf "| %s | %s |" trackColumn exercisesColumn)
+                .AppendFormat(sprintf "| %s | %s | %s | %s |" trackColumn exerciseColumn conceptsColumn prerequisitesColumn)
                 .AppendLine() |> ignore
         
-        renderLine "Track" "Concept Exercise"
-        renderLine "-" "-"
+        renderLine "Track" "Exercise" "Concepts" "Prerequisites"
+        renderLine "-" "-" "-" "-"
 
         for track in tracks do
             let trackLink = sprintf "[%s](./%s/README.md)" track.Name track.Slug
             
             for conceptExercise in track.Exercises.Concept |> Array.sortBy (fun exercise -> exercise.Slug) do
+                let renderArray arr =
+                    if Array.isEmpty arr then "-" else arr |> Array.sort |> String.concat ", "  
+                
                 let exerciseLink = sprintf "[%s](https://github.com/exercism/v3/tree/master/languages/%s/exercises/concept/%s/.docs/instructions.md)" conceptExercise.Slug track.Slug conceptExercise.Slug
-                renderLine trackLink exerciseLink
+                let concepts = conceptExercise.Concepts |> renderArray  
+                let prerequisites = conceptExercise.Prerequisites |> renderArray
+                renderLine trackLink exerciseLink concepts prerequisites
 
         markdown.AppendLine()
         
