@@ -1,4 +1,4 @@
-You are working on a system that authenticates users. The system uses facial recognition to prove identity.
+You are working on a system to simplify the login process for some network. The tasks concern the authentication part. The system uses facial recognition to prove identity.
 
 In all occurrences the eye color parameter is guaranteed to be non-null.
 
