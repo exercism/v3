@@ -1,5 +1,5 @@
 # Update the stories summary
-dotnet run .github/bin/stories
+dotnet run -p .github/bin/stories
 
 # Add the updated story summary files
 git add reference/stories/README.md
@@ -14,6 +14,8 @@ fi
 # Setup the git user (required to commit anything)
 git config --global user.email "github-actions[bot]@users.noreply.github.com"
 git config --global user.name "github-actions[bot]"
+
+echo "Committing updated stories summary"
 
 # Commit the changes made by dotnet format
 git add .

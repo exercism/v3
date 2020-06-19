@@ -8,7 +8,7 @@ on:
       - 'reference/stories/**'
 
 jobs:
-  test:
+  update:
     runs-on: ubuntu-latest
 
     steps:
