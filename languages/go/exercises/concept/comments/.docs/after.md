@@ -4,7 +4,7 @@ In the previous exercise, we saw that there are two ways to write comments in Go
 
 In Go, comments play an important role in documenting code. They are used by the [godoc][godoc] command, which extracts these comments to create documentation about Go packages (see [pkg.go.dev][go packages] for examples). A documentation comment should be a complete sentence that starts with the name of the thing being described and ends with a period.
 
-Documentation comments are about `what` the entity does and contains, whereas other types of comments such as code comments are about `why` something is done. The `why` helps others and future you understand what the reason behind a particular piece of code. However, if the `why` feels obvious, the code comment is not necessary. A [good rule of thumb][less comments] and more sustainable solution is to write code that is easier to understand so that explanatory comments are hopefully not needed.
+Documentation comments are about `what` the thing does and contains, whereas other types of comments such as code comments are about `why` something is done. The `why` helps others and future you to understand the reason behind a particular piece of code. However, if the `why` feels obvious, the code comment is not necessary. A [good rule of thumb][less comments] and more sustainable solution is to write code that is easier to understand so that explanatory comments are hopefully not needed.
 
 ## Comments for exported identifiers
 
@@ -15,7 +15,7 @@ Note, however, that identifiers (such as variables) that are declared inside of 
 A package-level variable can look like this:
 
 ```go
-// TemperatureFahrenheit gives a certain temperature in degrees Fahrenheit.
+// TemperatureFahrenheit represents a certain temperature in degrees Fahrenheit.
 var TemperatureFahrenheit float64
 ```
 
@@ -23,7 +23,7 @@ Note that `TemperatureFahrenheit` is capitalized, which makes this identifier ex
 
 ## Package comments
 
-Package comments should be written directly before a package clause (`package x`) and begin with `Package X ...` like this:
+Package comments should be written directly before a package clause (`package x`) and begin with `Package x ...` like this:
 
 ```go
 // Package kelvin provides tools to convert temperatures to and from Kelvin.
@@ -32,7 +32,7 @@ package kelvin
 
 ## Function comments
 
-A function comment should be written directly before the function declaration. It should be a full sentence that starts with the function name. For example, an exported comment for `function Test` should take the form `Test ...`. It should also explain what arguments the function takes, what it does with them, and what its return values mean, ending in a period):
+A function comment should be written directly before the function declaration. It should be a full sentence that starts with the function name. For example, an exported comment for the function `Test` should take the form `Test ...` and end with a period. It could also explain what arguments the function takes, what it does with them, and what its return values mean:
 
 ```go
 // CelsiusFreezingTemp returns an integer value equal to the temperature at which water freezes in degrees Celsius.

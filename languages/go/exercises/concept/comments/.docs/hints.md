@@ -1,18 +1,18 @@
 ## General
 
-- [Documentation comments][comment] should be written directly before the thing that they are describing, start with the name of what they are describing, take the form of a sentence, and end with a period.
+- A [documentation comment][comment] should be written directly before the entity that it is describing, start with the name of what it is describing, take the form of a sentence, and end with a period.
 
 ## 1. Document the package
 
-- The [package comment][comment] should be written directly before the package, start with `Package X does Y.` and end with a period.
+- The [package comment][comment] should be written directly before the package, start with `Package x`, and end with a period.
 
 ## 2. Document the CurrentCondition variable
 
-- The [variable comment][variable comment] should be written right before the variable it is describing, start with its name and end with a period.
+- The [variable comment][variable comment] should be written right before the variable that it is describing, start with its name, and end with a period.
 
 ## 3. Document the CurrentLocation variable
 
-- The [variable comment][variable comment] should be written right before the variable it is describing, start with its name and end with a period.
+- The [variable comment][variable comment] should be written right before the variable that it is describing, start with its name, and end with a period.
 
 ## 4. Document the Log() function
 

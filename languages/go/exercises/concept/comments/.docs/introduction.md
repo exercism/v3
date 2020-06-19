@@ -9,13 +9,13 @@ Comments should precede packages as well as exported identifiers, for example ex
 A package-level variable can look like this:
 
 ```go
-// TemperatureFahrenheit gives a certain temperature in degrees Fahrenheit.
+// TemperatureFahrenheit represents a certain temperature in degrees Fahrenheit.
 var TemperatureFahrenheit float64
 ```
 
 ## Package comments
 
-Package comments should be written directly before a package clause (`package x`) and begin with `Package X ...` like this:
+Package comments should be written directly before a package clause (`package x`) and begin with `Package x ...` like this:
 
 ```go
 // Package kelvin provides tools to convert
