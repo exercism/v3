@@ -25,7 +25,7 @@ package kelvin
 
 ## Function comments
 
-A function comment should be written directly before the function declaration, and takes the form `Function X ...` (a full sentence explaining what arguments the function takes, what it does with them, and what its return values mean, ending in a period):
+A function comment should be written directly before the function declaration. It should be a full sentence that starts with the function name. For example, an exported comment for `function Test` should take the form `Test ...`. It should also explain what arguments the function takes, what it does with them, and what its return values mean, ending in a period):
 
 ```go
 // CelsiusFreezingTemp returns an integer value equal to the temperature at which water freezes in degrees Celsius.
@@ -50,4 +50,4 @@ It's a good idea to configure your editor to run `golint` for you. Otherwise, yo
 golint weather.go
 ```
 
-To use `golint` command globally, make sure that it is on your `$PATH`.
+To use the `golint` command globally, make sure that it is on your `$PATH`.
