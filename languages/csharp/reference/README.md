@@ -26,6 +26,7 @@ The core OO features a C# developer should know about are:
     - Out parameters 📖 (issue [#1128](https://github.com/exercism/v3/issues/1128))
     - [Optional arguments][optional_arguments] 📖 (issue [#1128](https://github.com/exercism/v3/issues/1128))
   - Method overloading ✅ (exercise [`method-overloading`][exercise-method-overloading])
+    - operator overloading
   - Return values ✅ (exercise [`basics`][exercise-basics])
 - [Mutation][mutation] ✅ (exercise [`basics`][exercise-basics])
 - [Objects][objects] ✅ (exercise [`classes`][exercise-classes])
@@ -97,7 +98,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - [Enumeration: for loop][enumeration]
   - [Enumeration: foreach loop][enumeration]
 - Exceptions 📖 (issue [#966](https://github.com/exercism/v3/issues/966))
-  - User-defined exceptions 📖 (issue [#1141](https://github.com/exercism/v3/issues/1141))
+  - User-defined exceptions ✅ (exercise [`user-defined-exceptions`][exercise-user-defined-exceptions])
 - Null ✅ (exercise [`nullability`][exercise-nullability])
   - Null-coalescing operator ✅ (exercise [`nullability`][exercise-nullability])
   - Null-conditional operator ✅ (exercise [`nullability`][exercise-nullability])
@@ -263,3 +264,4 @@ The concept exercises use the following concepts:
 [exercise-numbers]: ../exercises/concept/numbers/.meta/design.md
 [exercise-properties]: ../exercises/concept/properties/.meta/design.md
 [exercise-strings]: ../exercises/concept/strings/.meta/design.md
+[exercise-user-defined-exceptions]: ../exercises/concept/user-defined-exceptions/.meta/design.md
