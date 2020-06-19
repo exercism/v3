@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # Update the stories summary
 dotnet run -p .github/bin/stories
 
