@@ -7,9 +7,7 @@ PULL_REQUEST_URL="https://api.github.com/repos/exercism/v3/pulls/1708"
 
 PR_FILES=$(curl --url "${PULL_REQUEST_URL}/files" --header "authorization: Bearer ${GH_TOKEN}")
 
-echo "${PR_FILES}"
-
-# jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match("\\.(md|json)$")) | .filename'
+JQ_OUT=$(jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match("\\.(md|json)$")) | .filename' < "${PR_FILES}")
 
 
    # | \
