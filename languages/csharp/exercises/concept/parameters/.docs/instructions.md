@@ -27,7 +27,7 @@ Implement `RemoteControlCar.GetTelemetryData()`.
 
 `GetTelemetryData()` should make the battery percentage and distance driven in meters availble via `out` parameters.
 
-`GetTelementryData()` should return `false` if the timestamp argument is less than the previously received value. (There is some issue of multiple telemtry nodes being involved).
+`GetTelementryData()` should return `false` if the timestamp argument is less than the previously received value. (There is some issue of multiple telemetry nodes being involved).
 
 Implement `TelemetryClient.GetBatteryUsagePerMeter()`.
 
