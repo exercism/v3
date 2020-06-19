@@ -31,8 +31,10 @@ jobs:
 
       - name: "Verify formatting of the PR's files"
         if: github.ref != 'refs/heads/master' && github.event.pull_request.url
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} bash -x ./.github/bin/test.sh
+          bash -x ./.github/bin/test.sh
           exit 1
           # PULL_REQUEST_URL=$(jq -r ".pull_request.url" "$GITHUB_EVENT_PATH")
           # curl --url $"${PULL_REQUEST_URL}/files" \
