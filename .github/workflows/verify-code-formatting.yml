@@ -33,6 +33,7 @@ jobs:
         if: github.ref != 'refs/heads/master' && github.event.pull_request.url
         run: |
           PULL_REQUEST_URL=$(jq -r ".pull_request.url" "$GITHUB_EVENT_PATH")
-          curl --url $"${PULL_REQUEST_URL}/files" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' | \
-            jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match("\\.(md|json)$")) | .filename' | \
-            xargs npx prettier@2.0.4 --check
+          curl --url $"${PULL_REQUEST_URL}/files" \
+               --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+            | jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match("\\.(md|json)$")) | .filename' \
+            | xargs npx prettier@2.0.4 --check
