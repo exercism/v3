@@ -1,6 +1,8 @@
 ## Learning objectives
 
 - Know how to implement randomness with `System.Random` in C#.
+- Know that no seed is required
+- Know that both integers and real numbers can be generated
 
 ## Out of scope
 
@@ -13,5 +15,4 @@
 ## Prerequisites
 
 - `numbers`
-- `strings`
 - `conditionals-if`
