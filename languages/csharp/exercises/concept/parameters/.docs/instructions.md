@@ -46,11 +46,11 @@ tc.GetBatteryUsagePerMeter(timestamp: 1L);
 
 ## Add a telemetry check that the remote control car is in good order
 
-Implement `TelemetryClient.GetBatteryUsagePerMeter()`.
+Implement `TelemetryClient.IsCarOk()`.
 
 This will call `RemoteControlCar.GetTelemetryData()`. If `GetTelemetryData()` returns `false` then this routine should return "no data".
 
-If `GetTelemetryData()` returns `true` then provided that battery usage is currently above 50% then the message "car ok" is returned otherwise "car bad".
+If `GetTelemetryData()` returns `true` then provided that battery usage is currently above 50% then the message "car ok" is returned by the telemetry client otherwise "car bad" is returned.
 
 ```csharp
 var car = RemoteControlCar.Buy();
