@@ -193,7 +193,7 @@ module Markdown =
     let private appendImplementationsToMarkdown (stories: Story list) (markdown: StringBuilder): StringBuilder =
         let markdownStoryImplementations = storiesToMarkdownStoryImplementation stories
         
-        let renderLine (nameColumn: string) (trackColumn: string) (exerciseColumn: string) =
+        let renderLine nameColumn trackColumn exerciseColumn =
             markdown
                 .AppendFormat(sprintf "| %s | %s | %s |" nameColumn trackColumn exerciseColumn)
                 .AppendLine() |> ignore
@@ -223,7 +223,7 @@ module Markdown =
             .AppendLine("A collection of story and narrative ideas that can be used when writing Concept Exercise specs.")
             .AppendLine() |> ignore
         
-        let renderLine (conceptColumn: string) (nameColumn: string) (descriptionColumn: string) =
+        let renderLine conceptColumn nameColumn descriptionColumn =
             markdown
                 .AppendFormat(sprintf "| %s | %s | %s |" conceptColumn nameColumn descriptionColumn)
                 .AppendLine() |> ignore
