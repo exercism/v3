@@ -287,7 +287,7 @@ module Json =
               concept.File
               |> Option.map (fun file ->
                   let relativePath = Path.GetRelativePath("reference", file.FullName)
-                  sprintf "https://github.com/exercism/v3/blob/master/reference/%s" relativePath)
+                  sprintf "https://github.com/exercism/v3/blob/master/reference/%s" (relativePath.Replace("\\", "/")))
               |> Option.toObj }
     
     let private storyToJsonStory (story: Story): JsonStory =
