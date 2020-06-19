@@ -226,6 +226,8 @@ module Markdown =
         
         markdown.AppendLine("# Stories") |> ignore
         markdown.AppendLine() |> ignore
+        markdown.AppendLine("_This file is auto-generated and should not be modified manually._") |> ignore
+        markdown.AppendLine() |> ignore
         markdown.AppendLine("A collection of story and narrative ideas that can be used when writing Concept Exercise specs.") |> ignore
         markdown.AppendLine() |> ignore
         
