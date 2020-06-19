@@ -10,6 +10,6 @@ public class Player
     }
     public double GenerateSpellStrength()
     {
-        return random.Sample() * 100;
+        return random.NextDouble() * 100;
     }
 }
