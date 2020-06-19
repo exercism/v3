@@ -26,6 +26,7 @@ The core OO features a C# developer should know about are:
     - Out parameters 📖 (issue [#1128](https://github.com/exercism/v3/issues/1128))
     - [Optional arguments][optional_arguments] 📖 (issue [#1128](https://github.com/exercism/v3/issues/1128))
   - Method overloading ✅ (exercise [`method-overloading`][exercise-method-overloading])
+    - operator overloading
   - Return values ✅ (exercise [`basics`][exercise-basics])
 - [Mutation][mutation] ✅ (exercise [`basics`][exercise-basics])
 - [Objects][objects] ✅ (exercise [`classes`][exercise-classes])
@@ -167,7 +168,6 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Tasks
 - Time 📖 (issue [#1644](https://github.com/exercism/v3/issues/1644))
 - [Tuples][tuple] 📖 (issue [#963](https://github.com/exercism/v3/issues/963))
-- operator overloads
 
 ## Concept interpretation
 
