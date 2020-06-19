@@ -171,8 +171,8 @@ module Markdown =
     
     let private storiesToMarkdownStories (stories: Story list): MarkdownStory list =
         stories
+        |> List.sortBy (fun story -> (story.Concept.Name, story.Name))
         |> List.map storyToMarkdownStory
-        |> List.sort
 
     let private storyToMarkdownStoryImplementation (story: Story): MarkdownStoryImplementation list =
         let implementationToMarkdownStory (implementation: Implementation) =
@@ -226,18 +226,18 @@ module Markdown =
         
         markdown.AppendLine("# Stories") |> ignore
         markdown.AppendLine() |> ignore
-        markdown.AppendLine("These are the stories currently implemented.") |> ignore
+        markdown.AppendLine("A collection of story and narrative ideas that can be used when writing Concept Exercise specs.") |> ignore
         markdown.AppendLine() |> ignore
         
-        let renderLine (nameColumn: string) (conceptColumn: string) (descriptionColumn: string) =
-            markdown.AppendFormat(sprintf "| {0,-%d} | {1,-%d} | {2,-%d} |" nameColumnLength conceptColumnLength descriptionColumnLength, nameColumn, conceptColumn, descriptionColumn) |> ignore
+        let renderLine (conceptColumn: string) (nameColumn: string) (descriptionColumn: string) =
+            markdown.AppendFormat(sprintf "| {0,-%d} | {1,-%d} | {2,-%d} |" conceptColumnLength nameColumnLength descriptionColumnLength, conceptColumn, nameColumn, descriptionColumn) |> ignore
             markdown.AppendLine() |> ignore
         
-        renderLine "Name" "Concept" "Description"
-        renderLine (System.String('-', nameColumnLength)) (System.String('-', conceptColumnLength)) (System.String('-', descriptionColumnLength))
+        renderLine "Concept" "Story" "Description"
+        renderLine (System.String('-', conceptColumnLength)) (System.String('-', nameColumnLength)) (System.String('-', descriptionColumnLength))
 
         for markdownStory in markdownStories do
-            renderLine markdownStory.Name markdownStory.Concept markdownStory.Description
+            renderLine markdownStory.Concept markdownStory.Name markdownStory.Description
             
         markdown
 
@@ -249,7 +249,7 @@ module Markdown =
 
     let writeStories (storiesDirectory: DirectoryInfo) (stories: Story list): unit =
         let markdown = renderToMarkdown stories
-        File.WriteAllText(Path.Combine(storiesDirectory.FullName, "stories.md"), markdown)
+        File.WriteAllText(Path.Combine(storiesDirectory.FullName, "README.md"), markdown)
 
 module Json =
     
