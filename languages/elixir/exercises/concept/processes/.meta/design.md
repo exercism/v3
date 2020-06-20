@@ -19,7 +19,7 @@
 ## Concepts
 
 - `processes`
-- `pid`
+- `pids`
 
 ## Prerequisites
 
