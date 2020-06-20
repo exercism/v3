@@ -3,7 +3,7 @@ using Xunit;
 public class ParametersTests
 {
 
-    //    [Fact]
+    [Fact]
     public void DisplayNextSponsor_for_3_sponsors()
     {
         var car = RemoteControlCar.Buy();

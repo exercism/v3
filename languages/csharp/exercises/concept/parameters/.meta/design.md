@@ -1,20 +1,20 @@
 ## Learning objectives
 
 - Know the difference between value and reference type parameters.
-- Know how to pass value types by reference using the `ref`, `out` and `in` modifiers.
+- Know how to pass value types by reference using the `ref` and `out`  modifiers.
 
 ## Out of scope
 
 - Overload resolution.
 - ref returns.
 - ref locals.
+- `in` modifier
 
 ## Concepts
 
 This Concepts Exercise's Concepts are:
 
-- `parameters`: know the difference between value and reference type parameters; know how to pass value types by reference using the `ref`, `out` and `in` modifiers.
-- `stack-memory-allocation` the difference between parameter passing by reference and passing by value.
+- `parameters`: know the difference between value and reference type parameters; know how to pass value types by reference using the `ref` and `out` modifiers.
 
 ## Prequisites
 
