@@ -13,7 +13,7 @@ Elixir's processes should not be confused with operating system processes. Elixi
 
 ## Messages
 
-Processes do not share information with one another. The only way to get data in and out of a running process is by _sending messages_.
+Processes do not directly share information with one another. The only way to get data in and out of a running process is by _sending messages_.
 
 You can send a message to any process with `send/2`. The first argument to `send/2` is the PID of the recipient, the second argument is the message.
 
