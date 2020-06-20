@@ -32,13 +32,13 @@ authenticator.IsRegistered(new Identity("alice@thecompetition.com", new FacialFe
 
 ## 3. Register new identities
 
-Implement `Authenticator.Register()` which stores an identity on the authenticator itself such that calls to `IsRegistered()` will return true for this identity. If the identity has already been registered then `false` is returned otherwise `true`.
+Implement `Authenticator.Register()` which stores an identity on the authenticator itself such that calls to `IsRegistered()` will return true for this identity. If the identity has already been registered then `false` is returned by `Authenticator.Register()`, otherwise `true`.
 
 ```csharp
 var authenticator = new Authenticator();
 authenticator.Register(new Identity("tunde@thecompetition.com", new FacialFeatures("blue", 0.9m)));
 // => true
-authenticator.IsRegistered(new Identity("tunde@thecompetition.com", new FacialFeatures("blue", 0.9m)));
+authenticator.IsRegistered(new Identity("alice@thecompetition.com", new FacialFeatures("blue", 0.9m)));
 // => true
 authenticator.Register(new Identity("tunde@thecompetition.com", new FacialFeatures("blue", 0.9m)));
 // => false
@@ -47,7 +47,7 @@ authenticator.Register(new Identity("tunde@thecompetition.com", new FacialFeatur
 
 ## 4. Add diagnostics to detect multiple attempts to authenticate
 
-A bug has been reported whereby `Authenticator.IsRegistered()` is called multiple times in quick succession for the same identity. You believe that there is some sort of "bounce" problem where the exact same record is being submitted multiple times. Your task is to add a diagnostic routine `Authenticator.AreSameObject() to support any testing that's undertaken.
+A bug has been reported whereby `Authenticator.IsRegistered()` is called multiple times in quick succession for the same identity. You believe that there is some sort of "bounce" problem where the exact same record is being submitted multiple times. Your task is to add a diagnostic routine `Authenticator.AreSameObject()` to support any testing that's undertaken.
 
 ```csharp
 var identityA = new Identity("alice@thecompetition.com", new FacialFeatures("blue", 0.9m));

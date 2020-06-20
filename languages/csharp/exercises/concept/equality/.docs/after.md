@@ -8,6 +8,7 @@
 - equality operators mention that they are not overloaded by default and point to operators exercise.
 - equality and inheritance - [SO](https://stackoverflow.com/questions/22154799/equals-method-inheritance-confusion)
 - Bill Wagner's NDC 2020 talk discusses sn approach to `Equals()` with syntax that is more modern.
+- insights into hash codes and a practical guide to making them
 
 * [Equality][equality]: how equality comparisons work in C#, including reference- and value type equality.
 * [Equatable][equatable]: describes how to make a reference type use structural equality using `IEquatable<T>`.
