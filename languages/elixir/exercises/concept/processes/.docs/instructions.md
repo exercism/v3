@@ -11,7 +11,7 @@ TakeANumber.start()
 
 ## 2. Report the machine state
 
-Modify the machine so that it can receive `{:report_state, sender_pid}` messages. It should send its current state to `sender_pid` and then wait for more messages.
+Modify the machine so that it can receive `{:report_state, sender_pid}` messages. It should send its current state (the last given out ticket number) to `sender_pid` and then wait for more messages.
 
 ```elixir
 machine_pid = TakeANumber.start()
