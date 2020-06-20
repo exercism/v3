@@ -7,6 +7,7 @@ These awesome people help maintain the Elixir track.
 - Devon Estes (Slack: `@devon`, GitHub: [devonestes](https://github.com/devonestes))
 - Cohen Carlisle (Slack: `@Cohen Carlisle`, GitHub: [cohen-carlisle](https://github.com/cohen-carlisle))
 - Tim Austin (Slack: `@neenjaw`, GitHub: [neenjaw](https://github.com/neenjaw))
+- Angelika Tyborska (Slack: `@Angelika Tyborska`, GitHub: [angelikatyborska](https://github.com/angelikatyborska/))
 
 ## Contributing Maintainers
 

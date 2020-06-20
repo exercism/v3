@@ -159,6 +159,30 @@
           "nil",
           "default-arguments"
         ]
+      },
+      {
+        "slug": "exceptions",
+        "uuid": "9f698b46-fe8d-4641-a928-bcebfd9678df",
+        "concepts": ["exceptions"],
+        "prerequisites": ["access-behaviour", "errors"]
+      },
+      {
+        "slug": "keyword-lists",
+        "uuid": "921a03be-662a-4aea-b8fc-a87d199b1528",
+        "concepts": ["keyword-lists"],
+        "prerequisites": [
+          "lists",
+          "tuples",
+          "atoms",
+          "if-conditional",
+          "default-arguments"
+        ]
+      },
+      {
+        "slug": "try-rescue-else-after",
+        "uuid": "68a8f721-5db4-4b31-95c8-fa6c38f64327",
+        "concepts": ["try-rescue-else-after"],
+        "prerequisites": ["io", "try-rescue"]
       }
     ],
     "practice": []
