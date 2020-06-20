@@ -52,4 +52,3 @@ public class TelemetryClient
         throw new NotImplementedException("Please implement the TelemetryClient.GetBatteryUsagePerMeter() method");
     }
 }
-

@@ -3,7 +3,7 @@ using Xunit;
 public class ParametersTests
 {
 
-//    [Fact]
+    //    [Fact]
     public void DisplayNextSponsor_for_3_sponsors()
     {
         var car = RemoteControlCar.Buy();
@@ -22,7 +22,7 @@ public class ParametersTests
         car.Drive();
         long timestamp = 1L;
         car.GetTelemetryData(ref timestamp, out int batteryPercentage, out int distanceDrivenInMeters);
-        Assert.Equal((98, 40), (batteryPercentage, distanceDrivenInMeters));
+        Assert.Equal((80, 4), (batteryPercentage, distanceDrivenInMeters));
     }
 
     [Fact/*(Skip = "Remove this Skip property to run this test")*/]
@@ -63,6 +63,14 @@ public class ParametersTests
         car.Drive(); car.Drive();
         var tc = new TelemetryClient(car);
         Assert.Equal("usage-per-meter=5", tc.GetBatteryUsagePerMeter(timestamp: 1L));
+    }
+
+    [Fact/*(Skip = "Remove this Skip property to run this test")*/]
+    public void GetUsagePerMeter_not_started()
+    {
+        var car = RemoteControlCar.Buy();
+        var tc = new TelemetryClient(car);
+        Assert.Equal("no data", tc.GetBatteryUsagePerMeter(timestamp: 1L));
     }
 
 }

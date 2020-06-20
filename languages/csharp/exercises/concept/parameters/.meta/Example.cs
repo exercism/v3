@@ -43,6 +43,7 @@ public class RemoteControlCar
             return false;
         }
     }
+
     public static RemoteControlCar Buy()
     {
         return new RemoteControlCar();
@@ -57,6 +58,7 @@ public class TelemetryClient
     {
         this.car = car;
     }
+
     public string IsCarOk(long timestamp)
     {
         long localTime = timestamp;
@@ -78,7 +80,7 @@ public class TelemetryClient
         long localTime = timestamp;
         bool goodData = car.GetTelemetryData(ref localTime,
             out int batteryPercentage, out int distanceDrivenInMeters);
-        if (!goodData)
+        if (!goodData || distanceDrivenInMeters == 0)
         {
             return "no data";
         }
@@ -86,4 +88,3 @@ public class TelemetryClient
         return "usage-per-meter=" + (100 - batteryPercentage) / distanceDrivenInMeters;
     }
 }
-
