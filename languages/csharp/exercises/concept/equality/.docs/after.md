@@ -13,7 +13,7 @@ class StatusBar
     private readonly int width = 200, height = 20;
     public override bool Equals(object other)
     {
-        // ... null checks and performance optimisations
+        // ... null and type checks and performance optimisations
         return width == (other as StatusBar).width && height == (other as StatusBar).height;
     }
 }
@@ -23,7 +23,7 @@ class Window
     private readonly StatusBar statusBar = new StatusBar();
     public override bool Equals(object other)
     {
-        // ... null checks and performance optimisations
+        // ... null and checks and performance optimisations
         return title == (other as Window).title && statusBar.Equals((other as Window).statusBar);
     }
 }
