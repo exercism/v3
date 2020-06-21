@@ -21,7 +21,7 @@ var result = importantValue == 42;
 // => true
 
 importantValue = 1729;
-Foo(inportantValue);
+Bar(inportantValue);
 result = importantValue == 1729;
 // => true
 ```
