@@ -2,13 +2,11 @@ In Elixir, all code runs inside processes. Elixir processes:
 
 - Should not be confused with system processes.
 - Are lightweight.
-  - It is normal to have an Elixir app that runs hundreds of processes.
-- Have specific use cases.
-  - Processes can:
-    - [Keep global state][getting-started-processes-state].
-    - [Contain failure][getting-started-processes-links].
-    - Allow for concurrent and asynchronous code.
-  - It is also normal to have an Elixir app that doesn't explicitly create new processes, especially if it's a library.
+- Have specific use cases. They can:
+  - [Keep global state][getting-started-processes-state].
+  - [Contain failure][getting-started-processes-links].
+  - Allow for concurrent and asynchronous code.
+- It is normal to have an Elixir app that runs _hundreds_ of processes, but also one that doesn't explicitly create new processes at all, especially if it's a library.
 
 ## Creating processes
 
@@ -56,29 +54,21 @@ Processes do not directly share information with one another. Processes _send me
 - A message can be of any type.
 - You can receive a message sent to the current process using [`receive/1`][kernel-receive].
 
+  - You need to pattern match on messages.
+  - `receive` waits until one message matching any given pattern is in the processes mailbox.
+    - By default, it waits indefinitely, but can be given a timeout using an `after` block.
+  - Read messages are removed from the process' mailbox. Unread messages will stay there indefinitely.
+    - Always write a catch-all `_` clause in `receive/1` to avoid running of out memory due to piled up unread messages.
+
   ```elixir
   receive do
     {:ping, sender_pid} -> send(sender_pid, :pong)
-    :do_nothing -> nil
+    _ -> nil
+  after
+    5000 ->
+      {:error, "No message in 5 seconds"}
   end
   ```
-
-  - You need to pattern match on messages.
-  - `receive` waits until one message matching any given pattern is in the processes mailbox.
-
-    - By default, it waits indefinitely, but can be given a timeout using an `after` block.
-
-      ```elixir
-      receive do
-        {:ping, sender_pid} -> send(sender_pid, :pong)
-      after
-        5000 ->
-          {:error, "No message in 5 seconds"}
-      end
-      ```
-
-  - Read messages are removed from the process' mailbox. Unread messages will stay there indefinitely.
-    - Always write a catch-all `_` clause in `receive/1` to avoid running of out memory due to piled up unread messages.
 
 ## Receive loop
 
