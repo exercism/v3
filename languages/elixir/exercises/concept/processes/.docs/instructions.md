@@ -9,6 +9,8 @@ TakeANumber.start()
 # => #PID<0.138.0>
 ```
 
+Note that each time you run this code, the PID may be different.
+
 ## 2. Report the machine state
 
 Modify the machine so that it can receive `{:report_state, sender_pid}` messages. It should send its current state (the last given out ticket number) to `sender_pid` and then wait for more messages.
