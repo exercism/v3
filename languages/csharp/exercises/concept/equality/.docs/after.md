@@ -2,13 +2,46 @@ The coding exercise illustrates a number of properties of equality in C#:
 
 ### `Equals()`
 
-- Simple types (strings and primitives) are typically tested for equality with the `==` and `!=`. This is considered more idiomatic than using the `Equals()` method which is also available with these types. Java programmers should be alert to the fact that `==` compares by value in C# but by reference in Java when returning to their former language.
+- Simple types (strings and primitives) are typically tested for equality with the `==` and `!=`. This is considered more idiomatic than using the [`Equals()`][object-equals] method which is also available with these types. Java programmers should be alert to the fact that `==` compares by value in C# but by reference in Java when returning to their former language.
 - Reference types (Instances of classes) are compared using the `Equals()` method inherited from `object`. If your goal with the equality test is to ensure that two objects are the exact same instance then relying on `object`'s implementation will suffice. If not, you need to overload `object.Equals()`.
-- If you know that all the instances of your class are created in one place, say characters in some game simulation then reference equality is sufficient. However it is likely that multiple instances of the same real-world entity will be created (from a database, by user input, via a web request). In this case values that uniquely identify the entity must be tested for equality. Therefore `Equals()` must be overridden.
+- If you know that all the instances of your class are created in one place, say characters in some game simulation then reference equality is sufficient. However, it is likely that multiple instances of the same real-world entity will be created (from a database, by user input, via a web request). In this case values that uniquely identify the entity must be tested for equality. Therefore `Equals()` must be overridden.
 - An overridden `Equals()` will contain equality tests on members of simple types using `==` and reference types with recursive calls to `Equals()`.
-- In addition to `public override bool Equals(object obj)` you will typically provide the overload `protected bool Equals(FacialFeatures other)`.
+
+```csharp
+class StatusBar
+{
+    private readonly int width = 200, height = 20;
+    public override bool Equals(object other)
+    {
+        // ... null checks and performance optimisations
+        return width == (other as StatusBar).width && height == (other as StatusBar).height;
+    }
+}
+class Window
+{
+    private readonly string title = "Main";
+    private readonly StatusBar statusBar = new StatusBar();
+    public override bool Equals(object other)
+    {
+        // ... null checks and performance optimisations
+        return title == (other as Window).title && statusBar.Equals((other as Window).statusBar);
+    }
+}
+```
+
+- In addition to `public override bool Equals(object obj)` IDEs typically generate the overload `protected bool Equals(FacialFeatures other)` for use by derived classes.
 - Do not use `==` unless you have overloaded the `==` operator, as well as the `Equals()` method in your class (see the `operator-overloading` exercise) or you care only that the references are equal.
 - The static method `object.ReferenceEquals()` is used to compare two instances. This provides clarity and is a necessity where `Equals()` and `==` have been overloaded.
+
+```csharp
+var winA = new Window(); // above code that shows all windows are equal
+var winB = new Window();
+ReferenceEquals(winA, winB);
+// => false
+ReferenceEquals(winA, winA);
+// => true
+```
+
 - Equality tests in `struct`s are dealt with in the `structs` exercise.
 - Many developers rely on their IDEs to provide implementation of equality methods as these take care of all the minutiae of equality.
 - Tests for the equality of [delegates][delegate-equality] is not specifically discussed in the exercise.
@@ -50,12 +83,12 @@ This [article][so-equals-inheritance] shows some of the decisions that have to b
 
 ### General Informaton
 
-* [Equality][equality]: how equality comparisons work in C#, including reference- and value type equality.
-* [Equatable][equatable]: describes how to make a reference type use structural equality using `IEquatable<T>`.
-* [Equality comparer][equality-comparer]: describes the `IEqualityComparer<T>` interface.
-* [HashCode][hash-code]: how to create and combine hash codes
-* [GetHashCode][get-hash-code]: API documentation
-* [HashSet][hash-set]: API documentation
+- [Equality][equality]: how equality comparisons work in C#, including reference- and value type equality.
+- [Equatable][equatable]: describes how to make a reference type use structural equality using `IEquatable<T>`.
+- [Equality comparer][equality-comparer]: describes the `IEqualityComparer<T>` interface.
+- [HashCode][hash-code]: how to create and combine hash codes
+- [GetHashCode][get-hash-code]: API documentation
+- [HashSet][hash-set]: API documentation
 
 [equality]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/equality-comparisons
 [equatable]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type
@@ -68,3 +101,5 @@ This [article][so-equals-inheritance] shows some of the decisions that have to b
 [linq]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/
 [0.30000000000000004.com]: https://0.30000000000000004.com/
 [so-equals-inheritance]: https://stackoverflow.com/questions/22154799/equals-method-inheritance-confusion
+[object-equals]: https://docs.microsoft.com/en-us/dotnet/api/system.object.equals?view=netcore-3.1#System_Object_Equals_System_Object_
+[so-hashcode-equals]: https://stackoverflow.com/questions/371328/why-is-it-important-to-override-gethashcode-when-equals-method-is-overridden

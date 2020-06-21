@@ -28,3 +28,4 @@ This Concept Exercise's prerequisites Concepts are:
 - `inheritance`: know that all types are derived from `object`.
 - `classes`: know how to define and work with classes.
 - `lists`: Know what a collection looks like and how it is generally used.
+- `explicit-casts`: object -> T
