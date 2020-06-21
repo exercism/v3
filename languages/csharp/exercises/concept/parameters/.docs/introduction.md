@@ -3,7 +3,7 @@ This exercise discusses some details of method parameters and their use in C#.
 The behavior of parameters can be modified by the use of modifies such as `ref` and `out`.
 
 - Parameters passed without a modifier (such as `out` or `ref`) are passed by value. That is to say that the parameter as seen in the calling method cannot be changed by the called method.
-- A parameter with the `out` modifier conveys a value back from the called method to the caller. The parameter can be passed to the called method without being initialized and in any case it is treated within the called method as if, on entry, it had not been initialized. The behavior and rules regarding parameter modifiers are most easily understood through examples (see below) and compiler messages.
+- A parameter with the `out` modifier conveys a value back from the called method to the caller. The parameter can be passed to the called method without being initialized and in any case it is treated within the called method as if, on entry, it had not been initialized. An understanding of the behavior and rules regarding parameter modifiers can be gained most easily through examples (see below) and compiler messages.
 
 ```csharp
 void Foo(out int val)
@@ -43,9 +43,7 @@ return importantValue;
 
 ```
 
-`ref` parameters must be variables as the called method will be operating directly on the parameter as seen by the caller.
-
-- The `out` and `ref` modifiers are required in the called method signature and at the call site.
-- `out` parameters can be declared in line at the call site viz: `Foo(out int importantValue)`
-- If you make a call to a method which has `out` parameters but you are not interested in the value assigned to one or more of them then you can use the discard dummy variable `_`, as in: `Foo(out int _);`
-
+- `ref` parameters must be variables as the called method will be operating directly on the parameter as seen by the caller.
+- The `out` and `ref` modifiers are required both in the called method signature and at the call site.
+- `out` parameters can be declared in line at the call site viz: `Foo(out int importantValue)`.
+- If you make a call to a method which has `out` parameters but you are not interested in the value assigned to one or more of them then you can use the discard dummy variable `_`, as in: `Foo(out int _);`.

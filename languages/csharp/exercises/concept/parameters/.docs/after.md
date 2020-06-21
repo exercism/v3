@@ -2,7 +2,7 @@ The coding exercise illustrates a number of properties of parameters:
 
 - Parameters [passed][passing-parameters] without a modifier (such as `out` or `ref`) are passed by value. That is to say that the parameter as seen in the calling method cannot be changed by the called method.
 - When a reference to an array or an instance of a class is a parameter the elements/fields of that instance can be changed by the called method and the changes seen by the caller. This gives the appearance of passing by reference but it is not. This confusion (albeit as it affects Java) is discussed in this [Stack Overflow thread][so-java-parameters]. The parameter (variable containing a reference to an object) itself is passed by value.
-- A parameter with the [`out`][out-parameter] modifier conveys a value back from the called method to the caller. The parameter can be passed to the called method without being initialized and in any case it is treated within the called method as if, on entry, it had not been initialized. The behavior and rules regarding parameter modifiers are most easily understood through examples (see below) and compiler messages.
+- A parameter with the [`out`][out-parameter] modifier conveys a value back from the called method to the caller. The parameter can be passed to the called method without being initialized and in any case it is treated within the called method as if, on entry, it had not been initialized. An understanding of the behavior and rules regarding parameter modifiers can be gained most easily through examples (see below) and compiler messages.
 
 ```csharp
 void Foo(out int val)
@@ -42,9 +42,9 @@ return importantValue;
 
 ```
 
-`ref` parameters must be variables as the called method will be operating directly on the parameter as seen by the caller.
+-`ref` parameters must be variables as the called method will be operating directly on the parameter as seen by the caller.
 
-- The `out` and `ref` modifiers are required in the called method signature and at the call site.
+- The `out` and `ref` modifiers are required both in the called method signature and at the call site.
 - `out` parameters can be declared inline at the call site viz: `Foo(out int importantValue)`
 - If you make a call to a method which has `out` parameters but you are not interested in the value assigned to one or more of them then you can use the [discard][discard] dummy variable `_`, as in: `Foo(out int _);`
 
@@ -64,7 +64,7 @@ When studying the documentation note that the documentation uses the following t
 - parameter / formal parameter: refers to the parameter as seen by the called method.
 - argument: refers to the parameter as seen by the caller.
 
-Much of the value of `out` parameters has been eliminated by the introduction of `tuples` in C# 7. The `tuples` exercise shows `tuples` being used to return multiple values in the same way as `out` parameters.
+[Arguably][so-tuples-vs-out] much of the value of `out` parameters has been eliminated by the introduction of `tuples` in C# 7. The `tuples` exercise shows `tuples` being used to return multiple values.
 
 Whilst `ref` is easy to use and has no performance penalties it is worth seeing how the problems it addresses are dealt with in a particular code base before using it widely. There are alternatives such as passing in by-value and using the value from the called method's return statement. Again, `tuples` can play a role.
 
@@ -72,7 +72,7 @@ You will see from the [documentation][ref-parameter] that `out` and `ref` cannot
 
 Note that `optional parameters` and `named arguments` are discussed in the `method-overloading` exercise.
 
-The related topics of [`ref local`][ref-local] and [`ref return`] are discussed elsewhere.
+The related topics of [`ref local`][ref-local] and [`ref return`][ref-return] are discussed elsewhere.
 
 ### Stack Allocations
 
@@ -89,3 +89,4 @@ The essence of the story is that in the case of unmodified parameters the **valu
 [so-java-parameters]: https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
 [ref-local]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref#ref-locals
 [ref-return]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref#reference-return-values
+[so-tuples-vs-out]: https://stackoverflow.com/questions/6381918/returning-two-values-tuple-vs-out-vs-struct
