@@ -28,29 +28,29 @@ By default, a function will execute in the same process from which it was called
   # => #PID<0.113.0>
   ```
 
-  - This data triplet is often called _MFA_ - _Module, Function, Arguments_.
+  - This data triplet is often called an _MFA_ — _Module, Function, Arguments_.
 
-- A process exists as soon as its function finished executing.
+- A process exits as soon as its function has finished executing.
 
-  - You can check if a process is still _alive_ (executing) with [Process.alive?/1][process-alive]:
+- You can check if a process is still _alive_ (executing) with [Process.alive?/1][process-alive]:
 
-    ```elixir
-    pid = spawn(fn -> 2 + 2 end)
-    Process.alive?(pid)
-    # => false
-    ```
+  ```elixir
+  pid = spawn(fn -> 2 + 2 end)
+  Process.alive?(pid)
+  # => false
+  ```
 
 ## Messages
 
-Processes do not directly share information with one another. The only way to get data in and out of a running process is by _sending messages_. This type of concurrency is called the [Actor model][wiki-actor-model].
+Processes do not directly share information with one another. Processes _send messages_ to share data. This concurrency pattern is called the [Actor model][wiki-actor-model].
 
-- You can send messages to a process using [send/2][kernel-send].
+- Send messages to a process using [send/2][kernel-send].
 
   ```elixir
   send(pid, :hello)
   ```
 
-  - The message ends up in the recipient's _mailbox_.
+  - The message ends up in the recipient's _mailbox_ in the order that they are sent.
   - `send` does not check if the message was received nor if the recipient is still alive.
 
 - A message can be of any type.
@@ -103,7 +103,7 @@ def loop(state) do
 end
 ```
 
-In practice, this approach is rarely used directly. As you will learn later, Elixir offers concurrency abstractions, such as the [`Agent` module][agent] or a [_`GenServer` behaviour`_][genserver], that both build on top of the receive loop. However, it is crucial to understand those basics to be able to efficiently use the abstractions.
+In practice, this approach is rarely used directly. Elixir offers concurrency abstractions, such as the [`Agent` module][agent] or a [_`GenServer` behaviour`_][genserver], that both build on top of the receive loop. However, it is crucial to understand those basics to be able to efficiently use the abstractions.
 
 ## PIDs
 
@@ -113,7 +113,7 @@ In practice, this approach is rarely used directly. As you will learn later, Eli
 - You can get the current process' PID with `self()`.
 - PIDs function as _mailbox addresses_ - if you have a process' PID, you can send a message to that process.
 - PIDs are usually created indirectly, as a return value of functions that create new processes, like `spawn`.
-  - PIDs should not be created directly by the programmer, but it is still possible. You can use Erlang's [`list_to_pid/1`][erlang-list-to-pid] function.
+  - PIDs should not be created directly by the programmer. If it were required, Erlang has a [`list_to_pid/1`][erlang-list-to-pid] function.
     ```elixir
     :erlang.list_to_pid('<0.10.0>')
     # => #PID<0.10.0>
