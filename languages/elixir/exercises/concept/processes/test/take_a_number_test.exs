@@ -6,6 +6,7 @@ defmodule TakeANumberTest do
     pid = TakeANumber.start()
     assert is_pid(pid)
     assert pid != self()
+    assert pid != TakeANumber.start()
   end
 
   @tag :pending
