@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # Update the stories summary
 dotnet run -p .github/bin/stories
 
@@ -20,7 +22,7 @@ git config --global user.name "github-actions[bot]"
 
 echo "Committing updated stories summary"
 
-# Commit the changes made by dotnet format
+# Commit the changes
 git add .
 git commit -m "[CI] Update stories summary"
 git push
