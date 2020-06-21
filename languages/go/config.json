@@ -19,14 +19,14 @@
       {
         "slug": "conditionals",
         "uuid": "9e71eb44-1189-423c-b2bb-ba7e92cc98c7",
-        "concepts": ["conditionals-if","conditionals-switch","booleans"],
-        "prerequisites": ["numbers","basic-strings"]
+        "concepts": ["conditionals-if", "conditionals-switch", "booleans"],
+        "prerequisites": ["numbers", "basic-strings"]
       },
       {
-        "slug": "erros",
+        "slug": "errors",
         "uuid": "397dc808-7016-4d40-8ac7-4395e12bd19f",
-        "concepts": ["errors","basics"],
-        "prerequisites": ["constants","types"]
+        "concepts": ["errors", "basics"],
+        "prerequisites": ["constants", "types"]
       },
       {
         "slug": "maps",

@@ -6,17 +6,15 @@ The concept exercises are based on this [list of concepts][docs-concept-exercise
 
 These are the concept exercises that have currently been implemented, as well as the concepts they teach and their prerequisite concepts:
 
-| exercise                                              | concepts                     | prerequisites                               |
-| ----------------------------------------------------  | ---------------------------- | ------------------------------------------- |
-| [`basics`][concept-exercise-basics]                   | `basics`                     |                                     |
-| [`conditionals`][concept-exercise-conditionals]       | `conditionals-if`<br/>`conditionals-switch`<br/>`booleans` | `numbers`<br/>`basic-strings`|
-| [`erros`][concept-exercise-erros]     | `erros`<br/>`basics`         | `constants`<br/>`types`                     |
-| [`maps`][concept-exercise-maps]       | `maps`                       | `numbers`<br/>`conditionals`<br/>`functions`|
-| [`numbers`][concept-exercise-numbers] | `numbers`<br/>`conditionals` | `basics`                                    |
-| [`slices`][concept-exercise-slices]   | `slices`                     | `arrays`<br/>`numbers`                      |
-| [`strings`][concept-exercise-strings] | `strings`                    | `basics`                                    |
-
-
+| exercise                                        | concepts                                                   | prerequisites                                |
+| ----------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------- |
+| [`basics`][concept-exercise-basics]             | `basics`                                                   |                                              |
+| [`conditionals`][concept-exercise-conditionals] | `conditionals-if`<br/>`conditionals-switch`<br/>`booleans` | `numbers`<br/>`basic-strings`                |
+| [`errors`][concept-exercise-errors]             | `errors`<br/>`basics`                                      | `constants`<br/>`types`                      |
+| [`maps`][concept-exercise-maps]                 | `maps`                                                     | `numbers`<br/>`conditionals`<br/>`functions` |
+| [`numbers`][concept-exercise-numbers]           | `numbers`<br/>`conditionals`                               | `basics`                                     |
+| [`slices`][concept-exercise-slices]             | `slices`                                                   | `arrays`<br/>`numbers`                       |
+| [`strings`][concept-exercise-strings]           | `strings`                                                  | `basics`                                     |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse.
 
@@ -36,5 +34,5 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-exercise-slices]: ./slices/.meta/design.md
 [concept-exercise-maps]: ./maps/.meta/design.md
 [concept-exercise-conditionals]: ./conditionals/.meta/design.md
-[concept-exercise-erros]: ./erros/.meta/design.md
+[concept-exercise-errors]: ./errors/.meta/design.md
 [concept-exercise-basics]: ./basics/.meta/design.md
