@@ -1,7 +1,7 @@
 ## Learning objectives
 
 - Know the difference between value and reference type parameters.
-- Know how to pass value types by reference using the `ref` and `out`  modifiers.
+- Know how to pass value types by reference using the `ref` and `out` modifiers.
 
 ## Out of scope
 
@@ -23,3 +23,5 @@ This Concept Exercise's prerequisites Concepts are:
 - `conditionals`: `if`, `else`
 - `numbers`
 - `strings`
+- `constructors`: the exercise provides a gentle intuitive introduction to simple parameters
+- `named-parameters`: introduced in the `method-overloading` exercise and used here in _instructions.md_.
