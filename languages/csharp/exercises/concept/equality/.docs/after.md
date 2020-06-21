@@ -10,19 +10,19 @@ The coding exercise illustrates a number of properties of equality in C#:
 - Do not use `==` unless you have overloaded the `==` operator, as well as the `Equals()` method in your class (see the `operator-overloading` exercise) or you care only that the references are equal.
 - The static method `object.ReferenceEquals()` is used to compare two instances. This provides clarity and is a necessity where `Equals()` and `==` have been overloaded.
 - Equality tests in `struct`s are dealt with in the `structs` exercise.
-- Many developers rely on their IDEs to provide implementation of equality methods as these make sure that all the minutiae of equality.
+- Many developers rely on their IDEs to provide implementation of equality methods as these take care of all the minutiae of equality.
 - Tests for the equality of [delegates][delegate-equality] is not specifically discussed in the exercise.
 - There are no built in equality tests for arrays nor most collections. [LINQ][linq] (discussed in later exercises) provides [`SequenceEquals()`][sequence-equal] but in the absence of LINQ it is a matter of iterating through both collections and comparing items individually.
 - For a discussion of how to use `==` and `!=` with your own classes see the `operator-overloading` exercise.
 
 ### `object.GetHashCode()`
 
-- `object.GetHashCode()` returns a hash code in the form of a 32 bit integer. The hash code is used by dictionary and set classes such as `Dictionary<T>` and `HashSet<T>` to store objects in a performant manner.
+- `object.GetHashCode()` returns a hash code in the form of a 32 bit integer. The hash code is used by dictionary and set classes such as `Dictionary<T>` and `HashSet<T>` to store and retrieve objects in a performant manner. In the case of dictionaries the hashing relates to the keys.
 - There is an expectation amongst C# developers that if you override `Equals()` you will also override `GetHashCode()`. There is a relationship between `Equals()` and `GetHashCode()` that must hold true for correct behavour of dictionary and hash set classes and any others that use a hash code. You are expected to implement the method so that no traps are laid for maintainers who might add a hash code based collection at a later stage.
-- The relationship between hash code and equality is that if two two objects are equal (`Equal()` return true) then `GetHashCode()` for the two objects must return the same value. This does not apply in the reverse direction. It is not symmetrical. Picture a lookup function that first goes to a "bucket" using the hash code and then picks out the particular target using the equality test.
-- The easiest way to create a hashcode is to call `HashCode.Combine()` passing in the values used in the equality test (or a subset). Bear in mind the more information you provide to `Combine()` the more performant the hash implementation.
-- It is possible that you can design a better hashcode than that produced by the library routines but either it's because you have an understanding of the hashed collection's behavior or because it is a very simple collection where values can be used directly without hashing.  It may not be worth the extra effort.
-- The values used in the equality test must be stable while the hashed collection is in use.  If you add an object to the collection with one set of values and then change those values the hash code will no longer point to the correct "bucket".
+- The relationship between hash code and equality is that if two two objects are equal (`Equal()` returns true) then `GetHashCode()` for the two objects must return the same value. This does not apply in the reverse direction. It is not symmetrical. Picture a lookup function that first goes to a "bucket" using the hash code and then picks out the particular target using the equality test.
+- The easiest way to create a hashcode is to call `HashCode.Combine()` passing in the values used in the equality test (or a subset). Bear in mind the more information you provide to `Combine()` the more performant the hash implementation is likely to be.
+- It is possible that you can design a better hashcode than that produced by the library routines but either it's because you have an detailed understanding of the hashed collection's behavior or because it is a very simple collection where values can be used directly without hashing. It may not be worth the extra effort.
+- The values used in the equality test must be stable while the hashed collection is in use. If you add an object to the collection with one set of values and then change those values the hash code will no longer point to the correct "bucket".
 
 ### Performance Enhancements
 
@@ -34,9 +34,11 @@ If you add the interface `IEquatable<T>` to your class this will require the ove
 
 ### `IEqualityComparer<T>`
 
-If you have a class that can be uniquely identified in two different ways, say a `Person` class that has a SSID and a unique email address then .NET provides a means to allow two different collections to use different hash-code and equality tests. Each can take an different implementation of `IEqualityComparer<T>` which will provide an `Equals()` and a `GetHashCode()` method.
+If you have a class that can be uniquely identified in two different ways, say a `Person` class that has a SSID and a unique email address then .NET provides a means to allow two different collections to use different hash-code and equality tests. Each can take an different implementation of `IEqualityComparer<T>` which will provide an `Equals()` and a `GetHashCode()` method. You can have a dictionary keyed on SSID and another keyed on email address.
 
 Where `IEqualityComparer<T>` is in play you would typically still implement `Equals()` and `GetHashCode()` on your item class to avoid problems outside the collection classes.
+
+One consideration when using `IEqualityComparer<T>` is that privae methods etc. will not be available for the equality test.
 
 ### Note on floating point equality
 
@@ -46,9 +48,7 @@ One primitive that can challenge the unwary coder is testing the [equality of fl
 
 This [article][so-equals-inheritance] shows some of the decisions that have to be made with regard to equality and inheritance.
 
-- mention dictionary keys
--
-- insights into hash codes and a practical guide to making them
+### General Informaton
 
 * [Equality][equality]: how equality comparisons work in C#, including reference- and value type equality.
 * [Equatable][equatable]: describes how to make a reference type use structural equality using `IEquatable<T>`.
