@@ -23,7 +23,7 @@ class Window
     private readonly StatusBar statusBar = new StatusBar();
     public override bool Equals(object other)
     {
-        // ... null and checks and performance optimisations
+        // ... null and type checks and performance optimisations
         return title == (other as Window).title && statusBar.Equals((other as Window).statusBar);
     }
 }
