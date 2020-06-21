@@ -1,13 +1,53 @@
-`IEquatable`
-`IEqualityComparer`
+The coding exercise illustrates a number of properties of equality in C#:
+
+### `Equals()`
+
+- Simple types (strings and primitives) are typically tested for equality with the `==` and `!=`. This is considered more idiomatic than using the `Equals()` method which is also available with these types. Java programmers should be alert to the fact that `==` compares by value in C# but by reference in Java when returning to their former language.
+- Reference types (Instances of classes) are compared using the `Equals()` method inherited from `object`. If your goal with the equality test is to ensure that two objects are the exact same instance then relying on `object`'s implementation will suffice. If not, you need to overload `object.Equals()`.
+- If you know that all the instances of your class are created in one place, say characters in some game simulation then reference equality is sufficient. However it is likely that multiple instances of the same real-world entity will be created (from a database, by user input, via a web request). In this case values that uniquely identify the entity must be tested for equality. Therefore `Equals()` must be overridden.
+- An overridden `Equals()` will contain equality tests on members of simple types using `==` and reference types with recursive calls to `Equals()`.
+- In addition to `public override bool Equals(object obj)` you will typically provide the overload `protected bool Equals(FacialFeatures other)`.
+- Do not use `==` unless you have overloaded the `==` operator, as well as the `Equals()` method in your class (see the `operator-overloading` exercise) or you care only that the references are equal.
+- The static method `object.ReferenceEquals()` is used to compare two instances. This provides clarity and is a necessity where `Equals()` and `==` have been overloaded.
+- Equality tests in `struct`s are dealt with in the `structs` exercise.
+- Many developers rely on their IDEs to provide implementation of equality methods as these make sure that all the minutiae of equality.
+- Tests for the equality of [delegates][delegate-equality] is not specifically discussed in the exercise.
+- There are no built in equality tests for arrays nor most collections. [LINQ][linq] (discussed in later exercises) provides [`SequenceEquals()`][sequence-equal] but in the absence of LINQ it is a matter of iterating through both collections and comparing items individually.
+- For a discussion of how to use `==` and `!=` with your own classes see the `operator-overloading` exercise.
+
+### `object.GetHashCode()`
+
+- `object.GetHashCode()` returns a hash code in the form of a 32 bit integer. The hash code is used by dictionary and set classes such as `Dictionary<T>` and `HashSet<T>` to store objects in a performant manner.
+- There is an expectation amongst C# developers that if you override `Equals()` you will also override `GetHashCode()`. There is a relationship between `Equals()` and `GetHashCode()` that must hold true for correct behavour of dictionary and hash set classes and any others that use a hash code. You are expected to implement the method so that no traps are laid for maintainers who might add a hash code based collection at a later stage.
+- The relationship between hash code and equality is that if two two objects are equal (`Equal()` return true) then `GetHashCode()` for the two objects must return the same value. This does not apply in the reverse direction. It is not symmetrical. Picture a lookup function that first goes to a "bucket" using the hash code and then picks out the particular target using the equality test.
+- The easiest way to create a hashcode is to call `HashCode.Combine()` passing in the values used in the equality test (or a subset). Bear in mind the more information you provide to `Combine()` the more performant the hash implementation.
+- It is possible that you can design a better hashcode than that produced by the library routines but either it's because you have an understanding of the hashed collection's behavior or because it is a very simple collection where values can be used directly without hashing.  It may not be worth the extra effort.
+- The values used in the equality test must be stable while the hashed collection is in use.  If you add an object to the collection with one set of values and then change those values the hash code will no longer point to the correct "bucket".
+
+### Performance Enhancements
+
+To improve performance slightly, especially where objects belong to collections you can add an overloaded member `public bool Equals(T other)`.
+
+This will save a certain amount of null checking for reference types and will save a boxing step for value types as they will not need to be converted to an object (boxed) as an argument to `public override bool Equals(object other)`.
+
+If you add the interface `IEquatable<T>` to your class this will require the overload to be implemented.
+
+### `IEqualityComparer<T>`
+
+If you have a class that can be uniquely identified in two different ways, say a `Person` class that has a SSID and a unique email address then .NET provides a means to allow two different collections to use different hash-code and equality tests. Each can take an different implementation of `IEqualityComparer<T>` which will provide an `Equals()` and a `GetHashCode()` method.
+
+Where `IEqualityComparer<T>` is in play you would typically still implement `Equals()` and `GetHashCode()` on your item class to avoid problems outside the collection classes.
+
+### Note on floating point equality
+
+One primitive that can challenge the unwary coder is testing the [equality of floating-point values][0.30000000000000004.com]. This is discussed in the _after.md_ document for the `floating-point-numbers` exercise.
+
+### Equality and Inheritance
+
+This [article][so-equals-inheritance] shows some of the decisions that have to be made with regard to equality and inheritance.
 
 - mention dictionary keys
-- mention structs and refer to structs exercise
-- mention difficulties with floats and mention floating point after.md [here](https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md).
-- mention primitives
-- equality operators mention that they are not overloaded by default and point to operators exercise.
-- equality and inheritance - [SO](https://stackoverflow.com/questions/22154799/equals-method-inheritance-confusion)
-- Bill Wagner's NDC 2020 talk discusses sn approach to `Equals()` with syntax that is more modern.
+-
 - insights into hash codes and a practical guide to making them
 
 * [Equality][equality]: how equality comparisons work in C#, including reference- and value type equality.
@@ -23,3 +63,8 @@
 [hash-set]: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.hashset-1?view=netcore-3.1
 [hash-code]: https://docs.microsoft.com/en-us/dotnet/api/system.hashcode?view=netcore-3.1
 [get-hash-code]: https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode?view=netcore-3.1
+[delegate-equality]: https://docs.microsoft.com/en-us/dotnet/api/system.delegate.equals?view=netcore-3.1
+[sequence-equal]: https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.sequenceequal?redirectedfrom=MSDN&view=netcore-3.1#System_Linq_Enumerable_SequenceEqual__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__
+[linq]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/
+[0.30000000000000004.com]: https://0.30000000000000004.com/
+[so-equals-inheritance]: https://stackoverflow.com/questions/22154799/equals-method-inheritance-confusion
