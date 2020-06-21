@@ -8,7 +8,13 @@
     "indent_size": 2
   },
   "exercises": {
-    "concept": [],
+    "concept": [
+        {
+            "slug": "lists",
+            "uuid": "where to get this?",
+            "concepts": ["lists"],
+            "prerequisites": [""]
+        }],
     "practice": []
   }
 }
