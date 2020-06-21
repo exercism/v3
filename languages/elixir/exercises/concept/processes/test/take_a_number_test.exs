@@ -72,7 +72,7 @@ defmodule TakeANumberTest do
   end
 
   @tag :pending
-  test "keeps working after receiving an unexpected message" do
+  test "ignores unexpected messages and keeps working" do
     pid = TakeANumber.start()
 
     send(pid, :hello?)
@@ -83,5 +83,7 @@ defmodule TakeANumberTest do
 
     send(pid, {:report_state, self()})
     assert_receive 1
+
+    assert Keyword.get(Process.info(pid), :message_queue_len) == 0
   end
 end
