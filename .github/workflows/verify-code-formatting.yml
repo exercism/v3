@@ -10,13 +10,6 @@ on:
       - '**/.prettierignore'
       - '**/.prettierrc'
   pull_request:
-    paths:
-      - '**/*.md'
-      - '**/*.json'
-      - '.prettierignore'
-      - '.prettierrc'
-      - '**/.prettierignore'
-      - '**/.prettierrc'
 
 jobs:
   verify-code-formatting:
