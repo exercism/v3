@@ -5,7 +5,7 @@ The coding exercise illustrates a number of properties of equality in C#:
 #### Topics covered by the coding exercise
 
 - Simple types (strings and primitives) are typically tested for equality with the `==` and `!=`. This is considered more idiomatic than using the [`Equals()`][object-equals] method which is also available with these types. Java programmers should be alert, when dealing with strings, to the fact that `==` compares by value in C# but by reference in Java when returning to their former language.
-- Reference types (Instances of classes) are compared using the `Equals()` method inherited from `object`. If your goal with the equality test is to ensure that two objects are the exact same instance then relying on `object`'s implementation will suffice. If not, you need to overload `object.Equals()`.
+- Reference types (Instances of classes) are compared using the `Equals()` method inherited from `object`. If your goal with the equality test is to ensure that two objects are the exact same instance then relying on `object`'s implementation will suffice. If not, you need to override `object.Equals()`.
 - If you know that all the instances of your class are created in one place, say characters in some game or simulation then reference equality is sufficient. However, it is likely that multiple instances of the same real-world entity will be created (from a database, by user input, via a web request). In this case values that uniquely identify the entity must be tested for equality. Therefore `Equals()` must be overridden.
 - An overridden `Equals()` will contain equality tests on members of simple types using `==` and reference types with recursive calls to `Equals()`.
 
