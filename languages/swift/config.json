@@ -5,7 +5,49 @@
   "version": 3,
   "online_editor": { "indent_style": "space", "indent_size": 2 },
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+        "slug": "arrays",
+        "uuid": "b6c532c9-1e89-4fbf-8f08-27f5befb5bb8",
+        "concepts": ["arrays"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "basics",
+        "uuid": "E6143DBC-895E-47AA-B42C-3034E1F872C2",
+        "concepts": ["basics"],
+        "prerequisites": []
+      },
+      {
+        "slug": "conditionals",
+        "uuid": "6FA28581-0992-4770-A657-2BB5157DB178",
+        "concepts": [
+          "booleans",
+          "conditionals-if",
+          "conditionals-guard",
+          "conditionals-switch"
+        ],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "numbers",
+        "uuid": "3BDAD781-47E1-493A-834D-CA6AC8361FFD",
+        "concepts": ["numbers"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "optionals",
+        "uuid": "9D0BB0AD-904C-4D61-9D2C-AE37913D5741",
+        "concepts": ["optionals"],
+        "prerequisites": ["basics", "numbers", "optionals"]
+      },
+      {
+        "slug": "strings",
+        "uuid": "082D7AEB-EE25-4217-BD6F-82532A65797A",
+        "concepts": ["strings"],
+        "prerequisites": ["basics", "arrays"]
+      }
+    ],
     "practice": []
   }
 }
