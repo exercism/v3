@@ -90,7 +90,7 @@ public class Assessment
 ```
 
 - The values used in the equality test must be stable while the hashed collection is in use. If you add an object to the collection with one set of values and then change those values the hash code will no longer point to the correct "bucket". In practice this means that the object should be [immutable][wiki-immutable]. Other approaches run the risk of creating gotchas for maintainers. Immutability is discussed in other exercises.
-- It is possible that you can design a better hashcode than that produced by the library routines but either it's because you have an detailed understanding of the hashed collection's behavior or because it is a very simple collection where values can be used directly without hashing. It may not be worth the extra effort.
+- It is possible that you can design a better hashcode than that produced by the library routines but either it's because you have an detailed understanding of the data's characteristics or because it is a very simple collection where values can be used directly without hashing. It may not be worth the extra effort.
 
 ### Performance Enhancements
 
