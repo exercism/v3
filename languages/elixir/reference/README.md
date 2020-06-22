@@ -268,10 +268,13 @@ The concept exercises use the following concepts:
 | `bit manipulation`               | Introduction to bit manipulation using the Bitwise module functions                                       |
 | `booleans`                       | Introduction to the boolean type and strict boolean operators -- and/2, or/2, not/1                       |
 | `default-arguments`              | Introduction to default arguments in named functions, function headers                                    |
+| `errors`                         | Introduction to error handling in elixir (try, rescue)                                                    |
+| `exceptions`                     | How to define, use exceptions                                                                             |
 | `closures`                       | How to implement closures in Elixir                                                                       |
 | `conditionals`                   | Intro to Elixir `cond/1` function.                                                                        |
 | `floating-point-numbers`         | How to use floating point numbers to represent real numbers                                               |
 | `guards`                         | What guards are, how to use guards in function heads                                                      |
+| `io`                             | Introduction to input/output in elixir                                                                    |
 | `lists`                          | Introduction to the lists type basic list functions -- hd/1, tl/1, length/1, in/2                         |
 | `maps`                           | Introduction to the map data type                                                                         |
 | `module-attributes-as-constants` | Introduction to using module attributes as constants                                                      |
@@ -286,3 +289,4 @@ The concept exercises use the following concepts:
 | `tuples`                         | Introduction to the tuple data type                                                                       |
 | `errors`                         | Introduction to errors in elixir and patterns to communicate function success/failure                     |
 | `try-rescue`                     | Use of the try-rescue construct in Elixir                                                                 |
+| `try-rescue-else-after`          | Follow-up to try-rescue, using else and after in Elixir                                                   |

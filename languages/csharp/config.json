@@ -43,7 +43,7 @@
         "prerequisites": ["classes", "conditionals", "numbers", "while-loops"]
       },
       {
-        "slug": "dates",
+        "slug": "datetimes",
         "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
         "concepts": ["datetimes"],
         "prerequisites": ["classes", "numbers", "strings"]
@@ -134,6 +134,19 @@
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "user-defined-exceptions",
+        "uuid": "1be577b0-95db-4c09-aff4-ddc68fb7520d",
+        "concepts": ["user-defined-exceptions", "exception-filtering"],
+        "prerequisites": [
+          "exceptions",
+          "inheritance",
+          "strings",
+          "conditionals",
+          "arithmetic-overflow",
+          "signed-integers"
+        ]
       }
     ],
     "practice": []
