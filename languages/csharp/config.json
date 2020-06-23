@@ -13,13 +13,13 @@
         "prerequisites": ["booleans", "classes", "conditionals"]
       },
       {
-        "slug": "asynchronoussss",
+        "slug": "asynchronousss",
         "uuid": "7d358894-4fbd-4c91-b49f-d68f1c5aa6bc",
         "concepts": ["async"],
         "prerequisites": ["methods"]
       },
       {
-        "slug": "basics",
+        "slug": "basicssss",
         "uuid": "7d358894-4fbd-4c91-b49f-d68f1c5aa6bc",
         "concepts": ["basics"],
         "prerequisites": []
