@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # - name: 'Checkout code'
-      #   uses: actions/checkout@v2
+      - name: 'Checkout code'
+        uses: actions/checkout@v2
 
       # - name: 'Install .NET core'
       #   uses: actions/setup-dotnet@v1
@@ -22,7 +22,7 @@ jobs:
       #     dotnet-version: '3.1.201'
 
       - name: 'Install GitHub CLI'
-        run: ./.github/bin/install-gh-cli.sh
+        run: .github/bin/install-gh-cli.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # - name: 'Update languages summary'
