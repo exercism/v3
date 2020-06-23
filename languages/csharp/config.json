@@ -31,7 +31,7 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "chars",
+        "slug": "charsss",
         "uuid": "e74c6cd6-add7-45d1-abcb-513418e9d2d0",
         "concepts": ["chars", "string-builder"],
         "prerequisites": ["conditionals", "for-loops", "strings"]
