@@ -14,7 +14,7 @@ git config --global user.email "github-actions[bot]@users.noreply.github.com"
 git config --global user.name "github-actions[bot]"
 
 # Checkout to new branch
-BRANCH="docs/languagesummary-$(date +%Y%m%d%H%M%S)"
+BRANCH="languagesummary-$(date +%Y%m%d%H%M%S)"
 git checkout -b "$BRANCH"
 
 # Add the updated language summary files
