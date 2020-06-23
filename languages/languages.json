@@ -37,6 +37,22 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/asynchronous",
+          "slug": "asynchronous",
+          "concepts": [
+            {
+              "url": null,
+              "name": "async"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/methods.md",
+              "name": "methods"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/basics",
           "slug": "basics",
           "concepts": [
