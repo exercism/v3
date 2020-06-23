@@ -9,6 +9,10 @@ npx prettier@2.0.4 --write languages/README.md languages/languages.json
 # Fetch and prune remote
 git fetch --prune origin
 
+# Setup the git user (required to commit anything)
+git config --global user.email "github-actions[bot]@users.noreply.github.com"
+git config --global user.name "github-actions[bot]"
+
 # Checkout to new branch
 BRANCH="docs/languagesummary-$(date +%Y%m%d%H%M%S)"
 git checkout -b "$BRANCH"
@@ -23,12 +27,8 @@ if [ -z "$(git status --porcelain)" ]; then
     exit 0
 fi
 
-# Setup the git user (required to commit anything)
-git config --global user.email "github-actions[bot]@users.noreply.github.com"
-git config --global user.name "github-actions[bot]"
-
 echo "Committing updated languages summary"
 
 # Commit and push the changes
 git commit -m "[CI] Update languages summary"
-git push origin "$BRANCH"
+git push origin "HEAD:$BRANCH"
