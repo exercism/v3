@@ -183,6 +183,12 @@
         "uuid": "68a8f721-5db4-4b31-95c8-fa6c38f64327",
         "concepts": ["try-rescue-else-after"],
         "prerequisites": ["io", "try-rescue"]
+      },
+      {
+        "slug": "processes",
+        "uuid": "bec0b00f-816e-443a-af94-14ab4125e505",
+        "concepts": ["processes", "pids"],
+        "prerequisites": ["atoms", "recursion", "pattern-matching", "tuples"]
       }
     ],
     "practice": []

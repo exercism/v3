@@ -25,6 +25,7 @@ These are the concept exercises that have currently been implemented, as well as
 | `multiple-clause-functions` | `multiple-clause-functions`, `guards`, `default-arguments` | `conditionals`, `string-literals`                                                              |
 | `nil`                       | `nil`, `if-conditional`                                    | `booleans`, `strings`                                                                          |
 | `numbers`                   | `integers`, `floating-point-numbers`                       | `basics`                                                                                       |
+| `processes`                 | `processes`, `pids`                                        | `atoms`, `recursion`, `pattern-matching`, `tuples`                                             |
 | `strings`                   | `strings`                                                  | `lists`, `pattern-matching`                                                                    |
 | `structs`                   | `structs`, `static-access-operator`                        | `maps`, `multiple-clause-functions`, `pattern-matching`, `strings`, `nil`, `default-arguments` |
 | `recursion`                 | `recursion`                                                | `lists`, `pattern-matching`, `multiple-clause-functions`, `guards`                             |
