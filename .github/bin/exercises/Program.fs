@@ -4,10 +4,14 @@ open System.Text
 open System.Text.Json
 open System.Text.Json.Serialization
 
+type Concept =
+    { Name: string
+      File: FileInfo option }
+
 type ConceptExercise =
     { Slug: string
-      Concepts: string[]
-      Prerequisites: string[] }
+      Concepts: Concept[]
+      Prerequisites: Concept[] }
 
 type Exercises =
     { Concept: ConceptExercise[] }
@@ -15,7 +19,7 @@ type Exercises =
 type Track =
     { Name: string
       Slug: string
-      Exercises: Exercises } 
+      Exercises: Exercises }
     
 module Parser =
 
@@ -33,6 +37,26 @@ module Parser =
     type JsonTrack =
         { [<JsonPropertyName("language")>] Language: string
           [<JsonPropertyName("exercises")>] Exercises: JsonExercises }
+        
+    let private parseConcept: string -> Concept =
+        let typesDirectory = DirectoryInfo(Path.Combine("reference", "types"))
+        let conceptsDirectory = DirectoryInfo(Path.Combine("reference", "concepts"))
+        let referenceFiles = Array.append (typesDirectory.GetFiles()) (conceptsDirectory.GetFiles())
+        
+        fun (concept: string) ->
+            let potentialFileNames =
+                [sprintf "%s.md" concept
+                 sprintf "%ss.md" concept
+                 sprintf "%s.md" (concept.TrimEnd('s'))
+                 sprintf "%s.md" (concept.Replace("-", "_"))
+                 sprintf "%ss.md" (concept.Replace("-", "_"))]
+            
+            let conceptFile =
+                referenceFiles
+                |> Seq.tryFind (fun fileInfo -> List.contains fileInfo.Name potentialFileNames)
+            
+            { File = conceptFile
+              Name = concept }
     
     let private configJsonPath (languageDirectory: DirectoryInfo) = Path.Combine(languageDirectory.FullName, "config.json")
     
@@ -49,10 +73,11 @@ module Parser =
         let configJson = parseConfigJson languageDirectory
         let toConceptExercise (jsonConceptExercise: JsonConceptExercise) : ConceptExercise =
             let emptyIfNull arr = if arr = null then Array.empty else arr
+            let toConcepts arr = arr |> emptyIfNull |> Array.map parseConcept
             
             { Slug = jsonConceptExercise.Slug
-              Concepts = jsonConceptExercise.Concepts |> emptyIfNull
-              Prerequisites = jsonConceptExercise.Prerequisites |> emptyIfNull }
+              Concepts = jsonConceptExercise.Concepts |> toConcepts
+              Prerequisites = jsonConceptExercise.Prerequisites |> toConcepts }
 
         { Name = configJson.Language
           Slug = languageDirectory.Name
@@ -93,12 +118,12 @@ module Markdown =
 
         for track in tracks do
             let trackLink = sprintf "[%s](./%s/README.md)" track.Name track.Slug
-            let exercisesLink = sprintf "[%d](https://github.com/exercism/v3/tree/master/languages/%s/exercises/concept)" track.Exercises.Concept.Length track.Slug
+            let exercisesLink = sprintf "[%d](./%s/config.json)" track.Exercises.Concept.Length track.Slug
             renderLine trackLink exercisesLink
 
         markdown.AppendLine()
     
-    let private appendExercises (tracks: Track list) (markdown: StringBuilder): StringBuilder =
+    let private appendExercises (languagesDirectory: DirectoryInfo) (tracks: Track list) (markdown: StringBuilder): StringBuilder =
         markdown
             .AppendLine("## Implemented Concept Exercises")
             .AppendLine()
@@ -117,10 +142,21 @@ module Markdown =
             let trackLink = sprintf "[%s](./%s/README.md)" track.Name track.Slug
             
             for conceptExercise in track.Exercises.Concept |> Array.sortBy (fun exercise -> exercise.Slug) do
-                let renderArray arr =
-                    if Array.isEmpty arr then "-" else arr |> Array.sort |> String.concat ", "  
+                let renderConcept (concept: Concept): string =
+                    match concept.File with
+                    | Some file -> sprintf "[`%s`](%s)" concept.Name (Path.GetRelativePath(languagesDirectory.FullName, file.FullName).Replace(Path.DirectorySeparatorChar, '/'))
+                    | None -> sprintf "`%s`" concept.Name
                 
-                let exerciseLink = sprintf "[%s](https://github.com/exercism/v3/tree/master/languages/%s/exercises/concept/%s/.docs/instructions.md)" conceptExercise.Slug track.Slug conceptExercise.Slug
+                let renderArray (arr: Concept[]) =
+                    if Array.isEmpty arr then
+                        "-"
+                    else
+                        arr
+                        |> Array.sortBy (fun concept -> concept.Name)
+                        |> Array.map renderConcept
+                        |> String.concat ", "  
+                
+                let exerciseLink = sprintf "[%s](./%s/exercises/concept/%s/.docs/instructions.md)" conceptExercise.Slug track.Slug conceptExercise.Slug
                 let concepts = conceptExercise.Concepts |> renderArray  
                 let prerequisites = conceptExercise.Prerequisites |> renderArray
                 renderLine trackLink exerciseLink concepts prerequisites
@@ -132,25 +168,30 @@ module Markdown =
             .AppendLine("If you would like to create a new language track for v3, please [open an issue here](https://github.com/exercism/request-new-language-track).")
             .AppendLine()
 
-    let private renderToMarkdown (tracks: Track list): string =
+    let private renderToMarkdown (languagesDirectory: DirectoryInfo) (tracks: Track list): string =
         StringBuilder()
         |> appendHeader
         |> appendTracks tracks
-        |> appendExercises tracks
+        |> appendExercises languagesDirectory tracks
         |> appendFooter
         |> string
 
     let writeTracks (languagesDirectory: DirectoryInfo) (tracks: Track list): unit =
-        let markdown = renderToMarkdown tracks
+        let markdown = renderToMarkdown languagesDirectory tracks
         File.WriteAllText(Path.Combine(languagesDirectory.FullName, "README.md"), markdown)
 
 module Json =
     [<CLIMutable>]
+    type JsonConcept =
+        { Url: string
+          Name: string }
+    
+    [<CLIMutable>]
     type JsonConceptExercise =
         { Url: string
           Slug: string
-          Concepts: string[]
-          Prerequisites: string[] }
+          Concepts: JsonConcept[]
+          Prerequisites: JsonConcept[] }
 
     [<CLIMutable>]
     type JsonExercises =
@@ -162,11 +203,18 @@ module Json =
           Slug: string
           Exercises: JsonExercises } 
     
+    let private conceptToJsonConcept (concept: Concept): JsonConcept =
+        { Url =
+            concept.File
+            |> Option.map (fun file -> sprintf "https://github.com/exercism/v3/tree/master/%s" (Path.GetRelativePath(Directory.GetCurrentDirectory(), file.FullName)))
+            |> Option.toObj
+          Name = concept.Name }
+    
     let private conceptExerciseToJsonConceptExercise (track: Track) (conceptExercise: ConceptExercise): JsonConceptExercise =
         { Url = sprintf "https://github.com/exercism/v3/tree/master/languages/%s/exercises/concept/%s" track.Slug conceptExercise.Slug
           Slug = conceptExercise.Slug
-          Concepts = conceptExercise.Concepts
-          Prerequisites = conceptExercise.Prerequisites }
+          Concepts = Array.map conceptToJsonConcept conceptExercise.Concepts
+          Prerequisites = Array.map conceptToJsonConcept conceptExercise.Prerequisites }
     
     let private trackToJsonTrack (track: Track): JsonTrack =
         { Name = track.Name
