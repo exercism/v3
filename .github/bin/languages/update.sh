@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+# !/usr/bin/env sh
 
 # Update the languages summary
 dotnet run -p .github/bin/languages
@@ -22,7 +22,6 @@ git config --global user.name "github-actions[bot]"
 
 echo "Committing updated languages summary"
 
-# Commit the changes
-git add .
+# Commit and push the changes
 git commit -m "[CI] Update languages summary"
 git push
