@@ -1,0 +1,1137 @@
+[
+  {
+    "name": "C#",
+    "slug": "csharp",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/arrays",
+          "slug": "arrays",
+          "concepts": [
+            "arrays",
+            "for-loops",
+            "foreach-loops"
+          ],
+          "prerequisites": [
+            "booleans",
+            "classes",
+            "conditionals"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/basics",
+          "slug": "basics",
+          "concepts": [
+            "basics"
+          ],
+          "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/booleans",
+          "slug": "booleans",
+          "concepts": [
+            "booleans"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/chars",
+          "slug": "chars",
+          "concepts": [
+            "chars",
+            "string-builder"
+          ],
+          "prerequisites": [
+            "conditionals",
+            "for-loops",
+            "strings"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/classes",
+          "slug": "classes",
+          "concepts": [
+            "classes"
+          ],
+          "prerequisites": [
+            "conditionals",
+            "numbers",
+            "strings"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/constructors",
+          "slug": "constructors",
+          "concepts": [
+            "constructors"
+          ],
+          "prerequisites": [
+            "classes",
+            "conditionals",
+            "numbers",
+            "while-loops"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/datetimes",
+          "slug": "datetimes",
+          "concepts": [
+            "datetimes"
+          ],
+          "prerequisites": [
+            "classes",
+            "numbers",
+            "strings"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/dictionaries",
+          "slug": "dictionaries",
+          "concepts": [
+            "dictionaries"
+          ],
+          "prerequisites": [
+            "foreach-loops",
+            "generic-types",
+            "strings",
+            "indexers"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/enums",
+          "slug": "enums",
+          "concepts": [
+            "enums",
+            "pattern-matching-constants"
+          ],
+          "prerequisites": [
+            "conditionals",
+            "strings"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/flag-enums",
+          "slug": "flag-enums",
+          "concepts": [
+            "bit-manipulation",
+            "compound-assignment",
+            "flag-enums"
+          ],
+          "prerequisites": [
+            "attributes",
+            "enums",
+            "integral-numbers"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/floating-point-numbers",
+          "slug": "floating-point-numbers",
+          "concepts": [
+            "floating-point-numbers",
+            "while-loops"
+          ],
+          "prerequisites": [
+            "conditionals",
+            "numbers"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/inheritance",
+          "slug": "inheritance",
+          "concepts": [
+            "inheritance"
+          ],
+          "prerequisites": [
+            "booleans",
+            "classes",
+            "conditionals",
+            "constructors",
+            "strings"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/method-overloading",
+          "slug": "method-overloading",
+          "concepts": [
+            "method-overloading",
+            "named-arguments",
+            "optional-parameters"
+          ],
+          "prerequisites": [
+            "classes",
+            "constructors",
+            "enums",
+            "properties",
+            "strings"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/nullability",
+          "slug": "nullability",
+          "concepts": [
+            "nullability"
+          ],
+          "prerequisites": [
+            "conditionals",
+            "memory-allocation",
+            "strings"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/numbers",
+          "slug": "numbers",
+          "concepts": [
+            "conditionals",
+            "numbers"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/properties",
+          "slug": "properties",
+          "concepts": [
+            "properties"
+          ],
+          "prerequisites": [
+            "classes",
+            "enums",
+            "exceptions",
+            "floating-point-numbers",
+            "numbers"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/strings",
+          "slug": "strings",
+          "concepts": [
+            "strings"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/user-defined-exceptions",
+          "slug": "user-defined-exceptions",
+          "concepts": [
+            "user-defined-exceptions",
+            "exception-filtering"
+          ],
+          "prerequisites": [
+            "exceptions",
+            "inheritance",
+            "strings",
+            "conditionals",
+            "arithmetic-overflow",
+            "signed-integers"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "C\u002B\u002B",
+    "slug": "cpp",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/cpp/exercises/concept/strings",
+          "slug": "strings",
+          "concepts": [
+            "strings"
+          ],
+          "prerequisites": [
+            ""
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Clojure",
+    "slug": "clojure",
+    "exercises": {
+      "concept": []
+    }
+  },
+  {
+    "name": "Common Lisp",
+    "slug": "common-lisp",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/basics",
+          "slug": "basics",
+          "concepts": [
+            "comments",
+            "expressions",
+            "cons",
+            "symbols"
+          ],
+          "prerequisites": []
+        }
+      ]
+    }
+  },
+  {
+    "name": "Dart",
+    "slug": "dart",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/dart/exercises/concept/numbers",
+          "slug": "numbers",
+          "concepts": [
+            "numbers-basic",
+            "type-conversion"
+          ],
+          "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/dart/exercises/concept/strings",
+          "slug": "strings",
+          "concepts": [
+            "strings-basic"
+          ],
+          "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/dart/exercises/concept/futures",
+          "slug": "futures",
+          "concepts": [
+            "futures"
+          ],
+          "prerequisites": [
+            "iterables-basic",
+            "errors-basic",
+            "callbacks",
+            "recursion"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Elixir",
+    "slug": "elixir",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/basics",
+          "slug": "basics",
+          "concepts": [
+            "basics"
+          ],
+          "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/booleans",
+          "slug": "booleans",
+          "concepts": [
+            "booleans"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/numbers",
+          "slug": "numbers",
+          "concepts": [
+            "integers",
+            "floating-point-numbers"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/conditionals",
+          "slug": "conditionals",
+          "concepts": [
+            "conditionals",
+            "atoms"
+          ],
+          "prerequisites": [
+            "booleans"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/lists",
+          "slug": "lists",
+          "concepts": [
+            "lists",
+            "string-literals"
+          ],
+          "prerequisites": [
+            "booleans"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/multiple-clause-functions",
+          "slug": "multiple-clause-functions",
+          "concepts": [
+            "multiple-clause-functions",
+            "guards",
+            "default-arguments"
+          ],
+          "prerequisites": [
+            "conditionals",
+            "string-literals"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/anonymous-functions",
+          "slug": "anonymous-functions",
+          "concepts": [
+            "anonymous-functions",
+            "closures",
+            "bit-manipulation"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/tuples",
+          "slug": "tuples",
+          "concepts": [
+            "tuples",
+            "pattern-matching"
+          ],
+          "prerequisites": [
+            "atoms",
+            "floating-point-numbers",
+            "multiple-clause-functions"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/strings",
+          "slug": "strings",
+          "concepts": [
+            "strings"
+          ],
+          "prerequisites": [
+            "lists",
+            "pattern-matching"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/nil",
+          "slug": "nil",
+          "concepts": [
+            "nil",
+            "if-conditional"
+          ],
+          "prerequisites": [
+            "strings",
+            "booleans"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/maps",
+          "slug": "maps",
+          "concepts": [
+            "module-attributes-as-constants",
+            "maps"
+          ],
+          "prerequisites": [
+            "lists",
+            "tuples",
+            "anonymous-functions",
+            "default-arguments"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/recursion",
+          "slug": "recursion",
+          "concepts": [
+            "recursion"
+          ],
+          "prerequisites": [
+            "lists",
+            "pattern-matching",
+            "multiple-clause-functions",
+            "guards"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/charlists",
+          "slug": "charlists",
+          "concepts": [
+            "charlists",
+            "case"
+          ],
+          "prerequisites": [
+            "lists",
+            "recursion",
+            "pattern-matching",
+            "guards"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/access-behaviour",
+          "slug": "access-behaviour",
+          "concepts": [
+            "access-behaviour"
+          ],
+          "prerequisites": [
+            "maps",
+            "strings",
+            "recursion",
+            "nil"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/binary-matching",
+          "slug": "binary-matching",
+          "concepts": [
+            "binaries"
+          ],
+          "prerequisites": [
+            "strings",
+            "pattern-matching",
+            "if-conditional",
+            "bitstrings"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/bitstrings",
+          "slug": "bitstrings",
+          "concepts": [
+            "bitstrings",
+            "tail-call-recursion"
+          ],
+          "prerequisites": [
+            "charlists",
+            "recursion",
+            "pattern-matching"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/enum",
+          "slug": "enum",
+          "concepts": [
+            "enum"
+          ],
+          "prerequisites": [
+            "lists",
+            "maps",
+            "atoms",
+            "tuples",
+            "nil",
+            "anonymous-functions"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/errors",
+          "slug": "errors",
+          "concepts": [
+            "errors",
+            "try-rescue"
+          ],
+          "prerequisites": [
+            "anonymous-functions",
+            "pattern-matching",
+            "structs"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/structs",
+          "slug": "structs",
+          "concepts": [
+            "structs",
+            "static-access-operator"
+          ],
+          "prerequisites": [
+            "maps",
+            "multiple-clause-functions",
+            "pattern-matching",
+            "strings",
+            "nil",
+            "default-arguments"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/exceptions",
+          "slug": "exceptions",
+          "concepts": [
+            "exceptions"
+          ],
+          "prerequisites": [
+            "access-behaviour",
+            "errors"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/keyword-lists",
+          "slug": "keyword-lists",
+          "concepts": [
+            "keyword-lists"
+          ],
+          "prerequisites": [
+            "lists",
+            "tuples",
+            "atoms",
+            "if-conditional",
+            "default-arguments"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/try-rescue-else-after",
+          "slug": "try-rescue-else-after",
+          "concepts": [
+            "try-rescue-else-after"
+          ],
+          "prerequisites": [
+            "io",
+            "try-rescue"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Elm",
+    "slug": "elm",
+    "exercises": {
+      "concept": []
+    }
+  },
+  {
+    "name": "Emacs Lisp",
+    "slug": "emacs-lisp",
+    "exercises": {
+      "concept": []
+    }
+  },
+  {
+    "name": "Erlang",
+    "slug": "erlang",
+    "exercises": {
+      "concept": []
+    }
+  },
+  {
+    "name": "F#",
+    "slug": "fsharp",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/arrays",
+          "slug": "arrays",
+          "concepts": [
+            "arrays"
+          ],
+          "prerequisites": [
+            "booleans",
+            "pattern-matching"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/basics",
+          "slug": "basics",
+          "concepts": [
+            "basics"
+          ],
+          "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/booleans",
+          "slug": "booleans",
+          "concepts": [
+            "booleans"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/datetimes",
+          "slug": "datetimes",
+          "concepts": [
+            "datetimes"
+          ],
+          "prerequisites": [
+            "classes",
+            "numbers",
+            "strings"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/discriminated-unions",
+          "slug": "discriminated-unions",
+          "concepts": [
+            "discriminated-unions",
+            "pattern-matching"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/floating-point-numbers",
+          "slug": "floating-point-numbers",
+          "concepts": [
+            "floating-point-numbers"
+          ],
+          "prerequisites": [
+            "conditionals",
+            "numbers"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lists",
+          "slug": "lists",
+          "concepts": [
+            "lists"
+          ],
+          "prerequisites": [
+            "booleans",
+            "strings"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/numbers",
+          "slug": "numbers",
+          "concepts": [
+            "conditionals",
+            "numbers"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/pattern-matching",
+          "slug": "pattern-matching",
+          "concepts": [
+            "pattern-matching"
+          ],
+          "prerequisites": [
+            "conditionals",
+            "strings"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/records",
+          "slug": "records",
+          "concepts": [
+            "records"
+          ],
+          "prerequisites": [
+            "booleans",
+            "numbers",
+            "pattern-matching",
+            "strings"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/recursion",
+          "slug": "recursion",
+          "concepts": [
+            "recursion"
+          ],
+          "prerequisites": [
+            "discriminated-unions",
+            "higher-order-functions",
+            "lists",
+            "pattern-matching"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/strings",
+          "slug": "strings",
+          "concepts": [
+            "strings"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Go",
+    "slug": "go",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/numbers",
+          "slug": "numbers",
+          "concepts": [
+            "numbers",
+            "conditionals"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/slices",
+          "slug": "slices",
+          "concepts": [
+            "slices"
+          ],
+          "prerequisites": [
+            "arrays",
+            "numbers"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/strings",
+          "slug": "strings",
+          "concepts": [
+            "strings"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Haskell",
+    "slug": "haskell",
+    "exercises": {
+      "concept": []
+    }
+  },
+  {
+    "name": "J",
+    "slug": "j",
+    "exercises": {
+      "concept": []
+    }
+  },
+  {
+    "name": "Java",
+    "slug": "java",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/basics",
+          "slug": "basics",
+          "concepts": [
+            "basics"
+          ],
+          "prerequisites": []
+        }
+      ]
+    }
+  },
+  {
+    "name": "JavaScript",
+    "slug": "javascript",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-analysis",
+          "slug": "array-analysis",
+          "concepts": [
+            "array-analysis"
+          ],
+          "prerequisites": [
+            "arrays",
+            "booleans",
+            "callbacks",
+            "numbers"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/arrays",
+          "slug": "arrays",
+          "concepts": [
+            "arrays"
+          ],
+          "prerequisites": [
+            "numbers"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/basics",
+          "slug": "basics",
+          "concepts": [
+            "basics"
+          ],
+          "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/booleans",
+          "slug": "booleans",
+          "concepts": [
+            "booleans"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/numbers",
+          "slug": "numbers",
+          "concepts": [
+            "numbers"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/promises",
+          "slug": "promises",
+          "concepts": [
+            "promises"
+          ],
+          "prerequisites": [
+            "arrays",
+            "callbacks",
+            "errors",
+            "recursion"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/strings",
+          "slug": "strings",
+          "concepts": [
+            "strings"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Julia",
+    "slug": "julia",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/functions-introduction",
+          "slug": "functions-introduction",
+          "concepts": [
+            "functions-introduction"
+          ],
+          "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/multiple-dispatch",
+          "slug": "multiple-dispatch",
+          "concepts": [
+            "multiple-dispatch"
+          ],
+          "prerequisites": [
+            "composite-types",
+            "abstract-types",
+            "methods"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/unicode-identifiers",
+          "slug": "unicode-identifiers",
+          "concepts": [
+            "unicode-identifiers",
+            "emoji-symbols"
+          ],
+          "prerequisites": [
+            "symbols",
+            "composite-types",
+            "methods",
+            "constants"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Kotlin",
+    "slug": "kotlin",
+    "exercises": {
+      "concept": []
+    }
+  },
+  {
+    "name": "Nim",
+    "slug": "nim",
+    "exercises": {
+      "concept": []
+    }
+  },
+  {
+    "name": "PureScript",
+    "slug": "purescript",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/purescript/exercises/concept/booleans",
+          "slug": "booleans",
+          "concepts": [
+            "booleans"
+          ],
+          "prerequisites": []
+        }
+      ]
+    }
+  },
+  {
+    "name": "Python",
+    "slug": "python",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/strings",
+          "slug": "strings",
+          "concepts": [
+            "strings"
+          ],
+          "prerequisites": [
+            "functions"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Ruby",
+    "slug": "ruby",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/arrays",
+          "slug": "arrays",
+          "concepts": [
+            "arrays"
+          ],
+          "prerequisites": [
+            "classes",
+            "booleans",
+            "conditionals",
+            "blocks"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/strings",
+          "slug": "strings",
+          "concepts": [
+            "strings"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/basics",
+          "slug": "basics",
+          "concepts": [
+            "basics"
+          ],
+          "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/numbers",
+          "slug": "numbers",
+          "concepts": [
+            "numbers",
+            "conditionals"
+          ],
+          "prerequisites": [
+            "basics"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/floating-point-numbers",
+          "slug": "floating-point-numbers",
+          "concepts": [
+            "floating-point-numbers",
+            "loops"
+          ],
+          "prerequisites": [
+            "numbers",
+            "conditionals"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Rust",
+    "slug": "rust",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/entry-api",
+          "slug": "entry-api",
+          "concepts": [
+            "entry-api"
+          ],
+          "prerequisites": [
+            "hashmaps",
+            "intro-fn",
+            "intro-types",
+            "intro-option"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/numbers",
+          "slug": "numbers",
+          "concepts": [
+            "numbers",
+            "integers",
+            "floating-point-numbers"
+          ],
+          "prerequisites": [
+            "intro-fn"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/enums",
+          "slug": "enums",
+          "concepts": [
+            "enums-basic"
+          ],
+          "prerequisites": [
+            "strings-basic"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/structs",
+          "slug": "structs",
+          "concepts": [
+            "structs"
+          ],
+          "prerequisites": [
+            "string-use",
+            "floats",
+            "integers",
+            "signedness"
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/options",
+          "slug": "options",
+          "concepts": [
+            "option"
+          ],
+          "prerequisites": [
+            "structs",
+            "match.pattern-matching"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Swift",
+    "slug": "swift",
+    "exercises": {
+      "concept": []
+    }
+  }
+]

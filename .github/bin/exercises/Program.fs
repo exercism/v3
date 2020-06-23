@@ -145,61 +145,47 @@ module Markdown =
         File.WriteAllText(Path.Combine(languagesDirectory.FullName, "README.md"), markdown)
 
 module Json =
-//    
-//    [<CLIMutable>]
-//    type JsonImplementation =
-//        { Track: string
-//          Slug: string
-//          Exercise: string
-//          Url: string }
-//    
-//    [<CLIMutable>]
-//    type JsonConcept =
-//        { Url: string
-//          Name: string }
-//    
-//    [<CLIMutable>]
-//    type JsonStory =
-//        { Url: string
-//          Name: string
-//          Description: string
-//          Concept: JsonConcept
-//          Implementations: JsonImplementation list }
-//        
-//    let private implementationToJsonImplementation (implementation: Implementation) : JsonImplementation =
-//        { Track = implementation.Track
-//          Slug = implementation.Slug
-//          Exercise = implementation.Exercise
-//          Url = sprintf "https://github.com/exercism/v3/blob/master/languages/%s/exercises/concept/%s/.docs/instructions.md" implementation.Slug implementation.Exercise }
-//
-//    let private conceptToJsonConcept (concept: Concept): JsonConcept =
-//        { Name = concept.Name
-//          Url =
-//              concept.File
-//              |> Option.map (fun file ->
-//                  let relativePath = Path.GetRelativePath("reference", file.FullName)
-//                  sprintf "https://github.com/exercism/v3/blob/master/reference/%s" (relativePath.Replace("\\", "/")))
-//              |> Option.toObj }
-//    
-//    let private storyToJsonStory (story: Story): JsonStory =
-//        { Url = sprintf "https://github.com/exercism/v3/blob/master/reference/stories/%s" story.File.Name
-//          Name = story.Name
-//          Description = story.Description
-//          Concept = conceptToJsonConcept story.Concept
-//          Implementations = List.map implementationToJsonImplementation story.Implementations }
-//    
-//    let private renderToJson (stories: Track list): string =
-//        let jsonStories = List.map storyToJsonStory stories
-//        
-//        let options = JsonSerializerOptions()
-//        options.WriteIndented <- true
-//        options.PropertyNamingPolicy <- JsonNamingPolicy.CamelCase
-//        
-//        JsonSerializer.Serialize(jsonStories, options)
-//    
-//    let writeStories (storiesDirectory: DirectoryInfo) (stories: Story list): unit =
-//        let json = renderToJson stories
-//        File.WriteAllText(Path.Combine(storiesDirectory.FullName, "stories.json"), json)
+    [<CLIMutable>]
+    type JsonConceptExercise =
+        { Url: string
+          Slug: string
+          Concepts: string[]
+          Prerequisites: string[] }
+
+    [<CLIMutable>]
+    type JsonExercises =
+        { Concept: JsonConceptExercise[] }
+
+    [<CLIMutable>]
+    type JsonTrack =
+        { Name: string
+          Slug: string
+          Exercises: JsonExercises } 
+    
+    let private conceptExerciseToJsonConceptExercise (track: Track) (conceptExercise: ConceptExercise): JsonConceptExercise =
+        { Url = sprintf "https://github.com/exercism/v3/tree/master/languages/%s/exercises/concept/%s" track.Slug conceptExercise.Slug
+          Slug = conceptExercise.Slug
+          Concepts = conceptExercise.Concepts
+          Prerequisites = conceptExercise.Prerequisites }
+    
+    let private trackToJsonTrack (track: Track): JsonTrack =
+        { Name = track.Name
+          Slug = track.Slug
+          Exercises =
+              { Concept = Array.map (conceptExerciseToJsonConceptExercise track) track.Exercises.Concept } }
+    
+    let private renderToJson (tracks: Track list): string =
+        let jsonTracks = List.map trackToJsonTrack tracks
+        
+        let options = JsonSerializerOptions()
+        options.WriteIndented <- true
+        options.PropertyNamingPolicy <- JsonNamingPolicy.CamelCase
+        
+        JsonSerializer.Serialize(jsonTracks, options)
+    
+    let writeTracks (languagesDirectory: DirectoryInfo) (tracks: Track list): unit =
+        let json = renderToJson tracks
+        File.WriteAllText(Path.Combine(languagesDirectory.FullName, "languages.json"), json)
 
 [<EntryPoint>]
 let main _ =
@@ -207,6 +193,6 @@ let main _ =
     let tracks = Parser.parseTracks languagesDirectory
     
     Markdown.writeTracks languagesDirectory tracks
-//    Json.writeStories languagesDirectory tracks
+    Json.writeTracks languagesDirectory tracks
 
     0
