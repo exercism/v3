@@ -10,7 +10,7 @@ npx prettier@2.0.4 --write languages/README.md languages/languages.json
 git fetch --prune origin
 
 # Checkout to new branch
-BRANCH="docs/languages-summary-update-$(date +%Y%m%d-%H%M%S)"
+BRANCH="docs/languagesummary-$(date +%Y%m%d%H%M%S)"
 git checkout -b "$BRANCH"
 
 # Add the updated language summary files
