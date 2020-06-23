@@ -48,6 +48,7 @@ ReferenceEquals(winA, winA);
 - In addition to `public override bool Equals(object obj)` IDEs typically generate the overload `protected bool Equals(FacialFeatures other)` for use by derived classes.
 - Do not use `==` unless you have [overloaded][operator-overloading] the `==` operator, as well as the `Equals()` method in your class (see the `operator-overloading` exercise) or you care only that the references are equal.
 - Equality tests in [`struct`s][sruct] are dealt with in the `structs` exercise.
+- Equality of [`tuple`s][tuples-equality] is dealt with in the `tuples` exercise.
 - Many developers rely on their IDEs to provide implementation of equality methods as these take care of all the minutiae of equality. For instance, JetBrains' RIDER (v 2020.1) generates the following equality methods for a class:
 
 ```csharp
@@ -144,3 +145,4 @@ This [article][so-equals-inheritance] shows some of the decisions that have to b
 [hash-code-combine]: https://docs.microsoft.com/en-us/dotnet/api/system.hashcode.combine?view=netcore-3.1
 [wiki-immutable]: https://en.wikipedia.org/wiki/Immutable_object
 [struct]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct
+[tuples-equality]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-7.3/tuple-equality
