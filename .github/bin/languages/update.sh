@@ -29,3 +29,6 @@ git config --global user.name "github-actions[bot]"
 # Commit and push the changes
 git commit -m "[CI] Update languages summary"
 git push origin "$BRANCH"
+
+# Create a PR
+gh pr create -f -B master
