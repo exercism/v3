@@ -27,7 +27,7 @@ lp.IsValidLine("[ERR] Any old text");
 
 ### 2. Split the log line
 
-A new team has joined the organisation and you find their log files are using a strange separator for "fields".  Instead of something sensible like a colon ":" they use a string such as "<--->" or "<=>" (because it's prettier) in fact any string that has a first character of "<" and a last character of ">" and any combination of the following "^*=-".
+A new team has joined the organisation and you find their log files are using a strange separator for "fields". Instead of something sensible like a colon ":" they use a string such as "<--->" or "<=>" (because it's prettier) in fact any string that has a first character of "<" and a last character of ">" and any combination of the following "^\*=-".
 
 Implement `LogParser.SplitLogLIne()` that takes a line and returns an array of strings each of which contains a field.
 
@@ -61,11 +61,29 @@ lp.CountQuotedPasswords(lines);
 
 ```
 
-### 4. Rewrite log to replace password with "xxxxxxxxx"
+### 4. Remove artifacts from log
 
-Implement `LogParser.RewriteLog` to replace the actual passowrd (rather than the text "password") with "xxxxxxxx" unless the password contains the string "pwassword" in which case the mask should be "********"
+You have found that some upstream processing of the logs has been scattering the text "end-of-line" followed by a line number (without an intervening space) throughout the logs.
+
+Implement `LogParser.RemoveEndOfLineText()` to take a string and remove the end-of-line text and return a "clean" string.
+
+Lines not containing end-of-line text should be returned unmodified.
+
+Just remove the end of line string. Do not attempt to adjust the whitespaces.
+
+```csharp
+var lp = new LogParser();
+lp.RemoveEndOfLineText("[INF] end-of-lline23033 Network Falure end-of-line27");
+// => "[INF]  Network Failure "
+```
+
+### 5. Rewrite log to replace password with "xxxxxxxxx"
+
+Implement `LogParser.RewriteLog()` to replace the actual passowrd (rather than the text "password") with "xxxxxxxx" unless the password contains the string "pwassword" in which case the mask should be "**\*\*\*\***"
 
 Lines with quoted passwords have already been removed and you process lines irrespective of whether they are valid.
+
+Lines not containing a password should be returned unmodified.
 
 Password is defined as the first string that follows the text password after a space.
 
