@@ -45,7 +45,7 @@
         "slug": "strings",
         "uuid": "082D7AEB-EE25-4217-BD6F-82532A65797A",
         "concepts": ["strings"],
-        "prerequisites": ["basics", "arrays"]
+        "prerequisites": ["arrays"]
       }
     ],
     "practice": []
