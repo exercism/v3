@@ -16,6 +16,9 @@ if [ -z "$(git status --porcelain)" ]; then
     exit 0
 fi
 
+BRANCH="docs/languages-summary-update-$(date +%Y%m%d-%H%M%S)"
+git checkout -b "$BRANCH"
+
 # Setup the git user (required to commit anything)
 git config --global user.email "github-actions[bot]@users.noreply.github.com"
 git config --global user.name "github-actions[bot]"
@@ -24,4 +27,4 @@ echo "Committing updated languages summary"
 
 # Commit and push the changes
 git commit -m "[CI] Update languages summary"
-git push
+git push origin branch
