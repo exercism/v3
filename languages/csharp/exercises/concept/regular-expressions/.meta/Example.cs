@@ -28,7 +28,6 @@ public class LogParser
 
     public string RemoveEndOfLineText(string line)
     {
-        //string pattern = @"^(?<preamble>.*)\s*(?<eol>end-of-line\d+)\s*(?<postamble>.*)$";
         string pattern = @"end-of-line\d+";
 
         string str = Regex.Replace(line, pattern, string.Empty,

@@ -19,11 +19,11 @@
 - `strings`
 - `arrays`
 - `for-loops`
-
-Other prerequisites will depend on the story.
+- `verbatim-strings`
+- `string-interpolation`
 
 ## Representer
 
-Examine the extent to which regex patterns can or in fact need to be normalize/d [analyzer][analyzer].
+Examine the extent to which regex patterns can or in fact need to be normalized [analyzer][analyzer].
 
 [representer]: https://github.com/exercism/csharp-representer
