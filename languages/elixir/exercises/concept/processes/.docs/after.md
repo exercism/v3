@@ -104,10 +104,6 @@ In practice, this approach is rarely used directly. Elixir offers concurrency ab
 - PIDs function as _mailbox addresses_ - if you have a process' PID, you can send a message to that process.
 - PIDs are usually created indirectly, as a return value of functions that create new processes, like `spawn`.
   - PIDs should not be created directly by the programmer. If it were required, Erlang has a [`list_to_pid/1`][erlang-list-to-pid] function.
-    ```elixir
-    :erlang.list_to_pid('<0.10.0>')
-    # => #PID<0.10.0>
-    ```
 
 [getting-started-processes-state]: https://elixir-lang.org/getting-started/processes.html#state
 [getting-started-processes-links]: https://elixir-lang.org/getting-started/processes.html#state
