@@ -6,6 +6,9 @@ dotnet run -p .github/bin/languages
 # Format the documents
 npx prettier@2.0.4 --write languages/README.md languages/languages.json
 
+# Fetch and prune remote
+git fetch --prune origin
+
 # Checkout to new branch
 BRANCH="docs/languages-summary-update-$(date +%Y%m%d-%H%M%S)"
 git checkout -b "$BRANCH"
