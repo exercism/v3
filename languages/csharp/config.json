@@ -25,7 +25,7 @@
         "prerequisites": []
       },
       {
-        "slug": "booleans",
+        "slug": "booleansss",
         "uuid": "401fe55e-407e-4408-88ca-0a4b342ab95b",
         "concepts": ["booleans"],
         "prerequisites": ["basics"]
