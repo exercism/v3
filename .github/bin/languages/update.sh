@@ -6,6 +6,10 @@ dotnet run -p .github/bin/languages
 # Format the documents
 npx prettier@2.0.4 --write languages/README.md languages/languages.json
 
+# Checkout to new branch
+BRANCH="docs/languages-summary-update-$(date +%Y%m%d-%H%M%S)"
+git checkout -b "$BRANCH"
+
 # Add the updated language summary files
 git add languages/README.md
 git add languages/languages.json
@@ -15,9 +19,6 @@ if [ -z "$(git status --porcelain)" ]; then
     echo "No changes to the languages summary"
     exit 0
 fi
-
-BRANCH="docs/languages-summary-update-$(date +%Y%m%d-%H%M%S)"
-git checkout -b "$BRANCH"
 
 # Setup the git user (required to commit anything)
 git config --global user.email "github-actions[bot]@users.noreply.github.com"
