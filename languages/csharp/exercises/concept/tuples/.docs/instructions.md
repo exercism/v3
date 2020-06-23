@@ -15,14 +15,29 @@ Your analysis should return 3 pieces of data
 
 Numbering above is 1 based.
 
+Implement the method `PhoneNumber.Analyze()` to produce the phone number info.
+
 ```csharp
-PhoneNumbers.Analyze("631-555-1234");
+PhoneNumber.Analyze("631-555-1234");
 // => (false, true, "1234")
 ```
 
-### 2. Detect if a phone number has a New York dialing code (212)
+### 2. Detect if a phone number is fake prefix code (555)
+
+Implement the method `PhoneNumber.IsFake()` to detect whether the phone number is used using the phone number info produced in task 1.
 
 ```csharp
-PhoneNumbers.IsFake(PhoneNumbers.Analyze("631-555-1234"));
+PhoneNumber.IsFake(PhoneNumbers.Analyze("631-555-1234"));
+// => true
+```
+
+### 3. Compare the information about two phone numbers to detect duplicates
+
+Implement the method `PhoneNumber.AreDuplicate()` to test equality.
+
+```csharp
+var inputPhoneNumberInfo = PhoneNumber.Analyze("212-502-1234");
+var storedhoneNumberInfo = (true, false, "1234");
+PhoneNumber.AreDuplicate(inputPhoneNumberInfo, storedhoneNumberInfo);
 // => true
 ```

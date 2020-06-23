@@ -1,4 +1,4 @@
-public static class PhoneNumbers
+public static class PhoneNumber
 {
     public static (bool IsNewYork, bool IsFake, string LocalNumber) Analyze(string phoneNumber)
     {
@@ -10,5 +10,11 @@ public static class PhoneNumbers
     public static bool IsFake((bool IsNewYork, bool IsFake, string LocalNumber) phoneNumberInfo)
     {
         return phoneNumberInfo.IsFake;
+    }
+
+    public static bool AreDuplicate((bool IsNewYork, bool IsFake, string LocalNumber) phoneNumberInfo,
+        (bool IsNewYork, bool IsFake, string LocalNumber) storedPhoneNumberInfo)
+    {
+        return phoneNumberInfo == storedPhoneNumberInfo;
     }
 }

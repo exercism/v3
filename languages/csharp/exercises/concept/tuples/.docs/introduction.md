@@ -67,13 +67,3 @@ var results2 = (success: true, message: "well done!");
 bool mySuccess2 = results2.success;
 string myMessaage2 = results2.message;
 ```
-
-Sometimes it is convenient to take a tuple and assign the fields to multiple variables
-and initialize them if appropriate.
-
-```csharp
-var goodNumbers = (42, 3.142, 1729);
-(int ultimateQuestion, var π, var ramanujan) = goodNumbers;
-return ultimateQuestion;
-// => 42
-```
