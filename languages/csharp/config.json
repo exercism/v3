@@ -43,7 +43,7 @@
         "prerequisites": ["conditionals", "numbers", "strings"]
       },
       {
-        "slug": "constructors",
+        "slug": "constructorsss",
         "uuid": "655b5c37-c2eb-4da2-ab0a-3845de898835",
         "concepts": ["constructors"],
         "prerequisites": ["classes", "conditionals", "numbers", "while-loops"]
