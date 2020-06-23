@@ -28,4 +28,4 @@ echo "Committing updated languages summary"
 
 # Commit and push the changes
 git commit -m "[CI] Update languages summary"
-git push origin branch
+git push origin "$BRANCH"
