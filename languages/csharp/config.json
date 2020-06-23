@@ -49,7 +49,7 @@
         "prerequisites": ["classes", "conditionals", "numbers", "while-loops"]
       },
       {
-        "slug": "datetimes",
+        "slug": "datetimess",
         "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
         "concepts": ["datetimes"],
         "prerequisites": ["classes", "numbers", "strings"]
