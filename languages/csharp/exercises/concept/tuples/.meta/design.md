@@ -15,8 +15,6 @@
 
 ## Concepts
 
-This Concepts Exercise's Concepts are:
-
 - `tuples`: know what a tuple is; know how to define a tuple; know how to name tuple fields; know that tuples have structural equality; know how to deconstruct tuples; know that tuples are mutable.
 
 ## Prequisites

@@ -1,4 +1,4 @@
-public class PhoneNumbers
+public static class PhoneNumbers
 {
     public static (bool IsNewYork, bool IsFake, string LocalNumber) Analyze(string phoneNumber)
     {
@@ -7,9 +7,8 @@ public class PhoneNumbers
             , phoneNumber.Substring(8, 4));
     }
 
-    public static bool IsFake((bool IsnewYork, bool IsFake, string LocalNumber) phoneNumberInfo)
+    public static bool IsFake((bool IsNewYork, bool IsFake, string LocalNumber) phoneNumberInfo)
     {
         return phoneNumberInfo.IsFake;
     }
-
 }
