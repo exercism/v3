@@ -1,0 +1,27 @@
+name: Languages summary
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'languages/*/config.json'
+      - 'languages/*/exercises/**'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'Checkout code'
+        uses: actions/checkout@v2
+
+      - name: 'Install .NET core'
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1.201'
+
+      - name: Update languages summary
+        run: .github/bin/languages/update.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

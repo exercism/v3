@@ -63,7 +63,7 @@ In the browser, these files will show at the relevant times. When used via the C
 - Only information that is needed to understand the fundamentals of the concept and solve the exercise should be provided. Extra information should be left for the `after.md`.
 - Links should be used sparingly, if at all. While a link explaining a complex topic like recursion might be useful, for most concepts the links will provide more information than needed so explaining things concisely inline should be the aim.
 - Proper technical terms should be used so that the student can easily search for more information.
-- Code examples should only be used to introduces new syntax (students should not need to search the web for examples of syntax). In other cases provide descriptions or links instead of code.
+- Code examples should only be used to introduce new syntax (students should not need to search the web for examples of syntax). In other cases provide descriptions or links instead of code.
 
 As an example, the introduction to a "strings" exercise might describe a string as just a "Sequence of Unicode characters" or a "series of bytes", tell the users how to create a string, and explain that a string has methods that can be used to manipulate it. Unless the student needs to understand more nuanced details in order to solve the exercise, this type of brief explanation (along with an example of its syntax) should be sufficient information for the student to solve the exercise.
 
@@ -85,6 +85,12 @@ Each task must conform to the following standard:
 - Describe which function/method the student needs to define/implement (e.g. `Implement method X(...) that takes an A and returns a Z`),
 - Provide an example usage of that function in code. These examples should be different to those given in the tests.
 
+We place high value on making Exercism's content safe for everyone and so often err on the side of caution in deciding whether stories are appropriate or not. While we are careful about what we merge, we appreciate that it's hard to be aware of what may be seen as problematic, so we'll always assume you're acting in good faith and do our best to catch any issues in review in a non-confrontational way. If you'd like to check a story with us, please mention @exercism/leadership and we'll look at it together. Here are some guiding points:
+
+- Try to make sure the story is welcoming and can be understood by everyone. If the story contains in-jokes or regional slang, try to think of alternative phrases.
+- Try to write examples that are inclusive to everyone. For example, consider using names from other cultures and mixed genders.
+- Ask yourself whether you know anyone personally who would take offense by the story. If that's the case, consider changing it to avoid it.
+
 For more information, watch [this video][video-docs-instructions.md] and check [this example instructions.md file][docs-instructions.md]. Notice how the example file has a clear distinction between the story at the top and the tasks with code samples below.
 
 ### `.docs/hints.md`
@@ -95,6 +101,7 @@ For more information, watch [this video][video-docs-instructions.md] and check [
 - Hints should be bullet-pointed underneath headings.
 - The hints should be enough to unblock almost any student.
 - The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
+- The hints may use code samples to explain concepts, but not to outline the solution. e.g. in a lists exercise they might show a snippet of how a certain list function works, but not in a way that is directly copy/pasteable into the solution.
 - General hints about the exercise can appear under the `## General` heading.
 - Task-specific hints should appear underneath headings that match their task heading in the `instructions.md` (e.g. `## 2. Do Y`).
 - Task headings should describe the _what_ of the task, not the _how_.
@@ -109,7 +116,17 @@ For more information, watch [this video][video-docs-hints.md] and check [this ex
 
 **Purpose:** Provide more information about the concept(s) for a student to learn from.
 
-Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
+Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included.
+
+This document can also link to any additional resources that might be interesting to the student in the context of the exercise, such as:
+
+- Popular usages for a feature
+- Common pitfalls in a feature's use (e.g. casual use of multiple **threads**)
+- Limitations on use that may catch out the unsuspecting developer
+- Alternative approaches addressed in other exercises
+- Compromises made for ease of learning or to accommodate the Exercism environment, e.g. multiple classes in single file
+- Similar features with which the concept may be confused
+- Performance characteristics and memory usage
 
 For more information, watch [this video][video-docs-after.md] and check [this example after.md file][docs-after.md].
 
@@ -139,7 +156,7 @@ This file contains meta information on the exercise:
 
 - The exercise's author(s) (required)
 - The exercise's contributor(s) (optional)
-- Which exercise it was forked from (required if the exercise is forked)
+- Which exercise(s) it was forked from (required if the exercise is forked)
 - Language version requirements (optional)
 
 If someone is both an author _and_ a contributor, only list that person as an author.
@@ -188,6 +205,7 @@ Note that:
 
 - The order of authors and contributors is not significant and has no meaning.
 - If you are forking an exercise, do not reference original authors or contributors. Just ensure that `forked_from` is correct.
+- While not common, it _is_ possible to fork from multiple exercises.
 - `language_versions` is a free-form string that tracks are free to use and interpret as they like.
 
 ## Code files
@@ -205,6 +223,7 @@ What these files look like depends on your track. At a minimum, the following tr
 - For compiled languages, consider having compilable code, as compiler messages can sometimes be hard to grasp for students new to the language.
 - The code should be as simple as possible.
 - Only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
+- The stub file is shown to the student when doing in-browser coding and is downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-stub-file] and check [this example stub file][stub-file].
 
@@ -216,6 +235,7 @@ For more information, watch [this video][video-stub-file] and check [this exampl
 - The code should be as simple as possible.
 - Only use language features introduced by the exercise's prerequisites (and their prerequisites, and so on).
 - All but the first test should be skipped by default. How this is done differs between languages.
+- The tests file is _not_ shown to the student when doing in-browser coding, but _is_ downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-tests-file] and check [this example tests file][tests-file].
 
@@ -226,6 +246,7 @@ For more information, watch [this video][video-tests-file] and check [this examp
 - The implementation must be _idiomatic_.
 - The code should be as simple as possible.
 - Only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
+- The example file is _not_ shown to the student when doing in-browser coding and is _not_ downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-example-file] and check [this example file][example-file].
 

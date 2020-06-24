@@ -1,9 +1,3 @@
-# Concept Exercise: multiple-clause-functions
-
-## Goal
-
-The goal for this exercise is to teach more about functions in elixir and how to use multiple functions clauses, guards
-
 ## Learning objectives
 
 A student upon completion will:
@@ -44,10 +38,6 @@ This exercise is a fork from [F#'s Number Guessing Game](https://github.com/exer
 - [multiple clauses in anon functions](https://til.hashrocket.com/posts/36c6d2684e-defining-multiple-clauses-in-an-anonymous-function)
 - <https://elixirschool.com/en/lessons/basics/functions/#guards>
 - <https://elixirschool.com/en/lessons/basics/functions/#default-arguments>
-
-## Representer
-
-No modifications at this time
 
 ## Analyzer
 

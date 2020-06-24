@@ -6,12 +6,13 @@ The concept exercises are based on this [list of concepts][reference-shared].
 
 These are the concept exercises that have currently been implemented, as well as the concepts they teach and their prerequisite concepts:
 
-| exercise                                                            | concepts                             | prerequisites                |
-| ------------------------------------------------------------------- | ------------------------------------ | ---------------------------- |
-| [`strings`][concept-exercise-strings]                               | `strings-basic`                      | -                            |
-| [`basics`][concept-exercise-basics]                                 | `basics`                             | -                            |
-| [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`         | `basics`                     |  |
-| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`loops` | `numbers`<br/>`conditionals` |
+| exercise                                                            | concepts                             | prerequisites                                           |
+| ------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------- |
+| [`strings`][concept-exercise-strings]                               | `strings`                            | -                                                       |
+| [`basics`][concept-exercise-basics]                                 | `basics`                             | -                                                       |
+| [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`         | `basics`                                                |
+| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`loops` | `numbers`<br/>`conditionals`                            |
+| [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`each-loops`            | `classes`<br/>`chars`<br/>`booleans`<br/>`conditionals` |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse.
 
@@ -24,6 +25,7 @@ Thanks for wanting to contribute to the Ruby track's concept exercises! Contribu
 To contribute, please find and work on one of the [new exercise issues][issues-new-exercise] or [improve exercise issues][issues-improve-exercise].
 
 [reference-shared]: ../../reference/README.md
+[concept-exercise-arrays]: ./arrays/.meta/design.md
 [concept-exercise-strings]: ./strings/.meta/design.md
 [concept-exercise-basics]: ./basics/.meta/design.md
 [concept-exercise-numbers]: ./numbers/.meta/design.md

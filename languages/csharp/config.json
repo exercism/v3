@@ -9,8 +9,8 @@
       {
         "slug": "arrays",
         "uuid": "b6c532c9-1e89-4fbf-8f08-27f5befb5bb8",
-        "concepts": ["arrays", "foreach-loops"],
-        "prerequisites": ["booleans", "classes", "conditionals", "for-loops"]
+        "concepts": ["arrays", "for-loops", "foreach-loops"],
+        "prerequisites": ["booleans", "classes", "conditionals"]
       },
       {
         "slug": "basics",
@@ -25,6 +25,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "chars",
+        "uuid": "e74c6cd6-add7-45d1-abcb-513418e9d2d0",
+        "concepts": ["chars", "string-builder"],
+        "prerequisites": ["conditionals", "for-loops", "strings"]
+      },
+      {
         "slug": "classes",
         "uuid": "e01dc85b-0731-4701-9eea-c78fb69ce543",
         "concepts": ["classes"],
@@ -37,10 +43,21 @@
         "prerequisites": ["classes", "conditionals", "numbers", "while-loops"]
       },
       {
-        "slug": "dates",
+        "slug": "datetimes",
         "uuid": "7762d9ec-ca95-4e10-b93c-afd2521787a2",
         "concepts": ["datetimes"],
         "prerequisites": ["classes", "numbers", "strings"]
+      },
+      {
+        "slug": "dictionaries",
+        "uuid": "ea01c7d9-a387-451b-9a69-f1b48f00d7a5",
+        "concepts": ["dictionaries"],
+        "prerequisites": [
+          "foreach-loops",
+          "generic-types",
+          "strings",
+          "indexers"
+        ]
       },
       {
         "slug": "enums",
@@ -51,7 +68,7 @@
       {
         "slug": "flag-enums",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
-        "concepts": ["bit-manipulation", "flag-enums"],
+        "concepts": ["bit-manipulation", "compound-assignment", "flag-enums"],
         "prerequisites": ["attributes", "enums", "integral-numbers"]
       },
       {
@@ -117,6 +134,19 @@
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "user-defined-exceptions",
+        "uuid": "1be577b0-95db-4c09-aff4-ddc68fb7520d",
+        "concepts": ["user-defined-exceptions", "exception-filtering"],
+        "prerequisites": [
+          "exceptions",
+          "inheritance",
+          "strings",
+          "conditionals",
+          "arithmetic-overflow",
+          "signed-integers"
+        ]
       }
     ],
     "practice": []
