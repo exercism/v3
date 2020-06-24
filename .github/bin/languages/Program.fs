@@ -144,7 +144,8 @@ module Markdown =
             for conceptExercise in track.Exercises.Concept |> Array.sortBy (fun exercise -> exercise.Slug) do
                 let renderConcept (concept: Concept): string =
                     match concept.File with
-                    | Some file -> sprintf "[`%s`](%s)" concept.Name (Path.GetRelativePath(languagesDirectory.FullName, file.FullName).Replace(Path.DirectorySeparatorChar, '/'))
+                    | Some file ->
+                        sprintf "[`%s`](%s)" concept.Name (Path.GetRelativePath(languagesDirectory.FullName, file.FullName).Replace(Path.DirectorySeparatorChar, '/'))
                     | None -> sprintf "`%s`" concept.Name
                 
                 let renderArray (arr: Concept[]) =
@@ -206,7 +207,7 @@ module Json =
     let private conceptToJsonConcept (concept: Concept): JsonConcept =
         { Url =
             concept.File
-            |> Option.map (fun file -> sprintf "https://github.com/exercism/v3/tree/master/%s" (Path.GetRelativePath(Directory.GetCurrentDirectory(), file.FullName)))
+            |> Option.map (fun file -> sprintf "https://github.com/exercism/v3/tree/master/%s" (Path.GetRelativePath(Directory.GetCurrentDirectory(), file.FullName).Replace(Path.DirectorySeparatorChar, '/')))
             |> Option.toObj
           Name = concept.Name }
     
