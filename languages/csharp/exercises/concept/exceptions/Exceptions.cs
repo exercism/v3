@@ -1,8 +1,7 @@
 using System;
 static class SimpleCalculator
 {
-    public static string ErrorLog {get; set;}
-    public static int Calculate(int operand1, int operand2, string operation)
+    public static string Calculate(int operand1, int operand2, string operation)
     {
         throw new NotImplementedException();
     }
