@@ -21,13 +21,28 @@ var sp2 = car.DisplaySponsor(sponsorNum: 1);
 // => "Walker Industries"
 ```
 
-## 2 Add functionality so that the telemetry system can get battery usage per meter
+## 2 Get tge car's telemetry data
 
 Implement `RemoteControlCar.GetTelemetryData()`.
 
-`GetTelemetryData()` should make the battery percentage and distance driven in meters availble via `out` parameters.
+`GetTelemetryData()` should make the battery percentage and distance driven in meters available via `out` parameters.
 
-`GetTelementryData()` should return `false` if the timestamp argument is less than the previously received value. (There is some issue of multiple telemetry nodes being involved).
+`GetTelementryData()` should return `false` if the timestamp argument is less than the previously received value. (There is some issue of multiple telemetry nodes being involved). In this case the timestamp will be set to the highest previous timestamp and battery percentage and meters driven will both be set to `-1`. Where the call is successful the timestamp remains unchanged.
+
+```csharp
+var car = RemoteControlCar.Buy();
+car.Drive();
+car.Drive();
+long timestamp = 4L;
+car.GetTelemetryData(ref timestamp, out int batteryPercentage, out int distanceDrivenInMeters);
+// => true, 4L, 80, 4
+timestamp = 1L;
+car.GetTelemetryData(ref timestamp, out int batteryPercentage, out int distanceDrivenInMeters);
+// => false, 4L, -1, -1
+
+```
+
+## 3 Add functionality so that the telemetry system can get battery usage per meter
 
 Implement `TelemetryClient.GetBatteryUsagePerMeter()`.
 
@@ -44,7 +59,7 @@ tc.GetBatteryUsagePerMeter(timestamp: 1L);
 // => "no data"
 ```
 
-## Add a telemetry check that the remote control car is in good order
+## 4. Add a telemetry check that the remote control car is in good order
 
 Implement `TelemetryClient.IsCarOk()`.
 

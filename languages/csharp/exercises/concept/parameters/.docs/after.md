@@ -30,13 +30,13 @@ result = importantValue == 1729;
 - A parameter with the [`ref`][ref-parameter] modifier passes a value into a called method. When the method returns the caller will find any updates made by the called method in that parameter.
 
 ```csharp
-void Foo(out int val)
+void Foo(ref int val)
 {
     val *= 7;
 }
 
 int importantValue = 6;
-Foo(out importantValue);
+Foo(ref importantValue);
 return importantValue;
 // => 42
 
@@ -45,7 +45,7 @@ return importantValue;
 -`ref` parameters must be variables as the called method will be operating directly on the parameter as seen by the caller.
 
 - The `out` and `ref` modifiers are required both in the called method signature and at the call site.
-- `out` parameters can be declared inline at the call site viz: `Foo(out int importantValue)`
+- `out` parameters can be declared inline at the call site viz: `Foo(out int importantValue);`
 - If you make a call to a method which has `out` parameters but you are not interested in the value assigned to one or more of them then you can use the [discard][discard] dummy variable `_`, as in: `Foo(out int _);`
 
 All the rules regarding `ref` and `out` parameters are enforced by the compiler.
@@ -57,9 +57,8 @@ The documentation linked to above is summarised below:
 - [passing-parameters][passing-parameters]: explains how values can be passed as arguments. Note that the subject of structs+parameters is discussed in the `structs` exercise.
 - [ref-parameter][ref-parameter]: describes how `ref` parameters work.
 - [out-parameter][out-parameter]: describes how `out` parameters work.
-- [in-parameter][in-parameter]: describes how `in` parameters work.
 
-When studying the documentation note that the documentation uses the following terms:
+When studying the documentation note that it uses the following terms:
 
 - parameter / formal parameter: refers to the parameter as seen by the called method.
 - argument: refers to the parameter as seen by the caller.
@@ -76,7 +75,7 @@ The related topics of [`ref local`][ref-local] and [`ref return`][ref-return] ar
 
 ### Stack Allocations
 
-The rules regarding parameters and their modifiers are sufficiently straightforward that you can take them at face value and understand them at their level of abstraction. However, if you are interested in the underlying mechanisms and why these keywords may make a performance difference at least in the case of `struct`s then you could start with this [_Wikipedia article_][calling-conventions], noting that C# uses `stdcall` on x86/64.
+The rules regarding parameters and their modifiers are sufficiently straightforward that you can take them at face value and understand them at their level of abstraction. However, if you are interested in the underlying mechanisms and why these keywords may make a performance difference, at least in the case of `struct`s, then you could start with this [_Wikipedia article_][calling-conventions], noting that C# uses `stdcall` on x86/64.
 
 The essence of the story is that in the case of unmodified parameters the **value** of a variable is copied onto the program's stack to make it available to called routine whereas for `ref`, `out` and `in` parameters a pointer (**reference**) to the memory containing the value is placed on the program's stack and values are assigned to the memory pointed at by the reference.
 

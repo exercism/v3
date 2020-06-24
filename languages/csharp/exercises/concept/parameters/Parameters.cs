@@ -1,54 +1,60 @@
 using System;
 
-public class RemoteControlCar
+namespace template
 {
-    private int batteryPercentage = 100;
-    private int distanceDrivenInMeters = 0;
-    public void Drive()
+    public class RemoteControlCar
     {
-        if (batteryPercentage > 0)
+        private int batteryPercentage = 100;
+        private int distanceDrivenInMeters = 0;
+
+        public void Drive()
         {
-            batteryPercentage -= 10;
-            distanceDrivenInMeters += 2;
+            if (batteryPercentage > 0)
+            {
+                batteryPercentage -= 10;
+                distanceDrivenInMeters += 2;
+            }
+        }
+
+        public void AddSponsors(params string[] sponsors)
+        {
+            throw new NotImplementedException("Please implement the RemoteControlCar.AddSponsors() method");
+        }
+
+        public string DisplaySponsor(int sponsorNum)
+        {
+            throw new NotImplementedException("Please implement the RemoteControlCar.DisplaySponsor() method");
+        }
+
+        public bool GetTelemetryData(ref long timestamp,
+            out int batteryPercentage, out int distanceDrivenInMeters)
+        {
+            throw new NotImplementedException("Please implement the RemoteControlCar.GetTelemetryData() method");
+        }
+
+        public static RemoteControlCar Buy()
+        {
+            return new RemoteControlCar();
         }
     }
 
-    public void AddSponsors(params string[] sponsors)
+    public class TelemetryClient
     {
-        throw new NotImplementedException("Please implement the RemoteControlCar.AddSponsors() method");
-    }
+        private RemoteControlCar car;
 
-    public string DisplaySponsor(int sponsorNum)
-    {
-        throw new NotImplementedException("Please implement the RemoteControlCar.AddSponsors() method");
-    }
+        public TelemetryClient(RemoteControlCar car)
+        {
+            this.car = car;
+        }
 
-    public bool GetTelemetryData(ref long timestamp,
-        out int batteryPercentage, out int distanceDrivenInMeters)
-    {
-        throw new NotImplementedException("Please implement the RemoteControlCar.AddSponsors() method");
-    }
-    public static RemoteControlCar Buy()
-    {
-        return new RemoteControlCar();
-    }
-}
+        public string IsCarOk(long timestamp)
+        {
+            throw new NotImplementedException("Please implement the TelemetryClient.IsCarOk() method");
+        }
 
-public class TelemetryClient
-{
-    private RemoteControlCar car;
-
-    public TelemetryClient(RemoteControlCar car)
-    {
-        this.car = car;
-    }
-    public string IsCarOk(long timestamp)
-    {
-        throw new NotImplementedException("Please implement the TelemetryClient.IsCarOk() method");
-    }
-
-    public string GetBatteryUsagePerMeter(long timestamp)
-    {
-        throw new NotImplementedException("Please implement the TelemetryClient.GetBatteryUsagePerMeter() method");
+        public string GetBatteryUsagePerMeter(long timestamp)
+        {
+            throw new NotImplementedException("Please implement the TelemetryClient.GetBatteryUsagePerMeter() method");
+        }
     }
 }

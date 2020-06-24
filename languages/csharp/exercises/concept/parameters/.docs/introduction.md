@@ -31,13 +31,13 @@ result = importantValue == 1729;
 - A parameter with the `ref` modifier passes a value into a called method. When the method returns the caller will find any updates made by the called method in that parameter.
 
 ```csharp
-void Foo(out int val)
+void Foo(ref int val)
 {
     val *= 7;
 }
 
 int importantValue = 6;
-Foo(out importantValue);
+Foo(ref importantValue);
 return importantValue;
 // => 42
 
@@ -45,5 +45,5 @@ return importantValue;
 
 - `ref` parameters must be variables as the called method will be operating directly on the parameter as seen by the caller.
 - The `out` and `ref` modifiers are required both in the called method signature and at the call site.
-- `out` parameters can be declared in line at the call site viz: `Foo(out int importantValue)`.
+- `out` parameters can be declared in line at the call site viz: `Foo(out int importantValue);`.
 - If you make a call to a method which has `out` parameters but you are not interested in the value assigned to one or more of them then you can use the discard dummy variable `_`, as in: `Foo(out int _);`.

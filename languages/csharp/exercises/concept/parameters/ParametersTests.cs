@@ -1,8 +1,8 @@
+using example;
 using Xunit;
 
 public class ParametersTests
 {
-
     [Fact]
     public void DisplayNextSponsor_for_3_sponsors()
     {
@@ -15,25 +15,32 @@ public class ParametersTests
     }
 
     [Fact/*(Skip = "Remove this Skip property to run this test")*/]
-    public void GetTelmetryData()
+    public void GetTelmetryData_good()
     {
         var car = RemoteControlCar.Buy();
         car.Drive();
         car.Drive();
         long timestamp = 1L;
         car.GetTelemetryData(ref timestamp, out int batteryPercentage, out int distanceDrivenInMeters);
-        Assert.Equal((80, 4), (batteryPercentage, distanceDrivenInMeters));
+        Assert.Equal((1L, 80, 4), (timestamp, batteryPercentage, distanceDrivenInMeters));
+    }
+
+    [Fact/*(Skip = "Remove this Skip property to run this test")*/]
+    public void GetTelmetryData_bad()
+    {
+        var car = RemoteControlCar.Buy();
+        int batteryPercentage, distanceDrivenInMeters;
+        car.Drive();
+        car.Drive();
+        long timestamp = 4L;
+        car.GetTelemetryData(ref timestamp, out batteryPercentage, out distanceDrivenInMeters);
+        timestamp = 1L;
+        car.GetTelemetryData(ref timestamp, out batteryPercentage, out distanceDrivenInMeters);
+        Assert.Equal((4L, -1, -1), (timestamp, batteryPercentage, distanceDrivenInMeters));
     }
 
     [Fact/*(Skip = "Remove this Skip property to run this test")*/]
     public void IsCarOK_Ok()
-    {
-        var tc = new TelemetryClient(RemoteControlCar.Buy());
-        Assert.Equal("car ok", tc.IsCarOk(timestamp: 1L));
-    }
-
-    [Fact/*(Skip = "Remove this Skip property to run this test")*/]
-    public void IsCarOK_ok()
     {
         var tc = new TelemetryClient(RemoteControlCar.Buy());
         Assert.Equal("car ok", tc.IsCarOk(timestamp: 1L));
@@ -72,5 +79,4 @@ public class ParametersTests
         var tc = new TelemetryClient(car);
         Assert.Equal("no data", tc.GetBatteryUsagePerMeter(timestamp: 1L));
     }
-
 }
