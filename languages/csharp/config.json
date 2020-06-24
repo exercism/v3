@@ -136,6 +136,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "tuples",
+        "uuid": "8bb88ab5-3cde-4ebd-8eef-03323ebfd700",
+        "concepts": ["tuples"],
+        "prerequisites": ["conditionals", "strings"]
+      },
+      {
         "slug": "user-defined-exceptions",
         "uuid": "1be577b0-95db-4c09-aff4-ddc68fb7520d",
         "concepts": ["user-defined-exceptions", "exception-filtering"],
