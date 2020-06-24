@@ -1,11 +1,17 @@
-There are three floating-point types in F#: `double`, `single` and `decimal`. The most commonly used type is `double`, whereas `decimal` is normally used when working with monetary data. A `double` is written as `2.45`, a single as `2.45f` and a decimal as `2.45m`.
+A floating-point number is a number with zero or more digits behind the decimal separator. Examples are `-2.4`, `0.1`, `3.14`, `16.984025` and `1024.0`.
 
-Each floating-point type has its own [precision, approximate range and size][floating-point-types].
+F# has three floating-point types:
+
+- `single`: 4 bytes (~6-9 digits precision). Written as `2.45f` or `2.45F`. The `float32` type can be used as an alias.
+- `float`: 8 bytes (~15-17 digits precision). This is the most common type. Written as `2.45` or using exponent notation as `2.3E+32` or `2.3e+32`. The `double` type can be used as an alias.
+- `decimal`: 16 bytes (28-29 digits precision). Normally used when working with monetary data, as its precision leads to less rounding errors. Written as `2.45m` or `2.45M`.
+
+Each floating-point type has its own [precision, approximate range and size][floating-point-types]. The precision indicates how many digits after the digit separator can be stored. This means that trying to store PI in a `single` will only store the first 6 to 9 digits (with the last digit being rounded).
 
 Converting between different floating-point types is done using the [conversion operators][conversion-operators]:
 
 ```fsharp
-let doubleFromSingle = double 2.45f
+let floatFromSingle = float 2.45f
 ```
 
 Always be careful when checking the values of floating-point types for equality, as values that can appear to represent the same value could actually be different. See [this article][precision-in-comparisons] for more information (the code examples are in C#).

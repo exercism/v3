@@ -4,7 +4,7 @@
 
 Sometimes also referred to as an **Enumeration** or **Enumeration type**, an enum represents a fixed set of named constants. Its chief purpose is to provide a type-safe way of interacting with numeric constants, limiting the available values to a pre-defined set.
 
-In some languages, an enum is nothing more than _syntactic sugar_ over using integers. Other languages implement enums as actual types, with the ability to add behavior to an enum.
+In some languages, an enum is nothing more than _syntactic sugar_ over using [integers][type-integer]. Other languages implement enums as actual types, with the ability to add behavior to an enum.
 
 ## What to cover
 
@@ -22,8 +22,8 @@ This exercise extracts log level information from log lines. The reference imple
 - Defining an enum.
 - Assigning values to an enum's members.
 - Comparing enum values.
-- Converting a [string][string] to an enum.
-- Converting an enum to a [string][string].
+- Converting a [string][type-string] to an enum.
+- Converting an enum to a [string][type-string].
 
 #### Implementations
 

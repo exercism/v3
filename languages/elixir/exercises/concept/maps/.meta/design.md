@@ -1,7 +1,3 @@
-## Goal
-
-The goal of this exercise is to teach the student the basics of maps in Elixir.
-
 ## Learning objectives
 
 - Know what a map is.
@@ -24,18 +20,12 @@ The goal of this exercise is to teach the student the basics of maps in Elixir.
 
 ## Concepts
 
-The Concepts this exercise unlocks are:
-
 - `maps`: See above goals
 
 ## Prerequisites
 
 - `string-literals`: know how to write string literals in code (alphanumeric unicode graphemes surrounded by double quotes)
 - `anonymous-functions`: know how to write anonymous functions, pass functions as data
-
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
 
 ## Analyzer
 
@@ -45,4 +35,3 @@ This exercise could benefit from the following rules added to the the [analyzer]
 - Verify that the `order_by_scores/2` function uses the enumerable protocol and uses `Enum.sort_by/2` function.
 
 [analyzer]: https://github.com/exercism/elixir-analyzer
-[representer]: https://github.com/exercism/elixir-representer

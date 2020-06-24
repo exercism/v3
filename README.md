@@ -41,6 +41,7 @@ _(This list is sorted alphabetically.)_
 - [JavaScript][track-javascript]
 - [Julia][track-julia]
 - [Kotlin][track-kotlin]
+- [Nim][track-nim]
 - [OCaml][track-ocaml]
 - [Perl 5][track-perl5]
 - [PureScript][track-purescript]
@@ -55,7 +56,7 @@ _(This list is sorted alphabetically.)_
 - [Scheme][track-scheme]
 - [Swift][track-swift]
 - [TypeScript][track-typescript]
-- [x86-64-assembly][track-x86-64-assembly]
+- [x86-64 Assembly][track-x86-64-assembly]
 
 **If you are a Track Maintainer, please [start here](./docs/maintainers/README.md).**
 
@@ -91,6 +92,7 @@ _(This list is sorted alphabetically.)_
 [track-javascript]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fjavascript
 [track-julia]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fjulia
 [track-kotlin]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fkotlin
+[track-nim]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fnim
 [track-ocaml]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Focaml
 [track-perl5]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fperl5
 [track-purescript]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fpurescript
