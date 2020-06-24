@@ -21,7 +21,7 @@ var sp2 = car.DisplaySponsor(sponsorNum: 1);
 // => "Walker Industries"
 ```
 
-## 2 Get tge car's telemetry data
+## 2 Get the car's telemetry data
 
 Implement `RemoteControlCar.GetTelemetryData()`.
 
