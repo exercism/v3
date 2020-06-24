@@ -22,3 +22,5 @@ jobs:
 
       - name: Update stories summary
         run: .github/bin/stories/update.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
