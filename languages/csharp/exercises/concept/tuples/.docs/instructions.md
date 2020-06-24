@@ -13,7 +13,7 @@ Your analysis should return 3 pieces of data
 2. An indication of whether the number is fake having 555 as a prefix code in positions 5 to 7 (numbering from 1)
 3. The last 4 digits of the number.
 
-Implement the method `PhoneNumber.Analyze()` to produce the phone number info.
+Implement the (static) method `PhoneNumber.Analyze()` to produce the phone number info.
 
 ```csharp
 PhoneNumber.Analyze("631-555-1234");
@@ -22,7 +22,7 @@ PhoneNumber.Analyze("631-555-1234");
 
 ### 2. Detect if a phone number has a fake prefix code (555)
 
-Implement the method `PhoneNumber.IsFake()` to detect whether the phone number is fake using the phone number info produced in task 1.
+Implement the (static) method `PhoneNumber.IsFake()` to detect whether the phone number is fake using the phone number info produced in task 1.
 
 ```csharp
 PhoneNumber.IsFake(PhoneNumbers.Analyze("631-555-1234"));
