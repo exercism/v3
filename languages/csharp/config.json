@@ -128,6 +128,12 @@
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "tuples",
+        "uuid": "8bb88ab5-3cde-4ebd-8eef-03323ebfd700",
+        "concepts": ["tuples"],
+        "prerequisites": ["basics", "strings", "conditionals"]
       }
     ],
     "practice": []

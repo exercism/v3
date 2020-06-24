@@ -10,7 +10,7 @@ bool success = !string.IsNullOrWhiteSpace(boast);
 (bool, int, string) tripple = (success, 42, boast);
 ```
 
-As an expression like any other a tuple can be used in a range of ways: in [assignments][tuple-assignment],
+As an expression like any other, a tuple can be used in a range of ways: in [assignments][tuple-assignment],
 to initialize a field or variable, [return value][tuple-return-values] from a method or passed as a parameter.
 They can be tested for [equality][tuple-equality].
 Fields are extracted using dot syntax. By default, the first field is `Item1`,
@@ -32,7 +32,7 @@ vertices = (60, 60, 60);
 
 //  return value
 
-    (bool, int) GetSameOrBigger(int num1, int num2)
+(bool, int) GetSameOrBigger(int num1, int num2)
 {
     return (num1 == num2, num1 > num2 ? num1 : num2);
 }
@@ -123,7 +123,7 @@ The [docs][system-value-tuple] for the final overload of [`System.ValueTuple`][s
 By "value tuple types" here they are referring to the generic overloads of `System.ValueTuple`.
 By "tuples" they mean the things that have concerned us in this exercise.
 Effectively they are saying that `System.ValueTuple` is an implementation detail of tuples. This is
-unlikely to be of much interest most of the time to most people. Unfortunately much of the
+unlikely to be of much interest, most of the time, to most people. Unfortunately much of the
 documentation on "tuples" including Microsoft's own is liberally sprinkled with references
 to `System.ValueTuple`. It is probably safe to skate over such references.
 
@@ -151,7 +151,7 @@ Relational operations other than equality and inequality are not supported.
 
 Note that tuples were introduced into the language relatively recently (C# 7)
 so if you want to use them you should make sure your code base
-is using version 7 or later of the language.
+is using [version][language-version] 7 or later of the language.
 
 [tuples]: https://docs.microsoft.com/en-us/dotnet/csharp/tuples
 [tuple-projection-initializers]: https://docs.microsoft.com/en-us/dotnet/csharp/tuples#tuple-projection-initializers
@@ -162,3 +162,4 @@ is using version 7 or later of the language.
 [udt-deconstruction]: https://docs.microsoft.com/en-us/dotnet/csharp/tuples#deconstructing-user-defined-types
 [system-tuple]: https://docs.microsoft.com/en-us/dotnet/api/system.tuple?view=netcore-3.1
 [system-value-tuple]: https://docs.microsoft.com/en-us/dotnet/api/system.valuetuple-8?view=netcore-3.1
+[language-version]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version
