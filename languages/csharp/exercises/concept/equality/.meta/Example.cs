@@ -35,6 +35,7 @@ public class Identity
 {
     public string Email { get; }
     public FacialFeatures FacialFeatures { get; }
+
     public Identity(string email, FacialFeatures facialFeatures)
     {
         Email = email;

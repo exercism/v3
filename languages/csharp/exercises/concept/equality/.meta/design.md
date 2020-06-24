@@ -17,7 +17,7 @@
 This Concepts Exercise's Concepts are:
 
 - `equality`: know how to check for equality and inequality; know how reference equality differs from structural equality; know that equality works by default for value and reference types; know how to customize equality checks using `Equals` and `GetHashCode()`; know of the `IEquatable<T>` and `IEqualityComparer<T>` interfaces and how to implement them.
-- `sets`
+- `sets`: hash sets as provided by C#/.NET.
 
 ## Prequisites
 

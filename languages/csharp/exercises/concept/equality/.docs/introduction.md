@@ -6,7 +6,7 @@ This exercise looks at how you test for equality and the importance of hash code
 - Reference types (Instances of classes) are compared using the `Equals()` method inherited from `object`. If your goal with the equality test is to ensure that two objects are the exact same instance then relying on `object`'s implementation will suffice. If not, you need to override `object.Equals()`.
 - If you know that all the instances of your class are created in one place, say characters in some game or simulation then reference equality is sufficient. However, it is likely that multiple instances of the same real-world entity will be created (from a database, by user input, via a web request). In this case values that uniquely identify the entity must be tested for equality. Therefore `Equals()` must be overridden and appropriate data members of your class are tested for equality.
 - An overridden `Equals()` will contain equality tests on members of simple types using `==` and reference types with recursive calls to `Equals()`.
-- The static method `object.ReferenceEquals()` is used to compare two instances.
+- The static method `object.ReferenceEquals()` is used to compare two objects to detect if they are one and the same instance.
 
 ### `Object.GetHashCode()`
 

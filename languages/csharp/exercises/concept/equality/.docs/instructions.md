@@ -47,7 +47,7 @@ authenticator.Register(new Identity("tunde@thecompetition.com", new FacialFeatur
 
 ## 4. Add diagnostics to detect multiple attempts to authenticate
 
-A bug has been reported whereby `Authenticator.IsRegistered()` is called multiple times in quick succession for the same identity. You believe that there is some sort of "bounce" problem where the exact same record is being submitted multiple times. Your task is to add a diagnostic routine `Authenticator.AreSameObject()` to support any testing that's undertaken.
+A bug has been reported whereby `Authenticator.IsRegistered()` is called multiple times in quick succession for the same identity. You believe that there is some sort of "bounce" problem where the exact same record is being submitted multiple times. Your task is to add a diagnostic routine `Authenticator.AreSameObject()` to support any testing that's undertaken. The routine compares to objects and returns `true` if they are the exact same instance otherwise `false`.
 
 ```csharp
 var identityA = new Identity("alice@thecompetition.com", new FacialFeatures("blue", 0.9m));

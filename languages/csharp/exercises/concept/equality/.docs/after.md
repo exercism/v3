@@ -32,7 +32,7 @@ class Window
 
 ```
 
-- The static method `object.ReferenceEquals()` is used to compare two instances. This provides clarity and is a necessity where `Equals()` and `==` have been overridden/overloaded.
+- The static method `object.ReferenceEquals()` is used to compare two objects to detect if they are one and the same instance. This provides clarity and is a necessity where `Equals()` and `==` have been overridden/overloaded.
 
 ```csharp
 var winA = new Window(); // above code shows that all windows are equal
@@ -47,7 +47,7 @@ ReferenceEquals(winA, winA);
 
 - In addition to `public override bool Equals(object obj)` IDEs typically generate the overload `protected bool Equals(FacialFeatures other)` for use by derived classes.
 - Do not use `==` unless you have [overloaded][operator-overloading] the `==` operator, as well as the `Equals()` method in your class (see the `operator-overloading` exercise) or you care only that the references are equal.
-- Equality tests in [`struct`s][sruct] are dealt with in the `structs` exercise.
+- Equality tests in [`struct`s][struct] are dealt with in the `structs` exercise.
 - Equality of [`tuple`s][tuples-equality] is dealt with in the `tuples` exercise.
 - Many developers rely on their IDEs to provide implementation of equality methods as these take care of all the minutiae of equality. For instance, JetBrains' RIDER (v 2020.1) generates the following equality methods for a class:
 
@@ -83,6 +83,7 @@ public class Assessment
 {
     private int rating;
     private Person boss;
+
     public override int GetHashCode()
     {
         return HashCode.Combine(rating, boss);
@@ -91,7 +92,7 @@ public class Assessment
 ```
 
 - The values used in the equality test must be stable while the hashed collection is in use. If you add an object to the collection with one set of values and then change those values the hash code will no longer point to the correct "bucket". In practice this means that the object should be [immutable][wiki-immutable]. Other approaches run the risk of creating gotchas for maintainers. Immutability is discussed in other exercises.
-- It is possible that you can design a better hashcode than that produced by the library routines but either it's because you have an detailed understanding of the data's characteristics or because it is a very simple collection where values can be used directly without hashing. It may not be worth the extra effort.
+- It is possible that you can design a better hashcode than that produced by the library routines but either it's because you have a detailed understanding of the data's characteristics or because it is a very simple collection where values can be used directly without hashing. It may not be worth the extra effort.
 
 ### Performance Enhancements
 
@@ -99,17 +100,17 @@ To improve performance slightly, especially where objects belong to collections 
 
 This will save a certain amount of type checking for reference types and will save a boxing step for value types as they will not need to be converted to an object (boxed) as an argument to `public override bool Equals(object other)`.
 
-If you add the interface `IEquatable<T>` to your class this will require the overload to be implemented.
+If you add the interface `IEquatable<T>` to your class this will require the overload to be implemented. Unless your code contains routines that take objects of type `IEquatable<T>` (and presumably do something interesint relating to equality irrespective of the implementing class) there is really no other reason to include the interface.
 
 ### `IEqualityComparer<T>`
 
-If you have a class that can be uniquely identified in two different ways, say a `Person` class that has a SSID and a unique email address then .NET provides a means to allow two different collections to use different hash-code and equality tests. Each can take an different implementation of `IEqualityComparer<T>` which will provide an `Equals()` and a `GetHashCode()` method. You can have a dictionary keyed on SSID and another keyed on email address.
+If you have a class that can be uniquely identified in two different ways, say a `Person` class that has a SSID and a unique email address then .NET provides a means to allow two different collections to use different hash-code and equality tests. Each can have an different implementation of `IEqualityComparer<T>` with its own an `Equals()` and a `GetHashCode()` method. You can have a dictionary keyed on SSID and another keyed on email address.
 
 Where `IEqualityComparer<T>` is in play you would typically still implement `Equals()` and `GetHashCode()` on your item class to avoid problems outside the collection classes.
 
 One consideration when using `IEqualityComparer<T>` is that private methods etc. will not be available for the equality test.
 
-If only one hashed collection is in play then it may be better to avoid `IEqualityComparer<T>` and encapsulate equality and hash code in the object itself. It is not ideal, in the first place, that a key dependency such as that between object and hashed collection cannot be enforced by the compiler but with the hashing and comparison logic elsewhere it would be even easier for a maintainer to make changes to a classes members without regard to the consequences for the collection.
+If only one hashed collection is in play then it may be better to avoid `IEqualityComparer<T>` and encapsulate equality and hash code in the object itself. It is not ideal, in the first place, that a key dependency such as that between object and hashed collection cannot be enforced by the compiler but with the hashing and comparison logic elsewhere it would be even easier for a maintainer to make changes to a class's members without regard to the consequences for the collection.
 
 ### Note on floating-point equality
 
@@ -117,7 +118,7 @@ One primitive that can challenge the unwary coder is testing the [equality of fl
 
 ### Equality and Inheritance
 
-This [article][so-equals-inheritance] shows some of the decisions that have to be made with regard to equality and inheritance.
+This [article][so-equals-inheritance] shows some of the decisions that have to be made with regard to equality and inheritance. They will only concern you if you are manipulating instance of a class and a derived class and need to test the equality between the two.
 
 ### General Informaton
 
