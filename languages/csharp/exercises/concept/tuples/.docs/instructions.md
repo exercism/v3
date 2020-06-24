@@ -1,6 +1,6 @@
 This exercise has you analyze phone numbers.
 
-You are asked to implement 3 features.
+You are asked to implement 2 features.
 
 Phone numbers passed to the routines are guaranteed to be in the form
 NNN-NNN-NNNN e.g. 212-515-9876 and non-null.
