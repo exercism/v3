@@ -6,53 +6,51 @@ public class SimpleCalculatorTests
     [Fact]
     public void Addition_with_small_operands()
     {
-        Assert.Equal(47, SimpleCalculator.Calculate(22, 25, "+"));
+        Assert.Equal("22 + 25 = 47", SimpleCalculator.Calculate(22, 25, "+"));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Addition_with_large_operands()
     {
-        Assert.Equal(778_596, SimpleCalculator.Calculate(378_961, 399_635, "+"));
+        Assert.Equal("378961 + 399635 = 778596", SimpleCalculator.Calculate(378_961, 399_635, "+"));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Addition_that_overflows()
     {
-        Assert.Equal(-1, SimpleCalculator.Calculate(Int32.MaxValue, 5, "+"));
-        Assert.Equal("Result invalid: Result of operation does not fit in type of int.", SimpleCalculator.ErrorLog);
+        Assert.Throws<ArgumentException>(() => SimpleCalculator.Calculate(Int32.MaxValue, 5, "+"));
     }
 
     //Multiplication tests
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Multiplication_with_small_operands()
     {
-        Assert.Equal(63, SimpleCalculator.Calculate(3, 21, "*"));
+        Assert.Equal("3 * 21 = 63", SimpleCalculator.Calculate(3, 21, "*"));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Multiplication_with_large_operands()
     {
-        Assert.Equal(148_359_168, SimpleCalculator.Calculate(72_441, 2_048, "*"));
+        Assert.Equal("72441 * 2048 = 148359168", SimpleCalculator.Calculate(72_441, 2_048, "*"));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Multiplication_that_overflows()
     {
-        Assert.Equal(-1, SimpleCalculator.Calculate(50_000, 50_000, "*"));
-        Assert.Equal("Result invalid: Result of operation does not fit in type of int.", SimpleCalculator.ErrorLog);
+        Assert.Throws<ArgumentException>(() => SimpleCalculator.Calculate(50_000, 50_000, "*"));
     }
 
     //Division tests
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Division_with_small_operands()
     {
-        Assert.Equal(8, SimpleCalculator.Calculate(72, 9, "/"));
+        Assert.Equal("72 / 9 = 8", SimpleCalculator.Calculate(72, 9, "/"));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Division_with_large_operands()
     {
-        Assert.Equal(16, SimpleCalculator.Calculate(1_338_800, 83_675, "/"));
+        Assert.Equal("1338800 / 83675 = 16", SimpleCalculator.Calculate(1_338_800, 83_675, "/"));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
@@ -65,6 +63,18 @@ public class SimpleCalculatorTests
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Calculate_throws_exception_for_non_valid_operations()
     {
-        Assert.Throws<InvalidOperationException>(() => SimpleCalculator.Calculate(1, 2, "**"));
+        Assert.Throws<ArgumentOutOfRangeException>(() => SimpleCalculator.Calculate(1, 2, "**"));
+    }
+    
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void Calculate_throws_exception_for_null_as_operation()
+    {
+        Assert.Throws<ArgumentNullException>(() => SimpleCalculator.Calculate(1, 2, null));
+    }
+
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void Calculate_throws_exception_for_emtpy_string_as_operation()
+    {
+        Assert.Throws<ArgumentException>(() => SimpleCalculator.Calculate(1, 2, ""));
     }
 }

@@ -1,11 +1,9 @@
 using System;
 static class SimpleCalculator
 {
-    public static string ErrorLog {get; set;}
-    public static int Calculate(int operand1, int operand2, string operation)
+    public static string Calculate(int operand1, int operand2, string operation)
     {
         int result = 0;
-        ErrorLog = "";
         try
         {
             switch(operation)
@@ -19,17 +17,20 @@ static class SimpleCalculator
                 case "/":
                     result = Division(operand1, operand2);
                     break;
+                case "":
+                    throw new ArgumentException("Operation cannot be empty.");
+                case null:
+                    throw new ArgumentNullException("Operation cannot be null.");
                 default:
-                    throw new InvalidOperationException($"Operation {operation} does not exist");
+                    throw new ArgumentOutOfRangeException(operation, $"Operation {operation} does not exist");
             }
         }
-        catch(ArgumentException e)
+        catch(OverflowException e)
         {
-            ErrorLog = $"Result invalid: {e.Message}";
-            return -1;
+            throw new ArgumentException(e.ToString());
         }
-        return result;
 
+        return $"{operand1} {operation} {operand2} = {result}";
     }
 
     private static int Division(int operand1, int operand2)
@@ -39,21 +40,17 @@ static class SimpleCalculator
 
     private static int Multiplication(int operand1, int operand2)
     {
-        int result = operand1 * operand2;
-        if(operand1 > 0 && operand2 > 0 && result < 0)
+        checked
         {
-            throw new ArgumentException("Result of operation does not fit in type of int.");
+            return operand1 * operand2;
         }
-        return result;
     }
     private static int Addition(int operand1, int operand2)
     {
-        int result = operand1 + operand2;
-        if(operand1 > 0 && operand2 > 0 && result < 0)
+        checked
         {
-            throw new ArgumentException("Result of operation does not fit in type of int.");
+            return operand1 + operand2;
         }
-        return result;
     }
 
 }
