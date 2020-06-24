@@ -3,7 +3,6 @@
 - Know what a tuple is.
 - Know how to define a tuple.
 - Know how to name tuple fields.
-- Know that tuples have structural equality.
 - Know how to deconstruct tuples.
 - Know that tuples are mutable.
 
@@ -12,6 +11,7 @@
 - The old `Tuple` class.
 - Pattern matching on tuples.
 - How to add tuple pattern matching to your own and built-in types.
+- Know that tuples have structural equality.
 
 ## Concepts
 
