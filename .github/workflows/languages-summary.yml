@@ -23,3 +23,5 @@ jobs:
 
       - name: Update languages summary
         run: .github/bin/languages/update.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

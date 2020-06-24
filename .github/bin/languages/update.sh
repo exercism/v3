@@ -16,13 +16,17 @@ if [ -z "$(git status --porcelain)" ]; then
     exit 0
 fi
 
+# Checkout to new branch
+BRANCH="languagesummary-$(date +%Y%m%d%H%M%S)"
+git checkout -b "$BRANCH"
+
 # Setup the git user (required to commit anything)
 git config --global user.email "github-actions[bot]@users.noreply.github.com"
 git config --global user.name "github-actions[bot]"
 
-echo "Committing updated languages summary"
-
-# Commit the changes
-git add .
+# Commit and push the changes
 git commit -m "[CI] Update languages summary"
-git push
+git push origin "$BRANCH"
+
+# Create a PR
+gh pr create --title "[CI] Update languages summary" --body "This is an _automatically generated_ PR to update the two language summary files."
