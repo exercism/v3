@@ -35,15 +35,20 @@ Before we publicize requesting contribution for this language, the following ste
 
 Before launch, we need all of the following parts to be completed:
 
-### Track Structure
+### config.json
 
-- [ ] Implemented 20+ Concept Exercises
-- [Migrated `config.json`](../../docs/maintainers/migrating-your-config-json-files.md)
-  - [x] Added `version` key
-  - [x] Added online editor settings
-    - [x] Added `indent_style`
-    - [x] Added `indent_size`
-  - [ ] Added Concept Exercises
+- [x] Added `version` key
+- [x] Added online editor settings
+  - [x] Added `indent_style`
+  - [x] Added `indent_size`
+- [ ] Convert the `exercises` array to an object
+- [ ] Remove the `foregone` property
+
+See the [migrating your config.json files document](../../docs/maintainers/migrating-your-config-json-files.md) for more information.
+
+### Concept Exercises
+
+- [ ] Added 20+ Concept Exercises
 
 ### Representer
 
