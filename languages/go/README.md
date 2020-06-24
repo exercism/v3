@@ -46,7 +46,6 @@ Before launch, we need all the following parts to be completed:
     - [x] Added `indent_size`
   - [ ] Added Concept Exercises
     - see [exercise issue](https://github.com/exercism/v3/issues/212) for status on the individual concept exercises
-  - [ ] Added Concepts for all Practice Exercises
 
 ### [Representer](https://github.com/exercism/automated-analysis/blob/master/docs/representers/introduction.md)
 

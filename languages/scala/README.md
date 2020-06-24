@@ -32,7 +32,6 @@ Before launch, we need all of the following parts to be completed:
     - [ ] Added `indent_style`
     - [ ] Added `indent_size`
   - [ ] Added Concept Exercises
-  - [ ] Added Concepts for all Practice Exercises
 
 ### Representer
 
