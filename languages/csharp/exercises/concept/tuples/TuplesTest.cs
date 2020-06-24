@@ -43,12 +43,4 @@ public class TuplesTest
     {
         Assert.False(PhoneNumber.IsFake(PhoneNumber.Analyze("555-212-1234")));
     }
-
-    [Fact(Skip = "Remove this Skip property to run this test")]
-    public void AreDuplicate()
-    {
-        var inputPhoneNumberInfo = PhoneNumber.Analyze("631-502-1234");
-        var storedhoneNumberInfo = (false, false, "1234");
-        Assert.True(PhoneNumber.AreDuplicate(inputPhoneNumberInfo, storedhoneNumberInfo));
-    }
 }

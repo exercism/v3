@@ -11,10 +11,4 @@ public static class PhoneNumber
     {
         return phoneNumberInfo.IsFake;
     }
-
-    public static bool AreDuplicate((bool IsNewYork, bool IsFake, string LocalNumber) phoneNumberInfo,
-        (bool IsNewYork, bool IsFake, string LocalNumber) storedPhoneNumberInfo)
-    {
-        return phoneNumberInfo == storedPhoneNumberInfo;
-    }
 }

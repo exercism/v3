@@ -12,7 +12,8 @@ bool success = !string.IsNullOrWhiteSpace(boast);
 
 As an expression like any other, a tuple can be used in a range of ways: in [assignments][tuple-assignment],
 to initialize a field or variable, [return value][tuple-return-values] from a method or passed as a parameter.
-They can be tested for [equality][tuple-equality].
+They can be tested for [equality][tuple-equality]. Equality of tuples is illustrated fully in the `pattern-matching-tuples` exercise but an example is provided in the code below for the sake of completeness.
+
 Fields are extracted using dot syntax. By default, the first field is `Item1`,
 the second `Item2`, etc. Non-default names are discussed below under _Naming_.
 
@@ -23,35 +24,28 @@ In addition, tuples support "deconstruction", discussed below
 
 ```csharp
 // initialization
-
 (int, int, int) vertices = (90, 45, 45);
 
 // assignment
-
 vertices = (60, 60, 60);
 
 //  return value
-
 (bool, int) GetSameOrBigger(int num1, int num2)
 {
     return (num1 == num2, num1 > num2 ? num1 : num2);
 }
 
 // method argument
-
 int Add((int, int) operands)
 {
     return operands.Item1 + operands.Item2;
 }
 
-
 // equality testing
-
 var estimateA = (42, 1729);
 var estimateB = (2*3*7, 7*13*19);
 bool result = estimateA == estimateB;
 // => result == true
-
 ```
 
 This [introduction][tuples] shows how to define and use tuples.
@@ -65,16 +59,12 @@ creates it, c) by means of [tuple projection initializers][tuple-projection-init
 
 ```csharp
 // name items in declaration
-
 (bool success, string message) results = (true, "well done!");
-
 bool mySuccess = results.success;
 string myMessaage = results.message;
 
 // name items in creating expression
-
 var results2 = (success: true, message: "well done!");
-
 bool mySuccess2 = results2.success;
 string myMessaage2 = results2.message;
 ```

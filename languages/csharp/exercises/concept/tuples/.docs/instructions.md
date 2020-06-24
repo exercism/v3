@@ -28,14 +28,3 @@ Implement the method `PhoneNumber.IsFake()` to detect whether the phone number i
 PhoneNumber.IsFake(PhoneNumbers.Analyze("631-555-1234"));
 // => true
 ```
-
-### 3. Compare the information about two phone numbers to detect duplicates
-
-Implement the method `PhoneNumber.AreDuplicate()` to test equality.
-
-```csharp
-var inputPhoneNumberInfo = PhoneNumber.Analyze("212-502-1234");
-var storedhoneNumberInfo = (true, false, "1234");
-PhoneNumber.AreDuplicate(inputPhoneNumberInfo, storedhoneNumberInfo);
-// => true
-```
