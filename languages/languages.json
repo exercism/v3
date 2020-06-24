@@ -510,7 +510,19 @@
     "name": "Clojure",
     "slug": "clojure",
     "exercises": {
-      "concept": []
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/lists",
+          "slug": "lists",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            }
+          ],
+          "prerequisites": []
+        }
+      ]
     }
   },
   {
@@ -1171,6 +1183,38 @@
             {
               "url": null,
               "name": "try-rescue"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/processes",
+          "slug": "processes",
+          "concepts": [
+            {
+              "url": null,
+              "name": "processes"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/pid.md",
+              "name": "pids"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "atoms"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/recursion.md",
+              "name": "recursion"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/pattern_matching.md",
+              "name": "pattern-matching"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
             }
           ]
         }

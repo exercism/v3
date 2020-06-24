@@ -4,7 +4,7 @@ The concept exercises are based on this [list of concepts][reference-shared].
 
 ## Implemented exercises
 
-The list of completed exercises can be found in the C# track's [`config.json` file][config-json]. In that file, you can search for _concepts_ to ascertain which exercises they are featured in and the _prerequisites_  sections will show the relationships between the exercises.
+The list of completed exercises can be found in the C# track's [`config.json` file][config-json]. In that file, you can search for _concepts_ to ascertain which exercises they are featured in and the _prerequisites_ sections will show the relationships between the exercises.
 
 The [`config.json` file][config-json] should be updated, as part of the PR, as the last stage in implementing an exercise. This also applies when improving an exercise if you modify the set of concepts or prerequisites.
 
