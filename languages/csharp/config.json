@@ -139,7 +139,7 @@
         "slug": "tuples",
         "uuid": "8bb88ab5-3cde-4ebd-8eef-03323ebfd700",
         "concepts": ["tuples"],
-        "prerequisites": ["basics", "strings", "conditionals"]
+        "prerequisites": ["conditionals", "strings"]
       },
       {
         "slug": "user-defined-exceptions",

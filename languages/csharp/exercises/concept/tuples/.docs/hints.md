@@ -4,11 +4,11 @@
 
 ### 1. Analyze a phone number
 
-Tuples are passed as a [return value][tuples-return].
+- Tuples are passed as a [return value][tuples-return].
 
 ### 2. Detect if a phone number is fake prefix code (555)
 
-You an extract the value of a field with the same sort of dot syntax as you employ with `struct`s or `class`s.
+- You can extract the value of a field with the same sort of dot syntax as you employ with `struct`s or `class`s.
 
 ### 3. Compare the information about two phone numbers to detect duplicates
 
