@@ -8,6 +8,7 @@ public class Player
     {
         return random.Next(1, DIE_HIGH + 1);
     }
+
     public double GenerateSpellStrength()
     {
         return random.NextDouble() * 100;

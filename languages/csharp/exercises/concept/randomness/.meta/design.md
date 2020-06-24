@@ -12,7 +12,7 @@
 ## Concepts
 
 - `randomness`: as they are handled in C# and .NET.
-- `basic-thread-safety`: ensure user is acquainted with the idea of thread safety. A deeper dicsuccion can be deferred to the `concurrent-colletions` exercise.
+- `basic-thread-safety`: ensure user is acquainted with the idea of thread safety. A deeper discussion can be deferred to the `concurrent-colletions` exercise.
 
 ## Prerequisites
 
