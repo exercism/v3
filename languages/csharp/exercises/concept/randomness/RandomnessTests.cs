@@ -1,7 +1,7 @@
 using Xunit;
 using System;
 
-public class UserDefinedExceptionsTests
+public class RandomnessTests
 {
     [Fact]
     public void RollDie()
