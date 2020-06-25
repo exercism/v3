@@ -4,11 +4,11 @@
 dotnet run -p .github/bin/concepts
 
 # Format the documents
-npx prettier@2.0.4 --write references/README.md references/references.json
+npx prettier@2.0.4 --write reference/README.md reference/references.json
 
 # Add the updated concept summary files
-git add references/README.md
-git add references/references.json
+git add reference/README.md
+git add reference/references.json
 
 # Check if there is nothing to commit (i.e. no changes to the concepts summary)
 if [ -z "$(git status --porcelain)" ]; then
