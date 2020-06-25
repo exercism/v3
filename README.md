@@ -56,7 +56,7 @@ _(This list is sorted alphabetically.)_
 - [Scheme][track-scheme]
 - [Swift][track-swift]
 - [TypeScript][track-typescript]
-- [x86-64-assembly][track-x86-64-assembly]
+- [x86-64 Assembly][track-x86-64-assembly]
 
 **If you are a Track Maintainer, please [start here](./docs/maintainers/README.md).**
 

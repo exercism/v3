@@ -18,16 +18,19 @@ These are the concept exercises that have currently been implemented, as well as
 | `conditionals`              | `conditionals`, `atoms`                                    | `booleans`                                                                                     |
 | `enum`                      | `enum`                                                     | `lists`, `maps`, `atoms`, `tuples`, `nil`, `anonymous-functions`                               |
 | `errors`                    | `errors`, `try-rescue`                                     | `anonymous-functions`, `pattern-matching`, `structs`                                           |
+| `exceptions`                | `exceptions`                                               | `errors`, `access-behaviour`                                                                   |
 | `keyword-lists`             | `keyword-lists`                                            | `lists`, `tuples`, `atoms`, `if-conditional`, `default-arguments`                              |
 | `lists`                     | `lists`, `string-literals`                                 | `booleans`                                                                                     |
 | `maps`                      | `maps`, `module-attributes-as-constants`                   | `lists`, `tuples`, `anonymous-functions`, `default-arguments`                                  |
 | `multiple-clause-functions` | `multiple-clause-functions`, `guards`, `default-arguments` | `conditionals`, `string-literals`                                                              |
 | `nil`                       | `nil`, `if-conditional`                                    | `booleans`, `strings`                                                                          |
 | `numbers`                   | `integers`, `floating-point-numbers`                       | `basics`                                                                                       |
+| `processes`                 | `processes`, `pids`                                        | `atoms`, `recursion`, `pattern-matching`, `tuples`                                             |
 | `strings`                   | `strings`                                                  | `lists`, `pattern-matching`                                                                    |
 | `structs`                   | `structs`, `static-access-operator`                        | `maps`, `multiple-clause-functions`, `pattern-matching`, `strings`, `nil`, `default-arguments` |
-| `tuples`                    | `tuples`, `pattern-matching`                               | `multiple-clause-functions`, `floating-point-numbers`, `atoms`                                 |
 | `recursion`                 | `recursion`                                                | `lists`, `pattern-matching`, `multiple-clause-functions`, `guards`                             |
+| `try-rescue-else-after`     | `try-rescue-else-after`                                    | `io`, `try-rescue`                                                                             |
+| `tuples`                    | `tuples`, `pattern-matching`                               | `multiple-clause-functions`, `floating-point-numbers`, `atoms`                                 |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse.
 
