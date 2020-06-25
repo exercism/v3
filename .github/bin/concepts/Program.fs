@@ -228,61 +228,52 @@ module Markdown =
     let writeConcepts (referencesDirectory: DirectoryInfo) (concepts: Concept list): unit =
         let markdown = renderToMarkdown concepts
         File.WriteAllText(Path.Combine(referencesDirectory.FullName, "README.md"), markdown)
-//
-//module Json =
-//    [<CLIMutable>]
-//    type JsonConcept =
-//        { Url: string
-//          Name: string }
-//    
-//    [<CLIMutable>]
-//    type JsonConceptExercise =
-//        { Url: string
-//          Slug: string
-//          Concepts: JsonConcept[]
-//          Prerequisites: JsonConcept[] }
-//
-//    [<CLIMutable>]
-//    type JsonExercises =
-//        { Concept: JsonConceptExercise[] }
-//
-//    [<CLIMutable>]
-//    type JsonTrack =
-//        { Name: string
-//          Slug: string
-//          Exercises: JsonExercises } 
-//    
-//    let private conceptToJsonConcept (concept: Concept): JsonConcept =
-//        { Url =
-//            concept.File
-//            |> Option.map (fun file -> sprintf "https://github.com/exercism/v3/tree/master/%s" (Path.GetRelativePath(Directory.GetCurrentDirectory(), file.FullName).Replace(Path.DirectorySeparatorChar, '/')))
-//            |> Option.toObj
-//          Name = concept.Name }
-//    
-//    let private conceptExerciseToJsonConceptExercise (track: Track) (conceptExercise: ConceptExercise): JsonConceptExercise =
-//        { Url = sprintf "https://github.com/exercism/v3/tree/master/languages/%s/exercises/concept/%s" track.Slug conceptExercise.Slug
-//          Slug = conceptExercise.Slug
-//          Concepts = Array.map conceptToJsonConcept conceptExercise.Concepts
-//          Prerequisites = Array.map conceptToJsonConcept conceptExercise.Prerequisites }
-//    
-//    let private trackToJsonTrack (track: Track): JsonTrack =
-//        { Name = track.Name
-//          Slug = track.Slug
-//          Exercises =
-//              { Concept = Array.map (conceptExerciseToJsonConceptExercise track) track.Exercises.Concept } }
-//    
-//    let private renderToJson (concepts: Track list): string =
-//        let jsonconcepts = List.map trackToJsonTrack concepts
-//        
-//        let options = JsonSerializerOptions()
-//        options.WriteIndented <- true
-//        options.PropertyNamingPolicy <- JsonNamingPolicy.CamelCase
-//        
-//        JsonSerializer.Serialize(jsonconcepts, options)
-//    
-//    let writeconcepts (languagesDirectory: DirectoryInfo) (concepts: Track list): unit =
-//        let json = renderToJson concepts
-//        File.WriteAllText(Path.Combine(languagesDirectory.FullName, "languages.json"), json)
+
+module Json =
+    
+    [<CLIMutable>]
+    type JsonImplementation =
+        { Url: string
+          Exercise: string
+          Track: string
+          Language: string }
+
+    [<CLIMutable>]
+    type JsonConcept =
+        { Url: string
+          Name: string
+          Variations: string[]
+          Implementations: JsonImplementation[] }
+        
+    let private categoryDirectory (category: ConceptCategory) =
+        match category with
+        | Concepts -> "concepts"
+        | Types -> "types"
+    
+    let private implementationToJsonImplementation (implementation: Implementation): JsonImplementation =
+        { Url = sprintf "https://github.com/exercism/v3/tree/master/languages/%s/exercises/concept/%s" implementation.Track implementation.Exercise
+          Exercise = implementation.Exercise
+          Track = implementation.Track
+          Language = implementation.Language }
+    
+    let private conceptToJsonConcept (concept: Concept): JsonConcept =
+        { Url = sprintf "https://github.com/exercism/v3/tree/master/references/%s/%s.md" (categoryDirectory concept.Category) concept.Name
+          Name = concept.Name
+          Variations = List.toArray concept.Variations
+          Implementations = List.map implementationToJsonImplementation concept.Implementations |> List.toArray }
+    
+    let private renderToJson (concepts: Concept list): string =
+        let jsonConcepts = List.map conceptToJsonConcept concepts
+        
+        let options = JsonSerializerOptions()
+        options.WriteIndented <- true
+        options.PropertyNamingPolicy <- JsonNamingPolicy.CamelCase
+        
+        JsonSerializer.Serialize(jsonConcepts, options)
+    
+    let writeConcepts (referenceDirectory: DirectoryInfo) (concepts: Concept list): unit =
+        let json = renderToJson concepts
+        File.WriteAllText(Path.Combine(referenceDirectory.FullName, "references.json"), json)
 
 [<EntryPoint>]
 let main _ =
@@ -291,6 +282,6 @@ let main _ =
     let concepts = Parser.parseConcepts referenceDirectory languagesDirectory
     
     Markdown.writeConcepts referenceDirectory concepts
-//    Json.writeconcepts languagesDirectory concepts
+    Json.writeConcepts referenceDirectory concepts
 
     0
