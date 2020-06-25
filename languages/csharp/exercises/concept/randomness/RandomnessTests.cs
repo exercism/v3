@@ -7,17 +7,10 @@ public class RandomnessTests
     public void RollDie()
     {
         var player = new Player();
-        bool outOfRange = false;
-        for (int i = 0; i < 100; i++)
+        for (var i = 0; i < 100; i++)
         {
-            var pips = player.RollDie();
-            if (pips <= 0 || pips > 18)
-            {
-                outOfRange = true;
-                break;
-            }
+            Assert.InRange(player.RollDie(), 1, 18);
         }
-        Assert.False(outOfRange);
     }
 
     [Fact/*(Skip = "Remove this Skip property to run this test")*/]
