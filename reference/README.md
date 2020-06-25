@@ -1,5 +1,9 @@
 # Reference documents
 
+_This file is auto-generated and should not be modified manually._
+
+# Reference documents
+
 There are several types of reference documents:
 
 - [Concepts][concepts]
