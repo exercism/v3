@@ -11,7 +11,7 @@
 
 ## Concepts
 
-- `randomness`: as they are handled in C# and .NET.
+- `randomness`: know how to implement randomness with `System.Random` in C#; know that no seed is required; know that both integers and real numbers can be generated; know that once generated random numbers can be easily used for many purposes (including non-numeric ones)
 - `basic-thread-safety`: ensure user is acquainted with the idea of thread safety. A deeper discussion can be deferred to the `concurrent-colletions` exercise.
 
 ## Prerequisites
