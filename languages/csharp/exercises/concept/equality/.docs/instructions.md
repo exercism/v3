@@ -10,7 +10,7 @@ The admin's email is admin@exerc.ism. They have green eyes and a philtrum with a
 
 Add equality routines for the `Identity` and `FacialFeatures` classes.
 
-Implement `Authenticator.IsAdmin()` to check that the identity passed in matches that of the administrator.
+Implement the `Authenticator.IsAdmin()` method to check that the identity passed in matches that of the administrator.
 
 ```csharp
 var authenticator = new Authenticator();
@@ -22,7 +22,7 @@ authenticator.IsAdmin(new Identity("admin@thecompetition.com", new FacialFeature
 
 ## 2. Prevent invalid identities being authenticated
 
-Implement `Authenticator.IsRegistered()` and ensure it returns false when no identities have been registered.
+Implement the `Authenticator.IsRegistered()` method and ensure it returns false when no matching identity has been registered.
 
 ```csharp
 var authenticator = new Authenticator();
@@ -32,7 +32,7 @@ authenticator.IsRegistered(new Identity("alice@thecompetition.com", new FacialFe
 
 ## 3. Register new identities
 
-Implement `Authenticator.Register()` which stores an identity on the authenticator itself such that calls to `IsRegistered()` will return true for this identity. If the identity has already been registered then `false` is returned by `Authenticator.Register()`, otherwise `true`.
+Implement the `Authenticator.Register()` method which stores an identity on the authenticator itself such that calls to `IsRegistered()` will return true for this identity. If the identity has already been registered then `false` is returned by `Authenticator.Register()`, otherwise `true`.
 
 ```csharp
 var authenticator = new Authenticator();
@@ -42,7 +42,6 @@ authenticator.IsRegistered(new Identity("alice@thecompetition.com", new FacialFe
 // => true
 authenticator.Register(new Identity("tunde@thecompetition.com", new FacialFeatures("blue", 0.9m)));
 // => false
-
 ```
 
 ## 4. Add diagnostics to detect multiple attempts to authenticate
