@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: 'Checkout code'
         uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
 
       - name: 'Install .NET core'
         uses: actions/setup-dotnet@v1
