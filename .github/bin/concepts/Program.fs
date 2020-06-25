@@ -52,10 +52,13 @@ module Parser =
     let private isConceptFile (file: FileInfo) =
         file.Name <> "README.md" && file.Name <> "_sidebar.md"
     
-    let private conceptsDirectoryForCategory (referenceDirectory: DirectoryInfo) (category: ConceptCategory): DirectoryInfo =
+    let private categoryDirectory (category: ConceptCategory) =
         match category with
-        | Concepts -> DirectoryInfo(Path.Combine(referenceDirectory.FullName, "concepts"))
-        | Types -> DirectoryInfo(Path.Combine(referenceDirectory.FullName, "types"))
+        | Concepts -> "concepts"
+        | Types -> "types"
+    
+    let private conceptsDirectoryForCategory (referenceDirectory: DirectoryInfo) (category: ConceptCategory): DirectoryInfo =
+        DirectoryInfo(Path.Combine(referenceDirectory.FullName, categoryDirectory category))
         
     let private conceptFilesForCategory (referenceDirectory: DirectoryInfo) (category: ConceptCategory): FileInfo list =
         let conceptsDirectory = conceptsDirectoryForCategory referenceDirectory category
@@ -125,6 +128,11 @@ module Parser =
         |> Seq.toList
     
 module Markdown =
+    
+    let private categoryDirectory (category: ConceptCategory) =
+        match category with
+        | Concepts -> "concepts"
+        | Types -> "types"
 
     let private appendHeader (markdown: StringBuilder): StringBuilder =
         markdown
@@ -155,44 +163,45 @@ module Markdown =
             .AppendLine("To contribute, please go to the [concepts][concepts], [paradigms][paradigms], [stories][stories], [tooling][tooling] or [types][types] page to see which documents have been written. You can then contribute by submitting a PR to update an existing document, or to add a missing document.")
             .AppendLine()
     
-    let private appendExercises (languagesDirectory: DirectoryInfo) (concepts: Concept list) (markdown: StringBuilder): StringBuilder =
-//        markdown
-//            .AppendLine("## Implemented Concept Exercises")
-//            .AppendLine()
-//            .AppendLine("These are the Concept Exercises that have currently been implemented:")
-//            .AppendLine() |> ignore
-//        
-//        let renderLine trackColumn exerciseColumn conceptsColumn prerequisitesColumn =
-//            markdown
-//                .AppendFormat(sprintf "| %s | %s | %s | %s |" trackColumn exerciseColumn conceptsColumn prerequisitesColumn)
-//                .AppendLine() |> ignore
-//        
-//        renderLine "Track" "Exercise" "Concepts" "Prerequisites"
-//        renderLine "-" "-" "-" "-"
-//
-//        for track in concepts do
-//            let trackLink = sprintf "[%s](./%s/README.md)" track.Name track.Slug
-//            
-//            for conceptExercise in track.Exercises.Concept |> Array.sortBy (fun exercise -> exercise.Slug) do
-//                let renderConcept (concept: Concept): string =
-//                    match concept.File with
-//                    | Some file ->
-//                        sprintf "[`%s`](%s)" concept.Name (Path.GetRelativePath(languagesDirectory.FullName, file.FullName).Replace(Path.DirectorySeparatorChar, '/'))
-//                    | None -> sprintf "`%s`" concept.Name
-//                
-//                let renderArray (arr: Concept[]) =
-//                    if Array.isEmpty arr then
-//                        "-"
-//                    else
-//                        arr
-//                        |> Array.sortBy (fun concept -> concept.Name)
-//                        |> Array.map renderConcept
-//                        |> String.concat ", "  
-//                
-//                let exerciseLink = sprintf "[%s](./%s/exercises/concept/%s/.docs/instructions.md)" conceptExercise.Slug track.Slug conceptExercise.Slug
-//                let concepts = conceptExercise.Concepts |> renderArray  
-//                let prerequisites = conceptExercise.Prerequisites |> renderArray
-//                renderLine trackLink exerciseLink concepts prerequisites
+    let private appendImplementedConcepts (concepts: Concept list) (markdown: StringBuilder): StringBuilder =
+        markdown
+            .AppendLine("## Implemented Concepts")
+            .AppendLine()
+            .AppendLine("This is a list of Concepts for which an exercise has been implemented:")
+            .AppendLine() |> ignore
+        
+        let renderLine conceptColumn implementationsColumn =
+            markdown
+                .AppendFormat(sprintf "| %s | %s |" conceptColumn implementationsColumn)
+                .AppendLine() |> ignore
+        
+        renderLine "Concept" "Implementations"
+        renderLine "-" "-"
+
+        for concept in concepts do            
+            let conceptLink = sprintf "[`%s`](./%s/%s.md)" concept.Name (categoryDirectory concept.Category) concept.Name
+            let implementationLink implementation =
+                sprintf "[%s](../languages/%s/exercises/concept/%s/.docs/instructions.md)" implementation.Language implementation.Track implementation.Exercise
+            let implementationLinks =
+                concept.Implementations
+                |> List.sortBy (fun implementation -> implementation.Language)
+                |> List.map implementationLink
+                |> String.concat ", "
+                        
+            renderLine conceptLink implementationLinks
+
+        markdown.AppendLine()
+    
+    let private appendUnimplementedConcepts (concepts: Concept list) (markdown: StringBuilder): StringBuilder =
+        markdown
+            .AppendLine("## Unimplemented Concepts")
+            .AppendLine()
+            .AppendLine("This is a list of Concepts for which no exercise has yet been implemented:")
+            .AppendLine() |> ignore
+        
+        for concept in concepts do            
+            let conceptLink = sprintf "- [`%s`](./%s/%s.md)" concept.Name (categoryDirectory concept.Category) concept.Name
+            markdown.AppendLine(conceptLink) |> ignore
 
         markdown.AppendLine()
         
@@ -204,17 +213,20 @@ module Markdown =
             .AppendLine("[tooling]: ./tooling/README.md")
             .AppendLine("[types]: ./types/README.md")
 
-    let private renderToMarkdown (languagesDirectory: DirectoryInfo) (concepts: Concept list): string =
+    let private renderToMarkdown (concepts: Concept list): string =
+        let (unimplementedConcepts, implementedConcepts) = concepts |> List.partition (fun concept -> List.isEmpty concept.Implementations) 
+        
         StringBuilder()
         |> appendHeader
         |> appendTypes
         |> appendContributing
-//        |> appendExercises languagesDirectory concepts
+        |> appendImplementedConcepts implementedConcepts
+        |> appendUnimplementedConcepts unimplementedConcepts
         |> appendLinks
         |> string
 
     let writeConcepts (referencesDirectory: DirectoryInfo) (concepts: Concept list): unit =
-        let markdown = renderToMarkdown referencesDirectory concepts
+        let markdown = renderToMarkdown concepts
         File.WriteAllText(Path.Combine(referencesDirectory.FullName, "README.md"), markdown)
 //
 //module Json =
