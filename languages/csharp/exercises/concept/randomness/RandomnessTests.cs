@@ -13,7 +13,7 @@ public class RandomnessTests
         }
     }
 
-    [Fact/*(Skip = "Remove this Skip property to run this test")*/]
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void GenerateSpellStrength()
     {
         var player = new Player();

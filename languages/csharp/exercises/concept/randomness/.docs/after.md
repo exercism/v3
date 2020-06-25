@@ -9,7 +9,7 @@ The coding exercise highlighted a number of issues:
 - The random number generator does not require a [seed][random-seedless].
 - `Random.Next()` can generate a range of integers
 - `Random.Double()` can generate a double between 0 and 1
-- The upper bounds in `Next...()`, `Double()` and `Sample()` are **exclusive**" so that `Random.Next(1,19)` will yield values from 1 to 18 but not 19.
+- The upper bounds in `Next...()`, `Double()` and `Sample()` are **exclusive** so that `Random.Next(1,19)` will yield values from 1 to 18 but not 19.
 - Once you have your random number you can do what you like with it
 
 There are 3 patterns for implementing the last point:
@@ -28,12 +28,12 @@ You are advised not to use `System.Random` for crypto or security. See this [pro
 
 ##### Thread safety
 
-When applied in the context of library APIs "not thread safe" is simply shorthand for saying that, if you are likely to access instances of the class through multiple concurrent [threads][threading], you should provide your own thread synchronization mechanisms or, in the case of collections, look at the possibility of using a concurrent version of the class. In the absence of these precautions, [race conditions][so-race-conditions] are likely to occur. If your code base does not use multiple threads and is not likely to then this warning is of little concern.
+When applied in the context of library APIs "not thread safe" is simply shorthand for saying that, if you are likely to access instances of the class through multiple concurrent [threads][threading], you should provide your own thread synchronization mechanisms or, in the case of collections, look at the possibility of using a concurrent version of the class. In the absence of these precautions, [race conditions][so-race-conditions] are likely to occur. If your code base does not use multiple threads, and is not likely to, then this warning is of little concern.
 
 [system-random]: https://docs.microsoft.com/en-us/dotnet/api/system.random?view=netcore-3.1
 [random-thread-safety]: https://docs.microsoft.com/en-us/dotnet/api/system.random?view=netcore-3.1#the-systemrandom-class-and-thread-safety
 [random-use-cases]: https://docs.microsoft.com/en-us/dotnet/api/system.random?view=netcore-3.1#generate-random-boolean-values
-[random-use-case-array]: https://docs.microsoft.com/en-us/dotnet/api/system.random?view=netcore-3.1#generating-different-types-of-random-numbers
+[random-use-case-array]: https://docs.microsoft.com/en-us/dotnet/api/system.random?view=netcore-3.1#UniqueArray
 [crypto-provider]: https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rngcryptoserviceprovider?view=netcore-3.1
 [crypto-rng]: https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.randomnumbergenerator?view=netcore-3.1
 [random-seedless]: https://docs.microsoft.com/en-us/dotnet/api/system.random?view=netcore-3.1#instantiating-the-random-number-generator
