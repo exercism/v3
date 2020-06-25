@@ -4,6 +4,7 @@
 - Know that no seed is required
 - Know that both integers and real numbers can be generated
 - Know that once generated random numbers can be easily used for many purposes (including non-numeric ones).
+- Know about thread safety and how it relates to the `System.Random` class (discussion only).
 
 ## Out of scope
 
@@ -12,7 +13,6 @@
 ## Concepts
 
 - `randomness`: as they are handled in C# and .NET.
-- `basic-thread-safety`: ensure user is acquainted with the idea of thread safety. A deeper discussion can be deferred to the `concurrent-colletions` exercise.
 
 ## Prerequisites
 
