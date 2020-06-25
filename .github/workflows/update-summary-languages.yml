@@ -1,14 +1,15 @@
-name: Stories summary
+name: Update languages summary
 
 on:
   push:
     branches:
       - master
     paths:
-      - 'reference/stories/**'
+      - 'languages/*/config.json'
+      - 'languages/*/exercises/**'
 
 jobs:
-  update:
+  update-languages-summary:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +23,7 @@ jobs:
         with:
           dotnet-version: '3.1.201'
 
-      - name: Update stories summary
-        run: .github/bin/stories/update.sh
+      - name: Update languages summary
+        run: .github/bin/languages/update.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
