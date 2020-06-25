@@ -22,6 +22,8 @@ These will be in the codebase. They're unordered.
 - **All your base are belong to us:** Solved the "All Your Base" exercise.
 - **Whatever:** Solve Bob
 - **Lackadaisical:** Solve bob in five languages
+- **Team builder:** Create a team with 3 members
+- **Teammate:** Give team feedback to 5 solutions.
 
 ## To be implemented - but involve more code/effort
 
