@@ -1,6 +1,9 @@
 # Docs
 docs/**/*                              @iHiD @ErikSchierboom
 
+# Badges
+badges.md                              @iHiD @ErikSchierboom
+
 # Track-specific reviewers
 languages/ada/**/*                     @exercism/ada
 languages/ballerina/**/*               @exercism/ballerina
