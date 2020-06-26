@@ -118,3 +118,4 @@ A collection of unsorted ideas. Move one of these into "To Be Implemented" if yo
 - We'll do it live: Live stream a solution
 - Flawless: first iteration passes all the tests and has no feedback
 - Command-liner: submit 10+ exercises through the CLI
+- Where did it go?: completed an exercise that has since been deprecated
