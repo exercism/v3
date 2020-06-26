@@ -25,3 +25,5 @@
 - `if-conditional`
 
 ## Analyzer
+
+- The function `d6` should use a range and `Enum` functions, it should not use `:rand`.

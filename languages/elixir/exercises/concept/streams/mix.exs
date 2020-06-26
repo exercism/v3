@@ -1,4 +1,4 @@
-defmodule Monopoly.MixProject do
+defmodule MenschAergereDichNicht.MixProject do
   use Mix.Project
 
   def project do

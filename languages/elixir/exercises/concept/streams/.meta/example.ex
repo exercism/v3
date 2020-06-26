@@ -1,17 +1,14 @@
-defmodule Monopoly do
+defmodule MenschAergereDichNicht do
   def d6 do
-    1..6
-    |> Enum.shuffle()
-    |> Enum.at(0)
+    Enum.random(1..6)
   end
 
-  def roll() do
-    fn -> {d6(), d6()} end
+  def roll(d6 \\ &d6/0) do
+    d6
     |> Stream.repeatedly()
-    |> Stream.with_index()
-    |> Stream.transform(false, fn {{d1, d2}, index}, acc ->
-      if index == 0 || (acc && index < 3) do
-        {[{d1, d2}], d1 == d2}
+    |> Stream.transform(true, fn roll, acc ->
+      if acc do
+        {[roll], roll == 6}
       else
         {:halt, false}
       end

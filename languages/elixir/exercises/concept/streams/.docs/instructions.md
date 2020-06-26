@@ -1,36 +1,38 @@
-As a child, you loved playing Monopoly. While as an adult you might prefer board games with more strategy and less luck involved, you decided to dust off the rulebook and have fun implementing the game in Elixir. You start with the dice rolls.
+While planning a games night with friends, the group decides they will revisit their childhood favorites. Your German friend proposes _Mensch ärgere Dich nicht_ (_Man, Don't Get Angry_), a classic in many European countries (similar to the English _Ludo_ or the North American _Parcheesi_).
 
-In Monopoly, players roll two 6-sided dice to determine their fate. If they roll the same value on both dice, they can roll again. However, if they get unlucky and roll doubles 3 times in a row, they go directly to jail!
+To prepare for the game, you decide to implement the dice rolling function in Elixir.
+
+In _Mensch ärgere Dich nicht_, players roll one 6-sided die to determine their next move. If they are lucky and roll 6, they can roll and move again.
 
 ## 1. Do one 6-sided die roll
 
 Implement the `d6/0` function that will randomly choose one integer between 1 and 6 on each call.
 
 ```elixir
-Monopoly.d6()
+MenschAergereDichNicht.d6()
 # => 1
-Monopoly.d6()
+MenschAergereDichNicht.d6()
 # => 5
 ```
 
-## 2. Do one roll of two 6-sided dice
+## 2. Keep rolling as long as you roll sixes
 
-Implement the `roll/0` function. It should return a stream. When converted to a list, the stream should return a 1-element list with a 2-tuple, each value in the tuple being a randomly chosen integer between 1 and 6. Use the `d6/0` function defined in the previous step.
+Implement the `roll/0` function. It should return a stream of dice rolls. The dice rolls should follow the rules of the game. If I roll a six, I can roll again. Otherwise, stop rolling. Use the `d6/0` function defined in the previous step.
 
 ```elixir
-Monopoly.roll() |> Enum.to_list()
-# => [{1, 5}]
-Monopoly.roll() |> Enum.to_list()
-# => [{5, 2}]
+MenschAergereDichNicht.roll() |> Enum.to_list()
+# => [5]
+MenschAergereDichNicht.roll() |> Enum.to_list()
+# => [6, 3]
 ```
 
-## 3. Roll again after a double.
+## 3. Allow using a rigged die
 
-Extend the `roll/0` function. If the previous roll of two 6-sided dice resulted in both dice rolling the same number, do another two 6-sided dice roll. Stop rolling after 3 rolls, regardless of the result.
+To make it easier to test your code, allow using a rigged die.
+
+Extend the `roll/0` function. It should accept an optional argument - a function. If the argument is passed, use it to do the die roll. Otherwise, fall back to `MenschAergereDichNicht.d6/0`.
 
 ```elixir
-Monopoly.roll() |> Enum.to_list()
-# => [{4, 4}, {2, 4}]
-Monopoly.roll() |> Enum.to_list()
-# => [{6, 6}, {1, 1}, {3, 3}]
+MenschAergereDichNicht.roll(fn -> 3 end) |> Enum.to_list()
+# => [3]
 ```
