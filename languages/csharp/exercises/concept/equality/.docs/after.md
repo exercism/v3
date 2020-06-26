@@ -6,13 +6,14 @@ The coding exercise illustrates a number of properties of equality in C#:
 
 - Simple types (strings and primitives) are typically tested for equality with the `==` and `!=`. This is considered more idiomatic than using the [`Equals()`][object-equals] method which is also available with these types. Java programmers should be alert, when dealing with strings, to the fact that `==` compares by value in C# but by reference in Java when returning to their former language.
 - Reference types (Instances of classes) are compared using the `Equals()` method inherited from `object`. If your goal with the equality test is to ensure that two objects are the exact same instance then relying on `object`'s implementation will suffice. If not, you need to override `object.Equals()`.
-- If you know that all the instances of your class are created in one place, say characters in some game or simulation then reference equality is sufficient. However, it is likely that multiple instances of the same real-world entity will be created (from a database, by user input, via a web request). In this case values that uniquely identify the entity must be tested for equality. Therefore `Equals()` must be overridden.
+- If you know that all the instances of your class are created in one place, say characters in some game or simulation then reference equality is sufficient. However, it is likely that multiple instances of the same real-world entity will be created (for example, from a database, by user input, via a web request). In this case values that uniquely identify the entity must be tested for equality. Therefore `Equals()` must be overridden.
 - An overridden `Equals()` will contain equality tests on members of simple types using `==` and reference types with recursive calls to `Equals()`.
 
 ```csharp
 class StatusBar
 {
     private readonly int width = 200, height = 20;
+
     public override bool Equals(object other)
     {
         // ... null and type checks and performance optimisations
@@ -23,6 +24,7 @@ class Window
 {
     private readonly string title = "Main";
     private readonly StatusBar statusBar = new StatusBar();
+
     public override bool Equals(object other)
     {
         // ... null and type checks and performance optimisations
@@ -39,13 +41,14 @@ var winA = new Window(); // above code shows that all windows are equal
 var winB = new Window();
 ReferenceEquals(winA, winB);
 // => false
-ReferenceEquals(winA, winA);
+var winC = winA;
+ReferenceEquals(winA, winC);
 // => true
 ```
 
 #### Ancillary topics
 
-- In addition to `public override bool Equals(object obj)` IDEs typically generate the overload `protected bool Equals(FacialFeatures other)` for use by derived classes.
+- In addition to `public override bool Equals(object obj)` IDEs typically generate the overload `protected bool Equals(FacialFeatures other)` for use when inheritance is involved. A derived class can call the base classe's `Equals()` and then add its own test.
 - Do not use `==` unless you have [overloaded][operator-overloading] the `==` operator, as well as the `Equals()` method in your class (see the `operator-overloading` exercise) or you care only that the references are equal.
 - Equality tests in [`struct`s][struct] are dealt with in the `structs` exercise.
 - Equality of [`tuple`s][tuples-equality] is dealt with in the `tuples` exercise.
@@ -100,13 +103,13 @@ To improve performance slightly, especially where objects belong to collections 
 
 This will save a certain amount of type checking for reference types and will save a boxing step for value types as they will not need to be converted to an object (boxed) as an argument to `public override bool Equals(object other)`.
 
-If you add the interface `IEquatable<T>` to your class this will require the overload to be implemented. Unless your code contains routines that take objects of type `IEquatable<T>` (and presumably do something interesint relating to equality irrespective of the implementing class) there is really no other reason to include the interface.
+If you add the interface `IEquatable<T>` to your class this will require the overload to be implemented. Unless your code contains routines that take objects of type `IEquatable<T>` (and presumably do something interesting relating to equality irrespective of the implementing class) there is really no other compelling to include the interface.
 
 ### `IEqualityComparer<T>`
 
 If you have a class that can be uniquely identified in two different ways, say a `Person` class that has a SSID and a unique email address then .NET provides a means to allow two different collections to use different hash-code and equality tests. Each can have an different implementation of `IEqualityComparer<T>` with its own an `Equals()` and a `GetHashCode()` method. You can have a dictionary keyed on SSID and another keyed on email address.
 
-Where `IEqualityComparer<T>` is in play you would typically still implement `Equals()` and `GetHashCode()` on your item class to avoid problems outside the collection classes.
+Where `IEqualityComparer<T>` is in play you would typically still override `Equals()` and `GetHashCode()` on your item class to avoid problems outside the collection classes.
 
 One consideration when using `IEqualityComparer<T>` is that private methods etc. will not be available for the equality test.
 
@@ -118,7 +121,7 @@ One primitive that can challenge the unwary coder is testing the [equality of fl
 
 ### Equality and Inheritance
 
-This [article][so-equals-inheritance] shows some of the decisions that have to be made with regard to equality and inheritance. They will only concern you if you are manipulating instance of a class and a derived class and need to test the equality between the two.
+This [article][so-equals-inheritance] shows some of the decisions that have to be made with regard to equality and inheritance. They will only concern you if you are manipulating instances of a class and a derived class and need to test the equality between the two.
 
 ### General Informaton
 

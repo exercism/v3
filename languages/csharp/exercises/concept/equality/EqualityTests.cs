@@ -17,14 +17,14 @@ public class EqualityTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void AreSameFaces_yes()
+    public void AreSameFace_yes()
     {
         Assert.True(Authenticator.AreSameFace(new FacialFeatures("green", 0.9m),
             new FacialFeatures("green", 0.9m)));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void AreSameFaces_no()
+    public void AreSameFace_no()
     {
         Assert.False(Authenticator.AreSameFace(new FacialFeatures("green", 0.9m),
             new FacialFeatures("blue", 0.9m)));

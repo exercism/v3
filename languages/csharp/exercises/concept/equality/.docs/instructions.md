@@ -9,9 +9,9 @@ Implement `Authenticator.AreSameFace()` to check that two faces match.
 Add equality reoutines for the `FacialFeatures` class.
 
 ```csharp
-Authanticator.AreSameFace(new FacialFeatures("green", 0.9m), new FacialFeatures("green", 0.9m);
+Authenticator.AreSameFace(new FacialFeatures("green", 0.9m), new FacialFeatures("green", 0.9m);
 // => true
-Authanticator.AreSameFace(new FacialFeatures("blue", 0.9m), new FacialFeatures("green", 0.9m);
+Authenticator.AreSameFace(new FacialFeatures("blue", 0.9m), new FacialFeatures("green", 0.9m);
 // => false
 ```
 
@@ -45,7 +45,9 @@ authenticator.IsRegistered(new Identity("alice@thecompetition.com", new FacialFe
 
 ## 3. Register new identities
 
-Implement the `Authenticator.Register()` method which stores an identity on the authenticator itself such that calls to `IsRegistered()` will return true for this identity. If the identity has already been registered then `false` is returned by `Authenticator.Register()`, otherwise `true`.
+Implement the `Authenticator.Register()` method which stores an identity on the authenticator itself such that calls to `IsRegistered()` will return `true` for this identity: otherwise `IsRegisterd()` returns `false`.
+
+To detect duplicated attempts to register an identity, if the identity has already been registered then `false` is returned by `Authenticator.Register()`, otherwise `true`.
 
 ```csharp
 var authenticator = new Authenticator();
@@ -73,11 +75,12 @@ A bug has been reported whereby the `Authenticator.IsRegistered()` nethod is cal
 
 ```csharp
 var identityA = new Identity("alice@thecompetition.com", new FacialFeatures("blue", 0.9m));
-Authenticator.AreSameObject(identityA, identityA);
+var identityB = identityA;
+Authenticator.AreSameObject(identityA, identityB);
 // => true
 
-var identityB = new Identity("alice@thecompetition.com", new FacialFeatures("blue", 0.9m));
 var identityC = new Identity("alice@thecompetition.com", new FacialFeatures("blue", 0.9m));
-Authenticator.AreSameObject(identityB, identityC));
+var identityD = new Identity("alice@thecompetition.com", new FacialFeatures("blue", 0.9m));
+Authenticator.AreSameObject(identityC, identityD);
 // => false
 ```

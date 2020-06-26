@@ -19,7 +19,7 @@ The most performant, and "natural", way to handle a collection of unique values 
 
 ## 4. Prevent invalid identities being authenticated
 
-Consider the [`HashSet.Contains()`][hash-set-contains] method.
+Consider the [`HashSet<T>.Contains()`][hash-set-contains] method.
 
 ## 5. Add diagnostics to detect multiple attempts to authenticate
 
