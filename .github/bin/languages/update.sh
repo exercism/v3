@@ -29,4 +29,4 @@ git commit -m "[CI] Update languages summary"
 git push origin "$BRANCH"
 
 # Create a PR
-gh pr create --title "[CI] Update languages summary" --body "This is an _automatically generated_ PR to update the language summary files."
+gh pr create --title "[CI] Update languages summary" --body "This is an _automatically generated_ PR to update the language summary files." --label "type/bot"
