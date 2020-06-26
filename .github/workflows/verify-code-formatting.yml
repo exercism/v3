@@ -2,21 +2,7 @@ name: 'Verify formatting'
 
 on:
   push:
-    paths:
-      - '**/*.md'
-      - '**/*.json'
-      - '.prettierignore'
-      - '.prettierrc'
-      - '**/.prettierignore'
-      - '**/.prettierrc'
   pull_request:
-    paths:
-      - '**/*.md'
-      - '**/*.json'
-      - '.prettierignore'
-      - '.prettierrc'
-      - '**/.prettierignore'
-      - '**/.prettierrc'
 
 jobs:
   verify-code-formatting:
@@ -35,4 +21,4 @@ jobs:
           PULL_REQUEST_URL=$(jq -r ".pull_request.url" "$GITHUB_EVENT_PATH")
           curl --url $"${PULL_REQUEST_URL}/files" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' | \
             jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match("\\.(md|json)$")) | .filename' | \
-            xargs npx prettier@2.0.4 --check
+            xargs -r npx prettier@2.0.4 --check

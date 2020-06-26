@@ -193,22 +193,19 @@ module Markdown =
     let private appendImplementationsToMarkdown (stories: Story list) (markdown: StringBuilder): StringBuilder =
         let markdownStoryImplementations = storiesToMarkdownStoryImplementation stories
         
-        let columnLength column = markdownStoryImplementations |> List.map column |> List.map String.length |> List.max            
-        let nameColumnLength = columnLength (fun story -> story.Name)
-        let trackColumnLength = columnLength (fun story -> story.Track)
-        let exerciseColumnLength = columnLength (fun story -> story.Exercise)
+        let renderLine nameColumn trackColumn exerciseColumn =
+            markdown
+                .AppendFormat(sprintf "| %s | %s | %s |" nameColumn trackColumn exerciseColumn)
+                .AppendLine() |> ignore
         
-        let renderLine (nameColumn: string) (trackColumn: string) (exerciseColumn: string) =
-            markdown.AppendFormat(sprintf "| {0,-%d} | {1,-%d} | {2,-%d} |" nameColumnLength trackColumnLength exerciseColumnLength, nameColumn, trackColumn, exerciseColumn) |> ignore
-            markdown.AppendLine() |> ignore
-        
-        markdown.AppendLine("## Implementations") |> ignore
-        markdown.AppendLine() |> ignore
-        markdown.AppendLine("These are the implementations of the stories in the various tracks.") |> ignore
-        markdown.AppendLine() |> ignore
+        markdown
+            .AppendLine("## Implementations")
+            .AppendLine()
+            .AppendLine("These are the implementations of the stories in the various tracks.")
+            .AppendLine() |> ignore
         
         renderLine "Story" "Track" "Exercise"
-        renderLine (System.String('-', nameColumnLength)) (System.String('-', trackColumnLength)) (System.String('-', exerciseColumnLength))
+        renderLine "-" "-" "-"
 
         for markdownStoryImplementation in markdownStoryImplementations do
             renderLine markdownStoryImplementation.Name markdownStoryImplementation.Track markdownStoryImplementation.Exercise
@@ -217,26 +214,22 @@ module Markdown =
             
     let private appendStoriesMarkdown (stories: Story list) (markdown: StringBuilder): StringBuilder =
         let markdownStories = storiesToMarkdownStories stories
+
+        markdown
+            .AppendLine("# Stories")
+            .AppendLine()
+            .AppendLine("_This file is auto-generated and should not be modified manually._")
+            .AppendLine()
+            .AppendLine("A collection of story and narrative ideas that can be used when writing Concept Exercise specs.")
+            .AppendLine() |> ignore
         
-        let columnLength column = markdownStories |> List.map column |> List.map String.length |> List.max
-        
-        let nameColumnLength = columnLength (fun story -> story.Name)
-        let conceptColumnLength = columnLength (fun story -> story.Concept)
-        let descriptionColumnLength = columnLength (fun story -> story.Description)
-        
-        markdown.AppendLine("# Stories") |> ignore
-        markdown.AppendLine() |> ignore
-        markdown.AppendLine("_This file is auto-generated and should not be modified manually._") |> ignore
-        markdown.AppendLine() |> ignore
-        markdown.AppendLine("A collection of story and narrative ideas that can be used when writing Concept Exercise specs.") |> ignore
-        markdown.AppendLine() |> ignore
-        
-        let renderLine (conceptColumn: string) (nameColumn: string) (descriptionColumn: string) =
-            markdown.AppendFormat(sprintf "| {0,-%d} | {1,-%d} | {2,-%d} |" conceptColumnLength nameColumnLength descriptionColumnLength, conceptColumn, nameColumn, descriptionColumn) |> ignore
-            markdown.AppendLine() |> ignore
+        let renderLine conceptColumn nameColumn descriptionColumn =
+            markdown
+                .AppendFormat(sprintf "| %s | %s | %s |" conceptColumn nameColumn descriptionColumn)
+                .AppendLine() |> ignore
         
         renderLine "Concept" "Story" "Description"
-        renderLine (System.String('-', conceptColumnLength)) (System.String('-', nameColumnLength)) (System.String('-', descriptionColumnLength))
+        renderLine "-" "-" "-"
 
         for markdownStory in markdownStories do
             renderLine markdownStory.Concept markdownStory.Name markdownStory.Description

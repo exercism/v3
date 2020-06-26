@@ -1,6 +1,17 @@
 # Docs
 docs/**/*                              @iHiD @ErikSchierboom
 
+# Badges
+badges.md                              @iHiD @ErikSchierboom
+
+# Bot-generated
+languages/languages.json               @ErikSchierboom
+languages/README.md                    @ErikSchierboom
+reference/references.json              @ErikSchierboom
+reference/README.md                    @ErikSchierboom
+reference/stories/stories.json         @ErikSchierboom
+reference/stories/README.md            @ErikSchierboom
+
 # Track-specific reviewers
 languages/ada/**/*                     @exercism/ada
 languages/ballerina/**/*               @exercism/ballerina
