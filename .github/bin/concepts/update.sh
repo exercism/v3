@@ -25,8 +25,8 @@ git config --global user.email "github-actions[bot]@users.noreply.github.com"
 git config --global user.name "github-actions[bot]"
 
 # Commit and push the changes
-git commit -m "[CI] Update concepts summary"
+git commit -m "[Bot] Update concepts summary"
 git push origin "$BRANCH"
 
 # Create a PR
-gh pr create --title "[CI] Update concepts summary" --body "This is an _automatically generated_ PR to update the concepts summary files." --label "type/bot"
+gh pr create --title "[Bot] Update concepts summary" --body "This is an _automatically generated_ PR to update the concepts summary files." --label "type/bot"
