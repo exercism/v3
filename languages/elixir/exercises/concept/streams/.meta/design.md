@@ -17,7 +17,6 @@
 - `streams`
 - `ranges`
 - `pipe-operator`
-- `capturing-functions`
 
 ## Prerequisites
 
