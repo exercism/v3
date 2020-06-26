@@ -21,7 +21,7 @@
 ## Prerequisites
 
 - `enum`
-- `structs`
+- `tuples`
 - `if-conditional`
 
 ## Analyzer
