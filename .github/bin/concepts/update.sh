@@ -29,4 +29,4 @@ git commit -m "[CI] Update concepts summary"
 git push origin "$BRANCH"
 
 # Create a PR
-gh pr create --title "[CI] Update concepts summary" --body "This is an _automatically generated_ PR to update the concepts summary files."
+gh pr create --title "[CI] Update concepts summary" --body "This is an _automatically generated_ PR to update the concepts summary files." --label "type/bot"
