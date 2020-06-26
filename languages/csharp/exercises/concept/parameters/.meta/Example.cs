@@ -7,7 +7,7 @@ namespace example
         private int batteryPercentage = 100;
         private int distanceDrivenInMeters = 0;
         private string[] sponsors = new string[0];
-        private long latestTimestamp = 0L;
+        private int latestSerialNum = 0;
 
         public void Drive()
         {
@@ -18,7 +18,7 @@ namespace example
             }
         }
 
-        public void AddSponsors(params string[] sponsors)
+        public void SetSponsors(params string[] sponsors)
         {
             this.sponsors = sponsors;
         }
@@ -28,19 +28,19 @@ namespace example
             return sponsors[sponsorNum];
         }
 
-        public bool GetTelemetryData(ref long timestamp,
+        public bool GetTelemetryData(ref int serialNum,
             out int batteryPercentage, out int distanceDrivenInMeters)
         {
-            if (timestamp > latestTimestamp)
+            if (serialNum > latestSerialNum)
             {
-                latestTimestamp = timestamp;
+                latestSerialNum = serialNum;
                 batteryPercentage = this.batteryPercentage;
                 distanceDrivenInMeters = this.distanceDrivenInMeters;
                 return true;
             }
             else
             {
-                timestamp = latestTimestamp;
+                serialNum = latestSerialNum;
                 batteryPercentage = -1;
                 distanceDrivenInMeters = -1;
                 return false;
@@ -62,27 +62,12 @@ namespace example
             this.car = car;
         }
 
-        public string IsCarOk(long timestamp)
+        public string GetBatteryUsagePerMeter(int serialNum)
         {
-            long localTime = timestamp;
-            bool goodData = car.GetTelemetryData(ref localTime, out int batteryPercentage, out _);
-            if (!goodData)
-            {
-                return "no data";
-            }
-            if (batteryPercentage > 50)
-            {
-                return "car ok";
-            }
-
-            return "car bad";
-        }
-
-        public string GetBatteryUsagePerMeter(long timestamp)
-        {
-            long localTime = timestamp;
-            bool goodData = car.GetTelemetryData(ref localTime,
+            int localSerialNum = serialNum;
+            bool goodData = car.GetTelemetryData(ref localSerialNum,
                 out int batteryPercentage, out int distanceDrivenInMeters);
+
             if (!goodData || distanceDrivenInMeters == 0)
             {
                 return "no data";

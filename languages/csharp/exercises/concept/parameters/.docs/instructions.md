@@ -8,15 +8,15 @@ You will note that the introduction of these fancy new technologies has dramatic
 
 ## 1. Enable the remote control car to display sponsor names
 
-Implement `AddSponsors` to take one or more sponsor names and store them on the car.
+Implement `SetSponsors()` to take one or more sponsor names and store them on the car.
 
-Note `AddSponsors` is guaranteed to be called at most once and the argument is guaranteed to be non-null.
+Note that the `SetSponsors()` method's argument is guaranteed to be non-null.
 
-Implement `DisplaySponsor` to display the selected sponsor. The first sponsor added has a `sponsorNum` of 0, the second, 1 etc.
+Implement `DisplaySponsor()` to display the selected sponsor. The first sponsor added has a `sponsorNum` of 0, the second, 1 etc.
 
 ```csharp
 var car = RemoteControlCar.Buy();
-car.AddSponsors("Exercism", "Walker Industries", "Acme Co.");
+car.SetSponsors("Exercism", "Walker Industries", "Acme Co.");
 var sp2 = car.DisplaySponsor(sponsorNum: 1);
 // => "Walker Industries"
 ```
