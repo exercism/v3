@@ -1,7 +1,7 @@
 The coding exercise illustrates a number of properties of parameters:
 
-- Parameters [passed][passing-parameters] without a modifier (such as `out` or `ref`) are passed by value. That is to say that the parameter as seen in the calling method cannot be changed by the called method.
-- When a reference to an array or an instance of a class is a parameter the elements/fields of that instance can be changed by the called method and the changes seen by the caller. This gives the appearance of passing by reference but it is not. This confusion (albeit as it affects Java) is discussed in this [Stack Overflow thread][so-java-parameters]. The parameter (variable containing a reference to an object) itself is passed by value.
+- Parameters [passed][passing-parameters] without a modifier (such as `out` or `ref`) are passed by value. That is to say that the parameter can be used and assigned to in the called method but any changes will have no effect on the caller.
+- When a reference to an array or an instance of a class is a parameter the elements/fields of that instance can be changed by the called method and the changes seen by the caller. This applies irrespective of whether the `ref` modifier is present.
 - A parameter with the [`out`][out-parameter] modifier conveys a value back from the called method to the caller. The parameter can be passed to the called method without being initialized and in any case it is treated within the called method as if, on entry, it had not been initialized. An understanding of the behavior and rules regarding parameter modifiers can be gained most easily through examples (see below) and compiler messages.
 
 ```csharp
