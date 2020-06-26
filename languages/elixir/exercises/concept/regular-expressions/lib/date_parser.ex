@@ -1,30 +1,28 @@
 defmodule DateParser do
-  def month(), do: "\\d{1,2}"
-  def day(), do: "\\d{1,2}"
-  def year(), do: "\\d{4}"
+  def day(), do: raise "Please implement day/0"
+  def month(), do: raise "Please implement month/0"
+  def year(), do: raise "Please implement year/0"
 
-  @days ~w[Sunday Monday Tuesday Wednesday Thursday Friday Saturday]
   def day_names() do
-    "(#{Enum.join(@days, "|")})"
+    raise "Please implement day_names/0"
   end
 
-  @months ~w[January February March April May June July August September October November December]
   def month_names() do
-    "(#{Enum.join(@months, "|")})"
+    raise "Please implement month_names/0"
   end
 
-  def capture_month(), do: "(?<month>#{month()})"
-  def capture_day(), do: "(?<day>#{day()})"
-  def capture_year(), do: "(?<year>#{year()})"
+  def capture_day(), do: raise "Please implement capture_day/0"
+  def capture_month(), do: raise "Please implement capture_month/0"
+  def capture_year(), do: raise "Please implement capture_year/0"
 
-  def capture_month_names(), do: "(?<month_names>#{month_names()})"
-  def capture_day_names(), do: "(?<day_names>#{day_names()})"
+  def capture_day_name(), do: raise "Please implement capture_day_name/0"
+  def capture_month_name(), do: raise "Please implement capture_month_name/0"
 
-  def capture_numeric_date(), do: "#{capture_day()}/#{capture_month()}/#{capture_year()}"
-  def capture_month_name_date(), do: "#{capture_month_names()} #{capture_day()}, #{capture_year()}"
-  def capture_day_month_name_date(), do: "#{capture_day_names()}, #{capture_month_name_year()}"
+  def capture_numeric_date(), do: raise "Please implement capture_numeric_date/0"
+  def capture_month_name_date(), do: raise "Please implement capture_month_name_date/0"
+  def capture_day_month_name_date(), do: raise "Please implement capture_day_month_name_date/0"
 
-  def match_numeric_date(), do: ~r'^#{capture_numeric_date()}$'
-  def match_month_name_date(), do: ~r'^#{capture_month_name_date()}$'
-  def match_day_month_name_date(), do: ~r'^#{capture_day_month_name_date()}$'
+  def match_numeric_date(), do: raise "Please implement match_numeric_date/0"
+  def match_month_name_date(), do: raise "Please implement match_month_name_day/0"
+  def match_day_month_name_date(), do: raise "Please implement match_day_month_name_date/0"
 end
