@@ -17,7 +17,7 @@ if [ -z "$(git status --porcelain)" ]; then
 fi
 
 # Checkout to new branch
-BRANCH="languagesummary-$(date +%Y%m%d%H%M%S)"
+BRANCH="bot/summaries/languages/$(date +%Y%m%d%H%M%S)"
 git checkout -b "$BRANCH"
 
 # Setup the git user (required to commit anything)

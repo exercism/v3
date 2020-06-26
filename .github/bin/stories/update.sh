@@ -17,7 +17,7 @@ if [ -z "$(git status --porcelain)" ]; then
 fi
 
 # Checkout to new branch
-BRANCH="storysummary-$(date +%Y%m%d%H%M%S)"
+BRANCH="bot/summaries/stories/$(date +%Y%m%d%H%M%S)"
 git checkout -b "$BRANCH"
 
 # Setup the git user (required to commit anything)
