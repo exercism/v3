@@ -26,10 +26,11 @@ The core OO features a C# developer should know about are:
     - Out parameters 📖 (issue [#1128](https://github.com/exercism/v3/issues/1128))
     - [Optional arguments][optional_arguments] 📖 (issue [#1128](https://github.com/exercism/v3/issues/1128))
   - Method overloading ✅ (exercise [`method-overloading`][exercise-method-overloading])
+    - operator overloading
   - Return values ✅ (exercise [`basics`][exercise-basics])
 - [Mutation][mutation] ✅ (exercise [`basics`][exercise-basics])
 - [Objects][objects] ✅ (exercise [`classes`][exercise-classes])
-  - Object initializers
+  - Object initializers 📖 (issue [#1637](https://github.com/exercism/v3/issues/1637))
 - [Polymorphism][polymorphism] ✅ (exercise [`inheritance`][exercise-inheritance])
 - Properties ✅ (exercise [`properties`][exercise-properties])
 - [State][state] ✅ (exercise [`classes`][exercise-classes])
@@ -83,11 +84,11 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - Locks
 - Conditionals
   - Boolean logic ✅ (exercise [`booleans`][exercise-booleans])
-  - Conditionals: do-while
-  - Conditionals: switch
+  - Conditionals: do-while 📖 (issue [#1631](https://github.com/exercism/v3/issues/1631))
+  - Conditionals: switch 📖 (issue [#1633](https://github.com/exercism/v3/issues/1633))
   - Conditionals: while ✅ (exercise [`floating-point-numbers`][exercise-floating-point-numbers])
-  - [Conditionals: if][conditionals] ✅ (exercise [`conditionals`][exercise-conditionals])
-  - [Conditionals: ternary][conditionals]
+  - [Conditionals: if][conditionals] ✅ (exercise [`exercise-floating-point-numbers`][exercise-floating-point-numbers])
+  - [Conditionals: ternary][conditionals] 📖 (issue [#1635](https://github.com/exercism/v3/issues/1635))
 - Constants/readonly 📖 (issue [#1044](https://github.com/exercism/v3/issues/1044))
 - Conversions
   - Boxing/unboxing
@@ -97,7 +98,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - [Enumeration: for loop][enumeration]
   - [Enumeration: foreach loop][enumeration]
 - Exceptions 📖 (issue [#966](https://github.com/exercism/v3/issues/966))
-  - User-defined exceptions 📖 (issue [#1141](https://github.com/exercism/v3/issues/1141))
+  - User-defined exceptions ✅ (exercise [`user-defined-exceptions`][exercise-user-defined-exceptions])
 - Null ✅ (exercise [`nullability`][exercise-nullability])
   - Null-coalescing operator ✅ (exercise [`nullability`][exercise-nullability])
   - Null-conditional operator ✅ (exercise [`nullability`][exercise-nullability])
@@ -107,12 +108,12 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - Arithmetic overflow 📖 (issue [#1138](https://github.com/exercism/v3/issues/1138))
   - Bitwise manipulation ✅ (exercise [`flag-enums`][exercise-flag-enums])
   - Math operators ✅ (exercise [`numbers`][exercise-numbers])
-- Randomness
+- Randomness 📖 (issue [#1642](https://github.com/exercism/v3/issues/1642))
 - Reflection
-- Regular expressions
+- Regular expressions 📖 (issue [#1638](https://github.com/exercism/v3/issues/1638))
 - Resources
-  - Resource cleanup (`IDisposable`)
-  - Resource lifetime
+  - Resource cleanup (`IDisposable`) 📖 (issue [#1639](https://github.com/exercism/v3/issues/1639))
+  - Resource lifetime 📖 (issue [#1640](https://github.com/exercism/v3/issues/1640))
   - Resource passing (by reference/by value)
   - [Resource allocation][memory_allocation] 📖 (issue [#1018](https://github.com/exercism/v3/issues/1018))
   - Resource pooling 📖 (issue [#1146](https://github.com/exercism/v3/issues/1146))
@@ -142,7 +143,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - [Dictionaries][map] ✅ (exercise [`dictionaries`][exercise-dictionaries])
   - Enumerables
   - Immutable collections
-  - [Lists][list] 📖 (issue [#958](https://github.com/exercism/v3/issues/958))
+  - [Lists][list] (issue [#958](https://github.com/exercism/v3/issues/958))
   - [Queues][queue]
   - [Ranges][range]
   - [Sets][set]
@@ -156,7 +157,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Events
 - Indexes
 - Lazy&lt;T&gt;
-- Nested types
+- Nested types 📖 (issue [#1643](https://github.com/exercism/v3/issues/1643))
 - Numbers ✅ (exercise [`numbers`][exercise-numbers])
   - Floating point numbers ✅ (exercise [`floating-point-numbers`][exercise-floating-point-numbers])
   - Signed integers 📖 (issue [#780](https://github.com/exercism/v3/issues/780))
@@ -165,7 +166,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Streams
 - [Strings][string] ✅ (exercise [`strings`][exercise-strings])
 - Tasks
-- Time
+- Time 📖 (issue [#1644](https://github.com/exercism/v3/issues/1644))
 - [Tuples][tuple] 📖 (issue [#963](https://github.com/exercism/v3/issues/963))
 
 ## Concept interpretation
@@ -263,3 +264,4 @@ The concept exercises use the following concepts:
 [exercise-numbers]: ../exercises/concept/numbers/.meta/design.md
 [exercise-properties]: ../exercises/concept/properties/.meta/design.md
 [exercise-strings]: ../exercises/concept/strings/.meta/design.md
+[exercise-user-defined-exceptions]: ../exercises/concept/user-defined-exceptions/.meta/design.md

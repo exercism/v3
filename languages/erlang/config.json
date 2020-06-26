@@ -1,4 +1,7 @@
 {
+  "language": "Erlang",
+  "active": true,
+  "blurb": "Erlang is a functional language, designed for use in real-time distributed systems. It's used within telecom networks, and is notable for simple message passing with lightweight independent processes.",
   "version": 3,
   "online_editor": {
     "indent_style": "space",
