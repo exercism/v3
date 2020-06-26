@@ -23,7 +23,7 @@ The admin's email is admin@exerc.ism. They have green eyes and a philtrum with a
 
 Add equality routines for the `Identity` class.
 
-Implement `Authenticator.IsAdmin()` to check that the identity passed in matches that of the administrator.
+Implement the `Authenticator.IsAdmin()` method to check that the identity passed in matches that of the administrator.
 
 ```csharp
 var authenticator = new Authenticator();
@@ -33,9 +33,19 @@ authenticator.IsAdmin(new Identity("admin@thecompetition.com", new FacialFeature
 // => false
 ```
 
+## 2. Prevent invalid identities being authenticated
+
+Implement the `Authenticator.IsRegistered()` method and ensure it returns false when no matching identity has been registered.
+
+```csharp
+var authenticator = new Authenticator();
+authenticator.IsRegistered(new Identity("alice@thecompetition.com", new FacialFeatures("blue", 0.8m)));
+// => false
+```
+
 ## 3. Register new identities
 
-Implement `Authenticator.Register()` which stores an identity on the authenticator itself such that calls to `IsRegistered()` will return true for this identity. If the identity has already been registered then `false` is returned by `Authenticator.Register()`, otherwise `true`.
+Implement the `Authenticator.Register()` method which stores an identity on the authenticator itself such that calls to `IsRegistered()` will return true for this identity. If the identity has already been registered then `false` is returned by `Authenticator.Register()`, otherwise `true`.
 
 ```csharp
 var authenticator = new Authenticator();
@@ -45,12 +55,11 @@ authenticator.IsRegistered(new Identity("alice@thecompetition.com", new FacialFe
 // => true
 authenticator.Register(new Identity("tunde@thecompetition.com", new FacialFeatures("blue", 0.9m)));
 // => false
-
 ```
 
 ## 4. Prevent invalid identities being authenticated
 
-Implement `Authenticator.IsRegistered()` and ensure it returns false when no identities have been registered.
+Implement the `Authenticator.IsRegistered()` method and ensure it returns false when no identities have been registered.
 
 ```csharp
 var authenticator = new Authenticator();
@@ -60,7 +69,7 @@ authenticator.IsRegistered(new Identity("alice@thecompetition.com", new FacialFe
 
 ## 5. Add diagnostics to detect multiple attempts to authenticate
 
-A bug has been reported whereby `Authenticator.IsRegistered()` is called multiple times in quick succession for the same identity. You believe that there is some sort of "bounce" problem where the exact same record is being submitted multiple times. Your task is to add a diagnostic routine `Authenticator.AreSameObject()` to support any testing that's undertaken. The routine compares to objects and returns `true` if they are the exact same instance otherwise `false`.
+A bug has been reported whereby the `Authenticator.IsRegistered()` nethod is called multiple times in quick succession for the same identity. You believe that there is some sort of "bounce" problem where the exact same record is being submitted multiple times. Your task is to add a diagnostic routine `Authenticator.AreSameObject()` to support any testing that's undertaken. The routine compares to objects and returns `true` if they are the exact same instance otherwise `false`.
 
 ```csharp
 var identityA = new Identity("alice@thecompetition.com", new FacialFeatures("blue", 0.9m));
