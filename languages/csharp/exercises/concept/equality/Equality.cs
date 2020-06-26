@@ -28,6 +28,11 @@ public class Identity
 
 public class Authenticator
 {
+    public static bool AreSameFace(FacialFeatures faceA, FacialFeatures faceB)
+    {
+        throw new NotImplementedException("Please implement the (static) Authenticator.AreSameFace() method");
+    }
+
     public bool IsAdmin(Identity identity)
     {
         throw new NotImplementedException("Please implement the Authenticator.IsAdmin() method");

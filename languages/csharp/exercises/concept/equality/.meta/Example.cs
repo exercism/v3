@@ -22,7 +22,7 @@ public class FacialFeatures
         if (ReferenceEquals(null, obj)) return false;
         if (ReferenceEquals(this, obj)) return true;
         if (obj.GetType() != this.GetType()) return false;
-        return Equals((FacialFeatures) obj);
+        return Equals((FacialFeatures)obj);
     }
 
     public override int GetHashCode()
@@ -52,7 +52,7 @@ public class Identity
         if (ReferenceEquals(null, obj)) return false;
         if (ReferenceEquals(this, obj)) return true;
         if (obj.GetType() != this.GetType()) return false;
-        return Equals((Identity) obj);
+        return Equals((Identity)obj);
     }
 
     public override int GetHashCode()
@@ -65,6 +65,11 @@ public class Authenticator
 {
     private Identity admin = new Identity("admin@exerc.ism", new FacialFeatures("green", 0.9m));
     private HashSet<Identity> identities = new HashSet<Identity>();
+
+    public static bool AreSameFace(FacialFeatures faceA, FacialFeatures faceB)
+    {
+        return faceA.Equals(faceB);
+    }
 
     public bool IsAdmin(Identity identity)
     {
