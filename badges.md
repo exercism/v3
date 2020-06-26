@@ -35,8 +35,8 @@ These will be in the codebase. They're unordered.
 ## Under Consideration
 
 - **Streaked:** Solve at least one exercise a day X days in a row
-- **Purgatory:** - Write a solution which triggers an execution timeout.
-- **Knuth Reward Cheque** - Report an error in an exercise.
+- **Purgatory:** Write a solution which triggers an execution timeout.
+- **Knuth Reward Cheque:** Report an error in an exercise.
 
 ## Rejected
 
