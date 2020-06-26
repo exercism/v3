@@ -257,7 +257,7 @@ module Json =
           Language = implementation.Language }
     
     let private conceptToJsonConcept (concept: Concept): JsonConcept =
-        { Url = sprintf "https://github.com/exercism/v3/tree/master/references/%s/%s.md" (categoryDirectory concept.Category) concept.Name
+        { Url = sprintf "https://github.com/exercism/v3/tree/master/reference/%s/%s.md" (categoryDirectory concept.Category) concept.Name
           Name = concept.Name
           Variations = List.toArray concept.Variations
           Implementations = List.map implementationToJsonImplementation concept.Implementations |> List.toArray }
