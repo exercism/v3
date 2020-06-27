@@ -1293,6 +1293,38 @@
               "name": "tuples"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/streams",
+          "slug": "streams",
+          "concepts": [
+            {
+              "url": null,
+              "name": "streams"
+            },
+            {
+              "url": null,
+              "name": "pipe-operator"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/range.md",
+              "name": "ranges"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
+              "name": "enum"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
+            },
+            {
+              "url": null,
+              "name": "if-conditional"
+            }
+          ]
         }
       ]
     }
