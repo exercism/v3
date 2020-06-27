@@ -4,26 +4,35 @@ In addition to the admin identity being hard-coded in the system during developm
 
 ## 1. Store the system admin's details hard-coded in the system and make it available to callers.
 
-The admin's details are as follows: email address is..., eye color...
+The admin's details are as follows:
 
-Implement `Authenticator.GetAdmin()` to return the system admin's identity details.
+| Email        | Eye Color | Philtrum Width | Name     | Address 1 | Address 2 |
+| ------------ | --------- | -------------- | -------- | --------- | --------- |
+| admin@ex.ism | greeen    | 0.9            | Chanakya | Mombai    | India     |
+
+Implement `Authenticator.GetAdmin()` to return the system admin's identity details. The name and each part of the address should be in a separate element of the `NameAndAddress` list.
 
 ```csharp
 var authenticator = new Authenticator();
 authentiator.GetAdmin();
-// => {"admin@exerc.ism", {"green", 0.9m}, ["Chanakya Niti Kautilya Arthashastra", "Plausible Address", "Mombai"]}
+// => {"admin@ex.ism", {"green", 0.9m}, ["Chanakya", "Mombai", "India"]}
 ```
 
 ## 2 Store the developers' details hard-coded in the system and make them available in the form of a dictionary
 
-Implement `Authenticator.GetAdmin()` to return the system admin's identity details.
+The developers' details are as follows:
 
-Table of developer details - 2 developers
+| Email         | Eye Color | Philtrum Width | Name     | Address 1 | Address 2 |
+| ------------- | --------- | -------------- | -------- | --------- | --------- |
+| bert@ex.ism   | blue      | 0.8            | Bertrand | Paris     | France    |
+| anders@ex.ism | brown     | 0.85           | Anders   | Redmond   | USA       |
+
+Implement `Authenticator.GetAdmin()` to return the system admin's identity details.
 
 ```csharp
 var authenticator = new Authenticator();
 authentiator.GetDevelopers();
-// => {"bert" = {"bert@exerc.ism", {"green", 0.9m}, ["Bertrand Meyer", "Avenue des Champs-Élysées", "Paris"]},
-// ["anders" = ...
+// => {"bert" = {"bert@ex.ism", {"blue", 0.8m}, ["Bertrand", "Paris", "France"]},
+// ["anders" = {"bert@ex.ism", {"brown", 0.85m}, ["Anders", "Redmond", "USA"]},
 
 ```
