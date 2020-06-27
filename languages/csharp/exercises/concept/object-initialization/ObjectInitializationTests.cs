@@ -33,10 +33,10 @@ public class ObjectInitializationTests
         var developers = authenticator.Developers;
         string[] actual =
         {
-            developers["bert"].Email,
-            developers["bert"].FacialFeatures.EyeColor,
-            developers["anders"].FacialFeatures.PhiltrumWidth.ToString(),
-            developers["anders"].NameAndAddress[1]
+            developers["Bertrand"].Email,
+            developers["Bertrand"].FacialFeatures.EyeColor,
+            developers["Anders"].FacialFeatures.PhiltrumWidth.ToString(),
+            developers["Anders"].NameAndAddress[1]
         };
         string[] expected =
         {

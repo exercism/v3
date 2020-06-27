@@ -10,11 +10,11 @@ The admin's details are as follows:
 | ------------ | --------- | -------------- | -------- | --------- | --------- |
 | admin@ex.ism | greeen    | 0.9            | Chanakya | Mombai    | India     |
 
-Implement `Authenticator.GetAdmin()` to return the system admin's identity details. The name and each part of the address should be in a separate element of the `NameAndAddress` list.
+Implement the `Authenticator.Admin` property to return the system admin's identity details. The name and each part of the address should be in a separate element of the `NameAndAddress` list.
 
 ```csharp
 var authenticator = new Authenticator();
-authentiator.GetAdmin();
+authentiator.Admin
 // => {"admin@ex.ism", {"green", 0.9m}, ["Chanakya", "Mombai", "India"]}
 ```
 
@@ -27,11 +27,11 @@ The developers' details are as follows:
 | bert@ex.ism   | blue      | 0.8            | Bertrand | Paris     | France    |
 | anders@ex.ism | brown     | 0.85           | Anders   | Redmond   | USA       |
 
-Implement `Authenticator.GetAdmin()` to return the system admin's identity details.
+Implement the `Authenticator.Developers` to return the developers' identity details. The dictionary key is the developer's name.
 
 ```csharp
 var authenticator = new Authenticator();
-authentiator.GetDevelopers();
+authentiator.Developers;
 // => {"bert" = {"bert@ex.ism", {"blue", 0.8m}, ["Bertrand", "Paris", "France"]},
 // ["anders" = {"bert@ex.ism", {"brown", 0.85m}, ["Anders", "Redmond", "USA"]},
 

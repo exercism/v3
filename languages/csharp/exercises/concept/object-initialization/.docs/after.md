@@ -26,6 +26,7 @@ Dictionaries use the following syntax:
 IDictionary<int, string> numbers = new Dictionary<int, string>{ [0] = "zero", [1] = "one"...};
 
 // or
+
 IDictionary<int, string> numbers = new Dictionary<int, string>{ {0, "zero }, {1,  "one"}...};
 ```
 
@@ -33,8 +34,8 @@ The initialized fields must be accessible to the caller. Typically, this means t
 
 There is a strong trend promoting immutability amongst the language designers and leading practitioners, so the mutability of objects initialized in this way is seen as a disadvantage. There are proposals to introduce an `init` clause in the upcoming version of the language, C# 9, which may address this.
 
-[object initializer][object-initializers] documentation describes how to use initialzers.
-[collection initializer][collection-initializers] documentation gives a preview of how initializers can be used with collections like dictionaries and lists.
+- [object initializer][object-initializers] documentation describes how to use initialzers.
+- [collection initializer][collection-initializers] documentation gives a preview of how initializers can be used with collections like dictionaries and lists.
 
 [object-initializers]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers#object-initializers
 [collection-initializers]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers#collection-initializers

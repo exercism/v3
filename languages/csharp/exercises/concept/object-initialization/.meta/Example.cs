@@ -42,7 +42,7 @@ public class Authenticator
     public IDictionary<string, Identity> Developers { get; }
         = new Dictionary<string, Identity>
         {
-            ["bert"] = new Identity
+            ["Bertrand"] = new Identity
             {
                 Email = "bert@ex.ism",
                 FacialFeatures = new FacialFeatures
@@ -53,7 +53,7 @@ public class Authenticator
                 NameAndAddress = new List<string>{"Bertrand", "Paris", "France"}
             },
 
-            ["anders"] = new Identity
+            ["Anders"] = new Identity
             {
                 Email = "anders@ex.ism",
                 FacialFeatures = new FacialFeatures
