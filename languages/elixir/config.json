@@ -189,6 +189,12 @@
         "uuid": "bec0b00f-816e-443a-af94-14ab4125e505",
         "concepts": ["processes", "pids"],
         "prerequisites": ["atoms", "recursion", "pattern-matching", "tuples"]
+      },
+      {
+        "slug": "streams",
+        "uuid": "3e2f8bc6-20b4-4e8f-a658-9c270342208e",
+        "concepts": ["streams", "pipe-operator", "ranges"],
+        "prerequisites": ["enum", "tuples", "if-conditional"]
       }
     ],
     "practice": []
