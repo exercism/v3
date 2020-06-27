@@ -22,7 +22,7 @@ var result = importantValue == 42;
 // => true
 
 importantValue = 1729;
-Bar(inportantValue);
+Bar(importantValue);
 result = importantValue == 1729;
 // => true
 ```
@@ -41,9 +41,7 @@ int importantValue = 6;
 Foo(ref importantValue);
 return importantValue;
 // => 42
-
 ```
 
 - `ref` parameters must be variables as the called method will be operating directly on the parameter as seen by the caller.
 - The `out` and `ref` modifiers are required both in the called method signature and at the call site.
-- `out` parameters can be declared in line at the call site viz: `Foo(out int importantValue);`.

@@ -20,7 +20,7 @@ var result = importantValue == 42;
 // => true
 
 importantValue = 1729;
-Bar(inportantValue);
+Bar(importantValue);
 result = importantValue == 1729;
 // => true
 ```
@@ -39,7 +39,6 @@ int importantValue = 6;
 Foo(ref importantValue);
 return importantValue;
 // => 42
-
 ```
 
 -`ref` parameters must be variables as the called method will be operating directly on the parameter as seen by the caller.
@@ -77,7 +76,7 @@ The related topics of [`ref local`][ref-local] and [`ref return`][ref-return] ar
 
 The rules regarding parameters and their modifiers are sufficiently straightforward that you can take them at face value and understand them at their level of abstraction. However, if you are interested in the underlying mechanisms and why these keywords may make a performance difference, at least in the case of `struct`s, then you could start with this [_Wikipedia article_][calling-conventions], noting that C# uses `stdcall` on x86/64.
 
-The essence of the story is that in the case of unmodified parameters the **value** of a variable is copied onto the program's stack to make it available to called routine whereas for `ref`, `out` and `in` parameters a pointer (**reference**) to the memory containing the value is placed on the program's stack and values are assigned to the memory pointed at by the reference.
+The essence of the story is that in the case of unmodified parameters the **value** of a variable is copied onto the program's stack to make it available to a called routine whereas for `ref`, `out` and `in` parameters a pointer (**reference**) to the memory containing the value is placed on the program's stack and values are assigned to the memory pointed at by the reference.
 
 [passing-parameters]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters
 [ref-parameter]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref#passing-an-argument-by-reference
