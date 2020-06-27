@@ -17,7 +17,7 @@ if [ -z "$(git status --porcelain)" ]; then
 fi
 
 # Checkout to new branch
-BRANCH="languagesummary-$(date +%Y%m%d%H%M%S)"
+BRANCH="bot/summaries/languages/$(date +%Y%m%d%H%M%S)"
 git checkout -b "$BRANCH"
 
 # Setup the git user (required to commit anything)
@@ -25,8 +25,8 @@ git config --global user.email "github-actions[bot]@users.noreply.github.com"
 git config --global user.name "github-actions[bot]"
 
 # Commit and push the changes
-git commit -m "[CI] Update languages summary"
+git commit -m "[Bot] Update languages summary"
 git push origin "$BRANCH"
 
 # Create a PR
-gh pr create --title "[CI] Update languages summary" --body "This is an _automatically generated_ PR to update the language summary files."
+gh pr create --title "[Bot] Update languages summary" --body "This is an _automatically generated_ PR to update the language summary files." --label "type/bot"
