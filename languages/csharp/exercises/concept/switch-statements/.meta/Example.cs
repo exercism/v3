@@ -1,16 +1,15 @@
-
 using System;
 
 // **** please do not modify the Manager class ****
 public class Manager
 {
-    public string NickName { get; }
+    public string Name { get; }
     public string Activity { get; }
 
-    public Manager(string nickName, string activiy)
+    public Manager(string name, string activity)
     {
-        this.NickName = nickName;
-        this.Activity = activiy;
+        this.Name = name;
+        this.Activity = activity;
     }
 }
 
@@ -41,12 +40,12 @@ public static class PlayAnalyzer
                 break;
             case 3:
             case 4:
-                playerDescription = "part of the back four";
+                playerDescription = "center back";
                 break;
             case 6:
             case 7:
             case 8:
-                playerDescription = "mid fielder";
+                playerDescription = "midfielder";
                 break;
             case 9:
                 playerDescription = "left wing";
@@ -72,14 +71,14 @@ public static class PlayAnalyzer
             case int shirtNum:
                 description = AnalyzeOnField(shirtNum);
                 break;
-            case string freeFromText:
-                description = freeFromText;
+            case string freeFormText:
+                description = freeFormText;
                 break;
             case Incident incident:
                 description = incident.ToString();
                 break;
-            case Manager manager when !string.IsNullOrWhiteSpace(manager.NickName):
-                description = manager.NickName;
+            case Manager manager when !string.IsNullOrWhiteSpace(manager.Name):
+                description = manager.Name;
                 break;
             case Manager manager:
                 description = "the manager";
