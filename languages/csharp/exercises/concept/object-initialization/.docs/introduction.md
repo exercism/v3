@@ -24,6 +24,6 @@ Dictinaries use the following syntax:
 IDictionary<int, string> numbers = new Dictionary<int, string>{ [0] = "zero", [1] = "one"...};
 
 // or
-IDictionary<int, string> numbers = new Dictionary<int, string>{ {0, "zero }, {1,  "one"}...};
 
+IDictionary<int, string> numbers = new Dictionary<int, string>{ {0, "zero }, {1,  "one"}...};
 ```
