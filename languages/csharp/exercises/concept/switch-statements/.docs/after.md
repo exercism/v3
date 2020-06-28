@@ -35,16 +35,17 @@ switch(animal)
     case Cat cat when cat.Had8Lives():
         cat.IsCareful();
         cat.Meow();
+        break;
     case Cat cat:
         cat.Meow();
         break;
 }
 ```
 
-- The `default` clause is optionally but typically desirable.
+- The `default` clause is optional but typically desirable.
 - The `break` statement is mandatory for any non-empty `case` clause.
-- Obviously all the arguments to the `case` statements must be derived from the `switch` argument. A `switch` argument of type `Object` obviously allows the widest range.
-- The guard expression can include any variables in scope not just members of the `case` argument.
+- Obviously the type of all the arguments to the `case` statements must be derived from the type of the `switch` argument. A `switch` argument of type `Object` obviously allows the widest range.
+- The guard expression can include anything in scope not just members of the `case` argument.
 
 [switch statement][switch-statement] documentation provides an introduction to `switch` statements.
 
