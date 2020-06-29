@@ -12,6 +12,9 @@
 
 ## Out of scope
 
+- Regex wildcards
+- Regex multiline
+- Regex flags
 - Regex lookahead, lookbehind
 
 ## Prerequisites
@@ -23,3 +26,5 @@
 - `regular-expressions`
 
 ## Analyzer
+
+TBD

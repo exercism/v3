@@ -26,6 +26,7 @@ These are the concept exercises that have currently been implemented, as well as
 | `nil`                       | `nil`, `if-conditional`                                    | `booleans`, `strings`                                                                          |
 | `numbers`                   | `integers`, `floating-point-numbers`                       | `basics`                                                                                       |
 | `processes`                 | `processes`, `pids`                                        | `atoms`, `recursion`, `pattern-matching`, `tuples`                                             |
+| `regular-expressions`       | `regular-expressions`                                      | `strings`                                                                                      |
 | `streams`                   | `streams`, `ranges`, `pipe-operator`                       | `enum`, `tuples`, `if-conditional`                                                             |
 | `strings`                   | `strings`                                                  | `lists`, `pattern-matching`                                                                    |
 | `structs`                   | `structs`, `static-access-operator`                        | `maps`, `multiple-clause-functions`, `pattern-matching`, `strings`, `nil`, `default-arguments` |
