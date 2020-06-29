@@ -11,8 +11,8 @@ defmodule DateParser do
     "(January|February|March|April|May|June|July|August|September|October|November|December)"
   end
 
-  def capture_month(), do: "(?<month>#{month()})"
   def capture_day(), do: "(?<day>#{day()})"
+  def capture_month(), do: "(?<month>#{month()})"
   def capture_year(), do: "(?<year>#{year()})"
 
   def capture_day_name(), do: "(?<day_name>#{day_names()})"
