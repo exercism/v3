@@ -1,59 +1,5 @@
 using System;
 
-// **** please do not modify the Database class ****
-public class Database : IDisposable
-{
-    public enum State {TransactionStarted, DataWritten, Invalid, Closed}
-
-    public State DbState { get; private set; } = State.Closed;
-    private string lastData;
-    public void BeginTransaction()
-    {
-        DbState = State.TransactionStarted;
-    }
-
-    public void Write(string data)
-    {
-        // this does something significant with the db transaction object
-        lastData = data;
-        if (data == "bad write")
-        {
-            DbState = State.Invalid;
-            throw new InvalidOperationException();
-        }
-
-        DbState = State.DataWritten;
-    }
-
-    public void EndTransaction()
-    {
-        if (lastData == "bad commit")
-        {
-            DbState = State.Invalid;
-            throw new InvalidOperationException();
-        }
-
-        DbState = State.Closed;
-    }
-
-    private void ReleaseUnmanagedResources()
-    {
-        // this will clean up the file system or something similar
-    }
-
-    public void Dispose()
-    {
-        DbState = State.Closed;
-        ReleaseUnmanagedResources();
-        GC.SuppressFinalize(this);
-    }
-
-    ~Database()
-    {
-        Dispose();
-    }
-}
-
 public class Orm : IDisposable
 {
     private Database database;
@@ -80,7 +26,7 @@ public class Orm : IDisposable
         }
     }
 
-    public void Commit(string data)
+    public void Commit()
     {
         try
         {

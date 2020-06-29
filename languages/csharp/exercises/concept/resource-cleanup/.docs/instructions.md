@@ -4,6 +4,8 @@ The database is capable of handling a single transaction at one time.
 
 No logging or other error handling is required at this stage.
 
+Note that internally the database transitions through a number of states: TransactionStarted, DataWritten, Invalid, Closed
+
 ### 1. Begin a transaction
 
 Implement `Orm.Start()` to start a transaction on the database.
@@ -45,7 +47,7 @@ orm.Commit();
 
 ### 4. Ensure that the database is cleaned up correctly if the ORM has to close part way through a transaction.
 
-Implement the `IDisposable` pattern on the `Orm` class
+Implement the `IDisposable` interface on the `Orm` class
 
 ```csharp
 var db = new Database()

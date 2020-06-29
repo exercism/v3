@@ -1,8 +1,7 @@
 ## Learning objectives
 
-- Know how to clean up resources with `IDisposable` in C#.
-- Know the `Dispose` pattern for unmanaged resources (discussion only)
-- Understand the role of finalizers and know the syntax
+- Know how to clean up resources using `IDisposable` in C# for managed resources.
+- Know how and when to implement the `IDisposable` interface on your own classes.
 
 ## Out of scope
 
@@ -11,4 +10,3 @@
 ## Concepts
 
 - `resource-cleanup` with `IDisposable in C# and .NET.
-- `finalizer`
