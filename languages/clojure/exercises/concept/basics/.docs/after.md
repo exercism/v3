@@ -1,12 +1,14 @@
-In Clojure, binding a value to a name is referred to as a _var_. Top-level (global) vars are similar to constants in other languages, but are commonly redefined to facilitate dynamic development.
+In Clojure, binding a value to a name is referred to as a [_var_][vars]. Top-level (global) vars are similar to constants in other languages, but are commonly redefined to facilitate dynamic development.
 
-Top-level vars are defined using `def`:
+Top-level vars are defined using [`def`][def]:
 
 ```clojure
 (def fingers 10)
 ```
 
-The `defn` macro can be used to define a function taking zero or more arguments. A function always returns the result of the last expression in its body.
+You can use the core functions for [operations on numbers][operators] to perform arithmetic on values.
+
+The `defn` macro can be used to define a [function][functions] taking zero or more arguments. A function always returns the result of the last expression in its body.
 
 ```clojure
 (defn add [x y]
@@ -43,3 +45,8 @@ Clojure functions and vars are organized in namespaces. A namespace groups relat
 ```
 
 Clojure supports two types of comments. Single line comments are preceded by `;` and the `comment` form is used to prevent evaluation of everything between `(comment` and `)`.
+
+[def]: https://clojure.org/guides/learn/syntax#_def
+[vars]: https://clojure.org/reference/vars
+[functions]: https://clojure.org/guides/learn/functions
+[operators]: https://clojuredocs.org/quickref#numbers
