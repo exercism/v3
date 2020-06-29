@@ -6,6 +6,7 @@
 ## Out of scope
 
 - resource lifetime - `using` dealt with in the `resource-lifetime` exercise
+- dispose pattern: handled in a separate exercise
 
 ## Concepts
 
