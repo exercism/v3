@@ -115,6 +115,7 @@ A more formal, machine-readable version of this concept list exists as
 ### DSLs
 
 - Format
+
   - Basic
   - Conditionals
   - Iteration
@@ -124,6 +125,7 @@ A more formal, machine-readable version of this concept list exists as
   - Tables
 
 - Loop
+
   - Basic
   - Collecting
   - Miscellaneous
@@ -134,7 +136,7 @@ A more formal, machine-readable version of this concept list exists as
 ## Implemented Concept Exercises
 
 | Exercise                 | Concepts                                           | Status      |
-| ------------------------ | -------------------------------------------------- |------------ |
+| ------------------------ | -------------------------------------------------- | ----------- |
 | [`basics`][basics]       | `comments`, `expressions`, `cons`, `symbols`       | Implemented |
 | `basic-numbers`          | `arithmetic`, `floating-point-numbers`, `integers` | Has Issue   |
 | `assignment`             | `assignment`                                       | Has Issue   |
