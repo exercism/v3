@@ -1,4 +1,4 @@
-name: Stories summary
+name: Update stories summary
 
 on:
   push:
@@ -8,12 +8,14 @@ on:
       - 'reference/stories/**'
 
 jobs:
-  update:
+  update-stories-summary:
     runs-on: ubuntu-latest
 
     steps:
       - name: 'Checkout code'
         uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
 
       - name: 'Install .NET core'
         uses: actions/setup-dotnet@v1
@@ -22,3 +24,5 @@ jobs:
 
       - name: Update stories summary
         run: .github/bin/stories/update.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
