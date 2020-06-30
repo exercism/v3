@@ -3,8 +3,9 @@
             strings))
 
 (deftest message-test
-  (testing "Error"
-    (is (= "Stack overflow" (strings/message "[ERROR]: Stack overflow")))
+  (testing "Message test"
+    (testing "Error"
+      (is (= "Stack overflow" (strings/message "[ERROR]: Stack overflow"))))
     (testing "Warning"
       (is (= (strings/message "[WARNING]: Disk almost full") "Disk almost full")))
     (testing "Info"
@@ -13,16 +14,18 @@
         (is (= "Timezone not set" (strings/message "[WARNING]:   \tTimezone not set  \r\n")))))))
 
 (deftest log-level-test
-  (testing "Error"
-    (is (= "error" (strings/log-level "[ERROR]: Disk full")))
+  (testing "Log levels"
+    (testing "Error"
+      (is (= "error" (strings/log-level "[ERROR]: Disk full"))))
     (testing "Warning"
       (is (= "warning" (strings/log-level "[WARNING]: Unsafe password"))))
     (testing "Info"
       (is (= "info" (strings/log-level "[INFO]: Timezone changed"))))))
 
 (deftest reformat-test
-  (testing "Error"
-    (is (= "Segmentation fault (error)" (strings/reformat "[ERROR]: Segmentation fault")))
+  (testing "Reformat test"
+    (testing "Error"
+      (is (= "Segmentation fault (error)" (strings/reformat "[ERROR]: Segmentation fault"))))
     (testing "Warning"
       (is (= "Decreased performance (warning)" (strings/reformat "[WARNING]: Decreased performance"))))
     (testing "Info"
