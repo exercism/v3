@@ -6,7 +6,7 @@ You have been tasked to write a service which ingests events. Each event has a d
 
 You would can see there are some similarities between each of them, and decide to write some composable regular expression patterns.
 
-## 1. Write patterns for each numeric component
+## 1. Match the day, month, and year from a date
 
 Implement `day/0`, `month/0`, and `year/0` to return a string pattern which, when compiled, would match the numeric components in `"01/01/1970"` (`dd/mm/yyyy`). The date and month may appear as `1` or `01` (left padded with zeroes).
 
@@ -21,7 +21,7 @@ Do not worry about error checking. You can assume you will always be passed a va
 # => true
 ```
 
-## 2. Write patterns for the day and month names
+## 2. Match the day of the week and the month of the year
 
 Implement `day_names/0` and `month_name/0` to return a string pattern which, when compiled, would match the any named day of the week and the named month of the year respectively.
 
@@ -32,7 +32,7 @@ Implement `day_names/0` and `month_name/0` to return a string pattern which, whe
 # => true
 ```
 
-## 3. Capture the numeric and named date components
+## 3. Capture the day, month, and year
 
 Implement `capture_day/0`, `capture_month/0`, `capture_year/0`, `capture_day_name/0`, `capture_month_name/0` to return a string pattern which captures the respective components to the names: `"day"`, `"month"`, `"year"`, `"day_name"`, `"month_name"`
 
@@ -43,7 +43,7 @@ DateParser.capture_month_name()
 # => %{"month_name" => "December"}
 ```
 
-## 4. Compose the parts to capture from the whole date
+## 4. Combine the captures to capture the whole date
 
 Implement `capture_numeric_date/0`, `capture_month_name_date()`, and `capture_day_month_name_date/0` to return a string pattern which captures the components from part 3 using the respective date format.
 
@@ -54,7 +54,7 @@ DateParser.capture_numeric_date()
 # => %{"day" => "01", "month" => "01", "year" => "1970"}
 ```
 
-## 5. Match only the date
+## 5. Narrow the capture to match only on the date
 
 Implement `match_numeric_date/0`, `match_month_name_date/0`, and `match_day_month_name_date/0` to return a compiled regular expression that only matches the date, and which can also capture the components.
 
