@@ -172,6 +172,12 @@
         "slug": "elixir",
         "exercise": "enum",
         "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/enum/.docs/instructions.md"
+      },
+      {
+        "track": "Elixir",
+        "slug": "elixir",
+        "exercise": "list-comprehensions",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/list-comprehensions/.docs/instructions.md"
       }
     ]
   },
