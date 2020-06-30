@@ -34,7 +34,7 @@ Pattern matching can occur in the comprehension, either on the left side of the 
 for {atom, str} <- [a: "string"], do: str
 # => ["string"]
 
-for pair <- [a: "string"]
+for pair <- [a: "string"],
     {atom, str} = pair do
   str
 end
