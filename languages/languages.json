@@ -1814,6 +1814,22 @@
             }
           ],
           "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/strings",
+          "slug": "strings",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
         }
       ]
     }
