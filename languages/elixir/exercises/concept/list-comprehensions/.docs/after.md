@@ -8,7 +8,7 @@ Comprehensions provide a facility for transforming _Enumerables_ easily and decl
 
 The comprehension is _syntactic sugar_ for coding the recursive structure each time.
 
-There are single- and multi-line comprehensions. And when more than one generator is used, a cartesian product of the values generated are enumerated:
+There are single- and multi-line comprehensions. When more than one generator is used, a cartesian product of the values generated is enumerated:
 
 ```elixir
 for n <- [0, 1, 2, 3], do: n + 1
@@ -28,7 +28,7 @@ for _ <- [1, 2, 3], do: :a
 # => [:a, :a, :a]
 ```
 
-Pattern matching can occur in the comprehension, either on the left side of the `<-` or their own line.
+Pattern matching can occur in the comprehension, either on the left side of the `<-` or on their own line.
 
 ```elixir
 for {atom, str} <- [a: "string"], do: str
