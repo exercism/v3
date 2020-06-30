@@ -14,6 +14,20 @@ Appointment.ShowLocalTime(new DateTime(2030, 7, 25, 13, 45, 0));
 
 Implement the static `Appointment.Shedule()` overload which takes a location and time string and returns the utc time of the appointment.
 
+It will help you to know the time zone id for New York, London and Paris.
+
+On Mac and Linux these are:
+
+America/New_York
+Europe/London
+Europe/Paris
+
+On Windows they are:
+
+Blah blan
+...
+
+
 ```csharp
 Appointment.Schedule("7/25/2030 13:45:00", Location.Paris);
 // => {2030, 7, 25, 14, 45, 0}
