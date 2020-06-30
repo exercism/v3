@@ -172,6 +172,12 @@
         "slug": "elixir",
         "exercise": "enum",
         "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/enum/.docs/instructions.md"
+      },
+      {
+        "track": "Elixir",
+        "slug": "elixir",
+        "exercise": "list-comprehensions",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/list-comprehensions/.docs/instructions.md"
       }
     ]
   },
@@ -218,6 +224,23 @@
         "slug": "fsharp",
         "exercise": "arrays",
         "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/arrays/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/regex.event-ingest.md",
+    "name": "Event Ingest",
+    "description": "In this story, you have a program which needs to ingest events, but messages are using 3 different date formats:",
+    "concept": {
+      "url": null,
+      "name": "regex"
+    },
+    "implementations": [
+      {
+        "track": "Elixir",
+        "slug": "elixir",
+        "exercise": "regular-expressions",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/regular-expressions/.docs/instructions.md"
       }
     ]
   },
