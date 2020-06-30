@@ -276,6 +276,7 @@ The concept exercises use the following concepts:
 | `guards`                         | What guards are, how to use guards in function heads                                                      |
 | `io`                             | Introduction to input/output in elixir                                                                    |
 | `lists`                          | Introduction to the lists type basic list functions -- hd/1, tl/1, length/1, in/2                         |
+| `list-comprehensions`            | Introduction to comprehensions, focusing on enumerating lists, pattern matching, collecting into a list.  |
 | `maps`                           | Introduction to the map data type                                                                         |
 | `module-attributes-as-constants` | Introduction to using module attributes as constants                                                      |
 | `multiple-clause-functions`      | Named function can be overloaded and each attempted to invoke until one succeeds                          |
