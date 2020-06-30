@@ -21,4 +21,9 @@
 - `lists`
 - `maps`
 - `enum`
+- `keyword-lists`
 - `tuples`
+
+## Analyzer
+
+- check to ensure a comprehension is used, rather than another pattern
