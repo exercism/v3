@@ -21,6 +21,7 @@ These are the concept exercises that have currently been implemented, as well as
 | `exceptions`                | `exceptions`                                               | `errors`, `access-behaviour`                                                                   |
 | `keyword-lists`             | `keyword-lists`                                            | `lists`, `tuples`, `atoms`, `if-conditional`, `default-arguments`                              |
 | `lists`                     | `lists`, `string-literals`                                 | `booleans`                                                                                     |
+| `list-comprehensions`       | `list-comprehensions`                                      | `keyword-lists`, `lists`, `maps`, `pattern-matching`                                           |
 | `maps`                      | `maps`, `module-attributes-as-constants`                   | `lists`, `tuples`, `anonymous-functions`, `default-arguments`                                  |
 | `multiple-clause-functions` | `multiple-clause-functions`, `guards`, `default-arguments` | `conditionals`, `string-literals`                                                              |
 | `nil`                       | `nil`, `if-conditional`                                    | `booleans`, `strings`                                                                          |

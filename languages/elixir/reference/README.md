@@ -275,6 +275,7 @@ The concept exercises use the following concepts:
 | `floating-point-numbers`         | How to use floating point numbers to represent real numbers.                                              |
 | `guards`                         | What guards are, how to use guards in function heads.                                                     |
 | `io`                             | Introduction to input/output in elixir.                                                                   |
+| `list-comprehensions`            | Introduction to comprehensions, focusing on enumerating lists, pattern matching, collecting into a list.  |
 | `lists`                          | Introduction to the lists type basic list functions -- `hd/1`, `tl/1`, `length/1`, `in/2`.                |
 | `maps`                           | Introduction to the map data type.                                                                        |
 | `module-attributes-as-constants` | Introduction to using module attributes as constants.                                                     |
