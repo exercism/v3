@@ -131,6 +131,18 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "parameters",
+        "uuid": "f5c259fd-a404-432f-922d-781bde34fe08",
+        "concepts": ["parameters"],
+        "prerequisites": [
+          "conditionals",
+          "constructors",
+          "named-parameters",
+          "numbers",
+          "strings"
+        ]
+      },
+      {
         "slug": "properties",
         "uuid": "978bcc16-0c49-4328-92e9-79f6204ce350",
         "concepts": ["properties"],
