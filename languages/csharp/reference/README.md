@@ -77,7 +77,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
     - Covariance/Contravariance
 - Comments ✅ (exercise [`basics`][exercise-basics])
 - Comparison
-  - [Equality][equality] (`Equals`, `GetHashCode`) 📖 (issue [#1016](https://github.com/exercism/v3/issues/1016))
+  - [Equality][equality] (`Equals`, `GetHashCode`) ✅ (exercise [`equality`][exercise-equality])
   - Ordering
 - Concurrency
   - Concurrent collections
@@ -108,7 +108,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - Arithmetic overflow 📖 (issue [#1138](https://github.com/exercism/v3/issues/1138))
   - Bitwise manipulation ✅ (exercise [`flag-enums`][exercise-flag-enums])
   - Math operators ✅ (exercise [`numbers`][exercise-numbers])
-- Randomness 📖 (issue [#1642](https://github.com/exercism/v3/issues/1642))
+- Randomness ✅ (exercise [`randomness`][exercise-randomness])
 - Reflection
 - Regular expressions 📖 (issue [#1638](https://github.com/exercism/v3/issues/1638))
 - Resources
@@ -167,7 +167,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - [Strings][string] ✅ (exercise [`strings`][exercise-strings])
 - Tasks
 - Time 📖 (issue [#1644](https://github.com/exercism/v3/issues/1644))
-- [Tuples][tuple] 📖 (issue [#963](https://github.com/exercism/v3/issues/963))
+- [Tuples][tuple] ✅ (exercise [`tuples`][exercise-tuples])
 
 ## Concept interpretation
 
@@ -188,6 +188,7 @@ The concept exercises use the following concepts:
 | `datetimes`                  | Know of the existence of the `DateTime` type. Know how to create a `DateTime` instance. Know how to get the current date. Know of the individual, date- and time-related properties. Know how to access the current date. Know how to compare dates. Know how to convert a `string` to a `DateTime` and vice versa                                                                                                                                                                                    |
 | `dictionaries`               | Know of the existence of the `Dictionary<TKey, TValue>` type. Know how to create an instance. Know how to add and remove items, look up values, check for existence of keys and enumerate contents.                                                                                                                                                                                                                                                                                                   |
 | `enums`                      | Know of the existence of the `enum` keyword. Know how to define enum members. Know how to assign values to enum members. Know how to get an enum's numeric value. Know how to convert a `string` to an `enum`.                                                                                                                                                                                                                                                                                        |
+| `equality`                   | know how to check for equality and inequality; know how reference equality differs from structural equality; know that equality works by default for value and reference types; know how to customize equality checks using `Equals` and `GetHashCode()`; know of the `IEquatable<T>` and `IEqualityComparer<T>` interfaces and how to implement them.                                                                                                                                                |
 | `flag-enums`                 | Know how to define a "flags" enum. Know how to add, remove or check for flags. Know how to change the underlying type of an enum.                                                                                                                                                                                                                                                                                                                                                                     |
 | `floating-point-numbers`     | Know of the existing of the three floating point types: `double`, `float` and `decimal`. Know when to use which floating point type.                                                                                                                                                                                                                                                                                                                                                                  |
 | `for-loops`                  | Know how to use a `for` loop to do iteration.                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -201,8 +202,11 @@ The concept exercises use the following concepts:
 | `numbers`                    | Know of the existence of the two most commonly used number types, `int` and `double`, and understand that the former represents whole numbers, and the latter floating-point numbers. Know of basic operators such as multiplication, comparison and equality. Know how to convert from one numeric type to another. Know what implicit and explicit conversions are.                                                                                                                                 |
 | `optional-parameters`        | Know how to define optional parameters.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `properties`                 | Know what properties are and how they relate to fields and methods. Know what backing-field properties are. Know what auto-implemented properties are. Know what calculated properties are. Know how to use property accessors to customize visibility. Know how to define the different types of properties.                                                                                                                                                                                         |
+| `randomness`                 | know how to implement randomness with System.Random in C#; know that no seed is required; know that both integers and real numbers can be generated; know that once generated random numbers can be easily used for many purposes (including non-numeric ones).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| `sets`                       | Know how to use hash sets `HashSet<T>` as provided by the .NET BCL. Understand the relationship with `Object.GetHashCode()` and the performance charateristics of hash sets.                                                                                                                                                                                                                                                                                                                          |
 | `StringBuilder`              | Know of the existence of the `StringBuilder` type. Know how to create a string using this type. Understand the performance advantages                                                                                                                                                                                                                                                                                                                                                                 |
 | `strings`                    | Know of the existence of the `string` type. Know how to create a string. Know of some basic methods (like finding the index of a character in a string, or returning a part the string). Know how to do basic string formatting.                                                                                                                                                                                                                                                                      |
+| `tuples`                     | know what a tuple is; know how to define a tuple; know how to name tuple fields; know that tuples have structural equality; know how to deconstruct tuples; know that tuples are mutable.                                                                                                                                                                                                                                                                                                             |
 | `while-loops`                | Know how to write a `while` loop.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 [anonymous_functions]: ../../../reference/concepts/anonymous_functions.md
@@ -257,11 +261,14 @@ The concept exercises use the following concepts:
 [exercise-datetimes]: ../exercises/concept/datetimes/.meta/design.md
 [exercise-dictionaries]: ../exercises/concept/dictionaries/.meta/design.md
 [exercise-enums]: ../exercises/concept/enums/.meta/design.md
+[exercise-equality]: ../exercises/concept/equality/.meta/design.md
 [exercise-floating-point-numbers]: ../exercises/concept/floating-point-numbers/.meta/design.md
 [exercise-inheritance]: ../exercises/concept/inheritance/.meta/design.md
 [exercise-method-overloading]: ../exercises/concept/method-overloading/.meta/design.md
 [exercise-nullability]: ../exercises/concept/nullability/.meta/design.md
 [exercise-numbers]: ../exercises/concept/numbers/.meta/design.md
 [exercise-properties]: ../exercises/concept/properties/.meta/design.md
+[exercise-randomness]: ../exercises/concept/equality/.meta/design.md
 [exercise-strings]: ../exercises/concept/strings/.meta/design.md
+[exercise-tuples]: ../exercises/concept/tuples/.meta/design.md
 [exercise-user-defined-exceptions]: ../exercises/concept/user-defined-exceptions/.meta/design.md
