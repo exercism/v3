@@ -432,6 +432,30 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/object-initializers",
+          "slug": "object-initializers",
+          "concepts": [
+            {
+              "url": null,
+              "name": "object-initializers"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constructors.md",
+              "name": "constructors"
+            },
+            {
+              "url": null,
+              "name": "dictionaries"
+            },
+            {
+              "url": null,
+              "name": "properties"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/parameters",
           "slug": "parameters",
           "concepts": [
