@@ -30,9 +30,8 @@ public class LogParser
     {
         string pattern = @"end-of-line\d+";
 
-        string str = Regex.Replace(line, pattern, string.Empty,
+        return Regex.Replace(line, pattern, string.Empty,
             RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);
-        return str;
     }
 
     public string[] RewriteLogLines(string[] lines)
