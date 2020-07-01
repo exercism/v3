@@ -195,6 +195,18 @@
         "uuid": "3e2f8bc6-20b4-4e8f-a658-9c270342208e",
         "concepts": ["streams", "pipe-operator", "ranges"],
         "prerequisites": ["enum", "tuples", "if-conditional"]
+      },
+      {
+        "slug": "regular-expressions",
+        "uuid": "57198686-71c9-4f38-973a-a111435560e7",
+        "concepts": ["regular-expressions"],
+        "prerequisites": ["strings"]
+      },
+      {
+        "slug": "list-comprehensions",
+        "uuid": "f8208858-901e-4e5a-9f34-689bf8ad156c",
+        "concepts": ["list-comprehensions"],
+        "prerequisites": ["enum", "lists", "maps", "keyword-lists", "tuples"]
       }
     ],
     "practice": []

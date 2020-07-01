@@ -432,6 +432,38 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/parameters",
+          "slug": "parameters",
+          "concepts": [
+            {
+              "url": null,
+              "name": "parameters"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constructors.md",
+              "name": "constructors"
+            },
+            {
+              "url": null,
+              "name": "named-parameters"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/properties",
           "slug": "properties",
           "concepts": [
@@ -1293,6 +1325,86 @@
               "name": "tuples"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/streams",
+          "slug": "streams",
+          "concepts": [
+            {
+              "url": null,
+              "name": "streams"
+            },
+            {
+              "url": null,
+              "name": "pipe-operator"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/range.md",
+              "name": "ranges"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
+              "name": "enum"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
+            },
+            {
+              "url": null,
+              "name": "if-conditional"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/regular-expressions",
+          "slug": "regular-expressions",
+          "concepts": [
+            {
+              "url": null,
+              "name": "regular-expressions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/list-comprehensions",
+          "slug": "list-comprehensions",
+          "concepts": [
+            {
+              "url": null,
+              "name": "list-comprehensions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
+              "name": "enum"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/map.md",
+              "name": "maps"
+            },
+            {
+              "url": null,
+              "name": "keyword-lists"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
+            }
+          ]
         }
       ]
     }
@@ -1750,6 +1862,22 @@
             }
           ],
           "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/strings",
+          "slug": "strings",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
         }
       ]
     }
