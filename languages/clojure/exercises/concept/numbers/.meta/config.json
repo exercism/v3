@@ -1,10 +1,9 @@
 {
-    "authors": [
-      {
-        "github_username": "porkostomus",
-        "exercism_username": "porkostomus"
-      }
-    ],
-    "forked_from": ["fsharp/numbers"]
-  }
-  
+  "authors": [
+    {
+      "github_username": "porkostomus",
+      "exercism_username": "porkostomus"
+    }
+  ],
+  "forked_from": ["fsharp/numbers"]
+}
