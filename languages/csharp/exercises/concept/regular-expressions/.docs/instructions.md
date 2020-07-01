@@ -43,7 +43,7 @@ lp.IsValidLine("Section 1<===>Section 2<^-^>Section 3");
 
 It is important to find any passwords included in a file. These will be dealt with automatically but the team needs to know how about passwords occurred in quoted text so that they can be examined manually.
 
-Implement `LogParser.CountQuotedPasswords()` to identify lines where a password appears in quoted text.
+Implement the `LogParser.CountQuotedPasswords()`method to provide an indication of the likely scale of the manual exercise.
 
 The "password" string may be in upper or lower case or any combination.
 
@@ -79,23 +79,23 @@ lp.RemoveEndOfLineText("[INF] end-of-lline23033 Network Falure end-of-line27");
 // => "[INF]  Network Failure "
 ```
 
-### 5. Rewrite log to replace password with "xxxxxxxxx"
+### 5. List lines with extremely weak passwords so the guilty can be punished
 
-Implement `LogParser.RewriteLog()` to replace the actual password (rather than the text "password") with "xxxxxxxx" unless the password contains the string "pwassword" in which case the mask should be "**\*\*\*\***"
+Before expunging the passwords from the file we need to list any instances where passwords begin with the text "password".
+
+Implement the `LogParser.ListLinesWithPasswords()` method to print out the offending password followed by the complete line.
 
 Lines with quoted passwords have already been removed and you process lines irrespective of whether they are valid (as per task 1).
 
-Lines not containing a password should be returned unmodified.
+Lines containing an offending password should be returned prefixed with "<password>: ".
 
-Password is defined as the first string that follows the text password after a space.
-
-Previous investigations have shown that no line contains more than one password.
+Lines not containing an offending password should be returned prefixed with "-------: ".
 
 ```csharp
 var lp = new LogParser();
-lp.RewriteLogLines(new string[] {"my password theSecret"});
-// => {"my password xxxxxxxx"}
-lp.RewriteLogLines(new string[] {"my password password123"});
-// => {"my password ********"}
+lp.ListLinesWithPasswords(new string[] {"my passwordsecret is great"});
+// => "passwordsecre: my passwordsecret is great"
+lp.ListLinesWithPasswords(new string[] {"my password secret"});
+// => {"--------: my password secret"}
 
 ```

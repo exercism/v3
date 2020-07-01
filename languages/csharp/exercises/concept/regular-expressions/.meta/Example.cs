@@ -1,11 +1,12 @@
 using System.Text.RegularExpressions;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 
 public class LogParser
 {
     public bool IsMatch(string text)
     {
-        const string searchArg = @"\[TRC\] | \[DBG\] | \[INF\] | \[ERR\] | \[WRN\] | \[FTL\]";
-        return Regex.Match(text, searchArg, RegexOptions.IgnorePatternWhitespace).Success;
+        const string searchArg = @"^(\[TRC\] | \[DBG\] | \[INF\] | \[ERR\] | \[WRN\] | \[FTL\])";
+        return Regex.IsMatch(text, searchArg, RegexOptions.IgnorePatternWhitespace);
     }
 
     public string[] SplitLogLine(string text)
@@ -13,47 +14,29 @@ public class LogParser
         return Regex.Split(text, "<[*^=-]*>");
     }
 
-    public bool[] AreQuotedPasswords(string[] lines)
+    public int CountQuotedPasswords(string lines)
     {
         bool[] results = new bool[lines.Length];
-        var regex = new Regex(@"^.*""[^\\""]*password[^\\""]*"".*$", RegexOptions.IgnoreCase);
-        int ctr = 0;
-        for (int i = 0; i < lines.Length; i++)
-        {
-            results[i] = regex.IsMatch(lines[i]);
-        }
-
-        return results;
+        var regex = new Regex(@"^.*""[^\\""]*password[^\\""]*"".*$",
+            RegexOptions.IgnoreCase | RegexOptions.Multiline);
+        var matches = regex.Matches(lines);
+        return matches.Count;
     }
 
     public string RemoveEndOfLineText(string line)
     {
-        string pattern = @"end-of-line\d+";
+        string pattern = @"end-of-Line\d+";
 
         string str = Regex.Replace(line, pattern, string.Empty,
-            RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);
+            RegexOptions.IgnoreCase);
         return str;
     }
 
-    public string[] RewriteLogLines(string[] lines)
+    public string[] ListLinesWithPasswords(string[] lines)
     {
-        const string PREAMBLE = "preamble";
-        const string PWTEXT = "pwtext";
-        const string PW = "pw";
-        const string SPACE = "space";
-        const string POSTAMBLE = "postamble";
+        var pattern = @".*\s(?<pw>password\S+).*";
 
-        var pattern = $@"
-            ^
-            (?<{PREAMBLE}>.*)          # any text
-            (?<{PWTEXT}>password)      # the literal text - password
-            (?<{SPACE}>\s+)
-            (?<{PW}>\w*)               # the password itself
-            (?<{POSTAMBLE}>.*)         # any text
-            $
-          ";
-
-        string[] rewrites = new string[lines.Length];
+        string[] outlines = new string[lines.Length];
         var regex = new Regex(pattern, RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);
         for (int i = 0; i < lines.Length; i++)
         {
@@ -61,20 +44,15 @@ public class LogParser
             if (matches.Count > 0)
             {
                 var grps = matches[0].Groups;
-                var mask = "xxxxxxxx";
-                if (grps[PW].Value.ToLower().Contains("password"))
-                {
-                    mask = "********";
-                }
-                rewrites[i]
-                  = $"{grps[PREAMBLE].Value}{grps[PWTEXT].Value}{grps[SPACE].Value}{mask}{grps[POSTAMBLE].Value}";
+                outlines[i]
+                  = $"{grps["pw"].Value}: {lines[i]}";
             }
             else
             {
-                rewrites[i] = lines[i];
+                outlines[i] = $"--------: {lines[i]}";
             }
         }
 
-        return rewrites;
+        return outlines;
     }
 }
