@@ -1,7 +1,7 @@
 ## Learning objectives
 
 - Know how and when to user object initializers.
-- Understand that object initializers are used with collections (discussion only).
+- Understand that object initializers are used with collections
 
 ## Out of scope
 
@@ -15,3 +15,4 @@
 
 - `constructors`
 - `properties`
+- `dictionaries`
