@@ -131,6 +131,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "object-initializers",
+        "uuid": "a9c3a1c9-19ee-45b2-8189-57e15870a051",
+        "concepts": ["object-initializers"],
+        "prerequisites": ["constructors", "dictionaries", "properties"]
+      },
+      {
         "slug": "parameters",
         "uuid": "f5c259fd-a404-432f-922d-781bde34fe08",
         "concepts": ["parameters"],
