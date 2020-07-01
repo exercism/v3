@@ -18,9 +18,9 @@ public enum AlertLevel
 
 public static class Appointment
 {
-    public static DateTime ShowLocalTime(DateTime dt)
+    public static DateTime ShowLocalTime(DateTime dtUtc)
     {
-        return dt.ToLocalTime();
+        return dtUtc.ToLocalTime();
     }
 
     public static DateTime Schedule(string appointmentDateDescription, Location location)
@@ -59,9 +59,6 @@ public static class Appointment
         return tzi.IsDaylightSavingTime(dtPrevious) != tzi.IsDaylightSavingTime(dt);
     }
 
-    // ****** we are not exercising cross-platform skills as part of the exercise.
-    // Students should have something like one or other of the
-    // NormalizeDateTime<platform> routines
     public static DateTime NormalizeDateTime(string dtStr, Location location)
     {
         try
@@ -92,6 +89,9 @@ public static class Appointment
         return new CultureInfo(cultureId);
     }
 
+    // ****** we are not exercising cross-platform skills as part of the exercise.
+    // Students should have something like one or other of the
+    // NormalizeDateTime<platform> routines
     private static string GetTimeZoneId(Location location)
     {
         if (IsWindows())
