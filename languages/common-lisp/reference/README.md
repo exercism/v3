@@ -54,17 +54,6 @@ A more formal, machine-readable version of this concept list exists as
 - [Nested Functions][nested-functions]
 - [Recursion][recursion]
 
-### DSLs
-
-- Format
-  - Basic
-  - Conditionals
-  - Iteration
-  - Language
-  - Miscellaneous
-  - Numbers
-  - Tables
-
 ### CLOS (Needs Some Work)
 
 - [Classes][classes]
@@ -75,13 +64,6 @@ A more formal, machine-readable version of this concept list exists as
 - [Multiple Inheritance][inheritance]
 - [Objects][objects]
 - Slots
-
-### Conditions & Restarts (Needs Some Work)
-
-- Conditions
-- Handlers
-- Restarts
-- Signalling
 
 ### Macros (Needs Lots of Work)
 
@@ -123,11 +105,96 @@ A more formal, machine-readable version of this concept list exists as
 - Symbols
 - Trees
 
+### Conditions & Restarts (Needs Some Work)
+
+- Conditions
+- Handlers
+- Restarts
+- Signalling
+
+### DSLs
+
+- Format
+
+  - Basic
+  - Conditionals
+  - Iteration
+  - Language
+  - Miscellaneous
+  - Numbers
+  - Tables
+
+- Loop
+
+  - Basic
+  - Collecting
+  - Miscellaneous
+  - Ranges
+  - Tests
+  - Traversal
+
 ## Implemented Concept Exercises
 
-| Exercise           | Concepts                                     |
-| ------------------ | -------------------------------------------- |
-| [`basics`][basics] | `comments`, `expressions`, `cons`, `symbols` |
+| Exercise                 | Concepts                                           | Status      |
+| ------------------------ | -------------------------------------------------- | ----------- |
+| [`basics`][basics]       | `comments`, `expressions`, `cons`, `symbols`       | Implemented |
+| `basic-numbers`          | `arithmetic`, `floating-point-numbers`, `integers` | Has Issue   |
+| `assignment`             | `assignment`                                       | Has Issue   |
+| `basic-lists`            | `basic-lists`                                      | Has Issue   |
+| `characters`             | `characters`                                       | Has Issue   |
+| `conditionals`           | `conditionals`, `truthy-and-falsy`                 | Has Issue   |
+| `variables`              | `variables`, `constants`                           | Has Issue   |
+| `enumeration`            | `enumeration`, `loop.basic`                        | Has Issue   |
+| `function-definiton`     | `function-definiton`                               | Has Issue   |
+| `higher-order-functions` | `higher-order-functions`                           | Has Issue   |
+| `nested-functions`       | `nested-functions`                                 | Has Issue   |
+| `packages`               | `packages`                                         | Has Issue   |
+| `strings`                | `strings`, `printing`                              | Has Issue   |
+| `recursion`              | `recursion`                                        | Has Issue   |
+| `sameness`               | `sameness`                                         | Has Issue   |
+| `sets`                   | `sets`                                             | Has Issue   |
+| `anonymous-functions`    | `anonymous-functions`                              | Has Issue   |
+|                          | `arrays`                                           | Not Started |
+|                          | `association-lists`                                | Not Started |
+|                          | `booleans`                                         | Not Started |
+|                          | `circular-lists`                                   | Not Started |
+|                          | `classes`                                          | Not Started |
+|                          | `code-as-data`                                     | Not Started |
+|                          | `complex-numbers`                                  | Not Started |
+|                          | `conditions`                                       | Not Started |
+|                          | `generic-functions`                                | Not Started |
+|                          | `handlers`                                         | Not Started |
+|                          | `hash-tables`                                      | Not Started |
+|                          | `methods`                                          | Not Started |
+|                          | `multiple-dispatch`                                | Not Started |
+|                          | `multiple-inheritance`                             | Not Started |
+|                          | `multiple-values`                                  | Not Started |
+|                          | `objects`                                          | Not Started |
+|                          | `property-lists`                                   | Not Started |
+|                          | `rational-numbers`                                 | Not Started |
+|                          | `reader-macros.defining`                           | Not Started |
+|                          | `reader-macros.using`                              | Not Started |
+|                          | `reading`                                          | Not Started |
+|                          | `restarts`                                         | Not Started |
+|                          | `signalling`                                       | Not Started |
+|                          | `slots`                                            | Not Started |
+|                          | `streams`                                          | Not Started |
+|                          | `structures`                                       | Not Started |
+|                          | `trees`                                            | Not Started |
+|                          | `unique-symbols`                                   | Not Started |
+|                          | `vectors`                                          | Not Started |
+|                          | `format.basic`                                     | Not Started |
+|                          | `format.conditionals`                              | Not Started |
+|                          | `format.iteration`                                 | Not Started |
+|                          | `format.language`                                  | Not Started |
+|                          | `format.miscellaneous`                             | Not Started |
+|                          | `format.numbers`                                   | Not Started |
+|                          | `format.tables`                                    | Not Started |
+|                          | `loop.collecting`                                  | Not Started |
+|                          | `loop.miscellaneous`                               | Not Started |
+|                          | `loop.ranges`                                      | Not Started |
+|                          | `loop.tests`                                       | Not Started |
+|                          | `loop.traversal`                                   | Not Started |
 
 [anonymous-functions]: ../../../reference/concepts/anonymous_functions.md
 [arithmetic]: ../../../reference/concepts/arithmetic.md

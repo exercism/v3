@@ -1,0 +1,29 @@
+name: Update concepts summary
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'reference/concepts/**'
+      - 'reference/types/**'
+
+jobs:
+  update-stories-summary:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'Checkout code'
+        uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
+
+      - name: 'Install .NET core'
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1.201'
+
+      - name: Update concepts summary
+        run: .github/bin/concepts/update.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
