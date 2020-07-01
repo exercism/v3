@@ -1,6 +1,6 @@
 Although this exercise investigates the concept of `time` in practice you rarely deal with times on their own. They are almost always dealt with in conjunction with dates. There is no specific separate _time_ object only [`DateTime`][date-time].
 
-Time-of-day can be expressed with [`TimeSpan`][time-span]. It is not [purpsoe made][skeet-time-of-day] so the expressiveness of code can get a bit clunky. It does the job.
+Time-of-day can be expressed with [`TimeSpan`][time-span]. It is not [purpose made][skeet-time-of-day] so the expressiveness of code can get a bit clunky. It does the job.
 
 _time_ has a number of aspects:
 
