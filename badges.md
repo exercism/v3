@@ -22,7 +22,8 @@ These will be in the codebase. They're unordered.
 - **All your base are belong to us:** Solved the "All Your Base" exercise.
 - **Whatever:** Solve Bob
 - **Lackadaisical:** Solve bob in five languages
-- **Weekend Exerciser:** Only submit solutions on the weekends for a month
+- **Team builder:** Create a team with 3 members
+- **Teammate:** Give team feedback to 5 solutions.
 
 ## To be implemented - but involve more code/effort
 
@@ -34,8 +35,8 @@ These will be in the codebase. They're unordered.
 ## Under Consideration
 
 - **Streaked:** Solve at least one exercise a day X days in a row
-- **Purgatory:** - Write a solution which triggers an execution timeout.
-- **Knuth Reward Cheque** - Report an error in an exercise.
+- **Purgatory:** Write a solution which triggers an execution timeout.
+- **Knuth Reward Cheque:** Report an error in an exercise.
 
 ## Rejected
 
