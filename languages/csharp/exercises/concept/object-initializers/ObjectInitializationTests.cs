@@ -10,10 +10,10 @@ public class ObjectInitializationTests
         var admin = authenticator.Admin;
         string[] actual =
         {
-            admin.Email,
-            admin.FacialFeatures.EyeColor,
-            admin.FacialFeatures.PhiltrumWidth.ToString(),
-            admin.NameAndAddress[0]
+            admin?.Email,
+            admin?.FacialFeatures.EyeColor,
+            admin?.FacialFeatures.PhiltrumWidth.ToString(),
+            admin?.NameAndAddress[0]
         };
         string[] expected =
         {
@@ -32,10 +32,10 @@ public class ObjectInitializationTests
         var developers = authenticator.Developers;
         string[] actual =
         {
-            developers["Bertrand"].Email,
-            developers["Bertrand"].FacialFeatures.EyeColor,
-            developers["Anders"].FacialFeatures.PhiltrumWidth.ToString(),
-            developers["Anders"].NameAndAddress[1]
+            developers["Bertrand"]?.Email,
+            developers["Bertrand"]?.FacialFeatures.EyeColor,
+            developers["Anders"]?.FacialFeatures.PhiltrumWidth.ToString(),
+            developers["Anders"]?.NameAndAddress[1]
         };
         string[] expected =
         {
