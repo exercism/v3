@@ -53,17 +53,13 @@ Lines passed to the routine may or may not be valid as defined in task 1. We pro
 string[] lines =
 {
     string.Empty,
-    "[INF] passWordaa ",
+    "[INF] passWord ",
     "\"passWord\"",
-    "[INF] The secret password123 was added by the user"
+    "[INF] \"The secret password was added by the user\""
 };
 var lp = new LogParser();
 lp.CountQuotedPasswords(lines);
-// =>  as below:
-// "--------: "
-// "passWordaa: [INF] passWordaa "
-// "--------: passWord"
-// "password123: [INF] The secret password123 was added by the user"
+// => 2
 ```
 
 ### 4. Remove artifacts from log
