@@ -18,4 +18,4 @@
 (defn working-items
   "Calculates how many working cars are produced per minute"
   [speed]
-  (quot (production-rate speed) 60))
+  (int (quot (production-rate speed) 60)))
