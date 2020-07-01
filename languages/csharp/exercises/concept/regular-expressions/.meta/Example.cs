@@ -36,7 +36,7 @@ public class LogParser
         var pattern = @".*\s(?<pw>password\S+).*";
 
         string[] outlines = new string[lines.Length];
-        var regex = new Regex(pattern, RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);
+        var regex = new Regex(pattern, RegexOptions.IgnoreCase);
         for (int i = 0; i < lines.Length; i++)
         {
             var matches = regex.Matches(lines[i]);
