@@ -7,8 +7,6 @@ public class Person
     public string Address;
 }
 
-...
-
 var person = new Person{Name="The President", Address = "Élysée Palace"};
 ```
 
