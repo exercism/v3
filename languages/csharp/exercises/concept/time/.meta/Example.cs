@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 
 public enum Location
 {
@@ -20,24 +21,13 @@ public static class Appointment
     {
         return dt.ToLocalTime();
     }
+
     public static DateTime Schedule(string appointmentDateDescription, Location location)
     {
-        string tzid = string.Empty;
-        switch (location)
-        {
-            case Location.NewYork:
-                tzid = "America/New_York";
-                break;
-            case Location.London:
-                tzid = "Europe/London";
-                break;
-            case Location.Paris:
-                tzid = "Europe/Paris";
-                break;
-        }
-        DateTime dt = DateTime.Parse(appointmentDateDescription);
-        DateTime local = TimeZoneInfo.ConvertTimeBySystemTimeZoneId(dt, tzid);
-        return local;
+        TimeZoneInfo tziLocation = TimeZoneInfo.FindSystemTimeZoneById(GetTimeZoneId(location));
+        DateTime dtl = DateTime.Parse(appointmentDateDescription);
+        DateTime dtu = TimeZoneInfo.ConvertTimeToUtc(dtl, tziLocation);
+        return dtu;
     }
 
     public static DateTime GetAlertTime(DateTime appointment, AlertLevel alertLevel)
@@ -64,19 +54,75 @@ public static class Appointment
     {
         DateTime dtPrevious = dt.AddDays(-7);
         string tzid = string.Empty;
+        TimeZoneInfo tzi = TimeZoneInfo.FindSystemTimeZoneById(GetTimeZoneId(location));
+        return tzi.IsDaylightSavingTime(dtPrevious) != tzi.IsDaylightSavingTime(dt);
+    }
+
+    public static DateTime NormalizeDateTime(string dtStr, Location location)
+    {
+        try
+        {
+            return DateTime.Parse(dtStr, LocationToCulture(location));
+        }
+        catch (Exception)
+        {
+            return new DateTime();
+        }
+    }
+
+    private static CultureInfo LocationToCulture(Location location)
+    {
+        string cultureId = string.Empty;
         switch (location)
         {
             case Location.NewYork:
-                tzid = "America/New_York";
+                cultureId = "en-US";
                 break;
             case Location.London:
-                tzid = "Europe/London";
+                cultureId = "en-GB";
                 break;
             case Location.Paris:
-                tzid = "Europe/Paris";
+                cultureId = "fr-FR";
                 break;
         }
-        TimeZoneInfo tzi = TimeZoneInfo.FindSystemTimeZoneById(tzid);
-        return tzi.IsDaylightSavingTime(dtPrevious) != tzi.IsDaylightSavingTime(dt);
+        return new CultureInfo(cultureId);
     }
+
+#if Windows
+    private static string GetTimeZoneId(Location location)
+    {
+        string timeZoneId = string.Empty;
+        switch (location)
+        {
+            case Location.NewYork:
+                timeZoneId = "Eastern Standard Time";
+                break;
+            case Location.London:
+                timeZoneId = "GMT Standard Time";
+                break;
+            case Location.Paris:
+                timeZoneId = "W. Europe Standard Time";
+                break;
+        }
+        return timeZoneId;
+    }
+#else    
+    private static string GetTimeZoneId(Location location)
+    {
+        string timeZoneId = string.Empty;
+        switch (location)
+        {
+            case Location.NewYork:
+                timeZoneId = "America/New_York";
+                break;
+            case Location.London:
+                timeZoneId = "Europe/London";
+                break;
+            case Location.Paris:
+                timeZoneId = "Europe/Paris";
+                break;
+        }
+        return timeZoneId;
+    }
+#endif
 }
