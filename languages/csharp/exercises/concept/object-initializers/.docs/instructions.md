@@ -14,7 +14,7 @@ Implement the `Authenticator.Admin` property to return the system admin's identi
 
 ```csharp
 var authenticator = new Authenticator();
-authentiator.Admin
+authenticator.Admin;
 // => {"admin@ex.ism", {"green", 0.9m}, ["Chanakya", "Mombai", "India"]}
 ```
 
@@ -31,7 +31,7 @@ Implement the `Authenticator.Developers` to return the developers' identity deta
 
 ```csharp
 var authenticator = new Authenticator();
-authentiator.Developers;
+authenticator.Developers;
 // => {"bert" = {"bert@ex.ism", {"blue", 0.8m}, ["Bertrand", "Paris", "France"]},
 // ["anders" = {"bert@ex.ism", {"brown", 0.85m}, ["Anders", "Redmond", "USA"]},
 

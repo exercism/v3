@@ -65,9 +65,5 @@ public class Authenticator
             }
         };
 
-    public void Foo()
-    {
-        var aa = new Identity{NameAndAddress = {"mike", "jon"}};
-    }
 }
 }

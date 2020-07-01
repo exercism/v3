@@ -15,7 +15,7 @@ var person = new Person{Name="The President", Address = "Élysée Palace"};
 Collections can also be initialized in this way. Typically, this is accomplished with comma separated lists as shown here:
 
 ```csharp
-IList<Person> people = new List<Person>{ new Person(), new Person{Name="Joe", "Shmow"}};
+IList<Person> people = new List<Person>{ new Person(), new Person{Name="Joe Shmo"}};
 ```
 
 This approach (and syntax) can be used with any class that implements `IEnumerable` and has an `Add()` method.
@@ -29,7 +29,7 @@ IDictionary<int, string> numbers = new Dictionary<int, string>{ [0] = "zero", [1
 
 // or
 
-IDictionary<int, string> numbers = new Dictionary<int, string>{ {0, "zero }, {1,  "one"}...};
+IDictionary<int, string> numbers = new Dictionary<int, string>{ {0, "zero" }, {1,  "one"}...};
 ```
 
 The initialized fields must be accessible to the caller. Typically, this means they must be `public` or `internal`.

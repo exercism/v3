@@ -1,7 +1,7 @@
 ## General
 
-[object initializer][object-initializers] documentation describes how to use initialzers.
-[collection initializer][collection-initializers] documentation gives a preview of how initializers can be used with collections like dictionaries and lists.
+- [object initializer][object-initializers] documentation describes how to use initialzers.
+- [collection initializer][collection-initializers] documentation gives a preview of how initializers can be used with collections like dictionaries and lists.
 
 ## 1. Store the system admin's details hard-coded in the system and make it available to callers.
 
