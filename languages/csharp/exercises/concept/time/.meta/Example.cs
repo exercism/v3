@@ -1,5 +1,6 @@
 using System;
 using System.Globalization;
+using System.Runtime.InteropServices;
 
 public enum Location
 {
@@ -53,10 +54,14 @@ public static class Appointment
     public static bool HasDaylightSavingChanged(DateTime dt, Location location)
     {
         DateTime dtPrevious = dt.AddDays(-7);
+        string tzid = string.Empty;
         TimeZoneInfo tzi = TimeZoneInfo.FindSystemTimeZoneById(GetTimeZoneId(location));
         return tzi.IsDaylightSavingTime(dtPrevious) != tzi.IsDaylightSavingTime(dt);
     }
 
+    // ****** we are not testing this as part of the exercise
+    // students should have something like one or other of the
+    // NormalizeDateTime<platform> routines
     public static DateTime NormalizeDateTime(string dtStr, Location location)
     {
         try
@@ -87,8 +92,19 @@ public static class Appointment
         return new CultureInfo(cultureId);
     }
 
-#if Windows
     private static string GetTimeZoneId(Location location)
+    {
+        if (IsWindows())
+        {
+            return GetTimeZoneIdForWindows(location);
+        }
+        else
+        {
+            return GetTimeZoneIdForPosix(location);
+        }
+    }
+
+    private static string GetTimeZoneIdForWindows(Location location)
     {
         string timeZoneId = string.Empty;
         switch (location)
@@ -105,20 +121,10 @@ public static class Appointment
         }
         return timeZoneId;
     }
-#else    
-    private static string GetTimeZoneId(Location location)
+
+    private static string GetTimeZoneIdForPosix(Location location)
     {
-        switch (location)
-        {
-            case Location.NewYork:
-                return "America/New_York";
-            case Location.London:
-                return "Europe/London";
-            case Location.Paris:
-                return "Europe/Paris";
-            default:
-                return string.Empty;
-        }
+        string timeZoneId = string.Empty;
         switch (location)
         {
             case Location.NewYork:
@@ -133,5 +139,9 @@ public static class Appointment
         }
         return timeZoneId;
     }
-#endif
+
+    private static bool IsWindows()
+    {
+        return RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
+    }
 }

@@ -9,6 +9,7 @@
 
 - custom time zones
 - [Noda Time][noda-time]
+- We are not exercising student's ability to code a cross-platform solution.
 
 ## Concepts
 
