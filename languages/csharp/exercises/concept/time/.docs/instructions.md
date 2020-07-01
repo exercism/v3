@@ -1,4 +1,4 @@
-In this exercise you are back in the world of salons (first introduced in the `datetimes`) exercise. As with a number of your projects another of your clients has had great success and opened outlets in London and Paris in addition to their New York base.
+In this exercise you are back in the world of salons (first introduced in the `datetimes` exercise). As with a number of your projects another of your clients has had great success and opened outlets in London and Paris in addition to their New York base.
 
 ## 1. Provide local time equivalents of UTC (Universal Coordinated Time) appointments for the administrators
 
@@ -39,7 +39,7 @@ Appointment.Schedule("7/25/2030 13:45:00", Location.Paris);
 
 ## 3. Provide alerts to clients at intervals before the appointment
 
-Implement the static `Appointment.GetAlertTime()` to provide alerts at 1 day, 1 hour 45 minutes and 30 minutes before the appointment.
+Implement the static `Appointment.GetAlertTime()` to provide alerts at 1 day (early), 1 hour 45 minutes (standard) and 30 minutes (late) before the appointment.
 
 ```csharp
 Appointment.GetAlertTime(new DateTime(2030, 7, 25, 14, 45, 0), AlertLevel.Early);

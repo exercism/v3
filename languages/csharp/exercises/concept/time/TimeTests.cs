@@ -14,7 +14,6 @@ public class TimeTests
     [Fact]
     public void ShowLocalTime()
     {
-        var aaa = GetTimeZoneIds();
         var dt = new DateTime(2030, 07, 25, 13, 45, 0);
         var tzi = TimeZoneInfo.Local;
         var offset = tzi.GetUtcOffset(dt);
