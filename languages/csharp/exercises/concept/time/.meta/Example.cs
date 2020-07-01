@@ -59,8 +59,8 @@ public static class Appointment
         return tzi.IsDaylightSavingTime(dtPrevious) != tzi.IsDaylightSavingTime(dt);
     }
 
-    // ****** we are not testing this as part of the exercise
-    // students should have something like one or other of the
+    // ****** we are not exercising cross-platform skills as part of the exercise.
+    // Students should have something like one or other of the
     // NormalizeDateTime<platform> routines
     public static DateTime NormalizeDateTime(string dtStr, Location location)
     {
