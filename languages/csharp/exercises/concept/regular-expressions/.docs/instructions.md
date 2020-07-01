@@ -15,7 +15,7 @@ You need some idea of how many log lines in your archive do not comply with curr
 - [ERR]
 - [FTL]
 
-Implement `LogParser.IsValidLine()` to return `false` if a string is not valid otherwise `true`.
+Implement the `LogParser.IsValidLine()` method to return `false` if a string is not valid otherwise `true`.
 
 ```csharp
 var lp = new LogParser();
@@ -31,7 +31,7 @@ lp.IsValidLine("[BOB] Any old text");
 
 A new team has joined the organization and you find their log files are using a strange separator for "fields". Instead of something sensible like a colon ":" they use a string such as "<--->" or "<=>" (because it's prettier) in fact any string that has a first character of "<" and a last character of ">" and any combination of the following "^\*=-" in between.
 
-Implement `LogParser.SplitLogLIne()` that takes a line and returns an array of strings each of which contains a field.
+Implement the `LogParser.SplitLogLIne()` method that takes a line and returns an array of strings each of which contains a field.
 
 ```csharp
 var lp = new LogParser();
@@ -53,21 +53,24 @@ Lines passed to the routine may or may not be valid as defined in task 1. We pro
 string[] lines =
 {
     string.Empty,
-    "[INF] passWord",
+    "[INF] passWordaa ",
     "\"passWord\"",
-    "[INF] The message \"Please reset your passord\" was ignored by the user"
+    "[INF] The secret password123 was added by the user"
 };
 var lp = new LogParser();
 lp.CountQuotedPasswords(lines);
-// => {false, false, true, true}
-
+// =>  as below:
+// "--------: "
+// "passWordaa: [INF] passWordaa "
+// "--------: passWord"
+// "password123: [INF] The secret password123 was added by the user"
 ```
 
 ### 4. Remove artifacts from log
 
 You have found that some upstream processing of the logs has been scattering the text "end-of-line" followed by a line number (without an intervening space) throughout the logs.
 
-Implement `LogParser.RemoveEndOfLineText()` to take a string and remove the end-of-line text and return a "clean" string.
+Implement the `LogParser.RemoveEndOfLineText()` method to take a string and remove the end-of-line text and return a "clean" string.
 
 Lines not containing end-of-line text should be returned unmodified.
 
