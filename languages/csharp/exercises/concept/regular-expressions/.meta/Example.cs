@@ -27,9 +27,8 @@ public class LogParser
     {
         string pattern = @"end-of-Line\d+";
 
-        string str = Regex.Replace(line, pattern, string.Empty,
+        return Regex.Replace(line, pattern, string.Empty,
             RegexOptions.IgnoreCase);
-        return str;
     }
 
     public string[] ListLinesWithPasswords(string[] lines)
