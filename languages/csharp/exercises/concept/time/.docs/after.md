@@ -1,6 +1,6 @@
 Although this exercise investigates the concept of `time` in practice you rarely deal with times on their own. They are almost always dealt with in conjunction with dates. There is no specific separate _time_ object only [`DateTime`][date-time].
 
-Time-of-day can be expressed with `TimeSpan`. It is not [purpsoe made][skeet-time-of-day] so the expressiveness of code can get a bit clunky. It does the job.
+Time-of-day can be expressed with [`TimeSpan`][time-span]. It is not [purpsoe made][skeet-time-of-day] so the expressiveness of code can get a bit clunky. It does the job.
 
 _time_ has a number of aspects:
 
@@ -35,3 +35,4 @@ If dates and times are a pervasive and/or critical part of your project then you
 [date-time]: https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=netcore-3.1
 [noda-time]: https://nodatime.org/
 [date-string-formatting]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings
+[time-span]: https://docs.microsoft.com/en-us/dotnet/api/system.timespan?view=netcore-2.0
