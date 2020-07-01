@@ -66,6 +66,19 @@
         "prerequisites": ["conditionals", "strings"]
       },
       {
+        "slug": "equality",
+        "uuid": "116e0b8d-21f2-409f-abec-676da014a800",
+        "concepts": ["equality", "sets"],
+        "prerequisites": [
+          "classes",
+          "explicit-casts",
+          "generic-types",
+          "inheritance",
+          "interfaces",
+          "lists"
+        ]
+      },
+      {
         "slug": "flag-enums",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
         "concepts": ["bit-manipulation", "compound-assignment", "flag-enums"],
@@ -116,6 +129,24 @@
         "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
         "concepts": ["conditionals", "numbers"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "object-initializers",
+        "uuid": "a9c3a1c9-19ee-45b2-8189-57e15870a051",
+        "concepts": ["object-initializers"],
+        "prerequisites": ["constructors", "dictionaries", "properties"]
+      },
+      {
+        "slug": "parameters",
+        "uuid": "f5c259fd-a404-432f-922d-781bde34fe08",
+        "concepts": ["parameters"],
+        "prerequisites": [
+          "conditionals",
+          "constructors",
+          "named-parameters",
+          "numbers",
+          "strings"
+        ]
       },
       {
         "slug": "properties",
