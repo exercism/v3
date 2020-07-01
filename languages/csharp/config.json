@@ -131,6 +131,24 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "object-initializers",
+        "uuid": "a9c3a1c9-19ee-45b2-8189-57e15870a051",
+        "concepts": ["object-initializers"],
+        "prerequisites": ["constructors", "dictionaries", "properties"]
+      },
+      {
+        "slug": "parameters",
+        "uuid": "f5c259fd-a404-432f-922d-781bde34fe08",
+        "concepts": ["parameters"],
+        "prerequisites": [
+          "conditionals",
+          "constructors",
+          "named-parameters",
+          "numbers",
+          "strings"
+        ]
+      },
+      {
         "slug": "properties",
         "uuid": "978bcc16-0c49-4328-92e9-79f6204ce350",
         "concepts": ["properties"],
@@ -159,6 +177,17 @@
         "uuid": "8bb88ab5-3cde-4ebd-8eef-03323ebfd700",
         "concepts": ["tuples"],
         "prerequisites": ["conditionals", "strings"]
+      },
+      {
+        "slug": "time",
+        "uuid": "61dd2e1c-94bb-4c92-95ad-6460a7677884",
+        "concepts": ["time", "timezone"],
+        "prerequisites": [
+          "conditionals-if",
+          "datetime",
+          "strings",
+          "switch-statements"
+        ]
       },
       {
         "slug": "user-defined-exceptions",
