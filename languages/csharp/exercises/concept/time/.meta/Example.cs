@@ -53,7 +53,6 @@ public static class Appointment
     public static bool HasDaylightSavingChanged(DateTime dt, Location location)
     {
         DateTime dtPrevious = dt.AddDays(-7);
-        string tzid = string.Empty;
         TimeZoneInfo tzi = TimeZoneInfo.FindSystemTimeZoneById(GetTimeZoneId(location));
         return tzi.IsDaylightSavingTime(dtPrevious) != tzi.IsDaylightSavingTime(dt);
     }
@@ -66,7 +65,7 @@ public static class Appointment
         }
         catch (Exception)
         {
-            return new DateTime();
+            return DateTime.MinValue;
         }
     }
 
@@ -109,7 +108,17 @@ public static class Appointment
 #else    
     private static string GetTimeZoneId(Location location)
     {
-        string timeZoneId = string.Empty;
+        switch (location)
+        {
+            case Location.NewYork:
+                return "America/New_York";
+            case Location.London:
+                return "Europe/London";
+            case Location.Paris:
+                return "Europe/Paris";
+            default:
+                return string.Empty;
+        }
         switch (location)
         {
             case Location.NewYork:
