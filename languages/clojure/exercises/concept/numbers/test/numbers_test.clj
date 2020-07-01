@@ -1,5 +1,5 @@
 (ns numbers-test
-  (:require [clojure.test :refer [deftest testing is run-tests]]
+  (:require [clojure.test :refer [deftest testing is]]
             numbers))
 
 (deftest production-rate-test
@@ -31,5 +31,3 @@
       (is (= 26 (numbers/working-items 9))))
     (testing "speed 10"
       (is (= 28 (numbers/working-items 10))))))
-
-(run-tests)
