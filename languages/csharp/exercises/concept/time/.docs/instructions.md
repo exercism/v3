@@ -1,8 +1,8 @@
-In this exercise you are back in the world of salons (first introduced in the `datetimes`) exercise. As with a number of your projects your client has had much success and opened outlets in London and Paris in addition the New York base.
+In this exercise you are back in the world of salons (first introduced in the `datetimes`) exercise. As with a number of your projects another of your clients has had great success and opened outlets in London and Paris in addition to their New York base.
 
-## 1. Provide local time equivalents of utc appointments for the administrators
+## 1. Provide local time equivalents of UTC (Universal Coordinated Time) appointments for the administrators
 
-Implement the static `Appointment.ShowLocalTime()` method that takes a utc time and returns it as a local time
+Implement the static `Appointment.ShowLocalTime()` method that takes a UTC time and returns it as a local time
 
 ```csharp
 // For a student in NY
@@ -12,7 +12,7 @@ Appointment.ShowLocalTime(new DateTime(2030, 7, 25, 13, 45, 0));
 
 ## 2. Schedule appointments in New York, London and Paris
 
-Implement the static `Appointment.Shedule()` overload which takes a location and time string and returns the utc time of the appointment.
+Implement the static `Appointment.Shedule()` overload which takes a location and time string and returns the UTC time of the appointment.
 
 Salons are responsible for taking their own bookings. The time input is local to the location of the salon. For instance, if someone enters a time of 13:45 for the New York salon for an appointment, they would expect the client to turn up just after lunch. Similarly, if someone entered a time of 13:45 for the London salon they would also expect the client arrive just after lunch.
 
@@ -20,15 +20,15 @@ It will help you to know the time zone id for New York, London and Paris.
 
 On Mac and Linux these are:
 
-New York - America/New_York
-London - Europe/London
-Paris - Europe/Paris
+- New York - America/New_York
+- London - Europe/London
+- Paris - Europe/Paris
 
 On Windows they are:
 
-New York - Eastern Standard Time
-London - GMT Standard Time
-Paris - W. Europe Standard Time
+- New York - Eastern Standard Time
+- London - GMT Standard Time
+- Paris - W. Europe Standard Time
 
 The date-time strings input are guaranteed to be valid.
 
@@ -42,7 +42,7 @@ Appointment.Schedule("7/25/2030 13:45:00", Location.Paris);
 Implement the static `Appointment.GetAlertTime()` to provide alerts at 1 day, 1 hour 45 minutes and 30 minutes before the appointment.
 
 ```csharp
-Appointment.GetAlertTime(new DateTime(2030, 7, 25, 14, 45, 0), AlertLeel.Early);
+Appointment.GetAlertTime(new DateTime(2030, 7, 25, 14, 45, 0), AlertLevel.Early);
 // => {2030, 7, 24, 14, 45, 0}
 ```
 
@@ -59,11 +59,13 @@ Appointment.HasDaylightSavingChanged(new DateTime(2020, 3, 30, 14, 45, 0), Locat
 
 The Brits and the French are looking for a bit of respect so you have been tasked with creating an experimental routine to allow values to be entered in the default format for the location of the salon.
 
-Implement the `Appointment.Normalize()` method that takes a well-formed date-time string in an format appropriate to the location and converts it into a `DateTime` object. No attempt is made to convert the date-time to UTC.
+Implement the `Appointment.NormalizeDateTime()` method that takes a well-formed date-time string in an format appropriate to the location and converts it into a `DateTime` object. No attempt is made to convert the date-time to UTC.
 
 If a bad format is entered then a `DateTime` with a value of 1/1/1 should be returned.
 
 ```csharp
-Appointment.NormalizeDateTime(new DateTime(2020, 3, 30, 14, 45, 0), Location.London);
-// => true
+Appointment.NormalizeDateTime("25/11/2019 13:45:00", Location.London);
+// => {2020, 3, 30, 13, 45, 0}
+Appointment.NormalizeDateTime("25/11/2019 13:45:00", Location.NewYork);
+// => {1, 1, 1, 0, 0, 0}
 ```
