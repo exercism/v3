@@ -18,6 +18,8 @@ Collections can also be initialized in this way. Typically, this is accomplished
 IList<Person> people = new List<Person>{ new Person(), new Person{Name="Joe", "Shmow"}};
 ```
 
+This approach (and syntax) can be used with any class that implements `IEnumerable` and has an `Add()` method.
+
 Fields can be listed in any order or ommitted completely.
 
 Dictionaries use the following syntax:
