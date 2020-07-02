@@ -55,9 +55,8 @@ public class ResourceCleanupTests
         orm.Write("good data");
         var disposable = Assert.IsAssignableFrom<IDisposable>(orm);
         disposable.Dispose();
-
-        object[] actual = {disposable, db.DbState, db.lastData};
-        Assert.Equal(new object[] {true, Database.State.Closed, "good data"}, actual);
+        object[] actual = {db.DbState, db.lastData};
+        Assert.Equal(new object[] {Database.State.Closed, "good data"}, actual);
     }
 }
 
