@@ -6,4 +6,3 @@ Floating point numbers in Clojure are read as Doubles; with M suffix they are re
 
 - `Double`: 8 bytes (~15-17 digits precision). This is the most common type. Written as `2.45`.
 - `BigDecimal`: 16 bytes (28-29 digits precision). Normally used when working with monetary data, as its precision leads to less rounding errors. Written as `2.45M`.
-
