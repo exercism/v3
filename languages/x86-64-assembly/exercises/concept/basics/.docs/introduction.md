@@ -1,23 +1,65 @@
-To copy a value into a register we use the `mov` instruction:
+x86-64 assembly is a low-level language. In assembly there are no variables,
+instead we use registers to store values. Some registers have a special purpose
+such as returning a value from a function, or passing function arguments. To
+store a value in a register, we use the `mov` instruction:
 
 ```nasm
-mov rdx, 10  ; Copy 10 into register rdx
+mov rax, 42  ; rax = 42
 ```
 
-A function can have zero or more parameters. The first parameter is passed in the `rdi` register, the second in the `rsi` register. To return a value, place it in the `rax` register. Use the `global` keyword to make the function accessible from other files.
+An assembly program is divided into sections. A section is basically a range of
+addresses. The text section contains our executable instructions and is
+declared as follows:
 
 ```nasm
-global add
-add:
-    mov rax, rdi  ; Copy first parameter into return register
-    add rax, rsi  ; Add second parameter and return register. Store result in return register
-    ret           ; Return to caller
+section .text
 ```
 
-Invoking a function is done using the `call` instruction. Put the first argument in the `rdi` register, and the second in the `rsi` register.
+A function is a set of instructions that perform a specific task. A function
+declaration consists of a label with the name of the function, the instructions
+that define the function, and the return instruction. The following declares a
+function called `foo`, which returns the value 42:
 
 ```nasm
-mov rdi, 1  ; Copy 1 into first argument
-mov rsi, 2  ; Copy 2 into second argument
-call add    ; Invoke add function
+foo:
+  mov rax, 42
+  ret
 ```
+
+The value in the `rax` register specifies the value returned by the function.
+
+To change the visibility of a function, and be able to call it from any file in
+our program we use the `global` keyword:
+
+```nasm
+global foo
+```
+
+When a function is called, the first argument is stored in the `rdi` register,
+and the second argument is stored in the `rsi` register. Here's an example of a
+function that takes a single argument and returns it, also known as an identity
+function:
+
+```nasm
+global identity
+identity:
+  mov rax, rdi
+  ret
+```
+
+To add values, we can use the `add` instruction. It takes two operands, a
+source operand (first operand), and a destination operand (second operand),
+adds them together, and stores the result in the destination operand. Here's an
+example of a function that takes two arguments, adds them together, and returns
+the result:
+
+```nasm
+global sum
+sum:
+  mov rax, rdi
+  add rax, rsi  ; rax += rsi
+  ret
+```
+
+To subtract values we use the `sub` instruction. It works just like the `add`
+instruction except it subtracts the two operands.
