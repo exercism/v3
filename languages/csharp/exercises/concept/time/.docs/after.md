@@ -30,7 +30,7 @@ For date time arithmetic, in the coding exercise, you may well have used the `Ti
 
 If dates and times are a pervasive and/or critical part of your project then you should investigate [Noda Time][noda-time]
 
-In case you were wondering, according to this [Wikipedia article][wiki-utc] the abbreviation for universal time arose from a compromise between English (UCT) and French (CUT) speakers such that neither language would appear to take precedence.
+In case you were wondering, according to this [Wikipedia article][wiki-utc] the abbreviation for universal time, UTC, arose from a compromise between English (UCT) and French (CUT) speakers such that neither language would appear to take precedence.
 
 [so-timers]: https://stackoverflow.com/questions/10317088/why-there-are-5-versions-of-timer-classes-in-net
 [cross-platform-time-zones]: https://devblogs.microsoft.com/dotnet/cross-platform-time-zones-with-net-core/
