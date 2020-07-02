@@ -10,7 +10,7 @@ The unit of measure is 100 meters but can be ignored in these tasks.
 
 Complete the implementation of the `Plot` struct which comprises 4 coord structs (which it accepts in its constructor).
 
-## 2. Speculaors can stake their claim by specifying a plot identified by its dimensions
+## 2. Speculators can stake their claim by specifying a plot identified by its dimensions
 
 Implement the `ClaimsHandler.StakeClaim()` method to allow a claim to be registered.
 
