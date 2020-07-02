@@ -1,6 +1,6 @@
 using System;
 
-public class Orm : IDisposable
+public class Orm
 {
     private Database database;
 
@@ -22,10 +22,5 @@ public class Orm : IDisposable
     public void Commit()
     {
         throw new NotImplementedException($"Please implement the Orm.Commit() method");
-    }
-
-    public void Dispose()
-    {
-        throw new NotImplementedException($"Please implement the Orm.Dispose() method");
     }
 }
