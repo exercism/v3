@@ -19,9 +19,13 @@ Instances of `DateTime` behave much like numbers with comparison operators `>` a
 
 #### Equality
 
-Equality testing for `struct`s is often much simpler than that for `class`s. If there
+Equality testing for `struct`s can often be much simpler than that for `class`s as it simply compares fields for equality by default. However, this [article][equality] describes how performance can be optimised by creating your own custom `Equals()` and `GetHashCode()` method as is often done with `class`s.  The difference in the case of this exercise was about 20% in a not very rigorous comparison but that may be on the low side because all the fields are of the same type - see below.
+
+There are discussions on the [web][equality-performance] about speed improvements, where the `Equals()` method is not overriden, if all fields are of the same type.  The difference in this exercise of including disparate fields was about 60%.  This is not mentioned in Microsoft's documentation so that makes it an un-documented implementation detail and it should be exploited judiciously.
 
 [structs-patterns]: https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/choosing-between-class-and-struct
 [structs-immutable]: https://stackoverflow.com/a/3753640/96167
 [date-time]: https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=netcore-3.1
 [operators]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/operator-overloading
+[equality]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type
+[equality-performance]: https://medium.com/@semuserable/c-journey-into-struct-equality-comparison-deep-dive-9693f74562f1
