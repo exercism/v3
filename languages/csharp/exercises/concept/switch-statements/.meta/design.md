@@ -17,3 +17,4 @@
 
 - `enums`
 - `classes`
+- `inheritance`
