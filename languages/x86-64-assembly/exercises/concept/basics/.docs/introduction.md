@@ -63,3 +63,13 @@ sum:
 
 To subtract values we use the `sub` instruction. It works just like the `add`
 instruction except it subtracts the two operands.
+
+To call a function, we use the `call` instruction. For example, to call our
+`sum` function with the arguments 3 and 5, we would do the following:
+
+```nasm
+mov rdi, 3  ; First argument in rdi
+mov rsi, 5  ; Second argument in rsi
+call sum
+; The rax register now contains the value 8
+```
