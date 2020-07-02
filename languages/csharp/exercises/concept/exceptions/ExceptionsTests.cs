@@ -18,7 +18,7 @@ public class SimpleCalculatorTests
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Addition_that_overflows()
     {
-        Assert.Throws<ArgumentException>(() => SimpleCalculator.Calculate(Int32.MaxValue, 5, "+"));
+        Assert.Equal("The result of operation 2147483647 + 5 does not fit into integer type.", SimpleCalculator.Calculate(Int32.MaxValue, 5, "+"));
     }
 
     //Multiplication tests
@@ -37,7 +37,7 @@ public class SimpleCalculatorTests
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Multiplication_that_overflows()
     {
-        Assert.Throws<ArgumentException>(() => SimpleCalculator.Calculate(50_000, 50_000, "*"));
+        Assert.Equal("The result of operation 50000 * 50000 does not fit into integer type.", SimpleCalculator.Calculate(50_000, 50_000, "*"));
     }
 
     //Division tests
@@ -56,7 +56,7 @@ public class SimpleCalculatorTests
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Calculate_throws_exception_for_division_with_0()
     {
-        Assert.Throws<DivideByZeroException>(() => SimpleCalculator.Calculate(33, 0, "/"));
+        Assert.Equal("Division by zero is not allowed.", SimpleCalculator.Calculate(33, 0, "/"));      
     }
 
     // Invalid operator

@@ -9,48 +9,54 @@ static class SimpleCalculator
             switch(operation)
             {
                 case "+":
-                    result = Addition(operand1, operand2);
+                    result = Calculator.Addition(operand1, operand2);
                     break;
                 case "*":
-                    result = Multiplication(operand1, operand2);
+                    result = Calculator.Multiplication(operand1, operand2);
                     break;
                 case "/":
-                    result = Division(operand1, operand2);
+                    result = Calculator.Division(operand1, operand2);
                     break;
                 case "":
-                    throw new ArgumentException("Operation cannot be empty.");
+                    throw new ArgumentException("Operation cannot be empty.", operation);
                 case null:
-                    throw new ArgumentNullException("Operation cannot be null.");
+                    throw new ArgumentNullException(operation, "Operation cannot be null.");
                 default:
                     throw new ArgumentOutOfRangeException(operation, $"Operation {operation} does not exist");
             }
         }
-        catch(OverflowException e)
+        catch(OverflowException)
         {
-            throw new ArgumentException(e.ToString());
+            return $"The result of operation {operand1} {operation} {operand2} does not fit into integer type.";
+        }
+        catch(DivideByZeroException)
+        {
+            return "Division by zero is not allowed.";
         }
 
         return $"{operand1} {operation} {operand2} = {result}";
     }
+}
 
-    private static int Division(int operand1, int operand2)
+public static class Calculator
+{
+    public static int Division(int operand1, int operand2)
     {
         return operand1 / operand2;
     }
 
-    private static int Multiplication(int operand1, int operand2)
+    public static int Multiplication(int operand1, int operand2)
     {
         checked
         {
             return operand1 * operand2;
         }
     }
-    private static int Addition(int operand1, int operand2)
+    public static int Addition(int operand1, int operand2)
     {
         checked
         {
             return operand1 + operand2;
         }
     }
-
 }

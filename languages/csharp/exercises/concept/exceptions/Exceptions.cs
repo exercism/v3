@@ -6,18 +6,25 @@ static class SimpleCalculator
         throw new NotImplementedException();
     }
 
-    private static int Division(int operand1, int operand2)
+public static class Calculator
+{
+    public static int Division(int operand1, int operand2)
     {
-        throw new NotImplementedException();
+        return operand1 / operand2;
     }
 
-    private static int Multiplication(int operand1, int operand2)
+    public static int Multiplication(int operand1, int operand2)
     {
-        throw new NotImplementedException();
+        checked
+        {
+            return operand1 * operand2;
+        }
     }
-    private static int Addition(int operand1, int operand2)
+    public static int Addition(int operand1, int operand2)
     {
-        throw new NotImplementedException();
+        checked
+        {
+            return operand1 + operand2;
+        }
     }
-
 }
