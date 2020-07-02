@@ -24,7 +24,7 @@ On Mac and Linux these are:
 - London - Europe/London
 - Paris - Europe/Paris
 
-On Windows they are:
+On Windows, they are:
 
 - New York - Eastern Standard Time
 - London - GMT Standard Time
@@ -34,7 +34,7 @@ The date-time strings input are guaranteed to be valid.
 
 ```csharp
 Appointment.Schedule("7/25/2030 13:45:00", Location.Paris);
-// => {2030, 7, 25, 12, 45, 0}
+// => {2030, 7, 25, 11, 45, 0}
 ```
 
 ## 3. Provide alerts to clients at intervals before the appointment
@@ -57,7 +57,7 @@ Appointment.HasDaylightSavingChanged(new DateTime(2020, 3, 30, 14, 45, 0), Locat
 
 ## 5. Use the local date time format to enter appointments
 
-The Brits and the French are looking for a bit of respect so you have been tasked with creating an experimental routine to allow values to be entered in the default format for the location of the salon.
+In order that appointments can be made in a format familiar to the local staff you have been tasked with creating an experimental routine to allow dates and times to be entered in the default format for the location of the salon.
 
 Implement the `Appointment.NormalizeDateTime()` method that takes a well-formed date-time string in an format appropriate to the location and converts it into a `DateTime` object. No attempt is made to convert the date-time to UTC.
 

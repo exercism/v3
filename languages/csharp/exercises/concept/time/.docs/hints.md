@@ -5,15 +5,15 @@
 
 ## 1. Provide local time equivalents of UTC (Universal Coordinated Time) appointments for the administrators
 
-Look for a suitable `DateTime` member converting from UTC to local.
+Look for a suitable `DateTime` member converting from UTC to local time.
 
 ## 2. Schedule appointments in New York, London and Paris
 
-Use the [`TimeZoneInfo`][time-zone-info] class and select the appropriate time zone ids from the task instructions. Windows and OSX/Linux have different ids.
+Use the [`TimeZoneInfo`][time-zone-info] class and select the appropriate time zone ids from the task instructions. Remember that Windows and OSX/Linux have different ids.
 
 ## 3. Provide alerts to clients at intervals before the appointment
 
-One approach is to use [`TimeSpan`][time-span].
+One approach is to use [`TimeSpan`][time-span] to perform arithmetic on times.
 
 ## 4. If daylight savings has recently changed we send a message to clients reminding them.
 
