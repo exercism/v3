@@ -10,4 +10,4 @@
 
 ## Concepts
 
-- `resource-cleanup` with `IDisposable in C# and .NET.
+- `resource-cleanup` with `IDisposable` in C# and .NET.
