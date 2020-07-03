@@ -179,6 +179,17 @@
         "prerequisites": ["conditionals", "strings"]
       },
       {
+        "slug": "time",
+        "uuid": "61dd2e1c-94bb-4c92-95ad-6460a7677884",
+        "concepts": ["time", "timezone"],
+        "prerequisites": [
+          "conditionals-if",
+          "datetime",
+          "strings",
+          "switch-statements"
+        ]
+      },
+      {
         "slug": "user-defined-exceptions",
         "uuid": "1be577b0-95db-4c09-aff4-ddc68fb7520d",
         "concepts": ["user-defined-exceptions", "exception-filtering"],
