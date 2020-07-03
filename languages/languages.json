@@ -536,6 +536,26 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/resource-cleanup",
+          "slug": "resource-cleanup",
+          "concepts": [
+            {
+              "url": null,
+              "name": "resource-cleanup"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "exceptions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/inheritance.md",
+              "name": "inheritance"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/strings",
           "slug": "strings",
           "concepts": [
@@ -568,6 +588,38 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
               "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/time",
+          "slug": "time",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/time.md",
+              "name": "time"
+            },
+            {
+              "url": null,
+              "name": "timezone"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "conditionals-if"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/datetime.md",
+              "name": "datetime"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": null,
+              "name": "switch-statements"
             }
           ]
         },
