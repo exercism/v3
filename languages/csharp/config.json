@@ -66,6 +66,19 @@
         "prerequisites": ["conditionals", "strings"]
       },
       {
+        "slug": "equality",
+        "uuid": "116e0b8d-21f2-409f-abec-676da014a800",
+        "concepts": ["equality", "sets"],
+        "prerequisites": [
+          "classes",
+          "explicit-casts",
+          "generic-types",
+          "inheritance",
+          "interfaces",
+          "lists"
+        ]
+      },
+      {
         "slug": "flag-enums",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
         "concepts": ["bit-manipulation", "compound-assignment", "flag-enums"],
@@ -118,6 +131,24 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "object-initializers",
+        "uuid": "a9c3a1c9-19ee-45b2-8189-57e15870a051",
+        "concepts": ["object-initializers"],
+        "prerequisites": ["constructors", "dictionaries", "properties"]
+      },
+      {
+        "slug": "parameters",
+        "uuid": "f5c259fd-a404-432f-922d-781bde34fe08",
+        "concepts": ["parameters"],
+        "prerequisites": [
+          "conditionals",
+          "constructors",
+          "named-parameters",
+          "numbers",
+          "strings"
+        ]
+      },
+      {
         "slug": "properties",
         "uuid": "978bcc16-0c49-4328-92e9-79f6204ce350",
         "concepts": ["properties"],
@@ -136,6 +167,12 @@
         "prerequisites": ["numbers"]
       },
       {
+        "slug": "resource-cleanup",
+        "uuid": "e99221eb-eecb-4746-9ef6-cc62650e41e1",
+        "concepts": ["resource-cleanup"],
+        "prerequisites": ["exceptions", "inheritance"]
+      },
+      {
         "slug": "strings",
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
         "concepts": ["strings"],
@@ -146,6 +183,17 @@
         "uuid": "8bb88ab5-3cde-4ebd-8eef-03323ebfd700",
         "concepts": ["tuples"],
         "prerequisites": ["conditionals", "strings"]
+      },
+      {
+        "slug": "time",
+        "uuid": "61dd2e1c-94bb-4c92-95ad-6460a7677884",
+        "concepts": ["time", "timezone"],
+        "prerequisites": [
+          "conditionals-if",
+          "datetime",
+          "strings",
+          "switch-statements"
+        ]
       },
       {
         "slug": "user-defined-exceptions",
