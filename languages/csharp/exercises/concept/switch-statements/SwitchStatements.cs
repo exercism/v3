@@ -18,7 +18,7 @@ public enum Incident
 {
     RedCard,
     YellowCard,
-    Fowl,
+    Foul,
     Injury
 }
 
