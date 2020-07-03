@@ -2,7 +2,7 @@ Wikipedia describes a `switch` statement as "a type of selection control mechani
 
 The mechanism involves the following keywords: `switch`, `case`, `break` and `default`.
 
-At their simplest they test a primitive or string and make a decision based on its value. For example:
+At their simplest they test a primitive or string expression and make a decision based on its value. For example:
 
 ```csharp
 string direction = GetDirection();
@@ -33,6 +33,7 @@ switch(animal)
     case Cat cat when cat.Had8Lives():
         cat.IsCareful();
         cat.Meow();
+        break;
     case Cat cat:
         cat.Meow();
         break;
