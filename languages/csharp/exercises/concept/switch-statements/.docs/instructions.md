@@ -20,7 +20,7 @@ The player descriptions are as follows:
 Implement the static `PlayAnalyzer.OnField()` method to output a player description based on their shirt number.
 
 ```csharp
-PlayAnalizer.AnalyzeOnField(10);
+PlayAnalyzer.AnalyzeOnField(10);
 // => "striker"
 ```
 
@@ -42,9 +42,9 @@ The data comprises:
 - opposing managers (objects of type `Manager`) -> "the manager"
 
 ```csharp
-PlayAnalizer.OffField(Incident.RedCard);
+PlayAnalyzer.AnalyzeOffField(Incident.RedCard);
 // => "RedCard"
-PlayerAnalyzer.OffField(new Manager());
+PlayAnalyzer.AnalyzeOffField((new Manager());
 // => "the manager"
 ```
 
