@@ -4,4 +4,4 @@ The `TimeZoneInfo` class provides routines for handling the differences between 
 
 The `CultureInfo` class supports locale dependent date time formats.
 
-The `RuntimeInformation` class allows you to detect which operating system your code is executing on, Linux, Windows or OSX.
+To support cross-platform coding the `RuntimeInformation` class allows you to detect which operating system your code is executing on, Linux, Windows or OSX.
