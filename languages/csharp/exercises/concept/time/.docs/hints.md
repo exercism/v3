@@ -11,6 +11,8 @@ Look for a suitable `DateTime` member converting from UTC to local time.
 
 Use the [`TimeZoneInfo`][time-zone-info] class and select the appropriate time zone ids from the task instructions. Remember that Windows and OSX/Linux have different ids.
 
+The method [`RuntimeInformation.IsOSPlatform()`] is central to having code paths that target different operating systems.
+
 ## 3. Provide alerts to clients at intervals before the appointment
 
 One approach is to use [`TimeSpan`][time-span] to perform arithmetic on times.

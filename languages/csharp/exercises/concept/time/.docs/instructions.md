@@ -12,13 +12,11 @@ Appointment.ShowLocalTime(new DateTime(2030, 7, 25, 13, 45, 0));
 
 ## 2. Schedule appointments in New York, London and Paris
 
-Implement the static `Appointment.Shedule()` overload which takes a location and time string and returns the UTC time of the appointment.
-
 Salons are responsible for taking their own bookings. The time input is local to the location of the salon. For instance, if someone enters a time of 13:45 for the New York salon for an appointment, they would expect the client to turn up just after lunch. Similarly, if someone entered a time of 13:45 for the London salon they would also expect the client arrive just after lunch.
 
 It will help you to know the time zone id for New York, London and Paris.
 
-On Mac and Linux these are:
+On Mac (OSX) and Linux these are:
 
 - New York - America/New_York
 - London - Europe/London
@@ -29,6 +27,10 @@ On Windows, they are:
 - New York - Eastern Standard Time
 - London - GMT Standard Time
 - Paris - W. Europe Standard Time
+
+Implement the static `Appointment.Shedule()` overload which takes a location and time string and returns the UTC time of the appointment.
+
+The implementation of `Schedule()` will need to allow the code, once built, to be run on Linux, Windows and Mac. This is the first exercise where you need to be concerned about the operating system. It will be necessary to have separate code paths to accommodate the difference in the time zone ids as described above.
 
 The date-time strings input are guaranteed to be valid.
 
