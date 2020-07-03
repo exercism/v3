@@ -51,3 +51,8 @@ PlayAnalyzer.AnalyzeOffField((new Manager());
 ### 4. Where the manager has a name available we want that output instead of "the manager"
 
 Modify the `PlayAnalyzer.OffField()` method to output any name such as "Jürgen Klopp" if there is one. If there is no name then the `Manager.Name` property is guaranteed to be an empty string rather than null.
+
+```csharp
+PlayAnalyzer.AnalyzeOffField(new Manager("José Mário dos Santos Mourinho Félix", string.Empty))
+// =>
+```
