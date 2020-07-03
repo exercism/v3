@@ -167,6 +167,12 @@
         "prerequisites": ["numbers"]
       },
       {
+        "slug": "resource-cleanup",
+        "uuid": "e99221eb-eecb-4746-9ef6-cc62650e41e1",
+        "concepts": ["resource-cleanup"],
+        "prerequisites": ["exceptions", "inheritance"]
+      },
+      {
         "slug": "strings",
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
         "concepts": ["strings"],
