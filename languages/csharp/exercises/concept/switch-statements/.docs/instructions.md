@@ -54,5 +54,5 @@ Modify the `PlayAnalyzer.OffField()` method to output any name such as "Jürgen 
 
 ```csharp
 PlayAnalyzer.AnalyzeOffField(new Manager("José Mário dos Santos Mourinho Félix", string.Empty))
-// =>
+// => "José Mário dos Santos Mourinho Félix"
 ```
