@@ -43,11 +43,11 @@ Implement `Orm.Commit()` to commit the data. If the commit fails then clean up t
 ```csharp
 var orm = new Orm(new Database());
 orm.Begin();
-orm.Write("some data")
+orm.Write("some data");
 orm.Commit();
 // => database has an internal state of State.Closed
 orm.Begin();
-orm.Write("bad commit")
+orm.Write("bad commit");
 orm.Commit();
 // => database has an internal state of State.Closed
 ```
@@ -57,10 +57,10 @@ orm.Commit();
 Implement the `IDisposable` interface on the `Orm` class. The call is guaranteed to succeed.
 
 ```csharp
-var db = new Database()
+var db = new Database();
 var orm = new Orm(db);
 orm.Begin();
-orm.Write("some data")
+orm.Write("some data");
 orm.Dispose();
 // => database has an internal state of State.Closed
 ```
