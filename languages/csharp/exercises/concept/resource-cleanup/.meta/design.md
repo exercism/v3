@@ -11,3 +11,8 @@
 ## Concepts
 
 - `resource-cleanup` with `IDisposable` in C# and .NET.
+
+## Prerequisites
+
+- `exceptions`
+- `interfaces`: `IDisposable`
