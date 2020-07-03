@@ -1,4 +1,14 @@
-;;; instead of the example code here is a sketch of the test code with a stub implementation:
+(load "sameness.lisp")
+
+(ql:quickload :fiveam)
+(defpackage sameness-test
+  (:use :cl :fiveam :sameness)
+  (:export :run-tests))
+(in-package :sameness-test)
+
+(def-suite sameness-suite)
+(in-suite sameness-suite)
+
 (define-condition explosion () ())
 (define-condition sad-trombone () ())
 (define-condition victory ())
@@ -17,14 +27,5 @@
        do (when (apply key door) (signal behind-the-door))
        finally (signal 'sad-trombone))))
 
-(define-test maze-1-object-equality
+(test maze-1-object-equality ""
   (signals 'victory (run-maze 'maze-1 #'robot)))
-
-;; ==================== Implementation ====================
-
-(defun robot (maze-id)
-  (case maze-id
-    ;; add forms such as:
-    ;; (maze-id-13 #'equalp)
-
-    (t (constantly t))))
