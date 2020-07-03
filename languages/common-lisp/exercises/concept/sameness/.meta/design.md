@@ -2,7 +2,7 @@
 
 - Be familiar with `eq`, `eql`, `equal` and `equalp` and how each builds upon the previous.
 - Understand that `=` works for numbers and does some 'conversion' of numbers
-- Understand when *not* to use `eq`.
+- Understand when _not_ to use `eq`.
 - Know that most standard functions use `eql` for equality. (The exercise could use `find` or `position` for example).
 
 ## Out of scope
@@ -19,4 +19,4 @@
 - expressions
 - integers
 - symbols
-- conditionals (using `case` would be good for an exercise task)
+- conditionals (using `case` would be good for an exercise task)

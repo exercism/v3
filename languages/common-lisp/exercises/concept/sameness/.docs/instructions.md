@@ -6,7 +6,7 @@ Each maze is a series of doors and the robot will go through the first door that
 
 ## Maze the First: Object Equality
 
-In this maze the correct door is one that can only be opened with a predicate that finds if two objects are the *same* object.
+In this maze the correct door is one that can only be opened with a predicate that finds if two objects are the _same_ object.
 
 ## Maze the Second: Numbers
 
