@@ -26,7 +26,7 @@ PlayAnalyzer.AnalyzeOnField(10);
 
 ### 2. Raise an alert if an unknown shirt number is encountered.
 
-Modify the `PlayAnalyzer.OffFieldk()` method to throw an `ArgumentException` when a shirt number outside the range 1-11 is processed.
+Modify the `PlayAnalyzer.OffField()` method to throw an `ArgumentException` when a shirt number outside the range 1-11 is processed.
 
 ### 3. Extend the coverage to include off field activity
 
@@ -36,9 +36,9 @@ You receive a stream of data that has been cleaned. Your task is to analyse it a
 
 The data comprises:
 
-- shirt numbers (any integer) -> text as per on field analysis
-- free form text (any string) -> the text unchanged
-- incidents in play (enum Incident) -> "RedCard", "Fowl" etc.
+- shirt numbers (any `int`) -> text as per on field analysis
+- free form text (any `string`) -> the text unchanged
+- incidents in play (`Incident` enum) -> "RedCard", "Foul" etc.
 - opposing managers (objects of type `Manager`) -> "the manager"
 
 ```csharp

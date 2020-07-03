@@ -25,7 +25,7 @@ At their most sophisticated they introduce down casting `case <Type> <variable>:
 ```csharp
 Animal animal = GetAnimal();
 
-switch(animal)
+switch (animal)
 {
     case Dog dog:
         dog.Bark();
