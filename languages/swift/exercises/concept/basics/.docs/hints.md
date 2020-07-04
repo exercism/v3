@@ -15,7 +15,7 @@ You need to [define a constant](https://docs.swift.org/swift-book/LanguageGuide/
 ## 3. Calculate the preparation time in minutes
 
 - You need to [define a function](https://docs.swift.org/swift-book/LanguageGuide/Functions.html#ID159) with a single parameter.
-- You can use the [mathematical operator for multiplicaton](https://docs.swift.org/swift-book/LanguageGuide/Functions.html#ID63) to multiply values.
+- You can use the [mathematical operator for multiplication](https://docs.swift.org/swift-book/LanguageGuide/Functions.html#ID63) to multiply values.
 
 ## 4. Calculate the total working time in minutes
 
