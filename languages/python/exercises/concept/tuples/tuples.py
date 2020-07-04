@@ -14,6 +14,3 @@ def create_record(azara_record, rui_record):
 
 def clean_up(combined_record_group):
     pass
-
-def multiply_records(combined_record_group):
-    pass
