@@ -4,9 +4,6 @@ This is a work-in-progress document listing the concepts comprising the Common
 Lisp programming language. I'm currently using [this document][csharp-example]
 as template.
 
-A more formal, machine-readable version of this concept list exists as
-[concepts.csv][concepts]
-
 ## Concepts
 
 ### General
