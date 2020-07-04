@@ -24,6 +24,7 @@ A more formal, machine-readable version of this concept list exists as
   - Two Branch (`if`)
   - More Branches (`cond`, `case`)
 - [Constants][constants]
+- [Destructuring Assignment][destructuring]
 - [Enumeration][enumeration]
   - Loop Macro
   - Do (`do`, `do*`, `dotimes`, `dolist`)
@@ -70,6 +71,8 @@ A more formal, machine-readable version of this concept list exists as
 - Code as Data (`defmacro`, `` ` ``, `,`, `,@`)
 - Unique Symbols (`gensym`)
 - Reader Macros (`set-macro-character`, `#.` `#n=`, etc)
+- Symbol Macros (`define-symbol-macro`, `symbol-macrolet`)
+- Compiler Macros (`define-compiler-macro`)
 
 ### I/O
 
@@ -154,21 +157,24 @@ A more formal, machine-readable version of this concept list exists as
 | `sameness`               | `sameness`                                         | Has Issue   |
 | `sets`                   | `sets`                                             | Has Issue   |
 | `anonymous-functions`    | `anonymous-functions`                              | Has Issue   |
+| `code-as-data`           | `code-as-data`                                     | Has Issue   |
+| `structures`             | `structures`                                       | Has Issue   |
+| `hash-tables`            | `hash-tables`                                      | Has Issue   |
+| `multiple-values`        | `multiple-values`                                  | Has Issue   |
 |                          | `arrays`                                           | Not Started |
 |                          | `association-lists`                                | Not Started |
 |                          | `booleans`                                         | Not Started |
 |                          | `circular-lists`                                   | Not Started |
 |                          | `classes`                                          | Not Started |
-|                          | `code-as-data`                                     | Not Started |
+|                          | `compiler-macros`                                  | Not Started |
 |                          | `complex-numbers`                                  | Not Started |
+|                          | `destructuring-assignment`                         | Not Started |
 |                          | `conditions`                                       | Not Started |
 |                          | `generic-functions`                                | Not Started |
 |                          | `handlers`                                         | Not Started |
-|                          | `hash-tables`                                      | Not Started |
 |                          | `methods`                                          | Not Started |
 |                          | `multiple-dispatch`                                | Not Started |
 |                          | `multiple-inheritance`                             | Not Started |
-|                          | `multiple-values`                                  | Not Started |
 |                          | `objects`                                          | Not Started |
 |                          | `property-lists`                                   | Not Started |
 |                          | `rational-numbers`                                 | Not Started |
@@ -179,7 +185,7 @@ A more formal, machine-readable version of this concept list exists as
 |                          | `signalling`                                       | Not Started |
 |                          | `slots`                                            | Not Started |
 |                          | `streams`                                          | Not Started |
-|                          | `structures`                                       | Not Started |
+|                          | `symbol-macros`                                    | Not Started |
 |                          | `trees`                                            | Not Started |
 |                          | `unique-symbols`                                   | Not Started |
 |                          | `vectors`                                          | Not Started |
@@ -208,6 +214,7 @@ A more formal, machine-readable version of this concept list exists as
 [cons]: ../reference/types/cons.md
 [constants]: ../../../reference/concepts/constants.md
 [csharp-example]: ../../csharp/reference/README.md
+[destructuring]: ../../../reference/concepts/destructuring_assignment.md
 [enumeration]: ../../../reference/concepts/enumeration.md
 [expressions]: ../../../reference/concepts/expressions.md
 [floating-point-number]: ../../../reference/types/floating_point_number.md
