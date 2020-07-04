@@ -18,7 +18,7 @@ def captured_output():
 
 class TuplesTest(unittest.TestCase):
     def test_get_coordinate(self):
-        input_data = [('Scrimshaw Whale\'s Tooth', '2A'),
+        input_data = [("Scrimshaw Whale's Tooth", '2A'),
                                 ('Brass Spyglass', '4B'),
                                 ('Robot Parrot', '1C'),
                                 ('Glass Starfish', '6D'),
@@ -60,7 +60,7 @@ class TuplesTest(unittest.TestCase):
 
     def test_compare_records(self):
         input_data = [
-                                (('Scrimshaw Whale\'s Tooth', '2A'), ('Deserted Docks', ('2', 'A') ,'Blue')),
+                                (("Scrimshaw Whale's Tooth", '2A'), ('Deserted Docks', ('2', 'A') ,'Blue')),
                                 (('Brass Spyglass', '4B'), ('Abandoned Lighthouse', ('4', 'B') ,'Blue')),
                                 (('Robot Parrot', '1C'), ('Seaside Cottages', ('1', 'C') ,'Blue')),
                                 (('Glass Starfish', '6D'), ('Tangled Seaweed Patch', ('6', 'D'),'Orange')),
