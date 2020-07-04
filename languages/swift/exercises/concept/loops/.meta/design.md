@@ -19,10 +19,10 @@ This concept exercise should convey a basic understanding of how to perform loop
 
 ## Prerequisites
 
-- `basics`
 - `conditionals`
 - `arrays`
 - `strings`
+- `tuples`
 
 ## Representer
 
