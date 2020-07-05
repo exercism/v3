@@ -11,7 +11,6 @@
 
 - Logical operators apply to boolean values and yield a result of the same type as the operands. The right operand is evaluated conditionally.
 
-
 ## 3. Check if a signal action can be made
 
 - Logical operators execute in the order of their precedence (from highest to lowest): `!`, `&&`, `||`.
@@ -20,5 +19,3 @@
 [logical operators]: https://golang.org/ref/spec#Logical_operators
 [operators]: https://golang.org/ref/spec#Operators
 [truth table]: https://www.digitalocean.com/community/tutorials/understanding-boolean-logic-in-go
-
-

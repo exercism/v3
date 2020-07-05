@@ -1,6 +1,6 @@
 Booleans in Go are represented by the `bool` type, which values can be either `true` or `false`.
 
-Go supports three [boolean operators][logical operators]: `!` (NOT), `&&` (AND), and `||` (OR). 
+Go supports three [boolean operators][logical operators]: `!` (NOT), `&&` (AND), and `||` (OR).
 
 ```go
 true || false // => true
