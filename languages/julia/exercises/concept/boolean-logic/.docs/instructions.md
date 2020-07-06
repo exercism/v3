@@ -11,8 +11,6 @@ Having found the kidnappers, Annalyn considers which of the following actions sh
 
 You have four tasks: to implement the logic for determining if the above actions are available based on the state of the three characters found in the forest and whether Annalyn's pet dog is present or not.
 
-<!-- TODO: I feel like storing the state in a variable is usually not what you'd do in actual Julia code in this situation. I wonder if it would be better to define methods such as isawake(person::T) where {T<:Union{Prisoner, Knight, etc}} instead, and tell the student to not worry about their contents yet. That way, it would also be possible to define the later methods as cansignal(person::T). Boolean logic feels like something that should be covered fairly early on, so we can't expect types to be known at this point.-->
-
 ## Tasks
 
 ## 1. Check if the 'Fast Attack' action is possible
