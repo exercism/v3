@@ -5,6 +5,12 @@
             "exercism_username": "SaschaMann"
         }
     ],
+    "contributors": [
+        {
+            "github_username": "cmcaine",
+            "exercism_username": "cmcaine"
+        }
+    ],
     "language_versions": "≥1.0",
     "forked_from": ["javascript/boolean"]
 }
