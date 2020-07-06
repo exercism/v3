@@ -1,6 +1,6 @@
 Casting and type conversion are [are different ways of changing an expression from one data type to another][wiki-casting].
 
-The [C# documentation][type-testing-and-cast-operators] classifies type conversion as the use of the [as operator][as-operator]. Casting is defined as the use of the [cast operator][cast-operator].
+The [C# documentation][type-testing-and-cast-operators] classifies type conversion as the use of the [`as` operator][as-operator] or [`is` operator][is-operator]. Casting is defined as the use of the [cast operator][cast-operator].
 
 In C# very often, outside of the realm of numeric values and class hierarchies, you will have to make a conversion by calling some member of the "to" type such as [`Int32.Parse()`][int32-parse] which converts a string to an integer or by calling a member of the "from" type e.g. `object.ToString()`. Javascript and developers in other dynamic languages should be aware.
 
