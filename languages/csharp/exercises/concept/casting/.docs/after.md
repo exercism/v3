@@ -107,6 +107,12 @@ The [`as`][as-operator] keyword fulfills a similar function to `is` e.g. `var fo
 
 #### Custom Cast Operator
 
+Types can define their own custom explicit and implicit [cast operators][custom-casts]. See (cross-ref-tba) for coverage of this..
+
+Examples of [explicit][big-integer-explicit] and [implicit][big-integer-implicit] casts in the BCL is conversions from the `BigInteger` struct to and from other numeric types
+
+#### General
+
 - [Type testing and cast operators][type-testing-and-cast-operators]: introduction to type testing and casting.
 - [cast operator][cast-operator]: the cast operator.
 - [`is` operator][is-operator]: `is` operator reference.
@@ -126,3 +132,6 @@ The [`as`][as-operator] keyword fulfills a similar function to `is` e.g. `var fo
 [int32-parse]: https://docs.microsoft.com/en-us/dotnet/api/system.int32.parse?view=netcore-3.1
 [operator-overloading]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/operator-overloading
 [checked]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/checked
+[custom-casts]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/user-defined-conversion-operators
+[big-integer-implicit]: https://docs.microsoft.com/en-us/dotnet/api/system.numerics.biginteger.op_implicit?view=netcore-3.1
+[big-integer-explicit]: https://docs.microsoft.com/en-us/dotnet/api/system.numerics.biginteger.op_explicit?view=netcore-3.1
