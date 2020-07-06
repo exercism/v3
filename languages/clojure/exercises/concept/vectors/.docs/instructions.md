@@ -36,7 +36,6 @@ Implement the `inc-bird` function to increment today's count:
 Implement the `day-without-birds?` predicate function that returns `true` if there was a day at which zero birds visited the garden; otherwise, return `false`:
 
 ```clojure
-
 (day-without-birds? birds-per-day)
 ;;=> true
 ```
