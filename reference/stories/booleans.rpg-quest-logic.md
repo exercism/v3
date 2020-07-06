@@ -45,4 +45,4 @@ These are recommendations, not rules, for recurring terminology in the instructi
 [javascript-concept-booleans]: ../../languages/javascript/exercises/concept/booleans
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/booleans/.docs/instructions.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/booleans/.docs/instructions.md
-[implementation-julia]: ../../languages/julia/exercises/concept/booleans/.docs/instructions.md
+[implementation-julia]: ../../languages/julia/exercises/concept/boolean-logic/.docs/instructions.md
