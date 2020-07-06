@@ -19,9 +19,7 @@
                 "uuid": "05cfc609-3a14-479a-b6fa-6d2a53ad111c",
                 "slug": "boolean-logic",
                 "concepts": ["boolean-logic", "booleans"],
-                "prerequisites": [
-                    "functions-introduction"
-                ]
+                "prerequisites": ["functions-introduction"]
             },
             {
                 "uuid": "68001762-8a35-4494-9de4-624ca9efb5cd",
