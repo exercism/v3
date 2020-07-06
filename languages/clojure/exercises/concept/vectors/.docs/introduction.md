@@ -6,7 +6,9 @@ A `vector` in Clojure is a sequential, indexed, immutable collection of zero or 
 (def single-value-alternative (vector 5))
 (def three-values [a b c]
 ```
+
 Elements can be retrieved from a vector using an index. Clojure vectors are zero-based, meaning that the first element's index is always zero:
+
 ```clojure
 (def numbers [2 3 5])
 ;; Read value from vector
@@ -16,12 +18,16 @@ Elements can be retrieved from a vector using an index. Clojure vectors are zero
 (assoc numbers 2 9)
 ;;=> [2 3 9]
 ```
+
 The original vector is unchanged:
+
 ```clojure
 numbers
 ;;=> [2 3 5]
 ```
+
 To remember the updated value, we need to pass it along or capture it in a var:
+
 ```clojure
 (def updated-numbers
   (assoc numbers 2 9))
