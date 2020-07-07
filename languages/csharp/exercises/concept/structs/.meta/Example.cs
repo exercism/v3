@@ -10,8 +10,8 @@ public struct Coord
         Y = y;
     }
 
-    public ushort X {get; }
-    public ushort Y {get; }
+    public ushort X { get; }
+    public ushort Y { get; }
 }
 
 public struct Plot
@@ -24,10 +24,10 @@ public struct Plot
         BottomRight = bottomRight;
     }
 
-    public Coord TopLeft {get; }
-    public Coord TopRight {get; }
-    public Coord BottomLeft {get; }
-    public Coord BottomRight {get; }
+    public Coord TopLeft { get; }
+    public Coord TopRight { get; }
+    public Coord BottomLeft { get; }
+    public Coord BottomRight { get; }
 
     public ushort GetLongestSide()
     {

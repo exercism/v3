@@ -8,8 +8,8 @@ public struct Coord
         Y = y;
     }
 
-    public ushort X {get; }
-    public ushort Y {get; }
+    public ushort X { get; }
+    public ushort Y { get; }
 }
 
 public struct Plot
