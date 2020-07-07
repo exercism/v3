@@ -52,7 +52,7 @@ string toString = largeInt.ToString();       // "2147483647"
 int fromString_bad = Int32.Parse("forty two");     // FormatException is thrown
 ```
 
-See this [article][checked] for the checked keyword.
+See this [article][checked] for the _**checked**_ keyword.
 
 #### Type Conversion for types in a hierarchy
 
@@ -110,6 +110,19 @@ The [`as`][as-operator] keyword fulfills a similar function to `is` e.g. `var fo
 Types can define their own custom explicit and implicit [cast operators][custom-casts]. See (cross-ref-tba) for coverage of this..
 
 Examples of [explicit][big-integer-explicit] and [implicit][big-integer-implicit] casts in the BCL is conversions from the `BigInteger` struct to and from other numeric types
+
+#### Using `typeof`
+
+If you need to detect the precise type of an object then `is` may be a little too permissive as it will convert an object to a class or any of its base classes. `typeof` and `Object.GetType()` are the solution in this case.
+
+```csharp
+object o = new List<int>();
+
+o is ICollection<int> // true
+o.GetType() == typeof(ICollection<int>) // false
+o is List<int> // true
+o.GetType() == typeof(List<int>) // true
+```
 
 #### General
 
