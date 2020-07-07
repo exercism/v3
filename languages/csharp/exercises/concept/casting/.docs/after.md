@@ -34,20 +34,20 @@ float largeFloat = float.MaxValue;
 float smallFloat = 17.29f;
 
 // implicit cast
-int from_ushort = shortUnsignedInt;        // 65535
+int from_ushort = shortUnsignedInt;          // 65535
 float from_int = largeInt;                   // -21474836E+09
-int from_char = 'a';                       // 96
+int from_char = 'a';                         // 96
 
 // explicit cast
-uint from_largeInt = (uint)largeInt;           // 2147483647
+uint from_largeInt = (uint)largeInt;         // 2147483647
 uint from_neg = (uint)largeNegInt;           // 2147483648 or OverflowException is thrown (if checked)
-int from_smallFloat = (int) smallFloat;    // 17
-int from_largeFloat = (int) largeFloat;        // -2147483648 or OverflowException is thrown (if checked)
-char from_intc = (char) 32;                // ' '
-char from_invalid_int = (char) 0xdcbf;     // invalid char - no exception thrown
+int from_smallFloat = (int) smallFloat;      // 17
+int from_largeFloat = (int) largeFloat;      // -2147483648 or OverflowException is thrown (if checked)
+char from_intc = (char) 32;                  // ' '
+char from_invalid_int = (char) 0xdcbf;       // invalid char - no exception thrown
 
 // no cast available
-int fromString = Int32.Parse("42");        // 42
+int fromString = Int32.Parse("42");          // 42
 string toString = largeInt.ToString();       // "2147483647"
 int fromString_bad = Int32.Parse("forty two");     // FormatException is thrown
 ```
