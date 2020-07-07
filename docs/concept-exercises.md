@@ -155,7 +155,9 @@ For more information, watch [this video][video-meta-design.md] and check [this e
 This file contains meta information on the exercise:
 
 - The exercise's author(s) (required)
+  - Including reviewers if their reviews substantially change the exercise (to the extent where it feels like "you got there together")
 - The exercise's contributor(s) (optional)
+  - Including reviewers if their reviews are meaningful/actionable/actioned.
 - Which exercise(s) it was forked from (required if the exercise is forked)
 - Language version requirements (optional)
 

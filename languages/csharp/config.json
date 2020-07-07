@@ -179,6 +179,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "switch-statements",
+        "uuid": "eb9faaec-9754-4df1-8eb1-09ca0ad94665",
+        "concepts": ["switch-statements"],
+        "prerequisites": ["classes", "enums", "inheritance"]
+      },
+      {
         "slug": "tuples",
         "uuid": "8bb88ab5-3cde-4ebd-8eef-03323ebfd700",
         "concepts": ["tuples"],

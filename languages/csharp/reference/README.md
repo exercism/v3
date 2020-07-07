@@ -21,16 +21,16 @@ The core OO features a C# developer should know about are:
   - Constructors ✅ (exercise [`constructors`][exercise-constructors])
   - Destructors
   - Extension methods 📖 (issue [#1070](https://github.com/exercism/v3/issues/1070))
-  - Method arguments 📖 (issue [#1128](https://github.com/exercism/v3/issues/1128))
+  - Method arguments ✅ (exercise [`parameters`][exercise-parameters])
     - Named arguments 📖 (issue [#1128](https://github.com/exercism/v3/issues/1128))
-    - Out parameters 📖 (issue [#1128](https://github.com/exercism/v3/issues/1128))
+    - Out parameters ✅ (exercise [`parameters`][exercise-parameters])
     - [Optional arguments][optional_arguments] 📖 (issue [#1128](https://github.com/exercism/v3/issues/1128))
   - Method overloading ✅ (exercise [`method-overloading`][exercise-method-overloading])
     - operator overloading
   - Return values ✅ (exercise [`basics`][exercise-basics])
 - [Mutation][mutation] ✅ (exercise [`basics`][exercise-basics])
 - [Objects][objects] ✅ (exercise [`classes`][exercise-classes])
-  - Object initializers 📖 (issue [#1637](https://github.com/exercism/v3/issues/1637))
+  - Object initializers ✅ (exercise [`object-initializers`][exercise-object-initializers])
 - [Polymorphism][polymorphism] ✅ (exercise [`inheritance`][exercise-inheritance])
 - Properties ✅ (exercise [`properties`][exercise-properties])
 - [State][state] ✅ (exercise [`classes`][exercise-classes])
@@ -85,7 +85,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Conditionals
   - Boolean logic ✅ (exercise [`booleans`][exercise-booleans])
   - Conditionals: do-while 📖 (issue [#1631](https://github.com/exercism/v3/issues/1631))
-  - Conditionals: switch 📖 (issue [#1633](https://github.com/exercism/v3/issues/1633))
+  - Conditionals: switch ✅ (exercise [`switch-statments`][switch-statements])
   - Conditionals: while ✅ (exercise [`floating-point-numbers`][exercise-floating-point-numbers])
   - [Conditionals: if][conditionals] ✅ (exercise [`exercise-floating-point-numbers`][exercise-floating-point-numbers])
   - [Conditionals: ternary][conditionals] 📖 (issue [#1635](https://github.com/exercism/v3/issues/1635))
@@ -112,7 +112,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Reflection
 - Regular expressions 📖 (issue [#1638](https://github.com/exercism/v3/issues/1638))
 - Resources
-  - Resource cleanup (`IDisposable`) 📖 (issue [#1639](https://github.com/exercism/v3/issues/1639))
+  - Resource cleanup (`IDisposable`) ✅ (exercise [`resource-cleanup`][exercise-resource-cleanup])
   - Resource lifetime 📖 (issue [#1640](https://github.com/exercism/v3/issues/1640))
   - Resource passing (by reference/by value)
   - [Resource allocation][memory_allocation] 📖 (issue [#1018](https://github.com/exercism/v3/issues/1018))
@@ -149,7 +149,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
   - [Sets][set]
   - [Stacks][stack]
 - Dates ✅ (exercise [`datetimes`][exercise-datetimes])
-  - Time zones
+  - Time zones ✅ (exercise [`time`][exercise-time])
 - Delegates
 - dynamic
 - Enums ✅ (exercise [`enums`][exercise-enums])
@@ -166,7 +166,7 @@ While C# is primarily an OO language, lots of functional concepts have been adde
 - Streams
 - [Strings][string] ✅ (exercise [`strings`][exercise-strings])
 - Tasks
-- Time 📖 (issue [#1644](https://github.com/exercism/v3/issues/1644))
+- Time ✅ (exercise [`time`][exercise-time])
 - [Tuples][tuple] ✅ (exercise [`tuples`][exercise-tuples])
 
 ## Concept interpretation
@@ -184,6 +184,7 @@ The concept exercises use the following concepts:
 | `chars`                      | Know how to declare and use a `char`, its relationship to strings and unicode.                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | `classes`                    | Know what classes are. Know what encapsulation is. Know what fields are. Know how to create an object. Know how to update state through methods. Know about the `void` type.                                                                                                                                                                                                                                                                                                                          |
 | `conditionals`               | Know of the existence of the `if` conditional execution statement.                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `cross-platform`             | know how to have different code paths (selected at run-time) for Linux, Windows and Mac                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `custom-attributes`          | Know of the existence of the `Attribute` type. Know what attributes are for. Know how to define custom attributes. Know how to read attribute values at runtime. Know how to limit attribute usage.                                                                                                                                                                                                                                                                                                   |
 | `datetimes`                  | Know of the existence of the `DateTime` type. Know how to create a `DateTime` instance. Know how to get the current date. Know of the individual, date- and time-related properties. Know how to access the current date. Know how to compare dates. Know how to convert a `string` to a `DateTime` and vice versa                                                                                                                                                                                    |
 | `dictionaries`               | Know of the existence of the `Dictionary<TKey, TValue>` type. Know how to create an instance. Know how to add and remove items, look up values, check for existence of keys and enumerate contents.                                                                                                                                                                                                                                                                                                   |
@@ -200,12 +201,18 @@ The concept exercises use the following concepts:
 | `named-arguments`            | Know how to use named arguments.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | `nullability`                | Know of the existence of the `null` literal. Know what a `NullReferenceException` is and when it is thrown. Know how to compare a value to `null`. Know the difference between value and reference types regarding nullability, especially pre C# 8.0. Know how to define nullable reference and value types. Know about the null-related operators (`!`, `?`, `??`). Know about basic null checking by the compiler.                                                                                 |
 | `numbers`                    | Know of the existence of the two most commonly used number types, `int` and `double`, and understand that the former represents whole numbers, and the latter floating-point numbers. Know of basic operators such as multiplication, comparison and equality. Know how to convert from one numeric type to another. Know what implicit and explicit conversions are.                                                                                                                                 |
+| `object-initializers`        | Know how to initialize objects using object initialization syntax. Know how to initialize lists and dictionaries. Understand the relative advantages of constructors and initializers.                                                                                                                                                                                                                                                                                                                |
 | `optional-parameters`        | Know how to define optional parameters.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| `parameters`                 | know the difference between value and reference type parameters; know how to pass value types by reference using the `ref` and `out` modifiers.                                                                                                                                                                                                                                                                                                                                                       |
 | `properties`                 | Know what properties are and how they relate to fields and methods. Know what backing-field properties are. Know what auto-implemented properties are. Know what calculated properties are. Know how to use property accessors to customize visibility. Know how to define the different types of properties.                                                                                                                                                                                         |
-| `randomness`                 | know how to implement randomness with System.Random in C#; know that no seed is required; know that both integers and real numbers can be generated; know that once generated random numbers can be easily used for many purposes (including non-numeric ones).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| `randomness`                 | know how to implement randomness with System.Random in C#; know that no seed is required; know that both integers and real numbers can be generated; know that once generated random numbers can be easily used for many purposes (including non-numeric ones).                                                                                                                                                                                                                                       |
+| `resource-cleanup`           | Know how to clean up resources with `IDisposable` in C# and .NET. Understand the difference between managedd and unmanaged resources and the role of `IDisposable`.                                                                                                                                                                                                                                                                                                                                   |
 | `sets`                       | Know how to use hash sets `HashSet<T>` as provided by the .NET BCL. Understand the relationship with `Object.GetHashCode()` and the performance charateristics of hash sets.                                                                                                                                                                                                                                                                                                                          |
 | `StringBuilder`              | Know of the existence of the `StringBuilder` type. Know how to create a string using this type. Understand the performance advantages                                                                                                                                                                                                                                                                                                                                                                 |
 | `strings`                    | Know of the existence of the `string` type. Know how to create a string. Know of some basic methods (like finding the index of a character in a string, or returning a part the string). Know how to do basic string formatting.                                                                                                                                                                                                                                                                      |
+| `switch-statements`          | Know how to use switch statements                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `time`                       | Know how to use `DateTime` when time-of-day is important. Understand the difference between local time and Universal Coordinated Time). Understand the role of `CultureInfo` in parsing times. Understand arithmetic with `DateTime`s.                                                                                                                                                                                                                                                                |
+| `timezone`                   | Know about time zones and their ids. Be familiar with cross-platform issues. Know how to convert dates and times between time zones. Know how to detect daylight saving time.                                                                                                                                                                                                                                                                                                                         |
 | `tuples`                     | know what a tuple is; know how to define a tuple; know how to name tuple fields; know that tuples have structural equality; know how to deconstruct tuples; know that tuples are mutable.                                                                                                                                                                                                                                                                                                             |
 | `while-loops`                | Know how to write a `while` loop.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
@@ -267,8 +274,13 @@ The concept exercises use the following concepts:
 [exercise-method-overloading]: ../exercises/concept/method-overloading/.meta/design.md
 [exercise-nullability]: ../exercises/concept/nullability/.meta/design.md
 [exercise-numbers]: ../exercises/concept/numbers/.meta/design.md
+[exercise-object-initializers]: ../exercises/concept/object-initializers/.meta/design.md
+[exercise-parameters]: ../exercises/concept/parameters/.meta/design.md
 [exercise-properties]: ../exercises/concept/properties/.meta/design.md
 [exercise-randomness]: ../exercises/concept/equality/.meta/design.md
+[exercise-resource-cleanup]: ../exercises/concept/resource-cleanup/.meta/design.md
 [exercise-strings]: ../exercises/concept/strings/.meta/design.md
+[switch-statements]: ../exercises/concept/switch-statements/.meta/design.md
+[exercise-time]: ../exercises/concept/time/.meta/design.md
 [exercise-tuples]: ../exercises/concept/tuples/.meta/design.md
 [exercise-user-defined-exceptions]: ../exercises/concept/user-defined-exceptions/.meta/design.md
