@@ -4,11 +4,11 @@
 - Know how to do an explicit cast.
 - Know how to use `is` and `as` to cast types.
 - Know how to use the `typeof` operator.
+- Pattern matching on types.
 
 ## Out of scope
 
 - Custom explicit and implicit cast operators.
-- Pattern matching on types.
 - Memory and performance characteristics.
 
 ## Concepts
