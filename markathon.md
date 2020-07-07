@@ -28,7 +28,7 @@ It's worth investing in a few things to make the most of the day (these things a
 
 - Looking around the docs in https://github.com/exercism/v3/ (start at the README)
 - Scanning some of the issues in https://github.com/exercism/v3/issues to familiarise yourself with them
-- Looking through https://http://v3.exercism.io/ and understanding how that works, specifically the "Contribute" and "Create New Exercise" pages.
+- Looking through https://v3.exercism.io/ and understanding how that works, specifically the "Contribute" and "Create New Exercise" pages.
 - Watching these videos:
   - [4 ways that Exercism sucks (and how we're fixing them!)](https://www.youtube.com/watch?v=5Cj1Dr9m3GM)
   - [The Anatomy of a Concept Exercise](https://www.youtube.com/watch?v=gkbBqd7hPrA)
