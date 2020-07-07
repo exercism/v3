@@ -17,7 +17,6 @@ Implement the `today` function to return how many birds visited your garden toda
 
 ```clojure
 (def birds-per-day [2 5 0 7 4 1])
-
 (today birds-per-day)
 ;;=> 1
 ```
