@@ -31,7 +31,7 @@ new Weight(77.5, Unit.Kg).ToString();
 
 One of the main things to remember is that when one struct is assigned to a variable or passed as a parameter the values are copied across so changes to he original variable will not affect the copied one and vice versa. In summary, `struct`s are **value types**.
 
-This [article][class-or-struct]discusses the differences between `struct`s and `class`s. You will see from the article that `struct`s tend to be lightweight and [immutable][structs-immutable] although this guidance is not enforced (by default) by the compiler or runtime.
+This [article][class-or-struct] discusses the differences between `struct`s and `class`s. You will see from the article that `struct`s tend to be lightweight and [immutable][structs-immutable] although this guidance is not enforced (by default) by the compiler or runtime.
 
 There are a couple of things that you will come up against (and about which the compiler will remind you):
 
