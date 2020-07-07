@@ -9,7 +9,7 @@
 ## 2. Speculators can stake their claim by specifying a plot identified by its dimensions
 
 - `Object.GetHashCode()` is discussed [here][get-hash-code].
-- `HashSet<T>` is disussed [here][sets].
+- `HashSet<T>` is discussed [here][sets].
 
 ## 3. Check whether the current claim is the same as the last one.
 
