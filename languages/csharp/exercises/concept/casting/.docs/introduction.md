@@ -25,7 +25,7 @@ if (o is Random rand)
 }
 ```
 
-If you need to detect the precise type of an object then `is` may be a little too lenient as it will convert an object to a class or any of its base classes. `typeof` and `Object.GetType()` are the solution in this case.
+If you need to detect the precise type of an object then `is` may be a little too permissive as it will convert an object to a class or any of its base classes. `typeof` and `Object.GetType()` are the solution in this case.
 
 ```csharp
 object o = new List<int>();
