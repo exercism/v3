@@ -10,7 +10,12 @@ Note that implicit an explicit cast [operators][operator-overloading] (discussed
 
 C#'s type system is somewhat more strict than _C_'s or Javascript's and as a consequence, casting operations are more restricted. [Implicit casting][implicit-casts] takes place between two numeric types as long as the "to" type can preserve the scale and sign of the "from" type's value. Note in the documentation the exception for converting to real numbers where precision may be lost.
 
-There is no implicit conversion between `char` and `int` in either direction.
+An implicit cast is not signified by any special syntax. For example:
+
+```csharp
+int myInt = 1729;
+long myLong = myInt;
+```
 
 There is no implicit conversion of an numeric (or string) expression to `bool`.
 
@@ -20,7 +25,7 @@ An expression of type `char` can be implicitly cast to `int`. The cast in the op
 
 Where numeric types cannot be cast implicitly you can generally use the explicit cast [operator][cast-operator].
 
-Where the value being cast cannot be represented by the "to" type because it is insufficiently wide or there is a sign conflict then an overflow exception may be thrown in the case of integers or the "to" type variable may take a value of `Infinity`.
+Where the value being cast cannot be represented by the "to" type because it is insufficiently wide or there is a sign conflict then an overflow exception may be thrown in the case of integers or the "to" type variable may take a value of `Infinity` in the case of floats and doubles.
 
 An expression of type `int` can be explicitly cast to `char`. This may result in an invalid codepoint.
 

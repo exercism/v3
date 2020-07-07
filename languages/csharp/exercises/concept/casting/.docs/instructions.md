@@ -30,7 +30,7 @@ Team Support (interface)
 
 A complete implementation of the hierarchy is provide as part of the source.
 
-All data passed to the laminate maker has been validated and is guaraneed to be non-null.
+All data passed to the laminate maker has been validated and is guaranteed to be non-null.
 
 ## 1. Get display name for a member of the support team as long as they are staff members
 
@@ -44,7 +44,7 @@ lm.GetDisplayName(new Physio());
 // => "The Physio"
 ```
 
-## 1. As for Task 1 except that if the staff member is a member of the security team the text " Priority Personnel" should be displayed after their title
+## 1. As for Task 1 except that if the staff member is a member of the security team the text "Priority Personnel" should be displayed after their title
 
 Please modify the `laminateMaker.GetDisplayName()` method. It should behave as in Task 1 except that if there is a security alert (constructor argument is `true`) and the staff member is a member of the security team (either of type `Security` or one of its derivatives) then the text " Priority Personnel" should be displayed after the title.
 
