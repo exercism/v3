@@ -385,6 +385,12 @@
         "slug": "javascript",
         "exercise": "booleans",
         "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/booleans/.docs/instructions.md"
+      },
+      {
+        "track": "Julia",
+        "slug": "julia",
+        "exercise": "boolean-logic",
+        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/boolean-logic/.docs/instructions.md"
       }
     ]
   },
