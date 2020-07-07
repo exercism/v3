@@ -40,11 +40,11 @@ As a result of point 1 above there is no way for the developer of a `struct` to 
 
 #### Common structs
 
-In most code the most commonly used library `struct` is the [`DateTime`][date-time] type.
+You will see from the documentation that there is a close relationship between primitives and structs.  See [`Int32/int]`[int32], for an example.  A more conventional example of a `struct` is the type [`TimeSpan`][time-span].
 
-Instances of `DateTime` behave much like numbers with comparison operators `>` and `<` and arithmetic operators but unlike equality testing using `Equals()` there is no free-ride with the operators. You have to [implement][operators] them yourself.
+Instances of `TimeSpan` behave much like numbers with comparison operators `>` and `<` and arithmetic operators but unlike equality testing using `Equals()` method there is no free-ride with the operators. When you implement your own structs you have to [implement][operators] the operators yourself.
 
-One thing to note about `DateTime` is that it implements a number of interfaces. Although `struct`s cannot be derived from other `struct`s they can implement interfaces.
+One thing to note about `TimeSpan` is that it implements an interface. Although `struct`s cannot be derived from other `struct`s they can implement interfaces.
 
 #### Equality
 
