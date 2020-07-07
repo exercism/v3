@@ -1,6 +1,7 @@
 ;; Ensures that sameness.lisp and the testing library are always loaded
 (eval-when (:compile-toplevel :load-toplevel :execute)
-  (load "sameness")
+  ;; (load "sameness")
+  (load "./.meta/example.lisp")
   (ql:quickload :fiveam))
 
 ;; Defines the testing package with symbols from sameness and FiveAM in scope
@@ -16,27 +17,40 @@
 (def-suite sameness-suite)
 (in-suite sameness-suite)
 
-(define-condition explosion () ())
-(define-condition sad-trombone () ())
-(define-condition victory ())
+(defparameter +mazes+
+  '((:maze-1 . ((("wrong" "WRONG") . explosion)
+                ((2 2.0) . explosion)
+                ((lisp LISP) . victory)))
+    (:maze-2 . (((#\a #\A) . explosion)
+                ((#\a #\a) . victory)))
+    (:maze-3 . (((1.0 1) . explosion)
+                ((1.0 1.0) . victory))))
+  "Mazes are a sequence of pairs of DOORS and RESULTS. A DOOR is a sequence of
+things which will be given to the key. A RESULT is a condition to signal if the
+DOOR is opened by the key.")
 
-(defconstant +mazes+ '((maze-1 '((("wrong" . "WRONG") . explosion)
-                                 ((2 2.0) . explosion)
-                                 ((lisp LISP)) . victory))
-                       (maze-2 '(((#\a #\A) . explosion)
-                                 ((#\a #\a) . victory)))))
+(test the-maze-of-object-equality
+  (is (eq 'victory (run-maze :maze-1 #'sameness:robot))))
+
+;; tests that must use eql (numbers of same type, characters)
+(test the-maze-of-characters
+  (is (eq 'victory (run-maze :maze-2 #'sameness:robot))))
+(test the-maze-of-numbers
+  (is (eq 'victory (run-maze :maze-3 #'sameness:robot))))
+
+;; tests that must use equal (lists, arrays (eq), strings)
+
+;; tests that must use equalp (characters (case insensitive) arrays (numbers for
+;; example), strings (case insensitive))
+
 
 (defun run-maze (maze-id robot)
-  (let ((key (robot maze-id))
-        (maze (assoc maze-id +mazes+)))
-    (loop
-       for (door . behind-the-door) in maze
-       do (when (apply key door) (signal behind-the-door))
-       finally (signal 'sad-trombone))))
-
-(test maze-1-object-equality ""
-  (signals 'victory (run-maze 'maze-1 #'robot)))
-
+  "Utility function to run a particular maze (by MAZE-ID) with a particular ROBOT."
+  (let ((key (funcall robot maze-id))
+        (maze (cdr (assoc maze-id +mazes+))))
+    (loop for (door . behind-the-door) in maze
+          when (apply key door) do (return behind-the-door)
+            finally (return 'sad-trombone))))
 
 ;; Either provides human-readable results to the user or machine-readable
 ;; results to the test runner. The default upon calling `(run-tests)` is to
