@@ -1,5 +1,32 @@
 C# `struct`s are closely related `class`s. They have state and behavior. They can have the same kinds of members, constructors, methods, fields, properties, etc fields and properties can be simple types, `struct`s and reference types. `struct`s observe the same rules about scope, read/write rules and access levels.
 
+```csharp
+enum Unit
+{
+    Kg,
+    Lb
+}
+struct Weight
+{
+    private double count;
+    private Unit unit;
+
+    public Weight(double count, Unit unit)
+    {
+        this.count = count;
+        this.unit = unit;
+    }
+
+    public override string ToString()
+    {
+        return count.ToString() + unit.ToString();
+    }
+}
+
+new Weight(77.5, Unit.Kg).ToString();
+// => "77.6Kg"
+```
+
 One of the main things to remember is that when one struct is assigned to a variable or passed as a parameter the values are copied across so changes to he original variable will not affect the copied one and vice versa. In summary, `struct`s are **value types**.
 
 This [article][structs-patterns] discusses the differences between `struct`s and `class`s. You will see from the article that `struct`s tend to be lightweight and [immutable][structs-immutable] although this guidance is not enforced by the compiler or runtime.
@@ -21,9 +48,30 @@ One thing to note about `DateTime` is that it implements a number of interfaces.
 
 #### Equality
 
-Equality testing for `struct`s can often be much simpler than that for `class`s as it simply compares fields for equality by default. However, this [article][equality] describes how performance can be optimised by creating your own custom `Equals()` and `GetHashCode()` method as is often done with `class`s. The difference in the case of this exercise was about 20% in a not very rigorous comparison but that may be on the low side because all the fields are of the same type - see below.
+Equality testing for `struct`s can often be much simpler than that for `class`s as it simply compares fields for equality by default. There is no need to override `object.Equals()` (or `GetHashCode()`). Remember that if you are relying on `Object.GetHashCode()` you must still ensure that the fields involved in generating the hash code (i.e. all the fields) must not change while a hashed collection is use. Effectively, this means that structs used in this way should be immutable. See (cross-ref-tba).
 
-There are discussions on the [web][equality-performance] about speed improvements, where the `Equals()` method is not overriden, if all fields are of the same type. The difference in this exercise of including disparate fields was about 60%. This is not mentioned in Microsoft's documentation so that makes it an un-documented implementation detail and it should be exploited judiciously.
+On the other hand, this [article][equality] describes how performance can be optimised by creating your own custom `Equals()` and `GetHashCode()` method as is often done with `class`s. The difference in the case of this exercise was about 20% in a not very rigorous comparison but that may be on the low side because all the fields are of the same type - see below.
+
+There are discussions on the [web][equality-performance] about speed improvements, where the `Equals()` method is not overridden, if all fields are of the same type. The difference in this exercise of including disparate fields was about 60%. This is not mentioned in Microsoft's documentation so that makes it an un-documented implementation detail and it should be exploited judiciously.
+
+```csharp
+public bool Equals(Weight other)
+{
+    return count.Equals(other.count) && unit.Equals(other.unit);
+}
+
+public override bool Equals(object obj)
+{
+    return obj is Weight other && Equals(other);
+}
+
+public override int GetHashCode()
+{
+    return HashCode.Combine(count, unit);
+}
+```
+
+#### General
 
 - [structs][structs]: introduction to structs.
 - [class-or-struct][class-or-struct]: lists the guidelines for choosing between a struct and class.

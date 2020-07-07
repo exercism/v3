@@ -2,7 +2,7 @@ You have been tasked by the claims department of Isaacs Asteroid Exploration Co.
 
 Every time a new asteroid is ready for exploitation speculators are invited to stake their claim to a plot of land. The asteroid's land is divided into 4 sided plots. Speculators claim the land by specifying its dimensions.
 
-Your goal is to develop a performant system to handle the land rush that has in the past caused the web site to crash.
+Your goal is to develop a performant system to handle the land rush that has in the past caused the website to crash.
 
 The unit of measure is 100 meters but can be ignored in these tasks.
 

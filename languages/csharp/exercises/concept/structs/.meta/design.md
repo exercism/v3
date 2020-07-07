@@ -27,3 +27,4 @@ This Concepts Exercise's Concepts are:
 - `classes`: know how to define and work with classes.
 - `numbers`:
 - `sets`: know how to define and work with a `HashSet`
+- `signed-integers`/`integral-numbers`: for `ushort`

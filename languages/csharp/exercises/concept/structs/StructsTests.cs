@@ -12,7 +12,7 @@ public class StructsTests
         Assert.True(claimed);
     }
 
-    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    [Fact (Skip = "Remove this Skip property to run this test")]
     public void IsClaimed_no()
     {
         var ch = new ClaimsHandler();
@@ -21,7 +21,7 @@ public class StructsTests
         Assert.False(claimed);
     }
 
-    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    [Fact (Skip = "Remove this Skip property to run this test")]
     public void IsLastClaim_yes()
     {
         var ch = new ClaimsHandler();
@@ -31,7 +31,7 @@ public class StructsTests
         Assert.True(lastClaim);
     }
 
-    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    [Fact (Skip = "Remove this Skip property to run this test")]
     public void IsLastClaim_no()
     {
         var ch = new ClaimsHandler();
@@ -41,7 +41,7 @@ public class StructsTests
         Assert.False(lastClaim);
     }
 
-    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    [Fact (Skip = "Remove this Skip property to run this test")]
     public void GetLongestSide()
     {
         var ch = new ClaimsHandler();
@@ -50,43 +50,5 @@ public class StructsTests
         ch.StakeClaim(longer);
         ch.StakeClaim(shorter);
         Assert.Equal(longer, ch.GetClaimWithLongestSide());
-    }
-}
-
-namespace RemoveThisBeforeMerging
-{
-    using example;
-    using Xunit;
-
-    public class SpeedTest
-    {
-        private static readonly Random rand = new Random(1234567);
-        private Coord CreateRandomCoord()
-        {
-            return new Coord(
-                (ushort) rand.Next(0, 65536), (ushort) rand.Next(0, 65536));
-        }
-
-        private Plot CreateRandomPlot()
-        {
-            return new Plot(
-                CreateRandomCoord(),
-                CreateRandomCoord(),
-                CreateRandomCoord(),
-                CreateRandomCoord()
-            );
-        }
-
-        // 5.4 seconds without custom Equals, 4.3 seconds with custom Equals
-        // on barely loaded top-end IMac
-        [Fact /*(Skip = "Remove this Skip property to run this test")*/]
-        public void DoSpeedTest()
-        {
-            var claimsHandler = new ClaimsHandler();
-            for (int ii = 0; ii < 10_000_000; ii++)
-            {
-                claimsHandler.StakeClaim(CreateRandomPlot());
-            }
-        }
     }
 }
