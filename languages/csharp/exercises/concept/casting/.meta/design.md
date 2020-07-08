@@ -17,8 +17,6 @@
 
 ## Prequisites
 
-This Concept Exercise's prerequisites Concepts are:
-
 - `numbers`: know how to cast numbers and what explicit and implicit numeric casts are.
 - `inheritance`: work with inheritance to show when casting can be reasonably used.
 - `exceptions`: know about exceptions to understand what happens when an explicit cast fails.

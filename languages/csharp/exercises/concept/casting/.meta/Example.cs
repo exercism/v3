@@ -1,4 +1,3 @@
-
 public class SecurityPassMaker
 {
     public string GetDisplayName(TeamSupport support)
@@ -15,7 +14,7 @@ public class SecurityPassMaker
         }
         else
         {
-            return "Too Important for a Laminate";
+            return "Too Important for a Security Pass";
         }
     }
 }
@@ -34,7 +33,7 @@ public class Physio : Staff { public override string Title { get; } = "The Physi
 
 public class OffensiveCoach : Staff { public override string Title { get; } = "Offensive Coach"; }
 
-public class BoalKeepingCoach : Staff { public override string Title { get; } = "Goal Keeping Coach"; }
+public class GoalKeepingCoach : Staff { public override string Title { get; } = "Goal Keeping Coach"; }
 
 public class Security : Staff { public override string Title { get; } = "Security Team Member"; }
 
@@ -43,4 +42,3 @@ public class SecurityJunior : Security { public override string Title { get; } =
 public class SecurityIntern : Security { public override string Title { get; } = "Security Intern"; }
 
 public class PoliceLiaison : Security { public override string Title { get; } = "Police Liaison Officer"; }
-
