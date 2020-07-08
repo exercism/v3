@@ -4,7 +4,7 @@ The [C# documentation][type-testing-and-cast-operators] classifies type conversi
 
 In C# very often, outside of the realm of numeric values and class hierarchies, you will have to make a conversion by calling some member of the "to" type such as [`Int32.Parse()`][int32-parse] which converts a string to an integer or by calling a member of the "from" type e.g. `object.ToString()`. Javascript and developers in other dynamic languages should be aware.
 
-Note that implicit an explicit cast [operators][operator-overloading] (discussed in (cross-ref-tba)) are available which can bring fairly arbitrary casting to your own types.
+Note that implicit an explicit cast [operators][operator-overloading] (discussed in (TODO cross-ref-tba)) are available which can bring fairly arbitrary casting to your own types.
 
 #### Casting Primitive Types - Implicit
 
@@ -17,9 +17,9 @@ int myInt = 1729;
 long myLong = myInt;
 ```
 
-There is no implicit conversion of an numeric (or string) expression to `bool`.
+There is no implicit conversion of a numeric (or string) expression to `bool`.
 
-An expression of type `char` can be implicitly cast to `int`. The cast in the opposite direction must be explicit. Not all values of `int` are
+An expression of type `char` can be implicitly cast to `int`. The cast in the opposite direction must be explicit. Not all values of `int` are valid utf 16 chars.
 
 #### Casting Primitive Types - Explicit
 
@@ -27,7 +27,7 @@ Where numeric types cannot be cast implicitly you can generally use the explicit
 
 Where the value being cast cannot be represented by the "to" type because it is insufficiently wide or there is a sign conflict then an overflow exception may be thrown in the case of integers or the "to" type variable may take a value of `Infinity` in the case of floats and doubles.
 
-An expression of type `int` can be explicitly cast to `char`. This may result in an invalid codepoint.
+An expression of type `int` can be explicitly cast to `char`. This may result in an invalid `char`.
 
 #### Casting Primitive Types - Examples
 
@@ -45,7 +45,7 @@ int from_char = 'a';                         // 96
 
 // explicit cast
 uint from_largeInt = (uint)largeInt;         // 2147483647
-uint from_neg = (uint)largeNegInt;           // 2147483648 or OverflowException is thrown (if checked)
+uint from_neg = (uint) largeNegInt;           // 2147483648 or OverflowException is thrown (if checked)
 int from_smallFloat = (int) smallFloat;      // 17
 int from_largeFloat = (int) largeFloat;      // -2147483648 or OverflowException is thrown (if checked)
 char from_intc = (char) 32;                  // ' '
@@ -112,7 +112,7 @@ The [`as`][as-operator] keyword fulfills a similar function to `is` e.g. `var fo
 
 #### Custom Cast Operator
 
-Types can define their own custom explicit and implicit [cast operators][custom-casts]. See (cross-ref-tba) for coverage of this..
+Types can define their own custom explicit and implicit [cast operators][custom-casts]. See (TODO cross-ref-tba) for coverage of this..
 
 Examples of [explicit][big-integer-explicit] and [implicit][big-integer-implicit] casts in the BCL is conversions from the `BigInteger` struct to and from other numeric types
 

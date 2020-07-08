@@ -8,7 +8,7 @@ public class SecurityPassMaker
     }
 }
 
-/**** Please do not alter the code below ***#1#
+/**** Please do not alter the code below ****/
 
 public interface TeamSupport {string Title { get; } }
 
