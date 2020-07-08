@@ -39,6 +39,14 @@ It's worth investing in a few things to make the most of the day (these things a
 Those things should give you a feel for what we're trying to achieve with v3 and how it all works.
 But please **ask questions** :)
 
+## Useful references
+
+Here are some references to pages that might be useful:
+
+- [The implemented exercises](languages/README.md##implemented-concept-exercises)
+- [The stories used in exercises](reference/stories/README.md)
+- [The concepts used in exercises](reference/README.md#implemented-concepts)
+
 ## Track specific notes
 
 _Tracks can add specific notes here (for example, if tracks have specific goals or aims). Use `### $LANG` and free-write below :)_
