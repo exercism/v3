@@ -21,9 +21,3 @@
 - `for-loops`
 - `verbatim-strings`
 - `string-interpolation`
-
-## Representer
-
-Examine the extent to which regex patterns can or in fact need to be normalized [analyzer][analyzer].
-
-[representer]: https://github.com/exercism/csharp-representer
