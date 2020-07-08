@@ -25,6 +25,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "casting",
+        "uuid": "0d63645d-385a-43ea-b89e-448ed608f6ce",
+        "concepts": ["casting"],
+        "prerequisites": ["exceptions", "inheritance", "numbers"]
+      },
+      {
         "slug": "chars",
         "uuid": "e74c6cd6-add7-45d1-abcb-513418e9d2d0",
         "concepts": ["chars", "string-builder"],
@@ -165,6 +171,18 @@
         "uuid": "d8a43f1e-4ed0-4015-8307-fba1d9cdd117",
         "concepts": ["randomness"],
         "prerequisites": ["numbers"]
+      },
+      {
+        "slug": "regular-expressions",
+        "uuid": "c63bb75d-51bd-4d5d-b37d-88e53ee0da69",
+        "concepts": ["regular-expressions"],
+        "prerequisites": [
+          "arrays",
+          "for-loops",
+          "strings",
+          "string-interpolation",
+          "verbatim-strings"
+        ]
       },
       {
         "slug": "resource-cleanup",
