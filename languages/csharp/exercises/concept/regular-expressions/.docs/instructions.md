@@ -52,7 +52,7 @@ The literal string "password" may be in upper or lower case or any combination.
 Lines passed to the routine may or may not be valid as defined in task 1. We process them in the same way, whether or not they are valid.
 
 ```csharp
-string[] lines =
+string lines =
 {
     "[INF] passWord " + Environment.NewLine +
     "\"passWord\"" + Environment.NewLine +

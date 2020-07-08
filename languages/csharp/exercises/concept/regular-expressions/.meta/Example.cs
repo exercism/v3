@@ -1,5 +1,4 @@
 using System.Text.RegularExpressions;
-using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 
 public class LogParser
 {
@@ -27,8 +26,9 @@ public class LogParser
     {
         string pattern = @"end-of-Line\d+";
 
-        return Regex.Replace(line, pattern, string.Empty,
+        string str = Regex.Replace(line, pattern, string.Empty,
             RegexOptions.IgnoreCase);
+        return str;
     }
 
     public string[] ListLinesWithPasswords(string[] lines)
