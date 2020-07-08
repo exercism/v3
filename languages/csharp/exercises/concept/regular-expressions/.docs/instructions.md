@@ -29,7 +29,7 @@ lp.IsValidLine("[BOB] Any old text");
 
 ### 2. Split the log line
 
-A new team has joined the organization and you find their log files are using a strange separator for "fields". Instead of something sensible like a colon ":" they use a string such as "<--->" or "<=>" (because it's prettier) in fact any string that has a first character of "<" and a last character of ">" and any combination of the following "^\*=-" in between.
+A new team has joined the organization, and you find their log files are using a strange separator for "fields". Instead of something sensible like a colon ":" they use a string such as "<--->" or "<=>" (because it's prettier) in fact any string that has a first character of "<" and a last character of ">" and any combination of the following characters "^", "\*", "=" and "-" in between.
 
 Implement the `LogParser.SplitLogLine()` method that takes a line and returns an array of strings each of which contains a field.
 
@@ -41,20 +41,21 @@ lp.SplitLogLine("Section 1<===>Section 2<^-^>Section 3");
 
 ### 3. Count the number of lines containing a password
 
-It is important to find any passwords included in a file. These will be dealt with automatically but the team needs to know how about passwords occurred in quoted text so that they can be examined manually.
+A log line is considered to contain a password if it contains the literal string "password" followed by a space and then a word (the actual password).
+
+It is important to find any passwords included in a file. These will be dealt with automatically, but the team needs to know how about passwords occurred in quoted text so that they can be examined manually.
 
 Implement the `LogParser.CountQuotedPasswords()`method to provide an indication of the likely scale of the manual exercise.
 
-The "password" string may be in upper or lower case or any combination.
+The literal string "password" may be in upper or lower case or any combination.
 
-Lines passed to the routine may or may not be valid as defined in task 1. We process them in the same way whether or not they are valid.
+Lines passed to the routine may or may not be valid as defined in task 1. We process them in the same way, whether or not they are valid.
 
 ```csharp
 string[] lines =
 {
-    string.Empty,
-    "[INF] passWord ",
-    "\"passWord\"",
+    "[INF] passWord " + Environment.NewLine +
+    "\"passWord\"" + Environment.NewLine +
     "[INF] \"The secret password was added by the user\""
 };
 var lp = new LogParser();
