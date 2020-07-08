@@ -16,7 +16,9 @@ Tracks can also use their #maintaining-xxx tracks for track-specific discussions
 
 ## Aims of the day
 
-There are three aims to the day:
+The overarching aim of the day is to get each track to a baseline state that means on **future hackdays** there is a great basis for new contributors to work from. The intention has been to keep this first day relatively small, and then make the next one (maybe 4 weeks later) a larger affair.
+
+That overarching aim can be broken into three more tangible outcomes:
 
 1. Ensuring lots of people understand what we're trying to achieve with v3 and how everything works.
 2. Get each track in a shape where it can welcome contributors. This primiarly involves creating GitHub issues with the `type/new-exercise` label.
