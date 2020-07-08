@@ -22,7 +22,7 @@ public class Physio : Staff { public override string Title { get; } = "The Physi
 
 public class OffensiveCoach : Staff { public override string Title { get; } = "Offensive Coach"; }
 
-public class GgalKeepingCoach : Staff { public override string Title { get; } = "Goal Keeping Coach"; }
+public class GoalKeepingCoach : Staff { public override string Title { get; } = "Goal Keeping Coach"; }
 
 public class Security : Staff { public override string Title { get; } = "Security Team Member"; }
 
