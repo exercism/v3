@@ -2,25 +2,30 @@ package booleans
 
 import "testing"
 
+type charactersState struct {
+	desc            string
+	knightIsAwake   bool
+	archerIsAwake   bool
+	prisonerIsAwake bool
+	dogIsPresent    bool
+	expected        bool
+}
+
 func TestCanFastAttack(t *testing.T) {
-	tests := []struct {
-		name          string
-		knightIsAwake bool
-		expected      bool
-	}{
+	tests := []charactersState{
 		{
-			name:          "Knight is awake",
+			desc:          "Knight is awake",
 			knightIsAwake: true,
 			expected:      false,
 		},
 		{
-			name:          "Knight is sleeping",
+			desc:          "Knight is sleeping",
 			knightIsAwake: false,
 			expected:      true,
 		},
 	}
 	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
+		t.Run(tt.desc, func(t *testing.T) {
 			if got := CanFastAttack(tt.knightIsAwake); got != tt.expected {
 				t.Errorf("CanFastAttack(%v) = %v; want %v", tt.knightIsAwake, tt.knightIsAwake, tt.expected)
 			}
@@ -29,173 +34,214 @@ func TestCanFastAttack(t *testing.T) {
 }
 
 func TestCanSpy(t *testing.T) {
-	tests := []struct {
-		desc                      string
-		characterStateCombination []bool
-		expected                  bool
-	}{
+	tests := []charactersState{
 		{
-			desc:                      "All characters are sleeping",
-			characterStateCombination: []bool{false, false, false},
-			expected:                  false,
+			desc:            "All characters are sleeping",
+			knightIsAwake:   false,
+			archerIsAwake:   false,
+			prisonerIsAwake: false,
+			expected:        false,
 		},
 		{
-			desc:                      "knight is awake, archer and prisoner are sleeping",
-			characterStateCombination: []bool{true, false, false},
-			expected:                  true,
+			desc:            "knight is awake, archer and prisoner are sleeping",
+			knightIsAwake:   true,
+			archerIsAwake:   false,
+			prisonerIsAwake: false,
+			expected:        true,
 		},
 		{
-			desc:                      "knight and archer are awake, prisoner is sleeping",
-			characterStateCombination: []bool{true, true, false},
-			expected:                  true,
+			desc:            "knight and archer are awake, prisoner is sleeping",
+			knightIsAwake:   true,
+			archerIsAwake:   true,
+			prisonerIsAwake: false,
+			expected:        true,
 		},
 		{
-			desc:                      "knight and prisoner are awake, archer is sleeping",
-			characterStateCombination: []bool{true, false, true},
-			expected:                  true,
+			desc:            "knight and prisoner are awake, archer is sleeping",
+			knightIsAwake:   true,
+			archerIsAwake:   false,
+			prisonerIsAwake: true,
+			expected:        true,
 		},
 		{
-			desc:                      "knight and prisoner are awake, archer is sleeping",
-			characterStateCombination: []bool{true, false, true},
-			expected:                  true,
+			desc:            "knight and archer are sleeping, prisoner is awake",
+			knightIsAwake:   false,
+			archerIsAwake:   false,
+			prisonerIsAwake: true,
+			expected:        true,
 		},
 		{
-			desc:                      "knight and archer are sleeping, prisoner is sleeping",
-			characterStateCombination: []bool{false, false, true},
-			expected:                  true,
-		},
-		{
-			desc:                      "all characters are awake",
-			characterStateCombination: []bool{true, true, true},
-			expected:                  true,
+			desc:            "all characters are awake",
+			knightIsAwake:   true,
+			archerIsAwake:   true,
+			prisonerIsAwake: true,
+			expected:        true,
 		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.desc, func(t *testing.T) {
-			if got := CanSpy(tt.characterStateCombination[0], tt.characterStateCombination[1], tt.characterStateCombination[2]); got != tt.expected {
-				t.Errorf("CanSpy(%v) = %v; want %v", tt.characterStateCombination, got, tt.expected)
+			if got := CanSpy(tt.knightIsAwake, tt.archerIsAwake, tt.prisonerIsAwake); got != tt.expected {
+				t.Errorf("CanSpy(%v, %v, %v) = %v; want %v", tt.knightIsAwake, tt.archerIsAwake, tt.prisonerIsAwake, got, tt.expected)
 			}
 		})
 	}
 }
 
 func TestCanSignalPrisoner(t *testing.T) {
-	tests := []struct {
-		desc                      string
-		characterStateCombination []bool
-		expected                  bool
-	}{
+	tests := []charactersState{
 		{
-			desc:                      "All characters are sleeping",
-			characterStateCombination: []bool{false, false},
-			expected:                  false,
+			desc:            "All characters are sleeping",
+			archerIsAwake:   false,
+			prisonerIsAwake: false,
+			expected:        false,
 		},
 		{
-			desc:                      "archer is sleeping, prisoner is awake",
-			characterStateCombination: []bool{false, true},
-			expected:                  true,
+			desc:            "archer is sleeping, prisoner is awake",
+			archerIsAwake:   false,
+			prisonerIsAwake: true,
+			expected:        true,
 		},
 		{
-			desc:                      "archer is awake, prisoner is sleeping",
-			characterStateCombination: []bool{true, false},
-			expected:                  false,
+			desc:            "archer is awake, prisoner is sleeping",
+			archerIsAwake:   true,
+			prisonerIsAwake: false,
+			expected:        false,
 		},
 		{
-			desc:                      "All characters are awake",
-			characterStateCombination: []bool{true, true},
-			expected:                  false,
+			desc:            "All characters are awake",
+			archerIsAwake:   true,
+			prisonerIsAwake: true,
+			expected:        false,
 		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.desc, func(t *testing.T) {
-			if got := CanSignalPrisoner(tt.characterStateCombination[0], tt.characterStateCombination[1]); got != tt.expected {
-				t.Errorf("CanSignalPrisoner(%v) = %v; want %v", tt.characterStateCombination, got, tt.expected)
+			if got := CanSignalPrisoner(tt.archerIsAwake, tt.prisonerIsAwake); got != tt.expected {
+				t.Errorf("CanSignalPrisoner(%v, %v) = %v; want %v", tt.archerIsAwake, tt.prisonerIsAwake, got, tt.expected)
 			}
 		})
 	}
 }
 
 func TestCanFreePrisoner(t *testing.T) {
-	tests := []struct {
-		desc                      string
-		characterStateCombination []bool
-		expected                  bool
-	}{
+	tests := []charactersState{
 		{
-			desc:                      "All characters are sleeping. Dog is not present.",
-			characterStateCombination: []bool{false, false, false, false},
-			expected:                  false,
+			desc:            "All characters are sleeping. Dog is not present.",
+			knightIsAwake:   false,
+			archerIsAwake:   false,
+			prisonerIsAwake: false,
+			dogIsPresent:    false,
+			expected:        false,
 		},
 		{
-			desc:                      "All characters are sleeping. Dog is present.",
-			characterStateCombination: []bool{false, false, false, true},
-			expected:                  true,
+			desc:            "All characters are sleeping. Dog is present.",
+			knightIsAwake:   false,
+			archerIsAwake:   false,
+			prisonerIsAwake: false,
+			dogIsPresent:    true,
+			expected:        true,
 		},
 		{
-			desc:                      "knight and archer. Prisoner is awake. Dog is not present.",
-			characterStateCombination: []bool{false, false, true, false},
-			expected:                  true,
+			desc:            "knight and archer are sleeping. Prisoner is awake. Dog is not present.",
+			knightIsAwake:   false,
+			archerIsAwake:   false,
+			prisonerIsAwake: true,
+			dogIsPresent:    false,
+			expected:        true,
 		},
 		{
-			desc:                      "knight and archer. Prisoner is awake. Dog is present.",
-			characterStateCombination: []bool{false, false, true, true},
-			expected:                  true,
+			desc:            "knight and archer are sleeping. Prisoner is awake. Dog is present.",
+			knightIsAwake:   false,
+			archerIsAwake:   false,
+			prisonerIsAwake: true,
+			dogIsPresent:    true,
+			expected:        true,
 		},
 		{
-			desc:                      "knight is sleeping. archer is awake. Prisoner is sleeping. Dog is not present.",
-			characterStateCombination: []bool{false, true, false, false},
-			expected:                  false,
+			desc:            "knight is sleeping. archer is awake. Prisoner is sleeping. Dog is not present.",
+			knightIsAwake:   false,
+			archerIsAwake:   true,
+			prisonerIsAwake: false,
+			dogIsPresent:    false,
+			expected:        false,
 		},
 		{
-			desc:                      "knight is sleeping. archer is awake. Prisoner is sleeping. Dog is present.",
-			characterStateCombination: []bool{false, true, false, true},
-			expected:                  false,
+			desc:            "knight is sleeping. archer is awake. Prisoner is sleeping. Dog is present.",
+			knightIsAwake:   false,
+			archerIsAwake:   true,
+			prisonerIsAwake: false,
+			dogIsPresent:    true,
+			expected:        false,
 		},
 		{
-			desc:                      "knight is sleeping. archer is awake. Prisoner is awake. Dog is not present.",
-			characterStateCombination: []bool{false, true, true, false},
-			expected:                  false,
+			desc:            "knight is sleeping. archer is awake. Prisoner is awake. Dog is not present.",
+			knightIsAwake:   false,
+			archerIsAwake:   true,
+			prisonerIsAwake: true,
+			dogIsPresent:    false,
+			expected:        false,
 		},
 		{
-			desc:                      "knight is sleeping. archer is awake. Prisoner is awake. Dog is present.",
-			characterStateCombination: []bool{false, true, true, true},
-			expected:                  false,
+			desc:            "knight is sleeping. archer is awake. Prisoner is awake. Dog is present.",
+			knightIsAwake:   false,
+			archerIsAwake:   true,
+			prisonerIsAwake: true,
+			dogIsPresent:    true,
+			expected:        false,
 		},
 		{
-			desc:                      "knight is awake. archer is sleeping. Prisoner is awake. Dog is not present",
-			characterStateCombination: []bool{true, false, true, false},
-			expected:                  false,
+			desc:            "knight is awake. archer is sleeping. Prisoner is awake. Dog is not present",
+			knightIsAwake:   true,
+			archerIsAwake:   false,
+			prisonerIsAwake: true,
+			dogIsPresent:    false,
+			expected:        false,
 		},
 		{
-			desc:                      "knight is awake. archer is sleeping. Prisoner is awake. Dog is present",
-			characterStateCombination: []bool{true, false, true, true},
-			expected:                  true,
+			desc:            "knight is awake. archer is sleeping. Prisoner is awake. Dog is present",
+			knightIsAwake:   true,
+			archerIsAwake:   false,
+			prisonerIsAwake: true,
+			dogIsPresent:    true,
+			expected:        true,
 		},
 		{
-			desc:                      "knight is awake. archer is awake. Prisoner is sleeping. Dog is not present",
-			characterStateCombination: []bool{true, true, false, false},
-			expected:                  false,
+			desc:            "knight is awake. archer is awake. Prisoner is sleeping. Dog is not present",
+			knightIsAwake:   true,
+			archerIsAwake:   true,
+			prisonerIsAwake: false,
+			dogIsPresent:    false,
+			expected:        false,
 		},
 		{
-			desc:                      "knight is awake. archer is awake. Prisoner is sleeping. Dog is present",
-			characterStateCombination: []bool{true, true, false, true},
-			expected:                  false,
+			desc:            "knight is awake. archer is awake. Prisoner is sleeping. Dog is present",
+			knightIsAwake:   true,
+			archerIsAwake:   true,
+			prisonerIsAwake: false,
+			dogIsPresent:    true,
+			expected:        false,
 		},
 		{
-			desc:                      "knight is awake. archer is awake. Prisoner is awake. Dog is not present",
-			characterStateCombination: []bool{true, true, true, false},
-			expected:                  false,
+			desc:            "knight is awake. archer is awake. Prisoner is awake. Dog is not present",
+			knightIsAwake:   true,
+			archerIsAwake:   true,
+			prisonerIsAwake: true,
+			dogIsPresent:    false,
+			expected:        false,
 		},
 		{
-			desc:                      "knight is awake. archer is awake. Prisoner is awake. Dog is present",
-			characterStateCombination: []bool{true, true, true, true},
-			expected:                  false,
+			desc:            "knight is awake. archer is awake. Prisoner is awake. Dog is present",
+			knightIsAwake:   true,
+			archerIsAwake:   true,
+			prisonerIsAwake: true,
+			dogIsPresent:    true,
+			expected:        false,
 		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.desc, func(t *testing.T) {
-			if got := CanFreePrisoner(tt.characterStateCombination[0], tt.characterStateCombination[1], tt.characterStateCombination[2], tt.characterStateCombination[3]); got != tt.expected {
-				t.Errorf("CanSignalPrisoner(%v) = %v; want %v", tt.characterStateCombination, got, tt.expected)
+			if got := CanFreePrisoner(tt.knightIsAwake, tt.archerIsAwake, tt.prisonerIsAwake, tt.dogIsPresent); got != tt.expected {
+				t.Errorf("CanSignalPrisoner(%v,%v,%v,%v) = %v; want %v", tt.knightIsAwake, tt.archerIsAwake, tt.prisonerIsAwake, tt.dogIsPresent, got, tt.expected)
 			}
 		})
 	}

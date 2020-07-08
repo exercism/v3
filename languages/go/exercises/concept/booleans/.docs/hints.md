@@ -9,7 +9,7 @@
 
 ## 2. Check if a spy action can be made
 
-- Logical operators apply to boolean values and yield a result of the same type as the operands. The right operand is evaluated conditionally.
+- Logical operators are typically used to evaluate whether two or more expressions are true or not true.
 
 ## 3. Check if a signal action can be made
 

@@ -1,6 +1,10 @@
 Booleans in Go are represented by the predeclared boolean type `bool`, which values can be either `true` or `false`.
 It's a defined type.
 
+```go
+var a bool
+```
+
 Go supports three logical operators that can evaluate expressions down to Boolean values, returning either `true` or `false`.
 
 | Operator   | What it means                                 |
