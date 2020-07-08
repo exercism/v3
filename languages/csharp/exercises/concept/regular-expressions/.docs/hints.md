@@ -1,13 +1,7 @@
 ## General
 
-[regular expressions][regular-expressions] documentation describes regexes and the flavour built into the .NET libraries.
-[Regex][regex] documentation describing the built-in library class.
-
-This exercise addresses the parsing of log files.
-
-After a recent security review you have been asked to clean up the organisation's archived log files.
-
-All strings passed to the methods are guaranteed to be non-null and leading and without trailing spaces.
+- [regular expressions][regular-expressions] documentation describes regexes and the flavour built into the .NET libraries.
+- [Regex][regex] documentation describing the built-in library class.
 
 ### 1. Identify garbled log lines
 

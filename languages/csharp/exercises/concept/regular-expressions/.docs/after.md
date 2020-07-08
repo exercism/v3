@@ -19,7 +19,7 @@ In addition:
 
 Caveats:
 
-- The safest approach is to used named captures.
+- The safest approach is to use named captures.
 - Capture groups do generally occur in the `Groups` collection in the same order as they appear in the text.
 - `Groups[0]` appears to relate to the entire match.
 - `Groups[<capture name>].Value` is almost certainly what you are interested in. Individual captures (other than `Caputures[0]`) appear to be for intended for diagnostic purposes if they are present.
@@ -50,10 +50,12 @@ var pattern = $@"
 var rewrittenLine $"{grps[PREAMBLE].Value}{grps[PWTEXT].Value}{grps[SPACE].Value}{mask}{grps[POSTAMBLE].Value}"
 ```
 
+Another option of interest is `RegexOptions.Compiled` for [compiled][regex-compilation] regexes.
+
 #### General
 
-[regular expressions][regular-expressions] documentation describes regexes and the flavour built into the .NET libraries.
-[Regex][regex] documentation describing the built-in library class.
+- [regular expressions][regular-expressions] documentation describes regexes and the flavour built into the .NET libraries.
+- [Regex][regex] documentation describing the built-in library class.
 
 [regular-expressions]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference
 [regex]: https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex?view=netcore-3.1
@@ -61,3 +63,4 @@ var rewrittenLine $"{grps[PREAMBLE].Value}{grps[PWTEXT].Value}{grps[SPACE].Value
 [regex-comparison]: https://en.wikipedia.org/wiki/Comparison_of_regular-expression_engines
 [capture]: https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.capturecollection?view=netcore-3.1
 [regex-options]: https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regexoptions?view=netcore-3.1
+[regex-compilation]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/best-practices
