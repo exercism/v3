@@ -141,7 +141,7 @@ o.GetType() == typeof(List<int>) // true
 [type-testing-and-cast-operators]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast
 [is-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#is-operator
 [as-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#as-operator
-[cast-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#cast-operator-
+[cast-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#cast-expression
 [typeof-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#typeof-operator
 [type-conversion-exceptions]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions#type-conversion-exceptions-at-run-time
 [wiki-casting]: https://en.wikipedia.org/wiki/Type_conversion

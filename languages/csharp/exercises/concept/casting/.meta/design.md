@@ -15,7 +15,7 @@
 
 - `casting`: know what explicit and implicit casts are; know how to do an explicit cast; know how to use `is` and `as` to convert between types.
 
-## Prequisites
+## Prerequisites
 
 - `numbers`: know how to cast numbers and what explicit and implicit numeric casts are.
 - `inheritance`: work with inheritance to show when casting can be reasonably used.
