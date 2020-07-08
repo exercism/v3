@@ -19,11 +19,11 @@ Implement the `LogParser.IsValidLine()` method to return `false` if a string is 
 
 ```csharp
 var lp = new LogParser();
-lp.IsValidLine("[ERR] A good error here");
+lp.IsMatch("[ERR] A good error here");
 // => true
-lp.IsValidLine("Any old [ERR] text");
+lp.IsMatch("Any old [ERR] text");
 // => false
-lp.IsValidLine("[BOB] Any old text");
+lp.IsMatch("[BOB] Any old text");
 // => false
 ```
 
@@ -53,11 +53,10 @@ Lines passed to the routine may or may not be valid as defined in task 1. We pro
 
 ```csharp
 string lines =
-{
     "[INF] passWord " + Environment.NewLine +
     "\"passWord\"" + Environment.NewLine +
-    "[INF] \"The secret password was added by the user\""
-};
+    "[INF] \"The secret password was added by the user\"";
+
 var lp = new LogParser();
 lp.CountQuotedPasswords(lines);
 // => 2

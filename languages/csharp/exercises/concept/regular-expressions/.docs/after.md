@@ -47,7 +47,7 @@ var pattern = $@"
     $
   ";
 
-var rewrittenLine $"{grps[PREAMBLE].Value}{grps[PWTEXT].Value}{grps[SPACE].Value}{mask}{grps[POSTAMBLE].Value}"
+var rewrittenLine = $"{grps[PREAMBLE].Value}{grps[PWTEXT].Value}{grps[SPACE].Value}{mask}{grps[POSTAMBLE].Value}";
 ```
 
 Another option of interest is `RegexOptions.Compiled` for [compiled][regex-compilation] regexes.
