@@ -7,7 +7,7 @@ public class CastingTests
     public void DisplaySecurityPass_manager()
     {
         var lm = new SecurityPassMaker();
-        Assert.Equal("Too Important for a Laminate", lm.GetDisplayName(new Manager()));
+        Assert.Equal("Too Important for a Security Pass", lm.GetDisplayName(new Manager()));
     }
 
     [Fact /*(Skip = "Remove this Skip property to run this test")*/]

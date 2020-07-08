@@ -22,12 +22,12 @@ All data passed to the security pass maker has been validated and is guaranteed 
 
 ## 1. Get display name for a member of the support team as long as they are staff members
 
-Please implement the `SecurityPassMaker.GetDisplayName()` method. It should return the value of the `Title` field instances of all classes derived from `Staff` and, otherwise, "Too Important for a Laminate".
+Please implement the `SecurityPassMaker.GetDisplayName()` method. It should return the value of the `Title` field instances of all classes derived from `Staff` and, otherwise, "Too Important for a Security Pass".
 
 ```csharp
 var lm = new SecurityPassMaker();
 lm.GetDisplayName(new Manager());
-// => "Too Important for a Laminate"
+// => "Too Important for a Security Pass"
 lm.GetDisplayName(new Physio());
 // => "The Physio"
 ```
