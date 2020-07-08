@@ -2,7 +2,7 @@ This exercise addresses the parsing of log files.
 
 After a recent security review you have been asked to clean up the organisation's archived log files.
 
-All strings passed to the methods of guaranteed to be non-null and leading and trailing spaces are guaranteed to be removed.
+All strings passed to the methods are guaranteed to be non-null and leading and without trailing spaces.
 
 ### 1. Identify garbled log lines
 
@@ -31,15 +31,15 @@ lp.IsValidLine("[BOB] Any old text");
 
 A new team has joined the organization and you find their log files are using a strange separator for "fields". Instead of something sensible like a colon ":" they use a string such as "<--->" or "<=>" (because it's prettier) in fact any string that has a first character of "<" and a last character of ">" and any combination of the following "^\*=-" in between.
 
-Implement the `LogParser.SplitLogLIne()` method that takes a line and returns an array of strings each of which contains a field.
+Implement the `LogParser.SplitLogLine()` method that takes a line and returns an array of strings each of which contains a field.
 
 ```csharp
 var lp = new LogParser();
-lp.IsValidLine("Section 1<===>Section 2<^-^>Section 3");
+lp.SplitLogLine("Section 1<===>Section 2<^-^>Section 3");
 // => {"Section 1", "Section 2", "Section 3"}
 ```
 
-### 3. Count the number of lines containg a password
+### 3. Count the number of lines containing a password
 
 It is important to find any passwords included in a file. These will be dealt with automatically but the team needs to know how about passwords occurred in quoted text so that they can be examined manually.
 
