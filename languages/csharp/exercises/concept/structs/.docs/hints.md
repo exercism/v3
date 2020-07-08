@@ -8,12 +8,12 @@
 
 ## 2. Speculators can stake their claim by specifying a plot identified by its dimensions
 
-- `Object.GetHashCode()` is discussed [here][get-hash-code].
-- `HashSet<T>` is discussed [here][sets].
+- Hash codes are discussed [here][get-hash-code].
+- Sets are discussed [here][sets].
 
 ## 3. Check whether the current claim is the same as the last one.
 
-- `Object.Equals()` is discussed in this [article][equals]
+- Object equality is discussed in this [article][equals]
 
 [structs]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct
 [struct-instantiation]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct#instantiation-of-a-structure-type

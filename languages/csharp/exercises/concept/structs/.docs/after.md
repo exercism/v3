@@ -8,6 +8,7 @@ enum Unit
     Kg,
     Lb
 }
+
 struct Weight
 {
     private double count;
@@ -29,7 +30,7 @@ new Weight(77.5, Unit.Kg).ToString();
 // => "77.6Kg"
 ```
 
-One of the main things to remember is that when one struct is assigned to a variable or passed as a parameter the values are copied across so changes to he original variable will not affect the copied one and vice versa. In summary, `struct`s are **value types**.
+One of the main things to remember is that when one struct is assigned to a variable or passed as a parameter the values are copied across so changes to the original variable will not affect the copied one and vice versa. In summary, `struct`s are **value types**.
 
 This [article][class-or-struct] discusses the differences between `struct`s and `class`s. You will see from the article that `struct`s tend to be lightweight and [immutable][structs-immutable] although this guidance is not enforced (by default) by the compiler or runtime.
 
@@ -37,8 +38,9 @@ There are a couple of things that you will come up against (and about which the 
 
 1. Members of a `struct` cannot be initialized inline.
 2. A `struct` cannot be inherited
+3. A `struct` always has a default constructor even if a non-default one is provided, and you cannot provide an explicit parameterless constructor.
 
-As a result of point 1 above there is no way for the developer of a `struct` to prevent invalid instances from coming into existence.
+As a result of points 1 and 3 above there is no way for the developer of a `struct` to prevent invalid instances from coming into existence.
 
 #### Common structs
 
@@ -50,7 +52,7 @@ One thing to note about `TimeSpan` is that it implements an interface. Although 
 
 #### Equality
 
-Equality testing for `struct`s can often be much simpler than that for `class`s as it simply compares fields for equality by default. There is no need to override `object.Equals()` (or `GetHashCode()`). Remember that if you are relying on `Object.GetHashCode()` you must still ensure that the fields involved in generating the hash code (i.e. all the fields) must not change while a hashed collection is use. Effectively, this means that structs used in this way should be immutable. See (cross-ref-tba).
+Equality testing for `struct`s can often be much simpler than that for `class`s as it simply compares fields for equality by default. There is no need to override `object.Equals()` (or `GetHashCode()`). Remember that if you are relying on `Object.GetHashCode()` you must still ensure that the fields involved in generating the hash code (i.e. all the fields) must not change while a hashed collection is use. Effectively, this means that structs used in this way should be immutable. See (TODO cross-ref-tba).
 
 On the other hand, this [article][equality] describes how performance can be optimised by creating your own custom `Equals()` and `GetHashCode()` method as is often done with `class`s. The difference in the case of this exercise was about 20% in a not very rigorous comparison but that may be on the low side because all the fields are of the same type - see below.
 
