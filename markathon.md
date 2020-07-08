@@ -21,7 +21,7 @@ The overarching aim of the day is to get each track to a baseline state that mea
 That overarching aim can be broken into three more tangible outcomes:
 
 1. Ensuring lots of people understand what we're trying to achieve with v3 and how everything works.
-2. Get each track in a shape where it can welcome contributors. This primiarly involves creating GitHub issues with the `type/new-exercise` label.
+2. Get each track in a shape where it can welcome contributors. This primarily involves creating GitHub issues with the `type/new-exercise` label.
 3. Have as many people as possible create a Concept Exercise, so lots of people are familiar with the process.
 
 ## What you need to know
