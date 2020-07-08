@@ -19,7 +19,7 @@ object o = new Random();
 if (o is Random rand)
 {
     int ii = rand.Next();
-    // new, do something random
+    // now, do something random
 }
 ```
 
