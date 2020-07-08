@@ -1,14 +1,12 @@
 Casting and type conversion are different ways of changing an expression from one data type to another.
 
-An expression can be cast to another type with the cast operator `(<tupe>)`.
+An expression can be cast to another type with the cast operator `(<type>)`.
 
 ```csharp
 long l = 1000L;
-
 int i = (int)l;
 
 object o = new Random();
-
 Random r = (Random)o;
 ```
 

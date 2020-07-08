@@ -1,15 +1,10 @@
 using System;
 
-public class LaminateMaker
+public class SecurityPassMaker
 {
-    private bool securityAlert;
-    public LaminateMaker(bool securityAlert)
-    {
-        this.securityAlert = securityAlert;
-    }
     public string GetDisplayName(TeamSupport support)
     {
-        throw new NotImplementedException($"Please implement the LaminateMaker.GetDisplayName() method");
+        throw new NotImplementedException($"Please implement the SecurityPassMaker.GetDisplayName() method");
     }
 }
 

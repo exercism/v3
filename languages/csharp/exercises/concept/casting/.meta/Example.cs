@@ -1,17 +1,12 @@
 
-public class LaminateMaker
+public class SecurityPassMaker
 {
-    private bool securityAlert;
-    public LaminateMaker(bool securityAlert)
-    {
-        this.securityAlert = securityAlert;
-    }
     public string GetDisplayName(TeamSupport support)
     {
         if (support is Staff staff)
         {
             string priorityPersonnelText = string.Empty;
-            if (securityAlert && staff.GetType() == typeof(Security))
+            if (staff.GetType() == typeof(Security))
             {
                 priorityPersonnelText = " Priority Personnel";
             }
@@ -22,15 +17,6 @@ public class LaminateMaker
         {
             return "Too Important for a Laminate";
         }
-    }
-
-    public uint ConvertShirtNum(ulong shirtNum)
-    {
-        if (shirtNum > uint.MaxValue)
-        {
-            return 0u;
-        }
-        return (uint) shirtNum;
     }
 }
 
@@ -57,3 +43,4 @@ public class SecurityJunior : Security { public override string Title { get; } =
 public class SecurityIntern : Security { public override string Title { get; } = "Security Intern"; }
 
 public class PoliceLiaison : Security { public override string Title { get; } = "Police Liaison Officer"; }
+
