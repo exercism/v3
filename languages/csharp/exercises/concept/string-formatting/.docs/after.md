@@ -1,10 +1,10 @@
-Mechanisms for formatting strings are many and various in C#/.NET; everything from simple concatenation of objects through calls to the overridden `object.ToString()` method to use of , [`ICustomFormatter`][custom-formatter] (not covered in this exercise.
+Mechanisms for formatting strings are many and various in C#/.NET: everything from simple concatenation of objects through calls to the overridden `object.ToString()` method to use of [`ICustomFormatter`][custom-formatter] (not covered in this exercise.
 
-The two most common mechanism for formatting strings are [string interpolation][string-interpolation] and [String.Format()][string-format]. The [`StringBuilder`][string-builder] (cross-ref-tba) class can also be used to build up a string if there is complexity such as multiple lines involved.
+The two most common mechanisms for formatting strings are [string interpolation][string-interpolation] and [String.Format()][string-format]. The [`StringBuilder`][string-builder] (cross-ref-tba) class can also be used to build up a string if there is complexity such as multiple lines involved.
 
 #### Composite Formatting
 
-`String.Format()` takes a string (referred to in the documentation as a _composite format_) comprising fixed text comprising placeholders (known in the documentation as a _format item_) and a variable number of arguments. The return value resolves each _format item_ using the corresponding argument and combines the resolved values with the fixed text.
+`String.Format()` takes a string (referred to in the documentation as a _composite format_) comprising fixed text and placeholders (known in the documentation as a _format items_) and a variable number of arguments. The return value resolves each _format item_ using the corresponding argument and combines the resolved values with the fixed text.
 
 ```csharp
 string.Format("I had {0} bitcoins on {1}, the day I forgot my password.", 55.5, new DateTime(2010, 2, 25));
@@ -19,7 +19,7 @@ A fuller list of string producing methods that take advantage _composite formatt
 
 #### String Interpolation
 
-Interpolated strings are prefixed with a `$` and include run-time expressions enclosed in braces. The format item has the following syntax: `$"{<interpolationExpression>}"`. They do away with the need for a separate listg of arguments. The result is functionally equivalent to the `String.Format()` mechanism.
+Interpolated strings are prefixed with a `$` and include run-time expressions enclosed in braces. The format item has the following syntax: `$"{<interpolationExpression>[,<alignment>][:<formatString>]}"`. They do away with the need for a separate list of arguments. The result is functionally equivalent to the `String.Format()` mechanism.
 
 The expression can comprise anything in scope. _Alignment_ is the length of the "field" in which the text sits. If the _alignment_ is positive then the text is padded with spaces on the left and if it is negative then the padding is to the right of the text.
 
@@ -27,8 +27,7 @@ The expression can comprise anything in scope. _Alignment_ is the length of the 
 var loadsOf = 55.5;
 var thatDay = new DateTime(2010, 2, 25);
 $"I had {loadsOf} bitcoins on {thatDay}, the day I forgot my password.";
-// => "I had 55.5 bitcoins on 2/25/2010 00:00:00, the day I forgot my password." -
-// invariant culture
+// => "I had 55.5 bitcoins on 2/25/2010 00:00:00, the day I forgot my password." - invariant culture
 ```
 
 #### Format Items
@@ -37,27 +36,26 @@ The text in braces, placeholders in the case of the composite format and interpo
 
 A format item can comprise up to 3 parts. The first is the mandatory expression or argument placeholder as seen in the example code above. In addition, there is an optional alignment (introduced with a comma, ",") and an optional _format string_ (introduced with a colon ":").
 
-`{<interpolationExpression>[,<alignment>][:<formatString>]`
+`{<interpolationExpression>[,<alignment>][:<formatString>]}`
 
 The _alignment_ specifies the length of the "field" in which the text is placed, padded to the left with spaces if the alignment is negative or to the right if it is positive.
 
 The _format string_ specifies the shape of the text output such as whether thousands separators should be included for a number or whether the date part only of a `DateTime` object should be output.
 
-The following code illustrates display of the data portion of a `DateTime` object and a floating-point number in exponential form.
+The following code illustrates display of the date portion of a `DateTime` object and a floating-point number in exponential form.
 
 ```csharp
 var loadsOf = 55.5;
 var thatDay = new DateTime(2010, 2, 25);
 $"I had {loadsOf:E} bitcoins on {thatDay:d}, the day I forgot my password.";
-// => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password.
-// invariant culture
+// => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password. - invariant culture
 ```
 
-There is both standard and custom formatting for both numbers and dates. There is no vital difference between _custom_ and _standard_ except that you have a chance to compose custom format strings out of format letters.
+There is both standard and custom formatting for both numbers and dates. There is no vital difference between _custom_ and _standard_ except that you have a chance to compose custom format strings out of format letters. "custom" in this context has nothing to do with the `ICustomFormatter` interface which is used when developing your own custom formatters.
 
 #### BCl Formatters and Format Strings
 
-The Base Class Library (BCL) provides 4 formatters: `DateTimeFormatInfo`, `NumberFormatInfo` and `EnumFormatInfo`.
+The Base Class Library (BCL) provides 6 formatters: `DateTimeFormatInfo`, `NumberFormatInfo` and `EnumFormatInfo`.
 
 The various lists of _format strings_ are below:
 
@@ -70,7 +68,7 @@ The various lists of _format strings_ are below:
 
 Enumeration and GUID _format strings_ can be classed as _standard_.
 
- An attempt is made in the library to instill some consistency into _format strings_ (beyond the fact that they are represented as strings).  This push for consistency is found in the standard strings.  In reality as a developer you rarely care about the difference between standard and custom strings.  Although it is a good idea, if you are implementing formatters for your own classes to echo the existing standard strings if your classes appear to call for it, you can pretty well ignore the difference.
+An attempt is made in the library to instill some consistency into _format strings_ (beyond the fact that they are represented as strings). This push for consistency is found in the standard strings. In reality as a developer you rarely care about the difference between standard and custom strings. Although it is a good idea, if you are implementing formatters for your own classes to echo the existing standard strings if your classes appear to call for it, you can pretty well ignore the difference.
 
 #### Culture
 
@@ -83,9 +81,9 @@ Each thread has a default culture `Thread.CurrentThread.CurrentCulture` encapsul
 Verbatim strings allow multi-line strings. They are introduced with an @.
 
 ```csharp
-string str = "
+string str = @"
 See no wretched
-quotes sverywhere
+quotes everywhere
 ";
 ```
 
@@ -93,7 +91,7 @@ quotes sverywhere
 
 The mechanism that underpins formatting can be extended for your own types. It works as follows:
 
-`String.Format()` or `FormattableString.ToString()` calls `IFormattable.ToString()` on each of the _format items_ passing the _format string_ and an object implenting `IFormatProvider`.
+`String.Format()` or `FormattableString.ToString()` (related to string interpolation) calls `IFormattable.ToString()` on each of the _format items_ passing the _format string_ and an object implenting `IFormatProvider`.
 
 From its `ToString()` method the `IFormattable` object calls `IFormatProvider.GetFormat()` passing in its own type.
 
@@ -133,5 +131,5 @@ This [gentle introduction][custom-string-interpolation] to customizing string in
 [culture-info]: https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=netcore-3.1
 [composite-formatting]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/composite-formatting
 [custom-string-interpolation]: https://thomaslevesque.com/2015/02/24/customizing-string-interpolation-in-c-6/
-[enum-forat-strings]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/enumeration-format-strings
+[enum-format-strings]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/enumeration-format-strings
 [guid-format-strings]: https://docs.microsoft.com/en-us/dotnet/api/system.guid.tostring?view=netcore-3.1
