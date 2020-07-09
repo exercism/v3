@@ -84,11 +84,11 @@ True
 Implement the `create_record()` function that takes a `(treasure, coordinate)` pair from Azaras list and a `(location, coordinate, quadrant)` record from Ruis list and returns `(treasure, coordinate, location, coordinate, quadrant)` **if the coordinates match**. If the coordinats _do not_ match, return the string "not a match.". Re-format the coordinate as needed for accurate comparison.
 
 ```python
-create_record(('Brass Spyglass', '4B'),('Abandoned Lighthouse', ("4", "B"), 'Blue'))
->>> ('Brass Spyglass', '4B', 'Abandoned Lighthouse', ("4", "B"), 'Blue')
+>>> create_record(('Brass Spyglass', '4B'),('Abandoned Lighthouse', ("4", "B"), 'Blue'))
+('Brass Spyglass', '4B', 'Abandoned Lighthouse', ("4", "B"), 'Blue')
 
-create_record(('Brass Spyglass', '4B'),(("1", "C"), 'Seaside Cottages', 'blue'))
->>> "not a match."
+>>> create_record(('Brass Spyglass', '4B'),(("1", "C"), 'Seaside Cottages', 'blue'))
+"not a match."
 ```
 
 ## 5. "Clean up" & make a report of all records
