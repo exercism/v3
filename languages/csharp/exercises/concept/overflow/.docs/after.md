@@ -1,10 +1,25 @@
-The exercises show the behavior of various numeric types when they overflow, i.e. when their capacity is insufficient to contain the result of an computation such as an arithmetic operation or cast.
+The exercises show the behavior of various numeric types when they overflow, i.e. when their capacity is insufficient to contain the value resulting a computation such as an arithmetic operation or cast.
 
-- unsigned [integers][integral-numeric-types] (`byte`, `ushort`, `uint`, `ulong`) will wrap around to zero unless [broadly speaking][checked-compiler-setting] they appear within a [`checked`][checked-and-unchecked] block in which case an instance of `OverflowException` is thrown. `int` and `long` will behave similarly except that they wrap around to `int.MinValue` and `int.MaxValue` respectively.
+- unsigned [integers][integral-numeric-types] (`byte`, `ushort`, `uint`, `ulong`) will wrap around to zero unless [broadly speaking][checked-compiler-setting] they appear within a [`checked`][checked-and-unchecked] block in which case an instance of `OverflowException` is thrown. `int` and `long` will behave similarly except that they wrap around to `int.MinValue` and `long.minValue` respectively.
+
+```csharp
+var xx = new Random().Next();
+checked
+{
+    int expr = int.MaxValue * xx;
+}
+
+// or
+
+int expr2 = checked(int.MaxValue * xx);
+```
+
+- the `checked` state applies only to expressions directly in the block. Overflow states in called functions are not caught.
 - [`float` and `double`][floating-point-numeric-types] types will adopt a state of _infinity_ that can be tested wtih `float.IsInfinity()` etc.
 - Numbers of type [`decimal`][floating-point-numeric-types] will cause an instance of `OverflowException` to be thrown.
+- There is a corresponding `unchecked` keyword for circumstances where you want to reverse the effect of `checed` inside a `checked` block or when the compiler setting has been used.
 
-Overflows that occur without an exception being thrown can be problematic. It's generally true that the earlier an error condition can be reported the better.
+Overflows that occur without an exception being thrown can be problematic because it's generally true that the earlier an error condition can be reported the better.
 
 Problems with overflows for `int` and `float` can be mitigated by assigning the result to a variable of type `long`, `decimal` or `double`.
 
@@ -12,7 +27,7 @@ If large integers are essential to your code then using the [`BigInteger`][big-i
 
 Naturally there are occasions on which it is legitimate to allow an integer to wrap around particularly in the case of unsigned values. A classic case is that of hash codes that use the width of the integer as a kind of modulo.
 
-You will usually find in code bases that there is often no check where an `uint` or a `ulong` is used as an identifier. It is more trouble than its worth. This also applies where it is evident from the domain that only small values will be involved. But look at [this][computerphile-gangnam-style] for a cautionary tale.
+You will usually find in code bases that there is often no check where an `uint` or a `ulong` is used as an identifier because it is considered more trouble than its worth. This also applies where it is evident from the domain that no very large values will be involved. But, look at [this][computerphile-gangnam-style] for a cautionary tale.
 
 - [Integral numeric types][integral-numeric-types]: overview of the integral numeric types.
 - [Floating-point numeric types][floating-point-numeric-types]: overview of the floating-point numeric types.
