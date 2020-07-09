@@ -4,20 +4,25 @@ open System.Text
 open System.Text.Json
 open System.Text.Json.Serialization
     
-type Implementation =
+type ConceptExercise =
     { Exercise: string
       Track: string
-      Language: string }
+      Language: string
+      Concepts: string list }
     
 type ConceptCategory =
     | Concepts
     | Types
+    
+type ConceptDocument =
+    { Name: string
+      Category: ConceptCategory }
 
 type Concept =
     { Name: string
       Variations: string list
-      Category: ConceptCategory
-      Implementations: Implementation list }
+      Document: ConceptDocument list
+      Implementations: ConceptExercise list }
     
 module Parser =
     
@@ -38,7 +43,7 @@ module Parser =
     let private conceptVariations (concept: string): string list =
         let transformations =
             [fun (x: string) -> x.TrimEnd('s')
-             fun (x: string) -> x + "s"
+             fun (x: string) -> x.TrimEnd('s') + "s"
              fun (x: string) -> x.Replace("-", "_")
              fun (x: string) -> x.Replace("_", "-")]
 
@@ -74,54 +79,69 @@ module Parser =
         |> File.ReadAllText
         |> JsonSerializer.Deserialize<JsonTrack>
     
-    let private parseImplementationsOfTrack (languageDirectory: DirectoryInfo): Map<string, Implementation> =
+    let private parseConceptExercisesOfTrack (languageDirectory: DirectoryInfo): ConceptExercise[] =
         let jsonTrack = parseConfigJson languageDirectory        
-        let toImplementation (exercise: JsonConceptExercise): Implementation =
+        let toConceptExercise (exercise: JsonConceptExercise): ConceptExercise =
             { Exercise = exercise.Slug
               Track = languageDirectory.Name
-              Language = jsonTrack.Language }
+              Language = jsonTrack.Language
+              Concepts = Array.toList exercise.Concepts }
         
         jsonTrack.Exercises.Concept
-        |> Array.collect (fun exercise -> exercise.Concepts |> Array.map (fun concept -> (concept, toImplementation exercise)))
-        |> Map.ofArray
+        |> Array.map toConceptExercise
     
-    let private parseImplementations (languagesDirectory: DirectoryInfo) : Map<string, Implementation list> =
-        let trackImplementations =
+    let private parseConceptExercises (languagesDirectory: DirectoryInfo) : Map<string, ConceptExercise list> =
+        let exercises =
             languagesDirectory.EnumerateDirectories()
             |> Seq.filter hasConfigJsonFile
-            |> Seq.map parseImplementationsOfTrack
+            |> Seq.collect parseConceptExercisesOfTrack
         
-        trackImplementations
-        |> Seq.fold (fun acc elem ->
-            elem
-            |> Map.fold (fun acc key elem ->
-                match Map.tryFind key acc with
-                | Some implementations -> Map.add key (elem :: implementations) acc 
-                | None -> Map.add key [elem] acc) acc
-        ) Map.empty
+        exercises        
+        |> Seq.collect (fun exercise -> exercise.Concepts |> List.map (fun concept -> (concept, exercise)))
+        |> Seq.groupBy fst
+        |> Seq.map (fun (concept, exercises) -> (concept, exercises |> Seq.map snd |> Seq.toList))
+        |> Map.ofSeq
             
     let private conceptName (conceptFile: FileInfo): string = conceptFile.Name.Split('.').[0]
         
-    let private parseConcept (implementations: Map<string, Implementation list>) (category: ConceptCategory) (conceptFile: FileInfo): Concept =
-        let concept = conceptName conceptFile
-        let variations = conceptVariations concept
-        let implementations = variations |> Seq.tryPick (fun concept -> Map.tryFind concept implementations) |> Option.defaultValue List.empty
-        
-        { Name = concept
-          Category = category
-          Variations = variations
-          Implementations = implementations }
+    let private parseConceptDocument (category: ConceptCategory) (conceptFile: FileInfo): ConceptDocument =
+        { Name = conceptName conceptFile
+          Category = category }
 
-    let private parseConceptsOfCategory (referenceDirectory: DirectoryInfo) (languagesDirectory: DirectoryInfo) (category: ConceptCategory): Concept list =
-        let implementations = parseImplementations languagesDirectory
-        
+    let private parseConceptDocumentsOfCategory (referenceDirectory: DirectoryInfo) (category: ConceptCategory): ConceptDocument list =
         conceptFilesForCategory referenceDirectory category
-        |> List.map (parseConcept implementations category)
+        |> List.map (parseConceptDocument category)
+
+    let parseConceptDocuments (referenceDirectory: DirectoryInfo) : Map<string, ConceptDocument list> =
+        [Concepts; Types]
+        |> Seq.collect (fun category -> parseConceptDocumentsOfCategory referenceDirectory category)
+        |> Seq.groupBy (fun concept -> concept.Name)
+        |> Seq.map (fun (concept, documents) -> (concept, Seq.toList documents))
+        |> Map.ofSeq
     
     let parseConcepts (referenceDirectory: DirectoryInfo) (languagesDirectory: DirectoryInfo): Concept list =
-        [Concepts; Types]
-        |> Seq.collect (fun category -> parseConceptsOfCategory referenceDirectory languagesDirectory category)
-        |> Seq.sortBy (fun concept -> concept.Name)
+        let conceptExercises = parseConceptExercises languagesDirectory
+        let conceptDocuments = parseConceptDocuments referenceDirectory
+        
+        let mapKeys map = map |> Map.toSeq |> Seq.map fst
+        let conceptExerciseConcepts = mapKeys conceptExercises
+        let conceptDocumentConcepts = mapKeys conceptDocuments
+        let allConcepts = Seq.append conceptExerciseConcepts conceptDocumentConcepts
+  
+        let toConcept (concept: string) =        
+            let variations = conceptVariations concept
+            let tryFindByConcept map =
+                variations
+                |> Seq.tryPick (fun variation -> Map.tryFind variation map)
+                |> Option.defaultValue []
+            
+            { Name = concept
+              Variations = variations
+              Document = tryFindByConcept conceptDocuments
+              Implementations = tryFindByConcept conceptExercises }
+        
+        allConcepts
+        |> Seq.map toConcept
         |> Seq.toList
     
 module Markdown =
@@ -175,8 +195,11 @@ module Markdown =
         renderLine "Concept" "Implementations"
         renderLine "-" "-"
 
-        for concept in concepts do            
-            let conceptLink = sprintf "[`%s`](./%s/%s.md)" concept.Name (categoryDirectory concept.Category) concept.Name
+        for concept in concepts do
+            // TODO
+            
+//            let conceptLink = sprintf "[`%s`](./%s/%s.md)" concept.Name (categoryDirectory concept.Document) concept.Name
+            let conceptLink = sprintf "[`%s`](./%s/%s.md)" concept.Name (categoryDirectory ConceptCategory.Types) concept.Name
             let implementationLink implementation =
                 sprintf "[%s](../languages/%s/exercises/concept/%s/.docs/instructions.md)" implementation.Language implementation.Track implementation.Exercise
             let implementationLinks =
@@ -196,8 +219,9 @@ module Markdown =
             .AppendLine("This is a list of Concepts for which no exercise has yet been implemented:")
             .AppendLine() |> ignore
         
-        for concept in concepts do            
-            let conceptLink = sprintf "- [`%s`](./%s/%s.md)" concept.Name (categoryDirectory concept.Category) concept.Name
+        for concept in concepts do
+            // TODO
+            let conceptLink = sprintf "- [`%s`](./%s/%s.md)" concept.Name (categoryDirectory ConceptCategory.Concepts) concept.Name
             markdown.AppendLine(conceptLink) |> ignore
 
         markdown.AppendLine()
@@ -229,39 +253,48 @@ module Markdown =
 module Json =
     
     [<CLIMutable>]
-    type JsonImplementation =
+    type JsonConceptImplementation =
         { Url: string
           Exercise: string
           Track: string
           Language: string }
+    
+    [<CLIMutable>]
+    type JsonConceptDocument =
+        { Url: string
+          Name: string }
 
     [<CLIMutable>]
     type JsonConcept =
-        { Url: string
-          Name: string
+        { Name: string
           Variations: string[]
-          Implementations: JsonImplementation[] }
+          Documents: JsonConceptDocument[]
+          Implementations: JsonConceptImplementation[] }
         
     let private categoryDirectory (category: ConceptCategory) =
         match category with
         | Concepts -> "concepts"
         | Types -> "types"
     
-    let private implementationToJsonImplementation (implementation: Implementation): JsonImplementation =
-        { Url = sprintf "https://github.com/exercism/v3/tree/master/languages/%s/exercises/concept/%s" implementation.Track implementation.Exercise
-          Exercise = implementation.Exercise
-          Track = implementation.Track
-          Language = implementation.Language }
+    let private conceptExerciseToJsonImplementation (conceptExercise: ConceptExercise): JsonConceptImplementation =
+        { Url = sprintf "https://github.com/exercism/v3/tree/master/languages/%s/exercises/concept/%s" conceptExercise.Track conceptExercise.Exercise
+          Exercise = conceptExercise.Exercise
+          Track = conceptExercise.Track
+          Language = conceptExercise.Language }
+    
+    let private conceptToJsonConceptDocument (conceptDocument: ConceptDocument): JsonConceptDocument =
+        { Url = sprintf "https://github.com/exercism/v3/tree/master/reference/%s/%s.md" (categoryDirectory conceptDocument.Category) conceptDocument.Name
+          Name = conceptDocument.Name }
     
     let private conceptToJsonConcept (concept: Concept): JsonConcept =
-        { Url = sprintf "https://github.com/exercism/v3/tree/master/reference/%s/%s.md" (categoryDirectory concept.Category) concept.Name
-          Name = concept.Name
-          Variations = List.toArray concept.Variations
-          Implementations = List.map implementationToJsonImplementation concept.Implementations |> List.toArray }
+        { Name = concept.Name
+          Variations = Array.ofList concept.Variations
+          Documents = concept.Document |> List.map conceptToJsonConceptDocument |> Array.ofList
+          Implementations = concept.Implementations |> List.map conceptExerciseToJsonImplementation |> Array.ofList }
     
     let private renderToJson (concepts: Concept list): string =
         let jsonConcepts = List.map conceptToJsonConcept concepts
-        
+
         let options = JsonSerializerOptions()
         options.WriteIndented <- true
         options.PropertyNamingPolicy <- JsonNamingPolicy.CamelCase
