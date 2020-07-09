@@ -87,22 +87,6 @@ quotes everywhere
 ";
 ```
 
-#### Extensibility
-
-The mechanism that underpins formatting can be extended for your own types. It works as follows:
-
-`String.Format()` or `FormattableString.ToString()` (related to string interpolation) calls `IFormattable.ToString()` on each of the _format items_ passing the _format string_ and an object implenting `IFormatProvider`.
-
-From its `ToString()` method the `IFormattable` object calls `IFormatProvider.GetFormat()` passing in its own type.
-
-`IFormatProvider.GetFormat()` returns a formatter appropriate for that type (`DateTimeFormatInfo`, `NumberFormatInfo`, `EnumFormatInfo`, `GuidFormatInfo` or `ICustomFormatter`).
-
-In the case of dates, numbers, enums and GUIDs the format item object's `ToString()` method returns a fully formatted string. In the case of custom formatting the `ICustomFormatter.Format` carries out the formatting working with the value of the object itself, the _format string_ and the `IFormatProvider`.
-
-The results of all the calls to `IFormattable.ToString()` are concatenated with the fixed text to produce the final formatted string.
-
-This [gentle introduction][custom-string-interpolation] to customizing string interpolation is worth a read.
-
 #### Reference Material
 
 - [String interpolation][string-interpolation]: tutorial on how to use string interpolation.
