@@ -194,21 +194,20 @@ module Markdown =
             .AppendLine("This is a list of Concepts for which an exercise has been implemented:")
             .AppendLine() |> ignore
         
-        let renderLine conceptColumn implementationsColumn documentsColumn =
+        let renderLine conceptColumn implementationsColumn =
             markdown
-                .AppendFormat(sprintf "| %s | %s | %s |" conceptColumn implementationsColumn documentsColumn)
+                .AppendFormat(sprintf "| %s | %s |" conceptColumn implementationsColumn)
                 .AppendLine() |> ignore
         
-        renderLine "Concept" "Implementations" "Documents"
-        renderLine "-" "-" "-"
+        renderLine "Concept" "Implementations"
+        renderLine "-" "-"
 
         for concept in concepts |> List.sortBy (fun concept -> concept.Name) do
-            let conceptLink (conceptDocument: ConceptDocument) = sprintf "[`%s`](./%s/%s.md)" conceptDocument.Name (categoryDirectory conceptDocument.Category) conceptDocument.Name
-            let conceptLinks =
+            let conceptLink =
                 concept.Document
-                |> List.sortBy (fun conceptDocument -> conceptDocument.Name)
-                |> List.map conceptLink
-                |> String.concat ", "
+                |> List.tryHead
+                |> Option.map (fun conceptDocument -> sprintf "[`%s`](./%s/%s.md)" concept.Name (categoryDirectory conceptDocument.Category) conceptDocument.Name)
+                |> Option.defaultValue (sprintf "`%s`" concept.Name)
             
             let implementationLink implementation =
                 sprintf "[%s](../languages/%s/exercises/concept/%s/.docs/instructions.md)" implementation.Language implementation.Track implementation.Exercise
@@ -218,7 +217,7 @@ module Markdown =
                 |> List.map implementationLink
                 |> String.concat ", "
                         
-            renderLine concept.Name implementationLinks conceptLinks
+            renderLine conceptLink implementationLinks
 
         markdown.AppendLine()
     
