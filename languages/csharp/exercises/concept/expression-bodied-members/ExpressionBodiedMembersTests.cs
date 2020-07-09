@@ -1,62 +1,90 @@
-// This file was auto-generated based on version 1.2.0 of the canonical data.
-
+using System;
 using Xunit;
 
-public class SpaceAgeTest
+public class ExpressionBodiedMembersTests
 {
     [Fact]
-    public void Age_on_earth()
+    public void GetReading()
     {
-        var sut = new SpaceAge(1000000000);
-        Assert.Equal(31.69, sut.OnEarth(), precision: 2);
+        var ws = new WeatherStation();
+        ws.AcceptReading(new Reading(20m, 25m, 0.01m));
+        decimal[] expected = {20, 25, 0.01m};
+        decimal[] actual = {ws.LatestTemperature, ws.LatestPressure, ws.LatestRainfall};
+        Assert.Equal(expected, actual);
     }
 
-    [Fact(Skip = "")]
-    public void Age_on_mercury()
+    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    public void HasHistory_no()
     {
-        var sut = new SpaceAge(2134835688);
-        Assert.Equal(280.88, sut.OnMercury(), precision: 2);
+        var ws = new WeatherStation();
+        ws.AcceptReading(new Reading(20m, 25m, 0.01m));
+        Assert.False(ws.HasHistory);
     }
 
-    [Fact(Skip = "")]
-    public void Age_on_venus()
+    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    public void HasHistory_yes()
     {
-        var sut = new SpaceAge(189839836);
-        Assert.Equal(9.78, sut.OnVenus(), precision: 2);
+        var ws = new WeatherStation();
+        ws.AcceptReading(new Reading(20m, 25m, 0.01m));
+        ws.AcceptReading(new Reading(21m, 25m, 0.00m));
+        Assert.True(ws.HasHistory);
     }
 
-    [Fact(Skip = "")]
-    public void Age_on_mars()
+    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    public void ClearAll()
     {
-        var sut = new SpaceAge(2129871239);
-        Assert.Equal(35.88, sut.OnMars(), precision: 2);
+        var ws = new WeatherStation();
+        ws.AcceptReading(new Reading(20m, 25m, 0.01m));
+        ws.AcceptReading(new Reading(21m, 25m, 0.00m));
+        ws.ClearAll();
+        object[] expected = {false, 0m};
+        object[] actual = {ws.HasHistory, ws.LatestTemperature};
+        Assert.Equal(expected, actual);
     }
 
-    [Fact(Skip = "")]
-    public void Age_on_jupiter()
+    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    public void Outlook_exception()
     {
-        var sut = new SpaceAge(901876382);
-        Assert.Equal(2.41, sut.OnJupiter(), precision: 2);
+        var ws = new WeatherStation();
+        Assert.Throws<ArgumentException>(() => ws.Outlook);
     }
 
-    [Fact(Skip = "")]
-    public void Age_on_saturn()
+    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    public void Outlook_cool()
     {
-        var sut = new SpaceAge(2000000000);
-        Assert.Equal(2.15, sut.OnSaturn(), precision: 2);
+        var ws = new WeatherStation();
+        ws.AcceptReading(new Reading(7m, 7m, 0m));
+        Assert.Equal(Outlook.Cool, ws.Outlook);
     }
 
-    [Fact(Skip = "")]
-    public void Age_on_uranus()
+    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    public void Outlook_good()
     {
-        var sut = new SpaceAge(1210123456);
-        Assert.Equal(0.46, sut.OnUranus(), precision: 2);
+        var ws = new WeatherStation();
+        ws.AcceptReading(new Reading(55m, 7m, 0m));
+        Assert.Equal(Outlook.Good, ws.Outlook);
     }
 
-    [Fact(Skip = "")]
-    public void Age_on_neptune()
+    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    public void Outlook_warm()
     {
-        var sut = new SpaceAge(1821023456);
-        Assert.Equal(0.35, sut.OnNeptune(), precision: 2);
+        var ws = new WeatherStation();
+        ws.AcceptReading(new Reading(40m, 7m, 0m));
+        Assert.Equal(Outlook.Warm, ws.Outlook);
+    }
+
+    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    public void RunSelfTest_good()
+    {
+        var ws = new WeatherStation();
+        ws.AcceptReading(new Reading(40m, 7m, 0m));
+        Assert.Equal(State.Good, ws.RunSelfTest());
+    }
+
+    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    public void RunSelfTest_bad()
+    {
+        var ws = new WeatherStation();
+        Assert.Equal(State.Bad, ws.RunSelfTest());
     }
 }

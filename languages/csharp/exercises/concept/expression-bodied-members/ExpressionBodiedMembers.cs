@@ -1,56 +1,131 @@
-public class SpaceAge
+using System;
+using System.Collections.Generic;
+
+public class WeatherStation
 {
-    private const double EarthSeconds = 31557600;
-    private const double MercurySeconds = EarthSeconds * 0.2408467;
-    private const double VenusSeconds = EarthSeconds * 0.61519726;
-    private const double MarsSeconds = EarthSeconds * 1.8808158;
-    private const double JupiterSeconds = EarthSeconds * 11.862615;
-    private const double SaturnSeconds = EarthSeconds * 29.447498;
-    private const double UranusSeconds = EarthSeconds * 84.016846;
-    private const double NeptuneSeconds = EarthSeconds * 164.79132;
-    private readonly double seconds;
-    public SpaceAge(long seconds)
+    private Reading reading;
+    private List<DateTime> recordDates = new List<DateTime>();
+    private List<decimal> temperatures = new List<decimal>();
+
+    public void AcceptReading(Reading reading)
     {
-        this.seconds = seconds;
+        this.reading = reading;
+        recordDates.Add(DateTime.Now);
+        temperatures.Add(reading.Temperature);
     }
 
-    public double OnEarth()
+    public void ClearAll()
     {
-        return seconds / EarthSeconds;
+        this.reading = new Reading();
+        recordDates.Clear();
+        temperatures.Clear();
     }
 
-    public double OnMercury()
+    public decimal LatestTemperature
     {
-        return seconds / MercurySeconds;
+        get
+        {
+            return reading.Temperature;
+        }
     }
 
-    public double OnVenus()
+    public decimal LatestPressure
     {
-        return seconds / VenusSeconds;
+        get
+        {
+            return reading.Pressure;
+        }
     }
 
-    public double OnMars()
+    public decimal LatestRainfall
     {
-        return seconds / MarsSeconds;
+        get
+        {
+            return reading.Rainfall;
+        }
     }
 
-    public double OnJupiter()
+    public bool HasHistory
     {
-        return seconds / JupiterSeconds;
+        get
+        {
+            if (recordDates.Count > 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 
-    public double OnSaturn()
+    public Outlook Outlook
     {
-        return seconds / SaturnSeconds;
+        get
+        {
+            if (reading.Equals(new Reading()))
+            {
+                throw new ArgumentException();
+            }
+            else
+            {
+                if (reading.Pressure < 10m && reading.Temperature < 30m)
+                {
+                    return Outlook.Cool;
+                }
+                else if (reading.Temperature > 50)
+                {
+                    return Outlook.Good;
+                }
+                else
+                {
+                    return Outlook.Warm;
+                }
+            }
+        }
     }
 
-    public double OnUranus()
+    public State RunSelfTest()
     {
-        return seconds / UranusSeconds;
+        if (reading.Equals(new Reading()))
+        {
+            return State.Bad;
+        }
+        else
+        {
+            return State.Good;
+        }
     }
+}
 
-    public double OnNeptune()
+/*** Please do not modify this struct ***/
+public struct Reading
+{
+    public decimal Temperature { get; }
+    public decimal Pressure { get; }
+    public decimal Rainfall { get; }
+
+    public Reading(decimal temperature, decimal pressure, decimal rainfall)
     {
-        return seconds / NeptuneSeconds;
+        Temperature = temperature;
+        Pressure = pressure;
+        Rainfall = rainfall;
     }
+}
+
+/*** Please do not modify this enum ***/
+public enum State
+{
+    Good,
+    Bad
+}
+
+/*** Please do not modify this enum ***/
+public enum Outlook
+{
+    Cool,
+    Rainy,
+    Warm,
+    Good
 }
