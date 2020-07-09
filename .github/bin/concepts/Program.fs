@@ -36,17 +36,14 @@ module Parser =
           [<JsonPropertyName("exercises")>] Exercises: JsonExercises }
         
     let private conceptVariations (concept: string): string list =
-        let withoutTrailingS = concept.TrimEnd('s')
-        let snakeCase = withoutTrailingS.Replace("-", "_")
-        let withoutSpaces = withoutTrailingS.Replace(" ", "")
-        
-        [concept
-         sprintf "%s" withoutTrailingS
-         sprintf "%s" snakeCase         
-         sprintf "%s" withoutSpaces         
-         sprintf "%ss" withoutTrailingS
-         sprintf "%ss" snakeCase
-         sprintf "%ss" withoutSpaces]
+        let transformations =
+            [fun (x: string) -> x.TrimEnd('s')
+             fun (x: string) -> x + "s"
+             fun (x: string) -> x.Replace("-", "_")
+             fun (x: string) -> x.Replace("_", "-")]
+
+        transformations
+        |> List.fold (fun variations transformation -> List.map transformation variations |> List.append variations) [concept]
         |> List.distinct
 
     let private isConceptFile (file: FileInfo) =
