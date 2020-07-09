@@ -18,7 +18,7 @@ Interpolated strings are prefixed with a `$` and include run-time expressions en
 ```csharp
 var loadsOf = 55.5;
 var thatDay = new DateTime(2010, 2, 25);
-$"I had {loadsOf} bitcoins on {thatDay}, the day I forgot my password.";
+$"I had {loadsOf} bitcoins on {thatDay}, the day I forgot my password."
 // => "I had 55.5 bitcoins on 2/25/2010 00:00:00, the day I forgot my password." - invariant culture
 ```
 
@@ -39,12 +39,12 @@ The following code illustrates display of the data portion of a `DateTime` objec
 ```csharp
 var loadsOf = 55.5;
 var thatDay = new DateTime(2010, 2, 25);
-$"I had {loadsOf:E} bitcoins on {thatDay:d}, the day I forgot my password.";
+$"I had {loadsOf:E} bitcoins on {thatDay:d}, the day I forgot my password."
 // => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password. - invariant culture
 
 string.Format(
     "I had {0:E} bitcoins on {1:d}, the day I forgot my password.",
-    loadsOf, thatDay);
+    loadsOf, thatDay)
 // => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password. - invariant culture
 ```
 

@@ -26,7 +26,7 @@ The expression can comprise anything in scope. _Alignment_ is the length of the 
 ```csharp
 var loadsOf = 55.5;
 var thatDay = new DateTime(2010, 2, 25);
-$"I had {loadsOf} bitcoins on {thatDay}, the day I forgot my password.";
+$"I had {loadsOf} bitcoins on {thatDay}, the day I forgot my password."
 // => "I had 55.5 bitcoins on 2/25/2010 00:00:00, the day I forgot my password." - invariant culture
 ```
 
@@ -47,8 +47,14 @@ The following code illustrates display of the date portion of a `DateTime` objec
 ```csharp
 var loadsOf = 55.5;
 var thatDay = new DateTime(2010, 2, 25);
-$"I had {loadsOf:E} bitcoins on {thatDay:d}, the day I forgot my password.";
+$"I had {loadsOf:E} bitcoins on {thatDay:d}, the day I forgot my password."
 // => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password. - invariant culture
+
+string.Format(
+    "I had {0:E} bitcoins on {1:d}, the day I forgot my password.",
+    loadsOf, thatDay)
+// => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password. - invariant culture
+
 ```
 
 There is both standard and custom formatting for both numbers and dates. There is no vital difference between _custom_ and _standard_ except that you have a chance to compose custom format strings out of format letters. "custom" in this context has nothing to do with the `ICustomFormatter` interface which is used when developing your own custom formatters.
