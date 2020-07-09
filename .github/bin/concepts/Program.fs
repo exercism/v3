@@ -153,9 +153,6 @@ module Parser =
     
 module Markdown =
     
-    let private normalizeConcept (concept: string): string =
-        concept.Replace("_", "-")
-    
     let private categoryDirectory (category: ConceptCategory) =
         match category with
         | Concepts -> "concepts"
@@ -206,7 +203,7 @@ module Markdown =
         renderLine "-" "-" "-"
 
         for concept in concepts |> List.sortBy (fun concept -> concept.Name) do
-            let conceptLink conceptDocument = sprintf "[`%s`](./%s/%s.md)" concept.Name (categoryDirectory conceptDocument.Category) conceptDocument.Name
+            let conceptLink (conceptDocument: ConceptDocument) = sprintf "[`%s`](./%s/%s.md)" conceptDocument.Name (categoryDirectory conceptDocument.Category) conceptDocument.Name
             let conceptLinks =
                 concept.Document
                 |> List.sortBy (fun conceptDocument -> conceptDocument.Name)
@@ -238,7 +235,7 @@ module Markdown =
             |> List.sortBy (fun document -> document.Name)
         
         for document in documents do
-            let conceptLink = sprintf "- [`%s`](./%s/%s.md)" (normalizeConcept document.Name) (categoryDirectory document.Category) document.Name
+            let conceptLink = sprintf "- [`%s`](./%s/%s.md)" document.Name (categoryDirectory document.Category) document.Name
             markdown.AppendLine(conceptLink) |> ignore
 
         markdown.AppendLine()
