@@ -1,4 +1,4 @@
-You have moved to a new competitor in the billionaire space race, As you see from the task the team is starting with the fundamentals.
+You have moved to a new competitor in the billionaire space race. As you see from the task the team is starting with the fundamentals.
 
 Given an age in seconds, you need to calculate how old someone would be on:
 
@@ -16,5 +16,7 @@ be able to say that they're 31.69 Earth-years old.
 
 If you're wondering why Pluto didn't make the cut, go watch [this
 youtube video](http://www.youtube.com/watch?v=Z_2gbGXzFbs).
+
+## 1. Refactor the code
 
 In fact the task has already been coded, but the team lead feels that it could be improved by the judicious use of expression bodied members, so you have been asked to refactor the code ensuring that the existing tests will continue to pass.
