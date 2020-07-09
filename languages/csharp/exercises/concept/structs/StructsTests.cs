@@ -12,7 +12,7 @@ public class StructsTests
         Assert.True(claimed);
     }
 
-    [Fact (Skip = "Remove this Skip property to run this test")]
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void IsClaimed_no()
     {
         var ch = new ClaimsHandler();
@@ -21,7 +21,7 @@ public class StructsTests
         Assert.False(claimed);
     }
 
-    [Fact (Skip = "Remove this Skip property to run this test")]
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void IsLastClaim_yes()
     {
         var ch = new ClaimsHandler();
@@ -31,7 +31,7 @@ public class StructsTests
         Assert.True(lastClaim);
     }
 
-    [Fact (Skip = "Remove this Skip property to run this test")]
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void IsLastClaim_no()
     {
         var ch = new ClaimsHandler();
@@ -41,7 +41,7 @@ public class StructsTests
         Assert.False(lastClaim);
     }
 
-    [Fact (Skip = "Remove this Skip property to run this test")]
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void GetLongestSide()
     {
         var ch = new ClaimsHandler();
