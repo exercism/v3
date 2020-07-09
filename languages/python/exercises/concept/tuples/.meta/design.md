@@ -4,9 +4,9 @@
 - Create a tuple via constructor (tuple(_iterable_)) and/or literal (a,b,c or (a, b, c))
 - Understand that tuples are an **immutable data type** (like strings). Changing a tuple means creating a new copy.
 - Understand that tuples can contain other tuples. (e.g. tuples can be nested).
-- Create a new tuple from two or more previous tuples via concatenation using the **+** operator.
-- Iterate through a tuple using **`for item in`**.
-- Check for membership of an item in a given tuple using the **`in`** keyword.
+- Create a new tuple from two or more previous tuples via concatenation using the `+` operator.
+- Iterate through a tuple using `for item in`.
+- Check for membership of an item in a given tuple using the `in` keyword.
 - Understand that it is the comma in a sequence that makes a tuple, and that the () are optional, except for denoting an empty tuple or when omitting them creates ambiguity.
 
 ## Out of Scope
@@ -22,20 +22,16 @@
 
 ## Concepts
 
-- tuples
-- immutability
-- indexing
-- concatenation of type
-- iteration
+- `tuples`
 
 ## Prerequisites
 
-- bool (True/False)
-- for loops
-- functions
-- if keyword
-- in keyword
-- int
-- print
-- return keyword
-- str
+- `booleans`
+- `for-loops`
+- `functions`
+- `if-keyword`
+- `in-keyword`
+- `integers`
+- `print`
+- `return-keyword`
+- `strings`
