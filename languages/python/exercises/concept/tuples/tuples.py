@@ -1,10 +1,8 @@
-
 def get_coordinate(record):
     pass
 
 def convert_coordinate(coordinate):
     pass
-
 
 def compare_records(azara_record, rui_record):
     pass
