@@ -4,8 +4,6 @@ from tuples import get_coordinate, convert_coordinate, compare_records, create_r
 
 class TuplesTest(unittest.TestCase):
 
-    maxDiff = None
-
     def test_get_coordinate(self):
         input_data = [("Scrimshaw Whale's Tooth", '2A'),
                                 ('Brass Spyglass', '4B'),
@@ -94,7 +92,6 @@ class TuplesTest(unittest.TestCase):
 
         for item, result in zip(input_data, result_data):
             with self.subTest("make record if coordinates match", item=item, result=result):
-                #self.assertEqual.__self__.maxDiff = None
                 self.assertEqual(create_record(item[0], item[1]), result)
 
     def test_clean_up(self):
