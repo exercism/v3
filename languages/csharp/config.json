@@ -185,6 +185,18 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "structs",
+        "uuid": "1f43f015-fb34-49f6-bc77-7ab2234d90f2",
+        "concepts": ["structs"],
+        "prerequisites": [
+          "classes",
+          "inheritance",
+          "numbers",
+          "sets",
+          "signed-integers"
+        ]
+      },
+      {
         "slug": "switch-statements",
         "uuid": "eb9faaec-9754-4df1-8eb1-09ca0ad94665",
         "concepts": ["switch-statements"],
