@@ -1,10 +1,10 @@
 You are back working on the Orm (object Relationship Mapping) system introduced in (TODO cross-reference-tba).
 
-A ORM usage analysis shows that 95% of transactions are executed from within one calling method, and it has been decided that it would be more appropriate to have a single ORM method that opened, wrote and committed a transaction.
+Our ORM usage analysis shows that 95% of transactions are executed from within one calling method, and it has been decided that it would be more appropriate to have a single ORM method that opened, wrote and committed a transaction.
 
 The database has the following instance methods:
 
-- `Database.BeginTransaction()` starts a transaction on the database. If this is called when the database is not in a `Closed` state then an exception is thrown. If successful the internal state of the database will change to `TransactionStarted`.
+- `Database.BeginTransaction()` starts a transaction on the database.
 - `Database.Write(string data)` writes data to the database within the transaction. If it receives bad data an exception will be thrown. An attempt to call this method without `BeginTransction()` having been called will cause an exception to be thrown. If successful the internal state of the database will change to `DataWritten`.
 - `Database.Commit()` commits the transaction to the database. It may throw an exception if it can't close the transaction of if `Database.BeginTransaction()` had not been called.
 - A call to`Databse.Dispose()` will clean up the database if an exception is thrown during a transaction. This will change the state of the database to `Closed`.
@@ -19,9 +19,9 @@ Orm orm = new Orm(db);
 orm.Write("good write");
 // => database has an internal state of State.Closed
 orm.Write("bad write");
-// => database has an internal state of State.Closed
+// => an exception is thrown but database is left with an internal state of State.Closed
 orm.Write("bad commit");
-// => database has an internal state of State.Closed
+// => an exception is thrown but database is left with an internal state of State.Closed
 ```
 
 ## 2. Write to the database and return an indication of whether the write was successful to the caller.
