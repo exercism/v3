@@ -3,6 +3,7 @@ package _meta
 import "testing"
 
 func TestEmptyInterface(t *testing.T) {
+	t.Skip()
 	test := struct {
 		name string
 		want interface{}
@@ -18,17 +19,19 @@ func TestEmptyInterface(t *testing.T) {
 }
 
 func TestEmptyMap(t *testing.T) {
+	t.Skip()
 	test := struct {
 		name string
-		want map[int]int
+		want string
 	}{
-		"return nil",
-		nil,
+		"panics on assignment to entry because map is nil",
+		"panic: assignment to entry in nil map",
 	}
 	t.Run(test.name, func(t *testing.T) {
-		if got := EmptyMap(); got != test.want {
-			t.Errorf("EmptyMap returned %s, wanted %s", got, test.want)
-		}
+		defer func() { recover() }()
+		m := EmptyMap()
+		m[3] = 8
+		t.Errorf("%s - no panic, wanted %s", test.name, test.want)
 	})
 }
 
@@ -48,6 +51,7 @@ func TestEmptySlice(t *testing.T) {
 }
 
 func TestEmptyString(t *testing.T) {
+	t.Skip()
 	test := struct {
 		name string
 		want string
@@ -63,6 +67,7 @@ func TestEmptyString(t *testing.T) {
 }
 
 func TestEmptyChannel(t *testing.T) {
+	t.Skip()
 	test := struct {
 		name string
 		want chan int
@@ -78,6 +83,7 @@ func TestEmptyChannel(t *testing.T) {
 }
 
 func TestEmptyPointer(t *testing.T) {
+	t.Skip()
 	test := struct {
 		name string
 		want *int
@@ -93,6 +99,7 @@ func TestEmptyPointer(t *testing.T) {
 }
 
 func TestEmptyBool(t *testing.T) {
+	t.Skip()
 	test := struct {
 		name string
 		want bool
@@ -107,22 +114,24 @@ func TestEmptyBool(t *testing.T) {
 	})
 }
 
-func TestEmptyFunc(t *testing.T) {
-	test := struct {
-		name string
-		want func()
-	}{
-		"return nil",
-		nil,
-	}
-	t.Run(test.name, func(t *testing.T) {
-		if got := EmptyFunc(); got != test.want {
-			t.Errorf("EmptyFunc returned %s, wanted %s", got, test.want)
-		}
-	})
-}
+// func TestEmptyFunc(t *testing.T) {
+// 	t.Skip()
+// 	test := struct {
+// 		name string
+// 		want func()
+// 	}{
+// 		"return nil",
+// 		nil,
+// 	}
+// 	t.Run(test.name, func(t *testing.T) {
+// 		if got := EmptyFunc(); got != test.want {
+// 			t.Errorf("EmptyFunc returned %s, wanted %s", got, test.want)
+// 		}
+// 	})
+// }
 
 func TestEmptyInt(t *testing.T) {
+	t.Skip()
 	test := struct {
 		name string
 		want interface{}
