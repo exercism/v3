@@ -2023,24 +2023,6 @@
     "implementations": []
   },
   {
-    "name": "class",
-    "variations": ["class", "classes", "clas"],
-    "documents": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/reference/types/class.md",
-        "name": "class"
-      }
-    ],
-    "implementations": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/classes",
-        "exercise": "classes",
-        "track": "csharp",
-        "language": "C#"
-      }
-    ]
-  },
-  {
     "name": "collection",
     "variations": ["collection", "collections"],
     "documents": [
@@ -2153,24 +2135,6 @@
       }
     ],
     "implementations": []
-  },
-  {
-    "name": "dictionary",
-    "variations": ["dictionary", "dictionaries"],
-    "documents": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/reference/types/dictionary.md",
-        "name": "dictionary"
-      }
-    ],
-    "implementations": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/dictionaries",
-        "exercise": "dictionaries",
-        "track": "csharp",
-        "language": "C#"
-      }
-    ]
   },
   {
     "name": "double",

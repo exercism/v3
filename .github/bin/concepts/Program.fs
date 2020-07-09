@@ -133,7 +133,7 @@ module Parser =
         let allConcepts =
             Seq.append conceptExerciseConcepts conceptDocumentConcepts
             |> Seq.map normalizeConcept
-            |> Seq.distinctBy (fun concept -> concept.TrimEnd('s'))
+            |> Seq.distinctBy (fun concept -> concept.Pluralize())
   
         let toConcept (concept: string) =        
             let variations = conceptVariations concept
