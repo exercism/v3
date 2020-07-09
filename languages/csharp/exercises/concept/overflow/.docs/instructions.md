@@ -52,8 +52,8 @@ Implement the `CentralBank.DisplayChiefEconomistSalary()` method that takes a sa
 If the salary cannot be calculated then "\*\*\* Much Too Big \*\*\*" is returned.
 
 ```csharp
-        CentralBank.DisplayChiefEconomistSalary(555000m, 10000m);
+CentralBank.DisplayChiefEconomistSalary(555000m, 10000m);
 // => "5550000000"
-        CentralBank.DisplayChiefEconomistSalary(555000m,decimal.MaxValue / 2L);
+CentralBank.DisplayChiefEconomistSalary(555000m,decimal.MaxValue / 2L);
 // => "*** Much Too Big ***"
 ```
