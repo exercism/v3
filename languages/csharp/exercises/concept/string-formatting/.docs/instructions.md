@@ -2,7 +2,7 @@ In this exercise, you are going to help high school sweethearts profess their lo
 
 ## 1. Display the couple's name separated by a heart
 
-Please implement the static `HighSchoolSweetheart.DisplaySingleLine()` method to take 2 names and display them separated by heart centered in a 61 character line.
+Please implement the static `HighSchoolSweetheart.DisplaySingleLine()` method to take 2 names and display them separated by a heart centered in a 61 character line.
 
 All names are guaranteed to fit well within the width of the line.
 
@@ -16,7 +16,7 @@ HighSchoolSweetheart.DisplaySingleLine("Lance Green", "Pat Riley");
 Implement the static `HighSchoolSweetheart.DisplayBanner()` method which displays the two sets of initials separated with a plus sign.
 
 ```csharp
-HighSchoolSweetheart.DisplayHeartBanner("L. G.", "P. R.");
+HighSchoolSweetheart.DisplayBanner("L. G.", "P. R.");
 // see the ascii art below
 ```
 
@@ -42,6 +42,6 @@ HighSchoolSweetheart.DisplayHeartBanner("L. G.", "P. R.");
 Implement the static `HighSchoolSweetheart.DisplayGermanExchangeStudents()` method to show date of start of relationship and length of time for our german exchange students.
 
 ```csharp
-HighSchoolSweetheart.DisplayHeartBanner("Norbert", "Heidi", new DateTime(2019, 1, 22), 1535.22f);
+HighSchoolSweetheart.DisplayGermanExchangeStudents("Norbert", "Heidi", new DateTime(2019, 1, 22), 1535.22f);
 // => "Norbert and Heidi have been dating since 22.01.2019 - that's 1.535,22 hours"
 ```

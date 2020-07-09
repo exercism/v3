@@ -2,7 +2,7 @@ There are two principal mechanisms for formatting strings in C#/.NET. Use of `St
 
 ## Composite Formatting
 
-`String.Format()` takes a string (referred to in the documentation as a _composite format_) comprising fixed text comprising placeholders (known in the documentation as format items) and a variable number of arguments. The return value resolves each format item using the corresponding argument and combines the resolved values with the fixed text.
+`String.Format()` takes a string (referred to in the documentation as a _composite format_) comprising fixed text comprising placeholders (known in the documentation as format items), and a variable number of arguments. The return value resolves each format item using the corresponding argument and combines the resolved values with the fixed text.
 
 ```csharp
 string.Format("I had {0} bitcoins on {1}, the day I forgot my password.", 55.5, new DateTime(2010, 2, 25));
@@ -19,8 +19,7 @@ Interpolated strings are prefixed with a `$` and include run-time expressions en
 var loadsOf = 55.5;
 var thatDay = new DateTime(2010, 2, 25);
 $"I had {loadsOf} bitcoins on {thatDay}, the day I forgot my password.";
-// => "I had 55.5 bitcoins on 2/25/2010 00:00:00, the day I forgot my password." -
-// invariant culture
+// => "I had 55.5 bitcoins on 2/25/2010 00:00:00, the day I forgot my password." - invariant culture
 ```
 
 ## Format Items
@@ -41,25 +40,29 @@ The following code illustrates display of the data portion of a `DateTime` objec
 var loadsOf = 55.5;
 var thatDay = new DateTime(2010, 2, 25);
 $"I had {loadsOf:E} bitcoins on {thatDay:d}, the day I forgot my password.";
-// => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password.
-// invariant culture
+// => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password. - invariant culture
+
+string.Format(
+    "I had {0:E} bitcoins on {1:d}, the day I forgot my password.",
+    loadsOf, thatDay);
+// => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password. - invariant culture
 ```
 
-There is both standard and custom formatting for both numbers and dates.  There is no vital difference between _custom_ and _standard_ except that you have a chance to compose custom format strings out of format letters.
+There is both standard and custom formatting for both numbers and dates. There is no vital difference between _custom_ and _standard_ except that you have a chance to compose custom format strings out of format letters.
 
 ## Culture
 
-Each thread has a default culture `Thread.CurrentThread.CurrentCulture` encapsulated in an instance of `CultureInfo`.  The thread's culture determines how dates and numbers are formatted with respect to regional variations such as the difference in conventional date format between the UK _DD/MM/YYYY_ and the US _MM/DD/YYYY_.
+Each thread has a default culture `Thread.CurrentThread.CurrentCulture` encapsulated in an instance of `CultureInfo`. The thread's culture determines how dates and numbers are formatted with respect to regional variations such as the difference in conventional date format between the UK _DD/MM/YYYY_ and the US _MM/DD/YYYY_.
 
-`CultureInfo` implements the `IFormatProvider` interface which can be passed to certain overloads of `String.Format()`.  This can be used to override the thread culture.
+`CultureInfo` implements the `IFormatProvider` interface which can be passed to certain overloads of `String.Format()`. This can be used to override the thread culture.
 
 ## Verbatim Strings
 
-Verbatim strings allow multi-line strings.  They are introduced with an @.
+Verbatim strings allow multi-line strings. They are introduced with an @.
 
 ```csharp
-string str = "
+string str = @"
 See no wretched
-quotes sverywhere
+quotes everywhere
 ";
 ```
