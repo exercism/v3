@@ -6,7 +6,7 @@ To simplify administration internally the central bank has split each denominati
 
 When printed the denominations on bank notes are the product of _base_ and _multiplier_.
 
-By the time this system was introduced the minimum bank note already had a denomination of 10,000,000. The table below shows the position (for the first 3 denominations) when the system was first introduced. Things have got much worse since then and not only does the multiplier change
+By the time this system was introduced the minimum bank note already had a denomination of 10,000,000. The table below shows the position (for the first 3 denominations) when the system was first introduced. Things have got much worse since then and not only does the multiplier change so does the base.
 
 | Base    | Multiplier | Denomination |
 | ------- | ---------- | ------------ |
@@ -23,7 +23,7 @@ If the multiplication operation causes an overflow then the string, "\*\*\* Too 
 
 ```csharp
 CentralBank.DisplayDenomination(10000L, 1000L);
-// => 100
+// => 10000000
 CentralBank.DisplayDenomination(long.MaxValue / 2, 10000L);
 // => "*** Too Big ***"
 ```
@@ -37,9 +37,9 @@ Please implement the method `CentrlBank.DisplayGDP` which takes the base GDP and
 If the GDP cannot be calculated then "\*\*\* Too Big \*\*\*" is returned.
 
 ```csharp
-CentralBank.DisplayDenomination(555f, 10000f);
+CentralBank.DisplayGDP(555f, 10000f);
 // => 555000000
-CentralBank.DisplayDenomination(float.MaxValue / 2, 10000f);
+CentralBank.DisplayGDP(float.MaxValue / 2, 10000f);
 // => "*** Too Big ***"
 ```
 
@@ -52,8 +52,8 @@ Implement the `CentralBank.DisplayChiefEconomistSalary()` method that takes a sa
 If the salary cannot be calculated then "\*\*\* Much Too Big \*\*\*" is returned.
 
 ```csharp
-CentralBank.DisplayCHiefEconomistSalary(555000m, 10000m);
+        CentralBank.DisplayChiefEconomistSalary(555000m, 10000m);
 // => "5550000000"
-CentralBank.DisplayCHiefEconomistSalary(555000m,decimal.MaxValue / 2L);
+        CentralBank.DisplayChiefEconomistSalary(555000m,decimal.MaxValue / 2L);
 // => "*** Much Too Big ***"
 ```
