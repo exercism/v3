@@ -38,6 +38,6 @@ public static class HighSchoolSweetheart
     {
         FormattableString fs =
             $"{studentA} and {studentB} have been dating since {start:d} - that's {hours:n2} hours";
-        return fs.ToString(new CultureInfo("de-DE"));
+        return fs.ToString(CultureInfo.CreateSpecificCulture("de-DE"));
     }
 }
