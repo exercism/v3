@@ -22,54 +22,122 @@ To contribute, please go to the [concepts][concepts], [paradigms][paradigms], [s
 
 This is a list of Concepts for which an exercise has been implemented:
 
-| Concept                                                | Implementations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`array`](./types/array.md)                            | [C#](../languages/csharp/exercises/concept/arrays/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/arrays/.docs/instructions.md), [JavaScript](../languages/javascript/exercises/concept/arrays/.docs/instructions.md), [Ruby](../languages/ruby/exercises/concept/arrays/.docs/instructions.md), [Swift](../languages/swift/exercises/concept/arrays/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                    |
-| [`boolean`](./types/boolean.md)                        | [C#](../languages/csharp/exercises/concept/booleans/.docs/instructions.md), [Elixir](../languages/elixir/exercises/concept/booleans/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/booleans/.docs/instructions.md), [JavaScript](../languages/javascript/exercises/concept/booleans/.docs/instructions.md), [PureScript](../languages/purescript/exercises/concept/booleans/.docs/instructions.md), [Swift](../languages/swift/exercises/concept/conditionals/.docs/instructions.md)                                                                                                                                                                                                          |
-| [`char`](./types/char.md)                              | [C#](../languages/csharp/exercises/concept/chars/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [`classes`](./concepts/classes.md)                     | [C#](../languages/csharp/exercises/concept/classes/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [`comments`](./concepts/comments.md)                   | [Common Lisp](../languages/common-lisp/exercises/concept/basics/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [`conditionals`](./concepts/conditionals.md)           | [C#](../languages/csharp/exercises/concept/numbers/.docs/instructions.md), [Elixir](../languages/elixir/exercises/concept/conditionals/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/numbers/.docs/instructions.md), [Go](../languages/go/exercises/concept/numbers/.docs/instructions.md), [Ruby](../languages/ruby/exercises/concept/numbers/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                        |
-| [`constructors`](./concepts/constructors.md)           | [C#](../languages/csharp/exercises/concept/constructors/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [`datetime`](./types/datetime.md)                      | [C#](../languages/csharp/exercises/concept/datetimes/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/datetimes/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [`enum`](./types/enum.md)                              | [Elixir](../languages/elixir/exercises/concept/enum/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| [`error`](./types/error.md)                            | [Elixir](../languages/elixir/exercises/concept/errors/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [`expressions`](./concepts/expressions.md)             | [Common Lisp](../languages/common-lisp/exercises/concept/basics/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [`future`](./types/future.md)                          | [Dart](../languages/dart/exercises/concept/futures/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [`inheritance`](./concepts/inheritance.md)             | [C#](../languages/csharp/exercises/concept/inheritance/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [`integer`](./types/integer.md)                        | [Elixir](../languages/elixir/exercises/concept/numbers/.docs/instructions.md), [Rust](../languages/rust/exercises/concept/numbers/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [`list`](./types/list.md)                              | [Clojure](../languages/clojure/exercises/concept/lists/.docs/instructions.md), [Elixir](../languages/elixir/exercises/concept/lists/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/lists/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [`loops`](./concepts/loops.md)                         | [Ruby](../languages/ruby/exercises/concept/floating-point-numbers/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [`map`](./types/map.md)                                | [Elixir](../languages/elixir/exercises/concept/maps/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| [`multiple-dispatch`](./concepts/multiple-dispatch.md) | [Julia](../languages/julia/exercises/concept/multiple-dispatch/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [`number`](./types/number.md)                          | [C#](../languages/csharp/exercises/concept/numbers/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/numbers/.docs/instructions.md), [Go](../languages/go/exercises/concept/numbers/.docs/instructions.md), [JavaScript](../languages/javascript/exercises/concept/numbers/.docs/instructions.md), [Ruby](../languages/ruby/exercises/concept/numbers/.docs/instructions.md), [Rust](../languages/rust/exercises/concept/numbers/.docs/instructions.md), [Swift](../languages/swift/exercises/concept/numbers/.docs/instructions.md)                                                                                                                                                             |
-| [`pid`](./types/pid.md)                                | [Elixir](../languages/elixir/exercises/concept/processes/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [`promise`](./types/promise.md)                        | [JavaScript](../languages/javascript/exercises/concept/promises/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [`record`](./types/record.md)                          | [F#](../languages/fsharp/exercises/concept/records/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [`recursion`](./concepts/recursion.md)                 | [Elixir](../languages/elixir/exercises/concept/recursion/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/recursion/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [`set`](./types/set.md)                                | [C#](../languages/csharp/exercises/concept/equality/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| [`slice`](./types/slice.md)                            | [Go](../languages/go/exercises/concept/slices/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| [`string`](./types/string.md)                          | [C#](../languages/csharp/exercises/concept/strings/.docs/instructions.md), [C++](../languages/cpp/exercises/concept/strings/.docs/instructions.md), [Elixir](../languages/elixir/exercises/concept/strings/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/strings/.docs/instructions.md), [Go](../languages/go/exercises/concept/strings/.docs/instructions.md), [JavaScript](../languages/javascript/exercises/concept/strings/.docs/instructions.md), [Python](../languages/python/exercises/concept/strings/.docs/instructions.md), [Ruby](../languages/ruby/exercises/concept/strings/.docs/instructions.md), [Swift](../languages/swift/exercises/concept/strings/.docs/instructions.md) |
-| [`struct`](./types/struct.md)                          | [Elixir](../languages/elixir/exercises/concept/structs/.docs/instructions.md), [Rust](../languages/rust/exercises/concept/structs/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [`symbol`](./types/symbol.md)                          | [Common Lisp](../languages/common-lisp/exercises/concept/basics/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [`tuple`](./types/tuple.md)                            | [C#](../languages/csharp/exercises/concept/tuples/.docs/instructions.md), [Elixir](../languages/elixir/exercises/concept/tuples/.docs/instructions.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Concept | Implementations | Documents |
+| - | - | - |
+| access-behaviour | [Elixir](../languages/elixir/exercises/concept/access-behaviour/.docs/instructions.md) |  |
+| anonymous-functions | [Elixir](../languages/elixir/exercises/concept/anonymous-functions/.docs/instructions.md) | [`anonymous-functions`](./concepts/anonymous-functions.md) |
+| array-analysis | [JavaScript](../languages/javascript/exercises/concept/array-analysis/.docs/instructions.md) |  |
+| arrays | [C#](../languages/csharp/exercises/concept/arrays/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/arrays/.docs/instructions.md), [JavaScript](../languages/javascript/exercises/concept/arrays/.docs/instructions.md), [Ruby](../languages/ruby/exercises/concept/arrays/.docs/instructions.md), [Swift](../languages/swift/exercises/concept/arrays/.docs/instructions.md) | [`arrays`](./types/arrays.md) |
+| atoms | [Elixir](../languages/elixir/exercises/concept/conditionals/.docs/instructions.md) |  |
+| basics | [C#](../languages/csharp/exercises/concept/basics/.docs/instructions.md), [Elixir](../languages/elixir/exercises/concept/basics/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/basics/.docs/instructions.md), [Go](../languages/go/exercises/concept/basics/.docs/instructions.md), [Go](../languages/go/exercises/concept/errors/.docs/instructions.md), [Java](../languages/java/exercises/concept/basics/.docs/instructions.md), [JavaScript](../languages/javascript/exercises/concept/basics/.docs/instructions.md), [Ruby](../languages/ruby/exercises/concept/basics/.docs/instructions.md), [Swift](../languages/swift/exercises/concept/basics/.docs/instructions.md) |  |
+| binaries | [Elixir](../languages/elixir/exercises/concept/binary-matching/.docs/instructions.md) |  |
+| bit-manipulation | [C#](../languages/csharp/exercises/concept/flag-enums/.docs/instructions.md), [Elixir](../languages/elixir/exercises/concept/anonymous-functions/.docs/instructions.md) |  |
+| bitstrings | [Elixir](../languages/elixir/exercises/concept/bitstrings/.docs/instructions.md) |  |
+| boolean-logic | [Julia](../languages/julia/exercises/concept/boolean-logic/.docs/instructions.md) | [`boolean-logic`](./concepts/boolean-logic.md) |
+| booleans | [C#](../languages/csharp/exercises/concept/booleans/.docs/instructions.md), [Elixir](../languages/elixir/exercises/concept/booleans/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/booleans/.docs/instructions.md), [Go](../languages/go/exercises/concept/conditionals/.docs/instructions.md), [JavaScript](../languages/javascript/exercises/concept/booleans/.docs/instructions.md), [Julia](../languages/julia/exercises/concept/boolean-logic/.docs/instructions.md), [PureScript](../languages/purescript/exercises/concept/booleans/.docs/instructions.md), [Swift](../languages/swift/exercises/concept/conditionals/.docs/instructions.md) | [`booleans`](./types/booleans.md) |
+| case | [Elixir](../languages/elixir/exercises/concept/charlists/.docs/instructions.md) |  |
+| charlists | [Elixir](../languages/elixir/exercises/concept/charlists/.docs/instructions.md) |  |
+| chars | [C#](../languages/csharp/exercises/concept/chars/.docs/instructions.md) | [`chars`](./types/chars.md) |
+| classes | [C#](../languages/csharp/exercises/concept/classes/.docs/instructions.md) | [`classes`](./concepts/classes.md) |
+| closures | [Elixir](../languages/elixir/exercises/concept/anonymous-functions/.docs/instructions.md) |  |
+| comments | [Common Lisp](../languages/common-lisp/exercises/concept/basics/.docs/instructions.md) | [`comments`](./concepts/comments.md) |
+| compound-assignment | [C#](../languages/csharp/exercises/concept/flag-enums/.docs/instructions.md) |  |
+| conditionals | [C#](../languages/csharp/exercises/concept/numbers/.docs/instructions.md), [Elixir](../languages/elixir/exercises/concept/conditionals/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/numbers/.docs/instructions.md), [Go](../languages/go/exercises/concept/numbers/.docs/instructions.md), [Ruby](../languages/ruby/exercises/concept/numbers/.docs/instructions.md) | [`conditionals`](./concepts/conditionals.md) |
+| conditionals-guard | [Swift](../languages/swift/exercises/concept/conditionals/.docs/instructions.md) |  |
+| conditionals-if | [Go](../languages/go/exercises/concept/conditionals/.docs/instructions.md), [Swift](../languages/swift/exercises/concept/conditionals/.docs/instructions.md) |  |
+| conditionals-switch | [Go](../languages/go/exercises/concept/conditionals/.docs/instructions.md), [Swift](../languages/swift/exercises/concept/conditionals/.docs/instructions.md) |  |
+| cons | [Common Lisp](../languages/common-lisp/exercises/concept/basics/.docs/instructions.md) |  |
+| constructors | [C#](../languages/csharp/exercises/concept/constructors/.docs/instructions.md) | [`constructors`](./concepts/constructors.md) |
+| datetimes | [C#](../languages/csharp/exercises/concept/datetimes/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/datetimes/.docs/instructions.md) | [`datetimes`](./types/datetimes.md) |
+| default-arguments | [Elixir](../languages/elixir/exercises/concept/multiple-clause-functions/.docs/instructions.md) | [`default-arguments`](./concepts/default-arguments.md) |
+| dictionaries | [C#](../languages/csharp/exercises/concept/dictionaries/.docs/instructions.md) |  |
+| discriminated-unions | [F#](../languages/fsharp/exercises/concept/discriminated-unions/.docs/instructions.md) |  |
+| emoji-symbols | [Julia](../languages/julia/exercises/concept/unicode-identifiers/.docs/instructions.md) |  |
+| entry-api | [Rust](../languages/rust/exercises/concept/entry-api/.docs/instructions.md) |  |
+| enum | [Elixir](../languages/elixir/exercises/concept/enum/.docs/instructions.md) | [`enum`](./types/enum.md) |
+| enums-basic | [Rust](../languages/rust/exercises/concept/enums/.docs/instructions.md) |  |
+| equality | [C#](../languages/csharp/exercises/concept/equality/.docs/instructions.md) |  |
+| errors | [Elixir](../languages/elixir/exercises/concept/errors/.docs/instructions.md), [Go](../languages/go/exercises/concept/errors/.docs/instructions.md) | [`errors`](./types/errors.md) |
+| exception-filtering | [C#](../languages/csharp/exercises/concept/user-defined-exceptions/.docs/instructions.md) |  |
+| exceptions | [Elixir](../languages/elixir/exercises/concept/exceptions/.docs/instructions.md) |  |
+| expressions | [Common Lisp](../languages/common-lisp/exercises/concept/basics/.docs/instructions.md) | [`expressions`](./concepts/expressions.md) |
+| flag-enums | [C#](../languages/csharp/exercises/concept/flag-enums/.docs/instructions.md) |  |
+| floating-point-numbers | [C#](../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md), [Elixir](../languages/elixir/exercises/concept/numbers/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/floating-point-numbers/.docs/instructions.md), [Ruby](../languages/ruby/exercises/concept/floating-point-numbers/.docs/instructions.md), [Rust](../languages/rust/exercises/concept/numbers/.docs/instructions.md) | [`floating-point-numbers`](./types/floating-point-numbers.md) |
+| for-loops | [C#](../languages/csharp/exercises/concept/arrays/.docs/instructions.md) |  |
+| foreach-loops | [C#](../languages/csharp/exercises/concept/arrays/.docs/instructions.md) |  |
+| functions-introduction | [Julia](../languages/julia/exercises/concept/functions-introduction/.docs/instructions.md) |  |
+| futures | [Dart](../languages/dart/exercises/concept/futures/.docs/instructions.md) | [`futures`](./types/futures.md) |
+| guards | [Elixir](../languages/elixir/exercises/concept/multiple-clause-functions/.docs/instructions.md) |  |
+| if-conditional | [Elixir](../languages/elixir/exercises/concept/nil/.docs/instructions.md) |  |
+| inheritance | [C#](../languages/csharp/exercises/concept/inheritance/.docs/instructions.md) | [`inheritance`](./concepts/inheritance.md) |
+| integers | [Elixir](../languages/elixir/exercises/concept/numbers/.docs/instructions.md), [Rust](../languages/rust/exercises/concept/numbers/.docs/instructions.md) | [`integers`](./types/integers.md) |
+| keyword-lists | [Elixir](../languages/elixir/exercises/concept/keyword-lists/.docs/instructions.md) |  |
+| list-comprehensions | [Elixir](../languages/elixir/exercises/concept/list-comprehensions/.docs/instructions.md) | [`list-comprehensions`](./concepts/list-comprehensions.md) |
+| lists | [Clojure](../languages/clojure/exercises/concept/lists/.docs/instructions.md), [Elixir](../languages/elixir/exercises/concept/lists/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/lists/.docs/instructions.md) | [`lists`](./types/lists.md) |
+| loops | [Ruby](../languages/ruby/exercises/concept/floating-point-numbers/.docs/instructions.md) | [`loops`](./concepts/loops.md) |
+| maps | [Elixir](../languages/elixir/exercises/concept/maps/.docs/instructions.md), [Go](../languages/go/exercises/concept/maps/.docs/instructions.md) | [`maps`](./types/maps.md) |
+| method-overloading | [C#](../languages/csharp/exercises/concept/method-overloading/.docs/instructions.md) | [`method-overloading`](./concepts/method-overloading.md) |
+| module-attributes-as-constants | [Elixir](../languages/elixir/exercises/concept/maps/.docs/instructions.md) |  |
+| multiple-clause-functions | [Elixir](../languages/elixir/exercises/concept/multiple-clause-functions/.docs/instructions.md) |  |
+| multiple-dispatch | [Julia](../languages/julia/exercises/concept/multiple-dispatch/.docs/instructions.md) | [`multiple-dispatch`](./concepts/multiple-dispatch.md) |
+| named-arguments | [C#](../languages/csharp/exercises/concept/method-overloading/.docs/instructions.md) |  |
+| nil | [Elixir](../languages/elixir/exercises/concept/nil/.docs/instructions.md) |  |
+| nullability | [C#](../languages/csharp/exercises/concept/nullability/.docs/instructions.md) |  |
+| numbers | [C#](../languages/csharp/exercises/concept/numbers/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/numbers/.docs/instructions.md), [Go](../languages/go/exercises/concept/numbers/.docs/instructions.md), [JavaScript](../languages/javascript/exercises/concept/numbers/.docs/instructions.md), [Ruby](../languages/ruby/exercises/concept/numbers/.docs/instructions.md), [Rust](../languages/rust/exercises/concept/numbers/.docs/instructions.md), [Swift](../languages/swift/exercises/concept/numbers/.docs/instructions.md) | [`numbers`](./types/numbers.md) |
+| numbers-basic | [Dart](../languages/dart/exercises/concept/numbers/.docs/instructions.md) |  |
+| object-initializers | [C#](../languages/csharp/exercises/concept/object-initializers/.docs/instructions.md) |  |
+| option | [Rust](../languages/rust/exercises/concept/options/.docs/instructions.md) |  |
+| optional-parameters | [C#](../languages/csharp/exercises/concept/method-overloading/.docs/instructions.md) |  |
+| optionals | [Swift](../languages/swift/exercises/concept/optionals/.docs/instructions.md) |  |
+| parameters | [C#](../languages/csharp/exercises/concept/parameters/.docs/instructions.md) |  |
+| pattern-matching | [Elixir](../languages/elixir/exercises/concept/tuples/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/pattern-matching/.docs/instructions.md) | [`pattern-matching`](./concepts/pattern-matching.md) |
+| pattern-matching-constants | [C#](../languages/csharp/exercises/concept/enums/.docs/instructions.md) |  |
+| pids | [Elixir](../languages/elixir/exercises/concept/processes/.docs/instructions.md) | [`pids`](./types/pids.md) |
+| pipe-operator | [Elixir](../languages/elixir/exercises/concept/streams/.docs/instructions.md) |  |
+| processes | [Elixir](../languages/elixir/exercises/concept/processes/.docs/instructions.md) |  |
+| promises | [JavaScript](../languages/javascript/exercises/concept/promises/.docs/instructions.md) | [`promises`](./types/promises.md) |
+| properties | [C#](../languages/csharp/exercises/concept/properties/.docs/instructions.md) |  |
+| randomness | [C#](../languages/csharp/exercises/concept/randomness/.docs/instructions.md) |  |
+| ranges | [Elixir](../languages/elixir/exercises/concept/streams/.docs/instructions.md) | [`ranges`](./types/ranges.md) |
+| records | [F#](../languages/fsharp/exercises/concept/records/.docs/instructions.md) | [`records`](./types/records.md) |
+| recursion | [Elixir](../languages/elixir/exercises/concept/recursion/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/recursion/.docs/instructions.md) | [`recursion`](./concepts/recursion.md) |
+| regular-expressions | [Elixir](../languages/elixir/exercises/concept/regular-expressions/.docs/instructions.md) | [`regular-expressions`](./types/regular-expressions.md) |
+| resource-cleanup | [C#](../languages/csharp/exercises/concept/resource-cleanup/.docs/instructions.md) |  |
+| sets | [C#](../languages/csharp/exercises/concept/equality/.docs/instructions.md) | [`sets`](./types/sets.md) |
+| slices | [Go](../languages/go/exercises/concept/slices/.docs/instructions.md) | [`slices`](./types/slices.md) |
+| static-access-operator | [Elixir](../languages/elixir/exercises/concept/structs/.docs/instructions.md) |  |
+| streams | [Elixir](../languages/elixir/exercises/concept/streams/.docs/instructions.md) |  |
+| string-builder | [C#](../languages/csharp/exercises/concept/chars/.docs/instructions.md) |  |
+| string-literals | [Elixir](../languages/elixir/exercises/concept/lists/.docs/instructions.md) |  |
+| strings | [C#](../languages/csharp/exercises/concept/strings/.docs/instructions.md), [C++](../languages/cpp/exercises/concept/strings/.docs/instructions.md), [Elixir](../languages/elixir/exercises/concept/strings/.docs/instructions.md), [F#](../languages/fsharp/exercises/concept/strings/.docs/instructions.md), [Go](../languages/go/exercises/concept/strings/.docs/instructions.md), [Java](../languages/java/exercises/concept/strings/.docs/instructions.md), [JavaScript](../languages/javascript/exercises/concept/strings/.docs/instructions.md), [Python](../languages/python/exercises/concept/strings/.docs/instructions.md), [Ruby](../languages/ruby/exercises/concept/strings/.docs/instructions.md), [Swift](../languages/swift/exercises/concept/strings/.docs/instructions.md) | [`strings`](./types/strings.md) |
+| strings-basic | [Dart](../languages/dart/exercises/concept/strings/.docs/instructions.md) |  |
+| structs | [Elixir](../languages/elixir/exercises/concept/structs/.docs/instructions.md), [Rust](../languages/rust/exercises/concept/structs/.docs/instructions.md) | [`structs`](./types/structs.md) |
+| switch-statements | [C#](../languages/csharp/exercises/concept/switch-statements/.docs/instructions.md) |  |
+| symbols | [Common Lisp](../languages/common-lisp/exercises/concept/basics/.docs/instructions.md) | [`symbols`](./types/symbols.md) |
+| tail-call-recursion | [Elixir](../languages/elixir/exercises/concept/bitstrings/.docs/instructions.md) |  |
+| time | [C#](../languages/csharp/exercises/concept/time/.docs/instructions.md) | [`time`](./types/time.md) |
+| timezone | [C#](../languages/csharp/exercises/concept/time/.docs/instructions.md) |  |
+| try-rescue | [Elixir](../languages/elixir/exercises/concept/errors/.docs/instructions.md) |  |
+| try-rescue-else-after | [Elixir](../languages/elixir/exercises/concept/try-rescue-else-after/.docs/instructions.md) |  |
+| tuples | [C#](../languages/csharp/exercises/concept/tuples/.docs/instructions.md), [Elixir](../languages/elixir/exercises/concept/tuples/.docs/instructions.md) | [`tuples`](./types/tuples.md) |
+| type-conversion | [Dart](../languages/dart/exercises/concept/numbers/.docs/instructions.md) |  |
+| unicode-identifiers | [Julia](../languages/julia/exercises/concept/unicode-identifiers/.docs/instructions.md) |  |
+| user-defined-exceptions | [C#](../languages/csharp/exercises/concept/user-defined-exceptions/.docs/instructions.md) |  |
+| while-loops | [C#](../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md) |  |
 
 ## Unimplemented Concepts
 
 This is a list of Concepts for which no exercise has yet been implemented:
 
-- [`actor_model`](./concepts/actor_model.md)
-- [`anonymous_functions`](./concepts/anonymous_functions.md)
+- [`actor-model`](./concepts/actor_model.md)
 - [`arithmetic`](./concepts/arithmetic.md)
 - [`ascii`](./concepts/ascii.md)
 - [`assignment`](./concepts/assignment.md)
-- [`big_integer`](./types/big_integer.md)
+- [`big-integer`](./types/big_integer.md)
 - [`bit`](./types/bit.md)
-- [`bitwise_manipulation`](./concepts/bitwise_manipulation.md)
-- [`boolean_logic`](./concepts/boolean_logic.md)
+- [`bitwise-manipulation`](./concepts/bitwise_manipulation.md)
 - [`byte`](./types/byte.md)
-- [`bytes`](./types/bytes.md)
-- [`character_encoding`](./concepts/character_encoding.md)
+- [`character-encoding`](./concepts/character_encoding.md)
 - [`class`](./types/class.md)
 - [`collection`](./types/collection.md)
 - [`comparisons`](./concepts/comparisons.md)
@@ -77,62 +145,52 @@ This is a list of Concepts for which no exercise has yet been implemented:
 - [`concurrency`](./concepts/concurrency.md)
 - [`constants`](./concepts/constants.md)
 - [`date`](./types/date.md)
-- [`decimal_number`](./types/decimal_number.md)
-- [`default_arguments`](./concepts/default_arguments.md)
+- [`decimal-number`](./types/decimal_number.md)
 - [`deque`](./types/deque.md)
 - [`destructuring`](./concepts/destructuring.md)
-- [`destructuring_assignment`](./concepts/destructuring_assignment.md)
+- [`destructuring-assignment`](./concepts/destructuring_assignment.md)
 - [`dictionary`](./types/dictionary.md)
 - [`double`](./types/double.md)
-- [`duck_typing`](./concepts/duck_typing.md)
+- [`duck-typing`](./concepts/duck_typing.md)
 - [`duration`](./types/duration.md)
-- [`eager_evaluation`](./concepts/eager_evaluation.md)
+- [`eager-evaluation`](./concepts/eager_evaluation.md)
 - [`encapsulation`](./concepts/encapsulation.md)
 - [`enumeration`](./concepts/enumeration.md)
 - [`evaluation`](./concepts/evaluation.md)
-- [`expression_oriented`](./concepts/expression_oriented.md)
-- [`floating_point_number`](./types/floating_point_number.md)
+- [`expression-oriented`](./concepts/expression_oriented.md)
 - [`function`](./types/function.md)
-- [`function_composition`](./concepts/function_composition.md)
-- [`functions`](./concepts/functions.md)
+- [`function-composition`](./concepts/function_composition.md)
 - [`generics`](./concepts/generics.md)
 - [`half`](./types/half.md)
-- [`hash_map`](./types/hash_map.md)
+- [`hash-map`](./types/hash_map.md)
 - [`hashing`](./concepts/hashing.md)
-- [`higher_order_functions`](./concepts/higher_order_functions.md)
+- [`higher-order-functions`](./concepts/higher_order_functions.md)
 - [`immutability`](./concepts/immutability.md)
 - [`interfaces`](./concepts/interfaces.md)
-- [`lazy_evaluation`](./concepts/lazy_evaluation.md)
-- [`list_comprehension`](./concepts/list_comprehension.md)
+- [`lazy-evaluation`](./concepts/lazy_evaluation.md)
 - [`locking`](./concepts/locking.md)
 - [`long`](./types/long.md)
 - [`macros`](./concepts/macros.md)
 - [`metaprogramming`](./concepts/metaprogramming.md)
-- [`method_overloading`](./concepts/method_overloading.md)
 - [`methods`](./concepts/methods.md)
 - [`mutation`](./concepts/mutation.md)
-- [`nested_functions`](./concepts/nested_functions.md)
+- [`nested-functions`](./concepts/nested_functions.md)
 - [`null`](./types/null.md)
 - [`nullable`](./types/nullable.md)
 - [`object`](./types/object.md)
-- [`objects`](./concepts/objects.md)
 - [`operators`](./concepts/operators.md)
 - [`pair`](./types/pair.md)
-- [`partial_application`](./concepts/partial_application.md)
-- [`partial_functions`](./concepts/partial_functions.md)
+- [`partial-application`](./concepts/partial_application.md)
+- [`partial-functions`](./concepts/partial_functions.md)
 - [`pattern`](./types/pattern.md)
-- [`pattern_matching`](./concepts/pattern_matching.md)
 - [`pipelines`](./concepts/pipelines.md)
 - [`pointer`](./types/pointer.md)
 - [`polymorphism`](./concepts/polymorphism.md)
-- [`product_type`](./types/product_type.md)
-- [`prototype_based-programming`](./concepts/prototype_based-programming.md)
-- [`pure_functions`](./concepts/pure_functions.md)
-- [`range`](./types/range.md)
-- [`regular_expression`](./types/regular_expression.md)
+- [`product-type`](./types/product_type.md)
+- [`pure-functions`](./concepts/pure_functions.md)
 - [`repl`](./concepts/repl.md)
-- [`rest_parameters`](./concepts/rest_parameters.md)
-- [`return_values`](./concepts/return_values.md)
+- [`rest-parameters`](./concepts/rest_parameters.md)
+- [`return-values`](./concepts/return_values.md)
 - [`sameness`](./concepts/sameness.md)
 - [`scope`](./concepts/scope.md)
 - [`short`](./types/short.md)
@@ -141,13 +199,12 @@ This is a list of Concepts for which no exercise has yet been implemented:
 - [`single`](./types/single.md)
 - [`stack`](./types/stack.md)
 - [`state`](./concepts/state.md)
-- [`sum_type`](./types/sum_type.md)
-- [`time`](./types/time.md)
+- [`sum-type`](./types/sum_type.md)
 - [`timestamp`](./types/timestamp.md)
 - [`triple`](./types/triple.md)
-- [`truthy_and_falsy`](./concepts/truthy_and_falsy.md)
-- [`type_casting`](./concepts/type_casting.md)
-- [`type_inference`](./concepts/type_inference.md)
+- [`truthy-and-falsy`](./concepts/truthy_and_falsy.md)
+- [`type-casting`](./concepts/type_casting.md)
+- [`type-inference`](./concepts/type_inference.md)
 - [`undefined`](./concepts/undefined.md)
 - [`undefined`](./types/undefined.md)
 - [`unicode`](./concepts/unicode.md)
@@ -156,7 +213,7 @@ This is a list of Concepts for which no exercise has yet been implemented:
 - [`utf32`](./concepts/utf32.md)
 - [`utf7`](./concepts/utf7.md)
 - [`utf8`](./concepts/utf8.md)
-- [`variable_shadowing`](./concepts/variable_shadowing.md)
+- [`variable-shadowing`](./concepts/variable_shadowing.md)
 - [`variables`](./concepts/variables.md)
 - [`word`](./types/word.md)
 

@@ -40,10 +40,14 @@ module Parser =
         { [<JsonPropertyName("language")>] Language: string
           [<JsonPropertyName("exercises")>] Exercises: JsonExercises }
         
+    let private normalizeConcept (concept: string): string =
+        concept.Replace("_", "-")
+        
     let private conceptVariations (concept: string): string list =
         let transformations =
             [fun (x: string) -> x.TrimEnd('s')
              fun (x: string) -> x.TrimEnd('s') + "s"
+             fun (x: string) -> x.TrimEnd('s') + "ses"
              fun (x: string) -> x.Replace("-", "_")
              fun (x: string) -> x.Replace("_", "-")]
 
@@ -126,7 +130,10 @@ module Parser =
         let mapKeys map = map |> Map.toSeq |> Seq.map fst
         let conceptExerciseConcepts = mapKeys conceptExercises
         let conceptDocumentConcepts = mapKeys conceptDocuments
-        let allConcepts = Seq.append conceptExerciseConcepts conceptDocumentConcepts
+        let allConcepts =
+            Seq.append conceptExerciseConcepts conceptDocumentConcepts
+            |> Seq.map normalizeConcept
+            |> Seq.distinctBy (fun concept -> concept.TrimEnd('s'))
   
         let toConcept (concept: string) =        
             let variations = conceptVariations concept
@@ -145,6 +152,9 @@ module Parser =
         |> Seq.toList
     
 module Markdown =
+    
+    let private normalizeConcept (concept: string): string =
+        concept.Replace("_", "-")
     
     let private categoryDirectory (category: ConceptCategory) =
         match category with
@@ -187,19 +197,22 @@ module Markdown =
             .AppendLine("This is a list of Concepts for which an exercise has been implemented:")
             .AppendLine() |> ignore
         
-        let renderLine conceptColumn implementationsColumn =
+        let renderLine conceptColumn implementationsColumn documentsColumn =
             markdown
-                .AppendFormat(sprintf "| %s | %s |" conceptColumn implementationsColumn)
+                .AppendFormat(sprintf "| %s | %s | %s |" conceptColumn implementationsColumn documentsColumn)
                 .AppendLine() |> ignore
         
-        renderLine "Concept" "Implementations"
-        renderLine "-" "-"
+        renderLine "Concept" "Implementations" "Documents"
+        renderLine "-" "-" "-"
 
-        for concept in concepts do
-            // TODO
+        for concept in concepts |> List.sortBy (fun concept -> concept.Name) do
+            let conceptLink conceptDocument = sprintf "[`%s`](./%s/%s.md)" concept.Name (categoryDirectory conceptDocument.Category) concept.Name
+            let conceptLinks =
+                concept.Document
+                |> List.sortBy (fun conceptDocument -> conceptDocument.Name)
+                |> List.map conceptLink
+                |> String.concat ", "
             
-//            let conceptLink = sprintf "[`%s`](./%s/%s.md)" concept.Name (categoryDirectory concept.Document) concept.Name
-            let conceptLink = sprintf "[`%s`](./%s/%s.md)" concept.Name (categoryDirectory ConceptCategory.Types) concept.Name
             let implementationLink implementation =
                 sprintf "[%s](../languages/%s/exercises/concept/%s/.docs/instructions.md)" implementation.Language implementation.Track implementation.Exercise
             let implementationLinks =
@@ -208,7 +221,7 @@ module Markdown =
                 |> List.map implementationLink
                 |> String.concat ", "
                         
-            renderLine conceptLink implementationLinks
+            renderLine concept.Name implementationLinks conceptLinks
 
         markdown.AppendLine()
     
@@ -218,10 +231,14 @@ module Markdown =
             .AppendLine()
             .AppendLine("This is a list of Concepts for which no exercise has yet been implemented:")
             .AppendLine() |> ignore
+            
+        let documents =
+            concepts
+            |> List.collect (fun concept -> concept.Document)
+            |> List.sortBy (fun document -> document.Name)
         
-        for concept in concepts do
-            // TODO
-            let conceptLink = sprintf "- [`%s`](./%s/%s.md)" concept.Name (categoryDirectory ConceptCategory.Concepts) concept.Name
+        for document in documents do
+            let conceptLink = sprintf "- [`%s`](./%s/%s.md)" (normalizeConcept document.Name) (categoryDirectory document.Category) document.Name
             markdown.AppendLine(conceptLink) |> ignore
 
         markdown.AppendLine()
