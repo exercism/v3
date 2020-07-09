@@ -16,4 +16,4 @@ These default values are called the `zero values` for their type:
 | channel    | nil        |
 | map        | nil        |
 
-`Nil`, meaning zero, is the `zero value` for the more complex types in Go.
+The identifier `nil`, meaning zero, is the `zero value` for the more complex types in Go.

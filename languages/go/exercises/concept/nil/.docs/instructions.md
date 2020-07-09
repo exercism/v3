@@ -78,7 +78,7 @@ func EmptyBool() bool {
 Implement the `EmptyFunc` function to return an empty func.
 
 ```go
-func EmptyFunc() func int {
+func EmptyFunc() func() {
 
 }
 ```
