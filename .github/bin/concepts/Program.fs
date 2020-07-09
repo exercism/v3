@@ -3,7 +3,9 @@
 open System.Text
 open System.Text.Json
 open System.Text.Json.Serialization
-    
+
+open Humanizer
+
 type ConceptExercise =
     { Exercise: string
       Track: string
@@ -44,16 +46,14 @@ module Parser =
         concept.Replace("_", "-")
         
     let private conceptVariations (concept: string): string list =
-        let transformations =
-            [fun (x: string) -> x.TrimEnd('s')
-             fun (x: string) -> x.TrimEnd('s') + "s"
-             fun (x: string) -> x.TrimEnd('s') + "ses"
-             fun (x: string) -> x.Replace("-", "_")
-             fun (x: string) -> x.Replace("_", "-")]
-
-        transformations
-        |> List.fold (fun variations transformation -> List.map transformation variations |> List.append variations) [concept]
-        |> List.distinct
+        seq {
+            yield concept.Replace("_", "-")
+            yield concept.Replace("_", "-").Pluralize()
+            yield concept.Replace("_", "-").Singularize()
+            yield concept.Replace("-", "_")
+        }
+        |> Seq.distinct
+        |> Seq.toList
 
     let private isConceptFile (file: FileInfo) =
         file.Name <> "README.md" && file.Name <> "_sidebar.md"
@@ -206,7 +206,7 @@ module Markdown =
         renderLine "-" "-" "-"
 
         for concept in concepts |> List.sortBy (fun concept -> concept.Name) do
-            let conceptLink conceptDocument = sprintf "[`%s`](./%s/%s.md)" concept.Name (categoryDirectory conceptDocument.Category) concept.Name
+            let conceptLink conceptDocument = sprintf "[`%s`](./%s/%s.md)" concept.Name (categoryDirectory conceptDocument.Category) conceptDocument.Name
             let conceptLinks =
                 concept.Document
                 |> List.sortBy (fun conceptDocument -> conceptDocument.Name)

@@ -4,10 +4,7 @@
     "variations": [
       "access-behaviour",
       "access-behaviours",
-      "access-behaviourses",
-      "access_behaviour",
-      "access_behaviours",
-      "access_behaviourses"
+      "access_behaviour"
     ],
     "documents": [],
     "implementations": [
@@ -24,10 +21,7 @@
     "variations": [
       "anonymous-functions",
       "anonymous-function",
-      "anonymous-functionses",
-      "anonymous_functions",
-      "anonymous_function",
-      "anonymous_functionses"
+      "anonymous_functions"
     ],
     "documents": [
       {
@@ -48,11 +42,9 @@
     "name": "array-analysis",
     "variations": [
       "array-analysis",
+      "array-analyses",
       "array-analysi",
-      "array-analysises",
-      "array_analysis",
-      "array_analysi",
-      "array_analysises"
+      "array_analysis"
     ],
     "documents": [],
     "implementations": [
@@ -68,8 +60,7 @@
     "name": "arrays",
     "variations": [
       "arrays",
-      "array",
-      "arrayses"
+      "array"
     ],
     "documents": [
       {
@@ -114,8 +105,7 @@
     "name": "atoms",
     "variations": [
       "atoms",
-      "atom",
-      "atomses"
+      "atom"
     ],
     "documents": [],
     "implementations": [
@@ -131,8 +121,7 @@
     "name": "basics",
     "variations": [
       "basics",
-      "basic",
-      "basicses"
+      "basic"
     ],
     "documents": [],
     "implementations": [
@@ -196,8 +185,7 @@
     "name": "binaries",
     "variations": [
       "binaries",
-      "binarie",
-      "binarieses"
+      "binary"
     ],
     "documents": [],
     "implementations": [
@@ -214,10 +202,7 @@
     "variations": [
       "bit-manipulation",
       "bit-manipulations",
-      "bit-manipulationses",
-      "bit_manipulation",
-      "bit_manipulations",
-      "bit_manipulationses"
+      "bit_manipulation"
     ],
     "documents": [],
     "implementations": [
@@ -239,8 +224,7 @@
     "name": "bitstrings",
     "variations": [
       "bitstrings",
-      "bitstring",
-      "bitstringses"
+      "bitstring"
     ],
     "documents": [],
     "implementations": [
@@ -257,10 +241,7 @@
     "variations": [
       "boolean-logic",
       "boolean-logics",
-      "boolean-logicses",
-      "boolean_logic",
-      "boolean_logics",
-      "boolean_logicses"
+      "boolean_logic"
     ],
     "documents": [
       {
@@ -281,8 +262,7 @@
     "name": "booleans",
     "variations": [
       "booleans",
-      "boolean",
-      "booleanses"
+      "boolean"
     ],
     "documents": [
       {
@@ -345,8 +325,7 @@
     "name": "case",
     "variations": [
       "case",
-      "cases",
-      "caseses"
+      "cases"
     ],
     "documents": [],
     "implementations": [
@@ -362,8 +341,7 @@
     "name": "charlists",
     "variations": [
       "charlists",
-      "charlist",
-      "charlistses"
+      "charlist"
     ],
     "documents": [],
     "implementations": [
@@ -379,8 +357,7 @@
     "name": "chars",
     "variations": [
       "chars",
-      "char",
-      "charses"
+      "char"
     ],
     "documents": [
       {
@@ -401,8 +378,7 @@
     "name": "classes",
     "variations": [
       "classes",
-      "classe",
-      "classeses"
+      "class"
     ],
     "documents": [
       {
@@ -423,8 +399,7 @@
     "name": "closures",
     "variations": [
       "closures",
-      "closure",
-      "closureses"
+      "closure"
     ],
     "documents": [],
     "implementations": [
@@ -440,8 +415,7 @@
     "name": "comments",
     "variations": [
       "comments",
-      "comment",
-      "commentses"
+      "comment"
     ],
     "documents": [
       {
@@ -463,10 +437,7 @@
     "variations": [
       "compound-assignment",
       "compound-assignments",
-      "compound-assignmentses",
-      "compound_assignment",
-      "compound_assignments",
-      "compound_assignmentses"
+      "compound_assignment"
     ],
     "documents": [],
     "implementations": [
@@ -482,8 +453,7 @@
     "name": "conditionals",
     "variations": [
       "conditionals",
-      "conditional",
-      "conditionalses"
+      "conditional"
     ],
     "documents": [
       {
@@ -529,10 +499,7 @@
     "variations": [
       "conditionals-guard",
       "conditionals-guards",
-      "conditionals-guardses",
-      "conditionals_guard",
-      "conditionals_guards",
-      "conditionals_guardses"
+      "conditionals_guard"
     ],
     "documents": [],
     "implementations": [
@@ -549,10 +516,7 @@
     "variations": [
       "conditionals-if",
       "conditionals-ifs",
-      "conditionals-ifses",
-      "conditionals_if",
-      "conditionals_ifs",
-      "conditionals_ifses"
+      "conditionals_if"
     ],
     "documents": [],
     "implementations": [
@@ -574,11 +538,8 @@
     "name": "conditionals-switch",
     "variations": [
       "conditionals-switch",
-      "conditionals-switchs",
-      "conditionals-switchses",
-      "conditionals_switch",
-      "conditionals_switchs",
-      "conditionals_switchses"
+      "conditionals-switches",
+      "conditionals_switch"
     ],
     "documents": [],
     "implementations": [
@@ -600,8 +561,7 @@
     "name": "cons",
     "variations": [
       "cons",
-      "con",
-      "conses"
+      "con"
     ],
     "documents": [],
     "implementations": [
@@ -617,8 +577,7 @@
     "name": "constructors",
     "variations": [
       "constructors",
-      "constructor",
-      "constructorses"
+      "constructor"
     ],
     "documents": [
       {
@@ -639,8 +598,7 @@
     "name": "datetimes",
     "variations": [
       "datetimes",
-      "datetime",
-      "datetimeses"
+      "datetime"
     ],
     "documents": [
       {
@@ -668,10 +626,7 @@
     "variations": [
       "default-arguments",
       "default-argument",
-      "default-argumentses",
-      "default_arguments",
-      "default_argument",
-      "default_argumentses"
+      "default_arguments"
     ],
     "documents": [
       {
@@ -692,10 +647,14 @@
     "name": "dictionaries",
     "variations": [
       "dictionaries",
-      "dictionarie",
-      "dictionarieses"
+      "dictionary"
     ],
-    "documents": [],
+    "documents": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/reference/types/dictionary.md",
+        "name": "dictionary"
+      }
+    ],
     "implementations": [
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/dictionaries",
@@ -710,10 +669,7 @@
     "variations": [
       "discriminated-unions",
       "discriminated-union",
-      "discriminated-unionses",
-      "discriminated_unions",
-      "discriminated_union",
-      "discriminated_unionses"
+      "discriminated_unions"
     ],
     "documents": [],
     "implementations": [
@@ -730,10 +686,7 @@
     "variations": [
       "emoji-symbols",
       "emoji-symbol",
-      "emoji-symbolses",
-      "emoji_symbols",
-      "emoji_symbol",
-      "emoji_symbolses"
+      "emoji_symbols"
     ],
     "documents": [],
     "implementations": [
@@ -750,10 +703,7 @@
     "variations": [
       "entry-api",
       "entry-apis",
-      "entry-apises",
-      "entry_api",
-      "entry_apis",
-      "entry_apises"
+      "entry_api"
     ],
     "documents": [],
     "implementations": [
@@ -769,8 +719,7 @@
     "name": "enum",
     "variations": [
       "enum",
-      "enums",
-      "enumses"
+      "enums"
     ],
     "documents": [
       {
@@ -792,10 +741,7 @@
     "variations": [
       "enums-basic",
       "enums-basics",
-      "enums-basicses",
-      "enums_basic",
-      "enums_basics",
-      "enums_basicses"
+      "enums_basic"
     ],
     "documents": [],
     "implementations": [
@@ -811,8 +757,7 @@
     "name": "equality",
     "variations": [
       "equality",
-      "equalitys",
-      "equalityses"
+      "equalities"
     ],
     "documents": [],
     "implementations": [
@@ -828,8 +773,7 @@
     "name": "errors",
     "variations": [
       "errors",
-      "error",
-      "errorses"
+      "error"
     ],
     "documents": [
       {
@@ -857,10 +801,7 @@
     "variations": [
       "exception-filtering",
       "exception-filterings",
-      "exception-filteringses",
-      "exception_filtering",
-      "exception_filterings",
-      "exception_filteringses"
+      "exception_filtering"
     ],
     "documents": [],
     "implementations": [
@@ -876,8 +817,7 @@
     "name": "exceptions",
     "variations": [
       "exceptions",
-      "exception",
-      "exceptionses"
+      "exception"
     ],
     "documents": [],
     "implementations": [
@@ -893,8 +833,7 @@
     "name": "expressions",
     "variations": [
       "expressions",
-      "expression",
-      "expressionses"
+      "expression"
     ],
     "documents": [
       {
@@ -916,10 +855,7 @@
     "variations": [
       "flag-enums",
       "flag-enum",
-      "flag-enumses",
-      "flag_enums",
-      "flag_enum",
-      "flag_enumses"
+      "flag_enums"
     ],
     "documents": [],
     "implementations": [
@@ -936,17 +872,9 @@
     "variations": [
       "floating-point-numbers",
       "floating-point-number",
-      "floating-point-numberses",
-      "floating_point_numbers",
-      "floating_point_number",
-      "floating_point_numberses"
+      "floating_point_numbers"
     ],
-    "documents": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/reference/types/floating_point_number.md",
-        "name": "floating_point_number"
-      }
-    ],
+    "documents": [],
     "implementations": [
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/floating-point-numbers",
@@ -985,10 +913,7 @@
     "variations": [
       "for-loops",
       "for-loop",
-      "for-loopses",
-      "for_loops",
-      "for_loop",
-      "for_loopses"
+      "for_loops"
     ],
     "documents": [],
     "implementations": [
@@ -1005,10 +930,7 @@
     "variations": [
       "foreach-loops",
       "foreach-loop",
-      "foreach-loopses",
-      "foreach_loops",
-      "foreach_loop",
-      "foreach_loopses"
+      "foreach_loops"
     ],
     "documents": [],
     "implementations": [
@@ -1025,10 +947,7 @@
     "variations": [
       "functions-introduction",
       "functions-introductions",
-      "functions-introductionses",
-      "functions_introduction",
-      "functions_introductions",
-      "functions_introductionses"
+      "functions_introduction"
     ],
     "documents": [],
     "implementations": [
@@ -1044,8 +963,7 @@
     "name": "futures",
     "variations": [
       "futures",
-      "future",
-      "futureses"
+      "future"
     ],
     "documents": [
       {
@@ -1066,8 +984,7 @@
     "name": "guards",
     "variations": [
       "guards",
-      "guard",
-      "guardses"
+      "guard"
     ],
     "documents": [],
     "implementations": [
@@ -1084,10 +1001,7 @@
     "variations": [
       "if-conditional",
       "if-conditionals",
-      "if-conditionalses",
-      "if_conditional",
-      "if_conditionals",
-      "if_conditionalses"
+      "if_conditional"
     ],
     "documents": [],
     "implementations": [
@@ -1103,8 +1017,7 @@
     "name": "inheritance",
     "variations": [
       "inheritance",
-      "inheritances",
-      "inheritanceses"
+      "inheritances"
     ],
     "documents": [
       {
@@ -1125,8 +1038,7 @@
     "name": "integers",
     "variations": [
       "integers",
-      "integer",
-      "integerses"
+      "integer"
     ],
     "documents": [
       {
@@ -1154,10 +1066,7 @@
     "variations": [
       "keyword-lists",
       "keyword-list",
-      "keyword-listses",
-      "keyword_lists",
-      "keyword_list",
-      "keyword_listses"
+      "keyword_lists"
     ],
     "documents": [],
     "implementations": [
@@ -1174,17 +1083,9 @@
     "variations": [
       "list-comprehensions",
       "list-comprehension",
-      "list-comprehensionses",
-      "list_comprehensions",
-      "list_comprehension",
-      "list_comprehensionses"
+      "list_comprehensions"
     ],
-    "documents": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/reference/concepts/list_comprehension.md",
-        "name": "list_comprehension"
-      }
-    ],
+    "documents": [],
     "implementations": [
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/list-comprehensions",
@@ -1198,8 +1099,7 @@
     "name": "lists",
     "variations": [
       "lists",
-      "list",
-      "listses"
+      "list"
     ],
     "documents": [
       {
@@ -1232,8 +1132,7 @@
     "name": "loops",
     "variations": [
       "loops",
-      "loop",
-      "loopses"
+      "loop"
     ],
     "documents": [
       {
@@ -1254,8 +1153,7 @@
     "name": "maps",
     "variations": [
       "maps",
-      "map",
-      "mapses"
+      "map"
     ],
     "documents": [
       {
@@ -1283,10 +1181,7 @@
     "variations": [
       "method-overloading",
       "method-overloadings",
-      "method-overloadingses",
-      "method_overloading",
-      "method_overloadings",
-      "method_overloadingses"
+      "method_overloading"
     ],
     "documents": [
       {
@@ -1308,10 +1203,7 @@
     "variations": [
       "module-attributes-as-constants",
       "module-attributes-as-constant",
-      "module-attributes-as-constantses",
-      "module_attributes_as_constants",
-      "module_attributes_as_constant",
-      "module_attributes_as_constantses"
+      "module_attributes_as_constants"
     ],
     "documents": [],
     "implementations": [
@@ -1328,10 +1220,7 @@
     "variations": [
       "multiple-clause-functions",
       "multiple-clause-function",
-      "multiple-clause-functionses",
-      "multiple_clause_functions",
-      "multiple_clause_function",
-      "multiple_clause_functionses"
+      "multiple_clause_functions"
     ],
     "documents": [],
     "implementations": [
@@ -1347,11 +1236,8 @@
     "name": "multiple-dispatch",
     "variations": [
       "multiple-dispatch",
-      "multiple-dispatchs",
-      "multiple-dispatchses",
-      "multiple_dispatch",
-      "multiple_dispatchs",
-      "multiple_dispatchses"
+      "multiple-dispatches",
+      "multiple_dispatch"
     ],
     "documents": [
       {
@@ -1373,10 +1259,7 @@
     "variations": [
       "named-arguments",
       "named-argument",
-      "named-argumentses",
-      "named_arguments",
-      "named_argument",
-      "named_argumentses"
+      "named_arguments"
     ],
     "documents": [],
     "implementations": [
@@ -1392,8 +1275,7 @@
     "name": "nil",
     "variations": [
       "nil",
-      "nils",
-      "nilses"
+      "nils"
     ],
     "documents": [],
     "implementations": [
@@ -1409,8 +1291,7 @@
     "name": "nullability",
     "variations": [
       "nullability",
-      "nullabilitys",
-      "nullabilityses"
+      "nullabilities"
     ],
     "documents": [],
     "implementations": [
@@ -1426,8 +1307,7 @@
     "name": "numbers",
     "variations": [
       "numbers",
-      "number",
-      "numberses"
+      "number"
     ],
     "documents": [
       {
@@ -1485,10 +1365,7 @@
     "variations": [
       "numbers-basic",
       "numbers-basics",
-      "numbers-basicses",
-      "numbers_basic",
-      "numbers_basics",
-      "numbers_basicses"
+      "numbers_basic"
     ],
     "documents": [],
     "implementations": [
@@ -1505,10 +1382,7 @@
     "variations": [
       "object-initializers",
       "object-initializer",
-      "object-initializerses",
-      "object_initializers",
-      "object_initializer",
-      "object_initializerses"
+      "object_initializers"
     ],
     "documents": [],
     "implementations": [
@@ -1524,8 +1398,7 @@
     "name": "option",
     "variations": [
       "option",
-      "options",
-      "optionses"
+      "options"
     ],
     "documents": [],
     "implementations": [
@@ -1542,10 +1415,7 @@
     "variations": [
       "optional-parameters",
       "optional-parameter",
-      "optional-parameterses",
-      "optional_parameters",
-      "optional_parameter",
-      "optional_parameterses"
+      "optional_parameters"
     ],
     "documents": [],
     "implementations": [
@@ -1561,8 +1431,7 @@
     "name": "optionals",
     "variations": [
       "optionals",
-      "optional",
-      "optionalses"
+      "optional"
     ],
     "documents": [],
     "implementations": [
@@ -1578,8 +1447,7 @@
     "name": "parameters",
     "variations": [
       "parameters",
-      "parameter",
-      "parameterses"
+      "parameter"
     ],
     "documents": [],
     "implementations": [
@@ -1596,10 +1464,7 @@
     "variations": [
       "pattern-matching",
       "pattern-matchings",
-      "pattern-matchingses",
-      "pattern_matching",
-      "pattern_matchings",
-      "pattern_matchingses"
+      "pattern_matching"
     ],
     "documents": [
       {
@@ -1627,10 +1492,7 @@
     "variations": [
       "pattern-matching-constants",
       "pattern-matching-constant",
-      "pattern-matching-constantses",
-      "pattern_matching_constants",
-      "pattern_matching_constant",
-      "pattern_matching_constantses"
+      "pattern_matching_constants"
     ],
     "documents": [],
     "implementations": [
@@ -1646,8 +1508,7 @@
     "name": "pids",
     "variations": [
       "pids",
-      "pid",
-      "pidses"
+      "pid"
     ],
     "documents": [
       {
@@ -1669,10 +1530,7 @@
     "variations": [
       "pipe-operator",
       "pipe-operators",
-      "pipe-operatorses",
-      "pipe_operator",
-      "pipe_operators",
-      "pipe_operatorses"
+      "pipe_operator"
     ],
     "documents": [],
     "implementations": [
@@ -1688,8 +1546,7 @@
     "name": "processes",
     "variations": [
       "processes",
-      "processe",
-      "processeses"
+      "process"
     ],
     "documents": [],
     "implementations": [
@@ -1705,8 +1562,7 @@
     "name": "promises",
     "variations": [
       "promises",
-      "promise",
-      "promiseses"
+      "promise"
     ],
     "documents": [
       {
@@ -1727,8 +1583,7 @@
     "name": "properties",
     "variations": [
       "properties",
-      "propertie",
-      "propertieses"
+      "property"
     ],
     "documents": [],
     "implementations": [
@@ -1744,9 +1599,8 @@
     "name": "randomness",
     "variations": [
       "randomness",
-      "randomne",
-      "randomnes",
-      "randomneses"
+      "randomnesses",
+      "randomnes"
     ],
     "documents": [],
     "implementations": [
@@ -1762,8 +1616,7 @@
     "name": "ranges",
     "variations": [
       "ranges",
-      "range",
-      "rangeses"
+      "range"
     ],
     "documents": [
       {
@@ -1784,8 +1637,7 @@
     "name": "records",
     "variations": [
       "records",
-      "record",
-      "recordses"
+      "record"
     ],
     "documents": [
       {
@@ -1806,8 +1658,7 @@
     "name": "recursion",
     "variations": [
       "recursion",
-      "recursions",
-      "recursionses"
+      "recursions"
     ],
     "documents": [
       {
@@ -1835,17 +1686,9 @@
     "variations": [
       "regular-expressions",
       "regular-expression",
-      "regular-expressionses",
-      "regular_expressions",
-      "regular_expression",
-      "regular_expressionses"
+      "regular_expressions"
     ],
-    "documents": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/reference/types/regular_expression.md",
-        "name": "regular_expression"
-      }
-    ],
+    "documents": [],
     "implementations": [
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/regular-expressions",
@@ -1860,10 +1703,7 @@
     "variations": [
       "resource-cleanup",
       "resource-cleanups",
-      "resource-cleanupses",
-      "resource_cleanup",
-      "resource_cleanups",
-      "resource_cleanupses"
+      "resource_cleanup"
     ],
     "documents": [],
     "implementations": [
@@ -1879,8 +1719,7 @@
     "name": "sets",
     "variations": [
       "sets",
-      "set",
-      "setses"
+      "set"
     ],
     "documents": [
       {
@@ -1901,8 +1740,7 @@
     "name": "slices",
     "variations": [
       "slices",
-      "slice",
-      "sliceses"
+      "slice"
     ],
     "documents": [
       {
@@ -1924,10 +1762,7 @@
     "variations": [
       "static-access-operator",
       "static-access-operators",
-      "static-access-operatorses",
-      "static_access_operator",
-      "static_access_operators",
-      "static_access_operatorses"
+      "static_access_operator"
     ],
     "documents": [],
     "implementations": [
@@ -1943,8 +1778,7 @@
     "name": "streams",
     "variations": [
       "streams",
-      "stream",
-      "streamses"
+      "stream"
     ],
     "documents": [],
     "implementations": [
@@ -1961,10 +1795,7 @@
     "variations": [
       "string-builder",
       "string-builders",
-      "string-builderses",
-      "string_builder",
-      "string_builders",
-      "string_builderses"
+      "string_builder"
     ],
     "documents": [],
     "implementations": [
@@ -1981,10 +1812,7 @@
     "variations": [
       "string-literals",
       "string-literal",
-      "string-literalses",
-      "string_literals",
-      "string_literal",
-      "string_literalses"
+      "string_literals"
     ],
     "documents": [],
     "implementations": [
@@ -2000,8 +1828,7 @@
     "name": "strings",
     "variations": [
       "strings",
-      "string",
-      "stringses"
+      "string"
     ],
     "documents": [
       {
@@ -2077,10 +1904,7 @@
     "variations": [
       "strings-basic",
       "strings-basics",
-      "strings-basicses",
-      "strings_basic",
-      "strings_basics",
-      "strings_basicses"
+      "strings_basic"
     ],
     "documents": [],
     "implementations": [
@@ -2096,8 +1920,7 @@
     "name": "structs",
     "variations": [
       "structs",
-      "struct",
-      "structses"
+      "struct"
     ],
     "documents": [
       {
@@ -2125,10 +1948,7 @@
     "variations": [
       "switch-statements",
       "switch-statement",
-      "switch-statementses",
-      "switch_statements",
-      "switch_statement",
-      "switch_statementses"
+      "switch_statements"
     ],
     "documents": [],
     "implementations": [
@@ -2144,8 +1964,7 @@
     "name": "symbols",
     "variations": [
       "symbols",
-      "symbol",
-      "symbolses"
+      "symbol"
     ],
     "documents": [
       {
@@ -2167,10 +1986,7 @@
     "variations": [
       "tail-call-recursion",
       "tail-call-recursions",
-      "tail-call-recursionses",
-      "tail_call_recursion",
-      "tail_call_recursions",
-      "tail_call_recursionses"
+      "tail_call_recursion"
     ],
     "documents": [],
     "implementations": [
@@ -2186,8 +2002,7 @@
     "name": "time",
     "variations": [
       "time",
-      "times",
-      "timeses"
+      "times"
     ],
     "documents": [
       {
@@ -2208,8 +2023,7 @@
     "name": "timezone",
     "variations": [
       "timezone",
-      "timezones",
-      "timezoneses"
+      "timezones"
     ],
     "documents": [],
     "implementations": [
@@ -2226,10 +2040,7 @@
     "variations": [
       "try-rescue",
       "try-rescues",
-      "try-rescueses",
-      "try_rescue",
-      "try_rescues",
-      "try_rescueses"
+      "try_rescue"
     ],
     "documents": [],
     "implementations": [
@@ -2246,10 +2057,7 @@
     "variations": [
       "try-rescue-else-after",
       "try-rescue-else-afters",
-      "try-rescue-else-afterses",
-      "try_rescue_else_after",
-      "try_rescue_else_afters",
-      "try_rescue_else_afterses"
+      "try_rescue_else_after"
     ],
     "documents": [],
     "implementations": [
@@ -2265,8 +2073,7 @@
     "name": "tuples",
     "variations": [
       "tuples",
-      "tuple",
-      "tupleses"
+      "tuple"
     ],
     "documents": [
       {
@@ -2294,10 +2101,7 @@
     "variations": [
       "type-conversion",
       "type-conversions",
-      "type-conversionses",
-      "type_conversion",
-      "type_conversions",
-      "type_conversionses"
+      "type_conversion"
     ],
     "documents": [],
     "implementations": [
@@ -2314,10 +2118,7 @@
     "variations": [
       "unicode-identifiers",
       "unicode-identifier",
-      "unicode-identifierses",
-      "unicode_identifiers",
-      "unicode_identifier",
-      "unicode_identifierses"
+      "unicode_identifiers"
     ],
     "documents": [],
     "implementations": [
@@ -2334,10 +2135,7 @@
     "variations": [
       "user-defined-exceptions",
       "user-defined-exception",
-      "user-defined-exceptionses",
-      "user_defined_exceptions",
-      "user_defined_exception",
-      "user_defined_exceptionses"
+      "user_defined_exceptions"
     ],
     "documents": [],
     "implementations": [
@@ -2354,10 +2152,7 @@
     "variations": [
       "while-loops",
       "while-loop",
-      "while-loopses",
-      "while_loops",
-      "while_loop",
-      "while_loopses"
+      "while_loops"
     ],
     "documents": [],
     "implementations": [
@@ -2374,10 +2169,7 @@
     "variations": [
       "actor-model",
       "actor-models",
-      "actor-modelses",
-      "actor_model",
-      "actor_models",
-      "actor_modelses"
+      "actor_model"
     ],
     "documents": [
       {
@@ -2391,8 +2183,7 @@
     "name": "arithmetic",
     "variations": [
       "arithmetic",
-      "arithmetics",
-      "arithmeticses"
+      "arithmetics"
     ],
     "documents": [
       {
@@ -2406,8 +2197,7 @@
     "name": "ascii",
     "variations": [
       "ascii",
-      "asciis",
-      "asciises"
+      "asciis"
     ],
     "documents": [
       {
@@ -2421,8 +2211,7 @@
     "name": "assignment",
     "variations": [
       "assignment",
-      "assignments",
-      "assignmentses"
+      "assignments"
     ],
     "documents": [
       {
@@ -2437,10 +2226,7 @@
     "variations": [
       "big-integer",
       "big-integers",
-      "big-integerses",
-      "big_integer",
-      "big_integers",
-      "big_integerses"
+      "big_integer"
     ],
     "documents": [
       {
@@ -2454,8 +2240,7 @@
     "name": "bit",
     "variations": [
       "bit",
-      "bits",
-      "bitses"
+      "bits"
     ],
     "documents": [
       {
@@ -2470,10 +2255,7 @@
     "variations": [
       "bitwise-manipulation",
       "bitwise-manipulations",
-      "bitwise-manipulationses",
-      "bitwise_manipulation",
-      "bitwise_manipulations",
-      "bitwise_manipulationses"
+      "bitwise_manipulation"
     ],
     "documents": [
       {
@@ -2487,8 +2269,7 @@
     "name": "byte",
     "variations": [
       "byte",
-      "bytes",
-      "byteses"
+      "bytes"
     ],
     "documents": [
       {
@@ -2503,10 +2284,7 @@
     "variations": [
       "character-encoding",
       "character-encodings",
-      "character-encodingses",
-      "character_encoding",
-      "character_encodings",
-      "character_encodingses"
+      "character_encoding"
     ],
     "documents": [
       {
@@ -2520,9 +2298,8 @@
     "name": "class",
     "variations": [
       "class",
-      "cla",
-      "clas",
-      "clases"
+      "classes",
+      "clas"
     ],
     "documents": [
       {
@@ -2530,14 +2307,20 @@
         "name": "class"
       }
     ],
-    "implementations": []
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/classes",
+        "exercise": "classes",
+        "track": "csharp",
+        "language": "C#"
+      }
+    ]
   },
   {
     "name": "collection",
     "variations": [
       "collection",
-      "collections",
-      "collectionses"
+      "collections"
     ],
     "documents": [
       {
@@ -2551,8 +2334,7 @@
     "name": "comparisons",
     "variations": [
       "comparisons",
-      "comparison",
-      "comparisonses"
+      "comparison"
     ],
     "documents": [
       {
@@ -2566,8 +2348,7 @@
     "name": "composition",
     "variations": [
       "composition",
-      "compositions",
-      "compositionses"
+      "compositions"
     ],
     "documents": [
       {
@@ -2581,8 +2362,7 @@
     "name": "concurrency",
     "variations": [
       "concurrency",
-      "concurrencys",
-      "concurrencyses"
+      "concurrencies"
     ],
     "documents": [
       {
@@ -2596,8 +2376,7 @@
     "name": "constants",
     "variations": [
       "constants",
-      "constant",
-      "constantses"
+      "constant"
     ],
     "documents": [
       {
@@ -2611,8 +2390,7 @@
     "name": "date",
     "variations": [
       "date",
-      "dates",
-      "dateses"
+      "dates"
     ],
     "documents": [
       {
@@ -2627,10 +2405,7 @@
     "variations": [
       "decimal-number",
       "decimal-numbers",
-      "decimal-numberses",
-      "decimal_number",
-      "decimal_numbers",
-      "decimal_numberses"
+      "decimal_number"
     ],
     "documents": [
       {
@@ -2644,8 +2419,7 @@
     "name": "deque",
     "variations": [
       "deque",
-      "deques",
-      "dequeses"
+      "deques"
     ],
     "documents": [
       {
@@ -2659,8 +2433,7 @@
     "name": "destructuring",
     "variations": [
       "destructuring",
-      "destructurings",
-      "destructuringses"
+      "destructurings"
     ],
     "documents": [
       {
@@ -2675,10 +2448,7 @@
     "variations": [
       "destructuring-assignment",
       "destructuring-assignments",
-      "destructuring-assignmentses",
-      "destructuring_assignment",
-      "destructuring_assignments",
-      "destructuring_assignmentses"
+      "destructuring_assignment"
     ],
     "documents": [
       {
@@ -2692,8 +2462,7 @@
     "name": "dictionary",
     "variations": [
       "dictionary",
-      "dictionarys",
-      "dictionaryses"
+      "dictionaries"
     ],
     "documents": [
       {
@@ -2701,14 +2470,20 @@
         "name": "dictionary"
       }
     ],
-    "implementations": []
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/dictionaries",
+        "exercise": "dictionaries",
+        "track": "csharp",
+        "language": "C#"
+      }
+    ]
   },
   {
     "name": "double",
     "variations": [
       "double",
-      "doubles",
-      "doubleses"
+      "doubles"
     ],
     "documents": [
       {
@@ -2723,10 +2498,7 @@
     "variations": [
       "duck-typing",
       "duck-typings",
-      "duck-typingses",
-      "duck_typing",
-      "duck_typings",
-      "duck_typingses"
+      "duck_typing"
     ],
     "documents": [
       {
@@ -2740,8 +2512,7 @@
     "name": "duration",
     "variations": [
       "duration",
-      "durations",
-      "durationses"
+      "durations"
     ],
     "documents": [
       {
@@ -2756,10 +2527,7 @@
     "variations": [
       "eager-evaluation",
       "eager-evaluations",
-      "eager-evaluationses",
-      "eager_evaluation",
-      "eager_evaluations",
-      "eager_evaluationses"
+      "eager_evaluation"
     ],
     "documents": [
       {
@@ -2773,8 +2541,7 @@
     "name": "encapsulation",
     "variations": [
       "encapsulation",
-      "encapsulations",
-      "encapsulationses"
+      "encapsulations"
     ],
     "documents": [
       {
@@ -2788,8 +2555,7 @@
     "name": "enumeration",
     "variations": [
       "enumeration",
-      "enumerations",
-      "enumerationses"
+      "enumerations"
     ],
     "documents": [
       {
@@ -2803,8 +2569,7 @@
     "name": "evaluation",
     "variations": [
       "evaluation",
-      "evaluations",
-      "evaluationses"
+      "evaluations"
     ],
     "documents": [
       {
@@ -2819,10 +2584,7 @@
     "variations": [
       "expression-oriented",
       "expression-orienteds",
-      "expression-orientedses",
-      "expression_oriented",
-      "expression_orienteds",
-      "expression_orientedses"
+      "expression_oriented"
     ],
     "documents": [
       {
@@ -2836,8 +2598,7 @@
     "name": "function",
     "variations": [
       "function",
-      "functions",
-      "functionses"
+      "functions"
     ],
     "documents": [
       {
@@ -2852,10 +2613,7 @@
     "variations": [
       "function-composition",
       "function-compositions",
-      "function-compositionses",
-      "function_composition",
-      "function_compositions",
-      "function_compositionses"
+      "function_composition"
     ],
     "documents": [
       {
@@ -2869,8 +2627,7 @@
     "name": "generics",
     "variations": [
       "generics",
-      "generic",
-      "genericses"
+      "generic"
     ],
     "documents": [
       {
@@ -2884,8 +2641,7 @@
     "name": "half",
     "variations": [
       "half",
-      "halfs",
-      "halfses"
+      "halves"
     ],
     "documents": [
       {
@@ -2900,10 +2656,7 @@
     "variations": [
       "hash-map",
       "hash-maps",
-      "hash-mapses",
-      "hash_map",
-      "hash_maps",
-      "hash_mapses"
+      "hash_map"
     ],
     "documents": [
       {
@@ -2917,8 +2670,7 @@
     "name": "hashing",
     "variations": [
       "hashing",
-      "hashings",
-      "hashingses"
+      "hashings"
     ],
     "documents": [
       {
@@ -2933,10 +2685,7 @@
     "variations": [
       "higher-order-functions",
       "higher-order-function",
-      "higher-order-functionses",
-      "higher_order_functions",
-      "higher_order_function",
-      "higher_order_functionses"
+      "higher_order_functions"
     ],
     "documents": [
       {
@@ -2950,8 +2699,7 @@
     "name": "immutability",
     "variations": [
       "immutability",
-      "immutabilitys",
-      "immutabilityses"
+      "immutabilities"
     ],
     "documents": [
       {
@@ -2965,8 +2713,7 @@
     "name": "interfaces",
     "variations": [
       "interfaces",
-      "interface",
-      "interfaceses"
+      "interface"
     ],
     "documents": [
       {
@@ -2981,10 +2728,7 @@
     "variations": [
       "lazy-evaluation",
       "lazy-evaluations",
-      "lazy-evaluationses",
-      "lazy_evaluation",
-      "lazy_evaluations",
-      "lazy_evaluationses"
+      "lazy_evaluation"
     ],
     "documents": [
       {
@@ -2998,8 +2742,7 @@
     "name": "locking",
     "variations": [
       "locking",
-      "lockings",
-      "lockingses"
+      "lockings"
     ],
     "documents": [
       {
@@ -3013,8 +2756,7 @@
     "name": "long",
     "variations": [
       "long",
-      "longs",
-      "longses"
+      "longs"
     ],
     "documents": [
       {
@@ -3028,8 +2770,7 @@
     "name": "macros",
     "variations": [
       "macros",
-      "macro",
-      "macroses"
+      "macro"
     ],
     "documents": [
       {
@@ -3043,8 +2784,7 @@
     "name": "metaprogramming",
     "variations": [
       "metaprogramming",
-      "metaprogrammings",
-      "metaprogrammingses"
+      "metaprogrammings"
     ],
     "documents": [
       {
@@ -3058,8 +2798,7 @@
     "name": "methods",
     "variations": [
       "methods",
-      "method",
-      "methodses"
+      "method"
     ],
     "documents": [
       {
@@ -3073,8 +2812,7 @@
     "name": "mutation",
     "variations": [
       "mutation",
-      "mutations",
-      "mutationses"
+      "mutations"
     ],
     "documents": [
       {
@@ -3089,10 +2827,7 @@
     "variations": [
       "nested-functions",
       "nested-function",
-      "nested-functionses",
-      "nested_functions",
-      "nested_function",
-      "nested_functionses"
+      "nested_functions"
     ],
     "documents": [
       {
@@ -3106,8 +2841,7 @@
     "name": "null",
     "variations": [
       "null",
-      "nulls",
-      "nullses"
+      "nulls"
     ],
     "documents": [
       {
@@ -3121,8 +2855,7 @@
     "name": "nullable",
     "variations": [
       "nullable",
-      "nullables",
-      "nullableses"
+      "nullables"
     ],
     "documents": [
       {
@@ -3136,8 +2869,7 @@
     "name": "object",
     "variations": [
       "object",
-      "objects",
-      "objectses"
+      "objects"
     ],
     "documents": [
       {
@@ -3151,8 +2883,7 @@
     "name": "operators",
     "variations": [
       "operators",
-      "operator",
-      "operatorses"
+      "operator"
     ],
     "documents": [
       {
@@ -3166,8 +2897,7 @@
     "name": "pair",
     "variations": [
       "pair",
-      "pairs",
-      "pairses"
+      "pairs"
     ],
     "documents": [
       {
@@ -3182,10 +2912,7 @@
     "variations": [
       "partial-application",
       "partial-applications",
-      "partial-applicationses",
-      "partial_application",
-      "partial_applications",
-      "partial_applicationses"
+      "partial_application"
     ],
     "documents": [
       {
@@ -3200,10 +2927,7 @@
     "variations": [
       "partial-functions",
       "partial-function",
-      "partial-functionses",
-      "partial_functions",
-      "partial_function",
-      "partial_functionses"
+      "partial_functions"
     ],
     "documents": [
       {
@@ -3217,8 +2941,7 @@
     "name": "pattern",
     "variations": [
       "pattern",
-      "patterns",
-      "patternses"
+      "patterns"
     ],
     "documents": [
       {
@@ -3232,8 +2955,7 @@
     "name": "pipelines",
     "variations": [
       "pipelines",
-      "pipeline",
-      "pipelineses"
+      "pipeline"
     ],
     "documents": [
       {
@@ -3247,8 +2969,7 @@
     "name": "pointer",
     "variations": [
       "pointer",
-      "pointers",
-      "pointerses"
+      "pointers"
     ],
     "documents": [
       {
@@ -3262,8 +2983,7 @@
     "name": "polymorphism",
     "variations": [
       "polymorphism",
-      "polymorphisms",
-      "polymorphismses"
+      "polymorphisms"
     ],
     "documents": [
       {
@@ -3278,10 +2998,7 @@
     "variations": [
       "product-type",
       "product-types",
-      "product-typeses",
-      "product_type",
-      "product_types",
-      "product_typeses"
+      "product_type"
     ],
     "documents": [
       {
@@ -3296,10 +3013,7 @@
     "variations": [
       "prototype-based-programming",
       "prototype-based-programmings",
-      "prototype-based-programmingses",
-      "prototype_based_programming",
-      "prototype_based_programmings",
-      "prototype_based_programmingses"
+      "prototype_based_programming"
     ],
     "documents": [],
     "implementations": []
@@ -3309,10 +3023,7 @@
     "variations": [
       "pure-functions",
       "pure-function",
-      "pure-functionses",
-      "pure_functions",
-      "pure_function",
-      "pure_functionses"
+      "pure_functions"
     ],
     "documents": [
       {
@@ -3326,8 +3037,7 @@
     "name": "repl",
     "variations": [
       "repl",
-      "repls",
-      "replses"
+      "repls"
     ],
     "documents": [
       {
@@ -3342,10 +3052,7 @@
     "variations": [
       "rest-parameters",
       "rest-parameter",
-      "rest-parameterses",
-      "rest_parameters",
-      "rest_parameter",
-      "rest_parameterses"
+      "rest_parameters"
     ],
     "documents": [
       {
@@ -3360,10 +3067,7 @@
     "variations": [
       "return-values",
       "return-value",
-      "return-valueses",
-      "return_values",
-      "return_value",
-      "return_valueses"
+      "return_values"
     ],
     "documents": [
       {
@@ -3377,9 +3081,8 @@
     "name": "sameness",
     "variations": [
       "sameness",
-      "samene",
-      "samenes",
-      "sameneses"
+      "samenesses",
+      "samenes"
     ],
     "documents": [
       {
@@ -3393,8 +3096,7 @@
     "name": "scope",
     "variations": [
       "scope",
-      "scopes",
-      "scopeses"
+      "scopes"
     ],
     "documents": [
       {
@@ -3408,8 +3110,7 @@
     "name": "short",
     "variations": [
       "short",
-      "shorts",
-      "shortses"
+      "shorts"
     ],
     "documents": [
       {
@@ -3423,8 +3124,7 @@
     "name": "signed",
     "variations": [
       "signed",
-      "signeds",
-      "signedses"
+      "signeds"
     ],
     "documents": [
       {
@@ -3438,9 +3138,8 @@
     "name": "signedness",
     "variations": [
       "signedness",
-      "signedne",
-      "signednes",
-      "signedneses"
+      "signednesses",
+      "signednes"
     ],
     "documents": [
       {
@@ -3454,8 +3153,7 @@
     "name": "single",
     "variations": [
       "single",
-      "singles",
-      "singleses"
+      "singles"
     ],
     "documents": [
       {
@@ -3469,8 +3167,7 @@
     "name": "stack",
     "variations": [
       "stack",
-      "stacks",
-      "stackses"
+      "stacks"
     ],
     "documents": [
       {
@@ -3484,8 +3181,7 @@
     "name": "state",
     "variations": [
       "state",
-      "states",
-      "stateses"
+      "states"
     ],
     "documents": [
       {
@@ -3500,10 +3196,7 @@
     "variations": [
       "sum-type",
       "sum-types",
-      "sum-typeses",
-      "sum_type",
-      "sum_types",
-      "sum_typeses"
+      "sum_type"
     ],
     "documents": [
       {
@@ -3517,8 +3210,7 @@
     "name": "timestamp",
     "variations": [
       "timestamp",
-      "timestamps",
-      "timestampses"
+      "timestamps"
     ],
     "documents": [
       {
@@ -3532,8 +3224,7 @@
     "name": "triple",
     "variations": [
       "triple",
-      "triples",
-      "tripleses"
+      "triples"
     ],
     "documents": [
       {
@@ -3547,11 +3238,8 @@
     "name": "truthy-and-falsy",
     "variations": [
       "truthy-and-falsy",
-      "truthy-and-falsys",
-      "truthy-and-falsyses",
-      "truthy_and_falsy",
-      "truthy_and_falsys",
-      "truthy_and_falsyses"
+      "truthy-and-falsies",
+      "truthy_and_falsy"
     ],
     "documents": [
       {
@@ -3566,10 +3254,7 @@
     "variations": [
       "type-casting",
       "type-castings",
-      "type-castingses",
-      "type_casting",
-      "type_castings",
-      "type_castingses"
+      "type_casting"
     ],
     "documents": [
       {
@@ -3584,10 +3269,7 @@
     "variations": [
       "type-inference",
       "type-inferences",
-      "type-inferenceses",
-      "type_inference",
-      "type_inferences",
-      "type_inferenceses"
+      "type_inference"
     ],
     "documents": [
       {
@@ -3601,8 +3283,7 @@
     "name": "undefined",
     "variations": [
       "undefined",
-      "undefineds",
-      "undefinedses"
+      "undefineds"
     ],
     "documents": [
       {
@@ -3620,8 +3301,7 @@
     "name": "unicode",
     "variations": [
       "unicode",
-      "unicodes",
-      "unicodeses"
+      "unicodes"
     ],
     "documents": [
       {
@@ -3635,8 +3315,7 @@
     "name": "unsigned",
     "variations": [
       "unsigned",
-      "unsigneds",
-      "unsignedses"
+      "unsigneds"
     ],
     "documents": [
       {
@@ -3650,8 +3329,7 @@
     "name": "utf16",
     "variations": [
       "utf16",
-      "utf16s",
-      "utf16ses"
+      "utf16s"
     ],
     "documents": [
       {
@@ -3665,8 +3343,7 @@
     "name": "utf32",
     "variations": [
       "utf32",
-      "utf32s",
-      "utf32ses"
+      "utf32s"
     ],
     "documents": [
       {
@@ -3680,8 +3357,7 @@
     "name": "utf7",
     "variations": [
       "utf7",
-      "utf7s",
-      "utf7ses"
+      "utf7s"
     ],
     "documents": [
       {
@@ -3695,8 +3371,7 @@
     "name": "utf8",
     "variations": [
       "utf8",
-      "utf8s",
-      "utf8ses"
+      "utf8s"
     ],
     "documents": [
       {
@@ -3711,10 +3386,7 @@
     "variations": [
       "variable-shadowing",
       "variable-shadowings",
-      "variable-shadowingses",
-      "variable_shadowing",
-      "variable_shadowings",
-      "variable_shadowingses"
+      "variable_shadowing"
     ],
     "documents": [
       {
@@ -3728,8 +3400,7 @@
     "name": "variables",
     "variations": [
       "variables",
-      "variable",
-      "variableses"
+      "variable"
     ],
     "documents": [
       {
@@ -3743,8 +3414,7 @@
     "name": "word",
     "variations": [
       "word",
-      "words",
-      "wordses"
+      "words"
     ],
     "documents": [
       {
