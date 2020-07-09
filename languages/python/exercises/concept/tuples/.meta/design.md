@@ -32,6 +32,5 @@
 - `if-keyword`
 - `in-keyword`
 - `integers`
-- `print`
 - `return-keyword`
 - `strings`
