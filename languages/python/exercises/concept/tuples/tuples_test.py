@@ -1,22 +1,11 @@
 import unittest
-import sys
-from contextlib import contextmanager
-from  io import StringIO
-
 from tuples import get_coordinate, convert_coordinate, compare_records, create_record, clean_up
 
 
-@contextmanager
-def captured_output():
-    new_out, new_err = StringIO(), StringIO()
-    old_out, old_err = sys.stdout, sys.stderr
-    try:
-        sys.stdout, sys.stderr = new_out, new_err
-        yield sys.stdout, sys.stderr
-    finally:
-        sys.stdout, sys.stderr = old_out, old_err
-
 class TuplesTest(unittest.TestCase):
+
+    maxDiff = None
+
     def test_get_coordinate(self):
         input_data = [("Scrimshaw Whale's Tooth", '2A'),
                                 ('Brass Spyglass', '4B'),
@@ -105,10 +94,10 @@ class TuplesTest(unittest.TestCase):
 
         for item, result in zip(input_data, result_data):
             with self.subTest("make record if coordinates match", item=item, result=result):
+                #self.assertEqual.__self__.maxDiff = None
                 self.assertEqual(create_record(item[0], item[1]), result)
 
     def test_clean_up(self):
-
         input_data = (
                                 ("Scrimshaw Whale's Tooth", '2A', 'Deserted Docks', ('2', 'A'), 'Blue'),
                                 ('Brass Spyglass', '4B', 'Abandoned Lighthouse', ('4', 'B'), 'Blue'),
@@ -116,7 +105,7 @@ class TuplesTest(unittest.TestCase):
                                 ('Glass Starfish', '6D', 'Tangled Seaweed Patch', ('6', 'D'), 'Orange'),
                                 ('Vintage Pirate Hat', '7E', 'Quiet Inlet (Island of Mystery)', ('7', 'E'), 'Orange'),
                                 ('Pirate Flag', '7F', 'Windswept Hilltop (Island of Mystery)', ('7', 'F'), 'Orange'),
-                                ('Crystal Crab', '6A', 'Old Schooner', ('6', 'A'), 'Purple'),
+                                 ('Crystal Crab', '6A', 'Old Schooner', ('6', 'A'), 'Purple'),
                                 ('Model Ship in Large Bottle', '8A', 'Harbor Managers Office', ('8', 'A'), 'Purple'),
                                 ('Angry Monkey Figurine', '5B', 'Stormy Breakwater', ('5', 'B'), 'Purple'),
                                 ('Carved Wooden Elephant', '8C', 'Foggy Seacave', ('8', 'C'), 'Purple'),
@@ -125,21 +114,18 @@ class TuplesTest(unittest.TestCase):
                                 ('Silver Seahorse', '4E', 'Hidden Spring (Island of Mystery)', ('4', 'E'), 'Yellow')
                             )
 
-        result_data = "(\"Scrimshaw Whale's Tooth\", 'Deserted Docks', ('2', 'A'), 'Blue')\n" \
-                      "('Brass Spyglass', 'Abandoned Lighthouse', ('4', 'B'), 'Blue')\n" \
-                      "('Robot Parrot', 'Seaside Cottages', ('1', 'C'), 'Blue')\n" \
-                      "('Glass Starfish', 'Tangled Seaweed Patch', ('6', 'D'), 'Orange')\n" \
-                      "('Vintage Pirate Hat', 'Quiet Inlet (Island of Mystery)', ('7', 'E'), 'Orange')\n" \
-                      "('Pirate Flag', 'Windswept Hilltop (Island of Mystery)', ('7', 'F'), 'Orange')\n" \
-                      "('Crystal Crab', 'Old Schooner', ('6', 'A'), 'Purple')\n" \
-                      "('Model Ship in Large Bottle', 'Harbor Managers Office', ('8', 'A'), 'Purple')\n" \
-                      "('Angry Monkey Figurine', 'Stormy Breakwater', ('5', 'B'), 'Purple')\n" \
-                      "('Carved Wooden Elephant', 'Foggy Seacave', ('8', 'C'), 'Purple')\n" \
-                      "('Amethyst  Octopus', 'Aqua Lagoon (Island of Mystery)', ('1', 'F'), 'Yellow')\n" \
-                      "('Antique Glass Fishnet Float', 'Spiky Rocks', ('3', 'D'), 'Yellow')\n" \
-                      "('Silver Seahorse', 'Hidden Spring (Island of Mystery)', ('4', 'E'), 'Yellow')"
+        result_data = """(\"Scrimshaw Whale's Tooth\", 'Deserted Docks', ('2', 'A'), 'Blue')\n\
+('Brass Spyglass', 'Abandoned Lighthouse', ('4', 'B'), 'Blue')\n\
+('Robot Parrot', 'Seaside Cottages', ('1', 'C'), 'Blue')\n\
+('Glass Starfish', 'Tangled Seaweed Patch', ('6', 'D'), 'Orange')\n\
+('Vintage Pirate Hat', 'Quiet Inlet (Island of Mystery)', ('7', 'E'), 'Orange')\n\
+('Pirate Flag', 'Windswept Hilltop (Island of Mystery)', ('7', 'F'), 'Orange')\n\
+('Crystal Crab', 'Old Schooner', ('6', 'A'), 'Purple')\n\
+('Model Ship in Large Bottle', 'Harbor Managers Office', ('8', 'A'), 'Purple')\n\
+('Angry Monkey Figurine', 'Stormy Breakwater', ('5', 'B'), 'Purple')\n\
+('Carved Wooden Elephant', 'Foggy Seacave', ('8', 'C'), 'Purple')\n\
+('Amethyst  Octopus', 'Aqua Lagoon (Island of Mystery)', ('1', 'F'), 'Yellow')\n\
+('Antique Glass Fishnet Float', 'Spiky Rocks', ('3', 'D'), 'Yellow')\n\
+('Silver Seahorse', 'Hidden Spring (Island of Mystery)', ('4', 'E'), 'Yellow')\n"""
 
-        with captured_output() as (out, err):
-             clean_up(input_data)
-             output = out.getvalue().strip()
-             self.assertEqual(output, result_data)
+        self.assertEqual(clean_up(input_data), result_data)
