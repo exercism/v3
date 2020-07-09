@@ -2,7 +2,7 @@
 
 In Go, uninitialized variables and their elements are given default values.
 
-These default values are called the `zero values` for their type:
+These default values are called the zero values for their respective types:
 
 | Type       | Zero Value |
 | ---------- | ---------- |
@@ -16,4 +16,4 @@ These default values are called the `zero values` for their type:
 | channel    | nil        |
 | map        | nil        |
 
-The identifier `nil`, meaning zero, is the `zero value` for the more complex types in Go.
+The identifier `nil`, meaning zero, is the zero value for the more complex types in Go.

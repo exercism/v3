@@ -1,11 +1,11 @@
 ## General
 
-- [To return a value from a function in Go](https://golang.org/ref/spec#Return_statements), use the keyword `return` followed by the value:
+- To [return][returns] a value from a function in Go, use the keyword `return` followed by the value:
 
 ```go
-    func myFunc() int {
-        return 7
-    }
+func myFunc() int {
+    return 7
+}
 ```
 
 ## 1. Return an empty interface
@@ -43,3 +43,5 @@
 ## 9. Return an empty int
 
 - The zero value for numeric types is 0.
+
+[returns]: https://golang.org/ref/spec#Return_statements

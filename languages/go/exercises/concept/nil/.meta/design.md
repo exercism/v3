@@ -1,12 +1,12 @@
 ## Goal
 
-The goal of this exercise is to teach the student about `nil`. It will also introduce the concept of `zero values`.
+The goal of this exercise is to teach the student about `nil` and other zero values.
 
 ## Learning objectives
 
 - Go assigns zero values to uninitialized variables according to the type the variable holds.
 - The identifier `nil` is the zero value for pointers, channels, maps, interfaces, slices, and functions.
-- Zero values for string, numbers, and bool are "", 0, and false, respectively.
+- Zero values for strings, numbers, and booleans are "", 0, and false, respectively.
 
 ## Out of scope
 

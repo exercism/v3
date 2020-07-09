@@ -1,7 +1,4 @@
-## Nil and Zero Values
-
 In this exercise, we will write some simple functions that return zero values for various Go types.
-
 
 ## 1. Return an empty interface
 
