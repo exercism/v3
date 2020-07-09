@@ -1,5 +1,13 @@
 ## General
 
+- [String interpolation][string-interpolation]: tutorial on how to use string interpolation.
+- [Formatting types][formatting-types]: the available format types to use.
+- [Standard numeric format strings][standard-numeric-format-strings]: lists the standard numeric format strings.
+- [Custom numeric format strings][custom-numeric-format-strings]: describes how to define custom numeric format strings.
+- [Standard date and time format strings][standard-date-and-time-format-strings]: lists the standard date and time format strings.
+- [Custom date and time format strings][custom-date-and-time-format-strings]: describes how to define custom date and time format strings.
+- [`String.Format()`][string-format]: Library API.
+
 ## 1. Display the couple's name separated by a heart
 
 - Take a look at the discussion of [string interpolation][string-interpolation].
@@ -21,3 +29,8 @@
 [verbatim-strings]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/#regular-and-verbatim-string-literals
 [culture-info]: https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=netcore-3.1
 [formattable-string]: https://docs.microsoft.com/en-us/dotnet/api/system.formattablestring?view=netcore-3.1
+[formatting-types]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/formatting-types
+[standard-numeric-format-strings]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings
+[custom-numeric-format-strings]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings
+[standard-date-and-time-format-strings]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings
+[custom-date-and-time-format-strings]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
