@@ -25,9 +25,9 @@
                 ((#\a #\a) . victory)))
     (:maze-3 . (((1.0 1) . explosion)
                 ((1.0 1.0) . victory))))
-  "Mazes are a sequence of pairs of DOORS and RESULTS. A DOOR is a sequence of
-things which will be given to the key. A RESULT is a condition to signal if the
-DOOR is opened by the key.")
+  "Mazes are a sequence of pairs of a DOOR and a RESULT. A DOOR is a sequence of
+things which will be given to the key. If a KEY opens a DOOR, the maze will
+evaluate to RESULT")
 
 (test the-maze-of-object-equality
   (is (eq 'victory (run-maze :maze-1 #'sameness:robot))))
