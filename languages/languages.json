@@ -1889,13 +1889,13 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/error.md",
               "name": "errors"
-            },
-            {
-              "url": null,
-              "name": "basics"
             }
           ],
           "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
               "name": "constants"
@@ -2115,6 +2115,30 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/nullability",
+          "slug": "nullability",
+          "concepts": [
+            {
+              "url": null,
+              "name": "nullability"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": null,
+              "name": "string-formatting"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/numbers",
           "slug": "numbers",
           "concepts": [
@@ -2155,6 +2179,38 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/recursion.md",
               "name": "recursion"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/recursion",
+          "slug": "recursion",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/recursion.md",
+              "name": "recursion"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            },
+            {
+              "url": null,
+              "name": "array-destructuring"
+            },
+            {
+              "url": null,
+              "name": "array-loops"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": null,
+              "name": "variable-parameters"
             }
           ]
         },
