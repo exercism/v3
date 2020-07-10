@@ -12,6 +12,7 @@
         - [`nullability`](/languages/javascript/exercises/concept/nullability/.docs/instructions.md)
         - [`numbers`](/languages/javascript/exercises/concept/numbers/.docs/instructions.md)
         - [`promises`](/languages/javascript/exercises/concept/promises/.docs/instructions.md)
+        - [`recursion`](/languages/javascript/exercises/concept/recursion/.docs/instructions.md)
         - [`strings`](/languages/javascript/exercises/concept/strings/.docs/instructions.md)
       - [Practice](/languages/javascript/exercises/practice/README.md)
     - [Reference](/languages/javascript/reference/README.md)

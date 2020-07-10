@@ -38,7 +38,7 @@
         "slug": "nullability",
         "uuid": "19962010-7b8c-4db1-bdae-ffc857b268e5",
         "concepts": ["nullability"],
-        "prerequisites": ["strings", "string-formatting", "conditionals"]
+        "prerequisites": ["conditionals", "strings", "string-formatting"]
       },
       {
         "slug": "numbers",
@@ -51,6 +51,18 @@
         "uuid": "4a967656-8615-474e-a009-5c0b09f4386f",
         "concepts": ["promises"],
         "prerequisites": ["arrays", "callbacks", "errors", "recursion"]
+      },
+      {
+        "slug": "recursion",
+        "uuid": "e9a9fa73-4497-43d5-a4ff-4eb319c98233",
+        "concepts": ["recursion"],
+        "prerequisites": [
+          "arrays",
+          "array-destructuring",
+          "array-loops",
+          "numbers",
+          "variable-parameters"
+        ]
       },
       {
         "slug": "strings",
