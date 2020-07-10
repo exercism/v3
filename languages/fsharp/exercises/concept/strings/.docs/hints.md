@@ -1,17 +1,17 @@
-### General
+## General
 
 - The `string` class has many useful [built-in methods][methods].
 
-### 1. Get message from a log line
+## 1. Get message from a log line
 
 - There are [several methods][index-of] to find the index at which some text occurs in a `string`.
 - Removing white space is [built-in][trim].
 
-### 2. Get log level from a log line
+## 2. Get log level from a log line
 
 - A `string` can be converted to lowercase using a [built-in method][to-lower].
 
-### 3. Reformat a log line
+## 3. Reformat a log line
 
 - There are several ways to [concatenate strings][string_concatenation].
 

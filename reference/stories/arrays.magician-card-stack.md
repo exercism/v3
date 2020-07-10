@@ -24,6 +24,15 @@ These are examples of tasks that fit the story of Elyse being a beginner:
 - Remove a card from the bottom of the stack
 - Check size of the stack
 
+This story can be continued to also teach array analysis:
+
+- Find the position of a card
+- Determine if a card is present
+- Determine if each card is even
+- Check if the stack contains an odd-value card
+- Get the first odd card from the stack
+- Determine the position of the first card that is even
+
 ## Terminology
 
 These are recommendations, not rules, for recurring terminology in the instructions (including stub commentary)
@@ -37,7 +46,13 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 ## Implementations
 
+### Array basics
+
 - [JavaScript][implementation-javascript] (reference implementation)
+
+### Array analysis
+
+- [JavaScript][implementation-javascript-2] (reference implementation)
 
 ## Alternative version
 
@@ -65,5 +80,6 @@ These are examples of tasks that fit the story of you wanting to re-arrange card
 
 [types-array]: ../types/array.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/arrays/.docs/instructions.md
+[implementation-javascript-2]: ../../languages/javascript/exercises/concept/array-analysis/.docs/instructions.md
 [implementation-javascript-research-1-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-1-a
 [implementation-javascript-research-2-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-2-a

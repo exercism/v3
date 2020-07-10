@@ -1,0 +1,14 @@
+{
+  "language": "Nim",
+  "active": true,
+  "blurb": "Nim is a system and applications programming language that is statically typed and compiled, designed to be efficient, expressive, and elegant. Being general-purpose it can fill a wide range of uses but has found a niche in game development and systems programming including embedded systems.",
+  "version": 3,
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 2
+  },
+  "exercises": {
+    "concept": [],
+    "practice": []
+  }
+}

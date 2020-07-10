@@ -1,0 +1,11 @@
+- [Start here](/)
+- Docs
+- [Languages](/languages/README.md)
+  - [Rust](/languages/rust/README.md)
+    - [Exercises](/languages/rust/exercises/README.md)
+    - [Reference](/languages/rust/reference/README.md)
+- Reference
+  - [Concepts](/reference/concepts/README.md)
+  - [Paradigms](/reference/paradigms/README.md)
+  - [Tooling](/reference/tooling/README.md)
+  - [Types](/reference/types/README.md)

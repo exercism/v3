@@ -8,11 +8,11 @@ Track specific exercises could cover precedence or unusual rules around boolean 
 
 ### Pac-man game logic
 
-This exercise looks at various game events and determine if they have occured by looking at various game states. The implementation in Elixir teaches:
+This exercise looks at various game events and determine if they have occured by looking at various game states. The reference implementation (Elixir) teaches:
 
-- boolean values
-- boolean operators
-- boolean operators precedence
+- Boolean values
+- Boolean operators
+- Boolean operator precedence
 
 #### Implementations
 
@@ -22,17 +22,23 @@ This exercise looks at various game events and determine if they have occured by
 
 ### RPG game logic
 
-This exercise determines whether specific characters are awake (true or false) and checks whether a certain plan will work or not dependent on which characters are sleeping. The implementation teaches:
+This exercise determines whether specific characters are awake (true or false) and checks whether a certain plan will work or not dependent on which characters are sleeping. The reference implementation (JavaScript) teaches:
 
-- boolean values
-- boolean operators
-- boolean operators precedence
+- Boolean values
+- Boolean operators
+- Boolean operator precedence
+
+#### Implementations
 
 | Track      | Exercise                              | Changes |
 | ---------- | ------------------------------------- | ------- |
+| C#         | [booleans][implementation-csharp]     | None    |
+| F#         | [booleans][implementation-fsharp]     | None    |
 | JavaScript | [booleans][implementation-javascript] | None    |
 | PureScript | [booleans][implementation-purescript] | None    |
 
 [implementation-elixir]: ../../languages/elixir/exercises/concept/booleans/.docs/introduction.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/booleans/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/booleans/.docs/introduction.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/booleans/.docs/introduction.md
 [implementation-purescript]: ../../languages/purescript/exercises/concept/booleans/.docs/introduction.md

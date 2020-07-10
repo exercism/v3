@@ -9,7 +9,7 @@ let describe number =
     | 1 -> "One"
 ```
 
-While this may look like switch statements in other languages, pattern matching starts to shine when also using other patterns. One such pattern is the _variable pattern_, which allows one to capture a value:
+While this may look like `switch` statements in other languages, pattern matching starts to shine when also using other patterns. One such pattern is the _variable pattern_, which allows one to capture a value:
 
 ```fsharp
 match number with
@@ -17,7 +17,7 @@ match number with
 | i -> sprintf: "Non zero: %d" i
 ```
 
-In some cases, you may want to add an additional condition to a pattern. This is knows as a _guard_ (clause), which can be added using the `when` keyword:
+In some cases, you may want to add an additional condition to a pattern. This is known as a _guard_ (clause), which can be added using the `when` keyword:
 
 ```fsharp
 match number with
