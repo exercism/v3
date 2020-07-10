@@ -9,6 +9,7 @@
         - [`arrays`](/languages/javascript/exercises/concept/arrays/.docs/instructions.md)
         - [`basics`](/languages/javascript/exercises/concept/basics/.docs/instructions.md)
         - [`booleans`](/languages/javascript/exercises/concept/booleans/.docs/instructions.md)
+        - [`nullability`](/languages/javascript/exercises/concept/nullability/.docs/instructions.md)
         - [`numbers`](/languages/javascript/exercises/concept/numbers/.docs/instructions.md)
         - [`promises`](/languages/javascript/exercises/concept/promises/.docs/instructions.md)
         - [`strings`](/languages/javascript/exercises/concept/strings/.docs/instructions.md)

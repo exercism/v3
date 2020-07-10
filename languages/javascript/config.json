@@ -35,6 +35,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "nullability",
+        "uuid": "19962010-7b8c-4db1-bdae-ffc857b268e5",
+        "concepts": ["nullability"],
+        "prerequisites": ["strings", "string-formatting", "conditionals"]
+      },
+      {
         "slug": "numbers",
         "uuid": "0aff2fa7-55ea-47e9-af4a-78927d916baf",
         "concepts": ["numbers"],

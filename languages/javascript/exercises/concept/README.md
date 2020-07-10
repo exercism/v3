@@ -15,13 +15,21 @@ A list of exercises that we _must_ have is compiled below, and is not at all a c
 - [x] [`/basics`][concept-basics]: `"basics"`
 - [x] [`/array-analysis`][concept-array-analysis]: `"array-analysis"`
 - [x] [`/arrays`][concept-arrays]: `"arrays"`
+- [ ] `"array-analysis"`
 - [x] [`/booleans`][concept-booleans]: `"booleans"`
 - [x] [`/numbers`][concept-numbers]: `"numbers"`
 - [x] [`/promises`][concept-promises]: `"promises"`
 - [x] [`/strings`][concept-strings]: `"strings"`
 - [ ] `"errors"`
 - [ ] `"callbacks"`
+- [ ] `"conditionals"`
+- [ ] `"errors"`
+- [x] [`/nullability`][concept-nullability]: `"nullability"`
+- [x] [`/numbers`][concept-numbers]: `"numbers"`
+- [x] [`/promises`][concept-promises]: `"promises"
 - [ ] `"recursion"`
+- [x] [`/strings`][concept-strings]: `"strings"`
+- [ ] `"string-formatting"`
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse. In this example, the `numbers` exercise only teaches basic number usage, and doesn't look into more advanced subjects. I would expect to see
 
@@ -63,6 +71,7 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-array-analysis]: ./array-analysis
 [concept-arrays]: ./arrays
 [concept-booleans]: ./booleans
+[concept-nullability]: ./nullability
 [concept-numbers]: ./numbers
 [concept-promises]: ./promises
 [concept-strings]: ./strings
