@@ -15,7 +15,7 @@ int a = 3, b = 4;
 int max = a > b ? a : b;
 ```
 
-`throw` expressions are an alternative to `throw` statements and are particularly useful when combined with ternary expressions.
+`throw` expressions are an alternative to `throw` statements and in particular can add to the power of ternary and other compound expressions.
 
 ```csharp
 string trimmed = str == null ? throw new ArgumentException() : str.Trim();

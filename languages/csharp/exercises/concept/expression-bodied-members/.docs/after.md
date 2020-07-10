@@ -6,7 +6,7 @@ int Times3(int input) => input * 3;
 int Interesting => 1729;
 ```
 
-Expression-bodied-members cannot have blocks of multiple statements, but those with a functional background should be warned that anything can be achieved by one of these members as a traditional member. The "expression" can be an assignment operation creating side effects, or a method invocation meaning that anything is possible.
+Expression-bodied-members cannot have blocks of multiple statements, but those with a functional background should be warned that anything that a traditional member can do can be achieved by one of these members. The "expression" can be an assignment operation creating side effects, or a method invocation meaning that anything is possible.
 
 #### Ternary Operators
 
@@ -19,11 +19,13 @@ int max = a > b ? a : b;
 
 #### Throw expressions
 
-`throw` expressions are an alternative to `throw` statements and are particularly useful when combined with ternary expressions.
+`throw` expressions are an alternative to `throw` statements and in particular can add to the power of ternary and other compound expressions.
 
 ```csharp
 string trimmed = str == null ? throw new ArgumentException() : str.Trim();
 ```
+
+If `str` is `null` in the avove code an exception is thrown.
 
 #### Reference
 
