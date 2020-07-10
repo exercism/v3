@@ -6,7 +6,7 @@ module.exports = {
         targets: {
           node: 'current',
         },
-        useBuiltIns: false,
+        useBuiltIns: true,
       },
 
     ],
