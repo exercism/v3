@@ -1,14 +1,14 @@
 {
-  "name": "@exercism/javascript-concept-basics",
-  "description": "Exercism concept exercise on basics",
-  "author": "Derk-Jan Karrenbeld <derk-jan+github@karrenbeld.info>",
+  "name": "@exercism/---",
+  "description": "---",
+  "author": "---",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/exercism/v3.git",
-    "directory": "languages/javascript/exercises/concept/basics"
+    "directory": "languages/javascript/exercises/concept/---"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
