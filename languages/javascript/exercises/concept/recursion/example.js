@@ -9,11 +9,6 @@ const PIZZA_PRICES = {
   Formaggio: 10,
 }
 
-const ADDITIONAL_SMALL_ORDER_FEE = {
-  1: 3,
-  2: 2,
-}
-
 /**
  * Determine the prize of the pizza given the pizza and optional extras
  *
@@ -43,9 +38,8 @@ export function pizzaPrice(pizza, ...[extra, ...otherExtras]) {
  * @returns {number} the price of the total order
  */
 export function orderPrice(pizzaOrders) {
-  const additionalFee = ADDITIONAL_SMALL_ORDER_FEE[pizzaOrders.length] || 0
-
-  return pizzaOrders.reduce((result, order) => {
-    return result + pizzaPrice(order.pizza, ...order.extras)
-  }, additionalFee)
+  return pizzaOrders.reduce(
+    (result, order) => result + pizzaPrice(order.pizza, ...order.extras),
+    0
+  )
 }

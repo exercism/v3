@@ -1,4 +1,4 @@
-import { pizzaPrice, orderPrice } from './recursion'
+import { pizzaPrice, orderPrice } from './example'
 
 class PizzaOrder {
   /**
@@ -80,14 +80,14 @@ describe('recursion', () => {
   describe('Order price for a single pizza caprese', () => {
     it("orderPrice([PizzaOrder('Caprese')])", () => {
       const order = new PizzaOrder('Caprese')
-      expect(orderPrice([order])).toBe(12)
+      expect(orderPrice([order])).toBe(9)
     })
   })
 
   describe('Order price for a single pizza formaggio with extra sauce', () => {
     it("orderPrice([PizzaOrder('Formaggio', 'ExtraSauce')])", () => {
       const order = new PizzaOrder('Formaggio', 'ExtraSauce')
-      expect(orderPrice([order])).toBe(14)
+      expect(orderPrice([order])).toBe(11)
     })
   })
 
@@ -96,10 +96,10 @@ describe('recursion', () => {
       const margherita = new PizzaOrder('Margherita')
       const caprese = new PizzaOrder('Caprese', 'ExtraToppings')
 
-      expect(orderPrice([margherita, caprese])).toBe(20)
+      expect(orderPrice([margherita, caprese])).toBe(18)
 
       // Also test that the order doesn't matter
-      expect(orderPrice([caprese, margherita])).toBe(20)
+      expect(orderPrice([caprese, margherita])).toBe(18)
     })
   })
 
@@ -119,10 +119,10 @@ describe('recursion', () => {
         'ExtraToppings'
       )
 
-      expect(orderPrice([saucyMargherita, toppedCaprese])).toBe(29)
+      expect(orderPrice([saucyMargherita, toppedCaprese])).toBe(27)
 
       // Also test that the order doesn't matter
-      expect(orderPrice([toppedCaprese, saucyMargherita])).toBe(29)
+      expect(orderPrice([toppedCaprese, saucyMargherita])).toBe(27)
     })
   })
 
