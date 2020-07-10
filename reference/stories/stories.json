@@ -82,6 +82,12 @@
         "slug": "elixir",
         "exercise": "nil",
         "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/nil/.docs/instructions.md"
+      },
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "nullability",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/nullability/.docs/instructions.md"
       }
     ]
   },
