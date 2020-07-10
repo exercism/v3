@@ -17,7 +17,7 @@ Tell a student what an array is in your language, how an array can be manipulate
 
 ### Stack of cards
 
-This exercise deals with manipulatating a stack of playing cards. The reference implementation (Javascript) teaches:
+This exercise deals with manipulating a stack of playing cards. The reference implementation (JavaScript) teaches:
 
 - Create an array
 - Accessing an element from an array
@@ -28,9 +28,42 @@ This exercise deals with manipulatating a stack of playing cards. The reference 
 
 #### Implementations
 
-| Track | Exercise                    | Changes |
-| ----- | --------------------------- | ------- |
-| JS    | [arrays][implementation-js] | None    |
+| Track      | Exercise                            | Changes |
+| ---------- | ----------------------------------- | ------- |
+| JavaScript | [arrays][implementation-javascript] | None    |
+
+### Stack of cards 2
+
+This exercise deals with analysis on a stack of playing cards. The reference implementation (JavaScript) teaches:
+
+- Find the index of an item in an array
+- Find the index of an item matching a predicate in an array
+- Test a predicate against all items in an array
+  - short-circuit on one true (`some`)
+  - short-circuit on one false (`every`)
+
+#### Implementations
+
+| Track      | Exercise                              | Changes |
+| ---------- | ------------------------------------- | ------- |
+| JavaScript | [arrays][implementation-javascript-2] | None    |
+
+### Garden bird count
+
+This exercise has one working with garden bird counts. The reference implementation (C#) teaches:
+
+- Define an array
+- Access an element in an array
+- Update an element in an array
+- Use functions on an array
+
+#### Implementations
+
+| Track | Exercise                        | Changes                                    |
+| ----- | ------------------------------- | ------------------------------------------ |
+| C#    | [arrays][implementation-csharp] | None                                       |
+| F#    | [arrays][implementation-fsharp] | Replace looping task with pattern matching |
 
 [type-collection]: ./collection.md
-[implementation-js]: ../../languages/javascript/exercises/concept/arrays/.docs/introduction.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/arrays/.docs/introduction.md
+[implementation-javascript-2]: ../../languages/javascript/exercises/concept/array-analysis/.docs/introduction.md

@@ -4,23 +4,9 @@ The concept exercises are based on this [list of concepts][reference-shared].
 
 ## Implemented exercises
 
-These are the concept exercises that have currently been implemented, as well as the concepts they teach and their prerequisite concepts:
+The list of completed exercises can be found in the C# track's [`config.json` file][config-json]. In that file, you can search for _concepts_ to ascertain which exercises they are featured in and the _prerequisites_ sections will show the relationships between the exercises.
 
-| exercise                                                            | concepts                                   | prerequisites                                                                     |
-| ------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------------------------------- |
-| [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`foreach-loops`               | `classes`<br/>`chars`<br/>`booleans`<br/>`conditionals`<br/>`for-loops`           |
-| [`basics`][concept-exercise-basics]                                 | `basics`                                   | -                                                                                 |
-| [`classes`][concept-exercise-classes]                               | `classes`                                  | `basics`<br/>`strings`<br/>`numbers`<br/>`conditionals`                           |
-| [`constructors`][concept-exercise-constructors]                     | `constructors`                             | `classes`<br/>`numbers`<br/>`conditionals`<br/>`while-loops`                      |
-| [`dates`][concept-exercise-datetimes]                               | `datetimes`                                | `numbers`<br/>`strings`<br/>`classes`                                             |
-| [`enums`][concept-exercise-enums]                                   | `enums`<br/>`pattern-matching-constants`   | `strings`<br/>`conditionals`                                                      |
-| [`flag-enums`][concept-exercise-flag-enums]                         | `flag-enums`<br/>`bit-manipulation`        | `enums`<br/>`attributes`</br>`integers`                                           |
-| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`while-loops` | `numbers`<br/>`conditionals`                                                      |
-| [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`               | `basics`                                                                          |
-| [`properties`][concept-exercise-properties]                         | `properties`                               | `numbers`<br/>`floating-point-numbers`<br/>`classes`<br/>`enums`<br/>`exceptions` |
-| [`strings`][concept-exercise-strings]                               | `strings`                                  | `basics`                                                                          |
-
-It's only important that it's reasonably easy to _find_ the exercise. It's okay if the name isn't perfect. We **will** iterate on this.
+The [`config.json` file][config-json] should be updated, as part of the PR, as the last stage in implementing an exercise. This also applies when improving an exercise if you modify the set of concepts or prerequisites.
 
 ## TODO
 
@@ -29,18 +15,6 @@ Thanks for wanting to contribute to the C# track's concept exercises! Contributi
 To contribute, please find and work on one of the [new exercise issues][issues-new-exercise] or [improve exercise issues][issues-improve-exercise].
 
 [reference-shared]: ../../reference/README.md
-[reference]: ./reference.md
-[concept-exercises]: ./concept/README.md
-[concept-exercise-arrays]: ./arrays/.meta/design.md
-[concept-exercise-basics]: ./basics/.meta/design.md
-[concept-exercise-classes]: ./classes/.meta/design.md
-[concept-exercise-constructors]: ./constructors/.meta/design.md
-[concept-exercise-flag-enums]: ./flag-enums/.meta/design.md
-[concept-exercise-datetimes]: ./datetimes/.meta/design.md
-[concept-exercise-enums]: ./enums/.meta/design.md
-[concept-exercise-floating-point-numbers]: ./floating-point-numbers/.meta/design.md
-[concept-exercise-numbers]: ./numbers/.meta/design.md
-[concept-exercise-properties]: ./properties/.meta/design.md
-[concept-exercise-strings]: ./strings/.meta/design.md
 [issues-new-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fnew-exercise+label%3Astatus%2Fhelp-wanted
 [issues-improve-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fcsharp+label%3Atype%2Fimprove-exercise+label%3Astatus%2Fhelp-wanted
+[config-json]: https://github.com/exercism/v3/blob/master/languages/csharp/config.json

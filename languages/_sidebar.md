@@ -3,6 +3,7 @@
 - [Languages](/languages/README.md)
   - [Bash](/languages/bash/README.md)
   - [C](/languages/c/README.md)
+  - [C++](/languages/cpp/README.md)
   - [C#](/languages/csharp/README.md)
   - [Clojure](/languages/clojure/README.md)
   - [Common Lisp](/languages/common-lisp/README.md)
@@ -16,6 +17,7 @@
   - [JavaScript](/languages/javascript/README.md)
   - [Julia](/languages/julia/README.md)
   - [Kotlin](/languages/kotlin/README.md)
+  - [Nim](/languages/nim/README.md)
   - [OCaml](/languages/ocaml/README.md)
   - [PureScript](/languages/purescript/README.md)
   - [Python](/languages/python/README.md)
@@ -24,6 +26,7 @@
   - [Rust](/languages/rust/README.md)
   - [Scala](/languages/scala/README.md)
   - [Scheme](/languages/scheme/README.md)
+  - [Swift](/languages/swift/README.md)
   - [Typescript](/languages/typescript/README.md)
   - [x86-64 Assembly](/languages/x86-64-assembly/README.md)
 - Reference
