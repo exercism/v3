@@ -71,7 +71,7 @@ The Ruby concept exercises are based on concepts. The list below contains the co
   - else
   - elsif
   - unless
-  - switch
+  - case
   - ternary operator
 - Loops
   - `each`
