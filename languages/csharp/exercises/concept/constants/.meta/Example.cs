@@ -12,12 +12,12 @@ public class Authenticator
         public const string Brey = "grey";
     }
 
+    private readonly Identity admin;
+
     public Authenticator(Identity admin)
     {
         this.admin = admin;
     }
-
-    private readonly Identity admin;
 
     private readonly IDictionary<string, Identity> developers
         = new Dictionary<string, Identity>
