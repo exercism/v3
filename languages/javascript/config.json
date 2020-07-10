@@ -11,21 +11,10 @@
   "exercises": {
     "concept": [
       {
-        "slug": "numbers",
-        "uuid": "0aff2fa7-55ea-47e9-af4a-78927d916baf",
-        "concepts": ["numbers", "type-conversion"],
-        "prerequisites": []
-      },
-      {
-        "slug": "strings",
-        "uuid": "39549583-1889-490a-bf98-ffb2e0aefe44",
-        "concepts": ["strings"]
-      },
-      {
-        "slug": "booleans",
-        "uuid": "5acafcbb-20a0-45b9-b276-3d167e0de313",
-        "concepts": ["booleans"],
-        "prerequisites": []
+        "slug": "array-analysis",
+        "uuid": "45d956db-d4ef-4468-b1d3-47021f172c15",
+        "concepts": ["array-analysis"],
+        "prerequisites": ["arrays", "booleans", "callbacks", "numbers"]
       },
       {
         "slug": "arrays",
@@ -34,10 +23,52 @@
         "prerequisites": ["numbers"]
       },
       {
+        "slug": "basics",
+        "uuid": "97bf898a-36fc-47fc-b870-01fc0c7fe554",
+        "concepts": ["basics"],
+        "prerequisites": []
+      },
+      {
+        "slug": "booleans",
+        "uuid": "5acafcbb-20a0-45b9-b276-3d167e0de313",
+        "concepts": ["booleans"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "nullability",
+        "uuid": "19962010-7b8c-4db1-bdae-ffc857b268e5",
+        "concepts": ["nullability"],
+        "prerequisites": ["conditionals", "strings", "string-formatting"]
+      },
+      {
+        "slug": "numbers",
+        "uuid": "0aff2fa7-55ea-47e9-af4a-78927d916baf",
+        "concepts": ["numbers"],
+        "prerequisites": ["basics"]
+      },
+      {
         "slug": "promises",
         "uuid": "4a967656-8615-474e-a009-5c0b09f4386f",
         "concepts": ["promises"],
-        "prerequisites": ["arrays", "errors", "callbacks", "recursion"]
+        "prerequisites": ["arrays", "callbacks", "errors", "recursion"]
+      },
+      {
+        "slug": "recursion",
+        "uuid": "e9a9fa73-4497-43d5-a4ff-4eb319c98233",
+        "concepts": ["recursion"],
+        "prerequisites": [
+          "arrays",
+          "array-destructuring",
+          "array-loops",
+          "numbers",
+          "variable-parameters"
+        ]
+      },
+      {
+        "slug": "strings",
+        "uuid": "39549583-1889-490a-bf98-ffb2e0aefe44",
+        "concepts": ["strings"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []

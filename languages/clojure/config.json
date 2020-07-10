@@ -3,12 +3,16 @@
   "active": true,
   "blurb": "a JVM hosted functional programming language.",
   "version": 3,
-  "online_editor": {
-    "indent_style": "space",
-    "indent_size": 2
-  },
+  "online_editor": { "indent_style": "space", "indent_size": 2 },
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+        "slug": "lists",
+        "uuid": "0d05620f-3ef9-43aa-8e89-660187e090f3",
+        "concepts": ["lists"],
+        "prerequisites": []
+      }
+    ],
     "practice": []
   }
 }

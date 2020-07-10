@@ -9,9 +9,9 @@ At its lowest speed (`1`), `221` cars are produced each hour. The production inc
 
 You have two tasks.
 
-### 1. Calculate the production rate per hour
+## 1. Calculate the production rate per hour
 
-Implement the `AssemblyLine.ProductionRatePerHour()` method to calculate the assembly line's production rate per hour, taking into account its success rate:
+Implement the (_static_) `AssemblyLine.ProductionRatePerHour()` method to calculate the assembly line's production rate per hour, taking into account its success rate:
 
 ```csharp
 AssemblyLine.ProductionRatePerHour(6)
@@ -20,9 +20,9 @@ AssemblyLine.ProductionRatePerHour(6)
 
 Note that the value returned is a `double`.
 
-### 2. Calculate the number of working items produced per minute
+## 2. Calculate the number of working items produced per minute
 
-Implement the `AssemblyLine.WorkingItemsPerMinute()` method to calculate how many working cars are produced per minute:
+Implement the (_static_) `AssemblyLine.WorkingItemsPerMinute()` method to calculate how many working cars are produced per minute:
 
 ```csharp
 AssemblyLine.WorkingItemsPerMinute(6)

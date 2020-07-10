@@ -51,7 +51,7 @@ The code files are track-specific and should be designed to help the student lea
 **Purpose:** Provide a stub implementation.
 
 - The stub implementation's code should compile. The only exception is for exercises that introduce syntax we _want_ a student to define themselves, like how to define a class or property. In this case, insert a descriptive TODO comment instead of providing stub code (see [this example][todo]).
-- Stub methods should throw a `NotImplementedException` which message contains the method to implement (see [this example][not-implemented]).
+- Stub methods should throw a `NotImplementedException` which message contains the method to implement, see [this instance method example][not-implemented]. The message is subtly different for static stub methods, see [this static method example][not-implemented-static].
 
 For more information, please read [this in-depth description][stub-file], [watch this video][video-stub-file] and check [this example stub file][example-stub-file].
 
@@ -62,6 +62,8 @@ For more information, please read [this in-depth description][stub-file], [watch
 - [xUnit][xunit] is used as the test framework.
 - Only use `Fact` tests; don't use `Theory` tests.
 - All but the first test should be skipped by default (check [this example][skip-fact]).
+- Test methods must be named using `snake_case`, with the first character uppercased (check [this example][test-name]).
+- Test methods must have a single assertion.
 
 For more information, please read [this in-depth description][tests-file], [watch this video][video-tests-file] and check [this example tests file][example-tests-file].
 
@@ -142,8 +144,10 @@ If you have any questions regarding implementing the exercise, please post them 
 [example-example-file]: ../exercises/concept/strings/.meta/Example.cs
 [example-project-file]: ../exercises/concept/strings/Strings.csproj
 [skip-fact]: ../exercises/concept/strings/StringsTests.cs#L11
+[test-name]: ../exercises/concept/strings/StringsTests.cs#L24
 [xunit]: https://xunit.net/
-[not-implemented]: ../exercises/concept/strings/Strings.cs#L5
+[not-implemented-static]: ../exercises/concept/arrays/Arrays.cs#L12
+[not-implemented]: ../exercises/concept/arrays/Arrays.cs#L17
 [todo]: ../exercises/concept/basics/Basics.cs
 [stub-file]: ../../../docs/concept-exercises.md#stub-implementation-file
 [tests-file]: ../../../docs/concept-exercises.md#tests-file

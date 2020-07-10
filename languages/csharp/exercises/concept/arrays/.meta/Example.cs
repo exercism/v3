@@ -1,6 +1,6 @@
 using System;
 
-public class BirdCount
+class BirdCount
 {
     private int[] birdsPerDay;
 
@@ -9,13 +9,33 @@ public class BirdCount
         this.birdsPerDay = birdsPerDay;
     }
 
-    public int Total()
+    public static int[] LastWeek()
+    {
+        return new int[] { 0, 2, 5, 3, 7, 8, 4 };
+    }
+
+    public int Today()
+    {
+        return birdsPerDay[6];
+    }
+
+    public void IncrementTodaysCount()
+    {
+        birdsPerDay[6]++;
+    }
+
+    public bool HasDayWithoutBirds()
+    {
+        return Array.IndexOf(birdsPerDay, 0) != -1;
+    }
+
+    public int CountForFirstDays(int numberOfDays)
     {
         var total = 0;
 
-        foreach (var count in birdsPerDay)
+        for (var i = 0; i < numberOfDays; i++)
         {
-            total += count;
+            total += birdsPerDay[i];
         }
 
         return total;
@@ -34,20 +54,5 @@ public class BirdCount
         }
 
         return days;
-    }
-
-    public int Yesterday()
-    {
-        return birdsPerDay[5];
-    }
-
-    public bool HasDayWithoutBirds()
-    {
-        return Array.IndexOf(birdsPerDay, 0) != -1;
-    }
-
-    public static int[] LastWeek()
-    {
-        return new int[] { 0, 2, 5, 3, 7, 8, 4 };
     }
 }

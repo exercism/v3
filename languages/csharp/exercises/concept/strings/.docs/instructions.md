@@ -10,9 +10,9 @@ There are three different log levels:
 
 You have three tasks, each of which will take a log line and ask you to do something with it.
 
-### 1. Get message from a log line
+## 1. Get message from a log line
 
-Implement the `LogLine.Message()` method to return a log line's message:
+Implement the (_static_) `LogLine.Message()` method to return a log line's message:
 
 ```csharp
 LogLine.Message("[ERROR]: Invalid operation")
@@ -26,18 +26,18 @@ LogLine.Message("[WARNING]:  Disk almost full\r\n")
 // => "Disk almost full"
 ```
 
-### 2. Get log level from a log line
+## 2. Get log level from a log line
 
-Implement the `LogLine.LogLevel()` method to return a log line's log level, which should be returned in lowercase:
+Implement the (_static_) `LogLine.LogLevel()` method to return a log line's log level, which should be returned in lowercase:
 
 ```csharp
 LogLine.LogLevel("[ERROR]: Invalid operation")
 // => "error"
 ```
 
-### 3. Reformat a log line
+## 3. Reformat a log line
 
-Implement the `LogLine.Reformat()` method that reformats the log line, putting the message first and the log level after it in parentheses:
+Implement the (_static_) `LogLine.Reformat()` method that reformats the log line, putting the message first and the log level after it in parentheses:
 
 ```csharp
 LogLine.Reformat("[INFO]: Operation completed")

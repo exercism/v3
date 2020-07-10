@@ -1,9 +1,3 @@
-# Design
-
-## Goal
-
-The goal of this exercise is to teach the student the basics of programming in [F#][values].
-
 ## Learning objectives
 
 - Know what a value is.
@@ -41,17 +35,11 @@ The goal of this exercise is to teach the student the basics of programming in [
 
 ## Concepts
 
-The Concepts this exercise unlocks are:
-
 - `basics`: know what a value is; know how to define a binding; know that bindings are immutable; know how to define scope using significant whitespace; know that bindings require dependency order; know how to define a function; know how to return a value from a function; know how to call a function; know what type inference is; know how type inference works for bindings; know how to define an integer; know how to use mathematical operators on integers; Know how to define single- and multiline comments.
 
 ## Prequisites
 
 There are no prerequisites.
-
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
 
 ## Analyzer
 
@@ -59,8 +47,7 @@ This exercise could benefit from the following rules added to the the [analyzer]
 
 - Verify that the whitespace adheres to community defaults.
 - Verify that the `remainingMinutesInOven` function uses the `expectedMinutesInOven` binding.
-- Verify that the `totalTimeInMinutes` function actually calls the `preparationTimeInMinutes` function.
+- Verify that the `elapsedTimeInMinutes` function actually calls the `preparationTimeInMinutes` function.
 
 [analyzer]: https://github.com/exercism/fsharp-analyzer
-[representer]: https://github.com/exercism/fsharp-representer
 [values]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/values/

@@ -2,7 +2,7 @@ To allow a single enum instance to represent multiple values (usually referred t
 
 ```csharp
 [Flags]
-public enum PhoneFeatures
+enum PhoneFeatures
 {
     Call = 1,
     Text = 2
@@ -13,14 +13,14 @@ Besides using regular integers to set the flag enum members' values, one can als
 
 ```csharp
 [Flags]
-public enum PhoneFeaturesBinary
+enum PhoneFeaturesBinary
 {
     Call = 0b00000001,
     Text = 0b00000010
 }
 
 [Flags]
-public enum PhoneFeaturesBitwiseShift
+enum PhoneFeaturesBitwiseShift
 {
     Call = 1 << 0,
     Text = 1 << 1
@@ -31,7 +31,7 @@ An enum member's value can refer to other enum members values:
 
 ```csharp
 [Flags]
-public enum PhoneFeatures
+enum PhoneFeatures
 {
     Call = 0b00000001,
     Text = 0b00000010,
@@ -57,7 +57,7 @@ features.HasFlag(PhoneFeatures.Call); // => false
 features.HasFlag(PhoneFeatures.Text); // => true
 ```
 
-The bitwise operators can also be used as [compound assignments][compound-operators], which are a shorthand notation where `x = op y` can be written as `x op= y`:
+The bitwise operators can also be used as [compound assignments][compound-assignment], which are a shorthand notation where `x = op y` can be written as `x op= y`:
 
 ```csharp
 var features = PhoneFeatures.Call;
@@ -71,7 +71,7 @@ By default, the `int` type is used for enum member values. One can use a differe
 
 ```csharp
 [Flags]
-public enum PhoneFeatures : byte
+enum PhoneFeatures : byte
 {
     Call = 0b00000001,
     Text = 0b00000010
@@ -85,4 +85,4 @@ public enum PhoneFeatures : byte
 [bitwise-complement-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#bitwise-complement-operator-
 [binary-literals]: https://riptutorial.com/csharp/example/6327/binary-literals
 [has-flag]: https://docs.microsoft.com/en-us/dotnet/api/system.enum.hasflag?view=netcore-3.1
-[compound-operators]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#compound-assignment
+[compound-assignment]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#compound-assignment

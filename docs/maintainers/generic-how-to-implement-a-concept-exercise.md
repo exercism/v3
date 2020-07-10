@@ -123,6 +123,14 @@ For many concepts, a reference document exists in the `reference/concepts` or `r
 
 See [this example file][example-reference-document-implementations].
 
+## Add or update story document
+
+**Purpose:** Allow maintainers to find out which tracks have implemented an exercise for a story.
+
+Each exercise has a story or theme. The stories people have created so far are documented in the `reference/stories` directory. If such a document exists for the exercise's story, add the exercise to the corresponding exercise's `Implementations` section. When no story document exists, consider adding one.
+
+See [this example file][example-story-document-implementations].
+
 ## Update analyzer (optional)
 
 Some exercises could benefit from having an exercise-specific analyzer. If so, please check the track's analyzer document for details on how to do this.
@@ -164,7 +172,8 @@ If you have any questions regarding implementing this exercise, please post them
 [example-meta-design.md]: ../../languages/csharp/exercises/concept/numbers/.meta/design.md
 [example-meta-config.json]: ../../languages/csharp/exercises/concept/flag-enums/.meta/config.json
 [example-config.json]: ../../languages/csharp/config.json
-[example-reference-document-implementations]: ../..//reference/types/string.md#exercises
+[example-reference-document-implementations]: ../../reference/types/string.md#exercises
+[example-story-document-implementations]: ../../reference/stories/basics.lasagna.md#implementation
 [video-docs-introduction.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=77
 [video-docs-instructions.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=309
 [video-docs-hints.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=482

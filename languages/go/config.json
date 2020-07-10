@@ -9,7 +9,50 @@
   },
   "ignore_pattern": "example(?!.*test)",
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+        "slug": "basics",
+        "uuid": "6396fe40-ff11-4ff5-b880-9681bce30a6e",
+        "concepts": ["basics"],
+        "prerequisites": [""]
+      },
+      {
+        "slug": "conditionals",
+        "uuid": "9e71eb44-1189-423c-b2bb-ba7e92cc98c7",
+        "concepts": ["conditionals-if", "conditionals-switch", "booleans"],
+        "prerequisites": ["numbers", "basic-strings"]
+      },
+      {
+        "slug": "errors",
+        "uuid": "397dc808-7016-4d40-8ac7-4395e12bd19f",
+        "concepts": ["errors"],
+        "prerequisites": ["basics", "constants", "types"]
+      },
+      {
+        "slug": "maps",
+        "uuid": "8c1da631-3600-405b-83f7-21fa76bf05b6",
+        "concepts": ["maps"],
+        "prerequisites": ["numbers", "conditionals", "functions"]
+      },
+      {
+        "slug": "numbers",
+        "uuid": "88215fa2-eba8-430e-988f-21a924f18f7b",
+        "concepts": ["numbers", "conditionals"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "slices",
+        "uuid": "8bc0c6f6-1891-4688-9ed7-a63e3702f655",
+        "concepts": ["slices"],
+        "prerequisites": ["arrays", "numbers"]
+      },
+      {
+        "slug": "strings",
+        "uuid": "b97a271c-4036-4ea8-8c6a-094715a48627",
+        "concepts": ["strings"],
+        "prerequisites": ["basics"]
+      }
+    ],
     "practice": []
   }
 }
