@@ -12,7 +12,7 @@ func TestEmptyInterface(t *testing.T) {
 	}
 	t.Run(test.name, func(t *testing.T) {
 		if got := EmptyInterface(); got != test.want {
-			t.Errorf("EmptyInterface returned %s, wanted %s", got, test.want)
+			t.Errorf("EmptyInterface() = %v, want %v", got, test.want)
 		}
 	})
 }
@@ -28,7 +28,7 @@ func TestEmptyMap(t *testing.T) {
 	}
 	t.Run(test.name, func(t *testing.T) {
 		if got := EmptyMap(); got != nil {
-			t.Errorf("EmptyMap returned %v, wanted %v", got, test.want)
+			t.Errorf("EmptyMap() = %v, want %v", got, test.want)
 		}
 	})
 }
@@ -44,7 +44,7 @@ func TestEmptySlice(t *testing.T) {
 	}
 	t.Run(test.name, func(t *testing.T) {
 		if got := EmptySlice(); got != nil {
-			t.Errorf("EmptySlice returned %p, wanted %p", got, test.want)
+			t.Errorf("EmptySlice() = %p, want %p", got, test.want)
 		}
 	})
 }
@@ -60,7 +60,7 @@ func TestEmptyString(t *testing.T) {
 	}
 	t.Run(test.name, func(t *testing.T) {
 		if got := EmptyString(); got != test.want {
-			t.Errorf("EmptyString returned %s, wanted %s", got, test.want)
+			t.Errorf("EmptyString() = %s, want %s", got, test.want)
 		}
 	})
 }
@@ -76,7 +76,7 @@ func TestEmptyChannel(t *testing.T) {
 	}
 	t.Run(test.name, func(t *testing.T) {
 		if got := EmptyChannel(); got != test.want {
-			t.Errorf("EmptyChannel returned %v, wanted %v", got, test.want)
+			t.Errorf("EmptyChannel() = %v, want %v", got, test.want)
 		}
 	})
 }
@@ -92,7 +92,7 @@ func TestEmptyPointer(t *testing.T) {
 	}
 	t.Run(test.name, func(t *testing.T) {
 		if got := EmptyPointer(); got != test.want {
-			t.Errorf("EmptyPointer returned %v, wanted %v", got, test.want)
+			t.Errorf("EmptyPointer() = %v, want %v", got, test.want)
 		}
 	})
 }
@@ -108,7 +108,7 @@ func TestEmptyBool(t *testing.T) {
 	}
 	t.Run(test.name, func(t *testing.T) {
 		if got := EmptyBool(); got != test.want {
-			t.Errorf("EmptyBool returned %t, wanted %t", got, test.want)
+			t.Errorf("EmptyBool() = %t, want %t", got, test.want)
 		}
 	})
 }
@@ -117,7 +117,7 @@ func TestEmptyFunc(t *testing.T) {
 	t.Skip()
 	t.Run("EmptyFunc", func(t *testing.T) {
 		if got := EmptyFunc(); got != nil {
-			t.Errorf("EmptyFunc returned something other than nil")
+			t.Errorf("EmptyFunc() returned something other than nil")
 		}
 	})
 }
@@ -133,7 +133,7 @@ func TestEmptyInt(t *testing.T) {
 	}
 	t.Run(test.name, func(t *testing.T) {
 		if got := EmptyInt(); got != test.want {
-			t.Errorf("EmptyInt returned %d, wanted %d", got, test.want)
+			t.Errorf("EmptyInt() = %d, want %d", got, test.want)
 		}
 	})
 }
