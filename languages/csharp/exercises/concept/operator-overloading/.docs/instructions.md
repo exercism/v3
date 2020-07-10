@@ -1,6 +1,6 @@
 You've been tempted back to Hyperia (with the high inflation) for an eye watering daily rate.
 
-The Central Bank is contemplating introducing the US Dollar as a second currency so all the accounting systems have to be adapted to handle two currencies.
+The Central Bank is contemplating introducing the US Dollar as a second currency so all the accounting systems have to be adapted to handle multiple currencies.
 
 You have been asked to implement the currency object.
 
