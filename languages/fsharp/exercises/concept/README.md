@@ -8,15 +8,17 @@ These are the Concept Exercises that have currently been implemented, as well as
 
 | exercise                                                            | concepts                     | prerequisites                                                                          |
 | ------------------------------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------- |
-| [`basics`][concept-exercise-basics]                                 | `basics`                     |
+| [`arrays`][concept-exercise-arrays]                                 | `arrays`                     | `booleans`</br>`pattern-matching`                                                      |
+| [`basics`][concept-exercise-basics]                                 | `basics`                     |                                                                                        |
 | [`booleans`][concept-exercise-booleans]                             | `booleans`                   | `basics`                                                                               |
-| [`datetimes`][concept-exercise-datetimes]                           | `datetimes`                  | `numbers`<br/>`strings`<br/>`classes`                                                  |
+| [`datetimes`][concept-exercise-datetimes]                           | `datetimes`                  | `classes`<br/>`numbers`<br/>`strings`                                                  |
 | [`discriminated-unions`][concept-exercise-discriminated-unions]     | `discriminated-unions`       | `pattern-matching`                                                                     |
-| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`     | `numbers`<br/>`conditionals`                                                           |
-| [`lists`][concept-exercise-lists]                                   | `lists`                      | `strings`<br/>`booleans`<br/>`pattern-matching`                                        |
-| [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals` | `basics`                                                                               |
-| [`pattern-matching`][concept-exercise-pattern-matching]             | `pattern-matching`           | `strings`<br/>`conditionals`                                                           |
-| [`recursion`][concept-exercise-recursion]                           | `recursion`                  | `pattern-matching`<br/>`discriminated-unions`<br/>`lists`<br/>`higher-order-functions` |
+| [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`     | `conditionals`<br/>`numbers`                                                           |
+| [`lists`][concept-exercise-lists]                                   | `lists`                      | `booleans`<br/>`pattern-matching`<br/>`strings`                                        |
+| [`numbers`][concept-exercise-numbers]                               | `conditionals`<br/>`numbers` | `basics`                                                                               |
+| [`pattern-matching`][concept-exercise-pattern-matching]             | `pattern-matching`           | `conditionals`<br/>`strings`                                                           |
+| [`records`][concept-exercise-records]                               | `records`                    | `booleans`<br/>`numbers`<br/>`pattern-matching`<br/>`strings`                          |
+| [`recursion`][concept-exercise-recursion]                           | `recursion`                  | `discriminated-unions`<br/>`higher-order-functions`<br/>`lists`<br/>`pattern-matching` |
 | [`strings`][concept-exercise-strings]                               | `strings`                    | `basics`                                                                               |
 
 ## TODO
@@ -28,6 +30,7 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [reference-shared]: ../../reference/README.md
 [reference]: ./reference.md
 [concept-exercises]: ./concept/README.md
+[concept-exercise-arrays]: ./arrays/.meta/design.md
 [concept-exercise-basics]: ./basics/.meta/design.md
 [concept-exercise-booleans]: ./booleans/.meta/design.md
 [concept-exercise-datetimes]: ./datetimes/.meta/design.md
@@ -35,6 +38,7 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-exercise-strings]: ./strings/.meta/design.md
 [concept-exercise-numbers]: ./numbers/.meta/design.md
 [concept-exercise-pattern-matching]: ./pattern-matching/.meta/design.md
+[concept-exercise-records]: ./records/.meta/design.md
 [concept-exercise-recursion]: ./recursion/.meta/design.md
 [concept-exercise-discriminated-unions]: ./discriminated-unions/.meta/design.md
 [concept-exercise-floating-point-numbers]: ./floating-point-numbers/.meta/design.md

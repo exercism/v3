@@ -109,7 +109,7 @@ Python is an interpreted, dynamically (but strongly) typed, and garbage-collecte
     - [ ] [`while`][keyword-while]
   - [ ] [`for` loops][for-loops]
     - [ ] [`for`][keyword-for]
-  - Exiting loops
+  - [ ] [Exiting loops][exiting-loops]
     - [ ] [`break`][keyword-break]
     - [ ] [`continue`][keyword-continue]
   - [ ] [Iteration][iteration]
@@ -456,6 +456,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 [exception-hierarchy]: ./concepts/exception_hierarchy.md
 [exception-message]: ./concepts/exception_message.md
 [exceptions-general]: ./concepts/exceptions.md
+[exiting-loops]: ./concepts/exiting_loops.md
 [expressions]: ./concepts/expressions.md
 [for-loops]: ./concepts/for_loops.md
 [function-definition]: ./concepts/function_definition.md
@@ -585,7 +586,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [`*args`][star-args]                                                         | `general`                                         |                        [ ]()                        |                      [ ]()                      |
 | [Arguments & Parameters][arguments-and-parameters]                           | `general`                                         |                        [ ]()                        |                      [ ]()                      |
 | [Argument unpacking][argument-unpacking]                                     | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
-| [as][keyword-as]                                                             | `intermediate`,`keyword`                          |                        [ ]()                        |                      [ ]()                      |
+| [as][keyword-as]                                                             | `intermediate`,`keyword`                          | [#1516](https://github.com/exercism/v3/issues/1516) |                      [ ]()                      |
 | [assert][keyword-assert]                                                     | `exceptions`, `intermediate`, `keyword`           |                        [ ]()                        |                      [ ]()                      |
 | [Assignment][assignment]                                                     | `general`                                         |                        [ ]()                        |                      [ ]()                      |
 | [Binary numbers][binary-numbers]                                             | `general`                                         |                        [ ]()                        |                      [ ]()                      |
@@ -598,7 +599,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [Boolean values][boolean-values]                                             | `general`                                         | [#1030](https://github.com/exercism/v3/issues/1030) |                      [ ]()                      |
 | [Booleans are integers][booleans-are-integers]                               | `general`                                         |                        [ ]()                        |                      [ ]()                      |
 | [Bracket notation][bracket-notation]                                         | `general`                                         |                        [ ]()                        |                      [ ]()                      |
-| [break][keyword-break]                                                       | `general`, `keyword`                              |                   DavidGerva[ ]()                   |                      [ ]()                      |
+| [break][keyword-break]                                                       | `general`, `keyword`                              | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
 | [bytearray][builtin-types-bytearray]                                         | `intermediate`, `types`, `builtins`               |                        [ ]()                        |                      [ ]()                      |
 | [bytes][builtin-types-bytes]                                                 | `intermediate`                                    |                        [ ]()                        |                      [ ]()                      |
 | [Call semantics][call-semantics]                                             | `general`                                         |                        [ ]()                        |                      [ ]()                      |
@@ -618,7 +619,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [Constructor][constructor]                                                   | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
 | [Conditional structures][conditional-structures]                             | `general`                                         | [#1103](https://github.com/exercism/v3/issues/1103) |                      [ ]()                      |
 | [Constants][constants]                                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
-| [continue][keyword-continue]                                                 | `general`, `keyword`                              |                   DavidGerva[ ]()                   |                      [ ]()                      |
+| [continue][keyword-continue]                                                 | `general`, `keyword`                              | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
 | [Custom Classes][custom-classes]                                             | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
 | [Data Structures][data-structures]                                           | `intermediate`, `data-structures`                 |                        [ ]()                        |                      [ ]()                      |
 | [decorators][decorators]                                                     | `functional`, `intermediate`                      |                        [ ]()                        |                      [ ]()                      |
@@ -646,16 +647,16 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [Exception handling][exception-handling]                                     | `intermediate`                                    |                        [ ]()                        |                      [ ]()                      |
 | [Exception hierarchy][exception-hierarchy]                                   | `intermediate`                                    |                        [ ]()                        |                      [ ]()                      |
 | [Exception message][exception-message]                                       | `intermediate`                                    |                        [ ]()                        |                      [ ]()                      |
-| [Exiting loops][]                                                            | `general`                                         |                   DavidGerva[ ]()                   |                      [ ]()                      |
+| [Exiting loops][exiting-loops]                                               | `general`                                         | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
 | [Expressions][expressions]                                                   | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
 | [False][keyword-false]                                                       | `basic`, `builtin`, `keyword`                     | [#1030](https://github.com/exercism/v3/issues/1030) |                      [ ]()                      |
 | [filter][builtin-functions-filter]                                           | `functional`, `builtin`                           |                        []()                         |                      []()                       |
 | [finally][keyword-false]                                                     | `intermediate`,, `keyword`                        |                        [ ]()                        |                      [ ]()                      |
 | [float][builtin-types-float]                                                 | `basic`, `types`, `builtin`                       | [#1026](https://github.com/exercism/v3/issues/1026) |                                                 |
-| [for][keyword-for]                                                           | `general`, `keyword`                              | [#1394](https://github.com/exercism/v3/issues/1394) |                      [ ]()                      |
-| [for loops][for-loops]                                                       | `general`                                         | [#1394](https://github.com/exercism/v3/issues/1394) |                      [ ]()                      |
+| [for][keyword-for]                                                           | `general`, `keyword`                              | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
+| [for loops][for-loops]                                                       | `general`                                         | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
 | [frozenset][builtin-types-frozenset]                                         | `intermediate`, `types`, `builtins`, `containers` |                        [ ]()                        |                      [ ]()                      |
-| [from][keyword-from]                                                         | `intermediate`, `keyword`                         |                        [ ]()                        |                      [ ]()                      |
+| [from][keyword-from]                                                         | `intermediate`, `keyword`                         | [#1516](https://github.com/exercism/v3/issues/1516) |                      [ ]()                      |
 | [Functions][functions-general]                                               | `general`                                         |                        [ ]()                        |                      [ ]()                      |
 | [Function Definition][function-definition]                                   | `general`                                         |                        [ ]()                        |                      [ ]()                      |
 | [Function Signature][function-signature]                                     | `general`                                         |                        [ ]()                        |                      [ ]()                      |
@@ -668,8 +669,8 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [Immutability][immutability]                                                 | `functional`                                      |                        [ ]()                        |                      [ ]()                      |
 | [Immutability in Python][immutability]                                       | `general`, `OOP`                                  |                        [ ]()                        |                      [ ]()                      |
 | [implicit self][implicit-self]                                               | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
-| [import][keyword-import]                                                     | `intermediate`, `keyword`                         |                        [ ]()                        |                      [ ]()                      |
-| [importing][importing]                                                       | `intermediate`                                    |                        [ ]()                        |                      [ ]()                      |
+| [import][keyword-import]                                                     | `intermediate`, `keyword`                         | [#1516](https://github.com/exercism/v3/issues/1516) |                      [ ]()                      |
+| [importing][importing]                                                       | `intermediate`                                    | [#1516](https://github.com/exercism/v3/issues/1516) |                      [ ]()                      |
 | [in][keyword-in]                                                             | `basic`, `keyword`                                |                        [ ]()                        |                      [ ]()                      |
 | [Indexing][indexing]                                                         | `general`                                         |                        [ ]()                        |                      [ ]()                      |
 | [Inequality][inequality]                                                     | `general`                                         |                        [ ]()                        |                      [ ]()                      |
@@ -696,7 +697,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [Lookup efficiency][lookup-efficiency]                                       | `intermediate`, `data-structures`                 |                        [ ]()                        |                      [ ]()                      |
 | [Loops][loops-general]                                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
 | [map][builtin-functions-map]                                                 | `functional`, `builtin`                           |                        [ ]()                        |                      [ ]()                      |
-| [Membership testing][membership-testing]                                     | `general`                                         |                   DavidGerva[ ]()                   |                      [ ]()                      |
+| [Membership testing][membership-testing]                                     | `general`                                         | [#1431](https://github.com/exercism/v3/issues/1431) |                      [ ]()                      |
 | [memoryview][builtin-types-memoryview]                                       | `advanced`, `types`, `builtins`                   |                        [ ]()                        |                      [ ]()                      |
 | [Methods][class-methods]                                                     | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
 | [Modular Division][modular-division]                                         | `general`                                         |                        [ ]()                        |                      [ ]()                      |
@@ -742,9 +743,9 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [State][state]                                                               | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
 | [Static Methods][static-methods]                                             | `OOP`                                             |                        [ ]()                        |                      [ ]()                      |
 | [str][builtin-types-str]                                                     | `basic`, `types`, `builtin`                       |                        []()                         | [#824](https://github.com/exercism/v3/pull/824) |
-| [String formatting][string-formatting]                                       | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
+| [String formatting][string-formatting]                                       | `basic`                                           | [#1647](https://github.com/exercism/v3/issues/1647) |                      [ ]()                      |
 | [String methods][string-methods]                                             | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
-| [String splitting][string-splitting]                                         | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
+| [String splitting][string-splitting]                                         | `basic`                                           | [#1648](https://github.com/exercism/v3/issues/1648) |                      [ ]()                      |
 | [String translation][string-translation]                                     | `basic`                                           |                        [ ]()                        |                      [ ]()                      |
 | [True][keyword-true]                                                         | `basic`, `builtin`, `keyword`                     | [#1030](https://github.com/exercism/v3/issues/1030) |                      [ ]()                      |
 | [try][keyword-try]                                                           | `intermediate`, `exceptions`, `keyword`           |                        [ ]()                        |                      [ ]()                      |
@@ -754,7 +755,7 @@ These will very rarely be encountered in the wild, the first because it's more o
 | [type conversion][type-conversion]                                           | `basic`, `builtin`                                |                        [ ]()                        |                      [ ]()                      |
 | [Type hinting][type-hinting]                                                 | `general`                                         |                        [ ]()                        |                      [ ]()                      |
 | [Variables][variables]                                                       | `general`                                         |                        [ ]()                        |                      [ ]()                      |
-| [while loops][while-loops]                                                   | `general`                                         |                   DavidGerva[ ]()                   |                      [ ]()                      |
-| [while][keyword-while]                                                       | `keyword`, `general`                              |                   DavidGerva[ ]()                   |                      [ ]()                      |
+| [while loops][while-loops]                                                   | `general`                                         | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
+| [while][keyword-while]                                                       | `keyword`, `general`                              | [#1430](https://github.com/exercism/v3/issues/1430) |                      [ ]()                      |
 | [with][keyword-with]                                                         | `intermediate`, `keyword`                         |                        [ ]()                        |                      [ ]()                      |
 | [yield][keyword-yield]                                                       | `general`, `keyword`, `intermediate`              |                        [ ]()                        |                      [ ]()                      |
