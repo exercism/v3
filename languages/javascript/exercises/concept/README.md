@@ -14,10 +14,9 @@ A list of exercises that we _must_ have is compiled below, and is not at all a c
 
 - [x] [`/basics`][concept-basics]: `"basics"`
 - [x] [`/array-analysis`][concept-array-analysis]: `"array-analysis"`
-- [x] [`/arrays`][concept-arrays]: `"arrays"`
-- [ ] `"array-analysis"`
 - [ ] `"array-destructuring"`
 - [ ] `"array-loops"`
+- [x] [`/arrays`][concept-arrays]: `"arrays"`
 - [x] [`/booleans`][concept-booleans]: `"booleans"`
 - [ ] `"callbacks"`
 - [ ] `"conditionals"`
