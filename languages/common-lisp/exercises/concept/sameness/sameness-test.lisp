@@ -1,7 +1,6 @@
 ;; Ensures that sameness.lisp and the testing library are always loaded
 (eval-when (:compile-toplevel :load-toplevel :execute)
-  ;; (load "sameness")
-  (load "./.meta/example.lisp")
+  (load "sameness")
   (ql:quickload :fiveam))
 
 ;; Defines the testing package with symbols from sameness and FiveAM in scope
