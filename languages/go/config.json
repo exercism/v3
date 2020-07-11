@@ -26,7 +26,14 @@
         "slug": "bytes-and-runes",
         "uuid": "668463ec-4b73-40cf-b24d-2f3a4bb110f6",
         "concepts": ["bytes", "runes"],
-        "prerequisites": ["slices", "strings", "numbers", "iteration", "functions", "conditionals"]
+        "prerequisites": [
+          "slices",
+          "strings",
+          "numbers",
+          "iteration",
+          "functions",
+          "conditionals"
+        ]
       },
       {
         "slug": "booleans",
@@ -38,7 +45,7 @@
         "slug": "channels",
         "uuid": "ac8da9af-da1b-4664-99a5-fcd14249b809",
         "concepts": ["channels"],
-        "prerequisites": ["goroutines","iteration"]
+        "prerequisites": ["goroutines", "iteration"]
       },
       {
         "slug": "comments",
@@ -188,7 +195,7 @@
         "slug": "time-and-duration",
         "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
         "concepts": ["time"],
-        "prerequisites": ["number","strings", "functions"]
+        "prerequisites": ["number", "strings", "functions"]
       }
     ],
     "practice": []
