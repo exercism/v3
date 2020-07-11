@@ -10,7 +10,7 @@ defmodule Counter do
   end
 
   def value(pid) do
-    Agent.get(__MODULE__, & &1)
+    Agent.get(pid, & &1)
   end
 
   def increment(pid) do
