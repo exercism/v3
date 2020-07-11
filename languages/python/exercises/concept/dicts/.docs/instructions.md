@@ -4,7 +4,16 @@ You will be given a list of items, each time an item is in the given list add `1
 
 You will also have to implement a function which returns a list of `tuples` of all the keys in the _given_ inventory.
 
-## 1. Add items from a list to a dictionary
+## 1. Create an inventory from a list
+
+Implement a function that creates an inventory from scratch using a list of items. The function will return a dictionary of the inventory.
+
+```python
+>>> create_inventory(["coal", "wood", "wood", "diamond", "diamond", "diamond"])
+{"coal":1, "wood":2 "diamond":3}
+```
+
+## 2. Add items from a list to a dictionary
 
 Implement a function that adds a list of items to the inventory:
 
@@ -13,7 +22,7 @@ Implement a function that adds a list of items to the inventory:
 {"coal":2, "wood":2, "iron":1}
 ```
 
-## 2. Remove items from a dictionary
+## 3. Remove items from a dictionary
 
 Implement a function that removes items from an inventory:
 
@@ -22,20 +31,18 @@ Implement a function that removes items from an inventory:
 {"coal":2, "diamond":0, "iron":3}
 ```
 
-## 3. Return the contents of a dictionary
+Items should not be below `0`, if the amount of items in the list exceed the amount of items in the inventory, the `key` value should not drop below `0`. 
+
+```python
+>>> delete_items({"coal":2, "wood":1, "diamond":2}, ["coal", "coal", "wood", "wood", "diamond"])
+{"coal":0, "wood":0, "diamond":1}
+```
+
+## 4. Return the contents of a dictionary
 
 Implement a function that returns a list of tuples with the items and their values:
 
 ```python
 >>> list_inventory({"coal":7, "wood":11, "diamond":2, "iron":7})
-[("coal", 7),("wood", 11),("diamond", 2),("iron", 7)]
-```
-
-## 4. Create an inventory from a list
-
-Implement a function that creates an inventory from scratch using a list of items. The function will return a dictionary of the inventory.
-
-```python
->>> create_inventory(["coal", "wood", "wood", "diamond", "diamond", "diamond"])
-{"coal":1, "wood":2 "diamond":3}
+[('coal', 7), ('diamond', 2), ('iron', 7), ('wood', 11)]
 ```

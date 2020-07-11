@@ -1,11 +1,11 @@
+def create_inventory(items):
+    pass
+
 def add_items(inventory, items):
     pass
 
-def remove_items(inventory, items):
+def delete_items(inventory, items):
     pass
 
-def list_items(inventory, items):
-    pass
-
-def create_inventory(items):
+def list_inventory(inventory):
     pass
