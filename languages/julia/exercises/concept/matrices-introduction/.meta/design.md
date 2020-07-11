@@ -21,4 +21,4 @@ The Concepts this exercise unlocks are:
 
 ## Prequisites
 
-There are no prerequisites.
+See config.json for now.
