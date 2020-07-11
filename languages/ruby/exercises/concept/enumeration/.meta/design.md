@@ -1,7 +1,7 @@
 ## Learning objectives
 
 - Learn what enumeration is
-- Learn how to use enumerable functions
+- Learn how to use enumerable methods
 - Understand how to use a block
 
 ## Out of scope

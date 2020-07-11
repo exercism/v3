@@ -1,4 +1,4 @@
-You run an online fashion boutique. Black Friday is coming up, so you want to create some functionality to help you take stock of your inventory to make sure you're ready.
+You run an online fashion boutique. Your big annual sale is coming up, so you want to create some functionality to help you take stock of your inventory to make sure you're ready.
 
 A single item in the inventory is represented by a hash, and the whole inventory is an array of these hashes.
 
@@ -18,7 +18,7 @@ A single item in the inventory is represented by a hash, and the whole inventory
 Implement `BoutiqueInventory.item_names` which should return a list of the item names, ordered alphabetically.
 
 ```ruby
-BoutiqueInventory.new[
+BoutiqueInventory.new([
   {price: 65.00, name: "Maxi Brown Dress", quantity_by_size: {s: 3, m: 7, l: 8, xl: 4}},
   {price: 50.00, name: "Red Short Skirt", quantity_by_size: {}},
   {price: 29.99, name: "Black Short Skirt", quantity_by_size: {s: 1, xl: 4}},
@@ -33,7 +33,7 @@ BoutiqueInventory.new[
 Implement `BoutiqueInventory.cheap` which should return any items that cost less than \$30.
 
 ```ruby
-BoutiqueInventory.new[
+BoutiqueInventory.new([
   {price: 65.00, name: "Maxi Brown Dress", quantity_by_size: {s: 3, m: 7, l: 8, xl: 4}},
   {price: 50.00, name: "Red Short Skirt", quantity_by_size: {}},
   {price: 29.99, name: "Black Short Skirt", quantity_by_size: {s: 1, xl: 4}},
@@ -51,7 +51,7 @@ BoutiqueInventory.new[
 Implement `BoutiqueInventory.out_of_stock` which should return any items that have no stock (where `quantity_by_size` is empty).
 
 ```ruby
-BoutiqueInventory.new[
+BoutiqueInventory.new([
   {price: 65.00, name: "Maxi Brown Dress", quantity_by_size: {s: 3, m: 7, l: 8, xl: 4}},
   {price: 50.00, name: "Red Short Skirt", quantity_by_size: {}},
   {price: 29.99, name: "Black Short Skirt", quantity_by_size: {s: 1, xl: 4}},
@@ -66,7 +66,7 @@ BoutiqueInventory.new[
 Implement `BoutiqueInventory.stock_for_item(name)` to return the stock of an item by its name:
 
 ```ruby
-BoutiqueInventory.new[
+BoutiqueInventory.new([
   {price: 65.00, name: "Maxi Brown Dress", quantity_by_size: {s: 3, m: 7, l: 8, xl: 4}},
   {price: 50.00, name: "Red Short Skirt", quantity_by_size: {}},
   {price: 29.99, name: "Black Short Skirt", quantity_by_size: {s: 1, xl: 4}},
@@ -81,7 +81,7 @@ BoutiqueInventory.new[
 Implement `BoutiqueInventory.total_stock` to calculate the total amount of items in your storeroom:
 
 ```ruby
-BoutiqueInventory.new[
+BoutiqueInventory.new([
   {price: 65.00, name: "Maxi Brown Dress", quantity_by_size: {s: 3, m: 7, l: 8, xl: 4}},
   {price: 50.00, name: "Red Short Skirt", quantity_by_size: {}},
   {price: 29.99, name: "Black Short Skirt", quantity_by_size: {s: 1, xl: 4}},
