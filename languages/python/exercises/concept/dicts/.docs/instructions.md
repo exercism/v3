@@ -22,7 +22,7 @@ Implement a function that adds a list of items to a passed in inventory dictiona
 {"coal":2, "wood":2, "iron":1}
 ```
 
-## 3. Remove items from a dictionary
+## 3. Remove items from an existing inventory dictionary
 
 Implement a function that removes items from an inventory:
 
