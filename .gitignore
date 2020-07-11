@@ -6,6 +6,9 @@
 yarn.lock
 package-lock.json
 
+# Python
+__pycache__
+
 # Ruby
 Gemfile
 Gemfile.lock
