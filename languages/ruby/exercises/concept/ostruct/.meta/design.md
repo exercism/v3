@@ -13,4 +13,3 @@
 
 - `enumeration`: Know how to consume hashes
 - `using-blocks`: Know how to use blocks
-
