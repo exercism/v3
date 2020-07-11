@@ -3,7 +3,7 @@ def create_inventory(items):
     for item in items:
         inventory.setdefault(item, 0)
         inventory[item] += 1
-    return(inventory)
+    return inventory
 
 def add_items(inventory, items):
     for item in items:
