@@ -11,7 +11,7 @@ class test_inventory(unittest.TestCase):
                          {"wood":4, "iron":4})
 
     def test_add_multiple_items(self):
-        self.assertEqual(add_items({"wood":2, "gold":1, "diamond":3}, ["wood", "gold","gold"]),
+        self.assertEqual(add_items({"wood":2, "gold":1, "diamond":3}, ["wood", "gold", "gold"]),
                          {"wood":3, "gold":3, "diamond":3})
 
     def test_add_new_item(self):
