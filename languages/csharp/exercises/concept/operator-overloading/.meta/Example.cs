@@ -1,83 +1,83 @@
 using System;
 
-public struct Currency
+public struct CurrencyAmount
 {
-    private decimal value;
-    private string unit;
+    private decimal amount;
+    private string currency;
 
-    public Currency(decimal value, string unit)
+    public CurrencyAmount(decimal amount, string currency)
     {
-        this.value = value;
-        this.unit = unit;
+        this.amount = amount;
+        this.currency = currency;
     }
 
-    public static bool operator ==(Currency @this, Currency other)
+    public static bool operator ==(CurrencyAmount @this, CurrencyAmount other)
     {
-        if (@this.unit != other.unit)
+        if (@this.currency != other.currency)
         {
             throw new ArgumentException();
         }
 
-        return @this.value == other.value;
+        return @this.amount == other.amount;
     }
 
-    public static bool operator !=(Currency @this, Currency other)
+    public static bool operator !=(CurrencyAmount @this, CurrencyAmount other)
     {
         return @this != other;
     }
 
-    public static bool operator >(Currency @this, Currency other)
+    public static bool operator >(CurrencyAmount @this, CurrencyAmount other)
     {
-        if (@this.unit != other.unit)
+        if (@this.currency != other.currency)
         {
             throw new ArgumentException();
         }
 
-        return @this.value > other.value;
+        return @this.amount > other.amount;
     }
 
-    public static bool operator <(Currency @this, Currency other)
+    public static bool operator <(CurrencyAmount @this, CurrencyAmount other)
     {
-        if (@this.unit != other.unit)
+        if (@this.currency != other.currency)
         {
             throw new ArgumentException();
         }
 
-        return @this.value < other.value;
+        return @this.amount < other.amount;
     }
 
-    public static Currency operator +(Currency @this, Currency other)
+    public static CurrencyAmount operator +(CurrencyAmount @this, CurrencyAmount other)
     {
-        if (@this.unit != other.unit)
+        if (@this.currency != other.currency)
         {
             throw new ArgumentException();
         }
 
-        return new Currency(@this.value + other.value, @this.unit);
+        return new CurrencyAmount(@this.amount + other.amount, @this.currency);
     }
 
-    public static Currency operator -(Currency @this, Currency other)
+    public static CurrencyAmount operator -(CurrencyAmount @this, CurrencyAmount other)
     {
-        if (@this.unit != other.unit)
+        if (@this.currency != other.currency)
         {
             throw new ArgumentException();
         }
 
-        return new Currency(@this.value - other.value, @this.unit);
+        return new CurrencyAmount(@this.amount - other.amount, @this.currency);
     }
 
-    public static Currency operator *(Currency @this, decimal multiplier)
+    public static CurrencyAmount operator *(CurrencyAmount @this, decimal multiplier)
     {
-        return new Currency(@this.value * multiplier, @this.unit);
+        return new CurrencyAmount(@this.amount * multiplier, @this.currency);
     }
 
-    public static Currency operator /(Currency @this, decimal divisor)
+    public static CurrencyAmount operator /(CurrencyAmount @this, decimal divisor)
     {
-        return new Currency(@this.value / divisor, @this.unit);
+        return new CurrencyAmount(@this.amount / divisor, @this.currency);
     }
 
-    public static explicit operator double (Currency @this)
+    public static explicit operator double (CurrencyAmount @this)
     {
-        return (double) @this.value;
+        return (double) @this.amount;
     }
 }

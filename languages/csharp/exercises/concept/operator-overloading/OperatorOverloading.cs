@@ -1,11 +1,11 @@
-public struct Currency
+public struct CurrencyAmount
 {
-    private decimal value;
-    private string unit;
+    private decimal amount;
+    private string currency;
 
-    public Currency(decimal value, string unit)
+    public CurrencyAmount(decimal amount, string currency)
     {
-        this.value = value;
-        this.unit = unit;
+        this.amount = amount;
+        this.currency = currency;
     }
 }
