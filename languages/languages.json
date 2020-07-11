@@ -2657,6 +2657,13 @@
     }
   },
   {
+    "name": "Scala",
+    "slug": "scala",
+    "exercises": {
+      "concept": []
+    }
+  },
+  {
     "name": "Swift",
     "slug": "swift",
     "exercises": {

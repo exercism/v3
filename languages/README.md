@@ -32,6 +32,7 @@ To contribute, please select the language you'd like to contribute to:
 | [Python](./python/README.md)           | [2](./python/config.json)      |
 | [Ruby](./ruby/README.md)               | [5](./ruby/config.json)        |
 | [Rust](./rust/README.md)               | [5](./rust/config.json)        |
+| [Scala](./scala/README.md)             | [0](./scala/config.json)       |
 | [Swift](./swift/README.md)             | [6](./swift/config.json)       |
 
 ## Implemented Concept Exercises
