@@ -4,7 +4,7 @@ certain cards appear, disappear, or change position within the deck.
 To make things a bit easier, she only starts the cards numbered 1 to 10 -
 although some of the tricks might create different cards.
 
-## 1. - Double every single card (map)
+## 1. - Double every single card
 
 Elyse wants to double the number of every card in the deck. This may result in higher cards than 1-10.
 
@@ -26,7 +26,7 @@ threeOfEachThree(deck)
 // => [1, 3, 3, 3, 9, 3, 3, 3, 7]
 ```
 
-## 3. - Find two cards from the exact middle of the deck `.slice`
+## 3. - Find two cards from the exact middle of the deck
 
 Elyse will take a deck and make every card disappear except the
 middle two cards. This trick is always performed with exactly 10 cards.
@@ -37,7 +37,7 @@ middleTwo(deck)
 // => [5, 6]
 ```
 
-## 4. - The outside two cards will reappear in the middle of the deck (splice)
+## 4. - The outside two cards will reappear in the middle of the deck
 
 Elyse wants to move the top and bottom cards of the deck
 into the middle, in reverse order.
