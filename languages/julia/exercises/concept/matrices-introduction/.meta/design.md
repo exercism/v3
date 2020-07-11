@@ -1,6 +1,5 @@
 ## Goal
 
-
 ## Learning objectives
 
 - Know how to create a matrix.
@@ -19,7 +18,7 @@ The Concepts this exercise unlocks are:
 - `matrices-indices`
 - `matrices-iteration`
 - `matrices-mutation`
-  
+
 ## Prequisites
 
 There are no prerequisites.
