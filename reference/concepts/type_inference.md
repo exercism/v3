@@ -26,6 +26,8 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 | ----- | ------------------------------- | ------- |
 | C#    | [basics][implementation-csharp] | None    |
 | F#    | [basics][implementation-fsharp] | None    |
+| Scala | [basics][implementation-scala] | None    |
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/introduction.md
+[implementation-scala]: ../../languages/scala/exercises/concept/basics/.docs/introduction.md
