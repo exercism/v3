@@ -70,7 +70,7 @@ particular ROBOT."
         (room (cdr (assoc room-id +rooms+))))
     (loop for (door . behind-the-door) in room
           when (apply key door) do (return behind-the-door)
-            finally (return 'sad-trombone))))
+            finally (return 'room-explodes))))
 
 (defun make-hash-table-with-pairs (&rest pairs)
   "Utility function for creating test data."

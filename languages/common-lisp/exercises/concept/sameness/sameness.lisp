@@ -10,4 +10,4 @@
     ;; add forms such as:
     ;; (room-id-13 #'equalp)
 
-    (t (constantly t))))
+    (t (constantly nil))))
