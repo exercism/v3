@@ -7,11 +7,10 @@ You must design and implement the storage mechanism for the 7 slots. The slot ca
 
 ### 1. Create a function to return the storage slots
 
-- Your function should return a tuple with 7 slots.
-- The slots should contain various prizes
+- Your function should return a tuple with 7 prizes of the specified types.
 
 ```rust
-let possible_prizes = prizes(); // (100, "🥚", None, None, None, None);
+let possible_prizes = prizes();
 ```
 
 ### 1. Create a function to compare the guess and return a prize
