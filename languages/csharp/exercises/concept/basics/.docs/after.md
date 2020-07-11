@@ -15,7 +15,18 @@ count = 2;     // Update to new value
 // count = false;
 ```
 
-C# is an object-oriented language and requires all functions to be defined in a _class_, which are defined using the [`class` keyword][classes]. A function within a class is referred to as a _method_. Each [method][methods] can have zero or more parameters. All parameters must be explicitly typed, there is no type inference for parameters. Similarly, the return type must also be made explicit. Values are returned from functions using the [`return` keyword][return]. To allow a method to be called by code in other files, the `public` access modifier must be added.
+C# is an object-oriented language and requires all functions to be defined in a _class_, which are defined using the [`class` keyword][classes]. Objects are created by instantiating classes using the `new` keyword.
+
+```csharp
+class Calculator
+{
+    // ...
+}
+
+var calculator = new Calculator();
+```
+
+A function within a class is referred to as a _method_. Each [method][methods] can have zero or more parameters. All parameters must be explicitly typed, there is no type inference for parameters. Similarly, the return type must also be made explicit. Values are returned from functions using the [`return` keyword][return]. To allow a method to be called by code in other files, the `public` access modifier must be added.
 
 ```csharp
 class Calculator
@@ -27,16 +38,13 @@ class Calculator
 }
 ```
 
-Invoking a method is done by specifying its class- and method name and passing arguments for each of the method's parameters.
+Invoking a method is done by specifying its class- and method name and passing arguments for each of the method's parameters. Arguments can optionally specify the corresponding parameter's name.
 
 ```csharp
-var sum = Calculator.Add(1, 2);
-```
 
-Arguments can optionally specify the corresponding parameter's name:
-
-```csharp
-var sum = Calculator.Add(x: 1, y: 2);
+var calculator = new Calculator();
+var sum_v1 = calculator.Add(1, 2);
+var sum_v2 = calculator.Add(x: 1, y: 2);
 ```
 
 If the method to be called is defined in the same class as the method that calls it, the class name can be omitted.
