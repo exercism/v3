@@ -13,9 +13,80 @@
 ;; Enter the testing package
 (in-package :sameness-test)
 
+;; forward declaration of test utilities
+(declaim (ftype (function) run-maze))
+(defparameter +mazes+ nil)
+
 ;; Define and enter a new FiveAM test-suite
 (def-suite sameness-suite)
 (in-suite sameness-suite)
+
+(test the-maze-of-object-identity
+  (is (eq 'victory (run-maze :maze-1 #'robot))))
+
+(test the-maze-of-characters
+  (is (eq 'victory (run-maze :maze-2 #'robot))))
+
+(test the-maze-of-numbers
+  (is (eq 'victory (run-maze :maze-3 #'robot))))
+
+(test the-maze-of-conses
+  (is (eq 'victory (run-maze :maze-4 #'robot)))
+  (is (eq 'victory (run-maze :maze-5 #'robot)))
+  (is (eq 'victory (run-maze :maze-6 #'robot))))
+
+(test the-maze-of-arrays
+  (is (eq 'victory (run-maze :maze-7 #'robot))))
+
+(test the-maze-of-strings
+  (is (eq 'victory (run-maze :maze-8 #'robot))))
+
+(test the-maze-of-case-insensitive-characters
+  (is (eq 'victory (run-maze :maze-9 #'robot))))
+
+(test the-maze-of-numbers-redux
+  (is (eq 'victory (run-maze :maze-a #'robot))))
+
+(test the-maze-of-case-insensitive-strings
+  (is (eq 'victory (run-maze :maze-b #'robot))))
+
+(test the-maze-of-conses-redux
+  (is (eq 'victory (run-maze :maze-c #'robot)))
+  (is (eq 'victory (run-maze :maze-d #'robot))))
+
+(test the-maze-of-arrays-redux
+  (is (eq 'victory (run-maze :maze-e #'robot))))
+
+(test the-maze-of-structures
+  (is (eq 'victory (run-maze :maze-f #'robot))))
+
+(test the-maze-of-hash-tables
+  (is (eq 'victory (run-maze :maze-10 #'robot))))
+
+;; Either provides human-readable results to the user or machine-readable
+;; results to the test runner. The default upon calling `(run-tests)` is to
+;; explain the results in a human-readable way
+(defun run-tests (&optional (explain t))
+  (let ((tests (run 'sameness-suite))) ; Run the tests once
+    (if explain (explain! tests) tests))) ; Optionally explain the results
+
+;;;
+;;; ==================================================
+;;; Test Implementation Details
+;;;
+(defun run-maze (maze-id robot)
+  "Utility function to run a particular maze (by MAZE-ID) with a particular ROBOT."
+  (let ((key (funcall robot maze-id))
+        (maze (cdr (assoc maze-id +mazes+))))
+    (loop for (door . behind-the-door) in maze
+          when (apply key door) do (return behind-the-door)
+            finally (return 'sad-trombone))))
+
+(defun make-hash-table-with-pairs (&rest pairs)
+  "Utility function for creating test data."
+  (reduce #'(lambda (ht kv) (setf (gethash (first kv) ht) (second kv)) ht)
+          pairs
+          :initial-value (make-hash-table)))
 
 (defparameter +an-array+ #(1 2 3))
 (defparameter +a-similar-but-different-array+ #(1 2 3))
@@ -83,67 +154,3 @@
   "Mazes are a sequence of pairs of a DOOR and a RESULT. A DOOR is a sequence of
 things which will be given to the key. If a KEY opens a DOOR, the maze will
 evaluate to RESULT")
-
-(test the-maze-of-object-identity
-  (is (eq 'victory (run-maze :maze-1 #'robot))))
-
-(test the-maze-of-characters
-  (is (eq 'victory (run-maze :maze-2 #'robot))))
-
-(test the-maze-of-numbers
-  (is (eq 'victory (run-maze :maze-3 #'robot))))
-
-(test the-maze-of-conses
-  (is (eq 'victory (run-maze :maze-4 #'robot)))
-  (is (eq 'victory (run-maze :maze-5 #'robot)))
-  (is (eq 'victory (run-maze :maze-6 #'robot))))
-
-(test the-maze-of-arrays
-  (is (eq 'victory (run-maze :maze-7 #'robot))))
-
-(test the-maze-of-strings
-  (is (eq 'victory (run-maze :maze-8 #'robot))))
-
-(test the-maze-of-case-insensitive-characters
-  (is (eq 'victory (run-maze :maze-9 #'robot))))
-
-(test the-maze-of-numbers-redux
-  (is (eq 'victory (run-maze :maze-a #'robot))))
-
-(test the-maze-of-case-insensitive-strings
-  (is (eq 'victory (run-maze :maze-b #'robot))))
-
-
-(test the-maze-of-conses-redux
-  (is (eq 'victory (run-maze :maze-c #'robot)))
-  (is (eq 'victory (run-maze :maze-d #'robot))))
-
-(test the-maze-of-arrays-redux
-  (is (eq 'victory (run-maze :maze-e #'robot))))
-
-(test the-maze-of-structures
-  (is (eq 'victory (run-maze :maze-f #'robot))))
-
-(test the-maze-of-hash-tables
-  (is (eq 'victory (run-maze :maze-10 #'robot))))
-
-(defun run-maze (maze-id robot)
-  "Utility function to run a particular maze (by MAZE-ID) with a particular ROBOT."
-  (let ((key (funcall robot maze-id))
-        (maze (cdr (assoc maze-id +mazes+))))
-    (loop for (door . behind-the-door) in maze
-          when (apply key door) do (return behind-the-door)
-            finally (return 'sad-trombone))))
-
-(defun make-hash-table-with-pairs (&rest pairs)
-  "Utility function for creating test data."
-  (reduce #'(lambda (ht kv) (setf (gethash (first kv) ht) (second kv)) ht)
-          pairs
-          :initial-value (make-hash-table)))
-
-;; Either provides human-readable results to the user or machine-readable
-;; results to the test runner. The default upon calling `(run-tests)` is to
-;; explain the results in a human-readable way
-(defun run-tests (&optional (explain t))
-  (let ((tests (run 'sameness-suite))) ; Run the tests once
-    (if explain (explain! tests) tests))) ; Optionally explain the results
