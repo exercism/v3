@@ -14,6 +14,7 @@ The goal of this exercise is to teach the basics of the `dict` (dictionary, mapp
 - remove `key`:`value` pairs from the `dict`.
 - iterate through a `dict` using `dict.keys()`, `dict.values()`, or `dict.items()`.
 - `dict` method `setdefault()`
+
 ## Things not to teach
 
 - Dictionary comprehensions
@@ -43,7 +44,6 @@ The goal of this exercise is to teach the basics of the `dict` (dictionary, mapp
 - `strings`
 - `tuples`
 - `lists`
-
 
 ## Representer
 
