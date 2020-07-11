@@ -1,32 +1,95 @@
-In this exercise you're going to write some code to help you cook a brilliant lasagna from your favorite cooking book.
+Something something dot matrix display.
 
-You have three tasks, all related to the time spent cooking the lasasgna.
+<!-- TODO: This needs to be phrased better. -->
 
-## 1. Calculate the preparation time in minutes
-
-Define the `preptime` function that takes the number of layers you added to the lasagna as an argument and returns how many minutes you spent preparing the lasagna, assuming each layer takes you 2 minutes to prepare.
+## 1. Define the Exercism logo matrix `E`
 
 ```julia
-julia> preptime(4)
-8
+[
+    0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0;
+    0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0;
+    0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0;
+    0 1 0 0 1 0 1 0 0 0 0 1 0 1 0 0 1 0;
+    0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0;
+    1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1;
+    0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0;
+    0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0;
+    0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0;
+    0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0;
+    0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0;
+]
 ```
 
-## 2. Calculate the remaining oven time in minutes
+If you "render" <!-- TODO print/render/whatever fits the theme --> it, it looks like this:
 
-According to the cooking book, lasagna needs to be in the oven for a total of 60 minutes.
-Define the `remaining_time` function that takes the actual minutes the lasagna has been in the oven as a parameter and returns how many minutes the lasagna still has to remain in the oven.
-
-```julia
-julia> remaining_time(50)
-10
+```
+  XX          XX  
+ X              X 
+ X   X      X   X 
+ X  X X    X X  X 
+ X              X 
+X                X
+ X    X    X    X 
+ X     X  X     X 
+ X      XX      X 
+ X              X 
+  XX          XX  
 ```
 
-## 3. Calculate the total working time in minutes
+## 2. Define a function that makes the logo frown
 
-Define the `total_working_time` function that takes two arguments: the first argument is the number of layers you added to the lasagna, and the second parameter is the number of minutes the lasagna has been in the oven.
-The function should return how many minutes in total you've worked on cooking the lasagna, which is the sum of the preparation time in minutes, and the time in minutes the lasagna has spent in the oven at the moment.
+Define `frown!` and `frown` functions that take the Exercism logo matrix and change the smiling mouth to a frowning mouth:
 
-```julia
-julia> total_working_time(3, 20)
-26
+```
+  XX          XX  
+ X              X 
+ X   X      X   X 
+ X  X X    X X  X 
+ X              X 
+X                X
+ X      XX      X 
+ X     X  X     X 
+ X    X    X    X 
+ X              X 
+  XX          XX  
+```
+
+## 3. Rotate the Exercism logo matrix by 90° to the left / 270° to the right / $-\frac{π}{2}$
+
+Define a method `rot270`.
+
+In this particular case we don't care about the type of the matrix, so we can transpose it.
+
+## 4. Rotate  the Exercism logo matrix by 90° to the right / $+\frac{π}{2}$
+
+## 5. Put together a stickerwall
+
+Define `stickerwall`.
+
+```
+  XX          XX   X   XX          XX  
+ X              X  X  X              X 
+ X   X      X   X  X  X   X      X   X 
+ X  X X    X X  X  X  X  X X    X X  X 
+ X              X  X  X              X 
+X                X X X                X
+ X    X    X    X  X  X      XX      X 
+ X     X  X     X  X  X     X  X     X 
+ X      XX      X  X  X    X    X    X 
+ X              X  X  X              X 
+  XX          XX   X   XX          XX  
+                   X                   
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                   X                   
+  XX          XX   X   XX          XX  
+ X              X  X  X              X 
+ X   X      X   X  X  X   X      X   X 
+ X  X X    X X  X  X  X  X X    X X  X 
+ X              X  X  X              X 
+X                X X X                X
+ X      XX      X  X  X    X    X    X 
+ X     X  X     X  X  X     X  X     X 
+ X    X    X    X  X  X      XX      X 
+ X              X  X  X              X 
+  XX          XX   X   XX          XX  
 ```
