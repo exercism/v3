@@ -24,7 +24,7 @@ Implement a function that adds a list of items to a passed in inventory dictiona
 
 ## 3. Remove items from an existing inventory dictionary
 
-Implement a function that removes items from an inventory:
+Implement a function that removes items in the passed-in list from the passed inventory dictionary:
 
 ```python
 >>> delete_items({"coal":3, "diamond":1, "iron":5}, ["diamond", "coal", "iron", "iron"])
