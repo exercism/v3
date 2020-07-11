@@ -17,7 +17,7 @@ The goal of this exercise is to teach the basics of the `dict` (dictionary, mapp
 ## Things not to teach
 
 - Dictionary comprehensions
-- `dict` methods such as `get()`, `clear()`, or `setdefault()`.
+- `dict` methods such as `get()` or `clear()`.
 - Built-in functions as they relate to this data structure (_e.g._ `copy()`, `len()`, or `enumerate()`.
 - Sorting by `keys` or `values`.
 - Swapping `keys` for `values`.
