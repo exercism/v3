@@ -1,4 +1,4 @@
-A D## Learning objectives
+## Learning objectives
 
 - Know how to write integer and floating point literals
 - Know how to perform basic math using `+`, `*`, `-`, `/`, `round`, `floor`, `expt`, `sqrt`, and `mod`

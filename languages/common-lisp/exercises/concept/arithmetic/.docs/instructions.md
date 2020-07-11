@@ -7,6 +7,7 @@ planning but needs your help finishing it. Will you help Lilly throw the
 proportionally perfect pizza party?
 
 ## 1. A Dough Ratio
+
 First things first, every great pizza starts with a delicious dough! Lilly is a
 fan of thin, crispy pizzas with a thicker crust, so the amount of dough needed
 for the middle of the pizza remains relatively constant (200g) but the amount
@@ -22,6 +23,7 @@ she'll need. For example, to make 4 pizzas 30cm in diameter:
 ```
 
 ## 2. A Splash of Sauce
+
 Lilly is astonishingly meticulous when it comes to her sauce application and
 always applies exactly 3ml of sauce to every 10 square centimetres of
 pizza. Ironically, the size of her pizzas can be incredibly inconsistent. Lilly
@@ -33,6 +35,7 @@ amount of sauce applied. For example, given Lilly has used 250ml of sauce:
 ```
 
 ## 3. Some Cheese, Please
+
 On Lilly's planet, all cheese comes in perfect cubes and is sold by size. (What
 were you expecting? This is an alien planet after all...) Your task is to help
 Lilly calculate how many pizzas she can make using any given cheese
@@ -47,6 +50,7 @@ cube and pizzas 30cm in diameter:
 ```
 
 ## 4. A Fair Share
+
 Finally, Lilly wants to be sure that her pizzas (each made up of 8 slices) can
 be evenly divided between her friends. Your task is to define a function
 that takes a number of pizzas and number of friends then returns `T` if the

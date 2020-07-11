@@ -47,4 +47,4 @@ Finally, you may find it useful to compare different numbers using functions
 like `=`, `/=` (not equal to), and `>=` (greater than or equal to). When these
 comparisons are true (as in `(= 1 1)`), they return `T` and when they aren't (as
 in `(> 0 1)`), they return `NIL`. For a full list of comparison operators, see
-Figure 12-3 [here](http://clhs.lisp.se/Body/12_aa.htm).
+[here](http://www.lispworks.com/documentation/HyperSpec/Body/f_eq_sle.htm).
