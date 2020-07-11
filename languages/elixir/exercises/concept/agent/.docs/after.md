@@ -7,3 +7,15 @@ If choosing to use an _agent process_, the goal should be to hold a simple state
 If an expensive job should be done in another process, a _task process_ (using Task) process should be considered. If it is determined that a process should hold state and perform behaviours, a _GenServer process_ (using `GenServer`) should be considered.
 
 > `Task` and `GenServer` will be discussed in another exercise.
+
+## Additional Resources
+
+- Documentation:
+  - [Elixir - Getting started: Agent][getting-started-agent]
+  - [Elixir Documentation: Agent][elixir-doc-agent]
+- Screencasts:
+  - [ElixirCasts: Introduction to Agents][elixircasts-agent]
+
+[elixircasts-agent]: https://elixircasts.io/intro-to-agents
+[elixir-doc-agent]: https://hexdocs.pm/elixir/Agent.html
+[getting-started-elixir]: https://elixir-lang.org/getting-started/mix-otp/agent.html
