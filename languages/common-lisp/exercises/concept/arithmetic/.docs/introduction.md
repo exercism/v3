@@ -2,6 +2,7 @@
 
 In Common Lisp, like many languages, numbers come in a couple of types. This
 exercise focuses on getting to grips with two of the most basic number-types:
+
 - Integers: whole numbers without a decimal point (like `-6`, `0`, `25`, `1234`,
   etc.)
 - Floating-Point Numbers: fractional or whole numbers including a decimal point (like

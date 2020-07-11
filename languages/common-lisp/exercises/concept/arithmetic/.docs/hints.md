@@ -37,7 +37,7 @@ example:
 (mod 10 3) ; => 1
 ```
 
-This is because 3 goes 3 times into 10 and leaves 1 left over (3 * 3 + 1 =
+This is because 3 goes 3 times into 10 and leaves 1 left over (3 \* 3 + 1 =
 10). If a number is evenly divisible by another, then the remainder given by the
 `mod` operation will be equal to 0. You might find the `=` function helpful in
 testing for this.
