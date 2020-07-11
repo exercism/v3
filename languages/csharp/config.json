@@ -25,6 +25,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "casting",
+        "uuid": "0d63645d-385a-43ea-b89e-448ed608f6ce",
+        "concepts": ["casting"],
+        "prerequisites": ["exceptions", "inheritance", "numbers"]
+      },
+      {
         "slug": "chars",
         "uuid": "e74c6cd6-add7-45d1-abcb-513418e9d2d0",
         "concepts": ["chars", "string-builder"],
@@ -167,6 +173,18 @@
         "prerequisites": ["numbers"]
       },
       {
+        "slug": "regular-expressions",
+        "uuid": "c63bb75d-51bd-4d5d-b37d-88e53ee0da69",
+        "concepts": ["regular-expressions"],
+        "prerequisites": [
+          "arrays",
+          "for-loops",
+          "strings",
+          "string-interpolation",
+          "verbatim-strings"
+        ]
+      },
+      {
         "slug": "resource-cleanup",
         "uuid": "e99221eb-eecb-4746-9ef6-cc62650e41e1",
         "concepts": ["resource-cleanup"],
@@ -177,6 +195,18 @@
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "structs",
+        "uuid": "1f43f015-fb34-49f6-bc77-7ab2234d90f2",
+        "concepts": ["structs"],
+        "prerequisites": [
+          "classes",
+          "inheritance",
+          "numbers",
+          "sets",
+          "signed-integers"
+        ]
       },
       {
         "slug": "switch-statements",

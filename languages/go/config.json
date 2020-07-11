@@ -25,8 +25,8 @@
       {
         "slug": "errors",
         "uuid": "397dc808-7016-4d40-8ac7-4395e12bd19f",
-        "concepts": ["errors", "basics"],
-        "prerequisites": ["constants", "types"]
+        "concepts": ["errors"],
+        "prerequisites": ["basics", "constants", "types"]
       },
       {
         "slug": "maps",

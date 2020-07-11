@@ -30,8 +30,8 @@ Before launch, we need all of the following parts to be completed:
 - [x] Added online editor settings
   - [x] Added `indent_style`
   - [x] Added `indent_size`
-- [ ] Convert the `exercises` array to an object
-- [ ] Remove the `foregone` property
+- [x] Convert the `exercises` array to an object
+- [x] Remove the `foregone` property
 
 See the [migrating your config.json files document](../../docs/maintainers/migrating-your-config-json-files.md) for more information.
 
@@ -41,7 +41,7 @@ See the [migrating your config.json files document](../../docs/maintainers/migra
 
 ### Representer
 
-- [ ] Build Representer
+- [x] Build Representer
 - [ ] Deploy Representer
 
 ### Test Runner

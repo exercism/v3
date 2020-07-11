@@ -14,6 +14,8 @@ The day is happening remotely and we'll be hanging out in two places:
 
 Tracks can also use their #maintaining-xxx tracks for track-specific discussions.
 
+If you're not on Slack but want to be, please email jeremy@exercism.io.
+
 ## Aims of the day
 
 The overarching aim of the day is to get each track to a baseline state that means on **future hackdays** there is a great basis for new contributors to work from. The intention has been to keep this first day relatively small, and then make the next one (maybe 4 weeks later) a larger affair.
@@ -21,7 +23,7 @@ The overarching aim of the day is to get each track to a baseline state that mea
 That overarching aim can be broken into three more tangible outcomes:
 
 1. Ensuring lots of people understand what we're trying to achieve with v3 and how everything works.
-2. Get each track in a shape where it can welcome contributors. This primiarly involves creating GitHub issues with the `type/new-exercise` label.
+2. Get each track in a shape where it can welcome contributors. This primarily involves creating GitHub issues with the `type/new-exercise` label.
 3. Have as many people as possible create a Concept Exercise, so lots of people are familiar with the process.
 
 ## What you need to know
@@ -38,6 +40,14 @@ It's worth investing in a few things to make the most of the day (these things a
 
 Those things should give you a feel for what we're trying to achieve with v3 and how it all works.
 But please **ask questions** :)
+
+## Useful references
+
+Here are some references to pages that might be useful:
+
+- [The implemented exercises](languages/README.md##implemented-concept-exercises)
+- [The stories used in exercises](reference/stories/README.md)
+- [The concepts used in exercises](reference/README.md#implemented-concepts)
 
 ## Track specific notes
 
