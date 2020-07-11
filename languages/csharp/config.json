@@ -25,6 +25,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "casting",
+        "uuid": "0d63645d-385a-43ea-b89e-448ed608f6ce",
+        "concepts": ["casting"],
+        "prerequisites": ["exceptions", "inheritance", "numbers"]
+      },
+      {
         "slug": "chars",
         "uuid": "e74c6cd6-add7-45d1-abcb-513418e9d2d0",
         "concepts": ["chars", "string-builder"],
@@ -64,6 +70,19 @@
         "uuid": "047b895b-7039-4af6-ad3a-17fd818d0b88",
         "concepts": ["enums", "pattern-matching-constants"],
         "prerequisites": ["conditionals", "strings"]
+      },
+      {
+        "slug": "equality",
+        "uuid": "116e0b8d-21f2-409f-abec-676da014a800",
+        "concepts": ["equality", "sets"],
+        "prerequisites": [
+          "classes",
+          "explicit-casts",
+          "generic-types",
+          "inheritance",
+          "interfaces",
+          "lists"
+        ]
       },
       {
         "slug": "flag-enums",
@@ -118,6 +137,24 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "object-initializers",
+        "uuid": "a9c3a1c9-19ee-45b2-8189-57e15870a051",
+        "concepts": ["object-initializers"],
+        "prerequisites": ["constructors", "dictionaries", "properties"]
+      },
+      {
+        "slug": "parameters",
+        "uuid": "f5c259fd-a404-432f-922d-781bde34fe08",
+        "concepts": ["parameters"],
+        "prerequisites": [
+          "conditionals",
+          "constructors",
+          "named-parameters",
+          "numbers",
+          "strings"
+        ]
+      },
+      {
         "slug": "properties",
         "uuid": "978bcc16-0c49-4328-92e9-79f6204ce350",
         "concepts": ["properties"],
@@ -130,10 +167,69 @@
         ]
       },
       {
+        "slug": "randomness",
+        "uuid": "d8a43f1e-4ed0-4015-8307-fba1d9cdd117",
+        "concepts": ["randomness"],
+        "prerequisites": ["numbers"]
+      },
+      {
+        "slug": "regular-expressions",
+        "uuid": "c63bb75d-51bd-4d5d-b37d-88e53ee0da69",
+        "concepts": ["regular-expressions"],
+        "prerequisites": [
+          "arrays",
+          "for-loops",
+          "strings",
+          "string-interpolation",
+          "verbatim-strings"
+        ]
+      },
+      {
+        "slug": "resource-cleanup",
+        "uuid": "e99221eb-eecb-4746-9ef6-cc62650e41e1",
+        "concepts": ["resource-cleanup"],
+        "prerequisites": ["exceptions", "inheritance"]
+      },
+      {
         "slug": "strings",
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "structs",
+        "uuid": "1f43f015-fb34-49f6-bc77-7ab2234d90f2",
+        "concepts": ["structs"],
+        "prerequisites": [
+          "classes",
+          "inheritance",
+          "numbers",
+          "sets",
+          "signed-integers"
+        ]
+      },
+      {
+        "slug": "switch-statements",
+        "uuid": "eb9faaec-9754-4df1-8eb1-09ca0ad94665",
+        "concepts": ["switch-statements"],
+        "prerequisites": ["classes", "enums", "inheritance"]
+      },
+      {
+        "slug": "tuples",
+        "uuid": "8bb88ab5-3cde-4ebd-8eef-03323ebfd700",
+        "concepts": ["tuples"],
+        "prerequisites": ["conditionals", "strings"]
+      },
+      {
+        "slug": "time",
+        "uuid": "61dd2e1c-94bb-4c92-95ad-6460a7677884",
+        "concepts": ["time", "timezone"],
+        "prerequisites": [
+          "conditionals-if",
+          "datetime",
+          "strings",
+          "switch-statements"
+        ]
       },
       {
         "slug": "user-defined-exceptions",

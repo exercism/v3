@@ -2,13 +2,6 @@ name: 'Verify formatting'
 
 on:
   push:
-    paths:
-      - '**/*.md'
-      - '**/*.json'
-      - '.prettierignore'
-      - '.prettierrc'
-      - '**/.prettierignore'
-      - '**/.prettierrc'
   pull_request:
 
 jobs:

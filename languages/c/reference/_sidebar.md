@@ -2,7 +2,9 @@
 - Docs
 - [Languages](/languages/README.md)
   - [C](/languages/c/README.md)
-    - Reference
+    - [Docs](/languages/c/docs/README.md)
+    - [Exercises](/languages/c/exercises/README.md)
+    - [Reference](/languages/c/reference/README.md)
       - [Implementing a Concept Exercise](/languages/c/reference/implementing-a-concept-exercise.md)
 - Reference
   - [Concepts](/reference/concepts/README.md)

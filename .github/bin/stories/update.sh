@@ -16,13 +16,17 @@ if [ -z "$(git status --porcelain)" ]; then
     exit 0
 fi
 
+# Checkout to new branch
+BRANCH="bot/summaries/stories/$(date +%Y%m%d%H%M%S)"
+git checkout -b "$BRANCH"
+
 # Setup the git user (required to commit anything)
 git config --global user.email "github-actions[bot]@users.noreply.github.com"
 git config --global user.name "github-actions[bot]"
 
-echo "Committing updated stories summary"
+# Commit and push the changes
+git commit -m "[Bot] Update stories summary"
+git push origin "$BRANCH"
 
-# Commit the changes
-git add .
-git commit -m "[CI] Update stories summary"
-git push
+# Create a PR
+gh pr create --title "[Bot] Update story summary" --body "This is an _automatically generated_ PR to update the story summary files." --label "type/bot"
