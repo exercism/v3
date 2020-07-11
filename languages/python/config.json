@@ -14,6 +14,20 @@
         "uuid": "5a9b42fb-ddf4-424b-995d-f9952ea63c37",
         "concepts": ["strings"],
         "prerequisites": ["functions"]
+      },
+      {
+        "slug": "tuples",
+        "uuid": "7ecd42c1-2ed5-487a-bc89-71c9cbad9b05",
+        "concepts": ["tuples"],
+        "prerequisites": [
+          "boleans",
+          "for-loops",
+          "functions",
+          "if-keyword",
+          "in-keyword",
+          "integers",
+          "return-keyword"
+        ]
       }
     ],
     "practice": []
