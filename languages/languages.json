@@ -1,5 +1,12 @@
 [
   {
+    "name": "C",
+    "slug": "c",
+    "exercises": {
+      "concept": []
+    }
+  },
+  {
     "name": "C#",
     "slug": "csharp",
     "exercises": {
@@ -1889,13 +1896,13 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/error.md",
               "name": "errors"
-            },
-            {
-              "url": null,
-              "name": "basics"
             }
           ],
           "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
               "name": "constants"
@@ -2115,6 +2122,30 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/nullability",
+          "slug": "nullability",
+          "concepts": [
+            {
+              "url": null,
+              "name": "nullability"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": null,
+              "name": "string-formatting"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/numbers",
           "slug": "numbers",
           "concepts": [
@@ -2155,6 +2186,38 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/recursion.md",
               "name": "recursion"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/recursion",
+          "slug": "recursion",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/recursion.md",
+              "name": "recursion"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            },
+            {
+              "url": null,
+              "name": "array-destructuring"
+            },
+            {
+              "url": null,
+              "name": "array-loops"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": null,
+              "name": "variable-parameters"
             }
           ]
         },
@@ -2323,6 +2386,46 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
               "name": "functions"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/tuples",
+          "slug": "tuples",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "boleans"
+            },
+            {
+              "url": null,
+              "name": "for-loops"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": null,
+              "name": "if-keyword"
+            },
+            {
+              "url": null,
+              "name": "in-keyword"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
+              "name": "integers"
+            },
+            {
+              "url": null,
+              "name": "return-keyword"
             }
           ]
         }
@@ -2558,6 +2661,13 @@
           ]
         }
       ]
+    }
+  },
+  {
+    "name": "Scala",
+    "slug": "scala",
+    "exercises": {
+      "concept": []
     }
   },
   {
