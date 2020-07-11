@@ -6,3 +6,6 @@ def remove_items(inventory, items):
 
 def list_items(inventory, items):
     pass
+
+def create_inventory(items):
+    pass

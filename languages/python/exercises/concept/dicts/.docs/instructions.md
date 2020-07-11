@@ -30,3 +30,12 @@ Implement a function that returns a list of tuples with the items and their valu
 >>> list_inventory({"coal":7, "wood":11, "diamond":2, "iron":7})
 [("coal", 7),("wood", 11),("diamond", 2),("iron", 7)]
 ```
+
+## 4. Create an inventory from a list
+
+Implement a function that creates an inventory from scratch using a list of items. The function will return a dictionary of the inventory.
+
+```python
+>>> create_inventory(["coal", "wood", "wood", "diamond", "diamond", "diamond"])
+{"coal":1, "wood":2 "diamond":3}
+```
