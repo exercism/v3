@@ -22,6 +22,7 @@ frown(E) = frown!(copy(E))
 
 rot270(E) = E'
 
+# TODO This should probably be written out since rotr90 is unlike to be the solution a student would come up with
 rot90(E) = rotr90(E)
 
 stickerwall(E) = vcat(
