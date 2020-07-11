@@ -14,54 +14,54 @@
 (in-package :sameness-test)
 
 ;; forward declaration of test utilities
-(declaim (ftype (function) run-maze))
-(defparameter +mazes+ nil)
+(declaim (ftype (function) open-room))
+(defparameter +rooms+ nil)
 
 ;; Define and enter a new FiveAM test-suite
 (def-suite sameness-suite)
 (in-suite sameness-suite)
 
-(test the-maze-of-object-identity
-  (is (eq 'victory (run-maze :maze-1 #'robot))))
+(test the-room-of-object-identity
+  (is (eq 'victory (open-room :room-object-identity #'robot))))
 
-(test the-maze-of-characters
-  (is (eq 'victory (run-maze :maze-2 #'robot))))
+(test the-room-of-characters
+  (is (eq 'victory (open-room :room-characters #'robot))))
 
-(test the-maze-of-numbers
-  (is (eq 'victory (run-maze :maze-3 #'robot))))
+(test the-room-of-numbers
+  (is (eq 'victory (open-room :room-numbers #'robot))))
 
-(test the-maze-of-conses
-  (is (eq 'victory (run-maze :maze-4 #'robot)))
-  (is (eq 'victory (run-maze :maze-5 #'robot)))
-  (is (eq 'victory (run-maze :maze-6 #'robot))))
+(test the-room-of-conses
+  (is (eq 'victory (open-room :room-cons-of-symbols #'robot)))
+  (is (eq 'victory (open-room :room-cons-of-chars #'robot)))
+  (is (eq 'victory (open-room :room-cons-of-numbers #'robot))))
 
-(test the-maze-of-arrays
-  (is (eq 'victory (run-maze :maze-7 #'robot))))
+(test the-room-of-arrays
+  (is (eq 'victory (open-room :room-arrays #'robot))))
 
-(test the-maze-of-strings
-  (is (eq 'victory (run-maze :maze-8 #'robot))))
+(test the-room-of-strings
+  (is (eq 'victory (open-room :room-strings #'robot))))
 
-(test the-maze-of-case-insensitive-characters
-  (is (eq 'victory (run-maze :maze-9 #'robot))))
+(test the-room-of-case-insensitive-characters
+  (is (eq 'victory (open-room :room-case-insensitive-chars #'robot))))
 
-(test the-maze-of-numbers-redux
-  (is (eq 'victory (run-maze :maze-a #'robot))))
+(test the-room-of-numbers-redux
+  (is (eq 'victory (open-room :room-number-of-different-types #'robot))))
 
-(test the-maze-of-case-insensitive-strings
-  (is (eq 'victory (run-maze :maze-b #'robot))))
+(test the-room-of-case-insensitive-strings
+  (is (eq 'victory (open-room :room-case-insensitive-strings #'robot))))
 
-(test the-maze-of-conses-redux
-  (is (eq 'victory (run-maze :maze-c #'robot)))
-  (is (eq 'victory (run-maze :maze-d #'robot))))
+(test the-room-of-conses-redux
+  (is (eq 'victory (open-room :room-cons-case-insensitive-chars #'robot)))
+  (is (eq 'victory (open-room :room-cons-number-of-different-types #'robot))))
 
-(test the-maze-of-arrays-redux
-  (is (eq 'victory (run-maze :maze-e #'robot))))
+(test the-room-of-arrays-redux
+  (is (eq 'victory (open-room :room-arrays-looser-equal #'robot))))
 
-(test the-maze-of-structures
-  (is (eq 'victory (run-maze :maze-f #'robot))))
+(test the-room-of-structures
+  (is (eq 'victory (open-room :room-structures #'robot))))
 
-(test the-maze-of-hash-tables
-  (is (eq 'victory (run-maze :maze-10 #'robot))))
+(test the-room-of-hash-tables
+  (is (eq 'victory (open-room :room-hash-table #'robot))))
 
 ;; Either provides human-readable results to the user or machine-readable
 ;; results to the test runner. The default upon calling `(run-tests)` is to
@@ -74,11 +74,12 @@
 ;;; ==================================================
 ;;; Test Implementation Details
 ;;;
-(defun run-maze (maze-id robot)
-  "Utility function to run a particular maze (by MAZE-ID) with a particular ROBOT."
-  (let ((key (funcall robot maze-id))
-        (maze (cdr (assoc maze-id +mazes+))))
-    (loop for (door . behind-the-door) in maze
+(defun open-room (room-id robot)
+  "Utility function to attempt to open a particular room (by ROOM-ID) with a
+particular ROBOT."
+  (let ((key (funcall robot room-id))
+        (room (cdr (assoc room-id +rooms+))))
+    (loop for (door . behind-the-door) in room
           when (apply key door) do (return behind-the-door)
             finally (return 'sad-trombone))))
 
@@ -104,53 +105,71 @@
 (defparameter +a-slightly-different-hash-table+
   (make-hash-table-with-pairs '(a 1) '(b #\x)))
 
-(defparameter +mazes+
-  `((:maze-1 . ((("wrong" "WRONG") . explosion)
-                ((2 2.0) . explosion)
-                ((lisp LISP) . victory)))
+(defparameter +rooms+
+  `((:room-object-identity
+     . ((("wrong" "WRONG") . explosion)
+        ((2 2.0) . explosion)
+        ((lisp LISP) . victory)))
 
-    (:maze-2 . (((#\a #\A) . explosion)
-                ((#\a #\a) . victory)))
-    (:maze-3 . (((1.0 1) . explosion)
-                ((1.0 1.0) . victory)))
+    (:room-characters
+     . (((#\a #\A) . explosion)
+        ((#\a #\a) . victory)))
 
-    (:maze-4 . ((((a . b) (a . c)) . explosion)
-                (((a . b) (a . b)) . victory)))
-    (:maze-5 . ((((#\a . #\b) (#\A . #\b)) . explosion)
-                (((#\a . #\b) (#\a . #\b)) . victory)))
-    (:maze-6 . ((((1 . 2) (1 . 2.0)) . explosion)
-                (((1 . 2) (1 . 2)) . victory)))
+    (:room-numbers
+     . (((1.0 1) . explosion)
+        ((1.0 1.0) . victory)))
 
-    (:maze-7 . (((,+an-array+ ,+a-similar-but-different-array+) . explosion)
-                ((,+an-array+ ,+an-array+) . victory)))
+    (:room-cons-of-symbols
+     . ((((a . b) (a . c)) . explosion)
+        (((a . b) (a . b)) . victory)))
 
-    (:maze-8 . ((("wrong" "WRONG") . explosion)
-                (("lisp" "lisp") . victory)))
+    (:room-cons-of-chars
+     . ((((#\a . #\b) (#\A . #\b)) . explosion)
+        (((#\a . #\b) (#\a . #\b)) . victory)))
 
-    (:maze-9 . (((#\a #\b) . explosion)
-                ((#\a #\A) . victory)))
+    (:room-cons-of-numbers
+     . ((((1 . 2) (1 . 2.0)) . explosion)
+        (((1 . 2) (1 . 2)) . victory)))
 
-    (:maze-a . (((1.0 1.1) . explosion)
-                ((1 1.0) . victory)))
+    (:room-arrays
+     . (((,+an-array+ ,+a-similar-but-different-array+) . explosion)
+        ((,+an-array+ ,+an-array+) . victory)))
 
-    (:maze-b . ((("right" "wrong") . explosion)
-                (("lisp" "LISP") . victory)))
+    (:room-strings
+     . ((("wrong" "WRONG") . explosion)
+        (("lisp" "lisp") . victory)))
 
-    (:maze-c . ((((1 . 1) (1 . 2)) . explosion)
-                (((1 . 1) (1.0 . 1.0)) . victory)))
-    (:maze-d . ((((#\a . #\b) (#\a . #\c)) . explosion)
-                (((#\a . #\b) (#\A . #\B)) . victory)))
+    (:room-case-insensitive-chars
+     . (((#\a #\b) . explosion)
+        ((#\a #\A) . victory)))
 
-    (:maze-e . (((,+an-array+ ,+a-different-array+) . explosion)
-                ((,+an-array+ ,+a-similar-but-different-array+) . victory)))
+    (:room-number-of-different-types
+     . (((1.0 1.1) . explosion)
+        ((1 1.0) . victory)))
 
-    (:maze-f . (((,+a-structure+ ,+a-slightly-different-structure+) . explosion)
-                ((,+a-structure+ ,+an-equivalent-structure+) . victory)))
+    (:room-case-insensitive-strings
+     . ((("right" "wrong") . explosion)
+        (("lisp" "LISP") . victory)))
 
-    (:maze-10 . (((,+a-hash-table+ ,+a-slightly-different-hash-table+) . explosion)
-                 ((,+a-hash-table+ ,+a-hash-table-with-same-keys-and-values+) . victory)))
+    (:room-cons-case-insensitive-chars
+     . ((((1 . 1) (1 . 2)) . explosion)
+        (((1 . 1) (1.0 . 1.0)) . victory)))
 
-    )
-  "Mazes are a sequence of pairs of a DOOR and a RESULT. A DOOR is a sequence of
-things which will be given to the key. If a KEY opens a DOOR, the maze will
-evaluate to RESULT")
+    (:room-cons-number-of-different-types
+     . ((((#\a . #\b) (#\a . #\c)) . explosion)
+        (((#\a . #\b) (#\A . #\B)) . victory)))
+
+    (:room-arrays-looser-equal
+     . (((,+an-array+ ,+a-different-array+) . explosion)
+        ((,+an-array+ ,+a-similar-but-different-array+) . victory)))
+
+    (:room-structures
+     . (((,+a-structure+ ,+a-slightly-different-structure+) . explosion)
+        ((,+a-structure+ ,+an-equivalent-structure+) . victory)))
+
+    (:room-hash-table
+     . (((,+a-hash-table+ ,+a-slightly-different-hash-table+) . explosion)
+        ((,+a-hash-table+ ,+a-hash-table-with-same-keys-and-values+) . victory))))
+  "Rooms are a sequence of pairs of a DOOR and a RESULT. A DOOR is a sequence of
+things which will be given to the key. If a KEY opens a DOOR, the room will be
+opened and evaluate to RESULT")

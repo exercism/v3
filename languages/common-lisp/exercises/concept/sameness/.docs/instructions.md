@@ -1,21 +1,3 @@
-Leslie the Lisp Alien is programming their maze-robot (as young Lisp Aliens are wont to do) and needs some help. The maze consists of choices of doors. Each door needs a key. If you use the wrong key at a door it is likely to explode (do not worry for the robot, there will be no damage but buffing out the scorch marks is quite annoying for Leslie).
+Leslie the Lisp Alien is programming their maze-robot (as young Lisp Aliens are wont to do) and needs some help. The maze consists of a series of rooms. Each room as a choices of doors. Each door needs a key. If you use the wrong key at a door it is likely to explode (do not worry for the robot, there will be no damage but buffing out the scorch marks is quite annoying for Leslie). If the robot doesn't have a key to open any doors then the room will explode as well (again, do not worry it will not damage but will be annoying to clean).
 
-What you need to help Leslie with is to choose the correct keys to open the correct doors. In this maze each key is an equality predicate.
-
-Each maze is a series of doors and the robot will go through the first door that a key works on. Add to the `robot` function to let it choose which key to use based upon the id of the maze.
-
-## Maze the First: Object Equality
-
-In this maze the correct door is one that can only be opened with a predicate that finds if two objects are the _same_ object.
-
-## Maze the Second: Numbers
-
-## Maze the Third: Characters
-
-## Maze the Fourth: Lists
-
-## Maze the Fifth: Arrays
-
-## Maze the Sixth: Strings
-
-## Maze the Fourth: Case Insensitivity
+What you need to help Leslie with is to program her robot to pick the correct key for each room. In each room the robot will try the key in each door in order until it finds one that the key opens. It will then go through the door and find out what lies behind it.

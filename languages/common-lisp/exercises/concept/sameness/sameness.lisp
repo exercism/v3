@@ -4,10 +4,10 @@
 
 (in-package :sameness)
 
-(defun robot (maze-id)
-  "Return a key to use for the doors in the maze designated by MAZE-ID."
-  (case maze-id
+(defun robot (room-id)
+  "Return a key to use for the doors in the room designated by ROOM-ID."
+  (case room-id
     ;; add forms such as:
-    ;; (maze-id-13 #'equalp)
+    ;; (room-id-13 #'equalp)
 
     (t (constantly t))))
