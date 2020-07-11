@@ -2381,6 +2381,46 @@
               "name": "functions"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/tuples",
+          "slug": "tuples",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "boleans"
+            },
+            {
+              "url": null,
+              "name": "for-loops"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": null,
+              "name": "if-keyword"
+            },
+            {
+              "url": null,
+              "name": "in-keyword"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
+              "name": "integers"
+            },
+            {
+              "url": null,
+              "name": "return-keyword"
+            }
+          ]
         }
       ]
     }
