@@ -2,7 +2,7 @@ In this exercise you'll be managing an inventory system.
 
 You will be given a list of items. Each time an item is in the given list, add `1` to the key in the _given_ inventory. Each item should be organized by their name and the amount of that item. You will also have to delete items from a dictionary.
 
-You will also have to implement a function which returns a list of `tuples` of all the keys in the _given_ inventory.
+You will also have to implement a function which returns a list of `tuples` of all the key-value pairs in the _given_ inventory.
 
 ## 1. Create an inventory from a list
 
