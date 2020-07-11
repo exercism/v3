@@ -1,0 +1,5 @@
+doubleCards(deck)
+middleTwo(deck)
+sandwichTrick(deck)
+twoIsSpecial(deck)
+perfectlyOrdered(deck)
