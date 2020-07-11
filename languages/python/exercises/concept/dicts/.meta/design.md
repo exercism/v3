@@ -33,6 +33,17 @@ The goal of this exercise is to teach the basics of the `dict` (dictionary, mapp
 
 ## Prerequisites
 
+- `booleans`
+- `for-loops`
+- `functions`
+- `if-keyword`
+- `in-keyword`
+- `integers`
+- `return-keyword`
+- `strings`
+- `tuples`
+- `lists`
+
 - [builtin-types][builtin-types]
 - [data-types][data-types]
 
