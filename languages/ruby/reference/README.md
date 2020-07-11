@@ -79,7 +79,6 @@ The Ruby concept exercises are based on concepts. The list below contains the co
   - `unless`
 - Basic IO
   - `gets`
-  - `gets.chomp`
   - `p`
   - `puts`
   - `print`
