@@ -1,12 +1,11 @@
-Enumeration is the act of stepping through a collection (Array, Hash, etc) and performing some action on each object. 
+Enumeration is the act of stepping through a collection (Array, Hash, etc) and performing some action on each object.
 Enumeration is a key concept in Ruby and is used for sorting (`sort_by`), grouping (`group_by`), mapping (`map`), reducing (`reduce`), and much more. You'll most frequently see enumeration as the idiomatic way iterating through collections rather than using loops.
 
 A simple enumeration to print each word in an array would look like this:
+
 ```ruby
-words = ['the', 'cat', 'sat', 'on', 'the', 'mat']
-words.each do |word|
-  print word
-end
+words = %w[the cat sat on the mat]
+words.each { |word| print word }
 
 #=> the
 #=> cat
@@ -17,11 +16,10 @@ end
 In this example, we have called the Array's `each` method and passed in a _block_, which takes one parameter (`word`) and uppercases it. Blocks are small groupings of statements that can be executed multiple times. They can be thought of as closures or anonymous functions. Blocks are defined using the `do...end` syntax (above), or the `{}` (below). The styles are interchanagable and differening opinions exist about when each should be used.
 
 We can also chain enumarable methods. For example, we can chain `.with_index` onto `each` to print out the index of an object as well as it's value:
+
 ```ruby
-words = ['the', 'cat', 'sat', 'on', 'the', 'mat']
-words.each.with_index { |word, index|
-  print "#{index}: #{word}"
-}
+words = %w[the cat sat on the mat]
+words.each.with_index { |word, index| print "#{index}: #{word}" }
 
 #=> 0. the
 #=> 1. cat

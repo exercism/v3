@@ -13,8 +13,8 @@ A single item in the inventory is represented by a hash, and the whole inventory
 ]
 ```
 
-
 ## 1. Return a list of the names of the items in stock
+
 Implement `BoutiqueInventory.item_names` which should return a list of the item names, ordered alphabetically.
 
 ```ruby
@@ -29,7 +29,8 @@ BoutiqueInventory.new[
 ```
 
 ## 2. Return any items that are cheap
-Implement `BoutiqueInventory.cheap` which should return any items that cost less than $30.
+
+Implement `BoutiqueInventory.cheap` which should return any items that cost less than \$30.
 
 ```ruby
 BoutiqueInventory.new[
@@ -46,6 +47,7 @@ BoutiqueInventory.new[
 ```
 
 ## 3. Return any items that are out of stock
+
 Implement `BoutiqueInventory.out_of_stock` which should return any items that have no stock (where `quantity_by_size` is empty).
 
 ```ruby
@@ -60,6 +62,7 @@ BoutiqueInventory.new[
 ```
 
 ## 4. Return a single item's stock
+
 Implement `BoutiqueInventory.stock_for_item(name)` to return the stock of an item by its name:
 
 ```ruby
@@ -74,6 +77,7 @@ BoutiqueInventory.new[
 ```
 
 ## 5. Return the total stock
+
 Implement `BoutiqueInventory.total_stock` to calculate the total amount of items in your storeroom:
 
 ```ruby
