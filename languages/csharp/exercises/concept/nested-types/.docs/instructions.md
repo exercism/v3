@@ -22,7 +22,7 @@ Ensure that the `Telemetry` instance cannot be created outside the scope of the 
 
 ## 3. Prevent other code from taking too many dependencies on the Speed struct
 
-Ensure that the `Speed` struct cannot be instantiated outide the scope of the `RemoteControlCar` class.
+Ensure that the `Speed` struct cannot be instantiated outside the scope of the `RemoteControlCar` class.
 
 ## 4. Prevent other code from taking dependencies on the SpeedUnits enum
 
