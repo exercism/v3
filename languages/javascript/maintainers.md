@@ -19,3 +19,4 @@ These awesome people help maintain the JavaScript track.
 - Ovidiu Miu (Slack: `@Ovidiu Miu`, GitHub: [ovidiu141](https://github.com/ovidiu141))
 - Pedro Romano (Slack: `@paparomeo`, GitHub: [paparomeo](https://github.com/paparomeo))
 - Rishi Kothari (Slack: `@Rishi Kothari`, GitHub: [rishiosaur](https://github.com/rishiosaur))
+- Josh Goebel (Slack: `@Josh Goebel`, GitHub: [yyyc514](https://github.com/yyyc514/))
