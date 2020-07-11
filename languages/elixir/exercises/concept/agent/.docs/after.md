@@ -1,3 +1,24 @@
+While spawning a process is easy, managing its state and behavior can become very complicated. The `Agent` module is an abstraction to facilitate this process to use an elixir process to manage a shared state.
+
+When using `Agent` module functions it's customary to encapsulate the agent-related functions in a single module.
+
+```elixir
+# A simple use of agent processes to represent a counter
+defmodule Counter do
+  def start_link(initial_value) do
+    Agent.start(fn -> initial_value end)
+  end
+
+  def value(pid) do
+    Agent.get(__MODULE__, & &1)
+  end
+
+  def increment(pid) do
+    Agent.update(pid, &(&1 + 1))
+  end
+end
+```
+
 The choice to use the `Agent` module, or to use multiple processes at all, depends on the relationship to be modelled with the data. _Agent processes_ are useful when a shared state must be used by multiple processes.
 
 It is often the better choice to avoid using a separate process and use an in-process variable to hold the state in a function. Care should also be taken from blindly treating them as a global variable, as they may be manipulated by other processes, creating race conditions, or untraceable errors.
