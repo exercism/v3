@@ -31,6 +31,7 @@ These are example tasks that fit the pizza delivery exercise:
 ## Implementations
 
 - [F#][implementation-fsharp] (reference implementation)
+- [JavaScript][implementation-javascript]
 
 ## Related
 
@@ -38,3 +39,4 @@ These are example tasks that fit the pizza delivery exercise:
 
 [concepts-recursion]: ../concepts/recursion.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/recursion/.docs/instructions.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/recursion/.docs/instructions.md

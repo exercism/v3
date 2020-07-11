@@ -14,7 +14,7 @@ final class BasicsTests: XCTestCase {
         XCTAssertEqual(remainingMinutesInOven(elapsedMinutes: 13), 27)
     }
 
-    func testPreperationMinutes() throws {
+    func testPreparationMinutes() throws {
         try XCTSkipIf(true && !runAll) // change true to false to run this test
         XCTAssertEqual(preparationTimeInMinutes(layers: 6), 12)
     }
@@ -27,7 +27,7 @@ final class BasicsTests: XCTestCase {
     static var allTests = [
         ("testExpectedMinutes", testExpectedMinutes),
         ("testRemainingMinutes", testRemainingMinutes),
-        ("testPreperationMinutes", testPreperationMinutes),
+        ("testPreparationMinutes", testPreparationMinutes),
         ("testTotalMinutes", testTotalMinutes),
     ]
 }

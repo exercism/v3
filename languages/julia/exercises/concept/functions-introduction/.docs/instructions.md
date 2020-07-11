@@ -1,6 +1,6 @@
 In this exercise you're going to write some code to help you cook a brilliant lasagna from your favorite cooking book.
 
-You have three tasks, all related to the time spent cooking the lasasgna.
+You have three tasks, all related to the time spent cooking the lasagna.
 
 ## 1. Calculate the preparation time in minutes
 

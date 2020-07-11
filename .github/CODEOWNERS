@@ -1,5 +1,6 @@
 # Docs
 docs/**/*                              @iHiD @ErikSchierboom
+reference/stories/**/*                 @ErikSchierboom
 
 # Badges
 badges.md                              @iHiD @ErikSchierboom

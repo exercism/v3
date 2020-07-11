@@ -17,7 +17,7 @@ Before we publicize requesting contribution for this language, the following ste
 - [x] Ensure there is a link to your track's GitHub issues on the [main README.md](../../README.md)
 - [x] [Write a Concept Exercise implementation guide](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
 - [x] [List out key Concepts for your language](../../docs/maintainers/determining-concepts.md)
-- [ ] [Add GitHub issues for 20 Concept Exercises](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
+- [x] [Add GitHub issues for 20 Concept Exercises](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
 
 ## Readiness for Launch
 
