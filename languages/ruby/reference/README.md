@@ -97,4 +97,4 @@ The Ruby concept exercises are based on concepts. The list below contains the co
 - Modules
 - Blocks
 - Procs
-- Lambdas
+  - lambdas
