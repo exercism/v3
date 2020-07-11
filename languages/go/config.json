@@ -59,12 +59,6 @@
         "prerequisites": ["basics", "strings", "numbers"]
       },
       {
-        "slug": "constants",
-        "uuid": "31a74993-604d-44ae-afb7-fac7168ccf16",
-        "concepts": ["constants"],
-        "prerequisites": ["basics", "strings", "numbers"]
-      },
-      {
         "slug": "context",
         "uuid": "96aaabad-b8b7-431c-ae59-abb813efd272",
         "concepts": ["context"],
