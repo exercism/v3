@@ -38,7 +38,7 @@ defmodule CommunityGarden do
       end)
 
     case registration do
-      nil -> {:error, "plot is unregistered"}
+      nil -> {:not_found, "plot is unregistered"}
       _ -> registration
     end
   end
