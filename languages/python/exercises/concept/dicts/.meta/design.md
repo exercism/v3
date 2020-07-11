@@ -44,7 +44,6 @@ The goal of this exercise is to teach the basics of the `dict` (dictionary, mapp
 - `tuples`
 - `lists`
 
-- [data-types][data-types]
 
 ## Representer
 
