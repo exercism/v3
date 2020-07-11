@@ -1889,13 +1889,13 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/error.md",
               "name": "errors"
-            },
-            {
-              "url": null,
-              "name": "basics"
             }
           ],
           "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
               "name": "constants"
@@ -2111,6 +2111,30 @@
             {
               "url": null,
               "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/nullability",
+          "slug": "nullability",
+          "concepts": [
+            {
+              "url": null,
+              "name": "nullability"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": null,
+              "name": "string-formatting"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
             }
           ]
         },
