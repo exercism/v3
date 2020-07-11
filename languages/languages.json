@@ -1889,13 +1889,13 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/error.md",
               "name": "errors"
-            },
-            {
-              "url": null,
-              "name": "basics"
             }
           ],
           "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
               "name": "constants"
