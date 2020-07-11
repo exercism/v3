@@ -188,4 +188,3 @@ The exercises in this table should form a DAG which will eventually cover all co
 | `deriving-traits`        | `structs`                                    | `PartialEq`, `PartialOrd`, `Debug`, `Display`, `Default` |
 | `implementing-traits`    | `deriving-traits`                            | manually implementing a trait                            | probably implement `Iterator`                                                    |
 | `collection-conversions` | `vectors`, `hashsets`, `implementing-traits` | `FromIterator`, `IntoIterator`                           |
-
