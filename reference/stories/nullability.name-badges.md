@@ -20,6 +20,7 @@ These are example tasks that fit the employee badges exercise:
 
 - [C#][implementation-csharp] (reference implementation)
 - [Elixir][implementation-elixir]
+- [JavaScript][implementation-javascript]
 
 ## Related
 
@@ -29,4 +30,6 @@ These are example tasks that fit the employee badges exercise:
 [types-null]: ../types/null.md
 [types-nullable]: ../types/nullable.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/nullability/.docs/instructions.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/nullability/.docs/instructions.md
 [implementation-elixir]: ../../languages/elixir/exercises/concept/nil/.docs/instructions.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/nullability/.docs/instructions.md
