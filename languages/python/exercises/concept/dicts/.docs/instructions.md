@@ -13,7 +13,7 @@ Implement a function that creates an inventory from scratch using a list of item
 {"coal":1, "wood":2 "diamond":3}
 ```
 
-## 2. Add items from a list to a dictionary
+## 2. Add items from a list to an existing dictionary
 
 Implement a function that adds a list of items to a passed in inventory dictionary:
 
