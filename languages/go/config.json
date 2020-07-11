@@ -26,14 +26,7 @@
         "slug": "bytes-and-runes",
         "uuid": "668463ec-4b73-40cf-b24d-2f3a4bb110f6",
         "concepts": ["bytes", "runes"],
-        "prerequisites": [
-          "slices",
-          "strings",
-          "numbers",
-          "iteration",
-          "functions",
-          "conditionals"
-        ]
+        "prerequisites": ["slices", "strings", "numbers", "iteration", "functions", "conditionals"]
       },
       {
         "slug": "booleans",
