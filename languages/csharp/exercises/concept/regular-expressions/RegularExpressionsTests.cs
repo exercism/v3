@@ -74,5 +74,4 @@ public class RegularExpressionTests
         };
         Assert.Equal(expected, lp.ListLinesWithPasswords(lines));
     }
-
 }
