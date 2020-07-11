@@ -38,7 +38,7 @@ Item counts should not fall below `0`, if the amount of an item in the list exce
 {"coal":0, "wood":0, "diamond":1}
 ```
 
-## 4. Return the contents of a dictionary
+## 4. Return the inventory content
 
 Implement a function that returns a list of tuples with the items and their values:
 
