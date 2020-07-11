@@ -31,7 +31,7 @@ Implement a function that removes items from an inventory:
 {"coal":2, "diamond":0, "iron":3}
 ```
 
-Items should not be below `0`, if the amount of items in the list exceed the amount of items in the inventory, the `key` value should not drop below `0`. 
+Items should not be below `0`, if the amount of items in the list exceed the amount of items in the inventory, the `key` value should not drop below `0`.
 
 ```python
 >>> delete_items({"coal":2, "wood":1, "diamond":2}, ["coal", "coal", "wood", "wood", "diamond"])

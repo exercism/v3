@@ -2,5 +2,5 @@ A `dict` object in Python is a mutable\* mapping of hashable keys to values. A k
 
 \*_Mutable objects are objects that can be changed without changing their identity. Methods for immutable objects actually dont return any value (like with strings) they change the object itself._
 
-[docs]:https://docs.python.org/3/tutorial/datastructures.html#dictionaries
-[how-to]:https://www.w3schools.com/python/python_dictionaries.asp
+[docs]: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+[how-to]: https://www.w3schools.com/python/python_dictionaries.asp
