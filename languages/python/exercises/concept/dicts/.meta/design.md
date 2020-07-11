@@ -13,7 +13,7 @@ The goal of this exercise is to teach the basics of the `dict` (dictionary, mapp
 - add new `key`:`value` pairs to the `dict`.
 - remove `key`:`value` pairs from the `dict`.
 - iterate through a `dict` using `dict.keys()`, `dict.values()`, or `dict.items()`.
-
+- `dict` method `setdefault()`
 ## Things not to teach
 
 - Dictionary comprehensions
