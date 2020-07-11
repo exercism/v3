@@ -2,6 +2,98 @@
 
 ## Concepts
 
-TODO: List the concepts that are specific to the Ruby language. For inspiration, check out the [C# version of this file][csharp-implementing].
+The Ruby concept exercises are based on concepts. The list below contains the concepts that have been identified for the Ruby language.
 
-[csharp-implementing]: ../../csharp/reference/README.md
+- Ruby OO Philosophy
+- Comments
+  - `#` for single line comments
+  - `=begin` and `=end` for multiline comments
+- Arithmetic
+  - `+`
+  - `-`
+  - `*`
+  - `/`
+  - `**`
+  - `%`
+  - Shorthand assignment operator
+    - `+=`
+    - `-=`
+    - `*=`
+    - `/=`
+    - `%=`
+- Math
+- Comparison Operators
+  - `==`
+  - `!=`
+  - `<=`
+  - `>=`
+  - `<`
+  - `>`
+- Variables
+  - Defining variables
+  - Updating variables
+- Constants
+- Data Types
+  - Strings
+    - String concatenation
+    - Repeating a string (`"hello"*3`)
+    - Interpolation
+  - Symbols
+  - Chars
+  - Booleans
+    - Logical operators
+      - `and`
+      - `or`
+      - `not`
+      - `&&`
+      - `||`
+      - `!`
+  - Numbers
+    - Integer
+    - Float
+  - Type conversion
+- Iterators
+- Classes
+  - Methods
+    - Defining methods
+    - Returning a value from a method
+      - Default return values
+    - Calling a method
+      - Calling a method with named parameters
+  - Attributes
+  - Instances
+  - Constructors
+- Arrays
+- Hashes
+- Conditionals
+  - if
+  - else
+  - elsif
+  - unless
+  - case
+  - ternary operator
+- Loops
+  - `each`
+  - `map`
+  - `for`
+  - `unless`
+- Basic IO
+  - `gets`
+  - `p`
+  - `puts`
+  - `print`
+- Scope
+- Date and Time
+- Exception handling
+- Custom exceptions
+- Advanced classes
+  - Inheritance
+  - Polymorphism
+  - Instance variables
+  - Class variables
+  - Class methods
+  - Nested classes
+- Modules
+- Blocks
+- Procs
+  - lambdas
