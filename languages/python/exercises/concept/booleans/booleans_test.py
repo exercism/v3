@@ -87,7 +87,3 @@ class TestArcadeGame(unittest.TestCase):
             True,
             msg="win if all dots eaten and touching a ghost with a power pellet active"
         )
-
-
-if __name__ == '__main__':
-    unittest.main()
