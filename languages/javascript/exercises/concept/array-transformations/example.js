@@ -5,7 +5,7 @@
  *
  * @returns {number[]} deck with every card doubled
  */
-export function doubleCards(deck) {
+export function seeingDouble(deck) {
   return deck.map((card) => card * 2)
 }
 

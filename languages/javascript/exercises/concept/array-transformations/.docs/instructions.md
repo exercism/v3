@@ -10,7 +10,7 @@ Elyse wants to double the number of every card in the deck. This may result in h
 
 ```javascript
 const deck = [1, 2, 3, 4, 10]
-doubleCards(deck)
+seeingDouble(deck)
 // => [2, 4, 6, 8, 20]
 ```
 
