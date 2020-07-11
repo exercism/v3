@@ -1,5 +1,12 @@
 [
   {
+    "name": "C",
+    "slug": "c",
+    "exercises": {
+      "concept": []
+    }
+  },
+  {
     "name": "C#",
     "slug": "csharp",
     "exercises": {
@@ -2654,6 +2661,13 @@
           ]
         }
       ]
+    }
+  },
+  {
+    "name": "Scala",
+    "slug": "scala",
+    "exercises": {
+      "concept": []
     }
   },
   {
