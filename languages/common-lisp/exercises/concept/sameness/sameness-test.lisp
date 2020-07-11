@@ -29,15 +29,12 @@
 things which will be given to the key. If a KEY opens a DOOR, the maze will
 evaluate to RESULT")
 
-(test the-maze-of-object-equality
-  (is (eq 'victory (run-maze :maze-1 #'sameness:robot))))
-
-;; tests that must use eql (numbers of same type, characters)
+(test the-maze-of-object-identity
+  (is (eq 'victory (run-maze :maze-1 #'robot))))
 (test the-maze-of-characters
-  (is (eq 'victory (run-maze :maze-2 #'sameness:robot))))
+  (is (eq 'victory (run-maze :maze-2 #'robot))))
 (test the-maze-of-numbers
-  (is (eq 'victory (run-maze :maze-3 #'sameness:robot))))
-
+  (is (eq 'victory (run-maze :maze-3 #'robot))))
 ;; tests that must use equal (lists, arrays (eq), strings)
 
 ;; tests that must use equalp (characters (case insensitive) arrays (numbers for
