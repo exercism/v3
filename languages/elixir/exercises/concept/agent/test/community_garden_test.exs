@@ -8,7 +8,7 @@ defmodule CommunityGardenTest do
 
   test "when started, the registry is empty" do
     assert {:ok, pid} = CommunityGarden.start()
-    assert %{} == CommunityGarden.list_registrations(pid)
+    assert [] == CommunityGarden.list_registrations(pid)
   end
 
   test "can register a new plot" do
@@ -19,14 +19,14 @@ defmodule CommunityGardenTest do
   test "maintains a registry of plots" do
     assert {:ok, pid} = CommunityGarden.start()
     assert %Plot{} = plot = CommunityGarden.register(pid, "Johnny Appleseed")
-    assert %{plot.plot_id => plot} == CommunityGarden.list_registrations(pid)
+    assert [plot] == CommunityGarden.list_registrations(pid)
   end
 
   test "can release a plot" do
     assert {:ok, pid} = CommunityGarden.start()
     assert %Plot{} = plot = CommunityGarden.register(pid, "Johnny Appleseed")
     assert :ok = CommunityGarden.release(pid, plot.plot_id)
-    assert %{} == CommunityGarden.list_registrations(pid)
+    assert [] == CommunityGarden.list_registrations(pid)
   end
 
   test "can get a specific registration by id" do
@@ -43,8 +43,8 @@ defmodule CommunityGardenTest do
     assert registered_plot.registered_to == "Johnny Appleseed"
   end
 
-  test "return error when attempt to get registration of an unregistered plot" do
+  test "return not_found when attempt to get registration of an unregistered plot" do
     assert {:ok, pid} = CommunityGarden.start()
-    assert {:error, "plot is unregistered"} = CommunityGarden.get_registration(pid, 1)
+    assert {:not_found, "plot is unregistered"} = CommunityGarden.get_registration(pid, 1)
   end
 end
