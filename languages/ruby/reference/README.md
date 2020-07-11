@@ -20,7 +20,6 @@ The Ruby concept exercises are based on concepts. The list below contains the co
     - `-=`
     - `*=`
     - `/=`
-    - `*=*`
     - `%=`
 - Math
 - Comparison Operators
