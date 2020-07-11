@@ -20,47 +20,37 @@
 (def-suite sameness-suite)
 (in-suite sameness-suite)
 
-(test the-room-of-object-identity
+(test the-maze-of-object-identity
   (is (eq 'victory (open-room :room-object-identity #'robot))))
 
-(test the-room-of-characters
-  (is (eq 'victory (open-room :room-characters #'robot))))
-
-(test the-room-of-numbers
-  (is (eq 'victory (open-room :room-numbers #'robot))))
-
-(test the-room-of-conses
-  (is (eq 'victory (open-room :room-cons-of-symbols #'robot)))
-  (is (eq 'victory (open-room :room-cons-of-chars #'robot)))
-  (is (eq 'victory (open-room :room-cons-of-numbers #'robot))))
-
-(test the-room-of-arrays
-  (is (eq 'victory (open-room :room-arrays #'robot))))
-
-(test the-room-of-strings
-  (is (eq 'victory (open-room :room-strings #'robot))))
-
-(test the-room-of-case-insensitive-characters
-  (is (eq 'victory (open-room :room-case-insensitive-chars #'robot))))
-
-(test the-room-of-numbers-redux
+(test the-maze-of-numbers
+  (is (eq 'victory (open-room :room-numbers #'robot)))
   (is (eq 'victory (open-room :room-number-of-different-types #'robot))))
 
-(test the-room-of-case-insensitive-strings
+(test the-maze-of-characters
+  (is (eq 'victory (open-room :room-characters #'robot)))
+  (is (eq 'victory (open-room :room-case-insensitive-chars #'robot))))
+
+(test the-maze-of-strings
+  (is (eq 'victory (open-room :room-strings #'robot)))
   (is (eq 'victory (open-room :room-case-insensitive-strings #'robot))))
 
-(test the-room-of-conses-redux
+(test the-maze-of-conses
+  (is (eq 'victory (open-room :room-cons-of-symbols #'robot)))
+  (is (eq 'victory (open-room :room-cons-of-chars #'robot)))
+  (is (eq 'victory (open-room :room-cons-of-numbers #'robot)))
   (is (eq 'victory (open-room :room-cons-case-insensitive-chars #'robot)))
   (is (eq 'victory (open-room :room-cons-number-of-different-types #'robot))))
 
-(test the-room-of-arrays-redux
+(test the-maze-of-arrays
+  (is (eq 'victory (open-room :room-arrays #'robot)))
   (is (eq 'victory (open-room :room-arrays-looser-equal #'robot))))
 
-(test the-room-of-structures
-  (is (eq 'victory (open-room :room-structures #'robot))))
-
-(test the-room-of-hash-tables
+(test the-maze-of-hash-tables
   (is (eq 'victory (open-room :room-hash-table #'robot))))
+
+(test the-maze-of-structures
+  (is (eq 'victory (open-room :room-structures #'robot))))
 
 ;; Either provides human-readable results to the user or machine-readable
 ;; results to the test runner. The default upon calling `(run-tests)` is to
@@ -105,7 +95,8 @@ particular ROBOT."
   (make-hash-table-with-pairs '(a 1) '(b #\x)))
 
 (defparameter +rooms+
-  `((:room-object-identity
+  `(
+    (:room-object-identity
      . ((("wrong" "WRONG") . explosion)
         ((2 2.0) . explosion)
         ((lisp LISP) . victory)))
@@ -168,7 +159,9 @@ particular ROBOT."
 
     (:room-hash-table
      . (((,+a-hash-table+ ,+a-slightly-different-hash-table+) . explosion)
-        ((,+a-hash-table+ ,+a-hash-table-with-same-keys-and-values+) . victory))))
+        ((,+a-hash-table+ ,+a-hash-table-with-same-keys-and-values+) . victory)))
+
+    )
   "Rooms are a sequence of pairs of a DOOR and a RESULT. A DOOR is a sequence of
 things which will be given to the key. If a KEY opens a DOOR, the room will be
 opened and evaluate to RESULT")
