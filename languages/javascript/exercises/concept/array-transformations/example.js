@@ -16,13 +16,14 @@ export function doubleCards(deck) {
  *
  * @returns {number[]} deck with triplicate 3s
  */
-export function threeOfThree(deck) {
+export function threeOfEachThree(deck) {
   return deck.reduce((newDeck, card) => {
     if (card === 3) {
       newDeck.push(3, 3, 3)
     } else {
       newDeck.push(card)
     }
+    return newDeck
   }, [])
 }
 
@@ -47,18 +48,17 @@ export function middleTwo(deck) {
  */
 
 export function sandwichTrick(deck) {
-  const firstCard = deck[0]
-  const lastCard = deck[9]
-  const withInsertedCards = deck.splice(4, 0, lastCard, firstCard)
-  return withInsertedCards.slice(1, 10)
+  const firstCard = deck.shift()
+  const lastCard = deck.pop()
+  return deck.splice(3, 0, lastCard, firstCard)
 }
 
 /**
- * Removes every card except the 2
+ * Removes every card from the deck except 2s
  *
  * @param {number[]} deck
  *
- * @returns {number[]} deck with only the card 2
+ * @returns {number[]} deck with only 2s
  */
 export function twoIsSpecial(deck) {
   return deck.filter((card) => card === 2)
