@@ -10,6 +10,7 @@ To contribute, please select the language you'd like to contribute to:
 
 | Track                                  | # Concept Exercises            |
 | -------------------------------------- | ------------------------------ |
+| [C](./c/README.md)                     | [0](./c/config.json)           |
 | [C#](./csharp/README.md)               | [28](./csharp/config.json)     |
 | [C++](./cpp/README.md)                 | [1](./cpp/config.json)         |
 | [Clojure](./clojure/README.md)         | [1](./clojure/config.json)     |
