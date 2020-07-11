@@ -19,9 +19,22 @@
 
 (defparameter +an-array+ #(1 2 3))
 (defparameter +a-similar-but-different-array+ #(1 2 3))
+(defparameter +a-different-array+ #(1 2 4))
+
+(defstruct test-structure a b)
+
+(defparameter +a-structure+ (make-test-structure :a 1 :b #\c))
+(defparameter +a-slightly-different-structure+ (make-test-structure :a 1 :b #\x))
+(defparameter +an-equivalent-structure+ (make-test-structure :a 1.0 :b #\C))
+
+(defparameter +a-hash-table+ (make-hash-table-with-pairs '(a 1) '(b #\c)))
+(defparameter +a-hash-table-with-same-keys-and-values+
+  (make-hash-table-with-pairs '(a 1) '(b #\c)))
+(defparameter +a-slightly-different-hash-table+
+  (make-hash-table-with-pairs '(a 1) '(b #\x)))
 
 (defparameter +mazes+
-  '((:maze-1 . ((("wrong" "WRONG") . explosion)
+  `((:maze-1 . ((("wrong" "WRONG") . explosion)
                 ((2 2.0) . explosion)
                 ((lisp LISP) . victory)))
 
@@ -37,11 +50,34 @@
     (:maze-6 . ((((1 . 2) (1 . 2.0)) . explosion)
                 (((1 . 2) (1 . 2)) . victory)))
 
-    (:maze-7 . (((+an-array+ +a-similar-but-different-array+) . explosion)
-                ((+an-array+ +an-array+) . victory)))
+    (:maze-7 . (((,+an-array+ ,+a-similar-but-different-array+) . explosion)
+                ((,+an-array+ ,+an-array+) . victory)))
 
     (:maze-8 . ((("wrong" "WRONG") . explosion)
                 (("lisp" "lisp") . victory)))
+
+    (:maze-9 . (((#\a #\b) . explosion)
+                ((#\a #\A) . victory)))
+
+    (:maze-a . (((1.0 1.1) . explosion)
+                ((1 1.0) . victory)))
+
+    (:maze-b . ((("right" "wrong") . explosion)
+                (("lisp" "LISP") . victory)))
+
+    (:maze-c . ((((1 . 1) (1 . 2)) . explosion)
+                (((1 . 1) (1.0 . 1.0)) . victory)))
+    (:maze-d . ((((#\a . #\b) (#\a . #\c)) . explosion)
+                (((#\a . #\b) (#\A . #\B)) . victory)))
+
+    (:maze-e . (((,+an-array+ ,+a-different-array+) . explosion)
+                ((,+an-array+ ,+a-similar-but-different-array+) . victory)))
+
+    (:maze-f . (((,+a-structure+ ,+a-slightly-different-structure+) . explosion)
+                ((,+a-structure+ ,+an-equivalent-structure+) . victory)))
+
+    (:maze-10 . (((,+a-hash-table+ ,+a-slightly-different-hash-table+) . explosion)
+                 ((,+a-hash-table+ ,+a-hash-table-with-same-keys-and-values+) . victory)))
 
     )
   "Mazes are a sequence of pairs of a DOOR and a RESULT. A DOOR is a sequence of
@@ -50,24 +86,46 @@ evaluate to RESULT")
 
 (test the-maze-of-object-identity
   (is (eq 'victory (run-maze :maze-1 #'robot))))
+
 (test the-maze-of-characters
   (is (eq 'victory (run-maze :maze-2 #'robot))))
+
 (test the-maze-of-numbers
   (is (eq 'victory (run-maze :maze-3 #'robot))))
+
 (test the-maze-of-conses
   (is (eq 'victory (run-maze :maze-4 #'robot)))
   (is (eq 'victory (run-maze :maze-5 #'robot)))
   (is (eq 'victory (run-maze :maze-6 #'robot))))
 
 (test the-maze-of-arrays
-  (is (eq 'victory (run-maze :maze-7 #'robot)))
+  (is (eq 'victory (run-maze :maze-7 #'robot))))
+
+(test the-maze-of-strings
   (is (eq 'victory (run-maze :maze-8 #'robot))))
 
-;; tests that must use equal (lists, arrays (eq), strings)
+(test the-maze-of-case-insensitive-characters
+  (is (eq 'victory (run-maze :maze-9 #'robot))))
 
-;; tests that must use equalp (characters (case insensitive) arrays (numbers for
-;; example), strings (case insensitive))
+(test the-maze-of-numbers-redux
+  (is (eq 'victory (run-maze :maze-a #'robot))))
 
+(test the-maze-of-case-insensitive-strings
+  (is (eq 'victory (run-maze :maze-b #'robot))))
+
+
+(test the-maze-of-conses-redux
+  (is (eq 'victory (run-maze :maze-c #'robot)))
+  (is (eq 'victory (run-maze :maze-d #'robot))))
+
+(test the-maze-of-arrays-redux
+  (is (eq 'victory (run-maze :maze-e #'robot))))
+
+(test the-maze-of-structures
+  (is (eq 'victory (run-maze :maze-f #'robot))))
+
+(test the-maze-of-hash-tables
+  (is (eq 'victory (run-maze :maze-10 #'robot))))
 
 (defun run-maze (maze-id robot)
   "Utility function to run a particular maze (by MAZE-ID) with a particular ROBOT."
@@ -76,6 +134,12 @@ evaluate to RESULT")
     (loop for (door . behind-the-door) in maze
           when (apply key door) do (return behind-the-door)
             finally (return 'sad-trombone))))
+
+(defun make-hash-table-with-pairs (&rest pairs)
+  "Utility function for creating test data."
+  (reduce #'(lambda (ht kv) (setf (gethash (first kv) ht) (second kv)) ht)
+          pairs
+          :initial-value (make-hash-table)))
 
 ;; Either provides human-readable results to the user or machine-readable
 ;; results to the test runner. The default upon calling `(run-tests)` is to
