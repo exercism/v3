@@ -4,10 +4,6 @@ It is often the better choice to avoid using a separate process and use an in-pr
 
 If choosing to use an _agent process_, the goal should be to hold a simple state, encapsulating the calls to the _agent process_ within a module to organize the calls.
 
-```elixir
-# Some example planned to go here.
-```
-
 If an expensive job should be done in another process, a _task process_ (using Task) process should be considered. If it is determined that a process should hold state and perform behaviours, a _GenServer process_ (using `GenServer`) should be considered.
 
 > `Task` and `GenServer` will be discussed in another exercise.
