@@ -10,6 +10,7 @@ To contribute, please select the language you'd like to contribute to:
 
 | Track                                  | # Concept Exercises            |
 | -------------------------------------- | ------------------------------ |
+| [C](./c/README.md)                     | [0](./c/config.json)           |
 | [C#](./csharp/README.md)               | [28](./csharp/config.json)     |
 | [C++](./cpp/README.md)                 | [1](./cpp/config.json)         |
 | [Clojure](./clojure/README.md)         | [1](./clojure/config.json)     |
@@ -32,6 +33,7 @@ To contribute, please select the language you'd like to contribute to:
 | [Python](./python/README.md)           | [2](./python/config.json)      |
 | [Ruby](./ruby/README.md)               | [5](./ruby/config.json)        |
 | [Rust](./rust/README.md)               | [5](./rust/config.json)        |
+| [Scala](./scala/README.md)             | [0](./scala/config.json)       |
 | [Swift](./swift/README.md)             | [6](./swift/config.json)       |
 
 ## Implemented Concept Exercises
