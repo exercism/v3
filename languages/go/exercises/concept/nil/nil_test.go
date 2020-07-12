@@ -1,6 +1,9 @@
 package nil
 
-import "testing"
+import (
+	"reflect"
+	"testing"
+)
 
 func TestEmptyInterface(t *testing.T) {
 	test := struct {
@@ -18,7 +21,6 @@ func TestEmptyInterface(t *testing.T) {
 }
 
 func TestEmptyMap(t *testing.T) {
-	t.Skip()
 	test := struct {
 		name string
 		want map[int]int
@@ -34,7 +36,6 @@ func TestEmptyMap(t *testing.T) {
 }
 
 func TestEmptySlice(t *testing.T) {
-	t.Skip()
 	test := struct {
 		name string
 		want []int
@@ -50,7 +51,6 @@ func TestEmptySlice(t *testing.T) {
 }
 
 func TestEmptyString(t *testing.T) {
-	t.Skip()
 	test := struct {
 		name string
 		want string
@@ -66,7 +66,6 @@ func TestEmptyString(t *testing.T) {
 }
 
 func TestEmptyChannel(t *testing.T) {
-	t.Skip()
 	test := struct {
 		name string
 		want chan int
@@ -82,7 +81,6 @@ func TestEmptyChannel(t *testing.T) {
 }
 
 func TestEmptyPointer(t *testing.T) {
-	t.Skip()
 	test := struct {
 		name string
 		want *int
@@ -98,7 +96,6 @@ func TestEmptyPointer(t *testing.T) {
 }
 
 func TestEmptyBool(t *testing.T) {
-	t.Skip()
 	test := struct {
 		name string
 		want bool
@@ -114,16 +111,21 @@ func TestEmptyBool(t *testing.T) {
 }
 
 func TestEmptyFunc(t *testing.T) {
-	t.Skip()
-	t.Run("EmptyFunc", func(t *testing.T) {
-		if got := EmptyFunc(); got != nil {
-			t.Errorf("EmptyFunc() returned something other than nil")
+	test := struct {
+		name string
+		want func()
+	}{
+		"EmptyFunc",
+		nil,
+	}
+	t.Run(test.name, func(t *testing.T) {
+		if got := EmptyFunc(); !reflect.DeepEqual(got, test.want) {
+			t.Errorf("EmptyFunc() = %p, want nil", got)
 		}
 	})
 }
 
 func TestEmptyInt(t *testing.T) {
-	t.Skip()
 	test := struct {
 		name string
 		want int

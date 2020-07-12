@@ -2,90 +2,36 @@ In this exercise, we will write some simple functions that return zero values fo
 
 ## 1. Return an empty interface
 
-Implement the `EmptyInterface` function to return an empty interface.
-
-```go
-func EmptyInterface() interface{} {
-
-}
-```
+Adjust the `EmptyInterface` function to return an empty interface.
 
 ## 2. Return an empty map
 
-Implement the `EmptyMap` function to return an empty map.
-
-```go
-func EmptyMap() map[int]int {
-
-}
-```
+Adjust the `EmptyMap` function to return an empty map.
 
 ## 3. Return an empty slice
 
-Implement the `EmptySlice` function to return an empty slice.
-
-```go
-func EmptySlice() []int {
-
-}
-```
+Adjust the `EmptySlice` function to return an empty slice.
 
 ## 4. Return an empty string
 
-Implement the `EmptyString` function to return an empty string.
-
-```go
-func EmptyString() string {
-
-}
-```
+Adjust the `EmptyString` function to return an empty string.
 
 ## 5. Return an empty channel
 
-Implement the `EmptyChannel` function to return an empty channel.
-
-```go
-func EmptyChannel() chan int {
-
-}
-```
+Adjust the `EmptyChannel` function to return an empty channel.
 
 ## 6. Return an empty pointer
 
-Implement the `EmptyPointer` function to return an empty pointer.
-
-```go
-func EmptyPointer() *int {
-
-}
-```
+Adjust the `EmptyPointer` function to return an empty pointer.
 
 ## 7. Return an empty bool
 
-Implement the `EmptyBool` function to return an empty bool.
-
-```go
-func EmptyBool() bool {
-
-}
-```
+Adjust the `EmptyBool` function to return an empty bool.
 
 ## 8. Return an empty func
 
-Implement the `EmptyFunc` function to return an empty func.
-
-```go
-func EmptyFunc() func() {
-
-}
-```
+Adjust the `EmptyFunc` function to return an empty func.
 
 ## 9. Return an empty int
 
-Implement the `EmptyInt` function to return an empty int.
-
-```go
-func EmptyInt() int {
-
-}
-```
+Adjust the `EmptyInt` function to return an empty int.
