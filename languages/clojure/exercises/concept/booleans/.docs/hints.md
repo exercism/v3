@@ -6,7 +6,14 @@ We need to check if the knight is awake and *invert* its truth value. This can b
 
 We want the function to return `true` if *any* of the supplied predicates are true. This can be done using the [`or`][or] function.
 
+## 3. Check if the prisoner can be signalled
 
+We want to return `true` if and only if *all* of the supplied predicates are truthy. This can be done with the [`and`][and] function.
+
+## 4. Check if the prisoner can be freed
+
+Here, we need to combine the three basic logical operators, [`and`][and], [`or`][or], and [`not`][not].
 
 [not]: https://clojuredocs.org/clojure.core/not
 [or]: https://clojuredocs.org/clojure.core/or
+[and]: https://clojuredocs.org/clojure.core/and
