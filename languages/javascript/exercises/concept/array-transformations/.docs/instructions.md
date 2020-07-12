@@ -60,3 +60,13 @@ const deck = [10, 1, 5, 3, 2, 8, 7]
 perfectlyOrdered(deck)
 // => [1, 2, 3, 5, 7, 8, 10]
 ```
+
+## 7. Change every card to the total number of cards
+
+Elyse will transform the whole deck into only cards matching the count of how many cards you handed her.
+
+```javascript
+const deck = [10, 1, 5, 3, 2, 8, 7] // 7 cards
+countingCards(deck)
+// => [7, 7, 7, 7, 7, 7, 7]
+```

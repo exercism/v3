@@ -6,6 +6,7 @@
 - `.splice`
 - `.filter`
 - `.sort`
+- `.fill`
 - `.flatMap` (maybe)
 
 ## Out of scope

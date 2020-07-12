@@ -74,3 +74,14 @@ export function twoIsSpecial(deck) {
 export function perfectlyOrdered(deck) {
   return deck.sort()
 }
+
+/**
+ * Returns a deck with every card equal to the total number of cards
+ *
+ * @param {number[]} deck
+ *
+ * @returns {number[]} deck
+ */
+export function countingCards(deck) {
+  return deck.fill(deck.length)
+}
