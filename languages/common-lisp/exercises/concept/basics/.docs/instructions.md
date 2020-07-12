@@ -1,5 +1,5 @@
 You! Yes you, brave lisper! [Lenny the lisp alien][alien] needs your help! He
-wants to go hang out with all the other lisp aliens, but his mom has told him
+wants to go hang out with all the other lisp aliens, but his parents have told him
 that he's not going anywhere until his room is clean.
 
 The issue is, Lenny can hardly see the floor! He can't tell his atoms from his

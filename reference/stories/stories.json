@@ -82,6 +82,12 @@
         "slug": "elixir",
         "exercise": "nil",
         "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/nil/.docs/instructions.md"
+      },
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "nullability",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/nullability/.docs/instructions.md"
       }
     ]
   },
@@ -385,6 +391,12 @@
         "slug": "javascript",
         "exercise": "booleans",
         "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/booleans/.docs/instructions.md"
+      },
+      {
+        "track": "Julia",
+        "slug": "julia",
+        "exercise": "boolean-logic",
+        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/boolean-logic/.docs/instructions.md"
       }
     ]
   },
