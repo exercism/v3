@@ -12,6 +12,7 @@ numberTen = 11
 ```
 
 A `var`, in contrast, can be reassigned to a new value of same type:
+
 ```scala
 var someNumber = 10
 
@@ -37,6 +38,7 @@ count = false;
 ```
 
 ## Defining Functions within Classes
+
 Scala is an _object-oriented language_ and requires all functions to be defined in a _class_. The `class` keyword is used to define a class.
 
 ```scala
@@ -62,11 +64,13 @@ class Calculator {
 ```
 
 There are a few improvements, which can be done to shorten that function in order to improve readability:
-* since the variable `sum` is accessed only once to return the value, it can be omitted
-* methods consisting of only one statement do not need curly braces
-* the function's return type can be inferred the same as for variable types
+
+- since the variable `sum` is accessed only once to return the value, it can be omitted
+- methods consisting of only one statement do not need curly braces
+- the function's return type can be inferred the same as for variable types
 
 This leads to the following one-line function with same functionality:
+
 ```scala
 class Calculator {
   // shortened form
@@ -75,6 +79,7 @@ class Calculator {
 ```
 
 ## Instantiating classes and calling methods
+
 Invoking a method is done by first creating an instance of a class and second to call the method on that instance with arguments:
 
 ```scala
@@ -84,6 +89,7 @@ val sum = calculator.add(5, 7)
 ```
 
 ## Commenting
+
 Scala supports two types of comments, single line comments and multiline comments:
 
 ```scala
