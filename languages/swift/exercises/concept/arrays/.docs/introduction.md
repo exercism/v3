@@ -11,7 +11,7 @@ var myStringArray: [String] = []
 
 Elements of an array can be accessed individually by supplying the index of the element inside square brackets following the array; array indices are `Int`s and start with `0` for the first (leftmost) element. This subscript notation can be used to get the element at that index as well as to set the element at that index, provided the array was defined as a variable (i.e. using `var`).
 
-Trying to access elements at indicies outside the valid range of indices will result in a runtime error that crashes the program.
+Trying to access elements at indices outside the valid range of indices will result in a runtime error that crashes the program.
 
 ```swift
 evenInts[2]
@@ -26,7 +26,7 @@ evenInts[1] = 0
 // Cannot assign through subscript: 'evenInts' is a 'let' constant
 ```
 
-The elements of an array can be stepped through one at a time using a for-in loop. This type of loop takes each element of the array, in order, and binds the element to a specified name for further processing inside the loop body. For ecample, to print out all of the odd integers in an array one can write:
+The elements of an array can be stepped through one at a time using a for-in loop. This type of loop takes each element of the array, in order, and binds the element to a specified name for further processing inside the loop body. For example, to print out all of the odd integers in an array one can write:
 
 ```swift
 let ints = [1, 3, 6, 14, 17, 8, 23, 5, 18, 11]
