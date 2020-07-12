@@ -20,7 +20,6 @@
         "slug": "basics",
         "uuid": "6396fe40-ff11-4ff5-b880-9681bce30a6e",
         "concepts": ["basics"],
-        "prerequisites": ["comments"]
       },
       {
         "slug": "bytes-and-runes",
@@ -51,7 +50,7 @@
         "slug": "comments",
         "uuid": "60186dfa-6a63-4859-a4c4-1e1ed1acf384",
         "concepts": ["comments"],
-        "prerequisites": [""]
+        "prerequisites": ["basics"]
       },
       {
         "slug": "conditionals",
@@ -87,7 +86,7 @@
         "slug": "errors",
         "uuid": "397dc808-7016-4d40-8ac7-4395e12bd19f",
         "concepts": ["errors"],
-        "prerequisites": ["basics", "constants", "types"]
+        "prerequisites": ["basics", "constants"]
       },
       {
         "slug": "errors-handling",
@@ -141,7 +140,7 @@
         "slug": "nil",
         "uuid": "7b265cc8-8f88-4de1-b653-10a384e6c7e2",
         "concepts": ["nil"],
-        "prerequisites": ["basics", "maps", "pointers", "channels"]
+        "prerequisites": ["basics"]
       },
       {
         "slug": "numbers",
@@ -177,13 +176,13 @@
         "slug": "slices",
         "uuid": "8bc0c6f6-1891-4688-9ed7-a63e3702f655",
         "concepts": ["slices"],
-        "prerequisites": ["arrays", "numbers"]
+        "prerequisites": ["basics", "iteration", "numbers"]
       },
       {
         "slug": "strings",
         "uuid": "b97a271c-4036-4ea8-8c6a-094715a48627",
         "concepts": ["strings"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["slices"]
       },
       {
         "slug": "structs",
