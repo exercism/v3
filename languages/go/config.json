@@ -20,6 +20,7 @@
         "slug": "basics",
         "uuid": "6396fe40-ff11-4ff5-b880-9681bce30a6e",
         "concepts": ["basics"],
+        "prerequisites": []
       },
       {
         "slug": "bytes-and-runes",
