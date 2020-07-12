@@ -63,7 +63,8 @@ perfectlyOrdered(deck)
 
 ## 7. Change every card to the total number of cards
 
-Elyse will transform the whole deck into only cards matching the count of how many cards you handed her.
+Elyse will transform the whole deck into only cards that match the deck size.
+Hand her 7 random cards and you'll get back 7 sevens.
 
 ```javascript
 const deck = [10, 1, 5, 3, 2, 8, 7] // 7 cards
