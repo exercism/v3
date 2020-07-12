@@ -1,91 +1,62 @@
-In this exercise, we will write some simple functions that return zero values for various Go types.
+In this exercise you'll be working on an appointment scheduler for a beauty salon in New York that opened on September 15th in 2012.
 
-## 1. Return an empty interface
+You have five tasks, which will all involve appointment dates. The dates and times will use one of the following three formats:
 
-Implement the `EmptyInterface` function to return an empty interface.
+- `"7/25/2019 13:45:00"`
+- `"July 25, 2019 13:45:00"`
+- `"Thursday, July 25, 2019 13:45:00:00"`
+
+## 1. Parse appointment date
+
+Implement the `Schedule` function to parse a textual representation of an appointment date into the corresponding `time.Time` format:
 
 ```go
-func EmptyInterface() interface{} {
+func Schedule("7/25/2019 13:45:00") time.Time {
 
 }
+// => 2019-07-25 13:45:00 +0000 UTC
 ```
 
-## 2. Return an empty map
+## 2. Check if an appointment has already passed
 
-Implement the `EmptyMap` function to return an empty map.
+Implement the `HasPassed` function that takes an appointment date and checks if the appointment was somewhere in the past:
 
 ```go
-func EmptyMap() map[int]int {
+func HasPassed("July 25, 2019 13:45:00") bool {
 
 }
+// => true
 ```
 
-## 3. Return an empty slice
+## 3. Check if appointment is in the afternoon
 
-Implement the `EmptySlice` function to return an empty slice.
+Implement the `IsAfternoonAppointment` function that takes an appointment date and checks if the appointment is in the afternoon (>= 12:00 and < 18:00):
 
 ```go
-func EmptySlice() []int {
+Appointment.IsAfternoonAppointment("Thursday, July 25, 2019 13:45:00:00") bool {
 
 }
+// => true
 ```
 
-## 4. Return an empty string
+## 4. See how long until the next appointment
 
-Implement the `EmptyString` function to return an empty string.
+Implement the `HowLongUntilNextAppointment` function that takes an appointment date and returns the duration until that time:
 
 ```go
-func EmptyString() string {
+func HowLongUntilNextAppointment("2/15/2029 10:45:00") time.Duration {
 
 }
+// => xxxhxxmxxs
 ```
 
-## 5. Return an empty channel
+## 5. Return the anniversary date
 
-Implement the `EmptyChannel` function to return an empty channel.
-
-```go
-func EmptyChannel() chan int {
-
-}
-```
-
-## 6. Return an empty pointer
-
-Implement the `EmptyPointer` function to return an empty pointer.
+Implement the `AnniversaryDate` function that returns this year's anniversary date, which is September 15th:
 
 ```go
-func EmptyPointer() *int {
-
+func AnniversaryDate() string {
+    
 }
-```
-
-## 7. Return an empty bool
-
-Implement the `EmptyBool` function to return an empty bool.
-
-```go
-func EmptyBool() bool {
-
-}
-```
-
-## 8. Return an empty func
-
-Implement the `EmptyFunc` function to return an empty func.
-
-```go
-func EmptyFunc() func() {
-
-}
-```
-
-## 9. Return an empty int
-
-Implement the `EmptyInt` function to return an empty int.
-
-```go
-func EmptyInt() int {
-
-}
+// => new DateTime(2019, 9, 15, 0, 0, 0)
 ```
