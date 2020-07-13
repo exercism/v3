@@ -6,7 +6,7 @@
 
 Consider the various methods on the database, and the states that the database transitions to with each one.
 
-## 2. Write to the database and return an indication of whether the write was successful to the caller
+## 2. Write to the database and return an indication to the caller of whether the write operation was successful
 
 Use of [`try/catch`][try-catch] is necessary in this case.
 
