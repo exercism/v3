@@ -2,6 +2,12 @@
 
 This is a working document to keep track of ideas and thoughts on how the progression through the Concept Exercises on the Julia track could work.
 
+## Core concepts that every student should definitely know after completing the track
+
+- How to »think« Multiple Dispatch. Why and how can I implement an algorithm in a way that it »just works« when I throw a different type at it? If I implement a new type, how can I make it play nicely with existing algorithms and packages?
+
+## Progression Tree
+
 ```mermaid
 graph TD
 

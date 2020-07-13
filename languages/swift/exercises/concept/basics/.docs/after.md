@@ -7,11 +7,11 @@ Once you’ve declared a constant or variable of a certain type, you can’t dec
 Variables are defined using the `var` keyword, while constants are defined using the `let` keyword.
 
 ```swift
-var variableName = 10 // varible
+var variableName = 10 // variable
 let constantName = 10 // constant
 ```
 
-Swift is a type-safe, statically typed language, which means that the types of all values are known at compile time and that one type cannot bee used in your program where a differnt type is expected. This will prevent you from, e.g. passing it an Int to a function that expects a floating point value. Type safety helps you catch and fix type errors as early as possible in the development process.
+Swift is a type-safe, statically typed language, which means that the types of all values are known at compile time and that one type cannot be used in your program where a different type is expected. This will prevent you from, e.g. passing it an Int to a function that expects a floating point value. Type safety helps you catch and fix type errors as early as possible in the development process.
 
 In addition, Swift also offers [type inference][type inference], which means that the compiler will attempt to determine the type of a value or expression from the program itself, rather than needing to be told explicitly what the type should be.
 
@@ -42,7 +42,7 @@ let fifteen = add10(to: 5)
 There are two variations of this syntax:
 
 1. If the author of the function does not want the caller of the function to use an argument label, the label is replaced with an underscore, `_`.
-2. If the author of the function wants the argument label to be the same as the parameter name, the argument label may be completely ommited.
+2. If the author of the function wants the argument label to be the same as the parameter name, the argument label may be completely omitted.
 
 ```swift
 func square(_ x: Int) -> Int {
@@ -70,7 +70,7 @@ func add(_ x: Int, and y: Int, doubleResult: Bool) -> Int {
     return sum
   }
 
-let twentySix = add(6, and: 7, doubleResult: truee)
+let twentySix = add(6, and: 7, doubleResult: true)
 }
 ```
 

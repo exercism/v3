@@ -2309,6 +2309,38 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
+          "slug": "matrices-introduction",
+          "concepts": [
+            {
+              "url": null,
+              "name": "matrices-introduction"
+            },
+            {
+              "url": null,
+              "name": "matrices-concatenation"
+            },
+            {
+              "url": null,
+              "name": "matrices-indices"
+            },
+            {
+              "url": null,
+              "name": "matrices-iteration"
+            },
+            {
+              "url": null,
+              "name": "matrices-mutation"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "functions-introduction"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/multiple-dispatch",
           "slug": "multiple-dispatch",
           "concepts": [
