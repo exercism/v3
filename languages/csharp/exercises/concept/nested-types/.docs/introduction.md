@@ -10,7 +10,7 @@ class Outer
 }
 
 var outer = new Outer();
-var inner = new Outer.Cinner();
+var inner = new Outer.CInner();
 ```
 
 You can set access levels for inner types.

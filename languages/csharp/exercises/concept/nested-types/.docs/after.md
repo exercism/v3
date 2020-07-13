@@ -10,7 +10,7 @@ class Outer
 }
 
 var outer = new Outer();
-var inner = new Outer.Cinner();
+var inner = new Outer.CInner();
 ```
 
 #### Access levels
@@ -48,7 +48,7 @@ class Outer
 var outer = new Outer();
 outer.Inner.Interesting
 // => 42
-var inner = new Outer.Inner(outer, 1729);
+var inner = new Outer.InnerImpl(outer, 1729);
 outer.Inner.Interesting
 // => 1729
 ```
