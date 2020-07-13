@@ -1,4 +1,4 @@
-There are two principal mechanisms for formatting strings in C#/.NET. Use of `String.FormatO()` and string interpolation.
+There are two principal mechanisms for formatting strings in C#/.NET. Use of `String.Format()` and string interpolation.
 
 ## Composite Formatting
 
@@ -13,7 +13,7 @@ This mechanism is technically known as _composite formatting_.
 
 ## String Interpolation
 
-Interpolated strings are prefixed with a `$` and include run-time expressions enclosed in braces. The format item has the following syntax: `$"{<interpolationExpression>}"`. They do away with the need for a separate listg of arguments. The result is functionally equivalent to the `String.Format()` mechanism.
+Interpolated strings are prefixed with a `$` and include run-time expressions enclosed in braces. The format item has the following syntax: `$"{<interpolationExpression>}"`. They do away with the need for a separate list of arguments. The result is functionally equivalent to the `String.Format()` mechanism.
 
 ```csharp
 var loadsOf = 55.5;
@@ -48,7 +48,7 @@ string.Format(
 // => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password. - invariant culture
 ```
 
-There is both standard and custom formatting for both numbers and dates. There is no vital difference between _custom_ and _standard_ except that you have a chance to compose custom format strings out of format letters.
+There are both standard and custom formatting for both numbers and dates. There is no vital difference between _custom_ and _standard_ except that you have a chance to compose custom format strings out of format letters.
 
 ## Culture
 
