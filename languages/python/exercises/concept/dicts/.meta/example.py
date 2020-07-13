@@ -9,7 +9,7 @@ def add_items(inventory, items):
     for item in items:
         inventory.setdefault(item, 0)
         inventory[item] += 1
-    return(inventory)
+    return inventory
 
 def delete_items(inventory, items):
     for item in items:
