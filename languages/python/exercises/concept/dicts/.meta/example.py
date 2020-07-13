@@ -18,4 +18,4 @@ def delete_items(inventory, items):
     return(inventory)
 
 def list_inventory(inventory):
-    return([(k, v) for k, v in sorted(inventory.items()) if v])
+    return [(k, v) for k, v in sorted(inventory.items()) if v]
