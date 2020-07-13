@@ -3,7 +3,7 @@ We discussed in (TODO cross-ref-tba) how the `IDispoable` interface helps signal
 `using` can be seen as replacing [`try/finally`][try-finally] for some use cases.
 
 ```csharp
-var file = null;
+File file = null;
 try
 {
     file = new File("myStuff.txt");
@@ -27,15 +27,15 @@ using (var file = new File("myStuff.txt")
 In C# 8 the following variation has been introduced where the `using` statement comes at the start of a block:
 
 ```csharp
-using var file = new File("myStuff.txt";
+using var file = new File("myStuff.txt");
 file.Write("more stuff");
 ```
 
 This allows you to have multiple disposable objects in the same block and to more naturally handle [`try/catch`][try-catch]:
 
 ```csharp
-using var fileIn = new File("myStuff.txt";
-using var fileOut = new File("yourStuff.txt";
+using var fileIn = new File("myStuff.txt");
+using var fileOut = new File("yourStuff.txt");
 try
 {
     var stuff = fileIn.Read();

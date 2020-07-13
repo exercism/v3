@@ -19,7 +19,7 @@ C# 8 introduces a refinement to the pattern. A using statement can placed at the
 using var drawingResource = some_provided_or_newed_object;
 try
 {
-    file.WriteSecret("xxxxxxx");
+    drawingResource.DrawSomething();
 }
 catch (Exception)
 {
