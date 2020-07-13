@@ -1,12 +1,10 @@
-Unlike some other languages, Go has no empty/null/undefined state for uninitialized variables. Every type has a [zero value][zero_values] that uninitialized variables will hold upon declaration. The predeclared identifier `nil` has no type, so comparing a type whose zero value is not `nil`, like string, is an error:
+A [`Time`][time] in Go is a type describing a moment in time. The date and time information can be accessed, compared, and manipulated through its methods. The current date and time can be retrieved through the [`time.Now`][now] function.
 
-```go
-    func main() {
-        myString := "exercism"
-        if myString != nil { // invalid operation: myString != nil (mismatched types string and nil)
-            fmt.Println(myString)
-        }
-    }
-```
+The [`time.Parse`][parse] function parses strings into `Time` types using the particular format string `Mon Jan 2 15:04:05 -0700 MST 2006`. More on how this works can be found [here][article].
 
-[zero_values]: https://golang.org/ref/spec#The_zero_value
+The `time` package includes another type, `Duration`, representing elapsed time, plus support for locations/time zones, timers, and other related functionality that will be covered in a later exercise.
+
+[parse]: https://golang.org/pkg/time/#Parse
+[time]: https://golang.org/pkg/time/#Time
+[now]: https://golang.org/pkg/time/#Now
+[article]: https://www.pauladamsmith.com/blog/2011/05/go_time.html
