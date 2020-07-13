@@ -173,16 +173,46 @@
         "prerequisites": ["numbers"]
       },
       {
+        "slug": "regular-expressions",
+        "uuid": "c63bb75d-51bd-4d5d-b37d-88e53ee0da69",
+        "concepts": ["regular-expressions"],
+        "prerequisites": [
+          "arrays",
+          "for-loops",
+          "strings",
+          "string-interpolation",
+          "verbatim-strings"
+        ]
+      },
+      {
         "slug": "resource-cleanup",
         "uuid": "e99221eb-eecb-4746-9ef6-cc62650e41e1",
         "concepts": ["resource-cleanup"],
         "prerequisites": ["exceptions", "inheritance"]
       },
       {
+        "slug": "resource-lifetime",
+        "uuid": "7af9ae31-765b-4c81-b60b-24e0e1861243",
+        "concepts": ["resource-lifetime"],
+        "prerequisites": ["resource-cleanup"]
+      },
+      {
         "slug": "strings",
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "structs",
+        "uuid": "1f43f015-fb34-49f6-bc77-7ab2234d90f2",
+        "concepts": ["structs"],
+        "prerequisites": [
+          "classes",
+          "inheritance",
+          "numbers",
+          "sets",
+          "signed-integers"
+        ]
       },
       {
         "slug": "switch-statements",
