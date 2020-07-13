@@ -6,7 +6,7 @@ The two most common mechanisms for formatting strings are [string interpolation]
 
 `System.Object()` from which all classes and structs inherit has a `ToString()` method. For example `new DateTime(2019, 5, 23).ToString()` will render "05/23/2019 00:00:00" (on a thread with US culture - see below). There are situations such as string concatenation where this default `ToString()` method may be invoked implicitly, `"" + new DateTime(2019, 5, 23)` gives the same result.
 
-In addition to the default `ToString()` method types where formatting is an issue will have overloads which take a [_format string_][<a href="#bcl-formatters-and-format-strings"></a>] or even a [format provider][format-provider]. Notably in the BCL (Base Class Library) these are numbers, dates, enums and GUIDs.
+In addition to the default `ToString()` method types where formatting is an issue will have overloads which take a [_format string_](#bcl-formatters-and-format-strings) or even a [format provider][format-provider]. Notably in the BCL (Base Class Library) these are numbers, dates, enums and GUIDs.
 
 #### Composite Formatting
 
@@ -65,7 +65,7 @@ string.Format(
 
 There is both standard and custom formatting for both numbers and dates. There is no vital difference between _custom_ and _standard_ except that you have a chance to compose custom format strings out of format characters. "custom" in this context has nothing to do with the [`ICustomFormatter`][custom-formatter] interface which is used when developing your own custom formatters.
 
-#### <a name="pookie"></a>BCL Formatters and Format Strings
+#### BCL Formatters and Format Strings
 
 The Base Class Library (BCL) provides 2 formatters: `DateTimeFormatInfo` and `NumberFormatInfo` and 6 groups of format strings.
 
