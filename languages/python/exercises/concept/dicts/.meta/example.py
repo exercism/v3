@@ -1,8 +1,6 @@
 def create_inventory(items):
     inventory = dict()
-    for item in items:
-        inventory.setdefault(item, 0)
-        inventory[item] += 1
+	add_items(inventory, items)
     return inventory
 
 def add_items(inventory, items):
