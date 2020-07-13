@@ -4,7 +4,7 @@ The two most common mechanisms for formatting strings are [string interpolation]
 
 #### Using `ToString()`
 
-`System.Object()` from which all classes and structs inherit has a `ToString()` method. For example `new DateTime(2019, 5, 23).ToString()` will render "05/23/2019 00:00:00" (on a thread with US culture - see below). There are situations such as string concatenation where this default `ToString()` method may be invoked implicitly, `"" + new DateTime(2019, 5, 23)` gives the same result.
+`System.Object()` from which all classes and structs inherit has a `ToString()` method. For example `new DateTime(2019, 5, 23).ToString()` will render "05/23/2019 00:00:00" (on a thread with US culture - [see below](#culture)). There are situations such as string concatenation where this default `ToString()` method may be invoked implicitly, `"" + new DateTime(2019, 5, 23)` gives the same result.
 
 In addition to the default `ToString()` method types where formatting is an issue will have overloads which take a [_format string_](#bcl-formatters-and-format-strings) or even a [format provider][format-provider]. Notably in the BCL (Base Class Library) these are numbers, dates, enums and GUIDs.
 
