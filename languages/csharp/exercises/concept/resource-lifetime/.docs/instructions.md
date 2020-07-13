@@ -1,4 +1,4 @@
-You are back working on the Orm (object Relationship Mapping) system introduced in (TODO cross-reference-tba).
+You are back working on the ORM (Object Relationship Mapping) system introduced in (TODO cross-reference-tba).
 
 Our ORM usage analysis shows that 95% of transactions are executed from within one calling method, and it has been decided that it would be more appropriate to have a single ORM method that opened, wrote and committed a transaction.
 
@@ -24,7 +24,7 @@ orm.Write("bad commit");
 // => an exception is thrown but database is left with an internal state of State.Closed
 ```
 
-## 2. Write to the database and return an indication of whether the write was successful to the caller.
+## 2. Write to the database and return an indication of whether the write was successful to the caller
 
 It has been a few months since `Orm.Write()` was introduced and there is division in the team. Many developers would like the _ORM_ to handle errors when exceptions are thrown and simply return an indication of success to the caller.
 
