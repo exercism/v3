@@ -33,30 +33,30 @@ func HasPassed("July 25, 2019 13:45:00") bool {
 Implement the `IsAfternoonAppointment` function that takes an appointment date and checks if the appointment is in the afternoon (>= 12:00 and < 18:00):
 
 ```go
-Appointment.IsAfternoonAppointment("Thursday, July 25, 2019 13:45:00:00") bool {
+func IsAfternoonAppointment("Thursday, July 25, 2019 13:45:00:00") bool {
 
 }
 // => true
 ```
 
-## 4. See how long until the next appointment
+## 4. Describe the time and date of the appointment
 
-Implement the `HowLongUntilNextAppointment` function that takes an appointment date and returns the duration until that time:
+Implement the `Description` function that takes an appointment date and returns a description of that date and time:
 
 ```go
-func HowLongUntilNextAppointment("2/15/2029 10:45:00") time.Duration {
+func Description("7/25/2019 13:45:00") string {
 
 }
-// => xxxhxxmxxs
+// => "You have an appointment on Thursday 25 July 2019 at 13:45."
 ```
 
 ## 5. Return the anniversary date
 
-Implement the `AnniversaryDate` function that returns this year's anniversary date, which is September 15th:
+Implement the `AnniversaryDate` function that returns this year's anniversary date:
 
 ```go
 func AnniversaryDate() string {
     
 }
-// => new DateTime(2019, 9, 15, 0, 0, 0)
+// => 2020-09-15
 ```

@@ -1,47 +1,32 @@
 ## General
 
-- To [return][returns] a value from a function in Go, use the keyword `return` followed by the value:
+- [Use the methods found in the time package][time]
 
-```go
-func myFunc() int {
-    return 7
-}
-```
+## 1. Parse appointment date
 
-## 1. Return an empty interface
+- The `time` package has a `parse` method to [parse][time.parse] a `string` to a `Time` type.
 
-- The zero value for the interface type is `nil`.
+## 2. Check if an appointment has already passed
 
-## 2. Return an empty map
+- `Time` types can be compared using the [before][before] and [after][after] methods.
+- There is a [function][now] to retrieve the current date and time.
 
-- The zero value for the map type is `nil`.
+## 3. Check if appointment is in the afternoon
 
-## 3. Return an empty slice
+- Accessing the hour portion of a `Time` type can de done with the [hour][hour] method.
 
-- The zero value for the slice type is `nil`.
+## 4. Describe the time and date of the appointment
 
-## 4. Return an empty string
+- Convert the given string to a `Time` then format the answer string accordingly, using the `time` methods to extract the needed constituents.
 
-- The zero value for the string type is the empty string "".
+## 5. Return the anniversary date
 
-## 5. Return an empty channel
+- Use [time.parse][time.parse] to create a `Time` type of the anniversary date.
+- Access the required parts with the `time` methods and construct the answer string.
 
-- The zero value for the channel type is `nil`.
-
-## 6. Return an empty pointer
-
-- The zero value for the pointer type is `nil`.
-
-## 7. Return an empty bool
-
-- The zero value for the bool type is `false`.
-
-## 8. Return an empty func
-
-- The zero value for the func type is `nil`.
-
-## 9. Return an empty int
-
-- The zero value for numeric types is 0.
-
-[returns]: https://golang.org/ref/spec#Return_statements
+[time.parse]: https://golang.org/pkg/time/#Parse
+[before]: https://golang.org/pkg/time/#Time.Before
+[after]: https://golang.org/pkg/time/#Time.After
+[now]: https://golang.org/pkg/time/#Now
+[hour]: https://golang.org/pkg/time/#Time.Hour
+[time]: https://golang.org/pkg/time/#pkg-index
