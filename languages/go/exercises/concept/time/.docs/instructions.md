@@ -47,7 +47,7 @@ Implement the `Description` function that takes an appointment date and returns 
 func Description("7/25/2019 13:45:00") string {
 
 }
-// => "You have an appointment on Thursday 25 July 2019 at 13:45."
+// => "You have an appointment on Thursday, July 25, 2019, at 13:45."
 ```
 
 ## 5. Return the anniversary date
@@ -55,8 +55,8 @@ func Description("7/25/2019 13:45:00") string {
 Implement the `AnniversaryDate` function that returns this year's anniversary date:
 
 ```go
-func AnniversaryDate() string {
-    
+func AnniversaryDate() time.Time {
+
 }
 // => 2020-09-15
 ```
