@@ -1,6 +1,75 @@
-A `dict` object in Python is a mutable\* mapping of hashable keys to values. A key is basically a name for a value. A value can be any type of object, like `strings`, `ints`, `lists`, etc. Dictionaries have different methods to change them, like getting a value from a specific key in the dictionary, setting a default value for a key and many more. Dictionaries are also iterable by their keys. For a full explanation of dictionaries in python refer to the [official documentation][docs] and on how to use them look at [W3-Schools.com'][how-to] tutorial.
+A _dictionary_ is Python's primary mapping type that connects keys with _hashable values_. The looking up of keys is more efficient than searching through an array, but requires more memory. For a detailed explaination of _hashmaps_ visit [this][hashmap-blog] blog post.
 
-\*_Mutable objects are objects that can be changed without changing their identity. Methods for immutable objects actually dont return any value (like with strings) they change the object itself._
+## Dict construction
 
-[docs]: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
-[how-to]: https://www.w3schools.com/python/python_dictionaries.asp
+Dictionaries can be created in various ways. You can either use the `dict()` class constructor or the literal declaration of a _dict_.
+
+### Use the `dict()` constructor
+
+```Python
+>>> bear = dict(name="Black Bear", amount=5, land_animal=True)
+{'name': 'Panda', 'amount': 15, 'land_animal': True}
+```
+
+### Declare a _dict_ literal
+
+```python
+>>> whale = {"name":"Blue Whale", "amount":2, "land_animal":False}
+{'name': 'Dolphin', 'amount': 2, 'land_animal': False}
+```
+
+With literal declaration keep in mind that _keys_ are replaced with _data types_ and the `=` is replaced with a `:`.
+
+## Accessing values
+
+You can access items in a dictionary in two ways, using the _key_ of the value.
+
+### Using _square brackets_ after the dict object
+
+```python
+>>> request_brackets = bear["amount"]
+5
+```
+
+### Using `.get()`
+
+```python
+>>> request_get = whale.get("name")
+Blue Whale
+```
+
+## Changing values
+
+You can easily change a value of an item using it's _key_.
+
+```python
+>>> bear["name"] = "Grizzly Bear"
+{'name': 'Grizzly Bear', 'amount': 5, 'land_animal': True}
+
+>>> whale["amount"] = 7
+{'name': 'Blue Whale', 'amount': 7, 'land_animal': False}
+```
+
+## Looping through a dictionary
+
+Looping through a dictionary using a `for` loop only returns the _keys_ of the items.
+
+```python
+>>> for key in bear:
+>>>     print(key)
+name
+amount
+land_animal
+```
+
+But you can also make a `for` loop return the _values_ of a dictionary with a simple trick.
+
+```python
+>>> for key in whale:
+>>>    print(whale[key])
+Blue Whale
+7
+False
+```
+
+[hashmap-blog]: https://www.edureka.co/blog/hash-tables-and-hashmaps-in-python/
