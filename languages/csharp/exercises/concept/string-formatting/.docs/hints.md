@@ -19,7 +19,7 @@
 
 ## 3. German exchange students should be made to feel at home with locale sensitive declarations.
 
-- To work with interpolated strings view the documentation for [`FormattableString`][formattable-string].
+- To work with interpolated strings view the documentation for [`FormattableString`][formattable-string]. It may be better, to start with, to use [composite formatting][composite-formatting].
 - You will need to work with [`CultureInfo`][culture-info]. Note that it implements the [`IFormatProvider`][format-provider] interface.
 
 [string-interpolation]: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/string-interpolation
@@ -34,3 +34,4 @@
 [custom-numeric-format-strings]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings
 [standard-date-and-time-format-strings]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings
 [custom-date-and-time-format-strings]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
+[composite-formatting]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/composite-formatting
