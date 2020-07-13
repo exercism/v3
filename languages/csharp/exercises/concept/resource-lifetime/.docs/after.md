@@ -57,6 +57,6 @@ Java developers may recognize this as an analog of the _automatic resource manag
 
 Note that the more flexible version of `using` where it does not have its own syntactic block was introduced in C# 8 so be prepared for disappointment if you find that a codebase you are working on is using an earlier version of the language.
 
-[using statement][using-statement] documentation describes regexes and the flavour built into the .NET libraries.
+[using statement][using-statement] documentation describes how and when to use the `using` keyword.
 
 [using-statement]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement

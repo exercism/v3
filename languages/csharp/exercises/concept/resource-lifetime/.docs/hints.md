@@ -1,6 +1,6 @@
 ## General
 
-[using statement][using-statement] documentation describes regexes and the flavour built into the .NET libraries.
+[using statement][using-statement] documentation describes how and when to use the `using` keyword.
 
 ## 1. Write to the database
 
