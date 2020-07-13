@@ -1,7 +1,7 @@
 Ruby comes with a Standard Library - a collection of classes for working with things such as dates, json, and networking.
 The also provide some useful functionality for making your code easier to work with.
 
-OpenStruct is part of the standard library and allows you to easily create an object from a hash. Rather than having to access using hash keys, OpenStruct instead allows us to use methods to access and set values.
+`OpenStruct` is part of the standard library and allows you to easily create an object from a hash. Rather than having to access using hash keys, `OpenStruct` instead allows us to use methods to access and set values.
 
 When using classes from the Standard Library, or any other library, you need to require that class using the `require` method.
 
