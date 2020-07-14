@@ -365,39 +365,6 @@
     ]
   },
   {
-    "url": "https://github.com/exercism/v3/blob/master/reference/stories/matrices.exercism-logo-matrix.md",
-    "name": "Exercism Logo Matrix",
-    "description": "This story involves playing around with a matrix representing the Exercism logo, making it frown, rotating it, ...",
-    "concept": {
-      "url": null,
-      "name": "matrices"
-    },
-    "implementations": []
-  },
-  {
-    "url": "https://github.com/exercism/v3/blob/master/reference/stories/booleans.pac-man.md",
-    "name": "Pac-Man",
-    "description": "This story uses the classic arcade game _Pac-Man_ as a basis for teaching the [boolean type][types-boolean] / [boolean logic][concepts-boolean_logic] concept.",
-    "concept": {
-      "url": "https://github.com/exercism/v3/blob/master/reference/types/enum.md",
-      "name": "enums"
-    },
-    "implementations": [
-      {
-        "track": "C#",
-        "slug": "csharp",
-        "exercise": "enums",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/enums/.docs/instructions.md"
-      },
-      {
-        "track": "Rust",
-        "slug": "rust",
-        "exercise": "enums",
-        "url": "https://github.com/exercism/v3/blob/master/languages/rust/exercises/concept/enums/.docs/instructions.md"
-      }
-    ]
-  },
-  {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/strings.log-line-parser.md",
     "name": "Log line parser",
     "description": "In this exercise you\u0027ll be processing log-lines.",
@@ -447,6 +414,29 @@
         "slug": "ruby",
         "exercise": "strings",
         "url": "https://github.com/exercism/v3/blob/master/languages/ruby/exercises/concept/strings/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/enums.log-line-parser.md",
+    "name": "Log line parser",
+    "description": "In this exercise you\u0027ll be processing log-lines.",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/types/enum.md",
+      "name": "enums"
+    },
+    "implementations": [
+      {
+        "track": "C#",
+        "slug": "csharp",
+        "exercise": "enums",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/enums/.docs/instructions.md"
+      },
+      {
+        "track": "Rust",
+        "slug": "rust",
+        "exercise": "enums",
+        "url": "https://github.com/exercism/v3/blob/master/languages/rust/exercises/concept/enums/.docs/instructions.md"
       }
     ]
   },
@@ -533,29 +523,6 @@
         "slug": "fsharp",
         "exercise": "recursion",
         "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/recursion/.docs/instructions.md"
-      },
-      {
-        "track": "JavaScript",
-        "slug": "javascript",
-        "exercise": "recursion",
-        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/recursion/.docs/instructions.md"
-      }
-    ]
-  },
-  {
-    "url": "https://github.com/exercism/v3/blob/master/reference/stories/enums.log-line-parser.md",
-    "name": "Log line parser",
-    "description": "In this exercise you\u0027ll be processing log-lines.",
-    "concept": {
-      "url": "https://github.com/exercism/v3/blob/master/reference/types/enum.md",
-      "name": "enums"
-    },
-    "implementations": [
-      {
-        "track": "C#",
-        "slug": "csharp",
-        "exercise": "enums",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/enums/.docs/instructions.md"
       },
       {
         "track": "JavaScript",
