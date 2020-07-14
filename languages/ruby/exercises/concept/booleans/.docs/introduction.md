@@ -1,6 +1,6 @@
 ## True, False, and Nil
 
-True and false logical states are represented with `true` and `false` in Ruby. These may either be used or returned as literals on their own, or as a result of logical or comparison methods.
+True and false logical states are represented with `true` and `false` in Ruby. These may either be used as literals on their own, or as a result of logical or comparison methods.
 
 ```ruby
 true_variable = true
