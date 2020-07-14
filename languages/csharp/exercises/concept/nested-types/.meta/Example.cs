@@ -1,4 +1,3 @@
-
 public class RemoteControlCar
 {
     private enum SpeedUnits
@@ -96,5 +95,3 @@ public class RemoteControlCar
         currentSpeed = speed;
     }
 }
-
-

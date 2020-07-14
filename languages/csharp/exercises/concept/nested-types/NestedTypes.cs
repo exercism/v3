@@ -14,7 +14,7 @@ public class RemoteControlCar
         return true;
     }
 
-    public void ShowSponsor_Telemtry(string sponsorName)
+    public void ShowSponsor_Telemetry(string sponsorName)
     {
         SetSponsor(sponsorName);
     }
