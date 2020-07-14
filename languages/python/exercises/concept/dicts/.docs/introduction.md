@@ -1,4 +1,4 @@
-A _dictionary_ is Python's primary mapping type that connects keys with _hashable values_. The looking up of keys is more efficient than searching through an array, but requires more memory. For a detailed explaination of _hashmaps_ visit [this][hashmap-blog] blog post.
+A _dictionary_ is Python's primary mapping type that connects _hashable keys_ with values. The looking up of keys is more efficient than searching through an array, but does require more memory. For a detailed explaination of _hashmaps_ visit [this][hashmap-blog] blog post.
 
 ## Dict construction
 
