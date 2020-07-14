@@ -15,7 +15,7 @@ Implement the `create_inventory()` function that creates an "inventory" from a l
 
 ## 2. Add items from a list to an existing dictionary
 
-Implement a function that adds a list of items to a passed in inventory dictionary:
+Implement the `add_items()` function that adds a list of items to a passed in inventory dictionary:
 
 ```python
 >>> add_items({"coal":1}, ["wood", "iron", "coal", "wood"])
