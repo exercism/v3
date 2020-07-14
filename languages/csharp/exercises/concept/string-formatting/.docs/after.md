@@ -14,7 +14,7 @@ In addition to the default `ToString()` method, types where formatting is an iss
 
 ```csharp
 string.Format("I had {0} bitcoins on {1}, the day I forgot my password.", 55.5, new DateTime(2010, 2, 25))
-// => "I had 55.5 bitcoins on 2/25/2010 00:00:00, the day I forgot my password." - invariant culture
+// => "I had 55.5 bitcoins on 2/25/2010 00:00:00, the day I forgot my password." - US settings
 ```
 
 `Foprmat()` may be a better choice than interpolation where the format is being used in multiple expressions as a kind of template or where incorporating the format, and the expressions to be formatted is too cumbersome such as when [verbatim strings][verbatim-strings] are involved.
@@ -33,7 +33,7 @@ The expression can comprise anything in scope. _Alignment_ is the length of the 
 var loadsOf = 55.5;
 var thatDay = new DateTime(2010, 2, 25);
 $"I had {loadsOf} bitcoins on {thatDay}, the day I forgot my password."
-// => "I had 55.5 bitcoins on 2/25/2010 00:00:00, the day I forgot my password." - invariant culture
+// => "I had 55.5 bitcoins on 2/25/2010 00:00:00, the day I forgot my password." - US settings
 ```
 
 #### Format Items
@@ -54,12 +54,12 @@ The following code illustrates display of the date portion of a `DateTime` objec
 var loadsOf = 55.5;
 var thatDay = new DateTime(2010, 2, 25);
 $"I had {loadsOf:E} bitcoins on {thatDay:d}, the day I forgot my password."
-// => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password. - invariant culture
+// => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password. - US settings
 
 string.Format(
     "I had {0:E} bitcoins on {1:d}, the day I forgot my password.",
     loadsOf, thatDay)
-// => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password. - invariant culture
+// => I had 5.550000E+001 bitcoins on 02/25/2010, the day I forgot my password. - US settings
 
 ```
 
