@@ -17,13 +17,13 @@ By the time this system was introduced the minimum bank note already had a denom
 
 In summary, this means that _denomination_ = _base_ \* _multiplier_.
 
-Please implement the method `CentrlBank.DisplayDenomination` which takes the base and multiplier and returns a string of their product (base \* multiplier). The numeric string returned should not be formatted.
+Please implement the method `CentralBank.DisplayDenomination()` which takes the base and multiplier and returns a string of their product (base \* multiplier). The numeric string returned should not be formatted.
 
-If the multiplication operation causes an overflow then the string, "\*\*\* Too Big \*\*\*", should be returned.
+If the multiplication operation causes an overflow then the string, `"*** Too Big ***"`, should be returned.
 
 ```csharp
 CentralBank.DisplayDenomination(10000L, 1000L);
-// => 10000000
+// => "10000000"
 CentralBank.DisplayDenomination(long.MaxValue / 2, 10000L);
 // => "*** Too Big ***"
 ```
@@ -32,13 +32,13 @@ CentralBank.DisplayDenomination(long.MaxValue / 2, 10000L);
 
 The central bank uses the same multiplier approach to recording GDP internally. Statistics are recorded in a base denomination and then scaled up using the multiplier.
 
-Please implement the method `CentrlBank.DisplayGDP` which takes the base GDP and the current multiplier and returns the GDP as a string.
+Please implement the method `CentralBank.DisplayGDP()` which takes the base GDP and the current multiplier and returns the GDP as a string.
 
-If the GDP cannot be calculated then "\*\*\* Too Big \*\*\*" is returned.
+If the GDP cannot be calculated then `"*** Too Big ***"` is returned.
 
 ```csharp
 CentralBank.DisplayGDP(555f, 10000f);
-// => 555000000
+// => "555000000"
 CentralBank.DisplayGDP(float.MaxValue / 2, 10000f);
 // => "*** Too Big ***"
 ```
@@ -49,11 +49,11 @@ Your boss at the bank wants to make sure there will be no problems at payroll ti
 
 Implement the `CentralBank.DisplayChiefEconomistSalary()` method that takes a salary expressed in base units (as above) and a multiplier and returns a string containing the product.
 
-If the salary cannot be calculated then "\*\*\* Much Too Big \*\*\*" is returned.
+If the salary cannot be calculated then `"*** Much Too Big ***"` is returned.
 
 ```csharp
 CentralBank.DisplayChiefEconomistSalary(555000m, 10000m);
 // => "5550000000"
-CentralBank.DisplayChiefEconomistSalary(555000m,decimal.MaxValue / 2L);
+CentralBank.DisplayChiefEconomistSalary(555000m, decimal.MaxValue / 2L);
 // => "*** Much Too Big ***"
 ```
