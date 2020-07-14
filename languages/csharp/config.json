@@ -202,6 +202,12 @@
         "prerequisites": ["exceptions", "inheritance"]
       },
       {
+        "slug": "resource-lifetime",
+        "uuid": "1c23e163-ceca-4cce-87ec-2e016db1262b",
+        "concepts": ["resource-lifetime"],
+        "prerequisites": ["resource-cleanup"]
+      },
+      {
         "slug": "strings",
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
         "concepts": ["strings"],
