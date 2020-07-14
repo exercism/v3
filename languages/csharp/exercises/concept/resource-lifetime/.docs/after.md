@@ -24,6 +24,16 @@ using (var file = new File("myStuff.txt")
 }
 ```
 
+Note that multiple resources can be conveniently combined following standard rules for single line blocks:
+
+```csharp
+using (var file = new File("mystuff.txt")
+using (var fileWriter = new StreamWriter(file)
+{
+     ...
+}
+```
+
 In C# 8 the following variation has been introduced where the `using` statement comes at the start of a block:
 
 ```csharp
