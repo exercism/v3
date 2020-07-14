@@ -9,6 +9,7 @@ public static class RedRemoteControlCarTeam
         }
         // red members and API
     }
+
     public class RunningGear
     {
         // red members and API
@@ -39,6 +40,7 @@ public static class BlueRemoteControlCarTeam
         }
         // blue members and API
     }
+
     public class Telemetry
     {
         // blue members and API
@@ -66,6 +68,7 @@ public static class CarBuilder
             new RedRemoteControlCarTeam.RunningGear()
         );
     }
+
     public static BlueRemoteControlCarTeam.RemoteControlCar BuildBlue()
     {
         return new BlueRemoteControlCarTeam.RemoteControlCar(

@@ -7,6 +7,7 @@ namespace RedRemoteControlCarTeam
         }
         // red members and API
     }
+
     public class RunningGear
     {
         // red members and API
@@ -37,6 +38,7 @@ namespace BlueRemoteControlCarTeam
         }
         // blue members and API
     }
+
     public class Telemetry
     {
         // blue members and API
@@ -69,6 +71,7 @@ namespace Combined
                 new Red.RunningGear()
             );
         }
+
         public static Blue.RemoteControlCar BuildBlue()
         {
             return new Blue.RemoteControlCar(
