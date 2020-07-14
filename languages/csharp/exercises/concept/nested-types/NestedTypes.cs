@@ -4,6 +4,8 @@ public class RemoteControlCar
 
     private Speed currentSpeed;
 
+    // TODO encapsulate the methods suffixed with "_Telemetry" in their own class
+    // dropping the suffix from the method name
     public void Calibrate_Telementry()
     {
 
