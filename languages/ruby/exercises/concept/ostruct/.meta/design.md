@@ -1,6 +1,6 @@
 ## Learning objectives
 
-- Understand how to require from stdlib
+- Understand how to require from Standard Library
 - Understand OpenStruct
 - Learn &: block syntax
 
