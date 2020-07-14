@@ -22,7 +22,7 @@ person.age = 35
 
 # It sets correctly
 person.age
-#=> 21
+#=> 35
 ```
 
 One bonus advantage of this is that you can take advantage of a shortcut when using block syntax. In situations where a block calls a single method, you can replace the block with `&:` followed by the method name. For example, these two lines are synonymous:
