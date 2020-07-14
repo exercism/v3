@@ -40,7 +40,7 @@ Item counts should not fall below `0`, if the amount of an item in the list exce
 
 ## 4. Return the inventory content
 
-Implement a function that returns a list of tuples with the items and their values:
+Implement the `list_inventory()` function that takes an inventory and returns a list of tuples with the items and their amount:
 
 ```python
 >>> list_inventory({"coal":7, "wood":11, "diamond":2, "iron":7})
