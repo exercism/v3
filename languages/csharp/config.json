@@ -143,6 +143,17 @@
         "prerequisites": ["constructors", "dictionaries", "properties"]
       },
       {
+        "slug": "overflow",
+        "uuid": "16f760c1-29b8-4c82-a085-9b4d81002c62",
+        "concepts": ["overflow"],
+        "prerequisites": [
+          "exceptions",
+          "floating-point-numbers",
+          "integral-numbers",
+          "strings"
+        ]
+      },
+      {
         "slug": "parameters",
         "uuid": "f5c259fd-a404-432f-922d-781bde34fe08",
         "concepts": ["parameters"],
@@ -171,6 +182,18 @@
         "uuid": "d8a43f1e-4ed0-4015-8307-fba1d9cdd117",
         "concepts": ["randomness"],
         "prerequisites": ["numbers"]
+      },
+      {
+        "slug": "regular-expressions",
+        "uuid": "c63bb75d-51bd-4d5d-b37d-88e53ee0da69",
+        "concepts": ["regular-expressions"],
+        "prerequisites": [
+          "arrays",
+          "for-loops",
+          "strings",
+          "string-interpolation",
+          "verbatim-strings"
+        ]
       },
       {
         "slug": "resource-cleanup",
