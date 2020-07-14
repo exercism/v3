@@ -487,6 +487,34 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/overflow",
+          "slug": "overflow",
+          "concepts": [
+            {
+              "url": null,
+              "name": "overflow"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "exceptions"
+            },
+            {
+              "url": null,
+              "name": "floating-point-numbers"
+            },
+            {
+              "url": null,
+              "name": "integral-numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/parameters",
           "slug": "parameters",
           "concepts": [
@@ -1878,6 +1906,30 @@
     "exercises": {
       "concept": [
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/application-timing",
+          "slug": "application-timing",
+          "concepts": [
+            {
+              "url": null,
+              "name": "application-timing"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "time-and-duration"
+            },
+            {
+              "url": null,
+              "name": "select"
+            },
+            {
+              "url": null,
+              "name": "channels"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/basics",
           "slug": "basics",
           "concepts": [
@@ -1886,10 +1938,97 @@
               "name": "basics"
             }
           ],
+          "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/bytes-and-runes",
+          "slug": "bytes-and-runes",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/bytes.md",
+              "name": "bytes"
+            },
+            {
+              "url": null,
+              "name": "runes"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/slice.md",
+              "name": "slices"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": null,
+              "name": "iteration"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/booleans",
+          "slug": "booleans",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            }
+          ],
           "prerequisites": [
             {
               "url": null,
-              "name": ""
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/channels",
+          "slug": "channels",
+          "concepts": [
+            {
+              "url": null,
+              "name": "channels"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "goroutines"
+            },
+            {
+              "url": null,
+              "name": "iteration"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/comments",
+          "slug": "comments",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comments.md",
+              "name": "comments"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
             }
           ]
         },
@@ -1916,8 +2055,96 @@
               "name": "numbers"
             },
             {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/constants",
+          "slug": "constants",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
+              "name": "constants"
+            }
+          ],
+          "prerequisites": [
+            {
               "url": null,
-              "name": "basic-strings"
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/context",
+          "slug": "context",
+          "concepts": [
+            {
+              "url": null,
+              "name": "context"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "time-and-duration"
+            },
+            {
+              "url": null,
+              "name": "channels"
+            },
+            {
+              "url": null,
+              "name": "select"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/defer",
+          "slug": "defer",
+          "concepts": [
+            {
+              "url": null,
+              "name": "defer"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/anonymous_functions.md",
+              "name": "anonymous-functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/empty-interface",
+          "slug": "empty-interface",
+          "concepts": [
+            {
+              "url": null,
+              "name": "empty-interface"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
             }
           ]
         },
@@ -1938,10 +2165,114 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
               "name": "constants"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/errors-handling",
+          "slug": "errors-handling",
+          "concepts": [
+            {
+              "url": null,
+              "name": "errors-handling"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/error.md",
+              "name": "errors"
             },
             {
               "url": null,
-              "name": "types"
+              "name": "nil"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/floating-point",
+          "slug": "floating-point",
+          "concepts": [
+            {
+              "url": null,
+              "name": "floating-point"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/functions",
+          "slug": "functions",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/iteration",
+          "slug": "iteration",
+          "concepts": [
+            {
+              "url": null,
+              "name": "iteration"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/anonymous_functions.md",
+              "name": "anonymous-functions"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/interfaces",
+          "slug": "interfaces",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/interfaces.md",
+              "name": "interfaces"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/methods.md",
+              "name": "methods"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/error.md",
+              "name": "error"
+            },
+            {
+              "url": null,
+              "name": "empty-interfaces"
             }
           ]
         },
@@ -1970,6 +2301,62 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/methods",
+          "slug": "methods",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/methods.md",
+              "name": "methods"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/pointer.md",
+              "name": "pointers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
+              "name": "structs"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/mutext",
+          "slug": "mutext",
+          "concepts": [
+            {
+              "url": null,
+              "name": "mutex"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "defer"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/nil",
+          "slug": "nil",
+          "concepts": [
+            {
+              "url": null,
+              "name": "nil"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/numbers",
           "slug": "numbers",
           "concepts": [
@@ -1990,6 +2377,94 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/panic-and-recover",
+          "slug": "panic-and-recover",
+          "concepts": [
+            {
+              "url": null,
+              "name": "panic"
+            },
+            {
+              "url": null,
+              "name": "recover"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "defer"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/type_casting.md",
+              "name": "type-casting"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/pointers",
+          "slug": "pointers",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/pointer.md",
+              "name": "pointers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "nil"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/reflection",
+          "slug": "reflection",
+          "concepts": [
+            {
+              "url": null,
+              "name": "reflection"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/interfaces.md",
+              "name": "interfaces"
+            },
+            {
+              "url": null,
+              "name": "empty-interfaces"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/goroutines",
+          "slug": "goroutines",
+          "concepts": [
+            {
+              "url": null,
+              "name": "goroutines"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": null,
+              "name": "iteration"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/anonymous_functions.md",
+              "name": "anonymous-functions"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/slices",
           "slug": "slices",
           "concepts": [
@@ -2000,8 +2475,12 @@
           ],
           "prerequisites": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
-              "name": "arrays"
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": null,
+              "name": "iteration"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
@@ -2020,8 +2499,48 @@
           ],
           "prerequisites": [
             {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/slice.md",
+              "name": "slices"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/structs",
+          "slug": "structs",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
+              "name": "structs"
+            }
+          ],
+          "prerequisites": [
+            {
               "url": null,
               "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/time-and-duration",
+          "slug": "time-and-duration",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/time.md",
+              "name": "time"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "number"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
             }
           ]
         }
@@ -2845,6 +3364,25 @@
               "name": "arrays"
             }
           ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "x86-64-assembly",
+    "slug": "x86-64-assembly",
+    "exercises": {
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/x86-64-assembly/exercises/concept/basics",
+          "slug": "basics",
+          "concepts": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ],
+          "prerequisites": []
         }
       ]
     }
