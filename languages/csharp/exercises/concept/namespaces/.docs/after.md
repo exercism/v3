@@ -1,4 +1,4 @@
-It is unlikely that you will come across much production code that is not enclosed in namespaces. Namespaces are typically introduced with a `using` statement unless there is an actual name clash.
+It is unlikely that you will come across much production code that is not enclosed in namespaces. Namespaces are typically introduced with a `using` directive unless there is an actual name clash.
 
 This [article][using] clearly explains the ways in which the `using` directive can be used:
 
@@ -10,14 +10,16 @@ This [article][using] clearly explains the ways in which the `using` directive c
 
 .NET addresses the issue of two namespaces with the same name. This issue is addressed with the [namespace alias qualifier][namespace-alias-qualifier] and the [extern alias][extern-alias].
 
-One reason to mention this fairly niche subject is that you will often see the qualifier `global::` for namespaces, particularly in generated code.  The intention here is to avoid confusion with a nested namespace or class name.
+One reason to mention this fairly niche subject is that you will often see the qualifier `global::` for namespaces, particularly in generated code. The intention here is to avoid confusion with a nested namespace or class name. By prefixing a namespace with `global::` you ensure that a top-level namespace is selected.
 
 #### Note for Java developers
 
-When comparing with the import of packages some differences and similarities should be noted:
+When comparing with the `import` of Java `packages` some differences and similarities should be noted:
 
 - There is no equivalent with C# of importing specific types.
 - `using static` and `import static` are equivalent.
+- Unlike Java packages C# [assemblies][assemblies] have no impact on access levels but like the relationship between packages and jars they can span multiple assemblies.
+- The relationship between file system and packages is not reflected in C#'s namespaces.
 
 #### Reference
 
@@ -28,3 +30,5 @@ When comparing with the import of packages some differences and similarities sho
 [accessibility-levels]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/accessibility-levels
 [namespace-alias-qualifier]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/namespace-alias-qualifier
 [extern-alias]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/extern-alias
+[using]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-directive
+[assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly/

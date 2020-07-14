@@ -1,4 +1,4 @@
-Namespaces are a way to avoid name clashes on anything but the most trivial code base.
+Namespaces are a way to avoid name clashes and are generally present in all but the most trivial code base.
 
 The syntax is as follows:
 
@@ -11,7 +11,7 @@ namespace MyNameSpace
 }
 ```
 
-Types enclosed in namespaces can be accessed by prefixing the type name with the ubiquitous dot syntax. Alternatively, and more usually, you can place a `using` directive at the top of the file (or within a namespace) and type can be used without the prefix.
+Types enclosed in namespaces can be accessed by prefixing the type name with the dot syntax. Alternatively, and more usually, you can place a `using` directive at the top of the file (or within a namespace) and type can be used without the prefix.
 
 ```csharp
 namespace MySpace

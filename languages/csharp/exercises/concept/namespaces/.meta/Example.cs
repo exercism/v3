@@ -28,6 +28,7 @@ namespace RedRemoteControlCarTeam
         // red members and API
     }
 }
+
 namespace BlueRemoteControlCarTeam
 {
     public class RemoteControlCar
