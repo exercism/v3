@@ -143,6 +143,17 @@
         "prerequisites": ["constructors", "dictionaries", "properties"]
       },
       {
+        "slug": "overflow",
+        "uuid": "16f760c1-29b8-4c82-a085-9b4d81002c62",
+        "concepts": ["overflow"],
+        "prerequisites": [
+          "exceptions",
+          "floating-point-numbers",
+          "integral-numbers",
+          "strings"
+        ]
+      },
+      {
         "slug": "parameters",
         "uuid": "f5c259fd-a404-432f-922d-781bde34fe08",
         "concepts": ["parameters"],
@@ -192,7 +203,7 @@
       },
       {
         "slug": "resource-lifetime",
-        "uuid": "7af9ae31-765b-4c81-b60b-24e0e1861243",
+        "uuid": "1c23e163-ceca-4cce-87ec-2e016db1262b",
         "concepts": ["resource-lifetime"],
         "prerequisites": ["resource-cleanup"]
       },
