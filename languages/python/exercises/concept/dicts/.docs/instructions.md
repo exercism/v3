@@ -6,7 +6,7 @@ You will also have to implement a function which returns a list of `tuples` of a
 
 ## 1. Create an inventory from a list
 
-Implement a function that creates an "inventory" from a list of items. It should return a `dictionary` representing the types and amounts of the items.
+Implement the `create_inventory()` function that creates an "inventory" from a list of items. It should return a `dictionary` representing the types and amounts of the items.
 
 ```python
 >>> create_inventory(["coal", "wood", "wood", "diamond", "diamond", "diamond"])
