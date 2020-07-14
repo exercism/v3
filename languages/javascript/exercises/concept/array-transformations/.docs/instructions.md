@@ -51,7 +51,7 @@ twoIsSpecial(deck)
 // => [2, 2]
 ```
 
-## 6. - Convert a shuffled deck into a perfectly ordered deck
+## 6. Convert a shuffled deck into a perfectly ordered deck
 
 Elyse wishes to demonstrate her mastery of reordering the cards perfectly - no matter how well shuffled.
 
