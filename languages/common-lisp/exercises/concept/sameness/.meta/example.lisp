@@ -21,6 +21,4 @@
     (:room-cons-number-of-different-types #'equalp)
     (:room-arrays #'equal)
     (:room-arrays-looser-equal #'equalp)
-    (:room-hash-table #'equalp)
-    (:room-structures #'equalp)
     (t (constantly nil))))

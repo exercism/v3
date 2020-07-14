@@ -46,12 +46,6 @@
   (is (eq 'victory (open-room :room-arrays #'robot)))
   (is (eq 'victory (open-room :room-arrays-looser-equal #'robot))))
 
-(test the-maze-of-hash-tables
-  (is (eq 'victory (open-room :room-hash-table #'robot))))
-
-(test the-maze-of-structures
-  (is (eq 'victory (open-room :room-structures #'robot))))
-
 ;; Either provides human-readable results to the user or machine-readable
 ;; results to the test runner. The default upon calling `(run-tests)` is to
 ;; explain the results in a human-readable way
@@ -72,27 +66,9 @@ particular ROBOT."
           when (apply key door) do (return behind-the-door)
             finally (return 'room-explodes))))
 
-(defun make-hash-table-with-pairs (&rest pairs)
-  "Utility function for creating test data."
-  (reduce #'(lambda (ht kv) (setf (gethash (first kv) ht) (second kv)) ht)
-          pairs
-          :initial-value (make-hash-table)))
-
 (defparameter +an-array+ #(1 2 3))
 (defparameter +a-similar-but-different-array+ #(1 2 3))
 (defparameter +a-different-array+ #(1 2 4))
-
-(defstruct test-structure a b)
-
-(defparameter +a-structure+ (make-test-structure :a 1 :b #\c))
-(defparameter +a-slightly-different-structure+ (make-test-structure :a 1 :b #\x))
-(defparameter +an-equivalent-structure+ (make-test-structure :a 1.0 :b #\C))
-
-(defparameter +a-hash-table+ (make-hash-table-with-pairs '(a 1) '(b #\c)))
-(defparameter +a-hash-table-with-same-keys-and-values+
-  (make-hash-table-with-pairs '(a 1) '(b #\c)))
-(defparameter +a-slightly-different-hash-table+
-  (make-hash-table-with-pairs '(a 1) '(b #\x)))
 
 (defparameter +rooms+
   `(
@@ -151,17 +127,7 @@ particular ROBOT."
 
     (:room-arrays-looser-equal
      . (((,+an-array+ ,+a-different-array+) . explosion)
-        ((,+an-array+ ,+a-similar-but-different-array+) . victory)))
-
-    (:room-structures
-     . (((,+a-structure+ ,+a-slightly-different-structure+) . explosion)
-        ((,+a-structure+ ,+an-equivalent-structure+) . victory)))
-
-    (:room-hash-table
-     . (((,+a-hash-table+ ,+a-slightly-different-hash-table+) . explosion)
-        ((,+a-hash-table+ ,+a-hash-table-with-same-keys-and-values+) . victory)))
-
-    )
+        ((,+an-array+ ,+a-similar-but-different-array+) . victory))))
   "Rooms are a sequence of pairs of a DOOR and a RESULT. A DOOR is a sequence of
 things which will be given to the key. If a KEY opens a DOOR, the room will be
 opened and evaluate to RESULT")
