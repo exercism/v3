@@ -401,6 +401,16 @@
     ]
   },
   {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/matrices.exercism-logo-matrix.md",
+    "name": "Exercism Logo Matrix",
+    "description": "This story involves playing around with a matrix representing the Exercism logo, making it frown, rotating it, ...",
+    "concept": {
+      "url": null,
+      "name": "matrices"
+    },
+    "implementations": []
+  },
+  {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/booleans.pac-man.md",
     "name": "Pac-Man",
     "description": "This story uses the classic arcade game _Pac-Man_ as a basis for teaching the [boolean type][types-boolean] / [boolean logic][concepts-boolean_logic] concept.",
@@ -509,6 +519,12 @@
         "slug": "fsharp",
         "exercise": "recursion",
         "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/recursion/.docs/instructions.md"
+      },
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "recursion",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/recursion/.docs/instructions.md"
       }
     ]
   },
