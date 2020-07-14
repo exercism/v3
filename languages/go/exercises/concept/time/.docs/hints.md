@@ -1,10 +1,10 @@
 ## General
 
-- [Use the methods found in the time package][time]
+- [Use the methods found in the time package.][time]
 
 ## 1. Parse appointment date
 
-- The `time` package has a `parse` method to [parse][time.parse] a `string` to a `Time` type.
+- The `time` package has a `parse` method to [parse][time.parse] a `string` into a `Time`.
 
 ## 2. Check if an appointment has already passed
 
@@ -13,7 +13,7 @@
 
 ## 3. Check if appointment is in the afternoon
 
-- Accessing the hour portion of a `Time` type can de done with the [hour][hour] method.
+- Accessing the hour portion of a `Time` can de done with the [hour][hour] method.
 
 ## 4. Describe the time and date of the appointment
 
@@ -22,11 +22,10 @@
 ## 5. Return the anniversary date
 
 - Use [time.parse][time.parse] to create a `Time` type of the anniversary date.
-- Access the required parts with the `time` methods and construct the answer string.
 
+[time]: https://golang.org/pkg/time/#pkg-index
 [time.parse]: https://golang.org/pkg/time/#Parse
 [before]: https://golang.org/pkg/time/#Time.Before
 [after]: https://golang.org/pkg/time/#Time.After
 [now]: https://golang.org/pkg/time/#Now
 [hour]: https://golang.org/pkg/time/#Time.Hour
-[time]: https://golang.org/pkg/time/#pkg-index

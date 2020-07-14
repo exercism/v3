@@ -4,7 +4,7 @@ The [`time.Parse`][parse] function parses strings into `Time` types using the pa
 
 The `time` package includes another type, `Duration`, representing elapsed time, plus support for locations/time zones, timers, and other related functionality that will be covered in a later exercise.
 
-[parse]: https://golang.org/pkg/time/#Parse
 [time]: https://golang.org/pkg/time/#Time
 [now]: https://golang.org/pkg/time/#Now
+[parse]: https://golang.org/pkg/time/#Parse
 [article]: https://www.pauladamsmith.com/blog/2011/05/go_time.html

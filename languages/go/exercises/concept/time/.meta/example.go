@@ -5,19 +5,19 @@ import (
 	"time"
 )
 
-// Schedule returns a time.Time type from a string containing a date
+// Schedule returns a time.Time from a string containing a date
 func Schedule(date string) time.Time {
 	t, _ := time.Parse("1/2/2006 15:04:05", date)
 	return t
 }
 
-// HasPassed returns if a date has passed
+// HasPassed returns whether a date has passed
 func HasPassed(date string) bool {
 	t, _ := time.Parse("January 2, 2006 15:04:05", date)
 	return t.Before(time.Now())
 }
 
-// IsAfternoonAppointment returns if a time is in the afternoon
+// IsAfternoonAppointment returns whether a time is in the afternoon
 func IsAfternoonAppointment(date string) bool {
 	t, _ := time.Parse("Monday, January 2, 2006 15:04:05", date)
 	return t.Hour() >= 12 && t.Hour() < 18

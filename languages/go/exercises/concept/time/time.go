@@ -2,17 +2,17 @@ package time
 
 import "time"
 
-// Schedule returns a time.Time type from a string containing a date
+// Schedule returns a time.Time from a string containing a date
 func Schedule(date string) time.Time {
 	panic("please implement the Schedule function")
 }
 
-// HasPassed returns if a date has passed
+// HasPassed returns whether a date has passed
 func HasPassed(date string) bool {
 	panic("please implement the HasPassed function")
 }
 
-// IsAfternoonAppointment returns if a time is in the afternoon
+// IsAfternoonAppointment returns whether a time is in the afternoon
 func IsAfternoonAppointment(date string) bool {
 	panic("please implement the IsAfternoonAppointment function")
 }
