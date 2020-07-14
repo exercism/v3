@@ -22,7 +22,7 @@ Implement the `add_items()` function that adds a list of items to a passed in in
 {"coal":2, "wood":2, "iron":1}
 ```
 
-## 3. Remove items from an existing inventory dictionary
+## 3. Remove items from the inventory
 
 Implement the `delete_items()` function that removes items in the passed-in list from the passed inventory dictionary:
 
