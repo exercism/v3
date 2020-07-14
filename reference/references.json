@@ -35,6 +35,23 @@
     ]
   },
   {
+    "name": "application-timing",
+    "variations": [
+      "application-timing",
+      "application-timings",
+      "application_timing"
+    ],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/application-timing",
+        "exercise": "application-timing",
+        "track": "go",
+        "language": "Go"
+      }
+    ]
+  },
+  {
     "name": "array-analysis",
     "variations": [
       "array-analysis",
@@ -159,6 +176,12 @@
         "exercise": "basics",
         "track": "java",
         "language": "Java"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/x86-64-assembly/exercises/concept/basics",
+        "exercise": "basics",
+        "track": "x86-64-assembly",
+        "language": "x86-64-assembly"
       }
     ]
   },
@@ -254,6 +277,12 @@
         "language": "F#"
       },
       {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/booleans",
+        "exercise": "booleans",
+        "track": "go",
+        "language": "Go"
+      },
+      {
         "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/conditionals",
         "exercise": "conditionals",
         "track": "go",
@@ -286,6 +315,24 @@
     ]
   },
   {
+    "name": "bytes",
+    "variations": ["bytes", "byte"],
+    "documents": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/reference/types/bytes.md",
+        "name": "bytes"
+      }
+    ],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/bytes-and-runes",
+        "exercise": "bytes-and-runes",
+        "track": "go",
+        "language": "Go"
+      }
+    ]
+  },
+  {
     "name": "case",
     "variations": ["case", "cases"],
     "documents": [],
@@ -308,6 +355,19 @@
         "exercise": "casting",
         "track": "csharp",
         "language": "C#"
+      }
+    ]
+  },
+  {
+    "name": "channels",
+    "variations": ["channels", "channel"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/channels",
+        "exercise": "channels",
+        "track": "go",
+        "language": "Go"
       }
     ]
   },
@@ -383,6 +443,12 @@
       }
     ],
     "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/comments",
+        "exercise": "comments",
+        "track": "go",
+        "language": "Go"
+      },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/basics",
         "exercise": "basics",
@@ -523,6 +589,24 @@
     ]
   },
   {
+    "name": "constants",
+    "variations": ["constants", "constant"],
+    "documents": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
+        "name": "constants"
+      }
+    ],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/constants",
+        "exercise": "constants",
+        "track": "go",
+        "language": "Go"
+      }
+    ]
+  },
+  {
     "name": "constructors",
     "variations": ["constructors", "constructor"],
     "documents": [
@@ -537,6 +621,19 @@
         "exercise": "constructors",
         "track": "csharp",
         "language": "C#"
+      }
+    ]
+  },
+  {
+    "name": "context",
+    "variations": ["context", "contexts"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/context",
+        "exercise": "context",
+        "track": "go",
+        "language": "Go"
       }
     ]
   },
@@ -587,6 +684,19 @@
     ]
   },
   {
+    "name": "defer",
+    "variations": ["defer", "defers"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/defer",
+        "exercise": "defer",
+        "track": "go",
+        "language": "Go"
+      }
+    ]
+  },
+  {
     "name": "dictionaries",
     "variations": ["dictionaries", "dictionary"],
     "documents": [
@@ -631,6 +741,19 @@
         "exercise": "unicode-identifiers",
         "track": "julia",
         "language": "Julia"
+      }
+    ]
+  },
+  {
+    "name": "empty-interface",
+    "variations": ["empty-interface", "empty-interfaces", "empty_interface"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/empty-interface",
+        "exercise": "empty-interface",
+        "track": "go",
+        "language": "Go"
       }
     ]
   },
@@ -716,6 +839,19 @@
     ]
   },
   {
+    "name": "errors-handling",
+    "variations": ["errors-handling", "errors-handlings", "errors_handling"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/errors-handling",
+        "exercise": "errors-handling",
+        "track": "go",
+        "language": "Go"
+      }
+    ]
+  },
+  {
     "name": "exception-filtering",
     "variations": [
       "exception-filtering",
@@ -773,6 +909,19 @@
         "exercise": "flag-enums",
         "track": "csharp",
         "language": "C#"
+      }
+    ]
+  },
+  {
+    "name": "floating-point",
+    "variations": ["floating-point", "floating-points", "floating_point"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/floating-point",
+        "exercise": "floating-point",
+        "track": "go",
+        "language": "Go"
       }
     ]
   },
@@ -844,6 +993,30 @@
     ]
   },
   {
+    "name": "functions",
+    "variations": ["functions", "function"],
+    "documents": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/reference/concepts/functions.md",
+        "name": "functions"
+      }
+    ],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/functions",
+        "exercise": "functions",
+        "track": "go",
+        "language": "Go"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/pointers",
+        "exercise": "pointers",
+        "track": "go",
+        "language": "Go"
+      }
+    ]
+  },
+  {
     "name": "functions-introduction",
     "variations": [
       "functions-introduction",
@@ -875,6 +1048,19 @@
         "exercise": "futures",
         "track": "dart",
         "language": "Dart"
+      }
+    ]
+  },
+  {
+    "name": "goroutines",
+    "variations": ["goroutines", "goroutine"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/goroutines",
+        "exercise": "goroutines",
+        "track": "go",
+        "language": "Go"
       }
     ]
   },
@@ -943,6 +1129,37 @@
         "exercise": "numbers",
         "track": "elixir",
         "language": "Elixir"
+      }
+    ]
+  },
+  {
+    "name": "interfaces",
+    "variations": ["interfaces", "interface"],
+    "documents": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/reference/concepts/interfaces.md",
+        "name": "interfaces"
+      }
+    ],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/interfaces",
+        "exercise": "interfaces",
+        "track": "go",
+        "language": "Go"
+      }
+    ]
+  },
+  {
+    "name": "iteration",
+    "variations": ["iteration", "iterations"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/iteration",
+        "exercise": "iteration",
+        "track": "go",
+        "language": "Go"
       }
     ]
   },
@@ -1049,6 +1266,87 @@
     ]
   },
   {
+    "name": "matrices-concatenation",
+    "variations": [
+      "matrices-concatenation",
+      "matrices-concatenations",
+      "matrices_concatenation"
+    ],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
+        "exercise": "matrices-introduction",
+        "track": "julia",
+        "language": "Julia"
+      }
+    ]
+  },
+  {
+    "name": "matrices-indices",
+    "variations": ["matrices-indices", "matrices-index", "matrices_indices"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
+        "exercise": "matrices-introduction",
+        "track": "julia",
+        "language": "Julia"
+      }
+    ]
+  },
+  {
+    "name": "matrices-introduction",
+    "variations": [
+      "matrices-introduction",
+      "matrices-introductions",
+      "matrices_introduction"
+    ],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
+        "exercise": "matrices-introduction",
+        "track": "julia",
+        "language": "Julia"
+      }
+    ]
+  },
+  {
+    "name": "matrices-iteration",
+    "variations": [
+      "matrices-iteration",
+      "matrices-iterations",
+      "matrices_iteration"
+    ],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
+        "exercise": "matrices-introduction",
+        "track": "julia",
+        "language": "Julia"
+      }
+    ]
+  },
+  {
+    "name": "matrices-mutation",
+    "variations": [
+      "matrices-mutation",
+      "matrices-mutations",
+      "matrices_mutation"
+    ],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
+        "exercise": "matrices-introduction",
+        "track": "julia",
+        "language": "Julia"
+      }
+    ]
+  },
+  {
     "name": "method-overloading",
     "variations": [
       "method-overloading",
@@ -1067,6 +1365,24 @@
         "exercise": "method-overloading",
         "track": "csharp",
         "language": "C#"
+      }
+    ]
+  },
+  {
+    "name": "methods",
+    "variations": ["methods", "method"],
+    "documents": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/reference/concepts/methods.md",
+        "name": "methods"
+      }
+    ],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/methods",
+        "exercise": "methods",
+        "track": "go",
+        "language": "Go"
       }
     ]
   },
@@ -1127,6 +1443,19 @@
     ]
   },
   {
+    "name": "mutex",
+    "variations": ["mutex", "mutices"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/mutext",
+        "exercise": "mutext",
+        "track": "go",
+        "language": "Go"
+      }
+    ]
+  },
+  {
     "name": "named-arguments",
     "variations": ["named-arguments", "named-argument", "named_arguments"],
     "documents": [],
@@ -1140,10 +1469,29 @@
     ]
   },
   {
+    "name": "nested-types",
+    "variations": ["nested-types", "nested-type", "nested_types"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/nested-types",
+        "exercise": "nested-types",
+        "track": "csharp",
+        "language": "C#"
+      }
+    ]
+  },
+  {
     "name": "nil",
     "variations": ["nil", "nils"],
     "documents": [],
     "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/nil",
+        "exercise": "nil",
+        "track": "go",
+        "language": "Go"
+      },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/nil",
         "exercise": "nil",
@@ -1299,6 +1647,32 @@
     ]
   },
   {
+    "name": "overflow",
+    "variations": ["overflow", "overflows"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/overflow",
+        "exercise": "overflow",
+        "track": "csharp",
+        "language": "C#"
+      }
+    ]
+  },
+  {
+    "name": "panic",
+    "variations": ["panic", "panics"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/panic-and-recover",
+        "exercise": "panic-and-recover",
+        "track": "go",
+        "language": "Go"
+      }
+    ]
+  },
+  {
     "name": "parameters",
     "variations": ["parameters", "parameter"],
     "documents": [],
@@ -1380,6 +1754,24 @@
         "exercise": "streams",
         "track": "elixir",
         "language": "Elixir"
+      }
+    ]
+  },
+  {
+    "name": "pointers",
+    "variations": ["pointers", "pointer"],
+    "documents": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/reference/types/pointer.md",
+        "name": "pointer"
+      }
+    ],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/pointers",
+        "exercise": "pointers",
+        "track": "go",
+        "language": "Go"
       }
     ]
   },
@@ -1477,6 +1869,19 @@
     ]
   },
   {
+    "name": "recover",
+    "variations": ["recover", "recovers"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/panic-and-recover",
+        "exercise": "panic-and-recover",
+        "track": "go",
+        "language": "Go"
+      }
+    ]
+  },
+  {
     "name": "recursion",
     "variations": ["recursion", "recursions"],
     "documents": [
@@ -1507,6 +1912,19 @@
     ]
   },
   {
+    "name": "reflection",
+    "variations": ["reflection", "reflections"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/reflection",
+        "exercise": "reflection",
+        "track": "go",
+        "language": "Go"
+      }
+    ]
+  },
+  {
     "name": "regular-expressions",
     "variations": [
       "regular-expressions",
@@ -1515,6 +1933,12 @@
     ],
     "documents": [],
     "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/regular-expressions",
+        "exercise": "regular-expressions",
+        "track": "csharp",
+        "language": "C#"
+      },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/regular-expressions",
         "exercise": "regular-expressions",
@@ -1533,6 +1957,36 @@
         "exercise": "resource-cleanup",
         "track": "csharp",
         "language": "C#"
+      }
+    ]
+  },
+  {
+    "name": "resource-lifetime",
+    "variations": [
+      "resource-lifetime",
+      "resource-lifetimes",
+      "resource_lifetime"
+    ],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/resource-lifetime",
+        "exercise": "resource-lifetime",
+        "track": "csharp",
+        "language": "C#"
+      }
+    ]
+  },
+  {
+    "name": "runes",
+    "variations": ["runes", "rune"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/bytes-and-runes",
+        "exercise": "bytes-and-runes",
+        "track": "go",
+        "language": "Go"
       }
     ]
   },
@@ -1736,6 +2190,12 @@
         "language": "Rust"
       },
       {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/structs",
+        "exercise": "structs",
+        "track": "go",
+        "language": "Go"
+      },
+      {
         "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/structs",
         "exercise": "structs",
         "track": "elixir",
@@ -1810,6 +2270,12 @@
         "exercise": "time",
         "track": "csharp",
         "language": "C#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/time-and-duration",
+        "exercise": "time-and-duration",
+        "track": "go",
+        "language": "Go"
       }
     ]
   },
@@ -1877,6 +2343,12 @@
         "exercise": "tuples",
         "track": "elixir",
         "language": "Elixir"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/tuples",
+        "exercise": "tuples",
+        "track": "python",
+        "language": "Python"
       }
     ]
   },
@@ -2022,17 +2494,6 @@
     "implementations": []
   },
   {
-    "name": "byte",
-    "variations": ["byte", "bytes"],
-    "documents": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/reference/types/byte.md",
-        "name": "byte"
-      }
-    ],
-    "implementations": []
-  },
-  {
     "name": "character-encoding",
     "variations": [
       "character-encoding",
@@ -2087,17 +2548,6 @@
       {
         "url": "https://github.com/exercism/v3/tree/master/reference/concepts/concurrency.md",
         "name": "concurrency"
-      }
-    ],
-    "implementations": []
-  },
-  {
-    "name": "constants",
-    "variations": ["constants", "constant"],
-    "documents": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
-        "name": "constants"
       }
     ],
     "implementations": []
@@ -2254,17 +2704,6 @@
     "implementations": []
   },
   {
-    "name": "function",
-    "variations": ["function", "functions"],
-    "documents": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-        "name": "function"
-      }
-    ],
-    "implementations": []
-  },
-  {
     "name": "function-composition",
     "variations": [
       "function-composition",
@@ -2350,17 +2789,6 @@
     "implementations": []
   },
   {
-    "name": "interfaces",
-    "variations": ["interfaces", "interface"],
-    "documents": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/reference/concepts/interfaces.md",
-        "name": "interfaces"
-      }
-    ],
-    "implementations": []
-  },
-  {
     "name": "lazy-evaluation",
     "variations": ["lazy-evaluation", "lazy-evaluations", "lazy_evaluation"],
     "documents": [
@@ -2411,17 +2839,6 @@
       {
         "url": "https://github.com/exercism/v3/tree/master/reference/concepts/metaprogramming.md",
         "name": "metaprogramming"
-      }
-    ],
-    "implementations": []
-  },
-  {
-    "name": "methods",
-    "variations": ["methods", "method"],
-    "documents": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/reference/concepts/methods.md",
-        "name": "methods"
       }
     ],
     "implementations": []
@@ -2556,17 +2973,6 @@
     "implementations": []
   },
   {
-    "name": "pointer",
-    "variations": ["pointer", "pointers"],
-    "documents": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/reference/types/pointer.md",
-        "name": "pointer"
-      }
-    ],
-    "implementations": []
-  },
-  {
     "name": "polymorphism",
     "variations": ["polymorphism", "polymorphisms"],
     "documents": [
@@ -2595,7 +3001,12 @@
       "prototype-based-programmings",
       "prototype_based_programming"
     ],
-    "documents": [],
+    "documents": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/reference/concepts/prototype_based_programming.md",
+        "name": "prototype_based_programming"
+      }
+    ],
     "implementations": []
   },
   {
