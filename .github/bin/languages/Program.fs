@@ -4,6 +4,11 @@ open System.Text
 open System.Text.Json
 open System.Text.Json.Serialization
 
+type ConceptExerciseStatus =
+    | Unimplemented
+    | ImplementedWithoutInstructions
+    | ImplementedWithInstructions
+
 type Concept =
     { Name: string
       File: FileInfo option }
@@ -11,7 +16,8 @@ type Concept =
 type ConceptExercise =
     { Slug: string
       Concepts: Concept[]
-      Prerequisites: Concept[] }
+      Prerequisites: Concept[]
+      Status: ConceptExerciseStatus }
 
 type Exercises =
     { Concept: ConceptExercise[] }
@@ -69,24 +75,35 @@ module Parser =
         |> File.ReadAllText
         |> JsonSerializer.Deserialize<JsonTrack>
 
-    let private parseTrack (languageDirectory: DirectoryInfo): Track =
+    let private parseConceptExerciseStatus (languagesDirectory: DirectoryInfo)  (track: string) (exercise: string): ConceptExerciseStatus =
+        let exerciseDirectory = DirectoryInfo(Path.Combine(languagesDirectory.FullName, track, "exercises", "concept", exercise))
+        let instructionsFile = FileInfo(Path.Combine(languagesDirectory.FullName, track, "exercises", "concept", exercise, ".docs", "instructions.md"))
+
+        match instructionsFile.Exists, exerciseDirectory.Exists with
+        | true, true  -> ImplementedWithInstructions
+        | false, true -> ImplementedWithoutInstructions
+        | _           -> Unimplemented
+        
+    let private parseConceptExercise (languagesDirectory: DirectoryInfo) (languageDirectory: DirectoryInfo) (jsonConceptExercise: JsonConceptExercise): ConceptExercise =
+        let emptyIfNull arr = if arr = null then Array.empty else arr
+        let toConcepts arr = arr |> emptyIfNull |> Array.map parseConcept
+        
+        { Slug = jsonConceptExercise.Slug
+          Concepts = jsonConceptExercise.Concepts |> toConcepts
+          Prerequisites = jsonConceptExercise.Prerequisites |> toConcepts
+          Status = parseConceptExerciseStatus languagesDirectory languageDirectory.Name jsonConceptExercise.Slug }
+
+    let private parseTrack (languagesDirectory: DirectoryInfo) (languageDirectory: DirectoryInfo): Track =
         let configJson = parseConfigJson languageDirectory
-        let toConceptExercise (jsonConceptExercise: JsonConceptExercise) : ConceptExercise =
-            let emptyIfNull arr = if arr = null then Array.empty else arr
-            let toConcepts arr = arr |> emptyIfNull |> Array.map parseConcept
-            
-            { Slug = jsonConceptExercise.Slug
-              Concepts = jsonConceptExercise.Concepts |> toConcepts
-              Prerequisites = jsonConceptExercise.Prerequisites |> toConcepts }
 
         { Name = configJson.Language
           Slug = languageDirectory.Name
-          Exercises = { Concept = Array.map toConceptExercise configJson.Exercises.Concept } }
+          Exercises = { Concept = Array.map (parseConceptExercise languagesDirectory languageDirectory) configJson.Exercises.Concept } }
 
     let parseTracks (languagesDirectory: DirectoryInfo): Track list =
         languagesDirectory.EnumerateDirectories()
         |> Seq.filter hasConfigJsonFile
-        |> Seq.map parseTrack
+        |> Seq.map (parseTrack languagesDirectory)
         |> Seq.sortBy (fun track -> track.Name)
         |> Seq.toList
     
@@ -118,7 +135,8 @@ module Markdown =
 
         for track in tracks do
             let trackLink = sprintf "[%s](./%s/README.md)" track.Name track.Slug
-            let exercisesLink = sprintf "[%d](./%s/config.json)" track.Exercises.Concept.Length track.Slug
+            let exercisesCount = track.Exercises.Concept |> Array.filter (fun exercise -> exercise.Status <> Unimplemented) |> Array.length
+            let exercisesLink = sprintf "[%d](./%s/config.json)" exercisesCount track.Slug
             renderLine trackLink exercisesLink
 
         markdown.AppendLine()
@@ -141,7 +159,12 @@ module Markdown =
         for track in tracks do
             let trackLink = sprintf "[%s](./%s/README.md)" track.Name track.Slug
             
-            for conceptExercise in track.Exercises.Concept |> Array.sortBy (fun exercise -> exercise.Slug) do
+            let exercises =
+                track.Exercises.Concept
+                |> Array.filter (fun exercise -> exercise.Status <> Unimplemented)
+                |> Array.sortBy (fun exercise -> exercise.Slug)
+            
+            for conceptExercise in exercises do
                 let renderConcept (concept: Concept): string =
                     match concept.File with
                     | Some file ->
@@ -157,7 +180,12 @@ module Markdown =
                         |> Array.map renderConcept
                         |> String.concat ", "  
                 
-                let exerciseLink = sprintf "[%s](./%s/exercises/concept/%s/.docs/instructions.md)" conceptExercise.Slug track.Slug conceptExercise.Slug
+                let exerciseLink =
+                    match conceptExercise.Status with
+                    | ImplementedWithInstructions -> sprintf "[%s](./%s/exercises/concept/%s/.docs/instructions.md)" conceptExercise.Slug track.Slug conceptExercise.Slug
+                    | ImplementedWithoutInstructions -> conceptExercise.Slug
+                    | Unimplemented -> conceptExercise.Slug
+
                 let concepts = conceptExercise.Concepts |> renderArray  
                 let prerequisites = conceptExercise.Prerequisites |> renderArray
                 renderLine trackLink exerciseLink concepts prerequisites
@@ -221,7 +249,10 @@ module Json =
         { Name = track.Name
           Slug = track.Slug
           Exercises =
-              { Concept = Array.map (conceptExerciseToJsonConceptExercise track) track.Exercises.Concept } }
+              { Concept =
+                  track.Exercises.Concept
+                  |> Array.filter (fun exercise -> exercise.Status <> Unimplemented)
+                  |> Array.map (conceptExerciseToJsonConceptExercise track)  } }
     
     let private renderToJson (tracks: Track list): string =
         let jsonTracks = List.map trackToJsonTrack tracks
