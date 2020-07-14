@@ -1,17 +1,21 @@
 ## Goal
 
-The goal of this exercise is to teach the student the basics of the Concept of nil in Ruby.
+The goal of this exercise is to teach the student the basics of the Concept of "nil" in Ruby.
 
 ## Learning objectives
 
 - Know that `true` is a Ruby object used to represent logical `true`
-- Know that everything but `false` and `nil` is truthy
+- Know that everything except `false` and `nil` is truthy
 - Know that `false` is a Ruby object used to represent logical `false`
 - Know that `false` is falsey
 - Know that `nil` is a Ruby object used to represent an "empty" or "default" value
 - Know that `nil` is falsey
 
 ## Out of scope
+
+- None as it relates to this concept
+
+## Reference
 
 - `TrueClass`
 - `FalseClass`

@@ -20,7 +20,7 @@ true && false
 favorite_color = nil
 ```
 
-In other programming languages, `null` or `none` values might play a similar role.
+In other programming languages, `null` or `none` values may play a similar role.
 
 ## _Truthy_ and _falsey_
 
