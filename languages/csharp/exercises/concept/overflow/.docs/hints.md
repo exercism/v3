@@ -14,6 +14,7 @@
 
 - [Floating-point numeric types][floating-point-numeric-types]: overview of the floating-point numeric types.
 - [`OverflowException`][overflow-exception]: overflow exception
+- [`Decimal`][decimal]: the decimal type
 
 [computerphile-gangnam-style]: https://www.youtube.com/watch?v=vA0Rl6Ne5C8
 [integral-numeric-types]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types
@@ -26,3 +27,4 @@
 [big-integer]: https://docs.microsoft.com/en-us/dotnet/api/system.numerics.biginteger?view=netcore-3.1
 [single]: https://docs.microsoft.com/en-us/dotnet/api/system.single?view=netcore-3.1
 [overflow-exception]: https://docs.microsoft.com/en-us/dotnet/api/system.overflowexception?view=netcore-3.1
+[decimal]: https://docs.microsoft.com/en-us/dotnet/api/system.decimal?view=netcore-3.1

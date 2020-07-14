@@ -1,17 +1,17 @@
-The exercises show the behavior of various numeric types when they overflow, i.e. when their capacity is insufficient to contain the value resulting a computation such as an arithmetic operation or cast.
+The exercise shows the behavior of various numeric types when they overflow, i.e. when their capacity is insufficient to contain the value resulting from a computation such as an arithmetic operation or cast.
 
-- unsigned [integers][integral-numeric-types] (`byte`, `ushort`, `uint`, `ulong`) will wrap around to zero unless [broadly speaking][checked-compiler-setting] they appear within a [`checked`][checked-and-unchecked] block in which case an instance of `OverflowException` is thrown. `int` and `long` will behave similarly except that they wrap around to `int.MinValue` and `long.minValue` respectively.
+- unsigned [integers][integral-numeric-types] (`byte`, `ushort`, `uint`, `ulong`) will wrap around to zero (the type's maximum value + 1 acts as a modulus) unless [broadly speaking][checked-compiler-setting] they appear within a [`checked`][checked-and-unchecked] block in which case an instance of `OverflowException` is thrown. `int` and `long` will behave similarly except that they wrap around to `int.MinValue` and `long.minValue` respectively.
 
 ```csharp
 var xx = new Random().Next();
 checked
 {
-    int expr = int.MaxValue * xx;
+    int expr = int.MaxValue * xx;  // overflow exception is thrown
 }
 
 // or
 
-int expr2 = checked(int.MaxValue * xx);
+int expr2 = checked(int.MaxValue * xx);  // overflow exception is thrown
 ```
 
 - the `checked` state applies only to expressions directly in the block. Overflow states in called functions are not caught.
@@ -27,7 +27,7 @@ If large integers are essential to your code then using the [`BigInteger`][big-i
 
 Naturally there are occasions on which it is legitimate to allow an integer to wrap around particularly in the case of unsigned values. A classic case is that of hash codes that use the width of the integer as a kind of modulo.
 
-You will usually find in code bases that there is often no check where an `uint` or a `ulong` is used as an identifier because it is considered more trouble than its worth. This also applies where it is evident from the domain that no very large values will be involved. But, look at [this][computerphile-gangnam-style] for a cautionary tale.
+You will usually find in code bases that there is often no check where an `uint` or a `ulong` is used as an identifier because it is considered more trouble than it's worth. This also applies where it is evident from the domain that no very large values will be involved. But, look at [this][computerphile-gangnam-style] for a cautionary tale.
 
 - [Integral numeric types][integral-numeric-types]: overview of the integral numeric types.
 - [Floating-point numeric types][floating-point-numeric-types]: overview of the floating-point numeric types.
