@@ -1,27 +1,30 @@
 ## Goal
 
-The goal of this exercise is to teach the student about `nil` and other zero values.
+The goal of this exercise is to teach the student how to use time in Go.
 
 ## Learning objectives
 
-- Go assigns zero values to uninitialized variables according to the type the variable holds.
-- The identifier `nil` is the zero value for pointers, channels, maps, interfaces, slices, and functions.
-- Zero values for strings, numbers, and booleans are "", 0, and false, respectively.
+- Know how to use `time.Time` in Go.
+- Know how to get the current date and time.
+- Know how to compare times.
+- Know how to parse dates and times from a string.
 
 ## Out of scope
 
-- Error checking.
-- `Nil` checking.
-- Usage of the above-mentioned types.
+- Time zones/locations.
+- `Duration` type.
+- Timers/tickers.
 
 ## Concepts
 
-- `nil`
-- zero values
+- `time`
 
 ## Prerequisites
 
-- `types`
+- `basics`
+- `numbers`
+- `strings`
+- `functions`
 
 ## Representer
 

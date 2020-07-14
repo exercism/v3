@@ -1,46 +1,28 @@
 package time
 
-// EmptyInterface returns an empty (zero value) interface
-func EmptyInterface() interface{} {
-	panic("please implement the EmptyInterface function")
+import "time"
+
+// Schedule returns a time.Time type from a string containing a date
+func Schedule(date string) time.Time {
+	panic("please implement the Schedule function")
 }
 
-// EmptyMap returns an empty (zero value) map
-func EmptyMap() map[int]int {
-	panic("please implement the EmptyMap function")
+// HasPassed returns if a date has passed
+func HasPassed(date string) bool {
+	panic("please implement the HasPassed function")
 }
 
-// EmptySlice returns an empty (zero value) slice
-func EmptySlice() []int {
-	panic("please implement the EmptySlice function")
+// IsAfternoonAppointment returns if a time is in the afternoon
+func IsAfternoonAppointment(date string) bool {
+	panic("please implement the IsAfternoonAppointment function")
 }
 
-// EmptyString returns an empty (zero value) string
-func EmptyString() string {
-	panic("please implement the EmptyString function")
+// Description returns a formatted string of the appointment time
+func Description(date string) string {
+	panic("please implement the Description function")
 }
 
-// EmptyChannel returns an empty (zero value) channel
-func EmptyChannel() chan int {
-	panic("please implement the EmptyChannel function")
-}
-
-// EmptyPointer returns an empty (zero value) pointer
-func EmptyPointer() *int {
-	panic("please implement the EmptyPointer function")
-}
-
-// EmptyBool returns an empty (zero value) bool
-func EmptyBool() bool {
-	panic("please implement the EmptyBool function")
-}
-
-// EmptyFunc returns an empty (zero value) func
-func EmptyFunc() func() {
-	panic("please implement the EmptyFunc function")
-}
-
-// EmptyInt returns an empty (zero value) int
-func EmptyInt() int {
-	panic("please implement the EmptyInt function")
+// AnniversaryDate returns a Time with this year's anniversary
+func AnniversaryDate() time.Time {
+	panic("please implement the AnniversaryDate function")
 }
