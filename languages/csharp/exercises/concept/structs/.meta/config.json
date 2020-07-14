@@ -1,5 +1,5 @@
 {
-  "contributors" [
+  "contributors": [
     {
       "github_username": "efx",
       "exercism_username": "efx"
@@ -8,7 +8,7 @@
       "github_username": "jrr",
       "exercism_username": "jrr"
     }
-  ]
+  ],
   "authors": [
     {
       "github_username": "mikedamay",
