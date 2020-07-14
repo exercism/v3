@@ -14,8 +14,17 @@ checked
 int expr2 = checked(int.MaxValue + one);  // overflow exception is thrown
 ```
 
+- If a literal expression would cause the variable to which it is assigned to overflow then a compile-time error occurs.
 - the `checked` state applies only to expressions directly in the block. Overflow states in called functions are not caught.
 - [`float` and `double`][floating-point-numeric-types] types will adopt a state of _infinity_ that can be tested wtih `float.IsInfinity()` etc.
+
+```csharp
+double d = double.MaxValue;
+d *= 2d;
+Double.IsFinite(d)
+// => false
+```
+
 - Numbers of type [`decimal`][floating-point-numeric-types] will cause an instance of `OverflowException` to be thrown.
 - There is a corresponding `unchecked` keyword for circumstances where you want to reverse the effect of `unchecked` inside a `checked` block or when the compiler setting has been used.
 
