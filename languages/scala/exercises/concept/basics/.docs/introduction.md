@@ -2,7 +2,7 @@
 
 Defining a variable means assigning a value to a name. In Scala there are two kinds of variables, vals and vars.
 
-A `val` is [immutable][immutability], so it's value cannot be changed anymore after the first assignment:
+A `val` is immutable, so it's value cannot be changed anymore after the first assignment:
 
 ```scala
 val numberTen = 10
@@ -20,7 +20,7 @@ someNumber = 11
 // now someNumber has been reassigned
 ```
 
-Scala is a statically-typed language, which means that everything has a type at compile-time. A variable can be defined either by explicitly specifying its type, or by letting the Scala compiler infer its type based on the assigned value (known as [type inference][type-inference]). Therefore, the following two variable definitions are equivalent:
+Scala is a statically-typed language, which means that everything has a type at compile-time. A variable can be defined either by explicitly specifying its type, or by letting the Scala compiler infer its type based on the assigned value (known as type inference). Therefore, the following two variable definitions are equivalent:
 
 ```scala
 val explicitNumber: Int = 10; // Explicitly typed
@@ -100,6 +100,3 @@ This comment spans across
 multiple lines.
 */
 ```
-
-[immutability]: ../../../../../../reference/concepts/immutability.md
-[type-inference]: ../../../../../../reference/concepts/type_inference.md
