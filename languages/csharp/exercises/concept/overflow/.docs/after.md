@@ -3,21 +3,21 @@ The exercise shows the behavior of various numeric types when they overflow, i.e
 - unsigned [integers][integral-numeric-types] (`byte`, `ushort`, `uint`, `ulong`) will wrap around to zero (the type's maximum value + 1 acts as a modulus) unless [broadly speaking][checked-compiler-setting] they appear within a [`checked`][checked-and-unchecked] block in which case an instance of `OverflowException` is thrown. `int` and `long` will behave similarly except that they wrap around to `int.MinValue` and `long.minValue` respectively.
 
 ```csharp
-var xx = new Random().Next();
+int one = 1;
 checked
 {
-    int expr = int.MaxValue * xx;  // overflow exception is thrown
+    int expr = int.MaxValue + one;  // overflow exception is thrown
 }
 
 // or
 
-int expr2 = checked(int.MaxValue * xx);  // overflow exception is thrown
+int expr2 = checked(int.MaxValue + one);  // overflow exception is thrown
 ```
 
 - the `checked` state applies only to expressions directly in the block. Overflow states in called functions are not caught.
 - [`float` and `double`][floating-point-numeric-types] types will adopt a state of _infinity_ that can be tested wtih `float.IsInfinity()` etc.
 - Numbers of type [`decimal`][floating-point-numeric-types] will cause an instance of `OverflowException` to be thrown.
-- There is a corresponding `unchecked` keyword for circumstances where you want to reverse the effect of `checed` inside a `checked` block or when the compiler setting has been used.
+- There is a corresponding `unchecked` keyword for circumstances where you want to reverse the effect of `unchecked` inside a `checked` block or when the compiler setting has been used.
 
 Overflows that occur without an exception being thrown can be problematic because it's generally true that the earlier an error condition can be reported the better.
 
