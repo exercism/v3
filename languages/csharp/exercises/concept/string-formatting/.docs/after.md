@@ -17,7 +17,7 @@ string.Format("I had {0} bitcoins on {1}, the day I forgot my password.", 55.5, 
 // => "I had 55.5 bitcoins on 2/25/2010 00:00:00, the day I forgot my password." - US settings
 ```
 
-`Foprmat()` may be a better choice than interpolation where the format is being used in multiple expressions as a kind of template or where incorporating the format, and the expressions to be formatted is too cumbersome such as when [verbatim strings][verbatim-strings] are involved.
+`Format()` may be a better choice than interpolation where the format is being used in multiple expressions as a kind of template or where incorporating the format, and the expressions to be formatted is too cumbersome such as when [verbatim strings][verbatim-strings] are involved.
 
 This mechanism is technically known as [_composite formatting_][composite-formatting].
 
