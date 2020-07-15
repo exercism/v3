@@ -22,8 +22,6 @@ This Concepts Exercise's Concepts are:
 - `classes`: know how to define methods on classes.
 - `constructors`: know how to define constructors.
 - `properties`: know how to define properties.
-- `indexers`: know how to define indexers.
-- `constants`
 - `booleans`
 - `conditionals-if`
 - `exceptions`

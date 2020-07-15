@@ -1,4 +1,4 @@
-Many types of struct and class members (fields being the primary exception) can use the expression-bodied member syntax. Defining members through expression bodies often produces more concise and readable code than traditional blocks/statements.
+Many types of struct and class members (fields being the primary exception) can use the expression-bodied member syntax. Defining a member with an expression often produces more concise and readable code than traditional blocks/statements.
 
 Methods and read-only properties are amongst the members that can be defined with expression bodies.
 
@@ -13,6 +13,7 @@ Ternary operators allow if-conditions to be defined in expressions rather than s
 ```csharp
 int a = 3, b = 4;
 int max = a > b ? a : b;
+// => 4
 ```
 
 `throw` expressions are an alternative to `throw` statements and in particular can add to the power of ternary and other compound expressions.

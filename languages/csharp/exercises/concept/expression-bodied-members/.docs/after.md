@@ -1,4 +1,4 @@
-Many [types of struct and class members][expression-bodied-members] (fields being the primary exception) can use the expression-bodied member syntax. Defining members through expression bodies often produces more concise and readable code than traditional blocks/statements.
+Many [types of struct and class members][expression-bodied-members] (fields being the primary exception) can use the expression-bodied member syntax. Defining a member with an expression often produces more concise and readable code than traditional blocks/statements.
 
 ```csharp
 int Times3(int input) => input * 3;
@@ -15,6 +15,7 @@ Ternary operators allow if-conditions to be defined in expressions rather than s
 ```csharp
 int a = 3, b = 4;
 int max = a > b ? a : b;
+// => 4
 ```
 
 #### Throw expressions
