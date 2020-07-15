@@ -27,14 +27,14 @@ public class StringFormattingTests
         Assert.Equal(expected, HighSchoolSweetheart.DisplaySingleLine("Lance Green", "Pat Riley"));
     }
 
-    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void DisplayBanner()
     {
         string actualBanner = HighSchoolSweetheart.DisplayBanner("L. G. ", "P. R. ");
         Assert.Equal(expectedBanner.Trim(), actualBanner.Trim());
     }
 
-    [Fact /*(Skip = "Remove this Skip property to run this test")*/]
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void DisplayGermanExchangeStudents()
     {
         string actual = HighSchoolSweetheart.DisplayGermanExchangeStudents("Norbert", "Heidi",
