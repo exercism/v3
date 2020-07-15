@@ -3,8 +3,6 @@
 - [List documentation][lists-docs]: reference documentation for `List<T>`.
 - [Lists tutorial][lists-tutorial]: basic tutorial on how to work with lists.
 
-In this exercise you'll be writing code to keep track of a list of programming languages you want to learn on Exercism.
-
 You have nine tasks, which will all involve dealing with lists.
 
 ## 1. Create a new list

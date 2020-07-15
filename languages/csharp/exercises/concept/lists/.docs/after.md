@@ -1,4 +1,4 @@
-Lists in C# are collections of primitive values or instances of structs or classes. They are implemented in the base class library as `List<T>` where `T` is the type of the item in the list. The API exposes a rich set of methods for creating and manipulating lists.
+Lists in C# are collections of primitive values or instances of structs or classes. They are implemented in the base class library as [`List<T>`][lists-docs] where `T` is the type of the item in the list. The API exposes a rich set of methods for creating and manipulating lists.
 
 ```csharp
 var lists = new List<string>();
@@ -21,7 +21,7 @@ You should also be aware of `System.Collections.List` which you may encounter in
 
 #### LINQ
 
-Although the built-in API of `List<T>` is rich (including mappings and filers such as `ConvertAll`, `FindAll` and `Foreach`) and its looping syntax is very clear, and you need to be familiar with this API, Language Integrated Query ([LINQ][linq]) is available for many tasks, is even more powerful and widely used and has the advantage of providing a consistent interface across library collections, third-party collections and your own classes. See (TODO cross-ref-tba).
+Although the built-in API of `List<T>` is rich (including mappings and filters such as `ConvertAll`, `FindAll` and `Foreach`) and its [looping syntax][for-each] is very clear, and you definitely need to be familiar with this API, Language Integrated Query ([LINQ][linq]) is available for many tasks, is even more powerful and widely used and has the advantage of providing a consistent interface across library collections, third-party collections and your own classes. See (TODO cross-ref-tba).
 
 #### Reference
 
@@ -33,3 +33,4 @@ Although the built-in API of `List<T>` is rich (including mappings and filers su
 [generics]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/
 [casting]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions
 [linq]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/
+[for-each]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/foreach-in

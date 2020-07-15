@@ -15,7 +15,7 @@ Languages.NewList()
 
 ## 2. Define an existing list
 
-Currently, you have a piece of paper listing the languages you want to learn: F#, Clojure and Haskell.
+Currently, you have a piece of paper listing the languages you want to learn: C#, Clojure and Elm.
 
 Please implement the static `Languages.GetExistingLanguages()` method to return the list.
 
