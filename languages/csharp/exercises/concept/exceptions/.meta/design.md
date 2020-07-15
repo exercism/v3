@@ -45,14 +45,6 @@ The goal of this exercise is to teach the student the Concept of Exceptions in C
 - [Exception handling][exception-handling]: how to catch exceptions.
 - [Creating and throwing exceptions][creating-and-throwing-exceptions]: how to create and throw exceptions.
 
-## Representer
-
-This exercise does not require any specific representation logic to be added to the [representer][representer].
-
-## Analyzer
-
-This exercise does not require any specific analyzer logic to be added to the [analyzer][analyzer].
-
 ## Implementing
 
 To implement this exercise, please [follow these instructions](https://github.com/exercism/v3/blob/master/languages/csharp/reference/implementing-a-concept-exercise.md).
