@@ -23,7 +23,11 @@ The goal of this exercise is to teach the student the Concept of Exceptions in C
 
 ## Prequisites
 
-- `classes`: defining a class for a custom exception and using methods.
+- `basics`: know how to do string interpolation and how to work with `int`s
+- `inheritance`: know about class hierarchies
+- `nullability`: know what `null` is
+- `overflows`: know what an `OverflowException` is
+- `switch-statements`: know how to write a `switch` statement
 
 ## Resources to refer to
 
