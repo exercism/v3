@@ -62,7 +62,7 @@ At some point, you realize that your list is actually ordered backwards!
 Implement the static `Languages.ReverseList()` method to reverse your list.
 
 ```fsharp
-Languages.ReverseList(Languages.GetExistingList())
+Languages.ReverseList(Languages.GetExistingLanguages())
 // => {"Elm", "Clojure", "C#"}
 ```
 
@@ -76,7 +76,7 @@ While you love all languages, C# has a special place in your heart. As such, you
 Implement the static `Languages.ContainsStar()` method to check if a list of languages is exciting:
 
 ```fsharp
-languages.ContainsStar(Languages.GetExistingLanguages())
+Languages.ContainsStar(Languages.GetExistingLanguages())
 // => true
 ```
 
@@ -85,7 +85,7 @@ languages.ContainsStar(Languages.GetExistingLanguages())
 Please implement the static `Languages.RemoveLangage()` method to remove a specified language from the list.
 
 ```csharp
-languages.RemoveLanguage(Languages.GetExistingLanguages(), "Clojure")
+Languages.RemoveLanguage(Languages.GetExistingLanguages(), "Clojure")
 // => { "C#", "Elm" }
 ```
 
@@ -96,6 +96,6 @@ Please implement the static `Languages.EnsureUnique()` method to check if any of
 The list of languages (i.e. the parameter) is guaranteed not to be empty when this method is called and it doesn't matter if the list is modified.
 
 ```csharp
-Languages.EnsureUnique(Languages.GetExistingList())
+Languages.EnsureUnique(Languages.GetExistingLanguages())
 // => true
 ```
