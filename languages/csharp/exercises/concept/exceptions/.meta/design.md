@@ -45,14 +45,6 @@ The goal of this exercise is to teach the student the Concept of Exceptions in C
 - [Exception handling][exception-handling]: how to catch exceptions.
 - [Creating and throwing exceptions][creating-and-throwing-exceptions]: how to create and throw exceptions.
 
-## Implementing
-
-To implement this exercise, please [follow these instructions](https://github.com/exercism/v3/blob/master/languages/csharp/reference/implementing-a-concept-exercise.md).
-
-## Help
-
-If you have any questions while implementing the exercise, please post the questions as comments in this issue.
-
 [analyzer]: https://github.com/exercism/csharp-analyzer
 [representer]: https://github.com/exercism/csharp-representer
 [exercise-example]: https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/numbers-floating-point
