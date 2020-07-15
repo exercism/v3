@@ -17,5 +17,3 @@
 - `basics`: know how to define a static class and static method.
 - `classes`: know how to define a class and what the `public` and `private` access modifiers are.
 - `inheritance`: know about the `protected` access modifier.
-
-Any data types used in this exercise (e.g. `strings`) should also be added as prerequisites.
