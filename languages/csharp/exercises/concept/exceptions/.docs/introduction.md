@@ -19,17 +19,27 @@ static int Square(int number)
 When an exception gets thrown, the runtime has the task of finding a piece of code that is responsible for handling of that exception. If no appropriate handler is found, the runtime displays the unhandled exception message in addition to stoping the execution of the program. To create a handler for an exception, C# uses the try-catch statement, which consists of a `try` block and one or more `catch` clauses. The `try` block should contain and guard code that may result in the exception getting thrown. The `catch` clauses should contain code that handles the behaviour of the program after the error has occured.
 
 ```csharp
-using System;
-public static int Calculate()
+try
 {
-    try
-    {
-        Console.WriteLine(Square(47_762));
-    }
-    catch (ArgumentException e)
-    {
-        Console.WriteLine($"Method failed with the following message: {e.Message}");
-    }
+   if (number == -1)
+   {
+       throw new ArgumentException("The number cannot be equal to -1", "number");
+   }
+   
+   if (number < 0)
+   {
+      throw new ArgumentOutOfRangeException("number", "The number cannot be negative");
+   }
+
+    // Process number ...
+}
+catch (ArgumentOutOfRangeException e)
+{
+    Console.WriteLine($"Number is out of range: {e.Message}");
+}
+catch (ArgumentException)
+{
+    Console.WriteLine($"Invalid number");
 }
 ```
 
