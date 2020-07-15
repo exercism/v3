@@ -11,7 +11,7 @@ HighSchoolSweetheart.DisplaySingleLine("Lance Green", "Pat Riley");
 // => "                  Lance Green ♡ Pat Riley                    "
 ```
 
-## 2. Display the couple's initials in a ascii art heart
+## 2. Display the couple's initials in an ascii art heart
 
 Implement the static `HighSchoolSweetheart.DisplayBanner()` method which displays the two sets of initials separated with a plus sign.
 
@@ -37,7 +37,7 @@ HighSchoolSweetheart.DisplayBanner("L. G.", "P. R.");
               *
 ```
 
-## 3. German exchange students should be made to feel at home with locale sensitive declarations.
+## 3. German exchange students should be made to feel at home with locale-sensitive declarations.
 
 Implement the static `HighSchoolSweetheart.DisplayGermanExchangeStudents()` method to show date of start of relationship and length of time for our german exchange students.
 

@@ -12,12 +12,12 @@
 
 - Take a look at the discussion of [string interpolation][string-interpolation].
 
-## 2. Display the couple's initials in a ascii art heart
+## 2. Display the couple's initials in an ascii art heart
 
 - This [article][verbatim-strings] discusses verbatim strings literals.
-- This [docunent][string-format] discusses `String.Format()`.
+- This [document][string-format] discusses `String.Format()`.
 
-## 3. German exchange students should be made to feel at home with locale sensitive declarations.
+## 3. German exchange students should be made to feel at home with locale-sensitive declarations.
 
 - To work with interpolated strings view the documentation for [`FormattableString`][formattable-string]. It may be better, to start with, to use [composite formatting][composite-formatting].
 - You will need to work with [`CultureInfo`][culture-info]. Note that it implements the [`IFormatProvider`][format-provider] interface.
