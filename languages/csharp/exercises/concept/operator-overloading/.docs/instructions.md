@@ -6,7 +6,7 @@ You have been asked to implement the currency amount object.
 
 ## 1. Enable the currency amount to be tested for equality
 
-Please modify the `CurrencyAmount` struct to handle equality. If the two currency structs do not have the same unit ("USD" or "HD") then an instance of `ArgumentException` should be thrown.
+Please modify the `CurrencyAmount` struct to handle equality. If the two currency amount structs do not have the same currency ("USD" or "HD") then an instance of `ArgumentException` should be thrown.
 
 ```csharp
 CurrencyAmount amountA = new CurrencyAmount(55, "HD");
@@ -24,7 +24,7 @@ amountA != amountC
 
 ## 2. Compare currency amounts
 
-Please modify the `CurrencyAmount` struct to handle comparisons (`>` and `<`, only). If the two currency structs do not have the same unit ("USD" or "HD") then an instance of `ArgumentException` should be thrown.
+Please modify the `CurrencyAmount` struct to handle comparisons (`>` and `<`, only). If the two currency amount structs do not have the same currency ("USD" or "HD") then an instance of `ArgumentException` should be thrown.
 
 ```csharp
 CurrencyAmount amountA = new CurrencyAmount(55, "HD");
@@ -38,7 +38,7 @@ amountA > new CurrencyAmount(50, "USD")
 
 ## 3. Add and subtract currency amounts
 
-Please modify the `CurrencyAmount` struct to handle arithmetic addition and subtraction (`+` and `-`, only). If the two currency structs do not have the same unit ("USD" or "HD") then an instance of `ArgumentException` should be thrown.
+Please modify the `CurrencyAmount` struct to handle arithmetic addition and subtraction (`+` and `-`, only). If the two currency amount structs do not have the same currency ("USD" or "HD") then an instance of `ArgumentException` should be thrown.
 
 ```csharp
 CurrencyAmount amountA = new CurrencyAmount(55, "HD");
