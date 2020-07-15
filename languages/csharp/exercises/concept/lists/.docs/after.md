@@ -9,6 +9,8 @@ var listb = new List<BigInteger>();
 
 A collection definition typically includes a place holder in angle brackets, often `T` by convention. This allows the collection user to specify what type of items to store in the collection.
 
+Unlike arrays (TODO cross-ref-tba) lists can resize themselves dynamically.
+
 #### Generic classes
 
 Lists are an example of generic classes. You will also see `HashSet<T>` and `Dictionary<T>` in early exercises.

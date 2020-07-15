@@ -27,5 +27,4 @@
 
 ## Prerequisites
 
-- `foreach-loops`: know how to use a `foreach-loop` to iterate over a collection.
-- `arrays`: know of the `array` collection type and that it has a fixed length.
+- `for-loops`: know how to use a `for-loop` to iterate over a collection.
