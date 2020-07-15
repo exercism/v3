@@ -1,4 +1,33 @@
-It is unlikely that you will come across much production code that is not enclosed in namespaces. Namespaces are typically introduced with a `using` directive unless there is an actual name clash.
+It is unlikely that you will come across much production code that does not make use of namespaces.
+
+An example of the syntax is:
+
+```csharp
+namespace MyNameSpace
+{
+    public class MyClass {}
+
+    public class OtherClass {}
+}
+```
+
+Namespaces are typically introduced with a `using` directive unless there is an actual name clash.
+
+```csharp
+namespace MySpace
+{
+    public MyClass {}
+}
+
+new MySpace.MyClass();
+
+namespace OtherSpace
+{
+    using MySpace;
+
+    new MyClass();
+}
+```
 
 This [article][using] clearly explains the ways in which the `using` directive can be used:
 
