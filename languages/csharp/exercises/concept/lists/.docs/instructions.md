@@ -93,7 +93,7 @@ languages.RemoveLanguage(Languages.GetExistingLanguages(), "Clojure")
 
 Please implement the static `Languages.EnsureUnique()` method to check if any of the languages is repeated in the list.
 
-The list of languages (i.e. the parameter) is guaranteed not to be empty when this method is called.
+The list of languages (i.e. the parameter) is guaranteed not to be empty when this method is called and it doesn't matter if the list is modified.
 
 ```csharp
 Languages.EnsureUnique(Languages.GetExistingList())
