@@ -23,8 +23,6 @@ The goal of this exercise is to teach the student the Concept of Exceptions in C
 
 ## Prequisites
 
-This Concept Exercise's prerequisites Concepts are:
-
 - `classes`: defining a class for a custom exception and using methods.
 
 ## Resources to refer to
