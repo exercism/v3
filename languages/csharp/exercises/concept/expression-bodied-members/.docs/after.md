@@ -25,7 +25,7 @@ int max = a > b ? a : b;
 string trimmed = str == null ? throw new ArgumentException() : str.Trim();
 ```
 
-If `str` is `null` in the avove code an exception is thrown.
+If `str` is `null` in the above code an exception is thrown.
 
 #### Reference
 
