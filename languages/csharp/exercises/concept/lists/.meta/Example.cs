@@ -27,6 +27,11 @@ public static class Languages
         return languages.Count;
     }
 
+    public static bool HasLanguage(List<string> languages, string language)
+    {
+        return languages.Contains(language);
+    }
+
     public static List<string> ReverseList(List<string> languages)
     {
         languages.Reverse();

@@ -46,7 +46,16 @@ Languages.CountLanguages(Languages.GetExistingLanguages())
 // => 3
 ```
 
-## 5. Reverse the list
+## 5. Check to see if a language is in the list
+
+Implement the static `Languages.HasLanguage()` method to check if a language is present.
+
+```csharp
+Languages.HasLanguage(Languages.GetExistingLanguages(), "Elm")
+// => true
+```
+
+## 6. Reverse the list
 
 At some point, you realize that your list is actually ordered backwards!
 
@@ -57,7 +66,7 @@ Languages.ReverseList(Languages.GetExistingList())
 // => {"Elm", "Clojure", "C#"}
 ```
 
-## 6. Check if list is exciting
+## 7. Check if list is exciting
 
 While you love all languages, C# has a special place in your heart. As such, you're really excited about a list of languages if:
 
@@ -71,7 +80,7 @@ languages.ContainsStar(Languages.GetExistingLanguages())
 // => true
 ```
 
-## 7.Remove Language
+## 8.Remove Language
 
 Please implement the static `Languages.RemoveLangage()` method to remove a specified language from the list.
 
@@ -80,7 +89,7 @@ languages.RemoveLanguage(Languages.GetExistingLanguages(), "Clojure")
 // => { "C#", "Elm" }
 ```
 
-## 8. Check if all languages in the list are unique
+## 9. Check if all languages in the list are unique
 
 Please implement the static `Languages.EnsureUnique()` method to check if any of the languages is repeated in the list.
 

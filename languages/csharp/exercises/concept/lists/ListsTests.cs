@@ -22,6 +22,25 @@ public class ListsTests
     }
 
     [Fact/*(Skip = "Remove this Skip property to run this test")*/]
+    public void CountLanguages()
+    {
+        Assert.Equal(3,
+            Languages.CountLanguages(Languages.GetExistingLanguages()));
+    }
+
+    [Fact/*(Skip = "Remove this Skip property to run this test")*/]
+    public void HasLanguage_yes()
+    {
+        Assert.True(Languages.HasLanguage(Languages.GetExistingLanguages(), "Elm"));
+    }
+
+    [Fact/*(Skip = "Remove this Skip property to run this test")*/]
+    public void HasLanguage_no()
+    {
+        Assert.False(Languages.HasLanguage(Languages.GetExistingLanguages(), "D"));
+    }
+
+    [Fact/*(Skip = "Remove this Skip property to run this test")*/]
     public void ReverseList()
     {
         Assert.Equal(new string[] {"Elm", "Clojure", "C#"},
