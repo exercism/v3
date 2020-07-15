@@ -48,7 +48,7 @@ var sum_v2 = calculator.Add(x: 1, y: 2);
 
 If the method to be called is defined in the same class as the method that calls it, the class name can be omitted.
 
-If a method does not use any class _state_, the method can be made _static_ using the `static` modifier. Static methods are also invoked using dot (`.`) syntax, but are invoked on the class itself instead of an instance of the class.
+If a method does not use any object _state_, the method can be made _static_ using the `static` modifier. Static methods are also invoked using dot (`.`) syntax, but are invoked on the class itself instead of an instance of the class.
 
 If a class only has static methods, it too can be made static using the `static` modifier. This expresses the intention of the class.
 
