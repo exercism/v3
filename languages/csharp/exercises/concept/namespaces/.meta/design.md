@@ -12,7 +12,7 @@
 - `namespaces`: know what namespaces are; know how to import namespaces.
 - `accessibility`: know how to use access modifiers to limit access to elements.
 
-## Prequisites
+## Prerequisites
 
 - `basics`: know how to define a static class and static method.
 - `classes`: know how to define a class and what the `public` and `private` access modifiers are.
