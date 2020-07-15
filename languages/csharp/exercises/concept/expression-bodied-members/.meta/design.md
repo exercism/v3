@@ -17,7 +17,7 @@ This Concepts Exercise's Concepts are:
 - `conditionals-ternary`: know how and when to use the ternary operator.
 - `throw-expressions`: know how to use a `throw` expression.
 
-## Prequisites
+## Prerequisites
 
 - `classes`: know how to define methods on classes.
 - `constructors`: know how to define constructors.
