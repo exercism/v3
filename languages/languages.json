@@ -2,6 +2,7 @@
   {
     "name": "C",
     "slug": "c",
+    "url": "https://github.com/exercism/v3/tree/master/languages/c",
     "exercises": {
       "concept": []
     }
@@ -9,6 +10,7 @@
   {
     "name": "C#",
     "slug": "csharp",
+    "url": "https://github.com/exercism/v3/tree/master/languages/csharp",
     "exercises": {
       "concept": [
         {
@@ -864,6 +866,7 @@
   {
     "name": "C\u002B\u002B",
     "slug": "cpp",
+    "url": "https://github.com/exercism/v3/tree/master/languages/cpp",
     "exercises": {
       "concept": [
         {
@@ -888,6 +891,7 @@
   {
     "name": "Clojure",
     "slug": "clojure",
+    "url": "https://github.com/exercism/v3/tree/master/languages/clojure",
     "exercises": {
       "concept": [
         {
@@ -907,6 +911,7 @@
   {
     "name": "Common Lisp",
     "slug": "common-lisp",
+    "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp",
     "exercises": {
       "concept": [
         {
@@ -938,6 +943,7 @@
   {
     "name": "Dart",
     "slug": "dart",
+    "url": "https://github.com/exercism/v3/tree/master/languages/dart",
     "exercises": {
       "concept": [
         {
@@ -1000,6 +1006,7 @@
   {
     "name": "Elixir",
     "slug": "elixir",
+    "url": "https://github.com/exercism/v3/tree/master/languages/elixir",
     "exercises": {
       "concept": [
         {
@@ -1683,6 +1690,7 @@
   {
     "name": "Elm",
     "slug": "elm",
+    "url": "https://github.com/exercism/v3/tree/master/languages/elm",
     "exercises": {
       "concept": []
     }
@@ -1690,6 +1698,7 @@
   {
     "name": "Emacs Lisp",
     "slug": "emacs-lisp",
+    "url": "https://github.com/exercism/v3/tree/master/languages/emacs-lisp",
     "exercises": {
       "concept": []
     }
@@ -1697,6 +1706,7 @@
   {
     "name": "Erlang",
     "slug": "erlang",
+    "url": "https://github.com/exercism/v3/tree/master/languages/erlang",
     "exercises": {
       "concept": []
     }
@@ -1704,6 +1714,7 @@
   {
     "name": "F#",
     "slug": "fsharp",
+    "url": "https://github.com/exercism/v3/tree/master/languages/fsharp",
     "exercises": {
       "concept": [
         {
@@ -1951,6 +1962,7 @@
   {
     "name": "Go",
     "slug": "go",
+    "url": "https://github.com/exercism/v3/tree/master/languages/go",
     "exercises": {
       "concept": [
         {
@@ -2150,6 +2162,7 @@
   {
     "name": "Haskell",
     "slug": "haskell",
+    "url": "https://github.com/exercism/v3/tree/master/languages/haskell",
     "exercises": {
       "concept": []
     }
@@ -2157,6 +2170,7 @@
   {
     "name": "J",
     "slug": "j",
+    "url": "https://github.com/exercism/v3/tree/master/languages/j",
     "exercises": {
       "concept": []
     }
@@ -2164,6 +2178,7 @@
   {
     "name": "Java",
     "slug": "java",
+    "url": "https://github.com/exercism/v3/tree/master/languages/java",
     "exercises": {
       "concept": [
         {
@@ -2199,6 +2214,7 @@
   {
     "name": "JavaScript",
     "slug": "javascript",
+    "url": "https://github.com/exercism/v3/tree/master/languages/javascript",
     "exercises": {
       "concept": [
         {
@@ -2394,6 +2410,7 @@
   {
     "name": "Julia",
     "slug": "julia",
+    "url": "https://github.com/exercism/v3/tree/master/languages/julia",
     "exercises": {
       "concept": [
         {
@@ -2521,6 +2538,7 @@
   {
     "name": "Kotlin",
     "slug": "kotlin",
+    "url": "https://github.com/exercism/v3/tree/master/languages/kotlin",
     "exercises": {
       "concept": []
     }
@@ -2528,6 +2546,7 @@
   {
     "name": "Nim",
     "slug": "nim",
+    "url": "https://github.com/exercism/v3/tree/master/languages/nim",
     "exercises": {
       "concept": []
     }
@@ -2535,6 +2554,7 @@
   {
     "name": "PureScript",
     "slug": "purescript",
+    "url": "https://github.com/exercism/v3/tree/master/languages/purescript",
     "exercises": {
       "concept": [
         {
@@ -2554,6 +2574,7 @@
   {
     "name": "Python",
     "slug": "python",
+    "url": "https://github.com/exercism/v3/tree/master/languages/python",
     "exercises": {
       "concept": [
         {
@@ -2618,6 +2639,7 @@
   {
     "name": "Ruby",
     "slug": "ruby",
+    "url": "https://github.com/exercism/v3/tree/master/languages/ruby",
     "exercises": {
       "concept": [
         {
@@ -2725,6 +2747,7 @@
   {
     "name": "Rust",
     "slug": "rust",
+    "url": "https://github.com/exercism/v3/tree/master/languages/rust",
     "exercises": {
       "concept": [
         {
@@ -2849,6 +2872,7 @@
   {
     "name": "Scala",
     "slug": "scala",
+    "url": "https://github.com/exercism/v3/tree/master/languages/scala",
     "exercises": {
       "concept": []
     }
@@ -2856,6 +2880,7 @@
   {
     "name": "Swift",
     "slug": "swift",
+    "url": "https://github.com/exercism/v3/tree/master/languages/swift",
     "exercises": {
       "concept": [
         {
@@ -2971,6 +2996,7 @@
   {
     "name": "x86-64-assembly",
     "slug": "x86-64-assembly",
+    "url": "https://github.com/exercism/v3/tree/master/languages/x86-64-assembly",
     "exercises": {
       "concept": [
         {
