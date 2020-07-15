@@ -7,6 +7,7 @@ The goal of this exercise is to teach the student the basics of the Swift collec
 - Inserting key/value pairs
 - Retrieving values
 - Iterating over a dictionary
+- Sorting a dictionary
 
 ## Out of scope
 
@@ -14,11 +15,11 @@ The goal of this exercise is to teach the student the basics of the Swift collec
 
 ## Concepts
 
-- `dictionaries`: Know how to initialize empty dictionaries, know how to initialize dictionaries from dictionary literals, know how to insert key/value pairs, know how to retrieve values, know how to iterate over a dictionary
+- `dictionaries`: Know how to initialize empty dictionaries, know how to initialize dictionaries from dictionary literals, know how to insert key/value pairs, know how to retrieve values, know how to iterate over a dictionary, know how to sort a dictionary
 
 ## Prerequisites
 
-- `arrays`
+- `functions`
 - `optionals`
 
 ## Representer

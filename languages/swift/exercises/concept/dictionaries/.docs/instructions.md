@@ -4,7 +4,7 @@ You have 7 functions to implement, all related to returning and manipulating a d
 
 ## 1. Define a new high score dictionary
 
-Create a function that returns a new high score dictionary which uses values of type `String` for the keys and values of type `Int` as the values.
+Create a function `newScoreBoard()` that takes no parameters and returns a new high score dictionary which uses values of type `String` for the keys and values of type `Int` as the values.
 
 ## 2. Add players to the high score dictionary
 
