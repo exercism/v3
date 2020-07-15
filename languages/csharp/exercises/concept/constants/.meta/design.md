@@ -12,13 +12,9 @@
 
 ## Concepts
 
-This Concepts Exercise's Concepts are:
+- `constants`: know how to define `const` values; know how to define `readonly` modifier know when to use `const` or `readonly`.
 
-- `constants`: know how to define `const` values; know how to define `readonly` values; know when to use `const` or `readonly`.
-
-## Prequisites
-
-This Concept Exercise's prerequisites Concepts are:
+## Prerequisites
 
 - `classes`: know how to define fields.
 - `basics`: know how to define variables.

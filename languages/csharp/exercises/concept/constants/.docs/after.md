@@ -11,7 +11,7 @@ The compiler will guide you as to what expressions can be evaluated at compile-t
 
 There is some discussion on the web about the performance advantages of `const` over variables. In the case of a comparison with instance non-const fields there could be a noticeable saving in memory but compared to static variables that is beyond trivial. Any consideration of CPU performance is likely to be seen by your colleagues as [premature optimization][premature-optimization].
 
-A more compelling reason to use `const` is that it enhances a maintainer's ability to reason about the code. Glimpsing that a field is marked as `const` or `readonly` or that a property has no setter allows the maintainer largely to dismiss it from their analysis. It is unlikely to be the seat of bugs. It is unlikely to to pose difficulties in a refactoring exercise. This [Stack Overflow comment][so-consts] addresses this.
+A more compelling reason to use `const` is that it enhances a maintainer's ability to reason about the code. Glimpsing that a field is marked as `const` or `readonly` or that a property has no setter allows the maintainer largely to dismiss it from their analysis. It is unlikely to be the seat of bugs. It is unlikely to pose difficulties in a refactoring exercise. This [Stack Overflow comment][so-consts] addresses this.
 
 #### readonly
 
@@ -29,7 +29,7 @@ public <constructor>(int num)
 
 Use of the `readonly` modifier is encouraged for the same reasons that apply to `const`. The practice of constraining fields in this way helps maintainers reason about the code.
 
-Note that adding the `readonly` modifier to a field only prevents the contents of the field from being changed. In the case of reference types it does not protect the fields or properties of that type. In particular, it does not pretect the contents of arrays.
+Note that adding the `readonly` modifier to a field only prevents the contents of the field from being changed. In the case of reference types it does not protect the fields or properties of that type. In particular, it does not protect the contents of arrays.
 
 ```csharp
 private readoly IList list = new List();
