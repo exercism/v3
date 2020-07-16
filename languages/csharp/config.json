@@ -109,6 +109,12 @@
         ]
       },
       {
+        "slug": "lists",
+        "uuid": "5c438d02-67a6-43b6-9e3c-8ba309c4ea32",
+        "concepts": ["generic-types", "lists"],
+        "prerequisites": ["arrays", "for-loops"]
+      },
+      {
         "slug": "method-overloading",
         "uuid": "3f728065-98d8-472a-a84c-290f05ab1e58",
         "concepts": [
