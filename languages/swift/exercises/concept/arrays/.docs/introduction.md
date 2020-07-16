@@ -1,4 +1,4 @@
-[Arrays][array] are one of Swift's three primary collection types. Arrays are ordered lists of elements where the elements can be of any type, however, all elements of any given list must have the same type.
+Arrays are one of Swift's three primary collection types. Arrays are ordered lists of elements where the elements can be of any type, however, all elements of any given list must have the same type.
 
 Arrays literals are written as a series of elements, each separated by commas, enclosed in square brackets. Empty arrays are just a pair of square brackets. Type names for arrays are written in one of two ways: `Array<T>` or `[T]` where `T` is the type of the elements in thee array. When creating an empty array, the type must be specified.
 
@@ -15,7 +15,7 @@ Trying to access elements at indices outside the valid range of indices will res
 
 ```swift
 evenInts[2]
-// returns 6
+// =>  6
 oddInts[0] = 27
 // oddInts is now [27, 3, 5, 7, 9, 11, 13]
 
@@ -45,5 +45,3 @@ for int in ints {
 // 5
 // 11
 ```
-
-[array]: https://developer.apple.com/documentation/swift/array

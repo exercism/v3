@@ -16,7 +16,7 @@ Trying to access elements at indices outside the valid range of indices will res
 ```swift
 guard !evenInts.isEmpty, !oddInts.isEmpty else { return }
 evenInts[2]
-// returns 6
+// => 6
 oddInts[0] = 27
 // oddInts is now [27, 3, 5, 7, 9, 11, 13]
 
