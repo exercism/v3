@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Xunit;
 
 public class ListsTests
@@ -21,7 +22,12 @@ public class ListsTests
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void AddLanguage()
     {
-        Assert.Equal(new string[] {"C#", "Clojure", "Elm", "Bash"},
+        var expected = new List<string>();
+        expected.Add("C#");
+        expected.Add("Clojure");
+        expected.Add("Elm");
+        expected.Add("Bash");
+        Assert.Equal(expected,
             Languages.AddLanguage(Languages.GetExistingLanguages(), "Bash"));
     }
 
@@ -47,7 +53,11 @@ public class ListsTests
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void ReverseList()
     {
-        Assert.Equal(new string[] {"Elm", "Clojure", "C#"},
+        var expected = new List<string>();
+        expected.Add("Elm");
+        expected.Add("Clojure");
+        expected.Add("C#");
+        Assert.Equal(expected,
             Languages.ReverseList(Languages.GetExistingLanguages()));
     }
 
@@ -84,15 +94,22 @@ public class ListsTests
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void RemoveLanguage_yes()
     {
+        var expected = new List<string>();
+        expected.Add("C#");
+        expected.Add("Elm");
         var languages = Languages.GetExistingLanguages();
-        Assert.Equal(new string[] {"C#", "Elm"}, Languages.RemoveLanguage(languages, "Clojure"));
+        Assert.Equal(expected, Languages.RemoveLanguage(languages, "Clojure"));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void RemoveLanguage_no()
     {
+        var expected = new List<string>();
+        expected.Add("C#");
+        expected.Add("Clojure");
+        expected.Add("Elm");
         var languages = Languages.GetExistingLanguages();
-        Assert.Equal(new string[] {"C#", "Clojure", "Elm"}, Languages.RemoveLanguage(languages, "English"));
+        Assert.Equal(expected, Languages.RemoveLanguage(languages, "English"));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]

@@ -28,3 +28,4 @@
 ## Prerequisites
 
 - `for-loops`: know how to use a `for-loop` to iterate over a collection.
+- `arrays`: contrast with dynamic nature of lists
