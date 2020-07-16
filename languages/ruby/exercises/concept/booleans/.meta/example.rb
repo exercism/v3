@@ -6,7 +6,7 @@ class RidePass
   end
 
   def valid?(pass)
-    !pass.nil? && pass != false
+    !!pass
   end
 
   def revoke(pass)
