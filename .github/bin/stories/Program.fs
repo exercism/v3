@@ -6,10 +6,16 @@ open System.Text.RegularExpressions
 open FSharp.Markdown
 open FSharp.Formatting.Common
 
+type ImplementationStatus =
+    | Unimplemented
+    | ImplementedWithoutInstructions
+    | ImplementedWithInstructions
+
 type Implementation =
     { Track: string
       Slug: string
-      Exercise: string }
+      Exercise: string
+      Status: ImplementationStatus }
     
 type Concept =
     { File: FileInfo option
@@ -38,6 +44,15 @@ module Parser =
         | LatexInlineMath(_, range) -> range
         | LatexDisplayMath(_, range) -> range
         | EmbedSpans(_, range) -> range
+        
+    let private parseImplementationStatus (languagesDirectory: DirectoryInfo) (track: string) (exercise: string): ImplementationStatus =
+        let exerciseDirectory = DirectoryInfo(Path.Combine(languagesDirectory.FullName, track, "exercises", "concept", exercise))
+        let instructionsFile = FileInfo(Path.Combine(languagesDirectory.FullName, track, "exercises", "concept", exercise, ".docs", "instructions.md"))
+        
+        match instructionsFile.Exists, exerciseDirectory.Exists with
+        | true, true  -> ImplementedWithInstructions
+        | false, true -> ImplementedWithoutInstructions
+        | _           -> Unimplemented
 
     let private originalMarkdownCode (markdownCode: string) (spans: MarkdownSpans): string =
         let ranges = List.choose range spans 
@@ -75,18 +90,24 @@ module Parser =
         let matched = Regex.Match(link, "languages/(.+?)/exercises/concept/(.+?)/")
         if matched.Success then Some (matched.Groups.[1].Value, matched.Groups.[2].Value)  else None 
 
-    let private parseImplementation (markdown: MarkdownDocument) (paragraphs: MarkdownParagraphs): Implementation option =
+    let private parseImplementation (languagesDirectory: DirectoryInfo) (markdown: MarkdownDocument) (paragraphs: MarkdownParagraphs): Implementation option =
+        let createImplementation track (slug, exercise) =
+            { Track = track
+              Slug = slug
+              Exercise = exercise
+              Status = parseImplementationStatus languagesDirectory slug exercise }
+        
         match paragraphs with
         | [Span(body = IndirectLink(body = [Literal(text=text)]; key = key)::_)] ->
             parseLink markdown key
             |> Option.bind parseSlugAndExercise
-            |> Option.map (fun (slug, exercise) -> { Track = text; Slug = slug; Exercise = exercise })
+            |> Option.map (createImplementation text)
         | [Span(body = [DirectLink(body = [Literal(text=text)]; link = link)])] ->
             parseSlugAndExercise link
-            |> Option.map (fun (slug, exercise) -> { Track = text; Slug = slug; Exercise = exercise })
+            |> Option.map (createImplementation text)
         | _ -> None
         
-    let private parseImplementations (markdown: MarkdownDocument): Implementation list option =
+    let private parseImplementations (languagesDirectory: DirectoryInfo) (markdown: MarkdownDocument): Implementation list option =
         let description pair =
             match pair with
             | Heading(size = 2; body = [Literal(text = "Implementations")]), ListBlock(items = items) -> Some items
@@ -95,7 +116,7 @@ module Parser =
         markdown.Paragraphs
         |> List.pairwise
         |> List.tryPick description
-        |> Option.map (List.choose (parseImplementation markdown))
+        |> Option.map (List.choose (parseImplementation languagesDirectory markdown))
         
     let private parseConcept: FileInfo -> Concept =
         let typesDirectory = DirectoryInfo(Path.Combine("reference", "types"))
@@ -119,11 +140,11 @@ module Parser =
             { File = conceptFile
               Name = concept }
 
-    let private parseStory (fileInfo: FileInfo): Story option =
+    let private parseStory (languagesDirectory: DirectoryInfo) (fileInfo: FileInfo): Story option =
         let markdownCode = File.ReadAllText(fileInfo.FullName)
         let markdown = Markdown.Parse(markdownCode)
 
-        match parseName markdown, parseDescription markdownCode markdown, parseImplementations markdown with
+        match parseName markdown, parseDescription markdownCode markdown, parseImplementations languagesDirectory markdown with
         | Some name, Some description, Some implementations ->
             { File = fileInfo
               Name = name
@@ -139,9 +160,9 @@ module Parser =
         |> Seq.filter isStoryFile
         |> Seq.toList
 
-    let parseStories (storiesDirectory: DirectoryInfo): Story list =
+    let parseStories (storiesDirectory: DirectoryInfo) (languagesDirectory: DirectoryInfo): Story list =
         storyFiles storiesDirectory
-        |> List.choose parseStory
+        |> List.choose (parseStory languagesDirectory)
     
 module Markdown =
     
@@ -178,7 +199,10 @@ module Markdown =
         let implementationToMarkdownStory (implementation: Implementation) =
             let name = sprintf "[%s](%s)" story.Name story.File.Name
             let track = sprintf "[%s](../../languages/%s/README.md)" implementation.Track implementation.Slug
-            let exercise = sprintf "[%s](../../languages/%s/exercises/concept/%s/.docs/instructions.md)" implementation.Exercise implementation.Slug implementation.Exercise
+            let exercise =
+                match implementation.Status with
+                | ImplementedWithInstructions -> sprintf "[%s](../../languages/%s/exercises/concept/%s/.docs/instructions.md)" implementation.Exercise implementation.Slug implementation.Exercise
+                | _ -> implementation.Exercise
             
             { Name = name; Track = track; Exercise = exercise }
         
@@ -269,10 +293,16 @@ module Json =
           Implementations: JsonImplementation list }
         
     let private implementationToJsonImplementation (implementation: Implementation) : JsonImplementation =
+        let url =
+            match implementation.Status with
+            | ImplementedWithInstructions -> sprintf "https://github.com/exercism/v3/blob/master/languages/%s/exercises/concept/%s/.docs/instructions.md" implementation.Slug implementation.Exercise
+            | ImplementedWithoutInstructions -> sprintf "https://github.com/exercism/v3/blob/master/languages/%s/exercises/concept/%s" implementation.Slug implementation.Exercise
+            | _ -> null
+        
         { Track = implementation.Track
           Slug = implementation.Slug
           Exercise = implementation.Exercise
-          Url = sprintf "https://github.com/exercism/v3/blob/master/languages/%s/exercises/concept/%s/.docs/instructions.md" implementation.Slug implementation.Exercise }
+          Url = url }
 
     let private conceptToJsonConcept (concept: Concept): JsonConcept =
         { Name = concept.Name
@@ -291,7 +321,10 @@ module Json =
           Implementations = List.map implementationToJsonImplementation story.Implementations }
     
     let private renderToJson (stories: Story list): string =
-        let jsonStories = List.map storyToJsonStory stories
+        let jsonStories =
+            stories
+            |> List.map storyToJsonStory
+            |> List.sortBy (fun story -> story.Name)
         
         let options = JsonSerializerOptions()
         options.WriteIndented <- true
@@ -306,7 +339,8 @@ module Json =
 [<EntryPoint>]
 let main _ =
     let storiesDirectory = DirectoryInfo(Path.Combine("reference", "stories"))
-    let stories = Parser.parseStories storiesDirectory
+    let languagesDirectory = DirectoryInfo("languages")
+    let stories = Parser.parseStories storiesDirectory languagesDirectory
     
     Markdown.writeStories storiesDirectory stories
     Json.writeStories storiesDirectory stories

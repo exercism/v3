@@ -4,7 +4,7 @@
 
 ## 1. Define the expected oven time in minutes
 
-You need to [define a constant](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID310).
+- You need to [define a constant](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID310).
 
 ## 2. Calculate the remaining oven time in minutes
 
