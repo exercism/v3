@@ -23,7 +23,7 @@ threeOfEachThree(deck)
 
 ## 3. - Find two cards from the exact middle of the deck
 
-Elyse will take a deck and make every card disappear except the middle two cards. This trick is always performed with exactly 10 cards.
+Elyse will take a deck of ten cards, and make every card disappear except the middle two cards. 
 
 ```javascript
 const deck = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
