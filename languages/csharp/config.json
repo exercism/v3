@@ -111,7 +111,7 @@
       {
         "slug": "lists",
         "uuid": "5c438d02-67a6-43b6-9e3c-8ba309c4ea32",
-        "concepts": ["generic-types","lists"],
+        "concepts": ["generic-types", "lists"],
         "prerequisites": ["arrays", "for-loops"]
       },
       {
