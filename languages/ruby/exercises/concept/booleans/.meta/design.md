@@ -8,7 +8,7 @@ The goal of this exercise is to teach the student the basics of the Concept of "
 - Know that everything except `false` and `nil` is truthy
 - Know that `false` is a Ruby object used to represent logical `false`
 - Know that `false` is falsey
-- Know that `nil` is a Ruby object used to represent an "empty" or "default" value
+- Know that `nil` is a Ruby object used to represent "nothingness"
 - Know that `nil` is falsey
 
 ## Out of scope

@@ -9,7 +9,7 @@ class RidePass
     !pass.nil? && pass != false
   end
 
-  def revoke_pass(pass)
+  def revoke(pass)
     false unless pass.nil?
   end
 end

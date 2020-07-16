@@ -7,10 +7,10 @@ true_variable = true
 false_variable = false
 
 true && false
-# => false is returned as a result of the logical method
+# => false
 
 1 < 2
-# => true is returned as a result of the comparison method
+# => true
 ```
 
 [Nil][nil-dictionary] is an English word meaning "nothing" or "zero". In Ruby, `nil` is a value used to express the _absence_ of an object.
@@ -24,13 +24,21 @@ In other programming languages, `null` or `none` values may play a similar role.
 
 ## _Truthy_ and _falsey_
 
-In Ruby, all objects evaluate to a _truthy_ or _falsey_ value when they are encountered in a boolean context (like an `if` expression). All data is considered _truthy_ **except** for `false` and `nil`.
+When evaluating objects in `if` statements or other boolean contexts, all objects evaluate as _truthy_ **except** for `false` and `nil`.
 
 ## Control flow
 
-_Truthy_ and _falsey_ values are useful in the context of control flow. Like in procedural languages, Ruby has an _if...else_ construct, but it is often more common to use _if_ as a modifier to control the evaluation of an expression.
+_Truthy_ and _falsey_ evaluations are useful in the context of control flow. Like in procedural languages, Ruby has an `if`...`else` construct, but it may be more common to use `if` as a "guarding" statement to modify the evaluation of an expression.
 
 ```ruby
+def falsey
+  nil || false
+end
+
+def truthy
+  not falsey
+end
+
 if truthy
   # this block is evaluated
 end
