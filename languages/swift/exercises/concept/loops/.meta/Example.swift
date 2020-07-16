@@ -4,7 +4,7 @@ func hashIDs(_ ids: [Int]) -> [(Int, Int)] {
   var result = [(Int, Int)]()
   for id in ids {
     guard 1..<m ~= id else { continue }
-    result.append(($0, $0 * p % m))
+    result.append((id, id * p % m))
   }
   return result
 }
@@ -20,7 +20,7 @@ func digitalSum(_ number: Int) -> Int {
   return sum
 }
 
-func rankingLevel(hashedID id: Int) -> Int {
+func rankingLevel(_ id: Int) -> Int {
   guard id > 0 else { return 0 }
   guard id > 1 else { return 1 }
   var current = id

@@ -3,9 +3,8 @@ import XCTest
 @testable import loops
 
 final class loopsTests: XCTestCase {
-  let runAll = true
-  //    Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"])
-  //    ?? false
+  let runAll =
+    Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"]) ?? false
 
   let checkTest: ((Int, Int), (Int, Int)) -> Bool = { (expected, got) in
     expected.0 == got.0 && expected.1 == got.1
@@ -22,6 +21,13 @@ final class loopsTests: XCTestCase {
   func testHashIDsEmpty() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     XCTAssertTrue(hashIDs([]).isEmpty)
+  }
+
+  func testDigitalSum() throws {
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
+    let input = [1846, 8581, -554, 3381, 3460, 3132, 1552, 0, 6863, 1197]
+    let expected = [19, 22, 0, 15, 13, 9, 13, 0, 23, 18]
+    XCTAssertEqual(input.map(digitalSum), expected)
   }
 
   func testRankingLevel() throws {
@@ -48,6 +54,7 @@ final class loopsTests: XCTestCase {
   static var allTests = [
     ("testHashIDs", testHashIDs),
     ("testHashIDsEmpty", testHashIDsEmpty),
+    ("testDigitalSum", testDigitalSum),
     ("testRankingLevel", testRankingLevel),
     ("testRankIDs", testRankIDs),
     ("testRankIDsEmpty", testRankIDsEmpty),

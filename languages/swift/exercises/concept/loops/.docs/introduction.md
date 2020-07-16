@@ -92,6 +92,6 @@ for i in 1...3 {
 
 ## Control transfer
 
-Sometimes it is necessary to skip to the next iteration of a loop early, without completing the rest of the statements in the currunt iteration of the loop. The `continue` keyword can be used for this. When `continue` is executed, the loop jump to the next check to see if the next itertion of the loop can be run, i.e. the `while` in while and repeat-while loops or the check if there's another element in the sequence in for-in loops.
+Sometimes it is necessary to skip to the next iteration of a loop early, without completing the rest of the statements in the current iteration of the loop. The `continue` keyword can be used for this. When `continue` is executed, the loop jump to the next check to see if the next iteration of the loop can be run, i.e. the `while` in while and repeat-while loops or the check if there's another element in the sequence in for-in loops.
 
-Similarly, the `break` keyword can be used to exit a loop early, without execution the rest of the current iteration. When a `break` is executed, the loop is exited and execution picks up with the first line of code following the loop.
+Similarly, the `break` keyword can be used to exit a loop early, without executing the rest of the current iteration. When a `break` is executed, the loop is exited and execution picks up with the first line of code following the loop.

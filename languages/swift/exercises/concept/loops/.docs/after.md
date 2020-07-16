@@ -1,127 +1,21 @@
 ## Loops
 
-There are three primary types of loop constructs in Swift: while loops, repeat-while loops, and for-in loops.
+Excellent work! Even though loops are not as commonly seen in Swift as they are in other programming languages, they are still foundational blocks of programming, and it is important to understand them well.
 
-### while loops
+## Key Takeaways from this Exercise
 
-[While loops][while-loops] in Swift have the following structure:
-
-```swift
-while boolean-expression {
-  loop-body
-}
-```
-
-The loops begin by first evaluating a Boolean expression. If the expression evaluates to `false`, then the body of the loop is skipped and execution begins on the first line following the loop. If the condition evaluates to `true`, then the body of the loop is executed, after which the Boolean expression is evaluated again, repeating this way until the Boolean expression evaluates to false.
-
-```swift
-var count = 3
-while count > 0 {
-  print("\(count)…")
-  count -= 1
-}
-print("Liftoff!")
-
-// prints:
-// 3…
-// 2…
-// 1…
-// Liftoff!
-```
-
-### repeat-while loops
-
-[Repeat-while loops][repeat-loops] are similar to while loops, however, these loops differ in that the Boolean expression appears, and is evaluated, _after_ the body of the loop is executed. As a result, these loops always execute at least once.
-
-```swift
-repeat {
-  print("This runs at least once")
-} while false
-print("Loop done")
-
-// prints:
-// This runs at least once
-// Loop done
-```
-
-### for-in loops
-
-[For-in loops][for-in-loops] are used to iterate over a sequence of values, taking each element in turn, binding it to a variable or constant name of the developer's choosing, then executes a block of code that may refer to the element. When every element of the sequence has been iterated over, the loop exits and execution begins with the first line following the body of the loop.
-
-```swift
-let numbers = [3, 10, 7, 11]
-
-for number in numbers {
-  print("\(number) / 2 = \(number / 2)")
-}
-print("Done with numbers")
-
-// prints:
-// 3 / 2 = 1
-// 10 / 2 = 5
-// 7 / 2 = 3
-// 11 / 2 = 5
-// Done with numbers
-
-let word = "Supercalifragilisticexpialidocious"
-
-for char in word {
-  if "aeiou".contains(char) {
-    print(char, terminator: "")
+- There are three primary types of loop constructs in Swift: while loops, repeat-while loops, and for-in loops.
+- [While loops][while-loops] begin by first evaluating a Boolean expression, then executes the body of the loop if the expression evaluates to `true` before going back to evaluate the boolean expression.
+- [Repeat-while loops][repeat-loops] are similar to while loops, however, these loops differ in that the Boolean expression appears, and is evaluated, _after_ the body of the loop is executed. As a result, these loops always execute at least once.
+- For-in loops][for-in-loops] are used to iterate over a sequence of values, taking each element in turn, binding it to a variable or constant name of the developer's choosing, then executes a block of code that may refer to the element. When every element of the sequence has been iterated over, the loop exits and execution begins with the first line following the body of the loop.
+- If one needs to mutate the current element of the iteration, it can be declared as a variable in the for-in loop: `for var x in xs { … }`.
+- If one wants to execute a loop a specified number of times, a for-in loop can be used with a range supplied for the sequence to iterate over: `for i in 1...3 { … }`.
+- If the body of the loop doesn't refer to the current element of the sequence, an underscore (`_`) can be supplied for the name: `for _ in 1...3 { … }`.
   }
-}
-print(" - those are all the vowels")
 
-// prints:
-// ueaiaiiieiaioiou - those are all the vowels
+## Control Flow
 
-```
-
-If one needs to mutate the current element of the iteration, it can be declared as a variable in the for-in loop:
-
-```swift
-let numbers = [3, 10, 7, 11]
-for var number in numbers {
-  number *= 2
-  print("Doubled number: \(number)")
-}
-
-// prints:
-// Doubled number: 6
-// Doubled number: 20
-// Doubled number: 7
-// Doubled number: 11
-```
-
-If one wants to execute a loop a specified number of times, a for-in loop can be used with a range supplied for the sequence to iterate over:
-
-```swift
-for i in 1...3 {
-  print("i: \(i)")
-}
-
-// prints:
-// i: 1
-// i: 2
-// i: 3
-```
-
-If the body of the loop doesn't refer to the current element of the sequence, an underscore (`_`) can be supplied for the name:
-
-```swift
-for _ in 1...3 {
-  print("Hello")
-}
-
-// prints:
-// Hello
-// Hello
-// Hello
-```
-
-## Control transfer
-
-The normal control flow of loops in Swift can be altered using [Swift's control transfer keywords][control-transfer]. One of these keywords, `return` has been seen before in the [basics][basics-concept] concept exercise. With the use of `return`, if the loop is inside a function, the function wil exit at that point, returning whatever value is specified, just as it would at any other point in a function. Two more control transfer keywords that are often used with loops are `continue` and `break`.
+The normal control flow of loops in Swift can be altered using [Swift's control transfer keywords][control-transfer]. One of these keywords, `return` has been seen before in the [basics][basics-concept] concept exercise. With the use of `return`, if the loop is inside a function, the function will exit at that point, returning whatever value is specified, just as it would at any other point in a function. Two more control transfer keywords that are often used with loops are `continue` and `break`.
 
 ### continue
 
