@@ -43,7 +43,7 @@ sandwichTrick(deck)
 
 ## 5. - Every card that isn't 2 disappears
 
-Elyse's favorite number today is 2. In this trick every card that isn't a 2 will disappear from the eck.
+Elyse's favorite number today is 2. In this trick every card that isn't a 2 will disappear from the deck.
 
 ```javascript
 const deck = [1, 2, 3, 4, 10, 2]
