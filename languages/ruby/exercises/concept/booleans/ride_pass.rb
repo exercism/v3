@@ -1,15 +1,13 @@
 class RidePass
-  MINIMUM_HEIGHT = 120
-
   def issue(height)
-    rand(1000) if height > MINIMUM_HEIGHT
+    raise NotImplementedError, 'Please implement then #issue method'
   end
 
   def valid?(pass)
-    !pass.nil? && pass != false
+    raise NotImplementedError, 'Please implement the #valid? method'
   end
 
-  def revoke_pass(pass)
-    false unless pass.nil?
+  def revoke(pass)
+    raise NotImplementedError, 'Please implement the #revoke method'
   end
 end

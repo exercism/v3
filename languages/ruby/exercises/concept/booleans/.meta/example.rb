@@ -1,8 +1,8 @@
 class RidePass
-  MINIMUM_HEIGHT = 120
+  MINIMUM_HEIGHT = 106
 
   def issue(height)
-    rand(100) if height > MINIMUM_HEIGHT
+    rand(100) if height >= MINIMUM_HEIGHT
   end
 
   def valid?(pass)

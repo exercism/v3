@@ -2,12 +2,16 @@ require 'minitest/autorun'
 require_relative 'ride_pass'
 
 class NameBadgeTest < Minitest::Test
+  def test_minimum_height_constant
+    assert_equal 106, RidePass::MINIMUM_HEIGHT
+  end
+
   def test_pass_number_issued_for_acceptable_height
-    assert RidePass.new.issue(125)
+    assert RidePass.new.issue(110)
   end
 
   def test_pass_not_issued_for_unacceptable_height
-    refute RidePass.new.issue(115)
+    refute RidePass.new.issue(105)
   end
 
   def test_unissued_pass_is_nil_as_does_not_exist
@@ -29,12 +33,12 @@ class NameBadgeTest < Minitest::Test
   def test_issued_then_revoked_pass_is_false
     issuer = RidePass.new
     pass = issuer.issue(125)
-    assert_equal false, issuer.revoke_pass(pass)
+    assert_equal false, issuer.revoke(pass)
   end
 
   def test_unissued_then_revoked_pass_is_nil
     issuer = RidePass.new
     pass = issuer.issue(125)
-    assert_equal false, issuer.revoke_pass(pass)
+    assert_equal false, issuer.revoke(pass)
   end
 end
