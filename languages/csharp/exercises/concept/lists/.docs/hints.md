@@ -3,8 +3,6 @@
 - [List documentation][lists-docs]: reference documentation for `List<T>`.
 - [Lists tutorial][lists-tutorial]: basic tutorial on how to work with lists.
 
-You have nine tasks, which will all involve dealing with lists.
-
 ## 1. Create a new list
 
 - Generic collections are instantiated like any others with the `new` operator. Remember to substitute any reference to the generic parameter, `T` with the type of the items in your collection.

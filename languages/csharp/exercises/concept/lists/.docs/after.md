@@ -1,10 +1,10 @@
 Lists in C# are collections of primitive values or instances of structs or classes. They are implemented in the base class library as [`List<T>`][lists-docs] where `T` is the type of the item in the list. The API exposes a rich set of methods for creating and manipulating lists.
 
 ```csharp
-var lists = new List<string>();
-var listi = new List<int>();
-var listr = new List<Random>();
-var listb = new List<BigInteger>();
+var listOfStrings = new List<string>();
+var listOfIntegers = new List<int>();
+var listOfRandoms = new List<Random>();
+var listOfBigIntegers = new List<BigInteger>();
 ```
 
 A collection definition typically includes a place holder in angle brackets, often `T` by convention. This allows the collection user to specify what type of items to store in the collection.

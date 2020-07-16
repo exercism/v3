@@ -11,7 +11,11 @@ public class ListsTests
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void ExistingList()
     {
-        Assert.Equal(new string[] {"C#", "Clojure", "Elm"}, Languages.GetExistingLanguages());
+        var expected = new List<string>();
+        expected.Add("C#");
+        expected.Add("Clojure");
+        expected.Add("Elm");
+        Assert.Equal(expected, Languages.GetExistingLanguages());
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
