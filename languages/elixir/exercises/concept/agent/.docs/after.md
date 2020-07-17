@@ -1,4 +1,4 @@
-While spawning a process is easy, managing its state and behavior can become very complicated. The `Agent` module is an abstraction to facilitate this process to use an elixir process to manage a shared state.
+While spawning a process is easy, managing its state and behavior can become very complicated. The `Agent` module is an abstraction to facilitate managing a shared state in an Elixir process.
 
 When using `Agent` module functions it's customary to encapsulate the agent-related functions in a single module.
 
@@ -19,7 +19,7 @@ defmodule Counter do
 end
 ```
 
-The choice to use the `Agent` module, or to use multiple processes at all, depends on the relationship to be modelled with the data. _Agent processes_ are useful when a shared state must be used by multiple processes.
+The choice to use the `Agent` module, or to use multiple processes at all, depends on the relationship to be modeled with the data. _Agent processes_ are useful when a shared state must be used by multiple processes.
 
 It is often the better choice to avoid using a separate process and use an in-process variable to hold the state in a function. Care should also be taken from blindly treating them as a global variable, as they may be manipulated by other processes, creating race conditions, or untraceable errors.
 

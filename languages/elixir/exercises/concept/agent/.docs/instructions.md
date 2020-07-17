@@ -55,7 +55,7 @@ CommunityGarden.list_registrations(pid)
 
 ## 6. Get a registered plot
 
-Implement the `CommunityGarden.get_registration/2` function. It should receive the `pid` and `id` of the plot to be released. It should return the plot if it is registered, and `:not_found` if it is unregistered.
+Implement the `CommunityGarden.get_registration/2` function. It should receive the `pid` and `id` of the plot to be checked. It should return the plot if it is registered, and `:not_found` if it is unregistered.
 
 ```elixir
 CommunityGarden.get_registration(pid, 1)

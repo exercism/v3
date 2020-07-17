@@ -21,4 +21,5 @@ defmodule CommunityGarden do
 
   def get_registration(pid, plot_id) do
     raise "Please implement the get_registration/2 function"
+  end
 end
