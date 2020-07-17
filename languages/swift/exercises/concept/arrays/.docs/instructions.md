@@ -35,7 +35,7 @@ insert(newCard, atTopOf: [5, 9, 7, 1])
 
 ## 4. Remove a card from the stack
 
-Implement the function `removeCard(at:from:)` that returns a copy of the stack which has had the card at position `index` removed.  If the given `index` is not a valid index in the stack, the original stack should be returned, unchanged.
+Implement the function `removeCard(at:from:)` that returns a copy of the stack which has had the card at position `index` removed. If the given `index` is not a valid index in the stack, the original stack should be returned, unchanged.
 
 ```swift
 let index = 2
@@ -64,7 +64,7 @@ insert(newCard, atBottomOf: [5, 9, 7, 1])
 
 ## 7. Remove a card from the bottom of the stack
 
-Implement the function `removeBottomCard(_:)` that returns a copy of the stack which has had the card at the bottom of the stack removed.  If the given stack is empty, the original stack should be returned, unchanged.
+Implement the function `removeBottomCard(_:)` that returns a copy of the stack which has had the card at the bottom of the stack removed. If the given stack is empty, the original stack should be returned, unchanged.
 
 ```swift
 removeBottomCard([8, 5, 9, 7, 1])
