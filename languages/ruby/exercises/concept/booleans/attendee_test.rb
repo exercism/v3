@@ -29,7 +29,7 @@ class AttendeeTest < Minitest::Test
     assert_equal pass_id, attendee.pass_id
   end
 
-  def test_has_pass_after_revoked
+  def test_pass_after_revoked
     height = 100
     attendee = Attendee.new(height)
     pass_id = 1
@@ -41,20 +41,20 @@ class AttendeeTest < Minitest::Test
   # New tests for `booleans` exercise
 
   def test_new_instance_doesnt_have_pass
-    refute Attendee.new(100).has_pass?
+    refute Attendee.new(100).pass?
   end
 
-  def test_when_issued_has_pass
+  def test_when_issued_pass
     attendee = Attendee.new(100)
     attendee.issue_pass!(1)
-    assert attendee.has_pass?
+    assert attendee.pass?
   end
 
   def test_when_revoked_doesnt_have_pass
     attendee = Attendee.new(100)
     attendee.issue_pass!(1)
     attendee.revoke_pass!
-    refute attendee.has_pass?
+    refute attendee.pass?
   end
 
   def test_fits_ride_exactly
@@ -73,7 +73,7 @@ class AttendeeTest < Minitest::Test
     refute Attendee.new(100).allowed_to_ride?(100)
   end
 
-  def test_fits_ride_and_has_pass
+  def test_fits_ride_and_pass
     attendee = Attendee.new(100)
     attendee.issue_pass!(1)
     assert attendee.allowed_to_ride?(100)

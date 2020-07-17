@@ -15,7 +15,7 @@ class Attendee
 
   # Do not edit above methods, add your own methods below.
 
-  def has_pass?
+  def pass?
     !pass_id.nil?
   end
 

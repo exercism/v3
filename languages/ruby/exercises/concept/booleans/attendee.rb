@@ -1,14 +1,8 @@
 class Attendee
+  attr_reader :height, :pass_id
+
   def initialize(height)
     @height = height
-  end
-
-  def height
-    @height
-  end
-
-  def pass_id
-    @pass_id
   end
 
   def issue_pass!(pass_id)
@@ -21,7 +15,7 @@ class Attendee
 
   # Do not edit above methods, add your own methods below.
 
-  def has_pass?
+  def pass?
     raise NotImplementedError, 'Please implement the has_pass? method'
   end
 
