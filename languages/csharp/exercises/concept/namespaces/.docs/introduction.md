@@ -16,7 +16,7 @@ Types enclosed in namespaces are referred to outside the namespace by prefixing 
 ```csharp
 namespace MySpace
 {
-    public MyClass {}
+    public class MyClass {}
 
     new MyClass();
 }
@@ -31,4 +31,4 @@ namespace OtherSpace
 }
 ```
 
-You can alias a namespace with the syntax `using My = MySpace;` and then use the alias anywhere that the namespace could be used.
+You can alias a namespace with the syntax `using MyAlias = MySpace;` and then use the alias anywhere that the namespace could be used.
