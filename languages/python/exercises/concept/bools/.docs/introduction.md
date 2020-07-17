@@ -17,10 +17,3 @@ false_variable = False or False
 true_variable = not False
 false_variable = not True
 ```
-
-When writing a function that returns a boolean value, there isn't a specific naming convention.
-
-```python
-def either_true(a, b):
-    a or b
-```
