@@ -1,6 +1,8 @@
 Booleans in Java are represented by the `boolean` type, which values can be either `true` or `false`.
 
-C# supports three [boolean operators][operators]: `!` (NOT), `&&` (AND), and `||` (OR). The `&&` and `||` operators use _short-circuit evaluation_, which means that the right-hand side of the operator is only evaluated when needed.
+Java supports three [boolean operators][operators]: `!` (NOT), `&&` (AND), and `||` (OR). The `&&` and `||` operators use _short-circuit evaluation_, which means that the right-hand side of the operator is only evaluated when needed.
+
+These are also known as conditional or logical operators.  `!` is sometimes classified as a bitwise operation in the documentation but it has the conventional _NOT_ semantics.
 
 ```csharp
 true || false // => true
@@ -14,5 +16,5 @@ The three boolean operators each have a different [_operator precedence_][preced
 !(true && false) // => true
 ```
 
-[operators]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators
-[precedence]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators#operator-precedence
+[operators]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html
+[precedence]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html

@@ -7,4 +7,4 @@
 
 - The [boolean operators][operators] can also be applied to boolean parameters.
 
-[operators]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators
+[operators]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html
