@@ -1,4 +1,4 @@
-Namespaces are a way to avoid name clashes and are generally present in all but the most trivial code base.
+Namespaces are a way to group related code and to avoid name clashes and are generally present in all but the most trivial code base.
 
 The syntax is as follows:
 
@@ -18,16 +18,34 @@ namespace MySpace
 {
     public class MyClass {}
 
-    new MyClass();
+    public class Foo
+    {
+        public void Bar()
+        {
+            var baz = new MyClass();
+        }
+    }
 }
 
-new MySpace.MyClass();
+public class Qux
+{
+    public void Box()
+    {
+        var nux = new MySpace.MyClass();
+    }
+}
 
 namespace OtherSpace
 {
     using MySpace;
 
-    new MyClass();
+    public class Tix
+    {
+        public void Jeg()
+        {
+            var lor = new MyClass();
+        }
+    }
 }
 ```
 

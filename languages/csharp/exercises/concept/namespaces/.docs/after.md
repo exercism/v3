@@ -11,6 +11,17 @@ namespace MyNameSpace
 }
 ```
 
+Namespaces are a way to group related code and to avoid name clashes and are generally present in all but the most trivial code base.
+
+According to the [official documentation][namespaces] namespaces have two principal roles:
+
+- First, .NET uses namespaces to organize its many classes
+- Second, declaring your own namespaces can help you control the scope of class and method names in larger programming projects.
+
+Namespaces are used widely by the base class library (BCL) to organize its functionality
+
+#### References to namespaced types
+
 Types enclosed in namespaces are referred to outside the namespace by prefixing the type name with the dot syntax. Alternatively, and more usually, you can place a `using` directive at the top of the file (or within a namespace) and type can be used without the prefix. Within the same namespace there is no need to qualify type names.
 
 ```csharp
@@ -18,16 +29,22 @@ namespace MySpace
 {
     public MyClass {}
 
+...
     new MyClass();
+...
 }
 
+...
 new MySpace.MyClass();
+...
 
 namespace OtherSpace
 {
     using MySpace;
 
+...
     new MyClass();
+...
 }
 ```
 
