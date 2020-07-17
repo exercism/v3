@@ -14,7 +14,7 @@ getCard(at: index, from: [1, 2, 4, 1])
 
 ## 2. Change a card in the stack
 
-Implement the function `setCard(at:from:)` that returns a new stack that is a copy of the input stack but which has the card at position `index` changed to the the new card provided
+Implement the function `setCard(at:in:to)` that returns a new stack that is a copy of the input stack but which has the card at position `index` changed to the the new card provided. If the given `index` is not a valid index in the stack, the original stack should be returned, unchanged.
 
 ```swift
 let index = 2
@@ -35,7 +35,7 @@ insert(newCard, atTopOf: [5, 9, 7, 1])
 
 ## 4. Remove a card from the stack
 
-Implement the function `removeCard(at:from:)` that returns a copy of the stack which has had the card at position `index` removed.
+Implement the function `removeCard(at:from:)` that returns a copy of the stack which has had the card at position `index` removed.  If the given `index` is not a valid index in the stack, the original stack should be returned, unchanged.
 
 ```swift
 let index = 2
@@ -45,7 +45,7 @@ removeCard(at: index, from: [3, 2, 6, 4, 8])
 
 ## 5. Remove the top card from the stack
 
-Implement the function `removeTopCard(_:)` that returns a copy of the stack which has had the card at the top of the stack removed.
+Implement the function `removeTopCard(_:)` that returns a copy of the stack which has had the card at the top of the stack removed. If the given stack is empty, the original stack should be returned, unchanged.
 
 ```swift
 removeTopCard([3, 2, 6, 4, 8])
@@ -64,7 +64,7 @@ insert(newCard, atBottomOf: [5, 9, 7, 1])
 
 ## 7. Remove a card from the bottom of the stack
 
-Implement the function `removeBottomCard(_:)` that returns a copy of the stack which has had the card at the bottom of the stack removed.
+Implement the function `removeBottomCard(_:)` that returns a copy of the stack which has had the card at the bottom of the stack removed.  If the given stack is empty, the original stack should be returned, unchanged.
 
 ```swift
 removeBottomCard([8, 5, 9, 7, 1])

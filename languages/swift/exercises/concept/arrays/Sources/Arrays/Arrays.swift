@@ -7,7 +7,7 @@ func setCard(at index: Int, in stack: [Int], to newCard: Int) -> [Int] {
 }
 
 func insert(_ newCard: Int, atTopOf stack: [Int]) -> [Int] {
-  fatalError("Please implement the insert(_:atTopOf:) function)
+  fatalError("Please implement the insert(_:atTopOf:) function")
 }
 
 func removeCard(at index: Int, from stack: [Int]) -> [Int] {
