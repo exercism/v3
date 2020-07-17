@@ -42,7 +42,7 @@ Implement the (_static_) `QuestLogic.canSignalPrisoner()` method that takes two 
 ```csharp
 var archerIsAwake = false;
 var prisonerIsAwake = true;
-QuestLogic.CanSignalPrisoner(archerIsAwake, prisonerIsAwake);
+QuestLogic.canSignalPrisoner(archerIsAwake, prisonerIsAwake);
 // => true
 ```
 
