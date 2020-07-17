@@ -43,6 +43,6 @@ Item counts should not fall below `0`, if the amount of an item in the list exce
 Implement the `list_inventory()` function that takes an inventory and returns a list of tuples with the items and their amount:
 
 ```python
->>> list_inventory({"coal":7, "wood":11, "diamond":2, "iron":7})
+>>> list_inventory({"coal":7, "wood":11, "diamond":2, "iron":7, "silver": 0})
 [('coal', 7), ('diamond', 2), ('iron', 7), ('wood', 11)]
 ```
