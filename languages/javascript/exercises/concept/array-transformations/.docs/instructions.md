@@ -11,7 +11,7 @@ seeingDouble(deck)
 // => [2, 4, 6, 8, 20]
 ```
 
-## 2. - Create multiple copies of every 3 found in the deck
+## 2. Create multiple copies of every 3 found in the deck
 
 Elyse wants to triplicate every 3 found in the deck. If a deck started with a single 3, after the trick the deck would have three 3's in place of original.
 
@@ -21,9 +21,9 @@ threeOfEachThree(deck)
 // => [1, 3, 3, 3, 9, 3, 3, 3, 7]
 ```
 
-## 3. - Find two cards from the exact middle of the deck
+## 3. Find two cards from the exact middle of the deck
 
-Elyse will take a deck of ten cards, and make every card disappear except the middle two cards. 
+Elyse will take a deck of ten cards, and make every card disappear except the middle two cards.
 
 ```javascript
 const deck = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -31,7 +31,7 @@ middleTwo(deck)
 // => [5, 6]
 ```
 
-## 4. - The outside two cards will reappear in the middle of the deck
+## 4. The outside two cards will reappear in the middle of the deck
 
 Elyse wants to move the top and bottom cards of the deck into the middle, in reverse order.
 
@@ -41,7 +41,7 @@ sandwichTrick(deck)
 // => [2, 3, 10, 1, 5, 6]
 ```
 
-## 5. - Every card that isn't 2 disappears
+## 5. Every card that isn't 2 disappears
 
 Elyse's favorite number today is 2. In this trick every card that isn't a 2 will disappear from the deck.
 

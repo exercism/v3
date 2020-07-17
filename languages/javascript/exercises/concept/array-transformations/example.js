@@ -36,6 +36,9 @@ export function threeOfEachThree(deck) {
  * @returns {number[]} deck with only two middle cards
  */
 export function middleTwo(deck) {
+  // TODO: which implementation?
+  // const middle = Math.floor(deck.length / 2)
+  // return deck.slice(middle,  middle + 1)
   return deck.slice(4, 5)
 }
 
