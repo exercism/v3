@@ -22,12 +22,12 @@ The Rust track maintainers [have decided](https://github.com/exercism/v3/discuss
 ### the workflow
 
 1. Contributors start by opening a [draft pull request](https://github.blog/2019-02-14-introducing-draft-pull-requests/) with their changes
-   2. Our track follows broader exercism community here. Using the draft feature signals the work is ready for high-level review.
-2. One other maintainer shall review the contribution and provide feedback.
-3. The contributor shall address essential feedback as part of the pull request.
-4. The reviewer shall create a GitHub issue for tangential feedback not addressed in the original pull request.
-   6. The reviewer will lessen the contributor workload and preserve momentum by taking this step.
-5. The maintainer shall review the feedback and either:
-   8. approve
-   9. request additional changes. At this point, the process returns to step 3.
-6. Upon approval, the contributor shall merge their pull request.
+   1. Our track follows broader exercism community here. Using the draft feature signals the work is ready for high-level review.
+1. One other maintainer shall review the contribution and provide feedback.
+1. The contributor shall address essential feedback as part of the pull request.
+1. The reviewer shall create a GitHub issue for tangential feedback not addressed in the original pull request.
+   1. The reviewer will lessen the contributor workload and preserve momentum by taking this step.
+1. The maintainer shall review the feedback and either:
+   1. approve
+   1. request additional changes. At this point, the process returns to step 3.
+1. Upon approval, the contributor shall merge their pull request.
