@@ -1,29 +1,22 @@
 ## Goal
 
-The goal of this exercise is to teach the student the basics of the Concept of "nil" in Ruby.
+The goal of this exercise is to teach the student the basics of the Concept instance variables and "nil" in Ruby.
 
 ## Learning objectives
 
-- Know that `true` is a Ruby object used to represent logical `true`
-- Know that everything except `false` and `nil` is truthy
-- Know that `false` is a Ruby object used to represent logical `false`
-- Know that `false` is falsey
+- Know that objects can store state using instance variables
+- Know that instance variables should be treated as private and to use getter and setter methods
 - Know that `nil` is a Ruby object used to represent "nothingness"
-- Know that `nil` is falsey
+- Know that instance variables are `nil` before they are assigned otherwise
 
 ## Out of scope
 
-- None as it relates to this concept
-
-## Reference
-
-- `TrueClass`
-- `FalseClass`
-- `NilClass`
+- Boolean values (True/False)
+- Truthy/Falsey-ness
 
 ## Concepts
 
-- `boolean`
+- `instance-variables`
 - `nil`
 
 ## Prerequisites
@@ -31,10 +24,6 @@ The goal of this exercise is to teach the student the basics of the Concept of "
 - `basics`
 
 ## Resources
-
-### Hints
-
-- [Data Types in Ruby - True, False, and Nil Explained with Examples](https://www.freecodecamp.org/news/data-types-in-ruby-true-false-and-nil-explained-with-examples/)
 
 ### After
 

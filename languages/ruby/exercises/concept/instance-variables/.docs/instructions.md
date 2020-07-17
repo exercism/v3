@@ -1,40 +1,51 @@
 Working with an amusement park, you've been handed a specification to design a system to administer attendance and rides. You've been tasked with modeling the Attendee (person visiting the park).
 
-## 1. Set the height
+## 1. Make new attendees
 
-Implement the `MINIMUM_HEIGHT` constant of the RidePass class.
+Implement the `initialize` method of the `Attendee` class, it should take a height (in centimeters) and store it as an instance variable
 
 ```ruby
-RidePass::MINIMUM_HEIGHT
+Attendee.new(106)
+# => #<Attendee:0x000055c33e6c7e18 @height=106>
+```
+
+## 2. How tall is the attendee
+
+Implement the `height` getter of the `Attendee` class, it should return the instances height
+
+```ruby
+Attendee.new(106).height
 # => 106
 ```
 
-## 2. Issue the ride pass
+## 3. What is the ride pass's id?
 
-Implement the `#issue` method of the RidePass class. It should take the height as a positional argument.
+Not all attendees have bought a ride pass, but we need to know if they have a pass or not. Implement the `pass_id` getter for the `Attendee` class, it should return the instance's pass_id or `nil` if the Attendee doesn't have one.
 
 ```ruby
-issuer = RidePass.new
-issuer.issue(120)
-# => 534
+Attendee.new(106).pass_id
+# => nil
 ```
 
-## 3. Check if the ride pass is valid
+## 4. Allow people to buy a pass
 
-Implement the `#valid?` method of the RidePass class. It should take the ride pass value as a positional argument. If the ride pass value is not false or nil, it is valid.
+Implement `issue_pass!` to mutate the state of the instance, and set the pass id instance varaiable to the argument. It should return the pass id.
 
 ```ruby
-issuer = RidePass.new
-issuer.valid?(627)
-# => true
+attendee = Attendee.new(106)
+attendee.issue_pass!(42)
+attendee.pass_id
+# => 42
 ```
 
 ## 4. Revoke the pass
 
-Implement the `#revoke` method of the RidePass class. If the ride pass value exists, return false to indicate that it has been revoked.
+Some guests break the rules with unsafe behavior, so the park wants to be able to revoke passes. Implement `revoke_pass` to mutate the state of the instance, and set the pass id to `nil`
 
 ```ruby
-issuer = RidePass.new
-issuer.revoke(393)
-# => false
+attendee = Attendee.new(106)
+attendee.issue_pass!(42)
+attendee.revoke_pass!
+attendee.pass_id
+# => nil
 ```

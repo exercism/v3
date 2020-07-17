@@ -1,33 +1,21 @@
 class Attendee
   def initialize(height)
-    @height = height
+    raise NotImplementedError, 'Implement the initialize method'
   end
 
   def height
-    @height
+    raise NotImplementedError, 'Implement the height method'
   end
 
   def pass_id
-    @pass_id
+    raise NotImplementedError, 'Implement the pass_id method'
   end
 
   def issue_pass!(pass_id)
-    @pass_id = pass_id
+    raise NotImplementedError, 'Implement the issue_pass! method'
   end
 
   def revoke_pass!
-    @pass_id = nil
-  end
-
-  def has_pass?
-    !!pass_id
-  end
-
-  def fits_ride?(ride_minimum_height)
-    height >= ride_minimum_height
-  end
-
-  def allowed_to_ride?(ride_minimum_height)
-    pass_id && fits_ride?(ride_minimum_height)
+    raise NotImplementedError, 'Implement the revoke_pass! method'
   end
 end
