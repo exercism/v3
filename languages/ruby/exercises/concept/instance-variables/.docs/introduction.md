@@ -1,6 +1,6 @@
 ## Object state, instance variables
 
-Objects can hold their own state by setting _instance variables_. _Instance variables_ are created a prefixing `@` to the variable name.
+Objects can hold their own state by setting _instance variables_. _Instance variables_ are created by prefixing `@` to the variable name.
 
 ```ruby
 @instance_variable = 2
@@ -26,13 +26,13 @@ class Suitcase
 end
 ```
 
-Consider _instance variables_ to be private from external read and writes. _Class instance methods_ should be used for getting and setting instance variables:
+Consider _instance variables_ to be private from external read and writes. _Instance methods_ should be used for getting and setting instance variables:
 
 ```ruby
 class Suitcase
   #...
 
-  def locked? # Methods returning true or false should have trailing `?`
+  def locked? # Query methods should be named with a trailing `?`
     @locked
   end
 
@@ -44,7 +44,7 @@ end
 
 ## Nil
 
-[Nil][nil-dictionary] is an English word meaning "nothing" or "zero". In Ruby, `nil` is a value used to express the _absence_ of an object. In other programming languages, `null` or `none` values may play a similar role.
+[Nil][nil-dictionary] is an English word meaning "nothing" or "zero". In Ruby, `nil` is used to express the _absence_ of an object. In other programming languages, `null` or `none` values may play a similar role.
 
 ```ruby
 # I do not have a favorite color
