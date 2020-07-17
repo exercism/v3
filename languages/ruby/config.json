@@ -39,6 +39,12 @@
         "uuid": "970d3f26-1891-40c7-9550-42d529f5780f",
         "concepts": ["floating-point-numbers", "loops"],
         "prerequisites": ["numbers", "conditionals"]
+      },
+      {
+        "slug": "booleans",
+        "uuid": "06ea7869-4907-454d-a5e5-9d5b71098b17",
+        "concepts": ["booleans"],
+        "prerequisites": ["instance-variables"]
       }
     ],
     "practice": []

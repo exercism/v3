@@ -13,6 +13,7 @@ These are the concept exercises that have currently been implemented, as well as
 | [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`         | `basics`                                                |
 | [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`loops` | `numbers`<br/>`conditionals`                            |
 | [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`each-loops`            | `classes`<br/>`chars`<br/>`booleans`<br/>`conditionals` |
+| [`booleans`][concept-exercise-booleans]                             | `booleans`                           | `instance-variables`                                    |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse.
 
@@ -29,6 +30,7 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-exercise-strings]: ./strings/.meta/design.md
 [concept-exercise-basics]: ./basics/.meta/design.md
 [concept-exercise-numbers]: ./numbers/.meta/design.md
+[concept-exercise-booleans]: ./booleans/.meta/design.md
 [concept-exercise-floating-point-numbers]: ./floating-point-numbers/.meta/design.md
 [issues-new-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fruby+label%3Atype%2Fnew-exercise+label%3Astatus%2Fhelp-wanted
 [issues-improve-exercise]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Atrack%2Fruby+label%3Atype%2Fimprove-exercise+label%3Astatus%2Fhelp-wanted
