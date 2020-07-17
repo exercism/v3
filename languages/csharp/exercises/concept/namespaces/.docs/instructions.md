@@ -10,4 +10,4 @@ Currently, important types like `Motor` and `Telemetry`, not to mention `RemoteC
 
 ## 2. Simplify the naming system
 
-Whilst management are adamant that the teams should be called `RedRemoteControlCarTeam` and `BlueRemoteControlCarTeam` in the definitions, the names are rather cumbersome when referencing the teams. Find a way to use the shorter identifiers "Red" and "Blue" when building the cars.
+Whilst management are adamant that the teams should be called `RedRemoteControlCarTeam` and `BlueRemoteControlCarTeam` in the definitions, the names are rather cumbersome when referencing the teams. Find a way to use the shorter identifiers `Red` and `Blue` when building the cars.

@@ -11,7 +11,7 @@ namespace MyNameSpace
 }
 ```
 
-Namespaces are a way to group related code and to avoid name clashes and are generally present in all but the most trivial code base.
+Namespaces are a way to group related code and to avoid name clashes.
 
 According to the [official documentation][namespaces] namespaces have two principal roles:
 
@@ -52,13 +52,13 @@ This [article][using] clearly explains the ways in which the `using` directive c
 
 - `using`: avoid having to qualify types with namespace
 - `using static`: avoid having to qualify members with types (a good example is `Math.Max()`).
-- `using a = b`: substitute a more readable name for the namespace name.
+- `using MyAlias = YourNamespace;`: substitute a more readable name for the namespace name.
 
 #### Clash of namespaces
 
 .NET addresses the issue of two namespaces with the same name in different assemblies where there would be a clash of fully qualified identifier names (perhaps a scenario where multiple versions of an assembly are loaded). This issue is addressed with the [namespace alias qualifier][namespace-alias-qualifier] and the [extern alias][extern-alias].
 
-One reason to mention this fairly niche subject is because of its use of the "::" operator. You will often see the qualifier `global::` prefixing namespaces, particularly in generated code. The intention here is to avoid confusion with a nested namespace or class name. By prefixing a namespace with `global::` you ensure that a top-level namespace is selected.
+One reason to raise this fairly niche topic is because of its use of the [`::` operator][dot-dot-operator]. You will often see the qualifier `global::` prefixing namespaces, particularly in generated code. The intention here is to avoid a potential clash with some nested namespace or class name. By prefixing a namespace with `global::` you ensure that a top-level namespace is selected.
 
 #### Note for Java developers
 
@@ -66,8 +66,8 @@ When comparing with the `import` of Java `packages` some differences and similar
 
 - There is no equivalent with C# of importing specific types.
 - `using static` and `import static` are equivalent.
-- Unlike Java packages C# [assemblies][assemblies] have no impact on access levels but like the relationship between packages and jars they can span multiple assemblies.
-- The relationship between file system and fully qualified class names is not reflected in C#'s namespaces although it is good practice where possible to give a file the same name as the principal class it contains.
+- In Java, package names have an impact on accessibility as between jars. In C# assemblies are paramount and belonging to the same namespace does not affect access level.
+- The relationship between file system paths and fully qualified class names in Java is not reflected in C#'s namespaces although it is good practice where possible to give a file the same name as the principal class it contains.
 
 #### Reference
 
@@ -80,3 +80,4 @@ When comparing with the `import` of Java `packages` some differences and similar
 [extern-alias]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/extern-alias
 [using]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-directive
 [assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly/
+[dot-dot-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/namespace-alias-qualifier
