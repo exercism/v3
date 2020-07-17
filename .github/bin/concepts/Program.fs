@@ -6,11 +6,17 @@ open System.Text.Json.Serialization
 
 open Humanizer
 
+type ConceptExerciseStatus =
+    | Unimplemented
+    | ImplementedWithoutInstructions
+    | ImplementedWithInstructions
+
 type ConceptExercise =
     { Exercise: string
       Track: string
       Language: string
-      Concepts: string list }
+      Concepts: string list
+      Status: ConceptExerciseStatus }
     
 type ConceptCategory =
     | Concepts
@@ -82,14 +88,24 @@ module Parser =
         configJsonPath languageDirectory
         |> File.ReadAllText
         |> JsonSerializer.Deserialize<JsonTrack>
+
+    let private parseConceptExerciseStatus (languagesDirectory: DirectoryInfo) (track: string) (exercise: string): ConceptExerciseStatus =
+        let exerciseDirectory = DirectoryInfo(Path.Combine(languagesDirectory.FullName, track, "exercises", "concept", exercise))
+        let instructionsFile = FileInfo(Path.Combine(languagesDirectory.FullName, track, "exercises", "concept", exercise, ".docs", "instructions.md"))
+
+        match instructionsFile.Exists, exerciseDirectory.Exists with
+        | true, true  -> ImplementedWithInstructions
+        | false, true -> ImplementedWithoutInstructions
+        | _           -> Unimplemented
     
-    let private parseConceptExercisesOfTrack (languageDirectory: DirectoryInfo): ConceptExercise[] =
+    let private parseConceptExercisesOfTrack (languagesDirectory: DirectoryInfo) (languageDirectory: DirectoryInfo): ConceptExercise[] =
         let jsonTrack = parseConfigJson languageDirectory        
         let toConceptExercise (exercise: JsonConceptExercise): ConceptExercise =
             { Exercise = exercise.Slug
               Track = languageDirectory.Name
               Language = jsonTrack.Language
-              Concepts = Array.toList exercise.Concepts }
+              Concepts = Array.toList exercise.Concepts
+              Status = parseConceptExerciseStatus languagesDirectory languageDirectory.Name exercise.Slug }
         
         jsonTrack.Exercises.Concept
         |> Array.map toConceptExercise
@@ -98,7 +114,7 @@ module Parser =
         let exercises =
             languagesDirectory.EnumerateDirectories()
             |> Seq.filter hasConfigJsonFile
-            |> Seq.collect parseConceptExercisesOfTrack
+            |> Seq.collect (parseConceptExercisesOfTrack languagesDirectory)
         
         exercises        
         |> Seq.collect (fun exercise -> exercise.Concepts |> List.map (fun concept -> (concept, exercise)))
@@ -210,9 +226,13 @@ module Markdown =
                 |> Option.defaultValue (sprintf "`%s`" concept.Name)
             
             let implementationLink implementation =
-                sprintf "[%s](../languages/%s/exercises/concept/%s/.docs/instructions.md)" implementation.Language implementation.Track implementation.Exercise
+                match implementation.Status with
+                | ImplementedWithInstructions -> sprintf "[%s](../languages/%s/exercises/concept/%s/.docs/instructions.md)" implementation.Language implementation.Track implementation.Exercise
+                | _ -> implementation.Language
+
             let implementationLinks =
                 concept.Implementations
+                |> List.filter (fun implementation -> implementation.Status <> Unimplemented)
                 |> List.sortBy (fun implementation -> implementation.Language)
                 |> List.map implementationLink
                 |> String.concat ", "
@@ -248,7 +268,11 @@ module Markdown =
             .AppendLine("[types]: ./types/README.md")
 
     let private renderToMarkdown (concepts: Concept list): string =
-        let (unimplementedConcepts, implementedConcepts) = concepts |> List.partition (fun concept -> List.isEmpty concept.Implementations) 
+        let hasNoImplementations (concept: Concept) =
+            List.isEmpty concept.Implementations ||
+            List.forall (fun implementation -> implementation.Status <> ImplementedWithInstructions) concept.Implementations
+        
+        let (unimplementedConcepts, implementedConcepts) = List.partition hasNoImplementations concepts
         
         StringBuilder()
         |> appendHeader
@@ -302,8 +326,15 @@ module Json =
     let private conceptToJsonConcept (concept: Concept): JsonConcept =
         { Name = concept.Name
           Variations = Array.ofList concept.Variations
-          Documents = concept.Document |> List.map conceptToJsonConceptDocument |> Array.ofList
-          Implementations = concept.Implementations |> List.map conceptExerciseToJsonImplementation |> Array.ofList }
+          Documents =
+              concept.Document
+              |> List.map conceptToJsonConceptDocument
+              |> Array.ofList
+          Implementations =
+              concept.Implementations
+              |> List.filter (fun implementation -> implementation.Status <> Unimplemented)
+              |> List.map conceptExerciseToJsonImplementation
+              |> Array.ofList }
     
     let private renderToJson (concepts: Concept list): string =
         let jsonConcepts = List.map conceptToJsonConcept concepts

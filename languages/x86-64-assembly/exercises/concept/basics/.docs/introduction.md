@@ -7,9 +7,8 @@ store a value in a register, we use the `mov` instruction:
 mov rax, 42  ; rax = 42
 ```
 
-An assembly program is divided into sections. A section is basically a range of
-addresses. The text section contains our executable instructions and is
-declared as follows:
+An assembly program is divided into sections. The text section holds the
+executable instructions of a program and is declared as follows:
 
 ```nasm
 section .text
@@ -29,7 +28,7 @@ foo:
 The value in the `rax` register specifies the value returned by the function.
 
 To change the visibility of a function, and be able to call it from any file in
-our program we use the `global` keyword:
+our program we use the `global` directive:
 
 ```nasm
 global foo
@@ -47,11 +46,12 @@ identity:
   ret
 ```
 
-To add values, we can use the `add` instruction. It takes two operands, a
-source operand (first operand), and a destination operand (second operand),
-adds them together, and stores the result in the destination operand. Here's an
-example of a function that takes two arguments, adds them together, and returns
-the result:
+For the arithmetic operations addition, subtraction, and multiplication, we can
+use the `add`, `sub`, and `imul` instructions. They take two operands, a source
+operand (first operand), and a destination operand (second operand), performs
+the arithmetic operation, and stores the result in the destination operand.
+Here's an example of a function that takes two arguments, adds them together,
+and returns the result:
 
 ```nasm
 global sum
@@ -60,9 +60,6 @@ sum:
   add rax, rsi  ; rax += rsi
   ret
 ```
-
-To subtract values we use the `sub` instruction. It works just like the `add`
-instruction except it subtracts the two operands.
 
 To call a function, we use the `call` instruction. For example, to call our
 `sum` function with the arguments 3 and 5, we would do the following:
