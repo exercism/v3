@@ -15,13 +15,3 @@ Nothing to report
 ## Prequisites
 
 - `basics`: know how to define methods.
-
-## Resources to refer to
-
-### Hints
-
-Nothing to report
-
-### After
-
-Nothing to report
