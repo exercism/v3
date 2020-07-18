@@ -26,7 +26,7 @@ About instance variables:
 
 ## 4. Allow people to buy a pass
 
-- Using the `issue_pass!` setter method set the instance's state to the argument.
+- Using the `issue_pass!` method, set the instance's state to the argument.
 
 ## 4. Revoke the pass
 
