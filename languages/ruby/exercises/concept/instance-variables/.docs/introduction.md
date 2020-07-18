@@ -6,7 +6,7 @@ Objects can hold their own state by setting _instance variables_, which are crea
 @name = 2
 ```
 
-Instance variables are often given initial state in an `initialize` method, which is automatically called when a class is instantiated.
+Objects usually set their initial state in an `initialize` method, which is automatically called when calling `new` on a class.
 
 ```ruby
 class Airplane
@@ -26,7 +26,7 @@ class Suitcase
 end
 ```
 
-Consider _instance variables_ to be private from external read and writes. _Instance methods_ should be used for getting and setting instance variables:
+Consider _instance_ variables to be private from external read and writes. _Instance_ methods should be used for getting and setting instance variables:
 
 ```ruby
 class Suitcase
