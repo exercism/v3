@@ -6,10 +6,10 @@
 
 ## _Truthy_ and _falsey_
 
-- When not using explicit boolean values, _truthy_ and _falsey_ evaluation rules are applied:
+- When not using strict Boolean values, _truthy_ and _falsey_ evaluation rules are applied:
 
-  - Only `false` and `nil` evaluate to _falsey_.
-  - Everything else, objects and values, evaluate to _truthy_.
+  - Only `false` and `nil` evaluates as _falsey_.
+  - Everything else evaluates as _truthy_.
 
   ```ruby
   # A simplified definition
@@ -24,7 +24,7 @@
 
 - It is common to use _truthy_ and _falsey_ values to determine the outcome of [conditional statements][control-expressions].
 
-  - `if`...`else` exists as a construct, similar to the [_C-family_ of programming languages][c-family]
+  - `if`…`else` exists as a construct, similar to the [_C-family_ of programming languages][c-family]
   - it is often more idiomatic to use `if` and `unless` as [expression modifiers to "guard" an expression][if-modifier]
 
   ```ruby
