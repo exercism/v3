@@ -47,7 +47,7 @@ end
 # => the numbers are not added because of the modifier, nil is returned
 ```
 
-If it is preferred to use the positive form of a conditional statement. Rather than negating a negative statement, `unless` is provided as an alternative. E.g. `eat_desert unless too_full`
+Ruby provides `unless` to make code read well. E.g.) Rather than `eat_desert if not too_full`, we can also write `eat_desert unless too_full`.
 
 ```ruby
 3 + 3 unless truthy

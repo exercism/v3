@@ -16,7 +16,7 @@ class Attendee
   # Do not edit above methods, add your own methods below.
 
   def pass?
-    raise NotImplementedError, 'Please implement the has_pass? method'
+    raise NotImplementedError, 'Please implement the pass? method'
   end
 
   def fits_ride?(ride_minimum_height)
