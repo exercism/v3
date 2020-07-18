@@ -1,12 +1,12 @@
 ## Object state, instance variables
 
-Objects can hold their own state by setting _instance variables_. _Instance variables_ are created by prefixing `@` to the variable name.
+Objects can hold their own state by setting _instance variables_, which are created by prefixing `@` to a variable name.
 
 ```ruby
-@instance_variable = 2
+@name = 2
 ```
 
-This is often done by defining an `initialize` method to set an initial state.
+Instance variables are often given initial state in an `initialize` method, which is automatically called when a class is instantiated.
 
 ```ruby
 class Airplane
@@ -51,6 +51,6 @@ end
 favorite_color = nil
 ```
 
-Ruby gives any undefined instance variable the default value of `nil` when it is accessed before being set.
+Ruby gives any instance variable the default value of `nil` when it is first encountered, until it is set otherwise.
 
 [nil-dictionary]: https://www.merriam-webster.com/dictionary/nil
