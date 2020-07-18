@@ -22,7 +22,7 @@
   end
   ```
 
-- It is common to use _truthy_ and _falsey_ values to determine the outcome of [control expressions][control-expressions].
+- It is common to use _truthy_ and _falsey_ values to determine the outcome of [conditional statements][control-expressions].
 
   - `if`...`else` exists as a construct, similar to the [_C-family_ of programming languages][c-family]
   - it is often more idiomatic to use `if` and `unless` as [expression modifiers to "guard" an expression][if-modifier]
