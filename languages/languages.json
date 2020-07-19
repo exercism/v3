@@ -1661,6 +1661,30 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/agent",
+          "slug": "agent",
+          "concepts": [
+            {
+              "url": null,
+              "name": "agent"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "processes"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/map.md",
+              "name": "maps"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
+              "name": "structs"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/regular-expressions",
           "slug": "regular-expressions",
           "concepts": [
