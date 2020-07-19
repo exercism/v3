@@ -132,8 +132,8 @@
         "prerequisites": ["functions", "pointers", "structs"]
       },
       {
-        "slug": "mutext",
-        "uuid": "12854e5c-bf0e-4180-a9ae-4dc4744558df",
+        "slug": "mutex",
+        "uuid": null,
         "concepts": ["mutex"],
         "prerequisites": ["defer"]
       },
