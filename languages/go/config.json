@@ -181,6 +181,12 @@
       },
       {
         "slug": "strings",
+        "uuid": "e09523d2-c91f-11ea-87d0-0242ac130003",
+        "concepts": ["strings"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "strings-advanced",
         "uuid": "b97a271c-4036-4ea8-8c6a-094715a48627",
         "concepts": ["strings"],
         "prerequisites": ["slices"]
@@ -189,7 +195,7 @@
         "slug": "structs",
         "uuid": "2508aa96-e4e9-444e-9e6b-8b748c4f9305",
         "concepts": ["structs"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["numbers", "conditionals"]
       },
       {
         "slug": "time-and-duration",
