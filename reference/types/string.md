@@ -74,5 +74,5 @@ This exercise is a conversation between you and the security guard. The referenc
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/strings/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/strings/.docs/introduction.md
 [implementation-python]: ../../languages/python/exercises/concept/strings/.docs/introduction.md
-[implementation-go]: ../../languages/go/exercises/concept/strings/.docs/introduction.md
+[implementation-go]: ../../languages/go/exercises/concept/strings-advanced/.docs/introduction.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/strings/.docs/
