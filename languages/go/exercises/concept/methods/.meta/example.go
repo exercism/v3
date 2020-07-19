@@ -21,8 +21,8 @@ type Car struct {
 }
 
 // CreateTrack creates a new track with given distance.
-func CreateTrack(distance int) *Track {
-	return &Track{
+func CreateTrack(distance int) Track {
+	return Track{
 		distance: distance,
 	}
 }
@@ -56,5 +56,5 @@ func (car *Car) DisplayDistance() string {
 
 // DisplayBattery displays the battery level.
 func (car *Car) DisplayBattery() string {
-	return fmt.Sprintf("Battery at %d%%", car.distance)
+	return fmt.Sprintf("Battery at %d%%", car.battery)
 }

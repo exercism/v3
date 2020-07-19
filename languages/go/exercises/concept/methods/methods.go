@@ -1,8 +1,8 @@
 package methods
 
 // CrateCar creates a new car with given specifications.
-func CrateCar(speed, batteryDrain int) Car {
-	return Car{
+func CrateCar(speed, batteryDrain int) *Car {
+	return &Car{
 		speed:        speed,
 		batteryDrain: batteryDrain,
 		battery:      100,
