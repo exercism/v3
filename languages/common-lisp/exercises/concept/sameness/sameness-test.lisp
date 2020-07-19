@@ -21,30 +21,30 @@
 (in-suite sameness-suite)
 
 (test the-maze-of-object-identity
-  (is (eq 'victory (open-room :room-object-identity #'robot))))
+  (is (eq 'victory (open-room :room-object-identity #'key-object-indentity))))
 
 (test the-maze-of-numbers
-  (is (eq 'victory (open-room :room-numbers #'robot)))
-  (is (eq 'victory (open-room :room-number-of-different-types #'robot))))
+  (is (eq 'victory (open-room :room-numbers #'key-numbers)))
+  (is (eq 'victory (open-room :room-number-of-different-types #'key-looser-numbers))))
 
 (test the-maze-of-characters
-  (is (eq 'victory (open-room :room-characters #'robot)))
-  (is (eq 'victory (open-room :room-case-insensitive-chars #'robot))))
+  (is (eq 'victory (open-room :room-characters #'key-chars)))
+  (is (eq 'victory (open-room :room-case-insensitive-chars #'key-insensitive-chars))))
 
 (test the-maze-of-strings
-  (is (eq 'victory (open-room :room-strings #'robot)))
-  (is (eq 'victory (open-room :room-case-insensitive-strings #'robot))))
+  (is (eq 'victory (open-room :room-strings #'key-strings)))
+  (is (eq 'victory (open-room :room-case-insensitive-strings #'key-insensitive-string))))
 
 (test the-maze-of-conses
-  (is (eq 'victory (open-room :room-cons-of-symbols #'robot)))
-  (is (eq 'victory (open-room :room-cons-of-chars #'robot)))
-  (is (eq 'victory (open-room :room-cons-of-numbers #'robot)))
-  (is (eq 'victory (open-room :room-cons-case-insensitive-chars #'robot)))
-  (is (eq 'victory (open-room :room-cons-number-of-different-types #'robot))))
+  (is (eq 'victory (open-room :room-cons-of-symbols #'key-cons-symbols)))
+  (is (eq 'victory (open-room :room-cons-of-chars #'key-cons-chars)))
+  (is (eq 'victory (open-room :room-cons-of-numbers #'key-cons-numbers)))
+  (is (eq 'victory (open-room :room-cons-case-insensitive-chars #'key-cons-insensitive-chars)))
+  (is (eq 'victory (open-room :room-cons-number-of-different-types #'key-cons-looser-numbers))))
 
 (test the-maze-of-arrays
-  (is (eq 'victory (open-room :room-arrays #'robot)))
-  (is (eq 'victory (open-room :room-arrays-looser-equal #'robot))))
+  (is (eq 'victory (open-room :room-arrays #'key-arrays)))
+  (is (eq 'victory (open-room :room-arrays-looser-equal #'key-arrays-looser-equal))))
 
 ;; Either provides human-readable results to the user or machine-readable
 ;; results to the test runner. The default upon calling `(run-tests)` is to
@@ -57,14 +57,11 @@
 ;;; ==================================================
 ;;; Test Implementation Details
 ;;;
-(defun open-room (room-id robot)
-  "Utility function to attempt to open a particular room (by ROOM-ID) with a
-particular ROBOT."
-  (let ((key (funcall robot room-id))
-        (room (cdr (assoc room-id +rooms+))))
+(defun open-room (room-id key-fn)
+  (let ((room (cdr (assoc room-id +rooms+))))
     (loop for (door . behind-the-door) in room
-          when (apply key door) do (return behind-the-door)
-            finally (return 'room-explodes))))
+       when (apply key-fn door) do (return behind-the-door)
+         finally (return 'room-explodes))))
 
 (defparameter +an-array+ #(1 2 3))
 (defparameter +a-similar-but-different-array+ #(1 2 3))

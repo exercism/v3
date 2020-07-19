@@ -1,24 +1,34 @@
 (defpackage sameness
   (:use :cl)
-  (:export :robot))
+  (:export
+   :key-object-indentity
+   :key-numbers
+   :key-looser-numbers
+   :key-chars
+   :key-insensitive-chars
+   :key-strings
+   :key-insensitive-string
+   :key-cons-symbols
+   :key-cons-chars
+   :key-cons-numbers
+   :key-cons-insensitive-chars
+   :key-cons-looser-numbers
+   :key-arrays
+   :key-arrays-looser-equal))
 
 (in-package :sameness)
 
-(defun robot (room-id)
-  "Return a key to use for the doors in the room designated by ROOM-ID."
-  (case room-id
-    (:room-object-identity #'eq)
-    (:room-numbers #'eql)
-    (:room-number-of-different-types #'equalp)
-    (:room-characters #'eql)
-    (:room-case-insensitive-chars #'equalp)
-    (:room-strings #'equal)
-    (:room-case-insensitive-strings #'equalp)
-    (:room-cons-of-symbols #'equal)
-    (:room-cons-of-chars #'equal)
-    (:room-cons-of-numbers #'equal)
-    (:room-cons-case-insensitive-chars #'equalp)
-    (:room-cons-number-of-different-types #'equalp)
-    (:room-arrays #'equal)
-    (:room-arrays-looser-equal #'equalp)
-    (t (constantly nil))))
+(defun key-object-indentity (x y) (eq x y))
+(defun key-numbers (x y) (eql x y))
+(defun key-looser-numbers (x y) (equalp x y))
+(defun key-chars (x y) (eql x y))
+(defun key-insensitive-chars (x y) (equalp x y))
+(defun key-strings (x y) (equal x y))
+(defun key-insensitive-string (x y) (equalp x y))
+(defun key-cons-symbols (x y) (equal x y))
+(defun key-cons-chars (x y) (equal x y))
+(defun key-cons-numbers (x y) (equal x y))
+(defun key-cons-insensitive-chars (x y) (equalp x y))
+(defun key-cons-looser-numbers (x y) (equalp x y))
+(defun key-arrays (x y) (eql x y))
+(defun key-arrays-looser-equal (x y) (equalp x y))
