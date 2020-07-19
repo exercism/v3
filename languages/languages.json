@@ -1661,6 +1661,30 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/agent",
+          "slug": "agent",
+          "concepts": [
+            {
+              "url": null,
+              "name": "agent"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "processes"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/map.md",
+              "name": "maps"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
+              "name": "structs"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/regular-expressions",
           "slug": "regular-expressions",
           "concepts": [
@@ -2175,8 +2199,28 @@
           ],
           "prerequisites": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/slice.md",
-              "name": "slices"
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/structs",
+          "slug": "structs",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
+              "name": "structs"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
             }
           ]
         }
