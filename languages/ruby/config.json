@@ -39,6 +39,12 @@
         "uuid": "970d3f26-1891-40c7-9550-42d529f5780f",
         "concepts": ["floating-point-numbers", "loops"],
         "prerequisites": ["numbers", "conditionals"]
+      },
+      {
+        "slug": "instance-variables",
+        "uuid": "6905e411-ae01-46b6-a31c-8867b768856e",
+        "concepts": ["instance-variables", "nil"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []
