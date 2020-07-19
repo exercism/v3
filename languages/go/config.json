@@ -27,7 +27,7 @@
         "uuid": "668463ec-4b73-40cf-b24d-2f3a4bb110f6",
         "concepts": ["bytes", "runes"],
         "prerequisites": [
-          "strings",
+          "strings-advanced",
           "numbers",
           "iteration",
           "functions",
@@ -187,8 +187,8 @@
       {
         "slug": "strings-advanced",
         "uuid": "b97a271c-4036-4ea8-8c6a-094715a48627",
-        "concepts": ["strings"],
-        "prerequisites": ["basics"]
+        "concepts": ["strings-advanced"],
+        "prerequisites": ["slices"]
       },
       {
         "slug": "structs",
