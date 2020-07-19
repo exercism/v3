@@ -5,7 +5,7 @@ func Welcome(name string) string {
 	panic("Please implement the Welcome function")
 }
 
-// HappyBirthday wishes happy birthday and  everyone standing by the age.
+// HappyBirthday wishes happy birthday to the birthday person and stands out his age.
 func HappyBirthday(name string, age int) string {
 	panic("Please implement the HappyBirthday function")
 }

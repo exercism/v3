@@ -7,11 +7,9 @@ func Welcome(name string) string {
 	return fmt.Sprintf("Welcome to my party, %s!", name)
 }
 
-// HappyBirthday wishes happy birthday and  everyone standing by the age.
+// HappyBirthday wishes happy birthday to the birthday person and stands out his age.
 func HappyBirthday(name string, age int) string {
-	greeting := fmt.Sprintf("Happy birthday %s! You are now %d years old!\n", name, age)
-	greeting += "Welcome to my party!"
-	return greeting
+	return fmt.Sprintf("Happy birthday %s! You are now %d years old!", name, age)
 }
 
 // AssignTable assigns a table to each guest.
