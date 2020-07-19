@@ -41,6 +41,12 @@
         "prerequisites": ["numbers", "conditionals"]
       },
       {
+        "slug": "booleans",
+        "uuid": "06ea7869-4907-454d-a5e5-9d5b71098b17",
+        "concepts": ["booleans"],
+        "prerequisites": ["instance-variables"]
+      },
+      {
         "slug": "instance-variables",
         "uuid": "6905e411-ae01-46b6-a31c-8867b768856e",
         "concepts": ["instance-variables", "nil"],
