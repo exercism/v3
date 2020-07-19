@@ -76,9 +76,9 @@ This exercise implements some phrases an eccentric party robot would say.
 
 #### Implementations
 
-| Track      | Exercise                             | Changes |
-| ---------- | ------------------------------------ | ------- |
-| Go         | [strings][implementation-go]         | None    |
+| Track | Exercise                     | Changes |
+| ----- | ---------------------------- | ------- |
+| Go    | [strings][implementation-go] | None    |
 
 [type-char]: ./char.md
 [implementation-cpp]: ../../languages/cpp/exercises/concept/strings/.docs/introduction.md
