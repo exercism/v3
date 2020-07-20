@@ -4,26 +4,26 @@ What you need to help Leslie with is to give the robot the correct key for each 
 
 Each test represents a maze and each assertion is a room. You will need to write predicate functions that evaluate to `T` when the arguments are equal and `NIL` when they are not.
 
-## The Maze of Object Equality
+## 1. The maze of object equality
 
 This maze has only a single room. You need to provide a function that can tell if two objects are the same object.
 
-## The Maze of Numbers
+## 2. The maze of numbers
 
 This maze has two rooms. The first has a door that can be opened if your key can tell if two numbers are strictly equal to each other. The second room needs a key that allows some flexibility on checking for equal numbers.
 
-## The Maze of Characters
+## 3. The maze of characters
 
 This maze has two rooms. The first has a door that can be opened if your key can tell if two characters are strictly equal to each other. The second room needs a key that allows for case-insensitive comparison of the characters.
 
-## The Maze of Strings
+## 4. The maze of strings
 
 Like the maze of characters the first room needs a key that checks if two strings are equal; the second room needs a key that allows for case-insensitive comparison.
 
-## The Maze of Conses
+## 5. The maze of conses
 
 This is a big maze with many rooms. Each room needs a key that will check if the conses _contain_ the things which are equal. Each room will check for equality of conses with different contents: symbols, numbers, characters, and some will need more flexible equality definitions for those contents.
 
-## The Maze of Arrays
+## 6. The maze of arrays
 
 This maze is simpler with only two rooms. The first needs a key that checks if the arrays contain the equal contents. The second needs a key that is more flexible about checking equality of numbers.
