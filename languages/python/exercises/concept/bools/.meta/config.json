@@ -12,5 +12,5 @@
     }
   ],
   "forked_from": ["elixir/booleans"],
-  "language_versions": ">=3.8"
+  "language_versions": ">=3.5"
 }
