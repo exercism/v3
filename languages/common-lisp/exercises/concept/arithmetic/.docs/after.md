@@ -12,6 +12,19 @@ Common Lisp.
 
 ## Diving Deeper
 
+### Arithmetic Operators With a Single Argument
+As a small quirk, the `-` and `/` operators have a special meanings when applied
+to only one number:
+
+```lisp
+;; A single number passed to `-` is simply negated
+(- 4)   ; => -4
+(- -32) ; => 32
+;; A single number passed to `/` returns the reciprocal
+(/ 8)   ; => 1/8
+(/ 0.1) ; => 10.0
+```
+
 ### Arbitrary Precision Integers
 
 In Common Lisp, integers can be arbitrarily large or small, so there is no need
