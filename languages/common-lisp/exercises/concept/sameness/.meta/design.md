@@ -16,7 +16,13 @@
 
 ## Prerequisites
 
-- expressions
-- integers
+## Prerequisites
+
+- functions
 - symbols
-- conditionals (using `case` would be good for an exercise task)
+- characters
+- strings
+- floating-point-numbers
+- integers
+- cons
+- arrays
