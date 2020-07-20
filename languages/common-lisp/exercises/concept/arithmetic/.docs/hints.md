@@ -1,7 +1,7 @@
 ## General
 
 - It might be useful to have a list of all of the numeric operations in Lisp –
-you can find a [full list here](http://l1sp.org/cl/12.1.1)
+  you can find a [full list here](http://l1sp.org/cl/12.1.1)
 
 ## 1. A Dough Ratio
 
@@ -25,7 +25,7 @@ you can find a [full list here](http://l1sp.org/cl/12.1.1)
 ## 4. A Fair Share
 
 - This part requires using a function you may not have come across before, the
-[modulo function](https://en.wikipedia.org/wiki/Modulo_operation) (`mod`). This
-function gives you the remainder of the division between two numbers.
+  [modulo function](https://en.wikipedia.org/wiki/Modulo_operation) (`mod`). This
+  function gives you the remainder of the division between two numbers.
 - For comparing the result of `mod` to another number, [this page of comparison
-operators](http://l1sp.org/cl/=).  )
+  operators](http://l1sp.org/cl/=). )

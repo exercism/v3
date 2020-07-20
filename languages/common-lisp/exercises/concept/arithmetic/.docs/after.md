@@ -13,6 +13,7 @@ Common Lisp.
 ## Diving Deeper
 
 ### Arithmetic Operators With a Single Argument
+
 As a small quirk, the `-` and `/` operators have a special meanings when applied
 to only one number:
 
