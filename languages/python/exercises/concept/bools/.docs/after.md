@@ -20,7 +20,7 @@ not True and True # => False
 not (True and False) # => True
 ```
 
-## Type Coercion
+## Type Coercion and Truthiness
 
 The [`bool` function][bool-function] converts any type to a Boolean value. By default all values return `True` unless defined to return `False`.
 
@@ -34,6 +34,17 @@ Some built-ins already defined to be considered `False`:
 bool(1) # => True
 bool(0) # => False
 ```
+
+When a value is used in a boolean context, it is used as a _truthy_ or _falsey_ value by transparently using the `bool` function.
+
+```python
+a = "is this true?"
+if a:
+  print("True")
+# => This will print "True", as a non-empty string is a truthy value
+```
+
+Classes may define how they are evaluated in truthy situations if they override and implement a `__bool__` method.
 
 ## How Booleans work under the hood
 

@@ -2,4 +2,4 @@
 
 | exercise | concepts | prerequisites |
 | -------- | -------- | ------------- |
-| `bools`  | `bool`   | `basics`      |
+| `bools`  | `bools`  | `basics`      |
