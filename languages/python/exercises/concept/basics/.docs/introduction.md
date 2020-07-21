@@ -4,8 +4,6 @@ Objects are [assigned](https://docs.python.org/3/reference/simple_stmts.html#ass
 
 ```python
 >>> my_first_variable = 1
->>> my_first_variable = {"bear" : "brown", "cat": "black"}
->>> my_first_variable = collections.Counter()
 >>> my_first_variable = "Last one, I promise"
 >>> print(my_first_variable)
 "Last one, I promise"
