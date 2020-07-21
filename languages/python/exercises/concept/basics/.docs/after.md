@@ -102,7 +102,7 @@ import string
 "MY SILLY SENTENCE FOR EXAMPLES."
 ```
 
-[Comments](https://realpython.com/python-comments-guide/#python-commenting-basics) in Python start with a `#` (_hash character_) that is not part of a string, and end at line termination. Unlike many other programming languages, Python does not support multi-line comment marks. Each line of a comment block must start with the `#` character. Comments are ignored by the interpreter:
+[Comments](https://realpython.com/python-comments-guide/#python-commenting-basics) in Python start with a `#` that is not part of a string, and end at line termination. Unlike many other programming languages, Python does not support multi-line comment marks. Each line of a comment block must start with the `#` character. Comments are ignored by the interpreter:
 
 ```python
 #this is a single line comment
