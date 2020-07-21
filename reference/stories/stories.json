@@ -523,6 +523,12 @@
         "slug": "elixir",
         "exercise": "booleans",
         "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/booleans/.docs/instructions.md"
+      },
+      {
+        "track": "Python",
+        "slug": "python",
+        "exercise": "bools",
+        "url": "https://github.com/exercism/v3/blob/master/languages/python/exercises/concept/bools/.docs/instructions.md"
       }
     ]
   },
