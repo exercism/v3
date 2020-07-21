@@ -2360,6 +2360,22 @@
           "prerequisites": []
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/booleans",
+          "slug": "booleans",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/strings",
           "slug": "strings",
           "concepts": [
@@ -2707,7 +2723,19 @@
     "slug": "kotlin",
     "url": "https://github.com/exercism/v3/tree/master/languages/kotlin",
     "exercises": {
-      "concept": []
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/kotlin/exercises/concept/basics",
+          "slug": "basics",
+          "concepts": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ],
+          "prerequisites": []
+        }
+      ]
     }
   },
   {
@@ -2772,7 +2800,7 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "boleans"
+              "name": "bools"
             },
             {
               "url": null,
@@ -2797,6 +2825,22 @@
             {
               "url": null,
               "name": "return-keyword"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/bools",
+          "slug": "bools",
+          "concepts": [
+            {
+              "url": null,
+              "name": "bools"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
             }
           ]
         }
