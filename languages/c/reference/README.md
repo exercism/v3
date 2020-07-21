@@ -30,7 +30,6 @@ The C concept exercises are based on language concepts. The list below contains 
 - [Storage Class Specifiers](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Storage-Class-Specifiers)
 - [Switch Statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-switch-Statement)
 - [Strings library](https://en.cppreference.com/w/c/string)
-- [Typedef Statement](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-typedef-Statement)
 - [Undefined behaviour](https://en.wikipedia.org/wiki/Undefined_behavior)
 - [Variable Length Parameter Lists](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Variable-Length-Parameter-Lists)
 - [Volatile](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Type-Qualifiers)
@@ -39,7 +38,11 @@ The C concept exercises are based on language concepts. The list below contains 
 
 - [Complex Number Types](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Complex-Number-Types)
 - [Enumerations](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Enumerations)
+- [Fixed width integer types](https://en.wikipedia.org/wiki/C_data_types#Fixed-width_integer_types)
+- [ptrdiff_t](https://www.gnu.org/software/libc/manual/html_node/Important-Data-Types.html)
+- [size_t](https://www.gnu.org/software/libc/manual/html_node/Important-Data-Types.html)
 - [Unions](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Unions)
+- [Void](https://en.wikipedia.org/wiki/Void_type)
 
 #### Patterns
 
