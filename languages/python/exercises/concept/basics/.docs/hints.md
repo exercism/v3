@@ -29,4 +29,4 @@
 
 ## 5. Add docstrings and comments to your work
 
-- Clearly [commeting](https://realpython.com/python-comments-guide/) and [documenting](https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings) your code is always recommended.
+- Clearly [commenting](https://realpython.com/python-comments-guide/) and [documenting](https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings) your code is always recommended.
