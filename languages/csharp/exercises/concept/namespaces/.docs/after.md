@@ -27,24 +27,36 @@ Types enclosed in namespaces are referred to outside the namespace by prefixing 
 ```csharp
 namespace MySpace
 {
-    public MyClass {}
+    public class MyClass {}
 
-...
-    new MyClass();
-...
+    public class Foo
+    {
+        public void Bar()
+        {
+            var baz = new MyClass();
+        }
+    }
 }
 
-...
-new MySpace.MyClass();
-...
+public class Qux
+{
+    public void Box()
+    {
+        var nux = new MySpace.MyClass();
+    }
+}
 
 namespace OtherSpace
 {
     using MySpace;
 
-...
-    new MyClass();
-...
+    public class Tix
+    {
+        public void Jeg()
+        {
+            var lor = new MyClass();
+        }
+    }
 }
 ```
 
