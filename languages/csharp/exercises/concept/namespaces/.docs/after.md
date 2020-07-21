@@ -18,11 +18,11 @@ According to the [official documentation][namespaces] namespaces have two princi
 - First, .NET uses namespaces to organize its many classes
 - Second, declaring your own namespaces can help you control the scope of class and method names in larger programming projects.
 
-Namespaces are used widely by the base class library (BCL) to organize its functionality
+Namespaces are used widely by the base class library (BCL) to organize its functionality.
 
 #### References to namespaced types
 
-Types enclosed in namespaces are referred to outside the namespace by prefixing the type name with the dot syntax. Alternatively, and more usually, you can place a `using` directive at the top of the file (or within a namespace) and type can be used without the prefix. Within the same namespace there is no need to qualify type names.
+Types enclosed in namespaces are referred to outside the namespace by prefixing the type name with the dot syntax. Alternatively, and more usually, you can place a `using` directive at the top of the file (or within a namespace) and any types in the imported namespace can be used without the prefix. Within the same namespace there is no need to qualify type names.
 
 ```csharp
 namespace MySpace
