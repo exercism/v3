@@ -35,7 +35,7 @@
         "concepts": ["basics"],
         "prerequisites": []
       },
-      }
+      {
         "slug": "bools",
         "uuid": "c050470d-ef22-4187-aaac-239e07955a4d",
         "concepts": ["bools"],
