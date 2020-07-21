@@ -2,14 +2,12 @@
 
 Python was created by Guido van Rossum and first released in 1991. The [Python Software Foundation](https://www.python.org/psf/) manages and directs resources for Python and CPython development and receives proposals for changes to the language from [members](https://www.python.org/psf/membership/) of the community via [Python Enhancement Proposals or PEPs](https://www.python.org/dev/peps/).
 
-Python puts a strong emphasis on code readability and (_similar to Haskell_) uses significant indentation to denote function, method, and class definitions. The [zen of Python (PEP 20)](https://www.python.org/dev/peps/pep-0020/) lays out additional inspiration and philosophy.
+Python puts a strong emphasis on code readability and (_similar to Haskell_) uses [significant indentation](https://docs.python.org/3/reference/lexical_analysis.html#indentation) to denote function, method, and class definitions. The [zen of Python (PEP 20)](https://www.python.org/dev/peps/pep-0020/) lays out additional inspiration and philosophy.
 
 Objects are [assigned](https://docs.python.org/3/reference/simple_stmts.html#assignment-statements) to [names](https://docs.python.org/3/reference/executionmodel.html#naming-and-binding) in Python via the `=` or _assignment operator_. [Variables](https://realpython.com/python-variables/) are written in [`snake_case`](https://en.wikipedia.org/wiki/Snake_case), and _constants_ usually in `SCREAMING_SNAKE_CASE`. A name (_variable or constant_) is not itself _typed_, and can be attached or re-attached to different objects over its lifetime. For extended naming conventions and advice, see [PEP 8](https://www.python.org/dev/peps/pep-0008/).
 
 ```python
 >>> my_first_variable = 1
->>> my_first_variable = {"bear" : "brown", "cat": "black"}
->>> my_first_variable = collections.Counter()
 >>> my_first_variable = "Last one, I promise"
 >>> print(my_first_variable)
 "Last one, I promise"
@@ -32,7 +30,7 @@ Functions can be executed by themselves, passed as arguments to other functions,
 
 The keyword `def` begins a [function definition](https://docs.python.org/3/tutorial/controlflow.html#defining-functions). It must be followed by the function name and a parenthesized list of zero or more formal [parameters](https://docs.python.org/3/glossary.html#term-parameter), which can be of several different varieties, and even [vary](https://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions) in length.
 
-The `def` line is terminated with a colon. Statements for the _body_ of the function begin on the next line, and must be _indented in a block_. Functions explicitly return a value or object via the [`return`](https://docs.python.org/3/reference/simple_stmts.html#return) keyword. Functions that do not have an explicit `return` expression will return [`None`](https://docs.python.org/3/library/constants.html):
+The `def` line is terminated with a colon. Statements for the _body_ of the function begin on the next line, and must be _indented in a block_. There is no strict indentation amount (_either space **OR** [tab] characters are acceptable_), but [indentation](https://docs.python.org/3/reference/lexical_analysis.html#indentation) must be _consistent for all indented statements_. Functions explicitly return a value or object via the [`return`](https://docs.python.org/3/reference/simple_stmts.html#return) keyword. Functions that do not have an explicit `return` expression will return [`None`](https://docs.python.org/3/library/constants.html):
 
 ```python
 #function definition on first line.
@@ -102,7 +100,7 @@ import string
 "MY SILLY SENTENCE FOR EXAMPLES."
 ```
 
-[Comments](https://realpython.com/python-comments-guide/#python-commenting-basics) in Python start with a `#` (_hash character_) that is not part of a string, and end at line termination. Unlike many other programming languages, Python does not support multi-line comment marks. Each line of a comment block must start with the `#` character. Comments are ignored by the interpreter:
+[Comments](https://realpython.com/python-comments-guide/#python-commenting-basics) in Python start with a `#` that is not part of a string, and end at line termination. Unlike many other programming languages, Python does not support multi-line comment marks. Each line of a comment block must start with the `#` character. Comments are ignored by the interpreter:
 
 ```python
 #this is a single line comment
@@ -117,6 +115,7 @@ x = "foo"  #this is an in-line comment
 The first statement of a function body can optionally be a [docstring](https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings), which concisely summarizes the function or object's purpose. These docstrings are read by automated documentation tools, and are returned by calling `__doc__` on the function, method, or class. They are recommended for programs of any size where documentation is needed:
 
 ```python
+#an example on a user-defined function
 def number_to_the_power_of(number_one, number_two):
     '''Returns float or int.
 
@@ -130,6 +129,7 @@ Returns float or int.
 
        Takes number_one and raises it to the power of number_two, returning the result.
 
+#an example for a built-in type: str
 >>> print(str.__doc__)
 str(object='') -> str
 str(bytes_or_buffer[, encoding[, errors]]) -> str

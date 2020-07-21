@@ -38,9 +38,9 @@ Implement the `elapsed_time_in_minutes()` function that has two parameters: `num
 26
 ```
 
-## 5. Add docstrings and comments to your work
+## 5. Update the recipe with notes
 
-Go back through the functions you have completed and add docstrings and comments for documentation.
+Go back through the recipe, adding notes and documentation.
 
 ```python
 def total_time_in_minutes(number_of_layers, actual_bake_time):
