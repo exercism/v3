@@ -1,6 +1,6 @@
 ## General
 
-Don't worry about how the arguments are derived, just focus on combining the arguments to return the intended result.
+- Don't worry about how the arguments are derived, just focus on combining the arguments to return the intended result.
 
 ## 1. Define if Pac-Man can eat a ghost
 
