@@ -109,6 +109,12 @@
         ]
       },
       {
+        "slug": "lists",
+        "uuid": "5c438d02-67a6-43b6-9e3c-8ba309c4ea32",
+        "concepts": ["generic-types", "lists"],
+        "prerequisites": ["arrays", "for-loops"]
+      },
+      {
         "slug": "method-overloading",
         "uuid": "3f728065-98d8-472a-a84c-290f05ab1e58",
         "concepts": [
@@ -137,10 +143,33 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "nested-types",
+        "uuid": "694cbd8d-677d-4052-960e-69386463a94b",
+        "concepts": ["nested-types"],
+        "prerequisites": [
+          "classes",
+          "enums",
+          "interfaces",
+          "properties",
+          "structs"
+        ]
+      },
+      {
         "slug": "object-initializers",
         "uuid": "a9c3a1c9-19ee-45b2-8189-57e15870a051",
         "concepts": ["object-initializers"],
         "prerequisites": ["constructors", "dictionaries", "properties"]
+      },
+      {
+        "slug": "overflow",
+        "uuid": "16f760c1-29b8-4c82-a085-9b4d81002c62",
+        "concepts": ["overflow"],
+        "prerequisites": [
+          "exceptions",
+          "floating-point-numbers",
+          "integral-numbers",
+          "strings"
+        ]
       },
       {
         "slug": "parameters",
@@ -173,10 +202,40 @@
         "prerequisites": ["numbers"]
       },
       {
+        "slug": "regular-expressions",
+        "uuid": "c63bb75d-51bd-4d5d-b37d-88e53ee0da69",
+        "concepts": ["regular-expressions"],
+        "prerequisites": [
+          "arrays",
+          "for-loops",
+          "strings",
+          "string-interpolation",
+          "verbatim-strings"
+        ]
+      },
+      {
         "slug": "resource-cleanup",
         "uuid": "e99221eb-eecb-4746-9ef6-cc62650e41e1",
         "concepts": ["resource-cleanup"],
         "prerequisites": ["exceptions", "inheritance"]
+      },
+      {
+        "slug": "resource-lifetime",
+        "uuid": "1c23e163-ceca-4cce-87ec-2e016db1262b",
+        "concepts": ["resource-lifetime"],
+        "prerequisites": ["resource-cleanup"]
+      },
+      {
+        "slug": "string-formatting",
+        "uuid": "eb435600-f983-4d55-a2c8-ef8b122334a0",
+        "concepts": ["string-formatting", "verbatim-strings"],
+        "prerequisites": [
+          "const-readonly",
+          "inheritance",
+          "strings",
+          "time",
+          "varargs"
+        ]
       },
       {
         "slug": "strings",

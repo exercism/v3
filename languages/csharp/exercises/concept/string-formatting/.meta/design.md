@@ -10,8 +10,7 @@
 
 ## Out of scope
 
-- `IFormatProvider`
-- `ICustomFormatter`
+`IFormatProvider`, `ICustomFormatter`
 
 ## Concepts
 
@@ -20,11 +19,8 @@
 
 ## Prerequisites
 
-This Concept Exercise's prerequisites Concepts are:
-
 - `strings`: strings will be formatted.
 - `inheritance`: knowing that each class derives from `object` and thus has built-in methods.
 - `const-readonly`
 - `time`: for use of `CultureInfo`.
 - `varargs`: for the common overload of `public static string Format (string format, params object[] args);`
-- `interfaces`: frequent references to interfaces like `IFormatProvider`
