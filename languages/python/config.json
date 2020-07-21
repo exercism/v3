@@ -28,6 +28,12 @@
           "integers",
           "return-keyword"
         ]
+      },
+      {
+        "slug": "basics",
+        "uuid": "dfd7dc01-3544-4f61-a063-af8530d6e601",
+        "concepts": ["basics"],
+        "prerequisites": []
       }
     ],
     "practice": []
