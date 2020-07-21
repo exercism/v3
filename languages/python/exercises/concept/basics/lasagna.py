@@ -1,13 +1,7 @@
-def bake_time_remaining():
-    pass
+# TODO: define the 'EXPECTED_BAKE_TIME' constant
 
+# TODO: define the 'bake_time_remaining()' function
 
-def preparation_time_in_minutes():
-    pass
+# TODO: define the 'preparation_time_in_minutes()' function
 
-
-def elapsed_time_in_minutes():
-    pass
-
-
-
+# TODO: define the 'elapsed_time_in_minutes()' function
