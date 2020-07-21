@@ -226,6 +226,18 @@
         "prerequisites": ["resource-cleanup"]
       },
       {
+        "slug": "string-formatting",
+        "uuid": "eb435600-f983-4d55-a2c8-ef8b122334a0",
+        "concepts": ["string-formatting", "verbatim-strings"],
+        "prerequisites": [
+          "const-readonly",
+          "inheritance",
+          "strings",
+          "time",
+          "varargs"
+        ]
+      },
+      {
         "slug": "strings",
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
         "concepts": ["strings"],
