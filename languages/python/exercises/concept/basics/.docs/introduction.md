@@ -66,7 +66,7 @@ x = "foo"  #this is an in-line comment
 #these should be used sparingly
 ```
 
-The first statement of a function body can optionally be a [docstring](https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings), which concisely summarizes the function or object's purpose. These docstrings are read by automated documentation tools, and are returned by calling `__doc__` on the function, method, or class. They are recommended for programs of any size where documentation is needed:
+The first statement of a function body can optionally be a _docstring_, which concisely summarizes the function or object's purpose. These docstrings are read by automated documentation tools and can be accessed from code. They are recommended for programs of any size where documentation is needed.
 
 ```python
 def number_to_the_power_of(number_one, number_two):
