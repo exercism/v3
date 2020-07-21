@@ -1,5 +1,22 @@
 [
   {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/classes.amusement-park.md",
+    "name": "Amustment Park Attendee",
+    "description": "In this story, you are working with an amusement park to implement an admittance system. People (attendee) come in to the park and are measured for their height on arrival. This is because certain rides in the park require you to be a certain height to ride for safety purposes.",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/concepts/classes.md",
+      "name": "classes"
+    },
+    "implementations": [
+      {
+        "track": "Ruby",
+        "slug": "ruby",
+        "exercise": "instance-variables",
+        "url": "https://github.com/exercism/v3/blob/master/languages/ruby/exercises/concept/instance-variables/.docs/instructions.md"
+      }
+    ]
+  },
+  {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/datetimes.appointment-scheduler.md",
     "name": "Appointment scheduler",
     "description": "In this exercise you\u0027ll be working on an appointment scheduler for a beauty salon in New York that opened on September 15th in 2012.",

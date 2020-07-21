@@ -14,6 +14,20 @@
         "uuid": "6787f07b-6fca-48ec-9ed1-f37bb77126f2",
         "concepts": ["comments", "expressions", "cons", "symbols"],
         "prerequisites": []
+      },
+      {
+        "slug": "sameness",
+        "uuid": "d780fb3e-c9f8-11ea-af82-3200111e0c80",
+        "concepts": ["sameness"],
+        "prerequisiites": [
+          "functions",
+          "characters",
+          "strings",
+          "floating-point-numbers",
+          "integers",
+          "cons",
+          "arrays"
+        ]
       }
     ],
     "practice": []
