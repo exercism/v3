@@ -33,5 +33,3 @@
 - The array can be iterated over using a [`foreach` loop][array-foreach].
 - The variable can be updated inside the loop.
 - A [conditional statement][if-statement] can be used inside the loop.
-
-

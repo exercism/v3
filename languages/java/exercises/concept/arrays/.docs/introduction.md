@@ -8,7 +8,7 @@ int[] twoInts = new int[2];
 twoInts[1] = 8;
 
 // Retrieve the second element by index and assign to the int element
-int element = twoInts[1]; 
+int element = twoInts[1];
 ```
 
 Arrays can also be defined using a shortcut notation that allows you to both create the array and set its value. As the compiler can now tell how many elements the array will have, the length can be omitted:

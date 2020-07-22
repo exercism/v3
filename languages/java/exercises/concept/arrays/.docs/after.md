@@ -8,7 +8,7 @@ int[] twoInts = new int[2];
 twoInts[1] = 8;
 
 // Retrieve the second element by index
-int element = twoInts[1]; 
+int element = twoInts[1];
 
 // Check the length of the array
 boolean checkSize = twoInts.length == 2; // => checkSize is true
@@ -81,6 +81,5 @@ A `for` loop does have some advantages over a `foreach` loop:
 Related Topics:
 
 - You should be aware that Java supports [multi-dimensional arrays][multi-dimensional-arrays] like `int[][] arr = new int[3][4];` which can be very useful.
-
 
 [Arrays] https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html
