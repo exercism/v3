@@ -14,8 +14,8 @@ for the middle of the pizza remains relatively constant (200g) but the amount
 needed for the crust increases as the pizza's size does. Every 20cm of crust
 requires 45g of dough.
 
-Lilly is looking to write a function that takes the diameter and number of
-pizzas to make and returns the exact amount of dough (to the nearest gram) that
+Lilly is looking to write a function that takes the number of pizzas to make and
+the diameter and returns the exact amount of dough (to the nearest gram) that
 she'll need. For example, to make 4 pizzas 30cm in diameter:
 
 ```lisp
