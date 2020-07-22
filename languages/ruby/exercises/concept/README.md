@@ -10,7 +10,7 @@ These are the concept exercises that have currently been implemented, as well as
 | ------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------- |
 | [`strings`][concept-exercise-strings]                               | `strings`                            | -                                                       |
 | [`basics`][concept-exercise-basics]                                 | `basics`                             | -                                                       |
-| [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`         | `basics`                                                |
+| [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`         | `booleans`                                              |
 | [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`loops` | `numbers`<br/>`conditionals`                            |
 | [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`each-loops`            | `classes`<br/>`chars`<br/>`booleans`<br/>`conditionals` |
 | [`booleans`][concept-exercise-booleans]                             | `booleans`                           | `instance-variables`                                    |
