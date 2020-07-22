@@ -68,7 +68,7 @@ char[] vowels = new [] { 'a', 'e', 'i', 'o', 'u' };
 foreach (char vowel in vowels)
 {
     // This would result in a compiler error
-    // vowel = 'Y';
+    // vowels = 'Y';
 }
 ```
 
