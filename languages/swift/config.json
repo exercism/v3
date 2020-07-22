@@ -10,7 +10,7 @@
         "slug": "arrays",
         "uuid": "e6143dbc-895e-47aa-b42c-3034e1f872c2",
         "concepts": ["arrays"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["conditionals"]
       },
       {
         "slug": "basics",
