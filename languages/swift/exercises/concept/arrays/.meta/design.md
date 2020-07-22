@@ -27,6 +27,5 @@ Of the primary Swift collection types, we chose to use the `Array` collection ty
 
 ## Prerequisites
 
-This exercise's prerequisites Concepts are:
-
 - `basics`: know how to work with `Int`s and how to assign and update variables and functions.
+- `conditionals`: know how to define an if statement, know how to define a guard statement.

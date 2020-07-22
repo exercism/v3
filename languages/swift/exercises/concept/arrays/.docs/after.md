@@ -11,12 +11,12 @@ var myStringArray: [String] = []
 
 Elements of an array can be accessed individually by supplying the index of the element inside square brackets following the array; array indices are `Int`s and start with `0` for the first (leftmost) element. This subscript notation can be used to get the element at that index as well as to set the element at that index, provided the array was defined as a variable (i.e. using `var`).
 
-Trying to access elements at indices outside the valid range of indices will result in a runtime error that crashes the program. Since any array index access will crash a program, it is common to test arrays to see if the are empty before working with them by checking the `isEmpty` property.
+Trying to access elements at indices outside the valid range of indices will result in a runtime error that crashes the program. Since any invalid array index access will crash a program, it is common to test arrays to see if the are empty before working with them by checking the `isEmpty` property or checking if an index is valid by ensuring that it is greater than or equal to 0 and less than the array's `count` property.
 
 ```swift
 guard !evenInts.isEmpty, !oddInts.isEmpty else { return }
 evenInts[2]
-// returns 6
+// => 6
 oddInts[0] = 27
 // oddInts is now [27, 3, 5, 7, 9, 11, 13]
 

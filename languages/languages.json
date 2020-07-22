@@ -445,6 +445,66 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/namespaces",
+          "slug": "namespaces",
+          "concepts": [
+            {
+              "url": null,
+              "name": "accessibility"
+            },
+            {
+              "url": null,
+              "name": "namespaces"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
+              "name": "classes"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/inheritance.md",
+              "name": "inheritance"
+            },
+            {
+              "url": null,
+              "name": "nested-types"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/nested-types",
+          "slug": "nested-types",
+          "concepts": [
+            {
+              "url": null,
+              "name": "nested-types"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
+              "name": "classes"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
+              "name": "enums"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/interfaces.md",
+              "name": "interfaces"
+            },
+            {
+              "url": null,
+              "name": "properties"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
+              "name": "structs"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/nullability",
           "slug": "nullability",
           "concepts": [
@@ -721,6 +781,42 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/string-formatting",
+          "slug": "string-formatting",
+          "concepts": [
+            {
+              "url": null,
+              "name": "string-formatting"
+            },
+            {
+              "url": null,
+              "name": "verbatim-strings"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "const-readonly"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/inheritance.md",
+              "name": "inheritance"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/time.md",
+              "name": "time"
+            },
+            {
+              "url": null,
+              "name": "varargs"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/strings",
           "slug": "strings",
           "concepts": [
@@ -957,6 +1053,17 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/symbol.md",
               "name": "symbols"
+            }
+          ],
+          "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/sameness",
+          "slug": "sameness",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/sameness.md",
+              "name": "sameness"
             }
           ],
           "prerequisites": []
@@ -1661,6 +1768,30 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/agent",
+          "slug": "agent",
+          "concepts": [
+            {
+              "url": null,
+              "name": "agent"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "processes"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/map.md",
+              "name": "maps"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
+              "name": "structs"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/regular-expressions",
           "slug": "regular-expressions",
           "concepts": [
@@ -2071,10 +2202,6 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
-            },
-            {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
               "name": "constants"
             }
@@ -2152,10 +2279,6 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "basics"
-            },
-            {
-              "url": null,
               "name": "iteration"
             },
             {
@@ -2175,8 +2298,28 @@
           ],
           "prerequisites": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/slice.md",
-              "name": "slices"
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/structs",
+          "slug": "structs",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
+              "name": "structs"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
             }
           ]
         }
@@ -2215,6 +2358,22 @@
             }
           ],
           "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/booleans",
+          "slug": "booleans",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
         },
         {
           "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/strings",
@@ -2564,7 +2723,19 @@
     "slug": "kotlin",
     "url": "https://github.com/exercism/v3/tree/master/languages/kotlin",
     "exercises": {
-      "concept": []
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/kotlin/exercises/concept/basics",
+          "slug": "basics",
+          "concepts": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ],
+          "prerequisites": []
+        }
+      ]
     }
   },
   {
@@ -2629,7 +2800,7 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "boleans"
+              "name": "bools"
             },
             {
               "url": null,
@@ -2654,6 +2825,22 @@
             {
               "url": null,
               "name": "return-keyword"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/bools",
+          "slug": "bools",
+          "concepts": [
+            {
+              "url": null,
+              "name": "bools"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
             }
           ]
         }
@@ -2736,8 +2923,8 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
             }
           ]
         },
@@ -2762,6 +2949,42 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
               "name": "conditionals"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/booleans",
+          "slug": "booleans",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "instance-variables"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/instance-variables",
+          "slug": "instance-variables",
+          "concepts": [
+            {
+              "url": null,
+              "name": "instance-variables"
+            },
+            {
+              "url": null,
+              "name": "nil"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
             }
           ]
         }

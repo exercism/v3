@@ -197,6 +197,12 @@
         "prerequisites": ["enum", "tuples", "if-conditional"]
       },
       {
+        "slug": "agent",
+        "uuid": "1d6be9ec-5b5c-4c81-9bfa-2e3fc78c978f",
+        "concepts": ["agent"],
+        "prerequisites": ["processes", "maps", "structs"]
+      },
+      {
         "slug": "regular-expressions",
         "uuid": "57198686-71c9-4f38-973a-a111435560e7",
         "concepts": ["regular-expressions"],
