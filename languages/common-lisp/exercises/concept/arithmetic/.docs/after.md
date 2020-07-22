@@ -1,14 +1,42 @@
 ## Summary
 
-The goal of this exercise was to get comfortable with prefix-arithmetic in
-Common Lisp and learn about integer and floating-point numbers.
+### Numerical Types
 
-In addition to the traditional addition, subtraction, multiplication, and
-division operations, you encountered different rounding functions as well as
-functions that take the square-root or raise some number to a given power.
+In Common Lisp, like many languages, numbers come in a few of types – two of the
+most basic are:
 
-With these tools, you should be well equipped to handle arithmetic problems in
-Common Lisp.
+- Integers: whole numbers without a decimal point (like `-6`, `0`, `25`, `1234`,
+  etc.)
+- Floating-Point Numbers: fractional or whole numbers including a decimal point (like
+  `3.14`, `-1.7`, `99.99`, `2048.0`)
+
+In general, if you are working with only whole numbers, you should prefer
+integers as they don't suffer from the same loss of precision as floating-point
+numbers do over many calculations.
+
+### Arithmetic & Prefix Notation
+
+Common Lisp uses the standard arithmetic operators for most operations but is
+somewhat unique in using a "prefix-notation" as opposed to the more familiar
+"infix-notion". More visually:
+
+```lisp
+;; Infix-notation (non-lisp languages)
+1 + 2 + 3 + 4 + 5 ; => 15
+;; Prefix-notation (lisp languages)
+(+ 1 2 3 4 5) ; => 15
+```
+
+While prefix notion turns some operations like `2 + 2` into the somewhat
+unfamiliar `(+ 2 2)` form, it makes it much easier to operate on more than one
+number at a time.
+
+### Comparing Numbers
+
+Finally, you may find it useful to compare different numbers using functions
+like `=` (equal), `/=` (not equal to), and `>=` (greater than or equal to). When
+these comparisons are true (as in `(= 1 1)`), they return `T` and when they
+aren't (as in `(> 0 1)`), they return `NIL`.
 
 ## Diving Deeper
 
@@ -47,7 +75,7 @@ touched on in a future exercise, but to hold you over, you can take a peek at
 Cookbook](https://lispcookbook.github.io/cl-cookbook/numbers.html).
 
 If you are looking for an exhaustive list of numerical operations defined by the
-standard, then you can find that [here](http://clhs.lisp.se/Body/12_aa.htm)
+standard, then you can find that [here](http://l1sp.org/cl/12.1.1)
 
 ### A More Idiomatic Approach
 
