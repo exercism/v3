@@ -6,7 +6,6 @@ class BirdCount {
         this.birdsPerDay = birdsPerDay;
     }
 
-
     public int[] getLastWeek() {
         // TODO Please implement the BirdCount.getLastWeek() method
         return null;

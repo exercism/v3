@@ -6,7 +6,6 @@ class BirdCount {
         this.birdsPerDay = birdsPerDay;
     }
 
-
     public int[] getLastWeek() {
         return birdsPerDay;
     }
@@ -15,7 +14,6 @@ class BirdCount {
         if (birdsPerDay.length == 0) {
             return 0;
         }
-
         return birdsPerDay[birdsPerDay.length - 1];
     }
 
@@ -30,7 +28,6 @@ class BirdCount {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -44,7 +41,6 @@ class BirdCount {
         for (int i = 0; i < numberOfDays; i++) {
             total += birdsPerDay[i];
         }
-
         return total;
     }
 
@@ -56,7 +52,6 @@ class BirdCount {
                 total++;
             }
         }
-
         return total;
     }
 }

@@ -7,17 +7,13 @@ import static org.junit.Assert.assertEquals;
 
 public class BirdCountTest {
 
-
     private BirdCount birdCount;
-
     private int lastWeek[] = {0, 2, 5, 3, 7, 8, 4};
-
 
     @Before
     public void setUp() {
         birdCount = new BirdCount(lastWeek);
     }
-
 
     @Test
     public void itTestGetLastWeek() {
@@ -78,6 +74,4 @@ public class BirdCountTest {
         birdCount = new BirdCount(new int[]{1, 2, 3, 3, 2, 1, 4});
         assertEquals(0, birdCount.getBusyDays());
     }
-
-
 }
