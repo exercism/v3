@@ -15,32 +15,43 @@ needed for the crust increases as the pizza's size does. Every 20cm of crust
 requires 45g of dough.
 
 Lilly is looking to write a function that takes the number of pizzas to make and
-the diameter and returns the exact amount of dough (to the nearest gram) that
-she'll need. For example, to make 4 pizzas 30cm in diameter:
+their diameters then returns the exact amount of dough (to the nearest gram)
+that she'll need. For example, to make 4 pizzas 30cm in diameter:
 
 ```lisp
 (dough-calculator 4 30) ; => 1648
 ```
 
+Helpfully, Lilly has worked out the following equation for calculating grams of
+dough (g) from the number of pizzas (n) and their diameters (d):
+
+$$g = n \times \left(\dfrac{45 \pi d}{20} + 200\right)$$
+
 ## 2. A Splash of Sauce
 
 Lilly is astonishingly meticulous when it comes to her sauce application and
-always applies exactly 3ml of sauce to every 10 square centimetres of
+always applies exactly 3ml of sauce to every 10 square centimeters of
 pizza. Ironically, the size of her pizzas can be incredibly inconsistent. Lilly
-needs your help defining a function that calculates the pizza size from the
-amount of sauce applied. For example, given Lilly has used 250ml of sauce:
+needs your help defining a function that calculates the pizza size (the
+diameter) from the amount of sauce applied. For example, given Lilly has used
+250ml of sauce:
 
 ```lisp
-(size-from-sauce 250) ; => 16.29
+(size-from-sauce 250) ; => 32.57
 ```
+
+For this task, Lilly has prepped the following equation relating milliliters of
+sauce applied (s) to the pizza diameter (d):
+
+$$d = \sqrt{\dfrac{40s}{3\pi}}$$
 
 ## 3. Some Cheese, Please
 
 On Lilly's planet, all cheese comes in perfect cubes and is sold by size. (What
 were you expecting? This is an alien planet after all...) Your task is to help
 Lilly calculate how many pizzas she can make using any given cheese
-cube. Mozzarella cheese has a density of 0.5 grams per cubic centimetre and
-every pizza needs 3 grams of cheese per square centimetre. Given the side-length
+cube. Mozzarella cheese has a density of 0.5 grams per cubic centimeter and
+every pizza needs 3 grams of cheese per square centimeter. Given the side-length
 of some cheese cube and the pizzas' diameter, calculate the number of pizzas
 that can be made (always rounded down). For example, given a 25x25x25cm cheese
 cube and pizzas 30cm in diameter:
@@ -48,6 +59,12 @@ cube and pizzas 30cm in diameter:
 ```lisp
 (pizzas-per-cube 25 30) ; => 3
 ```
+
+Once again, Lilly has come to the rescue with an equation calculating the number
+of pizzas (n) of some diameter (d) that can be made from a cheese cube of a
+side-length (l):
+
+$$n = \dfrac{2l^3}{3 \pi d^2}$$
 
 ## 4. A Fair Share
 

@@ -24,11 +24,11 @@
   (is (= (dough-calculator 5 10) 1353)))
 
 (test splash-of-sauces "Calculates the diameter of a pizza from the amount of sauce applied"
-  (is (= (size-from-sauce 250) 16.286750396764d0))
-  (is (= (size-from-sauce 100) 10.300645387285057d0))
-  (is (= (size-from-sauce 330) 18.712051592547777d0))
-  (is (= (size-from-sauce 510) 23.26213245840639d0))
-  (is (= (size-from-sauce 680) 26.86079687357132d0)))
+  (is (= (size-from-sauce 250) 32.573500793528d0))
+  (is (= (size-from-sauce 100) 20.601290774570113d0))
+  (is (= (size-from-sauce 330) 37.424103185095554d0))
+  (is (= (size-from-sauce 510) 46.52426491681278d0))
+  (is (= (size-from-sauce 680) 53.72159374714264d0)))
 
 (test cheese-please "Calculates the number of pizzas of a certain size that can be made from an amount of cheese"
   (is (= (pizzas-per-cube 25 30) 3))
