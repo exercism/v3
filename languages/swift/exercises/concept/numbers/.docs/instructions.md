@@ -33,7 +33,7 @@ The returned monthly rate should be returned as a Double rounded to the nearest 
 
 ## 3. Calculate the number of workdays given a budget, hourly rate and discount
 
-Implement a function,`workdaysIn(budget:hourlyRate:withDiscount:)` , that takes a budget, a hourly rate, and a discount, and calculates how many days of work that covers. The returned number of days should be returned as a Double rounded down to the nearest integer.
+Implement the function `workdaysIn(budget:hourlyRate:withDiscount:)`, that takes a budget, a hourly rate, and a discount, and calculates how many days of work that covers. The returned number of days should be returned as a Double rounded down to the nearest integer.
 
 ```swift
 workdaysIn(budget: 20000, hourlyRate: 80, withDiscount: 11.0)
