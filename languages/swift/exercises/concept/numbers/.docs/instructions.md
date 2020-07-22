@@ -22,7 +22,7 @@ The returned daily rate should be a `Double`.
 
 ## 2. Calculate the monthly rate, given an hourly rate and a discount
 
-Implement a function `monthlyRateFrom(hourlyRate:withDiscount:)` to calculate the monthly rate, and apply a discount:
+Implement the function `monthlyRateFrom(hourlyRate:withDiscount:)` to calculate the monthly rate, and apply a discount:
 
 ```swift
 monthlyRateFrom(hourlyRate: 77, withDiscount: 10.5)
