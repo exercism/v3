@@ -28,4 +28,4 @@
   [modulo function](https://en.wikipedia.org/wiki/Modulo_operation) (`mod`). This
   function gives you the remainder of the division between two numbers.
 - For comparing the result of `mod` to another number, [this page of comparison
-  operators](http://l1sp.org/cl/=). )
+  operators](http://l1sp.org/cl/=).
