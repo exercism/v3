@@ -11,7 +11,7 @@ Discounts are modeled as fractional numbers representing percentage, for example
 
 ## 1. Calculate the daily rate given an hourly rate
 
-Implement a function, `dailyRateFrom(hourlyRate:)` to calculate the daily rate given an hourly rate:
+Implement the function `dailyRateFrom(hourlyRate:)` to calculate the daily rate given an hourly rate:
 
 ```swift
 dailyRateFrom(hourlyRate: 60)
