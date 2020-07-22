@@ -25,7 +25,7 @@ that she'll need. For example, to make 4 pizzas 30cm in diameter:
 Helpfully, Lilly has worked out the following equation for calculating grams of
 dough (g) from the number of pizzas (n) and their diameters (d):
 
-$$g = n \times \left(\dfrac{45 \pi d}{20} + 200\right)$$
+$$g = n \cdot \left(\dfrac{45 \pi d}{20} + 200\right)$$
 
 ## 2. A Splash of Sauce
 
