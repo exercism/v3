@@ -445,6 +445,66 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/namespaces",
+          "slug": "namespaces",
+          "concepts": [
+            {
+              "url": null,
+              "name": "accessibility"
+            },
+            {
+              "url": null,
+              "name": "namespaces"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
+              "name": "classes"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/inheritance.md",
+              "name": "inheritance"
+            },
+            {
+              "url": null,
+              "name": "nested-types"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/nested-types",
+          "slug": "nested-types",
+          "concepts": [
+            {
+              "url": null,
+              "name": "nested-types"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
+              "name": "classes"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
+              "name": "enums"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/interfaces.md",
+              "name": "interfaces"
+            },
+            {
+              "url": null,
+              "name": "properties"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
+              "name": "structs"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/nullability",
           "slug": "nullability",
           "concepts": [
@@ -2300,6 +2360,22 @@
           "prerequisites": []
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/booleans",
+          "slug": "booleans",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/strings",
           "slug": "strings",
           "concepts": [
@@ -2647,7 +2723,19 @@
     "slug": "kotlin",
     "url": "https://github.com/exercism/v3/tree/master/languages/kotlin",
     "exercises": {
-      "concept": []
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/kotlin/exercises/concept/basics",
+          "slug": "basics",
+          "concepts": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ],
+          "prerequisites": []
+        }
+      ]
     }
   },
   {
@@ -2712,7 +2800,7 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "boleans"
+              "name": "bools"
             },
             {
               "url": null,
@@ -2737,6 +2825,22 @@
             {
               "url": null,
               "name": "return-keyword"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/bools",
+          "slug": "bools",
+          "concepts": [
+            {
+              "url": null,
+              "name": "bools"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
             }
           ]
         }
@@ -2819,8 +2923,8 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
             }
           ]
         },

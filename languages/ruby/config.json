@@ -32,7 +32,7 @@
         "slug": "numbers",
         "uuid": "d7108eb2-326c-446d-9140-228e0f220975",
         "concepts": ["numbers", "conditionals"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["booleans"]
       },
       {
         "slug": "floating-point-numbers",

@@ -131,6 +131,24 @@
         ]
       },
       {
+        "slug": "namespaces",
+        "uuid": "dcfd75d2-8264-4445-a95b-718867ec5eb4",
+        "concepts": ["accessibility", "namespaces"],
+        "prerequisites": ["classes", "inheritance", "nested-types"]
+      },
+      {
+        "slug": "nested-types",
+        "uuid": "694cbd8d-677d-4052-960e-69386463a94b",
+        "concepts": ["nested-types"],
+        "prerequisites": [
+          "classes",
+          "enums",
+          "interfaces",
+          "properties",
+          "structs"
+        ]
+      },
+      {
         "slug": "nullability",
         "uuid": "370e7e54-6a96-11ea-bc55-0242ac130003",
         "concepts": ["nullability"],
