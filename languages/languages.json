@@ -3186,6 +3186,46 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
+          "slug": "functions",
+          "concepts": [
+            {
+              "url": null,
+              "name": "multiple-return-values"
+            },
+            {
+              "url": null,
+              "name": "default-parameters"
+            },
+            {
+              "url": null,
+              "name": "variadic-parameters"
+            },
+            {
+              "url": null,
+              "name": "inout-parameters"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/nested_functions.md",
+              "name": "nested-functions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/numbers",
           "slug": "numbers",
           "concepts": [
