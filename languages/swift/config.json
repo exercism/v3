@@ -5,7 +5,14 @@
   "version": 3,
   "online_editor": { "indent_style": "space", "indent_size": 2 },
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+         "slug": "tuples",
+         "uuid": "f371c072-082b-496b-aa58-45b6cba203f6",
+         "concepts": ["tuples"],
+         "prerequisites": ["basics"]
+       }
+    ],
     "practice": []
   }
 }
