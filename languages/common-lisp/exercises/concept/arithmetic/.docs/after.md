@@ -2,7 +2,7 @@
 
 ### Numerical Types
 
-In Common Lisp, like many languages, numbers come in a few of types – two of the
+In Common Lisp, like many languages, numbers come in a few types – two of the
 most basic are:
 
 - Integers: whole numbers without a decimal point (like `-6`, `0`, `25`, `1234`,
