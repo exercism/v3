@@ -1,10 +1,12 @@
 ## 1. Allow changing the expected oven time
 
-- [Default parameter values][default-parameter-values] can be specified by adding `= value` after the parameter's type annotation. Where _value_ is the default you want to use
+- [Default parameter values][default-parameter-values] can be specified in the function's signature.
+- The default value specification is placed after the parameter's type annotation.
 
 ## 2. Allow differing numbers of layers
 
-- [Variadic parameters][variadic-parameters] can be specified by adding `...` after the parameter's type name.
+- [Variadic parameters][variadic-parameters] can be specified in the function's signature.
+- The variadic parameter notation is placed after the parameter's type name.
 - The variadic parameter for a type _T_ will be accessible in the body of the function as an array with elements of type _T_.
   \_ You can get the number of elements in an array named `items` by accessing the count property. I.e. `items.count`.
 

@@ -43,7 +43,7 @@ quantities(layers: "sauce", "noodles", "sauce", "noodles", "meat", "noodles", "m
 
 ## 4. Convert liters to fluid ounces in place
 
-Unfortunately, the sauce you have on hand was made in America, and the volume is listed in fluid ounces instead of liters. To help let you know if you have enough sauce on hand, write a function, `toOz`, that takes an in-out tuple parameter, `(noodles: Int, sauce: Double)`, and converts the quantity of sauce to fluid ounces. Note that there are 33.814 fluid ounces per liter.
+Unfortunately, the sauce you have on hand has the volume is listed in fluid ounces instead of liters. To help let you know if you have enough sauce on hand, write a function, `toOz`, that takes an in-out tuple parameter, `(noodles: Int, sauce: Double)`, and converts the quantity of sauce to fluid ounces. Note that there are 33.814 fluid ounces per liter.
 
 ```swift
 var amount = (noodles 9, sauce 0.8)

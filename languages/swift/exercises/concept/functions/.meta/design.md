@@ -29,3 +29,9 @@ This concept exercise should convey a basic understanding of how to work with fu
 - `tuples`: Know how to create tuples; know how to extract tuple components; know how to decompose tuples; know how to create and extract components of labeled tuples
 - `conditionals-if`: Know how to define an if statement.
 - `conditionals-switch`: Know how to define a switch statement.
+
+## Analyzer
+
+This exercise could benefit from the following rules added to the the analyzer:
+
+- Verify that the `redWine(layers:)` function uses the five requested nested functions.
