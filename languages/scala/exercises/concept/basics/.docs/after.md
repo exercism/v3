@@ -46,7 +46,6 @@ val myCalculator = new Calculator()
 - The last expression within a method is being returned (no `return` keyword required).
 - Methods in Scala can be very short and curly braces are then omitted, if the implementation fits into one line. Of course there can also be multiline methods (consisting of multiple expressions).
 
-
 ```scala
 class Calculator {
   def add(x: Int, y: Int) = x + y
