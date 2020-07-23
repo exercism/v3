@@ -27,7 +27,6 @@
         "uuid": "668463ec-4b73-40cf-b24d-2f3a4bb110f6",
         "concepts": ["bytes", "runes"],
         "prerequisites": [
-          "slices",
           "strings",
           "numbers",
           "iteration",
@@ -63,7 +62,7 @@
         "slug": "constants",
         "uuid": "31a74993-604d-44ae-afb7-fac7168ccf16",
         "concepts": ["constants"],
-        "prerequisites": ["basics", "strings", "numbers"]
+        "prerequisites": ["strings", "numbers"]
       },
       {
         "slug": "context",
@@ -81,13 +80,13 @@
         "slug": "empty-interface",
         "uuid": "97753511-e9b5-4eda-b9a3-398bc0745ab2",
         "concepts": ["empty-interface"],
-        "prerequisites": ["basics", "functions"]
+        "prerequisites": ["functions"]
       },
       {
         "slug": "errors",
         "uuid": "397dc808-7016-4d40-8ac7-4395e12bd19f",
         "concepts": ["errors"],
-        "prerequisites": ["basics", "constants"]
+        "prerequisites": ["constants"]
       },
       {
         "slug": "errors-handling",
@@ -105,7 +104,7 @@
         "slug": "functions",
         "uuid": "95c05588-e03f-4901-a8fe-f8c2d6de14b9",
         "concepts": ["functions"],
-        "prerequisites": ["basics", "numbers"]
+        "prerequisites": ["numbers"]
       },
       {
         "slug": "iteration",
@@ -132,8 +131,8 @@
         "prerequisites": ["functions", "pointers", "structs"]
       },
       {
-        "slug": "mutext",
-        "uuid": "12854e5c-bf0e-4180-a9ae-4dc4744558df",
+        "slug": "mutex",
+        "uuid": null,
         "concepts": ["mutex"],
         "prerequisites": ["defer"]
       },
@@ -177,19 +176,25 @@
         "slug": "slices",
         "uuid": "8bc0c6f6-1891-4688-9ed7-a63e3702f655",
         "concepts": ["slices"],
-        "prerequisites": ["basics", "iteration", "numbers"]
+        "prerequisites": ["iteration", "numbers"]
       },
       {
         "slug": "strings",
+        "uuid": "e09523d2-c91f-11ea-87d0-0242ac130003",
+        "concepts": ["strings"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "strings-advanced",
         "uuid": "b97a271c-4036-4ea8-8c6a-094715a48627",
         "concepts": ["strings"],
-        "prerequisites": ["slices"]
+        "prerequisites": ["basics"]
       },
       {
         "slug": "structs",
         "uuid": "2508aa96-e4e9-444e-9e6b-8b748c4f9305",
         "concepts": ["structs"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["numbers", "conditionals"]
       },
       {
         "slug": "time-and-duration",

@@ -63,6 +63,14 @@ The Ruby concept exercises are based on concepts. The list below contains the co
   - Attributes
   - Instances
   - Constructors
+  - Instance variables
+  - Class methods
+- Advanced classes
+  - Inheritance
+  - Polymorphism
+  - Class variables
+  - Nested classes
+- Modules
 - Arrays
 - Hashes
 - Conditionals
@@ -72,28 +80,15 @@ The Ruby concept exercises are based on concepts. The list below contains the co
   - unless
   - case
   - ternary operator
-- Loops
+- Blocks
+- Procs / lambdas
+- Enumeration
   - `each`
   - `map`
-  - `for`
-  - `unless`
-- Basic IO
-  - `gets`
-  - `p`
-  - `puts`
-  - `print`
+- Loops
+  - `while` / `until`
 - Scope
 - Date and Time
-- Exception handling
-- Custom exceptions
-- Advanced classes
-  - Inheritance
-  - Polymorphism
-  - Instance variables
-  - Class variables
-  - Class methods
-  - Nested classes
-- Modules
-- Blocks
-- Procs
-  - lambdas
+- Exceptions
+  - Handling
+  - Custom exceptions
