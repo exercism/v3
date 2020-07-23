@@ -109,6 +109,12 @@
         ]
       },
       {
+        "slug": "lists",
+        "uuid": "5c438d02-67a6-43b6-9e3c-8ba309c4ea32",
+        "concepts": ["generic-types", "lists"],
+        "prerequisites": ["arrays", "for-loops"]
+      },
+      {
         "slug": "method-overloading",
         "uuid": "3f728065-98d8-472a-a84c-290f05ab1e58",
         "concepts": [
@@ -122,6 +128,24 @@
           "enums",
           "properties",
           "strings"
+        ]
+      },
+      {
+        "slug": "namespaces",
+        "uuid": "dcfd75d2-8264-4445-a95b-718867ec5eb4",
+        "concepts": ["accessibility", "namespaces"],
+        "prerequisites": ["classes", "inheritance", "nested-types"]
+      },
+      {
+        "slug": "nested-types",
+        "uuid": "694cbd8d-677d-4052-960e-69386463a94b",
+        "concepts": ["nested-types"],
+        "prerequisites": [
+          "classes",
+          "enums",
+          "interfaces",
+          "properties",
+          "structs"
         ]
       },
       {
@@ -218,6 +242,18 @@
         "uuid": "1c23e163-ceca-4cce-87ec-2e016db1262b",
         "concepts": ["resource-lifetime"],
         "prerequisites": ["resource-cleanup"]
+      },
+      {
+        "slug": "string-formatting",
+        "uuid": "eb435600-f983-4d55-a2c8-ef8b122334a0",
+        "concepts": ["string-formatting", "verbatim-strings"],
+        "prerequisites": [
+          "const-readonly",
+          "inheritance",
+          "strings",
+          "time",
+          "varargs"
+        ]
       },
       {
         "slug": "strings",
