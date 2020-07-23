@@ -14,6 +14,18 @@
         "uuid": "01924e92-ecc7-4ba6-83f9-f142c0756b9f",
         "concepts": ["basics"],
         "prerequisites": []
+      },
+      {
+        "slug": "booleans",
+        "uuid": "aaf69953-eac8-4016-984e-13b0917fcf01",
+        "concepts": ["booleans"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "strings",
+        "uuid": "2165c331-6b0c-49b8-9555-bad577ec4fc6",
+        "concepts": ["strings"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []

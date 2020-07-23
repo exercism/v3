@@ -17,10 +17,8 @@
 - `numbers`: know of the existence of the two most commonly used number types, `int` and `double`; understand that the former represents whole numbers, and the latter floating-point numbers; know of basic operators such as multiplication, comparison and equality; know how to convert from one numeric type to another; know what implicit and explicit conversions are.
 - `conditionals`: know how to conditionally execute code using an `if` statement.
 
-## Prequisites
+## Prerequisites
 
 This exercise's prerequisites Concepts are:
 
 - `basics`: know how to define methods.
-
-[docs.microsoft.com-numbers]: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/numbers-in-csharp-local

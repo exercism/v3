@@ -16,6 +16,6 @@
 
 - `numbers`: know of the existence of the two most commonly used number types, `Int` and `Double`; understand that the former represents signed whole numbers, and the latter floating-point numbers; know of basic operators such as multiplication, comparison and equality; know how to convert from one numeric type to another using conversion operators.
 
-## Prequisites
+## Prerequisites
 
 - `basics`: know how to define variables, constants, and functions.

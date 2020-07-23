@@ -16,6 +16,24 @@
                 "prerequisites": []
             },
             {
+                "uuid": "05cfc609-3a14-479a-b6fa-6d2a53ad111c",
+                "slug": "boolean-logic",
+                "concepts": ["boolean-logic", "booleans"],
+                "prerequisites": ["functions-introduction"]
+            },
+            {
+                "uuid": "36cbda04-3921-4491-9ec6-76951f00aa00",
+                "slug": "matrices-introduction",
+                "concepts": [
+                    "matrices-introduction",
+                    "matrices-concatenation",
+                    "matrices-indices",
+                    "matrices-iteration",
+                    "matrices-mutation"
+                ],
+                "prerequisites": ["functions-introduction"]
+            },
+            {
                 "uuid": "68001762-8a35-4494-9de4-624ca9efb5cd",
                 "slug": "multiple-dispatch",
                 "concepts": ["multiple-dispatch"],

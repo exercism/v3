@@ -25,6 +25,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "casting",
+        "uuid": "0d63645d-385a-43ea-b89e-448ed608f6ce",
+        "concepts": ["casting"],
+        "prerequisites": ["exceptions", "inheritance", "numbers"]
+      },
+      {
         "slug": "chars",
         "uuid": "e74c6cd6-add7-45d1-abcb-513418e9d2d0",
         "concepts": ["chars", "string-builder"],
@@ -66,6 +72,19 @@
         "prerequisites": ["conditionals", "strings"]
       },
       {
+        "slug": "equality",
+        "uuid": "116e0b8d-21f2-409f-abec-676da014a800",
+        "concepts": ["equality", "sets"],
+        "prerequisites": [
+          "classes",
+          "explicit-casts",
+          "generic-types",
+          "inheritance",
+          "interfaces",
+          "lists"
+        ]
+      },
+      {
         "slug": "flag-enums",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
         "concepts": ["bit-manipulation", "compound-assignment", "flag-enums"],
@@ -90,6 +109,12 @@
         ]
       },
       {
+        "slug": "lists",
+        "uuid": "5c438d02-67a6-43b6-9e3c-8ba309c4ea32",
+        "concepts": ["generic-types", "lists"],
+        "prerequisites": ["arrays", "for-loops"]
+      },
+      {
         "slug": "method-overloading",
         "uuid": "3f728065-98d8-472a-a84c-290f05ab1e58",
         "concepts": [
@@ -106,6 +131,24 @@
         ]
       },
       {
+        "slug": "namespaces",
+        "uuid": "dcfd75d2-8264-4445-a95b-718867ec5eb4",
+        "concepts": ["accessibility", "namespaces"],
+        "prerequisites": ["classes", "inheritance", "nested-types"]
+      },
+      {
+        "slug": "nested-types",
+        "uuid": "694cbd8d-677d-4052-960e-69386463a94b",
+        "concepts": ["nested-types"],
+        "prerequisites": [
+          "classes",
+          "enums",
+          "interfaces",
+          "properties",
+          "structs"
+        ]
+      },
+      {
         "slug": "nullability",
         "uuid": "370e7e54-6a96-11ea-bc55-0242ac130003",
         "concepts": ["nullability"],
@@ -116,6 +159,47 @@
         "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
         "concepts": ["conditionals", "numbers"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "nested-types",
+        "uuid": "694cbd8d-677d-4052-960e-69386463a94b",
+        "concepts": ["nested-types"],
+        "prerequisites": [
+          "classes",
+          "enums",
+          "interfaces",
+          "properties",
+          "structs"
+        ]
+      },
+      {
+        "slug": "object-initializers",
+        "uuid": "a9c3a1c9-19ee-45b2-8189-57e15870a051",
+        "concepts": ["object-initializers"],
+        "prerequisites": ["constructors", "dictionaries", "properties"]
+      },
+      {
+        "slug": "overflow",
+        "uuid": "16f760c1-29b8-4c82-a085-9b4d81002c62",
+        "concepts": ["overflow"],
+        "prerequisites": [
+          "exceptions",
+          "floating-point-numbers",
+          "integral-numbers",
+          "strings"
+        ]
+      },
+      {
+        "slug": "parameters",
+        "uuid": "f5c259fd-a404-432f-922d-781bde34fe08",
+        "concepts": ["parameters"],
+        "prerequisites": [
+          "conditionals",
+          "constructors",
+          "named-parameters",
+          "numbers",
+          "strings"
+        ]
       },
       {
         "slug": "properties",
@@ -130,10 +214,87 @@
         ]
       },
       {
+        "slug": "randomness",
+        "uuid": "d8a43f1e-4ed0-4015-8307-fba1d9cdd117",
+        "concepts": ["randomness"],
+        "prerequisites": ["numbers"]
+      },
+      {
+        "slug": "regular-expressions",
+        "uuid": "c63bb75d-51bd-4d5d-b37d-88e53ee0da69",
+        "concepts": ["regular-expressions"],
+        "prerequisites": [
+          "arrays",
+          "for-loops",
+          "strings",
+          "string-interpolation",
+          "verbatim-strings"
+        ]
+      },
+      {
+        "slug": "resource-cleanup",
+        "uuid": "e99221eb-eecb-4746-9ef6-cc62650e41e1",
+        "concepts": ["resource-cleanup"],
+        "prerequisites": ["exceptions", "inheritance"]
+      },
+      {
+        "slug": "resource-lifetime",
+        "uuid": "1c23e163-ceca-4cce-87ec-2e016db1262b",
+        "concepts": ["resource-lifetime"],
+        "prerequisites": ["resource-cleanup"]
+      },
+      {
+        "slug": "string-formatting",
+        "uuid": "eb435600-f983-4d55-a2c8-ef8b122334a0",
+        "concepts": ["string-formatting", "verbatim-strings"],
+        "prerequisites": [
+          "const-readonly",
+          "inheritance",
+          "strings",
+          "time",
+          "varargs"
+        ]
+      },
+      {
         "slug": "strings",
         "uuid": "eda235a5-37de-4fb6-a5c5-cf7aa2309987",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "structs",
+        "uuid": "1f43f015-fb34-49f6-bc77-7ab2234d90f2",
+        "concepts": ["structs"],
+        "prerequisites": [
+          "classes",
+          "inheritance",
+          "numbers",
+          "sets",
+          "signed-integers"
+        ]
+      },
+      {
+        "slug": "switch-statements",
+        "uuid": "eb9faaec-9754-4df1-8eb1-09ca0ad94665",
+        "concepts": ["switch-statements"],
+        "prerequisites": ["classes", "enums", "inheritance"]
+      },
+      {
+        "slug": "tuples",
+        "uuid": "8bb88ab5-3cde-4ebd-8eef-03323ebfd700",
+        "concepts": ["tuples"],
+        "prerequisites": ["conditionals", "strings"]
+      },
+      {
+        "slug": "time",
+        "uuid": "61dd2e1c-94bb-4c92-95ad-6460a7677884",
+        "concepts": ["time", "timezone"],
+        "prerequisites": [
+          "conditionals-if",
+          "datetime",
+          "strings",
+          "switch-statements"
+        ]
       },
       {
         "slug": "user-defined-exceptions",

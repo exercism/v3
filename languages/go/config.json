@@ -11,22 +11,196 @@
   "exercises": {
     "concept": [
       {
+        "slug": "application-timing",
+        "uuid": "def16220-0da8-419b-bf2c-5b1cbb65b29b",
+        "concepts": ["application-timing"],
+        "prerequisites": ["time-and-duration", "select", "channels"]
+      },
+      {
+        "slug": "basics",
+        "uuid": "6396fe40-ff11-4ff5-b880-9681bce30a6e",
+        "concepts": ["basics"],
+        "prerequisites": []
+      },
+      {
+        "slug": "bytes-and-runes",
+        "uuid": "668463ec-4b73-40cf-b24d-2f3a4bb110f6",
+        "concepts": ["bytes", "runes"],
+        "prerequisites": [
+          "strings",
+          "numbers",
+          "iteration",
+          "functions",
+          "conditionals"
+        ]
+      },
+      {
+        "slug": "booleans",
+        "uuid": "d09a49d4-b69c-40a2-ae7e-8fde4ba4c7c7",
+        "concepts": ["booleans"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "channels",
+        "uuid": "ac8da9af-da1b-4664-99a5-fcd14249b809",
+        "concepts": ["channels"],
+        "prerequisites": ["goroutines", "iteration"]
+      },
+      {
+        "slug": "comments",
+        "uuid": "60186dfa-6a63-4859-a4c4-1e1ed1acf384",
+        "concepts": ["comments"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "conditionals",
+        "uuid": "9e71eb44-1189-423c-b2bb-ba7e92cc98c7",
+        "concepts": ["conditionals-if", "conditionals-switch", "booleans"],
+        "prerequisites": ["numbers", "strings"]
+      },
+      {
+        "slug": "constants",
+        "uuid": "31a74993-604d-44ae-afb7-fac7168ccf16",
+        "concepts": ["constants"],
+        "prerequisites": ["strings", "numbers"]
+      },
+      {
+        "slug": "context",
+        "uuid": "96aaabad-b8b7-431c-ae59-abb813efd272",
+        "concepts": ["context"],
+        "prerequisites": ["time-and-duration", "channels", "select"]
+      },
+      {
+        "slug": "defer",
+        "uuid": "6eea9535-c376-4a12-b937-95e3f3678201",
+        "concepts": ["defer"],
+        "prerequisites": ["anonymous-functions", "functions"]
+      },
+      {
+        "slug": "empty-interface",
+        "uuid": "97753511-e9b5-4eda-b9a3-398bc0745ab2",
+        "concepts": ["empty-interface"],
+        "prerequisites": ["functions"]
+      },
+      {
+        "slug": "errors",
+        "uuid": "397dc808-7016-4d40-8ac7-4395e12bd19f",
+        "concepts": ["errors"],
+        "prerequisites": ["constants"]
+      },
+      {
+        "slug": "errors-handling",
+        "uuid": "5e46816e-fa82-4348-aa5c-d4f7e3a2a6e4",
+        "concepts": ["errors-handling"],
+        "prerequisites": ["errors", "nil"]
+      },
+      {
+        "slug": "floating-point",
+        "uuid": "aa8dbe3e-8395-45b9-a4f6-62e12070ec4f",
+        "concepts": ["floating-point"],
+        "prerequisites": ["numbers", "conditionals"]
+      },
+      {
+        "slug": "functions",
+        "uuid": "95c05588-e03f-4901-a8fe-f8c2d6de14b9",
+        "concepts": ["functions"],
+        "prerequisites": ["numbers"]
+      },
+      {
+        "slug": "iteration",
+        "uuid": "8cbf6ed0-2093-498d-b0c0-e19236439e11",
+        "concepts": ["iteration"],
+        "prerequisites": ["conditionals", "functions", "anonymous-functions"]
+      },
+      {
+        "slug": "interfaces",
+        "uuid": "500d3bc3-9f8b-462c-91ff-bb38ea69686f",
+        "concepts": ["interfaces"],
+        "prerequisites": ["methods", "error", "empty-interfaces"]
+      },
+      {
+        "slug": "maps",
+        "uuid": "8c1da631-3600-405b-83f7-21fa76bf05b6",
+        "concepts": ["maps"],
+        "prerequisites": ["numbers", "conditionals", "functions"]
+      },
+      {
+        "slug": "methods",
+        "uuid": "29761fda-6238-4dba-a229-2dbaa661515f",
+        "concepts": ["methods"],
+        "prerequisites": ["functions", "pointers", "structs"]
+      },
+      {
+        "slug": "mutex",
+        "uuid": null,
+        "concepts": ["mutex"],
+        "prerequisites": ["defer"]
+      },
+      {
+        "slug": "nil",
+        "uuid": "7b265cc8-8f88-4de1-b653-10a384e6c7e2",
+        "concepts": ["nil"],
+        "prerequisites": ["basics"]
+      },
+      {
         "slug": "numbers",
         "uuid": "88215fa2-eba8-430e-988f-21a924f18f7b",
         "concepts": ["numbers", "conditionals"],
         "prerequisites": ["basics"]
       },
       {
+        "slug": "panic-and-recover",
+        "uuid": "9d05598d-d450-459b-8ae1-4cbf91b5d122",
+        "concepts": ["panic", "recover"],
+        "prerequisites": ["defer", "type-casting"]
+      },
+      {
+        "slug": "pointers",
+        "uuid": "b1619ab0-2306-4d1d-bbcd-1d70ea38fa98",
+        "concepts": ["pointers", "functions"],
+        "prerequisites": ["nil"]
+      },
+      {
+        "slug": "reflection",
+        "uuid": "a5b439c7-1c8f-4b40-9fef-1ae9761b67f6",
+        "concepts": ["reflection"],
+        "prerequisites": ["interfaces", "empty-interfaces"]
+      },
+      {
+        "slug": "goroutines",
+        "uuid": "1f2fdf44-4532-47aa-9a42-ec97519ad27a",
+        "concepts": ["goroutines"],
+        "prerequisites": ["functions", "iteration", "anonymous-functions"]
+      },
+      {
         "slug": "slices",
         "uuid": "8bc0c6f6-1891-4688-9ed7-a63e3702f655",
         "concepts": ["slices"],
-        "prerequisites": ["arrays", "numbers"]
+        "prerequisites": ["iteration", "numbers"]
       },
       {
         "slug": "strings",
+        "uuid": "e09523d2-c91f-11ea-87d0-0242ac130003",
+        "concepts": ["strings"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "strings-advanced",
         "uuid": "b97a271c-4036-4ea8-8c6a-094715a48627",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "structs",
+        "uuid": "2508aa96-e4e9-444e-9e6b-8b748c4f9305",
+        "concepts": ["structs"],
+        "prerequisites": ["numbers", "conditionals"]
+      },
+      {
+        "slug": "time-and-duration",
+        "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
+        "concepts": ["time"],
+        "prerequisites": ["number", "strings", "functions"]
       }
     ],
     "practice": []

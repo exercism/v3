@@ -114,9 +114,9 @@ For more information, watch [this video][video-docs-hints.md] and check [this ex
 
 ### `.docs/after.md`
 
-**Purpose:** Provide more information about the concept(s) for a student to learn from.
+**Purpose:** Provide information about the concept(s) for a student to learn from.
 
-Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included.
+Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. At a minimum, this file should contain all information that is introduced in the [`.docs/introduction.md` document](#docsintroductionmd).
 
 This document can also link to any additional resources that might be interesting to the student in the context of the exercise, such as:
 
@@ -155,7 +155,9 @@ For more information, watch [this video][video-meta-design.md] and check [this e
 This file contains meta information on the exercise:
 
 - The exercise's author(s) (required)
+  - Including reviewers if their reviews substantially change the exercise (to the extent where it feels like "you got there together")
 - The exercise's contributor(s) (optional)
+  - Including reviewers if their reviews are meaningful/actionable/actioned.
 - Which exercise(s) it was forked from (required if the exercise is forked)
 - Language version requirements (optional)
 
@@ -243,9 +245,9 @@ For more information, watch [this video][video-tests-file] and check [this examp
 
 **Purpose:** Provide an idiomatic implementation that passes all the tests.
 
-- The implementation must be _idiomatic_.
-- The code should be as simple as possible.
-- Only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
+- This implementation is the target code that we want a student to aim for.
+- Mentors will be shown this code as the "target" when writing feedback
+- The implementation should only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
 - The example file is _not_ shown to the student when doing in-browser coding and is _not_ downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-example-file] and check [this example file][example-file].
