@@ -73,8 +73,9 @@ global foo
 ```
 
 When a function is called, the arguments are passed in the following order:
-`rdi`, `rsi`, `rdx`, `r8`, and `r9`. Here's an example of a function that takes
-a single argument and returns it, also known as an identity function:
+`rdi`, `rsi`, `rdx`, `rcx`, `r8`, and `r9`. Here's an example of a function
+that takes a single argument and returns it, also known as an identity
+function:
 
 ```nasm
 global identity
