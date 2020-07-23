@@ -19,7 +19,7 @@ let stringOpt: String? = nil
 intOpt = stringOpt
 // Compiler error: Cannot assign value of type 'String?' to type 'Int?'
 
-intopt == stringOpt
+intOpt == stringOpt
 // Compiler error: Binary operator '==' cannot be applied to operands of type 'Int?' and 'String?'
 ```
 
