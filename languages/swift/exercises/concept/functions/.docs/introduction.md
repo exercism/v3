@@ -1,17 +1,4 @@
-We have seen in the `basics` exercise how functions in Swift are defined using the `func` keyword followed by parentheses enclosed list of parameter names where these names include an optional argument label and a parameter name followed by a type annotation and the body of the function enclosed in curly braces. E.g.
-
-```swift
-func add(_ x: Int, and y: Int, doubleResult: Bool) -> Int {
-  let sum = x + y
-  if doubleResult {
-    return sum * 2
-  } else {
-    return sum
-  }
-
-let twentySix = add(6, and: 7, doubleResult: true)
-}
-```
+We have seen in the `basics` exercise how functions in Swift are defined. Here we will look at some additional features of functions in Swift.
 
 ## Multiple return values
 
@@ -94,23 +81,22 @@ Functions may be defined inside of other functions. This is commonly used to cre
 These functions are defined and called just like normal functions, but are not visible outside the enclosing function.
 
 ```swift
-func makePangram(_ str: String) -> String {
-  func missingLetters() -> String {
-    let base = str.lowercased() + "isay"
-    var missing = ""
-    for char in "abcdefghijklmnopqrstuvwxyz" {
-      if char.isLetter && !base.contains(char) {
-        missing.append(char)
-      }
+func makeNumber(_ bits: [Bool]) -> Int {
+  func double(_ x: Int) -> Int { 2 * x }
+  func add(_ x: Int) -> Int { x + 1 }
+
+  var number = 0
+  for bit in bits {
+    number = double(number)
+    if bit {
+      number = add(number)
     }
-    print("missing:", missing)
-    return missing
   }
-  return "\(str) I say, \"\(missingLetters())\""
+  return number
 }
 
-makePangram("The quick brown fox jumped over the lazy dog.")
-// => "The quick brown fox jumped over the lazy dog. I say, """
-makePangram("Zelda quits. Just as you were awakening.")
-// => "Zelda quits. Just as you were awakening. I say, "bcfhmpvx""
+makeNumber([true, false, true, true])
+// => 11
+makeNumber([true, true, false, false, false, true, true])
+// => 99
 ```

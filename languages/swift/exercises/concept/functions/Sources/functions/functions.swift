@@ -1,9 +1,9 @@
-// Implement function remainingMinutesInOven
+// TODO: define the 'remainingMinutesInOven' function
 
-// Implement function preparationTimeInMinutes
+// TODO: define the 'preparationTimeInMinutes' function
 
-// Implement function quantities
+// TODO: define the 'quantities' function
 
-// Implement function toOz
+// TODO: define the 'toOz' function
 
-// Implement function redWine
+// TODO: define the 'redWine' function
