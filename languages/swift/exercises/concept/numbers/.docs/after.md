@@ -1,12 +1,12 @@
 ## Numbers
 
-Swift contains many basic numeric types that can represent sets of either integer or floating-point values, where different types may be choosen depending on the size of value you require and the architecture of the computer where the application is running (e.g. 32-bit or 64-bit).
+Swift contains many basic numeric types that can represent sets of either integer or floating-point values, where different types may be chosen depending on the size of value you require and the architecture of the computer where the application is running (e.g. 32-bit or 64-bit).
 
 ## Integer types:
 
-Swift offers signed and unsigned integer types in 8, 16, 32, and 64 bit sizes named `IntX` or `UIntX` where _X_ is the numer of bits and a leading U specifies unsigned integers. Swift also offers the `Int` and `UInt` types which are the signed and unsigned integers with a number of bits equal to the native machine word size (64 bits on most modern computers).
+Swift offers signed and unsigned integer types in 8, 16, 32, and 64 bit sizes named `IntX` or `UIntX` where _X_ is the number of bits and a leading U specifies unsigned integers. Swift also offers the `Int` and `UInt` types which are the signed and unsigned integers with a number of bits equal to the native machine word size (64 bits on most modern computers).
 
-The default integer type in Swift is `Int`, and it is preferred to use `Int` rather than `UInt` even if you know that your valuse will be non-negative unless you scpecifically need values larger than the maximum `Int` value (`2147483647` on 32 bit systems `9223372036854775807` on 64 bit systems. According to Apple,
+The default integer type in Swift is `Int`, and it is preferred to use `Int` rather than `UInt` even if you know that your values will be non-negative unless you specifically need values larger than the maximum `Int` value (`2147483647` on 32 bit systems `9223372036854775807` on 64 bit systems. According to Apple,
 
 > A consistent use of Int for integer values aids code interoperability, avoids the need to convert between different number types, and matches integer type inference
 
@@ -42,11 +42,11 @@ let y = 42.0       // y is a Double
 let z: Double = 42 // z is a Double
 ```
 
-You casn read more about this in [A Tour of Swift: Type Safety and Inference][typeinference].
+You can read more about this in [A Tour of Swift: Type Safety and Inference][typeinference].
 
 ## Numeric Literals
 
-Integers in Swift may be typed out in many ways, including as decimals, hexadecimals, binary, or octal numbers. Floating-point numbers may be typeed in decimal or hexadecimal.
+Integers in Swift may be typed out in many ways, including as decimals, hexadecimals, binary, or octal numbers. Floating-point numbers may be typed in decimal or hexadecimal.
 
 Numeric literals may also include the underscore character (`_`) which is used to group numbers and improve readability. E.g. rather than write `18093402034`, one can more clearly write `18_093_402_034`.
 
@@ -76,7 +76,7 @@ print("iPi:", iPi, "is of type:", type(of: iPi))
 // Output: fiPi: 3 is of type: Int
 ```
 
-Note that in some cases, where the value is out of range for the target type, attempting to convert types will lead to an error. mIf the compiler can detect the problem, the code will fail to compile, otherwise, a runtime error will occur. E.g.
+Note that in some cases, where the value is out of range for the target type, attempting to convert types will lead to an error. If the compiler can detect the problem, the code will fail to compile, otherwise, a runtime error will occur. E.g.
 
 ```swift
 let tooBigByte = Int8(300)
