@@ -30,6 +30,18 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "functions",
+        "uuid": "cd7e4e29-6b1e-41c9-8815-f3788e7727ce",
+        "concepts": [
+          "multiple-return-values",
+          "default-parameters",
+          "variadic-parameters",
+          "inout-parameters",
+          "nested-functions"
+        ],
+        "prerequisites": ["arrays", "conditionals", "tuples"]
+      },
+      {
         "slug": "numbers",
         "uuid": "3bdad781-47e1-493a-834d-ca6ac8361ffd",
         "concepts": ["numbers"],
