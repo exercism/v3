@@ -283,3 +283,4 @@ The concept exercises use the following concepts:
 [switch-statements]: ../exercises/concept/switch-statements/.meta/design.md
 [exercise-time]: ../exercises/concept/time/.meta/design.md
 [exercise-tuples]: ../exercises/concept/tuples/.meta/design.md
+[exercise-user-defined-exceptions]: ../exercises/concept/user-defined-exceptions/.meta/design.md
