@@ -28,7 +28,7 @@ Message("[WARNING]:  Disk almost full\r\n")
 
 ## 2. Get the message length in characters
 
-Implement a method to return a log line's message length:
+Implement the `LogLevel function to return a log line's message length:
 
 ```go
 Strings.LogLevel("[ERROR]: Invalid operation \n")
