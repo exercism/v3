@@ -2,159 +2,161 @@
 
 ## Concepts
 
-The C# concept exercises are based on concepts. The list below contains the concepts that have been identified for the C# language. The _(text)_ in parentheses indicates the exercise to which they have been assigned.
+The C# concept exercises are based on concepts. The list below contains the concepts that have been identified for the C# language.
 
 _(Please do not modify this document. it is automatically generated. All text except the concept learning objectives is sourced
-from [exercises.json](./exercises.json) which should be updated manually when a concept is added or an issue or new design is created
-and learning objectives are scraped from the concept definition text in each exercise's design.md document.)_
+                            from [exercises.json](./exercises.json) which should be updated manually when a concept is added or an issue or new design is created
+                            and learning objectives are scraped from the concept definition text in each exercise's design.md document)_.
 
 ### Introductory Concepts
 
-- arrays _(arrays)_ - [Design][arrays]
-- assignment _(numbers)_ - [Design][numbers]
-- base-class-library _(dictionaries)_ - [Design][dictionaries]
-- basics _(basics)_ - [Design][basics]
-- booleans _(booleans)_ - [Design][booleans]
-- booleans _(booleans)_ - [Design][booleans]
-- casting _(casting)_ - [Issue][casting]
-- chars _(chars)_ - [Design][chars]
-- classes _(classes)_ - [Design][classes]
-- collections _(lists)_ - [Issue][lists]
-- comments _(basics)_ - [Design][basics]
-- conditionals _(numbers)_ - [Design][numbers]
-- conditionals-switch _(conditionals-switch)_ - [Design][conditionals-switch]
-- conditionals-ternary _(conditionals-ternary)_ - [Issue][conditionals-ternary]
-- conditionals-while _(floating-point-numbers)_ - [Design][floating-point-numbers]
-- constants _(constants)_ - [Issue][constants]
-- constructors _(constructors)_ - [Design][constructors]
-- cross-platform _(time)_ - [Design][time]
-- dates _(dates)_ - [Design][dates]
-- default-value _(classes)_ - [Design][classes]
-- dictionaries _(dictionaries)_ - [Design][dictionaries]
-- encapsulation _(classes)_ - [Design][classes]
-- enums _(enums)_ - [Design][enums]
-- equality _(equality)_ - [Design][equality]
-- exceptions _(exceptions)_ - [Issue][exceptions]
-- explicit-interfaces _(interfaces)_ - [Issue][interfaces]
-- expression-bodied-members _(expression-bodied-members)_ - [Issue][expression-bodied-members]
-- fields _(classes)_ - [Design][classes]
-- flag-enums _(flag-enums)_ - [Design][flag-enums]
-- floating-point-numbers _(floating-point-numbers)_ - [Design][floating-point-numbers]
-- for-loops _(arrays)_ - [Design][arrays]
-- foreach-loops _(arrays)_ - [Design][arrays]
-- formatting-types _(string-formatting)_ - [Issue][string-formatting]
-- functions _(basics)_ - [Design][basics]
-- implicit-casting _(casting)_ - [Issue][casting]
-- imports _(namespaces)_ - [Issue][namespaces]
-- inheritance _(inheritance)_ - [Design][inheritance]
-- interfaces _(interfaces)_ - [Issue][interfaces]
-- interpolation _(string-formatting)_ - [Issue][string-formatting]
-- lists _(lists)_ - [Issue][lists]
-- marker-interfaces _(equality)_ - [Design][equality]
-- math-operators _(numbers)_ - [Design][numbers]
-- method-overloading _(method-overloading)_ - [Design][method-overloading]
-- mutation _(basics)_ - [Design][basics]
-- named-arguments _(parameters)_ - [Design][parameters]
-- namespaces _(namespaces)_ - [Issue][namespaces]
-- nested-types _(nested-types)_ - [Issue][nested-types]
-- null _(null)_ - [Design][null]
-- null-coalescing _(null)_ - [Design][null]
-- null-conditional _(null)_ - [Design][null]
-- null-forgiving _(null)_ - [Design][null]
-- nullable-values _(null)_ - [Design][null]
-- numbers _(numbers)_ - [Design][numbers]
-- numbers _(numbers)_ - [Design][numbers]
-- object-initializers _(object-initializers)_ - [Design][object-initializers]
-- objects _(classes)_ - [Design][classes]
-- operator-overload _(operator-overload)_ - [Issue][operator-overload]
-- optional-arguments _(parameters)_ - [Design][parameters]
-- out-parameters _(parameters)_ - [Design][parameters]
-- overflow _(overflow)_ - [Issue][overflow]
-- parameters _(parameters)_ - [Design][parameters]
-- polymorphism _(inheritance)_ - [Design][inheritance]
-- properties _(properties)_ - [Design][properties]
-- randomness _(randomness)_ - [Design][randomness]
-- regular-expressions _(regular-expressions)_ - [Issue][regular-expressions]
-- resource-cleanup _(resource-cleanup)_ - [Design][resource-cleanup]
-- resource-lifetime _(resource-lifetime)_ - [Issue][resource-lifetime]
-- return-values _(basics)_ - [Design][basics]
-- scoping _(basics)_ - [Design][basics]
-- sets _(equality)_ - [Design][equality]
-- signed-integers _(signed-integers)_ - [Issue][signed-integers]
-- state _(classes)_ - [Design][classes]
-- string-builder _(string-formatting)_ - [Issue][string-formatting]
-- string-formatting _(string-formatting)_ - [Issue][string-formatting]
-- strings _(strings)_ - [Design][strings]
-- structs _(structs)_ - [Issue][structs]
-- time _(time)_ - [Design][time]
-- tuples _(tuples)_ - [Design][tuples]
-- type-inference _(basics)_ - [Design][basics]
-- unsigned-integers _(signed-integers)_ - [Issue][signed-integers]
-- user-defined-exceptions _(user-defined-exceptions)_ - [Design][user-defined-exceptions]
-- user-defined-exceptions2 _(user-defined-exceptions2)_ - [Design][user-defined-exceptions2]
-- variables _(basics)_ - [Design][basics]
-- verbatim-strings _(string-formatting)_ - [Issue][string-formatting]
-- visibility _(classes)_ - [Design][classes]
+- arrays _(arrays)_ - [Design][design-arrays], [background][tnc-arrays]
+- assignment _(numbers)_ - [Design][design-numbers]
+- base-class-library _(dictionaries)_ - [Design][design-dictionaries]
+- basics _(basics)_ - [Design][design-basics]
+- booleans _(booleans)_ - [Design][design-booleans], [background][tnc-booleans]
+- booleans _(booleans)_ - [Design][design-booleans]
+- casting _(casting)_ - [Issue][issue-casting]
+- chars _(chars)_ - [Design][design-chars], [background][tnc-chars]
+- classes _(classes)_ - [Design][design-classes], [background][tnc-classes]
+- collections _(lists)_ - [Issue][issue-lists]
+- comments _(basics)_ - [Design][design-basics]
+- conditionals _(numbers)_ - [Design][design-numbers]
+- conditionals-switch _(conditionals-switch)_ - [Design][design-conditionals-switch]
+- conditionals-ternary _(conditionals-ternary)_ - [Issue][issue-conditionals-ternary], [background][tnc-conditionals-ternary]
+- conditionals-while _(floating-point-numbers)_ - [Design][design-floating-point-numbers]
+- constants _(constants)_ - [Issue][issue-constants]
+- constructors _(constructors)_ - [Design][design-constructors]
+- cross-platform _(time)_ - [Design][design-time]
+- dates _(dates)_ - [Design][design-dates]
+- default-value _(classes)_ - [Design][design-classes]
+- dictionaries _(dictionaries)_ - [Design][design-dictionaries], [background][tnc-dictionaries]
+- encapsulation _(classes)_ - [Design][design-classes], [background][tnc-encapsulation]
+- enums _(enums)_ - [Design][design-enums]
+- equality _(equality)_ - [Design][design-equality], [background][tnc-equality]
+- exceptions _(exceptions)_ - [Issue][issue-exceptions]
+- explicit-interfaces _(interfaces)_ - [Issue][issue-interfaces]
+- expression-bodied-members _(expression-bodied-members)_ - [Issue][issue-expression-bodied-members]
+- fields _(classes)_ - [Design][design-classes]
+- flag-enums _(flag-enums)_ - [Design][design-flag-enums]
+- floating-point-numbers _(floating-point-numbers)_ - [Design][design-floating-point-numbers]
+- for-loops _(arrays)_ - [Design][design-arrays], [background][tnc-for-loops]
+- foreach-loops _(arrays)_ - [Design][design-arrays], [background][tnc-foreach-loops]
+- formatting-types _(string-formatting)_ - [Issue][issue-string-formatting]
+- functions _(basics)_ - [Design][design-basics], [background][tnc-functions]
+- implicit-casting _(casting)_ - [Issue][issue-casting]
+- imports _(namespaces)_ - [Issue][issue-namespaces]
+- inheritance _(inheritance)_ - [Design][design-inheritance], [background][tnc-inheritance]
+- interfaces _(interfaces)_ - [Issue][issue-interfaces], [background][tnc-interfaces]
+- interpolation _(string-formatting)_ - [Issue][issue-string-formatting]
+- lists _(lists)_ - [Issue][issue-lists], [background][tnc-lists]
+- marker-interfaces _(equality)_ - [Design][design-equality]
+- math-operators _(numbers)_ - [Design][design-numbers]
+- method-overloading _(method-overloading)_ - [Design][design-method-overloading]
+- mutation _(basics)_ - [Design][design-basics], [background][tnc-mutation]
+- named-arguments _(parameters)_ - [Design][design-parameters]
+- namespaces _(namespaces)_ - [Issue][issue-namespaces]
+- nested-types _(nested-types)_ - [Issue][issue-nested-types]
+- null _(null)_ - [Design][design-null]
+- null-coalescing _(null)_ - [Design][design-null]
+- null-conditional _(null)_ - [Design][design-null]
+- null-forgiving _(null)_ - [Design][design-null]
+- nullable-values _(null)_ - [Design][design-null]
+- numbers _(numbers)_ - [Design][design-numbers]
+- numbers _(numbers)_ - [Design][design-numbers]
+- object-initializers _(object-initializers)_ - [Design][design-object-initializers]
+- objects _(classes)_ - [Design][design-classes], [background][tnc-objects]
+- operator-overload _(operator-overload)_ - [Issue][issue-operator-overload]
+- optional-arguments _(parameters)_ - [Design][design-parameters], [background][tnc-optional-arguments]
+- out-parameters _(parameters)_ - [Design][design-parameters]
+- overflow _(overflow)_ - [Issue][issue-overflow]
+- parameters _(parameters)_ - [Design][design-parameters]
+- polymorphism _(inheritance)_ - [Design][design-inheritance], [background][tnc-polymorphism]
+- properties _(properties)_ - [Design][design-properties]
+- randomness _(randomness)_ - [Design][design-randomness]
+- regular-expressions _(regular-expressions)_ - [Issue][issue-regular-expressions]
+- resource-cleanup _(resource-cleanup)_ - [Design][design-resource-cleanup]
+- resource-lifetime _(resource-lifetime)_ - [Issue][issue-resource-lifetime]
+- return-values _(basics)_ - [Design][design-basics]
+- scoping _(basics)_ - [Design][design-basics]
+- sets _(equality)_ - [Design][design-equality], [background][tnc-sets]
+- signed-integers _(signed-integers)_ - [Issue][issue-signed-integers]
+- state _(classes)_ - [Design][design-classes], [background][tnc-state]
+- string-builder _(string-formatting)_ - [Issue][issue-string-formatting]
+- string-formatting _(string-formatting)_ - [Issue][issue-string-formatting]
+- strings _(strings)_ - [Design][design-strings], [background][tnc-strings]
+- structs _(structs)_ - [Issue][issue-structs]
+- time _(time)_ - [Design][design-time]
+- tuples _(tuples)_ - [Design][design-tuples], [background][tnc-tuples]
+- type-inference _(basics)_ - [Design][design-basics], [background][tnc-type-inference]
+- unsigned-integers _(signed-integers)_ - [Issue][issue-signed-integers]
+- user-defined-exceptions _(user-defined-exceptions)_ - [Design][design-user-defined-exceptions]
+- user-defined-exceptions2 _(user-defined-exceptions2)_ - [Design][design-user-defined-exceptions2]
+- variables _(basics)_ - [Design][design-basics], [background][tnc-variables]
+- verbatim-strings _(string-formatting)_ - [Issue][issue-string-formatting]
+- visibility _(classes)_ - [Design][design-classes]
 
 ### Essential Concepts
 
-- anonymous-types _(anonymous-types)_ -
-- async _(async)_ -
-- attributes-advanced _(attributes-advanced)_ - [Issue][attributes-advanced]
-- collections-combining _(linq)_ -
-- collections-filtering _(linq)_ -
-- collections-mapping _(linq)_ -
-- collections-ordering _(linq)_ -
-- collections-reduciing _(linq)_ -
-- contravariance _(contravariance)_ -
-- covariance _(covariance)_ -
-- delegates _(delegates)_ -
-- enumerables _(enumerables)_ -
-- events _(events)_ -
-- extension-methods _(extension-methods)_ - [Issue][extension-methods]
-- generics-advanced _(generics-advanced)_ -
-- higherl-order-functions _(higherl-order-functions)_ -
-- indexers _(indexers)_ -
-- lambdas _(lambdas)_ -
-- linq _(linq)_ -
-- linq-advanced _(linq-advanced)_ -
-- linq-query-syntax _(linq-query-syntax)_ -
-- linq-select-many _(linq-select-many)_ -
-- locks _(locks)_ -
-- pattern-matching-tuples _(pattern-matching-tuples)_ - [Issue][pattern-matching-tuples]
-- pattern-matching-types _(pattern-matching-types)_ - [Issue][pattern-matching-types]
-- recursion _(recursion)_ -
-- reflection _(reflection)_ -
-- serialization _(serialization)_ -
-- statics _(statics)_ -
-- streams _(streams)_ -
-- tasks _(tasks)_ -
-- thread-safety _(thread-safety)_ -
-- yield _(yield)_ -
+- anonymous-types _(anonymous-types)_
+- async _(async)_
+- attributes-advanced _(attributes-advanced)_ - [Issue][issue-attributes-advanced]
+- collections-combining _(linq)_
+- collections-filtering _(linq)_
+- collections-mapping _(linq)_
+- collections-ordering _(linq)_
+- collections-reduciing _(linq)_
+- contravariance _(contravariance)_
+- covariance _(covariance)_
+- delegates _(delegates)_
+- enumerables _(enumerables)_
+- events _(events)_
+- extension-methods _(extension-methods)_ - [Issue][issue-extension-methods]
+- generics-advanced _(generics-advanced)_
+- higherl-order-functions _(higherl-order-functions)_ - [background][tnc-higherl-order-functions]
+- indexers _(indexers)_
+- lambdas _(lambdas)_ - [background][tnc-lambdas]
+- linq _(linq)_ - [background][tnc-linq]
+- linq-advanced _(linq-advanced)_
+- linq-query-syntax _(linq-query-syntax)_
+- linq-select-many _(linq-select-many)_
+- locks _(locks)_
+- pattern-matching-tuples _(pattern-matching-tuples)_ - [Issue][issue-pattern-matching-tuples]
+- pattern-matching-types _(pattern-matching-types)_ - [Issue][issue-pattern-matching-types]
+- recursion _(recursion)_ - [background][tnc-recursion]
+- reflection _(reflection)_
+- serialization _(serialization)_
+- statics _(statics)_
+- streams _(streams)_
+- tasks _(tasks)_
+- thread-safety _(thread-safety)_
+- yield _(yield)_
 
 ### Advanced Concepts
 
-- aysnc-iterators _(aysnc-iterators)_ -
-- boxing _(boxing)_ -
-- by-ref _(by-ref)_ -
-- destructors _(destructors)_ -
-- dispose-pattern _(dispose-pattern)_ -
-- dynamic _(dynamic)_ -
-- immutability _(immutability)_ -
-- immutable-collections _(immutable-collections)_ -
-- lazy<T> _(lazy<T>)_ -
-- local-functions _(local-functions)_ -
-- memory-allocation _(memory-allocation)_ - [Issue][memory-allocation]
-- multi-dimensional-array _(multi-dimensional-array)_ -
-- pointsers _(pointsers)_ - [Issue][pointsers]
-- queues _(queues)_ -
-- ranges _(ranges)_ -
-- ref-local _(ref-local)_ -
-- resource-pooling _(resource-pooling)_ - [Issue][resource-pooling]
-- slicing _(slicing)_ -
-- stacks _(stacks)_ -
-- time-zones _(time-zones)_ -
-- unsafe-code _(unsafe-code)_ -
+- aysnc-iterators _(aysnc-iterators)_
+- boxing _(boxing)_
+- by-ref _(by-ref)_
+- destructors _(destructors)_
+- dispose-pattern _(dispose-pattern)_
+- dynamic _(dynamic)_
+- immutability _(immutability)_ - [background][tnc-immutability]
+- immutable-collections _(immutable-collections)_
+- lazy<T> _(lazy<T>)_
+- local-functions _(local-functions)_ - [background][tnc-local-functions]
+- memory-allocation _(memory-allocation)_ - [Issue][issue-memory-allocation], [background][tnc-memory-allocation]
+- multi-dimensional-array _(multi-dimensional-array)_
+- pointsers _(pointsers)_ - [Issue][issue-pointsers]
+- queues _(queues)_ - [background][tnc-queues]
+- ranges _(ranges)_ - [background][tnc-ranges]
+- ref-local _(ref-local)_
+- resource-pooling _(resource-pooling)_ - [Issue][issue-resource-pooling]
+- slicing _(slicing)_
+- stacks _(stacks)_ - [background][tnc-stacks]
+- time-zones _(time-zones)_
+- unsafe-code _(unsafe-code)_
+
+## Learning Objectives
 
 | Concept                   | Learning Objectives                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -197,53 +199,89 @@ and learning objectives are scraped from the concept definition text in each exe
 | `user-defined-exceptions` | know how to define a user-defined exception.;know how to define a user-defined exception.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | `verbatim-strings`        | the syntax of verbatim strings.;the syntax of verbatim strings.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-[arrays]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/arrays/.meta/design.md
-[attributes-advanced]: https://github.com/exercism/v3/issues/1176
-[basics]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/basics/.meta/design.md
-[booleans]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/booleans/.meta/design.md
-[casting]: https://github.com/exercism/v3/issues/1142
-[chars]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/chars/.meta/design.md
-[classes]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/classes/.meta/design.md
-[conditionals-switch]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/switch-statements/.meta/design.md
-[conditionals-ternary]: https://github.com/exercism/v3/issues/1635
-[constants]: https://github.com/exercism/v3/issues/1044
-[constructors]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/constructors/.meta/design.md
-[dates]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/datetimes/.meta/design.md
-[dictionaries]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/dictionaries/.meta/design.md
-[enums]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/enums/.meta/design.md
-[equality]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/equality/.meta/design.md
-[exceptions]: https://github.com/exercism/v3/issues/966
-[expression-bodied-members]: https://github.com/exercism/v3/issues/1145
-[extension-methods]: https://github.com/exercism/v3/issues/1070
-[flag-enums]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/flag-enums/.meta/design.md
-[floating-point-numbers]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.meta/design.md
-[inheritance]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/inheritance/.meta/design.md
-[interfaces]: https://github.com/exercism/v3/issues/1225
-[lists]: https://github.com/exercism/v3/issues/958
-[memory-allocation]: https://github.com/exercism/v3/issues/1018
-[method-overloading]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/method-overloading/.meta/design.md
-[namespaces]: https://github.com/exercism/v3/issues/1127
-[nested-types]: https://github.com/exercism/v3/issues/1643
-[null]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/nullability/.meta/design.md
-[numbers]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers/.meta/design.md
-[object-initializers]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/object-initializers/.meta/design.md
-[operator-overload]: https://github.com/exercism/v3/issues/1712
-[overflow]: https://github.com/exercism/v3/issues/1138
-[parameters]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/parameters/.meta/design.md
-[pattern-matching-tuples]: https://github.com/exercism/v3/issues/964
-[pattern-matching-types]: https://github.com/exercism/v3/issues/546
-[pointsers]: https://github.com/exercism/v3/issues/1147
-[properties]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/properties/.meta/design.md
-[randomness]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/randomness/.meta/design.md
-[regular-expressions]: https://github.com/exercism/v3/issues/1638
-[resource-cleanup]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/resource-cleanup/.meta/design.md
-[resource-lifetime]: https://github.com/exercism/v3/issues/1640
-[resource-pooling]: https://github.com/exercism/v3/issues/1146
-[signed-integers]: https://github.com/exercism/v3/issues/780
-[string-formatting]: https://github.com/exercism/v3/issues/962
-[strings]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/strings/.meta/design.md
-[structs]: https://github.com/exercism/v3/issues/1017
-[time]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/time/.meta/design.md
-[tuples]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/tuples/.meta/design.md
-[user-defined-exceptions]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/user-defined-exceptions/.meta/design.md
-[user-defined-exceptions2]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/user-defined-exceptions/.meta/design.md
+[design-arrays]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/arrays/.meta/design.md
+[issue-attributes-advanced]: https://github.com/exercism/v3/issues/1176
+[design-basics]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/basics/.meta/design.md
+[design-booleans]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/booleans/.meta/design.md
+[issue-casting]: https://github.com/exercism/v3/issues/1142
+[design-chars]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/chars/.meta/design.md
+[design-classes]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/classes/.meta/design.md
+[design-conditionals-switch]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/switch-statements/.meta/design.md
+[issue-conditionals-ternary]: https://github.com/exercism/v3/issues/1635
+[issue-constants]: https://github.com/exercism/v3/issues/1044
+[design-constructors]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/constructors/.meta/design.md
+[design-dates]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/datetimes/.meta/design.md
+[design-dictionaries]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/dictionaries/.meta/design.md
+[design-enums]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/enums/.meta/design.md
+[design-equality]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/equality/.meta/design.md
+[issue-exceptions]: https://github.com/exercism/v3/issues/966
+[issue-expression-bodied-members]: https://github.com/exercism/v3/issues/1145
+[issue-extension-methods]: https://github.com/exercism/v3/issues/1070
+[design-flag-enums]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/flag-enums/.meta/design.md
+[design-floating-point-numbers]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.meta/design.md
+[design-inheritance]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/inheritance/.meta/design.md
+[issue-interfaces]: https://github.com/exercism/v3/issues/1225
+[issue-lists]: https://github.com/exercism/v3/issues/958
+[issue-memory-allocation]: https://github.com/exercism/v3/issues/1018
+[design-method-overloading]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/method-overloading/.meta/design.md
+[issue-namespaces]: https://github.com/exercism/v3/issues/1127
+[issue-nested-types]: https://github.com/exercism/v3/issues/1643
+[design-null]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/nullability/.meta/design.md
+[design-numbers]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers/.meta/design.md
+[design-object-initializers]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/object-initializers/.meta/design.md
+[issue-operator-overload]: https://github.com/exercism/v3/issues/1712
+[issue-overflow]: https://github.com/exercism/v3/issues/1138
+[design-parameters]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/parameters/.meta/design.md
+[issue-pattern-matching-tuples]: https://github.com/exercism/v3/issues/964
+[issue-pattern-matching-types]: https://github.com/exercism/v3/issues/546
+[issue-pointsers]: https://github.com/exercism/v3/issues/1147
+[design-properties]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/properties/.meta/design.md
+[design-randomness]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/randomness/.meta/design.md
+[issue-regular-expressions]: https://github.com/exercism/v3/issues/1638
+[design-resource-cleanup]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/resource-cleanup/.meta/design.md
+[issue-resource-lifetime]: https://github.com/exercism/v3/issues/1640
+[issue-resource-pooling]: https://github.com/exercism/v3/issues/1146
+[issue-signed-integers]: https://github.com/exercism/v3/issues/780
+[issue-string-formatting]: https://github.com/exercism/v3/issues/962
+[design-strings]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/strings/.meta/design.md
+[issue-structs]: https://github.com/exercism/v3/issues/1017
+[design-time]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/time/.meta/design.md
+[design-tuples]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/tuples/.meta/design.md
+[design-user-defined-exceptions]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/user-defined-exceptions/.meta/design.md
+[design-user-defined-exceptions2]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/user-defined-exceptions/.meta/design.md
+[tnc-arrays]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/types/array.md
+[tnc-booleans]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/types/boolean.md
+[tnc-chars]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/types/char.md
+[tnc-classes]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/classes.md
+[tnc-conditionals-if]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/conditionals.md
+[tnc-conditionals-ternary]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/conditionals.md
+[tnc-dictionaries]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/types/map.md
+[tnc-encapsulation]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/encapsulation.md
+[tnc-equality]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/sameness.md
+[tnc-for-loops]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/enumeration.md
+[tnc-foreach-loops]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/enumeration.md
+[tnc-functions]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/types/function.md
+[tnc-higherl-order-functions]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/higher_order_functions.md
+[tnc-immutability]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/immutability.md
+[tnc-inheritance]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/inheritance.md
+[tnc-interfaces]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/interfaces.md
+[tnc-lambdas]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/anonymous_functions.md
+[tnc-linq]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/pipelines.md
+[tnc-lists]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/types/list.md
+[tnc-local-functions]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/nested_functions.md
+[tnc-memory-allocation]: https://github.com/mikedamay/v3/tree/csharp/interfaces/memory_allocation
+[tnc-mutation]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/mutation.md
+[tnc-objects]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/objects.md
+[tnc-optional-arguments]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/default_arguments.md
+[tnc-polymorphism]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/polymorphism.md
+[tnc-queues]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/types/deque.md
+[tnc-ranges]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/types/range.md
+[tnc-recursion]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/recursion.md
+[tnc-sets]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/types/set.md
+[tnc-stacks]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/types/stack.md
+[tnc-state]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/state.md
+[tnc-strings]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/types/string.md
+[tnc-tuples]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/types/tuple.md
+[tnc-type-inference]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/type_inference.md
+[tnc-variables]: https://github.com/mikedamay/v3/tree/csharp/interfaces/reference/concepts/variables.md
+
