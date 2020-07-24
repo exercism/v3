@@ -4,11 +4,10 @@
 - Know how to use interfaces.
 - Know how to define an interface.
 - Know how to implement an interface.
-- Know how to explicitly implement an interface.
+- Know how to explicitly implement an interface (discussion only).
+- Default interface methods (discussion only).
 
 ## Out of scope
-
-- Default interface methods.
 
 ## Concepts
 
