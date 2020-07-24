@@ -2,29 +2,30 @@
 
 - [Use the methods found in the time package.][time]
 
-## 1. Parse appointment date
+## 1. Parse the Duration of the Class
 
-- There is a [method][time.parse] for parsing a `string` into a `Time`.
+- There is a [method][difference.parse] for parsing a `string` into a `Duration`.
 
-## 2. Check if an appointment has already passed
+## 2. Check if the class is over
 
-- There are [methods][before] for [comparing][after] `Times` and [getting][now] the current date and time.
+- There is a [method][duration.parse] for returning the duration between two Times. Check whether the duration is greater than the class duration which is 1 hr.
 
-## 3. Check if appointment is in the afternoon
+## 3. Find out the time the class has exceeded
 
-- There is a [method][hour] for getting the hour of a `Time`.
+- First find out the time exceeded using the earlier method to find the duration. There is a [method][minutes] for returning the duration in minutes.
 
-## 4. Describe the time and date of the appointment
+## 4. Display the time elapsed since the start of school 
 
-- Convert the given string to a `Time` then format the answer string accordingly, using the appropriate [methods][time] to extract the needed constituents.
+- There is a [method][string] for returning the duration between two Times in string format.
 
-## 5. Return the anniversary date
+## 5. Round of the extra time passed by the class in some given seconds
 
-- Create a `Time` of the anniversary date.
+- There is a [method][truncate] for rounding off the time duration between two Times.
+
 
 [time]: https://golang.org/pkg/time/#pkg-index
-[time.parse]: https://golang.org/pkg/time/#Parse
-[before]: https://golang.org/pkg/time/#Time.Before
-[after]: https://golang.org/pkg/time/#Time.After
-[now]: https://golang.org/pkg/time/#Now
-[hour]: https://golang.org/pkg/time/#Time.Hour
+[duration.parse]: https://golang.org/pkg/time/#example_Time_Sub
+[difference.parse]: https://golang.org/pkg/time/#example_ParseDuration
+[minutes]: https://golang.org/pkg/time/#example_Duration_Minutes
+[string]: https://golang.org/pkg/time/#example_Duration_String
+[truncate]: https://golang.org/pkg/time/#example_Duration_Truncate
