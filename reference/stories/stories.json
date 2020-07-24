@@ -73,6 +73,23 @@
     ]
   },
   {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/strings.party-robot.md",
+    "name": "Eccentric Party Robot",
+    "description": "Once there was an eccentric programmer living in a strange house with barred windows.\nOne day he accepted a job from an online job board to build a party robot. The\nrobot is supposed to greet people and help them to their seats. The first addition\nwas very technical and showed the programmers lack of human interaction. Some of\nwhich also made it into the final edition.",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/types/string.md",
+      "name": "strings"
+    },
+    "implementations": [
+      {
+        "track": "Go",
+        "slug": "go",
+        "exercise": "strings",
+        "url": "https://github.com/exercism/v3/blob/master/languages/go/exercises/concept/strings/.docs/instructions.md"
+      }
+    ]
+  },
+  {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/regex.event-ingest.md",
     "name": "Event Ingest",
     "description": "In this story, you have a program which needs to ingest events, but messages are using 3 different date formats:",
@@ -411,8 +428,8 @@
       {
         "track": "Go",
         "slug": "go",
-        "exercise": "strings",
-        "url": "https://github.com/exercism/v3/blob/master/languages/go/exercises/concept/strings/.docs/instructions.md"
+        "exercise": "strings-package",
+        "url": "https://github.com/exercism/v3/blob/master/languages/go/exercises/concept/strings-package/.docs/instructions.md"
       },
       {
         "track": "Java",
