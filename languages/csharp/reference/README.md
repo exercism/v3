@@ -2,7 +2,7 @@
 
 ## Concepts
 
-The C# concept exercises are based on concepts. The list below contains the concepts that have been identified for the C# language.
+The C# concept exercises are based on concepts. The list below contains the concepts that have been identified for the C# language.  The _(text)_ in parentheses indicates the exercise to which they have been assigned.
 
 _(Please do not modify this document. it is automatically generated. All text except the concept learning objectives is sourced
 from [exercises.json](./exercises.json) which should be updated manually when a concept is added or an issue or new design is created
