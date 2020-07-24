@@ -6,7 +6,7 @@ The C# concept exercises are based on concepts. The list below contains the conc
 
 _(Please do not modify this document. it is automatically generated. All text except the concept learning objectives is sourced
 from [exercises.json](./exercises.json) which should be updated manually when a concept is added or an issue or new design is created
-and learning objects are scraped from the concept definition text in each exercise's \_design.md_ document)\_
+and learning objects are scraped from the concept definition text in each exercise's design.md document.)_
 
 ### Introductory Concepts
 
