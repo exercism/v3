@@ -2,27 +2,27 @@ package time
 
 import "time"
 
-// Schedule returns a time.Time from a string containing a date
-func Schedule(date string) time.Time {
-	panic("Please implement the Schedule function")
+// StartTime returns the time duration in string format
+func StartTime(date string) time.Time {
+	panic("Please implement the StartTime function")
 }
 
-// HasPassed returns whether a date has passed
-func HasPassed(date string) bool {
-	panic("Please implement the HasPassed function")
+// IsOver returns whether a class is over or not
+func IsOver(date string) bool {
+	panic("Please implement the IsOver function")
 }
 
-// IsAfternoonAppointment returns whether a time is in the afternoon
-func IsAfternoonAppointment(date string) bool {
-	panic("Please implement the IsAfternoonAppointment function")
+// ExtraTime returns extra time elapsed by the class in minutes
+func ExtraTime(date string) bool {
+	panic("Please implement the ExtraTime function")
 }
 
-// Description returns a formatted string of the appointment time
-func Description(date string) string {
-	panic("Please implement the Description function")
+// Display returns the total time passed in string format
+func Display(date string) string {
+	panic("Please implement the Display function")
 }
 
-// AnniversaryDate returns a Time with this year's anniversary
-func AnniversaryDate() time.Time {
-	panic("Please implement the AnniversaryDate function")
+// RoundOff returns the rounded off time in some given minutes
+func RoundOff() time.Time {
+	panic("Please implement the RoundOff function")
 }
