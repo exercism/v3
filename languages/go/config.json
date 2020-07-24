@@ -27,11 +27,12 @@
         "uuid": "668463ec-4b73-40cf-b24d-2f3a4bb110f6",
         "concepts": ["bytes", "runes"],
         "prerequisites": [
-          "strings-advanced",
+          "strings",
           "numbers",
           "iteration",
           "functions",
-          "conditionals"
+          "conditionals",
+          "slices"
         ]
       },
       {
@@ -182,12 +183,12 @@
         "slug": "strings",
         "uuid": "e09523d2-c91f-11ea-87d0-0242ac130003",
         "concepts": ["strings"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["basics", "floating-point"]
       },
       {
-        "slug": "strings-advanced",
+        "slug": "strings-package",
         "uuid": "b97a271c-4036-4ea8-8c6a-094715a48627",
-        "concepts": ["strings-advanced"],
+        "concepts": ["strings-package"],
         "prerequisites": ["slices"]
       },
       {
