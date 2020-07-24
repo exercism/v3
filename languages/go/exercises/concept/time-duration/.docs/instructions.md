@@ -26,7 +26,7 @@ Implement the `ExtraTime` function that takes a time and finds out the extra tim
 
 ```go
 ExtraTime("7/25/2019 13:45:00","July 25, 2019 14:46:00")
-// => 1 minutes
+// => 1 
 ```
 
 ## 4. Display the time elapsed since the start of school 
