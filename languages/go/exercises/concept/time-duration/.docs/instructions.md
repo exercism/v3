@@ -35,7 +35,7 @@ Implement the `Display` function that takes a time and displays the time passed 
 
 ```go
 Display("7/25/2019 7:30:00","7/25/2019 13:45:00")
-// => "The Time passed since the start of school is 6h15m0s"
+// => "6h15m0s"
 ```
 
 ## 5. Round of the extra time passed by the class in some given seconds
