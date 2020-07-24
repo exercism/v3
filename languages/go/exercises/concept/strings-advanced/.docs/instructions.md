@@ -12,7 +12,7 @@ You have three tasks, each of which will take a log line and ask you to do somet
 
 ## 1. Get message from a log line
 
-Implement a method to return a log line's message:
+Implement the `Message` function to return a log line's message:
 
 ```go
 Message("[ERROR]: Invalid operation")
