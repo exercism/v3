@@ -4,7 +4,7 @@ The Rust track maintainers [have decided](https://github.com/exercism/v3/discuss
 
 ## general principles
 
-- we strive to accept _all_ contributions even when **not** perfect.
+- we strive to accept _all_ contributions, bringing them to a high standard of quality through collaborative, iterative review
   - We adopt this principle of optimistic merging / Google engineering's code review handbook. See our [original discussion](https://github.com/exercism/v3/discussions/1725#discussion-7438) for appropriate sources.
 - One other maintainer should review a contributor's pull request
 - At least one other maintainer should approve a pull request before merging it into the development branch
