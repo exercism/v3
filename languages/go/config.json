@@ -69,7 +69,7 @@
         "slug": "context",
         "uuid": null,
         "concepts": ["context"],
-        "prerequisites": ["time-and-duration", "channels", "select"]
+        "prerequisites": ["time", "duration", "channels", "select"]
       },
       {
         "slug": "defer",
