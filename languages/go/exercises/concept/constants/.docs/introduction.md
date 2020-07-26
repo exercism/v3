@@ -6,7 +6,7 @@ In Go, a constant is a simple, unchanging value assigned to a name with the `con
     const myName = "Exercism"
 ```
 
-Go has a keyword for creating enumerated constants called `iota`. Constants in a block are implicitly repeated:
+Go has a predeclared identifier called `iota` for creating enumerated constants. Constants in a block are implicitly repeated:
 
 ```go
     const (
