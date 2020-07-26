@@ -22,7 +22,7 @@
 ## 4. The maze of strings
 
 - The two functions needed for this will not necessarily use the same equality predicates. The first room needs one that is more restrictive than the second.
-- [The Hyperspec reference page for `equal`][hyperspec-equal] and for [`equalp`][hyperspec-equalp] may be helpful.for the first part.
+- [The Hyperspec reference page for `equal`][hyperspec-equal] and for [`equalp`][hyperspec-equalp] may be helpful.
 
 ## 5. The maze of conses
 
