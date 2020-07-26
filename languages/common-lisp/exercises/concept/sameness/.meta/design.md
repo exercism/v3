@@ -16,8 +16,6 @@
 
 ## Prerequisites
 
-## Prerequisites
-
 - functions
 - symbols
 - characters
