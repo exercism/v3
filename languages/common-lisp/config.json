@@ -190,7 +190,7 @@
         "slug": "strings",
         "uuid": null,
         "concepts": ["strings", "printing"],
-        "prerequisites": ["expressions", "sameness"]
+        "prerequisites": ["expressions"]
       },
       {
         "slug": "variables",
