@@ -20,7 +20,6 @@ Of the many available Java collection types, we chose to use the `array` collect
 - Memory and performance characteristics of arrays.
 - Enumerables.
 - Iterators.
-- LINQ.
 
 ## Concepts
 
@@ -33,5 +32,5 @@ Of the many available Java collection types, we chose to use the `array` collect
 This exercise's prerequisites Concepts are:
 
 - `classes`: know how to work with fields.
-- `booleans`: know what a `bool` is.
+- `booleans`: know what a `boolean` is.
 - `basics`: know how to work with `integers` and how to assign and update variables.

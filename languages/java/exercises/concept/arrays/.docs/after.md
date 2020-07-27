@@ -79,4 +79,4 @@ Related Topics:
 
 - You should be aware that Java supports [multi-dimensional arrays][multi-dimensional-arrays] like `int[][] arr = new int[3][4];` which can be very useful.
 
-[multi-dimensional arrays] https://www.programiz.com/java-programming/multidimensional-array
+[multi-dimensional-arrays] https://www.programiz.com/java-programming/multidimensional-array
