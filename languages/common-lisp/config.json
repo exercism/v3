@@ -20,7 +20,6 @@
         "uuid": "d780fb3e-c9f8-11ea-af82-3200111e0c80",
         "concepts": ["sameness"],
         "prerequisites": [
-          "functions",
           "characters",
           "strings",
           "floating-point-numbers",
@@ -101,7 +100,7 @@
         "slug": "characters",
         "uuid": null,
         "concepts": ["characters"],
-        "prerequisites": ["integers", "sameness", "truthy-and-falsy"]
+        "prerequisites": ["integers", "truthy-and-falsy"]
       },
       {
         "slug": "sets",
