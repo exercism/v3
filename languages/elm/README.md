@@ -59,7 +59,7 @@ These extra steps will make your track better, but are optional.
 
 ### Key concepts
 
-This is a mermaid / markdown  diagram, you may need to install a [Browser Plugin](https://github.com/BackMarket/github-mermaid-extension) or [VsCode extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) or similar to view it.
+This is a mermaid / markdown diagram, you may need to install a [Browser Plugin](https://github.com/BackMarket/github-mermaid-extension) or [VsCode extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) or similar to view it.
 
 The top to bottom order of the items (at least in the markdown text, and mostly in the diagram) is the suggested learning order.
 
@@ -98,4 +98,3 @@ graph LR
   Independents --> Conversions
   Independents --> Posix-time
 ```
-
