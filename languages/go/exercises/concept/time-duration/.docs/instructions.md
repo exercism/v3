@@ -16,7 +16,7 @@ StartTime("1h")
 Implement the `IsOver` function that takes the start time and a given time and finds out whether the current class is over or not :
 
 ```go
-IsOver("7/25/2019 13:45:00","July 25, 2019 14:46:00")
+IsOver("7/25/2019 13:45:00","7/25/2019 14:46:00")
 // => true
 ```
 
@@ -25,7 +25,7 @@ IsOver("7/25/2019 13:45:00","July 25, 2019 14:46:00")
 Implement the `ExtraTime` function that takes a time and finds out the extra time the class is going since it's over in minutes
 
 ```go
-ExtraTime("7/25/2019 13:45:00","July 25, 2019 14:46:00")
+ExtraTime("7/25/2019 13:45:00","7/25/2019 14:46:00")
 // => 1 
 ```
 
