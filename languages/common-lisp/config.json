@@ -101,11 +101,7 @@
         "slug": "characters",
         "uuid": null,
         "concepts": ["characters"],
-        "prerequisites": [
-          "integers",
-          "sameness",
-          "truthy-and-falsy"
-        ]
+        "prerequisites": ["integers", "sameness", "truthy-and-falsy"]
       },
       {
         "slug": "sets",
@@ -123,12 +119,7 @@
         "slug": "assignment",
         "uuid": null,
         "concepts": ["assignment"],
-        "prerequisites": [
-          "variables",
-          "basic-lists",
-          "strings",
-          "expressions"
-        ]
+        "prerequisites": ["variables", "basic-lists", "strings", "expressions"]
       },
       {
         "slug": "nested-functions",
@@ -182,39 +173,25 @@
         "slug": "basic-lists",
         "uuid": null,
         "concepts": ["basic-lists"],
-        "prerequisites": [
-          "cons",
-          "symbols"
-        ]
+        "prerequisites": ["cons", "symbols"]
       },
       {
         "slug": "packages",
         "uuid": null,
         "concepts": ["packages"],
-        "prerequisites": [
-          "variables",
-          "symbols",
-          "function-definition"
-        ]
+        "prerequisites": ["variables", "symbols", "function-definition"]
       },
       {
         "slug": "enumeration",
         "uuid": null,
         "concepts": ["enumeration", "loop.basic"],
-        "prerequisites": [
-          "arithmetic",
-          "strings",
-          "basic-lists"
-        ]
+        "prerequisites": ["arithmetic", "strings", "basic-lists"]
       },
       {
         "slug": "strings",
         "uuid": null,
         "concepts": ["strings", "printing"],
-        "prerequisites": [
-          "expressions",
-          "sameness"
-        ]
+        "prerequisites": ["expressions", "sameness"]
       },
       {
         "slug": "variables",
@@ -232,12 +209,7 @@
         "slug": "conditionals",
         "uuid": null,
         "concepts": ["conditionals", "truthy-and-falsy"],
-        "prerequisites": [
-          "expressions",
-          "integers",
-          "arithmetic",
-          "symbols"
-        ]
+        "prerequisites": ["expressions", "integers", "arithmetic", "symbols"]
       },
       {
         "slug": "function-definition",
