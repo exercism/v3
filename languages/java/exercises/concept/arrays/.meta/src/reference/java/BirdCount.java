@@ -24,7 +24,7 @@ class BirdCount {
 
     public boolean hasDayWithoutBirds() {
         for (int day : birdsPerDay) {
-            if(day == 0){
+            if (day == 0) {
                 return true;
             }
         }
@@ -34,7 +34,7 @@ class BirdCount {
     public int getCountForFirstDays(int numberOfDays) {
         int total = 0;
 
-        if(numberOfDays > birdsPerDay.length){
+        if (numberOfDays > birdsPerDay.length) {
             numberOfDays = birdsPerDay.length;
         }
 
@@ -48,7 +48,7 @@ class BirdCount {
         int total = 0;
 
         for (int day : birdsPerDay) {
-            if(day >= 5){
+            if (day >= 5) {
                 total++;
             }
         }

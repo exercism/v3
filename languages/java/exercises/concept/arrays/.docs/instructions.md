@@ -17,7 +17,7 @@ Implement the `BirdCount.getToday()` method to return how many birds visited you
 
 ```Java
 int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
-var birdCount = new BirdCount(birdsPerDay);
+BirdCount birdCount = new BirdCount(birdsPerDay);
 birdCount.getToday();
 // => 1
 ```
@@ -28,7 +28,7 @@ Implement the `BirdCount.incrementDayCount()` method to increment today's count:
 
 ```Java
 int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
-var birdCount = new BirdCount(birdsPerDay);
+BirdCount birdCount = new BirdCount(birdsPerDay);
 birdCount.incrementDayCount();
 birdCount.getToday();
 // => 2
@@ -40,7 +40,7 @@ Implement the `BirdCount.hasDayWithoutBirds()` method that returns `true` if the
 
 ```Java
 int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
-var birdCount = new BirdCount(birdsPerDay);
+BirdCount birdCount = new BirdCount(birdsPerDay);
 birdCount.hasDayWithoutBirds();
 // => true
 ```
@@ -51,7 +51,7 @@ Implement the `BirdCount.getCountForFirstDays()` method that returns the number 
 
 ```Java
 int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
-var birdCount = new BirdCount(birdsPerDay);
+BirdCount birdCount = new BirdCount(birdsPerDay);
 birdCount.getCountForFirstDays(4);
 // => 14
 ```
@@ -63,7 +63,7 @@ Implement the `BirdCount.getBusyDays()` method to return the number of busy days
 
 ```Java
 int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
-var birdCount = new BirdCount(birdsPerDay);
+BirdCount birdCount = new BirdCount(birdsPerDay);
 birdCount.getBusyDays();
 // => 2
 ```

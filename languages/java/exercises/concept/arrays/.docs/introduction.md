@@ -26,8 +26,7 @@ The fact that an array is also a _collection_ means that, besides accessing valu
 ```java
 char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
 
-for(char vowel:vowels)
-{
+for(char vowel:vowels) {
     // Output the vowel
     System.out.print(vowel);
 }
@@ -40,8 +39,7 @@ If you want more control over which values to iterate over, a `for` loop can be 
 ```java
 char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
 
-for (int i = 0; i < 3; i++)
-{
+for (int i = 0; i < 3; i++) {
     // Output the vowel
     System.out.print(vowels[i]);
 }

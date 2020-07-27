@@ -29,8 +29,7 @@ The fact that an array is also a _collection_ means that, besides accessing valu
 ```java
 char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
 
-for(char vowel:vowels)
-{
+for(char vowel:vowels) {
     // Output the vowel
     System.out.print(vowel);
 }
@@ -43,8 +42,7 @@ If you want more control over which values to iterate over, a `for` loop can be 
 ```java
 char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
 
-for (int i = 0; i < 3; i++)
-{
+for (int i = 0; i < 3; i++) {
     // Output the vowel
     System.out.print(vowels[i]);
 }
@@ -64,8 +62,7 @@ To guarantee that a `foreach` loop will iterate over _all_ values, the compiler 
 ```java
 char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
 
-for(char vowel:vowels)
-{
+for(char vowel:vowels) {
     vowels = 'Y';  // This would result in a compiler error
 }
 ```
@@ -82,4 +79,4 @@ Related Topics:
 
 - You should be aware that Java supports [multi-dimensional arrays][multi-dimensional-arrays] like `int[][] arr = new int[3][4];` which can be very useful.
 
-[Arrays] https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html
+[multi-dimensional arrays] https://www.programiz.com/java-programming/multidimensional-array
