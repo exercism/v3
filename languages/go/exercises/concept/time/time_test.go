@@ -5,92 +5,87 @@ import (
 	"time"
 )
 
-func TestStartTime(t *testing.T) {
+func TestSchedule(t *testing.T) {
 	tests := map[string]struct {
 		in   string
-		want time.Duration
+		want time.Time
 	}{
-		"StartTime 1": {in: "10h", time.ParseDuration("10h")},
-		"StartTime 2": {in: "1h10m10s", want: time.ParseDuration("1h10m10s")},
-		"StartTime 3": {in: "2h", want: time.ParseDuration("2h")},
+		"Schedule 1": {in: "7/13/2020 20:32:00", want: time.Date(2020, time.July, 13, 20, 32, 0, 0, time.UTC)},
+		"Schedule 2": {in: "11/28/1984 2:02:02", want: time.Date(1984, time.November, 28, 2, 2, 2, 0, time.UTC)},
+		"Schedule 3": {in: "2/29/2112 11:59:59", want: time.Date(2112, time.February, 29, 11, 59, 59, 0, time.UTC)},
 	}
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
-			if got := StartTime(tc.in); got != tc.want {
-				t.Errorf("StartTime(%s) = %v, want %v", tc.in, got, tc.want)
+			if got := Schedule(tc.in); !got.Equal(tc.want) {
+				t.Errorf("Schedule(%s) = %v, want %v", tc.in, got, tc.want)
 			}
 		})
 	}
 }
 
-func TestIsOver(t *testing.T) {
+func TestHasPassed(t *testing.T) {
 	tests := map[string]struct {
-		in   string
 		in   string
 		want bool
 	}{
-		"IsOver 1": {in: "7/25/2019 13:45:00",in: "July 25, 2019 14:46:00", want: true},
-		"IsOver 2": {in: "7/25/2019 8:45:00",in: "July 25, 2019 9:46:00", want: true},
-		"IsOver 3": {in: "7/25/2019 12:45:00",in: "July 25, 2019 13:36:00", want: false},
+		"HasPassed 1": {in: "October 3, 2019 20:32:00", want: true},
+		"HasPassed 2": {in: "January 28, 1974 2:02:02", want: true},
+		"HasPassed 3": {in: "December 9, 2112 11:59:59", want: false},
 	}
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
-			if got := IsOver(tc.in); got != tc.want {
-				t.Errorf("IsOver(%s) = %v, want %v", tc.in, got, tc.want)
+			if got := HasPassed(tc.in); got != tc.want {
+				t.Errorf("HasPassed(%s) = %v, want %v", tc.in, got, tc.want)
 			}
 		})
 	}
 }
 
-func TestExtraTime(t *testing.T) {
+func TestIsAfternoonAppointment(t *testing.T) {
 	tests := map[string]struct {
 		in   string
-		in   string
-		want float64
+		want bool
 	}{
-		"ExtraTime 1": {in: "7/25/2019 13:45:00",in: "July 25, 2019 14:46:00", want: 1},
-		"ExtraTime 2": {in: "7/25/2019 12:45:00",in: "July 25, 2019 13:46:00", want: 1},
-		"ExtraTime 3": {in: "7/25/2019 8:45:00",in: "July 25, 2019 9:46:00", want: 1},
+		"IsAfternoonAppointment 1": {in: "Thursday, May 13, 2010 20:32:00", want: false},
+		"IsAfternoonAppointment 2": {in: "Friday, March 8, 1974 12:02:02", want: true},
+		"IsAfternoonAppointment 3": {in: "Friday, September 9, 2112 11:59:59", want: false},
 	}
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
-			if got := IsExtraTime(tc.in); got != tc.want {
-				t.Errorf("ExtraTime(%s) = %v, want %v", tc.in, got, tc.want)
+			if got := IsAfternoonAppointment(tc.in); got != tc.want {
+				t.Errorf("IsAfternoonAppointment(%s) = %v, want %v", tc.in, got, tc.want)
 			}
 		})
 	}
 }
 
-func TestDisplay(t *testing.T) {
+func TestDescription(t *testing.T) {
 	tests := map[string]struct {
-		in string
-		in string
-		want string
+		in, want string
 	}{
-		"Display 1": {in: "7/25/2019 7:30:00",in: "7/25/2019 13:45:00", want: "6h15m0s"},
-		"Display 2": {in: "7/25/2019 7:30:00",in: "7/25/2019 13:45:00", want: "6h15m0s"},
-		"Display 3": {in: "7/25/2019 7:30:00",in: "7/25/2019 13:45:00", want: "6h15m0s"},
+		"Description 1": {in: "6/6/2005 10:30:00", want: "You have an appointment on Monday, June 6, 2005, at 10:30."},
+		"Description 2": {in: "9/19/1994 12:15:00", want: "You have an appointment on Monday, September 19, 1994, at 12:15."},
+		"Description 3": {in: "4/4/2012 16:45:00", want: "You have an appointment on Wednesday, April 4, 2012, at 16:45."},
 	}
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
-			if got := Display(tc.in); got != tc.want {
-				t.Errorf("Display(%s) = %v, want %v", tc.in, got, tc.want)
+			if got := Description(tc.in); got != tc.want {
+				t.Errorf("Description(%s) = %v, want %v", tc.in, got, tc.want)
 			}
 		})
 	}
 }
-func TestRoundOff(t *testing.T) {
+func TestAnniversaryDate(t *testing.T) {
 	tests := map[string]struct {
-		in  string
-		in  string
-		want time.Duration
+		in   string
+		want time.Time
 	}{
-		"RoundOff 1": {in: "1h15m30.918273645s",in: "1m0s" ,want: "1h15m0s" },
+		"AnniversaryDate 1": {want: time.Date(time.Now().Year(), time.September, 15, 0, 0, 0, 0, time.UTC)},
 	}
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
-			if got := RoundOff();  got != tc.want {
-				t.Errorf("RoundOff(%s) = %v, want %v", tc.in, got, tc.want)
+			if got := AnniversaryDate(); !got.Equal(tc.want) {
+				t.Errorf("AnniversaryDate(%s) = %v, want %v", tc.in, got, tc.want)
 			}
 		})
 	}
