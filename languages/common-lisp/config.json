@@ -19,7 +19,7 @@
         "slug": "sameness",
         "uuid": "d780fb3e-c9f8-11ea-af82-3200111e0c80",
         "concepts": ["sameness"],
-        "prerequisiites": [
+        "prerequisites": [
           "functions",
           "characters",
           "strings",
