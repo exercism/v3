@@ -29,9 +29,9 @@ func TestIsOver(t *testing.T) {
 		in   string
 		want bool
 	}{
-		"IsOver 1": {in: "7/25/2019 13:45:00",in: "July 25, 2019 14:46:00", want: true},
-		"IsOver 2": {in: "7/25/2019 8:45:00",in: "July 25, 2019 9:46:00", want: true},
-		"IsOver 3": {in: "7/25/2019 12:45:00",in: "July 25, 2019 13:36:00", want: false},
+		"IsOver 1": {in: "7/25/2019 13:45:00",in: "7/25/2019 14:46:00", want: true},
+		"IsOver 2": {in: "7/25/2019 8:45:00",in: "7/25/2019 9:46:00", want: true},
+		"IsOver 3": {in: "7/25/2019 12:45:00",in: "7/25/2019 13:36:00", want: false},
 	}
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
@@ -48,9 +48,9 @@ func TestExtraTime(t *testing.T) {
 		in   string
 		want float64
 	}{
-		"ExtraTime 1": {in: "7/25/2019 13:45:00",in: "July 25, 2019 14:46:00", want: 1},
-		"ExtraTime 2": {in: "7/25/2019 12:45:00",in: "July 25, 2019 13:46:00", want: 1},
-		"ExtraTime 3": {in: "7/25/2019 8:45:00",in: "July 25, 2019 9:46:00", want: 1},
+		"ExtraTime 1": {in: "7/25/2019 13:45:00",in: "7/25/2019 14:46:00", want: 1},
+		"ExtraTime 2": {in: "7/25/2019 12:45:00",in: "7/25/2019 13:46:00", want: 1},
+		"ExtraTime 3": {in: "7/25/2019 8:45:00",in: "7/25/2019 9:46:00", want: 1},
 	}
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
@@ -85,7 +85,7 @@ func TestRoundOff(t *testing.T) {
 		in  string
 		want time.Duration
 	}{
-		"RoundOff 1": {in: "1h15m30.918273645s",in: "1m0s" ,want: "1h15m0s" },
+		"RoundOff 1": {in: "1h15m30.918273645s",in: "1m0s" ,want: time.ParseDuration("1h15m0s") },
 	}
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
