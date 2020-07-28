@@ -13,9 +13,8 @@
 ## Concepts
 
 - `integral-numbers`: know of the difference between signed and unsigned integral types; know of the existence of the integral types: `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long` and `ulong`; know when to use which integral type.
-- `casting`: Understand implicit type conversions and explicit casts.=
+- `casting`: Understand implicit type conversions and explicit casts.
 
 ## Prerequisites
 
 - `numbers`: define numbers and apply arithmetic and logic to them.
-

@@ -2,7 +2,7 @@ Work continues on the remote control car project. Bandwidth in the telemetry sys
 
 Data is transmitted in a buffer (byte array). When integers are sent, the size of the buffer is reduced by employing the following protocol.
 
-Each value should be represented in the smallest possible integral type:
+Each value should be represented in the smallest possible integral type (types of `byte` and `sbyte` are not included as the saving would be trivial):
 
 | Min Value                  | Max Value                 | Type   |
 | -------------------------- | ------------------------- | ------ |
@@ -14,9 +14,9 @@ Each value should be represented in the smallest possible integral type:
 | 0                          | 65,535                    | ushort |
 | -32,768                    | -1                        | short  |
 
-The value should be converted to the appropriate number of bytes for its assigned type. The complete buffer comprises a byte indicating the number of additional byte in the buffer (_prefix byte_) followed by the bytes holding the integer (_payload bytes_).
+The value should be converted to the appropriate number of bytes for its assigned type. The complete buffer comprises a byte indicating the number of additional bytes in the buffer (_prefix byte_) followed by the bytes holding the integer (_payload bytes_).
 
-If the payload bytes represent a signed type (short, int or long) then the prefix byte should contain the length as a negative number.
+If the payload bytes represent a signed type (`short`, `int` or `long`) then the prefix byte should contain the length as a negative number.
 
 Only the prefix byte and the number of following bytes indicated by the prefix will be sent in the communication. Internally a 9 byte buffer is used (with trailing zeroes, as necessary) both by sending and receiving routines.
 
@@ -37,7 +37,7 @@ Please implement the static method `TelementryBuffer.FromBuffer()` to decode the
 
 ```csharp
 TelemetryBuffer.FromBuffer(new byte[] {0xfc, 0xff, 0xff, 0xff, 0x7f, 0, 0, 0, 0 })
-// => 2147483648
+// => 2147483647
 ```
 
-If the prefix byte is not shown in the _Type_ column in hte above table then 0 should be returned.
+If the prefix byte is not one of -8, -4, -2, 2, 4 then 0 should be returned.
