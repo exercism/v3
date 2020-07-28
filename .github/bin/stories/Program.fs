@@ -292,6 +292,9 @@ module Json =
           Concept: JsonConcept
           Implementations: JsonImplementation list }
         
+    let private normalize (str: string) =
+        str.Replace("\r\n", "\n")
+        
     let private implementationToJsonImplementation (implementation: Implementation) : JsonImplementation =
         let url =
             match implementation.Status with
@@ -316,7 +319,7 @@ module Json =
     let private storyToJsonStory (story: Story): JsonStory =
         { Url = sprintf "https://github.com/exercism/v3/blob/master/reference/stories/%s" story.File.Name
           Name = story.Name
-          Description = story.Description
+          Description = normalize story.Description
           Concept = conceptToJsonConcept story.Concept
           Implementations = List.map implementationToJsonImplementation story.Implementations }
     
