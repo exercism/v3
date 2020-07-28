@@ -1,38 +1,30 @@
-In this exercise you'll be processing log-lines.
+In this exercise you'll be processing `enums`.
 
-Each log line is a string formatted as follows: `"[<LEVEL>]: <MESSAGE>"`.
+You have three tasks, each of which will take a integral constant and ask you to do something
 
-There are three different log levels:
+## 1. Get the name of the month
 
-- `INFO`
-- `WARNING`
-- `ERROR`
-
-You have three tasks, each of which will take a log line and ask you to do something with it.
-
-## 1. Get message from a log line
-
-Implement the `log_line::message` method to return a log line's message:
+Implement the `Display` method to return the name of ith month of the year using enums:
 
 ```cpp
-log_line::message("[ERROR]: Invalid operation")
-// => "Invalid operation"
+Display(1)
+// => "January"
 ```
 
-## 2. Get log level from a log line
+## 2. Get the number of days of a month 
 
-Implement the `log_line::log_level` method to return a log line's log level, which should be returned in lowercase:
+Implement the `NoofDays` method to return the number of days of a month in a year using enums:
 
 ```cpp
-log_line::log_level("[ERROR]: Invalid operation")
-// => "ERROR"
+NoofDays("January")
+// => 31
 ```
 
-## 3. Reformat a log line
+## 3. Assigning Season
 
-Implement the `log_line::reformat` method that reformats the log line, putting the message first and the log level after it in parentheses:
+Implement the `AssignSeasson` method that assigns a month a praticular season(S,R,A,W) and displays it using enums:
 
 ```cpp
-log_line::reformat("[INFO]: Operation completed")
-// => "Operation completed (INFO)"
+AssignSeason("January")
+// => 'W'
 ```
