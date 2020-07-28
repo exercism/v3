@@ -88,23 +88,28 @@ module Parser =
         
     let private parseSlugAndExercise (link: string): (string * string) option =
         let matched = Regex.Match(link, "languages/(.+?)/exercises/concept/(.+?)/")
-        if matched.Success then Some (matched.Groups.[1].Value, matched.Groups.[2].Value)  else None 
+        if matched.Success then Some (matched.Groups.[1].Value, matched.Groups.[2].Value) else None
+
+    let private parseTrack (languagesDirectory: DirectoryInfo) (slug: string): string =
+        use jsonFile = File.OpenRead(Path.Combine(languagesDirectory.FullName, slug, "config.json")) 
+        let jsonDocument = JsonDocument.Parse(jsonFile)
+        jsonDocument.RootElement.GetProperty("language").GetString()
 
     let private parseImplementation (languagesDirectory: DirectoryInfo) (markdown: MarkdownDocument) (paragraphs: MarkdownParagraphs): Implementation option =
-        let createImplementation track (slug, exercise) =
-            { Track = track
+        let createImplementation (slug, exercise) =
+            { Track = parseTrack languagesDirectory slug
               Slug = slug
               Exercise = exercise
               Status = parseImplementationStatus languagesDirectory slug exercise }
         
         match paragraphs with
-        | [Span(body = IndirectLink(body = [Literal(text=text)]; key = key)::_)] ->
+        | [Span(body = IndirectLink(body = [Literal]; key = key)::_)] ->
             parseLink markdown key
             |> Option.bind parseSlugAndExercise
-            |> Option.map (createImplementation text)
-        | [Span(body = [DirectLink(body = [Literal(text=text)]; link = link)])] ->
+            |> Option.map createImplementation
+        | [Span(body = [DirectLink(body = [Literal]; link = link)])] ->
             parseSlugAndExercise link
-            |> Option.map (createImplementation text)
+            |> Option.map createImplementation
         | _ -> None
         
     let private parseImplementations (languagesDirectory: DirectoryInfo) (markdown: MarkdownDocument): Implementation list option =
