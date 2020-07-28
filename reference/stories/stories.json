@@ -777,6 +777,16 @@
     ]
   },
   {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/datetimes.time-keeper.md",
+    "name": "The Time-Keeper",
+    "description": "Sarah is a time-keeper. She\u0027s actually the best there is. When asked by kids what a time-keeper does, she loves to show them\na jar full of white sand. See, she says: \u0022I\u0027m keeping time safe!\u0022",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/types/datetime.md",
+      "name": "datetimes"
+    },
+    "implementations": []
+  },
+  {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/sum-types.valentines-day.md",
     "name": "Valentines day",
     "description": "In this exercise, it\u0027s Valentine\u0027s day and you and your partner are planning on doing something nice together. Your partner has lots of ideas, and is now asking you to rate the ideas, in order to find the activity to engage in.",
