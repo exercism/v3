@@ -182,7 +182,7 @@ module Markdown =
         let concept =
             match story.Concept.File with
             | Some conceptFile ->
-                let relativePath = Path.GetRelativePath(Path.Combine("reference", "stories"), conceptFile.FullName)
+                let relativePath = Path.GetRelativePath(Path.Combine("reference", "stories"), conceptFile.FullName).Replace(Path.DirectorySeparatorChar, '/')
                 sprintf "[`%s`](%s)" story.Concept.Name relativePath
             | None -> sprintf "`%s`" story.Concept.Name
 
