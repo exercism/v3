@@ -19,4 +19,9 @@ def delete_items(inventory, items):
 
 
 def list_inventory(inventory):
-    return [(k, v) for k, v in sorted(inventory.items()) if v]
+    output = list()
+    for item in sorted(inventory.items()):
+        if item[1] > 0:
+            output.append(item)
+    return output
+        

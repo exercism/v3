@@ -1,4 +1,4 @@
-A _dictionary_ is Python's primary mapping type that connects _hashable keys_ with values. The looking up of keys is more efficient than searching through an array, but does require more memory. For a detailed explaination of _hashmaps_ visit [this][hashmap-blog] blog post.
+A _dictionary_ is Python's primary mapping type that connects _hashable keys_ with values. The looking up of keys is more efficient than searching through an array, but does require more memory. 
 
 ## Dict construction
 
@@ -6,7 +6,7 @@ Dictionaries can be created in various ways. You can either use the `dict()` cla
 
 ### Use the `dict()` constructor
 
-```Python
+```python
 >>> bear = dict(name="Black Bear", amount=5, land_animal=True)
 {'name': 'Panda', 'amount': 15, 'land_animal': True}
 ```
@@ -71,5 +71,3 @@ Blue Whale
 7
 False
 ```
-
-[hashmap-blog]: https://www.edureka.co/blog/hash-tables-and-hashmaps-in-python/
