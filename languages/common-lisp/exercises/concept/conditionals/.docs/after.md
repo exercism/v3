@@ -56,6 +56,7 @@ cleaner `case` expression. If none of the cases match, `nil` is returned. Both
   (dog "Bark")
   (otherwise "???"))
 ; => "???"
+```
 
 ## Diving Deeper
 

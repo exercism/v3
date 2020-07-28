@@ -10,7 +10,7 @@
 
 - Sameness / Equality (`eq`, `eql`, `equal`, `equalp`, etc.)
 - Short-circuit evaluation with `and` and `or`
-- Conditions and restarts – those are *very* different ;)
+- Conditions and restarts – those are _very_ different ;)
 - The `ccase` macro, which actually does involve conditions and restarts
 - The type-matching `typecase` macro
 - Any non-conditional or compound form of control flow
