@@ -1,1 +1,1 @@
-A `string` in C++ is a mutable object that represents text as a sequence of Unicode characters (letters, digits, punctuation, etc.). Strings are manipulated by calling the string's methods.
+Enumerated type (enumeration) or `enums` is a user-defined data type which can be assigned some limited values. These values are defined by the programmer at the time of declaring the enumerated type.
