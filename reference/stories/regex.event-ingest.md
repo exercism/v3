@@ -27,6 +27,6 @@ Touches on:
 
 ## Implementations
 
-- [Elixir][implementation-elixir] (reference implementation)
+- [Elixir: regular-expressions][implementation-elixir] (reference implementation)
 
 [implementation-elixir]: ../../languages/elixir/exercises/concept/regular-expressions/.docs/instructions.md
