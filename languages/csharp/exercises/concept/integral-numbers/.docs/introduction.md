@@ -18,12 +18,6 @@ short s = 42;
 ui = (uint)s;
 ```
 
-In the above example, if the value lay instead outside the range of the assignee then an overflow would occur.  See (TODO cross-ref-tba).
-
-The multiplicity of integer types reflects machine architectures, in the size of registers, the size of CPU instruction arguments and the treatment of sign within the CPU.  A value of type `long` uses 64 bits whereas a value of type `sbyte` uses 8 bits.  In some cases there will be implications on CPU performance, memory usage and even disk usage (where smaller integer sizes will improve operations).  Selection of integer `type` can also be a rough and ready wsy of communicating information to other developers about the expected range of values.  The `int` type is widely used as the default type where nothing special has been identified about the particular usage.  The `long` or `ulong` is widely used as a simple identifier.
-
-The types discussed so far are _primitive_ types.  Each is paired with a `struct` alias which implements fields (such as `MinValue`) which are associated with the type.  Some examples are: `sbyte` / `SByte`, `ushort` / `UInt16` and `long` / `Int64`.
-
 #### Bit conversion
 
 The `BitConverter` class provides a convenient way of converting integer types to and from arrays of bytes.
