@@ -327,7 +327,7 @@ module Json =
         let jsonStories =
             stories
             |> List.map storyToJsonStory
-            |> List.sortBy (fun story -> story.Name)
+            |> List.sortBy (fun story -> (story.Name, story.Url))
         
         let options = JsonSerializerOptions()
         options.WriteIndented <- true
