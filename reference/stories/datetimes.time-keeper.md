@@ -17,7 +17,7 @@ to bear the responsibility?
 ## Notes
 
 Data coming from time keeping hardware is usually a time stamp (time, datetime or even with time zone). It has a high
-precesion of usually up to 1 millisecond sometimes even 100 microseconds. Every hardware device has an internal clock
+precision of usually up to 1 millisecond sometimes even 100 microseconds. Every hardware device has an internal clock
 that must be synchronized to all the other devices.
 
 ## Tasks
