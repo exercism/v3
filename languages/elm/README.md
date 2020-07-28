@@ -59,13 +59,14 @@ These extra steps will make your track better, but are optional.
 
 ### Key concepts
 
-This is a mermaid / markdown diagram, you may need to install a [Browser Plugin](https://github.com/BackMarket/github-mermaid-extension) or [VsCode extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) or similar to view it.
+This is a mermaid / markdown diagram, you may need to install a [Browser Plugin](https://github.com/BackMarket/github-mermaid-extension) or [VsCode extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) or similar to view it. You could also copy and paste the markdown in to the [Mermaid Online Editor](https://mermaid-js.github.io/mermaid-live-editor/) if you would prefer not to install plugins.
 
 The top to bottom order of the items (at least in the markdown text, and mostly in the diagram) is the suggested learning order.
 
 ```mermaid
 graph LR
-  Independents[Import, Exposing, Functions, Float, Int, Type Annotations] --> Mathematical-Operators
+  Basics[Minimal compilable file] --> Independents[Import, Exposing, Functions, Float, Int, Type Annotations] --> Mathematical-Operators
+  Independents --> Mathematical-Operators
   Independents --> Mathematical-Functions
   Independents --> Let-Expressions
   Independents --> Equality
