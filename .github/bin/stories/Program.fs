@@ -29,6 +29,9 @@ type Story =
       Implementations: Implementation list }
     
 module Parser =
+    let private normalize (str: string) =
+        str.Replace("\r\n", "\n")
+
     let private range (span: MarkdownSpan) =
         match span with
         | Literal(_, range) -> range
@@ -80,6 +83,7 @@ module Parser =
         |> List.pairwise
         |> List.tryPick description
         |> Option.map (originalMarkdownCode markdownCode)
+        |> Option.map normalize
 
     let private parseLink (markdown: MarkdownDocument) (key: string): string option =
         match markdown.DefinedLinks.TryGetValue(key) with
@@ -297,9 +301,6 @@ module Json =
           Concept: JsonConcept
           Implementations: JsonImplementation list }
         
-    let private normalize (str: string) =
-        str.Replace("\r\n", "\n")
-        
     let private implementationToJsonImplementation (implementation: Implementation) : JsonImplementation =
         let url =
             match implementation.Status with
@@ -324,7 +325,7 @@ module Json =
     let private storyToJsonStory (story: Story): JsonStory =
         { Url = sprintf "https://github.com/exercism/v3/blob/master/reference/stories/%s" story.File.Name
           Name = story.Name
-          Description = normalize story.Description
+          Description = story.Description
           Concept = conceptToJsonConcept story.Concept
           Implementations = List.map implementationToJsonImplementation story.Implementations }
     
