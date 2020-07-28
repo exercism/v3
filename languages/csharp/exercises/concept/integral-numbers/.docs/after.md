@@ -24,6 +24,18 @@ The multiplicity of integer types reflects machine architectures, in the size of
 
 The types discussed so far are _primitive_ types. Each is paired with a `struct` alias which implements fields (such as `MinValue`) which are associated with the type. Some examples are: `sbyte` / `SByte`, `ushort` / `UInt16` and `long` / `Int64`.
 
+```csharp
+          width                     minimum                         maximum
+signed    8 bit                        -128                            +127
+signed   16 bit                     -32 768                         +32 767
+signed   32 bit              -2 147 483 648                  +2 147 483 647
+signed   64 bit  -9 223 372 036 854 775 808      +9 223 372 036 854 775 807
+unsigned  8 bit                           0                            +255
+unsigned 16 bit                           0                         +65 535
+unsigned 32 bit                           0                  +4 294 967 295
+unsigned 64 bit                           0     +18 446 744 073 709 551 615
+```
+
 #### Bit conversion
 
 The `BitConverter` class provides a convenient way of converting integer types to and from arrays of bytes.
