@@ -4,12 +4,12 @@ using System.Collections.Generic;
 public interface IRemoteControlCar
 {
     void Drive();
-    decimal DistanceTravelled { get; }
+    int DistanceTravelled { get; }
 }
 
 public class ProductionRemoteControlCar : IRemoteControlCar, IComparable<ProductionRemoteControlCar>
 {
-    public decimal DistanceTravelled { get; private set; }
+    public int DistanceTravelled { get; private set; }
     public int NumberOfVictories { get; set; }
 
     public void Drive()
@@ -27,7 +27,7 @@ public class ProductionRemoteControlCar : IRemoteControlCar, IComparable<Product
 
 public class ExperimentalRemoteControlCar : IRemoteControlCar
 {
-    public decimal DistanceTravelled { get; private set; }
+    public int DistanceTravelled { get; private set; }
 
     public void Drive()
     {
@@ -43,8 +43,11 @@ public static class TestTrack
         return car.DistanceTravelled;
     }
 
-    public static void RankCars(List<ProductionRemoteControlCar> unrankedCars)
+    public static List<ProductionRemoteControlCar> GetRankedCars(ProductionRemoteControlCar prc1,
+        ProductionRemoteControlCar prc2)
     {
-        unrankedCars.Sort();
+        var rankings = new List<ProductionRemoteControlCar>{prc1, prc2};
+        rankings.Sort();
+        return rankings;
     }
 }

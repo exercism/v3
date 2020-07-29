@@ -64,5 +64,7 @@ public class Census : IFoo, IBar
 }
 ```
 
+`interfaces` are good for testing/mocking
+
 [interface-polymorphism]: https://www.cs.utexas.edu/~mitra/csSummer2013/cs312/lectures/interfaces.html
 [explicit-implementation]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation

@@ -8,7 +8,7 @@ public interface IRemoteControlCar
 
 public class ProductionRemoteControlCar
 {
-    public decimal DistanceTravelled { get; private set; }
+    public int DistanceTravelled { get; private set; }
     public int NumberOfVictories { get; set; }
 
     public void Drive()
@@ -19,7 +19,7 @@ public class ProductionRemoteControlCar
 
 public class ExperimentalRemoteControlCar
 {
-    public decimal DistanceTravelled { get; private set; }
+    public int DistanceTravelled { get; private set; }
 
     public void Drive()
     {
@@ -29,7 +29,7 @@ public class ExperimentalRemoteControlCar
 
 public static class TestTrack
 {
-    public static decimal Race(IRemoteControlCar car)
+    public static int Race(IRemoteControlCar car)
     {
         throw new NotImplementedException($"Please implement the (static) TestTrack.Race() method");
     }
