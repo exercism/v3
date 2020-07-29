@@ -6,8 +6,7 @@ These awesome people help maintain the Swift track.
 
 TODO: add senior maintainers -->
 
-- Haunshila Yadav (Slack: `@haunshila`, Github: [haunshila](https://github.com/haunshila))
-
 ## Contributing Maintainers
 
 - William D. Neumann (Slack: `@WDNeumann`, Github: [wneumann](https://github.com/wneumann))
+- Haunshila Yadav (Slack: `@haunshila`, Github: [haunshila](https://github.com/haunshila))
