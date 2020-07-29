@@ -43,11 +43,8 @@ public static class TestTrack
         return car.DistanceTravelled;
     }
 
-    public static List<ProductionRemoteControlCar> GetRankedCars(ProductionRemoteControlCar prc1,
-        ProductionRemoteControlCar prc2)
+    public static void RankCars(List<ProductionRemoteControlCar> unrankedCars)
     {
-        var rankings = new List<ProductionRemoteControlCar>{prc1, prc2};
-        rankings.Sort();
-        return rankings;
+        unrankedCars.Sort();
     }
 }
