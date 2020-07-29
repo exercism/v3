@@ -1,14 +1,12 @@
-C#, like many statically typed languages, provides a number of types that represent integers, each with its own range of values. At the low end, the `sbyte` type has a minimum value of -128 and a maximum value of 127. Like all the integer types these values are available as `<type>.MinValue` and `<type>.MaxValue`. At the high end, the `long` type has a minimum value of -9,223,372,036,854,775,808 and a maximum value of 9,223,372,036,854,775,807. In between lie the `short` and `int` types.
-
-The ranges are determined by the storage width of the type as allocated by the system. For example, a byte uses 8 bits and a long uses 64 bits.
+C#, like many statically typed languages, provides a number of types that represent integers, each with its own [range of values][integral-numeric-types]. At the low end, the `sbyte` type has a minimum value of -128 and a maximum value of 127. Like all the integer types these values are available as `<type>.MinValue` and `<type>.MaxValue`. At the high end, the `long` type has a minimum value of -9,223,372,036,854,775,808 and a maximum value of 9,223,372,036,854,775,807. In between lie the `short` and `int` types.
 
 Each of the above types is paired with an unsigned equivalent: `sbyte`/`byte`, `short`/`ushort`, `int`/`uint` and `long`/`ulong`. In all cases the range of the values is from 0 to the negative signed maximum times 2 plus 1.
 
-Values of unsigned integral types are represented with a simple base 2 representation. Values of signed types use 2s complement signed number representation.
+Values of unsigned integral types are represented with a simple [base 2][wiki-binary] representation. Values of signed types use [2s complement][wiki-twos-complement] signed number representation.
 
-The multiplicity of integer types reflects machine architectures, in the size of registers, the size of CPU instruction arguments and the treatment of sign within the CPU. A value of type `long` uses 64 bits whereas a value of type `sbyte` uses 8 bits. In some cases there will be implications on CPU performance, memory usage and even disk usage (where smaller integer sizes will improve operations). Selection of integer `type` can also be a rough and ready wsy of communicating information to other developers about the expected range of values. The `int` type is widely used as the default type where nothing special has been identified about the particular usage. The `long` or `ulong` is widely used as a simple identifier.
+The multiplicity of integer types reflects machine architectures, in the size of registers, the size of CPU instruction arguments and the treatment of sign within the CPU. A value of type `long` uses 64 bits whereas a value of type `sbyte` uses 8 bits. In some cases there will be implications on CPU performance, memory usage and even disk usage (where selection of a smaller integer type will generally be beneficial). Selection of integer `type` can also be a rough and ready wsy of communicating information to other developers about the expected range of values. The `int` type is widely used as the default type where nothing special has been identified about the particular usage. The `long` or `ulong` is widely used as a simple identifier. The size of the type in bytes determines the range of values.
 
-The types discussed so far are _primitive_ types. Each is paired with a `struct` alias which implements fields (such as `MinValue`) which are associated with the type. Some examples are: `sbyte` / `SByte`, `ushort` / `UInt16` and `long` / `Int64`.
+The types discussed so far are _primitive_ types. Each is paired with a `struct` alias which implements fields (such as `MinValue`) and methods (such as `ToString()`) which are associated with the type. Some examples are: `sbyte` / `SByte`, `ushort` / `UInt16` and `long` / `Int64`.
 
 |        | Width  | Minimum                    | Maximum                     |
 | ------ | ------ | -------------------------- | --------------------------- |
@@ -41,25 +39,21 @@ ui = (uint)s;
 
 In the above example, if the value lay instead outside the range of the assignee then an overflow would occur. See (TODO cross-ref-tba).
 
-The following paragraphs discuss the casting of integral types. (TODO cross-ref-tba casting) provides a broader discussion of casting and type conversion.
+The requirement for casting is determined by the two types involved rather than a particular value.
+
+The following paragraphs discuss the casting of integral types. (TODO cross-ref-tba casting) provides a broader discussion of casting and type conversion. See that documentation for a discussion of conversion between integral types and `char` and `bool`.
 
 ##### Casting Primitive Types - Implicit
 
-C#'s type system is somewhat stricter than _C_'s or Javascript's and as a consequence, casting operations are more restricted. [Implicit casting][implicit-casts] takes place between two numeric types as long as the "to" type can preserve the scale and sign of the "from" type's value. Note in the documentation the exception for converting to real numbers where precision may be lost.
+C#'s type system is somewhat stricter than _C_'s or Javascript's and as a consequence, casting operations are more restricted. [Implicit casting][implicit-casts] takes place between two numeric types as long as the "to" type can preserve the scale and sign of the "from" type's value.
 
 An implicit cast is not signified by any special syntax.
-
-There is no implicit conversion of a numeric (or string) expression to `bool`.  The base class library provides `Convert.ToBoolean()` for this purpose.
-
-An expression of type `char` can be implicitly cast to `int`. The cast in the opposite direction must be explicit. Not all values of `int` are valid utf 16 chars.
 
 ##### Casting Primitive Types - Explicit
 
 Where numeric types cannot be cast implicitly you can generally use the explicit cast [operator][cast-operator].
 
 Where the value being cast cannot be represented by the "to" type because it is insufficiently wide or there is a sign conflict then an overflow exception may be thrown in the case of integers, or the "to" type variable may take a value of `Infinity` in the case of floats and doubles.
-
-An expression of type `int` can be explicitly cast to `char`. This may result in an invalid `char`.
 
 #### Casting Primitive Types - Examples
 
@@ -91,3 +85,6 @@ The `BitConverter` class provides a convenient way of converting integer types t
 [numeric-conversions]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/numeric-conversions
 [cast-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#cast-expression
 [implicit-casts]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/numeric-conversions
+[wiki-twos-complement]: https://en.wikipedia.org/wiki/Two%27s_complement
+[wiki-binary]: https://en.wikipedia.org/wiki/Binary_number
+[sbyte]: https://docs.microsoft.com/en-us/dotnet/api/system.sbyte?view=netcore-3.1
