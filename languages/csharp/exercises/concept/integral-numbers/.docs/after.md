@@ -35,6 +35,50 @@ The types discussed so far are _primitive_ types. Each is paired with a `struct`
 | uint   | 32 bit | 0                          | +4_294_967_295              |
 | ulong  | 64 bit | 0                          | +18_446_744_073_709_551_615 |
 
+#### Casting
+
+The following paragraphs discuss the casting of integral types. (TODO cross-ref-tba casting) provides a broader discussion of casting and type conversion.
+
+##### Casting Primitive Types - Implicit
+
+C#'s type system is somewhat stricter than _C_'s or Javascript's and as a consequence, casting operations are more restricted. [Implicit casting][implicit-casts] takes place between two numeric types as long as the "to" type can preserve the scale and sign of the "from" type's value. Note in the documentation the exception for converting to real numbers where precision may be lost.
+
+An implicit cast is not signified by any special syntax. For example:
+
+```csharp
+int myInt = 1729;
+long myLong = myInt;
+```
+
+There is no implicit conversion of a numeric (or string) expression to `bool`.
+
+An expression of type `char` can be implicitly cast to `int`. The cast in the opposite direction must be explicit. Not all values of `int` are valid utf 16 chars.
+
+##### Casting Primitive Types - Explicit
+
+Where numeric types cannot be cast implicitly you can generally use the explicit cast [operator][cast-operator].
+
+Where the value being cast cannot be represented by the "to" type because it is insufficiently wide or there is a sign conflict then an overflow exception may be thrown in the case of integers, or the "to" type variable may take a value of `Infinity` in the case of floats and doubles.
+
+An expression of type `int` can be explicitly cast to `char`. This may result in an invalid `char`.
+
+#### Casting Primitive Types - Examples
+
+```csharp
+int largeInt = Int32.MaxValue;
+int largeNegInt = Int32.MinValue;
+ushort shortUnsignedInt = ushort.MaxValue;
+
+// implicit cast
+int from_ushort = shortUnsignedInt;          // 65535
+float from_int = largeInt;                   // -21474836E+09
+
+// explicit cast
+uint from_largeInt = (uint)largeInt;         // 2147483647
+uint from_neg = (uint) largeNegInt;          // 2147483648 or OverflowException is thrown (if checked)
+
+```
+
 #### Bit conversion
 
 The `BitConverter` class provides a convenient way of converting integer types to and from arrays of bytes.
@@ -46,3 +90,5 @@ The `BitConverter` class provides a convenient way of converting integer types t
 
 [integral-numeric-types]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types
 [numeric-conversions]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/numeric-conversions
+[cast-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#cast-expression
+[implicit-casts]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/numeric-conversions
