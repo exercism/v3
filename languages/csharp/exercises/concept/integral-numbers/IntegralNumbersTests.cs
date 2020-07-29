@@ -68,7 +68,7 @@ namespace IntegralNumbers
             Assert.Equal(new byte[] {0xfe, 0xff, 0x7f, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }, bytes);
         }
         
-        [Fact]
+        [Fact(Skip = "Remove this Skip property to run this test")]
         public void ToBuffer_Zero()
         {
             var bytes = TelemetryBuffer.ToBuffer(0);
@@ -81,18 +81,18 @@ namespace IntegralNumbers
             var bytes = TelemetryBuffer.ToBuffer(-1);
             Assert.Equal(new byte[] {0xfe, 0xff, 0xff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }, bytes);
         }
-        
+
         [Fact(Skip = "Remove this Skip property to run this test")]
         public void ToBuffer_lower_neg_short()
         {
             var bytes = TelemetryBuffer.ToBuffer(Int16.MinValue);
             Assert.Equal(new byte[] {0xfe, 0x0, 0x80, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }, bytes);
         }
-        
+
         [Fact(Skip = "Remove this Skip property to run this test")]
         public void ToBuffer_upper_neg_int()
         {
-            int n = Int16.MinValue - 1; 
+            int n = Int16.MinValue - 1;
             var bytes = TelemetryBuffer.ToBuffer(n);
             Assert.Equal(new byte[] {0xfc, 0xff, 0x7f, 0xff, 0xff, 0x0, 0x0, 0x0, 0x0 }, bytes);
         }
@@ -121,7 +121,7 @@ namespace IntegralNumbers
         [Fact (Skip = "Remove this Skip property to run this test")]
         public void FromBuffer_Invalid()
         {
-            Assert.Equal(0, 
+            Assert.Equal(0,
                 TelemetryBuffer.FromBuffer(new byte[] {22, 0xff, 0xff, 0xff, 0x7f, 0, 0, 0, 0 }));
         }
 
@@ -131,63 +131,63 @@ namespace IntegralNumbers
             Assert.Equal(Int64.MaxValue,
                 TelemetryBuffer.FromBuffer(new byte[] {0xf8, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0x7f }));
         }
-        
+
         [Fact(Skip = "Remove this Skip property to run this test")]
         public void FromBuffer_lower_long()
         {
             Assert.Equal((long)UInt32.MaxValue + 1,
                 TelemetryBuffer.FromBuffer(new byte[] {0xf8, 0x0, 0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0 }));
         }
-        
+
         [Fact(Skip = "Remove this Skip property to run this test")]
         public void FromBuffer_upper_uint()
         {
             Assert.Equal(UInt32.MaxValue,
                 TelemetryBuffer.FromBuffer(new byte[] {0x4, 0xff, 0xff, 0xff, 0xff, 0x0, 0x0, 0x0, 0x0}));
         }
-        
+
         [Fact(Skip = "Remove this Skip property to run this test")]
         public void FromBuffer_lower_uint()
         {
             Assert.Equal((long)Int32.MaxValue + 1,
                 TelemetryBuffer.FromBuffer(new byte[] {0x4, 0x0, 0x0, 0x0, 0x80, 0x0, 0x0, 0x0, 0x0 }));
         }
-        
+
         [Fact(Skip = "Remove this Skip property to run this test")]
         public void FromBuffer_upper_int()
         {
             Assert.Equal(Int32.MaxValue,
                 TelemetryBuffer.FromBuffer(new byte[] {0xfc, 0xff, 0xff, 0xff, 0x7f, 0x0, 0x0, 0x0, 0x0 }));
         }
-        
+
         [Fact(Skip = "Remove this Skip property to run this test")]
         public void FromBuffer_lower_int()
         {
             Assert.Equal(UInt16.MaxValue + 1,
                 TelemetryBuffer.FromBuffer(new byte[] {0xfc, 0x0, 0x0, 0x1, 0x0, 0x0, 0x0, 0x0, 0x0 }));
         }
-        
+
         [Fact(Skip = "Remove this Skip property to run this test")]
         public void FromBuffer_upper_ushort()
         {
             Assert.Equal(UInt16.MaxValue,
                 TelemetryBuffer.FromBuffer(new byte[] {0x2, 0xff, 0xff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }));
         }
-        
+
         [Fact(Skip = "Remove this Skip property to run this test")]
         public void FromBuffer_lower_ushort()
         {
             Assert.Equal(Int16.MaxValue + 1,
                 TelemetryBuffer.FromBuffer(new byte[] {0x2, 0x0, 0x80, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }));
         }
-        
+
         [Fact(Skip = "Remove this Skip property to run this test")]
         public void FromBuffer_upper_short()
         {
             Assert.Equal(Int16.MaxValue,
                 TelemetryBuffer.FromBuffer(new byte[] {0xfe, 0xff, 0x7f, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }));
         }
-        
+
         [Fact(Skip = "Remove this Skip property to run this test")]
         public void FromBuffer_Zero()
         {
@@ -201,14 +201,14 @@ namespace IntegralNumbers
             Assert.Equal(-1,
                 TelemetryBuffer.FromBuffer(new byte[] {0xfe, 0xff, 0xff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }));
         }
-        
+
         [Fact(Skip = "Remove this Skip property to run this test")]
         public void FromBuffer_lower_neg_short()
         {
             Assert.Equal(Int16.MinValue,
                 TelemetryBuffer.FromBuffer(new byte[] {0xfe, 0x0, 0x80, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }));
         }
-        
+
         [Fact(Skip = "Remove this Skip property to run this test")]
         public void FromBuffer_upper_neg_int()
         {
