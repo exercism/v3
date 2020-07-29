@@ -109,6 +109,12 @@
         ]
       },
       {
+        "slug": "integral-numbers",
+        "uuid": "86bbc073-1726-423d-b156-c394554a4a8c",
+        "concepts": ["casting", "integral-numbers"],
+        "prerequisites": ["arrays", "numbers"]
+      },
+      {
         "slug": "lists",
         "uuid": "5c438d02-67a6-43b6-9e3c-8ba309c4ea32",
         "concepts": ["generic-types", "lists"],
@@ -270,7 +276,7 @@
           "inheritance",
           "numbers",
           "sets",
-          "signed-integers"
+          "integral-numbers"
         ]
       },
       {
@@ -306,7 +312,7 @@
           "strings",
           "conditionals",
           "arithmetic-overflow",
-          "signed-integers"
+          "integral-numbers"
         ]
       }
     ],
