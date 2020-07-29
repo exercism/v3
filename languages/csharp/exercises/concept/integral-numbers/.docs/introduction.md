@@ -4,8 +4,6 @@ The ranges are determined by the storage width of the type as allocated by the s
 
 Each of the above types is paired with an unsigned equivalent: `sbyte`/`byte`, `short`/`ushort`, `int`/`uint` and `long`/`ulong`. In all cases the range of the values is from 0 to the negative signed maximum times 2 plus 1.
 
-Values of unsigned integral types are represented with a simple base 2 representation. Values of signed types use 2s complement signed number representation.
-
 |        | Width  | Minimum                    | Maximum                     |
 | ------ | ------ | -------------------------- | --------------------------- |
 | sbyte  | 8 bit  | -128                       | +127                        |
@@ -17,7 +15,7 @@ Values of unsigned integral types are represented with a simple base 2 represent
 | uint   | 32 bit | 0                          | +4_294_967_295              |
 | ulong  | 64 bit | 0                          | +18_446_744_073_709_551_615 |
 
-A variable (or expression) of one type can easily be converted to another. For instance, in an assignment operation, if the type of the value being assigned (rhs) ensures that the value will lie within the range of the type being assigned to (lhs) then there is a simple assignment:
+A variable (or expression) of one type can easily be converted to another. For instance, in an assignment operation, if the type of the value being assigned (lhs) ensures that the value will lie within the range of the type being assigned to (rhs) then there is a simple assignment:
 
 ```csharp
 uint ui = uint.MaxValue;
