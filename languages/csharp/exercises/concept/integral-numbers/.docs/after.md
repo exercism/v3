@@ -41,7 +41,7 @@ In the above example, if the value lay instead outside the range of the assignee
 
 The requirement for casting is determined by the two types involved rather than a particular value.
 
-The following paragraphs discuss the casting of integral types. (TODO cross-ref-tba casting) provides a broader discussion of casting and type conversion. See that documentation for a discussion of conversion between integral types and `char` and `bool`.
+The following paragraphs discuss the casting of integral types. (TODO cross-ref-tba casting) provides a broader discussion of casting and type conversion. See that documentation for a discussion of conversion between integral types and floating-point numbers, `char` and `bool`.
 
 ##### Casting Primitive Types - Implicit
 
@@ -53,7 +53,7 @@ An implicit cast is not signified by any special syntax.
 
 Where numeric types cannot be cast implicitly you can generally use the explicit cast [operator][cast-operator].
 
-Where the value being cast cannot be represented by the "to" type because it is insufficiently wide or there is a sign conflict then an overflow exception may be thrown in the case of integers, or the "to" type variable may take a value of `Infinity` in the case of floats and doubles.
+Where the value being cast cannot be represented by the "to" type because it is insufficiently wide or there is a sign conflict then an overflow exception may be thrown.
 
 #### Casting Primitive Types - Examples
 
