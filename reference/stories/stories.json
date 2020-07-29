@@ -399,6 +399,29 @@
     ]
   },
   {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/enums.log-line-parser.md",
+    "name": "Log line parser",
+    "description": "In this exercise you\u0027ll be processing log-lines.",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/types/enum.md",
+      "name": "enums"
+    },
+    "implementations": [
+      {
+        "track": "C#",
+        "slug": "csharp",
+        "exercise": "enums",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/enums/.docs/instructions.md"
+      },
+      {
+        "track": "Rust",
+        "slug": "rust",
+        "exercise": "enums",
+        "url": "https://github.com/exercism/v3/blob/master/languages/rust/exercises/concept/enums/.docs/instructions.md"
+      }
+    ]
+  },
+  {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/strings.log-line-parser.md",
     "name": "Log line parser",
     "description": "In this exercise you\u0027ll be processing log-lines.",
@@ -452,25 +475,25 @@
     ]
   },
   {
-    "url": "https://github.com/exercism/v3/blob/master/reference/stories/enums.log-line-parser.md",
-    "name": "Log line parser",
-    "description": "In this exercise you\u0027ll be processing log-lines.",
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/arrays.magician-card-stack.md",
+    "name": "Magician card stack",
+    "description": "As a magician-to-be, Elyse needs to practice some basics. She has a stack of cards that she wants to manipulate.",
     "concept": {
-      "url": "https://github.com/exercism/v3/blob/master/reference/types/enum.md",
-      "name": "enums"
+      "url": "https://github.com/exercism/v3/blob/master/reference/types/array.md",
+      "name": "arrays"
     },
     "implementations": [
       {
-        "track": "C#",
-        "slug": "csharp",
-        "exercise": "enums",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/enums/.docs/instructions.md"
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "arrays",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/arrays/.docs/instructions.md"
       },
       {
-        "track": "Rust",
-        "slug": "rust",
-        "exercise": "enums",
-        "url": "https://github.com/exercism/v3/blob/master/languages/rust/exercises/concept/enums/.docs/instructions.md"
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "array-analysis",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/array-analysis/.docs/instructions.md"
       }
     ]
   },
@@ -725,7 +748,7 @@
         "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md"
       },
       {
-        "track": "F#",
+        "track": "C#",
         "slug": "csharp",
         "exercise": "floating-point-numbers",
         "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md"

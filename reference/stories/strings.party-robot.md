@@ -33,7 +33,7 @@ You will be sitting next to <neighbour-name>!
 
 ## Implementations
 
-- [Go][implementation-go] (reference implementation)
+- [Go: strings][implementation-go] (reference implementation)
 
 ## Reference
 
