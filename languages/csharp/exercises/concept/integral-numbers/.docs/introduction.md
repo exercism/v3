@@ -5,17 +5,15 @@ Each of the above types is paired with an unsigned equivalent: `sbyte`/`byte`, `
 A variable (or expression) of one type can easily be converted to another. For instance, in an assignment operation, if the type of the value being assigned (lhs) ensures that the value will lie within the range of the type being assigned to (rhs) then there is a simple assignment:
 
 ```csharp
-ulong ul;
 uint ui = uint.MaxValue;
-ul = ui;    // no problem
+ulong ul = ui;    // no problem
 ```
 
 On the other hand if the range of type being assigned from is not a subset of the assignee's range of values then a cast, `()` operation is required even if the particular value is within the assignee's range:
 
 ```csharp
-uint ui;
 short s = 42;
-ui = (uint)s;
+uint ui = (uint)s;
 ```
 
 #### Bit conversion

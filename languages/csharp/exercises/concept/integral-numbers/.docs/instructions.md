@@ -22,7 +22,7 @@ Only the prefix byte and the number of following bytes indicated by the prefix w
 
 ## 1. Encode an integral value ready to send
 
-Please implement the static method `TelementryBuffer.ToBuffer()` to encode a buffer taking the parameter passed to the method.
+Please implement the static method `TelemetryBuffer.ToBuffer()` to encode a buffer taking the parameter passed to the method.
 
 ```csharp
 TelemetryBuffer.ToBuffer(5)
@@ -33,7 +33,7 @@ TelemetryBuffer.ToBuffer(Int32.MaxValue)
 
 ## 2. Decode a received buffer
 
-Please implement the static method `TelementryBuffer.FromBuffer()` to decode the buffer received and return the value in the form of a `long`.
+Please implement the static method `TelemetryBuffer.FromBuffer()` to decode the buffer received and return the value in the form of a `long`.
 
 ```csharp
 TelemetryBuffer.FromBuffer(new byte[] {0xfc, 0xff, 0xff, 0xff, 0x7f, 0, 0, 0, 0 })
