@@ -15,6 +15,7 @@ public interface IItalianLanguage : ILanguage
 
 public interface IScriptConverter
 {
+    string Version { get; set; }
     string ConvertCyrillicToLatin(string cyrillic);
 }
 ```
@@ -54,6 +55,8 @@ public class FrenchTraveller : ILanguage
 
 public class RussianTraveller : ILanguage, IScriptConverter
 {
+    public string Version { get; set; } = "1.0";
+
     public string Speak()
     {
         return "Привет мир";
@@ -67,6 +70,8 @@ public class RussianTraveller : ILanguage, IScriptConverter
 
 public class DocumentTranslator : IScriptConverter
 {
+    public string Version { get; set; } = "1.0";
+
     public string Translate(string russian)
     {
         throw new NotImplementedException();
@@ -93,7 +98,7 @@ Interfaces can inherit from other interfaces.
 
 Members of an interface are public by default.
 
-Interfaces can contain nested types, such as `const` primitives, `enums`, `delegates`, `classes` and `structs`. Here, the interfaces act as [namespaces][wiki-namespaces] in the same way that classes and structs do and the behaviour and syntax is identical.
+Interfaces can contain nested types, such as `const` literals, `enums`, `delegates`, `classes` and `structs`. Here, the interfaces act as [namespaces][wiki-namespaces] in the same way that classes and structs do and the behaviour and syntax is identical.
 
 By design, C# does not support multiple inheritance, but it facilitates a kind of multiple inheritance through interfaces.
 
