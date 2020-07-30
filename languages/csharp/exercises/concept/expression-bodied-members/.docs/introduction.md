@@ -8,6 +8,8 @@ int Times3(int input) => input * 3;
 int Interesting => 1729;
 ```
 
+#### Ternary operators
+
 Ternary operators allow if-conditions to be defined in expressions rather than statement blocks. This echoes functional programming approaches and can often make code more expressive and less error-prone.
 
 ```csharp
@@ -21,3 +23,6 @@ int max = a > b ? a : b;
 ```csharp
 string trimmed = str == null ? throw new ArgumentException() : str.Trim();
 ```
+
+#### Switch expressions
+
