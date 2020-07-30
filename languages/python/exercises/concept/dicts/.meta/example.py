@@ -24,4 +24,3 @@ def list_inventory(inventory):
         if item[1] > 0:
             output.append(item)
     return output
-        
