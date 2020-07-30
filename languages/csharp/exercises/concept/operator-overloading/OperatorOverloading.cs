@@ -8,4 +8,12 @@ public struct CurrencyAmount
         this.amount = amount;
         this.currency = currency;
     }
+
+    // TODO Implement equality operators
+
+    // TODO Implement comparison operators
+
+    // TODO Implement arithmetic operators
+
+    // TODO Implement type conversion operators
 }

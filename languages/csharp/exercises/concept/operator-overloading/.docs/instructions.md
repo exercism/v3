@@ -73,3 +73,13 @@ CurrencyAmount amountA = new CurrencyAmount(55.5m, "HD");
 (double)amountA
 // => 55.5d
 ```
+
+## 6. Convert the currency amount to a decimal
+
+Please modify the `CurrencyAmount` struct so that an instance can be explicitly cast to a double.
+
+```csharp
+CurrencyAmount amountA = new CurrencyAmount(55.5m, "HD");
+decimal d = amountA;
+// => d == 55.5m
+```

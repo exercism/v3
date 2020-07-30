@@ -8,13 +8,13 @@ Most operators have the form:
 static <return type> operaator <operator symbols>(<parameters>);
 ```
 
-Cast operators have the form:
+[Cast operators][ud-conversion-operators] have the form:
 
 ```csharp
 static (explicit|implicit) operator <cast-to-type>(<cast-from-type> <parameter name>);
 ```
 
-Syntax example for standard operators:
+Syntax examples:
 
 ```csharp
 struct Point
@@ -30,6 +30,14 @@ struct Point
     public static bool operator !=(Point pt, Point ptOther)
     {
         return !(pt == ptOther);
+    }
+
+    public static Point operator *(Point pt, decimal scale)
+    {
+        var ptNew = new Point();
+        ptNew.x = pt.x * scale;
+        ptNew.y = pt.y * scale;
+        return ptNew;
     }
 
     public static implicit operator Point((decimal x, decimal y) xy)
@@ -49,12 +57,13 @@ struct Point
 
 It is often productive to implement an `Equals()` method and override it from the `==` operator. Similarly, for comparisons you can implement the `IComparable / CompareTo()` interface. In both cases you get to kill two birds with just over one stone.
 
-## Note for Scala developers
+You should note that you cannot create operators from symbols that are not currently used as operators. You can use only existing symbols for those operations where the documentation specifies that they can be overloaded.
 
-Scala developers should note that you cannot create operators from symbols that are not currently used as operators. You can use only existing symbols for those operations where the documentation specifies that they can be overloaded.
+Note that the order of parameters is important where they differ in type. In the above example code `pt * 10m` is a legal expression whereas `10m * pt` will not compile.
 
 #### Reference
 
 This documentation of [operator overloading][operator-overloading] details the syntax.
 
 [operator-overloading]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/operator-overloading
+[ud-conversion-operators]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/user-defined-conversion-operators

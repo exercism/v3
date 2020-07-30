@@ -12,7 +12,7 @@ Cast operators have the form:
 static (explicit|implicit) operator <cast-to-type>(<cast-from-type> <parameter name>);
 ```
 
-Syntax example for standard operators:
+Syntax examples:
 
 ```csharp
 struct Point
@@ -28,6 +28,27 @@ struct Point
     public static bool operator !=(Point pt, Point ptOther)
     {
         return !(pt == ptOther);
+    }
+
+    public static Point operator *(Point pt, decimal scale)
+    {
+        var ptNew = new Point();
+        ptNew.x = pt.x * scale;
+        ptNew.y = pt.y * scale;
+        return ptNew;
+    }
+
+    public static implicit operator Point((decimal x, decimal y) xy)
+    {
+        var pt = new Point();
+        pt.x = xy.x;
+        pt.y = xy.y;
+        return pt;
+    }
+
+    public static explicit operator (decimal x, decimal y)(Point pt)
+    {
+        return (pt.x, pt.y);
     }
 }
 ```
