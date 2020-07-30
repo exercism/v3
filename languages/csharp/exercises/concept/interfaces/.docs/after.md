@@ -1,4 +1,4 @@
-`interfaces` are the primary means of decoupling the uses of a class from its implementation. This decoupling provides flexibility for maintenance of the implementation and helps support type safe generic behavior.
+`interfaces` are the primary means of [decoupling][wiki-loose-coupling] the uses of a class from its implementation. This decoupling provides flexibility for maintenance of the implementation and helps support type safe generic behavior.
 
 The syntax of an interface is similar to that of a class or struct except that methods and properties appear as the signature only and no body is provided.
 
@@ -82,9 +82,9 @@ pubilc class DocumentTranslator : IScriptConverter
 
 Code which uses the above interfaces and classes can:
 
-- treat all speakers in the same way irrespective of language
-- class-user code are maintained by different teams and some subsystem handling script conversion can operate without caring about what specific types it is dealing with.
-- can remain unaware of the changes to the italian speaker which is convenient if the class
+- treat all speakers in the same way irrespective of language.
+- allow some subsystem handling script conversion to operate without caring about what specific types it is dealing with.
+- remain unaware of the changes to the italian speaker which is convenient if the class code and user code are maintained by different teams
 
 Interfaces are widely used to support testing as they allow for easy [mocking][so-mocking-interfaces].
 
@@ -163,3 +163,4 @@ This [article][dt-interfaces] is an excellent primer on interfaces and focuses o
 [wiki-polymorphism]: https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
 [wiki-namespaces]: https://en.wikipedia.org/wiki/Namespace
 [dt-interfaces]: https://www.talkingdotnet.com/default-implementations-in-interfaces-in-c-sharp-8/
+[wiki-loose-coupling]: https://en.wikipedia.org/wiki/Loose_coupling
