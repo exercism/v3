@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.InteropServices;
 
 public struct CurrencyAmount
 {
@@ -79,5 +80,10 @@ public struct CurrencyAmount
     public static explicit operator double (CurrencyAmount @this)
     {
         return (double) @this.amount;
+    }
+
+    public static implicit operator decimal (CurrencyAmount @this)
+    {
+        return @this.amount;
     }
 }
