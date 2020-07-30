@@ -4,7 +4,7 @@ The ranges are determined by the storage width of the type as allocated by the s
 
 Each of the above types is paired with an unsigned equivalent: `sbyte`/`byte`, `short`/`ushort`, `int`/`uint` and `long`/`ulong`. In all cases the range of the values is from 0 to the negative signed maximum times 2 plus 1.
 
-|        | Width  | Minimum                    | Maximum                     |
+| Type   | Width  | Minimum                    | Maximum                     |
 | ------ | ------ | -------------------------- | --------------------------- |
 | sbyte  | 8 bit  | -128                       | +127                        |
 | short  | 16 bit | -32_768                    | +32_767                     |

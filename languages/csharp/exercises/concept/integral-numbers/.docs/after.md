@@ -6,18 +6,18 @@ Values of unsigned integral types are represented with a simple [base 2][wiki-bi
 
 The multiplicity of integer types reflects machine architectures, in the size of registers, the size of CPU instruction arguments and the treatment of sign within the CPU. A value of type `long` uses 64 bits whereas a value of type `sbyte` uses 8 bits. In some cases there will be implications on CPU performance, memory usage and even disk usage (where selection of a smaller integer type will generally be beneficial). Selection of integer `type` can also be a rough and ready wsy of communicating information to other developers about the expected range of values. The `int` type is widely used as the default type where nothing special has been identified about the particular usage. The `long` or `ulong` is widely used as a simple identifier. The size of the type in bytes determines the range of values.
 
-The types discussed so far are _primitive_ types. Each is paired with a `struct` alias which implements fields (such as `MinValue`) and methods (such as `ToString()`) which are associated with the type. Some examples are: `sbyte` / `SByte`, `ushort` / `UInt16` and `long` / `Int64`.
+The types discussed so far are _primitive_ types. Each is paired with a `struct` alias which implements fields (such as `MinValue`) and methods (such as `ToString()`) which are associated with the type.
 
-| Type   | Width  | Minimum                    | Maximum                     |
-| ------ | ------ | -------------------------- | --------------------------- |
-| `sbyte`  | 8 bit  | -128                       | +127                        |
-| `short`  | 16 bit | -32_768                    | +32_767                     |
-| `int`    | 32 bit | -2_147_483_648             | +2_147_483_647              |
-| `long`   | 64 bit | -9_223_372_036_854_775_808 | +9_223_372_036_854_775_807  |
-| `byte`   | 8 bit  | 0                          | +255                        |
-| `ushort` | 16 bit | 0                          | +65_535                     |
-| `uint`   | 32 bit | 0                          | +4_294_967_295              |
-| `ulong`  | 64 bit | 0                          | +18_446_744_073_709_551_615 |
+| Type     | Struct   | Width  | Minimum                    | Maximum                     |
+| -------- | -------- | ------ | -------------------------- | --------------------------- |
+| `sbyte`  | `SByte`  | 8 bit  | -128                       | +127                        |
+| `short`  | `Int16`  | 16 bit | -32_768                    | +32_767                     |
+| `int`    | `Int32`  | 32 bit | -2_147_483_648             | +2_147_483_647              |
+| `long`   | `Int64`  | 64 bit | -9_223_372_036_854_775_808 | +9_223_372_036_854_775_807  |
+| `byte`   | `Byte`   | 8 bit  | 0                          | +255                        |
+| `ushort` | `UInt16` | 16 bit | 0                          | +65_535                     |
+| `uint`   | `UInt32` | 32 bit | 0                          | +4_294_967_295              |
+| `ulong`  | `UInt64` | 64 bit | 0                          | +18_446_744_073_709_551_615 |
 
 #### Casting
 
