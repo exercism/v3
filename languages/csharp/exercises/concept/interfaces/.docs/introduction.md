@@ -7,7 +7,7 @@ public interface ILanguage
     string Speak();
 }
 
-public class ItalianTaveller : ILanguage, IClonable
+public class ItalianTaveller : ILanguage, ICloneable
 {
     public string LanguageName { get; set; } =  "Italiano";
 
@@ -16,10 +16,10 @@ public class ItalianTaveller : ILanguage, IClonable
         return "Ciao mondo";
     }
 
-    public object Cloone()
+    public object Clone()
     {
-        ItalianTraveller it = new ItalianTraveller();
-        it.Language = this.Language;
+        ItalianTaveller it = new ItalianTaveller();
+        it.LanguageName = this.LanguageName;
         return it;
     }
 }

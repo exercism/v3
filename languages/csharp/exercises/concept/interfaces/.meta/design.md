@@ -17,4 +17,4 @@
 
 - `classes`: know how to work with classes.
 - `properties`: know what properties are.
-- `lisss`: know how to use `List<T>`.
+- `lists`: know how to use `List<T>`.

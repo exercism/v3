@@ -5,7 +5,7 @@ The syntax of an interface is similar to that of a class or struct except that m
 ```csharp
 public interface ILanguage
 {
-	string Speak();
+    string Speak();
 }
 
 public interface IItalianLanguage : ILanguage
@@ -15,7 +15,7 @@ public interface IItalianLanguage : ILanguage
 
 public interface IScriptConverter
 {
-	string ConvertCyrillicToLatin();
+    string ConvertCyrillicToLatin(string cyrillic);
 }
 ```
 
@@ -28,54 +28,53 @@ Interfaces typically do one or more of the following:
 - expose the public API of a class so that multiple implementations can co-exist. One example is that of a [test double][wiki-test-double]
 
 ```csharp
-
 public class ItalianTraveller : IItalianLanguage
 {
-	public string Speak()
-	{
-		return "Ciao mondo";
-	}
+    public string Speak()
+    {
+        return "Ciao mondo";
+    }
 }
 
 public class ItalianTravellerV2 : IItalianLanguage
 {
-	public string Speak()
-	{
-		return "migliorata - Ciao mondo";
-	}
+    public string Speak()
+    {
+        return "migliorata - Ciao mondo";
+    }
 }
 
 public class FrenchTraveller : ILanguage
 {
-	public string Speak()
-	{
-		return "Ça va?";
-	}
+    public string Speak()
+    {
+        return "Ça va?";
+    }
 }
 
 public class RussianTraveller : ILanguage, IScriptConverter
 {
-	public string Speak()
-	{
-		return "Привет мир";
-	}
+    public string Speak()
+    {
+        return "Привет мир";
+    }
 
     public string ConvertCyrillicToLatin(string cyrillic)
     {
-        // do the conversion
+        throw new NotImplementedException();
     }
 }
 
-pubilc class DocumentTranslator : IScriptConverter
+public class DocumentTranslator : IScriptConverter
 {
-    public string Translate(string russion)
+    public string Translate(string russian)
     {
-        // do the translation
+        throw new NotImplementedException();
     }
 
     public string ConvertCyrillicToLatin(string cyrillic)
     {
-        // do the conversion
+        throw new NotImplementedException();
     }
 }
 ```
@@ -108,25 +107,25 @@ In order provide a distinct implementation of these methods, C# provides [explic
 ```csharp
 public interface IFoo
 {
-	void X();
+    void X();
 }
 
 public interface IBar
 {
-	void X();
+    void X();
 }
 
 public class Census : IFoo, IBar
 {
-	void IFoo.X()
-	{
+    void IFoo.X()
+    {
         Console.Write("This is from Foo");
-	}
+    }
 
-	void IBar.X()
-	{
+    void IBar.X()
+    {
         Console.Write("This is from Bar");
-	}
+    }
 }
 
 public class User
@@ -147,7 +146,7 @@ There are a number of use cases:
 
 - A clash of domains (as illustrated above) where methods have identical signatures.
 - Methods with the same name but different return types: if you implement your own collection classes you may find that an explicit interface for the legacy `IEnumerable.GetEnumerator()`, alongside `IEnumerable<T>.GetEnuerator()`, is required. You may never make use of such the interface but the compiler may insist.
-- Methods where there is no clash of names between interfaces but it is desirable that the implementing class uses the name for some related purpose: `IFormattable` has a `ToStirng()` method which takes a _format type_ parameter as well as parameter of type `IFormatProvider`. A class like `FormattableString` from the Base Class Library (BCL) has the interface to ensure it can be used by routines that take an `IFormattable` but it is more expressive for its main version of `ToString(IFormatProvider)` to omit the _format type_ parameter as it is not used in the implementation and would confuse API users.
+- Methods where there is no clash of names between interfaces but it is desirable that the implementing class uses the name for some related purpose: `IFormattable` has a `ToString()` method which takes a _format type_ parameter as well as parameter of type `IFormatProvider`. A class like `FormattableString` from the Base Class Library (BCL) has the interface to ensure it can be used by routines that take an `IFormattable` but it is more expressive for its main version of `ToString(IFormatProvider)` to omit the _format type_ parameter as it is not used in the implementation and would confuse API users.
 
 #### Default implementation
 

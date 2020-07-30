@@ -1,7 +1,6 @@
 ## General
 
 - [Interface][interface]: what an interface is and how to implement it.
-- [Explicit interface implementation][explicit-interface-implementation]: when and how to use explicit interface implementations.
 
 ## 1. Enable cars to be driven on the same test track
 

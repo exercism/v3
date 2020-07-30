@@ -9,8 +9,8 @@ In addition, production cars are beginning to have some success. The team boss i
 Please add a method to the `IRemoteControlCar` interface to expose the implementations of `Drive()` for the two types of car.
 
 ```csharp
-TestTrack.Race(new ProductionRemoteCcontrolCar());
-TestTrack.Race(new ExperimentalRemoteCcontrolCar());
+TestTrack.Race(new ProductionRemoteControlCar());
+TestTrack.Race(new ProductionRemoteControlCar());
 // this should execute without an exception being thrown
 ```
 
@@ -19,9 +19,9 @@ TestTrack.Race(new ExperimentalRemoteCcontrolCar());
 Please add a property to the `IRemoteControlCar` interface to expose the implementations of the `DistanceTravelled` property for the two types of car.
 
 ```csharp
-var prod = new ProductionRemoteCcontrolCar();
+var prod = new ProductionRemoteControlCar();
 TestTrack.Race(prod);
-var exp = new ExperimentalRemoteCcontrolCar();
+var exp = new ExperimentalRemoteControlCar();
 TestTrack.Race(exp);
 prod.DistanceTravelled
 // => 10
