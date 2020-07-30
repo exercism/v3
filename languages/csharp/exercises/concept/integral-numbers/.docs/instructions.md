@@ -4,8 +4,8 @@ Data is transmitted in a buffer (byte array). When integers are sent, the size o
 
 Each value should be represented in the smallest possible integral type (types of `byte` and `sbyte` are not included as the saving would be trivial):
 
-| Min Value                  | Max Value                 | Type   |
-| -------------------------- | ------------------------- | ------ |
+| Min Value                  | Max Value                 | Type     |
+| -------------------------- | ------------------------- | -------- |
 | 4,294,967,296              | 9,223,372,036,854,775,807 | `long`   |
 | -9,223,372,036,854,775,808 | -2,147,483,649            | `long`   |
 | 2,147,483,648              | 4,294,967,295             | `uint`   |
@@ -29,6 +29,8 @@ TelemetryBuffer.ToBuffer(5)
 // => {0x2, 0x5, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 };
 TelemetryBuffer.ToBuffer(Int32.MaxValue)
 // => {0xfc, 0xff, 0xff, 0xff, 0x7f, 0x0, 0x0, 0x0, 0x0 };
+TelemetryBuffer.ToBuffer(-1)
+// => {0xfe, 0xff, 0xff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 };
 ```
 
 ## 2. Decode a received buffer
