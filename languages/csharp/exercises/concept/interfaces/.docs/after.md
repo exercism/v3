@@ -1,3 +1,11 @@
+No multiple inheritance.
+
+Explicit interfaces
+
+Default implementation
+
+Serializable, Cloneable etc.
+
 An interface defines a set of operations an instance of class or a struct can do.
 
 ```csharp
