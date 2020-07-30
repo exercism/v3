@@ -24,7 +24,7 @@ The implementing class or struct must implement all operations defined by the in
 Interfaces typically do one or more of the following:
 
 - allow a number of different classes to be treated generically by the using code. In this case interfaces are playing the same role as a base class
-- expose a subset of functionality for some specific purpose (such as [`IComparable`][icomparable]) or
+- expose a subset of functionality for some specific purpose (such as [`IComparable<T>`][icomparable]) or
 - expose the public API of a class so that multiple implementations can co-exist. One example is that of a [test double][wiki-test-double]
 
 ```csharp
