@@ -8,16 +8,16 @@ The multiplicity of integer types reflects machine architectures, in the size of
 
 The types discussed so far are _primitive_ types. Each is paired with a `struct` alias which implements fields (such as `MinValue`) and methods (such as `ToString()`) which are associated with the type. Some examples are: `sbyte` / `SByte`, `ushort` / `UInt16` and `long` / `Int64`.
 
-|        | Width  | Minimum                    | Maximum                     |
+| Type   | Width  | Minimum                    | Maximum                     |
 | ------ | ------ | -------------------------- | --------------------------- |
-| sbyte  | 8 bit  | -128                       | +127                        |
-| short  | 16 bit | -32_768                    | +32_767                     |
-| int    | 32 bit | -2_147_483_648             | +2_147_483_647              |
-| long   | 64 bit | -9_223_372_036_854_775_808 | +9_223_372_036_854_775_807  |
-| byte   | 8 bit  | 0                          | +255                        |
-| ushort | 16 bit | 0                          | +65_535                     |
-| uint   | 32 bit | 0                          | +4_294_967_295              |
-| ulong  | 64 bit | 0                          | +18_446_744_073_709_551_615 |
+| `sbyte`  | 8 bit  | -128                       | +127                        |
+| `short`  | 16 bit | -32_768                    | +32_767                     |
+| `int`    | 32 bit | -2_147_483_648             | +2_147_483_647              |
+| `long`   | 64 bit | -9_223_372_036_854_775_808 | +9_223_372_036_854_775_807  |
+| `byte`   | 8 bit  | 0                          | +255                        |
+| `ushort` | 16 bit | 0                          | +65_535                     |
+| `uint`   | 32 bit | 0                          | +4_294_967_295              |
+| `ulong`  | 64 bit | 0                          | +18_446_744_073_709_551_615 |
 
 #### Casting
 
