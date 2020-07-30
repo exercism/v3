@@ -1,6 +1,6 @@
 ## General
 
-- The bird count per day is stored in a [field][fields] named `birdsPerDay`.
+- The bird count per day is stored in a field named `birdsPerDay`.
 - The bird count per day is an array that contains exactly 7 integers.
 
 ## 1. Check what the counts were last week

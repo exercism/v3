@@ -5,34 +5,28 @@ class BirdCount {
     public BirdCount(int[] birdsPerDay) {
         this.birdsPerDay = birdsPerDay;
     }
-
+    Please implement the BirdCount.getLastWeek() method
     public int[] getLastWeek() {
-        // TODO Please implement the BirdCount.getLastWeek() method
-        return null;
+        throw new UnsupportedOperationException("Please implement the BirdCount.getLastWeek() method");
     }
 
     public int getToday() {
-        // TODO Please implement the BirdCount.getToday() method
-        return 0;
+        throw new UnsupportedOperationException("Please implement the BirdCount.getToday() method");
     }
 
     public int incrementTodaysCount() {
-        // TODO Please implement the BirdCount.incrementTodaysCount() method"
-        return 0;
+        throw new UnsupportedOperationException("Please implement the BirdCount.incrementTodaysCount() method");
     }
 
     public boolean hasDayWithoutBirds() {
-        // TODO Please implement the BirdCount.hasDayWithoutBirds() method
-        return false;
+        throw new UnsupportedOperationException("Please implement the BirdCount.hasDayWithoutBirds() method");
     }
 
     public int getCountForFirstDays(int numberOfDays) {
-        // TODO Please implement the BirdCount.getCountForFirstDays() method
-        return 0;
+        throw new UnsupportedOperationException("Please implement the BirdCount.getCountForFirstDays() method");
     }
 
     public int getBusyDays() {
-        // TODO Please implement the BirdCount.getBusyDays() method
-        return 0;
+        throw new UnsupportedOperationException("Please implement the BirdCount.getBusyDays() method");
     }
 }

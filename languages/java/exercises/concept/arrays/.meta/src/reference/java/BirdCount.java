@@ -18,7 +18,7 @@ class BirdCount {
     }
 
     public int incrementTodaysCount() {
-        birdsPerDay[birdsPerDay.length - 1] += 1;
+        birdsPerDay[birdsPerDay.length - 1] = birdsPerDay[birdsPerDay.length - 1] + 1;
         return birdsPerDay[birdsPerDay.length - 1];
     }
 
@@ -39,7 +39,7 @@ class BirdCount {
         }
 
         for (int i = 0; i < numberOfDays; i++) {
-            total += birdsPerDay[i];
+            total = total + birdsPerDay[i];
         }
         return total;
     }

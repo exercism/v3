@@ -3,7 +3,7 @@ import org.junit.Test;
 import org.junit.Ignore;
 
 
-import static org.junit.Assert.assertEquals;
+import static org.assertj.core.api.Assertions.*;
 
 public class BirdCountTest {
 
@@ -17,61 +17,70 @@ public class BirdCountTest {
 
     @Test
     public void itTestGetLastWeek() {
-        assertEquals(true, birdCount.getLastWeek().equals(lastWeek));
+        assertThat(birdCount.getLastWeek().equals(lastWeek)).isTrue();
     }
 
     @Test
+    @Ignore("Remove to run test")
     public void itTestGetToday() {
-        assertEquals(lastWeek[lastWeek.length - 1], birdCount.getToday());
+        assertThat(birdCount.getToday()).isEqualTo(lastWeek[lastWeek.length - 1]);
     }
 
     @Test
+    @Ignore("Remove to run test")
     public void itShouldReturnZeroIfBirdCountLastWeekIsEmpty() {
         int[] lastWeekEmpty = new int[0];
         birdCount = new BirdCount(lastWeekEmpty);
-        assertEquals(0, birdCount.getToday());
+        assertThat(birdCount.getToday()).isEqualTo(0);
     }
 
     @Test
+    @Ignore("Remove to run test")
     public void itIncrementTodaysCount() {
         int currentTodayCount = birdCount.getToday();
         birdCount.incrementTodaysCount();
-        assertEquals(currentTodayCount + 1, birdCount.getToday());
+        assertThat(birdCount.getToday()).isEqualTo(currentTodayCount + 1);
     }
 
     @Test
+    @Ignore("Remove to run test")
     public void itHasDayWithoutBirds() {
-        assertEquals(true, birdCount.hasDayWithoutBirds());
+        assertThat(birdCount.hasDayWithoutBirds()).isTrue();
     }
 
     @Test
+    @Ignore("Remove to run test")
     @Ignore
     public void itShouldNotHaveDaysWithoutBirds() {
         birdCount = new BirdCount(new int[]{1, 2, 5, 3, 7, 8, 4});
-        assertEquals(false, birdCount.hasDayWithoutBirds());
+        assertThat(birdCount.hasDayWithoutBirds()).isFalse();
     }
 
 
     @Test
+    @Ignore("Remove to run test")
     public void itTestGetCountForFirstDays() {
-        assertEquals(10, birdCount.getCountForFirstDays(4));
+        assertThat(birdCount.getCountForFirstDays(4)).isEqualTo(10);
     }
 
     @Test
+    @Ignore("Remove to run test")
     @Ignore
     public void itTestGetCountForMoreDaysThanTheArraySize() {
-        assertEquals(29, birdCount.getCountForFirstDays(10));
+        assertThat(birdCount.getCountForFirstDays(10)).isEqualTo(29);
     }
 
     @Test
+    @Ignore("Remove to run test")
     public void itTestGetCountForBusyDays() {
-        assertEquals(3, birdCount.getBusyDays());
+        assertThat(birdCount.getBusyDays()).isEqualTo(3);
     }
 
     @Test
+    @Ignore("Remove to run test")
     @Ignore
     public void itShouldNotHaveBusyDays() {
         birdCount = new BirdCount(new int[]{1, 2, 3, 3, 2, 1, 4});
-        assertEquals(0, birdCount.getBusyDays());
+        assertThat(birdCount.getBusyDays()).isEqualTo(0);
     }
 }

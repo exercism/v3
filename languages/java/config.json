@@ -13,7 +13,7 @@
         "slug": "arrays",
         "uuid": "60600885-8684-45c3-b8a9-a2f9e3ce2d97",
         "concepts": ["arrays"],
-        "prerequisites": ["basics", "booleans"]
+        "prerequisites": ["booleans"]
       },
       {
         "slug": "basics",

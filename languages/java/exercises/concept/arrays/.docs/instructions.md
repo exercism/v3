@@ -6,7 +6,7 @@ You have six tasks, all dealing with the numbers of birds that visited your gard
 
 For comparison purposes, you always keep a copy of last week's counts nearby, which were: 0, 2, 5, 3, 7, 8 and 4. Implement the `BirdCount.getLastWeek()` method that returns last week's counts:
 
-```Java
+```java
 BirdCount.getLastWeek();
 // => [0, 2, 5, 3, 7, 8, 4]
 ```
@@ -15,7 +15,7 @@ BirdCount.getLastWeek();
 
 Implement the `BirdCount.getToday()` method to return how many birds visited your garden today. The bird counts are ordered by day, with the first element being the count of the oldest day, and the last element being today's count.
 
-```Java
+```java
 int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
 BirdCount birdCount = new BirdCount(birdsPerDay);
 birdCount.getToday();
@@ -26,7 +26,7 @@ birdCount.getToday();
 
 Implement the `BirdCount.incrementDayCount()` method to increment today's count:
 
-```Java
+```java
 int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
 BirdCount birdCount = new BirdCount(birdsPerDay);
 birdCount.incrementDayCount();
@@ -38,7 +38,7 @@ birdCount.getToday();
 
 Implement the `BirdCount.hasDayWithoutBirds()` method that returns `true` if there was a day at which zero birds visited the garden; otherwise, return `false`:
 
-```Java
+```java
 int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
 BirdCount birdCount = new BirdCount(birdsPerDay);
 birdCount.hasDayWithoutBirds();
@@ -49,7 +49,7 @@ birdCount.hasDayWithoutBirds();
 
 Implement the `BirdCount.getCountForFirstDays()` method that returns the number of birds that have visited your garden from the start of the week, but limit the count to the specified number of days from the start of the week.
 
-```Java
+```java
 int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
 BirdCount birdCount = new BirdCount(birdsPerDay);
 birdCount.getCountForFirstDays(4);
@@ -61,7 +61,7 @@ birdCount.getCountForFirstDays(4);
 Some days are busier that others. A busy day is one where five or more birds have visited your garden.
 Implement the `BirdCount.getBusyDays()` method to return the number of busy days:
 
-```Java
+```java
 int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
 BirdCount birdCount = new BirdCount(birdsPerDay);
 birdCount.getBusyDays();
