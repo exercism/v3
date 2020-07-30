@@ -19,13 +19,13 @@ public interface IScriptConverter
 }
 ```
 
-The implementing class must implement all operations defined by the interface.
+The implementing class or struct must implement all operations defined by the interface.
 
-Interfaces typically, either:
+Interfaces typically do one or more of the following:
 
-- allow a number of different classes to be treated generically by the using code. In this case interfaces are playing the same role as a base class.
-- expose a subset of functionality for some specific purpose (such as [`IComparable`][icomparable]) or,
-- expose the public API of a class so that multiple implementations can co-exist. One example is that of a [test double][wiki-test-double].
+- allow a number of different classes to be treated generically by the using code. In this case interfaces are playing the same role as a base class
+- expose a subset of functionality for some specific purpose (such as [`IComparable`][icomparable]) or
+- expose the public API of a class so that multiple implementations can co-exist. One example is that of a [test double][wiki-test-double]
 
 ```csharp
 
@@ -88,7 +88,7 @@ Code which uses the above interfaces and classes can:
 
 Interfaces are widely used to support testing as they allow for easy [mocking][so-mocking-interfaces].
 
-See this [article][td-interfaces] for details of what types of member can be included in an interface.
+See this [article][dt-interfaces] for details of what types of member can be included in an interface.
 
 Interfaces can inherit from other interfaces.
 
@@ -120,12 +120,12 @@ public class Census : IFoo, IBar
 {
 	void IFoo.X()
 	{
-		Console.Write("This is from Foo");
+        Console.Write("This is from Foo");
 	}
 
 	void IBar.X()
 	{
-		Console.Write("This is from Bar");
+        Console.Write("This is from Bar");
 	}
 }
 
@@ -145,15 +145,15 @@ public class User
 
 There are a number of use cases:
 
-- A clash of domains (as described above) where methods have identical signatures.
-- Methods with the same name but different return types: if you implement your own collection classes you will find that an explicit interface for the legacy `IEnumerable.GetEnumerator()`, alongside `IEnumerable<T>.GetEnuerator()`, is required. You may never make use of such the interface but the compiler may insist.
+- A clash of domains (as illustrated above) where methods have identical signatures.
+- Methods with the same name but different return types: if you implement your own collection classes you may find that an explicit interface for the legacy `IEnumerable.GetEnumerator()`, alongside `IEnumerable<T>.GetEnuerator()`, is required. You may never make use of such the interface but the compiler may insist.
 - Methods where there is no clash of names between interfaces but it is desirable that the implementing class uses the name for some related purpose: `IFormattable` has a `ToStirng()` method which takes a _format type_ parameter as well as parameter of type `IFormatProvider`. A class like `FormattableString` from the Base Class Library (BCL) has the interface to ensure it can be used by routines that take an `IFormattable` but it is more expressive for its main version of `ToString(IFormatProvider)` to omit the _format type_ parameter as it is not used in the implementation and would confuse API users.
 
 #### Default implementation
 
 Version 8 of C# addresses a nagging problem with APIs. If you add methods to an interface to enhance functionality for new implementations then it is necessary to modify all the existing implementations of the interface so that they comply with the API-contract even though they have no implementation specific behavior. C# now allows for a _default method_ to be provided as part of the interface (Java developers will be familiar). Previously, when such a change occurred a _version 2_ of the interface would exist alongside the original.
 
-This [article][dt-interfaces] is an excellent primer on interfaces and focuses on default implementation and other supporting innovations such as `static`, `private` and `virtual` members.
+This [article][dt-interfaces] is an excellent primer on interfaces and focuses on _default implementation_ and other supporting innovations such as `static`, `private` and `virtual` members.
 
 [interface-polymorphism]: https://www.cs.utexas.edu/~mitra/csSummer2013/cs312/lectures/interfaces.html
 [explicit-implementation]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation
