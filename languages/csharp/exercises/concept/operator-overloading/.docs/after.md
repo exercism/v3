@@ -57,7 +57,7 @@ struct Point
 
 It is often productive to implement an `Equals()` method and override it from the `==` operator. Similarly, for comparisons you can implement the `IComparable / CompareTo()` interface. In both cases you get to kill two birds with just over one stone.
 
-You should note that you cannot create operators from symbols that are not currently used as operators. You can use only existing symbols for those operations where the documentation specifies that they can be overloaded.
+You should note that you cannot create operators from symbols that are not part of the standard set of operators. You can use only existing symbols for those operations where the documentation specifies that they can be overloaded.
 
 Note that the order of parameters is important where they differ in type. In the above example code `pt * 10m` is a legal expression whereas `10m * pt` will not compile.
 

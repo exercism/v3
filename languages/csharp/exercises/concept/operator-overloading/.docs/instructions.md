@@ -60,7 +60,7 @@ Please modify the `CurrencyAmount` struct to handle arithmetic multiplication an
 CurrencyAmount amountA = new CurrencyAmount(10, "HD");
 amountA * 2m
 // => {20, HD}
-amountB / 2m
+amountA / 2m
 // => {5, HD}
 ```
 
