@@ -1,4 +1,4 @@
-`interfaces` are the primary means of decoupling the users of a class from its implementation. This decoupling provides flexibility for maintenance of the implementation and helps support type safe generic behavior.
+`interfaces` are the primary means of decoupling the uses of a class from its implementation. This decoupling provides flexibility for maintenance of the implementation and helps support type safe generic behavior.
 
 The syntax of an interface is similar to that of a class or struct except that methods and properties appear as the signature only and no body is provided.
 
@@ -80,25 +80,23 @@ pubilc class DocumentTranslator : IScriptConverter
 }
 ```
 
-Code which uses the above interfaces and classes can treat all speakers in the same way irrespective of language, can remain unaware of the changes to the italian speaker which is convenient if the class and class-user code are maintained by different teams and some subsystem handling script conversion can operate without caring about what types it is dealing with.
+Code which uses the above interfaces and classes can:
+
+- treat all speakers in the same way irrespective of language
+- class-user code are maintained by different teams and some subsystem handling script conversion can operate without caring about what specific types it is dealing with.
+- can remain unaware of the changes to the italian speaker which is convenient if the class
 
 Interfaces are widely used to support testing as they allow for easy [mocking][so-mocking-interfaces].
 
-Explicit interfaces
-
-Default implementation
-
-Serializable, Cloneable etc.
-
-Interfaces can contain instance methods, properties, events, indexers, or any combination of those four member types.
+See this [article][td-interfaces] for details of what types of member can be included in an interface.
 
 Interfaces can inherit from other interfaces.
 
-Members of an interface are public by default, interfaces can't contain instance fields or instance constructors.
+Members of an interface are public by default.
 
 Interfaces can contain nested types, such as `const` primitives, `enums`, `delegates`, `classes` and `structs`. Here, the interfaces act as [namespaces][wiki-namespaces] in the same way that classes and structs do and the behaviour and syntax is identical.
 
-Further, by design C# does not support multiple inheritance, but it facilitates a kind of multiple inheritance through interfaces.
+By design, C# does not support multiple inheritance, but it facilitates a kind of multiple inheritance through interfaces.
 
 Moreover, the concept of [polymorphism can be implemented through interfaces][interface-polymorphism] underpins the interface mechanism.
 
@@ -153,7 +151,7 @@ There are a number of use cases:
 
 #### Default implementation
 
-Version 8 of C# addresses a nagging problem with APIs. If you add methods to an interface to enhance functionality for new implementations then it is necessary to modify all the existing implementations of the interface so that they comply with the API-contract even though they have no implementation specific behavior. C# now allows for a _default method_ to be provided as part of the interface (Java developers will be familiar).  Previously, when such a change occurred a _version 2_ of the interface would exist alongside the original.
+Version 8 of C# addresses a nagging problem with APIs. If you add methods to an interface to enhance functionality for new implementations then it is necessary to modify all the existing implementations of the interface so that they comply with the API-contract even though they have no implementation specific behavior. C# now allows for a _default method_ to be provided as part of the interface (Java developers will be familiar). Previously, when such a change occurred a _version 2_ of the interface would exist alongside the original.
 
 This [article][dt-interfaces] is an excellent primer on interfaces and focuses on default implementation and other supporting innovations such as `static`, `private` and `virtual` members.
 
@@ -161,7 +159,7 @@ This [article][dt-interfaces] is an excellent primer on interfaces and focuses o
 [explicit-implementation]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation
 [so-mocking-interfaces]: https://stackoverflow.com/a/9226437/96167
 [icomparable]: https://docs.microsoft.com/en-us/dotnet/api/system.icomparable-1?view=netcore-3.1
-[wiki-test-douoble]: https://en.wikipedia.org/wiki/Test_double
+[wiki-test-double]: https://en.wikipedia.org/wiki/Test_double
 [wiki-polymorphism]: https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
 [wiki-namespaces]: https://en.wikipedia.org/wiki/Namespace
 [dt-interfaces]: https://www.talkingdotnet.com/default-implementations-in-interfaces-in-c-sharp-8/
