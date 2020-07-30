@@ -2,7 +2,19 @@ The principal arithmetic and comparison operators can be adapted for use by your
 
 This [article][operator-overloading] is a thorough discussion of the syntax as well as which operators can be overloaded and those that can't.
 
-Syntax example:
+Most operators have the form:
+
+```csharp
+static <return type> operaator <operator symbols>(<parameters>);
+```
+
+Cast operators have the form:
+
+```csharp
+static (explicit|implicit) operator <cast-to-type>(<cast-from-type> <parameter name>);
+```
+
+Syntax example for standard operators:
 
 ```csharp
 struct Point
@@ -18,6 +30,19 @@ struct Point
     public static bool operator !=(Point pt, Point ptOther)
     {
         return !(pt == ptOther);
+    }
+
+    public static implicit operator Point((decimal x, decimal y) xy)
+    {
+        var pt = new Point();
+        pt.x = xy.x;
+        pt.y = xy.y;
+        return pt;
+    }
+
+    public static explicit operator (decimal x, decimal y)(Point pt)
+    {
+        return (pt.x, pt.y);
     }
 }
 ```

@@ -1,6 +1,18 @@
 The principal arithmetic and comparison operators can be adapted for use by your own classes and structs. This is known as _operator overloading_.
 
-Syntax Example:
+Most operators have the form:
+
+```csharp
+static <return type> operaator <operator symbols>(<parameters>);
+```
+
+Cast operators have the form:
+
+```csharp
+static (explicit|implicit) operator <cast-to-type>(<cast-from-type> <parameter name>);
+```
+
+Syntax example for standard operators:
 
 ```csharp
 struct Point
