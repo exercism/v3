@@ -3,9 +3,8 @@
 - Know what interfaces are.
 - Know how to use interfaces.
 - Know how to define an interface.
-- Know how to implement an interface.
 - Know how to explicitly implement an interface (discussion only).
-- Default interface methods (discussion only).
+- Default interface implementations (discussion only).
 
 ## Out of scope
 
@@ -17,3 +16,5 @@
 ## Prerequisites
 
 - `classes`: know how to work with classes.
+- `properties`: know what properties are.
+- `lisss`: know how to use `List<T>`.
