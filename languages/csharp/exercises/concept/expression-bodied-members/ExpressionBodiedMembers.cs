@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Xunit.Sdk;
 
 public class WeatherStation
 {
@@ -60,7 +61,7 @@ public class WeatherStation
         }
     }
 
-    public Outlook Outlook
+    public Outlook ShortTermOutlook
     {
         get
         {
@@ -86,6 +87,33 @@ public class WeatherStation
         }
     }
 
+    public Outlook LongTermOutlook
+    {
+        get
+        {
+            if (reading.WindDirection == WindDirection.Southerly
+                || reading.WindDirection == WindDirection.Easterly
+                && reading.Temperature > 20)
+            {
+                return Outlook.Good;
+            }
+            if (reading.WindDirection == WindDirection.Northerly)
+            {
+                return Outlook.Cool;
+            }
+            if (reading.WindDirection == WindDirection.Easterly
+                && reading.Temperature <= 20)
+            {
+                return Outlook.Warm;
+            }
+            if (reading.WindDirection == WindDirection.Westerly)
+            {
+                return Outlook.Rainy;
+            }
+            throw new ArgumentException();
+        }
+    }
+
     public State RunSelfTest()
     {
         if (reading.Equals(new Reading()))
@@ -99,33 +127,46 @@ public class WeatherStation
     }
 }
 
-/*** Please do not modify this struct ***/
+/*** Please do not modify this struct **#1#
 public struct Reading
 {
     public decimal Temperature { get; }
     public decimal Pressure { get; }
     public decimal Rainfall { get; }
+    public WindDirection WindDirection { get; }
 
-    public Reading(decimal temperature, decimal pressure, decimal rainfall)
+    public Reading(decimal temperature, decimal pressure,
+        decimal rainfall, WindDirection windDirection)
     {
         Temperature = temperature;
         Pressure = pressure;
         Rainfall = rainfall;
+        WindDirection = windDirection;
     }
 }
 
-/*** Please do not modify this enum ***/
+/*** Please do not modify this enum **#1#
 public enum State
 {
     Good,
     Bad
 }
 
-/*** Please do not modify this enum ***/
+/*** Please do not modify this enum **#1#
 public enum Outlook
 {
     Cool,
     Rainy,
     Warm,
     Good
+}
+
+/*** Please do not modify this enum ***#1#
+public enum WindDirection
+{
+    Unknown = 0,    // default
+    Northerly,
+    Easterly,
+    Southerly,
+    Westerly
 }

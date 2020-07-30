@@ -30,11 +30,22 @@ public class WeatherStation
 
     public bool HasHistory => recordDates.Count > 1;
 
-    public Outlook Outlook
+    public Outlook ShortTermOutlook
         => reading.Equals(new Reading()) ? throw new ArgumentException()
             : reading.Pressure < 10m && reading.Temperature < 30m ? Outlook.Cool
             : reading.Temperature > 50 ? Outlook.Good
             : Outlook.Warm;
+
+    public Outlook LongTermOutlook
+        => reading.WindDirection switch
+        {
+            WindDirection.Southerly => Outlook.Good,
+            WindDirection.Northerly => Outlook.Cool,
+            WindDirection.Easterly when reading.Temperature <= 20 => Outlook.Warm,
+            WindDirection.Easterly => Outlook.Good,
+            WindDirection.Westerly => Outlook.Rainy,
+            _ => throw new ArgumentException()
+        };
 
     public State RunSelfTest() => reading.Equals(new Reading()) ? State.Bad : State.Good;
 }
@@ -45,12 +56,15 @@ public struct Reading
     public decimal Temperature { get; }
     public decimal Pressure { get; }
     public decimal Rainfall { get; }
+    public WindDirection WindDirection { get; }
 
-    public Reading(decimal temperature, decimal pressure, decimal rainfall)
+    public Reading(decimal temperature, decimal pressure,
+        decimal rainfall, WindDirection windDirection)
     {
         Temperature = temperature;
         Pressure = pressure;
         Rainfall = rainfall;
+        WindDirection = windDirection;
     }
 }
 
@@ -68,4 +82,14 @@ public enum Outlook
     Rainy,
     Warm,
     Good
+}
+
+/*** Please do not modify this enum ***/
+public enum WindDirection
+{
+    Unknown = 0,     // default
+    Northerly,
+    Easterly,
+    Southerly,
+    Westerly
 }
