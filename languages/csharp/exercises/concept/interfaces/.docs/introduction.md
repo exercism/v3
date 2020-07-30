@@ -1,21 +1,30 @@
-An interface defines a set of operations an instance of class or a struct can do.
+An interface is a type containing members defining a group of related functionality. It distances the uses of a class from the implementation allowing multiple different implementations or to support some generic behavior such as formatting, comparison or conversion.
 
 ```csharp
 public interface ILanguage
 {
-    return Speak();
+    string LanguageName { get; set; }
+    string Speak();
+}
+
+public class ItalianTaveller : ILanguage, IClonable
+{
+    public string LanguageName { get; set; } =  "Italiano";
+
+    public string Speak()
+    {
+        return "Ciao mondo";
+    }
+
+    public object Cloone()
+    {
+        ItalianTraveller it = new ItalianTraveller();
+        it.Language = this.Language;
+        return it;
+    }
 }
 ```
 
 All operations defined by the interface must be implemented.
 
-Interfaces can contain instance methods, properties, events, indexers, or any combination of those four member types
-
-Members of an interface are `public` by default, however they can't contain instance fields, instance constructors.
-
-Further, by design C# does not support multiple inheritance, but it facilitates multiple inheritance through interfaces.
-
-Moreover, the concept of polymorphism can be implemented through interfaces.
-
-It is highly likely possible to have the same method name and signatures are in two different interfaces.
-In order provide a distinct implementations of these methods, C# provides explicit implementation of interfaces.
+Interfaces can contain instance methods and properties amongst other members
