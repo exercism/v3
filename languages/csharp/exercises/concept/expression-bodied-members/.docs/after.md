@@ -22,7 +22,9 @@ int max = a > b ? a : b;
 
 [Switch expressions][switch-expressions] behave in a similar manner to [switch statements][switch-statements] covered in (TODO cross-ref-tba switch statements). They support a kind of decision table that maps input conditions to actions or values.
 
-At the core of the switch expression is _pattern matching_. In the coding exercise we matched values against `const` patterns. In this case the inputs to the `switch` are a _range expression_ which is matched to const values and the inputs to the _case guards_.
+At the core of the switch expression is _pattern matching_. In the coding exercise we matched values against `const` patterns. In this case the inputs to the `switch` are a _range expression_ which is matched to const values and the values used by the _case guards_.
+
+The `_` case which is the last in the list is useful to ensure that the matching is exhaustive and to avoid possible run-time errors.
 
 ```case
 double xx = 42d;
@@ -40,13 +42,13 @@ string interesting = xx switch
 // => interesting == "a bit of a cliche"
 ```
 
-Switch expression also support [type patterns][pattern-matching] and recursive matching.
+An "arm" of the `switch` is selected when the pattern matches the range variable and any case guard evaluates to true.
 
-An arm of the `switch` is selected when the pattern matches the range variable and any case guard evaluates to true.
+Switch expression also support [type patterns][pattern-matching] and recursive matching.
 
 #### Throw expressions
 
-`throw` expressions are an alternative to `throw` statements and in particular can add to the power of ternary and other compound expressions.
+[`throw` expressions][throw-expressions] are an alternative to `throw` statements and in particular can add to the power of ternary and other compound expressions.
 
 ```csharp
 string trimmed = str == null ? throw new ArgumentException() : str.Trim();
@@ -62,6 +64,7 @@ If `str` is `null` in the above code an exception is thrown.
 [expressions]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expressions
 [expression-bodied-members]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members
 [ternary-operators]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operatorhttps://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator
-[switch-expresions]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression
+[switch-expressions]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression
 [switch-statement]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/switch
 [pattern-matching]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression#patterns-and-case-guards
+[throw-expressions]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/throw#the-throw-expression
