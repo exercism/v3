@@ -11,7 +11,7 @@ The `readonly` modifier can be (and generally should be) applied to any field th
 private readonly int num;
 private readonly Random rand = new Random();
 
-public <constructor>(int num)
+public MyClass(int num)
 {
     this.num = num;
 }
