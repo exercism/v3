@@ -19,14 +19,206 @@
         "slug": "sameness",
         "uuid": "d780fb3e-c9f8-11ea-af82-3200111e0c80",
         "concepts": ["sameness"],
-        "prerequisiites": [
-          "functions",
+        "prerequisites": [
           "characters",
           "strings",
           "floating-point-numbers",
           "integers",
           "cons",
           "arrays"
+        ]
+      },
+      {
+        "slug": "arithmetic",
+        "uuid": "f78cff23-2106-4e35-b439-2d8bd2830770",
+        "concepts": ["integers", "floating-point-numbers", "arithmetic"],
+        "prerequisites": ["expressions"]
+      },
+      {
+        "slug": "destructuring-assignment",
+        "uuid": null,
+        "concepts": ["destructuring-assignment"],
+        "prerequisites": [
+          "basic-lists",
+          "symbols",
+          "function-definition",
+          "loop.basic",
+          "variables"
+        ]
+      },
+      {
+        "slug": "code-as-data",
+        "uuid": null,
+        "concepts": ["code-as-data"],
+        "prerequisites": [
+          "basic-lists",
+          "arithmetic",
+          "symbols",
+          "function-definition",
+          "expressions",
+          "enumeration",
+          "higher-order-functions"
+        ]
+      },
+      {
+        "slug": "multiple-values",
+        "uuid": null,
+        "concepts": ["multiple-values"],
+        "prerequisites": [
+          "basic-lists",
+          "arithmetic",
+          "variables",
+          "function-definition",
+          "expressions"
+        ]
+      },
+      {
+        "slug": "hash-tables",
+        "uuid": null,
+        "concepts": ["hash-tables"],
+        "prerequisites": [
+          "assignment",
+          "multiple-values",
+          "sameness",
+          "symbols",
+          "variables",
+          "higher-order-functions"
+        ]
+      },
+      {
+        "slug": "structures",
+        "uuid": null,
+        "concepts": ["structures"],
+        "prerequisites": [
+          "assignment",
+          "function-definition",
+          "variables",
+          "symbols"
+        ]
+      },
+      {
+        "slug": "characters",
+        "uuid": null,
+        "concepts": ["characters"],
+        "prerequisites": ["integers", "truthy-and-falsy"]
+      },
+      {
+        "slug": "sets",
+        "uuid": null,
+        "concepts": ["sets"],
+        "prerequisites": [
+          "basic-lists",
+          "higher-order-functions",
+          "cons",
+          "sameness",
+          "function-definition"
+        ]
+      },
+      {
+        "slug": "assignment",
+        "uuid": null,
+        "concepts": ["assignment"],
+        "prerequisites": ["variables", "basic-lists", "strings", "expressions"]
+      },
+      {
+        "slug": "nested-functions",
+        "uuid": null,
+        "concepts": ["nested-functions"],
+        "prerequisites": [
+          "variables",
+          "function-definition",
+          "higher-order-functions",
+          "symbols"
+        ]
+      },
+      {
+        "slug": "recursion",
+        "uuid": null,
+        "concepts": ["recursion"],
+        "prerequisites": [
+          "nested-functions",
+          "function-definition",
+          "expressions",
+          "conditionals",
+          "arithmetic",
+          "basic-lists",
+          "cons"
+        ]
+      },
+      {
+        "slug": "anonymous-functions",
+        "uuid": null,
+        "concepts": ["anonymous-functions"],
+        "prerequisites": [
+          "function-definition",
+          "higher-order-functions",
+          "variables",
+          "expressions"
+        ]
+      },
+      {
+        "slug": "higher-order-functions",
+        "uuid": null,
+        "concepts": ["higher-order-functions"],
+        "prerequisites": [
+          "basic-lists",
+          "strings",
+          "function-definition",
+          "truthy-and-falsy",
+          "symbols"
+        ]
+      },
+      {
+        "slug": "basic-lists",
+        "uuid": null,
+        "concepts": ["basic-lists"],
+        "prerequisites": ["cons", "symbols"]
+      },
+      {
+        "slug": "packages",
+        "uuid": null,
+        "concepts": ["packages"],
+        "prerequisites": ["variables", "symbols", "function-definition"]
+      },
+      {
+        "slug": "enumeration",
+        "uuid": null,
+        "concepts": ["enumeration", "loop.basic"],
+        "prerequisites": ["arithmetic", "strings", "basic-lists"]
+      },
+      {
+        "slug": "strings",
+        "uuid": null,
+        "concepts": ["strings", "printing"],
+        "prerequisites": ["expressions"]
+      },
+      {
+        "slug": "variables",
+        "uuid": null,
+        "concepts": ["constants", "variables"],
+        "prerequisites": [
+          "arithmetic",
+          "expressions",
+          "floating-point-numbers",
+          "integers",
+          "printing"
+        ]
+      },
+      {
+        "slug": "conditionals",
+        "uuid": null,
+        "concepts": ["conditionals", "truthy-and-falsy"],
+        "prerequisites": ["expressions", "integers", "arithmetic", "symbols"]
+      },
+      {
+        "slug": "function-definition",
+        "uuid": null,
+        "concepts": ["function-definition"],
+        "prerequisites": [
+          "expressions",
+          "integers",
+          "arithmetic",
+          "conditionals"
         ]
       }
     ],

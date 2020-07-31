@@ -381,6 +381,30 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/integral-numbers",
+          "slug": "integral-numbers",
+          "concepts": [
+            {
+              "url": null,
+              "name": "casting"
+            },
+            {
+              "url": null,
+              "name": "integral-numbers"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/lists",
           "slug": "lists",
           "concepts": [
@@ -860,7 +884,7 @@
             },
             {
               "url": null,
-              "name": "signed-integers"
+              "name": "integral-numbers"
             }
           ]
         },
@@ -976,7 +1000,7 @@
             },
             {
               "url": null,
-              "name": "signed-integers"
+              "name": "integral-numbers"
             }
           ]
         }
@@ -1066,7 +1090,56 @@
               "name": "sameness"
             }
           ],
-          "prerequisites": []
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "characters"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": null,
+              "name": "floating-point-numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
+              "name": "integers"
+            },
+            {
+              "url": null,
+              "name": "cons"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/arithmetic",
+          "slug": "arithmetic",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
+              "name": "integers"
+            },
+            {
+              "url": null,
+              "name": "floating-point-numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/arithmetic.md",
+              "name": "arithmetic"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/expressions.md",
+              "name": "expressions"
+            }
+          ]
         }
       ]
     }
@@ -2232,6 +2305,30 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/methods",
+          "slug": "methods",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/methods.md",
+              "name": "methods"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/pointer.md",
+              "name": "pointers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
+              "name": "structs"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/nil",
           "slug": "nil",
           "concepts": [
@@ -2304,6 +2401,22 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/strings-package",
+          "slug": "strings-package",
+          "concepts": [
+            {
+              "url": null,
+              "name": "strings-package"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/slice.md",
+              "name": "slices"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/structs",
           "slug": "structs",
           "concepts": [
@@ -2320,6 +2433,30 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
               "name": "conditionals"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/time",
+          "slug": "time",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/time.md",
+              "name": "time"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
             }
           ]
         }
@@ -2829,6 +2966,17 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/basics",
+          "slug": "basics",
+          "concepts": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ],
+          "prerequisites": []
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/bools",
           "slug": "bools",
           "concepts": [
@@ -3141,8 +3289,8 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
             }
           ]
         },
@@ -3182,6 +3330,46 @@
             {
               "url": null,
               "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
+          "slug": "functions",
+          "concepts": [
+            {
+              "url": null,
+              "name": "multiple-return-values"
+            },
+            {
+              "url": null,
+              "name": "default-parameters"
+            },
+            {
+              "url": null,
+              "name": "variadic-parameters"
+            },
+            {
+              "url": null,
+              "name": "inout-parameters"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/nested_functions.md",
+              "name": "nested-functions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
             }
           ]
         },

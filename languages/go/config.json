@@ -12,9 +12,9 @@
     "concept": [
       {
         "slug": "application-timing",
-        "uuid": "def16220-0da8-419b-bf2c-5b1cbb65b29b",
+        "uuid": null,
         "concepts": ["application-timing"],
-        "prerequisites": ["time-and-duration", "select", "channels"]
+        "prerequisites": ["time", "duration", "select", "channels"]
       },
       {
         "slug": "basics",
@@ -24,14 +24,15 @@
       },
       {
         "slug": "bytes-and-runes",
-        "uuid": "668463ec-4b73-40cf-b24d-2f3a4bb110f6",
+        "uuid": null,
         "concepts": ["bytes", "runes"],
         "prerequisites": [
           "strings",
           "numbers",
           "iteration",
           "functions",
-          "conditionals"
+          "conditionals",
+          "slices"
         ]
       },
       {
@@ -42,7 +43,7 @@
       },
       {
         "slug": "channels",
-        "uuid": "ac8da9af-da1b-4664-99a5-fcd14249b809",
+        "uuid": null,
         "concepts": ["channels"],
         "prerequisites": ["goroutines", "iteration"]
       },
@@ -60,25 +61,25 @@
       },
       {
         "slug": "constants",
-        "uuid": "31a74993-604d-44ae-afb7-fac7168ccf16",
+        "uuid": null,
         "concepts": ["constants"],
         "prerequisites": ["strings", "numbers"]
       },
       {
         "slug": "context",
-        "uuid": "96aaabad-b8b7-431c-ae59-abb813efd272",
+        "uuid": null,
         "concepts": ["context"],
-        "prerequisites": ["time-and-duration", "channels", "select"]
+        "prerequisites": ["time", "duration", "channels", "select"]
       },
       {
         "slug": "defer",
-        "uuid": "6eea9535-c376-4a12-b937-95e3f3678201",
+        "uuid": null,
         "concepts": ["defer"],
         "prerequisites": ["anonymous-functions", "functions"]
       },
       {
         "slug": "empty-interface",
-        "uuid": "97753511-e9b5-4eda-b9a3-398bc0745ab2",
+        "uuid": null,
         "concepts": ["empty-interface"],
         "prerequisites": ["functions"]
       },
@@ -90,7 +91,7 @@
       },
       {
         "slug": "errors-handling",
-        "uuid": "5e46816e-fa82-4348-aa5c-d4f7e3a2a6e4",
+        "uuid": null,
         "concepts": ["errors-handling"],
         "prerequisites": ["errors", "nil"]
       },
@@ -102,21 +103,21 @@
       },
       {
         "slug": "functions",
-        "uuid": "95c05588-e03f-4901-a8fe-f8c2d6de14b9",
+        "uuid": null,
         "concepts": ["functions"],
         "prerequisites": ["numbers"]
       },
       {
         "slug": "iteration",
-        "uuid": "8cbf6ed0-2093-498d-b0c0-e19236439e11",
+        "uuid": null,
         "concepts": ["iteration"],
         "prerequisites": ["conditionals", "functions", "anonymous-functions"]
       },
       {
         "slug": "interfaces",
-        "uuid": "500d3bc3-9f8b-462c-91ff-bb38ea69686f",
+        "uuid": null,
         "concepts": ["interfaces"],
-        "prerequisites": ["methods", "error", "empty-interfaces"]
+        "prerequisites": ["methods", "errors", "empty-interface"]
       },
       {
         "slug": "maps",
@@ -150,9 +151,9 @@
       },
       {
         "slug": "panic-and-recover",
-        "uuid": "9d05598d-d450-459b-8ae1-4cbf91b5d122",
+        "uuid": null,
         "concepts": ["panic", "recover"],
-        "prerequisites": ["defer", "type-casting"]
+        "prerequisites": ["defer", "type-assertion"]
       },
       {
         "slug": "pointers",
@@ -162,13 +163,13 @@
       },
       {
         "slug": "reflection",
-        "uuid": "a5b439c7-1c8f-4b40-9fef-1ae9761b67f6",
+        "uuid": null,
         "concepts": ["reflection"],
         "prerequisites": ["interfaces", "empty-interfaces"]
       },
       {
         "slug": "goroutines",
-        "uuid": "1f2fdf44-4532-47aa-9a42-ec97519ad27a",
+        "uuid": null,
         "concepts": ["goroutines"],
         "prerequisites": ["functions", "iteration", "anonymous-functions"]
       },
@@ -185,10 +186,10 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "strings-advanced",
+        "slug": "strings-package",
         "uuid": "b97a271c-4036-4ea8-8c6a-094715a48627",
-        "concepts": ["strings"],
-        "prerequisites": ["basics"]
+        "concepts": ["strings-package"],
+        "prerequisites": ["slices"]
       },
       {
         "slug": "structs",
@@ -197,10 +198,28 @@
         "prerequisites": ["numbers", "conditionals"]
       },
       {
-        "slug": "time-and-duration",
+        "slug": "time",
         "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
         "concepts": ["time"],
-        "prerequisites": ["number", "strings", "functions"]
+        "prerequisites": ["numbers", "strings", "functions"]
+      },
+      {
+        "slug": "type-assertion",
+        "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
+        "concepts": ["type-assertion"],
+        "prerequisites": ["interfaces"]
+      },
+      {
+        "slug": "type-conversion",
+        "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
+        "concepts": ["type-assertion"],
+        "prerequisites": ["string", "numbers"]
+      },
+      {
+        "slug": "duration",
+        "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
+        "concepts": ["duration"],
+        "prerequisites": ["time", "numbers"]
       }
     ],
     "practice": []

@@ -25,8 +25,8 @@ These are example tasks that fit the log line parser:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
-- [Rust][implementation-rust]
+- [C#: enums][implementation-csharp] (reference implementation)
+- [Rust: enums][implementation-rust]
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/enums/.docs/instructions.md
 [implementation-rust]: ../../languages/rust/exercises/concept/enums/.docs/instructions.md

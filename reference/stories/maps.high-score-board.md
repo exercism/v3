@@ -17,7 +17,7 @@ The student is then guided through some operations:
 
 ## Implementations
 
-- [Elixir][implementation-elixir] (reference implementation)
+- [Elixir: maps][implementation-elixir] (reference implementation)
 
 ## Reference
 
