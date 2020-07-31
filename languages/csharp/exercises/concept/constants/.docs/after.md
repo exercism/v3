@@ -13,6 +13,18 @@ There is some discussion on the web about the performance advantages of `const` 
 
 A more compelling reason to use `const` is that it enhances a maintainer's ability to reason about the code. Glimpsing that a field is marked as `const` or `readonly` or that a property has no setter allows the maintainer largely to dismiss it from their analysis. It is unlikely to be the seat of bugs. It is unlikely to pose difficulties in a refactoring exercise. This [Stack Overflow comment][so-consts] addresses this.
 
+The `const` modifier can also be applied to values within methods:
+
+```csharp
+public void Area(double r)
+{
+    const double π = 3.142;
+    return Math.Pow((π * r), 2);
+}
+```
+
+Identifying a value with `const` in this way can be useful if it is used multiple times in the method or you want to draw attention to its meaning. There is no performance gain over using literals inline.
+
 #### readonly
 
 The `readonly` modifier can be (and generally should be) applied to any field that cannot be made `const` where its value will not change during the lifetime of the program and is either set by an inline initializer or during instantiation (by the constructor or a method called by the constructor).

@@ -3,6 +3,9 @@
 - Know how to define `const` values.
 - Know how to define `readonly` values.
 - Know when to use `const` or `readonly`.
+- know how to make a collection read-only
+- understand the difference between the role of the `readonly` modifier and the use of readonly collections
+- know how and when to use defensive copying
 
 ## Out of scope
 
@@ -13,6 +16,8 @@
 ## Concepts
 
 - `constants`: know how to define `const` values; know how to define `readonly` modifier know when to use `const` or `readonly`.
+- `readonly-collections`: know how to make a collection read-only; understand the difference between the role of the `readonly` modifier and the use of readonly collections
+- `defensive-copying`: know how and when to use defensive copying
 
 ## Prerequisites
 
