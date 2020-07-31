@@ -10,7 +10,7 @@ Please add a method to the `IRemoteControlCar` interface to expose the implement
 
 ```csharp
 TestTrack.Race(new ProductionRemoteControlCar());
-TestTrack.Race(new ProductionRemoteControlCar());
+TestTrack.Race(new ExperimentalRemoteControlCar());
 // this should execute without an exception being thrown
 ```
 
