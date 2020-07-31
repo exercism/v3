@@ -3,9 +3,9 @@ Many types of struct and class members (fields being the primary exception) can 
 Methods and read-only properties are amongst the members that can be defined with expression bodies.
 
 ```csharp
-int Times3(int input) => input * 3;
+public int Times3(int input) => input * 3;
 
-int Interesting => 1729;
+public int Interesting => 1729;
 ```
 
 #### Ternary operators
@@ -37,7 +37,7 @@ string interesting = xx switch
     3.14 when DateTime.Now.Day == 14 && DateTime.Now.Month == 3 => "Mmm pie!",
     3.14 => "π",
     42 => "a bit of a cliché",
-    1729 => "only if you are a pure mathematician"
+    1729 => "only if you are a pure mathematician",
     _ => "not interesting"
 };
 

@@ -1,9 +1,9 @@
 Many [types of struct and class members][expression-bodied-members] (fields being the primary exception) can use the expression-bodied member syntax. Defining a member with an expression often produces more concise and readable code than traditional blocks/statements.
 
 ```csharp
-int Times3(int input) => input * 3;
+public int Times3(int input) => input * 3;
 
-int Interesting => 1729;
+public int Interesting => 1729;
 ```
 
 Expression-bodied-members cannot have blocks of multiple statements, but those with a functional background should be warned that anything that a traditional member can do can be achieved by one of these members. The "expression" can be an assignment operation creating side effects, or a method invocation meaning that anything is possible.
@@ -35,7 +35,7 @@ string interesting = xx switch
     3.14 when DateTime.Now.Day == 14 && DateTime.Now.Month == 3 => "Mmm pie!",
     3.14 => "π",
     42 => "a bit of a cliché",
-    1729 => "only if you are a pure mathematician"
+    1729 => "only if you are a pure mathematician",
     _ => "not interesting"
 };
 
