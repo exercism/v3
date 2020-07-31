@@ -4,6 +4,6 @@ The weather station accepts readings, and outputs some indicators such as temper
 
 ## 1. Improve the conciseness and readability of appropriate methods
 
-Refactor any appropriate methods using expression bodied members. Use ternary operations and switch expressions where appropriate to improve expressiveness and potentially reduce errors.
+Refactor any appropriate methods of the `WeatherStation` class using expression bodied members. Use ternary operations and switch expressions where appropriate to improve expressiveness and potentially reduce errors.
 
 Ensure that all tests continue to pass.
