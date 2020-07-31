@@ -63,7 +63,7 @@ If `str` is `null` in the above code an exception is thrown.
 
 [expressions]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expressions
 [expression-bodied-members]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members
-[ternary-operators]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operatorhttps://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator
+[ternary-operators]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator
 [switch-expressions]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression
 [switch-statement]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/switch
 [pattern-matching]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression#patterns-and-case-guards
