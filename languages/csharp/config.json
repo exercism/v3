@@ -115,6 +115,12 @@
         "prerequisites": ["arrays", "numbers"]
       },
       {
+        "slug": "interfaces",
+        "uuid": "15ac87b1-2976-4a43-a41d-1b6f6628bd9a",
+        "concepts": ["interfaces", "ordering"],
+        "prerequisites": ["classes", "lists", "properties"]
+      },
+      {
         "slug": "lists",
         "uuid": "5c438d02-67a6-43b6-9e3c-8ba309c4ea32",
         "concepts": ["generic-types", "lists"],
