@@ -381,6 +381,30 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/integral-numbers",
+          "slug": "integral-numbers",
+          "concepts": [
+            {
+              "url": null,
+              "name": "casting"
+            },
+            {
+              "url": null,
+              "name": "integral-numbers"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/lists",
           "slug": "lists",
           "concepts": [
@@ -860,7 +884,7 @@
             },
             {
               "url": null,
-              "name": "signed-integers"
+              "name": "integral-numbers"
             }
           ]
         },
@@ -976,7 +1000,7 @@
             },
             {
               "url": null,
-              "name": "signed-integers"
+              "name": "integral-numbers"
             }
           ]
         }
