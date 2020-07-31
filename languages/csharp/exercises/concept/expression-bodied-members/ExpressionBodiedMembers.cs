@@ -127,7 +127,7 @@ public class WeatherStation
     }
 }
 
-/*** Please do not modify this struct **#1#
+/*** Please do not modify this struct ***/
 public struct Reading
 {
     public decimal Temperature { get; }
@@ -145,14 +145,14 @@ public struct Reading
     }
 }
 
-/*** Please do not modify this enum **#1#
+/*** Please do not modify this enum ***/
 public enum State
 {
     Good,
     Bad
 }
 
-/*** Please do not modify this enum **#1#
+/*** Please do not modify this enum ***/
 public enum Outlook
 {
     Cool,
@@ -161,7 +161,7 @@ public enum Outlook
     Good
 }
 
-/*** Please do not modify this enum ***#1#
+/*** Please do not modify this enum ***/
 public enum WindDirection
 {
     Unknown = 0,    // default

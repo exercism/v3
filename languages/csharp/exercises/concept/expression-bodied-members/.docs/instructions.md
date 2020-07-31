@@ -1,6 +1,6 @@
 You have been asked to improve some legacy code relating to a weather station.
 
-The weather station accepts readings and outputs some indicators such as temperature and pressure.
+The weather station accepts readings, and outputs some indicators such as temperature and pressure.
 
 ## 1. Improve the conciseness and readability of appropriate methods
 

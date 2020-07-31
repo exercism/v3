@@ -36,10 +36,10 @@ string interesting = xx switch
     0 => "I suppose zero is interesting",
     3.14 when DateTime.Now.Day == 14 && DateTime.Now.Month == 3 => "Mmm pie!",
     3.14 => "π",
-    42 => "a bit of a cliche",
+    42 => "a bit of a cliché",
     1729 => "only if you are a pure mathematician"
     _ => "not interesting"
 };
 
-// => interesting == "a bit of a cliche"
+// => interesting == "a bit of a cliché"
 ```
