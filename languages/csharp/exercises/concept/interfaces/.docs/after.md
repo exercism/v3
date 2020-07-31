@@ -1,4 +1,4 @@
-`interfaces` are the primary means of [decoupling][wiki-loose-coupling] the uses of a class from its implementation. This decoupling provides flexibility for maintenance of the implementation and helps support type safe generic behavior.
+[`interfaces`][interfaces] are the primary means of [decoupling][wiki-loose-coupling] the uses of a class from its implementation. This decoupling provides flexibility for maintenance of the implementation and helps support type safe generic behavior.
 
 The syntax of an interface is similar to that of a class or struct except that methods and properties appear as the signature only and no body is provided.
 
@@ -11,6 +11,7 @@ public interface ILanguage
 public interface IItalianLanguage : ILanguage
 {
     string Speak();
+    string SpeakItalian();
 }
 
 public interface IScriptConverter
@@ -35,6 +36,11 @@ public class ItalianTraveller : IItalianLanguage
     {
         return "Ciao mondo";
     }
+
+    public string SpeakItalisn()
+    {
+        return Speak();
+    }
 }
 
 public class ItalianTravellerV2 : IItalianLanguage
@@ -42,6 +48,11 @@ public class ItalianTravellerV2 : IItalianLanguage
     public string Speak()
     {
         return "migliorata - Ciao mondo";
+    }
+
+    public string SpeakItalisn()
+    {
+        return Speak();
     }
 }
 
@@ -168,3 +179,4 @@ This [article][dt-interfaces] is an excellent primer on interfaces and focuses o
 [wiki-namespaces]: https://en.wikipedia.org/wiki/Namespace
 [dt-interfaces]: https://www.talkingdotnet.com/default-implementations-in-interfaces-in-c-sharp-8/
 [wiki-loose-coupling]: https://en.wikipedia.org/wiki/Loose_coupling
+[interfaces]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/interfaces/
