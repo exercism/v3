@@ -29,3 +29,5 @@ This Concepts Exercise's Concepts are:
 - `booleans`
 - `conditionals-if`
 - `exceptions`
+- `switch statements`: background for `switch expressions`.
+- `datetimes`: `DateTiime.Now` is used in example code.
