@@ -5,7 +5,6 @@ class BirdCount {
     public BirdCount(int[] birdsPerDay) {
         this.birdsPerDay = birdsPerDay;
     }
-    Please implement the BirdCount.getLastWeek() method
     public int[] getLastWeek() {
         throw new UnsupportedOperationException("Please implement the BirdCount.getLastWeek() method");
     }
