@@ -37,7 +37,7 @@ public class ItalianTraveller : IItalianLanguage
         return "Ciao mondo";
     }
 
-    public string SpeakItalisn()
+    public string SpeakItalian()
     {
         return Speak();
     }
