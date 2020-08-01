@@ -75,7 +75,7 @@
         "slug": "context",
         "uuid": null,
         "concepts": ["context"],
-        "prerequisites": ["time", "duration", "channels", "select"]
+        "prerequisites": ["time", "duration", "channels", "select", "defer", "type-assertion"]
       },
       {
         "slug": "defer",
