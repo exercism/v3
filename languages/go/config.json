@@ -32,12 +32,7 @@
         "slug": "bytes-and-runes",
         "uuid": null,
         "concepts": ["bytes", "runes"],
-        "prerequisites": [
-          "strings",
-          "iteration",
-          "conditionals",
-          "slices"
-        ]
+        "prerequisites": ["strings", "iteration", "conditionals", "slices"]
       },
       {
         "slug": "booleans",
@@ -73,7 +68,14 @@
         "slug": "context",
         "uuid": null,
         "concepts": ["context"],
-        "prerequisites": ["time", "duration", "channels", "select", "defer", "type-assertion"]
+        "prerequisites": [
+          "time",
+          "duration",
+          "channels",
+          "select",
+          "defer",
+          "type-assertion"
+        ]
       },
       {
         "slug": "defer",
@@ -145,7 +147,13 @@
         "slug": "zero-value",
         "uuid": "7b265cc8-8f88-4de1-b653-10a384e6c7e2",
         "concepts": ["zero-value"],
-        "prerequisites": ["functions", "numbers", "strings", "pointers", "booleans"]
+        "prerequisites": [
+          "functions",
+          "numbers",
+          "strings",
+          "pointers",
+          "booleans"
+        ]
       },
       {
         "slug": "numbers",
@@ -230,7 +238,7 @@
         "uuid": null,
         "concepts": ["type-conversion"],
         "prerequisites": ["strings", "numbers"]
-      },
+      }
     ],
     "practice": []
   }
