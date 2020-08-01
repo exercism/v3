@@ -34,9 +34,10 @@ public class Authenticator
             }
         };
 
-    public Identity GetAdmin()
+    public Identity Admin
     {
-        return admin;
+        get { return admin; }
+        set { admin = value; }
     }
 
     public IDictionary<string, Identity> GetDevelopers()

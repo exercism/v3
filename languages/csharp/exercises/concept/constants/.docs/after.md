@@ -46,10 +46,12 @@ Note that adding the `readonly` modifier to a field prevents only the value of t
 ```csharp
 private readonly IList list = new List();
 
-list = new List();  // fails at runtime
+list = new List();  // does not compile
 
 list.Add("new stuff");  // succeeds at runtime
 ```
+
+To ensure that all members of a reference type are protected the fields can be made `readonly` and automatic properties can be defined without a `set` accessor.
 
 You should examine [read-only collections][readonly-collections] in the Base Class Library.
 

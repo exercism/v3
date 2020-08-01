@@ -35,9 +35,9 @@ public class Authenticator
             }
         };
 
-    public Identity GetAdmin()
+    public Identity Admin
     {
-        return new Identity {Email = admin.Email, EyeColor = admin.EyeColor};
+        get { return new Identity {Email = admin.Email, EyeColor = admin.EyeColor}; }
     }
 
     public IReadOnlyDictionary<string, Identity> GetDevelopers()
