@@ -11,6 +11,12 @@
   "exercises": {
     "concept": [
       {
+        "slug": "anonymous-functions",
+        "uuid": null,
+        "concepts": ["anonymous-functions"],
+        "prerequisites": ["functions"]
+      },
+      {
         "slug": "application-timing",
         "uuid": null,
         "concepts": ["application-timing"],
@@ -165,13 +171,19 @@
         "slug": "reflection",
         "uuid": null,
         "concepts": ["reflection"],
-        "prerequisites": ["interfaces", "empty-interfaces"]
+        "prerequisites": ["interfaces", "empty-interface"]
       },
       {
         "slug": "goroutines",
         "uuid": null,
         "concepts": ["goroutines"],
         "prerequisites": ["functions", "iteration", "anonymous-functions"]
+      },
+      {
+        "slug": "select",
+        "uuid": null,
+        "concepts": ["select"],
+        "prerequisites": ["channels"]
       },
       {
         "slug": "slices",
@@ -213,7 +225,7 @@
         "slug": "type-conversion",
         "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
         "concepts": ["type-assertion"],
-        "prerequisites": ["string", "numbers"]
+        "prerequisites": ["strings", "numbers"]
       },
       {
         "slug": "duration",
