@@ -84,6 +84,12 @@
         "prerequisites": ["anonymous-functions", "functions"]
       },
       {
+        "slug": "duration",
+        "uuid": null,
+        "concepts": ["duration"],
+        "prerequisites": ["time", "numbers"]
+      },
+      {
         "slug": "empty-interface",
         "uuid": null,
         "concepts": ["empty-interface"],
@@ -159,7 +165,7 @@
         "slug": "panic-and-recover",
         "uuid": null,
         "concepts": ["panic", "recover"],
-        "prerequisites": ["defer", "type-assertion"]
+        "prerequisites": ["defer", "type-assertion", "errors"]
       },
       {
         "slug": "pointers",
@@ -217,22 +223,16 @@
       },
       {
         "slug": "type-assertion",
-        "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
+        "uuid": null,
         "concepts": ["type-assertion"],
         "prerequisites": ["interfaces"]
       },
       {
         "slug": "type-conversion",
-        "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
-        "concepts": ["type-assertion"],
+        "uuid": null,
+        "concepts": ["type-conversion"],
         "prerequisites": ["strings", "numbers"]
       },
-      {
-        "slug": "duration",
-        "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
-        "concepts": ["duration"],
-        "prerequisites": ["time", "numbers"]
-      }
     ],
     "practice": []
   }
