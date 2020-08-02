@@ -26,7 +26,7 @@ At the core of the switch expression is _pattern matching_. In the coding exerci
 
 The `_` case which is the last in the list is useful to ensure that the matching is exhaustive and to avoid possible run-time errors.
 
-```case
+```csharp
 double xx = 42d;
 
 string interesting = xx switch
