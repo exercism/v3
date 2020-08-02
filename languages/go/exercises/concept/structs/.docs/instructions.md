@@ -14,6 +14,7 @@ Allow creating a remote controller car by defining a function `NewCar` that take
 speed := 5
 batteryDrain := 2
 car := NewCar(speed, batteryDrain)
+// Output: Car{speed: 5, batteryDrain: 2, battery:100}
 ```
 
 ## 2. Creating a race track
@@ -24,6 +25,7 @@ Allow creating a race track by defining a function `NewTrack` that takes the tra
 ```go
 distance := 800
 raceTrack := NewTrack(distance)
+// Output: Track{distance: 800}
 ```
 
 ## 3. Drive the car
@@ -35,7 +37,7 @@ speed := 5
 batteryDrain := 2
 car := NewCar(speed, batteryDrain)
 car = Drive(car)
-// => Car{speed: 5, batteryDrain: 2, battery: 98, distance: 5}
+// Output: Car{speed: 5, batteryDrain: 2, battery: 98, distance: 5}
 ```
 
 ## 4. Check if a remote control car can finish a race
@@ -51,5 +53,5 @@ distance := 100
 raceTrack := NewTrack(distance)
 
 CanFinish(car, raceTrack)
-// => true
+// Output: true
 ```
