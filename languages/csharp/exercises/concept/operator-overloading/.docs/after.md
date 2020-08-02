@@ -14,6 +14,15 @@ static <return type> operaator <operator symbols>(<parameters>);
 static (explicit|implicit) operator <cast-to-type>(<cast-from-type> <parameter name>);
 ```
 
+Operators behave in the same way as static methods.
+
+- An operator symbol takes the place of a method identifier, and they have parameters and a return type. The type rules for parameters and return type follow your intuition and you can rely on the compiler to provide detailed guidance.
+- For binary operations the first parameter takes the left-hand argument to the operation.
+- Operators have a signature comprising two parameters (in the case of binary operations) and a return type or a single parameter and return type in the case of unary operators.
+- For binary operators, one of the parameter types must be that of the declaring class.
+- In the case of type conversions either the parameter or the return type must be the type of the declaring class.
+- For incrementing and decrementing operators the parameter and return type must be that of the declaring class.
+
 Syntax examples:
 
 ```csharp
@@ -55,9 +64,9 @@ struct Point
 }
 ```
 
-It is often productive to implement an `Equals()` method and override it from the `==` operator. Similarly, for comparisons you can implement the `IComparable / CompareTo()` interface. In both cases you get to kill two birds with just over one stone.
+It is often productive to implement an [`Equals()`][equals] method and call it from the `==` operator. Similarly, for comparisons you can implement the [`IComparable`][icomparable] interface. In both cases you get to kill two birds with just over one stone.
 
-You should note that you cannot create operators from symbols that are not part of the standard set of operators. You can use only existing symbols for those operations where the documentation specifies that they can be overloaded.
+You should note that you cannot create operators from symbols that are not part of the standard set of operators. You can use only existing symbols for those operations where the documentation specifies that they can be overloaded. The operators that can be overloaded are listed [here][overloadable-operators].
 
 Note that the order of parameters is important where they differ in type. In the above example code `pt * 10m` is a legal expression whereas `10m * pt` will not compile.
 
@@ -67,3 +76,6 @@ This documentation of [operator overloading][operator-overloading] details the s
 
 [operator-overloading]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/operator-overloading
 [ud-conversion-operators]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/user-defined-conversion-operators
+[overloadable-operators]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/operator-overloading#overloadable-operators
+[equals]: https://docs.microsoft.com/en-us/dotnet/api/system.object.equals?view=netcore-3.1#System_Object_Equals_System_Object_
+[icomparable]: https://docs.microsoft.com/en-us/dotnet/api/system.icomparable-1?view=netcore-3.1
