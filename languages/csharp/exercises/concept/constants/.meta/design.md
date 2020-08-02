@@ -24,3 +24,7 @@
 - `classes`: know how to define fields.
 - `basics`: know how to define variables.
 - `object-initializers`: part of the provided code
+- `arrays`: referred to in _after.md_
+- `properties`: understand how accessors are independent of each other
+- `dictionaries`: understand the syntax and semantics of dictionaries (incl. in code)
+- `nested-types`: understand the syntax of semantics nested types (incl. in code)

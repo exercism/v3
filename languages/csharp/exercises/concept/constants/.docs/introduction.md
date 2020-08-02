@@ -9,7 +9,7 @@ The `readonly` modifier can be (and generally should be) applied to any field th
 
 ```csharp
 private readonly int num;
-private readonly Random rand = new Random();
+private readonly System.Random rand = new System.Random();
 
 public MyClass(int num)
 {

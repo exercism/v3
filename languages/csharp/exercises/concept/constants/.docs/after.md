@@ -16,10 +16,10 @@ A more compelling reason to use `const` is that it enhances a maintainer's abili
 The `const` modifier can also be applied to values within methods:
 
 ```csharp
-public void Area(double r)
+public double Area(double r)
 {
     const double π = 3.142;
-    return Math.Pow((π * r), 2);
+    return System.Math.Pow((π * r), 2);
 }
 ```
 
@@ -31,9 +31,9 @@ The [`readonly`][readonly-fields] modifier can be (and generally should be) appl
 
 ```csharp
 private readonly int num;
-private readonly Random rand = new Random();
+private readonly System.Random rand = new System.Random();
 
-public <constructor>(int num)
+public MyClass(int num)
 {
     this.num = num;
 }
@@ -41,14 +41,17 @@ public <constructor>(int num)
 
 Use of the `readonly` modifier is encouraged for the same reasons that apply to `const`. The practice of constraining fields in this way helps maintainers reason about the code.
 
-Note that adding the `readonly` modifier to a field prevents only the value of the field from being changed. In the case of reference types it does not protect the fields or properties of that type. In particular, it does not protect the contents of arrays.
+Note that adding the `readonly` modifier to a field prevents only the value of the field from being changed. In the case of aggregate types it does not protect the fields or properties of that type. In particular, it does not protect the contents of arrays.
 
 ```csharp
 private readonly IList list = new List();
 
-list = new List();  // does not compile
+public void Foo()
+{
+    list = new List();  // does not compile
 
-list.Add("new stuff");  // succeeds at runtime
+    list.Add("new stuff");  // succeeds at runtime
+}
 ```
 
 To ensure that all members of a reference type are protected the fields can be made `readonly` and automatic properties can be defined without a `set` accessor.

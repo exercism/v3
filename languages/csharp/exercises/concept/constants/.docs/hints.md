@@ -21,10 +21,10 @@
 
 ## 5. Ensure that the developers cannot be tampered with
 
-Read-only collections are discussed [here][readonly-collections].
+- Read-only dictionaries are discussed [here][readonly-dictionaries].
 
 [readonly-fields]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly#readonly-field-example
 [constants]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constants
 [properties]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties
 [defensive-copying]: https://www.informit.com/articles/article.aspx?p=31551&seqNum=2
-[readonly-collections]: https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.readonlycollection-1?view=netcore-3.1
+[readonly-dictionaries]: https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.readonlydictionary-2?view=netcore-3.1
