@@ -1,4 +1,4 @@
-In Go, a `struct` is sequence of named elements called *fields*, each field having a name and type. The name of a field must be unique within the struct. `Structs` can be compared with the *class* in the Object Oriented Programming paradigm. 
+In Go, a `struct` is a sequence of named elements called *fields*, each field having a name and type. The name of a field must be unique within the struct. `Structs` can be compared with the *class* in the Object Oriented Programming paradigm. 
 
 You create a new struct by using the `struct` keyword and explicty define the name and type of the fields as shown un the example below. An `empty struct` is a struct with all fields set to their own zero values.
 
@@ -9,7 +9,7 @@ type StructName struct{
 }
 ```
 
-To acess the value of a field from a struct, we us `.` operator. This way you can set or get values of a struct field.
+To access the value of a field from a struct, we us the `.` operator. This way you can set or get values of a struct field.
 
 ```go
 type Animal struct{
