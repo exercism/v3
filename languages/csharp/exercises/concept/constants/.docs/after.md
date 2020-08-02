@@ -1,6 +1,6 @@
 #### const
 
-The `const` modifier can be (and generally should be) applied to any field where its value is known at compile time and will not change during the lifetime of the program.
+The [`const`][constants] modifier can be (and generally should be) applied to any field where its value is known at compile time and will not change during the lifetime of the program.
 
 ```csharp
 private const int num = 1729;
@@ -27,7 +27,7 @@ Identifying a value with `const` in this way can be useful if it is used multipl
 
 #### readonly
 
-The `readonly` modifier can be (and generally should be) applied to any field that cannot be made `const` where its value will not change during the lifetime of the program and is either set by an inline initializer or during instantiation (by the constructor or a method called by the constructor).
+The [`readonly`][readonly-fields] modifier can be (and generally should be) applied to any field that cannot be made `const` where its value will not change during the lifetime of the program and is either set by an inline initializer or during instantiation (by the constructor or a method called by the constructor).
 
 ```csharp
 private readonly int num;
@@ -59,7 +59,7 @@ For arrays the closest you can get to a read-only version is the [`Array.AsReadO
 
 #### Defensive Copying
 
-Reflecting back on the coding exercise, imagine you have a code-base of several hundred thousand lines. You are passed the dictionary of developers into some method you are developing. Perhaps you have been tasked with printing out details of privileged developers. You decide to blank out the eye color in the dictionary to protect the developers' privacy. Unless a [deep copy] of the dictionary was made in the `Authenticator.GetDevelopers()` method, or, even better, it was wrapped in a read-only collection then you will have just trashed the authenticator.
+Reflecting back on the coding exercise, imagine you have a code-base of several hundred thousand lines. You are passed the dictionary of developers into some method you are developing. Perhaps you have been tasked with printing out details of privileged developers. You decide to blank out the eye color in the dictionary to protect the developers' privacy. Unless a [deep copy][so-deep-copy] of the dictionary was made in the `Authenticator.GetDevelopers()` method, or, even better, it was wrapped in a read-only collection then you will have just trashed the authenticator.
 
 This follows the principle of [defensive copying][defensive-copying]. You can make sure your formal API is not circumvented by avoiding exposure to callers of internal writeable state.
 
@@ -76,3 +76,4 @@ This follows the principle of [defensive copying][defensive-copying]. You can ma
 [defensive-copying]: https://www.informit.com/articles/article.aspx?p=31551&seqNum=2
 [as-read-only]: https://docs.microsoft.com/en-us/dotnet/api/system.array.asreadonly?view=netcore-3.1
 [readonly-collections]: https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.readonlycollection-1?view=netcore-3.1
+[so-deep-copy]: https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy#:~:text=A%20deep%20copy%20occurs%20when,objects%20to%20which%20it%20refers.&text=Shallow%20copy%20is%20a%20bit,values%20in%20the%20original%20object.
