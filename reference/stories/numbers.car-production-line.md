@@ -20,8 +20,8 @@ These are example tasks that fit the car production line exercise:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
-- [F#][implementation-fsharp]
+- [C#: numbers][implementation-csharp] (reference implementation)
+- [F#: numbers][implementation-fsharp]
 
 ## Related
 

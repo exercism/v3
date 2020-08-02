@@ -28,8 +28,8 @@ Terms used in the story:
 
 ## Implementations
 
-- [Elixir][implementation-elixir] (reference implementation)
-- [Python][implementation-python]
+- [Elixir: booleans][implementation-elixir] (reference implementation)
+- [Python: bools][implementation-python]
 
 ## Reference
 

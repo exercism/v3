@@ -21,30 +21,42 @@
 (in-suite sameness-suite)
 
 (test the-maze-of-object-identity
-  (is (eq 'victory (open-room :room-object-identity #'key-object-indentity))))
+  (is (eq 'victory (open-room :room-object-identity
+                              #'key-object-identity))))
 
 (test the-maze-of-numbers
-  (is (eq 'victory (open-room :room-numbers #'key-numbers)))
-  (is (eq 'victory (open-room :room-number-of-different-types #'key-looser-numbers))))
+  (is (eq 'victory (open-room :room-numbers
+                              #'key-numbers)))
+  (is (eq 'victory (open-room :room-numbers-of-different-types
+                              #'key-numbers-of-different-types))))
 
 (test the-maze-of-characters
-  (is (eq 'victory (open-room :room-characters #'key-chars)))
-  (is (eq 'victory (open-room :room-case-insensitive-chars #'key-insensitive-chars))))
+  (is (eq 'victory (open-room :room-characters #'key-characters)))
+  (is (eq 'victory (open-room :room-characters-case-insensitively
+                              #'key-characters-case-insensitively))))
 
 (test the-maze-of-strings
   (is (eq 'victory (open-room :room-strings #'key-strings)))
-  (is (eq 'victory (open-room :room-case-insensitive-strings #'key-insensitive-string))))
+  (is (eq 'victory (open-room :room-strings-case-insensitively
+                              #'key-strings-case-insensitively))))
 
 (test the-maze-of-conses
-  (is (eq 'victory (open-room :room-cons-of-symbols #'key-cons-symbols)))
-  (is (eq 'victory (open-room :room-cons-of-chars #'key-cons-chars)))
-  (is (eq 'victory (open-room :room-cons-of-numbers #'key-cons-numbers)))
-  (is (eq 'victory (open-room :room-cons-case-insensitive-chars #'key-cons-insensitive-chars)))
-  (is (eq 'victory (open-room :room-cons-number-of-different-types #'key-cons-looser-numbers))))
+  (is (eq 'victory (open-room :room-conses-of-symbols
+                              #'key-conses-of-symbols)))
+  (is (eq 'victory (open-room :room-conses-of-characters
+                              #'key-conses-of-characters)))
+  (is (eq 'victory (open-room :room-conses-of-numbers
+                              #'key-conses-of-numbers)))
+  (is (eq 'victory (open-room :room-conses-of-characters-case-insensitively
+                              #'key-conses-of-characters-case-insensitively)))
+  (is (eq 'victory (open-room :room-conses-of-numbers-of-different-types
+                              #'key-conses-of-numbers-of-different-types))))
 
 (test the-maze-of-arrays
-  (is (eq 'victory (open-room :room-arrays #'key-arrays)))
-  (is (eq 'victory (open-room :room-arrays-looser-equal #'key-arrays-looser-equal))))
+  (is (eq 'victory (open-room :room-arrays
+                              #'key-arrays)))
+  (is (eq 'victory (open-room :room-arrays-loosely
+                              #'key-arrays-loosely))))
 
 ;; Either provides human-readable results to the user or machine-readable
 ;; results to the test runner. The default upon calling `(run-tests)` is to
@@ -82,15 +94,15 @@
      . (((1.0 1) . explosion)
         ((1.0 1.0) . victory)))
 
-    (:room-cons-of-symbols
+    (:room-conses-of-symbols
      . ((((a . b) (a . c)) . explosion)
         (((a . b) (a . b)) . victory)))
 
-    (:room-cons-of-chars
+    (:room-conses-of-characters
      . ((((#\a . #\b) (#\A . #\b)) . explosion)
         (((#\a . #\b) (#\a . #\b)) . victory)))
 
-    (:room-cons-of-numbers
+    (:room-conses-of-numbers
      . ((((1 . 2) (1 . 2.0)) . explosion)
         (((1 . 2) (1 . 2)) . victory)))
 
@@ -102,27 +114,27 @@
      . ((("wrong" "WRONG") . explosion)
         (("lisp" "lisp") . victory)))
 
-    (:room-case-insensitive-chars
+    (:room-characters-case-insensitively
      . (((#\a #\b) . explosion)
         ((#\a #\A) . victory)))
 
-    (:room-number-of-different-types
+    (:room-numbers-of-different-types
      . (((1.0 1.1) . explosion)
         ((1 1.0) . victory)))
 
-    (:room-case-insensitive-strings
+    (:room-strings-case-insensitively
      . ((("right" "wrong") . explosion)
         (("lisp" "LISP") . victory)))
 
-    (:room-cons-case-insensitive-chars
-     . ((((1 . 1) (1 . 2)) . explosion)
-        (((1 . 1) (1.0 . 1.0)) . victory)))
-
-    (:room-cons-number-of-different-types
+    (:room-conses-of-characters-case-insensitively
      . ((((#\a . #\b) (#\a . #\c)) . explosion)
         (((#\a . #\b) (#\A . #\B)) . victory)))
 
-    (:room-arrays-looser-equal
+    (:room-conses-of-numbers-of-different-types
+     . ((((1 . 1) (1 . 2)) . explosion)
+        (((1 . 1) (1.0 . 1.0)) . victory)))
+
+    (:room-arrays-loosely
      . (((,+an-array+ ,+a-different-array+) . explosion)
         ((,+an-array+ ,+a-similar-but-different-array+) . victory))))
   "Rooms are a sequence of pairs of a DOOR and a RESULT. A DOOR is a sequence of
