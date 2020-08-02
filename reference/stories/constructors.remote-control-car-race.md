@@ -23,7 +23,7 @@ These are example tasks that fit the remote control car race exercise:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
+- [C#: constructors][implementation-csharp] (reference implementation)
 
 ## Related
 

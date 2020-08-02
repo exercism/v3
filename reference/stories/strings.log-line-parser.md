@@ -22,13 +22,13 @@ These are example tasks that fit the log line parser:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
-- [C++][implementation-cpp]
-- [F#][implementation-fsharp]
-- [Go][implementation-go]
-- [Java][implementation-java]
-- [Python][implementation-python]
-- [Ruby][implementation-ruby]
+- [C#: strings][implementation-csharp] (reference implementation)
+- [C++: strings][implementation-cpp]
+- [F#: strings][implementation-fsharp]
+- [Go: strings-package][implementation-go]
+- [Java: strings][implementation-java]
+- [Python: strings][implementation-python]
+- [Ruby: strings][implementation-ruby]
 
 ## Related
 

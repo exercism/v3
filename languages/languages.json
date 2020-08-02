@@ -381,6 +381,58 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/integral-numbers",
+          "slug": "integral-numbers",
+          "concepts": [
+            {
+              "url": null,
+              "name": "casting"
+            },
+            {
+              "url": null,
+              "name": "integral-numbers"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/interfaces",
+          "slug": "interfaces",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/interfaces.md",
+              "name": "interfaces"
+            },
+            {
+              "url": null,
+              "name": "ordering"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
+              "name": "classes"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            },
+            {
+              "url": null,
+              "name": "properties"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/lists",
           "slug": "lists",
           "concepts": [
@@ -860,7 +912,7 @@
             },
             {
               "url": null,
-              "name": "signed-integers"
+              "name": "integral-numbers"
             }
           ]
         },
@@ -976,7 +1028,7 @@
             },
             {
               "url": null,
-              "name": "signed-integers"
+              "name": "integral-numbers"
             }
           ]
         }

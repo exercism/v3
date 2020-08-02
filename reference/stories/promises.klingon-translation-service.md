@@ -58,7 +58,7 @@ All the translation texts are Klingon to English.
 
 ## Implementations
 
-- [JavaScript][implementation-javascript] (reference implementation)
+- [JavaScript: promises][implementation-javascript] (reference implementation)
 
 ## Reference
 
