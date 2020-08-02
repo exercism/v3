@@ -21,3 +21,4 @@ Go has a predeclared identifier called `iota` for creating enumerated constants.
     fmt.Print(a, b, c, d, e, f, g)
     // Output: 9 9 9 3 4 5 6
 ```
+
