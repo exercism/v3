@@ -2227,7 +2227,15 @@
           "concepts": [
             {
               "url": null,
-              "name": "basics"
+              "name": "packages"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/variables.md",
+              "name": "variables"
             }
           ],
           "prerequisites": []
@@ -2243,8 +2251,8 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/variables.md",
+              "name": "variables"
             }
           ]
         },
@@ -2260,7 +2268,11 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "basics"
+              "name": "packages"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
             }
           ]
         },
@@ -2325,10 +2337,6 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
               "name": "conditionals"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
             }
           ]
         },
@@ -2357,9 +2365,13 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/nil",
-          "slug": "nil",
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/zero-value",
+          "slug": "zero-value",
           "concepts": [
+            {
+              "url": null,
+              "name": "zero-value"
+            },
             {
               "url": null,
               "name": "nil"
@@ -2367,8 +2379,24 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/pointer.md",
+              "name": "pointers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
             }
           ]
         },
@@ -2387,8 +2415,8 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/variables.md",
+              "name": "variables"
             }
           ]
         },
@@ -2423,8 +2451,8 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/variables.md",
+              "name": "variables"
             }
           ]
         },
@@ -2481,10 +2509,6 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
               "name": "strings"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
             }
           ]
         }
