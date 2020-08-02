@@ -66,7 +66,7 @@ amountA / 2m
 
 ## 5. Convert the currency amount to a double
 
-Please modify the `CurrencyAmount` struct so that an instance can be explicitly cast to a double.
+Please modify the `CurrencyAmount` struct so that an instance can be explicitly cast to a `double`.
 
 ```csharp
 CurrencyAmount amountA = new CurrencyAmount(55.5m, "HD");
@@ -76,7 +76,7 @@ CurrencyAmount amountA = new CurrencyAmount(55.5m, "HD");
 
 ## 6. Convert the currency amount to a decimal
 
-Please modify the `CurrencyAmount` struct so that an instance can be explicitly cast to a double.
+Please modify the `CurrencyAmount` struct so that an instance can be implicitly converted to a `decimal`.
 
 ```csharp
 CurrencyAmount amountA = new CurrencyAmount(55.5m, "HD");

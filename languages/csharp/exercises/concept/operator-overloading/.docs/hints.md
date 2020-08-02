@@ -1,6 +1,6 @@
 ## General
 
-This documentation of [operator overloading][operator-overloading] details the syntax.
+- This documentation of [operator overloading][operator-overloading] details the syntax.
 
 ## 1. Enable the currency amount to be tested for equality
 

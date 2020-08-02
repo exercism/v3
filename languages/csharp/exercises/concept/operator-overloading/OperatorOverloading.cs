@@ -9,11 +9,11 @@ public struct CurrencyAmount
         this.currency = currency;
     }
 
-    // TODO Implement equality operators
+    // TODO: implement equality operators
 
-    // TODO Implement comparison operators
+    // TODO: implement comparison operators
 
-    // TODO Implement arithmetic operators
+    // TODO: implement arithmetic operators
 
-    // TODO Implement type conversion operators
+    // TODO: implement type conversion operators
 }
