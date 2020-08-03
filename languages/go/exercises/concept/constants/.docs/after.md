@@ -16,7 +16,7 @@ when the variable needs a type. This gives constants more flexibility in Go's ty
     sqrt2 := math.Sqrt(2) // 2 is an untyped numeric constant and does not need to be explicitly given the type float64 as required by the Sqrt method
 ```
 
-The `iota` enumerator can be used to create successive untyped integer constants:
+Go does not have enums like some other languages but the `iota` enumerator can be used to create successive untyped integer constants:
 
 ```go
     const (
