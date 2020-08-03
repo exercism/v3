@@ -12,6 +12,8 @@ Expression-bodied-members cannot have blocks of multiple statements, but those w
 
 [Ternary operators][ternary-operators] allow if-conditions to be defined in expressions rather than statement blocks. This echoes functional programming approaches and can often make code more expressive and less error-prone.
 
+The ternary operator combines 3 expressions: a condition followed by an expression to be evaluated and returned if the condition is true (the `if` part, introduced by `?`) and an expression to be evaluated and returned if the condition is false (the `else` part, introduced by `:`).
+
 ```csharp
 int a = 3, b = 4;
 int max = a > b ? a : b;
@@ -23,6 +25,8 @@ int max = a > b ? a : b;
 [Switch expressions][switch-expressions] behave in a similar manner to [switch statements][switch-statements] covered in (TODO cross-ref-tba switch statements). They support a kind of decision table that maps input conditions to actions or values.
 
 At the core of the switch expression is _pattern matching_. In the coding exercise we matched values against `const` patterns. In this case the inputs to the `switch` are a _range expression_ which is matched to const values and the values used by the _case guards_.
+
+The cases (also known as _switch arms_) are evaluated in text order and the process is cut short and the associated value is returned as soon as a match is found.
 
 The `_` case which is the last in the list is useful to ensure that the matching is exhaustive and to avoid possible run-time errors.
 
