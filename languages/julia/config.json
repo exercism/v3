@@ -1,6 +1,6 @@
 {
     "language": "Julia",
-  "slug": "julia",
+    "slug": "julia",
     "version": 3,
     "active": true,
     "blurb": "Julia is an open-source high-level, dynamic programming language whose sweet spot is technical and scientific computing. It is convenient for day-to-day work and fast enough for high performance computing.",
