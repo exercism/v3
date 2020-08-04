@@ -15,9 +15,9 @@ The Rust track maintainers [have decided](https://github.com/exercism/v3/discuss
 
 | Term               |                                                                                               Meaning |
 | ------------------ | ----------------------------------------------------------------------------------------------------: |
-| Contributor        |                                                                  anyone adding a new concept exercise |
-| Maintainer         |          Anyone who belongs to the [@exercism/rust team](https://github.com/orgs/exercism/teams/rust) |
-| development branch | the [v3](https://github.com/exercism/v3) repository's default development branch. Currently `master`. |
+| Contributor        |                                                                  Anyone adding a new concept exercise. |
+| Maintainer         |          Anyone who belongs to the [@exercism/rust team](https://github.com/orgs/exercism/teams/rust). |
+| development branch | The [v3](https://github.com/exercism/v3) repository's default development branch. Currently `master`. |
 
 ### the workflow
 
@@ -30,4 +30,5 @@ The Rust track maintainers [have decided](https://github.com/exercism/v3/discuss
 1. The maintainer shall review the feedback and either:
    1. approve
    1. request additional changes. At this point, the process returns to step 3.
-1. Upon approval, the contributor shall merge their pull request.
+1. Upon approval, a maintainer shall merge their pull request.
+   1. Maintainers shall merge their own pull requests. Since contributors are not necessarily maintainers, a maintainer must preform this step.
