@@ -16,8 +16,8 @@ The Rust track maintainers [have decided](https://github.com/exercism/v3/discuss
 
 | Term               |                                                                                               Meaning |
 | ------------------ | ----------------------------------------------------------------------------------------------------: |
-| Contributor        |                                                                  Anyone adding a new concept exercise. |
-| Maintainer         |          Anyone who belongs to the [@exercism/rust team](https://github.com/orgs/exercism/teams/rust). |
+| Contributor        |                                                                 Anyone adding a new concept exercise. |
+| Maintainer         |         Anyone who belongs to the [@exercism/rust team](https://github.com/orgs/exercism/teams/rust). |
 | development branch | The [v3](https://github.com/exercism/v3) repository's default development branch. Currently `master`. |
 
 ### the workflow
@@ -25,7 +25,7 @@ The Rust track maintainers [have decided](https://github.com/exercism/v3/discuss
 1. Contributors start by opening a [draft pull request](https://github.blog/2019-02-14-introducing-draft-pull-requests/) with their changes
    1. Our track follows broader exercism community here. Using the draft feature signals the work is ready for high-level review.
 1. One other maintainer shall review the contribution and provide feedback.
-1. The contributor shall address *all* maintainer feedback as part of the pull request.
+1. The contributor shall address _all_ maintainer feedback as part of the pull request.
    1. Maintainers shall consider using GitHub's suggestion feature for nitpick or cut-and-dry changes.
 1. The maintainer shall review the feedback and either:
    1. approve
