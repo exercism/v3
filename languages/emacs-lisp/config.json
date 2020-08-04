@@ -1,5 +1,6 @@
 {
   "language": "Emacs Lisp",
+  "slug": "emacs-lisp",
   "active": true,
   "blurb": "Emacs Lisp is the extension language of the Emacs text editor. You can easily create you own extensions, which include preference files, but also full-fledged applications that use Emacs as a running environment in a fully integrated way.",
   "version": 3,
