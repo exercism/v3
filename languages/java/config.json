@@ -10,10 +10,22 @@
   "exercises": {
     "concept": [
       {
+        "slug": "arrays",
+        "uuid": "60600885-8684-45c3-b8a9-a2f9e3ce2d97",
+        "concepts": ["arrays"],
+        "prerequisites": ["booleans"]
+      },
+      {
         "slug": "basics",
         "uuid": "01924e92-ecc7-4ba6-83f9-f142c0756b9f",
         "concepts": ["basics"],
         "prerequisites": []
+      },
+      {
+        "slug": "booleans",
+        "uuid": "aaf69953-eac8-4016-984e-13b0917fcf01",
+        "concepts": ["booleans"],
+        "prerequisites": ["basics"]
       },
       {
         "slug": "strings",

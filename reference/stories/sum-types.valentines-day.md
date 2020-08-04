@@ -24,7 +24,7 @@ These are example tasks that fit the pizza delivery exercise:
 
 ## Implementations
 
-- [F#][implementation-fsharp] (reference implementation)
+- [F#: discriminated-unions][implementation-fsharp] (reference implementation)
 
 ## Related
 

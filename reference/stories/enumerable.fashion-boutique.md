@@ -23,8 +23,8 @@ A single item in the inventory is represented by a map/dictionary, and the whole
 
 ## Implementations
 
-- [Elixir][implementation-elixir] (reference implementation)
-- [Elixir][extension-elixir] (adapted for further use in following exercise)
+- [Elixir: enum][implementation-elixir] (reference implementation)
+- [Elixir: list-comprehensions][extension-elixir] (adapted for further use in following exercise)
 
 ## Reference
 

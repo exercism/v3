@@ -1,3 +1,4 @@
+include 'concept:arrays'
 include 'concept:basics'
+include 'concept:booleans'
 include 'concept:strings'
-

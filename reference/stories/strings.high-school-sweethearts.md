@@ -32,7 +32,7 @@ These are example tasks that fit the high school sweethearts exercise, each task
 
 ## Implementations
 
-- [Elixir][implementation-elixir] (reference implementation)
+- [Elixir: strings][implementation-elixir] (reference implementation)
 
 ## Related
 

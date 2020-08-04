@@ -68,7 +68,7 @@ To contribute, check the list below to see which documents have already been wri
 - [Pattern matching](./pattern_matching.md)
 - [Pipelines](./pipelines.md)
 - [Polymorphism](./polymorphism.md)
-- [Prototype-based programming](./prototype_based-programming.md)
+- [Prototype-based programming](./prototype_based_programming.md)
 - [Pure functions](./pure_functions.md)
 - [Recursion](./recursion.md)
 - [REPL](./repl.md)

@@ -1,4 +1,4 @@
-package basic_strings
+package strings_package
 
 import (
 	"strings"

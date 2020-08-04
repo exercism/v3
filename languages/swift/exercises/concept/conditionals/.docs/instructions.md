@@ -17,12 +17,12 @@ canIBuy(vehicle: "2020 Indian FTR 1200", price: 12,500, monthlyBudget: 200)
 
 ## 2. Determine the type of drivers license you will need
 
-Define the `licenceType` function that takes the number of wheels on your new vehicle and returns the type of license you will need. Vehicles with 2 or 3 wheels will require a motorcycle license, vehicles with 4 or 6 wheels will recuire an automobile license, vehicles with 18 wheels require a commercial trucking license, and any other number of wheels returning an failure message:
+Define the `licenceType` function that takes the number of wheels on your new vehicle and returns the type of license you will need. Vehicles with 2 or 3 wheels will require a motorcycle license, vehicles with 4 or 6 wheels will require an automobile license, vehicles with 18 wheels require a commercial trucking license, and any other number of wheels returning an failure message:
 
     case 2,3: return "You will need a motorcycle license for your vehicle"
     case 4,6: return "You will need a automobile license for your vehicle"
     case 18:  return "You will need a commercial trucking license for your vehicle"
-    default:  return "We do not issue licences for thos types of vehicles"
+    default:  return "We do not issue licenses for those types of vehicles"
 
 ```swift
 licenceType(numberOfWheels: 2)

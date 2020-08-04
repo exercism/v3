@@ -6,6 +6,9 @@
 yarn.lock
 package-lock.json
 
+# Python
+__pycache__
+
 # Ruby
 Gemfile
 Gemfile.lock
@@ -18,3 +21,6 @@ Cargo.lock
 .vscode/settings.json
 
 tmp/
+
+# Intellij IDEA project dir
+.idea
