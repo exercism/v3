@@ -2,18 +2,4 @@
 (by means of a string builder), defined and initialised using literals with single quotes, as in `char ch = 'A';`
 , assigned and compared.
 
-### Unicode Issues
-
-tbd
-
-### Globalization
-
-tbd
-
-### Representation, Characters and Integers
-
-tbd
-
-### Performance
-
-tbd
+The Character class encapsulates the char value.
