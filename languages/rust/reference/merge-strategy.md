@@ -7,8 +7,8 @@ The Rust track maintainers [have decided](https://github.com/exercism/v3/discuss
 - we strive to accept _all_ contributions
   - We'll bring contributions to a high standard of quality through collaborative, iterative review.
   - We adopt a pessimistic merging approach. Think of maintainer reviews like the Rust compiler's feedback. The amount of feedback can feel overwhelming and frustrating. But we'll work with you to get it over the finish line! So keep up the good work.
-- One other maintainer should review a contributor's pull request.
-- At least one other maintainer should approve a pull request before merging it into the development branch.
+- Every pull request must have at least 1 "Approve", and no "Request Changes", from a track maintainer before it can be merged.
+- No maintainer can approve their own PR.
 
 ## pull request workflow
 
