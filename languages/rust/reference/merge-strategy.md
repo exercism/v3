@@ -27,6 +27,7 @@ The Rust track maintainers [have decided](https://github.com/exercism/v3/discuss
 1. One other maintainer shall review the contribution and provide feedback.
 1. The contributor shall address _all_ maintainer feedback as part of the pull request.
    1. Maintainers shall consider using GitHub's suggestion feature for nitpick or cut-and-dry changes.
+   1. Pushback is encouraged when a contributor believes that they are right and a maintainer is wrong about a feedback item. "Addressing" a piece of feedback is not synonymous with slavishly implementing it.
 1. The maintainer shall review the feedback and either:
    1. approve
    1. request additional changes. At this point, the process returns to step 3.
