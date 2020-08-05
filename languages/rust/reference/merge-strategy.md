@@ -22,8 +22,9 @@ The Rust track maintainers [have decided](https://github.com/exercism/v3/discuss
 
 ### the workflow
 
-1. Contributors start by opening a [draft pull request](https://github.blog/2019-02-14-introducing-draft-pull-requests/) with their changes
-   1. Our track follows broader exercism community here. Using the draft feature signals the work is ready for high-level review.
+1. Contributors start by opening a [draft](https://github.blog/2019-02-14-introducing-draft-pull-requests/) or a complete pull request with their changes
+   1. Using the draft feature signals the work is ready for high-level review, but that details may currently be unimplemented, incomplete, or wrong.
+   1. After an unspecified number of iterations of steps 2-3, the contributor marks the PR as ready for review.
 1. One other maintainer shall review the contribution and provide feedback.
 1. The contributor shall address _all_ maintainer feedback as part of the pull request.
    1. Maintainers shall consider using GitHub's suggestion feature for nitpick or cut-and-dry changes.
