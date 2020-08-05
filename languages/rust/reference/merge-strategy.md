@@ -16,7 +16,7 @@ The Rust track maintainers [have decided](https://github.com/exercism/v3/discuss
 
 | Term               |                                                                                               Meaning |
 | ------------------ | ----------------------------------------------------------------------------------------------------: |
-| Contributor        |                                                                 Anyone submitting a pull request. |
+| Contributor        |                                                                     Anyone submitting a pull request. |
 | Maintainer         |         Anyone who belongs to the [@exercism/rust team](https://github.com/orgs/exercism/teams/rust). |
 | development branch | The [v3](https://github.com/exercism/v3) repository's default development branch. Currently `master`. |
 
