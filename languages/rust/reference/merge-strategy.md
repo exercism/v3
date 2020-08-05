@@ -8,7 +8,7 @@ The Rust track maintainers [have decided](https://github.com/exercism/v3/discuss
   - We'll bring contributions to a high standard of quality through collaborative, iterative review.
   - We adopt a pessimistic merging approach. Think of maintainer reviews like the Rust compiler's feedback. The amount of feedback can feel overwhelming and frustrating. But we'll work with you to get it over the finish line! So keep up the good work.
 - Every pull request must have at least one "Approval", and no "Request Changes", from a track maintainer before it can be merged.
-- No maintainer can approve their own PR.
+- No maintainer can approve their own pull request.
 
 ## pull request workflow
 
@@ -24,7 +24,7 @@ The Rust track maintainers [have decided](https://github.com/exercism/v3/discuss
 
 1. Contributors start by opening a [draft](https://github.blog/2019-02-14-introducing-draft-pull-requests/) or a complete pull request with their changes
    1. Using the draft feature signals the work is ready for high-level review, but that details may currently be unimplemented, incomplete, or wrong.
-   1. After an unspecified number of iterations of steps 2-3, the contributor marks the PR as ready for review.
+   1. After an unspecified number of iterations of steps 2-3, the contributor marks the pull request as ready for review.
 1. One other maintainer shall review the contribution and provide feedback.
 1. The contributor shall address _all_ maintainer feedback as part of the pull request.
    1. Maintainers shall consider using GitHub's suggestion feature for nitpick or cut-and-dry changes.
