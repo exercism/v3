@@ -1,5 +1,6 @@
 {
   "language": "Haskell",
+  "slug": "haskell",
   "version": 3,
   "active": true,
   "blurb": "Haskell is a functional programming language which is pure and statically-typed. It's known for lazy evaluation, where evaluation is deferred until necessary, and its purity, where monads are used for working with side-effects.",
