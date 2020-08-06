@@ -1,11 +1,11 @@
 Swift is a statically-typed language, which means that every value has a known, fixed type at compile time.
 
-Values can be associated with names by defining a variable or a constant and assiging a value to the constant or variable. That name may then be used to refer to that value throughout the program. As the name implies, a constant is _immutable_ which means that the value cannot be changed. A variable, on the other hand, is _mutable_, which means that the value can be changed at any time.
+Values can be associated with names by defining a variable or a constant and assigning a value to the constant or variable. That name may then be used to refer to that value throughout the program. As the name implies, a constant is _immutable_ which means that the value cannot be changed. A variable, on the other hand, is _mutable_, which means that the value can be changed at any time.
 
 Variables are defined using the `var` keyword, while constants are defined using the `let` keyword.
 
 ```swift
-var variableName = 10 // varible
+var variableName = 10 // variable
 let constantName = 10 // constant
 ```
 
@@ -57,4 +57,4 @@ Invoking a function is done by specifying its name and passing arguments for eac
 let fifteen = add10(to: 5)
 ```
 
-Swift supports two types of comments. Single line comments start with `//` and continue to the following newline. Multiline comments ar inserted between `/*` and `*/`.
+Swift supports two types of comments. Single line comments start with `//` and continue to the following newline. Multiline comments are inserted between `/*` and `*/`.

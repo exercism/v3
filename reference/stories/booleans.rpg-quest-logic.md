@@ -33,9 +33,9 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 ## Implementations
 
-- [F#][implementation-fsharp]
-- [JavaScript][implementation-javascript] (reference implementation)
-- [Julia][implementation-julia]
+- [F#: booleans][implementation-fsharp]
+- [JavaScript: booleans][implementation-javascript] (reference implementation)
+- [Julia: boolean-logic][implementation-julia]
 
 ## Related
 

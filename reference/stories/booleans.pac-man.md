@@ -28,7 +28,8 @@ Terms used in the story:
 
 ## Implementations
 
-- [Elixir][implementation-elixir] (reference implementation)
+- [Elixir: booleans][implementation-elixir] (reference implementation)
+- [Python: bools][implementation-python]
 
 ## Reference
 
@@ -43,3 +44,4 @@ Terms used in the story:
 [types-boolean]: ../types/boolean.md
 [concepts-boolean_logic]: ../concepts/boolean_logic.md
 [implementation-elixir]: ../../languages/elixir/exercises/concept/booleans/.docs/instructions.md
+[implementation-python]: ../../languages/python/exercises/concept/bools/.docs/instructions.md

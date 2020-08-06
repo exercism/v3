@@ -20,6 +20,7 @@
     - [Lambda functions - Secret device](/reference/stories/lambda-function.secret-device.md)
     - [Lists - Language list](/reference/stories/lists.language-list.md)
     - [Maps - High score board](/reference/stories/maps.high-score-board.md)
+    - [Matrices - Exercism logo matrix](/reference/stories/matrices.exercism-logo-matrix.md)
     - [Method overloading - RPG Game Master](/reference/stories/method-overloading.rpg-game-master.md)
     - [Nullability - Name badges](/reference/stories/nullability.name-badges.md)
     - [Numbers - Car production line](/reference/stories/numbers.car-production-line.md)

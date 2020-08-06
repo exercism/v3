@@ -16,6 +16,6 @@ The student implements a function in to handle errors in three ways:
 
 ## Implementations
 
-- [Elixir][implementation-elixir] (reference implementation)
+- [Elixir: errors][implementation-elixir] (reference implementation)
 
 [implementation-elixir]: ../../languages/elixir/exercises/concept/errors/.docs/instructions.md

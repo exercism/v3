@@ -1,5 +1,6 @@
 {
   "language": "Python",
+  "slug": "python",
   "active": true,
   "blurb": "Python is a clear and powerful object-oriented programming language with an elegant and easy-to-read syntax. It is ideal for prototyping and ad-hoc tasks, but also sees wide use in scientific computing, web development, and automation.",
   "version": 3,
@@ -14,6 +15,32 @@
         "uuid": "5a9b42fb-ddf4-424b-995d-f9952ea63c37",
         "concepts": ["strings"],
         "prerequisites": ["functions"]
+      },
+      {
+        "slug": "tuples",
+        "uuid": "7ecd42c1-2ed5-487a-bc89-71c9cbad9b05",
+        "concepts": ["tuples"],
+        "prerequisites": [
+          "bools",
+          "for-loops",
+          "functions",
+          "if-keyword",
+          "in-keyword",
+          "integers",
+          "return-keyword"
+        ]
+      },
+      {
+        "slug": "basics",
+        "uuid": "dfd7dc01-3544-4f61-a063-af8530d6e601",
+        "concepts": ["basics"],
+        "prerequisites": []
+      },
+      {
+        "slug": "bools",
+        "uuid": "c050470d-ef22-4187-aaac-239e07955a4d",
+        "concepts": ["bools"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []

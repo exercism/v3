@@ -260,6 +260,7 @@ The concept exercises use the following concepts:
 | concept                          | interpretation                                                                                            |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | `access-behaviour`               | Brief overview of behaviours, using access behaviour with maps, knowing it can be used with keyword lists |
+| `agent`                          | Introduction to spawning processes using the Agent module functions.                                      |
 | `anonymous-functions`            | Intro to anonymous functions, functions as data                                                           |
 | `atoms`                          | Intro to Elixir atom type.                                                                                |
 | `basics`                         | Introduction to functions, modules, variables, returning values, integers, invoking functions.            |
