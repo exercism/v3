@@ -14,6 +14,8 @@ The day is happening remotely and we'll be hanging out in two places:
 
 Tracks can also use their #maintaining-xxx tracks for track-specific discussions.
 
+If you're not on Slack but want to be, please email jeremy@exercism.io.
+
 ## Aims of the day
 
 The overarching aim of the day is to get each track to a baseline state that means on **future hackdays** there is a great basis for new contributors to work from. The intention has been to keep this first day relatively small, and then make the next one (maybe 4 weeks later) a larger affair.

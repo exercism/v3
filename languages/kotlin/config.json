@@ -1,9 +1,17 @@
 {
   "version": 3,
+  "slug": "kotlin",
   "language": "Kotlin",
   "blurb": "Kotlin is a multi-paradigm cross-platform, statically typed, general-purpose programming language for JVM, JS, Android/iOS and Native (via LLVM) targets.",
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+        "slug": "basics",
+        "uuid": "de14936d-28d7-4531-9761-69deba31a7ca",
+        "concepts": ["basics"],
+        "prerequisites": []
+      }
+    ],
     "practice": []
   },
   "online_editor": {

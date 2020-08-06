@@ -1,5 +1,6 @@
 {
   "language": "C#",
+  "slug": "csharp",
   "active": true,
   "blurb": "C# is a modern, object-oriented language with lots of great features, such as type-inference and async/await. The tooling is excellent, and there is extensive, well-written documentation.",
   "version": 3,
@@ -115,6 +116,12 @@
         "prerequisites": ["arrays", "numbers"]
       },
       {
+        "slug": "interfaces",
+        "uuid": "15ac87b1-2976-4a43-a41d-1b6f6628bd9a",
+        "concepts": ["interfaces", "ordering"],
+        "prerequisites": ["classes", "lists", "properties"]
+      },
+      {
         "slug": "lists",
         "uuid": "5c438d02-67a6-43b6-9e3c-8ba309c4ea32",
         "concepts": ["generic-types", "lists"],
@@ -165,6 +172,18 @@
         "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
         "concepts": ["conditionals", "numbers"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "nested-types",
+        "uuid": "694cbd8d-677d-4052-960e-69386463a94b",
+        "concepts": ["nested-types"],
+        "prerequisites": [
+          "classes",
+          "enums",
+          "interfaces",
+          "properties",
+          "structs"
+        ]
       },
       {
         "slug": "object-initializers",

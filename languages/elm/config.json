@@ -1,5 +1,6 @@
 {
   "language": "Elm",
+  "slug": "elm",
   "active": true,
   "blurb": "Elm is a friendly functional language for the Web",
   "version": 3,

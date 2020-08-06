@@ -5,15 +5,15 @@
 
 ## 1. Calculate the daily rate given an hourly rate
 
-- You will need to explicitly convert between `Int` and `Double`..
+- You will need to explicitly convert between `Int` and `Double`.
 
 ## 2. Calculate the monthly rate, given an hourly rate and a discount
 
-- There is a [method available][double] for rounding floats `Double`s.
+- There is a [method available][double] for rounding `Double`s.
 
 ## 3. Calculate the number of workdays given a budget, hourly rate and discount
 
-- There is a [method available][double] for rounding floats `Double`s.
+- There is a [method available][double] for rounding `Double`s where you can supply the rounding rule to use.
 
 [integers]: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID310
 [floatingpoint]: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID321

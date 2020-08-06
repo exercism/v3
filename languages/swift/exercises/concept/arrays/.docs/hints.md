@@ -9,7 +9,7 @@
 
 ## 2. Exchange a card in the stack
 
-- To set the `n`th item in an array [use a subscript][array-access] and asign a new value to it.
+- To set the `n`th item in an array [use a subscript][array-access] and assign a new value to it.
 - An array always starts with index `0`
 
 ## 3. Insert a card at the top of the stack

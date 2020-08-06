@@ -10,7 +10,7 @@ Of the primary Swift collection types, we chose to use the `Array` collection ty
 - Defining an array using array literals.
 - Accessing elements in an array by index.
 - Updating an element in an array by index.
-- Basic array functions (adding and removing elements, retreiving the number of elements).
+- Basic array functions (adding and removing elements, retrieving the number of elements).
 - Iterating over the elements of an array
 
 ## Out of scope
@@ -23,10 +23,9 @@ Of the primary Swift collection types, we chose to use the `Array` collection ty
 
 ## Concepts
 
-- `arrays`: know of the existence of the `Array` type; know how to define an array; know how to access elements in an array by index; know how to update an element in an array by index; know of some basic functions (like adding and removing elements, retreiving the number of elements); iterating over the elements of an array.
+- `arrays`: know of the existence of the `Array` type; know how to define an array; know how to access elements in an array by index; know how to update an element in an array by index; know of some basic functions (like adding and removing elements, retrieving the number of elements); iterating over the elements of an array.
 
-## Prequisites
-
-This exercise's prerequisites Concepts are:
+## Prerequisites
 
 - `basics`: know how to work with `Int`s and how to assign and update variables and functions.
+- `conditionals`: know how to define an if statement, know how to define a guard statement.
