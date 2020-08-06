@@ -1,8 +1,16 @@
-In this exercise you will be building a simple integer calculator. To make matters simple, it is assumed the class can only handle positive numbers.
+In this exercise you will be building error handling for a simple integer calculator. To make matters simple, methods for calculating addition, multiplication and division are provided.
 
-The goal is to implement 4 different methods.
+The goal is to have a working calculator that returns a string with the following pattern: `16 + 51 = 67`, when provided with arguments `16`, `51` and `+`.
 
-## 1. Implement method Calculate
+```csharp
+SimpleCalculator.Calculate(16, 51, "+"); // => returns "16 + 51 = 67"
+
+SimpleCalculator.Calculate(32, 6, "*"); // => returns "32 * 6 = 192"
+
+SimpleCalculator.Calculate(512, 4, "/"); // => returns "512 / 4 = 128"
+```
+
+## 1. Handle the code that may throw errors within the method Calculate
 
 The main method for implementation in this task will be the (_static_) `SimpleCalculator.Calculate()` method. It takes three arguments. The first two arguments are integer numbers on which an operation is going to be conducted. The third argument is of type string and for this excercise it is necessary to implement the following operations:
 
@@ -10,20 +18,23 @@ The main method for implementation in this task will be the (_static_) `SimpleCa
 - multiplication using the `-` string
 - division using the `/` string
 
-Any other operation should throw the `InvalidOperationException` exception. This functionality and handling of operations should be contained in a `try` block.
+## 2. Handle illegal operations
 
-## 2. Implement method SimpleCalculator.Addition()
+Any other operation symbol should throw the `ArgumentOutOfRangeException` exception. If the operation argument is an empty string, then the method should throw the `ArgumentException` exception. When `null` is provided as an operation argument, then the method should throw the `ArgumentNullException` exception. This functionality and handling of operations should be contained in a `try` block.
 
-Implement the (_static_) `SimpleCalculator.Addition()`, which takes two integer values as arguments and returns the result of their multiplication. If the result of the operation does not fit into the `int` type (is greater than `2_147_483_647`), then the method should throw an `ArgumentException` exception with the message `"Result of operation does not fit in type of int."`.
+## 3. Handle the thrown Overflow exceptions 
 
-## 3. Implement method SimpleCalculator.Multiplication()
+When the `OverflowException` exception gets thrown, the code handling the exception should return the string of the following content: `The result of operation {operand1} {operation} {operand2} does not fit into integer type.`. 
 
-Implement the (_static_) `SimpleCalculator.Multiplication()`, which takes two integer values as arguments and returns the result of their multiplication. If the result of the operation does not fit into the `int` type (is greater than `2_147_483_647`), then the method should throw an `ArgumentException` exception with the message `"Result of operation does not fit in type of int."`.
+```csharp
+SimpleCalculator.Calculate(2_147_483_647, 2, "+"); // => returns "The result of operation 2147483647 + 2 does not fit into integer type."
 
-## 4. Implement method SimpleCalculator.Division()
+SimpleCalculator.Calculate(2_147_483_647, 2, "*"); // => returns "The result of operation 2147483647 * 2 does not fit into integer type."
+```
 
-Implement the (_static_) `SimpleCalculator.Division()`, which takes two integer values as arguments and returns the result of their divison. The divisor must be different than `0`. If it is eqaul to zero, the method should throw `DivideByZeroException` exception.
+## 4. Handle the thrown DivideByZero exceptions 
+When a `DivideByZeroException` exception gets thrown, the handling code should return the string with the content `Division by zero is not allowed.`. Any other exception should not be handled by the `SimpleCalculator.Calculate()` method.
 
-## 5. Handle exceptions in the SimpleCalculator.Calculate() method
-
-The `Exceptions` class contains the `ErrorLog` property, which will act, as the name suggest, as the logger for error messages that occur during the execution of the program. In the `SimpleCalculator.Calculate()` method, implement the `catch` clause that catches `ArgumentException` exceptions. Inside the `catch` clause, the `ErrorLog` property should be modified to include the string `Result invalid:` as well the content of the exception message. Finally, it should return `-1` as the result of the operation.
+```csharp
+SimpleCalculator.Calculate(512, 0, "/"); // => returns "Division by zero is not allowed."
+```

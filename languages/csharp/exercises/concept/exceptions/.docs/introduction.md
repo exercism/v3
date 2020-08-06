@@ -16,7 +16,7 @@ static int Square(int number)
 }
 ```
 
-When an exception gets thrown, the runtime has the task of finding a piece of code that is responsible for handling of that exception. If no appropriate handler is found, the runtime displays the unhandled exception message in addition to stoping the execution of the program. To create a handler for an exception, C# uses the try-catch statement, which consists of a `try` block and one or more `catch` clauses. The `try` block should contain and guard code that may result in the exception getting thrown. The `catch` clauses should contain code that handles the behaviour of the program after the error has occured.
+When an exception gets thrown, the runtime has the task of finding a piece of code that is responsible for handling of that exception. If no appropriate handler is found, the runtime displays the unhandled exception message in addition to stoping the execution of the program. To create a handler for an exception, C# uses the try-catch statement, which consists of a `try` block and one or more `catch` clauses. The `try` block should contain and guard code that may result in the exception getting thrown. The `catch` clauses should contain code that handles the behaviour of the program after the error has occured. It is important to note that the order of exceptions matters after the `try` block, as when multiple exceptions are listed, the first matching `catch` clause is executed. 
 
 ```csharp
 try
@@ -42,11 +42,3 @@ catch (ArgumentException)
     Console.WriteLine($"Invalid number");
 }
 ```
-
-Some of the more common exceptions include `IndexOutOfRangeException`, `ArgumentOutOfRangeException`, `NullReferenceException`, `StackOverflowException`, `ArgumentException`, `InvalidOperationException` and `DivideByZeroException`.
-
-Some of the cases when exceptions should be thrown include:
-
-- if the method cannot complete its defined functionality
-- an inappropriate call to an object is made, based on the object state
-- when an argument to a method causes an exception
