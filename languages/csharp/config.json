@@ -192,6 +192,16 @@
         "prerequisites": ["constructors", "dictionaries", "properties"]
       },
       {
+        "slug": "operator-overloading",
+        "uuid": "555cf3ae-d9b0-446f-8e2d-70a81aceab49",
+        "concepts": ["operator-overloading"],
+        "prerequisites": [
+          "equality",
+          "floating-point-numbers",
+          "method-overloading"
+        ]
+      },
+      {
         "slug": "overflow",
         "uuid": "16f760c1-29b8-4c82-a085-9b4d81002c62",
         "concepts": ["overflow"],
