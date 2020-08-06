@@ -208,18 +208,6 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "nested-types",
-        "uuid": "694cbd8d-677d-4052-960e-69386463a94b",
-        "concepts": ["nested-types"],
-        "prerequisites": [
-          "classes",
-          "enums",
-          "interfaces",
-          "properties",
-          "structs"
-        ]
-      },
-      {
         "slug": "object-initializers",
         "uuid": "a9c3a1c9-19ee-45b2-8189-57e15870a051",
         "concepts": ["object-initializers"],
