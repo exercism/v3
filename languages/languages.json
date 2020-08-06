@@ -149,6 +149,54 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/constants",
+          "slug": "constants",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
+              "name": "constants"
+            },
+            {
+              "url": null,
+              "name": "defensive-copying"
+            },
+            {
+              "url": null,
+              "name": "readonly-collections"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            },
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
+              "name": "classes"
+            },
+            {
+              "url": null,
+              "name": "dictionaries"
+            },
+            {
+              "url": null,
+              "name": "nested-types"
+            },
+            {
+              "url": null,
+              "name": "object-initializers"
+            },
+            {
+              "url": null,
+              "name": "properties"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/constructors",
           "slug": "constructors",
           "concepts": [
@@ -289,6 +337,62 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
               "name": "lists"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/expression-bodied-members",
+          "slug": "expression-bodied-members",
+          "concepts": [
+            {
+              "url": null,
+              "name": "conditionals-ternary"
+            },
+            {
+              "url": null,
+              "name": "expression-bodied-members"
+            },
+            {
+              "url": null,
+              "name": "switch-expressions"
+            },
+            {
+              "url": null,
+              "name": "throw-expressions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
+              "name": "classes"
+            },
+            {
+              "url": null,
+              "name": "conditionals-if"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constructors.md",
+              "name": "constructors"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/datetime.md",
+              "name": "datetimes"
+            },
+            {
+              "url": null,
+              "name": "exceptions"
+            },
+            {
+              "url": null,
+              "name": "properties"
+            },
+            {
+              "url": null,
+              "name": "switch-statements"
             }
           ]
         },
@@ -653,6 +757,30 @@
             {
               "url": null,
               "name": "properties"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/operator-overloading",
+          "slug": "operator-overloading",
+          "concepts": [
+            {
+              "url": null,
+              "name": "operator-overloading"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "equality"
+            },
+            {
+              "url": null,
+              "name": "floating-point-numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/method_overloading.md",
+              "name": "method-overloading"
             }
           ]
         },
@@ -2227,7 +2355,15 @@
           "concepts": [
             {
               "url": null,
-              "name": "basics"
+              "name": "packages"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/variables.md",
+              "name": "variables"
             }
           ],
           "prerequisites": []
@@ -2243,8 +2379,8 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/variables.md",
+              "name": "variables"
             }
           ]
         },
@@ -2260,7 +2396,11 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "basics"
+              "name": "packages"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
             }
           ]
         },
@@ -2325,10 +2465,6 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
               "name": "conditionals"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
             }
           ]
         },
@@ -2357,9 +2493,13 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/nil",
-          "slug": "nil",
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/zero-value",
+          "slug": "zero-value",
           "concepts": [
+            {
+              "url": null,
+              "name": "zero-value"
+            },
             {
               "url": null,
               "name": "nil"
@@ -2367,8 +2507,24 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/pointer.md",
+              "name": "pointers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
             }
           ]
         },
@@ -2387,8 +2543,8 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/variables.md",
+              "name": "variables"
             }
           ]
         },
@@ -2423,8 +2579,8 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/variables.md",
+              "name": "variables"
             }
           ]
         },
@@ -2481,10 +2637,6 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
               "name": "strings"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
             }
           ]
         }
@@ -2513,6 +2665,22 @@
     "url": "https://github.com/exercism/v3/tree/master/languages/java",
     "exercises": {
       "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/arrays",
+          "slug": "arrays",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            }
+          ]
+        },
         {
           "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/basics",
           "slug": "basics",
