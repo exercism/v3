@@ -86,6 +86,26 @@
         ]
       },
       {
+        "slug": "expression-bodied-members",
+        "uuid": "27221c37-177e-437b-b423-977e46695db9",
+        "concepts": [
+          "conditionals-ternary",
+          "expression-bodied-members",
+          "switch-expressions",
+          "throw-expressions"
+        ],
+        "prerequisites": [
+          "booleans",
+          "classes",
+          "conditionals-if",
+          "constructors",
+          "datetimes",
+          "exceptions",
+          "properties",
+          "switch-statements"
+        ]
+      },
+      {
         "slug": "flag-enums",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
         "concepts": ["bit-manipulation", "compound-assignment", "flag-enums"],
