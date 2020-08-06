@@ -44,6 +44,20 @@
         "prerequisites": ["conditionals", "numbers", "strings"]
       },
       {
+        "slug": "constants",
+        "uuid": "54126398-4339-4073-9f5d-cf71cabcb328",
+        "concepts": ["constants", "defensive-copying", "readonly-collections"],
+        "prerequisites": [
+          "arrays",
+          "basics",
+          "classes",
+          "dictionaries",
+          "nested-types",
+          "object-initializers",
+          "properties"
+        ]
+      },
+      {
         "slug": "constructors",
         "uuid": "655b5c37-c2eb-4da2-ab0a-3845de898835",
         "concepts": ["constructors"],
