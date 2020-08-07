@@ -1,5 +1,6 @@
 {
   "language": "Clojure",
+  "slug": "clojure",
   "active": true,
   "blurb": "a JVM hosted functional programming language.",
   "version": 3,

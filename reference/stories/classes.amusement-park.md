@@ -24,7 +24,7 @@ Example tasks:
 
 ## Implementations
 
-- [Ruby][implementation-ruby]
+- [Ruby: instance-variables][implementation-ruby]
 
 ## Related
 

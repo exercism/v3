@@ -1,19 +1,19 @@
 func canIBuy(vehicle: String, price: Double, monthlyBudget: Double) -> String {
   if price / 60 < monthlyBudget {
-    return "Yes! I'm getting a \(vehicle)"
+    return "Yes! I'm getting a " + vehicle
   } else if price / 60 > monthlyBudget + 10 {
-    return "Darn! No \(vehicle) for me"
+    return "Darn! No " + vehicle + " for me"
   } else {
-    return "I'll have to be frugal if I want a \(vehicle)"
+    return "I'll have to be frugal if I want a " + vehicle
   }
 }
 
-func licenceType(numberOfWheels wheels: Int) -> String {
+func licenseType(numberOfWheels wheels: Int) -> String {
   switch wheels {
   case 2, 3: return "You will need a motorcycle license for your vehicle"
-  case 4, 6: return "You will need a automobile license for your vehicle"
+  case 4, 6: return "You will need an automobile license for your vehicle"
   case 18: return "You will need a commercial trucking license for your vehicle"
-  default: return "We do not issue licences for thos types of vehicles"
+  default: return "We do not issue licenses for those types of vehicles"
   }
 }
 

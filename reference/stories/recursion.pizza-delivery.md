@@ -30,8 +30,8 @@ These are example tasks that fit the pizza delivery exercise:
 
 ## Implementations
 
-- [F#][implementation-fsharp] (reference implementation)
-- [JavaScript][implementation-javascript]
+- [F#: recursion][implementation-fsharp] (reference implementation)
+- [JavaScript: recursion][implementation-javascript]
 
 ## Related
 

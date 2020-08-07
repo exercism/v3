@@ -18,9 +18,9 @@ These are example tasks that fit the employee badges exercise:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
-- [Elixir][implementation-elixir]
-- [JavaScript][implementation-javascript]
+- [C#: nullability][implementation-csharp] (reference implementation)
+- [Elixir: nil][implementation-elixir]
+- [JavaScript: nullability][implementation-javascript]
 
 ## Related
 

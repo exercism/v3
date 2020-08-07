@@ -1,5 +1,6 @@
 {
   "language": "C#",
+  "slug": "csharp",
   "active": true,
   "blurb": "C# is a modern, object-oriented language with lots of great features, such as type-inference and async/await. The tooling is excellent, and there is extensive, well-written documentation.",
   "version": 3,
@@ -41,6 +42,20 @@
         "uuid": "e01dc85b-0731-4701-9eea-c78fb69ce543",
         "concepts": ["classes"],
         "prerequisites": ["conditionals", "numbers", "strings"]
+      },
+      {
+        "slug": "constants",
+        "uuid": "54126398-4339-4073-9f5d-cf71cabcb328",
+        "concepts": ["constants", "defensive-copying", "readonly-collections"],
+        "prerequisites": [
+          "arrays",
+          "basics",
+          "classes",
+          "dictionaries",
+          "nested-types",
+          "object-initializers",
+          "properties"
+        ]
       },
       {
         "slug": "constructors",
@@ -85,6 +100,26 @@
         ]
       },
       {
+        "slug": "expression-bodied-members",
+        "uuid": "27221c37-177e-437b-b423-977e46695db9",
+        "concepts": [
+          "conditionals-ternary",
+          "expression-bodied-members",
+          "switch-expressions",
+          "throw-expressions"
+        ],
+        "prerequisites": [
+          "booleans",
+          "classes",
+          "conditionals-if",
+          "constructors",
+          "datetimes",
+          "exceptions",
+          "properties",
+          "switch-statements"
+        ]
+      },
+      {
         "slug": "flag-enums",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
         "concepts": ["bit-manipulation", "compound-assignment", "flag-enums"],
@@ -107,6 +142,18 @@
           "constructors",
           "strings"
         ]
+      },
+      {
+        "slug": "integral-numbers",
+        "uuid": "86bbc073-1726-423d-b156-c394554a4a8c",
+        "concepts": ["casting", "integral-numbers"],
+        "prerequisites": ["arrays", "numbers"]
+      },
+      {
+        "slug": "interfaces",
+        "uuid": "15ac87b1-2976-4a43-a41d-1b6f6628bd9a",
+        "concepts": ["interfaces", "ordering"],
+        "prerequisites": ["classes", "lists", "properties"]
       },
       {
         "slug": "lists",
@@ -177,6 +224,16 @@
         "uuid": "a9c3a1c9-19ee-45b2-8189-57e15870a051",
         "concepts": ["object-initializers"],
         "prerequisites": ["constructors", "dictionaries", "properties"]
+      },
+      {
+        "slug": "operator-overloading",
+        "uuid": "555cf3ae-d9b0-446f-8e2d-70a81aceab49",
+        "concepts": ["operator-overloading"],
+        "prerequisites": [
+          "equality",
+          "floating-point-numbers",
+          "method-overloading"
+        ]
       },
       {
         "slug": "overflow",
@@ -270,7 +327,7 @@
           "inheritance",
           "numbers",
           "sets",
-          "signed-integers"
+          "integral-numbers"
         ]
       },
       {
@@ -306,7 +363,7 @@
           "strings",
           "conditionals",
           "arithmetic-overflow",
-          "signed-integers"
+          "integral-numbers"
         ]
       }
     ],
