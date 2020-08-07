@@ -6,7 +6,6 @@ final class ConditionalsTests: XCTestCase {
   let runAll = Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"]) ?? false
 
   func testCanBuy() {
-    print("*** runAll:", runAll)
     XCTAssertEqual(
       canIBuy(vehicle: "1974 Ford Pinto", price: 516.32, monthlyBudget: 100.00),
       "Yes! I'm getting a 1974 Ford Pinto")
@@ -22,33 +21,33 @@ final class ConditionalsTests: XCTestCase {
   func testBeFrugal() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     XCTAssertEqual(
-      canIBuy(vehicle: "2020 Indian FTR 1200", price: 12, 500, monthlyBudget: 200),
+      canIBuy(vehicle: "2020 Indian FTR 1200", price: 12_500, monthlyBudget: 200),
       "I'll have to be frugal if I want a 2020 Indian FTR 1200")
   }
 
   func testTwoWheels() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     XCTAssertEqual(
-      licenceType(numberOfWheels: 2), "You will need a motorcycle license for your vehicle")
+      licenseType(numberOfWheels: 2), "You will need a motorcycle license for your vehicle")
   }
 
   func testSixWheels() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     XCTAssertEqual(
-      licenceType(numberOfWheels: 6), "You will need an automobile license for your vehicle")
+      licenseType(numberOfWheels: 6), "You will need an automobile license for your vehicle")
   }
 
   func testEighteenWheels() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     XCTAssertEqual(
-      licenceType(numberOfWheels: 18),
+      licenseType(numberOfWheels: 18),
       "You will need a commercial trucking license for your vehicle")
   }
 
   func testZeroWheels() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     XCTAssertEqual(
-      licenceType(numberOfWheels: 0), "We do not issue licences for those types of vehicles")
+      licenseType(numberOfWheels: 0), "We do not issue licenses for those types of vehicles")
   }
 
   func testRegistrationAtNineYears() throws {

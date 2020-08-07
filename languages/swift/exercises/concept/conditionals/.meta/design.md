@@ -24,21 +24,6 @@ The goal of this exercise is to teach the student the basics of [conditionals in
 
 ## Prerequisites
 
-This Concept Exercise's prerequisites Concepts are:
-
 - `basics`: integers and strings will be compared, arithmetic operations will be performed on integers, variables will be introduced and updated.
-
-## Representer
-
-This exercise does not require any specific representation logic to be added to the representer. <!--[representer][representer].-->
-
-## Analyzer
-
-This exercise does not require any specific logic to be added to the analyzer. <!--[analyzer][analyzer].-->
-
-<!--
-[analyzer]: https://github.com/exercism/csharp-analyzer
-[representer]: https://github.com/exercism/csharp-representer
--->
 
 [conditionals]: https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html#ID127
