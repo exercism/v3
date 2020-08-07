@@ -35,4 +35,12 @@ The goal of this exercise is to teach the student the basics of the Swift [Strin
 
 - `basics`: know what a value is; know how to define a constant; know how to define a variable; know how to define a function
 
+## Analyzer
+
+This exercise could benefit from having an analyzer that can comment on:
+
+- Verify that concatenation is used to construct the result in task 3.
+- Verify that string interpolation is used to construct the result in task 4.
+- Verify that for-in loops are used in tasks 5 and 6.
+
 [strings]: https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html
