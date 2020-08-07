@@ -25,7 +25,6 @@ The Concepts this exercise unlocks are:
 
 ## Prerequisites
 
-- `basics`: know what a value is; know how to define a constant; know how to define a variable; know how to define a function
 - `optionals`: Know of the existence of optional types; know about the nil-related operators (`!`, `?`, `??`); know what the consequences of unwrapping a `nil` value are; know how to compare a value to `nil`; know the existence and use of optional binding
 - `arrays`: know how to access elements in an array; iterating over the elements of an array.
 

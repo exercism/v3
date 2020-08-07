@@ -55,10 +55,10 @@
         "prerequisites": ["numbers", "conditionals"]
       },
       {
-        "slug": "strings",
+        "slug": "string-components",
         "uuid": "082d7aeb-ee25-4217-bd6f-82532a65797a",
-        "concepts": ["strings"],
-        "prerequisites": ["arrays"]
+        "concepts": ["string-componentss"],
+        "prerequisites": ["arrays", "optionals"]
       }
     ],
     "practice": []
