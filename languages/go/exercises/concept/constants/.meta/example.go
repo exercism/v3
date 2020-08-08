@@ -1,16 +1,13 @@
 package _meta
 
-/*
-Which is best if we want an unchanging value with the most type flexibility?
+const FixedInterestRate = 0.05
 
-a) const FixedInterestRate = 0.05
-b) var FixedInterestRate = 0.05
-c) const FixedInterestRate float32 = 0.05
-*/
+func GetFixedInterestRate() float32 {
+	return FixedInterestRate
+}
 
-/**/
+const DaysPerYear int = 360
 
-func Answer1() string {
-	// return a, b, or c
-	return "a"
+func GetDaysPerYear() int {
+	return DaysPerYear
 }
