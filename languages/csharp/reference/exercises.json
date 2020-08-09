@@ -1430,10 +1430,10 @@
           "name": "casting",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "Understand casting of integral numeric types.",
             "know what explicit and implicit casts are",
             "know how to do an explicit cast",
-            "know how to use \u0060is\u0060 and \u0060as\u0060 to convert between types."
+            "know how to use \u0060is\u0060 and \u0060as\u0060 to convert between types.",
+            "Understand casting of integral numeric types."
           ],
           "original-concepts": [
             {
