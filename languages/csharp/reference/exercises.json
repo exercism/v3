@@ -4,25 +4,20 @@
     "",
     "All the information originates here EXCEPT the learning-objectives array which is a part of each concept.",
     "Do NOT edit the learning-objectives array (or these lines of documentation)",
-    "and do NOT attempt to changethe schema in any way."
+    "and do NOT attempt to change the schema in any way."
   ],
   "exercises": [
     {
       "slug": "classes",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/classes/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "classes",
           "track-neutral-concept": "reference/concepts/classes.md",
           "learning-objectives": [
-            "know what classes are",
-            "know what encapsulation is",
-            "know what fields are",
-            "know how to create an object",
-            "know how to update state through methods",
-            "know about the \u0060void\u0060 type."
+            "know what classes are; know what encapsulation is; know what fields are; know how to create an object; know how to update state through methods; know about the \u0060void\u0060 type."
           ],
           "original-concepts": [
             {
@@ -103,19 +98,13 @@
       "slug": "inheritance",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/inheritance/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "inheritance",
           "track-neutral-concept": "reference/concepts/inheritance.md",
           "learning-objectives": [
-            "know what inheritance is",
-            "know how to inherit from a class",
-            "know that all types inherit from \u0060object\u0060",
-            "know what abstract and sealed classes are",
-            "know what abstract and virtual methods are",
-            "know how to override methods",
-            "know about the \u0060protected\u0060 visibility modifier."
+            "know what inheritance is; know how to inherit from a class; know that all types inherit from \u0060object\u0060; know what abstract and sealed classes are; know what abstract and virtual methods are; know how to override methods; know about the \u0060protected\u0060 visibility modifier."
           ],
           "original-concepts": [
             {
@@ -141,25 +130,13 @@
       "slug": "basics",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/basics/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "basics",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what a variable is",
-            "know how to define a variable",
-            "know how to update a variable",
-            "know how to use type inference for variables",
-            "know how to define a method",
-            "know how to return a value from a method",
-            "know how to call a method",
-            "know that methods must be defined in classes",
-            "know about the \u0060public\u0060 access modifier",
-            "know about the \u0060static\u0060 modifier",
-            "know how to define an integer",
-            "know how to use mathematical operators on integers",
-            "know how to define single- and multiline comments."
+            "know what a variable is; know how to define a variable; know how to update a variable; know how to use type inference for variables; know how to define a method; know how to return a value from a method; know how to call a method; know that methods must be defined in classes; know about the \u0060public\u0060 access modifier; know about the \u0060static\u0060 modifier; know how to define an integer; know how to use mathematical operators on integers; know how to define single- and multiline comments."
           ],
           "original-concepts": [
             {
@@ -251,17 +228,13 @@
       "slug": "constructors",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/constructors/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "constructors",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what constructors are",
-            "know how to define parameterless constructors",
-            "know how to define parameterized constructors",
-            "know how to use constructor overloading",
-            "know how to define private constructors."
+            "know what constructors are; know how to define parameterless constructors; know how to define parameterized constructors; know how to use constructor overloading; know how to define private constructors."
           ],
           "original-concepts": [
             {
@@ -276,15 +249,13 @@
       "slug": "method-overloading",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/method-overloading/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "method-overloading",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what method overloading is",
-            "know how to define overloaded methods",
-            "know the limitations of method overloading"
+            "know what method overloading is; know how to define overloaded methods; know the limitations of method overloading"
           ],
           "original-concepts": [
             {
@@ -299,18 +270,13 @@
       "slug": "properties",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/properties/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "properties",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what properties are and how they relate to fields and methods",
-            "know what backing-field properties are",
-            "know what auto-implemented properties are",
-            "know what calculated properties are",
-            "know how to use property accessors to customize visibility",
-            "know how to define the different types of properties."
+            "know what properties are and how they relate to fields and methods; know what backing-field properties are; know what auto-implemented properties are; know what calculated properties are; know how to use property accessors to customize visibility; know how to define the different types of properties."
           ],
           "original-concepts": [
             {
@@ -325,7 +291,7 @@
       "slug": "null",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/nullability/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "null",
@@ -388,17 +354,13 @@
       "slug": "numbers",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "numbers",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know of the existence of the two most commonly used number types, \u0060int\u0060 and \u0060double\u0060",
-            "understand that the former represents whole numbers, and the latter floating-point numbers",
-            "know of basic operators such as multiplication, comparison and equality",
-            "know how to convert from one numeric type to another",
-            "know what implicit and explicit conversions are."
+            "know of the existence of the two most commonly used number types, \u0060int\u0060 and \u0060double\u0060; understand that the former represents whole numbers, and the latter floating-point numbers; know of basic operators such as multiplication, comparison and equality; know how to convert from one numeric type to another; know what implicit and explicit conversions are."
           ],
           "original-concepts": [
             {
@@ -446,11 +408,7 @@
           "name": "numbers",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know of the existence of the two most commonly used number types, \u0060int\u0060 and \u0060double\u0060",
-            "understand that the former represents whole numbers, and the latter floating-point numbers",
-            "know of basic operators such as multiplication, comparison and equality",
-            "know how to convert from one numeric type to another",
-            "know what implicit and explicit conversions are."
+            "know of the existence of the two most commonly used number types, \u0060int\u0060 and \u0060double\u0060; understand that the former represents whole numbers, and the latter floating-point numbers; know of basic operators such as multiplication, comparison and equality; know how to convert from one numeric type to another; know what implicit and explicit conversions are."
           ],
           "original-concepts": [
             {
@@ -465,15 +423,13 @@
       "slug": "booleans",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/booleans/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "booleans",
           "track-neutral-concept": "reference/types/boolean.md",
           "learning-objectives": [
-            "know of the existence of the \u0060bool\u0060 type and its two values",
-            "know about boolean operators and how to build logical expressions with them",
-            "know of the boolean operator precedence rules."
+            "know of the existence of the \u0060bool\u0060 type and its two values; know about boolean operators and how to build logical expressions with them; know of the boolean operator precedence rules."
           ],
           "original-concepts": [
             {
@@ -486,9 +442,7 @@
           "name": "booleans",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know of the existence of the \u0060bool\u0060 type and its two values",
-            "know about boolean operators and how to build logical expressions with them",
-            "know of the boolean operator precedence rules."
+            "know of the existence of the \u0060bool\u0060 type and its two values; know about boolean operators and how to build logical expressions with them; know of the boolean operator precedence rules."
           ],
           "original-concepts": [
             {
@@ -503,17 +457,13 @@
       "slug": "chars",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/chars/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "chars",
           "track-neutral-concept": "reference/types/char.md",
           "learning-objectives": [
-            "know of the existence of the \u0060char\u0060 type",
-            "know that a \u0060char\u0060 represents",
-            "know how to define a \u0060char\u0060",
-            "know how to access a \u0060char\u0060 in a string by index",
-            "know of some basic \u0060char\u0060 methods (like converting to uppercase)."
+            "know of the existence of the \u0060char\u0060 type; know that a \u0060char\u0060 represents; know how to define a \u0060char\u0060; know how to access a \u0060char\u0060 in a string by index; know of some basic \u0060char\u0060 methods (like converting to uppercase)."
           ],
           "original-concepts": [
             {
@@ -528,18 +478,13 @@
       "slug": "arrays",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/arrays/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "arrays",
           "track-neutral-concept": "reference/types/array.md",
           "learning-objectives": [
-            "know of the existence of the \u0060Array\u0060 type",
-            "know how to define an array",
-            "know how to access elements in an array by index",
-            "know how to update an element in an array by index",
-            "know how to iterate over elements in an array",
-            "know of some basic functions (like finding the index of an element in an array)."
+            "know of the existence of the \u0060Array\u0060 type; know how to define an array; know how to access elements in an array by index; know how to update an element in an array by index; know how to iterate over elements in an array; know of some basic functions (like finding the index of an element in an array)."
           ],
           "original-concepts": [
             {
@@ -564,7 +509,9 @@
         {
           "name": "foreach-loops",
           "track-neutral-concept": "reference/concepts/enumeration.md",
-          "learning-objectives": ["know how to iterate over a collection."],
+          "learning-objectives": [
+            "know how to iterate over a collection."
+          ],
           "original-concepts": [
             {
               "name": "  - [Enumeration: foreach loop][enumeration]",
@@ -578,18 +525,13 @@
       "slug": "dictionaries",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/dictionaries/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "dictionaries",
           "track-neutral-concept": "reference/types/map.md",
           "learning-objectives": [
-            "know of the existence of the \u0060Dictionary\u003CTKey, TElement\u003E\u0060 type",
-            "know how to define a dictionary",
-            "know how to add and updated elements in a dictionary",
-            "know how to access elements in a dictionary by key",
-            "know how to iterate over elements in a dictionary",
-            "know some basic dictionary functions."
+            "know of the existence of the \u0060Dictionary\u003CTKey, TElement\u003E\u0060 type; know how to define a dictionary; know how to add and updated elements in a dictionary; know how to access elements in a dictionary by key; know how to iterate over elements in a dictionary; know some basic dictionary functions."
           ],
           "original-concepts": [
             {
@@ -615,7 +557,7 @@
       "slug": "dates",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/datetimes/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "dates",
@@ -634,17 +576,13 @@
       "slug": "enums",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/enums/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "enums",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know of the existence of the \u0060enum\u0060 keyword",
-            "know how to define enum members",
-            "know how to assign values to enum members",
-            "know how to get an enum\u0027s numeric value",
-            "know how to convert an \u0060enum\u0060 to a \u0060string\u0060."
+            "know of the existence of the \u0060enum\u0060 keyword; know how to define enum members; know how to assign values to enum members; know how to get an enum\u0027s numeric value; know how to convert an \u0060enum\u0060 to a \u0060string\u0060."
           ],
           "original-concepts": [
             {
@@ -659,7 +597,7 @@
       "slug": "floating-point-numbers",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "floating-point-numbers",
@@ -691,15 +629,13 @@
       "slug": "strings",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/strings/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "strings",
           "track-neutral-concept": "reference/types/string.md",
           "learning-objectives": [
-            "know of the existence of the \u0060string\u0060 type",
-            "know of some basic functions (like looking up a character at a position, or slicing the string)",
-            "know how to do basic string formatting."
+            "know of the existence of the \u0060string\u0060 type; know of some basic functions (like looking up a character at a position, or slicing the string); know how to do basic string formatting."
           ],
           "original-concepts": [
             {
@@ -714,15 +650,13 @@
       "slug": "flag-enums",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/flag-enums/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "flag-enums",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know how to define a \u0022flags\u0022 enum",
-            "know how to add, remove or check for flags",
-            "know how to change the underlying type of an enum."
+            "know how to define a \u0022flags\u0022 enum; know how to add, remove or check for flags; know how to change the underlying type of an enum."
           ],
           "original-concepts": [
             {
@@ -737,7 +671,7 @@
       "slug": "user-defined-exceptions",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/user-defined-exceptions/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "user-defined-exceptions",
@@ -758,7 +692,7 @@
       "slug": "user-defined-exceptions2",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/user-defined-exceptions/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "user-defined-exceptions2",
@@ -777,17 +711,13 @@
       "slug": "equality",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/equality/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "equality",
           "track-neutral-concept": "reference/concepts/sameness.md",
           "learning-objectives": [
-            "know how to check for equality and inequality",
-            "know how reference equality differs from structural equality",
-            "know that equality works by default for value and reference types",
-            "know how to customize equality checks using \u0060Equals\u0060 and \u0060GetHashCode()\u0060",
-            "know of the \u0060IEquatable\u003CT\u003E\u0060 and \u0060IEqualityComparer\u003CT\u003E\u0060 interfaces and how to implement them."
+            "know how to check for equality and inequality; know how reference equality differs from structural equality; know that equality works by default for value and reference types; know how to customize equality checks using \u0060Equals\u0060 and \u0060GetHashCode()\u0060; know of the \u0060IEquatable\u003CT\u003E\u0060 and \u0060IEqualityComparer\u003CT\u003E\u0060 interfaces and how to implement them."
           ],
           "original-concepts": [
             {
@@ -826,18 +756,13 @@
       "slug": "tuples",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/tuples/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "tuples",
           "track-neutral-concept": "reference/types/tuple.md",
           "learning-objectives": [
-            "know what a tuple is",
-            "know how to define a tuple",
-            "know how to name tuple fields",
-            "know that tuples have structural equality",
-            "know how to deconstruct tuples",
-            "know that tuples are mutable."
+            "know what a tuple is; know how to define a tuple; know how to name tuple fields; know that tuples have structural equality; know how to deconstruct tuples; know that tuples are mutable."
           ],
           "original-concepts": [
             {
@@ -852,16 +777,13 @@
       "slug": "randomness",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/randomness/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "randomness",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know how to implement randomness with \u0060System.Random\u0060 in C#",
-            "know that no seed is required",
-            "know that both integers and real numbers can be generated",
-            "know that once generated random numbers can be easily used for many purposes (including non-numeric ones)"
+            "know how to implement randomness with \u0060System.Random\u0060 in C#; know that no seed is required; know that both integers and real numbers can be generated; know that once generated random numbers can be easily used for many purposes (including non-numeric ones)"
           ],
           "original-concepts": [
             {
@@ -876,14 +798,13 @@
       "slug": "parameters",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/parameters/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "parameters",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know the difference between value and reference type parameters",
-            "know how to pass value types by reference using the \u0060ref\u0060 and \u0060out\u0060 modifiers."
+            "know the difference between value and reference type parameters; know how to pass value types by reference using the \u0060ref\u0060 and \u0060out\u0060 modifiers."
           ],
           "original-concepts": [
             {
@@ -895,7 +816,9 @@
         {
           "name": "named-arguments",
           "track-neutral-concept": "",
-          "learning-objectives": ["know how to use named arguments"],
+          "learning-objectives": [
+            "know how to use named arguments"
+          ],
           "original-concepts": [
             {
               "name": "    - Named arguments",
@@ -931,7 +854,7 @@
       "slug": "conditionals-switch",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/switch-statements/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "conditionals-switch",
@@ -950,7 +873,7 @@
       "slug": "object-initializers",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/object-initializers/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "object-initializers",
@@ -971,7 +894,7 @@
       "slug": "resource-cleanup",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/resource-cleanup/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "resource-cleanup",
@@ -992,7 +915,7 @@
       "slug": "time",
       "level": "introductory",
       "document-type": "design",
-      "document-link": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/time/.meta/design.md",
+      "document-link": "",
       "concepts": [
         {
           "name": "time",
@@ -1151,13 +1074,7 @@
           "name": "lists",
           "track-neutral-concept": "reference/types/list.md",
           "learning-objectives": [
-            "know of the existence of the \u0060List\u003CT\u003E\u0060 type",
-            "know how a list is different from an array",
-            "know how to define a list",
-            "know how to add and remove elements from a list",
-            "know how to access elements in a list by their index",
-            "know how to iterate over elements in a list",
-            "know some basic list functions (like finding the index of an element in a list)."
+            "know of the existence of the \u0060List\u003CT\u003E\u0060 type; know how a list is different from an array; know how to define a list; know how to add and remove elements from a list; know how to access elements in a list by their index; know how to iterate over elements in a list; know some basic list functions (like finding the index of an element in a list)."
           ],
           "original-concepts": [
             {
@@ -1189,10 +1106,7 @@
           "name": "structs",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what structs are",
-            "know how to define a \u0060struct\u0060",
-            "know how to add members to structs",
-            "know the differences between structs and classes."
+            "know what structs are; know how to define a \u0060struct\u0060; know how to add members to structs; know the differences between structs and classes."
           ],
           "original-concepts": [
             {
@@ -1232,8 +1146,7 @@
           "name": "namespaces",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what xx namespaces are",
-            "know how to import namespaces."
+            "know what namespaces are; know how to import namespaces."
           ],
           "original-concepts": [
             {
@@ -1265,13 +1178,7 @@
           "name": "string-formatting",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know how to use the \u0060ToString()\u0060 method to convert any object to a \u0060string\u0060",
-            "know how to use string interpolation on values of any type",
-            "know how to use default format strings to convert to standard output formats",
-            "know how to use custom format strings to convert to custom output formats",
-            "know that \u0060string.Format\u0060 underlies string interpolation",
-            "know of the \u0060StringBuilder\u0060 type and when to use it",
-            "know that string interpolation can interpolate any expression."
+            "know how to use the \u0060ToString()\u0060 method to convert any object to a \u0060string\u0060; know how to use string interpolation on values of any type; know how to use default format strings to convert to standard output formats; know how to use custom format strings to convert to custom output formats; know that \u0060string.Format\u0060 underlies string interpolation; know of the \u0060StringBuilder\u0060 type and when to use it; know that string interpolation can interpolate any expression."
           ],
           "original-concepts": [
             {
@@ -1316,7 +1223,9 @@
         {
           "name": "verbatim-strings",
           "track-neutral-concept": "",
-          "learning-objectives": ["the syntax of verbatim strings."],
+          "learning-objectives": [
+            "the syntax of verbatim strings."
+          ],
           "original-concepts": [
             {
               "name": "verbatim strings",
@@ -1412,9 +1321,7 @@
           "name": "casting",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what explicit and implicit casts are",
-            "know how to do an explicit cast",
-            "know how to use \u0060is\u0060 and \u0060as\u0060 to convert between types."
+            "know what explicit and implicit casts are; know how to do an explicit cast; know how to use \u0060is\u0060 and \u0060as\u0060 to convert between types."
           ],
           "original-concepts": [
             {
