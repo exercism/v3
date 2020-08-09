@@ -5,8 +5,8 @@
 The C# concept exercises are based on concepts. The list below contains the concepts that have been identified by the track maintainers for the C# language.
 
 _(Please do not modify this document. it is automatically generated. All text except the concept learning objectives is sourced
-                            from [exercises.json](./exercises.json) which should be updated manually when a concept is added or an issue or new design is created
-                            and learning objectives are scraped from the __concept definition__ text in each exercise's design.md document)_.
+from [exercises.json](./exercises.json) which should be updated manually when a concept is added or an issue or new design is created
+and learning objectives are scraped from the **concept definition** text in each exercise's design.md document)_.
 
 ### Introductory Concepts
 
@@ -230,7 +230,6 @@ _(Please do not modify this document. it is automatically generated. All text ex
 [issue-signed-integers]: https://github.com/exercism/v3/issues/780
 [issue-string-formatting]: https://github.com/exercism/v3/issues/962
 [issue-structs]: https://github.com/exercism/v3/issues/1017
-
 [design-arrays]: ../exercises/concept/arrays/.meta/design.md
 [design-basics]: ../exercises/concept/basics/.meta/design.md
 [design-booleans]: ../exercises/concept/booleans/.meta/design.md
@@ -258,7 +257,6 @@ _(Please do not modify this document. it is automatically generated. All text ex
 [design-tuples]: ../exercises/concept/tuples/.meta/design.md
 [design-user-defined-exceptions]: ../exercises/concept/user-defined-exceptions/.meta/design.md
 [design-user-defined-exceptions2]: ../exercises/concept/user-defined-exceptions2/.meta/design.md
-
 [exercise-arrays]: ../exercises/concept/arrays
 [exercise-basics]: ../exercises/concept/basics
 [exercise-booleans]: ../exercises/concept/booleans
@@ -286,7 +284,6 @@ _(Please do not modify this document. it is automatically generated. All text ex
 [exercise-tuples]: ../exercises/concept/tuples
 [exercise-user-defined-exceptions]: ../exercises/concept/user-defined-exceptions
 [exercise-user-defined-exceptions2]: ../exercises/concept/user-defined-exceptions2
-
 [tnc-arrays]: ./../../../reference/types/array.md
 [tnc-booleans]: ./../../../reference/types/boolean.md
 [tnc-chars]: ./../../../reference/types/char.md
