@@ -11,19 +11,20 @@ GetFixedInterestRate()
 // Output: 0.05
 ```
 
-## 2. Check if an appointment has already passed
+## 2. Represent the number of days in a year
 
-Implement the `HasPassed` function that takes an appointment date and checks if the appointment was somewhere in the past:
+Create the `DaysPerYear` constant with type `int` to hold the value 360, then implement the `GetDaysPerYear` function to return it:
 
 ```go
-HasPassed("July 25, 2019 13:45:00")
-// Output: true
+GetDaysPerYear()
+// Output: 360
 ```
 
-## 3. Check if appointment is in the afternoon
+## 3. Represent the months of the year
 
-Implement the `IsAfternoonAppointment` function that takes an appointment date and checks if the appointment is in the afternoon (>= 12:00 and < 18:00):
+In a block, use the Go enumerator to create twelve untyped numeric constants to hold the values 1 through 12 for the months of the year. Name them `Jan`, `Feb`, `Mar`, etc., then implement the `GetMonths` function to return them in a slice:
 
 ```go
-IsAfternoonAppointment("Thursday, July 25, 2019 13:45:00:00")
-// Output: true
+GetMonths()
+// Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+```

@@ -18,5 +18,5 @@ func GetDaysPerYear() int {
 
 // GetMonths returns a slice of the 12 months
 func GetMonths() []int {
-	panic("Please use a block and the 'iota' identifier in the outer scope to create twelve consecutive constants, one for each month of the year. January shall have a value of 1. Name them 'Jan', 'Feb', 'Mar', etc., and then implement the GetMonths function")
+	panic("Please use a block and the Go enumerator in the outer scope to create twelve consecutive constants, one for each month of the year. January should have a value of 1. Name them 'Jan', 'Feb', 'Mar', etc., and then implement the GetMonths function")
 }
