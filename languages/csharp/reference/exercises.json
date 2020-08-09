@@ -564,9 +564,7 @@
         {
           "name": "foreach-loops",
           "track-neutral-concept": "reference/concepts/enumeration.md",
-          "learning-objectives": [
-            "know how to iterate over a collection."
-          ],
+          "learning-objectives": ["know how to iterate over a collection."],
           "original-concepts": [
             {
               "name": "  - [Enumeration: foreach loop][enumeration]",
@@ -897,9 +895,7 @@
         {
           "name": "named-arguments",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know how to use named arguments"
-          ],
+          "learning-objectives": ["know how to use named arguments"],
           "original-concepts": [
             {
               "name": "    - Named arguments",
@@ -1338,9 +1334,7 @@
         {
           "name": "verbatim-strings",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "the syntax of verbatim strings."
-          ],
+          "learning-objectives": ["the syntax of verbatim strings."],
           "original-concepts": [
             {
               "name": "verbatim strings",
