@@ -1,6 +1,6 @@
 In Go, a `struct` is a sequence of named elements called _fields_, each field having a name and type. The name of a field must be unique within the struct. `Structs` can be compared with the _class_ in the Object Oriented Programming paradigm.
 
-You create a new struct by using the `struct` keyword and explicty define the name and type of the fields as shown un the example below. An `empty struct` is a struct with all fields set to their own zero values.
+You create a new struct by using the `struct` keyword and explicty define the name and type of the fields as shown in the example below. An `empty struct` is a struct with all fields set to their own zero values.
 
 ```go
 type StructName struct{
@@ -24,7 +24,7 @@ var dog Animal
 dog.name = "Rex"
 dog.age = 10
 
-// or you can assign the values to its fields individually
+// or you can create a struct with field values
 dog := Animal{
     name: "Bronson",
     age: 7,
@@ -33,7 +33,7 @@ dog := Animal{
 
 Fields that don't have a initial value assigned, will have their zero value.
 
-To dive more deep into this type, you can check these resources: [Go by example: Structs], [A Tour of Go] or [Structures in Go (structs)]
+To dive deeper into this type, you can check these resources: [Go by example: Structs], [A Tour of Go] or [Structures in Go (structs)]
 
 [go by example: structs]: https://gobyexample.com/structs
 [structures in go (structs)]: https://medium.com/rungo/structures-in-go-76377cc106a2
