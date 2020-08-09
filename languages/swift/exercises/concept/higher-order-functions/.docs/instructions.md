@@ -33,6 +33,6 @@ let secretFunction = protectSecret("Steal the world's supply of french fries!", 
 secretFunction("Open sesame")
 // => "Sorry. No hidden secrets here."
 
-secretFunction(""5up3r53cr37")
+secretFunction("5up3r53cr37")
 // => "Steal the world's supply of french fries!"
 ```
