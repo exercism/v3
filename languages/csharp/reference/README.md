@@ -22,13 +22,12 @@ and learning objectives are scraped from the **concept definition** text in each
 - collections _(lists)_ - [Issue][issue-lists]
 - comments [_(basics)_][exercise-basics] - [Design][design-basics]
 - conditionals [_(numbers)_][exercise-numbers] - [Design][design-numbers]
-- conditionals-switch [_(conditionals-switch)_][exercise-conditionals-switch] - [Design][design-conditionals-switch]
 - conditionals-ternary _(conditionals-ternary)_ - [Issue][issue-conditionals-ternary], [Background][tnc-conditionals-ternary]
 - conditionals-while [_(floating-point-numbers)_][exercise-floating-point-numbers] - [Design][design-floating-point-numbers]
 - constants _(constants)_ - [Issue][issue-constants]
 - constructors [_(constructors)_][exercise-constructors] - [Design][design-constructors]
 - cross-platform [_(time)_][exercise-time] - [Design][design-time]
-- dates [_(dates)_][exercise-dates] - [Design][design-dates]
+- datetimes [_(datetimes)_][exercise-datetimes] - [Design][design-datetimes]
 - default-value [_(classes)_][exercise-classes] - [Design][design-classes]
 - dictionaries [_(dictionaries)_][exercise-dictionaries] - [Design][design-dictionaries], [Background][tnc-dictionaries]
 - encapsulation [_(classes)_][exercise-classes] - [Design][design-classes], [Background][tnc-encapsulation]
@@ -57,11 +56,11 @@ and learning objectives are scraped from the **concept definition** text in each
 - named-arguments [_(parameters)_][exercise-parameters] - [Design][design-parameters]
 - namespaces _(namespaces)_ - [Issue][issue-namespaces]
 - nested-types _(nested-types)_ - [Issue][issue-nested-types]
-- null [_(null)_][exercise-null] - [Design][design-null]
-- null-coalescing [_(null)_][exercise-null] - [Design][design-null]
-- null-conditional [_(null)_][exercise-null] - [Design][design-null]
-- null-forgiving [_(null)_][exercise-null] - [Design][design-null]
-- nullable-values [_(null)_][exercise-null] - [Design][design-null]
+- null-coalescing [_(nullability)_][exercise-nullability] - [Design][design-nullability]
+- null-conditional [_(nullability)_][exercise-nullability] - [Design][design-nullability]
+- null-forgiving [_(nullability)_][exercise-nullability] - [Design][design-nullability]
+- nullability [_(nullability)_][exercise-nullability] - [Design][design-nullability]
+- nullable-values [_(nullability)_][exercise-nullability] - [Design][design-nullability]
 - numbers [_(numbers)_][exercise-numbers] - [Design][design-numbers]
 - numbers [_(numbers)_][exercise-numbers] - [Design][design-numbers]
 - object-initializers [_(object-initializers)_][exercise-object-initializers] - [Design][design-object-initializers]
@@ -86,12 +85,12 @@ and learning objectives are scraped from the **concept definition** text in each
 - string-formatting _(string-formatting)_ - [Issue][issue-string-formatting]
 - strings [_(strings)_][exercise-strings] - [Design][design-strings], [Background][tnc-strings]
 - structs _(structs)_ - [Issue][issue-structs]
+- switch-statements [_(switch-statements)_][exercise-switch-statements] - [Design][design-switch-statements]
 - time [_(time)_][exercise-time] - [Design][design-time]
 - tuples [_(tuples)_][exercise-tuples] - [Design][design-tuples], [Background][tnc-tuples]
 - type-inference [_(basics)_][exercise-basics] - [Design][design-basics], [Background][tnc-type-inference]
 - unsigned-integers _(signed-integers)_ - [Issue][issue-signed-integers]
 - user-defined-exceptions [_(user-defined-exceptions)_][exercise-user-defined-exceptions] - [Design][design-user-defined-exceptions]
-- user-defined-exceptions2 [_(user-defined-exceptions2)_][exercise-user-defined-exceptions2] - [Design][design-user-defined-exceptions2]
 - variables [_(basics)_][exercise-basics] - [Design][design-basics], [Background][tnc-variables]
 - verbatim-strings _(string-formatting)_ - [Issue][issue-string-formatting]
 - visibility [_(classes)_][exercise-classes] - [Design][design-classes]
@@ -144,7 +143,7 @@ and learning objectives are scraped from the **concept definition** text in each
 - immutable-collections _(immutable-collections)_
 - lazy<T> _(lazy<T>)_
 - local-functions _(local-functions)_ - [Background][tnc-local-functions]
-- memory-allocation _(memory-allocation)_ - [Issue][issue-memory-allocation], [Background][tnc-memory-allocation]
+- memory-allocation _(memory-allocation)_ - [Issue][issue-memory-allocation]
 - multi-dimensional-array _(multi-dimensional-array)_
 - pointsers _(pointsers)_ - [Issue][issue-pointsers]
 - queues _(queues)_ - [Background][tnc-queues]
@@ -195,6 +194,7 @@ and learning objectives are scraped from the **concept definition** text in each
 | `method-overloading`        | <ul><li>know what method overloading is<li>know how to define overloaded methods<li>know the limitations of method overloading                                                                                                                                                                                                                                                                                                                                                                                                        |
 | `named-arguments`           | <ul><li>know how to use named arguments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `namespaces`                | <ul><li>know what namespaces are<li>know how to import namespaces.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `nullability`               | <ul><li>know of the existence of the `null` literal<li>know what a `NullReferenceException` is and when it is thrown<li>know how to compare a value to `null`<li>know the difference between value and reference types regarding nullability<li>know how to define nullable reference and value types<li>know about the null-related operators<li>know about basic null checking by the compiler.                                                                                                                                     |
 | `numbers`                   | <ul><li>know of the existence of the two most commonly used number types, `int` and `double`<li>understand that the former represents whole numbers, and the latter floating-point numbers<li>know of basic operators such as multiplication, comparison and equality<li>know how to convert from one numeric type to another<li>know what implicit and explicit conversions are.                                                                                                                                                     |
 | `numbers`                   | <ul><li>know of the existence of the two most commonly used number types, `int` and `double`<li>understand that the former represents whole numbers, and the latter floating-point numbers<li>know of basic operators such as multiplication, comparison and equality<li>know how to convert from one numeric type to another<li>know what implicit and explicit conversions are.                                                                                                                                                     |
 | `object-initializers`       | <ul><li>Know how to initialize objects using object initialization syntax. Know how to initialize lists and dictionaries. Understand the relative advantages of constructors and initializers.                                                                                                                                                                                                                                                                                                                                        |
@@ -207,6 +207,7 @@ and learning objectives are scraped from the **concept definition** text in each
 | `string-formatting`         | <ul><li>know how to use the `ToString()` method to convert any object to a `string`<li>know how to use string interpolation on values of any type<li>know how to use default format strings to convert to standard output formats<li>know how to use custom format strings to convert to custom output formats<li>know that `string.Format` underlies string interpolation<li>know of the `StringBuilder` type and when to use it<li>know that string interpolation can interpolate any expression.                                   |
 | `strings`                   | <ul><li>know of the existence of the `string` type<li>know of some basic functions (like looking up a character at a position, or slicing the string)<li>know how to do basic string formatting.                                                                                                                                                                                                                                                                                                                                      |
 | `structs`                   | <ul><li>know what structs are<li>know how to define a `struct`<li>know how to add members to structs<li>know the differences between structs and classes.                                                                                                                                                                                                                                                                                                                                                                             |
+| `switch-statements`         | <ul><li>Know how to use switch statements                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | `time`                      | <ul><li>Know how to use `DateTime` when time-of-day is important. Understand the difference between local time and Universal Coordinated Time). Understand the role of `CultureInfo` in parsing times. Understand arithmetic with `DateTime`s.                                                                                                                                                                                                                                                                                        |
 | `tuples`                    | <ul><li>know what a tuple is<li>know how to define a tuple<li>know how to name tuple fields<li>know that tuples have structural equality<li>know how to deconstruct tuples<li>know that tuples are mutable.                                                                                                                                                                                                                                                                                                                           |
 | `user-defined-exceptions`   | <ul><li>know how to define a user-defined exception.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -240,9 +241,8 @@ and learning objectives are scraped from the **concept definition** text in each
 [design-booleans]: ../exercises/concept/booleans/.meta/design.md
 [design-chars]: ../exercises/concept/chars/.meta/design.md
 [design-classes]: ../exercises/concept/classes/.meta/design.md
-[design-conditionals-switch]: ../exercises/concept/conditionals-switch/.meta/design.md
 [design-constructors]: ../exercises/concept/constructors/.meta/design.md
-[design-dates]: ../exercises/concept/dates/.meta/design.md
+[design-datetimes]: ../exercises/concept/datetimes/.meta/design.md
 [design-dictionaries]: ../exercises/concept/dictionaries/.meta/design.md
 [design-enums]: ../exercises/concept/enums/.meta/design.md
 [design-equality]: ../exercises/concept/equality/.meta/design.md
@@ -250,7 +250,7 @@ and learning objectives are scraped from the **concept definition** text in each
 [design-floating-point-numbers]: ../exercises/concept/floating-point-numbers/.meta/design.md
 [design-inheritance]: ../exercises/concept/inheritance/.meta/design.md
 [design-method-overloading]: ../exercises/concept/method-overloading/.meta/design.md
-[design-null]: ../exercises/concept/null/.meta/design.md
+[design-nullability]: ../exercises/concept/nullability/.meta/design.md
 [design-numbers]: ../exercises/concept/numbers/.meta/design.md
 [design-object-initializers]: ../exercises/concept/object-initializers/.meta/design.md
 [design-parameters]: ../exercises/concept/parameters/.meta/design.md
@@ -258,18 +258,17 @@ and learning objectives are scraped from the **concept definition** text in each
 [design-randomness]: ../exercises/concept/randomness/.meta/design.md
 [design-resource-cleanup]: ../exercises/concept/resource-cleanup/.meta/design.md
 [design-strings]: ../exercises/concept/strings/.meta/design.md
+[design-switch-statements]: ../exercises/concept/switch-statements/.meta/design.md
 [design-time]: ../exercises/concept/time/.meta/design.md
 [design-tuples]: ../exercises/concept/tuples/.meta/design.md
 [design-user-defined-exceptions]: ../exercises/concept/user-defined-exceptions/.meta/design.md
-[design-user-defined-exceptions2]: ../exercises/concept/user-defined-exceptions2/.meta/design.md
 [exercise-arrays]: ../exercises/concept/arrays
 [exercise-basics]: ../exercises/concept/basics
 [exercise-booleans]: ../exercises/concept/booleans
 [exercise-chars]: ../exercises/concept/chars
 [exercise-classes]: ../exercises/concept/classes
-[exercise-conditionals-switch]: ../exercises/concept/conditionals-switch
 [exercise-constructors]: ../exercises/concept/constructors
-[exercise-dates]: ../exercises/concept/dates
+[exercise-datetimes]: ../exercises/concept/datetimes
 [exercise-dictionaries]: ../exercises/concept/dictionaries
 [exercise-enums]: ../exercises/concept/enums
 [exercise-equality]: ../exercises/concept/equality
@@ -277,7 +276,7 @@ and learning objectives are scraped from the **concept definition** text in each
 [exercise-floating-point-numbers]: ../exercises/concept/floating-point-numbers
 [exercise-inheritance]: ../exercises/concept/inheritance
 [exercise-method-overloading]: ../exercises/concept/method-overloading
-[exercise-null]: ../exercises/concept/null
+[exercise-nullability]: ../exercises/concept/nullability
 [exercise-numbers]: ../exercises/concept/numbers
 [exercise-object-initializers]: ../exercises/concept/object-initializers
 [exercise-parameters]: ../exercises/concept/parameters
@@ -285,10 +284,10 @@ and learning objectives are scraped from the **concept definition** text in each
 [exercise-randomness]: ../exercises/concept/randomness
 [exercise-resource-cleanup]: ../exercises/concept/resource-cleanup
 [exercise-strings]: ../exercises/concept/strings
+[exercise-switch-statements]: ../exercises/concept/switch-statements
 [exercise-time]: ../exercises/concept/time
 [exercise-tuples]: ../exercises/concept/tuples
 [exercise-user-defined-exceptions]: ../exercises/concept/user-defined-exceptions
-[exercise-user-defined-exceptions2]: ../exercises/concept/user-defined-exceptions2
 [tnc-arrays]: ./../../../reference/types/array.md
 [tnc-booleans]: ./../../../reference/types/boolean.md
 [tnc-chars]: ./../../../reference/types/char.md
@@ -309,7 +308,6 @@ and learning objectives are scraped from the **concept definition** text in each
 [tnc-linq]: ./../../../reference/concepts/pipelines.md
 [tnc-lists]: ./../../../reference/types/list.md
 [tnc-local-functions]: ./../../../reference/concepts/nested_functions.md
-[tnc-memory-allocation]: ./../../../memory_allocation
 [tnc-mutation]: ./../../../reference/concepts/mutation.md
 [tnc-objects]: ./../../../reference/concepts/objects.md
 [tnc-optional-arguments]: ./../../../reference/concepts/default_arguments.md
