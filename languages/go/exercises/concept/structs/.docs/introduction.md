@@ -10,3 +10,7 @@ type StructName struct{
 ```
 
 Struct fields are accessed using a `.` notation.
+
+```go
+someStruct.someField = "someValue"
+```
