@@ -16,4 +16,4 @@ This concept exercise should convey a basic understanding of how to work with hi
 
 ## Prerequisites
 
-- `functions`
+- `functions`: Know function definition syntax; know about parameter labels and names

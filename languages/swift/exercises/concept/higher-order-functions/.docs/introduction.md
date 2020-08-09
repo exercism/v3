@@ -19,15 +19,15 @@ func repeater(_ phrase: String, times: Int) -> String {
 }
 // repeater: (String, Int) -> String
 
-func printShoppingList(item: String, quantity: Int) {
-  print("You need to buy \(quantity) \(item).")
+func printString(line: String) {
+  print(line)
 }
-// printShoppingList: (String, Int) -> ()
+// printString: (String) -> ()
 ```
 
-Notice how the types of the first two functions are the same, `(String, Int) -> String`, even though the two functions work veery differently. They both take a `String` and an `Int` as input and return a `String`. And, as one can see from the third function's type, even though the function doesn't appear to return anything, it actually returns `()`, the only value of type `Void`. Note that `()` and `Void` are interchangeable as type names, so the type of `printShoppingList` could also be written as `String, Int) -> Void`.
+Notice how the types of the first two functions are the same, `(String, Int) -> String`, even though the two functions work veery differently. They both take a `String` and an `Int` as input and return a `String`. And, as one can see from the third function's type, even though the function body doesn't appear to return anything, it actually implicitly returns `()`, the only value of type `Void`. Note that `()` and `Void` are interchangeable as type names, so the type of `printString` could also be written as `(String) -> Void`.
 
-These types can be used in the same manner as any other type in Swift, for example, they can be used in the declaration of variables or constants. And since functions are values in Swift, already existing functions can be assigned to these constants/variables:
+These function types can be used in the same manner as any other type in Swift, for example, they can be used in the declaration of variables or constants. And since functions are values in Swift, already existing functions can be assigned to these constants/variables:
 
 ```swift
 var stringAndIntToString: (String, Int) -> String
@@ -45,7 +45,7 @@ As with other variables/constants, the value you assign to it must be of the cor
 
 ```swift
 stringAndIntToString = printShoppingList
-// Error: Cannot assign value of type '(String, Int) -> ()' to type '(String, Int) -> String'
+// Error: Cannot assign value of type '(String) -> ()' to type '(String, Int) -> String'
 ```
 
 ### Function types as parameter types
@@ -53,22 +53,28 @@ stringAndIntToString = printShoppingList
 As function types can be used anywhere other types can be used, it follows that they can be used as parameter types and passed into other functions and called from within those functions.
 
 ```swift
-func distribute(function f: (String, Int) -> String, strings: [String], times i: Int) -> [String] {
+func distribute(over strings: [String],
+                andInt i: Int,
+                function f: (String, Int) -> String
+               ) -> [String] {
   var result = [String]()
   for string in strings {
     result.append(f(string, i))
   }
   return result
 }
-// distribute: ((String, Int) -> String, [String], Int) -> [String]
+// distribute: ([String], Int, (String, Int) -> String) -> [String]
 
-distribute(function: shoppingList, strings: ["carrots", "eggs", "popsicles"], times: 3)
+distribute(over: ["carrots", "eggs", "popsicles"], andInt: 3, function: shoppingList)
 // => ["You need to buy 3 carrots.", "You need to buy 3 eggs.", "You need to buy 3 popsicles."]
 
-distribute(function: repeater, strings: ["carrots", "eggs", "popsicles"], times: 3)
+distribute(over: ["carrots", "eggs", "popsicles"], andInt: 3, function: repeater)
 // => ["carrotscarrotscarrots", "eggseggseggs", "popsiclespopsiclespopsicles"]
 
-func apply(functions fs: [(String, Int) -> String], string: String, i: Int) -> [String] {
+func apply(functions fs: [(String, Int) -> String],
+           to string: String,
+           andInt i: Iny
+          ) -> [String] {
   var result = [String]()
   for f in fs {
     result.append(f(string, i))
@@ -79,7 +85,7 @@ func apply(functions fs: [(String, Int) -> String], string: String, i: Int) -> [
 // apply: ([(String, Int) -> String], String, Int) -> [String]
 
 
-apply(functions: [shoppingList, repeater], string: "carrots", i: 3)
+apply(functions: [shoppingList, repeater], to: "carrots", andInt: 3)
 // => ["You need to buy 3 carrots.", "carrotscarrotscarrots"]
 ```
 
@@ -111,4 +117,4 @@ subtract20(5)
 
 ### Higher-order functions
 
-Functions that take functions as parameters and/or return functions are known as higher order functions. Swift has many higher-order functions in its various libraries. 
+Functions that take functions as parameters and/or return functions are known as higher order functions. Swift has many higher-order functions in its various libraries.
