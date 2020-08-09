@@ -77,11 +77,6 @@
     },
     {
       "Severity": "error",
-      "Message": "Failed to find concept switch-statements from switch-statements in exercises.json file",
-      "Source": "merge"
-    },
-    {
-      "Severity": "error",
       "Message": "Failed to find concept throw-expressions from expression-bodied-members in exercises.json file",
       "Source": "merge"
     },
@@ -103,11 +98,6 @@
     {
       "Severity": "error",
       "Message": "Failed to find concept overflows from overflow in exercises.json file",
-      "Source": "merge"
-    },
-    {
-      "Severity": "error",
-      "Message": "Failed to find concept nullability from nullability in exercises.json file",
       "Source": "merge"
     }
   ]
