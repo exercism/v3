@@ -16,7 +16,22 @@ func GetDaysPerYear() int {
 
 // Jan-Dec have values of 1-12
 
-// GetMonths returns a slice of the 12 months
-func GetMonths() []int {
-	panic("Please use a block and the Go enumerator in the outer scope to create twelve consecutive constants, one for each month of the year. January should have a value of 1. Name them 'Jan', 'Feb', 'Mar', etc., and then implement the GetMonths function")
+// GetJanuary returns the value for Jan, 1
+func GetJanuary() int {
+	panic("Please use a block and the Go enumerator in the outer scope to create twelve consecutive untyped numeric constants, one for each month of the year. January should have a value of 1. Name them 'Jan', 'Feb', 'Mar', etc., and then implement the GetJanuary function")
+}
+
+// GetOctober returns the value for Oct, 10
+func GetOctober() int {
+	panic("Using the same block as before, implement the GetOctober function")
+}
+
+// AccNo type for a string
+type AccNo string
+
+// AccountNo has a value of XF348IJ
+
+// GetAccountNumber returns the AccountNo constant
+func GetAccountNumber() AccNo {
+	panic("Please create the AccountNo untyped string constant in the outer scope and then implement the GetAccountNumber function")
 }

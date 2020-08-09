@@ -32,7 +32,23 @@ const (
 	Dec
 )
 
-// GetMonths returns a slice of the months
-func GetMonths() []int {
-	return []int{Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec}
+// GetJanuary returns the value for Jan, 1
+func GetJanuary() int {
+	return Jan
+}
+
+// GetOctober returns the value for Oct, 10
+func GetOctober() int {
+	return Oct
+}
+
+// AccNo type for a string
+type AccNo string
+
+// AccountNo has a value of XF348IJ
+const AccountNo = "XF348IJ"
+
+// GetAccountNumber returns the AccountNo constant
+func GetAccountNumber() AccNo {
+	return AccountNo
 }

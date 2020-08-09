@@ -1,6 +1,6 @@
 In this exercise you will establish some constants to be used in the operation of a bank. 
 
-You have three tasks:
+You have five tasks:
 
 ## 1. Represent the fixed interest rate on a loan
 
@@ -22,9 +22,27 @@ GetDaysPerYear()
 
 ## 3. Represent the months of the year
 
-In a block, use the Go enumerator to create twelve untyped numeric constants to hold the values 1 through 12 for the months of the year. Name them `Jan`, `Feb`, `Mar`, etc., then implement the `GetMonths` function to return them in a slice:
+In a block, use the Go enumerator to create twelve untyped numeric constants to hold the values 1 through 12 for the months of the year. Name them `Jan`, `Feb`, `Mar`, etc., then implement the `GetJanuary` function to return the value for January:
 
 ```go
-GetMonths()
-// Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+GetJanuary()
+// Output: 1
+```
+
+## 4. Get the value for October
+
+Using the same block as before, implement the `GetOctober` function to return the value for October:
+
+```go
+GetOctober()
+// Output: 10
+```
+
+## 5. Represent an account number
+
+Create the `AccountNo` untyped string constant to hold the value XF348IJ, then implement the `GetAccountNumber` function to return it:
+
+```go
+GetAccountNumber()
+// Output: "XF348IJ"
 ```
