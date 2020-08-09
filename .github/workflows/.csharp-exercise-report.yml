@@ -1,0 +1,30 @@
+name: Update csharp exercise report
+
+on:
+  push:
+    branches:
+      - 'csharp/exercise-report'
+      # also branch change may be required to bin/csharp-exercise-report/update.sh
+    paths:
+      - 'languages/**/exercises.json'
+      - 'languages/*/exercises/**/design.md'
+
+jobs:
+  update-csharp-exercises:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'Checkout code'
+        uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
+
+      - name: 'Install .NET core'
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1.201'
+
+      - name: Update csharp exercise report
+        run: .github/bin/csharp-exercise-report/update.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
