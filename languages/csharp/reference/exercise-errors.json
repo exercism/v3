@@ -1,0 +1,114 @@
+{
+  "Errors": [
+    {
+      "Severity": "error",
+      "Message": "nested-types: invalid format: - \u0060nested-types\u0060",
+      "Source": "design"
+    },
+    {
+      "Severity": "error",
+      "Message": "regular-expressions: invalid format: - \u0060regular-expressions\u0060 as they are handled in C# and .NET.",
+      "Source": "design"
+    },
+    {
+      "Severity": "error",
+      "Message": "resource-lifetime: invalid format: - \u0060resource-lifetime\u0060 as it is handled in C#.",
+      "Source": "design"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept StringBuilder from chars design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept accessibility from namespaces design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept readonly-collections from constants design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept defensive-copying from constants design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept pattern-matching-constants from enums design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept operator-overloading from operator-overloading design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept integral-numbers from integral-numbers design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept while-loops from floating-point-numbers design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept exception-filtering from user-defined-exceptions design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept bit-manipulation from flag-enums design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept generic-types from lists design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept datetime from datetimes design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept switch-statements from switch-statements design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept throw-expressions from expression-bodied-members design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept switch-expressions from expression-bodied-members design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept optional-parameters from method-overloading design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept timezone from time design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept overflows from overflow design.md in exercises.json file",
+      "Source": "merge"
+    },
+    {
+      "Severity": "error",
+      "Message": "Failed to find concept nullability from nullability design.md in exercises.json file",
+      "Source": "merge"
+    }
+  ]
+}

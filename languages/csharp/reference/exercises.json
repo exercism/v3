@@ -4,7 +4,7 @@
     "",
     "All the information originates here EXCEPT the learning-objectives array which is a part of each concept.",
     "Do NOT edit the learning-objectives array (or these lines of documentation)",
-    "and do NOT attempt to changethe schema in any way."
+    "and do NOT attempt to change the schema in any way."
   ],
   "exercises": [
     {
