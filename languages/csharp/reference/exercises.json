@@ -17,7 +17,12 @@
           "name": "classes",
           "track-neutral-concept": "reference/concepts/classes.md",
           "learning-objectives": [
-            "know what classes are; know what encapsulation is; know what fields are; know how to create an object; know how to update state through methods; know about the \u0060void\u0060 type."
+            "know what classes are",
+            "know what encapsulation is",
+            "know what fields are",
+            "know how to create an object",
+            "know how to update state through methods",
+            "know about the \u0060void\u0060 type."
           ],
           "original-concepts": [
             {
@@ -104,7 +109,13 @@
           "name": "inheritance",
           "track-neutral-concept": "reference/concepts/inheritance.md",
           "learning-objectives": [
-            "know what inheritance is; know how to inherit from a class; know that all types inherit from \u0060object\u0060; know what abstract and sealed classes are; know what abstract and virtual methods are; know how to override methods; know about the \u0060protected\u0060 visibility modifier."
+            "know what inheritance is",
+            "know how to inherit from a class",
+            "know that all types inherit from \u0060object\u0060",
+            "know what abstract and sealed classes are",
+            "know what abstract and virtual methods are",
+            "know how to override methods",
+            "know about the \u0060protected\u0060 visibility modifier."
           ],
           "original-concepts": [
             {
@@ -136,7 +147,19 @@
           "name": "basics",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what a variable is; know how to define a variable; know how to update a variable; know how to use type inference for variables; know how to define a method; know how to return a value from a method; know how to call a method; know that methods must be defined in classes; know about the \u0060public\u0060 access modifier; know about the \u0060static\u0060 modifier; know how to define an integer; know how to use mathematical operators on integers; know how to define single- and multiline comments."
+            "know what a variable is",
+            "know how to define a variable",
+            "know how to update a variable",
+            "know how to use type inference for variables",
+            "know how to define a method",
+            "know how to return a value from a method",
+            "know how to call a method",
+            "know that methods must be defined in classes",
+            "know about the \u0060public\u0060 access modifier",
+            "know about the \u0060static\u0060 modifier",
+            "know how to define an integer",
+            "know how to use mathematical operators on integers",
+            "know how to define single- and multiline comments."
           ],
           "original-concepts": [
             {
@@ -234,7 +257,11 @@
           "name": "constructors",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what constructors are; know how to define parameterless constructors; know how to define parameterized constructors; know how to use constructor overloading; know how to define private constructors."
+            "know what constructors are",
+            "know how to define parameterless constructors",
+            "know how to define parameterized constructors",
+            "know how to use constructor overloading",
+            "know how to define private constructors."
           ],
           "original-concepts": [
             {
@@ -255,7 +282,9 @@
           "name": "method-overloading",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what method overloading is; know how to define overloaded methods; know the limitations of method overloading"
+            "know what method overloading is",
+            "know how to define overloaded methods",
+            "know the limitations of method overloading"
           ],
           "original-concepts": [
             {
@@ -276,7 +305,12 @@
           "name": "properties",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what properties are and how they relate to fields and methods; know what backing-field properties are; know what auto-implemented properties are; know what calculated properties are; know how to use property accessors to customize visibility; know how to define the different types of properties."
+            "know what properties are and how they relate to fields and methods",
+            "know what backing-field properties are",
+            "know what auto-implemented properties are",
+            "know what calculated properties are",
+            "know how to use property accessors to customize visibility",
+            "know how to define the different types of properties."
           ],
           "original-concepts": [
             {
@@ -360,7 +394,11 @@
           "name": "numbers",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know of the existence of the two most commonly used number types, \u0060int\u0060 and \u0060double\u0060; understand that the former represents whole numbers, and the latter floating-point numbers; know of basic operators such as multiplication, comparison and equality; know how to convert from one numeric type to another; know what implicit and explicit conversions are."
+            "know of the existence of the two most commonly used number types, \u0060int\u0060 and \u0060double\u0060",
+            "understand that the former represents whole numbers, and the latter floating-point numbers",
+            "know of basic operators such as multiplication, comparison and equality",
+            "know how to convert from one numeric type to another",
+            "know what implicit and explicit conversions are."
           ],
           "original-concepts": [
             {
@@ -408,7 +446,11 @@
           "name": "numbers",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know of the existence of the two most commonly used number types, \u0060int\u0060 and \u0060double\u0060; understand that the former represents whole numbers, and the latter floating-point numbers; know of basic operators such as multiplication, comparison and equality; know how to convert from one numeric type to another; know what implicit and explicit conversions are."
+            "know of the existence of the two most commonly used number types, \u0060int\u0060 and \u0060double\u0060",
+            "understand that the former represents whole numbers, and the latter floating-point numbers",
+            "know of basic operators such as multiplication, comparison and equality",
+            "know how to convert from one numeric type to another",
+            "know what implicit and explicit conversions are."
           ],
           "original-concepts": [
             {
@@ -429,7 +471,9 @@
           "name": "booleans",
           "track-neutral-concept": "reference/types/boolean.md",
           "learning-objectives": [
-            "know of the existence of the \u0060bool\u0060 type and its two values; know about boolean operators and how to build logical expressions with them; know of the boolean operator precedence rules."
+            "know of the existence of the \u0060bool\u0060 type and its two values",
+            "know about boolean operators and how to build logical expressions with them",
+            "know of the boolean operator precedence rules."
           ],
           "original-concepts": [
             {
@@ -442,7 +486,9 @@
           "name": "booleans",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know of the existence of the \u0060bool\u0060 type and its two values; know about boolean operators and how to build logical expressions with them; know of the boolean operator precedence rules."
+            "know of the existence of the \u0060bool\u0060 type and its two values",
+            "know about boolean operators and how to build logical expressions with them",
+            "know of the boolean operator precedence rules."
           ],
           "original-concepts": [
             {
@@ -463,7 +509,11 @@
           "name": "chars",
           "track-neutral-concept": "reference/types/char.md",
           "learning-objectives": [
-            "know of the existence of the \u0060char\u0060 type; know that a \u0060char\u0060 represents; know how to define a \u0060char\u0060; know how to access a \u0060char\u0060 in a string by index; know of some basic \u0060char\u0060 methods (like converting to uppercase)."
+            "know of the existence of the \u0060char\u0060 type",
+            "know that a \u0060char\u0060 represents",
+            "know how to define a \u0060char\u0060",
+            "know how to access a \u0060char\u0060 in a string by index",
+            "know of some basic \u0060char\u0060 methods (like converting to uppercase)."
           ],
           "original-concepts": [
             {
@@ -484,7 +534,12 @@
           "name": "arrays",
           "track-neutral-concept": "reference/types/array.md",
           "learning-objectives": [
-            "know of the existence of the \u0060Array\u0060 type; know how to define an array; know how to access elements in an array by index; know how to update an element in an array by index; know how to iterate over elements in an array; know of some basic functions (like finding the index of an element in an array)."
+            "know xxx of the existence of the \u0060Array\u0060 type",
+            "know how to define an array",
+            "know how to access elements in an array by index",
+            "know how to update an element in an array by index",
+            "know how to iterate over elements in an array",
+            "know of some basic functions (like finding the index of an element in an array)."
           ],
           "original-concepts": [
             {
@@ -531,7 +586,12 @@
           "name": "dictionaries",
           "track-neutral-concept": "reference/types/map.md",
           "learning-objectives": [
-            "know of the existence of the \u0060Dictionary\u003CTKey, TElement\u003E\u0060 type; know how to define a dictionary; know how to add and updated elements in a dictionary; know how to access elements in a dictionary by key; know how to iterate over elements in a dictionary; know some basic dictionary functions."
+            "know of the existence of the \u0060Dictionary\u003CTKey, TElement\u003E\u0060 type",
+            "know how to define a dictionary",
+            "know how to add and updated elements in a dictionary",
+            "know how to access elements in a dictionary by key",
+            "know how to iterate over elements in a dictionary",
+            "know some basic dictionary functions."
           ],
           "original-concepts": [
             {
@@ -582,7 +642,11 @@
           "name": "enums",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know of the existence of the \u0060enum\u0060 keyword; know how to define enum members; know how to assign values to enum members; know how to get an enum\u0027s numeric value; know how to convert an \u0060enum\u0060 to a \u0060string\u0060."
+            "know of the existence of the \u0060enum\u0060 keyword",
+            "know how to define enum members",
+            "know how to assign values to enum members",
+            "know how to get an enum\u0027s numeric value",
+            "know how to convert an \u0060enum\u0060 to a \u0060string\u0060."
           ],
           "original-concepts": [
             {
@@ -635,7 +699,9 @@
           "name": "strings",
           "track-neutral-concept": "reference/types/string.md",
           "learning-objectives": [
-            "know of the existence of the \u0060string\u0060 type; know of some basic functions (like looking up a character at a position, or slicing the string); know how to do basic string formatting."
+            "know of the existence of the \u0060string\u0060 type",
+            "know of some basic functions (like looking up a character at a position, or slicing the string)",
+            "know how to do basic string formatting."
           ],
           "original-concepts": [
             {
@@ -656,7 +722,9 @@
           "name": "flag-enums",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know how to define a \u0022flags\u0022 enum; know how to add, remove or check for flags; know how to change the underlying type of an enum."
+            "know how to define a \u0022flags\u0022 enum",
+            "know how to add, remove or check for flags",
+            "know how to change the underlying type of an enum."
           ],
           "original-concepts": [
             {
@@ -717,7 +785,11 @@
           "name": "equality",
           "track-neutral-concept": "reference/concepts/sameness.md",
           "learning-objectives": [
-            "know how to check for equality and inequality; know how reference equality differs from structural equality; know that equality works by default for value and reference types; know how to customize equality checks using \u0060Equals\u0060 and \u0060GetHashCode()\u0060; know of the \u0060IEquatable\u003CT\u003E\u0060 and \u0060IEqualityComparer\u003CT\u003E\u0060 interfaces and how to implement them."
+            "know how to check for equality and inequality",
+            "know how reference equality differs from structural equality",
+            "know that equality works by default for value and reference types",
+            "know how to customize equality checks using \u0060Equals\u0060 and \u0060GetHashCode()\u0060",
+            "know of the \u0060IEquatable\u003CT\u003E\u0060 and \u0060IEqualityComparer\u003CT\u003E\u0060 interfaces and how to implement them."
           ],
           "original-concepts": [
             {
@@ -762,7 +834,12 @@
           "name": "tuples",
           "track-neutral-concept": "reference/types/tuple.md",
           "learning-objectives": [
-            "know what a tuple is; know how to define a tuple; know how to name tuple fields; know that tuples have structural equality; know how to deconstruct tuples; know that tuples are mutable."
+            "know what a tuple is",
+            "know how to define a tuple",
+            "know how to name tuple fields",
+            "know that tuples have structural equality",
+            "know how to deconstruct tuples",
+            "know that tuples are mutable."
           ],
           "original-concepts": [
             {
@@ -783,7 +860,10 @@
           "name": "randomness",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know how to implement randomness with \u0060System.Random\u0060 in C#; know that no seed is required; know that both integers and real numbers can be generated; know that once generated random numbers can be easily used for many purposes (including non-numeric ones)"
+            "know how to implement randomness with \u0060System.Random\u0060 in C#",
+            "know that no seed is required",
+            "know that both integers and real numbers can be generated",
+            "know that once generated random numbers can be easily used for many purposes (including non-numeric ones)"
           ],
           "original-concepts": [
             {
@@ -804,7 +884,8 @@
           "name": "parameters",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know the difference between value and reference type parameters; know how to pass value types by reference using the \u0060ref\u0060 and \u0060out\u0060 modifiers."
+            "know the difference between value and reference type parameters",
+            "know how to pass value types by reference using the \u0060ref\u0060 and \u0060out\u0060 modifiers."
           ],
           "original-concepts": [
             {
@@ -955,7 +1036,11 @@
           "name": "interfaces",
           "track-neutral-concept": "reference/concepts/interfaces.md",
           "learning-objectives": [
-            "know what interfaces are; know how to use interfaces; know how to define an interface; know how to implement an interface; know how to explicitly implement an interface."
+            "know what interfaces are",
+            "know how to use interfaces",
+            "know how to define an interface",
+            "know how to implement an interface",
+            "know how to explicitly implement an interface."
           ],
           "original-concepts": [
             {
@@ -1016,7 +1101,10 @@
         {
           "name": "constants",
           "track-neutral-concept": "",
-          "learning-objectives": [],
+          "learning-objectives": [
+            "know how to define \u0060const\u0060 values",
+            "know how to define \u0060readonly\u0060 modifier know when to use \u0060const\u0060 or \u0060readonly\u0060."
+          ],
           "original-concepts": [
             {
               "name": "- Constants/readonly",
@@ -1035,7 +1123,9 @@
         {
           "name": "conditionals-ternary",
           "track-neutral-concept": "reference/concepts/conditionals.md",
-          "learning-objectives": [],
+          "learning-objectives": [
+            "know how and when to use the ternary operator."
+          ],
           "original-concepts": [
             {
               "name": "  - [Conditionals: ternary][conditionals]",
@@ -1054,7 +1144,13 @@
         {
           "name": "exceptions",
           "track-neutral-concept": "",
-          "learning-objectives": [],
+          "learning-objectives": [
+            "know what exceptions are",
+            "know when an exception should be thrown",
+            "know how to throw (and rethrow) an exception",
+            "know how to catch an exception",
+            "know the most important built-in exceptions (\u0060ArgumentException\u0060, \u0060InvalidOperationException\u0060)."
+          ],
           "original-concepts": [
             {
               "name": "- Exceptions",
@@ -1074,7 +1170,13 @@
           "name": "lists",
           "track-neutral-concept": "reference/types/list.md",
           "learning-objectives": [
-            "know of the existence of the \u0060List\u003CT\u003E\u0060 type; know how a list is different from an array; know how to define a list; know how to add and remove elements from a list; know how to access elements in a list by their index; know how to iterate over elements in a list; know some basic list functions (like finding the index of an element in a list)."
+            "know of the existence of the \u0060List\u003CT\u003E\u0060 type",
+            "know how a list is different from an array",
+            "know how to define a list",
+            "know how to add and remove elements from a list",
+            "know how to access elements in a list by their index",
+            "know how to iterate over elements in a list",
+            "know some basic list functions (like finding the index of an element in a list)."
           ],
           "original-concepts": [
             {
@@ -1106,7 +1208,10 @@
           "name": "structs",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what structs are; know how to define a \u0060struct\u0060; know how to add members to structs; know the differences between structs and classes."
+            "know what structs are",
+            "know how to define a \u0060struct\u0060",
+            "know how to add members to structs",
+            "know the differences between structs and classes."
           ],
           "original-concepts": [
             {
@@ -1126,7 +1231,10 @@
         {
           "name": "expression-bodied-members",
           "track-neutral-concept": "",
-          "learning-objectives": [],
+          "learning-objectives": [
+            "know the difference between statements and expressions",
+            "know how to define expression bodied members."
+          ],
           "original-concepts": [
             {
               "name": "- Expression-bodied members",
@@ -1146,7 +1254,8 @@
           "name": "namespaces",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what namespaces are; know how to import namespaces."
+            "know what namespaces are",
+            "know how to import namespaces."
           ],
           "original-concepts": [
             {
@@ -1178,7 +1287,13 @@
           "name": "string-formatting",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know how to use the \u0060ToString()\u0060 method to convert any object to a \u0060string\u0060; know how to use string interpolation on values of any type; know how to use default format strings to convert to standard output formats; know how to use custom format strings to convert to custom output formats; know that \u0060string.Format\u0060 underlies string interpolation; know of the \u0060StringBuilder\u0060 type and when to use it; know that string interpolation can interpolate any expression."
+            "know how to use the \u0060ToString()\u0060 method to convert any object to a \u0060string\u0060",
+            "know how to use string interpolation on values of any type",
+            "know how to use default format strings to convert to standard output formats",
+            "know how to use custom format strings to convert to custom output formats",
+            "know that \u0060string.Format\u0060 underlies string interpolation",
+            "know of the \u0060StringBuilder\u0060 type and when to use it",
+            "know that string interpolation can interpolate any expression."
           ],
           "original-concepts": [
             {
@@ -1321,7 +1436,10 @@
           "name": "casting",
           "track-neutral-concept": "",
           "learning-objectives": [
-            "know what explicit and implicit casts are; know how to do an explicit cast; know how to use \u0060is\u0060 and \u0060as\u0060 to convert between types."
+            "Understand casting of integral numeric types.",
+            "know what explicit and implicit casts are",
+            "know how to do an explicit cast",
+            "know how to use \u0060is\u0060 and \u0060as\u0060 to convert between types."
           ],
           "original-concepts": [
             {
@@ -2401,7 +2519,9 @@
         {
           "name": "ordering",
           "track-neutral-concept": "",
-          "learning-objectives": [],
+          "learning-objectives": [
+            "know how to implement the \u0060IComparable\u003CT\u003E\u0060 interface and what its effect is on the behaviour of collections."
+          ],
           "original-concepts": [
             {
               "name": "  - Ordering",

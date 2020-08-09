@@ -61,7 +61,7 @@ namespace ExerciseReport
                 .ToHashSet();
             
             List<Error> errors = new List<Error>();
-            foreach ((string DocId, string ConceptName) conceptDetails in learningObjectives.ConceptsInclDocId)
+            foreach ((string DocId, string ConceptName) conceptDetails in learningObjectives.ConceptsInclDesignDocId)
             {
                 if (!exerciseMap.Contains(conceptDetails.ConceptName))
                 {
@@ -86,7 +86,7 @@ namespace ExerciseReport
             LearningObjectives learningObjectives)
         {
             var concepts = exerciseObjectTree.Exercises.SelectMany(ex => ex.Concepts);
-            foreach (Concept concept in concepts)
+            foreach (var concept in concepts)
             {
                 var objectives = learningObjectives.GetObjectivesForConcept(concept.Name);
                 if (objectives != null)
