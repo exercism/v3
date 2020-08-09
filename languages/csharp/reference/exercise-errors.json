@@ -2,137 +2,467 @@
   "Errors": [
     {
       "Severity": "error",
-      "Message": "document-link: present for classes. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for classes\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for inheritance. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for inheritance\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for basics. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for basics\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for constructors. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for constructors\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for method-overloading. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for method-overloading\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for properties. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for properties\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for null. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for null\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for numbers. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for numbers\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for booleans. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for booleans\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for chars. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for chars\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for arrays. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for arrays\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for dictionaries. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for dictionaries\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for dates. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for dates\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for enums. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for enums\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for floating-point-numbers. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for floating-point-numbers\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for strings. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for strings\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for flag-enums. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for flag-enums\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for user-defined-exceptions. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for user-defined-exceptions\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for user-defined-exceptions2. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for user-defined-exceptions2\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for equality. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for equality\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for tuples. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for tuples\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for randomness. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for randomness\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for parameters. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for parameters\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for conditionals-switch. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for conditionals-switch\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for object-initializers. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for object-initializers\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for resource-cleanup. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for resource-cleanup\n",
       "Source": "exercise"
     },
     {
       "Severity": "error",
-      "Message": "document-link: present for time. This will be ignored when generating the report\n",
+      "Message": "document-type: missing for time\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for interfaces\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for signed-integers\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for constants\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for conditionals-ternary\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for exceptions\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for lists\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for structs\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for expression-bodied-members\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for namespaces\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for string-formatting\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for regular-expressions\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for resource-lifetime\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for overflow\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for nested-types\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for casting\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for operator-overload\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for delegates\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for attributes-advanced\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for reflection\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for events\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for streams\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for indexers\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for recursion\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for pattern-matching-types\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for pattern-matching-tuples\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for tasks\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for async\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for thread-safety\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for generics-advanced\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for covariance\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for contravariance\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for locks\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for serialization\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for extension-methods\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for statics\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for lambdas\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for higherl-order-functions\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for linq\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for anonymous-types\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for enumerables\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for linq-advanced\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for linq-query-syntax\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for linq-select-many\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for yield\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for immutable-collections\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for by-ref\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for memory-allocation\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for queues\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for ranges\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for time-zones\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for resource-pooling\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for dynamic\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for local-functions\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for boxing\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for slicing\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for unsafe-code\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for lazy\u003CT\u003E\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for pointsers\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for multi-dimensional-array\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for immutability\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for stacks\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for destructors\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for aysnc-iterators\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for ref-local\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for dispose-pattern\n",
+      "Source": "exercise"
+    },
+    {
+      "Severity": "error",
+      "Message": "document-type: missing for unallocated-concepts\n",
       "Source": "exercise"
     },
     {
