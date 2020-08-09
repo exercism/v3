@@ -85,7 +85,7 @@ namespace ExerciseReport
         {
             StringBuilder sb = new StringBuilder();
             var issueRefs = exerciseObjectTree.Exercises
-                .Where(ex => ex.DocumentType == DocumentType.Issue)
+                .Where(ex => ex.CompletionStatus == CompletionStatus.NewExerciseIssueRaised)
                 .OrderBy(ex => ex.Slug)
                 .Select(ex => $"[issue-{ex.Slug}]: {ex.DocumentLink}");
  
@@ -96,7 +96,7 @@ namespace ExerciseReport
             }
 
             var designRefs = exerciseObjectTree.Exercises
-                .Where(ex => ex.DocumentType == DocumentType.Design)
+                .Where(ex => ex.CompletionStatus == CompletionStatus.Complete)
                 .OrderBy(ex => ex.Slug)
                 .Select(ex => $"[design-{ex.Slug}]: {Path.Combine(GetExerciseLocationLink(ex.Slug), PathNames.Default.DesignDocName)}");
  
@@ -107,7 +107,7 @@ namespace ExerciseReport
             }
 
             var exerciseLocations = exerciseObjectTree.Exercises
-                .Where(ex => ex.DocumentType == DocumentType.Design)
+                .Where(ex => ex.CompletionStatus == CompletionStatus.Complete)
                 .OrderBy(ex => ex.Slug)
                 .Select(ex => $"[exercise-{ex.Slug}]: {GetExerciseLocationLink(ex.Slug)}");
  
@@ -157,17 +157,17 @@ namespace ExerciseReport
         // e.g. "arrays (arrays) - DesignDocName, Background" 
         private string FormatConceptReportLine(Exercise exercise, Concept concept)
         {
-            var link = (exercise.DocumentType, concept.TrackNeutralConcept) switch
+            var link = (DocumentType: exercise.CompletionStatus, concept.TrackNeutralConcept) switch
             {
-                (DocumentType.Issue, "") => $" - [Issue][issue-{exercise.Slug}]",
-                (DocumentType.Design, "") => $" - [Design][design-{exercise.Slug}]",
-                (DocumentType.Issue, _) => $" - [Issue][issue-{exercise.Slug}], [Background][tnc-{concept.Name}]",
-                (DocumentType.Design, _) => $" - [Design][design-{exercise.Slug}], [Background][tnc-{concept.Name}]",
-                (DocumentType.None, "") => string.Empty,
+                (CompletionStatus.NewExerciseIssueRaised, "") => $" - [Issue][issue-{exercise.Slug}]",
+                (CompletionStatus.Complete, "") => $" - [Design][design-{exercise.Slug}]",
+                (CompletionStatus.NewExerciseIssueRaised, _) => $" - [Issue][issue-{exercise.Slug}], [Background][tnc-{concept.Name}]",
+                (CompletionStatus.Complete, _) => $" - [Design][design-{exercise.Slug}], [Background][tnc-{concept.Name}]",
+                (CompletionStatus.None, "") => string.Empty,
                 _ => $" - [Background][tnc-{concept.Name}]"
             };
             string exerciseText = $"_({exercise.Slug})_";
-            if (exercise.DocumentType == DocumentType.Design)
+            if (exercise.CompletionStatus == CompletionStatus.Complete)
             {
                 exerciseText = $"[_({exercise.Slug})_][exercise-{exercise.Slug}]";
             }

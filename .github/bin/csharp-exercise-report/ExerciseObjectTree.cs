@@ -3,11 +3,11 @@ using System.Text.Json.Serialization;
 
 namespace ExerciseReport
 {
-    public enum DocumentType
+    public enum CompletionStatus
     {
         None = 'N',
-        Design = 'D',
-        Issue = 'I',
+        Complete = 'D',
+        NewExerciseIssueRaised = 'I',
         Invalid = 'L'
     }
 
@@ -27,8 +27,8 @@ namespace ExerciseReport
         [JsonPropertyName("level")]
         public Level Level { get; set; } = Level.Invalid;
 
-        [JsonPropertyName("document-type")]
-        public DocumentType DocumentType { get; set; } = DocumentType.Invalid;
+        [JsonPropertyName("completion-status")]
+        public CompletionStatus CompletionStatus { get; set; } = CompletionStatus.Invalid;
         [JsonPropertyName("document-link")]
         public string DocumentLink { get; set; } = string.Empty;
         [JsonPropertyName("concepts")]

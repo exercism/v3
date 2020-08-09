@@ -90,12 +90,12 @@ namespace ExerciseReport
             StringBuilder sb = new StringBuilder();
             if (string.IsNullOrWhiteSpace(exercise.Slug)) sb.AppendLine("slug: missing for an exercise");
             if (exercise.Level == Level.Invalid) sb.AppendLine($"level: missing for {exercise.Slug}");
-            if (exercise.DocumentType == DocumentType.Invalid)
-                sb.AppendLine($"document-type: missing for {exercise.Slug}");
-            if (exercise.DocumentType == DocumentType.Issue
+            if (exercise.CompletionStatus == CompletionStatus.Invalid)
+                sb.AppendLine($"completion-status: missing for {exercise.Slug}");
+            if (exercise.CompletionStatus == CompletionStatus.NewExerciseIssueRaised
                 && string.IsNullOrWhiteSpace(exercise.DocumentLink))
                 sb.AppendLine($"document-link: missing for {exercise.Slug}");
-            if (exercise.DocumentType == DocumentType.Design
+            if (exercise.CompletionStatus == CompletionStatus.Complete
                 && !string.IsNullOrWhiteSpace(exercise.DocumentLink))
                 sb.AppendLine($"document-link: present for {exercise.Slug}. This will be ignored when generating the report");
             if (exercise.Concepts.Count == 0) sb.AppendLine($"concepts: missing for {exercise.Slug}");
