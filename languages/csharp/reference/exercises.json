@@ -322,13 +322,13 @@
       ]
     },
     {
-      "slug": "null",
+      "slug": "nullability",
       "level": "introductory",
       "completion-status": "complete",
       "document-link": "",
       "concepts": [
         {
-          "name": "null",
+          "name": "nullability",
           "track-neutral-concept": "",
           "learning-objectives": [],
           "original-concepts": [
@@ -612,13 +612,13 @@
       ]
     },
     {
-      "slug": "dates",
+      "slug": "datetimes",
       "level": "introductory",
       "completion-status": "complete",
       "document-link": "",
       "concepts": [
         {
-          "name": "dates",
+          "name": "datetimes",
           "track-neutral-concept": "",
           "learning-objectives": [],
           "original-concepts": [
@@ -749,25 +749,6 @@
             {
               "name": "- User Defined Exceptions",
               "line-number": 59
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "user-defined-exceptions2",
-      "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
-      "concepts": [
-        {
-          "name": "user-defined-exceptions2",
-          "track-neutral-concept": "",
-          "learning-objectives": [],
-          "original-concepts": [
-            {
-              "name": "- User Defined Exceptions",
-              "line-number": 101
             }
           ]
         }
@@ -928,13 +909,13 @@
       ]
     },
     {
-      "slug": "conditionals-switch",
+      "slug": "switch-statements",
       "level": "introductory",
       "completion-status": "complete",
       "document-link": "",
       "concepts": [
         {
-          "name": "conditionals-switch",
+          "name": "switch-statements",
           "track-neutral-concept": "",
           "learning-objectives": [],
           "original-concepts": [
@@ -2107,7 +2088,7 @@
       "concepts": [
         {
           "name": "memory-allocation",
-          "track-neutral-concept": "memory_allocation",
+          "track-neutral-concept": "",
           "learning-objectives": [],
           "original-concepts": [
             {
