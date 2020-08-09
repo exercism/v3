@@ -66,7 +66,7 @@ namespace ExerciseReport
                 if (!exerciseMap.Contains(conceptDetails.ConceptName))
                 {
                     errors.Add(new Error(ErrorSource.Merge, Severity.Error,
-                        $"Failed to find concept {conceptDetails.ConceptName} from {conceptDetails.DocId} design.md in exercises.json file"));
+                        $"Failed to find concept {conceptDetails.ConceptName} from {conceptDetails.DocId} in exercises.json file"));
                 }
             }
 

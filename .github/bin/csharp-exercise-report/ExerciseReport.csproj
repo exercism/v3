@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="Data\exercise_report_intro.md" />
+      <EmbeddedResource Include="Data\exercise_report_intro.md" />
+    </ItemGroup>
+
 </Project>

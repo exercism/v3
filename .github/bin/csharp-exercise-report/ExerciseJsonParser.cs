@@ -92,10 +92,12 @@ namespace ExerciseReport
             if (exercise.Level == Level.Invalid) sb.AppendLine($"level: missing for {exercise.Slug}");
             if (exercise.DocumentType == DocumentType.Invalid)
                 sb.AppendLine($"document-type: missing for {exercise.Slug}");
-            if ((exercise.DocumentType == DocumentType.Design
-                 || exercise.DocumentType == DocumentType.Issue)
+            if (exercise.DocumentType == DocumentType.Issue
                 && string.IsNullOrWhiteSpace(exercise.DocumentLink))
                 sb.AppendLine($"document-link: missing for {exercise.Slug}");
+            if (exercise.DocumentType == DocumentType.Design
+                && !string.IsNullOrWhiteSpace(exercise.DocumentLink))
+                sb.AppendLine($"document-link: present for {exercise.Slug}. This will be ignored when generating the report");
             if (exercise.Concepts.Count == 0) sb.AppendLine($"concepts: missing for {exercise.Slug}");
             for (int ii = 0; ii < exercise.Concepts.Count; ii++)
             {

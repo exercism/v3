@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Text;
+using static ExerciseReport.Utils;
 
 namespace ExerciseReport
 {
@@ -28,17 +29,7 @@ namespace ExerciseReport
         private string CreateConceptPart(ExerciseObjectTree exerciseObjectTree)
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("# C&#35; reference");
-            sb.AppendLine();
-            sb.AppendLine("## Concepts");
-            sb.AppendLine();
-            sb.AppendLine(
-                "The C# concept exercises are based on concepts. The list below contains the concepts that have been identified for the C# language.");
-            sb.AppendLine();
-            sb.AppendLine(
-                @"_(Please do not modify this document. it is automatically generated. All text except the concept learning objectives is sourced
-                            from [exercises.json](./exercises.json) which should be updated manually when a concept is added or an issue or new design is created
-                            and learning objectives are scraped from the concept definition text in each exercise's design.md document)_.");
+            sb.Append(GetResourceAsString(Constants.ExerciseReportIntroResource));
             sb.AppendLine();
             sb.AppendLine("### Introductory Concepts");
             sb.AppendLine(); 
@@ -93,15 +84,26 @@ namespace ExerciseReport
         private string CreateLinkReferences(ExerciseObjectTree exerciseObjectTree)
         {
             StringBuilder sb = new StringBuilder();
-            var issuesOrDesigns = exerciseObjectTree.Exercises
-                .Where(ex => ex.DocumentType != DocumentType.None)
+            var issueRefs = exerciseObjectTree.Exercises
+                .Where(ex => ex.DocumentType == DocumentType.Issue)
                 .OrderBy(ex => ex.Slug)
-                .Select(ex => $"[{(ex.DocumentType == DocumentType.Issue ? "issue-" : "design-") + ex.Slug}]: {ex.DocumentLink}");
+                .Select(ex => $"[issue-{ex.Slug}]: {ex.DocumentLink}");
  
             sb.AppendLine();
-            foreach (string issueOrDesign in issuesOrDesigns)
+            foreach (string issueRef in issueRefs)
             {
-                sb.AppendLine(issueOrDesign);
+                sb.AppendLine(issueRef);
+            }
+
+            var designRefs = exerciseObjectTree.Exercises
+                .Where(ex => ex.DocumentType == DocumentType.Design)
+                .OrderBy(ex => ex.Slug)
+                .Select(ex => $"[design-{ex.Slug}]: {Path.Combine(GetExerciseLocationLink(ex.Slug), PathNames.Default.DesignDocName)}");
+ 
+            sb.AppendLine();
+            foreach (string designRef in designRefs)
+            {
+                sb.AppendLine(designRef);
             }
 
             var exerciseLocations = exerciseObjectTree.Exercises
