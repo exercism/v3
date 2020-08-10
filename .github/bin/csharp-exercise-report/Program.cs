@@ -5,10 +5,12 @@ namespace ExerciseReport
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static int Main(string[] args)
         {
             try
             {
+                // usage: dotnet run # in production no param is required
+                // usage: dotnet run [/myProjects/exercism/v3]
                 if (args.Length > 0)
                 {
                     Directory.SetCurrentDirectory(args[0]);
@@ -18,16 +20,18 @@ namespace ExerciseReport
                 merger.MergeInLearningObjectives();
                 var reporter = ReportCollator.CSharpReportCollator;
                 var efc = ExerciseFileCollator.CSharpExerciseFileCollator;
-                var result = efc.ReadExercises();
-                if (result.result == Result.FatalError)
+                var outputs = efc.ReadExercises();
+                if (outputs.Result == Result.FatalError)
                 {
-                    throw new Exception("Failed to produce report: " + result.errors[^1].Message);
+                    throw new Exception("Failed to produce report: " + outputs.Errors[^1].Message);
                 }
-                reporter.WriteReport(result.exerciseObjectTree);
+                reporter.WriteReport(outputs.ExerciseObjectTree);
+                return 0;
             }
             catch (Exception e)
             {
                 Console.Out.WriteLine(e.Message);
+                return 1;
             }
         }
     }

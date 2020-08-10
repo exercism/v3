@@ -5,7 +5,6 @@ namespace ExerciseReport
     internal class PathNames
     {
         private const string ProductionRoot = ".";
-        private const string TestUserRoot = "/Users/mikedamay/projects/exercism/v3";
         
         public string Root { get; }
         public string Languages { get; } = "languages";
@@ -18,9 +17,6 @@ namespace ExerciseReport
 
         public static PathNames Default { get; } =
             new PathNames(ProductionRoot);
-
-        public static PathNames Test { get; } =
-            new PathNames(TestUserRoot);
 
         private PathNames(string root)
         {

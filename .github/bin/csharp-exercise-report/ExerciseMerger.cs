@@ -8,19 +8,15 @@ namespace ExerciseReport
     {
         private readonly ExerciseFileCollator exerciseFileHandler;
         private readonly DesignDocCollator designDocCollator;
-        private readonly string track;
 
-        public ExerciseMerger(string track,
-            ExerciseFileCollator exerciseFileHandler, DesignDocCollator designDocCollator)
+        public ExerciseMerger(ExerciseFileCollator exerciseFileHandler, DesignDocCollator designDocCollator)
         {
             this.exerciseFileHandler = exerciseFileHandler;
             this.designDocCollator = designDocCollator;
-            this.track = track;
         }
 
         public static ExerciseMerger CSharpMerger { get; } =
-            new ExerciseMerger(Constants.CSharpTrack, 
-                new ExerciseFileCollator(
+            new ExerciseMerger(new ExerciseFileCollator(
                     new ExerciseFileHandler(PathNames.Default.Root, Constants.CSharpTrack), 
                     new ExerciseJsonParser())
                 , new DesignDocCollator(
@@ -31,25 +27,25 @@ namespace ExerciseReport
         public void MergeInLearningObjectives()
         {
             var mergeResults = Merge();
-            exerciseFileHandler.WriteExercises(mergeResults.result,
-                mergeResults.exerciseObjectTree, mergeResults.errors);
+            exerciseFileHandler.WriteExercises(mergeResults.Result,
+                mergeResults.ExerciseObjectTree, mergeResults.Errors);
         }
 
-        public (Result result, ExerciseObjectTree exerciseObjectTree, List<Error> errors) 
+        private (Result Result, ExerciseObjectTree ExerciseObjectTree, List<Error> Errors) 
             Merge()
         {
             var outputs = exerciseFileHandler.ReadExercises();
-            if (outputs.result == Result.FatalError)
+            if (outputs.Result == Result.FatalError)
             {
                 return outputs;
             }
-            var learningObjectives = designDocCollator.GetAllLearningObjectivesForTrack(track);
-            MergeLearningObjectives(outputs.exerciseObjectTree, learningObjectives.learningObjectives);
-            var unmatchedConcepts = ReportUnmatchedConcepts(outputs.exerciseObjectTree, learningObjectives.learningObjectives);
-            var combinedErrors = outputs.errors.Concat(learningObjectives.errors).Concat(unmatchedConcepts).ToList();
+            var learningObjectives = designDocCollator.GetAllLearningObjectives();
+            MergeLearningObjectives(outputs.ExerciseObjectTree, learningObjectives.learningObjectives);
+            var unmatchedConcepts = ReportUnmatchedConcepts(outputs.ExerciseObjectTree, learningObjectives.learningObjectives);
+            var combinedErrors = outputs.Errors.Concat(learningObjectives.errors).Concat(unmatchedConcepts).ToList();
             var maxSeverity = combinedErrors.Select(e => e.Severity).DefaultIfEmpty(Severity.None).Max();
             Result result = SeverityToResult(maxSeverity);
-            return (result, outputs.exerciseObjectTree, combinedErrors);
+            return (result, outputs.ExerciseObjectTree, combinedErrors);
         }
 
         private List<Error> ReportUnmatchedConcepts(ExerciseObjectTree exerciseObjectTree,
@@ -66,7 +62,7 @@ namespace ExerciseReport
                 if (!exerciseMap.Contains(conceptDetails.ConceptName))
                 {
                     errors.Add(new Error(ErrorSource.Merge, Severity.Error,
-                        $"Failed to find concept {conceptDetails.ConceptName} from {conceptDetails.DocId} in exercises.json file"));
+                        $"Failed to find concept {conceptDetails.ConceptName}, from the {conceptDetails.DocId} design.md, in exercises.json file"));
                 }
             }
 

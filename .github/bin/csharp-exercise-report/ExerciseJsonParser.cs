@@ -20,7 +20,7 @@ namespace ExerciseReport
             return JsonSerializer.Serialize(exerciseObjectTree, options);
         }
 
-        public (Result result, ExerciseObjectTree, List<Error> errors)
+        public (Result Result, ExerciseObjectTree, List<Error> Errors)
             FromString(string jsonText)
         {
             var options = new JsonSerializerOptions
@@ -31,7 +31,7 @@ namespace ExerciseReport
             {
                 options.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase));
                 var exerciseObjectTree = JsonSerializer.Deserialize<ExerciseObjectTree>(jsonText, options);
-                List<Error> errors = Validate(exerciseObjectTree);
+                List<Error> errors = ValidateExercises(exerciseObjectTree);
                 if (exerciseObjectTree.Exercises.Count == 0)
                 {
                     var message = $"Json parser failed to parse input file starting {jsonText.Substring(0, 20)}";
@@ -76,7 +76,7 @@ namespace ExerciseReport
             }
         }
 
-        private List<Error> Validate(ExerciseObjectTree exerciseObjectTree)
+        private static List<Error> ValidateExercises(ExerciseObjectTree exerciseObjectTree)
         {
             var output = exerciseObjectTree.Exercises.Select(ex => ValidateExercise(ex))
                 .Where(exo => !string.IsNullOrWhiteSpace(exo))
@@ -85,20 +85,27 @@ namespace ExerciseReport
             return output;
         }
 
-        private string ValidateExercise(Exercise exercise)
+        private static string ValidateExercise(Exercise exercise)
         {
             StringBuilder sb = new StringBuilder();
+            
             if (string.IsNullOrWhiteSpace(exercise.Slug)) sb.AppendLine("slug: missing for an exercise");
+            
             if (exercise.Level == Level.Invalid) sb.AppendLine($"level: missing for {exercise.Slug}");
+            
             if (exercise.CompletionStatus == CompletionStatus.Invalid)
                 sb.AppendLine($"completion-status: missing for {exercise.Slug}");
+            
             if (exercise.CompletionStatus == CompletionStatus.NewExerciseIssueRaised
                 && string.IsNullOrWhiteSpace(exercise.DocumentLink))
                 sb.AppendLine($"document-link: missing for {exercise.Slug}");
+            
             if (exercise.CompletionStatus == CompletionStatus.Complete
                 && !string.IsNullOrWhiteSpace(exercise.DocumentLink))
                 sb.AppendLine($"document-link: present for {exercise.Slug}. This will be ignored when generating the report");
+            
             if (exercise.Concepts.Count == 0) sb.AppendLine($"concepts: missing for {exercise.Slug}");
+
             for (int ii = 0; ii < exercise.Concepts.Count; ii++)
             {
                 if (string.IsNullOrWhiteSpace(exercise.Concepts[ii].Name))
@@ -137,6 +144,11 @@ namespace ExerciseReport
         public ErrorReport(IList<Error> errors)
         {
             Errors = errors;
+        }
+
+        public ErrorReport()
+        {
+            
         }
     }
 }

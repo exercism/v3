@@ -20,13 +20,13 @@ namespace ExerciseReport
             this.exerciseJsonParser = exerciseJsonParser;
         }
 
-        public (Result result, ExerciseObjectTree exerciseObjectTree, List<Error> errors) 
+        public (Result Result, ExerciseObjectTree ExerciseObjectTree, List<Error> Errors) 
             ReadExercises()
         {
             try
             {
-                var text = exerciseFileHandler.ReadExerciseFile();
-                return exerciseJsonParser.FromString(text);
+                var exerciseJson = exerciseFileHandler.ReadExerciseFile();
+                return exerciseJsonParser.FromString(exerciseJson);
             }
             catch (Exception e)
             {

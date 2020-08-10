@@ -2,16 +2,16 @@ namespace ExerciseReport
 {
     internal enum Result 
     {
-        Success = 0,
-        Errors = 1,
-        FatalError = 2
+        Success,
+        Errors,
+        FatalError
     }
 
     internal enum Severity
     {
-        None = 0,
-        Error = 1,
-        Fatal = 2
+        None,
+        Error,
+        Fatal
     }
 
     internal enum ErrorSource 
@@ -19,20 +19,26 @@ namespace ExerciseReport
         Process,
         Design,
         Exercise,
-        Merge
+        Merge,
+        None
     }
 
     internal class Error
     {
-        public Severity Severity { get; }
-        public string Message { get; }
-        public ErrorSource Source { get; }
+        public Severity Severity { get; set; } = Severity.None;
+        public string Message { get; set; } = string.Empty;
+        public ErrorSource Source { get; set; } = ErrorSource.None;
 
         public Error(ErrorSource source, Severity severity, string message)
         {
             Source = source;
             Severity = severity;
             Message = message;
+        }
+
+        public Error()
+        {
+            
         }
     }
 }

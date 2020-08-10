@@ -8,14 +8,14 @@ namespace ExerciseReport
         public static string GetResourceAsString(string resourceName)
         {
             string resourcePath = $"ExerciseReport.Data.{resourceName}";
-            string markdownText = String.Empty;
+            string resourceText = String.Empty;
             Stream? stream = typeof(Utils).Assembly.GetManifestResourceStream(resourcePath);
             if (stream != null)
             {
                 using (stream)
                 using (var reader = new StreamReader(stream))
-                    markdownText = reader.ReadToEnd();
-                return markdownText;
+                    resourceText = reader.ReadToEnd();
+                return resourceText;
             }
             else
             {

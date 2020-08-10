@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace ExerciseReport
@@ -16,18 +17,20 @@ namespace ExerciseReport
         }
 
         public (LearningObjectives learningObjectives, List<Error> errors) 
-            GetAllLearningObjectivesForTrack(string track)
+            GetAllLearningObjectives()
         {
             var errors = new List<Error>();
             var learningObjectives = new LearningObjectives();
             var conceptsAndObjectives = designDocFileHandler.GetExerciseDesignsForTrack()
-                .SelectMany(e_and_c => designDocParser
-                    .ParseDesignDoc(e_and_c.ExerciseName, e_and_c.ConceptName));
+                .SelectMany(
+                    designDetails => designDocParser.ParseDesignDoc(
+                        GetExerciseNameFromPath(designDetails.DesignDocPath),
+                        designDetails.DesignDocContents));
             foreach (var conceptAndObjective in conceptsAndObjectives)
             {
                 switch (conceptAndObjective)
                 {
-                    case (Result.Success, _, (string docId, string conceptName) conceptDetails, string objective):
+                    case (Result.Success, _, (string designDocId, string conceptName) conceptDetails, string objective):
                         learningObjectives.Builder.Add(conceptDetails, objective);
                         break;
                     case (Result.Errors, string error, _, _):
@@ -40,5 +43,14 @@ namespace ExerciseReport
 
             return (learningObjectives, errors);
         }
+        // designDocPath: typically "./languages/<language>/exercises/concept/<exercise-name>/.meta/design.md"
+        // returns: <exercise-name
+        private static string GetExerciseNameFromPath(string designDocPath)
+        {
+            var path = Path.GetDirectoryName(designDocPath);
+            var parts = path?.Split("/") ?? new string[0];
+            return parts.Length > 2 ? parts[^2] : designDocPath;
+        }
+
     }
 }

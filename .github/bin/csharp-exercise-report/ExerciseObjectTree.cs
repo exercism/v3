@@ -1,23 +1,25 @@
+using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
+using static ExerciseReport.Utils;
 
 namespace ExerciseReport
 {
     public enum CompletionStatus
     {
-        None = 'N',
-        Complete = 'D',
-        NewExerciseIssueRaised = 'I',
-        Invalid = 'L'
+        None,
+        Complete,
+        NewExerciseIssueRaised,
+        Invalid
     }
 
     public enum Level
     {
-        Introductory = 'A',
-        Essential = 'B',
-        Advanced = 'C',
-        None = 'N',
-        Invalid = 'L'
+        Introductory,
+        Essential,
+        Advanced,
+        None,
+        Invalid
     }
 
     public class Exercise
@@ -58,13 +60,9 @@ namespace ExerciseReport
     public class ExerciseObjectTree
     {
         [JsonPropertyName("documentation")]
-        public List<string> Documentation => new List<string>{
-            "This file is the original source of the concept report in csharp/reference/README.md.",
-            "",
-            "All the information originates here EXCEPT the learning-objectives array which is a part of each concept.",
-            "Do NOT edit the learning-objectives array (or these lines of documentation)",
-            "and do NOT attempt to change the schema in any way."
-            };
+        public List<string> Documentation => new List<string>(
+            GetResourceAsString(Constants.ExercisesJsonHeaderResource).Split(Environment.NewLine)
+        );
         [JsonPropertyName("exercises")]
         public IList<Exercise> Exercises { get; set; } = new List<Exercise>(); 
     }
