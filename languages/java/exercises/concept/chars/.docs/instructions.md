@@ -26,18 +26,18 @@ Identifier.clean("my\0Id");
 
 ### 3. Convert kebab-case to camelCase
 
-Modify the (_static_) `Identifier.Clean()` method to convert kebab-case to camelCase.
+Modify the (_static_) `Identifier.clean()` method to convert kebab-case to camelCase.
 
-```csharp
+```java
 Identifier.Clean("à-ḃç");
 // => "àḂç"
 ```
 
 ### 4. Omit Greek lower case letters
 
-Modify the (_static_) `Identifier.Clean()` method to omit any Greek letters in the range 'α' to 'ω'.
+Modify the (_static_) `Identifier.clean()` method to omit any Greek letters in the range 'α' to 'ω'.
 
-```csharp
+```java
 Identifier.Clean("MyΟβιεγτFinder");
 // => "MyΟFinder"
 ```
