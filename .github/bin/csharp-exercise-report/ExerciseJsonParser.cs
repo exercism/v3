@@ -9,6 +9,12 @@ namespace ExerciseReport
 {
     internal class ExerciseJsonParser
     {
+        private readonly int maxErrors;
+
+        public ExerciseJsonParser(int maxErrors = Constants.MaxErrors)
+        {
+            this.maxErrors = maxErrors;
+        }
         public string ToString(ExerciseObjectTree exerciseObjectTree)
         {
             var options = new JsonSerializerOptions
@@ -42,7 +48,7 @@ namespace ExerciseReport
                     );
                 }
 
-                if (errors.Count > Constants.MaxErrors)
+                if (errors.Count > maxErrors)
                 {
                     errors.Add(new Error(ErrorSource.Exercise,
                         Severity.Error,
@@ -51,7 +57,7 @@ namespace ExerciseReport
                 return (
                     errors.Count == 0
                         ? Result.Success
-                        : errors.Count > Constants.MaxErrors
+                        : errors.Count > maxErrors
                             ? Result.FatalError
                             : Result.Errors,
                     exerciseObjectTree,

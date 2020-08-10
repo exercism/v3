@@ -20,7 +20,8 @@ namespace ExerciseReport
         Design,
         Exercise,
         Merge,
-        None
+        None,
+        MissingLearningObjective
     }
 
     internal class Error
