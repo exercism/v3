@@ -4,23 +4,24 @@
 
 ## 1. Represent the fixed interest rate on a loan
 
-- The constant should be untyped, but needs to be acceptable anywhere a float can be used.
+- The constant should be untyped, but needs to be acceptable anywhere that a float can be used. The function should return the constant.
 
 ## 2. Represent the number of days in a year
 
-- The constant should be given an explicit type used for whole numbers.
+- The constant should be given an explicit type used for whole numbers. The function should return the constant.
 
 ## 3. Represent the months of the year
 
-- There is an [identifier][iota] for creating enumerated constants.
+- There is an [identifier][iota] for creating enumerated constants. A block looks like [this][block]. The function should return the constant for January.
 
 ## 4. Get the value for October
 
-- Use the same block as above
+- Use the same block as above. The function should return the constant for October.
 
 ## 5. Represent an account number
 
-- The constant should be untyped, but needs to be acceptable anywhere a string can be used.
+- The constant should be untyped, but needs to be acceptable anywhere a string can be used. The function should return the constant.
 
 [const]: https://golang.org/doc/effective_go.html#constants
 [iota]: https://golang.org/ref/spec#Iota
+[block]: https://golang.org/pkg/debug/macho/#pkg-constants
