@@ -204,7 +204,10 @@
         {
           "name": "type-inference",
           "track-neutral-concept": "reference/concepts/type_inference.md",
-          "learning-objectives": [],
+          "learning-objectives": [
+            "know how to use the keyword, \u0060var\u0060",
+            "know when it is appropriate to use type-inference"
+          ],
           "original-concepts": [
             {
               "name": "- [Type inference][type_inference]",
