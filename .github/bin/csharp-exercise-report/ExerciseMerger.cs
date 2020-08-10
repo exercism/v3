@@ -60,12 +60,12 @@ namespace ExerciseReport
         private List<Error> ReportMissingLearningObjectives(ExerciseObjectTree exerciseObjectTree)
         {
             var errors = exerciseObjectTree.Exercises.Where(ex => ex.CompletionStatus == CompletionStatus.Complete)
-                .SelectMany(ex => ex.Concepts)
-                .Where(con => con.LearningObjectives.Count == 0)
-                .Select( con =>
+                .SelectMany(ex => ex.Concepts, (Exercise, Concept) => (Exercise, Concept))
+                .Where(e_and_c => e_and_c.Concept.LearningObjectives.Count == 0)
+                .Select(e_and_c =>
                     new Error(ErrorSource.MissingLearningObjective,
                         Severity.Error,
-                        $"The {con.Name} concept has no learning objectives in exercises.json")
+                        $"The {e_and_c.Concept.Name} concept has no learning objectives on the exercise report - update the design.md for the {e_and_c.Exercise.Slug} exercise")
                 ).ToList();
             if (errors.Count > maxErrors)
             {
