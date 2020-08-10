@@ -42,16 +42,6 @@
     },
     {
       "Severity": "error",
-      "Message": "Failed to find concept operator-overloading, from the operator-overloading design.md, in exercises.json file",
-      "Source": "merge"
-    },
-    {
-      "Severity": "error",
-      "Message": "Failed to find concept integral-numbers, from the integral-numbers design.md, in exercises.json file",
-      "Source": "merge"
-    },
-    {
-      "Severity": "error",
       "Message": "Failed to find concept while-loops, from the floating-point-numbers design.md, in exercises.json file",
       "Source": "merge"
     },
