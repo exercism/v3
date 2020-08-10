@@ -1056,7 +1056,11 @@
         {
           "name": "integral-numbers",
           "track-neutral-concept": "",
-          "learning-objectives": [],
+          "learning-objectives": [
+            "know of the difference between signed and unsigned integral types",
+            "know of the existence of the integral types: \u0060sbyte\u0060, \u0060byte\u0060, \u0060short\u0060, \u0060ushort\u0060, \u0060int\u0060, \u0060uint\u0060, \u0060long\u0060 and \u0060ulong\u0060",
+            "know when to use which integral type."
+          ],
           "original-concepts": [
             {
               "name": "  - Signed integers",
@@ -1445,7 +1449,12 @@
         {
           "name": "operator-overloading",
           "track-neutral-concept": "",
-          "learning-objectives": [],
+          "learning-objectives": [
+            "know when to how and why to overload operators for your own classes",
+            "understand the syntax of equality, comparison and arithmetic operators",
+            "know the syntax of user defined type conversion",
+            "know which operators cannot be overloaded"
+          ],
           "original-concepts": [
             {
               "name": "- operator overloading",
