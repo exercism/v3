@@ -8,7 +8,7 @@
 
 ## 2. Represent the number of days in a year
 
-- The constant should be given an explicit type used for whole numbers. The function should return the constant.
+- The function should return the constant.
 
 ## 3. Represent the months of the year
 

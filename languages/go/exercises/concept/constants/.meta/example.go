@@ -42,7 +42,7 @@ func GetOctober() int {
 	return Oct
 }
 
-// AccNo type for a string
+// AccNo type for a string - this is a stub type included to demonstrate how the untyped string constant can be used where this type is required
 type AccNo string
 
 // AccountNo has a value of XF348IJ

@@ -23,10 +23,10 @@ func GetJanuary() int {
 
 // GetOctober returns the value for Oct, 10
 func GetOctober() int {
-	panic("Using the same block as before, implement the GetOctober function")
+	panic("Using the same block as above, implement the GetOctober function")
 }
 
-// AccNo type for a string
+// AccNo type for a string - this is a stub type included to demonstrate how the untyped string constant can be used where this type is required
 type AccNo string
 
 // AccountNo has a value of XF348IJ

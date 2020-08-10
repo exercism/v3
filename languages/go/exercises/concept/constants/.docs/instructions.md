@@ -31,7 +31,7 @@ GetJanuary()
 
 ## 4. Get the value for October
 
-Using the same block as before, implement the `GetOctober` function to return the value for October:
+Using the same block as above, implement the `GetOctober` function to return the value for October:
 
 ```go
 GetOctober()
