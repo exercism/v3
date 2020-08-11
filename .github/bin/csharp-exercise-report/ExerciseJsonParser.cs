@@ -120,41 +120,5 @@ namespace ExerciseReport
 
             return sb.ToString();
         }
-
-        public string ErrorsToString(IList<Error> errors)
-        {
-            var options = new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true,
-                WriteIndented = true,
-            };
-            options.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase));
-            return JsonSerializer.Serialize(new ErrorReport(errors), options);
-        }
-
-        public ErrorReport ErrorsFromString(string errorsJson) {
-            var options = new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true,
-                WriteIndented = true,
-            };
-            options.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase));
-            return JsonSerializer.Deserialize<ErrorReport>(errorsJson, options);
-        }
-}
-    
-    internal class ErrorReport
-    {
-        public IList<Error> Errors { get; set; } = new List<Error>();
-
-        public ErrorReport(IList<Error> errors)
-        {
-            Errors = errors;
-        }
-
-        public ErrorReport()
-        {
-            
-        }
     }
 }

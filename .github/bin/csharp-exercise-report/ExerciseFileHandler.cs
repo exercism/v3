@@ -4,19 +4,12 @@ namespace ExerciseReport
 {
     public interface IExerciseFileHandler
     {
-        string ReadExerciseFile();
-        
-        void WriteExerciseFile(string exerciseJson);
-
-        string ReadErrorFile();
-        
-        void WriteErrorFile(string errorJson);
+        string ReadFile();
     }
 
     internal class ExerciseFileHandler : IExerciseFileHandler
     {
         private readonly string exercisePathAndFileName;
-        private readonly string errorPathAndFileName;
 
         public ExerciseFileHandler(string root, string track)
         {
@@ -25,31 +18,17 @@ namespace ExerciseReport
                 PathNames.Default.Languages,
                 track,
                 PathNames.Default.ExerciseFile);
-            errorPathAndFileName = Path.Combine(
-                root,
-                PathNames.Default.Languages,
-                track,
-                PathNames.Default.ErrorsFile);
         }
 
-        public string ReadExerciseFile()
+        public string ReadFile()
         {
             return File.ReadAllText(exercisePathAndFileName);
         }
 
-        public void WriteExerciseFile(string exerciseJson)
+        public void WriteFile(string exerciseJson)
         {
             File.WriteAllText(exercisePathAndFileName, exerciseJson);
         }
 
-        public string ReadErrorFile()
-        {
-            return File.ReadAllText(errorPathAndFileName);
-        }
-
-        public void WriteErrorFile(string errorJson)
-        {
-            File.WriteAllText(errorPathAndFileName, errorJson);
-        }
     }
 }

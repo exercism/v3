@@ -1,14 +1,14 @@
 namespace ExerciseReport
 {
-    internal class ReportCollator
+    internal class ReportWriter
     {
         private readonly IReportFileHandler reportFileHandler;
         private readonly ReportFormatter reportFormatter;
 
-        public static ReportCollator CSharpReportCollator { get; } =
-            new ReportCollator(new ReportFileHandler(PathNames.Default.Root, Constants.CSharpTrack),
+        public static ReportWriter CSharpReportWriter { get; } =
+            new ReportWriter(new ReportFileHandler(PathNames.Default.Root, Constants.CSharpTrack),
                 new ReportFormatter(PathNames.Default.Root));
-        public ReportCollator(IReportFileHandler reportFileHandler,
+        public ReportWriter(IReportFileHandler reportFileHandler,
             ReportFormatter reportFormatter)
         {
             this.reportFileHandler = reportFileHandler;

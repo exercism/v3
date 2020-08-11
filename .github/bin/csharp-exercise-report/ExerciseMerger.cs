@@ -6,44 +6,37 @@ namespace ExerciseReport
 {
     internal class ExerciseMerger
     {
-        private readonly ExerciseFileCollator exerciseFileHandler;
-        private readonly DesignDocCollator designDocCollator;
+        private readonly ExerciseReader exerciseFileHandler;
+        private readonly DesignDocReader designDocReader;
         private readonly int maxErrors;
 
-        public ExerciseMerger(ExerciseFileCollator exerciseFileHandler,
-            DesignDocCollator designDocCollator,
+        public ExerciseMerger(ExerciseReader exerciseFileHandler,
+            DesignDocReader designDocReader,
             int maxErrors = Constants.MaxMissingLearningObjectives)
         {
             this.exerciseFileHandler = exerciseFileHandler;
-            this.designDocCollator = designDocCollator;
+            this.designDocReader = designDocReader;
             this.maxErrors = maxErrors;
         }
 
         public static ExerciseMerger CSharpMerger { get; } =
-            new ExerciseMerger(new ExerciseFileCollator(
+            new ExerciseMerger(new ExerciseReader(
                     new ExerciseFileHandler(PathNames.Default.Root, Constants.CSharpTrack), 
                     new ExerciseJsonParser())
-                , new DesignDocCollator(
+                , new DesignDocReader(
                     new DesignDocFileHandler(PathNames.Default.Root, Constants.CSharpTrack),
                     new DesignDocParser())
                 );
 
-        public void MergeInLearningObjectives()
-        {
-            var mergeResults = Merge();
-            exerciseFileHandler.WriteExercises(mergeResults.Result,
-                mergeResults.ExerciseObjectTree, mergeResults.Errors);
-        }
-
-        private (Result Result, ExerciseObjectTree ExerciseObjectTree, List<Error> Errors) 
-            Merge()
+         public (Result Result, ExerciseObjectTree ExerciseObjectTree, List<Error> Errors) 
+            MergeExercisesAndLearningObjectives()
         {
             var outputs = exerciseFileHandler.ReadExercises();
             if (outputs.Result == Result.FatalError)
             {
                 return outputs;
             }
-            var learningObjectives = designDocCollator.GetAllLearningObjectives();
+            var learningObjectives = designDocReader.GetAllLearningObjectives();
             MergeLearningObjectives(outputs.ExerciseObjectTree, learningObjectives.learningObjectives);
             var unmatchedConcepts = ReportUnmatchedConcepts(outputs.ExerciseObjectTree, learningObjectives.learningObjectives);
             var missingLearningObjectives = ReportMissingLearningObjectives(outputs.ExerciseObjectTree);

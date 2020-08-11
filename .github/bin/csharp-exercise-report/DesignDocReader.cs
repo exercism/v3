@@ -5,12 +5,12 @@ using System.Linq;
 
 namespace ExerciseReport
 {
-    internal class DesignDocCollator
+    internal class DesignDocReader
     {
         private readonly DesignDocParser designDocParser;
         private readonly IDesignDocFileHandler designDocFileHandler;
 
-        public DesignDocCollator(IDesignDocFileHandler designDocFileHandler, DesignDocParser designDocParser)
+        public DesignDocReader(IDesignDocFileHandler designDocFileHandler, DesignDocParser designDocParser)
         {
             this.designDocParser = designDocParser;
             this.designDocFileHandler = designDocFileHandler;

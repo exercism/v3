@@ -43,7 +43,7 @@ namespace ExerciseReport
         public string Name { get; set; } = string.Empty;
         [JsonPropertyName("track-neutral-concept")]
         public string TrackNeutralConcept { get; set; } = string.Empty;
-        [JsonPropertyName("learning-objectives")]
+        [JsonIgnore]
         public IList<string> LearningObjectives { get; set; } = new List<string>();
         [JsonPropertyName("original-concepts")]
         public IList<OriginalConcept> OriginalConcepts { get; set; } = new List<OriginalConcept>();

@@ -3,17 +3,17 @@ using System.Collections.Generic;
 
 namespace ExerciseReport
 {
-    internal class ExerciseFileCollator
+    internal class ExerciseReader
     {
-        public static ExerciseFileCollator CSharpExerciseFileCollator { get; }=
-            new ExerciseFileCollator(
+        public static ExerciseReader CSharpExerciseReader { get; }=
+            new ExerciseReader(
                 new ExerciseFileHandler(PathNames.Default.Root, Constants.CSharpTrack),
                 new ExerciseJsonParser());
 
         private readonly IExerciseFileHandler exerciseFileHandler;
         private readonly ExerciseJsonParser exerciseJsonParser;
 
-        public ExerciseFileCollator(IExerciseFileHandler exerciseFileHandler,
+        public ExerciseReader(IExerciseFileHandler exerciseFileHandler,
             ExerciseJsonParser exerciseJsonParser)
         {
             this.exerciseFileHandler = exerciseFileHandler;
@@ -25,7 +25,7 @@ namespace ExerciseReport
         {
             try
             {
-                var exerciseJson = exerciseFileHandler.ReadExerciseFile();
+                var exerciseJson = exerciseFileHandler.ReadFile();
                 return exerciseJsonParser.FromString(exerciseJson);
             }
             catch (Exception e)
@@ -35,25 +35,6 @@ namespace ExerciseReport
                     new ExerciseObjectTree(),
                     new List<Error>{new Error(ErrorSource.Process, Severity.Fatal, "reading exercise.json file: " + e.Message)}
                     );
-            }
-        }
-
-        public void WriteExercises(Result result, ExerciseObjectTree exerciseObjectTree, IList<Error> errors)
-        {
-            try
-            {
-                if (result != Result.FatalError)
-                {
-                    var exerciseJson = exerciseJsonParser.ToString(exerciseObjectTree);
-                    exerciseFileHandler.WriteExerciseFile(exerciseJson);
-                }
-                var errorsJson = exerciseJsonParser.ErrorsToString(errors);
-                exerciseFileHandler.WriteErrorFile(errorsJson);
-            }
-            catch (Exception e)
-            {
-                var _ = e;
-                throw;
             }
         }
     }
