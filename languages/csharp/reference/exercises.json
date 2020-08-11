@@ -16,14 +16,6 @@
         {
           "name": "classes",
           "track-neutral-concept": "reference/concepts/classes.md",
-          "learning-objectives": [
-            "know what classes are",
-            "know what encapsulation is",
-            "know what fields are",
-            "know how to create an object",
-            "know how to update state through methods",
-            "know about the \u0060void\u0060 type."
-          ],
           "original-concepts": [
             {
               "name": "- [Classes][classes]",
@@ -34,7 +26,6 @@
         {
           "name": "encapsulation",
           "track-neutral-concept": "reference/concepts/encapsulation.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- [Encapsulation][encapsulation]",
@@ -45,7 +36,6 @@
         {
           "name": "fields",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Fields",
@@ -56,7 +46,6 @@
         {
           "name": "objects",
           "track-neutral-concept": "reference/concepts/objects.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- [Objects][objects]",
@@ -67,7 +56,6 @@
         {
           "name": "state",
           "track-neutral-concept": "reference/concepts/state.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- [State][state]",
@@ -78,7 +66,6 @@
         {
           "name": "visibility",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Visibility (\u0060public\u0060; \u0060private\u0060; etc.)",
@@ -89,7 +76,6 @@
         {
           "name": "default-value",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Default values (a \u0060bool\u0060 being \u0060false\u0060 by default; etc.)",
@@ -108,15 +94,6 @@
         {
           "name": "inheritance",
           "track-neutral-concept": "reference/concepts/inheritance.md",
-          "learning-objectives": [
-            "know what inheritance is",
-            "know how to inherit from a class",
-            "know that all types inherit from \u0060object\u0060",
-            "know what abstract and sealed classes are",
-            "know what abstract and virtual methods are",
-            "know how to override methods",
-            "know about the \u0060protected\u0060 visibility modifier."
-          ],
           "original-concepts": [
             {
               "name": " [Inheritance][inheritance]",
@@ -127,7 +104,6 @@
         {
           "name": "polymorphism",
           "track-neutral-concept": "reference/concepts/polymorphism.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- [Polymorphism][polymorphism]",
@@ -146,21 +122,6 @@
         {
           "name": "basics",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know what a variable is",
-            "know how to define a variable",
-            "know how to update a variable",
-            "know how to use type inference for variables",
-            "know how to define a method",
-            "know how to return a value from a method",
-            "know how to call a method",
-            "know that methods must be defined in classes",
-            "know about the \u0060public\u0060 access modifier",
-            "know about the \u0060static\u0060 modifier",
-            "know how to define an integer",
-            "know how to use mathematical operators on integers",
-            "know how to define single- and multiline comments."
-          ],
           "original-concepts": [
             {
               "name": " basics (including methods)",
@@ -171,7 +132,6 @@
         {
           "name": "return-values",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Return values",
@@ -182,7 +142,6 @@
         {
           "name": "mutation",
           "track-neutral-concept": "reference/concepts/mutation.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- [Mutation][mutation]",
@@ -193,7 +152,6 @@
         {
           "name": "functions",
           "track-neutral-concept": "reference/types/function.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- [Functions][functions]",
@@ -204,10 +162,6 @@
         {
           "name": "type-inference",
           "track-neutral-concept": "reference/concepts/type_inference.md",
-          "learning-objectives": [
-            "know how to use the keyword, \u0060var\u0060",
-            "know when it is appropriate to use type-inference"
-          ],
           "original-concepts": [
             {
               "name": "- [Type inference][type_inference]",
@@ -218,7 +172,6 @@
         {
           "name": "comments",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Comments",
@@ -229,7 +182,6 @@
         {
           "name": "scoping",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Scoping",
@@ -240,7 +192,6 @@
         {
           "name": "variables",
           "track-neutral-concept": "reference/concepts/variables.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- [Variables][variables]",
@@ -259,13 +210,6 @@
         {
           "name": "constructors",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know what constructors are",
-            "know how to define parameterless constructors",
-            "know how to define parameterized constructors",
-            "know how to use constructor overloading",
-            "know how to define private constructors."
-          ],
           "original-concepts": [
             {
               "name": "  - Constructors",
@@ -284,11 +228,6 @@
         {
           "name": "method-overloading",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know what method overloading is",
-            "know how to define overloaded methods",
-            "know the limitations of method overloading"
-          ],
           "original-concepts": [
             {
               "name": "  - Method overloading",
@@ -307,14 +246,6 @@
         {
           "name": "properties",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know what properties are and how they relate to fields and methods",
-            "know what backing-field properties are",
-            "know what auto-implemented properties are",
-            "know what calculated properties are",
-            "know how to use property accessors to customize visibility",
-            "know how to define the different types of properties."
-          ],
           "original-concepts": [
             {
               "name": "- Properties",
@@ -325,23 +256,14 @@
       ]
     },
     {
-      "slug": "nullability",
+      "slug": "null",
       "level": "introductory",
       "completion-status": "complete",
       "document-link": "",
       "concepts": [
         {
-          "name": "nullability",
+          "name": "null",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know of the existence of the \u0060null\u0060 literal",
-            "know what a \u0060NullReferenceException\u0060 is and when it is thrown",
-            "know how to compare a value to \u0060null\u0060",
-            "know the difference between value and reference types regarding nullability",
-            "know how to define nullable reference and value types",
-            "know about the null-related operators",
-            "know about basic null checking by the compiler."
-          ],
           "original-concepts": [
             {
               "name": "- Null",
@@ -352,7 +274,6 @@
         {
           "name": "null-coalescing",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Null-coalescing operator",
@@ -363,7 +284,6 @@
         {
           "name": "null-conditional",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Null-conditional operator",
@@ -374,7 +294,6 @@
         {
           "name": "null-forgiving",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Null-forgiving operator",
@@ -385,7 +304,6 @@
         {
           "name": "nullable-values",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Nullable values",
@@ -404,13 +322,6 @@
         {
           "name": "numbers",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know of the existence of the two most commonly used number types, \u0060int\u0060 and \u0060double\u0060",
-            "understand that the former represents whole numbers, and the latter floating-point numbers",
-            "know of basic operators such as multiplication, comparison and equality",
-            "know how to convert from one numeric type to another",
-            "know what implicit and explicit conversions are."
-          ],
           "original-concepts": [
             {
               "name": "- Numbers",
@@ -421,9 +332,6 @@
         {
           "name": "conditionals",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know how to conditionally execute code using an \u0060if\u0060 statement."
-          ],
           "original-concepts": [
             {
               "name": "- Conditionals",
@@ -434,7 +342,6 @@
         {
           "name": "math-operators",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Math operators",
@@ -445,7 +352,6 @@
         {
           "name": "assignment",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Assignment",
@@ -456,13 +362,6 @@
         {
           "name": "numbers",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know of the existence of the two most commonly used number types, \u0060int\u0060 and \u0060double\u0060",
-            "understand that the former represents whole numbers, and the latter floating-point numbers",
-            "know of basic operators such as multiplication, comparison and equality",
-            "know how to convert from one numeric type to another",
-            "know what implicit and explicit conversions are."
-          ],
           "original-concepts": [
             {
               "name": "- Numbers",
@@ -481,11 +380,6 @@
         {
           "name": "booleans",
           "track-neutral-concept": "reference/types/boolean.md",
-          "learning-objectives": [
-            "know of the existence of the \u0060bool\u0060 type and its two values",
-            "know about boolean operators and how to build logical expressions with them",
-            "know of the boolean operator precedence rules."
-          ],
           "original-concepts": [
             {
               "name": "- [Booleans][bool]",
@@ -496,11 +390,6 @@
         {
           "name": "booleans",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know of the existence of the \u0060bool\u0060 type and its two values",
-            "know about boolean operators and how to build logical expressions with them",
-            "know of the boolean operator precedence rules."
-          ],
           "original-concepts": [
             {
               "name": "  - Boolean logic",
@@ -519,13 +408,6 @@
         {
           "name": "chars",
           "track-neutral-concept": "reference/types/char.md",
-          "learning-objectives": [
-            "know of the existence of the \u0060char\u0060 type",
-            "know that a \u0060char\u0060 represents",
-            "know how to define a \u0060char\u0060",
-            "know how to access a \u0060char\u0060 in a string by index",
-            "know of some basic \u0060char\u0060 methods (like converting to uppercase)."
-          ],
           "original-concepts": [
             {
               "name": "- [Characters][char]",
@@ -544,14 +426,6 @@
         {
           "name": "arrays",
           "track-neutral-concept": "reference/types/array.md",
-          "learning-objectives": [
-            "know of the existence of the \u0060Array\u0060 type",
-            "know how to define an array",
-            "know how to access elements in an array by index",
-            "know how to update an element in an array by index",
-            "know how to iterate over elements in an array",
-            "know of some basic functions (like finding the index of an element in an array)."
-          ],
           "original-concepts": [
             {
               "name": "  - [Arrays][array]",
@@ -562,9 +436,6 @@
         {
           "name": "for-loops",
           "track-neutral-concept": "reference/concepts/enumeration.md",
-          "learning-objectives": [
-            "know how to use a \u0060for\u0060 loop to do iteration."
-          ],
           "original-concepts": [
             {
               "name": "  - [Enumeration: for loop][enumeration]",
@@ -575,7 +446,6 @@
         {
           "name": "foreach-loops",
           "track-neutral-concept": "reference/concepts/enumeration.md",
-          "learning-objectives": ["know how to iterate over a collection."],
           "original-concepts": [
             {
               "name": "  - [Enumeration: foreach loop][enumeration]",
@@ -594,14 +464,6 @@
         {
           "name": "dictionaries",
           "track-neutral-concept": "reference/types/map.md",
-          "learning-objectives": [
-            "know of the existence of the \u0060Dictionary\u003CTKey, TElement\u003E\u0060 type",
-            "know how to define a dictionary",
-            "know how to add and updated elements in a dictionary",
-            "know how to access elements in a dictionary by key",
-            "know how to iterate over elements in a dictionary",
-            "know some basic dictionary functions."
-          ],
           "original-concepts": [
             {
               "name": "  - [Dictionaries][map]",
@@ -612,7 +474,6 @@
         {
           "name": "base-class-library",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "Base Class Library",
@@ -623,15 +484,14 @@
       ]
     },
     {
-      "slug": "datetimes",
+      "slug": "dates",
       "level": "introductory",
       "completion-status": "complete",
       "document-link": "",
       "concepts": [
         {
-          "name": "datetimes",
+          "name": "dates",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Dates",
@@ -650,13 +510,6 @@
         {
           "name": "enums",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know of the existence of the \u0060enum\u0060 keyword",
-            "know how to define enum members",
-            "know how to assign values to enum members",
-            "know how to get an enum\u0027s numeric value",
-            "know how to convert an \u0060enum\u0060 to a \u0060string\u0060."
-          ],
           "original-concepts": [
             {
               "name": "- Enums",
@@ -675,9 +528,6 @@
         {
           "name": "floating-point-numbers",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know of the existing of the three floating point types: \u0060double\u0060, \u0060float\u0060 and \u0060decimal\u0060. know when to use which floating point type."
-          ],
           "original-concepts": [
             {
               "name": "  - Floating point numbers",
@@ -688,7 +538,6 @@
         {
           "name": "conditionals-while",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Conditionals: while",
@@ -707,11 +556,6 @@
         {
           "name": "strings",
           "track-neutral-concept": "reference/types/string.md",
-          "learning-objectives": [
-            "know of the existence of the \u0060string\u0060 type",
-            "know of some basic functions (like looking up a character at a position, or slicing the string)",
-            "know how to do basic string formatting."
-          ],
           "original-concepts": [
             {
               "name": "- [Strings][string]",
@@ -730,11 +574,6 @@
         {
           "name": "flag-enums",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know how to define a \u0022flags\u0022 enum",
-            "know how to add, remove or check for flags",
-            "know how to change the underlying type of an enum."
-          ],
           "original-concepts": [
             {
               "name": "- Flag Enums",
@@ -753,13 +592,28 @@
         {
           "name": "user-defined-exceptions",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know how to define a user-defined exception."
-          ],
           "original-concepts": [
             {
               "name": "- User Defined Exceptions",
               "line-number": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "user-defined-exceptions2",
+      "level": "introductory",
+      "completion-status": "complete",
+      "document-link": "",
+      "concepts": [
+        {
+          "name": "user-defined-exceptions2",
+          "track-neutral-concept": "",
+          "original-concepts": [
+            {
+              "name": "- User Defined Exceptions",
+              "line-number": 101
             }
           ]
         }
@@ -774,13 +628,6 @@
         {
           "name": "equality",
           "track-neutral-concept": "reference/concepts/sameness.md",
-          "learning-objectives": [
-            "know how to check for equality and inequality",
-            "know how reference equality differs from structural equality",
-            "know that equality works by default for value and reference types",
-            "know how to customize equality checks using \u0060Equals\u0060 and \u0060GetHashCode()\u0060",
-            "know of the \u0060IEquatable\u003CT\u003E\u0060 and \u0060IEqualityComparer\u003CT\u003E\u0060 interfaces and how to implement them."
-          ],
           "original-concepts": [
             {
               "name": "  - [Equality][equality] (\u0060Equals\u0060; \u0060GetHashCode\u0060)",
@@ -791,7 +638,6 @@
         {
           "name": "marker-interfaces",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Marker interfaces",
@@ -802,9 +648,6 @@
         {
           "name": "sets",
           "track-neutral-concept": "reference/types/set.md",
-          "learning-objectives": [
-            "Know how to use hash sets \u0060HashSet\u003CT\u003E\u0060 as provided by the .NET BCL. Understand the relationship with \u0060Object.GetHashCode()\u0060 and the performance charateristics of hash sets."
-          ],
           "original-concepts": [
             {
               "name": "  - [Sets][set]",
@@ -823,14 +666,6 @@
         {
           "name": "tuples",
           "track-neutral-concept": "reference/types/tuple.md",
-          "learning-objectives": [
-            "know what a tuple is",
-            "know how to define a tuple",
-            "know how to name tuple fields",
-            "know that tuples have structural equality",
-            "know how to deconstruct tuples",
-            "know that tuples are mutable."
-          ],
           "original-concepts": [
             {
               "name": "- [Tuples][tuple]",
@@ -849,12 +684,6 @@
         {
           "name": "randomness",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know how to implement randomness with \u0060System.Random\u0060 in C#",
-            "know that no seed is required",
-            "know that both integers and real numbers can be generated",
-            "know that once generated random numbers can be easily used for many purposes (including non-numeric ones)"
-          ],
           "original-concepts": [
             {
               "name": "- Randomness",
@@ -873,10 +702,6 @@
         {
           "name": "parameters",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know the difference between value and reference type parameters",
-            "know how to pass value types by reference using the \u0060ref\u0060 and \u0060out\u0060 modifiers."
-          ],
           "original-concepts": [
             {
               "name": "  - Method arguments / parameters",
@@ -887,7 +712,6 @@
         {
           "name": "named-arguments",
           "track-neutral-concept": "",
-          "learning-objectives": ["know how to use named arguments"],
           "original-concepts": [
             {
               "name": "    - Named arguments",
@@ -898,7 +722,6 @@
         {
           "name": "out-parameters",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "    - Out parameters",
@@ -909,7 +732,6 @@
         {
           "name": "optional-arguments",
           "track-neutral-concept": "reference/concepts/default_arguments.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "    - [Optional arguments][optional_arguments]",
@@ -920,15 +742,14 @@
       ]
     },
     {
-      "slug": "switch-statements",
+      "slug": "conditionals-switch",
       "level": "introductory",
       "completion-status": "complete",
       "document-link": "",
       "concepts": [
         {
-          "name": "switch-statements",
+          "name": "conditionals-switch",
           "track-neutral-concept": "",
-          "learning-objectives": ["Know how to use switch statements"],
           "original-concepts": [
             {
               "name": "  - Conditionals: switch",
@@ -947,9 +768,6 @@
         {
           "name": "object-initializers",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "Know how to initialize objects using object initialization syntax. Know how to initialize lists and dictionaries. Understand the relative advantages of constructors and initializers."
-          ],
           "original-concepts": [
             {
               "name": "  - Object initializers",
@@ -968,9 +786,6 @@
         {
           "name": "resource-cleanup",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "Know how to clean up resources with \u0060IDisposable\u0060 in C# and .NET. Understand the difference between managedd and unmanaged resources and the role of \u0060IDisposable\u0060."
-          ],
           "original-concepts": [
             {
               "name": "  - Resource cleanup (\u0060IDisposable\u0060)",
@@ -989,9 +804,6 @@
         {
           "name": "time",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "Know how to use \u0060DateTime\u0060 when time-of-day is important. Understand the difference between local time and Universal Coordinated Time). Understand the role of \u0060CultureInfo\u0060 in parsing times. Understand arithmetic with \u0060DateTime\u0060s."
-          ],
           "original-concepts": [
             {
               "name": "- Time",
@@ -1002,9 +814,6 @@
         {
           "name": "cross-platform",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know how to have different code paths (selected at run-time) for Linux, Windows and Mac"
-          ],
           "original-concepts": [
             {
               "name": "cross-platform",
@@ -1017,19 +826,12 @@
     {
       "slug": "interfaces",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/1225",
       "concepts": [
         {
           "name": "interfaces",
           "track-neutral-concept": "reference/concepts/interfaces.md",
-          "learning-objectives": [
-            "know what interfaces are",
-            "know how to use interfaces",
-            "know how to define an interface",
-            "know how to implement an interface",
-            "know how to explicitly implement an interface."
-          ],
           "original-concepts": [
             {
               "name": "- [Interfaces][interfaces]",
@@ -1040,7 +842,6 @@
         {
           "name": "explicit-interfaces",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Explicit Interface Implementation",
@@ -1051,19 +852,14 @@
       ]
     },
     {
-      "slug": "integral-numbers",
+      "slug": "signed-integers",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/780",
       "concepts": [
         {
-          "name": "integral-numbers",
+          "name": "signed-integers",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know of the difference between signed and unsigned integral types",
-            "know of the existence of the integral types: \u0060sbyte\u0060, \u0060byte\u0060, \u0060short\u0060, \u0060ushort\u0060, \u0060int\u0060, \u0060uint\u0060, \u0060long\u0060 and \u0060ulong\u0060",
-            "know when to use which integral type."
-          ],
           "original-concepts": [
             {
               "name": "  - Signed integers",
@@ -1074,7 +870,6 @@
         {
           "name": "unsigned-integers",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Unsigned integers",
@@ -1087,16 +882,12 @@
     {
       "slug": "constants",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/1044",
       "concepts": [
         {
           "name": "constants",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know how to define \u0060const\u0060 values",
-            "know how to define \u0060readonly\u0060 modifier know when to use \u0060const\u0060 or \u0060readonly\u0060."
-          ],
           "original-concepts": [
             {
               "name": "- Constants/readonly",
@@ -1107,21 +898,32 @@
       ]
     },
     {
+      "slug": "conditionals-ternary",
+      "level": "introductory",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/1635",
+      "concepts": [
+        {
+          "name": "conditionals-ternary",
+          "track-neutral-concept": "reference/concepts/conditionals.md",
+          "original-concepts": [
+            {
+              "name": "  - [Conditionals: ternary][conditionals]",
+              "line-number": 91
+            }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "exceptions",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/966",
       "concepts": [
         {
           "name": "exceptions",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know what exceptions are",
-            "know when an exception should be thrown",
-            "know how to throw (and rethrow) an exception",
-            "know how to catch an exception",
-            "know the most important built-in exceptions (\u0060ArgumentException\u0060, \u0060InvalidOperationException\u0060)."
-          ],
           "original-concepts": [
             {
               "name": "- Exceptions",
@@ -1134,21 +936,12 @@
     {
       "slug": "lists",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/958",
       "concepts": [
         {
           "name": "lists",
           "track-neutral-concept": "reference/types/list.md",
-          "learning-objectives": [
-            "know of the existence of the \u0060List\u003CT\u003E\u0060 type",
-            "know how a list is different from an array",
-            "know how to define a list",
-            "know how to add and remove elements from a list",
-            "know how to access elements in a list by their index",
-            "know how to iterate over elements in a list",
-            "know some basic list functions (like finding the index of an element in a list)."
-          ],
           "original-concepts": [
             {
               "name": "  - [Lists][list]",
@@ -1159,7 +952,6 @@
         {
           "name": "collections",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Collections",
@@ -1172,18 +964,12 @@
     {
       "slug": "structs",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/1017",
       "concepts": [
         {
           "name": "structs",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know what structs are",
-            "know how to define a \u0060struct\u0060",
-            "know how to add members to structs",
-            "know the differences between structs and classes."
-          ],
           "original-concepts": [
             {
               "name": "- Structs",
@@ -1196,33 +982,16 @@
     {
       "slug": "expression-bodied-members",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/1145",
       "concepts": [
         {
           "name": "expression-bodied-members",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know the difference between statements and expressions",
-            "know how to define expression bodied members."
-          ],
           "original-concepts": [
             {
               "name": "- Expression-bodied members",
               "line-number": 44
-            }
-          ]
-        },
-        {
-          "name": "conditionals-ternary",
-          "track-neutral-concept": "reference/concepts/conditionals.md",
-          "learning-objectives": [
-            "know how and when to use the ternary operator."
-          ],
-          "original-concepts": [
-            {
-              "name": "  - [Conditionals: ternary][conditionals]",
-              "line-number": 91
             }
           ]
         }
@@ -1231,16 +1000,12 @@
     {
       "slug": "namespaces",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/1127",
       "concepts": [
         {
           "name": "namespaces",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know what namespaces are",
-            "know how to import namespaces."
-          ],
           "original-concepts": [
             {
               "name": "  - Namespaces",
@@ -1251,7 +1016,6 @@
         {
           "name": "imports",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Imports (usings)",
@@ -1264,21 +1028,12 @@
     {
       "slug": "string-formatting",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/962",
       "concepts": [
         {
           "name": "string-formatting",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know how to use the \u0060ToString()\u0060 method to convert any object to a \u0060string\u0060",
-            "know how to use string interpolation on values of any type",
-            "know how to use default format strings to convert to standard output formats",
-            "know how to use custom format strings to convert to custom output formats",
-            "know that \u0060string.Format\u0060 underlies string interpolation",
-            "know of the \u0060StringBuilder\u0060 type and when to use it",
-            "know that string interpolation can interpolate any expression."
-          ],
           "original-concepts": [
             {
               "name": "- String formatting",
@@ -1289,7 +1044,6 @@
         {
           "name": "formatting-types",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Formatting types",
@@ -1300,7 +1054,6 @@
         {
           "name": "interpolation",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Interpolation",
@@ -1311,7 +1064,6 @@
         {
           "name": "string-builder",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - StringBuilder",
@@ -1322,7 +1074,6 @@
         {
           "name": "verbatim-strings",
           "track-neutral-concept": "",
-          "learning-objectives": ["the syntax of verbatim strings."],
           "original-concepts": [
             {
               "name": "verbatim strings",
@@ -1335,13 +1086,12 @@
     {
       "slug": "regular-expressions",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/1638",
       "concepts": [
         {
           "name": "regular-expressions",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Regular Expressions",
@@ -1354,13 +1104,12 @@
     {
       "slug": "resource-lifetime",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/1640",
       "concepts": [
         {
           "name": "resource-lifetime",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Resource lifetime",
@@ -1373,13 +1122,12 @@
     {
       "slug": "overflow",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/1138",
       "concepts": [
         {
           "name": "overflow",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Arithmetic overflow",
@@ -1392,13 +1140,12 @@
     {
       "slug": "nested-types",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/1643",
       "concepts": [
         {
           "name": "nested-types",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Nested types",
@@ -1411,18 +1158,12 @@
     {
       "slug": "casting",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/1142",
       "concepts": [
         {
           "name": "casting",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know what explicit and implicit casts are",
-            "know how to do an explicit cast",
-            "know how to use \u0060is\u0060 and \u0060as\u0060 to convert between types.",
-            "Understand casting of integral numeric types."
-          ],
           "original-concepts": [
             {
               "name": "  - Explicit (casts)",
@@ -1433,7 +1174,6 @@
         {
           "name": "implicit-casting",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Implicit",
@@ -1444,20 +1184,14 @@
       ]
     },
     {
-      "slug": "operator-overloading",
+      "slug": "operator-overload",
       "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "",
+      "completion-status": "newExerciseIssueRaised",
+      "document-link": "https://github.com/exercism/v3/issues/1712",
       "concepts": [
         {
-          "name": "operator-overloading",
+          "name": "operator-overload",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know when to how and why to overload operators for your own classes",
-            "understand the syntax of equality, comparison and arithmetic operators",
-            "know the syntax of user defined type conversion",
-            "know which operators cannot be overloaded"
-          ],
           "original-concepts": [
             {
               "name": "- operator overloading",
@@ -1476,7 +1210,6 @@
         {
           "name": "delegates",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Delegates",
@@ -1495,7 +1228,6 @@
         {
           "name": "attributes-advanced",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Attributes",
@@ -1514,7 +1246,6 @@
         {
           "name": "reflection",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Reflection",
@@ -1533,7 +1264,6 @@
         {
           "name": "events",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Events",
@@ -1552,7 +1282,6 @@
         {
           "name": "streams",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Streams",
@@ -1571,7 +1300,6 @@
         {
           "name": "indexers",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Indexers",
@@ -1590,7 +1318,6 @@
         {
           "name": "recursion",
           "track-neutral-concept": "reference/concepts/recursion.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- [Recursion][recursion]",
@@ -1609,7 +1336,6 @@
         {
           "name": "pattern-matching-types",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Pattern Matching Types",
@@ -1628,7 +1354,6 @@
         {
           "name": "pattern-matching-tuples",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Pattern Matching Tuples",
@@ -1647,7 +1372,6 @@
         {
           "name": "tasks",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Tasks",
@@ -1666,7 +1390,6 @@
         {
           "name": "async",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Asynchronous programming",
@@ -1685,7 +1408,6 @@
         {
           "name": "thread-safety",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "thread safety",
@@ -1704,7 +1426,6 @@
         {
           "name": "generics-advanced",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "    - Generics Constraints",
@@ -1723,7 +1444,6 @@
         {
           "name": "covariance",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "    - Covariance/Contravariance",
@@ -1742,7 +1462,6 @@
         {
           "name": "contravariance",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Concurrent collections",
@@ -1761,7 +1480,6 @@
         {
           "name": "locks",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Locks",
@@ -1780,7 +1498,6 @@
         {
           "name": "serialization",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Serialization",
@@ -1799,7 +1516,6 @@
         {
           "name": "extension-methods",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Extension methods",
@@ -1818,7 +1534,6 @@
         {
           "name": "statics",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Statics",
@@ -1837,7 +1552,6 @@
         {
           "name": "lambdas",
           "track-neutral-concept": "reference/concepts/anonymous_functions.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - [Anonymous functions][anonymous_functions]",
@@ -1856,7 +1570,6 @@
         {
           "name": "higherl-order-functions",
           "track-neutral-concept": "reference/concepts/higher_order_functions.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - [Higher-order functions][higher_order_functions]",
@@ -1875,7 +1588,6 @@
         {
           "name": "linq",
           "track-neutral-concept": "reference/concepts/pipelines.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- [LINQ][linq]",
@@ -1886,7 +1598,6 @@
         {
           "name": "collections-combining",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Collections: combining",
@@ -1897,7 +1608,6 @@
         {
           "name": "collections-filtering",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Collections: filtering",
@@ -1908,7 +1618,6 @@
         {
           "name": "collections-mapping",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Collections: mapping",
@@ -1919,7 +1628,6 @@
         {
           "name": "collections-ordering",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Collections: ordering",
@@ -1930,7 +1638,6 @@
         {
           "name": "collections-reduciing",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Collections: reducing",
@@ -1949,7 +1656,6 @@
         {
           "name": "anonymous-types",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Anonymous types",
@@ -1968,7 +1674,6 @@
         {
           "name": "enumerables",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Enumerables",
@@ -1987,7 +1692,6 @@
         {
           "name": "linq-advanced",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Advanced (GroupBy; Join; Zip; Cast; GroupJoin; AsEnumerable)",
@@ -2006,7 +1710,6 @@
         {
           "name": "linq-query-syntax",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Query Syntax",
@@ -2025,7 +1728,6 @@
         {
           "name": "linq-select-many",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - SelectMany",
@@ -2044,7 +1746,6 @@
         {
           "name": "yield",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Iterators (yield)",
@@ -2063,7 +1764,6 @@
         {
           "name": "immutable-collections",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Immutable collections",
@@ -2082,7 +1782,6 @@
         {
           "name": "by-ref",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Resource passing (by reference/by value)",
@@ -2100,8 +1799,7 @@
       "concepts": [
         {
           "name": "memory-allocation",
-          "track-neutral-concept": "",
-          "learning-objectives": [],
+          "track-neutral-concept": "memory_allocation",
           "original-concepts": [
             {
               "name": "  - [Resource allocation][memory_allocation]",
@@ -2120,7 +1818,6 @@
         {
           "name": "queues",
           "track-neutral-concept": "reference/types/deque.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - [Queues][queue]",
@@ -2139,7 +1836,6 @@
         {
           "name": "ranges",
           "track-neutral-concept": "reference/types/range.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - [Ranges][range]",
@@ -2158,7 +1854,6 @@
         {
           "name": "time-zones",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Time zones",
@@ -2177,7 +1872,6 @@
         {
           "name": "resource-pooling",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Resource Pooling",
@@ -2196,7 +1890,6 @@
         {
           "name": "dynamic",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- dynamic",
@@ -2215,7 +1908,6 @@
         {
           "name": "local-functions",
           "track-neutral-concept": "reference/concepts/nested_functions.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - [Local functions][local_functions]",
@@ -2234,7 +1926,6 @@
         {
           "name": "boxing",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Boxing/unboxing",
@@ -2253,7 +1944,6 @@
         {
           "name": "slicing",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Slicing",
@@ -2272,7 +1962,6 @@
         {
           "name": "unsafe-code",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Unsafe code",
@@ -2291,7 +1980,6 @@
         {
           "name": "lazy\u003CT\u003E",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Lazy\u0026lt;T\u0026gt;",
@@ -2310,7 +1998,6 @@
         {
           "name": "pointsers",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Pointers",
@@ -2329,7 +2016,6 @@
         {
           "name": "multi-dimensional-array",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - multi-dimensional array (incl Array.CreateInstance",
@@ -2348,7 +2034,6 @@
         {
           "name": "immutability",
           "track-neutral-concept": "reference/concepts/immutability.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": " - [Immutability][immutability] - public readonly structs",
@@ -2367,7 +2052,6 @@
         {
           "name": "stacks",
           "track-neutral-concept": "reference/types/stack.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - [Stacks][stack]",
@@ -2386,7 +2070,6 @@
         {
           "name": "destructors",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Destructors",
@@ -2405,7 +2088,6 @@
         {
           "name": "aysnc-iterators",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "    - Async iterators",
@@ -2424,7 +2106,6 @@
         {
           "name": "ref-local",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "ref local; ref return",
@@ -2443,7 +2124,6 @@
         {
           "name": "dispose-pattern",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "Dispose Pattern",
@@ -2462,7 +2142,6 @@
         {
           "name": "bitwise-manipulation",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Bitwise manipulation",
@@ -2473,7 +2152,6 @@
         {
           "name": "generics-introduction",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "- Generics Introduction",
@@ -2484,7 +2162,6 @@
         {
           "name": "conditionals-if",
           "track-neutral-concept": "reference/concepts/conditionals.md",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - [Conditionals: if][conditionals]",
@@ -2495,7 +2172,6 @@
         {
           "name": "conditionals-do-while",
           "track-neutral-concept": "",
-          "learning-objectives": [],
           "original-concepts": [
             {
               "name": "  - Conditionals: do-while",
@@ -2506,9 +2182,6 @@
         {
           "name": "ordering",
           "track-neutral-concept": "",
-          "learning-objectives": [
-            "know how to implement the \u0060IComparable\u003CT\u003E\u0060 interface and what its effect is on the behaviour of collections."
-          ],
           "original-concepts": [
             {
               "name": "  - Ordering",
