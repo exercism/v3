@@ -4,7 +4,6 @@ import org.junit.Ignore;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
 import static org.assertj.core.api.Assertions.*;
 
 public class LanguagesTest {
