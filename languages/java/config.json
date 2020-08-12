@@ -29,6 +29,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "lists",
+        "uuid": "e9e2491b-130e-4358-a54d-2c7d2e3e527c",
+        "concepts": ["generic-types", "lists"],
+        "prerequisites": ["arrays", "foreach-loops", "interface"]
+      },
+      {
         "slug": "strings",
         "uuid": "2165c331-6b0c-49b8-9555-bad577ec4fc6",
         "concepts": ["strings"],

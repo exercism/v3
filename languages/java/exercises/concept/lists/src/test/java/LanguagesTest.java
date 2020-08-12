@@ -9,23 +9,23 @@ import static org.assertj.core.api.Assertions.*;
 
 public class LanguagesTest {
     @Test
-    public void NewListIsEmpty(){
-        assertThat(Languages.NewList()).isEmpty();
+    public void newListIsEmpty() {
+        assertThat(Languages.newList()).isEmpty();
     }
 
     @Test
     @Ignore
-    public void ExistingList(){
+    public void existingList() {
         List<String> expected = new ArrayList<>();
         expected.add("Java");
         expected.add("Clojure");
         expected.add("Go");
-        assertThat(Languages.GetExistingLanguages()).isEqualTo(expected);
+        assertThat(Languages.getExistingLanguages()).isEqualTo(expected);
     }
 
     @Test
     @Ignore
-    public void AddLanguage(){
+    public void addLanguage() {
         List<String> initial = new ArrayList<>();
         initial.add("JavaScript");
         initial.add("Bash");
@@ -37,50 +37,50 @@ public class LanguagesTest {
         expected.add("Go");
         expected.add("C#");
 
-        assertThat(Languages.AddLanguage(initial,"C#")).isEqualTo(expected);
+        assertThat(Languages.addLanguage(initial, "C#")).isEqualTo(expected);
     }
 
     @Test
     @Ignore
-    public void CountLanguage(){
+    public void countLanguage() {
         List<String> list = new ArrayList<>();
-        assertEquals(Languages.CountLanguages(list),0);
+        assertThat(Languages.countLanguages(list)).isEqualTo(0);
         list.add("JavaScript");
         list.add("Bash");
-        assertThat(Languages.CountLanguages(list)).isEqualTo(2);
+        assertThat(Languages.countLanguages(list)).isEqualTo(2);
     }
 
     @Test
     @Ignore
-    public void LastLanguage(){
-        List<String> list = new ArrayList<>();
-        list.add("JavaScript");
-        list.add("Bash");
-        assertThat(Languages.FirstLanguage(list)).isEqualTo("Bash");
-    }
-
-
-    @Test
-    @Ignore
-    public void HasLanguage_yes(){
+    public void lastLanguage() {
         List<String> list = new ArrayList<>();
         list.add("JavaScript");
         list.add("Bash");
-        assertThat(Languages.HasLanguage(list,"Bash")).isTrue();
+        assertThat(Languages.lastLanguage(list)).isEqualTo("Bash");
     }
+
 
     @Test
     @Ignore
-    public void HasLanguage_no(){
+    public void hasLanguage_yes() {
         List<String> list = new ArrayList<>();
         list.add("JavaScript");
         list.add("Bash");
-        assertThat(Languages.HasLanguage(list,"Java")).isFalse();
+        assertThat(Languages.hasLanguage(list, "Bash")).isTrue();
     }
 
     @Test
     @Ignore
-    public void RemoveLanguage_yes(){
+    public void hasLanguage_no() {
+        List<String> list = new ArrayList<>();
+        list.add("JavaScript");
+        list.add("Bash");
+        assertThat(Languages.hasLanguage(list, "Java")).isFalse();
+    }
+
+    @Test
+    @Ignore
+    public void removeLanguage_yes() {
         List<String> initial = new ArrayList<>();
         initial.add("JavaScript");
         initial.add("Bash");
@@ -90,12 +90,12 @@ public class LanguagesTest {
         expected.add("JavaScript");
         expected.add("Go");
 
-        assertThat(Languages.RemoveLanguage(initial,"Bash")).isEqualTo(expected);
+        assertThat(Languages.removeLanguage(initial, "Bash")).isEqualTo(expected);
     }
 
     @Test
     @Ignore
-    public void RemoveLanguage_no(){
+    public void removeLanguage_no() {
         List<String> initial = new ArrayList<>();
         initial.add("JavaScript");
         initial.add("Bash");
@@ -106,60 +106,59 @@ public class LanguagesTest {
         expected.add("Bash");
         expected.add("Go");
 
-        assertThat(Languages.RemoveLanguage(initial,"Bash")).isNotEqualTo(expected);
-        //assertThat(Languages.RemoveLanguage(initial,"Bash").equals(expected)).isFalse();
+        assertThat(Languages.removeLanguage(initial, "Bash")).isNotEqualTo(expected);
     }
 
     @Test
     @Ignore
-    public void EnsureUnique_None() {
+    public void ensureUnique_None() {
         List<String> list = new ArrayList<>();
         list.add("JavaScript");
         list.add("Bash");
         list.add("Go");
-        assertThat(Languages.EnsureUnique(list,"Java")).isFalse();
+        assertThat(Languages.ensureUnique(list, "Java")).isFalse();
     }
 
     @Test
     @Ignore
-    public void EnsureUnique_Once() {
+    public void ensureUnique_Once() {
         List<String> list = new ArrayList<>();
         list.add("JavaScript");
         list.add("Bash");
         list.add("Go");
-        assertThat(Languages.EnsureUnique(list, "Go")).isTrue();
+        assertThat(Languages.ensureUnique(list, "Go")).isTrue();
     }
 
     @Test
     @Ignore
-    public void EnsureUnique_Twice() {
-        List<String> list = new ArrayList<>();
-        list.add("Go");
-        list.add("JavaScript");
-        list.add("Bash");
-        list.add("Go");
-        assertThat(Languages.EnsureUnique(list,"Go")).isFalse();
-    }
-
-    @Test
-    @Ignore
-    public void PositionOf() {
-        List<String> list = new ArrayList<>();
-        list.add("JavaScript");
-        list.add("Bash");
-        list.add("Go");
-        assertThat(Languages.PositionOf(list,"Go")).isEqualTo(2);
-    }
-
-    @Test
-    @Ignore
-    public void PositionOf_TwoOccurence() {
+    public void ensureUnique_Twice() {
         List<String> list = new ArrayList<>();
         list.add("Go");
         list.add("JavaScript");
         list.add("Bash");
         list.add("Go");
-        assertThat(Languages.PositionOf(list,"Go")).isEqualTo(0);
+        assertThat(Languages.ensureUnique(list, "Go")).isFalse();
+    }
+
+    @Test
+    @Ignore
+    public void positionOf() {
+        List<String> list = new ArrayList<>();
+        list.add("JavaScript");
+        list.add("Bash");
+        list.add("Go");
+        assertThat(Languages.positionOf(list, "Go")).isEqualTo(2);
+    }
+
+    @Test
+    @Ignore
+    public void positionOf_TwoOccurence() {
+        List<String> list = new ArrayList<>();
+        list.add("Go");
+        list.add("JavaScript");
+        list.add("Bash");
+        list.add("Go");
+        assertThat(Languages.positionOf(list, "Go")).isEqualTo(0);
     }
 
 
