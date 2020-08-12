@@ -14,7 +14,7 @@ You are writing an embedded system for a Take-A-Number machine. It is a very sim
 
 ## Implementations
 
-- [Elixir][implementation-elixir] (reference implementation)
+- [Elixir: processes][implementation-elixir] (reference implementation)
 
 ## Related
 

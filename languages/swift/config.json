@@ -1,5 +1,6 @@
 {
   "language": "Swift",
+  "slug": "swift",
   "active": true,
   "blurb": "Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns. Although Swift is great for iOS, iPadOS, and macOS programming, it also offers great programming capabilities for servr-side applications, Linux programming, and will soon be officially supported on Windows as well.",
   "version": 3,
@@ -51,7 +52,7 @@
         "slug": "optionals",
         "uuid": "9d0bb0ad-904c-4d61-9d2c-ae37913d5741",
         "concepts": ["optionals"],
-        "prerequisites": ["numbers", "conditionals"]
+        "prerequisites": ["tuples", "conditionals"]
       },
       {
         "slug": "strings",

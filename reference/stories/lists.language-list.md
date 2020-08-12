@@ -19,9 +19,9 @@ The exercise generally guides students how to:
 
 ## Implementations
 
-- [Clojure][implementation-clojure] (reference implementation)
-- [Elixir][implementation-elixir]
-- [F#][implementation-fsharp]
+- [Clojure: lists][implementation-clojure] (reference implementation)
+- [Elixir: lists][implementation-elixir]
+- [F#: lists][implementation-fsharp]
 
 ## Reference
 

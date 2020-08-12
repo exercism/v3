@@ -29,6 +29,9 @@ type Story =
       Implementations: Implementation list }
     
 module Parser =
+    let private normalize (str: string) =
+        str.Replace("\r\n", "\n")
+
     let private range (span: MarkdownSpan) =
         match span with
         | Literal(_, range) -> range
@@ -80,6 +83,7 @@ module Parser =
         |> List.pairwise
         |> List.tryPick description
         |> Option.map (originalMarkdownCode markdownCode)
+        |> Option.map normalize
 
     let private parseLink (markdown: MarkdownDocument) (key: string): string option =
         match markdown.DefinedLinks.TryGetValue(key) with
@@ -88,23 +92,28 @@ module Parser =
         
     let private parseSlugAndExercise (link: string): (string * string) option =
         let matched = Regex.Match(link, "languages/(.+?)/exercises/concept/(.+?)/")
-        if matched.Success then Some (matched.Groups.[1].Value, matched.Groups.[2].Value)  else None 
+        if matched.Success then Some (matched.Groups.[1].Value, matched.Groups.[2].Value) else None
+
+    let private parseTrack (languagesDirectory: DirectoryInfo) (slug: string): string =
+        use jsonFile = File.OpenRead(Path.Combine(languagesDirectory.FullName, slug, "config.json")) 
+        let jsonDocument = JsonDocument.Parse(jsonFile)
+        jsonDocument.RootElement.GetProperty("language").GetString()
 
     let private parseImplementation (languagesDirectory: DirectoryInfo) (markdown: MarkdownDocument) (paragraphs: MarkdownParagraphs): Implementation option =
-        let createImplementation track (slug, exercise) =
-            { Track = track
+        let createImplementation (slug, exercise) =
+            { Track = parseTrack languagesDirectory slug
               Slug = slug
               Exercise = exercise
               Status = parseImplementationStatus languagesDirectory slug exercise }
         
         match paragraphs with
-        | [Span(body = IndirectLink(body = [Literal(text=text)]; key = key)::_)] ->
+        | [Span(body = IndirectLink(body = [Literal]; key = key)::_)] ->
             parseLink markdown key
             |> Option.bind parseSlugAndExercise
-            |> Option.map (createImplementation text)
-        | [Span(body = [DirectLink(body = [Literal(text=text)]; link = link)])] ->
+            |> Option.map createImplementation
+        | [Span(body = [DirectLink(body = [Literal]; link = link)])] ->
             parseSlugAndExercise link
-            |> Option.map (createImplementation text)
+            |> Option.map createImplementation
         | _ -> None
         
     let private parseImplementations (languagesDirectory: DirectoryInfo) (markdown: MarkdownDocument): Implementation list option =
@@ -182,7 +191,7 @@ module Markdown =
         let concept =
             match story.Concept.File with
             | Some conceptFile ->
-                let relativePath = Path.GetRelativePath(Path.Combine("reference", "stories"), conceptFile.FullName)
+                let relativePath = Path.GetRelativePath(Path.Combine("reference", "stories"), conceptFile.FullName).Replace(Path.DirectorySeparatorChar, '/')
                 sprintf "[`%s`](%s)" story.Concept.Name relativePath
             | None -> sprintf "`%s`" story.Concept.Name
 
@@ -324,7 +333,7 @@ module Json =
         let jsonStories =
             stories
             |> List.map storyToJsonStory
-            |> List.sortBy (fun story -> story.Name)
+            |> List.sortBy (fun story -> (story.Name, story.Url))
         
         let options = JsonSerializerOptions()
         options.WriteIndented <- true

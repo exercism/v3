@@ -36,8 +36,8 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 ## Implementations
 
-- [Elixir][implementation-elixir]
-- [JavaScript][implementation-javascript] (reference implementation)
+- [Elixir: numbers][implementation-elixir]
+- [JavaScript: numbers][implementation-javascript] (reference implementation)
 
 ## Reference
 

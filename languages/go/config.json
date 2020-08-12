@@ -1,5 +1,6 @@
 {
   "language": "Go",
+  "slug": "go",
   "active": true,
   "blurb": "Go is a compiled, open source programming language with a small, consistent syntax, a powerful standard library, and fantastic tooling. It's a great fit for web backends and command-line tools and has meanwhile established itself as `the language of the cloud`.",
   "version": 3,
@@ -11,6 +12,12 @@
   "exercises": {
     "concept": [
       {
+        "slug": "anonymous-functions",
+        "uuid": null,
+        "concepts": ["anonymous-functions"],
+        "prerequisites": ["functions"]
+      },
+      {
         "slug": "application-timing",
         "uuid": null,
         "concepts": ["application-timing"],
@@ -19,27 +26,20 @@
       {
         "slug": "basics",
         "uuid": "6396fe40-ff11-4ff5-b880-9681bce30a6e",
-        "concepts": ["basics"],
+        "concepts": ["packages", "functions", "variables"],
         "prerequisites": []
       },
       {
         "slug": "bytes-and-runes",
         "uuid": null,
         "concepts": ["bytes", "runes"],
-        "prerequisites": [
-          "strings",
-          "numbers",
-          "iteration",
-          "functions",
-          "conditionals",
-          "slices"
-        ]
+        "prerequisites": ["strings", "iteration", "conditionals", "slices"]
       },
       {
         "slug": "booleans",
         "uuid": "d09a49d4-b69c-40a2-ae7e-8fde4ba4c7c7",
         "concepts": ["booleans"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["variables"]
       },
       {
         "slug": "channels",
@@ -51,7 +51,7 @@
         "slug": "comments",
         "uuid": "60186dfa-6a63-4859-a4c4-1e1ed1acf384",
         "concepts": ["comments"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["packages", "functions"]
       },
       {
         "slug": "conditionals",
@@ -69,7 +69,14 @@
         "slug": "context",
         "uuid": null,
         "concepts": ["context"],
-        "prerequisites": ["time", "duration", "channels", "select"]
+        "prerequisites": [
+          "time",
+          "duration",
+          "channels",
+          "select",
+          "defer",
+          "type-assertion"
+        ]
       },
       {
         "slug": "defer",
@@ -78,10 +85,16 @@
         "prerequisites": ["anonymous-functions", "functions"]
       },
       {
+        "slug": "duration",
+        "uuid": null,
+        "concepts": ["duration"],
+        "prerequisites": ["time", "numbers"]
+      },
+      {
         "slug": "empty-interface",
         "uuid": null,
         "concepts": ["empty-interface"],
-        "prerequisites": ["functions"]
+        "prerequisites": ["variables"]
       },
       {
         "slug": "errors",
@@ -93,7 +106,7 @@
         "slug": "errors-handling",
         "uuid": null,
         "concepts": ["errors-handling"],
-        "prerequisites": ["errors", "nil"]
+        "prerequisites": ["errors", "nil", "zero-value"]
       },
       {
         "slug": "floating-point",
@@ -102,28 +115,22 @@
         "prerequisites": ["numbers", "conditionals"]
       },
       {
-        "slug": "functions",
-        "uuid": null,
-        "concepts": ["functions"],
-        "prerequisites": ["numbers"]
-      },
-      {
         "slug": "iteration",
         "uuid": null,
         "concepts": ["iteration"],
-        "prerequisites": ["conditionals", "functions", "anonymous-functions"]
+        "prerequisites": ["numbers", "conditionals"]
       },
       {
         "slug": "interfaces",
         "uuid": null,
         "concepts": ["interfaces"],
-        "prerequisites": ["methods", "errors", "empty-interface"]
+        "prerequisites": ["methods", "empty-interface", "nil"]
       },
       {
         "slug": "maps",
         "uuid": "8c1da631-3600-405b-83f7-21fa76bf05b6",
         "concepts": ["maps"],
-        "prerequisites": ["numbers", "conditionals", "functions"]
+        "prerequisites": ["numbers", "conditionals"]
       },
       {
         "slug": "methods",
@@ -138,40 +145,58 @@
         "prerequisites": ["defer"]
       },
       {
-        "slug": "nil",
+        "slug": "zero-value",
         "uuid": "7b265cc8-8f88-4de1-b653-10a384e6c7e2",
-        "concepts": ["nil"],
-        "prerequisites": ["basics"]
+        "concepts": ["zero-value", "nil"],
+        "prerequisites": [
+          "functions",
+          "numbers",
+          "strings",
+          "pointers",
+          "booleans"
+        ]
       },
       {
         "slug": "numbers",
         "uuid": "88215fa2-eba8-430e-988f-21a924f18f7b",
         "concepts": ["numbers", "conditionals"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["variables"]
       },
       {
         "slug": "panic-and-recover",
         "uuid": null,
         "concepts": ["panic", "recover"],
-        "prerequisites": ["defer", "type-assertion"]
+        "prerequisites": ["defer", "type-assertion", "errors"]
       },
       {
         "slug": "pointers",
         "uuid": "b1619ab0-2306-4d1d-bbcd-1d70ea38fa98",
-        "concepts": ["pointers", "functions"],
-        "prerequisites": ["nil"]
+        "concepts": ["pointers"],
+        "prerequisites": ["variables"]
       },
       {
         "slug": "reflection",
         "uuid": null,
         "concepts": ["reflection"],
-        "prerequisites": ["interfaces", "empty-interfaces"]
+        "prerequisites": ["interfaces", "empty-interface"]
       },
       {
         "slug": "goroutines",
         "uuid": null,
         "concepts": ["goroutines"],
         "prerequisites": ["functions", "iteration", "anonymous-functions"]
+      },
+      {
+        "slug": "range-iteration",
+        "uuid": null,
+        "concepts": ["range-iteration"],
+        "prerequisites": ["iteration", "maps", "slices"]
+      },
+      {
+        "slug": "select",
+        "uuid": null,
+        "concepts": ["select"],
+        "prerequisites": ["channels"]
       },
       {
         "slug": "slices",
@@ -183,7 +208,7 @@
         "slug": "strings",
         "uuid": "e09523d2-c91f-11ea-87d0-0242ac130003",
         "concepts": ["strings"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["variables"]
       },
       {
         "slug": "strings-package",
@@ -201,25 +226,19 @@
         "slug": "time",
         "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
         "concepts": ["time"],
-        "prerequisites": ["numbers", "strings", "functions"]
+        "prerequisites": ["numbers", "strings"]
       },
       {
         "slug": "type-assertion",
-        "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
+        "uuid": null,
         "concepts": ["type-assertion"],
         "prerequisites": ["interfaces"]
       },
       {
         "slug": "type-conversion",
-        "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
-        "concepts": ["type-assertion"],
-        "prerequisites": ["string", "numbers"]
-      },
-      {
-        "slug": "duration",
-        "uuid": "1c1414d4-3688-4e9d-bc38-908eb7adf970",
-        "concepts": ["duration"],
-        "prerequisites": ["time", "numbers"]
+        "uuid": null,
+        "concepts": ["type-conversion"],
+        "prerequisites": ["strings", "numbers"]
       }
     ],
     "practice": []

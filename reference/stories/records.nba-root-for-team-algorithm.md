@@ -20,7 +20,7 @@ These are example tasks that fit the NBA root-for-team algorithm exercise:
 
 ## Implementations
 
-- [F#][implementation-fsharp] (reference implementation)
+- [F#: records][implementation-fsharp] (reference implementation)
 
 ## Related
 
