@@ -30,6 +30,12 @@ public class IdentifierTest {
 
     @Ignore("Remove to run test")
     @Test
+    public void leading_and_trailing_spaces() {
+        assertThat(Identifier.clean(" myId ")).isEqualTo("_myId_");
+    }
+
+    @Ignore("Remove to run test")
+    @Test
     public void ctrl() {
         assertThat(Identifier.clean("my\0Id")).isEqualTo("myCTRLId");
     }
