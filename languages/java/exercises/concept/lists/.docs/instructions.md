@@ -67,6 +67,7 @@ Languages.HasLanguage(Languages.GetExistingLanguages(), "Go")
 ```
 
 ## 7. Remove Language
+
 You now realize that you don't want to learn Clojure anymore. You want to remove it from your list.
 
 Please implement the static `Languages.RemoveLangage()` method to remove a specified language from the list.
@@ -77,20 +78,23 @@ Languages.RemoveLanguage(Languages.GetExistingLanguages(), "Clojure")
 ```
 
 ## 8. Check if a language is unique
+
 You were really intent on learning Java, and as such, you are not sure if you put it twice in your list.
 
-Please implement the static `Languages.EnsureUnique()` method to check if a language is present only once in your list.
+Please implement the static `Languages.ensureUnique()` method to check if a language is present only once in your list.
 
 ```java
-Languages.EnsureUnique(Languages.GetExistingLanguages(), "Java");
+Languages.ensureUnique(Languages.getExistingLanguages(), "Java");
 // => true
 ```
 
 ## 9. Find where a language is in your list
+
 You remember adding Java to your list, but you don't remember at which place.
 
-Please implement the static `Languages.PositionOf()` method to know at which index a language appears first in your list.
+Please implement the static `Languages.positionOf()` method to know at which index a language appears first in your list.
+
 ```java
-Languages.PositionOf(Languages.GetExistingLanguages(), "Java");
+Languages.positionOf(Languages.getExistingLanguages(), "Java");
 // => 0
 ```
