@@ -10,14 +10,11 @@
 ## Out of scope
 
 - Reference equality.
-- Reference parameter passing.
 - Constructors.
 - Interfaces.
 - Inheritance.
-- Properties.
-- Destructors.
+- Finalizers.
 - Method overloading.
-- Pattern matching.
 
 ## Concepts
 

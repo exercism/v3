@@ -1,6 +1,6 @@
 The primary object-oriented construct in Java is the _class_, which is a combination of data (_fields_) and behavior (_methods_). The fields and methods of a class are known as its _members_.
 
-Access to members can be restricted through access modifiers, the two most common ones being:
+Access to members can be controlled through access modifiers, the two most common ones being:
 
 - `public`: the member can be accessed by any code (no restrictions).
 - `private`: the member can only be accessed by code in the same class.
