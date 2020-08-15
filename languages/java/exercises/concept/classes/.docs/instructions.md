@@ -76,6 +76,6 @@ RemoteControlCar car = RemoteControlCar.buy();
 car.distanceDisplay();
 // => "Driven 2000 meters"
 
-car.datteryDisplay();
+car.batteryDisplay();
 // => "Battery empty"
 ```

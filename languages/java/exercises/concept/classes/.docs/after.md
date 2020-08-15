@@ -30,7 +30,7 @@ class Car
     public int weight;
 
     // Only accessible by code in this class
-    private string color;
+    private String color;
 }
 ```
 
