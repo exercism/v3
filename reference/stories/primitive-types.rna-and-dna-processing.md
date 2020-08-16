@@ -10,7 +10,7 @@ You could consider adding those exercises twice (perhaps as practice exercise) i
 
 ## Implementations
 
-- [Elixir][implementation-elixir]
+- [Elixir: bitstrings][implementation-elixir]
 
 ## Reference
 

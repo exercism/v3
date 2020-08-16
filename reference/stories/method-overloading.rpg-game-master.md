@@ -16,6 +16,6 @@ These are example tasks that fit the game master exercise:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
+- [C#: method-overloading][implementation-csharp] (reference implementation)
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/method-overloading/.docs/instructions.md

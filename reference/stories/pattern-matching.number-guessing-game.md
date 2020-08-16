@@ -20,8 +20,8 @@ These are example tasks that fit the number guessing game exercise:
 
 ## Implementations
 
-- [F#][implementation-fsharp] (reference implementation)
-- [Elixir][implementation-elixir] (forked implementation)
+- [F#: pattern-matching][implementation-fsharp] (reference implementation)
+- [Elixir: multiple-clause-functions][implementation-elixir] (forked implementation)
 
 ## Related
 
