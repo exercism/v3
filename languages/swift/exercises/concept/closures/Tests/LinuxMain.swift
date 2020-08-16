@@ -1,5 +1,4 @@
 import XCTest
-
 import closuresTests
 
 var tests = [XCTestCaseEntry]()
