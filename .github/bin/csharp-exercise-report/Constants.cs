@@ -8,5 +8,9 @@ namespace ExerciseReport
 
         public const string ExercisesJsonHeaderResource = "exercises_json_header.txt";
         public const string ExerciseReportIntroResource = "exercise_report_intro.md-ish";
+
+        public const string DesignMd = "design.md";
+        public const string ExercisesJson = "exercises.json";
+        public const string ExerciseErrorsJson = "exercise-errors.json";
     }
 }

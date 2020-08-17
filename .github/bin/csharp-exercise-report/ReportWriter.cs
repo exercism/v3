@@ -7,7 +7,7 @@ namespace ExerciseReport
 
         public static ReportWriter CSharpReportWriter { get; } =
             new ReportWriter(new ReportFileHandler(PathNames.Default.Root, Constants.CSharpTrack),
-                new ReportFormatter(PathNames.Default.Root));
+                new ReportFormatter());
         public ReportWriter(IReportFileHandler reportFileHandler,
             ReportFormatter reportFormatter)
         {

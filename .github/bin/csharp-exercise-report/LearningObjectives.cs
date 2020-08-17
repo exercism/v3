@@ -5,25 +5,18 @@ namespace ExerciseReport
 {
     internal class LearningObjectives
     {
-        public IBuilder Builder { get; }
-
-        private readonly Dictionary<(string, string), List<string>> conceptsInclDesignDocId 
-            = new Dictionary<(string, string), List<string>>();
-        private readonly Dictionary<string, List<string>> concepts = new Dictionary<string, List<string>>();
-
         public interface IBuilder
         {
             void Add((string DesignDocId, string ConceptName) concept, string learningObjective);
+            LearningObjectives CreateLearningObjectives();
         }
 
         private class BuilderImpl : IBuilder
         {
-            private readonly LearningObjectives _this;
+            private readonly Dictionary<string, List<string>> concepts = new Dictionary<string, List<string>>();
 
-            public BuilderImpl(LearningObjectives _this)
-            {
-                this._this = _this;
-            }
+            private readonly Dictionary<(string, string), List<string>> conceptsInclDesignDocId
+                = new Dictionary<(string, string), List<string>>();
 
             public void Add((string DesignDocId, string ConceptName) concept, string learningObjective)
             {
@@ -31,30 +24,47 @@ namespace ExerciseReport
                 AddConcept(concept.ConceptName, learningObjective);
             }
 
+            public LearningObjectives CreateLearningObjectives()
+            {
+                return new LearningObjectives(concepts, conceptsInclDesignDocId);
+            }
+
             private void AddConcept(string conceptName, string learningObjective)
             {
-                if (!_this.concepts.ContainsKey(conceptName))
+                if (!concepts.ContainsKey(conceptName))
                 {
-                    _this.concepts[conceptName] = new List<string>();
+                    concepts[conceptName] = new List<string>();
                 }
 
-                _this.concepts[conceptName].Add(learningObjective);
+                concepts[conceptName].Add(learningObjective);
             }
 
             private void AddConceptInclDesignDocId((string, string) concept, string learningObjective)
             {
-                if (!_this.conceptsInclDesignDocId.ContainsKey(concept))
+                if (!conceptsInclDesignDocId.ContainsKey(concept))
                 {
-                    _this.conceptsInclDesignDocId[concept] = new List<string>();
+                    conceptsInclDesignDocId[concept] = new List<string>();
                 }
 
-                _this.conceptsInclDesignDocId[concept].Add(learningObjective);
+                conceptsInclDesignDocId[concept].Add(learningObjective);
             }
         }
 
-        public LearningObjectives()
+        private readonly Dictionary<string, List<string>> concepts = new Dictionary<string, List<string>>();
+
+        private readonly Dictionary<(string, string), List<string>> conceptsInclDesignDocId
+            = new Dictionary<(string, string), List<string>>();
+
+        public static IBuilder CreateBuilder()
         {
-            Builder = new BuilderImpl(this);
+            return new BuilderImpl();
+        }
+
+        private LearningObjectives(Dictionary<string, List<string>> concepts,
+            Dictionary<(string, string), List<string>> conceptsInclDesignDocId)
+        {
+            this.concepts = concepts;
+            this.conceptsInclDesignDocId = conceptsInclDesignDocId;
         }
 
         public IEnumerable<string>? GetObjectivesForConcept(string conceptName)

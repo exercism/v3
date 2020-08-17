@@ -6,48 +6,51 @@ namespace ExerciseReport
 {
     internal class ExerciseMerger
     {
-        private readonly ExerciseReader exerciseFileHandler;
+        private readonly ExerciseReader exerciseReader;
         private readonly DesignDocReader designDocReader;
         private readonly int maxErrors;
 
-        public ExerciseMerger(ExerciseReader exerciseFileHandler,
+        public ExerciseMerger(ExerciseReader exerciseReader,
             DesignDocReader designDocReader,
             int maxErrors = Constants.MaxMissingLearningObjectives)
         {
-            this.exerciseFileHandler = exerciseFileHandler;
+            this.exerciseReader = exerciseReader;
             this.designDocReader = designDocReader;
             this.maxErrors = maxErrors;
         }
 
         public static ExerciseMerger CSharpMerger { get; } =
-            new ExerciseMerger(new ExerciseReader(
-                    new ExerciseFileHandler(PathNames.Default.Root, Constants.CSharpTrack), 
-                    new ExerciseJsonParser())
-                , new DesignDocReader(
+            new ExerciseMerger(
+                new ExerciseReader(
+                    new ExerciseFileHandler(PathNames.Default.Root, Constants.CSharpTrack),
+                    new ExerciseJsonParser()),
+                new DesignDocReader(
                     new DesignDocFileHandler(PathNames.Default.Root, Constants.CSharpTrack),
                     new DesignDocParser())
-                );
+            );
 
-         public (Result Result, ExerciseObjectTree ExerciseObjectTree, List<Error> Errors) 
+        public (Result Result, ExerciseObjectTree ExerciseObjectTree, List<Error> Errors)
             MergeExercisesAndLearningObjectives()
         {
-            var outputs = exerciseFileHandler.ReadExercises();
-            if (outputs.Result == Result.FatalError)
+            var readResults = exerciseReader.ReadExercises();
+            if (readResults.Result == Result.FatalError)
             {
-                return outputs;
+                return readResults;
             }
+
             var learningObjectives = designDocReader.GetAllLearningObjectives();
-            MergeLearningObjectives(outputs.ExerciseObjectTree, learningObjectives.learningObjectives);
-            var unmatchedConcepts = ReportUnmatchedConcepts(outputs.ExerciseObjectTree, learningObjectives.learningObjectives);
-            var missingLearningObjectives = ReportMissingLearningObjectives(outputs.ExerciseObjectTree);
-            var combinedErrors = outputs.Errors
+            MergeLearningObjectives(readResults.ExerciseObjectTree, learningObjectives.learningObjectives);
+            var unmatchedConcepts =
+                ReportUnmatchedConcepts(readResults.ExerciseObjectTree, learningObjectives.learningObjectives);
+            var missingLearningObjectives = ReportMissingLearningObjectives(readResults.ExerciseObjectTree);
+            var combinedErrors = readResults.Errors
                 .Concat(learningObjectives.errors)
                 .Concat(unmatchedConcepts)
                 .Concat(missingLearningObjectives)
                 .ToList();
             var maxSeverity = combinedErrors.Select(e => e.Severity).DefaultIfEmpty(Severity.None).Max();
             Result result = SeverityToResult(maxSeverity);
-            return (result, outputs.ExerciseObjectTree, combinedErrors);
+            return (result, readResults.ExerciseObjectTree, combinedErrors);
         }
 
         private List<Error> ReportMissingLearningObjectives(ExerciseObjectTree exerciseObjectTree)
@@ -58,15 +61,15 @@ namespace ExerciseReport
                 .Select(e_and_c =>
                     new Error(ErrorSource.MissingLearningObjective,
                         Severity.Error,
-                        $"The {e_and_c.Concept.Name} concept has no learning objectives on the exercise report - update the design.md for the {e_and_c.Exercise.Slug} exercise")
+                        $"The {e_and_c.Concept.Name} concept has no learning objectives on the exercise report - update the {Constants.DesignMd} for the {e_and_c.Exercise.Slug} exercise")
                 ).ToList();
             if (errors.Count > maxErrors)
             {
                 errors.Add(
-                    new Error(ErrorSource.MissingLearningObjective, 
+                    new Error(ErrorSource.MissingLearningObjective,
                         Severity.Fatal,
-                        "Too many concepts have no learning objectives - see exercise-errors.json")
-                    );
+                        $"Too many concepts have no learning objectives - see {Constants.ExerciseErrorsJson}")
+                );
             }
 
             return errors;
@@ -76,17 +79,17 @@ namespace ExerciseReport
             LearningObjectives learningObjectives)
         {
             var exerciseMap = exerciseObjectTree.Exercises
-                .SelectMany(ex =>  ex.Concepts)
+                .SelectMany(ex => ex.Concepts)
                 .Select(con => con.Name)
                 .ToHashSet();
-            
+
             List<Error> errors = new List<Error>();
             foreach ((string DocId, string ConceptName) conceptDetails in learningObjectives.ConceptsInclDesignDocId)
             {
                 if (!exerciseMap.Contains(conceptDetails.ConceptName))
                 {
                     errors.Add(new Error(ErrorSource.Merge, Severity.Error,
-                        $"Failed to find concept {conceptDetails.ConceptName}, from the {conceptDetails.DocId} design.md, in exercises.json file"));
+                        $"Failed to find concept {conceptDetails.ConceptName}, from the {conceptDetails.DocId} {Constants.DesignMd}, in {Constants.ExercisesJson} file"));
                 }
             }
 

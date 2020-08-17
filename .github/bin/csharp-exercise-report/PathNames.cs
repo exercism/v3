@@ -4,15 +4,16 @@ namespace ExerciseReport
 {
     internal class PathNames
     {
-        private const string ProductionRoot = ".";
+        // private const string ProductionRoot = ".";
+        private const string ProductionRoot = "/Users/mikedamay/projects/exercism/v3";
         
         public string Root { get; }
         public string Languages { get; } = "languages";
         public string TrackNeutralConcepts { get; } = "reference/concepts";
         public string Exercises { get; } = "exercises/concept";
-        public string DesignDocName { get; } = ".meta/design.md";
-        public string ExerciseFile { get; } = "reference/exercises.json";
-        public string ErrorsFile { get; } = "reference/exercise-errors.json";
+        public string DesignDocName { get; } = ".meta/" + Constants.DesignMd;
+        public string ExerciseFile { get; } = "reference/" + Constants.ExercisesJson;
+        public string ErrorsFile { get; } = "reference/" + Constants.ExerciseErrorsJson;
         public string ConceptReport { get; } = "reference/README.md";
 
         public static PathNames Default { get; } =

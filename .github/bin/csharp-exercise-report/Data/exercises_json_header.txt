@@ -1,1 +1,9 @@
 This file is the original source of the concept report in csharp/reference/README.md.
+
+You can:
+    Add new exercises, concepts and original concepts
+    Add or modify track neutral concepts
+    Change CompletionStatus on an existing exercise
+    Add or modify document link if the CompletionStatus is NewExerciseIssueRaised
+You must:
+    Have a non-blank document link if and only if the CompletionStatus is NewExerciseIssueRaised

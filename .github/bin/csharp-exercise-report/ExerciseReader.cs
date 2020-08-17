@@ -5,7 +5,7 @@ namespace ExerciseReport
 {
     internal class ExerciseReader
     {
-        public static ExerciseReader CSharpExerciseReader { get; }=
+        public static ExerciseReader CSharpExerciseReader { get; } =
             new ExerciseReader(
                 new ExerciseFileHandler(PathNames.Default.Root, Constants.CSharpTrack),
                 new ExerciseJsonParser());
@@ -20,7 +20,7 @@ namespace ExerciseReport
             this.exerciseJsonParser = exerciseJsonParser;
         }
 
-        public (Result Result, ExerciseObjectTree ExerciseObjectTree, List<Error> Errors) 
+        public (Result Result, ExerciseObjectTree ExerciseObjectTree, List<Error> Errors)
             ReadExercises()
         {
             try
@@ -33,8 +33,9 @@ namespace ExerciseReport
                 return (
                     Result.FatalError,
                     new ExerciseObjectTree(),
-                    new List<Error>{new Error(ErrorSource.Process, Severity.Fatal, "reading exercise.json file: " + e.Message)}
-                    );
+                    new List<Error>
+                        {new Error(ErrorSource.Process, Severity.Fatal, "reading exercise.json file: " + e.Message)}
+                );
             }
         }
     }

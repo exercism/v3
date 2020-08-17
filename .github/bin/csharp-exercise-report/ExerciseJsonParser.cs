@@ -52,7 +52,7 @@ namespace ExerciseReport
                 {
                     errors.Add(new Error(ErrorSource.Exercise,
                         Severity.Error,
-                        "Too many errors reading exercises.json - see exercise-errors.json"));
+                        $"Too many errors reading {Constants.ExercisesJson} - see {Constants.ExerciseErrorsJson}"));
                 }
                 return (
                     errors.Count == 0
@@ -84,11 +84,11 @@ namespace ExerciseReport
 
         private static List<Error> ValidateExercises(ExerciseObjectTree exerciseObjectTree)
         {
-            var output = exerciseObjectTree.Exercises.Select(ex => ValidateExercise(ex))
+            var errors = exerciseObjectTree.Exercises.Select(ex => ValidateExercise(ex))
                 .Where(exo => !string.IsNullOrWhiteSpace(exo))
                 .Select(exo => new Error(ErrorSource.Exercise, Severity.Error, exo))
                 .ToList();
-            return output;
+            return errors;
         }
 
         private static string ValidateExercise(Exercise exercise)

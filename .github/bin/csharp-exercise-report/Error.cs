@@ -9,9 +9,9 @@ namespace ExerciseReport
 
     internal enum Severity
     {
-        None,
-        Error,
-        Fatal
+        None = 0,
+        Error = 1,
+        Fatal = 2
     }
 
     internal enum ErrorSource 

@@ -20,7 +20,7 @@ namespace ExerciseReport
             GetAllLearningObjectives()
         {
             var errors = new List<Error>();
-            var learningObjectives = new LearningObjectives();
+            var learningObjectivesBuilder = LearningObjectives.CreateBuilder();
             var conceptsAndObjectives = designDocFileHandler.GetExerciseDesignsForTrack()
                 .SelectMany(
                     designDetails => designDocParser.ParseDesignDoc(
@@ -31,7 +31,7 @@ namespace ExerciseReport
                 switch (conceptAndObjective)
                 {
                     case (Result.Success, _, (string designDocId, string conceptName) conceptDetails, string objective):
-                        learningObjectives.Builder.Add(conceptDetails, objective);
+                        learningObjectivesBuilder.Add(conceptDetails, objective);
                         break;
                     case (Result.Errors, string error, _, _):
                         errors.Add(new Error(ErrorSource.Design, Severity.Error, error));
@@ -41,10 +41,10 @@ namespace ExerciseReport
                 }
             }
 
-            return (learningObjectives, errors);
+            return (learningObjectivesBuilder.CreateLearningObjectives(), errors);
         }
         // designDocPath: typically "./languages/<language>/exercises/concept/<exercise-name>/.meta/design.md"
-        // returns: <exercise-name
+        // returns: <exercise-name>
         private static string GetExerciseNameFromPath(string designDocPath)
         {
             var path = Path.GetDirectoryName(designDocPath);

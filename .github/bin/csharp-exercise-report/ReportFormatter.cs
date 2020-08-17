@@ -8,15 +8,9 @@ namespace ExerciseReport
 {
     internal class ReportFormatter
     {
-        private readonly string root;
         private const string Relativity = "../../..";
                 // distance from v3/languages/csharp/reference to v3/reference
                 // for location of track neutral concepts README.md
-
-        public ReportFormatter(string root)
-        {
-            this.root = root;
-        }
 
         public string CreateReport(ExerciseObjectTree exerciseObjectTree)
         {
@@ -121,7 +115,7 @@ namespace ExerciseReport
                 .SelectMany(ex => ex.Concepts)
                 .Where(c => !string.IsNullOrWhiteSpace(c.TrackNeutralConcept))
                 .OrderBy(c => c.Name)
-                .Select(c => $"[tnc-{c.Name}]: {Path.Combine(root, Relativity, c.TrackNeutralConcept)}");
+                .Select(c => $"[tnc-{c.Name}]: {Path.Combine(Relativity, c.TrackNeutralConcept)}");
 
             sb.AppendLine();
             foreach (string trackNeutralConcept in trackNeutralConcepts)
@@ -142,15 +136,15 @@ namespace ExerciseReport
 
         private void GetConcepts(StringBuilder sb, ExerciseObjectTree exerciseObjectTree, Level level)
         {
-            var outputs = exerciseObjectTree.Exercises
+            var reportLines = exerciseObjectTree.Exercises
                 .SelectMany(ex => ex.Concepts, (ex,
                     c) => new {Exercise = ex, Concept = c})
                 .Where(p => p.Exercise.Level == level)
                 .OrderBy(p => p.Concept.Name)
                 .Select(p => FormatConceptReportLine(p.Exercise, p.Concept)).DefaultIfEmpty("None");
-            foreach (string output in outputs)
+            foreach (string reportLine in reportLines)
             {
-                sb.AppendLine(output);
+                sb.AppendLine(reportLine);
             }
         }
 
