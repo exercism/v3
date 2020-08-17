@@ -4,11 +4,10 @@
 dotnet run -p .github/bin/csharp-exercise-report
 
 # Format the documents
-npx prettier@2.0.4 --write languages/csharp/reference/README.md languages/csharp/reference/exercises.json  languages/csharp/reference/exercise-errors.json
+npx prettier@2.0.4 --write languages/csharp/reference/README.md languages/csharp/reference/exercise-errors.json
 
 # Add the updated files
 git add languages/csharp/reference/README.md
-git add languages/csharp/reference/exercises.json
 git add languages/csharp/reference/exercise-errors.json
 
 # Check if there is nothing to commit (i.e. no changes to the files)
