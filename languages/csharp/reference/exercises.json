@@ -838,13 +838,13 @@
       ]
     },
     {
-      "slug": "signed-integers",
+      "slug": "integral-numbers",
       "level": "introductory",
       "completion-status": "complete",
       "document-link": "",
       "concepts": [
         {
-          "name": "signed-integers",
+          "name": "integral-numbers",
           "track-neutral-concept": "",
           "original-concepts": [
             {
@@ -878,24 +878,6 @@
             {
               "name": "- Constants/readonly",
               "line-number": 92
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "conditionals-ternary",
-      "level": "introductory",
-      "completion-status": "complete",
-      "document-link": "complete",
-      "concepts": [
-        {
-          "name": "conditionals-ternary",
-          "track-neutral-concept": "reference/concepts/conditionals.md",
-          "original-concepts": [
-            {
-              "name": "  - [Conditionals: ternary][conditionals]",
-              "line-number": 91
             }
           ]
         }
@@ -978,6 +960,16 @@
             {
               "name": "- Expression-bodied members",
               "line-number": 44
+            }
+          ]
+        },
+        {
+          "name": "conditionals-ternary",
+          "track-neutral-concept": "reference/concepts/conditionals.md",
+          "original-concepts": [
+            {
+              "name": "  - [Conditionals: ternary][conditionals]",
+              "line-number": 91
             }
           ]
         }
@@ -1170,13 +1162,13 @@
       ]
     },
     {
-      "slug": "operator-overload",
+      "slug": "operator-overloading",
       "level": "introductory",
       "completion-status": "complete",
       "document-link": "",
       "concepts": [
         {
-          "name": "operator-overload",
+          "name": "operator-overloading",
           "track-neutral-concept": "",
           "original-concepts": [
             {
