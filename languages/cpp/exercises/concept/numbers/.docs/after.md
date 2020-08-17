@@ -1,4 +1,3 @@
-
 ### Special integer types
 
 There are two other important integer types often used in the standard library:
@@ -23,7 +22,7 @@ Long numbers in C++ can be separated for readability using `'` (single quotation
 
 ### Char types as integers
 
-Char types `char` `unsigned char`, `wchar_t`, `char16_t` and `char32_t` have the same memory layout and can be treated as integers.
+Char types `char` `unsigned char`, `wchar_t`, `char16_t` and `char32_t` have the same memory layout and in some cases can be treated as integers.
 
 
 ### Numeric limits
@@ -39,5 +38,23 @@ When converting between numeric types, there are two types of numeric conversion
 2. Explicit conversions: data could be lost and additional syntax in the form of a _cast_ is required.
 
 
+### Complex numbers
+
+Complex numbers are represented with [`std::complex`][complex] standard module.
+
+
+### NULL
+
+[NULL][null] is a constant expression of integer type that evaluates to zero.
+
+
+### `std::is_arithmetic`
+
+If the type is arithmetic can be done with a meta-function [`std::is_arithmetic`][is_arithmetic].
+
+
 [fundamental-types]: https://en.cppreference.com/w/cpp/language/types
 [numeric-limits]: https://en.cppreference.com/w/cpp/types/numeric_limits
+[complex]: https://en.cppreference.com/w/cpp/numeric/complex
+[null]: https://en.cppreference.com/w/cpp/types/NULL
+[is_arithmetic]: https://en.cppreference.com/w/cpp/types/is_arithmetic

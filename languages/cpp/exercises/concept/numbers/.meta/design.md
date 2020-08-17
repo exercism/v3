@@ -1,6 +1,6 @@
 ## Goal
 
-The goal of this exercise is to teach the student how to deal with numbers in C++.
+The goal of this exercise is to teach the student how to work with integer and floating point numbers in C++.
 
 
 ## Learning objectives
@@ -21,10 +21,10 @@ The goal of this exercise is to teach the student how to deal with numbers in C+
 
 ## Concepts
 
-- `numbers`: know of the existence of the two most commonly used number types, integer and floating point;  know of basic operators such as multiplication, comparison and equality; know how to convert from one numeric type to another.
+- `numbers`: know of the existence of the two most commonly used number types: integer and floating point;  know of basic operators such as multiplication, comparison and equality.
 - `conditionals`: know how to conditionally execute code using an `if` statement.
 
 
-## Prequisites
+## Perquisites
 
 There are no prerequisites.

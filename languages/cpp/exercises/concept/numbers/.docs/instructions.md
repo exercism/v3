@@ -11,6 +11,7 @@ At its lowest speed (`1`), `221` cars are produced each hour. The production inc
 
 You have two tasks.
 
+
 ## 1. Calculate the production rate per hour
 
 Implement a method to calculate the assembly line's production rate per hour, taking into account its success rate:
@@ -22,11 +23,12 @@ assembly_line::production_rate_per_hour(6)
 
 > Note that the value returned is of type `double`
 
+
 ## 2. Calculate the number of working items produced per minute
 
 Implement a method to calculate how many working cars are produced per minute:
 
-```rust
+```cpp
 assembly_line::working_items_per_minute(6)
 // Returns: 19
 ```
