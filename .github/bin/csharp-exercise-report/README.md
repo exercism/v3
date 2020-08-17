@@ -12,4 +12,4 @@ There are 3 main activities:
 
 - _README.md_ is then generated based on the newly produced from the merged data above.
 
-* A list of inconsistencies and other errors is written replacing _exercises-errors.json_.
+- A list of inconsistencies and other errors is written replacing _exercises-errors.json_.
