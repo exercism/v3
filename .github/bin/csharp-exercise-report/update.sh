@@ -3,6 +3,11 @@
 # Update the csharp exercises document
 dotnet run -p .github/bin/csharp-exercise-report
 
+if [ $? -eq 1 ]
+then
+   echo "exercise report (dotnet) failed"
+   exit 1
+fi
 # Format the documents
 npx prettier@2.0.4 --write languages/csharp/reference/README.md languages/csharp/reference/exercise-errors.json
 
