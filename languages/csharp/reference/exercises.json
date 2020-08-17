@@ -2,9 +2,13 @@
   "documentation": [
     "This file is the original source of the concept report in csharp/reference/README.md.",
     "",
-    "All the information originates here EXCEPT the learning-objectives array which is a part of each concept.",
-    "Do NOT edit the learning-objectives array (or these lines of documentation)",
-    "and do NOT attempt to change the schema in any way."
+    "You can:",
+    "    Add new exercises, concepts and original concepts",
+    "    Add or modify track neutral concepts",
+    "    Change CompletionStatus on an existing exercise",
+    "    Add or modify document link if the CompletionStatus is NewExerciseIssueRaised",
+    "You must:",
+    "    Have a non-blank document link if and only if the CompletionStatus is NewExerciseIssueRaised"
   ],
   "exercises": [
     {
