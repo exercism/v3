@@ -40,13 +40,17 @@
 - command syntax (`result.add peptide`)
 
 ---
+
 ## Specific approaches
 
 ### Case Statment
+
 [Example Implementation](https://exercism.io/tracks/nim/exercises/protein-translation/solutions/1078c01ba467400881b40827ffd1b84f)
+
 - case statement
 - of branch
 
 ### Iterator
+
 - iterator vs. proc
 - `yield` statement
