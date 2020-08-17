@@ -15,6 +15,12 @@
         "uuid": "62f945e7-0791-46b7-8161-855183f736ba",
         "concepts": ["strings"],
         "prerequisites": [""]
+      },
+      {
+        "slug": "numbers",
+        "uuid": "fe54c2f6-f2e9-4bb0-bca4-de74663be16f",
+        "concepts": ["conditionals", "numbers"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []
