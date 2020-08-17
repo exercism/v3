@@ -812,8 +812,8 @@
     {
       "slug": "interfaces",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/1225",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "interfaces",
@@ -840,8 +840,8 @@
     {
       "slug": "signed-integers",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/780",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "signed-integers",
@@ -868,8 +868,8 @@
     {
       "slug": "constants",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/1044",
+      "completion-status": "",
+      "document-link": "",
       "concepts": [
         {
           "name": "constants",
@@ -886,8 +886,8 @@
     {
       "slug": "conditionals-ternary",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/1635",
+      "completion-status": "complete",
+      "document-link": "complete",
       "concepts": [
         {
           "name": "conditionals-ternary",
@@ -904,8 +904,8 @@
     {
       "slug": "exceptions",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/966",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "exceptions",
@@ -922,8 +922,8 @@
     {
       "slug": "lists",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/958",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "lists",
@@ -950,8 +950,8 @@
     {
       "slug": "structs",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/1017",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "structs",
@@ -968,8 +968,8 @@
     {
       "slug": "expression-bodied-members",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/1145",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "expression-bodied-members",
@@ -986,8 +986,8 @@
     {
       "slug": "namespaces",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/1127",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "namespaces",
@@ -1014,8 +1014,8 @@
     {
       "slug": "string-formatting",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/962",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "string-formatting",
@@ -1072,8 +1072,8 @@
     {
       "slug": "regular-expressions",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/1638",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "regular-expressions",
@@ -1090,8 +1090,8 @@
     {
       "slug": "resource-lifetime",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/1640",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "resource-lifetime",
@@ -1108,8 +1108,8 @@
     {
       "slug": "overflow",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/1138",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "overflow",
@@ -1126,8 +1126,8 @@
     {
       "slug": "nested-types",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/1643",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "nested-types",
@@ -1144,8 +1144,8 @@
     {
       "slug": "casting",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/1142",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "casting",
@@ -1172,8 +1172,8 @@
     {
       "slug": "operator-overload",
       "level": "introductory",
-      "completion-status": "newExerciseIssueRaised",
-      "document-link": "https://github.com/exercism/v3/issues/1712",
+      "completion-status": "complete",
+      "document-link": "",
       "concepts": [
         {
           "name": "operator-overload",
