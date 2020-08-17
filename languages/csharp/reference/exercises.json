@@ -1994,7 +1994,7 @@
       ]
     },
     {
-      "slug": "pointsers",
+      "slug": "pointers",
       "level": "advanced",
       "completion-status": "newExerciseIssueRaised",
       "document-link": "https://github.com/exercism/v3/issues/1147",
