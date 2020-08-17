@@ -1548,13 +1548,13 @@
       ]
     },
     {
-      "slug": "higherl-order-functions",
+      "slug": "higher-order-functions",
       "level": "essential",
       "completion-status": "none",
       "document-link": "",
       "concepts": [
         {
-          "name": "higherl-order-functions",
+          "name": "higher-order-functions",
           "track-neutral-concept": "reference/concepts/higher_order_functions.md",
           "original-concepts": [
             {
