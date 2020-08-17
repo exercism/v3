@@ -42,16 +42,6 @@
     },
     {
       "Severity": "error",
-      "Message": "Failed to find concept operator-overloading, from the operator-overloading design.md, in exercises.json file",
-      "Source": "merge"
-    },
-    {
-      "Severity": "error",
-      "Message": "Failed to find concept integral-numbers, from the integral-numbers design.md, in exercises.json file",
-      "Source": "merge"
-    },
-    {
-      "Severity": "error",
       "Message": "Failed to find concept while-loops, from the floating-point-numbers design.md, in exercises.json file",
       "Source": "merge"
     },
@@ -223,6 +213,66 @@
     {
       "Severity": "error",
       "Message": "The optional-arguments concept has no learning objectives on the exercise report - update the design.md for the parameters exercise",
+      "Source": "missingLearningObjective"
+    },
+    {
+      "Severity": "error",
+      "Message": "The explicit-interfaces concept has no learning objectives on the exercise report - update the design.md for the interfaces exercise",
+      "Source": "missingLearningObjective"
+    },
+    {
+      "Severity": "error",
+      "Message": "The unsigned-integers concept has no learning objectives on the exercise report - update the design.md for the integral-numbers exercise",
+      "Source": "missingLearningObjective"
+    },
+    {
+      "Severity": "error",
+      "Message": "The collections concept has no learning objectives on the exercise report - update the design.md for the lists exercise",
+      "Source": "missingLearningObjective"
+    },
+    {
+      "Severity": "error",
+      "Message": "The imports concept has no learning objectives on the exercise report - update the design.md for the namespaces exercise",
+      "Source": "missingLearningObjective"
+    },
+    {
+      "Severity": "error",
+      "Message": "The formatting-types concept has no learning objectives on the exercise report - update the design.md for the string-formatting exercise",
+      "Source": "missingLearningObjective"
+    },
+    {
+      "Severity": "error",
+      "Message": "The interpolation concept has no learning objectives on the exercise report - update the design.md for the string-formatting exercise",
+      "Source": "missingLearningObjective"
+    },
+    {
+      "Severity": "error",
+      "Message": "The string-builder concept has no learning objectives on the exercise report - update the design.md for the string-formatting exercise",
+      "Source": "missingLearningObjective"
+    },
+    {
+      "Severity": "error",
+      "Message": "The regular-expressions concept has no learning objectives on the exercise report - update the design.md for the regular-expressions exercise",
+      "Source": "missingLearningObjective"
+    },
+    {
+      "Severity": "error",
+      "Message": "The resource-lifetime concept has no learning objectives on the exercise report - update the design.md for the resource-lifetime exercise",
+      "Source": "missingLearningObjective"
+    },
+    {
+      "Severity": "error",
+      "Message": "The overflow concept has no learning objectives on the exercise report - update the design.md for the overflow exercise",
+      "Source": "missingLearningObjective"
+    },
+    {
+      "Severity": "error",
+      "Message": "The nested-types concept has no learning objectives on the exercise report - update the design.md for the nested-types exercise",
+      "Source": "missingLearningObjective"
+    },
+    {
+      "Severity": "error",
+      "Message": "The implicit-casting concept has no learning objectives on the exercise report - update the design.md for the casting exercise",
       "Source": "missingLearningObjective"
     }
   ]
