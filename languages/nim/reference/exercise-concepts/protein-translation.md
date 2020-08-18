@@ -1,7 +1,6 @@
 # Concepts of protein-translation
 
 [Example Implementation](https://github.com/exercism/nim/blob/master/exercises/protein-translation/example.nim)
-(Note: Excpetion raising ignored, as it isn't tested for)
 
 ## General:
 
@@ -38,6 +37,11 @@
 - `return`
 - implicit result definition
 - command syntax (`result.add peptide`)
+- `raise`
+- Exception initialzation with `newException` (b/c they are a type)
+- Not covered here but:
+  - Custom exceptions
+  - Inherit from base exception
 
 ---
 
