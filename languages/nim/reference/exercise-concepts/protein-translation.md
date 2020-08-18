@@ -21,7 +21,7 @@
 - explicitly defining type of param
 - defining specific versions of generic types `seq[T]`
 - seq
-- if statment
+- if statement
 - infix operator
 - for loop (loop in general :man_shrugging:)
 - break (named for blocks)
