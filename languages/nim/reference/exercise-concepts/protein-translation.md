@@ -31,12 +31,13 @@
 - slicing
   - `..<`/`..^`
 - operators (arithemetic in this case):
+
   - specifically that words can be used
   - for some mathematical operations words are used
     - // (python) => div
     - % => mod
   - they can be overloaded for user defined type etc.
-  
+
 - table access `[]`
 - equality comparison
 - if/elif/else
