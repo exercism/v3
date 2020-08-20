@@ -5,7 +5,7 @@ dotnet run -p .github/bin/csharp-exercise-report
 
 if [ $? -eq 1 ]
 then
-   echo "exercise report (dotnet) failed"
+   echo "exercise report (dot net) failed"
    exit 1
 fi
 # Format the documents
@@ -17,7 +17,7 @@ git add languages/csharp/reference/exercise-errors.json
 
 # Check if there is nothing to commit (i.e. no changes to the files)
 if [ -z "$(git status --porcelain)" ]; then
-    echo "No changes to the csharp/exercises document"
+    echo "No changes to the csharp/reference/README.md or exercise-errors.json document"
     exit 0
 fi
 
@@ -34,4 +34,4 @@ git commit -m "[Bot] Update csharp/exercise-report document"
 git push origin "$BRANCH"
 
 # Create a PR
-gh pr create --title "[Bot] Update csharp/exercises document" --body "This is an _automatically generated_ PR to update the csharp exercises files." --label "type/bot" --base "csharp/exercise-report"
+gh pr create --title "[Bot] Update csharp/exercises document" --body "This is an _automatically generated_ PR to update the csharp exercises files." --label "type/bot" --base "master"

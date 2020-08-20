@@ -8,8 +8,8 @@ The action is triggered by a push of _csharp/reference/exercises.json_ or any _c
 
 There are 3 main activities:
 
-- The action reads _exercises.json_ and all the _design.md_ files. The two sets of data are merged with the learning objectives taken from the _Concepts_ section of the _design.md_ and the rest is taken from the _exercises.json_ file. Preexisting learning objectives in the exercise file are deleted.
+- The action reads _exercises.json_ and all the _design.md_ files. The two sets of data are merged with the learning objectives taken from the _Concepts_ section of the _design.md_ and the rest is taken from the _exercises.json_ file.
 
-- _README.md_ is then generated based on the newly produced from the merged data above.
+- _README.md_ is then generated from the merged data above.
 
-* A list of inconsistencies and other errors is written replacing _exercises-errors.json_.
+* A list of inconsistencies and other errors is written replacing _exercise-errors.json_.
