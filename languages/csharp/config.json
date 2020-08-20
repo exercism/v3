@@ -124,7 +124,6 @@
         "uuid": "b140614f-36df-4ce9-a539-97a81304b941",
         "concepts": ["exceptions"],
         "prerequisites": [
-          "basics",
           "inheritance",
           "nullability",
           "overflow",
