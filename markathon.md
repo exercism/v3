@@ -25,7 +25,7 @@ The best way to get started is using our [v3 dashboard](https://v3.exercism.io).
 There are three aims for this Markathon:
 
 1. Make more progress with content and tooling for v3
-2. Get local setups succesfully working on our local machines
+2. Get local setups successfully working on our local machines
 3. Get to know each other more as a community
 
 For (2), check out the [instructions in the development-environment repo](https://github.com/exercism/development-environment/blob/master/README.md).
