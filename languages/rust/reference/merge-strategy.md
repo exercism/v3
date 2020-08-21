@@ -7,11 +7,10 @@ The Rust track maintainers [have decided](https://github.com/exercism/v3/discuss
 - We'll adopt an Optimistic Merging approach temporarily
   - This only applies to the v3 repository
   - We'll go back to a Pessimistic Merging strategy upon releasing v3 to production.
-- We'll approve and merge incomplete work
-	- If it compiles we keep it.
+- We'll approve and merge incomplete work - If it compiles we keep it.
   - Favor iteration speed over finer points of correct software design.
 - Every pull request must have at least one "Approval" from a track maintainer before it can be merged.
-> [Maintainers SHOULD NOT merge their own patches except in exceptional cases, such as non-responsiveness from other Maintainers for an extended period (more than 1-2 days)](https://rfc.zeromq.org/spec/42/#abstract)
+  > [Maintainers SHOULD NOT merge their own patches except in exceptional cases, such as non-responsiveness from other Maintainers for an extended period (more than 1-2 days)](https://rfc.zeromq.org/spec/42/#abstract)
 
 ## pull request workflow
 
