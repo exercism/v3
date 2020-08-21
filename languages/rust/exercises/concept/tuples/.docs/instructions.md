@@ -9,7 +9,6 @@ You are a freelance developer living in a town that hosts an annual carnival. On
 - Use `&str` for verbal messages.
 - Use 'char` for emojis
 
-
 ### 1. Create a function to print the message depending on the day
 
 - Your function should accept a `usize` for the day of the week
