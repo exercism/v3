@@ -1,25 +1,20 @@
 # Instructions
 
 You are a freelance developer living in a town that hosts an annual carnival. One fan favorite, "Lucky Leo's Guessing Game", runs on custom software. Your firm has been tasked with building it.
-The carnival picks a number between 1 and 7 each day. Participants try to guess that number. If they guess correctly, they win whatever is contained within the day's slot.
 
-You must design and implement the storage mechanism for the 7 slots. The slot can contain any kind of prize. Past years have awarded local currency, extra carnival tickets, or chicken eggs.
+"Lucky Leo's Guessing Game" sits at the entrace to the carnival. Each day it speaks a message to carnival passersby. You must build the software to make it speak.
 
-### 1. Create a function to return the storage slots
+### 1. Create a tuple of messages for each day
 
-- Your function should return a tuple with 7 prizes of the specified types.
+- Use `&str` for verbal messages.
+- Use 'char` for emojis
 
-```rust
-let possible_prizes = prizes();
-```
 
-### 1. Create a function to compare the guess and return a prize
+### 1. Create a function to print the message depending on the day
 
 - Your function should accept a `usize` for the day of the week
-- It should compare the guess with the "right answer" selected by the carnival
-- If the guess is correct, it should return the value for that slot
-- If the guess is incorrect, it should return `None`
+- It should return the value for that slot
 
 ```rust
-let win_or_lose = guess(1); // Some(T) or None
+let hello = greeting(1);
 ```
