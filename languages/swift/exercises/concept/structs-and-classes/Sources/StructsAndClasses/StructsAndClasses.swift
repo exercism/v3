@@ -1,3 +1,5 @@
-struct StructsAndClasses {
-    var text = "Hello, World!"
-}
+// TODO: Define the Position struct
+
+// TODO: Define the Size struct
+
+// TODO: Define the Window class

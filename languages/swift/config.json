@@ -59,6 +59,12 @@
         "uuid": "082d7aeb-ee25-4217-bd6f-82532a65797a",
         "concepts": ["strings"],
         "prerequisites": ["arrays"]
+      },
+      {
+        "slug": "structs-and-classes",
+        "uuid": "bfb16db1-f419-48e9-91bc-defebc0ae9ac",
+        "concepts": ["structs", classes],
+        "prerequisites": ["functions"]
       }
     ],
     "practice": []
