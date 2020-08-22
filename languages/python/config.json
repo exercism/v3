@@ -41,6 +41,23 @@
         "uuid": "c050470d-ef22-4187-aaac-239e07955a4d",
         "concepts": ["bools"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "dicts",
+        "uuid": "24f73576-97b3-4ba3-b504-309f2bbe59b9",
+        "concepts": ["dicts"],
+        "prerequisites": [
+          "bools",
+          "for-loops",
+          "functions",
+          "if-keyword",
+          "in-keyword",
+          "integers",
+          "return-keyword",
+          "strings",
+          "tuples",
+          "lists"
+        ]
       }
     ],
     "practice": []
