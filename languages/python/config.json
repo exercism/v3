@@ -43,7 +43,7 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "dicts",
+        "slug": "string-formatting",
         "uuid": "24f73576-97b3-4ba3-b504-309f2bbe59b9",
         "concepts": ["dicts"],
         "prerequisites": [
