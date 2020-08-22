@@ -5,7 +5,7 @@
 ## 1. Calculate the production rate per second
 
 - Determining the success rate can be done through a [conditional statement][if-statement].
-- Java allows for multiplication to be applied to two different number types (such as an `int` and a `double`). It will automatically return the "largest" data type.
+- Java allows for multiplication to be applied to two different number types (such as an `int` and a `double`). It will automatically return the "broader" data type.
 - Numbers can be compared using the built-in [comparison][comparison-operators] and [equality operators][comparison-operators].
 
 ## 2. Calculate the number of working items produced per second

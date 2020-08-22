@@ -1,10 +1,19 @@
 One of the key aspects of working with numbers in Java is the distinction between integers (numbers with no digits after the decimal separator) and floating-point numbers (numbers with zero or more digits after the decimal separator).
 
-The two most commonly used numeric types in Java are `int` (a 32-bit integer) and `double` (a 64-bit floating-point number).
+Java has other [datatypes][numeric-datatypes] apart from `int` and `double`
 
 ```Java
-int i = 123;
-double d = 54.29;
+//8-Bit Integer
+byte   a = 127;
+
+//16-Bit Integer
+short  b = 262143;
+
+//64-Bit Integer
+long   d = 18446744073709551999L;
+
+//32-bit Single-Precision Floating-Point
+float  e = 5409.29f;
 ```
 
 Both integers and floating-point numbers can use the `_` character as a _digit separator_, which can help when defining large numbers:
@@ -38,7 +47,7 @@ When converting between numeric types, there are two types of numeric conversion
 1. Implicit conversions: no data will be lost and no additional syntax is required.
 2. Explicit conversions: data could be lost and additional syntax in the form of a _cast_ is required.
 
-As an `int` has less precision than a `double`, converting from an `int` to a `double` is safe and is thus an implicit conversion. However, converting from a `double` to an `int` could mean losing data, so that requires an explicit conversion.
+As an `int` has less precision than a `double`, converting from an `int` to a `double` is safe and is thus an [implicit conversion][type-casting]. However, converting from a `double` to an `int` could mean losing data, so that requires an [explicit conversion][type-casting].
 
 ```Java
 int i = 9;
@@ -72,3 +81,5 @@ else
 
 [arithmetic-operators]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html
 [comparison-operators]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html
+[type-casting]: https://www.programiz.com/java-programming/typecasting
+[numeric-datatypes]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
