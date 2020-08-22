@@ -26,3 +26,4 @@
 - `integers`
 - `arithmetic`
 - `symbols`
+- `strings`

@@ -16,6 +16,14 @@
 (def-suite conditionals-suite)
 (in-suite conditionals-suite)
 
+(test pick-a-pal "Maps personality traits to fitting pets"
+   (is (string= (pal-picker :lazy) "Cat"))
+   (is (string= (pal-picker :energetic) "Dog"))
+   (is (string= (pal-picker :quiet) "Fish"))
+   (is (string= (pal-picker :hungry) "Rabbit"))
+   (is (string= (pal-picker :talkative) "Bird"))
+   (is (string= (pal-picker :fireproof) "I don't know... A dragon?")))
+
 ;; Either provides human-readable results to the user or machine-readable
 ;; results to the test runner. The default upon calling `(run-tests)` is to
 ;; explain the results in a human-readable way

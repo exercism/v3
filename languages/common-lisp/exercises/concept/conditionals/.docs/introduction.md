@@ -18,6 +18,7 @@ test is true or false respectively – evaluating to `nil` otherwise.
 
 ```lisp
 (when (= 2 2) "All is well")      ; => "All is well"
+(unless (= 2 2) "Time to panic!") ; => NIL
 ```
 
 #### The Two-Branch Conditional
