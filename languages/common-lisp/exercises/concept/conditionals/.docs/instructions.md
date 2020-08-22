@@ -50,3 +50,22 @@ The habitats needed by each size pet are:
 ```lisp
 (habitat-fitter 42) ; => :MASSIVE
 ```
+
+## 3. And Now, We Feast
+
+One thing all earthling pets have in common is their need for food! This concept
+is somewhat alien to Ludwig, however, as he is prone to forgetting to refill his
+pet's food-bowl.
+
+Ludwig could use a simple function to alert him when the bowl needs
+refilling. The function would take a percent fullness (an integer) and return a
+message in the form of a string.
+
+If the food level is:
+
+- Above 20% -> `"All is well."`
+- 20% or below -> `"It's feeding time!"`
+
+```lisp
+(feeding-time-p 15) ; => "It's feeding time!"
+```

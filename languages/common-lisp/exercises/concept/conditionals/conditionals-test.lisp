@@ -36,6 +36,13 @@
   (is (eql (habitat-fitter 0) :just-your-imagination))
   (is (eql (habitat-fitter -5) :just-your-imagination)))
 
+(test we-feast "Determines whether the food-bowl needs refilling from its fullness"
+  (is (string= (feeding-time-p 10) "It's feeding time!"))
+  (is (string= (feeding-time-p 36) "All is well."))
+  (is (string= (feeding-time-p 74) "All is well."))
+  (is (string= (feeding-time-p 3) "It's feeding time!"))
+  (is (string= (feeding-time-p 90) "All is well.")))
+
 ;; Either provides human-readable results to the user or machine-readable
 ;; results to the test runner. The default upon calling `(run-tests)` is to
 ;; explain the results in a human-readable way

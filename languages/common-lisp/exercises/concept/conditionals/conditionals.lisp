@@ -1,6 +1,6 @@
 (defpackage conditionals
   (:use :cl)
-  (:export :pal-picker :habitat-fitter))
+  (:export :pal-picker :habitat-fitter :feeding-time-p))
 
 (in-package :conditionals)
 
@@ -20,3 +20,8 @@
     ((>= weight 10) :medium)
     ((> weight 0) :small)
     (t :just-your-imagination)))
+
+(defun feeding-time-p (fullness)
+  (if (> fullness 20)
+      "All is well."
+      "It's feeding time!"))
