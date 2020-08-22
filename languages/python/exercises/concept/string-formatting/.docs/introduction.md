@@ -6,7 +6,7 @@ Today you are going to use two ways of formatting a string: `.format()` and `lit
 
 ### .format()
 
------
+---
 
 The `str.format()` method was introduced into Python in version `2.7`. This is why it offers great compatibility with other Python distributions.
 
@@ -36,7 +36,7 @@ Adding references between the `{}` will allow you to assign objects to them.
 
 ### F-strings
 
---------
+---
 
 F-strings are a newer way of string formatting as they were introduced into Python in version `3.6`.
 
@@ -47,8 +47,3 @@ F-strings are a newer way of string formatting as they were introduced into Pyth
 ```
 
 You can see that you can also put in equations and such into references (this is the same with `.format()`).
-
-
-
-
-
