@@ -10,7 +10,7 @@ The `%` operator comes from the C language and it allows you to do positional ar
 "The snake's name is Anna the Annaconda."
 ```
 
-In this example we used `%s` in the string, then after the string we added a `%` and the variable `name` after the string. This replaces `%s` with the `name` variable. If you want to add multiple variables to a string you put a [tuple](https://www.w3schools.com/python/python_tuples.asp) with your variables after the `%`.  
+In this example we used `%s` in the string, then after the string we added a `%` and the variable `name` after the string. This replaces `%s` with the `name` variable. If you want to add multiple variables to a string you put a [tuple](https://www.w3schools.com/python/python_tuples.asp) with your variables after the `%`.
 
 Python supports a whole [format specification mini language](https://docs.python.org/3/library/string.html#format-specification-mini-language) that can be used to align text, apply effects, display currency and much more when formatting.
 
@@ -32,7 +32,7 @@ The official Python documentation has more information about `Template strings` 
 
 ## So when do you use these?
 
-Because `.format()` and `f strings` will literally execute whatever you give them as an input, they can cause big security risks - especially if they depend on user input. This is why you should never use them if you don't fully trust the input given. Instead use `Template strings` -- they're much safer.  
+Because `.format()` and `f strings` will literally execute whatever you give them as an input, they can cause big security risks - especially if they depend on user input. This is why you should never use them if you don't fully trust the input given. Instead use `Template strings` -- they're much safer.
 
 As explained earlier, the `%` is 'old style', it will still be supported (in many Python distros, not all of them), but is a little old and less powerful than other methods.
 
