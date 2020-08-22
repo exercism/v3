@@ -32,7 +32,9 @@ The official Python documentation has more information about `Template strings` 
 
 ## When to choose what
 
-Because `.format()` and `f strings` will literally execute whatever you give them as an input, they will cause for a big security risk. This is why you should never use them if you don't fully trust the input given. Instead use `Template strings`, these are much safer. As explained earlier, the `%` is 'The old style', it will still be supported (in many Python distros, not all of them), but is a little old and less powerful than other methods.
+Because `.format()` and `f strings` will literally execute whatever you give them as an input, they can cause big security risks - especially if they depend on user input. This is why you should never use them if you don't fully trust the input given. Instead use `Template strings` -- they're much safer.  
+
+As explained earlier, the `%` is 'old style', it will still be supported (in many Python distros, not all of them), but is a little old and less powerful than other methods.
 
 If you need help making a decision, then here is a decision tree to help you choose:
 
