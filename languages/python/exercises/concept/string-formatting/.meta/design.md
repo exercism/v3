@@ -9,7 +9,6 @@ This concept exercise should convey a basic understanding of the various `string
 - Types of string formatting, and [when each is best used](https://realpython.com/python-string-formatting/#which-string-formatting-method-should-you-use) and [deferring i18n use cases for f-strings](https://www.python.org/dev/peps/pep-0501/#deferring-consideration-of-possible-use-in-i18n-use-cases).
 - "New Style" formatting with [`str.format()`](https://docs.python.org/3/library/string.html#format-string-syntax)
 - String interpolation, or ["f-strings"](https://docs.python.org/3/reference/lexical_analysis.html#formatted-string-literals)
-- Standard Library [template strings](https://docs.python.org/3/library/string.html#template-strings) (*import statement required*)
 - Format specification ["mini-language"](https://docs.python.org/3/library/string.html#format-specification-mini-language) e.g. formatting an int variable as a hexadecimal string, truncating long strings etc
 
 ## Things not to teach
