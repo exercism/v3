@@ -2,7 +2,7 @@
 
 - The `fmt` package of the standard library has some [formatting functionality for strings][fmt-package].
 
-- To add one string to another, you can use the `"+"` operator.
+- To add one string to another, you can use the `"+="` assignment.
 
 ```go
 s := "Hello"

@@ -31,7 +31,7 @@ func TestHappyBirthday(t *testing.T) {
 		want        string
 	}{
 		{
-			description: "With Happy Birthday using the given name and age of the person",
+			description: "Wish Happy Birthday using the given name and age of the person",
 			name:        "Christiane",
 			age:         58,
 			want:        "Happy birthday Christiane! You are now 58 years old!",

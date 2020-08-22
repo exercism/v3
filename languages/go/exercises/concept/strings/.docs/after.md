@@ -10,7 +10,7 @@ The "+" operator makes a new string by concatenating two strings:
 fmt.Println("Hello" + " world!")
 ```
 
-String values are immutable: the byte sequence contained in a str ing value can never be changed, thoug h of course we can assig n a new value to a str ing variable.
+String values are immutable: the byte sequence contained in a string value can never be changed, though of course we can assign a new value to a string variable.
 To append one string to another, we can use the `+=` statement :
 
 ```go
