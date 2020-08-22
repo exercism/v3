@@ -30,6 +30,12 @@
         ]
       },
       {
+        "slug": "arrays",
+        "uuid": "ea9ba3ec-e4a4-11ea-9c95-542696d187f9",
+        "concepts": ["arrays"],
+        "prerequisites": []
+      },
+      {
         "slug": "arithmetic",
         "uuid": "f78cff23-2106-4e35-b439-2d8bd2830770",
         "concepts": ["integers", "floating-point-numbers", "arithmetic"],
