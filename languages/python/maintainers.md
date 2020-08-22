@@ -14,3 +14,4 @@ These awesome people help maintain the Python track.
 - David Gervasoni (Slack: `@david`, GitHub: [davidgerva](https://github.com/davidgerva))
 - Ashley Drake (Slack: `@ash`, Github: [aldraco](https://github.com/aldraco))
 - Khoi Van (Slack: `@Khoi`, Github: [khoivan88](https://github.com/khoivan88))
+- Job van der Wal (Slack: `@j08k`, GitHub: [J08K](https://github.com/J08K))
