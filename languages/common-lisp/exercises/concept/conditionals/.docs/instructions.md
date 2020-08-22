@@ -8,6 +8,7 @@ own! The only issue? Far too many choices! Perhaps you could write a program to
 help Ludwig find and care for his next cuddly friend?
 
 ## 1. Picking a Pal
+
 Though Ludwig is set on getting a pet, that's about as far as he's gotten in
 thinking things through. The first step, then, is deciding what sort of pet to
 get!
@@ -18,20 +19,20 @@ returns the type of pet (a string) with the given trait?
 
 In this particular case:
 
-  - `:lazy` -> `"Cat"`
-  - `:energetic` -> `"Dog"`
-  - `:quiet` -> `"Fish"`
-  - `:hungry` -> `"Rabbit"`
-  - `:talkative` -> `"Bird"`
+- `:lazy` -> `"Cat"`
+- `:energetic` -> `"Dog"`
+- `:quiet` -> `"Fish"`
+- `:hungry` -> `"Rabbit"`
+- `:talkative` -> `"Bird"`
 
-For other, unknown personalities, your function should evaluate to: `"I don't
-know... A dragon?"`
+For other, unknown personalities, your function should evaluate to: `"I don't know... A dragon?"`
 
 ```lisp
 (pal-picker :quiet) ; => "Fish"
 ```
 
 ## 2. In Their Natural Habitat
+
 Now that Ludwig has a new friend, they'll need a place to stay! Can you help
 Ludwig select the right size bed / tank / cage for his pet?
 
@@ -40,11 +41,11 @@ from his pet's weight in kilograms (a integer).
 
 The habitats needed by each size pet are:
 
-  - More than or equal to 40kg -> `:massive`
-  - 20kg to 39kg inclusive -> `:large`
-  - 10kg to 19kg inclusive -> `:medium`
-  - 1kg to 9kg inclusive -> `:small`
-  - Less than or equal to 0kg -> `:just-your-imagination`
+- More than or equal to 40kg -> `:massive`
+- 20kg to 39kg inclusive -> `:large`
+- 10kg to 19kg inclusive -> `:medium`
+- 1kg to 9kg inclusive -> `:small`
+- Less than or equal to 0kg -> `:just-your-imagination`
 
 ```lisp
 (habitat-fitter 42) ; => :MASSIVE
