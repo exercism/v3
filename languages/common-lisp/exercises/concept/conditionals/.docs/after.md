@@ -65,10 +65,11 @@ cleaner `case` expression. If none of the cases match, `nil` is returned. Both
 ### All Conditionals Are Expressions
 
 Unlike many other programming languages, all conditionals in Common Lisp are
-*expressions* not statements. This means that all Lisp conditionals evaluate to
+_expressions_ not statements. This means that all Lisp conditionals evaluate to
 some value and can be substituted for concrete parameters.
 
 As an example:
+
 ```lisp
 ;; Doubles x when it's even
 (* x (if (evenp x) 2 1))
