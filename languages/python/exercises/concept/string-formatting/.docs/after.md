@@ -34,4 +34,4 @@ Because `.format()` and `f strings` will literally execute whatever you give the
 
 If you need help making a decision, then here is a decision tree to help you choose:
 
-![Decision Tree](https://later)
+![Decision Tree](https://github.com/exercism/v3-files/blob/master/python/string-formatting/decision_tree.png?raw=true)
