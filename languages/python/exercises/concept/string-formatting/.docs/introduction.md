@@ -2,7 +2,7 @@ Strings is an often used datatype that you will probably be using often in your 
 
 ## Formatting a string
 
-Today you are going to use two ways of formatting a string: `.format()` and `literal string interpolation`.
+Today you are going to use two ways of formatting a string: `.format()` and `literal string interpolation` (_"f-strings"_)
 
 ### .format()
 
