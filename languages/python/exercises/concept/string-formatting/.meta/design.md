@@ -27,8 +27,6 @@ This concept exercise should convey a basic understanding of the various `string
 - `basics`
 - `strings`
 
-
-
 ### After
 
 Deeper discussions of pros and cons of each method. Security implications of string interpolation and user input. Unicode, internationalization and localization considerations and organization.
@@ -54,5 +52,3 @@ Tests should be written using `unittest.TestCase` and the test file named bool_b
 If you have any questions while implementing the exercise, please post the questions as comments in this issue.
 
 ## Edits
-
- 
