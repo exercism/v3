@@ -30,7 +30,7 @@ The snake called `Anna the Annaconda` has escaped!
 
 The official Python documentation has more information about `Template strings` [here](https://docs.python.org/3/library/string.html#template-strings).
 
-## When to choose what
+## So when do you use these?
 
 Because `.format()` and `f strings` will literally execute whatever you give them as an input, they can cause big security risks - especially if they depend on user input. This is why you should never use them if you don't fully trust the input given. Instead use `Template strings` -- they're much safer.  
 
