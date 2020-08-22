@@ -1,5 +1,6 @@
 {
   "language": "Common Lisp",
+  "slug": "common-lisp",
   "active": true,
   "blurb": "A programmable programming language.",
   "version": 3,

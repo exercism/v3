@@ -1,5 +1,6 @@
 {
   "language": "C#",
+  "slug": "csharp",
   "active": true,
   "blurb": "C# is a modern, object-oriented language with lots of great features, such as type-inference and async/await. The tooling is excellent, and there is extensive, well-written documentation.",
   "version": 3,
@@ -43,6 +44,20 @@
         "prerequisites": ["conditionals", "numbers", "strings"]
       },
       {
+        "slug": "constants",
+        "uuid": "54126398-4339-4073-9f5d-cf71cabcb328",
+        "concepts": ["constants", "defensive-copying", "readonly-collections"],
+        "prerequisites": [
+          "arrays",
+          "basics",
+          "classes",
+          "dictionaries",
+          "nested-types",
+          "object-initializers",
+          "properties"
+        ]
+      },
+      {
         "slug": "constructors",
         "uuid": "655b5c37-c2eb-4da2-ab0a-3845de898835",
         "concepts": ["constructors"],
@@ -82,6 +97,37 @@
           "inheritance",
           "interfaces",
           "lists"
+        ]
+      },
+      {
+        "slug": "expression-bodied-members",
+        "uuid": "27221c37-177e-437b-b423-977e46695db9",
+        "concepts": [
+          "conditionals-ternary",
+          "expression-bodied-members",
+          "switch-expressions",
+          "throw-expressions"
+        ],
+        "prerequisites": [
+          "booleans",
+          "classes",
+          "conditionals-if",
+          "constructors",
+          "datetimes",
+          "exceptions",
+          "properties",
+          "switch-statements"
+        ]
+      },
+      {
+        "slug": "exceptions",
+        "uuid": "b140614f-36df-4ce9-a539-97a81304b941",
+        "concepts": ["exceptions"],
+        "prerequisites": [
+          "inheritance",
+          "nullability",
+          "overflow",
+          "switch-statements"
         ]
       },
       {
@@ -173,22 +219,20 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "nested-types",
-        "uuid": "694cbd8d-677d-4052-960e-69386463a94b",
-        "concepts": ["nested-types"],
-        "prerequisites": [
-          "classes",
-          "enums",
-          "interfaces",
-          "properties",
-          "structs"
-        ]
-      },
-      {
         "slug": "object-initializers",
         "uuid": "a9c3a1c9-19ee-45b2-8189-57e15870a051",
         "concepts": ["object-initializers"],
         "prerequisites": ["constructors", "dictionaries", "properties"]
+      },
+      {
+        "slug": "operator-overloading",
+        "uuid": "555cf3ae-d9b0-446f-8e2d-70a81aceab49",
+        "concepts": ["operator-overloading"],
+        "prerequisites": [
+          "equality",
+          "floating-point-numbers",
+          "method-overloading"
+        ]
       },
       {
         "slug": "overflow",
