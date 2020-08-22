@@ -1,6 +1,7 @@
 (defpackage conditionals
   (:use :cl)
-  (:export :pal-picker :habitat-fitter :feeding-time-p))
+  (:export :pal-picker :habitat-fitter :feeding-time-p
+           :pet :play-fetch))
 
 (in-package :conditionals)
 
@@ -25,3 +26,11 @@
   (if (> fullness 20)
       "All is well."
       "It's feeding time!"))
+
+(defun pet (pet)
+  (when (string= pet "Fish")
+    "Maybe not with this pet..."))
+
+(defun play-fetch (pet)
+  (unless (string= pet "Dog")
+    "Maybe not with this pet..."))

@@ -69,3 +69,21 @@ If the food level is:
 ```lisp
 (feeding-time-p 15) ; => "It's feeding time!"
 ```
+
+## 4. A Code of Conduct
+
+With all of the basics sorted, Ludwig is looking forward to trying out a number
+of exciting things like "petting" and "fetch". With that being said, not every
+pet is suitable for these activities.
+
+Ludwig would like a pair of functions – `pet` and `play-fetch` – that take the
+type of pet (as a string) and return either nothing or a message like: `"Maybe
+not with this pet..." if the action is unfitting.
+
+Assume that only `"Dog"`s will play fetch and that all pets except `"Fish"` can
+be pet.
+
+```lisp
+(pet "Dog")         ; => NIL
+(play-fetch "Fish") ; => "Maybe not with this pet..."
+```

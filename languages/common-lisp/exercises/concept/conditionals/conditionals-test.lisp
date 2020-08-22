@@ -43,6 +43,19 @@
   (is (string= (feeding-time-p 3) "It's feeding time!"))
   (is (string= (feeding-time-p 90) "All is well.")))
 
+(test code-of-conduct "Is the given action unsuitable for the given pet?"
+  (is-false (pet "Cat"))
+  (is-false (pet "Dog"))
+  (is-true (pet "Fish"))
+  (is-false (pet "Rabbit"))
+  (is-false (pet "Bird"))
+
+  (is-true (play-fetch "Cat"))
+  (is-false (play-fetch "Dog"))
+  (is-true (play-fetch "Fish"))
+  (is-true (play-fetch "Rabbit"))
+  (is-true (play-fetch "Bird")))
+
 ;; Either provides human-readable results to the user or machine-readable
 ;; results to the test runner. The default upon calling `(run-tests)` is to
 ;; explain the results in a human-readable way
