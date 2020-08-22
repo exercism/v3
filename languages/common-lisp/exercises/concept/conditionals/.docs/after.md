@@ -62,10 +62,39 @@ cleaner `case` expression. If none of the cases match, `nil` is returned. Both
 
 ## Diving Deeper
 
-expressions, not statements
+### All Conditionals Are Expressions
 
-[Use this space to bring up any additional details regarding the topic and point
-the student towards resources where they can learn more]
+Unlike many other programming languages, all conditionals in Common Lisp are
+*expressions* not statements. This means that all Lisp conditionals evaluate to
+some value and can be substituted for concrete parameters.
+
+As an example:
+```lisp
+;; Doubles x when it's even
+(* x (if (evenp x) 2 1))
+```
+
+### The Stealth Conditionals
+
+The boolean `and` and `or` operations in Common Lisp are short-circuiting macros
+that can be used to reduce the duplication of certain conditional
+expressions.
+
+The `and` macro will immediately return `nil` if a single false value is
+encountered, but the last true value of the `and` otherwise:
+
+```lisp
+(and 42 "Magic" :cool) ; => :COOL
+(and () "Magic" :cool) ; => NIL
+```
+
+The `or` macro returns the first true value it encounters or `nil` if there were
+no true values:
+
+```lisp
+(or () 42 nil) ; => 42
+(or () NIL nil) ; => NIL
+```
 
 ## Reference
 
@@ -92,5 +121,17 @@ t                         ; => T
 (if (= 2 2) 'how-honest 'you-liar) ; => HOW-HONEST
 (if (= 1 2) 'how-honest 'you-liar) ; => YOU-LIAR
 
-;; And so on...
+;; Multi-Branch Conditionals
+(cond ((= 0 2) 'nope)
+      ((= 1 2) 'try-again)
+      ((= 2 2) 'quite-true)
+      ((= 3 2) 'too-far))
+; => QUITE-TRUE
+
+(case 'elder-beast
+  (cat "Meow")
+  (bird "Chirp")
+  (dog "Bark")
+  (otherwise "???"))
+; => "???"
 ```
