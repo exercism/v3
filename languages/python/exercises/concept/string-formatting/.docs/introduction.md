@@ -1,4 +1,4 @@
-Strings is an often used datatype that you will probably be using often in your Python programming life. If you want to use strings to show data to users then you will want to know how to use _string formatting_. String formatting is also very useful when storing data in a file.
+`string` is a datatype that you'll probably use often (_if not constantly_) in your Python programming life.  If you want to use those strings to display data to others in a clean, readable fashion, you'll want to build proficiency with _string formatting_. String formatting can also be very useful when storing data in a file, or preparing and parsing data as part of a data pipeline or for storage in a database. 
 
 ## Formatting a string
 
