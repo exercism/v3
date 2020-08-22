@@ -13,7 +13,7 @@ public class LanguagesTest {
     }
 
     @Test
-    @Ignore
+    @Ignore("Remove to run test")
     public void existingList() {
         List<String> expected = new ArrayList<>();
         expected.add("Java");
@@ -23,7 +23,7 @@ public class LanguagesTest {
     }
 
     @Test
-    @Ignore
+    @Ignore("Remove to run test")
     public void addLanguage() {
         List<String> initial = new ArrayList<>();
         initial.add("JavaScript");
@@ -40,7 +40,7 @@ public class LanguagesTest {
     }
 
     @Test
-    @Ignore
+    @Ignore("Remove to run test")
     public void countLanguage() {
         List<String> list = new ArrayList<>();
         assertThat(Languages.countLanguages(list)).isEqualTo(0);
@@ -50,7 +50,7 @@ public class LanguagesTest {
     }
 
     @Test
-    @Ignore
+    @Ignore("Remove to run test")
     public void lastLanguage() {
         List<String> list = new ArrayList<>();
         list.add("JavaScript");
@@ -60,7 +60,7 @@ public class LanguagesTest {
 
 
     @Test
-    @Ignore
+    @Ignore("Remove to run test")
     public void hasLanguage_yes() {
         List<String> list = new ArrayList<>();
         list.add("JavaScript");
@@ -69,7 +69,7 @@ public class LanguagesTest {
     }
 
     @Test
-    @Ignore
+    @Ignore("Remove to run test")
     public void hasLanguage_no() {
         List<String> list = new ArrayList<>();
         list.add("JavaScript");
@@ -78,7 +78,7 @@ public class LanguagesTest {
     }
 
     @Test
-    @Ignore
+    @Ignore("Remove to run test")
     public void removeLanguage_yes() {
         List<String> initial = new ArrayList<>();
         initial.add("JavaScript");
@@ -93,7 +93,7 @@ public class LanguagesTest {
     }
 
     @Test
-    @Ignore
+    @Ignore("Remove to run test")
     public void removeLanguage_no() {
         List<String> initial = new ArrayList<>();
         initial.add("JavaScript");
@@ -109,7 +109,7 @@ public class LanguagesTest {
     }
 
     @Test
-    @Ignore
+    @Ignore("Remove to run test")
     public void ensureUnique_None() {
         List<String> list = new ArrayList<>();
         list.add("JavaScript");
@@ -119,7 +119,7 @@ public class LanguagesTest {
     }
 
     @Test
-    @Ignore
+    @Ignore("Remove to run test")
     public void ensureUnique_Once() {
         List<String> list = new ArrayList<>();
         list.add("JavaScript");
@@ -129,7 +129,7 @@ public class LanguagesTest {
     }
 
     @Test
-    @Ignore
+    @Ignore("Remove to run test")
     public void ensureUnique_Twice() {
         List<String> list = new ArrayList<>();
         list.add("Go");
@@ -140,7 +140,7 @@ public class LanguagesTest {
     }
 
     @Test
-    @Ignore
+    @Ignore("Remove to run test")
     public void positionOf() {
         List<String> list = new ArrayList<>();
         list.add("JavaScript");
@@ -150,7 +150,7 @@ public class LanguagesTest {
     }
 
     @Test
-    @Ignore
+    @Ignore("Remove to run test")
     public void positionOf_TwoOccurence() {
         List<String> list = new ArrayList<>();
         list.add("Go");

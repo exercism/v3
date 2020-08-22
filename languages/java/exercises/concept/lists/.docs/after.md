@@ -21,10 +21,21 @@ By changing the T to a specific type, the list can only contain this type.
 List<Integer> intList = new ArrayList<Integer>();
 List<String> stringList = new ArrayList<String>();
 List<Object> objectList = new ArrayList<Object>();
-List<ArrayList> arraylistList = new ArrayList<ArrayList>();
+List<ArrayList<Integer>> arraylistList = new ArrayList<ArrayList<Integer>>();
+```
+As you can see, it can become quite heavy in terms of verbosity. Java then has the diamond operator `<>`. It lets the Java compiler take the most suitable constructor for the invocation.
+So these are equivalent type-defined Lists.
+```java
+List<Integer> list1 = new ArrayList<Integer>();
+List<Integer> list2 = new ArrayList<>();
 ```
 
-We can still use the lists without specifying the type, but it is more laborious. You would have to cast the elements each time you get an item from the lsit.
+We can still use the lists without specifying the type at all, but it is more laborious. You would have to cast the elements each time you get an item from the list. So, this works but should be used with care :
+```java
+List list = new ArrayList();
+list.add(1);
+Integer i = (Integer) list.get(0);
+```
 
 You can get more informations on generic Types in the [documentation][generic-doc].
 
