@@ -10,7 +10,9 @@ The `%` operator comes from the C language and it allows you to do positional ar
 "The snake's name is Anna the Annaconda."
 ```
 
-In this example we used `%s` in the string, then after the string we added a `%` and the variable `name` after the string. This replaces `%s` with the `name` variable. If you want to add multiple variables to a string you put a [tuple](https://www.w3schools.com/python/python_tuples.asp) with your variables after the `%`.
+In this example we used `%s` in the string, then after the string we added a `%` and the variable `name` after the string. This replaces `%s` with the `name` variable. If you want to add multiple variables to a string you put a [tuple](https://www.w3schools.com/python/python_tuples.asp) with your variables after the `%`.  
+
+Python supports a whole [format specification mini language](https://docs.python.org/3/library/string.html#format-specification-mini-language) that can be used to align text, apply effects, display currency and much more when formatting.
 
 This method is now superseded by the `.format()` method, which is why we call it _'The old style'_, But if you want to learn how to use it then check out [this tutorial](https://www.learnpython.org/en/String_Formatting) by _learnpython.org_.
 
