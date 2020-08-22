@@ -208,7 +208,13 @@
         "slug": "conditionals",
         "uuid": null,
         "concepts": ["conditionals", "truthy-and-falsy"],
-        "prerequisites": ["expressions", "integers", "arithmetic", "symbols", "strings"]
+        "prerequisites": [
+          "expressions",
+          "integers",
+          "arithmetic",
+          "symbols",
+          "strings"
+        ]
       },
       {
         "slug": "function-definition",
