@@ -14,7 +14,7 @@
 
 ## Prequisites
 
-There are no prerequisites.
+- `case classes`
 
 ## Representer
 
