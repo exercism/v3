@@ -30,3 +30,22 @@ know... A dragon?"`
 ```lisp
 (pal-picker :quiet) ; => "Fish"
 ```
+
+## 2. In Their Natural Habitat
+Now that Ludwig has a new friend, they'll need a place to stay! Can you help
+Ludwig select the right size bed / tank / cage for his pet?
+
+Here, Ludwig needs a function for selecting the proper habitat size (a keyword)
+from his pet's weight in kilograms (a integer).
+
+The habitats needed by each size pet are:
+
+  - More than or equal to 40kg -> `:massive`
+  - 20kg to 39kg inclusive -> `:large`
+  - 10kg to 19kg inclusive -> `:medium`
+  - 1kg to 9kg inclusive -> `:small`
+  - Less than or equal to 0kg -> `:just-your-imagination`
+
+```lisp
+(habitat-fitter 42) ; => :MASSIVE
+```
