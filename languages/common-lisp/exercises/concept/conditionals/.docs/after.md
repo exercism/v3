@@ -98,6 +98,30 @@ no true values:
 (or () NIL nil) ; => NIL
 ```
 
+### I'm Exhausted...
+
+As mentioned previously, when none of the branches in a `case` statement match,
+and there is no `otherwise` clause, `nil` is returned. Occasionally, however, a
+failure to match any branch should be treated as an error – this is where
+`ecase` (for **exhaustive** matching) comes in.
+
+It's used in exactly the same way as `case`, but signals an error instead of
+returning `nil` when there is no match.
+
+```lisp
+(case 'elder-beast
+  (cat "Meow")
+  (bird "Chirp")
+  (dog "Bark"))
+; => NIL
+
+(ecase 'elder-beast
+  (cat "Meow")
+  (bird "Chirp")
+  (dog "Bark"))
+; => ERROR: ELDER-BEAST fell through ECASE expression. Wanted one of (CAT BIRD DOG).
+```
+
 ## Reference
 
 ```lisp
