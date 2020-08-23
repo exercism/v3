@@ -43,7 +43,8 @@ false, then `nil` is returned.
 (cond ((= 0 2) 'nope)
       ((= 1 2) 'try-again)
       ((= 2 2) 'quite-true)
-      ((= 3 2) 'too-far))
+      ((= 3 2) 'too-far)
+      (t 'something-else))
 ; => QUITE-TRUE
 ```
 
@@ -126,7 +127,8 @@ t                         ; => T
 (cond ((= 0 2) 'nope)
       ((= 1 2) 'try-again)
       ((= 2 2) 'quite-true)
-      ((= 3 2) 'too-far))
+      ((= 3 2) 'too-far)
+      (t 'something-else))
 ; => QUITE-TRUE
 
 (case 'elder-beast

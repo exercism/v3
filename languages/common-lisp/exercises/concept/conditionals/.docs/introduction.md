@@ -23,8 +23,8 @@ test is true or false respectively – evaluating to `nil` otherwise.
 
 #### The Two-Branch Conditional
 
-The `if` conditional evaluates the first expression of the body when the test is
-true and the second one otherwise.
+The `if` conditional evaluates to the second expression of the body when the
+test is true and the third one otherwise.
 
 ```lisp
 (if (= 2 2) 'how-honest 'you-liar) ; => HOW-HONEST
@@ -35,13 +35,15 @@ true and the second one otherwise.
 The Lisp "super-conditional" is `cond`, which can have an infinite number of
 branches. Each branch has a test condition and body expression that are
 surrounded by an extra pair of parentheses. If all of the tests evaluate to
-false, then `nil` is returned.
+false, then `nil` is returned. A common pattern is the addition of a final `t`
+branch that serves as a catch-all.
 
 ```lisp
 (cond ((= 0 2) 'nope)
       ((= 1 2) 'try-again)
       ((= 2 2) 'quite-true)
-      ((= 3 2) 'too-far))
+      ((= 3 2) 'too-far)
+      (t 'something-else))
 ; => QUITE-TRUE
 ```
 

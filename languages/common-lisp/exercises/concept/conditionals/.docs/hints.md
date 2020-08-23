@@ -10,14 +10,14 @@
 
 ## 1. Picking a Pal
 
-- Remember that keywords are just special symbols always equal to themselves
 - This task requires a multi-branch conditional
+- Remember that keywords are just special symbols always equal to themselves
 
 ## 2. In Their Natural Habitat
 
-- It may be working looking into the order in which branches of [this
-  expression](http://l1sp.org/cl/cond) are evaluated.
 - This task requires a multi-branch conditional
+- It may be worth looking into the order in which branches of [this
+  expression](http://l1sp.org/cl/cond) are evaluated.
 
 ## 3. And Now, We Feast
 

@@ -3,7 +3,7 @@ wonderful things, but one of their favorite discoveries was that of
 "pets". Let's be honest, what sort of alien wouldn't gush over a puppy or
 kitten?
 
-Ludwig, after his recent holiday to earth, has decided he wants a pet of his
+Ludwig, after his recent holiday to Earth, has decided he wants a pet of his
 own! The only issue? Far too many choices! Perhaps you could write a program to
 help Ludwig find and care for his next cuddly friend?
 
@@ -78,7 +78,7 @@ pet is suitable for these activities.
 
 Ludwig would like a pair of functions – `pet` and `play-fetch` – that take the
 type of pet (as a string) and return either nothing or a message like: `"Maybe
-not with this pet..." if the action is unfitting.
+not with this pet..."` if the action is unfitting.
 
 Assume that only `"Dog"`s will play fetch and that all pets except `"Fish"` can
 be pet.
