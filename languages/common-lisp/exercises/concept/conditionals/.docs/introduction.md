@@ -3,8 +3,8 @@
 In Common Lisp, false values are represented by the empty list – `()` – or the
 symbol `nil`. These values can be quoted or unquoted.
 
-All other values in Lisp represent truth. There also exists the special symbol
-and variable `t` that is always true (can never be the empty list).
+All other values in Lisp represent truth. There also exists the special constant
+symbol `t` that is always equal to `t` (and is therefore always true).
 
 ### Conditionals
 
