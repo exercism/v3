@@ -32,4 +32,4 @@ Define a window class with the following properties and methods:
 Create two instances of windows and modify them via their methods as follows:
 
 - The first window should be given the title "Main Window", with a width of 400, a height of 300 and positioned at x = 100, y = 100. Its contents should be "This is the main window". Assign this instance to the name `mainWindow`.
-- The second window should be give the title of "Help Dialog", with a width and height of 100 each, positioned at x = 650 and y = 650. Its contents should be "Did someone ask for help?". Assign this instance to the name `helpWindow`.
+- The second window should be given the title of "Help Dialog", with a width and height of 100 each, positioned at x = 690 and y = 10. Its contents should be "Somebody called for help?". Assign this instance to the name `helpWindow`.

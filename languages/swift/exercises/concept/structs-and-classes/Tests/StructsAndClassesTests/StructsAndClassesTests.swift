@@ -18,14 +18,14 @@ final class StructsAndClassesTests: XCTestCase {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     XCTAssertEqual(
       mainWindow.display(),
-      "Main Window\nPosition: (400, 400), Size: (400 x 200)\nThis is the main window\n")
+      "Main Window\nPosition: (100, 100), Size: (400 x 300)\nThis is the main window\n")
   }
 
   func testHelpWindow() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     XCTAssertEqual(
       helpWindow.display(),
-      "Help Window\nPosition: (590, 10), Size: (200 x 200)\nSomebody called for help?\n")
+      "Help Dialog\nPosition: (590, 10), Size: (100 x 100)\nSomebody called for help?\n")
   }
 
   func testPositionMove() throws {

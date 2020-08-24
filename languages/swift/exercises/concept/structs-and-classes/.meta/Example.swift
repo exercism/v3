@@ -60,8 +60,8 @@ let mainWindow: Window = {
   var window = Window()
   window.title = "Main Window"
   window.contents = "This is the main window"
-  window.move(to: Position(x: 400, y: 400))
-  window.resize(to: Size(width: 400, height: 400))
+  window.move(to: Position(x: 100, y: 100))
+  window.resize(to: Size(width: 400, height: 300))
   return window
 }()
 
@@ -69,7 +69,7 @@ let helpWindow: Window = {
   var window = Window()
   window.title = "Help Window"
   window.contents = "Somebody called for help?"
-  window.move(to: Position(x: 590, y: 10))
-  window.resize(to: Size(width: 200, height: 200))
+  window.move(to: Position(x: 690, y: 10))
+  window.resize(to: Size(width: 100, height: 100))
   return window
 }()
