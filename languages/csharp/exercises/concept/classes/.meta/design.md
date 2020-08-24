@@ -30,4 +30,4 @@
 - `basics`: know how to define a basic class with basic methods.
 - `strings`: know how to do basic string interpolation.
 - `numbers`: know how to compare numbers.
-- `conditionals`: know how to do conditional logic.
+- `conditionals-if`: know how to do conditional logic.

@@ -22,7 +22,7 @@
 - `constructors`: know how to work with constructors.
 - `strings`: know how to do basic string interpolation.
 - `boolean`: know how to use boolean logic.
-- `conditionals`: know how to do conditional logic.
+- `conditionals-if`: know how to do conditional logic.
 
 ## Analyzer
 
