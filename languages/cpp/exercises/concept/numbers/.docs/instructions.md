@@ -31,4 +31,4 @@ assembly_line::working_items_per_minute(6)
 // Returns: 19
 ```
 
-> Note that the value returned is of type `int32_t`.
+> Note that the value returned is of type `std::int32_t`.

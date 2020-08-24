@@ -21,6 +21,6 @@ The goal of this exercise is to teach the student how to work with integer and f
 - `numbers`: know of the existence of the two most commonly used number types: integer and floating point; know of basic operators such as multiplication, comparison and equality.
 - `conditionals`: know how to conditionally execute code using an `if` statement.
 
-## Perquisites
+## Prerequisites
 
 There are no prerequisites.

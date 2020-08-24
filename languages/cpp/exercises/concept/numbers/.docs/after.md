@@ -18,10 +18,6 @@ Integer values can have different written form - "literal" that helps create int
 
 Long numbers in C++ can be separated for readability using `'` (single quotation mark). For example, `10000` is equivalent `10'000`.
 
-### Char types as integers
-
-Char types `char` `unsigned char`, `wchar_t`, `char16_t` and `char32_t` have the same memory layout and in some cases can be treated as integers.
-
 ### Numeric limits
 
 Compile-time information about a numeric type is available using meta-functions from `<limits>`.
@@ -41,12 +37,7 @@ Complex numbers are represented with [`std::complex`][complex] standard module.
 
 [NULL][null] is a constant expression of integer type that evaluates to zero.
 
-### `std::is_arithmetic`
-
-If the type is arithmetic can be done with a meta-function [`std::is_arithmetic`][is_arithmetic].
-
 [fundamental-types]: https://en.cppreference.com/w/cpp/language/types
 [numeric-limits]: https://en.cppreference.com/w/cpp/types/numeric_limits
 [complex]: https://en.cppreference.com/w/cpp/numeric/complex
 [null]: https://en.cppreference.com/w/cpp/types/NULL
-[is_arithmetic]: https://en.cppreference.com/w/cpp/types/is_arithmetic

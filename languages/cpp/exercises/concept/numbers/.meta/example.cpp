@@ -2,10 +2,10 @@
 
 namespace assembly_line {
 
-constexpr uint32_t PRODUCTION_RATE_DEFAULT_SPEED = 221;
+constexpr std::int32_t production_rate_default_speed = 221;
 
 namespace {
-double success_rate(const int32_t speed) {
+double success_rate(const std::int32_t speed) {
     if (speed == 10) {
         return 0.77;
     }
@@ -22,11 +22,11 @@ double success_rate(const int32_t speed) {
 }
 }  // namespace
 
-double production_rate_per_hour(const int32_t speed) {
-    return PRODUCTION_RATE_DEFAULT_SPEED * speed * success_rate(speed);
+double production_rate_per_hour(const std::int32_t speed) {
+    return production_rate_default_speed * speed * success_rate(speed);
 }
 
-int32_t working_items_per_minute(const int32_t speed) {
+std::int32_t working_items_per_minute(const std::int32_t speed) {
     return production_rate_per_hour(speed) / 60;
 }
 
