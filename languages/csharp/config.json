@@ -61,7 +61,12 @@
         "slug": "constructors",
         "uuid": "655b5c37-c2eb-4da2-ab0a-3845de898835",
         "concepts": ["constructors"],
-        "prerequisites": ["classes", "conditionals-if", "numbers", "while-loops"]
+        "prerequisites": [
+          "classes",
+          "conditionals-if",
+          "numbers",
+          "while-loops"
+        ]
       },
       {
         "slug": "datetimes",
