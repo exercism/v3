@@ -14,7 +14,7 @@
 
 - `floating-point-numbers`: know of the existing of the three floating point types: `double`, `float` and `decimal`. know when to use which floating point type.
 - `while-loops`: know how to write a `while` loop.
-- `conditionals-if`:
+- `if-statements`:
 
 ## Prerequisites
 

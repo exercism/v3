@@ -334,7 +334,7 @@
           ]
         },
         {
-          "name": "conditionals-if",
+          "name": "if-statements",
           "track-neutral-concept": "reference/concepts/conditionals.md",
           "original-concepts": [
             {
