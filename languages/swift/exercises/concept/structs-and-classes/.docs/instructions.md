@@ -1,4 +1,26 @@
-In this exercise, you will be simulating a windowing based computer system. You will create some windows that can be moved and resized and display their contents.
+In this exercise, you will be simulating a windowing based computer system. You will create some windows that can be moved and resized and display their contents. The following image is representative of the values you will be working with below.
+
+```
+                  <--------------------- screenSize.width --------------------->
+
+       ^          ╔════════════════════════════════════════════════════════════╗
+       |          ║                                                            ║
+       |          ║          position.x,_                                      ║
+       |          ║          position.y  \                                     ║
+       |          ║                       \<----- size.width ----->            ║
+       |          ║                 ^      *──────────────────────┐            ║
+       |          ║                 |      │        title         │            ║
+       |          ║                 |      ├──────────────────────┤            ║
+screenSize.height ║                 |      │                      │            ║
+       |          ║            size.height │                      │            ║
+       |          ║                 |      │       contents       │            ║
+       |          ║                 |      │                      │            ║
+       |          ║                 |      │                      │            ║
+       |          ║                 v      └──────────────────────┘            ║
+       |          ║                                                            ║
+       |          ║                                                            ║
+       v          ╚════════════════════════════════════════════════════════════╝
+```
 
 ## 1. Define a Size struct
 
