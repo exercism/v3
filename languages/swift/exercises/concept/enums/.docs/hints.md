@@ -4,7 +4,7 @@
 
 ## 2. Parse log level
 
-- Swift has some [properties][string-first-docs] and [methods][string-dropFirst-docs] for getting [parts of a string][string-prefix-docs].
+- Swift has some [properties][string-first-docs] and [methods][string-dropfirst-docs] for getting [parts of a string][string-prefix-docs].
 - You can use a [`switch` statement][switch-statement] to determine the appropriate log level.
 
 ## 3. Convert log line to short format
