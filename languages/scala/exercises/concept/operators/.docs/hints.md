@@ -1,11 +1,11 @@
 ## General
 
-- In every task you need to define a new instance of `Rectangle` with correct width and height constructor arguments. This new rectangle serves as a return value.
+- In every task you need to define a new instance of the `Rectangle` class with the correct width and height constructor arguments. This new rectangle serves as the return value.
 
 ## 1. Create a plus operator for rectangles
 
 - The new rectangle's width needs to be the sum of the current rectangle and the method argument's rectangle.
-- The new rectangle's height can be taken e.g. from the current rectangle.
+- The new rectangle's height can be taken from the current rectangle.
 
 ## 2. Enhance the plus operator
 

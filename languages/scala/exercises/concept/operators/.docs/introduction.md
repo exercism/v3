@@ -25,20 +25,10 @@ Examples of relational and logical operators:
 !(4 > 6) // Boolean = true
 ```
 
-In Scala operators like `+` are just ordinary methods. If you write `1 + 2`, it is equal to the expression `1.+(2)`, which means, `Int` has a method named `+`, which takes one argument of type `Int`.
-
-Try out by yourself and evaluate both expressions.
-
-Using `+` in the "operator style":
-
+In Scala operators like `+` are just ordinary methods. If you write `1 + 2`, it is equal to the expression `1.+(2)`, which means, `Int` has a method named `+`, which takes one argument of type `Int` and returns an `Int`.
 ```scala
-1 + 2
-```
-
-Using `+` in the "method style":
-
-```scala
-1.+(2)
+1 + 2  // Operator style
+1.+(2) // Method style
 ```
 
 In this exercise we will define `+` and `*` operators for an own complex type.

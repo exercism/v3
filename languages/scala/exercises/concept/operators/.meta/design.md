@@ -14,8 +14,4 @@
 
 ## Prequisites
 
-- `case classes`
-
-## Representer
-
-## Analyzer
+- `case-classes`

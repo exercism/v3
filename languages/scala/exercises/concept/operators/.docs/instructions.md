@@ -6,9 +6,9 @@ Given is a case class `Rectangle`. A rectangle is defined by its width and its h
 case class Rectangle(width: Int, height: Int)
 ```
 
-The calculator will allow to sum up two rectangles and to increase a rectangle by multiplying it with a number.
+The calculator will allow to sum two rectangles and to expand a rectangle by multiplying it with a number.
 
-## 1. Create a plus operator for rectangles
+## 1. Allow rectangles of the same height to be added
 
 Implement a `+` method that takes another rectangle as argument. Assume that the passed rectangle has the same height as the current one. The method should return a new rectangle, whose width is a sum of both rectangle's widths and whose height is the same as of both rectangles.
 
@@ -26,7 +26,7 @@ println(sumRectangle)
 // => Rectangle(3, 5)
 ```
 
-## 2. Enhance the plus operator
+## 2. Allow adding rectangles of different heights
 
 How to deal with rectangles of different heights? In this task please update the `+` method like follows: The new rectangle should get the height of the higher rectangle.
 
@@ -44,9 +44,9 @@ println(sumRectangle)
 // => Rectangle(3, 4)
 ```
 
-## 3. Create a multiply operator for rectangles
+## 3. Allow multiplying rectangles by a factor
 
-Implement a `*` method, which takes an Int parameter and returns an expanded rectangle, whose width and height are multiplied by the given parameter.
+Implement a `*` method, which takes an `Int` parameter and returns an expanded rectangle, whose width and height are multiplied by the given parameter.
 
 ![multiplication of a rectangle with a number](multiplication_rectangle_number.png)
 
