@@ -19,9 +19,9 @@ Reins and harness
 Eager to leave
 ```
 
-When the guard recites the poem, you will split it into individual lines and respond with the first letters of each line, i.e. ["S", "H", "I", "R", "E"].
+When the guard recites the poem, you will split it into individual lines and respond with the first letters of each line, i.e. `["S", "H", "I", "R", "E"]`.
 
-The guard will then give you the word formed by the array of letters you replied with for you to put into capitalized word form. Finally the password you return is `Shire`, and you'll get in.
+The guard will then give you the word formed by the array of letters you replied with for you to put into capitalized word form. Finally the password you return is `"Shire"`, and you'll get in.
 
 ## Back door
 
@@ -32,7 +32,7 @@ In the back of the club you'll find the most renowned poets, which is like the V
      there are sometimes spaces after each sentence that will need to be removed first_.
 2. The guard will tell you all the letters you've responded with at once:
    - You need to format the letters as a capitalized word
-   - and ask nicely, by appending `, please`
+   - and ask nicely, by appending `", please"`
 
 For example, the poem mentioned before is also _telestich_, which means that
 the last letter of each sentence form a word:
@@ -45,9 +45,9 @@ Reins and harness
 Eager to leave
 ```
 
-When the guard recites the poem, you will split it into individual lines, strip off any trailing spaces, and respond with the first letters of each line, i.e. ["h", "o", "r", "s", "e"].
+When the guard recites the poem, you will split it into individual lines, strip off any trailing spaces, and respond with the first letters of each line, i.e. `["h", "o", "r", "s", "e"]`.
 
-The guard will then give you the word formed by the array of letters you replied with for you to put into capitalized word form and append `", please."`. Finally the password you return is `Horse, please.`, and you'll get in.
+The guard will then give you the word formed by the array of letters you replied with for you to put into capitalized word form and append `", please."`. Finally the password you return is `"Horse, please."`, and you'll get in.
 
 ## Secret room
 
@@ -72,8 +72,6 @@ Eager to leave
 When the guard recites the poem, you will split it into individual lines, strip off any trailing spaces, and respond with the i<sup>th</sup> letters of each line, i.e. ["S", "u", "p", "e", "r"].
 
 The guard will then give you the word formed by the array of letters you replied with for you to put into uppercased word form and append `"!"`. Finally the password you return is `SUPER!`, and you'll get in.
-
-## Tasks
 
 ## 1. Split a string into individual lines
 
@@ -128,7 +126,7 @@ lastLetter("Stands so high")
 Implement the function `backDoorPassword(_:)` that takes a string as input and formats it in the polite manner required for the backdoor password:
 
 ```swift
-backDoorPassword('horse')
+backDoorPassword("horse")
 // => "Horse, please"
 ```
 

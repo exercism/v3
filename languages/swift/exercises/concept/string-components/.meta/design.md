@@ -21,7 +21,9 @@ The goal of this exercise is to teach the student the basics of the String type 
 
 The Concepts this exercise unlocks are:
 
-- `string-components`: Know of the existence of the `String` type; know how to create a string; know of the existence of `String` methods and properties; know some basic string methods; know that String indices are not integers; know how to do basic string formatting
+- `string-components`: Know of the existence of the `String` type; know how to create a string; know of the existence of `String` methods and properties; know some basic string methods; know how to do basic string formatting
+- `string-indexing`: know that String indices are not integers; know how to compute string indices with and without limits
+- `opaque-indices`: Know what an opaque index is, know how they differ from indices used with array or dictionaries.
 
 ## Prerequisites
 
