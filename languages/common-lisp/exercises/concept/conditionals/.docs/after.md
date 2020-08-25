@@ -122,6 +122,17 @@ returning `nil` when there is no match.
 ; => ERROR: ELDER-BEAST fell through ECASE expression. Wanted one of (CAT BIRD DOG).
 ```
 
+### External Resources
+
+In case you hadn't come across them earlier, here are a couple of links to pages
+further exploring conditionals in Common Lisp.
+
+- [A
+  tutorial](https://riptutorial.com/common-lisp/example/11082/conditional-constructs)
+  on most Common Lisp conditionals (excluding `case`)
+- [This page](https://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node84.html)
+  provides even more detail and also covers `case`
+
 ## Reference
 
 ```lisp
