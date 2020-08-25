@@ -18,6 +18,7 @@ This report is updated automatically when any _design.md_ document is modified o
 - assignment [_(numbers)_][exercise-numbers] - [Design][design-numbers]
 - base-class-library [_(dictionaries)_][exercise-dictionaries] - [Design][design-dictionaries]
 - basics [_(basics)_][exercise-basics] - [Design][design-basics]
+- bit-manipulation [_(flag-enums)_][exercise-flag-enums] - [Design][design-flag-enums]
 - booleans [_(booleans)_][exercise-booleans] - [Design][design-booleans], [Background][tnc-booleans]
 - booleans [_(booleans)_][exercise-booleans] - [Design][design-booleans]
 - casting [_(casting)_][exercise-casting] - [Design][design-casting]
@@ -25,7 +26,6 @@ This report is updated automatically when any _design.md_ document is modified o
 - classes [_(classes)_][exercise-classes] - [Design][design-classes], [Background][tnc-classes]
 - collections [_(lists)_][exercise-lists] - [Design][design-lists]
 - comments [_(basics)_][exercise-basics] - [Design][design-basics]
-- conditionals [_(numbers)_][exercise-numbers] - [Design][design-numbers]
 - conditionals-ternary [_(expression-bodied-members)_][exercise-expression-bodied-members] - [Design][design-expression-bodied-members], [Background][tnc-conditionals-ternary]
 - conditionals-while [_(floating-point-numbers)_][exercise-floating-point-numbers] - [Design][design-floating-point-numbers]
 - constants [_(constants)_][exercise-constants] - [Design][design-constants]
@@ -47,6 +47,8 @@ This report is updated automatically when any _design.md_ document is modified o
 - foreach-loops [_(arrays)_][exercise-arrays] - [Design][design-arrays], [Background][tnc-foreach-loops]
 - formatting-types [_(string-formatting)_][exercise-string-formatting] - [Design][design-string-formatting]
 - functions [_(basics)_][exercise-basics] - [Design][design-basics], [Background][tnc-functions]
+- generic-types [_(lists)_][exercise-lists] - [Design][design-lists]
+- if-statements [_(numbers)_][exercise-numbers] - [Design][design-numbers], [Background][tnc-if-statements]
 - implicit-casting [_(casting)_][exercise-casting] - [Design][design-casting]
 - imports [_(namespaces)_][exercise-namespaces] - [Design][design-namespaces]
 - inheritance [_(inheritance)_][exercise-inheritance] - [Design][design-inheritance], [Background][tnc-inheritance]
@@ -72,6 +74,7 @@ This report is updated automatically when any _design.md_ document is modified o
 - objects [_(classes)_][exercise-classes] - [Design][design-classes], [Background][tnc-objects]
 - operator-overloading [_(operator-overloading)_][exercise-operator-overloading] - [Design][design-operator-overloading]
 - optional-arguments [_(parameters)_][exercise-parameters] - [Design][design-parameters], [Background][tnc-optional-arguments]
+- ordering [_(interfaces)_][exercise-interfaces] - [Design][design-interfaces]
 - out-parameters [_(parameters)_][exercise-parameters] - [Design][design-parameters]
 - overflow [_(overflow)_][exercise-overflow] - [Design][design-overflow]
 - parameters [_(parameters)_][exercise-parameters] - [Design][design-parameters]
@@ -161,11 +164,7 @@ This report is updated automatically when any _design.md_ document is modified o
 
 ### Unallocated Concepts
 
-- bitwise-manipulation _(unallocated-concepts)_
 - conditionals-do-while _(unallocated-concepts)_
-- conditionals-if _(unallocated-concepts)_ - [Background][tnc-conditionals-if]
-- generics-introduction _(unallocated-concepts)_
-- ordering _(unallocated-concepts)_
 
 ## Learning Objectives
 
@@ -173,12 +172,12 @@ This report is updated automatically when any _design.md_ document is modified o
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `arrays`                    | <ul><li>know of the existence of the `Array` type<li>know how to define an array<li>know how to access elements in an array by index<li>know how to update an element in an array by index<li>know how to iterate over elements in an array<li>know of some basic functions (like finding the index of an element in an array).                                                                                                                                                                                                       |
 | `basics`                    | <ul><li>know what a variable is<li>know how to define a variable<li>know how to update a variable<li>know how to use type inference for variables<li>know how to define a method<li>know how to return a value from a method<li>know how to call a method<li>know that methods must be defined in classes<li>know about the `public` access modifier<li>know about the `static` modifier<li>know how to define an integer<li>know how to use mathematical operators on integers<li>know how to define single- and multiline comments. |
+| `bit-manipulation`          | <ul><li>know how to use bitwise operators to manipulate bits.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | `booleans`                  | <ul><li>know of the existence of the `bool` type and its two values<li>know about boolean operators and how to build logical expressions with them<li>know of the boolean operator precedence rules.                                                                                                                                                                                                                                                                                                                                  |
 | `booleans`                  | <ul><li>know of the existence of the `bool` type and its two values<li>know about boolean operators and how to build logical expressions with them<li>know of the boolean operator precedence rules.                                                                                                                                                                                                                                                                                                                                  |
 | `casting`                   | <ul><li>know what explicit and implicit casts are<li>know how to do an explicit cast<li>know how to use `is` and `as` to convert between types.<li>Understand casting of integral numeric types.                                                                                                                                                                                                                                                                                                                                      |
 | `chars`                     | <ul><li>know of the existence of the `char` type<li>know that a `char` represents<li>know how to define a `char`<li>know how to access a `char` in a string by index<li>know of some basic `char` methods (like converting to uppercase).                                                                                                                                                                                                                                                                                             |
 | `classes`                   | <ul><li>know what classes are<li>know what encapsulation is<li>know what fields are<li>know how to create an object<li>know how to update state through methods<li>know about the `void` type.                                                                                                                                                                                                                                                                                                                                        |
-| `conditionals`              | <ul><li>know how to conditionally execute code using an `if` statement.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | `conditionals-ternary`      | <ul><li>know how and when to use the ternary operator.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | `constants`                 | <ul><li>know how to define `const` values<li>know how to define `readonly` modifier know when to use `const` or `readonly`.                                                                                                                                                                                                                                                                                                                                                                                                           |
 | `constructors`              | <ul><li>know what constructors are<li>know how to define parameterless constructors<li>know how to define parameterized constructors<li>know how to use constructor overloading<li>know how to define private constructors.                                                                                                                                                                                                                                                                                                           |
@@ -192,6 +191,8 @@ This report is updated automatically when any _design.md_ document is modified o
 | `floating-point-numbers`    | <ul><li>know of the existing of the three floating point types: `double`, `float` and `decimal`. know when to use which floating point type.                                                                                                                                                                                                                                                                                                                                                                                          |
 | `for-loops`                 | <ul><li>know how to use a `for` loop to do iteration.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | `foreach-loops`             | <ul><li>know how to iterate over a collection.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `generic-types`             | <ul><li>know what generic types are.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `if-statements`             | <ul><li>know how to conditionally execute code using an `if` statement.<li>                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | `inheritance`               | <ul><li>know what inheritance is<li>know how to inherit from a class<li>know that all types inherit from `object`<li>know what abstract and sealed classes are<li>know what abstract and virtual methods are<li>know how to override methods<li>know about the `protected` visibility modifier.                                                                                                                                                                                                                                       |
 | `integral-numbers`          | <ul><li>know of the difference between signed and unsigned integral types<li>know of the existence of the integral types: `sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long` and `ulong`<li>know when to use which integral type.                                                                                                                                                                                                                                                                                              |
 | `interfaces`                | <ul><li>know what interfaces are<li>know how to use interfaces<li>know how to define an interface<li>know how to implement an interface<li>know how to explicitly implement an interface.                                                                                                                                                                                                                                                                                                                                             |
@@ -313,7 +314,6 @@ This report is updated automatically when any _design.md_ document is modified o
 [tnc-booleans]: ../../../reference/types/boolean.md
 [tnc-chars]: ../../../reference/types/char.md
 [tnc-classes]: ../../../reference/concepts/classes.md
-[tnc-conditionals-if]: ../../../reference/concepts/conditionals.md
 [tnc-conditionals-ternary]: ../../../reference/concepts/conditionals.md
 [tnc-dictionaries]: ../../../reference/types/map.md
 [tnc-encapsulation]: ../../../reference/concepts/encapsulation.md
@@ -322,6 +322,7 @@ This report is updated automatically when any _design.md_ document is modified o
 [tnc-foreach-loops]: ../../../reference/concepts/enumeration.md
 [tnc-functions]: ../../../reference/types/function.md
 [tnc-higher-order-functions]: ../../../reference/concepts/higher_order_functions.md
+[tnc-if-statements]: ../../../reference/concepts/conditionals.md
 [tnc-immutability]: ../../../reference/concepts/immutability.md
 [tnc-inheritance]: ../../../reference/concepts/inheritance.md
 [tnc-interfaces]: ../../../reference/concepts/interfaces.md
