@@ -36,10 +36,11 @@ graduationFor(name: "Padma", year: 2020)
 // => "Congratulations Padma!\nClass of 2020"
 ```
 
-## 5. Count the number of lines in a sign's message
+## 5. Compute the cost of a sign
 
-The signs that the messages go on can only hold up to four lines. Implement the function `numberOfLines(in: String) -> Int` that takes a string as input, iterates over the characters in the string to count the number of newline characters. Return the number of newlines plus 1 as the number of lines in the message.
+Implement the function `costOf(sign: String) -> Int` which takes a string that holds the contents of the sign and returns the cost to create the sign, which is 2 dollars for each character in the sign plus a base price of 20 dollars.
 
-## 6. Count the number of numbers in a sign's message
-
-Because they are lower in stock, numbers cost more to put in a sign's message than letters. Implement a function `numberOfNumbers(in: String) -> Int` that takes a string as input, iterates over the characters in the string to count the number of characters which are numbers and return this count.
+```swift
+costOf(sign: "Happy Birthday Grandma!")
+// => 66
+```

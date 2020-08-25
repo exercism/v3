@@ -7,7 +7,6 @@ The goal of this exercise is to teach the student the basics of the Swift [Strin
 - Know of the existence of `String` methods and properties
 - Know some basic string methods (like finding the index of a character, or splitting a string based on a delimiter).
 - Know how to combine strings.
-- Know how to iterate over a string
 - Know the existence of the `Character` type
 - Know how the create a Character
 - Know of the existence of `Character` methods and properties
@@ -28,7 +27,7 @@ The goal of this exercise is to teach the student the basics of the Swift [Strin
 
 ## Concepts
 
-- `strings`: Know of the existence of the `String` type; know how to create a string; know of the existence of `String` methods and properties; know some basic string methods; know how to combine strings; know how to iterate over a string
+- `strings`: Know of the existence of the `String` type; know how to create a string; know of the existence of `String` methods and properties; know some basic string methods; know how to combine strings
 - `characters`: Know the existence of the `Character` type; know how the create a Character; know of the existence of `Character` methods and properties; know some basic `Character` methods; know how to append a `Character` onto a `String`; know how to convert a `Character` to a `String`
 
 ## Prerequisites

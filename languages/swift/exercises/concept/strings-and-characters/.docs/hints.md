@@ -9,24 +9,20 @@
 
 ## 3. Combine phrases to build up messages
 
-- Strings can be concatenated using the `+` operator.
+- Strings can be concatenated using [the appropriate string operator][string-docs].
 - Characters cannot be concatenated with Strings. They must first be converted into Strings.
 
 ## 4. Build a graduation sign
 
 - [String interpolation][string-interpolation] is performed by placing the expression whose value you want to place in the string inside a set of parentheses which are preceded by a backslash character.
 
-## 5. Count the number of lines in a sign's message
+## 5. Compute the cost of a sign
 
-- One can iterate over the characters of a string using a for-in loop.
-- Characters and strings can be [compared for equality][string-equality] with the `==` operator.
-
-## 6. Count the number of numbers in a sign's message
-
-- One can iterate over the characters of a string using a for-in loop.
-- One can determine if a character is a number by [checking its numeric properties][character-docs].
+- Swift has [a string property][string-count-docs] that returns the number of characters in a string.
 
 [strings-and-characters]: https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html
 [character-docs]: https://developer.apple.com/documentation/swift/character
 [string-interpolation]: https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html#ID292
 [string-equality]: https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html#ID299
+[string-count-docs]: https://developer.apple.com/documentation/swift/string/3003522-count
+[string-docs]: https://developer.apple.com/documentation/swift/string

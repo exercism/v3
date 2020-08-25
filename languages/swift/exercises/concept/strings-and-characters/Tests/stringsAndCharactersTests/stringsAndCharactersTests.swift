@@ -45,34 +45,14 @@ final class stringsAndCharactersTests: XCTestCase {
       graduationFor(name: "Isabel", year: 1988), "Congratulations Isabel!\nClass of 1988")
   }
 
-  func testNumberOfLines() throws {
+  func testCostOfSign() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
-    XCTAssertEqual(numberOfLines(in: graduationFor(name: "Isabel", year: 1988)), 2)
+    XCTAssertEqual(costOf(sign: graduationFor(name: "Isabel", year: 1988)), 94)
   }
 
-  func testNumberOfLines2() throws {
+  func testCostOfSignEmpty() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
-    XCTAssertEqual(numberOfLines(in: "Hello\n\n\n\n\n\n\n\n\n\nWorld\n"), 12)
-  }
-
-  func testNumberOfLines3() throws {
-    try XCTSkipIf(true && !runAll)  // change true to false to run this test
-    XCTAssertEqual(numberOfLines(in: ""), 1)
-  }
-
-  func testNumberofNumbers() throws {
-    try XCTSkipIf(true && !runAll)  // change true to false to run this test
-    XCTAssertEqual(numberOfNumbers(in: graduationFor(name: "Isabel", year: 1988)), 4)
-  }
-
-  func testNumberofNumbers2() throws {
-    try XCTSkipIf(true && !runAll)  // change true to false to run this test
-    XCTAssertEqual(numberOfNumbers(in: "No numbers here"), 0)
-  }
-
-  func testNumberofNumbers3() throws {
-    try XCTSkipIf(true && !runAll)  // change true to false to run this test
-    XCTAssertEqual(numberOfNumbers(in: "N0 numb3r5 ½3r3!"), 6)
+    XCTAssertEqual(costOf(sign: ""), 20)
   }
 
   static var allTests = [
@@ -84,11 +64,7 @@ final class stringsAndCharactersTests: XCTestCase {
     ("testBuildSign", testBuildSign),
     ("testBuildSign2", testBuildSign2),
     ("testGraduation", testGraduation),
-    ("testNumberOfLines", testNumberOfLines),
-    ("testNumberOfLines2", testNumberOfLines2),
-    ("testNumberOfLines3", testNumberOfLines3),
-    ("testNumberofNumbers", testNumberofNumbers),
-    ("testNumberofNumbers2", testNumberofNumbers2),
-    ("testNumberofNumbers3", testNumberofNumbers3),
+    ("testCostOfSign", testCostOfSign),
+    ("testCostOfSignEmpty", testCostOfSignEmpty),
   ]
 }

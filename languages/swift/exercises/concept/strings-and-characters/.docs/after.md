@@ -1,7 +1,7 @@
 [Strings][strings-and-characters] in Swift are a collection of characters, where characters are, more or less, a single printable element. So strings in swift are able to contain Unicode characters and emoji.
 
 Strings are easily created in Swift through string literals. String literals are similar to those seen in many other programming languages, characters enclosed between a pair of double quotation marks (`"`). String literals can include the following special characters:
-\\0 (null character), \\\\ (backslash), \\t (horizontal tab), \\n (newline), \\r (carriage return), \\" (double quotation mark) and \\' (single quotation mark) String literals can also contain arbitrary Unicode scalar values, written as \\u{_n_}, where _n_ is a 1–8 digit hexadecimal number.
+`\0` (null character), `\\` (backslash), `\t` (horizontal tab), `\n` (newline), `\r` (carriage return), `\"` (double quotation mark) and `\'` (single quotation mark) String literals can also contain arbitrary Unicode scalar values, written as\u{_n_}, where _n_ is a 1–8 digit hexadecimal number.
 
 An empty string is represented by two double quotation marks with nothing between them.
 
@@ -25,7 +25,7 @@ let badChar: Character = "Too many characters"
 // Error: Cannot convert value of type 'String' to specified type 'Character'
 ```
 
-Like other constructs in Swift, characters and strings are immutable if defined using `let` and mutable if defined using `var`. So in the above examples, `hello` and `sausage` are immutable strings while `fam` and `empty`, AND `aChar` are mutable.
+Like other constructs in Swift, characters and strings are immutable if defined using `let` and mutable if defined using `var`. So in the above examples, `hello` and `sausage` are immutable strings while `fam` and `empty`, and `aChar` are mutable.
 
 ### Type conversion
 
@@ -36,7 +36,8 @@ String(110)
 // => "110"
 String(Double.pi)
 // => "3.141592653589793"
-String("x" as Character)
+let charX: Character = "x"
+String(charX)
 // "x"
 ```
 
@@ -125,10 +126,10 @@ Strings and Characters can be compared for equality (or lack thereof) using the 
 
 ```swift
 let hi = "Hello"
-let period: Character = "."
-"\(hi)\(period)" == "Hello."
+hi == "Hello."
 // => true
 
+let period: Character = "."
 period != ";"
 // => true
 ```
@@ -156,24 +157,6 @@ half.isNumber
 ```
 
 All of the [string properties][string-docs] and [character properties][character-docs] can be found in Apple's documentation.
-
-### Iterating over the characters of a string
-
-The individual characters in a string can be stepped through one at a time using a for-in loop. This type of loop takes each character in the string, in order, and binds the character to a specified name for further processing inside the loop body. For example, to print out all of the capital letters in a string one can write:
-
-```swift
-for char in "Hello Борис. How is Наташа?" {
-  if char.isUppercase {
-    print(char)
-  }
-}
-
-// prints out:
-// H
-// Б
-// H
-// Н
-```
 
 ## NSString
 
