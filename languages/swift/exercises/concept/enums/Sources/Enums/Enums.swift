@@ -1,3 +1,1 @@
-struct Enums {
-    var text = "Hello, World!"
-}
+// TODO: define the 'LogLevel' enum

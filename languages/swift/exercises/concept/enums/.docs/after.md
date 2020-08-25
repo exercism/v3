@@ -33,22 +33,18 @@ enum NESButton {
 }
 ```
 
-This defines a new type named `NESButtons` with possible values `up`, `down`, `left`, `right`, `a`, `b`, `select`, and `start`. These values can be referred to by following the name of the type followed by a dot (`.`) and the value. In cases where the type name can be inferred, only the dot and value are needed.
+This defines a new type named `NESButtons` with possible values `up`, `down`, `left`, `right`, `a`, `b`, `select`, and `start`. These values can be referred to by following the name of the type followed by a dot (`.`) and the value. In cases where the type name can be inferred, only the dot and value are needed. These values can then be used like any other values in Swift.
 
 ```swift
 var lastPressed = NESButton.up
 
 // Now that the type of lastPressed is set as NESButton
 lastPressed = .down
-```
 
-These values can then be used like any other values in Swift.
-
-```swift
 let konamiCode = [NESButton.up, .up, .down, .down, .left, .right, .left, .right, .b, .a]
 ```
 
-Notice how, since all of the elements of an array must be of the same type, we only need to supply the type name for one of the elements, the rest can be just the values. The type name wouldn't be required for any of them if the constant was given the proper type annotation, e.g. `let konamiCode: [NESButton] = …`.
+Notice that, since all of the elements of an array must be of the same type, we only need to supply the type name for one of the elements, the rest can be just the values. The type name wouldn't be required for any of them if the constant was given the proper type annotation, e.g. `let konamiCode: [NESButton] = …`.
 
 ### Enums and switch statements
 
@@ -114,6 +110,49 @@ lastPressed = .selcet
 // Error: Type 'NESButton' has no member 'selcet'
 ```
 
+### Methods
+
+Like other types in Swift, enums may contain methods which allow the enum to provide functionality based on the current value of the enum.
+
+Methods are analogous to functions, only they are defined inside the body of the enum and they are tied to the current enum value. They are accessed via _dot notation_ where the name of the enum value is followed by a dot (`.`) and the name of the method and its parameters.
+
+Inside the method, the enum value can be referred to as `self`, and in the type signature, if one is accepting as a parameter or returning a value of the the enum they can refer to the type as `Self`.
+
+#### Initializers
+
+Initializers are special methods that are used to set up a value of the enum. Their definition looks a lot like that of a method only there is no `func` keyword, no return type, and the name must be `init` and the initializer _must_ assign a value of the enum to self. Initializers are called either via dot notation or by passing the initializer's parameters to the name of the enum.
+
+Enums may also have failable initializers which return optional enum values. These are used when there may be no valid value to initialize to based on the input to the initializer and `nil` may be assigned to self instead. In these cases, the initializer name is written as `init?`, though the question mark is left off when the initializer is called.
+
+```swift
+enum Coin {
+  case heads
+  case tails
+
+  init(_ i: Int) {
+    if i.isMultiple(of: 2) {
+      self = .heads
+    } else {
+      self = .tails
+    }
+  }
+
+  func flip() -> Self {
+    switch self {
+    case .heads: return .tails
+    case .tails: return .heads
+    }
+  }
+}
+
+let tails = Coin.init(13)
+// .tails
+let heads = Coin(0)
+// .heads
+let anotherTails = heads.flip()
+// .tails
+```
+
 ### Raw values
 
 Enums can also carry with them an internal value known as a [_raw value_][raw-values]. The raw values must all be of the same type, which is declared in the definition of the enum. So we could assign, e.g. Character values to our `NESButton` enum by altering the definition:
@@ -146,14 +185,14 @@ Raw values can also be used to initialize values of the enum type. Note that the
 
 ```swift
 let upButton = NESButton.init(rawValue: "⬆️")
-// => .up
+// => Optional(.up)
 let invalid = NESButton.init(rawValue: "🙄")
 // => nil
 ```
 
 Swift can implicitly assign raw values for `String` and `Int` raw values. If a raw value type of `String` is specified, the raw value will be implicitly assigned to the name on the value as a String unless the implicit value is overridden with an explicit assignment.
 
-If a raw value type of `Int` is specified, the raw value will be implicitly assigned to an int 1 greater than the previous case's raw value, unless overridden with an explicit assignment. The default raw value for thee first case is 0 unless otherwise specified.
+If a raw value type of `Int` is specified, the raw value will be implicitly assigned to an int 1 greater than the previous case's raw value, unless overridden with an explicit assignment. The default raw value for the first case is 0 unless otherwise specified.
 
 ```swift
 enum Coin: String {
@@ -234,6 +273,8 @@ enum BinaryTree {
 
 let tree: BinaryTree = .node(left: .leaf(value: 1), value: 3, right: .node(left: .leaf(value: 5), value: 6, right: .leaf(value: 9)))
 ```
+
+Note that enums can have either raw values, or associated values, or neither, but they cannot have both.
 
 [api-design-guidelines]: https://swift.org/documentation/api-design-guidelines/
 [enumerations]: https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html

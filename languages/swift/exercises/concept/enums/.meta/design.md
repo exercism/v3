@@ -3,14 +3,15 @@ This concept exercise should convey a basic understanding of how to work with en
 ## Learning objectives
 
 - Enumerations
-- Associated values
+- Methods and initializers
 - Raw values
-- Switch with enumerations
+- Switch with enumerations (after only)
+- Associated values (after only)
 - Indirect / recursive enumerations (after only)
 
 ## Out of Scope
 
-- Methods and properties
+- Computed properties
 - case let and other pattern matching
 - Protocol conformance
 - CaseIterable
@@ -21,24 +22,15 @@ This concept exercise should convey a basic understanding of how to work with en
 
 ## Prerequisites
 
-- `basics`
-
-## Resources to refer to
-
-### Hints
-
-- [Enumerations][enumerations]
-
-### After
-
-- [Enumerations][enumerations]
+- `string-components`
+- `functions`
 
 ## Representer
 
-TBD
+- TBD
 
 ## Analyzer
 
-TBD
+- Verify that raw values are being used to represent the short format of the cases
 
 [enumerations]: https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html

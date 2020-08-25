@@ -1,6 +1,5 @@
-import XCTest
-
 import EnumsTests
+import XCTest
 
 var tests = [XCTestCaseEntry]()
 tests += EnumsTests.allTests()
