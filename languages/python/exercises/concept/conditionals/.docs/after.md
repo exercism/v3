@@ -79,7 +79,7 @@ else:
 >>> x is less than 30
 ```
 
-Here first the code checks the first if condition. It finds that the expression evaluvates to `False`. Therfore it goes into `elif` statement and sees if the expression inside `elif` evaluvates to truth if not it will continue to go through each `elif` expressions. If none of them evaluvates to `True` then the conditional goes to the `else` clause and executes the statement in the `else` clause. Note that in the case where `elif` is used. The `else` clause can come only at the end of the expression.
+Here first the code checks the first `if` condition. It finds that the expression evaluates to `False`. Therefore it goes into `elif` statement and sees if the expression inside `elif` evaluates to `True` if not it will continue to go through each `elif` expressions. If none of them evaluates to `True` then the conditional goes to the `else` clause and executes the statement in the `else` clause. Note that in the case where `elif` is used. The `else` clause can come only at the end of the expression.
 
 ## One line If statments
 
