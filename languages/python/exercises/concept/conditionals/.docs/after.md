@@ -20,7 +20,7 @@ if x > y:                           # expression is True
 >>> x is greater than y
 
 if x < y:                           # expression is False
-    print("x is greater than y")
+    print("x is lower than y")
 >>>                                 # Nothing is executed
 
 ```
@@ -52,14 +52,14 @@ x = 5
 if x > 10:                          # Expression evaluvates to False
     print("x is greater than 10")
 else:
-    print("x is less than 10")      # Expression evaluvates to True
->>> x is less than 10
+    print("x is less or equal than 10")      # Expression evaluates to True
+>>> x is less or equal than 10
 
 ```
 
-In this example we see that the `if` condition evaluvates to False so the statement in the `else` block is executed.
+In this example we see that the `if` condition evaluates to `False` so the statement in the `else` block is executed.
 
-A real world analogy to `if/else` statment is like this. If its sunny outside, then go to park. Otherwise read a book.
+A real world analogy to `if/else` statement is like this. If its sunny outside, then go to park. Otherwise read a book.
 
 ## The elif clause
 
