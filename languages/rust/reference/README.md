@@ -188,12 +188,3 @@ The exercises in this table should form a DAG which will eventually cover all co
 | `deriving-traits`        | `structs`                                    | `PartialEq`, `PartialOrd`, `Debug`, `Display`, `Default` |
 | `implementing-traits`    | `deriving-traits`                            | manually implementing a trait                            | probably implement `Iterator`                                                    |
 | `collection-conversions` | `vectors`, `hashsets`, `implementing-traits` | `FromIterator`, `IntoIterator`                           |
-
-_etc..._
-
-## TODO
-
-- Finish specifying concept exercises with specific dependencies and topics
-- Find references in The Rust Book to as many of the concepts above as possible; link them, replacing Exercism references
-- Find references in the [general Exercism reference section](../../../reference/README.md) for as many of the remaining concepts as possible; link them
-- Write appropriate references for all remaining concepts; link them

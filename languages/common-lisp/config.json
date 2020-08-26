@@ -1,5 +1,6 @@
 {
   "language": "Common Lisp",
+  "slug": "common-lisp",
   "active": true,
   "blurb": "A programmable programming language.",
   "version": 3,
@@ -206,9 +207,15 @@
       },
       {
         "slug": "conditionals",
-        "uuid": null,
+        "uuid": "c0155014-4d11-4cb2-872b-6dfdf794f7cd",
         "concepts": ["conditionals", "truthy-and-falsy"],
-        "prerequisites": ["expressions", "integers", "arithmetic", "symbols"]
+        "prerequisites": [
+          "expressions",
+          "integers",
+          "arithmetic",
+          "symbols",
+          "strings"
+        ]
       },
       {
         "slug": "function-definition",
