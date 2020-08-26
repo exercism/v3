@@ -73,7 +73,7 @@ period != ";"
 
 ### String and Character properties
 
-Strings and characters have a few different _properties_ which can be queried to get information about the string or character. These are queried by placing a ._propertyName_ after the string or character in question For example, one can check to see if a string is empty by querying it's `isEmpty` property, and the count of characters in a string can be retrieved using its `count` property.
+Strings and characters have a few different _properties_ which can be queried to get information about the string or character. These are queried by placing a ._propertyName_ after the string or character in question. For example, one can check to see if a string is empty by querying its `isEmpty` property, and the count of characters in a string can be retrieved using its `count` property.
 
 Character properties are mostly based on the type of character it is. For example, one can check to see if a character `isNumber`, `isLetter`, `isUppercase`, etc.
 
