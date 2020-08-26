@@ -8,7 +8,6 @@ func remainingMinutesInOven*(actualMinutesInOven: int) =
   ## oven to be properly prepared.
   expectedMinutesInOven - actualMinutesInOven
 
-
 func preparationTimeInMinutes*(numberOfLayers: int) =
   ## Given a number of layers, determine the total preparation time.
   numberOfLayers * preparationMinutesPerLayer
