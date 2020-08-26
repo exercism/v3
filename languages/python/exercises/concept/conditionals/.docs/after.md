@@ -83,7 +83,11 @@ Here first the code checks the first `if` condition. It finds that the expressio
 
 ## One line If statments
 
-It is possible to write `if` conditionals in a single line. Example
+It is possible to write `if` conditionals in a single line ,However, its highly discourage as it makes the code more difficult to read and is not the recomended as per [PEP8][pep8-link] standards.
+
+[pep8-link]: https://www.python.org/dev/peps/pep-0008/#other-recommendations
+
+Example
 
 ```python
 x = 5
@@ -100,10 +104,6 @@ if x == 10: print('x '); print(' contains '); print(' 10')
     else: print('x '); print(' contains '); print(' something else')
 
 ```
-
-Now though this is a valid python syntax its highly discourage as it makes the code more difficult to read and is not the recomended as per [PEP8][pep8-link] standards.
-
-[pep8-link]: https://www.python.org/dev/peps/pep-0008/#other-recommendations
 
 ## Additional information
 
