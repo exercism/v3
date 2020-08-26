@@ -1,6 +1,6 @@
 const expectedMinutesInOven* = 40
 
-const preparationMinutesPerLayer = 2 ##\
+const preparationMinutesPerLayer = 2 ## \
   ## The amount of minutes it takes to prepare a single layer.
 
 func remainingMinutesInOven*(actualMinutesInOven: int) =
