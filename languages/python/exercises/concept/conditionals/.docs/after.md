@@ -53,7 +53,7 @@ if x > 10:                          # Expression evaluvates to False
     print("x is greater than 10")
 else:
     print("x is less or equal than 10")      # Expression evaluates to True
->>> x is less than 10
+>>> x is less or equal than 10
 
 ```
 
