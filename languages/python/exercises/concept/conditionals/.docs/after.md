@@ -1,8 +1,8 @@
 ## General
 
-Uptil now most program examples seen in the concept exercises ran in a sequential manner. Where code executed on after the other. However, this doesn't allow for implimentation of more complex logic. Conditional statments allows program to execute different lines of code based on some factors. Python uses `if/else` statements to achive this.
+Uptil now most program examples seen in the concept exercises ran in a sequential manner. Where code executed on after the other. However, this doesn't allow for implementation of more complex logic. Conditional statements allows program to execute different lines of code based on some factors. Python uses `if/else` statements to achieve this.
 
-Lets look at basic structure of pythons ``if/else` and lets make a real world analogy.
+Let's look at basic structure of python's `if/else` and lets make a real world analogy.
 
 ```python
 if <expression>:
@@ -25,11 +25,11 @@ if x < y:                           # expression is False
 
 ```
 
-Here in first if statement the expression evaluvates to `True` therfore the statement associated with the if statment gets executed. In the next example the expression evaluvates to `False` and therfor the statement associated with it is not executed.
+Here in first `if` statement the expression evaluates to `True`. Therefore, the statement associated with the `if` statement gets executed. In the next example, the expression evaluates to `False`, and therefore the statement associated with it is not executed.
 
 ## The indentation and blocks
 
-The python examples follow shown above the statemnts to be executed are arranged into blocks using indentation. So if there are multiple expressions that needs to be executed from one if statement we can put it in a block by having a uniform indentation throughout.
+The python examples follow shown above the statements to be executed are arranged into blocks using indentation. So if there are multiple expressions that needs to be executed from one `if` statement we can put it in a block by having a uniform indentation throughout.
 
 ```python
 if x > y:                           # expression is True
@@ -79,7 +79,7 @@ else:
 >>> x is less than 30
 ```
 
-Here first the code checks the first if condition. It finds that the expression evaluvates to `False`. Therfore it goes into `elif` statement and sees if the expression inside `elif` evaluvates to truth if not it will continue to go through each `elif` expressions. If none of them evaluvates to `True` then the conditional goes to the `else` clause and executes the statement in the `else` clause. Note that in the case where `elif` is used. The `else` clause can come only at the end of the expression.
+Here first the code checks the first `if` condition. It finds that the expression evaluates to `False`. Therefore it goes into `elif` statement and sees if the expression inside `elif` evaluates to `True` if not it will continue to go through each `elif` expressions. If none of them evaluates to `True` then the conditional goes to the `else` clause and executes the statement in the `else` clause. Note that in the case where `elif` is used. The `else` clause can come only at the end of the expression.
 
 ## One line If statments
 
@@ -87,7 +87,7 @@ It is possible to write `if` conditionals in a single line. Example
 
 ```python
 x = 5
-if x == 5: print("Came inside the if statement "); print("x equals 5 ");print("came to this part");
+if x == 5: print("Came inside the if statement "); print("x equals 5 "); print("came to this part");
 >>> Came inside the if statement x equals 5 came to this part
 ```
 
@@ -107,7 +107,7 @@ Now though this is a valid python syntax its highly discourage as it makes the c
 
 ## Additional information
 
-In the `if` clause python strictly doesn't need a `True/False` value. This will become evidenet with the following example.
+In the `if` clause python strictly doesn't need a `True/False` value. This will become evident with the following example.
 
 ```python
 
