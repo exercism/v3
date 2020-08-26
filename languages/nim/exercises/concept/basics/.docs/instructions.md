@@ -20,8 +20,6 @@ remainingMinutesInOven(30)
 // => 10
 ```
 
-:
-
 ## 3. Calculate the preparation time in minutes
 
 Implement the `preparationTimeInMinutes` function that takes the number of layers you added to the lasagna as a parameter and returns how many minutes you spent preparing the lasagna, assuming each layer takes you 2 minutes to prepare.
