@@ -228,7 +228,8 @@ module Json =
 
     [<CLIMutable>]
     type JsonTrack =
-        { Name: string
+        { Url: string
+          Name: string
           Slug: string
           Url: string
           Exercises: JsonExercises } 
@@ -247,7 +248,8 @@ module Json =
           Prerequisites = Array.map conceptToJsonConcept conceptExercise.Prerequisites }
     
     let private trackToJsonTrack (track: Track): JsonTrack =
-        { Name = track.Name
+        { Url = sprintf "https://github.com/exercism/v3/tree/master/languages/%s" track.Slug
+          Name = track.Name
           Slug = track.Slug
           Url = sprintf "https://github.com/exercism/v3/tree/master/languages/%s" track.Slug
           Exercises =

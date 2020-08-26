@@ -1,3 +1,7 @@
+**On August 22nd we're holding our second hackday to work on V3. We'd love you to be involved. [Read this](./markathon.md) for more details.**
+
+---
+
 _Note: This file, and the other docs in this repository, can be viewed on [GitHub](https://github.com/exercism/v3) or as [a website with easier navigation](https://exercism.github.io/v3)._
 
 # Exercism - v3
@@ -44,6 +48,7 @@ _(This list is sorted alphabetically.)_
 - [Nim][track-nim]
 - [OCaml][track-ocaml]
 - [Perl 5][track-perl5]
+- [Pharo Smalltalk][track-pharo-smalltalk]
 - [PureScript][track-purescript]
 - [Python][track-python]
 - [R][track-r]
@@ -95,6 +100,7 @@ _(This list is sorted alphabetically.)_
 [track-nim]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fnim
 [track-ocaml]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Focaml
 [track-perl5]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fperl5
+[track-pharo-smalltalk]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fpharo-smalltalk
 [track-purescript]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fpurescript
 [track-python]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fpython
 [track-r]: https://github.com/exercism/v3/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Astatus%2Fhelp-wanted+label%3Atrack%2Fr
