@@ -42,7 +42,7 @@ print("this is not part of the if block")
 
 ## The else clause
 
-So far we made a single `if` statement. What if we wanted a program to execute one statement if the expression evaluvates to `True` or execute an another statement if the expression evaluvates to `False`
+So far we made a single `if` statement. What if we wanted a program to execute one statement if the expression evaluates to `True` or execute an another statement if the expression evaluates to `False`
 In such scenarios we can use the `else` clause
 
 ```python
