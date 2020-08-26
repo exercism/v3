@@ -2,7 +2,7 @@
 
 Uptil now most program examples seen in the concept exercises ran in a sequential manner. Where code executed on after the other. However, this doesn't allow for implementation of more complex logic. Conditional statements allows program to execute different lines of code based on some factors. Python uses `if/else` statements to achieve this.
 
-Lets look at basic structure of pythons ``if/else` and lets make a real world analogy.
+Let's look at basic structure of python's `if/else` and lets make a real world analogy.
 
 ```python
 if <expression>:
