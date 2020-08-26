@@ -59,7 +59,7 @@ else:
 
 In this example we see that the `if` condition evaluates to `False` so the statement in the `else` block is executed.
 
-A real world analogy to `if/else` statment is like this. If its sunny outside, then go to park. Otherwise read a book.
+A real world analogy to `if/else` statement is like this. If its sunny outside, then go to park. Otherwise read a book.
 
 ## The elif clause
 
