@@ -20,7 +20,7 @@ if x > y:                           # expression is True
 >>> x is greater than y
 
 if x < y:                           # expression is False
-    print("x is greater than y")
+    print("x is lower than y")
 >>>                                 # Nothing is executed
 
 ```
