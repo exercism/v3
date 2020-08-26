@@ -1,8 +1,8 @@
 ## Conditionals
 
-Conditionals are the most common statements used in programming. Conditionals determine the flow of control in a program. In python the `if` statement is used to control the flow of execution.
+Conditionals are the most common statements used in programming. Conditionals determine the flow of control in a program. In python the `if` statement is used to control the flow of execution. An important aspect of conditions in an `if` statment is that it will be resolved into `boolean` type to determine the flow of execution.
 
-In basic syntax of an `if` statement is as follows
+The basic syntax of an `if` statement is as follows
 
 ```python
 x = 10
@@ -31,7 +31,7 @@ z = 20
 if x > y:
     print("x is greater than y and z")
 elif y > z:
-    print("x is greater than y and z")
+    print("y is greater than x and z")
 else:
     print("z is great than x and y")
 >>> z is great than x and y
