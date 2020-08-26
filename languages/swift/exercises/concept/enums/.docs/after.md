@@ -1,8 +1,10 @@
-The built-in Swift types can each represent a finite number of values. These numbers are usually quite high, e.g. 2<sup>32</sup> different `Float`s 2<sup>64</sup> different `Int`s, ~2<sup>20</sup> different `Character`s, and a number of strings bounded only by the amount of storage on your computer. On the flip side, there are a handful of types that offer just a few values. The `Never` type has no values, `Void` has just `()`, and `Bool` has just `true` and `False`.
+The built-in Swift types have a number of problems when used to model something with a moderate number of possible states or values, like the 63 official HTTP status codes, or the 8 buttons of the NES controller.
 
-This leads to problems when someone wants to model something that has some other number of possible values, like the 63 official HTTP status codes, or the 8 buttons of the NES controller. One may be forced to use existing types like strings or ints to represent their values, similar to what was done with the HTTP status codes, but this leads to a few different issues. One issue is that, while a computer may be fine processing valid values like 103, 226, and 505, the program itself also has to constantly check that it doesn't receive invalid values like 213, 427, 512, or 601. At the same time the _programmer_ is responsible for ensuring that every valid value is checked when examining a code to act upon.
+For example, one may try to use existing types like strings or ints to represent their values, similar to what was done with the HTTP status codes, but this leads to a few different issues. One issue is that, while a computer may be fine processing valid values like 103, 226, and 505, the program itself also has to constantly check that it doesn't receive invalid values like 213, 427, 512, or 601. At the same time the _programmer_ is responsible for ensuring that every valid value is checked when examining a code to act upon, so a valid code isn't missed.
 
-Another issue is that a human reading (or writing) a program can have troubles recalling that the values 103, 226, and 505 really represent "Early Hints", "IM Used", and "HTTP Version Not Supported". One could mitigate this by using a string to represent the text version of the code, but this can cause errors when one tries to compare an incoming status code to "HTTP Version not Supoorted". These errors are common and hard to track down.
+Another issue is that semantic meaning is lost. A human reading (or writing) a program can have troubles recalling that the values 103, 226, and 505 represent "Early Hints", "IM Used", and "HTTP Version Not Supported". Similarly, one could model a switch using a `Bool` as both have just two states, but what does `true` represent for the switch; does it mean that the switch is open or that it is closed?
+
+One could mitigate this by using a string to represent the text version of the status code or state of the switch, but this can cause errors when one tries to compare an incoming status code to "HTTP Version not Supoorted" rather than the expected "HTTP Version not Supported". These errors are common and hard to track down.
 
 As an approach to solving this problem, Swift, like many modern languages offers a language feature it calls [_Enumerations_][enumerations] or _Enums_ for short.
 
@@ -33,7 +35,7 @@ enum NESButton {
 }
 ```
 
-This defines a new type named `NESButtons` with possible values `up`, `down`, `left`, `right`, `a`, `b`, `select`, and `start`. These values can be referred to by following the name of the type followed by a dot (`.`) and the value. In cases where the type name can be inferred, only the dot and value are needed. These values can then be used like any other values in Swift.
+This defines a new type named `NESButtons` with possible values `up`, `down`, `left`, `right`, `a`, `b`, `select`, and `start`. These values can be referred to by following the name of the type with a dot (`.`) and the value. In cases where the type name can be inferred, only the dot and value are needed. These values can then be used like any other values in Swift.
 
 ```swift
 var lastPressed = NESButton.up
@@ -70,7 +72,8 @@ As `switch` statements are required to be exhaustive, the compiler will alert yo
 
 ```swift
 switch lastPressed {
-case .up, .down, .left, .right: print("You pressed a direction button.")
+case .up, .down, .left, .right:
+  print("You pressed a direction button.")
 }
 // Error: Switch must be exhaustive
 ```
@@ -90,7 +93,7 @@ default:
 // prints: "You pressed a non-directional button."
 ```
 
-However, this automatically makes the `switch` exhaustive, so if we were to add, say, diagonal direction cases, like `.upAndLeft` to the enum, we would not know to update that switch and we would wrongly be told that a non-directional button was pressed. To prevent this, it is better to explicitly list all cases where possible.
+However, this automatically makes any `switch` exhaustive, so if we were to add, say, diagonal direction cases, like `.upAndLeft` to the enum, we would not know to update that switch and we would wrongly be told that a non-directional button was pressed. To prevent this, it is better to explicitly list all cases where possible.
 
 ```swift
 lastPressed = .select
@@ -120,7 +123,7 @@ Inside the method, the enum value can be referred to as `self`, and in the type 
 
 #### Initializers
 
-Initializers are special methods that are used to set up a value of the enum. Their definition looks a lot like that of a method only there is no `func` keyword, no return type, and the name must be `init` and the initializer _must_ assign a value of the enum to self. Initializers are called either via dot notation or by passing the initializer's parameters to the name of the enum.
+Initializers are special methods that are used to set up a value of the enum. Their definition looks a lot like that of a method only there is no `func` keyword, no return type, and the name must be `init` and the initializer _must_ assign a value of the enum to `self`. Initializers are called either via dot notation or by passing the initializer's parameters to the name of the enum.
 
 Enums may also have failable initializers which return optional enum values. These are used when there may be no valid value to initialize to based on the input to the initializer and `nil` may be assigned to self instead. In these cases, the initializer name is written as `init?`, though the question mark is left off when the initializer is called.
 
@@ -221,11 +224,21 @@ Dwarf.bashful.rawValue
 
 ### Associated values
 
-Enums in Swift can also carry another type of information known as [_associated values_][associated-values]. With associated values, each case of the enum may have a different type of value that can be carried along with the enum value. The types of the associated values are specified in the enum declaration.
+Enums in Swift can also carry another type of information known as [_associated values_][associated-values]. With associated values, each case of the enum may have a different type of value that can be carried along with the enum value. The types of the associated values are specified in the enum declaration. These values can then be extracted and used via pattern matching.
 
 ```swift
 enum Suit: Character {
   case diamonds = "♦️", clubs = "♣️", hearts = "♥️", spades = "♠️"
+
+  func print() {
+    switch self {
+    case .ace(let suit): print("A\(suit.rawValue)")
+    case .king(let suit): print("K\(suit.rawValue)")
+    case .queen(let suit): print("Q\(suit.rawValue)")
+    case .jack(let suit): print("J\(suit.rawValue)")
+    case let .number(suit, value): print("\(value)\(suit.rawValue)")
+    }
+  }
 }
 
 enum Card {
@@ -235,26 +248,15 @@ enum Card {
 
 let aceOfSpades = Card.ace(.spades)
 let twoOfHearts = Card.number(.hearts, 2)
-```
 
-These values can then be extracted and used via pattern matching.
-
-```swift
-func printCard(_ card: Card) {
-  switch card {
-  case .ace(let suit): print("A\(suit.rawValue)")
-  case .king(let suit): print("K\(suit.rawValue)")
-  case .queen(let suit): print("Q\(suit.rawValue)")
-  case .jack(let suit): print("J\(suit.rawValue)")
-  case let .number(suit, value): print("\(value)\(suit.rawValue)")
-  }
-}
-
-printCard(aceOfSpades)
+aceOfSpades.print()
 // prints "A♠️"
-printCard(twoOfHearts)
+
+twoOfHearts.print()
 // prints "2♥️"
 ```
+
+Note that enums can have either raw values, or associated values, or neither, but they cannot have both.
 
 ### Recursive enumerations
 
@@ -273,8 +275,6 @@ enum BinaryTree {
 
 let tree: BinaryTree = .node(left: .leaf(value: 1), value: 3, right: .node(left: .leaf(value: 5), value: 6, right: .leaf(value: 9)))
 ```
-
-Note that enums can have either raw values, or associated values, or neither, but they cannot have both.
 
 [api-design-guidelines]: https://swift.org/documentation/api-design-guidelines/
 [enumerations]: https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html

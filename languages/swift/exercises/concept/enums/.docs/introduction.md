@@ -25,7 +25,7 @@ enum NESButton {
 }
 ```
 
-This defines a new type named `NESButtons` with possible values `up`, `down`, `left`, `right`, `a`, `b`, `select`, and `start`. These values can be referred to by following the name of the type followed by a dot (`.`) and the value. In cases where the type name can be inferred, only the dot and value are needed.
+This defines a new type named `NESButtons` with possible values `up`, `down`, `left`, `right`, `a`, `b`, `select`, and `start`. These values can be referred to by following the name of the type with a dot (`.`) and the value. In cases where the type name can be inferred, only the dot and value are needed.
 
 ### Methods
 
@@ -37,7 +37,7 @@ Inside the method, the enum value can be referred to as `self`, and in the type 
 
 #### Initializers
 
-Initializers are special methods that are used to set up a value of the enum. Their definition looks a lot like that of a method only there is no `func` keyword, no return type, and the name must be `init` and the initializer _must_ assign a value of the enum to self. Initializers are called either via dot notation or by passing the initializer's parameters to the name of the enum.
+Initializers are special methods that are used to set up a value of the enum. Their definition looks a lot like that of a method only there is no `func` keyword, no return type, and the name must be `init` and the initializer _must_ assign a value of the enum to `self`. Initializers are called either via dot notation or by passing the initializer's parameters to the name of the enum.
 
 ```swift
 enum Coin {
