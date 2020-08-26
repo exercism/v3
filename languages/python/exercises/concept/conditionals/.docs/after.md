@@ -107,7 +107,7 @@ Now though this is a valid python syntax its highly discourage as it makes the c
 
 ## Additional information
 
-In the `if` clause python strictly doesn't need a `True/False` value. This will become evidenet with the following example.
+In the `if` clause python strictly doesn't need a `True/False` value. This will become evident with the following example.
 
 ```python
 
