@@ -87,7 +87,7 @@ It is possible to write `if` conditionals in a single line. Example
 
 ```python
 x = 5
-if x == 5: print("Came inside the if statement "); print("x equals 5 ");print("came to this part");
+if x == 5: print("Came inside the if statement "); print("x equals 5 "); print("came to this part");
 >>> Came inside the if statement x equals 5 came to this part
 ```
 
