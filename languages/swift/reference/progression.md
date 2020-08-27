@@ -20,6 +20,7 @@ Start((basics)) --> tuples
 
 numbers --> optionals
 numbers --> bit-manipulation
+
 strings-and-characters --> conditionals
 tuples --> optionals
 tuples --> functions
