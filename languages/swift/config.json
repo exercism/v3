@@ -63,7 +63,7 @@
       {
         "slug": "structs-and-classes",
         "uuid": "bfb16db1-f419-48e9-91bc-defebc0ae9ac",
-        "concepts": ["structs", "classes"],
+        "concepts": ["structs", "classes", "methods", "stored-properties"],
         "prerequisites": ["functions"]
       }
     ],

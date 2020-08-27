@@ -27,6 +27,8 @@ This concept exercise should convey a basic understanding of how to define and u
 
 - `structs`
 - `classes`
+- `methods`
+- `stored-properties`
 
 ## Prerequisites
 
