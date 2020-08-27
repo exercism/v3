@@ -26,8 +26,8 @@ These are example tasks that fit the remote control car exercise:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
-- [Elixir][implementation-elixir] (adapted for Elixir structs)
+- [C#: classes][implementation-csharp] (reference implementation)
+- [Elixir: structs][implementation-elixir] (adapted for Elixir structs)
 
 ## Related
 

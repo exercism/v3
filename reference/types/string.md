@@ -43,14 +43,14 @@ This exercise extracts information from log lines. The reference implementation 
 
 #### Implementations
 
-| Track  | Exercise                         | Changes |
-| ------ | -------------------------------- | ------- |
-| C++    | [strings][implementation-cpp]    | None    |
-| C#     | [strings][implementation-csharp] | None    |
-| F#     | [strings][implementation-fsharp] | None    |
-| Ruby   | [strings][implementation-ruby]   | None    |
-| Python | [strings][implementation-python] | None    |
-| Go     | [strings][implementation-go]     | None    |
+| Track  | Exercise                                 | Changes |
+| ------ | ---------------------------------------- | ------- |
+| C++    | [strings][implementation-cpp]            | None    |
+| C#     | [strings][implementation-csharp]         | None    |
+| F#     | [strings][implementation-fsharp]         | None    |
+| Ruby   | [strings][implementation-ruby]           | None    |
+| Python | [strings][implementation-python]         | None    |
+| Go     | [strings-package][implementation-go-pkg] | None    |
 
 ### Poetry Club
 
@@ -67,6 +67,19 @@ This exercise is a conversation between you and the security guard. The referenc
 | ---------- | ------------------------------------ | ------- |
 | JavaScript | [strings][implementation-javascript] | None    |
 
+### Party Robot
+
+This exercise implements some phrases an eccentric party robot would say.
+
+- String introduction
+- String formatting
+
+#### Implementations
+
+| Track | Exercise                     | Changes |
+| ----- | ---------------------------- | ------- |
+| Go    | [strings][implementation-go] | None    |
+
 [type-char]: ./char.md
 [implementation-cpp]: ../../languages/cpp/exercises/concept/strings/.docs/introduction.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/strings/.docs/introduction.md
@@ -74,5 +87,6 @@ This exercise is a conversation between you and the security guard. The referenc
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/strings/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/strings/.docs/introduction.md
 [implementation-python]: ../../languages/python/exercises/concept/strings/.docs/introduction.md
-[implementation-go]: ../../languages/go/exercises/concept/strings/.docs/introduction.md
+[implementation-go-pkg]: ../../languages/go/exercises/concept/strings-package/.docs/instructions.md
+[implementation-go]: ../../languages/go/exercises/concept/strings/.docs/instructions.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/strings/.docs/

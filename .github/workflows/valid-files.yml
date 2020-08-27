@@ -21,6 +21,16 @@ jobs:
           # --diff-filter=d excludes deleted (d) files
           # -z separates the files using NUL
           git diff --diff-filter=d --name-only -z origin/master... | while read -r -d '' FILE; do
+            # Skip files that are allowed to have larger size
+            if [ "$FILE" == "languages/languages.json" ] ||
+               [ "$FILE" == "languages/README.md" ] ||
+               [ "$FILE" == "reference/references.json" ] ||
+               [ "$FILE" == "reference/README.md" ] ||
+               [ "$FILE" == "reference/stories/stories.json" ] ||
+               [ "$FILE" == "reference/stories/README.md" ]; then
+                continue
+            fi
+
             if [ "$(stat --printf="%s" "$FILE")" -gt 100000 ]; then
               echo "$FILE is larger than 10 KB"
               echo "Please ping @iHiD if you are sure that this file is required."

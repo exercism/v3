@@ -1,7 +1,3 @@
-**On July 11th we're holding a hackday to work on V3. We'd love you to be involved. [Read this](./markathon.md) for more details.**
-
----
-
 _Note: This file, and the other docs in this repository, can be viewed on [GitHub](https://github.com/exercism/v3) or as [a website with easier navigation](https://exercism.github.io/v3)._
 
 # Exercism - v3

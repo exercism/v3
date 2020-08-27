@@ -9,6 +9,7 @@ These are the concept exercises that have currently been implemented, as well as
 | exercise                    | concepts                                                   | prerequisites                                                                                  |
 | --------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | `access-behaviour`          | `access-behaviour`                                         | `maps`, `strings`, `recursion`, `nil`                                                          |
+| `agent`                     | `agent`                                                    | `processes`, `maps`, `structs`                                                                 |
 | `anonymous-functions`       | `anonymous-functions`, `closures`, `bit-manipulation`      | `basics`                                                                                       |
 | `basics`                    | `basics`                                                   | none                                                                                           |
 | `binary-matching`           | `binaries`                                                 | `bitstrings`, `strings`, `pattern-matching`, `if-conditional`                                  |

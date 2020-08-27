@@ -15,14 +15,14 @@ The story facilitates defining functions:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
-- [Common Lisp][implementation-common-lisp]
-- [Elixir][implementation-elixir]
-- [F#][implementation-fsharp]
-- [Java][implementation-java]
-- [JavaScript][implementation-javascript]
-- [Julia][implementation-julia]
-- [Ruby][implementation-ruby]
+- [C#: basics][implementation-csharp] (reference implementation)
+- [Common Lisp: basics][implementation-common-lisp]
+- [Elixir: basics][implementation-elixir]
+- [F#: basics][implementation-fsharp]
+- [Java: basics][implementation-java]
+- [JavaScript: basics][implementation-javascript]
+- [Julia: functions-introduction][implementation-julia]
+- [Ruby: basics][implementation-ruby]
 
 ## Reference
 

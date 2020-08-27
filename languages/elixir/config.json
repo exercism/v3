@@ -1,5 +1,6 @@
 {
   "language": "Elixir",
+  "slug": "elixir",
   "version": 3,
   "active": true,
   "blurb": "Elixir is a dynamic, functional language designed for building scalable and maintainable applications. Elixir leverages the Erlang VM, known for running low-latency, distributed and fault-tolerant systems, while also being successfully used in web development and the embedded software domain.",
@@ -195,6 +196,12 @@
         "uuid": "3e2f8bc6-20b4-4e8f-a658-9c270342208e",
         "concepts": ["streams", "pipe-operator", "ranges"],
         "prerequisites": ["enum", "tuples", "if-conditional"]
+      },
+      {
+        "slug": "agent",
+        "uuid": "1d6be9ec-5b5c-4c81-9bfa-2e3fc78c978f",
+        "concepts": ["agent"],
+        "prerequisites": ["processes", "maps", "structs"]
       },
       {
         "slug": "regular-expressions",

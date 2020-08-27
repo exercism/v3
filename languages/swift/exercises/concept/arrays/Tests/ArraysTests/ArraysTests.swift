@@ -18,6 +18,20 @@ final class ArraysTests: XCTestCase {
     XCTAssertEqual(setCard(at: idx, in: stack, to: 10), [9, 4, 3, 6, 1, 10, 2, 8, 5])
   }
 
+  func testSetCardIndexTooLow() throws {
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
+    let stack = [9, 4, 3, 6, 1, 7, 2, 8, 5]
+    let idx = -3
+    XCTAssertEqual(setCard(at: idx, in: stack, to: 10), stack)
+  }
+
+  func testSetCardIndexTooHigh() throws {
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
+    let stack = [9, 4, 3, 6, 1, 7, 2, 8, 5]
+    let idx = 50
+    XCTAssertEqual(setCard(at: idx, in: stack, to: 10), stack)
+  }
+
   func testInsertAtTop() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     let stack = [1, 7, 5, 8, 3, 9, 6, 4, 2]
@@ -31,10 +45,30 @@ final class ArraysTests: XCTestCase {
     XCTAssertEqual(removeCard(at: idx, from: stack), [9, 2, 6, 5, 7, 4, 3, 8])
   }
 
+  func testRemoveCardIndexTooLow() throws {
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
+    let stack = [9, 2, 1, 6, 5, 7, 4, 3, 8]
+    let idx = -2
+    XCTAssertEqual(removeCard(at: idx, from: stack), stack)
+  }
+
+  func testRemoveCardIndexTooHigh() throws {
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
+    let stack = [9, 2, 1, 6, 5, 7, 4, 3, 8]
+    let idx = 20
+    XCTAssertEqual(removeCard(at: idx, from: stack), stack)
+  }
+
   func testRemoveTopCard() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     let stack = [2, 7, 4, 6, 9, 1, 8, 3, 5]
     XCTAssertEqual(removeTopCard(stack), [2, 7, 4, 6, 9, 1, 8, 3])
+  }
+
+  func testRemoveTopCardFromEmptyStack() throws {
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
+    let stack = [Int]()
+    XCTAssertEqual(removeTopCard(stack), stack)
   }
 
   func testInsertAtBottom() throws {
@@ -47,6 +81,12 @@ final class ArraysTests: XCTestCase {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     let stack = [8, 7, 4, 2, 6, 5, 3, 1, 9]
     XCTAssertEqual(removeBottomCard(stack), [7, 4, 2, 6, 5, 3, 1, 9])
+  }
+
+  func testRemoveBottomCardFromEmptyStack() throws {
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
+    let stack = [Int]()
+    XCTAssertEqual(removeTopCard(stack), stack)
   }
 
   func testCheckSizeTrue() throws {
@@ -76,11 +116,17 @@ final class ArraysTests: XCTestCase {
   static var allTests = [
     ("testGetCard", testGetCard),
     ("testSetCard", testSetCard),
+    ("testSetCardIndexTooLow", testSetCardIndexTooLow),
+    ("testSetCardIndexTooHigh", testSetCardIndexTooHigh),
     ("testInsertAtTop", testInsertAtTop),
     ("testRemoveCard", testRemoveCard),
+    ("testRemoveCardIndexTooLow", testRemoveCardIndexTooLow),
+    ("testRemoveCardIndexTooHigh", testRemoveCardIndexTooHigh),
     ("testRemoveTopCard", testRemoveTopCard),
+    ("testRemoveTopCardFromEmptyStack", testRemoveTopCardFromEmptyStack),
     ("testInsertAtBottom", testInsertAtBottom),
     ("testRemoveBottomCard", testRemoveBottomCard),
+    ("testRemoveBottomCardFromEmptyStack", testRemoveBottomCardFromEmptyStack),
     ("testCheckSizeTrue", testCheckSizeTrue),
     ("testCheckSizeFalse", testCheckSizeFalse),
     ("testEvenCardCount", testEvenCardCount),
