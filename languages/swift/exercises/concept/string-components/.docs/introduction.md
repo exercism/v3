@@ -30,4 +30,4 @@ csv[index]
 
 The most basic indices associated with strings are the start and end indices which point to the first character and the _position after_ the last character in a string. These indices are always guaranteed to be valid indices, but they may not necessarily point to valid characters in a string. For example, since `endIndex` is the index that points to the position _after_ the last character, trying to subscript the string at that position will raise an error.
 
-Note, however, that if the offset is not a valid index, i.e. if it would return the index before `startIndex` or after `endIndex` the operation will raise an error, crashing the program. To prevent this problem, one can specify a limiting index. This returns an optional index and it will return nil for otherwise invalid indices.
+Note, however, that if the offset is not a valid index, i.e. if it would return the index before `startIndex` or after `endIndex` the operation will raise an error, crashing the program. To prevent this problem, one can specify a limiting index. This returns an optional index and it will return `nil` for otherwise invalid indices.
