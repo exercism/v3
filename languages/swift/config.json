@@ -52,13 +52,19 @@
         "slug": "optionals",
         "uuid": "9d0bb0ad-904c-4d61-9d2c-ae37913d5741",
         "concepts": ["optionals"],
-        "prerequisites": ["numbers", "conditionals"]
+        "prerequisites": ["tuples", "conditionals"]
       },
       {
         "slug": "strings",
         "uuid": "082d7aeb-ee25-4217-bd6f-82532a65797a",
-        "concepts": ["strings"],
+        "concepts": ["strings-components", "strings-indices"],
         "prerequisites": ["arrays"]
+      },
+      {
+        "slug": "strings-and-characters",
+        "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
+        "concepts": ["strings", "characters"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []

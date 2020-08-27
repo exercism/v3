@@ -20,7 +20,9 @@ Start((basics)) --> tuples
 
 numbers --> optionals
 numbers --> bit-manipulation
+
 strings-and-characters --> conditionals
+
 tuples --> optionals
 tuples --> functions
 tuples --> loops
@@ -40,6 +42,9 @@ optionals --> dictionaries
 arrays --> string-components
 arrays --> functions
 arrays --> sets
+
+string-components --> structs-and-classes
+string-components --> loops
 
 functions --> dictionaries
 functions --> higher-order-functions
