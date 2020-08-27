@@ -61,12 +61,6 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "strings-and-characters",
-        "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
-        "concepts": ["strings", "characters"],
-        "prerequisites": ["basics"]
-      },
-      {
         "slug": "string-components",
         "uuid": "082d7aeb-ee25-4217-bd6f-82532a65797a",
         "concepts": [
