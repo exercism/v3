@@ -1,6 +1,6 @@
 import XCTest
 
-@testable import Strings
+@testable import stringComponents
 
 final class StringsTests: XCTestCase {
   let runAll =
@@ -65,6 +65,21 @@ final class StringsTests: XCTestCase {
     XCTAssertEqual(backDoorPassword("scoobyDOO!"), "Scoobydoo!, please")
   }
 
+  func testIthLetter() throws {
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
+    XCTAssertEqual(ithLetter("Inquisitive", i: 2), "q")
+  }
+
+  func testIthLetterInvalid() throws {
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
+    XCTAssertEqual(ithLetter("Inquisitive", i: 100), " ")
+  }
+
+  func testSecretRoomPassword() throws {
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
+    XCTAssertEqual(secretRoomPassword("Open Sesame"), "OPEN SESAME!")
+  }
+
   static var allTests = [
     ("testSplitNewlines", testSplitNewlines),
     ("testSplitNoNewlines", testSplitNoNewlines),
@@ -76,5 +91,8 @@ final class StringsTests: XCTestCase {
     ("testLastLetter", testLastLetter),
     ("testLastLetterEmpty", testLastLetterEmpty),
     ("testBackdoorPassword", testBackdoorPassword),
+    ("testIthLetter", testIthLetter),
+    ("testIthLetterInvalid", testIthLetterInvalid),
+    ("testSecretRoomPassword", testSecretRoomPassword),
   ]
 }
