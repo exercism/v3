@@ -23,3 +23,13 @@ func lastLetter(_ line: String) -> Character {
 func backDoorPassword(_ phrase: String) -> String {
   return "\(phrase.capitalized), please"
 }
+
+func ithLetter(_ line: String, i: Int) -> Character {
+  guard let idx = line.index(line.startIndex, offsetBy: i, limitedBy: line.endIndex)
+  else { return " " }
+  return line[idx]
+}
+
+func secretRoomPassword(_ phrase: String) -> String {
+  return phrase.uppercased() + "!"
+}
