@@ -22,6 +22,7 @@ numbers --> optionals
 numbers --> bit-manipulation
 
 strings-and-characters --> conditionals
+
 tuples --> optionals
 tuples --> functions
 tuples --> loops
@@ -42,20 +43,23 @@ arrays --> string-components
 arrays --> functions
 arrays --> sets
 
+string-components --> structs-and-classes
+string-components --> loops
+
 functions --> dictionaries
 functions --> higher-order-functions
-functions --> enums
+functions --> structs-and-classes
 
 higher-order-functions --> closures
 
-enums --> structs-and-classes
+structs-and-classes --> enums
+
 enums --> pattern-matching
+enums --> methods
+enums --> properties
 
 closures --> properties
 closures --> generics
-
-structs-and-classes --> methods
-structs-and-classes --> properties
 
 generics --> map-and-flatmap
 generics --> filter-and-compactmap
