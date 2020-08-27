@@ -19,33 +19,18 @@ let stringOpt: String? = nil
 intOpt = stringOpt
 // Compiler error: Cannot assign value of type 'String?' to type 'Int?'
 
-intopt == stringOpt
+intOpt == stringOpt
 // Compiler error: Binary operator '==' cannot be applied to operands of type 'Int?' and 'String?'
 ```
 
-An example of where optionals arise in Swift is in the initialization of `Int`s from strings. For example, you can convert the string `"123"` to an integer by writing `let newInt = Int("123")`. However, if you do this you will find that the type of `newInt` is not `Int`, but rather `Int?`. This is because not all strings can sensibly be converted to `Int`s. What should the result of `Int("123.45")` or `Int("horse")` be. In cases like this, where there is no sensible value to return, the conversion returns `nil`, and so the return type must be `Int?`.
+An example of where optionals arise in Swift is in the initialization of `Int`s and `Double`s from strings. For example, you can convert the string `"123"` to an integer by writing `let newInt = Int("123")`. However, if you do this you will find that the type of `newInt` is not `Int`, but rather `Int?`. This is because not all strings can sensibly be converted to `Int`s. What should the result of `Int("123.45")` or `Int("horse")` be. In cases like this, where there is no sensible value to return, the conversion returns `nil`, and so the return type must be `Int?`.
 
 ## Using optionals
 
 Because optional types are not the same types as their base types, the two types cannot be used in the same ways. For example:
-`Int("123") + 1` results in a compiler error "Value of optional type 'Int?' must be unwrapped to a value of type 'Int'". In order to access the `Int` from the conversion, one must "unwrap" it first. This can be done with the force-unwrap operator, `!`. Appending this operator to an optional value will return the base value within. However, force-unwrapping a `nil` will result in a runtime error that will crash the program.
+`Int("123") + 1` results in a compiler error "Value of optional type 'Int?' must be unwrapped to a value of type 'Int'". In order to access the `Int` from the conversion, one must "unwrap" it first.
 
-```swift
-Int("123")! + 1     // evaluates to 124
-Int("123.45")! + 1  // error: Execution was interrupted, reason: EXC_BAD_INSTRUCTION (code=EXC_I386_INVOP, subcode=0x0).
-```
-
-As force unwrapping a `nil` crashes a program the use of the force-unwrap operator is _strongly_ discouraged in Swift. One can make the use of the operator safer by explicitly checking for `nil` before unwrapping:
-
-```swift
-let num = Int("123")
-let sum : Int
-if num != nil {
-  sum = num! + 1
-}
-```
-
-While is is safer, it leads to cluttered programs, so Swift also offers the `if-let` and `guard-let` constructs for _optional binding_ which check for `nil` and take one code path with the unwrapped value bound to a supplied name if a value exists and taking a different code path if `nil` was found.
+This is most commonly done in Swift using the `if-let` and `guard-let` constructs for _optional binding_ which check for `nil` and take one code path with the unwrapped value bound to a supplied name if a value exists and taking a different code path if `nil` was found.
 
 ```swift
 if let num = Int("123") {
@@ -56,8 +41,6 @@ if let num = Int("123") {
 }
 ```
 
-Note that in this form of optional binding, the unwrapped value (here, `num`) is only in scope in the `if` block of code. It is not in scope in the else block or the code outside the `if let` statement.
-
 The `guard-let` option may also be used in the cases where early return is desired:
 
 ```swift
@@ -66,11 +49,15 @@ let sum = num + 1
 …
 ```
 
-With this form of optional binding, the unwrapped value (here, `num`) is available in the remainder of the scope following the `guard let` statement.
+## Comparing optionals
 
-## Nil coalescing
+Note that even if the base type of a pair of optionals can be compared using the standard comparison operators, the optionals themselves cannot be compared. They can only be checked for equality. two optionals are equal if they are both nil or if the values they wrap are equal within their base types.
 
-Another option for unwrapping exists where it is possible to use a default value if a `nil` is present. This can be done by using the _nil coalescing operator_, `??`. Assuming `x` is an `Int?`, if one writes `let y = x ?? 0`, then Swift will check if x is `nil`. If it is not, then it will unwrap `x` and assign the unwrapped value to `y`, and if `x` _is_ `nil`, then it will assign 0 to `y`.
+However, code can of course, be written to perform a custom comparison of two optional values. Below is an example of a `switch` statement that will return `true` only if both optional values are non-nil and the first value is less than the second. To do this it uses the _optional pattern_ `varName?` which only matches non-nil optionals, binding the value inside the optional to the name `varName`:
 
-[optionals]: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID330
-[nilcoalescing]: https://docs.swift.org/swift-book/LanguageGuide/BasicOperators.html#ID72
+```swift
+switch (optionalA, optionalB) {
+case let (valA?, valB?): return valA < valB
+default: return false
+}
+```

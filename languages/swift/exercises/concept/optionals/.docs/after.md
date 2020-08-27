@@ -32,9 +32,9 @@ a ?? 0       // evaluates to 0
 var b = nil  // Compiler error: 'nil' requires a contextual type
 ```
 
-An example of where optionals arise in Swift is in the initialization of `Int`s from strings. For example, you can convert the string `"123"` to an integer by writing `let newInt = Int("123")`. However, if you do this you will find that the type of `newInt` is not `Int`, but rather `Int?`. This is because not all strings can sensibly be converted to `Int`s. What should the result of `Int("123.45")` or `Int("horse")` be. In cases like this, where there is no sensible value to return, the conversion returns `nil`, and so the return type must be `Int?`.
+An example of where optionals arise in Swift is in the initialization of `Int`s and `Double`s from strings. For example, you can convert the string `"123"` to an integer by writing `let newInt = Int("123")`. However, if you do this you will find that the type of `newInt` is not `Int`, but rather `Int?`. This is because not all strings can sensibly be converted to `Int`s. What should the result of `Int("123.45")` or `Int("horse")` be. In cases like this, where there is no sensible value to return, the conversion returns `nil`, and so the return type must be `Int?`.
 
-You can read more about optionas at [A Tour of Swift: Optionals][optionals].
+You can read more about optionals at [A Tour of Swift: Optionals][optionals].
 
 ## Using optionals
 
@@ -79,7 +79,7 @@ let sum = num + 1
 
 With this form of optional binding, the unwrapped value (here, `num`) is available in the remainder of the scope following the `guard let` statement.
 
-Multiple optional value checkss may be combined into a single optional binding statement by separating the checks with commas. Checks may also make use of values bound in earlier checks from the same statement. E.g.
+Multiple optional value checks may be combined into a single optional binding statement by separating the checks with commas. Checks may also make use of values bound in earlier checks from the same statement. E.g.
 
 ```swift
 func numberPlusDigits(_ value: String?) -> Int {
@@ -100,6 +100,15 @@ Both the `if` and the `guard` form of optional binding also support binding the 
 ## Comparing optionals
 
 Note that even if the base type of a pair of optionals can be compared using the standard comparison operators, the optionals themselves cannot be compared. They can only be checked for equality. two optionals are equal if they are both nil or if the values they wrap are equal within their base types.
+
+However, code can of course, be written to perform a custom comparison of two optional values. Below is an example of a `switch` statement that will return `true` only if both optional values are non-nil and the first value is less than the second. To do this it uses the _optional pattern_ `varName?` which only matches non-nil optionals, binding the value inside the optional to the name `varName`:
+
+```swift
+switch (optionalA, optionalB) {
+case let (valA?, valB?): return valA < valB
+default: return false
+}
+```
 
 ## Nil coalescing
 
