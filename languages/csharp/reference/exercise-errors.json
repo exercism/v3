@@ -2,18 +2,8 @@
   "Errors": [
     {
       "Severity": "error",
-      "Message": "nested-types: invalid format: - \u0060nested-types\u0060",
-      "Source": "design"
-    },
-    {
-      "Severity": "error",
-      "Message": "regular-expressions: invalid format: - \u0060regular-expressions\u0060 as they are handled in C# and .NET.",
-      "Source": "design"
-    },
-    {
-      "Severity": "error",
-      "Message": "resource-lifetime: invalid format: - \u0060resource-lifetime\u0060 as it is handled in C#.",
-      "Source": "design"
+      "Message": "concepts: missing for unallocated-concepts\n",
+      "Source": "exercise"
     },
     {
       "Severity": "error",
@@ -242,22 +232,7 @@
     },
     {
       "Severity": "error",
-      "Message": "The regular-expressions concept has no learning objectives on the exercise report - update the design.md for the regular-expressions exercise",
-      "Source": "missingLearningObjective"
-    },
-    {
-      "Severity": "error",
-      "Message": "The resource-lifetime concept has no learning objectives on the exercise report - update the design.md for the resource-lifetime exercise",
-      "Source": "missingLearningObjective"
-    },
-    {
-      "Severity": "error",
       "Message": "The overflow concept has no learning objectives on the exercise report - update the design.md for the overflow exercise",
-      "Source": "missingLearningObjective"
-    },
-    {
-      "Severity": "error",
-      "Message": "The nested-types concept has no learning objectives on the exercise report - update the design.md for the nested-types exercise",
       "Source": "missingLearningObjective"
     },
     {
