@@ -43,18 +43,18 @@ arrays --> sets
 
 functions --> dictionaries
 functions --> higher-order-functions
-functions --> enums
+functions --> structs-and-classes
 
 higher-order-functions --> closures
-
-enums --> structs-and-classes
-enums --> pattern-matching
 
 closures --> properties
 closures --> generics
 
-structs-and-classes --> methods
-structs-and-classes --> properties
+structs-and-classes --> enums
+
+enums --> pattern-matching
+enums --> methods
+enums --> properties
 
 generics --> map-and-flatmap
 generics --> filter-and-compactmap
