@@ -34,7 +34,7 @@
         "slug": "enums",
         "uuid": "0a634d93-d073-4a2b-b6c4-1ba53c04b2bb",
         "concepts": ["enumerations"],
-        "prerequisites": ["string-components", "functions"]
+        "prerequisites": ["string-components", "structs-and-classes"]
       },
       {
         "slug": "functions",

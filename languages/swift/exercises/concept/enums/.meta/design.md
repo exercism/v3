@@ -23,7 +23,7 @@ This concept exercise should convey a basic understanding of how to work with en
 ## Prerequisites
 
 - `string-components`
-- `functions`
+- `structs-and-classes`
 
 ## Representer
 
