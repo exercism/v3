@@ -19,19 +19,68 @@ Start((basics)) --> strings-and-characters
 Start((basics)) --> tuples
 
 numbers --> optionals
+numbers --> bit-manipulation
 strings-and-characters --> conditionals
 tuples --> optionals
 tuples --> functions
 tuples --> loops
 
+loops --> map-and-flatmap
+loops --> reduce
+
+map-and-flatmap --> filter-and-compactmap
+
 conditionals --> optionals
 conditionals --> arrays
+conditionals --> ranges
 
-optionals --> strings
+optionals --> string-components
 optionals --> dictionaries
 
-arrays --> strings
+arrays --> string-components
 arrays --> functions
+arrays --> sets
 
 functions --> dictionaries
+functions --> higher-order-functions
+functions --> enums
+
+higher-order-functions --> closures
+
+enums --> structs-and-classes
+enums --> pattern-matching
+
+closures --> properties
+closures --> generics
+
+structs-and-classes --> methods
+structs-and-classes --> properties
+
+generics --> map-and-flatmap
+generics --> filter-and-compactmap
+generics --> reduce
+generics --> extensions
+generics --> phantom-types
+
+properties --> inheritance
+properties --> initialization
+properties --> extensions
+
+methods --> inheritance
+methods --> initialization
+methods --> extensions
+methods --> subscripts
+
+initialization --> deinitialization
+initialization --> protocols
+
+extensions --> protocol-extensions
+
+protocols --> protocol-extensions
+protocols --> comparable-and-equatable
+protocols --> sequences
+protocols --> codeable
+
+comparable-and-equatable --> hashable
+sequences --> collections
 ```
