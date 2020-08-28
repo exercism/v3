@@ -306,6 +306,7 @@
         "prerequisites": [
           "const-readonly",
           "inheritance",
+          "string-builder",
           "strings",
           "time",
           "varargs"

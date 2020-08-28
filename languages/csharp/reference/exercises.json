@@ -422,6 +422,16 @@
               "line-number": 139
             }
           ]
+        },
+        {
+          "name": "string-builder",
+          "track-neutral-concept": "",
+          "original-concepts": [
+            {
+              "name": "  - StringBuilder",
+              "line-number": 129
+            }
+          ]
         }
       ]
     },
@@ -1080,16 +1090,6 @@
             {
               "name": "  - Interpolation",
               "line-number": 128
-            }
-          ]
-        },
-        {
-          "name": "string-builder",
-          "track-neutral-concept": "",
-          "original-concepts": [
-            {
-              "name": "  - StringBuilder",
-              "line-number": 129
             }
           ]
         },
