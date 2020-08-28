@@ -25,9 +25,9 @@
 
 - `classes`: know what classes are; know what encapsulation is; know what fields are; know how to create an object; know how to update state through methods; know about the `void` type.
 
-## Prequisites
+## Prerequisites
 
 - `basics`: know how to define a basic class with basic methods.
 - `strings`: know how to do basic string interpolation.
 - `numbers`: know how to compare numbers.
-- `conditionals`: know how to do conditional logic.
+- `if-statements`: know how to do conditional logic.

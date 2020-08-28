@@ -16,11 +16,11 @@ This Concepts Exercise's Concepts are:
 
 - `parameters`: know the difference between value and reference type parameters; know how to pass value types by reference using the `ref` and `out` modifiers.
 
-## Prequisites
+## Prerequisites
 
 This Concept Exercise's prerequisites Concepts are:
 
-- `conditionals`: `if`, `else`
+- `if-statements`: `if`, `else`
 - `numbers`
 - `strings`
 - `constructors`: the exercise provides a gentle intuitive introduction to simple parameters

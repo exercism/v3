@@ -15,13 +15,13 @@ This Concepts Exercise's Concepts are:
 - `user-defined-exceptions`: know how to define a user-defined exception.
 - `exception-filtering`: know how to use exception filtering.
 
-## Prequisites
+## Prerequisites
 
 This Concept Exercise's prerequisites Concepts are:
 
 - `exceptions`: know how to work with exceptions.
 - `inheritance`: inheriting from the `Exception` class for the custom exception.
 - `strings`: converting an into a string
-- `conditionals`: use of simple `if`/`else`
+- `if-statements`: use of `&&`
 - `arithmetic-overflow`
 - `signed-integers`: `Int32.MaxValue`

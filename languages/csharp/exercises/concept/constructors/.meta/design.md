@@ -15,9 +15,9 @@
 
 - `constructors`: know what constructors are; know how to define parameterless constructors; know how to define parameterized constructors; know how to use constructor overloading; know how to define private constructors.
 
-## Prequisites
+## Prerequisites
 
 - `classes`: know how to work with classes.
 - `numbers`: know how compare numbers.
-- `conditionals`: know how to do conditional logic.
+- `if-statements`: know how to do conditional logic.
 - `while-loops`: know how to use `while` loops.

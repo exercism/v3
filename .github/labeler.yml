@@ -78,6 +78,9 @@ track/ocaml:
 track/perl5:
   - languages/perl5/**/*
 
+track/pharo-smalltalk:
+  - languages/pharo-smalltalk/**/*
+
 track/purescript:
   - languages/purescript/**/*
 

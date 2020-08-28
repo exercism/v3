@@ -1,0 +1,19 @@
+{
+  "language": "x86-64-assembly",
+  "slug": "x86-64-assembly",
+  "active": true,
+  "blurb": "x86-64 assembly is a low-level programming language, typically used in boot loaders, device drivers, and operating system kernels.",
+  "version": 3,
+  "online_editor": { "indent_style": "space", "indent_size": 4 },
+  "exercises": {
+    "concept": [
+      {
+        "slug": "basics",
+        "uuid": "0e1dd0cf-cdd7-48a9-861e-7253b5d3cabd",
+        "concepts": ["basics"],
+        "prerequisites": []
+      }
+    ],
+    "practice": []
+  }
+}
