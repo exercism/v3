@@ -1051,6 +1051,11 @@
           "name": "throw-expressions",
           "track-neutral-concept": "",
           "original-concepts": []
+        },
+        {
+          "name": "switch-expressions",
+          "track-neutral-concept": "",
+          "original-concepts": []
         }
       ]
     },
