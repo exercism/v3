@@ -1046,6 +1046,11 @@
               "line-number": 91
             }
           ]
+        },
+        {
+          "name": "throw-expressions",
+          "track-neutral-concept": "",
+          "original-concepts": []
         }
       ]
     },
