@@ -1,7 +1,7 @@
 ## 1. Hash the IDs from the database
 
 - A [for-in loop][for-in-loops] can be used to work on each ID one at a time.
-- If you are on a 32-bit machine, you will need to convert the IDs to Int64 to compute the hash, then convert the result back to Int.
+- If you are on a 32-bit machine, you will need to convert the IDs to `Int64` to compute the hash, then convert the result back to `Int`.
 
 ## 2. Compute the digital sum of a number
 

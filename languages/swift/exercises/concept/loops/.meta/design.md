@@ -15,11 +15,21 @@ This concept exercise should convey a basic understanding of how to perform loop
 ## Concepts
 
 - `loops`
+- `for-loops`
+- `while-loops`
+- `repeat-while`
+- `break`
+- `continue`
+- `labels`
 - `control-transfer`
 
 ## Prerequisites
 
-- `conditionals`
+- `ranges`
 - `arrays`
 - `strings`
 - `tuples`
+
+## Analyzer
+
+- We will want to ensure that the student uses the correct loop for each part of the exercise (for loop for `hashIDs(_:)`, repeat loop for `digitalSum(_:)`, etc. And to ensure that they are not using the higher order functions like `reduce`.

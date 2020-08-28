@@ -30,6 +30,21 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "loops",
+        "uuid": "a11dc279-0c0a-4dca-89c6-f0abbac265c8",
+        "concepts": [
+          "loops",
+          "for-loops",
+          "while-loops",
+          "repeat-while",
+          "break",
+          "continue",
+          "labels",
+          "control-transfer"
+        ],
+        "prerequisites": ["ranges", "arrays", "strings", "tuples"]
+      },
+      {
         "slug": "numbers",
         "uuid": "3bdad781-47e1-493a-834d-ca6ac8361ffd",
         "concepts": ["numbers"],

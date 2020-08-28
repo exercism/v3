@@ -7,11 +7,9 @@ It is believed that Santa sorts the various children of the world into naughty a
 - The ranking level of each child can be encoded by using the magic hash to transform the ID into a hashed ID.
 - The ranking level can then be extracted from the hashed ID.
 
-## Tasks
-
 ## 1. Hash the IDs from the database
 
-Your first task is to implement the function `hashIDs(\_:) which, given an array of ID numbers, takes each ID, transforms it with Santa's magic hash, and constructs a tuple of the original ID and the hashed ID, returning an array of these tuples.
+Your first task is to implement the function `hashIDs(_:)` which, given an array of ID numbers, takes each ID, transforms it with Santa's magic hash, and constructs a tuple of the original ID and the hashed ID, returning an array of these tuples.
 
 Santa's magic hash is implemented by multiplying the ID by the magic constant _p_ and taking the remainder modulo another magic constant, _m_. This year, you are given the following magic constants:
 
