@@ -20,6 +20,7 @@ These are the concept exercises that have currently been implemented, as well as
 | [ ]         | numbers  | `numbers-basic`<br/>`type-conversion-numbers`<br/>`conditionals-if` | -                                   |
 | [ ]         | strings  | `strings-basic`                                                     | -                                   |
 | [ ]         | dates    | `dates-basic`<br/>`time-basic`                                      | `numbers-basic`<br/>`strings-basic` |
+| [ ]         | chars    | `chars-basic`<br/>`conditionals-if`                                 | `numbers-basic`<br/>`strings-basic` |
 
 **⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse. In this example, the `numbers` exercise only teaches basic number usage, and the `dates` exercise builds on that and digs deeper into how numbers are can be used.
 

@@ -1,5 +1,6 @@
 {
   "language": "Dart",
+  "slug": "dart",
   "active": true,
   "blurb": "Dart is a general purpose language, primarily used for creating dynamic mobile apps (with Flutter) as well as websites and programming web servers. It's a very solidlanguage, and supports a variety of programming paradigms.",
   "test_pattern": ".*[_]test[.]dart$",

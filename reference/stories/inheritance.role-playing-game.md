@@ -31,7 +31,7 @@ The story facilitates defining functions:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
+- [C#: inheritance][implementation-csharp] (reference implementation)
 
 ## Reference
 

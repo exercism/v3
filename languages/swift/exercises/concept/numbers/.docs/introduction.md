@@ -1,6 +1,6 @@
 ## Numbers
 
-Swift contains many basic numeric types that can represent sets of either integer or floating-point values, where different types may be choosen depending on the size of value you require and the architecture of the computer where the application is running (e.g. 32-bit or 64-bit).
+Swift contains many basic numeric types that can represent sets of either integer or floating-point values, where different types may be chosen depending on the size of value you require and the architecture of the computer where the application is running (e.g. 32-bit or 64-bit).
 
 For this exercise you will only be dealing with the two most commonly used numeric types in Swift:
 
@@ -39,11 +39,5 @@ print("pi:", pi, "is of type:", type(of: pi))
 // Output: pi: 3.141592653589793 is of type: Double
 
 print("iPi:", iPi, "is of type:", type(of: iPi))
-// Output: fiPi: 3 is of type: Int```
+// Output: iPi: 3 is of type: Int```
 ````
-
-[integers]: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID310
-[floatingpoint]: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID321
-[int]: https://developer.apple.com/documentation/swift/int
-[double]: https://developer.apple.com/documentation/swift/double
-[arithmeticoperators]: https://docs.swift.org/swift-book/LanguageGuide/BasicOperators.html#ID63

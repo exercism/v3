@@ -48,7 +48,7 @@
     - [Pattern matching](/reference/concepts/pattern_matching.md)
     - [Pipelines](/reference/concepts/pipelines.md)
     - [Polymorphism](/reference/concepts/polymorphism.md)
-    - [Prototype-based programming](/reference/concepts/prototype_based-programming.md)
+    - [Prototype-based programming](/reference/concepts/prototype_based_programming.md)
     - [Pure functions](/reference/concepts/pure_functions.md)
     - [Recursion](/reference/concepts/recursion.md)
     - [REPL](/reference/concepts/repl.md)

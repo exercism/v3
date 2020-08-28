@@ -1,5 +1,6 @@
 {
   "language": "Java",
+  "slug": "java",
   "active": true,
   "blurb": "Java is a very widely used Object Oriented programming language. It's safe, simple to use and portable so that you can \"write once, run anywhere\".",
   "version": 3,
@@ -10,16 +11,34 @@
   "exercises": {
     "concept": [
       {
+        "slug": "arrays",
+        "uuid": "60600885-8684-45c3-b8a9-a2f9e3ce2d97",
+        "concepts": ["arrays"],
+        "prerequisites": ["booleans"]
+      },
+      {
         "slug": "basics",
         "uuid": "01924e92-ecc7-4ba6-83f9-f142c0756b9f",
         "concepts": ["basics"],
         "prerequisites": []
       },
       {
+        "slug": "booleans",
+        "uuid": "aaf69953-eac8-4016-984e-13b0917fcf01",
+        "concepts": ["booleans"],
+        "prerequisites": ["basics"]
+      },
+      {
         "slug": "strings",
         "uuid": "2165c331-6b0c-49b8-9555-bad577ec4fc6",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "chars",
+        "uuid": "b18ad603-e50e-4358-bb3e-0942fefb9dba",
+        "concepts": ["chars"],
+        "prerequisites": ["strings"]
       }
     ],
     "practice": []

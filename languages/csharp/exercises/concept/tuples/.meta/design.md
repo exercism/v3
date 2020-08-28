@@ -17,11 +17,10 @@
 
 - `tuples`: know what a tuple is; know how to define a tuple; know how to name tuple fields; know that tuples have structural equality; know how to deconstruct tuples; know that tuples are mutable.
 
-## Prequisites
+## Prerequisites
 
 - `basics`: know how to define methods and variables.
 - `strings`: obtaining sub-strings from a string
-- `conditionals`: combining conditions.
 
 ## Representer
 
