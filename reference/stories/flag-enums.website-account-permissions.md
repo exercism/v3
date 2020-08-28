@@ -27,7 +27,7 @@ These are example tasks that fit the website permissions exercise:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
+- [C#: flag-enums][implementation-csharp] (reference implementation)
 
 ## Related
 

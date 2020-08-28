@@ -1,5 +1,6 @@
 {
   "language": "C#",
+  "slug": "csharp",
   "active": true,
   "blurb": "C# is a modern, object-oriented language with lots of great features, such as type-inference and async/await. The tooling is excellent, and there is extensive, well-written documentation.",
   "version": 3,
@@ -10,7 +11,7 @@
         "slug": "arrays",
         "uuid": "b6c532c9-1e89-4fbf-8f08-27f5befb5bb8",
         "concepts": ["arrays", "for-loops", "foreach-loops"],
-        "prerequisites": ["booleans", "classes", "conditionals"]
+        "prerequisites": ["booleans", "classes", "if-statements"]
       },
       {
         "slug": "basics",
@@ -34,19 +35,33 @@
         "slug": "chars",
         "uuid": "e74c6cd6-add7-45d1-abcb-513418e9d2d0",
         "concepts": ["chars", "string-builder"],
-        "prerequisites": ["conditionals", "for-loops", "strings"]
+        "prerequisites": ["if-statements", "for-loops", "strings"]
       },
       {
         "slug": "classes",
         "uuid": "e01dc85b-0731-4701-9eea-c78fb69ce543",
         "concepts": ["classes"],
-        "prerequisites": ["conditionals", "numbers", "strings"]
+        "prerequisites": ["if-statements", "numbers", "strings"]
+      },
+      {
+        "slug": "constants",
+        "uuid": "54126398-4339-4073-9f5d-cf71cabcb328",
+        "concepts": ["constants", "defensive-copying", "readonly-collections"],
+        "prerequisites": [
+          "arrays",
+          "basics",
+          "classes",
+          "dictionaries",
+          "nested-types",
+          "object-initializers",
+          "properties"
+        ]
       },
       {
         "slug": "constructors",
         "uuid": "655b5c37-c2eb-4da2-ab0a-3845de898835",
         "concepts": ["constructors"],
-        "prerequisites": ["classes", "conditionals", "numbers", "while-loops"]
+        "prerequisites": ["classes", "if-statements", "numbers", "while-loops"]
       },
       {
         "slug": "datetimes",
@@ -69,7 +84,7 @@
         "slug": "enums",
         "uuid": "047b895b-7039-4af6-ad3a-17fd818d0b88",
         "concepts": ["enums", "pattern-matching-constants"],
-        "prerequisites": ["conditionals", "strings"]
+        "prerequisites": ["strings", "switch-statements"]
       },
       {
         "slug": "equality",
@@ -85,6 +100,37 @@
         ]
       },
       {
+        "slug": "expression-bodied-members",
+        "uuid": "27221c37-177e-437b-b423-977e46695db9",
+        "concepts": [
+          "conditionals-ternary",
+          "expression-bodied-members",
+          "switch-expressions",
+          "throw-expressions"
+        ],
+        "prerequisites": [
+          "booleans",
+          "classes",
+          "if-statements",
+          "constructors",
+          "datetimes",
+          "exceptions",
+          "properties",
+          "switch-statements"
+        ]
+      },
+      {
+        "slug": "exceptions",
+        "uuid": "b140614f-36df-4ce9-a539-97a81304b941",
+        "concepts": ["exceptions"],
+        "prerequisites": [
+          "inheritance",
+          "nullability",
+          "overflow",
+          "switch-statements"
+        ]
+      },
+      {
         "slug": "flag-enums",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
         "concepts": ["bit-manipulation", "compound-assignment", "flag-enums"],
@@ -93,8 +139,8 @@
       {
         "slug": "floating-point-numbers",
         "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
-        "concepts": ["floating-point-numbers", "while-loops"],
-        "prerequisites": ["conditionals", "numbers"]
+        "concepts": ["do-while-loops", "floating-point-numbers", "while-loops"],
+        "prerequisites": ["if-statements", "numbers"]
       },
       {
         "slug": "inheritance",
@@ -103,10 +149,22 @@
         "prerequisites": [
           "booleans",
           "classes",
-          "conditionals",
+          "if-statements",
           "constructors",
           "strings"
         ]
+      },
+      {
+        "slug": "integral-numbers",
+        "uuid": "86bbc073-1726-423d-b156-c394554a4a8c",
+        "concepts": ["casting", "integral-numbers"],
+        "prerequisites": ["arrays", "numbers"]
+      },
+      {
+        "slug": "interfaces",
+        "uuid": "15ac87b1-2976-4a43-a41d-1b6f6628bd9a",
+        "concepts": ["interfaces", "ordering"],
+        "prerequisites": ["classes", "lists", "properties"]
       },
       {
         "slug": "lists",
@@ -152,31 +210,29 @@
         "slug": "nullability",
         "uuid": "370e7e54-6a96-11ea-bc55-0242ac130003",
         "concepts": ["nullability"],
-        "prerequisites": ["conditionals", "memory-allocation", "strings"]
+        "prerequisites": ["if-statements", "memory-allocation", "strings"]
       },
       {
         "slug": "numbers",
         "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
-        "concepts": ["conditionals", "numbers"],
+        "concepts": ["if-statements", "numbers"],
         "prerequisites": ["basics"]
-      },
-      {
-        "slug": "nested-types",
-        "uuid": "694cbd8d-677d-4052-960e-69386463a94b",
-        "concepts": ["nested-types"],
-        "prerequisites": [
-          "classes",
-          "enums",
-          "interfaces",
-          "properties",
-          "structs"
-        ]
       },
       {
         "slug": "object-initializers",
         "uuid": "a9c3a1c9-19ee-45b2-8189-57e15870a051",
         "concepts": ["object-initializers"],
         "prerequisites": ["constructors", "dictionaries", "properties"]
+      },
+      {
+        "slug": "operator-overloading",
+        "uuid": "555cf3ae-d9b0-446f-8e2d-70a81aceab49",
+        "concepts": ["operator-overloading"],
+        "prerequisites": [
+          "equality",
+          "floating-point-numbers",
+          "method-overloading"
+        ]
       },
       {
         "slug": "overflow",
@@ -194,7 +250,7 @@
         "uuid": "f5c259fd-a404-432f-922d-781bde34fe08",
         "concepts": ["parameters"],
         "prerequisites": [
-          "conditionals",
+          "if-statements",
           "constructors",
           "named-parameters",
           "numbers",
@@ -250,6 +306,7 @@
         "prerequisites": [
           "const-readonly",
           "inheritance",
+          "string-builder",
           "strings",
           "time",
           "varargs"
@@ -270,7 +327,7 @@
           "inheritance",
           "numbers",
           "sets",
-          "signed-integers"
+          "integral-numbers"
         ]
       },
       {
@@ -283,14 +340,14 @@
         "slug": "tuples",
         "uuid": "8bb88ab5-3cde-4ebd-8eef-03323ebfd700",
         "concepts": ["tuples"],
-        "prerequisites": ["conditionals", "strings"]
+        "prerequisites": ["strings"]
       },
       {
         "slug": "time",
         "uuid": "61dd2e1c-94bb-4c92-95ad-6460a7677884",
         "concepts": ["time", "timezone"],
         "prerequisites": [
-          "conditionals-if",
+          "if-statements",
           "datetime",
           "strings",
           "switch-statements"
@@ -304,9 +361,9 @@
           "exceptions",
           "inheritance",
           "strings",
-          "conditionals",
+          "if-statements",
           "arithmetic-overflow",
-          "signed-integers"
+          "integral-numbers"
         ]
       }
     ],

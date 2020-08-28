@@ -26,5 +26,4 @@ func biggestSlice(
   case let (areaA?, areaB?):
     return areaA > areaB ? "Slice A is bigger" : "Slice B is bigger"
   }
-
 }

@@ -24,8 +24,8 @@ These are example tasks that fit the appointment scheduler exercise:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
-- [F#][implementation-fsharp]
+- [C#: datetimes][implementation-csharp] (reference implementation)
+- [F#: datetimes][implementation-fsharp]
 
 ## Related
 

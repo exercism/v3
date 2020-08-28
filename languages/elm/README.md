@@ -16,7 +16,7 @@ Before we publicize requesting contribution for this language, the following ste
 - [x] Fill out the [maintainers.md](./maintainers.md) file (e.g. [C#](../csharp/maintainers.md))
 - [x] Ensure there is a link to your track's GitHub issues on the [main README.md](../../README.md)
 - [ ] [Write a Concept Exercise implementation guide](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
-- [ ] [List out key Concepts for your language](../../docs/maintainers/determining-concepts.md)
+- [x] [List out key Concepts for your language](../../docs/maintainers/determining-concepts.md)
 - [ ] [Add GitHub issues for 20 Concept Exercises](../../docs/maintainers/writing-a-concept-exercise-github-issue.md)
 
 ## Readiness for Launch
@@ -56,3 +56,46 @@ These extra steps will make your track better, but are optional.
 
 - [ ] Build Analyzer
 - [ ] Deploy Analyzer
+
+### Key concepts
+
+This is a mermaid / markdown diagram, you may need to install a [Browser Plugin](https://github.com/BackMarket/github-mermaid-extension) or [VsCode extension](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) or similar to view it. You could also copy and paste the markdown in to the [Mermaid Online Editor](https://mermaid-js.github.io/mermaid-live-editor/) if you would prefer not to install plugins.
+
+The top to bottom order of the items (at least in the markdown text, and mostly in the diagram) is the suggested learning order.
+
+```mermaid
+graph LR
+  Basics[Minimal compilable file] --> Independents[Import, Exposing, Functions, Float, Int, Type Annotations] --> Mathematical-Operators
+  Independents --> Mathematical-Operators
+  Independents --> Mathematical-Functions
+  Independents --> Let-Expressions
+  Independents --> Equality
+  Equality --> Ordering
+  Ordering --> Comparisons
+  Independents --> String
+  String --> Regex
+  Independents --> Char
+  Independents --> List
+  List --> List-Extra
+  Independents --> Dict
+  Independents --> Set
+  Independents --> Array
+  Independents --> Type-alias
+  Independents --> Sum-types
+  Independents --> Booleans[Bool type / operators, If]
+  Sum-types --> Pattern-matching
+  Pattern-matching --> Maybe
+  Booleans --> Maybe
+  Maybe --> Result
+  Pattern-matching --> Parser
+  Independents --> Function-composition
+  Independents --> Function-chaining
+  Independents --> Partial-application
+  Partial-application --> Point-freestyle
+  Function-composition --> Point-freestyle
+  Function-chaining --> Point-freestyle
+  Point-freestyle --> Operator-functions
+  Independents --> Bitwise-operators
+  Independents --> Conversions
+  Independents --> Posix-time
+```

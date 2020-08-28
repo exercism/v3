@@ -30,7 +30,7 @@ This should guide students how to use:
 
 ## Implementations
 
-- [Elixir][implementation-elixir]
+- [Elixir: tuples][implementation-elixir]
 
 [concept-duck-typing]: ../concepts/duck_typing.md
 [type-tuple]: ../types/tuple.md

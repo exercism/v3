@@ -37,9 +37,9 @@ count = false;
 // --> raises a compile error "type mismatch"
 ```
 
-## Defining Functions within Classes
+## Defining Methods within Classes
 
-Scala is an _object-oriented language_ and requires all functions to be defined in a _class_. The `class` keyword is used to define a class.
+Scala is an _object-oriented language_ and requires all methods to be defined in a _class_. The `class` keyword is used to define a class.
 
 ```scala
 class Calculator {
@@ -47,11 +47,11 @@ class Calculator {
 }
 ```
 
-Inside a class, functions can be defined starting with keyword `def` followed by a name. Each method can have zero or more parameters, which are listed comma-separated within round brackets. All parameters must be explicitly typed, there is no type inference for parameters. After the list of parameters, the function's return type is defined separated by another colon.
+Inside a class, methods can be defined starting with keyword `def` followed by a name. Each method can have zero or more parameters, which are listed comma-separated within round brackets. All parameters must be explicitly typed, there is no type inference for parameters. After the list of parameters, the method's return type is defined separated by another colon.
 
 The method definition is followed by an `=` sign to start with the method body. In the following example the method body consists of two statements, which are surrounded by curly braces.
 
-The function will return the value of the last expression, in this case the `add` function returns the value of variable `sum`:
+The method will return the value of the last expression, in this case the `add` method returns the value of variable `sum`:
 
 ```scala
 class Calculator {
@@ -63,13 +63,13 @@ class Calculator {
 }
 ```
 
-There are a few improvements, which can be done to shorten that function in order to improve readability:
+There are a few improvements, which can be done to shorten that method in order to improve readability:
 
 - since the variable `sum` is accessed only once to return the value, it can be omitted
 - methods consisting of only one statement do not need curly braces
-- the function's return type can be inferred the same as for variable types
+- the method's return type can be inferred the same as for variable types
 
-This leads to the following one-line function with same functionality:
+This leads to the following one-line method with same functionality:
 
 ```scala
 class Calculator {

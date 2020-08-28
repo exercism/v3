@@ -46,13 +46,8 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 ## Implementations
 
-### Array basics
-
-- [JavaScript][implementation-javascript] (reference implementation)
-
-### Array analysis
-
-- [JavaScript][implementation-javascript-2] (reference implementation)
+- [JavaScript: arrays][implementation-javascript] (reference implementation)
+- [JavaScript: array-analysis][implementation-javascript-2] (reference implementation)
 
 ## Alternative version
 

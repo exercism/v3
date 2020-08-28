@@ -6,16 +6,17 @@ The Concept Exercises are based on this [list of concepts][reference-shared].
 
 These are the Concept Exercises that have currently been implemented, as well as the Concepts they teach and their prerequisite concepts:
 
-| exercise                                        | concepts       | prerequisites              |
-| ----------------------------------------------- | -------------- | -------------------------- |
-| [`basics`][concept-exercise-basics]             | `basics`       |                            |
-| [`numbers`][concept-exercise-numbers]           | `numbers`      | `basics`                   |
-| [`conditionals`][concept-exercise-conditionals] | `conditionals` | `basics`                   |
-| [`optionals`][concept-exercise-optionals]       | `optionals`    | `conditionals`             |
-| [`arrays`][concept-exercise-arrays]             | `arrays`       | `optionals`                |
-| [`strings`][concept-exercise-strings]           | `strings`      | `optionals` <br/> `arrays` |
+| exercise                                        | concepts       | prerequisites  |
+| ----------------------------------------------- | -------------- | -------------- |
+| [`basics`][concept-exercise-basics]             | `basics`       |                |
+| [`numbers`][concept-exercise-numbers]           | `numbers`      | `basics`       |
+| [`conditionals`][concept-exercise-conditionals] | `conditionals` | `basics`       |
+| [`optionals`][concept-exercise-optionals]       | `optionals`    | `conditionals` |
+| [`arrays`][concept-exercise-arrays]             | `arrays`       | `optionals`    |
 
 <!--
+| [`strings`][concept-exercise-strings]           | `strings`      | `optionals` <br/> `arrays` |
+
 | [`higher order functions`][concept-exercise-hof] | `higher-order-functions`     | `arrays`<br/>`strings`                       |
 | [`booleans`][concept-exercise-booleans]                             | `booleans`                   | `basics`                                                                               |
 | [`datetimes`][concept-exercise-datetimes]                           | `datetimes`                  | `classes`<br/>`numbers`<br/>`strings`                                                  |
@@ -38,11 +39,11 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [concept-exercise-basics]: ./basics/.meta/design.md
 [concept-exercise-numbers]: ./numbers/.meta/design.md
 [concept-exercise-conditionals]: ./conditionals/.meta/design.md
-[concept-exercise-strings]: ./strings/.meta/design.md
 [concept-exercise-optionals]: ./arrays/.meta/design.md
 [concept-exercise-arrays]: ./arrays/.meta/design.md
 
 <!--
+[concept-exercise-strings]: ./strings/.meta/design.md
 [concept-exercise-hof]: ./higher-order-functions/.meta/design.md
 [concept-exercise-booleans]: ./booleans/.meta/design.md
 [concept-exercise-datetimes]: ./datetimes/.meta/design.md

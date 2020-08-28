@@ -16,9 +16,9 @@ These are example tasks that fit the bird watching exercise:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
-- [Elixir][implementation-elixir]
-- [F#][implementation-fsharp]
+- [C#: arrays][implementation-csharp] (reference implementation)
+- [Elixir: recursion][implementation-elixir]
+- [F#: arrays][implementation-fsharp]
 
 ## Related
 

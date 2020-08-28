@@ -19,8 +19,8 @@ These are example tasks that fit the savings account exercise:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
-- [F#][implementation-csharp]
+- [C#: floating-point-numbers][implementation-csharp] (reference implementation)
+- [F#: floating-point-numbers][implementation-csharp]
 
 ## Related
 
