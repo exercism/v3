@@ -4,6 +4,10 @@
 
 The Swift concept exercises are based on language concepts. The list below contains the concepts that have been identified for the Swift language.
 
+The concepts are not sorted in any particular order. See [progression.md](progression.md) for planning the progression order of the Swift track.
+
+This list is neither complete nor final.
+
 ### Basics: Constants, variables, data types
 
 - Let [Basics]

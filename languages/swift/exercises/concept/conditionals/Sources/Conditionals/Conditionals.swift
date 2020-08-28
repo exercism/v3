@@ -1,5 +1,11 @@
-// TODO: define the 'canIBuy' function
+func canIBuy(vehicle: String, price: Double, monthlyBudget: Double) -> String {
+  fatalError("Please implement the canIBuy(vehicle:price:monthlyBudget:) function")
+}
 
-// TODO: define the 'licenceType' function
+func licenseType(numberOfWheels wheels: Int) -> String {
+  fatalError("Please implement licenseType(numberOfWheels:) function")
+}
 
-// TODO: define the 'registrationFee' function
+func registrationFee(msrp: Int, yearsOld: Int) -> Int {
+  fatalError("Please implement registrationFee(msrp:yearsOld:) function")
+}

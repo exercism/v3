@@ -65,7 +65,7 @@ with the renowned poets.
 
 ## Implementations
 
-- [JavaScript][implementation-javascript] (reference implementation)
+- [JavaScript: strings][implementation-javascript] (reference implementation)
 
 ## Reference
 

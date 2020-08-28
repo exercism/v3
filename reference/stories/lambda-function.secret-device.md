@@ -14,7 +14,7 @@ The story also adapts well for [concepts-bitwise_manipulation][concepts-bitwise_
 
 ## Implementations
 
-- [Elixir][implementation-elixir] (reference implementation)
+- [Elixir: anonymous-functions][implementation-elixir] (reference implementation)
 
 ## Reference
 
