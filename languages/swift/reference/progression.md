@@ -20,6 +20,9 @@ Start((basics)) --> tuples
 
 numbers --> optionals
 numbers --> bit-manipulation
+numbers --> ranges
+
+ranges --> loops
 
 strings-and-characters --> conditionals
 
