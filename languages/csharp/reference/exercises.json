@@ -924,6 +924,11 @@
               "line-number": 92
             }
           ]
+        },
+        {
+          "name": "readonly-collections",
+          "track-neutral-concept": "",
+          "original-concepts": []
         }
       ]
     },
