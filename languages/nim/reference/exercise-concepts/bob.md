@@ -24,19 +24,23 @@
 - strings
   - initialization of literals
 - documentation comment `##`
+
 ---
 
 ## Types
 
 ### `string`
+
 - literal construction (`"`)
 - iterating over the `char`s in a string
 - a string is an `openarray` of `char`s (accesing a string results in a `char`)
 
 ### `char`
+
 - literal construction (`'`)
 
 ### `bool`
+
 - boolean keyword operators (and, not, or)
 - `==`
   - `!=`
