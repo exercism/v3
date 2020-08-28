@@ -18,3 +18,5 @@ This concept exercise should convey a basic understanding of how to work with tu
 ## Prerequisites
 
 - `basics`: : know what a value is; know how to define a constant; know how to define a variable; know how to define a function
+- `strings-and-characters`: Know what a string is
+- `arrays`: know what an array is

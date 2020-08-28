@@ -33,5 +33,5 @@ combineRecords(
     ["Inés", "Maxime", "Bandile", "Shaurya", "Екатерина"]
   )
 )
-// ==> (id: 328509, toy: "Chemistry set", productLead: "Binkles", recipients: ["Inés", "Maxime", "Bandile", "Shaurya", "Екатерина"])
+// => (id: 328509, toy: "Chemistry set", productLead: "Binkles", recipients: ["Inés", "Maxime", "Bandile", "Shaurya", "Екатерина"])
 ```

@@ -38,13 +38,3 @@ let cindyName = cindy.name
 let cindyAge = cindy.1
 // => 28
 ```
-
-If the tuple is defined as a variable, the individual components can be updated by assigning new values to their labels or indices.
-
-```swift
-var birdSightingLog = (week: 28, birds: ["robin", "blue jay", "heron"])
-birdSightingLog.0 = 29
-// => (week 29, ["robin", "blue jay", "heron"])
-birdSightingLog.birds.append("swift")
-// => (week 29, ["robin", "blue jay", "heron", "swift"])
-```
