@@ -11,7 +11,7 @@ These are the different log levels:
 - `ERR` (error)
 - `FTL` (fatal)
 
-You have three tasks.
+You have three tasks, each of which need to be completed to provide the necessary functionality.
 
 ## 1. Create LogLevel enum
 
@@ -24,8 +24,6 @@ Define a `LogLevel` enum that has six cases corresponding to the above log level
 - `error`
 - `fatal`
 - `unknown`
-
-Each case should have an associated String value that contains the log message.
 
 ## 2. Parse log level
 
