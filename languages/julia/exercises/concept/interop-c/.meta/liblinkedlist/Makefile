@@ -32,6 +32,13 @@ memcheck: test/*.c src/*.c src/*.h
 clean:
 	rm -rf *.o *.out *.out.dSYM
 
+.PHONY: build
+build:
+	@echo Building liblinkedlist.so
+	@$(CC) $(CFLAGS) -c src/*.c
+	@$(CC) $(CFLAGS) -shared linked_list.o -o liblinkedlist.so
+	rm -rf linked_list.o
+
 tests.out: test/*.c src/*.c src/*.h
 	@echo Compiling $@
 	@$(CC) $(CFLAGS) src/*.c test/vendor/unity.c test/*.c -o tests.out $(LIBS)
