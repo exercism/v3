@@ -929,6 +929,11 @@
           "name": "readonly-collections",
           "track-neutral-concept": "",
           "original-concepts": []
+        },
+        {
+          "name": "defensive-copying",
+          "track-neutral-concept": "",
+          "original-concepts": []
         }
       ]
     },
