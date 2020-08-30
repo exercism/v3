@@ -11,7 +11,7 @@ fmt.Println(s)
 // Output: Hello world.
 ```
 
-- This [Go 101][go101], will offer you more details about this concept.
+- The [Go 101 string section][go101] has more details about this concept.
 
 [fmt-package]: https://golang.org/pkg/fmt/
 [go101]: https://go101.org/article/string.html
