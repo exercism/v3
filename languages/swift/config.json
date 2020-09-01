@@ -34,6 +34,7 @@
         "slug": "functions",
         "uuid": "cd7e4e29-6b1e-41c9-8815-f3788e7727ce",
         "concepts": [
+          "function-overloading",
           "multiple-return-values",
           "default-parameters",
           "variadic-parameters",
