@@ -7,7 +7,7 @@ You will receive two cards and will be able to see the face up card of the deale
 |  ace  |  11   | eight |   8   |
 |  two  |   2   | nine  |   9   |
 | three |   3   |  ten  |  10   |
-| four  |   4   | jack  |  10   | 
+| four  |   4   | jack  |  10   |
 | five  |   5   | queen |  10   |
 |  six  |   6   | king  |  10   |
 | seven |   7   | other |   0   |
@@ -40,45 +40,38 @@ The overall logic has already been implemented. You have four tasks:
 
 Implement a function to calculate the numerical value of a card given its name using coditionals.
 
-```go
-value := ParseCard("ace")
-fmt.Println(value)
-// Output: 11
+```java
+parseCard("ace")
+// returns 11
 ```
 
 ## 2. Determine if two cards make up a Blackjack.
 
 Implement a function that returns `true` if two cards form a Blackjack, `false` otherwise.
 
-```go
-isBlackjack := IsBlackjack("queen", "ace")
-fmt.Println(isBlackjack)
-// Output: true
+```java
+isBlackjack("queen", "ace")
+// returns true
 ```
 
 ## 3. Implement the decision logic for hand scores larger than 20 points.
 
 Implement a function that returns the string representation of a decision given your cards. This function is only called if the `handScore` is larger than 20. It will receive 2 arguments: `isBlackJack` and `dealerScore`. It should implement the bulletpoints in the category "Large Hand" above.
 
-```go
-isBlackJack := true
-dealerScore := 7
-choice := LargeHand(isBlackJack, dealerScore)
-fmt.Println(choice)
-// Output: "W"
+```java
+isBlackJack = true
+dealerScore = 7
+largeHand(isBlackJack, dealerScore)
+// returns "W"
 ```
 
 ## 4. Implement the decision logic for hand scores with less than 21 points.
 
 Implement a function that returns the string representation of a decision given your cards. This function is only called if the `handScore` is less than 21. It will receive 2 arguments: `handScore` and `dealerScore`. It should implement the bulletpoints in the category "Small Hand" above.
 
-```go
-handScore := 15
-dealerScore := 12
-choice := SmallHand(handScore, dealerScore)
-fmt.Println(choice)
-// Output: "H"
+```java
+handScore = 15
+dealerScore = 12
+SmallHand(handScore, dealerScore)
+// returns "H"
 ```
-
-
-#TODO change
