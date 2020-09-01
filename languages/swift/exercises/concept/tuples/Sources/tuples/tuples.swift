@@ -1,6 +1,6 @@
 import Foundation
 
-func cartesianToPolar(_ cart: (x: Double, y: Double)) -> (r: Double, theta: Double) {
+func cartesianToPolar(_ cart: (x: Double, y: Double)) -> (r: Double, phi: Double) {
   fatalError("Please implement the cartesianToPolar(_:) function.")
 }
 

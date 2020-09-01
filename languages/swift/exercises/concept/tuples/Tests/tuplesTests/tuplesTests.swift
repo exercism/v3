@@ -9,15 +9,15 @@ final class tuplesTests: XCTestCase {
 
   func testCartesianToPolar() {
     let coordinate = (x: 11.713, y: 5.6405)
-    let (actualR, actualTheta) = cartesianToPolar(coordinate)
-    XCTAssertTrue(aboutEqual(actualR, 13.0) && aboutEqual(actualTheta, 0.4488))
+    let (actualR, actualPhi) = cartesianToPolar(coordinate)
+    XCTAssertTrue(aboutEqual(actualR, 13.0) && aboutEqual(actualPhi, 0.4488))
   }
 
   func testCartesianToPolarQ3() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     let coordinate = (x: -4.7292, y: -2.4096)
-    let (actualR, actualTheta) = cartesianToPolar(coordinate)
-    XCTAssertTrue(aboutEqual(actualR, 5.3077) && aboutEqual(actualTheta, -2.6704))
+    let (actualR, actualPhi) = cartesianToPolar(coordinate)
+    XCTAssertTrue(aboutEqual(actualR, 5.3077) && aboutEqual(actualPhi, -2.6704))
   }
 
   func testCombineRecords() throws {

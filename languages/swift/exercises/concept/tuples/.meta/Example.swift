@@ -1,7 +1,7 @@
 import Foundation
 
-func cartesianToPolar(_ cart: (x: Double, y: Double)) -> (r: Double, theta: Double) {
-  (r: (cart.x * cart.x + cart.y * cart.y).squareRoot(), theta: atan2(cart.y, cart.x))
+func cartesianToPolar(_ cart: (x: Double, y: Double)) -> (r: Double, phi: Double) {
+  (r: (cart.x * cart.x + cart.y * cart.y).squareRoot(), phi: atan2(cart.y, cart.x))
 }
 
 func combineRecords(
