@@ -75,7 +75,7 @@
         "slug": "tuples",
         "uuid": "f371c072-082b-496b-aa58-45b6cba203f6",
         "concepts": ["tuples"],
-        "prerequisites": ["arrays", "basics", "strings"]
+        "prerequisites": ["arrays", "strings"]
       }
     ],
     "practice": []
