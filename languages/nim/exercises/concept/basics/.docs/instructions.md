@@ -1,6 +1,6 @@
 In this exercise you're going to write some code to help you cook a brilliant lasagna from your favorite cooking book.
 
-You have four tasks, all related to the time spent cooking the lasagna.
+You have five tasks, all related to the time spent cooking the lasagna.
 
 ## 1. Define the expected oven time in minutes
 
@@ -37,3 +37,7 @@ Implement the `totalTimeInMinutes` procedure that takes two parameters: the `num
 nim> totalTimeInMinutes(3, 20)
 26 == type int
 ```
+
+## 5. Update the recipe with notes
+
+Go back through the recipe, adding notes and documentation.
