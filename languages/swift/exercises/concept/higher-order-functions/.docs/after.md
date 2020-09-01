@@ -53,39 +53,31 @@ stringAndIntToString = printShoppingList
 As function types can be used anywhere other types can be used, it follows that [they can be used as parameter types][functions-as-parameters] and passed into other functions and called from within those functions.
 
 ```swift
-func distribute(over strings: [String],
-                andInt i: Int,
-                function f: (String, Int) -> String
-               ) -> [String] {
-  var result = [String]()
-  for string in strings {
-    result.append(f(string, i))
-  }
-  return result
+func apply3(to str: String, function f: (String, Int) -> String) -> String {
+  f(str,3)
 }
-// distribute: ([String], Int, (String, Int) -> String) -> [String]
+// apply3: ([String], (String, Int) -> String) -> [String]
 
-distribute(over: ["carrots", "eggs", "popsicles"], andInt: 3, function: shoppingList)
-// => ["You need to buy 3 carrots.", "You need to buy 3 eggs.", "You need to buy 3 popsicles."]
+apply3(to: "eggs", function: shoppingList)
+// => "You need to buy 3 eggs."
 
-distribute(over: ["carrots", "eggs", "popsicles"], andInt: 3, function: repeater)
-// => ["carrotscarrotscarrots", "eggseggseggs", "popsiclespopsiclespopsicles"]
+apply3(to: "eggs", function: repeater)
+// => "eggseggseggs"
 
 func apply(functions fs: [(String, Int) -> String],
            to string: String,
-           andInt i: Int
           ) -> [String] {
   var result = [String]()
   for f in fs {
-    result.append(f(string, i))
+    result.append(f(string, 3))
   }
   return result
 
 }
-// apply: ([(String, Int) -> String], String, Int) -> [String]
+// apply: ([(String, Int) -> String], String) -> [String]
 
 
-apply(functions: [shoppingList, repeater], to: "carrots", andInt: 3)
+apply(functions: [shoppingList, repeater], to: "carrots")
 // => ["You need to buy 3 carrots.", "carrotscarrotscarrots"]
 ```
 

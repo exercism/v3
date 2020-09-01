@@ -1,8 +1,6 @@
 ### Function types
 
-We have seen before how function signatures are defined using a function name followed by comma-separated list of parameter labels along with their types, followed by `->` and the type of the values returned by the function.
-
-If one were to remove all of the names and labels from this signature, they would be left with the type of the function.
+If one were to remove all of the names and labels from a Swift function signature, they would be left with the type of the function.
 
 ```swift
 func shoppingList(item: String, quantity: Int) -> String {
@@ -25,7 +23,7 @@ func printString(line: String) {
 // printString: (String) -> ()
 ```
 
-Notice how the types of the first two functions are the same, `(String, Int) -> String`, even though the two functions work veery differently. They both take a `String` and an `Int` as input and return a `String`. And, as one can see from the third function's type, even though the function body doesn't appear to return anything, it actually implicitly returns `()`, the only value of type `Void`. Note that `()` and `Void` are interchangeable as type names, so the type of `printString` could also be written as `(String) -> Void`.
+Notice that the types of the first two functions are the same, `(String, Int) -> String`, even though the two signatures are different and the two functions work very differently. They both take a `String` and an `Int` as input and return a `String`. And, as one can see from the third function's type, even though the function body doesn't appear to return anything, it actually implicitly returns `()`, the only value of type `Void`.
 
 These function types can be used in the same manner as any other type in Swift, for example, they can be used in the declaration of variables or constants. And since functions are values in Swift, already existing functions can be assigned to these constants/variables:
 
@@ -35,10 +33,6 @@ var stringAndIntToString: (String, Int) -> String
 stringAndIntToString = shoppingList
 stringAndIntToString("carrots", 3)
 // => "You need to buy 3 carrots."
-
-stringAndIntToString = repeater
-stringAndIntToString("carrots", 3)
-// => "carrotscarrotscarrots"
 ```
 
 As with other variables/constants, the value you assign to it must be of the correct type:
@@ -53,40 +47,16 @@ stringAndIntToString = printShoppingList
 As function types can be used anywhere other types can be used, it follows that they can be used as parameter types and passed into other functions and called from within those functions.
 
 ```swift
-func distribute(over strings: [String],
-                andInt i: Int,
-                function f: (String, Int) -> String
-               ) -> [String] {
-  var result = [String]()
-  for string in strings {
-    result.append(f(string, i))
-  }
-  return result
+func apply3(to str: String, function f: (String, Int) -> String) -> String {
+  f(str,3)
 }
-// distribute: ([String], Int, (String, Int) -> String) -> [String]
+// apply3: ([String], (String, Int) -> String) -> [String]
 
-distribute(over: ["carrots", "eggs", "popsicles"], andInt: 3, function: shoppingList)
-// => ["You need to buy 3 carrots.", "You need to buy 3 eggs.", "You need to buy 3 popsicles."]
+apply3(to: "eggs", function: shoppingList)
+// => "You need to buy 3 eggs."
 
-distribute(over: ["carrots", "eggs", "popsicles"], andInt: 3, function: repeater)
-// => ["carrotscarrotscarrots", "eggseggseggs", "popsiclespopsiclespopsicles"]
-
-func apply(functions fs: [(String, Int) -> String],
-           to string: String,
-           andInt i: Iny
-          ) -> [String] {
-  var result = [String]()
-  for f in fs {
-    result.append(f(string, i))
-  }
-  return result
-
-}
-// apply: ([(String, Int) -> String], String, Int) -> [String]
-
-
-apply(functions: [shoppingList, repeater], to: "carrots", andInt: 3)
-// => ["You need to buy 3 carrots.", "carrotscarrotscarrots"]
+apply3(to: "eggs", function: repeater)
+// => "eggseggseggs"
 ```
 
 ### Function types as return types
@@ -114,7 +84,3 @@ add10(5)
 subtract20(5)
 // => -15
 ```
-
-### Higher-order functions
-
-Functions that take functions as parameters and/or return functions are known as higher order functions. Swift has many higher-order functions in its various libraries.
