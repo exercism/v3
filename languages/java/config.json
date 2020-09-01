@@ -39,6 +39,12 @@
         "uuid": "b18ad603-e50e-4358-bb3e-0942fefb9dba",
         "concepts": ["chars"],
         "prerequisites": ["strings"]
+      },
+      {
+        "slug": "numbers",
+        "uuid": "3f451c6b-04e2-4b08-8bb0-7dcd2ec5b8f4",
+        "concepts": ["numbers"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []
