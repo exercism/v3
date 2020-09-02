@@ -43,6 +43,12 @@
         "prerequisites": ["arrays", "conditionals", "tuples"]
       },
       {
+        "slug": "higher-order-functions",
+        "uuid": "eb8ccbb6-79af-4417-b934-e07fb496aaf2",
+        "concepts": ["higher-order-functions"],
+        "prerequisites": ["functions"]
+      },
+      {
         "slug": "numbers",
         "uuid": "3bdad781-47e1-493a-834d-ca6ac8361ffd",
         "concepts": ["numbers"],
@@ -55,10 +61,15 @@
         "prerequisites": ["tuples", "conditionals"]
       },
       {
-        "slug": "strings",
+        "slug": "string-components",
         "uuid": "082d7aeb-ee25-4217-bd6f-82532a65797a",
-        "concepts": ["strings-components", "strings-indices"],
-        "prerequisites": ["arrays"]
+        "concepts": [
+          "importing",
+          "opaque-indices",
+          "string-components",
+          "string-indexing"
+        ],
+        "prerequisites": ["arrays", "optionals"]
       },
       {
         "slug": "strings-and-characters",
@@ -78,6 +89,12 @@
           "stored-properties"
         ],
         "prerequisites": ["functions", "function-overloading"]
+      },
+      {
+        "slug": "tuples",
+        "uuid": "f371c072-082b-496b-aa58-45b6cba203f6",
+        "concepts": ["tuples"],
+        "prerequisites": ["arrays", "strings"]
       }
     ],
     "practice": []
