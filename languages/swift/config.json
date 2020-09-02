@@ -16,7 +16,13 @@
       {
         "slug": "basics",
         "uuid": "44ae5892-40a5-4483-a181-28e1c38645d6",
-        "concepts": ["basics"],
+        "concepts": [
+          "basics",
+          "constants",
+          "functions",
+          "type-annotations",
+          "variables"
+        ],
         "prerequisites": []
       },
       {
@@ -29,6 +35,12 @@
           "conditionals-switch"
         ],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "enums",
+        "uuid": "0a634d93-d073-4a2b-b6c4-1ba53c04b2bb",
+        "concepts": ["enumerations"],
+        "prerequisites": ["string-components", "structs-and-classes"]
       },
       {
         "slug": "functions",
