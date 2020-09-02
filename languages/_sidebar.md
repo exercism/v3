@@ -19,6 +19,7 @@
   - [Kotlin](/languages/kotlin/README.md)
   - [Nim](/languages/nim/README.md)
   - [OCaml](/languages/ocaml/README.md)
+  - [Pharo Smalltalk](/languages/pharo-smalltalk/README.md)
   - [PureScript](/languages/purescript/README.md)
   - [Python](/languages/python/README.md)
   - [ReasonML](/languages/reasonml/README.md)
