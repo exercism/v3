@@ -59,6 +59,25 @@ let thirteen = add(6, and: 7, doubleThat: false)
 // => 13
 ```
 
+Functions are also considered distinct if just the return value changes, though in many cases, it is necessary to provide a hint to the compiler in the form of a type annotation so it knows which version of the function to call.
+
+```swift
+func add(_ x: Int, and y: Int, doubleResult: Bool) -> Double {
+  let sum = Double(x + y)
+  if doubleResult {
+    return sum * 2
+  } else {
+    return sum
+  }
+}
+
+let thirty = add(6, and: 9, doubleResult: true)
+// Error: Ambiguous use of 'add(_:and:doubleResult:)'
+
+let thirty: Double = add(6, and: 9, doubleResult: true)
+// => 30
+```
+
 But just changing an internal parameter name does not distinguish two functions.
 
 ```swift
