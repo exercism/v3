@@ -41,3 +41,9 @@ nim> totalTimeInMinutes(3, 20)
 ## 5. Update the recipe with notes
 
 Go back through the recipe, adding notes and documentation.
+
+```nim
+proc totalTimeInMinutes*(numberOfLayers, actualMinutesInOven: int): int =
+  ## Calculate the total working time. That is, the time to prepare all the layers
+  ## of lasagna, and the time already spent in the oven.
+```
