@@ -21,13 +21,6 @@ final class StructsAndClassesTests: XCTestCase {
       "Main Window\nPosition: (100, 100), Size: (400 x 300)\nThis is the main window\n")
   }
 
-  func testHelpWindow() throws {
-    try XCTSkipIf(true && !runAll)  // change true to false to run this test
-    XCTAssertEqual(
-      helpWindow.display(),
-      "Help Dialog\nPosition: (590, 10), Size: (100 x 100)\nSomebody called for help?\n")
-  }
-
   func testPositionMove() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     var pos = Position()
@@ -46,7 +39,7 @@ final class StructsAndClassesTests: XCTestCase {
     XCTAssertTrue(size.width == newWidth && size.height == newHeight, "Expected: Size(x: \(newWidth), \(newHeight)), got Size(x: \(size.width), \(size.height))")
   }
   
-  func testMoveToValid() throws {
+  func testMoveValid() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     let testWindow: Window = {
       let window = Window()
@@ -61,7 +54,7 @@ final class StructsAndClassesTests: XCTestCase {
       "Test Window\nPosition: (100, 100), Size: (100 x 100)\ntest\n")
   }
 
-  func testMoveToTooFar() throws {
+  func testMoveTooFar() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     let testWindow: Window = {
       let window = Window()
@@ -76,7 +69,7 @@ final class StructsAndClassesTests: XCTestCase {
       "Test Window\nPosition: (700, 500), Size: (100 x 100)\ntest\n")
   }
 
-  func testMoveToNegative() throws {
+  func testMoveNegative() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     let testWindow: Window = {
       let window = Window()
@@ -91,52 +84,7 @@ final class StructsAndClassesTests: XCTestCase {
       "Test Window\nPosition: (0, 0), Size: (100 x 100)\ntest\n")
   }
 
-  func testMoveDeltaValid() throws {
-    try XCTSkipIf(true && !runAll)  // change true to false to run this test
-    let testWindow: Window = {
-      let window = Window()
-      window.title = "Test Window"
-      window.contents = "test"
-      window.resize(to: Size(width: 100, height: 100))
-      window.move(deltaX: 400, deltaY: 400)
-      return window
-    }()
-    XCTAssertEqual(
-      testWindow.display(),
-      "Test Window\nPosition: (400, 400), Size: (100 x 100)\ntest\n")
-  }
-
-  func testMoveDeltaTooFar() throws {
-    try XCTSkipIf(true && !runAll)  // change true to false to run this test
-    let testWindow: Window = {
-      let window = Window()
-      window.title = "Test Window"
-      window.contents = "test"
-      window.resize(to: Size(width: 500, height: 500))
-      window.move(deltaX: 400, deltaY: 400)
-      return window
-    }()
-    XCTAssertEqual(
-      testWindow.display(),
-      "Test Window\nPosition: (300, 100), Size: (500 x 500)\ntest\n")
-  }
-
-  func testMoveDeltaNegative() throws {
-    try XCTSkipIf(true && !runAll)  // change true to false to run this test
-    let testWindow: Window = {
-      let window = Window()
-      window.title = "Test Window"
-      window.contents = "test"
-      window.resize(to: Size(width: 100, height: 100))
-      window.move(deltaX: -1000, deltaY: -2)
-      return window
-    }()
-    XCTAssertEqual(
-      testWindow.display(),
-      "Test Window\nPosition: (0, 0), Size: (100 x 100)\ntest\n")
-  }
-
-  func testResizeToValid() throws {
+  func testResizeValid() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     let testWindow: Window = {
       let window = Window()
@@ -151,7 +99,7 @@ final class StructsAndClassesTests: XCTestCase {
       "Test Window\nPosition: (600, 500), Size: (100 x 100)\ntest\n")
   }
 
-  func testResizeToTooFar() throws {
+  func testResizeTooFar() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     let testWindow: Window = {
       let window = Window()
@@ -166,57 +114,13 @@ final class StructsAndClassesTests: XCTestCase {
       "Test Window\nPosition: (710, 525), Size: (90 x 75)\ntest\n")
   }
 
-  func testResizeToNegative() throws {
+  func testResizeNegative() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     let testWindow: Window = {
       let window = Window()
       window.title = "Test Window"
       window.contents = "test"
       window.resize(to: Size(width: 0, height: -100))
-      return window
-    }()
-    XCTAssertEqual(
-      testWindow.display(),
-      "Test Window\nPosition: (0, 0), Size: (1 x 1)\ntest\n")
-  }
-
-  func testResizeDeltaValid() throws {
-    try XCTSkipIf(true && !runAll)  // change true to false to run this test
-    let testWindow: Window = {
-      let window = Window()
-      window.title = "Test Window"
-      window.contents = "test"
-      window.move(deltaX: 400, deltaY: 400)
-      window.resize(deltaW: 20, deltaH: 40)
-      return window
-    }()
-    XCTAssertEqual(
-      testWindow.display(),
-      "Test Window\nPosition: (400, 400), Size: (100 x 100)\ntest\n")
-  }
-
-  func testResizeDeltaTooFar() throws {
-    try XCTSkipIf(true && !runAll)  // change true to false to run this test
-    let testWindow: Window = {
-      let window = Window()
-      window.title = "Test Window"
-      window.contents = "test"
-      window.move(deltaX: 400, deltaY: 400)
-      window.resize(deltaW: 400, deltaH: 300)
-      return window
-    }()
-    XCTAssertEqual(
-      testWindow.display(),
-      "Test Window\nPosition: (400, 400), Size: (400 x 200)\ntest\n")
-  }
-
-  func testResizeDeltaNegative() throws {
-    try XCTSkipIf(true && !runAll)  // change true to false to run this test
-    let testWindow: Window = {
-      let window = Window()
-      window.title = "Test Window"
-      window.contents = "test"
-      window.resize(to: Size(width: -100, height: -80))
       return window
     }()
     XCTAssertEqual(
@@ -254,19 +158,12 @@ final class StructsAndClassesTests: XCTestCase {
   static var allTests = [
     ("testNewWindow", testNewWindow),
     ("testMainWindow", testMainWindow),
-    ("testHelpWindow", testHelpWindow),
-    ("testMoveToValid", testMoveToValid),
-    ("testMoveToTooFar", testMoveToTooFar),
-    ("testMoveToNegative", testMoveToNegative),
-    ("testMoveDeltaValid", testMoveDeltaValid),
-    ("testMoveDeltaTooFar", testMoveDeltaTooFar),
-    ("testMoveDeltaNegative", testMoveDeltaNegative),
-    ("testResizeToValid", testResizeToValid),
-    ("testResizeToTooFar", testResizeToTooFar),
-    ("testResizeToNegative", testResizeToNegative),
-    ("testResizeDeltaValid", testResizeDeltaValid),
-    ("testResizeDeltaTooFar", testResizeDeltaTooFar),
-    ("testResizeDeltaNegative", testResizeDeltaNegative),
+    ("testMoveValid", testMoveValid),
+    ("testMoveTooFar", testMoveTooFar),
+    ("testMoveNegative", testMoveNegative),
+    ("testResizeValid", testResizeValid),
+    ("testResizeTooFar", testResizeTooFar),
+    ("testResizeNegative", testResizeNegative),
     ("testUpdateTitle", testUpdateTitle),
     ("testUpdateText", testUpdateText),
     ("testUpdateTextNil", testUpdateTextNil),

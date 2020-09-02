@@ -1,4 +1,4 @@
-Structs and classes are two of the primary building blocks of Swift programming. They are both means of grouping together related data and functions into self-contained units of functionality. All of the basic types that you have been working with up to this point, such as `Int`, `Double`, `Bool`, and `Character` as well as collection types like `Array`, `String`, and `Dictionary` are actually structs. And when you define a struct or class, you are defining a new type to be used within Swift, just as you used those types.
+Structs and classes are two of the primary building blocks of Swift programming. They are both means of grouping together related data and functions into self-contained units of functionality. And when you define a struct or class, you are defining a new type to be used within Swift, just as you used the types you've already worked with, like `Int` and `String`.
 
 There are many similarities between structs and classes in Swift. Among other similarities, both are able to store values in _properties_ and provide functionality through the use of _methods_.
 
@@ -26,8 +26,6 @@ class GameCharacter {
 }
 ```
 
-Here we have a struct that contains the statistics that will be associated with a character in a game and a struct that contains information about the character. Note that the `Character` class contains an instance of the `CharacterStats` struct inside of it.
-
 ### Instances
 
 As noted above, defining a struct or class is just defining a new _type_. It is just the blueprint for what the values of that type will look like, but it does not actually create any values of that type for you to work with.
@@ -41,7 +39,7 @@ let someCharacter = GameCharacter()
 
 This will create values of these types, where the properties are populated with the default values supplied in the definition. Note that in optional cases like GameCharacter's `name` property, unless a value is provided, the property will default to nil, just like defining regular optional types where a value is not immediately provided.
 
-With structs, Swift automatically provides something called a memberwise initializer, where values for the structs properties may be provided inside the parentheses which will override the default values in the definition.
+With structs, Swift automatically provides something called a _memberwise initializer_, where values for the structs properties may be provided inside the parentheses which will override the default values in the definition.
 
 ```swift
 let differentStats = CharacterStats(health: 100.0, speed: 6, strength: 18)
@@ -56,8 +54,6 @@ This notation can be used both to retrieve the property's value and, where allow
 ```swift
 someStats.health
 // => 0
-differentStats.health
-// => 100
 someCharacter.name
 // => nil
 
@@ -67,9 +63,7 @@ someStats.health
 someCharacter.name = "Luther"
 someCharacter.name
 // => "Luther"
-someCharacter.stats = differentStats
-someCharacter.stats.health
-// => 100
+
 someCharacter.id  = "new id"
 // Error: Cannot assign to property: 'id' is a 'let' constant
 ```
@@ -125,14 +119,8 @@ These methods can be called using dot notation, just like properties.
 ```swift
 var myChar = GameCharacter()
 myChar.stats = CharacterStats(health: 72.8, speed: 19, strength: 6)
-myChar.name = "Shadowfly"
-myChar.characterClass = "spy"
 myChar.active = true
 
-myChar.active
-// => true
-myChar.sayName()
-// => "My name is Shadowfly, my class is spy"
 myChar.lift(750)
 // => "Ooof! No way."
 myChar.takesDamage(80)

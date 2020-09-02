@@ -30,19 +30,9 @@ class Window {
     let minY = min(max(0, newPosition.y), screenSize.height - size.height)
     position.moveTo(newX: minX, newY: minY)
   }
-  func move(deltaX: Int, deltaY: Int) {
-    let minX = min(max(0, position.x + deltaX), screenSize.width - size.width)
-    let minY = min(max(0, position.y + deltaY), screenSize.height - size.height)
-    position.moveTo(newX: minX, newY: minY)
-  }
   func resize(to newSize: Size) {
     let minW = min(max(1, newSize.width), screenSize.width - position.x)
     let minH = min(max(1, newSize.height), screenSize.height - position.y)
-    size.resize(newWidth: minW, newHeight: minH)
-  }
-  func resize(deltaW: Int, deltaH: Int) {
-    let minW = min(max(1, size.width + deltaW), screenSize.width - position.x)
-    let minH = min(max(1, size.height + deltaH), screenSize.height - position.y)
     size.resize(newWidth: minW, newHeight: minH)
   }
   func update(title: String) {
@@ -62,14 +52,5 @@ let mainWindow: Window = {
   window.contents = "This is the main window"
   window.move(to: Position(x: 100, y: 100))
   window.resize(to: Size(width: 400, height: 300))
-  return window
-}()
-
-let helpWindow: Window = {
-  var window = Window()
-  window.title = "Help Window"
-  window.contents = "Somebody called for help?"
-  window.move(to: Position(x: 690, y: 10))
-  window.resize(to: Size(width: 100, height: 100))
   return window
 }()

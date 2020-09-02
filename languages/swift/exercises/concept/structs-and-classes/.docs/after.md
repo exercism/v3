@@ -41,11 +41,13 @@ let someCharacter = GameCharacter()
 
 This will create values of these types, where the properties are populated with the default values supplied in the definition. Note that in optional cases like GameCharacter's `name` property, unless a value is provided, the property will default to nil, just like defining regular optional types where a value is not immediately provided.
 
-With structs, Swift automatically provides something called a memberwise initializer, where values for the structs properties may be provided inside the parentheses which will override the default values in the definition.
+With structs, Swift automatically provides something called a _memberwise initializer_, where values for the structs properties may be provided inside the parentheses which will override the default values in the definition.
 
 ```swift
 let differentStats = CharacterStats(health: 100.0, speed: 6, strength: 18)
 ```
+
+For classes, where a property is not defined with a default value, an initializer is required.
 
 Additional initializing functionality is available in Swift, though it is out of the scope of this exercise and will be covered in a separate exercise.
 

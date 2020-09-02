@@ -63,8 +63,15 @@
       {
         "slug": "structs-and-classes",
         "uuid": "bfb16db1-f419-48e9-91bc-defebc0ae9ac",
-        "concepts": ["structs", "classes", "methods", "stored-properties"],
-        "prerequisites": ["functions"]
+        "concepts": [
+          "structs",
+          "classes",
+          "initializers",
+          "methods",
+          "self",
+          "stored-properties"
+        ],
+        "prerequisites": ["functions", "function-overloading"]
       }
     ],
     "practice": []
