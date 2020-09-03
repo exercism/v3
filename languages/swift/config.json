@@ -46,6 +46,7 @@
         "slug": "functions",
         "uuid": "cd7e4e29-6b1e-41c9-8815-f3788e7727ce",
         "concepts": [
+          "function-overloading",
           "multiple-return-values",
           "default-parameters",
           "variadic-parameters",
@@ -88,6 +89,19 @@
         "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
         "concepts": ["strings", "characters"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "structs-and-classes",
+        "uuid": "bfb16db1-f419-48e9-91bc-defebc0ae9ac",
+        "concepts": [
+          "structs",
+          "classes",
+          "initializers",
+          "methods",
+          "self",
+          "stored-properties"
+        ],
+        "prerequisites": ["functions", "function-overloading"]
       },
       {
         "slug": "tuples",
