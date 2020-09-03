@@ -1,0 +1,38 @@
+# Lasagna Recipe
+
+## Story
+
+This exercise builds on the original lasagna story to expand on the creation of basic [functions][types-function], and add in [default arguments][concepts-default_arguments], [named parameters][concepts-named_parameters], [variadic functions][concepts-variadic_functions], [multiple return values][concepts-multiple_return_values], [inout (reference) parameters][concepts-inout_parameters], and [nested functions][concepts-nested_functions].
+
+## Tasks
+
+The story facilitates defining functions:
+
+- Allow changing the expected oven time using default arguments
+- Allow differing numbers of layers when computing preparation time by accepting layers as a variadic parameter.
+- Compute amounts of noodles and sauce returning multiple values
+- Convert liters to fluid ounces using inout parameters
+- Determine the best wine to serve using a nested function
+
+## Implementations
+
+- [Swift: functions][implementation-swift] (reference implementation)
+
+## Reference
+
+- [`concepts/default_arguments`][concepts-default_arguments]
+- [`concepts/named_parameters`][concepts-named_parameters]
+- [`concepts/variadic_functions`][concepts-variadic_functions]
+- [`concepts/multiple_return_values`][concepts-multiple_return_values]
+- [`concepts/inout_parameters`][concepts-inout_parameters]
+- [`concepts/nested_functions`][concepts-nested_functions]
+- [`types/function`][types-function]
+
+[concepts-default_arguments]: ../concepts/default_arguments.md
+[concepts-named_parameters]: ../concepts/named_parameters.md
+[concepts-variadic_functions]: ../concepts/variadic_functions.md
+[concepts-multiple_return_values]: ../concepts/multiple_return_values
+[concepts-inout_parameters]: ../concepts/inout_parameters.md
+[concepts-nested_functions]: ../concepts/nested_functions.md
+[types-function]: ../types/function.md
+[implementation-swift]: ../../languages/swift/exercises/concept/functions/.docs/instructions.md
