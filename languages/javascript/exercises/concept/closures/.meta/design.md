@@ -85,3 +85,5 @@ print()
 ## Prerequisites
 
 - `basics`
+- `booleans`
+- `arrays`
