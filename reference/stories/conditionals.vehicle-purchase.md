@@ -27,7 +27,7 @@ These are examples of tasks that fit the story of purchasing a vehicle:
 - [`concepts/switch`][concepts-switch]
 
 [types-booleans]: ../types/boolean.md
-[concepts-conditionals]: ../concepts/conditionals
-[concepts-guard]: ../concepts/guard
-[concepts-switch]: ../concepts/switch
+[concepts-conditionals]: ../concepts/conditionals.md
+[concepts-guard]: ../concepts/guard.md
+[concepts-switch]: ../concepts/switch.md
 [implementation-swift]: ../../languages/swift/exercises/concept/conditionals/.docs/instructions.md
