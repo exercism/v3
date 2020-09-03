@@ -91,6 +91,19 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "structs-and-classes",
+        "uuid": "bfb16db1-f419-48e9-91bc-defebc0ae9ac",
+        "concepts": [
+          "structs",
+          "classes",
+          "initializers",
+          "methods",
+          "self",
+          "stored-properties"
+        ],
+        "prerequisites": ["functions", "function-overloading"]
+      },
+      {
         "slug": "tuples",
         "uuid": "f371c072-082b-496b-aa58-45b6cba203f6",
         "concepts": ["tuples"],
