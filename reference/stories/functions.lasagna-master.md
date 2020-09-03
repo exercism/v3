@@ -31,7 +31,7 @@ The story facilitates defining functions:
 [concepts-default_arguments]: ../concepts/default_arguments.md
 [concepts-named_parameters]: ../concepts/named_parameters.md
 [concepts-variadic_functions]: ../concepts/variadic_functions.md
-[concepts-multiple_return_values]: ../concepts/multiple_return_values
+[concepts-multiple_return_values]: ../concepts/multiple_return_values.md
 [concepts-inout_parameters]: ../concepts/inout_parameters.md
 [concepts-nested_functions]: ../concepts/nested_functions.md
 [types-function]: ../types/function.md
