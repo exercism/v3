@@ -5,7 +5,7 @@
  * @param {number} dx the translate x component
  * @param {number} dy the translate y component
  *
- * @returns {function} a function which takes an x, y parameter, returns the
+ * @returns {function} a function which takes an x, y argument, returns the
  *  translated coordinate pair in the form [x, y]
  */
 export function translate2d(dx, dy) {
@@ -21,7 +21,7 @@ export function translate2d(dx, dy) {
  * @param {number} sx the amount to scale the x component
  * @param {number} sy the amount to scale the y component
  *
- * @returns {function} a function which takes an x, y parameter, returns the
+ * @returns {function} a function which takes an x, y argument, returns the
  *  scaled coordinate pair in the form [x, y]
  */
 export function scale2d(sx, sy) {
@@ -37,7 +37,7 @@ export function scale2d(sx, sy) {
  * @param {function} f the first function to apply
  * @param {function} g the second function to apply
  *
- * @returns {function} a function which takes an x, y parameter, returns the
+ * @returns {function} a function which takes an x, y argument, returns the
  *  transformed coordinate pair in the form [x, y]
  */
 export function composeTransform(f, g) {
@@ -48,7 +48,13 @@ export function composeTransform(f, g) {
 }
 
 /**
- * Return a function which memoizes the last result.  If arguments are the same, then memoized result returned.
+ * Return a function which memoizes the last result.  If arguments are the same,
+ * then memoized result returned.
+ *
+ * @param {function} f the transformation function to memoize, assumes takes two arguments 'x' and 'y'
+ *
+ * @returns {function} a function which takes and x, y argument, and will either return the saved result
+ *  if the arguments are the same on subsequent calls, or compute a new result if they are different.
  */
 export function memoizeTransform(f) {
   let lastX = undefined

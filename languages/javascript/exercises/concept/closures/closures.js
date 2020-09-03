@@ -41,7 +41,13 @@ export function composeTransform(f, g) {
 }
 
 /**
- * Return a function which memoizes the last result.  If arguments are the same, then memoized result returned.
+ * Return a function which memoizes the last result.  If arguments are the same,
+ * then memoized result returned.
+ *
+ * @param {function} f the transformation function to memoize, assumes takes two arguments 'x' and 'y'
+ *
+ * @returns {function} a function which takes and x, y argument, and will either return the saved result
+ *  if the arguments are the same on subsequent calls, or compute a new result if they are different.
  */
 export function memoizeTransform(f) {
   throw new Error('Implement the memoizeTransform function')
