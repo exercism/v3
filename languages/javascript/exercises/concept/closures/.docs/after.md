@@ -69,7 +69,7 @@ var tenTimes = five * 10
 
 ### Block-scope
 
-The `let` and `const` keywords define a **block-scoped** variable. Variables defined with `let` may have their value set multiple times. Variables defined by `const` may only be set when they are defined. The value a `const` is initialized to may not change. If the `const` variable is a primitive value, it may not be mutated. If the `const` variable is a reference value, like an array or object, the reference may not change but the array's contents may be mutated.
+The `let` and `const` keywords define a **block-scoped** variables. `let` defines a mutable variable, whose value may be set multiple times and may be defined but not initialized. `const` defines a variable which must be initialized when it is defined, and its value then may not change. If the `const` variable is set to a primitive value, it may not be mutated. If the `const` variable is set to a reference value, like an _array_ or _object_, the reference may not change but the array's contents may be mutated.
 
 Consider this block:
 
