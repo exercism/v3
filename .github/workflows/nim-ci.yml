@@ -1,0 +1,33 @@
+name: Nim Compilability CI
+
+on:
+  push:
+    paths:
+      - "**.nim"
+  pull_request:
+    paths:
+      - "**.nim"
+
+jobs:
+  check-compilation:
+    runs-on: ubuntu-latest
+    container: nimlang/nim:1.2.6
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Retrieve changed files
+        id: getfiles
+        run: |
+          echo "::set-output name=files::$(git diff-tree --no-commit-id --diff-filter=d --name-only -r ${{ github.sha }} | xargs)"
+        shell: bash
+
+      - name: Check that each file compiles with `nim check`
+        run: |
+          for file in ${{ steps.getfiles.outputs.files }}
+          do
+              nim check $file
+          done
+        shell: bash
