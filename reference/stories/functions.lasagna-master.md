@@ -1,8 +1,8 @@
-# Lasagna Recipe
+# Lasagna Master
 
 ## Story
 
-This exercise builds on the original lasagna story to expand on the creation of basic [functions][types-function], and add in [default arguments][concepts-default_arguments], [named parameters][concepts-named_parameters], [variadic functions][concepts-variadic_functions], [multiple return values][concepts-multiple_return_values], [inout (reference) parameters][concepts-inout_parameters], and [nested functions][concepts-nested_functions].
+In this exercise you're going to write some more code to help you cook your brilliant lasagna from your favorite cooking book.
 
 ## Tasks
 
@@ -18,7 +18,7 @@ The story facilitates defining functions:
 
 - [Swift: functions][implementation-swift] (reference implementation)
 
-## Reference
+## Related
 
 - [`concepts/default_arguments`][concepts-default_arguments]
 - [`concepts/named_parameters`][concepts-named_parameters]
