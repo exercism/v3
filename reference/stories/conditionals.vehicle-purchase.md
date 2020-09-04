@@ -4,8 +4,6 @@
 
 In this exercise you're going to write some code to help you help you prepare to buy a new vehicle.
 
-You have three tasks, one to help you determine the price of the vehicle you can afford, one to determine what kind of license you will need to get, and one to help you compute your yearly registration fees.
-
 ## Tasks
 
 These are examples of tasks that fit the story of purchasing a vehicle:
@@ -19,7 +17,7 @@ These are examples of tasks that fit the story of purchasing a vehicle:
 
 - [Swift: conditionals][implementation-swift] (reference implementation)
 
-## Reference
+## Related
 
 - [`types/booleans`][types-booleans]
 - [`concepts/conditionals`][concepts-conditionals]
