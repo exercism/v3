@@ -22,7 +22,7 @@ function anotherFunctionCall() {
 )
 ```
 
-However, in JavaScript, the function name can be derived from the _original binding_. This is **not common\*. What does this mean? The following examples are **not\*\* anonymous functions:
+However, in JavaScript, the function name can be derived from the _original binding_. This is **not common\*\*. What does this mean? The following examples are **not\*\* anonymous functions:
 
 ```javascript
 const adder = (a, b) => a + b

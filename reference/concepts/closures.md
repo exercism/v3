@@ -2,7 +2,7 @@
 
 ## The Concept
 
-A `closure` the use of a variable in an inner lexical scope from an outer lexical scope. Historically, this nomenclature was derived from [_λ-calculus_][wiki-lambda-calculus] and popularized by [_scheme_][wiki-scheme] ([source][wiki-closure]) to reference a function's open and closed variable bindings.
+A `closure` is the use of one or more variables in an inner lexical scope from an outer lexical scope. Historically, this nomenclature was derived from [_λ-calculus_][wiki-lambda-calculus] and popularized by [_scheme_][wiki-scheme] ([source][wiki-closure]) to reference a function's open and closed variable bindings.
 
 ## What to cover
 

@@ -19,7 +19,7 @@ function nDozen(n) {
 
 ## Closures to save state and pass along values
 
-Using a mutable variable declaration (like `let` or `var`) allows for some state to be preserved
+Using a mutable variable declaration (like `let` or `var`) allows for some state to be preserved:
 
 ```javascript
 let counter = 0
@@ -27,6 +27,7 @@ let counter = 0
 // This function closure increments the counter's state in the outer lexical context.
 // This way the counter can be shared between many calling contexts.
 export function increment() {
-  return (counter += 1)
+  counter += 1
+  return counter
 }
 ```

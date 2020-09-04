@@ -18,6 +18,6 @@ so you decide to use a function closure to create reusable transformation for `{
 
 ## Implementations
 
-- [JavaScript][implementation-javascript] (reference implementation)
+- [JavaScript: closures][implementation-javascript] (reference implementation)
 
 [implementation-javascript]: ../../languages/javascript/exercises/concept/closures/.docs/instructions.md
