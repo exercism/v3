@@ -1,4 +1,4 @@
-**Closures** are a programming pattern in JavaScript which allows variables from an outer lexical context to be used inside of a nested block of code. JavaScript supports closures transparently, and they are often used without knowing what they are.
+**Closures** are a programming pattern in JavaScript which allows variables from an outer [lexical scope][wiki-lexical-scope] to be used inside of a nested block of code. JavaScript supports closures transparently, and they are often used without knowing what they are.
 
 ```javascript
 // Top-level declarations are global-scope
@@ -31,3 +31,5 @@ export function increment() {
   return counter
 }
 ```
+
+[wiki-lexical-scope]: https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scoping

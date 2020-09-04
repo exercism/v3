@@ -1,58 +1,60 @@
-The name **closure** is historically derived from [_λ-calculus_][wiki-lambda-calculus] and popularized by [_scheme_][wiki-scheme] ([source][wiki-closure]) to reference a function's open and closed variable bindings. **Closures** as they have been explored in this exercise are closely related to variable scope. In JavaScript, there are 3 types of variable scope:
+The name **closure** is historically derived from [_λ-calculus_][wiki-lambda-calculus] and popularized by [_scheme_][wiki-scheme] ([source][wiki-closure]) to reference a function's open and closed variable bindings. Lets revisit reasons to use **closures**:
+
+## Reasons to use closures in JavaScript
+
+1. Data Privacy / Data Encapsulation
+
+   - Unlike other languages, there is no way to specify _private_ variables. So closures can be used to effectively emulate _private_ variables.
+
+   ```javascript
+   // Consider this function:
+
+   const saveNumber = (number) => {
+     // The saved value is unaccessible by the outer lexical scope.
+     const value = number
+
+     // We can provide access to the primitive value with a function, but the original will never change
+     return () => value
+   }
+
+   // Attempting to set the variable outside of its lexical scope results in an error
+   value = 42
+   ```
+
+2. Partial Application
+
+   - Functions may return functions, and when a returned function uses the argument of the function that created it, this is an example of using a closure to perform partial application. Sometimes this is called _currying_ a function.
+
+   ```javascript
+   // The arguments are applied one-by-one, using closures to arrive at the final result
+   function partialBuildUri(scheme) {
+     return function (domain) {
+       return function (path) {
+         return `${scheme}://${domain}/${path}`
+       }
+     }
+   }
+
+   // A function could apply them all at once.
+   function buildUri(scheme, domain, path) {
+     return partialBuildUri(scheme)(domain)(path)
+   }
+
+   // Or apply a few to create a flexible system of functions for reuse.
+   function buildHttpsExercismUri(path) {
+     return partialBuildUri('https')('exercism.io')
+   }
+   ```
+
+## Lexical Scope for variables
+
+In any programming language, **Closures** are closely related to variable scope. In JavaScript, there are 3 types of lexical scope for variables:
 
 1. **Global-scope**: These are variables that are declared outside of functions and blocks.
 1. **Function-scope**: These are variables declared within a function using the `var` keyword.
 1. **Block-scope**: These are variables declared within a block (`{...}`) using the `let` and `const` keywords.
 
 In practice, a closure often occurs when a function (or block) uses a variable from an outer scope. In JavaScript this is supported transparently, so closures are often used without specific reference.
-
-## Reasons to use closures
-
-- Data Privacy
-
-  - Unlike other languages, there is no way to specify _private_ variables. So closures can be used to effectively emulate _private_ variables.
-
-  ```javascript
-  // Consider this function:
-
-  const saveNumber = (number) => {
-    // The saved value is unaccessible by the outer lexical scope.
-    const value = number
-
-    // We can provide access to the primitive value with a function, but the original will never change
-    return () => value
-  }
-
-  // Attempting to set the variable outside of its lexical scope results in an error
-  value = 42
-  ```
-
-- Partial Application
-
-  - Functions may return functions, and when a returned function uses the argument of the function that created it, this is an example of using a closure to perform partial application. Sometimes this is called _currying_ a function.
-
-  ```javascript
-  // The arguments are applied one-by-one, using closures to arrive at the final result
-  function partialBuildUri(scheme) {
-    return function (domain) {
-      return function (path) {
-        return `${scheme}://${domain}/${path}`
-      }
-    }
-  }
-
-  // A function could apply them all at once.
-  function buildUri(scheme, domain, path) {
-    return partialBuildUri(scheme)(domain)(path)
-  }
-
-  // Or apply a few to create a flexible system of functions for reuse.
-  function buildHttpsExercismUri(path) {
-    return partialBuildUri('https')('exercism.io')
-  }
-  ```
-
-## Lexical Scope for variables
 
 ### Function-scope
 
