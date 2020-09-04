@@ -17,7 +17,7 @@ The story facilitates defining [higher-order functions][concepts-higher_order_fu
 
 - [Swift: higher-order-functions][implementation-swift] (reference implementation)
 
-## Reference
+## Related
 
 - [`concepts/higher_order_functions`][concepts-higher_order_functions]
 
