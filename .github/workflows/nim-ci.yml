@@ -26,8 +26,13 @@ jobs:
 
       - name: Check that each file compiles with `nim check`
         run: |
+          set +e
+
+          exitCode=0
           for file in ${{ steps.getfiles.outputs.files }}
           do
               nim check $file
+              exitCode=$((exitCode + $?))
           done
+          exit $exitCode
         shell: bash
