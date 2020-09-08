@@ -17,11 +17,6 @@ jobs:
     if: ${{ github.event_name == 'pull_request' }}
 
     steps:
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-
       - uses: actions/checkout@v2
         
       - name: Number of commits since beginning of PR
@@ -59,11 +54,6 @@ jobs:
     if: ${{ github.event_name == 'push' }}
 
     steps:
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-
       - uses: actions/checkout@v2
        
       - name: Number of commits since last push
