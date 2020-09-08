@@ -15,7 +15,7 @@ You have six tasks, each of which will work with remote controlled car instances
 
 Implement the (_static_) `RemoteControlCar.buy()` method to return a brand-new remote controlled car instance:
 
-```csharp
+```java
 RemoteControlCar car = RemoteControlCar.buy();
 ```
 
@@ -23,7 +23,7 @@ RemoteControlCar car = RemoteControlCar.buy();
 
 Implement the `RemoteControlCar.distanceDisplay()` method to return the distance as displayed on the LED display:
 
-```csharp
+```java
 RemoteControlCar car = RemoteControlCar.buy();
 car.distanceDisplay();
 // => "Driven 0 meters"
@@ -33,7 +33,7 @@ car.distanceDisplay();
 
 Implement the `RemoteControlCar.batteryDisplay()` method to return the distance as displayed on the LED display:
 
-```csharp
+```java
 RemoteControlCar car = RemoteControlCar.buy();
 car.batteryDisplay();
 // => "Battery at 100%"
@@ -43,7 +43,7 @@ car.batteryDisplay();
 
 Implement the `RemoteControlCar.drive()` method that updates the number of meters driven:
 
-```csharp
+```java
 RemoteControlCar car = RemoteControlCar.buy();
 car.drive();
 car.drive();
@@ -55,7 +55,7 @@ car.distanceDisplay();
 
 Update the `RemoteControlCar.drive()` method to update the battery percentage:
 
-```csharp
+```java
 RemoteControlCar car = RemoteControlCar.buy();
 car.drive();
 car.drive();
@@ -67,7 +67,7 @@ car.batteryDisplay();
 
 Update the `RemoteControlCar.drive()` method to not increase the distance driven nor decrease the battery percentage when the battery is drained (at 0%):
 
-```csharp
+```java
 RemoteControlCar car = RemoteControlCar.buy();
 
 // Drain the battery

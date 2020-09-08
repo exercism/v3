@@ -7,9 +7,8 @@ Access to members can be controlled through access modifiers, the two most commo
 
 You can think of a class as a template for creating instances of that class. To create an instance of a class (also known as an _object_), the `new` keyword is used:
 
-```csharp
-class Car
-{
+```java
+class Car {
 }
 
 // Create two car instances
@@ -19,9 +18,8 @@ Car yourCar = new Car();
 
 Fields have a type and a name (defined in camelCase) and can be defined anywhere in a class (by convention cased in PascalCase):
 
-```csharp
-class Car
-{
+```java
+class Car {
     // Accessible by anyone
     public int weight;
 
@@ -32,9 +30,8 @@ class Car
 
 One can optionally assign an initial value to a field. If a field does _not_ specify an initial value, it wll be set to its type's default value. An instance's field values can be accessed and updated using dot-notation.
 
-```csharp
-class Car
-{
+```java
+class Car {
     // Will be set to specified value
     public int weight = 2500;
 
@@ -52,9 +49,8 @@ newCar.year = 2018;
 
 Private fields are usually updated as a side effect of calling a method. Such methods usually don't return any value, in which case the return type should be `void`:
 
-```csharp
-class CarImporter
-{
+```java
+class CarImporter {
     private int carsImported;
 
     public void ImportCars(int numberOfCars)

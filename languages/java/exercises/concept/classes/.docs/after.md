@@ -5,15 +5,14 @@ Access to members can be controlled through access modifiers, the two most commo
 - [`public`][public]: the member can be accessed by any code (no restrictions).
 - [`private`][private]: the member can only be accessed by code in the same class.
 
-It is customary to specify an access modifier for all members. If no access modifier is specified, it will default to `private`.
+In Java if no access modifier is specified, the default is _package visibility_. In this case, the member is visible to all classes defined into the same package.
 
 The above-mentioned grouping of related data and behavior plus restricting access to members is known as [_encapsulation_][encapsulation], which is one of the core object-oriented concepts.
 
 You can think of a class as a template for creating instances of that class. To [create an instance of a class][creating-objects] (also known as an _object_), the [`new` keyword][new] is used:
 
-```csharp
-class Car
-{
+```java
+class Car {
 }
 
 // Create two car instances
@@ -23,9 +22,8 @@ Car yourCar = new Car();
 
 [Fields][fields] have a type and a name (cased in [camelCase][camel-case]) and can be defined anywhere in a class (cased in [PascalCase][pascal-case]).
 
-```csharp
-class Car
-{
+```java
+class Car {
     // Accessible by anyone
     public int weight;
 
@@ -36,9 +34,8 @@ class Car
 
 One can optionally assign an initial value to a field. If a field does _not_ specify an initial value, it will be set to its type's [default value][default-values]. An instance's field values can be accessed and updated using dot-notation.
 
-```csharp
-class Car
-{
+```java
+class Car {
     // Will be set to specified value
     public int weight = 2500;
 
@@ -56,9 +53,8 @@ newCar.year = 2018;
 
 Private fields are usually updated as a side effect of calling a method. Such methods usually don't return any value, in which case the return type should be [`void`][void]:
 
-```csharp
-class CarImporter
-{
+```java
+class CarImporter {
     private int carsImported;
 
     public void ImportCars(int numberOfCars)
@@ -73,9 +69,8 @@ Note that is not customary to use public fields in Java classes. Private fields 
 
 Within a class, the [`this` keyword][this] will refer to the current class. This is especially useful if a parameter has the same name as a field:
 
-```csharp
-class CarImporter
-{
+```java
+class CarImporter {
     private int carsImported;
 
     public void SetImportedCars(int carsImported)
