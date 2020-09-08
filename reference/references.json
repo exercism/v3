@@ -531,8 +531,19 @@
   {
     "name": "closures",
     "variations": ["closures", "closure"],
-    "documents": [],
+    "documents": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/reference/concepts/closures.md",
+        "name": "closures"
+      }
+    ],
     "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/closures",
+        "exercise": "closures",
+        "track": "javascript",
+        "language": "JavaScript"
+      },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/anonymous-functions",
         "exercise": "anonymous-functions",
