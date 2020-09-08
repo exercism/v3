@@ -1,1 +1,1 @@
-echo "this is valid nim"
+this is obviously not valid nim
