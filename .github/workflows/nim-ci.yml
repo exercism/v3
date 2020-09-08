@@ -3,10 +3,12 @@ name: Nim Compilability CI
 on:
   push:
     paths:
-      - "**.nim"
+    - 'languages/nim/exercises/concept/**/*.nim'
+    - 'languages/nim/exercises/practice/**/*.nim'
   pull_request:
     paths:
-      - "**.nim"
+    - 'languages/nim/exercises/concept/**/*.nim'
+    - 'languages/nim/exercises/practice/**/*.nim'
 
 jobs:
   check-compilation-pr:
