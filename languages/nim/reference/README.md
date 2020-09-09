@@ -1,9 +1,13 @@
-# Nim Reference 
+# Nim Reference
 
 ## Concepts
+
 (Taken in large part from [the manual](https://nim-lang.org/docs/manual.html))
+
 ### Types
+
 #### General Type Related Concepts
+
 - user types are capatilized
 - static typing
 - type inference
@@ -12,19 +16,23 @@
   - bind many
   - `is`
   - type class
-  - implicit generic 
+  - implicit generic
   - compile time?
 - `typedesc`
 - `distinct`
 
 #### Ordinal types
+
 Ex: int (not uintX), bool enum, char (incld. distinct of ord type)
+
 - countable & ordered
-- can call `succ`, `pred`, `high`, `low`, `inc`, `dec` & `ord` on them 
+- can call `succ`, `pred`, `high`, `low`, `inc`, `dec` & `ord` on them
 - can't count below or above lowest or highest elem
 
 #### `int`
+
 Ex: `int`, `int8`, `int16`, `int32`, `int64`
+
 - `int` is defined by platform (and therefore affect `high` and `low`)
   - size of a pointer
 - `intXX` is constructed as `'iXX`
@@ -34,20 +42,22 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
   - `+`, `-`, `/`, `*`, `div`, `mod
 
 #### float
+
 - `float` is `float 64`
 - conform to IEEE standard
 - exceptions for floats
 - same as `int` for contstruction
 - most same operators
 
-#### Subrange 
+#### Subrange
+
 - range of `int` or `float`
 - hold type of base type
 - `range[(low end of range)..(high end of range)]
 - as with oridinal type, static error or panic is raised
 
-
 #### bool
+
 - `true` or `false`
 - one byte long
 - `ord(false) == 0 and ord(true) == 1`
@@ -55,13 +65,15 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
   - `not`, `and`, `or`, `xor`, `<`, `<=`, `>`, `>=`, `!=`, `==`
 
 #### char
+
 - one byte long
-  - not UTF-*
+  - not UTF-\*
   - unicode module
 - constructed with single quotes
 - one charachter long
 
 #### enum
+
 - Declared with values and they are ordered as declaration
 - Can be declared with or without enum type that they reside in
   - `Direction.north == north`
@@ -78,6 +90,7 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 - `{.pure.}` (probably out of scope)
 
 #### string
+
 - similar to seq of char
   - accesing an charachter of a string is a `char` type
 - zero terminated
@@ -96,6 +109,7 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 - i-th element is the i-th char not unichar
 
 #### cstring
+
 - compatible string with the underlying backend
 - `string` is implicitly converted to `cstring` when neccesary
   - not GC safe
