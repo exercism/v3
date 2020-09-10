@@ -1,6 +1,56 @@
 (defpackage basic-lists
-  (:use :cl))
+  (:use :cl)
+  (:export :new-list
+           :list-of-things
+           :add-to-list
+           :first-thing
+           :second-thing
+           :third-thing
+           :twenty-third-thing
+           :remove-first-item
+           :on-the-list-p
+           :list-append
+           :just-how-long
+           :part-of-list
+           :list-reverse))
 
 (in-package :basic-lists)
 
-;;; Use this space to write an example that passes all of the tests
+(defun new-list ()
+  (list))
+
+(defun list-of-things (thing1 thing2 thing3)
+  (list thing1 thing2 thing3))
+
+(defun add-to-list (item list)
+  (cons item list))
+
+(defun first-thing (list)
+  (first list))
+
+(defun second-thing (list)
+  (second list))
+
+(defun third-thing (list)
+  (third list))
+
+(defun twenty-third-thing (list)
+  (nth 23 list))
+
+(defun remove-first-item (list)
+  (rest list))
+
+(defun on-the-list-p (item list)
+  (member item list))
+
+(defun list-append (list1 list2)
+  (append list1 list2))
+
+(defun just-how-long (list)
+  (length list))
+
+(defun part-of-list (list start num)
+  (subseq list start (+ start num)))
+
+(defun list-reverse (list)
+  (reverse list))

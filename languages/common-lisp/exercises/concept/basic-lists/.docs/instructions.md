@@ -8,7 +8,7 @@ Can you help Leslie keep track of the shopping list?
 
 First thing is that Leslie needs to create a new empty list. A function called `empty-list` would be perfect for that.
 
-Oh no... Leslie actually has a few things in mind already so she needs a function that takes a few (or a lot) of items and creates a new shopping list with those things. Write a function called `list-of-things` which will take zero or more things and makes a list of them.
+Oh no... Leslie actually has a few things in mind already so she needs a function that takes a three items (luckily Leslie never creates a list if she has less or more than three items) and creates a new shopping list with those things. Write a function called `list-of-things` which will take three items and makes a list of them.
 
 ## 2. Add things to the list.
 
@@ -16,17 +16,16 @@ Before going to the store Leslie looks in the pantry to see what they need. Help
 
 ## 3. What's next thing(s) on the list?
 
-When they are out shopping Leslie wants to know what to look for next. But they also like to peek ahead at the list to see what the second, or third items are. Other times they want to check the 23rd item (their lucky number). Finally they sometimes like to see everything on the list after they buy the next thing.
+When they are out shopping Leslie wants to know what to look for next. But they also like to peek ahead at the list to see what the second, or third items are. Other times they want to check the 23rd item (their lucky number).
 
 - `first-thing` will evaluate to the first thing on the list
 - `second-thing` will evaluate to the second thing
 - `third-thing` will evaluate to the third thing
 - `twenty-third-thing` will evaluate to the twenty-third thing
-- `not-the-first-thing` will evaluate to everything but the first thing.
 
 ## 4. Removing a thing from the list
 
-When Leslie finds the first thing on the list on the shelf then want to remove the item from the list. Help them out by writing a function `remove-first-item` which will remove that first item from the list.
+When Leslie finds the first thing on the list on the shelf then want to remove the item from the list. Help them out by writing a function `remove-first-item` which will evaluate to a list with everything but the first thing on the input list.
 
 ## 5. Are you a member?
 
