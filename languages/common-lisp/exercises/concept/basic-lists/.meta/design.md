@@ -22,7 +22,7 @@ Please also watch the following video:
 - Know how to use `member` to test if an item is in a list
 - Be able to combine lists with `append`
 - Know which functions are list-specific and which are general to sequences
-- Be comfortable using basic sequence functions like `length`, `subseq`, `sort`, and `reverse`
+- Be comfortable using basic sequence functions like `length`, `subseq`, and `reverse`
 
 ## Out of scope
 

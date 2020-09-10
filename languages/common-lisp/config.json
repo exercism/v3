@@ -173,7 +173,7 @@
         "slug": "basic-lists",
         "uuid": null,
         "concepts": ["basic-lists"],
-        "prerequisites": ["cons", "symbols"]
+        "prerequisites": ["cons", "symbols", "function-definition"]
       },
       {
         "slug": "packages",
