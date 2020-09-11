@@ -23,7 +23,7 @@ The implementing class must implement all operations defined by the interface.
 
 Interfaces typically do one or more of the following:
 
-- allow a number of different classes to be treated generically by the using code. In this case interfaces are playing the same role as a base class,
+- allow a number of different classes to be treated generically by the using code. In this case interfaces are playing the same role as a base class. An example of this is [java.io.InputStream][input-stream],
 - expose a subset of functionality for some specific purpose (such as [`Comparable<T>`][comparable]) or
 - expose the public API of a class so that multiple implementations can co-exist. One example is that of a [test double][wiki-test-double]
 
@@ -126,3 +126,4 @@ Moreover, the concept of [polymorphism can be implemented through interfaces][in
 [wiki-namespaces]: https://en.wikipedia.org/wiki/Namespace
 [wiki-loose-coupling]: https://en.wikipedia.org/wiki/Loose_coupling
 [interfaces]: https://docs.oracle.com/javase/tutorial/java/concepts/interface.html
+[input-stream]: https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html

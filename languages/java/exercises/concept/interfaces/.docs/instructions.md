@@ -6,7 +6,7 @@ In addition, production cars are beginning to have some success. The team boss i
 
 ## 1. Enable cars to be driven on the same test track
 
-Please add a method to the `RemoteControlCar` interface to expose the implementations of `drive()` for the two types of car.
+Please add a method to the `RemoteControlCar` interface to encapsulate the behavior of `drive()` for the two types of car.
 
 ```java
 TestTrack.race(new ProductionRemoteControlCar());
@@ -16,14 +16,14 @@ TestTrack.race(new ExperimentalRemoteControlCar());
 
 ## 2. Enable the distance travelled by different models on the test track to be compared
 
-Please add a method to the `RemoteControlCar` interface to expose the implementations of the `getDistanceTravelled()` method for the two types of car.
+Please add a method to the `RemoteControlCar` interface to encapsulate the behavior of the `getDistanceTravelled()` method for the two types of car.
 
 ```java
 ProductionRemoteControlCar prod = new ProductionRemoteControlCar();
 TestTrack.race(prod);
 ExperimentalRemoteControlCar exp = new ExperimentalRemoteControlCar();
 TestTrack.race(exp);
-prod.getistanceTravelled()
+prod.getDistanceTravelled()
 // => 10
 exp.getDistanceTravelled()
 // => 20
@@ -38,8 +38,8 @@ Implement the static `TestTrack.getRankedCars()` to return the cars passed is so
 ```java
 ProductionRemoteControlCar prc1 = new ProductionRemoteControlCar();
 ProductionRemoteControlCar prc2 = new ProductionRemoteControlCar();
-prc1.setNumberOfVictories() = 3;
-prc2.setNumberOfVictories() = 2;
+prc1.setNumberOfVictories(3);
+prc2.setNumberOfVictories(2);
 int rankings = TestTrack.getRankedCars(prc1, prc2);
 // => rankings[1] == prc1
 ```

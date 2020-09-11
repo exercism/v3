@@ -16,4 +16,5 @@
 ## Prequisites
 
 - `classes`: know how to work with classes.
-
+- `strings`: know how to use strings
+- `lists`: including generics and diamond operator

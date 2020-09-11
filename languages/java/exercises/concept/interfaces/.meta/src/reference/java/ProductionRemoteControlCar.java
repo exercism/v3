@@ -1,19 +1,16 @@
-class ProductionRemoteControlCar implements RemoteControlCar, Comparable<ProductionRemoteControlCar>
-{
-    int distanceTravelled;
-    int numberofFictories;
+class ProductionRemoteControlCar implements RemoteControlCar, Comparable<ProductionRemoteControlCar> {
 
-    @Override
+    private int distanceTravelled;
+    private int numberofFictories;
+
     public int compareTo(ProductionRemoteControlCar other) {
         return Integer.compare(this.getNumberOfVictories(), other.getNumberOfVictories());
     }
 
-    @Override
     public void drive() {
         distanceTravelled += 10;
     }
 
-    @Override
     public int getDistanceTravelled() {
         return distanceTravelled;
     }
@@ -25,5 +22,4 @@ class ProductionRemoteControlCar implements RemoteControlCar, Comparable<Product
     public void setNumberOfVictories(int numberofFictories) {
         this.numberofFictories = numberofFictories;
     }
-
 }

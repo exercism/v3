@@ -1,27 +1,28 @@
 An interface is a type containing members defining a group of related functionality. It distances the uses of a class from the implementation allowing multiple different implementations or support for some generic behavior such as formatting, comparison or conversion.
 
-The syntax of an interface is similar to that of a class or struct except that methods appear as the signature only and no body is provided.
+The syntax of an interface is similar to that of a class except that methods appear as the signature only and no body is provided.
 
 ```java
-public interface Language
-{
-    string getLanguageName();
-    string speak();
+public interface Language {
+    String getLanguageName();
+    String speak();
 }
 
-public class ItalianTaveller implements Language, ICloneable {
+public class ItalianTaveller implements Language, Cloneable {
 
-    public string getLanguageName() {
+    // from Language interface
+    public String getLanguageName() {
         return  "Italiano";
     }
 
-    public string speak() {
+    // from Language interface
+    public String speak() {
         return "Ciao mondo";
     }
 
-    public object Clone() {
+    // from Cloneable interface
+    public Object Clone() {
         ItalianTaveller it = new ItalianTaveller();
-        it.setLanguageName(this.getLanguageName());
         return it;
     }
 }
@@ -29,6 +30,6 @@ public class ItalianTaveller implements Language, ICloneable {
 
 All operations defined by the interface must be implemented by the implementing class.
 
-Interfaces contains instance methods.
+Interfaces usually contain instance methods.
 
-The `Comparable<T>` interface can be implemented where a default generic sort order in collections is required.
+An example of an interface found in the Java Class Library, apart from `Clonable` illustrated above, is `Comparable<T>`. The `Comparable<T>` interface can be implemented where a default generic sort order in collections is required.

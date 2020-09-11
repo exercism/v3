@@ -1,5 +1,5 @@
-class ProductionRemoteControlCar
-{
+class ProductionRemoteControlCar {
+
     public void drive() {
         throw new UnsupportedOperationException("Please implement the ProductionRemoteControlCar.drive() method");
     }
@@ -15,5 +15,4 @@ class ProductionRemoteControlCar
     public void setNumberOfVictories(int numberofFictories) {
         throw new UnsupportedOperationException("Please implement the ProductionRemoteControlCar.setNumberOfVictories() method");
     }
-
 }

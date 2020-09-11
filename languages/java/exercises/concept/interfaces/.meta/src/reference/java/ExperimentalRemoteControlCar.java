@@ -1,12 +1,11 @@
 public class ExperimentalRemoteControlCar implements RemoteControlCar {
-    int distanceTravelled;
 
-    @Override
+    private int distanceTravelled;
+
     public void drive() {
         distanceTravelled += 20;
     }
 
-    @Override
     public int getDistanceTravelled() {
         return distanceTravelled;
     }
