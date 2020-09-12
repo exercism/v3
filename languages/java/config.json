@@ -45,6 +45,12 @@
         "uuid": "2165c331-6b0c-49b8-9555-bad577ec4fc6",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "constructors",
+        "uuid": "a85b6394-3ca5-4913-b554-b460dd49c0ea",
+        "concepts": ["strings"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []
