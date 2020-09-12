@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.junit.Ignore;
 
 public class RaceTrackTest {
-    //     @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     public void car_can_finish_with_car_that_can_easily_finish() {
         int speed = 10;
         int batteryDrain = 2;
@@ -16,9 +16,8 @@ public class RaceTrackTest {
         assertThat(race.carCanFinish(car)).isTrue();
     }
 
-    //     @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
-
     public void car_can_finish_with_car_that_can_just_finish() {
         int speed = 2;
         int batteryDrain = 10;
@@ -30,7 +29,7 @@ public class RaceTrackTest {
         assertThat(race.carCanFinish(car)).isTrue();
     }
 
-    //     @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
     public void car_can_finish_with_car_that_just_cannot_finish() {
         int speed = 3;
@@ -43,7 +42,7 @@ public class RaceTrackTest {
         assertThat(race.carCanFinish(car)).isFalse();
     }
 
-    //     @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
     public void car_can_finish_with_car_that_cannot_finish() {
         int speed = 1;

@@ -13,7 +13,7 @@ class RemoteControlCar {
     }
 
     public static RemoteControlCar topOfTheLine() {
-        return new RemoteControlCar(1, 2);
+        return new RemoteControlCar(50, 4);
     }
 
     public boolean batteryDrained() {
@@ -25,8 +25,10 @@ class RemoteControlCar {
     }
 
     public void drive() {
-        battery -= batteryDrain;
-        distance += battery > 0 ? speed : 0;
+        if (battery > 0) {
+            battery -= batteryDrain;
+            distance += speed;
+        }
     }
 }
 
@@ -38,6 +40,9 @@ class RaceTrack {
     }
 
     public boolean carCanFinish(RemoteControlCar car) {
-        throw new UnsupportedOperationException("Please implement the RaceTrack.carCanFinish() method");
+        while (!car.batteryDrained()) {
+            car.drive();
+        }
+        return car.distanceDriven() >= this.distance;
     }
 }

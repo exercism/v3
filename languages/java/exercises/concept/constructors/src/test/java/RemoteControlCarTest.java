@@ -13,7 +13,7 @@ public class RemoteControlCarTest {
         assertThat(car.distanceDriven()).isEqualTo(0);
     }
 
-    //     @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
     public void drive_increases_distance_driven_with_speed() {
         int speed = 5;
@@ -25,7 +25,7 @@ public class RemoteControlCarTest {
         assertThat(car.distanceDriven()).isEqualTo(5);
     }
 
-    //     @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
     public void drive_does_not_increase_distance_driven_when_battery_drained() {
         int speed = 9;
@@ -42,7 +42,7 @@ public class RemoteControlCarTest {
         assertThat(car.distanceDriven()).isEqualTo(18);
     }
 
-    //     @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
     public void new_remote_control_car_battery_is_not_drained() {
         int speed = 15;
@@ -52,7 +52,7 @@ public class RemoteControlCarTest {
         assertThat(car.batteryDrained()).isFalse();
     }
 
-    //     @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
     public void drive_to_almost_drain_battery() {
         int speed = 2;
@@ -67,7 +67,7 @@ public class RemoteControlCarTest {
         assertThat(car.batteryDrained()).isFalse();
     }
 
-    //     @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
     public void drive_until_battery_is_drained() {
         int speed = 2;
@@ -82,21 +82,21 @@ public class RemoteControlCarTest {
         assertThat(car.batteryDrained()).isTrue();
     }
 
-    //     @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
     public void top_of_the_line_car_has_not_driven_any_distance() {
         var car = RemoteControlCar.topOfTheLine();
         assertThat(car.distanceDriven()).isEqualTo(0);
     }
 
-    //     @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
     public void top_of_the_line_car_has_battery_not_drained() {
         var car = RemoteControlCar.topOfTheLine();
         assertThat(car.batteryDrained()).isFalse();
     }
 
-    //     @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
     public void top_of_the_line_car_has_correct_speed() {
         var car = RemoteControlCar.topOfTheLine();
@@ -104,7 +104,7 @@ public class RemoteControlCarTest {
         assertThat(car.distanceDriven()).isEqualTo(50);
     }
 
-    //     @Ignore("Remove to run test")
+    @Ignore("Remove to run test")
     @Test
     public void top_of_the_line_has_correct_battery_drain() {
         var car = RemoteControlCar.topOfTheLine();
@@ -117,8 +117,7 @@ public class RemoteControlCarTest {
         assertThat(car.batteryDrained()).isFalse();
 
         // Drain the battery
-        car.drive
-                ();
+        car.drive();
 
         assertThat(car.batteryDrained()).isTrue();
     }
