@@ -1,5 +1,3 @@
-import java.rmi.Remote;
-
 class RemoteControlCar {
     private final int speed;
     private final int batteryDrain;
@@ -12,7 +10,7 @@ class RemoteControlCar {
         this.batteryDrain = batteryDrain;
     }
 
-    public static RemoteControlCar topOfTheLine() {
+    public static RemoteControlCar nitro() {
         return new RemoteControlCar(50, 4);
     }
 

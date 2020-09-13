@@ -1,35 +1,28 @@
 
-class RemoteControlCar
-{
+class RemoteControlCar {
     // TODO: define the constructor for the 'RemoteControlCar' class
 
-    public boolean batteryDrained()
-    {
+    public boolean batteryDrained() {
         throw new UnsupportedOperationException("Please implement the RemoteControlCar.batteryDrained() method");
     }
 
-    public int distanceDriven()
-    {
+    public int distanceDriven() {
         throw new UnsupportedOperationException("Please implement the RemoteControlCar.distanceDriven() method");
     }
 
-    public void drive()
-    {
+    public void drive() {
         throw new UnsupportedOperationException("Please implement the RemoteControlCar.drive() method");
     }
 
-    public static RemoteControlCar topModel()
-    {
-        throw new UnsupportedOperationException("Please implement the (static) RemoteControlCar.TopModel() method");
+    public static RemoteControlCar nitro() {
+        throw new UnsupportedOperationException("Please implement the (static) RemoteControlCar.ntiro() method");
     }
 }
 
-class RaceTrack
-{
+class RaceTrack {
     // TODO: define the constructor for the 'RaceTrack' class
 
-    public boolean carCanFinish(RemoteControlCar car)
-    {
+    public boolean carCanFinish(RemoteControlCar car) {
         throw new UnsupportedOperationException("Please implement the RaceTrack.carCanFinish() method");
     }
 }
