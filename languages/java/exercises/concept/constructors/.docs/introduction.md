@@ -1,62 +1,36 @@
-The primary object-oriented construct in Java is the _class_, which is a combination of data (_fields_) and behavior (_methods_). The fields and methods of a class are known as its _members_.
-
-Access to members can be controlled through access modifiers, the two most common ones being:
-
-- `public`: the member can be accessed by any code (no restrictions).
-- `private`: the member can only be accessed by code in the same class.
-
-You can think of a class as a template for creating instances of that class. To create an instance of a class (also known as an _object_), the `new` keyword is used:
+Creating an instance of a _class_ is done by calling its _constructor_ through the `new` operator. A constructor is a special type of method whose goal is to initialize a newly created instance. Constructors look like regular methods, but without a return type and with a name that matches the classes' name.
 
 ```java
-class Car {
-}
+class Library
+{
+    private final int books;
 
-// Create two car instances
-Car myCar = new Car();
-Car yourCar = new Car();
-```
-
-Fields have a type and a name (defined in camelCase) and can be defined anywhere in a class (by convention cased in PascalCase):
-
-```java
-class Car {
-    // Accessible by anyone
-    public int weight;
-
-    // Only accessible by code in this class
-    private String color;
-}
-```
-
-One can optionally assign an initial value to a field. If a field does _not_ specify an initial value, it wll be set to its type's default value. An instance's field values can be accessed and updated using dot-notation.
-
-```java
-class Car {
-    // Will be set to specified value
-    public int weight = 2500;
-
-    // Will be set to default value (0)
-    public int year;
-}
-
-Car newCar = new Car();
-newCar.weight; // => 2500
-newCar.year;   // => 0
-
-// Update value of the field
-newCar.year = 2018;
-```
-
-Private fields are usually updated as a side effect of calling a method. Such methods usually don't return any value, in which case the return type should be `void`:
-
-```java
-class CarImporter {
-    private int carsImported;
-
-    public void ImportCars(int numberOfCars)
+    public Library()
     {
-        // Update private field from public method
-        carsImported = carsImported + numberOfCars;
+        // Initialize the books field
+        this.books = 10;
     }
 }
+
+// This will call the constructor
+var library = new Library();
+```
+
+Like regular methods, constructors can have parameters. Constructor parameters are usually stored as (private) fields to be accessed later, or else used in some one-off calculation. Arguments can be passed to constructors just like passing arguments to regular methods.
+
+```java
+class Building
+{
+    private final int numberOfStories;
+    private final int totalHeight;
+
+    public Building(int numberOfStories, double storyHeight)
+    {
+        this.numberOfStories = numberOfStories;
+        this.totalHeight = numberOfStories * storyHeight;
+    }
+}
+
+// Call a constructor with two arguments
+var largeBuilding = new Building(55, 6.2);
 ```

@@ -1,81 +1,83 @@
-In this exercise you'll be playing around with a remote controlled car, which you've finally saved enough money for to buy.
+In this exercise you'll be organizing races between various types of remote controlled cars. Each car has its own speed and battery drain characteristics.
 
-Cars start with full (100%) batteries. Each time you drive the car using the remote control, it covers 20 meters and drains one percent of the battery.
+Cars start with full (100%) batteries. Each time you drive the car using the remote control, it covers the car's speed in meters and decreases the remaining battery percentage by its battery drain.
 
-The remote controlled car has a fancy LED display that shows two bits of information:
+If a car's battery is below its battery drain percentage, you can't drive the car anymore.
 
-- The total distance it has driven, displayed as: `"Driven <METERS> meters"`.
-- The remaining battery charge, displayed as: `"Battery at <PERCENTAGE>%"`.
+Each race track has its own distance. Cars are tested by checking if they can finish the track without running out of battery.
 
-If the battery is at 0%, you can't drive the car anymore and the battery display will show `"Battery empty"`.
+You have six tasks, each of which will work with remote controller car instances.
 
-You have six tasks, each of which will work with remote controlled car instances.
+## 1. Creating a remote controlled car
 
-## 1. Buy a brand-new remote controlled car
-
-Implement the (_static_) `RemoteControlCar.buy()` method to return a brand-new remote controlled car instance:
+Allow creating a remote controller car by defining a constructor for the `RemoteControlCar` class that takes the speed of the car in meters and the battery drain percentage as its two parameters (both of type `int`):
 
 ```java
-RemoteControlCar car = RemoteControlCar.buy();
+int speed = 5;
+int batteryDrain = 2;
+var car = new RemoteControlCar(speed, batteryDrain);
 ```
 
-## 2. Display the distance driven
+## 2. Creating a race track
 
-Implement the `RemoteControlCar.distanceDisplay()` method to return the distance as displayed on the LED display:
+Allow creating a race track by defining a constructor for the `RaceTrack` class that takes the track's distance in meters as its sole parameter (which is of type `int`):
 
 ```java
-RemoteControlCar car = RemoteControlCar.buy();
-car.distanceDisplay();
-// => "Driven 0 meters"
+int distance = 800;
+var raceTrack = new RaceTrack(distance);
 ```
 
-## 3. Display the battery percentage
+## 3. Drive the car
 
-Implement the `RemoteControlCar.batteryDisplay()` method to return the distance as displayed on the LED display:
-
-```java
-RemoteControlCar car = RemoteControlCar.buy();
-car.batteryDisplay();
-// => "Battery at 100%"
-```
-
-## 4. Update the number of meters driven when driving
-
-Implement the `RemoteControlCar.drive()` method that updates the number of meters driven:
+Implement the `RemoteControlCar.drive()` method that updates the number of meters driven based on the car's speed. Also implement the `RemoteControlCar.distanceDriven()` method to return the number of meters driven by the car:
 
 ```java
-RemoteControlCar car = RemoteControlCar.buy();
+int speed = 5;
+int batteryDrain = 2;
+var car = new RemoteControlCar(speed, batteryDrain);
 car.drive();
-car.drive();
-car.distanceDisplay();
-// => "Driven 40 meters"
+
+car.distanceDriven();
+// => 5
 ```
 
-## 5. Update the battery percentage when driving
+## 4. Check for a drained battery
 
-Update the `RemoteControlCar.drive()` method to update the battery percentage:
+Update the `RemoteControlCar.drive()` method to drain the battery based on the car's battery drain. Also implement the `RemoteControlCar.batteryDrained()` method that indicates if the battery is drained:
 
 ```java
-RemoteControlCar car = RemoteControlCar.buy();
+int speed = 5;
+int batteryDrain = 2;
+var car = new RemoteControlCar(speed, batteryDrain);
 car.drive();
-car.drive();
-car.batteryDisplay();
-// => "Battery at 98%"
+
+car.batteryDrained();
+// => false
 ```
 
-## 6. Prevent driving when the battery is drained
+## 5. Create the Nitro remote control car
 
-Update the `RemoteControlCar.drive()` method to not increase the distance driven nor decrease the battery percentage when the battery is drained (at 0%):
+The best-selling remote control car is the Nitro, which has a stunning top speed of 50 meters with a battery drain of 4%. Implement the (static) `RemoteControlCar.nitro()` method to return this type of car:
 
 ```java
-RemoteControlCar car = RemoteControlCar.buy();
+var car = RemoteControlCar.nitro();
+car.drive();
+car.distanceDriven();
+// => 50
+```
 
-// Drain the battery
-// ...
+## 6. Check if a remote control car can finish a race
 
-car.distanceDisplay();
-// => "Driven 2000 meters"
+To finish a race, a car has to be able to drive the race's distance. This means not draining its battery before having crossed the finish line. Implement the `Race.carCanFinish()` method that takes a `RemoteControlCar` instance as its parameter and returns `true` if the car can finish the race; otherwise, return `false`:
 
-car.batteryDisplay();
-// => "Battery empty"
+```java
+int speed = 5;
+int batteryDrain = 2;
+var car = new RemoteControlCar(speed, batteryDrain);
+
+int distance = 100;
+var race = new Race(distance);
+
+race.carCanFinish(car);
+// => true
 ```
