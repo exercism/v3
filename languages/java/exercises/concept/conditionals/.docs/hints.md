@@ -4,7 +4,7 @@ Conditionals are used to check for certain conditions and/or criteria. The most 
 
 ## 1. Calculate the score of any given card.
 
-The `ParseCard` function should take the `card` string (e.g. `ace`) and turn it into its value (e.g. 11).
+The `parseCard` function should take the `card` string (e.g. `ace`) and turn it into its value (e.g. 11).
 
 - Use a big [`switch` statement][switch-statement] on the `card` variable.
 - King, Queen, Jack and 10 can be handled with a single case.
@@ -12,23 +12,23 @@ The `ParseCard` function should take the `card` string (e.g. `ace`) and turn it 
 
 ## 2. Determine if two cards make up a Blackjack.
 
-`IsBlackJack` checks if 2 cards have the combined value of 21.
+`isBlackJack` checks if 2 cards have the combined value of 21.
 
-- Should use the `ParseCard` function to get the value for each card.
+- Should use the `parseCard` function to get the value for each card.
 - Should sum up the values of the 2 cards.
 - Should return `true` if the sum is equal to `21`.
 - No aditional statement is needed here. The result for the comparison can be returned.
 
 ## 3. Implement the decision logic for hand scores larger than 20 points.
 
-As the `LargeHand` function is only called for hands with a value larger than 20, there are only 2 different possible hands: A **BlackJack** with a total value of `21` and **2 Aces** with a total value of `22`.
+As the `largeHand` function is only called for hands with a value larger than 20, there are only 2 different possible hands: A **BlackJack** with a total value of `21` and **2 Aces** with a total value of `22`.
 
 - The function should check [if][if-statement] `isBlackJack` is `true` and return "P" otherwise.
 - If `isBlackJack` is `true`, the dealerScore needs to be checked for being lower than 10. [If][if-statement] it is lower, return "W" otherwise "S".
 
 ## 4. Implement the decision logic for hand scores with less than 21 points.
 
-The `SmallHand` function is only called if there are no Aces on the hand (`handScore` is less than 21).
+The `smallHand` function is only called if there are no Aces on the hand (`handScore` is less than 21).
 
 - Implement every condition using [logical operators][logical-operators] if necessary:
   - [If][if-statement] your cards sum up to 17 or higher you should always _stand_.
