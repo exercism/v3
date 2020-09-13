@@ -84,30 +84,30 @@ public class RemoteControlCarTest {
 
     @Ignore("Remove to run test")
     @Test
-    public void top_of_the_line_car_has_not_driven_any_distance() {
-        var car = RemoteControlCar.topOfTheLine();
+    public void nitro_car_has_not_driven_any_distance() {
+        var car = RemoteControlCar.nitro();
         assertThat(car.distanceDriven()).isEqualTo(0);
     }
 
     @Ignore("Remove to run test")
     @Test
-    public void top_of_the_line_car_has_battery_not_drained() {
-        var car = RemoteControlCar.topOfTheLine();
+    public void nitro_car_has_battery_not_drained() {
+        var car = RemoteControlCar.nitro();
         assertThat(car.batteryDrained()).isFalse();
     }
 
     @Ignore("Remove to run test")
     @Test
-    public void top_of_the_line_car_has_correct_speed() {
-        var car = RemoteControlCar.topOfTheLine();
+    public void nitro_car_has_correct_speed() {
+        var car = RemoteControlCar.nitro();
         car.drive();
         assertThat(car.distanceDriven()).isEqualTo(50);
     }
 
     @Ignore("Remove to run test")
     @Test
-    public void top_of_the_line_has_correct_battery_drain() {
-        var car = RemoteControlCar.topOfTheLine();
+    public void nitro_has_correct_battery_drain() {
+        var car = RemoteControlCar.nitro();
 
         // The battery is almost drained
         for (var i = 0; i < 24; i++) {
