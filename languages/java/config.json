@@ -39,7 +39,12 @@
         "uuid": "b18ad603-e50e-4358-bb3e-0942fefb9dba",
         "concepts": ["chars"],
         "prerequisites": ["strings"]
-      }
+      },
+      {
+        "slug": "conditionals",
+        "uuid": "43b8f2e3-99e9-49cc-a897-d66f0f26670d",
+        "concept": ["conditionals-if"],
+        "prerequisites": ["booleans"]
     ],
     "practice": []
   }
