@@ -29,12 +29,6 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "strings",
-        "uuid": "2165c331-6b0c-49b8-9555-bad577ec4fc6",
-        "concepts": ["strings"],
-        "prerequisites": ["basics"]
-      },
-      {
         "slug": "chars",
         "uuid": "b18ad603-e50e-4358-bb3e-0942fefb9dba",
         "concepts": ["chars"],
@@ -45,6 +39,18 @@
         "uuid": "43b8f2e3-99e9-49cc-a897-d66f0f26670d",
         "concept": ["conditionals-if"],
         "prerequisites": ["booleans"]
+      },
+        "slug": "classes",
+        "uuid": "2ae791e9-eb7a-4344-841d-0c4797e5106c",
+        "concepts": ["classes"],
+        "prerequisites": ["conditionals", "numbers", "strings"]
+      },
+      {
+        "slug": "strings",
+        "uuid": "2165c331-6b0c-49b8-9555-bad577ec4fc6",
+        "concepts": ["strings"],
+        "prerequisites": ["basics"]
+      }
     ],
     "practice": []
   }
