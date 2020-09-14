@@ -19,16 +19,11 @@ In this exercise you must conditionally execute logic. The most common way to do
 ```java
 int x = 6;
 
-if (x == 5)
-{
+if (x == 5) {
     // Execute logic if x equals 5
-}
-else if (x > 7)
-{
+} else if (x > 7) {
     // Execute logic if x greater than 7
-}
-else
-{
+} else {
     // Execute logic in all other cases
 }
 ```

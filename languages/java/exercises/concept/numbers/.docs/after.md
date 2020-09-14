@@ -2,7 +2,7 @@ One of the key aspects of working with numbers in Java is the distinction betwee
 
 Java has other [datatypes][numeric-datatypes] apart from `int` and `double`
 
-```Java
+```java
 //8-Bit Integer
 byte   a = 127;
 
@@ -18,7 +18,7 @@ float  e = 5409.29f;
 
 Both integers and floating-point numbers can use the `_` character as a _digit separator_, which can help when defining large numbers:
 
-```Java
+```java
 int largeInt = 1_000_000;
 // => 1000000
 
@@ -28,7 +28,7 @@ double largeDouble = 9_876_543.21;
 
 Arithmetic is done using the standard [arithmetic operators][arithmetic-operators] (`+`, `-`, `*`, etc.). Numbers can be compared using the standard [comparison operators][comparison-operators] (`<`, `>=`, etc.) along with the equality operator (`==`) and inequality operator (`!=`).
 
-```Java
+```java
 5 * 6
 // => 30
 
@@ -49,7 +49,7 @@ When converting between numeric types, there are two types of numeric conversion
 
 As an `int` has less precision than a `double`, converting from an `int` to a `double` is safe and is thus an [implicit conversion][type-casting]. However, converting from a `double` to an `int` could mean losing data, so that requires an [explicit conversion][type-casting].
 
-```Java
+```java
 int i = 9;
 double d = 2.72;
 
@@ -62,19 +62,14 @@ int fromDouble = (int)d;
 
 An `if` statement can be used to conditionally execute code. The condition of an `if` statement must be of type `boolean`. Java has no concept of _truthy_ values.
 
-```Java
+```java
 int x = 6;
 
-if (x == 5)
-{
+if (x == 5){
     // Execute logic if x equals 5
-}
-else if (x > 7)
-{
+} else if (x > 7){
     // Execute logic if x greater than 7
-}
-else
-{
+} else{
     // Execute logic in all other cases
 }
 ```
