@@ -1,0 +1,87 @@
+name: Nim Compilability CI
+
+on:
+  push:
+    paths:
+    - 'languages/nim/exercises/concept/**/*.nim'
+    - 'languages/nim/exercises/practice/**/*.nim'
+  pull_request:
+    paths:
+    - 'languages/nim/exercises/concept/**/*.nim'
+    - 'languages/nim/exercises/practice/**/*.nim'
+
+jobs:
+  check-compilation-pr:
+    runs-on: ubuntu-latest
+    container: nimlang/nim:1.2.6
+    if: ${{ github.event_name == 'pull_request' }}
+
+    steps:
+      - uses: actions/checkout@v2
+        
+      - name: Number of commits since beginning of PR
+        id: number_of_commits
+        run: |
+          echo "::set-output name=number::$(git log ${{ github.event.pull_request.base.sha }}..${{ github.sha }}  --pretty=oneline | wc -l)"
+        shell: bash
+        
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: ${{ steps.number_of_commits.outputs.number }}
+
+      - name: Retrieve changed files (PR)
+        id: getfiles
+        run: |
+          echo "::set-output name=files::$(git diff-tree --no-commit-id --diff-filter=d --name-only -r ${{ github.event.pull_request.base.sha }}  ${{ github.sha }} | grep \\.nim | xargs)"
+        shell: bash
+
+      - name: Check that each file compiles with `nim check`
+        run: |
+          set +e
+
+          exitCode=0
+          for file in ${{ steps.getfiles.outputs.files }}
+          do
+              nim check $file
+              exitCode=$((exitCode + $?))
+          done
+          exit $exitCode
+        shell: bash
+
+  check-compilation-push:
+    runs-on: ubuntu-latest
+    container: nimlang/nim:1.2.6
+    if: ${{ github.event_name == 'push' }}
+
+    steps:
+      - uses: actions/checkout@v2
+       
+      - name: Number of commits since last push
+        id: number_of_commits
+        run: |
+          echo "::set-output name=number::$(git log ${{ github.event.before }}..${{ github.sha }}  --pretty=oneline | wc -l)"
+        shell: bash
+        
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: ${{ steps.number_of_commits.outputs.number }}
+
+
+      - name: Retrieve changed files (push)
+        id: getfiles
+        run: |
+          echo "::set-output name=files::$(git diff-tree --no-commit-id --diff-filter=d --name-only -r ${{ github.event.before }}  ${{ github.sha }} | grep \\.nim | xargs)"
+        shell: bash
+
+      - name: Check that each file compiles with `nim check`
+        run: |
+          set +e
+
+          exitCode=0
+          for file in ${{ steps.getfiles.outputs.files }}
+          do
+              nim check $file
+              exitCode=$((exitCode + $?))
+          done
+          exit $exitCode
+        shell: bash

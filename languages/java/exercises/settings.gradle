@@ -4,3 +4,6 @@ include 'concept:booleans'
 include 'concept:strings'
 include 'concept:chars'
 include 'concept:interfaces'
+include 'concept:numbers'
+include 'concept:conditionals'
+
