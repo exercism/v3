@@ -28,16 +28,6 @@
           ]
         },
         {
-          "name": "encapsulation",
-          "track-neutral-concept": "reference/concepts/encapsulation.md",
-          "original-concepts": [
-            {
-              "name": "- [Encapsulation][encapsulation]",
-              "line-number": 13
-            }
-          ]
-        },
-        {
           "name": "fields",
           "track-neutral-concept": "",
           "original-concepts": [
