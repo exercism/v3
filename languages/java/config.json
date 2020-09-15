@@ -38,7 +38,9 @@
         "slug": "numbers",
         "uuid": "3f451c6b-04e2-4b08-8bb0-7dcd2ec5b8f4",
         "concepts": ["numbers"],
-
+        "prerequisites": ["basics"]
+      },
+      {
         "slug": "conditionals",
         "uuid": "43b8f2e3-99e9-49cc-a897-d66f0f26670d",
         "concept": ["conditionals-if"],
