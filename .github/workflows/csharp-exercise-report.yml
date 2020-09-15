@@ -3,7 +3,7 @@ name: Update csharp exercise report
 on:
   push:
     branches:
-      - 'master'
+      - 'exercise-report-workflow'
       # also branch change may be required to bin/csharp-exercise-report/update.sh
     paths:
       - 'languages/**/exercises.json'
