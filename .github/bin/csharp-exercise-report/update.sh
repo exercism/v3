@@ -34,4 +34,4 @@ git commit -m "[Bot] Update csharp/exercise-report document"
 git push origin "$BRANCH"
 
 # Create a PR
-gh pr create --title "[Bot] Update csharp/exercises document" --body "This is an _automatically generated_ PR to update the csharp exercises files." --label "type/bot" --base "master"
+gh pr create --title  "[Bot] Update csharp/exercises document" --body "This is an _automatically generated_ PR to update the csharp exercises files." --label "type/bot" --base "exercise-report-workflow"
