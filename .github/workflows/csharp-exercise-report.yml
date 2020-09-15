@@ -7,7 +7,7 @@ on:
       # also branch change may be required to bin/csharp-exercise-report/update.sh
     paths:
       - 'languages/csharp/reference/exercises.json'
-      - 'languages/csharp/exercises/concept/*/design.md'
+      - 'languages/csharp/exercises/concept/**/design.md'
 
 jobs:
   update-csharp-exercises:
