@@ -23,9 +23,9 @@ ProductionRemoteControlCar prod = new ProductionRemoteControlCar();
 TestTrack.race(prod);
 ExperimentalRemoteControlCar exp = new ExperimentalRemoteControlCar();
 TestTrack.race(exp);
-prod.getDistanceTravelled()
+prod.getDistanceTravelled();
 // => 10
-exp.getDistanceTravelled()
+exp.getDistanceTravelled();
 // => 20
 ```
 

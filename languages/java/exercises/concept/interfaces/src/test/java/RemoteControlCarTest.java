@@ -11,10 +11,10 @@ public class RemoteControlCarTest {
     public void race() {
         ProductionRemoteControlCar productionCar = new ProductionRemoteControlCar();
         ExperimentalRemoteControlCar experimentalCar = new ExperimentalRemoteControlCar();
-        TestTrack.race((RemoteControlCar)productionCar);
-        TestTrack.race((RemoteControlCar)productionCar);
-        TestTrack.race((RemoteControlCar)experimentalCar);
-        TestTrack.race((RemoteControlCar)experimentalCar);
+        TestTrack.race((RemoteControlCar) productionCar);
+        TestTrack.race((RemoteControlCar) productionCar);
+        TestTrack.race((RemoteControlCar) experimentalCar);
+        TestTrack.race((RemoteControlCar) experimentalCar);
         assertSame(20, experimentalCar.getDistanceTravelled() - productionCar.getDistanceTravelled());
     }
 
@@ -32,6 +32,6 @@ public class RemoteControlCarTest {
     @Ignore("Remove to run test")
     @Test
     public void ensureCarsAreComparables() {
-        assertTrue(RemoteControlCar.class.isAssignableFrom(ProductionRemoteControlCar.class) );
+        assertTrue(RemoteControlCar.class.isAssignableFrom(ProductionRemoteControlCar.class));
     }
 }
