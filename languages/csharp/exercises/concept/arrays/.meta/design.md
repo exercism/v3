@@ -24,7 +24,7 @@ Of the many available C# collection types, we chose to use the `array` collectio
 
 ## Concepts
 
-- `arrays`: xx know of the existence of the `Array` type; know how to define an array; know how to access elements in an array by index; know how to update an element in an array by index; know how to iterate over elements in an array; know of some basic functions (like finding the index of an element in an array).
+- `arrays`: xxxx know of the existence of the `Array` type; know how to define an array; know how to access elements in an array by index; know how to update an element in an array by index; know how to iterate over elements in an array; know of some basic functions (like finding the index of an element in an array).
 - `for-loops`: know how to use a `for` loop to do iteration.
 - `foreach-loops`: know how to iterate over a collection.
 
