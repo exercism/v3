@@ -157,8 +157,8 @@
       {
         "slug": "integral-numbers",
         "uuid": "86bbc073-1726-423d-b156-c394554a4a8c",
-        "concepts": ["casting", "integral-numbers"],
-        "prerequisites": ["arrays", "numbers"]
+        "concepts": ["integral-numbers"],
+        "prerequisites": ["arrays", "casting", "numbers"]
       },
       {
         "slug": "interfaces",
@@ -252,7 +252,7 @@
         "prerequisites": [
           "if-statements",
           "constructors",
-          "named-parameters",
+          "named-arguments",
           "numbers",
           "strings"
         ]
