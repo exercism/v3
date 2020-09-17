@@ -158,7 +158,7 @@
         "slug": "integral-numbers",
         "uuid": "86bbc073-1726-423d-b156-c394554a4a8c",
         "concepts": ["integral-numbers"],
-        "prerequisites": ["arrays", "casting", "numbers"]
+        "prerequisites": ["arrays", "numbers"]
       },
       {
         "slug": "interfaces",
