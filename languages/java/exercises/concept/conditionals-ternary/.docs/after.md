@@ -1,6 +1,6 @@
-## Ternary Operator 
+## Ternary Operator
 
-The _ternary operators_ can be thought of as being a compact version of  _if-else_. It's usually used in (but not restricted to) return statements, it needs just one single to make the decision, returning the left value if the expression is `true` and the right value if `false`.
+The _ternary operators_ can be thought of as being a compact version of _if-else_. It's usually used in (but not restricted to) return statements, it needs just one single to make the decision, returning the left value if the expression is `true` and the right value if `false`.
 
 A lot of simple _if/else_ expressions can be simplified using _ternary operators_
 
@@ -45,7 +45,6 @@ if (expr1){
 ```
 
 _Ternary_ and _if/else_ statements are a good example that you have different ways of achieving the same result when programming.
-
 
 For more examples check out [this][ternary-operator-first] and [this][ternary-operator-second] sources.
 

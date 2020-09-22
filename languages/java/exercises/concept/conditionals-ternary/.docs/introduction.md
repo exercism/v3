@@ -25,6 +25,4 @@ if ( 5 > 4 ) {
     return false;
 }
 
-
-
 ```
