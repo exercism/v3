@@ -4,7 +4,7 @@
 
 ## 1. Implement the multipliers
 
-- Both multiplier methods depend on a certain condition beeing met, you must check that before deciding what should be returned.
+- Both multiplier methods depend on a certain condition being met, you must check that before deciding what should be returned.
 
 ## 2. Calculate the final salary
 

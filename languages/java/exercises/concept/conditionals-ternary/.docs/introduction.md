@@ -1,4 +1,4 @@
-Java have another operator to handle simple decision making, the _ternary operator_ looks like a _if-else_ in just one like, its sintax is very simple:
+The _ternary operator_ is a lightweight, compat alternative for simple _if/else_ statements. Its syntax is as follows:
 
 ```java
 int value = (expression) ? trueExpression : falseExpression;

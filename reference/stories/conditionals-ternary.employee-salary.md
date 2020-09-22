@@ -26,7 +26,7 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 ## Implementations
 
-- [Java][implementation-java] (reference implementation)
+- [Java: conditionals-ternary][implementation-java] (reference implementation)
 
 ## Related
 

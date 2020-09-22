@@ -1,17 +1,17 @@
 In this exercise, you'll be implementing rules for calculating the total salary of a empyoyee in a month. The International Siderurgy Company (ISC) needs help to calculate the salary for the employees, given that different factors can alter the final wage value for each employee.
 
-You have the following tasks
+You have three tasks.
 
-## 1. Decide a penalty for days skipped needs to be applied
+## 1. Determine the salary multiplier
 
-Implement the `multiplierPerDaysSkipped` method that returns the penalty multiplier based on the days the employee skipped the job. A 15% penalty is applied if more than five days wore skipped.
+Implement the `multiplierPerDaysSkipped` method that returns the salary multiplier based on the number of days the employee skipped the job. A 15% penalty is applied if more than five days were skipped.
 
 ```java
 multiplierPerDaysSkipped(3);
 // => 1
 
 multiplierPerDaysSkipped(7);
-// =>0.85
+// => 0.85
 ```
 
 ## 2. Calculate the bonus for products sold
@@ -31,10 +31,10 @@ bonusProductSold(5);
 Implement the `finalSalary` method. It should be able to multiply the base salary by the penalty and sum the bonus and return the result, but keep in mind that salaries should be capped at the maximum value
 
 ```java
-finalSalary(0,0);
+finalSalary(0, 0);
 // => 1000
 
-finalSalary(0,100);
+finalSalary(0, 100);
 // => 2000
 ```
 
