@@ -1,31 +1,51 @@
-_ternary operators_ can be thought of as being _if-else_ inline. It is a good example that most of the times you have different ways of achieving the same result.
+## Ternary Operator 
+
+The _ternary operators_ can be thought of as being a compact version of  _if-else_. It's usually used in (but not restricted to) return statements, it needs just one single to make the decision, returning the left value if the expression is `true` and the right value if `false`.
+
+A lot of simple _if/else_ expressions can be simplified using _ternary operators_
+
+```java
+
+// this ternary statement
+return 5 > 4 ? true : false;
+
+// is equivalent to this if/else
+if ( 5 > 4 ) {
+    return true;
+} else {
+    return false;
+}
+```
 
 So, how to decide between _if-else_ and _ternary_ ? Well, _Ternary_ is used in simple cenarios, where you just need to return a value based on a condition and no extra computation is needed, use _if-else_ for everthing else, like nested conditions, big expressions and when more than one line is needed to decide the return value.
 
-And try to never nest _ternary operators_ as the expression becomes illegible, prefer nested if's to handle those cases
+And don't abuse of nested _ternary operators_ as the expression becomes confusing, prefer nested if's to handle those cases.
 
 ```java
 
 // hard to read
-int value = expr1 ? expr2 ? val1 : expr3 ? val2 : val3 : val4
+int value = expr1 ? expr2 && expr3 ? val1 : (val2 + val3) : expr4;
 
 // easier to read
 if (expr1){
-    if (expr2){
+
+    if (expr2 && expr3){
+
         return val1;
-    } else{
-        if (expr3) {
-            return val2;
-        } else {
-            return val3;
-        }
+    } else {
+
+        return val2 + val3;
     }
+
 } else {
+
     return val4;
 }
 
-
 ```
+
+_Ternary_ and _if/else_ statements are a good example that you have different ways of achieving the same result when programming.
+
 
 For more examples check out [this][ternary-operator-first] and [this][ternary-operator-second] sources.
 

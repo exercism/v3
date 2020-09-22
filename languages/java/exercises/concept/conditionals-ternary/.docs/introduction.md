@@ -1,21 +1,30 @@
-The _ternary operator_ is a lightweight, compat alternative for simple _if/else_ statements. Its syntax is as follows:
+## Ternary Operator
+
+The _ternary operator_ is a lightweight, compact alternative for simple _if/else_ statements. Usually used in (but not restricted to) return statements, it needs just one single to make the decision, returning the left value if the expression is `true` and the right value if `false`, as follows:
 
 ```java
-int value = (expression) ? trueExpression : falseExpression;
+
+boolean expr = 0 != 200;
+
+int value = expr ? 22 : 33;
+// => 22
+
 ```
 
-A lot of simple _if-else_ expressions can be simplified using _ternary operators_
+A lot of simple _if/else_ expressions can be simplified using _ternary operators_
 
 ```java
 
-//this if statement
+// this ternary statement
+return 5 > 4 ? true : false;
+
+// is equivalent to this if/else
 if ( 5 > 4 ) {
     return true;
 } else {
     return false;
 }
 
-//is equivalent to this ternary expression
-return 5 > 4 ? true : false;
+
 
 ```

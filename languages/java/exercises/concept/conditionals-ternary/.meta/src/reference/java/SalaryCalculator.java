@@ -1,8 +1,5 @@
 public class SalaryCalculator {
 
-    private final double BASESALARY = 1000.0;
-    private final double MAXIMUMSALARY = 2000.0;
-
     public double multiplierPerDaysSkipped (int daysSkipped) {
         return daysSkipped < 5 ? 1 : 0.85;
     }
@@ -11,15 +8,15 @@ public class SalaryCalculator {
         return productsSold < 20 ? 10 : 13;
     }
 
-    public double bonusProductSold (int productsSold) {
+    public double bonusForProductSold (int productsSold) {
         return productsSold * multiplierPerProductsSold(productsSold);
     }
 
     public double finalSalary (int daysSkipped, int productsSold) {
 
-        double finalSalary = BASESALARY * multiplierPerDaysSkipped(daysSkipped) + bonusProductSold(productsSold);
+        double finalSalary = 1000.0 * multiplierPerDaysSkipped(daysSkipped) + bonusForProductSold(productsSold);
 
-        return finalSalary > MAXIMUMSALARY ? MAXIMUMSALARY : finalSalary;
+        return finalSalary > 2000.0 ? 2000.0 : finalSalary;
     } 
 
 }
