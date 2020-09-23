@@ -8,7 +8,7 @@
 
 ## Concepts
 
-- ternary expressions
+- ternary operators
 
 ## Prerequisites
 

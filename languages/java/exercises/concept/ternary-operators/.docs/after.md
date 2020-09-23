@@ -30,15 +30,12 @@ if (expr1){
     if (expr2 && expr3){
 
         return val1;
-    } else {
+    } 
 
-        return val2 + val3;
-    }
+    return val2 + val3;
+} 
+return val4;
 
-} else {
-
-    return val4;
-}
 
 ```
 

@@ -8,4 +8,4 @@ int value = expr ? 22 : 33;
 // => 22
 ```
 
-A lot of simple _if/else_ expressions can be simplified using _ternary operators_
+A lot of simple _if/else_ expressions can be simplified using _ternary operators_.
