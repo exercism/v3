@@ -26,11 +26,11 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 ## Implementations
 
-- [Java: conditionals-ternary][implementation-java] (reference implementation)
+- [Java: ternary-operators][implementation-java] (reference implementation)
 
 ## Related
 
 - [`types/boolean`][types-boolean]
 
 [types-boolean]: ../types/boolean.md
-[implementation-java]: ../../languages/java/exercises/concept/conditionals-ternary/.docs/instructions.md
+[implementation-java]: ../../languages/java/exercises/concept/ternary-operators/.docs/instructions.md
