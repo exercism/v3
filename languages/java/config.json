@@ -61,8 +61,8 @@
       {
         "slug": "conditionals-ternary",
         "uuid": "2165c331-6b0c-49b8-9555-bad577ec4fc6",
-        "concepts": ["strings"],
-        "prerequisites": ["conditionals", "numbers"]
+        "concepts": ["ternary-operators"],
+        "prerequisites": ["conditionals-if", "numbers"]
       }
     ],
     "practice": []

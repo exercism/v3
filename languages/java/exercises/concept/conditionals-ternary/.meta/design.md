@@ -21,4 +21,4 @@ This exercise's prerequisites Concepts are:
 
 This exercise could have the following rule added to the analyzer:
 
-- Verify that none _if/else_ statments were used.
+- Verify that ternary operators were used.
