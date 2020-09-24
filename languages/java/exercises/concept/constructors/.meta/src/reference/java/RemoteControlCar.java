@@ -1,6 +1,6 @@
 class RemoteControlCar {
-    private final int speed;
-    private final int batteryDrain;
+    private int speed;
+    private int batteryDrain;
     private int distance = 0;
     private int battery = 100;
 
@@ -30,7 +30,7 @@ class RemoteControlCar {
 }
 
 class RaceTrack {
-    private final int distance;
+    private int distance;
 
     RaceTrack(int distance) {
         this.distance = distance;
