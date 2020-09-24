@@ -5,7 +5,6 @@ class RemoteControlCar {
     private int battery = 100;
 
     public RemoteControlCar(int speed, int batteryDrain) {
-
         this.speed = speed;
         this.batteryDrain = batteryDrain;
     }
