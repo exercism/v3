@@ -26,31 +26,3 @@ PlayAnalyzer.analyzeOnField(10);
 ### 2. Raise an alert if an unknown shirt number is encountered.
 
 Modify the `PlayAnalyzer.offField()` method to throw an `IllegalArgumentException` when a shirt number outside the range 1-11 is processed.
-
-### 3. Extend the coverage to include off field activity
-
-Implement the `PlayAnalyzer.offField()` method to output description of activities and characters around the field of play.
-
-You receive a stream of data that has been cleaned. Your task is to analyse it and output appropriate text to help the journalists.
-
-The data comprises:
-
-- shirt numbers (any `int`) -> text as per on field analysis
-- free form text (any `String`) -> the text unchanged
-- incidents in play (`Incident` enum) -> "REDCARD", "FOUL" etc.
-- opposing managers (objects of type `Manager`) -> "the manager"
-
-```java
-PlayAnalyzer.analyzeOffField(Incident.REDCARD);
-// => "RedCard"
-PlayAnalyzer.analyzeOffField((new Manager());
-// => "the manager"
-```
-### 4. Where the manager has a name available we want that output instead of "the manager"
-
-Modify the `PlayAnalyzer.offField()` method to output any name such as "Jürgen Klopp" if there is one. If there is no name then the `Manager.name` property is guaranteed to be an empty string rather than null.
-
-```java
-PlayAnalyzer.analyzeOffField(new Manager("José Mário dos Santos Mourinho Félix"));
-// => "José Mário dos Santos Mourinho Félix"
-```
