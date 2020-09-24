@@ -8,7 +8,7 @@
 
 ## Concepts
 
-- ternary operators
+- `ternary-operators`: how to use the ternary operator to do conditional logic
 
 ## Prerequisites
 
