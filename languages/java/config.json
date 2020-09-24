@@ -63,6 +63,12 @@
         "uuid": "a85b6394-3ca5-4913-b554-b460dd49c0ea",
         "concepts": ["constructors"],
         "prerequisites": ["classes"]
+      },
+      {
+        "slug": "ternary-operators",
+        "uuid": "5521e413-a382-4c33-ae9c-159a4d7632ca",
+        "concepts": ["ternary-operators"],
+        "prerequisites": ["conditionals-if", "numbers"]
       }
     ],
     "practice": []
