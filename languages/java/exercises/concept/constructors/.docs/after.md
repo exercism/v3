@@ -46,17 +46,14 @@ var elevator = new Elevator();
 If fields have an initial value assigned to them, the compiler will output code in which the assignment is actually done inside the constructor. The following class declarations are thus equivalent (functionality-wise):
 
 ```java
-class UsingFieldInitialization
-{
+class UsingFieldInitialization {
     private int players = 5;
 }
 
-class UsingConstructorInitialization
-{
+class UsingConstructorInitialization {
     private int players;
 
-    public UsingConstructorInitialization()
-    {
+    public UsingConstructorInitialization() {
         players = 5;
     }
 }
