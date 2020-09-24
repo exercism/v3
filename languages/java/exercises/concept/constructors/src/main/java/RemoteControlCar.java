@@ -1,4 +1,3 @@
-
 class RemoteControlCar {
     // TODO: define the constructor for the 'RemoteControlCar' class
 
