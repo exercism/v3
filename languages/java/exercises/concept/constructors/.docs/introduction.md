@@ -19,13 +19,11 @@ var library = new Library();
 Like regular methods, constructors can have parameters. Constructor parameters are usually stored as (private) fields to be accessed later, or else used in some one-off calculation. Arguments can be passed to constructors just like passing arguments to regular methods.
 
 ```java
-class Building
-{
+class Building {
     private final int numberOfStories;
     private final int totalHeight;
 
-    public Building(int numberOfStories, double storyHeight)
-    {
+    public Building(int numberOfStories, double storyHeight) {
         this.numberOfStories = numberOfStories;
         this.totalHeight = numberOfStories * storyHeight;
     }
