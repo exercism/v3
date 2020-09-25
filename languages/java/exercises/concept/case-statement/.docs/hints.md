@@ -6,7 +6,7 @@
 
 - The [`break`] statement is useful, see the doc!.
 
-### 2. Raise an alert if an unknown shirt number is encountered.
+### 2. Raise an alert if an unknown shirt number is encountered
 
 - The [`default`] statement is useful, see the doc!.
 
