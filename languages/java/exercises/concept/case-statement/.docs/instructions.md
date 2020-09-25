@@ -24,7 +24,7 @@ PlayAnalyzer.onField(10);
 // => "striker"
 ```
 
-### 2. Raise an alert if an unknown shirt number is encountered.
+### 2. Raise an alert if an unknown shirt number is encountered
 
 Modify the `PlayAnalyzer.onField()` method to throw an `IllegalArgumentException` when a shirt number outside the range 1-11 is processed.
 
