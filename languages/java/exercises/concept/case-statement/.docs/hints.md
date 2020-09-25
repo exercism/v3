@@ -1,6 +1,6 @@
 ## General
 
-[switch statement][switch-statement] documentation provides an introduction to `switch` statements.
+- The [`switch` statement documentation][switch-statement] provides an introduction to `switch` statements.
 
 ### 1. Output descriptions of the players based on their shirt number
 
