@@ -53,6 +53,12 @@
         "prerequisites": ["conditionals", "numbers", "strings"]
       },
       {
+        "slug": "interfaces",
+        "uuid": "0fa73b4c-75e8-4d38-a7cf-8c1329a1f183",
+        "concepts": ["interfaces"],
+        "prerequisites": ["classes", "lists", "strings"]
+      },
+      {
         "slug": "strings",
         "uuid": "2165c331-6b0c-49b8-9555-bad577ec4fc6",
         "concepts": ["strings"],
