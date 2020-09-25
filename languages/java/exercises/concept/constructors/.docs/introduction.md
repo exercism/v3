@@ -2,7 +2,7 @@ Creating an instance of a _class_ is done by calling its _constructor_ through t
 
 ```java
 class Library {
-    private final int books;
+    private int books;
 
     public Library() {
         // Initialize the books field
@@ -18,8 +18,8 @@ Like regular methods, constructors can have parameters. Constructor parameters a
 
 ```java
 class Building {
-    private final int numberOfStories;
-    private final int totalHeight;
+    private int numberOfStories;
+    private int totalHeight;
 
     public Building(int numberOfStories, double storyHeight) {
         this.numberOfStories = numberOfStories;
