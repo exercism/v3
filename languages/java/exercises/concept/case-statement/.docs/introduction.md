@@ -8,7 +8,6 @@ At their simplest they test a primitive or string expression and make a decision
 String direction = getDirection();
 switch (direction){
     case "left":
-        //if direction equals "left"
         goLeft();
         break;
     case "right":
