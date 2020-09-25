@@ -6,7 +6,7 @@ At their simplest they test a primitive or string expression and make a decision
 
 ```java
 String direction = getDirection();
-switch (direction){
+switch (direction) {
     case "left":
         goLeft();
         break;
