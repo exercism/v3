@@ -11,7 +11,6 @@ switch (direction){
         goLeft();
         break;
     case "right":
-        //if direction equals "right"
         goRight();
         break;
     default:
