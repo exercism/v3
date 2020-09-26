@@ -31,6 +31,6 @@ public class RemoteControlCarTest {
     @Ignore("Remove to run test")
     @Test
     public void ensureCarsAreComparables() {
-        assertThat(RemoteControlCar.class.isAssignableFrom(ProductionRemoteControlCar.class)).isTrue();
+        assertThat(RemoteControlCar.class).isAssignableFrom(ProductionRemoteControlCar.class);
     }
 }
