@@ -1,6 +1,6 @@
 In this exercise you'll be working on an class room time schdule for a school. 
 
-You have five tasks, which will all involve scheduling of class periods and intervals.The class duration is 1 hr in all the tasks given blow.
+You have five tasks, which will all involve scheduling of class periods and intervals. The class duration is 1 hr in all the tasks given blow.
 
 ## 1. Parse the Duration of the Class
 
