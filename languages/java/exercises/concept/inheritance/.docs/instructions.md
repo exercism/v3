@@ -1,77 +1,81 @@
-In this exercise we will simulate the first turn of a [Blackjack](https://en.wikipedia.org/wiki/Blackjack) game.
+In this exercise you're playing a role-playing game named "Wizard and Warriors," which allows you to play as either a Wizard or a Warrior.
 
-You will receive two cards and will be able to see the face up card of the dealer. All cards are represented using a string such as "ace", "king", "three", "two", etc. The values of each card are:
+There are different rules for Warriors and Wizards to determine how much damage points they deal.
 
-| card  | value | card  | value |
-| :---: | :---: | :---: | :---: |
-|  ace  |  11   | eight |   8   |
-|  two  |   2   | nine  |   9   |
-| three |   3   |  ten  |  10   |
-| four  |   4   | jack  |  10   |
-| five  |   5   | queen |  10   |
-|  six  |   6   | king  |  10   |
-| seven |   7   | other |   0   |
+For a Warrior, these are the rules:
 
-**Note**: Commonly, aces can take the value of 1 or 11 but for simplicity we will assume that they can only take the value of 11.
+- Deal 6 points of damage if the fighter they are attacking is not vulnerable
+- Deal 10 points of damage if the fighter they are attacking is vulnerable
 
-Depending on your two cards and the card of the dealer, there is a strategy for the first turn of the game, in which you have the following options:
+For a Wizard, these are the rules:
 
-    - Stand (S)
-    - Hit (H)
-    - Split (P)
-    - Automatically win (W)
+- Deal 12 points of damage if the Wizard prepared a spell in advanced
+- Deal 3 points of damage if the Wizard did not prepare a spell in advance
 
-Although not optimal yet, you will follow the strategy your friend Alex has been developing, which is as follows:
+In general, fighters are never vulnerable. However, Wizards _are_ vulnerable if they haven't prepared a spell.
 
-Category: Large Hand
+You have six tasks that work with Warriors and Wizard fighters.
 
-- If you have a pair of aces you must always split them.
-- If you have a Blackjack (two cards that sum up to a value of 21), and the dealer does not have an ace, a figure or a ten then you automatically win. If the dealer does have any of those cards then you'll have to stand and wait for the reveal of the other card.
+## 1. Describe a fighter
 
-Category: Small Hand
-
-- If your cards sum up to 17 or higher you should always stand.
-- If your cards sum up to 11 or lower you should always hit.
-- If your cards sum up to a value within the range [12, 16] you should always stand unless the dealer has a 7 or higher, in which case you should always hit.
-
-The overall logic has already been implemented. You have four tasks:
-
-## 1. Calculate the score of any given card.
-
-Implement a function to calculate the numerical value of a card given its name using coditionals.
+Override the `toString()` method on the `Fighter` class to return a description of the fighter, formatted as `"Fighter is a <FIGHTER_TYPE>"`.
 
 ```java
-parseCard("ace")
-// returns 11
+Warrior warrior = new Warrior();
+warrior.toString();
+// => "Fighter is a Warrior"
 ```
 
-## 2. Determine if two cards make up a Blackjack.
+## 2. Make fighters not vulnerable by default
 
-Implement a function that returns `true` if two cards form a Blackjack, `false` otherwise.
+Ensure that the `Fighter.isVulnerable()` method always returns `false`.
 
 ```java
-isBlackjack("queen", "ace")
-// returns true
+Warrior warrior = new Warrior();
+warrior.isVulnerable();
+// => false
 ```
 
-## 3. Implement the decision logic for hand scores larger than 20 points.
+## 3. Allow Wizards to prepare a spell
 
-Implement a function that returns the string representation of a decision given your cards. This function is only called if the `handScore` is larger than 20. It will receive 2 arguments: `isBlackJack` and `dealerScore`. It should implement the bulletpoints in the category "Large Hand" above.
+Implement the `Wizard.prepareSpell()` method to allow a Wizard to prepare a spell in advance.
 
 ```java
-isBlackJack = true
-dealerScore = 7
-largeHand(isBlackJack, dealerScore)
-// returns "W"
+Wizard wizard = new Wizard();
+wizard.prepareSpell();
 ```
 
-## 4. Implement the decision logic for hand scores with less than 21 points.
+## 4. Make Wizards vulnerable when not having prepared a spell
 
-Implement a function that returns the string representation of a decision given your cards. This function is only called if the `handScore` is less than 21. It will receive 2 arguments: `handScore` and `dealerScore`. It should implement the bulletpoints in the category "Small Hand" above.
+Ensure that the `isVulnerable()` method returns `true` if the wizard did not prepare a spell; otherwise, return `false`.
 
 ```java
-handScore = 15
-dealerScore = 12
-SmallHand(handScore, dealerScore)
-// returns "H"
+Wizard wizard = new Wizard();
+wizard.isVulnerable();
+// => true
+```
+
+## 5. Calculate the damage points for a Wizard
+
+Implement the `Wizard.damagePoints()` method to return the damage points dealt: 12 damage points when a spell has been prepared, 3 damage points when not.
+
+```java
+Wizard wizard = new Wizard();
+Warrior warrior = new Warrior();
+
+wizard.prepareSpell();
+wizard.damagePoints(warrior);
+// => 12
+```
+
+## 6. Calculate the damage points for a Warrior
+
+Implement the `Warrior.damagePoints()` method to return the damage points dealt: 10 damage points when the target is vulnerable, 6 damage points when not.
+
+```java
+Warrior warrior = new Warrior();
+Wizard wizard = new Wizard();
+
+warrior.damagePoints(wizard);
+// => 10
 ```
