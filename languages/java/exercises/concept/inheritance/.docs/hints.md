@@ -1,45 +1,47 @@
 ## General
 
-Conditionals are used to check for certain conditions and/or criteria. The most basic way of performing a conditional operation is using a single `if` statement.
+Detailed explanation of inheritance can be found at [Inheritance][Inheritance-main].
+The whole inheritance concept has a lot to do with the concepts around [overriding][java-overriding].
 
-## 1. Calculate the score of any given card.
+## 1. Describe a Fighter.
 
-The `parseCard` function should take the `card` string (e.g. `ace`) and turn it into its value (e.g. 11).
+- In Java, the 'toString()' method is actually present inside the Object class (which is a superclass to all the classes in Java).
+You can read more about it [here][object-class-java].
 
-- Use a big [`switch` statement][switch-statement] on the `card` variable.
-- King, Queen, Jack and 10 can be handled with a single case.
-- The switch can have a `default` case. In any case the function should return `0` for unknown cards.
+- To override this method inside your implementation class, you should have a method with same name i.e `toString()' and same return type
+i.e 'String'.
 
-## 2. Determine if two cards make up a Blackjack.
 
-`isBlackJack` checks if 2 cards have the combined value of 21.
+## 2. Making Fighters not vulnerable by default.
 
-- Should use the `parseCard` function to get the value for each card.
-- Should sum up the values of the 2 cards.
-- Should return `true` if the sum is equal to `21`.
-- No aditional statement is needed here. The result for the comparison can be returned.
+- Consider having a method `isVulnerable()` inside the `Fighter` class which states vulnerability of the fighter, return `false` to make it non-vulnerable by default.
+- This can than be overridden by any child class(the class extending `Fighter`), according to its requirements.
 
-## 3. Implement the decision logic for hand scores larger than 20 points.
+- Again the [overriding][java-overriding] concept will come handy.
 
-As the `largeHand` function is only called for hands with a value larger than 20, there are only 2 different possible hands: A **BlackJack** with a total value of `21` and **2 Aces** with a total value of `22`.
+## 3. Allowing wizards to prepare a spell.
 
-- The function should check [if][if-statement] `isBlackJack` is `true` and return "P" otherwise.
-- If `isBlackJack` is `true`, the dealerScore needs to be checked for being lower than 10. [If][if-statement] it is lower, return "W" otherwise "S".
+- Preparing a spell can only be done by a wizard. So, it makes sense to have this property defined inside the `Wizard` class.
 
-## 4. Implement the decision logic for hand scores with less than 21 points.
+- Create `prepareSpell()` method and `isSpellPrepared` variable inside `Wizard` class and set `isSpellPrepared` as true.
 
-The `smallHand` function is only called if there are no Aces on the hand (`handScore` is less than 21).
+- Remember : Parent class(here `Fighter`) has no access to the properties of the child class(for example, `Wizard`)
 
-- Implement every condition using [logical operators][logical-operators] if necessary:
-  - [If][if-statement] your cards sum up to 17 or higher you should always _stand_.
-  - [If][if-statement] your cards sum up to 11 or lower you should always _hit_.
-  - [If][if-statement] your cards sum up to a value within the range [12, 16] you should always _stand_ if the dealer has a 6 or lower.
-  - [If][if-statement] your cards sum up to a value within the range [12, 16] you should always _hit_ if the dealer has a 7 or higher.
-- (optional) Try to optimize the conditions:
-  - Pull together the conditions for _stand_ into one.
-  - Pull together the conditions for _hit_ into one.
-  - Remove redundant parts of the conditions (e.g. `A || !A && B` can be `A || B`).
+## 4. Make Wizards vulnerable when not having prepared a spell
 
-[logical-operators]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html
-[if-statement]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html
-[switch-statement]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html
+- Override the `isVulnerable()` method in the `Wizard` class to make Wizards vulnerable if they haven't prepared a spell.
+
+## 5. Calculate the damage points for a Wizard
+
+- Use a [conditional statement][if-else] to return the damage points, taking into account the value of the prepare spell field.
+
+## 6. Calculate the damage points for a Warrior
+//TODO himanshu
+- You can call a method on the passed `Character` instance to determine its vulnerability.
+
+- Use a [conditional statement][if-else] to return the the damage points, taking into account the vulnerability of the target.
+
+[Inheritance-main]: https://www.geeksforgeeks.org/inheritance-in-java/
+[object-class-java]: https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
+[java-overriding]: https://docs.oracle.com/javase/tutorial/java/IandI/override.html
+[if-else]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html
