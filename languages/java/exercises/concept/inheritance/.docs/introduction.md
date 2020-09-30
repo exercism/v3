@@ -35,10 +35,15 @@ Now whenever we do,
 Animal animal = new Lion(); //creating instance of Animal, of type Lion
 animal.bark();
 ```
-Note: Initialising the `Animal` class with `Lion`. This talks about another concept called [Abstraction][Abstraction].
+Note: Initialising the `Animal` class with `Lion`.
 The output will look like
 
 ```java
 Lion here!!
 ```
-[Abstraction]:https://www.geeksforgeeks.org/abstraction-in-java-2/
+
+According to OOPS there are many types of inheritance, but Java supports only some of them(Multi-level and Hierarchical).
+To read more about it, please read [this][java-inheritance].
+
+
+[java-inheritance]:https://www.javatpoint.com/inheritance-in-java#:~:text=On%20the%20basis%20of%20class,will%20learn%20about%20interfaces%20later.

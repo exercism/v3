@@ -21,7 +21,7 @@ You have six tasks that work with Warriors and Wizard fighters.
 Override the `toString()` method on the `Fighter` class to return a description of the fighter, formatted as `"Fighter is a <FIGHTER_TYPE>"`.
 
 ```java
-Warrior warrior = new Warrior();
+Fighter warrior = new Warrior();
 warrior.toString();
 // => "Fighter is a Warrior"
 ```
@@ -31,7 +31,7 @@ warrior.toString();
 Ensure that the `Fighter.isVulnerable()` method always returns `false`.
 
 ```java
-Warrior warrior = new Warrior();
+Fighter warrior = new Warrior();
 warrior.isVulnerable();
 // => false
 ```
@@ -50,7 +50,7 @@ wizard.prepareSpell();
 Ensure that the `isVulnerable()` method returns `true` if the wizard did not prepare a spell; otherwise, return `false`.
 
 ```java
-Wizard wizard = new Wizard();
+Fighter wizard = new Wizard();
 wizard.isVulnerable();
 // => true
 ```
