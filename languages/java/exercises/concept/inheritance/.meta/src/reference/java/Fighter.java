@@ -19,8 +19,7 @@ class Warrior extends Fighter {
     int damagePoints(Fighter wizard) {
         if (wizard.isVulnerable()) {
             return 10;
-        }
-        else {
+        } else {
             return 6;
         }
     }
@@ -32,18 +31,17 @@ class Wizard extends Fighter {
 
     @Override
     boolean isVulnerable() {
-       if (isSpellPrepared == false) {
-           return true;
-       }
-       return false;
+        if (isSpellPrepared == false) {
+            return true;
+        }
+        return false;
     }
 
     @Override
     int damagePoints(Fighter warrior) {
         if (isSpellPrepared) {
             return 12;
-        }
-        else {
+        } else {
             return 3;
         }
     }

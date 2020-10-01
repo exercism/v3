@@ -1,28 +1,39 @@
 ## Goal
 
-The goal of this exercise is to teach the student the basics of the Concept of Conditionals in Java.
+The goal of this exercise is to teach the student the basics of the Concept of `Inheritance` in Java.
 
 ## Learning objectives
 
-- Know of the existence of the `bool` type.
-- Know how to define an if statement.
-- Know to avoid else after return.
-- Know how to define a switch statement.
+- Know what inheritance is.
+- Know how to inherit from a class.
+- Know that all types inherit from object.
 
 ## Out of scope
 
-- iterations
-- continue (as there are no iterations)
+- Inheritance from interfaces
 
 ## Concepts
 
-- `booleans`
-- `conditionals-if`
-- `conditionals-switch`
+- `inheritence`
+- `objects`
 
-## Prequisites
+## Prerequisites
 
 This exercise's prerequisites Concepts are:
 
-- `basic-strings`
-- `numbers`
+- `classes`
+- `abstract`
+- `functions`
+- `strings`
+- `boolean`
+
+## Representer
+
+This exercise does not require any specific representation logic to be added to the [representer][representer-java].
+
+## Analyzer
+
+This exercise does not require any specific analyzer logic to be added to the [analyzer][analyzer-java].
+
+[representer-java]: https://github.com/exercism/java-representer
+[analyzer-java]: https://github.com/exercism/java-analyzer

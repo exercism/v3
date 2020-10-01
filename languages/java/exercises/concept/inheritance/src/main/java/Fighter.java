@@ -2,6 +2,7 @@ abstract class Fighter {
 
     /**
      * this method sets the default vulnerability to false for all the child classes.
+     *
      * @return the vulnerability i.e false.
      */
     boolean isVulnerable() {
@@ -29,7 +30,7 @@ class Wizard extends Fighter {
 
     @Override
     boolean isVulnerable() {
-       throw new UnsupportedOperationException("Please implement Wizard.isVulnerable() method");
+        throw new UnsupportedOperationException("Please implement Wizard.isVulnerable() method");
     }
 
     @Override
