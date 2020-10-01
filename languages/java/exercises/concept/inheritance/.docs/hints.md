@@ -1,16 +1,15 @@
 ## General
 
-Detailed explanation of inheritance can be found at [Inheritance][Inheritance-main].
+Detailed explanation of inheritance can be found at [Inheritance][inheritance-main].
 The whole inheritance concept has a lot to do with the concepts around [overriding][java-overriding].
 
 ## 1. Describe a Fighter.
 
 - In Java, the 'toString()' method is actually present inside the Object class (which is a superclass to all the classes in Java).
-You can read more about it [here][object-class-java].
+  You can read more about it [here][object-class-java].
 
 - To override this method inside your implementation class, you should have a method with same name i.e `toString()' and same return type
-i.e 'String'.
-
+  i.e 'String'.
 
 ## 2. Making Fighters not vulnerable by default.
 
@@ -23,7 +22,7 @@ i.e 'String'.
 
 - Preparing a spell can only be done by a wizard. So, it makes sense to have this property defined inside the `Wizard` class.
 
-- Create `prepareSpell()` method and `isSpellPrepared` variable inside `Wizard` class and set `isSpellPrepared` as true.
+- Create `prepareSpell()` method inside `Wizard` class.
 
 - Remember : Parent class(here `Fighter`) has no access to the properties of the child class(for example, `Wizard`)
 
@@ -36,12 +35,10 @@ i.e 'String'.
 - Use a [conditional statement][if-else] to return the damage points, taking into account the value of the prepare spell field.
 
 ## 6. Calculate the damage points for a Warrior
-//TODO himanshu
-- You can call a method on the passed `Character` instance to determine its vulnerability.
 
 - Use a [conditional statement][if-else] to return the the damage points, taking into account the vulnerability of the target.
 
-[Inheritance-main]: https://www.geeksforgeeks.org/inheritance-in-java/
+[inheritance-main]: https://www.geeksforgeeks.org/inheritance-in-java/
 [object-class-java]: https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
 [java-overriding]: https://docs.oracle.com/javase/tutorial/java/IandI/override.html
 [if-else]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html
