@@ -1,5 +1,10 @@
 abstract class Fighter {
 
+    /**
+     * this method sets the default vulnerability to false for all the child classes.
+     *
+     * @return the vulnerability i.e false.
+     */
     boolean isVulnerable() {
         return false;
     }
