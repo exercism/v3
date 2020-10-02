@@ -1,12 +1,7 @@
 abstract class Fighter {
 
-    /**
-     * this method sets the default vulnerability to false for all the child classes.
-     *
-     * @return the vulnerability i.e false.
-     */
     boolean isVulnerable() {
-        return false;
+        throw new UnsupportedOperationException("Please provide implementation for this method");
     }
 
     abstract int damagePoints(Fighter fighter);
