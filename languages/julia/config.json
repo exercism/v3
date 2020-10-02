@@ -11,20 +11,20 @@
     "exercises": {
         "concept": [
             {
-                "uuid": "39ebdd04-4f84-4817-bf9d-f1f9e066c283",
-                "slug": "functions-introduction",
-                "concepts": ["functions-introduction"],
-                "prerequisites": []
-            },
-            {
-                "uuid": "05cfc609-3a14-479a-b6fa-6d2a53ad111c",
                 "slug": "boolean-logic",
+                "uuid": "05cfc609-3a14-479a-b6fa-6d2a53ad111c",
                 "concepts": ["boolean-logic", "booleans"],
                 "prerequisites": ["functions-introduction"]
             },
             {
-                "uuid": "36cbda04-3921-4491-9ec6-76951f00aa00",
+                "slug": "functions-introduction",
+                "uuid": "39ebdd04-4f84-4817-bf9d-f1f9e066c283",
+                "concepts": ["functions-introduction"],
+                "prerequisites": []
+            },
+            {
                 "slug": "matrices-introduction",
+                "uuid": "36cbda04-3921-4491-9ec6-76951f00aa00",
                 "concepts": [
                     "matrices-introduction",
                     "matrices-concatenation",
@@ -35,8 +35,8 @@
                 "prerequisites": ["functions-introduction"]
             },
             {
-                "uuid": "68001762-8a35-4494-9de4-624ca9efb5cd",
                 "slug": "multiple-dispatch",
+                "uuid": "68001762-8a35-4494-9de4-624ca9efb5cd",
                 "concepts": ["multiple-dispatch"],
                 "prerequisites": [
                     "composite-types",
@@ -45,8 +45,8 @@
                 ]
             },
             {
-                "uuid": "2b2b8bed-ff39-4e77-a2fe-254125b53a1c",
                 "slug": "unicode-identifiers",
+                "uuid": "2b2b8bed-ff39-4e77-a2fe-254125b53a1c",
                 "concepts": ["unicode-identifiers", "emoji-symbols"],
                 "prerequisites": [
                     "symbols",

@@ -11,6 +11,18 @@
   "exercises": {
     "concept": [
       {
+        "slug": "basics",
+        "uuid": "dfd7dc01-3544-4f61-a063-af8530d6e601",
+        "concepts": ["basics"],
+        "prerequisites": []
+      },
+      {
+        "slug": "bools",
+        "uuid": "c050470d-ef22-4187-aaac-239e07955a4d",
+        "concepts": ["bools"],
+        "prerequisites": ["basics"]
+      },
+      {
         "slug": "strings",
         "uuid": "5a9b42fb-ddf4-424b-995d-f9952ea63c37",
         "concepts": ["strings"],
@@ -29,18 +41,6 @@
           "integers",
           "return-keyword"
         ]
-      },
-      {
-        "slug": "basics",
-        "uuid": "dfd7dc01-3544-4f61-a063-af8530d6e601",
-        "concepts": ["basics"],
-        "prerequisites": []
-      },
-      {
-        "slug": "bools",
-        "uuid": "c050470d-ef22-4187-aaac-239e07955a4d",
-        "concepts": ["bools"],
-        "prerequisites": ["basics"]
       }
     ],
     "practice": []
