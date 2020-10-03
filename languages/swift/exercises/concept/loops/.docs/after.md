@@ -29,6 +29,8 @@ print("Liftoff!")
 // Liftoff!
 ```
 
+# Add in bit about while let x = blah? { … }
+
 ### repeat-while loops
 
 Repeat-while loops are similar to while loops, however, these loops differ in that the Boolean expression appears, and is evaluated, _after_ the body of the loop is executed. As a result, these loops always execute at least once.
