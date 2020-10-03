@@ -5,21 +5,20 @@ import static junit.framework.TestCase.*;
 
 public class FighterTest {
 
-    @Ignore
     @Test
     public void testToString() {
         Fighter warrior = new Warrior();
         assertEquals("Fighter is a Warrior", warrior.toString());
     }
 
-    @Ignore
+    @Ignore("Remove to run the test")
     @Test
     public void testFighterVulnerableByDefault() {
         Fighter warrior = new Warrior();
         assertFalse("The fighter shouldn't be vulnerable by default", warrior.isVulnerable());
     }
 
-    @Ignore
+    @Ignore("Remove to run the test")
     @Test
     public void testWizardVulnerable() {
         Wizard wizard = new Wizard();
@@ -29,7 +28,7 @@ public class FighterTest {
         assertFalse("The wizard shouldn't be vulnerable after preparing the spell", wizard.isVulnerable());
     }
 
-    @Ignore
+    @Ignore("Remove to run the test")
     @Test
     public void testWizardsDamagePoints() {
         Wizard wizard = new Wizard();
@@ -41,7 +40,7 @@ public class FighterTest {
         assertEquals(12, wizard.damagePoints(warrior));
     }
 
-    @Ignore
+    @Ignore("Remove to run the test")
     @Test
     public void testWarriorsDamagePoints() {
         Warrior warrior = new Warrior();

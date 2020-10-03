@@ -15,14 +15,15 @@ There are mainly three access modifiers:
 - private
 - public
 - protected
+- Default (No keyword required)
 
 You can read more about them [here][access-modifiers]
 
-## Inheritance vs Composition vs Aggregation
+## Inheritance vs Composition
 
-These three concepts are very similar and are often confused.
+These concepts are very similar and are often confused.
 
-- Inheritance means that the child has a IS-A relationship with the parent class.
+- Inheritance means that the child has IS-A relationship with the parent class.
 
 ```java
 interface Animal() {
@@ -38,7 +39,7 @@ class Dog implements Animal {
 
 Here, `Dog` IS-A `Animal`
 
-- Composition and Aggregation represent a HAS-A relationship.
+- Composition represents a HAS-A relationship.
 
 ```java
 interface Engine {
