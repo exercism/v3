@@ -43,7 +43,7 @@
       {
         "slug": "conditionals",
         "uuid": "43b8f2e3-99e9-49cc-a897-d66f0f26670d",
-        "concept": ["conditionals-if"],
+        "concepts": ["conditionals-if"],
         "prerequisites": ["booleans"]
       },
       {
@@ -53,10 +53,28 @@
         "prerequisites": ["conditionals", "numbers", "strings"]
       },
       {
+        "slug": "interfaces",
+        "uuid": "0fa73b4c-75e8-4d38-a7cf-8c1329a1f183",
+        "concepts": ["interfaces"],
+        "prerequisites": ["classes", "lists", "strings"]
+      },
+      {
         "slug": "strings",
         "uuid": "2165c331-6b0c-49b8-9555-bad577ec4fc6",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "constructors",
+        "uuid": "a85b6394-3ca5-4913-b554-b460dd49c0ea",
+        "concepts": ["constructors"],
+        "prerequisites": ["classes"]
+      },
+      {
+        "slug": "ternary-operators",
+        "uuid": "5521e413-a382-4c33-ae9c-159a4d7632ca",
+        "concepts": ["ternary-operators"],
+        "prerequisites": ["conditionals-if", "numbers"]
       }
     ],
     "practice": []
