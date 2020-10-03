@@ -80,7 +80,13 @@
         "slug": "inheritance",
         "uuid": "e7192707-7b48-4095-9816-591111910c0b",
         "concepts": ["inheritance"],
-        "prerequisites": ["classes", "strings", "boolean", "functions", "abstract"]
+        "prerequisites": [
+          "classes",
+          "strings",
+          "boolean",
+          "functions",
+          "abstract"
+        ]
       }
     ],
     "practice": []
