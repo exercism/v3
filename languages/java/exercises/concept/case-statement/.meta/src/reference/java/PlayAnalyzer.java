@@ -1,7 +1,7 @@
 public class PlayAnalyzer{
 
     //enhanced switch implementation
-    public static String analyseOnField(int shirtNum){
+    public static String onField(int shirtNum){
         String playerDescription = switch (shirtNum) {
             case 1 -> "goalie";
             case 2 -> "left back";
