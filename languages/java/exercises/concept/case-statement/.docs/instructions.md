@@ -19,10 +19,10 @@ The player descriptions are as follows:
 Implement the static `PlayAnalyzer.onField()` method to output a player description based on their shirt number.
 
 ```java
-PlayAnalyzer.analyzeOnField(10);
+PlayAnalyzer.onField(10);
 // => "striker"
 ```
 
 ### 2. Raise an alert if an unknown shirt number is encountered.
 
-Modify the `PlayAnalyzer.offField()` method to throw an `IllegalArgumentException` when a shirt number outside the range 1-11 is processed.
+Modify the `PlayAnalyzer.onField()` method to throw an `IllegalArgumentException` when a shirt number outside the range 1-11 is processed.
