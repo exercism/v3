@@ -19,7 +19,6 @@ find_the_seat([1, None, 2])
 # => 2
 ```
 
-
 ## 2. Empty a seat
 
 Define the `empty_the_seat()` function that takes two parameters. The first parameter will list all the seats available and occurpied in the auditorium. The second parameter is the seat you need to empty, that is you need to assign the seat with None.
