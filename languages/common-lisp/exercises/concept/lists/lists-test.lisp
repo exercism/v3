@@ -25,7 +25,9 @@
 
 (test adding-to-the-list "Leslie needs a way of adding items to a list"
       (is (equal '(left-handed-frobz)
-                 (add-to-list 'left-handed-frobz (new-list)))))
+                 (add-to-list 'left-handed-frobz (new-list))))
+      (is (equal '(left-handed-frobz butter)
+                 (add-to-list 'left-handed-frobz '(butter)))))
 
 (test peeking-at-the-list "Leslie needs a way to see what items are coming up on the list"
       (let ((shopping-list '(left-handed-frobz salt skquargzes butter sananab
