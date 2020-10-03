@@ -170,7 +170,7 @@
         ]
       },
       {
-        "slug": "basic-lists",
+        "slug": "lists",
         "uuid": null,
         "concepts": ["lists"],
         "prerequisites": ["cons", "symbols", "arithmetic"]

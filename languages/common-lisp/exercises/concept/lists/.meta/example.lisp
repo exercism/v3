@@ -1,4 +1,4 @@
-(defpackage basic-lists
+(defpackage lists
   (:use :cl)
   (:export :new-list
            :list-of-things
@@ -14,7 +14,7 @@
            :part-of-list
            :list-reverse))
 
-(in-package :basic-lists)
+(in-package :lists)
 
 (defun new-list ()
   (list))

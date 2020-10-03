@@ -1,4 +1,4 @@
-This issue describes how to implement the `basic-lists` concept exercise for the Common Lisp track.
+This issue describes how to implement the `lists` concept exercise for the Common Lisp track.
 
 ## Getting started
 
@@ -34,7 +34,7 @@ Please also watch the following video:
 
 ## Concepts
 
-- `basic-lists`
+- `lists`
 
 ## Prerequisites
 
