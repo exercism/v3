@@ -1,67 +1,70 @@
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
-public class PlayAnalyzerTest {
+import static org.assertj.core.api.Assertions.*;
+
+public class PlayAnalyserTest {
 
     @Test
     public void test_goal(){
-        Assert.assertEquals("goalie", PlayAnalyzer.onField(1));
+        assertThat(PlayAnalyser.onField(1).contentEquals("goalie"));
     }
 
     @Test
     @Ignore("Remove to run test")
     public void test_left_back(){
-        Assert.assertEquals("left back", PlayAnalyzer.onField(2));
+        assertThat(PlayAnalyser.onField(2).contentEquals("left back"));
     }
 
     @Test
     @Ignore("Remove to run test")
     public void test_right_back(){
-        Assert.assertEquals("right back", PlayAnalyzer.onField(5));
+        assertThat(PlayAnalyser.onField(5).contentEquals("right back"));
     }
 
     @Test
     @Ignore("Remove to run test")
     public void test_center_back(){
-        Assert.assertEquals("center back", PlayAnalyzer.onField(3));
-        Assert.assertEquals("center back", PlayAnalyzer.onField(4));
+        assertThat(PlayAnalyser.onField(3).contentEquals("center back"));
+        assertThat(PlayAnalyser.onField(4).contentEquals("center back"));
     }
 
     @Test
     @Ignore("Remove to run test")
     public void test_midfielder(){
-        Assert.assertEquals("midfielder", PlayAnalyzer.onField(6));
-        Assert.assertEquals("midfielder", PlayAnalyzer.onField(7));
-        Assert.assertEquals("midfielder", PlayAnalyzer.onField(8));
+        assertThat(PlayAnalyser.onField(6).contentEquals("midfielder"));
+        assertThat(PlayAnalyser.onField(7).contentEquals("midfielder"));
+        assertThat(PlayAnalyser.onField(8).contentEquals("midfielder"));
     }
 
     @Test
     @Ignore("Remove to run test")
     public void test_left_wing(){
-        Assert.assertEquals("left wing", PlayAnalyzer.onField(9));
+        assertThat(PlayAnalyser.onField(9).contentEquals("left wing"));
     }
 
     @Test
     @Ignore("Remove to run test")
     public void test_striker(){
-        Assert.assertEquals("striker", PlayAnalyzer.onField(10));
+        assertThat(PlayAnalyser.onField(10).contentEquals("striker"));
     }
 
     @Test
     @Ignore("Remove to run test")
     public void test_right_wing(){
-        Assert.assertEquals("right wing", PlayAnalyzer.onField(11));
+        assertThat(PlayAnalyser.onField(11).contentEquals("right wing"));
     }
 
     @Test(expected = IllegalArgumentException.class)
     @Ignore("Remove to run test")
     public void test_exception(){
-        PlayAnalyzer.onField(13);
+        PlayAnalyser.onField(13);
     }
 
     @Test(expected = IllegalArgumentException.class)
     @Ignore("Remove to run test")
     public void test_exception_negative_number(){
-        PlayAnalyzer.onField(-1);
+        PlayAnalyser.onField(-1);
     }
 }
