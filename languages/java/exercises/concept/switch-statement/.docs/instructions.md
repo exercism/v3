@@ -16,6 +16,7 @@ The player descriptions are as follows:
 10 -> "striker"
 11 -> "right wing"
 ```
+
 Implement the static `PlayAnalyzer.onField()` method to output a player description based on their shirt number.
 
 ```java
