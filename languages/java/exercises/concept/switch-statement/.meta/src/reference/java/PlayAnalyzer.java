@@ -1,23 +1,6 @@
 public class PlayAnalyzer{
-
-    //enhanced switch implementation
-    public static String onField(int shirtNum){
-        String playerDescription = switch (shirtNum) {
-            case 1 -> "goalie";
-            case 2 -> "left back";
-            case 5 -> "right back";
-            case 3, 4 -> "center back";
-            case 6, 7, 8 -> "midfielder";
-            case 9 -> "left wing";
-            case 11 -> "right wing";
-            case 10 -> "striker";
-            default -> throw new IllegalArgumentException();
-        };
-        return playerDescription;
-    }
     
-    //Traditionnal switch implementation
-/*     public static String onField(int shirtNum){
+     public static String onField(int shirtNum){
         String playerDescription = "";
         switch (shirtNum) {
             case 1:
@@ -51,5 +34,5 @@ public class PlayAnalyzer{
                 throw new IllegalArgumentException();
         }
         return playerDescription;
-    } */
+    }
 }
