@@ -66,7 +66,3 @@ N/A
 ## Implementing
 
 Remember that this is a basic exercise. It's important to have strong grasp on basic list manipulation and usage, but mastering all of the details is unimportant at this stage.
-
-## Help
-
-If you have any questions while implementing the exercise, please post the questions as comments in this issue.
