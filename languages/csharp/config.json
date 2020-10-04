@@ -126,7 +126,6 @@
         "prerequisites": [
           "inheritance",
           "nullability",
-          "overflow",
           "switch-statements"
         ]
       },
