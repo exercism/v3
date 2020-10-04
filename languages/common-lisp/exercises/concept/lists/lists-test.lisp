@@ -48,11 +48,6 @@
                  (remove-first-item
                   '(left-handed-frobz salt skquargzes butter sananab)))))
 
-(test is-it-on-the-list "Leslie needs to check if an item is already on the list"
-      (let ((shopping-list '(left-handed-frobz salt skquargzes)))
-        (is (equal '(salt skquargzes) (on-the-list-p 'salt shopping-list)))
-        (is (equal '() (on-the-list-p 'right-handed-frobz shopping-list)))))
-
 (test put-two-lists-together "Leslie needs to add one list to another"
       (is (equal '(left-handed-frobz salt skquargzes butter)
                  (list-append '(left-handed-frobz salt)
@@ -65,27 +60,6 @@
       (is (= 11 (just-how-long '(left-handed-frobz salt skquargzes butter sananab
                                  motor-oil dilithium-crystals photonic-oscillators
                                  digestive-biscuits marmalade jelly-babies)))))
-
-(test split-the-list "Leslie programs robots to help her shop, they need to split the list up"
-      (let ((shopping-list '(left-handed-frobz salt skquargzes butter sananab
-                             motor-oil dilithium-crystals photonic-oscillators
-                             digestive-biscuits marmalade jelly-babies
-                             hazramfoobles crisps chips right-handed-macaroni
-                             various-nozzles seedless-snozzberries ronopotolo
-                             cran-apple apple-cran raisins dihydrogen-oxide
-                             birthday-candles cupcakes)))
-        (is (equal '(left-handed-frobz)
-                   (part-of-list shopping-list 0 1)))
-        (is (equal '(salt skquargzes butter sananab)
-                   (part-of-list shopping-list 1 4)))
-        (is (equal '(various-nozzles seedless-snozzberries ronopotolo)
-                   (part-of-list shopping-list 15 3)))))
-
-(test reverse-the-list
-  "Leslie needs to get the list in the reverse order to start from the other side of teh store"
-  (is (equal '(sananab butter skquargzes salt left-handed-frobz)
-             (list-reverse '(left-handed-frobz salt skquargzes butter sananab)))))
-
 
 ;; Either provides human-readable results to the user or machine-readable
 ;; results to the test runner. The default upon calling `(run-tests)` is to

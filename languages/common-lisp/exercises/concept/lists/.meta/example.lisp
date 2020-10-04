@@ -40,17 +40,8 @@
 (defun remove-first-item (list)
   (rest list))
 
-(defun on-the-list-p (item list)
-  (member item list))
-
 (defun list-append (list1 list2)
   (append list1 list2))
 
 (defun just-how-long (list)
   (length list))
-
-(defun part-of-list (list start num)
-  (subseq list start (+ start num)))
-
-(defun list-reverse (list)
-  (reverse list))

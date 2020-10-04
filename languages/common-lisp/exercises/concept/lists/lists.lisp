@@ -32,12 +32,6 @@
 
 (defun remove-first-item (list))
 
-(defun on-the-list-p (item list))
-
 (defun list-append (list1 list2))
 
-(defun just-how-long (list))
-
-(defun part-of-list (list start num))
-
-(defun list-reverse (list))
+(defun just-how-long ())

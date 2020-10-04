@@ -49,15 +49,7 @@ When Leslie finds the first thing on the list on the shelf then want to remove t
 (remove-first-item '(bread butter milk)) ; => '(butter milk)
 ```
 
-## 5. Are you a member?
-
-While out shopping Leslie remembered they need something. But maybe it is already on the list? Write a function `on-the-list-p` which checks to see if a thing is a member of the list.
-
-```lisp
-(on-the-list-p 'butter '(bread butter milk)) ; => '(butter milk)
-```
-
-## 6. Bigger lists out of smaller lists
+## 5. Bigger lists out of smaller lists
 
 Leslie realized they accidentally made two shopping lists not one! Write a function called `list-append` which adds all the items from the second list provided to the end of the first list.
 
@@ -65,26 +57,10 @@ Leslie realized they accidentally made two shopping lists not one! Write a funct
 (list-append '(bread salt) '(butter milk)) ; => '(bread salt butter milk)
 ```
 
-## 7. How much longer?
+## 6. How much longer?
 
 Leslie is starting to get worried that this shopping trip is going to take quite a while. Just how many things are on this list? Write a function `just-how-long` to tell them just how long their list is.
 
 ```lisp
 (list-append '(bread milk butter salt)) ; => 4
-```
-
-## 8. Divide and conquer.
-
-The list seems pretty long. Leslie programs some robots to help her shop. But each one needs part of the list. Write a function `part-of-list` which takes a list, and two numbers, the first number is the index of the first item to put into the new list and the second is the number of items to put into that list.
-
-```lisp
-(part-of-list '(bread milk butter salt) 1 2) ; => '(milk butter)
-```
-
-## 9. Meeting in the middle.
-
-As well as giving the robots part of the shopping list, Leslie wants to have them work from the other end of the store. Leslie created the list so that the items were in the order found on the store shelves, so they want to put the list given to the robots in reverse order so they will start on the other end of the store and Leslie and the robots can meet in the middle. Help them out by writing a function `list-reverse` that will evaluate to the input list but in the opposite order.
-
-```lisp
-(list-reverse '(bread milk butter salt)) ; => '(salt butter milk bread)
 ```

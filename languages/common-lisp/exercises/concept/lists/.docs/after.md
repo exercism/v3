@@ -21,16 +21,6 @@ The language understands the arbitrary composition of up to 4 `car` or `cdr` cal
 (cadadr '((a b) (c d))) ; => D
 ```
 
-### `length`, `revsere`, and `subseq` work on other sequences too
-
-The functions `length`, `reverse`, and `subseq` are not specific to lists, but work on any sequence data type. For example, since strings are sequences:
-
-```lisp
-(length "foo") ; => 3
-(subseq "foobarbaz" 3 6) ; => "bar"
-(reverse "ottotoot") ; => "toototto"
-```
-
 ## Reference
 
 [Tutorialspoint][tutorialspoint] has a good summary of list functions and [Practical Common Lisp][pcl] is a good reference with more details.

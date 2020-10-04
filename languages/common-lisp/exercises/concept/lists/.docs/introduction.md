@@ -49,19 +49,3 @@ It is _not_ an error to request an index that is more than the length. Instead i
 ```
 
 There are also 10 helper methods for accessing the first 10 items of a list, they are named: `first`, `second`, `third`, `fourth`, `fifth`, `sixth`, `seventh`, `eighth`, `ninth`, and `tenth`.
-
-### Checking for an item in a list.
-
-A common way to check if an item is in a list is to use `member`. This function will evaluate to the `cdr` of the list which contains the item as its `car`. It will evaluate to `nil` if the item was not found.
-
-### Sub-lists
-
-A sub-list of a list can be retrieved by the use of `subseq`. This function takes a list and two indexes: the start and end index of the desired range. This range is inclusive of the starting index but non-inclusive of the ending index. The end index argument is optional and defaults to the length of the list. Note that providing starting or ending indexes which are invalid (zero, negative or greater than the length of the list) will result in an error.
-
-```lisp
-(subseq '(0 1 2 3 4 5) 1 4) ; => (1 2 3)
-```
-
-### Reversing lists
-
-A list can be reversed in order by the function `reverse` which does what it says. This is _not_ a destructive operation. `reverse` evaluates to a _new_ list which in which all the items from the original list are in reverse order.

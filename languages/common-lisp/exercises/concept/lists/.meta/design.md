@@ -19,10 +19,8 @@ Please also watch the following video:
 - Be able apply `car` / `first` and `cdr` / `rest` to get the parts of a list
 - Know about `nth` and `second`, `third` ... `tenth` for accessing elements of a list
 - Be able to use a list like a stack with `push` and `pop`
-- Know how to use `member` to test if an item is in a list
 - Be able to combine lists with `append`
-- Know which functions are list-specific and which are general to sequences
-- Be comfortable using basic sequence functions like `length`, `subseq`, and `reverse`
+- Be able to find the length of a list with `length`
 
 ## Out of scope
 
@@ -30,6 +28,7 @@ Please also watch the following video:
 - Discussion of other sequence types in lisp
 - Circular, association, or property lists
 - The advanced `cXr` accessors like `cadr` or `cdadar`.
+- `member` and sequence functions like `subseq` and `reverse`
 - More advanced sequence functions like `search`, `substitute`, or `merge`
 
 ## Concepts
@@ -51,7 +50,6 @@ Please also watch the following video:
 
 ### After
 
-- Show that sequence functions can also be used on things like strings
 - Show off some of the simpler `cXr` functions
 
 ## Representer
