@@ -1,26 +1,28 @@
-When you are beginning to code, you always assign a variable to a value. Say,
+All variables that are assigned `None` point to the same object. New instances of `None` are not created, that is `None` by nature is of type Singleton.
 
-```python
-a = 3
-b = True
-```
-
-This declares the variable as well as defines them. But when you want to just declare the variable and not define them at start you use a special built in called as `None`.
-
-If you have heard about `NULL` type in other languages then this must be familiar. `None` helps you to declare variables. These variables can be used later to be defined to a value.
+Example, when you assign 2 variables with `None`, both point to the same object.
 
 ```python
 a = None
-print(a)
-#=> None
+b = None
+a == b
+#=> True
+```
+
+The `None` Object is a singleton of class `NoneType`. So when you find the type of a variable which is assigned with `None` it will always be of type `NoneType`.
+
+```python
+a = None
 type(a)
 #=> <class 'NoneType'>
 ```
 
-In Python, `None` is a Singleton built-in which is used to declare a variable as well as can be used as `False`. Meaning if you want to check for a variable which is declared with `None`, It will be considered as `False`
+When you toggle a variable between a value and `None`, what basically happens is a reset of the variable.
 
 ```python
-a = None
-if a: #=> a will be considered as False when it interprets this line.
-    print("This will not be printed")
+
+a = [] #=> Variable 'a' is pointing to a list
+
+a = None #=> Variable 'a' is reset to an empty state. the value of a is now absent.
+
 ```

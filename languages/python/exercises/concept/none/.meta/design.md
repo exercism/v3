@@ -23,3 +23,6 @@ The goal of this exercise is to teach the student what None means and how None i
 ## Resources
 
 - [the null object](https://docs.python.org/3/library/stdtypes.html#the-null-object)
+- [edspresso_none](https://www.educative.io/edpresso/what-is-the-none-keyword-in-python)
+- [none_keyword](https://docs.python.org/3/library/constants.html#None)
+- [none_stackoverflow](https://stackoverflow.com/questions/19473185/what-is-a-none-value)

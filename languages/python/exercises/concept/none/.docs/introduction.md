@@ -1,13 +1,6 @@
-When you are beginning to code, you always assign a variable to a value. Say,
+In Python, `None` is frequently used to represent the absence of a value, it can also be used to define a `null` variable or an object.
 
-```python
-a = 3
-b = True
-```
-
-This declares the variable as well as defines them. But when you want to just declare the variable and not define them at start you use a special built in called as `None`.
-
-If you have heard about `NULL` type in other languages then this must be familiar. `None` helps you to declare variables. These variables can be used later to be defined to a value.
+If you have heard about `NULL` type in other languages then this must be familiar. `None` helps you to declare variables. These variables can be used later to be defined to a value. We can assign `None` to any variable.
 
 ```python
 a = None
@@ -17,10 +10,23 @@ type(a)
 #=> <class 'NoneType'>
 ```
 
-In Python, `None` is a Singleton built-in which is used to declare a variable as well as can be used as `False`. Meaning if you want to check for a variable which is declared with `None`, It will be considered as `False`
+Python returns `None` when you do not specify a return for a function, or if you just say `return`.
+
+```python
+def test_func():
+    pass
+test_func()
+#=> returns None
+
+def test_func2():
+    return
+#=> returns None
+```
+
+`None` evaluates to `False` when used in a conditional check.
 
 ```python
 a = None
-if a: #=> a will be considered as False when it interprets this line.
+if a: #=> a will be evaluated to False when its used in a conditional check.
     print("This will not be printed")
 ```
