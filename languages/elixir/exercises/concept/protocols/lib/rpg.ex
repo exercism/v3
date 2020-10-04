@@ -19,5 +19,5 @@ defmodule RPG do
     defstruct []
   end
 
-  # Add code here...
+  # Add code to define the protocol and its implementations below here...
 end
