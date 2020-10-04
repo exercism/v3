@@ -7,6 +7,9 @@
 
 ## Out of scope
 
+- Consolidation
+- `__protocol__/1`, `impl_for/1`
+
 ## Concepts
 
 - `protocols`

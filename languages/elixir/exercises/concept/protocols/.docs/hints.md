@@ -1,6 +1,6 @@
 ## General
 
-- Read about protocols in the [official Getting Started guide][getting-started-protocols] or on [elixirschool.com][elixir-school-enum]
+- Read about protocols in the [official Getting Started guide][getting-started-protocols] or on [elixirschool.com][elixir-school-enum].
 
 ## 1. Define edibility
 
