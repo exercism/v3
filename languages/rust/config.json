@@ -17,28 +17,28 @@
         "prerequisites": ["hashmaps", "intro-fn", "intro-types", "intro-option"]
       },
       {
-        "slug": "enums",
-        "uuid": "1924b87a-9246-456f-8fc1-111f922a8cf3",
-        "concepts": ["enums-basic"],
-        "prerequisites": ["strings-basic"]
-      },
-      {
         "slug": "numbers",
         "uuid": "b042200f-5bdd-4010-981e-626e40fd2877",
         "concepts": ["numbers", "integers", "floating-point-numbers"],
         "prerequisites": ["intro-fn"]
       },
       {
-        "slug": "options",
-        "uuid": "2445b061-6622-47cb-a7ef-9040ec02458c",
-        "concepts": ["option"],
-        "prerequisites": ["structs", "match.pattern-matching"]
+        "slug": "enums",
+        "uuid": "1924b87a-9246-456f-8fc1-111f922a8cf3",
+        "concepts": ["enums-basic"],
+        "prerequisites": ["strings-basic"]
       },
       {
         "slug": "structs",
         "uuid": "3da2420e-9de3-42e0-9127-5ef185673dbb",
         "concepts": ["structs"],
         "prerequisites": ["string-use", "floats", "integers", "signedness"]
+      },
+      {
+        "slug": "options",
+        "uuid": "2445b061-6622-47cb-a7ef-9040ec02458c",
+        "concepts": ["option"],
+        "prerequisites": ["structs", "match.pattern-matching"]
       }
     ],
     "practice": []
