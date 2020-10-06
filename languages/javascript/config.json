@@ -36,12 +36,6 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "closures",
-        "uuid": "5aa39e89-c601-4a66-ab72-5d8512d69e02",
-        "concepts": ["closures"],
-        "prerequisites": ["arrays", "booleans"]
-      },
-      {
         "slug": "nullability",
         "uuid": "19962010-7b8c-4db1-bdae-ffc857b268e5",
         "concepts": ["nullability"],
@@ -76,6 +70,12 @@
         "uuid": "39549583-1889-490a-bf98-ffb2e0aefe44",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "closures",
+        "uuid": "5aa39e89-c601-4a66-ab72-5d8512d69e02",
+        "concepts": ["closures"],
+        "prerequisites": ["arrays", "booleans"]
       }
     ],
     "practice": []
