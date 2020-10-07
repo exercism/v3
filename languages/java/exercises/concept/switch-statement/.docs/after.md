@@ -64,7 +64,7 @@ Starting with Java 14 (available as a preview before in Java 12 and 13) it is po
 
    ```java
        switch(expression) {
-           case 1 -> yield "one"           
+           case 1 -> yield "one"
            case 2 -> yield "two"
            default: yield "other number" // Removing this will result in a compile error
        }
@@ -103,26 +103,6 @@ Starting with Java 14 (available as a preview before in Java 12 and 13) it is po
 
    As the `{}` is delimiting the scope of the `case`. However it's not intuitive because `{}` are not mandatory.
    However if you use the new `->` notation it must be followed by either : a single statement/expression, a `throw` statement or a `{}` block. No more confussion!
-
-As a final note here is the resolution of the exericse using the enhanced `switch`.
-
-```java
-//enhanced switch implementation
-public static String onField(int shirtNum){
-    String playerDescription = switch(shirtNum) {
-        case 1 -> "goalie";
-        case 2 -> "left back";
-        case 5 -> "right back";
-        case 3, 4 -> "center back";
-        case 6, 7, 8 -> "midfielder";
-        case 9 -> "left wing";
-        case 11 -> "right wing";
-        case 10 -> "striker";
-        default -> throw new IllegalArgumentException();
-    };
-    return playerDescription;
-}
-```
 
 You can find more information on enhanced switch [here][switch1], [here][switch2] and on the [oracle documentation][oracle-doc].
 
