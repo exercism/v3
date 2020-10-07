@@ -1,24 +1,50 @@
+Like an _if/else_ statement, a `switch` statement allow you to change the flow of the program by conditionally executing code. The difference is that a `switch` statement can only compare the value of a primitive or string expression against pre-defined constant values.
+
+Some keywords are usefull when using a switch statement.
+
+- `switch` : this keyword allow you to declare the structure of the switch. It his follow by the expression or the variable that will make the result change.
+- `case` : you will use this one to declare the differents possibilties for the result.
+- `break` : the `break` keyword is very usefull in order to stop the execution of the switch at the end of the wanted flow. If you forget it, the program will continue and may lead to unexpected results.
+- `default` : as it's name says use it as a default result when no other case matchs your expression's result.
+
+At their simplest they test a primitive or string expression and make a decision based on its value. For example:
+
+```java
+String direction = getDirection();
+switch (direction) {
+    case "left":
+        goLeft();
+        break;
+    case "right":
+        goRight();
+        break;
+    default:
+        //otherwise
+        markTime();
+        break;
+}
+```
+
 Starting with Java 14 (available as a preview before in Java 12 and 13) it is possible to use the "enhanced" switch implementation.
 
 1. You have the possiblity to assign multiple value in a sigle case.
-   Instead of :
+   In the traditional switch-statement you can use fall-throught. In the following example `case 1` and `case 3` will execute the same stuff. This is done by `case 1` not using the `break` keyword.
 
    ```java
    switch (number) {
        case 1:
-           //do stuff
+       case 3:
+           //do same stuff
            break;
        case 2:
            //do different stuff
-           break;
-       case 3:
-           //do same stuff as case 1
            break;
        (...)
    }
    ```
 
-   You can do :
+   In the enhanced `switch expression` you can directly assign multiple value to a `case`.
+   Look at the following exemple :
 
    ```java
    switch (number) {
@@ -32,7 +58,7 @@ Starting with Java 14 (available as a preview before in Java 12 and 13) it is po
    }
    ```
 
-2. The `switch-statement` is now a `switch expression`. What is the difference ?
+2. You can now write a `switch-statement` or a `switch expression`. What is the difference ?
    Basicly a statement is expecting some strict logic where an expression can return a value.
    Instead of :
 
