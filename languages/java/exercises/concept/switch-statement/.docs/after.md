@@ -58,7 +58,7 @@ Starting with Java 14 (available as a preview before in Java 12 and 13) it is po
 
    The [`yield`][yield-keyword] works like a `return` except it's for switch expression. As `yield` terminates the expression `break` is not needed here.
 
-3. An other main difference between the `switch statement` and the `switch expression` : in a `switch expression` you _**MUST**_ cover all the case in a `switch expression`. Either by mutliple `case` or using a `default` statement.
+3. Another difference between _switch statements_ and _switch expressions_: in _switch expressions_ you _**MUST**_ cover all cases. Either by having a `case` for all possible values or using a `default` case.
 
 4. You can use `->` instead of `:`. The `->` allow you to not include the `break` keyword. Both notation can be used but in a switch you have to stick with only one.
 
