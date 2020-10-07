@@ -16,7 +16,7 @@ After completing this exercise, the student should:
 
 ## Out of scope
 
-- Enumerable methos like select, reject, compact, etc.
+- Enumerable methods like select, reject, compact, etc.
 - Memory and performance characteristics.
 
 ## Concepts
