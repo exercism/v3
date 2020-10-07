@@ -64,13 +64,11 @@ Starting with Java 14 (available as a preview before in Java 12 and 13) it is po
 
    ```java
        switch(expression) {
-           case 1 -> //do something
-           case 2: //do something
-           (...)
+           case 1 -> yield "one"           
+           case 2 -> yield "two"
+           default: yield "other number" // Removing this will result in a compile error
        }
    ```
-
-   Won't work!
 
 5. The scope. Traditionnals `switch` can lead to some unexected behavior because of it's scope as there is only one scope for the whole `switch`.
 
