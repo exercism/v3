@@ -75,6 +75,18 @@
         "uuid": "5521e413-a382-4c33-ae9c-159a4d7632ca",
         "concepts": ["ternary-operators"],
         "prerequisites": ["conditionals-if", "numbers"]
+      },
+      {
+        "slug": "inheritance",
+        "uuid": "e7192707-7b48-4095-9816-591111910c0b",
+        "concepts": ["inheritance"],
+        "prerequisites": [
+          "classes",
+          "strings",
+          "boolean",
+          "functions",
+          "abstract"
+        ]
       }
     ],
     "practice": []
