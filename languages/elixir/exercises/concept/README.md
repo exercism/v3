@@ -16,7 +16,7 @@ These are the concept exercises that have currently been implemented, as well as
 | `bitstrings`                | `bitstrings`, `tail-call-recursion`                        | `charlists`, `recursion`, `pattern-matching`                                                   |
 | `booleans`                  | `booleans`                                                 | `basics`                                                                                       |
 | `charlists`                 | `charlists`, `case`                                        | `lists`, `recursion`, `pattern-matching`, `guards`                                             |
-| `conditionals`              | `conditionals`, `atoms`                                    | `booleans`                                                                                     |
+| `cond`                      | `cond`, `atoms`                                            | `booleans`                                                                                     |
 | `enum`                      | `enum`                                                     | `lists`, `maps`, `atoms`, `tuples`, `nil`, `anonymous-functions`                               |
 | `errors`                    | `errors`, `try-rescue`                                     | `anonymous-functions`, `pattern-matching`, `structs`                                           |
 | `exceptions`                | `exceptions`                                               | `errors`, `access-behaviour`                                                                   |
@@ -24,7 +24,7 @@ These are the concept exercises that have currently been implemented, as well as
 | `lists`                     | `lists`, `string-literals`                                 | `booleans`                                                                                     |
 | `list-comprehensions`       | `list-comprehensions`                                      | `keyword-lists`, `lists`, `maps`, `pattern-matching`                                           |
 | `maps`                      | `maps`, `module-attributes-as-constants`                   | `lists`, `tuples`, `anonymous-functions`, `default-arguments`                                  |
-| `multiple-clause-functions` | `multiple-clause-functions`, `guards`, `default-arguments` | `conditionals`, `string-literals`                                                              |
+| `multiple-clause-functions` | `multiple-clause-functions`, `guards`, `default-arguments` | `cond`, `string-literals`                                                                      |
 | `nil`                       | `nil`, `if-conditional`                                    | `booleans`, `strings`                                                                          |
 | `numbers`                   | `integers`, `floating-point-numbers`                       | `basics`                                                                                       |
 | `processes`                 | `processes`, `pids`                                        | `atoms`, `recursion`, `pattern-matching`, `tuples`                                             |

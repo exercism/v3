@@ -171,7 +171,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/cond",
         "exercise": "conditionals",
         "track": "elixir",
         "language": "Elixir"
@@ -615,8 +615,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/cond",
+        "exercise": "cond",
         "track": "elixir",
         "language": "Elixir"
       },

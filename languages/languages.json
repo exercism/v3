@@ -1424,7 +1424,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/conditionals",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/cond",
           "slug": "conditionals",
           "concepts": [
             {

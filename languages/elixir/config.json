@@ -29,9 +29,9 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "conditionals",
+        "slug": "cond",
         "uuid": "b26a2f11-d80a-42b9-881a-3575a83ad211",
-        "concepts": ["conditionals", "atoms"],
+        "concepts": ["cond", "atoms"],
         "prerequisites": ["booleans"]
       },
       {
@@ -48,7 +48,7 @@
           "guards",
           "default-arguments"
         ],
-        "prerequisites": ["conditionals", "string-literals"]
+        "prerequisites": ["cond", "string-literals"]
       },
       {
         "slug": "anonymous-functions",
