@@ -14,7 +14,7 @@ A list is represented by the values delimited with parentheses. (Thus Common Lis
 
 ### Creating Lists
 
-One can simply type in a quoted list like this: `'(1, two, "III")` and that will cause a list to be created and evaluated (it evaluates to: `(1, two", "III")`.
+One can simply type in a quoted list like this: `'(1 two "III")` and that will cause a list to be created and evaluated (it evaluates to: `(1 two" "III")`.
 
 There are also two main functions used to create lists: `list` and `cons`.
 

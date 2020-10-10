@@ -1,6 +1,20 @@
 ## Summary
 
-Lists are a very common datatype in Common Lisp. They can be constructed via `list` or `cons` or even just quoting `'(a b c)`. Elements of a list can be accessed by index via `nth`, the helper functions `first` through `tenth`.
+Lists are a very common datatype in Common Lisp. They can be constructed via `list` or `cons` or even just quoting `'(a b c)`.
+
+```lisp
+'(1 2 3) ; => (1 2 3)
+(cons 1 (const 2 3)) ; => (1 2 3)
+(list 1 2 3) ; => (1 2 3)
+```
+
+The first element and rest of a list (called the `car` and the `cdr` respectively) can be accessed with the `car` and `cdr` functions or their aliases `first` and `rest`. The elements of a list can also be accessed by index via `nth`, or the helper functions `first` through `tenth`.
+
+```lisp
+(car '(1 2 3)) ; => 1
+(cdr '(1 2 3)) ; => (2 3)
+(nth 1 '(1 2 3)) ; => 2
+```
 
 While lists can be though of as simply sequences of values they are also a recursive data structure in that each element of a list may itself be a list.
 
@@ -10,7 +24,7 @@ While lists can be though of as simply sequences of values they are also a recur
 
 Back before more specialized data structures were added to the Lisp family of languages lists were used for everything. By creating abstractions (such as getter and setter functions) around list structures (and their nested values) one can uses lists to implement complex data structures. To simplify the accessing of data in nested lists the language can parse the use of "composed" `car` and `cdr` calls.
 
-The language understands the arbitrary composition of up to 4 `car` or `cdr` calls. These functions have names which begin with `c` and end with `r` and between which are up to 4 `a` or `d` characters. The language interprets those functions as if they were a functional composition of the respective `car` or `cdr` calls. For example:
+The language defines helper functions for the arbitrary composition of up to 4 `car` or `cdr` calls. These functions have names which begin with `c` and end with `r` and between which are up to 4 `a` or `d` characters. The language interprets those functions as if they were a functional composition of the respective `car` or `cdr` calls. For example:
 
 ```lisp
 (caar '((a b) (c d))) ; => A
