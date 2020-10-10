@@ -18,9 +18,9 @@ This exercise deals with sanitizing German names to only use ASCII characters.
 
 #### Implementations
 
-| Track  | Exercise                      | Changes |
-| ------ | ----------------------------- | ------- |
-| Elixir | [case][implementation-elixir] | None    |
+| Track  | Exercise                           | Changes |
+| ------ | ---------------------------------- | ------- |
+| Elixir | [charlists][implementation-elixir] | None    |
 
 ---
 
