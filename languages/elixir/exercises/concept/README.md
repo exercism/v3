@@ -12,7 +12,7 @@ These are the concept exercises that have currently been implemented, as well as
 | `agent`                     | `agent`                                                    | `processes`, `maps`, `structs`                                                                 |
 | `anonymous-functions`       | `anonymous-functions`, `closures`, `bit-manipulation`      | `basics`                                                                                       |
 | `basics`                    | `basics`                                                   | none                                                                                           |
-| `binary-matching`           | `binaries`                                                 | `bitstrings`, `strings`, `pattern-matching`, `if-conditional`                                  |
+| `binary-matching`           | `binaries`                                                 | `bitstrings`, `strings`, `pattern-matching`, `if`                                              |
 | `bitstrings`                | `bitstrings`, `tail-call-recursion`                        | `charlists`, `recursion`, `pattern-matching`                                                   |
 | `booleans`                  | `booleans`                                                 | `basics`                                                                                       |
 | `charlists`                 | `charlists`, `case`                                        | `lists`, `recursion`, `pattern-matching`, `guards`                                             |
@@ -20,16 +20,16 @@ These are the concept exercises that have currently been implemented, as well as
 | `enum`                      | `enum`                                                     | `lists`, `maps`, `atoms`, `tuples`, `nil`, `anonymous-functions`                               |
 | `errors`                    | `errors`, `try-rescue`                                     | `anonymous-functions`, `pattern-matching`, `structs`                                           |
 | `exceptions`                | `exceptions`                                               | `errors`, `access-behaviour`                                                                   |
-| `keyword-lists`             | `keyword-lists`                                            | `lists`, `tuples`, `atoms`, `if-conditional`, `default-arguments`                              |
+| `keyword-lists`             | `keyword-lists`                                            | `lists`, `tuples`, `atoms`, `if`, `default-arguments`                                          |
 | `lists`                     | `lists`, `string-literals`                                 | `booleans`                                                                                     |
 | `list-comprehensions`       | `list-comprehensions`                                      | `keyword-lists`, `lists`, `maps`, `pattern-matching`                                           |
 | `maps`                      | `maps`, `module-attributes-as-constants`                   | `lists`, `tuples`, `anonymous-functions`, `default-arguments`                                  |
 | `multiple-clause-functions` | `multiple-clause-functions`, `guards`, `default-arguments` | `cond`, `string-literals`                                                                      |
-| `nil`                       | `nil`, `if-conditional`                                    | `booleans`, `strings`                                                                          |
+| `nil`                       | `nil`, `if`                                                | `booleans`, `strings`                                                                          |
 | `numbers`                   | `integers`, `floating-point-numbers`                       | `basics`                                                                                       |
 | `processes`                 | `processes`, `pids`                                        | `atoms`, `recursion`, `pattern-matching`, `tuples`                                             |
 | `regular-expressions`       | `regular-expressions`                                      | `strings`                                                                                      |
-| `streams`                   | `streams`, `ranges`, `pipe-operator`                       | `enum`, `tuples`, `if-conditional`                                                             |
+| `streams`                   | `streams`, `ranges`, `pipe-operator`                       | `enum`, `tuples`, `if`                                                                         |
 | `strings`                   | `strings`                                                  | `lists`, `pattern-matching`                                                                    |
 | `structs`                   | `structs`, `static-access-operator`                        | `maps`, `multiple-clause-functions`, `pattern-matching`, `strings`, `nil`, `default-arguments` |
 | `recursion`                 | `recursion`                                                | `lists`, `pattern-matching`, `multiple-clause-functions`, `guards`                             |
