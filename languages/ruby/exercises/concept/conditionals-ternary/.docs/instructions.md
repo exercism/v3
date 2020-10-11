@@ -26,7 +26,7 @@ Rewrite the `Moviegoer#ticket_price` method to utilize the ternary operator.
   end
 ```
 
-## 3. Check if a moviegoer is entitled to free popcorn 
+## 3. Check if a moviegoer is entitled to free popcorn
 
 ```ruby
   def claim_free_popcorn

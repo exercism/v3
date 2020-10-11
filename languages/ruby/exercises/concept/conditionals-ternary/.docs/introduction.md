@@ -18,4 +18,4 @@ can be re-written as:
 traffic_light == 'green' ? cross_the_road : wait
 ```
 
-The code on the left side of the `?` is the condition and the code on the right contains the two possible branches, separated by the `:`. If the condition is *true*, the code on the *left* side of the `:` is executed; if the condition is *false*, then the code on the *right* of the `:` gets executed.
+The code on the left side of the `?` is the condition and the code on the right contains the two possible branches, separated by the `:`. If the condition is _true_, the code on the _left_ side of the `:` is executed; if the condition is _false_, then the code on the _right_ of the `:` gets executed.
