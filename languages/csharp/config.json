@@ -100,6 +100,17 @@
         ]
       },
       {
+        "slug": "exceptions",
+        "uuid": "b140614f-36df-4ce9-a539-97a81304b941",
+        "concepts": ["exceptions"],
+        "prerequisites": [
+          "inheritance",
+          "nullability",
+          "overflow",
+          "switch-statements"
+        ]
+      },
+      {
         "slug": "expression-bodied-members",
         "uuid": "27221c37-177e-437b-b423-977e46695db9",
         "concepts": [
@@ -116,17 +127,6 @@
           "datetimes",
           "exceptions",
           "properties",
-          "switch-statements"
-        ]
-      },
-      {
-        "slug": "exceptions",
-        "uuid": "b140614f-36df-4ce9-a539-97a81304b941",
-        "concepts": ["exceptions"],
-        "prerequisites": [
-          "inheritance",
-          "nullability",
-          "overflow",
           "switch-statements"
         ]
       },
@@ -337,12 +337,6 @@
         "prerequisites": ["classes", "enums", "inheritance"]
       },
       {
-        "slug": "tuples",
-        "uuid": "8bb88ab5-3cde-4ebd-8eef-03323ebfd700",
-        "concepts": ["tuples"],
-        "prerequisites": ["strings"]
-      },
-      {
         "slug": "time",
         "uuid": "61dd2e1c-94bb-4c92-95ad-6460a7677884",
         "concepts": ["time", "timezone"],
@@ -352,6 +346,12 @@
           "strings",
           "switch-statements"
         ]
+      },
+      {
+        "slug": "tuples",
+        "uuid": "8bb88ab5-3cde-4ebd-8eef-03323ebfd700",
+        "concepts": ["tuples"],
+        "prerequisites": ["strings"]
       },
       {
         "slug": "user-defined-exceptions",

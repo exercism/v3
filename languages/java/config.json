@@ -35,10 +35,10 @@
         "prerequisites": ["strings"]
       },
       {
-        "slug": "numbers",
-        "uuid": "3f451c6b-04e2-4b08-8bb0-7dcd2ec5b8f4",
-        "concepts": ["numbers"],
-        "prerequisites": ["basics"]
+        "slug": "classes",
+        "uuid": "2ae791e9-eb7a-4344-841d-0c4797e5106c",
+        "concepts": ["classes"],
+        "prerequisites": ["conditionals", "numbers", "strings"]
       },
       {
         "slug": "conditionals",
@@ -47,10 +47,10 @@
         "prerequisites": ["booleans"]
       },
       {
-        "slug": "classes",
-        "uuid": "2ae791e9-eb7a-4344-841d-0c4797e5106c",
-        "concepts": ["classes"],
-        "prerequisites": ["conditionals", "numbers", "strings"]
+        "slug": "constructors",
+        "uuid": "a85b6394-3ca5-4913-b554-b460dd49c0ea",
+        "concepts": ["constructors"],
+        "prerequisites": ["classes"]
       },
       {
         "slug": "interfaces",
@@ -59,16 +59,16 @@
         "prerequisites": ["classes", "lists", "strings"]
       },
       {
+        "slug": "numbers",
+        "uuid": "3f451c6b-04e2-4b08-8bb0-7dcd2ec5b8f4",
+        "concepts": ["numbers"],
+        "prerequisites": ["basics"]
+      },
+      {
         "slug": "strings",
         "uuid": "2165c331-6b0c-49b8-9555-bad577ec4fc6",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
-      },
-      {
-        "slug": "constructors",
-        "uuid": "a85b6394-3ca5-4913-b554-b460dd49c0ea",
-        "concepts": ["constructors"],
-        "prerequisites": ["classes"]
       },
       {
         "slug": "ternary-operators",
@@ -81,6 +81,18 @@
         "uuid": "5eb11198-807c-469f-903e-57b4f931c02c",
         "concepts": ["switch-statement"],
         "prerequisites": ["classes", "methods", "variables"]
+      },
+      {
+        "slug": "inheritance",
+        "uuid": "e7192707-7b48-4095-9816-591111910c0b",
+        "concepts": ["inheritance"],
+        "prerequisites": [
+          "classes",
+          "strings",
+          "boolean",
+          "functions",
+          "abstract"
+        ]
       }
     ],
     "practice": []
