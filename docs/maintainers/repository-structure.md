@@ -45,6 +45,7 @@ The following labels are used to categorize [issues in the v3 repository][github
 - [type/improve-reference-doc][github-issues-type-improve-reference-doc]: Improve an existing reference document
 - [type/new-student-facing-doc][github-issues-type-new-student-facing-doc]: Add a new student-facing document
 - [type/improve-student-facing-doc][github-issues-type-improve-student-facing-doc]: Improve an existing student-facing document
+- [type/launch-checklist][github-issues-type-launch-checklist]: Things that need to be done once a track is sufficiently close to launch
 - [type/ci][github-issues-type-ci]: Everything related to Continuous Integration.
 - [type/discussion][github-issues-type-discussion]: Discussion regarding v3.
 - [type/documentation][github-issues-type-documentation]: Improvements or additions to documentation.
@@ -103,6 +104,7 @@ You can combine labels to find the issues you'd like, e.g. to [list all the issu
 [github-issues-type-improve-reference-doc]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-reference-doc
 [github-issues-type-new-student-facing-doc]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fnew-student-facing-doc
 [github-issues-type-improve-student-facing-doc]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atype%2Fimprove-student-facing-doc
+[github-issues-type-launch-checklist]: https://github.com/exercism/v3/labels/type%2Flaunch-checklist
 [github-issues-type-ci]: https://github.com/exercism/v3/labels/type%2Fci
 [github-issues-type-discussion]: https://github.com/exercism/v3/labels/type%2Fdiscussion
 [github-issues-type-documentation]: https://github.com/exercism/v3/labels/type%2Fdocumentation

@@ -1,13 +1,13 @@
 name: "Pull Request Labeler"
 
 on:
-- pull_request
+- pull_request_target
 
 jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/labeler@04aa5dbc72538e0b9194c658a9ad6026b865d039 # 2.1.0
-      continue-on-error: true
+    - uses: actions/labeler@5f867a63be70efff62b767459b009290364495eb # 2.2.0
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        sync-labels: true # Remove labels when matching files are reverted or no longer changed by the PR

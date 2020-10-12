@@ -4,11 +4,11 @@
 
 ## 1. Reply to a correct guess
 
-- You can use a [constant pattern][constant-pattern] to match on a specific number.
+- You can use a [constant pattern][constant-patterns] to match on a specific number.
 
 ## 2. Reply to a close guess
 
-- You can either use a [constant pattern][constant-pattern] or a [variable pattern][variable-patterns] and a [guard][guards].
+- You can either use a [constant pattern][constant-patterns] or a [variable pattern][variable-patterns] and a [guard][guards].
 
 ## 3. Reply to too low guesses
 
