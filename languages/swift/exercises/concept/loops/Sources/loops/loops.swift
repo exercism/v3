@@ -1,15 +1,17 @@
-func hashIDs(_ ids: [Int]) -> [(Int, Int)] {
-  fatalError("Please implement the hashIDs(_:) function")
+func timeToPrepare(drinks: [String]) -> Double {
+  fatalError("Please implement the timeToPrepare(drinks:) function")
 }
 
-func digitalSum(_ number: Int) -> Int {
-  fatalError("Please implement the digitalSum(_:) function")
+func makeWedges(needed: Int, limes: [String]) -> Int {
+  fatalError("Please implement the makeWedges(needed:limes:) function")
 }
 
-func rankingLevel(hashedID id: Int) -> Int {
-  fatalError("Please implement the rankingLevel(hashedID:) function")
+func finishShift(minutesLeft: Int, remainingOrders: [[String]]) -> [[String]] {
+  fatalError("Please implement the finishShift(minutesLeft:remainingOrders:) function")
 }
 
-func rankIDs(hashedIDs: [(Int, Int)]) -> [(Int, Int)] {
-  fatalError("Please implement the rankIDs(hashedIDs:) function")
+func orderTracker(orders: [(drink: String, time: String)]) -> (
+  beer: (first: String, last: String, total: Int)?, soda: (first: String, last: String, total: Int)?
+) {
+  fatalError("Please implement the orderTracker(orders:) function")
 }

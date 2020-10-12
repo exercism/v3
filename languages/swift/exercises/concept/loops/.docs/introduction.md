@@ -92,16 +92,3 @@ rather than:
 5
 6
 ```
-
-Similarly, the `break` keyword can be used to exit a loop early, without executing the rest of the current iteration. When a `break` is executed, the loop is exited and execution picks up with the first line of code following the loop.
-
-```swift
-for fruit in ["banana", "grapes", "apple", "strawberry", "kiwi", "lemon"] {
-  if !fruit.count.isMultiple(of: 2) { break }
-  print(fruit)
-}
-
-// prints:
-// banana
-// grapes
-```

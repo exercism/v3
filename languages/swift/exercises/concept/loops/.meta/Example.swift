@@ -1,43 +1,75 @@
-func hashIDs(_ ids: [Int]) -> [(Int, Int)] {
-  let m = 3_999_999_979
-  let p = 2_305_843_009
-  var result = [(Int, Int)]()
-  for id in ids {
-    guard 1..<m ~= id else { continue }
-    result.append((id, id * p % m))
+func timeToPrepare(drinks: [String]) -> Double {
+  func timeFor(_ drink: String) -> Double {
+    switch drink {
+    case "beer", "soda", "water": return 0.5
+    case "shot": return 1.0
+    case "mixed drink": return 1.5
+    case "fancy drink": return 2.5
+    case "frozen drink": return 3.0
+    default: return 0
+    }
   }
-  return result
+  var time = 0.0
+  for drink in drinks {
+    time += timeFor(drink)
+  }
+  return time
 }
 
-func digitalSum(_ number: Int) -> Int {
-  guard number > 0 else { return 0 }
-  var num = number
-  var sum = 0
+func makeWedges(needed: Int, limes: [String]) -> Int {
+  func wedgesFrom(_ lime: String) -> Int {
+    switch lime {
+    case "small": return 6
+    case "medium": return 8
+    case "large": return 10
+    default: return 0
+    }
+  }
+  var stillNeed = needed
+  var limes = limes
+  var limesUsed = 0
+  while stillNeed > 0 && !limes.isEmpty {
+    stillNeed -= wedgesFrom(limes.removeFirst())
+    limesUsed += 1
+  }
+  return limesUsed
+}
+
+func finishShift(minutesLeft: Int, remainingOrders: [[String]]) -> [[String]] {
+  var timeLeft = Double(minutesLeft)
+  var orders = remainingOrders
   repeat {
-    sum += num % 10
-    num /= 10
-  } while num > 0
-  return sum
+    timeLeft -= timeToPrepare(drinks: orders.removeFirst())
+  } while timeLeft > 0 && !orders.isEmpty
+  return orders
 }
 
-func rankingLevel(_ id: Int) -> Int {
-  guard id > 0 else { return 0 }
-  guard id > 1 else { return 1 }
-  var current = id
-  var level = 0
-  while current.isMultiple(of: digitalSum(current)) {
-    level += 1
-    let sum = digitalSum(current)
-    guard sum > 1 else { break }
-    current /= sum
+func orderTracker(orders: [(drink: String, time: String)])
+  -> (
+    beer: (first: String, last: String, total: Int)?,
+    soda: (first: String, last: String, total: Int)?
+  )
+{
+  var beerStats: (first: String, last: String, total: Int)? = nil
+  var sodaStats: (first: String, last: String, total: Int)? = nil
+  for (drink, time) in orders {
+    switch drink {
+    case "beer":
+      if beerStats == nil {
+        beerStats = (first: time, last: time, total: 1)
+      } else {
+        beerStats?.last = time
+        beerStats?.total += 1
+      }
+    case "soda":
+      if sodaStats == nil {
+        sodaStats = (first: time, last: time, total: 1)
+      } else {
+        sodaStats?.last = time
+        sodaStats?.total += 1
+      }
+    default: continue
+    }
   }
-  return level
-}
-
-func rankIDs(hashedIDs: [(Int, Int)]) -> [(Int, Int)] {
-  var result = [(Int, Int)]()
-  for (id, hash) in hashedIDs {
-    result.append((id, rankingLevel(hash)))
-  }
-  return result
+  return (beer: beerStats, soda: sodaStats)
 }
