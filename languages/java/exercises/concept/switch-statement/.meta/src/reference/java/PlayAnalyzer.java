@@ -1,5 +1,5 @@
 public class PlayAnalyzer {
-     public static String onField(int shirtNum) {
+    public static String onField(int shirtNum) {
         String playerDescription = "";
         switch (shirtNum) {
             case 1:
