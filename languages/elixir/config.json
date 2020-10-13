@@ -29,9 +29,9 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "conditionals",
+        "slug": "cond",
         "uuid": "b26a2f11-d80a-42b9-881a-3575a83ad211",
-        "concepts": ["conditionals", "atoms"],
+        "concepts": ["cond", "atoms"],
         "prerequisites": ["booleans"]
       },
       {
@@ -48,7 +48,7 @@
           "guards",
           "default-arguments"
         ],
-        "prerequisites": ["conditionals", "string-literals"]
+        "prerequisites": ["cond", "string-literals"]
       },
       {
         "slug": "anonymous-functions",
@@ -75,7 +75,7 @@
       {
         "slug": "nil",
         "uuid": "b6ae6cb4-f908-436f-916c-fa847e4a82fb",
-        "concepts": ["nil", "if-conditional"],
+        "concepts": ["nil", "if"],
         "prerequisites": ["strings", "booleans"]
       },
       {
@@ -116,12 +116,7 @@
         "slug": "binary-matching",
         "uuid": "1653d476-5354-4d99-a990-1db418a7281c",
         "concepts": ["binaries"],
-        "prerequisites": [
-          "strings",
-          "pattern-matching",
-          "if-conditional",
-          "bitstrings"
-        ]
+        "prerequisites": ["strings", "pattern-matching", "if", "bitstrings"]
       },
       {
         "slug": "bitstrings",
@@ -171,13 +166,7 @@
         "slug": "keyword-lists",
         "uuid": "921a03be-662a-4aea-b8fc-a87d199b1528",
         "concepts": ["keyword-lists"],
-        "prerequisites": [
-          "lists",
-          "tuples",
-          "atoms",
-          "if-conditional",
-          "default-arguments"
-        ]
+        "prerequisites": ["lists", "tuples", "atoms", "if", "default-arguments"]
       },
       {
         "slug": "try-rescue-else-after",
@@ -195,7 +184,7 @@
         "slug": "streams",
         "uuid": "3e2f8bc6-20b4-4e8f-a658-9c270342208e",
         "concepts": ["streams", "pipe-operator", "ranges"],
-        "prerequisites": ["enum", "tuples", "if-conditional"]
+        "prerequisites": ["enum", "tuples", "if"]
       },
       {
         "slug": "agent",

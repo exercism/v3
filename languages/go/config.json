@@ -30,16 +30,16 @@
         "prerequisites": []
       },
       {
-        "slug": "bytes-and-runes",
-        "uuid": null,
-        "concepts": ["bytes", "runes"],
-        "prerequisites": ["strings", "iteration", "conditionals", "slices"]
-      },
-      {
         "slug": "booleans",
         "uuid": "d09a49d4-b69c-40a2-ae7e-8fde4ba4c7c7",
         "concepts": ["booleans"],
         "prerequisites": ["variables"]
+      },
+      {
+        "slug": "bytes-and-runes",
+        "uuid": null,
+        "concepts": ["bytes", "runes"],
+        "prerequisites": ["strings", "iteration", "conditionals", "slices"]
       },
       {
         "slug": "channels",
@@ -115,16 +115,22 @@
         "prerequisites": ["numbers", "conditionals"]
       },
       {
-        "slug": "iteration",
+        "slug": "goroutines",
         "uuid": null,
-        "concepts": ["iteration"],
-        "prerequisites": ["numbers", "conditionals"]
+        "concepts": ["goroutines"],
+        "prerequisites": ["functions", "iteration", "anonymous-functions"]
       },
       {
         "slug": "interfaces",
         "uuid": null,
         "concepts": ["interfaces"],
         "prerequisites": ["methods", "empty-interface", "nil"]
+      },
+      {
+        "slug": "iteration",
+        "uuid": null,
+        "concepts": ["iteration"],
+        "prerequisites": ["numbers", "conditionals"]
       },
       {
         "slug": "maps",
@@ -145,18 +151,6 @@
         "prerequisites": ["defer"]
       },
       {
-        "slug": "zero-value",
-        "uuid": "7b265cc8-8f88-4de1-b653-10a384e6c7e2",
-        "concepts": ["zero-value", "nil"],
-        "prerequisites": [
-          "functions",
-          "numbers",
-          "strings",
-          "pointers",
-          "booleans"
-        ]
-      },
-      {
         "slug": "numbers",
         "uuid": "88215fa2-eba8-430e-988f-21a924f18f7b",
         "concepts": ["numbers", "conditionals"],
@@ -175,22 +169,16 @@
         "prerequisites": ["variables"]
       },
       {
-        "slug": "reflection",
-        "uuid": null,
-        "concepts": ["reflection"],
-        "prerequisites": ["interfaces", "empty-interface"]
-      },
-      {
-        "slug": "goroutines",
-        "uuid": null,
-        "concepts": ["goroutines"],
-        "prerequisites": ["functions", "iteration", "anonymous-functions"]
-      },
-      {
         "slug": "range-iteration",
         "uuid": null,
         "concepts": ["range-iteration"],
         "prerequisites": ["iteration", "maps", "slices"]
+      },
+      {
+        "slug": "reflection",
+        "uuid": null,
+        "concepts": ["reflection"],
+        "prerequisites": ["interfaces", "empty-interface"]
       },
       {
         "slug": "select",
@@ -239,6 +227,18 @@
         "uuid": null,
         "concepts": ["type-conversion"],
         "prerequisites": ["strings", "numbers"]
+      },
+      {
+        "slug": "zero-value",
+        "uuid": "7b265cc8-8f88-4de1-b653-10a384e6c7e2",
+        "concepts": ["zero-value", "nil"],
+        "prerequisites": [
+          "functions",
+          "numbers",
+          "strings",
+          "pointers",
+          "booleans"
+        ]
       }
     ],
     "practice": []
