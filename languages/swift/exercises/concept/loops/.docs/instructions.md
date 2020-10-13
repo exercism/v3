@@ -7,7 +7,7 @@ Different drinks take different amount of time to prepare: `"beer"`, `"soda"`, a
 Implement the function `timeToPrepare(drinks: [String]) -> Double` which takes a non-empty array of drinks and returns the total time required to make the order.
 
 ```swift
-timeToPrepare(drinks: ["beer", "frozen drink", "shot])
+timeToPrepare(drinks: ["beer", "frozen drink", "shot"])
 // => 4.5
 ```
 

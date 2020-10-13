@@ -29,7 +29,23 @@ print("Liftoff!")
 // Liftoff!
 ```
 
-# Add in bit about while let x = blah? { … }
+### Optional binding loops
+
+One common variant of while loops in Swift is the optional binding while loop. These loops repeat as long as the call to some function that yields an optional value returns a non-`nil` value. That (non-optional) value is then boud to a name of your choice and can be used in the body of the loop.
+
+```swift
+var arr = [1,2,3]
+while let count = arr.popLast() {
+  print("\(count)…")
+}
+print("Liftoff!")
+
+// prints:
+// 3…
+// 2…
+// 1…
+// Liftoff!
+```
 
 ### repeat-while loops
 
