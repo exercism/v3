@@ -26,7 +26,7 @@ This concept exercise should convey a basic understanding of how to perform loop
 ## Prerequisites
 
 - `arrays`
-- `strings`
+- `optionals`
 - `tuples`
 
 ## Analyzer

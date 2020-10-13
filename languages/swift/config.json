@@ -74,7 +74,7 @@
           "labels",
           "control-transfer"
         ],
-        "prerequisites": ["arrays", "strings", "tuples"]
+        "prerequisites": ["arrays", "optionals", "tuples"]
       },
       {
         "slug": "numbers",
