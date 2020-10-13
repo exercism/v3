@@ -20,12 +20,12 @@
   - compile time?
 - `typedesc`
 - `distinct`
+
   - derived from base type
   - does not imply relation between base type and subtype
   - `distinctBase`
   - type conversion
   - retain ordinality
-  
 
 #### Ordinal types
 
@@ -122,13 +122,15 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 - use `$` to convert to nim string
 
 #### Structered types
+
 - `array`, `seq`, `varargs`, `openarray` are a homogeneous type (elems of same type
-  - type is inferred by 
+  - type is inferred by
 - lower bound and higher bound with `low` & `high` respectively
 - `len`
 - element access, `x[i]` for the i-th element
 
 #### `array`
+
 - fixed length
 - array constructor `[]`
 - indexed by ordinal type
@@ -137,6 +139,7 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
   - `succ(lastIndex)` if index is left out
 
 #### `seq`
+
 - simlar to array
 - dynamic length
 - indexed from `0..len(seq)-1`
@@ -144,45 +147,53 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 - `add`, `&`, `&=`, pop
 
 #### `openArray`
+
 - can refer to all forms of array like types (`string`, `seq`, `array`)
 - `len`, `low`, `high`
 - nested `openArray` is not Supported
 
 #### `varargs`
+
 - variable number of arguments that can be passed to a `proc` that are convereted to an `array`
 - last parameter in the procedure header
 - type conversions
   - second parameter in type instatitation as a reference to a `proc`
 
-####  `UncheckedArray`
+#### `UncheckedArray`
+
 - bounds aren't checked
 - translated to C array of undetermined size
 - the base type may not contain GC'ed memory (unverified)
 
 #### `object` & `tuples`
+
 - heterogeneous storage containers
 - name fields of a type
 - assignment operator `=` copies each compenent by default
 - constructed with `()`
 
 #### `tuples`
+
 - fields are ordered
 - "Tuples are meant for heterogeneous storage types with no overhead and few abstraction possibilities" from manual
   - order matter for construction
 - tuples are equivalent if they have the same fields in the same order with identical names
 - tuple types defined in 2 ways:
   - `type x = tuple[x: int, y: char]`
-  - or 
+  - or
+
 ```nim
 type
   Person = tuple
     name: string
     age: natural
 ```
+
 - unamed tuple are defined with `(type1, type2...)`
   - tuples with one unamed fied can be defined with a trailing comma `(type1)`
 
 #### `object`
+
 - inheritance
 - information hiding `*`
 - definition
@@ -190,14 +201,15 @@ type
 - construction requires names for the fields
 
 ##### Object variants
+
 - "Object variants are tagged unions discriminated via a enumerated type used for runtime type flexibility, mirroring the concepts of sum types and algebraic data types (ADTs) as found in other languages" (from manual)
   - an object that is of a single type that has varying (also number) of fields discriminated via an `enum` type
 - advantages
   - no casting is needed between variations
   - exceptions are raise for incorrect field access
-- discriminated by a `case` statement 
+- discriminated by a `case` statement
 - the discriminating field has some rules:
-  - assignment restricted such that a change can't change the `of` branch of the case statement 
+  - assignment restricted such that a change can't change the `of` branch of the case statement
   - it's address can't be taken
 - discrminator has to be statically (compilte-time) known for object construction
   - 2 way to "get around" this:
@@ -205,13 +217,14 @@ type
     - use a range of the `enum` type where the possible values are all in one branch of the varying `case` statement `range[low..high](value)`
 
 #### `set`
+
 - mathematical set
 - basetype an only be certain ordinals (or their equivalents)
   - `int8`-`int16`
   - `uint8`/`byte`-`uint16`
   - `char`
   - `enum`
-- max size (for integers) is `0..MaxSetElements-1` which is currently always 2<sup>16</sup> 
+- max size (for integers) is `0..MaxSetElements-1` which is currently always 2<sup>16</sup>
 - **high performance bit vectors**
 - errors for larger set basetypes
 - `{}` constructor
@@ -219,9 +232,11 @@ type
 - emtpy set is compatitable with any basetype
 - `+`, `*`, `-`, `==`, `<=`, `in`, `notin`, `contains`, `card`, `incl`, `excl`
 - bit fields
+
   - parse enums in to set which has a integer repsentation because each enum is a power of 2 etc.
-  
+
 #### `ref` & `ptr`
+
 - ref is a GC'ed heap allocated safe traced pointer
 - ptr is a manually alloc/dealloc pointer that is unsafe
 - `ref/ptr T`
@@ -234,17 +249,19 @@ type
 - recursive pointer types are invalid `type Refer = ref Refer
 - type can be a `ref` to an anonymous object
   - useful when _only_ the ref is used
-- `new` for `ref` instantiation 
+- `new` for `ref` instantiation
   - returns the type if the passed in type is a `ref` type, else `ref T`
 - `alloc`, `dealloc`, `realloc`
 - to free untraced memory that contains traced memory, `reset` has to be called first
 
 ##### `nil`
+
 - `nil` is the default value for all `ptr` & `ref` types
 - "Dereferencing nil is an unrecoverable fatal runtime error (and not a panic)" (from the manual)
 - `not nil` can be used to annotate a type to ensure that `nil` can't be used for that value
 
 #### Procedural type (`proc`)
+
 - internally a pointer to a `proc`
 - `nil` is allowed
 - calling conventions have to be the same
@@ -269,12 +286,14 @@ type
   - The generated C code will not have any explicit calling convention and thus use the C compiler's default calling convention. This is needed because Nim's default calling convention for procedures is fastcall to improve speed.
 - Most calling conventions exist **only** for the Windows 32-bit platform.
 
-####  `auto`
+#### `auto`
+
 - used for return types and parameters
   - for return types it infers the type from the proc `body`
   - for paramters, generics are created
 
 #### Type Equality
+
 - structural equivalence
 - except for `object`, `enum`, `distinct`
 - subtype relation
