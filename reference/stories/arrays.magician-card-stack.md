@@ -48,6 +48,7 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 - [JavaScript: arrays][implementation-javascript] (reference implementation)
 - [JavaScript: array-analysis][implementation-javascript-2] (reference implementation)
+- [Swift: arrays][implementation-swift]
 
 ## Alternative version
 
@@ -78,3 +79,4 @@ These are examples of tasks that fit the story of you wanting to re-arrange card
 [implementation-javascript-2]: ../../languages/javascript/exercises/concept/array-analysis/.docs/instructions.md
 [implementation-javascript-research-1-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-1-a
 [implementation-javascript-research-2-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-2-a
+[implementation-swift]: ../../languages/swift/exercises/concept/arrays/.docs/instructions.md
