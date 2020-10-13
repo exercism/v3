@@ -28,7 +28,7 @@
           "shorthand-arguments",
           "trailing-closures"
         ],
-        "prerequisites": ["functions", "higher-order-functions"]
+        "prerequisites": ["functions", "higher-order-functions", "loops"]
       },
       {
         "slug": "conditionals",

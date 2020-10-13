@@ -1,6 +1,6 @@
 Hello again, Agent Double-Null0111.
 
-The forces of UMBRA are acting up again, and it is up to you to foil their latest scheme. Our intel branch informs us that those Minions are planning to set off a stink-bomb at the Governor's ball. 
+The forces of UMBRA are acting up again, and it is up to you to foil their latest scheme. Our intel branch informs us that those Minions are planning to set off a stink-bomb at the Governor's ball.
 
 Since the minions are so clumsy, they often accidentally arm the stink-bombs in their labs and offices. And because they keep forgetting how to disarm their stink-bombs, they have implemented a system generate the disarming instructions that list the order the wires must be cut from the bomb's ID number.
 
@@ -28,7 +28,7 @@ rotate(("red", "yellow", "blue"))
 
 In order to figure out the order in which to cut the stink-bomb wires, you will need to implement a function that generates the proper shuffling function based on the ID number of the stink-bomb.
 
-Implement the function: 
+Implement the function:
 
 ```swift
 makeShuffle(
@@ -36,6 +36,7 @@ makeShuffle(
   rotator: @escaping ((String, String, String)) -> (String, String, String)
 ) -> (UInt8, (String, String, String)) -> (String, String, String)
 ```
+
 which takes as input a closure that flips two wires and a closure that rotates the three wires and returns a closure. This returned closure takes the ID number of the stink-bomb and the order of the three wires, and then computes the order the wires need to be cut. This is computed as follows:
 
 For each bit in the ID number, starting with the leftmost bit, you will apply the `flipper` closure to the wires tuple if the bit is a 0 and you will apply the rotator closure if it is a 1 giving the new state of the wires. After the appropriate closures have been applied for all eight bits of the ID, the final state of the wires is the order they need to be cut in.
@@ -44,4 +45,5 @@ For each bit in the ID number, starting with the leftmost bit, you will apply th
 let shuffler = makeShuffle(flipper: flip, rotator: rotate)
 // => (UInt8, (String, String, String)) -> (String, String, String)
 shuffler(155, ("red", "yellow", "blue"))
-// => ("red", "blue", "yellow") 
+// => ("red", "blue", "yellow")
+```

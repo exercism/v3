@@ -26,3 +26,4 @@ This concept exercise should convey a basic understanding of how to work with cl
 
 - `functions`
 - `higher-order-functions`
+- `loops`
