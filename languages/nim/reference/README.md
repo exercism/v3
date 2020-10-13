@@ -20,6 +20,12 @@
   - compile time?
 - `typedesc`
 - `distinct`
+  - derived from base type
+  - does not imply relation between base type and subtype
+  - `distinctBase`
+  - type conversion
+  - retain ordinality
+  
 
 #### Ordinal types
 
@@ -116,3 +122,160 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 - use `$` to convert to nim string
 
 #### Structered types
+- `array`, `seq`, `varargs`, `openarray` are a homogeneous type (elems of same type
+  - type is inferred by 
+- lower bound and higher bound with `low` & `high` respectively
+- `len`
+- element access, `x[i]` for the i-th element
+
+#### `array`
+- fixed length
+- array constructor `[]`
+- indexed by ordinal type
+  - if it is `openarray` then indexed from `0..len(array)-1`
+  - explicit indexing `[enum1: "A", enum2: "B", enum3: "C"]`
+  - `succ(lastIndex)` if index is left out
+
+#### `seq`
+- simlar to array
+- dynamic length
+- indexed from `0..len(seq)-1`
+- constructed with an `openarray` (either a variable or a constructor) and the sequence operator, `@`, or the `newSeq` proc
+- `add`, `&`, `&=`, pop
+
+#### `openArray`
+- can refer to all forms of array like types (`string`, `seq`, `array`)
+- `len`, `low`, `high`
+- nested `openArray` is not Supported
+
+#### `varargs`
+- variable number of arguments that can be passed to a `proc` that are convereted to an `array`
+- last parameter in the procedure header
+- type conversions
+  - second parameter in type instatitation as a reference to a `proc`
+
+####  `UncheckedArray`
+- bounds aren't checked
+- translated to C array of undetermined size
+- the base type may not contain GC'ed memory (unverified)
+
+#### `object` & `tuples`
+- heterogeneous storage containers
+- name fields of a type
+- assignment operator `=` copies each compenent by default
+- constructed with `()`
+
+#### `tuples`
+- fields are ordered
+- "Tuples are meant for heterogeneous storage types with no overhead and few abstraction possibilities" from manual
+  - order matter for construction
+- tuples are equivalent if they have the same fields in the same order with identical names
+- tuple types defined in 2 ways:
+  - `type x = tuple[x: int, y: char]`
+  - or 
+```nim
+type
+  Person = tuple
+    name: string
+    age: natural
+```
+- unamed tuple are defined with `(type1, type2...)`
+  - tuples with one unamed fied can be defined with a trailing comma `(type1)`
+
+#### `object`
+- inheritance
+- information hiding `*`
+- definition
+- `of` (similar to Java's `instanceof`
+- construction requires names for the fields
+
+##### Object variants
+- "Object variants are tagged unions discriminated via a enumerated type used for runtime type flexibility, mirroring the concepts of sum types and algebraic data types (ADTs) as found in other languages" (from manual)
+  - an object that is of a single type that has varying (also number) of fields discriminated via an `enum` type
+- advantages
+  - no casting is needed between variations
+  - exceptions are raise for incorrect field access
+- discriminated by a `case` statement 
+- the discriminating field has some rules:
+  - assignment restricted such that a change can't change the `of` branch of the case statement 
+  - it's address can't be taken
+- discrminator has to be statically (compilte-time) known for object construction
+  - 2 way to "get around" this:
+    - `case` statement where the discriminating type is the "subject" of the `case` statment and the branch of constructing the object variant has values that are of a single `of` branch in the original varying `case` statement
+    - use a range of the `enum` type where the possible values are all in one branch of the varying `case` statement `range[low..high](value)`
+
+#### `set`
+- mathematical set
+- basetype an only be certain ordinals (or their equivalents)
+  - `int8`-`int16`
+  - `uint8`/`byte`-`uint16`
+  - `char`
+  - `enum`
+- max size (for integers) is `0..MaxSetElements-1` which is currently always 2<sup>16</sup> 
+- **high performance bit vectors**
+- errors for larger set basetypes
+- `{}` constructor
+  - empty or with elements or ranges
+- emtpy set is compatitable with any basetype
+- `+`, `*`, `-`, `==`, `<=`, `in`, `notin`, `contains`, `card`, `incl`, `excl`
+- bit fields
+  - parse enums in to set which has a integer repsentation because each enum is a power of 2 etc.
+  
+#### `ref` & `ptr`
+- ref is a GC'ed heap allocated safe traced pointer
+- ptr is a manually alloc/dealloc pointer that is unsafe
+- `ref/ptr T`
+- `[]` for dereferencing
+- `addr` for accesing the address
+  - always untraced
+- `.` for accesing field & `[]` for indexing `openArray` perform implicit dereferencing
+  - eperimental feautre for dereferncing when using UFCS
+- recursive tuples are invalid `type Tup = tuple[a: ref Tup]`
+- recursive pointer types are invalid `type Refer = ref Refer
+- type can be a `ref` to an anonymous object
+  - useful when _only_ the ref is used
+- `new` for `ref` instantiation 
+  - returns the type if the passed in type is a `ref` type, else `ref T`
+- `alloc`, `dealloc`, `realloc`
+- to free untraced memory that contains traced memory, `reset` has to be called first
+
+##### `nil`
+- `nil` is the default value for all `ptr` & `ref` types
+- "Dereferencing nil is an unrecoverable fatal runtime error (and not a panic)" (from the manual)
+- `not nil` can be used to annotate a type to ensure that `nil` can't be used for that value
+
+#### Procedural type (`proc`)
+- internally a pointer to a `proc`
+- `nil` is allowed
+- calling conventions have to be the same
+- available calling conventions are:
+  - nimcall
+    - default convention used for a Nim proc. It is the same as fastcall, but only for C compilers that support fastcall.
+  - closure
+    - default calling convention for a procedural type that lacks any pragma annotations. It indicates that the procedure has a hidden implicit parameter (an environment). Proc vars that have the calling convention closure take up two machine words: One for the proc pointer and another one for the pointer to implicitly passed environment.
+  - stdcall
+    - This is the stdcall convention as specified by Microsoft. The generated C procedure is declared with the `__stdcall` keyword.
+  - cdecl
+    - The cdecl convention means that a procedure shall use the same convention as the C compiler. Under Windows the generated C procedure is declared with the `__cdecl` keyword.
+  - safecall
+    - This is the safecall convention as specified by Microsoft. The generated C procedure is declared with the `__safecall` keyword. The word safe refers to the fact that all hardware registers shall be pushed to the hardware stack.
+  - inline
+    - The inline convention means the the caller should not call the procedure, but inline its code directly. Note that Nim does not inline, but leaves this to the C compiler; it generates `__inline` procedures. This is only a hint for the compiler: it may completely ignore it and it may inline procedures that are not marked as inline.
+  - fastcall
+    - Fastcall means different things to different C compilers. One gets whatever the C `__fastcal`l means.
+  - syscall
+    - The syscall convention is the same as `__syscall` in C. It is used for interrupts.
+  - noconv
+  - The generated C code will not have any explicit calling convention and thus use the C compiler's default calling convention. This is needed because Nim's default calling convention for procedures is fastcall to improve speed.
+- Most calling conventions exist **only** for the Windows 32-bit platform.
+
+####  `auto`
+- used for return types and parameters
+  - for return types it infers the type from the proc `body`
+  - for paramters, generics are created
+
+#### Type Equality
+- structural equivalence
+- except for `object`, `enum`, `distinct`
+- subtype relation
+- explicit/implicitibly convertability
