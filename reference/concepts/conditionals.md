@@ -12,8 +12,8 @@ This exercise takes a code derived from a log message and returns a unique symbo
 
 #### Implementations
 
-| Track  | Exercise                              | Changes                                |
-| ------ | ------------------------------------- | -------------------------------------- |
-| Elixir | [conditionals][implementation-elixir] | teaches `cond/1` function conditionals |
+| Track  | Exercise                      | Changes                                |
+| ------ | ----------------------------- | -------------------------------------- |
+| Elixir | [cond][implementation-elixir] | teaches `cond/1` function conditionals |
 
-[implementation-elixir]: ../../languages/elixir/exercises/concept/conditionals/.docs/introduction.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/cond/.docs/introduction.md

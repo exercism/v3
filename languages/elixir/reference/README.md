@@ -272,7 +272,7 @@ The concept exercises use the following concepts:
 | `errors`                         | Introduction to error handling in elixir (try, rescue).                                                   |
 | `exceptions`                     | How to define, use exceptions.                                                                            |
 | `closures`                       | How to implement closures in Elixir.                                                                      |
-| `conditionals`                   | Intro to Elixir `cond/1` function.                                                                        |
+| `cond`                           | Intro to Elixir `cond/1` function.                                                                        |
 | `floating-point-numbers`         | How to use floating point numbers to represent real numbers.                                              |
 | `guards`                         | What guards are, how to use guards in function heads.                                                     |
 | `io`                             | Introduction to input/output in elixir.                                                                   |
