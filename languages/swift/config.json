@@ -111,5 +111,217 @@
       }
     ],
     "practice": []
-  }
+  },
+  "concepts": [
+    {
+      "uuid": "ca0161f2-1915-4911-8595-3854c391a502",
+      "slug": "arrays",
+      "name": "Arrays",
+      "blurb": "TODO: add blurb for arrays concept"
+    },
+    {
+      "uuid": "e59edeed-a13b-427b-9677-c36f276f440a",
+      "slug": "basics",
+      "name": "Basics",
+      "blurb": "TODO: add blurb for basics concept"
+    },
+    {
+      "uuid": "1c887c26-d5a1-415b-87d3-b627013a33da",
+      "slug": "booleans",
+      "name": "Booleans",
+      "blurb": "TODO: add blurb for booleans concept"
+    },
+    {
+      "uuid": "ce6ccbb9-352c-4795-8187-7f28e59cfe0b",
+      "slug": "characters",
+      "name": "Characters",
+      "blurb": "TODO: add blurb for characters concept"
+    },
+    {
+      "uuid": "70702be6-4678-44c0-b5d2-6e93ff0b5eb2",
+      "slug": "classes",
+      "name": "Classes",
+      "blurb": "TODO: add blurb for classes concept"
+    },
+    {
+      "uuid": "a8919ee9-23d1-4c74-a30f-d860295c3502",
+      "slug": "conditionals",
+      "name": "Conditionals",
+      "blurb": "TODO: add blurb for conditionals concept"
+    },
+    {
+      "uuid": "d9ab700f-01ca-4d7e-991f-efcc2d19548b",
+      "slug": "conditionals-guard",
+      "name": "Conditionals Guard",
+      "blurb": "TODO: add blurb for conditionals-guard concept"
+    },
+    {
+      "uuid": "0ce7e6f2-ae63-4e0f-8eeb-8bc9831f4578",
+      "slug": "conditionals-if",
+      "name": "Conditionals If",
+      "blurb": "TODO: add blurb for conditionals-if concept"
+    },
+    {
+      "uuid": "e8fec07d-7a44-4ae4-8ad7-bc788c3ff827",
+      "slug": "conditionals-switch",
+      "name": "Conditionals Switch",
+      "blurb": "TODO: add blurb for conditionals-switch concept"
+    },
+    {
+      "uuid": "b8fc890f-aa62-44e9-acd3-9e90f6706000",
+      "slug": "constants",
+      "name": "Constants",
+      "blurb": "TODO: add blurb for constants concept"
+    },
+    {
+      "uuid": "290d9abd-355f-48fe-baf0-c5dd6b3b1801",
+      "slug": "default-parameters",
+      "name": "Default Parameters",
+      "blurb": "TODO: add blurb for default-parameters concept"
+    },
+    {
+      "uuid": "9a6357cc-1635-4ba6-80be-e5c525fabfb9",
+      "slug": "enumerations",
+      "name": "Enumerations",
+      "blurb": "TODO: add blurb for enumerations concept"
+    },
+    {
+      "uuid": "971b030e-4401-431a-a947-c5a34f519b7e",
+      "slug": "function-overloading",
+      "name": "Function Overloading",
+      "blurb": "TODO: add blurb for function-overloading concept"
+    },
+    {
+      "uuid": "8fe54be1-48e6-49c7-8137-efdd25973716",
+      "slug": "functions",
+      "name": "Functions",
+      "blurb": "TODO: add blurb for functions concept"
+    },
+    {
+      "uuid": "71b8a728-e8c9-466c-a53c-a7d436a732d1",
+      "slug": "higher-order-functions",
+      "name": "Higher Order Functions",
+      "blurb": "TODO: add blurb for higher-order-functions concept"
+    },
+    {
+      "uuid": "f7b413b4-9316-4b93-92a5-84b7b90f9169",
+      "slug": "importing",
+      "name": "Importing",
+      "blurb": "TODO: add blurb for importing concept"
+    },
+    {
+      "uuid": "4105e13e-cc28-4081-9556-8d6057571dae",
+      "slug": "initializers",
+      "name": "Initializers",
+      "blurb": "TODO: add blurb for initializers concept"
+    },
+    {
+      "uuid": "7dddb6c1-9737-4c95-997b-6d22f958e4f1",
+      "slug": "inout-parameters",
+      "name": "Inout Parameters",
+      "blurb": "TODO: add blurb for inout-parameters concept"
+    },
+    {
+      "uuid": "35974d7f-b6e3-4e14-942d-e7624a8f5a1f",
+      "slug": "methods",
+      "name": "Methods",
+      "blurb": "TODO: add blurb for methods concept"
+    },
+    {
+      "uuid": "0c12d60a-cab0-49a6-bf92-5866b8bc92b2",
+      "slug": "multiple-return-values",
+      "name": "Multiple Return Values",
+      "blurb": "TODO: add blurb for multiple-return-values concept"
+    },
+    {
+      "uuid": "ce01b3ca-6b8e-407b-a9f5-3e4da78d0719",
+      "slug": "nested-functions",
+      "name": "Nested Functions",
+      "blurb": "TODO: add blurb for nested-functions concept"
+    },
+    {
+      "uuid": "67a32afb-6010-494a-8343-d76bd9cccc38",
+      "slug": "numbers",
+      "name": "Numbers",
+      "blurb": "TODO: add blurb for numbers concept"
+    },
+    {
+      "uuid": "b734ebd0-83d5-4e33-94f2-d5a8f1bbd1b4",
+      "slug": "opaque-indices",
+      "name": "Opaque Indices",
+      "blurb": "TODO: add blurb for opaque-indices concept"
+    },
+    {
+      "uuid": "5a144b97-b15d-4b51-9818-a94619f5eef3",
+      "slug": "optionals",
+      "name": "Optionals",
+      "blurb": "TODO: add blurb for optionals concept"
+    },
+    {
+      "uuid": "a4b7ebd1-28f4-4270-910f-cf511ec4b45a",
+      "slug": "self",
+      "name": "Self",
+      "blurb": "TODO: add blurb for self concept"
+    },
+    {
+      "uuid": "32dbc50c-beb2-4162-910f-ecdae0e48109",
+      "slug": "stored-properties",
+      "name": "Stored Properties",
+      "blurb": "TODO: add blurb for stored-properties concept"
+    },
+    {
+      "uuid": "343255a9-9931-4887-941e-e768448bf6a4",
+      "slug": "string-components",
+      "name": "String Components",
+      "blurb": "TODO: add blurb for string-components concept"
+    },
+    {
+      "uuid": "6b721b54-e85e-4156-af34-04f36ec37af0",
+      "slug": "string-indexing",
+      "name": "String Indexing",
+      "blurb": "TODO: add blurb for string-indexing concept"
+    },
+    {
+      "uuid": "2174427d-86c6-4e89-bf1d-3722933b8d04",
+      "slug": "strings",
+      "name": "Strings",
+      "blurb": "TODO: add blurb for strings concept"
+    },
+    {
+      "uuid": "293ea717-4f2c-4c7f-bf1b-823696635146",
+      "slug": "structs",
+      "name": "Structs",
+      "blurb": "TODO: add blurb for structs concept"
+    },
+    {
+      "uuid": "0a8fd1c6-3d73-4f77-921f-8cdd2b4ae32f",
+      "slug": "structs-and-classes",
+      "name": "Structs And Classes",
+      "blurb": "TODO: add blurb for structs-and-classes concept"
+    },
+    {
+      "uuid": "4b52314c-c3a0-458c-a463-d051c146df95",
+      "slug": "tuples",
+      "name": "Tuples",
+      "blurb": "TODO: add blurb for tuples concept"
+    },
+    {
+      "uuid": "85147cec-238c-4cc9-a3b3-fc7792f53508",
+      "slug": "type-annotations",
+      "name": "Type Annotations",
+      "blurb": "TODO: add blurb for type-annotations concept"
+    },
+    {
+      "uuid": "5da5a2b3-5d51-44e9-810b-a5379abe41f0",
+      "slug": "variables",
+      "name": "Variables",
+      "blurb": "TODO: add blurb for variables concept"
+    },
+    {
+      "uuid": "f6bb1433-96ae-4efe-b1f6-abbe0f48cd9c",
+      "slug": "variadic-parameters",
+      "name": "Variadic Parameters",
+      "blurb": "TODO: add blurb for variadic-parameters concept"
+    }
+  ]
 }

@@ -230,5 +230,199 @@
       }
     ],
     "practice": []
-  }
+  },
+  "concepts": [
+    {
+      "uuid": "223d816f-c09e-4269-81fb-69db0c6fb1cd",
+      "slug": "anonymous-functions",
+      "name": "Anonymous Functions",
+      "blurb": "TODO: add blurb for anonymous-functions concept"
+    },
+    {
+      "uuid": "b2a3eef0-eb53-4b1b-bf32-167fd2f7d880",
+      "slug": "arithmetic",
+      "name": "Arithmetic",
+      "blurb": "TODO: add blurb for arithmetic concept"
+    },
+    {
+      "uuid": "9afaa6c5-5c25-4f44-a908-5e0f156f7fb3",
+      "slug": "arrays",
+      "name": "Arrays",
+      "blurb": "TODO: add blurb for arrays concept"
+    },
+    {
+      "uuid": "0dcab94c-b2c3-4c9c-b55e-2fbdff83d8cb",
+      "slug": "assignment",
+      "name": "Assignment",
+      "blurb": "TODO: add blurb for assignment concept"
+    },
+    {
+      "uuid": "3147bf8d-9050-4f1a-b267-25f297fc80d7",
+      "slug": "characters",
+      "name": "Characters",
+      "blurb": "TODO: add blurb for characters concept"
+    },
+    {
+      "uuid": "28e84e05-eafd-4774-abc2-2ea76fc5dced",
+      "slug": "code-as-data",
+      "name": "Code As Data",
+      "blurb": "TODO: add blurb for code-as-data concept"
+    },
+    {
+      "uuid": "477a4d8d-41d1-47a4-96f0-b39caeaee513",
+      "slug": "comments",
+      "name": "Comments",
+      "blurb": "TODO: add blurb for comments concept"
+    },
+    {
+      "uuid": "894a6bcc-5b4c-41d1-bfba-a0ca3b121257",
+      "slug": "conditionals",
+      "name": "Conditionals",
+      "blurb": "TODO: add blurb for conditionals concept"
+    },
+    {
+      "uuid": "9afa389a-17e2-4991-ab48-64be5fc955aa",
+      "slug": "cons",
+      "name": "Cons",
+      "blurb": "TODO: add blurb for cons concept"
+    },
+    {
+      "uuid": "b9f5a5fd-57e9-4003-880b-499206e1554f",
+      "slug": "constants",
+      "name": "Constants",
+      "blurb": "TODO: add blurb for constants concept"
+    },
+    {
+      "uuid": "92231d37-27e3-4692-96d4-ff9822a83132",
+      "slug": "destructuring-assignment",
+      "name": "Destructuring Assignment",
+      "blurb": "TODO: add blurb for destructuring-assignment concept"
+    },
+    {
+      "uuid": "16d4b9d8-0484-463a-9273-e0a89d1842e1",
+      "slug": "enumeration",
+      "name": "Enumeration",
+      "blurb": "TODO: add blurb for enumeration concept"
+    },
+    {
+      "uuid": "80ea7d53-76aa-4e89-9d70-45548181a6eb",
+      "slug": "expressions",
+      "name": "Expressions",
+      "blurb": "TODO: add blurb for expressions concept"
+    },
+    {
+      "uuid": "0d0ae380-7f1f-4ac7-8900-d501afd7a48a",
+      "slug": "floating-point-numbers",
+      "name": "Floating Point Numbers",
+      "blurb": "TODO: add blurb for floating-point-numbers concept"
+    },
+    {
+      "uuid": "a7b463d3-4d7f-4b4a-8a47-28307219541d",
+      "slug": "function-definition",
+      "name": "Function Definition",
+      "blurb": "TODO: add blurb for function-definition concept"
+    },
+    {
+      "uuid": "778561a9-c735-4c26-8d07-1baa71b8f94a",
+      "slug": "hash-tables",
+      "name": "Hash Tables",
+      "blurb": "TODO: add blurb for hash-tables concept"
+    },
+    {
+      "uuid": "0f570f2a-3b77-408e-9bd1-3712b12bcd4a",
+      "slug": "higher-order-functions",
+      "name": "Higher Order Functions",
+      "blurb": "TODO: add blurb for higher-order-functions concept"
+    },
+    {
+      "uuid": "e5fefeda-9e02-48c4-9591-fc8a518d99f2",
+      "slug": "integers",
+      "name": "Integers",
+      "blurb": "TODO: add blurb for integers concept"
+    },
+    {
+      "uuid": "65c600a7-7f6a-428f-9913-d6f127f35234",
+      "slug": "lists",
+      "name": "Lists",
+      "blurb": "TODO: add blurb for lists concept"
+    },
+    {
+      "uuid": "5a6598c3-8d92-4eca-b36e-42ba4b435237",
+      "slug": "loop.basic",
+      "name": "Loop Basic",
+      "blurb": "TODO: add blurb for loop.basic concept"
+    },
+    {
+      "uuid": "eb5772d1-756f-48b3-bbaa-7481e10c2bfe",
+      "slug": "multiple-values",
+      "name": "Multiple Values",
+      "blurb": "TODO: add blurb for multiple-values concept"
+    },
+    {
+      "uuid": "654667dc-547a-4ec9-8e83-d1b3df4bbeba",
+      "slug": "nested-functions",
+      "name": "Nested Functions",
+      "blurb": "TODO: add blurb for nested-functions concept"
+    },
+    {
+      "uuid": "58adfe20-f67b-40df-a68a-4c5e07ab5c21",
+      "slug": "packages",
+      "name": "Packages",
+      "blurb": "TODO: add blurb for packages concept"
+    },
+    {
+      "uuid": "c54d3099-ce89-4745-942a-ab8e1ec00ad3",
+      "slug": "printing",
+      "name": "Printing",
+      "blurb": "TODO: add blurb for printing concept"
+    },
+    {
+      "uuid": "9dc0a29a-6742-43ee-a03d-581dff2c1855",
+      "slug": "recursion",
+      "name": "Recursion",
+      "blurb": "TODO: add blurb for recursion concept"
+    },
+    {
+      "uuid": "c04de4d9-d69f-429f-916f-48ab461112ee",
+      "slug": "sameness",
+      "name": "Sameness",
+      "blurb": "TODO: add blurb for sameness concept"
+    },
+    {
+      "uuid": "5774aac1-e8c6-439f-97ee-27f4febc1b26",
+      "slug": "sets",
+      "name": "Sets",
+      "blurb": "TODO: add blurb for sets concept"
+    },
+    {
+      "uuid": "630eaa07-1239-4548-be46-e695c8a2c73f",
+      "slug": "strings",
+      "name": "Strings",
+      "blurb": "TODO: add blurb for strings concept"
+    },
+    {
+      "uuid": "3d57a337-1bea-4677-923d-39b4fb2c1e7b",
+      "slug": "structures",
+      "name": "Structures",
+      "blurb": "TODO: add blurb for structures concept"
+    },
+    {
+      "uuid": "c9ac82a1-19da-4aff-8184-8727efa67364",
+      "slug": "symbols",
+      "name": "Symbols",
+      "blurb": "TODO: add blurb for symbols concept"
+    },
+    {
+      "uuid": "59de6711-b247-4f06-8030-94633cf16a65",
+      "slug": "truthy-and-falsy",
+      "name": "Truthy And Falsy",
+      "blurb": "TODO: add blurb for truthy-and-falsy concept"
+    },
+    {
+      "uuid": "6e40e924-f9a1-4dce-9d23-44f922e3ba48",
+      "slug": "variables",
+      "name": "Variables",
+      "blurb": "TODO: add blurb for variables concept"
+    }
+  ]
 }
