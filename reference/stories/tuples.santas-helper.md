@@ -15,5 +15,9 @@ The story facilitates the exploration of [tuples][type-tuple] in a language. It 
 
 - [Swift: tuples][implementation-swift] (reference implementation)
 
+## Related
+
+- [`types/tuple`][type-tuple]
+
 [type-tuple]: ../types/tuple.md
 [implementation-swift]: ../../languages/swift/exercises/concept/tuples/.docs/instructions.md
