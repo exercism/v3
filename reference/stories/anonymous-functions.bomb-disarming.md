@@ -24,9 +24,9 @@ These are example tasks that fit the story of the secret agent disarming a stink
 
 ## Reference
 
-- [`concepts/closure`][concepts-closure]
 - [`concepts/anonymous_functions`][concepts-anonymous-functions]
+- [`concepts/closure`][concepts-closures]
 
-[concepts-closure]: ../concepts/closure.md
+[concepts-closures]: ../concepts/closures.md
 [concepts-anonymous-functions]: ../concepts/anonymous_functions.md
 [implementation-swift]: ../../languages/swift/exercises/concept/closures/.docs/instructions.md
