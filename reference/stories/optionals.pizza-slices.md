@@ -15,5 +15,9 @@ The story facilitates exploration of [Optional types][types-option-types] which 
 
 - [Swift: optionals][implementation-swift] (reference implementation)
 
+## Related
+
+- [`types/option_types`][types-option-types]
+
 [types-option-types]: ../types/option_types.md
 [implementation-swift]: ../../languages/swift/exercises/concept/optionals/.docs/instructions.md
