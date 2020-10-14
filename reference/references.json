@@ -179,12 +179,6 @@
     ]
   },
   {
-    "name": "basic-lists",
-    "variations": ["basic-lists", "basic-list", "basic_lists"],
-    "documents": [],
-    "implementations": []
-  },
-  {
     "name": "basics",
     "variations": ["basics", "basic"],
     "documents": [],
@@ -406,6 +400,19 @@
     ]
   },
   {
+    "name": "break",
+    "variations": ["break", "breaks"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
+        "exercise": "loops",
+        "track": "swift",
+        "language": "Swift"
+      }
+    ]
+  },
+  {
     "name": "bytes",
     "variations": ["bytes", "byte"],
     "documents": [
@@ -415,6 +422,19 @@
       }
     ],
     "implementations": []
+  },
+  {
+    "name": "capturing",
+    "variations": ["capturing", "capturings"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
+        "exercise": "closures",
+        "track": "swift",
+        "language": "Swift"
+      }
+    ]
   },
   {
     "name": "case",
@@ -549,6 +569,12 @@
         "exercise": "closures",
         "track": "javascript",
         "language": "JavaScript"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
+        "exercise": "closures",
+        "track": "swift",
+        "language": "Swift"
       }
     ]
   },
@@ -801,6 +827,32 @@
     "variations": ["context", "contexts"],
     "documents": [],
     "implementations": []
+  },
+  {
+    "name": "continue",
+    "variations": ["continue", "continues"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
+        "exercise": "loops",
+        "track": "swift",
+        "language": "Swift"
+      }
+    ]
+  },
+  {
+    "name": "control-transfer",
+    "variations": ["control-transfer", "control-transfers", "control_transfer"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
+        "exercise": "loops",
+        "track": "swift",
+        "language": "Swift"
+      }
+    ]
   },
   {
     "name": "datetimes",
@@ -1112,6 +1164,12 @@
         "exercise": "exceptions",
         "track": "csharp",
         "language": "C#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/exceptions",
+        "exercise": "exceptions",
+        "track": "csharp",
+        "language": "C#"
       }
     ]
   },
@@ -1221,6 +1279,12 @@
     "variations": ["for-loops", "for-loop", "for_loops"],
     "documents": [],
     "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
+        "exercise": "loops",
+        "track": "swift",
+        "language": "Swift"
+      },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/arrays",
         "exercise": "arrays",
@@ -1591,6 +1655,19 @@
     ]
   },
   {
+    "name": "labels",
+    "variations": ["labels", "label"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
+        "exercise": "loops",
+        "track": "swift",
+        "language": "Swift"
+      }
+    ]
+  },
+  {
     "name": "list-comprehensions",
     "variations": [
       "list-comprehensions",
@@ -1622,6 +1699,12 @@
         "exercise": "lists",
         "track": "elixir",
         "language": "Elixir"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/lists",
+        "exercise": "lists",
+        "track": "common-lisp",
+        "language": "Common Lisp"
       },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lists",
@@ -1659,6 +1742,12 @@
       }
     ],
     "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
+        "exercise": "loops",
+        "track": "swift",
+        "language": "Swift"
+      },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/floating-point-numbers",
         "exercise": "floating-point-numbers",
@@ -2501,6 +2590,19 @@
     ]
   },
   {
+    "name": "repeat-while",
+    "variations": ["repeat-while", "repeat-whiles", "repeat_while"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
+        "exercise": "loops",
+        "track": "swift",
+        "language": "Swift"
+      }
+    ]
+  },
+  {
     "name": "resource-cleanup",
     "variations": ["resource-cleanup", "resource-cleanups", "resource_cleanup"],
     "documents": [],
@@ -2588,6 +2690,23 @@
         "exercise": "equality",
         "track": "csharp",
         "language": "C#"
+      }
+    ]
+  },
+  {
+    "name": "shorthand-arguments",
+    "variations": [
+      "shorthand-arguments",
+      "shorthand-argument",
+      "shorthand_arguments"
+    ],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
+        "exercise": "closures",
+        "track": "swift",
+        "language": "Swift"
       }
     ]
   },
@@ -3012,6 +3131,23 @@
     ]
   },
   {
+    "name": "trailing-closures",
+    "variations": [
+      "trailing-closures",
+      "trailing-closure",
+      "trailing_closures"
+    ],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
+        "exercise": "closures",
+        "track": "swift",
+        "language": "Swift"
+      }
+    ]
+  },
+  {
     "name": "truthy-and-falsy",
     "variations": [
       "truthy-and-falsy",
@@ -3224,6 +3360,12 @@
     "variations": ["while-loops", "while-loop", "while_loops"],
     "documents": [],
     "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
+        "exercise": "loops",
+        "track": "swift",
+        "language": "Swift"
+      },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/floating-point-numbers",
         "exercise": "floating-point-numbers",
@@ -3664,6 +3806,17 @@
       {
         "url": "https://github.com/exercism/v3/tree/master/reference/concepts/operators.md",
         "name": "operators"
+      }
+    ],
+    "implementations": []
+  },
+  {
+    "name": "option-types",
+    "variations": ["option-types", "option-type", "option_types"],
+    "documents": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/reference/types/option_types.md",
+        "name": "option_types"
       }
     ],
     "implementations": []
