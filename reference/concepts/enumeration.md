@@ -35,9 +35,9 @@ This exercise deals with looping to enumerate data structures or to perform repe
 
 #### Implementations
 
-| Track      | Exercise                              | Changes |
-| ---------- | ------------------------------------- | ------- |
-| Swift      | [loops][implementation-swift]         | None    |
+| Track | Exercise                      | Changes |
+| ----- | ----------------------------- | ------- |
+| Swift | [loops][implementation-swift] | None    |
 
 [implementation-javascript-2]: ../../languages/javascript/exercises/concept/array-analysis/.docs/introduction.md
 [implementation-swift]: ../../languages/swift/exercises/concept/loops/.docs/introduction.md
