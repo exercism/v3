@@ -32,7 +32,7 @@ This exercise deals with looping to enumerate data structures or to perform repe
 | Track      | Exercise                              | Changes |
 | ---------- | ------------------------------------- | ------- |
 | JavaScript | [arrays][implementation-javascript-2] | None    |
-| Swift.     | [loops][implementation-swift]         | None    |
+| Swift      | [loops][implementation-swift]         | None    |
 
 [implementation-javascript-2]: ../../languages/javascript/exercises/concept/array-analysis/.docs/introduction.md
 [implementation-swift]: ../../languages/swift/exercises/concept/loops/.docs/introduction.md
