@@ -86,5 +86,97 @@
       }
     ],
     "practice": []
-  }
+  },
+  "concepts": [
+    {
+      "uuid": "ecdd0d87-8d03-43b8-85e1-ea0fe9f0dbf7",
+      "slug": "arrays",
+      "name": "Arrays",
+      "blurb": "TODO: add blurb for arrays concept"
+    },
+    {
+      "uuid": "f91b9627-803e-47fd-8bba-1a8f113b5215",
+      "slug": "basics",
+      "name": "Basics",
+      "blurb": "TODO: add blurb for basics concept"
+    },
+    {
+      "uuid": "b1d78394-24f0-4956-82c2-e3d33dfecc95",
+      "slug": "booleans",
+      "name": "Booleans",
+      "blurb": "TODO: add blurb for booleans concept"
+    },
+    {
+      "uuid": "1d7fe262-134c-43eb-a3ff-418ddff9f84a",
+      "slug": "classes",
+      "name": "Classes",
+      "blurb": "TODO: add blurb for classes concept"
+    },
+    {
+      "uuid": "2d2c2485-7655-40f0-9bd2-476fc322e67f",
+      "slug": "conditionals",
+      "name": "Conditionals",
+      "blurb": "TODO: add blurb for conditionals concept"
+    },
+    {
+      "uuid": "2076158a-be99-4b7b-9321-fd8e864a6556",
+      "slug": "datetimes",
+      "name": "Datetimes",
+      "blurb": "TODO: add blurb for datetimes concept"
+    },
+    {
+      "uuid": "0deda8b3-98f2-4025-9c15-836b3bb35ad1",
+      "slug": "discriminated-unions",
+      "name": "Discriminated Unions",
+      "blurb": "TODO: add blurb for discriminated-unions concept"
+    },
+    {
+      "uuid": "1327d780-3263-4a22-b363-684d775241b8",
+      "slug": "floating-point-numbers",
+      "name": "Floating Point Numbers",
+      "blurb": "TODO: add blurb for floating-point-numbers concept"
+    },
+    {
+      "uuid": "0a662a9c-68fe-435e-97b1-ca93a8af6d8c",
+      "slug": "higher-order-functions",
+      "name": "Higher Order Functions",
+      "blurb": "TODO: add blurb for higher-order-functions concept"
+    },
+    {
+      "uuid": "b84e3e3a-d34f-44fb-b096-4e92bc2cca9d",
+      "slug": "lists",
+      "name": "Lists",
+      "blurb": "TODO: add blurb for lists concept"
+    },
+    {
+      "uuid": "d0fe01c7-d94b-4d6b-92a7-a0055c5704a3",
+      "slug": "numbers",
+      "name": "Numbers",
+      "blurb": "TODO: add blurb for numbers concept"
+    },
+    {
+      "uuid": "3439b5d6-6e1b-486b-989d-9f7e8f9eb732",
+      "slug": "pattern-matching",
+      "name": "Pattern Matching",
+      "blurb": "TODO: add blurb for pattern-matching concept"
+    },
+    {
+      "uuid": "7c481331-8c4f-440e-ab2b-362bce355ebc",
+      "slug": "records",
+      "name": "Records",
+      "blurb": "TODO: add blurb for records concept"
+    },
+    {
+      "uuid": "b949a78d-99ed-46a5-be85-f17ea6d1aa4b",
+      "slug": "recursion",
+      "name": "Recursion",
+      "blurb": "TODO: add blurb for recursion concept"
+    },
+    {
+      "uuid": "8a3e23fd-aa42-42c3-9dbd-c26159fd6774",
+      "slug": "strings",
+      "name": "Strings",
+      "blurb": "TODO: add blurb for strings concept"
+    }
+  ]
 }

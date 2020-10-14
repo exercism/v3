@@ -18,5 +18,13 @@
       }
     ],
     "practice": []
-  }
+  },
+  "concepts": [
+    {
+      "uuid": "8d51e52a-95d3-45da-adb0-65bdfe96b875",
+      "slug": "strings",
+      "name": "Strings",
+      "blurb": "TODO: add blurb for strings concept"
+    }
+  ]
 }

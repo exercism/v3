@@ -57,5 +57,103 @@
             }
         ],
         "practice": []
-    }
+    },
+    "concepts": [
+        {
+            "uuid": "7d7cef41-5cef-4896-9aa3-cd7baf15339c",
+            "slug": "abstract-types",
+            "name": "Abstract Types",
+            "blurb": "TODO: add blurb for abstract-types concept"
+        },
+        {
+            "uuid": "839e5029-3bde-4823-8177-7b04a43cbf62",
+            "slug": "boolean-logic",
+            "name": "Boolean Logic",
+            "blurb": "TODO: add blurb for boolean-logic concept"
+        },
+        {
+            "uuid": "9470279c-9960-420b-b266-53e329bb205c",
+            "slug": "booleans",
+            "name": "Booleans",
+            "blurb": "TODO: add blurb for booleans concept"
+        },
+        {
+            "uuid": "aad9773b-9032-4d8d-a9e9-4b8152f35b68",
+            "slug": "composite-types",
+            "name": "Composite Types",
+            "blurb": "TODO: add blurb for composite-types concept"
+        },
+        {
+            "uuid": "3584666e-faaa-4a30-b5af-b80c4ee980c7",
+            "slug": "constants",
+            "name": "Constants",
+            "blurb": "TODO: add blurb for constants concept"
+        },
+        {
+            "uuid": "daef8574-4fed-4385-919b-82a16e3b9701",
+            "slug": "emoji-symbols",
+            "name": "Emoji Symbols",
+            "blurb": "TODO: add blurb for emoji-symbols concept"
+        },
+        {
+            "uuid": "32384ed4-ef26-4118-8ea3-4d44c331e828",
+            "slug": "functions-introduction",
+            "name": "Functions Introduction",
+            "blurb": "TODO: add blurb for functions-introduction concept"
+        },
+        {
+            "uuid": "0ac24090-fa7b-4b36-a78c-4c2fe3686223",
+            "slug": "matrices-concatenation",
+            "name": "Matrices Concatenation",
+            "blurb": "TODO: add blurb for matrices-concatenation concept"
+        },
+        {
+            "uuid": "63b504c0-a6b4-410b-8ebd-9e6745ad99f0",
+            "slug": "matrices-indices",
+            "name": "Matrices Indices",
+            "blurb": "TODO: add blurb for matrices-indices concept"
+        },
+        {
+            "uuid": "6d1448b6-847a-4c18-9a9b-3ad37a66d31e",
+            "slug": "matrices-introduction",
+            "name": "Matrices Introduction",
+            "blurb": "TODO: add blurb for matrices-introduction concept"
+        },
+        {
+            "uuid": "de3002c3-9234-4516-923f-2ffb33024ea5",
+            "slug": "matrices-iteration",
+            "name": "Matrices Iteration",
+            "blurb": "TODO: add blurb for matrices-iteration concept"
+        },
+        {
+            "uuid": "1ba6abf2-646a-444d-a820-e94560e6f685",
+            "slug": "matrices-mutation",
+            "name": "Matrices Mutation",
+            "blurb": "TODO: add blurb for matrices-mutation concept"
+        },
+        {
+            "uuid": "8ca3e0f2-30ef-4a27-b30e-c196fcc6104f",
+            "slug": "methods",
+            "name": "Methods",
+            "blurb": "TODO: add blurb for methods concept"
+        },
+        {
+            "uuid": "84567594-5ec1-48f4-bfaf-f6480a75c47e",
+            "slug": "multiple-dispatch",
+            "name": "Multiple Dispatch",
+            "blurb": "TODO: add blurb for multiple-dispatch concept"
+        },
+        {
+            "uuid": "ac862fcd-90a1-404c-8f6d-ba42f2c813a4",
+            "slug": "symbols",
+            "name": "Symbols",
+            "blurb": "TODO: add blurb for symbols concept"
+        },
+        {
+            "uuid": "7ebfefea-f725-4b3e-9f2d-b5820b73dd9a",
+            "slug": "unicode-identifiers",
+            "name": "Unicode Identifiers",
+            "blurb": "TODO: add blurb for unicode-identifiers concept"
+        }
+    ]
 }
