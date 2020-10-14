@@ -16,7 +16,6 @@ These are example tasks that fit the story of a customer designing a custom sign
 
 ## Implementations
 
-
 - [Swift: strings-and-characters][implementation-swift] (reference implementation)
 
 ## Reference
