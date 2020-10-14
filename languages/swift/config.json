@@ -26,6 +26,17 @@
         "prerequisites": []
       },
       {
+        "slug": "closures",
+        "uuid": "21d213fe-1c9d-4e8a-bc7e-47a11e972c08",
+        "concepts": [
+          "capturing",
+          "closures",
+          "shorthand-arguments",
+          "trailing-closures"
+        ],
+        "prerequisites": ["functions", "higher-order-functions", "loops"]
+      },
+      {
         "slug": "conditionals",
         "uuid": "6fa28581-0992-4770-a657-2bb5157db178",
         "concepts": [
