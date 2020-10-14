@@ -17,6 +17,12 @@ This exercise deals with analysis on a stack of playing cards. The reference imp
   - short-circuit on one true (`some`)
   - short-circuit on one false (`every`)
 
+#### Implementations
+
+| Track      | Exercise                              | Changes |
+| ---------- | ------------------------------------- | ------- |
+| JavaScript | [arrays][implementation-javascript-2] | None    |
+
 ### Bartender
 
 This exercise deals with looping to enumerate data structures or to perform repetitive tasks. The reference implementation (Swift) teaches:
@@ -31,8 +37,7 @@ This exercise deals with looping to enumerate data structures or to perform repe
 
 | Track      | Exercise                              | Changes |
 | ---------- | ------------------------------------- | ------- |
-| JavaScript | [arrays][implementation-javascript-2] | None    |
-| Swift.     | [loops][implementation-swift]         | None    |
+| Swift      | [loops][implementation-swift]         | None    |
 
 [implementation-javascript-2]: ../../languages/javascript/exercises/concept/array-analysis/.docs/introduction.md
 [implementation-swift]: ../../languages/swift/exercises/concept/loops/.docs/introduction.md
