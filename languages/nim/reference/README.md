@@ -91,7 +91,7 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
   - can have gaps
 - stringification can be explicitly set
   - `type Direction = enum left = "<-", right = "->"
-- stringification and ordinal value can both be set with a tuple with the oridnal value first
+- stringification and ordinal value can both be set with a tuple with the ordinal value first
   - can be mixed and matched for different entries in a enum declaration
 - `{.pure.}` (probably out of scope)
 
@@ -121,7 +121,7 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
   - not GC safe
 - use `$` to convert to nim string
 
-#### Structered types
+#### Structured types
 
 - `array`, `seq`, `varargs`, `openArray` are a homogeneous type (elems of same type
   - type is inferred by
