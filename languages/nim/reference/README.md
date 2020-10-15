@@ -8,7 +8,7 @@
 
 #### General Type Related Concepts
 
-- user types are capatilized
+- user types are capitalized
 - static typing
 - type inference
 - generics
@@ -42,7 +42,7 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 - `int` is defined by platform (and therefore affect `high` and `low`)
   - size of a pointer
 - `intXX` is constructed as `'iXX`
-- `uint` is unisigned
+- `uint` is unsigned
   - constructed with `'u` or `'uXX`
 - operators
   - `+`, `-`, `/`, `*`, `div`, `mod
@@ -52,7 +52,7 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 - `float` is `float 64`
 - conform to IEEE standard
 - exceptions for floats
-- same as `int` for contstruction
+- same as `int` for construction
 - most same operators
 
 #### Subrange
@@ -60,7 +60,7 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 - range of `int` or `float`
 - hold type of base type
 - `range[(low end of range)..(high end of range)]
-- as with oridinal type, static error or panic is raised
+- as with ordinal type, static error or panic is raised
 
 #### bool
 
@@ -76,7 +76,7 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
   - not UTF-\*
   - unicode module
 - constructed with single quotes
-- one charachter long
+- one character long
 
 #### enum
 
@@ -98,7 +98,7 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 #### string
 
 - similar to seq of char
-  - accesing an charachter of a string is a `char` type
+  - accessing an character of a string is a `char` type
 - zero terminated
 - `len`
   - doesn't include terminating zero
@@ -117,13 +117,13 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 #### cstring
 
 - compatible string with the underlying backend
-- `string` is implicitly converted to `cstring` when neccesary
+- `string` is implicitly converted to `cstring` when necessary
   - not GC safe
 - use `$` to convert to nim string
 
 #### Structered types
 
-- `array`, `seq`, `varargs`, `openarray` are a homogeneous type (elems of same type
+- `array`, `seq`, `varargs`, `openArray` are a homogeneous type (elems of same type
   - type is inferred by
 - lower bound and higher bound with `low` & `high` respectively
 - `len`
@@ -134,7 +134,7 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 - fixed length
 - array constructor `[]`
 - indexed by ordinal type
-  - if it is `openarray` then indexed from `0..len(array)-1`
+  - if it is `openArray` then indexed from `0..len(array)-1`
   - explicit indexing `[enum1: "A", enum2: "B", enum3: "C"]`
   - `succ(lastIndex)` if index is left out
 
@@ -143,7 +143,7 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 - simlar to array
 - dynamic length
 - indexed from `0..len(seq)-1`
-- constructed with an `openarray` (either a variable or a constructor) and the sequence operator, `@`, or the `newSeq` proc
+- constructed with an `openArray` (either a variable or a constructor) and the sequence operator, `@`, or the `newSeq` proc
 - `add`, `&`, `&=`, pop
 
 #### `openArray`
@@ -154,10 +154,10 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 
 #### `varargs`
 
-- variable number of arguments that can be passed to a `proc` that are convereted to an `array`
+- variable number of arguments that can be passed to a `proc` that are converted to an `array`
 - last parameter in the procedure header
 - type conversions
-  - second parameter in type instatitation as a reference to a `proc`
+  - second parameter in type instantiation as a reference to a `proc`
 
 #### `UncheckedArray`
 
@@ -169,7 +169,7 @@ Ex: `int`, `int8`, `int16`, `int32`, `int64`
 
 - heterogeneous storage containers
 - name fields of a type
-- assignment operator `=` copies each compenent by default
+- assignment operator `=` copies each component by default
 - constructed with `()`
 
 #### `tuples`
@@ -189,15 +189,15 @@ type
     age: natural
 ```
 
-- unamed tuple are defined with `(type1, type2...)`
-  - tuples with one unamed fied can be defined with a trailing comma `(type1)`
+- unnamed tuple are defined with `(type1, type2...)`
+  - tuples with one unnamed field can be defined with a trailing comma `(type1)`
 
 #### `object`
 
 - inheritance
 - information hiding `*`
 - definition
-- `of` (similar to Java's `instanceof`
+- `of` (similar to Java's `instanceof`)
 - construction requires names for the fields
 
 ##### Object variants
@@ -211,9 +211,9 @@ type
 - the discriminating field has some rules:
   - assignment restricted such that a change can't change the `of` branch of the case statement
   - it's address can't be taken
-- discrminator has to be statically (compilte-time) known for object construction
+- discriminator has to be statically (compile-time) known for object construction
   - 2 way to "get around" this:
-    - `case` statement where the discriminating type is the "subject" of the `case` statment and the branch of constructing the object variant has values that are of a single `of` branch in the original varying `case` statement
+    - `case` statement where the discriminating type is the "subject" of the `case` statement and the branch of constructing the object variant has values that are of a single `of` branch in the original varying `case` statement
     - use a range of the `enum` type where the possible values are all in one branch of the varying `case` statement `range[low..high](value)`
 
 #### `set`
@@ -229,11 +229,11 @@ type
 - errors for larger set basetypes
 - `{}` constructor
   - empty or with elements or ranges
-- emtpy set is compatitable with any basetype
+- empty set is compatible with any basetype
 - `+`, `*`, `-`, `==`, `<=`, `in`, `notin`, `contains`, `card`, `incl`, `excl`
 - bit fields
 
-  - parse enums in to set which has a integer repsentation because each enum is a power of 2 etc.
+  - parse enums in to set which has a integer representation because each enum is a power of 2 etc.
 
 #### `ref` & `ptr`
 
@@ -241,10 +241,10 @@ type
 - ptr is a manually alloc/dealloc pointer that is unsafe
 - `ref/ptr T`
 - `[]` for dereferencing
-- `addr` for accesing the address
+- `addr` for accessing the address
   - always untraced
-- `.` for accesing field & `[]` for indexing `openArray` perform implicit dereferencing
-  - eperimental feautre for dereferncing when using UFCS
+- `.` for accessing field & `[]` for indexing `openArray` perform implicit dereferencing
+  - experimental feature for dereferencing when using UFCS
 - recursive tuples are invalid `type Tup = tuple[a: ref Tup]`
 - recursive pointer types are invalid `type Refer = ref Refer
 - type can be a `ref` to an anonymous object
@@ -290,11 +290,11 @@ type
 
 - used for return types and parameters
   - for return types it infers the type from the proc `body`
-  - for paramters, generics are created
+  - for parameters, generics are created
 
 #### Type Equality
 
 - structural equivalence
 - except for `object`, `enum`, `distinct`
 - subtype relation
-- explicit/implicitibly convertability
+- explicit/implicit convertibility
