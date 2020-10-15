@@ -15,5 +15,13 @@
       }
     ],
     "practice": []
-  }
+  },
+  "concepts": [
+    {
+      "uuid": "96a9995c-c428-4759-b995-05da80f14f02",
+      "slug": "basics",
+      "name": "Basics",
+      "blurb": "TODO: add blurb for basics concept"
+    }
+  ]
 }

@@ -18,5 +18,13 @@
       }
     ],
     "practice": []
-  }
+  },
+  "concepts": [
+    {
+      "uuid": "aa02ae57-c40b-448f-a2cb-7abc2fab0031",
+      "slug": "booleans",
+      "name": "Booleans",
+      "blurb": "TODO: add blurb for booleans concept"
+    }
+  ]
 }

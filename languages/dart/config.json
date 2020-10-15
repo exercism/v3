@@ -31,5 +31,55 @@
       }
     ],
     "practice": []
-  }
+  },
+  "concepts": [
+    {
+      "uuid": "ba21e341-5393-4484-b5b1-a82e56a87d06",
+      "slug": "callbacks",
+      "name": "Callbacks",
+      "blurb": "TODO: add blurb for callbacks concept"
+    },
+    {
+      "uuid": "66ae5bf8-222c-46b7-b343-ecc58e56d943",
+      "slug": "errors-basic",
+      "name": "Errors Basic",
+      "blurb": "TODO: add blurb for errors-basic concept"
+    },
+    {
+      "uuid": "b90f1363-7501-480f-bd85-e64a420325d1",
+      "slug": "futures",
+      "name": "Futures",
+      "blurb": "TODO: add blurb for futures concept"
+    },
+    {
+      "uuid": "2727c1e4-8634-4229-82b1-004cb19d01c5",
+      "slug": "iterables-basic",
+      "name": "Iterables Basic",
+      "blurb": "TODO: add blurb for iterables-basic concept"
+    },
+    {
+      "uuid": "df1cc116-f806-4f8b-b97a-440f1425c9c7",
+      "slug": "numbers-basic",
+      "name": "Numbers Basic",
+      "blurb": "TODO: add blurb for numbers-basic concept"
+    },
+    {
+      "uuid": "d2a40784-15fa-4ea3-8e71-581aea4f3398",
+      "slug": "recursion",
+      "name": "Recursion",
+      "blurb": "TODO: add blurb for recursion concept"
+    },
+    {
+      "uuid": "4f20c5b4-7d32-4cff-8bab-6c544d776f78",
+      "slug": "strings-basic",
+      "name": "Strings Basic",
+      "blurb": "TODO: add blurb for strings-basic concept"
+    },
+    {
+      "uuid": "692ca96a-ed31-4bf7-a981-f7f51211b24d",
+      "slug": "type-conversion",
+      "name": "Type Conversion",
+      "blurb": "TODO: add blurb for type-conversion concept"
+    }
+  ]
 }
