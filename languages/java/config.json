@@ -77,6 +77,12 @@
         "prerequisites": ["conditionals-if", "numbers"]
       },
       {
+        "slug": "switch-statement",
+        "uuid": "5eb11198-807c-469f-903e-57b4f931c02c",
+        "concepts": ["switch-statement"],
+        "prerequisites": ["classes", "methods", "variables"]
+      },
+      {
         "slug": "inheritance",
         "uuid": "e7192707-7b48-4095-9816-591111910c0b",
         "concepts": ["inheritance"],
