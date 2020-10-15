@@ -471,7 +471,12 @@
   {
     "name": "characters",
     "variations": ["characters", "character"],
-    "documents": [],
+    "documents": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/reference/types/character.md",
+        "name": "character"
+      }
+    ],
     "implementations": [
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/strings-and-characters",
