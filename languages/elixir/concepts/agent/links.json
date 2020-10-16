@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "url": "https://hexdocs.pm/elixir/Task.html",
+    "description": "task-module"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Agent.html",
+    "description": "elixir-doc-agent"
+  },
+  {
+    "url": "https://elixircasts.io/intro-to-agents",
+    "description": "elixircasts-agent"
+  }
+]
