@@ -1,1 +1,67 @@
-[]
+[
+  {
+    "url": "https://hexdocs.pm/elixir/Enum.html#sort/2",
+    "description": "enum-sort/2"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Enum.html#sort_by/2",
+    "description": "enum-sort_by/2"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Enum.html#filter/2",
+    "description": "enum-filter/2"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Enum.html#group_by/3",
+    "description": "enum-group_by/3"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Enum.html#count/2",
+    "description": "enum-count/2"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Enum.html#find/3",
+    "description": "enum-find/3"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Enum.html#min/3",
+    "description": "enum-min/3"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Enum.html#max/3",
+    "description": "enum-max/3"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Enum.html#reduce/3",
+    "description": "enum-reduce/3"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Enum.html#reduce_while/3",
+    "description": "enum-reduce_while/3"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Enum.html#functions",
+    "description": "enum-functions"
+  },
+  { "url": "https://hexdocs.pm/elixir/List.html", "description": "list" },
+  { "url": "https://hexdocs.pm/elixir/Map.html", "description": "map" },
+  { "url": "https://hexdocs.pm/elixir/Range.html", "description": "range" },
+  { "url": "https://hexdocs.pm/elixir/Stream.html", "description": "stream" },
+  { "url": "https://hexdocs.pm/elixir/MapSet.html", "description": "mapset" },
+  {
+    "url": "https://hexdocs.pm/elixir/Function.html",
+    "description": "function"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Date.Range.html",
+    "description": "data-range"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/IO.Stream.html",
+    "description": "io-stream"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/File.Stream.html",
+    "description": "file-stream"
+  }
+]
