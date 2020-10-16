@@ -1,11 +1,11 @@
 [
     {
         "url": "https://giordano.github.io/blog/2017-11-03-rock-paper-scissors/",
-        "description": "\u0022Rock\u2013paper\u2013scissors game in less than 10 lines of code\u0022"
+        "description": "\"Rock–paper–scissors game in less than 10 lines of code\", by Mosè Giordano."
     },
-    { "url": "https://youtu.be/kc9HwsxE1OY", "description": "YouTube" },
+    { "url": "https://youtu.be/kc9HwsxE1OY", "description": "\"The Unreasonable Effectiveness of Multiple Dispatch\", by Stefan Karpinski at JuliaCon 2019." },
     {
         "url": "https://docs.julialang.org/en/v1/manual/methods/#man-methods-orthogonalize-1",
-        "description": "\u0022Orthogonalize your  [ methods] design\u0022"
+        "description": "\"Orthogonalize your methods design\", Julia Manual."
     }
 ]
