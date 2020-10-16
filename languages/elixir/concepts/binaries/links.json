@@ -1,1 +1,51 @@
-[]
+[
+  {
+    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#binaries",
+    "description": "binary"
+  },
+  {
+    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings",
+    "description": "bitstring"
+  },
+  {
+    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#binaries",
+    "description": "binary"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Hexadecimal",
+    "description": "wiki-hexadecimal"
+  },
+  {
+    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#binaries",
+    "description": "binary"
+  },
+  {
+    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#binaries",
+    "description": "special-form"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.SpecialForms.html#%3C%3C%3E%3E/1-unit-and-size",
+    "description": "bin-size"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.html#%3C%3E/2",
+    "description": "bin-concat"
+  },
+  { "url": "https://en.wikipedia.org/wiki/UTF-8", "description": "wiki-utf8" },
+  {
+    "url": "https://hexdocs.pm/elixir/String.html#length/1",
+    "description": "string-length"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.html#byte_size/1",
+    "description": "byte-size"
+  },
+  {
+    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#binaries",
+    "description": "binary"
+  },
+  {
+    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#binaries",
+    "description": "bin-matching"
+  }
+]
