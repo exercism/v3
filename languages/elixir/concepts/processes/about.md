@@ -95,16 +95,6 @@ end
 
 In practice, this approach is rarely used directly. Elixir offers concurrency abstractions, such as the [`Agent` module][agent] or a [_`GenServer` behaviour`_][genserver], that both build on top of the receive loop. However, it is crucial to understand those basics to be able to efficiently use the abstractions.
 
-## PIDs
-
-- PIDs are their own datatype.
-  - You can check if a variable is a PID with [`is_pid/1`][kernel-is-pid]
-- Each process has its own unique PID.
-- You can get the current process' PID with `self()`.
-- PIDs function as _mailbox addresses_ - if you have a process' PID, you can send a message to that process.
-- PIDs are usually created indirectly, as a return value of functions that create new processes, like `spawn`.
-  - PIDs should not be created directly by the programmer. If it were required, Erlang has a [`list_to_pid/1`][erlang-list-to-pid] function.
-
 [getting-started-processes-state]: https://elixir-lang.org/getting-started/processes.html#state
 [getting-started-processes-links]: https://elixir-lang.org/getting-started/processes.html#state
 [process-alive]: https://hexdocs.pm/elixir/Process.html#alive?
@@ -114,6 +104,4 @@ In practice, this approach is rarely used directly. Elixir offers concurrency ab
 [kernel-spawn-3]: https://hexdocs.pm/elixir/Kernel.html#spawn/3
 [kernel-receive]: https://hexdocs.pm/elixir/Kernel.SpecialForms.html#receive/1
 [kernel-send]: https://hexdocs.pm/elixir/Kernel.html#send/2
-[kernel-is-pid]: https://hexdocs.pm/elixir/Kernel.html#is_pid/1
 [wiki-actor-model]: https://en.wikipedia.org/wiki/Actor_model
-[erlang-list-to-pid]: https://erlang.org/doc/man/erlang.html#list_to_pid-1
