@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "url": "https://docs.julialang.org/en/v1/manual/functions/",
+        "description": "functions"
+    },
+    {
+        "url": "https://github.com/invenia/BlueStyle",
+        "description": "blue-style"
+    }
+]
