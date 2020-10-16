@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "url": "https://doc.rust-lang.org/std/collections/hash_map/enum.Entry.html#method.insert",
+    "description": "method"
+  },
+  {
+    "url": "https://doc.rust-lang.org/std/collections/hash_map/enum.Entry.html#method.key",
+    "description": "method"
+  }
+]
