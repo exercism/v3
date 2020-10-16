@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/literals",
+    "description": "floating-point-types"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/",
+    "description": "conversion-operators"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/api/system.double.equals#precision-in-comparisons",
+    "description": "precision-in-comparisons"
+  },
+  {
+    "url": "https://0.30000000000000004.com/",
+    "description": "0.30000000000000004.com"
+  },
+  {
+    "url": "https://evanw.github.io/float-toy/",
+    "description": "evanw.github.io-float-toy"
+  }
+]
