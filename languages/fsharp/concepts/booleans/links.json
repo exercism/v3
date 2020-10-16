@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/symbol-and-operator-reference/boolean-operators",
+    "description": "operators"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/symbol-and-operator-reference/#operator-precedence",
+    "description": "precedence"
+  }
+]
