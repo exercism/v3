@@ -1,1 +1,24 @@
-[]
+[
+  { "url": "https://hexdocs.pm/elixir/List.html", "description": "list" },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.html#\u002B\u002B/2",
+    "description": "kernel-concat-list"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/IO.html#inspect/2",
+    "description": "io-inspect"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Inspect.Opts.html",
+    "description": "inspect-opts"
+  },
+  { "url": "https://unicode-table.com/en/", "description": "unicode-table" },
+  {
+    "url": "https://www.fileformat.info/info/unicode/utf8.htm",
+    "description": "utf8"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.html#to_string/1",
+    "description": "kernel-to-string"
+  }
+]
