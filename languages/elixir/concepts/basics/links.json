@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "url": "https://elixir-lang.org/getting-started/basic-types.html#basic-arithmetic",
+    "description": "operators"
+  },
+  {
+    "url": "https://elixirschool.com/en/lessons/basics/documentation/#inline-documentation",
+    "description": "inline-documentation"
+  }
+]
