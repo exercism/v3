@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netcore-3.1",
+    "description": "lists-docs"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/",
+    "description": "generics"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions",
+    "description": "casting"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/foreach-in",
+    "description": "for-each"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/",
+    "description": "linq"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netcore-3.1",
+    "description": "lists-docs"
+  },
+  {
+    "url": "https://csharp.net-tutorials.com/collections/lists/",
+    "description": "lists-tutorial"
+  }
+]
