@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "url": "https://hexdocs.pm/elixir/Regex.html",
+    "description": "regex-docs"
+  },
+  {
+    "url": "https://elixir-lang.org/getting-started/sigils.html#regular-expressions",
+    "description": "sigils-regex"
+  },
+  {
+    "url": "https://www.regular-expressions.info",
+    "description": "website-regex-info"
+  },
+  { "url": "https://www.rexegg.com/", "description": "website-rexegg" },
+  { "url": "https://regexone.com/", "description": "website-regexone" },
+  { "url": "https://regex101.com/", "description": "website-regex-101" },
+  { "url": "https://regexr.com/", "description": "website-regexr" },
+  {
+    "url": "https://regexcrossword.com/",
+    "description": "website-regex-crossword"
+  }
+]
