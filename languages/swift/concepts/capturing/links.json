@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/Closures.html#",
+    "description": "closures"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/Closures.html#ID95",
+    "description": "closure-expressions"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/Closures.html#ID98",
+    "description": "inferring-closure-types"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/Closures.html#ID100",
+    "description": "shorthand-argument-names"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/Closures.html#ID102",
+    "description": "trailing-closures"
+  }
+]
