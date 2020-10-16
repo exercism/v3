@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/symbol-and-operator-reference/arithmetic-operators",
+    "description": "operators"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/values/#binding-a-value",
+    "description": "bindings"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/functions/#remarks",
+    "description": "functions"
+  },
+  {
+    "url": "https://www.javatpoint.com/f-sharp-comments",
+    "description": "comments"
+  }
+]
