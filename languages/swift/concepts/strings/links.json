@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html",
+    "description": "strings-and-characters"
+  },
+  {
+    "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/Articles/formatSpecifiers.html",
+    "description": "string-format-specifiers"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html#ID292",
+    "description": "string-interpolation"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html#ID299",
+    "description": "string-equality"
+  },
+  {
+    "url": "https://developer.apple.com/documentation/swift/String",
+    "description": "string-docs"
+  },
+  {
+    "url": "https://developer.apple.com/documentation/swift/character",
+    "description": "character-docs"
+  },
+  {
+    "url": "https://developer.apple.com/documentation/foundation/nsstring",
+    "description": "nsstring-docs"
+  }
+]
