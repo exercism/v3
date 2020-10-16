@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "url": "https://elixir-lang.org/getting-started/basic-types.html#strings",
+    "description": "getting-started-strings"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.html#%3C%3E/2",
+    "description": "kernel-concat"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/String.html#module-interpolation",
+    "description": "string-interpolation"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/String.html#functions",
+    "description": "string-module-functions"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/String.html#module-escape-characters",
+    "description": "escape-characters"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/IO.html#puts/2",
+    "description": "io-puts"
+  },
+  {
+    "url": "https://elixir-examples.github.io/examples/multiline-strings-heredocs",
+    "description": "heredoc-syntax"
+  }
+]
