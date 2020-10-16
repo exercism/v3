@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/Fibonacci_number",
+    "description": "fibonacci"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Enum.html",
+    "description": "module-enum"
+  },
+  {
+    "url": "https://github.com/elixir-lang/elixir/blob/291ebf7458bb588be64e0a65afc1b9fd51ebc4dc/lib/elixir/lib/enum.ex#L3767-L3768",
+    "description": "enumerable-list-reduce-implementation"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Stack_overflow",
+    "description": "wiki-stack-overflow"
+  }
+]
