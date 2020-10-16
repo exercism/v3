@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "url": "https://elixir-lang.org/getting-started/processes.html#state",
+    "description": "getting-started-processes-state"
+  },
+  {
+    "url": "https://elixir-lang.org/getting-started/processes.html#state",
+    "description": "getting-started-processes-links"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.html#spawn/1",
+    "description": "kernel-spawn-1"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.html#spawn/3",
+    "description": "kernel-spawn-3"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Process.html#alive?",
+    "description": "process-alive"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Actor_model",
+    "description": "wiki-actor-model"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.html#send/2",
+    "description": "kernel-send"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.SpecialForms.html#receive/1",
+    "description": "kernel-receive"
+  },
+  { "url": "https://hexdocs.pm/elixir/Agent.html", "description": "agent" },
+  {
+    "url": "https://hexdocs.pm/elixir/GenServer.html",
+    "description": "genserver"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.html#is_pid/1",
+    "description": "kernel-is-pid"
+  },
+  {
+    "url": "https://erlang.org/doc/man/erlang.html#list_to_pid-1",
+    "description": "erlang-list-to-pid"
+  }
+]
