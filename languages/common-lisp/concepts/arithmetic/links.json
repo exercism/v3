@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "url": "https://lispcookbook.github.io/cl-cookbook/numbers.html",
+    "description": "The Common Lisp Cookbook"
+  },
+  { "url": "http://l1sp.org/cl/12.1.1", "description": "here" }
+]
