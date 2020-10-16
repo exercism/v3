@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "url": "https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/",
+    "description": "joel-on-text"
+  },
+  {
+    "url": "https://docs.python.org/3.8/library/logging.html",
+    "description": "logging-library"
+  }
+]
