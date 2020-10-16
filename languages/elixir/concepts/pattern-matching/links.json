@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "url": "http://blog.plataformatec.com.br/2014/09/writing-assertive-code-with-elixir/",
+    "description": "assertive-style"
+  },
+  {
+    "url": "https://elixir-lang.org/getting-started/pattern-matching.html",
+    "description": "pattern-match-doc"
+  },
+  {
+    "url": "https://www.amberbit.com/blog/2019/7/26/the-misunderstanding-of-let-it-crash/",
+    "description": "let-it-crash"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.html",
+    "description": "kernel-module"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Tuple.html",
+    "description": "tuple-module"
+  },
+  {
+    "url": "https://elixir-lang.org/getting-started/pattern-matching.html",
+    "description": "pattern-match-doc"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.SpecialForms.html#=/2",
+    "description": "match-op"
+  },
+  {
+    "url": "https://elixir-lang.org/getting-started/pattern-matching.html",
+    "description": "pattern-match-doc"
+  },
+  {
+    "url": "https://elixir-lang.org/getting-started/pattern-matching.html",
+    "description": "pattern-match-doc"
+  },
+  {
+    "url": "https://www.poeticoding.com/the-beauty-of-pattern-matching-in-elixir/",
+    "description": "The Beauty of Pattern Matching in Elixir - Poeticoding"
+  },
+  {
+    "url": "https://joyofelixir.com/6-pattern-matching",
+    "description": "Pattern Matching - Joy of Elixir"
+  }
+]
