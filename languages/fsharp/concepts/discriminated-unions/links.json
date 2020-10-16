@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/discriminated-unions#remarks",
+    "description": "define"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching",
+    "description": "pattern-matching"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#identifier-patterns",
+    "description": "identifier-patterns"
+  }
+]
