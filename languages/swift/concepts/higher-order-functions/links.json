@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/Functions.html#ID174",
+    "description": "function-types"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/Functions.html#ID176",
+    "description": "functions-as-parameters"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/Functions.html#ID177",
+    "description": "functions-as-returns"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/Closures.html#ID103",
+    "description": "capturing-values"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/Closures.html#ID546",
+    "description": "escaping"
+  }
+]
