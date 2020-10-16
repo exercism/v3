@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID329",
+    "description": "tuples"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/Functions.html#ID164",
+    "description": "multiple-return-values"
+  }
+]
