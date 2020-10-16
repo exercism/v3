@@ -1,23 +1,95 @@
-This concept exercise gave you some practice writing structs and methods in Rust.
+# Structs
 
-One of the important takeaways from this exercise is being able to tell when we need an _immutable_ reference to our struct instance via `&self` vs. when we need a _mutable_ reference to our struct instance via `&mut self`.
+Structs collect a fixed, heterogenous set of data into a single unit. Structs in Rust have these properties:
 
-Notice that the getter methods made use of `&self` since they are only concerned with reading data from our struct instance. The setter methods, in contrast, made use of `&mut self` since they are concerned with updating our struct instance.
+- Every struct type has a particular name.
+- Every member of a struct is called a **field**.
+- Every field of a struct has a particular name.
+- Visibility is tracked at the field level: each field may be independently public, private, or other[^1].
 
-It should also be noted that the usage of getter and setter methods in this concept exercise was a bit artificial in order to expose a use-case for `&self` vs. `&mut self` methods. In real projects, the fields would simply be made public, such that we'd have a struct like:
+# Tuples etc.
+
+Structs are very much like **Tuples**. In fact, the only difference between structs and tuples has to do with what is anonymous. The general form goes like this:
+
+- Structs are named, and have named fields:
+
+  ```rust
+  struct Foo{
+      bar: Bar,
+      bat: Bat,
+  }
+  ```
+
+  Fields are accessed by name:
+
+  ```rust
+  let bar = foo.bar;
+  ```
+
+- Tuple structs are named, and have anonymous fields:
+
+  ```rust
+  Foo(Bar, Bat)
+  ```
+
+  Fields are accessed by unpacking or by numeric index:
+
+  ```rust
+  // unpacking
+  let (bar, bat) = foo;
+  ```
+
+  ```rust
+  // numeric index
+  let bar = foo.0;
+  let bat = foo.1;
+  ```
+
+- Tuples are anonymous, and have anonymous fields:
+
+  ```rust
+  (Bar, Bat)
+  ```
+
+  As in tuple structs, fields are accessed by unpacking or by numeric index.
+
+- Anonymous structs are, as the name suggests, anonymous, but with named fields. You may be familiar with them from other languages, such as go or Java. They do not exist in Rust; it is considered idiomatic to use a tuple instead.
+
+# Zero Sized Types
+
+Structs can have as many or as few fields as is required. The implication is that it is legal for a struct to have zero fields. A struct with zero fields is called a **Zero-Sized Type** and has some special handling by the compiler: zero-sized types (often abbreviated as **ZSTs**) never consume stack or heap space, even when you might expect them to. For example, `Box<T>` doesn't allocate any heap memory if `T` is a ZST.
+
+You can use standard or tuple struct syntax when writing a ZST:
 
 ```rust
-pub struct User {
-    pub name: String,
-    pub age: u32,
-    pub weight: f32,
-}
+// declaration
+struct Foo {}
+// instantiation
+let foo = Foo {}
 ```
 
-This way, we can fetch and/or update fields on structs without having to go through a function call.
+```rust
+// declaration
+struct Foo();
+// instantiation
+let foo = Foo();
+```
 
-There are also other struct variants that this exercise didn't touch on, namely _tuple structs_ and _unit structs_.
+There's also a shorthand for ZSTS:
 
-- [https://learning-rust.github.io/docs/b2.structs.html#Tuple-structs](https://learning-rust.github.io/docs/b2.structs.html#Tuple-structs) highlights the use-cases of tuple and unit structs.
+```rust
+// declaration
+struct Foo;
+// instantiation
+let foo = Foo;
+```
 
-- [https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html](https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html) in _Rust By Example_ showcases some examples of tuple and unit structs.
+Typically, when writing a ZST, the shorthand is preferred, as you can't mix and match: whatever style was used to declare a ZST[^2] is the same style which is required to instantiate it.
+
+After all this discussion of the syntax of ZSTs, let's talk about why would you ever want such a thing. A ZST can't store any data, but it's great for implementing traits on.
+
+---
+
+[^1]: [These docs](https://doc.rust-lang.org/reference/visibility-and-privacy.html) explain some less-commonly-used visibility options.
+
+[^2]: This is a particular instance of a general rule: whatever style was used to declare any struct type is the same style required to instantiate it.
