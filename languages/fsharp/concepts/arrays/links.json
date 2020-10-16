@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/arrays",
+    "description": "arrays"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/arrays#creating-arrays",
+    "description": "creating-arrays"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/arrays#accessing-elements",
+    "description": "array-indexer"
+  },
+  {
+    "url": "https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array-module-%5bfsharp%5d",
+    "description": "array-module"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#array-pattern",
+    "description": "array-pattern"
+  }
+]
