@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "url": "https://0.30000000000000004.com/",
+    "description": "0.30000000000000004.com"
+  },
+  {
+    "url": "https://evanw.github.io/float-toy/",
+    "description": "evanw.github.io-float-toy"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.html#==/2",
+    "description": "kernel-equal"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic",
+    "description": "kernel-strictly-equal"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Float.html#ceil/2",
+    "description": "float-ceil"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.html#ceil/1",
+    "description": "kernel-ceil"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.html#trunc/1",
+    "description": "kernel-trunc"
+  }
+]
