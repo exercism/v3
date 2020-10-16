@@ -5,6 +5,6 @@
   },
   {
     "url": "https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html",
-    "description": "https://doc.rust-lang.org/stable/rust-by-example/custom_types/structs.html"
+    "description": "examples of tuple and unit structs"
   }
 ]
