@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "url": "https://elixir-lang.org/getting-started/comprehensions.html",
+    "description": "elixir-comprehensions"
+  },
+  {
+    "url": "https://hexdocs.pm/elixir/Kernel.SpecialForms.html#for/1",
+    "description": "for"
+  }
+]
