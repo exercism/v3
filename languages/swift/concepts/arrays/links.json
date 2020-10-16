@@ -1,6 +1,10 @@
 [
   {
     "url": "https://developer.apple.com/documentation/swift/array",
-    "description": "array"
-  }
+    "description": "Apple Swift Documentation: Array"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html#ID107",
+    "description": "The Swift Language Guide: Collection Types"
+  }  
 ]
