@@ -1,10 +1,10 @@
 [
     {
         "url": "https://docs.julialang.org/en/v1/manual/functions/",
-        "description": "functions"
+        "description": "Functions, Julia Manual."
     },
     {
         "url": "https://github.com/invenia/BlueStyle",
-        "description": "blue-style"
+        "description": "Blue: a Style Guide for Julia, by Invenia."
     }
 ]
