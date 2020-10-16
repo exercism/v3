@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html",
+    "description": "structs-and-classes"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html#ID88",
+    "description": "structs-are-value-types"
+  },
+  {
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html#ID89",
+    "description": "classes-are-reference-types"
+  }
+]
