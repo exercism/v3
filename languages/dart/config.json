@@ -81,5 +81,314 @@
       "name": "Type Conversion",
       "blurb": "TODO: add blurb for type-conversion concept"
     }
+  ],
+  "practice": [
+    {
+      "slug": "hello-world",
+      "uuid": "6b868b7b-cac4-41ff-a855-21f596637845",
+      "prerequisites": [],
+      "topics": [
+        "conditionals",
+        "optional_values",
+        "strings",
+        "text_formatting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "slug": "resistor-color",
+      "uuid": "b0e61aa6-5944-48b4-a91b-8960b6655e51",
+      "prerequisites": [],
+      "topics": ["arrays", "strings"],
+      "difficulty": 2
+    },
+    {
+      "slug": "two-fer",
+      "uuid": "57a75d7e-370b-4937-8dd4-429db1f26ff3",
+      "prerequisites": [],
+      "topics": ["conditionals", "optional_values", "text_formatting"],
+      "difficulty": 1
+    },
+    {
+      "slug": "resistor-color-duo",
+      "uuid": "98ae146a-67f9-49ae-9cd6-00882a374248",
+      "prerequisites": [],
+      "topics": ["arrays", "strings"],
+      "difficulty": 2
+    },
+    {
+      "slug": "reverse-string",
+      "uuid": "f195282c-c7a3-4a85-bbc1-d4e85e62d54c",
+      "prerequisites": [],
+      "topics": ["strings"],
+      "difficulty": 1
+    },
+    {
+      "slug": "leap",
+      "uuid": "4bcfd789-dee6-4dd9-8524-076508504eda",
+      "prerequisites": [],
+      "topics": ["booleans", "integers", "logic"],
+      "difficulty": 1
+    },
+    {
+      "slug": "scrabble-score",
+      "uuid": "d74be875-bc1c-47a5-bf80-0c4c57ed200e",
+      "prerequisites": [],
+      "topics": ["conditionals", "equality", "loops", "strings"],
+      "difficulty": 1
+    },
+    {
+      "slug": "beer-song",
+      "uuid": "50c34698-7767-42b3-962f-21c735e49787",
+      "prerequisites": [],
+      "topics": ["loops", "strings", "text_formatting"],
+      "difficulty": 3
+    },
+    {
+      "slug": "armstrong-numbers",
+      "uuid": "4f650701-9568-4d95-9f72-be4bde2c90ec",
+      "prerequisites": [],
+      "topics": ["equality", "integers", "logic", "math", "strings"],
+      "difficulty": 1
+    },
+    {
+      "slug": "isogram",
+      "uuid": "3c1b70fa-aaa8-4323-9aab-4c76da0a89e1",
+      "prerequisites": [],
+      "topics": ["algorithms", "logic", "strings"],
+      "difficulty": 1
+    },
+    {
+      "slug": "difference-of-squares",
+      "uuid": "c1cdab6f-c18c-4173-828a-2191151d20d4",
+      "prerequisites": [],
+      "topics": ["integers", "math"],
+      "difficulty": 2
+    },
+    {
+      "slug": "word-count",
+      "uuid": "b74dde02-03d0-4165-8302-e8ba119b486b",
+      "prerequisites": [],
+      "topics": ["lists", "loops", "maps", "regular_expressions"],
+      "difficulty": 2
+    },
+    {
+      "slug": "bob",
+      "uuid": "615a83cc-a905-435a-a30e-f052b61cfd4c",
+      "prerequisites": [],
+      "topics": [
+        "conditionals",
+        "pattern_recognition",
+        "polymorphism",
+        "regular_expressions",
+        "strings"
+      ],
+      "difficulty": 2
+    },
+    {
+      "slug": "space-age",
+      "uuid": "c8bf7da7-d26d-48e8-a83b-1296972d2376",
+      "prerequisites": [],
+      "topics": ["floating_point_numbers", "integers", "math", "polymorphism"],
+      "difficulty": 2
+    },
+    {
+      "slug": "hamming",
+      "uuid": "91c8033d-f40c-4a90-9ec9-7081f6eba8d2",
+      "prerequisites": [],
+      "topics": ["conditionals", "equality", "loops", "strings"],
+      "difficulty": 2
+    },
+    {
+      "slug": "acronym",
+      "uuid": "3f8d18d4-4f31-405b-8aad-80f768b11db3",
+      "prerequisites": [],
+      "topics": [
+        "conditionals",
+        "equality",
+        "loops",
+        "regular_expressions",
+        "strings"
+      ],
+      "difficulty": 2
+    },
+    {
+      "slug": "phone-number",
+      "uuid": "8649b2b4-02f6-4947-92b9-d1cc0d7c3594",
+      "prerequisites": [],
+      "topics": ["conditionals", "loops", "regular_expressions"],
+      "difficulty": 2
+    },
+    {
+      "slug": "gigasecond",
+      "uuid": "0c0511fd-59aa-4480-a7cd-4de0e9303b86",
+      "prerequisites": [],
+      "topics": ["time"],
+      "difficulty": 3
+    },
+    {
+      "slug": "raindrops",
+      "uuid": "3d4e326d-2419-4e93-ac29-5727dbc3fbf1",
+      "prerequisites": [],
+      "topics": ["conditionals", "equality", "strings"],
+      "difficulty": 2
+    },
+    {
+      "slug": "rna-transcription",
+      "uuid": "99147c39-e8d3-4166-9215-c47fb4832781",
+      "prerequisites": [],
+      "topics": ["strings", "transforming"],
+      "difficulty": 3
+    },
+    {
+      "slug": "anagram",
+      "uuid": "6e811b53-4eb1-40f9-a811-b5113d68ae8a",
+      "prerequisites": [],
+      "topics": ["conditionals", "equality", "loops", "strings"],
+      "difficulty": 1
+    },
+    {
+      "slug": "prime-factors",
+      "uuid": "89bb2ba8-86f2-4660-8739-4141eb9e6cf5",
+      "prerequisites": [],
+      "topics": [
+        "arrays",
+        "conditionals",
+        "integers",
+        "lists",
+        "loops",
+        "math"
+      ],
+      "difficulty": 3
+    },
+    {
+      "slug": "diamond",
+      "uuid": "5bbd251d-b2eb-44a1-a9a6-8543afb7511c",
+      "prerequisites": [],
+      "topics": ["conditionals", "loops", "strings"],
+      "difficulty": 3
+    },
+    {
+      "slug": "matching-brackets",
+      "uuid": "508ebbf1-205e-4992-97d7-2865f06a3b2b",
+      "prerequisites": [],
+      "topics": ["pattern_matching", "stacks"],
+      "difficulty": 3
+    },
+    {
+      "slug": "pascals-triangle",
+      "uuid": "f06d9bb0-0b8d-4b34-b6d4-5c5cfae0d93c",
+      "prerequisites": [],
+      "topics": ["conditionals", "integers", "lists", "loops", "math"],
+      "difficulty": 3
+    },
+    {
+      "slug": "darts",
+      "uuid": "5444c90c-9129-438a-a4be-b844cf1550e5",
+      "prerequisites": [],
+      "topics": ["conditionals", "math"],
+      "difficulty": 3
+    },
+    {
+      "slug": "pangram",
+      "uuid": "0ea556b0-afcd-479d-bbad-68bc4556c1d0",
+      "prerequisites": [],
+      "topics": ["pattern_matching", "regular_expressions", "sets", "strings"],
+      "difficulty": 3
+    },
+    {
+      "slug": "luhn",
+      "uuid": "54cd6a0c-cbd1-493d-b91d-baad9fec058c",
+      "prerequisites": [],
+      "topics": [
+        "algorithms",
+        "booleans",
+        "loops",
+        "strings",
+        "type_conversion"
+      ],
+      "difficulty": 4
+    },
+    {
+      "slug": "minesweeper",
+      "uuid": "2c60339e-d15a-41e7-ba4f-33fa18d2a732",
+      "prerequisites": [],
+      "topics": [
+        "classes",
+        "games",
+        "lists",
+        "logic",
+        "loops",
+        "math",
+        "object_oriented_programming"
+      ],
+      "difficulty": 5
+    },
+    {
+      "slug": "isbn-verifier",
+      "uuid": "c52dfe2b-5634-4c0c-8ea2-3ca86e5d9a33",
+      "prerequisites": [],
+      "topics": ["integers", "loops", "strings"],
+      "difficulty": 4
+    },
+    {
+      "slug": "collatz-conjecture",
+      "uuid": "8cc3b7a3-6a63-4e3b-b64d-8a07d52d51f8",
+      "prerequisites": [],
+      "topics": ["exception_handling", "loops", "math"],
+      "difficulty": 1
+    },
+    {
+      "slug": "binary-search-tree",
+      "uuid": "597f86bc-6717-4a4c-a2c6-58241ac3d6cb",
+      "prerequisites": [],
+      "topics": [
+        "algorithms",
+        "classes",
+        "generics",
+        "inheritance",
+        "logic",
+        "object_oriented_programming",
+        "searching",
+        "sorting",
+        "trees"
+      ],
+      "difficulty": 5
+    },
+    {
+      "slug": "nth-prime",
+      "uuid": "b470633d-6d2c-4245-92eb-37ea80500f2b",
+      "prerequisites": [],
+      "topics": ["algorithms", "integers", "math"],
+      "difficulty": 3
+    },
+    {
+      "slug": "allergies",
+      "uuid": "729f4c8b-678a-434c-a09e-a71aca4bb2c0",
+      "prerequisites": [],
+      "topics": ["arrays", "bitwise_operations", "conditionals", "loops"],
+      "difficulty": 2
+    },
+    {
+      "slug": "triangle",
+      "uuid": "387eb271-b02d-444f-a1e0-dbccea72f740",
+      "prerequisites": [],
+      "topics": ["conditionals", "loops"],
+      "difficulty": 3
+    },
+    {
+      "slug": "secret-handshake",
+      "uuid": "0687be19-99e8-4b85-b3da-6b91a10acaa3",
+      "prerequisites": [],
+      "topics": ["arrays", "bitwise_operations", "integers"],
+      "difficulty": 5
+    },
+    {
+      "slug": "robot-simulator",
+      "uuid": "8fffb0bb-2f71-41a9-90f2-7006020ddc19",
+      "prerequisites": [],
+      "topics": ["classes", "enumerations", "logic", "loops"],
+      "difficulty": 4
+    }
   ]
 }
