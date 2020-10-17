@@ -4,11 +4,11 @@
     "description": "task-module"
   },
   {
-    "url": "https://hexdocs.pm/elixir/Agent.html",
-    "description": "elixir-doc-agent"
+    "url": "https://hexdocs.pm/elixir/GenServer.html",
+    "description": "genserver-module"
   },
   {
-    "url": "https://elixircasts.io/intro-to-agents",
-    "description": "elixircasts-agent"
+    "url": "https://elixir-lang.org/getting-started/mix-otp/agent.html#agents",
+    "description": "agent-module"
   }
 ]
