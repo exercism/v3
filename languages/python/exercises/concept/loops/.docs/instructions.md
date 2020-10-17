@@ -2,30 +2,32 @@ You are a teacher and you are correcting papers of your students who wrote an ex
 
 ## 1. Failed Students
 
-Given the function `find_failed_student()` that takes `student_marks` as parameter. Find the Number of students who have failed the subject. We say that a student has failed if his mark is below or equal to 40.
+Create the function `count_failed_students()` that takes one parameter: `student_marks`. This function should count the number of students who have failed the subject, returning the count as an integer. We say that a student has failed if their mark is less than or equal to **40**.
 
 Note: `Iterate` through the student marks to find out your answer.
 ​
 Result should be an `int`.
 
 ```python
->>> find_failed_student(student_marks=[90,40,55,70,30]))
+>>> count_failed_students(student_marks=[90,40,55,70,30]))
 2
 ```
 
-## 2. Above x marks
+## 2. Top Marks
 
-The Headmaster wants to find out the toppers of the students. The topper values fluctate and you need to find the list of marks that are more than the given value.
+The Headmaster wants to find the group of top students. What qualifies student marks as `top marks` fluctuates, and you will need to find the student marks that are greater than than the current threshold.
 
-Given the function `above_given_marks()` where `student_marks and x` are 2 parameters
+Create the function `above_threshold()` where `student_marks and threshold are the two required parameters:
 
-1. Student marks are a list of marks of each student
-2. X - return the marks which are more than or equal to x. ie: return if mark >= x.
+1. `student_marks` are a list of marks for each student
+2. `threshold` is the top mark threshold. Marks greater than or equal to this number are considered "top marks" .
 
-Note: If you find a mark which is less than x, you should continue to the next mark.​
+This function should return a `list` of all marks that are greater than or equal to a scoring threshold.
+
+**Note:** If you find a mark which is less than the threshold, you should `continue` to evaluating the next mark.​
 
 ```python
->>> above_given_marks(student_marks=[90,40,55,70,30], 70)
+>>> above_threshold(student_marks=[90,40,55,70,30], 70)
 [90, 70]
 ```
 
@@ -43,18 +45,18 @@ You need to return the first K number of student Marks. Once you reach K number 
 [90]
 ```
 
-## 4. Centum Scorer
+## 4. Full Marks
 
-Given the function `centum_scorer()` with parameters `student_info`.
+Given the function `perfect_score()` with parameters `student_info`.
 Student Info is a dictionary containing name and mark of the student `{"Charles": 90, "Tony": 80}`
 
-Find if we have any students who has scored centum in the exam. A Centum in latin means `100`. If we dont find a Centum Scorer in the list, then return "No Centums"
+Find if we have any students who has scored full marks - `100` in the exam. If we dont find a student in the list, then return "No hundreds"
 
-Return the first centum scorer.
+Return the first student who has scored full marks - 100.
 
 ```python
->>> centum_scorer(student_info={"Charles": 90, "Tony": 80, "Alex":100})
+>>> perfect_score(student_info={"Charles": 90, "Tony": 80, "Alex":100})
 Alex
->>> centum_scorer(student_info={"Charles": 90, "Tony": 80})
-No Centums
+>>> perfect_score(student_info={"Charles": 90, "Tony": 80})
+No hundreds
 ```

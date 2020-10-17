@@ -1,15 +1,14 @@
 ## Goal
 
-This concept exercise should convey a basic understanding of how to handle loops in Python. This concept exercise should therefore teach the student the python while loops, for loops and should also teach how to interrupt or change the normal flow of a loop.
+This concept exercise should convey a basic understanding of how to handle the `for` loop and `while` in Python. This concept exercise should also teach how to interrupt or change the normal flow of a loop using the `break` statement and the `continue` statement.
 
 ## Learning objectives
 
-- use the while key to execute a loop: execute something as long as an expression is true
-- use a for loop to iterate over an iterable object with the for ... in pattern. The Membership testing concept (in) is required to address this concept.
-- understand the differences between while (condition-dependent) and for (length or iteration dependent) loops
-- use the break statement to terminate the nearest enclosing loop
-- use the continue statement to continue with the next cycle of the nearest enclosing loop
-- use the else clause to perform operation when a for loop terminates
+- use `while` to make a loop: execute something as long as an expression/test is `true`
+- use `for` to iterate over an iterable object with the `for ... in` pattern. The Membership testing concept (in) is required to address this concept.
+- understand the differences between `while` (indefinite, condition-dependent) and `for` (definite, length or count dependent) loops
+- use `break` statement to terminate the nearest enclosing loop
+- use `continue` statement to continue with the next cycle of the nearest enclosing loop
 
 ## Out of scope
 
@@ -17,17 +16,16 @@ This concept exercise should convey a basic understanding of how to handle loops
 
 ## Concepts
 
-- while loops
-- for loops
-- the else clause to perform operation when the loop terminates
-- break statement
-- continue statement
+- `while` loops
+- `for` loops
+- `break` statement
+- `continue` statement
 
 ## Prerequisites
 
-- iterable objects and iteration base knowledge
-- collections
-- the Membership testing concept (in)
+- `basics`
+- `numbers`
+- `arithmetic`
 
 ## Resources
 

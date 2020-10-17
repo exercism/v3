@@ -1,23 +1,20 @@
 ## Loops in Python
 
-There is always a scenario where you would need to go through a [`list` or `group`] of [`things` or `object` or `values`].
-When you have an `array` of objects or values to process, you need to `iterate` on the array and process them. You are going to do a repeated set of instructions on every single object or value in an array.
+There are 2 general ways in Python to loop through objects.
 
-There are 2 ways to loop through objects.
-
-- `while` loop
-- `for` loop
+- `while` loop (_indefinite_, or _uncounted_)
+- `for` loop (_definite_, or _counted_)
 
 ## While loops
 
-While loops are based on `conditional` statement for looping through objects.
+While loops are _uncounted_ and based on a `conditional` statement for looping through objects.
 
 ```
 while expression:
     set_of_statements
 ```
 
-When the expression evaluates to `True` (truthiness) the loop will execute the set of statements till it reaches the end of the indent block. It will execute the loop again until the expression evaluates to `False`.
+When the statement evaluates to `True`, the loop advances and executes the code in the indented block - or "body" of the loop. Looping continues in this fashion until the conditional statement evaluates to `False`.
 
 ```python
 i = 0
@@ -30,20 +27,23 @@ while i < 3:
 
 ## For Loops
 
-While loops are based on `Iterational` statement. The Loop will iterate over a `iterable` object.
+Unlike while loops, for loops are based on a counter. The Loop will execute until the counter is exhausted. The counter in this case could be the indexes in a list or string, or the indexes in a range() object.
 
-```
-for item in iterable_object:
+```python
+for item in countable_object:
     set_of_statements
 ```
 
 ```python
-list_of_items = [1, 2, 3]
-for item in list_of_items:
-    print(item)
-# => 1
-# => 2
-# => 3
+>>> numbers = [1, 2, 3, 4, 5]
+
+>>> for number in numbers:
+         print(number)
+#=> 1
+#=> 2
+#=> 3
+#=> 4
+#=> 5
 ```
 
 ## Breaking from loops
@@ -82,20 +82,3 @@ for num in all_numbers:
 # => 5
 # => 7
 ```
-
-## Else in Loops
-
-An `else` clause in a loop will get executed when there is no `break` that happebed while you were processing your loop.
-This gets useful if you want to go over fail over scenarios.
-
-```python
-x = None
-for i in list_of_items:
-    if i > 10:
-        x = i
-        break
-else:
-    x = 10
-```
-
-What the above code does is it sets the variable x to 10 if the loop inside was not able to find an item that is more than 10.
