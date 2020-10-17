@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://clojuredocs.org/quickref#numbers",
+    "description": "operators"
+  },
+  {
+    "url": "https://clojure.org/guides/learn/syntax#_def",
+    "description": "def"
+  },
+  {
+    "url": "https://clojure.org/reference/vars",
+    "description": "vars"
+  },
+  {
+    "url": "https://clojure.org/guides/learn/functions",
+    "description": "functions"
+  }
+]
