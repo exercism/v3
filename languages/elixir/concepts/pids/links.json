@@ -14,9 +14,5 @@
   {
     "url": "https://hexdocs.pm/elixir/Kernel.html#is_pid/1",
     "description": "Kernel.is_pid/1"
-  },
-  {
-    "url": "https://erlang.org/doc/man/erlang.html#list_to_pid-1",
-    "description": ":erlang.list_to_pid/1"
   }
 ]
