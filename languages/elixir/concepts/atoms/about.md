@@ -15,5 +15,6 @@ Enum.fetch([1], 0)
 Enum.fetch([1], 2)
 # => :error
 ```
+
 [atom]: https://elixir-lang.org/getting-started/basic-types.html#atoms
 [anti-pattern]: https://en.wikipedia.org/wiki/Anti-pattern
