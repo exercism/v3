@@ -1,85 +1,90 @@
 import unittest
-from none import find_the_seat, empty_the_seat, arrange_the_seats, curr_empty_seat_capacity
+from none import *
 
 
 class TestNoneType(unittest.TestCase):
 
-    def test_empty_the_seat_1(self):
+    def test_new_seating_chart_1(self):
         self.assertDictEqual(
-            empty_the_seat({1: "Occupied", 2: None, 3: "Occupied"}, 3),
-            {1: "Occupied", 2: None, 3: None},
-            msg="The seat is not emptied at the expected seat number"
-        )
-    
-    def test_empty_the_seat_2(self):
-        self.assertDictEqual(
-            empty_the_seat({1: "Occupied", 2: None, 3: None, 4: "Occupied"}, 4),
-            {1: "Occupied", 2: None, 3: None, 4: None},
-            msg="The seat is not emptied at the expected seat number"
-        )
-    
-    def test_arrange_the_seats_1(self):
-        self.assertDictEqual(
-            arrange_the_seats(3),
+            new_seating_chart(3),
             {1: None, 2: None, 3: None},
-            msg="The seat arranged is not valid"
+            msg="The New Seating chart does not match with the expected."
         )
     
-    def test_arrange_the_seats_2(self):
+    def test_new_seating_chart_2(self):
         self.assertDictEqual(
-            arrange_the_seats(0),
-            {},
-            msg="The seat arranged (dict) should be empty"
+            new_seating_chart(),
+            {1: None, 2: None, 3: None, 4: None, 5: None, 6: None, 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: None, 15: None, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None},
+            msg="The New Seating chart does not match with the expected."
         )
     
-    def test_is_seat_empty_1(self):
-        self.assertTrue(
-            is_seat_empty(None),
-            msg="The Seat is empty. It should be True"
+    def test_arrange_reservations_1(self):
+        self.assertDictEqual(
+            arrange_reservations(guests=["Walter", "Frank", "Jenny", "Carol", "Alice", "George"]),
+            {1: 'Frank', 2: 'Jenny', 3: 'Carol', 4: 'Alice', 5: 'George', 6: None, 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: None, 15: None, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None},
+            msg="The reservation dict is incorrect"
         )
     
-    def test_is_seat_empty_2(self):
-        self.assertFalse(
-            is_seat_empty("Occupied"),
-            msg="The Seat is Occupied. It should be False"
+    def test_arrange_reservations_2(self):
+        self.assertDictEqual(
+            arrange_reservations(),
+            {1: None, 2: None, 3: None, 4: None, 5: None, 6: None, 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: None, 15: None, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None},
+            msg="The reservation dict is incorrect"
+        )
+    
+    def test_find_all_available_seats_1(self):
+        self.assertListEqual(
+            find_all_available_seats(seats = {1: None, 2: 'Frank', 3: 'Jenny', 4: None, 5: 'Alice', 6: 'George', 7: None, 8: 'Carol', 9: None, 10: None, 11: None, 12: 'Walter'}),
+            [1,4,7,9,10,11],
+            msg="The Available Seat list is incorrect"
+        )
+    
+    def test_find_all_available_seats_2(self):
+        self.assertListEqual(
+            find_all_available_seats(seats = {1: None, 2: None, 3: None, 4: None, 5: 'Alice', 6: None, 7: None, 8: None, 9: None, 10: None, 11: None, 12: None}),
+            [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12],
+            msg="The Available Seat list is incorrect"
         )
 
-    def test_find_the_seat_1(self):
-        self.assertIs(
-            find_the_seat({1: "Occupied", 2: None, 3: "Occupied"}),
-            2,
-            msg="the index of the seat which is empty is invalid."
-        )
-
-    def test_find_the_seat_2(self):
-        self.assertIs(
-            find_the_seat({1: "Occupied", 2: "Occupied", 3: None, 4: "Occupied", 5: None}),
-            3,
-            msg="the index of the seat which is empty is invalid."
-        )
-    
-    def test_curr_seat_cap_1(self):
+    def test_curr_empty_seat_capacity_1(self):
         self.assertIs(
             curr_empty_seat_capacity({1: "Occupied", 2: None, 3: "Occupied"}),
             1,
-            msg="the empty seat count is wrong"
+            msg="the index of the seat which is empty is invalid."
         )
 
-    def test_curr_seat_cap_2(self):
+    def test_curr_empty_seat_capacity_2(self):
         self.assertIs(
-            curr_empty_seat_capacity({1: "Occupied", 2: "Occupied", 3: "Occupied", 4: "Occupied"}),
-            0,
-            msg="The empty seat count is wrong"
+            curr_empty_seat_capacity({1: "Occupied", 2: "Occupied", 3: None, 4: "Occupied", 5: None}),
+            2,
+            msg="the index of the seat which is empty is invalid."
         )
-
-    def test_can_accom_seats_1(self):
-        self.assertTrue(
-            can_accomodate_seats({1: "Occupied", 2: None, 3: "Occupied"}, 2)
-            msg="We can accomadate seats for the input."
-        )
-
-    def test_can_accom_seats_2(self):
+    
+    def test_accommodate_waiting_guests_1(self):
+        starting_reservations = {1: 'Carol', 2: 'Alice', 3: 'George', 4: None, 5: None, 6: None, 7: 'Frank', 8: 'Walter'}
         self.assertFalse(
-            can_accomodate_seats({1: "Occupied", 2: None, 3: "Occupied"}, 1),
-            msg="Cannot Accomodate Seats for the Input"
+            accommodate_waiting_guests(starting_reservations, ["Mort", "Suze", "Phillip", "Tony"]),
+            msg="The Accomodation of waiting guests are incorrect"
+        )
+
+    def test_accommodate_waiting_guests_2(self):
+        starting_reservations = {1: None, 2: None, 3: None, 4: 'Carol', 5: 'Alice', 6: 'George', 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: None, 15: None, 16: None, 17: None, 18: 'Frank', 19:  'Jenny', 20: None, 21: None, 22: 'Walter'}
+        self.assertDictEqual(
+            accommodate_waiting_guests(starting_reservations, ["Mort", "Suze", "Phillip", "Tony"]),
+            {1: 'Mort', 2: 'Suze', 3: 'Phillip', 4: 'Carol', 5: 'Alice', 6: 'George', 7: 'Tony', 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: None, 15: None, 16: None, 17: None, 18: 'Frank', 19: 'Jenny', 20: None, 21: None, 22: 'Walter'},
+            msg="The Accomodation of waiting guests are incorrect"
+        )
+
+    def test_empty_seats_1(self):
+        self.assertDictEqual(
+            empty_seats(seats={1: "Alice", 2: None, 3: "Bob", 4: "George", 5: "Gloria"}, seat_numbers=[5,3,1]),
+            {1: None, 2: None, 3: None, 4: "George", 5: None},
+            msg="Seats are not emptied properly"
+        )
+
+    def test_empty_seats_2(self):
+        self.assertDictEqual(
+            empty_seats(seats={1: "Alice", 2: None, 3: "Bob", 4: "George", 5: "Gloria"}, seat_numbers=[]),
+            {1: "Alice", 2: None, 3: "Bob", 4: "George", 5: "Gloria"},
+            msg="Seats are not emptied properly"
         )

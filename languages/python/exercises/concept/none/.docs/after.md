@@ -9,6 +9,19 @@ a == b
 #=> True
 ```
 
+Python will also return `None` from a function that doesn't already have a stated `return` value, making it easy to check if the function completed without errors.
+
+```python
+def test_func():
+    pass
+test_func()
+#=> returns None
+
+def test_func2():
+    return
+#=> returns None
+```
+
 The `None` Object is a singleton of class `NoneType`. So when you find the type of a variable which is assigned with `None` it will always be of type `NoneType`.
 
 ```python

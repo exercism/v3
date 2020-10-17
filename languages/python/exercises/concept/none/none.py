@@ -1,17 +1,16 @@
-def arrange_the_seats(guests):
+def new_seating_chart():
     pass
 
-def is_seat_empty(seat_value):
+def arrange_reservations():
     pass
 
-def find_the_seat(seats):
-    pass
+def find_all_available_seats():
+   pass
 
-def curr_empty_seat_capacity(seats):
-    pass
+def current_seating_capacity():
+   pass
 
-def can_accomodate_seats(seats, guests):
-    pass
-
-def empty_the_seat(seats, seat_number):
+def accommodate_waiting_guests():
+   pass
+def empty_seats():
     pass

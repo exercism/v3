@@ -1,50 +1,33 @@
-In this exercise, you will get the basic idea of how to use 'None'.
-
 The exercise has 6 challenges to complete.
 
-You are the Maître D' of a hotel, Your tasks are given based on the number of people who are waiting to eat at your hotel. Complete the tasks accordingly and proceed.
+You are the Maître D' of a hotel restaurant. Your task is to manage the seating arrangements for the dining room according to the number of seats available today, number of reservations, and the "walk in" guests currently waiting to be seated. For the purposes of this exercise, seating is assigned by first available empty seat.
 
-## 1. Arrange the Seats
+You have 6 different dining room organization challenges to complete.
 
-Define the `arrange_the_seats()` function with 1 parameter. You know the number of guests who have reserved a table today.
+## 1. Make Today's Seating Chart
 
-The task of this function is to return a `dict` object containing the seat number (in `int`) as the key and `None` as the value for the number of guests who are going to attend.
+Define the `new_seating_chart()` function that takes a size argument representing the number of seats that will be set in the dining room today. If no `size` is given, the function should return a seating chart with 22 seats. Seat values should have a placeholder of `None` to indicate they are available to assign to a guest.
+
+## 2. Arrange Reservations
+
+Define the `arrange_reservations()` function with 1 parameter for a list of guest names. This represents the number of people who've reserved places in the dining room today.
+
+This function should return a `dict` seating chart of default size (22 seats), with guests assigned to seats in the order they appear on the reservation list. All unassigned seats should be set to `None`. If there are no guests, an "empty" seating chart with all `None` placeholders should be returned.
 
 ```python
-arrange_the_seats(guests=4)
-#=> {1: None, 2: None, 3: None, 4: None}
+arrange_reservatons(guests=["Walter", "Frank", "Jenny", "Carol", "Alice", "George"])
+#=> {1: 'Walter', 2: 'Frank', 3: 'Jenny', 4: 'Carol', 5: 'Alice', 6: 'George', 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: None, 15: None, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None}
 ```
 
-## 2. Is the Seat Empty?
+## 3. Find All the "Empty" Seats
 
-Define the `is_seat_empty()` function that takes 1 parameter. First parameter will contain the value of the seat which is checked before assigning to a guest.
-
-If the seat is empty, It will be of `None` value, else it will be mentioned with string `Occupied`.
-
-If the seat is empty, return `True` else return `False`.
+Define the `find_all_available_seats(seats)` function that takes 1 parameter (_a seating chart dictionary_) and returns a `list` of seat numbers that are available for guests that are currently waiting.
+If a seat is empty, It will be of `None` value in the dictionary. Occupied seats will have the name of the guest.
 
 ```python
-is_seat_empty(seat_value="Occupied")
-# => False
-is_seat_empty(seat_value=None)
-# => True
-```
-
-## 3. Find the Empty seat
-
-Define the `find_the_seat()` function that takes 1 parameter. First parameter will contain the `dict` object that is created by you while arranging the seats.
-
-Find the first empty seat that you come across in the list of seats passed to you.
-
-Your job is to return the seat number ( the key of the `dict` object ) that is passed to you.
-
-Note: There can be more than one seat which can be empty in the seats sent to you as a parameter.
-
-Bonus Tip: You can use the Function `is_seat_empty()` as an helper for this function.
-
-```python
-find_the_seat(seats={1: "Occupied", 2: None, 3: "Occupied"})
-# => 2
+seats = {1: None, 2: 'Frank', 3: 'Jenny', 4: None, 5: 'Alice', 6: 'George', 7: None, 8: 'Carol', 9: None, 10: None, 11: None, 12: 'Walter'}
+find_all_available_seats(seats)
+#>>>[1,4,7,9,10,11]
 ```
 
 ## 4. Current Empty Seating Capacity
@@ -62,28 +45,30 @@ can_accomodate_seats(seats={1: "Occupied", 2: None, 3: None})
 
 ## 5. Should we wait?
 
-Define the `can_accomodate_seats()` function that takes two parameters. The first parameter will list all the seats. The second parameter is the seats you need to fill the guests who have come unexpected.
+Define the `accommodate_waiting_guests(seats, guests)` function that takes two parameters. The first parameter will be a seating chart `dict`. The second parameter will be a `list` of guests who have "walked in" unexpectedly.  
+You'll first need to find out how many seats are available and whether or not you can even give the unannounced guests seats at this time.
 
-You need to find out how many seats are empty, Based on the number of seats you need to find out whether you can give the unannounced guests the seats they want.
+If you do not have enough seats, return `False`.
 
-You need to return True, if you have the sufficient number of seats, else False.
-
-Tip: You can use the curr_empty_seat_capacity() function as your helper.
+If seats are available, you will want to give the guests places on the seating chart, and return it updated.
+Tip: You can use previously defined functions to do the calculations for you.
 
 ```python
-can_accomodate_seats(seats={1: "Occupied", 2: None, 3: "Occupied"}, guests=2)
-# => False
-can_accomodate_seats(seats={1: "Occupied", 2: None, 3: None}, guests=2)
-# => True
+starting_reservations = {1: 'Carol', 2: 'Alice', 3: 'George', 4: None, 5: None, 6: None, 7: 'Frank', 8: 'Walter'}
+accomodate_guests(starting_reservations, ["Mort", "Suze", "Phillip", "Tony"])
+#>>>False
+starting_reservations = {1: None, 2: None, 3: None, 4: 'Carol', 5: 'Alice', 6: 'George', 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: None, 15: None, 16: None, 17: None, 18: 'Frank', 19:  'Jenny', 20: None, 21: None, 22: 'Walter'}
+accomodate_guests(starting_reservations, ["Mort", "Suze", "Phillip", "Tony"])
+#>>>{1: 'Mort', 2: 'Suze', 3: 'Phillip', 4: 'Carol', 5: 'Alice', 6: 'George', 7: 'Tony', 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: None, 15: None, 16: None, 17: None, 18: 'Frank', 19: 'Jenny', 20: None, 21: None, 22: 'Walter'}
 ```
 
-## 6. Empty a seat
+## 6. Empty Seats
 
-Define the `empty_the_seat()` function that takes two parameters. The first parameter will list all the seats. The second parameter is the seat you need to empty, that is you need to assign the seat with None.
+Define the `empty_seats()` function that takes two parameters. The first parameter will be a seating chart dictionary. The second parameter is a list of seat numbers you need to "free up" or empty -- that is, you need to assign the seat number value to `None`.
 
-Return the `dict` of seats sent as the parameter after updating the empty seat.
+Return the `dict` of seats sent as the parameter after updating the empty seat values.
 
 ```python
-empty_the_seat(seats={1: "Occupied", 2: None, 3: "Occupied"}, 3)
-# => {1: "Occupied", 2: None, 3: None}
+empty_seats(seats={1: "Alice", 2: None, 3: "Bob", 4: "George", 5: "Gloria"}, seat_numbers=[5,3,1])
+# => {1: None, 2: None, 3: None, 4: "George", 5: None}
 ```
