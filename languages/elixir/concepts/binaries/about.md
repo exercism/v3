@@ -1,11 +1,9 @@
-## Binary data
-
 - The [binary][binary] type is a specialization of the [bitstring][bitstring] type.
-- [Binaries][binary] are made up of [bytes][bytes].
-  - [Bytes][bytes] are 8 bits.
-  - [Bytes][bytes] can represent numbers from `0` to `255`
-  - [Hexadecimal][wiki-hexadecimal] integer values are common when working with [bytes][bytes]: `0x00` to `0xFF`.
-- [Binary][binary] literals are defined using the [`<<>>` special form][special-form].
+- Binaries are made up of [bytes][wiki-byte].
+  - Bytes are 8 [bits][wiki-bit].
+  - Bytes can represent numbers from `0` to `255`
+  - [Hexadecimal][wiki-hexadecimal] integer values are common when working with bytes: `0x00` to `0xFF`.
+- Binary literals are defined using the [`<<>>` special form][special-form].
   - If you use an integer larger than `255` for a byte, only the last 8 bits are used, unless you specify the [unit and/or size to use][bin-size] using the [`::`][typespec] operator.
 - [`<>/2`][bin-concat] can be used to concatenate bitstrings/binaries/strings.
 
@@ -36,7 +34,7 @@ String.length(string) != byte_size(string)
 
 ## Pattern Matching on binary data
 
-- [Binaries][binary] can be [pattern matched as a whole or using the special form][bin-matching] to match just one part.
+- Binaries can be [pattern matched as a whole or using the special form][special-form] to match just one part.
   - Only the last portion in a pattern match may have a variable size.
 
 ```elixir
@@ -56,13 +54,11 @@ This can be also done for strings:
 ```
 
 [bin-concat]: https://hexdocs.pm/elixir/Kernel.html#%3C%3E/2
-[bin-matching]: https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#binaries
 [bin-size]: https://hexdocs.pm/elixir/Kernel.SpecialForms.html#%3C%3C%3E%3E/1-unit-and-size
-[bin-type]: https://hexdocs.pm/elixir/Kernel.SpecialForms.html#%3C%3C%3E%3E/1-types
 [binary]: https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#binaries
 [bitstring]: https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings
 [byte-size]: https://hexdocs.pm/elixir/Kernel.html#byte_size/1
-[special-form]: https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#binaries
+[special-form]: https://hexdocs.pm/elixir/Kernel.SpecialForms.html#%3C%3C%3E%3E/1
 [string-length]: https://hexdocs.pm/elixir/String.html#length/1
 [wiki-bit]: https://en.wikipedia.org/wiki/Bit
 [wiki-byte]: https://en.wikipedia.org/wiki/Byte
