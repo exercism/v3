@@ -8,14 +8,14 @@
 
 - Modules are the basis of code organization in Elixir.
   - A module is visible to all other modules.
-  - A module is defined with `defmodule`.
+  - A module is defined with [`defmodule`][defmodule].
 
 ## Named Functions
 
 - All named functions must be defined in a module.
 
-  - Named functions are defined with `def`.
-  - A named function may be made private from external modules by using `defp` instead.
+  - Named functions are defined with [`def`][def].
+  - A named function may be made private from external modules by using [`defp`][defp] instead.
   - The value of the last line of a function is _implicitly returned_ after it is evaluated
   - Short functions may also be written using a one-line syntax.
 
@@ -79,3 +79,6 @@
 [operators]: https://elixir-lang.org/getting-started/basic-types.html#basic-arithmetic
 [modules]: https://elixirschool.com/en/lessons/basics/modules/#modules
 [functions]: https://elixirschool.com/en/lessons/basics/functions/#named-functions
+[def]: https://hexdocs.pm/elixir/Kernel.html#def/2
+[defp]: https://hexdocs.pm/elixir/Kernel.html#defp/2
+[defmodule]: https://hexdocs.pm/elixir/Kernel.html#defmodule/2
