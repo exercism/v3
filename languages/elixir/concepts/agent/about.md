@@ -1,6 +1,6 @@
-While spawning a process is easy, managing its state and behavior can become very complicated. The `Agent` module is an abstraction to facilitate managing a shared state in an Elixir process.
+While spawning a process is easy, managing its state and behavior can become very complicated. The [`Agent`][agent-module] module is an abstraction to facilitate managing a shared state in an Elixir process.
 
-When using `Agent` module functions it's customary to encapsulate the agent-related functions in a single module.
+When using `Agent` module functions it is customary to encapsulate the agent-related functions in a single module.
 
 ```elixir
 # A simple use of agent processes to represent a counter
@@ -27,18 +27,6 @@ If choosing to use an _agent process_, the goal should be to hold a simple state
 
 If an expensive job should be done in another process, a _task process_ (using [`Task`][task-module]) process should be considered. If it is determined that a process should hold state and perform behaviours, a _GenServer process_ (using [`GenServer`][genserver-module]) should be considered.
 
-> `Task` and `GenServer` will be discussed in another exercise.
-
-## Additional Resources
-
-- Documentation:
-  - [Elixir - Getting started: Agent][getting-started-agent]
-  - [Elixir Documentation: Agent][elixir-doc-agent]
-- Screencasts:
-  - [ElixirCasts: Introduction to Agents][elixircasts-agent]
-
-[elixircasts-agent]: https://elixircasts.io/intro-to-agents
-[elixir-doc-agent]: https://hexdocs.pm/elixir/Agent.html
-[getting-started-elixir]: https://elixir-lang.org/getting-started/mix-otp/agent.html
 [task-module]: https://hexdocs.pm/elixir/Task.html
-[gen-server]: https://hexdocs.pm/elixir/GenServer.html
+[genserver-module]: https://hexdocs.pm/elixir/GenServer.html
+[agent-module]: https://elixir-lang.org/getting-started/mix-otp/agent.html#agents
