@@ -1,19 +1,9 @@
 [
   { "url": "https://hexdocs.pm/elixir/Range.html", "description": "range" },
   {
-    "url": "https://hexdocs.pm/elixir/Kernel.SpecialForms.html#./2",
-    "description": "range-special-form"
+    "url": "https://hexdocs.pm/elixir/Kernel.html#../2",
+    "description": "range-operator"
   },
-  {
-    "url": "https://hexdocs.pm/elixir/Enumerable.html",
-    "description": "enumerable"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/Kernel.html#%7C%3E/2",
-    "description": "pipe"
-  },
-  { "url": "https://hexdocs.pm/elixir/Stream.html", "description": "stream" },
-  { "url": "https://hexdocs.pm/elixir/Enum.html", "description": "enum" },
   {
     "url": "https://hexdocs.pm/elixir/Enumerable.html",
     "description": "enumerable"
