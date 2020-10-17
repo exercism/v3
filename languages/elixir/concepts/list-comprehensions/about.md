@@ -1,4 +1,4 @@
-[Comprehension][for] are _syntactic sugar_ for iterating through enumerables in Elixir. They provide a facility for transforming _Enumerables_ easily and declaratively.
+[Comprehension][for] provide a facility for transforming _Enumerables_ easily and declaratively. They are _syntactic sugar_ for iterating through enumerables in Elixir.
 
 ```elixir
 for s <- ["a", "b", "hello", "c"], # 1. generator
