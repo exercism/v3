@@ -1,14 +1,6 @@
 [
   {
-    "url": "https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html#ID135",
-    "description": "control-transfer"
-  },
-  {
-    "url": "https://../../basics/.docs/after.md",
-    "description": "basics-concept"
-  },
-  {
-    "url": "https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html#ID141",
-    "description": "labeled-statements"
+    "url": "https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html",
+    "description": "The Swift Language Guide: Control Transfer"
   }
 ]
