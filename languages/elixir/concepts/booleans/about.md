@@ -11,7 +11,7 @@ true_variable = not false
 false_variable = not true
 ```
 
-The operators [`and/2`][strict-and], [`or/2`][strict-or], and [`not/1`][strict-not] are strictly boolean which means they require their arguments to be booleans. There are also equivalent boolean operators which that any type of arguments - [`&&/2`][and], [`||/2`][or], and [`!/1 `][not].
+The operators [`and/2`][strict-and], [`or/2`][strict-or], and [`not/1`][strict-not] are strictly boolean which means they require their arguments to be booleans. There are also equivalent boolean operators which that any type of arguments - [`&&/2`][and], [`||/2`][or], and [`!/1`][not].
 
 Boolean operators use _short-circuit evaluation_, which means that expression on the right-hand side of the operator is only evaluated if needed.
 
