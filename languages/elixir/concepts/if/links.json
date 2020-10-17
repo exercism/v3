@@ -1,50 +1,18 @@
 [
   {
-    "url": "https://www.merriam-webster.com/dictionary/nil",
-    "description": "nil-dictionary"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/Kernel.html#==/2",
-    "description": "kernel-equal"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/Kernel.html#is_nil/1",
-    "description": "kernel-is-nil"
-  },
-  {
     "url": "https://elixir-lang.org/getting-started/case-cond-and-if.html#if-and-unless",
-    "description": "getting-started-if-unless"
+    "description": "Getting Started: `if` and `unless`"
+  },
+  {
+    "url": "https://elixir-lang.org/getting-started/basic-types.html#booleans",
+    "description": "Getting Started: Booleans"
   },
   {
     "url": "https://hexdocs.pm/elixir/Kernel.html#if/2",
-    "description": "kernel-if"
+    "description": "Documentation: `if/2`"
   },
   {
     "url": "https://hexdocs.pm/elixir/Kernel.html#unless/2",
-    "description": "kernel-unless"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/Kernel.html#\u0026\u0026/2",
-    "description": "kernel-and"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/Kernel.html#%7C%7C/2",
-    "description": "kernel-or"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/Kernel.html#!/1",
-    "description": "kernel-not"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/Kernel.html#and/2",
-    "description": "kernel-boolean-and"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/Kernel.html#or/2",
-    "description": "kernel-boolean-or"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/Kernel.html#not/1",
-    "description": "kernel-boolean-not"
+    "description": "Documentation: `unless/2`"
   }
 ]
