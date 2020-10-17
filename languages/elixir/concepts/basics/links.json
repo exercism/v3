@@ -1,10 +1,14 @@
 [
   {
-    "url": "https://elixir-lang.org/getting-started/basic-types.html#basic-arithmetic",
-    "description": "operators"
+    "url": "https://elixir-lang.org/getting-started/basic-types.html",
+    "description": "Getting Started guide - Basic Types"
   },
   {
-    "url": "https://elixirschool.com/en/lessons/basics/documentation/#inline-documentation",
-    "description": "inline-documentation"
+    "url": "https://elixir-lang.org/getting-started/basic-operators.html",
+    "description": "Getting Started guide - Basic Operators"
+  },
+  {
+    "url": "https://elixirschool.com/en/lessons/basics/basics/",
+    "description": "Basics - Elixir School"
   }
 ]
