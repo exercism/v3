@@ -1,18 +1,3 @@
-## Ranges
-
-[Ranges][range] represent a sequence of one or many consecutive integers. They:
-
-- Are created using the [`..` special form][range-special-form] and can be both ascending and descending.
-- Are always inclusive of the last value.
-- Implement the [_Enumerable protocol_][enumerable].
-- Are represented internally as a struct, but can be pattern matched using `..`.
-- Can be used with integers written in the binary, octal, hexadecimal, and codepoint notation.
-
-```elixir
-Enum.map(?D..?A, & &1 + 3)
-# => 'GFED'
-```
-
 ## Pipe operator
 
 The `|>` operator is called [the pipe operator][pipe]. It can be used to chain function calls together in such a way that the value returned by the previous function call is passed as the first argument to the next function call.
@@ -72,20 +57,4 @@ It is a matter of personal preference when to use the pipe operator and when not
   String.split("hello", "") |> Enum.frequencies()
   ```
 
-## Streams
-
-The [`Stream` module][stream] is a _lazy_ alternative to the _eager_ [`Enum` module][enum]. Streams:
-
-- Implement the [_Enumerable protocol_][enumerable].
-- Are composable.
-- Are internally represented as functions.
-- Can be infinite.
-
-Streams are ideal for dealing with slow resources and very large, potentially infinite, collections. For all other cases, use `Enum` instead.
-
-[range-special-form]: https://hexdocs.pm/elixir/Kernel.SpecialForms.html#./2
-[range]: https://hexdocs.pm/elixir/Range.html
-[stream]: https://hexdocs.pm/elixir/Stream.html
-[enum]: https://hexdocs.pm/elixir/Enum.html
-[enumerable]: https://hexdocs.pm/elixir/Enumerable.html
 [pipe]: https://hexdocs.pm/elixir/Kernel.html#%7C%3E/2
