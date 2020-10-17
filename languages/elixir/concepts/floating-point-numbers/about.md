@@ -1,38 +1,5 @@
 There are two different kinds of numbers in Elixir - integers and floats.
 
-## Integers
-
-Integers are whole numbers.
-
-```elixir
-integer = 3
-# => 3
-```
-
-Big integers (but also floats) are usually formatted by separating every 3 digits into groups with an underscore.
-
-```elixir
-1_000_000
-# => 1000000
-```
-
-The maximum size of numbers in Elixir is only limited by the memory available on the system because Elixir uses [arbitrary precision arithmetic][arbitrary-precision arithmetic].
-
-Elixir also supports shortcut notations for entering binary, octal, and hexadecimal integers.
-
-```elixir
-0b0100
-# => 4
-
-0o555
-# => 365
-
-0xFF
-# => 255
-```
-
-## Floats
-
 Floats are numbers with one or more digits behind the decimal separator. They use the 64-bit double precision floating-point format.
 
 ```elixir
