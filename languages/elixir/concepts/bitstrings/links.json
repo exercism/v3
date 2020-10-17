@@ -1,38 +1,10 @@
 [
   {
     "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings",
-    "description": "bitstring"
+    "description": "Getting Started guide - Bitstrings"
   },
   {
-    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings",
-    "description": "bitstring"
-  },
-  {
-    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings",
-    "description": "bitstring"
-  },
-  {
-    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings",
-    "description": "bitstring"
-  },
-  {
-    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings",
-    "description": "bitstring"
-  },
-  {
-    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings",
-    "description": "bitstring"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/master/syntax-reference.html#integers-in-other-bases-and-unicode-code-points",
-    "description": "integer-literal"
-  },
-  {
-    "url": "https://en.wikipedia.org/wiki/Tail_call",
-    "description": "recursion-tco"
-  },
-  {
-    "url": "https://en.wikipedia.org/wiki/Tail_call",
-    "description": "recursion-tco"
+    "url": "https://hexdocs.pm/elixir/Kernel.SpecialForms.html#%3C%3C%3E%3E/1",
+    "description": "Kernel.SpecialForms.<<>>/1"
   }
 ]
