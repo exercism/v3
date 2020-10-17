@@ -1,38 +1,14 @@
 [
   {
-    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings",
-    "description": "bitstring"
+    "url": "https://dino.codes/posts/tail-call-optimization-in-elixir/",
+    "description": "Tail Call Optimization"
   },
   {
-    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings",
-    "description": "bitstring"
-  },
-  {
-    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings",
-    "description": "bitstring"
-  },
-  {
-    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings",
-    "description": "bitstring"
-  },
-  {
-    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings",
-    "description": "bitstring"
-  },
-  {
-    "url": "https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings",
-    "description": "bitstring"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/master/syntax-reference.html#integers-in-other-bases-and-unicode-code-points",
-    "description": "integer-literal"
+    "url": "https://blog.appsignal.com/2019/03/19/elixir-alchemy-recursion.html",
+    "description": "Recursion in Elixir"
   },
   {
     "url": "https://en.wikipedia.org/wiki/Tail_call",
-    "description": "recursion-tco"
-  },
-  {
-    "url": "https://en.wikipedia.org/wiki/Tail_call",
-    "description": "recursion-tco"
+    "description": "Tail Call - Wikipedia"
   }
 ]
