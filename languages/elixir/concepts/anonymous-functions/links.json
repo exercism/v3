@@ -1,34 +1,14 @@
 [
   {
     "url": "https://elixir-lang.org/getting-started/basic-types.html#anonymous-functions",
-    "description": "anon-fns"
+    "description": "Getting Started guide - Anonymous Functions"
   },
   {
-    "url": "https://elixir-lang.org/getting-started/basic-types.html#anonymous-functions",
-    "description": "anon-fns"
-  },
-  {
-    "url": "https://elixir-lang.org/getting-started/basic-types.html#anonymous-functions",
-    "description": "anon-fns"
+    "url": "https://hexdocs.pm/elixir/Kernel.SpecialForms.html#&/1",
+    "description": "Documentation - &"
   },
   {
     "url": "https://dockyard.com/blog/2016/08/05/understand-capture-operator-in-elixir",
-    "description": "capture"
-  },
-  {
-    "url": "https://dockyard.com/blog/2016/08/05/understand-capture-operator-in-elixir",
-    "description": "capture"
-  },
-  {
-    "url": "https://en.wikipedia.org/wiki/Closure_(computer_programming)",
-    "description": "closure"
-  },
-  {
-    "url": "https://en.wikipedia.org/wiki/Bitwise_operation",
-    "description": "bitwise-wiki"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/Bitwise.html",
-    "description": "bitwise-hexdocs"
+    "description": "Understanding the & operator"
   }
 ]
