@@ -1,10 +1,6 @@
 [
   {
     "url": "https://elixir-lang.org/getting-started/case-cond-and-if.html#cond",
-    "description": "cond"
-  },
-  {
-    "url": "https://elixir-lang.org/getting-started/case-cond-and-if.html#case",
-    "description": "case"
+    "description": "Getting Started - cond"
   }
 ]
