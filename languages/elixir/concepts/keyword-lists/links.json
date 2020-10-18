@@ -1,19 +1,10 @@
 [
   {
-    "url": "https://hexdocs.pm/elixir/Keyword.html#module-duplicate-keys-and-ordering",
-    "description": "keyword-duplicate-keys-and-ordering"
+    "url": "https://elixir-lang.org/getting-started/keywords-and-maps.html#keyword-lists",
+    "description": "Getting Started guide - Keyword Lists"
   },
   {
-    "url": "https://hexdocs.pm/elixir/Access.html",
-    "description": "access-behaviour"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/Keyword.html#module-call-syntax",
-    "description": "keyword-call-syntax"
-  },
-  { "url": "https://hexdocs.pm/elixir/Keyword.html", "description": "keyword" },
-  {
-    "url": "https://hexdocs.pm/elixir/Access.html",
-    "description": "access-behaviour"
+    "url": "https://hexdocs.pm/elixir/Keyword.html",
+    "description": "The Keyword module"
   }
 ]
