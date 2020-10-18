@@ -66,7 +66,7 @@ If a list of integers contains even one code point of an unprintable character (
 # => [65, 66, 67, 0]
 ```
 
-Printability can be checked with [`List.ascii_printable?`].
+Printability can be checked with [`List.ascii_printable?`][list-ascii-printable].
 
 ```elixir
 List.ascii_printable?([65, 66, 67])
@@ -136,41 +136,12 @@ to_string('hello')
 # => "hello"
 ```
 
-## `case`
-
-`case` is a control flow structure that allows us to compare a given value against many patterns. Clauses in a `case` statement are evaluated from top to bottom, until a match is found.
-
-In many cases, using `case` is interchangeable with defining multiple function clauses.
-
-```elixir
-# one function clause, multiple case clauses
-def age_group(age) do
-  case age do
-    0 -> 'infant'
-    age when age < 4 -> 'baby'
-    age when age < 13 -> 'child'
-    age when age < 18 -> 'teenager'
-    _ -> 'adult'
-  end
-end
-
-# multiple function clauses, no case
-def age_group(0), do: 'infant'
-def age_group(age) when age < 4, do: 'baby'
-def age_group(age) when age < 13, do: 'child'
-def age_group(age) when age < 18, do: 'teenager'
-def age_group(_), do: 'adult'
-```
-
-There are no strict rules for choosing one over the other. It's a matter of personal preference that usually depends on context.
-
 [list]: https://hexdocs.pm/elixir/List.html
 [list-ascii-printable]: https://hexdocs.pm/elixir/List.html#ascii_printable?/2
 [inspect-opts]: https://hexdocs.pm/elixir/Inspect.Opts.html
 [io-inspect]: https://hexdocs.pm/elixir/IO.html#inspect/2
 [kernel-concat-list]: https://hexdocs.pm/elixir/Kernel.html#++/2
 [typespecs-built-in-types]: https://hexdocs.pm/elixir/typespecs.html#built-in-types
-[string]: https://hexdocs.pm/elixir/String.html#functions
 [kernel-to-string]: https://hexdocs.pm/elixir/Kernel.html#to_string/1
 [unicode-table]: https://unicode-table.com/en/
 [utf8]: https://www.fileformat.info/info/unicode/utf8.htm
