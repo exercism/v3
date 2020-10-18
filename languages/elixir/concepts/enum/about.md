@@ -20,13 +20,13 @@ In general, an _enumerable_ is any data that can be iterated over, a collection.
 - [`Stream`][stream]
 - [`MapSet`][mapset]
 - [`Function`][function]
-- [`Date.Range`][data-range]
+- [`Date.Range`][date-range]
 - [`IO.Stream`][io-stream]
 - [`File.Stream`][file-stream]
 
 Don't worry if you don't know them all yet.
 
-As we will learn in a later exercise about protocols, anyone can implement the `Enumerable` protocol for their own custom data structure.
+Anyone can implement the `Enumerable` protocol for their own custom data structure.
 
 ## Reduce
 
@@ -75,6 +75,6 @@ Enum.reduce([1, 2, 3, 4, 5], [], fn x, acc -> [x + 10 | acc] end)
 [stream]: https://hexdocs.pm/elixir/Stream.html
 [mapset]: https://hexdocs.pm/elixir/MapSet.html
 [function]: https://hexdocs.pm/elixir/Function.html
-[data-range]: https://hexdocs.pm/elixir/Date.Range.html
+[date-range]: https://hexdocs.pm/elixir/Date.Range.html
 [io-stream]: https://hexdocs.pm/elixir/IO.Stream.html
 [file-stream]: https://hexdocs.pm/elixir/File.Stream.html
