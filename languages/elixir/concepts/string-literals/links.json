@@ -1,24 +1,6 @@
 [
-  { "url": "https://hexdocs.pm/elixir/List.html", "description": "list" },
-  { "url": "https://hexdocs.pm/elixir/List.html", "description": "list" },
-  { "url": "https://hexdocs.pm/elixir/List.html", "description": "list" },
-  {
-    "url": "https://hexdocs.pm/elixir/Enumerable.html",
-    "description": "enum-protocol"
-  },
-  { "url": "https://hexdocs.pm/elixir/Enum.html", "description": "enum" },
-  { "url": "https://hexdocs.pm/elixir/Stream.html", "description": "stream" },
-  { "url": "https://hexdocs.pm/elixir/List.html", "description": "list" },
-  { "url": "https://hexdocs.pm/elixir/List.html", "description": "list" },
-  { "url": "https://hexdocs.pm/elixir/Kernel.html#hd/1", "description": "hd" },
-  { "url": "https://hexdocs.pm/elixir/Kernel.html#tl/1", "description": "tl" },
-  {
-    "url": "https://hexdocs.pm/elixir/Kernel.html#length/1",
-    "description": "length"
-  },
-  { "url": "https://hexdocs.pm/elixir/Kernel.html#in/2", "description": "in" },
   {
     "url": "https://elixir-lang.org/getting-started/basic-types.html#strings",
-    "description": "string"
+    "description": "Getting Started - Strings"
   }
 ]
