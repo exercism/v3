@@ -1,18 +1,10 @@
 [
   {
-    "url": "https://www.amberbit.com/blog/2019/7/26/the-misunderstanding-of-let-it-crash/",
-    "description": "let-it-crash"
-  },
-  {
-    "url": "https://en.wikipedia.org/wiki/Happy_path",
-    "description": "happy-path"
+    "url": "https://elixir-lang.org/getting-started/try-catch-and-rescue.html",
+    "description": "Getting Started - try-rescue"
   },
   {
     "url": "https://hexdocs.pm/elixir/Kernel.SpecialForms.html#try/1",
-    "description": "docs-try"
-  },
-  {
-    "url": "https://elixir-lang.org/getting-started/try-catch-and-rescue.html",
-    "description": "getting-started"
+    "description": "Documentation - try"
   }
 ]
