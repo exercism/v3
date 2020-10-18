@@ -1,18 +1,14 @@
 [
   {
-    "url": "https://hexdocs.pm/elixir/Module.html#module-behaviour",
-    "description": "behaviours"
+    "url": "https://elixir-lang.org/getting-started/try-catch-and-rescue.html#errors",
+    "description": "Getting Started guide - Errors"
   },
   {
     "url": "https://hexdocs.pm/elixir/Exception.html",
-    "description": "exception-behaviour"
-  },
-  {
-    "url": "https://elixir-lang.org/getting-started/try-catch-and-rescue.html#errors",
-    "description": "getting-started-errors"
+    "description": "The Exception module"
   },
   {
     "url": "https://hexdocs.pm/elixir/Kernel.html#defexception/1",
-    "description": "defexception"
+    "description": "Kernel.defexception/1"
   }
 ]
