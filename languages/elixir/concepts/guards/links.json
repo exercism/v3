@@ -1,38 +1,10 @@
 [
   {
-    "url": "https://elixir-lang.org/getting-started/modules-and-functions.html#named-functions",
-    "description": "multi-function-clause"
-  },
-  {
     "url": "https://hexdocs.pm/elixir/master/patterns-and-guards.html#guards",
-    "description": "guards"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/master/patterns-and-guards.html#guards",
-    "description": "guards"
-  },
-  {
-    "url": "https://gist.github.com/tomekowal/16cb4192b73fe9222de9fd09e653c03e",
-    "description": "pure-function"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/master/patterns-and-guards.html#guards",
-    "description": "guards"
+    "description": "Guards"
   },
   {
     "url": "https://hexdocs.pm/elixir/master/Kernel.html#guards",
-    "description": "kernel-guards"
-  },
-  {
-    "url": "https://hexdocs.pm/elixir/master/Kernel.html#guards",
-    "description": "kernel-guards"
-  },
-  {
-    "url": "https://elixir-lang.org/getting-started/modules-and-functions.html#default-arguments",
-    "description": "default-arguments"
-  },
-  {
-    "url": "https://inquisitivedeveloper.com/lwm-elixir-25/",
-    "description": "function-header"
+    "description": "List of guards"
   }
 ]
