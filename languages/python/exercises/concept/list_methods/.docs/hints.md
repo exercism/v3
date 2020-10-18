@@ -31,19 +31,11 @@
 
 - Since you know that you need to remove the last person on the queue, you just need to `pop` him/her out.
 
-## 8. The Ride broke down
-
-- You need to `clear` out the whole queue and return the empty queue.
-
 ## 9. New Ride Begins
 
 - First, you need to copy the person names from the original queue into a new queue,
 - You then have to `extend` or `append` one by one the extra people who are waiting for the new ride.
 
-## 10. The Queue is in reverse
-
-- You need to `reverse` the queue and return the correct queue order.
-
-## 11. Sort the Queue List
+## 10. Sort the Queue List
 
 - Since the order is unspecified, it is in ascending order, hence you need to `sort` the queue and return.
