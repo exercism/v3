@@ -36,7 +36,7 @@ This function should return a `list` of all marks that are greater than or equal
 Create the function `first_k_student_marks()` with parameters `student_marks` and `k`
 
 1. Student marks are a list of marks of each student
-2. k is the number of students we need to return.
+2. k is the number of students.
 
 You need to return the first K number of student Marks. Once you reach K number of students, you should exit out of the loop.
 
