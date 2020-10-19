@@ -67,7 +67,7 @@ for item in list_of_items:
 
 ## Continuing in loops
 
-You will have important objects as well as non important ones. When you want to skip over the objects that you dont need to process you use the continue statement.
+You will have important objects as well as non important ones. When you want to skip over the objects that you don't need to process you use the `continue` statement.
 
 Example: you want to process only odd numbers in a loop and not the event numbers.
 
