@@ -48,9 +48,7 @@ for item in countable_object:
 
 ## Breaking from loops
 
-Where you have a large set of objects that you want to loop through and you dont want to go through all the objects in the loop but rather go through a certain number of desired objects and then stop the execution, then `break` comes to the rescue.
-
-When you want to break from an iterable loop on any condition, you can use the `break` statement
+Where you have a large set of objects that you want to loop through but would like to stop the loop execution when a certain condition is met, the `break` statement comes to the rescue.
 
 ```python
 list_of_items = [1, 2, 3, 4, 5, 6, 7, 8]
