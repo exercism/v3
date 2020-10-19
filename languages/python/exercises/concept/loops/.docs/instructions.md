@@ -15,7 +15,7 @@ Result should be an `int`.
 
 ## 2. Top Marks
 
-The Headmaster wants to find the group of top students. What qualifies student marks as `top marks` fluctuates, and you will need to find the student marks that are greater than than the current threshold.
+The Headmaster wants to find the group of top students. What qualifies student marks as `top marks` fluctuates, and you will need to find the student marks that are **greater than or equal to** the current threshold.
 
 Create the function `above_threshold()` where `student_marks and threshold are the two required parameters:
 
