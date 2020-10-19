@@ -33,7 +33,7 @@ This function should return a `list` of all marks that are greater than or equal
 
 ## 3. First K Students.
 
-Given the function `first_k_student_marks()` with parameters `student_marks and k`
+Create the function `first_k_student_marks()` with parameters `student_marks` and `k`
 
 1. Student marks are a list of marks of each student
 2. k is the number of students we need to return.
