@@ -50,7 +50,7 @@ You need to return the first K number of student Marks. Once you reach K number 
 Create the function `perfect_score()` with parameter `student_info`.
 `student_info` is a dictionary containing the names and marks of the students `{"Charles": 90, "Tony": 80}`
 
-Find if we have any students who has scored full marks - `100` in the exam. If we dont find a student in the list, then return "No hundreds"
+Find if we have any students who scored "full marks"(_100%_)on the exam. If we don't find any "full marks" in `student_info`, we should return "No hundreds"
 
 Return the first student who has scored full marks - 100.
 
