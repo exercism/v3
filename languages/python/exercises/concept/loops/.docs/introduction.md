@@ -27,7 +27,7 @@ while i < 3:
 
 ## For Loops
 
-Unlike while loops, for loops are based on a counter. The Loop will execute until the counter is exhausted. The counter in this case could be the indexes in a list or string, or the indexes in a range() object.
+Unlike `while` loops, `for` loops are based on a counter. The Loop will execute until the counter/object being counted is exhausted. The counter in this case could be the indexes in a `list`, `string`, or `tuple` -- or the indexes in a `range()` object.
 
 ```python
 for item in countable_object:
