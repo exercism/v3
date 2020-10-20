@@ -86,7 +86,8 @@
           "lists",
           "tuples",
           "anonymous-functions",
-          "default-arguments"
+          "default-arguments",
+          "string-literals"
         ]
       },
       {
@@ -171,7 +172,7 @@
       {
         "slug": "try-rescue-else-after",
         "uuid": "68a8f721-5db4-4b31-95c8-fa6c38f64327",
-        "concepts": ["try-rescue-else-after"],
+        "concepts": ["try-rescue-else-after", "dynamic-dispatch"],
         "prerequisites": ["io", "try-rescue"]
       },
       {
@@ -203,6 +204,12 @@
         "uuid": "f8208858-901e-4e5a-9f34-689bf8ad156c",
         "concepts": ["list-comprehensions"],
         "prerequisites": ["enum", "lists", "maps", "keyword-lists", "tuples"]
+      },
+      {
+        "slug": "protocols",
+        "uuid": "a9fb9efa-ff37-4642-9118-c1351fd343ad",
+        "concepts": ["protocols"],
+        "prerequisites": ["structs", "nil"]
       }
     ],
     "practice": []
