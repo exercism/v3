@@ -64,63 +64,6 @@ func makeAdder(base: Int) -> (Int) -> Int {
 - In the second, the compiler knows from the definition of `makeAdder` that `base` is an int and that the returned function must be of type `(Int) -> Int`. From there, it can verify that if `x` is an `Int` then the closure will have type `(Int) -> Int`, and thus we can omit they type signature in the closure as `(Int) -> Int` is the only possible valid signature the closure may have.
 - The third example is similar, but the compiler needs get some of the type information from the array that the method is being used with. It knows that the `sorted(by:)` method takes as a parameter a closure with two parameters that are the same type as the elements of the collection being sorted, and which returns a `Bool`, so the compiler can infer that the return type of the closure must be `Bool`. And since the method is being used with a String array, it can determine that the types of the parameters `s1`, and `s2` must both be `String`.
 
-### Shorthand Argument Names
-
-If the types of the parameters can be inferred, Swift also allows he parameter names and the keyword `in` to be omitted from the closure definition. the parameters can instead be referred to using a [special shorthand syntax][shorthand-argument-names], where `$0` refers to the first parameter, `$1` refers to the second, and so on.
-
-```swift
-let mean: (Double, Double) -> Double = { $0 + $1 / 2.0 }
-
-["apple", "ball", "carrot"].sorted(by: { $0.count < $1.count })
-```
-
-This style is most often used when passing closures into higher-order functions and brevity is valued.
-
-### Trailing Closures
-
-Swift offers one other variation of its syntax when dealing with closures, known as [trailing closures][trailing-closures]. Trailing closures arise when the last parameter in a function's list of parameters has a function type. In this case, if one is passing in a closure, the closure can be written _after_ the closing parenthesis and the argument label is omitted. Note that if there is only one parameter for the function, the parentheses may be omitted entirely.
-
-```swift
-func fetchURL(_ urlString: String,
-              uponReceipt handleResult: (String) -> ()
-             )  -> () {
-  if let url = URL(string: urlString), let htmlString = fetch(url) {
-    handleResult(htmlString)
-  }
-}
-
-fetchURL("https://www.swift.org") { print($0) }
-// prints the fetched html string
-
-["apple", "ball", "carrot"].sorted { $0.count < $1.count }
-```
-
-### Multiple trailing closures
-
-While earlier versions of Swift only supported the use of a single trailing closure, beginning with version 5.2.4, Swift offers support for multiple trailing closures.
-
-If a function has more than one closures at the end of its parameter list, trailing closure syntax can be used to move all of them outside of the parentheses. However, only the first argument label is omitted, the rest must be labeled:
-
-```swift
-func fetchURL(_ urlString: String,
-              uponReceipt handleResult: (String) -> (),
-              onFailure handleFailure: () -> ()
-             )  -> () {
-  if let url = URL(string: urlString), let htmlString = fetch(url) {
-    handleResult(htmlString)
-  } else {
-    handleFailure()
-  }
-}
-
-fetchURL("https://www.swift.org") {
-  print($0)
-} onFailure: {
-  print("Error: https://www.swift.org could not be fetched")
-}
-// prints the fetched html string on successful fetch or prints error message on failure
-```
-
 ### Limitations of closures
 
 As mentioned above, functions and closures are very similar in Swift, but there are some important differences:
@@ -139,5 +82,3 @@ add5(x: 10)
 [closures]: https://docs.swift.org/swift-book/LanguageGuide/Closures.html#
 [closure-expressions]: https://docs.swift.org/swift-book/LanguageGuide/Closures.html#ID95
 [inferring-closure-types]: https://docs.swift.org/swift-book/LanguageGuide/Closures.html#ID98
-[shorthand-argument-names]: https://docs.swift.org/swift-book/LanguageGuide/Closures.html#ID100
-[trailing-closures]: https://docs.swift.org/swift-book/LanguageGuide/Closures.html#ID102
