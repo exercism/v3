@@ -73,7 +73,7 @@
       {
         "slug": "higher-order-functions",
         "uuid": "eb8ccbb6-79af-4417-b934-e07fb496aaf2",
-        "concepts": ["higher-order-functions"],
+        "concepts": ["escaping-functions", "higher-order-functions"],
         "prerequisites": ["functions"]
       },
       {
