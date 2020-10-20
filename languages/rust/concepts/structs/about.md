@@ -91,5 +91,4 @@ After all this discussion of the syntax of ZSTs, let's talk about why would you 
 ---
 
 [^1]: [These docs](https://doc.rust-lang.org/reference/visibility-and-privacy.html) explain some less-commonly-used visibility options.
-
 [^2]: This is a particular instance of a general rule: whatever style was used to declare any struct type is the same style required to instantiate it.
