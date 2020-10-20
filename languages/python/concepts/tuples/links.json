@@ -11,7 +11,7 @@
     "url": "https://docs.python.org/3/library/stdtypes.html#common-sequence-operations",
     "description": "common sequence operations"
   },
-   {
+  {
     "url": "https://nedbatchelder.com/blog/201608/lists_vs_tuples.html",
     "description": "Lists vs Tuples"
   },
@@ -22,7 +22,8 @@
   {
     "url": "https://jtauber.com/blog/2006/04/15/python_tuples_are_not_just_constant_lists/",
     "description": "Tuples are not just constant lists"
-  },  {
+  },
+  {
     "url": "https://www.asmeurer.com/blog/posts/tuples/#fn:list",
     "description": "A different view of tuples"
   },
