@@ -14,7 +14,7 @@ recognize this type as a single byte. This has a minimum value of 0 and a maximu
 Rust has 12 integer primitive types, broken out by bit width and signedness:
 
 | Unsigned | Signed  |
-|----------|---------|
+| -------- | ------- |
 | `u8`     | `i8`    |
 | `u16`    | `i16`   |
 | `u32`    | `i32`   |
