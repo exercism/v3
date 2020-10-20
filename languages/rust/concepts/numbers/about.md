@@ -1,7 +1,13 @@
-When working in Rust there are a few aspects to consider.
-The key distinctions are the difference between integers (numbers with no digits after the decimal separator) and floating-point numbers (numbers with no digits after the decimal separator).
-The other factor is the signedness of integers, with the option signed (positive and negative numbers, with half the integers range for negative and half for positive numbers) and unsigned (only positive numbers).
+# Numbers
 
-Numbers can be compared using the default comparison operators (`<`, `>`, `==`, etc.). These operators can be used in if statements to conditionally execute code.
-When dealing with arithmetic between different numeric types in Rust, we need to make certain all the values are of the same type.
-Casting does introduce the possibility of losing data when converting to a type of a smaller size or when casting a floating-point number to an integer.
+The very word "computer" derives from "computation", meaning an operation performed on numbers. Computers, and Rust, are highly optimized for performing calculations on numbers.
+
+Rust has several different primitive numeric types, which are appropriate for different use cases. The most basic choice is between [integers](../integers/about.md) and [floating-point numbers](../floating-point-numbers/about.md). There are also a variety of external crates providing non-primitive numeric types for specialized uses.
+
+Rust defines several comparison and mathematical operators which are applied to numbers. If desired, you can apply these operators to your own type by implementing the appropriate trait. The appropriate traits are defined in [`std::ops`](https://doc.rust-lang.org/std/ops/index.html#traits) and [`std::cmp`](https://doc.rust-lang.org/std/cmp/index.html#traits).
+
+For example, if you define a custom type representing a filesystem path[^1], you might implement path joining by means of the `/` operator by implementing [`std::ops::Div`](https://doc.rust-lang.org/std/ops/trait.Div.html).
+
+---
+
+[^1]: You should probably use `std::path::Path` instead of defining your own filesystem path type.
