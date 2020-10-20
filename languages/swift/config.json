@@ -84,9 +84,6 @@
           "for-loops",
           "while-loops",
           "repeat-while",
-          "break",
-          "continue",
-          "labels",
           "control-transfer"
         ],
         "prerequisites": ["arrays", "optionals", "tuples"]
