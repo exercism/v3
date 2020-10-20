@@ -287,7 +287,6 @@ The concept exercises use the following concepts:
 | `string-literals`                | Introduction to strings in code enclosed by double quotes.                                                |
 | `strings`                        | How to do string processing, concatenation, interpolation, and multiline strings.                         |
 | `structs`                        | Intro to structs: definition, fields, enforcing keys.                                                     |
-| `static-access-operator`         | accessing map and struct fields with the `.` operator.                                                    |
 | `tail-call-recursion`            | How to efficiently perform recursion in Elixir to manage function call stacks and use accumulators.       |
 | `tuples`                         | Introduction to the tuple data type.                                                                      |
 | `errors`                         | Introduction to errors in elixir and patterns to communicate function success/failure.                    |

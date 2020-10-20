@@ -31,7 +31,7 @@ These are the concept exercises that have currently been implemented, as well as
 | `regular-expressions`       | `regular-expressions`                                      | `strings`                                                                                      |
 | `streams`                   | `streams`, `ranges`, `pipe-operator`                       | `enum`, `tuples`, `if`                                                                         |
 | `strings`                   | `strings`                                                  | `lists`, `pattern-matching`                                                                    |
-| `structs`                   | `structs`, `static-access-operator`                        | `maps`, `multiple-clause-functions`, `pattern-matching`, `strings`, `nil`, `default-arguments` |
+| `structs`                   | `structs`                                                  | `maps`, `multiple-clause-functions`, `pattern-matching`, `strings`, `nil`, `default-arguments` |
 | `recursion`                 | `recursion`                                                | `lists`, `pattern-matching`, `multiple-clause-functions`, `guards`                             |
 | `try-rescue-else-after`     | `try-rescue-else-after`                                    | `io`, `try-rescue`                                                                             |
 | `tuples`                    | `tuples`, `pattern-matching`                               | `multiple-clause-functions`, `floating-point-numbers`, `atoms`                                 |
