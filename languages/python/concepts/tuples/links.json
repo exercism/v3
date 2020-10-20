@@ -5,19 +5,19 @@
   },
   {
     "url": "https://github.com/exercism/v3/blob/master/languages/python/reference/concepts/builtin_types/list.md",
-    "description": "TODO: add description"
+    "description": "list"
   },
   {
     "url": "https://github.com/exercism/v3/blob/master/languages/python/reference/concepts/builtin_types/dict.md",
-    "description": "TODO: add description"
+    "description": "Dict"
   },
   {
     "url": "https://github.com/exercism/v3/blob/master/languages/python/reference/concepts/builtin_types/set.md",
-    "description": "TODO: add description"
+    "description": "Set"
   },
   {
     "url": "https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range",
-    "description": "sequence"
+    "description": "sequence types"
   },
   {
     "url": "https://docs.python.org/3/library/stdtypes.html#common-sequence-operations",
@@ -25,22 +25,22 @@
   },
   {
     "url": "https://docs.python.org/3/glossary.html#hashable",
-    "description": "TODO: add description"
+    "description": "hashable"
   },
   {
     "url": "https://docs.python.org/3/library/collections.html#collections.namedtuple",
-    "description": "TODO: add description"
+    "description": "Collections - namedtuple"
   },
   {
     "url": "https://docs.python.org/3/library/collections.html#module-collections",
-    "description": "TODO: add description"
+    "description": "Collections"
   },
   {
     "url": "https://docs.python.org/3/library/dataclasses.html",
-    "description": "TODO: add description"
+    "description": "dataclass"
   },
   {
     "url": "https://stackoverflow.com/questions/51671699/data-classes-vs-typing-namedtuple-primary-use-cases",
-    "description": "pros and cons"
+    "description": "pros and cons of dataclasses"
   }
 ]
