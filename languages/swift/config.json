@@ -117,7 +117,7 @@
       {
         "slug": "strings-and-characters",
         "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
-        "concepts": ["strings", "characters"],
+        "concepts": ["strings-and-characters"],
         "prerequisites": ["basics"]
       },
       {
