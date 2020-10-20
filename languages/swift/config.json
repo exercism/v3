@@ -46,7 +46,8 @@
           "booleans",
           "conditionals-if",
           "conditionals-guard",
-          "conditionals-switch"
+          "conditionals-switch",
+          "ternary-operator"
         ],
         "prerequisites": ["basics"]
       },
