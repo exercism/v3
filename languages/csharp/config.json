@@ -343,7 +343,7 @@
         "slug": "switch-statements",
         "uuid": "eb9faaec-9754-4df1-8eb1-09ca0ad94665",
         "concepts": ["switch-statements"],
-        "prerequisites": ["classes", "enums", "inheritance"]
+        "prerequisites": ["classes", "inheritance"]
       },
       {
         "slug": "time",
