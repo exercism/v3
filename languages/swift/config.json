@@ -46,7 +46,8 @@
           "booleans",
           "conditionals-if",
           "conditionals-guard",
-          "conditionals-switch"
+          "conditionals-switch",
+          "ternary-operator"
         ],
         "prerequisites": ["basics"]
       },
@@ -72,7 +73,7 @@
       {
         "slug": "higher-order-functions",
         "uuid": "eb8ccbb6-79af-4417-b934-e07fb496aaf2",
-        "concepts": ["higher-order-functions"],
+        "concepts": ["escaping-functions", "higher-order-functions"],
         "prerequisites": ["functions"]
       },
       {
@@ -83,9 +84,6 @@
           "for-loops",
           "while-loops",
           "repeat-while",
-          "break",
-          "continue",
-          "labels",
           "control-transfer"
         ],
         "prerequisites": ["arrays", "optionals", "tuples"]
@@ -116,7 +114,7 @@
       {
         "slug": "strings-and-characters",
         "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
-        "concepts": ["strings", "characters"],
+        "concepts": ["strings-and-characters"],
         "prerequisites": ["basics"]
       },
       {

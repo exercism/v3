@@ -1834,10 +1834,6 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
               "name": "structs"
-            },
-            {
-              "url": null,
-              "name": "static-access-operator"
             }
           ],
           "prerequisites": [

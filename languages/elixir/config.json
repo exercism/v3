@@ -147,7 +147,7 @@
       {
         "slug": "structs",
         "uuid": "d8d25b93-d918-421e-bb57-cbdaf428d9e2",
-        "concepts": ["structs", "static-access-operator"],
+        "concepts": ["structs"],
         "prerequisites": [
           "maps",
           "multiple-clause-functions",
@@ -430,12 +430,6 @@
       "slug": "regular-expressions",
       "name": "Regular Expressions",
       "blurb": "TODO: add blurb for regular-expressions concept"
-    },
-    {
-      "uuid": "0c96a65b-8b7d-4fa8-b64c-aea86286ca35",
-      "slug": "static-access-operator",
-      "name": "Static Access Operator",
-      "blurb": "TODO: add blurb for static-access-operator concept"
     },
     {
       "uuid": "442e8992-9eed-4b11-bd97-edf23ab0dc7b",
