@@ -1,18 +1,18 @@
 [
   {
     "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/functions/recursive-functions-the-rec-keyword",
-    "description": "recursive-functions"
+    "description": "Recursive functions"
   },
   {
     "url": "https://cyanbyfuchsia.wordpress.com/2014/02/12/recursion-and-tail-recursion-in-f/",
-    "description": "tail-recursion"
+    "description": "Tail recursion"
   },
   {
     "url": "https://devblogs.microsoft.com/fsharpteam/tail-calls-in-f/",
-    "description": "tail-recursion-in-depth"
+    "description": "Tail recursion in-depth"
   },
   {
     "url": "https://fsharpforfunandprofit.com/posts/recursive-types-and-folds/#a-basic-recursive-type",
-    "description": "recursive-types"
+    "description": "Recursive types"
   }
 ]
