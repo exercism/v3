@@ -12,7 +12,7 @@ else
 As `if/elif/else` is an expression, it can be bound to a name or returned from a function.
 
 ```fsharp
-let message = 
+let message =
     if x = 5 then
         "x equals 5"
     elif x > 7 then
@@ -28,7 +28,7 @@ if x = 5 then
     true
 elif x > 7 then
     5.6
-    
+
 // Results in compiler erropr
 ```
 
@@ -38,7 +38,7 @@ The `else` and `elif` branches are optional, but only if the type of the returne
 // Valid if expression
 if x > 2 then
     printfn "x is greater than two"
-    
+
 // Invalid if expression, results in compiler warning
 if x > 2 then
     true
