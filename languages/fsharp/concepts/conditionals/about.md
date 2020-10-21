@@ -1,4 +1,4 @@
-One of the key aspects of working with numbers in F# is the distinction between integers (numbers with no digits after the decimal separator) and floating-point numbers (numbers with zero or more digits after the decimal separator).
+F# numbers can be divided into two categories: integers (numbers with no digits after the decimal separator) and floating-point numbers (numbers with zero or more digits after the decimal separator).
 
 The two most commonly used numeric types in F# are `int` (a 32-bit integer) and `float` (a 64-bit floating-point number).
 
