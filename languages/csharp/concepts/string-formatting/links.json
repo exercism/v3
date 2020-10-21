@@ -60,10 +60,6 @@
     "description": "guid-format-strings"
   },
   {
-    "url": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/#regular-and-verbatim-string-literals",
-    "description": "verbatim-strings"
-  },
-  {
     "url": "https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/string-interpolation",
     "description": "string-interpolation"
   },
