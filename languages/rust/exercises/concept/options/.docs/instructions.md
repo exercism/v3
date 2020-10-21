@@ -59,5 +59,4 @@ The `cast_spell` method takes a mutable reference to the Player as well as a `ma
   assert_eq!(low_mana_wizard.mana, Some(20));
   ```
 
-
 Have fun!
