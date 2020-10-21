@@ -88,17 +88,6 @@ Each thread of execution has a default culture `Thread.CurrentThread.CurrentCult
 
 `CultureInfo` implements the `IFormatProvider` interface which can be passed to certain overloads of `String.Format()`. This can be used to override the thread culture.
 
-#### Verbatim Strings
-
-[Verbatim strings][verbatim-strings] allow multi-line strings. They are introduced with an @. They can be used with string interpolation. Just add a "\$" before the opening quote.
-
-```csharp
-string str = @"
-See no wretched
-quotes everywhere
-";
-```
-
 #### Reference Material
 
 - [String interpolation][string-interpolation]: tutorial on how to use string interpolation.
@@ -123,7 +112,6 @@ quotes everywhere
 [format-provider]: https://docs.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=netcore-3.1
 [custom-formatter]: https://docs.microsoft.com/en-us/dotnet/api/system.icustomformatter?view=netcore-3.1
 [string-format]: https://docs.microsoft.com/en-us/dotnet/api/system.string.format?view=netcore-3.1#System_String_Format_System_String_System_Object_System_Object_System_Object_
-[verbatim-strings]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/#regular-and-verbatim-string-literals
 [culture-info]: https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=netcore-3.1
 [composite-formatting]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/composite-formatting
 [custom-string-interpolation]: https://thomaslevesque.com/2015/02/24/customizing-string-interpolation-in-c-6/
