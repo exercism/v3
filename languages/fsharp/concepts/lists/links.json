@@ -1,22 +1,14 @@
 [
   {
     "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/lists",
-    "description": "lists"
+    "description": "list type"
   },
   {
     "url": "https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.list-module-%5Bfsharp%5D?f=255\u0026MSPPError=-2147217396",
-    "description": "list-module"
-  },
-  {
-    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/lists#properties",
-    "description": "list-properties"
-  },
-  {
-    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#list-pattern",
-    "description": "list-pattern"
+    "description": "List module"
   },
   {
     "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#cons-pattern",
-    "description": "cons-pattern"
+    "description": "Pattern matching lists"
   }
 ]
