@@ -1,5 +1,5 @@
 [
-    {
+  {
     "url": "https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str",
     "description": "text sequence type - str"
   },
@@ -26,5 +26,5 @@
   {
     "url": "https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/",
     "description": "joel-on-text"
-  },
+  }
 ]
