@@ -1,22 +1,22 @@
 [
   {
     "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/literals",
-    "description": "floating-point-types"
+    "description": "Floating-point numbers"
   },
   {
-    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/",
-    "description": "conversion-operators"
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/casting-and-conversions#arithmetic-types",
+    "description": "Converting floating-point numbers"
   },
   {
     "url": "https://docs.microsoft.com/en-us/dotnet/api/system.double.equals#precision-in-comparisons",
-    "description": "precision-in-comparisons"
+    "description": "Precision when comparing floating-point numbers"
   },
   {
     "url": "https://0.30000000000000004.com/",
-    "description": "0.30000000000000004.com"
+    "description": "Floating Point Math"
   },
   {
     "url": "https://evanw.github.io/float-toy/",
-    "description": "evanw.github.io-float-toy"
+    "description": "Float Toy - visualize floating point numbers"
   }
 ]
