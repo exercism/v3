@@ -14,9 +14,5 @@
   {
     "url": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/exceptions/creating-and-throwing-exceptions#defining-exception-classes",
     "description": "convenience-constructors"
-  },
-  {
-    "url": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/when",
-    "description": "exception-filters"
   }
 ]
