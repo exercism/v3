@@ -30,18 +30,6 @@ Arithmetic is done using the standard [arithmetic operators][arithmetic-operator
 // => true
 ```
 
-Conditionally executing code can be done using [`if/elif/else` expressions][conditional-expression]. As `if/elif/else` is an expression, all branches must return the same type and the expression can be returned from a function. The condition(s) used in an `if/elif/else` expression must be of type `bool`. F# has no concept of _truthy_ values.
-
-```fsharp
-let test x =
-    if x = 5 then
-        // Expression to return when x equals 5
-    elif x > 7 then
-        // Expression to return when x greater than 7
-    else
-        // Expression to return in all other cases
-```
-
 To convert between numeric types, one has to use the built-in [conversion operator][conversion-operators]. These operators are named after the type they will be converting to.
 
 ```fsharp
@@ -51,7 +39,6 @@ let intFromFloat = int 3.39
 
 When converting between types, always be careful. If a value cannot be represented by the target type, the value will _overflow_.
 
-[conditional-expression]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/conditional-expressions-if-then-else
 [conversion-operators]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/casting-and-conversions#arithmetic-types
 [arithmetic-operators]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/symbol-and-operator-reference/arithmetic-operators
 [comparison-operators]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/symbol-and-operator-reference/arithmetic-operators#summary-of-binary-comparison-operators
