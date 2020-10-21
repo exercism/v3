@@ -43,7 +43,7 @@ The data comprises:
 
 ```csharp
 PlayAnalyzer.AnalyzeOffField(new Injury());
-// => "A player is injured."
+// => "A player is injured. Medics are on the field."
 PlayAnalyzer.AnalyzeOffField(new Manager());
 // => "the manager"
 ```
