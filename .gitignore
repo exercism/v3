@@ -2,6 +2,9 @@
 # Lock files. Arrange alphabetically by language
 ###
 
+# F#
+.ionide
+
 # JavaScript
 yarn.lock
 package-lock.json
