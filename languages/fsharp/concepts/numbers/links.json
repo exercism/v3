@@ -8,10 +8,6 @@
     "description": "Comparison operators"
   },
   {
-    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/conditional-expressions-if-then-else",
-    "description": "if-then-else expressions"
-  },
-  {
     "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/casting-and-conversions#arithmetic-types",
     "description": "Converting numbers"
   }
