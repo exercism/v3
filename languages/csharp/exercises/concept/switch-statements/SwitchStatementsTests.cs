@@ -22,6 +22,12 @@ public class TuplesTest
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
+    public void AnalyzeOnField_11()
+    {
+        Assert.Equal("right wing", PlayAnalyzer.AnalyzeOnField(11));
+    }
+
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void AnalyzeOnField_throws_unknown_shirt_number()
     {
         Assert.Throws<ArgumentException>(() => PlayAnalyzer.AnalyzeOnField(1729));
@@ -48,7 +54,7 @@ public class TuplesTest
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void AnalyzeOffField_injury()
     {
-        Assert.Equal("A player is injured.", PlayAnalyzer.AnalyzeOffField(new Injury()));
+        Assert.Equal("A player is injured. Medics are on the field.", PlayAnalyzer.AnalyzeOffField(new Injury()));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]

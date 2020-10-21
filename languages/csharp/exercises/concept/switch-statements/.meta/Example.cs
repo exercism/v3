@@ -52,13 +52,16 @@ public static class PlayAnalyzer
             case string freeFormText:
                 description = freeFormText;
                 break;
+            case Injury injury:
+                description = $"{injury.GetDescription()} Medics are on the field.";
+                break;
             case Incident incident:
                 description = incident.GetDescription();
                 break;
             case Manager manager when !string.IsNullOrWhiteSpace(manager.Name):
                 description = manager.Name;
                 break;
-            case Manager _:
+            case Manager manager:
                 description = "the manager";
                 break;
             default:
