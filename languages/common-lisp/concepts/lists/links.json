@@ -1,18 +1,14 @@
 [
   {
     "url": "https://www.tutorialspoint.com/lisp/lisp_lists.htm",
-    "description": "tutorialspoint"
+    "description": "Summary of functions pertaining to lists and conses"
   },
   {
     "url": "http://www.gigamonkeys.com/book/they-called-it-lisp-for-a-reason-list-processing.html",
-    "description": "pcl"
+    "description": "Practical Common Lisp chapter on lists and conses."
   },
   {
-    "url": "http://www.lispworks.com/documentation/HyperSpec/Front/index.htm",
-    "description": "hyperspec"
-  },
-  {
-    "url": "http://www.lispworks.com/documentation/HyperSpec/Body/14_.htm",
-    "description": "hyper-conses"
+    "url": "http://l1sp.org/cl/14.1.2",
+    "description": "Hyperspec reference on conses as lists."
   }
 ]
