@@ -1,26 +1,10 @@
 [
   {
     "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/records",
-    "description": "records"
-  },
-  {
-    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/records#remarks",
-    "description": "define"
-  },
-  {
-    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/records#creating-records-by-using-record-expressions",
-    "description": "create"
-  },
-  {
-    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/records#creating-records-by-using-record-expressions",
-    "description": "create"
-  },
-  {
-    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/records#differences-between-records-and-classes",
-    "description": "equality"
+    "description": "Records"
   },
   {
     "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#record-pattern",
-    "description": "record-patterns"
+    "description": "Pattern matching records"
   }
 ]
