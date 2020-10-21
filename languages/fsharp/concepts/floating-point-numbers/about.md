@@ -22,4 +22,4 @@ You can find a short introduction to floating-point numbers at [0.30000000000000
 [precision-in-comparisons]: https://docs.microsoft.com/en-us/dotnet/api/system.double.equals#precision-in-comparisons
 [0.30000000000000004.com]: https://0.30000000000000004.com/
 [evanw.github.io-float-toy]: https://evanw.github.io/float-toy/
-[conversion-operators]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/
+[conversion-operators]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/casting-and-conversions#arithmetic-types
