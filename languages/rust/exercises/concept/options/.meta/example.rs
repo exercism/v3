@@ -7,7 +7,7 @@ pub struct Player {
 impl Player {
     pub fn revive(&self) -> Option<Player> {
         if self.health == 0 {
-            Some(Player{
+            Some(Player {
                 health: 100,
                 level: self.level,
                 mana: if self.level >= 10 { Some(100) } else { None },
@@ -23,15 +23,15 @@ impl Player {
             Some(ref mut m) => {
                 if *m >= mana_cost {
                     *m -= mana_cost;
-                    return mana_cost * 2;
+                    mana_cost * 2
                 } else {
-                    return 0;
+                    0
                 }
             }
             None => {
                 self.health = self.health.saturating_sub(mana_cost);
                 0
-            },
+            }
         }
     }
 }

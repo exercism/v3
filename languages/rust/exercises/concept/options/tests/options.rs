@@ -7,7 +7,9 @@ fn test_reviving_dead_player() {
         mana: Some(0),
         level: 34,
     };
-    let revived_player = dead_player.revive().expect("reviving a dead player must return Some(player)");
+    let revived_player = dead_player
+        .revive()
+        .expect("reviving a dead player must return Some(player)");
     assert_eq!(revived_player.health, 100);
     assert_eq!(revived_player.mana, Some(100));
     assert_eq!(revived_player.level, dead_player.level);
@@ -85,7 +87,7 @@ fn test_cast_spell_with_no_mana_pool() {
     };
 
     assert_eq!(underleveled_player.cast_spell(MANA_COST), 0);
-    assert_eq!(underleveled_player.health, clone.health-MANA_COST);
+    assert_eq!(underleveled_player.health, clone.health - MANA_COST);
     assert_eq!(underleveled_player.mana, clone.mana);
     assert_eq!(underleveled_player.level, clone.level);
 }
