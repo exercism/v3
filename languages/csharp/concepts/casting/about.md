@@ -129,15 +129,6 @@ o is List<int> // true
 o.GetType() == typeof(List<int>) // true
 ```
 
-#### General
-
-- [Type testing and cast operators][type-testing-and-cast-operators]: introduction to type testing and casting.
-- [cast operator][cast-operator]: the cast operator.
-- [`is` operator][is-operator]: `is` operator reference.
-- [`as`-operator][as-operator]: `as` operator reference.
-- [`typeof` operator][typeof-operator]: `typeof` operator reference.
-- [Type conversion exceptions][type-conversion-exceptions]: explains when a runtime exception is thrown when doing casts.
-
 [type-testing-and-cast-operators]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast
 [is-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#is-operator
 [as-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#as-operator
