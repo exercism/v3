@@ -128,7 +128,7 @@ This document can also link to any additional resources that might be interestin
 - Similar features with which the concept may be confused
 - Performance characteristics and memory usage
 
-For more information, watch [this video][video-docs-after.md] and check (document no longer available: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md).
+For more information, watch [this video][video-docs-after.md] and check (example document no longer available).
 
 ### `.docs/source.md` (required if there are third-party sources)
 
