@@ -38,14 +38,6 @@ Naturally there are occasions on which it is legitimate to allow an integer to w
 
 You will usually find in code bases that there is often no check where an `uint` or a `ulong` is used as an identifier because it is considered more trouble than it's worth. This also applies where it is evident from the domain that no very large values will be involved. But, look at [this][computerphile-gangnam-style] for a cautionary tale.
 
-- [Integral numeric types][integral-numeric-types]: overview of the integral numeric types.
-- [Floating-point numeric types][floating-point-numeric-types]: overview of the floating-point numeric types.
-- [Numeric conversions][numeric-conversions]: overview of implicit and explicit numeric conversions.
-- [Checked and unchecked arithmetic][checked-and-unchecked]: introduction to overflows
-- [`checked` keyword][checked-keyword]: `checked` keyword reference.
-- [`unchecked` keyword][unchecked-keyword]: `unchecked` keyword reference.
-- [Computerphile: How Gangnam Style broke YouTube][computerphile-gangnam-style]
-
 [computerphile-gangnam-style]: https://www.youtube.com/watch?v=vA0Rl6Ne5C8
 [integral-numeric-types]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types
 [floating-point-numeric-types]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types
