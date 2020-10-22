@@ -90,16 +90,6 @@ Each thread of execution has a default culture `Thread.CurrentThread.CurrentCult
 
 #### Reference Material
 
-- [String interpolation][string-interpolation]: tutorial on how to use string interpolation.
-- [Formatting types][formatting-types]: the available format types to use.
-- [Standard numeric format strings][standard-numeric-format-strings]: lists the standard numeric format strings.
-- [Custom numeric format strings][custom-numeric-format-strings]: describes how to define custom numeric format strings.
-- [Standard date and time format strings][standard-date-and-time-format-strings]: lists the standard date and time format strings.
-- [Custom date and time format strings][custom-date-and-time-format-strings]: describes how to define custom date and time format strings.
-- [String builder][string-builder]: shows how to use the string builder.
-- [String interpolation - in-depth][string-interpolation-in-depth]: in-depth examination of string interpolation, including the generated IL code.
-- [String interpolation - advanced][string-interpolation-advanced]: advanced tutorial on string interpolation, includes the `FormattableString` class.
-
 [string-interpolation]: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/string-interpolation
 [string-interpolation-in-depth]: https://weblog.west-wind.com/posts/2016/Dec/27/Back-to-Basics-String-Interpolation-in-C#
 [string-interpolation-advanced]: https://www.meziantou.net/interpolated-strings-advanced-usages.htm
