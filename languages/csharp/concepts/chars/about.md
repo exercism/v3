@@ -81,4 +81,3 @@ Obviously there is no equivalence between a `byte` at 8 bits and the 16 bit `cha
 [is-digit]: https://docs.microsoft.com/en-us/dotnet/api/system.char.isdigit?view=netcore-3.1
 [get-next-text-element]: https://docs.microsoft.com/en-us/dotnet/api/system.globalization.stringinfo.getnexttextelement?view=netcore-3.1
 [compare-to]: https://docs.microsoft.com/en-us/dotnet/api/system.char.compareto?view=netcore-3.1
-[so-jon-skeet]: https://stackoverflow.com/users/22656/jon-skeet
