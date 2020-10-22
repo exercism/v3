@@ -12,33 +12,6 @@ Always be careful when checking the values of floating-point types for equality,
 
 You can find a short introduction to floating-point numbers at [0.30000000000000004.com][0.30000000000000004.com]. The [Float Toy page][evanw.github.io-float-toy] has a nice, graphical explanation how a floating-point numbers' bits are converted to an actual floating-point value.
 
-To repeatedly execute logic, one can use loops. One of the most common loop types in C# is the `while` loop, which keeps on looping until a boolean condition evaluates to `false`.
-
-```csharp
-int x = 23;
-
-while (x > 10)
-{
-    // Execute logic if x > 10
-    x = x - 1;
-}
-```
-
-A closely related construct is the `do` loop:
-
-```csharp
-int x = 0;
-
-do
-{
-    x = GetX();
-    // do something with x
-}
-while (x != 0);
-```
-
-This is used less frequently than a `while` loop but in some cases results in more natural looking code.
-
 [docs-microsoft.com-explicit-numeric-conversion]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/numeric-conversions#explicit-numeric-conversions
 [docs-microsoft.com-implicit-numeric-conversion]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/numeric-conversions#implicit-numeric-conversions
 [docs-microsoft.com-characteristics-of-the-floating-point-types]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types#characteristics-of-the-floating-point-types
