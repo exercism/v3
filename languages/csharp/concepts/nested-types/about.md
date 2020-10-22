@@ -101,8 +101,4 @@ C#'s nested classes are a cross between Java's static nested classes and inner c
 
 C# does have static nested classes, but these are simply enclosed classes with static behavior.
 
-#### Reference
-
-This documentation of [nested types][nested-types] details the syntax.
-
 [nested-types]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/nested-types
