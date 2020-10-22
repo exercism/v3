@@ -60,23 +60,9 @@ You should examine [read-only collections][readonly-collections] in the Base Cla
 
 For arrays the closest you can get to a read-only version is the [`Array.AsReadOnly<T>()][as-read-only] method.
 
-#### Defensive Copying
-
-Reflecting back on the coding exercise, imagine you have a code-base of several hundred thousand lines. You are passed the dictionary of developers into some method you are developing. Perhaps you have been tasked with printing out details of privileged developers. You decide to blank out the eye color in the dictionary to protect the developers' privacy. Unless a [deep copy][so-deep-copy] of the dictionary was made in the `Authenticator.GetDevelopers()` method, or, even better, it was wrapped in a read-only collection then you will have just trashed the authenticator.
-
-This follows the principle of [defensive copying][defensive-copying]. You can make sure your formal API is not circumvented by avoiding exposure to callers of internal writeable state.
-
-#### Reference
-
-- [Readonly fields][readonly-fields]: how to define a readonly field.
-- [Constants][constants]: how to define constants.
-
 [readonly-fields]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly#readonly-field-example
 [constants]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constants
 [so-consts]: https://stackoverflow.com/a/5834473/96167
 [premature-optimization]: https://wiki.c2.com/?PrematureOptimization
-[so-deep-copy]: https://stackoverflow.com/questions/78536/deep-cloning-objects
-[defensive-copying]: https://www.informit.com/articles/article.aspx?p=31551&seqNum=2
 [as-read-only]: https://docs.microsoft.com/en-us/dotnet/api/system.array.asreadonly?view=netcore-3.1
 [readonly-collections]: https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.readonlycollection-1?view=netcore-3.1
-[so-deep-copy]: https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy#:~:text=A%20deep%20copy%20occurs%20when,objects%20to%20which%20it%20refers.&text=Shallow%20copy%20is%20a%20bit,values%20in%20the%20original%20object.
