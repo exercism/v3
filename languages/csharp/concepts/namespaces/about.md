@@ -81,11 +81,6 @@ When comparing with the `import` of Java `packages` some differences and similar
 - In Java, package names have an impact on accessibility as between jars. In C# assemblies are paramount and belonging to the same namespace does not affect access level.
 - The relationship between file system paths and fully qualified class names in Java is not reflected in C#'s namespaces although it is good practice where possible to give a file the same name as the principal class it contains.
 
-#### Reference
-
-- [Namespaces][namespaces]: how to define and import namespaces.
-- [Accessibility levels][accessibility-levels]: use the `public/internal/private` access modifiers.
-
 [namespaces]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/namespaces/
 [accessibility-levels]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/accessibility-levels
 [namespace-alias-qualifier]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/namespace-alias-qualifier
