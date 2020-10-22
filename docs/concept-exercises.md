@@ -128,7 +128,7 @@ This document can also link to any additional resources that might be interestin
 - Similar features with which the concept may be confused
 - Performance characteristics and memory usage
 
-For more information, watch [this video][video-docs-after.md] and check [this example after.md file][docs-after.md].
+For more information, watch [this video][video-docs-after.md] and check (document no longer available: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md).
 
 ### `.docs/source.md` (required if there are third-party sources)
 
@@ -284,7 +284,6 @@ For each exercise:
 
 See [this example config.json file][config.json].
 
-[docs-after.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md
 [docs-hints.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/hints.md
 [docs-introduction.md]: ../languages/csharp/exercises/concept/strings/.docs/introduction.md
 [docs-instructions.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
