@@ -1,3 +1,4 @@
+TODO: we need to reconsider the text below now that it is a stand alone concept
 To allow a single enum instance to represent multiple values (usually referred to as _flags_), one can annotate the enum with the `[Flags]` attribute. By carefully assigning the values of the enum members such that specific bits are set to `1`, bitwise operators can be used to set or unset flags.
 
 ```csharp
@@ -57,27 +58,6 @@ features.HasFlag(PhoneFeatures.Call); // => false
 features.HasFlag(PhoneFeatures.Text); // => true
 ```
 
-The bitwise operators can also be used as [compound assignments][compound-assignment], which are a shorthand notation where `x = op y` can be written as `x op= y`:
-
-```csharp
-var features = PhoneFeatures.Call;
-features |= PhoneFeatures.Text;
-features &= ~PhoneFeatures.Call;
-```
-
-The [working with enums as bit flags tutorial][docs.microsoft.com-enumeration-types-as-bit-flags] goes into more detail how to work with flag enums. Another great resource is the [enum flags and bitwise operators page][alanzucconi.com-enum-flags-and-bitwise-operators].
-
-By default, the `int` type is used for enum member values. One can use a different integer type by specifying the type in the enum declaration:
-
-```csharp
-[Flags]
-enum PhoneFeatures : byte
-{
-    Call = 0b00000001,
-    Text = 0b00000010
-}
-```
-
 [docs.microsoft.com-enumeration-types-as-bit-flags]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/enumeration-types#enumeration-types-as-bit-flags
 [alanzucconi.com-enum-flags-and-bitwise-operators]: https://www.alanzucconi.com/2015/07/26/enum-flags-and-bitwise-operators/
 [or-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#logical-or-operator-
@@ -85,4 +65,3 @@ enum PhoneFeatures : byte
 [bitwise-complement-operator]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#bitwise-complement-operator-
 [binary-literals]: https://riptutorial.com/csharp/example/6327/binary-literals
 [has-flag]: https://docs.microsoft.com/en-us/dotnet/api/system.enum.hasflag?view=netcore-3.1
-[compound-assignment]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#compound-assignment
