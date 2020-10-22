@@ -123,13 +123,6 @@ One primitive that can challenge the unwary coder is testing the [equality of fl
 
 This [article][so-equals-inheritance] shows some of the decisions that have to be made with regard to equality and inheritance. They will only concern you if you are manipulating instances of a class and a derived class and need to test the equality between the two.
 
-### General Informaton
-
-- [Equality][equality]: how equality comparisons work in C#, including reference- and value type equality.
-- [HashCode][hash-code]: how to create and combine hash codes
-- [GetHashCode][get-hash-code]: API documentation
-- [HashSet][hash-set]: API documentation
-
 [equality]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/equality-comparisons
 [equatable]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type
 [equality-comparer]: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1?view=netcore-3.1
