@@ -1,6 +1,8 @@
 [Lists][list] are a basic data type in Elixir for holding a collection of values. Lists are _immutable_, meaning they cannot be modified; any operation that changes a list returns a new list. Lists implement the [Enumerable protocol][enum-protocol], which allows the use of [Enum][enum] and [Stream][stream] module functions.
 
-Lists can be written in literal form, head-tail notation, or a combination of both:
+Lists in Elixir are implemented as a Linked List, and not as an array of contiguous memory location . Therefore, accessing an element in the list takes linear time depending on the length of the list. 
+
+Lists can be written in literal form, head-tail notation, (which uses the `join` operator `|`), or a combination of both:
 
 ```elixir
 # Literal Form
@@ -17,6 +19,13 @@ Lists can be written in literal form, head-tail notation, or a combination of bo
 [1 | [2, 3]]
 ```
 
+There can also be more than one element before the join operator.
+
+```elixir
+# Multiple prepends
+[1, 2, 3 | [4, 5]]
+```
+
 Head-tail notation can be used to append items to a list.
 
 ```elixir
@@ -25,6 +34,8 @@ list = [2, 1]
 [3, 2, 1] == [3 | list]
 # => true
 ```
+
+Appending an element to a list during iteration is considered an anti-pattern. We can achieve the same result by prepending an element to the reversed list, and then reversing the result.
 
 There are several common functions for lists:
 
