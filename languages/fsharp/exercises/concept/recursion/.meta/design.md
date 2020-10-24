@@ -14,7 +14,7 @@
 
 - `recursion`: know what recursion is; know how to define a recursive function; know how to define a recursive type; know how to write a tail-recursive function.
 
-## Prequisites
+## Prerequisites
 
 - `pattern-matching`: know how to do basic pattern matching.
 - `discriminated-unions`: know how to do define functions and work with parameters.
