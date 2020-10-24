@@ -12,15 +12,11 @@
 
 ## 3. Represent the months of the year
 
-- There is an [identifier][iota] for creating enumerated constants. A block looks like [this][block]. The function should return the constant for January.
+- There is an [identifier][iota] for creating enumerated constants. A block looks like [this][block]. The function should take one argument and return it.
 
-## 4. Get the value for October
+## 4. Represent an account number
 
-- Use the same block as above. The function should return the constant for October.
-
-## 5. Represent an account number
-
-- The constant should be untyped, but needs to be acceptable anywhere a string can be used. The function should return the constant.
+- The constant should be untyped, but needs to be acceptable anywhere that a string can be used. The function should return the constant.
 
 [const]: https://golang.org/doc/effective_go.html#constants
 [iota]: https://golang.org/ref/spec#Iota

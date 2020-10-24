@@ -23,7 +23,7 @@ func TestGetDaysPerYear(t *testing.T) {
 	tests := map[string]struct {
 		want int
 	}{
-		"GetDaysPerYear 1": {want: 360},
+		"GetDaysPerYear 1": {want: 365},
 	}
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
@@ -34,31 +34,18 @@ func TestGetDaysPerYear(t *testing.T) {
 	}
 }
 
-func TestGetJanuary(t *testing.T) {
+func TestGetMonth(t *testing.T) {
 	tests := map[string]struct {
-		want int
+		arg, want int
 	}{
-		"GetJanuary 1": {want: 1},
+		"GetMonth(Jan)": {arg: Jan, want: 1},
+		"GetMonth(Mar)": {arg: Mar, want: 3},
+		"GetMonth(Oct)": {arg: Oct, want: 10},
 	}
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
-			if got := GetJanuary(); got != tc.want {
-				t.Errorf("GetJanuary() = %v, want %v", got, tc.want)
-			}
-		})
-	}
-}
-
-func TestGetOctober(t *testing.T) {
-	tests := map[string]struct {
-		want int
-	}{
-		"GetOctober 1": {want: 10},
-	}
-	for name, tc := range tests {
-		t.Run(name, func(t *testing.T) {
-			if got := GetOctober(); got != tc.want {
-				t.Errorf("GetOctober() = %v, want %v", got, tc.want)
+			if got := GetMonth(tc.arg); got != tc.want {
+				t.Errorf("GetMonth(%v) = %v, want %v", tc.arg, got, tc.want)
 			}
 		})
 	}

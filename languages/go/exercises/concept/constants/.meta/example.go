@@ -8,8 +8,8 @@ func GetFixedInterestRate() float32 {
 	return FixedInterestRate
 }
 
-// DaysPerYear has a value of 360
-const DaysPerYear int = 360
+// DaysPerYear has a value of 365
+const DaysPerYear int = 365
 
 // GetDaysPerYear returns the DaysPerYear constant
 func GetDaysPerYear() int {
@@ -32,14 +32,9 @@ const (
 	Dec
 )
 
-// GetJanuary returns the value for Jan, 1
-func GetJanuary() int {
-	return Jan
-}
-
-// GetOctober returns the value for Oct, 10
-func GetOctober() int {
-	return Oct
+// GetMonth returns the value for the given month, ie GetMonth(Nov) = 11
+func GetMonth(month int) int {
+	return month
 }
 
 // AccNo type for a string - this is a stub type included to demonstrate how the untyped string constant can be used where this type is required

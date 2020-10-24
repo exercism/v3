@@ -20,6 +20,7 @@ The goal of this exercise is to teach the student about constants in Go.
 
 - `basics`
 - `comments`
+- `strings`
 
 ## Representer
 
@@ -34,8 +35,6 @@ This exercise could benefit from the following rules added to the [analyzer][ana
 - Verify that the `DaysPerYear` constant is created in the outer scope with the `const` keyword and with the explicit type `int`.
 - Verify that the `GetDaysPerYear()` function returns the `DaysPerYear` constant.
 - Verify that the `Jan`, `Feb`, `Mar`, `Apr`, `May`, `Jun`, `Jul`, `Aug`, `Sep`, `Oct`, `Nov`, and `Dec` constants are created in the outer scope in a block with the `const` keyword, using the `iota` identifier, and without an explicit type.
-- Verify that the `GetJanuary()` function returns the `Jan` constant.
-- Verify that the `GetOctober()` function returns the `Oct` constant.
 - Verify that the `AccountNo` constant is created in the outer scope with the `const` keyword and without an explicit type.
 - Verify that the `GetAccountNumber()` function returns the `AccountNo` constant.
 - Verify that the `var` keyword is not used.
