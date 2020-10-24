@@ -2,7 +2,7 @@
 
 Lists in Elixir are implemented as a Linked List, and not as an array of contiguous memory location. Therefore, accessing an element in the list takes linear time depending on the length of the list.
 
-Lists can be written in literal form, head-tail notation, (which uses the `join` operator `|`), or a combination of both:
+Lists can be written in literal form, head-tail notation, (which uses the `cons` operator `|`), or a combination of both:
 
 ```elixir
 # Literal Form
