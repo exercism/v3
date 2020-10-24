@@ -19,7 +19,7 @@ Lists can be written in literal form, head-tail notation, (which uses the `cons`
 [1 | [2, 3]]
 ```
 
-There can also be more than one element before the join operator.
+There can also be more than one element before the _cons_ [`|`] operator.
 
 ```elixir
 # Multiple prepends
