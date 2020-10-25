@@ -26,7 +26,7 @@ getSecondCard(deck)
 
 ## 3. Swap the first two cards
 
-Elyse will make the first two cards switch places.
+Elyse will make the top two cards of the deck switch places.
 
 ```javascript
 const deck = [10, 7, 3, 8, 5]
@@ -46,18 +46,7 @@ discardTopCard(deck)
 // => [2, [5, 4, 9, 3]]
 ```
 
-## 5. Triplicate the deck
-
-Elyse will make the cards in the deck repeat twice, maintaining the original card order.
-
-```javascript
-const deck = [3, 2, 6]
-
-triplicateDeck(deck)
-// => [3, 2, 6, 3, 2, 6, 3, 2, 6]
-```
-
-## 6. Insert face cards
+## 5. Insert face cards
 
 Elyse will insert a set of face cards (i.e. jack, queen, and king) into her deck such that they become the second, third, and fourth cards respectively.
 
@@ -66,3 +55,4 @@ const deck = [5, 4, 7, 10]
 
 insertFaceCards(deck)
 // => [5, 'jack', 'queen', 'king', 4, 7, 10]
+```
