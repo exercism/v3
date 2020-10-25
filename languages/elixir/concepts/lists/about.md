@@ -35,7 +35,14 @@ list = [2, 1]
 # => true
 ```
 
-Appending an element to a list during iteration is considered an anti-pattern. We can achieve the same result by prepending an element to the reversed list, and then reversing the result.
+Appending elements to a list during iteration is considered an anti-pattern. Appending an element requires walking through the entire list and adding the element at the end, therefore, appending a new element in each iteration would require walking through the entire list in each iteration.
+
+We can achieve the same result by prepending an element to the reversed list, and then reversing the result. Prepending is a fast operation and requires constant time.
+
+```elixir
+# [1, 2, 3] ++ [4, 5, 6] is equivalent to the much faster operation:
+Enum.reverse([6 | [5 | 4 | Enum.reverse([1, 2, 3])]])
+````
 
 There are several common functions for lists:
 
