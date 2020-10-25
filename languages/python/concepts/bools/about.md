@@ -23,8 +23,7 @@ False
 True
 ```
 
- All `boolean operators` are considered lower precedence than Pythons [`comparison operators`][comparisons], such as `==`, `>`, `<`, `is` and `is not`.
-
+All `boolean operators` are considered lower precedence than Pythons [`comparison operators`][comparisons], such as `==`, `>`, `<`, `is` and `is not`.
 
 ## Type Coercion and Truthiness
 
@@ -35,7 +34,6 @@ A few `built-ins` are always considered `False` by definition:
 - the constants `None` and `False`
 - zero of any _numeric type_ (`int`, `float`, `complex`, `decimal`, or `fraction`)
 - empty _sequences_ and _collections_ (`str`, `list`, `set`, `tuple`, `dict`, `range(0)`)
-
 
 ```python
 >>>bool(None)
@@ -74,10 +72,9 @@ if not b:
 
 Classes may define how they are evaluated in truthy situations if they override and implement a `__bool__()` method, and/or a `__len__()` method.
 
-
 ## How Booleans work under the hood
 
-The `bool` type is implemented as a _sub-type_ of  _int_. That means that `True` is _numerically equal_ to `1` and `False` is _numerically equal_ to `0`. This is observable when comparing them using an _equality operator_:
+The `bool` type is implemented as a _sub-type_ of _int_. That means that `True` is _numerically equal_ to `1` and `False` is _numerically equal_ to `0`. This is observable when comparing them using an _equality operator_:
 
 ```python
 >>>1 == True
@@ -99,8 +96,7 @@ False
 
 > Note: in python >= 3.8, using a literal (such as 1, '', [], or {}) on the left side of `is` will raise a warning.
 
-
-It is considered a [Python anti-pattern][comparing to true in the wrong way] to use the equality operator to comaire a booleand variable to `True` or `False`.  Instead, the identity operator `is` should be used:
+It is considered a [Python anti-pattern][comparing to true in the wrong way] to use the equality operator to comaire a booleand variable to `True` or `False`. Instead, the identity operator `is` should be used:
 
 ```python
 
@@ -114,7 +110,6 @@ if flag == True:
 if flag:
     print("Pythonistas prefer this pattern as more Pythonic.")
 ```
-
 
 [bool-function]: https://docs.python.org/3/library/functions.html#bool
 [bool]: https://docs.python.org/3/library/stdtypes.html#truth
