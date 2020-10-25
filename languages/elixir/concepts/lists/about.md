@@ -42,7 +42,7 @@ We can achieve the same result by prepending an element to the reversed list, an
 ```elixir
 # [1, 2, 3] ++ [4, 5, 6] is equivalent to the much faster operation:
 Enum.reverse([6 | [5 | 4 | Enum.reverse([1, 2, 3])]])
-````
+```
 
 There are several common functions for lists:
 
