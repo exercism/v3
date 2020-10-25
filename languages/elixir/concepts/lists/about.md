@@ -40,8 +40,11 @@ Appending elements to a list during iteration is considered an anti-pattern. App
 We can achieve the same result by prepending an element to the reversed list, and then reversing the result. Prepending is a fast operation and requires constant time.
 
 ```elixir
-# [1, 2, 3] ++ [4, 5, 6] is equivalent to the much faster operation:
-Enum.reverse([6 | [5 | [4 | Enum.reverse([1, 2, 3])]]])
+# Appending to the end of a list (potentially slow)
+[1, 2, 3] ++ [4] ++ [5] ++ [6]
+
+# Prepend to the start of a list then reverse (faster, due to the nature of linked lists)
+[6 | [5 | [4 | [3, 2, 1]]]] |> reverse()
 ```
 
 There are several common functions for lists:
