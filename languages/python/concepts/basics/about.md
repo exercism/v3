@@ -1,15 +1,20 @@
-[Python](https://docs.python.org/3/) is a [dynamic and strongly](https://stackoverflow.com/questions/11328920/is-python-strongly-typed) typed [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming) programming language. As of version 3.5, it employs both [duck typing](https://en.wikipedia.org/wiki/Duck_typing) and [gradual typing](https://en.wikipedia.org/wiki/Gradual_typing), via [type hints](https://docs.python.org/3/library/typing.html). It supports both imperative (_object-oriented, procedural_) and declarative (_functional, concurrent_) programming paradigms. But do not be fooled: while programming in other paradigms is fully _supported_, [everything in Python is an object](https://docs.python.org/3/reference/datamodel.html).
+[Python](https://docs.python.org/3/) is a [dynamic and strongly](https://stackoverflow.com/questions/11328920/is-python-strongly-typed) typed [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming) programming language. It employs both [duck typing](https://en.wikipedia.org/wiki/Duck_typing) and [gradual typing](https://en.wikipedia.org/wiki/Gradual_typing), via [type hints](https://docs.python.org/3/library/typing.html). It supports multiple programming paradigms including both imperative (_object-oriented, procedural_) and declarative (_functional, concurrent_) flavors. But do not be fooled: while programming across paradigms is fully _supported_, [everything in Python is an object](https://docs.python.org/3/reference/datamodel.html).
 
 Python was created by Guido van Rossum and first released in 1991. The [Python Software Foundation](https://www.python.org/psf/) manages and directs resources for Python and CPython development and receives proposals for changes to the language from [members](https://www.python.org/psf/membership/) of the community via [Python Enhancement Proposals or PEPs](https://www.python.org/dev/peps/).
 
-Python puts a strong emphasis on code readability and (_similar to Haskell_) uses [significant indentation](https://docs.python.org/3/reference/lexical_analysis.html#indentation) to denote function, method, and class definitions. The [zen of Python (PEP 20)](https://www.python.org/dev/peps/pep-0020/) lays out additional inspiration and philosophy.
+Python puts a strong emphasis on code readability and (_similar to Haskell_) uses [significant indentation](https://docs.python.org/3/reference/lexical_analysis.html#indentation) to denote function, method, and class definitions. The [zen of Python (PEP 20)](https://www.python.org/dev/peps/pep-0020/) lays out additional philosophy, as does the essay [What is Pythonic?]((https://blog.startifact.com/posts/older/what-is-pythonic.html).
+
+
+
+### Getting Started
 
 Objects are [assigned](https://docs.python.org/3/reference/simple_stmts.html#assignment-statements) to [names](https://docs.python.org/3/reference/executionmodel.html#naming-and-binding) in Python via the `=` or _assignment operator_. [Variables](https://realpython.com/python-variables/) are written in [`snake_case`](https://en.wikipedia.org/wiki/Snake_case), and _constants_ usually in `SCREAMING_SNAKE_CASE`. A name (_variable or constant_) is not itself _typed_, and can be attached or re-attached to different objects over its lifetime. For extended naming conventions and advice, see [PEP 8](https://www.python.org/dev/peps/pep-0008/).
 
 ```python
->>> my_first_variable = 1
->>> my_first_variable = "Last one, I promise"
->>> print(my_first_variable)
+>>>my_first_variable = 1
+>>>my_first_variable = "Last one, I promise"
+>>>print(my_first_variable)
+
 "Last one, I promise"
 ```
 
@@ -53,7 +58,6 @@ Functions are [called](https://docs.python.org/3/reference/expressions.html#call
 ```python
 def number_to_the_power_of(number_one, number_two):
     '''Returns float or int.
-
        Takes number_one and raises it to the power of number_two, returning the result.
     '''
 
@@ -67,18 +71,16 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: number_to_the_power_of() missing 1 required positional argument: 'number_two'
 
-...
 
 def number_to_the_power_of_default(number_one, number_two=2):
-    '''Returns float or int.
-
+'''Returns float or int.
        Takes number_one and raises it to the power of number_two, returning the result.
     '''
 
     return number_one ** number_two
 
 >>> number_to_the_power_of_default(4)
-16
+>>> 16
 ```
 
 Methods bound to class names are invoked via _dot notation_ (`.`), as are functions, constants, or global names imported as part of a _module_.:
@@ -86,16 +88,16 @@ Methods bound to class names are invoked via _dot notation_ (`.`), as are functi
 ```python
 import string
 
-#this is a constant provided by the *string* module
+# this is a constant provided by the *string* module
 >>> print(string.ascii_lowercase)
 "abcdefghijklmnopqrstuvwxyz"
 
-#this is a method call of the str *class*
+# this is a method call of the str *class*
 >>> start_text = "my silly sentence for examples."
 >>> str.upper(start_text)
 "MY SILLY SENTENCE FOR EXAMPLES."
 
-#this is a method call of an *instance* of the str *class*
+# this is a method call of an *instance* of the str *class*
 >>> start_text.upper()
 "MY SILLY SENTENCE FOR EXAMPLES."
 ```
@@ -144,3 +146,20 @@ errors defaults to 'strict'.
 ```
 
 Docstrings can also include [doctests](https://docs.python.org/3/library/doctest.html), which are interactive examples of how a method or function should work. Doctests can be read and run by PyTest, or by importing the `doctest` module.
+
+Complete documentation for the Python programming langauge can be found at [docs.python.org/3/][python documentation]:
+
+- [Python Tutorial][tutorial]
+- [Python Library Reference][library]
+- [Python Language Reference][language]
+- [Python HOWTOs][howtos]
+- [Python FAQs][faqs]
+- [Python Glossary of Terms][glossary]
+
+[python documentation]: https://docs.python.org/3/
+[tutorial]: https://docs.python.org/3/tutorial/index.html
+[library]: https://docs.python.org/3/library/index.html
+[language]: https://docs.python.org/3/reference/index.html
+[howtos]: https://docs.python.org/3/howto/index.html
+[faqs]: https://docs.python.org/3/faq/index.html
+[glossary]: https://docs.python.org/3/glossary.html
