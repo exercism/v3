@@ -1,6 +1,6 @@
-Python is a dynamically (yet _strongly_) typed programming language. It supports multiple programming paradigms including many **imperative** (*structured, procedural, object-oriented, and aspect-oriented*) and **declarative** (_functional_) flavors. Python emphasizes code readability and (*similar to Haskell*) uses significant whitespace.
+Python is a dynamically (yet _strongly_) typed programming language. It supports multiple programming paradigms including many **imperative** (_structured, procedural, object-oriented, and aspect-oriented_) and **declarative** (_functional_) flavors. Python emphasizes code readability and (_similar to Haskell_) uses significant whitespace.
 
-[Everything in Python is an object](https://docs.python.org/3/reference/datamodel.html#data-model).  Objects are assigned to [names](https://docs.python.org/3/reference/executionmodel.html#naming-and-binding) in Python via the `=` or _assignment operator_. _Variables_ are written in [`snake_case`](https://en.wikipedia.org/wiki/Snake_case), and _constants_ (usually) in `SCREAMING_SNAKE_CASE`. A name (_variable or constant_) is not itself _typed_, and can be [attached or re-attached](https://docs.python.org/3/reference/simple_stmts.html#assignment-statements) to different objects over its lifetime:
+[Everything in Python is an object](https://docs.python.org/3/reference/datamodel.html#data-model). Objects are assigned to [names](https://docs.python.org/3/reference/executionmodel.html#naming-and-binding) in Python via the `=` or _assignment operator_. _Variables_ are written in [`snake_case`](https://en.wikipedia.org/wiki/Snake_case), and _constants_ (usually) in `SCREAMING_SNAKE_CASE`. A name (_variable or constant_) is not itself _typed_, and can be [attached or re-attached](https://docs.python.org/3/reference/simple_stmts.html#assignment-statements) to different objects over its lifetime:
 
 ```python
 >>> my_first_variable = 1
@@ -20,11 +20,9 @@ MY_FIRST_CONSTANT = 16
 # Please don't do: MY_FIRST_CONSTANT = "Some other value"
 ```
 
-In Python, units of functionality are encapsulated in *functions*.
+In Python, units of functionality are encapsulated in _functions_.
 
-The keyword `def` begins a [_function definition_](https://docs.python.org/3/reference/compound_stmts.html#function-definitions), and must be followed by the _function name_ and a parenthesized list of zero or more formal _parameters_. The `def` line is terminated with a colon. 
-
-
+The keyword `def` begins a [_function definition_](https://docs.python.org/3/reference/compound_stmts.html#function-definitions), and must be followed by the _function name_ and a parenthesized list of zero or more formal _parameters_. The `def` line is terminated with a colon.
 
 Statements for the _body_ of the function begin on the next line, and must be _indented in a block_. There is no strict indentation amount (_either space **OR** [tab] characters are acceptable_), but indentation must be _consistent for all indented statements_. Functions explicitly return a value or object via the [`return`](https://docs.python.org/3/reference/simple_stmts.html#the-return-statement) keyword:
 

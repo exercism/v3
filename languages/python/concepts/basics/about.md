@@ -4,8 +4,6 @@ Python was created by Guido van Rossum and first released in 1991. The [Python S
 
 Python puts a strong emphasis on code readability and (_similar to Haskell_) uses [significant indentation](https://docs.python.org/3/reference/lexical_analysis.html#indentation) to denote function, method, and class definitions. The [zen of Python (PEP 20)](https://www.python.org/dev/peps/pep-0020/) lays out additional philosophy, as does the essay [What is Pythonic?]((https://blog.startifact.com/posts/older/what-is-pythonic.html).
 
-
-
 ### Getting Started
 
 Objects are [assigned](https://docs.python.org/3/reference/simple_stmts.html#assignment-statements) to [names](https://docs.python.org/3/reference/executionmodel.html#naming-and-binding) in Python via the `=` or _assignment operator_. [Variables](https://realpython.com/python-variables/) are written in [`snake_case`](https://en.wikipedia.org/wiki/Snake_case), and _constants_ usually in `SCREAMING_SNAKE_CASE`. A name (_variable or constant_) is not itself _typed_, and can be attached or re-attached to different objects over its lifetime. For extended naming conventions and advice, see [PEP 8](https://www.python.org/dev/peps/pep-0008/).
