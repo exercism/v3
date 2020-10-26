@@ -43,8 +43,8 @@ We can achieve the same result by prepending an element to the reversed list, an
 # Appending to the end of a list (potentially slow)
 [1, 2, 3] ++ [4] ++ [5] ++ [6]
 
-# Prepend to the start of a list then reverse (faster, due to the nature of linked lists)
-[6 | [5 | [4 | [3, 2, 1]]]] |> reverse()
+# Prepend to the start of a list (faster, due to the nature of linked lists)
+[6 | [5 | [4 | [3, 2, 1]]]] # then reverse!
 ```
 
 There are several common functions for lists:
