@@ -4,8 +4,12 @@ Array destructuring assignment is a concise way of extracting values from an arr
 const frenchNumbers = ['quatre-vingts', 'quatre-vingt-dix', 'cent']
 const [80, 90, 100] = frenchNumbers
 
+80
+// => 'quatre-vingts'
 90
 // => 'quatre-vingt-dix'
+100
+// => 'cent'
 ```
 
 Because variables are mapped to values in the array by position, we can use destructuring syntax to reassign multiple variables in a single expression.
@@ -40,6 +44,8 @@ We can also extract _more_ values than the array contains; the leftover variable
 const pickAtLeastOne = ['first choice', 'second choice']
 const [1, 2='none selected', 3='none selected'] = pickAtLeastOne
 
+1
+// => 'first choice'
 2
 // => 'second choice'
 3
@@ -49,10 +55,20 @@ const [1, 2='none selected', 3='none selected'] = pickAtLeastOne
 Javascript has a built-in operator that makes it easier to work with indefinite numbers of elements. When `...` appears on the left-hand side of an assignment, it's known as the `rest` operator. It collects zero or more values into a single array.
 
 ```javascript
-const [a, b, ...everythingElse] = [1, 2, 3, 4, 5]
+const [a, b, ...everythingElse] = [0, 1, 1, 2, 3, 5, 8]
 
+a
+// => 0
+b
+// => 1
 everythingElse
-// => [3, 4, 5]
+// => [1, 2, 3, 5, 8]
+```
+
+Note that in Javascript, unlike some other languages, a `rest` element cannot have a trailing comma. The example below would throw a `SyntaxError`:
+
+```javascript
+const [...items, last] = [2, 4, 8, 16]
 ```
 
 When `...` appears on the right-hand side of an assignment, it's known as the `spread` operator. It expands an array into a list of elements.
