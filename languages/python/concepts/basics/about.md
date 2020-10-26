@@ -2,7 +2,7 @@
 
 Python was created by Guido van Rossum and first released in 1991. The [Python Software Foundation](https://www.python.org/psf/) manages and directs resources for Python and CPython development and receives proposals for changes to the language from [members](https://www.python.org/psf/membership/) of the community via [Python Enhancement Proposals or PEPs](https://www.python.org/dev/peps/).
 
-Python puts a strong emphasis on code readability and (_similar to Haskell_) uses [significant indentation](https://docs.python.org/3/reference/lexical_analysis.html#indentation) to denote function, method, and class definitions. The [zen of Python (PEP 20)](https://www.python.org/dev/peps/pep-0020/) lays out additional philosophy, as does the essay [What is Pythonic?]((https://blog.startifact.com/posts/older/what-is-pythonic.html).
+Python puts a strong emphasis on code readability and (_similar to Haskell_) uses [significant indentation](https://docs.python.org/3/reference/lexical_analysis.html#indentation) to denote function, method, and class definitions. The [zen of Python (PEP 20)](https://www.python.org/dev/peps/pep-0020/) lays out additional philosophy, as does the essay [What is Pythonic?](https://blog.startifact.com/posts/older/what-is-pythonic.html).
 
 ### Getting Started
 
