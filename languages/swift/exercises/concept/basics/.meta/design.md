@@ -43,7 +43,7 @@ The Concepts this exercise unlocks are:
 
 - `basics`: know what a value is; know how to define a constant; know how to define a variable; know how to define a function; know how to return a value from a function; know how to call a function; know that constants are immutable; know that variables are mutable; know how type inference works; know how to define an integer; know how to use mathematical operators on integers; know how to define single- and multi-line comments.
 
-## Prequisites
+## Prerequisites
 
 There are no prerequisites.
 

@@ -17,7 +17,7 @@
 
 - `discriminated-unions`: know what discriminated unions are; know how discriminated unions are different from enums; know how to define a discriminated union, with and without data; know how to pattern match on discriminated unions.
 
-## Prequisites
+## Prerequisites
 
 - `basics`: defining functions and scoping and using integers.
 - `pattern-matching`: know how to do pattern matching.

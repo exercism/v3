@@ -23,7 +23,7 @@
 
 - `arrays`: know of the existence of the `Array` type; know that arrays have a fixed length; know that arrays are mutable; know how to define an array; accessing elements in an array by index; know how to update a value in an array; know some common array functions (summing values); know how to pattern match on arrays.
 
-## Prequisites
+## Prerequisites
 
 - `booleans`: return a `bool`.
 - `pattern-matching`: know how to do pattern matching.
