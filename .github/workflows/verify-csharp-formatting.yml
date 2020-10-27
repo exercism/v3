@@ -10,7 +10,7 @@ on:
 
 jobs:
   verify-csharp-formatting:
-    name: Verify C# formatting
+    name: Verify formatting
     runs-on: [ubuntu-latest]
     steps:
       - name: 'Checkout code'
