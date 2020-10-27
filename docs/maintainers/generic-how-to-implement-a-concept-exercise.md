@@ -167,7 +167,7 @@ If you have any questions regarding implementing this exercise, please post them
 [example-docs-introduction.md]: ../../languages/csharp/exercises/concept/strings/.docs/introduction.md
 [example-docs-instructions.md]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
 [example-docs-hints.md]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/hints.md
-[example-docs-source.md]: ../../languages/julia/exercises/concept/multiple-dispatch/.docs/source.md
+[example-docs-source.md]: ../../languages/julia/exercises/concept/encounters/.docs/source.md
 [example-meta-design.md]: ../../languages/csharp/exercises/concept/numbers/.meta/design.md
 [example-meta-config.json]: ../../languages/csharp/exercises/concept/flag-enums/.meta/config.json
 [example-config.json]: ../../languages/csharp/config.json

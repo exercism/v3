@@ -172,7 +172,7 @@ If you have any questions regarding implementing this exercise, please post them
 [example-docs-instructions.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
 [example-docs-hints.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/hints.md
 [example-docs-after.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md
-[example-docs-source.md]: https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/multiple-dispatch/.docs/source.md
+[example-docs-source.md]: https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/encounters/.docs/source.md
 [example-meta-design.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers/.meta/design.md
 [example-meta-config.json]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/flag-enums/.meta/config.json
 [example-config.json]: https://github.com/exercism/v3/blob/master/languages/csharp/config.json

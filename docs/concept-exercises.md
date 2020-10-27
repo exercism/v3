@@ -288,7 +288,7 @@ See [this example config.json file][config.json].
 [docs-introduction.md]: ../languages/csharp/exercises/concept/strings/.docs/introduction.md
 [docs-instructions.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
 [meta-config.json]: ../languages/fsharp/exercises/concept/booleans/.meta/config.json
-[meta-source.md]: ../languages/julia/exercises/concept/multiple-dispatch/.docs/source.md
+[meta-source.md]: ../languages/julia/exercises/concept/encounters/.docs/source.md
 [meta-design.md]: ../languages/fsharp/exercises/concept/booleans/.meta/design.md
 [shared-docs-cli.md]: ../languages/csharp/exercises/shared/.docs/cli.md
 [shared-docs-debug.md]: ../languages/csharp/exercises/shared/.docs/debug.md
