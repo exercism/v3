@@ -11,7 +11,7 @@ on:
 
 jobs:
   update-csharp-exercises:
-    name: Update csharp exercise report
+    name: Update exercise report
     runs-on: ubuntu-latest
 
     steps:
