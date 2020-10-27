@@ -6,7 +6,7 @@ on:
 
 jobs:
   max-file-size:
-    name: Check file sizes - ${{ github.event_name }}
+    name: Check file sizes
     runs-on: ubuntu-latest
 
     steps:
@@ -40,7 +40,7 @@ jobs:
           done
 
   valid-filenames:
-    name: Check file names - ${{ github.event_name }}
+    name: Check file names
     runs-on: ubuntu-latest
 
     steps:

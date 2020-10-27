@@ -8,7 +8,7 @@ on:
 
 jobs:
   verify-links:
-    name: Check for dead links - ${{ github.event_name }}
+    name: Check for dead links
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
