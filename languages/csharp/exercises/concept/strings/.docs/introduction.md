@@ -14,7 +14,7 @@ string name = "Jane";
 // => "Hello Jane!"
 ```
 
-For any string formatting more complex than simple concatenation, string interpolation is preferred. To use interpolation in a string, prefix it with the dollar (`$`) symbol.  Then you can use curly braces (`{}`) to access any variables inside your string.
+For any string formatting more complex than simple concatenation, string interpolation is preferred. To use interpolation in a string, prefix it with the dollar (`$`) symbol. Then you can use curly braces (`{}`) to access any variables inside your string.
 
 ```csharp
 string name = "Jane";
