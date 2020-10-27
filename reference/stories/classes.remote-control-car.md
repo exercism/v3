@@ -37,4 +37,4 @@ These are example tasks that fit the remote control car exercise:
 [concepts-objects]: ../concepts/objects.md
 [types-class]: ../types/class.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/classes/.docs/instructions.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/structs/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/remote-control-car/.docs/instructions.md

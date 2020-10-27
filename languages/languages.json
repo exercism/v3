@@ -1377,7 +1377,7 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/basics",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/lasagna",
           "slug": "basics",
           "concepts": [
             {
@@ -1388,7 +1388,7 @@
           "prerequisites": []
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/booleans",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/pacman-rules",
           "slug": "booleans",
           "concepts": [
             {
@@ -1404,7 +1404,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/numbers",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/freelance-rate",
           "slug": "numbers",
           "concepts": [
             {
@@ -1424,7 +1424,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/cond",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/log-level",
           "slug": "conditionals",
           "concepts": [
             {
@@ -1444,7 +1444,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/lists",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/language-list",
           "slug": "lists",
           "concepts": [
             {
@@ -1464,7 +1464,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/multiple-clause-functions",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/guessing-game",
           "slug": "multiple-clause-functions",
           "concepts": [
             {
@@ -1492,7 +1492,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/anonymous-functions",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/secrets",
           "slug": "anonymous-functions",
           "concepts": [
             {
@@ -1516,7 +1516,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/tuples",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/kitchen-calculator",
           "slug": "tuples",
           "concepts": [
             {
@@ -1544,7 +1544,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/strings",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/high-school-sweetheart",
           "slug": "strings",
           "concepts": [
             {
@@ -1564,7 +1564,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/nil",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/name-badge",
           "slug": "nil",
           "concepts": [
             {
@@ -1588,7 +1588,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/maps",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/high-score",
           "slug": "maps",
           "concepts": [
             {
@@ -1620,7 +1620,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/recursion",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/bird-count",
           "slug": "recursion",
           "concepts": [
             {
@@ -1648,7 +1648,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/charlists",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/german-sysadmin",
           "slug": "charlists",
           "concepts": [
             {
@@ -1680,7 +1680,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/access-behaviour",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/basketball-website",
           "slug": "access-behaviour",
           "concepts": [
             {
@@ -1708,7 +1708,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/binary-matching",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/file-sniffer",
           "slug": "binary-matching",
           "concepts": [
             {
@@ -1736,7 +1736,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/bitstrings",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/dna-encoding",
           "slug": "bitstrings",
           "concepts": [
             {
@@ -1764,7 +1764,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/enum",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/boutique-inventory",
           "slug": "enum",
           "concepts": [
             {
@@ -1800,7 +1800,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/errors",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpn-calculator",
           "slug": "errors",
           "concepts": [
             {
@@ -1828,7 +1828,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/structs",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/remote-control-car",
           "slug": "structs",
           "concepts": [
             {
@@ -1864,7 +1864,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/exceptions",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/stack-underflow",
           "slug": "exceptions",
           "concepts": [
             {
@@ -1884,7 +1884,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/keyword-lists",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/wine-cellar",
           "slug": "keyword-lists",
           "concepts": [
             {
@@ -1916,7 +1916,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/try-rescue-else-after",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpn-calculator-output",
           "slug": "try-rescue-else-after",
           "concepts": [
             {
@@ -1936,7 +1936,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/processes",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/take-a-number",
           "slug": "processes",
           "concepts": [
             {
@@ -1968,7 +1968,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/streams",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/mensch-aergere-dich-nicht",
           "slug": "streams",
           "concepts": [
             {
@@ -2000,7 +2000,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/agent",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/community-garden",
           "slug": "agent",
           "concepts": [
             {
@@ -2024,7 +2024,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/regular-expressions",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/date-parser",
           "slug": "regular-expressions",
           "concepts": [
             {
@@ -2040,7 +2040,7 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/list-comprehensions",
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/boutique-suggestions",
           "slug": "list-comprehensions",
           "concepts": [
             {

@@ -38,7 +38,7 @@ The story facilitates defining functions:
 [types-integer]: ../types/integer.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/instructions.md
 [implementation-common-lisp]: ../../languages/common-lisp/exercises/concept/basics/.docs/instructions.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/basics/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/lasagna/.docs/instructions.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/instructions.md
 [implementation-java]: ../../languages/java/exercises/concept/basics/.docs/instructions.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/basics/.docs/instructions.md
