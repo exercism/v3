@@ -73,4 +73,4 @@ If you have any questions regarding implementing the exercise, please post them 
 [docs-rationale-for-v3]: ../../../docs/rationale-for-v3.md
 [docs-features-of-v3]: ../../../docs/features-of-v3.md
 [anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
-[concept-exercise-strings]: ../exercises/concept/multiple-dispatch
+[concept-exercise-strings]: ../exercises/concept/encounters

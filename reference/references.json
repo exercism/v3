@@ -1961,8 +1961,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/multiple-dispatch",
-        "exercise": "multiple-dispatch",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/encounters",
+        "exercise": "encounters",
         "track": "julia",
         "language": "Julia"
       }
