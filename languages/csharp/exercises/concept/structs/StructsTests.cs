@@ -60,7 +60,7 @@ public class StructsTests
         ConstructorInfo constructorInfoObj = plotType.GetConstructor(types);
         if (constructorInfoObj != null)
         {
-           return (Plot)constructorInfoObj.Invoke(new object[]{coord1, coord2, coord3, coord4});
+            return (Plot)constructorInfoObj.Invoke(new object[] { coord1, coord2, coord3, coord4 });
         }
 
         else
