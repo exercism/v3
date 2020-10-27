@@ -65,7 +65,7 @@ For more information, please read [this in-depth description][docs-hints.md], wa
 
 **Purpose:** Provide more information about the concept(s) for a student to learn from.
 
-For more information, please read [this in-depth description][docs-after.md], watch [this video][video-docs-after.md] and check [this example file][example-docs-after.md].
+For more information, please read [this in-depth description][docs-after.md], watch [this video][video-docs-after.md] and check (document no longer available).
 
 ## Add `.docs/source.md` file (required if there are third-party sources)
 
@@ -167,7 +167,6 @@ If you have any questions regarding implementing this exercise, please post them
 [example-docs-introduction.md]: ../../languages/csharp/exercises/concept/strings/.docs/introduction.md
 [example-docs-instructions.md]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
 [example-docs-hints.md]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/hints.md
-[example-docs-after.md]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md
 [example-docs-source.md]: ../../languages/julia/exercises/concept/multiple-dispatch/.docs/source.md
 [example-meta-design.md]: ../../languages/csharp/exercises/concept/numbers/.meta/design.md
 [example-meta-config.json]: ../../languages/csharp/exercises/concept/flag-enums/.meta/config.json
