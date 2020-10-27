@@ -28,6 +28,6 @@ The exercise generally guides students how to:
 - [`types/list`][types-list]
 
 [implementation-clojure]: ../../languages/clojure/exercises/concept/lists/.docs/instructions.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/lists/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/language-list/.docs/instructions.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/lists/.docs/instructions.md
 [types-list]: ../types/list.md

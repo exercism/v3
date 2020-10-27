@@ -102,7 +102,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "regular-expressions",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/regular-expressions/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/date-parser/.docs/instructions.md"
       }
     ]
   },
@@ -129,13 +129,13 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "enum",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/enum/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/boutique-inventory/.docs/instructions.md"
       },
       {
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "list-comprehensions",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/list-comprehensions/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/boutique-suggestions/.docs/instructions.md"
       }
     ]
   },
@@ -152,7 +152,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "binary-matching",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/binary-matching/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/file-sniffer/.docs/instructions.md"
       }
     ]
   },
@@ -169,7 +169,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "numbers",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/numbers/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/freelance-rate/.docs/instructions.md"
       },
       {
         "track": "JavaScript",
@@ -215,7 +215,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "recursion",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/recursion/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/bird-count/.docs/instructions.md"
       },
       {
         "track": "F#",
@@ -238,7 +238,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "maps",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/maps/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/high-score/.docs/instructions.md"
       }
     ]
   },
@@ -255,7 +255,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "strings",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/strings/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/high-school-sweetheart/.docs/instructions.md"
       }
     ]
   },
@@ -272,7 +272,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "errors",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/errors/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/rpn-calculator/.docs/instructions.md"
       }
     ]
   },
@@ -289,7 +289,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "tuples",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/tuples/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/kitchen-calculator/.docs/instructions.md"
       }
     ]
   },
@@ -329,7 +329,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "lists",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/lists/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/language-list/.docs/instructions.md"
       },
       {
         "track": "F#",
@@ -364,7 +364,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "basics",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/basics/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/lasagna/.docs/instructions.md"
       },
       {
         "track": "F#",
@@ -516,7 +516,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "nil",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/nil/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/name-badge/.docs/instructions.md"
       },
       {
         "track": "JavaScript",
@@ -545,7 +545,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "multiple-clause-functions",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/multiple-clause-functions/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/guessing-game/.docs/instructions.md"
       }
     ]
   },
@@ -562,7 +562,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "booleans",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/booleans/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/pacman-rules/.docs/instructions.md"
       },
       {
         "track": "Python",
@@ -625,7 +625,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "bitstrings",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/bitstrings/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/dna-encoding/.docs/instructions.md"
       }
     ]
   },
@@ -677,7 +677,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "structs",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/structs/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/remote-control-car/.docs/instructions.md"
       }
     ]
   },
@@ -768,7 +768,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "anonymous-functions",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/anonymous-functions/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/secrets/.docs/instructions.md"
       }
     ]
   },
@@ -795,7 +795,7 @@
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "processes",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/processes/.docs/instructions.md"
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/take-a-number/.docs/instructions.md"
       }
     ]
   },

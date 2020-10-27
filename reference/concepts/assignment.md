@@ -29,7 +29,7 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 | Ruby       | [basics][implementation-ruby]       |                                                  |
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/introduction.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/basics/.docs/introduction.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/lasagna/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/introduction.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/basics/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/basics/.docs/introduction.md

@@ -5,7 +5,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/access-behaviour",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/basketball-website",
         "exercise": "access-behaviour",
         "track": "elixir",
         "language": "Elixir"
@@ -31,7 +31,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/agent",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/community-garden",
         "exercise": "agent",
         "track": "elixir",
         "language": "Elixir"
@@ -53,7 +53,7 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/anonymous-functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/secrets",
         "exercise": "anonymous-functions",
         "track": "elixir",
         "language": "Elixir"
@@ -171,7 +171,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/cond",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/log-level",
         "exercise": "cond",
         "track": "elixir",
         "language": "Elixir"
@@ -232,7 +232,7 @@
         "language": "F#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/lasagna",
         "exercise": "basics",
         "track": "elixir",
         "language": "Elixir"
@@ -251,7 +251,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/binary-matching",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/file-sniffer",
         "exercise": "binary-matching",
         "track": "elixir",
         "language": "Elixir"
@@ -270,7 +270,7 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/anonymous-functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/secrets",
         "exercise": "anonymous-functions",
         "track": "elixir",
         "language": "Elixir"
@@ -283,7 +283,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/bitstrings",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/dna-encoding",
         "exercise": "bitstrings",
         "track": "elixir",
         "language": "Elixir"
@@ -379,7 +379,7 @@
         "language": "Julia"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/booleans",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/pacman-rules",
         "exercise": "booleans",
         "track": "elixir",
         "language": "Elixir"
@@ -429,7 +429,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/charlists",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/german-sysadmin",
         "exercise": "charlists",
         "track": "elixir",
         "language": "Elixir"
@@ -472,7 +472,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/charlists",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/german-sysadmin",
         "exercise": "charlists",
         "track": "elixir",
         "language": "Elixir"
@@ -556,7 +556,7 @@
         "language": "JavaScript"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/anonymous-functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/secrets",
         "exercise": "anonymous-functions",
         "track": "elixir",
         "language": "Elixir"
@@ -621,7 +621,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/cond",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/log-level",
         "exercise": "cond",
         "track": "elixir",
         "language": "Elixir"
@@ -865,7 +865,7 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/multiple-clause-functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/guessing-game",
         "exercise": "multiple-clause-functions",
         "track": "elixir",
         "language": "Elixir"
@@ -996,7 +996,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/try-rescue-else-after",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpn-calculator-output",
         "exercise": "try-rescue-else-after",
         "track": "elixir",
         "language": "Elixir"
@@ -1046,7 +1046,7 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/enum",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/boutique-inventory",
         "exercise": "enum",
         "track": "elixir",
         "language": "Elixir"
@@ -1107,7 +1107,7 @@
         "language": "Go"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/errors",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpn-calculator",
         "exercise": "errors",
         "track": "elixir",
         "language": "Elixir"
@@ -1172,7 +1172,7 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/exceptions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/stack-underflow",
         "exercise": "exceptions",
         "track": "elixir",
         "language": "Elixir"
@@ -1273,7 +1273,7 @@
         "language": "F#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/numbers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/freelance-rate",
         "exercise": "numbers",
         "track": "elixir",
         "language": "Elixir"
@@ -1428,7 +1428,7 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/multiple-clause-functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/guessing-game",
         "exercise": "multiple-clause-functions",
         "track": "elixir",
         "language": "Elixir"
@@ -1469,7 +1469,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/nil",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/name-badge",
         "exercise": "nil",
         "track": "elixir",
         "language": "Elixir"
@@ -1597,7 +1597,7 @@
         "language": "Common Lisp"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/numbers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/freelance-rate",
         "exercise": "numbers",
         "track": "elixir",
         "language": "Elixir"
@@ -1653,7 +1653,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/keyword-lists",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/wine-cellar",
         "exercise": "keyword-lists",
         "track": "elixir",
         "language": "Elixir"
@@ -1670,7 +1670,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/list-comprehensions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/boutique-suggestions",
         "exercise": "list-comprehensions",
         "track": "elixir",
         "language": "Elixir"
@@ -1712,7 +1712,7 @@
         "language": "F#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/lists",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/language-list",
         "exercise": "lists",
         "track": "elixir",
         "language": "Elixir"
@@ -1766,7 +1766,7 @@
         "language": "Go"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/maps",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/high-score",
         "exercise": "maps",
         "track": "elixir",
         "language": "Elixir"
@@ -1910,7 +1910,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/maps",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/high-score",
         "exercise": "maps",
         "track": "elixir",
         "language": "Elixir"
@@ -1927,7 +1927,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/multiple-clause-functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/guessing-game",
         "exercise": "multiple-clause-functions",
         "track": "elixir",
         "language": "Elixir"
@@ -2065,7 +2065,7 @@
         "language": "Ruby"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/nil",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/name-badge",
         "exercise": "nil",
         "track": "elixir",
         "language": "Elixir"
@@ -2329,7 +2329,7 @@
         "language": "F#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/tuples",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/kitchen-calculator",
         "exercise": "tuples",
         "track": "elixir",
         "language": "Elixir"
@@ -2364,7 +2364,7 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/processes",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/take-a-number",
         "exercise": "processes",
         "track": "elixir",
         "language": "Elixir"
@@ -2377,7 +2377,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/streams",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/mensch-aergere-dich-nicht",
         "exercise": "streams",
         "track": "elixir",
         "language": "Elixir"
@@ -2407,7 +2407,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/processes",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/take-a-number",
         "exercise": "processes",
         "track": "elixir",
         "language": "Elixir"
@@ -2451,7 +2451,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/protocols",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/bread-and-potions",
         "exercise": "protocols",
         "track": "elixir",
         "language": "Elixir"
@@ -2488,7 +2488,7 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/streams",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/mensch-aergere-dich-nicht",
         "exercise": "streams",
         "track": "elixir",
         "language": "Elixir"
@@ -2559,7 +2559,7 @@
         "language": "F#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/recursion",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/bird-count",
         "exercise": "recursion",
         "track": "elixir",
         "language": "Elixir"
@@ -2588,7 +2588,7 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/regular-expressions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/date-parser",
         "exercise": "regular-expressions",
         "track": "elixir",
         "language": "Elixir"
@@ -2753,7 +2753,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/streams",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/mensch-aergere-dich-nicht",
         "exercise": "streams",
         "track": "elixir",
         "language": "Elixir"
@@ -2826,7 +2826,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/lists",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/language-list",
         "exercise": "lists",
         "track": "elixir",
         "language": "Elixir"
@@ -2892,7 +2892,7 @@
         "language": "F#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/strings",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/high-school-sweetheart",
         "exercise": "strings",
         "track": "elixir",
         "language": "Elixir"
@@ -2977,7 +2977,7 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/structs",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/remote-control-car",
         "exercise": "structs",
         "track": "elixir",
         "language": "Elixir"
@@ -3048,7 +3048,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/bitstrings",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/dna-encoding",
         "exercise": "bitstrings",
         "track": "elixir",
         "language": "Elixir"
@@ -3167,7 +3167,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/errors",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpn-calculator",
         "exercise": "errors",
         "track": "elixir",
         "language": "Elixir"
@@ -3184,7 +3184,7 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/try-rescue-else-after",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpn-calculator-output",
         "exercise": "try-rescue-else-after",
         "track": "elixir",
         "language": "Elixir"
@@ -3220,7 +3220,7 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/tuples",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/kitchen-calculator",
         "exercise": "tuples",
         "track": "elixir",
         "language": "Elixir"
