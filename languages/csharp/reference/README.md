@@ -161,7 +161,7 @@ This report is updated automatically when any _design.md_ document is modified o
 - local-functions _(local-functions)_ - [Background][tnc-local-functions]
 - memory-allocation _(memory-allocation)_ - [Issue][issue-memory-allocation]
 - multi-dimensional-array _(multi-dimensional-array)_
-- pointsers _(pointers)_ - [Issue][issue-pointers]
+- pointers _(pointers)_ - [Issue][issue-pointers]
 - queues _(queues)_ - [Background][tnc-queues]
 - ranges _(ranges)_ - [Background][tnc-ranges]
 - ref-local _(ref-local)_
