@@ -1,4 +1,4 @@
-name: Julia Exercise CI
+name: Julia
 
 on:
   push:
@@ -12,6 +12,7 @@ on:
 
 jobs:
   test:
+    name: Exercise CI - ${{ matrix.julia-version }} - ${{ matrix.os }} - ${{ matrix.arch }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false

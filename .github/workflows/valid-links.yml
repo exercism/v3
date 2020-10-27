@@ -1,4 +1,4 @@
-name: Check for dead links
+name: CI
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
 
 jobs:
   verify-links:
+    name: Check for dead links
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

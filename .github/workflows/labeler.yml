@@ -1,10 +1,11 @@
-name: "Pull Request Labeler"
+name: Tools
 
 on:
 - pull_request_target
 
 jobs:
   triage:
+    name: Pull Request Labeler
     runs-on: ubuntu-latest
     steps:
     - uses: actions/labeler@5f867a63be70efff62b767459b009290364495eb # 2.2.0

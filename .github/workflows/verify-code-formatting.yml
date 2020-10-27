@@ -1,4 +1,4 @@
-name: 'Verify formatting'
+name: CI
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
 
 jobs:
   verify-code-formatting:
+    name: Verify formatting
     runs-on: [ubuntu-latest]
     steps:
       - name: 'Checkout code'
