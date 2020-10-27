@@ -1,4 +1,4 @@
-name: Nim Compilability CI
+name: Nim
 
 on:
   push:
@@ -12,6 +12,7 @@ on:
 
 jobs:
   check-compilation-pr:
+    name: Compilability CI - ${{ github.event_name }}
     runs-on: ubuntu-latest
     container: nimlang/nim:1.2.6
     if: ${{ github.event_name == 'pull_request' }}
