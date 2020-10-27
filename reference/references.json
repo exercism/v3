@@ -117,28 +117,10 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/arrays",
-        "exercise": "arrays",
-        "track": "javascript",
-        "language": "JavaScript"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/arrays",
         "exercise": "arrays",
         "track": "java",
         "language": "Java"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/arrays",
-        "exercise": "arrays",
-        "track": "swift",
-        "language": "Swift"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/arrays",
-        "exercise": "arrays",
-        "track": "fsharp",
-        "language": "F#"
       },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/arrays",
@@ -147,10 +129,28 @@
         "language": "Ruby"
       },
       {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/arrays",
+        "exercise": "arrays",
+        "track": "swift",
+        "language": "Swift"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/arrays",
+        "exercise": "arrays",
+        "track": "javascript",
+        "language": "JavaScript"
+      },
+      {
         "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/arrays",
         "exercise": "arrays",
         "track": "csharp",
         "language": "C#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/arrays",
+        "exercise": "arrays",
+        "track": "fsharp",
+        "language": "F#"
       }
     ]
   },
@@ -184,10 +184,16 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/kotlin/exercises/concept/basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/basics",
         "exercise": "basics",
-        "track": "kotlin",
-        "language": "Kotlin"
+        "track": "java",
+        "language": "Java"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/basics",
+        "exercise": "basics",
+        "track": "ruby",
+        "language": "Ruby"
       },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/x86-64-assembly/exercises/concept/basics",
@@ -202,10 +208,10 @@
         "language": "Python"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
         "exercise": "basics",
-        "track": "elixir",
-        "language": "Elixir"
+        "track": "swift",
+        "language": "Swift"
       },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/basics",
@@ -214,16 +220,10 @@
         "language": "JavaScript"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/basics",
         "exercise": "basics",
-        "track": "java",
-        "language": "Java"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
-        "exercise": "basics",
-        "track": "swift",
-        "language": "Swift"
+        "track": "csharp",
+        "language": "C#"
       },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/basics",
@@ -232,16 +232,16 @@
         "language": "F#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/basics",
         "exercise": "basics",
-        "track": "ruby",
-        "language": "Ruby"
+        "track": "elixir",
+        "language": "Elixir"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/kotlin/exercises/concept/basics",
         "exercise": "basics",
-        "track": "csharp",
-        "language": "C#"
+        "track": "kotlin",
+        "language": "Kotlin"
       }
     ]
   },
@@ -264,16 +264,16 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/anonymous-functions",
-        "exercise": "anonymous-functions",
-        "track": "elixir",
-        "language": "Elixir"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/flag-enums",
         "exercise": "flag-enums",
         "track": "csharp",
         "language": "C#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/anonymous-functions",
+        "exercise": "anonymous-functions",
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -319,18 +319,6 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/booleans",
-        "exercise": "booleans",
-        "track": "elixir",
-        "language": "Elixir"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/booleans",
-        "exercise": "booleans",
-        "track": "javascript",
-        "language": "JavaScript"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/booleans",
         "exercise": "booleans",
         "track": "go",
@@ -349,22 +337,16 @@
         "language": "Java"
       },
       {
+        "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/booleans",
+        "exercise": "booleans",
+        "track": "ruby",
+        "language": "Ruby"
+      },
+      {
         "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
         "exercise": "conditionals",
         "track": "swift",
         "language": "Swift"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/boolean-logic",
-        "exercise": "boolean-logic",
-        "track": "julia",
-        "language": "Julia"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/booleans",
-        "exercise": "booleans",
-        "track": "fsharp",
-        "language": "F#"
       },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/purescript/exercises/concept/booleans",
@@ -373,16 +355,34 @@
         "language": "PureScript"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/booleans",
+        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/booleans",
         "exercise": "booleans",
-        "track": "ruby",
-        "language": "Ruby"
+        "track": "javascript",
+        "language": "JavaScript"
       },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/booleans",
         "exercise": "booleans",
         "track": "csharp",
         "language": "C#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/booleans",
+        "exercise": "booleans",
+        "track": "fsharp",
+        "language": "F#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/boolean-logic",
+        "exercise": "boolean-logic",
+        "track": "julia",
+        "language": "Julia"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/booleans",
+        "exercise": "booleans",
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -396,19 +396,6 @@
         "exercise": "bools",
         "track": "python",
         "language": "Python"
-      }
-    ]
-  },
-  {
-    "name": "break",
-    "variations": ["break", "breaks"],
-    "documents": [],
-    "implementations": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
-        "exercise": "loops",
-        "track": "swift",
-        "language": "Swift"
       }
     ]
   },
@@ -477,14 +464,7 @@
         "name": "character"
       }
     ],
-    "implementations": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/strings-and-characters",
-        "exercise": "strings-and-characters",
-        "track": "swift",
-        "language": "Swift"
-      }
-    ]
+    "implementations": []
   },
   {
     "name": "charlists",
@@ -564,10 +544,10 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/anonymous-functions",
-        "exercise": "anonymous-functions",
-        "track": "elixir",
-        "language": "Elixir"
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
+        "exercise": "closures",
+        "track": "swift",
+        "language": "Swift"
       },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/closures",
@@ -576,10 +556,10 @@
         "language": "JavaScript"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
-        "exercise": "closures",
-        "track": "swift",
-        "language": "Swift"
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/anonymous-functions",
+        "exercise": "anonymous-functions",
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -665,6 +645,12 @@
         "language": "Go"
       },
       {
+        "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/numbers",
+        "exercise": "numbers",
+        "track": "ruby",
+        "language": "Ruby"
+      },
+      {
         "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/conditionals",
         "exercise": "conditionals",
         "track": "common-lisp",
@@ -675,12 +661,6 @@
         "exercise": "numbers",
         "track": "fsharp",
         "language": "F#"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/numbers",
-        "exercise": "numbers",
-        "track": "ruby",
-        "language": "Ruby"
       }
     ]
   },
@@ -834,19 +814,6 @@
     "implementations": []
   },
   {
-    "name": "continue",
-    "variations": ["continue", "continues"],
-    "documents": [],
-    "implementations": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
-        "exercise": "loops",
-        "track": "swift",
-        "language": "Swift"
-      }
-    ]
-  },
-  {
     "name": "control-transfer",
     "variations": ["control-transfer", "control-transfers", "control_transfer"],
     "documents": [],
@@ -870,16 +837,16 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/datetimes",
-        "exercise": "datetimes",
-        "track": "fsharp",
-        "language": "F#"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/datetimes",
         "exercise": "datetimes",
         "track": "csharp",
         "language": "C#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/datetimes",
+        "exercise": "datetimes",
+        "track": "fsharp",
+        "language": "F#"
       }
     ]
   },
@@ -1020,13 +987,30 @@
     "implementations": []
   },
   {
+    "name": "dynamic-dispatch",
+    "variations": [
+      "dynamic-dispatch",
+      "dynamic-dispatches",
+      "dynamic_dispatch"
+    ],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/try-rescue-else-after",
+        "exercise": "try-rescue-else-after",
+        "track": "elixir",
+        "language": "Elixir"
+      }
+    ]
+  },
+  {
     "name": "emoji-symbols",
     "variations": ["emoji-symbols", "emoji-symbol", "emoji_symbols"],
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/unicode-identifiers",
-        "exercise": "unicode-identifiers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
+        "exercise": "\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
         "track": "julia",
         "language": "Julia"
       }
@@ -1117,16 +1101,16 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/errors",
-        "exercise": "errors",
-        "track": "elixir",
-        "language": "Elixir"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/errors",
         "exercise": "errors",
         "track": "go",
         "language": "Go"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/errors",
+        "exercise": "errors",
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -1135,6 +1119,23 @@
     "variations": ["errors-handling", "errors-handlings", "errors_handling"],
     "documents": [],
     "implementations": []
+  },
+  {
+    "name": "escaping-functions",
+    "variations": [
+      "escaping-functions",
+      "escaping-function",
+      "escaping_functions"
+    ],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/higher-order-functions",
+        "exercise": "higher-order-functions",
+        "track": "swift",
+        "language": "Swift"
+      }
+    ]
   },
   {
     "name": "exception-filtering",
@@ -1159,22 +1160,22 @@
     "documents": [],
     "implementations": [
       {
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/exceptions",
+        "exercise": "exceptions",
+        "track": "csharp",
+        "language": "C#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/exceptions",
+        "exercise": "exceptions",
+        "track": "csharp",
+        "language": "C#"
+      },
+      {
         "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/exceptions",
         "exercise": "exceptions",
         "track": "elixir",
         "language": "Elixir"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/exceptions",
-        "exercise": "exceptions",
-        "track": "csharp",
-        "language": "C#"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/exceptions",
-        "exercise": "exceptions",
-        "track": "csharp",
-        "language": "C#"
       }
     ]
   },
@@ -1242,16 +1243,22 @@
     "documents": [],
     "implementations": [
       {
+        "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/floating-point-numbers",
+        "exercise": "floating-point-numbers",
+        "track": "ruby",
+        "language": "Ruby"
+      },
+      {
         "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/numbers",
         "exercise": "numbers",
         "track": "rust",
         "language": "Rust"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/numbers",
-        "exercise": "numbers",
-        "track": "elixir",
-        "language": "Elixir"
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/floating-point-numbers",
+        "exercise": "floating-point-numbers",
+        "track": "csharp",
+        "language": "C#"
       },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/arithmetic",
@@ -1266,16 +1273,10 @@
         "language": "F#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/floating-point-numbers",
-        "exercise": "floating-point-numbers",
-        "track": "ruby",
-        "language": "Ruby"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/floating-point-numbers",
-        "exercise": "floating-point-numbers",
-        "track": "csharp",
-        "language": "C#"
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/numbers",
+        "exercise": "numbers",
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -1590,16 +1591,16 @@
         "language": "Rust"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/numbers",
-        "exercise": "numbers",
-        "track": "elixir",
-        "language": "Elixir"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/arithmetic",
         "exercise": "arithmetic",
         "track": "common-lisp",
         "language": "Common Lisp"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/numbers",
+        "exercise": "numbers",
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -1660,19 +1661,6 @@
     ]
   },
   {
-    "name": "labels",
-    "variations": ["labels", "label"],
-    "documents": [],
-    "implementations": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
-        "exercise": "loops",
-        "track": "swift",
-        "language": "Swift"
-      }
-    ]
-  },
-  {
     "name": "list-comprehensions",
     "variations": [
       "list-comprehensions",
@@ -1700,10 +1688,16 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/lists",
+        "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/lists",
         "exercise": "lists",
-        "track": "elixir",
-        "language": "Elixir"
+        "track": "clojure",
+        "language": "Clojure"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/lists",
+        "exercise": "lists",
+        "track": "csharp",
+        "language": "C#"
       },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/lists",
@@ -1718,16 +1712,10 @@
         "language": "F#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/lists",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/lists",
         "exercise": "lists",
-        "track": "csharp",
-        "language": "C#"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/lists",
-        "exercise": "lists",
-        "track": "clojure",
-        "language": "Clojure"
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -1748,16 +1736,16 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
-        "exercise": "loops",
-        "track": "swift",
-        "language": "Swift"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/floating-point-numbers",
         "exercise": "floating-point-numbers",
         "track": "ruby",
         "language": "Ruby"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
+        "exercise": "loops",
+        "track": "swift",
+        "language": "Swift"
       }
     ]
   },
@@ -1772,16 +1760,16 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/maps",
-        "exercise": "maps",
-        "track": "elixir",
-        "language": "Elixir"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/maps",
         "exercise": "maps",
         "track": "go",
         "language": "Go"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/maps",
+        "exercise": "maps",
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -2065,12 +2053,6 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/nil",
-        "exercise": "nil",
-        "track": "elixir",
-        "language": "Elixir"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/zero-value",
         "exercise": "zero-value",
         "track": "go",
@@ -2081,6 +2063,12 @@
         "exercise": "instance-variables",
         "track": "ruby",
         "language": "Ruby"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/nil",
+        "exercise": "nil",
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -2114,18 +2102,6 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/numbers",
-        "exercise": "numbers",
-        "track": "rust",
-        "language": "Rust"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/numbers",
-        "exercise": "numbers",
-        "track": "javascript",
-        "language": "JavaScript"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/numbers",
         "exercise": "numbers",
         "track": "go",
@@ -2138,28 +2114,40 @@
         "language": "Java"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/numbers",
-        "exercise": "numbers",
-        "track": "swift",
-        "language": "Swift"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/numbers",
-        "exercise": "numbers",
-        "track": "fsharp",
-        "language": "F#"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/numbers",
         "exercise": "numbers",
         "track": "ruby",
         "language": "Ruby"
       },
       {
+        "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/numbers",
+        "exercise": "numbers",
+        "track": "rust",
+        "language": "Rust"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/numbers",
+        "exercise": "numbers",
+        "track": "swift",
+        "language": "Swift"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/numbers",
+        "exercise": "numbers",
+        "track": "javascript",
+        "language": "JavaScript"
+      },
+      {
         "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/numbers",
         "exercise": "numbers",
         "track": "csharp",
         "language": "C#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/numbers",
+        "exercise": "numbers",
+        "track": "fsharp",
+        "language": "F#"
       }
     ]
   },
@@ -2335,16 +2323,16 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/tuples",
-        "exercise": "tuples",
-        "track": "elixir",
-        "language": "Elixir"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/pattern-matching",
         "exercise": "pattern-matching",
         "track": "fsharp",
         "language": "F#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/tuples",
+        "exercise": "tuples",
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -2458,6 +2446,19 @@
     ]
   },
   {
+    "name": "protocols",
+    "variations": ["protocols", "protocol"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/protocols",
+        "exercise": "protocols",
+        "track": "elixir",
+        "language": "Elixir"
+      }
+    ]
+  },
+  {
     "name": "randomness",
     "variations": ["randomness", "randomnesses", "randomnes"],
     "documents": [],
@@ -2546,12 +2547,6 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/recursion",
-        "exercise": "recursion",
-        "track": "elixir",
-        "language": "Elixir"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/recursion",
         "exercise": "recursion",
         "track": "javascript",
@@ -2562,6 +2557,12 @@
         "exercise": "recursion",
         "track": "fsharp",
         "language": "F#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/recursion",
+        "exercise": "recursion",
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -2581,16 +2582,16 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/regular-expressions",
-        "exercise": "regular-expressions",
-        "track": "elixir",
-        "language": "Elixir"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/regular-expressions",
         "exercise": "regular-expressions",
         "track": "csharp",
         "language": "C#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/regular-expressions",
+        "exercise": "regular-expressions",
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -2734,23 +2735,6 @@
     ]
   },
   {
-    "name": "static-access-operator",
-    "variations": [
-      "static-access-operator",
-      "static-access-operators",
-      "static_access_operator"
-    ],
-    "documents": [],
-    "implementations": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/structs",
-        "exercise": "structs",
-        "track": "elixir",
-        "language": "Elixir"
-      }
-    ]
-  },
-  {
     "name": "stored-properties",
     "variations": ["stored-properties", "stored-property", "stored_properties"],
     "documents": [],
@@ -2860,30 +2844,6 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/cpp/exercises/concept/strings",
-        "exercise": "strings",
-        "track": "cpp",
-        "language": "C\u002B\u002B"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/strings",
-        "exercise": "strings",
-        "track": "python",
-        "language": "Python"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/strings",
-        "exercise": "strings",
-        "track": "elixir",
-        "language": "Elixir"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/strings",
-        "exercise": "strings",
-        "track": "javascript",
-        "language": "JavaScript"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/strings",
         "exercise": "strings",
         "track": "go",
@@ -2896,10 +2856,34 @@
         "language": "Java"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/strings-and-characters",
-        "exercise": "strings-and-characters",
-        "track": "swift",
-        "language": "Swift"
+        "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/strings",
+        "exercise": "strings",
+        "track": "ruby",
+        "language": "Ruby"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/strings",
+        "exercise": "strings",
+        "track": "python",
+        "language": "Python"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/cpp/exercises/concept/strings",
+        "exercise": "strings",
+        "track": "cpp",
+        "language": "C\u002B\u002B"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/strings",
+        "exercise": "strings",
+        "track": "javascript",
+        "language": "JavaScript"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/strings",
+        "exercise": "strings",
+        "track": "csharp",
+        "language": "C#"
       },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/strings",
@@ -2908,16 +2892,27 @@
         "language": "F#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/strings",
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/strings",
         "exercise": "strings",
-        "track": "ruby",
-        "language": "Ruby"
-      },
+        "track": "elixir",
+        "language": "Elixir"
+      }
+    ]
+  },
+  {
+    "name": "strings-and-characters",
+    "variations": [
+      "strings-and-characters",
+      "strings-and-character",
+      "strings_and_characters"
+    ],
+    "documents": [],
+    "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/strings",
-        "exercise": "strings",
-        "track": "csharp",
-        "language": "C#"
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/strings-and-characters",
+        "exercise": "strings-and-characters",
+        "track": "swift",
+        "language": "Swift"
       }
     ]
   },
@@ -2958,22 +2953,16 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/structs",
-        "exercise": "structs",
-        "track": "rust",
-        "language": "Rust"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/structs",
-        "exercise": "structs",
-        "track": "elixir",
-        "language": "Elixir"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/structs",
         "exercise": "structs",
         "track": "go",
         "language": "Go"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/structs",
+        "exercise": "structs",
+        "track": "rust",
+        "language": "Rust"
       },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/structs-and-classes",
@@ -2986,6 +2975,12 @@
         "exercise": "structs",
         "track": "csharp",
         "language": "C#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/structs",
+        "exercise": "structs",
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -3013,19 +3008,15 @@
     ]
   },
   {
-    "name": "switch-statements",
-    "variations": [
-      "switch-statements",
-      "switch-statement",
-      "switch_statements"
-    ],
+    "name": "switch-statement",
+    "variations": ["switch-statement", "switch-statements", "switch_statement"],
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/switch-statements",
-        "exercise": "switch-statements",
-        "track": "csharp",
-        "language": "C#"
+        "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/switch-statement",
+        "exercise": "switch-statement",
+        "track": "java",
+        "language": "Java"
       }
     ]
   },
@@ -3065,19 +3056,15 @@
     ]
   },
   {
-    "name": "ternary-operators",
-    "variations": [
-      "ternary-operators",
-      "ternary-operator",
-      "ternary_operators"
-    ],
+    "name": "ternary-operator",
+    "variations": ["ternary-operator", "ternary-operators", "ternary_operator"],
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/ternary-operators",
-        "exercise": "ternary-operators",
-        "track": "java",
-        "language": "Java"
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
+        "exercise": "conditionals",
+        "track": "swift",
+        "language": "Swift"
       }
     ]
   },
@@ -3221,12 +3208,6 @@
         "language": "Python"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/tuples",
-        "exercise": "tuples",
-        "track": "elixir",
-        "language": "Elixir"
-      },
-      {
         "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/tuples",
         "exercise": "tuples",
         "track": "swift",
@@ -3237,6 +3218,12 @@
         "exercise": "tuples",
         "track": "csharp",
         "language": "C#"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/tuples",
+        "exercise": "tuples",
+        "track": "elixir",
+        "language": "Elixir"
       }
     ]
   },
@@ -3282,8 +3269,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/unicode-identifiers",
-        "exercise": "unicode-identifiers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
+        "exercise": "\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
         "track": "julia",
         "language": "Julia"
       }
