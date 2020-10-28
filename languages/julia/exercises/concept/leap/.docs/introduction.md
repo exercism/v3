@@ -2,7 +2,7 @@ Given a year, report if it is a leap year in the Gregorian calendar.
 
 ## Arithmetic Operators: Remainder & Equality
 
-Julia provides a number of [arithmetic operators](https://en.wikipedia.org/wiki/Arithmetic#Arithmetic_operations) for primitive numeric types[^1].
+Julia provides a number of [arithmetic operators](https://en.wikipedia.org/wiki/Arithmetic#Arithmetic_operations) for numeric types[^1].
 
 In this exercise you will only need the `%` operator that calculates the [remainder](https://en.wikipedia.org/wiki/Remainder)
 
