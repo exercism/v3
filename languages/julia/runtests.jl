@@ -1,7 +1,7 @@
 using Test
 
 # TODO Change this to test practice exercises when adding the first practice exercise
-for exercise in readdir(joinpath("exercises", "concept"))
+Threads.@threads for exercise in readdir(joinpath("exercises", "concept"))
     # Allow only testing specified exercises
     if !isempty(ARGS) && !(exercise in ARGS)
         continue

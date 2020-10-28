@@ -1,5 +1,8 @@
 name: Julia
 
+env:
+  JULIA_NUM_THREADS: 2
+
 on:
   push:
     paths:
