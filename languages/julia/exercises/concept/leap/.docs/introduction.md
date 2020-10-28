@@ -25,6 +25,7 @@ false
 ```
 
 <!-- TODO Check if admonitions will be supported -->
+
 !!! note
 
     It is conventional to have one space either side of each operator:

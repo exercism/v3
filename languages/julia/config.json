@@ -25,7 +25,11 @@
             {
                 "uuid": "f2f696e6-8a6a-4c8c-ae0b-d940d8579905",
                 "slug": "leap",
-                "concepts": ["arithmetic-operators", "integer-equality", "boolean-expressions"],
+                "concepts": [
+                    "arithmetic-operators",
+                    "integer-equality",
+                    "boolean-expressions"
+                ],
                 "prerequisites": [
                     "functions-introduction",
                     "boolean-logic",

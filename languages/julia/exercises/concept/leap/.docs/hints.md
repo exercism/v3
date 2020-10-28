@@ -5,15 +5,16 @@
 ## 3. Wrap it in the `isleapyear` function
 
 - You can return a boolean expression directly:
+
   ```julia
   julia> function equalstwo(x)
           return x == 2
       end
   equalstwo (generic function with 1 method)
-  
+
   julia> equalstwo(3)
   false
-  
+
   julia> equalstwo(2)
   true
   ```
