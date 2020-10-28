@@ -113,7 +113,6 @@ You can combine labels to find the issues you'd like, e.g. to [list all the issu
 [github-issues-status-in-progress]: https://github.com/exercism/v3/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fin-progress
 [github-issues-status-draft]: https://github.com/exercism/v3/issues?q=is%3Aopen+is%3Aissue+label%3Astatus%2Fdraft
 [github-issues-status-wontfix]: https://github.com/exercism/v3/issues?q=is%3Aissue+label%3Astatus%2Fwontfix+is%3Aclosed
-[status/wontfix]: https://github.com/exercism/v3/issues?q=is%3Aclosed+is%3Aissue+label%3Astatus%2Fwontfix
 [github-issues-type-v3-roadmap]: https://github.com/exercism/v3/labels/about%2Fv3-roadmap
 [github-issues-type-good-first-issue]: https://github.com/exercism/v3/labels/good%20first%20issue
 [github-issues-track-go]: https://github.com/exercism/v3/issues?q=is%3Aissue+is%3Aopen+label%3Atrack%2Fgo
