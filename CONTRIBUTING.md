@@ -8,5 +8,5 @@ There are two ways in which to contribute:
 - Contribute to the reference documents: please read the [reference documents README][reference-readme].
 
 [readme]: ./README.md
-[languages-readme]: ./languages/README.md
-[reference-readme]: ./reference/README.md
+[languages-readme]: ./languages/DONTREADME.md
+[reference-readme]: ./reference/DONTREADME.md
