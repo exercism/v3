@@ -65,7 +65,7 @@ public class StructsTests
 
         else
         {
-            throw new InvalidOperationException("Cannot find constructor that takes 4 coordinates");
+            throw new InvalidOperationException("You need to implement a constructor for the struct Plot.  The constructor must take 4 co-ordinates.  No such constructor can be found.");
         }
     }
 }
