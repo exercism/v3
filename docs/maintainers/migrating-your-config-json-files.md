@@ -50,6 +50,7 @@ jq 'del(.foregone)
 [jq]: https://stedolan.github.io/jq/
 
 ## New keys
+
 <!-- TODO: Properly document the new config.json format -->
 
 Exercises may contain the following new keys:
