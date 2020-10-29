@@ -1,4 +1,4 @@
-Array destructuring assignment is a concise way of extracting values from an array. Its syntax is similar to an array literal expression, but on the left-hand side of the assignment instead of the right.
+Array [destructuring assignment][array_destructuring_docs] is a concise way of extracting values from an array. Its syntax is similar to an [array literal][array_literal_resource] expression, but on the left-hand side of the assignment instead of the right.
 
 ```javascript
 const frenchNumbers = ['quatre-vingts', 'quatre-vingt-dix', 'cent']
@@ -80,3 +80,6 @@ const oneToTen = [...oneToFive, 6, 7, 8, 9, 10]
 oneToTen
 // => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
+
+[array_destructuring_docs]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+[array_literal_resource]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Creating_an_array
