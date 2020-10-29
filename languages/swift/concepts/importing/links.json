@@ -1,10 +1,6 @@
 [
   {
-    "url": "https://developer.apple.com/documentation/swift/String",
-    "description": "string-docs"
-  },
-  {
-    "url": "https://developer.apple.com/documentation/foundation/nsstring",
-    "description": "nsstring-docs"
+    "url": "https://swift.org/package-manager/",
+    "description": "Swift.org: Swift Package Manager"
   }
 ]
