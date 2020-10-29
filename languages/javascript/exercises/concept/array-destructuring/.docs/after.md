@@ -2,13 +2,13 @@ Array destructuring assignment is a concise way of extracting values from an arr
 
 ```javascript
 const frenchNumbers = ['quatre-vingts', 'quatre-vingt-dix', 'cent']
-const [80, 90, 100] = frenchNumbers
+const [french80, french90, french100] = frenchNumbers
 
-80
+french80
 // => 'quatre-vingts'
-90
+french90
 // => 'quatre-vingt-dix'
-100
+french100
 // => 'cent'
 ```
 
