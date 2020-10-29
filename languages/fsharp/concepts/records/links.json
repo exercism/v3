@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/records",
+    "description": "Records"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#record-pattern",
+    "description": "Pattern matching records"
+  }
+]

@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/symbol-and-operator-reference/arithmetic-operators",
+    "description": "Arithmetic operators"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/symbol-and-operator-reference/arithmetic-operators#summary-of-binary-comparison-operators",
+    "description": "Comparison operators"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/casting-and-conversions#arithmetic-types",
+    "description": "Converting numbers"
+  }
+]

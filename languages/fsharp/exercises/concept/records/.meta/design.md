@@ -22,7 +22,7 @@
 
 - `records`: know what a record is; know when records should be used; know how to define records; know that records have structural equality; know how to deconstruct records (including as parameters); know how to pattern match on records; know that records are immutable; know how to return a modified copy of a record; know how type inference works for records
 
-## Prequisites
+## Prerequisites
 
 - `numbers`: know what an `int` is and how to compare them
 - `strings`: know what a `string` is

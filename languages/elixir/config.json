@@ -11,37 +11,37 @@
   "exercises": {
     "concept": [
       {
-        "slug": "basics",
+        "slug": "lasagna",
         "uuid": "c29c6092-9d44-4f21-8138-b873384fd90b",
         "concepts": ["basics"],
         "prerequisites": []
       },
       {
-        "slug": "booleans",
+        "slug": "pacman-rules",
         "uuid": "5e743355-1ef3-4b5d-b59d-03bbc9697e6c",
         "concepts": ["booleans"],
         "prerequisites": ["basics"]
       },
       {
-        "slug": "numbers",
+        "slug": "rpn-calculator",
         "uuid": "fee79e03-1496-476f-964f-e60632cb13dc",
         "concepts": ["integers", "floating-point-numbers"],
         "prerequisites": ["basics"]
       },
       {
-        "slug": "cond",
+        "slug": "log-level",
         "uuid": "b26a2f11-d80a-42b9-881a-3575a83ad211",
         "concepts": ["cond", "atoms"],
         "prerequisites": ["booleans"]
       },
       {
-        "slug": "lists",
+        "slug": "language-list",
         "uuid": "3c53b340-680e-45c1-8979-3d79b441a65e",
         "concepts": ["lists", "string-literals"],
         "prerequisites": ["booleans"]
       },
       {
-        "slug": "multiple-clause-functions",
+        "slug": "guessing-game",
         "uuid": "ad01ae6c-bdcf-4512-b55b-c552e2b2e41d",
         "concepts": [
           "multiple-clause-functions",
@@ -51,13 +51,13 @@
         "prerequisites": ["cond", "string-literals"]
       },
       {
-        "slug": "anonymous-functions",
+        "slug": "secrets",
         "uuid": "1e3ceb20-715c-4157-9192-13284217affc",
         "concepts": ["anonymous-functions", "closures", "bit-manipulation"],
         "prerequisites": ["basics"]
       },
       {
-        "slug": "tuples",
+        "slug": "kitchen-calculator",
         "uuid": "f729493d-2249-4c10-9c77-da907d10aae1",
         "concepts": ["tuples", "pattern-matching"],
         "prerequisites": [
@@ -67,30 +67,31 @@
         ]
       },
       {
-        "slug": "strings",
+        "slug": "high-school-sweetheart",
         "uuid": "335df1cf-6aba-4ab6-b5c3-b4305ade09a4",
         "concepts": ["strings"],
         "prerequisites": ["lists", "pattern-matching"]
       },
       {
-        "slug": "nil",
+        "slug": "name-badge",
         "uuid": "b6ae6cb4-f908-436f-916c-fa847e4a82fb",
         "concepts": ["nil", "if"],
         "prerequisites": ["strings", "booleans"]
       },
       {
-        "slug": "maps",
+        "slug": "high-score",
         "uuid": "e7f3ba2b-a380-45d3-a48d-7ef3dc318a31",
         "concepts": ["module-attributes-as-constants", "maps"],
         "prerequisites": [
           "lists",
           "tuples",
           "anonymous-functions",
-          "default-arguments"
+          "default-arguments",
+          "string-literals"
         ]
       },
       {
-        "slug": "recursion",
+        "slug": "bird-count",
         "uuid": "e17088c8-c40f-4d4c-b5dd-d32f62b8087b",
         "concepts": ["recursion"],
         "prerequisites": [
@@ -101,31 +102,31 @@
         ]
       },
       {
-        "slug": "charlists",
+        "slug": "german-sysadmin",
         "uuid": "45f3a08f-fe0f-4e3e-b325-47bad3c74ea4",
         "concepts": ["charlists", "case"],
         "prerequisites": ["lists", "recursion", "pattern-matching", "guards"]
       },
       {
-        "slug": "access-behaviour",
+        "slug": "basketball-website",
         "uuid": "ba03df1d-20e4-4527-a8a7-afc97a834975",
         "concepts": ["access-behaviour"],
         "prerequisites": ["maps", "strings", "recursion", "nil"]
       },
       {
-        "slug": "binary-matching",
+        "slug": "file-sniffer",
         "uuid": "1653d476-5354-4d99-a990-1db418a7281c",
         "concepts": ["binaries"],
         "prerequisites": ["strings", "pattern-matching", "if", "bitstrings"]
       },
       {
-        "slug": "bitstrings",
+        "slug": "dna-encoding",
         "uuid": "994c8760-8a58-4ef3-8a28-a0f9182f4d9f",
         "concepts": ["bitstrings", "tail-call-recursion"],
         "prerequisites": ["charlists", "recursion", "pattern-matching"]
       },
       {
-        "slug": "enum",
+        "slug": "boutique-inventory",
         "uuid": "be4ef2d1-2851-425d-9780-0326fbcb9845",
         "concepts": ["enum"],
         "prerequisites": [
@@ -138,15 +139,15 @@
         ]
       },
       {
-        "slug": "errors",
+        "slug": "rpn-calculator",
         "uuid": "f660a2e1-bb50-4626-8d3f-6cd7c44fa8db",
         "concepts": ["errors", "try-rescue"],
         "prerequisites": ["anonymous-functions", "pattern-matching", "structs"]
       },
       {
-        "slug": "structs",
+        "slug": "remote-control-car",
         "uuid": "d8d25b93-d918-421e-bb57-cbdaf428d9e2",
-        "concepts": ["structs", "static-access-operator"],
+        "concepts": ["structs"],
         "prerequisites": [
           "maps",
           "multiple-clause-functions",
@@ -157,52 +158,58 @@
         ]
       },
       {
-        "slug": "exceptions",
+        "slug": "stack-underflow",
         "uuid": "9f698b46-fe8d-4641-a928-bcebfd9678df",
         "concepts": ["exceptions"],
         "prerequisites": ["access-behaviour", "errors"]
       },
       {
-        "slug": "keyword-lists",
+        "slug": "wine-cellar",
         "uuid": "921a03be-662a-4aea-b8fc-a87d199b1528",
         "concepts": ["keyword-lists"],
         "prerequisites": ["lists", "tuples", "atoms", "if", "default-arguments"]
       },
       {
-        "slug": "try-rescue-else-after",
+        "slug": "rpn-calculator-output",
         "uuid": "68a8f721-5db4-4b31-95c8-fa6c38f64327",
-        "concepts": ["try-rescue-else-after"],
+        "concepts": ["try-rescue-else-after", "dynamic-dispatch"],
         "prerequisites": ["io", "try-rescue"]
       },
       {
-        "slug": "processes",
+        "slug": "take-a-number",
         "uuid": "bec0b00f-816e-443a-af94-14ab4125e505",
         "concepts": ["processes", "pids"],
         "prerequisites": ["atoms", "recursion", "pattern-matching", "tuples"]
       },
       {
-        "slug": "streams",
+        "slug": "mensch-aergere-dich-nicht",
         "uuid": "3e2f8bc6-20b4-4e8f-a658-9c270342208e",
         "concepts": ["streams", "pipe-operator", "ranges"],
         "prerequisites": ["enum", "tuples", "if"]
       },
       {
-        "slug": "agent",
+        "slug": "community-garden",
         "uuid": "1d6be9ec-5b5c-4c81-9bfa-2e3fc78c978f",
         "concepts": ["agent"],
         "prerequisites": ["processes", "maps", "structs"]
       },
       {
-        "slug": "regular-expressions",
+        "slug": "date-parser",
         "uuid": "57198686-71c9-4f38-973a-a111435560e7",
         "concepts": ["regular-expressions"],
         "prerequisites": ["strings"]
       },
       {
-        "slug": "list-comprehensions",
+        "slug": "boutique-suggestions",
         "uuid": "f8208858-901e-4e5a-9f34-689bf8ad156c",
         "concepts": ["list-comprehensions"],
         "prerequisites": ["enum", "lists", "maps", "keyword-lists", "tuples"]
+      },
+      {
+        "slug": "bread-and-potions",
+        "uuid": "a9fb9efa-ff37-4642-9118-c1351fd343ad",
+        "concepts": ["protocols"],
+        "prerequisites": ["structs", "nil"]
       }
     ],
     "practice": []
@@ -423,12 +430,6 @@
       "slug": "regular-expressions",
       "name": "Regular Expressions",
       "blurb": "TODO: add blurb for regular-expressions concept"
-    },
-    {
-      "uuid": "0c96a65b-8b7d-4fa8-b64c-aea86286ca35",
-      "slug": "static-access-operator",
-      "name": "Static Access Operator",
-      "blurb": "TODO: add blurb for static-access-operator concept"
     },
     {
       "uuid": "442e8992-9eed-4b11-bd97-edf23ab0dc7b",
