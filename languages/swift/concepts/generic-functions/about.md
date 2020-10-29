@@ -4,9 +4,7 @@ We've seen one of the common ways this is accomplished in programming, functions
 
 This allows for a great deal of code reuse, however, there was still a big limitation. While we could use that code for many different values, all of those values had to be of the same _type_.
 
----
-
-_Generics_ are a programming language feature that Swift offers which allows programmers to write code that can be reused not just with many different values, but also with values of many different types.
+[_Generic functions_][generic-functions] are a programming language feature that Swift offers which allows programmers to write code that can be reused not just with many different values, but also with values of many different types.
 
 For an example of the problems generics solve, consider the function
 
@@ -41,13 +39,9 @@ doubleStringIfValid("Boo!") { $0.count> 5 }
 // => nil
 ```
 
-This is the problem that generics solve. Just like we use parameters in functions to reuse the same code with different values, we can use _type parameters_ to create generic functions that allow us to reuse the same code with different types.
+This is the problem that generics solve. Just like we use parameters in functions to reuse the same code with different values, we can use generic functions that allow us to reuse the same code with different types.
 
----
-
-### Generic functions
-
-[Generic functions][generic-functions] are written with [type parameters][generic-type-parameters] listed in between matching angle brackets which are placed between the function name and its parameter list. These type parameters can then be used in place of the types in the function's signature that they are meant to replace.
+Generic functions are written with type parameters listed in between matching angle brackets which are placed between the function name and its parameter list. These type parameters can then be used in place of the types in the function's signature that they are meant to replace.
 
 ```swift
 func genericDoubleIfValid<T>(_ value: T, isValid: (T) -> Bool) -> (T, T)? {
@@ -81,8 +75,6 @@ funcs!.1(9.99, -10.0)
 
 Here, we pass in the `+` function for `value`. Now, there are a few different `+` functions in Swift. There is one for each of the integer types, each of the floating point types, one for strings, one for arrays, and so on. So at this point, we still do not know the type that `T` represents. However, `isValid` must have type `(T) -> Bool`. And in the function passed in as `isValid`, we see that `T` is the type of a function that takes two `Doubles` as input and returns a `Double` as output. Because of this, we know that our return value must be an optional pair of copies of the `+` function for `Doubles`, and we verify that by applying them to a couple pairs of `Doubles`.
 
----
-
 There can be more than one type parameters for any generic function. Like regular parameters, there can be as many as are needed to do the job. For example, if we don't necessarily want our doubling function to merely return a tuple with two copies of our input value, we can add another type parameter to represent the output type and then pass another function into our function that generates the desired output.
 
 ```swift
@@ -101,27 +93,4 @@ convert("Books!", isValid: { $0.count > 5 }, change:  { $0.count })
 
 Here we see that the three different `change` functions have types `(Int) -> (Int, Int)`, `(String) -> String`, and `(String) -> Int` respectively, showing how we may vary both type parameters.
 
-### Naming type parameters
-
-When naming type parameters one should usually choose a name that the relationship between the type parameter and its use. For example, the `convert` function above is more clearly written as:
-
-```swift
-func convert<Input, Output>(_ value: Input, isValid: (Input) -> Bool, change: (Input) -> Output) -> Output {
-  …
-}
-```
-
-However, in some cases there is no strong relationship and single letters, usually starting with `T` (for type) are used.
-
-```swift
-func identity<T>(_ value: T) -> T {
-  return value
-}
-```
-
-In either case, Apple's Swift style guidelines state:
-
-> Always give type parameters upper camel case names (such as T and MyTypeParameter) to indicate that they’re a placeholder for a type, not a value.
-
 [generic-functions]: https://docs.swift.org/swift-book/LanguageGuide/Generics.html#ID181
-[generic-type-parameters]: https://docs.swift.org/swift-book/LanguageGuide/Generics.html#ID182
