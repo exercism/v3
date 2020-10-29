@@ -12,7 +12,7 @@ french100
 // => 'cent'
 ```
 
-Because variables are mapped to values in the array by position, we can use destructuring syntax to reassign multiple variables in a single expression.
+Because variables are mapped to values in the array by position, destructuring syntax can be used to assign or re-assign multiple variables in a single expression.
 
 ```javascript
 let a = 'orange'
@@ -29,7 +29,7 @@ c
 // => 'purple'
 ```
 
-The positional mapping also means that if we want to extract fewer values than the array contains, we may need to use placeholders to specify which values should be ignored. This is only necessary if we need to "skip" over values to get to the ones we want.
+The syntax allows skipping values when mapping, for example to ignore specific positions in the array.
 In the example below, imagine we have a `getUserInfo` function that returns an array containing a user's first name, last name, and street address.
 
 ```javascript
