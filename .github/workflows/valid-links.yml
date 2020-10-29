@@ -35,13 +35,21 @@ jobs:
           else
               files=$(git diff --no-commit-id --name-only --diff-filter AM origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | cat)
           fi
-          
+
           set +e
           exitCode=0
-          
+
           for file in $files; do
             if [ -f "$file" ]
             then
+                # Skip auto-generated files
+                if [[ "$file" =~ "languages/README.md" ||
+                      "$file" =~ "reference/README.md" ||
+                      "$file" =~ "reference/stories/README.md" ]]
+                then
+                  continue
+                fi
+
                 markdown-link-check -q -c .github/markdown-link-check-config.json "$file"
                 exitCode=$((exitCode + $?))
             fi
