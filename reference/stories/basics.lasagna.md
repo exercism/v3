@@ -43,5 +43,5 @@ The story facilitates defining functions:
 [implementation-java]: ../../languages/java/exercises/concept/basics/.docs/instructions.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/basics/.docs/instructions.md
 [implementation-julia]: ../../languages/julia/exercises/concept/functions-introduction/.docs/instructions.md
-[implementation-ruby]: ../../languages/ruby/exercises/concept/basics/.docs/instructions.md
+[implementation-ruby]: ../../languages/ruby/exercises/concept/lasagna/.docs/instructions.md
 [implementation-swift]: ../../languages/swift/exercises/concept/basics/.docs/instructions.md
