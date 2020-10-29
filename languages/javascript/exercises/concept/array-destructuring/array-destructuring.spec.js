@@ -9,8 +9,8 @@ import {
 describe('array-destructuring', () => {
   describe('getFirstCard', () => {
     const getFirstCardTestCases = [
-      [[8, 3, 9, 5], 8],
       [[3], 3],
+      [[8, 3, 9, 5], 8],
     ]
 
     getFirstCardTestCases.forEach(([deck, expected]) => {
@@ -54,11 +54,11 @@ describe('array-destructuring', () => {
 
   describe.skip('discardTopCard', () => {
     const discardTopCardTestCases = [
+      [[7], [7, []]],
       [
         [9, 2, 10, 4],
         [9, [2, 10, 4]],
       ],
-      [[7], [7, []]],
     ]
 
     discardTopCardTestCases.forEach(([deck, expected]) => {
