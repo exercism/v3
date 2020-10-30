@@ -26,7 +26,7 @@ getSecondCard(deck)
 
 ## 3. Swap the first two cards
 
-Elyse will make the top two cards of the deck switch places.
+Elyse will make the top two cards of the deck switch places. She doesn't need to call a single function.
 
 ```javascript
 const deck = [10, 7, 3, 8, 5]
