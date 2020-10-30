@@ -22,8 +22,10 @@ describe('array-destructuring', () => {
 
   describe.skip('getSecondCard', () => {
     const getSecondCardTestCases = [
-      [[2, 5, 1, 6], 5],
       [[10, 4], 4],
+      [[2, 5, 1, 6], 5],
+      [[], undefined],
+      [[8], undefined],
     ]
 
     getSecondCardTestCases.forEach(([deck, expected]) => {
@@ -36,12 +38,12 @@ describe('array-destructuring', () => {
   describe.skip('swapTopTwoCards', () => {
     const swapTopTwoCardsTestCases = [
       [
-        [10, 4, 3, 7, 8],
-        [4, 10, 3, 7, 8],
-      ],
-      [
         [3, 6],
         [6, 3],
+      ],
+      [
+        [10, 4, 3, 7, 8],
+        [4, 10, 3, 7, 8],
       ],
     ]
 
