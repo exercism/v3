@@ -65,14 +65,18 @@ It's even possible to extract _more_ values than the array contains; the leftove
 
 ```javascript
 const pickAtLeastOne = ['first choice', 'second choice']
-const [1, 2='none selected', 3='none selected'] = pickAtLeastOne
+```
 
-1
-// => 'first choice'
-2
-// => 'second choice'
-3
+The array destructuring assignment can provide _default values_ in case there is none in the source array.
+
+```
+const [first, second, third="none selected", fourth] = pickAtLeastOne
+
+third
 // => 'none selected'
+
+fourth
+// => undefined
 ```
 
 Javascript has a built-in operator that makes it easier to work with indefinite numbers of elements. When `...` appears on the left-hand side of an assignment, it's known as the `rest` operator. It collects zero or more values into a single array.
