@@ -1,5 +1,7 @@
 const FACE_CARDS = ['jack', 'queen', 'king']
 
+@ts-check
+
 export function getFirstCard(deck) {
   throw new Error('Implement the getFirstCard function')
 }
