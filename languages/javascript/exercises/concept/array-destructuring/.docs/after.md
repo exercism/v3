@@ -49,8 +49,16 @@ const [, , streetAddress] = getUserInfo()
 
 streetAddress
 // => "Sunny Lane 523"
+The assignment is also not required to use all the values.
 
-const [firstName, lastName] = getUserInfo() // no skipping
+```javascript
+const [firstName, lastName] = getUserInfo()
+
+firstName
+// => "Valerie"
+
+lastName
+// => "Noir"
 ```
 
 We can also extract _more_ values than the array contains; the leftover variables will simply be `undefined`. This might happen if we don't know ahead of time how many values the array will contain. If we want to make sure none of our variables end up `undefined`, we can set default values for them.
