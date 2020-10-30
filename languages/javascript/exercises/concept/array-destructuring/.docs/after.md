@@ -15,10 +15,19 @@ french100
 Because variables are mapped to values in the array by position, destructuring syntax can be used to assign or re-assign multiple variables in a single expression.
 
 ```javascript
-let a = 'orange'
-let b = 'purple'
-let c = 'green'
+let [a, b] = ['world', 'hello']
+;[b, a] = [a, b]
 
+a
+// => 'hello'
+b
+// => 'world'
+```
+
+This works for nested arrays too.
+
+```javascript
+let [a, b, c] = ['orange', 'purple', 'green']
 ;[[a, b], c] = [[c, a], b]
 
 a
