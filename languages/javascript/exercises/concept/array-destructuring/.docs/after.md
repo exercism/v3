@@ -65,6 +65,19 @@ It's even possible to extract _more_ values than the array contains; the leftove
 
 ```javascript
 const pickAtLeastOne = ['first choice', 'second choice']
+const [first, second, third, fourth] = pickAtLeastOne
+
+first
+// => "first choice"
+
+second
+// => "second choice"
+
+third
+// => undefined
+
+fourth
+// => undefined
 ```
 
 The array destructuring assignment can provide _default values_ in case there is none in the source array.
