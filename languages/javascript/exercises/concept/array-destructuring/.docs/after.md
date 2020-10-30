@@ -92,7 +92,7 @@ fourth
 // => undefined
 ```
 
-Javascript has a built-in operator that makes it easier to work with indefinite numbers of elements. When `...` appears on the left-hand side of an assignment, it's known as the `rest` operator. It collects zero or more values into a single array.
+Javascript has a built-in operator that makes it easier to work with indefinite numbers of elements. When `...` appears on the left-hand side of an assignment, those three dots are known as the `rest` operator. The three dots together with a variable name is called a rest element. It collects zero or more values, and stores them into a single array.
 
 ```javascript
 const [a, b, ...everythingElse] = [0, 1, 1, 2, 3, 5, 8]
