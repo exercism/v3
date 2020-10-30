@@ -19,6 +19,6 @@ The Concepts this exercise unlocks are:
 - `matrices-iteration`
 - `matrices-mutation`
 
-## Prequisites
+## Prerequisites
 
 See config.json for now.

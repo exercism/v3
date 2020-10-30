@@ -36,7 +36,7 @@
             },
             {
                 "uuid": "68001762-8a35-4494-9de4-624ca9efb5cd",
-                "slug": "multiple-dispatch",
+                "slug": "encounters",
                 "concepts": ["multiple-dispatch"],
                 "prerequisites": [
                     "composite-types",
@@ -46,7 +46,7 @@
             },
             {
                 "uuid": "2b2b8bed-ff39-4e77-a2fe-254125b53a1c",
-                "slug": "unicode-identifiers",
+                "slug": "🕑🕤🕗",
                 "concepts": ["unicode-identifiers", "emoji-symbols"],
                 "prerequisites": [
                     "symbols",

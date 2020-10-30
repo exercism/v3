@@ -37,7 +37,7 @@ This exercise determines whether specific characters are awake (true or false) a
 | JavaScript | [booleans][implementation-javascript] | None    |
 | PureScript | [booleans][implementation-purescript] | None    |
 
-[implementation-elixir]: ../../languages/elixir/exercises/concept/booleans/.docs/introduction.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/pacman-rules/.docs/introduction.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/booleans/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/booleans/.docs/introduction.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/booleans/.docs/introduction.md

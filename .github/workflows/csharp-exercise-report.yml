@@ -1,4 +1,4 @@
-name: Update csharp exercise report
+name: C#
 
 on:
   push:
@@ -11,6 +11,7 @@ on:
 
 jobs:
   update-csharp-exercises:
+    name: Update exercise report
     runs-on: ubuntu-latest
 
     steps:

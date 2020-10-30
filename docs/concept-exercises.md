@@ -128,7 +128,7 @@ This document can also link to any additional resources that might be interestin
 - Similar features with which the concept may be confused
 - Performance characteristics and memory usage
 
-For more information, watch [this video][video-docs-after.md] and check [this example after.md file][docs-after.md].
+For more information, watch [this video][video-docs-after.md] and check (example document no longer available).
 
 ### `.docs/source.md` (required if there are third-party sources)
 
@@ -284,12 +284,11 @@ For each exercise:
 
 See [this example config.json file][config.json].
 
-[docs-after.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md
 [docs-hints.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/hints.md
 [docs-introduction.md]: ../languages/csharp/exercises/concept/strings/.docs/introduction.md
 [docs-instructions.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
 [meta-config.json]: ../languages/fsharp/exercises/concept/booleans/.meta/config.json
-[meta-source.md]: ../languages/julia/exercises/concept/multiple-dispatch/.docs/source.md
+[meta-source.md]: ../languages/julia/exercises/concept/encounters/.docs/source.md
 [meta-design.md]: ../languages/fsharp/exercises/concept/booleans/.meta/design.md
 [shared-docs-cli.md]: ../languages/csharp/exercises/shared/.docs/cli.md
 [shared-docs-debug.md]: ../languages/csharp/exercises/shared/.docs/debug.md
