@@ -15,7 +15,7 @@ getFirstCard(deck)
 
 ## 2. Get the second card
 
-Elyse will summon the second card in the deck.
+Elyse performs sleight of hand, and summons the second card in the deck, without using the `array[index]`.
 
 ```javascript
 const deck = [3, 2, 10, 6, 7]
