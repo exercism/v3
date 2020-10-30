@@ -82,4 +82,3 @@ add5(x: 10)
 [closures]: https://docs.swift.org/swift-book/LanguageGuide/Closures.html#
 [closure-expressions]: https://docs.swift.org/swift-book/LanguageGuide/Closures.html#ID95
 [inferring-closure-types]: https://docs.swift.org/swift-book/LanguageGuide/Closures.html#ID98
-
