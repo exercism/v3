@@ -105,7 +105,7 @@ everythingElse
 // => [1, 2, 3, 5, 8]
 ```
 
-Note that in Javascript, unlike some other languages, a `rest` element cannot have a trailing comma. The example below would throw a `SyntaxError`:
+Note that in JavaScript, unlike some other languages, a `rest` element cannot have a trailing comma. It _must_ be the last element in a destructuring assignment. The example below throws a `SyntaxError`:
 
 ```javascript
 const [...items, last] = [2, 4, 8, 16]
