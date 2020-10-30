@@ -61,7 +61,7 @@ lastName
 // => "Noir"
 ```
 
-We can also extract _more_ values than the array contains; the leftover variables will simply be `undefined`. This might happen if we don't know ahead of time how many values the array will contain. If we want to make sure none of our variables end up `undefined`, we can set default values for them.
+It's even possible to extract _more_ values than the array contains; the leftover variables will be assigned `undefined`. This may be useful when the amount of values isn't known ahead of time.
 
 ```javascript
 const pickAtLeastOne = ['first choice', 'second choice']
