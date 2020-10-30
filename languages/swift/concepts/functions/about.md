@@ -50,3 +50,4 @@ Within the body of a function, parameters are treated as constants, not variable
 
 [functions]: https://docs.swift.org/swift-book/LanguageGuide/Functions.html
 [argument labels]: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID166
+[type annotations]: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID312
