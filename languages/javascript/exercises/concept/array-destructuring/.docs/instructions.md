@@ -4,7 +4,7 @@ To make things easier, she usually only starts with cards numbered 1 to 10, alth
 
 ## 1. Get the first card
 
-Elyse will summon the first card in the deck.
+Elyse will summon the first card in the deck, without using the `array[index]` or `.shift()`. It's just like magic.
 
 ```javascript
 const deck = [5, 9, 7, 1, 8]
