@@ -1,3 +1,5 @@
+const FACE_CARDS = ['jack', 'queen', 'king']
+
 export function getFirstCard(deck) {
   const [first] = deck
 
@@ -10,10 +12,8 @@ export function getSecondCard(deck) {
   return second
 }
 
-export function swapTopTwoCards(deck) {
-  ;[deck[0], deck[1]] = [deck[1], deck[0]]
-
-  return deck
+export function swapTopTwoCards([a, b, ...rest]) {
+  return [b, a, ...rest]
 }
 
 export function discardTopCard(deck) {
@@ -22,9 +22,6 @@ export function discardTopCard(deck) {
   return [first, rest]
 }
 
-export function insertFaceCards(deck) {
-  const faceCards = ['jack', 'queen', 'king']
-  const [topCard, ...rest] = deck
-
-  return [topCard, ...faceCards, ...rest]
+export function insertFaceCards([head, ...tail]) {
+  return [head, ...FACE_CARDS, ...tail]
 }

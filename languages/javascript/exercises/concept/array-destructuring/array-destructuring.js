@@ -1,3 +1,5 @@
+const FACE_CARDS = ['jack', 'queen', 'king']
+
 export function getFirstCard(deck) {
   throw new Error('Implement the getFirstCard function')
 }
@@ -15,7 +17,5 @@ export function discardTopCard(deck) {
 }
 
 export function insertFaceCards(deck) {
-  const faceCards = ['jack', 'queen', 'king']
-
   throw new Error('Implement the insertFaceCards function')
 }
