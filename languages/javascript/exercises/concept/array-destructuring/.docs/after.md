@@ -42,7 +42,13 @@ The syntax allows skipping values when mapping, for example to ignore specific p
 In the example below, imagine we have a `getUserInfo` function that returns an array containing a user's first name, last name, and street address.
 
 ```javascript
-const [, , streetAddress] = getUserInfo() // skipping
+getUserInfo()
+// => ["Valerie", "Noir", "Sunny Lane 523"]
+
+const [, , streetAddress] = getUserInfo()
+
+streetAddress
+// => "Sunny Lane 523"
 
 const [firstName, lastName] = getUserInfo() // no skipping
 ```
