@@ -41,7 +41,7 @@ c
 The syntax allows skipping values when mapping, for example to ignore specific positions in the array.
 In the example below, imagine we have a `getUserInfo` function that returns an array containing a user's first name, last name, and street address.
 
-```javascript
+````javascript
 getUserInfo()
 // => ["Valerie", "Noir", "Sunny Lane 523"]
 
@@ -59,7 +59,7 @@ firstName
 
 lastName
 // => "Noir"
-```
+````
 
 It's even possible to extract _more_ values than the array contains; the leftover variables will be assigned `undefined`. This may be useful when the amount of values isn't known ahead of time.
 
@@ -121,7 +121,7 @@ oneToTen
 // => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const woow = ['A', ...oneToFive, 'B', 'C', 'D', 'E', ...oneToFive, 42]
 
-woow 
+woow
 // =>  ["A", 1, 2, 3, 4, 5, "B", "C", "D", "E", 1, 2, 3, 4, 5, 42]
 ```
 
