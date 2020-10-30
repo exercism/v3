@@ -119,6 +119,10 @@ const oneToTen = [...oneToFive, 6, 7, 8, 9, 10]
 
 oneToTen
 // => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const woow = ['A', ...oneToFive, 'B', 'C', 'D', 'E', ...oneToFive, 42]
+
+woow 
+// =>  ["A", 1, 2, 3, 4, 5, "B", "C", "D", "E", 1, 2, 3, 4, 5, 42]
 ```
 
 [array_destructuring_docs]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
