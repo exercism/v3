@@ -75,6 +75,7 @@ describe('array-destructuring', () => {
         [3, 'jack', 'queen', 'king', 10, 7],
       ],
       [[9], [9, 'jack', 'queen', 'king']],
+      [[], [undefined, 'jack', 'queen', 'king']],
     ]
 
     insertFaceCardsTestCases.forEach(([deck, expected]) => {
