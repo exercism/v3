@@ -111,7 +111,7 @@ Note that in JavaScript, unlike some other languages, a `rest` element cannot ha
 const [...items, last] = [2, 4, 8, 16]
 ```
 
-When `...` appears on the right-hand side of an assignment, it's known as the `spread` operator. It expands an array into a list of elements.
+When `...` appears on the right-hand side of an assignment, it's known as the `spread` operator. It expands an array into a list of elements. Unlike the rest element, it can appear anywhere in an array literal expression, and there can be more than one.
 
 ```javascript
 const oneToFive = [1, 2, 3, 4, 5]
