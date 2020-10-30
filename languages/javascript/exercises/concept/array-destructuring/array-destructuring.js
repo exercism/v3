@@ -1,5 +1,3 @@
-const FACE_CARDS = ['jack', 'queen', 'king']
-
 @ts-check
 
 export function getFirstCard(deck) {
@@ -17,6 +15,8 @@ export function swapTopTwoCards(deck) {
 export function discardTopCard(deck) {
   throw new Error('Implement the discardTopCard function')
 }
+
+const FACE_CARDS = ['jack', 'queen', 'king']
 
 export function insertFaceCards(deck) {
   throw new Error('Implement the insertFaceCards function')

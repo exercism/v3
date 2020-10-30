@@ -1,5 +1,3 @@
-const FACE_CARDS = ['jack', 'queen', 'king']
-
 export function getFirstCard(deck) {
   const [first] = deck
 
@@ -21,6 +19,8 @@ export function discardTopCard(deck) {
 
   return [first, rest]
 }
+
+const FACE_CARDS = ['jack', 'queen', 'king']
 
 export function insertFaceCards([head, ...tail]) {
   return [head, ...FACE_CARDS, ...tail]
