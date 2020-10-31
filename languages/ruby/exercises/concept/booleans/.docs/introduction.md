@@ -19,7 +19,7 @@ When evaluating objects in `if` statements or other boolean contexts, all object
 
 ## Control flow
 
-_Truthy_ and _falsey_ evaluations are useful in the context of control flow. Like in procedural languages, Ruby has an `if`...`else` construct, but it may be more common to use `if` as a "guarding" statement to modify the evaluation of an expression.
+_Truthy_ and _falsey_ evaluations are useful in the context of control flow.
 
 ```ruby
 def falsey
@@ -45,11 +45,7 @@ end
 
 2 + 2 if falsey
 # => the numbers are not added because of the modifier, nil is returned
-```
 
-Ruby provides `unless` to make code read well. E.g.) Rather than `eat_desert if not too_full`, we can also write `eat_desert unless too_full`.
-
-```ruby
 3 + 3 unless truthy
 # => the numbers are not added because of the modifier, nil is returned
 
