@@ -503,8 +503,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "basics",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/basics/.docs/instructions.md"
+        "exercise": "lasagna",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/lasagna/.docs/instructions.md"
       }
     ]
   },
