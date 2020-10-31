@@ -5,7 +5,7 @@
             "runtests.jl"
         ],
         "solution_files": [
-            "matrices-introduction.jl"
+            "exercism-matrix.jl"
         ]
     },
     "authors": [

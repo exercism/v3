@@ -12,4 +12,4 @@ This story involves playing around with a matrix representing the Exercism logo,
 
 - [The Exercism Matrix][implementation-julia]
 
-[implementation-julia]: ../../languages/julia/exercises/concept/matrices-introduction/
+[implementation-julia]: ../../languages/julia/exercises/concept/exercism-matrix/
