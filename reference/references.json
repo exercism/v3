@@ -955,6 +955,12 @@
     ],
     "implementations": [
       {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/high-score-board",
+        "exercise": "high-score-board",
+        "track": "swift",
+        "language": "Swift"
+      },
+      {
         "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/dictionaries",
         "exercise": "dictionaries",
         "track": "csharp",
@@ -1384,8 +1390,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/functions-introduction",
-        "exercise": "functions-introduction",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/lasagna",
+        "exercise": "lasagna",
         "track": "julia",
         "language": "Julia"
       }
@@ -1506,8 +1512,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/string-components",
-        "exercise": "string-components",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/poetry-club",
+        "exercise": "poetry-club",
         "track": "swift",
         "language": "Swift"
       }
@@ -1788,8 +1794,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
-        "exercise": "matrices-introduction",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
+        "exercise": "exercism-matrix",
         "track": "julia",
         "language": "Julia"
       }
@@ -1801,8 +1807,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
-        "exercise": "matrices-introduction",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
+        "exercise": "exercism-matrix",
         "track": "julia",
         "language": "Julia"
       }
@@ -1818,8 +1824,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
-        "exercise": "matrices-introduction",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
+        "exercise": "exercism-matrix",
         "track": "julia",
         "language": "Julia"
       }
@@ -1835,8 +1841,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
-        "exercise": "matrices-introduction",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
+        "exercise": "exercism-matrix",
         "track": "julia",
         "language": "Julia"
       }
@@ -1852,8 +1858,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
-        "exercise": "matrices-introduction",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
+        "exercise": "exercism-matrix",
         "track": "julia",
         "language": "Julia"
       }
@@ -2192,8 +2198,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/string-components",
-        "exercise": "string-components",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/poetry-club",
+        "exercise": "poetry-club",
         "track": "swift",
         "language": "Swift"
       }
@@ -2814,8 +2820,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/string-components",
-        "exercise": "string-components",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/poetry-club",
+        "exercise": "poetry-club",
         "track": "swift",
         "language": "Swift"
       }
@@ -2844,8 +2850,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/string-components",
-        "exercise": "string-components",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/poetry-club",
+        "exercise": "poetry-club",
         "track": "swift",
         "language": "Swift"
       }
