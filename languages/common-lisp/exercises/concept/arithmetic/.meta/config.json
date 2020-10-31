@@ -8,5 +8,9 @@
       "github_username": "verdammelt",
       "exercism_username": "verdammelt"
     }
-  ]
+  ],
+  "editor": {
+    "solution_files": ["arithmetic.lisp"],
+    "test_files": ["arithmetic-test.lisp"]
+  }
 }
