@@ -31,7 +31,8 @@
         ]
       },
       {
-        "slug": "arithmetic",
+        "slug": "pizza-pi",
+	"name": "Pizza Pi"
         "uuid": "f78cff23-2106-4e35-b439-2d8bd2830770",
         "concepts": ["integers", "floating-point-numbers", "arithmetic"],
         "prerequisites": ["expressions"]

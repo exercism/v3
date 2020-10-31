@@ -1,9 +1,9 @@
-(defpackage arithmetic
+(defpackage pizza-pi
   (:use :cl)
   (:export :dough-calculator :pizzas-per-cube
            :size-from-sauce :fair-share-p))
 
-(in-package :arithmetic)
+(in-package :pizza-pi)
 
 (defun dough-calculator (pizzas diameter))
 
