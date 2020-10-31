@@ -5,7 +5,7 @@
             "runtests.jl"
         ],
         "solution_files": [
-            "boolean-logic.jl"
+            "game.jl"
         ]
     },
     "contributors": [

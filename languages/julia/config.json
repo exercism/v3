@@ -13,7 +13,7 @@
             {
                 "uuid": "39ebdd04-4f84-4817-bf9d-f1f9e066c283",
                 "name": "Lasagna",
-                "slug": "functions-introduction",
+                "slug": "lasagna",
                 "concepts": ["functions-introduction"],
                 "prerequisites": []
             },
@@ -27,7 +27,7 @@
             {
                 "uuid": "36cbda04-3921-4491-9ec6-76951f00aa00",
                 "name": "The Exercism Matrix",
-                "slug": "matrices-introduction",
+                "slug": "exercism-matrix",
                 "concepts": [
                     "matrices-introduction",
                     "matrices-concatenation",
