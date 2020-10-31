@@ -186,8 +186,8 @@
       {
         "track": "Julia",
         "slug": "julia",
-        "exercise": "matrices-introduction",
-        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/matrices-introduction/.docs/instructions.md"
+        "exercise": "exercism-matrix",
+        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/exercism-matrix/.docs/instructions.md"
       }
     ]
   },
@@ -491,8 +491,8 @@
       {
         "track": "Julia",
         "slug": "julia",
-        "exercise": "functions-introduction",
-        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/functions-introduction/.docs/instructions.md"
+        "exercise": "lasagna",
+        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/lasagna/.docs/instructions.md"
       },
       {
         "track": "Ruby",
