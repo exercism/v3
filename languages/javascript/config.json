@@ -20,7 +20,7 @@
       {
         "slug": "array-destructuring",
         "uuid": "d9b5cd13-2f2b-4034-a571-e66c847ed6f8",
-        "concepts": ["array-destructuring", "spread-elements", "rest-elements"],
+        "concepts": ["array-destructuring", "spread-operator", "rest-elements"],
         "prerequisites": ["arrays"]
       },
       {
