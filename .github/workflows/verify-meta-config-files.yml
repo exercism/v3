@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify-meta-config-files:
+    name: Verify .meta/config.json editor files
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: julia --project=.github/bin/verify-meta-config-files -e 'using Pkg; Pkg.instantiate()'
+
+      - name: Verify .meta/config.json files
+        run: julia --project=.github/bin/verify-meta-config-files .github/bin/verify-meta-config-files/verify-meta-config-files.jl
