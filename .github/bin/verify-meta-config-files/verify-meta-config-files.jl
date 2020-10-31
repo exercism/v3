@@ -12,12 +12,12 @@ Threads.@threads for cfg_path in glob("languages/*/exercises/concept/*/.meta/con
     try
         cfg = JSON.parsefile(cfg_path, use_mmap=false) # use_mmap=false makes it work on Windows
     catch e
-        @warn "$cfg_path is not a valid JSON file"# e
+        @warn "$cfg_path is not a valid JSON file" e
         continue
     end
 
     if !haskey(cfg, "editor")
-        @warn "$exercise has no editor settings" cfg
+        @warn "$exercise has no editor settings"# cfg
         continue
     end
 
