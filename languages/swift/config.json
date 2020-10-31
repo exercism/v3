@@ -88,6 +88,7 @@
         "concepts": ["arrays"],
         "prerequisites": ["conditionals"]
       },
+      {
         "slug": "optionals",
         "uuid": "9d0bb0ad-904c-4d61-9d2c-ae37913d5741",
         "concepts": ["optionals"],
