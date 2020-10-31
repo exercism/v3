@@ -1,10 +1,10 @@
 import XCTest
 
-@testable import loops
+@testable import MasterMixologist
 
 typealias DrinkTrack = (first: String, last: String, total: Int)?
 
-final class loopsTests: XCTestCase {
+final class MasterMixologistTests: XCTestCase {
   let runAll =
     Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"]) ?? false
 
