@@ -1,8 +1,8 @@
 import XCTest
 
-@testable import StructsAndClasses
+@testable import WindowingSystem
 
-final class StructsAndClassesTests: XCTestCase {
+final class WindowingSystemTests: XCTestCase {
   let runAll = Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"]) ?? false
 
   func testNewWindow() {
@@ -27,18 +27,22 @@ final class StructsAndClassesTests: XCTestCase {
     let newX = Int.random(in: 0...100)
     let newY = Int.random(in: 0...1000)
     pos.moveTo(newX: newX, newY: newY)
-    XCTAssertTrue(pos.x == newX && pos.y == newY, "Expected: Position(x: \(newX), \(newY)), got Position(x: \(pos.x), \(pos.y))")
+    XCTAssertTrue(
+      pos.x == newX && pos.y == newY,
+      "Expected: Position(x: \(newX), \(newY)), got Position(x: \(pos.x), \(pos.y))")
   }
-  
+
   func testResize() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     var size = Size()
     let newWidth = Int.random(in: 0...100)
     let newHeight = Int.random(in: 0...1000)
     size.resize(newWidth: newWidth, newHeight: newHeight)
-    XCTAssertTrue(size.width == newWidth && size.height == newHeight, "Expected: Size(x: \(newWidth), \(newHeight)), got Size(x: \(size.width), \(size.height))")
+    XCTAssertTrue(
+      size.width == newWidth && size.height == newHeight,
+      "Expected: Size(x: \(newWidth), \(newHeight)), got Size(x: \(size.width), \(size.height))")
   }
-  
+
   func testMoveValid() throws {
     try XCTSkipIf(true && !runAll)  // change true to false to run this test
     let testWindow: Window = {
