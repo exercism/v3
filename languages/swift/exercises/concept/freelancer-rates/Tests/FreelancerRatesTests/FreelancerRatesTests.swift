@@ -1,8 +1,8 @@
 import XCTest
 
-@testable import Numbers
+@testable import FreelancerRates
 
-final class NumbersTests: XCTestCase {
+final class FreelancerRatesTests: XCTestCase {
   let runAll = Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"]) ?? false
 
   func testdailyRateFrom() {
