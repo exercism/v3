@@ -52,6 +52,12 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "custom-signs",
+        "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
+        "concepts": ["strings-and-characters"],
+        "prerequisites": ["basics"]
+      },
+      {
         "slug": "enums",
         "uuid": "0a634d93-d073-4a2b-b6c4-1ba53c04b2bb",
         "concepts": ["enumerations"],
@@ -110,12 +116,6 @@
           "string-indexing"
         ],
         "prerequisites": ["arrays", "optionals"]
-      },
-      {
-        "slug": "strings-and-characters",
-        "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
-        "concepts": ["strings-and-characters"],
-        "prerequisites": ["basics"]
       },
       {
         "slug": "structs-and-classes",
