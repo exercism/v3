@@ -1,4 +1,8 @@
 // @ts-check
+//
+// The line above enables type checking for this file. Various IDEs interpret
+// the @ts-check directive. It will give you helpful autocompletion when 
+// implementing this exercise.
 
 /**
  * The day rate, given a rate per hour

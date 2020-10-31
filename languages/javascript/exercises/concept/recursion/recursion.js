@@ -1,3 +1,10 @@
+/// <reference path="./global.d.ts" />
+// @ts-check
+//
+// The lines above enable type checking for this file. Various IDEs interpret
+// the @ts-check and reference directives. Together, they give you helpful
+// autocompletion when implementing this exercise.
+
 /**
  * Determine the prize of the pizza given the pizza and optional extras
  *

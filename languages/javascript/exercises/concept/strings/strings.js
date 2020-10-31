@@ -1,4 +1,8 @@
 // @ts-check
+//
+// The line above enables type checking for this file. Various IDEs interpret
+// the @ts-check directive. It will give you helpful autocompletion when 
+// implementing this exercise.
 
 /**
  * Respond with the correct character, given the blurb, if this were said at
