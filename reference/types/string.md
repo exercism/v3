@@ -86,7 +86,7 @@ This exercise implements some phrases an eccentric party robot would say.
 [implementation-elixir]: ../../languages/elixir/exercises/concept/high-school-sweetheart/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/strings/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/strings/.docs/introduction.md
-[implementation-python]: ../../languages/python/exercises/concept/strings/.docs/introduction.md
+[implementation-python]: ../../languages/python/exercises/concept/processing-logs/.docs/introduction.md
 [implementation-go-pkg]: ../../languages/go/exercises/concept/strings-package/.docs/instructions.md
 [implementation-go]: ../../languages/go/exercises/concept/strings/.docs/instructions.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/strings/.docs/
