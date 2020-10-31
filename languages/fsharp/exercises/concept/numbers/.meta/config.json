@@ -5,5 +5,9 @@
       "exercism_username": "ErikSchierboom"
     }
   ],
-  "forked_from": ["csharp/numbers"]
+  "forked_from": ["csharp/numbers"],
+  "editor": {
+    "solution_files": ["Numbers.fs"],
+    "test_files": ["NumbersTests.fs"]
+  }
 }
