@@ -9,5 +9,4 @@
     "solution_files": ["lists.lisp"],
     "test_files": ["lists-test.lisp"]
   }
-
 }

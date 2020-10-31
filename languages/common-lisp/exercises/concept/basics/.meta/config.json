@@ -13,5 +13,4 @@
     "solution_files": ["basics.lisp"],
     "test_files": ["basics-test.lisp"]
   }
-
 }

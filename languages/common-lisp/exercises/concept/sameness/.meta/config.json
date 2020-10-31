@@ -13,5 +13,4 @@
     "solution_files": ["sameness.lisp"],
     "test_files": ["sameness-test.lisp"]
   }
-
 }
