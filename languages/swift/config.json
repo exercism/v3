@@ -52,19 +52,6 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "functions",
-        "uuid": "cd7e4e29-6b1e-41c9-8815-f3788e7727ce",
-        "concepts": [
-          "function-overloading",
-          "multiple-return-values",
-          "default-parameters",
-          "variadic-parameters",
-          "inout-parameters",
-          "nested-functions"
-        ],
-        "prerequisites": ["arrays", "conditionals", "tuples"]
-      },
-      {
         "slug": "high-score-board",
         "uuid": "74cb167d-7418-4327-9dd8-9852082127b0",
         "concepts": ["dictionaries"],
@@ -75,6 +62,19 @@
         "uuid": "eb8ccbb6-79af-4417-b934-e07fb496aaf2",
         "concepts": ["escaping-functions", "higher-order-functions"],
         "prerequisites": ["functions"]
+      },
+      {
+        "slug": "lasagna-master",
+        "uuid": "cd7e4e29-6b1e-41c9-8815-f3788e7727ce",
+        "concepts": [
+          "function-overloading",
+          "multiple-return-values",
+          "default-parameters",
+          "variadic-parameters",
+          "inout-parameters",
+          "nested-functions"
+        ],
+        "prerequisites": ["arrays", "conditionals", "tuples"]
       },
       {
         "slug": "master-mixologist",
