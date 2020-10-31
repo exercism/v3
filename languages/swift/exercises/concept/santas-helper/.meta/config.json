@@ -4,5 +4,9 @@
       "github_username": "wneumann",
       "exercism_username": "wneumann"
     }
-  ]
+  ],
+  "editor": {
+    "solution_files": ["Sources/SantasHelper/SantasHelper.swift"],
+    "test_files": ["Tests/SantasHelperTests/SantasHelperTests.swift"]
+  }
 }
