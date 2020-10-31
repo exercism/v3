@@ -71,6 +71,12 @@
         "prerequisites": ["arrays", "conditionals", "tuples"]
       },
       {
+        "slug": "high-score-board",
+        "uuid": "74cb167d-7418-4327-9dd8-9852082127b0",
+        "concepts": ["dictionaries"],
+        "prerequisites": ["functions", "optionals"]
+      },
+      {
         "slug": "higher-order-functions",
         "uuid": "eb8ccbb6-79af-4417-b934-e07fb496aaf2",
         "concepts": ["escaping-functions", "higher-order-functions"],

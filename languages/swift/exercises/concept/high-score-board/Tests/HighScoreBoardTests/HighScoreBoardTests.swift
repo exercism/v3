@@ -1,8 +1,8 @@
 import XCTest
 
-@testable import dictionaries
+@testable import HighScoreBoard
 
-final class dictionariesTests: XCTestCase {
+final class HighScoreBoardTests: XCTestCase {
   let runAll = Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"]) ?? false
 
   func testEmptyScores() {

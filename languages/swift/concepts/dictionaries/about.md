@@ -1,4 +1,4 @@
-Excellent work. As [dictionaries][dictionaries] are one of Swift's three primary collection types, knowing how to work with dictionaries is a big part of knowing how to program in Swift.
+As [dictionaries][dictionaries] are one of Swift's three primary collection types, knowing how to work with dictionaries is a big part of knowing how to program in Swift.
 
 ## Key Takeaways from this Exercise
 
