@@ -5,5 +5,9 @@
       "exercism_username": "mirkoperillo"
     }
   ],
+  "editor": {
+    "solution_files": ["src/main/java/Lasangna.java"],
+    "test_files": ["src/test/java/LasangnaTest.java"]
+  },
   "forked_from": ["csharp/basics"]
 }
