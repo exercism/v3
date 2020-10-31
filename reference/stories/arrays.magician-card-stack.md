@@ -33,7 +33,7 @@ This story can be continued to also teach array analysis:
 - Get the first odd card from the stack
 - Determine the position of the first card that is even
 
-This story can be continued to also teach array transformations: 
+This story can be continued to also teach array transformations:
 
 - Double every single card
 - Create multiple copies of every 3 found in the deck
