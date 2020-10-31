@@ -1,20 +1,20 @@
-;; Ensures that conditionals.lisp and the testing library are always loaded
+;; Ensures that pal-picker.lisp and the testing library are always loaded
 (eval-when (:compile-toplevel :load-toplevel :execute)
-  (load "conditionals")
+  (load "pal-picker")
   (ql:quickload :fiveam))
 
-;; Defines the testing package with symbols from conditionals and FiveAM in scope
+;; Defines the testing package with symbols from pal-picker and FiveAM in scope
 ;; The `run-tests` function is exported for use by both the user and test-runner
-(defpackage conditionals-test
-  (:use :cl :fiveam :conditionals)
+(defpackage pal-picker-test
+  (:use :cl :fiveam :pal-picker)
   (:export :run-tests))
 
 ;; Enter the testing package
-(in-package :conditionals-test)
+(in-package :pal-picker-test)
 
 ;; Define and enter a new FiveAM test-suite
-(def-suite conditionals-suite)
-(in-suite conditionals-suite)
+(def-suite pal-picker-suite)
+(in-suite pal-picker-suite)
 
 (test pick-a-pal "Maps personality traits to fitting pets"
   (is (string= (pal-picker :lazy) "Cat"))
@@ -60,5 +60,5 @@
 ;; results to the test runner. The default upon calling `(run-tests)` is to
 ;; explain the results in a human-readable way
 (defun run-tests (&optional (explain t))
-  (let ((tests (run 'conditionals-suite))) ; Run the tests once
+  (let ((tests (run 'pal-picker-suite))) ; Run the tests once
     (if explain (explain! tests) tests))) ; Optionally explain the results
