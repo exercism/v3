@@ -34,15 +34,9 @@
         "prerequisites": ["functions", "higher-order-functions", "loops"]
       },
       {
-        "slug": "conditionals",
-        "uuid": "6fa28581-0992-4770-a657-2bb5157db178",
-        "concepts": [
-          "booleans",
-          "conditionals-if",
-          "conditionals-guard",
-          "conditionals-switch",
-          "ternary-operator"
-        ],
+        "slug": "custom-signs",
+        "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
+        "concepts": ["strings-and-characters"],
         "prerequisites": ["basics"]
       },
       {
@@ -50,6 +44,12 @@
         "uuid": "0a634d93-d073-4a2b-b6c4-1ba53c04b2bb",
         "concepts": ["enumerations"],
         "prerequisites": ["string-components", "structs-and-classes"]
+      },
+      {
+        "slug": "freelancer-rates",
+        "uuid": "3bdad781-47e1-493a-834d-ca6ac8361ffd",
+        "concepts": ["numbers"],
+        "prerequisites": ["basics"]
       },
       {
         "slug": "functions",
@@ -88,13 +88,6 @@
         "concepts": ["arrays"],
         "prerequisites": ["conditionals"]
       },
-      {
-        "slug": "numbers",
-        "uuid": "3bdad781-47e1-493a-834d-ca6ac8361ffd",
-        "concepts": ["numbers"],
-        "prerequisites": ["basics"]
-      },
-      {
         "slug": "optionals",
         "uuid": "9d0bb0ad-904c-4d61-9d2c-ae37913d5741",
         "concepts": ["optionals"],
@@ -110,12 +103,6 @@
           "string-indexing"
         ],
         "prerequisites": ["arrays", "optionals"]
-      },
-      {
-        "slug": "strings-and-characters",
-        "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
-        "concepts": ["strings-and-characters"],
-        "prerequisites": ["basics"]
       },
       {
         "slug": "structs-and-classes",
@@ -135,6 +122,18 @@
         "uuid": "f371c072-082b-496b-aa58-45b6cba203f6",
         "concepts": ["tuples"],
         "prerequisites": ["arrays", "strings"]
+      },
+      {
+        "slug": "vehicle-purchase",
+        "uuid": "6fa28581-0992-4770-a657-2bb5157db178",
+        "concepts": [
+          "booleans",
+          "conditionals-if",
+          "conditionals-guard",
+          "conditionals-switch",
+          "ternary-operator"
+        ],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []

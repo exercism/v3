@@ -4,5 +4,9 @@
       "github_username": "ErikSchierboom",
       "exercism_username": "ErikSchierboom"
     }
-  ]
+  ],
+  "editor": {
+    "solution_files": ["Records.fs"],
+    "test_files": ["RecordsTests.fs"]
+  }
 }
