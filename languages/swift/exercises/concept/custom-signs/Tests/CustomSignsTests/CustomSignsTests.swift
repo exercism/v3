@@ -1,8 +1,8 @@
 import XCTest
 
-@testable import stringsAndCharacters
+@testable import CustomSigns
 
-final class stringsAndCharactersTests: XCTestCase {
+final class CustomSignsTests: XCTestCase {
   let runAll = Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"]) ?? false
 
   func testBirthday() {
