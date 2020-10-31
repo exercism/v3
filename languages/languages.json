@@ -1473,26 +1473,6 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpn-calculator",
-          "slug": "rpn-calculator",
-          "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
-              "name": "integers"
-            },
-            {
-              "url": null,
-              "name": "floating-point-numbers"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": null,
-              "name": "basics"
-            }
-          ]
-        },
-        {
           "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/log-level",
           "slug": "log-level",
           "concepts": [
@@ -3050,6 +3030,30 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-destructuring",
+          "slug": "array-destructuring",
+          "concepts": [
+            {
+              "url": null,
+              "name": "array-destructuring"
+            },
+            {
+              "url": null,
+              "name": "spread-operator"
+            },
+            {
+              "url": null,
+              "name": "rest-elements"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/arrays",
           "slug": "arrays",
           "concepts": [
@@ -3791,22 +3795,6 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/arrays",
-          "slug": "arrays",
-          "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
-              "name": "arrays"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
-              "name": "conditionals"
-            }
-          ]
-        },
-        {
           "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
           "slug": "basics",
           "concepts": [
@@ -3870,28 +3858,12 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
-          "slug": "conditionals",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/custom-signs",
+          "slug": "custom-signs",
           "concepts": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
-              "name": "booleans"
-            },
-            {
               "url": null,
-              "name": "conditionals-if"
-            },
-            {
-              "url": null,
-              "name": "conditionals-guard"
-            },
-            {
-              "url": null,
-              "name": "conditionals-switch"
-            },
-            {
-              "url": null,
-              "name": "ternary-operator"
+              "name": "strings-and-characters"
             }
           ],
           "prerequisites": [
@@ -3918,6 +3890,22 @@
             {
               "url": null,
               "name": "structs-and-classes"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/freelancer-rates",
+          "slug": "freelancer-rates",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
             }
           ]
         },
@@ -4026,24 +4014,24 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/numbers",
-          "slug": "numbers",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/magician-in-training",
+          "slug": "magician-in-training",
           "concepts": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
-              "name": "numbers"
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
             }
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
             }
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/optionals",
-          "slug": "optionals",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/pizza-slices",
+          "slug": "pizza-slices",
           "concepts": [
             {
               "url": null,
@@ -4090,22 +4078,6 @@
             {
               "url": null,
               "name": "optionals"
-            }
-          ]
-        },
-        {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/strings-and-characters",
-          "slug": "strings-and-characters",
-          "concepts": [
-            {
-              "url": null,
-              "name": "strings-and-characters"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": null,
-              "name": "basics"
             }
           ]
         },
@@ -4166,6 +4138,38 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
               "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
+          "slug": "vehicle-purchase",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            },
+            {
+              "url": null,
+              "name": "conditionals-if"
+            },
+            {
+              "url": null,
+              "name": "conditionals-guard"
+            },
+            {
+              "url": null,
+              "name": "conditionals-switch"
+            },
+            {
+              "url": null,
+              "name": "ternary-operator"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
             }
           ]
         }
