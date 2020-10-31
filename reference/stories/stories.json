@@ -248,8 +248,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "numbers",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/numbers/.docs/instructions.md"
+        "exercise": "freelancer-rates",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/freelancer-rates/.docs/instructions.md"
       }
     ]
   },
