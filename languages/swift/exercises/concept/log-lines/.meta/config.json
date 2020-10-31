@@ -5,5 +5,9 @@
       "exercism_username": "wneumann"
     }
   ],
+  "editor": {
+    "solution_files": ["Sources/LogLines/LogLines.swift"],
+    "test_files": ["Tests/LogLinesTests/LogLinesTests.swift"]
+  },
   "forked_from": ["csharp/enums"]
 }
