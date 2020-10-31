@@ -67,7 +67,7 @@
     "implementations": []
   },
   {
-    "url": "https://github.com/exercism/v3/blob/master/reference/stories/anonymous-functions.bomb-disarming.md",
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/anonymous-functions.bomb-defuser.md",
     "name": "Bomb Disarming",
     "description": "Hello again, Agent Double-Null0111.",
     "concept": {
@@ -78,8 +78,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "closures",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/closures/.docs/instructions.md"
+        "exercise": "bomb-defuser",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/bomb-defuser/.docs/instructions.md"
       }
     ]
   },
@@ -532,8 +532,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "enums",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/enums/.docs/instructions.md"
+        "exercise": "log-lines",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/log-lines/.docs/instructions.md"
       }
     ]
   },
@@ -941,8 +941,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "higher-order-functions",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/higher-order-functions/.docs/instructions.md"
+        "exercise": "secret-agent",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/secret-agent/.docs/instructions.md"
       }
     ]
   },
@@ -1097,8 +1097,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "structs-and-classes",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/structs-and-classes/.docs/instructions.md"
+        "exercise": "windowing-system",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/windowing-system/.docs/instructions.md"
       }
     ]
   }
