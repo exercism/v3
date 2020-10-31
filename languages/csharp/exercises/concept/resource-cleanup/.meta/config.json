@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Resource-cleanup.cs"],
-    "test_files": ["Resource-cleanupTests.cs"]
+    "solution_files": ["ResourceCleanup.cs"],
+    "test_files": ["ResourceCleanupTests.cs"]
   }
 }
