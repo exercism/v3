@@ -1,8 +1,8 @@
 import XCTest
 
-@testable import stringComponents
+@testable import PoetryClub
 
-final class StringsTests: XCTestCase {
+final class PoetryClubTests: XCTestCase {
   let runAll =
     Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"])
     ?? false

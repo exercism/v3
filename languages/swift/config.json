@@ -95,13 +95,7 @@
         "prerequisites": ["tuples", "conditionals"]
       },
       {
-        "slug": "santas-helper",
-        "uuid": "f371c072-082b-496b-aa58-45b6cba203f6",
-        "concepts": ["tuples"],
-        "prerequisites": ["arrays", "strings"]
-      },
-      {
-        "slug": "string-components",
+        "slug": "poetry-club",
         "uuid": "082d7aeb-ee25-4217-bd6f-82532a65797a",
         "concepts": [
           "importing",
@@ -110,6 +104,12 @@
           "string-indexing"
         ],
         "prerequisites": ["arrays", "optionals"]
+      },
+      {
+        "slug": "santas-helper",
+        "uuid": "f371c072-082b-496b-aa58-45b6cba203f6",
+        "concepts": ["tuples"],
+        "prerequisites": ["arrays", "strings"]
       },
       {
         "slug": "structs-and-classes",
