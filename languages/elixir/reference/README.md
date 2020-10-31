@@ -263,7 +263,7 @@ The concept exercises use the following concepts:
 | `agent`                          | Introduction to spawning processes using the Agent module functions.                                      |
 | `anonymous-functions`            | Intro to anonymous functions, functions as data                                                           |
 | `atoms`                          | Intro to Elixir atom type.                                                                                |
-| `basics`                         | Introduction to functions, modules, variables, returning values, integers, invoking functions.            |
+| `basics`                         | Introduction to functions, modules, variables, returning values, integers, strings, invoking functions.            |
 | `binaries`                       | Introduction to binaries as a specialization on the bitstring type, constructing and matching.            |
 | `bitstrings`                     | Introduction to bitstrings and constructing and matching on binary data.                                  |
 | `bit manipulation`               | Introduction to bit manipulation using the Bitwise module functions.                                      |
@@ -284,7 +284,6 @@ The concept exercises use the following concepts:
 | `pattern-matching`               | Basic knowledge of pattern matching using `=/2` and on function parameters.                               |
 | `recursion`                      | How to write basic recursive functions.                                                                   |
 | `regular-expressions`            | Basic regular expression patterns and the use of the `~r` sigil.                                          |
-| `string-literals`                | Introduction to strings in code enclosed by double quotes.                                                |
 | `strings`                        | How to do string processing, concatenation, interpolation, and multiline strings.                         |
 | `structs`                        | Intro to structs: definition, fields, enforcing keys.                                                     |
 | `tail-call-recursion`            | How to efficiently perform recursion in Elixir to manage function call stacks and use accumulators.       |
