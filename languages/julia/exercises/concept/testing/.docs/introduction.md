@@ -13,7 +13,7 @@ julia> using Test
 
 The `@test` macro[^1] is used for testing that the given expression evaluates to true:
 
-[^1]: For this exercise, you don't need to worry about the differences between macros and functions in Julia. All you need to know is that they take an expression as argument. Macros will be covered in more detail later in the track.<!--TODO: Check if there are actually exercises that cover macros before launch-->
+[^1]: For this exercise, you don't need to worry about the differences between macros and functions in Julia. All you need to know is that they take a boolean expression as argument. Macros will be covered in more detail later in the track.<!--TODO: Check if there are actually exercises that cover macros before launch-->
 
 ```julia
 julia> @test true
