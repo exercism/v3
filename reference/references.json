@@ -107,6 +107,23 @@
     ]
   },
   {
+    "name": "array-destructuring",
+    "variations": [
+      "array-destructuring",
+      "array-destructurings",
+      "array_destructuring"
+    ],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-destructuring",
+        "exercise": "array-destructuring",
+        "track": "javascript",
+        "language": "JavaScript"
+      }
+    ]
+  },
+  {
     "name": "arrays",
     "variations": ["arrays", "array"],
     "documents": [
@@ -129,8 +146,8 @@
         "language": "Ruby"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/arrays",
-        "exercise": "arrays",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/magician-in-training",
+        "exercise": "magician-in-training",
         "track": "swift",
         "language": "Swift"
       },
@@ -343,8 +360,8 @@
         "language": "Ruby"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
+        "exercise": "vehicle-purchase",
         "track": "swift",
         "language": "Swift"
       },
@@ -674,8 +691,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
+        "exercise": "vehicle-purchase",
         "track": "swift",
         "language": "Swift"
       }
@@ -699,8 +716,8 @@
         "language": "Java"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
+        "exercise": "vehicle-purchase",
         "track": "swift",
         "language": "Swift"
       }
@@ -722,8 +739,8 @@
         "language": "Go"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
+        "exercise": "vehicle-purchase",
         "track": "swift",
         "language": "Swift"
       }
@@ -1009,8 +1026,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
-        "exercise": "\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/emoji-times",
+        "exercise": "emoji-times",
         "track": "julia",
         "language": "Julia"
       }
@@ -1271,12 +1288,6 @@
         "exercise": "floating-point-numbers",
         "track": "fsharp",
         "language": "F#"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpn-calculator",
-        "exercise": "rpn-calculator",
-        "track": "elixir",
-        "language": "Elixir"
       }
     ]
   },
@@ -1595,12 +1606,6 @@
         "exercise": "arithmetic",
         "track": "common-lisp",
         "language": "Common Lisp"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpn-calculator",
-        "exercise": "rpn-calculator",
-        "track": "elixir",
-        "language": "Elixir"
       }
     ]
   },
@@ -2126,8 +2131,8 @@
         "language": "Rust"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/numbers",
-        "exercise": "numbers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/freelancer-rates",
+        "exercise": "freelancer-rates",
         "track": "swift",
         "language": "Swift"
       },
@@ -2247,8 +2252,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/optionals",
-        "exercise": "optionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/pizza-slices",
+        "exercise": "pizza-slices",
         "track": "swift",
         "language": "Swift"
       }
@@ -2639,6 +2644,19 @@
     ]
   },
   {
+    "name": "rest-elements",
+    "variations": ["rest-elements", "rest-element", "rest_elements"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-destructuring",
+        "exercise": "array-destructuring",
+        "track": "javascript",
+        "language": "JavaScript"
+      }
+    ]
+  },
+  {
     "name": "runes",
     "variations": ["runes", "rune"],
     "documents": [],
@@ -2731,6 +2749,19 @@
         "exercise": "slices",
         "track": "go",
         "language": "Go"
+      }
+    ]
+  },
+  {
+    "name": "spread-operator",
+    "variations": ["spread-operator", "spread-operators", "spread_operator"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-destructuring",
+        "exercise": "array-destructuring",
+        "track": "javascript",
+        "language": "JavaScript"
       }
     ]
   },
@@ -2909,8 +2940,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/strings-and-characters",
-        "exercise": "strings-and-characters",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/custom-signs",
+        "exercise": "custom-signs",
         "track": "swift",
         "language": "Swift"
       }
@@ -3061,8 +3092,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
+        "exercise": "vehicle-purchase",
         "track": "swift",
         "language": "Swift"
       }
@@ -3269,8 +3300,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
-        "exercise": "\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/emoji-times",
+        "exercise": "emoji-times",
         "track": "julia",
         "language": "Julia"
       }
