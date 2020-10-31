@@ -3242,8 +3242,8 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/functions-introduction",
-          "slug": "functions-introduction",
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/lasagna",
+          "slug": "lasagna",
           "concepts": [
             {
               "url": null,
@@ -3273,8 +3273,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
-          "slug": "matrices-introduction",
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
+          "slug": "exercism-matrix",
           "concepts": [
             {
               "url": null,
@@ -3910,8 +3910,48 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-          "slug": "functions",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/high-score-board",
+          "slug": "high-score-board",
+          "concepts": [
+            {
+              "url": null,
+              "name": "dictionaries"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": null,
+              "name": "optionals"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/higher-order-functions",
+          "slug": "higher-order-functions",
+          "concepts": [
+            {
+              "url": null,
+              "name": "escaping-functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/higher_order_functions.md",
+              "name": "higher-order-functions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+          "slug": "lasagna-master",
           "concepts": [
             {
               "url": null,
@@ -3950,46 +3990,6 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
               "name": "tuples"
-            }
-          ]
-        },
-        {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/high-score-board",
-          "slug": "high-score-board",
-          "concepts": [
-            {
-              "url": null,
-              "name": "dictionaries"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
-            },
-            {
-              "url": null,
-              "name": "optionals"
-            }
-          ]
-        },
-        {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/higher-order-functions",
-          "slug": "higher-order-functions",
-          "concepts": [
-            {
-              "url": null,
-              "name": "escaping-functions"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/higher_order_functions.md",
-              "name": "higher-order-functions"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
             }
           ]
         },
