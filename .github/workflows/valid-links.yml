@@ -4,7 +4,8 @@ on:
   push:
   pull_request:
   schedule:
-    - cron: '0 3 * * *'
+    - cron: "0 3 * * *"
+  workflow_dispatch:
 
 jobs:
   verify-links:
