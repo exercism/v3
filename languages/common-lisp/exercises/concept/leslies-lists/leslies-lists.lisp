@@ -1,4 +1,4 @@
-(defpackage lists
+(defpackage leslies-lists
   (:use :cl)
   (:export :new-list
            :list-of-things
@@ -14,7 +14,7 @@
            :part-of-list
            :list-reverse))
 
-(in-package :lists)
+(in-package :leslies-lists)
 
 (defun new-list () 'this-is-wrong)
 

@@ -172,8 +172,9 @@
         ]
       },
       {
-        "slug": "lists",
-        "uuid": null,
+        "slug": "leslies-lists",
+	"name": "Leslie's Lengthy Lists",
+        "uuid": "fd1aaa1a-f3c0-419e-a713-761c5147a5e1",
         "concepts": ["lists"],
         "prerequisites": ["cons", "symbols", "arithmetic"]
       },
