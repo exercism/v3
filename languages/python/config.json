@@ -11,36 +11,118 @@
   "exercises": {
     "concept": [
       {
-        "slug": "strings",
+        "slug": "processing-logs",
+        "name": "Processing Logs",
         "uuid": "5a9b42fb-ddf4-424b-995d-f9952ea63c37",
         "concepts": ["strings"],
-        "prerequisites": ["functions"]
+        "prerequisites": ["basics"]
       },
       {
-        "slug": "tuples",
+        "slug": "tisbury-treasure-hunt",
+        "name": "Tisbury Treasure Hunt",
         "uuid": "7ecd42c1-2ed5-487a-bc89-71c9cbad9b05",
         "concepts": ["tuples"],
-        "prerequisites": [
-          "bools",
-          "for-loops",
-          "functions",
-          "if-keyword",
-          "in-keyword",
-          "integers",
-          "return-keyword"
-        ]
+        "prerequisites": ["basics", "bools", "loops", "conditionals", "numbers"]
       },
       {
-        "slug": "basics",
+        "slug": "guidos-gorgeous-lasagna",
+        "name": "Guido's Gorgeous Lasanga",
         "uuid": "dfd7dc01-3544-4f61-a063-af8530d6e601",
         "concepts": ["basics"],
         "prerequisites": []
       },
       {
-        "slug": "bools",
+        "slug": "ghost-gobble-arcade-game",
+        "name": "Ghost Gobble Arcade Game",
         "uuid": "c050470d-ef22-4187-aaac-239e07955a4d",
         "concepts": ["bools"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "inventory-management",
+        "name": "Inventory Management",
+        "uuid": null,
+        "concepts": ["dicts"],
+        "prerequisites": ["basics", "bools", "loops", "numbers", "lists"]
+      },
+      {
+        "slug": "log-levels",
+        "name": "Log Levels",
+        "uuid": null,
+        "concepts": ["enums"],
+        "prerequisites": [
+          "basics",
+          "classes",
+          "conditionals",
+          "enumeration",
+          "indexing",
+          "iteration",
+          "list-comprehensions",
+          "loops",
+          "methods",
+          "sequences",
+          "slicing",
+          "strings",
+          "string-formatting",
+          "string-methods",
+          "tuples"
+        ]
+      },
+      {
+        "slug": "elyses-enchantment-exercises",
+        "name": "Elyse's Enchantment Exercises",
+        "uuid": null,
+        "concepts": ["lists"],
+        "prerequisites": [
+          "basics",
+          "comparisons",
+          "conditionals",
+          "lists",
+          "strings"
+        ]
+      },
+      {
+        "slug": "chaitanas-colossal-coaster",
+        "name": "Chaitana's Colossal Coaster",
+        "uuid": null,
+        "concepts": ["list-methods"],
+        "prerequisites": [
+          "basics",
+          "comparisons",
+          "conditionals",
+          "lists",
+          "strings"
+        ]
+      },
+      {
+        "slug": "restaurant-rozalynn",
+        "name": "Restaurant Rozalynn",
+        "uuid": null,
+        "concepts": ["none"],
+        "prerequisites": [
+          "basics",
+          "bools",
+          "conditionals",
+          "default-arguments",
+          "dicts",
+          "dict-methods",
+          "lists",
+          "list-methods",
+          "loops"
+        ]
+      },
+      {
+        "slug": "making-the-grade",
+        "name": "Making the Grade",
+        "uuid": null,
+        "concepts": ["loops"],
+        "prerequisites": [
+          "basics",
+          "comparisons",
+          "conditionals",
+          "lists",
+          "strings"
+        ]
       }
     ],
     "practice": []
