@@ -5,5 +5,9 @@
       "exercism_username": "ErikSchierboom"
     }
   ],
-  "forked_from": ["csharp/strings"]
+  "forked_from": ["csharp/strings"],
+  "editor": {
+    "solution_files": ["Strings.fs"],
+    "test_files": ["StringsTests.fs"]
+  }
 }
