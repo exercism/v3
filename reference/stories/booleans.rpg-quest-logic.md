@@ -37,6 +37,10 @@ These are recommendations, not rules, for recurring terminology in the instructi
 - [JavaScript: booleans][implementation-javascript] (reference implementation)
 - [Julia: boolean-logic][implementation-julia]
 
+## Name suggestions
+
+- [Annalyn's Analytical Avenge Attempt][implementation-julia]
+
 ## Related
 
 - [`types/boolean`][types-boolean]
