@@ -44,4 +44,4 @@ Terms used in the story:
 [types-boolean]: ../types/boolean.md
 [concepts-boolean_logic]: ../concepts/boolean_logic.md
 [implementation-elixir]: ../../languages/elixir/exercises/concept/pacman-rules/.docs/instructions.md
-[implementation-python]: ../../languages/python/exercises/concept/bools/.docs/instructions.md
+[implementation-python]: ../../languages/python/exercises/concept/host-gobble-arcade-game/.docs/instructions.md
