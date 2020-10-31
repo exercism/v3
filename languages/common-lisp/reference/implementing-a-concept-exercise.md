@@ -86,7 +86,7 @@ _Skip this step if you're not sure what to do._
 ## Inspiration
 
 When implementing an exercise, it can be very useful to look at
-already implemented Common Lisp exercises like [`basics`][basics].
+already implemented Common Lisp exercises like [`socks-and-sexprs`][socks-and-sexprs].
 
 You can also check the exercise's [general concepts
 documents][reference] to see if other languages have already
@@ -106,5 +106,5 @@ post them as comments in the exercise's GitHub issue.
 [docs-features-of-v3]: ../../../docs/features-of-v3.md
 [anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
 [reference]: ../../../reference
-[basics]: ../exercises/concept/basics
+[socks-and-sexprs]: ../exercises/concept/socks-and-sexprs
 [scaffolder]: ../bin/generate-scaffolding/README.md
