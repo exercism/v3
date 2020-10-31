@@ -1,6 +1,6 @@
-import EnumsTests
+import LogLinesTests
 import XCTest
 
 var tests = [XCTestCaseEntry]()
-tests += EnumsTests.allTests()
+tests += LogLinesTests.allTests()
 XCTMain(tests)
