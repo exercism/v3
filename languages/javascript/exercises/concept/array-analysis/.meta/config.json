@@ -11,11 +11,7 @@
     }
   ],
   "editor": {
-    "solution_files": [
-      "array-analysis.js"
-    ],
-    "test_files": [
-      "array-analysis.spec.js"
-    ]
+    "solution_files": ["array-analysis.js"],
+    "test_files": ["array-analysis.spec.js"]
   }
 }

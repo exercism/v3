@@ -16,11 +16,7 @@
     }
   ],
   "editor": {
-    "solution_files": [
-      "booleans.js"
-    ],
-    "test_files": [
-      "booleans.spec.js"
-    ]
+    "solution_files": ["booleans.js"],
+    "test_files": ["booleans.spec.js"]
   }
 }

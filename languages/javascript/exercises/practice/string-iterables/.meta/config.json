@@ -6,11 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": [
-      "string-iterables.js"
-    ],
-    "test_files": [
-      "string-iterables.spec.js"
-    ]
+    "solution_files": ["string-iterables.js"],
+    "test_files": ["string-iterables.spec.js"]
   }
 }

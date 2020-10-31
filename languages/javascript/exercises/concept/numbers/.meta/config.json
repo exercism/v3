@@ -6,11 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": [
-      "numbers.js"
-    ],
-    "test_files": [
-      "numbers.spec.js"
-    ]
+    "solution_files": ["numbers.js"],
+    "test_files": ["numbers.spec.js"]
   }
 }

@@ -6,11 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": [
-      "closures.js"
-    ],
-    "test_files": [
-      "closures.spec.js"
-    ]
+    "solution_files": ["closures.js"],
+    "test_files": ["closures.spec.js"]
   }
 }

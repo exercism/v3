@@ -6,11 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": [
-      "promises.js"
-    ],
-    "test_files": [
-      "promises.spec.js"
-    ]
+    "solution_files": ["promises.js"],
+    "test_files": ["promises.spec.js"]
   }
 }
