@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Sources/Lasagna/Lasagna.swift"],
-    "test_files": ["Tests/LasagnaTests/LasagnaTests.swift"]
+    "solution_files": ["Sources/CustomSigns/CustomSigns.swift"],
+    "test_files": ["Tests/CustomSignsTests/CustomSignsTests.swift"]
   }
 }
