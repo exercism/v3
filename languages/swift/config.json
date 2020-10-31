@@ -28,12 +28,6 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "enums",
-        "uuid": "0a634d93-d073-4a2b-b6c4-1ba53c04b2bb",
-        "concepts": ["enumerations"],
-        "prerequisites": ["string-components", "structs-and-classes"]
-      },
-      {
         "slug": "freelancer-rates",
         "uuid": "3bdad781-47e1-493a-834d-ca6ac8361ffd",
         "concepts": ["numbers"],
@@ -69,6 +63,12 @@
           "nested-functions"
         ],
         "prerequisites": ["arrays", "conditionals", "tuples"]
+      },
+      {
+        "slug": "log-lines",
+        "uuid": "0a634d93-d073-4a2b-b6c4-1ba53c04b2bb",
+        "concepts": ["enumerations"],
+        "prerequisites": ["string-components", "structs-and-classes"]
       },
       {
         "slug": "master-mixologist",

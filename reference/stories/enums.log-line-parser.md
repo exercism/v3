@@ -31,4 +31,4 @@ These are example tasks that fit the log line parser:
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/enums/.docs/instructions.md
 [implementation-rust]: ../../languages/rust/exercises/concept/enums/.docs/instructions.md
-[implementation-swift]: ../../languages/swift/exercises/concept/enums/.docs/instructions.md
+[implementation-swift]: ../../languages/swift/exercises/concept/log-lines/.docs/instructions.md
