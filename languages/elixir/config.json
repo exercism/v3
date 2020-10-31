@@ -23,7 +23,7 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "rpn-calculator",
+        "slug": "freelancer-rate",
         "uuid": "fee79e03-1496-476f-964f-e60632cb13dc",
         "concepts": ["integers", "floating-point-numbers"],
         "prerequisites": ["basics"]
@@ -121,6 +121,7 @@
       },
       {
         "slug": "dna-encoding",
+        "name": "DNA Encoding",
         "uuid": "994c8760-8a58-4ef3-8a28-a0f9182f4d9f",
         "concepts": ["bitstrings", "tail-call-recursion"],
         "prerequisites": ["charlists", "recursion", "pattern-matching"]
@@ -140,6 +141,7 @@
       },
       {
         "slug": "rpn-calculator",
+        "name": "RPN Calculator",
         "uuid": "f660a2e1-bb50-4626-8d3f-6cd7c44fa8db",
         "concepts": ["errors", "try-rescue"],
         "prerequisites": ["anonymous-functions", "pattern-matching", "structs"]
@@ -171,18 +173,21 @@
       },
       {
         "slug": "rpn-calculator-output",
+        "name": "RPN Calculator Output",
         "uuid": "68a8f721-5db4-4b31-95c8-fa6c38f64327",
         "concepts": ["try-rescue-else-after", "dynamic-dispatch"],
         "prerequisites": ["io", "try-rescue"]
       },
       {
         "slug": "take-a-number",
+        "name": "Take-A-Number",
         "uuid": "bec0b00f-816e-443a-af94-14ab4125e505",
         "concepts": ["processes", "pids"],
         "prerequisites": ["atoms", "recursion", "pattern-matching", "tuples"]
       },
       {
         "slug": "mensch-aergere-dich-nicht",
+        "name": "Mensch Ärgere Dich Nicht",
         "uuid": "3e2f8bc6-20b4-4e8f-a658-9c270342208e",
         "concepts": ["streams", "pipe-operator", "ranges"],
         "prerequisites": ["enum", "tuples", "if"]

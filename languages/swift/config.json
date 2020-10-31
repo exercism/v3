@@ -40,10 +40,22 @@
         "prerequisites": ["functions", "higher-order-functions", "loops"]
       },
       {
+        "slug": "custom-signs",
+        "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
+        "concepts": ["strings-and-characters"],
+        "prerequisites": ["basics"]
+      },
+      {
         "slug": "enums",
         "uuid": "0a634d93-d073-4a2b-b6c4-1ba53c04b2bb",
         "concepts": ["enumerations"],
         "prerequisites": ["string-components", "structs-and-classes"]
+      },
+      {
+        "slug": "freelancer-rates",
+        "uuid": "3bdad781-47e1-493a-834d-ca6ac8361ffd",
+        "concepts": ["numbers"],
+        "prerequisites": ["basics"]
       },
       {
         "slug": "functions",
@@ -77,12 +89,6 @@
         "prerequisites": ["arrays", "optionals", "tuples"]
       },
       {
-        "slug": "numbers",
-        "uuid": "3bdad781-47e1-493a-834d-ca6ac8361ffd",
-        "concepts": ["numbers"],
-        "prerequisites": ["basics"]
-      },
-      {
         "slug": "optionals",
         "uuid": "9d0bb0ad-904c-4d61-9d2c-ae37913d5741",
         "concepts": ["optionals"],
@@ -98,12 +104,6 @@
           "string-indexing"
         ],
         "prerequisites": ["arrays", "optionals"]
-      },
-      {
-        "slug": "strings-and-characters",
-        "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
-        "concepts": ["strings-and-characters"],
-        "prerequisites": ["basics"]
       },
       {
         "slug": "structs-and-classes",
