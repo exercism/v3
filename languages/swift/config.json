@@ -71,12 +71,6 @@
         "prerequisites": ["arrays", "conditionals", "tuples"]
       },
       {
-        "slug": "higher-order-functions",
-        "uuid": "eb8ccbb6-79af-4417-b934-e07fb496aaf2",
-        "concepts": ["escaping-functions", "higher-order-functions"],
-        "prerequisites": ["functions"]
-      },
-      {
         "slug": "loops",
         "uuid": "a11dc279-0c0a-4dca-89c6-f0abbac265c8",
         "concepts": [
@@ -99,6 +93,12 @@
         "uuid": "9d0bb0ad-904c-4d61-9d2c-ae37913d5741",
         "concepts": ["optionals"],
         "prerequisites": ["tuples", "conditionals"]
+      },
+      {
+        "slug": "secret-agent",
+        "uuid": "eb8ccbb6-79af-4417-b934-e07fb496aaf2",
+        "concepts": ["escaping-functions", "higher-order-functions"],
+        "prerequisites": ["functions"]
       },
       {
         "slug": "string-components",

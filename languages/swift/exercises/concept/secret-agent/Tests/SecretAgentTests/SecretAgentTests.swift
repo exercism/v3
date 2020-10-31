@@ -1,8 +1,8 @@
 import XCTest
 
-@testable import HigherOrderFunctions
+@testable import SecretAgent
 
-final class HigherOrderFunctionsTests: XCTestCase {
+final class SecretAgentTests: XCTestCase {
   let runAll = Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"]) ?? false
   let protected = protectSecret(
     "UMBRA will fill everyone's sugar bowls with salt!", withPassword: "P455w0rd")
