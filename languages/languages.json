@@ -1473,26 +1473,6 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpn-calculator",
-          "slug": "rpn-calculator",
-          "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
-              "name": "integers"
-            },
-            {
-              "url": null,
-              "name": "floating-point-numbers"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": null,
-              "name": "basics"
-            }
-          ]
-        },
-        {
           "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/log-level",
           "slug": "log-level",
           "concepts": [
@@ -3050,6 +3030,30 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-destructuring",
+          "slug": "array-destructuring",
+          "concepts": [
+            {
+              "url": null,
+              "name": "array-destructuring"
+            },
+            {
+              "url": null,
+              "name": "spread-operator"
+            },
+            {
+              "url": null,
+              "name": "rest-elements"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/arrays",
           "slug": "arrays",
           "concepts": [
@@ -3922,6 +3926,22 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/freelancer-rates",
+          "slug": "freelancer-rates",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
           "slug": "functions",
           "concepts": [
@@ -4022,22 +4042,6 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
               "name": "tuples"
-            }
-          ]
-        },
-        {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/numbers",
-          "slug": "numbers",
-          "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
-              "name": "numbers"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": null,
-              "name": "basics"
             }
           ]
         },
