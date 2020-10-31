@@ -16,4 +16,4 @@ jobs:
         run: julia --project=.github/bin/verify-meta-config-files -e 'using Pkg; Pkg.instantiate()'
 
       - name: Verify .meta/config.json files
-        run: julia --project=.github/bin/verify-meta-config-files .github/bin/verify-meta-config-files/verify-meta-config-files.jl
+        run: julia --project=.github/bin/verify-meta-config-files --color=yes .github/bin/verify-meta-config-files/verify-meta-config-files.jl
