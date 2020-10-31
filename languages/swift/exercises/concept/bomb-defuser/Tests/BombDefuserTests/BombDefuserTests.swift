@@ -1,8 +1,8 @@
 import XCTest
 
-@testable import closures
+@testable import BombDefuser
 
-final class closuresTests: XCTestCase {
+final class BombDefuserTests: XCTestCase {
   let runAll = Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"]) ?? false
   let stringify = { (tuple: (String, String, String)) in "\(tuple)" }
 
@@ -64,13 +64,3 @@ final class closuresTests: XCTestCase {
     ("testShuffle3", testShuffle3),
   ]
 }
-
-//let collatzGenerator = { (n: Int) -> (base: Int, value: Int) in
-//  (base: n.isMultiple(of: 2) ? n / 2 : 3 * n + 1, value: n)
-//}
-//
-//let stopAtOne = { (n: Int) -> Bool in n == 1 }
-//
-//let collatz = { (n: Int) -> [Int] in
-//  unroll(n, generator: collatzGenerator, stop: stopAtOne)
-//}

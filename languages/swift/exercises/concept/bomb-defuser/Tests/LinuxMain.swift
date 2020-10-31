@@ -1,6 +1,6 @@
+import BombDefuserTests
 import XCTest
-import closuresTests
 
 var tests = [XCTestCaseEntry]()
-tests += closuresTests.allTests()
+tests += BombDefuserTests.allTests()
 XCTMain(tests)
