@@ -51,8 +51,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "loops",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/loops/.docs/instructions.md"
+        "exercise": "master-mixologist",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/master-mixologist/.docs/instructions.md"
       }
     ]
   },
@@ -118,8 +118,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "strings-and-characters",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/strings-and-characters/.docs/instructions.md"
+        "exercise": "custom-signs",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/custom-signs/.docs/instructions.md"
       }
     ]
   },
@@ -182,7 +182,14 @@
       "url": null,
       "name": "matrices"
     },
-    "implementations": []
+    "implementations": [
+      {
+        "track": "Julia",
+        "slug": "julia",
+        "exercise": "matrices-introduction",
+        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/matrices-introduction/.docs/instructions.md"
+      }
+    ]
   },
   {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/enumerable.fashion-boutique.md",
@@ -248,8 +255,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "numbers",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/numbers/.docs/instructions.md"
+        "exercise": "freelancer-rates",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/freelancer-rates/.docs/instructions.md"
       }
     ]
   },
@@ -605,10 +612,22 @@
         "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/array-analysis/.docs/instructions.md"
       },
       {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "array-destructuring",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/array-destructuring/.docs/instructions.md"
+      },
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "array-transformations",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/array-transformations/.docs/instructions.md"
+      },
+      {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "arrays",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/arrays/.docs/instructions.md"
+        "exercise": "magician-in-training",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/magician-in-training/.docs/instructions.md"
       }
     ]
   },
@@ -699,8 +718,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "optionals",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/optionals/.docs/instructions.md"
+        "exercise": "pizza-slices",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/pizza-slices/.docs/instructions.md"
       }
     ]
   },
@@ -882,8 +901,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "tuples",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/tuples/.docs/instructions.md"
+        "exercise": "santas-helper",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/santas-helper/.docs/instructions.md"
       }
     ]
   },
@@ -1010,8 +1029,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "conditionals",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/conditionals/.docs/instructions.md"
+        "exercise": "vehicle-purchase",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/vehicle-purchase/.docs/instructions.md"
       }
     ]
   },
