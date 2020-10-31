@@ -55,4 +55,4 @@ jq 'del(.foregone)
 
 Exercises may contain the following new keys:
 
-- `name`: The title of the exercise if it differs from the titleised slug (optional)
+- `name`: The title of the exercise if it differs from the titleised slug
