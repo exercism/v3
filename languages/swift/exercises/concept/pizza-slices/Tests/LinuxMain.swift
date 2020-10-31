@@ -1,6 +1,6 @@
-import OptionalsTests
+import PizzaSlicesTests
 import XCTest
 
 var tests = [XCTestCaseEntry]()
-tests += OptionalsTests.allTests()
+tests += PizzaSlicesTests.allTests()
 XCTMain(tests)

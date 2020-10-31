@@ -1,8 +1,8 @@
 import XCTest
 
-@testable import Optionals
+@testable import PizzaSlices
 
-final class OptionalsTests: XCTestCase {
+final class PizzaSlicesTests: XCTestCase {
   let runAll = Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"]) ?? false
 
   func testSliceNormal() throws {
