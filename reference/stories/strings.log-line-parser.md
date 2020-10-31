@@ -40,5 +40,5 @@ These are example tasks that fit the log line parser:
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/strings/.docs/instructions.md
 [implementation-go]: ../../languages/go/exercises/concept/strings-package/.docs/instructions.md
 [implementation-java]: ../../languages/java/exercises/concept/strings/.docs/instructions.md
-[implementation-python]: ../../languages/python/exercises/concept/strings/.docs/instructions.md
+[implementation-python]: ../../languages/python/exercises/concept/processing-logs/.docs/instructions.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/strings/.docs/instructions.md
