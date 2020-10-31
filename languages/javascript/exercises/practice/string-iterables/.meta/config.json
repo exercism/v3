@@ -4,5 +4,13 @@
       "github_username": "SleeplessByte",
       "exercism_username": "SleeplessByte"
     }
-  ]
+  ],
+  "editor": {
+    "solution_files": [
+      "string-iterables.js"
+    ],
+    "test_files": [
+      "string-iterables.spec.js"
+    ]
+  }
 }
