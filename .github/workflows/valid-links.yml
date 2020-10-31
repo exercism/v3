@@ -14,17 +14,16 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
       - run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git fetch origin master
           git merge origin/master
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '10'
-      - name: Install markdown-link-check
-        run: npm install -g markdown-link-check
+          
+      - name: Install MarkdownLinkChecker
+        run: dotnet tool install -g markdownlinkchecker
+
       - name: Verify links
         run: |
           deleted_or_renamed=$(git diff --no-commit-id --name-only --diff-filter DR origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | wc -l)
@@ -36,22 +35,4 @@ jobs:
               files=$(git diff --no-commit-id --name-only --diff-filter AM origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | cat)
           fi
 
-          set +e
-          exitCode=0
-
-          for file in $files; do
-            if [ -f "$file" ]
-            then
-                # Skip auto-generated files
-                if [[ "$file" =~ "languages/README.md" ||
-                      "$file" =~ "reference/README.md" ||
-                      "$file" =~ "reference/stories/README.md" ]]
-                then
-                  continue
-                fi
-
-                markdown-link-check -q -c .github/markdown-link-check-config.json "$file"
-                exitCode=$((exitCode + $?))
-            fi
-          done
-          exit "$exitCode"
+          dotnet markdownlinkchecker -v detailed -f "$files"
