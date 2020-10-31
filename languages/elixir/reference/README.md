@@ -263,7 +263,7 @@ The concept exercises use the following concepts:
 | `agent`                          | Introduction to spawning processes using the Agent module functions.                                      |
 | `anonymous-functions`            | Intro to anonymous functions, functions as data                                                           |
 | `atoms`                          | Intro to Elixir atom type.                                                                                |
-| `basics`                         | Introduction to functions, modules, variables, returning values, integers, strings, invoking functions.            |
+| `basics`                         | Introduction to functions, modules, variables, returning values, integers, strings, invoking functions.   |
 | `binaries`                       | Introduction to binaries as a specialization on the bitstring type, constructing and matching.            |
 | `bitstrings`                     | Introduction to bitstrings and constructing and matching on binary data.                                  |
 | `bit manipulation`               | Introduction to bit manipulation using the Bitwise module functions.                                      |
