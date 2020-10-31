@@ -3795,42 +3795,6 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
-          "slug": "closures",
-          "concepts": [
-            {
-              "url": null,
-              "name": "capturing"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/closures.md",
-              "name": "closures"
-            },
-            {
-              "url": null,
-              "name": "shorthand-arguments"
-            },
-            {
-              "url": null,
-              "name": "trailing-closures"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/higher_order_functions.md",
-              "name": "higher-order-functions"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
-              "name": "loops"
-            }
-          ]
-        },
-        {
           "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/custom-signs",
           "slug": "custom-signs",
           "concepts": [
@@ -3843,26 +3807,6 @@
             {
               "url": null,
               "name": "basics"
-            }
-          ]
-        },
-        {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/enums",
-          "slug": "enums",
-          "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/enumeration.md",
-              "name": "enumerations"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": null,
-              "name": "string-components"
-            },
-            {
-              "url": null,
-              "name": "structs-and-classes"
             }
           ]
         },
@@ -3899,26 +3843,6 @@
             {
               "url": null,
               "name": "optionals"
-            }
-          ]
-        },
-        {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/higher-order-functions",
-          "slug": "higher-order-functions",
-          "concepts": [
-            {
-              "url": null,
-              "name": "escaping-functions"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/higher_order_functions.md",
-              "name": "higher-order-functions"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
             }
           ]
         },
@@ -3990,6 +3914,26 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
               "name": "tuples"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/log-lines",
+          "slug": "log-lines",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/enumeration.md",
+              "name": "enumerations"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "string-components"
+            },
+            {
+              "url": null,
+              "name": "structs-and-classes"
             }
           ]
         },
@@ -4122,8 +4066,60 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/structs-and-classes",
-          "slug": "structs-and-classes",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/secret-agent",
+          "slug": "secret-agent",
+          "concepts": [
+            {
+              "url": null,
+              "name": "escaping-functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/higher_order_functions.md",
+              "name": "higher-order-functions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
+          "slug": "vehicle-purchase",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            },
+            {
+              "url": null,
+              "name": "conditionals-if"
+            },
+            {
+              "url": null,
+              "name": "conditionals-guard"
+            },
+            {
+              "url": null,
+              "name": "conditionals-switch"
+            },
+            {
+              "url": null,
+              "name": "ternary-operator"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/windowing-system",
+          "slug": "windowing-system",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
@@ -4158,38 +4154,6 @@
             {
               "url": null,
               "name": "function-overloading"
-            }
-          ]
-        },
-        {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
-          "slug": "vehicle-purchase",
-          "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
-              "name": "booleans"
-            },
-            {
-              "url": null,
-              "name": "conditionals-if"
-            },
-            {
-              "url": null,
-              "name": "conditionals-guard"
-            },
-            {
-              "url": null,
-              "name": "conditionals-switch"
-            },
-            {
-              "url": null,
-              "name": "ternary-operator"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": null,
-              "name": "basics"
             }
           ]
         }
