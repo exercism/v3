@@ -27,7 +27,7 @@ These are example tasks that fit the log line parser:
 
 - [C#: enums][implementation-csharp] (reference implementation)
 - [Rust: enums][implementation-rust]
-- [Python: enums][implementation-python]
+- [Python: log-levels][implementation-python]
 - [Swift: enums][implementation-swift]
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/enums/.docs/instructions.md
