@@ -25,4 +25,4 @@ These are example tasks that fit the story of a customer designing a custom sign
 
 [types-string]: ../types/string.md
 [types-character]: ../types/character.md
-[implementation-swift]: ../../languages/swift/exercises/concept/strings-and-characters/.docs/instructions.md
+[implementation-swift]: ../../languages/swift/exercises/concept/custom-signs/.docs/instructions.md

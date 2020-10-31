@@ -11,12 +11,6 @@
   "exercises": {
     "concept": [
       {
-        "slug": "arrays",
-        "uuid": "e6143dbc-895e-47aa-b42c-3034e1f872c2",
-        "concepts": ["arrays"],
-        "prerequisites": ["conditionals"]
-      },
-      {
         "slug": "basics",
         "uuid": "44ae5892-40a5-4483-a181-28e1c38645d6",
         "concepts": [
@@ -40,15 +34,9 @@
         "prerequisites": ["functions", "higher-order-functions", "loops"]
       },
       {
-        "slug": "conditionals",
-        "uuid": "6fa28581-0992-4770-a657-2bb5157db178",
-        "concepts": [
-          "booleans",
-          "conditionals-if",
-          "conditionals-guard",
-          "conditionals-switch",
-          "ternary-operator"
-        ],
+        "slug": "custom-signs",
+        "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
+        "concepts": ["strings-and-characters"],
         "prerequisites": ["basics"]
       },
       {
@@ -56,6 +44,12 @@
         "uuid": "0a634d93-d073-4a2b-b6c4-1ba53c04b2bb",
         "concepts": ["enumerations"],
         "prerequisites": ["string-components", "structs-and-classes"]
+      },
+      {
+        "slug": "freelancer-rates",
+        "uuid": "3bdad781-47e1-493a-834d-ca6ac8361ffd",
+        "concepts": ["numbers"],
+        "prerequisites": ["basics"]
       },
       {
         "slug": "functions",
@@ -89,10 +83,10 @@
         "prerequisites": ["arrays", "optionals", "tuples"]
       },
       {
-        "slug": "numbers",
-        "uuid": "3bdad781-47e1-493a-834d-ca6ac8361ffd",
-        "concepts": ["numbers"],
-        "prerequisites": ["basics"]
+        "slug": "magician-in-training",
+        "uuid": "e6143dbc-895e-47aa-b42c-3034e1f872c2",
+        "concepts": ["arrays"],
+        "prerequisites": ["conditionals"]
       },
       {
         "slug": "optionals",
@@ -118,12 +112,6 @@
         "prerequisites": ["arrays", "optionals"]
       },
       {
-        "slug": "strings-and-characters",
-        "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
-        "concepts": ["strings-and-characters"],
-        "prerequisites": ["basics"]
-      },
-      {
         "slug": "structs-and-classes",
         "uuid": "bfb16db1-f419-48e9-91bc-defebc0ae9ac",
         "concepts": [
@@ -135,6 +123,18 @@
           "stored-properties"
         ],
         "prerequisites": ["functions", "function-overloading"]
+      },
+      {
+        "slug": "vehicle-purchase",
+        "uuid": "6fa28581-0992-4770-a657-2bb5157db178",
+        "concepts": [
+          "booleans",
+          "conditionals-if",
+          "conditionals-guard",
+          "conditionals-switch",
+          "ternary-operator"
+        ],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []

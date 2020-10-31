@@ -25,6 +25,10 @@ The story facilitates defining functions:
 - [Ruby: basics][implementation-ruby]
 - [Swift: basics][implementation-swift]
 
+## Name suggestions
+
+- [Lasagna][implementation-julia]
+
 ## Reference
 
 - [`concepts/operators`][concepts-operators]

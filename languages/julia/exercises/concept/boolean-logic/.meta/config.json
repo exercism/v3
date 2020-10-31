@@ -1,16 +1,26 @@
 {
-    "authors": [
-        {
-            "github_username": "SaschaMann",
-            "exercism_username": "SaschaMann"
-        }
-    ],
+    "language_versions": "≥1.0",
+    "editor": {
+        "test_files": [
+            "runtests.jl"
+        ],
+        "solution_files": [
+            "boolean-logic.jl"
+        ]
+    },
     "contributors": [
         {
             "github_username": "cmcaine",
             "exercism_username": "cmcaine"
         }
     ],
-    "language_versions": "≥1.0",
-    "forked_from": ["javascript/boolean"]
+    "authors": [
+        {
+            "github_username": "SaschaMann",
+            "exercism_username": "SaschaMann"
+        }
+    ],
+    "forked_from": [
+        "javascript/boolean"
+    ]
 }
