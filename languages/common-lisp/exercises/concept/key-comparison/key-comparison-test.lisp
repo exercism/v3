@@ -1,24 +1,24 @@
-;; Ensures that sameness.lisp and the testing library are always loaded
+;; Ensures that key-comparison.lisp and the testing library are always loaded
 (eval-when (:compile-toplevel :load-toplevel :execute)
-  (load "sameness")
+  (load "key-comparison")
   (ql:quickload :fiveam))
 
-;; Defines the testing package with symbols from sameness and FiveAM in scope
+;; Defines the testing package with symbols from key-comparison and FiveAM in scope
 ;; The `run-tests` function is exported for use by both the user and test-runner
-(defpackage sameness-test
-  (:use :cl :fiveam :sameness)
+(defpackage key-comparison-test
+  (:use :cl :fiveam :key-comparison)
   (:export :run-tests))
 
 ;; Enter the testing package
-(in-package :sameness-test)
+(in-package :key-comparison-test)
 
 ;; forward declaration of test utilities
 (declaim (ftype (function) open-room))
 (defparameter +rooms+ nil)
 
 ;; Define and enter a new FiveAM test-suite
-(def-suite sameness-suite)
-(in-suite sameness-suite)
+(def-suite key-comparison-suite)
+(in-suite key-comparison-suite)
 
 (test the-maze-of-object-identity
   (is (eq 'victory (open-room :room-object-identity
@@ -62,7 +62,7 @@
 ;; results to the test runner. The default upon calling `(run-tests)` is to
 ;; explain the results in a human-readable way
 (defun run-tests (&optional (explain t))
-  (let ((tests (run 'sameness-suite))) ; Run the tests once
+  (let ((tests (run 'key-comparison-suite))) ; Run the tests once
     (if explain (explain! tests) tests))) ; Optionally explain the results
 
 ;;;

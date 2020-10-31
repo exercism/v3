@@ -18,7 +18,8 @@
         "prerequisites": []
       },
       {
-        "slug": "sameness",
+        "slug": "key-comparison",
+	"name": "The Key to Comparison",
         "uuid": "d780fb3e-c9f8-11ea-af82-3200111e0c80",
         "concepts": ["sameness"],
         "prerequisites": [
