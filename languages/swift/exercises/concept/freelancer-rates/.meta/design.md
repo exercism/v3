@@ -7,7 +7,7 @@
 
 ## Out of scope
 
-- Any other numeric types besides `Int` and `Double` (so no `Float`, `UInt16`, etc.).
+- Any other numeric types besides `Int` and `Double` (so no `Float`, `UInt16`, `Decimal`, etc.).
 - Parsing a `String` to an `Int` or `Double`.
 - Converting an `Int` or `Double` to a `String`.
 - Overflows.

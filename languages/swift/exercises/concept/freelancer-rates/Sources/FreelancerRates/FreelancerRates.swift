@@ -9,5 +9,3 @@ func monthlyRateFrom(hourlyRate: Int, withDiscount discount: Double) -> Double {
 func workdaysIn(budget: Double, hourlyRate: Int, withDiscount discount: Double) -> Double {
   fatalError("Please implement the workdaysIn(budget:hourlyRate:withDiscount:) function")
 }
-
-
