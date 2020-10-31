@@ -1,8 +1,7 @@
 import XCTest
+@testable import Lasagna
 
-@testable import Basics
-
-final class BasicsTests: XCTestCase {
+final class LasagnaTests: XCTestCase {
   let runAll = Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"]) ?? false
 
   func testExpectedMinutes() {

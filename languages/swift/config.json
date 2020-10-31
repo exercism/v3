@@ -11,18 +11,6 @@
   "exercises": {
     "concept": [
       {
-        "slug": "basics",
-        "uuid": "44ae5892-40a5-4483-a181-28e1c38645d6",
-        "concepts": [
-          "basics",
-          "constants",
-          "functions",
-          "type-annotations",
-          "variables"
-        ],
-        "prerequisites": []
-      },
-      {
         "slug": "closures",
         "uuid": "21d213fe-1c9d-4e8a-bc7e-47a11e972c08",
         "concepts": [
@@ -62,6 +50,18 @@
         "uuid": "eb8ccbb6-79af-4417-b934-e07fb496aaf2",
         "concepts": ["escaping-functions", "higher-order-functions"],
         "prerequisites": ["functions"]
+      },
+      {
+        "slug": "lasagna",
+        "uuid": "44ae5892-40a5-4483-a181-28e1c38645d6",
+        "concepts": [
+          "basics",
+          "constants",
+          "functions",
+          "type-annotations",
+          "variables"
+        ],
+        "prerequisites": []
       },
       {
         "slug": "lasagna-master",

@@ -1,6 +1,7 @@
-import BasicsTests
 import XCTest
 
+import LasagnaTests
+
 var tests = [XCTestCaseEntry]()
-tests += BasicsTests.allTests()
+tests += LasagnaTests.allTests()
 XCTMain(tests)
