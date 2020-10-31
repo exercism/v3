@@ -4,6 +4,9 @@ The Concept Exercises are based on this [list of concepts][reference-shared].
 
 ## Implemented exercises
 
+This section will be rewritten after everything is renamed.
+
+<!--
 These are the Concept Exercises that have currently been implemented, as well as the Concepts they teach and their prerequisite concepts:
 
 | exercise                                        | concepts       | prerequisites  |
@@ -13,6 +16,7 @@ These are the Concept Exercises that have currently been implemented, as well as
 | [`conditionals`][concept-exercise-conditionals] | `conditionals` | `basics`       |
 | [`optionals`][concept-exercise-optionals]       | `optionals`    | `conditionals` |
 | [`arrays`][concept-exercise-arrays]             | `arrays`       | `optionals`    |
+-->
 
 <!--
 | [`strings`][concept-exercise-strings]           | `strings`      | `optionals` <br/> `arrays` |
@@ -34,14 +38,15 @@ Thanks for wanting to contribute to the Swift track's Concept Exercises! Contrib
 To contribute, please find and work on one of the [new exercise issues][issues-new-exercise] or [improve exercise issues][issues-improve-exercise].
 
 [reference-shared]: ../../reference/README.md
-[reference]: ./reference.md
+
+<!--[reference]: ./reference.md
 [concept-exercises]: ./concept/README.md
 [concept-exercise-basics]: ./basics/.meta/design.md
 [concept-exercise-numbers]: ./numbers/.meta/design.md
 [concept-exercise-conditionals]: ./conditionals/.meta/design.md
 [concept-exercise-optionals]: ./arrays/.meta/design.md
 [concept-exercise-arrays]: ./arrays/.meta/design.md
-
+-->
 <!--
 [concept-exercise-strings]: ./strings/.meta/design.md
 [concept-exercise-hof]: ./higher-order-functions/.meta/design.md
