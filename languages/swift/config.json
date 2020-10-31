@@ -24,7 +24,7 @@
       },
       {
         "slug": "custom-signs",
-        "name:" "Cal's Custom Sign Shop",
+        "name": "Cal's Custom Sign Shop",
         "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
         "concepts": ["strings-and-characters"],
         "prerequisites": ["basics"]
