@@ -1,8 +1,8 @@
 import XCTest
 
-@testable import Conditionals
+@testable import VehiclePurchase
 
-final class ConditionalsTests: XCTestCase {
+final class VehiclePurchaseTests: XCTestCase {
   let runAll = Bool(ProcessInfo.processInfo.environment["RUNALL", default: "false"]) ?? false
 
   func testCanBuy() {
