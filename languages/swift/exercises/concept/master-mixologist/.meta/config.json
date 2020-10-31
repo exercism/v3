@@ -4,5 +4,9 @@
       "github_username": "wneumann",
       "exercism_username": "wneumann"
     }
-  ]
+  ],
+  "editor": {
+    "solution_files": ["Sources/MasterMixologist/MasterMixologist.swift"],
+    "test_files": ["Tests/MasterMixologistTests/MasterMixologistTests.swift"]
+  }
 }
