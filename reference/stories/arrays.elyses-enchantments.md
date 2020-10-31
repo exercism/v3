@@ -1,4 +1,4 @@
-# Magician card stack
+# Elyse's Enchantments
 
 ## Story
 
@@ -64,10 +64,10 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 ## Implementations
 
-- [JavaScript: arrays][implementation-javascript] (reference implementation)
-- [JavaScript: array-analysis][implementation-javascript-2] (reference implementation)
-- [JavaScript: array-destructuring][implementation-javascript-3] (reference implementation)
-- [JavaScript: array-transformations][implementation-javascript-4] (reference implementation)
+- [JavaScript: elyses-enchantments][implementation-javascript] (reference implementation)
+- [JavaScript: elyses-analytic-enchantments][implementation-javascript-2] (reference implementation)
+- [JavaScript: elyses-destructured-enchantments][implementation-javascript-3] (reference implementation)
+- [JavaScript: elyses-transformative-enchantments][implementation-javascript-4] (reference implementation)
 - [Swift: arrays][implementation-swift]
 
 ## Alternative version
@@ -95,10 +95,10 @@ These are examples of tasks that fit the story of you wanting to re-arrange card
 - [`types/array`][types-array]
 
 [types-array]: ../types/array.md
-[implementation-javascript]: ../../languages/javascript/exercises/concept/arrays/.docs/instructions.md
-[implementation-javascript-2]: ../../languages/javascript/exercises/concept/array-analysis/.docs/instructions.md
-[implementation-javascript-3]: ../../languages/javascript/exercises/concept/array-destructuring/.docs/instructions.md
-[implementation-javascript-4]: ../../languages/javascript/exercises/concept/array-transformations/.docs/instructions.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/elyses-enchantments/.docs/instructions.md
+[implementation-javascript-2]: ../../languages/javascript/exercises/concept/elyses-analytic-enchantments/.docs/instructions.md
+[implementation-javascript-3]: ../../languages/javascript/exercises/concept/elyses-destructured-enchantments/.docs/instructions.md
+[implementation-javascript-4]: ../../languages/javascript/exercises/concept/elyses-transformative-enchantments/.docs/instructions.md
 [implementation-javascript-research-1-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-1-a
 [implementation-javascript-research-2-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-2-a
 [implementation-swift]: ../../languages/swift/exercises/concept/magician-in-training/.docs/instructions.md
