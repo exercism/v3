@@ -4,5 +4,9 @@
       "github_username": "TheLostLambda",
       "exercism_username": "TheLostLambda"
     }
-  ]
+  ],
+  "editor": {
+    "solution_files": ["conditionals.lisp"],
+    "test_files": ["conditionals-test.lisp"]
+  }
 }

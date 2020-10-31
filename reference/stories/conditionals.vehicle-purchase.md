@@ -28,4 +28,4 @@ These are examples of tasks that fit the story of purchasing a vehicle:
 [concepts-conditionals]: ../concepts/conditionals.md
 [concepts-guard]: ../concepts/guard.md
 [concepts-switch]: ../concepts/switch.md
-[implementation-swift]: ../../languages/swift/exercises/concept/conditionals/.docs/instructions.md
+[implementation-swift]: ../../languages/swift/exercises/concept/vehicle-purchase/.docs/instructions.md

@@ -21,7 +21,7 @@ You have a number of pizza slice shops in your town and you want to write a web 
 | ----- | --------------------------------- | ------- |
 | Swift | [optionals][implementation-swift] | None    |
 
-[implementation-swift]: ../../languages/swift/exercises/concept/optionals/.docs/instructions.md
+[implementation-swift]: ../../languages/swift/exercises/concept/pizza-slices/.docs/instructions.md
 
 ---
 

@@ -11,12 +11,6 @@
   "exercises": {
     "concept": [
       {
-        "slug": "arrays",
-        "uuid": "e6143dbc-895e-47aa-b42c-3034e1f872c2",
-        "concepts": ["arrays"],
-        "prerequisites": ["conditionals"]
-      },
-      {
         "slug": "closures",
         "uuid": "21d213fe-1c9d-4e8a-bc7e-47a11e972c08",
         "concepts": [
@@ -28,15 +22,9 @@
         "prerequisites": ["functions", "higher-order-functions", "loops"]
       },
       {
-        "slug": "conditionals",
-        "uuid": "6fa28581-0992-4770-a657-2bb5157db178",
-        "concepts": [
-          "booleans",
-          "conditionals-if",
-          "conditionals-guard",
-          "conditionals-switch",
-          "ternary-operator"
-        ],
+        "slug": "custom-signs",
+        "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
+        "concepts": ["strings-and-characters"],
         "prerequisites": ["basics"]
       },
       {
@@ -46,17 +34,16 @@
         "prerequisites": ["string-components", "structs-and-classes"]
       },
       {
-        "slug": "functions",
-        "uuid": "cd7e4e29-6b1e-41c9-8815-f3788e7727ce",
-        "concepts": [
-          "function-overloading",
-          "multiple-return-values",
-          "default-parameters",
-          "variadic-parameters",
-          "inout-parameters",
-          "nested-functions"
-        ],
-        "prerequisites": ["arrays", "conditionals", "tuples"]
+        "slug": "freelancer-rates",
+        "uuid": "3bdad781-47e1-493a-834d-ca6ac8361ffd",
+        "concepts": ["numbers"],
+        "prerequisites": ["basics"]
+      },
+      {
+        "slug": "high-score-board",
+        "uuid": "74cb167d-7418-4327-9dd8-9852082127b0",
+        "concepts": ["dictionaries"],
+        "prerequisites": ["functions", "optionals"]
       },
       {
         "slug": "higher-order-functions",
@@ -77,7 +64,20 @@
         "prerequisites": []
       },
       {
-        "slug": "loops",
+        "slug": "lasagna-master",
+        "uuid": "cd7e4e29-6b1e-41c9-8815-f3788e7727ce",
+        "concepts": [
+          "function-overloading",
+          "multiple-return-values",
+          "default-parameters",
+          "variadic-parameters",
+          "inout-parameters",
+          "nested-functions"
+        ],
+        "prerequisites": ["arrays", "conditionals", "tuples"]
+      },
+      {
+        "slug": "master-mixologist",
         "uuid": "a11dc279-0c0a-4dca-89c6-f0abbac265c8",
         "concepts": [
           "loops",
@@ -89,19 +89,19 @@
         "prerequisites": ["arrays", "optionals", "tuples"]
       },
       {
-        "slug": "numbers",
-        "uuid": "3bdad781-47e1-493a-834d-ca6ac8361ffd",
-        "concepts": ["numbers"],
-        "prerequisites": ["basics"]
+        "slug": "magician-in-training",
+        "uuid": "e6143dbc-895e-47aa-b42c-3034e1f872c2",
+        "concepts": ["arrays"],
+        "prerequisites": ["conditionals"]
       },
       {
-        "slug": "optionals",
+        "slug": "pizza-slices",
         "uuid": "9d0bb0ad-904c-4d61-9d2c-ae37913d5741",
         "concepts": ["optionals"],
         "prerequisites": ["tuples", "conditionals"]
       },
       {
-        "slug": "string-components",
+        "slug": "poetry-club",
         "uuid": "082d7aeb-ee25-4217-bd6f-82532a65797a",
         "concepts": [
           "importing",
@@ -112,10 +112,10 @@
         "prerequisites": ["arrays", "optionals"]
       },
       {
-        "slug": "strings-and-characters",
-        "uuid": "ac9b14eb-b521-4f2b-bc4b-1bd0e3e35ae7",
-        "concepts": ["strings-and-characters"],
-        "prerequisites": ["basics"]
+        "slug": "santas-helper",
+        "uuid": "f371c072-082b-496b-aa58-45b6cba203f6",
+        "concepts": ["tuples"],
+        "prerequisites": ["arrays", "strings"]
       },
       {
         "slug": "structs-and-classes",
@@ -131,10 +131,16 @@
         "prerequisites": ["functions", "function-overloading"]
       },
       {
-        "slug": "tuples",
-        "uuid": "f371c072-082b-496b-aa58-45b6cba203f6",
-        "concepts": ["tuples"],
-        "prerequisites": ["arrays", "strings"]
+        "slug": "vehicle-purchase",
+        "uuid": "6fa28581-0992-4770-a657-2bb5157db178",
+        "concepts": [
+          "booleans",
+          "conditionals-if",
+          "conditionals-guard",
+          "conditionals-switch",
+          "ternary-operator"
+        ],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []

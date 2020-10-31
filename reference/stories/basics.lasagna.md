@@ -25,6 +25,10 @@ The story facilitates defining functions:
 - [Ruby: basics][implementation-ruby]
 - [Swift: basics][implementation-swift]
 
+## Name suggestions
+
+- [Lasagna][implementation-julia]
+
 ## Reference
 
 - [`concepts/operators`][concepts-operators]
@@ -42,6 +46,6 @@ The story facilitates defining functions:
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/instructions.md
 [implementation-java]: ../../languages/java/exercises/concept/basics/.docs/instructions.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/basics/.docs/instructions.md
-[implementation-julia]: ../../languages/julia/exercises/concept/functions-introduction/.docs/instructions.md
+[implementation-julia]: ../../languages/julia/exercises/concept/lasagna/.docs/instructions.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/lasagna/.docs/instructions.md
 [implementation-swift]: ../../languages/swift/exercises/concept/lasagna/.docs/instructions.md
