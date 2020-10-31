@@ -11,12 +11,6 @@
   "exercises": {
     "concept": [
       {
-        "slug": "arrays",
-        "uuid": "e6143dbc-895e-47aa-b42c-3034e1f872c2",
-        "concepts": ["arrays"],
-        "prerequisites": ["conditionals"]
-      },
-      {
         "slug": "basics",
         "uuid": "44ae5892-40a5-4483-a181-28e1c38645d6",
         "concepts": [
@@ -87,6 +81,12 @@
           "control-transfer"
         ],
         "prerequisites": ["arrays", "optionals", "tuples"]
+      },
+      {
+        "slug": "magician-in-training",
+        "uuid": "e6143dbc-895e-47aa-b42c-3034e1f872c2",
+        "concepts": ["arrays"],
+        "prerequisites": ["conditionals"]
       },
       {
         "slug": "optionals",
