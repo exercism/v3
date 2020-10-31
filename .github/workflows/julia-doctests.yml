@@ -1,0 +1,50 @@
+name: Julia
+
+on:
+  push:
+    paths:
+      - 'languages/julia/exercises/**/.docs/**'
+  pull_request:
+    paths:
+      - 'languages/julia/exercises/**/.docs/**'
+
+jobs:
+  doctest:
+    name: Doctests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Julia 1.5.2
+        uses: julia-actions/setup-julia@v1
+        with:
+          version: '1.5.2' # Should be the same as the test runner
+
+      - name: Create a fake package
+        run: |
+          cd ..
+          julia -e 'using Pkg; Pkg.generate("JuliaTrack")'
+          mkdir -p JuliaTrack/docs/src
+      
+      - name: Copy .docs files to the fake package
+        run: |
+          for f in languages/julia/exercises/concept/*/.docs/introduction.md; do
+            cp --verbose "$f" "../JuliaTrack/docs/src/${f//\//-}"
+          done
+      
+      - name: Install dependencies
+        run: julia --project=languages/julia/bin/doctests -e 'using Pkg; Pkg.instantiate()'
+      
+      - name: ']dev the fake package'
+        run: julia --project=languages/julia/bin/doctests -e 'using Pkg; Pkg.develop(path=joinpath(ENV["HOME"], "work", "v3", "JuliaTrack"))'
+      
+      - name: Turn ```julia blocks into ```jldoctest
+        run: sed -i 's/```julia/```jldoctest/g' ../JuliaTrack/docs/src/*.md
+      
+      - name: Run doctests with Documenter
+        shell: julia --color=yes --project=languages/julia/bin/doctests {0}
+        run: |
+          using Documenter
+          using JuliaTrack
+
+          doctest(JuliaTrack)
