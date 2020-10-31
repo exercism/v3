@@ -3795,33 +3795,6 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
-          "slug": "basics",
-          "concepts": [
-            {
-              "url": null,
-              "name": "basics"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
-              "name": "constants"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
-            },
-            {
-              "url": null,
-              "name": "type-annotations"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/variables.md",
-              "name": "variables"
-            }
-          ],
-          "prerequisites": []
-        },
-        {
           "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
           "slug": "closures",
           "concepts": [
@@ -3948,6 +3921,33 @@
               "name": "functions"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna",
+          "slug": "lasagna",
+          "concepts": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
+              "name": "constants"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": null,
+              "name": "type-annotations"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/variables.md",
+              "name": "variables"
+            }
+          ],
+          "prerequisites": []
         },
         {
           "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
