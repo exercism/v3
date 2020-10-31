@@ -3795,42 +3795,6 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
-          "slug": "closures",
-          "concepts": [
-            {
-              "url": null,
-              "name": "capturing"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/closures.md",
-              "name": "closures"
-            },
-            {
-              "url": null,
-              "name": "shorthand-arguments"
-            },
-            {
-              "url": null,
-              "name": "trailing-closures"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/higher_order_functions.md",
-              "name": "higher-order-functions"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
-              "name": "loops"
-            }
-          ]
-        },
-        {
           "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/custom-signs",
           "slug": "custom-signs",
           "concepts": [
@@ -3899,26 +3863,6 @@
             {
               "url": null,
               "name": "optionals"
-            }
-          ]
-        },
-        {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/higher-order-functions",
-          "slug": "higher-order-functions",
-          "concepts": [
-            {
-              "url": null,
-              "name": "escaping-functions"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/higher_order_functions.md",
-              "name": "higher-order-functions"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
             }
           ]
         },
@@ -4118,6 +4062,26 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
               "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/secret-agent",
+          "slug": "secret-agent",
+          "concepts": [
+            {
+              "url": null,
+              "name": "escaping-functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/higher_order_functions.md",
+              "name": "higher-order-functions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
             }
           ]
         },
