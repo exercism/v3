@@ -71,6 +71,12 @@
         "prerequisites": ["arrays", "conditionals", "tuples"]
       },
       {
+        "slug": "get-organized",
+        "uuid": "9b154382-7c9f-4591-84ad-1a42c9be10e0",
+        "concepts": ["generic-functions", "type-parameters"],
+        "prerequisites": ["closures"]
+      },
+      {
         "slug": "higher-order-functions",
         "uuid": "eb8ccbb6-79af-4417-b934-e07fb496aaf2",
         "concepts": ["escaping-functions", "higher-order-functions"],
