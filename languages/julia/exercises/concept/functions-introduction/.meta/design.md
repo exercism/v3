@@ -19,6 +19,6 @@ The Concepts this exercise unlocks are:
 
 - `functions-introduction`: Defining a function with one or more positional arguments that returns something. Bare minimum to be able to understand the basic structure of Exercism exercises.
 
-## Prequisites
+## Prerequisites
 
 There are no prerequisites.

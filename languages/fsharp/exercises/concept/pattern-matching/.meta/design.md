@@ -16,7 +16,7 @@
 
 - `pattern-matching`: know what pattern matching is; know about constant, variable and wildcard patterns; know how to apply guards to patterns; know about exhaustiveness checking in pattern matching.
 
-## Prequisites
+## Prerequisites
 
 - `strings`: use to pattern match on.
 - `conditionals`: know what an `if/elif/else` statement is.

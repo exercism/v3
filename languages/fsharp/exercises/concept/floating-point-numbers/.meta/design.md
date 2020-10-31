@@ -13,7 +13,7 @@
 
 - `floating-point-numbers`: know of the existing of the three floating point types: `double`, `float` and `decimal`. know when to use which floating point type.
 
-## Prequisites
+## Prerequisites
 
 - `numbers`: define numbers and apply arithmetic and boolean logic to them and convert from one floating-point type to another.
 - `conditionals`: conditionally execute code based on value of floating-point numbers.

@@ -20,7 +20,7 @@
 - `unicode-identifiers`
 - `emoji-symbols`
 
-## Prequisites
+## Prerequisites
 
 This exercise's prerequisites Concepts are:
 

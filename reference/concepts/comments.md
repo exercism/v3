@@ -34,4 +34,4 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/introduction.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/basics/.docs/introduction.md
 [implementation-julia]: ../../languages/julia/exercises/concept/functions-introduction/.docs/introduction.md
-[implementation-ruby]: ../../languages/ruby/exercises/concept/basics/.docs/introduction.md
+[implementation-ruby]: ../../languages/ruby/exercises/concept/lasagna/.docs/introduction.md
