@@ -11,7 +11,7 @@
   "exercises": {
     "concept": [
       {
-        "slug": "closures",
+        "slug": "bomb-diffuser",
         "uuid": "21d213fe-1c9d-4e8a-bc7e-47a11e972c08",
         "concepts": [
           "capturing",
