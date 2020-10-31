@@ -4,5 +4,9 @@
       "github_username": "verdammelt",
       "exercism_username": "verdammelt"
     }
-  ]
+  ],
+  "editor": {
+    "solution_files": ["lists.lisp"],
+    "test_files": ["lists-test.lisp"]
+  }
 }
