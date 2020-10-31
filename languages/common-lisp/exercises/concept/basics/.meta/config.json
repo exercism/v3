@@ -8,5 +8,10 @@
       "github_username": "TheLostLambda",
       "exercism_username": "TheLostLambda"
     }
-  ]
+  ],
+  "editor": {
+    "solution_files": ["basics.lisp"],
+    "test_files": ["basics-test.lisp"]
+  }
+
 }
