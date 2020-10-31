@@ -33,6 +33,8 @@ This story can be continued to also teach array analysis:
 - Get the first odd card from the stack
 - Determine the position of the first card that is even
 
+This story can be continued to also teach array destructuring:
+
 ## Terminology
 
 These are recommendations, not rules, for recurring terminology in the instructions (including stub commentary)
@@ -48,6 +50,7 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 - [JavaScript: arrays][implementation-javascript] (reference implementation)
 - [JavaScript: array-analysis][implementation-javascript-2] (reference implementation)
+- [JavaScript: array-destructuring][implementation-javascript-3] (reference implementation)
 - [Swift: arrays][implementation-swift]
 
 ## Alternative version
@@ -77,6 +80,7 @@ These are examples of tasks that fit the story of you wanting to re-arrange card
 [types-array]: ../types/array.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/arrays/.docs/instructions.md
 [implementation-javascript-2]: ../../languages/javascript/exercises/concept/array-analysis/.docs/instructions.md
+[implementation-javascript-3]: ../../languages/javascript/exercises/concept/array-destructuring/.docs/instructions.md
 [implementation-javascript-research-1-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-1-a
 [implementation-javascript-research-2-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-2-a
 [implementation-swift]: ../../languages/swift/exercises/concept/arrays/.docs/instructions.md

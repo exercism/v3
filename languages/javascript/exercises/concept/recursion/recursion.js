@@ -7,7 +7,7 @@
  * @returns {number} the price of the pizza
  */
 export function pizzaPrice(pizza, ...extras) {
-  throw new Error('Please implement the pizzaPrice function')
+  throw new Error('Please implement the pizzaPrice function');
 }
 
 /**
@@ -17,5 +17,5 @@ export function pizzaPrice(pizza, ...extras) {
  * @returns {number} the price of the total order
  */
 export function orderPrice(pizzaOrders) {
-  throw new Error('Please implement the orderPrice function')
+  throw new Error('Please implement the orderPrice function');
 }

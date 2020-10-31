@@ -7,7 +7,7 @@
  * @returns {number} the rate per day
  */
 export function dayRate(ratePerHour) {
-  throw new Error('Implement the dayRate function')
+  throw new Error('Implement the dayRate function');
 }
 
 /**
@@ -18,7 +18,7 @@ export function dayRate(ratePerHour) {
  * @returns {number} the rounded up monthly rate
  */
 export function monthRate(ratePerHour, discount) {
-  throw new Error('Implement the monthRate function')
+  throw new Error('Implement the monthRate function');
 }
 
 /**
@@ -30,7 +30,7 @@ export function monthRate(ratePerHour, discount) {
  * @returns {string} the number of days
  */
 export function daysInBudget(budget, ratePerHour, discount) {
-  throw new Error('Implement the daysInBudget function')
+  throw new Error('Implement the daysInBudget function');
 }
 
 /**
@@ -41,5 +41,5 @@ export function daysInBudget(budget, ratePerHour, discount) {
  * @returns {number} the discounted value
  */
 function applyDiscount(value, percentage) {
-  throw new Error('Implement the applyDiscount function')
+  throw new Error('Implement the applyDiscount function');
 }

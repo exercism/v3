@@ -9,7 +9,7 @@
  * @returns {number} Value of card retrieved
  */
 export function getItem(array, index) {
-  throw new Error('Implement the getItem function')
+  throw new Error('Implement the getItem function');
 }
 
 /**
@@ -22,7 +22,7 @@ export function getItem(array, index) {
  * @returns {number[]} Array after exchanged card with newCard
  */
 export function setItem(array, index, newCard) {
-  throw new Error('Implement the setItem function')
+  throw new Error('Implement the setItem function');
 }
 
 /**
@@ -34,7 +34,7 @@ export function setItem(array, index, newCard) {
  * @returns {number[]} Array after newCard inserted
  */
 export function insertItemAtTop(array, newCard) {
-  throw new Error('Implement the insertItemAtTop function')
+  throw new Error('Implement the insertItemAtTop function');
 }
 
 /**
@@ -46,7 +46,7 @@ export function insertItemAtTop(array, newCard) {
  * @returns {number[]} Array after card removed
  */
 export function removeItem(array, index) {
-  throw new Error('Implement the removeItem function')
+  throw new Error('Implement the removeItem function');
 }
 
 /**
@@ -57,7 +57,7 @@ export function removeItem(array, index) {
  * @returns {number[]} Array after card removed
  */
 export function removeItemFromTop(array) {
-  throw new Error('Implement the removeItemFromTop function')
+  throw new Error('Implement the removeItemFromTop function');
 }
 
 /**
@@ -69,7 +69,7 @@ export function removeItemFromTop(array) {
  * @returns {number[]} Array after newCard inserted
  */
 export function insertItemAtBottom(array, newCard) {
-  throw new Error('Implement the insertItemAtBottom function')
+  throw new Error('Implement the insertItemAtBottom function');
 }
 
 /**
@@ -80,7 +80,7 @@ export function insertItemAtBottom(array, newCard) {
  * @returns {number[]} Array after card removed
  */
 export function removeItemAtBottom(array) {
-  throw new Error('Implement the removeItemAtBottom function')
+  throw new Error('Implement the removeItemAtBottom function');
 }
 
 /**
@@ -92,5 +92,5 @@ export function removeItemAtBottom(array) {
  * @returns {boolean} Whether the size of array equals to stackSize
  */
 export function checkSizeOfStack(array, stackSize) {
-  throw new Error('Implement the checkLengthOfStack function')
+  throw new Error('Implement the checkLengthOfStack function');
 }
