@@ -941,8 +941,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "higher-order-functions",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/higher-order-functions/.docs/instructions.md"
+        "exercise": "secret-agent",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/secret-agent/.docs/instructions.md"
       }
     ]
   },
