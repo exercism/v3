@@ -438,8 +438,8 @@
       {
         "track": "Swift",
         "slug": "swift",
-        "exercise": "functions",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/functions/.docs/instructions.md"
+        "exercise": "lasagna-master",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/lasagna-master/.docs/instructions.md"
       }
     ]
   },
