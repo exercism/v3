@@ -225,8 +225,8 @@
         "language": "Python"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna",
+        "exercise": "lasagna",
         "track": "swift",
         "language": "Swift"
       },
@@ -787,8 +787,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna",
+        "exercise": "lasagna",
         "track": "swift",
         "language": "Swift"
       },
@@ -899,8 +899,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-        "exercise": "functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+        "exercise": "lasagna-master",
         "track": "swift",
         "language": "Swift"
       }
@@ -1153,8 +1153,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/higher-order-functions",
-        "exercise": "higher-order-functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/secret-agent",
+        "exercise": "secret-agent",
         "track": "swift",
         "language": "Swift"
       }
@@ -1349,8 +1349,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-        "exercise": "functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+        "exercise": "lasagna-master",
         "track": "swift",
         "language": "Swift"
       }
@@ -1373,8 +1373,8 @@
         "language": "Go"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna",
+        "exercise": "lasagna",
         "track": "swift",
         "language": "Swift"
       }
@@ -1473,8 +1473,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/higher-order-functions",
-        "exercise": "higher-order-functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/secret-agent",
+        "exercise": "secret-agent",
         "track": "swift",
         "language": "Swift"
       }
@@ -1567,8 +1567,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-        "exercise": "functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+        "exercise": "lasagna-master",
         "track": "swift",
         "language": "Swift"
       }
@@ -1982,8 +1982,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-        "exercise": "functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+        "exercise": "lasagna-master",
         "track": "swift",
         "language": "Swift"
       }
@@ -2038,8 +2038,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-        "exercise": "functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+        "exercise": "lasagna-master",
         "track": "swift",
         "language": "Swift"
       }
@@ -3270,8 +3270,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna",
+        "exercise": "lasagna",
         "track": "swift",
         "language": "Swift"
       }
@@ -3347,8 +3347,8 @@
         "language": "Go"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna",
+        "exercise": "lasagna",
         "track": "swift",
         "language": "Swift"
       }
@@ -3364,8 +3364,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-        "exercise": "functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+        "exercise": "lasagna-master",
         "track": "swift",
         "language": "Swift"
       }
