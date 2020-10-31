@@ -35,4 +35,4 @@ jobs:
           curl --url $"${PULL_REQUEST_URL}/files" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' | \
             jq -r -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match("\\.cs$")) | .filename' | \
             paste -s -d, - | \
-            xargs dotnet format --check -f . --files
+            xargs -r dotnet format --check -f . --files

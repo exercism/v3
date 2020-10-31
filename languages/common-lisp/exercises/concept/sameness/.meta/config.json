@@ -8,5 +8,9 @@
       "github_username": "TheLostLambda",
       "exercism_username": "TheLostLambda"
     }
-  ]
+  ],
+  "editor": {
+    "solution_files": ["sameness.lisp"],
+    "test_files": ["sameness-test.lisp"]
+  }
 }
