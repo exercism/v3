@@ -33,6 +33,24 @@ This story can be continued to also teach array analysis:
 - Get the first odd card from the stack
 - Determine the position of the first card that is even
 
+This story can be continued to also teach array transformations:
+
+- Double every single card
+- Create multiple copies of every 3 found in the deck
+- Find two cards from the exact middle of the deck
+- The outside two cards will reappear in the middle of the deck
+- Every card that isn't 2 disappears
+- Convert a shuffled deck into a perfectly ordered deck
+- Change every card to the total number of cards
+
+This story can be continued to also teach array destructuring:
+
+- Get the first card (without conventional methods, e.g indexer or methods)
+- Get the second card (without conventional methods, e.g indexer or methods)
+- Swap the first two cards (without conventional methods, e.g indexer or methods)
+- Discard the top card (without conventional methods, e.g indexer or methods)
+- Insert face cards (without conventional methods, e.g indexer or methods)
+
 ## Terminology
 
 These are recommendations, not rules, for recurring terminology in the instructions (including stub commentary)
@@ -48,6 +66,9 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 - [JavaScript: arrays][implementation-javascript] (reference implementation)
 - [JavaScript: array-analysis][implementation-javascript-2] (reference implementation)
+- [JavaScript: array-destructuring][implementation-javascript-3] (reference implementation)
+- [JavaScript: array-transformations][implementation-javascript-4] (reference implementation)
+- [Swift: arrays][implementation-swift]
 
 ## Alternative version
 
@@ -76,5 +97,8 @@ These are examples of tasks that fit the story of you wanting to re-arrange card
 [types-array]: ../types/array.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/arrays/.docs/instructions.md
 [implementation-javascript-2]: ../../languages/javascript/exercises/concept/array-analysis/.docs/instructions.md
+[implementation-javascript-3]: ../../languages/javascript/exercises/concept/array-destructuring/.docs/instructions.md
+[implementation-javascript-4]: ../../languages/javascript/exercises/concept/array-transformations/.docs/instructions.md
 [implementation-javascript-research-1-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-1-a
 [implementation-javascript-research-2-a]: https://github.com/exercism/research_experiment_1/tree/master/exercises/javascript-2-a
+[implementation-swift]: ../../languages/swift/exercises/concept/magician-in-training/.docs/instructions.md

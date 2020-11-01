@@ -8,4 +8,4 @@ While manipulating individual [bits](../types/bit.md) may not be a concept that 
 - [Elixir][implementation-elixir]
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/flag-enums/.docs/introduction.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/anonymous-functions/.docs/introduction.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/secrets/.docs/introduction.md

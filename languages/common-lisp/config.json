@@ -40,7 +40,7 @@
         "uuid": null,
         "concepts": ["destructuring-assignment"],
         "prerequisites": [
-          "basic-lists",
+          "lists",
           "symbols",
           "function-definition",
           "loop.basic",
@@ -52,7 +52,7 @@
         "uuid": null,
         "concepts": ["code-as-data"],
         "prerequisites": [
-          "basic-lists",
+          "lists",
           "arithmetic",
           "symbols",
           "function-definition",
@@ -66,7 +66,7 @@
         "uuid": null,
         "concepts": ["multiple-values"],
         "prerequisites": [
-          "basic-lists",
+          "lists",
           "arithmetic",
           "variables",
           "function-definition",
@@ -108,7 +108,7 @@
         "uuid": null,
         "concepts": ["sets"],
         "prerequisites": [
-          "basic-lists",
+          "lists",
           "higher-order-functions",
           "cons",
           "sameness",
@@ -119,7 +119,7 @@
         "slug": "assignment",
         "uuid": null,
         "concepts": ["assignment"],
-        "prerequisites": ["variables", "basic-lists", "strings", "expressions"]
+        "prerequisites": ["variables", "lists", "strings", "expressions"]
       },
       {
         "slug": "nested-functions",
@@ -142,7 +142,7 @@
           "expressions",
           "conditionals",
           "arithmetic",
-          "basic-lists",
+          "lists",
           "cons"
         ]
       },
@@ -162,7 +162,7 @@
         "uuid": null,
         "concepts": ["higher-order-functions"],
         "prerequisites": [
-          "basic-lists",
+          "lists",
           "strings",
           "function-definition",
           "truthy-and-falsy",
@@ -170,10 +170,10 @@
         ]
       },
       {
-        "slug": "basic-lists",
+        "slug": "lists",
         "uuid": null,
-        "concepts": ["basic-lists"],
-        "prerequisites": ["cons", "symbols"]
+        "concepts": ["lists"],
+        "prerequisites": ["cons", "symbols", "arithmetic"]
       },
       {
         "slug": "packages",
@@ -185,7 +185,7 @@
         "slug": "enumeration",
         "uuid": null,
         "concepts": ["enumeration", "loop.basic"],
-        "prerequisites": ["arithmetic", "strings", "basic-lists"]
+        "prerequisites": ["arithmetic", "strings", "lists"]
       },
       {
         "slug": "strings",
@@ -207,9 +207,15 @@
       },
       {
         "slug": "conditionals",
-        "uuid": null,
+        "uuid": "c0155014-4d11-4cb2-872b-6dfdf794f7cd",
         "concepts": ["conditionals", "truthy-and-falsy"],
-        "prerequisites": ["expressions", "integers", "arithmetic", "symbols"]
+        "prerequisites": [
+          "expressions",
+          "integers",
+          "arithmetic",
+          "symbols",
+          "strings"
+        ]
       },
       {
         "slug": "function-definition",
@@ -224,5 +230,532 @@
       }
     ],
     "practice": []
-  }
+  },
+  "concepts": [
+    {
+      "uuid": "223d816f-c09e-4269-81fb-69db0c6fb1cd",
+      "slug": "anonymous-functions",
+      "name": "Anonymous Functions",
+      "blurb": "TODO: add blurb for anonymous-functions concept"
+    },
+    {
+      "uuid": "b2a3eef0-eb53-4b1b-bf32-167fd2f7d880",
+      "slug": "arithmetic",
+      "name": "Arithmetic",
+      "blurb": "TODO: add blurb for arithmetic concept"
+    },
+    {
+      "uuid": "9afaa6c5-5c25-4f44-a908-5e0f156f7fb3",
+      "slug": "arrays",
+      "name": "Arrays",
+      "blurb": "TODO: add blurb for arrays concept"
+    },
+    {
+      "uuid": "0dcab94c-b2c3-4c9c-b55e-2fbdff83d8cb",
+      "slug": "assignment",
+      "name": "Assignment",
+      "blurb": "TODO: add blurb for assignment concept"
+    },
+    {
+      "uuid": "3147bf8d-9050-4f1a-b267-25f297fc80d7",
+      "slug": "characters",
+      "name": "Characters",
+      "blurb": "TODO: add blurb for characters concept"
+    },
+    {
+      "uuid": "28e84e05-eafd-4774-abc2-2ea76fc5dced",
+      "slug": "code-as-data",
+      "name": "Code As Data",
+      "blurb": "TODO: add blurb for code-as-data concept"
+    },
+    {
+      "uuid": "477a4d8d-41d1-47a4-96f0-b39caeaee513",
+      "slug": "comments",
+      "name": "Comments",
+      "blurb": "TODO: add blurb for comments concept"
+    },
+    {
+      "uuid": "894a6bcc-5b4c-41d1-bfba-a0ca3b121257",
+      "slug": "conditionals",
+      "name": "Conditionals",
+      "blurb": "TODO: add blurb for conditionals concept"
+    },
+    {
+      "uuid": "9afa389a-17e2-4991-ab48-64be5fc955aa",
+      "slug": "cons",
+      "name": "Cons",
+      "blurb": "TODO: add blurb for cons concept"
+    },
+    {
+      "uuid": "b9f5a5fd-57e9-4003-880b-499206e1554f",
+      "slug": "constants",
+      "name": "Constants",
+      "blurb": "TODO: add blurb for constants concept"
+    },
+    {
+      "uuid": "92231d37-27e3-4692-96d4-ff9822a83132",
+      "slug": "destructuring-assignment",
+      "name": "Destructuring Assignment",
+      "blurb": "TODO: add blurb for destructuring-assignment concept"
+    },
+    {
+      "uuid": "16d4b9d8-0484-463a-9273-e0a89d1842e1",
+      "slug": "enumeration",
+      "name": "Enumeration",
+      "blurb": "TODO: add blurb for enumeration concept"
+    },
+    {
+      "uuid": "80ea7d53-76aa-4e89-9d70-45548181a6eb",
+      "slug": "expressions",
+      "name": "Expressions",
+      "blurb": "TODO: add blurb for expressions concept"
+    },
+    {
+      "uuid": "0d0ae380-7f1f-4ac7-8900-d501afd7a48a",
+      "slug": "floating-point-numbers",
+      "name": "Floating Point Numbers",
+      "blurb": "TODO: add blurb for floating-point-numbers concept"
+    },
+    {
+      "uuid": "a7b463d3-4d7f-4b4a-8a47-28307219541d",
+      "slug": "function-definition",
+      "name": "Function Definition",
+      "blurb": "TODO: add blurb for function-definition concept"
+    },
+    {
+      "uuid": "778561a9-c735-4c26-8d07-1baa71b8f94a",
+      "slug": "hash-tables",
+      "name": "Hash Tables",
+      "blurb": "TODO: add blurb for hash-tables concept"
+    },
+    {
+      "uuid": "0f570f2a-3b77-408e-9bd1-3712b12bcd4a",
+      "slug": "higher-order-functions",
+      "name": "Higher Order Functions",
+      "blurb": "TODO: add blurb for higher-order-functions concept"
+    },
+    {
+      "uuid": "e5fefeda-9e02-48c4-9591-fc8a518d99f2",
+      "slug": "integers",
+      "name": "Integers",
+      "blurb": "TODO: add blurb for integers concept"
+    },
+    {
+      "uuid": "65c600a7-7f6a-428f-9913-d6f127f35234",
+      "slug": "lists",
+      "name": "Lists",
+      "blurb": "TODO: add blurb for lists concept"
+    },
+    {
+      "uuid": "5a6598c3-8d92-4eca-b36e-42ba4b435237",
+      "slug": "loop.basic",
+      "name": "Loop Basic",
+      "blurb": "TODO: add blurb for loop.basic concept"
+    },
+    {
+      "uuid": "eb5772d1-756f-48b3-bbaa-7481e10c2bfe",
+      "slug": "multiple-values",
+      "name": "Multiple Values",
+      "blurb": "TODO: add blurb for multiple-values concept"
+    },
+    {
+      "uuid": "654667dc-547a-4ec9-8e83-d1b3df4bbeba",
+      "slug": "nested-functions",
+      "name": "Nested Functions",
+      "blurb": "TODO: add blurb for nested-functions concept"
+    },
+    {
+      "uuid": "58adfe20-f67b-40df-a68a-4c5e07ab5c21",
+      "slug": "packages",
+      "name": "Packages",
+      "blurb": "TODO: add blurb for packages concept"
+    },
+    {
+      "uuid": "c54d3099-ce89-4745-942a-ab8e1ec00ad3",
+      "slug": "printing",
+      "name": "Printing",
+      "blurb": "TODO: add blurb for printing concept"
+    },
+    {
+      "uuid": "9dc0a29a-6742-43ee-a03d-581dff2c1855",
+      "slug": "recursion",
+      "name": "Recursion",
+      "blurb": "TODO: add blurb for recursion concept"
+    },
+    {
+      "uuid": "c04de4d9-d69f-429f-916f-48ab461112ee",
+      "slug": "sameness",
+      "name": "Sameness",
+      "blurb": "TODO: add blurb for sameness concept"
+    },
+    {
+      "uuid": "5774aac1-e8c6-439f-97ee-27f4febc1b26",
+      "slug": "sets",
+      "name": "Sets",
+      "blurb": "TODO: add blurb for sets concept"
+    },
+    {
+      "uuid": "630eaa07-1239-4548-be46-e695c8a2c73f",
+      "slug": "strings",
+      "name": "Strings",
+      "blurb": "TODO: add blurb for strings concept"
+    },
+    {
+      "uuid": "3d57a337-1bea-4677-923d-39b4fb2c1e7b",
+      "slug": "structures",
+      "name": "Structures",
+      "blurb": "TODO: add blurb for structures concept"
+    },
+    {
+      "uuid": "c9ac82a1-19da-4aff-8184-8727efa67364",
+      "slug": "symbols",
+      "name": "Symbols",
+      "blurb": "TODO: add blurb for symbols concept"
+    },
+    {
+      "uuid": "59de6711-b247-4f06-8030-94633cf16a65",
+      "slug": "truthy-and-falsy",
+      "name": "Truthy And Falsy",
+      "blurb": "TODO: add blurb for truthy-and-falsy concept"
+    },
+    {
+      "uuid": "6e40e924-f9a1-4dce-9d23-44f922e3ba48",
+      "slug": "variables",
+      "name": "Variables",
+      "blurb": "TODO: add blurb for variables concept"
+    }
+  ],
+  "practice": [
+    {
+      "slug": "hello-world",
+      "uuid": "d4af6cfa-d468-15b5-dcdf-7d717ddf6556",
+      "prerequisites": [],
+      "topics": ["strings"],
+      "difficulty": 1
+    },
+    {
+      "slug": "two-fer",
+      "uuid": "b80ab7d9-6152-4351-b405-07c2fb071962",
+      "prerequisites": [],
+      "topics": ["optional_values", "strings", "text_formatting"],
+      "difficulty": 1
+    },
+    {
+      "slug": "hamming",
+      "uuid": "c029678b-9b9f-4fb2-958f-3a118efa16a9",
+      "prerequisites": [],
+      "topics": ["conditionals", "equality", "filtering", "loops", "strings"],
+      "difficulty": 1
+    },
+    {
+      "slug": "rna-transcription",
+      "uuid": "5c215cbf-a575-42ad-9b3f-892410a63077",
+      "prerequisites": [],
+      "topics": ["conditionals", "strings", "transforming"],
+      "difficulty": 1
+    },
+    {
+      "slug": "leap",
+      "uuid": "8bfa54a8-4ee6-4e6e-b286-7fc8c70b9e9f",
+      "prerequisites": [],
+      "topics": ["conditionals", "equality", "integers", "logic"],
+      "difficulty": 1
+    },
+    {
+      "slug": "anagram",
+      "uuid": "b9fd0f13-966c-4085-ac9d-ed49a96ac0bf",
+      "prerequisites": [],
+      "topics": ["equality", "filtering", "strings"],
+      "difficulty": 1
+    },
+    {
+      "slug": "beer-song",
+      "uuid": "5c6f22e7-109c-4d9e-b8bf-4ea63b2823ca",
+      "prerequisites": [],
+      "topics": ["conditionals", "integers", "loops", "text_formatting"],
+      "difficulty": 2
+    },
+    {
+      "slug": "roman-numerals",
+      "uuid": "150d3608-d234-4c9e-ab6d-2d91f8a2c855",
+      "prerequisites": [],
+      "topics": [
+        "conditionals",
+        "integers",
+        "loops",
+        "strings",
+        "text_formatting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "slug": "word-count",
+      "uuid": "424ed7aa-24f3-4aec-9620-3cc9dc224166",
+      "prerequisites": [],
+      "topics": ["conditionals", "filtering", "loops", "strings"],
+      "difficulty": 2
+    },
+    {
+      "slug": "bob",
+      "uuid": "1e6c8365-775d-4a4f-8fc7-e376912d7912",
+      "prerequisites": [],
+      "topics": ["conditionals", "parsing", "strings"],
+      "difficulty": 1
+    },
+    {
+      "slug": "luhn",
+      "uuid": "7cc9d827-b08e-437d-826e-244f220feca0",
+      "prerequisites": [],
+      "topics": ["algorithms", "strings", "transforming"],
+      "difficulty": 5
+    },
+    {
+      "slug": "all-your-base",
+      "uuid": "9b01a3bd-68fe-4171-8e5e-ff3351865aaf",
+      "prerequisites": [],
+      "topics": ["integers", "math", "transforming"],
+      "difficulty": 1
+    },
+    {
+      "slug": "acronym",
+      "uuid": "a999c375-f2e2-4d47-a9e2-5af923cd46d1",
+      "prerequisites": [],
+      "topics": ["strings", "transforming"],
+      "difficulty": 1
+    },
+    {
+      "slug": "twelve-days",
+      "uuid": "40ce6656-b8f5-4156-94b6-d634876215b2",
+      "prerequisites": [],
+      "topics": ["algorithms", "strings"],
+      "difficulty": 4
+    },
+    {
+      "slug": "sublist",
+      "uuid": "428e5b28-31b6-4c84-8eae-d7753d45efc1",
+      "prerequisites": [],
+      "topics": ["lists"],
+      "difficulty": 1
+    },
+    {
+      "slug": "grains",
+      "uuid": "eb3a92bf-0748-4406-ba67-9e27e367ae45",
+      "prerequisites": [],
+      "topics": ["integers", "variables"],
+      "difficulty": 1
+    },
+    {
+      "slug": "gigasecond",
+      "uuid": "25506c31-7274-402a-95e1-8475fcdb34e1",
+      "prerequisites": [],
+      "topics": ["dates", "integers", "time", "transforming", "variables"],
+      "difficulty": 1
+    },
+    {
+      "slug": "robot-name",
+      "uuid": "79a4a35c-40d6-4e2d-92a1-005c40b4f4c5",
+      "prerequisites": [],
+      "topics": ["randomness", "strings", "variables"],
+      "difficulty": 2
+    },
+    {
+      "slug": "raindrops",
+      "uuid": "b5345fcb-d4cc-4ea0-b1b9-f1b0cb92f05c",
+      "prerequisites": [],
+      "topics": ["conditionals", "filtering", "integers"],
+      "difficulty": 1
+    },
+    {
+      "slug": "grade-school",
+      "uuid": "841641f2-16ba-4dc5-af1b-ffae5052853a",
+      "prerequisites": [],
+      "topics": ["interfaces", "lists", "maps", "sorting", "variables"],
+      "difficulty": 2
+    },
+    {
+      "slug": "phone-number",
+      "uuid": "d1d86b51-a3f4-4276-a18c-6db54bc8dfcc",
+      "prerequisites": [],
+      "topics": ["interfaces", "parsing", "strings"],
+      "difficulty": 2
+    },
+    {
+      "slug": "etl",
+      "uuid": "52ac3dd0-8803-445f-93cf-e984b59d6702",
+      "prerequisites": [],
+      "topics": ["loops", "maps", "transforming"],
+      "difficulty": 1
+    },
+    {
+      "slug": "space-age",
+      "uuid": "d24cf0ea-876f-4775-969b-99970425e413",
+      "prerequisites": [],
+      "topics": ["floating_point_numbers", "interfaces", "transforming"],
+      "difficulty": 1
+    },
+    {
+      "slug": "nucleotide-count",
+      "uuid": "b2ad38c2-2962-4a47-9b14-20ca262ebff6",
+      "prerequisites": [],
+      "topics": ["loops", "maps", "sorting", "strings"],
+      "difficulty": 1
+    },
+    {
+      "slug": "collatz-conjecture",
+      "uuid": "b3ad38c2-2962-4b47-9b14-20ca262ebff6",
+      "prerequisites": [],
+      "topics": ["integers", "math", "recursion"],
+      "difficulty": 1
+    },
+    {
+      "slug": "perfect-numbers",
+      "uuid": "b3ad38c2-2962-4b47-9b15-15ca262ebff6",
+      "prerequisites": [],
+      "topics": ["math"],
+      "difficulty": 1
+    },
+    {
+      "slug": "isogram",
+      "uuid": "89ea51d0-3f7e-4e07-8e2b-4dde4c76608b",
+      "prerequisites": [],
+      "topics": ["strings"],
+      "difficulty": 1
+    },
+    {
+      "slug": "meetup",
+      "uuid": "6c702aa9-70f3-41d0-bc76-4323a08f8fbf",
+      "prerequisites": [],
+      "topics": ["conditionals", "dates", "filtering"],
+      "difficulty": 3
+    },
+    {
+      "slug": "triangle",
+      "uuid": "bd2a55e3-9874-4d2e-ad6f-4b2f8c5e2e0a",
+      "prerequisites": [],
+      "topics": [
+        "conditionals",
+        "filtering",
+        "floating_point_numbers",
+        "integers"
+      ],
+      "difficulty": 1
+    },
+    {
+      "slug": "difference-of-squares",
+      "uuid": "71804ace-6ca1-46b9-bf06-ff57faef7afa",
+      "prerequisites": [],
+      "topics": ["floating_point_numbers", "integers", "loops", "math"],
+      "difficulty": 1
+    },
+    {
+      "slug": "scrabble-score",
+      "uuid": "f350f23d-72f8-4f47-a0f5-fe3c00f3f5f1",
+      "prerequisites": [],
+      "topics": ["games", "loops", "maps", "strings"],
+      "difficulty": 1
+    },
+    {
+      "slug": "binary",
+      "uuid": "005ff8b4-9df8-4b82-b919-a0c67356d654",
+      "prerequisites": [],
+      "topics": ["bitwise_operations", "conditionals", "integers", "math"],
+      "difficulty": 1
+    },
+    {
+      "slug": "allergies",
+      "uuid": "d2fd481e-7156-452d-976d-ea6df220fa18",
+      "prerequisites": [],
+      "topics": [
+        "bitwise_operations",
+        "conditionals",
+        "integers",
+        "text_formatting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "slug": "sieve",
+      "uuid": "40f3b911-0739-4fec-95cc-cfab99788c19",
+      "prerequisites": [],
+      "topics": [
+        "conditionals",
+        "filtering",
+        "integers",
+        "loops",
+        "maps",
+        "math"
+      ],
+      "difficulty": 1
+    },
+    {
+      "slug": "strain",
+      "uuid": "1a81aac9-9128-48ab-aa6a-4d981d6eb602",
+      "prerequisites": [],
+      "topics": ["conditionals", "filtering", "loops", "sequences"],
+      "difficulty": 1
+    },
+    {
+      "slug": "atbash-cipher",
+      "uuid": "71a1fdb6-414e-452c-8d24-03f2a5621e62",
+      "prerequisites": [],
+      "topics": ["conditionals", "loops", "sequences", "transforming"],
+      "difficulty": 2
+    },
+    {
+      "slug": "prime-factors",
+      "uuid": "cc138097-7c0f-44b4-b07e-2a24f6475986",
+      "prerequisites": [],
+      "topics": [
+        "conditionals",
+        "filtering",
+        "integers",
+        "loops",
+        "maps",
+        "math"
+      ],
+      "difficulty": 2
+    },
+    {
+      "slug": "crypto-square",
+      "uuid": "fcfc6b44-597d-4a03-bf02-6be5c8f7ae4e",
+      "prerequisites": [],
+      "topics": ["arrays", "conditionals", "loops", "strings", "transforming"],
+      "difficulty": 3
+    },
+    {
+      "slug": "trinary",
+      "uuid": "ff3eb2c5-c7ce-4352-805c-e01d4fb85aa6",
+      "prerequisites": [],
+      "topics": ["conditionals", "integers", "math"],
+      "difficulty": 1
+    },
+    {
+      "slug": "pascals-triangle",
+      "uuid": "34bc4fbe-f148-4519-a699-91efed432703",
+      "prerequisites": [],
+      "topics": ["integers", "loops", "math", "sequences"],
+      "difficulty": 1
+    },
+    {
+      "slug": "armstrong-numbers",
+      "uuid": "9319d1a6-276f-4b3b-8305-fc022cc48ef2",
+      "prerequisites": [],
+      "topics": ["integers", "lists", "math"],
+      "difficulty": 1
+    },
+    {
+      "slug": "robot-simulator",
+      "uuid": "d218cf9e-3b35-4357-9734-87142c22d551",
+      "prerequisites": [],
+      "topics": ["loops", "sequences", "strings"],
+      "difficulty": 2
+    },
+    {
+      "slug": "binary-search",
+      "uuid": "b327bd9a-b12e-490b-91cb-d3c21a23b4eb",
+      "prerequisites": [],
+      "topics": ["loops", "sequences", "strings"],
+      "difficulty": 1
+    }
+  ]
 }

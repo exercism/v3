@@ -3,6 +3,10 @@
     {
       "github_username": "ErikSchierboom",
       "exercism_username": "ErikSchierboom"
+    },
+    {
+      "github_username": "valentin-p",
+      "exercism_username": "valentin-p"
     }
   ],
   "authors": [
@@ -10,5 +14,9 @@
       "github_username": "mikedamay",
       "exercism_username": "mikedamay"
     }
-  ]
+  ],
+  "editor": {
+    "solution_files": ["Switch-statements.cs"],
+    "test_files": ["Switch-statementsTests.cs"]
+  }
 }

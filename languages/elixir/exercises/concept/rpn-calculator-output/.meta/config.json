@@ -1,0 +1,19 @@
+{
+  "authors": [
+    {
+      "github_username": "neenjaw",
+      "exercism_username": "neenjaw"
+    }
+  ],
+  "contributors": [
+    {
+      "github_username": "angelikatyborska",
+      "exercism_username": "angelikatyborska"
+    }
+  ],
+  "editor": {
+    "solution_files": ["lib/rpn_calculator.ex"],
+    "test_files": ["test/rpn_calculator/output_test.exs"]
+  },
+  "language_versions": ">=1.10"
+}

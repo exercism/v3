@@ -107,11 +107,11 @@ module Parser =
               Status = parseImplementationStatus languagesDirectory slug exercise }
         
         match paragraphs with
-        | [Span(body = IndirectLink(body = [Literal]; key = key)::_)] ->
+        | [Span(body = IndirectLink(body = [Literal(_)]; key = key)::_)] ->
             parseLink markdown key
             |> Option.bind parseSlugAndExercise
             |> Option.map createImplementation
-        | [Span(body = [DirectLink(body = [Literal]; link = link)])] ->
+        | [Span(body = [DirectLink(body = [Literal(_)]; link = link)])] ->
             parseSlugAndExercise link
             |> Option.map createImplementation
         | _ -> None
@@ -257,9 +257,7 @@ module Markdown =
             .AppendLine() |> ignore
         
         let renderLine conceptColumn nameColumn descriptionColumn =
-            markdown
-                .AppendFormat(sprintf "| %s | %s | %s |" conceptColumn nameColumn descriptionColumn)
-                .AppendLine() |> ignore
+            markdown.AppendLine(sprintf "| %s | %s | %s |" conceptColumn nameColumn descriptionColumn) |> ignore
         
         renderLine "Concept" "Story" "Description"
         renderLine "-" "-" "-"

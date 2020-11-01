@@ -83,7 +83,7 @@ This exercise implements some phrases an eccentric party robot would say.
 [type-char]: ./char.md
 [implementation-cpp]: ../../languages/cpp/exercises/concept/strings/.docs/introduction.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/strings/.docs/introduction.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/strings/.docs/introduction.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/high-school-sweetheart/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/strings/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/strings/.docs/introduction.md
 [implementation-python]: ../../languages/python/exercises/concept/strings/.docs/introduction.md

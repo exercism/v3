@@ -48,9 +48,9 @@ This exercise deals with creating set of functions which return functions that m
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/introduction.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/introduction.md
-[implementation-julia]: ../../languages/julia/exercises/concept/functions-introduction/.docs/introduction.md
-[implementation-ruby]: ../../languages/ruby/exercises/concept/basics/.docs/introduction.md
-[implementation-elixir-lasagna]: ../../languages/elixir/exercises/concept/basics/.docs/introduction.md
-[implementation-elixir-closuremaker]: ../../languages/elixir/exercises/concept/anonymous-functions/.docs/introduction.md
+[implementation-julia]: ../../languages/julia/exercises/concept/lasagna/.docs/introduction.md
+[implementation-ruby]: ../../languages/ruby/exercises/concept/lasagna/.docs/introduction.md
+[implementation-elixir-lasagna]: ../../languages/elixir/exercises/concept/lasagna/.docs/introduction.md
+[implementation-elixir-closuremaker]: ../../languages/elixir/exercises/concept/secrets/.docs/introduction.md
 [concept-functions]: ../concepts/functions.md
 [concept-generics]: ../concepts/generics.md

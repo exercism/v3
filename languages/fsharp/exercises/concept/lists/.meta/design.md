@@ -20,7 +20,7 @@
 
 - `lists`: know of the existence of the `list` type; know how to define an empty and non-empty list; know how to add an element to a list; know some common list functions; know how to pattern match on lists.
 
-## Prequisites
+## Prerequisites
 
 - `strings`: the lists are lists of strings.
 - `booleans`: return a `bool`.

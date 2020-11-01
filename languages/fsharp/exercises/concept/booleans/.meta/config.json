@@ -5,5 +5,9 @@
       "exercism_username": "ErikSchierboom"
     }
   ],
-  "forked_from": ["javascript/booleans"]
+  "forked_from": ["javascript/booleans"],
+  "editor": {
+    "solution_files": ["Booleans.fs"],
+    "test_files": ["BooleansTests.fs"]
+  }
 }
