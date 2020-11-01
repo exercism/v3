@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-   "solution_files": ["pal-picker.lisp"],
+    "solution_files": ["pal-picker.lisp"],
     "test_files": ["pal-picker-test.lisp"]
   }
 }
