@@ -33,11 +33,6 @@ When converting between numeric types, there are two types of numeric conversion
 
 Complex numbers are represented with [`std::complex`][complex] standard module.
 
-### NULL
-
-[NULL][null] is a constant expression of integer type that evaluates to zero.
-
 [fundamental-types]: https://en.cppreference.com/w/cpp/language/types
 [numeric-limits]: https://en.cppreference.com/w/cpp/types/numeric_limits
 [complex]: https://en.cppreference.com/w/cpp/numeric/complex
-[null]: https://en.cppreference.com/w/cpp/types/NULL
