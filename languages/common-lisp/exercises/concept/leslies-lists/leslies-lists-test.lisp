@@ -1,20 +1,20 @@
-;; Ensures that lists.lisp and the testing library are always loaded
+;; Ensures that leslies-lists.lisp and the testing library are always loaded
 (eval-when (:compile-toplevel :load-toplevel :execute)
-  (load "lists")
+  (load "leslies-lists")
   (ql:quickload :fiveam))
 
-;; Defines the testing package with symbols from lists and FiveAM in scope
+;; Defines the testing package with symbols from leslies-lists and FiveAM in scope
 ;; The `run-tests` function is exported for use by both the user and test-runner
-(defpackage lists-test
-  (:use :cl :fiveam :lists)
+(defpackage leslies-lists-test
+  (:use :cl :fiveam :leslies-lists)
   (:export :run-tests))
 
 ;; Enter the testing package
-(in-package :lists-test)
+(in-package :leslies-lists-test)
 
 ;; Define and enter a new FiveAM test-suite
-(def-suite lists-suite)
-(in-suite lists-suite)
+(def-suite leslies-lists-suite)
+(in-suite leslies-lists-suite)
 
 (test new-list "Leslie needs a way to make a new empty list"
       (is (equal '() (new-list))))
@@ -65,5 +65,5 @@
 ;; results to the test runner. The default upon calling `(run-tests)` is to
 ;; explain the results in a human-readable way
 (defun run-tests (&optional (explain t))
-  (let ((tests (run 'lists-suite))) ; Run the tests once
+  (let ((tests (run 'leslies-lists-suite))) ; Run the tests once
     (if explain (explain! tests) tests))) ; Optionally explain the results

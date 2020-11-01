@@ -1,4 +1,4 @@
-(defpackage sameness
+(defpackage key-comparison
   (:use :cl)
   (:export
    :key-object-identity
@@ -15,7 +15,7 @@
    :key-conses-of-numbers-of-different-types
    :key-arrays
    :key-arrays-loosely))
-(in-package :sameness)
+(in-package :key-comparison)
 
 (defun key-object-identity (x y))
 (defun key-numbers (x y))

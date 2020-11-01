@@ -10,7 +10,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["arithmetic.lisp"],
-    "test_files": ["arithmetic-test.lisp"]
+    "solution_files": ["pizza-pi.lisp"],
+    "test_files": ["pizza-pi-test.lisp"]
   }
 }

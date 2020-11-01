@@ -1,9 +1,9 @@
-(defpackage conditionals
+(defpackage pal-picker
   (:use :cl)
   (:export :pal-picker :habitat-fitter :feeding-time-p
            :pet :play-fetch))
 
-(in-package :conditionals)
+(in-package :pal-picker)
 
 (defun pal-picker (personality))
 

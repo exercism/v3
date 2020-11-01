@@ -11,13 +11,15 @@
   "exercises": {
     "concept": [
       {
-        "slug": "basics",
+        "slug": "socks-and-sexprs",
+        "name": "Sorting Socks and Sexprs",
         "uuid": "6787f07b-6fca-48ec-9ed1-f37bb77126f2",
         "concepts": ["comments", "expressions", "cons", "symbols"],
         "prerequisites": []
       },
       {
-        "slug": "sameness",
+        "slug": "key-comparison",
+        "name": "The Key to Comparison",
         "uuid": "d780fb3e-c9f8-11ea-af82-3200111e0c80",
         "concepts": ["sameness"],
         "prerequisites": [
@@ -30,7 +32,8 @@
         ]
       },
       {
-        "slug": "arithmetic",
+        "slug": "pizza-pi",
+        "name": "Pizza Pi",
         "uuid": "f78cff23-2106-4e35-b439-2d8bd2830770",
         "concepts": ["integers", "floating-point-numbers", "arithmetic"],
         "prerequisites": ["expressions"]
@@ -170,8 +173,9 @@
         ]
       },
       {
-        "slug": "lists",
-        "uuid": null,
+        "slug": "leslies-lists",
+        "name": "Leslie's Lengthy Lists",
+        "uuid": "fd1aaa1a-f3c0-419e-a713-761c5147a5e1",
         "concepts": ["lists"],
         "prerequisites": ["cons", "symbols", "arithmetic"]
       },
@@ -206,7 +210,8 @@
         ]
       },
       {
-        "slug": "conditionals",
+        "slug": "pal-picker",
+        "name": "Pal Picker",
         "uuid": "c0155014-4d11-4cb2-872b-6dfdf794f7cd",
         "concepts": ["conditionals", "truthy-and-falsy"],
         "prerequisites": [

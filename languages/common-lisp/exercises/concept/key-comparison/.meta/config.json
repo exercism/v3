@@ -10,7 +10,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["basics.lisp"],
-    "test_files": ["basics-test.lisp"]
+    "solution_files": ["key-comparison.lisp"],
+    "test_files": ["key-comparison-test.lisp"]
   }
 }
