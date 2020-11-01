@@ -9,7 +9,7 @@ These are the concept exercises that have currently been implemented, as well as
 | exercise                                                            | concepts                             | prerequisites                                           |
 | ------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------- |
 | [`strings`][concept-exercise-strings]                               | `strings`                            | -                                                       |
-| [`basics`][concept-exercise-basics]                                 | `basics`                             | -                                                       |
+| [`lasagna`][concept-exercise-lasagna]                               | `basics`                             | -                                                       |
 | [`numbers`][concept-exercise-numbers]                               | `numbers`<br/>`conditionals`         | `booleans`                                              |
 | [`floating-point-numbers`][concept-exercise-floating-point-numbers] | `floating-point-numbers`<br/>`loops` | `numbers`<br/>`conditionals`                            |
 | [`arrays`][concept-exercise-arrays]                                 | `arrays`<br/>`each-loops`            | `classes`<br/>`chars`<br/>`booleans`<br/>`conditionals` |
@@ -29,7 +29,7 @@ To contribute, please find and work on one of the [new exercise issues][issues-n
 [reference-shared]: ../../reference/README.md
 [concept-exercise-arrays]: ./arrays/.meta/design.md
 [concept-exercise-strings]: ./strings/.meta/design.md
-[concept-exercise-basics]: ./basics/.meta/design.md
+[concept-exercise-lasagna]: ./lasagna/.meta/design.md
 [concept-exercise-numbers]: ./numbers/.meta/design.md
 [concept-exercise-booleans]: ./booleans/.meta/design.md
 [concept-exercise-floating-point-numbers]: ./floating-point-numbers/.meta/design.md

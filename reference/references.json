@@ -107,6 +107,23 @@
     ]
   },
   {
+    "name": "array-destructuring",
+    "variations": [
+      "array-destructuring",
+      "array-destructurings",
+      "array_destructuring"
+    ],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-destructuring",
+        "exercise": "array-destructuring",
+        "track": "javascript",
+        "language": "JavaScript"
+      }
+    ]
+  },
+  {
     "name": "arrays",
     "variations": ["arrays", "array"],
     "documents": [
@@ -129,8 +146,8 @@
         "language": "Ruby"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/arrays",
-        "exercise": "arrays",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/magician-in-training",
+        "exercise": "magician-in-training",
         "track": "swift",
         "language": "Swift"
       },
@@ -208,8 +225,8 @@
         "language": "Python"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna",
+        "exercise": "lasagna",
         "track": "swift",
         "language": "Swift"
       },
@@ -343,8 +360,8 @@
         "language": "Ruby"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
+        "exercise": "vehicle-purchase",
         "track": "swift",
         "language": "Swift"
       },
@@ -414,14 +431,7 @@
     "name": "capturing",
     "variations": ["capturing", "capturings"],
     "documents": [],
-    "implementations": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
-        "exercise": "closures",
-        "track": "swift",
-        "language": "Swift"
-      }
-    ]
+    "implementations": []
   },
   {
     "name": "case",
@@ -520,8 +530,8 @@
         "language": "Java"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/structs-and-classes",
-        "exercise": "structs-and-classes",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/windowing-system",
+        "exercise": "windowing-system",
         "track": "swift",
         "language": "Swift"
       },
@@ -543,12 +553,6 @@
       }
     ],
     "implementations": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
-        "exercise": "closures",
-        "track": "swift",
-        "language": "Swift"
-      },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/closures",
         "exercise": "closures",
@@ -674,8 +678,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
+        "exercise": "vehicle-purchase",
         "track": "swift",
         "language": "Swift"
       }
@@ -699,8 +703,8 @@
         "language": "Java"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
+        "exercise": "vehicle-purchase",
         "track": "swift",
         "language": "Swift"
       }
@@ -722,8 +726,8 @@
         "language": "Go"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
+        "exercise": "vehicle-purchase",
         "track": "swift",
         "language": "Swift"
       }
@@ -770,8 +774,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna",
+        "exercise": "lasagna",
         "track": "swift",
         "language": "Swift"
       },
@@ -819,8 +823,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
-        "exercise": "loops",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/master-mixologist",
+        "exercise": "master-mixologist",
         "track": "swift",
         "language": "Swift"
       }
@@ -882,8 +886,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-        "exercise": "functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+        "exercise": "lasagna-master",
         "track": "swift",
         "language": "Swift"
       }
@@ -937,6 +941,12 @@
       }
     ],
     "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/high-score-board",
+        "exercise": "high-score-board",
+        "track": "swift",
+        "language": "Swift"
+      },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/dictionaries",
         "exercise": "dictionaries",
@@ -1009,8 +1019,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
-        "exercise": "\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/emoji-times",
+        "exercise": "emoji-times",
         "track": "julia",
         "language": "Julia"
       }
@@ -1130,8 +1140,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/higher-order-functions",
-        "exercise": "higher-order-functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/secret-agent",
+        "exercise": "secret-agent",
         "track": "swift",
         "language": "Swift"
       }
@@ -1271,12 +1281,6 @@
         "exercise": "floating-point-numbers",
         "track": "fsharp",
         "language": "F#"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpn-calculator",
-        "exercise": "rpn-calculator",
-        "track": "elixir",
-        "language": "Elixir"
       }
     ]
   },
@@ -1286,8 +1290,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
-        "exercise": "loops",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/master-mixologist",
+        "exercise": "master-mixologist",
         "track": "swift",
         "language": "Swift"
       },
@@ -1332,8 +1336,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-        "exercise": "functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+        "exercise": "lasagna-master",
         "track": "swift",
         "language": "Swift"
       }
@@ -1356,8 +1360,8 @@
         "language": "Go"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna",
+        "exercise": "lasagna",
         "track": "swift",
         "language": "Swift"
       }
@@ -1373,8 +1377,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/functions-introduction",
-        "exercise": "functions-introduction",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/lasagna",
+        "exercise": "lasagna",
         "track": "julia",
         "language": "Julia"
       }
@@ -1456,8 +1460,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/higher-order-functions",
-        "exercise": "higher-order-functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/secret-agent",
+        "exercise": "secret-agent",
         "track": "swift",
         "language": "Swift"
       }
@@ -1495,8 +1499,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/string-components",
-        "exercise": "string-components",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/poetry-club",
+        "exercise": "poetry-club",
         "track": "swift",
         "language": "Swift"
       }
@@ -1532,8 +1536,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/structs-and-classes",
-        "exercise": "structs-and-classes",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/windowing-system",
+        "exercise": "windowing-system",
         "track": "swift",
         "language": "Swift"
       }
@@ -1550,8 +1554,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-        "exercise": "functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+        "exercise": "lasagna-master",
         "track": "swift",
         "language": "Swift"
       }
@@ -1595,12 +1599,6 @@
         "exercise": "arithmetic",
         "track": "common-lisp",
         "language": "Common Lisp"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpn-calculator",
-        "exercise": "rpn-calculator",
-        "track": "elixir",
-        "language": "Elixir"
       }
     ]
   },
@@ -1742,8 +1740,8 @@
         "language": "Ruby"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
-        "exercise": "loops",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/master-mixologist",
+        "exercise": "master-mixologist",
         "track": "swift",
         "language": "Swift"
       }
@@ -1783,8 +1781,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
-        "exercise": "matrices-introduction",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
+        "exercise": "exercism-matrix",
         "track": "julia",
         "language": "Julia"
       }
@@ -1796,8 +1794,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
-        "exercise": "matrices-introduction",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
+        "exercise": "exercism-matrix",
         "track": "julia",
         "language": "Julia"
       }
@@ -1813,8 +1811,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
-        "exercise": "matrices-introduction",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
+        "exercise": "exercism-matrix",
         "track": "julia",
         "language": "Julia"
       }
@@ -1830,8 +1828,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
-        "exercise": "matrices-introduction",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
+        "exercise": "exercism-matrix",
         "track": "julia",
         "language": "Julia"
       }
@@ -1847,8 +1845,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
-        "exercise": "matrices-introduction",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
+        "exercise": "exercism-matrix",
         "track": "julia",
         "language": "Julia"
       }
@@ -1893,8 +1891,8 @@
         "language": "Go"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/structs-and-classes",
-        "exercise": "structs-and-classes",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/windowing-system",
+        "exercise": "windowing-system",
         "track": "swift",
         "language": "Swift"
       }
@@ -1971,8 +1969,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-        "exercise": "functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+        "exercise": "lasagna-master",
         "track": "swift",
         "language": "Swift"
       }
@@ -2027,8 +2025,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-        "exercise": "functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+        "exercise": "lasagna-master",
         "track": "swift",
         "language": "Swift"
       }
@@ -2126,8 +2124,8 @@
         "language": "Rust"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/numbers",
-        "exercise": "numbers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/freelancer-rates",
+        "exercise": "freelancer-rates",
         "track": "swift",
         "language": "Swift"
       },
@@ -2187,8 +2185,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/string-components",
-        "exercise": "string-components",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/poetry-club",
+        "exercise": "poetry-club",
         "track": "swift",
         "language": "Swift"
       }
@@ -2247,8 +2245,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/optionals",
-        "exercise": "optionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/pizza-slices",
+        "exercise": "pizza-slices",
         "track": "swift",
         "language": "Swift"
       }
@@ -2601,8 +2599,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
-        "exercise": "loops",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/master-mixologist",
+        "exercise": "master-mixologist",
         "track": "swift",
         "language": "Swift"
       }
@@ -2635,6 +2633,19 @@
         "exercise": "resource-lifetime",
         "track": "csharp",
         "language": "C#"
+      }
+    ]
+  },
+  {
+    "name": "rest-elements",
+    "variations": ["rest-elements", "rest-element", "rest_elements"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-destructuring",
+        "exercise": "array-destructuring",
+        "track": "javascript",
+        "language": "JavaScript"
       }
     ]
   },
@@ -2674,8 +2685,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/structs-and-classes",
-        "exercise": "structs-and-classes",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/windowing-system",
+        "exercise": "windowing-system",
         "track": "swift",
         "language": "Swift"
       }
@@ -2707,14 +2718,7 @@
       "shorthand_arguments"
     ],
     "documents": [],
-    "implementations": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
-        "exercise": "closures",
-        "track": "swift",
-        "language": "Swift"
-      }
-    ]
+    "implementations": []
   },
   {
     "name": "slices",
@@ -2735,13 +2739,26 @@
     ]
   },
   {
+    "name": "spread-operator",
+    "variations": ["spread-operator", "spread-operators", "spread_operator"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-destructuring",
+        "exercise": "array-destructuring",
+        "track": "javascript",
+        "language": "JavaScript"
+      }
+    ]
+  },
+  {
     "name": "stored-properties",
     "variations": ["stored-properties", "stored-property", "stored_properties"],
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/structs-and-classes",
-        "exercise": "structs-and-classes",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/windowing-system",
+        "exercise": "windowing-system",
         "track": "swift",
         "language": "Swift"
       }
@@ -2783,8 +2800,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/string-components",
-        "exercise": "string-components",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/poetry-club",
+        "exercise": "poetry-club",
         "track": "swift",
         "language": "Swift"
       }
@@ -2813,8 +2830,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/string-components",
-        "exercise": "string-components",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/poetry-club",
+        "exercise": "poetry-club",
         "track": "swift",
         "language": "Swift"
       }
@@ -2909,8 +2926,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/strings-and-characters",
-        "exercise": "strings-and-characters",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/custom-signs",
+        "exercise": "custom-signs",
         "track": "swift",
         "language": "Swift"
       }
@@ -2965,8 +2982,8 @@
         "language": "Rust"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/structs-and-classes",
-        "exercise": "structs-and-classes",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/windowing-system",
+        "exercise": "windowing-system",
         "track": "swift",
         "language": "Swift"
       },
@@ -3061,8 +3078,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
+        "exercise": "vehicle-purchase",
         "track": "swift",
         "language": "Swift"
       }
@@ -3130,14 +3147,7 @@
       "trailing_closures"
     ],
     "documents": [],
-    "implementations": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
-        "exercise": "closures",
-        "track": "swift",
-        "language": "Swift"
-      }
-    ]
+    "implementations": []
   },
   {
     "name": "truthy-and-falsy",
@@ -3208,8 +3218,8 @@
         "language": "Python"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/tuples",
-        "exercise": "tuples",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/santas-helper",
+        "exercise": "santas-helper",
         "track": "swift",
         "language": "Swift"
       },
@@ -3233,8 +3243,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna",
+        "exercise": "lasagna",
         "track": "swift",
         "language": "Swift"
       }
@@ -3269,8 +3279,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
-        "exercise": "\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
+        "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/emoji-times",
+        "exercise": "emoji-times",
         "track": "julia",
         "language": "Julia"
       }
@@ -3310,8 +3320,8 @@
         "language": "Go"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna",
+        "exercise": "lasagna",
         "track": "swift",
         "language": "Swift"
       }
@@ -3327,8 +3337,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-        "exercise": "functions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+        "exercise": "lasagna-master",
         "track": "swift",
         "language": "Swift"
       }
@@ -3353,8 +3363,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
-        "exercise": "loops",
+        "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/master-mixologist",
+        "exercise": "master-mixologist",
         "track": "swift",
         "language": "Swift"
       },
