@@ -459,12 +459,6 @@
         "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/basics/.docs/instructions.md"
       },
       {
-        "track": "Common Lisp",
-        "slug": "common-lisp",
-        "exercise": "basics",
-        "url": "https://github.com/exercism/v3/blob/master/languages/common-lisp/exercises/concept/basics/.docs/instructions.md"
-      },
-      {
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "lasagna",
@@ -530,6 +524,12 @@
         "url": "https://github.com/exercism/v3/blob/master/languages/rust/exercises/concept/enums/.docs/instructions.md"
       },
       {
+        "track": "Python",
+        "slug": "python",
+        "exercise": "log-levels",
+        "url": "https://github.com/exercism/v3/blob/master/languages/python/exercises/concept/log-levels/.docs/instructions.md"
+      },
+      {
         "track": "Swift",
         "slug": "swift",
         "exercise": "log-lines",
@@ -579,8 +579,8 @@
       {
         "track": "Python",
         "slug": "python",
-        "exercise": "strings",
-        "url": "https://github.com/exercism/v3/blob/master/languages/python/exercises/concept/strings/.docs/instructions.md"
+        "exercise": "processing-logs",
+        "url": "https://github.com/exercism/v3/blob/master/languages/python/exercises/concept/processing-logs/.docs/instructions.md"
       },
       {
         "track": "Ruby",
@@ -701,8 +701,8 @@
       {
         "track": "Python",
         "slug": "python",
-        "exercise": "bools",
-        "url": "https://github.com/exercism/v3/blob/master/languages/python/exercises/concept/bools/.docs/instructions.md"
+        "exercise": "ghost-gobble-arcade-game",
+        "url": "https://github.com/exercism/v3/blob/master/languages/python/exercises/concept/ghost-gobble-arcade-game/.docs/instructions.md"
       }
     ]
   },
