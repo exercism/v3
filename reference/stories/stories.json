@@ -459,12 +459,6 @@
         "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/basics/.docs/instructions.md"
       },
       {
-        "track": "Common Lisp",
-        "slug": "common-lisp",
-        "exercise": "basics",
-        "url": "https://github.com/exercism/v3/blob/master/languages/common-lisp/exercises/concept/basics/.docs/instructions.md"
-      },
-      {
         "track": "Elixir",
         "slug": "elixir",
         "exercise": "lasagna",
