@@ -10,7 +10,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["basics.lisp"],
-    "test_files": ["basics-test.lisp"]
+    "solution_files": ["socks-and-sexprs.lisp"],
+    "test_files": ["socks-and-sexprs-test.lisp"]
   }
 }

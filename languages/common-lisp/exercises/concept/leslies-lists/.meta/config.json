@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["lists.lisp"],
-    "test_files": ["lists-test.lisp"]
+    "solution_files": ["leslies-lists.lisp"],
+    "test_files": ["leslies-lists-test.lisp"]
   }
 }

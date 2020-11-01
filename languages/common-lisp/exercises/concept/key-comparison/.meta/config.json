@@ -10,7 +10,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["sameness.lisp"],
-    "test_files": ["sameness-test.lisp"]
+    "solution_files": ["key-comparison.lisp"],
+    "test_files": ["key-comparison-test.lisp"]
   }
 }
