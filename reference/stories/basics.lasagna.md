@@ -16,7 +16,6 @@ The story facilitates defining functions:
 ## Implementations
 
 - [C#: basics][implementation-csharp] (reference implementation)
-- [Common Lisp: basics][implementation-common-lisp]
 - [Elixir: basics][implementation-elixir]
 - [F#: basics][implementation-fsharp]
 - [Java: basics][implementation-java]
@@ -41,7 +40,6 @@ The story facilitates defining functions:
 [types-function]: ../types/function.md
 [types-integer]: ../types/integer.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/instructions.md
-[implementation-common-lisp]: ../../languages/common-lisp/exercises/concept/basics/.docs/instructions.md
 [implementation-elixir]: ../../languages/elixir/exercises/concept/lasagna/.docs/instructions.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/instructions.md
 [implementation-java]: ../../languages/java/exercises/concept/basics/.docs/instructions.md
