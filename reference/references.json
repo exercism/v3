@@ -81,8 +81,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/arithmetic",
-        "exercise": "arithmetic",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pizza-pi",
+        "exercise": "pizza-pi",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -595,8 +595,8 @@
         "language": "Go"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/socks-and-sexprs",
+        "exercise": "socks-and-sexprs",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -655,8 +655,8 @@
         "language": "Ruby"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pal-picker",
+        "exercise": "pal-picker",
         "track": "common-lisp",
         "language": "Common Lisp"
       },
@@ -756,8 +756,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/socks-and-sexprs",
+        "exercise": "socks-and-sexprs",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -1217,8 +1217,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/socks-and-sexprs",
+        "exercise": "socks-and-sexprs",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -1271,8 +1271,8 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/arithmetic",
-        "exercise": "arithmetic",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pizza-pi",
+        "exercise": "pizza-pi",
         "track": "common-lisp",
         "language": "Common Lisp"
       },
@@ -1595,8 +1595,8 @@
         "language": "Rust"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/arithmetic",
-        "exercise": "arithmetic",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pizza-pi",
+        "exercise": "pizza-pi",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -1698,8 +1698,8 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/lists",
-        "exercise": "lists",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/leslies-lists",
+        "exercise": "leslies-lists",
         "track": "common-lisp",
         "language": "Common Lisp"
       },
@@ -2666,8 +2666,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/sameness",
-        "exercise": "sameness",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/key-comparison",
+        "exercise": "key-comparison",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -2834,19 +2834,6 @@
         "exercise": "poetry-club",
         "track": "swift",
         "language": "Swift"
-      }
-    ]
-  },
-  {
-    "name": "string-literals",
-    "variations": ["string-literals", "string-literal", "string_literals"],
-    "documents": [],
-    "implementations": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/language-list",
-        "exercise": "language-list",
-        "track": "elixir",
-        "language": "Elixir"
       }
     ]
   },
@@ -3048,8 +3035,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/socks-and-sexprs",
+        "exercise": "socks-and-sexprs",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -3164,8 +3151,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pal-picker",
+        "exercise": "pal-picker",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
