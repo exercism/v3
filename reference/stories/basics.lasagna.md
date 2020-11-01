@@ -21,6 +21,7 @@ The story facilitates defining functions:
 - [Java: basics][implementation-java]
 - [JavaScript: basics][implementation-javascript]
 - [Julia: functions-introduction][implementation-julia]
+- [Python: basics][implemenatation-python]
 - [Ruby: basics][implementation-ruby]
 - [Swift: basics][implementation-swift]
 
@@ -44,6 +45,7 @@ The story facilitates defining functions:
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/instructions.md
 [implementation-java]: ../../languages/java/exercises/concept/basics/.docs/instructions.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/basics/.docs/instructions.md
+[implementation-python]: ../../languages/python/exercises/concept/guidos-gorgeous-lasagna/.docs/instructions.md
 [implementation-julia]: ../../languages/julia/exercises/concept/lasagna/.docs/instructions.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/lasagna/.docs/instructions.md
 [implementation-swift]: ../../languages/swift/exercises/concept/lasagna/.docs/instructions.md
