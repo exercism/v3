@@ -1231,8 +1231,8 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/basics",
-          "slug": "basics",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/socks-and-sexprs",
+          "slug": "socks-and-sexprs",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comments.md",
@@ -1254,8 +1254,8 @@
           "prerequisites": []
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/sameness",
-          "slug": "sameness",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/key-comparison",
+          "slug": "key-comparison",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/sameness.md",
@@ -1290,8 +1290,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/arithmetic",
-          "slug": "arithmetic",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pizza-pi",
+          "slug": "pizza-pi",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
@@ -1314,8 +1314,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/lists",
-          "slug": "lists",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/leslies-lists",
+          "slug": "leslies-lists",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
@@ -1338,8 +1338,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/conditionals",
-          "slug": "conditionals",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pal-picker",
+          "slug": "pal-picker",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
