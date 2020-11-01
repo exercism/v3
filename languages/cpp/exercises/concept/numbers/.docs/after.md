@@ -7,7 +7,7 @@ There are two other important integer types often used in the standard library:
 
 ### Integer literals
 
-Integer values can have different written form - "literal" that helps create integer numbers in different notations.
+Integer values can be written using several different notations.
 
 - `10` - decimal number
 - `010` - octal number
