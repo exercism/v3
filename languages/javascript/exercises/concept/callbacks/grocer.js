@@ -1,7 +1,11 @@
-let STATUS = 'CLOSED';
+/**
+ *
+ */
 
-export function checkStatus() {
-  return STATUS;
+let STATUS = 'OFFLINE';
+
+export function checkStatus(callback) {
+  return callback(STATUS);
 }
 
 export function setStatus(status) {
@@ -9,13 +13,17 @@ export function setStatus(status) {
 }
 
 export function resetStatus() {
-  STATUS = 'CLOSED';
+  STATUS = 'OFFLINE';
 }
+
+/**
+ *
+ */
 
 let LAST_QUERY = undefined;
 let RESPONSE = undefined;
 
-export function setResponse(response) {
+export function setResponse(...response) {
   RESPONSE = response;
 }
 
@@ -25,10 +33,10 @@ export function getLastQuery() {
 
 export function resetQuery() {
   LAST_QUERY = undefined;
-  RESPONSE = undefined;
+  RESPONSE = ['undefined response'];
 }
 
 export function checkInventory(query, callback) {
   LAST_QUERY = query;
-  return callback(RESPONSE);
+  return callback.apply(null, RESPONSE);
 }

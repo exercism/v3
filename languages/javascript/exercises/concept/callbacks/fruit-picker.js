@@ -1,9 +1,9 @@
 import { checkStatus, checkInventory } from './grocer';
 
-// Write an inline callback
+// Step 1: Write an inline callback
 export function isServiceOpen() {
-  return checkStatus((openStatus) => {
-    if (openStatus === 'OPEN') {
+  return checkStatus((serviceStatus) => {
+    if (serviceStatus === 'ONLINE') {
       return true;
     }
 
@@ -11,7 +11,7 @@ export function isServiceOpen() {
   });
 }
 
-// Use a passed in callback
+// Step 2: Use a passed in callback
 export function pickFruit(variety, quantity, callback) {
   return checkInventory(
     {
@@ -23,15 +23,20 @@ export function pickFruit(variety, quantity, callback) {
   );
 }
 
-// Write a callback that can be reused
+// Step 3: Write a callback that can be reused
 export function handleInventoryResult(err, isAvailable) {
   if (err) {
     throw new Error(err);
   }
 
   if (isAvailable) {
-    return 'BUY';
+    return 'PURCHASE';
   } else {
-    return 'NO_OP';
+    return 'NOOP';
   }
+}
+
+// Step 4: Put them together
+export function pickAndPurchaseFruit(variety, quantity) {
+  return pickFruit(variety, quantity, handleInventoryResult);
 }
