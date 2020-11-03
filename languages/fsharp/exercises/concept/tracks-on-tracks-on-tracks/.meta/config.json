@@ -7,7 +7,7 @@
   ],
   "forked_from": ["clojure/lists"],
   "editor": {
-    "solution_files": ["Lists.fs"],
-    "test_files": ["ListsTests.fs"]
+    "solution_files": ["TracksOnTracksOnTracks.cs"],
+    "test_files": ["TracksOnTracksOnTracksTests.fs"]
   }
 }

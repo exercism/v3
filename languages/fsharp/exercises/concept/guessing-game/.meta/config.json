@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["PatternMatching.fs"],
-    "test_files": ["PatternMatchingTests.fs"]
+    "solution_files": ["GuessingGame.cs"],
+    "test_files": ["GuessingGameTests.fs"]
   }
 }

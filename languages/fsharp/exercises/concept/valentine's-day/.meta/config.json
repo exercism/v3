@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["DiscriminatedUnions.fs"],
-    "test_files": ["DiscriminatedUnionsTests.fs"]
+    "solution_files": ["Valentine'sDay.cs"],
+    "test_files": ["Valentine'sDayTests.fs"]
   }
 }

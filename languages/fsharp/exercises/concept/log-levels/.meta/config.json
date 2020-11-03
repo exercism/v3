@@ -7,7 +7,7 @@
   ],
   "forked_from": ["csharp/strings"],
   "editor": {
-    "solution_files": ["Strings.fs"],
-    "test_files": ["StringsTests.fs"]
+    "solution_files": ["LogLevels.cs"],
+    "test_files": ["LogLevelsTests.fs"]
   }
 }

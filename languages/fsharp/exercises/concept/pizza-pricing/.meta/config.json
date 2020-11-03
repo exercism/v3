@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Recursion.fs"],
-    "test_files": ["RecursionTests.fs"]
+    "solution_files": ["PizzaPricing.cs"],
+    "test_files": ["PizzaPricingTests.fs"]
   }
 }

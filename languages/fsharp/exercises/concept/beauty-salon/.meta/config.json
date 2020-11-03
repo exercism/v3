@@ -7,7 +7,7 @@
   ],
   "forked_from": ["csharp/datetimes"],
   "editor": {
-    "solution_files": ["Datetimes.fs"],
-    "test_files": ["DatetimesTests.fs"]
+    "solution_files": ["BeautySalon.cs"],
+    "test_files": ["BeautySalonTests.fs"]
   }
 }

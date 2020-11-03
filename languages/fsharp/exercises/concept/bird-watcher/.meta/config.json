@@ -7,7 +7,7 @@
   ],
   "forked_from": ["csharp/arrays"],
   "editor": {
-    "solution_files": ["Arrays.fs"],
-    "test_files": ["ArraysTests.fs"]
+    "solution_files": ["BirdWatcher.cs"],
+    "test_files": ["BirdWatcherTests.fs"]
   }
 }
