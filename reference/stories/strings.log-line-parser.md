@@ -37,7 +37,7 @@ These are example tasks that fit the log line parser:
 [types-string]: ../types/string.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/strings/.docs/instructions.md
 [implementation-cpp]: ../../languages/cpp/exercises/concept/strings/.docs/instructions.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/strings/.docs/instructions.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/log-levels/.docs/instructions.md
 [implementation-go]: ../../languages/go/exercises/concept/strings-package/.docs/instructions.md
 [implementation-java]: ../../languages/java/exercises/concept/strings/.docs/instructions.md
 [implementation-python]: ../../languages/python/exercises/concept/processing-logs/.docs/instructions.md
