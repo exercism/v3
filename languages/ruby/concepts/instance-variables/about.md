@@ -21,7 +21,7 @@ class Backpack
 end
 ```
 
-- Methods named with a trailing `=` are recognized as setters by ruby, and allow the optional use of the assignment syntax, e.g. `Backpack.new("Sven").owner = "Ayah"`
+- Methods named with a trailing `=` are recognized as setters by Ruby, and allow the optional use of the assignment syntax, e.g. `Backpack.new("Sven").owner = "Ayah"`
 - Getters and setters can be shortened using the `attr_reader`, `attr_writer`, and `attr_accessor` methods:
   - `attr_reader`: Create getters for the symbols listed
   - `attr_writer`: Create setters for the symbols listed
