@@ -1,6 +1,8 @@
-module Basics exposing (..)
+module Greet exposing (greet)
+
+import String exposing (toUpper)
 
 
-todo : String -> String
-todo a =
-    Debug.todo "todo"
+greet : String -> String
+greet personToGreet =
+    "Welcome " ++ toUpper(personToGreet)
