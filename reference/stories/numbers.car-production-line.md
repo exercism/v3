@@ -20,7 +20,7 @@ These are example tasks that fit the car production line exercise:
 
 ## Implementations
 
-- [C#: numbers][implementation-csharp] (reference implementation)
+- [C#: cars-assemble][implementation-csharp] (reference implementation)
 - [F#: numbers][implementation-fsharp]
 
 ## Related
@@ -32,5 +32,5 @@ These are example tasks that fit the car production line exercise:
 [types-number]: ../types/number.md
 [types-integer]: ../types/integer.md
 [types-floating_point_number]: ../types/floating_point_number.md
-[implementation-csharp]: ../../languages/csharp/exercises/concept/numbers/.docs/instructions.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/cars-assemble/.docs/instructions.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/numbers/.docs/instructions.md

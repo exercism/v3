@@ -39,11 +39,11 @@ This exercise asks students to write code to analyse the production of an assemb
 
 #### Implementations
 
-| Track | Exercise                                         | Changes |
-| ----- | ------------------------------------------------ | ------- |
-| C#    | [numbers][implementation-csharp-production-line] | None    |
-| F#    | [numbers][implementation-fsharp-production-line] | None    |
-| Go    | [numbers][implementation-go-production-line]     | None    |
+| Track | Exercise                                               | Changes |
+| ----- | ------------------------------------------------------ | ------- |
+| C#    | [cars-assemble][implementation-csharp-production-line] | None    |
+| F#    | [numbers][implementation-fsharp-production-line]       | None    |
+| Go    | [numbers][implementation-go-production-line]           | None    |
 
 ### Savings Accounts
 
@@ -65,7 +65,7 @@ This exercise calculates interest on savings accounts. The reference implementat
 [type-half]: ./half.md
 [type-single]: ./single.md
 [wiki-ieee754]: https://en.wikipedia.org/wiki/IEEE_754
-[implementation-csharp-production-line]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md
+[implementation-csharp-production-line]: ../../languages/csharp/exercises/concept/cars-assemble/.docs/introduction.md
 [implementation-fsharp-production-line]: ../../languages/fsharp/exercises/concept/numbers/.docs/introduction.md
 [implementation-go-production-line]: ../../languages/go/exercises/concept/numbers/.docs/introduction.md
 [implementation-csharp-savings-accounts]: ../../interest-is-interesting/.docs/introduction.md
