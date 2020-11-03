@@ -81,8 +81,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/arithmetic",
-        "exercise": "arithmetic",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pizza-pi",
+        "exercise": "pizza-pi",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -219,8 +219,8 @@
         "language": "x86-64-assembly"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/guidos-gorgeous-lasagna",
+        "exercise": "guidos-gorgeous-lasagna",
         "track": "python",
         "language": "Python"
       },
@@ -409,8 +409,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/bools",
-        "exercise": "bools",
+        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/ghost-gobble-arcade-game",
+        "exercise": "ghost-gobble-arcade-game",
         "track": "python",
         "language": "Python"
       }
@@ -595,8 +595,8 @@
         "language": "Go"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/socks-and-sexprs",
+        "exercise": "socks-and-sexprs",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -655,8 +655,8 @@
         "language": "Ruby"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pal-picker",
+        "exercise": "pal-picker",
         "track": "common-lisp",
         "language": "Common Lisp"
       },
@@ -756,8 +756,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/socks-and-sexprs",
+        "exercise": "socks-and-sexprs",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -952,6 +952,19 @@
         "exercise": "dictionaries",
         "track": "csharp",
         "language": "C#"
+      }
+    ]
+  },
+  {
+    "name": "dicts",
+    "variations": ["dicts", "dict"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/inventory-management",
+        "exercise": "inventory-management",
+        "track": "python",
+        "language": "Python"
       }
     ]
   },
@@ -1217,8 +1230,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/socks-and-sexprs",
+        "exercise": "socks-and-sexprs",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -1271,8 +1284,8 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/arithmetic",
-        "exercise": "arithmetic",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pizza-pi",
+        "exercise": "pizza-pi",
         "track": "common-lisp",
         "language": "Common Lisp"
       },
@@ -1595,8 +1608,8 @@
         "language": "Rust"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/arithmetic",
-        "exercise": "arithmetic",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pizza-pi",
+        "exercise": "pizza-pi",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -1676,6 +1689,19 @@
     ]
   },
   {
+    "name": "list-methods",
+    "variations": ["list-methods", "list-method", "list_methods"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/chaitanas-colossal-coaster",
+        "exercise": "chaitanas-colossal-coaster",
+        "track": "python",
+        "language": "Python"
+      }
+    ]
+  },
+  {
     "name": "lists",
     "variations": ["lists", "list"],
     "documents": [
@@ -1685,6 +1711,12 @@
       }
     ],
     "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/elyses-enchantments",
+        "exercise": "elyses-enchantments",
+        "track": "python",
+        "language": "Python"
+      },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/lists",
         "exercise": "lists",
@@ -1698,8 +1730,8 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/lists",
-        "exercise": "lists",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/leslies-lists",
+        "exercise": "leslies-lists",
         "track": "common-lisp",
         "language": "Common Lisp"
       },
@@ -1738,6 +1770,12 @@
         "exercise": "floating-point-numbers",
         "track": "ruby",
         "language": "Ruby"
+      },
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/making-the-grade",
+        "exercise": "making-the-grade",
+        "track": "python",
+        "language": "Python"
       },
       {
         "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/master-mixologist",
@@ -2067,6 +2105,19 @@
         "exercise": "name-badge",
         "track": "elixir",
         "language": "Elixir"
+      }
+    ]
+  },
+  {
+    "name": "none",
+    "variations": ["none", "nones"],
+    "documents": [],
+    "implementations": [
+      {
+        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/restaurant-rozalynn",
+        "exercise": "restaurant-rozalynn",
+        "track": "python",
+        "language": "Python"
       }
     ]
   },
@@ -2666,8 +2717,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/sameness",
-        "exercise": "sameness",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/key-comparison",
+        "exercise": "key-comparison",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -2838,19 +2889,6 @@
     ]
   },
   {
-    "name": "string-literals",
-    "variations": ["string-literals", "string-literal", "string_literals"],
-    "documents": [],
-    "implementations": [
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/language-list",
-        "exercise": "language-list",
-        "track": "elixir",
-        "language": "Elixir"
-      }
-    ]
-  },
-  {
     "name": "strings",
     "variations": ["strings", "string"],
     "documents": [
@@ -2879,8 +2917,8 @@
         "language": "Ruby"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/strings",
-        "exercise": "strings",
+        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/processing-logs",
+        "exercise": "processing-logs",
         "track": "python",
         "language": "Python"
       },
@@ -3048,8 +3086,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/socks-and-sexprs",
+        "exercise": "socks-and-sexprs",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -3164,8 +3202,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/conditionals",
-        "exercise": "conditionals",
+        "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pal-picker",
+        "exercise": "pal-picker",
         "track": "common-lisp",
         "language": "Common Lisp"
       }
@@ -3212,8 +3250,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/tuples",
-        "exercise": "tuples",
+        "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/tisbury-treasure-hunt",
+        "exercise": "tisbury-treasure-hunt",
         "track": "python",
         "language": "Python"
       },
