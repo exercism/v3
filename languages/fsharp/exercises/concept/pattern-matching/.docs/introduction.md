@@ -1,3 +1,5 @@
+## pattern-matching
+
 An `if/elif/else` expression can be used to conditionally execute logic. F# also has another, more powerful way to conditionally execute logic: pattern matching. With pattern matching, a value can be tested against one or more _patterns_. An example of such a pattern is the _constant pattern_, which matches a value against a constant (e.g. `1` or `"hello"`).
 
 In F#, pattern matching is done through the `match` keyword:

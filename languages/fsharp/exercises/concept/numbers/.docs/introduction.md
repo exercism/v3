@@ -1,3 +1,5 @@
+## numbers
+
 There are two different types of numbers in F#:
 
 - Integers: numbers with no digits behind the decimal separator (whole numbers). Examples are `-6`, `0`, `1`, `25`, `976` and `500000`.
@@ -8,6 +10,8 @@ The two most common numeric types in F# are `int` and `float`. An `int` is a 32-
 Arithmetic is done using the standard arithmetic operators. Numbers can be compared using the standard numeric comparison operators and the equality (`=`) and inequality (`<>`) operators.
 
 Converting between number types is done through built-in conversion operators. These conversion operators are named after the type they will be converting to. F# does _not_ support automatic conversion between number types.
+
+## conditionals
 
 In this exercise you must conditionally execute logic. The most common way to do this in F# is by using an `if/elif/else` statement:
 

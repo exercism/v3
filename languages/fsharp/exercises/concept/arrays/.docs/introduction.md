@@ -1,3 +1,5 @@
+## arrays
+
 An `array` in F# is a mutable collection of zero or more values with a fixed length. This means that once an array has been created, its size cannot change, but its values can. The values in an array must all have the same type. Arrays can be defined as follows:
 
 ```fsharp
