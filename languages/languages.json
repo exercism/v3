@@ -1231,8 +1231,8 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/basics",
-          "slug": "basics",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/socks-and-sexprs",
+          "slug": "socks-and-sexprs",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comments.md",
@@ -1254,8 +1254,8 @@
           "prerequisites": []
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/sameness",
-          "slug": "sameness",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/key-comparison",
+          "slug": "key-comparison",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/sameness.md",
@@ -1290,8 +1290,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/arithmetic",
-          "slug": "arithmetic",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pizza-pi",
+          "slug": "pizza-pi",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
@@ -1314,8 +1314,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/lists",
-          "slug": "lists",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/leslies-lists",
+          "slug": "leslies-lists",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
@@ -1338,8 +1338,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/conditionals",
-          "slug": "conditionals",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pal-picker",
+          "slug": "pal-picker",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
@@ -3414,8 +3414,8 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/strings",
-          "slug": "strings",
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/processing-logs",
+          "slug": "processing-logs",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
@@ -3424,14 +3424,14 @@
           ],
           "prerequisites": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
+              "url": null,
+              "name": "basics"
             }
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/tuples",
-          "slug": "tuples",
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/tisbury-treasure-hunt",
+          "slug": "tisbury-treasure-hunt",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
@@ -3441,37 +3441,29 @@
           "prerequisites": [
             {
               "url": null,
+              "name": "basics"
+            },
+            {
+              "url": null,
               "name": "bools"
             },
             {
-              "url": null,
-              "name": "for-loops"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
             },
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
             },
             {
-              "url": null,
-              "name": "if-keyword"
-            },
-            {
-              "url": null,
-              "name": "in-keyword"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
-              "name": "integers"
-            },
-            {
-              "url": null,
-              "name": "return-keyword"
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
             }
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/basics",
-          "slug": "basics",
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/guidos-gorgeous-lasagna",
+          "slug": "guidos-gorgeous-lasagna",
           "concepts": [
             {
               "url": null,
@@ -3481,8 +3473,8 @@
           "prerequisites": []
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/bools",
-          "slug": "bools",
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/ghost-gobble-arcade-game",
+          "slug": "ghost-gobble-arcade-game",
           "concepts": [
             {
               "url": null,
@@ -3493,6 +3485,254 @@
             {
               "url": null,
               "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/inventory-management",
+          "slug": "inventory-management",
+          "concepts": [
+            {
+              "url": null,
+              "name": "dicts"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": null,
+              "name": "bools"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/log-levels",
+          "slug": "log-levels",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
+              "name": "enums"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
+              "name": "classes"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/enumeration.md",
+              "name": "enumeration"
+            },
+            {
+              "url": null,
+              "name": "indexing"
+            },
+            {
+              "url": null,
+              "name": "iteration"
+            },
+            {
+              "url": null,
+              "name": "list-comprehensions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/methods.md",
+              "name": "methods"
+            },
+            {
+              "url": null,
+              "name": "sequences"
+            },
+            {
+              "url": null,
+              "name": "slicing"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": null,
+              "name": "string-formatting"
+            },
+            {
+              "url": null,
+              "name": "string-methods"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/elyses-enchantments",
+          "slug": "elyses-enchantments",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comparisons.md",
+              "name": "comparisons"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/chaitanas-colossal-coaster",
+          "slug": "chaitanas-colossal-coaster",
+          "concepts": [
+            {
+              "url": null,
+              "name": "list-methods"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comparisons.md",
+              "name": "comparisons"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/restaurant-rozalynn",
+          "slug": "restaurant-rozalynn",
+          "concepts": [
+            {
+              "url": null,
+              "name": "none"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": null,
+              "name": "bools"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/default_arguments.md",
+              "name": "default-arguments"
+            },
+            {
+              "url": null,
+              "name": "dicts"
+            },
+            {
+              "url": null,
+              "name": "dict-methods"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            },
+            {
+              "url": null,
+              "name": "list-methods"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/making-the-grade",
+          "slug": "making-the-grade",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comparisons.md",
+              "name": "comparisons"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
             }
           ]
         }
