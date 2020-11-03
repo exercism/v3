@@ -148,12 +148,6 @@
         ]
       },
       {
-        "slug": "exceptions",
-        "uuid": "b140614f-36df-4ce9-a539-97a81304b941",
-        "concepts": ["exceptions"],
-        "prerequisites": ["inheritance", "nullability", "switch-statements"]
-      },
-      {
         "slug": "attack-of-the-trolls",
         "name": "Attack of the Trolls",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
