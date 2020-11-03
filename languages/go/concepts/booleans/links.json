@@ -2,21 +2,5 @@
   {
     "url": "https://golang.org/ref/spec#Logical_operators",
     "description": "logical_operators"
-  },
-  {
-    "url": "https://golang.org/ref/spec#If_statements",
-    "description": "if_statement"
-  },
-  {
-    "url": "https://golang.org/ref/spec#Switch_statements",
-    "description": "switch_statement"
-  },
-  {
-    "url": "https://gobyexample.com/if-else",
-    "description": "go_by_example_if"
-  },
-  {
-    "url": "https://gobyexample.com/switch",
-    "description": "go_by_example_switch"
   }
 ]
