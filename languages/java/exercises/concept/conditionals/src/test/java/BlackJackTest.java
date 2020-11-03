@@ -5,13 +5,13 @@ import org.junit.Ignore;
 import static org.assertj.core.api.Assertions.*;
 
 
-public class BlackjackTests {
+public class BlackJackTest {
 
-    private Blackjack blackjack;
+    private BlackJack blackjack;
 
     @Before
     public void setUp() {
-        blackjack = new Blackjack();
+        blackjack = new BlackJack();
     }
 
     @Test

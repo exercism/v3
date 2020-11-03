@@ -1,4 +1,4 @@
-public class Blackjack {
+public class BlackJack {
 
     public int parseCard(String card) {
         switch (card) {
