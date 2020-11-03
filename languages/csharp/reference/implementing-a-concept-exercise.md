@@ -155,7 +155,7 @@ If you have any questions regarding implementing the exercise, please post them 
 [video-stub-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1171
 [video-tests-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1255
 [video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
-[example-stub-file]: ../languages/csharp/exercises/concept/strings/Strings.cs
-[example-tests-file]: ../languages/csharp/exercises/concept/strings/StringsTests.cs
-[example-example-file]: ../languages/csharp/exercises/concept/strings/.meta/Example.cs
+[example-stub-file]: ../languages/csharp/exercises/concept/log-levels/LogLevels.cs
+[example-tests-file]: ../languages/csharp/exercises/concept/log-levels/LogLevelsTests.cs
+[example-example-file]: ../languages/csharp/exercises/concept/log-levels/.meta/Example.cs
 [example-project-file]: ../exercises/concept/strings/Strings.csproj

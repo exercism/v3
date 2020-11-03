@@ -19,7 +19,7 @@ These are example tasks that fit the savings account exercise:
 
 ## Implementations
 
-- [C#: floating-point-numbers][implementation-csharp] (reference implementation)
+- [C#: interest-is-interesting][implementation-csharp] (reference implementation)
 - [F#: floating-point-numbers][implementation-csharp]
 
 ## Related
@@ -27,5 +27,5 @@ These are example tasks that fit the savings account exercise:
 - [`types/floating_point_number`][types-floating_point_number]
 
 [types-floating_point_number]: ../types/floating_point_number.md
-[implementation-csharp]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
+[implementation-csharp]: ../../interest-is-interesting/.docs/instructions.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/floating-point-numbers/.docs/instructions.md

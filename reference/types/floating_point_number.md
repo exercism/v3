@@ -55,10 +55,10 @@ This exercise calculates interest on savings accounts. The reference implementat
 
 #### Implementations
 
-| Track | Exercise                                                         | Changes                                                                                               |
-| ----- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| C#    | [numbers-floating-point][implementation-csharp-savings-accounts] | None                                                                                                  |
-| F#    | [numbers-floating-point][implementation-fsharp-savings-accounts] | Replaced third task that used while loop with task that uses an `int`/`double`/`decimal` combination. |
+| Track | Exercise                                                          | Changes                                                                                               |
+| ----- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| C#    | [interest-is-interesting][implementation-csharp-savings-accounts] | None                                                                                                  |
+| F#    | [numbers-floating-point][implementation-fsharp-savings-accounts]  | Replaced third task that used while loop with task that uses an `int`/`double`/`decimal` combination. |
 
 [type-bit]: ./bit.md
 [type-double]: ./double.md
@@ -68,7 +68,7 @@ This exercise calculates interest on savings accounts. The reference implementat
 [implementation-csharp-production-line]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md
 [implementation-fsharp-production-line]: ../../languages/fsharp/exercises/concept/numbers/.docs/introduction.md
 [implementation-go-production-line]: ../../languages/go/exercises/concept/numbers/.docs/introduction.md
-[implementation-csharp-savings-accounts]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/introduction.md
+[implementation-csharp-savings-accounts]: ../../interest-is-interesting/.docs/introduction.md
 [implementation-fsharp-savings-accounts]: ../../languages/fsharp/exercises/concept/floating-point-numbers/.docs/introduction.md
 [float-toy]: https://evanw.github.io/float-toy/
 [float-in-languages]: https://0.30000000000000004.com/

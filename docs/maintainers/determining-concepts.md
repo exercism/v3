@@ -52,4 +52,4 @@ Bad examples:
 - `numbers/floating-point`: should not use a hierarchical notation (use `floating-point-numbers` instead)
 
 [kebab-case]: https://en.wiktionary.org/wiki/kebab_case
-[csharp-basics]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/basics/.docs/introduction.md
+[csharp-basics]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/lucians-luscious-lasagna/.docs/introduction.md

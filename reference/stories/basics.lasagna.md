@@ -15,7 +15,7 @@ The story facilitates defining functions:
 
 ## Implementations
 
-- [C#: basics][implementation-csharp] (reference implementation)
+- [C#: lucians-luscious-lasagna][implementation-csharp] (reference implementation)
 - [Elixir: basics][implementation-elixir]
 - [F#: basics][implementation-fsharp]
 - [Java: basics][implementation-java]
@@ -40,7 +40,7 @@ The story facilitates defining functions:
 [concepts-return_values]: ../concepts/return_values.md
 [types-function]: ../types/function.md
 [types-integer]: ../types/integer.md
-[implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/instructions.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/lucians-luscious-lasagna/.docs/instructions.md
 [implementation-elixir]: ../../languages/elixir/exercises/concept/lasagna/.docs/instructions.md
 [implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/instructions.md
 [implementation-java]: ../../languages/java/exercises/concept/basics/.docs/instructions.md
