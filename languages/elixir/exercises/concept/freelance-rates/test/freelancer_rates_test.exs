@@ -1,4 +1,4 @@
-defmodule FreelancerRatessTest do
+defmodule FreelancerRatesTest do
   use ExUnit.Case
 
   describe "daily_rate/1" do
