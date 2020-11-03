@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Constants.cs"],
-    "test_files": ["ConstantsTests.cs"]
+    "solution_files": ["AuthenticationSystem.cs"],
+    "test_files": ["AuthenticationSystemTests.cs"]
   }
 }

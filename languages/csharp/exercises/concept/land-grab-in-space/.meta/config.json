@@ -20,7 +20,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Structs.cs"],
-    "test_files": ["StructsTests.cs"]
+    "solution_files": ["LandGrabInSpace.cs"],
+    "test_files": ["LandGrabInSpaceTests.cs"]
   }
 }

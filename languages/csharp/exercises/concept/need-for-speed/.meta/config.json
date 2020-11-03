@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Constructors.cs"],
-    "test_files": ["ConstructorsTests.cs"]
+    "solution_files": ["NeedForSpeed.cs"],
+    "test_files": ["NeedForSpeedTests.cs"]
   }
 }

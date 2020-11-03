@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Resource-lifetime.cs"],
-    "test_files": ["Resource-lifetimeTests.cs"]
+    "solution_files": ["OrmInOneGo.cs"],
+    "test_files": ["OrmInOneGoTests.cs"]
   }
 }

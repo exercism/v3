@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Nested-types.cs"],
-    "test_files": ["Nested-typesTests.cs"]
+    "solution_files": ["RemoteControlCleanup.cs"],
+    "test_files": ["RemoteControlCleanupTests.cs"]
   }
 }

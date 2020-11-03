@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Flag-enums.cs"],
-    "test_files": ["Flag-enumsTests.cs"]
+    "solution_files": ["AttackOfTheTrolls.cs"],
+    "test_files": ["AttackOfTheTrollsTests.cs"]
   }
 }

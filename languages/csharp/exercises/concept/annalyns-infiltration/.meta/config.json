@@ -7,7 +7,7 @@
   ],
   "forked_from": ["fsharp/booleans"],
   "editor": {
-    "solution_files": ["Booleans.cs"],
-    "test_files": ["BooleansTests.cs"]
+    "solution_files": ["AnnalynsInfiltration.cs"],
+    "test_files": ["AnnalynsInfiltrationTests.cs"]
   }
 }

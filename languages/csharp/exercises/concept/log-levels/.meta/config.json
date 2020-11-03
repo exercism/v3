@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Strings.cs"],
-    "test_files": ["StringsTests.cs"]
+    "solution_files": ["LogLevels.cs"],
+    "test_files": ["LogLevelsTests.cs"]
   }
 }

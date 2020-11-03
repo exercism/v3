@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Equality.cs"],
-    "test_files": ["EqualityTests.cs"]
+    "solution_files": ["Faceid2.cs"],
+    "test_files": ["Faceid2Tests.cs"]
   }
 }

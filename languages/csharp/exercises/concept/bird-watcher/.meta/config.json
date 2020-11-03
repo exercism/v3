@@ -6,11 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": [
-      "BirdWatcher.cs"
-    ],
-    "test_files": [
-      "BirdWatcherTests.cs"
-    ]
+    "solution_files": ["BirdWatcher.cs"],
+    "test_files": ["BirdWatcherTests.cs"]
   }
 }

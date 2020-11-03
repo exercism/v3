@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Inheritance.cs"],
-    "test_files": ["InheritanceTests.cs"]
+    "solution_files": ["WizardsAndWarriors.cs"],
+    "test_files": ["WizardsAndWarriorsTests.cs"]
   }
 }

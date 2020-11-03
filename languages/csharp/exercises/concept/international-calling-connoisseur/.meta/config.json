@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Dictionaries.cs"],
-    "test_files": ["DictionariesTests.cs"]
+    "solution_files": ["InternationalCallingConnoisseur.cs"],
+    "test_files": ["InternationalCallingConnoisseurTests.cs"]
   }
 }

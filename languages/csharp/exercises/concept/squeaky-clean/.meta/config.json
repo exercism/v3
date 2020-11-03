@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Chars.cs"],
-    "test_files": ["CharsTests.cs"]
+    "solution_files": ["SqueakyClean.cs"],
+    "test_files": ["SqueakyCleanTests.cs"]
   }
 }

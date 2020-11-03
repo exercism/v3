@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Expression-bodied-members.cs"],
-    "test_files": ["Expression-bodied-membersTests.cs"]
+    "solution_files": ["TheWeatherInDeather.cs"],
+    "test_files": ["TheWeatherInDeatherTests.cs"]
   }
 }

@@ -13,7 +13,7 @@
   ],
   "forked_from": ["fsharp/lists"],
   "editor": {
-    "solution_files": ["Lists.cs"],
-    "test_files": ["ListsTests.cs"]
+    "solution_files": ["TracksOnTracksOnTracks.cs"],
+    "test_files": ["TracksOnTracksOnTracksTests.cs"]
   }
 }

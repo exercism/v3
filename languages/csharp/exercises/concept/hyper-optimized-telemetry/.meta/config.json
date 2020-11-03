@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Integral-numbers.cs"],
-    "test_files": ["Integral-numbersTests.cs"]
+    "solution_files": ["HyperOptimizedTelemetry.cs"],
+    "test_files": ["HyperOptimizedTelemetryTests.cs"]
   }
 }

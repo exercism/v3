@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Nullability.cs"],
-    "test_files": ["NullabilityTests.cs"]
+    "solution_files": ["TimFromMarketing.cs"],
+    "test_files": ["TimFromMarketingTests.cs"]
   }
 }

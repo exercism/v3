@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Datetimes.cs"],
-    "test_files": ["DatetimesTests.cs"]
+    "solution_files": ["BookingUpForBeauty.cs"],
+    "test_files": ["BookingUpForBeautyTests.cs"]
   }
 }

@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Parameters.cs"],
-    "test_files": ["ParametersTests.cs"]
+    "solution_files": ["BuildingTelemetry.cs"],
+    "test_files": ["BuildingTelemetryTests.cs"]
   }
 }

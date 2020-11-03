@@ -16,7 +16,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Interfaces.cs"],
-    "test_files": ["InterfacesTests.cs"]
+    "solution_files": ["RemoteControlCompetition.cs"],
+    "test_files": ["RemoteControlCompetitionTests.cs"]
   }
 }

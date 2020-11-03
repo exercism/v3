@@ -13,7 +13,7 @@
   ],
   "forked_from": ["elixir/strings"],
   "editor": {
-    "solution_files": ["String-formatting.cs"],
-    "test_files": ["String-formattingTests.cs"]
+    "solution_files": ["HighSchoolSweethearts.cs"],
+    "test_files": ["HighSchoolSweetheartsTests.cs"]
   }
 }

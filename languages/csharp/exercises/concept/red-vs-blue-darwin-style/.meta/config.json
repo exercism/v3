@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Namespaces.cs"],
-    "test_files": ["NamespacesTests.cs"]
+    "solution_files": ["RedVsBlueDarwinStyle.cs"],
+    "test_files": ["RedVsBlueDarwinStyleTests.cs"]
   }
 }

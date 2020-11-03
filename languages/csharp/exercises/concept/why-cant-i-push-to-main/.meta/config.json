@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Object-initializers.cs"],
-    "test_files": ["Object-initializersTests.cs"]
+    "solution_files": ["WhyCantIPushToMain.cs"],
+    "test_files": ["WhyCantIPushToMainTests.cs"]
   }
 }

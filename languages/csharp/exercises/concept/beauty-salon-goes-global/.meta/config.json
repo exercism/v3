@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Time.cs"],
-    "test_files": ["TimeTests.cs"]
+    "solution_files": ["BeautySalonGoesGlobal.cs"],
+    "test_files": ["BeautySalonGoesGlobalTests.cs"]
   }
 }

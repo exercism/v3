@@ -16,7 +16,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Switch-statements.cs"],
-    "test_files": ["Switch-statementsTests.cs"]
+    "solution_files": ["FootballMatchReports.cs"],
+    "test_files": ["FootballMatchReportsTests.cs"]
   }
 }

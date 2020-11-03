@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Classes.cs"],
-    "test_files": ["ClassesTests.cs"]
+    "solution_files": ["ElonsToys.cs"],
+    "test_files": ["ElonsToysTests.cs"]
   }
 }

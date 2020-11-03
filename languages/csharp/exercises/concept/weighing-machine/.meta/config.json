@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Properties.cs"],
-    "test_files": ["PropertiesTests.cs"]
+    "solution_files": ["WeighingMachine.cs"],
+    "test_files": ["WeighingMachineTests.cs"]
   }
 }

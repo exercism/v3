@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Tuples.cs"],
-    "test_files": ["TuplesTests.cs"]
+    "solution_files": ["PhoneNumberAnalysis.cs"],
+    "test_files": ["PhoneNumberAnalysisTests.cs"]
   }
 }

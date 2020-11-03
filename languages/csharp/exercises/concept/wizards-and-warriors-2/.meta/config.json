@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Method-overloading.cs"],
-    "test_files": ["Method-overloadingTests.cs"]
+    "solution_files": ["WizardsAndWarriors2.cs"],
+    "test_files": ["WizardsAndWarriors2Tests.cs"]
   }
 }

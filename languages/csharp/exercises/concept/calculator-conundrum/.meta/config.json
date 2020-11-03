@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Exceptions.cs"],
-    "test_files": ["ExceptionsTests.cs"]
+    "solution_files": ["CalculatorConundrum.cs"],
+    "test_files": ["CalculatorConundrumTests.cs"]
   }
 }

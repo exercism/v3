@@ -13,7 +13,7 @@
   ],
   "forked_from": ["elixir/errors"],
   "editor": {
-    "solution_files": ["User-defined-exceptions.cs"],
-    "test_files": ["User-defined-exceptionsTests.cs"]
+    "solution_files": ["InstrumentsOfTexas.cs"],
+    "test_files": ["InstrumentsOfTexasTests.cs"]
   }
 }

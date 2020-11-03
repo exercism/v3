@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Regular-expressions.cs"],
-    "test_files": ["Regular-expressionsTests.cs"]
+    "solution_files": ["ParsingLogFiles.cs"],
+    "test_files": ["ParsingLogFilesTests.cs"]
   }
 }

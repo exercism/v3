@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Resource-cleanup.cs"],
-    "test_files": ["Resource-cleanupTests.cs"]
+    "solution_files": ["ObjectRelationalMapping.cs"],
+    "test_files": ["ObjectRelationalMappingTests.cs"]
   }
 }

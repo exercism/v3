@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Randomness.cs"],
-    "test_files": ["RandomnessTests.cs"]
+    "solution_files": ["RollTheDie.cs"],
+    "test_files": ["RollTheDieTests.cs"]
   }
 }

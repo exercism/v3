@@ -24,7 +24,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Overflow.cs"],
-    "test_files": ["OverflowTests.cs"]
+    "solution_files": ["HyperinflationHitsHyperia.cs"],
+    "test_files": ["HyperinflationHitsHyperiaTests.cs"]
   }
 }

@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Casting.cs"],
-    "test_files": ["CastingTests.cs"]
+    "solution_files": ["SecureMunchesterUnited.cs"],
+    "test_files": ["SecureMunchesterUnitedTests.cs"]
   }
 }

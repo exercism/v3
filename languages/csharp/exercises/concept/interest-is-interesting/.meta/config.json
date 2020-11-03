@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Floating-point-numbers.cs"],
-    "test_files": ["Floating-point-numbersTests.cs"]
+    "solution_files": ["InterestIsInteresting.cs"],
+    "test_files": ["InterestIsInterestingTests.cs"]
   }
 }

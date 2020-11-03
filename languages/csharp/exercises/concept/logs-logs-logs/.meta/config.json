@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Enums.cs"],
-    "test_files": ["EnumsTests.cs"]
+    "solution_files": ["LogsLogsLogs.cs"],
+    "test_files": ["LogsLogsLogsTests.cs"]
   }
 }

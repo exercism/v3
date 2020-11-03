@@ -12,7 +12,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Operator-overloading.cs"],
-    "test_files": ["Operator-overloadingTests.cs"]
+    "solution_files": ["HyperiaForex.cs"],
+    "test_files": ["HyperiaForexTests.cs"]
   }
 }
