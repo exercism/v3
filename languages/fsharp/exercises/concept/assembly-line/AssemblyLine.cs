@@ -1,7 +1,7 @@
-module Numbers
+module AssemblyLine
 
 let productionRatePerHour (speed: int): float =
     failwith "Please implement the 'productionRatePerHour' function"
 
-let workingItemsPerMinute (speed: int): int =
-    failwith "Please implement the 'workingItemsPerMinute' function"
+let workingItemsPerMinute(speed: int): int =
+   failwith "Please implement the 'workingItemsPerMinute' function"

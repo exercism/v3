@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Recursion.fs" />
-    <Compile Include="RecursionTests.fs" />
+    <Compile Include="PizzaPricing.fs" />
+    <Compile Include="PizzaPricingTests.fs" />
   </ItemGroup>
 
   <ItemGroup>

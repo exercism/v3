@@ -1,9 +1,9 @@
-module RecordsTests
+module BandwagonerTests
 
 open FsUnit.Xunit
 open Xunit
 
-open Records
+open Bandwagoner
 
 [<Fact>]
 let ``Create coach that was a former player`` () =

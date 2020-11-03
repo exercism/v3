@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Booleans.fs" />
-    <Compile Include="BooleansTests.fs" />
+    <Compile Include="AnnalynsInfiltration.fs" />
+    <Compile Include="AnnalynsInfiltrationTests.fs" />
   </ItemGroup>
 
   <ItemGroup>

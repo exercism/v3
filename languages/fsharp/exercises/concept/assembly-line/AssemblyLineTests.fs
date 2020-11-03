@@ -1,9 +1,9 @@
-module NumbersTests
+module AssemblyLineTests
 
 open FsUnit.Xunit
 open Xunit
 
-open Numbers
+open AssemblyLine
 
 [<Fact>]
 let ``Production rate per hour for speed 0``() = productionRatePerHour 0 |> should equal 0.0

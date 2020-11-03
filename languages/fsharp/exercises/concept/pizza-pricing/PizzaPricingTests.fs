@@ -1,9 +1,9 @@
-module RecursionTests
+module PizzaPricingTests
 
 open FsUnit.Xunit
 open Xunit
 
-open Recursion
+open PizzaPricing
 
 [<Fact>]
 let ``Price for pizza margherita``() = pizzaPrice Margherita |> should equal 7

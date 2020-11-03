@@ -1,4 +1,4 @@
-module Basics
+module Lasagna
 
 // TODO: define the 'expectedMinutesInOven' binding
 

@@ -1,9 +1,9 @@
-module StringsTests
+module LogLevelsTests
 
 open FsUnit.Xunit
 open Xunit
 
-open Strings
+open LogLevels
 
 [<Fact>]
 let ``Error message``() = message "[ERROR]: Stack overflow" |> should equal "Stack overflow"

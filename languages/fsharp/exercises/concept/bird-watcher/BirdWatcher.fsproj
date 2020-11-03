@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Arrays.fs" />
-    <Compile Include="ArraysTests.fs" />
+    <Compile Include="BirdWatcher.fs" />
+    <Compile Include="BirdWatcherTests.fs" />
   </ItemGroup>
 
   <ItemGroup>

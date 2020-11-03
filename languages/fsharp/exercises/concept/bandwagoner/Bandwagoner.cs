@@ -1,4 +1,4 @@
-module Records
+module Bandwagoner
 
 // TODO: please define the 'Coach' discriminated union type
 
@@ -9,17 +9,17 @@ module Records
 let createCoach (name: string) (formerPlayer: bool): Coach =
     failwith "Please implement the 'createCoach' function"
 
-let createStats (wins: int) (losses: int): Stats =
-    failwith "Please implement the 'createStats' function"
+let createStats(wins: int) (losses: int): Stats =
+   failwith "Please implement the 'createStats' function"
 
-let createTeam (name: string) (coach: Coach) (stats: Stats): Team =
-    failwith "Please implement the 'createTeam' function"
+let createTeam(name: string) (coach: Coach)(stats: Stats): Team =
+  failwith "Please implement the 'createTeam' function"
 
-let replaceCoach (team: Team) (coach: Coach): Team =
-    failwith "Please implement the 'replaceCoach' function"
+let replaceCoach(team: Team) (coach: Coach): Team =
+   failwith "Please implement the 'replaceCoach' function"
 
-let isSameTeam (homeTeam: Team) (awayTeam: Team): bool =
-    failwith "Please implement the 'isSameTeam' function"
+let isSameTeam(homeTeam: Team) (awayTeam: Team): bool =
+   failwith "Please implement the 'isSameTeam' function"
 
-let rootForTeam (team: Team): bool =
-    failwith "Please implement the 'rootForTeam' function"
+let rootForTeam(team: Team): bool =
+   failwith "Please implement the 'rootForTeam' function"

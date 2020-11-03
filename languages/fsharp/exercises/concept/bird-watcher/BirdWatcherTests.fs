@@ -1,9 +1,9 @@
-module ArraysTests
+module BirdWatcherTests
 
 open FsUnit.Xunit
 open Xunit
 
-open Arrays
+open BirdWatcher
 
 [<Fact>]
 let ``Last week`` () =

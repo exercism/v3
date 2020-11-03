@@ -1,4 +1,4 @@
-module Datetimes
+module BeautySalon
 
 // The following line is needed to use the DateTime type
 open System

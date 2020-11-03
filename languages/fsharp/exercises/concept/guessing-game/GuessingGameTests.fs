@@ -1,9 +1,9 @@
-module PatternMatchingTests
+module GuessingGameTests
 
 open FsUnit.Xunit
 open Xunit
 
-open PatternMatching
+open GuessingGame
 
 [<Fact>]
 let ``Give hint for 42``() = reply 42 |> should equal "Correct"

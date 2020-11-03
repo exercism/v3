@@ -1,4 +1,4 @@
-module DatetimesTests
+module BeautySalonTests
 
 open FsUnit.Xunit
 open Xunit
@@ -8,7 +8,7 @@ open System.Globalization
 open System.Reflection
 open System.Threading
 
-open Datetimes
+open BeautySalon
 
 [<AttributeUsage(AttributeTargets.Class ||| AttributeTargets.Method)>]
 type UseCultureAttribute(cultureName: string, uiCultureName: string) =

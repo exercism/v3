@@ -1,9 +1,9 @@
-module BooleansTests
+module AnnalynsInfiltrationTests
 
 open FsUnit.Xunit
 open Xunit
 
-open Booleans
+open AnnalynsInfiltration
 
 [<Fact>]
 let ``Cannot execute fast attack if knight is awake``() =

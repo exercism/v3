@@ -1,9 +1,9 @@
-module BasicsTests
+module LasagnaTests
 
 open FsUnit.Xunit
 open Xunit
 
-open Basics
+open Lasagna
 
 [<Fact>]
 let ``Expected minutes in oven`` () = expectedMinutesInOven |> should equal 40

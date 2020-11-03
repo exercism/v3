@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="PatternMatching.fs" />
-    <Compile Include="PatternMatchingTests.fs" />
+    <Compile Include="GuessingGame.fs" />
+    <Compile Include="GuessingGameTests.fs" />
   </ItemGroup>
 
   <ItemGroup>
