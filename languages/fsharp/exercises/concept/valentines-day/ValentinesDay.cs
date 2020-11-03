@@ -1,4 +1,4 @@
-module DiscriminatedUnions
+module ValentinesDay
 
 // TODO: please define the 'Approval' discriminated union type
 

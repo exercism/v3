@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="DiscriminatedUnions.fs" />
-    <Compile Include="DiscriminatedUnionsTests.fs" />
+    <Compile Include="ValentinesDay.fs" />
+    <Compile Include="ValentinesDayTests.fs" />
   </ItemGroup>
 
   <ItemGroup>

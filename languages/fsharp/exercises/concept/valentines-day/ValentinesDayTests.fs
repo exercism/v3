@@ -1,9 +1,9 @@
-module DiscriminatedUnionsTests
+module ValentinesDayTests
 
 open FsUnit.Xunit
 open Xunit
 
-open DiscriminatedUnions
+open ValentinesDay
 
 [<Fact>]
 let ``Rate board game``() = rateActivity BoardGame |> should equal No

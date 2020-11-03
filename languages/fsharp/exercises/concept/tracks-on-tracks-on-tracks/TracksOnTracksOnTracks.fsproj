@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Lists.fs" />
-    <Compile Include="ListsTests.fs" />
+    <Compile Include="TracksOnTracksOnTracks.fs" />
+    <Compile Include="TracksOnTracksOnTracksTests.fs" />
   </ItemGroup>
 
   <ItemGroup>

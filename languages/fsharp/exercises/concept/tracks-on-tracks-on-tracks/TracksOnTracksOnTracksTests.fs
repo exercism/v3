@@ -1,9 +1,9 @@
-module ListsTests
+module TracksOnTracksOnTracksTests
 
 open FsUnit.Xunit
 open Xunit
 
-open Lists
+open TracksOnTracksOnTracks
 
 [<Fact>]
 let ``New list``() =
