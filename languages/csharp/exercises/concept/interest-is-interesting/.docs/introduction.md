@@ -1,3 +1,5 @@
+## floating-point-numbers
+
 A floating-point number is a number with zero or more digits behind the decimal separator. Examples are `-2.4`, `0.1`, `3.14`, `16.984025` and `1024.0`.
 
 Different floating-point types can store different numbers of digits after the digit separator - this is referred to as its precision.
@@ -20,3 +22,11 @@ while (x > 10)
     // Execute logic if x > 10
 }
 ```
+
+## do-while-loops
+
+TODO: rewrite the above text to make sense as a stand-alone section
+
+## while-loops
+
+TODO: rewrite the above text to make sense as a stand-alone section

@@ -1,3 +1,5 @@
+## arrays
+
 In C#, data structures that can hold zero or more elements are known as _collections_. An **array** is a collection that has a fixed size/length and whose elements must all be of the same type. Elements can be assigned to an array or retrieved from it using an index. C# arrays are zero-based, meaning that the first element's index is always zero:
 
 ```csharp
@@ -49,3 +51,11 @@ for (int i = 0; i < 3; i++)
 
 // => aei
 ```
+
+## for-loops
+
+TODO: rewrite the above text to make sense as a stand-alone section
+
+## foreach-loops
+
+TODO: rewrite the above text to make sense as a stand-alone section

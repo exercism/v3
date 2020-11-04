@@ -1,3 +1,5 @@
+## namespaces
+
 Namespaces are a way to group related code and to avoid name clashes and are generally present in all but the most trivial code base.
 
 The syntax is as follows:
@@ -50,3 +52,7 @@ namespace OtherSpace
 ```
 
 You can alias a namespace with the syntax `using MyAlias = MySpace;` and then use the alias anywhere that the namespace could be used.
+
+## accessibility
+
+TODO: check what to do with this concept
