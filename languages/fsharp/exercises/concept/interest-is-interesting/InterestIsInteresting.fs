@@ -1,4 +1,4 @@
-module SavingsAccount
+module InterestIsInteresting
 
 let interestRate (balance: decimal): single =
     failwith "Please implement the 'interestRate' function"

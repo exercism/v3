@@ -1,9 +1,9 @@
-module SavingsAccountTests
+module InterestIsInterestingTests
 
 open FsUnit.Xunit
 open Xunit
 
-open SavingsAccount
+open InterestIsInteresting
 
 [<Fact>]
 let ``Minimal first interest rate``() = interestRate 0m |> should equal 0.5f

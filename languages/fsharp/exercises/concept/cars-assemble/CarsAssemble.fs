@@ -1,4 +1,4 @@
-module AssemblyLine
+module CarsAssemble
 
 let productionRatePerHour (speed: int): float =
     failwith "Please implement the 'productionRatePerHour' function"

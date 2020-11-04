@@ -22,10 +22,10 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 
 #### Implementations
 
-| Track | Exercise                        | Changes |
-| ----- | ------------------------------- | ------- |
-| F#    | [basics][implementation-fsharp] | None    |
-| Scala | [basics][implementation-scala]  | None    |
+| Track | Exercise                                          | Changes |
+| ----- | ------------------------------------------------- | ------- |
+| F#    | [lucians-luscious-lasagna][implementation-fsharp] | None    |
+| Scala | [basics][implementation-scala]                    | None    |
 
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/lasagna/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/lucians-luscious-lasagna/.docs/introduction.md
 [implementation-fsharp]: ../../languages/scala/exercises/concept/basics/.docs/introduction.md
