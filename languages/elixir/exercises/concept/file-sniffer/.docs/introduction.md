@@ -1,3 +1,5 @@
+## binaries
+
 Elixir provides an elegant syntax for working with binary data as we have seen with the `<<>>` special form provided for working with _bitstrings_.
 
 ## Binary data

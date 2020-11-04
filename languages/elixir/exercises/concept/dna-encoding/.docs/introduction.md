@@ -1,3 +1,6 @@
+## bitstrings
+## tail-call-recursion
+
 Working with binary data is an important concept in any language, and Elixir provides an elegant syntax to write, match, and construct binary data.
 
 ## Bitstrings

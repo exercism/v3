@@ -1,3 +1,7 @@
+## multiple-clause-functions
+## guards
+## default-arguments
+
 ## Multiple Function Clauses
 
 Elixir facilitates **Open-Close Principle** practices by allowing functions to have multiple clauses, so instead of sprawling and hard-coded control-logic, pointed functions can be written to add/remove behavior easily.

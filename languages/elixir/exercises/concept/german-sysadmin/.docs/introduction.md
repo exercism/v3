@@ -1,3 +1,6 @@
+## charlists
+## case
+
 Charlists are created using single quotes.
 
 ```elixir

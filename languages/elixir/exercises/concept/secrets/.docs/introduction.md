@@ -1,3 +1,7 @@
+## anonymous-functions
+## closures
+## bit-manipulation
+
 Functions are treated as first class citizens in Elixir. This means functions:
 
 - Can be assigned to variables.
