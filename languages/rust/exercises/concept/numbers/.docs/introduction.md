@@ -1,3 +1,7 @@
+## numbers
+## integers
+## floating-point-numbers
+
 There are two different types of numbers in Rust:
 
 - Integers: numbers with no digits behind the decimal separator (whole numbers).
