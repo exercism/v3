@@ -25,12 +25,12 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 | C#         | [lucians-luscious-lasagna][implementation-csharp] | None                                             |
 | Elixir     | [basics][implementation-elixir]                   | Introduces binding values rather than assignment |
 | JavaScript | [basics][implementation-javascript]               | There is no updating of a variable               |
-| F#         | [basics][implementation-fsharp]                   | There is no updating of a variable               |
+| F#         | [lucians-luscious-lasagna][implementation-fsharp] | There is no updating of a variable               |
 | Ruby       | [basics][implementation-ruby]                     |                                                  |
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/lucians-luscious-lasagna/.docs/introduction.md
 [implementation-elixir]: ../../languages/elixir/exercises/concept/lasagna/.docs/introduction.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/lasagna/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/lucians-luscious-lasagna/.docs/introduction.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/basics/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/lasagna/.docs/introduction.md
 [concept-variables]: ./variables.md

@@ -1,4 +1,4 @@
-module Lasagna
+module LuciansLusciousLasagna
 
 // TODO: define the 'expectedMinutesInOven' binding
 

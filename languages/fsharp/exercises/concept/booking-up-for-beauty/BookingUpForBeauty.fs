@@ -1,4 +1,4 @@
-module BeautySalon
+module BookingUpForBeauty
 
 // The following line is needed to use the DateTime type
 open System

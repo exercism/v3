@@ -33,11 +33,11 @@ This exercise handles scheduled appointments. The reference implementation (C#) 
 | Track | Exercise                                       | Changes |
 | ----- | ---------------------------------------------- | ------- |
 | C#    | [booking-up-for-beauty][implementation-csharp] | None    |
-| F#    | [strings][implementation-fsharp]               | None    |
+| F#    | [booking-up-for-beauty][implementation-fsharp] | None    |
 
 [type-date]: ./date.md
 [type-duration]: ./duration.md
 [type-time]: ./time.md
 [type-string]: ./string.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/booking-up-for-beauty/.docs/introduction.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/beauty-salon/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/booking-up-for-beauty/.docs/introduction.md
