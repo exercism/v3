@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Valentine'sDay.cs"],
+    "solution_files": ["ValentinesDay.fs"],
     "test_files": ["Valentine'sDayTests.fs"]
   }
 }

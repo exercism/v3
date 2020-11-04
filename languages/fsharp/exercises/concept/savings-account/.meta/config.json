@@ -7,7 +7,7 @@
   ],
   "forked_from": ["csharp/floating-point-numbers"],
   "editor": {
-    "solution_files": ["SavingsAccount.cs"],
+    "solution_files": ["SavingsAccount.fs"],
     "test_files": ["SavingsAccountTests.fs"]
   }
 }

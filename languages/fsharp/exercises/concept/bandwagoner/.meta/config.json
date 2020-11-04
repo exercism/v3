@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Bandwagoner.cs"],
+    "solution_files": ["Bandwagoner.fs"],
     "test_files": ["BandwagonerTests.fs"]
   }
 }

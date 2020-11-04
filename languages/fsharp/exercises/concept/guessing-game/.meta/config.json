@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["GuessingGame.cs"],
+    "solution_files": ["GuessingGame.fs"],
     "test_files": ["GuessingGameTests.fs"]
   }
 }
