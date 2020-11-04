@@ -10,9 +10,7 @@ public int Times3(int input) => input * 3;
 public int Interesting => 1729;
 ```
 
-## conditionals-ternary
-
-TODO: we should rename the `conditionals-ternary` concept to `ternary-operators`, as the former implies a hierarchy
+## ternary-operators
 
 Ternary operators allow if-conditions to be defined in expressions rather than statement blocks. This echoes functional programming approaches and can often make code more expressive and less error-prone.
 

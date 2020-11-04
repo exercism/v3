@@ -52,7 +52,3 @@ namespace OtherSpace
 ```
 
 You can alias a namespace with the syntax `using MyAlias = MySpace;` and then use the alias anywhere that the namespace could be used.
-
-## accessibility
-
-TODO: check what to do with this concept

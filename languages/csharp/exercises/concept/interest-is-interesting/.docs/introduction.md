@@ -12,6 +12,8 @@ C# has three floating-point types:
 
 As can be seen, each type can store a different number of digits. This means that trying to store PI in a `float` will only store the first 6 to 9 digits (with the last digit being rounded).
 
+## while-loops
+
 In this exercise you may also want to use a loop. There are several ways to write loops in C#, but the `while` loop is most appropriate here:
 
 ```csharp
@@ -20,13 +22,20 @@ int x = 23;
 while (x > 10)
 {
     // Execute logic if x > 10
+    x = x - 2;
 }
 ```
 
 ## do-while-loops
 
-TODO: rewrite the above text to make sense as a stand-alone section
+An less commonly used alternative to the above syntax is a `do-while` loop:
 
-## while-loops
+```csharp
+int x = 23;
 
-TODO: rewrite the above text to make sense as a stand-alone section
+do
+{
+    // Execute logic if x > 10
+    x = x - 2;
+} while (x > 10)
+```

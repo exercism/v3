@@ -46,4 +46,4 @@ enum PhoneFeatures : byte
 
 ## compound-assignment
 
-TODO: consider what to put here
+TODO: consider what to put here - do this in conjunction with issue #2529 cleanup about.md files and approach detailed in csharp/concepts/bit-manipulation/about.md.

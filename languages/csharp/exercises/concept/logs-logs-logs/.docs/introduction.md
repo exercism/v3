@@ -22,7 +22,3 @@ enum Answer
     No = 5
 }
 ```
-
-## pattern-matching-constants
-
-TODO: verify if this is actually used

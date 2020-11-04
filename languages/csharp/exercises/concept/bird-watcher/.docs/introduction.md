@@ -24,6 +24,8 @@ int[] threeIntsV3 = { 4, 9, 7 };
 
 Arrays can be manipulated by either calling an array instance's methods or properties, or by using the static methods defined in the `Array` class.
 
+## foreach-loops
+
 The fact that an array is also a _collection_ means that, besides accessing values by index, you can iterate over _all_ its values using a `foreach` loop:
 
 ```csharp
@@ -38,6 +40,8 @@ foreach (char vowel in vowels)
 // => aeiou
 ```
 
+## for-loops
+
 If you want more control over which values to iterate over, a `for` loop can be used:
 
 ```csharp
@@ -51,11 +55,3 @@ for (int i = 0; i < 3; i++)
 
 // => aei
 ```
-
-## for-loops
-
-TODO: rewrite the above text to make sense as a stand-alone section
-
-## foreach-loops
-
-TODO: rewrite the above text to make sense as a stand-alone section
