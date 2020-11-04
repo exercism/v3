@@ -287,9 +287,9 @@ See [this example config.json file][config.json].
 [docs-hints.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/hints.md
 [docs-introduction.md]: ../languages/csharp/exercises/concept/strings/.docs/introduction.md
 [docs-instructions.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
-[meta-config.json]: ../languages/fsharp/exercises/concept/booleans/.meta/config.json
+[meta-config.json]: ../languages/fsharp/exercises/concept/annalyns-infiltration/.meta/config.json
 [meta-source.md]: ../languages/julia/exercises/concept/encounters/.docs/source.md
-[meta-design.md]: ../languages/fsharp/exercises/concept/booleans/.meta/design.md
+[meta-design.md]: ../languages/fsharp/exercises/concept/annalyns-infiltration/.meta/design.md
 [shared-docs-cli.md]: ../languages/csharp/exercises/shared/.docs/cli.md
 [shared-docs-debug.md]: ../languages/csharp/exercises/shared/.docs/debug.md
 [config.json]: ../languages/csharp/config.json

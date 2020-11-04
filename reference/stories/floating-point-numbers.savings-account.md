@@ -28,4 +28,4 @@ These are example tasks that fit the savings account exercise:
 
 [types-floating_point_number]: ../types/floating_point_number.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/floating-point-numbers/.docs/instructions.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/savings-account/.docs/instructions.md

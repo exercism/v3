@@ -47,6 +47,6 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 [types-boolean]: ../types/boolean.md
 [javascript-concept-booleans]: ../../languages/javascript/exercises/concept/booleans
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/booleans/.docs/instructions.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/annalyns-infiltration/.docs/instructions.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/booleans/.docs/instructions.md
 [implementation-julia]: ../../languages/julia/exercises/concept/boolean-logic/.docs/instructions.md
