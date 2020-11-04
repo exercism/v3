@@ -1,4 +1,4 @@
-### Lists in Common Lisp
+### Lists
 
 Given that the name of the language is Lisp which stands of _LISt Processing_ one might assume that the language has facilities for handling lists of items, and you'd be correct!
 
@@ -6,15 +6,9 @@ While Common Lisp has other data structures as well as lists, lists are still he
 
 A list in Common Lisp is a sequence of items. The items themselves do not have to be the same type. For example you can have a list of `1`, `two`, `"III"`.
 
-A list is composed of two parts called (for historical reason[1]) the `car` and the `cdr`. (Those are also the names of the functions used to access those two parts.).
+#### Creating Lists
 
-A list is a recursive data structure in that both the `car` and `cdr` may themselves be lists. In fact a list of more a single item will have a `cdr` which itself has a `car` and `cdr` (see below). Typically the final `cdr` of a list will be `nil` but can be any value. Note: an empty list has `nil` for both `car` and `cdr`.
-
-A list is represented by the values delimited with parentheses. (Thus Common Lisp source code can be seen to be a series of lists of things.)
-
-### Creating Lists
-
-One can simply type in a quoted list like this: `'(1 two "III")` and that will cause a list to be created and evaluated (it evaluates to: `(1 two" "III")`.
+One can simply type in a quoted list like this: `'(1 two "III")` and that will cause a list to be created and evaluated (it evaluates to: `(1 two "III")`.
 
 There are also two main functions used to create lists: `list` and `cons`.
 
@@ -36,7 +30,7 @@ There are also two main functions used to create lists: `list` and `cons`.
 
 (`first` and `rest` are synonyms of `car` and `cdr` and work exactly the same.)
 
-### Length & random access
+#### Length & Random Access
 
 The length of a list can be determined by the use of `length`. An empty list has length zero.
 

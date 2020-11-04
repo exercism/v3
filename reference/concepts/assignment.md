@@ -30,7 +30,7 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 
 [implementation-csharp]: ../../languages/csharp/exercises/concept/lucians-luscious-lasagna/.docs/introduction.md
 [implementation-elixir]: ../../languages/elixir/exercises/concept/lasagna/.docs/introduction.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/lasagna/.docs/introduction.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/basics/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/lasagna/.docs/introduction.md
 [concept-variables]: ./variables.md

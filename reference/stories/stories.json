@@ -243,8 +243,8 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "freelance-rate",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/freelance-rate/.docs/instructions.md"
+        "exercise": "freelance-rates",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/freelance-rates/.docs/instructions.md"
       },
       {
         "track": "JavaScript",

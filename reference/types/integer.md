@@ -52,5 +52,5 @@ This exercise asks students to write code to analyse the production of an assemb
 [type-short]: ./short.md
 [type-word]: ./word.md
 [implementation-csharp-production-line]: ../../languages/csharp/exercises/concept/cars-assemble/.docs/introduction.md
-[implementation-fsharp-production-line]: ../../languages/fsharp/exercises/concept/numbers/.docs/introduction.md
+[implementation-fsharp-production-line]: ../../languages/fsharp/exercises/concept/assembly-line/.docs/introduction.md
 [implementation-go-production-line]: ../../languages/go/exercises/concept/numbers/.docs/introduction.md

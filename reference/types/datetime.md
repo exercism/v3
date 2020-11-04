@@ -40,4 +40,4 @@ This exercise handles scheduled appointments. The reference implementation (C#) 
 [type-time]: ./time.md
 [type-string]: ./string.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/booking-up-for-beauty/.docs/introduction.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/datetimes/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/beauty-salon/.docs/introduction.md

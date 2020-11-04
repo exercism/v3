@@ -289,7 +289,7 @@
       "uuid": "9afa389a-17e2-4991-ab48-64be5fc955aa",
       "slug": "cons",
       "name": "Cons",
-      "blurb": "TODO: add blurb for cons concept"
+      "blurb": "An ordered pair of elements."
     },
     {
       "uuid": "b9f5a5fd-57e9-4003-880b-499206e1554f",
@@ -349,7 +349,7 @@
       "uuid": "65c600a7-7f6a-428f-9913-d6f127f35234",
       "slug": "lists",
       "name": "Lists",
-      "blurb": "TODO: add blurb for lists concept"
+      "blurb": "A recursive data structure made from a head and tail."
     },
     {
       "uuid": "5a6598c3-8d92-4eca-b36e-42ba4b435237",
