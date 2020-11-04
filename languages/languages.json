@@ -14,8 +14,8 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/arrays",
-          "slug": "arrays",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/bird-watcher",
+          "slug": "bird-watcher",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
@@ -46,8 +46,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/basics",
-          "slug": "basics",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/lucians-luscious-lasagna",
+          "slug": "lucians-luscious-lasagna",
           "concepts": [
             {
               "url": null,
@@ -57,8 +57,8 @@
           "prerequisites": []
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/booleans",
-          "slug": "booleans",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/annalyns-infiltration",
+          "slug": "annalyns-infiltration",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
@@ -73,8 +73,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/casting",
-          "slug": "casting",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/secure-munchester-united",
+          "slug": "secure-munchester-united",
           "concepts": [
             {
               "url": null,
@@ -97,8 +97,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/chars",
-          "slug": "chars",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/squeaky-clean",
+          "slug": "squeaky-clean",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/char.md",
@@ -125,8 +125,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/classes",
-          "slug": "classes",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/elons-toys",
+          "slug": "elons-toys",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
@@ -149,8 +149,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/constants",
-          "slug": "constants",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/authentication-system",
+          "slug": "authentication-system",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
@@ -197,8 +197,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/constructors",
-          "slug": "constructors",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/need-for-speed",
+          "slug": "need-for-speed",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constructors.md",
@@ -225,8 +225,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/datetimes",
-          "slug": "datetimes",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/booking-up-for-beauty",
+          "slug": "booking-up-for-beauty",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/datetime.md",
@@ -249,8 +249,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/dictionaries",
-          "slug": "dictionaries",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/international-calling-connoisseur",
+          "slug": "international-calling-connoisseur",
           "concepts": [
             {
               "url": null,
@@ -277,8 +277,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/enums",
-          "slug": "enums",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/logs-logs-logs",
+          "slug": "logs-logs-logs",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
@@ -301,8 +301,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/equality",
-          "slug": "equality",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/faceid-2",
+          "slug": "faceid-2",
           "concepts": [
             {
               "url": null,
@@ -341,8 +341,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/exceptions",
-          "slug": "exceptions",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/calculator-conundrum",
+          "slug": "calculator-conundrum",
           "concepts": [
             {
               "url": null,
@@ -369,8 +369,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/expression-bodied-members",
-          "slug": "expression-bodied-members",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/the-weather-in-deather",
+          "slug": "the-weather-in-deather",
           "concepts": [
             {
               "url": null,
@@ -425,32 +425,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/exceptions",
-          "slug": "exceptions",
-          "concepts": [
-            {
-              "url": null,
-              "name": "exceptions"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/inheritance.md",
-              "name": "inheritance"
-            },
-            {
-              "url": null,
-              "name": "nullability"
-            },
-            {
-              "url": null,
-              "name": "switch-statements"
-            }
-          ]
-        },
-        {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/flag-enums",
-          "slug": "flag-enums",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/attack-of-the-trolls",
+          "slug": "attack-of-the-trolls",
           "concepts": [
             {
               "url": null,
@@ -481,8 +457,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/floating-point-numbers",
-          "slug": "floating-point-numbers",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/interest-is-interesting",
+          "slug": "interest-is-interesting",
           "concepts": [
             {
               "url": null,
@@ -509,8 +485,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/inheritance",
-          "slug": "inheritance",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/wizards-and-warriors",
+          "slug": "wizards-and-warriors",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/inheritance.md",
@@ -541,8 +517,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/integral-numbers",
-          "slug": "integral-numbers",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/hyper-optimized-telemetry",
+          "slug": "hyper-optimized-telemetry",
           "concepts": [
             {
               "url": null,
@@ -561,8 +537,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/interfaces",
-          "slug": "interfaces",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/remote-control-competition",
+          "slug": "remote-control-competition",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/interfaces.md",
@@ -589,8 +565,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/lists",
-          "slug": "lists",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/tracks-on-tracks-on-tracks",
+          "slug": "tracks-on-tracks-on-tracks",
           "concepts": [
             {
               "url": null,
@@ -613,8 +589,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/method-overloading",
-          "slug": "method-overloading",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/wizards-and-warriors-2",
+          "slug": "wizards-and-warriors-2",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/method_overloading.md",
@@ -653,8 +629,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/namespaces",
-          "slug": "namespaces",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/red-vs-blue-darwin-style",
+          "slug": "red-vs-blue-darwin-style",
           "concepts": [
             {
               "url": null,
@@ -681,8 +657,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/nested-types",
-          "slug": "nested-types",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/remote-control-cleanup",
+          "slug": "remote-control-cleanup",
           "concepts": [
             {
               "url": null,
@@ -713,8 +689,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/nullability",
-          "slug": "nullability",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/tim-from-marketing",
+          "slug": "tim-from-marketing",
           "concepts": [
             {
               "url": null,
@@ -737,8 +713,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/numbers",
-          "slug": "numbers",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/cars-assemble",
+          "slug": "cars-assemble",
           "concepts": [
             {
               "url": null,
@@ -757,8 +733,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/object-initializers",
-          "slug": "object-initializers",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/why-cant-i-push-to-main",
+          "slug": "why-cant-i-push-to-main",
           "concepts": [
             {
               "url": null,
@@ -781,8 +757,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/operator-overloading",
-          "slug": "operator-overloading",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/hyperia-forex",
+          "slug": "hyperia-forex",
           "concepts": [
             {
               "url": null,
@@ -805,8 +781,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/overflow",
-          "slug": "overflow",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/hyperinflation-hits-hyperia",
+          "slug": "hyperinflation-hits-hyperia",
           "concepts": [
             {
               "url": null,
@@ -833,8 +809,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/parameters",
-          "slug": "parameters",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/building-telemetry",
+          "slug": "building-telemetry",
           "concepts": [
             {
               "url": null,
@@ -865,8 +841,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/properties",
-          "slug": "properties",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/weighing-machine",
+          "slug": "weighing-machine",
           "concepts": [
             {
               "url": null,
@@ -897,8 +873,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/randomness",
-          "slug": "randomness",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/roll-the-die",
+          "slug": "roll-the-die",
           "concepts": [
             {
               "url": null,
@@ -913,8 +889,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/regular-expressions",
-          "slug": "regular-expressions",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/parsing-log-files",
+          "slug": "parsing-log-files",
           "concepts": [
             {
               "url": null,
@@ -945,8 +921,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/resource-cleanup",
-          "slug": "resource-cleanup",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/object-relational-mapping",
+          "slug": "object-relational-mapping",
           "concepts": [
             {
               "url": null,
@@ -965,8 +941,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/resource-lifetime",
-          "slug": "resource-lifetime",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/orm-in-one-go",
+          "slug": "orm-in-one-go",
           "concepts": [
             {
               "url": null,
@@ -981,8 +957,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/string-formatting",
-          "slug": "string-formatting",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/high-school-sweethearts",
+          "slug": "high-school-sweethearts",
           "concepts": [
             {
               "url": null,
@@ -1021,8 +997,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/strings",
-          "slug": "strings",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/log-levels",
+          "slug": "log-levels",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
@@ -1037,8 +1013,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/structs",
-          "slug": "structs",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/land-grab-in-space",
+          "slug": "land-grab-in-space",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
@@ -1069,8 +1045,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/switch-statements",
-          "slug": "switch-statements",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/football-match-reports",
+          "slug": "football-match-reports",
           "concepts": [
             {
               "url": null,
@@ -1089,8 +1065,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/time",
-          "slug": "time",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/beauty-salon-goes-global",
+          "slug": "beauty-salon-goes-global",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/time.md",
@@ -1121,8 +1097,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/tuples",
-          "slug": "tuples",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/phone-number-analysis",
+          "slug": "phone-number-analysis",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
@@ -1137,8 +1113,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/user-defined-exceptions",
-          "slug": "user-defined-exceptions",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/instruments-of-texas",
+          "slug": "instruments-of-texas",
           "concepts": [
             {
               "url": null,
@@ -1231,8 +1207,8 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/basics",
-          "slug": "basics",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/socks-and-sexprs",
+          "slug": "socks-and-sexprs",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comments.md",
@@ -1254,8 +1230,8 @@
           "prerequisites": []
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/sameness",
-          "slug": "sameness",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/key-comparison",
+          "slug": "key-comparison",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/sameness.md",
@@ -1290,8 +1266,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/arithmetic",
-          "slug": "arithmetic",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pizza-pi",
+          "slug": "pizza-pi",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
@@ -1314,8 +1290,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/lists",
-          "slug": "lists",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/leslies-lists",
+          "slug": "leslies-lists",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
@@ -1338,8 +1314,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/conditionals",
-          "slug": "conditionals",
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/pal-picker",
+          "slug": "pal-picker",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
@@ -1473,26 +1449,6 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpn-calculator",
-          "slug": "rpn-calculator",
-          "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
-              "name": "integers"
-            },
-            {
-              "url": null,
-              "name": "floating-point-numbers"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": null,
-              "name": "basics"
-            }
-          ]
-        },
-        {
           "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/log-level",
           "slug": "log-level",
           "concepts": [
@@ -1519,10 +1475,6 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
               "name": "lists"
-            },
-            {
-              "url": null,
-              "name": "string-literals"
             }
           ],
           "prerequisites": [
@@ -1553,10 +1505,6 @@
             {
               "url": null,
               "name": "cond"
-            },
-            {
-              "url": null,
-              "name": "string-literals"
             }
           ]
         },
@@ -1685,10 +1633,6 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/default_arguments.md",
               "name": "default-arguments"
-            },
-            {
-              "url": null,
-              "name": "string-literals"
             }
           ]
         },
@@ -2202,8 +2146,8 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/arrays",
-          "slug": "arrays",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/bird-watcher",
+          "slug": "bird-watcher",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
@@ -2222,8 +2166,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/basics",
-          "slug": "basics",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lasagna",
+          "slug": "lasagna",
           "concepts": [
             {
               "url": null,
@@ -2233,8 +2177,8 @@
           "prerequisites": []
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/booleans",
-          "slug": "booleans",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/annalyns-infiltration",
+          "slug": "annalyns-infiltration",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
@@ -2249,8 +2193,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/datetimes",
-          "slug": "datetimes",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/beauty-salon",
+          "slug": "beauty-salon",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/datetime.md",
@@ -2273,8 +2217,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/discriminated-unions",
-          "slug": "discriminated-unions",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/valentines-day",
+          "slug": "valentines-day",
           "concepts": [
             {
               "url": null,
@@ -2289,8 +2233,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/floating-point-numbers",
-          "slug": "floating-point-numbers",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/savings-account",
+          "slug": "savings-account",
           "concepts": [
             {
               "url": null,
@@ -2309,8 +2253,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lists",
-          "slug": "lists",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/tracks-on-tracks-on-tracks",
+          "slug": "tracks-on-tracks-on-tracks",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
@@ -2329,8 +2273,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/numbers",
-          "slug": "numbers",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/assembly-line",
+          "slug": "assembly-line",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
@@ -2349,8 +2293,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/pattern-matching",
-          "slug": "pattern-matching",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/guessing-game",
+          "slug": "guessing-game",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/pattern_matching.md",
@@ -2369,8 +2313,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/records",
-          "slug": "records",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/bandwagoner",
+          "slug": "bandwagoner",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/record.md",
@@ -2397,8 +2341,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/recursion",
-          "slug": "recursion",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/pizza-pricing",
+          "slug": "pizza-pricing",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/recursion.md",
@@ -2425,8 +2369,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/strings",
-          "slug": "strings",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/log-levels",
+          "slug": "log-levels",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
@@ -3050,6 +2994,30 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-destructuring",
+          "slug": "array-destructuring",
+          "concepts": [
+            {
+              "url": null,
+              "name": "array-destructuring"
+            },
+            {
+              "url": null,
+              "name": "spread-operator"
+            },
+            {
+              "url": null,
+              "name": "rest-elements"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/arrays",
           "slug": "arrays",
           "concepts": [
@@ -3238,8 +3206,8 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/functions-introduction",
-          "slug": "functions-introduction",
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/lasagna",
+          "slug": "lasagna",
           "concepts": [
             {
               "url": null,
@@ -3269,8 +3237,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/matrices-introduction",
-          "slug": "matrices-introduction",
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
+          "slug": "exercism-matrix",
           "concepts": [
             {
               "url": null,
@@ -3325,8 +3293,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
-          "slug": "\uD83D\uDD51\uD83D\uDD64\uD83D\uDD57",
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/emoji-times",
+          "slug": "emoji-times",
           "concepts": [
             {
               "url": null,
@@ -3422,8 +3390,8 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/strings",
-          "slug": "strings",
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/processing-logs",
+          "slug": "processing-logs",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
@@ -3432,14 +3400,14 @@
           ],
           "prerequisites": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
+              "url": null,
+              "name": "basics"
             }
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/tuples",
-          "slug": "tuples",
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/tisbury-treasure-hunt",
+          "slug": "tisbury-treasure-hunt",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
@@ -3449,37 +3417,29 @@
           "prerequisites": [
             {
               "url": null,
+              "name": "basics"
+            },
+            {
+              "url": null,
               "name": "bools"
             },
             {
-              "url": null,
-              "name": "for-loops"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
             },
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
             },
             {
-              "url": null,
-              "name": "if-keyword"
-            },
-            {
-              "url": null,
-              "name": "in-keyword"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
-              "name": "integers"
-            },
-            {
-              "url": null,
-              "name": "return-keyword"
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
             }
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/basics",
-          "slug": "basics",
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/guidos-gorgeous-lasagna",
+          "slug": "guidos-gorgeous-lasagna",
           "concepts": [
             {
               "url": null,
@@ -3489,8 +3449,8 @@
           "prerequisites": []
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/bools",
-          "slug": "bools",
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/ghost-gobble-arcade-game",
+          "slug": "ghost-gobble-arcade-game",
           "concepts": [
             {
               "url": null,
@@ -3501,6 +3461,254 @@
             {
               "url": null,
               "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/inventory-management",
+          "slug": "inventory-management",
+          "concepts": [
+            {
+              "url": null,
+              "name": "dicts"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": null,
+              "name": "bools"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/log-levels",
+          "slug": "log-levels",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
+              "name": "enums"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
+              "name": "classes"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/enumeration.md",
+              "name": "enumeration"
+            },
+            {
+              "url": null,
+              "name": "indexing"
+            },
+            {
+              "url": null,
+              "name": "iteration"
+            },
+            {
+              "url": null,
+              "name": "list-comprehensions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/methods.md",
+              "name": "methods"
+            },
+            {
+              "url": null,
+              "name": "sequences"
+            },
+            {
+              "url": null,
+              "name": "slicing"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": null,
+              "name": "string-formatting"
+            },
+            {
+              "url": null,
+              "name": "string-methods"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/elyses-enchantments",
+          "slug": "elyses-enchantments",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comparisons.md",
+              "name": "comparisons"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/chaitanas-colossal-coaster",
+          "slug": "chaitanas-colossal-coaster",
+          "concepts": [
+            {
+              "url": null,
+              "name": "list-methods"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comparisons.md",
+              "name": "comparisons"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/restaurant-rozalynn",
+          "slug": "restaurant-rozalynn",
+          "concepts": [
+            {
+              "url": null,
+              "name": "none"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": null,
+              "name": "bools"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/default_arguments.md",
+              "name": "default-arguments"
+            },
+            {
+              "url": null,
+              "name": "dicts"
+            },
+            {
+              "url": null,
+              "name": "dict-methods"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            },
+            {
+              "url": null,
+              "name": "list-methods"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/making-the-grade",
+          "slug": "making-the-grade",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comparisons.md",
+              "name": "comparisons"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
             }
           ]
         }
@@ -3791,24 +3999,60 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/arrays",
-          "slug": "arrays",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/custom-signs",
+          "slug": "custom-signs",
           "concepts": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
-              "name": "arrays"
+              "url": null,
+              "name": "strings-and-characters"
             }
           ],
           "prerequisites": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
-              "name": "conditionals"
+              "url": null,
+              "name": "basics"
             }
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/basics",
-          "slug": "basics",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/freelancer-rates",
+          "slug": "freelancer-rates",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/high-score-board",
+          "slug": "high-score-board",
+          "concepts": [
+            {
+              "url": null,
+              "name": "dictionaries"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": null,
+              "name": "optionals"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna",
+          "slug": "lasagna",
           "concepts": [
             {
               "url": null,
@@ -3834,96 +4078,8 @@
           "prerequisites": []
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/closures",
-          "slug": "closures",
-          "concepts": [
-            {
-              "url": null,
-              "name": "capturing"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/closures.md",
-              "name": "closures"
-            },
-            {
-              "url": null,
-              "name": "shorthand-arguments"
-            },
-            {
-              "url": null,
-              "name": "trailing-closures"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/higher_order_functions.md",
-              "name": "higher-order-functions"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
-              "name": "loops"
-            }
-          ]
-        },
-        {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/conditionals",
-          "slug": "conditionals",
-          "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
-              "name": "booleans"
-            },
-            {
-              "url": null,
-              "name": "conditionals-if"
-            },
-            {
-              "url": null,
-              "name": "conditionals-guard"
-            },
-            {
-              "url": null,
-              "name": "conditionals-switch"
-            },
-            {
-              "url": null,
-              "name": "ternary-operator"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": null,
-              "name": "basics"
-            }
-          ]
-        },
-        {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/enums",
-          "slug": "enums",
-          "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/enumeration.md",
-              "name": "enumerations"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": null,
-              "name": "string-components"
-            },
-            {
-              "url": null,
-              "name": "structs-and-classes"
-            }
-          ]
-        },
-        {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/functions",
-          "slug": "functions",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/lasagna-master",
+          "slug": "lasagna-master",
           "concepts": [
             {
               "url": null,
@@ -3966,28 +4122,28 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/higher-order-functions",
-          "slug": "higher-order-functions",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/log-lines",
+          "slug": "log-lines",
           "concepts": [
             {
-              "url": null,
-              "name": "escaping-functions"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/higher_order_functions.md",
-              "name": "higher-order-functions"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/enumeration.md",
+              "name": "enumerations"
             }
           ],
           "prerequisites": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
-              "name": "functions"
+              "url": null,
+              "name": "string-components"
+            },
+            {
+              "url": null,
+              "name": "structs-and-classes"
             }
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/loops",
-          "slug": "loops",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/master-mixologist",
+          "slug": "master-mixologist",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
@@ -4026,24 +4182,24 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/numbers",
-          "slug": "numbers",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/magician-in-training",
+          "slug": "magician-in-training",
           "concepts": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
-              "name": "numbers"
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
             }
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
             }
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/optionals",
-          "slug": "optionals",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/pizza-slices",
+          "slug": "pizza-slices",
           "concepts": [
             {
               "url": null,
@@ -4062,8 +4218,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/string-components",
-          "slug": "string-components",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/poetry-club",
+          "slug": "poetry-club",
           "concepts": [
             {
               "url": null,
@@ -4094,12 +4250,68 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/strings-and-characters",
-          "slug": "strings-and-characters",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/santas-helper",
+          "slug": "santas-helper",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/secret-agent",
+          "slug": "secret-agent",
           "concepts": [
             {
               "url": null,
-              "name": "strings-and-characters"
+              "name": "escaping-functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/higher_order_functions.md",
+              "name": "higher-order-functions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/vehicle-purchase",
+          "slug": "vehicle-purchase",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            },
+            {
+              "url": null,
+              "name": "conditionals-if"
+            },
+            {
+              "url": null,
+              "name": "conditionals-guard"
+            },
+            {
+              "url": null,
+              "name": "conditionals-switch"
+            },
+            {
+              "url": null,
+              "name": "ternary-operator"
             }
           ],
           "prerequisites": [
@@ -4110,8 +4322,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/structs-and-classes",
-          "slug": "structs-and-classes",
+          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/windowing-system",
+          "slug": "windowing-system",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
@@ -4146,26 +4358,6 @@
             {
               "url": null,
               "name": "function-overloading"
-            }
-          ]
-        },
-        {
-          "url": "https://github.com/exercism/v3/tree/master/languages/swift/exercises/concept/tuples",
-          "slug": "tuples",
-          "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
-              "name": "tuples"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
-              "name": "arrays"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
-              "name": "strings"
             }
           ]
         }

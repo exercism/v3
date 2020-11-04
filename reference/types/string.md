@@ -46,7 +46,7 @@ This exercise extracts information from log lines. The reference implementation 
 | Track  | Exercise                                 | Changes |
 | ------ | ---------------------------------------- | ------- |
 | C++    | [strings][implementation-cpp]            | None    |
-| C#     | [strings][implementation-csharp]         | None    |
+| C#     | [log-levels][implementation-csharp]      | None    |
 | F#     | [strings][implementation-fsharp]         | None    |
 | Ruby   | [strings][implementation-ruby]           | None    |
 | Python | [strings][implementation-python]         | None    |
@@ -82,11 +82,11 @@ This exercise implements some phrases an eccentric party robot would say.
 
 [type-char]: ./char.md
 [implementation-cpp]: ../../languages/cpp/exercises/concept/strings/.docs/introduction.md
-[implementation-csharp]: ../../languages/csharp/exercises/concept/strings/.docs/introduction.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/log-levels/.docs/introduction.md
 [implementation-elixir]: ../../languages/elixir/exercises/concept/high-school-sweetheart/.docs/introduction.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/strings/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/log-levels/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/strings/.docs/introduction.md
-[implementation-python]: ../../languages/python/exercises/concept/strings/.docs/introduction.md
+[implementation-python]: ../../languages/python/exercises/concept/processing-logs/.docs/introduction.md
 [implementation-go-pkg]: ../../languages/go/exercises/concept/strings-package/.docs/instructions.md
 [implementation-go]: ../../languages/go/exercises/concept/strings/.docs/instructions.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/strings/.docs/

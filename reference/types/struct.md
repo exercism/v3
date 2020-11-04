@@ -33,4 +33,4 @@ This exercise models the implementation of a simplified windowing system for an 
 [type-product-type]: ./product_type.md
 [type-record]: ./record.md
 [type-class]: ./class.md
-[implementation-swift]: ../../languages/swift/exercises/concept/structs-and-classes/.docs/introduction.md
+[implementation-swift]: ../../languages/swift/exercises/concept/windowing-system/.docs/introduction.md
