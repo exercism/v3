@@ -7,6 +7,6 @@
   ],
   "editor": {
     "solution_files": ["ValentinesDay.fs"],
-    "test_files": ["Valentine'sDayTests.fs"]
+    "test_files": ["ValentinesDayTests.fs"]
   }
 }
