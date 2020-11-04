@@ -20,7 +20,7 @@ for LANGUAGE_DIR in $LANGUAGE_DIRS; do
         CONCEPT_LINKS_FILE="$CONCEPT_DIR/links.json"
 
 		if [[ ! -f "$CONCEPT_ABOUT_FILE" ]]; then
-            echo "[$LANGUAGE] $CONCEPT_ABOUT_FILE is missing"
+            echo "::error::[$LANGUAGE] $CONCEPT_ABOUT_FILE is missing"
             EXIT_CODE=1
         fi
 
