@@ -30,5 +30,5 @@ This exercise handles ordering pizzas. The reference implementation (F#) teaches
 | JavaScript | [recursion][implementation-javascript] | Allow for multiple extra topping, or extra sauces, don't use pattern matching but list destructuring & iteration |
 
 [concepts-recursion]: ./recursion.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/recursion/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/pizza-pricing/.docs/introduction.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/recursion/.docs/introduction.md

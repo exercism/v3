@@ -29,5 +29,5 @@ The exercise generally guides students how to:
 
 [implementation-clojure]: ../../languages/clojure/exercises/concept/lists/.docs/instructions.md
 [implementation-elixir]: ../../languages/elixir/exercises/concept/language-list/.docs/instructions.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/lists/.docs/instructions.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/tracks-on-tracks-on-tracks/.docs/instructions.md
 [types-list]: ../types/list.md

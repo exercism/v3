@@ -1,0 +1,13 @@
+{
+  "authors": [
+    {
+      "github_username": "ErikSchierboom",
+      "exercism_username": "ErikSchierboom"
+    }
+  ],
+  "forked_from": ["csharp/arrays"],
+  "editor": {
+    "solution_files": ["BirdWatcher.fs"],
+    "test_files": ["BirdWatcherTests.fs"]
+  }
+}

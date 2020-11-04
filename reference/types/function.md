@@ -24,13 +24,13 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 
 #### Implementations
 
-| Track  | Exercise                                       | Changes |
-| ------ | ---------------------------------------------- | ------- |
-| C#     | [basics][implementation-csharp]                | None    |
-| F#     | [basics][implementation-fsharp]                | None    |
-| Julia  | [functions-introduction][implementation-julia] | None    |
-| Ruby   | [basics][implementation-ruby]                  | None    |
-| Elixir | [basics][implementation-elixir-lasagna]        | None    |
+| Track  | Exercise                                          | Changes |
+| ------ | ------------------------------------------------- | ------- |
+| C#     | [lucians-luscious-lasagna][implementation-csharp] | None    |
+| F#     | [basics][implementation-fsharp]                   | None    |
+| Julia  | [functions-introduction][implementation-julia]    | None    |
+| Ruby   | [basics][implementation-ruby]                     | None    |
+| Elixir | [basics][implementation-elixir-lasagna]           | None    |
 
 ### Closure Maker
 
@@ -46,9 +46,9 @@ This exercise deals with creating set of functions which return functions that m
 | ------ | -------------------------------------------- | ------- |
 | Elixir | [basics][implementation-elixir-closuremaker] | None    |
 
-[implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/introduction.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/basics/.docs/introduction.md
-[implementation-julia]: ../../languages/julia/exercises/concept/functions-introduction/.docs/introduction.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/lucians-luscious-lasagna/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/lasagna/.docs/introduction.md
+[implementation-julia]: ../../languages/julia/exercises/concept/lasagna/.docs/introduction.md
 [implementation-ruby]: ../../languages/ruby/exercises/concept/lasagna/.docs/introduction.md
 [implementation-elixir-lasagna]: ../../languages/elixir/exercises/concept/lasagna/.docs/introduction.md
 [implementation-elixir-closuremaker]: ../../languages/elixir/exercises/concept/secrets/.docs/introduction.md

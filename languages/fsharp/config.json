@@ -11,67 +11,78 @@
   "exercises": {
     "concept": [
       {
-        "slug": "arrays",
+        "slug": "bird-watcher",
+        "name": "Bird Watcher",
         "uuid": "280e8400-1a46-4ef5-b48d-b24611aaace2",
         "concepts": ["arrays"],
         "prerequisites": ["booleans", "pattern-matching"]
       },
       {
-        "slug": "basics",
+        "slug": "lasagna",
+        "name": "Lucian's Luscious Lasagna",
         "uuid": "1fc8216e-6519-11ea-bc55-0242ac130003",
         "concepts": ["basics"],
         "prerequisites": []
       },
       {
-        "slug": "booleans",
+        "slug": "annalyns-infiltration",
+        "name": "Annalyn's Infiltration",
         "uuid": "82470e36-6447-11ea-bc55-0242ac130003",
         "concepts": ["booleans"],
         "prerequisites": ["basics"]
       },
       {
-        "slug": "datetimes",
+        "slug": "beauty-salon",
+        "name": "Booking up for Beauty",
         "uuid": "160d7d56-5a0e-11ea-8e2d-0242ac130003",
         "concepts": ["datetimes"],
         "prerequisites": ["classes", "numbers", "strings"]
       },
       {
-        "slug": "discriminated-unions",
+        "slug": "valentines-day",
+        "name": "Valentine's Day",
         "uuid": "263670c8-6915-11ea-bc55-0242ac130003",
         "concepts": ["discriminated-unions"],
         "prerequisites": ["basics"]
       },
       {
-        "slug": "floating-point-numbers",
+        "slug": "savings-account",
+        "name": "Interest is Interesting",
         "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
         "concepts": ["floating-point-numbers"],
         "prerequisites": ["conditionals", "numbers"]
       },
       {
-        "slug": "lists",
+        "slug": "tracks-on-tracks-on-tracks",
+        "name": "Tracks on Tracks on Tracks",
         "uuid": "ef2df8b0-63a8-11ea-bc55-0242ac130003",
         "concepts": ["lists"],
         "prerequisites": ["booleans", "strings"]
       },
       {
-        "slug": "numbers",
+        "slug": "assembly-line",
+        "name": "Cars, Assemble!",
         "uuid": "6ea2765e-5885-11ea-82b4-0242ac130003",
         "concepts": ["conditionals", "numbers"],
         "prerequisites": ["basics"]
       },
       {
-        "slug": "pattern-matching",
+        "slug": "guessing-game",
+        "name": "Guessing game",
         "uuid": "d605385d-fd8a-45fa-a320-4d7c40213769",
         "concepts": ["pattern-matching"],
         "prerequisites": ["conditionals", "strings"]
       },
       {
-        "slug": "records",
+        "slug": "bandwagoner",
+        "name": "Bandwagoner",
         "uuid": "08ae8519-9dc9-47fe-82ad-8081fe642fe2",
         "concepts": ["records"],
         "prerequisites": ["booleans", "numbers", "pattern-matching", "strings"]
       },
       {
-        "slug": "recursion",
+        "slug": "pizza-pricing",
+        "name": "Pizza Pricing",
         "uuid": "fad55806-69e9-11ea-bc55-0242ac130003",
         "concepts": ["recursion"],
         "prerequisites": [
@@ -82,7 +93,8 @@
         ]
       },
       {
-        "slug": "strings",
+        "slug": "log-levels",
+        "name": "Log Levels",
         "uuid": "9c2aad8a-53ee-11ea-8d77-2e728ce88125",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
