@@ -25,7 +25,7 @@ for LANGUAGE_DIR in $LANGUAGE_DIRS; do
         fi
 
         if [[ ! -f "$CONCEPT_LINKS_FILE" ]]; then
-            echo "[$LANGUAGE] $CONCEPT_LINKS_FILE is missing"
+            echo "::error::[$LANGUAGE] $CONCEPT_LINKS_FILE is missing"
             EXIT_CODE=1
         fi
 	done
