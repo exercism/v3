@@ -1,4 +1,4 @@
-## List comprehensions
+## list-comprehensions
 
 Comprehensions provide a facility for transforming _Enumerables_ easily and declaratively.
 

@@ -1,4 +1,4 @@
-## Bitstrings
+## bitstrings
 
 Working with binary data is an important concept in any language, and Elixir provides an elegant syntax to write, match, and construct binary data.
 
@@ -46,7 +46,7 @@ value == 0b0110
 # => true
 ```
 
-## Tail call recursion and accumulators
+## tail-call-recursion
 
 When recursing through enumerables [lists, bitstrings, strings], there are often two concerns:
 

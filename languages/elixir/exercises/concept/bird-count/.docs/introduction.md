@@ -1,4 +1,4 @@
-## Recursion
+## recursion
 
 Recursive functions are functions that call themselves.
 
