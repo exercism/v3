@@ -1,8 +1,6 @@
 ## zero-value
 ## nil
 
-## Zero Values
-
 In Go, uninitialized variables and their elements are given default values.
 
 These default values are called the zero values for their respective types:
