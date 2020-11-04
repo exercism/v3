@@ -164,8 +164,8 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/arrays",
-        "exercise": "arrays",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/bird-watcher",
+        "exercise": "bird-watcher",
         "track": "fsharp",
         "language": "F#"
       }
@@ -243,8 +243,8 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lasagna",
+        "exercise": "lasagna",
         "track": "fsharp",
         "language": "F#"
       },
@@ -384,8 +384,8 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/booleans",
-        "exercise": "booleans",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/annalyns-infiltration",
+        "exercise": "annalyns-infiltration",
         "track": "fsharp",
         "language": "F#"
       },
@@ -661,8 +661,8 @@
         "language": "Common Lisp"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/numbers",
-        "exercise": "numbers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/assembly-line",
+        "exercise": "assembly-line",
         "track": "fsharp",
         "language": "F#"
       }
@@ -847,8 +847,8 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/datetimes",
-        "exercise": "datetimes",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/beauty-salon",
+        "exercise": "beauty-salon",
         "track": "fsharp",
         "language": "F#"
       }
@@ -978,8 +978,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/discriminated-unions",
-        "exercise": "discriminated-unions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/valentines-day",
+        "exercise": "valentines-day",
         "track": "fsharp",
         "language": "F#"
       }
@@ -1290,8 +1290,8 @@
         "language": "Common Lisp"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/floating-point-numbers",
-        "exercise": "floating-point-numbers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/savings-account",
+        "exercise": "savings-account",
         "track": "fsharp",
         "language": "F#"
       }
@@ -1736,8 +1736,8 @@
         "language": "Common Lisp"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lists",
-        "exercise": "lists",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/tracks-on-tracks-on-tracks",
+        "exercise": "tracks-on-tracks-on-tracks",
         "track": "fsharp",
         "language": "F#"
       },
@@ -2193,8 +2193,8 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/numbers",
-        "exercise": "numbers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/assembly-line",
+        "exercise": "assembly-line",
         "track": "fsharp",
         "language": "F#"
       }
@@ -2372,8 +2372,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/pattern-matching",
-        "exercise": "pattern-matching",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/guessing-game",
+        "exercise": "guessing-game",
         "track": "fsharp",
         "language": "F#"
       },
@@ -2572,8 +2572,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/records",
-        "exercise": "records",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/bandwagoner",
+        "exercise": "bandwagoner",
         "track": "fsharp",
         "language": "F#"
       }
@@ -2602,8 +2602,8 @@
         "language": "JavaScript"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/recursion",
-        "exercise": "recursion",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/pizza-pricing",
+        "exercise": "pizza-pricing",
         "track": "fsharp",
         "language": "F#"
       },
@@ -2941,8 +2941,8 @@
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/strings",
-        "exercise": "strings",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/log-levels",
+        "exercise": "log-levels",
         "track": "fsharp",
         "language": "F#"
       },
