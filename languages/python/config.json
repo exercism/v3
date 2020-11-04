@@ -22,7 +22,7 @@
         "name": "Tisbury Treasure Hunt",
         "uuid": "7ecd42c1-2ed5-487a-bc89-71c9cbad9b05",
         "concepts": ["tuples"],
-        "prerequisites": ["basics", "bools", "loops", "conditionals", "numbers"]
+        "prerequisites": ["bools", "loops", "conditionals", "numbers"]
       },
       {
         "slug": "guidos-gorgeous-lasagna",
@@ -43,7 +43,7 @@
         "name": "Inventory Management",
         "uuid": null,
         "concepts": ["dicts"],
-        "prerequisites": ["basics", "bools", "loops", "numbers", "lists"]
+        "prerequisites": ["bools", "loops", "numbers", "lists"]
       },
       {
         "slug": "log-levels",
@@ -51,17 +51,13 @@
         "uuid": null,
         "concepts": ["enums"],
         "prerequisites": [
-          "basics",
           "classes",
           "conditionals",
           "enumeration",
-          "indexing",
           "iteration",
           "list-comprehensions",
-          "loops",
           "methods",
           "sequences",
-          "slicing",
           "strings",
           "string-formatting",
           "string-methods",
@@ -73,25 +69,14 @@
         "name": "Elyse's Enchantments",
         "uuid": null,
         "concepts": ["lists"],
-        "prerequisites": [
-          "basics",
-          "comparisons",
-          "conditionals",
-          "strings"
-        ]
+        "prerequisites": ["comparisons", "conditionals", "strings"]
       },
       {
         "slug": "chaitanas-colossal-coaster",
         "name": "Chaitana's Colossal Coaster",
         "uuid": null,
         "concepts": ["list-methods"],
-        "prerequisites": [
-          "basics",
-          "comparisons",
-          "conditionals",
-          "lists",
-          "strings"
-        ]
+        "prerequisites": ["comparisons", "conditionals", "lists"]
       },
       {
         "slug": "restaurant-rozalynn",
@@ -99,13 +84,10 @@
         "uuid": null,
         "concepts": ["none"],
         "prerequisites": [
-          "basics",
           "bools",
           "conditionals",
           "default-arguments",
-          "dicts",
           "dict-methods",
-          "lists",
           "list-methods",
           "loops"
         ]
@@ -115,13 +97,7 @@
         "name": "Making the Grade",
         "uuid": null,
         "concepts": ["loops"],
-        "prerequisites": [
-          "basics",
-          "comparisons",
-          "conditionals",
-          "lists",
-          "strings"
-        ]
+        "prerequisites": ["comparisons", "conditionals", "lists", "strings"]
       }
     ],
     "practice": []
