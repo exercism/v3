@@ -1,3 +1,8 @@
+## comments
+## expressions
+## cons
+## symbols
+
 ## Comments
 
 As a brief aside, Common Lisp allows the programmer to write "comments" that are

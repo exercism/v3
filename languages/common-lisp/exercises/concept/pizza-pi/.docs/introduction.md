@@ -1,3 +1,7 @@
+## integers
+## floating-point-numbers
+## arithmetic
+
 ## Numerical Types
 
 In Common Lisp, like many languages, numbers come in a few of types – two of the
