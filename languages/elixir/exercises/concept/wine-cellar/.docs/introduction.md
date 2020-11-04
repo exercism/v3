@@ -1,4 +1,4 @@
-## keyword-lists
+## Keyword lists
 
 Keyword lists are a key-value data structure.
 

@@ -1,7 +1,8 @@
 ## try-rescue-else-after
+
 ## dynamic-dispatch
 
-## Errors Expanded
+## Try .. rescue .. else .. after
 
 Using `try..rescue` is a powerful construct for catching errors when they occur. Rescuing errors allows functions to return defined values when it is necessary. The `try..rescue` construct also offers us two additional features we can make use of:
 

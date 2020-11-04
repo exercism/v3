@@ -1,5 +1,4 @@
-## charlists
-## case
+## Charlists
 
 Charlists are created using single quotes.
 

@@ -1,6 +1,4 @@
-## anonymous-functions
-## closures
-## bit-manipulation
+## Anonymous functions
 
 Functions are treated as first class citizens in Elixir. This means functions:
 
@@ -37,7 +35,11 @@ variable.(1)
 # => 2
 ```
 
-## Bitwise operations
+## Closures
+
+TODO ???
+
+## Bit manipulation
 
 Elixir supports many functions for working with bits found in the _Bitwise module_.
 
