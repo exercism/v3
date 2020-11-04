@@ -34,8 +34,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "datetimes",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/datetimes/.docs/instructions.md"
+        "exercise": "beauty-salon",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/beauty-salon/.docs/instructions.md"
       }
     ]
   },
@@ -101,8 +101,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "numbers",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/numbers/.docs/instructions.md"
+        "exercise": "assembly-line",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/assembly-line/.docs/instructions.md"
       }
     ]
   },
@@ -301,8 +301,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "arrays",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/arrays/.docs/instructions.md"
+        "exercise": "bird-watcher",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/bird-watcher/.docs/instructions.md"
       }
     ]
   },
@@ -421,8 +421,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "lists",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/lists/.docs/instructions.md"
+        "exercise": "tracks-on-tracks-on-tracks",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/tracks-on-tracks-on-tracks/.docs/instructions.md"
       }
     ]
   },
@@ -467,8 +467,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "basics",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/basics/.docs/instructions.md"
+        "exercise": "lasagna",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/lasagna/.docs/instructions.md"
       },
       {
         "track": "Java",
@@ -561,8 +561,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "strings",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/strings/.docs/instructions.md"
+        "exercise": "log-levels",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/log-levels/.docs/instructions.md"
       },
       {
         "track": "Go",
@@ -672,8 +672,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "pattern-matching",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/pattern-matching/.docs/instructions.md"
+        "exercise": "guessing-game",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/guessing-game/.docs/instructions.md"
       },
       {
         "track": "Elixir",
@@ -735,8 +735,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "recursion",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/recursion/.docs/instructions.md"
+        "exercise": "pizza-pricing",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/pizza-pricing/.docs/instructions.md"
       },
       {
         "track": "JavaScript",
@@ -798,8 +798,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "booleans",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/booleans/.docs/instructions.md"
+        "exercise": "annalyns-infiltration",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/annalyns-infiltration/.docs/instructions.md"
       },
       {
         "track": "JavaScript",
@@ -884,8 +884,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "records",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/records/.docs/instructions.md"
+        "exercise": "bandwagoner",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/bandwagoner/.docs/instructions.md"
       }
     ]
   },
@@ -1012,8 +1012,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "discriminated-unions",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/discriminated-unions/.docs/instructions.md"
+        "exercise": "valentines-day",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/valentines-day/.docs/instructions.md"
       }
     ]
   },
