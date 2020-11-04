@@ -1,3 +1,5 @@
+## time
+
 ## Time
 
 In Go, functionality for working with times is provided by the `time` package. The types and methods in this package allow us to manipulate times, get the current time, determine elapsed time, parse times from strings, and more.

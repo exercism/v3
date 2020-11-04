@@ -1,3 +1,5 @@
+## strings-package
+
 ## Strings
 
 A `string` in Go is a sequence of `bytes`, which doesn't necessarily have to represent characters.
