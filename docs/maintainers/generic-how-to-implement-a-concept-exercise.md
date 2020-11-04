@@ -165,8 +165,8 @@ If you have any questions regarding implementing this exercise, please post them
 [meta-config.json]: ../concept-exercises.md#metaconfigjson
 [config.json]: ../concept-exercises.md#configjson
 [example-docs-introduction.md]: ../../languages/csharp/exercises/concept/log-levels/.docs/introduction.md
-[example-docs-instructions.md]: ../../interest-is-interesting/.docs/instructions.md
-[example-docs-hints.md]: ../../interest-is-interesting/.docs/hints.md
+[example-docs-instructions.md]: ../../languages/csharp/exercises/concept/interest-is-interesting/.docs/instructions.md
+[example-docs-hints.md]: ../../languages/csharp/exercises/concept/interest-is-interesting/.docs/hints.md
 [example-docs-source.md]: ../../languages/julia/exercises/concept/encounters/.docs/source.md
 [example-meta-design.md]: ../../languages/csharp/exercises/concept/numbers/.meta/design.md
 [example-meta-config.json]: ../../languages/csharp/exercises/concept/flag-enums/.meta/config.json

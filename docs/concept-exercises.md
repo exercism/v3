@@ -284,9 +284,9 @@ For each exercise:
 
 See [this example config.json file][config.json].
 
-[docs-hints.md]: ../interest-is-interesting/.docs/hints.md
+[docs-hints.md]: ../languages/csharp/exercises/concept/interest-is-interesting/.docs/hints.md
 [docs-introduction.md]: ../languages/csharp/exercises/concept/log-levels/.docs/introduction.md
-[docs-instructions.md]: ../interest-is-interesting/.docs/instructions.md
+[docs-instructions.md]: ../languages/csharp/exercises/concept/interest-is-interesting/.docs/instructions.md
 [meta-config.json]: ../languages/fsharp/exercises/concept/booleans/.meta/config.json
 [meta-source.md]: ../languages/julia/exercises/concept/encounters/.docs/source.md
 [meta-design.md]: ../languages/fsharp/exercises/concept/booleans/.meta/design.md
