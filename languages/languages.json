@@ -2166,8 +2166,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lasagna",
-          "slug": "lasagna",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lucians-luscious-lasagna",
+          "slug": "lucians-luscious-lasagna",
           "concepts": [
             {
               "url": null,
@@ -2193,8 +2193,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/beauty-salon",
-          "slug": "beauty-salon",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/booking-up-for-beauty",
+          "slug": "booking-up-for-beauty",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/datetime.md",
@@ -2233,8 +2233,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/savings-account",
-          "slug": "savings-account",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/interest-is-interesting",
+          "slug": "interest-is-interesting",
           "concepts": [
             {
               "url": null,
@@ -2273,8 +2273,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/assembly-line",
-          "slug": "assembly-line",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/cars-assemble",
+          "slug": "cars-assemble",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
