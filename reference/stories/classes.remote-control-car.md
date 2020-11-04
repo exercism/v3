@@ -26,7 +26,7 @@ These are example tasks that fit the remote control car exercise:
 
 ## Implementations
 
-- [C#: classes][implementation-csharp] (reference implementation)
+- [C#: elons-toys][implementation-csharp] (reference implementation)
 - [Elixir: structs][implementation-elixir] (adapted for Elixir structs)
 
 ## Related
@@ -36,5 +36,5 @@ These are example tasks that fit the remote control car exercise:
 
 [concepts-objects]: ../concepts/objects.md
 [types-class]: ../types/class.md
-[implementation-csharp]: ../../languages/csharp/exercises/concept/classes/.docs/instructions.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/elons-toys/.docs/instructions.md
 [implementation-elixir]: ../../languages/elixir/exercises/concept/remote-control-car/.docs/instructions.md
