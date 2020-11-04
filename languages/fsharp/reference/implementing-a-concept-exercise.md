@@ -107,7 +107,7 @@ _Skip this step if you're not sure what to do._
 
 ## Inspiration
 
-When implementing an exericse, it can be very useful to look at already-implemented F# exercises like the [numbers][concept-exercise-numbers] or [strings][concept-exercise-strings] exercise. You can also check the exercise's [general concepts documents][reference] to see if other languages that have already implemented an exercise for that concept.
+When implementing an exericse, it can be very useful to look at already-implemented F# exercises like the [assembly-line][concept-exercise-assembly-line] or [log-levels][concept-exercise-log-levels] exercise. You can also check the exercise's [general concepts documents][reference] to see if other languages that have already implemented an exercise for that concept.
 
 ## Help
 
@@ -122,8 +122,8 @@ If you have any questions regarding implementing this exercise, please post them
 [reference]: ../../../reference
 [fantomas]: https://github.com/fsprojects/fantomas
 [implemented-exercises]: ../exercises/concept/README.md#implemented-exercises
-[concept-exercise-numbers]: ../exercises/concept/numbers
-[concept-exercise-strings]: ../exercises/concept/strings
+[concept-exercise-assembly-line]: ../exercises/concept/assembly-line
+[concept-exercise-log-levels]: ../exercises/concept/log-levels
 [allowing-fork-pr-changes]: https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork
 [implemented-exercises]: ../exercises/concept/README.md#implemented-exercises
 [skip-fact]: ../exercises/concept/log-levels/LogLevelsTests.fs#L11
@@ -137,7 +137,7 @@ If you have any questions regarding implementing this exercise, please post them
 [video-stub-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1171
 [video-tests-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1255
 [video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
-[example-stub-file]: ../exercises/concept/assembly-line/AssemblyLine.fs
-[example-tests-file]: ../exercises/concept/assembly-line/AssemblyLineTests.fs
-[example-example-file]: ../exercises/concept/assembly-line/.meta/Example.fs
-[example-project-file]: ../exercises/concept/assembly-line/AssemblyLine.fsproj
+[example-stub-file]: ../exercises/concept/log-levels/LogLevels.fs
+[example-tests-file]: ../exercises/concept/log-levels/LogLevelsTests.fs
+[example-example-file]: ../exercises/concept/log-levels/.meta/Example.fs
+[example-project-file]: ../exercises/concept/log-levels/LogLevels.fsproj
