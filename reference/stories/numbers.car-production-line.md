@@ -21,7 +21,7 @@ These are example tasks that fit the car production line exercise:
 ## Implementations
 
 - [C#: cars-assemble][implementation-csharp] (reference implementation)
-- [F#: assembly-line][implementation-fsharp]
+- [F#: cars-assemble][implementation-fsharp]
 
 ## Related
 
@@ -33,4 +33,4 @@ These are example tasks that fit the car production line exercise:
 [types-integer]: ../types/integer.md
 [types-floating_point_number]: ../types/floating_point_number.md
 [implementation-csharp]: ../../languages/csharp/exercises/concept/cars-assemble/.docs/instructions.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/assembly-line/.docs/instructions.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/cars-assemble/.docs/instructions.md

@@ -18,7 +18,7 @@
         "prerequisites": ["booleans", "pattern-matching"]
       },
       {
-        "slug": "lasagna",
+        "slug": "lucians-luscious-lasagna",
         "name": "Lucian's Luscious Lasagna",
         "uuid": "1fc8216e-6519-11ea-bc55-0242ac130003",
         "concepts": ["basics"],
@@ -32,7 +32,7 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "beauty-salon",
+        "slug": "booking-up-for-beauty",
         "name": "Booking up for Beauty",
         "uuid": "160d7d56-5a0e-11ea-8e2d-0242ac130003",
         "concepts": ["datetimes"],
@@ -46,7 +46,7 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "savings-account",
+        "slug": "interest-is-interesting",
         "name": "Interest is Interesting",
         "uuid": "4eb8d86f-7123-473e-9d96-7939e9652608",
         "concepts": ["floating-point-numbers"],
@@ -60,7 +60,7 @@
         "prerequisites": ["booleans", "strings"]
       },
       {
-        "slug": "assembly-line",
+        "slug": "cars-assemble",
         "name": "Cars, Assemble!",
         "uuid": "6ea2765e-5885-11ea-82b4-0242ac130003",
         "concepts": ["conditionals", "numbers"],
