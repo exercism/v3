@@ -2170,8 +2170,8 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/arrays",
-          "slug": "arrays",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/bird-watcher",
+          "slug": "bird-watcher",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
@@ -2190,8 +2190,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/basics",
-          "slug": "basics",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lasagna",
+          "slug": "lasagna",
           "concepts": [
             {
               "url": null,
@@ -2201,8 +2201,8 @@
           "prerequisites": []
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/booleans",
-          "slug": "booleans",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/annalyns-infiltration",
+          "slug": "annalyns-infiltration",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
@@ -2217,8 +2217,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/datetimes",
-          "slug": "datetimes",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/beauty-salon",
+          "slug": "beauty-salon",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/datetime.md",
@@ -2241,8 +2241,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/discriminated-unions",
-          "slug": "discriminated-unions",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/valentines-day",
+          "slug": "valentines-day",
           "concepts": [
             {
               "url": null,
@@ -2257,8 +2257,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/floating-point-numbers",
-          "slug": "floating-point-numbers",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/savings-account",
+          "slug": "savings-account",
           "concepts": [
             {
               "url": null,
@@ -2277,8 +2277,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lists",
-          "slug": "lists",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/tracks-on-tracks-on-tracks",
+          "slug": "tracks-on-tracks-on-tracks",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
@@ -2297,8 +2297,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/numbers",
-          "slug": "numbers",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/assembly-line",
+          "slug": "assembly-line",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
@@ -2317,8 +2317,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/pattern-matching",
-          "slug": "pattern-matching",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/guessing-game",
+          "slug": "guessing-game",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/pattern_matching.md",
@@ -2337,8 +2337,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/records",
-          "slug": "records",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/bandwagoner",
+          "slug": "bandwagoner",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/record.md",
@@ -2365,8 +2365,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/recursion",
-          "slug": "recursion",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/pizza-pricing",
+          "slug": "pizza-pricing",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/recursion.md",
@@ -2393,8 +2393,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/strings",
-          "slug": "strings",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/log-levels",
+          "slug": "log-levels",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
