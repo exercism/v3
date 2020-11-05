@@ -78,7 +78,7 @@ def number_to_the_power_of_default(number_one, number_two=2):
     return number_one ** number_two
 
 >>> number_to_the_power_of_default(4)
->>> 16
+16
 ```
 
 Methods bound to class names are invoked via _dot notation_ (`.`), as are functions, constants, or global names imported as part of a _module_.:
