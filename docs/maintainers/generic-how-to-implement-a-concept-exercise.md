@@ -85,7 +85,7 @@ For more information, please read [this in-depth description][meta-design.md], w
 
 **Purpose:** Contains meta information on the exercise.
 
-For more information, please read [this in-depth description][meta-design.md], watch [this video][video-meta-config.json] and check [this example file][example-meta-design.md].
+For more information, please read [this in-depth description][meta-config.json], watch [this video][video-meta-config.json] and check [this example file][example-meta-config.json].
 
 ## Update `languages/<TRACK>/config.json`
 
