@@ -1,22 +1,21 @@
+In Common Lisp, like many languages, numbers come in a few of types – two of the most basic are:
+
 ## integers
-## floating-point-numbers
-## arithmetic
 
-## Numerical Types
-
-In Common Lisp, like many languages, numbers come in a few of types – two of the
-most basic are:
-
-- Integers: whole numbers without a decimal point (like `-6`, `0`, `25`, `1234`,
+Like many languages Common Lisp contains integers. These are whole numbers without a decimal point (like `-6`, `0`, `25`, `1234`,
   etc.)
-- Floating-Point Numbers: fractional or whole numbers including a decimal point (like
-  `3.14`, `-1.7`, `99.99`, `2048.0`)
+
+Common Lisp defines no limits on the magnitude of integers. Integers can be arbitrarily large (or small if negative).
 
 In general, if you are working with only whole numbers, you should prefer
 integers as they don't suffer from the same loss of precision as floating-point
 numbers do over many calculations.
 
-## Arithmetic & Prefix Notation
+## floating-point-numbers
+
+Also like many languages, Common Lisp contains floating point numbers. These are fractional or whole numbers including a decimal point (like `3.14`, `-1.7`, `99.99`, `2048.0`)
+
+## arithmetic
 
 Common Lisp uses the standard arithmetic operators for most operations but is
 somewhat unique in using a "prefix-notation" as opposed to the more familiar
