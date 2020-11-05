@@ -8,7 +8,6 @@
 ## Out of scope
 
 - Reading and writing to files
-- IO data, chardata
 
 ## Concepts
 
