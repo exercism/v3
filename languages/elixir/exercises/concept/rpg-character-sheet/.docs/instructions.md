@@ -6,7 +6,7 @@ Implement the `RPG.CharacterSheet.welcome/0` function. It should print a welcome
 
 ```elixir
 RPG.CharacterSheet.welcome()
-# Welcome! Let's fill out your character sheet together.
+# > Welcome! Let's fill out your character sheet together.
 # => :ok
 ```
 
@@ -16,8 +16,8 @@ Implement the `RPG.CharacterSheet.ask_name/0` function. It should print a questi
 
 ```elixir
 RPG.CharacterSheet.ask_name()
-# What is your character's name?
-# Mathilde
+# > What is your character's name?
+# < Mathilde
 # => "Mathilde"
 ```
 
@@ -27,8 +27,8 @@ Implement the `RPG.CharacterSheet.ask_class/0` function. It should print a quest
 
 ```elixir
 RPG.CharacterSheet.ask_class()
-# What is your character's class?
-# healer
+# > What is your character's class?
+# < healer
 # => "healer"
 ```
 
@@ -38,8 +38,8 @@ Implement the `RPG.CharacterSheet.ask_level/0` function. It should print a quest
 
 ```elixir
 RPG.CharacterSheet.ask_level()
-# What is your character's level?
-# 2
+# > What is your character's level?
+# < 2
 # => 2
 ```
 
@@ -49,13 +49,13 @@ Implement the `RPG.CharacterSheet.run/0` function. It should welcome the new pla
 
 ```elixir
 RPG.CharacterSheet.run()
-# Welcome! Let's fill out your character sheet together.
-# What is your character's name?
-# Mathilde
-# What is your character's class?
-# healer
-# What is your character's level?
-# 2
-# Your character: %{class: "healer", level: 2, name: "Mathilde"}
+# > Welcome! Let's fill out your character sheet together.
+# > What is your character's name?
+# < Mathilde
+# > What is your character's class?
+# < healer
+# > What is your character's level?
+# < 2
+# > Your character: %{class: "healer", level: 2, name: "Mathilde"}
 # => %{class: "healer", level: 2, name: "Mathilde"}
 ```
