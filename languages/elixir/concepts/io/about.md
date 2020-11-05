@@ -33,7 +33,7 @@ When this happens, you might want to use [`IO.inspect/2`][io-inspect] instead.
 
 ## IO devices
 
-The first argument to all those functions is an [IO device][https://hexdocs.pm/elixir/io.html#module-io-devices], with the default value of `:stdio` (standard input/output). To write to the standard error device, use `:stderr` instead. An IO device could also be a process, for example one created by calling [`File.open/2`][file-open], which would allow writing to a file.
+The first argument to all those functions is an [IO device][io-devices], with the default value of `:stdio` (standard input/output). To write to the standard error device, use `:stderr` instead. An IO device could also be a process, for example one created by calling [`File.open/2`][file-open], which would allow writing to a file.
 
 [module-io]: https://hexdocs.pm/elixir/IO.html
 [io-puts]: https://hexdocs.pm/elixir/IO.html#puts/2
@@ -42,3 +42,4 @@ The first argument to all those functions is an [IO device][https://hexdocs.pm/e
 [io-inspect]: https://hexdocs.pm/elixir/IO.html#inspect/2
 [io-device]: https://hexdocs.pm/elixir/IO.html#module-io-devices
 [file-open]: https://hexdocs.pm/elixir/File.html#open/2
+[io-devices]: https://hexdocs.pm/elixir/IO.html#module-io-devices
