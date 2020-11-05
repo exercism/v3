@@ -71,7 +71,7 @@ TypeError: number_to_the_power_of() missing 1 required positional argument: 'num
 
 
 def number_to_the_power_of_default(number_one, number_two=2):
-'''Returns float or int.
+    '''Returns float or int.
        Takes number_one and raises it to the power of number_two, returning the result.
     '''
 
