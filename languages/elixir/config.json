@@ -23,7 +23,7 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "freelancer-rate",
+        "slug": "freelancer-rates",
         "uuid": "fee79e03-1496-476f-964f-e60632cb13dc",
         "concepts": ["integers", "floating-point-numbers"],
         "prerequisites": ["basics"]
