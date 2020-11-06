@@ -12,6 +12,9 @@ Where the comment is being used to indicate what value is returned by Common
 Lisp after running the code on that line.
 
 ## expressions
+
+TODO: Untangle section below or possible remove "expressions" concept
+
 ## cons
 
 All Common Lisp code is made from S-Expressions (or sexpr for short). An
