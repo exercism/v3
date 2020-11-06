@@ -31,7 +31,20 @@ For v3, the existing `config.json` files will need to be updated. You can use th
 
 As can be seen, the existing exercises are temporarily removed from the `config.json` file. They will return as Practice Exercises once the Concept Exercises have been added. More details will be added at a later stage.
 
-4. Remove the `"foregone"` property. The property will return once the Practice Exercises have been added.
+4. Move the `"foregone"` property to the `"exercises"` key:
+
+```json
+"exercises": {
+  ...
+  "foregone": [...]
+}
+```
+
+5. Add a top-level `"concepts"` key, which is an array:
+
+```json
+"concepts": []
+```
 
 ## Conversion script
 
@@ -49,10 +62,25 @@ jq 'del(.foregone)
 
 [jq]: https://stedolan.github.io/jq/
 
-## New keys
+## Concept exercises
 
-<!-- TODO: Properly document the new config.json format -->
+Each concept exercise has the following keys:
 
-Exercises may contain the following new keys:
+- `slug`: the slug used to identify the exercise. The slug must be both unique per track _and_ use kebab-case.
+- `name`: the human-friendly name of the exercise.
+- `uuid`: the exercise's globally unique identifier.
+- `concepts`: an array of concept slugs that this exercise unlocks when completed.
+- `prerequisites`: an array of concept slugs that this exercise unlocks when completed.
+- `deprecated` (optional): a boolean value that indicates if the exercise is deprecated. It should only be present when the exercise is deprecated.
 
-- `name`: The title of the exercise if it differs from the titleised slug
+This is an example of a concept exercise:
+
+```json
+{
+  "slug": "bird-watcher",
+  "name": "Bird Watcher",
+  "uuid": "b6c532c9-1e89-4fbf-8f08-27f5befb5bb8",
+  "concepts": ["arrays", "for-loops", "foreach-loops"],
+  "prerequisites": ["booleans", "classes", "if-statements"]
+}
+```
