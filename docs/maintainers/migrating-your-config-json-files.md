@@ -70,8 +70,11 @@ Each concept exercise has the following keys:
 - `name`: the human-friendly name of the exercise.
 - `uuid`: the exercise's globally unique identifier.
 - `concepts`: an array of concept slugs that this exercise unlocks when completed.
-- `prerequisites`: an array of concept slugs that this exercise unlocks when completed.
-- `deprecated` (optional): a boolean value that indicates if the exercise is deprecated. It should only be present when the exercise is deprecated.
+- `prerequisites`: an array of concept slugs that have to be unlocked before this exercise can be started.
+
+There is also one optional key:
+
+- `deprecated`: a boolean value that indicates if the exercise is deprecated. It should only be present when the exercise is deprecated.
 
 This is an example of a concept exercise:
 
@@ -82,5 +85,29 @@ This is an example of a concept exercise:
   "uuid": "b6c532c9-1e89-4fbf-8f08-27f5befb5bb8",
   "concepts": ["arrays", "for-loops", "foreach-loops"],
   "prerequisites": ["booleans", "classes", "if-statements"]
+}
+```
+
+## Practice exercises
+
+Each practice exercise has the following keys:
+
+- `slug`: the slug used to identify the exercise. The slug must be both unique per track _and_ use kebab-case.
+- `name`: the human-friendly name of the exercise.
+- `uuid`: the exercise's globally unique identifier.
+- `prerequisites`: an array of concept slugs that have to be unlocked before this exercise can be started.
+- `difficulty`: an integer in the range of 0-10 that describes how hard this exercise is to solve. It is not clear if we'll keep on using this property in the future, or if we'll deprecate it and determine the difficulty by other means.
+
+There is also one optional key:
+
+- `deprecated`: a boolean value that indicates if the exercise is deprecated. It should only be present when the exercise is deprecated.
+
+```json
+{
+  "slug": "rest-api",
+  "name": "REST API",
+  "uuid": "4c89b6a8-0e89-46c9-5a7e-31bfe6a57007",
+  "prerequisites": ["strings"],
+  "difficulty": 6
 }
 ```
