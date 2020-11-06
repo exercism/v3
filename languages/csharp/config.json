@@ -216,7 +216,7 @@
         "slug": "red-vs-blue-darwin-style",
         "name": "Red vs. Blue: Darwin Style",
         "uuid": "dcfd75d2-8264-4445-a95b-718867ec5eb4",
-        "concepts": ["accessibility", "namespaces"],
+        "concepts": ["namespaces"],
         "prerequisites": ["classes", "inheritance", "nested-types"]
       },
       {
@@ -1297,12 +1297,6 @@
     ]
   },
   "concepts": [
-    {
-      "uuid": "834bdd99-7b3a-48e4-af57-8184c3b2803c",
-      "slug": "accessibility",
-      "name": "Accessibility",
-      "blurb": "TODO: add blurb for accessibility concept"
-    },
     {
       "uuid": "78ab4dbd-da83-4082-825c-e463595b2ed6",
       "slug": "arithmetic-overflow",
