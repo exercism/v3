@@ -5,5 +5,8 @@
       "exercism_username": "Azumix"
     }
   ],
-  "forked_from": ["csharp/switch-statements"]
+  "editor": {
+    "solution_files": ["src/main/java/PlayAnalyzer.java"],
+    "test_files": ["src/test/java/PlayAnalyzerTest.java"]
+  }
 }

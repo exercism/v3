@@ -1,3 +1,5 @@
+## records
+
 A record is a collection of fields (which can be of different types) that belong together. To define a record the `type` keyword is used. A record's fields are defined between `{` and `}` characters, and each field has a name _and_ a type. To create a record, specify the names of the fields and assign a value to them between `{` and `}` characters. All fields must be assigned a value when creating a record. A record instance's field values can be accessed using dot-notation.
 
 When defining/create a record, each field must either be on a separate line or separated by semicolons (`;`) when on a single line.

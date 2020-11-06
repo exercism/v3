@@ -1,3 +1,5 @@
+## recursion
+
 The ability for something to be defined in terms of itself is called recursion. In F#, recursion is most commonly found in recursive functions, which are functions that call themselves.
 
 A recursive function needs to have at least one _base case_ and at least one _recursive case_. A _base case_ returns a value without calling the function again. A _recursive case_ calls the function again, modifying the input so that it will at some point match the base case.

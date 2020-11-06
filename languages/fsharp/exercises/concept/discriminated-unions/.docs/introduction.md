@@ -1,3 +1,5 @@
+## discriminated-unions
+
 The discriminated union type represents a fixed number of named cases. Each value of a discriminated union corresponds to exactly one of the named cases.
 
 A discriminated union is defined using the `type` keyword, with cases separated by pipe (`|`) characters:
