@@ -1,4 +1,5 @@
-### Truth in Common Lisp
+
+## truthy-and-falsy
 
 In Common Lisp, false values are represented by the empty list – `()` – or the
 symbol `nil`. These values can be quoted or unquoted.
@@ -6,7 +7,7 @@ symbol `nil`. These values can be quoted or unquoted.
 All other values in Lisp represent truth. There also exists the special constant
 symbol `t` that is always equal to `t` (and is therefore always true).
 
-### Conditionals
+## conditionals
 
 Common Lisp provides the programmer with several different conditionals that can
 be categorised by the number of "branches" they support.

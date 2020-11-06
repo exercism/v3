@@ -1,4 +1,4 @@
-## Comments
+## comments
 
 As a brief aside, Common Lisp allows the programmer to write "comments" that are
 ignored by the computer. Single-line comments begin with one or more semi-colons
@@ -11,7 +11,11 @@ ignored by the computer. Single-line comments begin with one or more semi-colons
 Where the comment is being used to indicate what value is returned by Common
 Lisp after running the code on that line.
 
-## S-Expressions
+## expressions
+
+TODO: Untangle section below or possible remove "expressions" concept
+
+## cons
 
 All Common Lisp code is made from S-Expressions (or sexpr for short). An
 S-Expression is either an "atom" (a single, indivisible value) or a list (also
@@ -38,10 +42,10 @@ returned:
 (gimme-foo) ; => FOO
 ```
 
-## Symbols and Quoting
+## symbols
 
 There are a couple of things to note regarding the example above. Firstly, the
-_symbol_ `FOO` is an atom, as it only has one "part" (unlike a cons which has
+pp_symbol_ `FOO` is an atom, as it only has one "part" (unlike a cons which has
 two). Additionally, Common Lisp is **case-insensitive**, so symbols are often
 returned as all uppercase, but `foo`, `Foo` and `FOO` are equivalent.
 
