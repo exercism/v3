@@ -146,8 +146,8 @@ If you have any questions regarding implementing the exercise, please post them 
 [skip-fact]: ../exercises/concept/log-levels/LogLevelsTests.cs#L11
 [test-name]: ../exercises/concept/log-levels/LogLevelsTests.cs#L24
 [xunit]: https://xunit.net/
-[not-implemented-static]: ../exercises/concept/bird-watcher/BirdWatcher.cs#L12
-[not-implemented]: ../exercises/concept/bird-watcher/BirdWatcher.cs#L17
+[not-implemented-static]: ../exercises/concept/bird-count/BirdWatcher.cs#L12
+[not-implemented]: ../exercises/concept/bird-count/BirdWatcher.cs#L17
 [todo]: ../exercises/concept/lucians-luscious-lasagna/LuciansLusciousLasagna.cs
 [stub-file]: ../../../docs/concept-exercises.md#stub-implementation-file
 [tests-file]: ../../../docs/concept-exercises.md#tests-file

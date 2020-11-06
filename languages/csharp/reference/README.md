@@ -287,7 +287,7 @@ This report is updated automatically when any _design.md_ document is modified o
 [design-attack-of-the-trolls]: ../exercises/concept/attack-of-the-trolls/.meta/design.md
 [design-authentication-system]: ../exercises/concept/authentication-system/.meta/design.md
 [design-beauty-salon-goes-global]: ../exercises/concept/beauty-salon-goes-global/.meta/design.md
-[design-bird-watcher]: ../exercises/concept/bird-watcher/.meta/design.md
+[design-bird-watcher]: ../exercises/concept/bird-count/.meta/design.md
 [design-booking-up-for-beauty]: ../exercises/concept/booking-up-for-beauty/.meta/design.md
 [design-building-telemetry]: ../exercises/concept/building-telemetry/.meta/design.md
 [design-calculator-conundrum]: ../exercises/concept/calculator-conundrum/.meta/design.md
@@ -328,7 +328,7 @@ This report is updated automatically when any _design.md_ document is modified o
 [exercise-attack-of-the-trolls]: ../exercises/concept/attack-of-the-trolls
 [exercise-authentication-system]: ../exercises/concept/authentication-system
 [exercise-beauty-salon-goes-global]: ../exercises/concept/beauty-salon-goes-global
-[exercise-bird-watcher]: ../exercises/concept/bird-watcher
+[exercise-bird-watcher]: ../exercises/concept/bird-count
 [exercise-booking-up-for-beauty]: ../exercises/concept/booking-up-for-beauty
 [exercise-building-telemetry]: ../exercises/concept/building-telemetry
 [exercise-calculator-conundrum]: ../exercises/concept/calculator-conundrum
