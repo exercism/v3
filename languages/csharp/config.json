@@ -97,7 +97,7 @@
         "slug": "logs-logs-logs",
         "name": "Logs, Logs, Logs!",
         "uuid": "047b895b-7039-4af6-ad3a-17fd818d0b88",
-        "concepts": ["enums", "pattern-matching-constants"],
+        "concepts": ["enums"],
         "prerequisites": ["strings", "switch-statements"]
       },
       {
@@ -1590,12 +1590,6 @@
       "slug": "parameters",
       "name": "Parameters",
       "blurb": "TODO: add blurb for parameters concept"
-    },
-    {
-      "uuid": "909a9208-55eb-4a9a-979e-a0cbb0137845",
-      "slug": "pattern-matching-constants",
-      "name": "Pattern Matching Constants",
-      "blurb": "TODO: add blurb for pattern-matching-constants concept"
     },
     {
       "uuid": "7149c281-8b8c-42a2-a534-7bc5553cbbce",
