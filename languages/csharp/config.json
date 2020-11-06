@@ -131,7 +131,7 @@
         "name": "The Weather in Deather",
         "uuid": "27221c37-177e-437b-b423-977e46695db9",
         "concepts": [
-          "conditionals-ternary",
+          "ternary-operators",
           "expression-bodied-members",
           "switch-expressions",
           "throw-expressions"
@@ -1365,9 +1365,9 @@
     },
     {
       "uuid": "43820de3-174a-41a3-9fc0-d7a6f0c393aa",
-      "slug": "conditionals-ternary",
+      "slug": "ternary-operators",
       "name": "Conditionals Ternary",
-      "blurb": "TODO: add blurb for conditionals-ternary concept"
+      "blurb": "TODO: add blurb for ternary-operators concept"
     },
     {
       "uuid": "b29bc90a-65ae-4984-b7de-17debee7fc5f",

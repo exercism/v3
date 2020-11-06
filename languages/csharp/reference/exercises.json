@@ -1048,7 +1048,7 @@
           ]
         },
         {
-          "name": "conditionals-ternary",
+          "name": "ternary-operators",
           "track-neutral-concept": "reference/concepts/conditionals.md",
           "original-concepts": [
             {
