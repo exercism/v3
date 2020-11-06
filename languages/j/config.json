@@ -12,58 +12,57 @@
   "solution_pattern": "example.*[.]ijs",
   "exercises": {
     "concept": [],
-    "practice": []
+    "practice": [
+      {
+        "slug": "hello-world",
+        "uuid": "b59cd640-e925-4570-aa6e-3d903651e9f1",
+        "prerequisites": [],
+        "difficulty": 0,
+        "deprecated": false
+      },
+      {
+        "slug": "hamming",
+        "uuid": "ab2c70c9-a1db-4be4-bd74-a08fe72ccba8",
+        "prerequisites": [],
+        "difficulty": 0,
+        "deprecated": true
+      },
+      {
+        "slug": "difference-of-squares",
+        "uuid": "4cc22c3d-766e-4593-96fe-2e26e06682b8",
+        "prerequisites": [],
+        "difficulty": 0,
+        "deprecated": true
+      },
+      {
+        "slug": "nucleotide-count",
+        "uuid": "266be147-836e-42c7-91d0-6c577037c2ff",
+        "prerequisites": [],
+        "difficulty": 0,
+        "deprecated": false
+      },
+      {
+        "slug": "rna-transcription",
+        "uuid": "b6570e32-ed50-4ff9-bc9d-0202aa39b344",
+        "prerequisites": [],
+        "difficulty": 0,
+        "deprecated": false
+      },
+      {
+        "slug": "pascals-triangle",
+        "uuid": "e044a725-8509-4978-ad3b-ab0546663986",
+        "prerequisites": [],
+        "difficulty": 0,
+        "deprecated": false
+      },
+      {
+        "slug": "sum-of-multiples",
+        "uuid": "14555b65-4f96-4d4b-bbb0-fcd0b21a1a15",
+        "prerequisites": [],
+        "difficulty": 0,
+        "deprecated": false
+      }
+    ]
   },
-  "concepts": [],
-  "practice": [
-    {
-      "slug": "hello-world",
-      "uuid": "b59cd640-e925-4570-aa6e-3d903651e9f1",
-      "prerequisites": [],
-      "difficulty": 0,
-      "deprecated": false
-    },
-    {
-      "slug": "hamming",
-      "uuid": "ab2c70c9-a1db-4be4-bd74-a08fe72ccba8",
-      "prerequisites": [],
-      "difficulty": 0,
-      "deprecated": true
-    },
-    {
-      "slug": "difference-of-squares",
-      "uuid": "4cc22c3d-766e-4593-96fe-2e26e06682b8",
-      "prerequisites": [],
-      "difficulty": 0,
-      "deprecated": true
-    },
-    {
-      "slug": "nucleotide-count",
-      "uuid": "266be147-836e-42c7-91d0-6c577037c2ff",
-      "prerequisites": [],
-      "difficulty": 0,
-      "deprecated": false
-    },
-    {
-      "slug": "rna-transcription",
-      "uuid": "b6570e32-ed50-4ff9-bc9d-0202aa39b344",
-      "prerequisites": [],
-      "difficulty": 0,
-      "deprecated": false
-    },
-    {
-      "slug": "pascals-triangle",
-      "uuid": "e044a725-8509-4978-ad3b-ab0546663986",
-      "prerequisites": [],
-      "difficulty": 0,
-      "deprecated": false
-    },
-    {
-      "slug": "sum-of-multiples",
-      "uuid": "14555b65-4f96-4d4b-bbb0-fcd0b21a1a15",
-      "prerequisites": [],
-      "difficulty": 0,
-      "deprecated": false
-    }
-  ]
+  "concepts": []
 }

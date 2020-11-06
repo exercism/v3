@@ -18,8 +18,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/namespaces",
-        "exercise": "namespaces",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/red-vs-blue-darwin-style",
+        "exercise": "red-vs-blue-darwin-style",
         "track": "csharp",
         "language": "C#"
       }
@@ -158,8 +158,8 @@
         "language": "JavaScript"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/arrays",
-        "exercise": "arrays",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/bird-watcher",
+        "exercise": "bird-watcher",
         "track": "csharp",
         "language": "C#"
       },
@@ -237,14 +237,14 @@
         "language": "JavaScript"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/basics",
-        "exercise": "basics",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/lucians-luscious-lasagna",
+        "exercise": "lucians-luscious-lasagna",
         "track": "csharp",
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lasagna",
-        "exercise": "lasagna",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lucians-luscious-lasagna",
+        "exercise": "lucians-luscious-lasagna",
         "track": "fsharp",
         "language": "F#"
       },
@@ -281,8 +281,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/flag-enums",
-        "exercise": "flag-enums",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/attack-of-the-trolls",
+        "exercise": "attack-of-the-trolls",
         "track": "csharp",
         "language": "C#"
       },
@@ -378,8 +378,8 @@
         "language": "JavaScript"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/booleans",
-        "exercise": "booleans",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/annalyns-infiltration",
+        "exercise": "annalyns-infiltration",
         "track": "csharp",
         "language": "C#"
       },
@@ -452,8 +452,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/casting",
-        "exercise": "casting",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/secure-munchester-united",
+        "exercise": "secure-munchester-united",
         "track": "csharp",
         "language": "C#"
       }
@@ -506,8 +506,8 @@
         "language": "Java"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/chars",
-        "exercise": "chars",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/squeaky-clean",
+        "exercise": "squeaky-clean",
         "track": "csharp",
         "language": "C#"
       }
@@ -536,8 +536,8 @@
         "language": "Swift"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/classes",
-        "exercise": "classes",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/elons-toys",
+        "exercise": "elons-toys",
         "track": "csharp",
         "language": "C#"
       }
@@ -612,8 +612,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/flag-enums",
-        "exercise": "flag-enums",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/attack-of-the-trolls",
+        "exercise": "attack-of-the-trolls",
         "track": "csharp",
         "language": "C#"
       }
@@ -661,8 +661,8 @@
         "language": "Common Lisp"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/assembly-line",
-        "exercise": "assembly-line",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/cars-assemble",
+        "exercise": "cars-assemble",
         "track": "fsharp",
         "language": "F#"
       }
@@ -743,8 +743,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/expression-bodied-members",
-        "exercise": "expression-bodied-members",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/the-weather-in-deather",
+        "exercise": "the-weather-in-deather",
         "track": "csharp",
         "language": "C#"
       }
@@ -780,8 +780,8 @@
         "language": "Swift"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/constants",
-        "exercise": "constants",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/authentication-system",
+        "exercise": "authentication-system",
         "track": "csharp",
         "language": "C#"
       }
@@ -804,8 +804,8 @@
         "language": "Java"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/constructors",
-        "exercise": "constructors",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/need-for-speed",
+        "exercise": "need-for-speed",
         "track": "csharp",
         "language": "C#"
       }
@@ -841,14 +841,14 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/datetimes",
-        "exercise": "datetimes",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/booking-up-for-beauty",
+        "exercise": "booking-up-for-beauty",
         "track": "csharp",
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/beauty-salon",
-        "exercise": "beauty-salon",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/booking-up-for-beauty",
+        "exercise": "booking-up-for-beauty",
         "track": "fsharp",
         "language": "F#"
       }
@@ -903,8 +903,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/constants",
-        "exercise": "constants",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/authentication-system",
+        "exercise": "authentication-system",
         "track": "csharp",
         "language": "C#"
       }
@@ -948,8 +948,8 @@
         "language": "Swift"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/dictionaries",
-        "exercise": "dictionaries",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/international-calling-connoisseur",
+        "exercise": "international-calling-connoisseur",
         "track": "csharp",
         "language": "C#"
       }
@@ -991,8 +991,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/floating-point-numbers",
-        "exercise": "floating-point-numbers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/interest-is-interesting",
+        "exercise": "interest-is-interesting",
         "track": "csharp",
         "language": "C#"
       }
@@ -1106,8 +1106,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/equality",
-        "exercise": "equality",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/faceid-2",
+        "exercise": "faceid-2",
         "track": "csharp",
         "language": "C#"
       }
@@ -1170,8 +1170,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/user-defined-exceptions",
-        "exercise": "user-defined-exceptions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/instruments-of-texas",
+        "exercise": "instruments-of-texas",
         "track": "csharp",
         "language": "C#"
       }
@@ -1183,14 +1183,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/exceptions",
-        "exercise": "exceptions",
-        "track": "csharp",
-        "language": "C#"
-      },
-      {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/exceptions",
-        "exercise": "exceptions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/calculator-conundrum",
+        "exercise": "calculator-conundrum",
         "track": "csharp",
         "language": "C#"
       },
@@ -1212,8 +1206,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/expression-bodied-members",
-        "exercise": "expression-bodied-members",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/the-weather-in-deather",
+        "exercise": "the-weather-in-deather",
         "track": "csharp",
         "language": "C#"
       }
@@ -1243,8 +1237,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/flag-enums",
-        "exercise": "flag-enums",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/attack-of-the-trolls",
+        "exercise": "attack-of-the-trolls",
         "track": "csharp",
         "language": "C#"
       }
@@ -1278,8 +1272,8 @@
         "language": "Rust"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/floating-point-numbers",
-        "exercise": "floating-point-numbers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/interest-is-interesting",
+        "exercise": "interest-is-interesting",
         "track": "csharp",
         "language": "C#"
       },
@@ -1290,8 +1284,8 @@
         "language": "Common Lisp"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/savings-account",
-        "exercise": "savings-account",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/interest-is-interesting",
+        "exercise": "interest-is-interesting",
         "track": "fsharp",
         "language": "F#"
       }
@@ -1309,8 +1303,8 @@
         "language": "Swift"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/arrays",
-        "exercise": "arrays",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/bird-watcher",
+        "exercise": "bird-watcher",
         "track": "csharp",
         "language": "C#"
       }
@@ -1322,8 +1316,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/arrays",
-        "exercise": "arrays",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/bird-watcher",
+        "exercise": "bird-watcher",
         "track": "csharp",
         "language": "C#"
       }
@@ -1421,8 +1415,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/lists",
-        "exercise": "lists",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/tracks-on-tracks-on-tracks",
+        "exercise": "tracks-on-tracks-on-tracks",
         "track": "csharp",
         "language": "C#"
       }
@@ -1499,8 +1493,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/numbers",
-        "exercise": "numbers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/cars-assemble",
+        "exercise": "cars-assemble",
         "track": "csharp",
         "language": "C#"
       }
@@ -1536,8 +1530,8 @@
         "language": "Java"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/inheritance",
-        "exercise": "inheritance",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/wizards-and-warriors",
+        "exercise": "wizards-and-warriors",
         "track": "csharp",
         "language": "C#"
       }
@@ -1621,8 +1615,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/integral-numbers",
-        "exercise": "integral-numbers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/hyper-optimized-telemetry",
+        "exercise": "hyper-optimized-telemetry",
         "track": "csharp",
         "language": "C#"
       }
@@ -1645,8 +1639,8 @@
         "language": "Java"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/interfaces",
-        "exercise": "interfaces",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/remote-control-competition",
+        "exercise": "remote-control-competition",
         "track": "csharp",
         "language": "C#"
       }
@@ -1724,8 +1718,8 @@
         "language": "Clojure"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/lists",
-        "exercise": "lists",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/tracks-on-tracks-on-tracks",
+        "exercise": "tracks-on-tracks-on-tracks",
         "track": "csharp",
         "language": "C#"
       },
@@ -1905,8 +1899,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/method-overloading",
-        "exercise": "method-overloading",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/wizards-and-warriors-2",
+        "exercise": "wizards-and-warriors-2",
         "track": "csharp",
         "language": "C#"
       }
@@ -2032,8 +2026,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/method-overloading",
-        "exercise": "method-overloading",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/wizards-and-warriors-2",
+        "exercise": "wizards-and-warriors-2",
         "track": "csharp",
         "language": "C#"
       }
@@ -2045,8 +2039,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/namespaces",
-        "exercise": "namespaces",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/red-vs-blue-darwin-style",
+        "exercise": "red-vs-blue-darwin-style",
         "track": "csharp",
         "language": "C#"
       }
@@ -2076,8 +2070,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/nested-types",
-        "exercise": "nested-types",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/remote-control-cleanup",
+        "exercise": "remote-control-cleanup",
         "track": "csharp",
         "language": "C#"
       }
@@ -2133,8 +2127,8 @@
         "language": "JavaScript"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/nullability",
-        "exercise": "nullability",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/tim-from-marketing",
+        "exercise": "tim-from-marketing",
         "track": "csharp",
         "language": "C#"
       }
@@ -2187,14 +2181,14 @@
         "language": "JavaScript"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/numbers",
-        "exercise": "numbers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/cars-assemble",
+        "exercise": "cars-assemble",
         "track": "csharp",
         "language": "C#"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/assembly-line",
-        "exercise": "assembly-line",
+        "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/cars-assemble",
+        "exercise": "cars-assemble",
         "track": "fsharp",
         "language": "F#"
       }
@@ -2223,8 +2217,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/object-initializers",
-        "exercise": "object-initializers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/why-cant-i-push-to-main",
+        "exercise": "why-cant-i-push-to-main",
         "track": "csharp",
         "language": "C#"
       }
@@ -2253,8 +2247,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/operator-overloading",
-        "exercise": "operator-overloading",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/hyperia-forex",
+        "exercise": "hyperia-forex",
         "track": "csharp",
         "language": "C#"
       }
@@ -2283,8 +2277,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/method-overloading",
-        "exercise": "method-overloading",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/wizards-and-warriors-2",
+        "exercise": "wizards-and-warriors-2",
         "track": "csharp",
         "language": "C#"
       }
@@ -2309,8 +2303,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/interfaces",
-        "exercise": "interfaces",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/remote-control-competition",
+        "exercise": "remote-control-competition",
         "track": "csharp",
         "language": "C#"
       }
@@ -2322,8 +2316,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/overflow",
-        "exercise": "overflow",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/hyperinflation-hits-hyperia",
+        "exercise": "hyperinflation-hits-hyperia",
         "track": "csharp",
         "language": "C#"
       }
@@ -2354,8 +2348,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/parameters",
-        "exercise": "parameters",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/building-telemetry",
+        "exercise": "building-telemetry",
         "track": "csharp",
         "language": "C#"
       }
@@ -2395,8 +2389,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/enums",
-        "exercise": "enums",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/logs-logs-logs",
+        "exercise": "logs-logs-logs",
         "track": "csharp",
         "language": "C#"
       }
@@ -2487,8 +2481,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/properties",
-        "exercise": "properties",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/weighing-machine",
+        "exercise": "weighing-machine",
         "track": "csharp",
         "language": "C#"
       }
@@ -2513,8 +2507,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/randomness",
-        "exercise": "randomness",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/roll-the-die",
+        "exercise": "roll-the-die",
         "track": "csharp",
         "language": "C#"
       }
@@ -2554,8 +2548,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/constants",
-        "exercise": "constants",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/authentication-system",
+        "exercise": "authentication-system",
         "track": "csharp",
         "language": "C#"
       }
@@ -2631,8 +2625,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/regular-expressions",
-        "exercise": "regular-expressions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/parsing-log-files",
+        "exercise": "parsing-log-files",
         "track": "csharp",
         "language": "C#"
       },
@@ -2663,8 +2657,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/resource-cleanup",
-        "exercise": "resource-cleanup",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/object-relational-mapping",
+        "exercise": "object-relational-mapping",
         "track": "csharp",
         "language": "C#"
       }
@@ -2680,8 +2674,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/resource-lifetime",
-        "exercise": "resource-lifetime",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/orm-in-one-go",
+        "exercise": "orm-in-one-go",
         "track": "csharp",
         "language": "C#"
       }
@@ -2754,8 +2748,8 @@
     ],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/equality",
-        "exercise": "equality",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/faceid-2",
+        "exercise": "faceid-2",
         "track": "csharp",
         "language": "C#"
       }
@@ -2834,8 +2828,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/chars",
-        "exercise": "chars",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/squeaky-clean",
+        "exercise": "squeaky-clean",
         "track": "csharp",
         "language": "C#"
       }
@@ -2868,8 +2862,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/string-formatting",
-        "exercise": "string-formatting",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/high-school-sweethearts",
+        "exercise": "high-school-sweethearts",
         "track": "csharp",
         "language": "C#"
       }
@@ -2935,8 +2929,8 @@
         "language": "JavaScript"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/strings",
-        "exercise": "strings",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/log-levels",
+        "exercise": "log-levels",
         "track": "csharp",
         "language": "C#"
       },
@@ -3026,8 +3020,8 @@
         "language": "Swift"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/structs",
-        "exercise": "structs",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/land-grab-in-space",
+        "exercise": "land-grab-in-space",
         "track": "csharp",
         "language": "C#"
       },
@@ -3055,8 +3049,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/expression-bodied-members",
-        "exercise": "expression-bodied-members",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/the-weather-in-deather",
+        "exercise": "the-weather-in-deather",
         "track": "csharp",
         "language": "C#"
       }
@@ -3133,8 +3127,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/expression-bodied-members",
-        "exercise": "expression-bodied-members",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/the-weather-in-deather",
+        "exercise": "the-weather-in-deather",
         "track": "csharp",
         "language": "C#"
       }
@@ -3157,8 +3151,8 @@
         "language": "Go"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/time",
-        "exercise": "time",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/beauty-salon-goes-global",
+        "exercise": "beauty-salon-goes-global",
         "track": "csharp",
         "language": "C#"
       }
@@ -3170,8 +3164,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/time",
-        "exercise": "time",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/beauty-salon-goes-global",
+        "exercise": "beauty-salon-goes-global",
         "track": "csharp",
         "language": "C#"
       }
@@ -3262,8 +3256,8 @@
         "language": "Swift"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/tuples",
-        "exercise": "tuples",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/phone-number-analysis",
+        "exercise": "phone-number-analysis",
         "track": "csharp",
         "language": "C#"
       },
@@ -3334,8 +3328,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/user-defined-exceptions",
-        "exercise": "user-defined-exceptions",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/instruments-of-texas",
+        "exercise": "instruments-of-texas",
         "track": "csharp",
         "language": "C#"
       }
@@ -3388,8 +3382,8 @@
     "documents": [],
     "implementations": [
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/string-formatting",
-        "exercise": "string-formatting",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/high-school-sweethearts",
+        "exercise": "high-school-sweethearts",
         "track": "csharp",
         "language": "C#"
       }
@@ -3407,8 +3401,8 @@
         "language": "Swift"
       },
       {
-        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/floating-point-numbers",
-        "exercise": "floating-point-numbers",
+        "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/interest-is-interesting",
+        "exercise": "interest-is-interesting",
         "track": "csharp",
         "language": "C#"
       }

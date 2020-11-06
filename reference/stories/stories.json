@@ -28,14 +28,14 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "datetimes",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/datetimes/.docs/instructions.md"
+        "exercise": "booking-up-for-beauty",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/booking-up-for-beauty/.docs/instructions.md"
       },
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "beauty-salon",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/beauty-salon/.docs/instructions.md"
+        "exercise": "booking-up-for-beauty",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/booking-up-for-beauty/.docs/instructions.md"
       }
     ]
   },
@@ -95,14 +95,14 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "numbers",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers/.docs/instructions.md"
+        "exercise": "cars-assemble",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/cars-assemble/.docs/instructions.md"
       },
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "assembly-line",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/assembly-line/.docs/instructions.md"
+        "exercise": "cars-assemble",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/cars-assemble/.docs/instructions.md"
       }
     ]
   },
@@ -272,8 +272,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "method-overloading",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/method-overloading/.docs/instructions.md"
+        "exercise": "wizards-and-warriors-2",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/wizards-and-warriors-2/.docs/instructions.md"
       }
     ]
   },
@@ -289,8 +289,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "arrays",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/arrays/.docs/instructions.md"
+        "exercise": "bird-watcher",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/bird-watcher/.docs/instructions.md"
       },
       {
         "track": "Elixir",
@@ -455,8 +455,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "basics",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/basics/.docs/instructions.md"
+        "exercise": "lucians-luscious-lasagna",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/lucians-luscious-lasagna/.docs/instructions.md"
       },
       {
         "track": "Elixir",
@@ -467,8 +467,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "lasagna",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/lasagna/.docs/instructions.md"
+        "exercise": "lucians-luscious-lasagna",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/lucians-luscious-lasagna/.docs/instructions.md"
       },
       {
         "track": "Java",
@@ -514,8 +514,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "enums",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/enums/.docs/instructions.md"
+        "exercise": "logs-logs-logs",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/logs-logs-logs/.docs/instructions.md"
       },
       {
         "track": "Rust",
@@ -549,8 +549,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "strings",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/strings/.docs/instructions.md"
+        "exercise": "log-levels",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/log-levels/.docs/instructions.md"
       },
       {
         "track": "C\u002B\u002B",
@@ -643,8 +643,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "nullability",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/nullability/.docs/instructions.md"
+        "exercise": "tim-from-marketing",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/tim-from-marketing/.docs/instructions.md"
       },
       {
         "track": "Elixir",
@@ -827,8 +827,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "classes",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/classes/.docs/instructions.md"
+        "exercise": "elons-toys",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/elons-toys/.docs/instructions.md"
       },
       {
         "track": "Elixir",
@@ -850,8 +850,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "constructors",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/constructors/.docs/instructions.md"
+        "exercise": "need-for-speed",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/need-for-speed/.docs/instructions.md"
       }
     ]
   },
@@ -867,8 +867,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "inheritance",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/inheritance/.docs/instructions.md"
+        "exercise": "wizards-and-warriors",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/wizards-and-warriors/.docs/instructions.md"
       }
     ]
   },
@@ -918,14 +918,14 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "floating-point-numbers",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md"
+        "exercise": "interest-is-interesting",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/interest-is-interesting/.docs/instructions.md"
       },
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "floating-point-numbers",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md"
+        "exercise": "interest-is-interesting",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/interest-is-interesting/.docs/instructions.md"
       }
     ]
   },
@@ -1063,8 +1063,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "flag-enums",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/flag-enums/.docs/instructions.md"
+        "exercise": "attack-of-the-trolls",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/attack-of-the-trolls/.docs/instructions.md"
       }
     ]
   },
@@ -1080,8 +1080,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "properties",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/properties/.docs/instructions.md"
+        "exercise": "weighing-machine",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/weighing-machine/.docs/instructions.md"
       }
     ]
   },
