@@ -22,7 +22,7 @@
         "name": "Tisbury Treasure Hunt",
         "uuid": "7ecd42c1-2ed5-487a-bc89-71c9cbad9b05",
         "concepts": ["tuples"],
-        "prerequisites": ["bools", "loops", "conditionals", "numbers"]
+        "prerequisites": ["basics"]
       },
       {
         "slug": "guidos-gorgeous-lasagna",
@@ -43,26 +43,14 @@
         "name": "Inventory Management",
         "uuid": null,
         "concepts": ["dicts"],
-        "prerequisites": ["bools", "loops", "numbers", "lists"]
+        "prerequisites": ["basics"]
       },
       {
         "slug": "log-levels",
         "name": "Log Levels",
         "uuid": null,
         "concepts": ["enums"],
-        "prerequisites": [
-          "classes",
-          "conditionals",
-          "enumeration",
-          "iteration",
-          "list-comprehensions",
-          "methods",
-          "sequences",
-          "strings",
-          "string-formatting",
-          "string-methods",
-          "tuples"
-        ]
+        "prerequisites": ["basics"]
       },
       {
         "slug": "elyses-enchantments",
@@ -83,21 +71,14 @@
         "name": "Restaurant Rozalynn",
         "uuid": null,
         "concepts": ["none"],
-        "prerequisites": [
-          "bools",
-          "conditionals",
-          "default-arguments",
-          "dict-methods",
-          "list-methods",
-          "loops"
-        ]
+        "prerequisites": ["basics"]
       },
       {
         "slug": "making-the-grade",
         "name": "Making the Grade",
         "uuid": null,
         "concepts": ["loops"],
-        "prerequisites": ["comparisons", "conditionals", "lists", "strings"]
+        "prerequisites": ["comparisons", "conditionals"]
       }
     ],
     "practice": []
