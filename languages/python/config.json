@@ -57,14 +57,14 @@
         "name": "Elyse's Enchantments",
         "uuid": null,
         "concepts": ["lists"],
-        "prerequisites": ["comparisons", "conditionals", "strings"]
+        "prerequisites": ["basics"]
       },
       {
         "slug": "chaitanas-colossal-coaster",
         "name": "Chaitana's Colossal Coaster",
         "uuid": null,
         "concepts": ["list-methods"],
-        "prerequisites": ["comparisons", "conditionals", "lists"]
+        "prerequisites": ["basics"]
       },
       {
         "slug": "restaurant-rozalynn",
@@ -78,7 +78,7 @@
         "name": "Making the Grade",
         "uuid": null,
         "concepts": ["loops"],
-        "prerequisites": ["comparisons", "conditionals"]
+        "prerequisites": ["basics"]
       }
     ],
     "practice": []
