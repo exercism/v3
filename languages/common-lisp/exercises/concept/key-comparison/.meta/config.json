@@ -1,0 +1,16 @@
+{
+  "authors": [
+    {
+      "github_username": "verdammelt",
+      "exercism_username": "verdammelt"
+    },
+    {
+      "github_username": "TheLostLambda",
+      "exercism_username": "TheLostLambda"
+    }
+  ],
+  "editor": {
+    "solution_files": ["key-comparison.lisp"],
+    "test_files": ["key-comparison-test.lisp"]
+  }
+}

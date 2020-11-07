@@ -231,7 +231,6 @@ module Json =
         { Url: string
           Name: string
           Slug: string
-          Url: string
           Exercises: JsonExercises } 
     
     let private conceptToJsonConcept (concept: Concept): JsonConcept =
@@ -251,7 +250,6 @@ module Json =
         { Url = sprintf "https://github.com/exercism/v3/tree/master/languages/%s" track.Slug
           Name = track.Name
           Slug = track.Slug
-          Url = sprintf "https://github.com/exercism/v3/tree/master/languages/%s" track.Slug
           Exercises =
               { Concept =
                   track.Exercises.Concept

@@ -39,4 +39,4 @@ These are example tasks that fit the high school sweethearts exercise, each task
 - [`types/string`][types-string]
 
 [types-string]: ../types/string.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/strings/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/high-school-sweetheart/.docs/instructions.md

@@ -25,7 +25,7 @@ In this exercise, the student processes a list of languages to learn on Exercism
 
 [type-char]: ./char.md
 [implementation-clojure]: ../../languages/clojure/exercises/concept/lists/.docs/introduction.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/lists/.docs/introduction.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/lists/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/tracks-on-tracks-on-tracks/.docs/introduction.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/language-list/.docs/introduction.md
 [type-array]: ./array.md
 [type-collection]: ./collection.md

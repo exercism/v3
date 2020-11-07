@@ -23,4 +23,21 @@ This exercise deals with analysis on a stack of playing cards. The reference imp
 | ---------- | ------------------------------------- | ------- |
 | JavaScript | [arrays][implementation-javascript-2] | None    |
 
+### Bartender
+
+This exercise deals with looping to enumerate data structures or to perform repetitive tasks. The reference implementation (Swift) teaches:
+
+- The existence and use of for-in loops
+- The existence and use of while loops
+- The existence and use of repeat loops
+- The existence and use of control transfer statements
+  - skip computation on some conditions(`continue`)
+
+#### Implementations
+
+| Track | Exercise                      | Changes |
+| ----- | ----------------------------- | ------- |
+| Swift | [loops][implementation-swift] | None    |
+
 [implementation-javascript-2]: ../../languages/javascript/exercises/concept/array-analysis/.docs/introduction.md
+[implementation-swift]: ../../languages/swift/exercises/concept/master-mixologist/.docs/introduction.md

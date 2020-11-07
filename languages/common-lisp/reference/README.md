@@ -135,69 +135,69 @@ as template.
 
 ## Implemented Concept Exercises
 
-| Exercise                 | Concepts                                           | Status      |
-| ------------------------ | -------------------------------------------------- | ----------- |
-| [`basics`][basics]       | `comments`, `expressions`, `cons`, `symbols`       | Implemented |
-| `basic-numbers`          | `arithmetic`, `floating-point-numbers`, `integers` | Has Issue   |
-| `assignment`             | `assignment`                                       | Has Issue   |
-| `basic-lists`            | `basic-lists`                                      | Has Issue   |
-| `characters`             | `characters`                                       | Has Issue   |
-| `conditionals`           | `conditionals`, `truthy-and-falsy`                 | Has Issue   |
-| `variables`              | `variables`, `constants`                           | Has Issue   |
-| `enumeration`            | `enumeration`, `loop.basic`                        | Has Issue   |
-| `function-definiton`     | `function-definiton`                               | Has Issue   |
-| `higher-order-functions` | `higher-order-functions`                           | Has Issue   |
-| `nested-functions`       | `nested-functions`                                 | Has Issue   |
-| `packages`               | `packages`                                         | Has Issue   |
-| `strings`                | `strings`, `printing`                              | Has Issue   |
-| `recursion`              | `recursion`                                        | Has Issue   |
-| `sameness`               | `sameness`                                         | Has Issue   |
-| `sets`                   | `sets`                                             | Has Issue   |
-| `anonymous-functions`    | `anonymous-functions`                              | Has Issue   |
-| `code-as-data`           | `code-as-data`                                     | Has Issue   |
-| `structures`             | `structures`                                       | Has Issue   |
-| `hash-tables`            | `hash-tables`                                      | Has Issue   |
-| `multiple-values`        | `multiple-values`                                  | Has Issue   |
-|                          | `arrays`                                           | Not Started |
-|                          | `association-lists`                                | Not Started |
-|                          | `booleans`                                         | Not Started |
-|                          | `circular-lists`                                   | Not Started |
-|                          | `classes`                                          | Not Started |
-|                          | `compiler-macros`                                  | Not Started |
-|                          | `complex-numbers`                                  | Not Started |
-|                          | `destructuring-assignment`                         | Not Started |
-|                          | `conditions`                                       | Not Started |
-|                          | `generic-functions`                                | Not Started |
-|                          | `handlers`                                         | Not Started |
-|                          | `methods`                                          | Not Started |
-|                          | `multiple-dispatch`                                | Not Started |
-|                          | `multiple-inheritance`                             | Not Started |
-|                          | `objects`                                          | Not Started |
-|                          | `property-lists`                                   | Not Started |
-|                          | `rational-numbers`                                 | Not Started |
-|                          | `reader-macros.defining`                           | Not Started |
-|                          | `reader-macros.using`                              | Not Started |
-|                          | `reading`                                          | Not Started |
-|                          | `restarts`                                         | Not Started |
-|                          | `signalling`                                       | Not Started |
-|                          | `slots`                                            | Not Started |
-|                          | `streams`                                          | Not Started |
-|                          | `symbol-macros`                                    | Not Started |
-|                          | `trees`                                            | Not Started |
-|                          | `unique-symbols`                                   | Not Started |
-|                          | `vectors`                                          | Not Started |
-|                          | `format.basic`                                     | Not Started |
-|                          | `format.conditionals`                              | Not Started |
-|                          | `format.iteration`                                 | Not Started |
-|                          | `format.language`                                  | Not Started |
-|                          | `format.miscellaneous`                             | Not Started |
-|                          | `format.numbers`                                   | Not Started |
-|                          | `format.tables`                                    | Not Started |
-|                          | `loop.collecting`                                  | Not Started |
-|                          | `loop.miscellaneous`                               | Not Started |
-|                          | `loop.ranges`                                      | Not Started |
-|                          | `loop.tests`                                       | Not Started |
-|                          | `loop.traversal`                                   | Not Started |
+| Exercise                               | Concepts                                           | Status      |
+| -------------------------------------- | -------------------------------------------------- | ----------- |
+| [`socks-and-sexprs`][socks-and-sexprs] | `comments`, `expressions`, `cons`, `symbols`       | Implemented |
+| `basic-numbers`                        | `arithmetic`, `floating-point-numbers`, `integers` | Has Issue   |
+| `assignment`                           | `assignment`                                       | Has Issue   |
+| `basic-lists`                          | `basic-lists`                                      | Has Issue   |
+| `characters`                           | `characters`                                       | Has Issue   |
+| `conditionals`                         | `conditionals`, `truthy-and-falsy`                 | Has Issue   |
+| `variables`                            | `variables`, `constants`                           | Has Issue   |
+| `enumeration`                          | `enumeration`, `loop.basic`                        | Has Issue   |
+| `function-definiton`                   | `function-definiton`                               | Has Issue   |
+| `higher-order-functions`               | `higher-order-functions`                           | Has Issue   |
+| `nested-functions`                     | `nested-functions`                                 | Has Issue   |
+| `packages`                             | `packages`                                         | Has Issue   |
+| `strings`                              | `strings`, `printing`                              | Has Issue   |
+| `recursion`                            | `recursion`                                        | Has Issue   |
+| `sameness`                             | `sameness`                                         | Has Issue   |
+| `sets`                                 | `sets`                                             | Has Issue   |
+| `anonymous-functions`                  | `anonymous-functions`                              | Has Issue   |
+| `code-as-data`                         | `code-as-data`                                     | Has Issue   |
+| `structures`                           | `structures`                                       | Has Issue   |
+| `hash-tables`                          | `hash-tables`                                      | Has Issue   |
+| `multiple-values`                      | `multiple-values`                                  | Has Issue   |
+|                                        | `arrays`                                           | Not Started |
+|                                        | `association-lists`                                | Not Started |
+|                                        | `booleans`                                         | Not Started |
+|                                        | `circular-lists`                                   | Not Started |
+|                                        | `classes`                                          | Not Started |
+|                                        | `compiler-macros`                                  | Not Started |
+|                                        | `complex-numbers`                                  | Not Started |
+|                                        | `destructuring-assignment`                         | Not Started |
+|                                        | `conditions`                                       | Not Started |
+|                                        | `generic-functions`                                | Not Started |
+|                                        | `handlers`                                         | Not Started |
+|                                        | `methods`                                          | Not Started |
+|                                        | `multiple-dispatch`                                | Not Started |
+|                                        | `multiple-inheritance`                             | Not Started |
+|                                        | `objects`                                          | Not Started |
+|                                        | `property-lists`                                   | Not Started |
+|                                        | `rational-numbers`                                 | Not Started |
+|                                        | `reader-macros.defining`                           | Not Started |
+|                                        | `reader-macros.using`                              | Not Started |
+|                                        | `reading`                                          | Not Started |
+|                                        | `restarts`                                         | Not Started |
+|                                        | `signalling`                                       | Not Started |
+|                                        | `slots`                                            | Not Started |
+|                                        | `streams`                                          | Not Started |
+|                                        | `symbol-macros`                                    | Not Started |
+|                                        | `trees`                                            | Not Started |
+|                                        | `unique-symbols`                                   | Not Started |
+|                                        | `vectors`                                          | Not Started |
+|                                        | `format.basic`                                     | Not Started |
+|                                        | `format.conditionals`                              | Not Started |
+|                                        | `format.iteration`                                 | Not Started |
+|                                        | `format.language`                                  | Not Started |
+|                                        | `format.miscellaneous`                             | Not Started |
+|                                        | `format.numbers`                                   | Not Started |
+|                                        | `format.tables`                                    | Not Started |
+|                                        | `loop.collecting`                                  | Not Started |
+|                                        | `loop.miscellaneous`                               | Not Started |
+|                                        | `loop.ranges`                                      | Not Started |
+|                                        | `loop.tests`                                       | Not Started |
+|                                        | `loop.traversal`                                   | Not Started |
 
 [anonymous-functions]: ../../../reference/concepts/anonymous_functions.md
 [arithmetic]: ../../../reference/concepts/arithmetic.md
@@ -235,4 +235,4 @@ as template.
 [truthy-and-falsy]: ../../../reference/concepts/truthy_and_falsy.md
 [variables]: ../../../reference/concepts/variables.md
 [concepts]: concepts.csv
-[basics]: ../exercises/concept/basics
+[socks-and-sexprs]: ../exercises/concept/socks-and-sexprs
