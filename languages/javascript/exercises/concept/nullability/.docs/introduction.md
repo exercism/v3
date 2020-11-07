@@ -12,13 +12,3 @@ apple; // => null
 !apple; // => true
 !!apple; // => false
 ```
-
-The `null` value has to be differentiated from the variable `undefined`. The distinction being that `undefined` is the
-value of an uninitialized variable or type, while `null` represents a missing object.
-
-```javascript
-typeof null // => "object"
-typeof undefined // => "undefined"
-null === undefined // => evaluates to false by identity comparison
-null == undefined // => evaluates to true by truthy comparison
-```
