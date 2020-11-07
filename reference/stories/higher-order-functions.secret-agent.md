@@ -22,4 +22,4 @@ The story facilitates defining [higher-order functions][concepts-higher_order_fu
 - [`concepts/higher_order_functions`][concepts-higher_order_functions]
 
 [concepts-higher_order_functions]: ../concepts/higher_order_functions.md
-[implementation-swift]: ../../languages/swift/exercises/concept/higher-order-functions/.docs/instructions.md
+[implementation-swift]: ../../languages/swift/exercises/concept/secret-agent/.docs/instructions.md

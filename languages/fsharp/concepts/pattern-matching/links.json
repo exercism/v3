@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching",
+    "description": "Pattern matching"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#variable-patterns",
+    "description": "Variable patterns"
+  },
+  {
+    "url": "https://fsharpforfunandprofit.com/posts/match-expression/#exhaustive-matching",
+    "description": "Exhaustive matching"
+  }
+]

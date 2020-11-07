@@ -14,102 +14,102 @@ This report is updated automatically when any _design.md_ document is modified o
 
 ### Introductory Concepts
 
-- accessibility [_(namespaces)_][exercise-namespaces] - [Design][design-namespaces]
-- arrays [_(arrays)_][exercise-arrays] - [Design][design-arrays], [Background][tnc-arrays]
-- assignment [_(numbers)_][exercise-numbers] - [Design][design-numbers]
-- base-class-library [_(dictionaries)_][exercise-dictionaries] - [Design][design-dictionaries]
-- basics [_(basics)_][exercise-basics] - [Design][design-basics]
-- bit-manipulation [_(flag-enums)_][exercise-flag-enums] - [Design][design-flag-enums]
-- booleans [_(booleans)_][exercise-booleans] - [Design][design-booleans], [Background][tnc-booleans]
-- booleans [_(booleans)_][exercise-booleans] - [Design][design-booleans]
-- casting [_(casting)_][exercise-casting] - [Design][design-casting]
-- chars [_(chars)_][exercise-chars] - [Design][design-chars], [Background][tnc-chars]
-- classes [_(classes)_][exercise-classes] - [Design][design-classes], [Background][tnc-classes]
-- collections [_(lists)_][exercise-lists] - [Design][design-lists]
-- comments [_(basics)_][exercise-basics] - [Design][design-basics]
-- conditionals-ternary [_(expression-bodied-members)_][exercise-expression-bodied-members] - [Design][design-expression-bodied-members], [Background][tnc-conditionals-ternary]
-- constants [_(constants)_][exercise-constants] - [Design][design-constants]
-- constructors [_(constructors)_][exercise-constructors] - [Design][design-constructors]
-- cross-platform [_(time)_][exercise-time] - [Design][design-time]
-- datetimes [_(datetimes)_][exercise-datetimes] - [Design][design-datetimes]
-- default-value [_(classes)_][exercise-classes] - [Design][design-classes]
-- defensive-copying [_(constants)_][exercise-constants] - [Design][design-constants]
-- dictionaries [_(dictionaries)_][exercise-dictionaries] - [Design][design-dictionaries], [Background][tnc-dictionaries]
-- do-while-loops [_(floating-point-numbers)_][exercise-floating-point-numbers] - [Design][design-floating-point-numbers]
-- encapsulation [_(classes)_][exercise-classes] - [Design][design-classes], [Background][tnc-encapsulation]
-- enums [_(enums)_][exercise-enums] - [Design][design-enums]
-- equality [_(equality)_][exercise-equality] - [Design][design-equality], [Background][tnc-equality]
-- exception-filtering [_(user-defined-exceptions)_][exercise-user-defined-exceptions] - [Design][design-user-defined-exceptions]
-- exceptions [_(exceptions)_][exercise-exceptions] - [Design][design-exceptions]
-- explicit-interfaces [_(interfaces)_][exercise-interfaces] - [Design][design-interfaces]
-- expression-bodied-members [_(expression-bodied-members)_][exercise-expression-bodied-members] - [Design][design-expression-bodied-members]
-- fields [_(classes)_][exercise-classes] - [Design][design-classes]
-- flag-enums [_(flag-enums)_][exercise-flag-enums] - [Design][design-flag-enums]
-- floating-point-numbers [_(floating-point-numbers)_][exercise-floating-point-numbers] - [Design][design-floating-point-numbers]
-- for-loops [_(arrays)_][exercise-arrays] - [Design][design-arrays], [Background][tnc-for-loops]
-- foreach-loops [_(arrays)_][exercise-arrays] - [Design][design-arrays], [Background][tnc-foreach-loops]
-- functions [_(basics)_][exercise-basics] - [Design][design-basics], [Background][tnc-functions]
-- generic-types [_(lists)_][exercise-lists] - [Design][design-lists]
-- if-statements [_(numbers)_][exercise-numbers] - [Design][design-numbers], [Background][tnc-if-statements]
-- implicit-casting [_(casting)_][exercise-casting] - [Design][design-casting]
-- imports [_(namespaces)_][exercise-namespaces] - [Design][design-namespaces]
-- inheritance [_(inheritance)_][exercise-inheritance] - [Design][design-inheritance], [Background][tnc-inheritance]
-- integral-numbers [_(integral-numbers)_][exercise-integral-numbers] - [Design][design-integral-numbers]
-- interfaces [_(interfaces)_][exercise-interfaces] - [Design][design-interfaces], [Background][tnc-interfaces]
-- interpolation [_(string-formatting)_][exercise-string-formatting] - [Design][design-string-formatting]
-- lists [_(lists)_][exercise-lists] - [Design][design-lists], [Background][tnc-lists]
-- marker-interfaces [_(equality)_][exercise-equality] - [Design][design-equality]
-- math-operators [_(numbers)_][exercise-numbers] - [Design][design-numbers]
-- method-overloading [_(method-overloading)_][exercise-method-overloading] - [Design][design-method-overloading]
-- mutation [_(basics)_][exercise-basics] - [Design][design-basics], [Background][tnc-mutation]
-- named-arguments [_(method-overloading)_][exercise-method-overloading] - [Design][design-method-overloading]
-- namespaces [_(namespaces)_][exercise-namespaces] - [Design][design-namespaces]
-- nested-types [_(nested-types)_][exercise-nested-types] - [Design][design-nested-types]
-- null-coalescing [_(nullability)_][exercise-nullability] - [Design][design-nullability]
-- null-conditional [_(nullability)_][exercise-nullability] - [Design][design-nullability]
-- null-forgiving [_(nullability)_][exercise-nullability] - [Design][design-nullability]
-- nullability [_(nullability)_][exercise-nullability] - [Design][design-nullability]
-- nullable-values [_(nullability)_][exercise-nullability] - [Design][design-nullability]
-- numbers [_(numbers)_][exercise-numbers] - [Design][design-numbers]
-- numbers [_(numbers)_][exercise-numbers] - [Design][design-numbers]
-- object-initializers [_(object-initializers)_][exercise-object-initializers] - [Design][design-object-initializers]
-- objects [_(classes)_][exercise-classes] - [Design][design-classes], [Background][tnc-objects]
-- operator-overloading [_(operator-overloading)_][exercise-operator-overloading] - [Design][design-operator-overloading]
-- optional-arguments [_(parameters)_][exercise-parameters] - [Design][design-parameters], [Background][tnc-optional-arguments]
-- optional-parameters [_(method-overloading)_][exercise-method-overloading] - [Design][design-method-overloading]
-- ordering [_(interfaces)_][exercise-interfaces] - [Design][design-interfaces]
-- out-parameters [_(parameters)_][exercise-parameters] - [Design][design-parameters]
-- overflow [_(overflow)_][exercise-overflow] - [Design][design-overflow]
-- parameters [_(parameters)_][exercise-parameters] - [Design][design-parameters]
-- pattern-matching-constants [_(enums)_][exercise-enums] - [Design][design-enums]
-- polymorphism [_(inheritance)_][exercise-inheritance] - [Design][design-inheritance], [Background][tnc-polymorphism]
-- properties [_(properties)_][exercise-properties] - [Design][design-properties]
-- randomness [_(randomness)_][exercise-randomness] - [Design][design-randomness]
-- readonly-collections [_(constants)_][exercise-constants] - [Design][design-constants]
-- regular-expressions [_(regular-expressions)_][exercise-regular-expressions] - [Design][design-regular-expressions]
-- resource-cleanup [_(resource-cleanup)_][exercise-resource-cleanup] - [Design][design-resource-cleanup]
-- resource-lifetime [_(resource-lifetime)_][exercise-resource-lifetime] - [Design][design-resource-lifetime]
-- return-values [_(basics)_][exercise-basics] - [Design][design-basics]
-- scoping [_(basics)_][exercise-basics] - [Design][design-basics]
-- sets [_(equality)_][exercise-equality] - [Design][design-equality], [Background][tnc-sets]
-- state [_(classes)_][exercise-classes] - [Design][design-classes], [Background][tnc-state]
-- string-builder [_(chars)_][exercise-chars] - [Design][design-chars]
-- string-formatting [_(string-formatting)_][exercise-string-formatting] - [Design][design-string-formatting]
-- strings [_(strings)_][exercise-strings] - [Design][design-strings], [Background][tnc-strings]
-- structs [_(structs)_][exercise-structs] - [Design][design-structs]
-- switch-expressions [_(expression-bodied-members)_][exercise-expression-bodied-members] - [Design][design-expression-bodied-members]
-- switch-statements [_(switch-statements)_][exercise-switch-statements] - [Design][design-switch-statements]
-- throw-expressions [_(expression-bodied-members)_][exercise-expression-bodied-members] - [Design][design-expression-bodied-members]
-- time [_(time)_][exercise-time] - [Design][design-time]
-- timezone [_(time)_][exercise-time] - [Design][design-time]
-- tuples [_(tuples)_][exercise-tuples] - [Design][design-tuples], [Background][tnc-tuples]
-- type-inference [_(basics)_][exercise-basics] - [Design][design-basics], [Background][tnc-type-inference]
-- unsigned-integers [_(integral-numbers)_][exercise-integral-numbers] - [Design][design-integral-numbers]
-- user-defined-exceptions [_(user-defined-exceptions)_][exercise-user-defined-exceptions] - [Design][design-user-defined-exceptions]
-- variables [_(basics)_][exercise-basics] - [Design][design-basics], [Background][tnc-variables]
-- verbatim-strings [_(string-formatting)_][exercise-string-formatting] - [Design][design-string-formatting]
-- visibility [_(classes)_][exercise-classes] - [Design][design-classes]
-- while-loops [_(floating-point-numbers)_][exercise-floating-point-numbers] - [Design][design-floating-point-numbers]
+- accessibility [_(red-vs-blue-darwin-style)_][exercise-red-vs-blue-darwin-style] - [Design][design-red-vs-blue-darwin-style]
+- arrays [_(bird-watcher)_][exercise-bird-watcher] - [Design][design-bird-watcher], [Background][tnc-arrays]
+- assignment [_(cars-assemble)_][exercise-cars-assemble] - [Design][design-cars-assemble]
+- base-class-library [_(international-calling-connoisseur)_][exercise-international-calling-connoisseur] - [Design][design-international-calling-connoisseur]
+- basics [_(lucians-luscious-lasagna)_][exercise-lucians-luscious-lasagna] - [Design][design-lucians-luscious-lasagna]
+- bit-manipulation [_(attack-of-the-trolls)_][exercise-attack-of-the-trolls] - [Design][design-attack-of-the-trolls]
+- booleans [_(annalyns-infiltration)_][exercise-annalyns-infiltration] - [Design][design-annalyns-infiltration], [Background][tnc-booleans]
+- booleans [_(annalyns-infiltration)_][exercise-annalyns-infiltration] - [Design][design-annalyns-infiltration]
+- casting [_(secure-munchester-united)_][exercise-secure-munchester-united] - [Design][design-secure-munchester-united]
+- chars [_(squeaky-clean)_][exercise-squeaky-clean] - [Design][design-squeaky-clean], [Background][tnc-chars]
+- classes [_(elons-toys)_][exercise-elons-toys] - [Design][design-elons-toys], [Background][tnc-classes]
+- collections [_(tracks-on-tracks-on-tracks)_][exercise-tracks-on-tracks-on-tracks] - [Design][design-tracks-on-tracks-on-tracks]
+- comments [_(lucians-luscious-lasagna)_][exercise-lucians-luscious-lasagna] - [Design][design-lucians-luscious-lasagna]
+- conditionals-ternary [_(the-weather-in-deather)_][exercise-the-weather-in-deather] - [Design][design-the-weather-in-deather], [Background][tnc-conditionals-ternary]
+- constants [_(authentication-system)_][exercise-authentication-system] - [Design][design-authentication-system]
+- constructors [_(need-for-speed)_][exercise-need-for-speed] - [Design][design-need-for-speed]
+- cross-platform [_(beauty-salon-goes-global)_][exercise-beauty-salon-goes-global] - [Design][design-beauty-salon-goes-global]
+- datetimes [_(booking-up-for-beauty)_][exercise-booking-up-for-beauty] - [Design][design-booking-up-for-beauty]
+- default-value [_(elons-toys)_][exercise-elons-toys] - [Design][design-elons-toys]
+- defensive-copying [_(authentication-system)_][exercise-authentication-system] - [Design][design-authentication-system]
+- dictionaries [_(international-calling-connoisseur)_][exercise-international-calling-connoisseur] - [Design][design-international-calling-connoisseur], [Background][tnc-dictionaries]
+- do-while-loops [_(interest-is-interesting)_][exercise-interest-is-interesting] - [Design][design-interest-is-interesting]
+- encapsulation [_(elons-toys)_][exercise-elons-toys] - [Design][design-elons-toys], [Background][tnc-encapsulation]
+- enums [_(logs-logs-logs)_][exercise-logs-logs-logs] - [Design][design-logs-logs-logs]
+- equality [_(faceid-2)_][exercise-faceid-2] - [Design][design-faceid-2], [Background][tnc-equality]
+- exception-filtering [_(instruments-of-texas)_][exercise-instruments-of-texas] - [Design][design-instruments-of-texas]
+- exceptions [_(calculator-conundrum)_][exercise-calculator-conundrum] - [Design][design-calculator-conundrum]
+- explicit-interfaces [_(remote-control-competition)_][exercise-remote-control-competition] - [Design][design-remote-control-competition]
+- expression-bodied-members [_(the-weather-in-deather)_][exercise-the-weather-in-deather] - [Design][design-the-weather-in-deather]
+- fields [_(elons-toys)_][exercise-elons-toys] - [Design][design-elons-toys]
+- flag-enums [_(attack-of-the-trolls)_][exercise-attack-of-the-trolls] - [Design][design-attack-of-the-trolls]
+- floating-point-numbers [_(interest-is-interesting)_][exercise-interest-is-interesting] - [Design][design-interest-is-interesting]
+- for-loops [_(bird-watcher)_][exercise-bird-watcher] - [Design][design-bird-watcher], [Background][tnc-for-loops]
+- foreach-loops [_(bird-watcher)_][exercise-bird-watcher] - [Design][design-bird-watcher], [Background][tnc-foreach-loops]
+- functions [_(lucians-luscious-lasagna)_][exercise-lucians-luscious-lasagna] - [Design][design-lucians-luscious-lasagna], [Background][tnc-functions]
+- generic-types [_(tracks-on-tracks-on-tracks)_][exercise-tracks-on-tracks-on-tracks] - [Design][design-tracks-on-tracks-on-tracks]
+- if-statements [_(cars-assemble)_][exercise-cars-assemble] - [Design][design-cars-assemble], [Background][tnc-if-statements]
+- implicit-casting [_(secure-munchester-united)_][exercise-secure-munchester-united] - [Design][design-secure-munchester-united]
+- imports [_(red-vs-blue-darwin-style)_][exercise-red-vs-blue-darwin-style] - [Design][design-red-vs-blue-darwin-style]
+- inheritance [_(wizards-and-warriors)_][exercise-wizards-and-warriors] - [Design][design-wizards-and-warriors], [Background][tnc-inheritance]
+- integral-numbers [_(hyper-optimized-telemetry)_][exercise-hyper-optimized-telemetry] - [Design][design-hyper-optimized-telemetry]
+- interfaces [_(remote-control-competition)_][exercise-remote-control-competition] - [Design][design-remote-control-competition], [Background][tnc-interfaces]
+- interpolation [_(high-school-sweethearts)_][exercise-high-school-sweethearts] - [Design][design-high-school-sweethearts]
+- lists [_(tracks-on-tracks-on-tracks)_][exercise-tracks-on-tracks-on-tracks] - [Design][design-tracks-on-tracks-on-tracks], [Background][tnc-lists]
+- marker-interfaces [_(faceid-2)_][exercise-faceid-2] - [Design][design-faceid-2]
+- math-operators [_(cars-assemble)_][exercise-cars-assemble] - [Design][design-cars-assemble]
+- method-overloading [_(wizards-and-warriors-2)_][exercise-wizards-and-warriors-2] - [Design][design-wizards-and-warriors-2]
+- mutation [_(lucians-luscious-lasagna)_][exercise-lucians-luscious-lasagna] - [Design][design-lucians-luscious-lasagna], [Background][tnc-mutation]
+- named-arguments [_(wizards-and-warriors-2)_][exercise-wizards-and-warriors-2] - [Design][design-wizards-and-warriors-2]
+- namespaces [_(red-vs-blue-darwin-style)_][exercise-red-vs-blue-darwin-style] - [Design][design-red-vs-blue-darwin-style]
+- nested-types [_(remote-control-cleanup)_][exercise-remote-control-cleanup] - [Design][design-remote-control-cleanup]
+- null-coalescing [_(tim-from-marketing)_][exercise-tim-from-marketing] - [Design][design-tim-from-marketing]
+- null-conditional [_(tim-from-marketing)_][exercise-tim-from-marketing] - [Design][design-tim-from-marketing]
+- null-forgiving [_(tim-from-marketing)_][exercise-tim-from-marketing] - [Design][design-tim-from-marketing]
+- nullability [_(tim-from-marketing)_][exercise-tim-from-marketing] - [Design][design-tim-from-marketing]
+- nullable-values [_(tim-from-marketing)_][exercise-tim-from-marketing] - [Design][design-tim-from-marketing]
+- numbers [_(cars-assemble)_][exercise-cars-assemble] - [Design][design-cars-assemble]
+- numbers [_(cars-assemble)_][exercise-cars-assemble] - [Design][design-cars-assemble]
+- object-initializers [_(why-cant-i-push-to-main)_][exercise-why-cant-i-push-to-main] - [Design][design-why-cant-i-push-to-main]
+- objects [_(elons-toys)_][exercise-elons-toys] - [Design][design-elons-toys], [Background][tnc-objects]
+- operator-overloading [_(hyperia-forex)_][exercise-hyperia-forex] - [Design][design-hyperia-forex]
+- optional-arguments [_(building-telemetry)_][exercise-building-telemetry] - [Design][design-building-telemetry], [Background][tnc-optional-arguments]
+- optional-parameters [_(wizards-and-warriors-2)_][exercise-wizards-and-warriors-2] - [Design][design-wizards-and-warriors-2]
+- ordering [_(remote-control-competition)_][exercise-remote-control-competition] - [Design][design-remote-control-competition]
+- out-parameters [_(building-telemetry)_][exercise-building-telemetry] - [Design][design-building-telemetry]
+- overflow [_(hyperinflation-hits-hyperia)_][exercise-hyperinflation-hits-hyperia] - [Design][design-hyperinflation-hits-hyperia]
+- parameters [_(building-telemetry)_][exercise-building-telemetry] - [Design][design-building-telemetry]
+- pattern-matching-constants [_(logs-logs-logs)_][exercise-logs-logs-logs] - [Design][design-logs-logs-logs]
+- polymorphism [_(wizards-and-warriors)_][exercise-wizards-and-warriors] - [Design][design-wizards-and-warriors], [Background][tnc-polymorphism]
+- properties [_(weighing-machine)_][exercise-weighing-machine] - [Design][design-weighing-machine]
+- randomness [_(roll-the-die)_][exercise-roll-the-die] - [Design][design-roll-the-die]
+- readonly-collections [_(authentication-system)_][exercise-authentication-system] - [Design][design-authentication-system]
+- regular-expressions [_(parsing-log-files)_][exercise-parsing-log-files] - [Design][design-parsing-log-files]
+- resource-cleanup [_(object-relational-mapping)_][exercise-object-relational-mapping] - [Design][design-object-relational-mapping]
+- resource-lifetime [_(orm-in-one-go)_][exercise-orm-in-one-go] - [Design][design-orm-in-one-go]
+- return-values [_(lucians-luscious-lasagna)_][exercise-lucians-luscious-lasagna] - [Design][design-lucians-luscious-lasagna]
+- scoping [_(lucians-luscious-lasagna)_][exercise-lucians-luscious-lasagna] - [Design][design-lucians-luscious-lasagna]
+- sets [_(faceid-2)_][exercise-faceid-2] - [Design][design-faceid-2], [Background][tnc-sets]
+- state [_(elons-toys)_][exercise-elons-toys] - [Design][design-elons-toys], [Background][tnc-state]
+- string-builder [_(squeaky-clean)_][exercise-squeaky-clean] - [Design][design-squeaky-clean]
+- string-formatting [_(high-school-sweethearts)_][exercise-high-school-sweethearts] - [Design][design-high-school-sweethearts]
+- strings [_(log-levels)_][exercise-log-levels] - [Design][design-log-levels], [Background][tnc-strings]
+- structs [_(land-grab-in-space)_][exercise-land-grab-in-space] - [Design][design-land-grab-in-space]
+- switch-expressions [_(the-weather-in-deather)_][exercise-the-weather-in-deather] - [Design][design-the-weather-in-deather]
+- switch-statements [_(football-match-reports)_][exercise-football-match-reports] - [Design][design-football-match-reports]
+- throw-expressions [_(the-weather-in-deather)_][exercise-the-weather-in-deather] - [Design][design-the-weather-in-deather]
+- time [_(beauty-salon-goes-global)_][exercise-beauty-salon-goes-global] - [Design][design-beauty-salon-goes-global]
+- timezone [_(beauty-salon-goes-global)_][exercise-beauty-salon-goes-global] - [Design][design-beauty-salon-goes-global]
+- tuples [_(phone-number-analysis)_][exercise-phone-number-analysis] - [Design][design-phone-number-analysis], [Background][tnc-tuples]
+- type-inference [_(lucians-luscious-lasagna)_][exercise-lucians-luscious-lasagna] - [Design][design-lucians-luscious-lasagna], [Background][tnc-type-inference]
+- unsigned-integers [_(hyper-optimized-telemetry)_][exercise-hyper-optimized-telemetry] - [Design][design-hyper-optimized-telemetry]
+- user-defined-exceptions [_(instruments-of-texas)_][exercise-instruments-of-texas] - [Design][design-instruments-of-texas]
+- variables [_(lucians-luscious-lasagna)_][exercise-lucians-luscious-lasagna] - [Design][design-lucians-luscious-lasagna], [Background][tnc-variables]
+- verbatim-strings [_(high-school-sweethearts)_][exercise-high-school-sweethearts] - [Design][design-high-school-sweethearts]
+- visibility [_(elons-toys)_][exercise-elons-toys] - [Design][design-elons-toys]
+- while-loops [_(interest-is-interesting)_][exercise-interest-is-interesting] - [Design][design-interest-is-interesting]
 
 ### Essential Concepts
 
@@ -232,9 +232,9 @@ This report is updated automatically when any _design.md_ document is modified o
 | `nested-types`               | <ul><li>know syntax for nested classes<li>know when to use nested classes<li>familiarity with other nested types such as structs and enums                                                                                                                                                                                                                                                                                                                                                                                            |
 | `null-coalescing`            | <ul><li>know the syntax and behavior of the null-coalescing operator (??)                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | `null-conditional`           | <ul><li>know the syntax and behavior of the null-conditional operator (?.)                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| `null-forgiving`             | <ul><li>know the syntax and behvior of the null-forgiving operator (!.)<li>know to use the operator with discretion                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `null-forgiving`             | <ul><li>know the syntax and behavior of the null-forgiving operator (!.)<li>know to use the operator with discretion                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | `nullability`                | <ul><li>know of the existence of the `null` literal<li>know what a `NullReferenceException` is and when it is thrown<li>know how to compare a value to `null`<li>know the difference between value and reference types regarding nullability<li>know how to define nullable reference and value types<li>know about the null-related operators<li>know about basic null checking by the compiler.                                                                                                                                     |
-| `nullable-values`            | <ul><li>know wbout nullable primitives<li>know about nullable structs                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `nullable-values`            | <ul><li>know about nullable primitives<li>know about nullable structs                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | `numbers`                    | <ul><li>know of the existence of the two most commonly used number types, `int` and `double`<li>understand that the former represents whole numbers, and the latter floating-point numbers<li>know of basic operators such as multiplication, comparison and equality<li>know how to convert from one numeric type to another<li>know what implicit and explicit conversions are.                                                                                                                                                     |
 | `numbers`                    | <ul><li>know of the existence of the two most commonly used number types, `int` and `double`<li>understand that the former represents whole numbers, and the latter floating-point numbers<li>know of basic operators such as multiplication, comparison and equality<li>know how to convert from one numeric type to another<li>know what implicit and explicit conversions are.                                                                                                                                                     |
 | `object-initializers`        | <ul><li>Know how to initialize objects using object initialization syntax. Know how to initialize lists and dictionaries. Understand the relative advantages of constructors and initializers.                                                                                                                                                                                                                                                                                                                                        |
@@ -242,7 +242,7 @@ This report is updated automatically when any _design.md_ document is modified o
 | `operator-overloading`       | <ul><li>know when to how and why to overload operators for your own classes<li>understand the syntax of equality, comparison and arithmetic operators<li>know the syntax of user defined type conversion<li>know which operators cannot be overloaded                                                                                                                                                                                                                                                                                 |
 | `optional-arguments`         | <ul><li>know the syntax and behavior or optional arguments                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | `optional-parameters`        | <ul><li>know how to define optional parameters                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `ordering`                   | <ul><li>know how to implement the `IComparable<T>` interface and what its effect is on the behaviour of collections.                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `ordering`                   | <ul><li>know how to implement the `IComparable<T>` interface and what its effect is on the behavior of collections.                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | `out-parameters`             | <ul><li>know the syntax of `out` parameters<li>know the role of `out` parameters                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | `overflow`                   | <ul><li>explain integral number overflows<li>explain floating-point number overflows<li>know how to use `checked` and `unchecked` to deal with overflows.                                                                                                                                                                                                                                                                                                                                                                             |
 | `parameters`                 | <ul><li>know the difference between value and reference type parameters<li>know how to pass value types by reference using the `ref` and `out` modifiers.                                                                                                                                                                                                                                                                                                                                                                             |
@@ -252,11 +252,11 @@ This report is updated automatically when any _design.md_ document is modified o
 | `randomness`                 | <ul><li>know how to implement randomness with `System.Random` in C#<li>know that no seed is required<li>know that both integers and real numbers can be generated<li>know that once generated random numbers can be easily used for many purposes (including non-numeric ones)                                                                                                                                                                                                                                                        |
 | `readonly-collections`       | <ul><li>know how to make a collection read-only<li>understand the difference between the role of the `readonly` modifier and the use of readonly collections                                                                                                                                                                                                                                                                                                                                                                          |
 | `regular-expressions`        | <ul><li>Know how to use regular expressions with `Regex` in C#<li>Know how to identify the presence of a pattern in a string<li>Know how to "capture" and replace text identified by patterns<li>Know how to use the `Options` property of `Regex`<li>Know that search performance can be enhanced by compiling `Regex` (discussion only)                                                                                                                                                                                             |
-| `resource-cleanup`           | <ul><li>Know how to clean up resources with `IDisposable` in C# and .NET. Understand the difference between managedd and unmanaged resources and the role of `IDisposable`.                                                                                                                                                                                                                                                                                                                                                           |
+| `resource-cleanup`           | <ul><li>Know how to clean up resources with `IDisposable` in C# and .NET. Understand the difference between managed and unmanaged resources and the role of `IDisposable`.                                                                                                                                                                                                                                                                                                                                                            |
 | `resource-lifetime`          | <ul><li>Know how to control a resource's lifetime with the `using` statement in C#                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | `return-values`              | <ul><li>know the syntax of the return statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | `scoping`                    | <ul><li>know how scope works, what is in scope and out of scope at any point in the code                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| `sets`                       | <ul><li>Know how to use hash sets `HashSet<T>` as provided by the .NET BCL. Understand the relationship with `Object.GetHashCode()` and the performance charateristics of hash sets.                                                                                                                                                                                                                                                                                                                                                  |
+| `sets`                       | <ul><li>Know how to use hash sets `HashSet<T>` as provided by the .NET BCL. Understand the relationship with `Object.GetHashCode()` and the performance characteristics of hash sets.                                                                                                                                                                                                                                                                                                                                                 |
 | `state`                      | <ul><li>know how state is maintained within a class                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | `string-builder`             | <ul><li>know how to use a StringBuilder<li>know that it is more performant than simple concatenation                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | `string-formatting`          | <ul><li>know how to use the `ToString()` method to convert any object to a `string`<li>know how to use string interpolation on values of any type<li>know how to use default format strings to convert to standard output formats<li>know how to use custom format strings to convert to custom output formats<li>know that `string.Format` underlies string interpolation<li>know that string interpolation can interpolate any expression.                                                                                          |
@@ -283,88 +283,88 @@ This report is updated automatically when any _design.md_ document is modified o
 [issue-pattern-matching-types]: https://github.com/exercism/v3/issues/546
 [issue-pointers]: https://github.com/exercism/v3/issues/1147
 [issue-resource-pooling]: https://github.com/exercism/v3/issues/1146
-[design-arrays]: ../exercises/concept/arrays/.meta/design.md
-[design-basics]: ../exercises/concept/basics/.meta/design.md
-[design-booleans]: ../exercises/concept/booleans/.meta/design.md
-[design-casting]: ../exercises/concept/casting/.meta/design.md
-[design-chars]: ../exercises/concept/chars/.meta/design.md
-[design-classes]: ../exercises/concept/classes/.meta/design.md
-[design-constants]: ../exercises/concept/constants/.meta/design.md
-[design-constructors]: ../exercises/concept/constructors/.meta/design.md
-[design-datetimes]: ../exercises/concept/datetimes/.meta/design.md
-[design-dictionaries]: ../exercises/concept/dictionaries/.meta/design.md
-[design-enums]: ../exercises/concept/enums/.meta/design.md
-[design-equality]: ../exercises/concept/equality/.meta/design.md
-[design-exceptions]: ../exercises/concept/exceptions/.meta/design.md
-[design-expression-bodied-members]: ../exercises/concept/expression-bodied-members/.meta/design.md
-[design-flag-enums]: ../exercises/concept/flag-enums/.meta/design.md
-[design-floating-point-numbers]: ../exercises/concept/floating-point-numbers/.meta/design.md
-[design-inheritance]: ../exercises/concept/inheritance/.meta/design.md
-[design-integral-numbers]: ../exercises/concept/integral-numbers/.meta/design.md
-[design-interfaces]: ../exercises/concept/interfaces/.meta/design.md
-[design-lists]: ../exercises/concept/lists/.meta/design.md
-[design-method-overloading]: ../exercises/concept/method-overloading/.meta/design.md
-[design-namespaces]: ../exercises/concept/namespaces/.meta/design.md
-[design-nested-types]: ../exercises/concept/nested-types/.meta/design.md
-[design-nullability]: ../exercises/concept/nullability/.meta/design.md
-[design-numbers]: ../exercises/concept/numbers/.meta/design.md
-[design-object-initializers]: ../exercises/concept/object-initializers/.meta/design.md
-[design-operator-overloading]: ../exercises/concept/operator-overloading/.meta/design.md
-[design-overflow]: ../exercises/concept/overflow/.meta/design.md
-[design-parameters]: ../exercises/concept/parameters/.meta/design.md
-[design-properties]: ../exercises/concept/properties/.meta/design.md
-[design-randomness]: ../exercises/concept/randomness/.meta/design.md
-[design-regular-expressions]: ../exercises/concept/regular-expressions/.meta/design.md
-[design-resource-cleanup]: ../exercises/concept/resource-cleanup/.meta/design.md
-[design-resource-lifetime]: ../exercises/concept/resource-lifetime/.meta/design.md
-[design-string-formatting]: ../exercises/concept/string-formatting/.meta/design.md
-[design-strings]: ../exercises/concept/strings/.meta/design.md
-[design-structs]: ../exercises/concept/structs/.meta/design.md
-[design-switch-statements]: ../exercises/concept/switch-statements/.meta/design.md
-[design-time]: ../exercises/concept/time/.meta/design.md
-[design-tuples]: ../exercises/concept/tuples/.meta/design.md
-[design-user-defined-exceptions]: ../exercises/concept/user-defined-exceptions/.meta/design.md
-[exercise-arrays]: ../exercises/concept/arrays
-[exercise-basics]: ../exercises/concept/basics
-[exercise-booleans]: ../exercises/concept/booleans
-[exercise-casting]: ../exercises/concept/casting
-[exercise-chars]: ../exercises/concept/chars
-[exercise-classes]: ../exercises/concept/classes
-[exercise-constants]: ../exercises/concept/constants
-[exercise-constructors]: ../exercises/concept/constructors
-[exercise-datetimes]: ../exercises/concept/datetimes
-[exercise-dictionaries]: ../exercises/concept/dictionaries
-[exercise-enums]: ../exercises/concept/enums
-[exercise-equality]: ../exercises/concept/equality
-[exercise-exceptions]: ../exercises/concept/exceptions
-[exercise-expression-bodied-members]: ../exercises/concept/expression-bodied-members
-[exercise-flag-enums]: ../exercises/concept/flag-enums
-[exercise-floating-point-numbers]: ../exercises/concept/floating-point-numbers
-[exercise-inheritance]: ../exercises/concept/inheritance
-[exercise-integral-numbers]: ../exercises/concept/integral-numbers
-[exercise-interfaces]: ../exercises/concept/interfaces
-[exercise-lists]: ../exercises/concept/lists
-[exercise-method-overloading]: ../exercises/concept/method-overloading
-[exercise-namespaces]: ../exercises/concept/namespaces
-[exercise-nested-types]: ../exercises/concept/nested-types
-[exercise-nullability]: ../exercises/concept/nullability
-[exercise-numbers]: ../exercises/concept/numbers
-[exercise-object-initializers]: ../exercises/concept/object-initializers
-[exercise-operator-overloading]: ../exercises/concept/operator-overloading
-[exercise-overflow]: ../exercises/concept/overflow
-[exercise-parameters]: ../exercises/concept/parameters
-[exercise-properties]: ../exercises/concept/properties
-[exercise-randomness]: ../exercises/concept/randomness
-[exercise-regular-expressions]: ../exercises/concept/regular-expressions
-[exercise-resource-cleanup]: ../exercises/concept/resource-cleanup
-[exercise-resource-lifetime]: ../exercises/concept/resource-lifetime
-[exercise-string-formatting]: ../exercises/concept/string-formatting
-[exercise-strings]: ../exercises/concept/strings
-[exercise-structs]: ../exercises/concept/structs
-[exercise-switch-statements]: ../exercises/concept/switch-statements
-[exercise-time]: ../exercises/concept/time
-[exercise-tuples]: ../exercises/concept/tuples
-[exercise-user-defined-exceptions]: ../exercises/concept/user-defined-exceptions
+[design-annalyns-infiltration]: ../exercises/concept/annalyns-infiltration/.meta/design.md
+[design-attack-of-the-trolls]: ../exercises/concept/attack-of-the-trolls/.meta/design.md
+[design-authentication-system]: ../exercises/concept/authentication-system/.meta/design.md
+[design-beauty-salon-goes-global]: ../exercises/concept/beauty-salon-goes-global/.meta/design.md
+[design-bird-watcher]: ../exercises/concept/bird-watcher/.meta/design.md
+[design-booking-up-for-beauty]: ../exercises/concept/booking-up-for-beauty/.meta/design.md
+[design-building-telemetry]: ../exercises/concept/building-telemetry/.meta/design.md
+[design-calculator-conundrum]: ../exercises/concept/calculator-conundrum/.meta/design.md
+[design-cars-assemble]: ../exercises/concept/cars-assemble/.meta/design.md
+[design-elons-toys]: ../exercises/concept/elons-toys/.meta/design.md
+[design-faceid-2]: ../exercises/concept/faceid-2/.meta/design.md
+[design-football-match-reports]: ../exercises/concept/football-match-reports/.meta/design.md
+[design-high-school-sweethearts]: ../exercises/concept/high-school-sweethearts/.meta/design.md
+[design-hyper-optimized-telemetry]: ../exercises/concept/hyper-optimized-telemetry/.meta/design.md
+[design-hyperia-forex]: ../exercises/concept/hyperia-forex/.meta/design.md
+[design-hyperinflation-hits-hyperia]: ../exercises/concept/hyperinflation-hits-hyperia/.meta/design.md
+[design-instruments-of-texas]: ../exercises/concept/instruments-of-texas/.meta/design.md
+[design-interest-is-interesting]: ../exercises/concept/interest-is-interesting/.meta/design.md
+[design-international-calling-connoisseur]: ../exercises/concept/international-calling-connoisseur/.meta/design.md
+[design-land-grab-in-space]: ../exercises/concept/land-grab-in-space/.meta/design.md
+[design-log-levels]: ../exercises/concept/log-levels/.meta/design.md
+[design-logs-logs-logs]: ../exercises/concept/logs-logs-logs/.meta/design.md
+[design-lucians-luscious-lasagna]: ../exercises/concept/lucians-luscious-lasagna/.meta/design.md
+[design-need-for-speed]: ../exercises/concept/need-for-speed/.meta/design.md
+[design-object-relational-mapping]: ../exercises/concept/object-relational-mapping/.meta/design.md
+[design-orm-in-one-go]: ../exercises/concept/orm-in-one-go/.meta/design.md
+[design-parsing-log-files]: ../exercises/concept/parsing-log-files/.meta/design.md
+[design-phone-number-analysis]: ../exercises/concept/phone-number-analysis/.meta/design.md
+[design-red-vs-blue-darwin-style]: ../exercises/concept/red-vs-blue-darwin-style/.meta/design.md
+[design-remote-control-cleanup]: ../exercises/concept/remote-control-cleanup/.meta/design.md
+[design-remote-control-competition]: ../exercises/concept/remote-control-competition/.meta/design.md
+[design-roll-the-die]: ../exercises/concept/roll-the-die/.meta/design.md
+[design-secure-munchester-united]: ../exercises/concept/secure-munchester-united/.meta/design.md
+[design-squeaky-clean]: ../exercises/concept/squeaky-clean/.meta/design.md
+[design-the-weather-in-deather]: ../exercises/concept/the-weather-in-deather/.meta/design.md
+[design-tim-from-marketing]: ../exercises/concept/tim-from-marketing/.meta/design.md
+[design-tracks-on-tracks-on-tracks]: ../exercises/concept/tracks-on-tracks-on-tracks/.meta/design.md
+[design-weighing-machine]: ../exercises/concept/weighing-machine/.meta/design.md
+[design-why-cant-i-push-to-main]: ../exercises/concept/why-cant-i-push-to-main/.meta/design.md
+[design-wizards-and-warriors]: ../exercises/concept/wizards-and-warriors/.meta/design.md
+[design-wizards-and-warriors-2]: ../exercises/concept/wizards-and-warriors-2/.meta/design.md
+[exercise-annalyns-infiltration]: ../exercises/concept/annalyns-infiltration
+[exercise-attack-of-the-trolls]: ../exercises/concept/attack-of-the-trolls
+[exercise-authentication-system]: ../exercises/concept/authentication-system
+[exercise-beauty-salon-goes-global]: ../exercises/concept/beauty-salon-goes-global
+[exercise-bird-watcher]: ../exercises/concept/bird-watcher
+[exercise-booking-up-for-beauty]: ../exercises/concept/booking-up-for-beauty
+[exercise-building-telemetry]: ../exercises/concept/building-telemetry
+[exercise-calculator-conundrum]: ../exercises/concept/calculator-conundrum
+[exercise-cars-assemble]: ../exercises/concept/cars-assemble
+[exercise-elons-toys]: ../exercises/concept/elons-toys
+[exercise-faceid-2]: ../exercises/concept/faceid-2
+[exercise-football-match-reports]: ../exercises/concept/football-match-reports
+[exercise-high-school-sweethearts]: ../exercises/concept/high-school-sweethearts
+[exercise-hyper-optimized-telemetry]: ../exercises/concept/hyper-optimized-telemetry
+[exercise-hyperia-forex]: ../exercises/concept/hyperia-forex
+[exercise-hyperinflation-hits-hyperia]: ../exercises/concept/hyperinflation-hits-hyperia
+[exercise-instruments-of-texas]: ../exercises/concept/instruments-of-texas
+[exercise-interest-is-interesting]: ../exercises/concept/interest-is-interesting
+[exercise-international-calling-connoisseur]: ../exercises/concept/international-calling-connoisseur
+[exercise-land-grab-in-space]: ../exercises/concept/land-grab-in-space
+[exercise-log-levels]: ../exercises/concept/log-levels
+[exercise-logs-logs-logs]: ../exercises/concept/logs-logs-logs
+[exercise-lucians-luscious-lasagna]: ../exercises/concept/lucians-luscious-lasagna
+[exercise-need-for-speed]: ../exercises/concept/need-for-speed
+[exercise-object-relational-mapping]: ../exercises/concept/object-relational-mapping
+[exercise-orm-in-one-go]: ../exercises/concept/orm-in-one-go
+[exercise-parsing-log-files]: ../exercises/concept/parsing-log-files
+[exercise-phone-number-analysis]: ../exercises/concept/phone-number-analysis
+[exercise-red-vs-blue-darwin-style]: ../exercises/concept/red-vs-blue-darwin-style
+[exercise-remote-control-cleanup]: ../exercises/concept/remote-control-cleanup
+[exercise-remote-control-competition]: ../exercises/concept/remote-control-competition
+[exercise-roll-the-die]: ../exercises/concept/roll-the-die
+[exercise-secure-munchester-united]: ../exercises/concept/secure-munchester-united
+[exercise-squeaky-clean]: ../exercises/concept/squeaky-clean
+[exercise-the-weather-in-deather]: ../exercises/concept/the-weather-in-deather
+[exercise-tim-from-marketing]: ../exercises/concept/tim-from-marketing
+[exercise-tracks-on-tracks-on-tracks]: ../exercises/concept/tracks-on-tracks-on-tracks
+[exercise-weighing-machine]: ../exercises/concept/weighing-machine
+[exercise-why-cant-i-push-to-main]: ../exercises/concept/why-cant-i-push-to-main
+[exercise-wizards-and-warriors]: ../exercises/concept/wizards-and-warriors
+[exercise-wizards-and-warriors-2]: ../exercises/concept/wizards-and-warriors-2
 [tnc-arrays]: ../../../reference/types/array.md
 [tnc-booleans]: ../../../reference/types/boolean.md
 [tnc-chars]: ../../../reference/types/char.md

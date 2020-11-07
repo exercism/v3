@@ -1,13 +1,14 @@
-name: Check for dead links
+name: CI
 
 on:
   push:
   pull_request:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: '0 3 * * *'
 
 jobs:
   verify-links:
+    name: Check for dead links
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -21,23 +22,36 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: "10"
+          node-version: '10'
       - name: Install markdown-link-check
         run: npm install -g markdown-link-check
       - name: Verify links
         run: |
           deleted_or_renamed=$(git diff --no-commit-id --name-only --diff-filter DR origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | wc -l)
 
-          if [ "$GITHUB_REF" = "master" ] || [ $deleted_or_renamed -ne 0 ]
+          if [ "$GITHUB_REF" = "refs/heads/master" ] || [ $deleted_or_renamed -ne 0 ]
           then
               files=$(find . -name \*.md ! -iname _sidebar.md ! -ipath \*/ISSUE_TEMPLATE/\*.md -not -path "./.git/*")
           else
               files=$(git diff --no-commit-id --name-only --diff-filter AM origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | cat)
           fi
 
+          set +e
+          exitCode=0
+
           for file in $files; do
             if [ -f "$file" ]
             then
+                # Skip auto-generated files
+                if [[ "$file" =~ "languages/README.md" ||
+                      "$file" =~ "reference/README.md" ||
+                      "$file" =~ "reference/stories/README.md" ]]
+                then
+                  continue
+                fi
+
                 markdown-link-check -q -c .github/markdown-link-check-config.json "$file"
+                exitCode=$((exitCode + $?))
             fi
           done
+          exit "$exitCode"

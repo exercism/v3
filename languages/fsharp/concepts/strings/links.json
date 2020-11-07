@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/strings",
+    "description": "string type"
+  },
+  {
+    "url": "https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.string-module-%5bfsharp%5d",
+    "description": "String module"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netcore-3.1",
+    "description": "String class"
+  },
+  {
+    "url": "https://exercism.github.io/v3/#/languages/fsharp/docs/string_concatenation",
+    "description": "String concatenation"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/arrays",
+    "description": "Arrays"
+  },
+  {
+    "url": "https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array-module-%5bfsharp%5d",
+    "description": "Array module"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching#array-pattern",
+    "description": "Pattern matching arrays"
+  }
+]
