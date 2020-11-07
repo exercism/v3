@@ -1,7 +1,7 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 
 plugins {
-    kotlin("jvm") version "1.3.60"
+    kotlin("jvm") version "1.4.10"
 }
 
 repositories {
@@ -9,8 +9,6 @@ repositories {
 }
 
 dependencies {
-    compile(kotlin("stdlib"))
-
     testImplementation("org.junit.jupiter:junit-jupiter:5.5.2")
 }
 
