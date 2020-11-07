@@ -1,14 +1,16 @@
-In this exercise, you'll be determining the text that needs to be printed on a badge.
+While working for a factory, a need arises to create the printed message on employee badges. You decide to implement
+this function in JavaScript.
 
-A badge requires the `id` of the employee, the `name` of the employee, as well as the department in which he is working.
+A badge requires the `id` of the employee, the `name` of the employee, as well as the department in which they are working.
 
-## 1. Text to print on the badge
+## 1. Create the badge text.
 
 Implement a function that returns the text to print on the badge.
 
-Beware that the `id` should be between square brackets (i.e. `[20]`), and that only the id and department can be null.
+The employee's name is always provided, but the employee `id` number and department name may be `null`. The employee
+`id` number, if provided, should be between square brackets (e.g. `[20]`).
 
-A new owner should have no `id`, and no `department`
+An owner's badge should not have an `id` or `department`.
 
 ```javascript
 printBadge(20, 'Bob', 'Marketing')

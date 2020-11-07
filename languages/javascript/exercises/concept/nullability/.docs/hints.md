@@ -1,4 +1,4 @@
-## 1. Text to print on the badge
+## 1. Create the badge text.
 
 - Be careful about the differences between equality (`==`) and identity (`===`) operators.
-- `.toUpperCase()` converts the string to uppercase letters.
+- Strings in JavaScript have several methods to change between upper and lower cases.
