@@ -84,6 +84,7 @@
         "uuid": null,
         "concepts": ["none"],
         "prerequisites": [
+          "basics",
           "bools",
           "conditionals",
           "default-arguments",
@@ -97,7 +98,7 @@
         "name": "Making the Grade",
         "uuid": null,
         "concepts": ["loops"],
-        "prerequisites": ["basics","comparisons", "conditionals", "lists", "strings"]
+        "prerequisites": ["basics", "comparisons", "conditionals", "lists", "strings"]
       }
     ],
     "practice": []
