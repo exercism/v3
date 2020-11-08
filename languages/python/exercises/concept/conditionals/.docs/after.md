@@ -1,12 +1,14 @@
 ## General
 
-Uptil now most program examples seen in the concept exercises ran in a sequential manner. Where code executed on after the other. However, this doesn't allow for implementation of more complex logic. Conditional statements allows program to execute different lines of code based on some factors. Python uses `if/else` statements to achieve this.
+Programs without conditional statements run sequentially ie the code is executed line by line, However, this doesn't allow for the implementation of more complex logic. Conditional statements allow the program to execute different lines of code based on some factors. Python uses `if/else` statements to achieve this.
 
-Let's look at basic structure of python's `if/else` and lets make a real world analogy.
+Let's look at the basic structure of python's `if/else` .
 
 ```python
 if <expression>:
-    <statement >
+    <code block 1 >
+else:
+    <code block 2>
 ```
 
 Now look at the following examples
@@ -25,11 +27,11 @@ if x < y:                           # expression is False
 
 ```
 
-Here in first `if` statement the expression evaluates to `True`. Therefore, the statement associated with the `if` statement gets executed. In the next example, the expression evaluates to `False`, and therefore the statement associated with it is not executed.
+Here in the first `if` statement the expression evaluates to `True`. Therefore, the statement associated with the `if` statement gets executed. In the next example, the expression evaluates to `False`, and therefore the statement associated with it is not executed.
 
 ## The indentation and blocks
 
-The python examples follow shown above the statements to be executed are arranged into blocks using indentation. So if there are multiple expressions that needs to be executed from one `if` statement we can put it in a block by having a uniform indentation throughout.
+The python examples  shown below are arranged into blocks using indentation. So if there are multiple expressions that needs to be executed from one `if` statement we can put it in a block by having a uniform indentation throughout.
 
 ```python
 if x > y:                           # expression is True
@@ -83,8 +85,7 @@ Here first the code checks the first `if` condition. It finds that the expressio
 
 ## One line If statments
 
-It is possible to write `if` conditionals in a single line ,However, its highly discourage as it makes the code more difficult to read and is not the recomended as per [PEP8][pep8-link] standards.
-
+It is possible to write `if` conditionals in a single line ,However, as per the [PEP8][pep8-link] standards, the use of multiple statments on same lines are discouraged
 [pep8-link]: https://www.python.org/dev/peps/pep-0008/#other-recommendations
 
 Example
@@ -95,7 +96,7 @@ if x == 5: print("Came inside the if statement "); print("x equals 5 "); print("
 >>> Came inside the if statement x equals 5 came to this part
 ```
 
-Here all the statements seperated by semicolon is considered as part of single block. We can have more complicated ones like the example shown below.
+Here all the statements separated by a semicolon are considered as part of a single block. We can have more complicated ones like the example shown below. This is highly discouraging as this goes against python's strength which is readability.
 
 ```python
 x = 10
@@ -124,7 +125,7 @@ else:
 >>> Hello,World
 ```
 
-In this example we did not evaluvate if condition like this `if str == "":`. Even then its understood by python that if a string is empty evaluvate it to `False` and evaluvate to `True` otherwise.
+In this example we did not evaluate if condition like this `if str == "":`. Even then it's understood by python that if a string is empty evaluate it to `False` and evaluate to `True` otherwise.
 
 Here is another on some pythonic expressions inside `if`
 
