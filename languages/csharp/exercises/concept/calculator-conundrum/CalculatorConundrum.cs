@@ -1,30 +1,33 @@
 using System;
-static class SimpleCalculator
-{
-    public static string Calculate(int operand1, int operand2, string operation)
-    {
-        throw new NotImplementedException();
-    }
 
-public static class Calculator
+public static class CalculatorConundrum
 {
-    public static int Division(int operand1, int operand2)
+    public static EuclideanDivisionResult DivideRemainder(EuclideanDivision euclideanDivision)
     {
-        return operand1 / operand2;
+        throw new NotImplementedException("Please implement the CalculatorConundrum.DivideRemainder() method");
     }
+}
 
-    public static int Multiplication(int operand1, int operand2)
+/**** Please do not modify the code below ****/
+public class EuclideanDivision
+{
+    public int Dividend { get; set; }
+    public int Divisor { get; set; }
+    public EuclideanDivision(int dividend, int divisor)
     {
-        checked
-        {
-            return operand1 * operand2;
-        }
+        Dividend = dividend;
+        Divisor = divisor;
     }
-    public static int Addition(int operand1, int operand2)
+}
+
+/**** Please do not modify the code below ****/
+public class EuclideanDivisionResult
+{
+    public int Quotient { get; set; }
+    public int Remainder { get; set; }
+    public EuclideanDivisionResult(int quotient, int remainder)
     {
-        checked
-        {
-            return operand1 + operand2;
-        }
+        Quotient = quotient;
+        Remainder = remainder;
     }
 }

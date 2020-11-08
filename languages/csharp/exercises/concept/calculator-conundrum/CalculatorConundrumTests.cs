@@ -56,7 +56,7 @@ public class SimpleCalculatorTests
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Calculate_throws_exception_for_division_with_0()
     {
-        Assert.Equal("Division by zero is not allowed.", SimpleCalculator.Calculate(33, 0, "/"));      
+        Assert.Equal("Division by zero is not allowed.", SimpleCalculator.Calculate(33, 0, "/"));
     }
 
     // Invalid operator
@@ -65,7 +65,7 @@ public class SimpleCalculatorTests
     {
         Assert.Throws<ArgumentOutOfRangeException>(() => SimpleCalculator.Calculate(1, 2, "**"));
     }
-    
+
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Calculate_throws_exception_for_null_as_operation()
     {
