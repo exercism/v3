@@ -22,7 +22,7 @@
         "name": "Tisbury Treasure Hunt",
         "uuid": "7ecd42c1-2ed5-487a-bc89-71c9cbad9b05",
         "concepts": ["tuples"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["bools", "loops", "conditionals", "numbers"]
       },
       {
         "slug": "guidos-gorgeous-lasagna",
@@ -43,42 +43,61 @@
         "name": "Inventory Management",
         "uuid": null,
         "concepts": ["dicts"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["bools", "loops", "numbers", "lists"]
       },
       {
         "slug": "log-levels",
         "name": "Log Levels",
         "uuid": null,
         "concepts": ["enums"],
-        "prerequisites": ["basics"]
+        "prerequisites": [
+          "classes",
+          "conditionals",
+          "enumeration",
+          "iteration",
+          "list-comprehensions",
+          "methods",
+          "sequences",
+          "strings",
+          "string-formatting",
+          "string-methods",
+          "tuples"
+        ]
       },
       {
         "slug": "elyses-enchantments",
         "name": "Elyse's Enchantments",
         "uuid": null,
         "concepts": ["lists"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["comparisons", "conditionals", "strings"]
       },
       {
         "slug": "chaitanas-colossal-coaster",
         "name": "Chaitana's Colossal Coaster",
         "uuid": null,
         "concepts": ["list-methods"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["comparisons", "conditionals", "lists"]
       },
       {
         "slug": "restaurant-rozalynn",
         "name": "Restaurant Rozalynn",
         "uuid": null,
         "concepts": ["none"],
-        "prerequisites": ["basics"]
+        "prerequisites": [
+          "bools",
+          "conditionals",
+          "default-arguments",
+          "dict-methods",
+          "list-methods",
+          "loops"
+        ]
       },
       {
         "slug": "making-the-grade",
         "name": "Making the Grade",
         "uuid": null,
         "concepts": ["loops"],
-        "prerequisites": ["basics"]
+        "prerequisites": ["comparisons", "conditionals", "lists", "strings"]
       }
     ],
     "practice": []
