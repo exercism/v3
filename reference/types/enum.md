@@ -27,9 +27,9 @@ This exercise extracts log level information from log lines. The reference imple
 
 #### Implementations
 
-| Track | Exercise                       | Changes |
-| ----- | ------------------------------ | ------- |
-| C#    | [enums][implementation-csharp] | None    |
+| Track | Exercise                                | Changes |
+| ----- | --------------------------------------- | ------- |
+| C#    | [logs-logs-logs][implementation-csharp] | None    |
 
 ### Permissions
 
@@ -41,11 +41,11 @@ This exercise works with user account permissions. The reference implementation 
 
 #### Implementations
 
-| Track | Exercise                                | Changes |
-| ----- | --------------------------------------- | ------- |
-| C#    | [enums][implementation-csharp-advanced] | None    |
+| Track | Exercise                                               | Changes |
+| ----- | ------------------------------------------------------ | ------- |
+| C#    | [attack-of-the-trolls][implementation-csharp-advanced] | None    |
 
 [type-integer]: ./integer.md
 [type-string]: ./string.md
-[implementation-csharp]: ../../languages/csharp/exercises/concept/enums/.docs/introduction.md
-[implementation-csharp-advanced]: ../../languages/csharp/exercises/concept/flag-enums/.docs/introduction.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/logs-logs-logs/.docs/introduction.md
+[implementation-csharp-advanced]: ../../languages/csharp/exercises/concept/attack-of-the-trolls/.docs/introduction.md

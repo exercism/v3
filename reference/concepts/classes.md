@@ -27,10 +27,10 @@ This exercise models a remote control car. Each remote control car has a speed a
 
 #### Implementations
 
-| Track | Exercise                         | Changes |
-| ----- | -------------------------------- | ------- |
-| F#    | [classes][implementation-csharp] | None    |
+| Track | Exercise                            | Changes |
+| ----- | ----------------------------------- | ------- |
+| C#    | [elons-toys][implementation-csharp] | None    |
 
 [concept-objects]: ./objects.md
 [concept-state]: ./state.md
-[implementation-csharp]: ../../languages/csharp/exercises/concept/classes/.docs/introduction.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/elons-toys/.docs/introduction.md

@@ -11,7 +11,15 @@ This is a working document to keep track of ideas and thoughts on how the progre
 ```mermaid
 graph TD
 
-Start((Start)) --> numbers
+Start((Start)) --> functions-introduction
+
+functions-introduction --> boolean-logic
+
+boolean-logic --> leap["operators-and-equality (v2 leap)"]
+
+leap --> testing
+
+testing -- "From here on out, assume the student knows how tests work.<br/>Therefore results.json should only have expected=true and the full expression as cmd,<br/>regardless of what the final result.json looks like in detail (unless it's removed entirely)." --> numbers
 
 numbers --> modules
 
@@ -32,6 +40,7 @@ performance --> Finish((Finish))
 subgraph Numbers
 	numbers --> complex-numbers
 	numbers --> rational-numbers
+	numbers --> matrices-introduction
 end
 
 complex-numbers -.-> v2-complex-numbers(v2-complex-numbers)
