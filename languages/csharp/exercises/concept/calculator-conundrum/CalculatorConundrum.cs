@@ -2,32 +2,52 @@ using System;
 
 public static class CalculatorConundrum
 {
-    public static EuclideanDivisionResult DivideRemainder(EuclideanDivision euclideanDivision)
+    public static string Calculate(int operand1, int operand2, string operation)
     {
-        throw new NotImplementedException("Please implement the CalculatorConundrum.DivideRemainder() method");
+        int result;
+        try
+        {
+            switch (operation)
+            {
+                case "+":
+                    result = SimpleOperation.Addition(operand1, operand2);
+                    break;
+                case "*":
+                    result = SimpleOperation.Multiplication(operand1, operand2);
+                    break;
+                case "/":
+                    result = SimpleOperation.Division(operand1, operand2);
+                    break;
+                case "":
+                case null:
+                    throw new ArgumentNullException(operation, "Operation cannot be null or empty.");
+                default:
+                    throw new ArgumentOutOfRangeException(operation, $"Operation {operation} does not exist");
+            }
+        }
+        catch (DivideByZeroException)
+        {
+            return "Division by zero is not allowed.";
+        }
+
+        return $"{operand1} {operation} {operand2} = {result}";
     }
 }
 
 /**** Please do not modify the code below ****/
-public class EuclideanDivision
+public static class SimpleOperation
 {
-    public int Dividend { get; set; }
-    public int Divisor { get; set; }
-    public EuclideanDivision(int dividend, int divisor)
+    public static int Division(int operand1, int operand2)
     {
-        Dividend = dividend;
-        Divisor = divisor;
+        return operand1 / operand2;
     }
-}
 
-/**** Please do not modify the code below ****/
-public class EuclideanDivisionResult
-{
-    public int Quotient { get; set; }
-    public int Remainder { get; set; }
-    public EuclideanDivisionResult(int quotient, int remainder)
+    public static int Multiplication(int operand1, int operand2)
     {
-        Quotient = quotient;
-        Remainder = remainder;
+        return operand1 * operand2;
+    }
+    public static int Addition(int operand1, int operand2)
+    {
+        return operand1 + operand2;
     }
 }
