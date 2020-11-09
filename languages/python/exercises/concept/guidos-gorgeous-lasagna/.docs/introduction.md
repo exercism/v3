@@ -29,6 +29,8 @@ MY_FIRST_CONSTANT = 16
 
 The keyword `def` begins a [function definition][function definition]. It must be followed by the function name and a parenthesized list of zero or more formal [parameters][parameters], which can be of several different varieties, and even [vary][more on functions] in length. The `def` line is terminated with a colon.
 
+Statements for the _body_ of the function begin on the next line down from `def`, and must be _indented in a block_. There is no strict indentation amount (_either space **OR** [tab] characters are acceptable_), but [indentation][indentation] must be _consistent for all indented statements_. Functions explicitly return a value or object via the [`return`][return] keyword. Functions that do not have an explicit `return` expression will return [`None`][none].
+
 ```python
 #function definition on first line.
 def add_two_numbers(number_one, number_two):
@@ -46,8 +48,6 @@ def add_two_numbers(number_one, number_two):
                 ^
 IndentationError: unindent does not match any outer indentation level
 ```
-
-Statements for the _body_ of the function begin on the next line down from `def`, and must be _indented in a block_. There is no strict indentation amount (_either space **OR** [tab] characters are acceptable_), but [indentation][indentation] must be _consistent for all indented statements_. Functions explicitly return a value or object via the [`return`][return] keyword. Functions that do not have an explicit `return` expression will return [`None`][none].
 
 Functions are [_called_][calls] using their name followed by `()`. The number of arguments passed in the parentheses must match the number of parameters in the original function definition unless [default arguments][default aruguments] have been used:
 
@@ -141,8 +141,6 @@ or repr(object).
 encoding defaults to sys.getdefaultencoding().
 errors defaults to 'strict'.
 ```
-
-Docstrings can also include [doctests][doctests], which are interactive examples of how a method or funtion should work. Doctests can be read and run by PyTest, or by importing the `doctest` module.
 
 [assignment statements]: https://docs.python.org/3/reference/simple_stmts.html#assignment-statements
 [calls]: https://docs.python.org/3/reference/expressions.html#calls
