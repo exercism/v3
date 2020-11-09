@@ -283,10 +283,6 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
               "name": "enums"
-            },
-            {
-              "url": null,
-              "name": "pattern-matching-constants"
             }
           ],
           "prerequisites": [
@@ -374,7 +370,7 @@
           "concepts": [
             {
               "url": null,
-              "name": "conditionals-ternary"
+              "name": "ternary-operators"
             },
             {
               "url": null,
@@ -632,10 +628,6 @@
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/red-vs-blue-darwin-style",
           "slug": "red-vs-blue-darwin-style",
           "concepts": [
-            {
-              "url": null,
-              "name": "accessibility"
-            },
             {
               "url": null,
               "name": "namespaces"
@@ -1948,7 +1940,7 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "io"
+              "name": "file"
             },
             {
               "url": null,
@@ -2109,6 +2101,30 @@
             {
               "url": null,
               "name": "nil"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpg-character-sheet",
+          "slug": "rpg-character-sheet",
+          "concepts": [
+            {
+              "url": null,
+              "name": "io"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/map.md",
+              "name": "maps"
+            },
+            {
+              "url": null,
+              "name": "atoms"
             }
           ]
         }
