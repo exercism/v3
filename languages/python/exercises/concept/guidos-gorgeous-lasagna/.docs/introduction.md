@@ -2,8 +2,6 @@
 
 [Python][python docs] is a [dynamic and strongly][dynamic typing in python] typed [object-oriented][object oriented programming] programming language. It employs both [duck typing][duck typing] and [gradual typing][gradual typing], via [type hints][type hints]. It supports multiple programming paradigms including both imperative (_object-oriented, procedural_) and declarative (_functional, concurrent_) flavors. But do not be fooled: while programming across paradigms is fully _supported_, [everything in Python is an object][everythings an object].
 
-Python was created by Guido van Rossum and first released in 1991. The [Python Software Foundation][psf] manages and directs resources for Python and CPython development and receives proposals for changes to the language from [members][psf membership] of the community via [Python Enhancement Proposals or PEPs][peps].
-
 Python puts a strong emphasis on code readability and (_similar to Haskell_) uses [significant indentation][significant indentation] to denote function, method, and class definitions. The [zen of Python (PEP 20)][the zen of python] lays out additional philosophy, as does the essay [What is Pythonic?][what is pythonic].
 
 ### Getting Started
@@ -28,8 +26,6 @@ MY_FIRST_CONSTANT = 16
 # but is VERY strongly discouraged.
 # Please don't do: MY_FIRST_CONSTANT = "Some other value"
 ```
-
-In Python, units of functionality are encapsulated in [_functions._][functions], which are themselves [objects][objects] (_Its [turtles all the way down][turtles all the way down]_). Functions can be executed by themselves, passed as arguments to other functions, nested, or bound to a class. When functions are bound to a [class][classes] name, they're referred to as [methods][method objects]. Related functions and classes (_with their methods_) can be grouped together in the same file or module, and imported in part or in whole for use in other programs.
 
 The keyword `def` begins a [function definition][function definition]. It must be followed by the function name and a parenthesized list of zero or more formal [parameters][parameters], which can be of several different varieties, and even [vary][more on functions] in length. The `def` line is terminated with a colon.
 
@@ -147,15 +143,6 @@ errors defaults to 'strict'.
 ```
 
 Docstrings can also include [doctests][doctests], which are interactive examples of how a method or funtion should work. Doctests can be read and run by PyTest, or by importing the `doctest` module.
-
-Complete documentation for the Python programming language can be found at [docs.python.org/3/][python docs]:
-
-- [Python Tutorial][python tutorial]
-- [Python Library Reference][python library reference]
-- [Python Language Reference][python language reference]
-- [Python HOW TOs][python how tos]
-- [Python FAQs][python faqs]
-- [Python Glossary of Terms][python glossary of terms]
 
 [assignment statements]: https://docs.python.org/3/reference/simple_stmts.html#assignment-statements
 [calls]: https://docs.python.org/3/reference/expressions.html#calls
