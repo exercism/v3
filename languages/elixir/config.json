@@ -175,7 +175,7 @@
         "name": "RPN Calculator Output",
         "uuid": "68a8f721-5db4-4b31-95c8-fa6c38f64327",
         "concepts": ["try-rescue-else-after", "dynamic-dispatch"],
-        "prerequisites": ["io", "try-rescue"]
+        "prerequisites": ["file", "try-rescue"]
       },
       {
         "slug": "take-a-number",
@@ -214,6 +214,12 @@
         "uuid": "a9fb9efa-ff37-4642-9118-c1351fd343ad",
         "concepts": ["protocols"],
         "prerequisites": ["structs", "nil"]
+      },
+      {
+        "slug": "rpg-character-sheet",
+        "uuid": "83c31f5f-fc94-4315-9053-df5a5f5d5fb7",
+        "concepts": ["io"],
+        "prerequisites": ["strings", "maps", "atoms"]
       }
     ],
     "practice": [
