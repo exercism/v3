@@ -25,7 +25,7 @@
 - `constructors`: know how to define constructors.
 - `properties`: know how to define properties.
 - `booleans`
-- `if-statements`
+- `conditionals`
 - `exceptions`
 - `switch statements`: background for `switch expressions`.
 - `datetimes`: `DateTime.Now` is used in example code.

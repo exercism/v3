@@ -23,6 +23,6 @@ This exercise's prerequisites Concepts are:
 
 - `numbers`: define numbers and apply arithmetic and boolean logic to them.
 - `conditionals`: conditionally execute code based on value of floating-point numbers.
-- `if-statements`:
+- `conditionals`: know how to do conditional logic.
 
 [docs.microsoft.com-floating-point-numeric-types]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types

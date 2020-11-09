@@ -19,5 +19,5 @@
 
 - `classes`: know how to work with classes.
 - `numbers`: know how compare numbers.
-- `if-statements`: know how to do conditional logic.
+- `conditionals`: know how to do conditional logic.
 - `while-loops`: know how to use `while` loops.
