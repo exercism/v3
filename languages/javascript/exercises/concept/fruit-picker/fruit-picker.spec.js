@@ -57,7 +57,7 @@ describe('inventory service', () => {
 
   test('returns the inventory status', () => {
     setResponse(null, false);
-    expect(pickFruit('melon', 1, (err, isAvailable, _res) => isAvailable)).toBe(
+    expect(pickFruit('melon', 1, (err, isAvailable) => isAvailable)).toBe(
       false
     );
   });
