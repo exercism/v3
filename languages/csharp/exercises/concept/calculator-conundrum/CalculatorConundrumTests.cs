@@ -58,7 +58,7 @@ public class SimpleCalculatorTests
     [Fact(Skip = "Remove this Skip property to run this test")]
     public void Calculate_throws_exception_for_empty_as_operation()
     {
-        Assert.Throws<ArgumentNullException>(() => CalculatorConundrum.Calculate(1, 2, ""));
+        Assert.Throws<ArgumentException>(() => CalculatorConundrum.Calculate(1, 2, ""));
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]

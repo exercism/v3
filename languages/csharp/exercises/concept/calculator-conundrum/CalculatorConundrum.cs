@@ -4,33 +4,7 @@ public static class CalculatorConundrum
 {
     public static string Calculate(int operand1, int operand2, string operation)
     {
-        int result;
-        try
-        {
-            switch (operation)
-            {
-                case "+":
-                    result = SimpleOperation.Addition(operand1, operand2);
-                    break;
-                case "*":
-                    result = SimpleOperation.Multiplication(operand1, operand2);
-                    break;
-                case "/":
-                    result = SimpleOperation.Division(operand1, operand2);
-                    break;
-                case "":
-                case null:
-                    throw new ArgumentNullException(operation, "Operation cannot be null or empty.");
-                default:
-                    throw new ArgumentOutOfRangeException(operation, $"Operation {operation} does not exist");
-            }
-        }
-        catch (DivideByZeroException)
-        {
-            return "Division by zero is not allowed.";
-        }
-
-        return $"{operand1} {operation} {operand2} = {result}";
+        throw new NotImplementedException("Please implement the CalculatorConundrum.Calculate() method");
     }
 }
 

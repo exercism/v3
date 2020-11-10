@@ -19,8 +19,9 @@ public static class CalculatorConundrum
                     result = SimpleOperation.Division(operand1, operand2);
                     break;
                 case "":
+                    throw new ArgumentException(operation, "Operation cannot be empty.");
                 case null:
-                    throw new ArgumentNullException(operation, "Operation cannot be null or empty.");
+                    throw new ArgumentNullException(operation, "Operation cannot be null.");
                 default:
                     throw new ArgumentOutOfRangeException(operation, $"Operation {operation} does not exist");
             }
