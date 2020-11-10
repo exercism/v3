@@ -29,11 +29,7 @@
                 "name": "The Exercism Matrix",
                 "slug": "exercism-matrix",
                 "concepts": [
-                    "matrices-introduction",
-                    "matrices-concatenation",
-                    "matrices-indices",
-                    "matrices-iteration",
-                    "matrices-mutation"
+                    "matrices-introduction"
                 ],
                 "prerequisites": ["functions-introduction"]
             },
