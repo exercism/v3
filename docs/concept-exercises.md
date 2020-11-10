@@ -112,24 +112,6 @@ Viewing hints will not be a "recommended" path and we will (softly) discourage u
 
 For more information, watch [this video][video-docs-hints.md] and check [this example hints.md file][docs-hints.md]. Notice how the example file has general and task-specific hints and how the hints don't give away the answer but instead link to (external) resources.
 
-### `.docs/after.md`
-
-**Purpose:** Provide information about the concept(s) for a student to learn from.
-
-Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. At a minimum, this file should contain all information that is introduced in the [`.docs/introduction.md` document](#docsintroductionmd).
-
-This document can also link to any additional resources that might be interesting to the student in the context of the exercise, such as:
-
-- Popular usages for a feature
-- Common pitfalls in a feature's use (e.g. casual use of multiple **threads**)
-- Limitations on use that may catch out the unsuspecting developer
-- Alternative approaches addressed in other exercises
-- Compromises made for ease of learning or to accommodate the Exercism environment, e.g. multiple classes in single file
-- Similar features with which the concept may be confused
-- Performance characteristics and memory usage
-
-For more information, watch [this video][video-docs-after.md] and check (example document no longer available).
-
 ### `.docs/source.md` (required if there are third-party sources)
 
 **Purpose:** Describe the third-party source(s) of the exercise.
@@ -252,6 +234,43 @@ For more information, watch [this video][video-tests-file] and check [this examp
 
 For more information, watch [this video][video-example-file] and check [this example file][example-file].
 
+## Concept files
+
+For each concept that an exercise unlocks (which are the concepts listed in the exercise's `concepts` key in the track's `config.json` file), two concept documents must be added. The concept files for a concept are located in the track's `concepts/<concept>` directory.
+
+### `about.md`
+
+**Purpose:** Provide information about the concept(s) for a student to learn from.
+
+Once the student completes the exercise they will be shown this file, which should provide them with a summary of the concept. If the concept introduces new syntax, syntax samples should be included. At a minimum, this file should contain all information that is introduced in the exercise's [`.docs/introduction.md` document](#docsintroductionmd).
+
+This document can also link to any additional resources that might be interesting to the student in the context of the exercise, such as:
+
+- Popular usages for a feature
+- Common pitfalls in a feature's use (e.g. casual use of multiple **threads**)
+- Limitations on use that may catch out the unsuspecting developer
+- Alternative approaches addressed in other exercises
+- Compromises made for ease of learning or to accommodate the Exercism environment, e.g. multiple classes in single file
+- Similar features with which the concept may be confused
+- Performance characteristics and memory usage
+
+See [this example about.md file][concept-docs-about.md].
+
+### `links.json`
+
+**Purpose:** Provide helpful links that provide more reading or information about a concept.
+
+These might be official docs, a great tutorial, etc. These links do _not_ replace the more contextual links within a concept's `about.md` file, but provide a quick set of overarching reference points for a student.
+
+Each link must contain the following fields:
+
+- `url`: the URL it links to.
+- `description`: a description of the link, which is shown as the link text.
+
+Links can also optionally have an `icon_url` field, which can be used to customize the icon shown when the link is displayed. If not specified, the icon defaults to the favicon.
+
+See [this example links.json file][concept-docs-links.json].
+
 ## Shared files
 
 ### `exercises/shared/.docs/cli.md`
@@ -292,6 +311,8 @@ See [this example config.json file][config.json].
 [meta-design.md]: ../languages/fsharp/exercises/concept/annalyns-infiltration/.meta/design.md
 [shared-docs-cli.md]: ../languages/csharp/exercises/shared/.docs/cli.md
 [shared-docs-debug.md]: ../languages/csharp/exercises/shared/.docs/debug.md
+[concept-docs-about.md]: ../languages/fsharp/concepts/strings/about.md
+[concept-docs-links.json]: ../languages/fsharp/concepts/strings/links.json
 [config.json]: ../languages/csharp/config.json
 [style-guide]: ./maintainers/style-guide.md
 [style-guide-auto-formatting]: ./maintainers/style-guide.md#auto-formatting
