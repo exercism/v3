@@ -2,9 +2,12 @@ In this exercise you're going to write an iterator that iterates through the fir
 
 ## Fibonacci sequence
 
-The Fibonacci sequence is defined recursively.
-Each element of the sequence is the sum of the two previous elements.
-The first two elements of the sequence are set to 1.
+The Fibonacci sequence is a sequence of numbers, where every element of the sequence is calculated by adding the two numbers that come before it.
+You can think of a sequence as a list of numbers in a certain order.
+The first two numbers of the sequence are set to $1$.
+
+The start of the sequence is $1,~1,~2,~3,~5,~8,~13,~21,~34,~55,~89,~\dots$
+
 In maths notation:
 
 $$
@@ -16,11 +19,9 @@ $$
 
 For example, the third element would be $a_3 = a_1 + a_2 = 1 + 1 = 2$, the fourth would be $a_4 = a_2 + a_3 = 1 + 2 = 3$, and so on.
 
-The first elements of the sequence are $1,~1,~2,~3,~5,~8,~13,~21,~34,~55,~89,~\dots$
-
 !!! note
     Some sources define the first elements as $a_0 = 0$ and $a_1 = 1$.
-    However in the context of this exercise, we define the sequence without a 0-th element.
+    However in the context of this exercise, we define the sequence without a $0$-th element.
 
 ## 1. Define a `Fib` type with a constructor that takes `n` as argument
 
