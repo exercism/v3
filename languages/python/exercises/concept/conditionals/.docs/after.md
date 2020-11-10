@@ -112,13 +112,13 @@ In the `if` clause python strictly doesn't need a `True/False` value. This will 
 
 ```python
 
-str = ""
-str_1 = "Hello,World"
+string = ""
+string_1 = "Hello,World"
 
-if (str):
-    print(str)
-elif (str_1):
-    print(str_1)
+if string:
+    print(string)
+elif string_1:
+    print(string_1)
 else:
     print("All are empty")
 
