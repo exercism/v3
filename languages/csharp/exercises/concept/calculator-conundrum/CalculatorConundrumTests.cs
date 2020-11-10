@@ -56,14 +56,14 @@ public class SimpleCalculatorTests
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
-    public void Calculate_throws_exception_for_empty_as_operation()
-    {
-        Assert.Throws<ArgumentException>(() => CalculatorConundrum.Calculate(1, 2, ""));
-    }
-
-    [Fact(Skip = "Remove this Skip property to run this test")]
     public void Calculate_throws_exception_for_null_as_operation()
     {
         Assert.Throws<ArgumentNullException>(() => CalculatorConundrum.Calculate(1, 2, null));
+    }
+
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void Calculate_throws_exception_for_empty_string_as_operation()
+    {
+        Assert.Throws<ArgumentException>(() => CalculatorConundrum.Calculate(1, 2, ""));
     }
 }
