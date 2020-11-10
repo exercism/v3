@@ -1,6 +1,6 @@
 ## Nullability
 
-The key thing to remember about Null is that it is a primitive value, used to represent an intentional absence of an
+Null is a primitive value, used to represent an intentional absence of an
 object value.
 
 ```javascript
