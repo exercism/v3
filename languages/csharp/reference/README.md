@@ -48,7 +48,7 @@ This report is updated automatically when any _design.md_ document is modified o
 - foreach-loops [_(bird-watcher)_][exercise-bird-watcher] - [Design][design-bird-watcher], [Background][tnc-foreach-loops]
 - functions [_(lucians-luscious-lasagna)_][exercise-lucians-luscious-lasagna] - [Design][design-lucians-luscious-lasagna], [Background][tnc-functions]
 - generic-types [_(tracks-on-tracks-on-tracks)_][exercise-tracks-on-tracks-on-tracks] - [Design][design-tracks-on-tracks-on-tracks]
-- conditionals [_(cars-assemble)_][exercise-cars-assemble] - [Design][design-cars-assemble], [Background][tnc-conditionals]
+- if-statements [_(cars-assemble)_][exercise-cars-assemble] - [Design][design-cars-assemble], [Background][tnc-if-statements]
 - implicit-casting [_(secure-munchester-united)_][exercise-secure-munchester-united] - [Design][design-secure-munchester-united]
 - imports [_(red-vs-blue-darwin-style)_][exercise-red-vs-blue-darwin-style] - [Design][design-red-vs-blue-darwin-style]
 - inheritance [_(wizards-and-warriors)_][exercise-wizards-and-warriors] - [Design][design-wizards-and-warriors], [Background][tnc-inheritance]
@@ -372,7 +372,7 @@ This report is updated automatically when any _design.md_ document is modified o
 [tnc-foreach-loops]: ../../../reference/concepts/enumeration.md
 [tnc-functions]: ../../../reference/types/function.md
 [tnc-higher-order-functions]: ../../../reference/concepts/higher_order_functions.md
-[tnc-conditionals]: ../../../reference/concepts/conditionals.md
+[tnc-if-statements]: ../../../reference/concepts/conditionals.md
 [tnc-immutability]: ../../../reference/concepts/immutability.md
 [tnc-inheritance]: ../../../reference/concepts/inheritance.md
 [tnc-interfaces]: ../../../reference/concepts/interfaces.md
