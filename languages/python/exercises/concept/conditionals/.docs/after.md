@@ -85,7 +85,7 @@ Here first the code checks the first `if` condition. It finds that the expressio
 
 ## One line If statments
 
-It is possible to write `if` conditionals in a single line ,However, as per the [PEP8][pep8-link] standards, the use of multiple statments on same lines are discouraged
+It is possible to write `if` conditionals in a single line ,However, as per the [PEP8][pep8-link] standards, the use of multiple statements on same lines are discouraged
 [pep8-link]: https://www.python.org/dev/peps/pep-0008/#other-recommendations
 
 Example
