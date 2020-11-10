@@ -19,6 +19,6 @@
 ## Prerequisites
 
 - `strings`: use to pattern match on.
-- `conditionals`: know what an `if/elif/else` statement is.
+- `if-statements`: know what an `if/else` statement is.
 
 [pattern-matching]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching

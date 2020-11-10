@@ -22,6 +22,6 @@
 - `datetime`
 - `switch-statements`
 - `strings`
-- `conditionals`
+- `if-statements`
 
 [noda-time]: https://nodatime.org/

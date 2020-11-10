@@ -26,4 +26,4 @@
 
 - `strings`: know of the `string` type that will be iterated over and accessed by index.
 - `for-loop`: for loops (rather than foreach) are the best means of highlighting the relationship between strings and `char`s
-- `conditionals`: know how to do conditional logic.
+- `if-statements`: know how to do conditional logic.

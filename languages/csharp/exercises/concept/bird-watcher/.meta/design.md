@@ -35,4 +35,4 @@ This exercise's prerequisites Concepts are:
 - `classes`: know how to work with fields.
 - `booleans`: know what a `bool` is.
 - `basics`: know how to work with `integers` and how to assign and update variables.
-- `conditionals`: know how to do conditional logic.
+- `if-statements`: know how to do conditional logic.

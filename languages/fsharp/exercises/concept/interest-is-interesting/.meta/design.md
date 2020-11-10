@@ -16,6 +16,6 @@
 ## Prerequisites
 
 - `numbers`: define numbers and apply arithmetic and boolean logic to them and convert from one floating-point type to another.
-- `conditionals`: conditionally execute code based on value of floating-point numbers.
+- `if-statements`: conditionally execute code based on value of floating-point numbers.
 
 [floating-point-numbers]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/basic-types
