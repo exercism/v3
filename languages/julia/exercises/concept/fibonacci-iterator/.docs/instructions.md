@@ -8,7 +8,7 @@ The first two numbers of the sequence are set to $1$.
 
 The start of the sequence is $1,~1,~2,~3,~5,~8,~13,~21,~34,~55,~89,~\dots$
 
-In maths notation:
+In maths notation: <!-- TODO: Move this to an info box once they're available -->
 
 $$
 
