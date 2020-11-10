@@ -11,9 +11,10 @@ function Base.iterate(fib::Fib, state=(i=1, vals=(1, 1)))
         return 1, (i=state.i + 1, vals=(1, 1))
     end
 
-    aₙ = state.vals[1] + state.vals[2]
+    aₙ₋₂, aₙ₋₁ = state.vals
+    aₙ = aₙ₋₂ + aₙ₋₁
 
-    aₙ, (i=state.i + 1, vals=(state.vals[2], aₙ))
+    aₙ, (i=state.i + 1, vals=(aₙ₋₁, aₙ))
 end
 
 # Step 3
