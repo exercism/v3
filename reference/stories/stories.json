@@ -787,6 +787,23 @@
     ]
   },
   {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/io.rpg-character-sheet.md",
+    "name": "RPG Character Sheet",
+    "description": "You and your friends love to play pen-and-paper role-playing games, but you noticed that it\u0027s difficult to get new people to join your group. They often struggle with character creation. They don\u0027t know where to start. To help new players out, you decided to write a small program that will guide them through the process.",
+    "concept": {
+      "url": null,
+      "name": "io"
+    },
+    "implementations": [
+      {
+        "track": "Elixir",
+        "slug": "elixir",
+        "exercise": "rpg-character-sheet",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/rpg-character-sheet/.docs/instructions.md"
+      }
+    ]
+  },
+  {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/booleans.rpg-quest-logic.md",
     "name": "RPG Quest Logic",
     "description": "In this exercise, you\u0027ll be implementing the quest logic for a new RPG game a friend is developing. The game\u0027s main character is Annalyn, a brave girl with a fierce and loyal pet dog. Unfortunately, disaster strikes, as her best friend was kidnapped while searching for berries in the forest. Annalyn will try to find and free her best friend, optionally taking her dog with her on this quest.",
