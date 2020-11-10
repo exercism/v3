@@ -1,7 +1,4 @@
-## Nullability
-
-Null is a primitive value, used to represent an intentional absence of an
-object value.
+Null is a primitive value, used to represent an intentional absence of an object value.
 
 ```javascript
 var person = null;
