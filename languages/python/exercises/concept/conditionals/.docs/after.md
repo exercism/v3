@@ -125,7 +125,7 @@ else:
 >>> Hello,World
 ```
 
-In this example we did not evaluate if condition like this `if str == "":`. Even then it's understood by python that if a string is empty evaluate it to `False` and evaluate to `True` otherwise.
+In this example we did not evaluate if condition like this `if str == "":`. Even then it's understood by Python that if a string is empty evaluate it to `False` and evaluate to `True` otherwise.
 
 Here is another on some pythonic expressions inside `if`
 
