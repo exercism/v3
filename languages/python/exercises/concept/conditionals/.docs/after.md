@@ -27,7 +27,7 @@ if x < y:                           # expression is False
 
 ```
 
-Here in the first `if` statement the expression evaluates to `True`. Therefore, the statement associated with the `if` statement gets executed. In the next example, the expression evaluates to `False`, and therefore the statement associated with it is not executed.
+Here in the first `if` statement, the expression evaluates to `True`. Therefore, the statement associated with the `if` statement gets executed. In the next example, the expression evaluates to `False`, and therefore the statement associated with it is not executed.
 
 ## The indentation and blocks
 
