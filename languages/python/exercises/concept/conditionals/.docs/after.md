@@ -96,7 +96,7 @@ if x == 5: print("Came inside the if statement "); print("x equals 5 "); print("
 >>> Came inside the if statement x equals 5 came to this part
 ```
 
-Here all the statements separated by a semicolon are considered as part of a single block. We can have more complicated ones like the example shown below. This is highly discouraging as this goes against python's strength which is readability.
+Here all the statements separated by a semicolon are considered as part of a single block. We can have more complicated ones like the example shown below. This is highly discouraging as this goes against Python's strength which is readability.
 
 ```python
 x = 10
