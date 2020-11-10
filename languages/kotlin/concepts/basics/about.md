@@ -6,7 +6,7 @@ Kotlin compiler can infer types for functions and variables in most of the cases
 
 ## Entry point
 
-To run your Kotlin program you need to define so-called entry point: function with name `main` with or without arguments. However, in Exercism course we are using automatic tests that are using other functions defined in exercises.
+To run your Kotlin program you need to define so-called entry point: top-level function with name `main` with or without arguments. However, in Exercism course we are using automatic tests that are using other functions defined in exercises.
 
 Entry point with arguments (you can use them for building CLI applications):
 
