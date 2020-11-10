@@ -49,6 +49,10 @@ When designing Concept Exercises, please consider the following guidelines:
 
 When writing documentation and supporting Markdown files for Concept Exercises, please consult the [style guide][style-guide] noting the [automatic formatting section][style-guide-auto-formatting]. Also check any language-specific style guides, where applicable.
 
+## Concept Exercise files
+
+Concept Exercise files are located in the track's `exercises/concept/<slug>` directory.
+
 ## Documentation files
 
 The purpose of the documentation files is explained both in this document and in the [Anatomy of a Concept Exercise video][anatomy-of-a-concept-exercise-video].
@@ -254,7 +258,9 @@ For more information, watch [this video][video-example-file] and check [this exa
 
 ## Shared files
 
-### `exercises/shared/.docs/cli.md`
+Some files are meant to be shared amongst _all_ exercises. These shared files are located in the track's `exercises/shared` directory.
+
+### `.docs/cli.md`
 
 **Purpose:** Explain how to use the Exercism CLI to work with an exercise.
 
@@ -262,7 +268,7 @@ This file contains information on how to work with the exercise when using the C
 
 See [this example cli.md file][shared-docs-cli.md].
 
-### `exercises/shared/.docs/debug.md`
+### `.docs/debug.md`
 
 **Purpose:** Describe the track's in-browser debug options.
 
