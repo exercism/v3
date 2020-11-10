@@ -3,16 +3,16 @@ In this exercise you will be building error handling for a simple integer calcul
 The goal is to have a working calculator that returns a string with the following pattern: `16 + 51 = 67`, when provided with arguments `16`, `51` and `+`.
 
 ```csharp
-CalculatorConundrum.Calculate(16, 51, "+"); // => returns "16 + 51 = 67"
+SimpleCalculator.Calculate(16, 51, "+"); // => returns "16 + 51 = 67"
 
-CalculatorConundrum.Calculate(32, 6, "*"); // => returns "32 * 6 = 192"
+SimpleCalculator.Calculate(32, 6, "*"); // => returns "32 * 6 = 192"
 
-CalculatorConundrum.Calculate(512, 4, "/"); // => returns "512 / 4 = 128"
+SimpleCalculator.Calculate(512, 4, "/"); // => returns "512 / 4 = 128"
 ```
 
 ## 1. Handle the code that may throw errors within the method Calculate
 
-The main method for implementation in this task will be the (_static_) `CalculatorConundrum.Calculate()` method. It takes three arguments. The first two arguments are integer numbers on which an operation is going to be conducted. The third argument is of type string and for this exercise it is necessary to implement the following operations:
+The main method for implementation in this task will be the (_static_) `SimpleCalculator.Calculate()` method. It takes three arguments. The first two arguments are integer numbers on which an operation is going to be conducted. The third argument is of type string and for this exercise it is necessary to implement the following operations:
 
 - addition using the `+` string
 - multiplication using the `*` string
@@ -24,8 +24,8 @@ Any other operation symbol should throw the `ArgumentOutOfRangeException` except
 
 ## 3. Handle the thrown DivideByZero exceptions
 
-When a `DivideByZeroException` exception gets thrown, the handling code should return the string with the content `Division by zero is not allowed.`. Any other exception should not be handled by the `CalculatorConundrum.Calculate()` method.
+When a `DivideByZeroException` exception gets thrown, the handling code should return the string with the content `Division by zero is not allowed.`. Any other exception should not be handled by the `SimpleCalculator.Calculate()` method.
 
 ```csharp
-CalculatorConundrum.Calculate(512, 0, "/"); // => returns "Division by zero is not allowed."
+SimpleCalculator.Calculate(512, 0, "/"); // => returns "Division by zero is not allowed."
 ```

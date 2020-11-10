@@ -1,10 +1,10 @@
 using System;
 
-public static class CalculatorConundrum
+public static class SimpleCalculator
 {
     public static string Calculate(int operand1, int operand2, string operation)
     {
-        throw new NotImplementedException("Please implement the CalculatorConundrum.Calculate() method");
+        throw new NotImplementedException("Please implement the SimpleCalculator.Calculate() method");
     }
 }
 
