@@ -283,10 +283,6 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
               "name": "enums"
-            },
-            {
-              "url": null,
-              "name": "pattern-matching-constants"
             }
           ],
           "prerequisites": [
@@ -374,7 +370,7 @@
           "concepts": [
             {
               "url": null,
-              "name": "conditionals-ternary"
+              "name": "ternary-operators"
             },
             {
               "url": null,
@@ -632,10 +628,6 @@
           "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/red-vs-blue-darwin-style",
           "slug": "red-vs-blue-darwin-style",
           "concepts": [
-            {
-              "url": null,
-              "name": "accessibility"
-            },
             {
               "url": null,
               "name": "namespaces"
@@ -1948,7 +1940,7 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "io"
+              "name": "file"
             },
             {
               "url": null,
@@ -2109,6 +2101,30 @@
             {
               "url": null,
               "name": "nil"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpg-character-sheet",
+          "slug": "rpg-character-sheet",
+          "concepts": [
+            {
+              "url": null,
+              "name": "io"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/map.md",
+              "name": "maps"
+            },
+            {
+              "url": null,
+              "name": "atoms"
             }
           ]
         }
@@ -2473,6 +2489,26 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
               "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/constants",
+          "slug": "constants",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
+              "name": "constants"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
             }
           ]
         },
@@ -3417,10 +3453,6 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "basics"
-            },
-            {
-              "url": null,
               "name": "bools"
             },
             {
@@ -3476,10 +3508,6 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "basics"
-            },
-            {
-              "url": null,
               "name": "bools"
             },
             {
@@ -3507,10 +3535,6 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
-            },
-            {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
               "name": "classes"
             },
@@ -3524,19 +3548,11 @@
             },
             {
               "url": null,
-              "name": "indexing"
-            },
-            {
-              "url": null,
               "name": "iteration"
             },
             {
               "url": null,
               "name": "list-comprehensions"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
-              "name": "loops"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/methods.md",
@@ -3545,10 +3561,6 @@
             {
               "url": null,
               "name": "sequences"
-            },
-            {
-              "url": null,
-              "name": "slicing"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
@@ -3579,20 +3591,12 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
-            },
-            {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comparisons.md",
               "name": "comparisons"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
               "name": "conditionals"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
-              "name": "lists"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
@@ -3611,10 +3615,6 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
-            },
-            {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comparisons.md",
               "name": "comparisons"
             },
@@ -3625,10 +3625,6 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
               "name": "lists"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
-              "name": "strings"
             }
           ]
         },
@@ -3660,15 +3656,7 @@
             },
             {
               "url": null,
-              "name": "dicts"
-            },
-            {
-              "url": null,
               "name": "dict-methods"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
-              "name": "lists"
             },
             {
               "url": null,

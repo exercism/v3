@@ -1,4 +1,4 @@
-### Lists
+## lists
 
 Given that the name of the language is Lisp which stands of _LISt Processing_ one might assume that the language has facilities for handling lists of items, and you'd be correct!
 
