@@ -3279,22 +3279,6 @@
             {
               "url": null,
               "name": "matrices-introduction"
-            },
-            {
-              "url": null,
-              "name": "matrices-concatenation"
-            },
-            {
-              "url": null,
-              "name": "matrices-indices"
-            },
-            {
-              "url": null,
-              "name": "matrices-iteration"
-            },
-            {
-              "url": null,
-              "name": "matrices-mutation"
             }
           ],
           "prerequisites": [
