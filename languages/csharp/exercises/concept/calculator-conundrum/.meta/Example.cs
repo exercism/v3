@@ -19,11 +19,11 @@ public static class SimpleCalculator
                     result = SimpleOperation.Division(operand1, operand2);
                     break;
                 case "":
-                    throw new ArgumentException(operation, "Operation cannot be empty.");
+                    throw new ArgumentException("Operation cannot be empty.", "operation");
                 case null:
-                    throw new ArgumentNullException(operation, "Operation cannot be null.");
+                    throw new ArgumentNullException("operation", "Operation cannot be null.");
                 default:
-                    throw new ArgumentOutOfRangeException(operation, $"Operation {operation} does not exist.");
+                    throw new ArgumentOutOfRangeException("operation", $"Operation {operation} does not exist.");
             }
         }
         catch (DivideByZeroException)
