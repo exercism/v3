@@ -66,7 +66,8 @@
                     "numbers",
                     "loops",
                     "nothingness",
-                    "parametric-types"
+                    "parametric-types",
+                    "tuples"
                 ]
             }
         ],
