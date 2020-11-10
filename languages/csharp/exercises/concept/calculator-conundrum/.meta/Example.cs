@@ -23,7 +23,7 @@ public static class CalculatorConundrum
                 case null:
                     throw new ArgumentNullException(operation, "Operation cannot be null.");
                 default:
-                    throw new ArgumentOutOfRangeException(operation, $"Operation {operation} does not exist");
+                    throw new ArgumentOutOfRangeException(operation, $"Operation {operation} does not exist.");
             }
         }
         catch (DivideByZeroException)
