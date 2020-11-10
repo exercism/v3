@@ -31,7 +31,7 @@ Here in the first `if` statement, the expression evaluates to `True`. Therefore,
 
 ## The indentation and blocks
 
-The python examples  shown below are arranged into blocks using indentation. So if there are multiple expressions that needs to be executed from one `if` statement we can put it in a block by having a uniform indentation throughout.
+The python examples shown below are arranged into blocks using indentation. So, if there are multiple expressions that needs to be executed from one `if` statement we can put it in a block by having a uniform indentation throughout.
 
 ```python
 if x > y:                           # expression is True
