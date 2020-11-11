@@ -121,7 +121,7 @@ For more information, please read [this in-depth description][config.json] and c
 
 For more information, check [this example file][example-concept-about.md].
 
-## Add `concepts/<CONCEPT>/links.json` for each unlocked concept
+## Add `concepts/<CONCEPT>/links.json` for each taught concept
 
 **Purpose:** Provide helpful links that provide more reading or information about a concept.
 
