@@ -71,7 +71,7 @@ function Base.iterate(S::Squares, state)
 end
 ```
 
-Note that you may find it useful to combine these two definitions into one using optional arguments.
+You may find it useful to combine these two definitions into one using optional arguments:
 
 ### optional-arguments
 
