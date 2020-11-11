@@ -1,6 +1,6 @@
 import {
-  handleInventoryResult,
-  isServiceOpen,
+  purchaseInventoryIfAvailable,
+  isServiceOnline,
   pickAndPurchaseFruit,
   pickFruit,
 } from './fruit-picker';
@@ -18,12 +18,12 @@ describe('service status', () => {
   });
 
   test('returns the reset status of the service', () => {
-    expect(isServiceOpen()).toBe(false);
+    expect(isServiceOnline()).toBe(false);
   });
 
   test('returns the status when service is online', () => {
     setStatus('ONLINE');
-    expect(isServiceOpen()).toBe(true);
+    expect(isServiceOnline()).toBe(true);
   });
 });
 
@@ -35,7 +35,6 @@ describe('inventory service', () => {
   test('uses the query format', () => {
     pickFruit('strawberry', 5, () => {});
     expect(getLastQuery()).toEqual({
-      type: 'fruit',
       variety: 'strawberry',
       quantity: 5,
     });
@@ -44,7 +43,6 @@ describe('inventory service', () => {
   test('takes parameters for the query', () => {
     pickFruit('blueberry', 20, () => {});
     expect(getLastQuery()).toEqual({
-      type: 'fruit',
       variety: 'blueberry',
       quantity: 20,
     });
@@ -66,18 +64,18 @@ describe('inventory service', () => {
 describe('inventory result callback', () => {
   test('throws error if receives inventory error', () => {
     expect(() => {
-      handleInventoryResult('inventory error');
+      purchaseInventoryIfAvailable('inventory error');
     }).toThrow();
   });
 
   test('returns "PURCHASE" when inventory is available', () => {
-    expect(handleInventoryResult(null, { quantityAvailable: 4 })).toBe(
+    expect(purchaseInventoryIfAvailable(null, { quantityAvailable: 4 })).toBe(
       'PURCHASE'
     );
   });
 
   test('returns "NOOP" when inventory is unavailable', () => {
-    expect(handleInventoryResult(null, false)).toBe('NOOP');
+    expect(purchaseInventoryIfAvailable(null, false)).toBe('NOOP');
   });
 });
 
@@ -90,7 +88,6 @@ describe('putting it together', () => {
     setResponse(null, true);
     pickAndPurchaseFruit('jackfruit', 15);
     expect(getLastQuery()).toEqual({
-      type: 'fruit',
       variety: 'jackfruit',
       quantity: 15,
     });
@@ -100,7 +97,6 @@ describe('putting it together', () => {
     setResponse(null, true);
     pickAndPurchaseFruit('raspberry', 30);
     expect(getLastQuery()).toEqual({
-      type: 'fruit',
       variety: 'raspberry',
       quantity: 30,
     });

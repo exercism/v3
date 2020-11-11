@@ -1,0 +1,12 @@
+{
+  "authors": [
+    {
+      "github_username": "neenjaw",
+      "exercism_username": "neenjaw"
+    }
+  ],
+  "editor": {
+    "solution_files": ["fruit-picker.js"],
+    "test_files": ["fruit-picker.spec.js"]
+  }
+}
