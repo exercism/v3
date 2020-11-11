@@ -15,8 +15,9 @@ Please also watch the following video:
 As this document is generic, the following placeholders are used:
 
 - `<LANG>`: the name of the track in kebab-case (e.g. `ruby`).
-- `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
+- `<SLUG>`: the slug of the exercise in kebab-case (e.g. `calculator-conundrum`).
 - `<UUID>`: the exercise's unique UUID.
+- `<CONCEPT_SLUG>`: the slug of one of the exercise's concepts in kebab-case (e.g. `anonymous-methods`).
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue.
 
@@ -25,6 +26,10 @@ Any concept exercise in any v3 track requires at least the following files to be
 <pre>
 languages
 └── &lt;LANG&gt;
+    ├── concepts
+    |   └── &lt;CONCEPT_SLUG&gt;
+    |       ├── about.md
+    |       └── links.json
     └── exercises
         └── concept
             └── &lt;SLUG&gt;
@@ -32,12 +37,13 @@ languages
                 |   ├── introduction.md
                 |   ├── instructions.md
                 |   ├── hints.md
-                |   ├── after.md
                 |   └── source.md (required if there are third-party sources)
                 └── .meta
                     ├── design.md
                     └── config.json
 </pre>
+
+Note that the concept files should be created for each concept the exercise teaches.
 
 All Markdown files should adhere to the [style guide][style-guide], noting the [automatic formatting section][style-guide-auto-formatting]. Also check any language-specific style guides, where applicable.
 
@@ -60,12 +66,6 @@ For more information, please read [this in-depth description][docs-instructions.
 **Purpose:** Provide hints to a student to help them get themselves unstuck in an exercise.
 
 For more information, please read [this in-depth description][docs-hints.md], watch [this video][video-docs-hints.md] and check [this example file][example-docs-hints.md].
-
-## Add `.docs/after.md` file
-
-**Purpose:** Provide more information about the concept(s) for a student to learn from.
-
-For more information, please read [this in-depth description][docs-after.md], watch [this video][video-docs-after.md] and check (document no longer available).
 
 ## Add `.docs/source.md` file (required if there are third-party sources)
 
@@ -115,6 +115,18 @@ An entry should be added to the track's `config.json` file for the new concept e
 
 For more information, please read [this in-depth description][config.json] and check [this example file][example-config.json].
 
+## Add `concepts/<CONCEPT>/about.md` for each taught concept
+
+**Purpose:** Provide information about the concept(s) for a student to learn from.
+
+For more information, check [this example file][example-concept-about.md].
+
+## Add `concepts/<CONCEPT>/links.json` for each taught concept
+
+**Purpose:** Provide helpful links that provide more reading or information about a concept.
+
+For more information, check [this example file][example-concept-links.json].
+
 ## Update reference document(s) (if the reference document(s) exists)
 
 **Purpose:** Allow maintainers to find out which tracks have implemented an exercise for a concept.
@@ -159,7 +171,6 @@ If you have any questions regarding implementing this exercise, please post them
 [docs-introduction.md]: ../concept-exercises.md#docsintroductionmd
 [docs-instructions.md]: ../concept-exercises.md#docsinstructionsmd
 [docs-hints.md]: ../concept-exercises.md#docshintsmd
-[docs-after.md]: ../concept-exercises.md#docsaftermd
 [docs-source.md]: ../concept-exercises.md#docssourcemd-required-if-there-are-third-party-sources
 [meta-design.md]: ../concept-exercises.md#metadesignmd
 [meta-config.json]: ../concept-exercises.md#metaconfigjson
@@ -173,10 +184,11 @@ If you have any questions regarding implementing this exercise, please post them
 [example-config.json]: ../../languages/csharp/config.json
 [example-reference-document-implementations]: ../../reference/types/string.md#exercises
 [example-story-document-implementations]: ../../reference/stories/basics.lasagna.md#implementation
+[example-concept-about.md]: ../../languages/fsharp/concepts/strings/about.md
+[example-concept-links.json]: ../../languages/fsharp/concepts/strings/links.json
 [video-docs-introduction.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=77
 [video-docs-instructions.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=309
 [video-docs-hints.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=482
-[video-docs-after.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=596
 [video-meta-design.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=870
 [video-meta-config.json]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1037
 [style-guide]: ./style-guide.md
