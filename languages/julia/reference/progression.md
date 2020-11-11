@@ -34,6 +34,10 @@ subgraph Type System
 
 	abstract-types --> primitive-types
 end
+
+numbers --> iterator-protocol["iterator-protocol (Fibonacci-Iterator)"]
+multiple-dispatch --> iterator-protocol
+
 extension --> performance
 performance --> Finish((Finish))
 
@@ -47,6 +51,7 @@ complex-numbers -.-> v2-complex-numbers(v2-complex-numbers)
 rational-numbers -.-> v2-rational-numbers(v2-rational-numbers)
 extension -.-> v2-complex-numbers
 extension -.-> v2-rational-numbers
+iterator-protocol -.-> v2-circular-buffer(v2-circular-buffer)
 ```
 
 ## Legend
