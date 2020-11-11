@@ -240,7 +240,7 @@ For each concept that an exercise unlocks (which are the concepts listed in the 
 
 ### `about.md`
 
-**Purpose:** Provide information about the concept(s) for a student to learn from.
+**Purpose:** Provide information about the concept(s) for a student who has completed the concept execise to learn from and refer back to.
 
 Once the student completes the exercise they will be shown this file, which should provide them with a summary of the concept. If the concept introduces new syntax, syntax samples should be included. At a minimum, this file should contain all information that is introduced in the exercise's [`.docs/introduction.md` document](#docsintroductionmd).
 
