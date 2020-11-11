@@ -39,8 +39,9 @@ Good examples:
 
 Bad examples:
 
-- `TIM-FROM-MARKETING`: should use lowercase (i.e. `classes`)
-- `TimFromMarketing`: should use use kebab-case (i.e. `anonymous-functions`)
+- `TIM-FROM-MARKETING`: should use lowercase (i.e. `tim-from-marketing`)
+- `TimFromMarketing`: should use use kebab-case (i.e. `tim-from-marketing`)
+- `floating-point-numbers`: should not use a concept
 
 ### Basics
 
