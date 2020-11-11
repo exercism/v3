@@ -43,7 +43,7 @@ languages
                     └── config.json
 </pre>
 
-Note that the concept files should be created for each concept the exercise unlocks.
+Note that the concept files should be created for each concept the exercise teaches.
 
 All Markdown files should adhere to the [style guide][style-guide], noting the [automatic formatting section][style-guide-auto-formatting]. Also check any language-specific style guides, where applicable.
 
