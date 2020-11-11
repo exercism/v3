@@ -72,6 +72,21 @@
         ]
       },
       {
+        "slug": "fruit-picker",
+        "uuid": "a6348db8-cc2b-4c53-9f43-3c23248d66f0",
+        "concepts": ["callbacks"],
+        "prerequisites": [
+          "closures",
+          "booleans",
+          "objects",
+          "numbers",
+          "basics",
+          "errors",
+          "nullability",
+          "conditionals"
+        ]
+      },
+      {
         "slug": "strings",
         "uuid": "39549583-1889-490a-bf98-ffb2e0aefe44",
         "concepts": ["strings"],
