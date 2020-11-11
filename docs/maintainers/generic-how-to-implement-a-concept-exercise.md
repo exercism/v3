@@ -115,7 +115,7 @@ An entry should be added to the track's `config.json` file for the new concept e
 
 For more information, please read [this in-depth description][config.json] and check [this example file][example-config.json].
 
-## Add `concepts/<CONCEPT>/about.md` for each unlocked concept
+## Add `concepts/<CONCEPT>/about.md` for each taught concept
 
 **Purpose:** Provide information about the concept(s) for a student to learn from.
 
