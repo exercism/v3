@@ -39,7 +39,7 @@ end
 
 ### Example
 
-We want to define an iterator `Squares(n)` to iterate the sequence of [square numbers](https://en.wikipedia.org/wiki/Square_number) smaller than `n`, so that:
+We want to define an iterator `Squares(n)` to iterate the sequence of [square numbers](https://en.wikipedia.org/wiki/Square_number) smaller than `n`. Square numbers are numbers that are the square of an integer. For example, 9 is a square number, since it can be written as `3 * 3`.  The end result should look like:
 
 ```julia
 julia> for i in Squares(20)
