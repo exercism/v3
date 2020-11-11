@@ -94,7 +94,7 @@ I think of closely coupled concepts/exercises as a “block” in the progressio
 
 - Refactoring exercise, the student has to improve a solution that does several common performance gotchas wrong
 - Hard to test
-- Provide a list of things the student should have caught in `after.md`
+- Provide a list of things the student should have caught in the concept's `about.md`
 - Provide benchmarking code
 - Provide a list of tools to use (`Traceur.jl`, Profilers, BenchmarkTools etc.)
 - Provide an achievable speed-up so that the student knows when they have optimised it well enough

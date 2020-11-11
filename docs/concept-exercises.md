@@ -60,7 +60,7 @@ In the browser, these files will show at the relevant times. When used via the C
 **Purpose:** Introduce the concept(s) that the exercise teaches to the student.
 
 - The information provided should give the student just enough context to figure out the solution themselves.
-- Only information that is needed to understand the fundamentals of the concept and solve the exercise should be provided. Extra information should be left for the `after.md`.
+- Only information that is needed to understand the fundamentals of the concept and solve the exercise should be provided. Extra information should be left for the concept's `about.md` document.
 - Links should be used sparingly, if at all. While a link explaining a complex topic like recursion might be useful, for most concepts the links will provide more information than needed so explaining things concisely inline should be the aim.
 - Proper technical terms should be used so that the student can easily search for more information.
 - Code examples should only be used to introduce new syntax (students should not need to search the web for examples of syntax). In other cases provide descriptions or links instead of code.
@@ -320,7 +320,6 @@ See [this example config.json file][config.json].
 [video-docs-introduction.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=77
 [video-docs-instructions.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=309
 [video-docs-hints.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=482
-[video-docs-after.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=596
 [video-meta-design.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=870
 [video-meta-config.json]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1037
 [video-stub-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1171
