@@ -236,7 +236,7 @@ For more information, watch [this video][video-example-file] and check [this exa
 
 ## Concept files
 
-For each concept that an exercise unlocks (which are the concepts listed in the exercise's `concepts` key in the track's `config.json` file), two concept documents must be added. The concept files for a concept are located in the track's `concepts/<concept>` directory.
+For each concept that an exercise teaches (which are the concepts listed in the exercise's `concepts` key in the track's `config.json` file), two concept documents must be added. The concept files for a concept are located in the track's `concepts/<concept>` directory.
 
 ### `about.md`
 
