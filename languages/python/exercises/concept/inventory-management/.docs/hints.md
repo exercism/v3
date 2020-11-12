@@ -24,5 +24,5 @@
 ## 4. List the items that are in stock
 
 - You need [for loop](https://docs.python.org/3/tutorial/controlflow.html#for-statements) on the inventory and if the number of item is greater of `0` then append the tuple to a list.
-- You can use `dict.items()` to iterate on both the item and the value at the same time, `items()` returns a tuple that you can deconstruct or use as it is.
-- This function should [return](https://www.w3schools.com/python/ref_keyword_return.asp) a [list](https://www.w3schools.com/python/python_lists.asp) of [tuples](https://www.w3schools.com/python/python_tuples.asp).
+- You can use `dict.items()` to iterate on both the item and the value at the same time, `items()` returns a tuple that you can use as it is or deconstruct.
+- This function should [return](https://www.w3schools.com/python/ref_keyword_return.asp) a [list](https://docs.python.org/3/tutorial/introduction.html#lists) of [tuples](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences).

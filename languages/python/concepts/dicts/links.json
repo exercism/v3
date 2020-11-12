@@ -1,7 +1,11 @@
 [
   {
-    "url": "https://www.jessicayung.com/python-lists-vs-dictionaries-the-space-time-tradeoff/",
-    "description": "lists-vs-dicts"
+    "url": "https://docs.python.org/3/glossary.html#term-hashable",
+    "description": "term-hashable"
+  },
+  {
+    "url": "https://docs.python.org/3/library/stdtypes.html#mapping-types-dict",
+    "description": "mapping-types-dict"
   },
   {
     "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
@@ -22,5 +26,9 @@
   {
     "url": "https://docs.python.org/3/library/collections.html#collections.OrderedDict",
     "description": "ordered-dicts-docs"
+  },
+  {
+    "url": "https://docs.python.org/2/library/collections.html#collections.defaultdict",
+    "description": "default-dicts"
   }
 ]

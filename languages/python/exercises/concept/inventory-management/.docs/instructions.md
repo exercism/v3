@@ -42,7 +42,7 @@ The item counts should not fall below `0`, if the number of items in the list ex
 
 ## 4. Return the inventory content
 
-Implement the `list_inventory()` function that takes an inventory and returns a list of `(item, quantity)` tuples. The list only includes the items with a count greater than zero:
+Implement the `list_inventory()` function that takes an inventory and returns a list of `(item, quantity)` tuples. The list should only include the items with a count greater than zero:
 
 ```python
 >>> list_inventory({"coal":7, "wood":11, "diamond":2, "iron":7, "silver": 0})
