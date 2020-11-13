@@ -1,4 +1,4 @@
-(ns floating-point-numbers)
+(ns exercism.savings-account)
 
 (defn interest-rate [balance]
   (cond 

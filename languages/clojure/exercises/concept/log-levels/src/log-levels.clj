@@ -1,4 +1,4 @@
-(ns strings
+(ns exercism.log-line
   (:require [clojure.string :as str]))
 
 (defn message

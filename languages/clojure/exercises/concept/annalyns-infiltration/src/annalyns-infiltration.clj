@@ -1,4 +1,4 @@
-(ns booleans)
+(ns exercism.quest-logic)
 
 (defn can-fast-attack?
   "Returns true if a fast-attack can be made, false otherwise."
