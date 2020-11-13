@@ -1,38 +1,81 @@
-## Summary
+Sameness is the concept about equality of things.
 
-In this exercise you've learned about the four generic equality predicates in Common Lisp: `eq`, `eql`, `equal`, `equalp`. You've learned how they build upon each other and go from a very strict definition of equality (`eq`) to a loose definition of equality (`equalp`).
+Common Lisp, like other languages has a set of rules on how to decide if two objects are the 'same'. These rules define four levels, each with a function that performs that level of checking. The levels are structured from strictest to loosest.
 
-## Diving Deeper
+### `eq`
 
-### The gotcha of `eq`:
+The first level is object identity. This equality is checked with the function [`eq`][hyper-eq]. The two objects being checked for equality must be the very same object:
 
-There is one very important detail about `eq` that trips a lot of people up. Because the Common Lisp specification allows for an implementation to copy numbers and characters in memory if they choose to and because `eq` does a strict object identity check that means `(eq 42 42)` and `(eq #\x #\x)` may both evaluate to `NIL`! So while these may evaluate to `T` lots of times, it may fail when you least expect it and it will be very difficult to debug.
+```lisp
+(eq 'apples 'apples) ; => T
+(eq 'apples 'oranges) ; => NIL
 
-So if you know you might be checking equality of numbers and characters you should use `eql`. Even better if you know you are checking only characters or only numbers you should use `char=` and `=` respectively as they are type specific.
+(eq '(a b c) '(a b c) ; => NIL (these two lists have the same contents but are not the same list)
+(let ((list1 '(a b c)) (list2 list1)) (eq list1 list2)) ; => T (these two lists are the same list)
+```
 
-### Default equality tests
+### `eql`
 
-Some functions in Common Lisp may take a `test` keyword argument. For example `find`, `count`, `pushnew` or `assoc`. The language specifies that the default value for these is `eql`.
+The second level adds equality of numbers and characters. This equality is checked with the function [`eql`][hyper-eql]. The way the checking is done depends upon the types of the arguments:
 
-For example if you want to found how many times a specific string happens in a list of strings you could use `count` but this would not work:
+- Any two objects which are `eq` are `eql`
+- Numbers are `eql` if they are of the same type and value
+- Characters are `eql` if they they represent the same character.
 
-`(count "foo" (list "foo" "bar" "baz" "foo")) ; => 0`
+```lisp
+(eql 1 1) ; => T
+(eql 1 1/1) ; => NIL (one number is an integer, the other a rational)
+(eql #\c #\c) ; => T
+(eql #\c #\C) ; => NIL (case is different)
+```
 
-Since `(eql "foo" "foo") ; => NIL`.
+One may wonder why numbers and characters are not compared for object identity with [`eq`][hyper-eq]. The Common Lisp standard allows implementations to copy numbers and characters if they choose to do so. Thus `0` and `0` may not be [`eq`][hyper-eq] as they may be different instances of the number `0`.
 
-In this case you need to provide a `test` argument such as `string=`:
+### `equal`
 
-`(count "foo" (list "foo" "bar" "baz" "foo") :test #'string=) ; => 2`
+The third level checks for structural similarity. This equality is checked with [`equal`][hyper-equal]. The way the checking is done depends upon the types of the arguments:
 
-The language also has some conditional expressions (such as `case`) which are defined to use `eql` as their equality predicate, which may limit their utility in some circumstances.
+- symbols are compared as if with [`eq`][hyper-eq]
+- characters, and numbers are compared as if with `eql`
+- conses are [`equal`][hyper-equal] if their elements are [`equal`][hyper-equal]. This is done recursively.
+- strings and bit vectors are [`equal`][hyper-equal] if their elements are `eql`
+- arrays of other types are compared as if with [`eq`][hyper-eq]
+- pathnames are [`equal`][hyper-equal] if they are functionality equivalent. (There is room for implementation dependendant behavior here with regards to case sensitivity of the strings which make up the components of the pathnames.)
+- objects of any other type are compared as if with [`eq`][hyper-eq]
 
-## Reference
+```lisp
+(equal '(a (b c)) '(a (b c))) ; => T (conses are equal if their contents are equal)
+(equal "hello" "hello") ; => T
+(equal "hello" "HELLO") ; => NIL
+(equal #(1 2 3) #(1 2 3)) ; => NIL (arrays are equal only if eq)
+(equal #P"foo/bar.md" #P"foo/bar.md") ; => T (pathnames are equal if "functionally equivalent"
+```
 
-[Eli Bendersky's page][eli-lisp-equality] on Common Lisp Equality predicates is a good "plain language" reference. For the language reference on each of the functions you can find them in the [Hyperspec][hyperspec] which has reference pages for [`eq`][hyper-eq], [`eql`][hyper-eql], [`equal`][hyper-equal], [`equalp`][hyper-equalp].
+### `equalp`
 
-[hyperspec]: http://www.lispworks.com/documentation/HyperSpec/Front/index.htm
+The fourth and most loose level of equality is checked with [`equalp`][hyper-equalp]. The how the checking is done depends upon the types:
+
+- if the two objects are [`equalp`][hyper-equalp] then they are [`equalp`][hyper-equalp]
+- numbers are [`equalp`][hyper-equalp] if they have the same vaule even if they are not of the same type
+- characters and strings are compared case-insensitively
+- conses are [`equalp`][hyper-equalp] if their elements are [`equalp`][hyper-equalp]. This is done recursively.
+- arrays are [`equalp`][hyper-equalp] if they have the same number of dimensions, those dimensions are the same, and each element is [`equalp`][hyper-equalp].
+- structures are [`equalp`][hyper-equalp] if they have the same class and slots and each of those slots are [`equalp`][hyper-equalp] between the two structures.
+- hash tables are [`equalp`][hyper-equalp] if they both have the same `:test` function, they have the same keys (as compared with that `:test` function) and that those keys have the same values as compared with [`equalp`][hyper-equalp].
+
+```lisp
+(equalp 1 1.0) ; => T
+(equalp #\c #\C) ; => T
+(equalp "hello" "HELLO") ; => T
+(equalp #(1 2 3) #(1.0 2.0 3.0)) ; => T
+(equal #S(TEST :SLOT1 'a :SLOT2 'b) #S(TEST :SLOT1 'a :SLOT2 'b)) ; => T
+```
+
+### Type-specific functions
+
+The above are the 'generic' equality functions. They work, as defined, for any type. This can be useful when one writes generic code that does not know the types of objects it will be comparing until run-time. However it is generally considered "better style" to use type specific equality functions when one knows the types being compared. For example `string=` rather than `equal`. These functions will be presented and discussed in later concepts.
+
 [hyper-eq]: http://www.lispworks.com/documentation/HyperSpec/Body/f_eq.htm
 [hyper-eql]: http://www.lispworks.com/documentation/HyperSpec/Body/f_eql.htm
 [hyper-equal]: http://www.lispworks.com/documentation/HyperSpec/Body/f_equal.htm
 [hyper-equalp]: http://www.lispworks.com/documentation/HyperSpec/Body/f_equalp.htm
-[eli-lisp-equality]: https://eli.thegreenplace.net/2004/08/08/equality-in-lisp

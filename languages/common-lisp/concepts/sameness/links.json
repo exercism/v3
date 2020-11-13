@@ -4,10 +4,6 @@
     "description": "eli-lisp-equality"
   },
   {
-    "url": "http://www.lispworks.com/documentation/HyperSpec/Front/index.htm",
-    "description": "hyperspec"
-  },
-  {
     "url": "http://www.lispworks.com/documentation/HyperSpec/Body/f_eq.htm",
     "description": "hyper-eq"
   },
