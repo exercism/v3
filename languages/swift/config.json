@@ -108,12 +108,7 @@
         "slug": "poetry-club",
         "name": "The 1st Rule of Poetry Club",
         "uuid": "082d7aeb-ee25-4217-bd6f-82532a65797a",
-        "concepts": [
-          "importing",
-          "opaque-indices",
-          "string-components",
-          "string-indexing"
-        ],
+        "concepts": ["importing", "string-components", "string-indexing"],
         "prerequisites": ["arrays", "optionals"]
       },
       {
