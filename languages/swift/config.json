@@ -137,14 +137,13 @@
       },
       {
         "slug": "windowing-system",
+        "name": "Windowing System",
         "uuid": "bfb16db1-f419-48e9-91bc-defebc0ae9ac",
         "concepts": [
-          "structs",
-          "classes",
-          "initializers",
           "methods",
           "self",
-          "stored-properties"
+          "structs-and-classes",
+          "value-and-reference-types"
         ],
         "prerequisites": ["functions", "function-overloading"]
       }
