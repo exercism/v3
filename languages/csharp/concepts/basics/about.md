@@ -1,4 +1,4 @@
-C# is a statically-typed language, which means that everything has a type at compile-time. Assigning a value to a name is referred to as defining a variable. A variable can be defined either by explicitly specifying its type, or by using the [`var` keyword][var] to have the C# compiler infer its type based on the assigned value.
+C# is a statically-typed language, which means that everything has a type at compile-time. Choosing [a name for a variable][identifier-names] is referred to as defining a variable. Once a variable is defined, setting or updating a value is called variable assignment. A variable can be defined either by explicitly specifying its type, or by using the [`var` keyword][var] to have the C# compiler infer its type based on the assigned value.
 
 ```csharp
 int explicitVar = 10; // Explicitly typed
@@ -77,3 +77,4 @@ Integer values are defined as one or more (consecutive) digits and support the [
 [return]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/return
 [operators]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators#addition-operator-
 [comments]: https://www.w3schools.com/cs/cs_comments.asp
+[identifier-names]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/identifier-names
