@@ -4294,18 +4294,6 @@
           "slug": "windowing-system",
           "concepts": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
-              "name": "structs"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
-              "name": "classes"
-            },
-            {
-              "url": null,
-              "name": "initializers"
-            },
-            {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/methods.md",
               "name": "methods"
             },
@@ -4315,7 +4303,11 @@
             },
             {
               "url": null,
-              "name": "stored-properties"
+              "name": "structs-and-classes"
+            },
+            {
+              "url": null,
+              "name": "value-and-reference-types"
             }
           ],
           "prerequisites": [
