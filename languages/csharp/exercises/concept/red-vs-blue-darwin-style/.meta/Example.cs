@@ -1,3 +1,5 @@
+#pragma warning disable RCS1163, RCS1110, IDE0060
+
 namespace RedRemoteControlCarTeam
 {
     public class RemoteControlCar
@@ -35,7 +37,6 @@ namespace BlueRemoteControlCarTeam
     {
         public RemoteControlCar(Motor motor, Chassis chassis, Telemetry telemetry)
         {
-
         }
         // blue members and API
     }

@@ -1,3 +1,5 @@
+#pragma warning disable RCS1163, RCS1110, IDE0060
+
 public static class RedRemoteControlCarTeam
 {
     public class RemoteControlCar
@@ -28,13 +30,13 @@ public static class RedRemoteControlCarTeam
         // red members and API
     }
 }
+
 public static class BlueRemoteControlCarTeam
 {
     public class RemoteControlCar
     {
         public RemoteControlCar(Motor motor, Chassis chassis, Telemetry telemetry)
         {
-
         }
         // blue members and API
     }
