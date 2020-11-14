@@ -16,7 +16,7 @@ end
 @testset "Fib does not contain fields to store state internally" begin
     # Backport fieldtypes for Julia 1.0
     if VERSION < v"1.1"
-        fieldtypes(T::Type) = ntuple(i -> fieldtype(T, i), fieldcount(T))
+        @eval fieldtypes(T::Type) = ntuple(i -> fieldtype(T, i), fieldcount(T))
     end
 
     # Ensure only one numeric value (n) can be stored
