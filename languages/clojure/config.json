@@ -2,7 +2,7 @@
   "language": "Clojure",
   "slug": "clojure",
   "active": true,
-  "blurb": "a JVM hosted functional programming language.",
+  "blurb": "Clojure is dialect of Lisp for the JVM designed for functional programming.",
   "version": 3,
   "online_editor": {
     "indent_style": "space",
