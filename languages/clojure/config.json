@@ -35,7 +35,7 @@
         "slug": "cars-assemble",
         "name": "Cars, Assemble!",
         "uuid": "5f94668b-659b-444d-8c22-0768bca0cf5b",
-        "concepts": ["numbers"],
+        "concepts": ["numbers", "conditionals"],
         "prerequisites": ["basics"]
       },
       {
