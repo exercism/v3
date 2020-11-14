@@ -69,7 +69,7 @@ If you want to delete an element, you can use `.remove()` and pass the item you 
 ValueError: list.remove(x): x not in list
 ```
 
-Conversly, using the `.pop()` function will both remove **and** `return` an element for use. `.pop()` takes 1 parameter -- the index of the item you need to remove and recieve. If you specify an index number higher than the length of the list, you will get an `IndexError`. If an index is not specified, the last element of the list will be removed and returned to you.
+Alternatively, using the `.pop()` function will both remove **and** `return` an element for use. `.pop()` takes 1 parameter -- the index of the item you need to remove and recieve. If you specify an index number higher than the length of the list, you will get an `IndexError`. If an index is not specified, the last element of the list will be removed and returned to you.
 
 ```python
 ex_list = [1, 2, 3]
