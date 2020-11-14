@@ -6,7 +6,7 @@ Compared to searching for a value within a list or array (_without knowing the i
 
 A dictionary can be though of as a collection of straightforward `key`:`value` pairs. Like other collection types (`list`, `tuple`, and `set`), `values` can contain arbitrary data and data types, including nested dictionaries. A dictionary’s `keys` are _**almost**_ as arbitrary, but require their data types to be _hashable_.
 
-Keys are unique across a dictionary, and the values associated with any `key` can be replaced, updated or altered as long as the `key` exists. To be a valid, a key (_and all its contained values_) must be [hashable][term-hashable]. Hashable `keys` can include numbers, strings, tuples of _immutable_ values or frozensets. `sets`, `lists`, `dicts` or `tuples` are mutable items and unhashable, therefor they cannot be used as keys.
+Keys are unique across a dictionary, and the values associated with any `key` can be replaced, updated or altered as long as the `key` exists. To be a valid, a key (_and all its contained values_) must be [hashable][term-hashable]. Hashable `keys` can include numbers, strings, tuples of _immutable_ values, or frozensets. `sets`, `lists`, and `dicts` are unhashable and therefor cannot be used as keys.
 
 A value can be of any data type, including Build-in types, custom types or complex objects (even functions or classes). Commonly used objects are: numbers, strings, lists, dictionaries, tuples or sets.
 
