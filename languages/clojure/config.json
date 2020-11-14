@@ -28,7 +28,7 @@
         "slug": "bird-watcher",
         "name": "Bird Watcher",
         "uuid": "7904b7af-b872-46fe-8602-63038c1587bc",
-        "concepts": ["arrays"],
+        "concepts": ["vectors"],
         "prerequisites": ["basics"]
       },
       {
