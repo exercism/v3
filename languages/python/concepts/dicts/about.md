@@ -8,7 +8,7 @@ A dictionary can be though of as a collection of straightforward `key`:`value` p
 
 Keys are unique across a dictionary, and the values associated with any `key` can be replaced, updated or altered as long as the `key` exists. To be a valid, a key (_and all its contained values_) must be [hashable][term-hashable]. Hashable `keys` can include numbers, strings, tuples of _immutable_ values, or frozensets. `sets`, `lists`, and `dicts` are unhashable and therefor cannot be used as keys.
 
-A value can be of any data type, including Build-in types, custom types or complex objects (even functions or classes). Commonly used objects are: numbers, strings, lists, dictionaries, tuples or sets.
+A value can be of any data type, including built-in types, custom types or complex objects (even functions or classes). Commonly used objects are: numbers, strings, lists, dictionaries, tuples or sets.
 
 A simple `dict` can be declared using the literal form `{"key_1": value_1, "key_2": value_2}` or via _constructor_ with `dict(key_1=value_1, key_2=value_2)`, but there are many more ways of creating and initializing dictionaries including the use of a _dict comprehension_ or passing additional constructor parameters as illustrated in the [Python docs][mapping-types-dict].
 
