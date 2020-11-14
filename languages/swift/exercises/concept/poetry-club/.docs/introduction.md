@@ -1,5 +1,4 @@
 ## importing
-## opaque-indices
 ## string-components
 ## string-indexing
 
