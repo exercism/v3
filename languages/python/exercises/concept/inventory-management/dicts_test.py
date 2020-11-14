@@ -34,7 +34,7 @@ class test_inventory(unittest.TestCase):
                          {"wood": 0, "iron": 2, "diamond": 0})
 
     def test_list_inventory(self):
-        self.assertEqual(list_inventory({"coal": 15, "diamond": 3, "wood": 67}),
+        self.assertEqual(list_inventory({"coal": 15, "diamond": 3, "wood": 67, "silver": 0}),
                          [("coal", 15), ("diamond", 3), ("wood", 67)])
 
 

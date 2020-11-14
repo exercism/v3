@@ -54,22 +54,12 @@ You can easily change a value of an item using its _key_.
 
 ## Looping through a dictionary
 
-Looping through a dictionary using a `for` loop only returns the _keys_.
+Looping through a dictionary using `for item in dict` will iterate over the _keys_, but you can access the _values_ by using _square brackets_.
 
 ```python
 >>> for key in bear:
->>>     key
-'name'
-'speed'
-'land_animal'
-```
-
-But you can also access the _values_ of a dictionary using _square brackets_.
-
-```python
->>> for key in whale:
->>>    whale[key]
-'Blue Whale'
-25
-False
+>>>     (key, bear[key])
+('name', 'Black Bear')
+('speed', 40)
+('land_animal', True)
 ```
