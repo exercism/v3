@@ -1,9 +1,7 @@
-## structs
-## classes
-## initializers
+## structs-and-classes
 ## methods
 ## self
-## stored-properties
+## value-and-reference-types
 
 Structs and classes are two of the primary building blocks of Swift programming. They are both means of grouping together related data and functions into self-contained units of functionality. And when you define a struct or class, you are defining a new type to be used within Swift, just as you used the types you've already worked with, like `Int` and `String`.
 
