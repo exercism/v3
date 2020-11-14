@@ -21,7 +21,7 @@ print(ex_list)
 #=> [1, 2, 3, 9]
 ```
 
-Another way to add an item to the list is to `.insert()`  an item. This method gives you the ability to add the item at particular index in the list.
+Another way to add an item to the list is to `.insert()` an item. This method gives you the ability to add the item at particular index in the list.
 
 `.insert()` takes 2 parameters:
 
@@ -40,7 +40,7 @@ print(ex_list)
 #=> [-2, 0, 1, 2, 3]
 ```
 
-If you have an iterable that you would like to _combine_ with your current list (concatenating the two), you can use the `.extend()` method.  `.extend()` will unpack the supplied iterable and add its elements in order to your list (_using `.append()` in this curcumstance would add the entire iterable as a **single element**._).
+If you have an iterable that you would like to _combine_ with your current list (concatenating the two), you can use the `.extend()` method. `.extend()` will unpack the supplied iterable and add its elements in order to your list (_using `.append()` in this curcumstance would add the entire iterable as a **single element**._).
 
 ```python
 ex_list = [1, 2, 3]
@@ -57,7 +57,7 @@ print(ex_list)
 
 ### Removing Items
 
-If you want to delete an element, you can use `.remove()` and pass the item you want removed from the list.  `.remove()`  will throw a `ValueError` if the item to be removed is not in the list.
+If you want to delete an element, you can use `.remove()` and pass the item you want removed from the list. `.remove()` will throw a `ValueError` if the item to be removed is not in the list.
 
 ```python
 >>> ex_list = [1, 2, 3]
@@ -101,7 +101,7 @@ print(ex_list)
 #=> [3, 2, 1]
 ```
 
-You can re-order your list _**in place**_ with the help of the `.sort()` method. Internally, python uses [`Timsort`][timsort] to arrange the list. If the elements are alphanumerical, you don't have to provide any arguments to `.sort()`.  Optionally, you can define custom key for sorting criteria.  The Python docs offer some [additional tips and techniques for sorting][sorting how to] lists effecively.
+You can re-order your list _**in place**_ with the help of the `.sort()` method. Internally, python uses [`Timsort`][timsort] to arrange the list. If the elements are alphanumerical, you don't have to provide any arguments to `.sort()`. Optionally, you can define custom key for sorting criteria. The Python docs offer some [additional tips and techniques for sorting][sorting how to] lists effecively.
 
 ```python
 ex_list = ["Tony", "Natasha", "Thor", "Bruce"]
@@ -121,7 +121,6 @@ print(ex_list)
 
 For cases where changing your original list is undesirable, the built-in [`sorted()`][sorted] can be used to return a new, sorted copy of your original list.
 
-
 ### Occurances of an item in the list.
 
 You can find the number of occurances of an element in the list with the help of `.count()`. It takes the element you need to tally as its argument, and returns the total nunber of times it appears on the list.
@@ -135,7 +134,6 @@ ex_list.count(1)
 ### Finding the index of items.
 
 `.index()` will provide you the index number of the first occurance of the item you pass in. If you do not have any occurances of the item, a `ValueError` is raised. If you do not need the exact position of an item and are only checking that it is present on the list, the built-in `in` operator is more efficient.
-
 
 Index starts with 0.
 
@@ -155,10 +153,9 @@ ex_list.index(4, 2, 12)
 #=> 10
 ```
 
-
 ### Making Copies
 
-Remeber that _names_ in python are just lables that reference an underlying object.  This creats a few surprises when working with lists.
+Remeber that _names_ in python are just lables that reference an underlying object. This creats a few surprises when working with lists.
 
 ```python
 >>> ex_list = ["Tony", "Natasha", "Thor", "Bruce"]
@@ -209,7 +206,7 @@ from pprint import pprint
 
 ```
 
-To create a second copy of a list, you need to _slice_ or explicity use the `.copy()` method, which will make a second set of refrences that can then be changed without the danger of unintential mutation of elements.  However, if your list contains _variables_ or nested data structures, those second-level refrences will **not be copied** (_To copy an entire tree of containers, references, and opbjects, you need to use  `.deep_copy()`  or a `list comprehension`-- more on that later._).  For a detailed explaination of list behavior, see this excellent [making a game board][making a game board] article.
+To create a second copy of a list, you need to _slice_ or explicity use the `.copy()` method, which will make a second set of refrences that can then be changed without the danger of unintential mutation of elements. However, if your list contains _variables_ or nested data structures, those second-level refrences will **not be copied** (_To copy an entire tree of containers, references, and opbjects, you need to use `.deep_copy()` or a `list comprehension`-- more on that later._). For a detailed explaination of list behavior, see this excellent [making a game board][making a game board] article.
 
 ```python
 ex_list = ["Tony", "Natasha", "Thor", "Bruce"]

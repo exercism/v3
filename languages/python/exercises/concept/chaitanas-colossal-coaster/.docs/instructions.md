@@ -5,7 +5,7 @@ There are two queues for this ride.
 1. Normal Queue
 2. Express Queue ( Also known as the Fast-track Queue) - people pay extra to get faster access to the Collossal Coaster.
 
-You've been asked to write some code to better manage the guests at the park.  You need to finish the following functions as soon as possible, before the guests (and your boss!) get cranky.
+You've been asked to write some code to better manage the guests at the park. You need to finish the following functions as soon as possible, before the guests (and your boss!) get cranky.
 
 ## 1. Add Me to the queue
 
