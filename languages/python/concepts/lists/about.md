@@ -91,7 +91,7 @@ source_data = {"fish": "gold", "monkey": "brown"}
 [('fish', 'gold'), ('monkey', 'brown')]
 ```
 
-Because the constructor will only take _iterables_ (or nothing) as arguments, objecst that are _not_ iterable will throw a sytax error. Consequently, it is much easier to create a one-item list via the literal method.
+Because the constructor will only take _iterables_ (or nothing) as arguments, objects that are _not_ iterable will throw a syntax error. Consequently, it is much easier to create a one-item list via the literal method.
 
 ```python
 
