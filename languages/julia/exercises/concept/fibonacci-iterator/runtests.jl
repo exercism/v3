@@ -13,6 +13,18 @@ end
     @test [a for a in Fib(50)] == fib
 end
 
+@testset "Fib does not contain fields to store state internally" begin
+    # Backport fieldtypes for Julia 1.0
+    if VERSION < v"1.1"
+        fieldtypes(T::Type) = ntuple(i -> fieldtype(T, i), fieldcount(T))
+    end
+
+    # Ensure only one numeric value (n) can be stored
+    # This should prevent Fib types that use a tuple or struct to store more state
+    @test fieldcount(Fib) == 1
+    @test fieldtypes(Fib)[1] <: Number
+end
+
 @testset "Can be collected" begin
     @test collect(Fib(50)) == fib
     @test Base.IteratorSize(Fib) == Base.HasLength()
