@@ -2,8 +2,8 @@ package _meta
 
 import "fmt"
 
-// CrateCar creates a new car with given specifications.
-func CrateCar(speed, batteryDrain int) *Car {
+// CreateCar creates a new car with given specifications.
+func CreateCar(speed, batteryDrain int) *Car {
 	return &Car{
 		speed:        speed,
 		batteryDrain: batteryDrain,

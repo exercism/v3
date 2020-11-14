@@ -43,7 +43,7 @@ car.CanFinish(raceTrack)
 // Output: true
 ```
 
-## 2. Display the distance driven
+## 3. Display the distance driven
 
 Implement a `DisplayDistance` method on `Car` to return the distance as displayed on the LED display:
 
@@ -56,7 +56,7 @@ car.DisplayDistance()
 // Output: "Driven 0 meters"
 ```
 
-## 3. Display the battery percentage
+## 4. Display the battery percentage
 
 Implement the `DisplayBattery` method on `Car` to return the distance as displayed on the LED display:
 
