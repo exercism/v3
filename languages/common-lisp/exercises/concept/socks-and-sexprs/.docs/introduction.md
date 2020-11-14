@@ -1,8 +1,8 @@
 ## comments
 
-As a brief aside, Common Lisp allows the programmer to write "comments" that are
-ignored by the computer. Single-line comments begin with one or more semi-colons
-(`;`) and, occasionally, you may see the following:
+Common Lisp allows the programmer to write "comments" that are ignored by the
+computer. Single-line comments begin with one or more semi-colons (`;`) and,
+occasionally, you may see the following:
 
 ```lisp
 (code...) ; => value
@@ -11,29 +11,27 @@ ignored by the computer. Single-line comments begin with one or more semi-colons
 Where the comment is being used to indicate what value is returned by Common
 Lisp after running the code on that line.
 
-## expressions
-
-TODO: Untangle section below or possible remove "expressions" concept
-
 ## cons
 
-All Common Lisp code is made from S-Expressions (or sexpr for short). An
-S-Expression is either an "atom" (a single, indivisible value) or a list (also
-termed a "cons"). A cons is made up of two parts: the first element and the rest
-of the elements. For historical reasons these two parts are called the `car` and
-the `cdr`. When S-Expressions are evaluated as code, the first element (`car`)
-represents the function being called while the rest of the elements (`cdr`)
-represent the arguments to that function:
+All Common Lisp code is either an "atom" (a single, indivisible value) or a list
+(also termed a "cons"). A cons is made up of two parts: the first element and
+the rest of the elements. For historical reasons these two parts are called the
+`car` and the `cdr`. When these conses are evaluated as code, the first element
+(`car`) represents the function being called while the rest of the elements
+(`cdr`) represent the arguments to that function:
 
 ```lisp
 (<function> <arg1> <arg2> ... <argN>)
 ; ^ car ^  |        ^ cdr ^
 ```
 
-When S-Expressions are evaluated, they automatically return some value which
-takes the place of the expression. When writing your own functions (using
-`defun`), the last value within the body of the `defun` is automatically
-returned:
+## expressions
+
+Together, the atoms and conses that make up Lisp code are referred to as
+S-Expressions (or sexpr for short). When S-Expressions are evaluated, they
+automatically return some value which takes the place of the expression. When
+writing your own functions (using `defun`), the last value within the body of
+the `defun` is automatically returned:
 
 ```lisp
 ;; Defining a new function
