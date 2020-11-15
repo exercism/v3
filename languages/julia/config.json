@@ -25,6 +25,20 @@
                 "prerequisites": ["functions-introduction"]
             },
             {
+                "uuid": "f2f696e6-8a6a-4c8c-ae0b-d940d8579905",
+                "slug": "leap",
+                "concepts": [
+                    "arithmetic-operators",
+                    "integer-equality",
+                    "boolean-expressions"
+                ],
+                "prerequisites": [
+                    "functions-introduction",
+                    "boolean-logic",
+                    "booleans"
+                ]
+            },
+            {
                 "uuid": "36cbda04-3921-4491-9ec6-76951f00aa00",
                 "name": "The Exercism Matrix",
                 "slug": "exercism-matrix",
