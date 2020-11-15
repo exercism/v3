@@ -39,6 +39,13 @@
                 ]
             },
             {
+                "uuid": "b615a19c-ab76-4f93-985f-7e4c628b6939",
+                "name": "Vexing Vehicle Purchase",
+                "slug": "vehicle-purchase",
+                "concepts": ["conditionals", "if-statements", "ternary-operator", "short-circuit-evaluation"],
+                "prerequisites": ["boolean-expressions", "strings"]
+            },
+            {
                 "uuid": "36cbda04-3921-4491-9ec6-76951f00aa00",
                 "name": "The Exercism Matrix",
                 "slug": "exercism-matrix",
