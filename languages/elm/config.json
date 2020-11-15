@@ -9,7 +9,15 @@
     "indent_size": 4
   },
   "exercises": {
-    "concept": [],
+    "concept": [
+	  {
+        "slug": "basics",
+        "name": "Basics (minimal compilable file)",
+        "uuid": "54b70493-702b-4577-9d47-ec5ede4cc2c1",
+        "concepts": ["basics"],
+        "prerequisites": []
+      }
+	],
     "practice": []
   }
 }
