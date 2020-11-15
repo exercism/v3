@@ -40,7 +40,7 @@ And if any if-statement only needs to perform code for one of the cases, the els
 
 ```swift
 if heartRate > 100 {
-  print(“elevated heart rate”)
+  print("elevated heart rate")
 } else {
   ()
 }
