@@ -3269,6 +3269,38 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/leap",
+          "slug": "leap",
+          "concepts": [
+            {
+              "url": null,
+              "name": "arithmetic-operators"
+            },
+            {
+              "url": null,
+              "name": "integer-equality"
+            },
+            {
+              "url": null,
+              "name": "boolean-expressions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "functions-introduction"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/boolean_logic.md",
+              "name": "boolean-logic"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
           "slug": "exercism-matrix",
           "concepts": [
@@ -4192,10 +4224,6 @@
             {
               "url": null,
               "name": "importing"
-            },
-            {
-              "url": null,
-              "name": "opaque-indices"
             },
             {
               "url": null,
