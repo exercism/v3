@@ -21,17 +21,18 @@ A list of reference documents for the various CS concepts, types, paradigms, etc
 
 Each track has its own directory containing the following files and directories:
 
+- **concepts:** This directory contains files to describe the concepts used in the track.
 - **config.json** The updated config.json for a track, with the practice exercises removed to avoid noise.
 - **docs:** This directory contains files, for both the public and maintainers, describing the track and how to contribute. It is envisioned that these documents will be linked to from issues and discussions to provide canonical answers or guidance.
-- **exercises:** The exercises for that language.
-  - **shared:** Exercise files shared across all exercises for that language.
-    - **.docs:** Exercise documentation shared across all exercises for that language.
-  - **concept:** The Concept Exercises for that language.
-  - **practice:** The Practice Exercises for that language.
+- **exercises:** The exercises for that track.
+  - **shared:** Exercise files shared across all exercises for that track.
+    - **.docs:** Exercise documentation shared across all exercises for that track.
+  - **concept:** The Concept Exercises for that track.
+  - **practice:** The Practice Exercises for that track.
 - **README.md:** The track's README, which should contain a short description of the goal of the repository as well as the status of the track's v3 transition. A template is provided during the bootstrapping process.
 - **reference:** Files that help maintainers develop the track. These could be reference documents that help explain track-specific concepts for which no appropriate online document could be found, files on language-specific elements of programming concepts, or something else. Maintainers are free to organise this directory in the way they feel it best contributes to developing their track.
   - **README.md:** The README outlines the concepts that are necessary to learn to become fluent in that language. It could also list any reference documents that have been written.
-  - **concepts.csv:** A machine readable file defining all concept slugs used in the track. Read the [Continuous Integration][concept-ci] document for more information.
+  - **concepts.csv:** A machine readable file defining all concept slugs used in the track. Read the [Continuous Integration][concept-ci] document for more information. This file is optional.
 - **transitions:** Contains a file for each pair of languages, where someone with a background in X learns new language Y. These should explain the concepts that needed to be remapped/learnt. The files in this directory initially aim to help inform us about both the language-agnostic and language-specific files, but will hopefully also in the long-run provide custom pathways for people learning languages.
 
 ## GitHub
