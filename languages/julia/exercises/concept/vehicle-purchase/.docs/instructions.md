@@ -1,6 +1,6 @@
 In this exercise you're going to write some code to help you help you prepare to buy a new vehicle.
 
-You have three tasks, one to help you determine the price of the vehicle you can afford, one to determine what kind of license you will need to get, and one to help you compute your yearly registration fees.
+You have three tasks, one to help you determine the price of the vehicle you can afford, one to determine if you will need to get a licence, and one to help you compute your registration fee.
 
 ## 1. Compute whether or not you can afford the monthly payments on a given vehicle
 
@@ -36,9 +36,9 @@ julia> licence("2020 Gazelle Medeo", "bike")
 "The 2020 Gazelle Medeo requires no licence to operate."
 ```
 
-## 3. Calculate the registration fees for your new vehicle
+## 3. Calculate the registration fee for your new vehicle
 
-The annual registration fee for your new vehicle is based on the following formula:
+The registration fee for your new vehicle is based on the following formula:
 
 - Bicycles do not need to be registered. Therefore the fee is 0€.
 - For any car 10 years or older, the fee is a flat 25€.
