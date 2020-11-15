@@ -70,7 +70,7 @@ C# supports two types of [comments][comments]. Single line comments are preceded
 
 Integer values are defined as one or more (consecutive) digits and support the [default mathematical operators][operators].
 
-A variable name [must follow some rules][identifier-names] like starting either by a letter or an underscore, and [should follow C# naming convention][naming-guidelines]. If a variable name collides with a reserved [C# keyword][csharp-keyword], it must be escaped using `@`. It is not recommended to use that notation, but it can be encountered in exceptional cases, for example: `var @this`, `var @class` or `var @var`.
+A variable name [must follow some rules][identifier-names] like starting either by a letter or an underscore, and [should follow C# naming convention][naming-guidelines]. If a variable name collides with a reserved [C# keyword][csharp-keywords], it must be escaped using `@`. It is not recommended to use that notation, but it can be encountered in exceptional cases, for example: `var @this`, `var @class` or `var @var`.
 
 [assignment]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/assignment-operator
 [var]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/var
@@ -81,4 +81,4 @@ A variable name [must follow some rules][identifier-names] like starting either 
 [comments]: https://www.w3schools.com/cs/cs_comments.asp
 [identifier-names]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/identifier-names
 [naming-guidelines]: https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines
-[csharp-keyword]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/
+[csharp-keywords]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/
