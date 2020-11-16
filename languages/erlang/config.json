@@ -5,7 +5,15 @@
     "indent_size": 4
   },
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+        "slug": "basics",
+        "uuid": "e21279ba-ee09-412a-902d-478ccdc5d28c",
+        "prerequisites": [],
+        "topics": ["math", "functions", "variables"],
+        "difficulty": 1
+      }
+    ],
     "practice": []
   }
 }

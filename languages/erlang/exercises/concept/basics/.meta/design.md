@@ -26,4 +26,4 @@ The goal of this exercise is to introduce the basics of programming in Erlang.
 
 The concepts this exercise unlocks are:
 
-TBD
+- `basics`
