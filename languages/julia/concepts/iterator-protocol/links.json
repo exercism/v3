@@ -2,6 +2,6 @@
     {
         "url": "https://invenia.github.io/blog/2020/11/06/interfacetesting/",
         "description": "Development with Interface Packages",
-        "_why": "Julia's notion of informal interfaces is different to interfaces in many other languages. More experienced students may wonder how one can reliably define and test such interfaces. This post outlines how Invenia, and several of their open-sourced packages, do it in a production environment."
+        "__why": "Julia's notion of informal interfaces is different to interfaces in many other languages. More experienced students may wonder how one can reliably define and test such interfaces. This post outlines how Invenia, and several of their open-sourced packages, do it in a production environment."
     }
 ]
