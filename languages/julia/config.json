@@ -58,7 +58,7 @@
             },
             {
                 "uuid": "9a864ac5-0fda-4ba2-bccc-702a1444c412",
-                "name": "Fibonacci-Iterator",
+                "name": "Fibonacci Iterator",
                 "slug": "fibonacci-iterator",
                 "concepts": ["iterator-protocol", "optional-arguments"],
                 "prerequisites": [
