@@ -23,8 +23,7 @@ The iteration ends if `iterate` returns `nothing`.
     ```
 
 !!! note
-    Julia iterators track the state decoupled from the iterator object.
-    The iterator object itself is generally not mutated.
+    The iterator object itself is usually not mutated by iteration.
 
 To make it clearer when the `iterate` methods are called, one can look at the translation of the `for`-loop syntax:
 
