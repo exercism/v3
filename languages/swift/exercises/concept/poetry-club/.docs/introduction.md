@@ -1,3 +1,7 @@
+## importing
+## string-components
+## string-indexing
+
 We've seen how to build up strings in previous exercises. Here we will see some of the ways to break strings apart.
 
 ### Breaking strings apart
