@@ -61,24 +61,23 @@ julia> for i in Squares(20)
 16
 ```
 
-To achieve that, we define `iterate(iter)` as follows
+To do that we need to define a type `Squares` and two `iterate` methods.
+We will have the `Square` type track `n` and the `state` will simply be the next number to square.
 
 ```julia
-Base.iterate(S::Squares) = (1^2, 2)
-```
+struct Squares
+    n::Int
+end
 
-and `iterate(iter, state)` as
-
-```julia
 function Base.iterate(S::Squares, state)
     item = state^2
-
-    if item > S.max
-        return nothing
+    if item < S.n
+        return (item, state + 1)
     end
-
-    (item, state + 1)
+    return nothing
 end
+
+Base.iterate(S::Squares) = iterate(S, 1)
 ```
 
 You may find it useful to combine these two definitions into one using optional arguments:
