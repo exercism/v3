@@ -401,7 +401,7 @@
           "inheritance",
           "strings",
           "if-statements",
-          "arithmetic-overflow",
+          "overflow",
           "integral-numbers"
         ]
       }
@@ -1292,12 +1292,6 @@
     ]
   },
   "concepts": [
-    {
-      "uuid": "78ab4dbd-da83-4082-825c-e463595b2ed6",
-      "slug": "arithmetic-overflow",
-      "name": "Arithmetic Overflow",
-      "blurb": "TODO: add blurb for arithmetic-overflow concept"
-    },
     {
       "uuid": "efc1a32a-ebea-45ab-8c0b-5b512717abc0",
       "slug": "arrays",
