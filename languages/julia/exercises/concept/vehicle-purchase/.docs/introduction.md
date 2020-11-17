@@ -8,21 +8,20 @@ There are three primary conditional statements that are used in Julia:
 `if`-statements in Julia are similar to those seen in other languages:
 
 ```julia
-julia> function ispositive(n)
+julia> function say_if_positive(n)
            if n > 0
                println("n is positive!")
            else
                println("n is not positive!")
            end
        end
-ispositive (generic function with 1 method)
+say_if_positive (generic function with 1 method)
 
-julia> ispositive(10)
+julia> say_if_positive(10)
 n is positive!
 
-julia> ispositive(-10)
+julia> say_if_positive(-10)
 n is not positive!
-```
 
 <!-- TODO: Add that fancy concept highlight embed thing to boolean expression -->
 If the boolean expression following the `if` evalutes to `true`, the first block of code is run and the second block is skipped.
@@ -70,9 +69,9 @@ For example the following function
 ```julia
 julia> function diagnose(heartrate)
            if heartrate > 100
-               println("The patient has an elevated heart rate.")
+               println("Elevated heart rate.")
            else
-               println("The heart rate is nominal or the patient is dead.")
+               println("Nominal heart rate or dead.")
            end
        end
 diagnose (generic function with 1 method)
@@ -129,6 +128,7 @@ is equivalent to
 a && b
 ```
 
+The last expression in a chain of `&&` and `||` does not need to be a boolean expression.
 You will often find this feature being used for early errors or returns.
 For example, using the `dessert(fruit)` function from above:
 

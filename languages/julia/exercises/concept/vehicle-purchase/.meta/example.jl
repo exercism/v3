@@ -20,7 +20,7 @@ function fee(msrp, age, kind)
     kind == "bike" && return 0
     age >= 10 && return 25
 
-    value = maximum((msrp, 25000))
+    value = max(msrp, 25000)
     percent = 1 - age / 10
     
     return value * percent / 100
