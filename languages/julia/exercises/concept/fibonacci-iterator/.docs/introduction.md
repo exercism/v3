@@ -11,6 +11,7 @@ The iteration ends if `iterate` returns `nothing`.
     Julia currently doesn't have a way to formally define interfaces.
     To implement an interface, you need to look up which methods need to be defined in the Manual, or in the documentation of the package that "defines" the interface.
     Alternatively, you can work your way through `MethodErrors` to find out which methods you need to implement:
+    <!-- TODO check if code blocks work within info boxes -->
     ```julia
     julia> struct MyIter end;
 
