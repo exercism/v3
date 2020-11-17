@@ -81,7 +81,8 @@ diagnose (generic function with 1 method)
 can also be written as
 
 ```julia
-julia> diagnose(heartrate) = heartrate > 100 ? println("The patient has an elevated heart rate.") : println("The heart rate is nominal or the patient is dead.")diagnose (generic function with 1 method)
+julia> diagnose(heartrate) = heartrate > 100 ? println("Elevated heart rate.") : println("Nominal heart rate or dead.")
+diagnose (generic function with 1 method)
 ```
 
 This is especially useful if you want to assign a different value to a variable depending on a condition.
