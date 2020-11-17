@@ -1,6 +1,6 @@
 Sameness is the concept about equality of things.
 
-Common Lisp, like other languages has a set of rules on how to decide if two objects are the 'same'. These rules define four levels, each with a function that performs that level of checking. The levels are structured from strictest to loosest.
+Common Lisp, like other languages has a set of rules on how to decide if two objects are the 'same'. These rules define four levels, each with a function that performs that level of checking. The levels are ordered from strictest to loosest.
 
 ### `eq`
 
@@ -67,8 +67,8 @@ The fourth and most loose level of equality is checked with [`equalp`][hyper-equ
 (equalp 1 1.0) ; => T
 (equalp #\c #\C) ; => T
 (equalp "hello" "HELLO") ; => T
-(equalp #(1 2 3) #(1.0 2.0 3.0)) ; => T
-(equal #S(TEST :SLOT1 'a :SLOT2 'b) #S(TEST :SLOT1 'a :SLOT2 'b)) ; => T
+(equalp #(1 2 3) #(1.0 2.0 3.0)) ; => T (arrays contain elements which are `equalp`)
+(equal #S(TEST :SLOT1 'a :SLOT2 'b) #S(TEST :SLOT1 'a :SLOT2 'b)) ; => T (structures of the same class with slots that have values which are `equalp`)
 ```
 
 ### Type-specific functions
