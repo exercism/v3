@@ -63,7 +63,7 @@ julia> for i in Squares(20)
 ```
 
 To do that we need to define a type `Squares` and two `iterate` methods.
-We will have the `Square` type remember `n` and the `state` will simply be the next number to square.
+We will have the `Squares` type remember `n` and the `state` will simply be the next number to square.
 
 ```julia
 struct Squares
