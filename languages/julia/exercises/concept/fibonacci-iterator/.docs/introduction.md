@@ -1,6 +1,7 @@
 ## iterator-protocol
 
 <!-- TODO: Motivate why iterators are useful -->
+<!-- TODO: Add explanation why the Base.-prefix or import is necessary -->
 
 To implement the informal iteration interface, you need to define two methods `iterate(iter::MyIter)` and `iterate(iter::MyIter, state)`.
 Both methods must return a tuple of an item and the state of the iterator.
