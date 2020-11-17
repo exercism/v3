@@ -16,7 +16,7 @@ The iteration ends if `iterate` returns `nothing`.
     julia> struct MyIter end;
 
     julia> for i in MyIter()
-            @show i
+            println(i)
         end
     ERROR: MethodError: no method matching iterate(::MyIter)
     ...
