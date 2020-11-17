@@ -1,5 +1,3 @@
-#pragma warning disable RCS1163, RCS1110, IDE0060
-
 public static class RedRemoteControlCarTeam
 {
     public class RemoteControlCar
