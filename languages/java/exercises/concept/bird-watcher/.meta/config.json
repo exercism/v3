@@ -6,8 +6,8 @@
     }
   ],
   "editor": {
-    "solution_files": ["src/main/java/BirdCount.java"],
-    "test_files": ["src/test/java/BirdCountTest.java"]
+    "solution_files": ["src/main/java/BirdWatcher.java"],
+    "test_files": ["src/test/java/BirdWatcherTest.java"]
   },
   "forked_from": ["csharp/arrays"]
 }
