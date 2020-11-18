@@ -16,6 +16,7 @@ These are examples of tasks that fit the story of purchasing a vehicle:
 ## Implementations
 
 - [Swift: conditionals][implementation-swift] (reference implementation)
+- [Julia: conditionals][implementation-julia]
 
 ## Related
 
@@ -29,3 +30,4 @@ These are examples of tasks that fit the story of purchasing a vehicle:
 [concepts-guard]: ../concepts/guard.md
 [concepts-switch]: ../concepts/switch.md
 [implementation-swift]: ../../languages/swift/exercises/concept/vehicle-purchase/.docs/instructions.md
+[implementation-julia]: ../../languages/julia/exercises/concept/vehicle-purchase/.docs/instructions.md
