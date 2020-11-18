@@ -242,8 +242,8 @@
         "prerequisites": ["basics"]
       },
       {
-        "slug": "why-cant-i-push-to-main",
-        "name": "Why Can't I Push to Main?",
+        "slug": "developer-privileges",
+        "name": "Developer Privileges",
         "uuid": "a9c3a1c9-19ee-45b2-8189-57e15870a051",
         "concepts": ["object-initializers"],
         "prerequisites": ["constructors", "dictionaries", "properties"]
