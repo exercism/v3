@@ -1,0 +1,26 @@
+[
+  {
+    "url": "http://erlang.org/doc/reference_manual/expressions.html#expression-evaluation",
+    "description": "Expression Evaluation"
+  },
+  {
+    "url": "http://erlang.org/doc/reference_manual/expressions.html#variables",
+    "description": "Variables"
+  },
+  {
+    "url": "http://erlang.org/doc/reference_manual/expressions.html#function-calls",
+    "description": "Function Calls"
+  },
+  {
+    "url": "http://erlang.org/doc/reference_manual/expressions.html#arithmetic-expressions",
+    "description": "Arithmetic Expressions"
+  },
+  {
+    "url": "http://erlang.org/doc/reference_manual/functions.html#function-declaration-syntax",
+    "description": "Function Declaration Syntax"
+  },
+  {
+    "url": "http://erlang.org/doc/reference_manual/modules.html#module-syntax",
+    "description": "Module Syntax"
+  }
+]
