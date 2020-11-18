@@ -1072,7 +1072,7 @@
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/datetime.md",
-              "name": "datetime"
+              "name": "datetimes"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
