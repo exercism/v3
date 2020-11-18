@@ -1048,6 +1048,12 @@
         "slug": "swift",
         "exercise": "vehicle-purchase",
         "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/vehicle-purchase/.docs/instructions.md"
+      },
+      {
+        "track": "Julia",
+        "slug": "julia",
+        "exercise": "vehicle-purchase",
+        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/vehicle-purchase/.docs/instructions.md"
       }
     ]
   },

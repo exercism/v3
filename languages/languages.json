@@ -1132,7 +1132,7 @@
             },
             {
               "url": null,
-              "name": "arithmetic-overflow"
+              "name": "overflow"
             },
             {
               "url": null,
@@ -3297,6 +3297,38 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
               "name": "booleans"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/vehicle-purchase",
+          "slug": "vehicle-purchase",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": null,
+              "name": "if-statements"
+            },
+            {
+              "url": null,
+              "name": "ternary-operator"
+            },
+            {
+              "url": null,
+              "name": "short-circuit-evaluation"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "boolean-expressions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
             }
           ]
         },

@@ -379,7 +379,7 @@
         "concepts": ["time", "timezone"],
         "prerequisites": [
           "if-statements",
-          "datetime",
+          "datetimes",
           "strings",
           "switch-statements"
         ]
@@ -401,7 +401,7 @@
           "inheritance",
           "strings",
           "if-statements",
-          "arithmetic-overflow",
+          "overflow",
           "integral-numbers"
         ]
       }
@@ -1293,12 +1293,6 @@
   },
   "concepts": [
     {
-      "uuid": "78ab4dbd-da83-4082-825c-e463595b2ed6",
-      "slug": "arithmetic-overflow",
-      "name": "Arithmetic Overflow",
-      "blurb": "TODO: add blurb for arithmetic-overflow concept"
-    },
-    {
       "uuid": "efc1a32a-ebea-45ab-8c0b-5b512717abc0",
       "slug": "arrays",
       "name": "Arrays",
@@ -1375,12 +1369,6 @@
       "slug": "constructors",
       "name": "Constructors",
       "blurb": "TODO: add blurb for constructors concept"
-    },
-    {
-      "uuid": "c040c1f0-4625-4725-a6f8-e272af0d41bb",
-      "slug": "datetime",
-      "name": "Datetime",
-      "blurb": "TODO: add blurb for datetime concept"
     },
     {
       "uuid": "bed44bba-b5a5-43e7-a548-b17812a6f536",
