@@ -31,7 +31,7 @@ The story facilitates defining functions:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
+- [C#: wizards-and-warriors][implementation-csharp] (reference implementation)
 
 ## Reference
 
@@ -46,4 +46,4 @@ The story facilitates defining functions:
 [concepts-inheritance]: ../concepts/inheritance.md
 [types-integer]: ../types/integer.md
 [types-string]: ../types/string.md
-[implementation-csharp]: ../../languages/csharp/exercises/concept/inheritance/.docs/instructions.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/wizards-and-warriors/.docs/instructions.md

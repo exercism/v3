@@ -2,9 +2,16 @@
 # Lock files. Arrange alphabetically by language
 ###
 
+# F#
+.ionide
+
 # JavaScript
+node_modules/
 yarn.lock
 package-lock.json
+
+# Python
+__pycache__
 
 # Ruby
 Gemfile
@@ -16,3 +23,11 @@ Cargo.lock
 # VScode settings
 .vscode
 .vscode/settings.json
+
+tmp/
+
+# Intellij IDEA project dir
+.idea
+
+# Code Spaces
+pythonenv3.8

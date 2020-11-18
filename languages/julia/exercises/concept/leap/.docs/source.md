@@ -1,0 +1,2 @@
+- C. Caine, Exercism Mentoring Notes on `leap` exercise, GitHub. (n.d.). https://github.com/exercism/website-copy/blob/ede72a420a96906360cb3aeed0ba51c4692723cc/tracks/julia/exercises/leap/mentoring.md (accessed October 28, 2020).
+- Exercism Problem Specification for `leap` exercise, GitHub. (n.d.). https://github.com/exercism/problem-specifications/tree/42dd0cea20498fd544b152c4e2c0a419bb7e266a/exercises/leap (accessed October 28, 2020).

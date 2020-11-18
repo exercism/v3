@@ -85,9 +85,9 @@ C++ is a very flexible language, so lots of functional concepts apply to it:
 - Enums
 - [Strings][string]
 - [Arrays][array]
-- [Vectors][vector]
-- [Views][view] (`std::span` and `std::string_view`)
-- [Reference types][reference]
+- Vectors
+- Views (`std::span` and `std::string_view`)
+- Reference types
 - [Linked-lists][list]
 - [Dictionaries][map]
 - [Sets][set]

@@ -69,11 +69,17 @@ track/julia:
 track/kotlin:
   - languages/kotlin/**/*
 
+track/nim:
+  - languages/nim/**/*
+
 track/ocaml:
   - languages/ocaml/**/*
 
 track/perl5:
   - languages/perl5/**/*
+
+track/pharo-smalltalk:
+  - languages/pharo-smalltalk/**/*
 
 track/purescript:
   - languages/purescript/**/*
@@ -104,6 +110,9 @@ track/scala:
 
 track/scheme:
   - languages/scheme/**/*
+
+track/swift:
+  - languages/swift/**/*
 
 track/typescript:
   - languages/typescript/**/*

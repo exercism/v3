@@ -1,5 +1,3 @@
-# Design
-
 ## Goal
 
 The goal of this exercise is to teach the student the basics of the Concept of Conditionals in Go.
@@ -23,7 +21,7 @@ The goal of this exercise is to teach the student the basics of the Concept of C
 - `conditionals-if`
 - `conditionals-switch`
 
-## Prequisites
+## Prerequisites
 
 - `basic-strings`
 - `numbers`

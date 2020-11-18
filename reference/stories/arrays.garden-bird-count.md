@@ -16,13 +16,15 @@ These are example tasks that fit the bird watching exercise:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
-- [F#][implementation-fsharp]
+- [C#: bird-watcher][implementation-csharp] (reference implementation)
+- [Elixir: recursion][implementation-elixir]
+- [F#: arrays][implementation-fsharp]
 
 ## Related
 
 - [`types/array`][types-array]
 
 [types-array]: ../types/array.md
-[implementation-csharp]: ../../languages/csharp/exercises/concept/arrays/.docs/instructions.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/arrays/.docs/instructions.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/bird-watcher/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/bird-count/.docs/instructions.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/bird-watcher/.docs/instructions.md

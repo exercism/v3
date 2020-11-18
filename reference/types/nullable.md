@@ -14,8 +14,10 @@ text to fit on a given maximum width. The reference implementation
 
 #### Implementations
 
-| Track | Exercise                         | Changes |
-| ----- | -------------------------------- | ------- |
-| C#    | [strings][implementation-csharp] | None    |
+| Track      | Exercise                                    | Changes |
+| ---------- | ------------------------------------------- | ------- |
+| C#         | [tim-from-marketing][implementation-csharp] | None    |
+| JavaScript | [nullability][implementation-javascript]    | None    |
 
-[implementation-csharp]: ../../languages/csharp/exercises/concept/nullability/.docs/introduction.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/tim-from-marketing/.docs/introduction.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/nullability/.docs/introduction.md

@@ -1,20 +1,20 @@
-## Strings
+## strings
 
-A `string` in Go is a sequence of `bytes`, which doesn't necessarily have to represent characters.
-That being said, `UTF-8` is a central part of `strings` in Go. It is easy to convert a string to `runes` (`UTF-8` characters) or iterate over `runes` in a string.
-This makes dealing with different languages or other special characters in Go very simple.
+A `string` in Go is an immutable sequence of bytes. Strings may contain arbitrary bytes but usually they contain human-readable text.
+Text strings are conventionally interpreted as UTF-8 encoded sequence of Unicode code points (runes) which will be explained in a future exercise.
+A `string` value can be written as a string literal, which is a sequence of bytes enclosed in double quotes:
 
-When dealing with `UTF-8` characters it is important to know that not all characters have the same length;
-`ASCII` characters have a length of one `byte`, while other characters can be as long as four `bytes`.
-Runes, bytes, and their connection to strings will be handled more in-depth in a later exercise.
+```go
+s := "Hello World!"
+```
 
-The underlying type (aka representation) for `string` in Go is the `[]byte` slice, which allows for some commonalities with slices in general.
-For example, you can get a `byte` at position `i` from a `string` called `s` with sub-indexing, like `s[i]`.
-With that said, string types are immutable so operations like s[i] = 'a' are not available and will result in a compilation error.
+Go provides an in-built package called `fmt` (format package) which offers a variaty of functions to manipulate the format of input and output. The most common used functions to print output are `Println` and `Printf`.
+`Println` simply prints the input received on the console screen while `Printf` formats the input, using verbs like `%s` for strings, before printing it on the console.
 
-[Strings, bytes, runes and characters in Go](https://blog.golang.org/strings) provides a deep dive into this topic.
+In Go floating point values are conveniently printed with Printf's verbs: `%g` (compact representation), `%e` (exponent) or `%f` (non exponent). All three verbs allow the field's width and numeric position to be controlled.
 
-## Conditionals
-
-This exercise also introduces _conditionals_. Here is a little intro:
-[Go by Example: If/Else](https://gobyexample.com/if-else)
+```go
+f := 4.3242
+fmt.Printf("%.4", f)
+// Output: 4.32
+```

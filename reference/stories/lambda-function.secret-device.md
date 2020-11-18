@@ -14,7 +14,7 @@ The story also adapts well for [concepts-bitwise_manipulation][concepts-bitwise_
 
 ## Implementations
 
-- [Elixir][implementation-elixir] (reference implementation)
+- [Elixir: anonymous-functions][implementation-elixir] (reference implementation)
 
 ## Reference
 
@@ -24,7 +24,7 @@ The story also adapts well for [concepts-bitwise_manipulation][concepts-bitwise_
 - [`concepts/bitwise_manipulation`][concepts-bitwise_manipulation]
 - [`types/bit`][types-bit]
 
-[implementation-elixir]: ../../languages/elixir/exercises/concept/anonymous-functions/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/secrets/.docs/instructions.md
 [concepts-anonymous_functions]: ../concepts/anonymous_functions.md
 [concepts-function_composition]: ../concepts/function_composition.md
 [concepts-higher_order_functions]: ../concepts/higher_order_functions.md

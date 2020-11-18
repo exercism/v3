@@ -42,6 +42,6 @@ These are example tasks that fit the weighing machine exercise:
 
 ## Implementations
 
-- [C#][implementation-csharp] (reference implementation)
+- [C#: weighing-machine][implementation-csharp] (reference implementation)
 
-[implementation-csharp]: ../../languages/csharp/exercises/concept/properties/.docs/instructions.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/weighing-machine/.docs/instructions.md

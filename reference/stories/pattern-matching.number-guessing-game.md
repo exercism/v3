@@ -20,13 +20,13 @@ These are example tasks that fit the number guessing game exercise:
 
 ## Implementations
 
-- [F#][implementation-fsharp] (reference implementation)
-- [Elixir][implementation-elixir] (forked implementation)
+- [F#: pattern-matching][implementation-fsharp] (reference implementation)
+- [Elixir: multiple-clause-functions][implementation-elixir] (forked implementation)
 
 ## Related
 
 - [`concepts/pattern_matching`][concepts-pattern_matching]
 
 [concepts-pattern_matching]: ../concepts/pattern_matching.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/pattern-matching/.docs/instructions.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/multiple-clause-functions/.docs/instructions.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/guessing-game/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/guessing-game/.docs/instructions.md

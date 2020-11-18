@@ -2,25 +2,7 @@
 
 The concept exercises are based on this [list of concepts][docs-concept-exercises].
 
-## Implemented exercises
-
-These are the concept exercises that have currently been implemented, as well as the concepts they teach and their prerequisite concepts:
-
-| exercise                    | concepts                                                   | prerequisites                                                  |
-| --------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------- |
-| `anonymous-functions`       | `anonymous-functions`, `closures`, `bit-manipulation`      | `basics`                                                       |
-| `basics`                    | `basics`                                                   | none                                                           |
-| `booleans`                  | `booleans`                                                 | `basics`                                                       |
-| `conditionals`              | `conditionals`, `atoms`                                    | `booleans`                                                     |
-| `lists`                     | `lists`, `string-literals`                                 | `booleans`                                                     |
-| `tuples`                    | `tuples`, `pattern-matching`                               | `multiple-clause-functions`, `floating-point-numbers`, `atoms` |
-| `strings`                   | `strings`                                                  | `lists`, `pattern-matching`                                    |
-| `maps`                      | `maps`, `module-attributes-as-constants`                   | `lists`, `tuples`, `anonymous-functions`, `default-arguments`  |
-| `multiple-clause-functions` | `multiple-clause-functions`, `guards`, `default-arguments` | `conditionals`, `string-literals`                              |
-
-**⚠ Note ⚠**: The idea here is to use a `concept` name for the exercise/folder, but perhaps use some sort of "progression", so they will naturally become a sort of path to traverse.
-
-It's only important that it's reasonably easy to _find_ the exercise. It's okay if the name isn't perfect. We **will** iterate on this.
+See `../config.json` for an authoritative and up-to-date list of implemented concept exercises, which concepts they introduce and on which concepts they depend.
 
 ## Contributing
 

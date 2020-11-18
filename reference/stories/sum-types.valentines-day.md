@@ -24,11 +24,11 @@ These are example tasks that fit the pizza delivery exercise:
 
 ## Implementations
 
-- [F#][implementation-fsharp] (reference implementation)
+- [F#: discriminated-unions][implementation-fsharp] (reference implementation)
 
 ## Related
 
 - [`types/sum_type`][types-sum_type]
 
 [types-sum_type]: ../types/sum_type.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/discriminated-unions/.docs/instructions.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/valentines-day/.docs/instructions.md

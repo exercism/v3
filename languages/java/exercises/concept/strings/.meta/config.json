@@ -1,0 +1,13 @@
+{
+  "authors": [
+    {
+      "github_username": "mirkoperillo",
+      "exercism_username": "mirkoperillo"
+    }
+  ],
+  "editor": {
+    "solution_files": ["src/main/java/LogLine.java"],
+    "test_files": ["src/test/java/LogLineTest.java"]
+  },
+  "forked_from": ["csharp/strings"]
+}

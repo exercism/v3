@@ -1,0 +1,14 @@
+{
+  "authors": [
+    {
+      "github_username": "neenjaw",
+      "exercism_username": "neenjaw"
+    }
+  ],
+  "editor": {
+    "solution_files": ["lib/log_level.ex"],
+    "test_files": ["test/log_level_test.exs"]
+  },
+  "forked_from": ["csharp/enums"],
+  "language_versions": ">=1.10"
+}

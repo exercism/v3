@@ -1,0 +1,19 @@
+{
+  "authors": [
+    {
+      "github_username": "tehsphinx",
+      "exercism_username": "tehsphinx"
+    }
+  ],
+  "contributors": [
+    {
+      "github_username": "oanaOM",
+      "exercism_username": "oanaOM"
+    }
+  ],
+  "forked_from": ["csharp/constructors"],
+  "editor": {
+    "solution_files": ["structs.go"],
+    "test_files": ["structs_test.go"]
+  }
+}

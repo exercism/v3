@@ -65,7 +65,8 @@ with the renowned poets.
 
 ## Implementations
 
-- [JavaScript][implementation-javascript] (reference implementation)
+- [JavaScript: strings][implementation-javascript] (reference implementation)
+- [Swift: string-components][implementation-swift]
 
 ## Reference
 
@@ -73,3 +74,4 @@ with the renowned poets.
 
 [types-string]: ../types/string.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/strings/.docs/instructions.md
+[implementation-swift]: ../../languages/swift/exercises/concept/poetry-club/.docs/instructions.md

@@ -32,11 +32,11 @@ These are example tasks that fit the high school sweethearts exercise, each task
 
 ## Implementations
 
-- [Elixir][implementation-elixir] (reference implementation)
+- [Elixir: strings][implementation-elixir] (reference implementation)
 
 ## Related
 
 - [`types/string`][types-string]
 
 [types-string]: ../types/string.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/strings/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/high-school-sweetheart/.docs/instructions.md

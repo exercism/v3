@@ -49,6 +49,10 @@ When designing Concept Exercises, please consider the following guidelines:
 
 When writing documentation and supporting Markdown files for Concept Exercises, please consult the [style guide][style-guide] noting the [automatic formatting section][style-guide-auto-formatting]. Also check any language-specific style guides, where applicable.
 
+## Concept Exercise files
+
+Concept Exercise files are located in the track's `exercises/concept/<slug>` directory.
+
 ## Documentation files
 
 The purpose of the documentation files is explained both in this document and in the [Anatomy of a Concept Exercise video][anatomy-of-a-concept-exercise-video].
@@ -60,10 +64,10 @@ In the browser, these files will show at the relevant times. When used via the C
 **Purpose:** Introduce the concept(s) that the exercise teaches to the student.
 
 - The information provided should give the student just enough context to figure out the solution themselves.
-- Only information that is needed to understand the fundamentals of the concept and solve the exercise should be provided. Extra information should be left for the `after.md`.
+- Only information that is needed to understand the fundamentals of the concept and solve the exercise should be provided. Extra information should be left for the concept's `about.md` document.
 - Links should be used sparingly, if at all. While a link explaining a complex topic like recursion might be useful, for most concepts the links will provide more information than needed so explaining things concisely inline should be the aim.
 - Proper technical terms should be used so that the student can easily search for more information.
-- Code examples should only be used to introduces new syntax (students should not need to search the web for examples of syntax). In other cases provide descriptions or links instead of code.
+- Code examples should only be used to introduce new syntax (students should not need to search the web for examples of syntax). In other cases provide descriptions or links instead of code.
 
 As an example, the introduction to a "strings" exercise might describe a string as just a "Sequence of Unicode characters" or a "series of bytes", tell the users how to create a string, and explain that a string has methods that can be used to manipulate it. Unless the student needs to understand more nuanced details in order to solve the exercise, this type of brief explanation (along with an example of its syntax) should be sufficient information for the student to solve the exercise.
 
@@ -85,6 +89,12 @@ Each task must conform to the following standard:
 - Describe which function/method the student needs to define/implement (e.g. `Implement method X(...) that takes an A and returns a Z`),
 - Provide an example usage of that function in code. These examples should be different to those given in the tests.
 
+We place high value on making Exercism's content safe for everyone and so often err on the side of caution in deciding whether stories are appropriate or not. While we are careful about what we merge, we appreciate that it's hard to be aware of what may be seen as problematic, so we'll always assume you're acting in good faith and do our best to catch any issues in review in a non-confrontational way. If you'd like to check a story with us, please mention @exercism/leadership and we'll look at it together. Here are some guiding points:
+
+- Try to make sure the story is welcoming and can be understood by everyone. If the story contains in-jokes or regional slang, try to think of alternative phrases.
+- Try to write examples that are inclusive to everyone. For example, consider using names from other cultures and mixed genders.
+- Ask yourself whether you know anyone personally who would take offense by the story. If that's the case, consider changing it to avoid it.
+
 For more information, watch [this video][video-docs-instructions.md] and check [this example instructions.md file][docs-instructions.md]. Notice how the example file has a clear distinction between the story at the top and the tasks with code samples below.
 
 ### `.docs/hints.md`
@@ -95,6 +105,7 @@ For more information, watch [this video][video-docs-instructions.md] and check [
 - Hints should be bullet-pointed underneath headings.
 - The hints should be enough to unblock almost any student.
 - The hints should not spell out the solution, but instead point to a resource describing the solution (e.g. linking to documentation for the function to use).
+- The hints may use code samples to explain concepts, but not to outline the solution. e.g. in a lists exercise they might show a snippet of how a certain list function works, but not in a way that is directly copy/pasteable into the solution.
 - General hints about the exercise can appear under the `## General` heading.
 - Task-specific hints should appear underneath headings that match their task heading in the `instructions.md` (e.g. `## 2. Do Y`).
 - Task headings should describe the _what_ of the task, not the _how_.
@@ -104,14 +115,6 @@ For more information, watch [this video][video-docs-instructions.md] and check [
 Viewing hints will not be a "recommended" path and we will (softly) discourage using it unless the student can't progress without it. As such, it's worth considering that the student reading it will be a little confused/overwhelmed and maybe frustrated.
 
 For more information, watch [this video][video-docs-hints.md] and check [this example hints.md file][docs-hints.md]. Notice how the example file has general and task-specific hints and how the hints don't give away the answer but instead link to (external) resources.
-
-### `.docs/after.md`
-
-**Purpose:** Provide more information about the concept(s) for a student to learn from.
-
-Once the student completes the exercise they will be shown this file, which should provide them with a summary of what the exercise aimed to teach. If the exercise introduced new syntax, syntax samples should be included. This document can also link to any additional resources that might be interesting to the student in the context of the exercise.
-
-For more information, watch [this video][video-docs-after.md] and check [this example after.md file][docs-after.md].
 
 ### `.docs/source.md` (required if there are third-party sources)
 
@@ -138,8 +141,10 @@ For more information, watch [this video][video-meta-design.md] and check [this e
 This file contains meta information on the exercise:
 
 - The exercise's author(s) (required)
+  - Including reviewers if their reviews substantially change the exercise (to the extent where it feels like "you got there together")
 - The exercise's contributor(s) (optional)
-- Which exercise it was forked from (required if the exercise is forked)
+  - Including reviewers if their reviews are meaningful/actionable/actioned.
+- Which exercise(s) it was forked from (required if the exercise is forked)
 - Language version requirements (optional)
 
 If someone is both an author _and_ a contributor, only list that person as an author.
@@ -188,6 +193,7 @@ Note that:
 
 - The order of authors and contributors is not significant and has no meaning.
 - If you are forking an exercise, do not reference original authors or contributors. Just ensure that `forked_from` is correct.
+- While not common, it _is_ possible to fork from multiple exercises.
 - `language_versions` is a free-form string that tracks are free to use and interpret as they like.
 
 ## Code files
@@ -205,6 +211,7 @@ What these files look like depends on your track. At a minimum, the following tr
 - For compiled languages, consider having compilable code, as compiler messages can sometimes be hard to grasp for students new to the language.
 - The code should be as simple as possible.
 - Only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
+- The stub file is shown to the student when doing in-browser coding and is downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-stub-file] and check [this example stub file][stub-file].
 
@@ -216,6 +223,7 @@ For more information, watch [this video][video-stub-file] and check [this exampl
 - The code should be as simple as possible.
 - Only use language features introduced by the exercise's prerequisites (and their prerequisites, and so on).
 - All but the first test should be skipped by default. How this is done differs between languages.
+- The tests file is _not_ shown to the student when doing in-browser coding, but _is_ downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-tests-file] and check [this example tests file][tests-file].
 
@@ -223,15 +231,55 @@ For more information, watch [this video][video-tests-file] and check [this examp
 
 **Purpose:** Provide an idiomatic implementation that passes all the tests.
 
-- The implementation must be _idiomatic_.
-- The code should be as simple as possible.
-- Only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
+- This implementation is the target code that we want a student to aim for.
+- Mentors will be shown this code as the "target" when writing feedback
+- The implementation should only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
+- The example file is _not_ shown to the student when doing in-browser coding and is _not_ downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-example-file] and check [this example file][example-file].
 
+## Concept files
+
+For each concept that an exercise teaches (which are the concepts listed in the exercise's `concepts` key in the track's `config.json` file), two concept documents must be added. The concept files for a concept are located in the track's `concepts/<concept>` directory.
+
+### `about.md`
+
+**Purpose:** Provide information about the concept(s) for a student who has completed the concept execise to learn from and refer back to.
+
+Once the student completes the exercise they will be shown this file, which should provide them with a summary of the concept. If the concept introduces new syntax, syntax samples should be included. At a minimum, this file should contain all information that is introduced in the exercise's [`.docs/introduction.md` document](#docsintroductionmd).
+
+This document can also link to any additional resources that might be interesting to the student in the context of the exercise, such as:
+
+- Popular usages for a feature
+- Common pitfalls in a feature's use (e.g. casual use of multiple **threads**)
+- Limitations on use that may catch out the unsuspecting developer
+- Alternative approaches addressed in other exercises
+- Compromises made for ease of learning or to accommodate the Exercism environment, e.g. multiple classes in single file
+- Similar features with which the concept may be confused
+- Performance characteristics and memory usage
+
+See [this example about.md file][concept-docs-about.md].
+
+### `links.json`
+
+**Purpose:** Provide helpful links that provide more reading or information about a concept.
+
+These might be official docs, a great tutorial, etc. These links do _not_ replace the more contextual links within a concept's `about.md` file, but provide a quick set of overarching reference points for a student.
+
+Each link must contain the following fields:
+
+- `url`: the URL it links to.
+- `description`: a description of the link, which is shown as the link text.
+
+Links can also optionally have an `icon_url` field, which can be used to customize the icon shown when the link is displayed. If not specified, the icon defaults to the favicon.
+
+See [this example links.json file][concept-docs-links.json].
+
 ## Shared files
 
-### `exercises/shared/.docs/cli.md`
+Some files are meant to be shared amongst _all_ exercises. These shared files are located in the track's `exercises/shared` directory.
+
+### `.docs/cli.md`
 
 **Purpose:** Explain how to use the Exercism CLI to work with an exercise.
 
@@ -239,7 +287,7 @@ This file contains information on how to work with the exercise when using the C
 
 See [this example cli.md file][shared-docs-cli.md].
 
-### `exercises/shared/.docs/debug.md`
+### `.docs/debug.md`
 
 **Purpose:** Describe the track's in-browser debug options.
 
@@ -261,15 +309,16 @@ For each exercise:
 
 See [this example config.json file][config.json].
 
-[docs-after.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md
-[docs-hints.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/hints.md
-[docs-introduction.md]: ../languages/csharp/exercises/concept/strings/.docs/introduction.md
-[docs-instructions.md]: ../languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
-[meta-config.json]: ../languages/fsharp/exercises/concept/booleans/.meta/config.json
-[meta-source.md]: ../languages/julia/exercises/concept/multiple-dispatch/.docs/source.md
-[meta-design.md]: ../languages/fsharp/exercises/concept/booleans/.meta/design.md
+[docs-hints.md]: ../languages/csharp/exercises/concept/interest-is-interesting/.docs/hints.md
+[docs-introduction.md]: ../languages/csharp/exercises/concept/log-levels/.docs/introduction.md
+[docs-instructions.md]: ../languages/csharp/exercises/concept/interest-is-interesting/.docs/instructions.md
+[meta-config.json]: ../languages/fsharp/exercises/concept/annalyns-infiltration/.meta/config.json
+[meta-source.md]: ../languages/julia/exercises/concept/encounters/.docs/source.md
+[meta-design.md]: ../languages/fsharp/exercises/concept/annalyns-infiltration/.meta/design.md
 [shared-docs-cli.md]: ../languages/csharp/exercises/shared/.docs/cli.md
 [shared-docs-debug.md]: ../languages/csharp/exercises/shared/.docs/debug.md
+[concept-docs-about.md]: ../languages/fsharp/concepts/strings/about.md
+[concept-docs-links.json]: ../languages/fsharp/concepts/strings/links.json
 [config.json]: ../languages/csharp/config.json
 [style-guide]: ./maintainers/style-guide.md
 [style-guide-auto-formatting]: ./maintainers/style-guide.md#auto-formatting
@@ -277,14 +326,13 @@ See [this example config.json file][config.json].
 [video-docs-introduction.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=77
 [video-docs-instructions.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=309
 [video-docs-hints.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=482
-[video-docs-after.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=596
 [video-meta-design.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=870
 [video-meta-config.json]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1037
 [video-stub-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1171
 [video-tests-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1255
 [video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
-[stub-file]: ../languages/csharp/exercises/concept/strings/Strings.cs
-[tests-file]: ../languages/csharp/exercises/concept/strings/StringsTests.cs
-[example-file]: ../languages/csharp/exercises/concept/strings/.meta/Example.cs
+[stub-file]: ../languages/csharp/exercises/concept/log-levels/LogLevels.cs
+[tests-file]: ../languages/csharp/exercises/concept/log-levels/LogLevelsTests.cs
+[example-file]: ../languages/csharp/exercises/concept/log-levels/.meta/Example.cs
 [determining-concepts-naming]: ./maintainers/determining-concepts.md#naming-concepts
 [migrating-your-config-json-files]: ./maintainers/migrating-your-config-json-files.md

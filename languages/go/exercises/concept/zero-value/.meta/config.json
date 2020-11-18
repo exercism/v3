@@ -1,0 +1,18 @@
+{
+  "authors": [
+    {
+      "github_username": "jamessouth",
+      "exercism_username": "jamessouth"
+    }
+  ],
+  "contributors": [
+    {
+      "github_username": "tehsphinx",
+      "exercism_username": "tehsphinx"
+    }
+  ],
+  "editor": {
+    "solution_files": ["zero_value.go"],
+    "test_files": ["zero_value_test.go"]
+  }
+}

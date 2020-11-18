@@ -33,8 +33,13 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 ## Implementations
 
-- [F#][implementation-fsharp]
-- [JavaScript][implementation-javascript] (reference implementation)
+- [F#: booleans][implementation-fsharp]
+- [JavaScript: booleans][implementation-javascript] (reference implementation)
+- [Julia: boolean-logic][implementation-julia]
+
+## Name suggestions
+
+- [Annalyn's Analytical Avenge Attempt][implementation-julia]
 
 ## Related
 
@@ -42,5 +47,6 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 [types-boolean]: ../types/boolean.md
 [javascript-concept-booleans]: ../../languages/javascript/exercises/concept/booleans
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/booleans/.docs/instructions.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/annalyns-infiltration/.docs/instructions.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/booleans/.docs/instructions.md
+[implementation-julia]: ../../languages/julia/exercises/concept/boolean-logic/.docs/instructions.md

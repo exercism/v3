@@ -39,11 +39,11 @@ This exercise asks students to write code to analyse the production of an assemb
 
 #### Implementations
 
-| Track | Exercise                                         | Changes |
-| ----- | ------------------------------------------------ | ------- |
-| C#    | [numbers][implementation-csharp-production-line] | None    |
-| F#    | [numbers][implementation-fsharp-production-line] | None    |
-| Go    | [numbers][implementation-go-production-line]     | None    |
+| Track | Exercise                                               | Changes |
+| ----- | ------------------------------------------------------ | ------- |
+| C#    | [cars-assemble][implementation-csharp-production-line] | None    |
+| F#    | [cars-assemble][implementation-fsharp-production-line] | None    |
+| Go    | [numbers][implementation-go-production-line]           | None    |
 
 [type-bit]: ./bit.md
 [type-byte]: ./byte.md
@@ -51,6 +51,6 @@ This exercise asks students to write code to analyse the production of an assemb
 [type-long]: ./long.md
 [type-short]: ./short.md
 [type-word]: ./word.md
-[implementation-csharp-production-line]: ../../languages/csharp/exercises/concept/numbers/.docs/introduction.md
-[implementation-fsharp-production-line]: ../../languages/fsharp/exercises/concept/numbers/.docs/introduction.md
+[implementation-csharp-production-line]: ../../languages/csharp/exercises/concept/cars-assemble/.docs/introduction.md
+[implementation-fsharp-production-line]: ../../languages/fsharp/exercises/concept/cars-assemble/.docs/introduction.md
 [implementation-go-production-line]: ../../languages/go/exercises/concept/numbers/.docs/introduction.md

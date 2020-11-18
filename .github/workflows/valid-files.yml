@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  max-file-size:
+    name: Check file sizes
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Fetch everything
+        run: git fetch --prune --unshallow
+
+      - name: Error if any file is above 1 MB
+        run: |
+          # --diff-filter=d excludes deleted (d) files
+          # -z separates the files using NUL
+          git diff --diff-filter=d --name-only -z origin/master... | while read -r -d '' FILE; do
+            # Skip files that are allowed to have larger size
+            if [ "$FILE" == "languages/languages.json" ] ||
+               [ "$FILE" == "languages/README.md" ] ||
+               [ "$FILE" == "reference/references.json" ] ||
+               [ "$FILE" == "reference/README.md" ] ||
+               [ "$FILE" == "reference/stories/stories.json" ] ||
+               [ "$FILE" == "reference/stories/README.md" ]; then
+                continue
+            fi
+
+            if [ "$(stat --printf="%s" "$FILE")" -gt 100000 ]; then
+              echo "$FILE is larger than 10 KB"
+              echo "Please ping @iHiD if you are sure that this file is required."
+              exit 1
+            fi
+          done
+
+  valid-filenames:
+    name: Check file names
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Fetch everything
+        run: git fetch --prune --unshallow
+
+      - name: Error if filenames contain illegal characters or words
+        run: |
+          # --diff-filter=d excludes deleted (d) files
+          # -z separates the files using NUL
+          git diff --diff-filter=d --name-only -z origin/master... | while read -r -d '' LINE; do
+            FILE=$(basename "$LINE")
+            if ! [[ "$FILE" =~ ^[a-zA-Z0-9._-]+$ ]]; then
+                echo "$FILE contains illegal characters."
+                echo "Filenames in this repo may only include the characters [a-zA-Z0-9._-] for security reasons."
+                echo "See https://github.com/exercism/v3/issues/1465#issuecomment-629873323 for more information."
+                exit 1
+            elif [[ "$FILE" =~ ^(AUX|NUL|PRN|CON|LPT[0-9]|COM[0-9])$ ]]; then
+                echo "$FILE is not a valid filename on Windows."
+                echo "See https://github.com/exercism/v3/issues/1369 for more information."
+                exit 1
+            fi
+          done

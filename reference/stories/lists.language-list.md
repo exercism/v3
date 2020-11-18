@@ -19,15 +19,15 @@ The exercise generally guides students how to:
 
 ## Implementations
 
-- [Clojure][implementation-clojure] (reference implementation)
-- [Elixir][implementation-elixir]
-- [F#][implementation-fsharp]
+- [Clojure: lists][implementation-clojure] (reference implementation)
+- [Elixir: lists][implementation-elixir]
+- [F#: lists][implementation-fsharp]
 
 ## Reference
 
 - [`types/list`][types-list]
 
 [implementation-clojure]: ../../languages/clojure/exercises/concept/lists/.docs/instructions.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/lists/.docs/instructions.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/lists/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/language-list/.docs/instructions.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/tracks-on-tracks-on-tracks/.docs/instructions.md
 [types-list]: ../types/list.md

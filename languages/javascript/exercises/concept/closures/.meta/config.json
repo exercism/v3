@@ -1,0 +1,12 @@
+{
+  "authors": [
+    {
+      "github_username": "neenjaw",
+      "exercism_username": "neenjaw"
+    }
+  ],
+  "editor": {
+    "solution_files": ["closures.js"],
+    "test_files": ["closures.spec.js"]
+  }
+}

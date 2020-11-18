@@ -1,0 +1,13 @@
+{
+  "authors": [
+    {
+      "github_username": "TalesDias",
+      "exercism_username": "TalesDias"
+    }
+  ],
+  "editor": {
+    "solution_files": ["src/main/java/Blackjack.java"],
+    "test_files": ["src/test/java/BlackjackTest.java"]
+  },
+  "forked_from": ["go/conditionals"]
+}

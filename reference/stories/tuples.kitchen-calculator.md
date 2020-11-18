@@ -4,7 +4,7 @@
 
 The story facilitates the exploration of [tuples][type-tuple] in a language.
 
-Basic premise that that often kitchen ingredients are measured in obsure ways and require different conversion depending on the amounts or the tools available on hand. Tuples are used to provide [duck typing][concept-duck-typing] to the numeric component of the measurement.
+Basic premise that that often kitchen ingredients are measured in obscure ways and require different conversion depending on the amounts or the tools available on hand. Tuples are used to provide [duck typing][concept-duck-typing] to the numeric component of the measurement.
 
 So this explores basic conversion of values using floating point numbers.
 
@@ -30,8 +30,8 @@ This should guide students how to use:
 
 ## Implementations
 
-- [Elixir][implementation-elixir]
+- [Elixir: tuples][implementation-elixir]
 
 [concept-duck-typing]: ../concepts/duck_typing.md
 [type-tuple]: ../types/tuple.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/tuples/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/kitchen-calculator/.docs/instructions.md
