@@ -721,8 +721,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/why-cant-i-push-to-main",
-          "slug": "why-cant-i-push-to-main",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/developer-privileges",
+          "slug": "developer-privileges",
           "concepts": [
             {
               "url": null,
