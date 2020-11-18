@@ -1,4 +1,4 @@
-In Python, [an enum][enum-docs] is a set of names that are bound to unique `literal`, or `constant` values. Enums are defined by inheriting an `Enum` class. Built-in enum types are available in `enum` and `Enum` can be imported with `from enum import Enum`.
+In Python, [an enum][enum-docs] is a set of names that are bound to unique `literal` or `constant` values. Enums are defined by inheriting an `Enum` class. Built-in enum types are available in the module `enum` and the class `Enum` can be imported using `from enum import Enum`.
 
 ```python
 class Color(Enum):
@@ -25,7 +25,7 @@ Animal.ANT.value
 #=> 1
 ```
 
-When you assign the same value to 2 members in an enum, the latter assigned member will be an alias to the formed one.
+When assigning the same value to two members in an enum, the latter assigned member will be an alias to the formed one. It is not allowed to use the same name for two members of an enum.
 
 ```python
 class Color(Enum):
@@ -37,7 +37,7 @@ Color.ALIAS_OF_RED
 #=> <Color.RED: 1>
 ```
 
-You can iterate through the members of the enum:
+Iterating through the members of the enum can be done with:
 
 ```python
 for member in Color:
@@ -53,7 +53,7 @@ for member in Color.__members__.items():
 #=>('ALIAS_OF_RED', <Color.RED: 1>)
 ```
 
-You can check and compare enum members by using the [`is` (called identity)][identity-keyword] or `is not` operators. You can also use the `==` or `!=` operator.
+Enum members can be compared using [`is` (called identity)][identity-keyword] or `is not` operators. The `==` or `!=` operators would work likewise.
 
 ```python
 a = Color.RED
@@ -65,7 +65,7 @@ a == Color.RED
 #=> True
 ```
 
-You can use the [`auto()` function][enum-auto-docs] to automatically assign starting at 1 and increment subsequent values.
+To assign integer values, the [`auto()` function][enum-auto-docs] starts with `1` and sets automatically subsequent values.
 
 ```python
 class Shape(Enum):
@@ -74,7 +74,7 @@ class Shape(Enum):
     OVAL = auto()
 ```
 
-If you want to disallow aliases, and want to keep the members of the enum unique, you can use the `@unique` decorator.
+To disallow aliases (which mean duplicate values), the `@unique` decorator may be used.
 
 ```python
 @unique
@@ -85,7 +85,19 @@ class Shape(Enum):
 #=> ValueError: duplicate values found in <enum 'Shape'>: TRIANGLE -> CIRCLE
 ```
 
-You can define your own [restricted `Enum`][restricted-enums] by subclassing `Enum` with any mix-in or data-type.
+To access an enum member for a given value, this notation can be used `EnumName(value)`:
+
+```python
+g = Color(2)
+
+g is Color.GREEN
+#=> True
+
+g
+#=> <Color.GREEN: 2>
+```
+
+A custom [restricted `Enum`][restricted-enums] can be written by subclassing `Enum` with any mix-in or data-type. For example:
 
 ```python
 class StrEnum(str, Enum):

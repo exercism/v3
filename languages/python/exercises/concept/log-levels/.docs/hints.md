@@ -4,21 +4,26 @@
 
 ## 1. Parse log level
 
-- You need to use string splits to split the log message to multiple parts.
-- Once you have the required part of the string split you can use LogLevel(`string`) to return
+- Use [string `split`](https://www.w3schools.com/python/ref_string_split.asp) to extract the log level from the message.
+- With the extracted part of the string, access the enum member with `LogLevel(string)`.
 
 ## 2. Support unknown log level
 
-- You need to first check if the value is in the LogLevel enum before calling LogLevel(`string`) and return.
+- Check if the extracted part of the string is a value of the enum `LogLevel`.
+- If the value does not match any of the enum member values, then return the Unknown member.
 
 ## 3. Convert log line to short format
 
-- You need to do an if else with all the members of the LogLevel and return the String along with the int value as per the given format. ( You need to use a `==` operator )
+- Match the log level to its code level (an integer), multiple solutions are possible: if statements, another enum or any other solution.
+- Use string formatting to return the code level and the message.
 
 ## 4. Create an Alias
 
-- You just have to return the newly created alias value to the function output.
+- Create the new alias member for Warn
+- Return the newly created member
 
 ## 5. All Member Names and Values
 
-- You need to iterate over all the members in the enum and return a tuple containing (member.name, member.value) in a list.
+- Iterate on all the members of the enum and return a list of tuple.
+- The tuple can be constructed with `(item1, item2)`.
+- The name and value of the enum can be accessed with `member.name` and `member.value`
