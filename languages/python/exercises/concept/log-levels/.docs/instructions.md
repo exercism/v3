@@ -4,29 +4,20 @@ Each log line is a string formatted as follows: `"[<LVL>]: <MESSAGE>"`.
 
 These are the different log levels:
 
-- `TRC` (trace)
-- `DBG` (debug)
-- `INF` (info)
-- `WRN` (warning)
-- `ERR` (error)
-- `FTL` (fatal)
-
-You have three tasks.
+| LEVEL     | LVL   |
+| --------- | ----- |
+| `Trace`   | `TRC` |
+| `Debug`   | `DBG` |
+| `Info`    | `INF` |
+| `Warning` | `WRN` |
+| `Error`   | `ERR` |
+| `Fatal`   | `FTL` |
 
 ## 1. Parse log level
 
 Define a `LogLevel` enum that has six elements corresponding to the above log levels.
 
-- `Trace`
-- `Debug`
-- `Info`
-- `Warning`
-- `Error`
-- `Fatal`
-
-Defind the `parse_log_level` function which will take the 1 parameter, the log message. Return the Type of Log Level the log message belongs to.
-
-Note: The `LogLevel` enum has to be defined on top of the file (outside the function).
+Define the `parse_log_level` function which takes the log message as parameter and returns the enum member of its level.
 
 ```python
 parse_log_level("[INF]: File deleted")
@@ -35,7 +26,7 @@ parse_log_level("[INF]: File deleted")
 
 ## 2. Support unknown log level
 
-Unfortunately, occasionally some log lines have an unknown log level. To gracefully handle these log lines, add an `Unknown` element to the `LogLevel` enum which should be returned when parsing an unknown log level:
+Unfortunately, occasionally some log lines have an unknown log messages. To gracefully handle these log messages, add an `Unknown` member to the `LogLevel` enum which should be returned when parsing an unknown log level:
 
 ```python
 parse_log_level("[XYZ]: Overly specific, out of context message")
@@ -44,55 +35,52 @@ parse_log_level("[XYZ]: Overly specific, out of context message")
 
 ## 3. Convert log line to short format
 
-The log level of a log line is quite verbose. To reduce the disk space needed to store the log lines, a short format is developed: `"[<ENCODED_LEVEL>]:<MESSAGE>"`.
+The log level of a log line is quite verbose. To reduce the disk space needed to store the log lines, a short format is added: `"[<CODE_LEVEL>]:<MESSAGE>"`.
 
-The encoded log level is simple mapping of a log level to a number:
+The code log level is simple mapping of a log level to a number:
 
-- `Trace` - `0`
-- `Debug` - `1`
-- `Info` - `4`
-- `Warning` - `5`
-- `Error` - `6`
-- `Fatal` - `7`
-- `Unknown` - `42`
+| LEVEL     | CODE |
+| --------- | ---- |
+| `Trace`   | `0`  |
+| `Debug`   | `1`  |
+| `Info`    | `4`  |
+| `Warning` | `5`  |
+| `Error`   | `6`  |
+| `Fatal`   | `7`  |
+| `Unknown` | `42` |
 
-Define the `convert_to_short_log()` which takes 2 parameters.
+Define the `convert_to_short_log()` which takes two parameters:
 
 1. Log level - The Log level of the log sent. ex: LogLevel.Error
-2. Log Message
+2. Log Message - The message of type str.
 
 ```python
 convert_to_short_log(LogLevel.Error, "Stack overflow")
 # => "6:Stack overflow"
 ```
 
-## 4. Create an Alais
+## 4. Create an Alias
 
 It looks like the user has created logs for `LogLevel.Warn` instead of `LogLevel.Warning`. Create an `alias` for `LogLevel.Warning` and return the alias name. This can be done on the same enum class you have defined at the top of the file.
 
-Note: Both the LogLevels should point to same value. ie: LogLevel.Warning = "WRN" & LogLevel.Warn = "WRN"
+Note: Both the LogLevels should point to same value. ie: `LogLevel.Warning = "WRN"` & `LogLevel.Warn = "WRN"`
 
 ```python
-return_alias()
+get_warn_alias()
 #=> LogLevel.Warn
-return_alias() == LogLevel.Warning
+
+get_warn_alias() == LogLevel.Warning
 #=> True
 ```
 
 ## 5. All Member Names and Values
 
-Define the function `return_members()` that will take 1 parameter.
+Define the function `get_members()`.
 
-1. This parameter will take a randomly created enum.
-
-You should return the (name, value) in tuple format of all the members in a list.
+You should return the (name, value) in tuple format of all the members of the enum `LogLevel`.
 
 ```python
-
-class Color(enum.Enum):
-    RED = 'red'
-    GREEN = 'green'
-
-return_members(Color)
-#=> [('RED', 'red'), ('GREEN', 'green')]
+get_members()
+#=> [('Trace', 'TRC'), ('Debug', 'DBG'), ('Info', 'INF'), ('Warning', 'WRN'),
+# ('Error', 'ERR'), ('Fatal', 'FTL'), ('Unknown', 'UKN')]
 ```
