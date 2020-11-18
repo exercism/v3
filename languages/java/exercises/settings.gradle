@@ -1,5 +1,5 @@
-include 'concept:bird-count'
 include 'concept:basics'
+include 'concept:bird-watcher'
 include 'concept:booleans'
 include 'concept:strings'
 include 'concept:chars'
