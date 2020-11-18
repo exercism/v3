@@ -70,7 +70,7 @@ This report is updated automatically when any _design.md_ document is modified o
 - nullable-values [_(tim-from-marketing)_][exercise-tim-from-marketing] - [Design][design-tim-from-marketing]
 - numbers [_(cars-assemble)_][exercise-cars-assemble] - [Design][design-cars-assemble]
 - numbers [_(cars-assemble)_][exercise-cars-assemble] - [Design][design-cars-assemble]
-- object-initializers [_(why-cant-i-push-to-main)_][exercise-why-cant-i-push-to-main] - [Design][design-why-cant-i-push-to-main]
+- object-initializers [_(developer-privileges)_][exercise-developer-privileges] - [Design][design-developer-privileges]
 - objects [_(elons-toys)_][exercise-elons-toys] - [Design][design-elons-toys], [Background][tnc-objects]
 - operator-overloading [_(hyperia-forex)_][exercise-hyperia-forex] - [Design][design-hyperia-forex]
 - optional-arguments [_(building-telemetry)_][exercise-building-telemetry] - [Design][design-building-telemetry], [Background][tnc-optional-arguments]
@@ -288,6 +288,7 @@ This report is updated automatically when any _design.md_ document is modified o
 [design-building-telemetry]: ../exercises/concept/building-telemetry/.meta/design.md
 [design-calculator-conundrum]: ../exercises/concept/calculator-conundrum/.meta/design.md
 [design-cars-assemble]: ../exercises/concept/cars-assemble/.meta/design.md
+[design-developer-privileges]: ../exercises/concept/developer-privileges/.meta/design.md
 [design-elons-toys]: ../exercises/concept/elons-toys/.meta/design.md
 [design-faceid-2]: ../exercises/concept/faceid-2/.meta/design.md
 [design-football-match-reports]: ../exercises/concept/football-match-reports/.meta/design.md
@@ -317,7 +318,6 @@ This report is updated automatically when any _design.md_ document is modified o
 [design-tim-from-marketing]: ../exercises/concept/tim-from-marketing/.meta/design.md
 [design-tracks-on-tracks-on-tracks]: ../exercises/concept/tracks-on-tracks-on-tracks/.meta/design.md
 [design-weighing-machine]: ../exercises/concept/weighing-machine/.meta/design.md
-[design-why-cant-i-push-to-main]: ../exercises/concept/why-cant-i-push-to-main/.meta/design.md
 [design-wizards-and-warriors]: ../exercises/concept/wizards-and-warriors/.meta/design.md
 [design-wizards-and-warriors-2]: ../exercises/concept/wizards-and-warriors-2/.meta/design.md
 [exercise-annalyns-infiltration]: ../exercises/concept/annalyns-infiltration
@@ -329,6 +329,7 @@ This report is updated automatically when any _design.md_ document is modified o
 [exercise-building-telemetry]: ../exercises/concept/building-telemetry
 [exercise-calculator-conundrum]: ../exercises/concept/calculator-conundrum
 [exercise-cars-assemble]: ../exercises/concept/cars-assemble
+[exercise-developer-privileges]: ../exercises/concept/developer-privileges
 [exercise-elons-toys]: ../exercises/concept/elons-toys
 [exercise-faceid-2]: ../exercises/concept/faceid-2
 [exercise-football-match-reports]: ../exercises/concept/football-match-reports
@@ -358,7 +359,6 @@ This report is updated automatically when any _design.md_ document is modified o
 [exercise-tim-from-marketing]: ../exercises/concept/tim-from-marketing
 [exercise-tracks-on-tracks-on-tracks]: ../exercises/concept/tracks-on-tracks-on-tracks
 [exercise-weighing-machine]: ../exercises/concept/weighing-machine
-[exercise-why-cant-i-push-to-main]: ../exercises/concept/why-cant-i-push-to-main
 [exercise-wizards-and-warriors]: ../exercises/concept/wizards-and-warriors
 [exercise-wizards-and-warriors-2]: ../exercises/concept/wizards-and-warriors-2
 [tnc-arrays]: ../../../reference/types/array.md
