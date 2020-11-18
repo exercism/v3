@@ -379,7 +379,7 @@
         "concepts": ["time", "timezone"],
         "prerequisites": [
           "if-statements",
-          "datetime",
+          "datetimes",
           "strings",
           "switch-statements"
         ]
@@ -1369,12 +1369,6 @@
       "slug": "constructors",
       "name": "Constructors",
       "blurb": "TODO: add blurb for constructors concept"
-    },
-    {
-      "uuid": "c040c1f0-4625-4725-a6f8-e272af0d41bb",
-      "slug": "datetime",
-      "name": "Datetime",
-      "blurb": "TODO: add blurb for datetime concept"
     },
     {
       "uuid": "bed44bba-b5a5-43e7-a548-b17812a6f536",
