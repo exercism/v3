@@ -1,5 +1,3 @@
-## For loop
-
 The for loop provides a mechanism to execute a group of statements repeatedly.
 
 Syntax:
