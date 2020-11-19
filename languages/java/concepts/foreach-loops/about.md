@@ -1,3 +1,5 @@
+The [foreach loop][foreach-loop] provides a mechanism for executing a statement group for each element in a collection or array.
+
 Syntax:
 `````java
 for(declaration: collection) {
@@ -40,3 +42,6 @@ for(char vowel:vowels) {
     vowels = ['Y'];  // This would result in a compiler error
 }
 ```
+
+[foreach-loop]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html
+
