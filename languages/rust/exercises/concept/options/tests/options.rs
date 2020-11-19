@@ -23,7 +23,7 @@ fn test_reviving_alive_player() {
         mana: None,
         level: 8,
     };
-    assert_eq!(alive_player.revive().is_none(), true);
+    assert_eq!(alive_player.revive(), None);
 }
 
 #[test]
@@ -57,11 +57,7 @@ fn test_cast_spell_with_insufficient_mana() {
 
     // we want to clone so we can compare before-and-after effects of casting the spell,
     // but we don't want to introduce that concept to the student yet, so we have to do it manually
-    let clone = Player {
-        health: no_mana_wizard.health,
-        mana: no_mana_wizard.mana,
-        level: no_mana_wizard.level,
-    };
+    let clone = Player { ..no_mana_wizard };
 
     assert_eq!(no_mana_wizard.cast_spell(3), 0);
     assert_eq!(no_mana_wizard.health, clone.health);
