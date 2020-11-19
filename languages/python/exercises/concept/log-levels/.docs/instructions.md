@@ -37,7 +37,7 @@ parse_log_level("[XYZ]: Overly specific, out of context message")
 
 The log level of a log line is quite verbose. To reduce the disk space needed to store the log messages, a short format is defined: `"[<CODE_LEVEL>]:<MESSAGE>"`.
 
-The code log level is following a simple mapping:
+The log level codes are following a simple mapping:
 
 | LEVEL     | CODE |
 | --------- | ---- |
@@ -51,8 +51,8 @@ The code log level is following a simple mapping:
 
 Define the `convert_to_short_log()` which takes this two parameters:
 
-1. Log level - The Log level of the log sent. ex: LogLevel.Error
-2. Log Message - The message of type str.
+1. Log level - The Log level of the log sent. ex: `LogLevel.Error`.
+2. Log Message - The message of type `str`.
 
 ```python
 convert_to_short_log(LogLevel.Error, "Stack overflow")
@@ -63,9 +63,7 @@ convert_to_short_log(LogLevel.Error, "Stack overflow")
 
 It looks like the user has created logs for `LogLevel.Warn` instead of `LogLevel.Warning`. Create an `alias` for `LogLevel.Warning` and return the new alias member in the function `get_warn_alias`.
 
-This can be done on the same enum class `LogLevel` already defined at the top of the file.
-
-Note: Both the LogLevels should point to same value. ie: `LogLevel.Warning = "WRN"` & `LogLevel.Warn = "WRN"`
+This can be done on the same enum class `LogLevel` already defined at the top of the file. Both the LogLevels should point to same value `"WRN"`.
 
 ```python
 get_warn_alias()
@@ -79,7 +77,7 @@ get_warn_alias() == LogLevel.Warning
 
 Define the function `get_members()`.
 
-This function should return a list of tuple `(name, value)` with all the members of the enum `LogLevel`.
+This function should return a list of tuples `(name, value)` containing all the members of the enum `LogLevel`.
 
 ```python
 get_members()
