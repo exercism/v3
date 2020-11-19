@@ -1,5 +1,3 @@
-## For each loop
-
 Syntax:
 `````java
 for(declaration: collection) {
