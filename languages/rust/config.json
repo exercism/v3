@@ -14,31 +14,31 @@
         "slug": "entry-api",
         "uuid": "e7d8603e-97a9-11ea-9753-0242ac110002",
         "concepts": ["entry-api"],
-        "prerequisites": ["hashmaps", "intro-fn", "intro-types", "intro-option"]
+        "prerequisites": ["hashmaps", "intro-fn", "intro-types", "option"]
       },
       {
         "slug": "numbers",
         "uuid": "b042200f-5bdd-4010-981e-626e40fd2877",
-        "concepts": ["numbers", "integers", "floating-point-numbers"],
+        "concepts": ["integers", "floating-point-numbers"],
         "prerequisites": ["intro-fn"]
       },
       {
         "slug": "enums",
         "uuid": "1924b87a-9246-456f-8fc1-111f922a8cf3",
         "concepts": ["enums-basic"],
-        "prerequisites": ["strings-basic"]
+        "prerequisites": []
       },
       {
         "slug": "structs",
         "uuid": "3da2420e-9de3-42e0-9127-5ef185673dbb",
         "concepts": ["structs"],
-        "prerequisites": ["string-use", "floats", "integers", "signedness"]
+        "prerequisites": ["string-use", "floating-point-numbers", "integers"]
       },
       {
         "slug": "options",
         "uuid": "2445b061-6622-47cb-a7ef-9040ec02458c",
         "concepts": ["option"],
-        "prerequisites": ["structs", "match.pattern-matching"]
+        "prerequisites": ["structs", "destructuring"]
       }
     ],
     "practice": [
@@ -814,97 +814,61 @@
       "uuid": "a2e79ee4-8534-45ac-ad36-5dcde91a6bf4",
       "slug": "entry-api",
       "name": "Entry Api",
-      "blurb": "TODO: add blurb for entry-api concept"
+      "blurb": "Entry API for accessing and editing possibly-missing values in maps"
     },
     {
       "uuid": "40d727f1-d011-4305-b1c2-1b4380246d9b",
       "slug": "enums-basic",
       "name": "Enums Basic",
-      "blurb": "TODO: add blurb for enums-basic concept"
+      "blurb": "Basic enums: usage and creation with non-data-carrying variants"
     },
     {
       "uuid": "cebb248b-b9d5-4189-a764-87b14e8dd603",
       "slug": "floating-point-numbers",
       "name": "Floating Point Numbers",
-      "blurb": "TODO: add blurb for floating-point-numbers concept"
-    },
-    {
-      "uuid": "49f19bcc-4d61-4b12-9241-12ffbea8c1b7",
-      "slug": "floats",
-      "name": "Floats",
-      "blurb": "TODO: add blurb for floats concept"
+      "blurb": "Non-integral numeric types and usage"
     },
     {
       "uuid": "11d39059-0949-4bfe-a89c-0fd522c3baee",
       "slug": "hashmaps",
       "name": "Hashmaps",
-      "blurb": "TODO: add blurb for hashmaps concept"
+      "blurb": "Efficient map type provided by the stdlib for hashable keys"
     },
     {
       "uuid": "8e399de6-f143-45fb-bb8e-1ce1f15dcf01",
       "slug": "integers",
       "name": "Integers",
-      "blurb": "TODO: add blurb for integers concept"
+      "blurb": "Integral numeric types and usage"
     },
     {
       "uuid": "4cd3ad94-0a2a-4f44-a0dc-0c7402225499",
       "slug": "intro-fn",
-      "name": "Intro Fn",
-      "blurb": "TODO: add blurb for intro-fn concept"
-    },
-    {
-      "uuid": "257cc7b3-7b69-488d-8789-644a412a1668",
-      "slug": "intro-option",
-      "name": "Intro Option",
-      "blurb": "TODO: add blurb for intro-option concept"
+      "name": "Introductory Functions",
+      "blurb": "Introduction to the definition and use of functions"
     },
     {
       "uuid": "9eb55d59-7953-46ab-a8cc-8525daddf1a9",
       "slug": "intro-types",
-      "name": "Intro Types",
-      "blurb": "TODO: add blurb for intro-types concept"
-    },
-    {
-      "uuid": "b1d55ba6-2b4a-4f85-bbdf-9cef4f9a7e2b",
-      "slug": "match.pattern-matching",
-      "name": "Match.Pattern Matching",
-      "blurb": "TODO: add blurb for match.pattern-matching concept"
-    },
-    {
-      "uuid": "d552644c-ba59-4441-9a73-f0df4291549c",
-      "slug": "numbers",
-      "name": "Numbers",
-      "blurb": "TODO: add blurb for numbers concept"
+      "name": "Introductory Types",
+      "blurb": "Introduction to definition and use of custom types"
     },
     {
       "uuid": "36bc26cf-dd54-4706-9abf-7a89e6a168e3",
       "slug": "option",
       "name": "Option",
-      "blurb": "TODO: add blurb for option concept"
-    },
-    {
-      "uuid": "950c39f1-9647-41d5-8ec7-33b02863178f",
-      "slug": "signedness",
-      "name": "Signedness",
-      "blurb": "TODO: add blurb for signedness concept"
+      "blurb": "Option<T>: a T which may or may not be there"
     },
     {
       "uuid": "8dc3c89e-afd4-4155-a79a-9699852ea21e",
       "slug": "string-use",
       "name": "String Use",
-      "blurb": "TODO: add blurb for string-use concept"
-    },
-    {
-      "uuid": "46a207e8-560b-421d-871e-0b743f8eaeb8",
-      "slug": "strings-basic",
-      "name": "Strings Basic",
-      "blurb": "TODO: add blurb for strings-basic concept"
+      "blurb": "Using Strings"
     },
     {
       "uuid": "febd2cf9-e058-48ef-bdc7-7583fb67e053",
       "slug": "structs",
       "name": "Structs",
-      "blurb": "TODO: add blurb for structs concept"
+      "blurb": "Structs: fixed-size collections of heterogenous data"
     }
   ]
 }
