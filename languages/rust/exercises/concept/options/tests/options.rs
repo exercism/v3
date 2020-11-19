@@ -23,7 +23,7 @@ fn test_reviving_alive_player() {
         mana: None,
         level: 8,
     };
-    assert_eq!(alive_player.revive(), None);
+    assert!(alive_player.revive().is_none());
 }
 
 #[test]
