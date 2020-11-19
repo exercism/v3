@@ -24,7 +24,7 @@ Add "United Kingdom" with a dialing code of 44 to the map created in task 1:
 
 ### 3. Get the country name matching a country code
 
-Check that a country with the country name for dialing code 55
+Retrieve the name of the country with dialing code 55
 
 ```clojure
 (country-name countries 55)
