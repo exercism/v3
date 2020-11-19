@@ -721,8 +721,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/why-cant-i-push-to-main",
-          "slug": "why-cant-i-push-to-main",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/developer-privileges",
+          "slug": "developer-privileges",
           "concepts": [
             {
               "url": null,
@@ -1072,7 +1072,7 @@
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/datetime.md",
-              "name": "datetime"
+              "name": "datetimes"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
@@ -1175,15 +1175,119 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/lists",
-          "slug": "lists",
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/lucians-luscious-lasagna",
+          "slug": "lucians-luscious-lasagna",
+          "concepts": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ],
+          "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/tracks-on-tracks-on-tracks",
+          "slug": "tracks-on-tracks-on-tracks",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
               "name": "lists"
             }
           ],
-          "prerequisites": []
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/bird-watcher",
+          "slug": "bird-watcher",
+          "concepts": [
+            {
+              "url": null,
+              "name": "vectors"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/cars-assemble",
+          "slug": "cars-assemble",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/interest-is-interesting",
+          "slug": "interest-is-interesting",
+          "concepts": [
+            {
+              "url": null,
+              "name": "floating-point-numbers"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/annalyns-infiltration",
+          "slug": "annalyns-infiltration",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/log-levels",
+          "slug": "log-levels",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
         }
       ]
     }
@@ -3301,6 +3405,38 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/vehicle-purchase",
+          "slug": "vehicle-purchase",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": null,
+              "name": "if-statements"
+            },
+            {
+              "url": null,
+              "name": "ternary-operator"
+            },
+            {
+              "url": null,
+              "name": "short-circuit-evaluation"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "boolean-expressions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
           "slug": "exercism-matrix",
           "concepts": [
@@ -3885,7 +4021,7 @@
             },
             {
               "url": null,
-              "name": "intro-option"
+              "name": "option"
             }
           ]
         },
@@ -3893,10 +4029,6 @@
           "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/numbers",
           "slug": "numbers",
           "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
-              "name": "numbers"
-            },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
               "name": "integers"
@@ -3922,12 +4054,7 @@
               "name": "enums-basic"
             }
           ],
-          "prerequisites": [
-            {
-              "url": null,
-              "name": "strings-basic"
-            }
-          ]
+          "prerequisites": []
         },
         {
           "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/structs",
@@ -3945,15 +4072,11 @@
             },
             {
               "url": null,
-              "name": "floats"
+              "name": "floating-point-numbers"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
               "name": "integers"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/signedness.md",
-              "name": "signedness"
             }
           ]
         },
@@ -3972,8 +4095,8 @@
               "name": "structs"
             },
             {
-              "url": null,
-              "name": "match.pattern-matching"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/destructuring.md",
+              "name": "destructuring"
             }
           ]
         }
