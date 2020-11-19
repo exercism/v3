@@ -88,6 +88,10 @@ class CarImporter
 }
 ```
 
+The class and method structure provides a natural way to limit visibility of program elements such as fields and methods and avoid the well-known [problem of global state][so-global-state-problem]. Public fields, methods and other members have to be qualified with the object name, `object.field` or `object.method()`, (class name in the case of statics) to be seen by code outside the class. Variables declared within a method can be seen only within that method.
+
+These [access modifiers][access-modifiers] can be used to further limit visibility.
+
 [fields]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/fields
 [methods]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods
 [this]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/this
@@ -103,3 +107,5 @@ class CarImporter
 [encapsulation]: https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles#encapsulation
 [visibility]: https://docs.microsoft.com/en-us/cpp/c-language/scope-and-visibility?view=msvc-160
 [object-state]: https://cs.stackexchange.com/questions/6536/definition-of-the-state-of-an-object-in-oop
+[so-global-state-problem]: https://softwareengineering.stackexchange.com/questions/148108/why-is-global-state-so-evil
+[access-modifiers]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers

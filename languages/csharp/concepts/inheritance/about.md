@@ -61,10 +61,6 @@ class Car : Vehicle
 }
 ```
 
-The class and method structure provides a natural way to limit visibility of program elements such as fields and methods and avoid the well-known [problem of global state][so-global-state-problem]. Public fields, methods and other members have to be qualified with the object name, `object.field` or `object.method()`, (class name in the case of statics) to be seen by code outside the class. Variables declared within a method can be seen only within that method.
-
-These [access modifiers][access-modifiers] can be used to further limit visibility.
-
 To prevent a class being inherited, add the [`sealed` modifier][sealed-classes].
 Some practitioners try to avoid inheriting from concrete classes (as discussed in [this SO question][pro-sealed]) and the _sealed_ modifier supports this approach. On the other hand many C# developers consider them a hindrance to maintenance as discussed in some of the comments on [this question][anti-sealed]. The advice is to use the sealed modifier sparingly until you have gained confidence in their use for your requirements.
 
@@ -80,5 +76,3 @@ Some practitioners try to avoid inheriting from concrete classes (as discussed i
 [sealed-classes]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members#sealed-classes-and-class-members
 [pro-sealed]: https://stackoverflow.com/questions/16724946/why-derive-from-a-concrete-class-is-a-poor-design
 [anti-sealed]: https://stackoverflow.com/questions/7777611/when-and-why-would-you-seal-a-class
-[so-global-state-problem]: https://softwareengineering.stackexchange.com/questions/148108/why-is-global-state-so-evil
-[access-modifiers]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers
