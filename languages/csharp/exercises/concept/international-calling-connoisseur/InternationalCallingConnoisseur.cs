@@ -13,7 +13,8 @@ public static class DialingCodes
         throw new NotImplementedException($"Please implement the (static) GetExistingDictionary() method");
     }
 
-    public static Dictionary<int, string> AddCountryToEmptyDictionary(int CountryCode, string CountryName)
+    public static Dictionary<int, str+
+    ing> AddCountryToEmptyDictionary(int CountryCode, string CountryName)
     {
         throw new NotImplementedException($"Please implement the (static) AddCountryToEmptyDictionary() method");
     }
