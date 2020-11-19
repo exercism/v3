@@ -29,4 +29,4 @@ This exercise chooses suitable options for a valentine's day date. The reference
 | F#    | [strings][implementation-fsharp] | None    |
 
 [type-char]: ./char.md
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/discriminated-unions/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/valentines-day/.docs/introduction.md

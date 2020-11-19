@@ -29,6 +29,10 @@ To implement a Concept Exercise, the following files must be added:
 <pre>
 languages
 └── typescript
+    ├── concepts
+    |   └── &lt;concept-1&gt;
+    |       ├── about.md
+    |       └── links.json
     └── exercises
         └── concept
             └── &lt;slug&gt;
@@ -36,7 +40,6 @@ languages
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
-                |   ├── after.md
                 |   └── source.md (required if there are third-party sources)
                 ├── .eslintignore
                 ├── .gitignore

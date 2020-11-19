@@ -28,14 +28,31 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "datetimes",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/datetimes/.docs/instructions.md"
+        "exercise": "booking-up-for-beauty",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/booking-up-for-beauty/.docs/instructions.md"
       },
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "datetimes",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/datetimes/.docs/instructions.md"
+        "exercise": "booking-up-for-beauty",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/booking-up-for-beauty/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/loops.bartender.md",
+    "name": "Bartender",
+    "description": "You are a master mixologist, making tasty drinks for the public to enjoy on their nights out. But you figured that you could make your life easier by writing a bit of code to help you with your job.",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/concepts/loops.md",
+      "name": "loops"
+    },
+    "implementations": [
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "master-mixologist",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/master-mixologist/.docs/instructions.md"
       }
     ]
   },
@@ -50,6 +67,23 @@
     "implementations": []
   },
   {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/anonymous-functions.bomb-defuser.md",
+    "name": "Bomb Disarming",
+    "description": "Hello again, Agent Double-Null0111.",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/concepts/anonymous_functions.md",
+      "name": "anonymous-functions"
+    },
+    "implementations": [
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "bomb-defuser",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/bomb-defuser/.docs/instructions.md"
+      }
+    ]
+  },
+  {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/numbers.car-production-line.md",
     "name": "Car production line",
     "description": "In this exercise you\u0027ll be writing code to analyze the production of an assembly line in a car factory. The assembly line\u0027s speed can range from \u00600\u0060 (off) to \u006010\u0060 (maximum).",
@@ -61,14 +95,31 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "numbers",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers/.docs/instructions.md"
+        "exercise": "cars-assemble",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/cars-assemble/.docs/instructions.md"
       },
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "numbers",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/numbers/.docs/instructions.md"
+        "exercise": "cars-assemble",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/cars-assemble/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/strings-and-characters.custom-signs.md",
+    "name": "Custom Signs",
+    "description": "In this exercise you\u0027ll be writing code to help a sign company create custom messages for their signs.",
+    "concept": {
+      "url": null,
+      "name": "strings-and-characters"
+    },
+    "implementations": [
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "custom-signs",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/custom-signs/.docs/instructions.md"
       }
     ]
   },
@@ -90,6 +141,23 @@
     ]
   },
   {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/ternary-operators.employee-salary.md",
+    "name": "Employee Salary",
+    "description": "In this exercise, you\u0027ll be implementing rules for calculating the total salary of a empyoyee in a month. The International Siderurgy Company (ISC) needs help to calculate the salary for the employees, given that different factors can alter the final wage value for each employee.",
+    "concept": {
+      "url": null,
+      "name": "ternary-operators"
+    },
+    "implementations": [
+      {
+        "track": "Java",
+        "slug": "java",
+        "exercise": "ternary-operators",
+        "url": "https://github.com/exercism/v3/blob/master/languages/java/exercises/concept/ternary-operators/.docs/instructions.md"
+      }
+    ]
+  },
+  {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/regex.event-ingest.md",
     "name": "Event Ingest",
     "description": "In this story, you have a program which needs to ingest events, but messages are using 3 different date formats:",
@@ -101,8 +169,8 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "regular-expressions",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/regular-expressions/.docs/instructions.md"
+        "exercise": "date-parser",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/date-parser/.docs/instructions.md"
       }
     ]
   },
@@ -114,7 +182,14 @@
       "url": null,
       "name": "matrices"
     },
-    "implementations": []
+    "implementations": [
+      {
+        "track": "Julia",
+        "slug": "julia",
+        "exercise": "exercism-matrix",
+        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/exercism-matrix/.docs/instructions.md"
+      }
+    ]
   },
   {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/enumerable.fashion-boutique.md",
@@ -128,14 +203,14 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "enum",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/enum/.docs/instructions.md"
+        "exercise": "boutique-inventory",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/boutique-inventory/.docs/instructions.md"
       },
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "list-comprehensions",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/list-comprehensions/.docs/instructions.md"
+        "exercise": "boutique-suggestions",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/boutique-suggestions/.docs/instructions.md"
       }
     ]
   },
@@ -151,8 +226,8 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "binary-matching",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/binary-matching/.docs/instructions.md"
+        "exercise": "file-sniffer",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/file-sniffer/.docs/instructions.md"
       }
     ]
   },
@@ -168,14 +243,20 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "numbers",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/numbers/.docs/instructions.md"
+        "exercise": "freelance-rates",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/freelance-rates/.docs/instructions.md"
       },
       {
         "track": "JavaScript",
         "slug": "javascript",
         "exercise": "numbers",
         "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/numbers/.docs/instructions.md"
+      },
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "freelancer-rates",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/freelancer-rates/.docs/instructions.md"
       }
     ]
   },
@@ -191,8 +272,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "method-overloading",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/method-overloading/.docs/instructions.md"
+        "exercise": "wizards-and-warriors-2",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/wizards-and-warriors-2/.docs/instructions.md"
       }
     ]
   },
@@ -208,20 +289,20 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "arrays",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/arrays/.docs/instructions.md"
+        "exercise": "bird-watcher",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/bird-watcher/.docs/instructions.md"
       },
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "recursion",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/recursion/.docs/instructions.md"
+        "exercise": "bird-count",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/bird-count/.docs/instructions.md"
       },
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "arrays",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/arrays/.docs/instructions.md"
+        "exercise": "bird-watcher",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/bird-watcher/.docs/instructions.md"
       }
     ]
   },
@@ -237,8 +318,14 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "maps",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/maps/.docs/instructions.md"
+        "exercise": "high-score",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/high-score/.docs/instructions.md"
+      },
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "high-score-board",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/high-score-board/.docs/instructions.md"
       }
     ]
   },
@@ -254,8 +341,8 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "strings",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/strings/.docs/instructions.md"
+        "exercise": "high-school-sweetheart",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/high-school-sweetheart/.docs/instructions.md"
       }
     ]
   },
@@ -271,8 +358,8 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "errors",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/errors/.docs/instructions.md"
+        "exercise": "rpn-calculator",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/rpn-calculator/.docs/instructions.md"
       }
     ]
   },
@@ -288,8 +375,8 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "tuples",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/tuples/.docs/instructions.md"
+        "exercise": "kitchen-calculator",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/kitchen-calculator/.docs/instructions.md"
       }
     ]
   },
@@ -328,14 +415,31 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "lists",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/lists/.docs/instructions.md"
+        "exercise": "language-list",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/language-list/.docs/instructions.md"
       },
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "lists",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/lists/.docs/instructions.md"
+        "exercise": "tracks-on-tracks-on-tracks",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/tracks-on-tracks-on-tracks/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/functions.lasagna-master.md",
+    "name": "Lasagna Master",
+    "description": "In this exercise you\u0027re going to write some more code to help you cook your brilliant lasagna from your favorite cooking book.",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/types/function.md",
+      "name": "functions"
+    },
+    "implementations": [
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "lasagna-master",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/lasagna-master/.docs/instructions.md"
       }
     ]
   },
@@ -351,26 +455,20 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "basics",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/basics/.docs/instructions.md"
-      },
-      {
-        "track": "Common Lisp",
-        "slug": "common-lisp",
-        "exercise": "basics",
-        "url": "https://github.com/exercism/v3/blob/master/languages/common-lisp/exercises/concept/basics/.docs/instructions.md"
+        "exercise": "lucians-luscious-lasagna",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/lucians-luscious-lasagna/.docs/instructions.md"
       },
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "basics",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/basics/.docs/instructions.md"
+        "exercise": "lasagna",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/lasagna/.docs/instructions.md"
       },
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "basics",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/basics/.docs/instructions.md"
+        "exercise": "lucians-luscious-lasagna",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/lucians-luscious-lasagna/.docs/instructions.md"
       },
       {
         "track": "Java",
@@ -387,14 +485,20 @@
       {
         "track": "Julia",
         "slug": "julia",
-        "exercise": "functions-introduction",
-        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/functions-introduction/.docs/instructions.md"
+        "exercise": "lasagna",
+        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/lasagna/.docs/instructions.md"
       },
       {
         "track": "Ruby",
         "slug": "ruby",
-        "exercise": "basics",
-        "url": "https://github.com/exercism/v3/blob/master/languages/ruby/exercises/concept/basics/.docs/instructions.md"
+        "exercise": "lasagna",
+        "url": "https://github.com/exercism/v3/blob/master/languages/ruby/exercises/concept/lasagna/.docs/instructions.md"
+      },
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "lasagna",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/lasagna/.docs/instructions.md"
       }
     ]
   },
@@ -410,14 +514,26 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "enums",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/enums/.docs/instructions.md"
+        "exercise": "logs-logs-logs",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/logs-logs-logs/.docs/instructions.md"
       },
       {
         "track": "Rust",
         "slug": "rust",
         "exercise": "enums",
         "url": "https://github.com/exercism/v3/blob/master/languages/rust/exercises/concept/enums/.docs/instructions.md"
+      },
+      {
+        "track": "Python",
+        "slug": "python",
+        "exercise": "log-levels",
+        "url": "https://github.com/exercism/v3/blob/master/languages/python/exercises/concept/log-levels/.docs/instructions.md"
+      },
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "log-lines",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/log-lines/.docs/instructions.md"
       }
     ]
   },
@@ -433,8 +549,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "strings",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/strings/.docs/instructions.md"
+        "exercise": "log-levels",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/log-levels/.docs/instructions.md"
       },
       {
         "track": "C\u002B\u002B",
@@ -445,8 +561,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "strings",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/strings/.docs/instructions.md"
+        "exercise": "log-levels",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/log-levels/.docs/instructions.md"
       },
       {
         "track": "Go",
@@ -463,8 +579,8 @@
       {
         "track": "Python",
         "slug": "python",
-        "exercise": "strings",
-        "url": "https://github.com/exercism/v3/blob/master/languages/python/exercises/concept/strings/.docs/instructions.md"
+        "exercise": "processing-logs",
+        "url": "https://github.com/exercism/v3/blob/master/languages/python/exercises/concept/processing-logs/.docs/instructions.md"
       },
       {
         "track": "Ruby",
@@ -494,6 +610,24 @@
         "slug": "javascript",
         "exercise": "array-analysis",
         "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/array-analysis/.docs/instructions.md"
+      },
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "array-destructuring",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/array-destructuring/.docs/instructions.md"
+      },
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "array-transformations",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/array-transformations/.docs/instructions.md"
+      },
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "magician-in-training",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/magician-in-training/.docs/instructions.md"
       }
     ]
   },
@@ -509,14 +643,14 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "nullability",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/nullability/.docs/instructions.md"
+        "exercise": "tim-from-marketing",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/tim-from-marketing/.docs/instructions.md"
       },
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "nil",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/nil/.docs/instructions.md"
+        "exercise": "name-badge",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/name-badge/.docs/instructions.md"
       },
       {
         "track": "JavaScript",
@@ -538,14 +672,14 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "pattern-matching",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/pattern-matching/.docs/instructions.md"
+        "exercise": "guessing-game",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/guessing-game/.docs/instructions.md"
       },
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "multiple-clause-functions",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/multiple-clause-functions/.docs/instructions.md"
+        "exercise": "guessing-game",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/guessing-game/.docs/instructions.md"
       }
     ]
   },
@@ -561,14 +695,31 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "booleans",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/booleans/.docs/instructions.md"
+        "exercise": "pacman-rules",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/pacman-rules/.docs/instructions.md"
       },
       {
         "track": "Python",
         "slug": "python",
-        "exercise": "bools",
-        "url": "https://github.com/exercism/v3/blob/master/languages/python/exercises/concept/bools/.docs/instructions.md"
+        "exercise": "ghost-gobble-arcade-game",
+        "url": "https://github.com/exercism/v3/blob/master/languages/python/exercises/concept/ghost-gobble-arcade-game/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/optionals.pizza-slices.md",
+    "name": "Pizza Slices",
+    "description": "You have a number of pizza slice shops in your town and you want to write a web app that will let you compare two different pizza configurations to let you know who will give you the bigger slice.",
+    "concept": {
+      "url": null,
+      "name": "optionals"
+    },
+    "implementations": [
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "pizza-slices",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/pizza-slices/.docs/instructions.md"
       }
     ]
   },
@@ -584,8 +735,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "recursion",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/recursion/.docs/instructions.md"
+        "exercise": "pizza-pricing",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/pizza-pricing/.docs/instructions.md"
       },
       {
         "track": "JavaScript",
@@ -609,6 +760,12 @@
         "slug": "javascript",
         "exercise": "strings",
         "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/strings/.docs/instructions.md"
+      },
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "poetry-club",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/poetry-club/.docs/instructions.md"
       }
     ]
   },
@@ -624,8 +781,25 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "bitstrings",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/bitstrings/.docs/instructions.md"
+        "exercise": "dna-encoding",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/dna-encoding/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/io.rpg-character-sheet.md",
+    "name": "RPG Character Sheet",
+    "description": "You and your friends love to play pen-and-paper role-playing games, but you noticed that it\u0027s difficult to get new people to join your group. They often struggle with character creation. They don\u0027t know where to start. To help new players out, you decided to write a small program that will guide them through the process.",
+    "concept": {
+      "url": null,
+      "name": "io"
+    },
+    "implementations": [
+      {
+        "track": "Elixir",
+        "slug": "elixir",
+        "exercise": "rpg-character-sheet",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/rpg-character-sheet/.docs/instructions.md"
       }
     ]
   },
@@ -641,8 +815,8 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "booleans",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/booleans/.docs/instructions.md"
+        "exercise": "annalyns-infiltration",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/annalyns-infiltration/.docs/instructions.md"
       },
       {
         "track": "JavaScript",
@@ -670,14 +844,14 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "classes",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/classes/.docs/instructions.md"
+        "exercise": "elons-toys",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/elons-toys/.docs/instructions.md"
       },
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "structs",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/structs/.docs/instructions.md"
+        "exercise": "remote-control-car",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/remote-control-car/.docs/instructions.md"
       }
     ]
   },
@@ -693,8 +867,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "constructors",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/constructors/.docs/instructions.md"
+        "exercise": "need-for-speed",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/need-for-speed/.docs/instructions.md"
       }
     ]
   },
@@ -710,8 +884,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "inheritance",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/inheritance/.docs/instructions.md"
+        "exercise": "wizards-and-warriors",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/wizards-and-warriors/.docs/instructions.md"
       }
     ]
   },
@@ -727,8 +901,25 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "records",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/records/.docs/instructions.md"
+        "exercise": "bandwagoner",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/bandwagoner/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/tuples.santas-helper.md",
+    "name": "Santa\u0027s Helper",
+    "description": "You are an elf working in Santa Claus\u0027 logistics division and you have been given a pair of tasks from the boss for upgrading the system\u0027s software.",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/types/tuple.md",
+      "name": "tuples"
+    },
+    "implementations": [
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "santas-helper",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/santas-helper/.docs/instructions.md"
       }
     ]
   },
@@ -744,14 +935,31 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "floating-point-numbers",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md"
+        "exercise": "interest-is-interesting",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/interest-is-interesting/.docs/instructions.md"
       },
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "floating-point-numbers",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md"
+        "exercise": "interest-is-interesting",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/interest-is-interesting/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/higher-order-functions.secret-agent.md",
+    "name": "Secret Agent",
+    "description": "Hello, Agent Double-Null0111.",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/concepts/higher_order_functions.md",
+      "name": "higher-order-functions"
+    },
+    "implementations": [
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "secret-agent",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/secret-agent/.docs/instructions.md"
       }
     ]
   },
@@ -767,8 +975,8 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "anonymous-functions",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/anonymous-functions/.docs/instructions.md"
+        "exercise": "secrets",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/secrets/.docs/instructions.md"
       }
     ]
   },
@@ -794,8 +1002,8 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "processes",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/processes/.docs/instructions.md"
+        "exercise": "take-a-number",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/take-a-number/.docs/instructions.md"
       }
     ]
   },
@@ -821,8 +1029,48 @@
       {
         "track": "F#",
         "slug": "fsharp",
-        "exercise": "discriminated-unions",
-        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/discriminated-unions/.docs/instructions.md"
+        "exercise": "valentines-day",
+        "url": "https://github.com/exercism/v3/blob/master/languages/fsharp/exercises/concept/valentines-day/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/conditionals.vehicle-purchase.md",
+    "name": "Vehicle Purchase",
+    "description": "In this exercise you\u0027re going to write some code to help you help you prepare to buy a new vehicle.",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/concepts/conditionals.md",
+      "name": "conditionals"
+    },
+    "implementations": [
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "vehicle-purchase",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/vehicle-purchase/.docs/instructions.md"
+      },
+      {
+        "track": "Julia",
+        "slug": "julia",
+        "exercise": "vehicle-purchase",
+        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/vehicle-purchase/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/closures.design-company.md",
+    "name": "Web Design Agency",
+    "description": "Your design company has primarily been working with CSS transformations to build webpages. After some discussion, a decision is made\nto start using JavaScript to perform some of the calculations dynamically. Some of your teammates are less experienced with JavaScript,\nso you decide to use a function closure to create reusable transformation for \u0060{x, y}\u0060 coordinate pairs.",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/concepts/closures.md",
+      "name": "closures"
+    },
+    "implementations": [
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "closures",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/closures/.docs/instructions.md"
       }
     ]
   },
@@ -838,8 +1086,8 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "flag-enums",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/flag-enums/.docs/instructions.md"
+        "exercise": "attack-of-the-trolls",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/attack-of-the-trolls/.docs/instructions.md"
       }
     ]
   },
@@ -855,8 +1103,25 @@
       {
         "track": "C#",
         "slug": "csharp",
-        "exercise": "properties",
-        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/properties/.docs/instructions.md"
+        "exercise": "weighing-machine",
+        "url": "https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/weighing-machine/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/structs-and-classes.windowing-system.md",
+    "name": "Windowing system",
+    "description": "In this exercise, you will be simulating a windowing based computer system. You will create some windows that can be moved and resized and display their contents. The following image is representative of the values you will be working with below.",
+    "concept": {
+      "url": null,
+      "name": "structs-and-classes"
+    },
+    "implementations": [
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "windowing-system",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/windowing-system/.docs/instructions.md"
       }
     ]
   }

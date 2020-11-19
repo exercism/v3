@@ -1,0 +1,12 @@
+{
+  "authors": [
+    {
+      "github_username": "ErikSchierboom",
+      "exercism_username": "ErikSchierboom"
+    }
+  ],
+  "editor": {
+    "solution_files": ["Bandwagoner.fs"],
+    "test_files": ["BandwagonerTests.fs"]
+  }
+}

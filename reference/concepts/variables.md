@@ -20,11 +20,11 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 
 #### Implementations
 
-| Track | Exercise                        | Changes |
-| ----- | ------------------------------- | ------- |
-| C#    | [basics][implementation-csharp] | None    |
-| Scala | [basics][implementation-scala]  | None    |
+| Track | Exercise                                          | Changes |
+| ----- | ------------------------------------------------- | ------- |
+| C#    | [lucians-luscious-lasagna][implementation-csharp] | None    |
+| Scala | [basics][implementation-scala]                    | None    |
 
-[implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/introduction.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/lucians-luscious-lasagna/.docs/introduction.md
 [implementation-scala]: ../../languages/scala/exercises/concept/basics/.docs/introduction.md
 [concept-assignment]: ./assignment.md

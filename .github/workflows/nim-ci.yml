@@ -1,30 +1,31 @@
-name: Nim Compilability CI
+name: Nim
 
 on:
   push:
     paths:
-    - 'languages/nim/exercises/concept/**/*.nim'
-    - 'languages/nim/exercises/practice/**/*.nim'
+      - 'languages/nim/exercises/concept/**/*.nim'
+      - 'languages/nim/exercises/practice/**/*.nim'
   pull_request:
     paths:
-    - 'languages/nim/exercises/concept/**/*.nim'
-    - 'languages/nim/exercises/practice/**/*.nim'
+      - 'languages/nim/exercises/concept/**/*.nim'
+      - 'languages/nim/exercises/practice/**/*.nim'
 
 jobs:
   check-compilation-pr:
+    name: Compilability CI
     runs-on: ubuntu-latest
     container: nimlang/nim:1.2.6
     if: ${{ github.event_name == 'pull_request' }}
 
     steps:
       - uses: actions/checkout@v2
-        
+
       - name: Number of commits since beginning of PR
         id: number_of_commits
         run: |
           echo "::set-output name=number::$(git log ${{ github.event.pull_request.base.sha }}..${{ github.sha }}  --pretty=oneline | wc -l)"
         shell: bash
-        
+
       - uses: actions/checkout@v2
         with:
           fetch-depth: ${{ steps.number_of_commits.outputs.number }}
@@ -55,17 +56,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-       
+
       - name: Number of commits since last push
         id: number_of_commits
         run: |
           echo "::set-output name=number::$(git log ${{ github.event.before }}..${{ github.sha }}  --pretty=oneline | wc -l)"
         shell: bash
-        
+
       - uses: actions/checkout@v2
         with:
           fetch-depth: ${{ steps.number_of_commits.outputs.number }}
-
 
       - name: Retrieve changed files (push)
         id: getfiles

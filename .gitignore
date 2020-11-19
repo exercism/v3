@@ -6,6 +6,7 @@
 .ionide
 
 # JavaScript
+node_modules/
 yarn.lock
 package-lock.json
 
@@ -27,3 +28,6 @@ tmp/
 
 # Intellij IDEA project dir
 .idea
+
+# Code Spaces
+pythonenv3.8

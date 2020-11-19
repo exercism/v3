@@ -1,0 +1,19 @@
+{
+  "authors": [
+    {
+      "github_username": "angelikatyborska",
+      "exercism_username": "angelikatyborska"
+    }
+  ],
+  "contributors": [
+    {
+      "github_username": "neenjaw",
+      "exercism_username": "neenjaw"
+    }
+  ],
+  "editor": {
+    "solution_files": ["lib/username.ex"],
+    "test_files": ["test/username_test.exs"]
+  },
+  "language_versions": ">=1.10"
+}

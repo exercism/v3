@@ -26,4 +26,4 @@ The story facilitates defining functions:
 
 - [Elixir: binary-matching][implementation-elixir] (reference implementation)
 
-[implementation-elixir]: ../../languages/elixir/exercises/concept/binary-matching/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/file-sniffer/.docs/instructions.md

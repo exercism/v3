@@ -1,0 +1,12 @@
+{
+  "authors": [
+    {
+      "github_username": "TheLostLambda",
+      "exercism_username": "TheLostLambda"
+    }
+  ],
+  "editor": {
+    "solution_files": ["pal-picker.lisp"],
+    "test_files": ["pal-picker-test.lisp"]
+  }
+}

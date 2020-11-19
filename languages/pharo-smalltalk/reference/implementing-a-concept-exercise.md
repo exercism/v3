@@ -16,9 +16,10 @@ Please also watch the following video:
 
 As this document is generic, the following placeholders are used:
 
-- `<SLUG>`: the name of the exercise in kebab-case (e.g. anonymous-methods).
+- `<SLUG>`: the slug of the exercise in kebab-case (e.g. anonymous-methods).
 - `<NAME>`: the name of the exercise in PascalCase (e.g. AnonymousMethods).
 - `<UUID>`: the exercise's unique UUID.
+- `<CONCEPT_SLUG>`: the slug of one of the exercise's concepts in kebab-case (e.g. `anonymous-methods`).
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue. Having done this, please read the Pharo Smalltalk concept exercises introduction.
 
@@ -27,11 +28,14 @@ To implement a concept exercise, the following files must be added:
 ```
 languages
 └── pharo-smalltalk
+    ├── concepts
+    |   └── <CONCEPT_SLUG>
+    |       ├── about.md
+    |       └── links.json
     └── exercises
         └── concept
             └── <SLUG>
                 ├── .docs
-                |   ├── after.md
                 |   ├── instructions.md
                 |   ├── introduction.md
                 |   ├── hints.md
@@ -64,12 +68,6 @@ For more information, please read [this in-depth description][docs-instructions.
 **Purpose:** Provide hints to a student to help them get themselves unstuck in an exercise.
 
 For more information, please read [this in-depth description][docs-hints.md], watch [this video][video-docs-hints.md] and check [this example file][example-docs-hints.md].
-
-## Add `.docs/after.md` file
-
-**Purpose:** Provide more information about the concept(s) for a student to learn from.
-
-For more information, please read [this in-depth description][docs-after.md], watch [this video][video-docs-after.md] and check [this example file][example-docs-after.md].
 
 ## Add `.docs/source.md` file (required if there are third-party sources)
 
@@ -163,16 +161,14 @@ If you have any questions regarding implementing this exercise, please post them
 [docs-introduction.md]: https://github.com/exercism/v3/blob/master/docs/concept-exercises.md#docsintroductionmd
 [docs-instructions.md]: https://github.com/exercism/v3/blob/master/docs/concept-exercises.md#docsinstructionsmd
 [docs-hints.md]: https://github.com/exercism/v3/blob/master/docs/concept-exercises.md#docshintsmd
-[docs-after.md]: https://github.com/exercism/v3/blob/master/docs/concept-exercises.md#docsaftermd
 [docs-source.md]: https://github.com/exercism/v3/blob/master/docs/concept-exercises.md#docssourcemd-required-if-there-are-third-party-sources
 [meta-design.md]: https://github.com/exercism/v3/blob/master/docs/concept-exercises.md#metadesignmd
 [meta-config.json]: https://github.com/exercism/v3/blob/master/docs/concept-exercises.md#metaconfigjson
 [config.json]: https://github.com/exercism/v3/blob/master/docs/concept-exercises.md#configjson
-[example-docs-introduction.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/strings/.docs/introduction.md
-[example-docs-instructions.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/instructions.md
-[example-docs-hints.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/hints.md
-[example-docs-after.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/floating-point-numbers/.docs/after.md
-[example-docs-source.md]: https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/multiple-dispatch/.docs/source.md
+[example-docs-introduction.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/log-levels/.docs/introduction.md
+[example-docs-instructions.md]: https://github.com/exercism/v3/blob/master/interest-is-interesting/.docs/instructions.md
+[example-docs-hints.md]: https://github.com/exercism/v3/blob/master/interest-is-interesting/.docs/hints.md
+[example-docs-source.md]: https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/encounters/.docs/source.md
 [example-meta-design.md]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/numbers/.meta/design.md
 [example-meta-config.json]: https://github.com/exercism/v3/blob/master/languages/csharp/exercises/concept/flag-enums/.meta/config.json
 [example-config.json]: https://github.com/exercism/v3/blob/master/languages/csharp/config.json
@@ -181,7 +177,6 @@ If you have any questions regarding implementing this exercise, please post them
 [video-docs-introduction.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=77
 [video-docs-instructions.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=309
 [video-docs-hints.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=482
-[video-docs-after.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=596
 [video-meta-design.md]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=870
 [video-meta-config.json]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1037
 [style-guide]: https://github.com/exercism/v3/blob/master/docs/maintainers/style-guide.md
