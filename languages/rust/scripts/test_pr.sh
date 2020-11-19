@@ -47,17 +47,25 @@ function test_concept() {
     cargo init --lib --name "$concept" .
 
     last_commit="$(
-        curl -s -L https://api.github.com/repos/exercism/v3/pulls/$num/commits |
+        curl -s -L "https://api.github.com/repos/exercism/v3/pulls/$num/commits" |
         jq -r '.[-1] | .sha'
     )"
 
-    curl -s -L "https://raw.githubusercontent.com/exercism/v3/$last_commit/languages/rust/exercises/concept/$concept/.meta/example.rs" > src/lib.rs
     mkdir tests
-    curl -s -L "https://raw.githubusercontent.com/exercism/v3/$last_commit/languages/rust/exercises/concept/$concept/tests/$concept.rs" > "tests/$concept.rs"
+    raw_url="https://raw.githubusercontent.com/exercism/v3/$last_commit"
+    curl -s -L "$raw_url/languages/rust/exercises/concept/$concept/.meta/example.rs" > src/lib.rs
+    curl -s -L "$raw_url/languages/rust/exercises/concept/$concept/tests/$concept.rs" > "tests/$concept.rs"
 
-    cargo check
-    cargo test
-    cargo test -- --ignored
+    # we don't want to exit the script if any of these fail, but simultaneously we want failfast
+    # that spells subshell
+    if ! (
+        set -e
+        cargo check
+        cargo test
+        cargo test -- --ignored
+    ); then
+        echo "FAIL: $concept"
+    fi
 }
 
 if [ -n "$1" ]; then
