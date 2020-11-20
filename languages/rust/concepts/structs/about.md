@@ -11,7 +11,7 @@ Structs collect a fixed, heterogenous set of data into a single unit. Structs in
 
 Structs are very much like **Tuples**. In fact, the only difference between structs and tuples has to do with what is anonymous. The general form goes like this:
 
-- Structs are named, and have named fields:
+- Structs are named and have named fields:
 
   ```rust
   struct Foo{
@@ -26,7 +26,7 @@ Structs are very much like **Tuples**. In fact, the only difference between stru
   let bar = foo.bar;
   ```
 
-- Tuple structs are named, and have anonymous fields:
+- Tuple structs are named and have anonymous fields:
 
   ```rust
   Foo(Bar, Bat)
@@ -45,7 +45,7 @@ Structs are very much like **Tuples**. In fact, the only difference between stru
   let bat = foo.1;
   ```
 
-- Tuples are anonymous, and have anonymous fields:
+- Tuples are anonymous and have anonymous fields:
 
   ```rust
   (Bar, Bat)
@@ -53,7 +53,7 @@ Structs are very much like **Tuples**. In fact, the only difference between stru
 
   As in tuple structs, fields are accessed by unpacking or by numeric index.
 
-- Anonymous structs are, as the name suggests, anonymous, but with named fields. You may be familiar with them from other languages, such as go or Java. They do not exist in Rust; it is considered idiomatic to use a tuple instead.
+- Anonymous structs are, as the name suggests, anonymous, but with named fields. You may be familiar with them from other languages, such as Go or Java. They do not exist in Rust; it is considered idiomatic to use a tuple instead.
 
 # Zero Sized Types
 
@@ -75,7 +75,7 @@ struct Foo();
 let foo = Foo();
 ```
 
-There's also a shorthand for ZSTS:
+There's also a shorthand for ZSTs:
 
 ```rust
 // declaration
