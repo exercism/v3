@@ -8,9 +8,9 @@ There are three types of accounts, each with different default permissions:
 
 - Guests: can read posts.
 - Users: can read and write posts.
-- Moderators: can read, write and delete posts.
+- Moderators: can read, write and delete posts, they have all the permissions.
 
-Sometimes individual permissions are modified, for example giving a guest account the permission to also write posts.
+Sometimes individual permissions can be modified, it is possible for example to give a guest account the permission to also write posts or revoking all permissions from an account would result in having none of the permissions.
 
 You have four tasks.
 

@@ -3,6 +3,30 @@ using Xunit;
 public class PermissionsTests
 {
     [Fact]
+    public void Permission_none_is_an_enum_field()
+    {
+        Assert.Equal("None", Permission.None.ToString());
+    }
+
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void Permission_all_is_an_enum_field()
+    {
+        Assert.Equal("All", Permission.All.ToString());
+    }
+
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void Permission_is_an_enum_with_flags_with_read_write()
+    {
+        Assert.Equal("Read, Write", (Permission.Read | Permission.Write).ToString());
+    }
+
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void Permission_is_an_enum_with_flags_with_all()
+    {
+        Assert.Equal("All", (Permission.Read | Permission.Write | Permission.Delete).ToString());
+    }
+
+    [Fact(Skip = "Remove this Skip property to run this test")]
     public void Default_for_guest()
     {
         Assert.Equal(Permission.Read, Permissions.Default(AccountType.Guest));

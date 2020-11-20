@@ -1,20 +1,6 @@
-## bit-manipulation
+## attributes
 
-To work with bits, C# supports the following operators:
-
-- `~`: bitwise complement
-- `<<`: left shift
-- `>>`: right shift
-- `&`: logical AND
-- `|`: logical OR
-- `^`: logical XOR
-
-Here is an example how to use a bitwise operator:
-
-```csharp
-1 << 2
-// => 4
-```
+TODO
 
 ## flag-enums
 
@@ -43,7 +29,3 @@ enum PhoneFeatures : byte
     Text = 0b00000010
 }
 ```
-
-## compound-assignment
-
-TODO: consider what to put here - do this in conjunction with issue #2529 cleanup about.md files and approach detailed in csharp/concepts/bit-manipulation/about.md.
