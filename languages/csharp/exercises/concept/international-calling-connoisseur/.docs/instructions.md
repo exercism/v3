@@ -6,7 +6,7 @@ You have 9 tasks which involve the  `DialingCodes` static class.
 
 ### 1. Create a new dictionary
 
-Implement (static) method `DialingCodes.GetEmptyDictionary()` that returns an empty dictionary.
+Implement the (static) method `DialingCodes.GetEmptyDictionary()` that returns an empty dictionary.
 
 ```csharp
 DialingCodes.GetEmptyDictionary();
