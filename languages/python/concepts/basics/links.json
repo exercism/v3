@@ -1,0 +1,94 @@
+[
+  {
+    "url": "https://www.python.org/psf/",
+    "description": "Python Software Foundation"
+  },
+  {
+    "url": "https://docs.python.org/3/",
+    "description": "Python documentation"
+  },
+  {
+    "url": "https://www.python.org/dev/peps/",
+    "description": "Python Enhancement Proposals or PEPs"
+  },
+  {
+    "url": "https://www.python.org/dev/peps/pep-0020/",
+    "description": "the zen of Python (PEP 20)"
+  },
+  {
+    "url": "https://www.python.org/dev/peps/pep-0008/",
+    "description": "PEP 8"
+  },
+  {
+    "url": "https://docs.python.org/3/reference/datamodel.html",
+    "description": "everything in Python is an object"
+  },
+  {
+    "url": "https://stackoverflow.com/questions/11328920/is-python-strongly-typed",
+    "description": "dynamic typing and strong typing"
+  },
+  {
+    "url": "https://docs.python.org/3/library/typing.html",
+    "description": "type hints"
+  },
+  {
+    "url": "https://docs.python.org/3/reference/lexical_analysis.html#indentation",
+    "description": "significant indentation"
+  },
+  {
+    "url": "https://realpython.com/python-variables/",
+    "description": "variables in Python"
+  },
+  {
+    "url": "https://docs.python.org/3/reference/simple_stmts.html#assignment-statements",
+    "description": "assignment statements in Python"
+  },
+  {
+    "url": "https://docs.python.org/3/reference/executionmodel.html#naming-and-binding",
+    "description": "naming and binding in Python"
+  },
+  {
+    "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+    "description": "function definition"
+  },
+  {
+    "url": "https://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions",
+    "description": "more on defining functions"
+  },
+  {
+    "url": "https://docs.python.org/3/reference/compound_stmts.html#function",
+    "description": "functions in Python"
+  },
+  {
+    "url": "https://docs.python.org/3/reference/datamodel.html#classes",
+    "description": "class in Python"
+  },
+  {
+    "url": "https://docs.python.org/3/c-api/method.html#method-objects",
+    "description": "methods in Python"
+  },
+  {
+    "url": "https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy",
+    "description": "Pythons standard type hierarchy"
+  },
+  {
+    "url": "https://docs.python.org/3/reference/expressions.html#calls",
+    "description": "called"
+  },
+  {
+    "url": "https://docs.python.org/3/tutorial/controlflow.html#default-argument-values",
+    "description": "default arguments"
+  },
+  {
+    "url": "https://realpython.com/python-comments-guide/#python-commenting-basics",
+    "description": "Comments"
+  },
+  {
+    "url": "https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings",
+    "description": "docstring"
+  },
+  {
+    "url": "https://docs.python.org/3/library/doctest.html",
+    "description": "doctests"
+  }
+]

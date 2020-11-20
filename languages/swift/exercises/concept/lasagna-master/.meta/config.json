@@ -1,0 +1,12 @@
+{
+  "authors": [
+    {
+      "github_username": "wneumann",
+      "exercism_username": "wneumann"
+    }
+  ],
+  "editor": {
+    "solution_files": ["Sources/LasagnaMaster/LasagnaMaster.swift"],
+    "test_files": ["Tests/LasagnaMasterTests/LasagnaMasterTests.swift"]
+  }
+}

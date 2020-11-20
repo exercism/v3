@@ -1,0 +1,14 @@
+{
+  "authors": [
+    {
+      "github_username": "wneumann",
+      "exercism_username": "wneumann"
+    }
+  ],
+  "editor": {
+    "solution_files": ["Sources/Lasagna/Lasagna.swift"],
+    "test_files": ["Tests/LasagnaTests/LasagnaTests.swift"]
+  },
+  "forked_from": ["fsharp/basics"],
+  "language_versions": ">=4.0"
+}

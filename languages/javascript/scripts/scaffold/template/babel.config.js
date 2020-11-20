@@ -8,7 +8,6 @@ module.exports = {
         },
         useBuiltIns: true,
       },
-
     ],
   ],
 };

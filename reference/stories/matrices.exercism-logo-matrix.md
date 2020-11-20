@@ -6,4 +6,10 @@ This story involves playing around with a matrix representing the Exercism logo,
 
 ## Implementations
 
-- [Julia: matrices-introduction](../languages/julia/../../../languages/julia/exercises/concept/matrices-introduction/) (reference implementation)
+- [Julia: matrices-introduction][implementation-julia] (reference implementation)
+
+## Name suggestions
+
+- [The Exercism Matrix][implementation-julia]
+
+[implementation-julia]: ../../languages/julia/exercises/concept/exercism-matrix/

@@ -20,8 +20,8 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 
 #### Implementations
 
-| Track       | Exercise                             | Changes |
-| ----------- | ------------------------------------ | ------- |
-| Common Lisp | [basics][implementation-common-lisp] |         |
+| Track       | Exercise                                       | Changes |
+| ----------- | ---------------------------------------------- | ------- |
+| Common Lisp | [socks-and-sexprs][implementation-common-lisp] |         |
 
-[implementation-common-lisp]: ../../languages/common-lisp/exercises/concept/basics/.docs/introduction.md
+[implementation-common-lisp]: ../../languages/common-lisp/exercises/concept/socks-and-sexprs/.docs/introduction.md

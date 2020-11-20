@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify-concept-files:
+    name: Verify concept files
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Verify concept files
+        run: ./.github/bin/verify-concepts/verify-concepts.sh

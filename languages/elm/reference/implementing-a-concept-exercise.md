@@ -14,8 +14,9 @@ Please also watch the following video:
 
 As this document is generic, the following placeholders are used:
 
-- `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-methods`).
-- `<NAME>`: the name of the exercise in PascalCase (e.g. `AnonymousMethods`).
+- `<SLUG>`: the slug of the exercise in kebab-case (e.g. `calculator-conundrum`).
+- `<NAME>`: the name of the exercise in PascalCase (e.g. `CalculatorConundrum`).
+- `<CONCEPT_SLUG>`: the slug of one of the exercise's concepts in kebab-case (e.g. `anonymous-methods`).
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue.
 
@@ -36,9 +37,9 @@ languages
                 |   ├── introduction.md
                 |   ├── hints.md
                 |   └── source.md (required if there are third-party sources)
-                ├── .meta
-                |   |── config.json
-                |   |── design.md
+                └── .meta
+                |   └── config.json
+                |   └── design.md
                 |   └── Example.elm
                 ├── elm.json
                 ├── src
@@ -80,6 +81,15 @@ When implementing an exercise, it can be very useful to look at the exercises th
 
 If you have any questions regarding implementing this exercise, please post them as comments in the exercise's GitHub issue.
 
+### TODO: link to elm document, once it is done and available to reference.
+
+[reference]: ../../csharp/reference/README.md
+
+### TODO: link to an elm concept, after the first one is done and available to reference.
+
+[meta-design]: ../../csharp/exercises/concept/flag-enums/.meta/design.md
+
+### TODO: link to an elm concept, after the first one is done and available to reference.
 [analyzer]: https://github.com/exercism/elm-analyzer
 [representer]: https://github.com/exercism/elm-representer
 [concept-exercises]: ../exercises/concept/README.md
@@ -105,3 +115,4 @@ If you have any questions regarding implementing this exercise, please post them
 [video-stub-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1171
 [video-tests-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1255
 [video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
+[meta-config-json]: ../exercises/concept/basics/.meta/config.json

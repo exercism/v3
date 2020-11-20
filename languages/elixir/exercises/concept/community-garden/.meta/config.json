@@ -1,0 +1,27 @@
+{
+  "authors": [
+    {
+      "github_username": "neenjaw",
+      "exercism_username": "neenjaw"
+    }
+  ],
+  "contributors": [
+    {
+      "github_username": "angelikatyborska",
+      "exercism_username": "angelikatyborska"
+    },
+    {
+      "github_username": "jrr",
+      "exercism_username": "jrr"
+    },
+    {
+      "github_username": "efx",
+      "exercism_username": "efx"
+    }
+  ],
+  "editor": {
+    "solution_files": ["lib/community_garden.ex"],
+    "test_files": ["test/community_garden_test.exs"]
+  },
+  "language_versions": ">=1.10"
+}

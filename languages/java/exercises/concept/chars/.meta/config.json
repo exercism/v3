@@ -1,0 +1,13 @@
+{
+  "authors": [
+    {
+      "github_username": "ystromm",
+      "exercism_username": "ystromm"
+    }
+  ],
+  "editor": {
+    "solution_files": ["src/main/java/Identifier.java"],
+    "test_files": ["src/test/java/IdentifierTest.java"]
+  },
+  "forked_from": ["csharp/chars"]
+}

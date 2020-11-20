@@ -1,0 +1,30 @@
+[
+  {
+    "url": "http://l1sp.org/cl/14",
+    "description": "Hyperspec Chapter on Conses"
+  },
+  {
+    "url": "http://l1sp.org/cl/cons",
+    "description": "Hyperspec reference for `cons`"
+  },
+  {
+    "url": "http://l1sp.org/cl/car",
+    "description": "Hyperpsec reference for `car`"
+  },
+  {
+    "url": "http://l1sp.org/cl/cdr",
+    "description": "Hyperspec reference for `cdr`"
+  },
+  {
+    "url": "https://www.tutorialspoint.com/lisp/lisp_lists.htm",
+    "description": "Summary of functions pertaining to lists and conses"
+  },
+  {
+    "url": "http://www.gigamonkeys.com/book/they-called-it-lisp-for-a-reason-list-processing.html",
+    "description": "Practical Common Lisp chapter on lists and conses."
+  },
+  {
+    "url": "http://l1sp.org/cl/14.1.2",
+    "description": "Hyperspec reference on conses as lists."
+  }
+]

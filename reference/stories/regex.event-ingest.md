@@ -29,4 +29,4 @@ Touches on:
 
 - [Elixir: regular-expressions][implementation-elixir] (reference implementation)
 
-[implementation-elixir]: ../../languages/elixir/exercises/concept/regular-expressions/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/date-parser/.docs/instructions.md

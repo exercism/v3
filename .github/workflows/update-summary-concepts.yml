@@ -1,4 +1,4 @@
-name: Update concepts summary
+name: Tools
 
 on:
   push:
@@ -10,6 +10,7 @@ on:
 
 jobs:
   update-stories-summary:
+    name: Update concepts summary
     runs-on: ubuntu-latest
 
     steps:

@@ -1,3 +1,5 @@
+## basics
+
 x86-64 assembly is a low-level language. In assembly there are no variables,
 instead we use registers to store values. Some registers have a special purpose
 such as returning a value from a function, or passing function arguments. To

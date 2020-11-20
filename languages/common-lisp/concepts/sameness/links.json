@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://eli.thegreenplace.net/2004/08/08/equality-in-lisp",
+    "description": "eli-lisp-equality"
+  },
+  {
+    "url": "http://www.lispworks.com/documentation/HyperSpec/Body/f_eq.htm",
+    "description": "hyper-eq"
+  },
+  {
+    "url": "http://www.lispworks.com/documentation/HyperSpec/Body/f_eql.htm",
+    "description": "hyper-eql"
+  },
+  {
+    "url": "http://www.lispworks.com/documentation/HyperSpec/Body/f_equal.htm",
+    "description": "hyper-equal"
+  },
+  {
+    "url": "http://www.lispworks.com/documentation/HyperSpec/Body/f_equalp.htm",
+    "description": "hyper-equalp"
+  }
+]

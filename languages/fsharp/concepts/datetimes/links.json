@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=netcore-3.1#properties",
+    "description": "DateTime class"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/api/system.datetime.parse?view=netcore-3.1#System_DateTime_Parse_System_String_",
+    "description": "Parsing dates"
+  },
+  {
+    "url": "https://docs.microsoft.com/en-us/dotnet/api/system.datetime.tostring?view=netcore-3.1",
+    "description": "Converting dates to strings"
+  }
+]

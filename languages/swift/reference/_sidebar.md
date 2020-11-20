@@ -1,0 +1,13 @@
+- [Start here](/)
+- Docs
+- [Languages](/languages/README.md)
+  - [Swift](/languages/swift/README.md)
+    - [Docs](/languages/swift/docs/README.md)
+    - [Exercises](/languages/swift/exercises/README.md)
+    - [Reference](/languages/swift/reference/README.md)
+      - [Progression](/languages/swift/reference/progression.md)
+- Reference
+  - [Concepts](/reference/concepts/README.md)
+  - [Paradigms](/reference/paradigms/README.md)
+  - [Tooling](/reference/tooling/README.md)
+  - [Types](/reference/types/README.md)

@@ -43,5 +43,5 @@ Terms used in the story:
 [1]: https://doi.org/10.1109/TLT.2010.33
 [types-boolean]: ../types/boolean.md
 [concepts-boolean_logic]: ../concepts/boolean_logic.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/booleans/.docs/instructions.md
-[implementation-python]: ../../languages/python/exercises/concept/bools/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/pacman-rules/.docs/instructions.md
+[implementation-python]: ../../languages/python/exercises/concept/ghost-gobble-arcade-game/.docs/instructions.md

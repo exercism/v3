@@ -38,6 +38,7 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 - [Elixir: numbers][implementation-elixir]
 - [JavaScript: numbers][implementation-javascript] (reference implementation)
+- [Swift: numbers][implementation-swift]
 
 ## Reference
 
@@ -50,5 +51,6 @@ These are recommendations, not rules, for recurring terminology in the instructi
 [types-decimal-number]: ../types/decimal_number.md
 [types-floating-point-number]: ../types/floating_point_number.md
 [types-string]: ../types/string.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/numbers/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/freelance-rates/.docs/instructions.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/numbers/.docs/instructions.md
+[implementation-swift]: ../../languages/swift/exercises/concept/freelancer-rates/.docs/instructions.md

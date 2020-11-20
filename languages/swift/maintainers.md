@@ -10,3 +10,4 @@ TODO: add senior maintainers -->
 
 - William D. Neumann (Slack: `@WDNeumann`, Github: [wneumann](https://github.com/wneumann))
 - Haunshila Yadav (Slack: `@haunshila`, Github: [haunshila](https://github.com/haunshila))
+- Jeongsik Lee (Slack: `@Hana`, Github: [HanaisMe](https://github.com/HanaisMe))

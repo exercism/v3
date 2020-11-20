@@ -11,7 +11,15 @@ This is a working document to keep track of ideas and thoughts on how the progre
 ```mermaid
 graph TD
 
-Start((Start)) --> numbers
+Start((Start)) --> functions-introduction
+
+functions-introduction --> boolean-logic
+
+boolean-logic --> leap["operators-and-equality (v2 leap)"]
+
+leap --> testing
+
+testing -- "From here on out, assume the student knows how tests work.<br/>Therefore results.json should only have expected=true and the full expression as cmd,<br/>regardless of what the final result.json looks like in detail (unless it's removed entirely)." --> numbers
 
 numbers --> modules
 
@@ -26,18 +34,24 @@ subgraph Type System
 
 	abstract-types --> primitive-types
 end
+
+numbers --> iterator-protocol["iterator-protocol (Fibonacci-Iterator)"]
+multiple-dispatch --> iterator-protocol
+
 extension --> performance
 performance --> Finish((Finish))
 
 subgraph Numbers
 	numbers --> complex-numbers
 	numbers --> rational-numbers
+	numbers --> matrices-introduction
 end
 
 complex-numbers -.-> v2-complex-numbers(v2-complex-numbers)
 rational-numbers -.-> v2-rational-numbers(v2-rational-numbers)
 extension -.-> v2-complex-numbers
 extension -.-> v2-rational-numbers
+iterator-protocol -.-> v2-circular-buffer(v2-circular-buffer)
 ```
 
 ## Legend
@@ -85,7 +99,7 @@ I think of closely coupled concepts/exercises as a “block” in the progressio
 
 - Refactoring exercise, the student has to improve a solution that does several common performance gotchas wrong
 - Hard to test
-- Provide a list of things the student should have caught in `after.md`
+- Provide a list of things the student should have caught in the concept's `about.md`
 - Provide benchmarking code
 - Provide a list of tools to use (`Traceur.jl`, Profilers, BenchmarkTools etc.)
 - Provide an achievable speed-up so that the student knows when they have optimised it well enough

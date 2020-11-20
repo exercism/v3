@@ -1,9 +1,9 @@
 # The Exercism V3 Markathon
 
-July 11th is our first Exercism Hackday.
+August 22nd is our second Exercism Hackday.
 We're focussed on writing Concept Exercises for v3 and as that mainly involves writing Markdown, we've called it the **Markathon**.
 
-The day will officially run from 11am UTC to 11pm UTC, but people are welcome to continue outside of those times.
+The day will officially run from 11pm UTC on the 21st to 23:59 UTC on the 22nd.
 
 ## Hanging out
 
@@ -16,15 +16,19 @@ Tracks can also use their #maintaining-xxx tracks for track-specific discussions
 
 If you're not on Slack but want to be, please email jeremy@exercism.io.
 
+## Jump In
+
+The best way to get started is using our [v3 dashboard](https://v3.exercism.io). Find your language, choose a task on the Contributing task, and get going with it. As you have questions, as them in one of the channels above.
+
 ## Aims of the day
 
-The overarching aim of the day is to get each track to a baseline state that means on **future hackdays** there is a great basis for new contributors to work from. The intention has been to keep this first day relatively small, and then make the next one (maybe 4 weeks later) a larger affair.
+There are three aims for this Markathon:
 
-That overarching aim can be broken into three more tangible outcomes:
+1. Make more progress with content and tooling for v3
+2. Get local setups successfully working on our local machines
+3. Get to know each other more as a community
 
-1. Ensuring lots of people understand what we're trying to achieve with v3 and how everything works.
-2. Get each track in a shape where it can welcome contributors. This primarily involves creating GitHub issues with the `type/new-exercise` label.
-3. Have as many people as possible create a Concept Exercise, so lots of people are familiar with the process.
+For (2), check out the [instructions in the development-environment repo](https://github.com/exercism/development-environment/blob/master/README.md).
 
 ## What you need to know
 
@@ -48,7 +52,3 @@ Here are some references to pages that might be useful:
 - [The implemented exercises](languages/README.md##implemented-concept-exercises)
 - [The stories used in exercises](reference/stories/README.md)
 - [The concepts used in exercises](reference/README.md#implemented-concepts)
-
-## Track specific notes
-
-_Tracks can add specific notes here (for example, if tracks have specific goals or aims). Use `### $LANG` and free-write below :)_
