@@ -22,6 +22,6 @@ Rust has no implicit numeric conversions. If you need to cast between float type
 
 Using the `as` keyword is simple: `expr as Type`. However, there are a number of [caveats and subtleties](https://doc.rust-lang.org/nomicon/casts.html) that you need to keep in mind when using `as` casts.
 
-Trait-based casting is slightly more involved, but safer: conversion traits are only implemented where they are safe. For example, [`f32`](https://doc.rust-lang.org/std/primitive.i32.html) implements `From<u8>`, `From<u16>`, `From<i8>`, and `From<i16>`: any value representable by any of these types is guaranteed to be representable in an `f32`.
+Trait-based casting is slightly more involved, but safer: conversion traits are only implemented where they are safe. For example, [`f32`](https://doc.rust-lang.org/std/primitive.f32.html) implements `From<u8>`, `From<u16>`, `From<i8>`, and `From<i16>`: any value representable by any of these types is guaranteed to be representable in an `f32`. It can be used like `f32::from(expr)`, or `expr.into()`, where `expr` resolves to one of those types.
 
 When converting floating-point values `as`-casting is often preferred simply because of the relative scarcity of trait-based cast implemementations. As of Oct 2020, `TryFrom` is not implemented for floating-point numbers. `as`-casting from `f32` to `f64` is lossless. The reverse is lossy, but has a defined casting protocol intended to minimize loss.
