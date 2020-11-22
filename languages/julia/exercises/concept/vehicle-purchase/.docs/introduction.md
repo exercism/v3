@@ -24,8 +24,8 @@ julia> say_if_positive(-10)
 n is not positive!
 
 <!-- TODO: Add that fancy concept highlight embed thing to boolean expression -->
-If the boolean expression following the `if` evalutes to `true`, the first block of code is run and the second block is skipped.
-If the boolean expression following the `if` evalutes to `false`, the first block of code is skipped and the second block is run.
+If the boolean expression following the `if` evaluates to `true`, the first block of code is run and the second block is skipped.
+If the boolean expression following the `if` evaluates to `false`, the first block of code is skipped and the second block is run.
 The program continues running at the first line of code after the `end` keyword.
 
 !!! info
