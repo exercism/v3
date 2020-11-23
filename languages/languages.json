@@ -3507,6 +3507,46 @@
               "name": "constants"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/fibonacci-iterator",
+          "slug": "fibonacci-iterator",
+          "concepts": [
+            {
+              "url": null,
+              "name": "iterator-protocol"
+            },
+            {
+              "url": null,
+              "name": "optional-arguments"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/multiple-dispatch.md",
+              "name": "multiple-dispatch"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
+            },
+            {
+              "url": null,
+              "name": "nothingness"
+            },
+            {
+              "url": null,
+              "name": "parametric-types"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
+            }
+          ]
         }
       ]
     }
