@@ -36,5 +36,5 @@ This exercise asks the student to the student to implement a pair of functions w
 | Swift | [tuples][implementation-swift] | None    |
 
 [type-array]: ./array.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/tuples/.docs/introduction.md
-[implementation-swift]: ../../languages/swift/exercises/concept/tuples/.docs/introduction.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/kitchen-calculator/.docs/introduction.md
+[implementation-swift]: ../../languages/swift/exercises/concept/santas-helper/.docs/introduction.md

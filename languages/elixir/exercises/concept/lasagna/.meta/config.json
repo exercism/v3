@@ -1,0 +1,20 @@
+{
+  "authors": [
+    {
+      "github_username": "neenjaw",
+      "exercism_username": "neenjaw"
+    }
+  ],
+  "contributors": [
+    {
+      "github_username": "angelikatyborska",
+      "exercism_username": "angelikatyborska"
+    }
+  ],
+  "editor": {
+    "solution_files": ["lib/lasagna.ex"],
+    "test_files": ["test/lasagna_test.exs"]
+  },
+  "forked_from": ["csharp/basics"],
+  "language_versions": ">=1.10"
+}

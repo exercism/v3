@@ -1,0 +1,19 @@
+{
+  "authors": [
+    {
+      "github_username": "neenjaw",
+      "exercism_username": "neenjaw"
+    }
+  ],
+  "contributors": [
+    {
+      "github_username": "Cohen-Carlisle",
+      "exercism_username": "Cohen-Carlisle"
+    }
+  ],
+  "editor": {
+    "solution_files": ["lib/rules.ex"],
+    "test_files": ["test/rules_test.exs"]
+  },
+  "language_versions": ">=1.10"
+}

@@ -34,4 +34,4 @@ This should guide students how to use:
 
 [concept-duck-typing]: ../concepts/duck_typing.md
 [type-tuple]: ../types/tuple.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/tuples/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/kitchen-calculator/.docs/instructions.md

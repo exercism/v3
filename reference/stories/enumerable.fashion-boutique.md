@@ -37,5 +37,5 @@ A single item in the inventory is represented by a map/dictionary, and the whole
 [types-dictionary]: ../types/dictionary.md
 [types-list]: ../types/list.md
 [types-map]: ../types/map.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/enum/.docs/instructions.md
-[extension-elixir]: ../../languages/elixir/exercises/concept/list-comprehensions/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/boutique-inventory/.docs/instructions.md
+[extension-elixir]: ../../languages/elixir/exercises/concept/boutique-suggestions/.docs/instructions.md

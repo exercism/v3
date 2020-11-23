@@ -25,9 +25,9 @@ This exercise models a role-playing game with wizards and warriors that can atta
 
 #### Implementations
 
-| Track | Exercise                         | Changes |
-| ----- | -------------------------------- | ------- |
-| C#    | [classes][implementation-csharp] | None    |
+| Track | Exercise                                      | Changes |
+| ----- | --------------------------------------------- | ------- |
+| C#    | [wizards-and-warriors][implementation-csharp] | None    |
 
 [concept-classes]: ./classes.md
-[implementation-csharp]: ../../languages/csharp/exercises/concept/inheritance/.docs/introduction.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/wizards-and-warriors/.docs/introduction.md

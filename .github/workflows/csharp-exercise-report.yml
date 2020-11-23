@@ -1,4 +1,4 @@
-name: Update csharp exercise report
+name: C#
 
 on:
   push:
@@ -6,11 +6,12 @@ on:
       - 'master'
       # also branch change may be required to bin/csharp-exercise-report/update.sh
     paths:
-     - 'languages/csharp/reference/exercises.json'
-     - 'languages/csharp/exercises/concept/**/design.md'
+      - 'languages/csharp/reference/exercises.json'
+      - 'languages/csharp/exercises/concept/**/design.md'
 
 jobs:
   update-csharp-exercises:
+    name: Update exercise report
     runs-on: ubuntu-latest
 
     steps:

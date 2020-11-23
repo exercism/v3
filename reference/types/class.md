@@ -27,10 +27,10 @@ This exercise models a remote control car that keeps track of the distance it ha
 
 #### Implementations
 
-| Track | Exercise                         | Changes |
-| ----- | -------------------------------- | ------- |
-| C#    | [classes][implementation-csharp] | None    |
+| Track | Exercise                            | Changes |
+| ----- | ----------------------------------- | ------- |
+| C#    | [elons-toys][implementation-csharp] | None    |
 
 [concept-functions]: ../concepts/functions.md
 [type-product-type]: ./product_type.md
-[implementation-csharp]: ../../languages/csharp/exercises/concept/classes/.docs/introduction.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/elons-toys/.docs/introduction.md

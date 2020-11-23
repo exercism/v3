@@ -1,0 +1,21 @@
+{
+    "language_versions": "≥1.0",
+    "editor": {
+        "test_files": [
+            "runtests.jl"
+        ],
+        "solution_files": [
+            "emoji-times.jl"
+        ]
+    },
+    "authors": [
+        {
+            "github_username": "cmcaine",
+            "exercism_username": "cmcaine"
+        },
+        {
+            "github_username": "SaschaMann",
+            "exercism_username": "SaschaMann"
+        }
+    ]
+}

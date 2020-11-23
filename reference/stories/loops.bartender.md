@@ -22,4 +22,4 @@ These are example tasks that fit the story of the freelancer communicating with 
 - [`concept/loops`][concept-loops]
 
 [concept-loops]: ../concepts/loops.md
-[implementation-swift]: ../../languages/swift/exercises/concept/loops/.docs/instructions.md
+[implementation-swift]: ../../languages/swift/exercises/concept/master-mixologist/.docs/instructions.md

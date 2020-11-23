@@ -27,4 +27,4 @@ This exercise deals with sanitizing German names to only use ASCII characters.
 [1] Switch statement, Wikipedia. (2020). https://en.wikipedia.org/wiki/Switch_statement (accessed September 3, 2020).
 
 [ref-booleans]: ../types/boolean.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/charlists/.docs/introduction.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/german-sysadmin/.docs/introduction.md

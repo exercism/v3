@@ -30,5 +30,5 @@ The student is then guided through some operations:
 [types-map]: ../types/map.md
 [types-hash_map]: ../types/hash_map.md
 [types-dictionary]: ../types/dictionary.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/maps/.docs/instructions.md
-[implementation-swift]: ../../languages/swift/exercises/concept/dictionaries/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/high-score/.docs/instructions.md
+[implementation-swift]: ../../languages/swift/exercises/concept/high-score-board/.docs/instructions.md

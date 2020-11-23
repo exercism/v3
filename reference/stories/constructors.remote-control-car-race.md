@@ -23,7 +23,7 @@ These are example tasks that fit the remote control car race exercise:
 
 ## Implementations
 
-- [C#: constructors][implementation-csharp] (reference implementation)
+- [C#: need-for-speed][implementation-csharp] (reference implementation)
 
 ## Related
 
@@ -34,4 +34,4 @@ These are example tasks that fit the remote control car race exercise:
 [concepts-constructors]: ../concepts/constructors.md
 [concepts-objects]: ../concepts/objects.md
 [types-class]: ../types/class.md
-[implementation-csharp]: ../../languages/csharp/exercises/concept/constructors/.docs/instructions.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/need-for-speed/.docs/instructions.md

@@ -1,28 +1,33 @@
-name: Julia Exercise CI
+name: Julia
 
 on:
   push:
     paths:
-    - 'languages/julia/exercises/concept/**'
-    - 'languages/julia/exercises/practice/**'
+      - 'languages/julia/exercises/concept/**'
+      - 'languages/julia/exercises/practice/**'
+      - '!languages/julia/exercises/**/.meta/config.json'
+      - '!languages/julia/exercises/**/.docs/**'
   pull_request:
     paths:
-    - 'languages/julia/exercises/concept/**'
-    - 'languages/julia/exercises/practice/**'
+      - 'languages/julia/exercises/concept/**'
+      - 'languages/julia/exercises/practice/**'
+      - '!languages/julia/exercises/**/.meta/config.json'
+      - '!languages/julia/exercises/**/.docs/**'
 
 jobs:
   test:
+    name: Exercise CI - ${{ matrix.julia-version }} - ${{ matrix.os }} - ${{ matrix.arch }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
-        julia-version: ['1.0', '1.4', '^1.5.0-0', nightly]
+        julia-version: ['1.0', '1', nightly]
         os: [ubuntu-latest, windows-latest, macOS-latest]
-    
+
     steps:
       - uses: actions/checkout@v2
 
-      - name: "Set up Julia ${{ matrix.julia-version }}"
+      - name: 'Set up Julia ${{ matrix.julia-version }}'
         uses: julia-actions/setup-julia@v1
         with:
           version: ${{ matrix.julia-version }}
