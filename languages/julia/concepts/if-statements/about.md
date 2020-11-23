@@ -15,6 +15,7 @@ n is positive!
 
 julia> say_if_positive(-10)
 n is not positive!
+```
 
 <!-- TODO: Add that fancy concept highlight embed thing to boolean expression -->
 If the boolean expression following the `if` evaluates to `true`, the first block of code is run and the second block is skipped.
