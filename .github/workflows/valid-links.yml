@@ -43,7 +43,6 @@ jobs:
               files=$(find . -name \*.md ! -iname _sidebar.md ! -ipath \*/ISSUE_TEMPLATE/\*.md -not -path "./.git/*")
           else
               files=$(git diff --no-commit-id --name-only --diff-filter AM origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | cat)
-              # shellcheck disable=SC2086
               echo "Searching changed files: $files"
           fi
 
