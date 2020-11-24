@@ -47,7 +47,5 @@ jobs:
               echo "Searching changed files: $files"
           fi
 
-          if [[ -n $files ]]; then
-              # shellcheck disable=SC2086
-              markdownlinkchecker -m files -f $files
-          fi
+          # shellcheck disable=SC2086
+          markdownlinkchecker -m files -v detailed -f $files
