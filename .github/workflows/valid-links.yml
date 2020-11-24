@@ -48,4 +48,4 @@ jobs:
           fi
 
           # shellcheck disable=SC2086
-          markdownlinkchecker -m files -v detailed -f $files
+          markdownlinkchecker -m files -f $files
