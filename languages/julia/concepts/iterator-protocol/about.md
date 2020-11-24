@@ -6,6 +6,7 @@ Both methods must return a tuple of an item and the state of the iterator.
 The first method will return the first item and state, while the second method will return the next item and state.
 The iteration ends if `iterate` returns `nothing`.
 
+<!-- prettier-ignore -->
 !!! note
     Julia currently doesn't have a way to formally define interfaces.
     To implement an interface, you need to look up which methods need to be defined in the Manual, or in the documentation of the package that "defines" the interface.
@@ -21,6 +22,7 @@ The iteration ends if `iterate` returns `nothing`.
     ...
     ```
 
+<!-- prettier-ignore -->
 !!! note
     The iterator object itself is usually not mutated by iteration.
 
