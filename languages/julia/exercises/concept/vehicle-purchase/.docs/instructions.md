@@ -6,7 +6,7 @@ You have three tasks, one to help you determine the price of the vehicle you can
 
 The transport vehicle dealers in your town are all running a five year, 0% interest promotion that you would like to take advantage of.
 Implement the `canibuy(vehicle, price, monthly_budget)` function that takes the name of the vehicle you are looking at, its price, and your monthly budget and returns a string letting you know whether you can afford the vehicle or not, if the monthly payment is within 10 of your monthly budget you will want to return a special reminder to be frugal:
-.
+
 ```julia
 julia> canibuy("1974 Ford Pinto", 516, 100)
 "Yes! I'm getting a 1974 Ford Pinto."

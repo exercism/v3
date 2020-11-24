@@ -85,4 +85,3 @@ julia> collect(Fib(10))
  34
  55
 ```
-.
