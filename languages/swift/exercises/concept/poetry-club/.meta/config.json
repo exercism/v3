@@ -1,0 +1,13 @@
+{
+  "authors": [
+    {
+      "github_username": "wneumann",
+      "exercism_username": "wneumann"
+    }
+  ],
+  "editor": {
+    "solution_files": ["Sources/PoetryClub/PoetryClub.swift"],
+    "test_files": ["Tests/PoetryClubTests/PoetryClubTests.swift"]
+  },
+  "forked_from": ["javascript/strings"]
+}

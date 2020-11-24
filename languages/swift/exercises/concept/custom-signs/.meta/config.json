@@ -1,0 +1,12 @@
+{
+  "authors": [
+    {
+      "github_username": "wneumann",
+      "exercism_username": "wneumann"
+    }
+  ],
+  "editor": {
+    "solution_files": ["Sources/CustomSigns/CustomSigns.swift"],
+    "test_files": ["Tests/CustomSignsTests/CustomSignsTests.swift"]
+  }
+}

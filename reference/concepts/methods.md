@@ -24,10 +24,10 @@ This exercise deals with cooking a lasagna dish in the oven. The reference imple
 
 #### Implementations
 
-| Track | Exercise                        | Changes |
-| ----- | ------------------------------- | ------- |
-| C#    | [basics][implementation-csharp] | None    |
+| Track | Exercise                                          | Changes |
+| ----- | ------------------------------------------------- | ------- |
+| C#    | [lucians-luscious-lasagna][implementation-csharp] | None    |
 
-[implementation-csharp]: ../../languages/csharp/exercises/concept/basics/.docs/introduction.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/lucians-luscious-lasagna/.docs/introduction.md
 [concept-functions]: ./functions.md
 [type-class]: ../types/class.md

@@ -74,4 +74,4 @@ with the renowned poets.
 
 [types-string]: ../types/string.md
 [implementation-javascript]: ../../languages/javascript/exercises/concept/strings/.docs/instructions.md
-[implementation-swift]: ../../languages/swift/exercises/concept/string-components/.docs/instructions.md
+[implementation-swift]: ../../languages/swift/exercises/concept/poetry-club/.docs/instructions.md

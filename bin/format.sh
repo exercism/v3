@@ -1,4 +1,3 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
-DEFAULT_PATTERN='**/*.{md,json}'
-npx prettier@2.0.4 --write "${1:-$DEFAULT_PATTERN}"
+npx "prettier@$EXERCISM_PRETTIER_VERSION" --write "**/*.{js,jsx,ts,tsx,css,sass,scss,html,json,md,yml}"

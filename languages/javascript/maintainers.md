@@ -16,6 +16,7 @@ These awesome people help maintain the JavaScript track.
 - Ayato Hayashi (Slack: `@hayashi-ay`, GitHub: [hayashi-ay](https://github.com/hayashi-ay))
 - Georg Tavonius (Slack: `@Georg Tavonius`, GitHub: [Calamari](https://github.com/Calamari))
 - Josh Goebel (Slack: `@Josh Goebel`, GitHub: [yyyc514](https://github.com/yyyc514/))
+- Kristina Born (Slack: `@Kristina Born`, GitHub: [kristinaborn](https://github.com/kristinaborn))
 - Maisam Somji (Slack: `@msomji`, GitHub: [msomji](https://github.com/msomji))
 - Ovidiu Miu (Slack: `@Ovidiu Miu`, GitHub: [ovidiu141](https://github.com/ovidiu141))
 - Pedro Romano (Slack: `@paparomeo`, GitHub: [paparomeo](https://github.com/paparomeo))

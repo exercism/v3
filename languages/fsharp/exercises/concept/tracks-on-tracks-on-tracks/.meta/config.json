@@ -1,0 +1,13 @@
+{
+  "authors": [
+    {
+      "github_username": "ErikSchierboom",
+      "exercism_username": "ErikSchierboom"
+    }
+  ],
+  "forked_from": ["clojure/lists"],
+  "editor": {
+    "solution_files": ["TracksOnTracksOnTracks.fs"],
+    "test_files": ["TracksOnTracksOnTracksTests.fs"]
+  }
+}

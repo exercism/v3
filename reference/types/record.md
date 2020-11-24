@@ -30,4 +30,4 @@ In this exercise you're a big sports fan and you've just discovered a passion fo
 | ----- | -------------------------------- | ------- |
 | F#    | [records][implementation-fsharp] | None    |
 
-[implementation-fsharp]: ../../languages/fsharp/exercises/concept/records/.docs/introduction.md
+[implementation-fsharp]: ../../languages/fsharp/exercises/concept/bandwagoner/.docs/introduction.md

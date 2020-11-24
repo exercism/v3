@@ -1,0 +1,12 @@
+{
+  "authors": [
+    {
+      "github_username": "verdammelt",
+      "exercism_username": "verdammelt"
+    }
+  ],
+  "editor": {
+    "solution_files": ["leslies-lists.lisp"],
+    "test_files": ["leslies-lists-test.lisp"]
+  }
+}

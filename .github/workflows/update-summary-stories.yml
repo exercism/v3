@@ -1,4 +1,4 @@
-name: Update stories summary
+name: Tools
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
 
 jobs:
   update-stories-summary:
+    name: Update stories summary
     runs-on: ubuntu-latest
 
     steps:

@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "url": "https://riptutorial.com/common-lisp/example/11082/conditional-constructs",
+    "description": "A brief tutorial of some Common Lisp conditional expressions."
+  },
+  {
+    "url": "https://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node84.html",
+    "description": "Description of the basic Common Lisp conditional expressions."
+  }
+]

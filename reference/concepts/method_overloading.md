@@ -22,10 +22,10 @@ This exercise has a Game Master for an RPG game describe the game state to the p
 
 #### Implementations
 
-| Track | Exercise                        | Changes |
-| ----- | ------------------------------- | ------- |
-| C#    | [basics][implementation-csharp] | None    |
+| Track | Exercise                                        | Changes |
+| ----- | ----------------------------------------------- | ------- |
+| C#    | [wizards-and-warriors-2][implementation-csharp] | None    |
 
-[implementation-csharp]: ../../languages/csharp/exercises/concept/method-overloading/.docs/introduction.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/wizards-and-warriors-2/.docs/introduction.md
 [concept-methods]: ./methods.md
 [concept-classes]: ./classes.md
