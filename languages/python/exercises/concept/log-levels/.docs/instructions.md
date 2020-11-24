@@ -16,8 +16,7 @@ These are the different log levels:
 ## 1. Parse log level
 
 Define a `LogLevel` enum that has six elements corresponding to the log levels defined above.
-
-Define the `parse_log_level` function which takes the log message as parameter and returns the enum member of its level.
+Next, define the `parse_log_level` function which takes the log message as parameter and returns the enum member of its level.
 
 ```python
 parse_log_level("[INF]: File deleted")

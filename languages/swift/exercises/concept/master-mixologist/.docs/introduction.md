@@ -1,7 +1,11 @@
 ## loops
+
 ## for-loops
+
 ## while-loops
+
 ## repeat-while
+
 ## control-transfer
 
 ## Loops
