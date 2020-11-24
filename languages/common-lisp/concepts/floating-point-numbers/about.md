@@ -1,3 +1,5 @@
+TODO: Add info about single and double-floats (as well as short and long?)
+
 Floating-Point Numbers are fractional or whole numbers including a decimal point (like `3.14`, `-1.7`, `99.99`, `2048.0`)
 
 In general, if you are working with only whole numbers, you should prefer integers as they don't suffer from the same loss of precision as floating-point numbers do over many calculations.
