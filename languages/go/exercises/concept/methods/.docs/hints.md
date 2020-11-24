@@ -1,16 +1,16 @@
 ## 1. Drive a car
 
-- Add a field to the Car struct that keeps track of the driven distance
-- Create a [method][method] that has a receiver of type Car and updates the driven distance
+- Add a field to the `Car` struct that keeps track of the driven distance
+- Create a [method][method] that has a receiver of type `Car` and updates the driven distance
 
 ## 2. Display the distance driven
 
-- Create a [method][method] that has a receiver of type Car
+- Create a [method][method] that has a receiver of type `Car`
 - Show the value of the _distance_ field
 
 ## 3. Display the battery percentage
 
-- Create a [method][method] that has a receiver of type Car
+- Create a [method][method] that has a receiver of type `Car`
 - Show the value of the _battery_ field
 
 ## 4. Check if a remote car can finish a race
