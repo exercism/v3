@@ -48,4 +48,5 @@ jobs:
 
           echo "::debug::Checking $files..."
 
+          # shellcheck disable=SC2086
           markdownlinkchecker -v detailed -f $files
