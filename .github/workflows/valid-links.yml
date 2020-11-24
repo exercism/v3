@@ -46,4 +46,4 @@ jobs:
               files=$(git diff --no-commit-id --name-only --diff-filter AM origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | cat)
           fi
 
-          dotnet markdownlinkchecker -v detailed -f "$files"
+          markdownlinkchecker -v detailed -f "$files"
