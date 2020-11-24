@@ -35,17 +35,17 @@ jobs:
 
       - name: Verify links
         run: |
-          deleted_or_renamed=$(git diff --no-commit-id --name-only --diff-filter DR origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -c -v -i ISSUE_TEMPLATE)
+          deleted_or_renamed=$(git diff --no-commit-id --name-only --diff-filter DR origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | wc -l)
 
           if [ "$GITHUB_REF" = "refs/heads/master" ] || [[ $deleted_or_renamed -ne 0 ]]
           then
-              echo "Searching all files..."
+              echo "::debug::Searching all files..."
               files=$(find . -name \*.md ! -iname _sidebar.md ! -ipath \*/ISSUE_TEMPLATE/\*.md -not -path "./.git/*")
           else
-              echo "Searching changed files..."
+              echo "::debug::Searching changed files..."
               files=$(git diff --no-commit-id --name-only --diff-filter AM origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | cat)
           fi
 
-          echo "Checking $files..."
+          echo "::debug::Checking $files..."
 
           markdownlinkchecker -v detailed -f "$files"
