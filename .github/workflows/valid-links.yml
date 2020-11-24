@@ -48,4 +48,4 @@ jobs:
 
           echo "::debug::Checking $files..."
 
-          markdownlinkchecker -v detailed -f "$(files)"
+          markdownlinkchecker -v detailed -f $files
