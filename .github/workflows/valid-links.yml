@@ -4,7 +4,7 @@ on:
   push:
   pull_request:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: '0 3 * * *'
   workflow_dispatch:
 
 env:
@@ -24,7 +24,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git fetch origin master
           git merge origin/master
-      
+
       - name: Install .NET 5.0.x
         uses: actions/setup-dotnet@v1
         with:

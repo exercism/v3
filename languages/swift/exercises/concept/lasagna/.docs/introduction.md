@@ -1,7 +1,11 @@
 ## basics
+
 ## constants
+
 ## functions
+
 ## type-annotations
+
 ## variables
 
 Swift is a statically-typed language, which means that every value has a known, fixed type at compile time.

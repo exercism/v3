@@ -1,4 +1,5 @@
 ## escaping-functions
+
 ## higher-order-functions
 
 ### Function types

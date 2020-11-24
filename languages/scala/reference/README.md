@@ -156,7 +156,6 @@ The concept exercises use the following concepts:
 | concept | interpretation |
 | ------- | -------------- |
 
-
 [encapsulation]: ../../../reference/concepts/encapsulation.md
 [classes]: ../../../reference/concepts/classes.md
 [objects]: ../../../reference/concepts/objects.md
