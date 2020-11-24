@@ -39,14 +39,13 @@ jobs:
 
           if [ "$GITHUB_REF" = "refs/heads/master" ] || [[ $deleted_or_renamed -ne 0 ]]
           then
-              echo "::debug::Searching all files..."
+              echo "Searching all files..."
               files=$(find . -name \*.md ! -iname _sidebar.md ! -ipath \*/ISSUE_TEMPLATE/\*.md -not -path "./.git/*")
           else
-              echo "::debug::Searching changed files..."
               files=$(git diff --no-commit-id --name-only --diff-filter AM origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | cat)
+              # shellcheck disable=SC2086
+              echo "Searching changed files: $files"
           fi
-
-          echo "::debug::Checking $files..."
 
           # shellcheck disable=SC2086
           markdownlinkchecker -v detailed -f $files
