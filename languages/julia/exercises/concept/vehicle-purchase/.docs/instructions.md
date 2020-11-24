@@ -18,6 +18,7 @@ julia> canibuy("2020 Gazelle Medeo", 3000, 50)
 "I'll have to be frugal if I want a 2020 Gazelle Medeo."
 ```
 
+<!-- prettier-ignore -->
 !!! info
     Numbers in Julia can contain `_` to group digits together.
     E.g. `562_500` equals `562500`.

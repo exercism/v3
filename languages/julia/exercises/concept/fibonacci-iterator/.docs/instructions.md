@@ -19,6 +19,7 @@ $$
 
 For example, the third element would be $a_3 = a_1 + a_2 = 1 + 1 = 2$, the fourth would be $a_4 = a_2 + a_3 = 1 + 2 = 3$, and so on.
 
+<!-- prettier-ignore -->
 !!! note
     Some sources define the first elements as $a_0 = 0$ and $a_1 = 1$.
     However in the context of this exercise, we define the sequence without a $0$-th element.
