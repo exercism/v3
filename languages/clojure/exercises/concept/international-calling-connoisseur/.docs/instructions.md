@@ -42,7 +42,7 @@ Implement the `update-map` function which takes a dialing code and replaces the 
 
 ### 5. Check that a country exists in the map
 
-Implement the `code-exists?` function to check whether a dialing code exists in the dictionary.
+Implement the `code-exists?` function to check whether a dialing code exists in the map.
 
 ```clojure
 (code-exists? countries 55)
