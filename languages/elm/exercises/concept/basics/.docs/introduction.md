@@ -1,4 +1,4 @@
-## Minimal compilable file
+## basics
 
 ### Modules
 
@@ -98,4 +98,3 @@ https://elmprogramming.com/indentation.html
 ### Formatting
 
 There is a [style guide](https://elm-lang.org/docs/style-guide), and [elm-format](https://github.com/avh4/elm-format) can be used to automatically format code.
-
