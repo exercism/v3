@@ -31,7 +31,7 @@ Color.ALIAS_OF_RED.value
 #=> 1
 ```
 
-Iterating through the members of the enum is straightforward:
+Iterating through the members of the enum can be done with the standard `for member in` syntax:
 
 ```python
 for member in Color:
@@ -40,7 +40,7 @@ for member in Color:
 #=> (GREEN, 2)
 ```
 
-Enum members can be compared using [`is` (called identity)](https://www.w3schools.com/python/ref_keyword_is.asp) or `is not` operators. The `==` or `!=` operators would work likewise.
+Enum members can be compared using [`is` (_identity operator_)](https://www.w3schools.com/python/ref_keyword_is.asp) or `is not`. The `==` or `!=` (_equality_operators_) work likewise.
 
 ```python
 a = Color.RED
@@ -52,7 +52,7 @@ a == Color.RED
 #=> True
 ```
 
-To access an enum member for a given value, this notation can be used `EnumName(value)`:
+To access an enum member for a given value, `EnumName(value)` can be used:
 
 ```python
 g = Color(2)

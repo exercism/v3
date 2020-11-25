@@ -37,7 +37,7 @@ Color.ALIAS_OF_RED
 #=> <Color.RED: 1>
 ```
 
-Iterating through the members of the enum can be done with:
+Iterating through the members of the enum can be done with the standard `for member in` syntax:
 
 ```python
 for member in Color:
@@ -53,7 +53,7 @@ for member in Color.__members__.items():
 #=>('ALIAS_OF_RED', <Color.RED: 1>)
 ```
 
-Enum members can be compared using [`is` (called identity)][identity-keyword] or `is not` operators. The `==` or `!=` operators would work likewise.
+Enum members can be compared using [`is` (_identity operator_)][identity-keyword] or `is not`. The `==` or `!=` (_equality operators_) work likewise.
 
 ```python
 a = Color.RED
@@ -74,7 +74,7 @@ class Shape(Enum):
     OVAL = auto()
 ```
 
-To disallow aliases (which means duplicate values), the `@unique` decorator may be used.
+To disallow aliasing (_preventing duplicate values with different names_), the `@unique` decorator may be used.
 
 ```python
 @unique

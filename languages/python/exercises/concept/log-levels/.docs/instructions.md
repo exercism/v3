@@ -26,7 +26,7 @@ parse_log_level("[INF]: File deleted")
 
 ## 2. Support unknown log level
 
-Unfortunately, occasionally some log messages have an unknown log messages. To gracefully handle these log messages in the function `parse_log_level`, add an `Unknown` member to the `LogLevel` enum which is returned when parsing an unknown log level:
+Unfortunately, some log messages occasionally appear with an _unknown_ severity. To gracefully handle these 'mysterious' log messages in the function `parse_log_level`, add an `Unknown` member to the `LogLevel` enum which is returned when parsing an unknown log level:
 
 ```python
 parse_log_level("[XYZ]: Overly specific, out of context message")
@@ -49,7 +49,7 @@ The log level codes are following a simple mapping:
 | `Fatal`   | `7`  |
 | `Unknown` | `42` |
 
-Define the `convert_to_short_log()` which takes this two parameters:
+Define the `convert_to_short_log()` function, which takes two parameters:
 
 1. Log level - The Log level of the log sent. ex: `LogLevel.Error`.
 2. Log Message - The message of type `str`.
@@ -63,7 +63,7 @@ convert_to_short_log(LogLevel.Error, "Stack overflow")
 
 It looks like the user has created logs for `LogLevel.Warn` instead of `LogLevel.Warning`. Create an `alias` for `LogLevel.Warning` and return the new alias member in the function `get_warn_alias`.
 
-This can be done on the same enum class `LogLevel` already defined at the top of the file. Both the LogLevels should point to same value `"WRN"`.
+This can be done on the same enum class `LogLevel` already defined at the top of the file. Both the LogLevels should point to same value: `"WRN"`.
 
 ```python
 get_warn_alias()
