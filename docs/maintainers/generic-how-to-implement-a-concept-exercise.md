@@ -16,6 +16,7 @@ As this document is generic, the following placeholders are used:
 
 - `<LANG>`: the name of the track in kebab-case (e.g. `ruby`).
 - `<SLUG>`: the slug of the exercise in kebab-case (e.g. `calculator-conundrum`).
+- `<NAME>`: the name of the exercise (e.g. `Calculator Conundrum`).
 - `<UUID>`: the exercise's unique UUID.
 - `<CONCEPT_SLUG>`: the slug of one of the exercise's concepts in kebab-case (e.g. `anonymous-methods`).
 
@@ -101,6 +102,7 @@ An entry should be added to the track's `config.json` file for the new concept e
       ...
       {
         "slug": "<SLUG>",
+        "name": "<NAME>",
         "uuid": "<UUID>",
         "concepts": ["<CONCEPT-1>"],
         "prerequisites": ["<PREREQUISITE-1>", "<PREREQUISITE-2>"]
@@ -110,8 +112,10 @@ An entry should be added to the track's `config.json` file for the new concept e
 }
 ```
 
+- The slug and name must adhere to [these naming rules][determining-concepts-naming].
 - Concepts (and prerequisites) must adhere to [these naming rules][determining-concepts-naming].
 - The UUID can be randomly generated using the [UUID Generator][uuid-gen].
+
 
 For more information, please read [this in-depth description][config.json] and check [this example file][example-config.json].
 
