@@ -218,15 +218,11 @@
         ]
       },
       {
-        "slug": "functions",
-        "uuid": null,
+        "slug": "lillys-lasagna",
+        "name": "Lilly's Lasagna",
+        "uuid": "825df850-2f38-11eb-a817-542696d187f9",
         "concepts": ["functions"],
-        "prerequisites": [
-          "expressions",
-          "integers",
-          "arithmetic",
-          "conditionals"
-        ]
+        "prerequisites": ["expressions", "integers", "arithmetic"]
       }
     ],
     "practice": [
