@@ -53,10 +53,12 @@ jobs:
           EXERCISM_PRETTIER_VERSION: '2.1.2'
 
       - name: 'Commit formatted code'
+        id: commit
         run: |
           # Check if there is nothing to commit (i.e. no formatting changes made)
           if [ -z "$(git status --porcelain)" ]; then
             echo "Code is already formatted correctly"
+            echo "::set-output name=already_formatted::true"
             exit 0
           fi
 
@@ -81,4 +83,18 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: 'For security reasons, `/format` does not trigger CI builds when the PR has been submitted from a fork. To make the required checks pass, you need to trigger a build through one of the following ways:\n\n- Push an empty commit to this branch: `git commit --allow-empty -m "Trigger builds"`.\n- Close and reopen the PR.\n- Push a regular commit to this branch.'
+            })
+
+      - name: 'Post success message if code is already formatted'
+        continue-on-error: true # Never fail the build if this fails
+        if: steps.commit.outputs.already_formatted == 'true'
+        uses: actions/github-script@6e5ee1dc1cb3740e5e5e76ad668e3f526edbfe45 # 2.0.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Code is already formatted correctly.'
             })
