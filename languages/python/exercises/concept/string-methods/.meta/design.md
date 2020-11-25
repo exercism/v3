@@ -2,10 +2,10 @@
 
 ## Goal
 
-The goal of this exercise is to teach helpful string manipulation methods and how to use them in Python.  
-
+The goal of this exercise is to teach helpful string manipulation methods and how to use them in Python.
 
 ## Learning objectives
+
 - Know the `str` class and its core methods
 - Know when to use methods of str to operate on a string
 - Use several of the methods from each grouping below to operate on strings
@@ -17,8 +17,8 @@ The goal of this exercise is to teach helpful string manipulation methods and ho
 - Return a new string that replaces a given substring with a new value using the `replace()` method
 - Build a new string from an input iterable with `join()`
 
-
 ## Out of scope
+
 - string formatting methods, "f-strings", "format strings"
 - string splitting
 - string translate methods (will have their own exercise)
@@ -30,12 +30,14 @@ The goal of this exercise is to teach helpful string manipulation methods and ho
 - text encodings
 
 ## Concepts
+
 - `str`
 - methods
 - immutable/immutability
 - unicode code point
 
 ## Prerequisites
+
 - `booleans`
 - `strings`
 - `sequences`, `sequence type`
