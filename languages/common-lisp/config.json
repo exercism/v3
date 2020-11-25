@@ -621,7 +621,7 @@
       "uuid": "894a6bcc-5b4c-41d1-bfba-a0ca3b121257",
       "slug": "conditionals",
       "name": "Conditionals",
-      "blurb": "TODO: add blurb for conditionals concept"
+      "blurb": "Branching logic"
     },
     {
       "uuid": "9afa389a-17e2-4991-ab48-64be5fc955aa",
@@ -759,7 +759,7 @@
       "uuid": "59de6711-b247-4f06-8030-94633cf16a65",
       "slug": "truthy-and-falsy",
       "name": "Truthy And Falsy",
-      "blurb": "TODO: add blurb for truthy-and-falsy concept"
+      "blurb": "True and False values"
     },
     {
       "uuid": "6e40e924-f9a1-4dce-9d23-44f922e3ba48",
