@@ -58,6 +58,13 @@
         "uuid": "693e4ef3-bcf1-4b5f-8883-24d006164541",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "date-parser",
+        "name": "Date Parser",
+        "uuid": "9b287023-0d3d-481e-b278-073e19fb0756",
+        "concepts": ["regular-expressions"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": [
