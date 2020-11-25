@@ -48,10 +48,10 @@ legal to use both destructuring and positional access.
 ```rust
 struct TupleStruct(u8, i32);
 let my_tuple_struct = TupleStruct(123, -321);
-let borrowed_neg = &my_tuple_struct.1;
-let TupleStruct(borrowed_byte, _) = &my_tuple_struct;
-assert_eq!(borrowed_neg, &-321);
-assert_eq!(borrowed_byte, &123);
+let neg = my_tuple_struct.1;
+let TupleStruct(byte, _) = my_tuple_struct;
+assert_eq!(neg, -321);
+assert_eq!(byte, 123);
 ```
 
 ### Field Visibility
