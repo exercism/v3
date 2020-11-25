@@ -42,6 +42,7 @@
       },
       {
         "slug": "tuples",
+        "name": "Low-Power Embedded Game",
         "uuid": "7f064e9b-f631-48b1-9ed0-a66e8393ceba",
         "concepts": ["tuples", "destructuring"],
         "prerequisites": ["structs"]

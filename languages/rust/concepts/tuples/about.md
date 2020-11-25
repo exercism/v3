@@ -1,8 +1,18 @@
-Tuples are a lightweight way to group a fixed set of arbitrary types of data together. A tuple doesn't have
+# Tuples
+
+Tuples are a lightweight way to group a bounded set of heterogenous data together. A tuple doesn't have
 a particular name; naming a data structure turns it into a `struct`. A tuple's fields don't have names;
 they are accessed by means of destructuring or by position.
 
 ## Syntax
+
+Tuples are a list of fields surrounded by parentheses:
+
+- `()` is the `unit type`, which is a [special case](https://doc.rust-lang.org/std/primitive.unit.html)
+- **(** _expression_ **,)** is a single-element tuple expression
+- **(** _Type_ **,)** is a single-element tuple type
+- **(** _expression_ **,** ... **)** is a general tuple expression
+- **(** _Type_ **,** ... **)** is a general tuple type
 
 ### Creation
 

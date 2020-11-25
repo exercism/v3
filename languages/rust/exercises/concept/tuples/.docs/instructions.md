@@ -1,8 +1,8 @@
-# Instructions
-
 You are working on a game targeting a low-power embedded system and need to write several convenience functions which will be used by other parts of the game.
 
-## 1. Write a function `divmod` which returns both the quotient and remainder of a division
+## 1. Calculate the quotient and remainder of a division
+
+A quotient is the output of a division.
 
 ```rust
 fn divmod(dividend: i16, divisor: i16) -> (i16, i16)
@@ -14,7 +14,7 @@ Example:
 assert_eq!(divmod(10, 3), (3, 1));
 ```
 
-## 2. Write an iterator adaptor `evens` which returns the even items from an arbitrary iterator
+## 2. Choose even-positioned items from an iterator
 
 This will be helpful to enable a screen-buffer optimization, your boss promises.
 
@@ -31,7 +31,25 @@ Don't worry too much about the generic or impl syntax here; it doesn't affect yo
 fn evens<T>(iter: impl Iterator<Item=T>) -> impl Iterator<Item=T>
 ```
 
-## 3. Implement a `manhattan` method on a `Position` tuple struct
+Examples:
+
+```rust
+let mut even_ints = evens(0_u8..);
+assert_eq!(even_ints.next(), Some(0));
+assert_eq!(even_ints.next(), Some(2));
+assert_eq!(even_ints.next(), Some(4));
+assert_eq!(even_ints.next(), Some(6));
+```
+
+```rust
+let mut evens_from_odds = evens(1_u16..);
+assert_eq!(evens_from_odds.next(), Some(1));
+assert_eq!(evens_from_odds.next(), Some(3));
+assert_eq!(evens_from_odds.next(), Some(5));
+assert_eq!(evens_from_odds.next(), Some(7));
+```
+
+## 3. Calculate the manhattan distance of a position from the origin
 
 For mapping convenience, you have a tuple struct `Position`:
 
@@ -45,4 +63,10 @@ You need to implement a method `manhattan` on `Position` which returns the [manh
 impl Position {
     fn manhattan(&self) -> i16
 }
+```
+
+Example:
+
+```rust
+assert_eq!(Position(3, 4).manhattan(), 7);
 ```

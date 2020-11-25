@@ -1,8 +1,8 @@
 ## General
 
-- <https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type>
-- <https://doc.rust-lang.org/stable/rust-by-example/primitives/tuples.html>
-- <https://doc.rust-lang.org/stable/rust-by-example/flow_control/match/destructuring.html>
+- [Rust Book: The Tuple Type](https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type)
+- [Rust By Example: Tuples](https://doc.rust-lang.org/stable/rust-by-example/primitives/tuples.html)
+- [Rust By Example: Destructuring](https://doc.rust-lang.org/stable/rust-by-example/flow_control/match/destructuring.html)
 
 ## 1. Write a function `divmod` which returns both the quotient and remainder of a division
 
@@ -18,4 +18,4 @@
 
 - Don't worry about method syntax; just replacing the `unimplemented` portion within the `impl Position` block will do the right thing.
 - Consider that some values within a `Position` may be negative, but a distance is never negative.
-- [`i16::abs`](https://doc.rust-lang.org/std/primitive.i16.html#method.abs)
+- Calculating the absolute value is [built-in](https://doc.rust-lang.org/std/primitive.i16.html#method.abs)
