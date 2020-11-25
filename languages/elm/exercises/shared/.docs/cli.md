@@ -1,6 +1,7 @@
 # CLI
 
-You should [Install Elm}[docs-elm].
+You should [Install Elm][docs-elm].
+
 
 You can run the tests by opening a command prompt in the exercise's directory, and then running [`elm-test`][docs-elm-test].
 
