@@ -65,7 +65,7 @@ a == Color.RED
 #=> True
 ```
 
-To assign integer values, the [`auto()` function][enum-auto-docs] starts with `1` and sets automatically subsequent values.
+To assign integer values, the [`auto()` function][enum-auto-docs] starts with `1` and automatically sets subsequent values.
 
 ```python
 class Shape(Enum):

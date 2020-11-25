@@ -36,7 +36,7 @@ parse_log_level("[XYZ]: Overly specific, out of context message")
 
 The log level of a log line is quite verbose. To reduce the disk space needed to store the log messages, a short format is defined: `"[<CODE_LEVEL>]:<MESSAGE>"`.
 
-The log level codes are following a simple mapping:
+The log level codes follow a straightforward mapping:
 
 | LEVEL     | CODE |
 | --------- | ---- |
