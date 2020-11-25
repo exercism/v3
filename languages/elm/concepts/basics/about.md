@@ -71,7 +71,7 @@ https://guide.elm-lang.org/types/reading_types.html
 
 ### Indentation / significant whitespace
 
-Elm doesn’t use syntactic markers such as curly brackets, parentheses, or semicolons to specify code boundaries. It uses whitespaces and indentations instead.
+Elm doesn't use syntactic markers such as curly brackets, parentheses, or semicolons to specify code boundaries. It uses whitespaces and indentations instead.
 
 - Module, import, and top-level function definitions must start at the left most column.
 - If an expression is split into multiple lines, the code that is part of that expression must be indented under that expression with at least one space.
@@ -98,4 +98,3 @@ https://elmprogramming.com/indentation.html
 ### Formatting
 
 There is a [style guide](https://elm-lang.org/docs/style-guide), and [elm-format](https://github.com/avh4/elm-format) can be used to automatically format code.
-
