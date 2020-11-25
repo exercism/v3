@@ -18,8 +18,6 @@ module Greet exposing (greet)
 module Greet exposing (..)
 ```
 
-https://elm-lang.org/docs/syntax#modules
-
 ### Imports
 
 You must `import` functions from other modules in order to use them. Qualified imports are preferred.
@@ -33,8 +31,6 @@ import List as L                       -- L.map, L.foldl
 import List exposing (..)              -- map, foldl, concat, ...
 import List exposing ( map, foldl )    -- map, foldl
 ```
-
-https://elm-lang.org/docs/syntax#modules
 
 ### Functions
 
@@ -67,8 +63,6 @@ add number1 number2 =
 	number1 + number2
 ```
 
-https://guide.elm-lang.org/types/reading_types.html
-
 ### Indentation / significant whitespace
 
 Elm doesn't use syntactic markers such as curly brackets, parentheses, or semicolons to specify code boundaries. It uses whitespaces and indentations instead.
@@ -83,8 +77,6 @@ greet personToGreet =
     Debug.todo "Implement greet"
 ```
 
-https://elmprogramming.com/indentation.html
-
 ### Comments
 
 ```elm
@@ -94,7 +86,3 @@ https://elmprogramming.com/indentation.html
    {- can be nested -}
 -}
 ```
-
-### Formatting
-
-There is a [style guide](https://elm-lang.org/docs/style-guide), and [elm-format](https://github.com/avh4/elm-format) can be used to automatically format code.
