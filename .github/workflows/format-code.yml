@@ -10,6 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/format')
     steps:
+      - name: 'Post message to show that the command has been triggered'
+        id: status-comment
+        uses: actions/github-script@47f7cf65b5ced0830a325f705cad64f2f58dddf7 # 3.1.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          result-encoding: string
+          script: |
+            const comment = await github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Formatting...'
+            })
+
+            return comment.id
+
       - name: 'Download PR data'
         run: |
           PR_DATA="/tmp/pr.json"
@@ -97,4 +113,19 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: 'Code is already formatted correctly.'
+            })
+
+      - name: 'Update status comment'
+        continue-on-error: true # Never fail the build if this fails
+        if: always()
+        uses: actions/github-script@47f7cf65b5ced0830a325f705cad64f2f58dddf7 # 3.1.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            // Update comment instead of deleting because I don't trust it to not delete some random comment if something goes wrong
+            github.issues.updateComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: ${{ steps.status-comment.outputs.result }},
+              body: 'Formatter finished running.'
             })
