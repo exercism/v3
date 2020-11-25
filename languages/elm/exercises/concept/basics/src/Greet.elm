@@ -6,6 +6,4 @@ module Greet exposing (greet)
 -- you will need an `import` statement here to import the `toUpper` function from the `String` module
 -- import String
 
-greet : String -> String
-greet personToGreet =
-    Debug.todo "Implement greet"
+-- TODO: define the 'greet' function
