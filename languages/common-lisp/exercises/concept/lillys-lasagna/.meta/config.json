@@ -6,5 +6,9 @@
     }
   ],
   "contributors": [],
-  "forked_from": ["ruby/lasagna"]
+  "forked_from": ["ruby/lasagna"],
+  "editor": {
+    "solution_files": ["lillys-lasagna.lisp"],
+    "test_files": ["lillys-lasagna-test.lisp"]
+  }
 }
