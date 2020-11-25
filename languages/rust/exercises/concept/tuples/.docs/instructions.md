@@ -18,14 +18,14 @@ assert_eq!(divmod(10, 3), (3, 1));
 
 This will be helpful to enable a screen-buffer optimization, your boss promises.
 
-[Iterators](https://doc.rust-lang.org/std/iter/trait.Iterator.html) are a separate concept, and we aren't going to get too in-depth about their syntax or mechanics here. The important facts about them for this task:
+Iterators are items which expose the methods defined by the [`Iterator` trait](https://doc.rust-lang.org/std/iter/trait.Iterator.html). That documentation is fairly extensive, because they offer many methods; here are the most relevant properties:
 
 - An iterator is an arbitrary-length stream of items
 - They have an [`enumerate` method](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.enumerate) which returns a tuple `(i, val)` for each value
 - They have a [`filter` method](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.filter) which uses a closure to determine whether to yield an element of the iterator
 - They have a [`map` method](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.map) which uses a closure to modify elements of the iterator
 
-Don't worry too much about the generic or impl syntax here; it doesn't affect your implementation. It just means that this adaptor can be applied to any iterator, and the resulting iterator has the same item type as the input iterator.
+Because your function can run on any kind of iterator, it uses `impl` to signify that this is a trait instance instead of a simple item. Likewise, the `<Item=T>` syntax just means that it doesn't matter what kind of item the iterator produces; your function can produce the even elements of any iterator.
 
 ```rust
 fn evens<T>(iter: impl Iterator<Item=T>) -> impl Iterator<Item=T>
@@ -42,7 +42,7 @@ assert_eq!(even_ints.next(), Some(6));
 ```
 
 ```rust
-let mut evens_from_odds = evens(1_u16..);
+let mut evens_from_odds = evens(1_i16..);
 assert_eq!(evens_from_odds.next(), Some(1));
 assert_eq!(evens_from_odds.next(), Some(3));
 assert_eq!(evens_from_odds.next(), Some(5));
