@@ -43,7 +43,7 @@ the `defun` is automatically returned:
 ## symbols
 
 There are a couple of things to note regarding the example above. Firstly, the
-pp_symbol_ `FOO` is an atom, as it only has one "part" (unlike a cons which has
+_symbol_ `FOO` is an atom, as it only has one "part" (unlike a cons which has
 two). Additionally, Common Lisp is **case-insensitive**, so symbols are often
 returned as all uppercase, but `foo`, `Foo` and `FOO` are equivalent.
 
