@@ -11,6 +11,6 @@ or otherwise working with the str type. New strings can be created based
 on method arguments, and/or additional information can be returned. Strings
 can be concatenated using the `+` operator or with `str.join()`.
 
-`Strings` are immutable (the value does not change), so each of these
+`Strings` are immutable (meaning the value does not change), so each of these
 methods will actually return a new instance of `str` instead of modifying
 the existing one.
