@@ -35,4 +35,4 @@ The story facilitates defining functions:
 [concepts-inout_parameters]: ../concepts/inout_parameters.md
 [concepts-nested_functions]: ../concepts/nested_functions.md
 [types-function]: ../types/function.md
-[implementation-swift]: ../../languages/swift/exercises/concept/functions/.docs/instructions.md
+[implementation-swift]: ../../languages/swift/exercises/concept/lasagna-master/.docs/instructions.md

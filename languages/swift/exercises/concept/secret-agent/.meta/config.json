@@ -1,0 +1,12 @@
+{
+  "authors": [
+    {
+      "github_username": "wneumann",
+      "exercism_username": "wneumann"
+    }
+  ],
+  "editor": {
+    "solution_files": ["Sources/SecretAgent/SecretAgent.swift"],
+    "test_files": ["Tests/SecretAgentTests/SecretAgentTests.swift"]
+  }
+}

@@ -19,6 +19,6 @@
 
 - `basics`: know what the text section is; know what a register is; know how to store a value in a register; know how to define a function; know how to return a value from a function; know how to call a function; know about the `global` directive; know how to use arithmetic instructions.
 
-## Prequisites
+## Prerequisites
 
 There are no prerequisites.

@@ -18,7 +18,7 @@ This exercise deals with a machine that gives out consecutive numbers. The refer
 | ------ | ---------------------------------- | ------- |
 | Elixir | [processes][implementation-elixir] | None    |
 
-[implementation-elixir]: ../../languages/elixir/exercises/concept/processes/.docs/introduction.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/take-a-number/.docs/introduction.md
 
 ---
 

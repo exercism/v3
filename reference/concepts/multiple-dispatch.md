@@ -8,7 +8,7 @@ Multiple Dispatch is a form of [polymorphism][concept-polymorphism].
 
 ## Implementations
 
-- [Julia](../../languages/julia/exercises/concept/multiple-dispatch/)
+- [Julia](../../languages/julia/exercises/concept/encounters/)
 
 ---
 

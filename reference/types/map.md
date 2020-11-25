@@ -26,4 +26,4 @@ This exercise asks student to create and maintain a map of highscores using stri
 
 [type-hash-map]: ./hash_map.md
 [type-pair]: ./pair.md
-[implementation-elixir]: ../../languages/elixir/exercises/concept/booleans/.docs/introduction.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/pacman-rules/.docs/introduction.md

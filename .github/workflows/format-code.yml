@@ -13,7 +13,7 @@ jobs:
       - name: 'Download PR data'
         run: |
           PR_DATA="/tmp/pr.json"
-          
+
           jq -r ".issue.pull_request.url" "$GITHUB_EVENT_PATH" | \
             xargs curl --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' -o "$PR_DATA" --url
 
@@ -35,7 +35,7 @@ jobs:
           PR_DATA="/tmp/pr.json"
 
           HEAD_REF=$(jq -r ".head.ref" "$PR_DATA")
-          
+
           if [ ${{ steps.fork_status.outputs.fork }} == "false" ]; then
             echo "::debug::Setting up repo using SSH"
             HEAD_REPO=$(jq -r '.head.repo.ssh_url' "$PR_DATA")
@@ -48,12 +48,9 @@ jobs:
           git checkout -b "$HEAD_REF" "origin/$HEAD_REF"
 
       - name: 'Format code'
-        run: |
-          # Use prettier to format the added or modified Markdown files in the PR (if any)
-          jq -r '.issue.pull_request.url | . += "/files"' "$GITHUB_EVENT_PATH" | \
-            xargs curl --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' --url | \
-            jq -c '.[] | select(.status == "added" or .status == "modified") | select(.filename | match("\\.(md|json)$")) | .filename' | \
-            xargs npx prettier@2.0.4 --write
+        run: ./bin/format.sh
+        env:
+          EXERCISM_PRETTIER_VERSION: '2.1.2'
 
       - name: 'Commit formatted code'
         run: |
@@ -71,7 +68,7 @@ jobs:
           git add .
           git commit -m "[CI] Format code"
           git push
-      
+
       - name: 'Post reminder to trigger build manually'
         continue-on-error: true # Never fail the build if this fails
         if: steps.fork_status.outputs.fork == 'true'

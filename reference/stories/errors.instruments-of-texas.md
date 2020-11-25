@@ -18,4 +18,4 @@ The student implements a function in to handle errors in three ways:
 
 - [Elixir: errors][implementation-elixir] (reference implementation)
 
-[implementation-elixir]: ../../languages/elixir/exercises/concept/errors/.docs/instructions.md
+[implementation-elixir]: ../../languages/elixir/exercises/concept/rpn-calculator/.docs/instructions.md

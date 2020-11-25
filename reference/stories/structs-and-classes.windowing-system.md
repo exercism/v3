@@ -57,4 +57,4 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 [types-struct]: ../types/struct.md
 [types-class]: ../types/class.md
-[implementation-swift]: ../../languages/swift/exercises/concept/structs-and-classes/.docs/instructions.md
+[implementation-swift]: ../../languages/swift/exercises/concept/windowing-system/.docs/instructions.md

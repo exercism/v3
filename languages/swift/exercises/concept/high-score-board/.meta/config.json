@@ -1,0 +1,13 @@
+{
+  "authors": [
+    {
+      "github_username": "wneumann",
+      "exercism_username": "wneumann"
+    }
+  ],
+  "editor": {
+    "solution_files": ["Sources/HighScoreBoard/HighScoreBoard.swift"],
+    "test_files": ["Tests/HighScoreBoardTests/HighScoreBoardTests.swift"]
+  },
+  "forked_from": ["elixir/maps"]
+}

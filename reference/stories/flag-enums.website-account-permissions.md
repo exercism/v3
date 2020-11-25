@@ -27,7 +27,7 @@ These are example tasks that fit the website permissions exercise:
 
 ## Implementations
 
-- [C#: flag-enums][implementation-csharp] (reference implementation)
+- [C#: attack-of-the-trolls][implementation-csharp] (reference implementation)
 
 ## Related
 
@@ -36,4 +36,4 @@ These are example tasks that fit the website permissions exercise:
 
 [concepts-bitwise_manipulation]: ../concepts/bitwise_manipulation.md
 [types-bit]: ../types/bit.md
-[implementation-csharp]: ../../languages/csharp/exercises/concept/flag-enums/.docs/instructions.md
+[implementation-csharp]: ../../languages/csharp/exercises/concept/attack-of-the-trolls/.docs/instructions.md
