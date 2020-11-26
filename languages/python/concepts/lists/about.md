@@ -207,7 +207,7 @@ Lists can be combined via various techniques:
 ["George", 5, "cat", "Tabby"]
 
 
-#likewise, using the multiplication operator * is the equvilent of using + n times
+#likewise, using the multiplication operator * is the equivalent of using + n times
 >>> first_group = ["cat", "dog", "elephant"]
 
 >>> multiplied_group = first_group * 3
