@@ -40,7 +40,7 @@ print(ex_list)
 #=> [-2, 0, 1, 2, 3]
 ```
 
-If you have an iterable that you would like to _combine_ with your current list (concatenating the two), you can use the `.extend()` method. `.extend()` will unpack the supplied iterable and add its elements in order to your list (_using `.append()` in this curcumstance would add the entire iterable as a **single element**._).
+If you have an iterable that you would like to _combine_ with your current list (concatenating the two), you can use the `.extend()` method. `.extend()` will unpack the supplied iterable and add its elements in order to your list (_using `.append()` in this circumstance would add the entire iterable as a **single element**._).
 
 ```python
 ex_list = [1, 2, 3]
