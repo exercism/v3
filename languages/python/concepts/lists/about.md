@@ -190,7 +190,7 @@ One common way to compose a list of values is to use `list.append()` with a loop
 
 ```python
 
->>> cubes_to 1000 = []
+>>> cubes_to_1000 = []
 
 >>> for number in range(11):
 ...    cubes_to_1000.append(number**3)
