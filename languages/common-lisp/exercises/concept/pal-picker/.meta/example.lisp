@@ -1,4 +1,4 @@
-(defpackage pal-picker
+(defpackage :pal-picker
   (:use :cl)
   (:export :pal-picker :habitat-fitter :feeding-time-p
            :pet :play-fetch))
