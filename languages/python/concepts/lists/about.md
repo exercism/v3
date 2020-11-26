@@ -2,7 +2,7 @@ In Python, a [list][list] is a mutable collection of items in _sequence_. Like m
 
 Under the hood, lists are implemented as [dynamic arrays][dynamic array] -- similar to Java's [`Arraylist`][arraylist] type. Lists are most often used to store groups of similar data (_strings, numbers, sets etc._) of unknown length (_the number of entries may arbitrarily expand or shrink_). Accessing items in a list, checking for membership via `in`, or appending items to the "right-hand" side of a list are all very efficient. Appending to the "left-hand" side or inserting into the middle of a list is much _less_ efficient because it requires shifting items to keep then in sequence.
 
-Because lists are mutable and can contain references to arbitrary objects, they take up more memory space than a fixed-size `array.array` type of the same apparant lenghth. Despite this, lists are an extremely flexible and useful data structure and many built-in methods and operations in Python produce lists as their output.
+Because lists are mutable and can contain references to arbitrary objects, they take up more memory space than a fixed-size `array.array` type of the same apparent length. Despite this, lists are an extremely flexible and useful data structure and many built-in methods and operations in Python produce lists as their output.
 
 ## Construction
 
