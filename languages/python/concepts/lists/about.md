@@ -80,16 +80,10 @@ Results when using a list constructor with a string or a dict may be surprising:
 
 """
 The iteration default for dictionaries is over the keys.
-To include both keys and values in a list made from a dictionary, use dict.items(),
-which will return a list of (key, value) tuples.
 """
 source_data = {"fish": "gold", "monkey": "brown"}
 >>> multiple_elements_dict_1 = list(source_data)
 ['fish', 'monkey']
-
->>> multiple_elements_dict_2 = list(source_data.items())
-[('fish', 'gold'), ('monkey', 'brown')]
-```
 
 Because the constructor will only take _iterables_ (or nothing) as arguments, objects that are _not_ iterable will throw a type error. Consequently, it is much easier to create a one-item list via the literal method.
 
