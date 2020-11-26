@@ -14,7 +14,7 @@ functions with "atom" or "cons" in the name.
 Note: in general predicate functions end with `p` or `-p`. The naming of the
 atom predicate is an unfortunate inconsistency.
 
-## 3. Help Lenny split up his conses
+## 3. Help Lenny split up their conses
 
 When it comes to getting the first element and the rest of an sexpr, there are a
 couple of options [here][clhs-conses]. Look specifically for _Accessors_ as

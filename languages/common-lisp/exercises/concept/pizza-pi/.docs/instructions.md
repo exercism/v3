@@ -1,6 +1,6 @@
 Lilly, a culinarily-inclined Lisp Alien, wants to throw a pizza party for
-herself and some friends but, wanting to make the most of her ingredients, would
-like to know exactly how much of each component she'll need before starting.
+themselves and some friends but, wanting to make the most of their ingredients, would
+like to know exactly how much of each component they'll need before starting.
 
 To solve this problem, Lilly has drafted a program to automate some of the
 planning but needs your help finishing it. Will you help Lilly throw the
@@ -16,7 +16,7 @@ requires 45g of dough.
 
 Lilly is looking to write a function that takes the number of pizzas to make and
 their diameters then returns the exact amount of dough (to the nearest gram)
-that she'll need. For example, to make 4 pizzas 30cm in diameter:
+that they'll need. For example, to make 4 pizzas 30cm in diameter:
 
 ```lisp
 (dough-calculator 4 30) ; => 1648
@@ -29,9 +29,9 @@ $$g = n \cdot \left(\dfrac{45 \pi d}{20} + 200\right)$$
 
 ## 2. A Splash of Sauce
 
-Lilly is astonishingly meticulous when it comes to her sauce application and
+Lilly is astonishingly meticulous when it comes to their sauce application and
 always applies exactly 3ml of sauce to every 10 square centimeters of
-pizza. Ironically, the size of her pizzas can be incredibly inconsistent. Lilly
+pizza. Ironically, the size of their pizzas can be incredibly inconsistent. Lilly
 needs your help defining a function that calculates the pizza size (the
 diameter) from the amount of sauce applied. For example, given Lilly has used
 250ml of sauce:
@@ -49,7 +49,7 @@ $$d = \sqrt{\dfrac{40s}{3\pi}}$$
 
 On Lilly's planet, all cheese comes in perfect cubes and is sold by size. (What
 were you expecting? This is an alien planet after all...) Your task is to help
-Lilly calculate how many pizzas she can make using any given cheese
+Lilly calculate how many pizzas they can make using any given cheese
 cube. Mozzarella cheese has a density of 0.5 grams per cubic centimeter and
 every pizza needs 3 grams of cheese per square centimeter. Given the side-length
 of some cheese cube and the pizzas' diameter, calculate the number of pizzas
@@ -68,8 +68,8 @@ $$n = \dfrac{2l^3}{3 \pi d^2}$$
 
 ## 4. A Fair Share
 
-Finally, Lilly wants to be sure that her pizzas (each made up of 8 slices) can
-be evenly divided between her friends. Your task is to define a function
+Finally, Lilly wants to be sure that their pizzas (each made up of 8 slices) can
+be evenly divided between their friends. Your task is to define a function
 that takes a number of pizzas and number of friends then returns `T` if the
 pizza can be evenly divided between friends and `NIL` otherwise. For example:
 
