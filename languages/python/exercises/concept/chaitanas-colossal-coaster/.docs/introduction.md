@@ -92,7 +92,7 @@ print(ex_list)
 
 ### Reversing and reordering
 
-Items in the list can be re-ordered in reverse with `.reverse()`.
+Items in the list can be reordered in reverse with `.reverse()`.
 
 ```python
 ex_list = [1, 2, 3]
