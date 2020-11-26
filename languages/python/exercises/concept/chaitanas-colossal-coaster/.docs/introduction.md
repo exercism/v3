@@ -145,7 +145,7 @@ ex_list.index(10)
 #=>ValueError: 10 is not in list
 ```
 
-You can provide start and end indexes to search within a specific section of the list.
+You can provide start and end indices to search within a specific section of the list.
 
 ```python
 ex_list = [1, 4, 7, 8, 2, 9, 2, 1, 1, 0, 4, 3]
