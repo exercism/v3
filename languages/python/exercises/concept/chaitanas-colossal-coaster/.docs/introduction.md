@@ -123,7 +123,7 @@ For cases where changing your original list is undesirable, the built-in [`sorte
 
 ### Occurances of an item in the list.
 
-You can find the number of occurances of an element in the list with the help of `.count()`. It takes the element you need to tally as its argument, and returns the total nunber of times it appears on the list.
+You can find the number of occurrences of an element in the list with the help of `.count()`. It takes the element you need to tally as its argument, and returns the total number of times it appears on the list.
 
 ```python
 ex_list = [1, 4, 7, 8, 2, 9, 2, 1, 1, 0, 4, 3]
