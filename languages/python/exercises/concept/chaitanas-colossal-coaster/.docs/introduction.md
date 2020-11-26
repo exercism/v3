@@ -206,7 +206,7 @@ from pprint import pprint
 
 ```
 
-To create a second copy of a list, you need to _slice_ or explicity use the `.copy()` method, which will make a second set of refrences that can then be changed without the danger of unintential mutation of elements. However, if your list contains _variables_ or nested data structures, those second-level refrences will **not be copied** (_To copy an entire tree of containers, references, and opbjects, you need to use `.deep_copy()` or a `list comprehension`-- more on that later._). For a detailed explaination of list behavior, see this excellent [making a game board][making a game board] article.
+To create a second copy of a list, you need to _slice_ or explicitly use the `.copy()` method, which will make a second set of references that can then be changed without the danger of unintentional mutation of elements. However, if your list contains _variables_ or nested data structures, those second-level references will **not be copied** (_To copy an entire tree of containers, references, and objects, you need to use `.deep_copy()` or a `list comprehension`-- more on that later._). For a detailed explanation of list behavior, see this excellent [making a game board][making a game board] article.
 
 ```python
 ex_list = ["Tony", "Natasha", "Thor", "Bruce"]
