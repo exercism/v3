@@ -101,7 +101,7 @@ print(ex_list)
 #=> [3, 2, 1]
 ```
 
-You can re-order your list _**in place**_ with the help of the `.sort()` method. Internally, python uses [`Timsort`][timsort] to arrange the list. If the elements are alphanumerical, you don't have to provide any arguments to `.sort()`. Optionally, you can define custom key for sorting criteria. The Python docs offer some [additional tips and techniques for sorting][sorting how to] lists effecively.
+You can re-order your list _**in place**_ with the help of the `.sort()` method. Internally, python uses [`Timsort`][timsort] to arrange the list. If the elements are alphanumerical, you don't have to provide any arguments to `.sort()`. Optionally, you can define a custom key for sorting criteria. The Python docs offer some [additional tips and techniques for sorting][sorting how to] lists effectively.
 
 ```python
 ex_list = ["Tony", "Natasha", "Thor", "Bruce"]
