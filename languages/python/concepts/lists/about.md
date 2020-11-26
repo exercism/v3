@@ -157,7 +157,7 @@ breakfast_foods = ["Oatmeal", "Fruit Salad", "Eggs", "Toast"]
 
 #adding coffee in the first position
 >>> breakfast_foods.insert(0, "Coffee")
-print(breakfast_foods)
+>>> print(breakfast_foods)
 ['Coffee', 'Oatmeal', 'Fruit Salad', 'Eggs', 'Bacon', 'Toast']
 ```
 
