@@ -39,6 +39,13 @@
         "uuid": "2445b061-6622-47cb-a7ef-9040ec02458c",
         "concepts": ["option"],
         "prerequisites": ["structs", "destructuring"]
+      },
+      {
+        "slug": "tuples",
+        "name": "Low-Power Embedded Game",
+        "uuid": "7f064e9b-f631-48b1-9ed0-a66e8393ceba",
+        "concepts": ["tuples", "destructuring"],
+        "prerequisites": ["structs"]
       }
     ],
     "practice": [
@@ -810,6 +817,12 @@
     ]
   },
   "concepts": [
+    {
+      "uuid": "37e85710-3e1d-40f4-aed9-72f43e8a2fcd",
+      "slug": "destructuring",
+      "name": "Destructuring",
+      "blurb": "Breaking tuples and structs into distinct named components"
+    },
     {
       "uuid": "a2e79ee4-8534-45ac-ad36-5dcde91a6bf4",
       "slug": "entry-api",

@@ -4163,6 +4163,26 @@
               "name": "destructuring"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/tuples",
+          "slug": "tuples",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/destructuring.md",
+              "name": "destructuring"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
+              "name": "structs"
+            }
+          ]
         }
       ]
     }
