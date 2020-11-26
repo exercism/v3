@@ -16,6 +16,6 @@
 
 ## 4. Replace words with a synonym
 
-- You can use [string methods][string-method-docs to replace words.
+- You can use [string methods][string-method-docs] to replace words.
 
 [string-method-docs]: https://docs.python.org/3/library/stdtypes.html#string-methods
