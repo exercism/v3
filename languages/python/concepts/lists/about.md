@@ -96,10 +96,9 @@ Because the constructor will only take _iterables_ (or nothing) as arguments, ob
 ```python
 
 >>> one_element = list(16)
-File "<stdin>", line 1
-    >>> one_element = list(16)
-    ^
-SyntaxError: invalid syntax
+Traceback (most recent call last):
+   File "<stdin>", line 1, in <module>
+   TypeError: 'int' object is not iterable
 
 >>> one_element_from_iterable = list((16,))
 [16]
