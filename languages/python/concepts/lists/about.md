@@ -19,7 +19,7 @@ A list can be declared as a _literal_ with square `[]` brackets and commas betwe
 ["Parrot", "Bird", 334782]
 ```
 
-For readablility, linebreaks can be used when there are many elements or nested data structures within a list:
+For readability, line breaks can be used when there are many elements or nested data structures within a list:
 
 ```python
 >>> lots_of_entries =[
