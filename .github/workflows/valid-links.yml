@@ -37,16 +37,22 @@ jobs:
         run: |
           deleted_or_renamed=$(git diff --no-commit-id --name-only --diff-filter DR origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | wc -l)
 
+          if [ "${{ secrets.ACTIONS_STEP_DEBUG }}" = "true" ]; then
+              debug_level="detailed"
+          else
+              debug_level="minimal"
+          fi
+
           if [ "$GITHUB_REF" = "refs/heads/master" ] || [[ $deleted_or_renamed -ne 0 ]]
           then
               echo "Searching all files..."
-              markdownlinkchecker -m files -v detailed
+              markdownlinkchecker -m files -v "$debug_level"
           else
               files=$(git diff --no-commit-id --name-only --diff-filter AM origin/master | grep  -i .md$ | grep -v -i _sidebar.md | grep -v -i ISSUE_TEMPLATE | cat)
               echo "Searching changed files: $files"
 
               if [[ -n $files ]]; then
                 # shellcheck disable=SC2086
-                markdownlinkchecker -m files -v detailed -f $files
+                markdownlinkchecker -m files -v "$debug_level" -f $files
               fi
           fi
