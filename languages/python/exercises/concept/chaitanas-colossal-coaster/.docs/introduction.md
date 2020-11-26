@@ -160,7 +160,7 @@ Remember that _names_ in python are just labels that reference an underlying obj
 ```python
 >>> ex_list = ["Tony", "Natasha", "Thor", "Bruce"]
 
-#assiging a second name *does not copy* the references in the list.
+#assigning a second name *does not copy* the references in the list.
 new_list = ex_list
 
 #using either name will mutate the *common* list
