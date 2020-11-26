@@ -133,7 +133,7 @@ ex_list.count(1)
 
 ### Finding the index of items.
 
-`.index()` will provide you the index number of the first occurance of the item you pass in. If you do not have any occurances of the item, a `ValueError` is raised. If you do not need the exact position of an item and are only checking that it is present on the list, the built-in `in` operator is more efficient.
+`.index()` will provide you the index number of the first occurrence of the item you pass in. If you do not have any occurrences of the item, a `ValueError` is raised. If you do not need the exact position of an item and are only checking that it is present on the list, the built-in `in` operator is more efficient.
 
 Index starts with 0.
 
