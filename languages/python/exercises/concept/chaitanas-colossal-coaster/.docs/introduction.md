@@ -28,7 +28,7 @@ Another way to add an item to the list is to `.insert()` an item. This method gi
 1. index of the item _before which_ you want the new item to appear
 2. the item to be inserted
 
-Note: if the given index is 0, the item will be added to front of the list. If the supplied index is greater than or equal to the length of the list, the item will be added in the last postion, and is the equivelent of using `.append()`.
+Note: if the given index is 0, the item will be added to front of the list. If the supplied index is greater than or equal to the length of the list, the item will be added in the last position, and is the equivalent of using `.append()`.
 
 ```python
 ex_list = [1, 2, 3]
