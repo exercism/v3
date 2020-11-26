@@ -121,7 +121,7 @@ print(ex_list)
 
 For cases where changing your original list is undesirable, the built-in [`sorted()`][sorted] can be used to return a new, sorted copy of your original list.
 
-### Occurances of an item in the list.
+### Occurrences of an item in the list.
 
 You can find the number of occurrences of an element in the list with the help of `.count()`. It takes the element you need to tally as its argument, and returns the total number of times it appears on the list.
 
