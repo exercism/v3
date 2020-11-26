@@ -176,8 +176,8 @@ Grey
 Blue
 
 >>> numbers_to_cube = [5, 13, 12, 16]
-for number in numbers_to_cube:
-    print(number*3)
+>>> for number in numbers_to_cube:
+...     print(number*3)
 ...
 15
 39
