@@ -155,7 +155,7 @@ ex_list.index(4, 2, 12)
 
 ### Making Copies
 
-Remeber that _names_ in python are just lables that reference an underlying object. This creats a few surprises when working with lists.
+Remember that _names_ in python are just labels that reference an underlying object. This creates a few surprises when working with lists.
 
 ```python
 >>> ex_list = ["Tony", "Natasha", "Thor", "Bruce"]
