@@ -20,7 +20,7 @@ Some of the more commonly used methods include:
 - Checking for the existence of a substring with `in`
 - Concatenating strings with the `+` operator or `str.join()`
 
-`Strings` are immutable, so all of these methods will be returning a new `string` instead of modifying the existing one.
+`Strings` are immutable, so all of these methods will be returning a new `str` instead of modifying the existing one.
 
 For more information, you can check out the
 [official documentation](https://docs.python.org/3/library/stdtypes.html#string-methods).
