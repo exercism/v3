@@ -6,5 +6,9 @@
     }
   ],
   "contributors": [],
-  "forked_from": []
+  "forked_from": [],
+  "editor": {
+    "solution_files": ["SLUG.lisp"],
+    "test_files": ["SLUG-test.lisp"]
+  }
 }
