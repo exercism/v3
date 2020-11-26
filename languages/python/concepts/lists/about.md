@@ -142,7 +142,7 @@ The method `.pop()` can be used to both remove and return a value at a given ind
 
 ```
 
-The method `.insert()` can be used to add an element at a specific position. The index given is the element _*before which to insert*_. `list.insert(0,element)` will insert at the front of the list and `list.insert(len(list), element)` is the same as calling `list.append(element)`.
+The method `.insert()` can be used to add an element at a specific position. The index given is the element _*before which to insert*_. `list.insert(0,element)` will insert at the front of the list and `list.insert(len(list), element)` is the equivalent of calling `list.append(element)`.
 
 ```python
 
