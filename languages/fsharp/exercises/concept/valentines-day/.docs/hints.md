@@ -11,7 +11,7 @@
 - The best way to execute logic based on the activity's value is to use [pattern matching][pattern-matching].
 - The pattern to match discriminated union cases (and optionally, their associated data) is through [identifier patterns][identifier-patterns].
 - If you want to add an additional condition to a pattern, you can add a [guard][guards].
-- If you want to catch more than one value at once, you can use a [wildcard pattern][wildcard-pattern].
+- If you want to catch more than one value at once, you can use a [wildcard pattern][wildcard-patterns].
 
 [define]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/discriminated-unions#remarks
 [pattern-matching]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/pattern-matching

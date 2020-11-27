@@ -41,9 +41,9 @@
       {
         "slug": "inventory-management",
         "name": "Inventory Management",
-        "uuid": null,
+        "uuid": "0558b66c-f2c8-4ff3-846a-4ac87a8660d9",
         "concepts": ["dicts"],
-        "prerequisites": ["bools", "loops", "numbers", "lists"]
+        "prerequisites": ["loops", "lists", "tuples"]
       },
       {
         "slug": "log-levels",

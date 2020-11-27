@@ -5,7 +5,7 @@
 
 ;; Defines the testing package with symbols from key-comparison and FiveAM in scope
 ;; The `run-tests` function is exported for use by both the user and test-runner
-(defpackage key-comparison-test
+(defpackage :key-comparison-test
   (:use :cl :fiveam :key-comparison)
   (:export :run-tests))
 

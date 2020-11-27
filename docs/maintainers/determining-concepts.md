@@ -45,7 +45,7 @@ Bad examples:
 
 ### Basics
 
-When designing Concept Exercises, you'll find that the same basic Concepts will pop-up as prerequisites. As such, each track's first exercise should be an exercise that unlocks the `basics` concept, which aims to have the student become familiar with the basics of working in that language. The basics will differ between languages, but you can think of things like knowing how to define and call a function/method or how to define variables. For an example, see [this C# exercise][csharp-lucians-luscious-lasagna].
+When designing Concept Exercises, you'll find that the same basic Concepts will pop-up as prerequisites. As such, each track's first exercise should be an exercise that unlocks the `basics` concept, which aims to have the student become familiar with the basics of working in that language. The basics will differ between languages, but you can think of things like knowing how to define and call a function/method or how to define variables. For example, see [this C# exercise][csharp-lucians-luscious-lasagna].
 
 To make the basics exercise the very first exercise, it must be the only exercise with no prerequisites. If an exercise has a prerequisite other than `basics`, you can omit the `basics` prerequisite.
 
