@@ -31,10 +31,7 @@ The goal of this exercise is to teach helpful string manipulation methods and ho
 
 ## Concepts
 
-- `str`
-- methods
-- immutable/immutability
-- unicode code point
+- `string-methods`
 
 ## Prerequisites
 
