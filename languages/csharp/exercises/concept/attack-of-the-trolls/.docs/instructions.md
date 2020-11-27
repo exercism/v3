@@ -14,7 +14,7 @@ Sometimes individual permissions can be modified, it is possible for example to 
 
 ## 1. Get default permissions for an account type
 
-First, define an `AccountType` enum to represent the three account types: `Guests`, `Users` and `Moderators`.
+First, define an `AccountType` enum to represent the three account types: `Guest`, `User` and `Moderator`.
 
 Next, define a `Permission` enum to represent the three permission types: `Read`, `Write`, `Delete`, and two extra ones: `All` for having all permissions and `None` for having none of the permissions.
 

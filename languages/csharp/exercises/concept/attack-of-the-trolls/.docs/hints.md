@@ -1,8 +1,9 @@
 ## 1. Get default permissions for an account type
 
-- Define the Enum with all the possible permissions: `None`, `Read`, `Write`, `Delete`.
-- Using the enum flags would allow to use bitwise operations out of the box, [see `enum` `Flags`][docs-enum-flags]
-- The field `All` can be defined as a combination of `Read`, `Write` and `Delete`.
+- Define the `Permission` enum with values for the following permission types: `None`, `Read`, `Write` and `Delete`.
+- Using the enum flags would allow to use bitwise operations out of the box for the `Permission` enum, [see `enum` `Flags`][docs-enum-flags].
+- The `All` enum member can be defined as a combination of the `Read`, `Write` and `Delete` enum members.
+- Define the `AccountType` enum with values for the following account types: `Guest`, `User` and `Moderator`.
 - To handle each account type, one could use an `if` statement, but the [`switch` statement][docs.microsoft.com-switch-keyword] is a great alternative.
 - Combining flags means setting a specific bit to `1` using one of the [bitwise operators][docs.microsoft.com-bitwise-and-shift-operators].
 
