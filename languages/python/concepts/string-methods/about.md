@@ -1,6 +1,6 @@
 ## String Methods in Python
 
-A `str` in Python is a sequence of Unicode code points which
+A string (`str`) in Python is a sequence of Unicode code points which
 include letters, numbers, symbols, punctuation, etc. Strings
 implement all of the [common sequence operations](https:/docs.python.org/3/library/stdtypes.html#typesseq-common),
 along with iteration using the `for item in <string>` syntax.
