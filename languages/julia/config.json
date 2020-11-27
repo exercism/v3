@@ -28,9 +28,7 @@
                 "uuid": "36cbda04-3921-4491-9ec6-76951f00aa00",
                 "name": "The Exercism Matrix",
                 "slug": "exercism-matrix",
-                "concepts": [
-                    "matrices-introduction"
-                ],
+                "concepts": ["matrices-introduction"],
                 "prerequisites": ["functions-introduction"]
             },
             {

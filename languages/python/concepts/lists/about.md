@@ -68,7 +68,7 @@ The `list()` constructor can be used empty or with an _iterable_ as an argument.
 
 Results when using a list constructor with a string or a dict may be surprising:
 
-```python
+````python
 
 #string elements (Unicode code points) are iterated through and added *individually*
 >>> multiple_elements_string = list("Timbuktu")
@@ -96,7 +96,7 @@ Traceback (most recent call last):
 
 >>> one_element_from_iterable = list((16,))
 [16]
-```
+````
 
 ## Accessing elements
 

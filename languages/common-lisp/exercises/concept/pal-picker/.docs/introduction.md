@@ -1,4 +1,3 @@
-
 ## truthy-and-falsy
 
 In Common Lisp, false values are represented by the empty list – `()` – or the

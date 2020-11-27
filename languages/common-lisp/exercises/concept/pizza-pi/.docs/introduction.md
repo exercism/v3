@@ -3,7 +3,7 @@ In Common Lisp, like many languages, numbers come in a few of types – two of t
 ## integers
 
 Like many languages Common Lisp contains integers. These are whole numbers without a decimal point (like `-6`, `0`, `25`, `1234`,
-  etc.)
+etc.)
 
 Common Lisp defines no limits on the magnitude of integers. Integers can be arbitrarily large (or small if negative).
 
