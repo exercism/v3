@@ -12,11 +12,11 @@ There are three types of accounts, each with different default permissions:
 
 Sometimes individual permissions can be modified, it is possible for example to give a guest account the permission to also write posts or revoking all permissions from an account would result in having none of the permissions.
 
-You have four tasks.
-
 ## 1. Get default permissions for an account type
 
-First, define an `AccountType` enum to represent the three account types. Next, define a `Permission` enum to represent the three permission types and two extra ones: one for having no permissions at all, and for having all permissions.
+First, define an `AccountType` enum to represent the three account types: `Guests`, `Users` and `Moderators`.
+
+Next, define a `Permission` enum to represent the three permission types: `Read`, `Write`, `Delete`, and two extra ones: `All` for having all permissions and `None` for having none of the permissions.
 
 Then implement the (_static_) `Permissions.Default()` method to return the default permissions for a specific account type:
 
