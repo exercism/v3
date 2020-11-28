@@ -32,18 +32,18 @@ You can declare methods with pointer receivers in order to modify the value to w
 type rect struct {
 	width, height int
 }
-
-func (r *rect) area() int {
-	return r.width * r.height
+func (r *rect) squareIt() {
+	r.height = r.width
 }
 
 func main() {
 	r := rect{width: 10, height: 20}
-	fmt.Println("Area is: ", r.area())
-	// Output: Area is 200
-	r.width = 50
-	fmt.Println("Area is: ", r.area())
-	// Output: Area is 1000
+	fmt.Printf("Width: %d, Height: %d\n", r.width, r.height)
+	// Output: Width: 10, Height: 20
+
+	r.squareIt()
+	fmt.Printf("Width: %d, Height: %d\n", r.width, r.height)
+	// Output: Width: 10, Height: 10
 }
 ```
 
