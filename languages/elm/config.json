@@ -11,8 +11,8 @@
   "exercises": {
     "concept": [
       {
-        "slug": "doubling",
-        "name": "Doubling",
+        "slug": "lucians-luscious-lasagna",
+        "name": "Lucian's Luscious Lasagna",
         "uuid": "54b70493-702b-4577-9d47-ec5ede4cc2c1",
         "concepts": ["basics"],
         "prerequisites": []
