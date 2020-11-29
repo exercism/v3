@@ -1,28 +1,9 @@
 ## Elm syntax basics
 
-### Modules
-
-Each file in Elm is a module, and must contain a `module` statement before all other code.
-Module names must match their file name, so module `Count` must be in file Count.elm.
-Anything defined within a module is privatly scoped to it
-and cannot be accessed from outside this module, unless listed in `exposing`.
-
-```elm
--- Define the Count module, and expose the `double` function
-module Count exposing (double)
-```
-
-```elm
--- Define the Count module, and expose everything within
-module Count exposing (..)
-```
-
-https://elm-lang.org/docs/syntax#modules
-
 ### Constants and functions
 
 A constant value is defined with `name = expression`,
-where in elm, everything except definitions are expressions.
+where in Elm, everything except definitions are expressions.
 
 ```elm
 five = 5
@@ -44,11 +25,11 @@ separated by space, just like for function definition.
 five = add 2 3
 ```
 
-If evaluation of an expression is ambiguous,
-parentheses can be used to specify the order of evaluation.
+Parentheses can be used to specify the order of evaluation of an expression.
 
 ```elm
-six = add 2 (add 3 1)
+six = add 2 (1 * 4)
+twelve = add 2 1 * 4
 ```
 
 ### Indentation / significant whitespace
@@ -67,10 +48,36 @@ add number1 number2 =
 
 https://elmprogramming.com/indentation.html
 
+### Modules
+
+Each file in Elm is a module, and must contain a `module` statement before all other code.
+Module names must match their file name, so module `Calculator` must be in file Calculator.elm.
+Anything defined within a module is privatly scoped to it
+and cannot be accessed from outside this module, unless listed in `exposing`.
+
+```elm
+-- Define the Calculator module, and expose the `sum` function
+module Calculator exposing (sum)
+```
+
+```elm
+-- Define the Calculator module, and expose everything within
+module Calculator exposing (..)
+```
+
+https://elm-lang.org/docs/syntax#modules
+
 ### Comments
+
+A comment is some text within the Elm file that is not interpreted as code.
+It is mainly intented to be read by yourself and other programmers.
+There is a lightweight syntax for single line comments, based on double dashes.
+Multiline comments are also possible with the `{-` and `-}` pair
+of opening and closing delimiters.
 
 ```elm
 -- a single line comment
+-- another single line comment
 
 {- a multiline comment
    spawning multiple lines
@@ -79,4 +86,5 @@ https://elmprogramming.com/indentation.html
 
 ### Formatting
 
-There is a [style guide](https://elm-lang.org/docs/style-guide), and [elm-format](https://github.com/avh4/elm-format) can be used to automatically format code.
+There is a [style guide](https://elm-lang.org/docs/style-guide),
+and [elm-format](https://github.com/avh4/elm-format) can be used to automatically format code.
