@@ -1,4 +1,4 @@
-## Minimal compilable file
+## Elm syntax basics
 
 ### Modules
 
