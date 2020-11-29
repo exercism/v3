@@ -1,52 +1,37 @@
 ## basics
 
-### Modules
+### Constants and functions
 
-Each file in Elm is a module, and must contain a `module` statement before all other code.
-
-Everything is scoped to the module, unless listed in `exposing`
-
-Module names must match their file name, so module `Greet` must be in file Greet.elm.
+A constant value is defined with `name = expression`,
+where in Elm, everything except definitions are expressions.
 
 ```elm
--- Define the Greet module, and expose the `greet` function
-module Greet exposing (greet)
+five = 5
+
+six = 3 + 3
 ```
 
+Functions are defined with `name parameters... = expression`,
+parameters being only separated by space.
+
 ```elm
--- Define the Greet module, and expose everything
-module Greet exposing (..)
+add number1 number2 = number1 + number2
 ```
 
-### Functions
-
-Invoking a function is done by specifying its name and passing arguments for each of the function's parameters.
+Invoking a function also is an expression and is done by
+specifying its name and passing arguments for each of the function's parameters,
+separated by space, just like for function definition.
 
 ```elm
-let five = add 2 3
+five = add 2 3
 ```
 
-To pass expressions as parameters, surround them in brackets
+Parentheses can be used to specify the order of evaluation of an expression.
 
 ```elm
-let six = add 2 (add 3 1)
-```
+six = add 2 (1 * 4)
 
-Functions are defined with Name, Parameters, "=", Expressions. Functions automatically return their last expression. 
-
-```elm
-add number1 number2 = 
-	number1 + number2
-```
-
-The Elm compiler uses Type Inference to work out the Type of the function, but the [style guide](https://elm-lang.org/docs/style-guide) states that all top level functions should have Type Annotations.
-
-Type Annotations are defined with Function Name, ":", Parameter Types separated by "->", Return Type.
-
-```elm
-add : Int -> Int -> Int
-add number1 number2 = 
-	number1 + number2
+twelve = add 2 1 * 4
 ```
 
 ### Indentation / significant whitespace
@@ -59,16 +44,57 @@ Elm doesn't use syntactic markers such as curly brackets, parentheses, or semico
 
 ```elm
 -- A function split over multiple lines, so subsequent lines must be indented
-greet personToGreet =
-    Debug.todo "Implement greet"
+add number1 number2 =
+    number1 + number2
 ```
+
+https://elmprogramming.com/indentation.html
+
+### Modules
+
+Each file in Elm is a module, and must contain a `module` statement before all other code.
+Module names must match their file name, so module `Calculator` must be in file Calculator.elm.
+Anything defined within a module is privatly scoped to it
+and cannot be accessed from outside this module, unless listed in `exposing`.
+
+```elm
+-- Define the Calculator module, and expose the `add` function
+module Calculator exposing (add)
+
+six = 3 + 3
+
+add number1 number2 = number1 + number2
+```
+
+```elm
+-- Define the Calculator module, and expose everything within: `six` and `add`
+module Calculator exposing (..)
+
+six = 3 + 3
+
+add number1 number2 = number1 + number2
+```
+
+https://elm-lang.org/docs/syntax#modules
 
 ### Comments
 
+A comment is some text within the Elm file that is not interpreted as code.
+It is mainly intented to be read by yourself and other programmers.
+There is a lightweight syntax for single line comments, based on double dashes.
+Multiline comments are also possible with the `{-` and `-}` pair
+of opening and closing delimiters.
+
 ```elm
 -- a single line comment
+-- another single line comment
 
 {- a multiline comment
-   {- can be nested -}
+   spawning multiple lines
 -}
 ```
+
+### Formatting
+
+There is a [style guide](https://elm-lang.org/docs/style-guide),
+and [elm-format](https://github.com/avh4/elm-format) can be used to automatically format code.
