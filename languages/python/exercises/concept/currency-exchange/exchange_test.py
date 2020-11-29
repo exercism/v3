@@ -51,7 +51,7 @@ class TestExchange(unittest.TestCase):
                 self.assertEqual(get_number_of_bills(input[0], input[1]), output)
 
     # Problem 5
-    def test_exchangable_value(self):
+    def test_exchangeable_value(self):
         input_data = [
             # input : budget, exchange_rate, spread, minimum_denomination
             (100000, 10.61, 10, 1),
@@ -63,6 +63,6 @@ class TestExchange(unittest.TestCase):
         output_data = [8568, 1400, 0, 4017094016600, 363300]
         for input, output in zip(input_data, output_data):
             with self.subTest(input=input, output=output):
-                self.assertEqual(exchangable_value(input[0], input[1], input[2], input[3]), output)
+                self.assertEqual(exchangeable_value(input[0], input[1], input[2], input[3]), output)
 
     

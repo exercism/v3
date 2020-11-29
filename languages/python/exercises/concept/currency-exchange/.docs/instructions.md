@@ -1,6 +1,6 @@
-Your friend Chandler is planning to visit exotic countries all around the world. But sadly, Chandler's math skill is not so good. He is so worried about get scammed at currency exchange during his trip. Chandler want you to make a currency calculator for him. Here's his specifications about currency exchange calculator.
+Your friend Chandler is planning to visit exotic countries all around the world. But sadly, Chandler's math skill is not so good. He is so worried about get scammed at currency exchange during his trip. Chandler wants you to make a currency calculator for him. Here's his specifications about currency exchange calculator.
 
-## 1. Estimating exchangable value
+## 1. Estimating exchangeable value
 
 Create the function `estimate_value()` where `budget` and `exchange_rate` are the two required parameters: 
 1. `budget` is amount of money you are planning to exchange.
@@ -58,9 +58,9 @@ You need to return the number of bills after exchanging all your money.
 25
 ```
 
-## 5. Calculate exchangable value
+## 5. Calculate exchangeable value
 
-Create the function `exchangable_value()` with parameter `budget`, `exchange_rate`, `spread`, and `denomination`.
+Create the function `exchangeable_value()` with parameter `budget`, `exchange_rate`, `spread`, and `denomination`.
 
 1. `budget` is amount of money you are planning to exchange.
 2. `exchange_rate` is unit value of foreign currency.
@@ -73,8 +73,8 @@ You need to return the maximum value you can get considering your budget, exchan
 **Note:** If 1 EUR is 1.20 USD and spread is 10%, the actual exchange rate of 1 EUR is 1.32 USD.
 
 ```python
->>> exchangable_value(127.25, 1.20, 10, 20)
+>>> exchangeable_value(127.25, 1.20, 10, 20)
 80
->>> exchangable_value(127.25, 1.20, 10, 5)
+>>> exchangeable_value(127.25, 1.20, 10, 5)
 95
 ```

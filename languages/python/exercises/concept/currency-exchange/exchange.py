@@ -10,5 +10,5 @@ def get_value(denomination_value, number_of_bills):
 def get_number_of_bills(budget, denomination):
     pass
 
-def exchangable_value(budget, exchange_rate, spread, minimum_denomination):
+def exchangeable_value(budget, exchange_rate, spread, minimum_denomination):
     pass
