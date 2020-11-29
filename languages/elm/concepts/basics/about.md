@@ -7,6 +7,7 @@ where in Elm, everything except definitions are expressions.
 
 ```elm
 five = 5
+
 six = 3 + 3
 ```
 
@@ -29,6 +30,7 @@ Parentheses can be used to specify the order of evaluation of an expression.
 
 ```elm
 six = add 2 (1 * 4)
+
 twelve = add 2 1 * 4
 ```
 
@@ -56,13 +58,21 @@ Anything defined within a module is privatly scoped to it
 and cannot be accessed from outside this module, unless listed in `exposing`.
 
 ```elm
--- Define the Calculator module, and expose the `sum` function
-module Calculator exposing (sum)
+-- Define the Calculator module, and expose the `add` function
+module Calculator exposing (add)
+
+six = 3 + 3
+
+add number1 number2 = number1 + number2
 ```
 
 ```elm
--- Define the Calculator module, and expose everything within
+-- Define the Calculator module, and expose everything within: `six` and `add`
 module Calculator exposing (..)
+
+six = 3 + 3
+
+add number1 number2 = number1 + number2
 ```
 
 https://elm-lang.org/docs/syntax#modules
