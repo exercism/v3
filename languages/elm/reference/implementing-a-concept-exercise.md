@@ -90,6 +90,7 @@ If you have any questions regarding implementing this exercise, please post them
 [meta-design]: ../../csharp/exercises/concept/flag-enums/.meta/design.md
 
 ### TODO: link to an elm concept, after the first one is done and available to reference.
+
 [analyzer]: https://github.com/exercism/elm-analyzer
 [representer]: https://github.com/exercism/elm-representer
 [concept-exercises]: ../exercises/concept/README.md
