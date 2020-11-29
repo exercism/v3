@@ -1,5 +1,5 @@
 ## General
 
-- `++` is the string concatentation operator in Elm.
+- Basic numbers operators are described in elm [Basics module documentation][basics-doc].
 
-- There is a `String` module in the core Elm packages, with a `toUpper` function.
+[basics-doc]: https://package.elm-lang.org/packages/elm/core/latest/Basics#Int
