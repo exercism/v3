@@ -37,38 +37,37 @@ import List exposing ( repeat, length ) -- repeat, length
 
 https://elm-lang.org/docs/syntax#modules
 
-### Functions
+### Constants and functions
 
-Invoking a function is done by specifying its name and passing arguments for each of the function's parameters.
-
-```elm
-let five = add 2 3
-```
-
-To pass expressions as parameters, surround them in brackets
+A constant value is defined with `name = expression`,
+where in elm, everything except definitions are expressions.
 
 ```elm
-let six = add 2 (add 3 1)
+five = 5
+six = 3 + 3
 ```
 
-Functions are defined with Name, Parameters, "=", Expressions. Functions automatically return their last expression. 
+Functions are defined with `name parameters... = expression`,
+parameters being only separated by space.
 
 ```elm
-add number1 number2 = 
-	number1 + number2
+add number1 number2 = number1 + number2
 ```
 
-The Elm compiler uses Type Inference to work out the Type of the function, but the [style guide](https://elm-lang.org/docs/style-guide) states that all top level functions should have Type Annotations.
-
-Type Annotations are defined with Function Name, ":", Parameter Types separated by "->", Return Type.
+Invoking a function also is an expression and is done by
+specifying its name and passing arguments for each of the function's parameters,
+separated by space, just like for function definition.
 
 ```elm
-add : Int -> Int -> Int
-add number1 number2 = 
-	number1 + number2
+five = add 2 3
 ```
 
-https://guide.elm-lang.org/types/reading_types.html
+If evaluation of an expression is ambiguous,
+parentheses can be used to specify the order of evaluation.
+
+```elm
+six = add 2 (add 3 1)
+```
 
 ### Indentation / significant whitespace
 
