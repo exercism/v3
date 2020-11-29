@@ -52,6 +52,6 @@ The concept exercises use the following concepts:
 
 | concept                  | interpretation |
 | --- | --- |
-| `basics`                 | How to write a minimal compilable file, with a function, an import and an export |
+| `basics`                 | Learn minimal elm syntax with module and function declaration |
 
 [basics]: ../../../reference/concepts/basics.md

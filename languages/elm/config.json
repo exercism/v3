@@ -11,8 +11,8 @@
   "exercises": {
     "concept": [
       {
-        "slug": "greeter",
-        "name": "Greeter",
+        "slug": "doubling",
+        "name": "Doubling",
         "uuid": "54b70493-702b-4577-9d47-ec5ede4cc2c1",
         "concepts": ["basics"],
         "prerequisites": []
