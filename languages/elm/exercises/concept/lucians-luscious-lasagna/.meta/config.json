@@ -8,5 +8,10 @@
       "github_username": "ceddlyburge",
       "exercism_username": "ceddlyburge"
     }
-  ]
+  ],
+  "forked_from": ["fsharp/lucians-luscious-lasagna"],
+  "editor": {
+    "solution_files": ["src/Cook.elm"],
+    "test_files": ["tests/Tests.elm"]
+  }
 }
