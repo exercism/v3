@@ -12,12 +12,8 @@
     "description": "Core Elm Language"
   },
   {
-    "url": "https://guide.elm-lang.org/types/reading_types.html",
-    "description": "Type Annotations"
-  },
-  {
     "url": "https://elmprogramming.com/indentation.html",
-    "description": "Indentation / signifacant whitespace"
+    "description": "Indentation / significant whitespace"
   },
   {
     "url": "https://elm-lang.org/docs/style-guide",
@@ -26,9 +22,5 @@
   {
     "url": "https://github.com/avh4/elm-format",
     "description": "Elm format"
-  },
-  {
-    "url": "https://elmprogramming.com/string.html",
-    "description": "String module"
   }
 ]
