@@ -27,12 +27,12 @@ You must `import` functions from other modules in order to use them. Qualified i
 
 ```elm
 -- qualified imports
-import List                            -- List.map, List.foldl
-import List as L                       -- L.map, L.foldl
+import List                             -- List.repeat, List.length
+import List as L                        -- L.repeat, L.length
 
 -- open imports
-import List exposing (..)              -- map, foldl, concat, ...
-import List exposing ( map, foldl )    -- map, foldl
+import List exposing (..)               -- repeat, length, concat, ...
+import List exposing ( repeat, length ) -- repeat, length
 ```
 
 https://elm-lang.org/docs/syntax#modules
