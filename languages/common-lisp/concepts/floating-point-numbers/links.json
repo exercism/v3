@@ -1,1 +1,6 @@
-[]
+[
+  {
+    "url": "https://lispcookbook.github.io/cl-cookbook/numbers.html",
+    "description": "Advanced numbers reference (Common Lisp Cookbook)"
+  }
+]

@@ -1,43 +1,25 @@
-
 ## truthy-and-falsy
 
-In Common Lisp, false values are represented by the empty list – `()` – or the
-symbol `nil`. These values can be quoted or unquoted.
-
-All other values in Lisp represent truth. There also exists the special constant
-symbol `t` that is always equal to `t` (and is therefore always true).
+In Common Lisp all values are "true" except for `()` which is "false". There are two special constant symbols `t` and `nil` whose values are true and false respectively.
 
 ## conditionals
 
-Common Lisp provides the programmer with several different conditionals that can
-be categorised by the number of "branches" they support.
+Common lisp provides several different conditional expressions, the main difference being the number of branches they support.
 
-#### Single-Branch Conditionals
-
-The conditionals `when` and `unless` evaluate some code only when the provided
-test is true or false respectively – evaluating to `nil` otherwise.
+- `when` and `unless` allow for a single branch:
 
 ```lisp
 (when (= 2 2) "All is well")      ; => "All is well"
 (unless (= 2 2) "Time to panic!") ; => NIL
 ```
 
-#### The Two-Branch Conditional
-
-The `if` conditional evaluates to the second expression of the body when the
-test is true and the third one otherwise.
+- `if` provides the classic if-then-else construct:
 
 ```lisp
 (if (= 2 2) 'how-honest 'you-liar) ; => HOW-HONEST
 ```
 
-#### Many-Branch Conditionals
-
-The Lisp "super-conditional" is `cond`, which can have an infinite number of
-branches. Each branch has a test condition and body expression that are
-surrounded by an extra pair of parentheses. If all of the tests evaluate to
-false, then `nil` is returned. A common pattern is the addition of a final `t`
-branch that serves as a catch-all.
+- `cond` provides a way to have multiple branches without nesting `if` expressions:
 
 ```lisp
 (cond ((= 0 2) 'nope)
@@ -48,9 +30,7 @@ branch that serves as a catch-all.
 ; => QUITE-TRUE
 ```
 
-If you just want to test one value against a number of branches, you can use the
-cleaner `case` expression. If none of the cases match, `nil` is returned. Both
-`t` and `otherwise` can be used as catch-all cases
+- `case` provides a classic 'switch' style construct: It checks a single value against a number of branches:
 
 ```lisp
 (case 'elder-beast
