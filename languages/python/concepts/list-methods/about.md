@@ -81,16 +81,16 @@ If you want to remove an item from a list, you can use the `remove` function whi
 ValueError: list.remove(x): x not in list
 ```
 
-There is another way to remove an item from the list. If you know the index of the item which you want to remove, you can use `pop` function. Pop takes 1 parameter, the index of the item you need to remove, and return it to you. If you specify an index more than the length of the list, you will get an `IndexError`. If you don't specify an index, the function will remove the last element and return it to you.
+There is another way to remove an item from the list. If you don't specify any parameter, the function will remove the last element and returns it to you. Pop takes one optional parameter, the index of the item you want to remove and returns it to you. If you specify an index greater than the length of the list, you will get an `IndexError`.
 
 ```python
 >>> numbers = [1, 2, 3]
->>> numbers.pop(0)
-1
->>> numbers
-[2, 3]
 >>> numbers.pop()
 3
+>>> numbers
+[1, 2]
+>>> numbers.pop(0)
+1
 >>> numbers
 [2]
 ```
@@ -117,9 +117,9 @@ The items in the list can be reordered in the reverse order with the `reverse` f
 
 ## Sort the list
 
-When you have an random ordered list of items, you can sort them with the help of `sort` function. If you have items that are alphanumerical, you don't have to provide any inputs to sort.
+When you have an unordered list of items, you can sort them with the help of `sort` function. If you have items that are alphanumerical, you can use `sort` without any arguments.
 
-ex: you have list of numbers, or you have a list of names and you want to sort them
+If you have a list of names and you want to sort them:
 
 ```python
 >>> names = ["Tony", "Natasha", "Thor", "Bruce"]
@@ -128,7 +128,7 @@ ex: you have list of numbers, or you have a list of names and you want to sort t
 ["Bruce", "Natasha", "Thor", "Tony"]
 ```
 
-If you want the sort to be in descending order, you can use the reverse parameter.
+If you want the sort to be in descending order, you can use the reverse parameter:
 
 ```python
 >>> names = ["Tony", "Natasha", "Thor", "Bruce"]
@@ -153,9 +153,7 @@ You can find the occurrences of an element in the list with the help of the `cou
 
 ## Find the index of the item
 
-If you want to find the index of an item you want in the list, you can use the `index` function. If you have multiple occurrences of the same item, it will provide you the index of the first occurrence. If you do not have any occurrences of the item, then you will have a `ValueError` raised.
-
-Index starts with 0.
+If you want to find the index of an item you want in the list, you can use the `index` function. If you have multiple occurrences of the same item, it will provide you the index of the first occurrence. If you do not have any occurrences of the item, then you will have a `ValueError` raised. The index is zero-based, meaning the first item is at the position 0.
 
 ```python
 >>> items = [7, 4, 1, 0, 2, 5]
@@ -177,7 +175,7 @@ You can also provide a start (and an end) to the index from where you need the s
 
 ## Copy a List
 
-Lists are a collection of items which are referenced to an index, hence if you do an assignment of a list object to another variable. Any change you make to the assigned variable will also have an impact on the original variable.
+Lists are collections of items which are referenced by an index. Therefor, if you do re-assign a list object to another variable, any change you do to the new variable will also impact the original variable.
 
 ```python
 >>> actual_names = ["Tony", "Natasha", "Thor", "Bruce"]

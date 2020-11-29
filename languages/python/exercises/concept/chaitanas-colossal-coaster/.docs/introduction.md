@@ -68,16 +68,16 @@ If you want to delete an element, you can use `.remove()` and pass the item you 
 ValueError: list.remove(x): x not in list
 ```
 
-Alternatively, using the `.pop()` function will both remove **and** `return` an element for use. `.pop()` takes 1 parameter -- the index of the item you need to remove and receive. If you specify an index number higher than the length of the list, you will get an `IndexError`. If an index is not specified, the last element of the list will be removed and returned to you.
+Alternatively, using the `.pop()` function will both remove **and** `return` an element for use. If you don't specify any parameter, the function will remove the last element and return it to you. Pop takes one optional parameter, the index of the item you want to remove and returns the item to you. If you specify an index greater than the length of the list, you will get an `IndexError`.
 
 ```python
 >>> numbers = [1, 2, 3]
->>> numbers.pop(0)
-1
->>> numbers
-[2, 3]
 >>> numbers.pop()
 3
+>>> numbers
+[1, 2]
+>>> numbers.pop(0)
+1
 >>> numbers
 [2]
 ```
@@ -111,7 +111,7 @@ You can re-order your list _**in place**_ with the help of the `.sort()` method.
 ["Bruce", "Natasha", "Thor", "Tony"]
 ```
 
-If you want the sort to be in descending order, you can use the reverse parameter.
+If you want the sort to be in descending order, you can use the reverse parameter:
 
 ```python
 >>> names = ["Tony", "Natasha", "Thor", "Bruce"]
@@ -134,9 +134,7 @@ You can find the number of occurrences of an element in the list with the help o
 
 ### Finding the index of items
 
-`.index()` will provide you the index number of the first occurrence of the item you pass in. If you do not have any occurrences of the item, a `ValueError` is raised. If you do not need the exact position of an item and are only checking that it is present on the list, the built-in `in` operator is more efficient.
-
-Index starts with 0.
+The function `.index()` will provide you the index number of the first occurrence of the item you pass in. If you do not have any occurrences of the item, a `ValueError` is raised. If you do not need the exact position of an item and are only checking that it is present on the list, the built-in `in` operator is more efficient. The index is zero-based, meaning the first item is at the position 0.
 
 ```python
 >>> items = [7, 4, 1, 0, 2, 5]
@@ -158,7 +156,7 @@ You can provide start and end indices to search within a specific section of the
 
 ### Making Copies
 
-Remember that _names_ in python are just labels that reference an underlying object. This creates a few surprises when working with lists.
+Lists are collections of items which are referenced by an index. Therefor, if you do re-assign a list object to another variable, any change you do to the new variable will also impact the original variable.
 
 ```python
 >>> actual_names = ["Tony", "Natasha", "Thor", "Bruce"]

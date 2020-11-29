@@ -45,7 +45,6 @@ This concept exercise should make the student aware of the existence of some lis
 
 - basics
 - booleans
-- dicts
 - methods
 - object
 - iterables
