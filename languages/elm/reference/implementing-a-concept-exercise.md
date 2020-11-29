@@ -98,7 +98,7 @@ If you have any questions regarding implementing this exercise, please post them
 [docs-rationale-for-v3]: ../../../docs/rationale-for-v3.md
 [docs-features-of-v3]: ../../../docs/features-of-v3.md
 [anatomy-of-a-concept-exercise]: https://www.youtube.com/watch?v=gkbBqd7hPrA
-[concept-exercise-basics]: ../exercises/concept/basics
+[concept-exercise-basics]: ../exercises/concept/lucians-luscious-lasagna
 [reference]: ../../../reference
 [dotnet-format]: https://github.com/dotnet/format
 [allowing-fork-pr-changes]: https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork
@@ -106,13 +106,13 @@ If you have any questions regarding implementing this exercise, please post them
 [video-stub-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1171
 [video-tests-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1255
 [video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
-[example-stub-file]: ../exercises/concept/basics/src/basics.elm
-[example-tests-file]: ../exercises/concept/basics/test/basics.elm
-[example-example-file]: ../exercises/concept/basics/.meta/Example.elm
+[example-stub-file]: ../exercises/concept/lucians-luscious-lasagna/src/Cook.elm
+[example-tests-file]: ../exercises/concept/lucians-luscious-lasagna/tests/Tests.elm
+[example-example-file]: ../exercises/concept/lucians-luscious-lasagna/.meta/Cook.elm
 [stub-file]: ../../../docs/concept-exercises.md#stub-implementation-file
 [tests-file]: ../../../docs/concept-exercises.md#tests-file
 [example-file]: ../../../docs/concept-exercises.md#example-implementation-file
 [video-stub-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1171
 [video-tests-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=1255
 [video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
-[meta-config-json]: ../exercises/concept/basics/.meta/config.json
+[meta-config-json]: ../exercises/concept/lucians-luscious-lasagna/.meta/config.json
