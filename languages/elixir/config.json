@@ -220,6 +220,12 @@
         "uuid": "83c31f5f-fc94-4315-9053-df5a5f5d5fb7",
         "concepts": ["io"],
         "prerequisites": ["strings", "maps", "atoms"]
+      },
+      {
+        "slug": "captains-log",
+        "uuid": "d805ae23-b5c9-494f-ab13-78a0e836391c",
+        "concepts": ["erlang-libraries", "randomness"],
+        "prerequisites": ["enum", "ranges", "floating-point-numbers", "strings", "charlists", "atoms"]
       }
     ],
     "practice": [
