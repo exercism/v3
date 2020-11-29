@@ -18,20 +18,6 @@ module Greet exposing (greet)
 module Greet exposing (..)
 ```
 
-### Imports
-
-You must `import` functions from other modules in order to use them. Qualified imports are preferred.
-
-```elm
--- qualified imports
-import List                            -- List.map, List.foldl
-import List as L                       -- L.map, L.foldl
-
--- open imports
-import List exposing (..)              -- map, foldl, concat, ...
-import List exposing ( map, foldl )    -- map, foldl
-```
-
 ### Functions
 
 Invoking a function is done by specifying its name and passing arguments for each of the function's parameters.
