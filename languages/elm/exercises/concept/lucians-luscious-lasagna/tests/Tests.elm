@@ -1,17 +1,27 @@
 module Tests exposing (tests)
 
+import Cook exposing (elapsedTimeInMinutes, expectedMinutesInOven, preparationTimeInMinutes)
+import Expect
+import Fuzz
+import Random
 import Test exposing (..)
-import Expect exposing (Expectation)
-import Fuzz exposing (Fuzzer, list, string)
-import Greet exposing (greet)
-import String exposing (toUpper)
 
 
 tests : Test
 tests =
-    describe "greet"
-        [ fuzz (Fuzz.string) "greet should return \"Welcome \" followed by the person to greet, in upper case" <|
-            \personToGreet ->
-                greet personToGreet
-                    |> Expect.equal ("Welcome " ++ toUpper(personToGreet))
+    describe "Cook"
+        [ test "expectedMinutesInOven" <|
+            \_ ->
+                expectedMinutesInOven
+                    |> Expect.equal 40
+        , skip <|
+            fuzz (Fuzz.intRange 0 Random.maxInt) "preparationTimeInMinutes" <|
+                \layers ->
+                    preparationTimeInMinutes layers
+                        |> Expect.equal (2 * layers)
+        , skip <|
+            fuzz (Fuzz.intRange 0 Random.maxInt) "preparationTimeInMinutes" <|
+                \layers ->
+                    elapsedTimeInMinutes layers passedAlready
+                        |> Expect.equal (2 * layers + passedAlready)
         ]
