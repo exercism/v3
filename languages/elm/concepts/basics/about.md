@@ -3,18 +3,18 @@
 ### Modules
 
 Each file in Elm is a module, and must contain a `module` statement before all other code.
-Module names must match their file name, so module `Greet` must be in file Greet.elm.
+Module names must match their file name, so module `Count` must be in file Count.elm.
 Anything defined within a module is privatly scoped to it
 and cannot be accessed from outside this module, unless listed in `exposing`.
 
 ```elm
--- Define the Greet module, and expose the `greet` function
-module Greet exposing (greet)
+-- Define the Count module, and expose the `double` function
+module Count exposing (double)
 ```
 
 ```elm
--- Define the Greet module, and expose everything within
-module Greet exposing (..)
+-- Define the Count module, and expose everything within
+module Count exposing (..)
 ```
 
 https://elm-lang.org/docs/syntax#modules
