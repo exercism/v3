@@ -3,9 +3,7 @@
 ### Modules
 
 Each file in Elm is a module, and must contain a `module` statement before all other code.
-
 Module names must match their file name, so module `Greet` must be in file Greet.elm.
-
 Anything defined within a module is privatly scoped to it
 and cannot be accessed from outside this module, unless listed in `exposing`.
 
@@ -15,7 +13,7 @@ module Greet exposing (greet)
 ```
 
 ```elm
--- Define the Greet module, and expose everything
+-- Define the Greet module, and expose everything within
 module Greet exposing (..)
 ```
 
