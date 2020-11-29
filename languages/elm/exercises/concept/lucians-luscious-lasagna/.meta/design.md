@@ -1,19 +1,20 @@
 ## Learning objectives
 
-- Know how to define a minimal compilable file
-- Know how to export functions for use by other modules
-- Know how import functions from other modules
-- Know how to define a simple function
-- Know how to define the type annotation for a function 
-- Know how to do string concatentation and how to Upper Case a string, although these are incidential
+- Know how to define an Elm module / Elm file.
+- Know how to export functions for use by other modules.
+- Know how to define a constant.
+- Know how to define a function.
+- Know how to indent code.
+- Know how to use basic math operators on numbers.
+- Know how to define single- and multiline comments.
 
 ## Out of scope
 
-- The Elm Architecture (TEA), which is required to define a minimal compilable Elm application, but involves a lot more concepts
+- The Html module, which is required to define a minimal compilable Elm application with a "main", but involves more concepts.
 
 ## Concepts
 
-- `basics`: Know how to define a minimal compilable file
+- `basics`: Know the basic syntax of an Elm file.
 
 ## Prequisites
 
@@ -24,7 +25,6 @@ There are no prerequisites.
 This exercise could benefit from the following rules added to the the [analyzer][analyzer]:
 
 - Verify that the whitespace adheres to community defaults.
-- Verify that `String.toUpper` function is used
-- Verify that `++` operator is used
+- Verify that functions are re-used in other functions.
 
 [analyzer]: https://github.com/exercism/elm-analyzer
