@@ -10,7 +10,7 @@ def add_person_with_his_friends(queue, index, person_name):
 def remove_the_mean_person(queue, person_name):
     pass
 
-def how_many_dopplegangers(queue, person_name):
+def how_many_namefellows(queue, person_name):
     pass
 
 def remove_the_last_person(queue):

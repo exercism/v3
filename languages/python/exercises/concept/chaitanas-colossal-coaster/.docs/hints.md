@@ -19,7 +19,7 @@
 
 - You know the name of the person who is mean. you have to just `remove` them from the queue.
 
-# 5. DoppelGangers
+# 5. Namefellows
 
 - The number of people with the same name can be 0 till the whole queue length. All you need to do is find the `count` or the occurrences of the name in the queue.
 

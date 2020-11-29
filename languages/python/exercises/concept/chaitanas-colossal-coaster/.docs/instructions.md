@@ -69,11 +69,11 @@ Define the `remove_the_mean_person()` function that takes 2 parameters `queue, p
 ["Natasha", "Steve", "Wanda", "Rocket"]
 ```
 
-# 5. DoppelGangers
+# 5. Namefellows
 
 You may not have seen 2 unrelated people who look exactly the same, but you've _definitely_ seen unrelated people with the same name exact name! It looks like today there is a lot of that happening. You want to know how many times a particular name has occurred in the queue.
 
-Define the `how_many_dopplegangers()` function that takes 2 parameters `queue, person_name`.
+Define the `how_many_namefellows()` function that takes 2 parameters `queue, person_name`.
 
 1. Queue is the list of people standing in the queue.
 2. person_name is the name of the person whom you think have been occurring more than once in the queue.
@@ -81,7 +81,7 @@ Define the `how_many_dopplegangers()` function that takes 2 parameters `queue, p
 Return the number of occurrences of the name, in `int` format.
 
 ```python
->>> how_many_dopplegangers(queue=["Natasha", "Steve", "Eltran", "Natasha", "Rocket"], person_name="Natasha")
+>>> how_many_namefellows(queue=["Natasha", "Steve", "Eltran", "Natasha", "Rocket"], person_name="Natasha")
 2
 ```
 

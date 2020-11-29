@@ -17,7 +17,7 @@ def remove_the_mean_person(queue, person_name):
     queue.remove(person_name)
     return queue
 
-def how_many_dopplegangers(queue, person_name):
+def how_many_namefellows(queue, person_name):
     return queue.count(person_name)
 
 def remove_the_last_person(queue):
