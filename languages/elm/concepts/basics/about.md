@@ -19,22 +19,6 @@ module Greet exposing (..)
 
 https://elm-lang.org/docs/syntax#modules
 
-### Imports
-
-You must `import` functions from other modules in order to use them. Qualified imports are preferred.
-
-```elm
--- qualified imports
-import List                             -- List.repeat, List.length
-import List as L                        -- L.repeat, L.length
-
--- open imports
-import List exposing (..)               -- repeat, length, concat, ...
-import List exposing ( repeat, length ) -- repeat, length
-```
-
-https://elm-lang.org/docs/syntax#modules
-
 ### Constants and functions
 
 A constant value is defined with `name = expression`,
