@@ -79,8 +79,8 @@ Elm doesn't use syntactic markers such as curly brackets, parentheses, or semico
 
 ```elm
 -- A function split over multiple lines, so subsequent lines must be indented
-greet personToGreet =
-    Debug.todo "Implement greet"
+add number1 number2 =
+    number1 + number2
 ```
 
 https://elmprogramming.com/indentation.html
