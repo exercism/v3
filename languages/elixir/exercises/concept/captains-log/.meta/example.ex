@@ -1,15 +1,20 @@
 defmodule CaptainsLog do
-  @habitable_planetary_classes ["H", "K", "L", "M", "N", "R"]
+  @planetary_classes ["D", "H", "J", "K", "L", "M", "N", "R", "T", "Y"]
 
-  def random_habitable_planet() do
-    Enum.random(@habitable_planetary_classes)
+  def random_planet_class() do
+    Enum.random(@planetary_classes)
+  end
+
+  def random_ship_registry_number() do
+    number = Enum.random(1000..9999)
+    "NCC-#{number}"
   end
 
   def random_stardate() do
-    :rand.uniform() * 3000 + 2000
+    :rand.uniform() * 1000 + 41_000
   end
 
   def format_stardate(stardate) do
-    to_string(:io_lib.format(".1f", [stardate]))
+    to_string(:io_lib.format("~.1f", [stardate]))
   end
 end
