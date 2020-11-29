@@ -1,4 +1,4 @@
-Python allows you to manipulate `list` in a lot of ways. A `list` is simple a collection of objects. They are mutable, ordered and indexed. Let's look at the methods that are available to manipulate a `list` object.
+Python allows you to manipulate a [`list`][list] in a lot of ways. A `list` is simple a collection of objects of [type `List`][list std type]. They are mutable, ordered and indexed. Let's look at the methods that are available to manipulate a `list` object.
 
 When you manipulate a list with a list-method, you are changing the properties of the list you pass. That is, **you will alter the list** object that is being used with the list-method. If you do not want to change the original list, you need to copy the list and then work on the copied list.
 
@@ -139,7 +139,7 @@ If you want the sort to be in descending order, you can use the reverse paramete
 
 If you have a list of items that are complex, you can use the key parameter in the sort. Lets see more about this later.
 
-Internally, python uses `Timsort` to sort the list.
+Internally, python uses [`Timsort`][timsort] to sort the list.
 
 ## Occurrences of an item in the list
 
@@ -200,3 +200,89 @@ You need to use the `copy` function in order to do a `shallow_copy` of the list.
 >>> names
 ["Tony", "Natasha", "Thor", "Bruce"]
 ```
+
+To create a second copy of a list, you need to _slice_ or explicitly use the `.copy()` method, which will make a second set of references that can then be changed without the danger of unintentional mutation of elements.
+
+```python
+>>> names = ["Tony", "Natasha", "Thor", "Bruce"]
+>>> new_list = names.copy()
+>>> new_list.append("Clarke")
+>>> new_list
+["Tony", "Natasha", "Thor", "Bruce", "Clarke"]
+>>> names
+["Tony", "Natasha", "Thor", "Bruce"]
+```
+
+This reference limitation becomes exacerbated with operating on nested/multiplied lists.
+
+```python
+from pprint import pprint
+
+# This will produce a game grid that is 8x8, pre-populated with zeros
+>>> game_grid = [[0]*8] *8
+
+>>> pprint(game_grid)
+[[0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0]]
+
+# Let's put an x in the bottom right corner
+>>> game_grid[7][7] = "X"
+
+# That doesn't work, because all the rows are referencing the same underlying list
+>>> pprint(game_grid)
+[[0, 0, 0, 0, 0, 0, 0, 'X'],
+ [0, 0, 0, 0, 0, 0, 0, 'X'],
+ [0, 0, 0, 0, 0, 0, 0, 'X'],
+ [0, 0, 0, 0, 0, 0, 0, 'X'],
+ [0, 0, 0, 0, 0, 0, 0, 'X'],
+ [0, 0, 0, 0, 0, 0, 0, 'X'],
+ [0, 0, 0, 0, 0, 0, 0, 'X'],
+ [0, 0, 0, 0, 0, 0, 0, 'X']]
+```
+
+However, if your list contains _variables_ or nested data structures, those second-level references will **not be copied** (_To copy an entire tree of containers, references, and objects, you need to use `.deep_copy()` or a `list comprehension`-- more on that later._). For a detailed explanation of list behavior, see this excellent [making a game board][making a game board] article.
+
+```python
+from pprint import pprint
+
+# This loop will safely produce a game grid that is 8x8, pre-populated with zeros
+>>> game_grid = []
+>>> filled_row = [0] * 8
+>>> for row in range(8):
+...    game_grid.append(filled_row.copy())
+
+>>> pprint(game_grid)
+[[0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0]]
+
+# Let's put an x in the bottom right corner
+>>> game_grid[7][7] = "X"
+
+# Now, the game grid works the way we expect it to
+>>> pprint(game_grid)
+[[0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 'X']]
+```
+
+[list]: https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+[list std type]: https://docs.python.org/3.9/library/stdtypes.html#list
+[timsort]: https://en.wikipedia.org/wiki/Timsort
+[making a game board]: https://nedbatchelder.com/blog/201308/names_and_values_making_a_game_board.html
