@@ -2,7 +2,6 @@
 
 The Concept Exercises are based on this [list of concepts][reference-shared].
 
-
 ## TODO
 
 Thanks for wanting to contribute to the Elm track's Concept Exercises! Contributions are very welcome!
