@@ -2,7 +2,7 @@
 
 - A global, named function is defined with
   [`defun`][cookbook-functions].
-- A function "returns" (e.g. evaluates to) the value of the last
+- A function "returns" (_e.g._ evaluates to) the value of the last
   expression in its body.
 - A function definition can include an optional documentation string
   after the parameters list.
@@ -20,16 +20,13 @@
 
 - You need to define a [function][cookbook-functions] with a single
   parameter
-- You can use [`*`][hyper-multiply] to multiple numbers.
+- You can use [`*`][hyper-multiply] to multiply numbers.
 
 ## 4. Calculate the elapsed time in minutes
 
 - You need to define a [function][cookbook-functions] with two
   parameters.
 - You can use [`+`][hyper-plus] to add numbers.
-- You can call another function with parameters by adding those
-  parameters to the expression where you call the function (_e.g._
-  `(func x y z)`).
 
 [cookbook-functions]: https://lispcookbook.github.io/cl-cookbook/functions.html
 [hyper-multiply]: http://www.lispworks.com/documentation/HyperSpec/Body/f_st.htm

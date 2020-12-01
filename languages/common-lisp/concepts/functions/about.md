@@ -1,4 +1,4 @@
-In Common Lisp global, named functions are defined with `defun`.
+In Common Lisp, global, named functions are defined with `defun`.
 
 This form takes as its first argument a list of parameters for the
 function being defined. After that it can, optionally, take a string
@@ -16,13 +16,13 @@ function.
 ```
 
 Functions can also take [optional
-parameters][concept://default-parameters], [keyword
-parameters][concept://named-parameters], [rest
-parameters][concept://rest-parameters]. These will be discussed in
+parameters](concept://default-parameters), [keyword
+parameters](concept://named-parameters), [rest
+parameters](concept://rest-parameters). These will be discussed in
 later concepts.
 
-The name of the function is in [scope][concept://scope] in the body of
-the function so that [recursion][concept://recursion] can be
+The name of the function is in [scope](concept://scope) in the body of
+the function so that [recursion](concept://recursion) can be
 performed.
 
 ```lisp

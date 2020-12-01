@@ -654,7 +654,7 @@
       "uuid": "a7b463d3-4d7f-4b4a-8a47-28307219541d",
       "slug": "functions",
       "name": "Functions",
-      "blurb": "TODO: add blurb for function concept"
+      "blurb": "A reuable set of expressions"
     },
     {
       "uuid": "778561a9-c735-4c26-8d07-1baa71b8f94a",
@@ -757,6 +757,12 @@
       "slug": "variables",
       "name": "Variables",
       "blurb": "TODO: add blurb for variables concept"
+    },
+    {
+      "uuid": "5bbd40fe-3382-11eb-b6f1-542696d187f9",
+      "slug": "scope",
+      "name": "Scope",
+      "blurb": "TODO: add blurb for scope concept"
     }
   ]
 }

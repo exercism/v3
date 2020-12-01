@@ -1,13 +1,10 @@
 ## functions
 
-Common Lisp provides the `defun` expression to allow one to create
-global functions.
-
 To define a global function in Common Lisp one uses the `defun`
-expression. This expression takes as its first argument a list or
-parameters (and empty list of the function has no parameters). This is
-followed by an optional documentation string (see below), then zero or
-more expressions which make up the "body" of the function.
+expression. This expression takes as its first argument a list of
+parameters (and empty list means the function has no parameters). This
+is followed by an optional documentation string (see below), then zero
+or more expressions which make up the "body" of the function.
 
 Functions may have zero or more parameters.
 
@@ -42,7 +39,7 @@ accessed via `documentation`.
 
 (documentation 'add-nums 'function) ;; => "Add X and Y together"
 
-;; Not that if one provides a docstring but fails to provide a body
+;; Note that if one provides a docstring but fails to provide a body
 ;; then the docstring is interpreted by Common Lisp as the body, not
 ;; the docstring
 (defun no-body ())

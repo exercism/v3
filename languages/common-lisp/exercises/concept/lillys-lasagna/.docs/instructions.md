@@ -28,7 +28,7 @@ how many minutes the lasagna still has to remain in the oven, based on
 the expected oven time in minutes from the previous task.
 
 ```lisp
-(remaing-minutes-in-oven 100) ;; => 237
+(remaining-minutes-in-oven 100) ;; => 237
 ```
 
 ## 3. Calculate the preparation time in minutes
