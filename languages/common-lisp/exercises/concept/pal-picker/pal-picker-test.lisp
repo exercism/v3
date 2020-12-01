@@ -5,7 +5,7 @@
 
 ;; Defines the testing package with symbols from pal-picker and FiveAM in scope
 ;; The `run-tests` function is exported for use by both the user and test-runner
-(defpackage pal-picker-test
+(defpackage :pal-picker-test
   (:use :cl :fiveam :pal-picker)
   (:export :run-tests))
 

@@ -105,6 +105,13 @@
           "lists",
           "strings"
         ]
+      },
+      {
+        "slug": "little-sisters-essay",
+        "name": "Little Sister's Essay",
+        "uuid": "09c322bc-5c04-480b-8441-fd9ef5c7a3b4",
+        "concepts": ["str-methods"],
+        "prerequisites": ["basics", "strings"]
       }
     ],
     "practice": [
