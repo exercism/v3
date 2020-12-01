@@ -3835,14 +3835,6 @@
           ],
           "prerequisites": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comparisons.md",
-              "name": "comparisons"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
-              "name": "conditionals"
-            },
-            {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
               "name": "lists"
             }
