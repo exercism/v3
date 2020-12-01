@@ -3,21 +3,15 @@ using Xunit;
 public class PermissionsTests
 {
     [Fact]
-    public void None_permission_is_defined()
-    {
-        Assert.Equal("None", Permission.None.ToString());
-    }
-
-    [Fact(Skip = "Remove this Skip property to run this test")]
-    public void All_permission_is_defined()
-    {
-        Assert.Equal("All", Permission.All.ToString());
-    }
-
-    [Fact(Skip = "Remove this Skip property to run this test")]
-    public void Permissions_can_be_combined_as_flags()
+    public void Permissions_read_write_can_be_combined_as_flags()
     {
         Assert.Equal("Read, Write", (Permission.Read | Permission.Write).ToString());
+    }
+
+    [Fact(Skip = "Remove this Skip property to run this test")]
+    public void Combining_none_delete_permissions_is_same_as_delete_permission()
+    {
+        Assert.Equal("Delete", (Permission.Delete | Permission.None).ToString());
     }
 
     [Fact(Skip = "Remove this Skip property to run this test")]
