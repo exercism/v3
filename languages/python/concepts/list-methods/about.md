@@ -278,7 +278,6 @@ from pprint import pprint
 # An attempt to put a "X" in the bottom right corner
 >>> game_grid[7][7] = "X"
 
-
 # The game grid now works the way we expect it to
 >>> pprint(game_grid)
 [[0, 0, 0, 0, 0, 0, 0, 0],

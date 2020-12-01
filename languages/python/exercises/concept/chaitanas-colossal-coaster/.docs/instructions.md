@@ -1,4 +1,4 @@
-Chaitana owns a very popular theme park. For some reason, she only has one ride in the very center of beautifully landscaped grounds: The Biggest Roller Coaster in the World. Although there is only this one attraction, people travel from all over and stand in line for hours just for a chance at taking a ride.
+Chaitana owns a very popular theme park. For some reason, she only has one ride in the very center of beautifully landscaped grounds: The Biggest Roller Coaster in the World. Although there is only one attraction, to have the opportunity to ride the hypercoaster, people come from all over and stand in line for hours.
 
 There are two queues for this ride:
 
