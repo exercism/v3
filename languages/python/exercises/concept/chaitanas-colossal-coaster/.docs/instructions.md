@@ -14,7 +14,7 @@ Define the `add_me_to_the_queue()` function that takes 4 parameters `express_que
 1. express queue is a list
 2. normal queue is a list
 3. ticket_type is an `int` with 1 for the express queue and 0 for the normal queue.
-4. person name is the name of the person to be added to the respective queue.
+4. person_name is the name of the person to be added to the respective queue.
 
 Once you have added the name to the appropriate queue, return the queue that includes the new person.
 
