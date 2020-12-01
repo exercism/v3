@@ -62,7 +62,7 @@ class Car : Vehicle
 }
 ```
 
-Where more than one class is derived from a base class the two classes will often implement different versions of a base class method. This is a very important principle called polymorphism. For instance in a variation on the above example we show how code using `Vehicle` can change its behavior depending on what type of vehicle has been instantiated.
+Where more than one class is derived from a base class the two (or more) classes will often implement different versions of a base class method. This is a very important principle called polymorphism. For instance in a variation on the above example we show how code using `Vehicle` can change its behavior depending on what type of vehicle has been instantiated.
 
 ```csharp
 abstract class Vehicle
