@@ -2,14 +2,14 @@ Your friend Chandler is planning to visit exotic countries all around the world.
 
 ## 1. Estimating exchangeable value
 
-Create the function `estimate_value()` where `budget` and `exchange_rate` are the two required parameters: 
+Create the function `estimate_value()` where `budget` and `exchange_rate` are the two required parameters:
+
 1. `budget` is amount of money you are planning to exchange.
 2. `exchange_rate` is unit value of foreign currency.
 
-This function should return the estimated value of foreign currency you can get based on your budget and current exchange rate. 
+This function should return the estimated value of foreign currency you can get based on your budget and current exchange rate.
 
 **Note:** If your currency is USD and you want to exchange it into EUR, exchange rate is 1.20 if 1 EUR = 1.20 USD.
-
 
 ```python
 >>> estimate_value(127.5, 1.2)
@@ -68,7 +68,6 @@ Create the function `exchangeable_value()` with parameter `budget`, `exchange_ra
 4. `denomination` is value of single bill.
 
 You need to return the maximum value you can get considering your budget, exchange rate, spread, and denomination.
-
 
 **Note:** If 1 EUR is 1.20 USD and spread is 10%, the actual exchange rate of 1 EUR is 1.32 USD.
 
