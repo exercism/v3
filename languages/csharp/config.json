@@ -146,8 +146,8 @@
         "slug": "attack-of-the-trolls",
         "name": "Attack of the Trolls",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
-        "concepts": ["bit-manipulation", "compound-assignment", "flag-enums"],
-        "prerequisites": ["attributes", "enums", "integral-numbers"]
+        "concepts": ["attributes", "flag-enums"],
+        "prerequisites": ["bit-manipulation", "enums", "integral-numbers"]
       },
       {
         "slug": "interest-is-interesting",
