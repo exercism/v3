@@ -422,11 +422,7 @@
           "concepts": [
             {
               "url": null,
-              "name": "bit-manipulation"
-            },
-            {
-              "url": null,
-              "name": "compound-assignment"
+              "name": "attributes"
             },
             {
               "url": null,
@@ -436,7 +432,7 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "attributes"
+              "name": "bit-manipulation"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
