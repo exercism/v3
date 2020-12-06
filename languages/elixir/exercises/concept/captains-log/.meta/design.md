@@ -26,5 +26,5 @@
 ## Analyzer
 
 - check that `random_planet_class` and `random_ship_registry_number` use `Enum.random`
-- check that `random_stardate` uses `:rand` and does not use `Enum.random`
+- check that `random_stardate` uses `:rand.uniform` and does not use `Enum.random`
 - check that `format_stardate` uses `:io_lib`

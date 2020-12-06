@@ -225,7 +225,14 @@
         "slug": "captains-log",
         "uuid": "d805ae23-b5c9-494f-ab13-78a0e836391c",
         "concepts": ["erlang-libraries", "randomness"],
-        "prerequisites": ["enum", "ranges", "floating-point-numbers", "strings", "charlists", "atoms"]
+        "prerequisites": [
+          "enum",
+          "ranges",
+          "floating-point-numbers",
+          "strings",
+          "charlists",
+          "atoms"
+        ]
       }
     ],
     "practice": [
