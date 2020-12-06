@@ -16,7 +16,7 @@
 
 - There is no Elixir function that would return a random float.
 - There is a [built-in Erlang function][erl-rand-uniform] that returns a random float x where `0.0 <= x < 1.0`.
-- If `x` belongs to a range `0.0 <= x < 1.0`, but you need a number from a different range `A <= x < B`, you can shift x's range by multiplying it by the range's width (`B - A`) and adding the range's start (`A`). That is: `x * (B - A) + A`.
+- If `x` belongs to a range `0.0 <= x < 1.0`, but you need a number from a different range `a <= x < b`, you can shift x's range by multiplying it by the range's width (`b - a`) and adding the range's start (`a`). That is: `x * (b - a) + a`.
 
 ## 4. Format the stardate
 
