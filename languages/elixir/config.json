@@ -223,6 +223,7 @@
       },
       {
         "slug": "captains-log",
+        "name": "Captain's Log",
         "uuid": "d805ae23-b5c9-494f-ab13-78a0e836391c",
         "concepts": ["erlang-libraries", "randomness"],
         "prerequisites": [
