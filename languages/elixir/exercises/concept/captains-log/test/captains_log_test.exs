@@ -97,6 +97,11 @@ defmodule CaptainsLogTest do
 
   describe "format_stardate" do
     @tag :pending
+    test "returns a string" do
+      assert is_bitstring(CaptainsLog.format_stardate(41010.7))
+    end
+
+    @tag :pending
     test "formats floats" do
       assert CaptainsLog.format_stardate(41543.3) == "41543.3"
     end
