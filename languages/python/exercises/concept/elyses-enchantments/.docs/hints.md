@@ -2,7 +2,7 @@
 
 ## 1. Creating a List
 
-- `Lists` in python may be [constructed](https://docs.python.org/3/library/stdtypes.html#list) in several ways. 
+- `Lists` in python may be [constructed](https://docs.python.org/3/library/stdtypes.html#list) in several ways.
 - If you want to create a `list` with a small amount of elements, the easiest way to do it is to use the square brackets and a comma to separate two elements. For example, to create a `list` containing the elements a, b and c, you can write:
 
 ```python
@@ -60,7 +60,7 @@
 ## 9. Modifying Values in Lists
 
 - `Lists` in python are mutable, this means that once a `list` is created, you can modify, delete or add any element as you wish. Python provides a wide range of [ways to modify `lists`](https://realpython.com/python-lists-tuples/#lists-are-mutable).
-- Here is an example of the easiest way to modify the value of a `list` element: 
+- Here is an example of the easiest way to modify the value of a `list` element:
 
 ```python
 >>> list = [1, 2, 3, 4, 5]
@@ -68,5 +68,3 @@
 >>> list
 [1, 2, 333, 4, 5]
 ```
-
-

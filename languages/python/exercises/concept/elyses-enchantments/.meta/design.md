@@ -11,7 +11,7 @@ The goal of this exercise is to teach the basics of the `List` (sequence type) d
 - Access a range of items in a list via list slicing (`[start:stop:step]`)
 - Iterate through a list using `for item in`
 - Understand that `lists` can store mixed/any data types
-- Understand that `lists` are mutable. Assigning a new value to a list index will change the value at that index. 
+- Understand that `lists` are mutable. Assigning a new value to a list index will change the value at that index.
 
 ## Out of scope
 
