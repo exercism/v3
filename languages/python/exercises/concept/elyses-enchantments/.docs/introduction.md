@@ -189,23 +189,6 @@ Lists can be combined via various techniques:
 ['cat', 'dog', 'elephant', 'cat', 'dog', 'elephant', 'cat', 'dog', 'elephant']
 
 
-# a more efficent method of combining 2 lists is to use slice asignment or appending in a loop
-# by mutating one of the original lists
-first_one = ["cat", "Tabby"]
-second_one = ["George", 5]
-
-# this assigns the second list to index 0 in the first list
->>> first_one[0:0] = second_one
->>> first_one
-["George", 5, "cat", "Tabby"]
-
-# this loops through the first list and appends it's items to the end of the second list
->>> for item in first_one:
->>>      second_one.append(item)
-...
->>> print(second_one)
-["George", 5, "cat", "Tabby"]
-```
 
 ## Related data types
 
