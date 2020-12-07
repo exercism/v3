@@ -174,19 +174,6 @@ Blue
 
 ```
 
-One common way to compose a list of values is to use `list.append()` with a loop:
-
-```python
-
->>> cubes_to_1000 = []
-
->>> for number in range(11):
-...    cubes_to_1000.append(number**3)
-
->>> print(cubles_to_1000)
-[0, 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
-```
-
 Lists can be combined via various techniques:
 
 ```python
