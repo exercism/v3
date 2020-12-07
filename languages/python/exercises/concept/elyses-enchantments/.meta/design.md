@@ -1,6 +1,6 @@
 ## Goal
 
-The goal of this exercise is to teach the basics of the `List` (sequence type) data type in Python. The exercise will walk the student through how to create lists via various methods, iterate through lists via looping, and access items in various lists through indexing and forming/accessing list slices.
+The goal of this exercise is to teach the basics of the `list` data type in Python. The exercise will walk the student through how to create lists via various methods, iterate through lists via looping, and access items in various lists through indexing and forming/accessing list slices.
 
 ## Learning objectives
 
