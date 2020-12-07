@@ -120,6 +120,21 @@ Items inside lists (_like the sequence types `string` and `tuple`_), can be acce
 'Oatmeal'
 ```
 
+You can access a portion of the list with the slice notation `[start:stop]`. The slice of a list from start to stop is defined as the sequence of items with index `i` such that `start <= i < stop`.
+You can also get a slice of a list from `start` to `stop` with step `step` with the notation `[start:stop:step]`.
+A slice of a list is a copy of a portion of the original list so you do not modify the original but you get a new list with the elements you asked for.
+
+```python
+
+>>> colors = ["Red", "Purple", "Green", "Yellow", "Orange", "Pink", "Blue", "Grey"]
+
+>>> middle_colors = colors[2:6]
+["Green", "Yellow", "Orange", "Pink"]
+
+>>> primary_colors = colors[0:len(colors):3]
+["Red", "Yellow", "Blue"]
+```
+
 The method `.pop()` can be used to both remove and return a value at a given index:
 
 ```python
