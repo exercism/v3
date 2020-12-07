@@ -51,14 +51,11 @@
         "uuid": null,
         "concepts": ["enums"],
         "prerequisites": [
-          "classes",
+          "classes-I",
           "conditionals",
-          "enumeration",
-          "iteration",
-          "list-comprehensions",
-          "methods",
+          "comprehensions",
+          "loops",
           "sequences",
-          "strings",
           "string-formatting",
           "string-methods",
           "tuples"
@@ -84,10 +81,9 @@
         "uuid": null,
         "concepts": ["none"],
         "prerequisites": [
-          "basics",
           "bools",
           "conditionals",
-          "default-arguments",
+          "functions-I",
           "dict-methods",
           "list-methods",
           "loops"
