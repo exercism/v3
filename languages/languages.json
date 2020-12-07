@@ -2247,6 +2247,46 @@
               "name": "atoms"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/captains-log",
+          "slug": "captains-log",
+          "concepts": [
+            {
+              "url": null,
+              "name": "erlang-libraries"
+            },
+            {
+              "url": null,
+              "name": "randomness"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
+              "name": "enum"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/range.md",
+              "name": "ranges"
+            },
+            {
+              "url": null,
+              "name": "floating-point-numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": null,
+              "name": "charlists"
+            },
+            {
+              "url": null,
+              "name": "atoms"
+            }
+          ]
         }
       ]
     }
