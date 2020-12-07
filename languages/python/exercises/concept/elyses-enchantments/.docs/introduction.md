@@ -190,9 +190,6 @@ Lists can be combined via various techniques:
 
 
 
-## Related data types
-
-Lists are often used as _stacks_ and _queues_ -- although their underlying implementation makes prepending and inserting slow. The [collections][collections] module offers a [deque][deque] variant optimized for fast appends and pops from either end that is implemented as a [doubly linked list][doubly linked list]. Nested lists are also used to model small _matrices_ -- although the [Numpy][numpy] and [Pandas][pandas] libraries are much more robust for efficient matrix and tabular data manipulation. The collections module also provides a `UserList` type that can be customized to fit specialized list needs.
 
 [list]: https://docs.python.org/3/library/stdtypes.html#list
 [tuple]: https://docs.python.org/3/library/stdtypes.html#tuple
