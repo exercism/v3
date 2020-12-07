@@ -114,39 +114,6 @@ Items inside lists (_like the sequence types `string` and `tuple`_), can be acce
 'Oatmeal'
 ```
 
-The method `.pop()` can be used to both remove and return a value at a given index:
-
-```python
-
->>> breakfast_foods = ["Oatmeal", "Fruit Salad", "Eggs", "Toast"]
-
-#Fruit Salad is at index 1 or index -3
->>> breakfast_foods = ["Oatmeal", "Fruit Salad", "Eggs", "Toast"]
->>> fruit_on_the_side = breakfast_foods.pop(-3)
-'Fruit Salad'
-
->>> print(breakfast_foods)
-['Oatmeal', 'Eggs', 'Toast']
-
-```
-
-The method `.insert()` can be used to add an element at a specific position. The index given is the element _*before which to insert*_. `list.insert(0,element)` will insert at the front of the list and `list.insert(len(list), element)` is the equivalent of calling `list.append(element)`.
-
-```python
-
-breakfast_foods = ["Oatmeal", "Fruit Salad", "Eggs", "Toast"]
-
-#adding bacon to the mix before index 3 or index -1
->>> breakfast_foods.insert(3,"Bacon")
->>> print(breakfast_foods)
-['Oatmeal', 'Fruit Salad', 'Eggs', 'Bacon', 'Toast']
-
-
-#adding coffee in the first position
->>> breakfast_foods.insert(0, "Coffee")
->>> print(breakfast_foods)
-['Coffee', 'Oatmeal', 'Fruit Salad', 'Eggs', 'Bacon', 'Toast']
-```
 
 ## Working with lists
 
