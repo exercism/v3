@@ -1001,6 +1001,12 @@
       "blurb": "TODO: add blurb for enum concept"
     },
     {
+      "uuid": "4d8c1cac-ab6b-4d7a-b0c9-faef14b523a8",
+      "slug": "erlang-libraries",
+      "name": "Erlang Libraries",
+      "blurb": "TODO: add blurb for erlang-libraries concept"
+    },
+    {
       "uuid": "3f8ca849-0546-4fd0-b55d-a617a9e119ee",
       "slug": "errors",
       "name": "Errors",
@@ -1113,6 +1119,12 @@
       "slug": "protocols",
       "name": "Protocols",
       "blurb": "TODO: add blurb for protocols concept"
+    },
+    {
+      "uuid": "e48688fd-1216-4b3e-ba04-1d69e4d47000",
+      "slug": "randomness",
+      "name": "Randomness",
+      "blurb": "TODO: add blurb for randomness concept"
     },
     {
       "uuid": "b2165ae4-a742-4230-8297-11e65882ce2c",
