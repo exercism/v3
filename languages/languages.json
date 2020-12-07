@@ -422,11 +422,7 @@
           "concepts": [
             {
               "url": null,
-              "name": "bit-manipulation"
-            },
-            {
-              "url": null,
-              "name": "compound-assignment"
+              "name": "attributes"
             },
             {
               "url": null,
@@ -436,7 +432,7 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "attributes"
+              "name": "bit-manipulation"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
@@ -1440,6 +1436,30 @@
               "name": "strings"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/lillys-lasagna",
+          "slug": "lillys-lasagna",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/expressions.md",
+              "name": "expressions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
+              "name": "integers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/arithmetic.md",
+              "name": "arithmetic"
+            }
+          ]
         }
       ]
     }
@@ -2236,7 +2256,19 @@
     "name": "Elm",
     "slug": "elm",
     "exercises": {
-      "concept": []
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elm/exercises/concept/lucians-luscious-lasagna",
+          "slug": "lucians-luscious-lasagna",
+          "concepts": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ],
+          "prerequisites": []
+        }
+      ]
     }
   },
   {
@@ -3823,14 +3855,6 @@
           ],
           "prerequisites": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comparisons.md",
-              "name": "comparisons"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
-              "name": "conditionals"
-            },
-            {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
               "name": "lists"
             }
@@ -3901,6 +3925,26 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
               "name": "lists"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/little-sisters-essay",
+          "slug": "little-sisters-essay",
+          "concepts": [
+            {
+              "url": null,
+              "name": "str-methods"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",

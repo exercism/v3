@@ -74,9 +74,9 @@
       {
         "slug": "chaitanas-colossal-coaster",
         "name": "Chaitana's Colossal Coaster",
-        "uuid": null,
+        "uuid": "f326f3f8-1ab0-4d3d-8f42-5130fe5af841",
         "concepts": ["list-methods"],
-        "prerequisites": ["comparisons", "conditionals", "lists"]
+        "prerequisites": ["lists"]
       },
       {
         "slug": "restaurant-rozalynn",
