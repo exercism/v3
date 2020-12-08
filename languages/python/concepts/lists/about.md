@@ -57,11 +57,11 @@ The `list()` constructor can be used empty or with an _iterable_ as an argument.
 >>> no_elements = list()
 []
 
-#the tuple is unpacked and each element is added
+# The tuple is unpacked and each element is added.
 >>> multiple_elements_tuple = list(("Parrot", "Bird", 334782))
 ["Parrot", "Bird", 334782]
 
-#the set is unpacked and each element is added
+# The set is unpacked and each element is added.
 >>> multiple_elements_set = list({2, 3, 5, 7, 11})
 [2,3,5,7,11]
 ```
@@ -70,7 +70,7 @@ Results when using a list constructor with a string or a dict may be surprising:
 
 ````python
 
-#string elements (Unicode code points) are iterated through and added *individually*
+# String elements (Unicode code points) are iterated through and added *individually*.
 >>> multiple_elements_string = list("Timbuktu")
 ['T', 'i', 'm', 'b', 'u', 'k', 't', 'u']
 
@@ -112,7 +112,7 @@ Items inside lists (_like the sequence types `string` and `tuple`_), can be acce
 
 >>> breakfast_foods = ["Oatmeal", "Fruit Salad", "Eggs", "Toast"]
 
-#Oatmeal is at index 0 or index -4
+# Oatmeal is at index 0 or index -4.
 >>> first_breakfast_food = breakfast_foods[0]
 'Oatmeal'
 
@@ -141,7 +141,7 @@ The method `.pop()` can be used to both remove and return a value at a given ind
 
 >>> breakfast_foods = ["Oatmeal", "Fruit Salad", "Eggs", "Toast"]
 
-#Fruit Salad is at index 1 or index -3
+# Fruit Salad is at index 1 or index -3.
 >>> breakfast_foods = ["Oatmeal", "Fruit Salad", "Eggs", "Toast"]
 >>> fruit_on_the_side = breakfast_foods.pop(-3)
 'Fruit Salad'
@@ -157,13 +157,13 @@ The method `.insert()` can be used to add an element at a specific position. The
 
 breakfast_foods = ["Oatmeal", "Fruit Salad", "Eggs", "Toast"]
 
-#adding bacon to the mix before index 3 or index -1
+# Adding bacon to the mix before index 3 or index -1.
 >>> breakfast_foods.insert(3,"Bacon")
 >>> print(breakfast_foods)
 ['Oatmeal', 'Fruit Salad', 'Eggs', 'Bacon', 'Toast']
 
 
-#adding coffee in the first position
+# Adding coffee in the first position.
 >>> breakfast_foods.insert(0, "Coffee")
 >>> print(breakfast_foods)
 ['Coffee', 'Oatmeal', 'Fruit Salad', 'Eggs', 'Bacon', 'Toast']
@@ -211,29 +211,29 @@ One common way to compose a list of values is to use `list.append()` with a loop
 Lists can be combined via various techniques:
 
 ```python
-# using the plus + operator unpacks each list and creates a new list, but it is not efficent.
+# Using the plus + operator unpacks each list and creates a new list, but it is not efficent.
 >>> new_via_concatenate = ["George", 5] + ["cat", "Tabby"]
 ["George", 5, "cat", "Tabby"]
 
 
-#likewise, using the multiplication operator * is the equivalent of using + n times
+# Likewise, using the multiplication operator * is the equivalent of using + n times.
 >>> first_group = ["cat", "dog", "elephant"]
 
 >>> multiplied_group = first_group * 3
 ['cat', 'dog', 'elephant', 'cat', 'dog', 'elephant', 'cat', 'dog', 'elephant']
 
 
-# a more efficent method of combining 2 lists is to use slice asignment or appending in a loop
-# by mutating one of the original lists
+# A more efficent method of combining 2 lists is to use slice asignment or appending in a loop
+# by mutating one of the original lists.
 first_one = ["cat", "Tabby"]
 second_one = ["George", 5]
 
-# this assigns the second list to index 0 in the first list
+# This assigns the second list to index 0 in the first list.
 >>> first_one[0:0] = second_one
 >>> first_one
 ["George", 5, "cat", "Tabby"]
 
-# this loops through the first list and appends it's items to the end of the second list
+# This loops through the first list and appends it's items to the end of the second list.
 >>> for item in first_one:
 >>>      second_one.append(item)
 ...

@@ -30,19 +30,9 @@ For readability, line breaks can be used when there are many elements or nested 
                         "Tulip",
                         "Fuchsia",
                         "Cyclamen",
-                        "Lavender",
-                        "Daisy",
-                        "Jasmine",
-                        "Hydrangea",
-                        "Hyacinth",
-                        "Peony",
-                        "Dahlia",
-                        "Dandelion",
-                        "Tuberose",
-                        "Ranunculus"
+                        "Lavender"
                       ]
-['Rose', 'Sunflower', 'Poppy', 'Pansy', 'Tulip', 'Fuchsia', 'Cyclamen', 'Lavender', 'Daisy', 'Jasmine', 'Hydrangea', 'Hyacinth', 'Peony', 'Dahlia', 'Dandelion', 'Tuberose', 'Ranunculus']
-
+['Rose', 'Sunflower', 'Poppy', 'Pansy', 'Tulip', 'Fuchsia', 'Cyclamen', 'Lavender']
 >>> nested_data_structures = [
                                  {"fish": "gold", "monkey": "brown", "parrot" : "grey"},
                                  ("fish", "mammal", "bird"),
@@ -57,11 +47,11 @@ The `list()` constructor can be used empty or with an _iterable_ as an argument.
 >>> no_elements = list()
 []
 
-#the tuple is unpacked and each element is added
+# The tuple is unpacked and each element is added.
 >>> multiple_elements_tuple = list(("Parrot", "Bird", 334782))
 ["Parrot", "Bird", 334782]
 
-#the set is unpacked and each element is added
+# The set is unpacked and each element is added.
 >>> multiple_elements_set = list({2, 3, 5, 7, 11})
 [2,3,5,7,11]
 ```
@@ -70,7 +60,7 @@ Results when using a list constructor with a string or a dict may be surprising:
 
 ````python
 
-#string elements (Unicode code points) are iterated through and added *individually*
+# String elements (Unicode code points) are iterated through and added *individually*.
 >>> multiple_elements_string = list("Timbuktu")
 ['T', 'i', 'm', 'b', 'u', 'k', 't', 'u']
 
@@ -106,7 +96,7 @@ Items inside lists (_like the sequence types `string` and `tuple`_), can be acce
 
 >>> breakfast_foods = ["Oatmeal", "Fruit Salad", "Eggs", "Toast"]
 
-#Oatmeal is at index 0 or index -4
+# Oatmeal is at index 0 or index -4.
 >>> first_breakfast_food = breakfast_foods[0]
 'Oatmeal'
 
@@ -158,12 +148,12 @@ Blue
 Lists can be combined via various techniques:
 
 ```python
-# using the plus + operator unpacks each list and creates a new list, but it is not efficent.
+# Using the plus + operator unpacks each list and creates a new list, but it is not efficent.
 >>> new_via_concatenate = ["George", 5] + ["cat", "Tabby"]
 ["George", 5, "cat", "Tabby"]
 
 
-#likewise, using the multiplication operator * is the equivalent of using + n times
+# Likewise, using the multiplication operator * is the equivalent of using + n times.
 >>> first_group = ["cat", "dog", "elephant"]
 
 >>> multiplied_group = first_group * 3
