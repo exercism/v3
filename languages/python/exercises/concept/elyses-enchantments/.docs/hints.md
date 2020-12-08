@@ -32,7 +32,7 @@
 
 - Sequence types such as `list` already support a few [common operations](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
 - For the last part of the exercise, think about reusing the code from the functions that you just implemented.
-- These function should [return](https://www.w3schools.com/python/ref_keyword_return.asp) a `list`.
+- These functions should [return](https://www.w3schools.com/python/ref_keyword_return.asp) a `list`.
 
 ## 7. Iterating Over List Items
 
