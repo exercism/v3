@@ -2247,6 +2247,46 @@
               "name": "atoms"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/captains-log",
+          "slug": "captains-log",
+          "concepts": [
+            {
+              "url": null,
+              "name": "erlang-libraries"
+            },
+            {
+              "url": null,
+              "name": "randomness"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
+              "name": "enum"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/range.md",
+              "name": "ranges"
+            },
+            {
+              "url": null,
+              "name": "floating-point-numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": null,
+              "name": "charlists"
+            },
+            {
+              "url": null,
+              "name": "atoms"
+            }
+          ]
         }
       ]
     }
@@ -3775,36 +3815,24 @@
           ],
           "prerequisites": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
-              "name": "classes"
+              "url": null,
+              "name": "classes-I"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
               "name": "conditionals"
             },
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/enumeration.md",
-              "name": "enumeration"
-            },
-            {
               "url": null,
-              "name": "iteration"
+              "name": "comprehensions"
             },
             {
-              "url": null,
-              "name": "list-comprehensions"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/methods.md",
-              "name": "methods"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
             },
             {
               "url": null,
               "name": "sequences"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
-              "name": "strings"
             },
             {
               "url": null,
@@ -3872,10 +3900,6 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "basics"
-            },
-            {
-              "url": null,
               "name": "bools"
             },
             {
@@ -3883,8 +3907,8 @@
               "name": "conditionals"
             },
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/default_arguments.md",
-              "name": "default-arguments"
+              "url": null,
+              "name": "functions-I"
             },
             {
               "url": null,
