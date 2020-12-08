@@ -48,6 +48,6 @@
 
 ## 9. Modifying Values in Lists
 
-- `Lists` in python are mutable, this means that once a `list` is created, you can modify, delete or add any element as you wish. 
+- `Lists` in python are mutable, this means that once a `list` is created, you can modify, delete or add any element as you wish.
 - Python provides a wide range of [ways to modify `lists`](https://realpython.com/python-lists-tuples/#lists-are-mutable).
 - This function should not [return](https://www.w3schools.com/python/ref_keyword_return.asp) anything so you should end it with the statement `return` alone.

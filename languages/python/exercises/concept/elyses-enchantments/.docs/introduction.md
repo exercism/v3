@@ -172,3 +172,4 @@ Lists can be combined via various techniques:
 [dynamic array]: https://en.wikipedia.org/wiki/Dynamic_array
 [arraylist]: https://beginnersbook.com/2013/12/java-arraylist/
 [doubly linked list]: https://en.wikipedia.org/wiki/Doubly_linked_list
+```
