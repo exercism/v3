@@ -121,8 +121,7 @@ Items inside lists (_like the sequence types `string` and `tuple`_), can be acce
 ```
 
 You can access a portion of the list with the slice notation `[start:stop]`. The slice of a list from start to stop is defined as the sequence of items with index `i` such that `start <= i < stop`.
-You can also get a slice of a list from `start` to `stop` with step `step` with the notation `[start:stop:step]`.
-A slice of a list is a copy of a portion of the original list so you do not modify the original but you get a new list with the elements you asked for.
+You can also slice a list using a `step` parameter with the notation `[start:stop:step]`.  Using a `step` will "skip over" or filter the list elements (_for example, a `step` of 2 will be every other element in the range_).
 
 ```python
 
