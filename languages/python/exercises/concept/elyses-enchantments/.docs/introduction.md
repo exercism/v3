@@ -104,20 +104,21 @@ Items inside lists (_like the sequence types `string` and `tuple`_), can be acce
 'Oatmeal'
 ```
 
-You can access a portion of the list with the slice notation `[start:stop]`. The slice of a list from start to stop is defined as the sequence of items with index `i` such that `start <= i < stop`.
-You can also get a slice of a list from `start` to `stop` with step `step` with the notation `[start:stop:step]`.
-A slice of a list is a copy of a portion of the original list so you do not modify the original but you get a new list with the elements you asked for.
+You can access a portion of a list with _slice notation_ (`[start:stop]`). A _slice_  is defined as the sequence of items in a list at position `index` such that `start <=  index < stop`.  
+
+Slicing does not modify the original `list`.  Instead, you get a new list with copies of all the elements you asked for.
+You can also slice a list using a `step` parameter with the notation `[start:stop:step]`.  Using a `step` will "skip over" or filter the list elements (_for example, a `step` of 2 will be every other element in the range_).
 
 ```python
-
 >>> colors = ["Red", "Purple", "Green", "Yellow", "Orange", "Pink", "Blue", "Grey"]
-
+# If there is no step parameter, the step is assumed to be 1.
 >>> middle_colors = colors[2:6]
 ["Green", "Yellow", "Orange", "Pink"]
-
->>> primary_colors = colors[0:len(colors):3]
+# If the stop parameter is omitted, the slice will stop at the end of the list.
+>>> primary_colors = colors[0::3]
 ["Red", "Yellow", "Blue"]
 ```
+
 
 ## Working with lists
 
