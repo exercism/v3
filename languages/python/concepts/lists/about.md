@@ -129,7 +129,7 @@ You can also slice a list using a `step` parameter with the notation `[start:sto
 
 >>> colors = ["Red", "Purple", "Green", "Yellow", "Orange", "Pink", "Blue", "Grey"]
 
-# If there is no step parameter, the step is assumed to be 1
+# If there is no step parameter, the step is assumed to be 1.
 >>> middle_colors = colors[2:6]
 ["Green", "Yellow", "Orange", "Pink"]
 
