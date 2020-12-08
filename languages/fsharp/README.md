@@ -46,7 +46,7 @@ See the [migrating your config.json files document](../../docs/maintainers/migra
 
 ### Test Runner
 
-- [ ] Build Test Runner
+- [x] Build Test Runner
 - [ ] Deploy Test Runner
 
 ## Extra magic
