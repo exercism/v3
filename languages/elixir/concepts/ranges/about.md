@@ -1,7 +1,7 @@
 [Ranges][range] represent a sequence of one or many consecutive integers. They:
 
 - Are created using the [`..` operator][range-operator] and can be both ascending or descending.
-- Are inclusive of the last value.
+- Are inclusive of the first and last values.
 - Implement the [_Enumerable protocol_][enumerable].
 - Are represented internally as a struct, but can be pattern matched using `..`.
 - Can be used with integers written in the binary, octal, hexadecimal, and codepoint notation.

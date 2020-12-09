@@ -8,9 +8,17 @@ Each square of the chessboard is identified by a letter-number pair. The vertica
 
 Implement the `rank_range/0` function. It should return a range of integers, from 1 to 8.
 
+```elixir
+Chessboard.rank_range()
+```
+
 ## 2. Define the file range
 
 Implement the `file_range/0` function. It should return a range of integers, from the codepoint of the uppercase letter A, to the codepoint of the uppercase letter H.
+
+```elixir
+Chessboard.file_range()
+```
 
 ## 3. Transform the rank range into a list of ranks
 
