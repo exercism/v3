@@ -25,12 +25,10 @@ This concept exercise should convey a basic understanding of how to define and u
 
 ## Concepts
 
-- `structs`
-- `classes`
-- `initializers`
+- `structs-and-classes`
 - `methods`
 - `self`
-- `stored-properties`
+- `value-and-reference-types`
 
 ## Prerequisites
 

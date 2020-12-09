@@ -5,6 +5,26 @@ Conses are created with the [`cons`][hyper-cons] function which takes two object
 
 The parts of a cons may be accessed with the functions [`car`][hyper-car] and [`cdr`][hyper-cdr].
 
+## Reference
+
+```lisp
+;; Testing for atoms
+(atom 'foo)       ; => T
+(atom '(bar baz)) ; => NIL
+
+;; Testing for cons
+(consp 'foo)       ; => NIL
+(consp '(bar baz)) ; => T
+
+;; First item of a cons
+(car '(one two three))   ; => ONE
+(first '(one two three)) ; => ONE
+
+;; Rest of a cons
+(cdr '(one two three))  ; => (TWO THREE)
+(rest '(one two three)) ; => (TWO THREE)
+```
+
 [hyper-conses]: http://l1sp.org/cl/14
 [hyper-cons]: http://l1sp.org/cl/cons
 [hyper-car]: http://l1sp.org/cl/car

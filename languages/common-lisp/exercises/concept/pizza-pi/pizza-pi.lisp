@@ -1,4 +1,4 @@
-(defpackage pizza-pi
+(defpackage :pizza-pi
   (:use :cl)
   (:export :dough-calculator :pizzas-per-cube
            :size-from-sauce :fair-share-p))

@@ -5,7 +5,7 @@
 
 ;; Defines the testing package with symbols from SLUG and FiveAM in scope
 ;; The `run-tests` function is exported for use by both the user and test-runner
-(defpackage SLUG-test
+(defpackage :SLUG-test
   (:use :cl :fiveam :SLUG)
   (:export :run-tests))
 

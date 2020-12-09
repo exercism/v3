@@ -1,3 +1,5 @@
+## arrays
+
 Arrays are one of Swift's three primary collection types. Arrays are ordered lists of elements where the elements can be of any type, however, all elements of any given list must have the same type.
 
 Arrays literals are written as a series of elements, each separated by commas, enclosed in square brackets. Empty arrays are just a pair of square brackets. Type names for arrays are written in one of two ways: `Array<T>` or `[T]` where `T` is the type of the elements in the array. When creating an empty array, the type must be specified.

@@ -1,198 +1,183 @@
-Python allows you to manipulate `list` in a lot of ways. A `list` is simple a collection of objects. They are mutable, ordered and indexed. Let's look at the methods that are available to manipulate a `list` object.
+## list-methods
+
+Python allows you to manipulate a [`list`][list] in a lot of ways. A `list` is simple a collection of objects of [type `List`][list std type]. They are mutable, ordered and indexed. Let's look at the methods that are available to manipulate a `list` object.
 
 When you manipulate a list with a list-method, you are changing the properties of the list you pass. That is, **you will alter the list** object that is being used with the list-method. If you do not want to change the original list, you need to copy the list and then work on the copied list.
 
-To begin, you first need a `list` object to use the functions.
+To begin, you first need a `list` object to apply the methods to.
 
 ```python
-ex_list = list() # (or)  ex_list = []
-print(ex_list)
-#=> []
+>>> empty_list = list() # (or) empty_list = []
+>>> empty_list
+[]
 ```
 
-## Add an Item to the List
+### Adding an Item to a List
 
-Topics to discuss:
-
-1. `append`
-2. `insert`
-3. `extend`
-
-If you want to add an item to an existing list, you use the list-method `append()` for it. As the name represent, it appends the item to the **end** of the list.
+If you want to add an item after all the items of an existing list, you use the list-method `append()` for it. As the name indicates, `append()` attaches the item at the **end** of the list.
 
 ```python
-ex_list = [1, 2, 3]
-ex_list.append(9)
-print(ex_list)
-#=> [1, 2, 3, 9]
+>>> numbers = [1, 2, 3]
+>>> numbers.append(9)
+>>> numbers
+[1, 2, 3, 9]
 ```
 
-There is another way to add an item to the list. `insert()` method also gives you the ability to add the item to a particular index in the list.
+Rather than appending, the `insert()` method gives you the ability to add the item to a _specific index_ in the list.
 
-`insert` takes 2 parameters.
+`.insert()` takes 2 parameters:
 
-1. index at which you want to add the item
-2. item
+1. the index of the item before which you want the new item to appear
+2. the item to be inserted
 
-Note: if the index is 0, the item will be added to the first of the list. if the index is more than or equal to the length of the list, then item will be added to the last of the list (like the append function)
+Note: If the given index is 0, the item will be added to the start of the list. If the supplied index is greater than the last index of the list, the item will be added in the last position, this is the equivalent of using the `append()` method.
 
 ```python
-ex_list = [1, 2, 3]
-ex_list.insert(0, -2)
-print(ex_list)
-#=> [-2, 1, 2, 3]
-ex_list.insert(1, 0)
-print(ex_list)
-#=> [-2, 0, 1, 2, 3]
+>>> numbers = [1, 2, 3]
+>>> numbers.insert(0, -2)
+>>> numbers
+[-2, 1, 2, 3]
+>>> numbers.insert(1, 0)
+>>> numbers
+[-2, 0, 1, 2, 3]
 ```
 
-If you have another list object who's content you need to be copied to your list, then you can use the `extend` function.
-The extend function takes an iterable as its parameter.
+If you have an iterable that you would like to _combine_ with your current list (concatenating the two), you can use the `list.extend()` method. `extend()` will unpack the supplied iterable and add its elements, in the same order, to your list (_using `.append()` in this circumstance would add the entire iterable as a **single item**._).
 
 ```python
-ex_list = [1, 2, 3]
-extend_list = [5, 6, 7]
+>>> numbers = [1, 2, 3]
+>>> other_numbers = [5, 6, 7]
 
-ex_list.extend(extend_list)
-print(ex_list)
-#=> [1, 2, 3, 5, 6, 7]
+>>> numbers.extend(other_numbers)
+>>> numbers
+[1, 2, 3, 5, 6, 7]
 
-ex_list.extend([8, 9])
-print(ex_list)
-#=> [1, 2, 3, 5, 6, 7, 8, 9]
+>>> numbers.extend([8, 9])
+>>> numbers
+[1, 2, 3, 5, 6, 7, 8, 9]
 ```
 
-# Removing Items from the list
+### Removing Items
 
-Topics to discuss:
-
-1. `remove`
-2. `pop`
-3. `clear`
-
-If you want to remove an item from a list, you can use the `remove` function which takes one parameter. Feed the function with the item you want to remove from the list. the `remove` function will throw a `ValueError` if the item does not exist in the loop.
+If you want to delete an item from a list, you can use the `list.remove()` method, passing the item to be removed as an argument. `remove()` will throw a `ValueError` if the item is not present in the list.
 
 ```python
-ex_list = [1, 2, 3]
-ex_list.remove(2)
-print(ex_list)
-#=> [1, 3]
-ex_list.remove(0)
-#=> ValueError: list.remove(x): x not in list
+>>> numbers = [1, 2, 3]
+>>> numbers.remove(2)
+>>> numbers
+[1, 3]
+>>> numbers.remove(0)
+ValueError: list.remove(x): x not in list
 ```
 
-There is another way to remove an item from the list. If you know the index of the item which you want to remove, you can use `pop` function. Pop takes 1 parameter, the index of the item you need to remove, and return it to you. If you specify an index more than the length of the list, you will get an `IndexError`. If you dont specify an index, the function will remove the last element and return it to you.
+Alternatively, using the `list.pop()` method will both remove **and** `return` an element for use. `pop()` takes one optional parameter: the index of the item you need to remove and receive. If you specify an index number higher than the length of the list, you will get an `IndexError`. If the optional index argument is not specified, the last element of the list will be removed and returned to you.
 
 ```python
-ex_list = [1, 2, 3]
-ex_list.pop(0)
-#=> 1
-print(ex_list)
-#=> [2, 3]
-ex_list.pop()
-#=> [2]
+>>> numbers = [1, 2, 3]
+>>> numbers.pop(0)
+1
+>>> numbers
+[2, 3]
+>>> numbers.pop()
+3
+>>> numbers
+[2]
 ```
 
-If you want to clear the list (ie: all the items in the list), then you can use the `clear` function. It does not take any parameter as input but will remove all the elements in the list.
+If you want to remove all the items from a `list` you can use the `list.clear()` method. It does not take any parameters.
 
 ```python
-ex_list = [1, 2, 3]
-ex_list.clear()
-print(ex_list)
-#=> []
+>>> numbers = [1, 2, 3]
+>>> numbers.clear()
+>>> numbers
+[]
 ```
 
-## Reverse the list
+### Reversing and reordering
 
-The items in the list can be reordered in the reverse order with the `reverse` function.
+You can reverse the order of a list with the `list.reverse()` method.
 
 ```python
-ex_list = [1, 2, 3]
-ex_list.reverse()
-print(ex_list)
-#=> [3, 2, 1]
+>>> numbers = [1, 2, 3]
+>>> numbers.reverse()
+>>> numbers
+[3, 2, 1]
 ```
 
-## Sort the list
+A list can be re-ordered _**in place**_ with the help of the `list.sort()` method. Internally, Python uses [`Timsort`][timsort] to arrange the list. The default order is _ascending_. The Python docs offer some [additional tips and techniques for sorting][sorting how to] lists effectively.
 
-When you have an random ordered list of items, you can sort them with the help of `sort` function. If you have items that are alphanumerical, you dont have to provide any inputs to sort.
-
-ex: you have list of numbers, or you have a list of names and you want to sort them
+If you have a list of names and you want to sort them:
 
 ```python
-ex_list = ["Tony", "Natasha", "Thor", "Bruce"]
-ex_list.sort()
-print(ex_list)
-#=> ["Bruce", "Natasha", "Thor", "Tony"]
+>>> names = ["Tony", "Natasha", "Thor", "Bruce"]
+>>> names.sort()
+>>> names
+["Bruce", "Natasha", "Thor", "Tony"]
 ```
 
-If you want the sort to be in descending order, you can use the reverse parameter.
+If you want the sort to be in descending order, you can pass the reverse argument:
 
 ```python
-ex_list = ["Tony", "Natasha", "Thor", "Bruce"]
-ex_list.sort(reverse=True)
-print(ex_list)
-#=> ["Tony", "Thor", "Natasha", "Bruce"]
+>>> names = ["Tony", "Natasha", "Thor", "Bruce"]
+>>> names.sort(reverse=True)
+>>> names
+["Tony", "Thor", "Natasha", "Bruce"]
 ```
 
-If you have a list of items that are complex, you can use the key parameter in the sort. Lets see more about this later.
+For cases where changing your original list is undesirable, the built-in [`sorted()`][sorted] can be used to return a new, sorted copy of your original list.
 
-Internally, python uses `Timsort` to sort the list.
+# Occurrences of an item in a list
 
-## Occurances of an item in the list.
-
-You can find the occurances of an element in the list with the help of the `count` function. It takes one parameter which will be the item, for which you need to find the number of occurances.
+You can find the occurrences of an element in a list with the help of `list.count()`. It takes the item you need to tally as its argument and returns the total number of times it appears on the list.
 
 ```python
-ex_list = [1, 4, 7, 8, 2, 9, 2, 1, 1, 0, 4, 3]
-ex_list.count(1)
-#=> 3
+>>> items = [1, 4, 7, 8, 2, 9, 2, 1, 1, 0, 4, 3]
+>>> items.count(1)
+3
 ```
 
-## Find the Index of the Item.
+# Finding the index of items
 
-If you want to find the index of an item you want in the list, you can use the `index` function. If you have multiple occurances of the same item, it will provide you the index of the first occurance. If you do not have any occurances of the item, then you will have a `ValueError` raised.
+The `list.index()` method will give you the index number of the _first occurrence_ of an item you pass in. If there are no occurrences of the item, a `ValueError` is raised. If you do not need the exact position of an item and are only checking that it is present inside the list, the built-in `in` operator is more efficient.
 
-Index starts with 0.
+Indexing is zero-based, meaning the position of the first item is `0`.
 
 ```python
-ex_list = [1, 4, 7, 8, 2, 9, 2, 1, 1, 0, 4, 3]
-ex_list.index(4)
-#=> 1
-ex_list.index(10)
-#=>ValueError: 10 is not in list
+>>> items = [7, 4, 1, 0, 2, 5]
+>>> items.index(4)
+1
+>>> items.index(10)
+ValueError: 10 is not in list
 ```
 
-You can also provide a start (and an end) to the index from where you need the search has to happen for the item.
+You can provide start and end indices to search within a specific section of the list.
 
 ```python
-ex_list = [1, 4, 7, 8, 2, 9, 2, 1, 1, 0, 4, 3]
-ex_list.index(4, 2, 12)
-#=> 10
+>>> names = ["Tina", "Leo", "Thomas", "Tina", "Emily", "Justin"]
+>>> names.index("Tina")
+0
+>>> names.index("Tina", 2, 5)
+3
 ```
 
-## Copy a List.
+# Making Copies
 
-Lists are a collection of items which are referenced to an index, Hence if you do an assignment of a list object to another variable. Any change you make to the assigned variable will also have an impact on the original variable.
+Remember that variables in Python are labels that point to underlying objects.
+
+Lists are _collections_ of object references ordered by an index. If you assign a list object to a new variable name, any change you make to the list using the new variable name will also _impact_ the original variable. Both variable names point to the **same list object** which is modified.
 
 ```python
-ex_list = ["Tony", "Natasha", "Thor", "Bruce"]
-new_list = ex_list
-new_list.append("Clarke")
-print(new_list)
-#=> ["Tony", "Natasha", "Thor", "Bruce", "Clarke"]
-print(ex_list)
-#=> ["Tony", "Natasha", "Thor", "Bruce", "Clarke"]
+>>> actual_names = ["Tony", "Natasha", "Thor", "Bruce"]
+>>> same_list = actual_names
+>>> same_list.append("Clarke")
+>>> same_list
+["Tony", "Natasha", "Thor", "Bruce", "Clarke"]
+>>> actual_names
+["Tony", "Natasha", "Thor", "Bruce", "Clarke"]
 ```
 
-You need to use the `copy` function in order to do a `shallow_copy` of the list. ( More about `shallow_copy` and `deep_copy` later.)
-
-```python
-ex_list = ["Tony", "Natasha", "Thor", "Bruce"]
-new_list = ex_list.copy()
-new_list.append("Clarke")
-print(new_list)
-#=> ["Tony", "Natasha", "Thor", "Bruce", "Clarke"]
-print(ex_list)
-#=> ["Tony", "Natasha", "Thor", "Bruce"]
-```
+[list]: https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+[list std type]: https://docs.python.org/3.9/library/stdtypes.html#list
+[timsort]: https://en.wikipedia.org/wiki/Timsort
+[sorted]: https://docs.python.org/3/library/functions.html#sorted
+[sorting how to]: https://docs.python.org/3/howto/sorting.html

@@ -24,6 +24,5 @@
 [repeat-loops]: https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html#ID126
 [control-transfer]: https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html#ID135
 [labeled-statements]: https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html#ID141
-[basics-concept]: https://../../basics/.docs/after.md
 [tuples]: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID329
 [array-docs]: https://developer.apple.com/documentation/swift/array
