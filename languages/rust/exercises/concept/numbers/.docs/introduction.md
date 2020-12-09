@@ -1,5 +1,7 @@
 ## numbers
+
 ## integers
+
 ## floating-point-numbers
 
 There are two different types of numbers in Rust:
