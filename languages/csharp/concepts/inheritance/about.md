@@ -74,6 +74,7 @@ class Car : Vehicle
    public Car()
    {
    }
+
    public override string GetDescription()
    {
       return "Runabout";
@@ -85,6 +86,7 @@ class Rig : Vehicle
    public Rig()
    {
    }
+
    public override string GetDescription()
    {
       return "Big Rig";
