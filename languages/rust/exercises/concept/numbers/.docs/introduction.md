@@ -1,6 +1,6 @@
 ## numbers
 
-There are two different types of numbers in Rust.
+There are two different categories of numbers in Rust.
 
 ## integers
 
