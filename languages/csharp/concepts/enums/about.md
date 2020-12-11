@@ -23,9 +23,9 @@ For someone reading the code, the second version (with enum) will be easier to c
 
 ## Numeric type Enums
 
-The default numeric type of the values is `int`, it can be changed by explicitly specifying any other [integral numeric][integral numeric] type.
+While the default numeric type of the values is `int`, it can be changed by explicitly specifying any other [integral numeric][integral numeric] type.
 
-An enum can use a `byte` numeric type:
+The following enum use the `byte` numeric type for its values:
 
 ```csharp
 enum Priority : byte
