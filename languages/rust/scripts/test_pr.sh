@@ -39,7 +39,7 @@ function test_concept() {
     echo "testing $concept in #$num"
 
     local dir
-    dir="$(mktemp --directory)"
+    dir="$(mktemp -d)"
     #shellcheck disable=SC2064
     trap "rm -rf $dir" RETURN
 
