@@ -1,3 +1,7 @@
+<!-- TODO: Link to methods & function concepts -->
+
+Julia supports optional arguments as a way to define multiple methods of the same function at once.
+
 ```julia
 julia> f(a, b=1) = a + b
 f (generic function with 2 methods)

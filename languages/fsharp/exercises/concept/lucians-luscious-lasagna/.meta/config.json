@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["Lasagna.fs"],
-    "test_files": ["LasagnaTests.fs"]
+    "solution_files": ["LuciansLusciousLasagna.fs"],
+    "test_files": ["LuciansLusciousLasagnaTests.fs"]
   }
 }

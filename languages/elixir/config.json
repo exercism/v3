@@ -220,6 +220,20 @@
         "uuid": "83c31f5f-fc94-4315-9053-df5a5f5d5fb7",
         "concepts": ["io"],
         "prerequisites": ["strings", "maps", "atoms"]
+      },
+      {
+        "slug": "captains-log",
+        "name": "Captain's Log",
+        "uuid": "d805ae23-b5c9-494f-ab13-78a0e836391c",
+        "concepts": ["erlang-libraries", "randomness"],
+        "prerequisites": [
+          "enum",
+          "ranges",
+          "floating-point-numbers",
+          "strings",
+          "charlists",
+          "atoms"
+        ]
       }
     ],
     "practice": [
@@ -891,6 +905,12 @@
   },
   "concepts": [
     {
+      "uuid": "da243817-5c15-461c-8305-dba188b6a527",
+      "slug": "file",
+      "name": "File",
+      "blurb": "TODO: add blurb for file concept"
+    },
+    {
       "uuid": "e95023cf-6928-4ccc-ae09-d3cb93d96d0e",
       "slug": "access-behaviour",
       "name": "Access Behaviour",
@@ -975,10 +995,22 @@
       "blurb": "TODO: add blurb for default-arguments concept"
     },
     {
+      "uuid": "c809ee97-03d1-42a9-ae72-af1c4042b974",
+      "slug": "dynamic-dispatch",
+      "name": "Dynamic Dispatch",
+      "blurb": "TODO: add blurb for dynamic-dispatch concept"
+    },
+    {
       "uuid": "34f0a21f-1ec5-4042-9efe-0c3ae7e35fbb",
       "slug": "enum",
       "name": "Enum",
       "blurb": "TODO: add blurb for enum concept"
+    },
+    {
+      "uuid": "4d8c1cac-ab6b-4d7a-b0c9-faef14b523a8",
+      "slug": "erlang-libraries",
+      "name": "Erlang Libraries",
+      "blurb": "TODO: add blurb for erlang-libraries concept"
     },
     {
       "uuid": "3f8ca849-0546-4fd0-b55d-a617a9e119ee",
@@ -1087,6 +1119,18 @@
       "slug": "processes",
       "name": "Processes",
       "blurb": "TODO: add blurb for processes concept"
+    },
+    {
+      "uuid": "39a458dd-287f-482c-8fee-111beb4945e4",
+      "slug": "protocols",
+      "name": "Protocols",
+      "blurb": "TODO: add blurb for protocols concept"
+    },
+    {
+      "uuid": "e48688fd-1216-4b3e-ba04-1d69e4d47000",
+      "slug": "randomness",
+      "name": "Randomness",
+      "blurb": "TODO: add blurb for randomness concept"
     },
     {
       "uuid": "b2165ae4-a742-4230-8297-11e65882ce2c",
