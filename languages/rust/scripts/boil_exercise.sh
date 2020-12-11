@@ -1,10 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env sh
 # This script boilerplates a concept exercise for the Rust track.
 
 if [ -z "$1" ]; then
-    echo >&2 "Usage: sh boil_exercise.sh <slug-kebab>"
+    echo >&2 "Usage: ./languages/rust/scripts/boil_exercise.sh <slug-kebab>"
     exit 1
 fi
+cd languages/rust/exercises/concept/ || exit 1
 
 slug=$1
 # Automatically convert to snake_case
@@ -30,4 +31,3 @@ mkdir .docs
 touch ./.docs/instructions.md
 touch ./.docs/introduction.md
 touch ./.docs/hints.md
-touch ./.docs/after.md
