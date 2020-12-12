@@ -6,3 +6,4 @@ The goal of this exercise is to teach the student how to use arithmetic operator
 
 - use `+`, `-`, `*`, `/` to add, subtract, multiply, divide numbers(`int` and `float`).
 - use `int()` to cast `float` to `int`.
+- use `%` to calculate remainers.

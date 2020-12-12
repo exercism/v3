@@ -68,5 +68,24 @@ class TestExchange(unittest.TestCase):
         for input, output in zip(input_data, output_data):
             with self.subTest(input=input, output=output):
                 self.assertEqual(exchangeable_value(input[0], input[1], input[2], input[3]), output)
+        
+    # Problem 6
+    def test_unexchangeable_value(self):
+
+        #exchangeable : 80, actual_rate : 1.3199999999999998, unexchangeable : 16.40151515151517
+        #input : budget, exchange_rate, spread, denomination
+        input_data = [
+
+            (100000, 10.61, 10, 1),
+            (1500, 0.84, 25, 40),
+            (425.33, 0.0009, 30, 700),
+            (12000, 0.0096, 10, 50)
+        ]
+
+        output_data = [0, 28, 229, 13]
+
+        for input, output in zip(input_data, output_data):
+            with self.subTest(input=input, output=output):
+                self.assertEqual(unexchangeable_value(input[0], input[1], input[2], input[3]), output)
 
     
