@@ -20,9 +20,11 @@ class TestExchange(unittest.TestCase):
     def test_get_change(self):
         input_data = [
             # input : budget, exchanging_value
-            (463000, 5000)
+            (463000, 5000),
+            (1250,120),
+            (15000,1380)
         ]
-        output_data = [458000]
+        output_data = [458000, 1130, 13620]
         for input, output in zip(input_data, output_data):
             with self.subTest(input=input, output=output):
                 self.assertEqual(get_change(input[0], input[1]), output)
@@ -32,8 +34,10 @@ class TestExchange(unittest.TestCase):
         input_data = [
             # input : denomination_value, number_of_bills
             (10000, 128),
+            (50, 360),
+            (200, 200)
         ]
-        output_data = [1280000]
+        output_data = [1280000, 18000, 40000]
         for input, output in zip(input_data, output_data):
             with self.subTest(input=input, output=output):
                 self.assertEqual(get_value(input[0], input[1]), output)
