@@ -3975,6 +3975,22 @@
               "name": "strings"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/currency-exchange",
+          "slug": "currency-exchange",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
         }
       ]
     }
