@@ -108,6 +108,13 @@
         "uuid": "09c322bc-5c04-480b-8441-fd9ef5c7a3b4",
         "concepts": ["str-methods"],
         "prerequisites": ["basics", "strings"]
+      },
+      {
+        "slug": "currency-exchange",
+        "name": "Currency Exchange",
+        "uuid": "1335ca33-3af0-4720-bcf2-bfa68ffc6862",
+        "concepts": ["numbers"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": [
