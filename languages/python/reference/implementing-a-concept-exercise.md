@@ -67,7 +67,7 @@ How to create the files common to all tracks is described in the [how to impleme
 As a reminder, code elements (functions, keywords, operators) should be wrapped in backticks:
 
 ```python
-A `set` is an unordered collection of distinct hashable objects.  To add something to a `set`, use `set.add()`
+A `set` is an unordered collection of distinct hashable objects. To add something to a `set`, use `set.add()`
 ```
 
 Which will render:
