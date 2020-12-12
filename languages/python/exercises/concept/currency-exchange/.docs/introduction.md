@@ -10,7 +10,7 @@ There are three different kinds of built-in numbers in Python : `ints`, `floats`
 
 `floats` are numbers containing a decimal point. e.g. `0.0`,`3.14`,`-9.01`. Floats in Python are of [_arbitrary precision_][arbitrary-precision].
 
-You can see more detail the following resources:
+You can see more details in the following resources:
 
 - [Python numeric type documentation][numeric-type-docs]
 - [Documentation for `int()` built in][`int()` built in]
