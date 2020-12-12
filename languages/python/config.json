@@ -117,7 +117,7 @@
         "slug": "currency-exchange",
         "name": "Currency Exchange",
         "uuid": "1335ca33-3af0-4720-bcf2-bfa68ffc6862",
-        "concepts": ["numbers-I", "arithmetic"],
+        "concepts": ["numbers", "arithmetic"],
         "prerequisites": ["basics"]
       }
     ],
