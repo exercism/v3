@@ -2,7 +2,7 @@ import unittest
 from numbers import *
 
 
-class TestExchange(unittest.TestCase):
+class TestNumbers(unittest.TestCase):
     
     # Problem 1
     def test_estimate_value(self):
