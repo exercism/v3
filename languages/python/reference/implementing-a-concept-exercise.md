@@ -60,7 +60,6 @@ These are files specific to the Python track, and can be added in any order:
 - `.meta/example.py`
   An idiomatic implementation that passes all the provided tests. This solution file should only use **syntax & concepts introduced in the concept exercise itself, or one of its prerequisites.**. This means avoiding the use of `classes`, `comprehensions`, `generators`, `slice assignment`, `regex`, `filter/map/reduce`, standard library modules (_like `datetime`_), or 3rd-party libraries unless the exercise has introduced these concepts or they appear in the exercise's prerequisite tree. Please follow the [PEP8][pep8] formatting guidelines. Additionally, we'd like you to avoid any single-letter or cryptic variable names.
 
-
 ## Step 2: Add exercise documentation files
 
 How to create the files common to all tracks is described in the [how to implement a concept exercise document][how-to-implement-a-concept-exercise]. All of these files are written in [Markdown][commonmark], and you can find the [Exercism Formatting and Style Guide][style-guide] here. Please pay close attention to the [auto-formatting][auto-formatting] section, to avoid CI test failures.
