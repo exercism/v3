@@ -48,10 +48,10 @@
       {
         "slug": "log-levels",
         "name": "Log Levels",
-        "uuid": null,
+        "uuid": "083f29eb-734f-4d4a-9f27-3e8ceedc29b1",
         "concepts": ["enums"],
         "prerequisites": [
-          "classes-I",
+          "classes",
           "conditionals",
           "comprehensions",
           "loops",
@@ -64,7 +64,7 @@
       {
         "slug": "elyses-enchantments",
         "name": "Elyse's Enchantments",
-        "uuid": null,
+        "uuid": "d76958ce-3a5b-4e4c-9388-b109f67cf23a",
         "concepts": ["lists"],
         "prerequisites": ["comparisons", "conditionals", "strings"]
       },
@@ -78,12 +78,12 @@
       {
         "slug": "restaurant-rozalynn",
         "name": "Restaurant Rozalynn",
-        "uuid": null,
+        "uuid": "72c9aa99-20be-4e96-8ade-56c26d598498",
         "concepts": ["none"],
         "prerequisites": [
           "bools",
           "conditionals",
-          "functions-I",
+          "functions",
           "dict-methods",
           "list-methods",
           "loops"
@@ -92,7 +92,7 @@
       {
         "slug": "making-the-grade",
         "name": "Making the Grade",
-        "uuid": null,
+        "uuid": "f6a8d4bd-4ead-438f-b44f-d3578be1702f",
         "concepts": ["loops"],
         "prerequisites": [
           "basics",
@@ -106,7 +106,7 @@
         "slug": "little-sisters-essay",
         "name": "Little Sister's Essay",
         "uuid": "09c322bc-5c04-480b-8441-fd9ef5c7a3b4",
-        "concepts": ["str-methods"],
+        "concepts": ["string-methods"],
         "prerequisites": ["basics", "strings"]
       },
       {
