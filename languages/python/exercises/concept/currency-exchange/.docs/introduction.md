@@ -23,7 +23,7 @@ Python fully supports arithmetic between `ints` and `floats`. It will convert na
 Python considers `ints` narrower than `floats`. So, using a float in an expression ensures the result will be a float too. However, when doing division, the result will always be a float, even if only integers are used.
 
 ```python
-#the int is widened to a float here, and a float is returned
+# The int is widened to a float here, and a float type is returned.
 >>> 3 + 4.0
 7.0
 >>> 3 * 4.0
