@@ -40,7 +40,7 @@ Python considers `ints` narrower than `floats`. So, using a float in an expressi
 3
 >>> 2 % 4
 2
->>> 12.75 & 3
+>>> 12.75 % 3
 0.75
 ```
 
