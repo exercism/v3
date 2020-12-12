@@ -35,7 +35,7 @@ Python considers `ints` narrower than `floats`. So, using a float in an expressi
 3.0
 >>> 7 / 4
 1.75
-#calculating remainders
+# Calculating remainders.
 >>> 7 % 4
 3
 >>> 2 % 4
