@@ -77,3 +77,23 @@ This function should return the maximum value you can get considering the `budge
 >>> exchangeable_value(127.25, 1.20, 10, 5)
 95
 ```
+
+## 6. Calculate unexchangeable value
+
+Create the `unexchangeable_value()` function, with parameter `budget`, `exchange_rate`, `spread`, & `denomination`.
+
+1. `budget` : amount of your money you are planning to exchange.
+2. `exchange_rate` : unit value of the foreign currency.
+3. `spread` : percentage taken as exchange fee.
+4. `denomination` : the value of a single bill.
+
+This function should return the unexchangeable value considering the `budget`, `exchange_rate`, `spread`, & `denomination`.
+
+**Note:** Returned value should be `int` type.
+
+```python
+>>> unexchangeable_value(127.25, 1.20, 10, 20)
+16
+>>> unexchangeable_value(127.25, 1.20, 10, 5)
+1
+```
