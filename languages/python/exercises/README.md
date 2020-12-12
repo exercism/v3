@@ -67,7 +67,7 @@ comparisons --> lists & loops
 comparisons --> rich-comparisons & conditionals
 comprehensions --> enums & other-comprehensions
 conditionals --> loops & lists & none & sets & tuples & enums
-Class-inheritance --> Class-interfaces
+inheritance --> interfaces
 dicts --> dict-methods & other-comprehensions
 dict-methods --> none
 functions --> higher-order-functions & none
