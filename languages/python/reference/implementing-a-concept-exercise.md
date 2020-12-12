@@ -58,7 +58,7 @@ These are files specific to the Python track, and can be added in any order:
   The test suite a submitted solution will be tested against. Tests should be written using [`unittest.TestCase`][unittest] ([example test file][example-testfile]). We do use PyTest as our test runner, but please check with a maintainer before using any PyTest-specific methods.
 
 - `.meta/example.py`
-  An idiomatic implementation that passes all the provided tests. This solution file should only use **syntax & concepts introduced in the concept exercise itself, or one of its prerequisites.** Please follow the [PEP8][pep8] formatting guidelines. Additionally, we'd like you to avoid any single-letter or cryptic variable names. Please also avoid the use of `classes`, `comprehensions`, `generators`, `slice assignment`, `regex`, `filter/map/reduce`, `built-ins`, or 3rd-party libraries unless the exercise has introduced those concepts or they appear in the exercise's prerequisite tree.
+  An idiomatic implementation that passes all the provided tests. This solution file should only use **syntax & concepts introduced in the concept exercise itself, or one of its prerequisites.**. This means avoiding the use of constructs like `classes`, `comprehensions`, `generators`, `slice assignment`, `regex`, `filter/map/reduce`, standard library modules (_like `datetime`_), or 3rd-party libraries unless the exercise has introduced these concepts or they appear in the exercise's prerequisite tree. Please follow the [PEP8][pep8] formatting guidelines. Additionally, we'd like you to avoid any single-letter or cryptic variable names.
 
 ## Step 2: Add exercise documentation files
 
