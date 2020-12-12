@@ -30,7 +30,7 @@ Python considers `ints` narrower than `floats`. So, using a float in an expressi
 12.0
 >>> 3 - 2.0
 1.0
-#division always returns a float
+# Division always returns a float.
 >>> 6 / 2
 3.0
 >>> 7 / 4
