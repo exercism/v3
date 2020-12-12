@@ -62,7 +62,7 @@ Basics --> functions & strings & loops & comparisons & conditionals & bools
 Basics --> numbers & classes
 
 bools --> tuples & none
-classes --> enums & Class-inheritance
+classes --> enums & inheritance
 comparisons --> lists & loops
 comparisons --> rich-comparisons & conditionals
 comprehensions --> enums & other-comprehensions
