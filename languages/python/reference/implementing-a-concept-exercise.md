@@ -98,7 +98,7 @@ t
 u
 ```
 
-For resource links, we strongly favor linking into relevant parts of the [Python docs][python-docs] as a first source, with other useful and interesting links as a follow-on. Please avoid any pawalled or subscription-based/signup required links.
+For resource links, we strongly favor linking into relevant parts of the [Python docs][python-docs] as a first source, with other useful and interesting links as a follow-on. Please avoid any paywalled, subscription-based or signup-required links.
 
 ## Inspiration
 
