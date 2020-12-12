@@ -173,6 +173,7 @@ _Concepts needed for a good working understanding of the language_
     - [ ] [Exiting loops][exiting-loops]
       - [ ] [`break`][keyword-break]
       - [ ] [`continue`][keyword-continue]
+      - [ ] [`else` in a `loop` context][keyword-else-in-loops]
 
 - [ ] [Membership testing][membership-testing]
 
@@ -579,6 +580,7 @@ _These datatypes will very rarely be encountered in the wild, the first because 
 [keyword-del]: ./concepts/keywords/del.md
 [keyword-elif]: ./concepts/keywords/elif.md
 [keyword-else]: ./concepts/keywords/else.md
+[keyword-else-in-loops]: https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops
 [keyword-except]: ./concepts/keywords/except.md
 [keyword-false]: ./concepts/keywords/false.md
 [keyword-finally]: ./concepts/keywords/finally.md
