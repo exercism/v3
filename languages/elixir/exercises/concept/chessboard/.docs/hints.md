@@ -9,7 +9,7 @@
 ## 2. Define the file range
 
 - There is a [special operator][range-creation-operator] for creating ranges.
-- There is a [special syntax] to write a character code point without explicitly knowing its value.
+- There is a [special syntax][unicode-code-points] to write a character code point without explicitly knowing its value.
 
 ## 3. Transform the rank range into a list of ranks
 
@@ -19,7 +19,7 @@
 ## 4. Transform the file range into a list of files
 
 - Ranges implement the `Enumerable` protocol.
-- There is a [built-in function] to change an enumerable data structure to a list while modifying its elements.
+- There is a [built-in function][unicode-code-points] to change an enumerable data structure to a list while modifying its elements.
 - The [bitstring special form][bitstring-special-form] can be used to turn a code point into a string.
 
 [range]: https://hexdocs.pm/elixir/Range.html
