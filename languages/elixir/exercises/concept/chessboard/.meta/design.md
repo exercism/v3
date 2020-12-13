@@ -21,7 +21,6 @@
 
 ## Analyzer
 
-- make sure that `file_range` uses `?A` and `?H` instead of `65` and `72`
 - make sure that `ranks` uses `rank_range`
 - make sure that `files` uses `file_range`
-- make sure that `files` uses `<<>>` to turn a codepoint into a string
+- make sure that `files` uses `<<>>` to turn a code point into a string

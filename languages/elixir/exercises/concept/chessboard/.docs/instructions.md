@@ -14,7 +14,7 @@ Chessboard.rank_range()
 
 ## 2. Define the file range
 
-Implement the `file_range/0` function. It should return a range of integers, from the codepoint of the uppercase letter A, to the codepoint of the uppercase letter H.
+Implement the `file_range/0` function. It should return a range of integers, from the code point of the uppercase letter A, to the codepoint of the uppercase letter H.
 
 ```elixir
 Chessboard.file_range()
