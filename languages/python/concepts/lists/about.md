@@ -74,7 +74,7 @@ Results when using a list constructor with a string or a dict may be surprising:
 >>> multiple_elements_string = list("Timbuktu")
 ['T', 'i', 'm', 'b', 'u', 'k', 't', 'u']
 
-
+# Unicode separators and positioning code points are also added *individually*.
 >>> multiple_code_points_string = list('अभ्यास')
 ['अ', 'भ', '्', 'य', 'ा', 'स']
 
@@ -85,7 +85,7 @@ source_data = {"fish": "gold", "monkey": "brown"}
 ['fish', 'monkey']
 ```
 
-Because the `list()` constructor will only take*iterables (or nothing) as arguments, objects that are \_not* iterable will throw a type error. Consequently, it is much easier to create a one-item list via the literal method.
+Because the `list()` constructor will only take iterables (or nothing) as arguments, objects that are **not** iterable will throw a type error. Consequently, it is much easier to create a one-item list via the literal method.
 
 ```python
 >>> one_element = list(16)
@@ -93,6 +93,7 @@ Traceback (most recent call last):
    File "<stdin>", line 1, in <module>
    TypeError: 'int' object is not iterable
 
+# Tuples *are* iterable, so passing a one-element tuple to the constructor does work, but it's awkward
 >>> one_element_from_iterable = list((16,))
 [16]
 ```
