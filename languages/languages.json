@@ -3815,8 +3815,8 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "classes-I"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
+              "name": "classes"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
@@ -3907,8 +3907,8 @@
               "name": "conditionals"
             },
             {
-              "url": null,
-              "name": "functions-I"
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
             },
             {
               "url": null,
@@ -3962,7 +3962,7 @@
           "concepts": [
             {
               "url": null,
-              "name": "str-methods"
+              "name": "string-methods"
             }
           ],
           "prerequisites": [
@@ -3973,6 +3973,22 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
               "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/currency-exchange",
+          "slug": "currency-exchange",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
             }
           ]
         }
