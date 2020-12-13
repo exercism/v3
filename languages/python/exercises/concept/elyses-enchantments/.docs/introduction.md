@@ -121,7 +121,7 @@ You can also slice a list using a `step` parameter with the notation `[start:sto
 >>> middle_colors = colors[2:6]
 ["Green", "Yellow", "Orange", "Pink"]
 
-#If the start or stop parameters are omitted, the slice will
+# If the start or stop parameters are omitted, the slice will
 # start at index zero, and will stop at the end of the list.
 >>> primary_colors = colors[::3]
 ["Red", "Yellow", "Blue"]
