@@ -178,7 +178,7 @@ Remember that variables in Python are labels that point to underlying objects an
 
 Assigning a `list` object to a new variable _name_ does not copy the object or its data. Any change made to the items in the `list` using the new variable name will also _impact the original_.
 
-To avoid this complicaton, you must make a `shallow_copy` via `list.copy()` or slice. A `shallow_copy` will create a new `list` object, but **will not** create new objects for the contained list _items_. However, this type of copy will be enough for you to add or remove items from the two `list` objects independantly. (More about the differences between a shallow_copy and a deep_copy later).
+To avoid this complicaton, you must make a `shallow_copy` via `list.copy()` or slice. A `shallow_copy` will create a new `list` object, but **will not** create new objects for the contained list _items_. However, this type of copy will be enough for you to add or remove items from the two `list` objects independantly. (More about the differences between a shallow_copy and a deep_copy a little later).
 
 ```python
 >>> actual_names = ["Tony", "Natasha", "Thor", "Bruce"]
@@ -207,7 +207,7 @@ To avoid this complicaton, you must make a `shallow_copy` via `list.copy()` or s
 ["Tony", "Natasha", "Thor", "Bruce", "Clarke"]
 ```
 
-This name + reference complication becomes exacerbated when working with nested or multiplied lists:
+This reference complication becomes exacerbated when working with nested or multiplied lists:
 
 ```python
 from pprint import pprint
@@ -240,9 +240,7 @@ from pprint import pprint
  [0, 0, 0, 0, 0, 0, 0, 'X']]
 ```
 
-As mentioned earlier, lists are containers of references. So if your list contains _variables_ or nested data structures, those second-level references will **not be copied** via the `shallow_copy` of `list.copy()` or slicing.
-
-To copy an entire tree of containers, references, and objects, you need to use `list.deep_copy()` or a `list comprehension`. For a more detailed explanation of nesred list behaviors, see this excellent [making a game board][making a game board] article.
+In this circumstance, a `shallow_copy` is enough to allow the behavior we'd like:
 
 ```python
 from pprint import pprint
@@ -251,7 +249,7 @@ from pprint import pprint
 >>> game_grid = []
 >>> filled_row = [0] * 8
 >>> for row in range(8):
-...    game_grid.append(filled_row.copy()) # This is making a new shallow copy of the list object each iteration.
+...    game_grid.append(filled_row.copy()) # This is making a new shallow copy of the inner list object each iteration.
 
 >>> pprint(game_grid)
 [[0, 0, 0, 0, 0, 0, 0, 0],
@@ -277,6 +275,41 @@ from pprint import pprint
  [0, 0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0, 'X']]
 ```
+
+But as mentioned earlier, lists are containers of _references_. If your list contains variables or nested data structures, those second-level references will **not be copied** via `shallow_copy`. Changing the underlying objects will affect _both_ copies, since each `list` will still have references pointing to the same items.
+
+```python
+from pprint import pprint
+
+>>> pprint(game_grid)
+[[0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 'X']]
+
+# We'd like a new board, so we make a shallow copy.
+>>> new_game_grid = game_grid.copy()
+
+# But a shallow copy doesn't copy the contained references or objects.
+>>> new_game_grid[0][0] = 'X'
+
+# So changing the items in the copy also changes the originals items.
+>>>  pprint(game_grid)
+[['X', 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 'X']]
+```
+
+For a detailed explanation of list and nested list behaviors, take a look at this excellent [making a game board in Python][making a game board] article.
 
 [list-methods]: https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 [list std type]: https://docs.python.org/3.9/library/stdtypes.html#list
