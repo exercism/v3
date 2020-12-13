@@ -133,7 +133,7 @@ If you have any questions regarding implementing the exercise, please post them 
 [pep8]: https://www.python.org/dev/peps/pep-0008/
 [example-todo]: ../exercises/concept/guidos-gorgeous-lasagna/lasagna.py
 [example-stub]: ../exercises/concept/ghost-gobble-arcade-game/arcade_game.py
-[example-testfile]: ../exercises/concept/little-sisters-essay/str_methods_test.py
+[example-testfile]: ../exercises/concept/little-sisters-essay/string_methods_test.py
 [repl-code-example]: https://docs.python.org/3/tutorial/controlflow.html#defining-functions
 [commonmark]: https://spec.commonmark.org/
 [auto-formatting]: https://github.com/exercism/v3/blob/master/docs/maintainers/style-guide.md#auto-formatting
