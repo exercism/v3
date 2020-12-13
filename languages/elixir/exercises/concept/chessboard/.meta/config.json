@@ -5,6 +5,12 @@
       "exercism_username": "angelikatyborska"
     }
   ],
+  "contributors": [
+    {
+      "github_username": "neenjaw",
+      "exercism_username": "neenjaw"
+    }
+  ],
   "editor": {
     "solution_files": ["lib/chessboard.ex"],
     "test_files": ["test/chessboard_test.exs"]
