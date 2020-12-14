@@ -1561,6 +1561,26 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/freelancer-rates",
+          "slug": "freelancer-rates",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
+              "name": "integers"
+            },
+            {
+              "url": null,
+              "name": "floating-point-numbers"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/log-level",
           "slug": "log-level",
           "concepts": [
