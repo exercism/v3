@@ -1,0 +1,12 @@
+class Greeter {
+  def name
+
+  Greeter(String name) {
+    this.name = name
+  }
+
+  def greet() {
+    print "Hello, ${name}!"
+  }
+}
+new Greeter('World').greet()
