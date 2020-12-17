@@ -1738,5 +1738,13 @@
       "title": "Documentation",
       "content": "Documentation is excellent and exhaustive, making it easy to get started with C#."
     }
+  ],
+  "tags": [
+    "Compiles to:Bytecode",
+    "Runtime:Common Language Runtime (.NET)",
+    "Paradigm:Declarative",
+    "Paradigm:Functional",
+    "Paradigm:Object-oriented",
+    "Typing:Static"
   ]
 }
