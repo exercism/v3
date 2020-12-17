@@ -1,0 +1,9 @@
+say my $candidates = all
+  «Alphabet subdermatoglyphic
+  ‘Emily Jung Schwartzkopf’».pick: 2;
+
+say “All isograms? {.so ?? ‘✔’ !! ‘❌’}”
+  given is-isogram($candidates);
+
+sub is-isogram (Str $_ --> Bool) {
+  .uc.comb(/<:L>/).Bag ⊆ 'A'..'Z' }
