@@ -1740,11 +1740,11 @@
     }
   ],
   "tags": [
-    "Compiles to:Bytecode",
-    "Runtime:Common Language Runtime (.NET)",
-    "Paradigm:Declarative",
-    "Paradigm:Functional",
-    "Paradigm:Object-oriented",
-    "Typing:Static"
+    "compiles_to/bytecode",
+    "runtime/common_language_runtime",
+    "paradigm/declarative",
+    "paradigm/functional",
+    "paradigm/object_oriented",
+    "typing/static"
   ]
 }
