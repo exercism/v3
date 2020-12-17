@@ -1,8 +1,15 @@
 import unittest
+<<<<<<< HEAD
 from exchange import *
 
 
 class TestExchange(unittest.TestCase):
+=======
+from numbers import *
+
+
+class TestNumbers(unittest.TestCase):
+>>>>>>> efbdf69275d9a319919a92bbf25962ad5c91b4cc
     
     # Problem 1
     def test_estimate_value(self):
@@ -24,7 +31,11 @@ class TestExchange(unittest.TestCase):
             (1250,120),
             (15000,1380)
         ]
+<<<<<<< HEAD
         output_data = [458000,1130,13620]
+=======
+        output_data = [458000, 1130, 13620]
+>>>>>>> efbdf69275d9a319919a92bbf25962ad5c91b4cc
         for input, output in zip(input_data, output_data):
             with self.subTest(input=input, output=output):
                 self.assertEqual(get_change(input[0], input[1]), output)
@@ -37,7 +48,11 @@ class TestExchange(unittest.TestCase):
             (50, 360),
             (200, 200)
         ]
+<<<<<<< HEAD
         output_data = [1280000,18000,40000]
+=======
+        output_data = [1280000, 18000, 40000]
+>>>>>>> efbdf69275d9a319919a92bbf25962ad5c91b4cc
         for input, output in zip(input_data, output_data):
             with self.subTest(input=input, output=output):
                 self.assertEqual(get_value(input[0], input[1]), output)
@@ -68,7 +83,11 @@ class TestExchange(unittest.TestCase):
         for input, output in zip(input_data, output_data):
             with self.subTest(input=input, output=output):
                 self.assertEqual(exchangeable_value(input[0], input[1], input[2], input[3]), output)
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> efbdf69275d9a319919a92bbf25962ad5c91b4cc
     # Problem 6
     def test_unexchangeable_value(self):
 
@@ -86,4 +105,10 @@ class TestExchange(unittest.TestCase):
 
         for input, output in zip(input_data, output_data):
             with self.subTest(input=input, output=output):
+<<<<<<< HEAD
                 self.assertEqual(unexchangeable_value(input[0], input[1], input[2], input[3]), output)
+=======
+                self.assertEqual(unexchangeable_value(input[0], input[1], input[2], input[3]), output)
+
+    
+>>>>>>> efbdf69275d9a319919a92bbf25962ad5c91b4cc
