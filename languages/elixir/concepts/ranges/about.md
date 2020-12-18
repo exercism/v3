@@ -4,7 +4,7 @@
 - Are inclusive of the first and last values.
 - Implement the [_Enumerable protocol_][enumerable].
 - Are represented internally as a struct, but can be pattern matched using `..`.
-- Can be used with integers written in the binary, octal, hexadecimal, and codepoint notation.
+- Can be used with integers written in the binary, octal, hexadecimal, and code point notation.
 - Can be turned into lists with functions such as [`Enum.to_list/1`][enum-to-list] or [`Enum.map/2`][enum-map].
 
 ```elixir
