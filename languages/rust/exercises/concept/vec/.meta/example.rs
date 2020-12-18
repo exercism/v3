@@ -1,15 +1,32 @@
 /// return a list of 5 languages to learn
 pub fn languages() -> Vec<String> {
-    ["Elixir", "JavaScript", "Lua", "Rust", "Scheme"]
+    vec![
+        "Rust".to_string(),
+        "JavaScript".to_string(),
+        "Elixir".to_string(),
+        "Lua".to_string(),
+        "Scheme".to_string(),
+    ]
+}
+/// return a list of languages labeled by their order
+pub fn languages_ranked() -> Vec<String> {
+    languages()
         .iter()
-        .map(|a_str| a_str.to_string())
+        .enumerate()
+        .map(|(index, lang)| format!("{}: {}", index + 1, lang))
         .collect()
 }
 /// Gather your top languages to learn
-pub fn languages_top(count: usize) -> Result<Vec<String>, String> {
-    if count > languages().len() {
-        Err("Please specify a number less than or equal to 5.".to_string())
+pub fn grab(which: usize) -> String {
+    if which == languages().len() {
+        languages().pop().unwrap()
     } else {
-        Ok(languages()[..count].to_vec())
+        languages()[which].to_string()
     }
+}
+/// Gather your top languages to learn
+pub fn humans_and_computers(human: Vec<String>) -> Vec<String> {
+    let mut list = languages();
+    human.iter().for_each(|lang| list.push(lang.to_string()));
+    list
 }
