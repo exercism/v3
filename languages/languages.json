@@ -2131,10 +2131,6 @@
             {
               "url": null,
               "name": "pipe-operator"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/range.md",
-              "name": "ranges"
             }
           ],
           "prerequisites": [
@@ -2149,6 +2145,14 @@
             {
               "url": null,
               "name": "if"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/range.md",
+              "name": "ranges"
+            },
+            {
+              "url": null,
+              "name": "randomness"
             }
           ]
         },
@@ -2305,6 +2309,34 @@
             {
               "url": null,
               "name": "atoms"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/chessboard",
+          "slug": "chessboard",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/range.md",
+              "name": "ranges"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
+              "name": "enum"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
+              "name": "integers"
+            },
+            {
+              "url": null,
+              "name": "bitstrings"
+            },
+            {
+              "url": null,
+              "name": "charlists"
             }
           ]
         }
