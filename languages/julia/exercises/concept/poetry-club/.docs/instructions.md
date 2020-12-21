@@ -14,9 +14,13 @@ In order to gain entry, you'll need to work out the password of that day:
 For example, one of their favourite writers is Michael Lockwood, who's written the following _acrostic_ poem, which means that the first letter of each sentence form a word:
 
 > **S**tands so high
+> 
 > **H**uge hooves too
+> 
 > **I**mpatiently waits for
+> 
 > **R**eins and harness
+> 
 > **E**ager to leave
 
 When the guard recites **Stands so high**, you'll respond **S**, when the guard recites **Huge hooves too**, you'll respond **H**.
@@ -37,9 +41,13 @@ Because this is not for everyone, the back door process is a bit more convoluted
 For example, the poem mentioned before is also _telestich_, which means that the last letter of each sentence form a word:
 
 > Stands so hig**h**
+> 
 > Huge hooves to**o**
+> 
 > Impatiently waits fo**r**
+> 
 > Reins and harnes**s**
+> 
 > Eager to leav**e**
 
 When the guard recites **Stands so high**, you'll respond **h**, when the guard recites **Huge hooves too**, you'll respond **o**.
