@@ -1,4 +1,11 @@
+using Pkg
 using Test
+using JSON
+
+# Setup GHA logger in CI
+using Logging: global_logger
+using GitHubActions: GitHubActionsLogger
+get(ENV, "GITHUB_ACTIONS", "false") == "true" && global_logger(GitHubActionsLogger())
 
 # TODO Change this to test practice exercises when adding the first practice exercise
 for exercise in readdir(joinpath("exercises", "concept"))
@@ -9,6 +16,15 @@ for exercise in readdir(joinpath("exercises", "concept"))
 
     exercise_path = joinpath(joinpath("exercises", "concept"), exercise)
     isdir(exercise_path) || continue
+
+    # Skip exercise tests if the Julia version doesn't meet the required version as specified in .meta/config.json
+    cfg = JSON.parsefile(joinpath(exercise_path, ".meta", "config.json"))
+    required_version_spec = Pkg.Types.semver_spec(get(cfg, "language_versions", "1.0"))
+    if VERSION ∉ required_version_spec
+        @warn "$exercise requires Julia $required_version_spec, skipping tests."
+        println()
+        continue
+    end
 
     # Create an anonymous module so that exercises are tested in separate scopes
     m = Module()

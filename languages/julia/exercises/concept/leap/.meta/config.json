@@ -1,15 +1,15 @@
 {
-    "language_versions": "≥1.5",
+    "language_versions": "≥1.0",
     "editor": {
         "test_files": [
             "runtests.jl"
         ],
         "solution_files": [
-            "poetry-club.jl"
+            "leap.jl"
         ]
     },
     "forked_from": [
-        "javascript/strings"
+        "v2/leap"
     ],
     "authors": [
         {

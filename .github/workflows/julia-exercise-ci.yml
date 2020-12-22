@@ -31,11 +31,17 @@ jobs:
         uses: julia-actions/setup-julia@v1
         with:
           version: ${{ matrix.julia-version }}
+      
+      - name: Install test dependencies
+        run: |
+          cd languages/julia/
+          julia --color=yes --project -e "using Pkg; Pkg.instantiate()"
+        shell: bash
 
       - name: Test exercises
         run: |
           cd languages/julia/
-          julia --color=yes runtests.jl
+          julia --color=yes --project runtests.jl
         shell: bash
   
   test-generators:
