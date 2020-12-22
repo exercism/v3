@@ -188,8 +188,8 @@ function generate_door_passwords(door, poems)
 
         comment = "$(tab) # $(credit(p))"
 
-        input = join(tab^2 .* split(p.body, "\n"), "\n")
-        test = "$(tab)@test $(door)_password(\"\"\"\n$input\"\"\"\n$tab) == \"$(pwdf[door](p.body))\"\n"
+        input = tab^2 * replace(p.body, "\n" => "\n$(tab^2)")
+        test = "$(tab)@test $(door)_password(\"\"\"\n$input\"\"\"\n$(tab)) == \"$(pwdf[door](p.body))\"\n"
         push!(inner_s, join((comment, test), "\n"))
     end
 
