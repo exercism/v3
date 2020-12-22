@@ -37,3 +37,35 @@ jobs:
           cd languages/julia/
           julia --color=yes runtests.jl
         shell: bash
+  
+  test-generators:
+    name: Generated tests are up-to-date
+    runs-on: ubuntu-20.04
+    
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: 'Set up Julia ${{ matrix.julia-version }}'
+        uses: julia-actions/setup-julia@v1
+        with:
+          version: '1'
+        
+      - name: Run test generators
+        run: |
+          cd languages/julia/exercises/concept/poetry-club/
+          julia .meta/test_generator_util.jl > runtests.jl
+      
+      - name: Verify that the diff is empty
+        run: |
+          git add -N .
+          changed_files=$(git diff --name-only)
+          if [ -n "$changed_files" ]; then
+            for file in "$changed_files"; do
+              echo "::error file=$file::$file out of sync with generated tests."
+            done
+            git reset HEAD
+            exit 1
+          fi
+
+          git reset HEAD
+          exit 0
