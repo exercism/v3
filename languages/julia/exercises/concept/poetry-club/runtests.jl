@@ -43,6 +43,13 @@ include("poetry-club.jl")
         @test front_response("Υἱός") == 'Υ'
         @test front_response("Σωτήρ") == 'Σ'
     end
+
+    @testset "'Подпись' by И. Чудасовым" begin
+        @test front_response("И если тексты все прочли") == 'И'
+        @test front_response("Вы, то поймете: я ворчлив,") == 'В'
+        @test front_response("А жизнь моя не так легка.") == 'А'
+        @test front_response("Но мил моей судьбы капкан.") == 'Н'
+    end
 end
 
 @testset "Front door passwords" begin
@@ -91,6 +98,14 @@ end
         Υἱός
         Σωτήρ"""
     ) == "Ιχθυσ"
+
+     # 'Подпись' by И. Чудасовым
+    @test front_password("""
+        И если тексты все прочли
+        Вы, то поймете: я ворчлив,
+        А жизнь моя не так легка.
+        Но мил моей судьбы капкан."""
+    ) == "Иван"
 end
 
 @testset "Back door responses" begin
@@ -109,14 +124,11 @@ end
         @test back_response("Exit with zero quick") == 'k'
     end
 
-    @testset "'Колокол' by Иван Чудасов" begin
-        @test back_response("Произнося чудесный чистый звук,") == 'к'
-        @test back_response("Вишу на колокольне. Высоко!") == 'о'
-        @test back_response("Неоднократно сам звенеть хотел,") == 'л'
-        @test back_response("Разлиться песней сердца далеко,") == 'о'
-        @test back_response("Но мой язык во власти чьих-то рук.") == 'к'
-        @test back_response("Вздохнул бы я свободно и легко,") == 'о'
-        @test back_response("Когда бы сам, не по заказу, пел.") == 'л'
+    @testset "'Подпись' by И. Чудасовым" begin
+        @test back_response("И если тексты все прочли") == 'и'
+        @test back_response("Вы, то поймете: я ворчлив,") == 'в'
+        @test back_response("А жизнь моя не так легка.") == 'а'
+        @test back_response("Но мил моей судьбы капкан.") == 'н'
     end
 end
 
@@ -138,14 +150,11 @@ end
         Exit with zero quick"""
     ) == "Work, please."
 
-     # 'Колокол' by Иван Чудасов
+     # 'Подпись' by И. Чудасовым
     @test back_password("""
-        Произнося чудесный чистый звук,
-        Вишу на колокольне. Высоко!
-        Неоднократно сам звенеть хотел,
-        Разлиться песней сердца далеко,
-        Но мой язык во власти чьих-то рук.
-        Вздохнул бы я свободно и легко,
-        Когда бы сам, не по заказу, пел."""
-    ) == "Колокол, please."
+        И если тексты все прочли
+        Вы, то поймете: я ворчлив,
+        А жизнь моя не так легка.
+        Но мил моей судьбы капкан."""
+    ) == "Иван, please."
 end
