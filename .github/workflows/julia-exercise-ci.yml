@@ -31,7 +31,7 @@ jobs:
         uses: julia-actions/setup-julia@v1
         with:
           version: ${{ matrix.julia-version }}
-      
+
       - name: Install test dependencies
         run: |
           cd languages/julia/
@@ -43,11 +43,11 @@ jobs:
           cd languages/julia/
           julia --color=yes --project runtests.jl
         shell: bash
-  
+
   test-generators:
     name: Generated tests are up-to-date
     runs-on: ubuntu-20.04
-    
+
     steps:
       - uses: actions/checkout@v2
 
@@ -55,12 +55,12 @@ jobs:
         uses: julia-actions/setup-julia@v1
         with:
           version: '1'
-        
+
       - name: Run test generators
         run: |
           cd languages/julia/exercises/concept/poetry-club/
           julia .meta/test_generator_util.jl > runtests.jl
-      
+
       - name: Verify that the diff is empty
         run: |
           git add -N .
