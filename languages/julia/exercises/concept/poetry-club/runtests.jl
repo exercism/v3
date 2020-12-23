@@ -36,14 +36,6 @@ include("poetry-club.jl")
         @test front_response("Exit with zero quick") == 'E'
     end
 
-    @testset "Unknown" begin
-        @test front_response("Ιησούς") == 'Ι'
-        @test front_response("Χριστός") == 'Χ'
-        @test front_response("Θεού") == 'Θ'
-        @test front_response("Υἱός") == 'Υ'
-        @test front_response("Σωτήρ") == 'Σ'
-    end
-
     @testset "'Подпись' by И. Чудасовым" begin
         @test front_response("И если тексты все прочли") == 'И'
         @test front_response("Вы, то поймете: я ворчлив,") == 'В'
@@ -89,15 +81,6 @@ end
         Different processes ajar
         Exit with zero quick"""
     ) == "Code"
-
-     # Unknown
-    @test front_password("""
-        Ιησούς
-        Χριστός
-        Θεού
-        Υἱός
-        Σωτήρ"""
-    ) == "Ιχθυσ"
 
      # 'Подпись' by И. Чудасовым
     @test front_password("""
