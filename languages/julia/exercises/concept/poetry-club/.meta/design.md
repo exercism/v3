@@ -2,13 +2,13 @@
 
 - Basic string functions like `titlecase`, `replace` etc.
 - Be aware that unicode strings are the default and that the above mentioned functions will work on non-ascii input.
-- Know that strings can be treated as a collection of characters, e.g. for indexing.
+- Know that strings can be treated as a collection of characters.
 - How to concatenate strings.
   - That and why `*` (and not `+`) is used for string concat.
 
 ## Out of scope
 
-- Graphemes.
+- Graphemes ([Discussion](https://github.com/exercism/v3/pull/2944#discussion_r546797486)).
 - Regex.
 - Performance discussions of various ways to construct strings.
 
