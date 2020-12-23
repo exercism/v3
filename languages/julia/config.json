@@ -26,7 +26,7 @@
             },
             {
                 "uuid": "1690aa6e-3f03-4ab4-8f35-65753e667c16",
-                "name": "Poetry Club Door Policy",
+                "name": "TODO: Poetry Club Door Policy",
                 "slug": "poetry-club",
                 "concepts": ["strings"],
                 "prerequisites": ["functions-introduction"]
