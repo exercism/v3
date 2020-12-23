@@ -21,7 +21,7 @@ for exercise in readdir(joinpath("exercises", "concept"))
     cfg = JSON.parsefile(joinpath(exercise_path, ".meta", "config.json"))
     required_version_spec = Pkg.Types.semver_spec(get(cfg, "language_versions", "1.0"))
     if VERSION ∉ required_version_spec
-        @warn "$exercise requires Julia $required_version_spec, skipping tests."
+        @info "$exercise requires Julia $required_version_spec, skipping tests."
         println()
         continue
     end
