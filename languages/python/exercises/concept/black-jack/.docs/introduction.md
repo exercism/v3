@@ -1,6 +1,6 @@
 ## Comparison
 
-There are number of different kinds of comparison operators in Python
+There are some different kinds of comparison operators in Python
 
 | Operator | Operation                | Description                                              |
 | -------- | ------------------------ | -------------------------------------------------------- |
@@ -17,7 +17,7 @@ There are number of different kinds of comparison operators in Python
 
 ## Greater than
 
-Operator `>` tests if first operand's value is greater than second one's.
+Operator `>` tests if the first operand's value is greater than the second one's.
 
 ```python
 >>> 3 > 1
@@ -32,7 +32,7 @@ False
 
 ## Less than
 
-Operator `<` tests if first operand's value is less than second one's.
+Operator `<` tests if the first operand's value is less than the second one's.
 
 ```python
 >>> 3 < 1
@@ -47,7 +47,7 @@ True
 
 ## Equal to
 
-Operator `==` tests if first operand's value is equal to second one's
+Operator `==` tests if the first operand's value is equal to the second one's
 
 ```python
 >>> 3 == 1
@@ -62,7 +62,7 @@ False
 
 ## Greater than or equal to
 
-Operator `>=` tests if first operand's value is equal to or greater than second one's.
+Operator `>=` tests if the first operand's value is equal to or greater than the second one's.
 
 ```python
 >>> 3 >= 1
@@ -77,7 +77,7 @@ False
 
 ## Less than or equal to
 
-Operator `<=` tests if first operand's value is equal to or less than second one's.
+Operator `<=` tests if the first operand's value is equal to or less than the second one's.
 
 ```python
 >>> 3 <= 1
@@ -92,7 +92,7 @@ True
 
 ## Not equal to
 
-Operator `!=` tests if first operand's value is not equal to second one's
+Operator `!=` tests if the first operand's value is not equal to the second one's
 
 ```python
 >>> 3 != 1
@@ -107,7 +107,7 @@ True
 
 ## Identity test
 
-Operator `is` tests if first and second operand are same object.
+Operator `is` tests if the first and second operand is the same object.
 
 ```python
 # comparing non-object type `is` will raise warning
@@ -126,7 +126,7 @@ True
 False
 ```
 
-Operator `is not` tests if first and second operand are not object.
+Operator `is not` tests if the first and second operand is not the same object.
 
 ```python
 >>> 1 is not 1
@@ -146,7 +146,7 @@ True
 
 ## Containment test
 
-Operator `in` tests if first operand is member of second operand.
+Operator `in` tests if the first operand is a member of the second operand.
 
 ```python
 >>> x = [1, 2, 3, 4, 5]
@@ -164,7 +164,7 @@ True
 False
 ```
 
-Operator `not in` tests if first operand is not member of second operand.
+Operator `not in` tests if the first operand is not a member of the second operand.
 
 ```python
 >>> x = [1, 2, 3, 4, 5]
