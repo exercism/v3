@@ -3,7 +3,7 @@ Python has three different types of built-in numbers: integers ([`int`][int]), f
 Whole numbers (_including hex, octals and binary numbers_) **without** decimal places are identified as `ints`:
 
 ```python
-#whole number
+# Ints are whole numbers.
 >>> 1234
 1234
 >>> type(1234)
@@ -13,20 +13,20 @@ Whole numbers (_including hex, octals and binary numbers_) **without** decimal p
 -12
 ```
 
-Hex numbers are written/printed with `0x` prefix:
+Hex numbers are prefixed with `0x`:
 
 ```python
-#hex number
+# Hex numbers start with 0x.
 >>> 0x17
 23
 >>> type(0x17)
 <class 'int'>
 ```
 
-Octals are written with a `0o` prefix:
+Octals are prefixed with a `0o`:
 
 ```python
-#octal number
+# Octal numbers start with a 0o.
 >>> 0o446
 294
 >>> type(0o446)
@@ -36,7 +36,7 @@ Octals are written with a `0o` prefix:
 Binary numbers are prefixed with `0b`, and written with only zeros and ones:
 
 ```python
-#binary number
+# Binary numbers are made up of 0s and 1s.
 >>> 0b1100110
 102
 >>> type(0b1100110)
@@ -65,14 +65,13 @@ Each of these `int` displays can be converted into the other via constructor:
 1234
 ```
 
-Numbers containing a decimal point (_with or without any numbers following_) are identified as `floats`:
+Numbers containing a decimal point (with or without fractional parts) are identified as `floats`:
 
 ```python
 >>> 3.45
 3.45
 >>> type(3.45)
 <class 'float'>
-
 ```
 
 Appending `j` or `J` to a number creates an _imaginary number_ -- a `complex` number with a zero real part. `ints` or `floats` can then be added to an imaginary number to create a `complex` number with both real and imaginary parts:
@@ -91,26 +90,26 @@ Appending `j` or `J` to a number creates an _imaginary number_ -- a `complex` nu
 
 Python fully supports arithmetic between these different number types, and will convert narrower numbers to match their less narrow counterparts when used with the binary arithmetic operators (`+`, `-`, `*`, `/`, `//`, and `%`).
 
-Python considers `ints` narrower than `floats`, which are considered narrower than `complex` numbers. Comparisons between different number types behaves as as if the _exact_ values of those numbers were being compared:
+Python considers `ints` narrower than `floats`, which are considered narrower than `complex` numbers. Comparisons between different number types behave as if the _exact_ values of those numbers were being compared:
 
 ```python
-#the int is widened to a float here, and a float is returned
+# The int is widened to a float here, and a float is returned.
 >>> 3 + 4.0
 7.0
 
-#the int is widened to a complex number, and a complex number is returned
+# The int is widened to a complex number, and a complex number is returned.
 >>> 6/(3+2j)
 (2+2j)
 
-#division always returns a float, even if integers are used
+# Division always returns a float, even if integers are used.
 >>> 6/2
 3.0
 
-#if an int result is needed, you can use floor division to truncate the result
+# If an int result is needed, you can use floor division to truncate the result.
 >>> 6//2
 3
 
-#when comparing, exact values are used
+# When comparing, exact values are used.
 >>> 23 == 0x17
 True
 
@@ -121,7 +120,7 @@ True
 True
 ```
 
-All numbers (except complex) support all [arithmetic operations][arithmetic operations], evaluated according to [operator precedence][operator precedence]. Support for mathematical functions (beyond `+`, `-`, `/`) for complex numbers can be found in the [cmath][cmath] module.
+All numbers (except complex) support all [arithmetic operations][arethmetic-operations], evaluated according to [operator precedence][operator precedence]. Support for mathematical functions (beyond `+`, `-`, `/`) for complex numbers can be found in the [cmath][cmath] module.
 
 ### Precision & Representation
 
@@ -138,6 +137,6 @@ For a more detailed discussions of the issues and limitations of floating point 
 [decimals]: https://docs.python.org/3/library/decimal.html#module-decimal
 [0.30000000000000004.com]: https://0.30000000000000004.com/
 [cmath]: https://docs.python.org/3.9/library/cmath.html
-[arethmetic operations]: https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex
+[arethmetic-operations]: https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex
 [operator precedence]: https://docs.python.org/3/reference/expressions.html#operator-precedence
 [floating point math]: https://docs.python.org/3.9/tutorial/floatingpoint.html
