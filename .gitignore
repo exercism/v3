@@ -29,8 +29,5 @@ tmp/
 # Intellij IDEA project dir
 .idea
 
-# DS_Store
-.DS_Store
-
 # Code Spaces
 pythonenv3.8
