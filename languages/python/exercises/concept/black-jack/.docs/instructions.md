@@ -38,7 +38,7 @@ Create the `blackjack()` function with a parameter `hand`.
 
 This function should return if the hand is blackjack. There's must be an ace card in `hand`.
 
-**Note** : If the player has an Ace and a ten-value card, it called a _Blackjack_. Ten-value cards include _10, J, Q, K_.
+**Note** : If the player has an Ace and a ten-value card, it called a _Blackjack_. Ten-value cards include _10, J, Q, K_. I think you may have many ways. But if you can, use a way to check if there's an ace and a ten-value in list.
 
 ```python
 >>> blackjack(['A', 'K'])
