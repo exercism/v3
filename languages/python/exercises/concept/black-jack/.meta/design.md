@@ -8,9 +8,9 @@ This concept exercise should teach how basic _non-customized_ comparisons work i
 - understand all comparisons yield the boolean values True and False
 - know that identity comparisons is and is not are for checking an objects identity only
 - understand that `==` and `!=` compare both the value & type of an object.
-- know where Python has altered the behavior of `==` and `!=` for certain `built-in` types (such as [numbers](https://docs.python.org/3/library/stdtypes.html#typesnumeric)), or for standard library types like [decimals](https://docs.python.org/3/library/decimal.html#decimal.Decimal), and [fractions](https://docs.python.org/3/library/fractions.html#fractions.Fraction) to allow comparison across and within type.
+- know where Python has altered the behavior of `==` and `!=` for certain `built-in` types (such as [numbers][numbers], or for standard library types like [decimals][decimals], and [fractions][fractions] to allow comparison across and within type.
 - know that unlike numeric types, strings (`str`) and binary sequences (`bytes` & `byte array`) **cannot** be directly compared.
-- understand how comparisons work within `built-in` [sequence types](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range) (`list`, `tuple`, `range`) and `built-in` `collection types` (`set`, `[dict]`)
+- understand how comparisons work within `built-in` [sequence types][sequence types](`list`, `tuple`, `range`) and `built-in` `collection types` (`set`, `[dict]`)
 - know about the "special" comparisons `None`, `NotImplemented` (comparing either should use identity operators and not equality operators because they are singleton objects) and NaN (`NaN` is **never** `==` to itself)
 - use the value comparison operators `==`, `>`, `<`, `!=` with numeric types
 - use the value comparison operators `==`, `>`, `<`, `!=` with non-numeric types
@@ -56,3 +56,8 @@ This concept exercise should teach how basic _non-customized_ comparisons work i
 - [Python basic operators on tutorialspoint](https://www.tutorialspoint.com/python/python_basic_operators.htm)
 - [Python comparison operators on data-flair](https://data-flair.training/blogs/python-comparison-operators/)
 - [PEP 207 to allow Operator Overloading for Comparison](https://www.python.org/dev/peps/pep-0207/)
+
+[numbers]: https://docs.python.org/3/library/stdtypes.html#typesnumeric
+[decimals]: https://docs.python.org/3/library/decimal.html#decimal.Decimal
+[fractions]: https://docs.python.org/3/library/fractions.html#fractions.Fraction
+[sequence types]: https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range

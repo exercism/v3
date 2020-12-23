@@ -1,4 +1,4 @@
-In this exercise, you need to implement some rules from [Blackjack](https://en.wikipedia.org/wiki/Blackjack).
+In this exercise, you need to implement some rules from [Blackjack][blackjack]
 
 You have some rules to implement for judging result of game.
 
@@ -46,3 +46,5 @@ True
 >>> blackjack([10, 9])
 False
 ```
+
+[blackjack]: https://en.wikipedia.org/wiki/Blackjack
