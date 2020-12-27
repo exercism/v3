@@ -1,9 +1,10 @@
 In Common Lisp, global, named functions are defined with `defun`.
 
 This form takes as its first argument a list of parameters for the
-function being defined. After that it can, optionally, take a string
-for use as documentation to that function. Finally there are zero or
-more expressions which make up the body of the function.
+function being defined (the list of parameters is also called a
+'lambda list'). After that it can, optionally, take a string for use
+as documentation to that function. Finally there are zero or more
+expressions which make up the body of the function.
 
 Calling a function is done by using the name of the function as the
 first element of an expression, followed by any parameters to that
