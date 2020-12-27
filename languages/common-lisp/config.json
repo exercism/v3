@@ -223,6 +223,17 @@
         "uuid": "825df850-2f38-11eb-a817-542696d187f9",
         "concepts": ["functions"],
         "prerequisites": ["expressions", "integers", "arithmetic"]
+      },
+      {
+        "slug": "lillys-lasagna-leftovers",
+        "name": "Lilly's Lasagna Leftovers",
+        "uuid": "44570800-47f5-11eb-9f38-542696d187f9",
+        "concepts": [
+          "named-parameters",
+          "optional-parameters",
+          "rest-parameters"
+        ],
+        "prerequisites": ["functions", "symbols", "conditionals"]
       }
     ],
     "practice": [

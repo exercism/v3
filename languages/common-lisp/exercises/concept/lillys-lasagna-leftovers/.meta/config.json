@@ -1,12 +1,12 @@
 {
   "authors": [
     {
-      "github_username": "your-user-name",
-      "exercism_username": "your-user-name"
+      "github_username": "verdammelt",
+      "exercism_username": "verdammelt"
     }
   ],
   "contributors": [],
-  "forked_from": [],
+  "forked_from": ["swift/lasagna-master"],
   "editor": {
     "solution_files": ["lillys-lasagna-leftovers.lisp"],
     "test_files": ["lillys-lasagna-leftovers-test.lisp"]
