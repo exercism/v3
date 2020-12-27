@@ -30,7 +30,7 @@ The concept file for `named-parameters` can (and perhaps should) mention `&allow
 
 - `named-parameters`
 - `rest-parameters`
-- `optional-parameters`
+- `default-parameters`
 
 ## Prerequisites
 

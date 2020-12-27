@@ -230,7 +230,7 @@
         "uuid": "44570800-47f5-11eb-9f38-542696d187f9",
         "concepts": [
           "named-parameters",
-          "optional-parameters",
+          "default-parameters",
           "rest-parameters"
         ],
         "prerequisites": ["functions", "symbols", "conditionals"]
