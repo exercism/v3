@@ -16,6 +16,33 @@
 (def-suite lillys-lasagna-leftovers-suite)
 (in-suite lillys-lasagna-leftovers-suite)
 
+(test preparation-time
+  (is (= 0 (preparation-time)))
+  (is (= 38 (preparation-time 'sauce 'cheese)))
+  (is (= 95 (preparation-time 'sauce 'cheese 'left-handed-macaroni 'cheese 'cheese))))
+
+(test remaining-minutes-in-oven
+  (is (= 337 (remaining-minutes-in-oven)))
+  (is (= 337 (remaining-minutes-in-oven :normal)))
+  (is (= 237 (remaining-minutes-in-oven :shorter)))
+  (is (= 437 (remaining-minutes-in-oven :longer)))
+  (is (= 137 (remaining-minutes-in-oven :very-short)))
+  (is (= 537 (remaining-minutes-in-oven :very-long)))
+  (is (= 0   (remaining-minutes-in-oven nil))))
+
+(test splitting-leftovers
+  (is (= 5 (split-leftovers :weight 20 :human 10 :alien 5)))
+  (is (= 5 (split-leftovers :human 10 :weight 20 :alien 5)))
+  (is (= 8 (split-leftovers :weight 20 :alien 10 :human 2)))
+  (is (= 4 (split-leftovers :alien 12 :weight 20 :human 4)))
+
+  (is (= 5 (split-leftovers :weight 20 :human 5)))
+  (is (= 5 (split-leftovers :weight 20 :alien 5)))
+  (is (= 0 (split-leftovers :weight 20)))
+
+  (is (eq :just-split-it (split-leftovers :human 5 :alien 5)))
+  (is (eq :looks-like-someone-was-hungry (split-leftovers :weight NIL))))
+
 ;; Either provides human-readable results to the user or machine-readable
 ;; results to the test runner. The default upon calling `(run-tests)` is to
 ;; explain the results in a human-readable way

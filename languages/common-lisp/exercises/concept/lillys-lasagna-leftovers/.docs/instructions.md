@@ -59,7 +59,7 @@ argument as well as the same values as in the previous task.
 (remaining-minutes-in-oven nil) ;; => 0
 ```
 
-## 4. Splitting with the leftovers
+## 4. Splitting the leftovers
 
 Now that you've helped improve the lasagna cooking functions there is
 _a lot of lasanga_! Lilly wants to repay you for all your help by
@@ -70,7 +70,7 @@ same for you. Because searching for leftover containers may take
 different amounts of time, and the exact amount of leftovers may be
 determined while yourself and Lilly are out searching your cupboards
 you both agree that the function should take the arguments in any
-order. So as each number is determined you can write it down. When you
+order, so as each number is determined you can write it down. When you
 have all three numbers you can just close the parenthesis on the
 function call and evaluate it.
 
