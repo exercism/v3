@@ -1,0 +1,3 @@
+defmodule Newsletter do
+
+end
