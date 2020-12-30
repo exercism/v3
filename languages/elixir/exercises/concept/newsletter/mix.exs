@@ -1,9 +1,9 @@
-defmodule FileSniffer.MixProject do
+defmodule Newsletter.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :file_sniffer,
+      app: :newsletter,
       version: "0.1.0",
       # elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,

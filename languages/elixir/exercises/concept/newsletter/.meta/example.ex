@@ -1,24 +1,33 @@
-defmodule FileSniffer do
-  def type_from_extension(<< "bmp" >>), do: {:ok, "image/bmp"}
-  def type_from_extension(<< "png" >>), do: {:ok, "image/png"}
-  def type_from_extension(<< "jpg" >>), do: {:ok, "image/jpg"}
-  def type_from_extension(<< "gif" >>), do: {:ok, "image/gif"}
-  def type_from_extension(<< "exe" >>), do: {:ok, "application/octet-stream"}
+defmodule Newsletter do
+  def read_emails(path) do
+    path
+    |> File.read!()
+    |> String.split()
+  end
 
-  def type_from_binary(<< 0x42, 0x4D, _::binary >>), do: {:ok, "image/bmp"}
-  def type_from_binary(<< 0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A, _::binary >>), do: {:ok, "image/png"}
-  def type_from_binary(<< 0xFF, 0xD8, 0xFF, _::binary >>), do: {:ok, "image/jpg"}
-  def type_from_binary(<< 0x47, 0x49, 0x46, _::binary >>), do: {:ok, "image/gif"}
-  def type_from_binary(<< 0x7F, 0x45, 0x4C, 0x46, _::binary >>), do: {:ok, "application/octet-stream"}
+  def open_log(path) do
+    File.open!(path, [:write])
+  end
 
-  def verify(binary, extension) do
-    {:ok, binary_type} = type_from_binary(binary)
-    {:ok, extension_type} = type_from_extension(extension)
+  def log_sent_email(pid, email) do
+    IO.puts(pid, email)
+  end
 
-    if binary_type == extension_type do
-      {:ok, binary_type}
-    else
-      {:error, "Warning, file format and file extension do not match."}
-    end
+  def close_log(pid) do
+    File.close(pid)
+  end
+
+  def send_newsletter(emails_path, log_path, send_fun) do
+    log_pid = open_log(log_path)
+    emails = read_emails(emails_path)
+
+    Enum.each(emails, fn email ->
+      case send_fun.(email) do
+        :ok -> log_sent_email(log_pid, email)
+        _ -> nil
+      end
+    end)
+
+    close_log(log_pid)
   end
 end

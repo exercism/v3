@@ -1,48 +1,54 @@
-You have been working on a project which allows users to upload files to the server to be shared with other users. You have been tasked with writing a function to verify that an upload matches its [media type][mimetype]. You do some research and discover that the first few bytes of a file are generally unique to that filetype, giving it a sort of signature.
+You're a big model train enthusiast and have decided to share your passion with the world by starting a newsletter. You'll start by sending the first issue of your newsletter to your friends and acquaintances that share your hobby. You have a text file with a list of their email addresses.
 
-Use the following table for reference:
+## 1. Read email addresses from a file
 
-| File type | Common extension | Media type                   | binary 'signature'                               |
-| --------- | ---------------- | ---------------------------- | ------------------------------------------------ |
-| ELF       | `"exe"`          | `"application/octet-stream"` | `0x7F, 0x45, 0x4C, 0x46`                         |
-| BMP       | `"bmp"`          | `"image/bmp"`                | `0x42, 0x4D`                                     |
-| PNG       | `"png"`          | `"image/png"`                | `0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A` |
-| JPG       | `"jpg"`          | `"image/jpg"`                | `0xFF, 0xD8, 0xFF`                               |
-| GIF       | `"gif"`          | `"image/gif"`                | `0x47, 0x49, 0x46`                               |
-
-## 1. Given an extension, return the expected media type
-
-Implement the `type_from_extension/1` function. It should take a file extension (string) and return the media type (string).
+Implement the `Newsletter.read_emails/1` function. It should take a file path. The file is a text file that contains email addresses separated by newlines. The function should return a list of the email addresses from the file.
 
 ```elixir
-FileSniffer.type_from_extension("exe")
-# => "application/octet-stream"
+Newsletter.read_emails("/home/my_user/documents/model_train_friends_emails.txt")
+# => ["rick@example.com", "choochoo42@example.com", "anna@example.com"]
 ```
 
-## 2. Given a binary file, return the expected media type
+## 2. Open a log file for writing
 
-Implement the `type_from_binary/1` function. It should take a file (binary) and return the media type (string).
+Sending an email is a task that might fail for many unpredictable reasons, like a typo in the email address or temporary network issues. To ensure that you can retry sending the emails to all your friends without sending duplicates, you need to log the email addresses that already received the email. For this, you'll need a log file.
+
+Implement the `Newsletter.open_log/1` function. It should take a file path, open the file for writing, and return the PID of the process that handles the file.
 
 ```elixir
-file = File.read!("application.exe")
-FileSniffer.type_from_binary(file)
-# => "application/octet-stream"
+Newsletter.open_log("/home/my_user/documents/newsletter_issue1_log.txt")
+# => #PID<0.145.0>
 ```
 
-Don't worry about reading the file as a binary, assume that has been done for you and will provided for the tests as an argument.
+## 3. Log a sent email
 
-## 3. Given an extension and a binary file, verify that the file matches the expected type
-
-Implement the `verify/2` function. It should take a file (binary) and extension (string) then an `:ok` or `:error` tuple.
+Implement the `Newsletter.log_sent_email/2` function. It should take a PID of the process that handles the file and a string with the email address. It should write the email address to the file, followed by a newline.
 
 ```elixir
-file = File.read!("application.exe")
-
-FileSniffer.verify(file, "exe")
-# => {:ok, "application/octet-stream"}
-
-FileSniffer.verify(file, "png")
-# => {:error, "Warning, file format and file extension do not match."}
+Newsletter.log_sent_email(pid, "joe@example.com")
+# => :ok
 ```
 
-[mimetype]: https://en.wikipedia.org/wiki/Media_type
+## 4. Close the log file
+
+Implement the `Newsletter.close_log/1` function. It should take a PID of the process that handles the file and close the file.
+
+```elixir
+Newsletter.close_log(pid)
+# => :ok
+```
+
+## 5. Send the newsletter
+
+Now that you have all of the building blocks of the email sending procedure, you need to combine them together in a single function.
+
+Implement the `Newsletter.send_newsletter/3` function. It should take a path of the file with email addresses, a path of a log file, and an anonymous function that sends an email to a given email address. It should read all the email addresses from the given file and attempt to send an email to every one of them. If the anonymous function that sends the email returns `:ok`, write the email address to the log file, followed by a new line. Make sure to do it as soon as the email is sent.
+
+```elixir
+Newsletter.send_newsletter(
+  "model_train_friends_emails.txt",
+  "newsletter_issue1_log.txt",
+  fn email -> :ok end
+)
+# => :ok
+```

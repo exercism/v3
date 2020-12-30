@@ -1,117 +1,177 @@
-defmodule FileSnifferTest do
-  use ExUnit.Case
+defmodule NewsletterTest do
+  # run test synchronously to be able to use the same file path for all tests without write conflicts
+  use ExUnit.Case, async: false
 
-  @bmp_file File.read!("assets/bmp.bmp" )
-  @gif_file File.read!("assets/gif.gif")
-  @jpg_file File.read!("assets/jpeg.jpg")
-  @png_file File.read!("assets/png-transparent.png")
-  @exe_file File.read!("assets/elf.o")
+  @temp_file_path Path.join(["assets", "temp.txt"])
 
-  describe "get type from extension:" do
-    # @tag :pending
-    test "bmp" do
-      assert FileSniffer.type_from_extension("bmp") == {:ok, "image/bmp"}
+  setup do
+    File.write!(@temp_file_path, "")
+    on_exit(fn -> File.rm!(@temp_file_path) end)
+  end
+
+  describe "read_emails" do
+    test "returns a list of all lines in a file" do
+      emails_file_path = Path.join(["assets", "emails.txt"])
+
+      assert Newsletter.read_emails(emails_file_path) == [
+               "alice@example.com",
+               "bob@example.com",
+               "charlie@example.com",
+               "dave@example.com"
+             ]
     end
 
-    @tag :pending
-    test "gif" do
-      assert FileSniffer.type_from_extension("gif") == {:ok, "image/gif"}
-    end
-
-    @tag :pending
-    test "jpg" do
-      assert FileSniffer.type_from_extension("jpg") == {:ok, "image/jpg"}
-    end
-
-    @tag :pending
-    test "png" do
-      assert FileSniffer.type_from_extension("png") == {:ok, "image/png"}
-    end
-
-    @tag :pending
-    test "exe" do
-      assert FileSniffer.type_from_extension("exe") == {:ok, "application/octet-stream"}
+    test "returns an empty list if the file if empty" do
+      empty_file_path = Path.join(["assets", "empty.txt"])
+      assert Newsletter.read_emails(empty_file_path) == []
     end
   end
 
-  describe "get type from binary:" do
-    @tag :pending
-    test "bmp" do
-      assert FileSniffer.type_from_binary(@bmp_file) == {:ok, "image/bmp"}
+  describe "open_log" do
+    test "returns a pid" do
+      file = Newsletter.open_log(@temp_file_path)
+      assert is_pid(file)
+      File.close(file)
     end
 
-    @tag :pending
-    test "gif" do
-      assert FileSniffer.type_from_binary(@gif_file) == {:ok, "image/gif"}
-    end
-
-    @tag :pending
-    test "jpg" do
-      assert FileSniffer.type_from_binary(@jpg_file) == {:ok, "image/jpg"}
-    end
-
-    @tag :pending
-    test "png" do
-      assert FileSniffer.type_from_binary(@png_file) == {:ok, "image/png"}
-    end
-
-    @tag :pending
-    test "exe" do
-      assert FileSniffer.type_from_binary(@exe_file) == {:ok, "application/octet-stream"}
+    test "opens the file for writing" do
+      file = Newsletter.open_log(@temp_file_path)
+      assert IO.write(file, "hello") == :ok
+      assert File.read!(@temp_file_path) == "hello"
+      File.close(file)
     end
   end
 
-  describe "verify valid files" do
-    @tag :pending
-    test "bmp" do
-      assert FileSniffer.verify(@bmp_file, "bmp") == {:ok, "image/bmp"}
+  describe "log_sent_email" do
+    test "returns ok" do
+      file = File.open!(@temp_file_path, [:write])
+      assert Newsletter.log_sent_email(file, "janice@example.com") == :ok
+      File.close(file)
     end
 
-    @tag :pending
-    test "gif" do
-      assert FileSniffer.verify(@gif_file, "gif") == {:ok, "image/gif"}
+    test "writes the email address to the given file" do
+      file = File.open!(@temp_file_path, [:write])
+      Newsletter.log_sent_email(file, "joe@example.com")
+      assert File.read!(@temp_file_path) == "joe@example.com\n"
+      File.close(file)
     end
 
-    @tag :pending
-    test "jpg" do
-      assert FileSniffer.verify(@jpg_file, "jpg") == {:ok, "image/jpg"}
-    end
+    test "writes many email addresses to the given file" do
+      file = File.open!(@temp_file_path, [:write])
+      Newsletter.log_sent_email(file, "joe@example.com")
+      Newsletter.log_sent_email(file, "kathrine@example.com")
+      Newsletter.log_sent_email(file, "lina@example.com")
 
-    @tag :pending
-    test "png" do
-      assert FileSniffer.verify(@png_file, "png") == {:ok, "image/png"}
-    end
+      assert File.read!(@temp_file_path) ==
+               "joe@example.com\nkathrine@example.com\nlina@example.com\n"
 
-    @tag :pending
-    test "exe" do
-      assert FileSniffer.verify(@exe_file, "exe") == {:ok, "application/octet-stream"}
+      File.close(file)
     end
   end
 
-  describe "reject invalid files" do
-    @tag :pending
-    test "bmp" do
-      assert FileSniffer.verify(@exe_file, "bmp") == {:error, "Warning, file format and file extension do not match."}
+  describe "close_log" do
+    test "returns ok" do
+      file = File.open!(@temp_file_path, [:write])
+      assert Newsletter.close_log(file) == :ok
     end
 
-    @tag :pending
-    test "gif" do
-      assert FileSniffer.verify(@exe_file, "gif") == {:error, "Warning, file format and file extension do not match."}
+    test "closes the file" do
+      file = File.open!(@temp_file_path, [:read])
+      assert Newsletter.close_log(file) == :ok
+      assert IO.read(file, :all) == {:error, :terminated}
+    end
+  end
+
+  describe "send_newsletter" do
+    test "returns ok" do
+      send_fun = fn _ -> :ok end
+
+      assert Newsletter.send_newsletter(
+               Path.join(["assets", "emails.txt"]),
+               @temp_file_path,
+               send_fun
+             ) == :ok
     end
 
-    @tag :pending
-    test "jpg" do
-      assert FileSniffer.verify(@exe_file, "jpg") == {:error, "Warning, file format and file extension do not match."}
+    test "calls send function for every email from the emails file" do
+      send_fun = fn email -> send(self(), {:send, email}) && :ok end
+
+      Newsletter.send_newsletter(Path.join(["assets", "emails.txt"]), @temp_file_path, send_fun)
+
+      assert_received {:send, "alice@example.com"}
+      assert_received {:send, "bob@example.com"}
+      assert_received {:send, "charlie@example.com"}
+      assert_received {:send, "dave@example.com"}
     end
 
-    @tag :pending
-    test "png" do
-      assert FileSniffer.verify(@exe_file, "png") == {:error, "Warning, file format and file extension do not match."}
+    test "logs emails that were sent" do
+      send_fun = fn _ -> :ok end
+
+      Newsletter.send_newsletter(Path.join(["assets", "emails.txt"]), @temp_file_path, send_fun)
+
+      assert File.read!(@temp_file_path) ==
+               """
+               alice@example.com
+               bob@example.com
+               charlie@example.com
+               dave@example.com
+               """
     end
 
-    @tag :pending
-    test "exe" do
-      assert FileSniffer.verify(@png_file, "exe") == {:error, "Warning, file format and file extension do not match."}
+    test "does not log emails that could not be sent" do
+      send_fun = fn
+        "bob@example.com" -> :error
+        "charlie@example.com" -> :error
+        _ -> :ok
+      end
+
+      Newsletter.send_newsletter(Path.join(["assets", "emails.txt"]), @temp_file_path, send_fun)
+
+      assert File.read!(@temp_file_path) == """
+             alice@example.com
+             dave@example.com
+             """
+    end
+
+    test "logs the email immediately after it was sent" do
+      send_fun = fn email ->
+        case email do
+          "alice@example.com" ->
+            :ok
+
+          "bob@example.com" ->
+            assert File.read!(@temp_file_path) == """
+                   alice@example.com
+                   """
+
+            :ok
+
+          "charlie@example.com" ->
+            assert File.read!(@temp_file_path) == """
+                   alice@example.com
+                   bob@example.com
+                   """
+
+            :error
+
+          "dave@example.com" ->
+            assert File.read!(@temp_file_path) == """
+                   alice@example.com
+                   bob@example.com
+                   """
+
+            :ok
+        end
+      end
+
+      Newsletter.send_newsletter(Path.join(["assets", "emails.txt"]), @temp_file_path, send_fun)
+
+      assert File.read!(@temp_file_path) ==
+               """
+               alice@example.com
+               bob@example.com
+               dave@example.com
+               """
     end
   end
 end
