@@ -1,3 +1,5 @@
+// @ts-check
+
 import { checkStatus, checkInventory } from './grocer';
 
 // ADD YOUR CODE BELOW HERE.

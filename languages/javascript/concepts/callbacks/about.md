@@ -1,10 +1,15 @@
-[_Callbacks_ describe the pattern][wiki-callbacks] where a function receives a function as an argument to invoke when it arrives at a condition. The condition may be that its own work is done, or that an event has occurred. This is a useful pattern in JavaScript because it is designed as a single-threaded runtime where only one function call can be executed at a time. During execution, the runtime cannot respond to other events or continue execution until the function has returned. You might have noticed this on website when they seem to "freeze" or become unresponsive.
+[_Callbacks_ describe the pattern][wiki-callbacks] where a function receives a function as an argument to invoke when it arrives at a condition. The condition may be that its own work is done, or that an event has occurred, or that some predicate passes. It can be synchronous; it can be asynchronous. 
+
+This is a useful pattern in JavaScript because it is designed as a single-threaded runtime where only one function call can be executed at a time. During execution, the runtime cannot respond to other events or continue execution until the function has returned. You might have noticed this on website when they seem to "freeze" or become unresponsive.
 
 But many API calls (often I/O functions, timers, and event listeners) use an asynchronous mechanism to place the [current function call][mdn-concurrency-stack] on the side until the work is complete. Upon completion, a callback function is placed on the [message queue][mdn-concurrency-queue] so that when the runtime is in between function calls, the messages are then processed by invoking the callback function.
 
+It is also useful when the `callback` (the argument passed in) may not be defined (created) at the calling site. In other words: it may have been passed down from a different place in the program. 
+
+If the `callback` function _returns_ a boolean or boolean-like value, which is intended to be used (as opposed to a throwaway return value), it's called a predicate.
 ## Synchronous Code
 
-A synchronous code is when one function is executed after the other. The order is fixed.
+A synchronous call is when one function is executed after the other. The order is fixed.
 
 ```javascript
 function triangleArea(height, base) {
@@ -17,7 +22,7 @@ triangleArea(40, 3) // => 60
 
 ## Asynchronous Code
 
-When an asynchronous function is invoked, there is no way to know for certain when it will return. This is a problem because now we can't return values directly from asynchronous code.
+When an asynchronous function is invoked, there is no way to know for certain when it will finish its work. This means there is no value to act on when the function returns to the caller.
 
 ```javascript
 // This is broken, it may or may not return your value in time to be used
@@ -33,7 +38,7 @@ function areaCallback(area) {
 }
 
 function asynchronousTriangleArea(height, base, areaCallback) {
-  return areaCallback((height * base) / 2)
+  areaCallback((height * base) / 2)
 }
 
 // This outputs the area of the triangle to the console as expected.

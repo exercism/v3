@@ -7,7 +7,7 @@ const squareLength = 5
 
 // Caller function takes a callback function
 function applyToSquare(callback) {
-  return callback(squareLength)
+  callback(squareLength)
 }
 
 // Callback must expect the possible argument from the calling function
@@ -25,3 +25,9 @@ applyToSquare(function squarePerimeter(side) {
   return side * 4
 })
 ```
+Or an anonymous inline arrow function expression:
+
+```javascript
+applyToSquare((side) => side * 4)
+```
+// The argument "(side) => side * 4" is the callback

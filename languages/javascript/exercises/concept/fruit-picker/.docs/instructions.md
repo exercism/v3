@@ -18,10 +18,10 @@ The grocer's API provides a function to query their inventory called `checkInven
 
 The query takes the form of an _object_:
 
-```javascript
+```typescript
 const query = {
-  variety: <string>,
-  quantity: <number>
+  variety: string,
+  quantity: number
 }
 ```
 
