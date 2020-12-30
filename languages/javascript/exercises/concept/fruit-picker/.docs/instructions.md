@@ -21,7 +21,7 @@ The query takes the form of an _object_:
 ```typescript
 const query = {
   variety: string,
-  quantity: number
+  quantity: number,
 }
 ```
 

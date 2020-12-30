@@ -25,9 +25,11 @@ applyToSquare(function squarePerimeter(side) {
   return side * 4
 })
 ```
+
 Or an anonymous inline arrow function expression:
 
 ```javascript
 applyToSquare((side) => side * 4)
 ```
-// The argument "(side) => side * 4" is the callback
+
+// The argument "(side) => side \* 4" is the callback
