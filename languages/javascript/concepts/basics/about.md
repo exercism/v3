@@ -4,7 +4,7 @@ While it is most well-known as the scripting language for Web pages, many non-br
 
 ## Constants, `const` and immutability
 
-In the introduction, the `const` keyword was mentioned _both_ for variables and constants. Another concept often mentioned around constants is [(im)-mutability][wiki-mutability].
+The `const` keyword is mentioned _both_ for variables and constants. Another concept often mentioned around constants is [(im)-mutability][wiki-mutability].
 
 The `const` keyword only makes the _binding_ immutable, that is, you can only assign a value to a `const` variable once. In JavaScript, only [primitive][mdn-primitive] values are immutable. However, [non primitive][mdn-primitive] values can still be mutated.
 
