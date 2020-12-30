@@ -9,7 +9,7 @@
  * @returns {number} number of cards of a single type there are in the deck
  */
 export function cardTypeCheck(stack, card) {
-  throw new Error('Implement the cardTypeCheck function')
+  throw new Error('Implement the cardTypeCheck function');
 }
 
 /**
@@ -21,7 +21,7 @@ export function cardTypeCheck(stack, card) {
  * @returns {number} the number of unique cards there any in the stack
  */
 export function determineUniqueCards(stack, card) {
-  throw new Error('Implement the determineUniqueCards function')
+  throw new Error('Implement the determineUniqueCards function');
 }
 
 /**
@@ -32,5 +32,5 @@ export function determineUniqueCards(stack, card) {
  * @returns {number} number of cards that are either odd or even (depending on `type`)
  */
 export function determineOddEvenCards(stack, type) {
-  throw new Error('Implement the determineOddEvenCards function')
+  throw new Error('Implement the determineOddEvenCards function');
 }

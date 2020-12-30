@@ -4,7 +4,6 @@ This is the markdown file with the introduction to the concept and exercise.
 See https://github.com/exercism/v3/blob/master/docs/concept-exercises.md#docsintroductionmd
 -->
 
-
 In JavaScript, arrays are used to store multiple values in a single variable! These values can be of any type you choose, and can even be of multiple types. Arrays are also given lots of built-in methods, some of which can be used to loop over the values, giving you access to a single one on each iteration.
 
 Each of these built-in methods have a different use case, and differing syntaxes to go along with them.
@@ -13,19 +12,19 @@ Looping over an array using its prototype is as easy as invoking `Array.prototyp
 
 Note that because `forEach` doesn't directly expose the underlying `for` loops, you cannot use the `break` statement in the callback.
 
-*Basic example of Array.prototype.forEach*:
+_Basic example of Array.prototype.forEach_:
 
 ```js
 const numbers = [1, 2, 3, 4, 6, 7, 8, 9]
 
 numbers.forEach((currentValue, currentIndex, fullArray) => {
-    if (currentIndex-- = currentValue) {
-        console.log(fullArray);
-    }
+  if ((currentIndex-- = currentValue)) {
+    console.log(fullArray)
+  }
 })
 ```
 
-*Using the second parameter*:
+_Using the second parameter_:
 
 ```js
 function Counter() {
@@ -33,7 +32,7 @@ function Counter() {
   this.count = 0
 }
 
-Counter.prototype.add = function(array) {
+Counter.prototype.add = function (array) {
   array.forEach((entry) => {
     this.sum += entry
     ++this.count
@@ -46,7 +45,7 @@ const obj = new Counter()
 obj.add([3, 4, 5])
 
 console.log(obj.count)
-// 3 
+// 3
 console.log(obj.sum)
 // 12
 ```
@@ -55,15 +54,15 @@ console.log(obj.sum)
 
 Sometimes, efficiency is more valuable than convenience (for instance, when you're designing a performance-critical algorithm). In this case, you may want to `break` out of the loop at a given point. Although using `forEach` may not allow this, using a conventional `for` loop does.
 
-*Using a for loop to iterate over an Array*:
+_Using a for loop to iterate over an Array_:
 
 ```js
 const answersToEverything = [42, 42, 42]
 
-for (let index = 0;  index < answersToEverything.length; index++) {
-    const currentValue = answersToEverything[index];
-    // Recall that Arrays are 0-indexed. As such, we can just get the current element by using index.
-    console.log(currentValue);
+for (let index = 0; index < answersToEverything.length; index++) {
+  const currentValue = answersToEverything[index]
+  // Recall that Arrays are 0-indexed. As such, we can just get the current element by using index.
+  console.log(currentValue)
 }
 ```
 
@@ -73,14 +72,14 @@ However, while you might access the current value in the iteration, you may not 
 
 A `for .. of` loop is syntactical sugar that creates a regular `for` loop over an iterable objects. It functions in the same way that a `for` loop does, but without directly exposing the current iteration index.
 
-*Using a `for .. of` loop using `const`*:
+_Using a `for .. of` loop using `const`_:
 
 ```js
-const numbers = [ 6.0221515, 10, 23  ]
+const numbers = [6.0221515, 10, 23]
 
 // Because we won't be modifying any of the values, using const is preferable.
 for (const number of numbers) {
-    console.log(number)
+  console.log(number)
 }
 
 // Output:
@@ -89,16 +88,16 @@ for (const number of numbers) {
 // 23
 ```
 
-*Using a `for .. of` loop using `let` or `var`*:
+_Using a `for .. of` loop using `let` or `var`_:
 
 ```js
-const numbers = [ 18, 62, 82  ]
+const numbers = [18, 62, 82]
 
 // Using a mutable keyword allows us to change values in the array.
 for (let number of numbers) {
-    number += 1;
+  number += 1
 
-    console.log(number)
+  console.log(number)
 }
 
 // Output:
