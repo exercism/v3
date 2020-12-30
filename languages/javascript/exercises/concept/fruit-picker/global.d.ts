@@ -4,11 +4,14 @@
  * type information on the fly
  */
 
+type Status = 'OFFLINE' | 'ONLINE';
+type AvailabilityAction = 'NOOP' | 'PURCHASE';
+
 interface CheckStatus {
   callback: StatusCallback;
 }
 
-type StatusCallback = (response: string) => boolean;
+type StatusCallback = (response: Status) => boolean;
 
 interface CheckInventory {
   query: GrocerQuery;
@@ -20,4 +23,7 @@ type GrocerQuery = {
   quantity: number;
 };
 
-type InventoryCallback = (err: string | null, isAvailable: boolean) => string;
+type InventoryCallback = (
+  err: string | null,
+  isAvailable: boolean
+) => AvailabilityAction;

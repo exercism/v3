@@ -62,7 +62,7 @@ export function resetQuery() {
  * Checks the inventory (RESPONSE) then invokes the callback with the result
  * @param  {GrocerQuery} query
  * @param  {InventoryCallback} callback
- * @return {ReturnType<typeof InventoryCallback>} return the result of the callback
+ * @return {AvailabilityAction} return the result of the callback
  */
 export function checkInventory(query, callback) {
   LAST_QUERY = query;
