@@ -17,7 +17,7 @@ describe('service status', () => {
     resetStatus();
   });
 
-  test('returns the reset status of the service', () => {
+  test('returns the initial status of the service', () => {
     expect(isServiceOnline()).toBe(false);
   });
 
