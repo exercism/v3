@@ -8,7 +8,7 @@ In JavaScript, arrays are used to store multiple values in a single variable! Th
 
 Each of these built-in methods have a different use case, and differing syntaxes to go along with them.
 
-Looping over an array using its prototype can be accomplished using `Array.prototype.forEach`. `forEach` takes in two parameters: a callback function and a lexical context. The callback is a function that is called every time the loop index is increased, and takes in three parameters: the current value, the current index, and the array as a whole. The second parameter to `forEach` is useful when using this method in another prototypal context (which is out of scope for this exercise). 
+Looping over an array using its prototype can be accomplished using `Array.prototype.forEach`. `forEach` takes in two parameters: a callback function and a lexical context. The callback is a function that is called every time the loop index is increased, and takes in three parameters: the current value, the current index, and the array as a whole. The second parameter to `forEach` is useful when using this method in another prototypal context (which is out of scope for this exercise).
 
 Note that because `forEach` doesn't directly expose the underlying `for` loops, the `break` statement cannot be used in the callback.
 
@@ -23,7 +23,6 @@ numbers.forEach((currentValue, currentIndex, fullArray) => {
   }
 })
 ```
-
 
 ---
 
