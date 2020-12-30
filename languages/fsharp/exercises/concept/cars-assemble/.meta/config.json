@@ -7,7 +7,7 @@
   ],
   "forked_from": ["csharp/numbers"],
   "editor": {
-    "solution_files": ["AssemblyLine.fs"],
-    "test_files": ["AssemblyLineTests.fs"]
+    "solution_files": ["CarsAssemble.fs"],
+    "test_files": ["CarsAssembleTests.fs"]
   }
 }

@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://lispcookbook.github.io/cl-cookbook/functions.html",
+    "description": "Lisp Cookbook on Functions"
+  },
+  {
+    "url": "http://www.gigamonkeys.com/book/functions.html",
+    "description": "Practical Common Lisp on Functions"
+  },
+  {
+    "url": "http://l1sp.org/cl/defun",
+    "description": "Hyperspec page on defun"
+  }
+]

@@ -1,3 +1,5 @@
+## inheritance
+
 In C#, a _class_ hierarchy can be defined using _inheritance_, which allows a derived class (`Car`) to inherit the behavior and data of its parent class (`Vehicle`). If no parent is specified, the class inherits from the `object` class.
 
 Parent classes can provide functionality to derived classes in three ways:
@@ -58,4 +60,45 @@ class Car : Vehicle
         Console.WriteLine("Called second");
     }
 }
+```
+
+Where more than one class is derived from a base class the two (or more) classes will often implement different versions of a base class method. This is a very important principle called polymorphism. For instance in a variation on the above example we show how code using `Vehicle` can change its behavior depending on what type of vehicle has been instantiated.
+
+```csharp
+abstract class Vehicle
+{
+   public abstract string GetDescription();
+}
+
+class Car : Vehicle
+{
+   public Car()
+   {
+   }
+
+   public override string GetDescription()
+   {
+      return "Runabout";
+   }
+}
+
+class Rig : Vehicle
+{
+   public Rig()
+   {
+   }
+
+   public override string GetDescription()
+   {
+      return "Big Rig";
+   }
+}
+
+Vehicle v1 = new Car();
+Vehicle v2 = new Rig();
+
+v1.GetDescription();
+// => Runabout
+v2.GetDescription();
+// => Big Rig
 ```

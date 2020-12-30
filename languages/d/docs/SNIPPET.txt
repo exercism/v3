@@ -1,0 +1,7 @@
+module helloworld;
+
+import std.format;
+
+string hello(const char[] s = "World") {
+    return format("Hello, %s!", s);
+}

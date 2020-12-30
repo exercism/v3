@@ -1,0 +1,10 @@
+[
+    {
+        "url": "https://docs.julialang.org/en/v1/manual/interfaces/#man-interface-iteration",
+        "description": "Julia Manual"
+    },
+    {
+        "url": "https://invenia.github.io/blog/2020/11/06/interfacetesting/",
+        "description": "Development with Interface Packages"
+    }
+]

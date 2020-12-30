@@ -1,0 +1,4 @@
+
+(let ((quine '((lambda (q) `(,q ',q))
+               '(lambda (q) `(,q ',q)))))
+  (equal? quine (eval quine)))

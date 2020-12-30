@@ -283,10 +283,6 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
               "name": "enums"
-            },
-            {
-              "url": null,
-              "name": "pattern-matching-constants"
             }
           ],
           "prerequisites": [
@@ -360,10 +356,6 @@
             },
             {
               "url": null,
-              "name": "overflow"
-            },
-            {
-              "url": null,
               "name": "switch-statements"
             }
           ]
@@ -374,7 +366,7 @@
           "concepts": [
             {
               "url": null,
-              "name": "conditionals-ternary"
+              "name": "ternary-operators"
             },
             {
               "url": null,
@@ -430,11 +422,7 @@
           "concepts": [
             {
               "url": null,
-              "name": "bit-manipulation"
-            },
-            {
-              "url": null,
-              "name": "compound-assignment"
+              "name": "attributes"
             },
             {
               "url": null,
@@ -444,7 +432,7 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "attributes"
+              "name": "bit-manipulation"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
@@ -634,10 +622,6 @@
           "concepts": [
             {
               "url": null,
-              "name": "accessibility"
-            },
-            {
-              "url": null,
               "name": "namespaces"
             }
           ],
@@ -733,8 +717,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/why-cant-i-push-to-main",
-          "slug": "why-cant-i-push-to-main",
+          "url": "https://github.com/exercism/v3/tree/master/languages/csharp/exercises/concept/developer-privileges",
+          "slug": "developer-privileges",
           "concepts": [
             {
               "url": null,
@@ -1084,7 +1068,7 @@
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/datetime.md",
-              "name": "datetime"
+              "name": "datetimes"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
@@ -1144,7 +1128,7 @@
             },
             {
               "url": null,
-              "name": "arithmetic-overflow"
+              "name": "overflow"
             },
             {
               "url": null,
@@ -1187,15 +1171,119 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/lists",
-          "slug": "lists",
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/lucians-luscious-lasagna",
+          "slug": "lucians-luscious-lasagna",
+          "concepts": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ],
+          "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/tracks-on-tracks-on-tracks",
+          "slug": "tracks-on-tracks-on-tracks",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
               "name": "lists"
             }
           ],
-          "prerequisites": []
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/bird-watcher",
+          "slug": "bird-watcher",
+          "concepts": [
+            {
+              "url": null,
+              "name": "vectors"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/cars-assemble",
+          "slug": "cars-assemble",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/interest-is-interesting",
+          "slug": "interest-is-interesting",
+          "concepts": [
+            {
+              "url": null,
+              "name": "floating-point-numbers"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/annalyns-infiltration",
+          "slug": "annalyns-infiltration",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/clojure/exercises/concept/log-levels",
+          "slug": "log-levels",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
         }
       ]
     }
@@ -1348,6 +1436,30 @@
               "name": "strings"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/lillys-lasagna",
+          "slug": "lillys-lasagna",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/expressions.md",
+              "name": "expressions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
+              "name": "integers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/arithmetic.md",
+              "name": "arithmetic"
+            }
+          ]
         }
       ]
     }
@@ -1439,6 +1551,26 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
               "name": "booleans"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/freelancer-rates",
+          "slug": "freelancer-rates",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
+              "name": "integers"
+            },
+            {
+              "url": null,
+              "name": "floating-point-numbers"
             }
           ],
           "prerequisites": [
@@ -1948,7 +2080,7 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "io"
+              "name": "file"
             },
             {
               "url": null,
@@ -1999,10 +2131,6 @@
             {
               "url": null,
               "name": "pipe-operator"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/range.md",
-              "name": "ranges"
             }
           ],
           "prerequisites": [
@@ -2017,6 +2145,14 @@
             {
               "url": null,
               "name": "if"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/range.md",
+              "name": "ranges"
+            },
+            {
+              "url": null,
+              "name": "randomness"
             }
           ]
         },
@@ -2111,6 +2247,98 @@
               "name": "nil"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/rpg-character-sheet",
+          "slug": "rpg-character-sheet",
+          "concepts": [
+            {
+              "url": null,
+              "name": "io"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/map.md",
+              "name": "maps"
+            },
+            {
+              "url": null,
+              "name": "atoms"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/captains-log",
+          "slug": "captains-log",
+          "concepts": [
+            {
+              "url": null,
+              "name": "erlang-libraries"
+            },
+            {
+              "url": null,
+              "name": "randomness"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
+              "name": "enum"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/range.md",
+              "name": "ranges"
+            },
+            {
+              "url": null,
+              "name": "floating-point-numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": null,
+              "name": "charlists"
+            },
+            {
+              "url": null,
+              "name": "atoms"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/chessboard",
+          "slug": "chessboard",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/range.md",
+              "name": "ranges"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
+              "name": "enum"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
+              "name": "integers"
+            },
+            {
+              "url": null,
+              "name": "bitstrings"
+            },
+            {
+              "url": null,
+              "name": "charlists"
+            }
+          ]
         }
       ]
     }
@@ -2120,7 +2348,19 @@
     "name": "Elm",
     "slug": "elm",
     "exercises": {
-      "concept": []
+      "concept": [
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elm/exercises/concept/lucians-luscious-lasagna",
+          "slug": "lucians-luscious-lasagna",
+          "concepts": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ],
+          "prerequisites": []
+        }
+      ]
     }
   },
   {
@@ -2166,8 +2406,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lasagna",
-          "slug": "lasagna",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/lucians-luscious-lasagna",
+          "slug": "lucians-luscious-lasagna",
           "concepts": [
             {
               "url": null,
@@ -2193,8 +2433,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/beauty-salon",
-          "slug": "beauty-salon",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/booking-up-for-beauty",
+          "slug": "booking-up-for-beauty",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/datetime.md",
@@ -2233,8 +2473,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/savings-account",
-          "slug": "savings-account",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/interest-is-interesting",
+          "slug": "interest-is-interesting",
           "concepts": [
             {
               "url": null,
@@ -2273,8 +2513,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/assembly-line",
-          "slug": "assembly-line",
+          "url": "https://github.com/exercism/v3/tree/master/languages/fsharp/exercises/concept/cars-assemble",
+          "slug": "cars-assemble",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
@@ -2473,6 +2713,26 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
               "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/go/exercises/concept/constants",
+          "slug": "constants",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/constants.md",
+              "name": "constants"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
             }
           ]
         },
@@ -2710,22 +2970,6 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/arrays",
-          "slug": "arrays",
-          "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
-              "name": "arrays"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
-              "name": "booleans"
-            }
-          ]
-        },
-        {
           "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/basics",
           "slug": "basics",
           "concepts": [
@@ -2749,6 +2993,30 @@
             {
               "url": null,
               "name": "basics"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/java/exercises/concept/bird-watcher",
+          "slug": "bird-watcher",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            },
+            {
+              "url": null,
+              "name": "for-loops"
+            },
+            {
+              "url": null,
+              "name": "foreach-loops"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
             }
           ]
         },
@@ -3237,28 +3505,76 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/leap",
+          "slug": "leap",
+          "concepts": [
+            {
+              "url": null,
+              "name": "arithmetic-operators"
+            },
+            {
+              "url": null,
+              "name": "integer-equality"
+            },
+            {
+              "url": null,
+              "name": "boolean-expressions"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "functions-introduction"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/boolean_logic.md",
+              "name": "boolean-logic"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/vehicle-purchase",
+          "slug": "vehicle-purchase",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            },
+            {
+              "url": null,
+              "name": "if-statements"
+            },
+            {
+              "url": null,
+              "name": "ternary-operator"
+            },
+            {
+              "url": null,
+              "name": "short-circuit-evaluation"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "boolean-expressions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/exercism-matrix",
           "slug": "exercism-matrix",
           "concepts": [
             {
               "url": null,
               "name": "matrices-introduction"
-            },
-            {
-              "url": null,
-              "name": "matrices-concatenation"
-            },
-            {
-              "url": null,
-              "name": "matrices-indices"
-            },
-            {
-              "url": null,
-              "name": "matrices-iteration"
-            },
-            {
-              "url": null,
-              "name": "matrices-mutation"
             }
           ],
           "prerequisites": [
@@ -3323,6 +3639,46 @@
               "name": "constants"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/julia/exercises/concept/fibonacci-iterator",
+          "slug": "fibonacci-iterator",
+          "concepts": [
+            {
+              "url": null,
+              "name": "iterator-protocol"
+            },
+            {
+              "url": null,
+              "name": "optional-arguments"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/multiple-dispatch.md",
+              "name": "multiple-dispatch"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
+            },
+            {
+              "url": null,
+              "name": "nothingness"
+            },
+            {
+              "url": null,
+              "name": "parametric-types"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
+            }
+          ]
         }
       ]
     }
@@ -3343,6 +3699,22 @@
             }
           ],
           "prerequisites": []
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/kotlin/exercises/concept/annalyns-infiltration",
+          "slug": "annalyns-infiltration",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            }
+          ]
         }
       ]
     }
@@ -3417,10 +3789,6 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "basics"
-            },
-            {
-              "url": null,
               "name": "bools"
             },
             {
@@ -3475,24 +3843,16 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
-            },
-            {
-              "url": null,
-              "name": "bools"
-            },
-            {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
               "name": "loops"
             },
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
-              "name": "numbers"
-            },
-            {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
               "name": "lists"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
             }
           ]
         },
@@ -3507,10 +3867,6 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
-            },
-            {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
               "name": "classes"
             },
@@ -3519,40 +3875,16 @@
               "name": "conditionals"
             },
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/enumeration.md",
-              "name": "enumeration"
-            },
-            {
               "url": null,
-              "name": "indexing"
-            },
-            {
-              "url": null,
-              "name": "iteration"
-            },
-            {
-              "url": null,
-              "name": "list-comprehensions"
+              "name": "comprehensions"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
               "name": "loops"
             },
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/methods.md",
-              "name": "methods"
-            },
-            {
               "url": null,
               "name": "sequences"
-            },
-            {
-              "url": null,
-              "name": "slicing"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
-              "name": "strings"
             },
             {
               "url": null,
@@ -3579,20 +3911,12 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
-            },
-            {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comparisons.md",
               "name": "comparisons"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
               "name": "conditionals"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
-              "name": "lists"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
@@ -3611,24 +3935,8 @@
           ],
           "prerequisites": [
             {
-              "url": null,
-              "name": "basics"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/comparisons.md",
-              "name": "comparisons"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
-              "name": "conditionals"
-            },
-            {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
               "name": "lists"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
-              "name": "strings"
             }
           ]
         },
@@ -3644,10 +3952,6 @@
           "prerequisites": [
             {
               "url": null,
-              "name": "basics"
-            },
-            {
-              "url": null,
               "name": "bools"
             },
             {
@@ -3655,20 +3959,12 @@
               "name": "conditionals"
             },
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/default_arguments.md",
-              "name": "default-arguments"
-            },
-            {
-              "url": null,
-              "name": "dicts"
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
             },
             {
               "url": null,
               "name": "dict-methods"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
-              "name": "lists"
             },
             {
               "url": null,
@@ -3709,6 +4005,42 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
               "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/little-sisters-essay",
+          "slug": "little-sisters-essay",
+          "concepts": [
+            {
+              "url": null,
+              "name": "string-methods"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/currency-exchange",
+          "slug": "currency-exchange",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "basics"
             }
           ]
         }
@@ -3889,7 +4221,7 @@
             },
             {
               "url": null,
-              "name": "intro-option"
+              "name": "option"
             }
           ]
         },
@@ -3897,10 +4229,6 @@
           "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/numbers",
           "slug": "numbers",
           "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
-              "name": "numbers"
-            },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
               "name": "integers"
@@ -3926,12 +4254,7 @@
               "name": "enums-basic"
             }
           ],
-          "prerequisites": [
-            {
-              "url": null,
-              "name": "strings-basic"
-            }
-          ]
+          "prerequisites": []
         },
         {
           "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/structs",
@@ -3949,15 +4272,11 @@
             },
             {
               "url": null,
-              "name": "floats"
+              "name": "floating-point-numbers"
             },
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/integer.md",
               "name": "integers"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/signedness.md",
-              "name": "signedness"
             }
           ]
         },
@@ -3976,8 +4295,28 @@
               "name": "structs"
             },
             {
-              "url": null,
-              "name": "match.pattern-matching"
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/destructuring.md",
+              "name": "destructuring"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/tuples",
+          "slug": "tuples",
+          "concepts": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/tuple.md",
+              "name": "tuples"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/destructuring.md",
+              "name": "destructuring"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
+              "name": "structs"
             }
           ]
         }
@@ -4227,10 +4566,6 @@
             },
             {
               "url": null,
-              "name": "opaque-indices"
-            },
-            {
-              "url": null,
               "name": "string-components"
             },
             {
@@ -4326,18 +4661,6 @@
           "slug": "windowing-system",
           "concepts": [
             {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
-              "name": "structs"
-            },
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
-              "name": "classes"
-            },
-            {
-              "url": null,
-              "name": "initializers"
-            },
-            {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/methods.md",
               "name": "methods"
             },
@@ -4347,7 +4670,11 @@
             },
             {
               "url": null,
-              "name": "stored-properties"
+              "name": "structs-and-classes"
+            },
+            {
+              "url": null,
+              "name": "value-and-reference-types"
             }
           ],
           "prerequisites": [
