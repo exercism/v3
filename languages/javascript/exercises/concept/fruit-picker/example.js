@@ -2,22 +2,21 @@
 
 import { checkStatus, checkInventory } from './grocer';
 
-
 /**
  * Returns the service status as a boolean value
  * @return {boolean}
  */
 export function isServiceOnline() {
-  return checkStatus((serviceStatus) => serviceStatus === 'ONLINE'))
+  return checkStatus((serviceStatus) => serviceStatus === 'ONLINE');
 }
 
 /**
  * Pick a fruit using the checkInventory API
  *
  * @param {string} variety
- * @param {string} quantity
- * @param {function} callback
- * @return {unknown} the result from checkInventory
+ * @param {number} quantity
+ * @param {InventoryCallback} callback
+ * @return {'PURCHASE' | 'NOOP'} the result from checkInventory
  */
 export function pickFruit(variety, quantity, callback) {
   return checkInventory({ variety, quantity }, callback);

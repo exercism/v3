@@ -20,15 +20,8 @@ export function resetStatus() {
 }
 
 /**
- * This callback type is called `statusCallback`, is invoked when status api called
- *
- * @callback statusCallback
- * @param {string} response
- */
-
-/**
  * Invokes the callback with the store's status to simulate an API call
- * @param  {statusCallback} callback
+ * @param  {StatusCallback} callback
  */
 export function checkStatus(callback) {
   return callback(STATUS);
@@ -66,20 +59,10 @@ export function resetQuery() {
 }
 
 /**
- * This callback type is called `inventoryCallback`, is invoked when inventory api called
- *
- * @callback inventoryCallback
- * @param {(null|string)} err
- * @param {boolean} isAvailable
- */
-
-/**
  * Checks the inventory (RESPONSE) then invokes the callback with the result
- * @param  {Object} query
- * @param  {string} query.variety
- * @param  {number} query.quantity
- * @param  {inventoryCallback} callback
- * @return {unknown} return the result of the callback
+ * @param  {GrocerQuery} query
+ * @param  {InventoryCallback} callback
+ * @return {ReturnType<typeof InventoryCallback>} return the result of the callback
  */
 export function checkInventory(query, callback) {
   LAST_QUERY = query;
