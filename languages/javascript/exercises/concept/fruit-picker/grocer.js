@@ -2,21 +2,21 @@
  * STORE STATUS API
  */
 
-let STATUS = 'OFFLINE';
+let storeStatus = 'OFFLINE';
 
 /**
  * For testing purposes, set the store status
  * @param  {string} status
  */
 export function setStatus(status) {
-  STATUS = status;
+  storeStatus = status;
 }
 
 /**
  * For testing purposes, reset the store status
  */
 export function resetStatus() {
-  STATUS = 'OFFLINE';
+  storeStatus = 'OFFLINE';
 }
 
 /**
@@ -24,22 +24,22 @@ export function resetStatus() {
  * @param  {StatusCallback} callback
  */
 export function checkStatus(callback) {
-  return callback(STATUS);
+  return callback(storeStatus);
 }
 
 /**
  * INVENTORY API
  */
 
-let LAST_QUERY = undefined;
-let RESPONSE = undefined;
+let lastInventoryQuery = undefined;
+let inventoryResponse = undefined;
 
 /**
  * For testing purposes, set the response to return when queried
  * @param  {any} ...nextResponse
  */
 export function setResponse(...nextResponse) {
-  RESPONSE = nextResponse;
+  inventoryResponse = nextResponse;
 }
 
 /**
@@ -47,24 +47,24 @@ export function setResponse(...nextResponse) {
  * @return {string}
  */
 export function getLastQuery() {
-  return LAST_QUERY;
+  return lastInventoryQuery;
 }
 
 /**
  * For testing purposes, reset the last query
  */
 export function resetQuery() {
-  LAST_QUERY = undefined;
-  RESPONSE = ['undefined response'];
+  lastInventoryQuery = undefined;
+  inventoryResponse = ['undefined response'];
 }
 
 /**
- * Checks the inventory (RESPONSE) then invokes the callback with the result
+ * Checks the inventory (inventoryResponse) then invokes the callback with the result
  * @param  {GrocerQuery} query
  * @param  {InventoryCallback} callback
  * @return {AvailabilityAction} return the result of the callback
  */
 export function checkInventory(query, callback) {
-  LAST_QUERY = query;
-  return callback.apply(null, RESPONSE);
+  lastInventoryQuery = query;
+  return callback.apply(null, inventoryResponse);
 }
