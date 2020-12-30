@@ -1,10 +1,10 @@
-The name **closure** is historically derived from [_λ-calculus_][wiki-lambda-calculus] and popularized by [_scheme_][wiki-scheme] ([source][wiki-closure]) to reference a function's open and closed variable bindings. Lets revisit reasons to use **closures**:
+The name **closure** is historically derived from [_λ-calculus_][wiki-lambda-calculus] and popularized by [_scheme_][wiki-scheme] ([source][wiki-closure]) to reference a function's open and closed variable bindings. There are various reasons to use **closures**, not limited to:
 
 ## Reasons to use closures in JavaScript
 
 1. Data Privacy / Data Encapsulation
 
-   - Unlike other languages, there is no way to specify _private_ variables. So closures can be used to effectively emulate _private_ variables.
+   - Unlike other languages, in 2020, there was no way to specify _private_ variables. So closures can be used to effectively emulate _private_ variables (there was a proposal to introduce private variable notation, which might have become standard by the time you read this).
 
    ```javascript
    // Consider this function:
