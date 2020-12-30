@@ -1,12 +1,12 @@
-Null is a primitive value, used to represent an intentional absence of an object value.
+Null is a primitive value, used to represent an intentional absence of an object value. It's _falsy_, and its `typeof` is `object`.
 
 ```javascript
 var person = null;
 
 if (person) {
-    console.log("Person is not null");
+  console.log("person is not null");
 } else {
-    console.log("Person is null");
+  console.log("person is null");
 }
 ```
 
@@ -22,15 +22,6 @@ typeof null // => "object"
 typeof undefined // => "undefined"
 null === undefined // => evaluates to false by identity comparison
 null == undefined // => evaluates to true by truthy comparison
-```
-
-## Null and truthy comparisons
-
-Be aware on how `null` works with the equality (`==`) and identity (`===`) operators.
-
-```javascript
-null === null // => evaluates to true by identity comparison
-null == null // => evaluates to false by truthy comparison
 ```
 
 ## Nullish coalescing operator (??)
