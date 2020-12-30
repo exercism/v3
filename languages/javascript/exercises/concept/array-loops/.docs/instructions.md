@@ -6,15 +6,15 @@ See https://github.com/exercism/v3/blob/master/docs/concept-exercises.md#docsins
 
 As a budding magician, Elyse needs to be able to analyze her deck in lots of different ways.
 
-To keep things a little bit simpler, she only uses cards with values 1-10.
+To keep things a simple, she only uses cards with values 1-10.
 
-Try to use all three different methods of looping over arrays!
+Use all three different methods of looping over arrays!
 
 ## 1. Determine how many cards of a certain type are in the deck
 
-Write a function that takes in two parameters: an array of cards (Elyse's deck), and the card type that neeeds to be matched.
+Write a function that takes in two parameters: an array of cards (Elyse's deck), and the card type that needs to be matched.
 
-This function will return the number of cards in the deck that are a given type.
+This function will return the number of cards in the deck that are of a given type.
 
 ```javascript
 const cardType = 3
