@@ -184,7 +184,7 @@ The initial breakdown of these concepts, including the ordering, is based on the
 - [Default arguments](../../../reference/concepts/default_arguments.md)
 - Capture Syntax
 - Guards and defguard
-- Parameters prefixed with `_`
+- Arguments prefixed with `_`
 - Local variables
 - Expression results
 - Recursion
@@ -281,7 +281,7 @@ The concept exercises use the following concepts:
 | `maps`                           | Introduction to the map data type.                                                                        |
 | `module-attributes-as-constants` | Introduction to using module attributes as constants.                                                     |
 | `multiple-clause-functions`      | Named function can be overloaded and each attempted to invoke until one succeeds.                         |
-| `pattern-matching`               | Basic knowledge of pattern matching using `=/2` and on function parameters.                               |
+| `pattern-matching`               | Basic knowledge of pattern matching using `=/2` and on function arguments.                                |
 | `recursion`                      | How to write basic recursive functions.                                                                   |
 | `regular-expressions`            | Basic regular expression patterns and the use of the `~r` sigil.                                          |
 | `strings`                        | How to do string processing, concatenation, interpolation, and multiline strings.                         |
