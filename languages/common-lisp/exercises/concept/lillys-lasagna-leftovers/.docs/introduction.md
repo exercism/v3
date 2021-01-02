@@ -9,8 +9,8 @@ In Common Lisp a function can have some arguments are are optional. These are de
   (list x y (if z-supplied-p (list :z-was-supplied z)
                              (list :z-was-not-supplied z))))
 
-(default-parameters) ; => '(nil 'default (:z-was-not-supplied nil))
-(default-parameters 5 nil 10) => '(5 nil (:z-was-supplied 10))
+(default-parameters)          ;; => (NIL DEFAULT (:Z-WAS-NOT-SUPPLIED NIL))
+(default-parameters 5 nil 10) ;; => (5 NIL (:Z-WAS-SUPPLIED 10))
 ```
 
 ## named-parameters
@@ -24,16 +24,16 @@ When calling a function with keyword parameters the name of the parameter as a k
   (list x y (if z-supplied-p (list :z-was-supplied z)
                              (list :z-was-not-supplied z))))
 
-(keyword-parameters) ; => '(nil 'default (:z-was-not-supplied nil))
-(keyword-parameters :y 5) ; => '(nil 5 (:z-was-not-supplied nil))
-(keyword-parameters :z 10 :x 5) => '(5 nil (:z-was-supplied 10))
+(keyword-parameters)            ;; => (NIL DEFAULT (:Z-WAS-NOT-SUPPLIED NIL))
+(keyword-parameters :y 5)       ;; => (NIL 5 (:Z-WAS-NOT-SUPPLIED NIL))
+(keyword-parameters :z 10 :x 5) ;; => (5 NIL (:Z-WAS-SUPPLIED 10))
 ```
 
 Care should be taken when combining optional and keyword arguments as the keyword name and argument could be consumed by optional parameters:
 
 ```lisp
 (defun could-be-confusing (&optional x y &key z) (list x y z))
-(could-be-confusing :z 'huh?) ; => '(:z huh? nil)
+(could-be-confusing :z 'huh?) ;; => (:Z HUH? NIL)
 ```
 
 ## rest-parameters
@@ -42,10 +42,10 @@ In Common Lisp a function can have a parameter that will contain the "rest" of t
 
 ```lisp
 (defun rest-of-it (req &optional opt &rest rest) (list req opt rest))
-(rest-of-it 1) ; => '(1 nil nil)
-(rest-of-it 1 2) ; => '(1 2 nil)
-(rest-of-it 1 2 3) ; => '(1 2 (3))
-(rest-of-it 1 2 3 4 5) ; => '(1 2 (3 4 5))
+(rest-of-it 1)         ;; => (1 NIL NIL)
+(rest-of-it 1 2)       ;; => (1 2 NIL)
+(rest-of-it 1 2 3)     ;; => (1 2 (3))
+(rest-of-it 1 2 3 4 5) ;; => (1 2 (3 4 5))
 ```
 
 --

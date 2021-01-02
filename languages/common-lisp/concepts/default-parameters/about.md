@@ -2,16 +2,16 @@ An optional parameter is designated by the `&optional` lambda list keyword in a 
 
 ```lisp
 (defun optional-parameter (&optional (arg -1)) arg)
-(optional-parameter)    ; => -1
-(optional-parameter 13) ; => 13
+(optional-parameter)    ;; => -1
+(optional-parameter 13) ;; => 13
 ```
 
 Optional parameters must be put after required parameters but before named or rest parameters. Arguments are first bound to required parameters, then optional parameters and finally to rest and named parameters.
 
 ```lisp
 (defun req-and-opt (req &optional (opt -1)) (list req opt)
-(req-and-opt 1) => '(1 -1)
-(req-and-opt 1 13) => '(1 13)
+(req-and-opt 1)    ;; => (1 -1)
+(req-and-opt 1 13) ;; => (1 13)
 ```
 
 While multiple types of parameters can be combined with other types of parameters (optional and keyword arguments) this can be be problematic and should be done carefully. See the section on ("Mixing Different Parameter Types")(pcl-function) in Practical Common Lisp.

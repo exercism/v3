@@ -22,7 +22,7 @@ were? As a reminder, it takes 19 minutes to prepare a single layer.
 ```lisp
 (preparation-time 'sauce 'cheese 'right-handed-macaroni 'cheese 'sauce
                   'left-handed-macaroni 'sauce 'sauce 'cheese 'cheese)
-                  ;; => 190 (because there are 10 layers.
+                  ;; => 190 (because there are 10 layers.)
 ```
 
 ## 2. Allow changing the expected oven time
@@ -105,6 +105,6 @@ provided and it is `nil` or `0` then it should return
 `'looks-like-someone-was-hungry`.
 
 ```lisp
-(split-left-overs :human 5 :alien 5) ;; => 'JUST-SPLIT-IT
-(split-left-overs :weight NIL :human 5 :alien 5) ;; => 'LOOKS-LIKE-SOMEONE-WAS-HUNGRY
+(split-left-overs :human 5 :alien 5) ;; => :JUST-SPLIT-IT
+(split-left-overs :weight NIL :human 5 :alien 5) ;; => :LOOKS-LIKE-SOMEONE-WAS-HUNGRY
 ```
