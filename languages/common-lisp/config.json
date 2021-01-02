@@ -229,6 +229,7 @@
         "name": "Lilly's Lasagna Leftovers",
         "uuid": "44570800-47f5-11eb-9f38-542696d187f9",
         "concepts": [
+          "lambda-list",
           "named-parameters",
           "default-parameters",
           "rest-parameters"
@@ -684,6 +685,12 @@
       "slug": "integers",
       "name": "Integers",
       "blurb": "TODO: add blurb for integers concept"
+    },
+    {
+      "uuid": "4a364c88-4d16-11eb-8dd3-542696d187f9",
+      "slug": "lambda-list",
+      "name": "Lambda List",
+      "blurb": "The rules of parameter lists"
     },
     {
       "uuid": "65c600a7-7f6a-428f-9913-d6f127f35234",
