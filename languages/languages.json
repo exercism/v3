@@ -3429,6 +3429,50 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/fruit-picker",
+          "slug": "fruit-picker",
+          "concepts": [
+            {
+              "url": null,
+              "name": "callbacks"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/closures.md",
+              "name": "closures"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/object.md",
+              "name": "objects"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/error.md",
+              "name": "errors"
+            },
+            {
+              "url": null,
+              "name": "nullability"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/strings",
           "slug": "strings",
           "concepts": [
