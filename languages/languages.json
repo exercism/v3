@@ -2375,6 +2375,38 @@
               "name": "charlists"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/elixir/exercises/concept/newsletter",
+          "slug": "newsletter",
+          "concepts": [
+            {
+              "url": null,
+              "name": "file"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/enum.md",
+              "name": "enum"
+            },
+            {
+              "url": null,
+              "name": "io"
+            },
+            {
+              "url": null,
+              "name": "processes"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/pid.md",
+              "name": "pids"
+            }
+          ]
         }
       ]
     }
