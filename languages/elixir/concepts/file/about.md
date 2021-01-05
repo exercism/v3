@@ -63,7 +63,7 @@ File.stream!("file.txt")
 
 ## Paths
 
-All the functions working on files require a file path. File paths can be absolute or relative to the current directory. For manipulating paths, use functions from the [`Path`][path] module.
+All the functions working on files require a file path. File paths can be absolute or relative to the current directory. For manipulating paths, use functions from the [`Path`][path] module. For cross-platform compatibility, use [`Path.join/1`][path-join] to create paths. It will choose the platform-appropriate separator.
 
 ```elixir
 Path.expand(Path.join(["~", "documents", "important.txt"]))
@@ -88,3 +88,4 @@ Path.expand(Path.join(["~", "documents", "important.txt"]))
 [enumerable]: https://hexdocs.pm/elixir/Enumerable.html
 [collectable]: https://hexdocs.pm/elixir/Collectable.html
 [path]: https://hexdocs.pm/elixir/Path.html
+[path-join]: https://hexdocs.pm/elixir/Path.html#join/1
