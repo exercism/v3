@@ -1460,6 +1460,42 @@
               "name": "arithmetic"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/common-lisp/exercises/concept/lillys-lasagna-leftovers",
+          "slug": "lillys-lasagna-leftovers",
+          "concepts": [
+            {
+              "url": null,
+              "name": "lambda-list"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/named_parameters.md",
+              "name": "named-parameters"
+            },
+            {
+              "url": null,
+              "name": "default-parameters"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/rest_parameters.md",
+              "name": "rest-parameters"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/function.md",
+              "name": "functions"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/symbol.md",
+              "name": "symbols"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
+            }
+          ]
         }
       ]
     }
@@ -3425,6 +3461,50 @@
             {
               "url": null,
               "name": "variable-parameters"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/fruit-picker",
+          "slug": "fruit-picker",
+          "concepts": [
+            {
+              "url": null,
+              "name": "callbacks"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/closures.md",
+              "name": "closures"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
+              "name": "booleans"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/object.md",
+              "name": "objects"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            },
+            {
+              "url": null,
+              "name": "basics"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/error.md",
+              "name": "errors"
+            },
+            {
+              "url": null,
+              "name": "nullability"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/conditionals.md",
+              "name": "conditionals"
             }
           ]
         },
