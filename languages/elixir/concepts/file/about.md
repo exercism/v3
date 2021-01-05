@@ -52,7 +52,7 @@ File.close(file)
 
 ## Streaming files
 
-Reading a file with [`File.read/1`][file-read] is going to load the whole file into memory all at once. This might be a problem when working with really big files. To handle them efficiently, you might use [`File.open/2`][file-open] and [`IO.read/2`][io-read] to read the file line by line, or you can stream the file with [`File.stream/3`][file-stream]. The stream implements both the [`Enumerable`][enumerable] and [`Collectible`][collectable] protocols, which means it can be used both for reading and writing.
+Reading a file with [`File.read/1`][file-read] is going to load the whole file into memory all at once. This might be a problem when working with really big files. To handle them efficiently, you might use [`File.open/2`][file-open] and [`IO.read/2`][io-read] to read the file line by line, or you can stream the file with [`File.stream/3`][file-stream]. The stream implements both the [`Enumerable`][enumerable] and [`Collectable`][collectable] protocols, which means it can be used both for reading and writing.
 
 ```elixir
 File.stream!("file.txt")
