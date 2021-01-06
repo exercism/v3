@@ -12,8 +12,10 @@ pub fn languages() -> Vec<String> {
 pub fn grab(which: usize) -> Option<String> {
     if which == languages().len() {
         languages().pop()
+    } else if let Some(lang) = languages().get(which) {
+        Some(lang)
     } else {
-        languages().get(which).cloned()
+        None
     }
 }
 /// Gather your top languages to learn
