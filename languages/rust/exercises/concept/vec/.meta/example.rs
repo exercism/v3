@@ -8,12 +8,10 @@ pub fn languages() -> Vec<String> {
         "Scheme".to_string(),
     ]
 }
-/// Gather your top languages to learn
+/// Grab a language from your top five list
 pub fn grab(which: usize) -> Option<String> {
-    if which == languages().len() {
-        languages().pop()
-    } else if let Some(lang) = languages().get(which) {
-        Some(lang.to_string())
+    if let Some(lang) = languages().get(which) {
+        Some(lang.into())
     } else {
         None
     }
