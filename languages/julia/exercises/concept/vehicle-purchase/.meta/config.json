@@ -1,0 +1,20 @@
+{
+    "language_versions": "≥1.0",
+    "editor": {
+        "test_files": [
+            "runtests.jl"
+        ],
+        "solution_files": [
+            "vehicle-purchase.jl"
+        ]
+    },
+    "forked_from": [
+        "swift/vehicle-purchase"
+    ],
+    "authors": [
+        {
+            "github_username": "SaschaMann",
+            "exercism_username": "SaschaMann"
+        }
+    ]
+}

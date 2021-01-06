@@ -1,4 +1,4 @@
-(defpackage leslies-lists
+(defpackage :leslies-lists
   (:use :cl)
   (:export :new-list
            :list-of-things

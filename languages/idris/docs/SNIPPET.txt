@@ -1,0 +1,10 @@
+module EvenOdd
+
+data Even : Nat -> Type where
+  EZ : Even Z
+  ES : Even n -> Even (S (S n))
+
+total
+ee : Even n -> Even m -> Even (n + m)
+ee EZ m     = m
+ee (ES n) m = ES (ee n m)

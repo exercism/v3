@@ -1,3 +1,13 @@
+## loops
+
+## for-loops
+
+## while-loops
+
+## repeat-while
+
+## control-transfer
+
 ## Loops
 
 There are three primary types of loop constructs in Swift: while loops, repeat-while loops, and for-in loops.

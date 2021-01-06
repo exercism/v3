@@ -1,0 +1,10 @@
+@interface HelloWorld : NSObject
+- (NSString *)hello:(NSString *)name;
+@end
+
+@implementation HelloWorld
+- (NSString *)hello:(NSString *)name {
+  if (!name) { name = @"World"; }
+  return [NSString stringWithFormat:@"Hello, %@!", name];
+}
+@end

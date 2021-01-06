@@ -10,471 +10,470 @@
   },
   "exercises": {
     "concept": [],
-    "practice": []
+    "practice": [
+      {
+        "slug": "hello-world",
+        "uuid": "e436ce92-78b9-4b3b-b87e-581fa54cdc65",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "two-fer",
+        "uuid": "749dac4a-a746-4af7-aca6-db9e69ccad8c",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "bob",
+        "uuid": "835a4c46-c837-4684-a1ed-7d257c786d77",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "leap",
+        "uuid": "0b512415-2dcf-4dfb-a58f-2765f9a1427b",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "grains",
+        "uuid": "55316f62-e3b0-4be7-a478-9fc5ea827d15",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "raindrops",
+        "uuid": "85154a10-06e3-4543-8513-4de30b43d015",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "hamming",
+        "uuid": "5c35f654-8689-4fb3-af81-71fbe0c165f9",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "etl",
+        "uuid": "e193fb19-5122-405f-88e0-59e5ee94f64b",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "scrabble-score",
+        "uuid": "332370f1-a782-4ffb-a41a-867bf392f05f",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "word-count",
+        "uuid": "4693c5a5-948b-4650-9a37-9eb8ee2cfa6d",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "anagram",
+        "uuid": "c95418a3-d868-42dc-b39d-2505d255fecf",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "difference-of-squares",
+        "uuid": "590270ac-b638-4292-bbdc-eee1705904f1",
+        "prerequisites": [],
+        "topics": ["math"],
+        "difficulty": 1
+      },
+      {
+        "slug": "proverb",
+        "uuid": "9aad3797-7001-424b-b38d-1e9db7a99581",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "space-age",
+        "uuid": "8f6d6a60-426c-4da0-af4e-7395b2c880d3",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "roman-numerals",
+        "uuid": "c1eb4de7-41fe-4395-b5ef-a79a8187e727",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "clock",
+        "uuid": "163f929c-206b-430b-8ac7-ad7b5c062f3d",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "prime-factors",
+        "uuid": "bcfc5046-ec4e-4b6e-a5c6-811883f021a0",
+        "prerequisites": [],
+        "topics": ["math"],
+        "difficulty": 1
+      },
+      {
+        "slug": "triangle",
+        "uuid": "1384080d-d9db-4de7-a1db-090fd15ed7e6",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "beer-song",
+        "uuid": "70eaa806-235f-4513-aaff-c827ed80a1ad",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "phone-number",
+        "uuid": "802e2ef6-68e5-4116-a94a-ae0ddb33406d",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "robot-name",
+        "uuid": "3029f30c-77b6-49a3-909f-26ca868e5b22",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "atbash-cipher",
+        "uuid": "4b9872a8-bb21-4b1a-952b-032efa13b1da",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "accumulate",
+        "uuid": "f9fcab93-a6d8-4e36-aee5-3333a1c874ce",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "crypto-square",
+        "uuid": "39defad0-2828-4d3e-991f-5e624c68a37e",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "rna-transcription",
+        "uuid": "08343954-918c-4383-a6b8-b8d3d6ef836c",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "allergies",
+        "uuid": "7fd51712-d08f-475b-86c8-2945d054dc54",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "simple-cipher",
+        "uuid": "80c6212c-6b25-45b9-b09f-4c085d02f561",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "series",
+        "uuid": "35e90496-58a6-48be-ad55-14e3a145bd5c",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "luhn",
+        "uuid": "d5f021a7-d797-4561-aef9-1d5c7a9610d8",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "house",
+        "uuid": "5ab75e9e-39ae-4f7c-9cc8-e9ddd9d78415",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "gigasecond",
+        "uuid": "0f2e5082-9d97-414d-aa82-d03aed48d81a",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "strain",
+        "uuid": "fe458d54-f002-4a96-a49f-1ca40e679f72",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "pig-latin",
+        "uuid": "64c1e2fd-1d47-4734-8d45-206fb5bd1f57",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "linked-list",
+        "uuid": "7b8c4795-4317-4145-8240-6c3c19c1067c",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "list-ops",
+        "uuid": "21c90e54-55b3-4f23-af90-00323964027b",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "wordy",
+        "uuid": "b2c9b704-0266-4c16-a2f7-54294789a7f1",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "largest-series-product",
+        "uuid": "a13a649a-3ce8-4bbb-ae93-41441e699c8a",
+        "prerequisites": [],
+        "topics": ["math"],
+        "difficulty": 1
+      },
+      {
+        "slug": "secret-handshake",
+        "uuid": "46e78725-bc28-4536-9149-9d001033be07",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "kindergarten-garden",
+        "uuid": "ab72941e-040b-4254-8908-1832b602f4ee",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "nucleotide-count",
+        "uuid": "2e7e50a5-9790-4479-a26a-0e57823b00de",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "binary-search",
+        "uuid": "9393df8b-f005-4972-a1b9-f9c55dc906bd",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "matrix",
+        "uuid": "ee231adc-6770-47b0-88b2-6a7cf3140224",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "pascals-triangle",
+        "uuid": "3fc3e55d-ecf0-4c5b-8612-937c96a0cb45",
+        "prerequisites": [],
+        "topics": ["math"],
+        "difficulty": 1
+      },
+      {
+        "slug": "say",
+        "uuid": "72f91fb8-88f3-43e3-8a4a-8ad258fa161c",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "grade-school",
+        "uuid": "89a265f6-37b9-47fb-9ea5-5dba09852e48",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "meetup",
+        "uuid": "bd880111-6a69-4310-a79f-13735471c8ef",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "queen-attack",
+        "uuid": "b190f24e-134f-402b-b2b4-98b3a6f84465",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "ocr-numbers",
+        "uuid": "70c36cde-e574-4b6d-9f71-3d284694ecb1",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "palindrome-products",
+        "uuid": "4866701e-bd9c-41f9-a3e2-43c0ef39ad57",
+        "prerequisites": [],
+        "topics": ["math"],
+        "difficulty": 1
+      },
+      {
+        "slug": "twelve-days",
+        "uuid": "5e93b912-3e08-425a-999d-48dca196a442",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "binary-search-tree",
+        "uuid": "a0832961-e751-4f51-b1d4-e0c5bc5acf27",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "sum-of-multiples",
+        "uuid": "9c855ef0-08b4-4810-9a58-285a44082b94",
+        "prerequisites": [],
+        "topics": ["math"],
+        "difficulty": 1
+      },
+      {
+        "slug": "sieve",
+        "uuid": "edcec766-70fb-41bd-a2fd-09815a01d76e",
+        "prerequisites": [],
+        "topics": ["math"],
+        "difficulty": 1
+      },
+      {
+        "slug": "food-chain",
+        "uuid": "43a4799d-5bdf-47af-b6e0-fdc74277589d",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "pythagorean-triplet",
+        "uuid": "239a4e5e-9a09-4a2d-af2d-252dcf36a3a7",
+        "prerequisites": [],
+        "topics": ["math"],
+        "difficulty": 1
+      },
+      {
+        "slug": "saddle-points",
+        "uuid": "ea8450d8-85a3-4530-a5cc-7314abe554eb",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "robot-simulator",
+        "uuid": "9986bde0-92cc-434a-b32c-663f789bd41d",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "minesweeper",
+        "uuid": "8cbf6c2c-6f89-4e2e-a63f-5ea5af41f033",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "custom-set",
+        "uuid": "500cf4b8-d442-423a-957a-b95325b8a718",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "simple-linked-list",
+        "uuid": "b615b598-d69a-4ba9-9052-79243b292734",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "sublist",
+        "uuid": "4e2c69bc-b83f-45b4-872b-43bbdc559ece",
+        "prerequisites": [],
+        "topics": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "all-your-base",
+        "uuid": "2e604b17-7886-47ad-83a5-1199dc1838a4",
+        "prerequisites": [],
+        "topics": ["math"],
+        "difficulty": 1
+      },
+      {
+        "slug": "binary",
+        "uuid": "2e74fa26-f946-4b79-87b9-27f60f03af8f",
+        "prerequisites": [],
+        "difficulty": 0,
+        "deprecated": true
+      },
+      {
+        "slug": "trinary",
+        "uuid": "88643b77-3889-4395-81a0-c73526ce879a",
+        "prerequisites": [],
+        "difficulty": 0,
+        "deprecated": true
+      },
+      {
+        "slug": "hexadecimal",
+        "uuid": "742bccfd-20f9-44f1-8935-e84384807088",
+        "prerequisites": [],
+        "difficulty": 0,
+        "deprecated": true
+      },
+      {
+        "slug": "point-mutations",
+        "uuid": "a6f46028-7334-4504-877e-eda8ebdd9ea9",
+        "prerequisites": [],
+        "difficulty": 0,
+        "deprecated": true
+      }
+    ]
   },
-  "concepts": [],
-  "practice": [
-    {
-      "slug": "hello-world",
-      "uuid": "e436ce92-78b9-4b3b-b87e-581fa54cdc65",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "two-fer",
-      "uuid": "749dac4a-a746-4af7-aca6-db9e69ccad8c",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "bob",
-      "uuid": "835a4c46-c837-4684-a1ed-7d257c786d77",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "leap",
-      "uuid": "0b512415-2dcf-4dfb-a58f-2765f9a1427b",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "grains",
-      "uuid": "55316f62-e3b0-4be7-a478-9fc5ea827d15",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "raindrops",
-      "uuid": "85154a10-06e3-4543-8513-4de30b43d015",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "hamming",
-      "uuid": "5c35f654-8689-4fb3-af81-71fbe0c165f9",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "etl",
-      "uuid": "e193fb19-5122-405f-88e0-59e5ee94f64b",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "scrabble-score",
-      "uuid": "332370f1-a782-4ffb-a41a-867bf392f05f",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "word-count",
-      "uuid": "4693c5a5-948b-4650-9a37-9eb8ee2cfa6d",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "anagram",
-      "uuid": "c95418a3-d868-42dc-b39d-2505d255fecf",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "difference-of-squares",
-      "uuid": "590270ac-b638-4292-bbdc-eee1705904f1",
-      "prerequisites": [],
-      "topics": ["math"],
-      "difficulty": 1
-    },
-    {
-      "slug": "proverb",
-      "uuid": "9aad3797-7001-424b-b38d-1e9db7a99581",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "space-age",
-      "uuid": "8f6d6a60-426c-4da0-af4e-7395b2c880d3",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "roman-numerals",
-      "uuid": "c1eb4de7-41fe-4395-b5ef-a79a8187e727",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "clock",
-      "uuid": "163f929c-206b-430b-8ac7-ad7b5c062f3d",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "prime-factors",
-      "uuid": "bcfc5046-ec4e-4b6e-a5c6-811883f021a0",
-      "prerequisites": [],
-      "topics": ["math"],
-      "difficulty": 1
-    },
-    {
-      "slug": "triangle",
-      "uuid": "1384080d-d9db-4de7-a1db-090fd15ed7e6",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "beer-song",
-      "uuid": "70eaa806-235f-4513-aaff-c827ed80a1ad",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "phone-number",
-      "uuid": "802e2ef6-68e5-4116-a94a-ae0ddb33406d",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "robot-name",
-      "uuid": "3029f30c-77b6-49a3-909f-26ca868e5b22",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "atbash-cipher",
-      "uuid": "4b9872a8-bb21-4b1a-952b-032efa13b1da",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "accumulate",
-      "uuid": "f9fcab93-a6d8-4e36-aee5-3333a1c874ce",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "crypto-square",
-      "uuid": "39defad0-2828-4d3e-991f-5e624c68a37e",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "rna-transcription",
-      "uuid": "08343954-918c-4383-a6b8-b8d3d6ef836c",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "allergies",
-      "uuid": "7fd51712-d08f-475b-86c8-2945d054dc54",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "simple-cipher",
-      "uuid": "80c6212c-6b25-45b9-b09f-4c085d02f561",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "series",
-      "uuid": "35e90496-58a6-48be-ad55-14e3a145bd5c",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "luhn",
-      "uuid": "d5f021a7-d797-4561-aef9-1d5c7a9610d8",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "house",
-      "uuid": "5ab75e9e-39ae-4f7c-9cc8-e9ddd9d78415",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "gigasecond",
-      "uuid": "0f2e5082-9d97-414d-aa82-d03aed48d81a",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "strain",
-      "uuid": "fe458d54-f002-4a96-a49f-1ca40e679f72",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "pig-latin",
-      "uuid": "64c1e2fd-1d47-4734-8d45-206fb5bd1f57",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "linked-list",
-      "uuid": "7b8c4795-4317-4145-8240-6c3c19c1067c",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "list-ops",
-      "uuid": "21c90e54-55b3-4f23-af90-00323964027b",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "wordy",
-      "uuid": "b2c9b704-0266-4c16-a2f7-54294789a7f1",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "largest-series-product",
-      "uuid": "a13a649a-3ce8-4bbb-ae93-41441e699c8a",
-      "prerequisites": [],
-      "topics": ["math"],
-      "difficulty": 1
-    },
-    {
-      "slug": "secret-handshake",
-      "uuid": "46e78725-bc28-4536-9149-9d001033be07",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "kindergarten-garden",
-      "uuid": "ab72941e-040b-4254-8908-1832b602f4ee",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "nucleotide-count",
-      "uuid": "2e7e50a5-9790-4479-a26a-0e57823b00de",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "binary-search",
-      "uuid": "9393df8b-f005-4972-a1b9-f9c55dc906bd",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "matrix",
-      "uuid": "ee231adc-6770-47b0-88b2-6a7cf3140224",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "pascals-triangle",
-      "uuid": "3fc3e55d-ecf0-4c5b-8612-937c96a0cb45",
-      "prerequisites": [],
-      "topics": ["math"],
-      "difficulty": 1
-    },
-    {
-      "slug": "say",
-      "uuid": "72f91fb8-88f3-43e3-8a4a-8ad258fa161c",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "grade-school",
-      "uuid": "89a265f6-37b9-47fb-9ea5-5dba09852e48",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "meetup",
-      "uuid": "bd880111-6a69-4310-a79f-13735471c8ef",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "queen-attack",
-      "uuid": "b190f24e-134f-402b-b2b4-98b3a6f84465",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "ocr-numbers",
-      "uuid": "70c36cde-e574-4b6d-9f71-3d284694ecb1",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "palindrome-products",
-      "uuid": "4866701e-bd9c-41f9-a3e2-43c0ef39ad57",
-      "prerequisites": [],
-      "topics": ["math"],
-      "difficulty": 1
-    },
-    {
-      "slug": "twelve-days",
-      "uuid": "5e93b912-3e08-425a-999d-48dca196a442",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "binary-search-tree",
-      "uuid": "a0832961-e751-4f51-b1d4-e0c5bc5acf27",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "sum-of-multiples",
-      "uuid": "9c855ef0-08b4-4810-9a58-285a44082b94",
-      "prerequisites": [],
-      "topics": ["math"],
-      "difficulty": 1
-    },
-    {
-      "slug": "sieve",
-      "uuid": "edcec766-70fb-41bd-a2fd-09815a01d76e",
-      "prerequisites": [],
-      "topics": ["math"],
-      "difficulty": 1
-    },
-    {
-      "slug": "food-chain",
-      "uuid": "43a4799d-5bdf-47af-b6e0-fdc74277589d",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "pythagorean-triplet",
-      "uuid": "239a4e5e-9a09-4a2d-af2d-252dcf36a3a7",
-      "prerequisites": [],
-      "topics": ["math"],
-      "difficulty": 1
-    },
-    {
-      "slug": "saddle-points",
-      "uuid": "ea8450d8-85a3-4530-a5cc-7314abe554eb",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "robot-simulator",
-      "uuid": "9986bde0-92cc-434a-b32c-663f789bd41d",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "minesweeper",
-      "uuid": "8cbf6c2c-6f89-4e2e-a63f-5ea5af41f033",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "custom-set",
-      "uuid": "500cf4b8-d442-423a-957a-b95325b8a718",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "simple-linked-list",
-      "uuid": "b615b598-d69a-4ba9-9052-79243b292734",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "sublist",
-      "uuid": "4e2c69bc-b83f-45b4-872b-43bbdc559ece",
-      "prerequisites": [],
-      "topics": [],
-      "difficulty": 1
-    },
-    {
-      "slug": "all-your-base",
-      "uuid": "2e604b17-7886-47ad-83a5-1199dc1838a4",
-      "prerequisites": [],
-      "topics": ["math"],
-      "difficulty": 1
-    },
-    {
-      "slug": "binary",
-      "uuid": "2e74fa26-f946-4b79-87b9-27f60f03af8f",
-      "prerequisites": [],
-      "difficulty": 0,
-      "deprecated": true
-    },
-    {
-      "slug": "trinary",
-      "uuid": "88643b77-3889-4395-81a0-c73526ce879a",
-      "prerequisites": [],
-      "difficulty": 0,
-      "deprecated": true
-    },
-    {
-      "slug": "hexadecimal",
-      "uuid": "742bccfd-20f9-44f1-8935-e84384807088",
-      "prerequisites": [],
-      "difficulty": 0,
-      "deprecated": true
-    },
-    {
-      "slug": "point-mutations",
-      "uuid": "a6f46028-7334-4504-877e-eda8ebdd9ea9",
-      "prerequisites": [],
-      "difficulty": 0,
-      "deprecated": true
-    }
-  ]
+  "concepts": []
 }

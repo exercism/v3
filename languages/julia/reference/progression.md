@@ -34,6 +34,10 @@ subgraph Type System
 
 	abstract-types --> primitive-types
 end
+
+numbers --> iterator-protocol["iterator-protocol (Fibonacci-Iterator)"]
+multiple-dispatch --> iterator-protocol
+
 extension --> performance
 performance --> Finish((Finish))
 
@@ -47,6 +51,7 @@ complex-numbers -.-> v2-complex-numbers(v2-complex-numbers)
 rational-numbers -.-> v2-rational-numbers(v2-rational-numbers)
 extension -.-> v2-complex-numbers
 extension -.-> v2-rational-numbers
+iterator-protocol -.-> v2-circular-buffer(v2-circular-buffer)
 ```
 
 ## Legend
@@ -94,7 +99,7 @@ I think of closely coupled concepts/exercises as a “block” in the progressio
 
 - Refactoring exercise, the student has to improve a solution that does several common performance gotchas wrong
 - Hard to test
-- Provide a list of things the student should have caught in `after.md`
+- Provide a list of things the student should have caught in the concept's `about.md`
 - Provide benchmarking code
 - Provide a list of tools to use (`Traceur.jl`, Profilers, BenchmarkTools etc.)
 - Provide an achievable speed-up so that the student knows when they have optimised it well enough

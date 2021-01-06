@@ -5,7 +5,7 @@
 
 ;; Defines the testing package with symbols from socks-and-sexprs and FiveAM in scope
 ;; The `run-tests` function is exported for use by both the user and test-runner
-(defpackage socks-and-sexprs-test
+(defpackage :socks-and-sexprs-test
   (:use :cl :fiveam :socks-and-sexprs)
   (:export :run-tests))
 

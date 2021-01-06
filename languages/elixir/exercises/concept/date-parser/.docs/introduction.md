@@ -1,3 +1,5 @@
+## regular-expressions
+
 Regular expressions (regex) are a powerful tool for working with strings in Elixir. Regular expressions in Elixir follow the **PCRE** specification (**P**erl **C**ompatible **R**egular **E**xpressions). String patterns representing the regular expression's meaning are first compiled then used for matching all or part of a string.
 
 In Elixir, the most common way to create regular expressions is using the `~r` sigil. Sigils provide _syntactic sugar_ shortcuts for common tasks in Elixir. To match a _string literal_, we can use the string itself as a pattern following the sigil.
@@ -18,7 +20,7 @@ The `=~/2` operator is useful to perform a regex match on a string to return a `
 > - many different delimiters may be used depending on your requirements rather than `/`
 > - string patterns are already _escaped_, when writing the pattern as a string not using a regex, you will have to _escape_ backslashes (`\`)
 
-Matching a range of characters using square brackets `[]` to denote a _character class_. This will match any one character to the characters in the class. You can also specify a range of characters like `a-z`, as long as the start and end represent a contiguous range of codepoints.
+Matching a range of characters using square brackets `[]` to denote a _character class_. This will match any one character to the characters in the class. You can also specify a range of characters like `a-z`, as long as the start and end represent a contiguous range of code points.
 
 ```elixir
 regex = ~r/[a-z][AZ][0-9][!?]/

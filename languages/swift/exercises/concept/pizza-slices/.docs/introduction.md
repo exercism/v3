@@ -1,3 +1,5 @@
+## optionals
+
 ## Optionals
 
 Swift uses _optionals_ to allow programmers to represent the possible absence of a value. Before attempting to use a value that may not exist, optionals allow the program to check first it it exists, then if it does exist unwrap and use it.

@@ -1,0 +1,7 @@
+languages/*/docs/
+languages/README.md
+reference/README.md
+reference/stories/README.md
+**/_sidebar.md
+.github/ISSUE_TEMPLATE/
+.git/

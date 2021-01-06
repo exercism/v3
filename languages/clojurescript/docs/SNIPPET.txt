@@ -1,0 +1,5 @@
+(ns universe.pokemon.core)
+
+(defn pikachu
+  ([] "Pika pika.")
+  ([sentence] "Pika-pi!"))

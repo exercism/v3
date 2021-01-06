@@ -1,4 +1,4 @@
-(defpackage key-comparison
+(defpackage :key-comparison
   (:use :cl)
   (:export
    :key-object-identity
