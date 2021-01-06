@@ -60,6 +60,7 @@ function test_concept() {
     # that spells subshell
     if ! (
         set -e
+        cargo fmt -- --check
         cargo check
         cargo test
         cargo test -- --ignored
