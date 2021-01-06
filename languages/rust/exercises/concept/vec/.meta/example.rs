@@ -1,3 +1,4 @@
+#![allow(unused)]
 /// return a list of 5 languages to learn
 pub fn languages() -> Vec<String> {
     vec![
@@ -22,3 +23,16 @@ pub fn humans_and_computers(human: Vec<String>) -> Vec<String> {
     list.extend(human);
     list
 }
+
+/// Create a new list and add one language
+pub fn add_one(lang: String) -> Vec<String> {
+    let mut list = vec![];
+    list.push(lang);
+    list.to_vec()
+}
+
+/// Remove and return the last language from the provided list
+pub fn remove_last_one(list: &mut Vec<String>) -> Option<String> {
+    list.pop()
+}
+
