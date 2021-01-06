@@ -8,25 +8,17 @@ pub fn languages() -> Vec<String> {
         "Scheme".to_string(),
     ]
 }
-/// return a list of languages labeled by their order
-pub fn languages_ranked() -> Vec<String> {
-    languages()
-        .iter()
-        .enumerate()
-        .map(|(index, lang)| format!("{}: {}", index + 1, lang))
-        .collect()
-}
 /// Gather your top languages to learn
-pub fn grab(which: usize) -> String {
+pub fn grab(which: usize) -> Option<String> {
     if which == languages().len() {
-        languages().pop().unwrap()
+        languages().pop()
     } else {
-        languages()[which].to_string()
+        languages().get(which).cloned()
     }
 }
 /// Gather your top languages to learn
 pub fn humans_and_computers(human: Vec<String>) -> Vec<String> {
     let mut list = languages();
-    human.iter().for_each(|lang| list.push(lang.to_string()));
+    list.extend(human);
     list
 }
