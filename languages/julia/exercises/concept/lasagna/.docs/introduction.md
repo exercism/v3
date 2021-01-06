@@ -2,6 +2,7 @@ The entire Julia track will require you to treat your solution like small librar
 For that reason, we will introduce named functions as the very first concept.
 
 ## functions-introduction
+
 ### Defining functions
 
 There are two common ways to define a named function in Julia:
@@ -33,7 +34,9 @@ square_plus_one(x) = muladd(x, x, 1)
 ```
 
 ## Annotations
+
 <!-- TODO: These are not concepts/concept headings, but what are they? -->
+
 ### Types
 
 Depending on which other programming languages you know, you may expect parameters, variables or return values to have explicit type annotations.
