@@ -9,6 +9,7 @@
         "indent_size": 4
     },
     "tags": [
+        "compiles_to/binary",
         "typing/dynamic",
         "paradigm/declarative",
         "paradigm/functional",
