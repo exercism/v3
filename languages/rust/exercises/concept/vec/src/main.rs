@@ -18,4 +18,12 @@ fn main() {
 
     let encoded = encodable.encode();
     println!("{:02x?}", encoded.bytes);
+
+    let decoded = encoded.decode();
+    for field in decoded.fields {
+        println!(
+            "{}",
+            String::from_utf8(field).expect("put valid utf8 in; should get it back out")
+        );
+    }
 }

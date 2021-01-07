@@ -6,11 +6,13 @@
 /// `EncodedData`. This format has two components, the header,
 /// and the data.
 ///
-/// The header is a list of pairs of bytes. Within each pair,
-/// the first element is the offset within the data structure,
-/// and the second element is the length of the field. The header
-/// is terminated by a pair of null bytes. Therefore, the shortest
-/// legal encoded data under this scheme is `00 00`.
+/// Byte 0 contains the number of fields encoded
+/// For f in 0..(num_fields):
+///     Byte 1 + (2 * f) contains the field's offset from the data start
+///     Byte 2 + (2 * f) contains the field's length
+/// All subsequent bytes are part of the data fields
+///
+/// Therefore, the shortest legal encoded data under this scheme is `00`.
 ///
 /// For example, let's say `EncodableData` has these fields:
 ///
