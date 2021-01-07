@@ -1,4 +1,4 @@
-use vec::EncodableData;
+use vec::{decode, encode};
 
 fn main() {
     let strings_to_encode = [
@@ -9,18 +9,16 @@ fn main() {
         "Also it's limited by u8 capacity.",
     ];
 
-    let encodable = EncodableData {
-        fields: strings_to_encode
+    let encoded = encode(
+        strings_to_encode
             .iter()
             .map(|s| s.as_bytes().to_vec())
             .collect(),
-    };
+    );
+    println!("{:02x?}", encoded);
 
-    let encoded = encodable.encode();
-    println!("{:02x?}", encoded.bytes);
-
-    let decoded = encoded.decode();
-    for field in decoded.fields {
+    let decoded = decode(encoded);
+    for field in decoded {
         println!(
             "{}",
             String::from_utf8(field).expect("put valid utf8 in; should get it back out")
