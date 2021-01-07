@@ -8,6 +8,46 @@
         "indent_style": "space",
         "indent_size": 4
     },
+    "tags": [
+        "typing/dynamic",
+        "paradigm/declarative",
+        "paradigm/functional",
+        "paradigm/imperative",
+        "paradigm/object_oriented",
+        "paradigm/procedural"
+    ],
+    "key_features": [
+        {
+            "title": "Fast",
+            "content": "Julia is designed for high performance. Code compiles to efficient native code for various platforms",
+            "icon": ""
+        },
+        {
+            "title": "Interactive",
+            "content": "Julia is dynamically typed, feels like a scripting language and has good support for interactive use",
+            "icon": ""
+        },
+        {
+            "title": "Scientific",
+            "content": "Julia is designed with reproducibility, distributed computing and easy collaboration in mind",
+            "icon": ""
+        },
+        {
+            "title": "Composable",
+            "content": "Julia uses multiple dispatch as a paradigm, making it unreasonably effective at composing programs",
+            "icon": ""
+        },
+        {
+            "title": "Expressive",
+            "content": "Julia's familiar mathematical syntax and metaprogramming features lead to highly expressive code",
+            "icon": ""
+        },
+        {
+            "title": "General",
+            "content": "",
+            "icon": ""
+        }
+    ],
     "exercises": {
         "concept": [
             {
