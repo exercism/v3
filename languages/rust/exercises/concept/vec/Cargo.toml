@@ -3,3 +3,5 @@ name = "vec"
 version = "0.1.0"
 edition = "2018"
 
+[dev-dependencies]
+hex-literal = "0.3.1"
