@@ -24,7 +24,7 @@ Implement the `add-country` function that adds a dialing code and associated cou
 
 ### 3. Get the country name matching a country code
 
-Implement the country-name function that takes a dialing code and returns the corresponding country name. If the dialing code is not contained in the map, nil is returned.
+Implement the `country-name` function that takes a dialing code and returns the corresponding country name. If the dialing code is not contained in the map, `nil` is returned.
 
 ```clojure
 (country-name countries 55)
