@@ -1,4 +1,4 @@
-TODO: the content below is copied from the exercise introduction and probably needs rewriting to a proper concept introduction
+<!-- TODO: the content below is copied from the exercise introduction and probably needs rewriting to a proper concept introduction -->
 
 Given a year, report if it is a leap year in the Gregorian calendar.
 

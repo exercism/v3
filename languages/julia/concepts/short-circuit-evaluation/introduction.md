@@ -1,4 +1,4 @@
-TODO: the content below is copied from the exercise introduction and probably needs rewriting to a proper concept introduction
+<!-- TODO: the content below is copied from the exercise introduction and probably needs rewriting to a proper concept introduction -->
 
 There are three primary conditional statements that are used in Julia:
 
