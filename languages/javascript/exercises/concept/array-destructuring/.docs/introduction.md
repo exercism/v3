@@ -1,5 +1,7 @@
 ## array-destructuring
+
 ## spread-operator
+
 ## rest-elements
 
 Javascript's array destructuring syntax is a concise way to extract values from an array and assign them to distinct variables.
