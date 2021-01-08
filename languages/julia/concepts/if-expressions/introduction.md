@@ -1,14 +1,4 @@
-<!-- TODO: the content below is copied from the exercise introduction and probably needs rewriting to a proper concept introduction -->
-
-There are three primary conditional statements that are used in Julia:
-
-- `if`-statements
-- The ternary operator
-- Short-circuit evaluation
-
-## `if`-statements
-
-`if`-statements in Julia are similar to those seen in other languages:
+`if`-expressions in Julia are similar to those seen in other languages:
 
 ```julia
 julia> function say_if_positive(n)
@@ -36,9 +26,9 @@ The program continues running at the first line of code after the `end` keyword.
 <!-- prettier-ignore -->
 !!! info
     In Julia, the `end` keyword signifies the end of all block expressions.
-    This syntax is not specific to `if`-statements or function definitions.
+    This syntax is not specific to `if`-expressions or function definitions.
 
-In cases where the second block of code would be just another `if`-statement, `elseif` allows us to avoid nesting `if`-statements within the block:
+In cases where the second block of code would be just another `if`-expression, `elseif` allows us to avoid nesting `if`-expressions within the block:
 
 ```julia
 julia> function dessert(fruit)
@@ -62,7 +52,7 @@ julia> dessert("peach")
 "Fruit Salad"
 ```
 
-If an `if`-statement only needs to perform code for one of the cases, there's no need to write out the `else` branch.
+If an `if`-expression only needs to perform code for one of the cases, there's no need to write out the `else` branch.
 
 ## Ternary operator
 

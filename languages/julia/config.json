@@ -44,7 +44,7 @@
                 "slug": "vehicle-purchase",
                 "concepts": [
                     "conditionals",
-                    "if-statements",
+                    "if-expressions",
                     "ternary-operator",
                     "short-circuit-evaluation"
                 ],
