@@ -34,5 +34,3 @@ impl Item {
     }
 }
 ```
-
-With that brief introduction to the syntax of structs out of the way, go ahead and take a look at the [instructions](instructions.md) for this exercise!
