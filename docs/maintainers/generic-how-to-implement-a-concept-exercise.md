@@ -183,7 +183,7 @@ If you have any questions regarding implementing this exercise, please post them
 [example-docs-hints.md]: ../../languages/csharp/exercises/concept/interest-is-interesting/.docs/hints.md
 [example-docs-source.md]: ../../languages/julia/exercises/concept/encounters/.docs/source.md
 [example-meta-design.md]: ../../languages/csharp/exercises/concept/cars-assemble/.meta/design.md
-[example-meta-config.json]: ../../languages/csharp/exercises/concept/flag-enums/.meta/config.json
+[example-meta-config.json]: ../../languages/csharp/exercises/concept/attack-of-the-trolls/.meta/config.json
 [example-config.json]: ../../languages/csharp/config.json
 [example-reference-document-implementations]: ../../reference/types/string.md#exercises
 [example-story-document-implementations]: ../../reference/stories/basics.lasagna.md#implementation
