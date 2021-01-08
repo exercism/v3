@@ -1,1 +1,1 @@
-TODO: add information on booleans concept
+<!-- TODO: add information on booleans concept -->

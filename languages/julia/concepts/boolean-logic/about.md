@@ -1,1 +1,1 @@
-TODO: add information on boolean-logic concept
+<!-- TODO: add information on boolean-logic concept -->

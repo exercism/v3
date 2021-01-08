@@ -1,1 +1,1 @@
-TODO: add information on composite-types concept
+<!-- TODO: add information on composite-types concept -->
