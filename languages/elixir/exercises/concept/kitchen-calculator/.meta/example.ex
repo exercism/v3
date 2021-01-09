@@ -1,9 +1,5 @@
 defmodule KitchenCalculator do
-  # Get the number component from the volume-unit pair '{:unit, volume}'
-
   def get_volume(volume_pair), do: elem(volume_pair, 1)
-
-  # Convert to milliliter to another unit
 
   def to_milliliter({:cup, cups}) do
     {:milliliter, cups * 240}
@@ -25,8 +21,6 @@ defmodule KitchenCalculator do
     volume
   end
 
-  # Convert from milliliter to another unit
-
   def from_milliliter({:milliliter, mls}, :cup) do
     {:cup, mls / 240}
   end
@@ -46,8 +40,6 @@ defmodule KitchenCalculator do
   def from_milliliter({:milliliter, _} = volume, :milliliter) do
     volume
   end
-
-  # convert from a supported unit to a supported unit
 
   def convert(volume_pair, to) do
     to_milliliter(volume_pair) |> from_milliliter(to)
