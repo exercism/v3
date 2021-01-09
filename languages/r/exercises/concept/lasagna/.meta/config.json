@@ -1,0 +1,13 @@
+{
+  "authors": [
+    {
+      "github_username": "jonmcalder",
+      "exercism_username": "jonmcalder"
+    }
+  ],
+  "editor": {
+    "solution_files": ["lasagna.R"],
+    "test_files": ["lasagna_test.R"]
+  },
+  "forked_from": ["csharp/basics", "ruby/basics"]
+}

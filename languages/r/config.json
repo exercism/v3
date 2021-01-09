@@ -1,0 +1,70 @@
+{
+  "language": "R",
+  "slug": "r",
+  "active": true,
+  "blurb": "R is an interpreted, open source programming language with powerful data manipulation and graphical capabilities. It has a thriving package ecosystem and is one of the most popular languages for data science.",
+  "version": 3,
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 4
+  },
+  "exercises": {
+    "concept": [
+      {
+        "slug": "lucians-luscious-lasagna",
+        "name": "Lucian's Luscious Lasagna",
+        "uuid": "6fd75bbd-8654-4d6a-80b5-29344ceb8a48",
+        "concepts": ["basics"],
+        "prerequisites": []
+      },
+    ],
+    "practice": []
+  },
+  "concepts": [
+    {
+      "uuid": "d75c1a77-9733-45b0-ae21-2b4f0f313ef4",
+      "slug": "basics",
+      "name": "Basics",
+      "blurb": "TODO: add blurb for basics concept"
+    }
+  ],
+  "key_features": [
+    {
+      "icon": "features-oop",
+      "title": "Domain Specific",
+      "content": "R is a language and environment for statistical computing and graphics."
+    },
+    {
+      "icon": "features-strongly-typed",
+      "title": "Cross-platform",
+      "content": "It is free, open source, and available on every major platform."
+    },
+    {
+      "icon": "features-functional",
+      "title": "Multi-paradigm",
+      "content": "R has a strong foundation of functional programming, but is inherently multi-paradigm, facilitating procedural or object-oriented approaches when suitable."
+    },
+    {
+      "icon": "features-lazy",
+      "title": "Metaprogramming",
+      "content": "R’s metaprogramming capabilities allow for magically succinct and concise functions."
+    },
+    {
+      "icon": "features-declarative",
+      "title": "Tooling",
+      "content": "R provides powerful tools for data science with a massive set of packages for data manipulation, statistical modelling, visualisation and machine learning."
+    },
+    {
+      "icon": "features-generic",
+      "title": "Community",
+      "content": "R has a diverse and welcoming community."
+    }
+  ],
+  "tags": [
+    "paradigm/imperative",
+    "paradigm/functional",
+    "paradigm/procedural",
+    "paradigm/object_oriented",
+    "typing/dynamic"
+  ]
+}
