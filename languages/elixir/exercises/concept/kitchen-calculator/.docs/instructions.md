@@ -14,7 +14,7 @@ Being a talented programmer in training, you decide to use milliliters as a tran
 
 ## 1. Get the numeric component from a volume-pair
 
-- Given a volume-pair tuple, `{:cup, 2.0}`, return just the numeric component.
+Implement the `KitchenCalculator.get_volume/1` function. Given a volume-pair tuple, it should return just the numeric component.
 
 ```elixir
 KitchenCalculator.get_volume({:cup, 2.0})
@@ -23,11 +23,9 @@ KitchenCalculator.get_volume({:cup, 2.0})
 
 ## 2. Convert the volume-pair to milliliters
 
-- Given a volume-pair tuple, `{:cup, 2.5}`, convert the volume to milliliters using the conversion chart.
+Implement the `KitchenCalculator.to_milliliter/1` function. Given a volume-pair tuple, it should convert the volume to milliliters using the conversion chart.
 
-- use multiple function clauses and pattern matching to create the functions for each unit
-  - the atoms used to denote each unit are: `:cup`, `:fluid_ounce`, `:teaspoon`, `:tablespoon`, `:milliliter`
-- return the conversion wrapped in a tuple
+Use multiple function clauses and pattern matching to create the functions for each unit. The atoms used to denote each unit are: `:cup`, `:fluid_ounce`, `:teaspoon`, `:tablespoon`, `:milliliter`. Return the result of the conversion wrapped in a tuple.
 
 ```elixir
 KitchenCalculator.to_milliliter({:cup, 2.5})
@@ -36,9 +34,9 @@ KitchenCalculator.to_milliliter({:cup, 2.5})
 
 ## 3. Convert the milliliter volume-pair to another unit
 
-- Given a volume-pair tuple, `{:milliliter, 1320.0}`, and the desired unit, `:cup`, convert the volume to the desired unit using the conversion chart.
-- use multiple function clauses and pattern matching to create the functions for each unit
-  - the atoms used to denote each unit are: `:cup`, `:fluid_ounce`, `:teaspoon`, `:tablespoon`, `:milliliter`
+Implement the `KitchenCalculator.from_milliliter/2` function. Given a volume-pair tuple and the desired unit, it should convert the volume to the desired unit using the conversion chart.
+
+Use multiple function clauses and pattern matching to create the functions for each unit. The atoms used to denote each unit are: `:cup`, `:fluid_ounce`, `:teaspoon`, `:tablespoon`, `:milliliter`
 
 ```elixir
 KitchenCalculator.from_milliliter({:milliliter, 1320.0}, :cup)
@@ -47,7 +45,7 @@ KitchenCalculator.from_milliliter({:milliliter, 1320.0}, :cup)
 
 ## 4. Convert from any unit to any unit
 
-- Given a volume-pair tuple, `{:teaspoons, 9.0}`, and the desired unit, `:tablespoon`, convert the volume to the desired unit
+Implement the `KitchenCalculator.convert/2` function. Given a volume-pair tuple and the desired unit, it should convert the given volume to the desired unit.
 
 ```elixir
 KitchenCalculator.convert({:teaspoons, 9.0}, :tablespoon)
