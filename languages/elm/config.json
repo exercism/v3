@@ -8,6 +8,14 @@
     "indent_style": "space",
     "indent_size": 4
   },
+  "concepts": [
+    {
+      "uuid": "3e6e4a21-cc66-4c48-857b-90e1ca5298f9",
+      "slug": "basics",
+      "name": "Basics",
+      "blurb": "Learn basics of the Elm programming language syntax."
+    }
+  ],
   "exercises": {
     "concept": [
       {
@@ -342,6 +350,5 @@
         "difficulty": 8
       }
     ]
-  },
-  "concepts": []
+  }
 }

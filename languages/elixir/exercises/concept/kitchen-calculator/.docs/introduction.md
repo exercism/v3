@@ -1,8 +1,8 @@
 ## tuples
 
-In Elixir, a tuple is a data structure which organizes data, holding a fixed number of any-type items, but without explicit names for each element. Tuples are often used in Elixir for memory read-intensive operations, since read-access of an element is a constant-time operation. They are not usually used when elements may need to be added/removed dynamically because rather than modifying the existing tuple, a new tuple is created which requires memory to be allocated upfront.
+In Elixir, a tuple is a data structure which organizes data, holding a fixed number of items of any type, but without explicit names for each element. Tuples are often used in Elixir for memory read-intensive operations, since read-access of an element is a constant-time operation. They are not usually used when elements may need to be added/removed dynamically because rather than modifying the existing tuple, a new tuple is created which requires memory to be allocated upfront.
 
-In practice, tuples are created in Elixir using curly braces, and element can be individually accessed using the `elem/1` function using 0-based indexing:
+In practice, tuples are created in Elixir using curly braces. Elements in a tuple can be individually accessed using the `elem/1` function using 0-based indexing:
 
 ```elixir
 empty_tuple = {}
@@ -45,7 +45,7 @@ In the last example if we don't need a variable in a pattern match, we can disca
 
 ### Pattern matching in named functions
 
-Pattern matching is also a useful tool when creating multiple function clauses. Pattern matching can be used on the functions' parameters which then determines which function clause to invoke -- starting from the top of the file down until the first match. Variables may be bound to patterns.
+Pattern matching is also a useful tool when creating multiple function clauses. Pattern matching can be used on the functions' arguments which then determines which function clause to invoke -- starting from the top of the file down until the first match. Variables may be bound to patterns.
 
 ```elixir
 defmodule Example do

@@ -23,3 +23,6 @@ languages/typescript/exercises/**/node_modules/
 
 # Julia-specific files
 languages/julia/exercises/**/.meta/config.json
+
+# Language docs files
+languages/*/docs/**
