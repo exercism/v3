@@ -39,6 +39,13 @@
         "prerequisites": ["basics"]
       },
       {
+        "slug": "pretty-leaflet",
+        "name": "Pretty Leaflet",
+        "uuid": "5b813a3a-1983-470b-91a1-9f2c0b327ab7",
+        "concepts": ["string-formatting"],
+        "prerequisites": ["loops", "lists", "classes-I"]
+      },
+      {
         "slug": "inventory-management",
         "name": "Inventory Management",
         "uuid": "0558b66c-f2c8-4ff3-846a-4ac87a8660d9",
