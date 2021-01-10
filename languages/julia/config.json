@@ -20,7 +20,7 @@
     "key_features": [
         {
             "title": "Fast",
-            "content": "Julia is designed for high performance. Code compiles to efficient native code for various platforms",
+            "content": "Julia is designed for high performance. Julia compiles efficient native code for multiple platforms",
             "icon": ""
         },
         {
