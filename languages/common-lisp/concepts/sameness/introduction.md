@@ -1,4 +1,4 @@
-Common Lisp has many different equality predicates. This differs from other programming languages which may have only one or two (perhaps `==` and `===` for example). Some of these predicates in Common Lisp are specific to types, while others are generic. It is these latter that this exercise will teach.
+Common Lisp has many different equality predicates. This differs from other programming languages which may have only one or two (perhaps `==` and `===` for example). Some of these predicates in Common Lisp are specific to types, while others are generic. It is these latter that this concept will cover.
 
 There are four generic equality predicates and they differ by their restrictiveness on what they consider "equal". They are, in order from most restrictive to least restrictive: `eq`, `eql`, `equal`, and `equalp`.
 
