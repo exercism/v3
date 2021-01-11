@@ -1,8 +1,4 @@
-Together, the atoms and conses that make up Lisp code are referred to as
-S-Expressions (or sexpr for short). When S-Expressions are evaluated, they
-automatically return some value which takes the place of the expression. When
-writing your own functions (using `defun`), the last value within the body of
-the `defun` is automatically returned:
+All Common Lisp code is made of S-Expressions (Symbolic Expressions). They are called sexprs for short. Every sexpr is either an atom or a cons. When S-Expressions are evaluated, they automatically return some value which takes the place of the expression. When writing your own functions (using `defun`), the last value within the body of the `defun` is automatically returned:
 
 ```lisp
 ;; Defining a new function

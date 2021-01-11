@@ -7,11 +7,15 @@ Common lisp provides several different conditional expressions, the main differe
 (unless (= 2 2) "Time to panic!") ; => NIL
 ```
 
+The section after the test expression may be more than one expression.
+
 - `if` provides the classic if-then-else construct:
 
 ```lisp
 (if (= 2 2) 'how-honest 'you-liar) ; => HOW-HONEST
 ```
+
+Note that both the then and else clauses can only be a single expression.
 
 - `cond` provides a way to have multiple branches without nesting `if` expressions:
 
@@ -24,6 +28,8 @@ Common lisp provides several different conditional expressions, the main differe
 ; => QUITE-TRUE
 ```
 
+Note that there is limit to the number of expressions after the test expression.
+
 - `case` provides a classic 'switch' style construct: It checks a single value against a number of branches:
 
 ```lisp
@@ -34,3 +40,5 @@ Common lisp provides several different conditional expressions, the main differe
   (otherwise "???"))
 ; => "???"
 ```
+
+Note that like `cond` there is no limit to the number of expressions after the test expression.
