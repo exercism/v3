@@ -1,10 +1,10 @@
-## booleans
+## Booleans
 
-## conditionals-if
+## Conditionals If
 
-## conditionals-guard
+## Conditionals Guard
 
-## conditionals-switch
+## Conditionals Switch
 
 ## ternary-operator
 

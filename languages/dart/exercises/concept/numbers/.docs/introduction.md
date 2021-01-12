@@ -1,3 +1,3 @@
-## numbers-basic
+## Numbers Basic
 
-## type-conversion
+## Type Conversion

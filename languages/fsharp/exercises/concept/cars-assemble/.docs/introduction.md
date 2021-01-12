@@ -1,4 +1,4 @@
-## numbers
+## Numbers
 
 There are two different types of numbers in F#:
 
@@ -11,7 +11,7 @@ Arithmetic is done using the standard arithmetic operators. Numbers can be compa
 
 Converting between number types is done through built-in conversion operators. These conversion operators are named after the type they will be converting to. F# does _not_ support automatic conversion between number types.
 
-## conditionals
+## Conditionals
 
 In this exercise you must conditionally execute logic. The most common way to do this in F# is by using an `if/elif/else` statement:
 
