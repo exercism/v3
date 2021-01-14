@@ -1,9 +1,9 @@
-When recursing through enumerables [lists, bitstrings, strings], there are often two concerns:
+When recursing through enumerables (lists, bitstrings, strings), there are often two concerns:
 
 - how much memory is required to store the trail of recursive function calls
 - how to build the solution efficiently
 
-To deal with these concerns an _accumulator_ may be used to pass the state of the function _so far_ until the result reaches the _base case_ and returns the value. An accumulator is a variable that is passed along in addition to the data.
+To deal with these concerns an _accumulator_ may be used. An accumulator is a variable that is passed along in addition to the data. It is used to pass the current state of the function, from function call to function call, until the _base case_ is reached. In the base case, the accumulator is used to return the final value of the recursive function call.
 
 ```elixir
 # Count the length of a list without an accumulator
