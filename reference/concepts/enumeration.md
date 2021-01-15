@@ -7,7 +7,7 @@ Tracks should teach the normal idiomatic ways to loop/enumerate in their languag
 
 ## Exercises
 
-### Stack of cards 2
+### Elyses Analytical Enchantments (Stack of cards)
 
 This exercise deals with analysis on a stack of playing cards. The reference implementation (JavaScript) teaches:
 
@@ -19,9 +19,21 @@ This exercise deals with analysis on a stack of playing cards. The reference imp
 
 #### Implementations
 
-| Track      | Exercise                              | Changes |
-| ---------- | ------------------------------------- | ------- |
-| JavaScript | [arrays][implementation-javascript-2] | None    |
+| Track      | Exercise                                     | Changes |
+| ---------- | -------------------------------------------- | ------- |
+| JavaScript | [arrays][implementation-javascript-analysis] | None    |
+
+### Elyses "Looping" Enchantments (Stack of cards)
+
+This exercise deals with looping on a stack of playing cards. The reference implementation (JavaScript) teaches:
+
+- TBD
+
+#### Implementations
+
+| Track      | Exercise                                  | Changes |
+| ---------- | ----------------------------------------- | ------- |
+| JavaScript | [arrays][implementation-javascript-loops] | None    |
 
 ### Bartender
 
@@ -39,5 +51,6 @@ This exercise deals with looping to enumerate data structures or to perform repe
 | ----- | ----------------------------- | ------- |
 | Swift | [loops][implementation-swift] | None    |
 
-[implementation-javascript-2]: ../../languages/javascript/exercises/concept/array-analysis/.docs/introduction.md
+[implementation-javascript-analysis]: ../../languages/javascript/exercises/concept/elyses-analytic-enchantments
+[implementation-javascript-loops]: ../../languages/javascript/exercises/concept/array-loops
 [implementation-swift]: ../../languages/swift/exercises/concept/master-mixologist/.docs/introduction.md
