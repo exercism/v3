@@ -15,7 +15,7 @@ Tell a student what an array is in your language, how an array can be manipulate
 
 ## Exercises
 
-### Stack of cards
+### Elyses Enchantments (Stack of cards)
 
 This exercise deals with manipulating a stack of playing cards. The reference implementation (JavaScript) teaches:
 
@@ -32,7 +32,7 @@ This exercise deals with manipulating a stack of playing cards. The reference im
 | ---------- | ----------------------------------- | ------- |
 | JavaScript | [arrays][implementation-javascript] | None    |
 
-### Stack of cards 2
+### Elyses Analytical Enchantments (Stack of cards)
 
 This exercise deals with analysis on a stack of playing cards. The reference implementation (JavaScript) teaches:
 
@@ -44,9 +44,9 @@ This exercise deals with analysis on a stack of playing cards. The reference imp
 
 #### Implementations
 
-| Track      | Exercise                              | Changes |
-| ---------- | ------------------------------------- | ------- |
-| JavaScript | [arrays][implementation-javascript-2] | None    |
+| Track      | Exercise                                     | Changes |
+| ---------- | -------------------------------------------- | ------- |
+| JavaScript | [arrays][implementation-javascript-analysis] | None    |
 
 ### Garden bird count
 
@@ -65,5 +65,5 @@ This exercise has one working with garden bird counts. The reference implementat
 | F#    | [arrays][implementation-fsharp] | Replace looping task with pattern matching |
 
 [type-collection]: ./collection.md
-[implementation-javascript]: ../../languages/javascript/exercises/concept/arrays/.docs/introduction.md
-[implementation-javascript-2]: ../../languages/javascript/exercises/concept/array-analysis/.docs/introduction.md
+[implementation-javascript]: ../../languages/javascript/exercises/concept/elyses-enchantments
+[implementation-javascript-analysis]: ../../languages/javascript/exercises/concept/elyses-analytic-enchantments
