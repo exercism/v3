@@ -1,0 +1,20 @@
+{
+    "language_versions": "≥1.5",
+    "editor": {
+        "test_files": [
+            "runtests.jl"
+        ],
+        "solution_files": [
+            "poetry-club.jl"
+        ]
+    },
+    "forked_from": [
+        "javascript/strings"
+    ],
+    "authors": [
+        {
+            "github_username": "SaschaMann",
+            "exercism_username": "SaschaMann"
+        }
+    ]
+}

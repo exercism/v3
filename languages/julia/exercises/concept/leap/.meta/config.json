@@ -1,0 +1,20 @@
+{
+    "language_versions": "≥1.0",
+    "editor": {
+        "test_files": [
+            "runtests.jl"
+        ],
+        "solution_files": [
+            "leap.jl"
+        ]
+    },
+    "forked_from": [
+        "v2/leap"
+    ],
+    "authors": [
+        {
+            "github_username": "SaschaMann",
+            "exercism_username": "SaschaMann"
+        }
+    ]
+}
