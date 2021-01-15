@@ -3302,8 +3302,8 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-analysis",
-          "slug": "array-analysis",
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/elyses-analytic-enchantments",
+          "slug": "elyses-analytic-enchantments",
           "concepts": [
             {
               "url": null,
@@ -3330,8 +3330,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-destructuring",
-          "slug": "array-destructuring",
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/elyses-destructured-enchantments",
+          "slug": "elyses-destructured-enchantments",
           "concepts": [
             {
               "url": null,
@@ -3354,8 +3354,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/arrays",
-          "slug": "arrays",
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/elyses-enchantments",
+          "slug": "elyses-enchantments",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
