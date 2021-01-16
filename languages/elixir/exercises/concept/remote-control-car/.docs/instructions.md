@@ -49,7 +49,7 @@ RemoteControlCar.display_distance(car)
 
 ## 4. Display the battery percentage
 
-Implement the `RemoteControlCar.BatteryDisplay()` function to return the distance as displayed on the LED display:
+Implement the `RemoteControlCar.display_battery/1` function to return the distance as displayed on the LED display:
 
 ```elixir
 car = RemoteControlCar.new()
@@ -61,15 +61,18 @@ RemoteControlCar.display_battery(car)
 
 Implement the `RemoteControlCar.drive/1` function that:
 
-- updates the number of meters driven
-- updates the battery percentage
+- updates the number of meters driven by 20
+- drains 1% of the battery
 
 ```elixir
-RemoteControlCar.new()
+RemoteControlCar.new("Red")
 |> RemoteControlCar.drive()
-|> RemoteControlCar.drive()
-|> RemoveControlCar.display_distance()
-# => "40 meters"
+# => %RemoteControlCar{
+#      battery_percentage: 99,
+#      distance_driven_in_meters: 20,
+#      nickname: "Red"
+#    }
+
 ```
 
 ## 6. Account for driving with a dead battery
@@ -77,22 +80,15 @@ RemoteControlCar.new()
 Update the `RemoteControlCar.drive/1` function to not increase the distance driven nor decrease the battery percentage when the battery is drained (at 0%):
 
 ```elixir
-car = RemoteControlCar.new()
-
-# Drain the battery
-# ...
-
-car.display_distance()
-# => "2000 meters"
-
-car.display_battery()
-# => "Battery empty"
-
-car = RemoteControlCar.drive()
-
-car.display_distance()
-# => "2000 meters"
-
-car.display_battery()
-# => "Battery empty"
+%RemoteControlCar{
+  battery_percentage: 0,
+  distance_driven_in_meters: 1980,
+  nickname: "Red"
+}
+|> RemoteControlCar.drive()
+# => %RemoteControlCar{
+#      battery_percentage: 0,
+#      distance_driven_in_meters: 1980,
+#      nickname: "Red"
+#    }
 ```
