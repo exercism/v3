@@ -4,7 +4,7 @@
 
 Literal string interpolation or **f-string** is a way of quickly and efficiently formatting and evaluating expressions to `str` using the `f` (or `F`) prefix before the brackets, like so `f'{object}'`. It can be used with all enclosing string types as: single quote `'`, double quote `"` and with multi-lines and escaping triple quotes `'''` or `"""`.
 
-An example to insert two variable values, one str and one float:
+In this example we insert two variable values in the sentence, one str and one float:
 
 ```python
 >>> name, value = 'eighth', 1/8
@@ -24,7 +24,7 @@ The expressions evaluated can be almost anything, to mention some of the possibi
 'Tenfold the value of "light" is 30.'
 ```
 
-f-string supports control mechanisms such as width, alignment, precision that are described for `.format()`.
+f-string supports control mechanisms such as width, alignment, precision that are described for the `.format()` method.
 
 An advanced example of f-string:
 
@@ -36,7 +36,7 @@ An advanced example of f-string:
 # This example includes a function, str, nested f-string, arithmetic expression, precision, bracket escaping and object formatting.
 ```
 
-There is a couple of limitations to be aware of, including: f-string expressions can't be empty and cannot contains comments:
+There is a couple of limitations to be aware of: f-string expressions can't be empty and cannot contain comments:
 
 ```python
 >>> f"An empty expression will error: {}"
@@ -51,7 +51,9 @@ SyntaxError: f-string expression part cannot include '#'
 
 # str.format() method
 
-The [`str.format()`][str-format] allows to replace placeholders with values, the placeholders are identified with named indexes {price} or numbered indexes {0} or empty placeholders {}. The values are specified as parameters in the `format()` method. Example:
+The [`str.format()`][str-format] allows to replace placeholders with values, the placeholders are identified with named indexes {price} or numbered indexes {0} or empty placeholders {}. The values are specified as parameters in the `format()` method.
+
+Example:
 
 ```python
 >>> 'My text: {placeholder1} and {}.'.format(12, placeholder1='value1')
@@ -60,13 +62,13 @@ The [`str.format()`][str-format] allows to replace placeholders with values, the
 
 Python `.format()` supports a whole range of [mini language format specifier][format-mini-language] that can be used to align text, convert, etc.
 
-The complex formatting specifier is `{[<name>][!<conversion>][:<format_specifier>]}`:
+The complete formatting specifier pattern is `{[<name>][!<conversion>][:<format_specifier>]}`:
 
 - `<name>` can be a named placeholder or a number or empty.
-- `!<conversion>` is optional and should be one of the three: `!s` for [`str()`][str-conversion], `!r` for [`repr()`][repr-conversion] or `!a` for [`ascii()`][ascii-conversion]. By default, `str()` is used.
+- `!<conversion>` is optional and should be one of this three conversions: `!s` for [`str()`][str-conversion], `!r` for [`repr()`][repr-conversion] or `!a` for [`ascii()`][ascii-conversion]. By default, `str()` is used.
 - `:<format_specifier>` is optional and has a lot of options, which we are [listed here][format-specifiers].
 
-Example of conversions for a diacritical ascii letter:
+Example of conversions for a diacritical letter:
 
 ```python
 >>> '{0!s}'.format('ë')
@@ -93,7 +95,7 @@ More examples at the end of [this documentation][summary-string-format].
 
 The `%` operator comes from the C language and allows to use positional arguments to build an `str`.
 
-This method is now superseded by the `.format()` method, which is why the nickname of `%` is The _'Old Style'_. I can be still found is python 2 or legacy code. The `%` operator is usually avoided because less efficient, fewer options are available and any placeholder-argument mismatch can raise an exception. It is similar to [`printf()`][printf-style-docs].
+This method is now superseded by the `.format()` method, which is why the nickname of `%` is The _'Old Style'_. It can be still found is python 2 or legacy code. The `%` operator is usually avoided because less efficient, fewer options are available and any placeholder-argument mismatch can raise an exception. This operator is similar to [`printf()`][printf-style-docs].
 
 ```python
 >> name = "Anna-conda"
@@ -116,7 +118,7 @@ The `%` operator substitutes at runtime the placeholder `%s` with the variable `
 
 More information about `Template` string can be found in the Python [documentation][template-string].
 
-## How to choose which to use?
+## How to choose which formatting method to use?
 
 1. The `f-string` is the newest and easiest to read, it should be preferred when using Python 3.6+.
 2. Then `.format()` is versatile, very powerful and compatible with most versions of Python.
