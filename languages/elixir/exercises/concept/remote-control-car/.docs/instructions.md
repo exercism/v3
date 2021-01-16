@@ -9,8 +9,6 @@ The remote controlled car has a fancy LED display that shows two bits of informa
 
 If the battery is at 0%, you can't drive the car anymore and the battery display will show `"Battery empty"`.
 
-You have six tasks, each of which will work with remote controlled car instances.
-
 ## 1. Create a brand-new remote controlled car
 
 Implement the `RemoteControlCar.new/0` function to return a brand-new remote controlled car struct:
