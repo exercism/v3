@@ -1,1 +1,1 @@
-TODO: add information on emoji-symbols concept
+<!-- TODO: add information on emoji-symbols concept -->

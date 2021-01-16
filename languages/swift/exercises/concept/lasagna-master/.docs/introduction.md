@@ -1,14 +1,14 @@
-## function-overloading
+## Function Overloading
 
-## multiple-return-values
+## Multiple Return Values
 
-## default-parameters
+## Default Parameters
 
-## variadic-parameters
+## Variadic Parameters
 
-## inout-parameters
+## Inout Parameters
 
-## nested-functions
+## Nested Functions
 
 We have seen in the `basics` exercise how functions in Swift are defined. Here we will look at some additional features of functions in Swift.
 

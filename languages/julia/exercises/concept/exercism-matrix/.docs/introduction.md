@@ -1,5 +1,3 @@
-## matrices-introduction
-
 ## matrices-concatenation
 
 ## matrices-indices

@@ -1,1 +1,1 @@
-TODO: add information on methods concept
+<!-- TODO: add information on methods concept -->

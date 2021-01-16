@@ -1,4 +1,4 @@
-## comments
+## Comments
 
 Common Lisp allows the programmer to write "comments" that are ignored by the
 computer. Single-line comments begin with one or more semi-colons (`;`) and,
@@ -11,7 +11,7 @@ occasionally, you may see the following:
 Where the comment is being used to indicate what value is returned by Common
 Lisp after running the code on that line.
 
-## cons
+## Cons
 
 All Common Lisp code is either an "atom" (a single, indivisible value) or a list
 (also termed a "cons"). A cons is made up of two parts: the first element and
@@ -25,7 +25,7 @@ the rest of the elements. For historical reasons these two parts are called the
 ; ^ car ^  |        ^ cdr ^
 ```
 
-## expressions
+## Expressions
 
 Together, the atoms and conses that make up Lisp code are referred to as
 S-Expressions (or sexpr for short). When S-Expressions are evaluated, they
@@ -40,7 +40,7 @@ the `defun` is automatically returned:
 (gimme-foo) ; => FOO
 ```
 
-## symbols
+## Symbols
 
 There are a couple of things to note regarding the example above. Firstly, the
 _symbol_ `FOO` is an atom, as it only has one "part" (unlike a cons which has
