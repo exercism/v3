@@ -21,7 +21,7 @@ Two notes about using sigils:
 Matching a range of characters using square brackets `[]` to denote a _character class_. This will match any one character to the characters in the class. You can also specify a range of characters like `a-z`, as long as the start and end represent a contiguous range of code points.
 
 ```elixir
-regex = ~r/[a-z][AZ][0-9][!?]/
+regex = ~r/[a-z][ADKZ][0-9][!?]/
 "jZ5!" =~ regex
 # => true
 "jB5?" =~ regex
