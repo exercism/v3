@@ -10,7 +10,7 @@
  */
 
 export function twoSum(array1, array2) {
-  throw new Error('Implement the twoSum function')
+  throw new Error('Implement the twoSum function');
 }
 
 /**
@@ -21,7 +21,7 @@ export function twoSum(array1, array2) {
  *
  */
 export function luckyNumber(sum) {
-  throw new Error('Implement the luckyNumber function')
+  throw new Error('Implement the luckyNumber function');
 }
 
 /**
@@ -32,5 +32,5 @@ export function luckyNumber(sum) {
  *
  */
 export function dashify(blurb) {
-  throw new Error('Implement the dashify function')
+  throw new Error('Implement the dashify function');
 }

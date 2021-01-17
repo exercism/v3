@@ -19,7 +19,7 @@ After the calculator the owner would like to know the sum that he got is a lucky
 
 A number is said to be lucky if the the reverse of the number is the same
 
-## 2.  Determine if the number is lucky
+## 2. Determine if the number is lucky
 
 Implement a function to determine whether the number is lucky for him or not.
 

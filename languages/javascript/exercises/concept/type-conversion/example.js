@@ -8,10 +8,10 @@
  */
 
 export function twoSum(array1, array2) {
-  let firstNumber = array1.join('')
-  let secondNumber = array2.join('')
+  let firstNumber = array1.join('');
+  let secondNumber = array2.join('');
 
-  return Number(firstNumber) + Number(secondNumber)
+  return Number(firstNumber) + Number(secondNumber);
 }
 
 /**
@@ -22,8 +22,8 @@ export function twoSum(array1, array2) {
  */
 
 export function luckyNumber(value) {
-  let strValue = String(value)
-  return strValue === strValue.split('').reverse().join('')
+  let strValue = String(value);
+  return strValue === strValue.split('').reverse().join('');
 }
 
 /**
@@ -34,6 +34,6 @@ export function luckyNumber(value) {
  */
 
 export function dashify(value) {
-  let strValue = String(value)
-  return strValue.split('').join('-')
+  let strValue = String(value);
+  return strValue.split('').join('-');
 }
