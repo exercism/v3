@@ -6,7 +6,7 @@
     }
   ],
   "editor": {
-    "solution_files": ["equality.js"],
-    "test_files": ["equality.spec.js"]
+    "solution_files": ["pokemon-mania.js"],
+    "test_files": ["pokemon-mania.spec.js"]
   }
 }
