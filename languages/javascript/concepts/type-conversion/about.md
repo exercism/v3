@@ -1,6 +1,8 @@
-The main thing to remember while doing Javascript type-conversion that we can convert type in multiple way for different objects and explicit type-conversion operation such as `Array` and using unary operator `+` .
+JavaScript values can be of many types, when performing operations or comparisons, types need to either be _explicitly converted_ to the same type, or _implicitly coerced_ to the same type.
 
-You can find the all the methods in [MDN docs][mdn-docs] or [ECMA docs][ecma-docs]
+Generally, type coercion is avoided because it is averse to unexpected errors. Instead, opt for practices which allow for explicit type conversion.
 
-[mdn-docs]: https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Type_conversion
-[ecma-docs]: https://www.ecma-international.org/ecma-262/#sec-abstract-operations
+An overview of these terms can be found on _MDN Web Docs_:
+
+- [Type Conversion](https://developer.mozilla.org/en-US/docs/Glossary/Type_Conversion)
+- [Type Coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)

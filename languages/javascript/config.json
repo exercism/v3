@@ -97,6 +97,12 @@
         "uuid": "5aa39e89-c601-4a66-ab72-5d8512d69e02",
         "concepts": ["closures"],
         "prerequisites": ["arrays", "booleans"]
+      },
+      {
+        "slug": "lucky-numbers",
+        "uuid": "78bbd7d2-b660-4791-a404-af5bfed31849",
+        "concepts": ["type-conversion"],
+        "prerequisites": ["arrays", "strings", "numbers"]
       }
     ],
     "practice": [

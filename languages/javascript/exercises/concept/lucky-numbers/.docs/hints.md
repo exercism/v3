@@ -1,7 +1,6 @@
 ## 1. Find the sum of two arrays
 
-- There is a built-in function to join the `array` and convert it to a string doing the implicit
-  type conversion to make it string
+- There is a built-in function to join the `array` and convert it to a string doing the implicit type conversion to make it string
 - There is built in object which is explicitly used to convert the `string` to the `number`
 - Sum the result once each number is converted
 

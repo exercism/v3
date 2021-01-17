@@ -15,13 +15,11 @@ twoSum([1, 2, 3], [0, 0, 7])
 
 The result should be a number and the array element only contains as integer
 
-After the calculator the owner would like to know the sum that he got is a lucky number or not.
-
-A number is said to be lucky if the the reverse of the number is the same
-
 ## 2. Determine if the number is lucky
 
-Implement a function to determine whether the number is lucky for him or not.
+After the calculator the owner would like to know the sum that he got is a lucky number or not. A number is said to be lucky if it is a palindrome.
+
+Implement a function to determine whether the number is lucky.
 
 ```javascript
 luckyNumber(1441)
@@ -30,11 +28,9 @@ luckyNumber(123)
 //=> false
 ```
 
-He decide to send the result of this number to his partner to make it easy for him to read
+## 3. Dashify a number
 
-## 3. Dashify the number
-
-Implement a function that added the dash after each number and convert it in the form of string
+Implement a function that interpolates a dash between each number, converting it to a string.
 
 ```javascript
 dashify(1466)
