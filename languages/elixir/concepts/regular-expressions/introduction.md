@@ -34,7 +34,7 @@ _Shorthand character classes_ which make the pattern more concise. A small selec
 - `\w` short for `[A-Za-z0-9_]` (any 'word' character)
 - `\s` short for `[ \t\r\n\f]` (any whitespace character)
 
-> Note: when a _shorthand character class_ outside of a sigil, it must be escaped: `"\\d"`
+When a _shorthand character class_ outside of a sigil, it must be escaped: `"\\d"`
 
 _Alternations_ use `|` as a special character to denote matching one _or_ another
 
