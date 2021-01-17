@@ -155,7 +155,8 @@
           "pattern-matching",
           "strings",
           "nil",
-          "default-arguments"
+          "default-arguments",
+          "keyword-lists"
         ]
       },
       {
