@@ -52,7 +52,7 @@ describe('equality', () => {
     test(`validCommonDetails(${expectedValue})`, () => {
       expect(validCommonDetails(expectedValue)).toEqual(expected);
     });
-    test(`validCommonDetails(${expected})`, () => {
+    test(`findSecretNumber(${expected})`, () => {
       expect(findSecretNumber(42, expected)).toBe(true);
     });
   });
@@ -98,7 +98,7 @@ describe('equality', () => {
     test(`validCommonDetails(${expectedValue})`, () => {
       expect(validCommonDetails(expectedValue)).toEqual(expected);
     });
-    test(`validCommonDetails(${expected})`, () => {
+    test(`findSecretNumber(${expected})`, () => {
       expect(findSecretNumber(23, expected)).toBe(false);
     });
   });
