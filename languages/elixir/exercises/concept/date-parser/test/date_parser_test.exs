@@ -337,21 +337,56 @@ defmodule DateParserTest do
 
   describe "regex match" do
     @tag :pending
-    test "numeric date" do
+    test "numeric date matches" do
+      assert DateParser.match_numeric_date() |> Regex.match?("01/02/1970")
+    end
+
+    @tag :pending
+    test "numeric date has named captures" do
       assert %{"year" => "1970", "month" => "02", "day" => "01"} =
                DateParser.match_numeric_date()
                |> Regex.named_captures("01/02/1970")
     end
 
     @tag :pending
-    test "month named date" do
+    test "numeric date with a prefix doesn't match" do
+      refute DateParser.match_numeric_date() |> Regex.match?("The day was 01/02/1970")
+    end
+
+    @tag :pending
+    test "numeric date with a suffix doesn't match" do
+      refute DateParser.match_numeric_date() |> Regex.match?("01/02/1970 was the day")
+    end
+
+    @tag :pending
+    test "month named date matches" do
+      assert DateParser.match_month_name_date() |> Regex.match?("January 1, 1970")
+    end
+
+    @tag :pending
+    test "month named date has named captures" do
       assert %{"year" => "1970", "month_name" => "January", "day" => "1"} =
                DateParser.match_month_name_date()
                |> Regex.named_captures("January 1, 1970")
     end
 
     @tag :pending
-    test "day and month named date" do
+    test "month named date with a prefix doesn't match" do
+      refute DateParser.match_month_name_date() |> Regex.match?("The day was January 1, 1970")
+    end
+
+    @tag :pending
+    test "month named date with a suffix doesn't match" do
+      refute DateParser.match_month_name_date() |> Regex.match?("January 1, 1970 was the day")
+    end
+
+    @tag :pending
+    test "day and month names date matches" do
+      assert DateParser.match_day_month_name_date() |> Regex.match?("Thursday, January 1, 1970")
+    end
+
+    @tag :pending
+    test "day and month names date has named captures" do
       assert %{
                "year" => "1970",
                "month_name" => "January",
@@ -360,6 +395,18 @@ defmodule DateParserTest do
              } =
                DateParser.match_day_month_name_date()
                |> Regex.named_captures("Thursday, January 1, 1970")
+    end
+
+    @tag :pending
+    test "day and month names date with a prefix doesn't match" do
+      refute DateParser.match_day_month_name_date()
+             |> Regex.match?("The day way Thursday, January 1, 1970")
+    end
+
+    @tag :pending
+    test "day and month names date with a suffix doesn't match" do
+      refute DateParser.match_day_month_name_date()
+             |> Regex.match?("Thursday, January 1, 1970 was the day")
     end
   end
 end
