@@ -6,12 +6,12 @@ After sometimes your teams decides that each pokemon will have the different kin
 
 ### 1. Check if the Pokemon has the chance attacking with the same attack with same value.
 
-Implement a function named `checkPokemonFight` that takes two values in the form of pokemon details as the object.This function will return the new pokemon data with the same properties and value.
+Implement a function named `checkPokemonData` that takes two vpalues in the form of pokemon details as the object.This function will return the new pokemon data with the same properties and value.
 
 ```javascript
 const pokemon1 = { name: 'charmeleon', hp: 22, absorb: null }
 const pokemon2 = { name: 'charmander', hp: '22', absorb: null }
-checkPokemonFight(pokemon1, pokemon2) //=>{hp:"22",absorb:null}
+checkPokemonData(pokemon1, pokemon2) //=>{hp:"22",absorb:null}
 ```
 
 ### 2- Find the stats details with valid value and that are not null from the result you obtained above

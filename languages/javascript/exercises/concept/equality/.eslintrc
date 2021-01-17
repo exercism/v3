@@ -17,6 +17,7 @@
   ],
   "rules": {
     "linebreak-style": "off",
+    "no-unused-vars": "off",
 
     "import/extensions": "off",
     "import/no-default-export": "off",
