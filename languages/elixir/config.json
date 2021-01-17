@@ -218,6 +218,7 @@
       },
       {
         "slug": "rpg-character-sheet",
+        "name": "RPG Character Sheet",
         "uuid": "83c31f5f-fc94-4315-9053-df5a5f5d5fb7",
         "concepts": ["io"],
         "prerequisites": ["strings", "maps", "atoms"]
@@ -1066,7 +1067,7 @@
     {
       "uuid": "776919ef-6e4a-40d6-8977-9da237d8cc14",
       "slug": "io",
-      "name": "Io",
+      "name": "IO",
       "blurb": "TODO: add blurb for io concept"
     },
     {
