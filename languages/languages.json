@@ -2045,6 +2045,10 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/concepts/default_arguments.md",
               "name": "default-arguments"
+            },
+            {
+              "url": null,
+              "name": "keyword-lists"
             }
           ]
         },
@@ -3302,8 +3306,8 @@
     "exercises": {
       "concept": [
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-analysis",
-          "slug": "array-analysis",
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/elyses-analytic-enchantments",
+          "slug": "elyses-analytic-enchantments",
           "concepts": [
             {
               "url": null,
@@ -3330,8 +3334,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/array-destructuring",
-          "slug": "array-destructuring",
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/elyses-destructured-enchantments",
+          "slug": "elyses-destructured-enchantments",
           "concepts": [
             {
               "url": null,
@@ -3354,8 +3358,8 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/arrays",
-          "slug": "arrays",
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/elyses-enchantments",
+          "slug": "elyses-enchantments",
           "concepts": [
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
@@ -3573,6 +3577,30 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
               "name": "booleans"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/javascript/exercises/concept/lucky-numbers",
+          "slug": "lucky-numbers",
+          "concepts": [
+            {
+              "url": null,
+              "name": "type-conversion"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/array.md",
+              "name": "arrays"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
             }
           ]
         }
