@@ -141,6 +141,47 @@
     ]
   },
   {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/arrays.elyses-enchantments.md",
+    "name": "Elyse\u0027s Enchantments",
+    "description": "As a magician-to-be, Elyse needs to practice some basics. She has a stack of cards that she wants to manipulate.",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/types/array.md",
+      "name": "arrays"
+    },
+    "implementations": [
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "elyses-enchantments",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/elyses-enchantments/.docs/instructions.md"
+      },
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "elyses-analytic-enchantments",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/elyses-analytic-enchantments/.docs/instructions.md"
+      },
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "elyses-destructured-enchantments",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/elyses-destructured-enchantments/.docs/instructions.md"
+      },
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "elyses-transformative-enchantments",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/elyses-transformative-enchantments/.docs/instructions.md"
+      },
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "magician-in-training",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/magician-in-training/.docs/instructions.md"
+      }
+    ]
+  },
+  {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/ternary-operators.employee-salary.md",
     "name": "Employee Salary",
     "description": "In this exercise, you\u0027ll be implementing rules for calculating the total salary of a empyoyee in a month. The International Siderurgy Company (ISC) needs help to calculate the salary for the employees, given that different factors can alter the final wage value for each employee.",
@@ -243,8 +284,8 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "freelance-rates",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/freelance-rates/.docs/instructions.md"
+        "exercise": "freelancer-rates",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/freelancer-rates/.docs/instructions.md"
       },
       {
         "track": "JavaScript",
@@ -587,47 +628,6 @@
         "slug": "ruby",
         "exercise": "strings",
         "url": "https://github.com/exercism/v3/blob/master/languages/ruby/exercises/concept/strings/.docs/instructions.md"
-      }
-    ]
-  },
-  {
-    "url": "https://github.com/exercism/v3/blob/master/reference/stories/arrays.magician-card-stack.md",
-    "name": "Magician card stack",
-    "description": "As a magician-to-be, Elyse needs to practice some basics. She has a stack of cards that she wants to manipulate.",
-    "concept": {
-      "url": "https://github.com/exercism/v3/blob/master/reference/types/array.md",
-      "name": "arrays"
-    },
-    "implementations": [
-      {
-        "track": "JavaScript",
-        "slug": "javascript",
-        "exercise": "arrays",
-        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/arrays/.docs/instructions.md"
-      },
-      {
-        "track": "JavaScript",
-        "slug": "javascript",
-        "exercise": "array-analysis",
-        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/array-analysis/.docs/instructions.md"
-      },
-      {
-        "track": "JavaScript",
-        "slug": "javascript",
-        "exercise": "array-destructuring",
-        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/array-destructuring/.docs/instructions.md"
-      },
-      {
-        "track": "JavaScript",
-        "slug": "javascript",
-        "exercise": "array-transformations",
-        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/array-transformations/.docs/instructions.md"
-      },
-      {
-        "track": "Swift",
-        "slug": "swift",
-        "exercise": "magician-in-training",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/magician-in-training/.docs/instructions.md"
       }
     ]
   },

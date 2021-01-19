@@ -1,0 +1,5 @@
+* [Language specification](https://www.ceylon-lang.org/documentation/1.3/spec/)
+* [Reference](https://www.ceylon-lang.org/documentation/1.3/reference/)
+* [API documentation for the `language` module](https://modules.ceylon-lang.org/repo/1/ceylon/language/1.3.3/module-doc/api/index.html)
+* [Examples](https://www.ceylon-lang.org/documentation/1.3/examples/)
+* [Community page](https://www.ceylon-lang.org/community/)

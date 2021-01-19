@@ -11,7 +11,7 @@ The initial breakdown of these concepts, including the ordering, is based on the
   - `h/0`, plus `h/1`, `i`, `v`, etc.
 - `elixir script.exs` to execute a script
 - `IO.puts/1` and `IO.inspect/2`
-- Inspect a string's codepoints with `str <> <<0>>` or `IO.inspect(str, binaries: :as_binaries)`
+- Inspect a string's code points with `str <> <<0>>` or `IO.inspect(str, binaries: :as_binaries)`
 
 ### elixir-lang.org Getting Started Guide concept extraction
 
@@ -85,11 +85,11 @@ The initial breakdown of these concepts, including the ordering, is based on the
     - optionally supports `else`
     - `do`/`end` blocks are a syntactic convenience over the keyword syntax
 - [Character encoding](../../../reference/concepts/character_encoding.md)
-  - Codepoints
-    - `?` operator to return a character's codepoint. E.g., `?a == 97`
-    - `\u` notation to represent a unicode codepoint in a string (as hex).
+  - Code points
+    - `?` operator to return a character's code point. E.g., `?a == 97`
+    - `\u` notation to represent a unicode code point in a string (as hex).
       - e.g, `"\u0061" == "\u{61} == "a"`
-  - [UTF8](../../../reference/concepts/utf8.md) encoding used to represent unicode codepoints in binaries
+  - [UTF8](../../../reference/concepts/utf8.md) encoding used to represent unicode code points in binaries
 - [Bitstrings](../../../reference/types/bit.md)
   - `<<>>` syntax
   - contiguous sequence of bits in memory
@@ -106,10 +106,10 @@ The initial breakdown of these concepts, including the ordering, is based on the
   - pattern matching:
     - `<<x, y, z>> = <<0, 1, 2>>` defaults to matching one byte, use `::n` to specify bits
     - `<<x, y::binary>> = <<0, 1, 2>>` uses `binary` to match the rest of a binary
-      - `x` is a codepoint (integer), `y` is a binary. e.g., `x == 0 and y == <<1, 2>>`
+      - `x` is a code point (integer), `y` is a binary. e.g., `x == 0 and y == <<1, 2>>`
     - `<<x::binary-size(2), y::binary>> = <<0, 1, 2>>` uses `binary-size(2)` to match 2 bytes
     - `<<x, y::binary>> = "hello"` matches on strings since strings are binaries
-    - `<<x::utf8, y::binary>> = "über"` uses `::utf8` match utf8 codepoints instead of a single byte
+    - `<<x::utf8, y::binary>> = "über"` uses `::utf8` match utf8 code points instead of a single byte
 - Charlists
   - list of integers where all the integers are valid code points
   - common when interfacing with erlang; otherwise they are not idiomatic
@@ -184,7 +184,7 @@ The initial breakdown of these concepts, including the ordering, is based on the
 - [Default arguments](../../../reference/concepts/default_arguments.md)
 - Capture Syntax
 - Guards and defguard
-- Parameters prefixed with `_`
+- Arguments prefixed with `_`
 - Local variables
 - Expression results
 - Recursion
@@ -281,7 +281,7 @@ The concept exercises use the following concepts:
 | `maps`                           | Introduction to the map data type.                                                                        |
 | `module-attributes-as-constants` | Introduction to using module attributes as constants.                                                     |
 | `multiple-clause-functions`      | Named function can be overloaded and each attempted to invoke until one succeeds.                         |
-| `pattern-matching`               | Basic knowledge of pattern matching using `=/2` and on function parameters.                               |
+| `pattern-matching`               | Basic knowledge of pattern matching using `=/2` and on function arguments.                                |
 | `recursion`                      | How to write basic recursive functions.                                                                   |
 | `regular-expressions`            | Basic regular expression patterns and the use of the `~r` sigil.                                          |
 | `strings`                        | How to do string processing, concatenation, interpolation, and multiline strings.                         |

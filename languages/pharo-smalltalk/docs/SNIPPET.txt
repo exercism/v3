@@ -1,0 +1,9 @@
+Class { "A simple SUnit test"
+	#name : #HelloWorldTest,
+	#superclass : #TestCase }
+
+{ #category : #testing }
+HelloWorldTest >> testSayHello [
+	self
+	    assert: HelloWorld sayHello
+	    equals: 'Hello, World!'. ]

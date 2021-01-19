@@ -1,1 +1,1 @@
-TODO: add information on constants concept
+<!-- TODO: add information on constants concept -->

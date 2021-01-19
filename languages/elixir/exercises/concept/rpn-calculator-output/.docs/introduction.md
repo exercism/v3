@@ -1,4 +1,4 @@
-## try-rescue-else-after
+## Try Rescue Else After
 
 Using `try..rescue` is a powerful construct for catching errors when they occur. Rescuing errors allows functions to return defined values when it is necessary. The `try..rescue` construct also offers us two additional features we can make use of:
 
@@ -21,28 +21,9 @@ end
 # => :success
 ```
 
-## Dynamic dispatch
+## Dynamic Dispatch
 
-When Elixir resolves the function to be invoked, it uses the Module's name (atom) to perform a lookup. The lookup can be done dynamically if the Module's name (atom) is bound to a variable.
-
-- You are familiar with the atom type:
-
-```elixir
-is_atom(:an_atom)
-# => true
-```
-
-- A Module's name is also an atom.
-  - All elixir module atoms are automatically prefixed with `Elixir.`
-
-```elixir
-is_atom(Enum)
-# => true
-Enum == Elixir.Enum
-# => true
-```
-
-- we can call a function from the module referenced by the atom:
+When Elixir resolves the function to be invoked, it uses the Module's name to perform a lookup. The lookup can be done dynamically if the Module's name is bound to a variable.
 
 ```elixir
 defmodule MyModule do
@@ -52,4 +33,13 @@ end
 atom = MyModule
 atom.message()
 # => "My message"
+```
+
+Internally, a Module's name is an atom. All Elixir module atoms are automatically prefixed with `Elixir.`
+
+```elixir
+is_atom(Enum)
+# => true
+Enum == Elixir.Enum
+# => true
 ```

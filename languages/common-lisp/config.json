@@ -45,7 +45,7 @@
         "prerequisites": [
           "lists",
           "symbols",
-          "function-definition",
+          "functions",
           "loop.basic",
           "variables"
         ]
@@ -58,7 +58,7 @@
           "lists",
           "arithmetic",
           "symbols",
-          "function-definition",
+          "functions",
           "expressions",
           "enumeration",
           "higher-order-functions"
@@ -72,7 +72,7 @@
           "lists",
           "arithmetic",
           "variables",
-          "function-definition",
+          "functions",
           "expressions"
         ]
       },
@@ -93,12 +93,7 @@
         "slug": "structures",
         "uuid": null,
         "concepts": ["structures"],
-        "prerequisites": [
-          "assignment",
-          "function-definition",
-          "variables",
-          "symbols"
-        ]
+        "prerequisites": ["assignment", "functions", "variables", "symbols"]
       },
       {
         "slug": "characters",
@@ -115,7 +110,7 @@
           "higher-order-functions",
           "cons",
           "sameness",
-          "function-definition"
+          "functions"
         ]
       },
       {
@@ -130,7 +125,7 @@
         "concepts": ["nested-functions"],
         "prerequisites": [
           "variables",
-          "function-definition",
+          "functions",
           "higher-order-functions",
           "symbols"
         ]
@@ -141,7 +136,7 @@
         "concepts": ["recursion"],
         "prerequisites": [
           "nested-functions",
-          "function-definition",
+          "functions",
           "expressions",
           "conditionals",
           "arithmetic",
@@ -154,7 +149,7 @@
         "uuid": null,
         "concepts": ["anonymous-functions"],
         "prerequisites": [
-          "function-definition",
+          "functions",
           "higher-order-functions",
           "variables",
           "expressions"
@@ -167,7 +162,7 @@
         "prerequisites": [
           "lists",
           "strings",
-          "function-definition",
+          "functions",
           "truthy-and-falsy",
           "symbols"
         ]
@@ -183,7 +178,7 @@
         "slug": "packages",
         "uuid": null,
         "concepts": ["packages"],
-        "prerequisites": ["variables", "symbols", "function-definition"]
+        "prerequisites": ["variables", "symbols", "functions"]
       },
       {
         "slug": "enumeration",
@@ -223,15 +218,23 @@
         ]
       },
       {
-        "slug": "function-definition",
-        "uuid": null,
-        "concepts": ["function-definition"],
-        "prerequisites": [
-          "expressions",
-          "integers",
-          "arithmetic",
-          "conditionals"
-        ]
+        "slug": "lillys-lasagna",
+        "name": "Lilly's Lasagna",
+        "uuid": "825df850-2f38-11eb-a817-542696d187f9",
+        "concepts": ["functions"],
+        "prerequisites": ["expressions", "integers", "arithmetic"]
+      },
+      {
+        "slug": "lillys-lasagna-leftovers",
+        "name": "Lilly's Lasagna Leftovers",
+        "uuid": "44570800-47f5-11eb-9f38-542696d187f9",
+        "concepts": [
+          "lambda-list",
+          "named-parameters",
+          "default-parameters",
+          "rest-parameters"
+        ],
+        "prerequisites": ["functions", "symbols", "conditionals"]
       }
     ],
     "practice": [
@@ -661,9 +664,9 @@
     },
     {
       "uuid": "a7b463d3-4d7f-4b4a-8a47-28307219541d",
-      "slug": "function-definition",
-      "name": "Function Definition",
-      "blurb": "TODO: add blurb for function-definition concept"
+      "slug": "functions",
+      "name": "Functions",
+      "blurb": "A reuable set of expressions"
     },
     {
       "uuid": "778561a9-c735-4c26-8d07-1baa71b8f94a",
@@ -682,6 +685,12 @@
       "slug": "integers",
       "name": "Integers",
       "blurb": "TODO: add blurb for integers concept"
+    },
+    {
+      "uuid": "4a364c88-4d16-11eb-8dd3-542696d187f9",
+      "slug": "lambda-list",
+      "name": "Lambda List",
+      "blurb": "The rules of parameter lists"
     },
     {
       "uuid": "65c600a7-7f6a-428f-9913-d6f127f35234",
@@ -766,6 +775,12 @@
       "slug": "variables",
       "name": "Variables",
       "blurb": "TODO: add blurb for variables concept"
+    },
+    {
+      "uuid": "5bbd40fe-3382-11eb-b6f1-542696d187f9",
+      "slug": "scope",
+      "name": "Scope",
+      "blurb": "TODO: add blurb for scope concept"
     }
   ]
 }

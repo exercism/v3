@@ -35,7 +35,7 @@
   - If invoked from within its own module, the module name may be omitted.
 - The arity of a function is often used when referring to a named function
 
-  - The arity refers to the number of parameters it accepts.
+  - The arity refers to the number of arguments it accepts.
 
   ```elixir
   def add(x, y, z), do: x + y + z # add/3, because the arity is 3
@@ -54,6 +54,15 @@
 ```elixir
 string = "this is a string! 1, 2, 3!"
 ```
+
+### Standard library
+
+- The documentation is available online at [hexdocs.pm/elixir][docs].
+- Most built-in data types have a corresponding module, e.g. `Integer`, `Float`, `String`, `Tuple`, `List`.
+- The `Kernel` module is a special module.
+  - Provides the basic capabilities on top of which the rest of the standard library is built.
+  - Automatically imported.
+  - Its functions can be used without the `Kernel.` prefix.
 
 ## Documentation
 
@@ -91,3 +100,4 @@ string = "this is a string! 1, 2, 3!"
 [defp]: https://hexdocs.pm/elixir/Kernel.html#defp/2
 [defmodule]: https://hexdocs.pm/elixir/Kernel.html#defmodule/2
 [string]: https://elixir-lang.org/getting-started/basic-types.html#strings
+[docs]: https://hexdocs.pm/elixir/Kernel.html#content

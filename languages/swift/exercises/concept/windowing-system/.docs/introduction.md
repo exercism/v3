@@ -1,8 +1,8 @@
-## structs-and-classes
+## Structs And Classes
 
-## methods
+## Methods
 
-## self
+## Self
 
 ## value-and-reference-types
 

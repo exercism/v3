@@ -1,6 +1,6 @@
 ## General
 
-- Use `?` to work with the character [codepoints][codepoint].
+- Use `?` to work with the character [code points][codepoint].
 - `\s` can be used to represent a space.
 - Use [integer binary notation][integer-literal] for working with the codes.
 - Try to use the tail call recursion strategy.
@@ -17,17 +17,19 @@
 
 ## 3. Encode a DNA charlist
 
-- Create a recursive function which takes a codepoint from the charlist and recursively builds the bitstring result.
-
-- Remember, a [charlist][charlist] is a list of [integer codepoints][codepoint].
-- You can get the first and remaining items from a list using a build in [`Kernel` module][kernel] function
+- Create a recursive function which takes a code point from the charlist and recursively builds the bitstring result.
+- Remember, a [charlist][charlist] is a list of [integer code points][codepoint].
+- You can get the first and remaining items from a list using a build in [`Kernel` module][kernel] function.
 - You can also pattern match on a list using the [`[head | tail]`][list] notation.
 - Use multiple clause functions to separate the base case from the recursive cases.
+- Do not forget to specify the types of bitstring segments using the `::` operator.
 
 ## 4. Decode a DNA bitstring
 
 - Create a recursive function which [matches the first 4 bits][bitstring-matching] from the [bitstring][bitstring] and recursively builds the [charlist][charlist] result.
 - Remember the [bitstring special form][bitstring-form] can be used for matching on bitstrings.
+- Do not forget to specify the types of bitstring segments using the `::` operator.
+- You will need to reverse the accumulator at the end. Write a private rail-recursive `reverse` function to do that and use it in the base-case of the `decode` function.
 
 [integer-literal]: https://hexdocs.pm/elixir/master/syntax-reference.html#integers-in-other-bases-and-unicode-code-points
 [codepoint]: https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#unicode-and-code-points

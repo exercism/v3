@@ -1,4 +1,4 @@
-## anonymous-functions
+## Anonymous Functions
 
 Functions are treated as first class citizens in Elixir. This means functions:
 
@@ -13,9 +13,9 @@ We might use anonymous functions to:
 - Hide data using lexical scope (also known as a closure).
 - Dynamically create functions at run-time.
 
-Anonymous function start with the reserved word `fn`, the parameters are separated from the body of the function with the `->` token, and they are finished with an `end`. As with named functions, the last expression in the function is _implicitly returned_ to the calling function.
+Anonymous function start with the reserved word `fn`, the arguments are separated from the body of the function with the `->` token, and they are finished with an `end`. As with named functions, the last expression in the function is _implicitly returned_ to the calling function.
 
-To invoke a function reference, you must use a `.` between the reference variable and the list of parameters:
+To invoke a function reference, you must use a `.` between the reference variable and the list of arguments:
 
 ```elixir
 function_variable = fn param ->
@@ -35,9 +35,9 @@ variable.(1)
 # => 2
 ```
 
-## closures
+## Closures
 
-Anonymous functions in Elixir are [closures][closure]. They can access variables that are in scope when the function is defined.
+Anonymous functions in Elixir are closures. They can access variables that are in scope when the function is defined.
 
 ```elixir
 a = 7
@@ -46,7 +46,7 @@ square.()
 # => 49
 ```
 
-## bit-manipulation
+## Bit Manipulation
 
 Elixir supports many functions for working with bits found in the _Bitwise module_.
 

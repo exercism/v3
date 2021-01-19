@@ -146,8 +146,8 @@
         "slug": "attack-of-the-trolls",
         "name": "Attack of the Trolls",
         "uuid": "ad240550-d732-4125-b00b-b852027a2db7",
-        "concepts": ["bit-manipulation", "compound-assignment", "flag-enums"],
-        "prerequisites": ["attributes", "enums", "integral-numbers"]
+        "concepts": ["attributes", "flag-enums"],
+        "prerequisites": ["bit-manipulation", "enums", "integral-numbers"]
       },
       {
         "slug": "interest-is-interesting",
@@ -1706,5 +1706,45 @@
       "name": "While Loops",
       "blurb": "TODO: add blurb for while-loops concept"
     }
+  ],
+  "key_features": [
+    {
+      "icon": "features-oop",
+      "title": "Modern",
+      "content": "C# is a modern, fast-evolving language."
+    },
+    {
+      "icon": "features-strongly-typed",
+      "title": "Cross-platform",
+      "content": "C# runs on almost any platform and chipset."
+    },
+    {
+      "icon": "features-functional",
+      "title": "Multi-paradigm",
+      "content": "C# is primarily an object-oriented language, but also has lots of functional features."
+    },
+    {
+      "icon": "features-lazy",
+      "title": "General purpose",
+      "content": "C# can be used for a wide variety of workloads, like websites, console applications, and even games."
+    },
+    {
+      "icon": "features-declarative",
+      "title": "Tooling",
+      "content": "C# has excellent tooling, with linting and advanced refactoring options built-in."
+    },
+    {
+      "icon": "features-generic",
+      "title": "Documentation",
+      "content": "Documentation is excellent and exhaustive, making it easy to get started with C#."
+    }
+  ],
+  "tags": [
+    "compiles_to/bytecode",
+    "runtime/common_language_runtime",
+    "paradigm/declarative",
+    "paradigm/functional",
+    "paradigm/object_oriented",
+    "typing/static"
   ]
 }

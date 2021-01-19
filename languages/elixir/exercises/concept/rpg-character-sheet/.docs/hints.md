@@ -1,9 +1,8 @@
 ## General
 
-- Review the official documentation:
-  - [Elixir - Getting started: IO][getting-started-io]
-  - [Elixir - Getting started: Debugging - IO.inspect/2][getting-started-debugging-io-inspect]
-  - [Elixir - IO][module-io]
+- Read about [IO][getting-started-io] in the Getting Started guide.
+- Read about [debugging with `IO.inspect/2`][getting-started-debugging-io-inspect] in the Getting Started guide.
+- Read about the [`IO` module][module-io] in the documentation.
 
 ## 1. Welcome the new player
 
@@ -12,17 +11,17 @@
 ## 2. Ask for the character's name
 
 - There is a [built-in function][io-gets] that reads a string from the standard output. It can also wrote a prompt, so there is no need to use a separate function to write the question.
-- There is a [build-in function][string-trim] in the `String` module that can remove a trailing newline from then input.
+- There is a [build-in function][string-trim] in the `String` module that can remove trailing and leading whitespace from the input.
 
 ## 3. Ask for the character's class
 
 - There is a [built-in function][io-gets] that reads a string from the standard output. It can also wrote a prompt, so there is no need to use a separate function to write the question.
-- There is a [build-in function][string-trim] in the `String` module that can remove a trailing newline from then input.
+- There is a [build-in function][string-trim] in the `String` module that can remove trailing and leading whitespace from the input.
 
 ## 4. Ask for the character's level
 
 - There is a [built-in function][io-gets] that reads a string from the standard output. It can also wrote a prompt, so there is no need to use a separate function to write the question.
-- There is a [build-in function][string-trim] in the `String` module that can remove a trailing newline from then input.
+- There is a [build-in function][string-trim] in the `String` module that can remove trailing and leading whitespace from the input.
 - There is a [build-in function][string-to-integer] in the `String` module that can convert a string to an integer.
 
 ## 5. Combine previous steps into one

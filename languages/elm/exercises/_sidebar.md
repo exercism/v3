@@ -1,0 +1,14 @@
+- [Start here](/)
+- Docs
+- [Languages](/languages/README.md)
+  - [Elm](/languages/elm/README.md)
+    - [Docs](/languages/elm/docs/README.md)
+    - [Exercises](/languages/elm/exercises/README.md)
+      - [Concept](/languages/elm/exercises/concept/README.md)
+      - [Practice](/languages/elm/exercises/practice/README.md)
+    - [Reference](/languages/elm/reference/README.md)
+- Reference
+  - [Concepts](/reference/concepts/README.md)
+  - [Paradigms](/reference/paradigms/README.md)
+  - [Tooling](/reference/tooling/README.md)
+  - [Types](/reference/types/README.md)

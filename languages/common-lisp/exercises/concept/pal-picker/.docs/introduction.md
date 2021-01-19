@@ -1,8 +1,8 @@
-## truthy-and-falsy
+## Truthy And Falsy
 
 In Common Lisp all values are "true" except for `()` which is "false". There are two special constant symbols `t` and `nil` whose values are true and false respectively.
 
-## conditionals
+## Conditionals
 
 Common lisp provides several different conditional expressions, the main difference being the number of branches they support.
 

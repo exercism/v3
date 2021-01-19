@@ -1,0 +1,8 @@
+function julia_set(z, c)
+    n = 0
+    while abs2(z) < 4
+        z = z^2 + c
+        n += 1
+    end
+    n
+end

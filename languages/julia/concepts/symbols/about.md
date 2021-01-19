@@ -1,1 +1,1 @@
-TODO: add information on symbols concept
+<!-- TODO: add information on symbols concept -->

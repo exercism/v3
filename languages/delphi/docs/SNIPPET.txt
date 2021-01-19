@@ -1,0 +1,7 @@
+function DigitSum(AValue: Int64): Integer;
+begin
+  if AValue mod 10 = AValue then
+    Result := AValue
+  else
+    Result := (AValue mod 10) + DigitSum(AValue div 10)
+end;
