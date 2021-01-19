@@ -44,8 +44,8 @@
             "icon": ""
         },
         {
-            "title": "General",
-            "content": "",
+            "title": "Natural Syntax",
+            "content": "Unicode operators and identifiers paired with Multiple Dispatch allow for code that looks like maths",
             "icon": ""
         }
     ],
