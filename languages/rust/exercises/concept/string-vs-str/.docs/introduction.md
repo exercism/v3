@@ -1,4 +1,4 @@
-`String` is a (mutable) collection of well-formed utf8 chars. (In Java or C#, this type is called `StringBuilder`.)
+`String` is a potentially-mutable utf8-encoded representation of a sequence of Unicode codepoints. (In Java or C#, this type is called `StringBuilder`.)
 
 `&str` is a read only view of a well-formed utf8 sequence.
 
