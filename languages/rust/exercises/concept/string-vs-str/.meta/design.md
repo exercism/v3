@@ -1,6 +1,6 @@
 # Goal
 
- Teach the student the differences between String and &str and how to work successfully with both.
+Teach the student the differences between String and &str and how to work successfully with both.
 Learning objectives
 
     Know String is owned and mutable
@@ -27,6 +27,7 @@ Learning objectives
     string-use
 
 ## Resources to refer to
+
 ## Hints
 
     [string slices discussion in TRPL book][https://doc.rust-lang.org/book/ch04-03-slices.html#string-slices]
