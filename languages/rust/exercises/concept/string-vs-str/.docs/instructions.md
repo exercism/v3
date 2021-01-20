@@ -1,4 +1,4 @@
-We need a csv builder as defined by this standard: https://tools.ietf.org/html/rfc4180.
+We need a builder for a CSV record per the standard defined in [RFC 4180](https://tools.ietf.org/html/rfc4180).
 
 The builder needs to concatenate immutable string slices (`&str`) and when `build` is called, the builder will be consumed and will return the created csv string.
 
