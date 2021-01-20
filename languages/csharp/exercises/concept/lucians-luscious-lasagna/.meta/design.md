@@ -9,7 +9,7 @@
 - Know how to call a method
 - Know that methods must be defined in classes
 - Know about the `public` access modifier
-- Know about the `static` modifier (only in concept's `about.md`)
+- Know about the `static` modifier (only in the concept's `about.md`)
 - Know how to define an integer
 - Know how to use mathematical operators on integers
 - Know how to define single- and multiline comments
@@ -38,7 +38,7 @@ There are no prerequisites.
 
 ## Analyzer
 
-This exercise could benefit from the following rules added to the the [analyzer][analyzer]:
+This exercise could benefit from the following rules added to the [analyzer][analyzer]:
 
 - Verify that the `RemainingMinutesInOven()` method calls the `ExpectedMinutesInOven()` method.
 - Verify that the `ElapsedTimeInMinutes()` method calls the `PreparationTimeInMinutes()` method.
