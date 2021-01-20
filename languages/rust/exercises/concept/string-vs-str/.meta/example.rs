@@ -28,7 +28,7 @@ impl CSVBuilder {
         self.content.push('\n');
     }
 
-    /// Consumes the builder and returns the comma separated list
+    /// Consumes the builder and returns the CSV record.
     pub fn build(self) -> String {
         self.content
     }
