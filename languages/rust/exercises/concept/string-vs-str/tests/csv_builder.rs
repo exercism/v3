@@ -24,7 +24,7 @@ fn test_quote() {
 
     let list = builder.build();
     //Note that from now on we can do nothing now with builder.
-    assert_eq!("ant,\"ba\"t\",cat", &list);
+    assert_eq!(r#"ant,"ba""t",cat"#, &list);
 }
 
 #[test]
