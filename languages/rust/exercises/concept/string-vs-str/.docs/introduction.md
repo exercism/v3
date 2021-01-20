@@ -2,7 +2,7 @@
 
 `&str` is a read only view of a well-formed utf8 sequence.
 
-Strings and &str in rust can not be indexed into like you might in other languages.
+`String` and `&str` in rust can not be indexed into like you might in other languages.
 For example this will not work:
 
 ```rust,invalid
