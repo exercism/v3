@@ -24,6 +24,7 @@ You have five tasks: implement new functions to determine the new random events 
 ## Tasks
 
 <!-- TODO: Make sure the name here is consistent with the exercise name -->
+<!-- prettier-ignore -->
 !!! note
     You are provided with an example solution to [Annalyn's Infiltration](https://exercism.io/tracks/julia/exercises/annalyns-infiltration) as a starting point.
     You are free to choose your own solution to that exercise as a starting point instead.
