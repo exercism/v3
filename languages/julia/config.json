@@ -19,15 +19,15 @@
             },
             {
                 "uuid": "05cfc609-3a14-479a-b6fa-6d2a53ad111c",
-                "name": "Annalyn's Analytical Avenge Attempt",
-                "slug": "annalyn1",
+                "name": "Annalyn's Infiltration",
+                "slug": "annalyns-infiltration",
                 "concepts": ["boolean-logic", "booleans"],
                 "prerequisites": ["functions-introduction"]
             },
             {
                 "uuid": "3c0ab989-6544-4a1a-8e93-c2b5dc3d4109",
-                "name": "Annalyn's Analytical Avenge Attempt II",
-                "slug": "annalyn2",
+                "name": "Annalyn's Infiltration II",
+                "slug": "annalyns-infiltration2",
                 "concepts": ["randomness"],
                 "prerequisites": ["boolean-logic"]
             },
