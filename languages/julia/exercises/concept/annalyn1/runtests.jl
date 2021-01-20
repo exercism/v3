@@ -1,6 +1,6 @@
 using Test
 
-include("game-logic.jl")
+include("game.jl")
 
 @testset "fast attack" begin
     @test !can_do_fast_attack(true)
