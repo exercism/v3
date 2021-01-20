@@ -1,8 +1,8 @@
-pub struct CSVBuilder {
+pub struct CSVRecordBuilder {
     content: String,
 }
 
-impl CSVBuilder {
+impl CSVRecordBuilder {
     // Create a new builder
     pub fn new() -> Self {
         Self { content: String::new() }
@@ -21,11 +21,6 @@ impl CSVBuilder {
         } else {
             self.content.push_str(val);
         }
-    }
-
-    /// Start a new line
-    pub fn new_line(&mut self) {
-        self.content.push('\n');
     }
 
     /// Consumes the builder and returns the CSV record.

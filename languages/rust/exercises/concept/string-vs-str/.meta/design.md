@@ -7,10 +7,10 @@ Learning objectives
     Know &str is shared and immutable
     Know String has &str methods because of shared traits
     Know of performance characteristics
+    Machine level representation of either
 
 ## Out of scope
 
-    Machine level representation of either
     in depth performance differences
 
 ## Concepts
@@ -30,10 +30,10 @@ Learning objectives
 
 ## Hints
 
-    [string slices discussion in TRPL book][https://doc.rust-lang.org/book/ch04-03-slices.html#string-slices]
-    (&str primitive documentation)[https://doc.rust-lang.org/std/primitive.str.html]
-    (std::str)[https://doc.rust-lang.org/std/str/]
-    (string types in RBE)[https://doc.rust-lang.org/stable/rust-by-example/std/str.html]
+    [string slices discussion in TRPL book](https://doc.rust-lang.org/book/ch04-03-slices.html#string-slices)
+    [&str primitive documentation](https://doc.rust-lang.org/std/primitive.str.html)
+    [std::str](https://doc.rust-lang.org/std/str/)
+    [string types in RBE](https://doc.rust-lang.org/stable/rust-by-example/std/str.html)
 
 ## After
 

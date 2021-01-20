@@ -1,6 +1,6 @@
 `String` is a potentially-mutable utf8-encoded representation of a sequence of Unicode codepoints. (In Java or C#, this type is called `StringBuilder`.)
 
-`&str` is a read only view of a well-formed utf8 sequence.
+`&str` is a read only view of a well-formed utf8 sequence and because it's a reference it is `Copy` and can be shared.
 
 `String` and `&str` in rust can not be indexed into like you might in other languages.
 For example this will not work:
@@ -30,3 +30,20 @@ println!("final char: {}", example.chars().nth(n_chars-1).unwrap()); // ❤
 println!("final byte: {}", final_byte);                              // 164
 println!("char of final byte: {}", final_byte as char);              // ¤
 ```
+
+# How to convert from one to the other?
+
+`String` implements `Deref<Target=str>` which means `&String::new()` is of type `&str`.
+
+There are many ways to create a `String` from a `&str`:
+
+- `String::from("my str")`
+- `"my str".to_string()`
+- `"my str".to_owned()`
+- `let s : String = "my str".into();` // Not so explicit
+
+All of the above ways require allocating memory for the `String` (on the heap).
+This is why `&str` is available in no_std but `String` is not.
+
+(The (heapless)[https://crates.io/crates/heapless] crate is often used when manipulating
+strings in no_std.)

@@ -2,7 +2,7 @@ use csv_builder::*;
 
 #[test]
 fn test_no_escaping() {
-    let mut builder = CSVBuilder::new();
+    let mut builder = CSVRecordBuilder::new();
 
     builder.add("ant");
     builder.add("bat");
@@ -16,7 +16,7 @@ fn test_no_escaping() {
 #[test]
 #[ignore]
 fn test_quote() {
-    let mut builder = CSVBuilder::new();
+    let mut builder = CSVRecordBuilder::new();
 
     builder.add("ant");
     builder.add("ba\"t");
@@ -30,7 +30,7 @@ fn test_quote() {
 #[test]
 #[ignore]
 fn test_new_line() {
-    let mut builder = CSVBuilder::new();
+    let mut builder = CSVRecordBuilder::new();
 
     builder.add("ant");
     builder.add("ba\nt");
@@ -38,11 +38,10 @@ fn test_new_line() {
     let list = builder.build();
     assert_eq!("ant,\"ba\nt\"", &list);
 }
-
 #[test]
 #[ignore]
 fn test_comma() {
-    let mut builder = CSVBuilder::new();
+    let mut builder = CSVRecordBuilder::new();
 
     builder.add("ant");
     builder.add("ba,t");
@@ -53,22 +52,8 @@ fn test_comma() {
 
 #[test]
 #[ignore]
-fn test_two_line() {
-    let mut builder = CSVBuilder::new();
-
-    builder.add("ant");
-    builder.add("bat");
-    builder.new_line();
-    builder.add("cat");
-
-    let list = builder.build();
-    assert_eq!("ant,bat,\ncat", &list);
-}
-
-#[test]
-#[ignore]
 fn test_empty() {
-    let builder = CSVBuilder::new();
+    let builder = CSVRecordBuilder::new();
     let list = builder.build();
     assert!(list.is_empty());
 }
