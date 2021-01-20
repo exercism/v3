@@ -1,6 +1,6 @@
 `String` is a (mutable) collection of well-formed utf8 chars. (In Java or C#, this type is called `StringBuilder`.)
 
-`&str` is a read only view of a well-formed utf8 string.
+`&str` is a read only view of a well-formed utf8 sequence.
 
 Strings and &str in rust can not be indexed into like you might in other languages.
 For example this will not work:
