@@ -38,7 +38,6 @@ For readability, line breaks can be used when there are many elements or nested 
 >>> lots_of_entries
 ['Rose', 'Sunflower', 'Poppy', 'Pansy', 'Tulip', 'Fuchsia', 'Cyclamen', 'Lavender']
 
-
 # Each data structure is on its own line to help clarify what they are.
 >>> nested_data_structures = [
       {"fish": "gold", "monkey": "brown", "parrot": "grey"},
@@ -75,11 +74,15 @@ Results when using a list constructor with a string or a dict may be surprising:
 >>> multiple_elements_string
 ['T', 'i', 'm', 'b', 'u', 'k', 't', 'u']
 
-
 # Unicode separators and positioning code points are also added *individually*.
 >>> multiple_code_points_string = list('अभ्यास')
 >>> multiple_code_points_string
 ['अ', 'भ', '्', 'य', 'ा', 'स']
+
+# The iteration default for dictionaries is over the keys, so only key data is inserted into the list.
+>>> source_data = {"fish": "gold", "monkey": "brown"}
+>>> multiple_elements_dict_1 = list(source_data)
+['fish', 'monkey']
 ```
 
 Because the `list` constructor will only take _iterables_ (or nothing) as arguments, objects that are _not_ iterable will throw a type error. Consequently, it is much easier to create a one-item list via the literal method.
