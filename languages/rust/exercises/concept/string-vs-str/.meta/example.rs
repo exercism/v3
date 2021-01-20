@@ -14,9 +14,9 @@ impl CSVBuilder {
             self.content.push(',');
         }
 
-        if val.contains(",") || val.contains("\"") || val.contains("\n") {
+        if val.contains(",") || val.contains(r#"""#) || val.contains("\n") {
             self.content.push('"');
-            self.content.push_str(&val.replace("\"", "\"\""));
+            self.content.push_str(&val.replace(r#"""#, r#""""#));
             self.content.push('"');
         } else {
             self.content.push_str(val);
