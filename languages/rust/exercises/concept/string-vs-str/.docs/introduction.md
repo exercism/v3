@@ -13,7 +13,7 @@ println!("First letter = {}", hello[0]);
 Rather than addressing the string in terms of individual bytes we work with discrete unicode characters,
 so for example we could achieve the above result in rust like this:
 
-```
+```rust
 let hello = "Hello";
 println!("First letter = {}", hello.chars().first().unwrap());
 ```
