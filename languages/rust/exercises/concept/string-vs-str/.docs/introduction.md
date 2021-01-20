@@ -5,7 +5,7 @@
 Strings and &str in rust can not be indexed into like you might in other languages.
 For example this will not work:
 
-```
+```rust,invalid
 let hello = "Hello";
 println!("First letter = {}", hello[0]);
 ```
