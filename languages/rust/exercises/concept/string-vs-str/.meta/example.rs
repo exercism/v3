@@ -1,0 +1,35 @@
+pub struct CSVBuilder {
+    content: String,
+}
+
+impl CSVBuilder {
+    // Create a new builder
+    pub fn new() -> Self {
+        Self { content: String::new() }
+    }
+
+    /// Adds an item to the list separated by a space and a comma.
+    pub fn add(&mut self, val: &str) {
+        if !self.content.is_empty() {
+            self.content.push(',');
+        }
+
+        if val.contains(",") || val.contains("\"") || val.contains("\n") {
+            self.content.push('"');
+            self.content.push_str(&val.replace("\"", "\"\""));
+            self.content.push('"');
+        } else {
+            self.content.push_str(val);
+        }
+    }
+
+    /// Start a new line
+    pub fn new_line(&mut self) {
+        self.content.push('\n');
+    }
+
+    /// Consumes the builder and returns the comma separated list
+    pub fn build(self) -> String {
+        self.content
+    }
+}
