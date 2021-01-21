@@ -90,3 +90,7 @@ clj꞉exercism.elyses-destructured-enchantments꞉> 
 clj꞉exercism.elyses-destructured-enchantments꞉> 
 ("jack" "queen" "king")
 clj꞉exercism.elyses-destructured-enchantments꞉> 
+#'exercism.elyses-destructured-enchantments/number-of-moons
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+14
+clj꞉exercism.elyses-destructured-enchantments꞉> 
