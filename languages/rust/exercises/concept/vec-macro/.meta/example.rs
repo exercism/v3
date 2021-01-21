@@ -5,8 +5,9 @@ fn create_empty() -> Vec<u8> {
     vec![]
 }
 
-/// Create a buffer of zeroes with `count` bytes capacity.
-/// Applications use these for fill and modifying data
+/// Create a buffer of `count` zeroes.
+///
+/// Applications use these for filling and modifying data
 fn create_buffer(count: usize) -> Vec<u8> {
     vec![0; count]
 }
