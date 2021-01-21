@@ -40,7 +40,7 @@ There are many ways to create a `String` from a `&str`:
 - `String::from("my str")`
 - `"my str".to_string()`
 - `"my str".to_owned()`
-- `let s : String = "my str".into();` // Not so explicit
+- `let s: String = "my str".into();`
 
 All of the above ways require allocating memory for the `String` (on the heap).
 This is why `&str` is available in no_std but `String` is not.
