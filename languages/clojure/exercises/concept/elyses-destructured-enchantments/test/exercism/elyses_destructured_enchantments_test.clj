@@ -2,6 +2,6 @@
   (:require [clojure.test :refer :all]
             [exercism.elyses-destructured-enchantments :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest first-card-test
+  (is (= (first-card [3]) 3))
+  (is (= (first-card [8 3 9 5]) 8)))

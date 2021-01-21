@@ -1,6 +1,12 @@
 (ns exercism.elyses-destructured-enchantments)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (prn x "Hello, World!"))
+(defn first-card
+  "Returns the first card from deck."
+  [deck]
+  (let [[first] deck]
+    first))
+
+(comment
+  (first-card [3])
+  (first-card [8 3 9 5])
+  )
