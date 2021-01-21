@@ -31,12 +31,16 @@ println!("final byte: {}", final_byte);                              // 164
 println!("char of final byte: {}", final_byte as char);              // ¤
 ```
 
-# How to convert from one to the other?
+# Converting a `String` into a `&str`
 
 `String` implements `Deref<Target=str>`. This trait has some compiler special casing: it means that any reference to a `String` can automatically, transparently be coerced into an `&str`. This implies the following:
 
 - Any code which expects, for example, an `&str` argument can accept an `&String` instead.
-- Any method implemented for `&str` can be called on a `String` as well. 
+- Any method implemented for `&str` can be called on a `String` as well.
+
+(If one generically wanted to be able to take any form of reference to a `str` then one could have an argument of type `impl AsRef<str>` but typically typing arguments as `&str` is common.)
+
+# Converting a `&str` to a `String`
 
 There are many ways to create a `String` from a `&str`:
 
