@@ -17,12 +17,10 @@ Learning objectives
 
     mutability
     ownership
-    slices
 
 ## Prerequisites
 
     basics
-    slices
     str-use
     string-use
 
@@ -37,7 +35,7 @@ Learning objectives
 
 ## After
 
-    tutorial on string versus str in functions
+    [tutorial on string versus str in functions](https://hermanradtke.com/2015/05/03/string-vs-str-in-rust-functions.html)
     https://fasterthanli.me/blog/2020/working-with-strings-in-rust/
     https://doc.rust-lang.org/book/ch08-02-strings.html#storing-utf-8-encoded-text-with-strings
 
