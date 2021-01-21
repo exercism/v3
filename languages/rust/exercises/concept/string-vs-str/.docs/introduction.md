@@ -33,7 +33,10 @@ println!("char of final byte: {}", final_byte as char);              // ¤
 
 # How to convert from one to the other?
 
-`String` implements `Deref<Target=str>` which means `&String::new()` is of type `&str`.
+`String` implements `Deref<Target=str>`. This trait has some compiler special casing: it means that any reference to a `String` can automatically, transparently be coerced into an `&str`. This implies the following:
+
+- Any code which expects, for example, an `&str` argument can accept an `&String` instead.
+- Any method implemented for `&str` can be called on a `String` as well. 
 
 There are many ways to create a `String` from a `&str`:
 
