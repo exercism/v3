@@ -45,7 +45,7 @@
         },
         {
             "title": "Composable",
-            "content": "Julia uses multiple dispatch as a paradigm, making it unreasonably effective at composing programs",
+            "content": "Julia uses multiple dispatch as a paradigm, making it unreasonably effective for composing programs!",
             "icon": ""
         },
         {
@@ -55,7 +55,7 @@
         },
         {
             "title": "Natural Syntax",
-            "content": "Unicode operators and identifiers and operator overloading enables elegant code that looks like math",
+            "content": "Unicode operators & identifiers, plus operator overloading, allows elegant code that looks like math",
             "icon": ""
         }
     ],
