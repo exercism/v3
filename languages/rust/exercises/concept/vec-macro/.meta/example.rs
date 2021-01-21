@@ -1,13 +1,19 @@
 /// vec-macro for creating empty vectors, and vectors of particular size, with vec!
 
-/// create an empty vector
-fn populate_empty() -> Vec<u8> {
+/// Create an empty vector
+fn create_empty() -> Vec<u8> {
     vec![]
 }
 
-/// create a vector initialized with a size of 3 and each slot being the same value
-fn populate_filled(counter: u8) -> Vec<u8> {
-    vec![counter; 3]
+/// Create a buffer of zeroes with `count` bytes capacity.
+/// Applications use these for fill and modifying data
+fn create_buffer(count: usize) -> Vec<u8> {
+    vec![0; count]
+}
+
+/// Create a vector containing the first five digits of the fibonacci sequence
+fn fibonacci() -> Vec<u8> {
+    vec![1, 1, 2, 3, 5]
 }
 
 #[cfg(test)]
@@ -15,10 +21,19 @@ mod tests {
     use super::*;
     #[test]
     fn test_empty() {
-        assert_eq!(populate_empty(), Vec::new());
+        assert_eq!(create_empty(), Vec::new());
     }
     #[test]
-    fn test_filled() {
-        assert_eq!(populate_filled(3), vec![3; 3]);
+    fn test_buffer() {
+        let mut zeroized = Vec::new();
+        zeroized.extend_from_slice(&[0, 0, 0]);
+        assert_eq!(create_buffer(3), zeroized);
+    }
+    #[test]
+    fn test_fibonacci() {
+        let mut first_five = Vec::new();
+        first_five.extend_from_slice(&[1, 1, 2, 3, 5]);
+
+        assert_eq!(fibonacci(), first_five);
     }
 }
