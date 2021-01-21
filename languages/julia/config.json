@@ -8,6 +8,57 @@
         "indent_style": "space",
         "indent_size": 4
     },
+    "tags": [
+        "execution_mode/compiled",
+        "typing/dynamic",
+        "paradigm/declarative",
+        "paradigm/functional",
+        "paradigm/imperative",
+        "paradigm/object_oriented",
+        "paradigm/procedural",
+        "platform/windows",
+        "platform/mac",
+        "platform/linux",
+        "used_for/artificial_intelligence",
+        "used_for/cross_platform_development",
+        "used_for/financial_systems",
+        "used_for/robotics",
+        "used_for/scientific_calculations",
+        "used_for/scripts",
+        "used_for/web_development"
+    ],
+    "key_features": [
+        {
+            "title": "Fast",
+            "content": "Julia is designed for high performance. Julia compiles efficient native code for multiple platforms",
+            "icon": ""
+        },
+        {
+            "title": "Interactive",
+            "content": "Julia is dynamically typed, feels like a scripting language and has good support for interactive use",
+            "icon": ""
+        },
+        {
+            "title": "Scientific",
+            "content": "Julia is designed with reproducibility, distributed computing and frictionless collaboration in mind",
+            "icon": ""
+        },
+        {
+            "title": "Composable",
+            "content": "Julia uses multiple dispatch as a paradigm, making it unreasonably effective for composing programs!",
+            "icon": ""
+        },
+        {
+            "title": "Expressive",
+            "content": "Multiple dispatch, generator expressions and metaprogramming features lead to highly expressive code",
+            "icon": ""
+        },
+        {
+            "title": "Natural Syntax",
+            "content": "Unicode operators & identifiers, plus operator overloading, allows elegant code that looks like math",
+            "icon": ""
+        }
+    ],
     "exercises": {
         "concept": [
             {
