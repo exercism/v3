@@ -45,5 +45,5 @@ There are many ways to create a `String` from a `&str`:
 All of the above ways require allocating memory for the `String` (on the heap).
 This is why `&str` is available in no_std but `String` is not.
 
-(The (heapless)[https://crates.io/crates/heapless] crate is often used when manipulating
+(The [heapless](https://crates.io/crates/heapless) crate is often used when manipulating
 strings in no_std.)
