@@ -26,3 +26,42 @@ clj꞉exercism.elyses-destructured-enchantments꞉> 
 clj꞉exercism.elyses-destructured-enchantments꞉> 
 8
 clj꞉exercism.elyses-destructured-enchantments꞉> 
+#'exercism.elyses-destructured-enchantments-test/second-card
+clj꞉exercism.elyses-destructured-enchantments-test꞉> 
+; Syntax error compiling at (src/exercism/elyses_destructured_enchantments.clj:18:3).
+; Unable to resolve symbol: second-card in this context
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+#'exercism.elyses-destructured-enchantments/second-card
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+4
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+5
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+nil
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+nil
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+#'exercism.elyses-destructured-enchantments/swap-top-two-cards
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+[6 3 nil]
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+[4 10 (3 7 8)]
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+; Syntax error compiling at (src/exercism/elyses_destructured_enchantments.clj:21:1).
+; Unable to resolve symbol: deck in this context
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+(10 4 3 7 8)
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+(4 10 3 7 8)
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+; Execution error (ClassCastException) at exercism.elyses-destructured-enchantments/eval7859 (REPL:22).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+[4 10 3 7 8]
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+#'exercism.elyses-destructured-enchantments/swap-top-two-cards
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+[6 3]
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+[4 10 3 7 8]
+clj꞉exercism.elyses-destructured-enchantments꞉> 
