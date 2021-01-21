@@ -15,3 +15,8 @@
 (deftest swap-top-two-cards-test
   (is (= (swap-top-two-cards [3 6]) [6 3]))
   (is (= (swap-top-two-cards [10 4 3 7 8]) [4 10 3 7 8])))
+
+(deftest discard-top-card-test
+  (is (= (discard-top-card [7]) [7 nil]))
+  (is (= (discard-top-card [9 2 10 4]) [9 [2 10 4]]))
+  )

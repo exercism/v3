@@ -18,8 +18,12 @@
   (let [[a b & rest] deck]
     (vec (conj rest a b))))
 
-(let [[a b & rest] [10 4 3 7 8]]
-  (vec (conj rest a b)))
+(defn discard-top-card
+  "Returns a vector containing the first card and
+   a vector of the remaining cards in the deck."
+  [deck]
+  (let [[first & rest] deck]
+  [first rest]))
 
 (comment
   (first-card [3])
