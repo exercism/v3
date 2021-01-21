@@ -50,7 +50,7 @@
         },
         {
             "title": "Expressive",
-            "content": "Julia's familiar mathematical syntax and metaprogramming features lead to highly expressive code",
+            "content": "Multiple dispatch, generator expressions and metaprogramming features lead to highly expressive code",
             "icon": ""
         },
         {
