@@ -65,3 +65,28 @@ clj꞉exercism.elyses-destructured-enchantments꞉> 
 clj꞉exercism.elyses-destructured-enchantments꞉> 
 [4 10 3 7 8]
 clj꞉exercism.elyses-destructured-enchantments꞉> 
+; Syntax error compiling at (src/exercism/elyses_destructured_enchantments.clj:34:3).
+; Unable to resolve symbol: face-cards in this context
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+#'exercism.elyses-destructured-enchantments/face-cards
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+#'exercism.elyses-destructured-enchantments/insert-face-cards
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+[3 ["jack" "queen" "king"] (10 7)]
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+#'exercism.elyses-destructured-enchantments/insert-face-cards
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+[3 ["jack" "queen" "king"] 10 7]
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+#'exercism.elyses-destructured-enchantments/insert-face-cards
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+(3 "jack" "queen" "king" 10 7)
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+(9 "jack" "queen" "king" nil)
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+#'exercism.elyses-destructured-enchantments/insert-face-cards
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+(9 "jack" "queen" "king")
+clj꞉exercism.elyses-destructured-enchantments꞉> 
+("jack" "queen" "king")
+clj꞉exercism.elyses-destructured-enchantments꞉> 

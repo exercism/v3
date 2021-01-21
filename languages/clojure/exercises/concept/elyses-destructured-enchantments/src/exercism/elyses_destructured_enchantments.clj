@@ -25,13 +25,17 @@
   (let [[first & rest] deck]
   [first rest]))
 
+(def face-cards
+  ["jack" "queen" "king"])
+
+(defn insert-face-cards
+  "Returns the deck with face cards between its head and tail."
+  [deck]
+  (let [[head & tail] deck]
+    (vec (remove nil? (flatten [head face-cards tail])))))
+
 (comment
-  (first-card [3])
-  (first-card [8 3 9 5])
-  (second-card [10 4])
-  (second-card [2 5 1 6])
-  (second-card [])
-  (second-card [8])
-  (swap-top-two-cards [3 6])
-  (swap-top-two-cards [10 4 3 7 8])
+  (insert-face-cards [3 10 7])
+  (insert-face-cards [9])
+  (insert-face-cards [])
   )

@@ -18,5 +18,9 @@
 
 (deftest discard-top-card-test
   (is (= (discard-top-card [7]) [7 nil]))
-  (is (= (discard-top-card [9 2 10 4]) [9 [2 10 4]]))
-  )
+  (is (= (discard-top-card [9 2 10 4]) [9 [2 10 4]])))
+
+(deftest insert-face-cards-test
+  (is (= (insert-face-cards [3 10 7]) [3 "jack" "queen" "king" 10 7]))
+  (is (= (insert-face-cards [9]) [9 "jack" "queen" "king"]))
+  (is (= (insert-face-cards []) ["jack" "queen" "king"])))
