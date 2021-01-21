@@ -55,7 +55,7 @@
         },
         {
             "title": "Natural Syntax",
-            "content": "Unicode operators and identifiers paired with Multiple Dispatch allow for code that looks like maths",
+            "content": "Unicode operators and identifiers and operator overloading enables elegant code that looks like math",
             "icon": ""
         }
     ],
