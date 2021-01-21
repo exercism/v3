@@ -11,7 +11,8 @@ fn create_buffer(count: usize) -> Vec<u8> {
     vec![0; count]
 }
 
-/// Create a vector containing the first five digits of the fibonacci sequence
+/// Create a vector containing the first five digits of the Fibonacci sequence.
+/// Fibonacci's sequence is the list of numbers where the next number is a sum of the previous two.
 fn fibonacci() -> Vec<u8> {
     vec![1, 1, 2, 3, 5]
 }
