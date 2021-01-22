@@ -66,10 +66,7 @@ end
 @testset "distracted dog" begin
     # This exercise isn't about mathematical methods to determine the distribution of a random sample,
     # therefore we only test that is_dog_distracted() returns boolean values and not all return values are identical.
-    distractions = collect(is_dog_distracted() for _ in 1:1000)
-    @test eltype(distractions) == Bool
-    @test !all(distractions)
-    @test any(distractions)
+    @test Set(is_dog_distracted() for _ in 1:1000) == Set([true, false])
 end
 
 @testset "freeing prisoner" begin

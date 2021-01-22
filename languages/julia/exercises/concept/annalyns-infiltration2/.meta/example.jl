@@ -8,7 +8,7 @@ can_signal_prisoner(archer_awake, prisoner_awake) = prisoner_awake && !archer_aw
 is_dog_distracted() = rand() < 0.25
 
 function can_free_prisoner(knight_awake, archer_awake, prisoner_awake, dog_present)
-    !knight_awake && !archer_awake && prisoner_awake || (dog_present && !is_dog_distracted()) && !archer_awake
+    (!knight_awake && !archer_awake && prisoner_awake) || (dog_present && !is_dog_distracted() && !archer_awake)
 end
 
 loot() = rand(3:13)
