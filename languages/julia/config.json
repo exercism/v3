@@ -77,7 +77,7 @@
             },
             {
                 "uuid": "3c0ab989-6544-4a1a-8e93-c2b5dc3d4109",
-                "name": "Annalyn's Infiltration II",
+                "name": "Annalyn's Infiltration Ⅱ",
                 "slug": "annalyns-infiltration2",
                 "concepts": ["randomness"],
                 "prerequisites": ["booleans"]
