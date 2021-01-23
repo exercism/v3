@@ -1,0 +1,26 @@
+{
+    "language_versions": "≥1.0",
+    "editor": {
+        "test_files": [
+            "runtests.jl"
+        ],
+        "solution_files": [
+            "game.jl"
+        ]
+    },
+    "contributors": [
+        {
+            "github_username": "cmcaine",
+            "exercism_username": "cmcaine"
+        }
+    ],
+    "authors": [
+        {
+            "github_username": "SaschaMann",
+            "exercism_username": "SaschaMann"
+        }
+    ],
+    "forked_from": [
+        "javascript/boolean"
+    ]
+}

@@ -57,5 +57,4 @@ julia> knight_awake = false; archer_awake = true; prisoner_awake = false; dog_pr
 
 julia> can_free_prisoner(knight_awake, archer_awake, prisoner_awake, dog_present)
 false
-
 ```
