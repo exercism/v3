@@ -80,7 +80,7 @@
                 "name": "Annalyn's Infiltration II",
                 "slug": "annalyns-infiltration2",
                 "concepts": ["randomness"],
-                "prerequisites": ["boolean-logic"]
+                "prerequisites": ["booleans"]
             },
             {
                 "uuid": "f2f696e6-8a6a-4c8c-ae0b-d940d8579905",
