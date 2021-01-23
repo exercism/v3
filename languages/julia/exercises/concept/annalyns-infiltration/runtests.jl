@@ -2,6 +2,13 @@ using Test
 
 include("game.jl")
 
+# Julia 1.0 compat
+# The function definition of eachrow is taken from Julia Base,
+# released under the MIT license: https://julialang.org/license
+if VERSION < v"1.1"
+    @eval eachrow(A) = (view(A, i, :) for i in axes(A, 1))
+end
+
 @testset "fast attack" begin
     @test !can_do_fast_attack(true)
     @test  can_do_fast_attack(false)
