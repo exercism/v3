@@ -827,8 +827,25 @@
       {
         "track": "Julia",
         "slug": "julia",
-        "exercise": "boolean-logic",
-        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/boolean-logic/.docs/instructions.md"
+        "exercise": "annalyns-infiltration",
+        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/annalyns-infiltration/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/randomness.rpg-quest-logic-extension.md",
+    "name": "RPG Quest Logic 2",
+    "description": "In this exercise, you\u0027ll be extending the quest logic for the new RPG game a friend is developing.\nTo make the game more interesting, your friend wants you to add random events that change the situation.",
+    "concept": {
+      "url": null,
+      "name": "randomness"
+    },
+    "implementations": [
+      {
+        "track": "Julia",
+        "slug": "julia",
+        "exercise": "annalyns-infiltration2",
+        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/annalyns-infiltration2/.docs/instructions.md"
       }
     ]
   },
