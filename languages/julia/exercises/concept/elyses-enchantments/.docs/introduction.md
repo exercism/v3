@@ -36,6 +36,7 @@ Pair{Int64,Bool}
 
 Dictionaries can be constructed from a collection of pairs.
 This will be covered in a later exercise.
+
 <!-- TODO: Add link or widget to exercise. -->
 
 ### Replacements
