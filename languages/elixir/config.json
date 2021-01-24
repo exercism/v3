@@ -1048,7 +1048,7 @@
       "uuid": "1e7bb8a6-9620-4474-b01e-a232408e9b65",
       "slug": "cond",
       "name": "Cond",
-      "blurb": "TODO: add blurb for cond concept"
+      "blurb": "There are three conditional expressions in Elixir: if, case, and cond. Cond is usually used when there are more than two logical branches and each branch has a condition based on different variables."
     },
     {
       "uuid": "337ea0be-2978-48a1-ba10-0c29d7018a99",
