@@ -1012,7 +1012,7 @@
       "uuid": "ffd52ca2-8d45-4bce-a048-5d6c99dc8571",
       "slug": "bit-manipulation",
       "name": "Bit Manipulation",
-      "blurb": "TODO: add blurb for bit-manipulation concept"
+      "blurb": "Bitwise operations, such as AND, OR, and XOR, can be performed on integers using functions from the Bitwise module."
     },
     {
       "uuid": "71d2383f-fa4e-4309-a0ce-7b05312f3259",
