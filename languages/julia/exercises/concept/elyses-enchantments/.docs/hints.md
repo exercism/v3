@@ -1,6 +1,6 @@
 ## 1. Retrieve a card from a stack
 
-- `Vector` indices start at `0`.
+- `Vector` indices start at `1`.
 
 ## 2. Exchange a card in the stack
 
