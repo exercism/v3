@@ -1090,7 +1090,7 @@
       "uuid": "a0a894e1-c54d-4c7a-89bf-653e6efb0039",
       "slug": "floating-point-numbers",
       "name": "Floating Point Numbers",
-      "blurb": "TODO: add blurb for floating-point-numbers concept"
+      "blurb": "Learn how to do basic arithmetic on floating-point numbers and how to convert them into whole numbers."
     },
     {
       "uuid": "5dd6841b-3875-499c-9de7-4cf4d033e68f",
@@ -1108,7 +1108,7 @@
       "uuid": "bab00476-4570-41c3-b74a-ba6c1a567c49",
       "slug": "integers",
       "name": "Integers",
-      "blurb": "TODO: add blurb for integers concept"
+      "blurb": "Learn how to do basic arithmetic on whole numbers."
     },
     {
       "uuid": "776919ef-6e4a-40d6-8977-9da237d8cc14",

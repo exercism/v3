@@ -44,13 +44,11 @@
 
 ## Integers
 
-- Integer values are whole numbers written with one or more digits.
-  - You may use underscores to separate digits in large numbers, e.g. `1_000_000`.
-  - Integers support the [basic mathematical operators][operators].
+Integer values are whole numbers written with one or more digits. You can perform [basic mathematical operations][operators] on them.
 
 ## Strings
 
-- [String][string] literals are sequences of characters surrounded by double quotes.
+[String][string] literals are sequences of characters surrounded by double quotes.
 
 ```elixir
 string = "this is a string! 1, 2, 3!"
