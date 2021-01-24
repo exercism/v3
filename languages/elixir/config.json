@@ -1000,7 +1000,7 @@
       "uuid": "5bd736ed-290d-4d1b-9668-36a704cbe236",
       "slug": "basics",
       "name": "Basics",
-      "blurb": "TODO: add blurb for basics concept"
+      "blurb": "Learn how to define and call your first Elixir function."
     },
     {
       "uuid": "d291ca4b-7163-43e4-ab02-383904f19c34",
