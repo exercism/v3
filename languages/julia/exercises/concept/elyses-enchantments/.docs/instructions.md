@@ -22,7 +22,7 @@ Note that this will also change the input slice which is ok.
 ```julia
 julia> idx = 2; new_card = 6;
 
-julia> replace_card!([1, 3, 4, 1], idx, new_card)
+julia> replace_card!([1, 3, 4, 1], idx => new_card)
 [1, 6, 4, 1]
 ```
 
