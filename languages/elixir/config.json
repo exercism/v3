@@ -1000,7 +1000,7 @@
       "uuid": "5bd736ed-290d-4d1b-9668-36a704cbe236",
       "slug": "basics",
       "name": "Basics",
-      "blurb": "Learn how to define and call your first named Elixir function."
+      "blurb": "Elixir is a functional, dynamically-typed language. Elixir code is organized into modules which contain public and private named functions. There are no compile-time type checks. Variables can be bound and re-bound to data of any type."
     },
     {
       "uuid": "d291ca4b-7163-43e4-ab02-383904f19c34",
@@ -1024,7 +1024,7 @@
       "uuid": "e1c4540a-12ae-4986-a604-07f38d46b498",
       "slug": "booleans",
       "name": "Booleans",
-      "blurb": "Learn how to work with true/false values and combine them into expressions."
+      "blurb": "Elixir represents true and false values with the boolean type. Booleans can be combined into expressions using boolean operators \"not\", \"or\", and \"and\"."
     },
     {
       "uuid": "cc1d6b46-976a-481f-96e2-7d3eadea7603",
@@ -1090,7 +1090,7 @@
       "uuid": "a0a894e1-c54d-4c7a-89bf-653e6efb0039",
       "slug": "floating-point-numbers",
       "name": "Floating Point Numbers",
-      "blurb": "Learn how to do basic arithmetic on floating-point numbers and how to convert them into whole numbers."
+      "blurb": "There are two different kinds of numbers in Elixir - integers and floats. Floats are numbers with one or more digits behind the decimal separator."
     },
     {
       "uuid": "5dd6841b-3875-499c-9de7-4cf4d033e68f",
@@ -1108,7 +1108,7 @@
       "uuid": "bab00476-4570-41c3-b74a-ba6c1a567c49",
       "slug": "integers",
       "name": "Integers",
-      "blurb": "Learn how to do basic arithmetic on whole numbers."
+      "blurb": "There are two different kinds of numbers in Elixir - integers and floats. Integers are whole numbers."
     },
     {
       "uuid": "776919ef-6e4a-40d6-8977-9da237d8cc14",
