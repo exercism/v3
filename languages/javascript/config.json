@@ -99,6 +99,12 @@
         "prerequisites": ["arrays", "booleans"]
       },
       {
+        "slug": "errors",
+        "uuid": "be0614cf-2958-4cc4-b8d9-1d7544696733",
+        "concepts": ["errors"],
+        "prerequisites": ["strings", "classes-intro"]
+      },
+      {
         "slug": "lucky-numbers",
         "uuid": "78bbd7d2-b660-4791-a404-af5bfed31849",
         "concepts": ["type-conversion"],
