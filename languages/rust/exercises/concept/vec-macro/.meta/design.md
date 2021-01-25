@@ -22,4 +22,3 @@ The Concepts this exercise unlocks are:
 
 - intro-fn
 - numbers
-
