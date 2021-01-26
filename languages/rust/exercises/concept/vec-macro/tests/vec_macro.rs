@@ -13,9 +13,10 @@ mod tests {
     }
     #[test]
     fn test_fibonacci() {
-        let mut first_five = Vec::new();
-        first_five.extend_from_slice(&[1, 1, 2, 3, 5]);
-
-        assert_eq!(fibonacci(), first_five);
+        let fibb = fibonacci();
+        assert_eq!(fibb.len(), 5);
+        for window in fibb.windows(3) {
+            assert_eq!(window[0] + window[1], window[2]);
+        }
     }
 }
