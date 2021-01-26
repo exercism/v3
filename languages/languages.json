@@ -4471,6 +4471,26 @@
               "name": "structs"
             }
           ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/vec-macro",
+          "slug": "vec-macro",
+          "concepts": [
+            {
+              "url": null,
+              "name": "vec-macro"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "intro-fn"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
+            }
+          ]
         }
       ]
     }
