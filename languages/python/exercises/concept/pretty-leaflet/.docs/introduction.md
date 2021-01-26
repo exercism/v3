@@ -26,7 +26,7 @@ The expressions evaluated by an `f-string` can be almost anything -- so the usua
 'Tenfold the value of "light" is 30.'
 ```
 
-f-string output supports the same control mechanisms such as _width_, _alignment_, and _precision_ that are described for `.format()`.
+f-string output supports the same control mechanisms such as _width_, _alignment_, and _precision_ that are described for `.format()`. f-string cannot be used together with the GNU gettext API for internationalization (I18N) and localization (L10N), `str.format()` needs to be used instead.
 
 # str.format() method
 
@@ -66,6 +66,8 @@ Example of format specifiers, [more examples at the end of this page][summary-st
 "The number 42 has a representation in binary: '  101010'."
 ```
 
+`str.format()` should be used together with the [GNU gettext API][gnu-gettext-api] for internationalization (I18N) and localization (L10N).
+
 [all-about-formatting]: https://realpython.com/python-formatted-output
 [difference-formatting]: https://realpython.com/python-string-formatting/#2-new-style-string-formatting-strformat
 [printf-style-docs]: https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting
@@ -77,3 +79,4 @@ Example of format specifiers, [more examples at the end of this page][summary-st
 [format-specifiers]: https://www.python.org/dev/peps/pep-3101/#standard-format-specifiers
 [summary-string-format]: https://www.w3schools.com/python/ref_string_format.asp
 [template-string]: https://docs.python.org/3/library/string.html#template-strings
+[gnu-gettext-api]: https://docs.python.org/3/library/gettext.html

@@ -51,6 +51,8 @@ SyntaxError: f-string: empty expression not allowed
 SyntaxError: f-string expression part cannot include '#'
 ```
 
+f-string cannot be used together with the GNU gettext API for internationalization (I18N) and localization (L10N), `str.format()` needs to be used instead. Using an expression inside the brackets `{}` is similar to use `eval()` or `exec()`, so it isn't very safe.
+
 # str.format() method
 
 The [`str.format()`][str-format] allows to replace placeholders with values, the placeholders are identified with named indexes `{price}` or numbered indexes `{0}` or empty placeholders `{}`. The values are specified as parameters in the `format()` method.
@@ -91,7 +93,7 @@ Example of format specifiers:
 "The number 42 has a representation in binary: '  101010'."
 ```
 
-More examples at the end of [this documentation][summary-string-format].
+More examples at the end of [this documentation][summary-string-format]. `str.format()` should be used together with the [GNU gettext API][gnu-gettext-api] for internationalization (I18N) and localization (L10N).
 
 ## The `%` operator
 
@@ -142,3 +144,4 @@ If you want to go further: [all about formatting][all-about-formatting].
 [tuples]: https://www.w3schools.com/python/python_tuples.asp
 [template-string]: https://docs.python.org/3/library/string.html#template-strings
 [all-about-formatting]: https://realpython.com/python-formatted-output
+[gnu-gettext-api]: https://docs.python.org/3/library/gettext.html
