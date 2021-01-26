@@ -1,6 +1,6 @@
 ## General
 
-Programs without conditional statements run sequentially ie the code is executed line by line, However, this doesn't allow for the implementation of more complex logic. Conditional statements allow the program to execute different lines of code based on some factors. Python uses `if/else` statements to achieve this.
+Programs without conditional statements run sequentially (i.e. the code is executed line by line). However, this doesn't allow for the implementation of more complex logic. Conditional statements allow the program to execute different lines of code based on some factors. Python uses `if/else` statements to achieve this.
 
 Let's look at the basic structure of python's `if/else` .
 
@@ -27,11 +27,11 @@ if x < y:                           # expression is False
 
 ```
 
-Here in the first `if` statement the expression evaluates to `True`. Therefore, the statement associated with the `if` statement gets executed. In the next example, the expression evaluates to `False`, and therefore the statement associated with it is not executed.
+Here in the first `if` statement, the expression evaluates to `True`. Therefore, the statement associated with the `if` statement gets executed. In the next example, the expression evaluates to `False`, and therefore the statement associated with it is not executed.
 
 ## The indentation and blocks
 
-The python examples  shown below are arranged into blocks using indentation. So if there are multiple expressions that needs to be executed from one `if` statement we can put it in a block by having a uniform indentation throughout.
+The Python examples shown below are arranged into blocks using indentation. So, if there are multiple expressions that needs to be executed from one `if` statement we can put it in a block by having a uniform indentation throughout.
 
 ```python
 if x > y:                           # expression is True
@@ -85,7 +85,7 @@ Here first the code checks the first `if` condition. It finds that the expressio
 
 ## One line If statments
 
-It is possible to write `if` conditionals in a single line ,However, as per the [PEP8][pep8-link] standards, the use of multiple statments on same lines are discouraged
+It is possible to write `if` conditionals in a single line ,However, as per the [PEP8][pep8-link] standards, the use of multiple statements on same lines are discouraged
 [pep8-link]: https://www.python.org/dev/peps/pep-0008/#other-recommendations
 
 Example
@@ -96,7 +96,7 @@ if x == 5: print("Came inside the if statement "); print("x equals 5 "); print("
 >>> Came inside the if statement x equals 5 came to this part
 ```
 
-Here all the statements separated by a semicolon are considered as part of a single block. We can have more complicated ones like the example shown below. This is highly discouraging as this goes against python's strength which is readability.
+Here all the statements separated by a semicolon are considered as part of a single block. We can have more complicated ones like the example shown below. This is highly discouraging as this goes against Python's strength which is readability.
 
 ```python
 x = 10
@@ -112,20 +112,20 @@ In the `if` clause python strictly doesn't need a `True/False` value. This will 
 
 ```python
 
-str = ""
-str_1 = "Hello,World"
+string = ""
+string_1 = "Hello,World"
 
-if (str):
-    print(str)
-elif (str_1):
-    print(str_1)
+if string:
+    print(string)
+elif string_1:
+    print(string_1)
 else:
     print("All are empty")
 
 >>> Hello,World
 ```
 
-In this example we did not evaluate if condition like this `if str == "":`. Even then it's understood by python that if a string is empty evaluate it to `False` and evaluate to `True` otherwise.
+In this example we did not evaluate if condition like this `if str == "":`. Even then it's understood by Python that if a string is empty evaluate it to `False` and evaluate to `True` otherwise.
 
 Here is another on some pythonic expressions inside `if`
 
