@@ -66,7 +66,7 @@
         "name": "Elyse's Enchantments",
         "uuid": "d76958ce-3a5b-4e4c-9388-b109f67cf23a",
         "concepts": ["lists"],
-        "prerequisites": ["comparisons", "conditionals", "strings"]
+        "prerequisites": ["conditionals", "strings"]
       },
       {
         "slug": "chaitanas-colossal-coaster",
