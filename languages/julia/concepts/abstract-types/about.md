@@ -1,1 +1,1 @@
-TODO: add information on abstract-types concept
+<!-- TODO: add information on abstract-types concept -->

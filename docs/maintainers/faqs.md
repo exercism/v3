@@ -91,7 +91,7 @@ We highly recommend reading [this thread][concept-to-exercise-mapping] for a nic
 
 There will be no mentoring on Concept Exercises in v3. The process will be fully automated, and will work as follows:
 
-1. The student submits a solution for a Concept Exercise which prequisites have been met (i.e. the student has completed Concept Exercises teaching the prerequisite Concepts).
+1. The student submits a solution for a Concept Exercise which prerequisites have been met (i.e. the student has completed Concept Exercises teaching the prerequisite Concepts).
 1. The solution is tested automatically to verify it passes all tests. This is done by the [test runner][test-runner]. If a test fails, details of the failing test are shown to the student. The student must submit again (step 1) in order to continue.
 1. The [representer][representer] creates a representation of the solution. If there are any comments linked to that representation, those comments are presented to the student. The student must submit submit again (step 1) in order to continue.
 1. The [analyzer][analyzer] analyzes the solution. If there are comments, those comments are presented to the student. If one of the comments indicates that the student should not be allowed to proceed, the student must submit submit again (step 1) in order to continue.

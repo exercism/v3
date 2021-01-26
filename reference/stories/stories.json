@@ -141,6 +141,47 @@
     ]
   },
   {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/arrays.elyses-enchantments.md",
+    "name": "Elyse\u0027s Enchantments",
+    "description": "As a magician-to-be, Elyse needs to practice some basics. She has a stack of cards that she wants to manipulate.",
+    "concept": {
+      "url": "https://github.com/exercism/v3/blob/master/reference/types/array.md",
+      "name": "arrays"
+    },
+    "implementations": [
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "elyses-enchantments",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/elyses-enchantments/.docs/instructions.md"
+      },
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "elyses-analytic-enchantments",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/elyses-analytic-enchantments/.docs/instructions.md"
+      },
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "elyses-destructured-enchantments",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/elyses-destructured-enchantments/.docs/instructions.md"
+      },
+      {
+        "track": "JavaScript",
+        "slug": "javascript",
+        "exercise": "elyses-transformative-enchantments",
+        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/elyses-transformative-enchantments/.docs/instructions.md"
+      },
+      {
+        "track": "Swift",
+        "slug": "swift",
+        "exercise": "magician-in-training",
+        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/magician-in-training/.docs/instructions.md"
+      }
+    ]
+  },
+  {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/ternary-operators.employee-salary.md",
     "name": "Employee Salary",
     "description": "In this exercise, you\u0027ll be implementing rules for calculating the total salary of a empyoyee in a month. The International Siderurgy Company (ISC) needs help to calculate the salary for the employees, given that different factors can alter the final wage value for each employee.",
@@ -243,8 +284,8 @@
       {
         "track": "Elixir",
         "slug": "elixir",
-        "exercise": "freelance-rates",
-        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/freelance-rates/.docs/instructions.md"
+        "exercise": "freelancer-rates",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/freelancer-rates/.docs/instructions.md"
       },
       {
         "track": "JavaScript",
@@ -409,8 +450,8 @@
       {
         "track": "Clojure",
         "slug": "clojure",
-        "exercise": "lists",
-        "url": "https://github.com/exercism/v3/blob/master/languages/clojure/exercises/concept/lists/.docs/instructions.md"
+        "exercise": "tracks-on-tracks-on-tracks",
+        "url": "https://github.com/exercism/v3/blob/master/languages/clojure/exercises/concept/tracks-on-tracks-on-tracks/.docs/instructions.md"
       },
       {
         "track": "Elixir",
@@ -591,47 +632,6 @@
     ]
   },
   {
-    "url": "https://github.com/exercism/v3/blob/master/reference/stories/arrays.magician-card-stack.md",
-    "name": "Magician card stack",
-    "description": "As a magician-to-be, Elyse needs to practice some basics. She has a stack of cards that she wants to manipulate.",
-    "concept": {
-      "url": "https://github.com/exercism/v3/blob/master/reference/types/array.md",
-      "name": "arrays"
-    },
-    "implementations": [
-      {
-        "track": "JavaScript",
-        "slug": "javascript",
-        "exercise": "arrays",
-        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/arrays/.docs/instructions.md"
-      },
-      {
-        "track": "JavaScript",
-        "slug": "javascript",
-        "exercise": "array-analysis",
-        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/array-analysis/.docs/instructions.md"
-      },
-      {
-        "track": "JavaScript",
-        "slug": "javascript",
-        "exercise": "array-destructuring",
-        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/array-destructuring/.docs/instructions.md"
-      },
-      {
-        "track": "JavaScript",
-        "slug": "javascript",
-        "exercise": "array-transformations",
-        "url": "https://github.com/exercism/v3/blob/master/languages/javascript/exercises/concept/array-transformations/.docs/instructions.md"
-      },
-      {
-        "track": "Swift",
-        "slug": "swift",
-        "exercise": "magician-in-training",
-        "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/magician-in-training/.docs/instructions.md"
-      }
-    ]
-  },
-  {
     "url": "https://github.com/exercism/v3/blob/master/reference/stories/nullability.name-badges.md",
     "name": "Name badges",
     "description": "In this exercise you\u0027ll be writing code to print name badges for factory employees. Employees have an ID, name and department name. Employee badge labels are formatted as follows: \u0060\u0022[id] - [name] - [DEPARTMENT]\u0022\u0060.",
@@ -783,6 +783,23 @@
         "slug": "elixir",
         "exercise": "dna-encoding",
         "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/dna-encoding/.docs/instructions.md"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/exercism/v3/blob/master/reference/stories/io.rpg-character-sheet.md",
+    "name": "RPG Character Sheet",
+    "description": "You and your friends love to play pen-and-paper role-playing games, but you noticed that it\u0027s difficult to get new people to join your group. They often struggle with character creation. They don\u0027t know where to start. To help new players out, you decided to write a small program that will guide them through the process.",
+    "concept": {
+      "url": null,
+      "name": "io"
+    },
+    "implementations": [
+      {
+        "track": "Elixir",
+        "slug": "elixir",
+        "exercise": "rpg-character-sheet",
+        "url": "https://github.com/exercism/v3/blob/master/languages/elixir/exercises/concept/rpg-character-sheet/.docs/instructions.md"
       }
     ]
   },
@@ -1031,6 +1048,12 @@
         "slug": "swift",
         "exercise": "vehicle-purchase",
         "url": "https://github.com/exercism/v3/blob/master/languages/swift/exercises/concept/vehicle-purchase/.docs/instructions.md"
+      },
+      {
+        "track": "Julia",
+        "slug": "julia",
+        "exercise": "vehicle-purchase",
+        "url": "https://github.com/exercism/v3/blob/master/languages/julia/exercises/concept/vehicle-purchase/.docs/instructions.md"
       }
     ]
   },

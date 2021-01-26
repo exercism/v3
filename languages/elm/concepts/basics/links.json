@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://elm-lang.org/",
+    "description": "Elm language"
+  },
+  {
+    "url": "https://elm-lang.org/docs/syntax#modules",
+    "description": "Modules"
+  },
+  {
+    "url": "https://guide.elm-lang.org/core_language.html",
+    "description": "Core Elm Language"
+  },
+  {
+    "url": "https://elmprogramming.com/indentation.html",
+    "description": "Indentation / significant whitespace"
+  },
+  {
+    "url": "https://elm-lang.org/docs/style-guide",
+    "description": "Style guide"
+  },
+  {
+    "url": "https://github.com/avh4/elm-format",
+    "description": "Elm format"
+  }
+]

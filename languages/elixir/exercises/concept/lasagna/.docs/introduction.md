@@ -1,4 +1,4 @@
-## basics
+## Basics
 
 Elixir is a dynamically-typed language, meaning that the type of a variable is only checked at runtime. Using the match `=` operator, we can bind a value of any type to a variable name:
 
@@ -7,6 +7,8 @@ count = 1 # Bound an integer value of 1
 count = 2 # You may re-bind variables
 
 count = false # You may re-bind any type to a variable
+
+message = "Success!" # Strings can be created by enclosing characters within double quotes
 ```
 
 ### Modules
@@ -21,9 +23,9 @@ end
 
 ### Named functions
 
-_Named Functions_ must be defined in a module. Each function can have zero or more parameters. All parameters are dynamically-typed, and the return type is not explicitly declared, it is the type of the value returned. An _access modifier_ can be specified for functions, making only desired functions available for use external to the module. In a function, the value of the last line is _implicitly returned_ to the calling function.
+_Named Functions_ must be defined in a module. Each function can have zero or more arguments. All arguments are dynamically-typed, and the return type is not explicitly declared, it is the type of the value returned. An _access modifier_ can be specified for functions, making only desired functions available for use external to the module. In a function, the value of the last line is _implicitly returned_ to the calling function.
 
-Invoking a function is done by specifying its module- and function name and passing arguments for each of the function's parameters. The module name may be omitted if the function is invoked inside of the module.
+Invoking a function is done by specifying its module- and function name and passing arguments for each of the function's arguments. The module name may be omitted if the function is invoked inside of the module.
 
 You may also write short functions using a one-line syntax (note the comma `,` and the colon `:` around the keyword `do`).
 
@@ -44,14 +46,22 @@ sum = Calculator.short_add(2, 2)
 
 ### Arity of functions
 
-It is common to refer to functions with their _arity_. The _arity_ of a function is the number of parameters it accepts.
+It is common to refer to functions with their _arity_. The _arity_ of a function is the number of arguments it accepts.
 
 ```elixir
-# add/3 because this function has three parameters, thus an arity of 3
+# add/3 because this function has three arguments, thus an arity of 3
 def add(x, y, z) do
   x + y + z
 end
 ```
+
+### Standard library
+
+Elixir has a very rich and well-documented standard library. The documentation is available online at [hexdocs.pm/elixir][docs]. Save this link somewhere - you will use it a lot!
+
+Most built-in data types have a corresponding module that offers functions for working with that data type, e.g. there's the `Integer` module for integers, `String` module for strings, `List` module for lists and so on.
+
+A notable module is the `Kernel` module. It provides the basic capabilities on top of which the rest of the standard library is built, like arithmetic operators, control-flow macros, and much more. Functions for the `Kernel` module are automatically imported, so you can use them without the `Kernel.` prefix.
 
 ### Documentation
 
@@ -62,3 +72,4 @@ Documentation is a priority in high-quality Elixir code bases, and there are 3 w
 - Module-level documentation uses the `@moduledoc` annotation following the module definition
 
 [functional-programming]: https://en.wikipedia.org/wiki/Functional_programming
+[docs]: https://hexdocs.pm/elixir/Kernel.html#content

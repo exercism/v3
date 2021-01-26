@@ -8,6 +8,57 @@
         "indent_style": "space",
         "indent_size": 4
     },
+    "tags": [
+        "execution_mode/compiled",
+        "typing/dynamic",
+        "paradigm/declarative",
+        "paradigm/functional",
+        "paradigm/imperative",
+        "paradigm/object_oriented",
+        "paradigm/procedural",
+        "platform/windows",
+        "platform/mac",
+        "platform/linux",
+        "used_for/artificial_intelligence",
+        "used_for/cross_platform_development",
+        "used_for/financial_systems",
+        "used_for/robotics",
+        "used_for/scientific_calculations",
+        "used_for/scripts",
+        "used_for/web_development"
+    ],
+    "key_features": [
+        {
+            "title": "Fast",
+            "content": "Julia is designed for high performance. Julia compiles efficient native code for multiple platforms",
+            "icon": ""
+        },
+        {
+            "title": "Interactive",
+            "content": "Julia is dynamically typed, feels like a scripting language and has good support for interactive use",
+            "icon": ""
+        },
+        {
+            "title": "Scientific",
+            "content": "Julia is designed with reproducibility, distributed computing and frictionless collaboration in mind",
+            "icon": ""
+        },
+        {
+            "title": "Composable",
+            "content": "Julia uses multiple dispatch as a paradigm, making it unreasonably effective for composing programs!",
+            "icon": ""
+        },
+        {
+            "title": "Expressive",
+            "content": "Multiple dispatch, generator expressions and metaprogramming features lead to highly expressive code",
+            "icon": ""
+        },
+        {
+            "title": "Natural Syntax",
+            "content": "Unicode operators & identifiers, plus operator overloading, allows elegant code that looks like math",
+            "icon": ""
+        }
+    ],
     "exercises": {
         "concept": [
             {
@@ -19,22 +70,49 @@
             },
             {
                 "uuid": "05cfc609-3a14-479a-b6fa-6d2a53ad111c",
-                "name": "Annalyn's Analytical Avenge Attempt",
-                "slug": "boolean-logic",
+                "name": "Annalyn's Infiltration",
+                "slug": "annalyns-infiltration",
                 "concepts": ["boolean-logic", "booleans"],
                 "prerequisites": ["functions-introduction"]
+            },
+            {
+                "uuid": "3c0ab989-6544-4a1a-8e93-c2b5dc3d4109",
+                "name": "Annalyn's Infiltration Ⅱ",
+                "slug": "annalyns-infiltration2",
+                "concepts": ["randomness"],
+                "prerequisites": ["booleans"]
+            },
+            {
+                "uuid": "f2f696e6-8a6a-4c8c-ae0b-d940d8579905",
+                "slug": "leap",
+                "concepts": [
+                    "arithmetic-operators",
+                    "integer-equality",
+                    "boolean-expressions"
+                ],
+                "prerequisites": [
+                    "functions-introduction",
+                    "boolean-logic",
+                    "booleans"
+                ]
+            },
+            {
+                "uuid": "b615a19c-ab76-4f93-985f-7e4c628b6939",
+                "name": "Vexing Vehicle Purchase",
+                "slug": "vehicle-purchase",
+                "concepts": [
+                    "conditionals",
+                    "if-expressions",
+                    "ternary-operator",
+                    "short-circuit-evaluation"
+                ],
+                "prerequisites": ["boolean-expressions", "strings"]
             },
             {
                 "uuid": "36cbda04-3921-4491-9ec6-76951f00aa00",
                 "name": "The Exercism Matrix",
                 "slug": "exercism-matrix",
-                "concepts": [
-                    "matrices-introduction",
-                    "matrices-concatenation",
-                    "matrices-indices",
-                    "matrices-iteration",
-                    "matrices-mutation"
-                ],
+                "concepts": ["matrices-introduction"],
                 "prerequisites": ["functions-introduction"]
             },
             {
@@ -58,6 +136,20 @@
                     "composite-types",
                     "methods",
                     "constants"
+                ]
+            },
+            {
+                "uuid": "9a864ac5-0fda-4ba2-bccc-702a1444c412",
+                "name": "Fibonacci Iterator",
+                "slug": "fibonacci-iterator",
+                "concepts": ["iterator-protocol", "optional-arguments"],
+                "prerequisites": [
+                    "multiple-dispatch",
+                    "numbers",
+                    "loops",
+                    "nothingness",
+                    "parametric-types",
+                    "tuples"
                 ]
             }
         ],

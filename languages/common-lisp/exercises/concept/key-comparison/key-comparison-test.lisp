@@ -5,7 +5,7 @@
 
 ;; Defines the testing package with symbols from key-comparison and FiveAM in scope
 ;; The `run-tests` function is exported for use by both the user and test-runner
-(defpackage key-comparison-test
+(defpackage :key-comparison-test
   (:use :cl :fiveam :key-comparison)
   (:export :run-tests))
 
@@ -20,41 +20,50 @@
 (def-suite key-comparison-suite)
 (in-suite key-comparison-suite)
 
-(test the-maze-of-object-identity
+(test the-maze-of-object-identity "The key must match things exactly"
   (is (eq 'victory (open-room :room-object-identity
                               #'key-object-identity))))
 
-(test the-maze-of-numbers
+(test the-maze-of-numbers "The key must match numbers"
   (is (eq 'victory (open-room :room-numbers
-                              #'key-numbers)))
+                              #'key-numbers))))
+(test the-maze-of-different-types-of-numbers "The key must match numbers if they have the same numeric value."
   (is (eq 'victory (open-room :room-numbers-of-different-types
                               #'key-numbers-of-different-types))))
 
-(test the-maze-of-characters
-  (is (eq 'victory (open-room :room-characters #'key-characters)))
+(test the-maze-of-characters "The key must match characters"
+  (is (eq 'victory (open-room :room-characters #'key-characters))))
+
+(test the-maze-of-case-insensitive-characters "The key must match characters regardless of case"
   (is (eq 'victory (open-room :room-characters-case-insensitively
                               #'key-characters-case-insensitively))))
 
-(test the-maze-of-strings
-  (is (eq 'victory (open-room :room-strings #'key-strings)))
+(test the-maze-of-strings "The key must match strings."
+  (is (eq 'victory (open-room :room-strings #'key-strings))))
+
+(test the maze-of-case-insensitive-strings "The key must match strings regardless of case"
   (is (eq 'victory (open-room :room-strings-case-insensitively
                               #'key-strings-case-insensitively))))
 
-(test the-maze-of-conses
+(test the-maze-of-conses "The key must match conses"
   (is (eq 'victory (open-room :room-conses-of-symbols
                               #'key-conses-of-symbols)))
   (is (eq 'victory (open-room :room-conses-of-characters
                               #'key-conses-of-characters)))
   (is (eq 'victory (open-room :room-conses-of-numbers
-                              #'key-conses-of-numbers)))
+                              #'key-conses-of-numbers))))
+
+(test the-maze-of-conses-part-2 "The key must match conses but with more flexibility of their contents"
   (is (eq 'victory (open-room :room-conses-of-characters-case-insensitively
                               #'key-conses-of-characters-case-insensitively)))
   (is (eq 'victory (open-room :room-conses-of-numbers-of-different-types
                               #'key-conses-of-numbers-of-different-types))))
 
-(test the-maze-of-arrays
+(test the-maze-of-arrays "The key must match arrays"
   (is (eq 'victory (open-room :room-arrays
-                              #'key-arrays)))
+                              #'key-arrays))))
+
+(test the-maze-of-arrays-part-2 "The key must match arrays but with more flexibility of their contents"
   (is (eq 'victory (open-room :room-arrays-loosely
                               #'key-arrays-loosely))))
 

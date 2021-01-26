@@ -1,3 +1,15 @@
+## Function Overloading
+
+## Multiple Return Values
+
+## Default Parameters
+
+## Variadic Parameters
+
+## Inout Parameters
+
+## Nested Functions
+
 We have seen in the `basics` exercise how functions in Swift are defined. Here we will look at some additional features of functions in Swift.
 
 ## Multiple return values

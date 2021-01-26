@@ -22,19 +22,11 @@ let tripledQuoted = """<movie title="Se7en" />"""
 // => "<movie title="Se7en" />
 ```
 
-Finally, concatenating strings can be done through the [`+` operator][string_concatenation]:
+Finally, concatenating strings can be done through the [`+` operator][plus-operator]:
 
 ```fsharp
 let name = "Jane"
 "Hello" + name + "!"
-// => "Hello Jane!"
-```
-
-For any string formatting more complex than simple concatenation, the [`sprintf` function][string_concatenation] is preferred.
-
-```fsharp
-let name = "Jane"
-sprintf "Hello %s!" name
 // => "Hello Jane!"
 ```
 
@@ -44,4 +36,4 @@ sprintf "Hello %s!" name
 [properties]: https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netcore-3.1#properties
 [string-module]: https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.string-module-%5bfsharp%5d
 [escaping]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/strings#remarks
-[string_concatenation]: https://exercism.github.io/v3/#/languages/fsharp/docs/string_concatenation
+[plus-operator]: https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/strings#string-operators

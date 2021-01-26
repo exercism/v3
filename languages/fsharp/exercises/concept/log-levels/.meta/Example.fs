@@ -4,4 +4,4 @@ let message (logLine: string): string = logLine.Substring(logLine.IndexOf(':') +
 
 let logLevel (logLine: string): string = logLine.Substring(1, logLine.IndexOf(']') - 1).ToLower()
 
-let reformat (logLine: string): string = sprintf "%s (%s)" (message logLine) (logLevel logLine)
+let reformat (logLine: string): string = message logLine + " (" + logLevel logLine + ")"

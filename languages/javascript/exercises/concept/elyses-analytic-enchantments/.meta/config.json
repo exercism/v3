@@ -1,0 +1,17 @@
+{
+  "contributors": [],
+  "authors": [
+    {
+      "github_username": "peterchu999",
+      "exercism_username": "peterchu999"
+    },
+    {
+      "github_username": "SleeplessByte",
+      "exercism_username": "SleeplessByte"
+    }
+  ],
+  "editor": {
+    "solution_files": ["enchantments.js"],
+    "test_files": ["enchantments.spec.js"]
+  }
+}

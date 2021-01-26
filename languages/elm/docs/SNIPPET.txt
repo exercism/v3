@@ -1,0 +1,11 @@
+module HelloWorld exposing (helloWorld)
+
+
+helloWorld : Maybe String -> String
+helloWorld maybeName =
+    case maybeName of
+        Nothing ->
+            "Hello, World!"
+
+        Just name ->
+            "Hello, " ++ name ++ "!"

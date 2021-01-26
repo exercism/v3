@@ -23,11 +23,16 @@ defmodule GuessingGameTest do
 
   @tag :pending
   test "so close when guess differs from 7 secret by +1" do
-    assert GuessingGame.compare(52,53) == "So close"
+    assert GuessingGame.compare(52, 53) == "So close"
   end
 
   @tag :pending
   test "when no guess is supplied, ask the player to make a guess" do
     assert GuessingGame.compare(15) == "Make a guess"
+  end
+
+  @tag :pending
+  test "when the atom :no_guess is supplied, ask the player to make a guess" do
+    assert GuessingGame.compare(16, :no_guess) == "Make a guess"
   end
 end

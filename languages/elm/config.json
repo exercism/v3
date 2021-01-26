@@ -8,8 +8,24 @@
     "indent_style": "space",
     "indent_size": 4
   },
+  "concepts": [
+    {
+      "uuid": "3e6e4a21-cc66-4c48-857b-90e1ca5298f9",
+      "slug": "basics",
+      "name": "Basics",
+      "blurb": "Learn basics of the Elm programming language syntax."
+    }
+  ],
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+        "slug": "lucians-luscious-lasagna",
+        "name": "Lucian's Luscious Lasagna",
+        "uuid": "54b70493-702b-4577-9d47-ec5ede4cc2c1",
+        "concepts": ["basics"],
+        "prerequisites": []
+      }
+    ],
     "practice": [
       {
         "slug": "hello-world",
@@ -334,6 +350,5 @@
         "difficulty": 8
       }
     ]
-  },
-  "concepts": []
+  }
 }

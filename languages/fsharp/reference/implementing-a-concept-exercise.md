@@ -14,8 +14,9 @@ Please also watch the following video:
 
 As this document is generic, the following placeholders are used:
 
-- `<SLUG>`: the name of the exercise in kebab-case (e.g. `anonymous-functions`).
-- `<NAME>`: the name of the exercise in PascalCase (e.g. `AnonymousFunctions`).
+- `<SLUG>`: the slug of the exercise in kebab-case (e.g. `calculator-conundrum`).
+- `<NAME>`: the name of the exercise in PascalCase (e.g. `CalculatorConundrum`).
+- `<CONCEPT_SLUG>`: the slug of one of the exercise's concepts in kebab-case (e.g. `anonymous-methods`).
 
 Before implementing the exercise, please make sure you have a good understanding of what the exercise should be teaching (and what not). This information can be found in the exercise's GitHub issue. Having done this, please read the [F# concept exercises introduction][concept-exercises].
 
@@ -24,6 +25,10 @@ To implement a concept exercise, the following files must be added:
 <pre>
 languages
 └── fsharp
+    ├── concepts
+    |   └── &lt;CONCEPT_SLUG&gt;
+    |       ├── about.md
+    |       └── links.json
     └── exercises
         └── concept
             └── &lt;SLUG&gt;
@@ -31,7 +36,6 @@ languages
                 |   ├── introduction.md
                 |   ├── instructions.md
                 |   ├── hints.md
-                |   ├── after.md
                 |   └── source.md (required if there are third-party sources)
                 ├── .meta
                 |   |── config.json

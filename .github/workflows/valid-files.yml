@@ -28,7 +28,8 @@ jobs:
                [ "$FILE" == "reference/references.json" ] ||
                [ "$FILE" == "reference/README.md" ] ||
                [ "$FILE" == "reference/stories/stories.json" ] ||
-               [ "$FILE" == "reference/stories/README.md" ]; then
+               [ "$FILE" == "reference/stories/README.md" ] ||
+               [ "$FILE" == "languages/python/reference/README.md" ]; then
                 continue
             fi
 

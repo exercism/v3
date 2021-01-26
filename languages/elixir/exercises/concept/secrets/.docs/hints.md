@@ -5,34 +5,34 @@
 
 ## 1. Create an adder
 
-- Return an anonymous function which adds the parameter from the anonymous function to the parameter passed in to `Secret.secret_add/1`
+- Return an anonymous function which adds the argument from the anonymous function to the argument passed in to `Secret.secret_add/1`.
 
 ## 2. Create a subtractor
 
-- Return an anonymous function which subtracts the parameter passed in to `Secret.secret_subtract/1` from the parameter from the anonymous function.
+- Return an anonymous function which subtracts the argument passed in to `Secret.secret_subtract/1` from the argument from the anonymous function.
 
 ## 3. Create a multiplier
 
-- Return an anonymous function which multiplies the parameter from the anonymous function to the parameter passed in to `Secret.secret_multiply/1`
+- Return an anonymous function which multiplies the argument from the anonymous function to the argument passed in to `Secret.secret_multiply/1`.
 
 ## 4. Create a divider
 
-- return an anonymous function which divides the parameter from the anonymous function by the parameter passed in to `Secret.secret_divide/1`
-- make use of [integer division][div]
+- Return an anonymous function which divides the argument from the anonymous function by the argument passed in to `Secret.secret_divide/1`.
+- Make use of [integer division][div].
 
 ## 5. Create an "and"-er
 
-- Return an anonymous function which performs a [bitwise _and_][bitwise-wiki] operation using the parameter passed in to the anonymous function and the parameter passed in to `Secret.secret_and/1`
-- functions in the [Bitwise module][bitwise-hexdocs] may be of use.
+- Return an anonymous function which performs a [bitwise _and_][bitwise-wiki] operation using the argument passed in to the anonymous function and the argument passed in to `Secret.secret_and/1`
+- Functions in the [Bitwise module][bitwise-hexdocs] may be of use.
 
 ## 6. Create an "xor"-er
 
-- Return an anonymous function which performs a [bitwise _xor_][bitwise-wiki] operation using the parameter passed in to the anonymous function and the parameter passed in to `Secret.secret_xor/1`
-- functions in the [Bitwise module][bitwise-hexdocs] may be of use.
+- Return an anonymous function which performs a [bitwise _xor_][bitwise-wiki] operation using the argument passed in to the anonymous function and the argument passed in to `Secret.secret_xor/1`
+- Functions in the [Bitwise module][bitwise-hexdocs] may be of use.
 
 ## 7. Create a function combiner
 
-- Return an anonymous function which [composes the functions][fn-composition] passed in to `Secret.secret_combine/2`
+- Return an anonymous function which [composes the functions][fn-composition] passed in to `Secret.secret_combine/2`.
 
 [anon-fns]: https://elixir-lang.org/getting-started/basic-types.html#anonymous-functions
 [bitwise-hexdocs]: https://hexdocs.pm/elixir/Bitwise.html

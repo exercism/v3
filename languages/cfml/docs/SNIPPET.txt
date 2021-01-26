@@ -1,0 +1,8 @@
+﻿component {
+
+  // helloWorld greets the world.
+  function helloWorld() {
+    return 'Hello, World!';
+  }
+
+}

@@ -49,6 +49,6 @@ But please **ask questions** :)
 
 Here are some references to pages that might be useful:
 
-- [The implemented exercises](languages/README.md##implemented-concept-exercises)
+- [The implemented exercises](languages/README.md#implemented-concept-exercises)
 - [The stories used in exercises](reference/stories/README.md)
 - [The concepts used in exercises](reference/README.md#implemented-concepts)
