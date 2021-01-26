@@ -7,7 +7,7 @@ fn create_empty() -> Vec<u8> {
 
 /// Create a buffer of `count` zeroes.
 ///
-/// Applications use these for filling and modifying data
+/// Applications often use buffers when serializing data to send over the network.
 fn create_buffer(count: usize) -> Vec<u8> {
     vec![0; count]
 }
