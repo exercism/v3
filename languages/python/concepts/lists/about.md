@@ -224,7 +224,7 @@ Lists can be combined via various techniques:
 >>> multiplied_group
 ['cat', 'dog', 'elephant', 'cat', 'dog', 'elephant', 'cat', 'dog', 'elephant']
 
-# Another method for combining 2 lists is to use slice assignment or a loop a list.
+# Another method for combining 2 lists is to use slice assignment or a loop-append.
 # This assigns the second list to index 0 in the first list.
 >>> first_one = ["cat", "Tabby"]
 >>> second_one = ["George", 5]
