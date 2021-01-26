@@ -24,8 +24,7 @@ and product of temprature and neutrons emitted per second less than 50000
 impliment a function called `is_critical` that takes in 2 arguments the temprature and neutrons emitted per second and return True or False 
 
 ```python
-
->>>is_critical(750,600):
+>>> is_criticality_balanced(750, 600)
 True
 ```
 
