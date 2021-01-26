@@ -46,6 +46,14 @@
         "uuid": "7f064e9b-f631-48b1-9ed0-a66e8393ceba",
         "concepts": ["tuples", "destructuring"],
         "prerequisites": ["structs"]
+      },
+      {
+        "slug": "vec-macro",
+        "name": "vec-macro",
+        "blurb": "Rust macros come in handy for creating vectors.",
+        "uuid": "c481e318-ddd7-4f8a-91eb-dadb7315e304",
+        "concepts": ["vec-macro"],
+        "prerequisites": ["intro-fn", "numbers"]
       }
     ],
     "practice": [
