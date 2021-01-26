@@ -17,7 +17,7 @@ Using the `throw` syntax, you can throw an Error.
 throw new Error('Oops')
 ```
 
-When an Error is thrown, the current execution is stopped and resume in the first catch block of the call stack.
+When an Error is thrown, the current execution is stopped and resumes in the first catch block of the call stack.
 
 ```javascript
 try {
@@ -44,11 +44,11 @@ try {
 
 ## Error Types
 
-In addition to the `Error` object, other builtin error objects exist. You can learn more about it [here][error-types]
+In addition to the `Error` object, other built-in error objects exist. You can learn more about it [here][error-types]
 
 ## Custom Errors
 
-You can also define your own [Custom error Type][custom-error-type] by creating a class that extends one of the builtins Error Types
+You can also define your own [Custom error Type][custom-error-type] by creating a class that extends one of the built-ins Error Types
 
 ```javascript
 class MyCustomError extends Error {}
@@ -56,7 +56,7 @@ class MyCustomError extends Error {}
 
 ## Throwing non errors
 
-While the syntax `throw` is usually used to throw an Error object, Javascript is flexible and let you throw a `string`, a `null` or any primitive type.
+While the syntax `throw` is usually used to throw an Error object, Javascript is flexible and will let you throw a `string`, a `null` or any primitive type.
 
 ## Error stacktraces
 

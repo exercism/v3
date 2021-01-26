@@ -1,4 +1,4 @@
-Elena is the new quality manager of a newspaper factory. As she has just arrived in the company, she has decided to review some of the processes in the factory to see what could be improved. She found out that technicians are doing a lot of quality checks by hand. She sees there a good oportunity for automation and ask you, a freelance developer, to develop a piece of software to monitor some of the machines.
+Elena is the new quality manager of a newspaper factory. As she has just arrived in the company, she has decided to review some of the processes in the factory to see what could be improved. She found out that technicians are doing a lot of quality checks by hand. She sees there is a good oportunity for automation and asks you, a freelance developer, to develop a piece of software to monitor some of the machines.
 
 ## Check the humidity level of the production room
 
@@ -14,9 +14,9 @@ The machine is equiped with a sensor that measures its internal temperature. You
 
 Your job is to implement a function that throws an error if the sensor is broken or if the machine starts overheating.
 
-As you know that you will later need to react differently depending on the error, you need a mechanism to differentiate the two kind of errors.
+Knowing that you will later need to react differently depending on the error, you need a mechanism to differentiate the two kind of errors.
 
-You could rely on the error messages, but this would make your code fragile as it would break if the message get updated.
+You could rely on the error messages, but this would make your code fragile as it would break if the message gets updated.
 
 So to be able to do so properly, you'll throw instances of different error classes.
 
@@ -79,7 +79,7 @@ Implements a function `monitorTheMachine` that takes an argument `actions`.
 
 - `shutdown` is a _*function*_ that, when called, will turn off the machine.
 
-The `monitorTheMachine` function should call `check()`. If it passes, the function should not return anything. However it may `throw` an error. When this happens, you should, depending on the error :
+The `monitorTheMachine` function should call `check()`. If it passes, the function should not return anything. However it may `throw` an error. When this happens, you should, depending on the error:
 
 - `ArgumentError`: when this happens, call the `alertDeadSensor` function.
 - `OverheatingError`: when this happens, if the temperature is less than 600 °C, call the `alertOverheating` function to turn on the warning light. If the temperature exceeds 600°C, the situation is critical, call the `shutdown` function.
