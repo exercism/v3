@@ -1,6 +1,6 @@
 ## string-formatting
 
-The Python `str` build-in type can be initialized using two robust string formatting methods. The string interpolation with `f'{variable}'` should be preferred as it is very readable, complete, and very fast. When a more versatile approach is needed, `''.format()` allows creating almost all the `str` you need.
+The Python `str` built-in can be initialized using two robust string formatting methods : `f-strings` and `str.format()`. String interpolation with `f'{variable}'` is preferred because it is an easily read, complete, and very fast module. When an internationalization-friendly or more flexible approach is needed, `str.format()` allows creating almost all the other `str` variations you might need.
 
 # literal string interpolation. f-string
 
@@ -10,11 +10,11 @@ In this basic example of **f-string**, the variable `name` is rendered at the be
 
 ```python
 >>> name, age = 'Artemis', 21
->>> f'{name} is {age} year old.'
-'Artemis is 21 year old.'
+>>> f'{name} is {age} years old.'
+'Artemis is 21 years old.'
 ```
 
-The expressions evaluated can be almost anything, to mention some of the possibilities that can be evaluated: `str`, numbers, variables, arithmetic expressions, conditional expressions, built-in types, slices, functions or any objects with either `__str__` or `__repr__` methods defined. Some examples:
+The expressions evaluated by an `f-string` can be almost anything -- so the usual cautions about sanitizing input apply. Some of the many values that can be evaluated: `str`, numbers, variables, arithmetic expressions, conditional expressions, built-in types, slices, functions or any objects with either `__str__` or `__repr__` methods defined. Some examples:
 
 ```python
 >>> waves = {'water': 1, 'light': 3, 'sound': 5}
@@ -26,11 +26,11 @@ The expressions evaluated can be almost anything, to mention some of the possibi
 'Tenfold the value of "light" is 30.'
 ```
 
-f-string supports control mechanisms such as width, alignment, precision that are described for `.format()`.
+f-string output supports the same control mechanisms such as _width_, _alignment_, and _precision_ that are described for `.format()`.
 
 # str.format() method
 
-The `str.format()` allow to replace placeholders with values, the placeholders are identified with named indexes {price} or numbered indexes {0} or empty placeholders {}. The values are specified as parameters in the `format` method. Example:
+`str.format()` allows for the replacement of in-text placeholders. Placeholders are identified with named indexes {price} or numbered indexes {0} or empty placeholders {}. Their values are specified as parameters in the `str.format()` method. Example:
 
 ```python
 >>> 'My text: {placeholder1} and {}.'.format(12, placeholder1='value1')

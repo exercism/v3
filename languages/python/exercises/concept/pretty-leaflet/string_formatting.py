@@ -8,5 +8,5 @@ class Leaflet:
     def get_icons(self):
         pass
 
-    def print(self):
+    def print_leaflet(self):
         pass

@@ -1,6 +1,6 @@
 ## General
 
-Use only f-strings or the format method to build a leaflet containing basic information for an event.
+Use only f-strings or the `format()` method to build a leaflet containing basic information about an event.
 
 - [Introduction to string formatting in Python][str-f-strings-docs]
 - [Article on realpython.com][realpython-article]

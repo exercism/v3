@@ -1,10 +1,12 @@
 ## String Formatting in Python
 
+The [Zen of Python][zen-of-python] asserts there should be "one _obvious_ way to do something in Python". But when it comes to string formatting, things are a little .... _less zen_. It can be surprising to find out that there are **four** main ways to perform string formatting in Python - each for a different scenario.
+
 # literal string interpolation. f-string
 
 Literal string interpolation or **f-string** is a way of quickly and efficiently formatting and evaluating expressions to `str` using the `f` (or `F`) prefix before the brackets, like so `f'{object}'`. It can be used with all enclosing string types as: single quote `'`, double quote `"` and with multi-lines and escaping triple quotes `'''` or `"""`.
 
-In this example we insert two variable values in the sentence, one str and one float:
+In this example, we insert two variable values in the sentence: one `str` and one `float`:
 
 ```python
 >>> name, value = 'eighth', 1/8
@@ -51,7 +53,7 @@ SyntaxError: f-string expression part cannot include '#'
 
 # str.format() method
 
-The [`str.format()`][str-format] allows to replace placeholders with values, the placeholders are identified with named indexes {price} or numbered indexes {0} or empty placeholders {}. The values are specified as parameters in the `format()` method.
+The [`str.format()`][str-format] allows to replace placeholders with values, the placeholders are identified with named indexes `{price}` or numbered indexes `{0}` or empty placeholders `{}`. The values are specified as parameters in the `format()` method.
 
 Example:
 
@@ -78,8 +80,8 @@ Example of conversions for a diacritical letter:
 >>> '{0!a}'.format('ë')
 "'\\xeb'"
 
->>> 'She said her name is not {} but {!r}.'.format('Anna', 'Zoë')
-"She said her name is not Anna but 'Zoë'."
+>>> 'She said her name is not {} but {!r}.'.format('Chloe', 'Zoë')
+"She said her name is not Chloe but 'Zoë'."
 ```
 
 Example of format specifiers:
@@ -93,7 +95,7 @@ More examples at the end of [this documentation][summary-string-format].
 
 ## The `%` operator
 
-The `%` operator comes from the C language and allows to use positional arguments to build an `str`.
+The `%` operator comes from the C language and it allows to use positional arguments to build a `str`.
 
 This method is now superseded by the `.format()` method, which is why the nickname of `%` is The _'Old Style'_. It can be still found is python 2 or legacy code. The `%` operator is usually avoided because less efficient, fewer options are available and any placeholder-argument mismatch can raise an exception. This operator is similar to [`printf()`][printf-style-docs].
 
@@ -123,10 +125,11 @@ More information about `Template` string can be found in the Python [documentati
 1. The `f-string` is the newest and easiest to read, it should be preferred when using Python 3.6+.
 2. Then `.format()` is versatile, very powerful and compatible with most versions of Python.
 3. `Template string` can be used to mitigate risks when inputs from users need to be handled, for simplicity or multiple substitutions.
-4. The `%` operator is not supported in some of the new distributions of Python, it is mostly used for compatibility with old code. this operator can lead to issues displaying non-ascii characters and it is less powerful than other methods.
+4. The `%` operator is not supported in some of the new distributions of Python, it is mostly used for compatibility with old code. This operator can lead to issues displaying non-ascii characters and has less functionalities than other methods.
 
 If you want to go further: [all about formatting][all-about-formatting].
 
+[zen-of-python]: https://www.python.org/dev/peps/pep-0020/
 [f-string]: https://realpython.com/python-string-formatting/#3-string-interpolation-f-strings-python-36
 [str-format]: https://realpython.com/python-string-formatting/#2-new-style-string-formatting-strformat
 [format-mini-language]: https://docs.python.org/3/library/string.html#format-specification-mini-language

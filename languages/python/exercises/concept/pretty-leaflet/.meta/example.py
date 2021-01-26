@@ -24,7 +24,7 @@ class Leaflet:
             rows.append(f'{"":>1}{self.artists[i]:<11}{icon:>3}{"":>2}')
         return rows
 
-    def print(self):
+    def print_leaflet(self):
         row_full = ''.join(['*'] * 20)
         empty_row = f'*{"":^18}*'
 
@@ -41,9 +41,3 @@ class Leaflet:
         poster.append(row_full)
 
         return '\n'.join(poster)
-
-
-leaflet = Leaflet('Webinar', ['Vince', 'Chris', 'Leo'],
-                          ['\U0001F4DA', '\U0001F4BB', '\U0001F3AF'])
-leaflet.set_date(22, 6, 2020)
-print(leaflet.print())

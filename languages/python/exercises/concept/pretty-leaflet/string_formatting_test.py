@@ -49,7 +49,7 @@ class test_string_formatting(unittest.TestCase):
 * Max          🎹  *
 *                  *
 ********************""")
-        self.assertEqual(leaflet.print(), handbill)
+        self.assertEqual(leaflet.print_leaflet(), handbill)
 
     def test_print_leaflet_teather_empty_date_and_missing_icon(self):
         leaflet = Leaflet('Macbeth', ['Fleance', 'Seyton'], ['\U0001F318'])
@@ -63,7 +63,7 @@ class test_string_formatting(unittest.TestCase):
 * Seyton           *
 *                  *
 ********************""")
-        self.assertEqual(leaflet.print(), handbill)
+        self.assertEqual(leaflet.print_leaflet(), handbill)
 
     def test_print_leaflet_webinar(self):
         leaflet = Leaflet('Webinar', ['Vince', 'Chris', 'Leo'],
@@ -80,4 +80,4 @@ class test_string_formatting(unittest.TestCase):
 * Leo          🎯  *
 *                  *
 ********************""")
-        self.assertEqual(leaflet.print(), handbill)
+        self.assertEqual(leaflet.print_leaflet(), handbill)
