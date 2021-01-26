@@ -2,19 +2,19 @@
 
 /// Create an empty vector
 fn create_empty() -> Vec<u8> {
-    vec![]
+    unimplemented!("TODO")
 }
 
 /// Create a buffer of `count` zeroes.
 ///
 /// Applications use these for filling and modifying data
 fn create_buffer(count: usize) -> Vec<u8> {
-    vec![0; count]
+    unimplemented!("TODO")
 }
 
 /// Create a vector containing the first five digits of the Fibonacci sequence.
 ///
 /// Fibonacci's sequence is the list of numbers where the next number is a sum of the previous two.
 fn fibonacci() -> Vec<u8> {
-    vec![1, 1, 2, 3, 5]
+    unimplemented!("TODO")
 }
