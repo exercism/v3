@@ -1,6 +1,6 @@
 ## Goal
 
-The goal of this exercise is to teach the student the basics of the `vec!` macro.
+The goal of this exercise is to teach the student the usage of the `vec!` macro.
 
 ## Learning objectives
 
