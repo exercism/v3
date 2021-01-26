@@ -7,9 +7,11 @@ mod tests {
     }
     #[test]
     fn test_buffer() {
-        let mut zeroized = Vec::new();
-        zeroized.extend_from_slice(&[0, 0, 0]);
-        assert_eq!(create_buffer(3), zeroized);
+        for n in 0..10 {
+            let zeroized = create_buffer(n);
+            assert_eq!(zeroized.len(), n);
+            assert!(zeroized.iter().all(|v| v == 0));
+        }
     }
     #[test]
     fn test_fibonacci() {
