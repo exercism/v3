@@ -4305,22 +4305,6 @@
           ]
         },
         {
-          "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/booleans",
-          "slug": "booleans",
-          "concepts": [
-            {
-              "url": "https://github.com/exercism/v3/tree/master/reference/types/boolean.md",
-              "name": "booleans"
-            }
-          ],
-          "prerequisites": [
-            {
-              "url": null,
-              "name": "instance-variables"
-            }
-          ]
-        },
-        {
           "url": "https://github.com/exercism/v3/tree/master/languages/ruby/exercises/concept/instance-variables",
           "slug": "instance-variables",
           "concepts": [
@@ -4469,6 +4453,26 @@
             {
               "url": "https://github.com/exercism/v3/tree/master/reference/types/struct.md",
               "name": "structs"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/exercism/v3/tree/master/languages/rust/exercises/concept/vec-macro",
+          "slug": "vec-macro",
+          "concepts": [
+            {
+              "url": null,
+              "name": "vec-macro"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": null,
+              "name": "intro-fn"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/number.md",
+              "name": "numbers"
             }
           ]
         }
