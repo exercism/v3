@@ -17,9 +17,6 @@ true && false
 
 When evaluating objects in `if` statements or other boolean contexts, all objects evaluate as _truthy_ **except** for `false` and `nil`.
 
-## Control flow
-
-_Truthy_ and _falsey_ evaluations are useful in the context of control flow.
 
 ```ruby
 def falsey
