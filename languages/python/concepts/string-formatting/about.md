@@ -51,7 +51,7 @@ SyntaxError: f-string: empty expression not allowed
 SyntaxError: f-string expression part cannot include '#'
 ```
 
-f-string cannot be used together with the GNU gettext API for internationalization (I18N) and localization (L10N), `str.format()` needs to be used instead. Using an expression inside the brackets `{}` is similar to use `eval()` or `exec()`, so it isn't very safe.
+String interpolation cannot be used together with the GNU gettext API for internationalization (I18N) and localization (L10N), so `str.format()` needs to be used instead of an `f-string` in translation scenarios. Keep in mind that using an expression inside the brackets `{}` is similar to using `eval()` or `exec()`, so it isn't very safe and should be used sparingly.
 
 # str.format() method
 
