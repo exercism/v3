@@ -42,7 +42,7 @@
         "prerequisites": ["numbers", "conditionals"]
       },
       {
-        "slug": "booleans",
+        "slug": "amusement_park_rides",
         "uuid": "06ea7869-4907-454d-a5e5-9d5b71098b17",
         "concepts": ["booleans"],
         "prerequisites": ["instance-variables"]

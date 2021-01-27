@@ -17,7 +17,6 @@ true && false
 
 When evaluating objects in `if` statements or other boolean contexts, all objects evaluate as _truthy_ **except** for `false` and `nil`.
 
-
 ```ruby
 def falsey
   nil || false
