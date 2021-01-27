@@ -988,7 +988,7 @@
       "uuid": "a5b7f41f-9f07-4996-8032-05225f0ef639",
       "slug": "anonymous-functions",
       "name": "Anonymous Functions",
-      "blurb": "TODO: add blurb for anonymous-functions concept"
+      "blurb": "In addition to named functions organized in modules, Elixir has anonymous functions that can be defined dynamically as needed."
     },
     {
       "uuid": "0bc1ad03-5ec7-4269-ad33-df6decbb5ee2",
@@ -1000,7 +1000,7 @@
       "uuid": "5bd736ed-290d-4d1b-9668-36a704cbe236",
       "slug": "basics",
       "name": "Basics",
-      "blurb": "TODO: add blurb for basics concept"
+      "blurb": "Elixir is a functional, dynamically-typed language. Elixir code is organized into modules which contain public and private named functions. There are no compile-time type checks. Variables can be bound and re-bound to data of any type."
     },
     {
       "uuid": "d291ca4b-7163-43e4-ab02-383904f19c34",
@@ -1012,7 +1012,7 @@
       "uuid": "ffd52ca2-8d45-4bce-a048-5d6c99dc8571",
       "slug": "bit-manipulation",
       "name": "Bit Manipulation",
-      "blurb": "TODO: add blurb for bit-manipulation concept"
+      "blurb": "Bitwise operations, such as AND, OR, and XOR, can be performed on integers using functions from the Bitwise module."
     },
     {
       "uuid": "71d2383f-fa4e-4309-a0ce-7b05312f3259",
@@ -1024,7 +1024,7 @@
       "uuid": "e1c4540a-12ae-4986-a604-07f38d46b498",
       "slug": "booleans",
       "name": "Booleans",
-      "blurb": "TODO: add blurb for booleans concept"
+      "blurb": "Elixir represents true and false values with the boolean type. Booleans can be combined into expressions using boolean operators \"not\", \"or\", and \"and\"."
     },
     {
       "uuid": "cc1d6b46-976a-481f-96e2-7d3eadea7603",
@@ -1042,13 +1042,13 @@
       "uuid": "bc688f4f-e8a1-44d8-a5aa-eceb8e725ce2",
       "slug": "closures",
       "name": "Closures",
-      "blurb": "TODO: add blurb for closures concept"
+      "blurb": "Anonymous functions in Elixir are closures. They can access variables that are in scope when the function is defined."
     },
     {
       "uuid": "1e7bb8a6-9620-4474-b01e-a232408e9b65",
       "slug": "cond",
       "name": "Cond",
-      "blurb": "TODO: add blurb for cond concept"
+      "blurb": "There are three conditional expressions in Elixir: if, case, and cond. Cond is usually used when there are more than two logical branches and each branch has a condition based on different variables."
     },
     {
       "uuid": "337ea0be-2978-48a1-ba10-0c29d7018a99",
@@ -1090,7 +1090,7 @@
       "uuid": "a0a894e1-c54d-4c7a-89bf-653e6efb0039",
       "slug": "floating-point-numbers",
       "name": "Floating Point Numbers",
-      "blurb": "TODO: add blurb for floating-point-numbers concept"
+      "blurb": "There are two different kinds of numbers in Elixir - integers and floats. Floats are numbers with one or more digits behind the decimal separator."
     },
     {
       "uuid": "5dd6841b-3875-499c-9de7-4cf4d033e68f",
@@ -1108,7 +1108,7 @@
       "uuid": "bab00476-4570-41c3-b74a-ba6c1a567c49",
       "slug": "integers",
       "name": "Integers",
-      "blurb": "TODO: add blurb for integers concept"
+      "blurb": "There are two different kinds of numbers in Elixir - integers and floats. Integers are whole numbers."
     },
     {
       "uuid": "776919ef-6e4a-40d6-8977-9da237d8cc14",
