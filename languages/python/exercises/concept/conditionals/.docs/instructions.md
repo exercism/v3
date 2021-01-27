@@ -23,17 +23,19 @@ A reactor is said to be critical if it satisfies the following conditions.
 - Number of neutrons emitted per second greater than 500
 - The product of temperature and neutrons emitted per second less than 50000
 
-Implement a function called `is_critical()` that takes in 2 arguments the temperature and neutrons emitted per second and returns a boolean True or False 
+Implement a function called `is_critical()` that takes in 2 arguments the temperature 
+and neutrons emitted per second and returns a boolean True or False 
 
 ```python
->>> is_critical(750,600)
+>>> is_criticality_balanced(750, 600)
 True
 ```
 
 <!-- For teaching elif -->
 ## 2. Determine the Power output range
 
-Now that the reactor has started producing power we need to determine the efficiency of the reactor.
+Now that the reactor has started producing power we need to determine the efficiency of 
+the reactor.
 The efficency can be grouped into 4 bands.
 - green -> 80-100% efficency
 - orange -> 60-80% efficency
@@ -43,7 +45,9 @@ The efficency can be grouped into 4 bands.
 efficency is calculated as `(generated power/ theoretical max power)*100`
 where generated `power = voltage * current`
 
-Implement a function called `reactor_efficency()` that takes in 3 arguments: `voltage`, `current`, and `theoretical_max_power`. The function returns the efficiency band of the reactor either 'green', 'orange', 'red', 'black'
+Implement a function called `reactor_efficency()` that takes in 3 arguments: `voltage`, 
+`current`, and `theoretical_max_power`. The function returns the efficiency band of the 
+reactor either 'green', 'orange', 'red', 'black'
 
 ```python
 >>> reactor_efficency(200,50,1500)
@@ -53,12 +57,18 @@ Implement a function called `reactor_efficency()` that takes in 3 arguments: `vo
 <!-- Intention is to teach use of if, elif and else -->
 ## 3. Fail Safe Mechanism
 
-The final part involves creating a fail-safe mechanism. We can increase/decrease or stop the criticality state of a reactor by inserting control rods into the reactor. 
+The final part involves creating a fail-safe mechanism. We can increase/decrease or stop the 
+criticality state of a reactor by inserting control rods into the reactor. 
 
-Implement a function called `fail_safe()` which takes in 3 parameters: `temperature`, `neutrons produced per second`, and `threshold` to outputs status codes.
+Implement a function called `fail_safe()` which takes in 3 parameters: `temperature`, 
+`neutrons produced per second`, and `threshold` to outputs status codes.
 
-- If `temperature * neutrons per second` < 40% of threshold, output a status code of 'LOW' indicating that the control rods must be removed to make it go critical and produce power
+- If `temperature * neutrons per second` < 40% of threshold, output a status code of 'LOW' 
+indicating that the control rods must be removed to make it go critical and produce power
 
-- If `temperature * neutrons per second` are within plus or minus 10% of the `threshold` the reactor is in criticality and outputs a status code of 'NORMAL' , indicating that the reactor is in optimum condition and control rods are in an idea position
+- If `temperature * neutrons per second` are within plus or minus 10% of the `threshold` 
+the reactor is in criticality and outputs a status code of 'NORMAL' , indicating that the 
+reactor is in optimum condition and control rods are in an idea position
 
-- If `temperature * neutron per second` is not in the above-stated ranges. The reactor is going into meltdown and a status code of 'DANGER' must be passed to immediately shut down the reactor 
+- If `temperature * neutron per second` is not in the above-stated ranges. The reactor is 
+going into meltdown and a status code of 'DANGER' must be passed to immediately shut down the reactor 
