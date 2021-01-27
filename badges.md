@@ -24,7 +24,6 @@ These will be in the codebase. They're unordered.
 - **Lackadaisical:** Solve bob in five languages
 - **Team builder:** Create a team with 3 members
 - **Teammate:** Give team feedback to 5 solutions.
-- **Wednesday Warrior:** Only submit solutions on Wednesdays for 4 consecutive weeks
 
 ## To be implemented - but involve more code/effort
 
@@ -32,6 +31,10 @@ These will be in the codebase. They're unordered.
 - **Early Bird:** Submit a solution before breakfast (~6am, local time). _(Required local timezone storage)_
 - **Docker:** Have a Docs PR merged _(How do we automate this? Webhooks listening to certain dirs?)_
 - **Badger:** Suggest a badge that is added to the website _(How do we automate this? Probably manual?)_
+
+## May be implemented by the community
+
+- **Wednesday Warrior:** Only submit solutions on Wednesdays for 4 consecutive weeks
 
 ## Under Consideration
 
