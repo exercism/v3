@@ -34,6 +34,8 @@ These will be in the codebase. They're unordered.
 
 ## May be implemented by the community
 
+These badges will be implementable by PRs from the community nearer the time of v3 launch. We will announce when the repo is open for those PRs.
+
 - **Wednesday Warrior:** Only submit solutions on Wednesdays for 4 consecutive weeks
 
 ## Under Consideration
