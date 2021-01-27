@@ -3,10 +3,10 @@ from typing import List
 
 
 class Leaflet:
-    def __init__(self, event_name: str, artists: List, unicodes: List):
+    def __init__(self, event_name: str, artists: List, icons: List):
         self.header = event_name.capitalize()
         self.artists = artists
-        self.unicodes = unicodes
+        self.icons = icons
         self.date = ''
 
     def set_date(self, day, month, year=None):
@@ -14,7 +14,7 @@ class Leaflet:
         self.date += f", {year}" if year else ""
 
     def get_icons(self):
-        return [u'{}'.format(number) for number in self.unicodes]
+        return [u'{}'.format(number) for number in self.icons]
 
     def get_artists_and_icons(self):
         rows = []
