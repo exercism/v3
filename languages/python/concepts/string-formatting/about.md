@@ -93,7 +93,7 @@ Example of format specifiers:
 "The number 42 has a representation in binary: '  101010'."
 ```
 
-More examples at the end of [this documentation][summary-string-format]. `str.format()` should be used together with the [GNU gettext API][gnu-gettext-api] for internationalization (I18N) and localization (L10N).
+More examples at the end of [this documentation][summary-string-format]. `str.format()` should be used together with the [GNU gettext API][gnu-gettext-api] for internationalization (I18N) and localization (L10N) in translation scenarios.
 
 ## The `%` operator
 

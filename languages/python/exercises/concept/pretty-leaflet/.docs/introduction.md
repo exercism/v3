@@ -26,11 +26,11 @@ The expressions evaluated by an `f-string` can be almost anything -- so the usua
 'Tenfold the value of "light" is 30.'
 ```
 
-f-string output supports the same control mechanisms such as _width_, _alignment_, and _precision_ that are described for `.format()`. f-string cannot be used together with the GNU gettext API for internationalization (I18N) and localization (L10N), `str.format()` needs to be used instead.
+f-string output supports the same control mechanisms such as _width_, _alignment_, and _precision_ that are described for `.format()`. String interpolation cannot be used together with the GNU gettext API for internationalization (I18N) and localization (L10N), `str.format()` needs to be used instead.
 
 # str.format() method
 
-`str.format()` allows for the replacement of in-text placeholders. Placeholders are identified with named indexes {price} or numbered indexes {0} or empty placeholders {}. Their values are specified as parameters in the `str.format()` method. Example:
+`str.format()` allows for the replacement of in-text placeholders. Placeholders are identified with named indexes `{price}` or numbered indexes `{0}` or empty placeholders `{}`. Their values are specified as parameters in the `str.format()` method. Example:
 
 ```python
 >>> 'My text: {placeholder1} and {}.'.format(12, placeholder1='value1')
