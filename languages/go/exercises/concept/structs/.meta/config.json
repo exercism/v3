@@ -12,8 +12,8 @@
     }
   ],
   "forked_from": ["csharp/constructors"],
-  "editor": {
-    "solution_files": ["structs.go"],
-    "test_files": ["structs_test.go"]
+  "files": {
+    "solution": ["structs.go"],
+    "test": ["structs_test.go"]
   }
 }

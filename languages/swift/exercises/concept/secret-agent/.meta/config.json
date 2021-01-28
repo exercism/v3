@@ -5,8 +5,8 @@
       "exercism_username": "wneumann"
     }
   ],
-  "editor": {
-    "solution_files": ["Sources/SecretAgent/SecretAgent.swift"],
-    "test_files": ["Tests/SecretAgentTests/SecretAgentTests.swift"]
+  "files": {
+    "solution": ["Sources/SecretAgent/SecretAgent.swift"],
+    "test": ["Tests/SecretAgentTests/SecretAgentTests.swift"]
   }
 }

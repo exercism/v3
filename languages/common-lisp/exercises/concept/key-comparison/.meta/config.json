@@ -9,8 +9,8 @@
       "exercism_username": "TheLostLambda"
     }
   ],
-  "editor": {
-    "solution_files": ["key-comparison.lisp"],
-    "test_files": ["key-comparison-test.lisp"]
+  "files": {
+    "solution": ["key-comparison.lisp"],
+    "test": ["key-comparison-test.lisp"]
   }
 }

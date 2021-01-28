@@ -10,8 +10,8 @@
       "exercism_username": "SleeplessByte"
     }
   ],
-  "editor": {
-    "solution_files": ["enchantments.js"],
-    "test_files": ["enchantments.spec.js"]
+  "files": {
+    "solution": ["enchantments.js"],
+    "test": ["enchantments.spec.js"]
   }
 }

@@ -5,9 +5,9 @@
       "exercism_username": "wneumann"
     }
   ],
-  "editor": {
-    "solution_files": ["Sources/FreelancerRates/FreelancerRates.swift"],
-    "test_files": ["Tests/FreelancerRatesTests/FreelancerRatesTests.swift"]
+  "files": {
+    "solution": ["Sources/FreelancerRates/FreelancerRates.swift"],
+    "test": ["Tests/FreelancerRatesTests/FreelancerRatesTests.swift"]
   },
   "forked_from": ["javascript/numbers"],
   "language_versions": ">=5.0"

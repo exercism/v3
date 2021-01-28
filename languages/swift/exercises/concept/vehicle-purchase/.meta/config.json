@@ -5,9 +5,9 @@
       "exercism_username": "wneumann"
     }
   ],
-  "editor": {
-    "solution_files": ["Sources/VehiclePurchase/VehiclePurchase.swift"],
-    "test_files": ["Tests/VehiclePurchaseTests/VehiclePurchaseTests.swift"]
+  "files": {
+    "solution": ["Sources/VehiclePurchase/VehiclePurchase.swift"],
+    "test": ["Tests/VehiclePurchaseTests/VehiclePurchaseTests.swift"]
   },
   "contributors": [],
   "forked_from": []

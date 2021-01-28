@@ -7,8 +7,8 @@
   ],
   "contributors": [],
   "forked_from": [],
-  "editor": {
-    "solution_files": ["SLUG.lisp"],
-    "test_files": ["SLUG-test.lisp"]
+  "files": {
+    "solution": ["SLUG.lisp"],
+    "test": ["SLUG-test.lisp"]
   }
 }

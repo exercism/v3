@@ -5,8 +5,8 @@
       "exercism_username": "ErikSchierboom"
     }
   ],
-  "editor": {
-    "solution_files": ["ValentinesDay.fs"],
-    "test_files": ["ValentinesDayTests.fs"]
+  "files": {
+    "solution": ["ValentinesDay.fs"],
+    "test": ["ValentinesDayTests.fs"]
   }
 }

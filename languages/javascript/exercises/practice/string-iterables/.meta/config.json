@@ -5,8 +5,8 @@
       "exercism_username": "SleeplessByte"
     }
   ],
-  "editor": {
-    "solution_files": ["string-iterables.js"],
-    "test_files": ["string-iterables.spec.js"]
+  "files": {
+    "solution": ["string-iterables.js"],
+    "test": ["string-iterables.spec.js"]
   }
 }

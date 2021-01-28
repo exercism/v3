@@ -5,8 +5,8 @@
       "exercism_username": "wneumann"
     }
   ],
-  "editor": {
-    "solution_files": ["Sources/MasterMixologist/MasterMixologist.swift"],
-    "test_files": ["Tests/MasterMixologistTests/MasterMixologistTests.swift"]
+  "files": {
+    "solution": ["Sources/MasterMixologist/MasterMixologist.swift"],
+    "test": ["Tests/MasterMixologistTests/MasterMixologistTests.swift"]
   }
 }

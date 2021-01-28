@@ -5,8 +5,8 @@
       "exercism_username": "wneumann"
     }
   ],
-  "editor": {
-    "solution_files": ["Sources/LasagnaMaster/LasagnaMaster.swift"],
-    "test_files": ["Tests/LasagnaMasterTests/LasagnaMasterTests.swift"]
+  "files": {
+    "solution": ["Sources/LasagnaMaster/LasagnaMaster.swift"],
+    "test": ["Tests/LasagnaMasterTests/LasagnaMasterTests.swift"]
   }
 }

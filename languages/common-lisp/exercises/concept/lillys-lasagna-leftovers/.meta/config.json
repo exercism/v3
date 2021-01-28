@@ -7,8 +7,8 @@
   ],
   "contributors": [],
   "forked_from": ["swift/lasagna-master"],
-  "editor": {
-    "solution_files": ["lillys-lasagna-leftovers.lisp"],
-    "test_files": ["lillys-lasagna-leftovers-test.lisp"]
+  "files": {
+    "solution": ["lillys-lasagna-leftovers.lisp"],
+    "test": ["lillys-lasagna-leftovers-test.lisp"]
   }
 }

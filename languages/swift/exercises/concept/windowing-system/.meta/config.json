@@ -5,8 +5,8 @@
       "exercism_username": "wneumann"
     }
   ],
-  "editor": {
-    "solution_files": ["Sources/WindowingSystem/WindowingSystem.swift"],
-    "test_files": ["Tests/WindowingSystemTests/WindowingSystemTests.swift"]
+  "files": {
+    "solution": ["Sources/WindowingSystem/WindowingSystem.swift"],
+    "test": ["Tests/WindowingSystemTests/WindowingSystemTests.swift"]
   }
 }

@@ -11,8 +11,8 @@
       "exercism_username": "archrisV"
     }
   ],
-  "editor": {
-    "solution_files": ["CalculatorConundrum.cs"],
-    "test_files": ["CalculatorConundrumTests.cs"]
+  "files": {
+    "solution": ["CalculatorConundrum.cs"],
+    "test": ["CalculatorConundrumTests.cs"]
   }
 }

@@ -9,8 +9,8 @@
       "exercism_username": "TheLostLambda"
     }
   ],
-  "editor": {
-    "solution_files": ["socks-and-sexprs.lisp"],
-    "test_files": ["socks-and-sexprs-test.lisp"]
+  "files": {
+    "solution": ["socks-and-sexprs.lisp"],
+    "test": ["socks-and-sexprs-test.lisp"]
   }
 }

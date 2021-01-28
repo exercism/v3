@@ -11,9 +11,9 @@
       "exercism_username": "neenjaw"
     }
   ],
-  "editor": {
-    "solution_files": ["lib/name_badge.ex"],
-    "test_files": ["test/name_badge_test.exs"]
+  "files": {
+    "solution": ["lib/name_badge.ex"],
+    "test": ["test/name_badge_test.exs"]
   },
   "forked_from": ["csharp/nullability"],
   "language_versions": ">=1.10"

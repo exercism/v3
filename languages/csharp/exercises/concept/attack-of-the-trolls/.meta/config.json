@@ -11,8 +11,8 @@
       "exercism_username": "ErikSchierboom"
     }
   ],
-  "editor": {
-    "solution_files": ["AttackOfTheTrolls.cs"],
-    "test_files": ["AttackOfTheTrollsTests.cs"]
+  "files": {
+    "solution": ["AttackOfTheTrolls.cs"],
+    "test": ["AttackOfTheTrollsTests.cs"]
   }
 }

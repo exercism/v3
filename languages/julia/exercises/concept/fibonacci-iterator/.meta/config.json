@@ -1,10 +1,10 @@
 {
     "language_versions": "≥1.0",
-    "editor": {
-        "test_files": [
+    "files": {
+        "test": [
             "runtests.jl"
         ],
-        "solution_files": [
+        "solution": [
             "fibonacci.jl"
         ]
     },

@@ -9,8 +9,8 @@
       "exercism_username": "BethanyG"
     }
   ],
-  "editor": {
-    "solution_files": ["none.py"],
-    "test_files": ["none_test.py"]
+  "files": {
+    "solution": ["none.py"],
+    "test": ["none_test.py"]
   }
 }

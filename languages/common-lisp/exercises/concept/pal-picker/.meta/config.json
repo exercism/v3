@@ -5,8 +5,8 @@
       "exercism_username": "TheLostLambda"
     }
   ],
-  "editor": {
-    "solution_files": ["pal-picker.lisp"],
-    "test_files": ["pal-picker-test.lisp"]
+  "files": {
+    "solution": ["pal-picker.lisp"],
+    "test": ["pal-picker-test.lisp"]
   }
 }

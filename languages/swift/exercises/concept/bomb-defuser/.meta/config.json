@@ -5,9 +5,9 @@
       "exercism_username": "wneumann"
     }
   ],
-  "editor": {
-    "solution_files": ["Sources/BombDefuser/BombDefuser.swift"],
-    "test_files": ["Tests/BombDefuserTests/BombDefuserTests.swift"]
+  "files": {
+    "solution": ["Sources/BombDefuser/BombDefuser.swift"],
+    "test": ["Tests/BombDefuserTests/BombDefuserTests.swift"]
   },
   "contributors": [],
   "forked_from": []
