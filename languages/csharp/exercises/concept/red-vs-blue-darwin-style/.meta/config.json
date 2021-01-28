@@ -17,6 +17,7 @@
   ],
   "files": {
     "solution": ["RedVsBlueDarwinStyle.cs"],
-    "test": ["RedVsBlueDarwinStyleTests.cs"]
+    "test": ["RedVsBlueDarwinStyleTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

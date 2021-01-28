@@ -14,6 +14,7 @@
   "forked_from": ["csharp/classes"],
   "files": {
     "solution": ["methods.go"],
-    "test": ["methods_test.go"]
+    "test": ["methods_test.go"],
+    "exemplar": [".meta/exemplar.go"]
   }
 }

@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["zero_value.go"],
-    "test": ["zero_value_test.go"]
+    "test": ["zero_value_test.go"],
+    "exemplar": [".meta/exemplar.go"]
   }
 }

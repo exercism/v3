@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["BuildingTelemetry.cs"],
-    "test": ["BuildingTelemetryTests.cs"]
+    "test": ["BuildingTelemetryTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

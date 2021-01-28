@@ -7,7 +7,8 @@
   ],
   "files": {
     "solution": ["Sources/LogLines/LogLines.swift"],
-    "test": ["Tests/LogLinesTests/LogLinesTests.swift"]
+    "test": ["Tests/LogLinesTests/LogLinesTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   },
   "forked_from": ["csharp/enums"]
 }

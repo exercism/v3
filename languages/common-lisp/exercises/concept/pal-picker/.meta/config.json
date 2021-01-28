@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["pal-picker.lisp"],
-    "test": ["pal-picker-test.lisp"]
+    "test": ["pal-picker-test.lisp"],
+    "exemplar": [".meta/exemplar.lisp"]
   }
 }

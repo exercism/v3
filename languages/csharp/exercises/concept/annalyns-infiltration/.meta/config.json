@@ -8,6 +8,7 @@
   "forked_from": ["fsharp/booleans"],
   "files": {
     "solution": ["AnnalynsInfiltration.cs"],
-    "test": ["AnnalynsInfiltrationTests.cs"]
+    "test": ["AnnalynsInfiltrationTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

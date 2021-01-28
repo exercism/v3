@@ -9,6 +9,7 @@
   "forked_from": ["swift/lasagna-master"],
   "files": {
     "solution": ["lillys-lasagna-leftovers.lisp"],
-    "test": ["lillys-lasagna-leftovers-test.lisp"]
+    "test": ["lillys-lasagna-leftovers-test.lisp"],
+    "exemplar": [".meta/exemplar.lisp"]
   }
 }

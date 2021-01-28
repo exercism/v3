@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["NeedForSpeed.cs"],
-    "test": ["NeedForSpeedTests.cs"]
+    "test": ["NeedForSpeedTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

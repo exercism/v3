@@ -8,6 +8,7 @@
   "forked_from": ["clojure/lists"],
   "files": {
     "solution": ["TracksOnTracksOnTracks.fs"],
-    "test": ["TracksOnTracksOnTracksTests.fs"]
+    "test": ["TracksOnTracksOnTracksTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

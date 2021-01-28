@@ -14,6 +14,7 @@
   "forked_from": ["elixir/errors"],
   "files": {
     "solution": ["InstrumentsOfTexas.cs"],
-    "test": ["InstrumentsOfTexasTests.cs"]
+    "test": ["InstrumentsOfTexasTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

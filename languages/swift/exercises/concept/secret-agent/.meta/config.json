@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["Sources/SecretAgent/SecretAgent.swift"],
-    "test": ["Tests/SecretAgentTests/SecretAgentTests.swift"]
+    "test": ["Tests/SecretAgentTests/SecretAgentTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   }
 }

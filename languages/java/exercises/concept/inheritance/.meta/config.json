@@ -7,7 +7,8 @@
   ],
   "files": {
     "solution": ["src/main/java/Fighter.java"],
-    "test": ["src/test/java/FighterTest.java"]
+    "test": ["src/test/java/FighterTest.java"],
+    "exemplar": []
   },
   "forked_from": ["csharp/inheritance"]
 }

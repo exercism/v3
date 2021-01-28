@@ -8,6 +8,7 @@
   "forked_from": ["csharp/datetimes"],
   "files": {
     "solution": ["time.go"],
-    "test": ["time_test.go"]
+    "test": ["time_test.go"],
+    "exemplar": [".meta/exemplar.go"]
   }
 }

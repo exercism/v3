@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["TheWeatherInDeather.cs"],
-    "test": ["TheWeatherInDeatherTests.cs"]
+    "test": ["TheWeatherInDeatherTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

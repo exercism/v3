@@ -7,7 +7,8 @@
   ],
   "files": {
     "solution": ["src/main/java/Blackjack.java"],
-    "test": ["src/test/java/BlackjackTest.java"]
+    "test": ["src/test/java/BlackjackTest.java"],
+    "exemplar": []
   },
   "forked_from": ["go/conditionals"]
 }

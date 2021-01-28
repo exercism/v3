@@ -8,6 +8,7 @@
   "forked_from": ["javascript/booleans"],
   "files": {
     "solution": ["AnnalynsInfiltration.fs"],
-    "test": ["AnnalynsInfiltrationTests.fs"]
+    "test": ["AnnalynsInfiltrationTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

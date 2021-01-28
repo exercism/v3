@@ -11,6 +11,7 @@
   ],
   "files": {
     "solution": ["key-comparison.lisp"],
-    "test": ["key-comparison-test.lisp"]
+    "test": ["key-comparison-test.lisp"],
+    "exemplar": [".meta/exemplar.lisp"]
   }
 }

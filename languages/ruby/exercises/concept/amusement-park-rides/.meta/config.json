@@ -22,6 +22,7 @@
   "language_versions": ">=2.6.6",
   "files": {
     "solution": [],
-    "test": []
+    "test": [],
+    "exemplar": [".meta/exemplar.rb"]
   }
 }

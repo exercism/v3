@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["RemoteControlCleanup.cs"],
-    "test": ["RemoteControlCleanupTests.cs"]
+    "test": ["RemoteControlCleanupTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

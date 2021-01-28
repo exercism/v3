@@ -17,6 +17,7 @@
   ],
   "files": {
     "solution": ["RemoteControlCompetition.cs"],
-    "test": ["RemoteControlCompetitionTests.cs"]
+    "test": ["RemoteControlCompetitionTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

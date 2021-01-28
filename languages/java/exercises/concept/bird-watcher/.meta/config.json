@@ -11,7 +11,8 @@
   ],
   "files": {
     "solution": ["src/main/java/BirdWatcher.java"],
-    "test": ["src/test/java/BirdWatcherTest.java"]
+    "test": ["src/test/java/BirdWatcherTest.java"],
+    "exemplar": []
   },
   "forked_from": ["csharp/arrays"]
 }

@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["closures.js"],
-    "test": ["closures.spec.js"]
+    "test": ["closures.spec.js"],
+    "exemplar": []
   }
 }

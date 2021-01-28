@@ -13,7 +13,8 @@
   ],
   "files": {
     "solution": ["lib/rpg.ex"],
-    "test": ["test/rpg_test.exs"]
+    "test": ["test/rpg_test.exs"],
+    "exemplar": [".meta/exemplar.ex"]
   },
   "language_versions": ">=1.10"
 }

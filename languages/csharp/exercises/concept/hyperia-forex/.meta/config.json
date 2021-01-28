@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["HyperiaForex.cs"],
-    "test": ["HyperiaForexTests.cs"]
+    "test": ["HyperiaForexTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

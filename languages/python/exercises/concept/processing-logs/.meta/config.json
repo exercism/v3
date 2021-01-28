@@ -7,7 +7,8 @@
   ],
   "files": {
     "solution": ["strings.py"],
-    "test": ["strings_test.py"]
+    "test": ["strings_test.py"],
+    "exemplar": [".meta/exemplar.py"]
   },
   "forked_from": ["csharp/strings"]
 }

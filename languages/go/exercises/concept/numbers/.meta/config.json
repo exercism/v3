@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["numbers.go"],
-    "test": ["numbers_test.go"]
+    "test": ["numbers_test.go"],
+    "exemplar": [".meta/exemplar.go"]
   }
 }

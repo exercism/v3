@@ -8,6 +8,7 @@
   "forked_from": ["csharp/booleans"],
   "files": {
     "solution": ["booleans.go"],
-    "test": ["booleans_test.go"]
+    "test": ["booleans_test.go"],
+    "exemplar": [".meta/exemplar.go"]
   }
 }

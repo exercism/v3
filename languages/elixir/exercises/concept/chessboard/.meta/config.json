@@ -13,7 +13,8 @@
   ],
   "files": {
     "solution": ["lib/chessboard.ex"],
-    "test": ["test/chessboard_test.exs"]
+    "test": ["test/chessboard_test.exs"],
+    "exemplar": [".meta/exemplar.ex"]
   },
   "language_versions": ">=1.10"
 }

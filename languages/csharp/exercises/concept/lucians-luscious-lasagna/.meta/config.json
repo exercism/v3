@@ -8,6 +8,7 @@
   "forked_from": ["fsharp/basics"],
   "files": {
     "solution": ["LuciansLusciousLasagna.cs"],
-    "test": ["LuciansLusciousLasagnaTests.cs"]
+    "test": ["LuciansLusciousLasagnaTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

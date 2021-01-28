@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["Sources/PizzaSlices/PizzaSlices.swift"],
-    "test": ["Tests/PizzaSlicesTests/PizzaSlicesTests.swift"]
+    "test": ["Tests/PizzaSlicesTests/PizzaSlicesTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   }
 }

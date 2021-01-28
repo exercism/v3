@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["AuthenticationSystem.cs"],
-    "test": ["AuthenticationSystemTests.cs"]
+    "test": ["AuthenticationSystemTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

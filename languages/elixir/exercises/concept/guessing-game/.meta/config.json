@@ -13,7 +13,8 @@
   ],
   "files": {
     "solution": ["lib/guessing_game.ex"],
-    "test": ["test/guessing_game_test.exs"]
+    "test": ["test/guessing_game_test.exs"],
+    "exemplar": [".meta/exemplar.ex"]
   },
   "forked_from": ["fsharp/pattern-matching"],
   "language_versions": ">=1.10"

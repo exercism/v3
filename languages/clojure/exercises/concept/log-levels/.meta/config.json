@@ -8,6 +8,7 @@
   "forked_from": ["fsharp/strings"],
   "files": {
     "solution": [],
-    "test": []
+    "test": [],
+    "exemplar": [".meta/exemplar.clj"]
   }
 }

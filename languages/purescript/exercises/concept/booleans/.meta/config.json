@@ -8,6 +8,7 @@
   "forked_from": ["javascript/booleans"],
   "files": {
     "solution": [],
-    "test": []
+    "test": [],
+    "exemplar": [".meta/Exemplar.purs"]
   }
 }

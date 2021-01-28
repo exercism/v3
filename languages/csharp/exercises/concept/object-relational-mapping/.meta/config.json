@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["ObjectRelationalMapping.cs"],
-    "test": ["ObjectRelationalMappingTests.cs"]
+    "test": ["ObjectRelationalMappingTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

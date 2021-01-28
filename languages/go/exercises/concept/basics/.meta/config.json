@@ -8,6 +8,7 @@
   "forked_from": ["csharp/basics"],
   "files": {
     "solution": ["basics.go"],
-    "test": ["basics_test.go"]
+    "test": ["basics_test.go"],
+    "exemplar": [".meta/exemplar.go"]
   }
 }

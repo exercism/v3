@@ -12,6 +12,7 @@
   "forked_from": ["csharp/nullability"],
   "files": {
     "solution": ["nullability.js"],
-    "test": ["nullability.spec.js"]
+    "test": ["nullability.spec.js"],
+    "exemplar": []
   }
 }

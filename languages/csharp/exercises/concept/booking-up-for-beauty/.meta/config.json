@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["BookingUpForBeauty.cs"],
-    "test": ["BookingUpForBeautyTests.cs"]
+    "test": ["BookingUpForBeautyTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

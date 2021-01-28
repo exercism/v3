@@ -17,6 +17,7 @@
   ],
   "files": {
     "solution": ["list_methods.py"],
-    "test": ["list_methods_test.py"]
+    "test": ["list_methods_test.py"],
+    "exemplar": [".meta/exemplar.py"]
   }
 }

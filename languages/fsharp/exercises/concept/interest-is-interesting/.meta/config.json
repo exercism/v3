@@ -8,6 +8,7 @@
   "forked_from": ["csharp/floating-point-numbers"],
   "files": {
     "solution": ["InterestIsInteresting.fs"],
-    "test": ["InterestIsInterestingTests.fs"]
+    "test": ["InterestIsInterestingTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

@@ -17,6 +17,7 @@
   ],
   "files": {
     "solution": ["FootballMatchReports.cs"],
-    "test": ["FootballMatchReportsTests.cs"]
+    "test": ["FootballMatchReportsTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

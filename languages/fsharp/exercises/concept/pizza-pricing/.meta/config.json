@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["PizzaPricing.fs"],
-    "test": ["PizzaPricingTests.fs"]
+    "test": ["PizzaPricingTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

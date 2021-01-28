@@ -7,7 +7,8 @@
   ],
   "files": {
     "solution": ["Sources/Lasagna/Lasagna.swift"],
-    "test": ["Tests/LasagnaTests/LasagnaTests.swift"]
+    "test": ["Tests/LasagnaTests/LasagnaTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   },
   "forked_from": ["fsharp/basics"],
   "language_versions": ">=4.0"

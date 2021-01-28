@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["OrmInOneGo.cs"],
-    "test": ["OrmInOneGoTests.cs"]
+    "test": ["OrmInOneGoTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

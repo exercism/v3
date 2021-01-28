@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["RollTheDie.cs"],
-    "test": ["RollTheDieTests.cs"]
+    "test": ["RollTheDieTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

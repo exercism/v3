@@ -13,7 +13,8 @@
   ],
   "files": {
     "solution": ["enums.py"],
-    "test": ["enums_test.py"]
+    "test": ["enums_test.py"],
+    "exemplar": [".meta/exemplar.py"]
   },
   "forked_from": ["csharp/enums"]
 }

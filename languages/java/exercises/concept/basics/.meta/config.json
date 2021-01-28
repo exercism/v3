@@ -7,7 +7,8 @@
   ],
   "files": {
     "solution": ["src/main/java/Lasagna.java"],
-    "test": ["src/test/java/LasagnaTest.java"]
+    "test": ["src/test/java/LasagnaTest.java"],
+    "exemplar": []
   },
   "forked_from": ["csharp/basics"]
 }

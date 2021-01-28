@@ -7,7 +7,8 @@
   ],
   "files": {
     "solution": ["Sources/VehiclePurchase/VehiclePurchase.swift"],
-    "test": ["Tests/VehiclePurchaseTests/VehiclePurchaseTests.swift"]
+    "test": ["Tests/VehiclePurchaseTests/VehiclePurchaseTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   },
   "contributors": [],
   "forked_from": []

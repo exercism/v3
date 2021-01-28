@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["comments.go"],
-    "test": []
+    "test": [],
+    "exemplar": [".meta/exemplar.go"]
   }
 }

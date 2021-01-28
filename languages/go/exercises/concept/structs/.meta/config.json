@@ -14,6 +14,7 @@
   "forked_from": ["csharp/constructors"],
   "files": {
     "solution": ["structs.go"],
-    "test": ["structs_test.go"]
+    "test": ["structs_test.go"],
+    "exemplar": [".meta/exemplar.go"]
   }
 }

@@ -11,6 +11,7 @@
   ],
   "files": {
     "solution": ["pizza-pi.lisp"],
-    "test": ["pizza-pi-test.lisp"]
+    "test": ["pizza-pi-test.lisp"],
+    "exemplar": [".meta/exemplar.lisp"]
   }
 }

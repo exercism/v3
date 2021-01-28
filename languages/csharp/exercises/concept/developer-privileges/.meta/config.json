@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["WhyCantIPushToMain.cs"],
-    "test": ["WhyCantIPushToMainTests.cs"]
+    "test": ["WhyCantIPushToMainTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

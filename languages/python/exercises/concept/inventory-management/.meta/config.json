@@ -17,6 +17,7 @@
   ],
   "files": {
     "solution": ["dicts.py"],
-    "test": ["dicts_test.py"]
+    "test": ["dicts_test.py"],
+    "exemplar": [".meta/exemplar.py"]
   }
 }

@@ -8,6 +8,7 @@
   "forked_from": ["csharp/datetimes"],
   "files": {
     "solution": ["BookingUpForBeauty.fs"],
-    "test": ["BookingUpForBeautyTests.fs"]
+    "test": ["BookingUpForBeautyTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

@@ -9,6 +9,7 @@
   "forked_from": ["ruby/lasagna"],
   "files": {
     "solution": ["lillys-lasagna.lisp"],
-    "test": ["lillys-lasagna-test.lisp"]
+    "test": ["lillys-lasagna-test.lisp"],
+    "exemplar": [".meta/exemplar.lisp"]
   }
 }

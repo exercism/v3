@@ -8,6 +8,7 @@
   "forked_from": ["ruby/basics"],
   "files": {
     "solution": ["basics.js"],
-    "test": ["basics.spec.js"]
+    "test": ["basics.spec.js"],
+    "exemplar": []
   }
 }

@@ -13,7 +13,8 @@
   ],
   "files": {
     "solution": ["lib/kitchen_calculator.ex"],
-    "test": ["test/kitchen_calculator_test.exs"]
+    "test": ["test/kitchen_calculator_test.exs"],
+    "exemplar": [".meta/exemplar.ex"]
   },
   "language_versions": ">=1.10"
 }

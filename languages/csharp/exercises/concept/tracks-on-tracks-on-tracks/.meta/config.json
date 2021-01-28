@@ -14,6 +14,7 @@
   "forked_from": ["fsharp/lists"],
   "files": {
     "solution": ["TracksOnTracksOnTracks.cs"],
-    "test": ["TracksOnTracksOnTracksTests.cs"]
+    "test": ["TracksOnTracksOnTracksTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

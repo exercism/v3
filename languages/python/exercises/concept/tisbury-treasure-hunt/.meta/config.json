@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["tuples.py"],
-    "test": ["tuples_test.py"]
+    "test": ["tuples_test.py"],
+    "exemplar": [".meta/exemplar.py"]
   }
 }

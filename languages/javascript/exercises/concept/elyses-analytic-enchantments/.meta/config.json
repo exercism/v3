@@ -12,6 +12,7 @@
   ],
   "files": {
     "solution": ["enchantments.js"],
-    "test": ["enchantments.spec.js"]
+    "test": ["enchantments.spec.js"],
+    "exemplar": [".meta/exemplar.js"]
   }
 }

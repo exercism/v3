@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["src/main/java/SalaryCalculator.java"],
-    "test": ["src/test/java/SalaryCalculatorTest.java"]
+    "test": ["src/test/java/SalaryCalculatorTest.java"],
+    "exemplar": []
   }
 }

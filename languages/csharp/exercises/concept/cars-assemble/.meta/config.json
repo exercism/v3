@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["CarsAssemble.cs"],
-    "test": ["CarsAssembleTests.cs"]
+    "test": ["CarsAssembleTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

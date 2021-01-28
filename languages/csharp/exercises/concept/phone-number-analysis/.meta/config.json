@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["PhoneNumberAnalysis.cs"],
-    "test": ["PhoneNumberAnalysisTests.cs"]
+    "test": ["PhoneNumberAnalysisTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

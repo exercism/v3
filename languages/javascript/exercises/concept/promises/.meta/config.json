@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["promises.js"],
-    "test": ["promises.spec.js"]
+    "test": ["promises.spec.js"],
+    "exemplar": []
   }
 }

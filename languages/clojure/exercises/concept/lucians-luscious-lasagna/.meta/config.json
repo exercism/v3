@@ -8,6 +8,7 @@
   "forked_from": ["fsharp/basics"],
   "files": {
     "solution": [],
-    "test": []
+    "test": [],
+    "exemplar": [".meta/exemplar.clj"]
   }
 }

@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["BeautySalonGoesGlobal.cs"],
-    "test": ["BeautySalonGoesGlobalTests.cs"]
+    "test": ["BeautySalonGoesGlobalTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

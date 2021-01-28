@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["maps.go"],
-    "test": ["maps_test.go"]
+    "test": ["maps_test.go"],
+    "exemplar": [".meta/exemplar.go"]
   }
 }

@@ -14,6 +14,7 @@
   "forked_from": [],
   "files": {
     "solution": [],
-    "test": []
+    "test": [],
+    "exemplar": [".meta/exemplar.js"]
   }
 }

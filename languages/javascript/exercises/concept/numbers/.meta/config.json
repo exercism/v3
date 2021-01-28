@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["numbers.js"],
-    "test": ["numbers.spec.js"]
+    "test": ["numbers.spec.js"],
+    "exemplar": []
   }
 }

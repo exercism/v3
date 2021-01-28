@@ -7,7 +7,8 @@
   ],
   "files": {
     "solution": ["src/main/java/QuestLogic.java"],
-    "test": ["src/test/java/QuestLogicTest.java"]
+    "test": ["src/test/java/QuestLogicTest.java"],
+    "exemplar": []
   },
   "forked_from": ["csharp/booleans"]
 }

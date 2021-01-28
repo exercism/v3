@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["LogsLogsLogs.cs"],
-    "test": ["LogsLogsLogsTests.cs"]
+    "test": ["LogsLogsLogsTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

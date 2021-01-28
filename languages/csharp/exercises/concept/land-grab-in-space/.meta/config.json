@@ -21,6 +21,7 @@
   ],
   "files": {
     "solution": ["LandGrabInSpace.cs"],
-    "test": ["LandGrabInSpaceTests.cs"]
+    "test": ["LandGrabInSpaceTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

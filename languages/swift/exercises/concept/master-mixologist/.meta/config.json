@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["Sources/MasterMixologist/MasterMixologist.swift"],
-    "test": ["Tests/MasterMixologistTests/MasterMixologistTests.swift"]
+    "test": ["Tests/MasterMixologistTests/MasterMixologistTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   }
 }

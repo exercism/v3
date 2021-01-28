@@ -7,7 +7,8 @@
   ],
   "files": {
     "solution": ["src/main/java/AssemblyLine.java"],
-    "test": ["src/test/java/AssemblyLineTest.java"]
+    "test": ["src/test/java/AssemblyLineTest.java"],
+    "exemplar": []
   },
   "forked_from": ["csharp/numbers"]
 }

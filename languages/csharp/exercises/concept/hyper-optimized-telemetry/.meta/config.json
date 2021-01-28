@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["HyperOptimizedTelemetry.cs"],
-    "test": ["HyperOptimizedTelemetryTests.cs"]
+    "test": ["HyperOptimizedTelemetryTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

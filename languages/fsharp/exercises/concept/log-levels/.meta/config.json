@@ -8,6 +8,7 @@
   "forked_from": ["csharp/strings"],
   "files": {
     "solution": ["LogLevels.fs"],
-    "test": ["LogLevelsTests.fs"]
+    "test": ["LogLevelsTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

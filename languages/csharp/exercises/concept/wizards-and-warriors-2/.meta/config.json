@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["WizardsAndWarriors2.cs"],
-    "test": ["WizardsAndWarriors2Tests.cs"]
+    "test": ["WizardsAndWarriors2Tests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

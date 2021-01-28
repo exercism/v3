@@ -12,6 +12,7 @@
       "src/main/java/RemoteControlCar.java",
       "src/main/java/TestTrack.java"
     ],
-    "test": ["src/test/java/RemoteControlCarTest.java"]
+    "test": ["src/test/java/RemoteControlCarTest.java"],
+    "exemplar": []
   }
 }

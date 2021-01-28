@@ -23,6 +23,7 @@
   ],
   "files": {
     "solution": ["numbers.py"],
-    "test": ["numbers_test.py"]
+    "test": ["numbers_test.py"],
+    "exemplar": [".meta/exemplar.py"]
   }
 }

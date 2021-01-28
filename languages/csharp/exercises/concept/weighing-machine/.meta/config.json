@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["WeighingMachine.cs"],
-    "test": ["WeighingMachineTests.cs"]
+    "test": ["WeighingMachineTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

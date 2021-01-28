@@ -7,7 +7,8 @@
   ],
   "files": {
     "solution": ["Sources/FreelancerRates/FreelancerRates.swift"],
-    "test": ["Tests/FreelancerRatesTests/FreelancerRatesTests.swift"]
+    "test": ["Tests/FreelancerRatesTests/FreelancerRatesTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   },
   "forked_from": ["javascript/numbers"],
   "language_versions": ">=5.0"

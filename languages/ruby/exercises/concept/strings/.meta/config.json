@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": [],
-    "test": []
+    "test": [],
+    "exemplar": [".meta/exemplar.rb"]
   }
 }

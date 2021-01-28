@@ -4,6 +4,9 @@
     "test": [
       "runtests.jl"
     ],
+    "exemplar": [
+      ".meta/exemplar.jl"
+    ],
     "solution": [
       "emoji-times.jl"
     ]

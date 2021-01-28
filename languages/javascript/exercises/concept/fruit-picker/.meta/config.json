@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["fruit-picker.js"],
-    "test": ["fruit-picker.spec.js"]
+    "test": ["fruit-picker.spec.js"],
+    "exemplar": []
   }
 }

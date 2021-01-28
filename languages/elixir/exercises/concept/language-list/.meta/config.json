@@ -13,7 +13,8 @@
   ],
   "files": {
     "solution": ["lib/language_list.ex"],
-    "test": ["test/language_list_test.exs"]
+    "test": ["test/language_list_test.exs"],
+    "exemplar": [".meta/exemplar.ex"]
   },
   "forked_from": ["clojure/lists"],
   "language_versions": ">=1.10"

@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["TimFromMarketing.cs"],
-    "test": ["TimFromMarketingTests.cs"]
+    "test": ["TimFromMarketingTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

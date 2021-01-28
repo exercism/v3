@@ -17,6 +17,7 @@
   ],
   "files": {
     "solution": ["InternationalCallingConnoisseur.cs"],
-    "test": ["InternationalCallingConnoisseurTests.cs"]
+    "test": ["InternationalCallingConnoisseurTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

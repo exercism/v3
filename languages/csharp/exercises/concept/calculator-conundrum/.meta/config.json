@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["CalculatorConundrum.cs"],
-    "test": ["CalculatorConundrumTests.cs"]
+    "test": ["CalculatorConundrumTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

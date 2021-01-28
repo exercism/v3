@@ -7,7 +7,8 @@
   ],
   "files": {
     "solution": ["lib/newsletter.ex"],
-    "test": ["test/newsletter_test.exs"]
+    "test": ["test/newsletter_test.exs"],
+    "exemplar": [".meta/exemplar.ex"]
   },
   "language_versions": ">=1.10"
 }

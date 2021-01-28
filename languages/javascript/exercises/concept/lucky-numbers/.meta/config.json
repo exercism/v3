@@ -17,6 +17,7 @@
   ],
   "files": {
     "solution": ["lucky-numbers.js"],
-    "test": ["lucky-numbers.spec.js"]
+    "test": ["lucky-numbers.spec.js"],
+    "exemplar": []
   }
 }

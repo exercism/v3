@@ -7,7 +7,8 @@
   ],
   "files": {
     "solution": ["Sources/HighScoreBoard/HighScoreBoard.swift"],
-    "test": ["Tests/HighScoreBoardTests/HighScoreBoardTests.swift"]
+    "test": ["Tests/HighScoreBoardTests/HighScoreBoardTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   },
   "forked_from": ["elixir/maps"]
 }

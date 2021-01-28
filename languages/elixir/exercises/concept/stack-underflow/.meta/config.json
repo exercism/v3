@@ -13,7 +13,8 @@
   ],
   "files": {
     "solution": ["lib/rpn_calculator/exception.ex"],
-    "test": ["test/rpn_calculator/exception_test.exs"]
+    "test": ["test/rpn_calculator/exception_test.exs"],
+    "exemplar": [".meta/exemplar.ex"]
   },
   "language_versions": ">=1.10"
 }

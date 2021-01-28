@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["AttackOfTheTrolls.cs"],
-    "test": ["AttackOfTheTrollsTests.cs"]
+    "test": ["AttackOfTheTrollsTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

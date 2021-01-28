@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["leslies-lists.lisp"],
-    "test": ["leslies-lists-test.lisp"]
+    "test": ["leslies-lists-test.lisp"],
+    "exemplar": [".meta/exemplar.lisp"]
   }
 }

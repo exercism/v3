@@ -7,7 +7,8 @@
   ],
   "files": {
     "solution": ["lib/high_score.ex"],
-    "test": ["test/high_score_test.exs"]
+    "test": ["test/high_score_test.exs"],
+    "exemplar": [".meta/exemplar.ex"]
   },
   "language_versions": ">=1.10"
 }

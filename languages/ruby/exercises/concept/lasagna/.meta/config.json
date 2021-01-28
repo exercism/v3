@@ -11,6 +11,7 @@
   ],
   "files": {
     "solution": ["lasagna.rb"],
-    "test": ["lasagna_test.rb"]
+    "test": ["lasagna_test.rb"],
+    "exemplar": [".meta/exemplar.rb"]
   }
 }

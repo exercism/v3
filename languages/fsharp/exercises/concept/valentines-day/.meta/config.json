@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["ValentinesDay.fs"],
-    "test": ["ValentinesDayTests.fs"]
+    "test": ["ValentinesDayTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

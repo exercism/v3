@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["Sources/SantasHelper/SantasHelper.swift"],
-    "test": ["Tests/SantasHelperTests/SantasHelperTests.swift"]
+    "test": ["Tests/SantasHelperTests/SantasHelperTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   }
 }

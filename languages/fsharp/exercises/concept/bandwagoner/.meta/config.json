@@ -7,6 +7,7 @@
   ],
   "files": {
     "solution": ["Bandwagoner.fs"],
-    "test": ["BandwagonerTests.fs"]
+    "test": ["BandwagonerTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

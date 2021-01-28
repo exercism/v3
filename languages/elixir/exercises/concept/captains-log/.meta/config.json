@@ -13,7 +13,8 @@
   ],
   "files": {
     "solution": ["lib/captains_log.ex"],
-    "test": ["test/captains_log_test.exs"]
+    "test": ["test/captains_log_test.exs"],
+    "exemplar": [".meta/exemplar.ex"]
   },
   "language_versions": ">=1.10"
 }

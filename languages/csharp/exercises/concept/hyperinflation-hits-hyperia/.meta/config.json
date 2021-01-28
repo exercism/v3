@@ -25,6 +25,7 @@
   ],
   "files": {
     "solution": ["HyperinflationHitsHyperia.cs"],
-    "test": ["HyperinflationHitsHyperiaTests.cs"]
+    "test": ["HyperinflationHitsHyperiaTests.cs"],
+    "exemplar": [".meta/Exemplar.cs"]
   }
 }

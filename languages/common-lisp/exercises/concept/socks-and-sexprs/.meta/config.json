@@ -11,6 +11,7 @@
   ],
   "files": {
     "solution": ["socks-and-sexprs.lisp"],
-    "test": ["socks-and-sexprs-test.lisp"]
+    "test": ["socks-and-sexprs-test.lisp"],
+    "exemplar": [".meta/exemplar.lisp"]
   }
 }

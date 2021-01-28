@@ -13,6 +13,7 @@
   ],
   "files": {
     "solution": ["strings.js"],
-    "test": ["strings.spec.js"]
+    "test": ["strings.spec.js"],
+    "exemplar": []
   }
 }

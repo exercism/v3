@@ -8,6 +8,7 @@
   "forked_from": ["csharp/floating-point-numbers"],
   "files": {
     "solution": [],
-    "test": []
+    "test": [],
+    "exemplar": [".meta/exemplar.rb"]
   }
 }
