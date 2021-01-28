@@ -3989,6 +3989,34 @@
           ]
         },
         {
+          "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/pretty-leaflet",
+          "slug": "pretty-leaflet",
+          "concepts": [
+            {
+              "url": null,
+              "name": "string-formatting"
+            }
+          ],
+          "prerequisites": [
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/string.md",
+              "name": "strings"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/classes.md",
+              "name": "classes"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/concepts/loops.md",
+              "name": "loops"
+            },
+            {
+              "url": "https://github.com/exercism/v3/tree/master/reference/types/list.md",
+              "name": "lists"
+            }
+          ]
+        },
+        {
           "url": "https://github.com/exercism/v3/tree/master/languages/python/exercises/concept/inventory-management",
           "slug": "inventory-management",
           "concepts": [
