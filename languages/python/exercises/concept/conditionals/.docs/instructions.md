@@ -38,8 +38,8 @@ Now that the reactor has started producing power we need to determine the effici
 the reactor.
 The efficency can be grouped into 4 bands.
 - green -> 80-100% efficency
-- orange -> 60-80% efficency
-- red -> 30-60% efficency
+- orange -> 60-79% efficency
+- red -> 30-59% efficency
 - black -> <30% efficent
 
 efficency is calculated as `(generated power/ theoretical max power)*100`
