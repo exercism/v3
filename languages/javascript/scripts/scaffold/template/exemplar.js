@@ -1,0 +1,3 @@
+/*
+This is an exemplar implementation that passes all the tests.
+*/

@@ -18,7 +18,7 @@ languages
                 |   └── hints.md
                 ├── .meta
                 |   |── design.md
-                |   └── Example.el
+                |   └── Exemplar.el
                 ├── <NAME>.el
                 └── <NAME>_test.el
 ```

@@ -17,7 +17,7 @@ touch exercises/concept/boolean-logic/.docs/instructions.md
 touch exercises/concept/boolean-logic/.docs/hints.md
 touch exercises/concept/boolean-logic/.docs/after.md
 touch exercises/concept/boolean-logic/.meta/design.md
-touch exercises/concept/boolean-logic/.meta/example.py
+touch exercises/concept/boolean-logic/.meta/exemplar.py
 touch exercises/concept/boolean-logic/.meta/config.json
 ```
 

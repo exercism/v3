@@ -45,7 +45,7 @@ languages
                 ├── .gitignore
                 ├── .eslintrc
                 ├── jest.config.js
-                ├── example.ts
+                ├── exemplar.ts
                 ├── &lt;slug&gt;.ts
                 ├── &lt;slug&gt;.spec.ts
                 ├── package.json
@@ -86,7 +86,7 @@ Now create the following three files:
 
 - `<slug>.cs`. the stub implementation file, which is the starting point for students to work on the exercise.
 - `<slug>.spec.js`: the test suite.
-- `example.js`: an example implementation that passes all the tests.
+- `exemplar.js`: an exemplar implementation that passes all the tests.
 
 ## Step 2: Add documentation files
 

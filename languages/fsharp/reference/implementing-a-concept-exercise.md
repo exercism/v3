@@ -40,7 +40,7 @@ languages
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
-                |   └── Example.fs
+                |   └── Exemplar.fs
                 ├── &lt;NAME&gt;.fs
                 ├── &lt;NAME&gt;.fsproj
                 └── &lt;NAME&gt;Tests.fs
@@ -76,7 +76,7 @@ For more information, please read [this in-depth description][tests-file], [watc
 
 For more information, check [this example project file][example-project-file].
 
-### Add `.meta/Example.fs` file
+### Add `.meta/Exemplar.fs` file
 
 **Purpose:** The idiomatic example implementation that passes all the tests.
 
@@ -143,5 +143,5 @@ If you have any questions regarding implementing this exercise, please post them
 [video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
 [example-stub-file]: ../exercises/concept/log-levels/LogLevels.fs
 [example-tests-file]: ../exercises/concept/log-levels/LogLevelsTests.fs
-[example-example-file]: ../exercises/concept/log-levels/.meta/Example.fs
+[example-example-file]: ../exercises/concept/log-levels/.meta/Exemplar.fs
 [example-project-file]: ../exercises/concept/log-levels/LogLevels.fsproj

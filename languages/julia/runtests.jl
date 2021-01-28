@@ -25,7 +25,7 @@ for exercise in readdir(joinpath("exercises", "concept"))
     # so we define our own. We manually include the example solution in our
     # anonymous module, so we can define `m.include(s::String)` to do nothing.
     Core.eval(m, :(include(s) = nothing))
-    Base.include(m, joinpath(exercise_path, joinpath(".meta", "example.jl")))
+    Base.include(m, joinpath(exercise_path, joinpath(".meta", "exemplar.jl")))
     @info "Testing $exercise"
     Base.include(m, joinpath(exercise_path, "runtests.jl"))
     

@@ -40,7 +40,7 @@ languages
                 ├── .meta
                 |   |── design.md
                 |   |── config.json
-                |   └── example.rs
+                |   └── exemplar.rs
                 ├── src
                 |   └── lib.rs
                 ├── Cargo.toml
@@ -57,7 +57,7 @@ Of special note are
 - `src/lib.rs`: the Rust library file, which is the starting point for students to work on the exercise.
 - `Cargo.toml`: the Cargo file. Be aware the online editor does not support editing the `Cargo.toml` so all dependencies must be specified up-front, and the author field should be removed.
 - `tests/<NAME>.rs`: this will become the test suite for this exercise.
-- `.meta/example.rs`: this should be a working example that passes all tests. Students cannot see this.
+- `.meta/exemplar.rs`: this should be a working example that passes all tests. Students cannot see this.
 
 ## Step 2: Add documentation files
 

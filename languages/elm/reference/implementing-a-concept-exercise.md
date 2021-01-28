@@ -40,7 +40,7 @@ languages
                 └── .meta
                 |   └── config.json
                 |   └── design.md
-                |   └── Example.elm
+                |   └── Exemplar.elm
                 ├── elm.json
                 ├── src
                 |   └── &lt;NAME&gt;.elm
@@ -55,7 +55,7 @@ The code files are track-specific and should be designed to help the student lea
 - An `elm.json` file.
 - A stub implementation file (`src/<NAME>.elm`).
 - A file containing the test suite (`tests/<NAME>.elm`).
-- An example implementation file that passes all the tests (`.meta/Example.elm`).
+- An exemplar implementation file that passes all the tests (`.meta/Exemplar.elm`).
 
 ## Step 2: Add documentation files
 

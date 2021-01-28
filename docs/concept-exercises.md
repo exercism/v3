@@ -227,14 +227,14 @@ For more information, watch [this video][video-stub-file] and check [this exampl
 
 For more information, watch [this video][video-tests-file] and check [this example tests file][tests-file].
 
-### Example implementation file
+### Exemplar implementation file
 
 **Purpose:** Provide an idiomatic implementation that passes all the tests.
 
 - This implementation is the target code that we want a student to aim for.
 - Mentors will be shown this code as the "target" when writing feedback
 - The implementation should only use language features introduced by the exercise or its prerequisites (and their prerequisites, and so on).
-- The example file is _not_ shown to the student when doing in-browser coding and is _not_ downloaded to the student's file system when using the CLI.
+- The exemplar file is _not_ shown to the student when doing in-browser coding and is _not_ downloaded to the student's file system when using the CLI.
 
 For more information, watch [this video][video-example-file] and check [this example file][example-file].
 
@@ -333,6 +333,6 @@ See [this example config.json file][config.json].
 [video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
 [stub-file]: ../languages/csharp/exercises/concept/log-levels/LogLevels.cs
 [tests-file]: ../languages/csharp/exercises/concept/log-levels/LogLevelsTests.cs
-[example-file]: ../languages/csharp/exercises/concept/log-levels/.meta/Example.cs
+[example-file]: ../languages/csharp/exercises/concept/log-levels/.meta/Exemplar.cs
 [determining-concepts-naming]: ./maintainers/determining-concepts.md#naming-concepts
 [migrating-your-config-json-files]: ./maintainers/migrating-your-config-json-files.md
