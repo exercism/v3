@@ -53,7 +53,7 @@ The code files are track-specific and should be designed to help the student lea
 
 - `$slug.jl`: the stub implementation file, which is the starting point for students to work on the exercise.
 - `runtests.jl`: the test suite.
-- `.meta/exemplar.jl`: an example implementation that passes all the tests.
+- `.meta/exemplar.jl`: an exemplar implementation that passes all the tests.
 - Project.toml (optional): if dependencies are required, provide this file for a reproducible environment.
 - Manifest.toml (optional): if dependencies are required, provide this file for a reproducible environment.
 

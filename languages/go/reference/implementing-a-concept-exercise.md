@@ -51,7 +51,7 @@ The code files are track-specific and should be designed to help the student lea
 
 - `<NAME>.go`. the stub implementation file, which is the starting point for students to work on the exercise.
 - `<NAME>_test.go`: the test suite.
-- `.meta/exemplar.go`: an example implementation that passes all the tests.
+- `.meta/exemplar.go`: an exemplar implementation that passes all the tests.
 
 ## Step 2: Add documentation files
 

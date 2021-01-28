@@ -169,7 +169,7 @@ These files are specific to the C# track:
 - `Properties.csproj`: the C# project file.
 - `PropertiesTest.cs`: the test suite.
 - `Properties.cs`. the stub implementation file, which is the starting point for students to work on the exercise.
-- `.meta/Exemplar.cs`: an example implementation that passes all the tests.
+- `.meta/Exemplar.cs`: an exemplar implementation that passes all the tests.
 
 Check out the [`floating-point-numbers exercise`][csharp-docs-concept-exercises-numbers-floating-point] for an example on what these files should look like.
 

@@ -1,3 +1,3 @@
 /*
-This is an example implementation that passes all the tests.
+This is an exemplar implementation that passes all the tests.
 */

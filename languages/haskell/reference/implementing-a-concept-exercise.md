@@ -67,7 +67,7 @@ These are files specific to the Haskell track:
 - `stack.yaml`: The Stack configuration file.
 - `src/<NAME>.hs`: The stub file being handed to the student.
 - `test/Tests.hs`: The test suite being handed to the student.
-- `examples/success-...`: A directory containing an example solution.
+- `exemplars/success-...`: A directory containing an exemplar solution.
   - `package.yaml`: That example solution's Stack project file.
   - `src/<NAME>.hs>`: That example solution's source code.
 

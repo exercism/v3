@@ -227,7 +227,7 @@ For more information, watch [this video][video-stub-file] and check [this exampl
 
 For more information, watch [this video][video-tests-file] and check [this example tests file][tests-file].
 
-### Example implementation file
+### Exemplar implementation file
 
 **Purpose:** Provide an idiomatic implementation that passes all the tests.
 

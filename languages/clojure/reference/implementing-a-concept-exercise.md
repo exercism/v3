@@ -51,7 +51,7 @@ The code files are track-specific and should be designed to help the student lea
 
 - `<NAME>.clj`: the Clojure file.
 - `<NAME>_test.clj`: the test suite.
-- `.meta/Exemplar.clj`: the example implementation file.
+- `.meta/Exemplar.clj`: the exemplar implementation file.
 
 ## Step 2: Add documentation files
 
