@@ -5,5 +5,9 @@
       "exercism_username": "silvanocerza"
     }
   ],
-  "forked_from": ["csharp/strings"]
+  "forked_from": ["csharp/strings"],
+  "files": {
+    "solution": [],
+    "test": []
+  }
 }

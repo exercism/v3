@@ -15,5 +15,9 @@
       "exercism_username": "iHiD"
     }
   ],
-  "forked_from": ["csharp/numbers"]
+  "forked_from": ["csharp/numbers"],
+  "files": {
+    "solution": [],
+    "test": []
+  }
 }

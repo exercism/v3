@@ -1,17 +1,17 @@
 {
-    "language_versions": "≥1.0",
-    "files": {
-        "test": [
-            "runtests.jl"
-        ],
-        "solution": [
-            "fibonacci.jl"
-        ]
-    },
-    "authors": [
-        {
-            "github_username": "SaschaMann",
-            "exercism_username": "SaschaMann"
-        }
+  "language_versions": "≥1.0",
+  "files": {
+    "test": [
+      "runtests.jl"
+    ],
+    "solution": [
+      "fibonacci.jl"
     ]
+  },
+  "authors": [
+    {
+      "github_username": "SaschaMann",
+      "exercism_username": "SaschaMann"
+    }
+  ]
 }
