@@ -9,21 +9,23 @@ class TestConditionals(unittest.TestCase):
     # More test-cases  required for full testing
 
     def test_is_criticality_balanced_set1(self):
-        self.assertTrue(
-            is_criticality_balanced(temprature=750, neutrons_emitted_per_second=650), msg="Expected True but returned False"
-        )
+
+        self.assertTrue(is_criticality_balanced(
+            temprature=750, neutrons_emitted_per_second=650), msg="Expected True but returned False")
 
     def test_is_criticality_balanced_set2(self):
-        self.assertTrue(
-            is_criticality_balanced(temprature=799, neutrons_emitted_per_second=501), msg="Expected True but returned False"
-        )
+
+        self.assertTrue(is_criticality_balanced(
+            temprature=799, neutrons_emitted_per_second=501), msg="Expected True but returned False")
 
     def test_is_criticality_balanced_set3(self):
+
         self.assertFalse(
             is_criticality_balanced(temprature=500, neutrons_emitted_per_second=600), msg="Expected False but returned True"
         )
 
     def test_is_criticality_balanced_set4(self):
+
         self.assertFalse(
             is_criticality_balanced(temprature=800, neutrons_emitted_per_second=500), msg="Expected False but returned True"
         )
@@ -31,7 +33,7 @@ class TestConditionals(unittest.TestCase):
 # End of first functions testing
 
 # Test case for reactor_efficency()
-    # Checking the second condition using assertTrue and assertFalse
+    # Checking the second condition using assertEqual
     # The values for arguments is not final and should be considered as placeholders
     # More test-cases  required for full testing
     # need to add more info to messages
@@ -67,14 +69,73 @@ class TestConditionals(unittest.TestCase):
 
 # End of second function testing
 
+
+# Test case for fail_safe()
+    # Checking the third condition using assertEqual
+    # The values for arguments is not final and should be considered as placeholders
+    # More test-cases  required for full testing
+    # need to add more info to messages
+    # Need to verify if f-string based errors allowed
+
     def test_fail_safe_set1(self):
-        pass
+        test_return = fail_safe(
+            temperature=100, neutrons_produced_per_second=50, threshold=5000)
+        self.assertEqual(
+            test_return, 'LOW', msg=f"Expected LOW but returned {test_return}
+        )
 
     def test_fail_safe_set2(self):
-        pass
+        test_return = fail_safe(
+            temperature=100, neutrons_produced_per_second=12, threshold=4000)
+        self.assertEqual(
+            test_return, 'LOW', msg=f"Expected LOW but returned {test_return}
+        )
 
     def test_fail_safe_set3(self):
-        pass
+        test_return = fail_safe(
+            temperature=100, neutrons_produced_per_second=10, threshold=3000)
+        self.assertEqual(
+            test_return, 'LOW', msg=f"Expected LOW but returned {test_return}
+        )
 
     def test_fail_safe_set4(self):
-        pass
+        test_return = fail_safe(
+            temperature=100, neutrons_produced_per_second=55, threshold=5000)
+        self.assertEqual(
+            test_return, 'NORMAL', msg=f"Expected NORMAL but returned {test_return}
+        )
+
+    def test_fail_safe_set5(self):
+        test_return = fail_safe(
+            temperature=100, neutrons_produced_per_second=45, threshold=5000)
+        self.assertEqual(
+            test_return, 'NORMAL', msg=f"Expected NORMAL but returned {test_return}
+        )
+
+    def test_fail_safe_set6(self):
+        test_return = fail_safe(
+            temperature=100, neutrons_produced_per_second=50, threshold=5000)
+        self.assertEqual(
+            test_return, 'NORMAL', msg=f"Expected NORMAL but returned {test_return}
+        )
+
+    def test_fail_safe_set7(self):
+        test_return = fail_safe(
+            temperature=1000, neutrons_produced_per_second=35, threshold=5000)
+        self.assertEqual(
+            test_return, 'DANGER', msg=f"Expected DANGER but returned {test_return}
+        )
+
+    def test_fail_safe_set8(self):
+        test_return = fail_safe(
+            temperature=1000, neutrons_produced_per_second=30, threshold=5000)
+        self.assertEqual(
+            test_return, 'DANGER', msg=f"Expected DANGER but returned {test_return}
+        )
+
+    def test_fail_safe_set9(self):
+        test_return = fail_safe(
+            temperature=1000, neutrons_produced_per_second=25, threshold=5000)
+        self.assertEqual(
+            test_return, 'DANGER', msg=f"Expected DANGER but returned {test_return}
+        )
