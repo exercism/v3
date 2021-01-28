@@ -21,9 +21,9 @@ The first thing a control system must do is to check if the reactor is critical.
 A reactor is said to be critical if it satisfies the following conditions.
 - Temperature less than 800
 - Number of neutrons emitted per second greater than 500
-- The product of temperature and neutrons emitted per second less than 50000
+- The product of temperature and neutrons emitted per second less than 500000
 
-Implement a function called `is_critical()` that takes in 2 arguments the temperature 
+Implement a function called `is_criticality_balanced()` that takes in 2 arguments the temperature 
 and neutrons emitted per second and returns a boolean True or False 
 
 ```python
