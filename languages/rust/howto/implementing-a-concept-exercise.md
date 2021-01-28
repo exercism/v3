@@ -40,7 +40,7 @@ languages
                 ├── .meta
                 |   |── design.md
                 |   |── config.json
-                |   └── example.rs
+                |   └── exemplar.rs
                 ├── src
                 |   └── lib.rs
                 ├── Cargo.toml

@@ -40,7 +40,7 @@ languages
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
-                |   └── Example.fs
+                |   └── Exemplar.fs
                 ├── &lt;NAME&gt;.fs
                 ├── &lt;NAME&gt;.fsproj
                 └── &lt;NAME&gt;Tests.fs

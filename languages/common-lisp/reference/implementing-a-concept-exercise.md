@@ -45,7 +45,7 @@ languages
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
-                |   └── example.lisp
+                |   └── exemplar.lisp
                 ├── &lt;SLUG&gt;.lisp
                 └── &lt;SLUG&gt;-test.lisp
 </pre>

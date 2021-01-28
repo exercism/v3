@@ -40,7 +40,7 @@ languages
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
-                |   └── Example.cs
+                |   └── Exemplar.cs
                 ├── &lt;NAME&gt;.cs
                 ├── &lt;NAME&gt;.csproj
                 └── &lt;NAME&gt;Tests.cs

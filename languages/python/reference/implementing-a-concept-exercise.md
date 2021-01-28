@@ -41,7 +41,7 @@ languages
                 ├── .meta
                 |   ├── config.json
                 |   ├── design.md
-                |   └── example.py
+                |   └── exemplar.py
                 ├── <CONCEPT_NAME>.py
                 └── <CONCEPT_NAME>_test.py
 

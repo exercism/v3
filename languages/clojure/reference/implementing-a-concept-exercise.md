@@ -40,7 +40,7 @@ languages
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
-                |   └── Example.clj
+                |   └── Exemplar.clj
                 ├── &lt;NAME&gt;.clj
                 └── &lt;NAME&gt;_test.clj
 </pre>

@@ -36,7 +36,7 @@ languages
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
-                |   └── example.rb
+                |   └── exemplar.rb
                 ├── <NAME>.rb
                 └── <NAME>_test.rb
 </pre>

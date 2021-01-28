@@ -40,7 +40,7 @@ languages
                 ├── .meta
                 │   ├── config.json
                 │   ├── design.md
-                │   └── example.c
+                │   └── exemplar.c
                 ├── makefile
                 ├── &lt;NAME&gt;.c
                 ├── &lt;NAME&gt;.h

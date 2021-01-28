@@ -40,7 +40,7 @@ languages
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
-                |   └── example.go
+                |   └── exemplar.go
                 ├── &lt;NAME&gt;.go
                 └── &lt;NAME&gt;_test.go
 </pre>

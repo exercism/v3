@@ -41,7 +41,7 @@ languages
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
-                |   └── Example.purs
+                |   └── Exemplar.purs
                 ├── src
                 |   └── <NAME>.purs
                 ├── test

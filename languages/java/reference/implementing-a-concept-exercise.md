@@ -45,7 +45,7 @@ languages
                 |── .meta
                 |   |── design.md
                 |   |── config.json
-                |   └── example
+                |   └── exemplar
                 |       |── build.gradle
                 |       └── src
                 |           └── main

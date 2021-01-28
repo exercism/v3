@@ -40,7 +40,7 @@ languages
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
-                |   └── Example.swift
+                |   └── Exemplar.swift
                 ├── Package.swift
                 ├── Sources
                 |   └── &lt;NAME&gt;

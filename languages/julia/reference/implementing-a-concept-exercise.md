@@ -40,7 +40,7 @@ languages
                 ├── .meta
                 |   |── config.json
                 |   |── design.md
-                |   └── example.jl
+                |   └── exemplar.jl
                 ├── $slug.jl
                 ├── runtests.jl
                 ├── Project.toml (optional)

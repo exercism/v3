@@ -40,7 +40,7 @@ languages
                 └── .meta
                 |   └── config.json
                 |   └── design.md
-                |   └── Example.elm
+                |   └── Exemplar.elm
                 ├── elm.json
                 ├── src
                 |   └── &lt;NAME&gt;.elm

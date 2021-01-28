@@ -44,7 +44,7 @@ languages
                 │   └── <NAME>.hs
                 ├── test
                 │   └── Tests.hs
-                ├── examples
+                ├── exemplars
                 │   ├── success-... (default: standard)
                 │   │   ├── package.yaml
                 │   │   └── src

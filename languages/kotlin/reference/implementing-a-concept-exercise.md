@@ -44,7 +44,7 @@ languages
                 ├── .meta
                 |   |── design.md
                 |   |── config.json
-                |   └── Example.kt
+                |   └── Exemplar.kt
                 ├── src
                 |   ├── main
                 |   | 	└── kotlin

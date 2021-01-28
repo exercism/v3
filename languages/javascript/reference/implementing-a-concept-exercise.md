@@ -47,7 +47,7 @@ languages
                 ├── .eslintrc
                 ├── .gitignore
                 ├── babel.config.js
-                ├── example.js
+                ├── exemplar.js
                 ├── &lt;slug&gt;.js
                 ├── &lt;slug&gt;.spec.js
                 ├── package.json

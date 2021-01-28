@@ -44,7 +44,7 @@ languages
                 ├── .meta
                 │   ├── config.json
                 │   ├── design.md
-                │   └── example.ex
+                │   └── exemplar.ex
                 ├── lib
                 │   └── $elixir_slug.ex
                 ├── mix.exs

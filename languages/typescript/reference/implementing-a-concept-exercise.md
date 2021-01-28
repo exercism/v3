@@ -45,7 +45,7 @@ languages
                 ├── .gitignore
                 ├── .eslintrc
                 ├── jest.config.js
-                ├── example.ts
+                ├── exemplar.ts
                 ├── &lt;slug&gt;.ts
                 ├── &lt;slug&gt;.spec.ts
                 ├── package.json

@@ -40,8 +40,8 @@ languages
               ├── .meta
               |   |── config.json
               │   ├── design.md
-              │   ├── example.cpp
-              │   └── example.h
+              │   ├── exemplar.cpp
+              │   └── exemplar.h
               ├── CMakeLists.txt
               ├── &lt;NAME&gt;.cpp
               ├── &lt;NAME&gt;.h

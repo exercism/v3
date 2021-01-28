@@ -117,7 +117,7 @@ languages
                 |   └── introduction.md
                 ├── .meta
                 |   ├── design.md
-                |   └── Example.cs
+                |   └── Exemplar.cs
                 ├── Properties.csproj
                 ├── Properties.cs
                 └── PropertiesTest.cs
