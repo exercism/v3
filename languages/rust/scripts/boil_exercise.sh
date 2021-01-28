@@ -24,7 +24,7 @@ edition = \"2018\"
 mkdir tests
 cp ./src/lib.rs "tests/${snake_case}.rs"
 mkdir .meta
-cp ./src/lib.rs ./.meta/example.rs
+cp ./src/lib.rs ./.meta/exemplar.rs
 touch ./.meta/config.json
 touch ./.meta/design.md
 mkdir .docs

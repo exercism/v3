@@ -53,7 +53,7 @@ function test_concept() {
 
     mkdir tests
     raw_url="https://raw.githubusercontent.com/exercism/v3/$last_commit"
-    curl -s -L "$raw_url/languages/rust/exercises/concept/$concept/.meta/example.rs" > src/lib.rs
+    curl -s -L "$raw_url/languages/rust/exercises/concept/$concept/.meta/exemplar.rs" > src/lib.rs
     curl -s -L "$raw_url/languages/rust/exercises/concept/$concept/tests/$concept.rs" > "tests/$concept.rs"
 
     # we don't want to exit the script if any of these fail, but simultaneously we want failfast

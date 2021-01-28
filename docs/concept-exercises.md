@@ -333,6 +333,6 @@ See [this example config.json file][config.json].
 [video-example-file]: https://www.youtube.com/watch?v=gkbBqd7hPrA&t=781
 [stub-file]: ../languages/csharp/exercises/concept/log-levels/LogLevels.cs
 [tests-file]: ../languages/csharp/exercises/concept/log-levels/LogLevelsTests.cs
-[example-file]: ../languages/csharp/exercises/concept/log-levels/.meta/Example.cs
+[example-file]: ../languages/csharp/exercises/concept/log-levels/.meta/Exemplar.cs
 [determining-concepts-naming]: ./maintainers/determining-concepts.md#naming-concepts
 [migrating-your-config-json-files]: ./maintainers/migrating-your-config-json-files.md

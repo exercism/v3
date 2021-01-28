@@ -62,7 +62,7 @@ The code files are track-specific and should be designed to help the student lea
   point for students to work on the exercise.
 - `<SLUG>-test.lisp`: the test suite which loads the implementation file and
   FiveAM via quicklisp. Loading this file should _not_ auto-run the tests.
-- `.meta/example.lisp`: an example implementation that passes all the
+- `.meta/exemplar.lisp`: an example implementation that passes all the
   tests.
 
 ## Step 2: Add documentation files

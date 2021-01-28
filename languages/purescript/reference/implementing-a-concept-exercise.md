@@ -56,7 +56,7 @@ These are files specific to the PureScript track:
 - `src/<NAME>.purs`: the stub implementation file, which is the starting point for students to work on the exercise.
 - `test/Test.purs`: the test suite.
 - `bower.json`: the bower project file.
-- `.meta/Example.purs`: an example implementation that passes all the tests.
+- `.meta/Exemplar.purs`: an example implementation that passes all the tests.
 
 ## Step 2: Add documentation files
 
