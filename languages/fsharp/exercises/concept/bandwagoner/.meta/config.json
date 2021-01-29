@@ -5,8 +5,9 @@
       "exercism_username": "ErikSchierboom"
     }
   ],
-  "editor": {
-    "solution_files": ["Bandwagoner.fs"],
-    "test_files": ["BandwagonerTests.fs"]
+  "files": {
+    "solution": ["Bandwagoner.fs"],
+    "test": ["BandwagonerTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

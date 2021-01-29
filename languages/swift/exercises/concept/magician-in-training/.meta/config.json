@@ -5,11 +5,10 @@
       "exercism_username": "wneumann"
     }
   ],
-  "editor": {
-    "solution_files": ["Sources/MagicianInTraining/MagicianInTraining.swift"],
-    "test_files": [
-      "Tests/MagicianInTrainingTests/MagicianInTrainingTests.swift"
-    ]
+  "files": {
+    "solution": ["Sources/MagicianInTraining/MagicianInTraining.swift"],
+    "test": ["Tests/MagicianInTrainingTests/MagicianInTrainingTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   },
   "forked_from": ["go/basic-slices"]
 }

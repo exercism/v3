@@ -5,8 +5,9 @@
       "exercism_username": "ErikSchierboom"
     }
   ],
-  "editor": {
-    "solution_files": ["LuciansLusciousLasagna.fs"],
-    "test_files": ["LuciansLusciousLasagnaTests.fs"]
+  "files": {
+    "solution": ["LuciansLusciousLasagna.fs"],
+    "test": ["LuciansLusciousLasagnaTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

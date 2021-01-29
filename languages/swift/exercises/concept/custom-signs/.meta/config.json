@@ -5,8 +5,9 @@
       "exercism_username": "wneumann"
     }
   ],
-  "editor": {
-    "solution_files": ["Sources/CustomSigns/CustomSigns.swift"],
-    "test_files": ["Tests/CustomSignsTests/CustomSignsTests.swift"]
+  "files": {
+    "solution": ["Sources/CustomSigns/CustomSigns.swift"],
+    "test": ["Tests/CustomSignsTests/CustomSignsTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   }
 }

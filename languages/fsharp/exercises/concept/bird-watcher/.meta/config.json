@@ -6,8 +6,9 @@
     }
   ],
   "forked_from": ["csharp/arrays"],
-  "editor": {
-    "solution_files": ["BirdWatcher.fs"],
-    "test_files": ["BirdWatcherTests.fs"]
+  "files": {
+    "solution": ["BirdWatcher.fs"],
+    "test": ["BirdWatcherTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

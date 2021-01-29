@@ -9,8 +9,9 @@
       "exercism_username": "verdammelt"
     }
   ],
-  "editor": {
-    "solution_files": ["pizza-pi.lisp"],
-    "test_files": ["pizza-pi-test.lisp"]
+  "files": {
+    "solution": ["pizza-pi.lisp"],
+    "test": ["pizza-pi-test.lisp"],
+    "exemplar": [".meta/exemplar.lisp"]
   }
 }

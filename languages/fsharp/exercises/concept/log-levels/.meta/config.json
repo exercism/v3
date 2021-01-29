@@ -6,8 +6,9 @@
     }
   ],
   "forked_from": ["csharp/strings"],
-  "editor": {
-    "solution_files": ["LogLevels.fs"],
-    "test_files": ["LogLevelsTests.fs"]
+  "files": {
+    "solution": ["LogLevels.fs"],
+    "test": ["LogLevelsTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

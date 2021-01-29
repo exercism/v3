@@ -5,9 +5,10 @@
       "exercism_username": "wneumann"
     }
   ],
-  "editor": {
-    "solution_files": ["Sources/HighScoreBoard/HighScoreBoard.swift"],
-    "test_files": ["Tests/HighScoreBoardTests/HighScoreBoardTests.swift"]
+  "files": {
+    "solution": ["Sources/HighScoreBoard/HighScoreBoard.swift"],
+    "test": ["Tests/HighScoreBoardTests/HighScoreBoardTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   },
   "forked_from": ["elixir/maps"]
 }

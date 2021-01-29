@@ -1,20 +1,23 @@
 {
-    "language_versions": "≥1.0",
-    "editor": {
-        "test_files": [
-            "runtests.jl"
-        ],
-        "solution_files": [
-            "vehicle-purchase.jl"
-        ]
-    },
-    "forked_from": [
-        "swift/vehicle-purchase"
+  "language_versions": "≥1.0",
+  "files": {
+    "test": [
+      "runtests.jl"
     ],
-    "authors": [
-        {
-            "github_username": "SaschaMann",
-            "exercism_username": "SaschaMann"
-        }
+    "exemplar": [
+      ".meta/exemplar.jl"
+    ],
+    "solution": [
+      "vehicle-purchase.jl"
     ]
+  },
+  "forked_from": [
+    "swift/vehicle-purchase"
+  ],
+  "authors": [
+    {
+      "github_username": "SaschaMann",
+      "exercism_username": "SaschaMann"
+    }
+  ]
 }

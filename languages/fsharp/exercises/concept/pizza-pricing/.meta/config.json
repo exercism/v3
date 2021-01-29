@@ -5,8 +5,9 @@
       "exercism_username": "ErikSchierboom"
     }
   ],
-  "editor": {
-    "solution_files": ["PizzaPricing.fs"],
-    "test_files": ["PizzaPricingTests.fs"]
+  "files": {
+    "solution": ["PizzaPricing.fs"],
+    "test": ["PizzaPricingTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

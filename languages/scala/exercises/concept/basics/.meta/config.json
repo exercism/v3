@@ -5,5 +5,10 @@
       "exercism_username": "stillleben"
     }
   ],
-  "forked_from": ["csharp/basics"]
+  "forked_from": ["csharp/basics"],
+  "files": {
+    "solution": [],
+    "test": [],
+    "exemplar": [".meta/Exemplar.scala"]
+  }
 }

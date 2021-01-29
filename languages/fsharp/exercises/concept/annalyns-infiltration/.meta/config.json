@@ -6,8 +6,9 @@
     }
   ],
   "forked_from": ["javascript/booleans"],
-  "editor": {
-    "solution_files": ["AnnalynsInfiltration.fs"],
-    "test_files": ["AnnalynsInfiltrationTests.fs"]
+  "files": {
+    "solution": ["AnnalynsInfiltration.fs"],
+    "test": ["AnnalynsInfiltrationTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

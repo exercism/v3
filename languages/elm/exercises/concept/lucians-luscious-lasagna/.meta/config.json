@@ -10,8 +10,9 @@
     }
   ],
   "forked_from": ["fsharp/lucians-luscious-lasagna"],
-  "editor": {
-    "solution_files": ["src/Cook.elm"],
-    "test_files": ["tests/Tests.elm"]
+  "files": {
+    "solution": ["src/Cook.elm"],
+    "test": ["tests/Tests.elm"],
+    "exemplar": [".meta/Exemplar.elm"]
   }
 }

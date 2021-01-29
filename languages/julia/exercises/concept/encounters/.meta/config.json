@@ -1,17 +1,20 @@
 {
-    "language_versions": "≥1.0",
-    "editor": {
-        "test_files": [
-            "runtests.jl"
-        ],
-        "solution_files": [
-            "encounters.jl"
-        ]
-    },
-    "authors": [
-        {
-            "github_username": "SaschaMann",
-            "exercism_username": "SaschaMann"
-        }
+  "language_versions": "≥1.0",
+  "files": {
+    "test": [
+      "runtests.jl"
+    ],
+    "exemplar": [
+      ".meta/exemplar.jl"
+    ],
+    "solution": [
+      "encounters.jl"
     ]
+  },
+  "authors": [
+    {
+      "github_username": "SaschaMann",
+      "exercism_username": "SaschaMann"
+    }
+  ]
 }

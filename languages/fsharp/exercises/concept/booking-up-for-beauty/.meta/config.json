@@ -6,8 +6,9 @@
     }
   ],
   "forked_from": ["csharp/datetimes"],
-  "editor": {
-    "solution_files": ["BookingUpForBeauty.fs"],
-    "test_files": ["BookingUpForBeautyTests.fs"]
+  "files": {
+    "solution": ["BookingUpForBeauty.fs"],
+    "test": ["BookingUpForBeautyTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

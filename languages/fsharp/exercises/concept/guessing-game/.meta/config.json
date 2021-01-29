@@ -5,8 +5,9 @@
       "exercism_username": "ErikSchierboom"
     }
   ],
-  "editor": {
-    "solution_files": ["GuessingGame.fs"],
-    "test_files": ["GuessingGameTests.fs"]
+  "files": {
+    "solution": ["GuessingGame.fs"],
+    "test": ["GuessingGameTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

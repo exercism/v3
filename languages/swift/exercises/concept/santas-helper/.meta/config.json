@@ -5,8 +5,9 @@
       "exercism_username": "wneumann"
     }
   ],
-  "editor": {
-    "solution_files": ["Sources/SantasHelper/SantasHelper.swift"],
-    "test_files": ["Tests/SantasHelperTests/SantasHelperTests.swift"]
+  "files": {
+    "solution": ["Sources/SantasHelper/SantasHelper.swift"],
+    "test": ["Tests/SantasHelperTests/SantasHelperTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   }
 }

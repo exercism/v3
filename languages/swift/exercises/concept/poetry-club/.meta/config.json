@@ -5,9 +5,10 @@
       "exercism_username": "wneumann"
     }
   ],
-  "editor": {
-    "solution_files": ["Sources/PoetryClub/PoetryClub.swift"],
-    "test_files": ["Tests/PoetryClubTests/PoetryClubTests.swift"]
+  "files": {
+    "solution": ["Sources/PoetryClub/PoetryClub.swift"],
+    "test": ["Tests/PoetryClubTests/PoetryClubTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   },
   "forked_from": ["javascript/strings"]
 }

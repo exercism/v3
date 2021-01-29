@@ -5,8 +5,9 @@
       "exercism_username": "verdammelt"
     }
   ],
-  "editor": {
-    "solution_files": ["leslies-lists.lisp"],
-    "test_files": ["leslies-lists-test.lisp"]
+  "files": {
+    "solution": ["leslies-lists.lisp"],
+    "test": ["leslies-lists-test.lisp"],
+    "exemplar": [".meta/exemplar.lisp"]
   }
 }

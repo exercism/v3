@@ -6,8 +6,9 @@
     }
   ],
   "forked_from": ["csharp/numbers"],
-  "editor": {
-    "solution_files": ["CarsAssemble.fs"],
-    "test_files": ["CarsAssembleTests.fs"]
+  "files": {
+    "solution": ["CarsAssemble.fs"],
+    "test": ["CarsAssembleTests.fs"],
+    "exemplar": [".meta/Exemplar.fs"]
   }
 }

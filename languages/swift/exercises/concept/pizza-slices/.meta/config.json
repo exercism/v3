@@ -5,8 +5,9 @@
       "exercism_username": "wneumann"
     }
   ],
-  "editor": {
-    "solution_files": ["Sources/PizzaSlices/PizzaSlices.swift"],
-    "test_files": ["Tests/PizzaSlicesTests/PizzaSlicesTests.swift"]
+  "files": {
+    "solution": ["Sources/PizzaSlices/PizzaSlices.swift"],
+    "test": ["Tests/PizzaSlicesTests/PizzaSlicesTests.swift"],
+    "exemplar": [".meta/Exemplar.swift"]
   }
 }
