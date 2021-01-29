@@ -9,6 +9,7 @@
   "forked_from": [],
   "files": {
     "solution": ["SLUG.lisp"],
-    "test": ["SLUG-test.lisp"]
+    "test": ["SLUG-test.lisp"],
+    "exemplar": ["exemplar.lisp"]
   }
 }
