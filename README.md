@@ -1,3 +1,7 @@
+**This repository is now archived, and its content has been exploded into the various tracks and docs repos. It now acts as a holder for any content that hasn't been migrated, and any PRs that weren't merged. Please open those PRs against the relevant track repo. Thank you to everyone who contributed to this stage of our journey towards v3 💙**
+
+---
+
 _Note: This file, and the other docs in this repository, can be viewed on [GitHub](https://github.com/exercism/v3) or as [a website with easier navigation](https://exercism.github.io/v3)._
 
 # Exercism - v3
