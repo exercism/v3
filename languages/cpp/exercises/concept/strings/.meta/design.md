@@ -22,6 +22,8 @@ The Concepts this exercise unlocks are:
 
 ## Prerequisites
 
-There are no prerequisites.
+This exercise's prerequisites Concepts are:
+
+- `basics`: know how to define methods.
 
 [docs.string]: https://en.cppreference.com/w/cpp/string/basic_string
