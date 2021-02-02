@@ -11,10 +11,16 @@
   "exercises": {
     "concept": [
       {
+        "slug": "basics",
+        "uuid": "f1eb2cab-d6bc-447a-bce3-6780c44e4b22",
+        "concepts": ["basics"],
+        "prerequisites": []
+      },
+      {
         "slug": "booleans",
         "uuid": "f1eb2cab-d6bc-447a-bce3-6780c44e4b22",
         "concepts": ["booleans"],
-        "prerequisites": []
+        "prerequisites": ["basics"]
       }
     ],
     "practice": [
