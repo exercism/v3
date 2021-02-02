@@ -9,7 +9,15 @@
     "indent_size": 4
   },
   "exercises": {
-    "concept": [],
+    "concept": [
+      {
+        "slug": "lucians-luscious-lasagna",
+        "name": "Lucian's Luscious Lasagna",
+        "uuid": "e21279ba-ee09-412a-902d-478ccdc5d28c",
+        "concepts": ["basics"],
+        "prerequisites": []
+      }
+    ],
     "practice": [
       {
         "slug": "hello-world",
@@ -560,5 +568,12 @@
       }
     ]
   },
-  "concepts": []
+  "concepts": [
+    {
+      "uuid": "2eb4a463-355f-46ef-ac55-a75ec5afdf86",
+      "slug": "basics",
+      "name": "Basics",
+      "blurb": "TODO: add blurb for basics concept"
+    }
+  ]
 }
