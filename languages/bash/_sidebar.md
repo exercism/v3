@@ -1,0 +1,10 @@
+- [Start here](/)
+- Docs
+- [Languages](/languages/README.md)
+  - [Bash](/languages/bash/README.md)
+    - [Reference](/languages/bash/reference/README.md)
+- Reference
+  - [Concepts](/reference/concepts/README.md)
+  - [Paradigms](/reference/paradigms/README.md)
+  - [Tooling](/reference/tooling/README.md)
+  - [Types](/reference/types/README.md)
