@@ -58,6 +58,13 @@
         "uuid": "693e4ef3-bcf1-4b5f-8883-24d006164541",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "squeaky-clean",
+        "name": "Squeaky Clean",
+        "uuid": "512b751b-8f80-4d4d-ad81-7b8974d6bdf0",
+        "concepts": ["characters"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": [
