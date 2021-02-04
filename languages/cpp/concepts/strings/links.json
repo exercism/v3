@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "url": "https://en.cppreference.com/w/cpp/string/basic_string",
+    "description": "methods"
+  },
+  {
+    "url": "https://en.cppreference.com/w/cpp/language/escape",
+    "description": "escaping"
+  },
+  {
+    "url": "https://en.cppreference.com/w/cpp/string/basic_string/operator%2B",
+    "description": "cpp-reference-string-concatenation"
+  },
+  {
+    "url": "https://en.cppreference.com/w/cpp/io/c/fprintf",
+    "description": "cpp-reference-printf"
+  }
+]
