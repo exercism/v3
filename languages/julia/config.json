@@ -113,7 +113,14 @@
                 "name": "The Exercism Matrix",
                 "slug": "exercism-matrix",
                 "concepts": ["matrices-introduction"],
-                "prerequisites": ["functions-introduction"]
+                "prerequisites": ["vectors"]
+            },
+            {
+                "uuid": "234466a0-08ce-45a1-aebc-5ec0b0cde24f",
+                "name": "Elyse's Enchantments",
+                "slug": "elsyses-enchantments",
+                "concepts": ["vectors", "pairs"],
+                "prerequisites": ["functions-introduction", "booleans"]
             },
             {
                 "uuid": "68001762-8a35-4494-9de4-624ca9efb5cd",
