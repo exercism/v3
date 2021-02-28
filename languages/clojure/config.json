@@ -58,6 +58,13 @@
         "uuid": "693e4ef3-bcf1-4b5f-8883-24d006164541",
         "concepts": ["strings"],
         "prerequisites": ["basics"]
+      },
+      {
+        "slug": "international-calling-connoisseur",
+        "name": "International Calling Connoisseur",
+        "uuid": "712aff27-9dca-4272-a083-0262f0c783e3",
+        "concepts": ["hashmaps"],
+        "prerequisites": ["basics"]
       }
     ],
     "practice": [

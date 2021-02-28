@@ -2,7 +2,7 @@ In this exercise you'll be writing code to keep track of international dialing c
 
 The map uses an integer for its keys (the dialing code) and a string (country name) for its values.
 
-You have 11 tasks which involve dialing-codes.
+You have 8 tasks which involve the exercism.dialing-codes namespace.
 
 ### 1. Create a pre-populated hashmap
 
@@ -15,7 +15,7 @@ countries
 
 ### 2. Add a country to a map
 
-Add "United Kingdom" with a dialing code of 44 to the map created in task 1:
+Implement the `add-country` function that adds a dialing code and associated country name to a hashmap.
 
 ```clojure
 (add-country countries 44 "United Kingdom")
@@ -24,7 +24,7 @@ Add "United Kingdom" with a dialing code of 44 to the map created in task 1:
 
 ### 3. Get the country name matching a country code
 
-Retrieve the name of the country with dialing code 55
+Implement the `country-name` function that takes a dialing code and returns the corresponding country name. If the dialing code is not contained in the map, `nil` is returned.
 
 ```clojure
 (country-name countries 55)
@@ -33,7 +33,7 @@ Retrieve the name of the country with dialing code 55
 
 ### 4. Update a country name
 
-Change the name of "United States of America" to "Les États-Unis":
+Implement the `update-map` function which takes a dialing code and replaces the corresponding country name in the map with the country name passed as a parameter. If the dialing code does not exist in the map then the map remains unchanged.
 
 ```clojure
 (update-map countries 1 "Les États-Unis")
@@ -42,7 +42,7 @@ Change the name of "United States of America" to "Les États-Unis":
 
 ### 5. Check that a country exists in the map
 
-Check that a record for Brazil exists in the map created in task 1
+Implement the `code-exists?` function to check whether a dialing code exists in the map.
 
 ```clojure
 (code-exists? countries 55)
@@ -60,7 +60,7 @@ Try to change the name of a country with a code that is not in the map e.g. 999.
 
 ### 7. Remove a country from the map
 
-Remove India from the map:
+Implement the `remove-country` function that takes a dialing code and will remove the corresponding record, dialing code + country name, from the map.
 
 ```clojure
 (remove-country countries 91)
@@ -69,7 +69,7 @@ Remove India from the map:
 
 ### 8. Find the country with the longest name
 
-Process the values in the map to find the one with the longest name:
+Implement the `longest-name` function which will return the name of the country with the longest name stored in the map.
 
 ```clojure
 (longest-name countries)
