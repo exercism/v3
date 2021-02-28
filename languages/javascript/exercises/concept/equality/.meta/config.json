@@ -1,0 +1,12 @@
+{
+  "authors": [
+    {
+      "github_username": "shubhsk88",
+      "exercism_username": "shubhski"
+    }
+  ],
+  "editor": {
+    "solution_files": ["pokemon-mania.js"],
+    "test_files": ["pokemon-mania.spec.js"]
+  }
+}

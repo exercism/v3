@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://262.ecma-international.org/10.0/index.html#sec-abstract-equality-comparison",
+    "description": "ECMA Docs "
+  },
+  {
+    "url": "https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch4.md",
+    "description": "Coercion, You Don't know JS"
+  }
+]
