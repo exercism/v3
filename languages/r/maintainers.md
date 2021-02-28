@@ -4,8 +4,6 @@ These awesome people help maintain the R track.
 
 ## Senior Maintainers
 
-TODO: add senior maintainers
+- Jon Calder (Slack: `@jon`, GitHub: [jonmcalder](https://github.com/jonmcalder/))
 
 ## Contributing Maintainers
-
-TODO: add contributing maintainers
